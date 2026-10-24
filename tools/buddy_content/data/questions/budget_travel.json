@@ -1,0 +1,1305 @@
+{
+"topic": "budget_travel",
+"questions": [
+{
+"id": "budget_travel-001",
+"lv": "any",
+"i18n": {
+"en": "What is the best trip you've ever taken on a small budget?",
+"de": "Was war die schönste Reise, die du je mit kleinem Budget gemacht hast?",
+"es": "¿Cuál es el mejor viaje que has hecho con poco presupuesto?",
+"fr": "Quel est le plus beau voyage que tu aies fait avec un petit budget ?",
+"it": "Qual è il viaggio più bello che hai fatto con un budget ridotto?",
+"pt": "Qual foi a melhor viagem que já fizeste com pouco orçamento?",
+"pt_BR": "Qual foi a melhor viagem que você já fez com pouco dinheiro?"
+}
+},
+{
+"id": "budget_travel-002",
+"lv": "any",
+"i18n": {
+"en": "Where would you go tomorrow if you could travel for free?",
+"de": "Wohin würdest du morgen reisen, wenn es nichts kosten würde?",
+"es": "¿Adónde irías mañana si pudieras viajar gratis?",
+"fr": "Où irais-tu demain si tu pouvais voyager gratuitement ?",
+"it": "Dove andresti domani se potessi viaggiare gratis?",
+"pt": "Para onde irias amanhã se pudesses viajar de graça?",
+"pt_BR": "Pra onde você iria amanhã se pudesse viajar de graça?"
+}
+},
+{
+"id": "budget_travel-003",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer planning every detail or deciding things on the road?",
+"de": "Planst du lieber jedes Detail oder entscheidest du unterwegs spontan?",
+"es": "¿Prefieres planearlo todo al detalle o decidir sobre la marcha?",
+"fr": "Tu préfères tout planifier dans les détails ou décider en route ?",
+"it": "Preferisci pianificare ogni dettaglio o decidere strada facendo?",
+"pt": "Preferes planear tudo ao pormenor ou decidir pelo caminho?",
+"pt_BR": "Você prefere planejar cada detalhe ou decidir as coisas no caminho?"
+}
+},
+{
+"id": "budget_travel-004",
+"lv": "any",
+"i18n": {
+"en": "What do you usually spend the most money on when you travel?",
+"de": "Wofür gibst du auf Reisen normalerweise am meisten Geld aus?",
+"es": "¿En qué sueles gastar más dinero cuando viajas?",
+"fr": "Pour quoi dépenses-tu le plus d'argent quand tu voyages ?",
+"it": "Per cosa spendi di solito di più quando viaggi?",
+"pt": "Em que costumas gastar mais dinheiro quando viajas?",
+"pt_BR": "Com o que você costuma gastar mais dinheiro quando viaja?"
+}
+},
+{
+"id": "budget_travel-005",
+"lv": "any",
+"i18n": {
+"en": "What's the cheapest but most memorable experience you've had while travelling?",
+"de": "Was war dein günstigstes und zugleich unvergesslichstes Reiseerlebnis?",
+"es": "¿Cuál ha sido la experiencia de viaje más barata y a la vez más inolvidable para ti?",
+"fr": "Quelle a été ton expérience de voyage la moins chère mais la plus mémorable ?",
+"it": "Qual è stata l'esperienza di viaggio più economica ma più memorabile per te?",
+"pt": "Qual foi a experiência de viagem mais barata e, ao mesmo tempo, mais marcante para ti?",
+"pt_BR": "Qual foi a experiência de viagem mais barata e mais marcante que você já teve?"
+}
+},
+{
+"id": "budget_travel-006",
+"lv": "any",
+"i18n": {
+"en": "Which country or city is at the top of your travel wish list?",
+"de": "Welches Land oder welche Stadt steht ganz oben auf deiner Reise-Wunschliste?",
+"es": "¿Qué país o ciudad está en lo más alto de tu lista de viajes soñados?",
+"fr": "Quel pays ou quelle ville est en tête de ta liste de voyages rêvés ?",
+"it": "Quale paese o città è in cima alla tua lista dei desideri di viaggio?",
+"pt": "Que país ou cidade está no topo da tua lista de viagens de sonho?",
+"pt_BR": "Qual país ou cidade está no topo da sua lista de viagens dos sonhos?"
+}
+},
+{
+"id": "budget_travel-007",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy trying street food when you travel? What's your favourite?",
+"de": "Probierst du auf Reisen gern Streetfood? Was ist dein Favorit?",
+"es": "¿Te gusta probar la comida callejera cuando viajas? ¿Cuál es tu favorita?",
+"fr": "Tu aimes goûter la cuisine de rue en voyage ? Quel est ton plat préféré ?",
+"it": "Ti piace assaggiare il cibo di strada quando viaggi? Qual è il tuo preferito?",
+"pt": "Gostas de provar comida de rua quando viajas? Qual é a tua preferida?",
+"pt_BR": "Você gosta de provar comida de rua quando viaja? Qual é a sua favorita?"
+}
+},
+{
+"id": "budget_travel-008",
+"lv": "any",
+"i18n": {
+"en": "Would you rather travel more often for less, or less often with more comfort?",
+"de": "Reist du lieber öfter und günstiger oder seltener und mit mehr Komfort?",
+"es": "¿Prefieres viajar más a menudo gastando poco o menos veces con más comodidad?",
+"fr": "Tu préfères voyager plus souvent pour moins cher, ou moins souvent avec plus de confort ?",
+"it": "Preferisci viaggiare più spesso spendendo poco o meno spesso con più comfort?",
+"pt": "Preferes viajar mais vezes gastando pouco ou menos vezes com mais conforto?",
+"pt_BR": "Você prefere viajar mais vezes gastando pouco ou menos vezes com mais conforto?"
+}
+},
+{
+"id": "budget_travel-009",
+"lv": "any",
+"i18n": {
+"en": "What kind of accommodation do you usually choose when you travel?",
+"de": "Welche Art von Unterkunft wählst du auf Reisen meistens?",
+"es": "¿Qué tipo de alojamiento sueles elegir cuando viajas?",
+"fr": "Quel type d'hébergement choisis-tu généralement en voyage ?",
+"it": "Che tipo di alloggio scegli di solito quando viaggi?",
+"pt": "Que tipo de alojamento costumas escolher quando viajas?",
+"pt_BR": "Que tipo de hospedagem você costuma escolher quando viaja?"
+}
+},
+{
+"id": "budget_travel-010",
+"lv": "any",
+"i18n": {
+"en": "How do you usually find good deals for your trips?",
+"de": "Wie findest du normalerweise gute Angebote für deine Reisen?",
+"es": "¿Cómo sueles encontrar buenas ofertas para tus viajes?",
+"fr": "Comment trouves-tu habituellement de bonnes affaires pour tes voyages ?",
+"it": "Come trovi di solito buone offerte per i tuoi viaggi?",
+"pt": "Como costumas encontrar boas promoções para as tuas viagens?",
+"pt_BR": "Como você costuma achar boas promoções para as suas viagens?"
+}
+},
+{
+"id": "budget_travel-011",
+"lv": "any",
+"i18n": {
+"en": "What's one thing you never skip on a trip, even on a tight budget?",
+"de": "Worauf verzichtest du auf Reisen nie, selbst bei knappem Budget?",
+"es": "¿A qué no renuncias nunca en un viaje, aunque el presupuesto sea ajustado?",
+"fr": "À quoi ne renonces-tu jamais en voyage, même avec un budget serré ?",
+"it": "A cosa non rinunci mai in viaggio, anche con un budget stretto?",
+"pt": "De que nunca abdicas numa viagem, mesmo com o orçamento apertado?",
+"pt_BR": "Do que você nunca abre mão numa viagem, mesmo com o orçamento apertado?"
+}
+},
+{
+"id": "budget_travel-012",
+"lv": "any",
+"i18n": {
+"en": "Do you like travelling alone, with friends or with family? Why?",
+"de": "Reist du lieber allein, mit Freunden oder mit der Familie? Warum?",
+"es": "¿Te gusta viajar solo, con amigos o en familia? ¿Por qué?",
+"fr": "Tu aimes voyager seul, entre amis ou en famille ? Pourquoi ?",
+"it": "Ti piace viaggiare da solo, con gli amici o in famiglia? Perché?",
+"pt": "Gostas de viajar sozinho, com amigos ou em família? Porquê?",
+"pt_BR": "Você gosta de viajar sozinho, com amigos ou com a família? Por quê?"
+}
+},
+{
+"id": "budget_travel-013",
+"lv": "any",
+"i18n": {
+"en": "Which free activity do you enjoy most in a new city?",
+"de": "Welche kostenlose Aktivität genießt du in einer neuen Stadt am meisten?",
+"es": "¿Qué actividad gratuita disfrutas más en una ciudad nueva?",
+"fr": "Quelle activité gratuite préfères-tu dans une nouvelle ville ?",
+"it": "Quale attività gratuita ti piace di più in una città nuova?",
+"pt": "Que atividade gratuita mais gostas de fazer numa cidade nova?",
+"pt_BR": "Qual atividade gratuita você mais curte numa cidade nova?"
+}
+},
+{
+"id": "budget_travel-014",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to get around: train, bus, car or plane?",
+"de": "Wie bist du am liebsten unterwegs: mit Zug, Bus, Auto oder Flugzeug?",
+"es": "¿Cuál es tu forma favorita de moverte: tren, autobús, coche o avión?",
+"fr": "Quel est ton moyen de transport préféré : train, bus, voiture ou avion ?",
+"it": "Qual è il tuo modo preferito di spostarti: treno, autobus, auto o aereo?",
+"pt": "Qual é a tua forma preferida de viajar: comboio, autocarro, carro ou avião?",
+"pt_BR": "Qual é o seu jeito favorito de viajar: trem, ônibus, carro ou avião?"
+}
+},
+{
+"id": "budget_travel-015",
+"lv": "any",
+"i18n": {
+"en": "Have you ever discovered a hidden gem by accident while travelling?",
+"de": "Hast du auf Reisen schon mal zufällig einen echten Geheimtipp entdeckt?",
+"es": "¿Alguna vez has descubierto por casualidad un rincón escondido mientras viajabas?",
+"fr": "As-tu déjà découvert par hasard une pépite cachée en voyage ?",
+"it": "Ti è mai capitato di scoprire per caso un posto nascosto durante un viaggio?",
+"pt": "Já descobriste por acaso um sítio escondido enquanto viajavas?",
+"pt_BR": "Você já descobriu por acaso algum lugar escondido enquanto viajava?"
+}
+},
+{
+"id": "budget_travel-016",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect cheap day out look like for you?",
+"de": "Wie sieht für dich ein perfekter, günstiger Ausflugstag aus?",
+"es": "¿Cómo sería para ti un día de paseo perfecto y barato?",
+"fr": "À quoi ressemble pour toi une journée de sortie parfaite et pas chère ?",
+"it": "Com'è per te una giornata fuori perfetta ed economica?",
+"pt": "Como seria para ti um dia de passeio perfeito e barato?",
+"pt_BR": "Como seria pra você um dia de passeio perfeito e barato?"
+}
+},
+{
+"id": "budget_travel-017",
+"lv": "any",
+"i18n": {
+"en": "Which local food would you travel far just to taste?",
+"de": "Für welches regionale Gericht würdest du weit reisen, nur um es zu probieren?",
+"es": "¿Qué comida local te haría viajar lejos solo para probarla?",
+"fr": "Pour quel plat local serais-tu prêt à voyager loin, juste pour le goûter ?",
+"it": "Per quale piatto locale faresti un lungo viaggio solo per assaggiarlo?",
+"pt": "Que prato local te faria viajar para longe só para o provar?",
+"pt_BR": "Por qual comida local você viajaria longe só para provar?"
+}
+},
+{
+"id": "budget_travel-018",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer cities, beaches, mountains or the countryside?",
+"de": "Magst du lieber Städte, Strände, Berge oder das Land?",
+"es": "¿Prefieres ciudades, playas, montañas o el campo?",
+"fr": "Tu préfères les villes, les plages, la montagne ou la campagne ?",
+"it": "Preferisci città, spiagge, montagne o campagna?",
+"pt": "Preferes cidades, praias, montanhas ou o campo?",
+"pt_BR": "Você prefere cidades, praias, montanhas ou o interior?"
+}
+},
+{
+"id": "budget_travel-019",
+"lv": "any",
+"i18n": {
+"en": "What's the most beautiful free view you've ever seen?",
+"de": "Was war der schönste Ausblick, den du je gratis genossen hast?",
+"es": "¿Cuál es la vista gratuita más bonita que has visto nunca?",
+"fr": "Quelle est la plus belle vue gratuite que tu aies jamais admirée ?",
+"it": "Qual è il panorama gratuito più bello che tu abbia mai visto?",
+"pt": "Qual foi a vista gratuita mais bonita que já viste?",
+"pt_BR": "Qual foi a vista de graça mais bonita que você já viu?"
+}
+},
+{
+"id": "budget_travel-020",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about long bus or train journeys?",
+"de": "Was hältst du von langen Bus- oder Zugfahrten?",
+"es": "¿Qué te parecen los viajes largos en autobús o en tren?",
+"fr": "Que penses-tu des longs trajets en bus ou en train ?",
+"it": "Cosa pensi dei lunghi viaggi in autobus o in treno?",
+"pt": "O que achas das viagens longas de autocarro ou de comboio?",
+"pt_BR": "O que você acha de viagens longas de ônibus ou de trem?"
+}
+},
+{
+"id": "budget_travel-021",
+"lv": "any",
+"i18n": {
+"en": "What souvenir from a trip means the most to you?",
+"de": "Welches Reiseandenken bedeutet dir am meisten?",
+"es": "¿Qué recuerdo de un viaje significa más para ti?",
+"fr": "Quel souvenir de voyage compte le plus pour toi ?",
+"it": "Quale souvenir di viaggio ha più significato per te?",
+"pt": "Que lembrança de uma viagem significa mais para ti?",
+"pt_BR": "Qual lembrancinha de viagem significa mais pra você?"
+}
+},
+{
+"id": "budget_travel-022",
+"lv": "any",
+"i18n": {
+"en": "What's a travel habit of yours that saves money?",
+"de": "Welche deiner Reisegewohnheiten spart dir Geld?",
+"es": "¿Qué costumbre tuya de viaje te ayuda a ahorrar dinero?",
+"fr": "Quelle habitude de voyage t'aide à économiser de l'argent ?",
+"it": "Quale tua abitudine di viaggio ti fa risparmiare?",
+"pt": "Que hábito de viagem teu te ajuda a poupar dinheiro?",
+"pt_BR": "Qual hábito seu de viagem te ajuda a economizar?"
+}
+},
+{
+"id": "budget_travel-023",
+"lv": "any",
+"i18n": {
+"en": "Would you rather explore your own country or go abroad? Why?",
+"de": "Erkundest du lieber dein eigenes Land oder reist du ins Ausland? Warum?",
+"es": "¿Prefieres explorar tu propio país o viajar al extranjero? ¿Por qué?",
+"fr": "Tu préfères explorer ton propre pays ou partir à l'étranger ? Pourquoi ?",
+"it": "Preferisci esplorare il tuo paese o andare all'estero? Perché?",
+"pt": "Preferes explorar o teu país ou ir para o estrangeiro? Porquê?",
+"pt_BR": "Você prefere explorar o seu país ou viajar para o exterior? Por quê?"
+}
+},
+{
+"id": "budget_travel-024",
+"lv": "any",
+"i18n": {
+"en": "What do you love most about visiting markets abroad?",
+"de": "Was liebst du am meisten daran, im Ausland Märkte zu besuchen?",
+"es": "¿Qué es lo que más te gusta de visitar mercados en el extranjero?",
+"fr": "Qu'est-ce que tu aimes le plus quand tu visites des marchés à l'étranger ?",
+"it": "Che cosa ti piace di più quando visiti i mercati all'estero?",
+"pt": "O que mais gostas quando visitas mercados no estrangeiro?",
+"pt_BR": "O que você mais gosta quando visita mercados em outros países?"
+}
+},
+{
+"id": "budget_travel-025",
+"lv": "any",
+"i18n": {
+"en": "Have you ever stayed in a hostel? How was it?",
+"de": "Hast du schon mal in einem Hostel übernachtet? Wie war es?",
+"es": "¿Alguna vez te has alojado en un hostel? ¿Qué tal fue?",
+"fr": "As-tu déjà dormi dans une auberge de jeunesse ? C'était comment ?",
+"it": "Hai mai dormito in un ostello? Com'è stato?",
+"pt": "Já ficaste num hostel? Como foi?",
+"pt_BR": "Você já ficou num hostel? Como foi?"
+}
+},
+{
+"id": "budget_travel-026",
+"lv": "any",
+"i18n": {
+"en": "Which season do you like travelling in best, and why?",
+"de": "In welcher Jahreszeit reist du am liebsten und warum?",
+"es": "¿En qué estación te gusta más viajar y por qué?",
+"fr": "En quelle saison préfères-tu voyager, et pourquoi ?",
+"it": "In quale stagione preferisci viaggiare, e perché?",
+"pt": "Em que estação do ano mais gostas de viajar, e porquê?",
+"pt_BR": "Em qual estação do ano você mais gosta de viajar, e por quê?"
+}
+},
+{
+"id": "budget_travel-027",
+"lv": "any",
+"i18n": {
+"en": "What's one place near your home that visitors should not miss?",
+"de": "Welchen Ort in deiner Nähe sollten Besucher auf keinen Fall verpassen?",
+"es": "¿Qué lugar cerca de tu casa no debería perderse ningún visitante?",
+"fr": "Quel endroit près de chez toi les visiteurs ne devraient-ils pas manquer ?",
+"it": "Quale posto vicino a casa tua i visitatori non dovrebbero perdere?",
+"pt": "Que sítio perto de tua casa nenhum visitante deveria perder?",
+"pt_BR": "Qual lugar perto da sua casa nenhum visitante deveria perder?"
+}
+},
+{
+"id": "budget_travel-028",
+"lv": "any",
+"i18n": {
+"en": "How do you like to remember your trips: photos, journals or something else?",
+"de": "Wie hältst du deine Reisen fest: mit Fotos, einem Tagebuch oder anders?",
+"es": "¿Cómo te gusta recordar tus viajes: con fotos, un diario u otra cosa?",
+"fr": "Comment aimes-tu garder le souvenir de tes voyages : photos, carnet ou autre ?",
+"it": "Come ti piace ricordare i tuoi viaggi: foto, diario o altro?",
+"pt": "Como gostas de recordar as tuas viagens: fotos, diário ou outra coisa?",
+"pt_BR": "Como você gosta de guardar suas viagens: fotos, diário ou outra coisa?"
+}
+},
+{
+"id": "budget_travel-029",
+"lv": "any",
+"i18n": {
+"en": "What's the best tip someone ever gave you about travelling?",
+"de": "Was war der beste Reisetipp, den dir je jemand gegeben hat?",
+"es": "¿Cuál es el mejor consejo de viaje que te han dado?",
+"fr": "Quel est le meilleur conseil de voyage qu'on t'ait jamais donné ?",
+"it": "Qual è il miglior consiglio di viaggio che ti abbiano mai dato?",
+"pt": "Qual foi a melhor dica de viagem que alguém já te deu?",
+"pt_BR": "Qual foi a melhor dica de viagem que alguém já te deu?"
+}
+},
+{
+"id": "budget_travel-030",
+"lv": "any",
+"i18n": {
+"en": "Which travel experience taught you the most about yourself?",
+"de": "Welches Reiseerlebnis hat dir am meisten über dich selbst beigebracht?",
+"es": "¿Qué experiencia de viaje te enseñó más sobre ti mismo?",
+"fr": "Quelle expérience de voyage t'a le plus appris sur toi-même ?",
+"it": "Quale esperienza di viaggio ti ha insegnato di più su te stesso?",
+"pt": "Que experiência de viagem te ensinou mais sobre ti próprio?",
+"pt_BR": "Qual experiência de viagem mais te ensinou sobre você mesmo?"
+}
+},
+{
+"id": "budget_travel-031",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy talking to locals when you travel? What do you ask them?",
+"de": "Sprichst du auf Reisen gern mit Einheimischen? Was fragst du sie?",
+"es": "¿Te gusta hablar con la gente local cuando viajas? ¿Qué les preguntas?",
+"fr": "Tu aimes discuter avec les habitants en voyage ? Que leur demandes-tu ?",
+"it": "Ti piace parlare con la gente del posto quando viaggi? Cosa chiedi?",
+"pt": "Gostas de conversar com os locais quando viajas? O que lhes perguntas?",
+"pt_BR": "Você gosta de conversar com os moradores locais quando viaja? O que pergunta?"
+}
+},
+{
+"id": "budget_travel-032",
+"lv": "any",
+"i18n": {
+"en": "What's your idea of a good-value trip?",
+"de": "Was ist für dich eine Reise mit gutem Preis-Leistungs-Verhältnis?",
+"es": "¿Qué es para ti un viaje con buena relación calidad-precio?",
+"fr": "Pour toi, c'est quoi un voyage au bon rapport qualité-prix ?",
+"it": "Per te cos'è un viaggio con un buon rapporto qualità-prezzo?",
+"pt": "Para ti, o que é uma viagem com boa relação qualidade-preço?",
+"pt_BR": "Pra você, o que é uma viagem com bom custo-benefício?"
+}
+},
+{
+"id": "budget_travel-033",
+"lv": "any",
+"i18n": {
+"en": "Which language would you most like to learn for travelling?",
+"de": "Welche Sprache würdest du fürs Reisen am liebsten lernen?",
+"es": "¿Qué idioma te gustaría más aprender para viajar?",
+"fr": "Quelle langue aimerais-tu le plus apprendre pour voyager ?",
+"it": "Quale lingua ti piacerebbe di più imparare per viaggiare?",
+"pt": "Que língua mais gostavas de aprender para viajar?",
+"pt_BR": "Qual idioma você mais gostaria de aprender para viajar?"
+}
+},
+{
+"id": "budget_travel-034",
+"lv": "any",
+"i18n": {
+"en": "What would your ideal weekend getaway include?",
+"de": "Was gehört für dich zu einem idealen Wochenendtrip?",
+"es": "¿Qué incluiría tu escapada de fin de semana ideal?",
+"fr": "Que comprendrait ton escapade de week-end idéale ?",
+"it": "Cosa includerebbe la tua fuga del weekend ideale?",
+"pt": "O que incluiria a tua escapadinha de fim de semana ideal?",
+"pt_BR": "O que teria no seu fim de semana de viagem ideal?"
+}
+},
+{
+"id": "budget_travel-035",
+"lv": "any",
+"i18n": {
+"en": "What's the longest journey you've ever made, and how did you travel?",
+"de": "Was war die längste Reise deines Lebens und womit warst du unterwegs?",
+"es": "¿Cuál es el trayecto más largo que has hecho y cómo viajaste?",
+"fr": "Quel est le plus long trajet que tu aies fait, et comment as-tu voyagé ?",
+"it": "Qual è il viaggio più lungo che hai fatto, e con quale mezzo?",
+"pt": "Qual foi a viagem mais longa que já fizeste, e como viajaste?",
+"pt_BR": "Qual foi a viagem mais longa que você já fez, e como viajou?"
+}
+},
+{
+"id": "budget_travel-036",
+"lv": "any",
+"i18n": {
+"en": "Do you like packing light, or do you bring a bit of everything?",
+"de": "Packst du gern leicht oder nimmst du von allem etwas mit?",
+"es": "¿Te gusta viajar ligero o llevas un poco de todo?",
+"fr": "Tu voyages léger, ou tu emportes un peu de tout ?",
+"it": "Ti piace viaggiare leggero o porti un po' di tutto?",
+"pt": "Gostas de levar pouca bagagem ou levas um pouco de tudo?",
+"pt_BR": "Você gosta de viajar leve ou leva um pouco de tudo?"
+}
+},
+{
+"id": "budget_travel-037",
+"lv": "any",
+"i18n": {
+"en": "Which festival in the world would you love to experience?",
+"de": "Welches Fest auf der Welt würdest du gern einmal miterleben?",
+"es": "¿Qué festival del mundo te encantaría vivir?",
+"fr": "Quel festival dans le monde aimerais-tu vivre ?",
+"it": "Quale festa o festival nel mondo ti piacerebbe vivere?",
+"pt": "Que festival do mundo adorarias viver?",
+"pt_BR": "Qual festival do mundo você adoraria conhecer?"
+}
+},
+{
+"id": "budget_travel-038",
+"lv": "any",
+"i18n": {
+"en": "What makes a place feel welcoming to you as a visitor?",
+"de": "Was lässt dich als Besucher an einem Ort willkommen fühlen?",
+"es": "¿Qué hace que un lugar te parezca acogedor como visitante?",
+"fr": "Qu'est-ce qui fait qu'un lieu te semble accueillant quand tu le visites ?",
+"it": "Che cosa rende un posto accogliente per te come visitatore?",
+"pt": "O que faz um lugar parecer acolhedor para ti como visitante?",
+"pt_BR": "O que faz um lugar parecer acolhedor pra você como visitante?"
+}
+},
+{
+"id": "budget_travel-039",
+"lv": "any",
+"i18n": {
+"en": "Who in your life inspires you to travel more?",
+"de": "Wer in deinem Leben inspiriert dich, mehr zu reisen?",
+"es": "¿Quién en tu vida te inspira a viajar más?",
+"fr": "Qui, dans ta vie, te donne envie de voyager davantage ?",
+"it": "Chi nella tua vita ti ispira a viaggiare di più?",
+"pt": "Quem, na tua vida, te inspira a viajar mais?",
+"pt_BR": "Quem na sua vida te inspira a viajar mais?"
+}
+},
+{
+"id": "budget_travel-040",
+"lv": "any",
+"i18n": {
+"en": "What's the next trip you're dreaming about right now?",
+"de": "Von welcher nächsten Reise träumst du gerade?",
+"es": "¿Con qué próximo viaje estás soñando ahora mismo?",
+"fr": "De quel prochain voyage rêves-tu en ce moment ?",
+"it": "Qual è il prossimo viaggio che stai sognando in questo momento?",
+"pt": "Com que próxima viagem andas a sonhar neste momento?",
+"pt_BR": "Com qual próxima viagem você está sonhando agora?"
+}
+},
+{
+"id": "budget_travel-041",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever made a budget for a trip? How did it go?",
+"de": "Hast du schon mal ein Budget für eine Reise aufgestellt? Wie lief es?",
+"es": "¿Alguna vez has hecho un presupuesto para un viaje? ¿Cómo te fue?",
+"fr": "As-tu déjà fait un budget pour un voyage ? Comment ça s'est passé ?",
+"it": "Hai mai fatto un budget per un viaggio? Com'è andata?",
+"pt": "Já fizeste um orçamento para uma viagem? Como correu?",
+"pt_BR": "Você já fez um orçamento para uma viagem? Como foi?"
+}
+},
+{
+"id": "budget_travel-042",
+"lv": "beginner",
+"i18n": {
+"en": "What would be a realistic daily budget for your next trip?",
+"de": "Welches Tagesbudget wäre für deine nächste Reise realistisch?",
+"es": "¿Cuál sería un presupuesto diario realista para tu próximo viaje?",
+"fr": "Quel budget quotidien serait réaliste pour ton prochain voyage ?",
+"it": "Quale sarebbe un budget giornaliero realistico per il tuo prossimo viaggio?",
+"pt": "Qual seria um orçamento diário realista para a tua próxima viagem?",
+"pt_BR": "Qual seria um orçamento diário realista para a sua próxima viagem?"
+}
+},
+{
+"id": "budget_travel-043",
+"lv": "beginner",
+"i18n": {
+"en": "Do you track your spending when you travel? How?",
+"de": "Behältst du deine Ausgaben auf Reisen im Blick? Wie machst du das?",
+"es": "¿Llevas la cuenta de tus gastos cuando viajas? ¿Cómo?",
+"fr": "Est-ce que tu suis tes dépenses en voyage ? Comment ?",
+"it": "Tieni traccia delle tue spese quando viaggi? Come?",
+"pt": "Registas os teus gastos quando viajas? Como?",
+"pt_BR": "Você anota seus gastos quando viaja? Como?"
+}
+},
+{
+"id": "budget_travel-044",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever flown with a low-cost airline? What was it like?",
+"de": "Bist du schon mal mit einer Billigairline geflogen? Wie war es?",
+"es": "¿Has volado alguna vez con una aerolínea low cost? ¿Qué tal fue?",
+"fr": "As-tu déjà pris une compagnie low cost ? C'était comment ?",
+"it": "Hai mai volato con una compagnia low cost? Com'è stato?",
+"pt": "Já voaste numa companhia low cost? Como foi?",
+"pt_BR": "Você já voou numa companhia aérea low cost? Como foi?"
+}
+},
+{
+"id": "budget_travel-045",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever had a surprise baggage fee? What happened?",
+"de": "Musstest du schon mal überraschend für Gepäck zahlen? Was ist passiert?",
+"es": "¿Te han cobrado alguna vez un cargo sorpresa por el equipaje? ¿Qué pasó?",
+"fr": "As-tu déjà payé des frais de bagage imprévus ? Que s'est-il passé ?",
+"it": "Ti è mai capitato di pagare un supplemento bagaglio a sorpresa? Cosa è successo?",
+"pt": "Já tiveste de pagar uma taxa de bagagem inesperada? O que aconteceu?",
+"pt_BR": "Você já pagou uma taxa de bagagem inesperada? O que aconteceu?"
+}
+},
+{
+"id": "budget_travel-046",
+"lv": "beginner",
+"i18n": {
+"en": "Would you try a night train or night bus to save a night's stay?",
+"de": "Würdest du einen Nachtzug oder Nachtbus nehmen, um eine Übernachtung zu sparen?",
+"es": "¿Probarías un tren o autobús nocturno para ahorrarte una noche de alojamiento?",
+"fr": "Prendrais-tu un train ou un bus de nuit pour économiser une nuit d'hébergement ?",
+"it": "Proveresti un treno o un autobus notturno per risparmiare una notte di alloggio?",
+"pt": "Experimentavas um comboio ou autocarro noturno para poupar uma noite de alojamento?",
+"pt_BR": "Você toparia um trem ou ônibus noturno para economizar uma diária?"
+}
+},
+{
+"id": "budget_travel-047",
+"lv": "beginner",
+"i18n": {
+"en": "What do you look for first when reading hotel or hostel reviews?",
+"de": "Worauf achtest du zuerst, wenn du Bewertungen von Hotels oder Hostels liest?",
+"es": "¿En qué te fijas primero al leer opiniones de hoteles o hostels?",
+"fr": "Que regardes-tu en premier dans les avis sur les hôtels ou les auberges ?",
+"it": "A cosa fai caso per prima cosa leggendo le recensioni di hotel o ostelli?",
+"pt": "Em que reparas primeiro quando lês opiniões sobre hotéis ou hostels?",
+"pt_BR": "No que você presta atenção primeiro ao ler avaliações de hotéis ou hostels?"
+}
+},
+{
+"id": "budget_travel-048",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather stay in a dorm to save money or pay more for privacy?",
+"de": "Schläfst du lieber günstig im Schlafsaal oder zahlst du mehr für Privatsphäre?",
+"es": "¿Prefieres dormir en un dormitorio compartido para ahorrar o pagar más por privacidad?",
+"fr": "Tu préfères dormir en dortoir pour économiser ou payer plus pour ton intimité ?",
+"it": "Preferisci dormire in camerata per risparmiare o pagare di più per la privacy?",
+"pt": "Preferes ficar num dormitório para poupar ou pagar mais por privacidade?",
+"pt_BR": "Você prefere ficar em quarto compartilhado para economizar ou pagar mais por privacidade?"
+}
+},
+{
+"id": "budget_travel-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like cooking your own meals when you travel?",
+"de": "Kochst du auf Reisen gern selbst?",
+"es": "¿Te gusta cocinar tus propias comidas cuando viajas?",
+"fr": "Tu aimes cuisiner toi-même quand tu voyages ?",
+"it": "Ti piace cucinare da solo quando viaggi?",
+"pt": "Gostas de cozinhar as tuas próprias refeições quando viajas?",
+"pt_BR": "Você gosta de cozinhar a própria comida quando viaja?"
+}
+},
+{
+"id": "budget_travel-050",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever joined a free walking tour? What did you think?",
+"de": "Hast du schon mal an einer Free Walking Tour teilgenommen? Wie fandest du sie?",
+"es": "¿Has hecho alguna vez un free tour a pie? ¿Qué te pareció?",
+"fr": "As-tu déjà fait une visite à pied gratuite ? Qu'en as-tu pensé ?",
+"it": "Hai mai partecipato a un free walking tour? Che ne pensi?",
+"pt": "Já fizeste algum free walking tour? O que achaste?",
+"pt_BR": "Você já fez um free walking tour? O que achou?"
+}
+},
+{
+"id": "budget_travel-051",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite thing to put in a travel picnic?",
+"de": "Was packst du am liebsten in ein Reise-Picknick?",
+"es": "¿Qué es lo que más te gusta llevar en un pícnic de viaje?",
+"fr": "Qu'est-ce que tu aimes le plus mettre dans un pique-nique de voyage ?",
+"it": "Cosa ti piace di più mettere in un picnic di viaggio?",
+"pt": "O que mais gostas de levar num piquenique em viagem?",
+"pt_BR": "O que você mais gosta de levar num piquenique de viagem?"
+}
+},
+{
+"id": "budget_travel-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which free museum or gallery would you love to visit?",
+"de": "Welches kostenlose Museum oder welche Galerie würdest du gern besuchen?",
+"es": "¿Qué museo o galería gratuita te encantaría visitar?",
+"fr": "Quel musée ou quelle galerie gratuite aimerais-tu visiter ?",
+"it": "Quale museo o galleria gratuita ti piacerebbe visitare?",
+"pt": "Que museu ou galeria gratuita adorarias visitar?",
+"pt_BR": "Qual museu ou galeria gratuita você adoraria visitar?"
+}
+},
+{
+"id": "budget_travel-053",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually pay abroad: cash, card or phone?",
+"de": "Wie bezahlst du im Ausland meistens: bar, mit Karte oder mit dem Handy?",
+"es": "¿Cómo sueles pagar en el extranjero: en efectivo, con tarjeta o con el móvil?",
+"fr": "Comment paies-tu en général à l'étranger : espèces, carte ou téléphone ?",
+"it": "Come paghi di solito all'estero: contanti, carta o telefono?",
+"pt": "Como costumas pagar no estrangeiro: dinheiro, cartão ou telemóvel?",
+"pt_BR": "Como você costuma pagar no exterior: dinheiro, cartão ou celular?"
+}
+},
+{
+"id": "budget_travel-054",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever bought a city pass? Was it worth it?",
+"de": "Hast du schon mal einen City-Pass gekauft? Hat er sich gelohnt?",
+"es": "¿Has comprado alguna vez una tarjeta turística de ciudad? ¿Mereció la pena?",
+"fr": "As-tu déjà acheté un pass touristique ? Ça valait le coup ?",
+"it": "Hai mai comprato una city card? Ne è valsa la pena?",
+"pt": "Já compraste algum passe turístico de cidade? Valeu a pena?",
+"pt_BR": "Você já comprou um passe turístico de cidade? Valeu a pena?"
+}
+},
+{
+"id": "budget_travel-055",
+"lv": "beginner",
+"i18n": {
+"en": "What's one thing you always pack, no matter where you go?",
+"de": "Was packst du immer ein, egal wohin die Reise geht?",
+"es": "¿Qué cosa metes siempre en la maleta, vayas donde vayas?",
+"fr": "Quelle chose emportes-tu toujours, peu importe la destination ?",
+"it": "Cosa metti sempre in valigia, ovunque tu vada?",
+"pt": "Que coisa levas sempre na mala, vás para onde fores?",
+"pt_BR": "O que você sempre coloca na mala, não importa o destino?"
+}
+},
+{
+"id": "budget_travel-056",
+"lv": "beginner",
+"i18n": {
+"en": "Could you travel for a week with only a small carry-on bag?",
+"de": "Könntest du eine Woche lang nur mit kleinem Handgepäck reisen?",
+"es": "¿Podrías viajar una semana solo con una maleta pequeña de cabina?",
+"fr": "Pourrais-tu voyager une semaine avec seulement un petit bagage cabine ?",
+"it": "Riusciresti a viaggiare una settimana solo con un piccolo bagaglio a mano?",
+"pt": "Conseguias viajar uma semana só com uma pequena bagagem de mão?",
+"pt_BR": "Você conseguiria viajar uma semana só com uma mala de mão pequena?"
+}
+},
+{
+"id": "budget_travel-057",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually get from the airport to the city centre?",
+"de": "Wie kommst du normalerweise vom Flughafen ins Stadtzentrum?",
+"es": "¿Cómo sueles ir del aeropuerto al centro de la ciudad?",
+"fr": "Comment vas-tu habituellement de l'aéroport au centre-ville ?",
+"it": "Come vai di solito dall'aeroporto al centro città?",
+"pt": "Como costumas ir do aeroporto para o centro da cidade?",
+"pt_BR": "Como você costuma ir do aeroporto até o centro da cidade?"
+}
+},
+{
+"id": "budget_travel-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like walking or cycling to explore a new place?",
+"de": "Erkundest du neue Orte gern zu Fuß oder mit dem Fahrrad?",
+"es": "¿Te gusta caminar o ir en bici para explorar un sitio nuevo?",
+"fr": "Tu aimes explorer un nouvel endroit à pied ou à vélo ?",
+"it": "Ti piace esplorare un posto nuovo a piedi o in bici?",
+"pt": "Gostas de explorar um sítio novo a pé ou de bicicleta?",
+"pt_BR": "Você gosta de explorar um lugar novo a pé ou de bicicleta?"
+}
+},
+{
+"id": "budget_travel-059",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever bargained at a market? How did you feel?",
+"de": "Hast du schon mal auf einem Markt gehandelt? Wie hast du dich dabei gefühlt?",
+"es": "¿Has regateado alguna vez en un mercado? ¿Cómo te sentiste?",
+"fr": "As-tu déjà marchandé sur un marché ? Comment t'es-tu senti ?",
+"it": "Hai mai contrattato in un mercato? Come ti sei sentito?",
+"pt": "Já regateaste num mercado? Como te sentiste?",
+"pt_BR": "Você já pechinchou numa feira? Como se sentiu?"
+}
+},
+{
+"id": "budget_travel-060",
+"lv": "beginner",
+"i18n": {
+"en": "What's a small saving habit that could help you fund your next trip?",
+"de": "Welche kleine Spargewohnheit könnte deine nächste Reise finanzieren?",
+"es": "¿Qué pequeño hábito de ahorro podría ayudarte a pagar tu próximo viaje?",
+"fr": "Quelle petite habitude d'épargne pourrait financer ton prochain voyage ?",
+"it": "Quale piccola abitudine di risparmio potrebbe finanziare il tuo prossimo viaggio?",
+"pt": "Que pequeno hábito de poupança te podia ajudar a pagar a próxima viagem?",
+"pt_BR": "Que pequeno hábito de economia poderia ajudar a pagar sua próxima viagem?"
+}
+},
+{
+"id": "budget_travel-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which local phrases do you think every traveller should learn?",
+"de": "Welche Sätze in der Landessprache sollte deiner Meinung nach jeder Reisende kennen?",
+"es": "¿Qué frases locales crees que todo viajero debería aprender?",
+"fr": "Quelles expressions locales chaque voyageur devrait-il apprendre, selon toi ?",
+"it": "Quali frasi locali pensi che ogni viaggiatore dovrebbe imparare?",
+"pt": "Que frases locais achas que todos os viajantes deviam aprender?",
+"pt_BR": "Quais frases no idioma local você acha que todo viajante deveria aprender?"
+}
+},
+{
+"id": "budget_travel-062",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever taken a day trip by public transport? Where to?",
+"de": "Hast du schon mal einen Tagesausflug mit öffentlichen Verkehrsmitteln gemacht? Wohin?",
+"es": "¿Has hecho alguna excursión de un día en transporte público? ¿Adónde?",
+"fr": "As-tu déjà fait une excursion d'une journée en transports en commun ? Où ?",
+"it": "Hai mai fatto una gita di un giorno con i mezzi pubblici? Dove?",
+"pt": "Já fizeste uma excursão de um dia em transportes públicos? Para onde?",
+"pt_BR": "Você já fez um bate-volta de transporte público? Pra onde?"
+}
+},
+{
+"id": "budget_travel-063",
+"lv": "beginner",
+"i18n": {
+"en": "What would you plan for a cheap weekend close to home?",
+"de": "Was würdest du für ein günstiges Wochenende in der Nähe planen?",
+"es": "¿Qué planearías para un fin de semana barato cerca de casa?",
+"fr": "Que prévoirais-tu pour un week-end pas cher près de chez toi ?",
+"it": "Cosa organizzeresti per un weekend economico vicino a casa?",
+"pt": "O que planearias para um fim de semana barato perto de casa?",
+"pt_BR": "O que você planejaria para um fim de semana barato perto de casa?"
+}
+},
+{
+"id": "budget_travel-064",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever had to change travel plans to save money?",
+"de": "Musstest du schon mal deine Reisepläne ändern, um Geld zu sparen?",
+"es": "¿Has tenido que cambiar alguna vez tus planes de viaje para ahorrar?",
+"fr": "As-tu déjà dû changer tes plans de voyage pour économiser ?",
+"it": "Ti è mai capitato di cambiare i piani di viaggio per risparmiare?",
+"pt": "Já tiveste de mudar planos de viagem para poupar dinheiro?",
+"pt_BR": "Você já teve que mudar os planos de viagem para economizar?"
+}
+},
+{
+"id": "budget_travel-065",
+"lv": "beginner",
+"i18n": {
+"en": "What's one experience you'd happily splurge on during a trip?",
+"de": "Für welches Erlebnis würdest du auf einer Reise gern mal mehr ausgeben?",
+"es": "¿En qué experiencia te darías un capricho con gusto durante un viaje?",
+"fr": "Pour quelle expérience ferais-tu volontiers une folie en voyage ?",
+"it": "Per quale esperienza ti concederesti volentieri uno sfizio in viaggio?",
+"pt": "Em que experiência gastavas mais com todo o gosto durante uma viagem?",
+"pt_BR": "Em qual experiência você gastaria mais com gosto durante uma viagem?"
+}
+},
+{
+"id": "budget_travel-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever booked a stopover to visit an extra city? Where?",
+"de": "Hast du schon mal einen Stopover gebucht, um eine weitere Stadt zu sehen? Wo?",
+"es": "¿Has reservado alguna vez una escala larga para conocer otra ciudad? ¿Dónde?",
+"fr": "As-tu déjà réservé une escale pour visiter une ville en plus ? Laquelle ?",
+"it": "Hai mai prenotato uno stopover per visitare un'altra città? Dove?",
+"pt": "Já reservaste uma escala prolongada para visitar mais uma cidade? Onde?",
+"pt_BR": "Você já fez um stopover para conhecer mais uma cidade? Onde?"
+}
+},
+{
+"id": "budget_travel-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about rail passes compared with single tickets?",
+"de": "Was hältst du von Bahnpässen im Vergleich zu Einzeltickets?",
+"es": "¿Qué opinas de los pases de tren frente a los billetes sueltos?",
+"fr": "Que penses-tu des pass ferroviaires par rapport aux billets à l'unité ?",
+"it": "Cosa pensi dei pass ferroviari rispetto ai biglietti singoli?",
+"pt": "O que achas dos passes de comboio em comparação com bilhetes avulsos?",
+"pt_BR": "O que você acha dos passes de trem comparados às passagens avulsas?"
+}
+},
+{
+"id": "budget_travel-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you try house sitting or a work exchange to travel longer?",
+"de": "Würdest du Housesitting oder Work Exchange ausprobieren, um länger zu reisen?",
+"es": "¿Probarías cuidar casas o hacer un intercambio de trabajo para viajar más tiempo?",
+"fr": "Essaierais-tu le house-sitting ou un échange de travail pour voyager plus longtemps ?",
+"it": "Proveresti l'house sitting o uno scambio lavoro per viaggiare più a lungo?",
+"pt": "Experimentavas house sitting ou trabalho voluntário em troca de estadia para viajar mais tempo?",
+"pt_BR": "Você toparia fazer house sitting ou trabalho voluntário para viajar por mais tempo?"
+}
+},
+{
+"id": "budget_travel-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which world region do you think gives the best value for travellers?",
+"de": "Welche Weltregion bietet Reisenden deiner Meinung nach am meisten fürs Geld?",
+"es": "¿Qué región del mundo crees que ofrece más por menos a los viajeros?",
+"fr": "Selon toi, quelle région du monde offre le meilleur rapport qualité-prix aux voyageurs ?",
+"it": "Quale regione del mondo secondo te offre il miglior rapporto qualità-prezzo?",
+"pt": "Que região do mundo achas que oferece melhor relação qualidade-preço aos viajantes?",
+"pt_BR": "Qual região do mundo você acha que tem o melhor custo-benefício para viajantes?"
+}
+},
+{
+"id": "budget_travel-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide if a cheap option is really a good deal?",
+"de": "Woran erkennst du, ob ein günstiges Angebot wirklich ein gutes Geschäft ist?",
+"es": "¿Cómo decides si una opción barata es realmente una buena oferta?",
+"fr": "Comment sais-tu si une option bon marché est vraiment une bonne affaire ?",
+"it": "Come capisci se un'opzione economica è davvero un buon affare?",
+"pt": "Como decides se uma opção barata é mesmo um bom negócio?",
+"pt_BR": "Como você decide se uma opção barata é mesmo um bom negócio?"
+}
+},
+{
+"id": "budget_travel-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you need to enjoy staying a whole month in one place?",
+"de": "Was bräuchtest du, um einen ganzen Monat an einem Ort zu genießen?",
+"es": "¿Qué necesitarías para disfrutar de quedarte un mes entero en un mismo lugar?",
+"fr": "De quoi aurais-tu besoin pour profiter d'un mois entier au même endroit ?",
+"it": "Di cosa avresti bisogno per goderti un mese intero nello stesso posto?",
+"pt": "De que precisarias para aproveitar um mês inteiro no mesmo sítio?",
+"pt_BR": "Do que você precisaria para curtir um mês inteiro num só lugar?"
+}
+},
+{
+"id": "budget_travel-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep your budget on track when plans suddenly change?",
+"de": "Wie hältst du dein Budget ein, wenn sich Pläne plötzlich ändern?",
+"es": "¿Cómo mantienes tu presupuesto cuando los planes cambian de repente?",
+"fr": "Comment tiens-tu ton budget quand les plans changent soudainement ?",
+"it": "Come rispetti il tuo budget quando i piani cambiano all'improvviso?",
+"pt": "Como manténs o orçamento quando os planos mudam de repente?",
+"pt_BR": "Como você mantém o orçamento quando os planos mudam de repente?"
+}
+},
+{
+"id": "budget_travel-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which eco-friendly travel habit would be easiest for you to adopt?",
+"de": "Welche umweltfreundliche Reisegewohnheit könntest du am leichtesten übernehmen?",
+"es": "¿Qué hábito de viaje sostenible te resultaría más fácil adoptar?",
+"fr": "Quelle habitude de voyage écologique te serait la plus facile à adopter ?",
+"it": "Quale abitudine di viaggio sostenibile ti sarebbe più facile adottare?",
+"pt": "Que hábito de viagem sustentável te seria mais fácil adotar?",
+"pt_BR": "Qual hábito de viagem sustentável seria mais fácil pra você adotar?"
+}
+},
+{
+"id": "budget_travel-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you choose between a faster flight and a slower train?",
+"de": "Wie entscheidest du zwischen einem schnellen Flug und einem langsameren Zug?",
+"es": "¿Cómo eliges entre un vuelo más rápido y un tren más lento?",
+"fr": "Comment choisis-tu entre un vol plus rapide et un train plus lent ?",
+"it": "Come scegli tra un volo più veloce e un treno più lento?",
+"pt": "Como escolhes entre um voo mais rápido e um comboio mais lento?",
+"pt_BR": "Como você escolhe entre um voo mais rápido e um trem mais lento?"
+}
+},
+{
+"id": "budget_travel-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What's your strategy for finding authentic, affordable restaurants?",
+"de": "Wie findest du authentische und bezahlbare Restaurants?",
+"es": "¿Cuál es tu estrategia para encontrar restaurantes auténticos y económicos?",
+"fr": "Quelle est ta stratégie pour trouver des restaurants authentiques et abordables ?",
+"it": "Qual è la tua strategia per trovare ristoranti autentici ed economici?",
+"pt": "Qual é a tua estratégia para encontrar restaurantes autênticos e baratos?",
+"pt_BR": "Qual é a sua estratégia para achar restaurantes autênticos e baratos?"
+}
+},
+{
+"id": "budget_travel-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you split costs fairly on a trip with friends?",
+"de": "Wie würdest du die Kosten auf einer Reise mit Freunden fair aufteilen?",
+"es": "¿Cómo repartirías los gastos de forma justa en un viaje con amigos?",
+"fr": "Comment partagerais-tu les frais équitablement lors d'un voyage entre amis ?",
+"it": "Come divideresti le spese in modo equo in un viaggio con gli amici?",
+"pt": "Como dividirias as despesas de forma justa numa viagem com amigos?",
+"pt_BR": "Como você dividiria os custos de forma justa numa viagem com amigos?"
+}
+},
+{
+"id": "budget_travel-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever handled a delay or cancellation well? What did you do?",
+"de": "Hast du schon mal eine Verspätung oder Absage gut gemeistert? Was hast du getan?",
+"es": "¿Has sabido manejar bien algún retraso o cancelación? ¿Qué hiciste?",
+"fr": "As-tu déjà bien géré un retard ou une annulation ? Qu'as-tu fait ?",
+"it": "Hai mai gestito bene un ritardo o una cancellazione? Cosa hai fatto?",
+"pt": "Já lidaste bem com um atraso ou cancelamento? O que fizeste?",
+"pt_BR": "Você já lidou bem com um atraso ou cancelamento? O que fez?"
+}
+},
+{
+"id": "budget_travel-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which type of trip fits your budget best: city, beach or mountains?",
+"de": "Welche Reiseart passt am besten zu deinem Budget: Stadt, Strand oder Berge?",
+"es": "¿Qué tipo de viaje encaja mejor con tu presupuesto: ciudad, playa o montaña?",
+"fr": "Quel type de voyage convient le mieux à ton budget : ville, plage ou montagne ?",
+"it": "Quale tipo di viaggio si adatta meglio al tuo budget: città, mare o montagna?",
+"pt": "Que tipo de viagem encaixa melhor no teu orçamento: cidade, praia ou montanha?",
+"pt_BR": "Que tipo de viagem cabe melhor no seu orçamento: cidade, praia ou montanha?"
+}
+},
+{
+"id": "budget_travel-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan a route through several cities without backtracking?",
+"de": "Wie planst du eine Route durch mehrere Städte, ohne hin und her zu fahren?",
+"es": "¿Cómo planeas una ruta por varias ciudades sin tener que volver atrás?",
+"fr": "Comment planifies-tu un itinéraire entre plusieurs villes sans revenir sur tes pas ?",
+"it": "Come pianifichi un itinerario tra più città senza tornare indietro?",
+"pt": "Como planeias uma rota por várias cidades sem ter de voltar para trás?",
+"pt_BR": "Como você planeja um roteiro por várias cidades sem precisar voltar atrás?"
+}
+},
+{
+"id": "budget_travel-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about travelling in the off-season?",
+"de": "Was hältst du vom Reisen in der Nebensaison?",
+"es": "¿Qué opinas de viajar en temporada baja?",
+"fr": "Que penses-tu du voyage hors saison ?",
+"it": "Cosa pensi del viaggiare in bassa stagione?",
+"pt": "O que achas de viajar na época baixa?",
+"pt_BR": "O que você acha de viajar na baixa temporada?"
+}
+},
+{
+"id": "budget_travel-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which local community activity would you join during a longer stay?",
+"de": "An welcher lokalen Gemeinschaftsaktivität würdest du bei einem längeren Aufenthalt teilnehmen?",
+"es": "¿En qué actividad de la comunidad local participarías durante una estancia larga?",
+"fr": "À quelle activité locale participerais-tu lors d'un long séjour ?",
+"it": "A quale attività della comunità locale parteciperesti durante un soggiorno lungo?",
+"pt": "Em que atividade da comunidade local participarias durante uma estadia longa?",
+"pt_BR": "De qual atividade da comunidade local você participaria numa estadia longa?"
+}
+},
+{
+"id": "budget_travel-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you find out about free events in a city you're visiting?",
+"de": "Wie erfährst du von kostenlosen Veranstaltungen in einer Stadt, die du besuchst?",
+"es": "¿Cómo te enteras de los eventos gratuitos en una ciudad que visitas?",
+"fr": "Comment te renseignes-tu sur les événements gratuits dans une ville que tu visites ?",
+"it": "Come scopri gli eventi gratuiti in una città che stai visitando?",
+"pt": "Como descobres os eventos gratuitos numa cidade que estás a visitar?",
+"pt_BR": "Como você descobre eventos gratuitos numa cidade que está visitando?"
+}
+},
+{
+"id": "budget_travel-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you plan a budget trip for a family or a big group?",
+"de": "Wie würdest du eine günstige Reise für eine Familie oder große Gruppe planen?",
+"es": "¿Cómo planearías un viaje económico para una familia o un grupo grande?",
+"fr": "Comment organiserais-tu un voyage pas cher pour une famille ou un grand groupe ?",
+"it": "Come organizzeresti un viaggio economico per una famiglia o un grande gruppo?",
+"pt": "Como planearias uma viagem económica para uma família ou um grupo grande?",
+"pt_BR": "Como você planejaria uma viagem econômica para uma família ou um grupo grande?"
+}
+},
+{
+"id": "budget_travel-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What's the best way to support local businesses when you travel?",
+"de": "Wie unterstützt man auf Reisen am besten lokale Geschäfte?",
+"es": "¿Cuál es la mejor forma de apoyar a los negocios locales cuando viajas?",
+"fr": "Quelle est la meilleure façon de soutenir les commerces locaux en voyage ?",
+"it": "Qual è il modo migliore per sostenere le attività locali quando viaggi?",
+"pt": "Qual é a melhor forma de apoiar o comércio local quando viajas?",
+"pt_BR": "Qual é a melhor forma de apoiar o comércio local quando você viaja?"
+}
+},
+{
+"id": "budget_travel-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How has your way of travelling changed over the years?",
+"de": "Wie hat sich deine Art zu reisen im Lauf der Jahre verändert?",
+"es": "¿Cómo ha cambiado tu forma de viajar con los años?",
+"fr": "Comment ta façon de voyager a-t-elle évolué au fil des ans ?",
+"it": "Come è cambiato il tuo modo di viaggiare nel corso degli anni?",
+"pt": "Como mudou a tua forma de viajar ao longo dos anos?",
+"pt_BR": "Como o seu jeito de viajar mudou ao longo dos anos?"
+}
+},
+{
+"id": "budget_travel-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you could take a year off to travel, how would you plan it?",
+"de": "Wenn du ein Jahr Auszeit zum Reisen hättest, wie würdest du es planen?",
+"es": "Si pudieras tomarte un año sabático para viajar, ¿cómo lo planearías?",
+"fr": "Si tu pouvais prendre une année pour voyager, comment l'organiserais-tu ?",
+"it": "Se potessi prenderti un anno sabbatico per viaggiare, come lo organizzeresti?",
+"pt": "Se pudesses tirar um ano para viajar, como o planearias?",
+"pt_BR": "Se você pudesse tirar um ano sabático para viajar, como planejaria?"
+}
+},
+{
+"id": "budget_travel-087",
+"lv": "advanced",
+"i18n": {
+"en": "What would your dream round-the-world route look like?",
+"de": "Wie sähe deine Traumroute für eine Weltreise aus?",
+"es": "¿Cómo sería tu ruta soñada de vuelta al mundo?",
+"fr": "À quoi ressemblerait ton itinéraire de tour du monde idéal ?",
+"it": "Come sarebbe il tuo itinerario dei sogni per un giro del mondo?",
+"pt": "Como seria a tua rota de sonho para uma volta ao mundo?",
+"pt_BR": "Como seria o seu roteiro dos sonhos de volta ao mundo?"
+}
+},
+{
+"id": "budget_travel-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you prepare your home and finances for months away?",
+"de": "Wie würdest du Wohnung und Finanzen auf mehrere Monate Abwesenheit vorbereiten?",
+"es": "¿Cómo prepararías tu casa y tus finanzas para pasar meses fuera?",
+"fr": "Comment préparerais-tu ton logement et tes finances pour des mois d'absence ?",
+"it": "Come prepareresti casa e finanze per stare via diversi mesi?",
+"pt": "Como prepararias a tua casa e as tuas finanças para passar meses fora?",
+"pt_BR": "Como você prepararia sua casa e suas finanças para passar meses fora?"
+}
+},
+{
+"id": "budget_travel-089",
+"lv": "advanced",
+"i18n": {
+"en": "Would you like to work or volunteer while travelling long-term? How?",
+"de": "Würdest du auf einer langen Reise gern arbeiten oder dich ehrenamtlich engagieren? Wie?",
+"es": "¿Te gustaría trabajar o hacer voluntariado durante un viaje largo? ¿Cómo?",
+"fr": "Aimerais-tu travailler ou faire du bénévolat pendant un long voyage ? Comment ?",
+"it": "Ti piacerebbe lavorare o fare volontariato durante un lungo viaggio? Come?",
+"pt": "Gostavas de trabalhar ou fazer voluntariado durante uma viagem longa? Como?",
+"pt_BR": "Você gostaria de trabalhar ou fazer voluntariado numa viagem longa? Como?"
+}
+},
+{
+"id": "budget_travel-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance saving money with safety and comfort?",
+"de": "Wie bringst du Sparen mit Sicherheit und Komfort in Einklang?",
+"es": "¿Cómo equilibras el ahorro con la seguridad y la comodidad?",
+"fr": "Comment trouves-tu l'équilibre entre économies, sécurité et confort ?",
+"it": "Come bilanci il risparmio con la sicurezza e il comfort?",
+"pt": "Como equilibras a poupança com a segurança e o conforto?",
+"pt_BR": "Como você equilibra economia com segurança e conforto?"
+}
+},
+{
+"id": "budget_travel-091",
+"lv": "advanced",
+"i18n": {
+"en": "What's your approach to researching places with little information online?",
+"de": "Wie recherchierst du Orte, über die es online kaum Informationen gibt?",
+"es": "¿Cómo investigas lugares sobre los que hay poca información en internet?",
+"fr": "Comment te renseignes-tu sur des lieux peu documentés en ligne ?",
+"it": "Come ti informi sui luoghi di cui si trova poco online?",
+"pt": "Como pesquisas sítios sobre os quais há pouca informação na internet?",
+"pt_BR": "Como você pesquisa lugares sobre os quais há pouca informação na internet?"
+}
+},
+{
+"id": "budget_travel-092",
+"lv": "advanced",
+"i18n": {
+"en": "Which epic overland or rail journey would you love to make?",
+"de": "Welche große Überland- oder Zugreise würdest du gern einmal machen?",
+"es": "¿Qué gran viaje por tierra o en tren te encantaría hacer?",
+"fr": "Quel grand voyage par la route ou en train rêverais-tu de faire ?",
+"it": "Quale grande viaggio via terra o in treno ti piacerebbe fare?",
+"pt": "Que grande viagem por terra ou de comboio adorarias fazer?",
+"pt_BR": "Qual grande viagem por terra ou de trem você adoraria fazer?"
+}
+},
+{
+"id": "budget_travel-093",
+"lv": "advanced",
+"i18n": {
+"en": "How would you handle travel fatigue on a very long trip?",
+"de": "Wie würdest du mit Reisemüdigkeit auf einer sehr langen Reise umgehen?",
+"es": "¿Cómo afrontarías el cansancio de viajar en un viaje muy largo?",
+"fr": "Comment gérerais-tu la fatigue du voyage lors d'un très long périple ?",
+"it": "Come affronteresti la stanchezza da viaggio in un viaggio molto lungo?",
+"pt": "Como lidarias com o cansaço numa viagem muito longa?",
+"pt_BR": "Como você lidaria com o cansaço numa viagem muito longa?"
+}
+},
+{
+"id": "budget_travel-094",
+"lv": "advanced",
+"i18n": {
+"en": "What does travelling with purpose mean to you?",
+"de": "Was bedeutet es für dich, mit einem Ziel oder Sinn zu reisen?",
+"es": "¿Qué significa para ti viajar con propósito?",
+"fr": "Que signifie pour toi voyager avec un but ?",
+"it": "Che cosa significa per te viaggiare con uno scopo?",
+"pt": "O que significa para ti viajar com propósito?",
+"pt_BR": "O que significa pra você viajar com propósito?"
+}
+},
+{
+"id": "budget_travel-095",
+"lv": "advanced",
+"i18n": {
+"en": "What would you teach a friend who is planning their first budget trip?",
+"de": "Was würdest du einem Freund beibringen, der seine erste Budgetreise plant?",
+"es": "¿Qué le enseñarías a un amigo que planea su primer viaje low cost?",
+"fr": "Que transmettrais-tu à un ami qui prépare son premier voyage petit budget ?",
+"it": "Cosa insegneresti a un amico che organizza il suo primo viaggio low cost?",
+"pt": "O que ensinarias a um amigo que está a planear a primeira viagem low cost?",
+"pt_BR": "O que você ensinaria a um amigo que está planejando a primeira viagem econômica?"
+}
+},
+{
+"id": "budget_travel-096",
+"lv": "advanced",
+"i18n": {
+"en": "Which budget travel myth would you like to bust?",
+"de": "Welchen Mythos über günstiges Reisen würdest du gern widerlegen?",
+"es": "¿Qué mito sobre viajar barato te gustaría desmontar?",
+"fr": "Quel mythe sur le voyage pas cher aimerais-tu démonter ?",
+"it": "Quale mito sul viaggiare low cost ti piacerebbe sfatare?",
+"pt": "Que mito sobre viajar barato gostavas de desfazer?",
+"pt_BR": "Qual mito sobre viajar barato você gostaria de derrubar?"
+}
+},
+{
+"id": "budget_travel-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you decide when a trip is worth spending more on?",
+"de": "Wie entscheidest du, wann es sich lohnt, für eine Reise mehr auszugeben?",
+"es": "¿Cómo decides cuándo vale la pena gastar más en un viaje?",
+"fr": "Comment décides-tu qu'un voyage mérite qu'on dépense plus ?",
+"it": "Come decidi quando vale la pena spendere di più per un viaggio?",
+"pt": "Como decides quando vale a pena gastar mais numa viagem?",
+"pt_BR": "Como você decide quando vale a pena gastar mais numa viagem?"
+}
+},
+{
+"id": "budget_travel-098",
+"lv": "advanced",
+"i18n": {
+"en": "How has budget travel changed the way you see money and things?",
+"de": "Wie hat günstiges Reisen deinen Blick auf Geld und Besitz verändert?",
+"es": "¿Cómo ha cambiado viajar con poco tu forma de ver el dinero y las cosas?",
+"fr": "Comment le voyage à petit budget a-t-il changé ton rapport à l'argent et aux objets ?",
+"it": "Come ha cambiato il viaggiare low cost il tuo modo di vedere il denaro e le cose?",
+"pt": "Como é que viajar com pouco mudou a tua forma de ver o dinheiro e as coisas?",
+"pt_BR": "Como viajar com pouco mudou o seu jeito de ver o dinheiro e as coisas?"
+}
+},
+{
+"id": "budget_travel-099",
+"lv": "advanced",
+"i18n": {
+"en": "What would your perfect budget trip plan include, from start to finish?",
+"de": "Was gehört von Anfang bis Ende zu deinem perfekten Plan für eine Budgetreise?",
+"es": "¿Qué incluiría tu plan de viaje económico perfecto, de principio a fin?",
+"fr": "Que contiendrait ton plan de voyage petit budget parfait, du début à la fin ?",
+"it": "Cosa includerebbe il tuo piano di viaggio low cost perfetto, dall'inizio alla fine?",
+"pt": "O que incluiria o teu plano de viagem económica perfeito, do início ao fim?",
+"pt_BR": "O que teria o seu plano de viagem econômica perfeito, do começo ao fim?"
+}
+},
+{
+"id": "budget_travel-100",
+"lv": "advanced",
+"i18n": {
+"en": "What travel goal would you like to reach in the next five years?",
+"de": "Welchen Reisetraum möchtest du dir in den nächsten fünf Jahren erfüllen?",
+"es": "¿Qué meta viajera te gustaría alcanzar en los próximos cinco años?",
+"fr": "Quel objectif de voyage aimerais-tu atteindre dans les cinq prochaines années ?",
+"it": "Quale obiettivo di viaggio vorresti raggiungere nei prossimi cinque anni?",
+"pt": "Que objetivo de viagem gostavas de alcançar nos próximos cinco anos?",
+"pt_BR": "Qual meta de viagem você gostaria de alcançar nos próximos cinco anos?"
+}
+}
+]
+}

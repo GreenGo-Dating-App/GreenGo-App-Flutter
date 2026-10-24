@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My town: places in the city",
+     "g": "Name the places around you and say where you go.",
+     "p": [
+      "Key places: el banco, el supermercado, la farmacia, la biblioteca, la estación, el hospital, el ayuntamiento.",
+      "Going somewhere: voy al banco (a + el = al), voy a la farmacia.",
+      "Combine with hay and estar: en mi barrio hay una biblioteca; está al lado del parque."
+     ],
+     "q": "Which places do you visit every week? Tell me with voy al and voy a la.",
+     "c": "Write a short description of your neighbourhood with five places and where they are."
+    },
+    "de": {
+     "t": "Meine Stadt: Orte in der Stadt",
+     "g": "Du nennst die Orte um dich herum und sagst, wohin du gehst.",
+     "p": [
+      "Wichtige Orte: el banco, el supermercado, la farmacia, la biblioteca, la estación, el hospital, el ayuntamiento.",
+      "Wohin gehen: voy al banco (a + el = al), voy a la farmacia.",
+      "Kombiniere mit hay und estar: en mi barrio hay una biblioteca; está al lado del parque."
+     ],
+     "q": "Welche Orte besuchst du jede Woche? Sag es mit voy al und voy a la.",
+     "c": "Schreib eine kurze Beschreibung deines Viertels mit fünf Orten und wo sie liegen."
+    },
+    "es": {
+     "t": "Mi ciudad: lugares",
+     "g": "Nombra los lugares de tu entorno y di adónde vas.",
+     "p": [
+      "Lugares clave: el banco, el supermercado, la farmacia, la biblioteca, la estación, el hospital, el ayuntamiento.",
+      "Para el destino: voy al banco (a + el = al), voy a la farmacia.",
+      "Combina con hay y estar: en mi barrio hay una biblioteca; está al lado del parque."
+     ],
+     "q": "¿Qué lugar de tu barrio no podría faltar nunca y por qué?",
+     "c": "Escribe una breve descripción de tu barrio con cinco lugares y dónde están."
+    },
+    "fr": {
+     "t": "Ma ville : les lieux",
+     "g": "Nommer les lieux autour de toi et dire où tu vas.",
+     "p": [
+      "Lieux clés : el banco, el supermercado, la farmacia, la biblioteca, la estación, el hospital, el ayuntamiento.",
+      "Pour aller quelque part : voy al banco (a + el = al), voy a la farmacia.",
+      "Combine avec hay et estar : en mi barrio hay una biblioteca ; está al lado del parque."
+     ],
+     "q": "Quels lieux fréquentes-tu chaque semaine ? Dis-le avec voy al et voy a la.",
+     "c": "Écris une courte description de ton quartier avec cinq lieux et leur emplacement."
+    },
+    "it": {
+     "t": "La mia città: i luoghi",
+     "g": "Nomini i luoghi intorno a te e dici dove vai.",
+     "p": [
+      "Luoghi chiave: el banco, el supermercado, la farmacia, la biblioteca, la estación, el hospital, el ayuntamiento.",
+      "Per andare: voy al banco (a + el = al), voy a la farmacia.",
+      "Combina con hay ed estar: en mi barrio hay una biblioteca; está al lado del parque."
+     ],
+     "q": "Quali luoghi frequenti ogni settimana? Dimmelo con voy al e voy a la.",
+     "c": "Scrivi una breve descrizione del tuo quartiere con cinque luoghi e dove si trovano."
+    },
+    "pt": {
+     "t": "A minha cidade: os lugares",
+     "g": "Nomeia os lugares à tua volta e diz aonde vais.",
+     "p": [
+      "Lugares-chave: el banco, el supermercado, la farmacia, la biblioteca, la estación, el hospital, el ayuntamiento.",
+      "Para ir: voy al banco (a + el = al), voy a la farmacia.",
+      "Combina com hay e estar: en mi barrio hay una biblioteca; está al lado del parque."
+     ],
+     "q": "Que lugares frequentas todas as semanas? Diz com voy al e voy a la.",
+     "c": "Escreve uma breve descrição do teu bairro com cinco lugares e onde ficam."
+    },
+    "pt_BR": {
+     "t": "Minha cidade: os lugares",
+     "g": "Nomeie os lugares ao seu redor e diga aonde você vai.",
+     "p": [
+      "Lugares-chave: el banco, el supermercado, la farmacia, la biblioteca, la estación, el hospital, el ayuntamiento.",
+      "Para ir: voy al banco (a + el = al), voy a la farmacia.",
+      "Combine com hay e estar: en mi barrio hay una biblioteca; está al lado del parque."
+     ],
+     "q": "Que lugares você frequenta toda semana? Diga com voy al e voy a la.",
+     "c": "Escreva uma breve descrição do seu bairro com cinco lugares e onde ficam."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el banco",
+      "ex": "El banco abre a las nueve."
+     },
+     {
+      "w": "el supermercado",
+      "ex": "Voy al supermercado los sábados."
+     },
+     {
+      "w": "la farmacia",
+      "ex": "La farmacia está en la esquina."
+     },
+     {
+      "w": "la biblioteca",
+      "ex": "Estudio en la biblioteca."
+     },
+     {
+      "w": "la estación",
+      "ex": "La estación de tren está cerca."
+     },
+     {
+      "w": "el ayuntamiento",
+      "ex": "El ayuntamiento está en la plaza mayor."
+     }
+    ],
+    "gram": "Ir a + lugar: voy al banco (a + el = al), voy a la farmacia. Lugares en la ciudad con hay y estar: hay una biblioteca; está cerca."
+   }
+  },
+  {
+   "d": 42,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking for directions",
+     "g": "Ask your way politely in Spanish.",
+     "p": [
+      "Start with perdone (to usted) or perdona (to tú) to get someone's attention.",
+      "¿Dónde está el museo? for a specific place; ¿Hay un cajero por aquí? for any one nearby.",
+      "Follow up with ¿Está lejos? and thank them: muchas gracias, muy amable."
+     ],
+     "q": "You are lost near a station. How do you ask a stranger where the nearest pharmacy is?",
+     "c": "Write three polite questions to find places you would need on a trip."
+    },
+    "de": {
+     "t": "Nach dem Weg fragen",
+     "g": "Du fragst höflich auf Spanisch nach dem Weg.",
+     "p": [
+      "Beginne mit perdone (zu usted) oder perdona (zu tú), um jemanden anzusprechen.",
+      "¿Dónde está el museo? für einen bestimmten Ort; ¿Hay un cajero por aquí? für irgendeinen in der Nähe.",
+      "Frag nach ¿Está lejos? und bedank dich: muchas gracias, muy amable."
+     ],
+     "q": "Du hast dich bei einem Bahnhof verlaufen. Wie fragst du jemanden nach der nächsten Apotheke?",
+     "c": "Schreib drei höfliche Fragen nach Orten, die du auf einer Reise brauchen würdest."
+    },
+    "es": {
+     "t": "Preguntar el camino",
+     "g": "Pregunta cómo llegar a un sitio con cortesía.",
+     "p": [
+      "Llama la atención con perdone (usted) o perdona (tú); también disculpe o disculpa.",
+      "¿Dónde está el museo? para un lugar concreto; ¿Hay un cajero por aquí? para cualquiera cercano.",
+      "Después pregunta ¿Está lejos? y da las gracias: muchas gracias, muy amable."
+     ],
+     "q": "Un turista te pregunta por tu barrio. ¿Qué preguntas suele hacer la gente perdida?",
+     "c": "Escribe tres preguntas corteses para encontrar sitios que necesitarías en un viaje."
+    },
+    "fr": {
+     "t": "Demander son chemin",
+     "g": "Demander poliment ton chemin en espagnol.",
+     "p": [
+      "Commence par perdone (à usted) ou perdona (à tú) pour attirer l'attention.",
+      "¿Dónde está el museo? pour un lieu précis ; ¿Hay un cajero por aquí? pour n'importe lequel près d'ici.",
+      "Enchaîne avec ¿Está lejos? et remercie : muchas gracias, muy amable."
+     ],
+     "q": "Tu es perdu près d'une gare. Comment demandes-tu à un passant où est la pharmacie ?",
+     "c": "Écris trois questions polies pour trouver des lieux utiles en voyage."
+    },
+    "it": {
+     "t": "Chiedere indicazioni",
+     "g": "Chiedi la strada in spagnolo con gentilezza.",
+     "p": [
+      "Comincia con perdone (a usted) o perdona (a tú) per attirare l'attenzione.",
+      "¿Dónde está el museo? per un luogo preciso; ¿Hay un cajero por aquí? per uno qualsiasi vicino.",
+      "Poi chiedi ¿Está lejos? e ringrazia: muchas gracias, muy amable."
+     ],
+     "q": "Ti sei perso vicino a una stazione. Come chiedi a un passante dov'è la farmacia più vicina?",
+     "c": "Scrivi tre domande gentili per trovare luoghi utili in viaggio."
+    },
+    "pt": {
+     "t": "Pedir indicações",
+     "g": "Pergunta o caminho em espanhol com educação.",
+     "p": [
+      "Começa com perdone (a usted) ou perdona (a tú) para chamar a atenção.",
+      "¿Dónde está el museo? para um lugar concreto; ¿Hay un cajero por aquí? para qualquer um perto.",
+      "Depois pergunta ¿Está lejos? e agradece: muchas gracias, muy amable."
+     ],
+     "q": "Perdeste-te perto de uma estação. Como perguntas a alguém onde fica a farmácia mais próxima?",
+     "c": "Escreve três perguntas educadas para encontrar lugares úteis numa viagem."
+    },
+    "pt_BR": {
+     "t": "Pedindo informações",
+     "g": "Pergunte o caminho em espanhol com educação.",
+     "p": [
+      "Comece com perdone (para usted) ou perdona (para tú) para chamar a atenção.",
+      "¿Dónde está el museo? para um lugar específico; ¿Hay un cajero por aquí? para qualquer um por perto.",
+      "Depois pergunte ¿Está lejos? e agradeça: muchas gracias, muy amable."
+     ],
+     "q": "Você se perdeu perto de uma estação. Como pergunta a alguém onde fica a farmácia mais próxima?",
+     "c": "Escreva três perguntas educadas para achar lugares úteis numa viagem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "perdone",
+      "ex": "Perdone, ¿dónde está la estación?"
+     },
+     {
+      "w": "perdona",
+      "ex": "Perdona, ¿sabes dónde hay un cajero?"
+     },
+     {
+      "w": "el cajero",
+      "ex": "¿Hay un cajero por aquí?"
+     },
+     {
+      "w": "por aquí",
+      "ex": "¿Hay una farmacia por aquí?"
+     },
+     {
+      "w": "¿está lejos?",
+      "ex": "¿Está lejos el museo?"
+     },
+     {
+      "w": "muchas gracias",
+      "ex": "Muchas gracias, muy amable."
+     }
+    ],
+    "gram": "Para pedir ayuda: perdone (usted) o perdona (tú). ¿Dónde está + el/la...? para algo concreto; ¿Hay un/una... por aquí? para algo cualquiera."
+   }
+  },
+  {
+   "d": 43,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Giving directions",
+     "g": "Guide someone through the streets in Spanish.",
+     "p": [
+      "Core phrases: sigue recto (go straight on), gira a la izquierda / a la derecha (turn left / right).",
+      "Toma la primera / segunda calle (take the first / second street) and cruza la plaza (cross the square).",
+      "For tú, the instruction looks like the él form: sigue, gira, toma; with usted it becomes siga, gire, tome."
+     ],
+     "q": "How do I get from your front door to the nearest café? Give me directions in Spanish.",
+     "c": "Describe in Spanish the way from your home to a place you go often, in four steps."
+    },
+    "de": {
+     "t": "Den Weg beschreiben",
+     "g": "Du führst jemanden auf Spanisch durch die Straßen.",
+     "p": [
+      "Kernsätze: sigue recto (geradeaus), gira a la izquierda / a la derecha (links / rechts abbiegen).",
+      "Toma la primera / segunda calle (nimm die erste / zweite Straße) und cruza la plaza (überquere den Platz).",
+      "Für tú sieht die Anweisung wie die él-Form aus: sigue, gira, toma; mit usted: siga, gire, tome."
+     ],
+     "q": "Wie komme ich von deiner Haustür zum nächsten Café? Beschreib mir den Weg auf Spanisch.",
+     "c": "Beschreib auf Spanisch in vier Schritten den Weg von zu Hause zu einem Ort, an den du oft gehst."
+    },
+    "es": {
+     "t": "Dar indicaciones",
+     "g": "Guía a alguien por la ciudad con indicaciones claras.",
+     "p": [
+      "Frases clave: sigue recto, gira a la izquierda, gira a la derecha, todo recto.",
+      "Toma la primera o la segunda calle, cruza la plaza, al final de la calle, en la esquina.",
+      "Con tú: sigue, gira, toma; con usted: siga, gire, tome. Elige según a quién hables."
+     ],
+     "q": "¿Cómo llego desde tu casa hasta tu café favorito? Dame las indicaciones paso a paso.",
+     "c": "Explica por escrito, en cuatro pasos, el camino de tu casa a un lugar al que vas a menudo."
+    },
+    "fr": {
+     "t": "Indiquer le chemin",
+     "g": "Guider quelqu'un dans les rues en espagnol.",
+     "p": [
+      "Phrases clés : sigue recto (tout droit), gira a la izquierda / a la derecha (tourne à gauche / à droite).",
+      "Toma la primera / segunda calle (prends la première / deuxième rue) et cruza la plaza (traverse la place).",
+      "Avec tú, l'ordre ressemble à la forme él : sigue, gira, toma ; avec usted : siga, gire, tome."
+     ],
+     "q": "Comment aller de ta porte au café le plus proche ? Donne-moi le chemin en espagnol.",
+     "c": "Décris en espagnol, en quatre étapes, le trajet de chez toi à un endroit où tu vas souvent."
+    },
+    "it": {
+     "t": "Dare indicazioni",
+     "g": "Guidi qualcuno per le strade in spagnolo.",
+     "p": [
+      "Frasi chiave: sigue recto (vai dritto), gira a la izquierda / a la derecha (gira a sinistra / a destra).",
+      "Toma la primera / segunda calle (prendi la prima / seconda via) e cruza la plaza (attraversa la piazza).",
+      "Con tú l'ordine somiglia alla forma di él: sigue, gira, toma; con usted: siga, gire, tome."
+     ],
+     "q": "Come arrivo da casa tua al bar più vicino? Dammi le indicazioni in spagnolo.",
+     "c": "Descrivi in spagnolo, in quattro passi, la strada da casa tua a un posto dove vai spesso."
+    },
+    "pt": {
+     "t": "Dar indicações",
+     "g": "Guia alguém pelas ruas em espanhol.",
+     "p": [
+      "Frases-chave: sigue recto (segue em frente), gira a la izquierda / a la derecha (vira à esquerda / à direita).",
+      "Toma la primera / segunda calle (apanha a primeira / segunda rua) e cruza la plaza (atravessa a praça).",
+      "Com tú, a ordem parece a forma de él: sigue, gira, toma; com usted: siga, gire, tome."
+     ],
+     "q": "Como chego da tua porta ao café mais próximo? Dá-me as indicações em espanhol.",
+     "c": "Descreve em espanhol, em quatro passos, o caminho de casa até um lugar aonde vais muitas vezes."
+    },
+    "pt_BR": {
+     "t": "Dando indicações",
+     "g": "Guie alguém pelas ruas em espanhol.",
+     "p": [
+      "Frases-chave: sigue recto (siga reto), gira a la izquierda / a la derecha (vire à esquerda / à direita).",
+      "Toma la primera / segunda calle (pegue a primeira / segunda rua) e cruza la plaza (atravesse a praça).",
+      "Com tú, a ordem parece a forma de él: sigue, gira, toma; com usted: siga, gire, tome."
+     ],
+     "q": "Como chego da sua porta até o café mais próximo? Me dê as indicações em espanhol.",
+     "c": "Descreva em espanhol, em quatro passos, o caminho de casa até um lugar aonde você vai sempre."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sigue recto",
+      "ex": "Sigue recto hasta el semáforo."
+     },
+     {
+      "w": "gira a la izquierda",
+      "ex": "Gira a la izquierda en la plaza."
+     },
+     {
+      "w": "a la derecha",
+      "ex": "El hotel está a la derecha."
+     },
+     {
+      "w": "la primera calle",
+      "ex": "Toma la primera calle a la derecha."
+     },
+     {
+      "w": "cruza",
+      "ex": "Cruza la calle y ya está."
+     },
+     {
+      "w": "la esquina",
+      "ex": "La panadería está en la esquina."
+     }
+    ],
+    "gram": "Para dar indicaciones a un amigo: sigue, gira, toma, cruza (imperativo de tú = forma de él en presente). Con usted: siga, gire, tome."
+   }
+  },
+  {
+   "d": 44,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Transport: bus, metro, train",
+     "g": "Talk about how you get around and how long it takes.",
+     "p": [
+      "Use en + transport: en autobús, en metro, en tren, en coche, en bici.",
+      "The exception is a pie (on foot), also said andando or caminando.",
+      "Ask ¿Cuánto tardas? and answer tardo + time: tardo veinte minutos en metro."
+     ],
+     "q": "How do you get to work or school, and how long does it take you?",
+     "c": "Track your journeys today and describe them in Spanish with en, a pie and tardar."
+    },
+    "de": {
+     "t": "Verkehrsmittel: Bus, U-Bahn, Zug",
+     "g": "Du sagst, wie du unterwegs bist und wie lange es dauert.",
+     "p": [
+      "En + Verkehrsmittel: en autobús, en metro, en tren, en coche, en bici.",
+      "Ausnahme: a pie (zu Fuß), auch andando oder caminando.",
+      "Frag ¿Cuánto tardas? und antworte tardo + Zeit: tardo veinte minutos en metro."
+     ],
+     "q": "Wie kommst du zur Arbeit oder Schule, und wie lange brauchst du?",
+     "c": "Verfolge heute deine Wege und beschreib sie auf Spanisch mit en, a pie und tardar."
+    },
+    "es": {
+     "t": "Transporte: autobús, metro, tren",
+     "g": "Habla de cómo te mueves y de cuánto tardas.",
+     "p": [
+      "Se usa en + medio: en autobús, en metro, en tren, en coche, en bici.",
+      "La excepción es a pie, también andando o caminando. Variantes: guagua, camión o colectivo según el país.",
+      "Pregunta ¿Cuánto tardas? y responde con tardo + tiempo: tardo veinte minutos en metro."
+     ],
+     "q": "¿Cómo vas al trabajo o a clase y cuánto tardas? ¿Qué medio prefieres?",
+     "c": "Apunta tus trayectos de hoy y descríbelos con en, a pie y tardar."
+    },
+    "fr": {
+     "t": "Transports : bus, métro, train",
+     "g": "Dire comment tu te déplaces et combien de temps ça prend.",
+     "p": [
+      "En + transport : en autobús, en metro, en tren, en coche, en bici.",
+      "L'exception : a pie (à pied), aussi andando ou caminando.",
+      "Demande ¿Cuánto tardas? et réponds tardo + durée : tardo veinte minutos en metro."
+     ],
+     "q": "Comment vas-tu au travail ou en cours, et combien de temps mets-tu ?",
+     "c": "Note tes trajets d'aujourd'hui et décris-les en espagnol avec en, a pie et tardar."
+    },
+    "it": {
+     "t": "Trasporti: autobus, metro, treno",
+     "g": "Dici come ti sposti e quanto ci metti.",
+     "p": [
+      "En + mezzo: en autobús, en metro, en tren, en coche, en bici.",
+      "L'eccezione è a pie (a piedi), anche andando o caminando.",
+      "Chiedi ¿Cuánto tardas? e rispondi tardo + tempo: tardo veinte minutos en metro."
+     ],
+     "q": "Come vai al lavoro o a scuola e quanto ci metti?",
+     "c": "Annota i tuoi spostamenti di oggi e descrivili in spagnolo con en, a pie e tardar."
+    },
+    "pt": {
+     "t": "Transportes: autocarro, metro, comboio",
+     "g": "Diz como te deslocas e quanto tempo demoras.",
+     "p": [
+      "En + transporte: en autobús, en metro, en tren, en coche, en bici.",
+      "A exceção é a pie (a pé), também andando ou caminando.",
+      "Pergunta ¿Cuánto tardas? e responde tardo + tempo: tardo veinte minutos en metro."
+     ],
+     "q": "Como vais para o trabalho ou para as aulas e quanto tempo demoras?",
+     "c": "Regista as tuas deslocações de hoje e descreve-as em espanhol com en, a pie e tardar."
+    },
+    "pt_BR": {
+     "t": "Transporte: ônibus, metrô, trem",
+     "g": "Diga como você se desloca e quanto tempo leva.",
+     "p": [
+      "En + transporte: en autobús, en metro, en tren, en coche, en bici.",
+      "A exceção é a pie (a pé), também andando ou caminando.",
+      "Pergunte ¿Cuánto tardas? e responda tardo + tempo: tardo veinte minutos en metro."
+     ],
+     "q": "Como você vai para o trabalho ou a aula e quanto tempo leva?",
+     "c": "Anote seus trajetos de hoje e descreva em espanhol com en, a pie e tardar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "en autobús",
+      "ex": "Voy al trabajo en autobús."
+     },
+     {
+      "w": "en metro",
+      "ex": "En metro tardo veinte minutos."
+     },
+     {
+      "w": "en tren",
+      "ex": "Viajamos a Valencia en tren."
+     },
+     {
+      "w": "a pie",
+      "ex": "Voy a clase a pie."
+     },
+     {
+      "w": "en bici",
+      "ex": "Los domingos voy en bici al parque."
+     },
+     {
+      "w": "tardar",
+      "ex": "¿Cuánto tardas en llegar?"
+     }
+    ],
+    "gram": "Medios de transporte con en: en autobús, en coche, en tren. Excepción: a pie (andando). ¿Cuánto tardas? Tardo diez minutos."
+   }
+  },
+  {
+   "d": 45,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Buying a ticket",
+     "g": "Buy a train or bus ticket and understand the key information.",
+     "p": [
+      "Ask for un billete para Sevilla, de ida (one way) or de ida y vuelta (return).",
+      "¿A qué hora sale? (when does it leave?) and ¿A qué hora llega? (when does it arrive?).",
+      "Listen for el andén (platform) and la vía (track); in Latin America a ticket is often un boleto."
+     ],
+     "q": "You want to go to Toledo tomorrow morning. What do you say at the ticket office?",
+     "c": "Write a short dialogue at a ticket office: destination, type of ticket, time and platform."
+    },
+    "de": {
+     "t": "Eine Fahrkarte kaufen",
+     "g": "Du kaufst eine Zug- oder Busfahrkarte und verstehst die wichtigsten Infos.",
+     "p": [
+      "Verlang un billete para Sevilla, de ida (einfach) oder de ida y vuelta (hin und zurück).",
+      "¿A qué hora sale? (wann fährt er ab?) und ¿A qué hora llega? (wann kommt er an?).",
+      "Achte auf el andén (Bahnsteig) und la vía (Gleis); in Lateinamerika heißt das Ticket oft un boleto."
+     ],
+     "q": "Du willst morgen früh nach Toledo. Was sagst du am Schalter?",
+     "c": "Schreib einen kurzen Dialog am Schalter: Ziel, Fahrkartenart, Uhrzeit und Bahnsteig."
+    },
+    "es": {
+     "t": "Comprar un billete",
+     "g": "Compra un billete de tren o autobús y entiende la información clave.",
+     "p": [
+      "Pide un billete para Sevilla, de ida o de ida y vuelta; en América se dice a menudo boleto o pasaje.",
+      "Pregunta ¿A qué hora sale? y ¿A qué hora llega? para organizar tu viaje.",
+      "Fíjate en el andén y la vía, y en avisos como el tren lleva retraso."
+     ],
+     "q": "Quieres ir mañana por la mañana a Toledo. ¿Qué dices en la taquilla?",
+     "c": "Escribe un breve diálogo en la taquilla: destino, tipo de billete, hora y andén."
+    },
+    "fr": {
+     "t": "Acheter un billet",
+     "g": "Acheter un billet de train ou de bus et comprendre les infos clés.",
+     "p": [
+      "Demande un billete para Sevilla, de ida (aller simple) ou de ida y vuelta (aller-retour).",
+      "¿A qué hora sale? (à quelle heure part-il ?) et ¿A qué hora llega? (à quelle heure arrive-t-il ?).",
+      "Repère el andén (le quai) et la vía (la voie) ; en Amérique latine, le billet est souvent un boleto."
+     ],
+     "q": "Tu veux aller à Tolède demain matin. Que dis-tu au guichet ?",
+     "c": "Écris un court dialogue au guichet : destination, type de billet, heure et quai."
+    },
+    "it": {
+     "t": "Comprare un biglietto",
+     "g": "Compri un biglietto del treno o del bus e capisci le informazioni chiave.",
+     "p": [
+      "Chiedi un billete para Sevilla, de ida (solo andata) o de ida y vuelta (andata e ritorno).",
+      "¿A qué hora sale? (a che ora parte?) e ¿A qué hora llega? (a che ora arriva?).",
+      "Fai attenzione a el andén (il binario) e la vía; in America Latina il biglietto è spesso un boleto."
+     ],
+     "q": "Vuoi andare a Toledo domattina. Cosa dici alla biglietteria?",
+     "c": "Scrivi un breve dialogo alla biglietteria: destinazione, tipo di biglietto, orario e binario."
+    },
+    "pt": {
+     "t": "Comprar um bilhete",
+     "g": "Compra um bilhete de comboio ou autocarro e percebe a informação essencial.",
+     "p": [
+      "Pede un billete para Sevilla, de ida ou de ida y vuelta.",
+      "¿A qué hora sale? (a que horas parte?) e ¿A qué hora llega? (a que horas chega?).",
+      "Atenção a el andén (a plataforma) e la vía (a linha); na América Latina o bilhete é muitas vezes un boleto."
+     ],
+     "q": "Queres ir a Toledo amanhã de manhã. O que dizes na bilheteira?",
+     "c": "Escreve um pequeno diálogo na bilheteira: destino, tipo de bilhete, hora e plataforma."
+    },
+    "pt_BR": {
+     "t": "Comprando uma passagem",
+     "g": "Compre uma passagem de trem ou ônibus e entenda as informações principais.",
+     "p": [
+      "Peça un billete para Sevilla, de ida ou de ida y vuelta (ida e volta).",
+      "¿A qué hora sale? (a que horas sai?) e ¿A qué hora llega? (a que horas chega?).",
+      "Atenção a el andén (a plataforma) e la vía (a linha); na América Latina a passagem costuma ser un boleto."
+     ],
+     "q": "Você quer ir a Toledo amanhã de manhã. O que diz na bilheteria?",
+     "c": "Escreva um pequeno diálogo na bilheteria: destino, tipo de passagem, horário e plataforma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el billete",
+      "ex": "Un billete para Sevilla, por favor."
+     },
+     {
+      "w": "de ida y vuelta",
+      "ex": "Quiero un billete de ida y vuelta."
+     },
+     {
+      "w": "solo ida",
+      "ex": "Solo ida, gracias."
+     },
+     {
+      "w": "¿A qué hora sale?",
+      "ex": "¿A qué hora sale el próximo tren?"
+     },
+     {
+      "w": "el andén",
+      "ex": "El tren sale del andén tres."
+     },
+     {
+      "w": "llegar",
+      "ex": "¿A qué hora llega a Madrid?"
+     }
+    ],
+    "gram": "Un billete de ida / de ida y vuelta para + destino. Salir de (origen), llegar a (destino): sale a las diez, llega a las doce."
+   }
+  },
+  {
+   "d": 46,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Querer and poder",
+     "g": "Say what you want and what you can do with querer and poder.",
+     "p": [
+      "Querer changes e to ie: quiero, quieres, quiere, queremos, queréis, quieren.",
+      "Poder changes o to ue: puedo, puedes, puede, podemos, podéis, pueden.",
+      "Nosotros and vosotros keep the original vowel; add an infinitive: quiero viajar, ¿puedes venir?"
+     ],
+     "q": "What do you want to do this weekend, and what can you not do?",
+     "c": "Write three things you want to do this year and two you can already do in Spanish."
+    },
+    "de": {
+     "t": "Querer und poder",
+     "g": "Du sagst mit querer und poder, was du willst und kannst.",
+     "p": [
+      "Querer ändert e zu ie: quiero, quieres, quiere, queremos, queréis, quieren.",
+      "Poder ändert o zu ue: puedo, puedes, puede, podemos, podéis, pueden.",
+      "Nosotros und vosotros behalten den Vokal; dazu ein Infinitiv: quiero viajar, ¿puedes venir?"
+     ],
+     "q": "Was willst du dieses Wochenende machen, und was kannst du nicht?",
+     "c": "Schreib drei Dinge, die du dieses Jahr tun willst, und zwei, die du schon auf Spanisch kannst."
+    },
+    "es": {
+     "t": "Querer y poder",
+     "g": "Expresa deseos y posibilidades con querer y poder.",
+     "p": [
+      "Querer cambia e por ie: quiero, quieres, quiere, queremos, queréis, quieren.",
+      "Poder cambia o por ue: puedo, puedes, puede, podemos, podéis, pueden.",
+      "Nosotros y vosotros no cambian; van con infinitivo: quiero viajar, ¿puedes venir? Y ¿puedo...? pide permiso."
+     ],
+     "q": "¿Qué quieres hacer este fin de semana y qué no puedes hacer por falta de tiempo?",
+     "c": "Escribe tres cosas que quieres hacer este año y dos que ya puedes hacer muy bien."
+    },
+    "fr": {
+     "t": "Querer et poder",
+     "g": "Dire ce que tu veux et ce que tu peux faire avec querer et poder.",
+     "p": [
+      "Querer change e en ie : quiero, quieres, quiere, queremos, queréis, quieren.",
+      "Poder change o en ue : puedo, puedes, puede, podemos, podéis, pueden.",
+      "Nosotros et vosotros gardent la voyelle ; on ajoute un infinitif : quiero viajar, ¿puedes venir?"
+     ],
+     "q": "Que veux-tu faire ce week-end, et que ne peux-tu pas faire ?",
+     "c": "Écris trois choses que tu veux faire cette année et deux que tu sais déjà faire en espagnol."
+    },
+    "it": {
+     "t": "Querer e poder",
+     "g": "Dici cosa vuoi e cosa puoi fare con querer e poder.",
+     "p": [
+      "Querer cambia e in ie: quiero, quieres, quiere, queremos, queréis, quieren.",
+      "Poder cambia o in ue: puedo, puedes, puede, podemos, podéis, pueden.",
+      "Nosotros e vosotros tengono la vocale; poi un infinito: quiero viajar, ¿puedes venir?"
+     ],
+     "q": "Cosa vuoi fare questo fine settimana e cosa non puoi fare?",
+     "c": "Scrivi tre cose che vuoi fare quest'anno e due che sai già fare in spagnolo."
+    },
+    "pt": {
+     "t": "Querer e poder",
+     "g": "Diz o que queres e o que podes fazer com querer e poder.",
+     "p": [
+      "Querer muda e para ie: quiero, quieres, quiere, queremos, queréis, quieren.",
+      "Poder muda o para ue: puedo, puedes, puede, podemos, podéis, pueden.",
+      "Nosotros e vosotros mantêm a vogal; junta um infinitivo: quiero viajar, ¿puedes venir?"
+     ],
+     "q": "O que queres fazer este fim de semana e o que não podes fazer?",
+     "c": "Escreve três coisas que queres fazer este ano e duas que já consegues fazer em espanhol."
+    },
+    "pt_BR": {
+     "t": "Querer e poder",
+     "g": "Diga o que você quer e o que pode fazer com querer e poder.",
+     "p": [
+      "Querer muda e para ie: quiero, quieres, quiere, queremos, queréis, quieren.",
+      "Poder muda o para ue: puedo, puedes, puede, podemos, podéis, pueden.",
+      "Nosotros e vosotros mantêm a vogal; acrescente um infinitivo: quiero viajar, ¿puedes venir?"
+     ],
+     "q": "O que você quer fazer neste fim de semana e o que não pode fazer?",
+     "c": "Escreva três coisas que você quer fazer este ano e duas que já consegue fazer em espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quiero",
+      "ex": "Quiero aprender a bailar."
+     },
+     {
+      "w": "quieres",
+      "ex": "¿Quieres un café?"
+     },
+     {
+      "w": "queremos",
+      "ex": "Queremos viajar a México."
+     },
+     {
+      "w": "puedo",
+      "ex": "¿Puedo abrir la ventana?"
+     },
+     {
+      "w": "puedes",
+      "ex": "¿Puedes ayudarme, por favor?"
+     },
+     {
+      "w": "podemos",
+      "ex": "Podemos quedar el sábado."
+     }
+    ],
+    "gram": "Querer (e > ie): quiero, quieres, quiere, queremos, queréis, quieren. Poder (o > ue): puedo, puedes, puede, podemos, podéis, pueden."
+   }
+  },
+  {
+   "d": 47,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Stem-changing verbs",
+     "g": "Recognise the boot verbs and their vowel changes.",
+     "p": [
+      "Three main patterns: e to ie (pensar: pienso), o to ue (dormir: duermo), e to i (pedir: pido).",
+      "Jugar is unique: u to ue (juego, juegas, juega).",
+      "The change happens in all forms except nosotros and vosotros; drawn in a table it looks like a boot."
+     ],
+     "q": "What time do you usually go back home and how many hours do you sleep? Use volver and dormir.",
+     "c": "Write one sentence each with pensar, dormir, pedir and jugar about your life."
+    },
+    "de": {
+     "t": "Verben mit Stammwechsel",
+     "g": "Du erkennst die Stiefelverben und ihre Vokalwechsel.",
+     "p": [
+      "Drei Hauptmuster: e zu ie (pensar: pienso), o zu ue (dormir: duermo), e zu i (pedir: pido).",
+      "Jugar ist einzigartig: u zu ue (juego, juegas, juega).",
+      "Der Wechsel passiert überall außer bei nosotros und vosotros; in der Tabelle sieht das aus wie ein Stiefel."
+     ],
+     "q": "Wann kommst du meistens nach Hause, und wie viele Stunden schläfst du? Nutze volver und dormir.",
+     "c": "Schreib je einen Satz mit pensar, dormir, pedir und jugar über dein Leben."
+    },
+    "es": {
+     "t": "Verbos con cambio vocálico",
+     "g": "Domina los verbos con diptongo y cambio de vocal en presente.",
+     "p": [
+      "Tres modelos principales: e > ie (pensar: pienso), o > ue (dormir: duermo), e > i (pedir: pido).",
+      "Jugar es único: u > ue (juego, juegas, juega).",
+      "El cambio afecta a todas las formas menos nosotros y vosotros; en una tabla dibuja una bota."
+     ],
+     "q": "¿A qué hora vuelves a casa y cuántas horas duermes normalmente?",
+     "c": "Escribe una frase con pensar, dormir, pedir y jugar sobre tu vida."
+    },
+    "fr": {
+     "t": "Les verbes à diphtongue",
+     "g": "Reconnaître les verbes « botte » et leurs changements de voyelle.",
+     "p": [
+      "Trois modèles : e en ie (pensar : pienso), o en ue (dormir : duermo), e en i (pedir : pido).",
+      "Jugar est unique : u en ue (juego, juegas, juega).",
+      "Le changement touche toutes les formes sauf nosotros et vosotros ; dans un tableau, ça dessine une botte."
+     ],
+     "q": "À quelle heure rentres-tu chez toi et combien d'heures dors-tu ? Utilise volver et dormir.",
+     "c": "Écris une phrase avec pensar, dormir, pedir et jugar sur ta vie."
+    },
+    "it": {
+     "t": "Verbi con cambio vocalico",
+     "g": "Riconosci i verbi a stivale e i loro cambi di vocale.",
+     "p": [
+      "Tre modelli principali: e in ie (pensar: pienso), o in ue (dormir: duermo), e in i (pedir: pido).",
+      "Jugar è unico: u in ue (juego, juegas, juega).",
+      "Il cambio vale per tutte le forme tranne nosotros e vosotros; in tabella disegna uno stivale."
+     ],
+     "q": "A che ora torni a casa e quante ore dormi di solito? Usa volver e dormir.",
+     "c": "Scrivi una frase con pensar, dormir, pedir e jugar sulla tua vita."
+    },
+    "pt": {
+     "t": "Verbos com mudança vocálica",
+     "g": "Reconhece os verbos bota e as suas mudanças de vogal.",
+     "p": [
+      "Três modelos principais: e para ie (pensar: pienso), o para ue (dormir: duermo), e para i (pedir: pido).",
+      "Jugar é único: u para ue (juego, juegas, juega).",
+      "A mudança acontece em todas as formas menos nosotros e vosotros; numa tabela desenha uma bota."
+     ],
+     "q": "A que horas costumas voltar para casa e quantas horas dormes? Usa volver e dormir.",
+     "c": "Escreve uma frase com pensar, dormir, pedir e jugar sobre a tua vida."
+    },
+    "pt_BR": {
+     "t": "Verbos com mudança vocálica",
+     "g": "Reconheça os verbos bota e suas mudanças de vogal.",
+     "p": [
+      "Três modelos principais: e para ie (pensar: pienso), o para ue (dormir: duermo), e para i (pedir: pido).",
+      "Jugar é único: u para ue (juego, juegas, juega).",
+      "A mudança acontece em todas as formas menos nosotros e vosotros; numa tabela forma uma bota."
+     ],
+     "q": "A que horas você costuma voltar para casa e quantas horas dorme? Use volver e dormir.",
+     "c": "Escreva uma frase com pensar, dormir, pedir e jugar sobre sua vida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pensar",
+      "ex": "Pienso en mis vacaciones."
+     },
+     {
+      "w": "empezar",
+      "ex": "La clase empieza a las seis."
+     },
+     {
+      "w": "dormir",
+      "ex": "Duermo ocho horas."
+     },
+     {
+      "w": "volver",
+      "ex": "Vuelvo a casa a las siete."
+     },
+     {
+      "w": "pedir",
+      "ex": "Siempre pido la sopa del día."
+     },
+     {
+      "w": "jugar",
+      "ex": "Juego al fútbol los jueves."
+     }
+    ],
+    "gram": "Verbos de cambio vocálico: e > ie (pienso), o > ue (duermo), e > i (pido), u > ue (juego). Nosotros y vosotros no cambian."
+   }
+  },
+  {
+   "d": 48,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Irregular yo forms",
+     "g": "Use common verbs that are irregular only in the yo form.",
+     "p": [
+      "Hacer: hago; salir: salgo; poner: pongo; traer: traigo; the other forms are regular: haces, sale, ponemos.",
+      "Conocer becomes conozco, and saber becomes sé.",
+      "Conocer is to know people and places; saber is to know facts or how to do something: sé nadar."
+     ],
+     "q": "What do you usually do on Friday evenings? Use hago and salgo in your answer.",
+     "c": "Write five sentences about your routine starting with hago, salgo, pongo, conozco and sé."
+    },
+    "de": {
+     "t": "Unregelmäßige yo-Formen",
+     "g": "Du nutzt häufige Verben, die nur in der yo-Form unregelmäßig sind.",
+     "p": [
+      "Hacer: hago; salir: salgo; poner: pongo; traer: traigo; die anderen Formen sind regelmäßig: haces, sale.",
+      "Conocer wird zu conozco, saber zu sé.",
+      "Conocer heißt Menschen und Orte kennen; saber heißt Fakten wissen oder etwas können: sé nadar."
+     ],
+     "q": "Was machst du normalerweise freitagabends? Nutze hago und salgo.",
+     "c": "Schreib fünf Sätze über deinen Alltag, die mit hago, salgo, pongo, conozco und sé beginnen."
+    },
+    "es": {
+     "t": "Verbos irregulares en yo",
+     "g": "Usa verbos frecuentes que solo son irregulares en la primera persona.",
+     "p": [
+      "Hacer: hago; salir: salgo; poner: pongo; traer: traigo; el resto de formas es regular: haces, sale, ponemos.",
+      "Conocer pasa a conozco y saber pasa a sé.",
+      "Conocer es para personas y lugares; saber, para datos y habilidades: sé nadar, conozco Lima."
+     ],
+     "q": "¿Qué haces normalmente los viernes por la tarde? Responde con hago y salgo.",
+     "c": "Escribe cinco frases sobre tu rutina que empiecen por hago, salgo, pongo, conozco y sé."
+    },
+    "fr": {
+     "t": "Formes irrégulières en yo",
+     "g": "Utiliser des verbes courants irréguliers seulement à la forme yo.",
+     "p": [
+      "Hacer : hago ; salir : salgo ; poner : pongo ; traer : traigo ; les autres formes sont régulières : haces, sale.",
+      "Conocer devient conozco, et saber devient sé.",
+      "Conocer, c'est connaître des gens ou des lieux ; saber, c'est savoir un fait ou savoir faire : sé nadar."
+     ],
+     "q": "Que fais-tu d'habitude le vendredi soir ? Utilise hago et salgo.",
+     "c": "Écris cinq phrases sur ta routine qui commencent par hago, salgo, pongo, conozco et sé."
+    },
+    "it": {
+     "t": "Forme irregolari in yo",
+     "g": "Usi verbi comuni irregolari solo alla forma yo.",
+     "p": [
+      "Hacer: hago; salir: salgo; poner: pongo; traer: traigo; le altre forme sono regolari: haces, sale.",
+      "Conocer diventa conozco e saber diventa sé.",
+      "Conocer è conoscere persone e luoghi; saber è sapere fatti o saper fare: sé nadar."
+     ],
+     "q": "Cosa fai di solito il venerdì sera? Usa hago e salgo.",
+     "c": "Scrivi cinque frasi sulla tua routine che iniziano con hago, salgo, pongo, conozco e sé."
+    },
+    "pt": {
+     "t": "Formas irregulares em yo",
+     "g": "Usa verbos frequentes que só são irregulares na forma yo.",
+     "p": [
+      "Hacer: hago; salir: salgo; poner: pongo; traer: traigo; as outras formas são regulares: haces, sale.",
+      "Conocer passa a conozco e saber passa a sé.",
+      "Conocer é conhecer pessoas e lugares; saber é saber factos ou saber fazer: sé nadar."
+     ],
+     "q": "O que costumas fazer à sexta à noite? Usa hago e salgo.",
+     "c": "Escreve cinco frases sobre a tua rotina que comecem por hago, salgo, pongo, conozco e sé."
+    },
+    "pt_BR": {
+     "t": "Formas irregulares em yo",
+     "g": "Use verbos frequentes que só são irregulares na forma yo.",
+     "p": [
+      "Hacer: hago; salir: salgo; poner: pongo; traer: traigo; as outras formas são regulares: haces, sale.",
+      "Conocer vira conozco e saber vira sé.",
+      "Conocer é conhecer pessoas e lugares; saber é saber fatos ou saber fazer: sé nadar."
+     ],
+     "q": "O que você costuma fazer na sexta à noite? Use hago e salgo.",
+     "c": "Escreva cinco frases sobre sua rotina que comecem com hago, salgo, pongo, conozco e sé."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hago",
+      "ex": "Hago deporte tres veces por semana."
+     },
+     {
+      "w": "salgo",
+      "ex": "Salgo de casa a las ocho."
+     },
+     {
+      "w": "pongo",
+      "ex": "Pongo la mesa para cenar."
+     },
+     {
+      "w": "conozco",
+      "ex": "Conozco un restaurante muy bueno."
+     },
+     {
+      "w": "sé",
+      "ex": "No sé dónde está la parada."
+     },
+     {
+      "w": "traigo",
+      "ex": "Traigo pan para todos."
+     }
+    ],
+    "gram": "Irregulares solo en yo: hacer > hago, salir > salgo, poner > pongo, traer > traigo, conocer > conozco, saber > sé. El resto es regular."
+   }
+  },
+  {
+   "d": 49,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ir and ir a + infinitive",
+     "g": "Use the verb ir and talk about your plans the easy way.",
+     "p": [
+      "Ir is fully irregular: voy, vas, va, vamos, vais, van; with a place: voy al cine, vamos a la playa.",
+      "Ir a + infinitive is the easy future: voy a estudiar, vamos a cenar fuera.",
+      "Add time words: esta tarde, mañana, el próximo fin de semana."
+     ],
+     "q": "What are you going to do this evening and next weekend? Answer with voy a.",
+     "c": "Write your plans for tomorrow in Spanish: four sentences with voy a + infinitive."
+    },
+    "de": {
+     "t": "Ir und ir a + Infinitiv",
+     "g": "Du nutzt das Verb ir und sprichst ganz einfach über Pläne.",
+     "p": [
+      "Ir ist völlig unregelmäßig: voy, vas, va, vamos, vais, van; mit Ort: voy al cine, vamos a la playa.",
+      "Ir a + Infinitiv ist die einfache Zukunft: voy a estudiar, vamos a cenar fuera.",
+      "Füge Zeitwörter hinzu: esta tarde, mañana, el próximo fin de semana."
+     ],
+     "q": "Was wirst du heute Abend und nächstes Wochenende machen? Antworte mit voy a.",
+     "c": "Schreib deine Pläne für morgen auf Spanisch: vier Sätze mit voy a + Infinitiv."
+    },
+    "es": {
+     "t": "Ir e ir a + infinitivo",
+     "g": "Usa el verbo ir y habla de tus planes de forma sencilla.",
+     "p": [
+      "Ir es totalmente irregular: voy, vas, va, vamos, vais, van; con lugar: voy al cine, vamos a la playa.",
+      "Ir a + infinitivo expresa planes e intenciones: voy a estudiar, vamos a cenar fuera.",
+      "Añade marcadores: esta tarde, mañana, el próximo fin de semana, este verano."
+     ],
+     "q": "¿Qué vas a hacer esta noche y el próximo fin de semana?",
+     "c": "Escribe tus planes para mañana en cuatro frases con voy a + infinitivo."
+    },
+    "fr": {
+     "t": "Ir et ir a + infinitif",
+     "g": "Utiliser le verbe ir et parler de tes projets facilement.",
+     "p": [
+      "Ir est totalement irrégulier : voy, vas, va, vamos, vais, van ; avec un lieu : voy al cine, vamos a la playa.",
+      "Ir a + infinitif, c'est le futur proche, comme aller + infinitif : voy a estudiar.",
+      "Ajoute des repères : esta tarde, mañana, el próximo fin de semana."
+     ],
+     "q": "Que vas-tu faire ce soir et le week-end prochain ? Réponds avec voy a.",
+     "c": "Écris tes projets pour demain en espagnol : quatre phrases avec voy a + infinitif."
+    },
+    "it": {
+     "t": "Ir e ir a + infinito",
+     "g": "Usi il verbo ir e parli dei tuoi progetti in modo semplice.",
+     "p": [
+      "Ir è del tutto irregolare: voy, vas, va, vamos, vais, van; con un luogo: voy al cine, vamos a la playa.",
+      "Ir a + infinito è il futuro facile: voy a estudiar, vamos a cenar fuera.",
+      "Aggiungi indicatori di tempo: esta tarde, mañana, el próximo fin de semana."
+     ],
+     "q": "Cosa farai stasera e il prossimo fine settimana? Rispondi con voy a.",
+     "c": "Scrivi in spagnolo i tuoi programmi per domani: quattro frasi con voy a + infinito."
+    },
+    "pt": {
+     "t": "Ir e ir a + infinitivo",
+     "g": "Usa o verbo ir e fala dos teus planos de forma simples.",
+     "p": [
+      "Ir é totalmente irregular: voy, vas, va, vamos, vais, van; com lugar: voy al cine, vamos a la playa.",
+      "Ir a + infinitivo é o futuro fácil, como vou + infinitivo; não esqueças o a: voy a estudiar.",
+      "Junta marcadores de tempo: esta tarde, mañana, el próximo fin de semana."
+     ],
+     "q": "O que vais fazer esta noite e no próximo fim de semana? Responde com voy a.",
+     "c": "Escreve em espanhol os teus planos para amanhã: quatro frases com voy a + infinitivo."
+    },
+    "pt_BR": {
+     "t": "Ir e ir a + infinitivo",
+     "g": "Use o verbo ir e fale dos seus planos de forma simples.",
+     "p": [
+      "Ir é totalmente irregular: voy, vas, va, vamos, vais, van; com lugar: voy al cine, vamos a la playa.",
+      "Ir a + infinitivo é o futuro fácil, como vou + infinitivo; não esqueça o a: voy a estudiar.",
+      "Acrescente marcadores de tempo: esta tarde, mañana, el próximo fin de semana."
+     ],
+     "q": "O que você vai fazer hoje à noite e no próximo fim de semana? Responda com voy a.",
+     "c": "Escreva em espanhol seus planos para amanhã: quatro frases com voy a + infinitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "voy",
+      "ex": "Voy al cine esta noche."
+     },
+     {
+      "w": "vas",
+      "ex": "¿Vas a la fiesta de Laura?"
+     },
+     {
+      "w": "vamos",
+      "ex": "Vamos a la playa en julio."
+     },
+     {
+      "w": "voy a estudiar",
+      "ex": "Mañana voy a estudiar en la biblioteca."
+     },
+     {
+      "w": "esta tarde",
+      "ex": "Esta tarde voy a llamar a mi madre."
+     },
+     {
+      "w": "el próximo fin de semana",
+      "ex": "El próximo fin de semana vamos a hacer una excursión."
+     }
+    ],
+    "gram": "Ir: voy, vas, va, vamos, vais, van. Planes con ir a + infinitivo: voy a cocinar. Ir a + el = al: voy al cine."
+   }
+  },
+  {
+   "d": 50,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The weather: hace calor",
+     "g": "Talk about the weather in Spanish.",
+     "p": [
+      "Ask ¿Qué tiempo hace? and answer with hace + noun: hace sol, hace calor, hace frío, hace viento.",
+      "Rain and snow have their own verbs: llueve, nieva.",
+      "Use estar for the sky: está nublado, está despejado; add mucho for more: hace mucho calor."
+     ],
+     "q": "¿Qué tiempo hace hoy donde estás? And what is your favourite kind of weather?",
+     "c": "Describe today's weather in Spanish in the morning and again in the evening."
+    },
+    "de": {
+     "t": "Das Wetter: hace calor",
+     "g": "Du sprichst auf Spanisch über das Wetter.",
+     "p": [
+      "Frag ¿Qué tiempo hace? und antworte mit hace + Nomen: hace sol, hace calor, hace frío, hace viento.",
+      "Regen und Schnee haben eigene Verben: llueve, nieva.",
+      "Für den Himmel estar: está nublado, está despejado; mehr mit mucho: hace mucho calor."
+     ],
+     "q": "¿Qué tiempo hace hoy bei dir? Und welches Wetter magst du am liebsten?",
+     "c": "Beschreib das Wetter heute auf Spanisch, morgens und abends noch einmal."
+    },
+    "es": {
+     "t": "El tiempo: hace calor",
+     "g": "Habla del tiempo con las estructuras más naturales.",
+     "p": [
+      "Se pregunta ¿Qué tiempo hace? y se responde con hace + sustantivo: hace sol, hace calor, hace viento.",
+      "La lluvia y la nieve tienen verbo propio: llueve, nieva.",
+      "Para el cielo se usa estar: está nublado, está despejado; para intensificar, mucho: hace mucho calor."
+     ],
+     "q": "¿Qué tiempo hace hoy donde estás y qué tiempo te pone de buen humor?",
+     "c": "Describe el tiempo de hoy por la mañana y otra vez por la noche."
+    },
+    "fr": {
+     "t": "La météo : hace calor",
+     "g": "Parler du temps qu'il fait en espagnol.",
+     "p": [
+      "Demande ¿Qué tiempo hace? et réponds avec hace + nom : hace sol, hace calor, hace frío, comme il fait froid.",
+      "La pluie et la neige ont leur verbe : llueve, nieva.",
+      "Pour le ciel, estar : está nublado, está despejado ; pour intensifier, mucho : hace mucho calor."
+     ],
+     "q": "¿Qué tiempo hace hoy là où tu es ? Et quel temps préfères-tu ?",
+     "c": "Décris en espagnol le temps qu'il fait ce matin, puis à nouveau ce soir."
+    },
+    "it": {
+     "t": "Il tempo: hace calor",
+     "g": "Parli del tempo in spagnolo.",
+     "p": [
+      "Chiedi ¿Qué tiempo hace? e rispondi con hace + nome: hace sol, hace calor, hace frío, come fa freddo.",
+      "Pioggia e neve hanno verbi propri: llueve, nieva.",
+      "Per il cielo si usa estar: está nublado, está despejado; per rafforzare mucho: hace mucho calor."
+     ],
+     "q": "¿Qué tiempo hace hoy dove sei? E qual è il tuo tempo preferito?",
+     "c": "Descrivi in spagnolo il tempo di oggi la mattina e di nuovo la sera."
+    },
+    "pt": {
+     "t": "O tempo: hace calor",
+     "g": "Fala do tempo em espanhol.",
+     "p": [
+      "Pergunta ¿Qué tiempo hace? e responde com hace + nome: hace sol, hace calor, hace frío, como faz frio.",
+      "A chuva e a neve têm verbo próprio: llueve, nieva.",
+      "Para o céu usa-se estar: está nublado, está despejado; para reforçar mucho: hace mucho calor."
+     ],
+     "q": "¿Qué tiempo hace hoy onde estás? E qual é o teu tempo preferido?",
+     "c": "Descreve em espanhol o tempo de hoje de manhã e outra vez à noite."
+    },
+    "pt_BR": {
+     "t": "O tempo: hace calor",
+     "g": "Fale do tempo em espanhol.",
+     "p": [
+      "Pergunte ¿Qué tiempo hace? e responda com hace + substantivo: hace sol, hace calor, hace frío, como faz frio.",
+      "A chuva e a neve têm verbo próprio: llueve, nieva.",
+      "Para o céu use estar: está nublado, está despejado; para reforçar mucho: hace mucho calor."
+     ],
+     "q": "¿Qué tiempo hace hoy onde você está? E qual é o seu tempo favorito?",
+     "c": "Descreva em espanhol o tempo de hoje de manhã e de novo à noite."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hace sol",
+      "ex": "Hoy hace sol y vamos al parque."
+     },
+     {
+      "w": "hace calor",
+      "ex": "En agosto hace mucho calor."
+     },
+     {
+      "w": "hace frío",
+      "ex": "¡Qué frío hace esta mañana!"
+     },
+     {
+      "w": "llueve",
+      "ex": "En otoño llueve bastante."
+     },
+     {
+      "w": "nieva",
+      "ex": "En la montaña nieva en invierno."
+     },
+     {
+      "w": "está nublado",
+      "ex": "Está nublado, pero no llueve."
+     }
+    ],
+    "gram": "El tiempo con hace + sustantivo (hace sol, hace frío), verbos propios (llueve, nieva) y estar + adjetivo (está nublado). ¿Qué tiempo hace?"
+   }
+  }
+ ]
+}

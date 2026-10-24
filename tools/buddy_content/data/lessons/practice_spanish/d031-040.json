@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Food and drink basics",
+     "g": "Name everyday food and drinks in Spanish.",
+     "p": [
+      "Staples: pan, arroz, huevos, carne, pescado, fruta, verdura, queso, leche, agua.",
+      "Juice is zumo in Spain and jugo in Latin America: both are correct, just regional.",
+      "For general amounts drop the article: bebo agua, como fruta, compro pan."
+     ],
+     "q": "What do you usually eat for lunch? List the foods in Spanish.",
+     "c": "Name ten foods in your kitchen in Spanish, with el, la, los or las."
+    },
+    "de": {
+     "t": "Essen und Trinken: die Basics",
+     "g": "Du nennst alltägliche Lebensmittel und Getränke auf Spanisch.",
+     "p": [
+      "Grundwörter: pan, arroz, huevos, carne, pescado, fruta, verdura, queso, leche, agua.",
+      "Saft heißt in Spanien zumo, in Lateinamerika jugo: beides richtig, nur regional verschieden.",
+      "Bei allgemeinen Mengen fällt der Artikel weg: bebo agua, como fruta, compro pan."
+     ],
+     "q": "Was isst du normalerweise zu Mittag? Zähl es auf Spanisch auf.",
+     "c": "Nenne zehn Lebensmittel in deiner Küche auf Spanisch, mit el, la, los oder las."
+    },
+    "es": {
+     "t": "Comida y bebida básica",
+     "g": "Nombra la comida y la bebida de cada día y sus variantes regionales.",
+     "p": [
+      "Básicos: pan, arroz, huevos, carne, pescado, fruta, verdura, queso, leche, agua.",
+      "Hay variantes regionales: zumo en España y jugo en América; patata y papa; judías y frijoles.",
+      "Para hablar en general se omite el artículo: bebo agua, como fruta, compro pan."
+     ],
+     "q": "¿Qué palabra de comida dices tú que en otro país hispano se dice distinto?",
+     "c": "Nombra diez alimentos de tu cocina con su artículo y, si sabes, una variante regional."
+    },
+    "fr": {
+     "t": "Nourriture et boissons de base",
+     "g": "Nommer les aliments et boissons du quotidien.",
+     "p": [
+      "Les bases : pan, arroz, huevos, carne, pescado, fruta, verdura, queso, leche, agua.",
+      "Le jus se dit zumo en Espagne et jugo en Amérique latine : les deux sont corrects.",
+      "Pour une quantité générale, pas d'article ni de partitif : bebo agua, como fruta, compro pan."
+     ],
+     "q": "Que manges-tu d'habitude le midi ? Fais la liste en espagnol.",
+     "c": "Nomme en espagnol dix aliments de ta cuisine avec el, la, los ou las."
+    },
+    "it": {
+     "t": "Cibo e bevande di base",
+     "g": "Nomini cibi e bevande di tutti i giorni.",
+     "p": [
+      "Le basi: pan, arroz, huevos, carne, pescado, fruta, verdura, queso, leche, agua.",
+      "Il succo si dice zumo in Spagna e jugo in America Latina: entrambi corretti.",
+      "Per quantità generiche niente articolo: bebo agua, como fruta, compro pan. Attenzione: burro in spagnolo è asino, il burro è mantequilla!"
+     ],
+     "q": "Cosa mangi di solito a pranzo? Elencalo in spagnolo.",
+     "c": "Nomina in spagnolo dieci alimenti della tua cucina con el, la, los o las."
+    },
+    "pt": {
+     "t": "Comida e bebida básica",
+     "g": "Nomeia a comida e a bebida do dia a dia.",
+     "p": [
+      "O básico: pan, arroz, huevos, carne, pescado, fruta, verdura, queso, leche, agua.",
+      "Sumo diz-se zumo em Espanha e jugo na América Latina: ambos corretos.",
+      "Para quantidades gerais não há artigo: bebo agua, como fruta, compro pan. Atenção: pescado é o peixe já pescado."
+     ],
+     "q": "O que costumas comer ao almoço? Faz a lista em espanhol.",
+     "c": "Nomeia em espanhol dez alimentos da tua cozinha com el, la, los ou las."
+    },
+    "pt_BR": {
+     "t": "Comida e bebida básica",
+     "g": "Nomeie a comida e a bebida do dia a dia.",
+     "p": [
+      "O básico: pan, arroz, huevos, carne, pescado, fruta, verdura, queso, leche, agua.",
+      "Suco é zumo na Espanha e jugo na América Latina: ambos corretos.",
+      "Para quantidades gerais não tem artigo: bebo agua, como fruta, compro pan. Atenção: pescado é o peixe como comida."
+     ],
+     "q": "O que você costuma comer no almoço? Faça a lista em espanhol.",
+     "c": "Nomeie em espanhol dez alimentos da sua cozinha com el, la, los ou las."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el pan",
+      "ex": "Compro pan en la panadería."
+     },
+     {
+      "w": "el arroz",
+      "ex": "El arroz con verduras está rico."
+     },
+     {
+      "w": "los huevos",
+      "ex": "Desayuno huevos revueltos."
+     },
+     {
+      "w": "la fruta",
+      "ex": "Como fruta todos los días."
+     },
+     {
+      "w": "la verdura",
+      "ex": "Me gusta la verdura a la plancha."
+     },
+     {
+      "w": "el zumo, el jugo",
+      "ex": "Un zumo de naranja, por favor."
+     }
+    ],
+    "gram": "Zumo en España, jugo en América Latina. Para cantidades sin número: pan, agua, fruta, sin artículo: compro pan y bebo agua."
+   }
+  },
+  {
+   "d": 32,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ordering at a café or bar",
+     "g": "Order politely at a café or bar and ask for the bill.",
+     "p": [
+      "In Spain you will hear ¿Me pone un café? (Can I have a coffee?); quiero... por favor also works anywhere.",
+      "Para mí... (for me) is handy when ordering for a group: para mí un té, para ella un zumo.",
+      "The waiter asks ¿Algo más?; finish with no, gracias and la cuenta, por favor."
+     ],
+     "q": "You are in a café in Madrid. Order a drink and something to eat in Spanish.",
+     "c": "Practise ordering your usual coffee in Spanish three times, using three different phrases."
+    },
+    "de": {
+     "t": "Bestellen im Café oder in der Bar",
+     "g": "Du bestellst höflich in Café oder Bar und bittest um die Rechnung.",
+     "p": [
+      "In Spanien hörst du ¿Me pone un café? (Bekomme ich einen Kaffee?); quiero... por favor geht überall.",
+      "Para mí... (für mich) hilft beim Bestellen für mehrere: para mí un té, para ella un zumo.",
+      "Der Kellner fragt ¿Algo más?; zum Schluss no, gracias und la cuenta, por favor."
+     ],
+     "q": "Du bist in einem Café in Madrid. Bestell auf Spanisch ein Getränk und etwas zu essen.",
+     "c": "Übe dreimal, deinen üblichen Kaffee auf Spanisch zu bestellen, jedes Mal mit einer anderen Formel."
+    },
+    "es": {
+     "t": "Pedir en un café o un bar",
+     "g": "Pide con cortesía y naturalidad en un café o un bar.",
+     "p": [
+      "En España es muy común ¿Me pone un café?; en América se oye más ¿Me da...? o ¿Me trae...?",
+      "Para mí... ayuda al pedir en grupo: para mí un té, para ella un zumo.",
+      "El camarero pregunta ¿Algo más? y se termina con nada más, gracias y la cuenta, por favor."
+     ],
+     "q": "¿Cómo pides tu café favorito? Descríbelo con todo detalle, como lo dirías en la barra.",
+     "c": "Pide hoy algo en una cafetería con una fórmula que no sueles usar."
+    },
+    "fr": {
+     "t": "Commander au café ou au bar",
+     "g": "Commander poliment au café ou au bar et demander l'addition.",
+     "p": [
+      "En Espagne on entend ¿Me pone un café? (Vous me mettez un café ?) ; quiero... por favor marche partout.",
+      "Para mí... (pour moi) aide quand on commande pour plusieurs : para mí un té, para ella un zumo.",
+      "Le serveur demande ¿Algo más? ; termine par no, gracias et la cuenta, por favor."
+     ],
+     "q": "Tu es dans un café à Madrid. Commande en espagnol une boisson et quelque chose à manger.",
+     "c": "Entraîne-toi trois fois à commander ton café habituel en espagnol, avec trois formules différentes."
+    },
+    "it": {
+     "t": "Ordinare al bar",
+     "g": "Ordini con cortesia al bar e chiedi il conto.",
+     "p": [
+      "In Spagna si sente ¿Me pone un café? (Mi fa un caffè?); quiero... por favor va bene ovunque.",
+      "Para mí... (per me) aiuta quando ordini per più persone: para mí un té, para ella un zumo.",
+      "Il cameriere chiede ¿Algo más?; chiudi con no, gracias e la cuenta, por favor."
+     ],
+     "q": "Sei in un bar a Madrid. Ordina in spagnolo una bevanda e qualcosa da mangiare.",
+     "c": "Esercitati tre volte a ordinare il tuo solito caffè in spagnolo, con tre formule diverse."
+    },
+    "pt": {
+     "t": "Pedir num café ou bar",
+     "g": "Pede com educação num café ou bar e pede a conta.",
+     "p": [
+      "Em Espanha ouve-se ¿Me pone un café? (Pode dar-me um café?); quiero... por favor funciona em todo o lado.",
+      "Para mí... ajuda quando pedes para um grupo: para mí un té, para ella un zumo.",
+      "O empregado pergunta ¿Algo más?; termina com no, gracias e la cuenta, por favor."
+     ],
+     "q": "Estás num café em Madrid. Pede em espanhol uma bebida e algo para comer.",
+     "c": "Treina três vezes pedir o teu café habitual em espanhol, com três fórmulas diferentes."
+    },
+    "pt_BR": {
+     "t": "Pedindo num café ou bar",
+     "g": "Peça com educação num café ou bar e peça a conta.",
+     "p": [
+      "Na Espanha se ouve ¿Me pone un café? (Me vê um café?); quiero... por favor funciona em qualquer lugar.",
+      "Para mí... ajuda quando você pede para um grupo: para mí un té, para ella un zumo.",
+      "O garçom pergunta ¿Algo más?; termine com no, gracias e la cuenta, por favor."
+     ],
+     "q": "Você está num café em Madri. Peça em espanhol uma bebida e algo para comer.",
+     "c": "Treine três vezes pedir seu café de sempre em espanhol, com três fórmulas diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Me pone...?",
+      "ex": "¿Me pone un café con leche?"
+     },
+     {
+      "w": "quiero",
+      "ex": "Quiero un agua sin gas, por favor."
+     },
+     {
+      "w": "para mí",
+      "ex": "Para mí, un té verde."
+     },
+     {
+      "w": "un cortado",
+      "ex": "Un cortado y una tostada, por favor."
+     },
+     {
+      "w": "la cuenta",
+      "ex": "La cuenta, por favor."
+     },
+     {
+      "w": "¿Algo más?",
+      "ex": "¿Algo más? No, gracias, nada más."
+     }
+    ],
+    "gram": "Pedir con cortesía: ¿me pone...?, ¿me trae...?, quiero... por favor, para mí... Al final: la cuenta, por favor."
+   }
+  },
+  {
+   "d": 33,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Tapas and snacks",
+     "g": "Discover the tapas culture and order small dishes to share.",
+     "p": [
+      "Tapas are small dishes enjoyed with a drink; a ración is a bigger plate for the table.",
+      "Classics: tortilla de patatas, croquetas, patatas bravas, aceitunas, pimientos de Padrón.",
+      "Suggest sharing with ¿Pedimos...? (Shall we order...?): ¿Pedimos unas bravas?"
+     ],
+     "q": "Which tapa would you love to try first, and why?",
+     "c": "Plan a small tapas order for three friends in Spanish: three dishes and three drinks."
+    },
+    "de": {
+     "t": "Tapas und Snacks",
+     "g": "Du lernst die Tapas-Kultur kennen und bestellst kleine Gerichte zum Teilen.",
+     "p": [
+      "Tapas sind kleine Gerichte zum Getränk; eine ración ist ein größerer Teller für den Tisch.",
+      "Klassiker: tortilla de patatas, croquetas, patatas bravas, aceitunas, pimientos de Padrón.",
+      "Schlag mit ¿Pedimos...? (Bestellen wir...?) etwas vor: ¿Pedimos unas bravas?"
+     ],
+     "q": "Welche Tapa möchtest du als Erstes probieren und warum?",
+     "c": "Stell auf Spanisch eine kleine Tapas-Bestellung für drei Freunde zusammen: drei Gerichte, drei Getränke."
+    },
+    "es": {
+     "t": "Tapas y aperitivos",
+     "g": "Disfruta de la cultura de las tapas y pide platos para compartir.",
+     "p": [
+      "La tapa es una porción pequeña con la bebida; la ración es un plato más grande para el centro de la mesa.",
+      "Clásicos: tortilla de patatas, croquetas, patatas bravas, aceitunas, pimientos de Padrón.",
+      "Propón con ¿Pedimos...?: ¿Pedimos unas bravas y una de croquetas?"
+     ],
+     "q": "¿Cuál es tu tapa o aperitivo favorito? ¿Hay algo parecido donde vives?",
+     "c": "Organiza por escrito un pedido de tapas para tres amigos: tres platos y tres bebidas."
+    },
+    "fr": {
+     "t": "Tapas et en-cas",
+     "g": "Découvrir la culture des tapas et commander des petits plats à partager.",
+     "p": [
+      "Les tapas sont de petites portions servies avec un verre ; une ración est une assiette plus grande pour la table.",
+      "Classiques : tortilla de patatas, croquetas, patatas bravas, aceitunas, pimientos de Padrón.",
+      "Propose de partager avec ¿Pedimos...? (On prend... ?) : ¿Pedimos unas bravas?"
+     ],
+     "q": "Quelle tapa aimerais-tu goûter en premier, et pourquoi ?",
+     "c": "Prépare en espagnol une petite commande de tapas pour trois amis : trois plats et trois boissons."
+    },
+    "it": {
+     "t": "Tapas e stuzzichini",
+     "g": "Scopri la cultura delle tapas e ordina piattini da condividere.",
+     "p": [
+      "Le tapas sono piccole porzioni da gustare con un drink; una ración è un piatto più grande per il tavolo.",
+      "Classici: tortilla de patatas, croquetas, patatas bravas, aceitunas, pimientos de Padrón.",
+      "Proponi con ¿Pedimos...? (Prendiamo...?): ¿Pedimos unas bravas?"
+     ],
+     "q": "Quale tapa vorresti assaggiare per prima e perché?",
+     "c": "Prepara in spagnolo un piccolo ordine di tapas per tre amici: tre piatti e tre bevande."
+    },
+    "pt": {
+     "t": "Tapas e petiscos",
+     "g": "Conhece a cultura das tapas e pede pratos pequenos para partilhar.",
+     "p": [
+      "As tapas são pequenas porções com a bebida; uma ración é um prato maior para a mesa, como os petiscos.",
+      "Clássicos: tortilla de patatas, croquetas, patatas bravas, aceitunas, pimientos de Padrón.",
+      "Propõe com ¿Pedimos...? (Pedimos...?): ¿Pedimos unas bravas?"
+     ],
+     "q": "Que tapa gostavas de provar primeiro e porquê?",
+     "c": "Prepara em espanhol um pequeno pedido de tapas para três amigos: três pratos e três bebidas."
+    },
+    "pt_BR": {
+     "t": "Tapas e petiscos",
+     "g": "Conheça a cultura das tapas e peça pratos pequenos para compartilhar.",
+     "p": [
+      "As tapas são porções pequenas com a bebida; uma ración é um prato maior para a mesa, como uma porção de boteco.",
+      "Clássicos: tortilla de patatas, croquetas, patatas bravas, aceitunas, pimientos de Padrón.",
+      "Proponha com ¿Pedimos...? (Vamos pedir...?): ¿Pedimos unas bravas?"
+     ],
+     "q": "Que tapa você gostaria de provar primeiro e por quê?",
+     "c": "Monte em espanhol um pedido de tapas para três amigos: três pratos e três bebidas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la tortilla de patatas",
+      "ex": "La tortilla de patatas está riquísima."
+     },
+     {
+      "w": "las croquetas",
+      "ex": "Una ración de croquetas, por favor."
+     },
+     {
+      "w": "las patatas bravas",
+      "ex": "Las patatas bravas pican un poco."
+     },
+     {
+      "w": "las aceitunas",
+      "ex": "Siempre ponen aceitunas con la bebida."
+     },
+     {
+      "w": "una ración",
+      "ex": "Pedimos una ración para compartir."
+     },
+     {
+      "w": "compartir",
+      "ex": "En España nos gusta compartir platos."
+     }
+    ],
+    "gram": "Tapa es una porción pequeña; ración, una más grande para compartir. ¿Pedimos...? propone algo al grupo: ¿Pedimos unas croquetas?"
+   }
+  },
+  {
+   "d": 34,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Gustar: I like it",
+     "g": "Say what you like with gustar in singular and plural.",
+     "p": [
+      "Gustar works backwards: the thing pleases you. Me gusta el café = coffee pleases me.",
+      "Singular thing or a verb: me gusta; plural things: me gustan los libros.",
+      "Change the pronoun for the person: te gusta, le gusta, nos gusta; reply with ¿A ti también?"
+     ],
+     "q": "What food, music and activity do you like? Answer with me gusta and me gustan.",
+     "c": "Write three things you like and three things your best friend likes, with gusta and gustan."
+    },
+    "de": {
+     "t": "Gustar: Es gefällt mir",
+     "g": "Du sagst mit gustar, was dir gefällt, im Singular und Plural.",
+     "p": [
+      "Gustar funktioniert wie gefallen: Die Sache gefällt dir. Me gusta el café = Kaffee gefällt mir.",
+      "Eine Sache oder ein Verb: me gusta; mehrere Dinge: me gustan los libros.",
+      "Das Pronomen wechselt mit der Person: te gusta, le gusta, nos gusta; Rückfrage: ¿A ti también?"
+     ],
+     "q": "Welches Essen, welche Musik, welche Aktivität magst du? Antworte mit me gusta und me gustan.",
+     "c": "Schreib drei Dinge, die dir gefallen, und drei, die deinem besten Freund gefallen, mit gusta und gustan."
+    },
+    "es": {
+     "t": "Gustar: me gusta",
+     "g": "Expresa gustos con gustar en singular y en plural.",
+     "p": [
+      "Gustar concuerda con lo que gusta, no con la persona: me gusta el café, me gustan los libros.",
+      "Con infinitivos siempre en singular: me gusta leer y cocinar.",
+      "El pronombre indica a quién: me, te, le, nos, os, les; y se refuerza con a mí, a ti, a ella."
+     ],
+     "q": "¿Qué te gusta hacer cuando tienes una tarde libre? ¿Y qué no te gusta nada?",
+     "c": "Escribe tres gustos tuyos y tres de alguien cercano usando gusta y gustan correctamente."
+    },
+    "fr": {
+     "t": "Gustar : j'aime",
+     "g": "Dire ce que tu aimes avec gustar au singulier et au pluriel.",
+     "p": [
+      "Gustar fonctionne à l'envers : la chose te plaît. Me gusta el café = le café me plaît.",
+      "Une chose ou un verbe : me gusta ; plusieurs choses : me gustan los libros.",
+      "Le pronom change selon la personne : te gusta, le gusta, nos gusta ; on relance avec ¿A ti también?"
+     ],
+     "q": "Quels plats, quelle musique, quelles activités aimes-tu ? Réponds avec me gusta et me gustan.",
+     "c": "Écris trois choses que tu aimes et trois qu'aime ton meilleur ami, avec gusta et gustan."
+    },
+    "it": {
+     "t": "Gustar: mi piace",
+     "g": "Dici cosa ti piace con gustar al singolare e al plurale.",
+     "p": [
+      "Gustar funziona come piacere: me gusta el café = mi piace il caffè.",
+      "Una cosa o un verbo: me gusta; più cose: me gustan los libros, come mi piacciono.",
+      "Il pronome cambia con la persona: te gusta, le gusta, nos gusta; ribatti con ¿A ti también?"
+     ],
+     "q": "Che cibo, musica e attività ti piacciono? Rispondi con me gusta e me gustan.",
+     "c": "Scrivi tre cose che piacciono a te e tre al tuo migliore amico, con gusta e gustan."
+    },
+    "pt": {
+     "t": "Gustar: gosto",
+     "g": "Diz do que gostas com gustar no singular e no plural.",
+     "p": [
+      "Gustar funciona ao contrário: a coisa agrada-te. Me gusta el café = agrada-me o café.",
+      "Uma coisa ou um verbo: me gusta; várias coisas: me gustan los libros. Nada de de: gusto de... não existe aqui.",
+      "O pronome muda com a pessoa: te gusta, le gusta, nos gusta; responde com ¿A ti también?"
+     ],
+     "q": "De que comida, música e atividade gostas? Responde com me gusta e me gustan.",
+     "c": "Escreve três coisas de que gostas e três de que gosta o teu melhor amigo, com gusta e gustan."
+    },
+    "pt_BR": {
+     "t": "Gustar: eu gosto",
+     "g": "Diga do que você gosta com gustar no singular e no plural.",
+     "p": [
+      "Gustar funciona ao contrário: a coisa agrada a você. Me gusta el café = o café me agrada.",
+      "Uma coisa ou um verbo: me gusta; várias coisas: me gustan los libros. Sem de: nada de gusto de...",
+      "O pronome muda com a pessoa: te gusta, le gusta, nos gusta; responda com ¿A ti también?"
+     ],
+     "q": "De que comida, música e atividade você gosta? Responda com me gusta e me gustan.",
+     "c": "Escreva três coisas de que você gosta e três de que seu melhor amigo gosta, com gusta e gustan."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me gusta",
+      "ex": "Me gusta el café con leche."
+     },
+     {
+      "w": "me gustan",
+      "ex": "Me gustan las películas de aventuras."
+     },
+     {
+      "w": "te gusta",
+      "ex": "¿Te gusta la música latina?"
+     },
+     {
+      "w": "le gusta",
+      "ex": "A mi madre le gusta el cine."
+     },
+     {
+      "w": "nos gusta",
+      "ex": "Nos gusta pasear por la playa."
+     },
+     {
+      "w": "¿A ti también?",
+      "ex": "Me gusta el chocolate. ¿A ti también?"
+     }
+    ],
+    "gram": "Gustar concuerda con lo que gusta: me gusta el libro, me gustan los libros, me gusta leer. Pronombres: me, te, le, nos, os, les."
+   }
+  },
+  {
+   "d": 35,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Me encanta and other likes",
+     "g": "Talk about your tastes with more feeling and agree or disagree.",
+     "p": [
+      "Me encanta means I love it and works like gustar: me encanta el mar, me encantan los gatos.",
+      "Never say muy before encantar; for strong dislike use no me gusta nada.",
+      "Agree with a mí también (after a positive) or a mí tampoco (after a negative); prefiero states a choice."
+     ],
+     "q": "What do you absolutely love, and what do you not like at all?",
+     "c": "Tell someone, or yourself, three things you love and one you dislike, using encantar and no me gusta nada."
+    },
+    "de": {
+     "t": "Me encanta und andere Vorlieben",
+     "g": "Du sprichst mit mehr Gefühl über Vorlieben und stimmst zu oder widersprichst.",
+     "p": [
+      "Me encanta heißt ich liebe es und funktioniert wie gustar: me encanta el mar, me encantan los gatos.",
+      "Vor encantar nie muy; starke Abneigung: no me gusta nada.",
+      "Zustimmen mit a mí también (nach positiv) oder a mí tampoco (nach negativ); prefiero zeigt deine Wahl."
+     ],
+     "q": "Was liebst du total, und was magst du überhaupt nicht?",
+     "c": "Erzähl jemandem oder dir selbst drei Dinge, die du liebst, und eins, das du nicht magst, mit encantar."
+    },
+    "es": {
+     "t": "Me encanta y otros gustos",
+     "g": "Habla de tus gustos con más intensidad y muestra acuerdo o desacuerdo.",
+     "p": [
+      "Me encanta funciona como gustar y es más intenso: me encanta el mar, me encantan los gatos.",
+      "No se dice muy con encantar; para lo contrario: no me gusta nada u odio.",
+      "Acuerdo: a mí también (tras frase positiva) y a mí tampoco (tras negativa); preferencia: prefiero."
+     ],
+     "q": "¿Qué te encanta de tu ciudad y qué no te gusta nada?",
+     "c": "Habla hoy de tus gustos con alguien usando me encanta, prefiero y a mí también."
+    },
+    "fr": {
+     "t": "Me encanta et autres goûts",
+     "g": "Parler de tes goûts avec plus d'émotion, et dire si tu es d'accord.",
+     "p": [
+      "Me encanta veut dire j'adore et marche comme gustar : me encanta el mar, me encantan los gatos.",
+      "Jamais muy devant encantar ; pour un rejet fort : no me gusta nada.",
+      "Pour être d'accord : a mí también (moi aussi) ou a mí tampoco (moi non plus) ; prefiero exprime un choix."
+     ],
+     "q": "Qu'est-ce que tu adores, et qu'est-ce que tu n'aimes pas du tout ?",
+     "c": "Dis à quelqu'un, ou à toi-même, trois choses que tu adores et une que tu n'aimes pas, avec encantar."
+    },
+    "it": {
+     "t": "Me encanta e altri gusti",
+     "g": "Parli dei tuoi gusti con più emozione ed esprimi accordo o disaccordo.",
+     "p": [
+      "Me encanta vuol dire lo adoro e funziona come gustar: me encanta el mar, me encantan los gatos.",
+      "Mai muy davanti a encantar; per un forte rifiuto: no me gusta nada.",
+      "Per essere d'accordo: a mí también (anch'io) o a mí tampoco (neanch'io); prefiero indica una scelta."
+     ],
+     "q": "Cosa adori e cosa non ti piace per niente?",
+     "c": "Racconta a qualcuno, o a te stesso, tre cose che adori e una che non ti piace, con encantar."
+    },
+    "pt": {
+     "t": "Me encanta e outros gostos",
+     "g": "Fala dos teus gostos com mais emoção e mostra acordo ou desacordo.",
+     "p": [
+      "Me encanta quer dizer adoro e funciona como gustar: me encanta el mar, me encantan los gatos.",
+      "Nunca muy antes de encantar; para o contrário: no me gusta nada.",
+      "Para concordar: a mí también (eu também) ou a mí tampoco (eu também não); prefiero mostra uma escolha."
+     ],
+     "q": "O que é que adoras e o que é que não gostas mesmo nada?",
+     "c": "Diz a alguém, ou a ti, três coisas que adoras e uma de que não gostas, com encantar."
+    },
+    "pt_BR": {
+     "t": "Me encanta e outros gostos",
+     "g": "Fale dos seus gostos com mais emoção e mostre se concorda ou não.",
+     "p": [
+      "Me encanta quer dizer eu adoro e funciona como gustar: me encanta el mar, me encantan los gatos.",
+      "Nunca muy antes de encantar; para o contrário: no me gusta nada.",
+      "Para concordar: a mí también (eu também) ou a mí tampoco (eu também não); prefiero mostra uma escolha."
+     ],
+     "q": "O que você adora e do que você não gosta nem um pouco?",
+     "c": "Diga a alguém, ou a si mesmo, três coisas que você adora e uma de que não gosta, com encantar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me encanta",
+      "ex": "Me encanta bailar salsa."
+     },
+     {
+      "w": "me encantan",
+      "ex": "Me encantan los mercados."
+     },
+     {
+      "w": "no me gusta nada",
+      "ex": "No me gusta nada el frío."
+     },
+     {
+      "w": "prefiero",
+      "ex": "Prefiero el té al café."
+     },
+     {
+      "w": "odio",
+      "ex": "Odio madrugar los domingos."
+     },
+     {
+      "w": "a mí también, a mí tampoco",
+      "ex": "Me gusta el mar. A mí también."
+     }
+    ],
+    "gram": "Me encanta (más fuerte que me gusta, sin muy). Para estar de acuerdo: a mí también (frase positiva), a mí tampoco (frase negativa)."
+   }
+  },
+  {
+   "d": 36,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hay: there is, there are",
+     "g": "Describe what exists in a place with hay.",
+     "p": [
+      "Hay means both there is and there are and never changes: hay un parque, hay tres museos.",
+      "Use it with un, una, numbers or no article, not with el or la: hay una plaza, not hay la plaza.",
+      "Negative and questions: no hay leche, ¿hay un banco por aquí?"
+     ],
+     "q": "What is there in your neighbourhood? Tell me three things with hay.",
+     "c": "Describe your street in four sentences with hay and no hay."
+    },
+    "de": {
+     "t": "Hay: es gibt",
+     "g": "Du beschreibst mit hay, was es an einem Ort gibt.",
+     "p": [
+      "Hay heißt es gibt und bleibt immer gleich: hay un parque, hay tres museos.",
+      "Mit un, una, Zahlen oder ohne Artikel, nie mit el oder la: hay una plaza, nicht hay la plaza.",
+      "Verneinung und Frage: no hay leche, ¿hay un banco por aquí?"
+     ],
+     "q": "Was gibt es in deinem Viertel? Nenne drei Dinge mit hay.",
+     "c": "Beschreib deine Straße in vier Sätzen mit hay und no hay."
+    },
+    "es": {
+     "t": "Hay: existencia",
+     "g": "Describe lo que existe en un lugar con hay.",
+     "p": [
+      "Hay es invariable: hay un parque, hay tres museos.",
+      "Va con un, una, números o sin artículo, nunca con el o la: hay una plaza, no hay la plaza.",
+      "Para lo concreto se usa estar: hay un museo; el museo está en el centro."
+     ],
+     "q": "¿Qué hay en tu barrio que te encanta y qué echas de menos que no hay?",
+     "c": "Describe tu calle en cuatro frases con hay y no hay."
+    },
+    "fr": {
+     "t": "Hay : il y a",
+     "g": "Décrire ce qui existe dans un lieu avec hay.",
+     "p": [
+      "Hay veut dire il y a, au singulier comme au pluriel : hay un parque, hay tres museos.",
+      "Avec un, una, un nombre ou sans article, jamais avec el ou la : hay una plaza, pas hay la plaza.",
+      "Négation et question : no hay leche, ¿hay un banco por aquí?"
+     ],
+     "q": "Qu'y a-t-il dans ton quartier ? Dis-moi trois choses avec hay.",
+     "c": "Décris ta rue en quatre phrases avec hay et no hay."
+    },
+    "it": {
+     "t": "Hay: c'è, ci sono",
+     "g": "Descrivi cosa c'è in un luogo con hay.",
+     "p": [
+      "Hay vuol dire c'è e ci sono e non cambia mai: hay un parque, hay tres museos.",
+      "Va con un, una, numeri o senza articolo, mai con el o la: hay una plaza, non hay la plaza.",
+      "Negazione e domanda: no hay leche, ¿hay un banco por aquí?"
+     ],
+     "q": "Cosa c'è nel tuo quartiere? Dimmi tre cose con hay.",
+     "c": "Descrivi la tua via in quattro frasi con hay e no hay."
+    },
+    "pt": {
+     "t": "Hay: há",
+     "g": "Descreve o que existe num lugar com hay.",
+     "p": [
+      "Hay quer dizer há e nunca muda: hay un parque, hay tres museos.",
+      "Usa-se com un, una, números ou sem artigo, nunca com el ou la: hay una plaza, e não hay la plaza.",
+      "Negação e pergunta: no hay leche, ¿hay un banco por aquí?"
+     ],
+     "q": "O que há no teu bairro? Diz-me três coisas com hay.",
+     "c": "Descreve a tua rua em quatro frases com hay e no hay."
+    },
+    "pt_BR": {
+     "t": "Hay: tem, há",
+     "g": "Descreva o que existe num lugar com hay.",
+     "p": [
+      "Hay quer dizer tem ou há e nunca muda: hay un parque, hay tres museos.",
+      "Use com un, una, números ou sem artigo, nunca com el ou la: hay una plaza, e não hay la plaza.",
+      "Negação e pergunta: no hay leche, ¿hay un banco por aquí? Atenção: em espanhol não se usa tener para isso."
+     ],
+     "q": "O que tem no seu bairro? Me diga três coisas com hay.",
+     "c": "Descreva sua rua em quatro frases com hay e no hay."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hay",
+      "ex": "Hay un parque cerca de mi casa."
+     },
+     {
+      "w": "no hay",
+      "ex": "No hay leche en la nevera."
+     },
+     {
+      "w": "muchos, muchas",
+      "ex": "Hay muchos bares en esta calle."
+     },
+     {
+      "w": "algún, alguna",
+      "ex": "¿Hay alguna farmacia por aquí?"
+     },
+     {
+      "w": "el parque",
+      "ex": "El parque tiene un lago."
+     },
+     {
+      "w": "la plaza",
+      "ex": "En la plaza hay una fuente."
+     }
+    ],
+    "gram": "Hay (del verbo haber) no cambia: hay un bar, hay dos bares. Va con un, una, números o nada, nunca con el o la."
+   }
+  },
+  {
+   "d": 37,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Estar for location",
+     "g": "Say where people and things are with estar.",
+     "p": [
+      "Estar: estoy, estás, está, estamos, estáis, están; it is the verb for location.",
+      "¿Dónde está el baño? Está al fondo. ¿Dónde están mis llaves? Están aquí.",
+      "Useful partners: aquí, allí, cerca de, lejos de, en el centro. Remember: hay a bank, but el banco está..."
+     ],
+     "q": "Where are you right now, and where is your favourite café? Answer with estar.",
+     "c": "Say where five important places in your town are, using está and cerca de or lejos de."
+    },
+    "de": {
+     "t": "Estar für Ortsangaben",
+     "g": "Du sagst mit estar, wo Personen und Dinge sind.",
+     "p": [
+      "Estar: estoy, estás, está, estamos, estáis, están; es ist das Verb für den Ort.",
+      "¿Dónde está el baño? Está al fondo. ¿Dónde están mis llaves? Están aquí.",
+      "Nützliche Partner: aquí, allí, cerca de, lejos de, en el centro. Hay un banco, aber el banco está..."
+     ],
+     "q": "Wo bist du gerade, und wo ist dein Lieblingscafé? Antworte mit estar.",
+     "c": "Sag, wo fünf wichtige Orte in deiner Stadt sind, mit está und cerca de oder lejos de."
+    },
+    "es": {
+     "t": "Estar para la ubicación",
+     "g": "Indica dónde están las personas y las cosas con estar.",
+     "p": [
+      "Estar: estoy, estás, está, estamos, estáis, están; es el verbo de la ubicación.",
+      "¿Dónde está el baño? Está al fondo. ¿Dónde están mis llaves? Están aquí.",
+      "Diferencia clave: hay un banco (existencia) y el banco está en la plaza (ubicación)."
+     ],
+     "q": "¿Dónde estás ahora mismo y dónde está tu rincón favorito de la ciudad?",
+     "c": "Explica dónde están cinco lugares importantes de tu ciudad con está, cerca de y lejos de."
+    },
+    "fr": {
+     "t": "Estar pour situer",
+     "g": "Dire où sont les gens et les choses avec estar.",
+     "p": [
+      "Estar : estoy, estás, está, estamos, estáis, están ; c'est le verbe de la localisation.",
+      "¿Dónde está el baño? Está al fondo. ¿Dónde están mis llaves? Están aquí.",
+      "Partenaires utiles : aquí, allí, cerca de, lejos de, en el centro. Hay un banco, mais el banco está..."
+     ],
+     "q": "Où es-tu en ce moment, et où est ton café préféré ? Réponds avec estar.",
+     "c": "Dis où se trouvent cinq lieux importants de ta ville, avec está et cerca de ou lejos de."
+    },
+    "it": {
+     "t": "Estar per la posizione",
+     "g": "Dici dove si trovano persone e cose con estar.",
+     "p": [
+      "Estar: estoy, estás, está, estamos, estáis, están; è il verbo della posizione, come stare/trovarsi.",
+      "¿Dónde está el baño? Está al fondo. ¿Dónde están mis llaves? Están aquí.",
+      "Partner utili: aquí, allí, cerca de, lejos de, en el centro. Hay un banco, ma el banco está..."
+     ],
+     "q": "Dove sei adesso e dove si trova il tuo bar preferito? Rispondi con estar.",
+     "c": "Di' dove si trovano cinque luoghi importanti della tua città, con está e cerca de o lejos de."
+    },
+    "pt": {
+     "t": "Estar para a localização",
+     "g": "Diz onde estão as pessoas e as coisas com estar.",
+     "p": [
+      "Estar: estoy, estás, está, estamos, estáis, están; é o verbo da localização.",
+      "¿Dónde está el baño? Está al fondo. ¿Dónde están mis llaves? Están aquí.",
+      "Parceiros úteis: aquí, allí, cerca de, lejos de, en el centro. Hay un banco, mas el banco está..."
+     ],
+     "q": "Onde estás agora e onde fica o teu café preferido? Responde com estar.",
+     "c": "Diz onde ficam cinco lugares importantes da tua cidade, com está e cerca de ou lejos de."
+    },
+    "pt_BR": {
+     "t": "Estar para a localização",
+     "g": "Diga onde estão as pessoas e as coisas com estar.",
+     "p": [
+      "Estar: estoy, estás, está, estamos, estáis, están; é o verbo da localização.",
+      "¿Dónde está el baño? Está al fondo. ¿Dónde están mis llaves? Están aquí.",
+      "Parceiros úteis: aquí, allí, cerca de, lejos de, en el centro. Hay un banco, mas el banco está..."
+     ],
+     "q": "Onde você está agora e onde fica seu café favorito? Responda com estar.",
+     "c": "Diga onde ficam cinco lugares importantes da sua cidade, com está e cerca de ou lejos de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estar",
+      "ex": "¿Dónde estás? Estoy en casa."
+     },
+     {
+      "w": "el baño",
+      "ex": "Perdone, ¿dónde está el baño?"
+     },
+     {
+      "w": "el centro",
+      "ex": "El museo está en el centro."
+     },
+     {
+      "w": "aquí, allí",
+      "ex": "Las llaves están aquí."
+     },
+     {
+      "w": "cerca de",
+      "ex": "Mi casa está cerca del metro."
+     },
+     {
+      "w": "lejos de",
+      "ex": "El aeropuerto está lejos de la ciudad."
+     }
+    ],
+    "gram": "Estar para la ubicación: estoy, estás, está, estamos, estáis, están. ¿Dónde está el museo? Está en el centro."
+   }
+  },
+  {
+   "d": 38,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ser or estar? First steps",
+     "g": "Choose between ser and estar for the most common situations.",
+     "p": [
+      "Ser for what something is: identity, origin, job, character: es médica, es de Chile, es simpática.",
+      "Estar for where and how something is now: location and temporary states: está en casa, está cansada.",
+      "Some adjectives change meaning: es aburrido (boring person), está aburrido (bored right now)."
+     ],
+     "q": "Tell me one thing about who you are and one about how you are today, with ser and estar.",
+     "c": "Write four pairs of sentences about yourself, one with ser and one with estar each."
+    },
+    "de": {
+     "t": "Ser oder estar? Erste Schritte",
+     "g": "Du wählst in den häufigsten Fällen zwischen ser und estar.",
+     "p": [
+      "Ser für das, was etwas ist: Identität, Herkunft, Beruf, Charakter: es médica, es de Chile, es simpática.",
+      "Estar für wo und wie etwas gerade ist: Ort und vorübergehende Zustände: está en casa, está cansada.",
+      "Manche Adjektive ändern die Bedeutung: es aburrido (langweilig), está aburrido (gelangweilt)."
+     ],
+     "q": "Sag mir etwas darüber, wer du bist, und wie es dir heute geht, mit ser und estar.",
+     "c": "Schreib vier Satzpaare über dich, jeweils einen mit ser und einen mit estar."
+    },
+    "es": {
+     "t": "¿Ser o estar? Primeros pasos",
+     "g": "Elige entre ser y estar en las situaciones más frecuentes.",
+     "p": [
+      "Ser para la identidad, el origen, la profesión y el carácter: es médica, es de Chile, es simpática.",
+      "Estar para el lugar y los estados temporales: está en casa, está cansada, está contenta.",
+      "Algunos adjetivos cambian de sentido: es aburrido (no divierte) y está aburrido (se aburre ahora)."
+     ],
+     "q": "Dime algo de cómo eres y algo de cómo estás hoy, con ser y estar.",
+     "c": "Escribe cuatro parejas de frases sobre ti, una con ser y otra con estar."
+    },
+    "fr": {
+     "t": "Ser ou estar ? Premiers pas",
+     "g": "Choisir entre ser et estar dans les situations les plus courantes.",
+     "p": [
+      "Ser pour ce qu'est une chose : identité, origine, métier, caractère : es médica, es de Chile, es simpática.",
+      "Estar pour où et comment elle est maintenant : lieu et états passagers : está en casa, está cansada.",
+      "Certains adjectifs changent de sens : es aburrido (ennuyeux), está aburrido (il s'ennuie)."
+     ],
+     "q": "Dis-moi une chose sur qui tu es et une sur comment tu vas aujourd'hui, avec ser et estar.",
+     "c": "Écris quatre paires de phrases sur toi, une avec ser et une avec estar chaque fois."
+    },
+    "it": {
+     "t": "Ser o estar? Primi passi",
+     "g": "Scegli tra ser ed estar nelle situazioni più comuni.",
+     "p": [
+      "Ser per cosa è qualcosa: identità, origine, lavoro, carattere: es médica, es de Chile, es simpática.",
+      "Estar per dove e come sta ora: luogo e stati temporanei: está en casa, está cansada.",
+      "Alcuni aggettivi cambiano senso: es aburrido (noioso), está aburrido (annoiato)."
+     ],
+     "q": "Dimmi una cosa su chi sei e una su come stai oggi, con ser ed estar.",
+     "c": "Scrivi quattro coppie di frasi su di te, ognuna con una frase con ser e una con estar."
+    },
+    "pt": {
+     "t": "Ser ou estar? Primeiros passos",
+     "g": "Escolhe entre ser e estar nas situações mais comuns.",
+     "p": [
+      "Ser para o que algo é: identidade, origem, profissão, carácter: es médica, es de Chile, es simpática.",
+      "Estar para onde e como está agora: lugar e estados temporários: está en casa, está cansada.",
+      "É muito parecido com o português, mas atenção: a localização usa sempre estar, mesmo de edifícios."
+     ],
+     "q": "Diz-me uma coisa sobre quem és e outra sobre como estás hoje, com ser e estar.",
+     "c": "Escreve quatro pares de frases sobre ti, cada um com uma frase com ser e outra com estar."
+    },
+    "pt_BR": {
+     "t": "Ser ou estar? Primeiros passos",
+     "g": "Escolha entre ser e estar nas situações mais comuns.",
+     "p": [
+      "Ser para o que algo é: identidade, origem, profissão, caráter: es médica, es de Chile, es simpática.",
+      "Estar para onde e como está agora: lugar e estados temporários: está en casa, está cansada.",
+      "É bem parecido com o português, mas atenção: a localização usa sempre estar, até de prédios."
+     ],
+     "q": "Me diga uma coisa sobre quem você é e outra sobre como está hoje, com ser e estar.",
+     "c": "Escreva quatro pares de frases sobre você, cada um com uma frase com ser e outra com estar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "es simpático",
+      "ex": "Mi vecino es muy simpático."
+     },
+     {
+      "w": "está cansado",
+      "ex": "Hoy estoy cansado."
+     },
+     {
+      "w": "es de Lima",
+      "ex": "Mi amiga es de Lima."
+     },
+     {
+      "w": "está en Lima",
+      "ex": "Ahora mi amiga está en Lima."
+     },
+     {
+      "w": "está contento",
+      "ex": "Estoy contento con mi curso."
+     },
+     {
+      "w": "es aburrido, está aburrido",
+      "ex": "La película es aburrida; yo estoy aburrido."
+     }
+    ],
+    "gram": "Ser: identidad, origen, profesión, carácter. Estar: lugar y estados temporales. Es aburrido (carácter), está aburrido (estado)."
+   }
+  },
+  {
+   "d": 39,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Rooms and furniture at home",
+     "g": "Describe your home, its rooms and furniture.",
+     "p": [
+      "Rooms: la cocina, el salón, el dormitorio, el baño, el comedor, la terraza.",
+      "Furniture: el sofá, la mesa, la silla, la cama, el armario, la estantería.",
+      "Combine what you know: mi piso tiene dos dormitorios, en el salón hay un sofá, la mesa está en la cocina."
+     ],
+     "q": "What is your favourite room at home, and what is in it?",
+     "c": "Walk through your home and name every room and three pieces of furniture in Spanish."
+    },
+    "de": {
+     "t": "Zimmer und Möbel",
+     "g": "Du beschreibst dein Zuhause, seine Zimmer und Möbel.",
+     "p": [
+      "Zimmer: la cocina, el salón, el dormitorio, el baño, el comedor, la terraza.",
+      "Möbel: el sofá, la mesa, la silla, la cama, el armario, la estantería.",
+      "Kombiniere Gelerntes: mi piso tiene dos dormitorios, en el salón hay un sofá, la mesa está en la cocina."
+     ],
+     "q": "Was ist dein Lieblingszimmer, und was steht darin?",
+     "c": "Geh durch deine Wohnung und benenne jedes Zimmer und drei Möbelstücke auf Spanisch."
+    },
+    "es": {
+     "t": "Habitaciones y muebles",
+     "g": "Describe tu casa, sus habitaciones y sus muebles.",
+     "p": [
+      "Habitaciones: la cocina, el salón, el dormitorio, el baño, el comedor, la terraza.",
+      "Muebles: el sofá, la mesa, la silla, la cama, el armario, la estantería; y variantes como recámara o living.",
+      "Combina lo aprendido: mi piso tiene dos dormitorios, en el salón hay un sofá, la mesa está en la cocina."
+     ],
+     "q": "¿Cuál es tu rincón favorito de casa y qué lo hace especial?",
+     "c": "Describe tu casa ideal en cinco frases con tiene, hay y está."
+    },
+    "fr": {
+     "t": "Pièces et meubles",
+     "g": "Décrire ton logement, ses pièces et ses meubles.",
+     "p": [
+      "Pièces : la cocina, el salón, el dormitorio, el baño, el comedor, la terraza.",
+      "Meubles : el sofá, la mesa, la silla, la cama, el armario, la estantería.",
+      "Combine ce que tu sais : mi piso tiene dos dormitorios, en el salón hay un sofá, la mesa está en la cocina."
+     ],
+     "q": "Quelle est ta pièce préférée chez toi, et qu'y a-t-il dedans ?",
+     "c": "Fais le tour de chez toi et nomme chaque pièce et trois meubles en espagnol."
+    },
+    "it": {
+     "t": "Stanze e mobili",
+     "g": "Descrivi la tua casa, le stanze e i mobili.",
+     "p": [
+      "Stanze: la cocina, el salón, el dormitorio, el baño, el comedor, la terraza.",
+      "Mobili: el sofá, la mesa, la silla, la cama, el armario, la estantería.",
+      "Combina ciò che sai: mi piso tiene dos dormitorios, en el salón hay un sofá, la mesa está en la cocina."
+     ],
+     "q": "Qual è la tua stanza preferita e cosa c'è dentro?",
+     "c": "Fai il giro di casa e nomina ogni stanza e tre mobili in spagnolo."
+    },
+    "pt": {
+     "t": "Divisões e móveis",
+     "g": "Descreve a tua casa, as divisões e os móveis.",
+     "p": [
+      "Divisões: la cocina, el salón, el dormitorio, el baño, el comedor, la terraza.",
+      "Móveis: el sofá, la mesa, la silla, la cama, el armario, la estantería.",
+      "Combina o que sabes: mi piso tiene dos dormitorios, en el salón hay un sofá, la mesa está en la cocina."
+     ],
+     "q": "Qual é a tua divisão preferida em casa e o que há lá?",
+     "c": "Percorre a tua casa e diz em espanhol o nome de cada divisão e de três móveis."
+    },
+    "pt_BR": {
+     "t": "Cômodos e móveis",
+     "g": "Descreva sua casa, os cômodos e os móveis.",
+     "p": [
+      "Cômodos: la cocina, el salón, el dormitorio, el baño, el comedor, la terraza.",
+      "Móveis: el sofá, la mesa, la silla, la cama, el armario, la estantería.",
+      "Combine o que você sabe: mi piso tiene dos dormitorios, en el salón hay un sofá, la mesa está en la cocina."
+     ],
+     "q": "Qual é seu cômodo favorito em casa e o que tem nele?",
+     "c": "Percorra sua casa e diga em espanhol o nome de cada cômodo e de três móveis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la cocina",
+      "ex": "La cocina es pequeña pero luminosa."
+     },
+     {
+      "w": "el dormitorio",
+      "ex": "Mi dormitorio tiene una ventana grande."
+     },
+     {
+      "w": "el salón",
+      "ex": "Vemos la tele en el salón."
+     },
+     {
+      "w": "el sofá",
+      "ex": "El gato duerme en el sofá."
+     },
+     {
+      "w": "la cama",
+      "ex": "La cama está al lado de la ventana."
+     },
+     {
+      "w": "el armario",
+      "ex": "La ropa está en el armario."
+     }
+    ],
+    "gram": "Para describir la casa: tiene + partes (tiene dos dormitorios), hay + objetos (hay un sofá) y estar + ubicación (la cama está...)."
+   }
+  },
+  {
+   "d": 40,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prepositions of place",
+     "g": "Say exactly where things are with prepositions of place.",
+     "p": [
+      "Encima de (on top of), debajo de (under), al lado de (next to), delante de (in front of), detrás de (behind).",
+      "Entre (between) needs no de: entre el banco y el bar.",
+      "Remember de + el = del: al lado del sofá, detrás del edificio."
+     ],
+     "q": "Look at your desk: where are your phone, your keys and your glass? Answer in Spanish.",
+     "c": "Hide an object in a room and describe where it is in Spanish with two prepositions."
+    },
+    "de": {
+     "t": "Präpositionen des Ortes",
+     "g": "Du sagst mit Ortspräpositionen genau, wo etwas ist.",
+     "p": [
+      "Encima de (auf), debajo de (unter), al lado de (neben), delante de (vor), detrás de (hinter).",
+      "Entre (zwischen) braucht kein de: entre el banco y el bar.",
+      "Denk an de + el = del: al lado del sofá, detrás del edificio."
+     ],
+     "q": "Schau auf deinen Tisch: Wo sind dein Handy, deine Schlüssel und dein Glas? Antworte auf Spanisch.",
+     "c": "Versteck einen Gegenstand im Zimmer und beschreib auf Spanisch mit zwei Präpositionen, wo er ist."
+    },
+    "es": {
+     "t": "Preposiciones de lugar",
+     "g": "Indica con precisión dónde están las cosas.",
+     "p": [
+      "Encima de, debajo de, al lado de, delante de, detrás de, enfrente de, dentro de.",
+      "Entre no lleva de: entre el banco y el bar.",
+      "Recuerda de + el = del: al lado del sofá, detrás del edificio."
+     ],
+     "q": "Mira tu mesa: ¿dónde están tu móvil, tus llaves y tu vaso?",
+     "c": "Esconde un objeto en una habitación y describe dónde está con dos preposiciones."
+    },
+    "fr": {
+     "t": "Les prépositions de lieu",
+     "g": "Dire précisément où sont les choses.",
+     "p": [
+      "Encima de (sur), debajo de (sous), al lado de (à côté de), delante de (devant), detrás de (derrière).",
+      "Entre ne prend pas de : entre el banco y el bar.",
+      "N'oublie pas de + el = del : al lado del sofá, detrás del edificio."
+     ],
+     "q": "Regarde ton bureau : où sont ton téléphone, tes clés et ton verre ? Réponds en espagnol.",
+     "c": "Cache un objet dans une pièce et décris où il est en espagnol avec deux prépositions."
+    },
+    "it": {
+     "t": "Le preposizioni di luogo",
+     "g": "Dici con precisione dove sono le cose.",
+     "p": [
+      "Encima de (sopra), debajo de (sotto), al lado de (accanto a), delante de (davanti a), detrás de (dietro).",
+      "Entre (tra) non vuole de: entre el banco y el bar.",
+      "Ricorda de + el = del: al lado del sofá, detrás del edificio."
+     ],
+     "q": "Guarda la tua scrivania: dove sono il telefono, le chiavi e il bicchiere? Rispondi in spagnolo.",
+     "c": "Nascondi un oggetto in una stanza e descrivi dov'è in spagnolo con due preposizioni."
+    },
+    "pt": {
+     "t": "Preposições de lugar",
+     "g": "Diz com precisão onde estão as coisas.",
+     "p": [
+      "Encima de (em cima de), debajo de (debaixo de), al lado de (ao lado de), delante de (à frente de), detrás de (atrás de).",
+      "Entre não leva de: entre el banco y el bar.",
+      "Lembra-te de + el = del: al lado del sofá, detrás del edificio."
+     ],
+     "q": "Olha para a tua secretária: onde estão o telemóvel, as chaves e o copo? Responde em espanhol.",
+     "c": "Esconde um objeto num quarto e descreve em espanhol onde está, com duas preposições."
+    },
+    "pt_BR": {
+     "t": "Preposições de lugar",
+     "g": "Diga com precisão onde as coisas estão.",
+     "p": [
+      "Encima de (em cima de), debajo de (embaixo de), al lado de (ao lado de), delante de (na frente de), detrás de (atrás de).",
+      "Entre não leva de: entre el banco y el bar.",
+      "Lembre-se de + el = del: al lado del sofá, detrás del edificio."
+     ],
+     "q": "Olhe para sua mesa: onde estão o celular, as chaves e o copo? Responda em espanhol.",
+     "c": "Esconda um objeto num cômodo e descreva em espanhol onde ele está, com duas preposições."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "encima de",
+      "ex": "El libro está encima de la mesa."
+     },
+     {
+      "w": "debajo de",
+      "ex": "El gato está debajo de la cama."
+     },
+     {
+      "w": "al lado de",
+      "ex": "El banco está al lado del café."
+     },
+     {
+      "w": "entre",
+      "ex": "La farmacia está entre el banco y el bar."
+     },
+     {
+      "w": "delante de",
+      "ex": "Te espero delante del cine."
+     },
+     {
+      "w": "detrás de",
+      "ex": "El jardín está detrás de la casa."
+     }
+    ],
+    "gram": "Preposiciones de lugar con estar: encima de, debajo de, al lado de, delante de, detrás de, entre. De + el = del: al lado del sofá."
+   }
+  }
+ ]
+}

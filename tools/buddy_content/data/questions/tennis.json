@@ -1,0 +1,1305 @@
+{
+ "topic": "tennis",
+ "questions": [
+  {
+   "id": "tennis-001",
+   "lv": "any",
+   "i18n": {
+    "en": "How did you first get interested in tennis?",
+    "de": "Wie hast du dich zum ersten Mal für Tennis interessiert?",
+    "es": "¿Cómo empezaste a interesarte por el tenis?",
+    "fr": "Comment t'es-tu intéressé au tennis pour la première fois ?",
+    "it": "Come hai iniziato a interessarti al tennis?",
+    "pt": "Como é que começaste a interessar-te por ténis?",
+    "pt_BR": "Como você começou a se interessar por tênis?"
+   }
+  },
+  {
+   "id": "tennis-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer playing tennis or watching it, and why?",
+    "de": "Spielst du lieber Tennis oder schaust du lieber zu, und warum?",
+    "es": "¿Prefieres jugar al tenis o verlo, y por qué?",
+    "fr": "Tu préfères jouer au tennis ou le regarder, et pourquoi ?",
+    "it": "Preferisci giocare a tennis o guardarlo, e perché?",
+    "pt": "Preferes jogar ténis ou ver jogos, e porquê?",
+    "pt_BR": "Você prefere jogar tênis ou assistir, e por quê?"
+   }
+  },
+  {
+   "id": "tennis-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Who is your favorite tennis player, past or present, and why?",
+    "de": "Wer ist dein Lieblingstennisspieler oder deine Lieblingsspielerin, früher oder heute, und warum?",
+    "es": "¿Quién es tu tenista favorito, de antes o de ahora, y por qué?",
+    "fr": "Qui est ton joueur ou ta joueuse de tennis préféré, d'hier ou d'aujourd'hui, et pourquoi ?",
+    "it": "Chi è il tuo tennista preferito, di ieri o di oggi, e perché?",
+    "pt": "Quem é o teu tenista preferido, do passado ou do presente, e porquê?",
+    "pt_BR": "Quem é seu tenista favorito, do passado ou de hoje, e por quê?"
+   }
+  },
+  {
+   "id": "tennis-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Which Grand Slam tournament do you enjoy watching most?",
+    "de": "Welches Grand-Slam-Turnier schaust du am liebsten?",
+    "es": "¿Qué torneo de Grand Slam te gusta más ver?",
+    "fr": "Quel tournoi du Grand Chelem préfères-tu regarder ?",
+    "it": "Quale torneo del Grande Slam ti piace di più guardare?",
+    "pt": "Que torneio do Grand Slam mais gostas de ver?",
+    "pt_BR": "Qual torneio de Grand Slam você mais gosta de assistir?"
+   }
+  },
+  {
+   "id": "tennis-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever watched a tennis match live? What was the atmosphere like?",
+    "de": "Hast du schon einmal ein Tennismatch live gesehen? Wie war die Atmosphäre?",
+    "es": "¿Alguna vez has visto un partido de tenis en directo? ¿Cómo era el ambiente?",
+    "fr": "As-tu déjà vu un match de tennis en direct ? Quelle était l'ambiance ?",
+    "it": "Hai mai visto una partita di tennis dal vivo? Com'era l'atmosfera?",
+    "pt": "Já alguma vez viste um jogo de ténis ao vivo? Como era o ambiente?",
+    "pt_BR": "Você já assistiu a uma partida de tênis ao vivo? Como era o clima?"
+   }
+  },
+  {
+   "id": "tennis-006",
+   "lv": "any",
+   "i18n": {
+    "en": "How popular is tennis where you live?",
+    "de": "Wie beliebt ist Tennis dort, wo du lebst?",
+    "es": "¿Qué tan popular es el tenis donde vives?",
+    "fr": "Le tennis est-il populaire là où tu vis ?",
+    "it": "Quanto è popolare il tennis dove vivi?",
+    "pt": "O ténis é popular onde vives?",
+    "pt_BR": "O tênis é popular onde você mora?"
+   }
+  },
+  {
+   "id": "tennis-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Which court surface do you find most beautiful to watch: clay, grass or hard court?",
+    "de": "Welcher Belag ist für dich am schönsten anzusehen: Sand, Rasen oder Hartplatz?",
+    "es": "¿Qué superficie te parece más bonita de ver: tierra batida, hierba o pista dura?",
+    "fr": "Quelle surface trouves-tu la plus belle à regarder : terre battue, gazon ou dur ?",
+    "it": "Quale superficie trovi più bella da guardare: terra rossa, erba o cemento?",
+    "pt": "Que piso achas mais bonito de ver: terra batida, relva ou piso rápido?",
+    "pt_BR": "Qual piso você acha mais bonito de assistir: saibro, grama ou quadra dura?"
+   }
+  },
+  {
+   "id": "tennis-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most memorable tennis match you have ever seen?",
+    "de": "Was ist das denkwürdigste Tennismatch, das du je gesehen hast?",
+    "es": "¿Cuál es el partido de tenis más memorable que has visto?",
+    "fr": "Quel est le match de tennis le plus marquant que tu aies jamais vu ?",
+    "it": "Qual è la partita di tennis più memorabile che tu abbia mai visto?",
+    "pt": "Qual é o jogo de ténis mais marcante que já viste?",
+    "pt_BR": "Qual é a partida de tênis mais marcante que você já viu?"
+   }
+  },
+  {
+   "id": "tennis-009",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could hit a few balls with any player in history, who would you choose?",
+    "de": "Wenn du mit einem beliebigen Spieler der Geschichte ein paar Bälle schlagen könntest, wen würdest du wählen?",
+    "es": "Si pudieras pelotear con cualquier tenista de la historia, ¿a quién elegirías?",
+    "fr": "Si tu pouvais échanger quelques balles avec n'importe quel joueur de l'histoire, qui choisirais-tu ?",
+    "it": "Se potessi palleggiare con qualsiasi tennista della storia, chi sceglieresti?",
+    "pt": "Se pudesses trocar umas bolas com qualquer tenista da história, quem escolherias?",
+    "pt_BR": "Se você pudesse bater bola com qualquer tenista da história, quem escolheria?"
+   }
+  },
+  {
+   "id": "tennis-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you enjoy most in tennis: long rallies, big serves or clever drop shots?",
+    "de": "Was gefällt dir am Tennis am meisten: lange Ballwechsel, harte Aufschläge oder clevere Stopps?",
+    "es": "¿Qué disfrutas más en el tenis: los peloteos largos, los grandes saques o las dejadas inteligentes?",
+    "fr": "Qu'est-ce que tu préfères au tennis : les longs échanges, les gros services ou les amorties malignes ?",
+    "it": "Cosa ti piace di più nel tennis: gli scambi lunghi, i servizi potenti o le smorzate intelligenti?",
+    "pt": "O que mais gostas no ténis: trocas de bola longas, grandes serviços ou amortis inteligentes?",
+    "pt_BR": "O que você mais curte no tênis: trocas longas, saques potentes ou deixadinhas inteligentes?"
+   }
+  },
+  {
+   "id": "tennis-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer singles or doubles, as a player or a fan?",
+    "de": "Magst du lieber Einzel oder Doppel, als Spieler oder als Fan?",
+    "es": "¿Prefieres los individuales o los dobles, como jugador o como aficionado?",
+    "fr": "Tu préfères le simple ou le double, en tant que joueur ou spectateur ?",
+    "it": "Preferisci il singolare o il doppio, da giocatore o da tifoso?",
+    "pt": "Preferes singulares ou pares, como jogador ou como adepto?",
+    "pt_BR": "Você prefere simples ou duplas, como jogador ou como fã?"
+   }
+  },
+  {
+   "id": "tennis-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Which tennis rivalry do you find the most fascinating?",
+    "de": "Welche Tennisrivalität findest du am faszinierendsten?",
+    "es": "¿Qué rivalidad del tenis te parece más fascinante?",
+    "fr": "Quelle rivalité du tennis trouves-tu la plus fascinante ?",
+    "it": "Quale rivalità del tennis trovi più affascinante?",
+    "pt": "Que rivalidade do ténis achas mais fascinante?",
+    "pt_BR": "Qual rivalidade do tênis você acha mais fascinante?"
+   }
+  },
+  {
+   "id": "tennis-013",
+   "lv": "any",
+   "i18n": {
+    "en": "What would your perfect day at a big tennis tournament look like?",
+    "de": "Wie sähe dein perfekter Tag bei einem großen Tennisturnier aus?",
+    "es": "¿Cómo sería tu día perfecto en un gran torneo de tenis?",
+    "fr": "À quoi ressemblerait ta journée idéale dans un grand tournoi de tennis ?",
+    "it": "Come sarebbe la tua giornata perfetta a un grande torneo di tennis?",
+    "pt": "Como seria o teu dia perfeito num grande torneio de ténis?",
+    "pt_BR": "Como seria seu dia perfeito num grande torneio de tênis?"
+   }
+  },
+  {
+   "id": "tennis-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Which playing style do you admire most: power, defense, variety or serve-and-volley?",
+    "de": "Welchen Spielstil bewunderst du am meisten: Power, Defensive, Variation oder Serve-and-Volley?",
+    "es": "¿Qué estilo de juego admiras más: potencia, defensa, variedad o saque y volea?",
+    "fr": "Quel style de jeu admires-tu le plus : la puissance, la défense, la variété ou le service-volée ?",
+    "it": "Quale stile di gioco ammiri di più: potenza, difesa, varietà o serve and volley?",
+    "pt": "Que estilo de jogo mais admiras: potência, defesa, variedade ou serviço-vólei?",
+    "pt_BR": "Qual estilo de jogo você mais admira: potência, defesa, variedade ou saque e voleio?"
+   }
+  },
+  {
+   "id": "tennis-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Who introduced you to sports when you were young?",
+    "de": "Wer hat dich in deiner Kindheit zum Sport gebracht?",
+    "es": "¿Quién te acercó al deporte cuando eras pequeño?",
+    "fr": "Qui t'a fait découvrir le sport quand tu étais jeune ?",
+    "it": "Chi ti ha avvicinato allo sport quando eri piccolo?",
+    "pt": "Quem te apresentou o desporto quando eras pequeno?",
+    "pt_BR": "Quem te apresentou ao esporte quando você era criança?"
+   }
+  },
+  {
+   "id": "tennis-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Which tennis tradition do you find the most charming?",
+    "de": "Welche Tennistradition findest du am charmantesten?",
+    "es": "¿Qué tradición del tenis te parece más encantadora?",
+    "fr": "Quelle tradition du tennis trouves-tu la plus charmante ?",
+    "it": "Quale tradizione del tennis trovi più affascinante?",
+    "pt": "Que tradição do ténis achas mais encantadora?",
+    "pt_BR": "Qual tradição do tênis você acha mais charmosa?"
+   }
+  },
+  {
+   "id": "tennis-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Which tennis venue in the world would you love to visit one day?",
+    "de": "Welche Tennisanlage der Welt würdest du gern einmal besuchen?",
+    "es": "¿Qué escenario de tenis del mundo te encantaría visitar algún día?",
+    "fr": "Quel site de tennis dans le monde aimerais-tu visiter un jour ?",
+    "it": "Quale impianto di tennis al mondo ti piacerebbe visitare un giorno?",
+    "pt": "Que recinto de ténis no mundo gostavas de visitar um dia?",
+    "pt_BR": "Qual complexo de tênis no mundo você adoraria conhecer um dia?"
+   }
+  },
+  {
+   "id": "tennis-018",
+   "lv": "any",
+   "i18n": {
+    "en": "What tennis skill would you most like to learn or improve?",
+    "de": "Welche Tennisfähigkeit würdest du am liebsten lernen oder verbessern?",
+    "es": "¿Qué habilidad del tenis te gustaría más aprender o mejorar?",
+    "fr": "Quelle compétence au tennis aimerais-tu le plus apprendre ou améliorer ?",
+    "it": "Quale abilità del tennis ti piacerebbe di più imparare o migliorare?",
+    "pt": "Que habilidade do ténis mais gostavas de aprender ou melhorar?",
+    "pt_BR": "Qual habilidade do tênis você mais gostaria de aprender ou melhorar?"
+   }
+  },
+  {
+   "id": "tennis-019",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually follow tennis: TV, streaming, highlights or live?",
+    "de": "Wie verfolgst du Tennis normalerweise: Fernsehen, Streaming, Highlights oder live?",
+    "es": "¿Cómo sueles seguir el tenis: tele, streaming, resúmenes o en directo?",
+    "fr": "Comment suis-tu le tennis d'habitude : télé, streaming, résumés ou sur place ?",
+    "it": "Come segui di solito il tennis: TV, streaming, highlights o dal vivo?",
+    "pt": "Como costumas acompanhar o ténis: televisão, streaming, resumos ou ao vivo?",
+    "pt_BR": "Como você costuma acompanhar tênis: TV, streaming, melhores momentos ou ao vivo?"
+   }
+  },
+  {
+   "id": "tennis-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Which tennis champion do you admire for their character as well as their game?",
+    "de": "Welchen Tennischampion bewunderst du für seinen Charakter genauso wie für sein Spiel?",
+    "es": "¿Qué campeón o campeona de tenis admiras tanto por su carácter como por su juego?",
+    "fr": "Quel champion ou quelle championne admires-tu autant pour son caractère que pour son jeu ?",
+    "it": "Quale campione o campionessa di tennis ammiri per il carattere oltre che per il gioco?",
+    "pt": "Que campeão ou campeã de ténis admiras tanto pelo carácter como pelo jogo?",
+    "pt_BR": "Qual campeão ou campeã de tênis você admira tanto pelo caráter quanto pelo jogo?"
+   }
+  },
+  {
+   "id": "tennis-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What tennis movie, documentary or book would you recommend?",
+    "de": "Welchen Tennisfilm, welche Doku oder welches Buch würdest du empfehlen?",
+    "es": "¿Qué película, documental o libro de tenis recomendarías?",
+    "fr": "Quel film, documentaire ou livre sur le tennis recommanderais-tu ?",
+    "it": "Quale film, documentario o libro sul tennis consiglieresti?",
+    "pt": "Que filme, documentário ou livro de ténis recomendarias?",
+    "pt_BR": "Qual filme, documentário ou livro de tênis você recomendaria?"
+   }
+  },
+  {
+   "id": "tennis-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think tennis is more physical or more mental? Why?",
+    "de": "Ist Tennis für dich eher körperlich oder eher mental? Warum?",
+    "es": "¿Crees que el tenis es más físico o más mental? ¿Por qué?",
+    "fr": "Selon toi, le tennis est-il plutôt physique ou plutôt mental ? Pourquoi ?",
+    "it": "Secondo te, il tennis è più fisico o più mentale? Perché?",
+    "pt": "Achas que o ténis é mais físico ou mais mental? Porquê?",
+    "pt_BR": "Você acha que o tênis é mais físico ou mais mental? Por quê?"
+   }
+  },
+  {
+   "id": "tennis-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Which other racket sports have you tried, like padel, badminton or table tennis?",
+    "de": "Welche anderen Rückschlagsportarten hast du ausprobiert, etwa Padel, Badminton oder Tischtennis?",
+    "es": "¿Qué otros deportes de raqueta has probado, como pádel, bádminton o tenis de mesa?",
+    "fr": "Quels autres sports de raquette as-tu essayés, comme le padel, le badminton ou le tennis de table ?",
+    "it": "Quali altri sport di racchetta hai provato, come padel, badminton o ping pong?",
+    "pt": "Que outros desportos de raquete já experimentaste, como padel, badminton ou ténis de mesa?",
+    "pt_BR": "Quais outros esportes de raquete você já experimentou, como padel, badminton ou tênis de mesa?"
+   }
+  },
+  {
+   "id": "tennis-024",
+   "lv": "any",
+   "i18n": {
+    "en": "If you designed your own tennis outfit, what would it look like?",
+    "de": "Wenn du dein eigenes Tennis-Outfit entwerfen würdest, wie sähe es aus?",
+    "es": "Si diseñaras tu propia ropa de tenis, ¿cómo sería?",
+    "fr": "Si tu créais ta propre tenue de tennis, à quoi ressemblerait-elle ?",
+    "it": "Se disegnassi il tuo completo da tennis, come sarebbe?",
+    "pt": "Se desenhasses o teu próprio equipamento de ténis, como seria?",
+    "pt_BR": "Se você desenhasse seu próprio uniforme de tênis, como ele seria?"
+   }
+  },
+  {
+   "id": "tennis-025",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think makes a tennis champion different from other great players?",
+    "de": "Was unterscheidet deiner Meinung nach einen Tennischampion von anderen sehr guten Spielern?",
+    "es": "¿Qué crees que distingue a un campeón de tenis de otros grandes jugadores?",
+    "fr": "Selon toi, qu'est-ce qui distingue un champion de tennis des autres très bons joueurs ?",
+    "it": "Secondo te, cosa distingue un campione di tennis dagli altri grandi giocatori?",
+    "pt": "Na tua opinião, o que distingue um campeão de ténis dos outros grandes jogadores?",
+    "pt_BR": "Na sua opinião, o que diferencia um campeão de tênis de outros grandes jogadores?"
+   }
+  },
+  {
+   "id": "tennis-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a tennis shot you love to watch again and again?",
+    "de": "Gibt es einen Tennisschlag, den du dir immer wieder ansehen könntest?",
+    "es": "¿Hay algún golpe de tenis que te encante ver una y otra vez?",
+    "fr": "Y a-t-il un coup de tennis que tu adores revoir encore et encore ?",
+    "it": "C'è un colpo di tennis che ami rivedere più e più volte?",
+    "pt": "Há alguma pancada de ténis que adoras ver uma e outra vez?",
+    "pt_BR": "Tem algum golpe de tênis que você adora ver de novo e de novo?"
+   }
+  },
+  {
+   "id": "tennis-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like watching tennis with friends, or alone in silence?",
+    "de": "Schaust du Tennis lieber mit Freunden oder allein in Ruhe?",
+    "es": "¿Te gusta ver el tenis con amigos o solo, en silencio?",
+    "fr": "Tu aimes regarder le tennis entre amis, ou seul dans le calme ?",
+    "it": "Ti piace guardare il tennis con gli amici o da solo in silenzio?",
+    "pt": "Gostas de ver ténis com amigos, ou sozinho em silêncio?",
+    "pt_BR": "Você gosta de assistir tênis com amigos ou sozinho, em silêncio?"
+   }
+  },
+  {
+   "id": "tennis-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which country do you think has the most interesting tennis culture?",
+    "de": "Welches Land hat deiner Meinung nach die interessanteste Tenniskultur?",
+    "es": "¿Qué país crees que tiene la cultura tenística más interesante?",
+    "fr": "Selon toi, quel pays a la culture tennistique la plus intéressante ?",
+    "it": "Secondo te, quale paese ha la cultura tennistica più interessante?",
+    "pt": "Na tua opinião, que país tem a cultura de ténis mais interessante?",
+    "pt_BR": "Na sua opinião, qual país tem a cultura de tênis mais interessante?"
+   }
+  },
+  {
+   "id": "tennis-029",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you explain tennis scoring to a friend who finds it strange?",
+    "de": "Wie würdest du die Tenniszählweise einem Freund erklären, der sie seltsam findet?",
+    "es": "¿Cómo le explicarías el sistema de puntuación del tenis a un amigo que lo encuentra raro?",
+    "fr": "Comment expliquerais-tu le comptage au tennis à un ami qui le trouve bizarre ?",
+    "it": "Come spiegheresti il punteggio del tennis a un amico che lo trova strano?",
+    "pt": "Como explicarias a pontuação do ténis a um amigo que a acha estranha?",
+    "pt_BR": "Como você explicaria a contagem do tênis para um amigo que acha tudo estranho?"
+   }
+  },
+  {
+   "id": "tennis-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your earliest memory connected to tennis?",
+    "de": "Was ist deine früheste Erinnerung an Tennis?",
+    "es": "¿Cuál es tu primer recuerdo relacionado con el tenis?",
+    "fr": "Quel est ton plus ancien souvenir lié au tennis ?",
+    "it": "Qual è il tuo primo ricordo legato al tennis?",
+    "pt": "Qual é a tua memória mais antiga ligada ao ténis?",
+    "pt_BR": "Qual é sua lembrança mais antiga ligada ao tênis?"
+   }
+  },
+  {
+   "id": "tennis-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which do you find more exciting: an ace on match point or a long rally to finish?",
+    "de": "Was findest du spannender: ein Ass beim Matchball oder einen langen Ballwechsel zum Schluss?",
+    "es": "¿Qué te emociona más: un ace en bola de partido o un peloteo largo para terminar?",
+    "fr": "Qu'est-ce qui t'emballe le plus : un ace sur balle de match ou un long échange pour finir ?",
+    "it": "Cosa ti emoziona di più: un ace sul match point o un lungo scambio finale?",
+    "pt": "O que te entusiasma mais: um ás no match point ou uma longa troca de bolas no fim?",
+    "pt_BR": "O que te empolga mais: um ace no match point ou uma longa troca de bolas no final?"
+   }
+  },
+  {
+   "id": "tennis-032",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think about the quiet, respectful atmosphere during tennis points?",
+    "de": "Was hältst du von der ruhigen, respektvollen Atmosphäre während der Ballwechsel?",
+    "es": "¿Qué opinas del ambiente tranquilo y respetuoso durante los puntos de tenis?",
+    "fr": "Que penses-tu de l'ambiance calme et respectueuse pendant les points ?",
+    "it": "Cosa pensi dell'atmosfera silenziosa e rispettosa durante gli scambi?",
+    "pt": "O que achas do ambiente silencioso e respeitoso durante os pontos?",
+    "pt_BR": "O que você acha do clima silencioso e respeitoso durante os pontos?"
+   }
+  },
+  {
+   "id": "tennis-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather win with power or with clever tactics?",
+    "de": "Würdest du lieber mit Kraft oder mit cleverer Taktik gewinnen?",
+    "es": "¿Preferirías ganar con potencia o con táctica inteligente?",
+    "fr": "Tu préférerais gagner grâce à la puissance ou à une tactique maligne ?",
+    "it": "Preferiresti vincere con la potenza o con la tattica intelligente?",
+    "pt": "Preferias ganhar com potência ou com tática inteligente?",
+    "pt_BR": "Você preferiria vencer com potência ou com tática inteligente?"
+   }
+  },
+  {
+   "id": "tennis-034",
+   "lv": "any",
+   "i18n": {
+    "en": "How can tennis help people from different countries become friends?",
+    "de": "Wie kann Tennis Menschen aus verschiedenen Ländern zu Freunden machen?",
+    "es": "¿Cómo puede el tenis ayudar a que personas de distintos países se hagan amigas?",
+    "fr": "Comment le tennis peut-il aider des gens de pays différents à devenir amis ?",
+    "it": "Come può il tennis aiutare persone di paesi diversi a diventare amiche?",
+    "pt": "Como pode o ténis ajudar pessoas de países diferentes a tornarem-se amigas?",
+    "pt_BR": "Como o tênis pode ajudar pessoas de países diferentes a fazerem amizade?"
+   }
+  },
+  {
+   "id": "tennis-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Which tennis moment taught you something about sportsmanship?",
+    "de": "Welcher Tennismoment hat dir etwas über Fairness beigebracht?",
+    "es": "¿Qué momento del tenis te enseñó algo sobre deportividad?",
+    "fr": "Quel moment de tennis t'a appris quelque chose sur le fair-play ?",
+    "it": "Quale momento del tennis ti ha insegnato qualcosa sulla sportività?",
+    "pt": "Que momento do ténis te ensinou algo sobre desportivismo?",
+    "pt_BR": "Qual momento do tênis te ensinou algo sobre espírito esportivo?"
+   }
+  },
+  {
+   "id": "tennis-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you name your own tennis academy, and what would it focus on?",
+    "de": "Wie würdest du deine eigene Tennisakademie nennen, und worauf würde sie sich konzentrieren?",
+    "es": "¿Cómo llamarías a tu propia academia de tenis y en qué se centraría?",
+    "fr": "Comment appellerais-tu ta propre académie de tennis, et sur quoi se concentrerait-elle ?",
+    "it": "Come chiameresti la tua accademia di tennis, e su cosa si concentrerebbe?",
+    "pt": "Que nome darias à tua própria academia de ténis, e em que se focaria?",
+    "pt_BR": "Que nome você daria à sua própria academia de tênis, e qual seria o foco dela?"
+   }
+  },
+  {
+   "id": "tennis-037",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something about tennis that surprised you when you learned it?",
+    "de": "Was hat dich am Tennis überrascht, als du mehr darüber erfahren hast?",
+    "es": "¿Qué cosa del tenis te sorprendió cuando la aprendiste?",
+    "fr": "Qu'est-ce qui t'a surpris dans le tennis quand tu l'as découvert ?",
+    "it": "Cosa ti ha sorpreso del tennis quando l'hai scoperto?",
+    "pt": "O que é que te surpreendeu no ténis quando o descobriste?",
+    "pt_BR": "O que te surpreendeu no tênis quando você aprendeu mais sobre ele?"
+   }
+  },
+  {
+   "id": "tennis-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Which up-and-coming or recent champion do you enjoy watching?",
+    "de": "Welchen aufstrebenden oder neueren Champion schaust du gern?",
+    "es": "¿Qué joven promesa o campeón reciente te gusta ver?",
+    "fr": "Quel jeune talent ou champion récent aimes-tu regarder ?",
+    "it": "Quale giovane talento o campione recente ti piace guardare?",
+    "pt": "Que jovem promessa ou campeão recente gostas de ver?",
+    "pt_BR": "Qual jovem promessa ou campeão recente você gosta de assistir?"
+   }
+  },
+  {
+   "id": "tennis-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What tennis goal would you like to reach in the coming months, big or small?",
+    "de": "Welches Tennisziel möchtest du in den nächsten Monaten erreichen, ob groß oder klein?",
+    "es": "¿Qué meta de tenis te gustaría alcanzar en los próximos meses, grande o pequeña?",
+    "fr": "Quel objectif de tennis aimerais-tu atteindre dans les prochains mois, petit ou grand ?",
+    "it": "Quale obiettivo di tennis ti piacerebbe raggiungere nei prossimi mesi, grande o piccolo?",
+    "pt": "Que objetivo de ténis gostavas de alcançar nos próximos meses, grande ou pequeno?",
+    "pt_BR": "Qual meta de tênis você gostaria de alcançar nos próximos meses, grande ou pequena?"
+   }
+  },
+  {
+   "id": "tennis-040",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever held a tennis racket? How did it feel?",
+    "de": "Hattest du schon einmal einen Tennisschläger in der Hand? Wie hat es sich angefühlt?",
+    "es": "¿Alguna vez has sostenido una raqueta de tenis? ¿Qué sentiste?",
+    "fr": "As-tu déjà tenu une raquette de tennis ? Quelle sensation ça t'a fait ?",
+    "it": "Hai mai tenuto in mano una racchetta da tennis? Che sensazione ti ha dato?",
+    "pt": "Já alguma vez pegaste numa raquete de ténis? Como te sentiste?",
+    "pt_BR": "Você já segurou uma raquete de tênis? Qual foi a sensação?"
+   }
+  },
+  {
+   "id": "tennis-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which part of tennis scoring did you find strangest at first?",
+    "de": "Welcher Teil der Tenniszählweise kam dir am Anfang am seltsamsten vor?",
+    "es": "¿Qué parte de la puntuación del tenis te pareció más rara al principio?",
+    "fr": "Quelle partie du comptage au tennis t'a semblé la plus bizarre au début ?",
+    "it": "Quale parte del punteggio del tennis ti è sembrata più strana all'inizio?",
+    "pt": "Que parte da pontuação do ténis te pareceu mais estranha no início?",
+    "pt_BR": "Qual parte da contagem do tênis te pareceu mais estranha no começo?"
+   }
+  },
+  {
+   "id": "tennis-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Is your forehand or your backhand more comfortable, or haven't you tried yet?",
+    "de": "Fühlt sich deine Vorhand oder deine Rückhand besser an, oder hast du es noch nicht probiert?",
+    "es": "¿Te sientes más cómodo con la derecha o con el revés, o aún no lo has probado?",
+    "fr": "Tu es plus à l'aise en coup droit ou en revers, ou tu n'as pas encore essayé ?",
+    "it": "Ti trovi meglio col dritto o col rovescio, o non hai ancora provato?",
+    "pt": "Sentes-te mais à vontade com a direita ou com a esquerda, ou ainda não experimentaste?",
+    "pt_BR": "Você se sente mais à vontade com o forehand ou o backhand, ou ainda não experimentou?"
+   }
+  },
+  {
+   "id": "tennis-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you choose a one-handed or a two-handed backhand? Why?",
+    "de": "Würdest du eine einhändige oder eine beidhändige Rückhand wählen? Warum?",
+    "es": "¿Elegirías un revés a una mano o a dos manos? ¿Por qué?",
+    "fr": "Choisirais-tu un revers à une main ou à deux mains ? Pourquoi ?",
+    "it": "Sceglieresti un rovescio a una mano o a due mani? Perché?",
+    "pt": "Escolherias uma esquerda a uma mão ou a duas mãos? Porquê?",
+    "pt_BR": "Você escolheria um backhand de uma mão ou de duas? Por quê?"
+   }
+  },
+  {
+   "id": "tennis-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you find hardest about serving?",
+    "de": "Was findest du am Aufschlag am schwierigsten?",
+    "es": "¿Qué es lo que más te cuesta del saque?",
+    "fr": "Qu'est-ce qui est le plus difficile pour toi au service ?",
+    "it": "Cosa trovi più difficile nel servizio?",
+    "pt": "O que achas mais difícil no serviço?",
+    "pt_BR": "O que você acha mais difícil no saque?"
+   }
+  },
+  {
+   "id": "tennis-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Are there tennis courts near your home? What are they like?",
+    "de": "Gibt es in deiner Nähe Tennisplätze? Wie sind sie?",
+    "es": "¿Hay pistas de tenis cerca de tu casa? ¿Cómo son?",
+    "fr": "Y a-t-il des courts de tennis près de chez toi ? Ils sont comment ?",
+    "it": "Ci sono campi da tennis vicino a casa tua? Come sono?",
+    "pt": "Há campos de ténis perto de tua casa? Como são?",
+    "pt_BR": "Tem quadras de tênis perto da sua casa? Como elas são?"
+   }
+  },
+  {
+   "id": "tennis-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which tennis word or term did you learn recently?",
+    "de": "Welches Tenniswort oder welchen Begriff hast du kürzlich gelernt?",
+    "es": "¿Qué palabra o término de tenis has aprendido hace poco?",
+    "fr": "Quel mot ou terme de tennis as-tu appris récemment ?",
+    "it": "Quale parola o termine del tennis hai imparato di recente?",
+    "pt": "Que palavra ou termo de ténis aprendeste recentemente?",
+    "pt_BR": "Qual palavra ou termo de tênis você aprendeu recentemente?"
+   }
+  },
+  {
+   "id": "tennis-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you think you would enjoy playing at the net or staying at the baseline?",
+    "de": "Glaubst du, du würdest lieber am Netz oder an der Grundlinie spielen?",
+    "es": "¿Crees que disfrutarías más jugando en la red o desde el fondo de la pista?",
+    "fr": "Penses-tu que tu préférerais jouer au filet ou rester en fond de court ?",
+    "it": "Pensi che ti piacerebbe di più giocare a rete o restare a fondo campo?",
+    "pt": "Achas que gostarias mais de jogar na rede ou ficar na linha de fundo?",
+    "pt_BR": "Você acha que curtiria mais jogar na rede ou ficar no fundo da quadra?"
+   }
+  },
+  {
+   "id": "tennis-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you like to understand better when you watch a tennis match?",
+    "de": "Was würdest du beim Zuschauen eines Tennismatches gern besser verstehen?",
+    "es": "¿Qué te gustaría entender mejor cuando ves un partido de tenis?",
+    "fr": "Qu'aimerais-tu mieux comprendre quand tu regardes un match de tennis ?",
+    "it": "Cosa ti piacerebbe capire meglio quando guardi una partita di tennis?",
+    "pt": "O que gostavas de perceber melhor quando vês um jogo de ténis?",
+    "pt_BR": "O que você gostaria de entender melhor quando assiste a uma partida de tênis?"
+   }
+  },
+  {
+   "id": "tennis-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Who would you love to have as your first tennis partner?",
+    "de": "Wen hättest du gern als deinen ersten Tennispartner?",
+    "es": "¿A quién te encantaría tener como primer compañero de tenis?",
+    "fr": "Qui aimerais-tu avoir comme premier partenaire de tennis ?",
+    "it": "Chi ti piacerebbe avere come primo compagno di tennis?",
+    "pt": "Quem gostavas de ter como primeiro parceiro de ténis?",
+    "pt_BR": "Quem você adoraria ter como primeiro parceiro de tênis?"
+   }
+  },
+  {
+   "id": "tennis-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried to hit a ball against a wall? How long could you keep it going?",
+    "de": "Hast du schon mal einen Ball gegen eine Wand gespielt? Wie lange konntest du ihn im Spiel halten?",
+    "es": "¿Alguna vez has peloteado contra una pared? ¿Cuánto tiempo aguantaste?",
+    "fr": "As-tu déjà tapé la balle contre un mur ? Combien de temps as-tu tenu ?",
+    "it": "Hai mai palleggiato contro un muro? Per quanto sei riuscito ad andare avanti?",
+    "pt": "Já alguma vez bateste bolas contra uma parede? Quanto tempo aguentaste?",
+    "pt_BR": "Você já bateu bola contra uma parede? Por quanto tempo conseguiu manter?"
+   }
+  },
+  {
+   "id": "tennis-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which court surface would you like to try first, and why?",
+    "de": "Auf welchem Belag würdest du zuerst gern spielen, und warum?",
+    "es": "¿En qué superficie te gustaría jugar primero, y por qué?",
+    "fr": "Sur quelle surface aimerais-tu jouer en premier, et pourquoi ?",
+    "it": "Su quale superficie ti piacerebbe giocare per prima, e perché?",
+    "pt": "Em que piso gostavas de jogar primeiro, e porquê?",
+    "pt_BR": "Em qual piso você gostaria de jogar primeiro, e por quê?"
+   }
+  },
+  {
+   "id": "tennis-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What kind of shoes and clothes do you like to wear for sports?",
+    "de": "Welche Schuhe und Kleidung trägst du gern beim Sport?",
+    "es": "¿Qué tipo de zapatillas y ropa te gusta usar para hacer deporte?",
+    "fr": "Quel genre de chaussures et de vêtements aimes-tu porter pour le sport ?",
+    "it": "Che tipo di scarpe e vestiti ti piace indossare per fare sport?",
+    "pt": "Que tipo de sapatilhas e roupa gostas de usar para fazer desporto?",
+    "pt_BR": "Que tipo de tênis e roupa você gosta de usar pra praticar esporte?"
+   }
+  },
+  {
+   "id": "tennis-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you think is harder to learn: the serve or the volley?",
+    "de": "Was ist deiner Meinung nach schwerer zu lernen: der Aufschlag oder der Volley?",
+    "es": "¿Qué crees que es más difícil de aprender: el saque o la volea?",
+    "fr": "Selon toi, qu'est-ce qui est le plus dur à apprendre : le service ou la volée ?",
+    "it": "Secondo te, cosa è più difficile da imparare: il servizio o la volée?",
+    "pt": "Na tua opinião, o que é mais difícil de aprender: o serviço ou o vólei?",
+    "pt_BR": "Na sua opinião, o que é mais difícil de aprender: o saque ou o voleio?"
+   }
+  },
+  {
+   "id": "tennis-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you like to take tennis lessons or learn with friends first?",
+    "de": "Würdest du lieber Tennisstunden nehmen oder zuerst mit Freunden lernen?",
+    "es": "¿Preferirías tomar clases de tenis o aprender primero con amigos?",
+    "fr": "Tu préférerais prendre des cours de tennis ou apprendre d'abord avec des amis ?",
+    "it": "Preferiresti prendere lezioni di tennis o imparare prima con gli amici?",
+    "pt": "Preferias ter aulas de ténis ou aprender primeiro com amigos?",
+    "pt_BR": "Você preferiria fazer aulas de tênis ou aprender primeiro com amigos?"
+   }
+  },
+  {
+   "id": "tennis-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which famous tennis player did you hear about first?",
+    "de": "Von welchem berühmten Tennisspieler hast du als Erstes gehört?",
+    "es": "¿De qué tenista famoso oíste hablar primero?",
+    "fr": "De quel joueur de tennis célèbre as-tu entendu parler en premier ?",
+    "it": "Di quale tennista famoso hai sentito parlare per primo?",
+    "pt": "De que tenista famoso ouviste falar primeiro?",
+    "pt_BR": "De qual tenista famoso você ouviu falar primeiro?"
+   }
+  },
+  {
+   "id": "tennis-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you think of Hawk-Eye and electronic line calls?",
+    "de": "Was hältst du von Hawk-Eye und elektronischen Linienentscheidungen?",
+    "es": "¿Qué opinas del ojo de halcón y del cantado electrónico de líneas?",
+    "fr": "Que penses-tu du Hawk-Eye et de l'arbitrage électronique des lignes ?",
+    "it": "Cosa pensi dell'occhio di falco e delle chiamate elettroniche delle righe?",
+    "pt": "O que achas do olho de falcão e da arbitragem eletrónica das linhas?",
+    "pt_BR": "O que você acha do olho de falcão e da marcação eletrônica das linhas?"
+   }
+  },
+  {
+   "id": "tennis-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which tennis etiquette rule do you find most interesting?",
+    "de": "Welche Tennis-Etikette-Regel findest du am interessantesten?",
+    "es": "¿Qué norma de etiqueta del tenis te parece más interesante?",
+    "fr": "Quelle règle d'étiquette du tennis trouves-tu la plus intéressante ?",
+    "it": "Quale regola di galateo del tennis trovi più interessante?",
+    "pt": "Que regra de etiqueta do ténis achas mais interessante?",
+    "pt_BR": "Qual regra de etiqueta do tênis você acha mais interessante?"
+   }
+  },
+  {
+   "id": "tennis-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "If you practiced tennis ten minutes a day, what would you work on?",
+    "de": "Wenn du zehn Minuten am Tag Tennis üben würdest, woran würdest du arbeiten?",
+    "es": "Si practicaras tenis diez minutos al día, ¿en qué trabajarías?",
+    "fr": "Si tu t'entraînais au tennis dix minutes par jour, sur quoi travaillerais-tu ?",
+    "it": "Se ti allenassi a tennis dieci minuti al giorno, su cosa lavoreresti?",
+    "pt": "Se treinasses ténis dez minutos por dia, em que trabalharias?",
+    "pt_BR": "Se você treinasse tênis dez minutos por dia, no que trabalharia?"
+   }
+  },
+  {
+   "id": "tennis-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you think doubles would be easier or harder for a beginner? Why?",
+    "de": "Wäre Doppel für Anfänger deiner Meinung nach leichter oder schwerer? Warum?",
+    "es": "¿Crees que los dobles serían más fáciles o más difíciles para un principiante? ¿Por qué?",
+    "fr": "Penses-tu que le double serait plus facile ou plus difficile pour un débutant ? Pourquoi ?",
+    "it": "Pensi che il doppio sarebbe più facile o più difficile per un principiante? Perché?",
+    "pt": "Achas que os pares seriam mais fáceis ou mais difíceis para um principiante? Porquê?",
+    "pt_BR": "Você acha que duplas seriam mais fáceis ou mais difíceis para um iniciante? Por quê?"
+   }
+  },
+  {
+   "id": "tennis-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What surprised you most the first time you watched a full tennis match?",
+    "de": "Was hat dich am meisten überrascht, als du zum ersten Mal ein ganzes Tennismatch gesehen hast?",
+    "es": "¿Qué te sorprendió más la primera vez que viste un partido de tenis completo?",
+    "fr": "Qu'est-ce qui t'a le plus surpris la première fois que tu as regardé un match en entier ?",
+    "it": "Cosa ti ha sorpreso di più la prima volta che hai visto una partita di tennis intera?",
+    "pt": "O que mais te surpreendeu da primeira vez que viste um jogo de ténis completo?",
+    "pt_BR": "O que mais te surpreendeu na primeira vez que você assistiu a uma partida inteira de tênis?"
+   }
+  },
+  {
+   "id": "tennis-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you enjoy watching more: men's or women's tennis, or both equally?",
+    "de": "Was schaust du lieber: Herren- oder Damentennis, oder beides gleich gern?",
+    "es": "¿Qué disfrutas más viendo: tenis masculino, femenino o ambos por igual?",
+    "fr": "Qu'est-ce que tu préfères regarder : le tennis masculin, féminin, ou les deux autant ?",
+    "it": "Cosa ti piace di più guardare: il tennis maschile, femminile o entrambi allo stesso modo?",
+    "pt": "O que gostas mais de ver: ténis masculino, feminino ou ambos por igual?",
+    "pt_BR": "O que você curte mais assistir: tênis masculino, feminino ou os dois igualmente?"
+   }
+  },
+  {
+   "id": "tennis-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you warm up before doing any sport?",
+    "de": "Wie wärmst du dich auf, bevor du Sport machst?",
+    "es": "¿Cómo calientas antes de hacer deporte?",
+    "fr": "Comment t'échauffes-tu avant de faire du sport ?",
+    "it": "Come ti riscaldi prima di fare sport?",
+    "pt": "Como é que aqueces antes de fazer desporto?",
+    "pt_BR": "Como você se aquece antes de praticar esporte?"
+   }
+  },
+  {
+   "id": "tennis-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather hit a perfect lob or a perfect drop shot?",
+    "de": "Würdest du lieber einen perfekten Lob oder einen perfekten Stopp spielen?",
+    "es": "¿Preferirías dar un globo perfecto o una dejada perfecta?",
+    "fr": "Tu préférerais réussir un lob parfait ou une amortie parfaite ?",
+    "it": "Preferiresti fare un pallonetto perfetto o una smorzata perfetta?",
+    "pt": "Preferias fazer um balão perfeito ou um amorti perfeito?",
+    "pt_BR": "Você preferiria acertar um lob perfeito ou uma deixadinha perfeita?"
+   }
+  },
+  {
+   "id": "tennis-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would make you feel proud after your first tennis lesson?",
+    "de": "Worauf wärst du nach deiner ersten Tennisstunde stolz?",
+    "es": "¿Qué te haría sentir orgulloso después de tu primera clase de tenis?",
+    "fr": "Qu'est-ce qui te rendrait fier après ton premier cours de tennis ?",
+    "it": "Cosa ti renderebbe orgoglioso dopo la tua prima lezione di tennis?",
+    "pt": "O que te deixaria orgulhoso depois da tua primeira aula de ténis?",
+    "pt_BR": "O que te deixaria orgulhoso depois da sua primeira aula de tênis?"
+   }
+  },
+  {
+   "id": "tennis-065",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which playing style suits your personality best, and why?",
+    "de": "Welcher Spielstil passt am besten zu deiner Persönlichkeit, und warum?",
+    "es": "¿Qué estilo de juego encaja mejor con tu personalidad, y por qué?",
+    "fr": "Quel style de jeu correspond le mieux à ta personnalité, et pourquoi ?",
+    "it": "Quale stile di gioco si adatta meglio alla tua personalità, e perché?",
+    "pt": "Que estilo de jogo combina melhor com a tua personalidade, e porquê?",
+    "pt_BR": "Qual estilo de jogo combina mais com sua personalidade, e por quê?"
+   }
+  },
+  {
+   "id": "tennis-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you handle nerves on important points?",
+    "de": "Wie gehst du mit Nervosität bei wichtigen Punkten um?",
+    "es": "¿Cómo manejas los nervios en los puntos importantes?",
+    "fr": "Comment gères-tu le stress sur les points importants ?",
+    "it": "Come gestisci la tensione nei punti importanti?",
+    "pt": "Como lidas com os nervos nos pontos importantes?",
+    "pt_BR": "Como você lida com o nervosismo nos pontos importantes?"
+   }
+  },
+  {
+   "id": "tennis-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your favorite pattern of play, like serve wide then attack the open court?",
+    "de": "Was ist dein Lieblingsspielmuster, etwa weit aufschlagen und dann ins offene Feld spielen?",
+    "es": "¿Cuál es tu patrón de juego favorito, como sacar abierto y atacar la pista libre?",
+    "fr": "Quel est ton schéma de jeu préféré, comme servir large puis attaquer le court ouvert ?",
+    "it": "Qual è il tuo schema di gioco preferito, come servire esterno e attaccare il campo libero?",
+    "pt": "Qual é o teu padrão de jogo preferido, como servir aberto e atacar o campo livre?",
+    "pt_BR": "Qual é seu padrão de jogo favorito, como sacar aberto e atacar a quadra livre?"
+   }
+  },
+  {
+   "id": "tennis-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think surfaces change the way top players play?",
+    "de": "Wie verändern die Beläge deiner Meinung nach das Spiel der Topspieler?",
+    "es": "¿Cómo crees que las superficies cambian la forma de jugar de los mejores?",
+    "fr": "Selon toi, comment les surfaces changent-elles la façon de jouer des meilleurs ?",
+    "it": "Secondo te, come cambiano le superfici il modo di giocare dei migliori?",
+    "pt": "Na tua opinião, como é que os pisos mudam a forma de jogar dos melhores?",
+    "pt_BR": "Na sua opinião, como os pisos mudam o jeito de jogar dos melhores?"
+   }
+  },
+  {
+   "id": "tennis-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you prefer playing against a big hitter or a steady defender? Why?",
+    "de": "Spielst du lieber gegen einen harten Schläger oder einen beständigen Verteidiger? Warum?",
+    "es": "¿Prefieres jugar contra un pegador o contra un defensor regular? ¿Por qué?",
+    "fr": "Tu préfères jouer contre un gros frappeur ou un défenseur régulier ? Pourquoi ?",
+    "it": "Preferisci giocare contro un picchiatore o un difensore regolare? Perché?",
+    "pt": "Preferes jogar contra um batedor forte ou um defensor consistente? Porquê?",
+    "pt_BR": "Você prefere jogar contra um batedor forte ou um defensor consistente? Por quê?"
+   }
+  },
+  {
+   "id": "tennis-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your routine between points, or what would you like it to be?",
+    "de": "Wie sieht deine Routine zwischen den Punkten aus, oder wie sollte sie aussehen?",
+    "es": "¿Cuál es tu rutina entre puntos, o cuál te gustaría que fuera?",
+    "fr": "Quelle est ta routine entre les points, ou laquelle aimerais-tu avoir ?",
+    "it": "Qual è la tua routine tra un punto e l'altro, o quale vorresti avere?",
+    "pt": "Qual é a tua rotina entre pontos, ou qual gostavas que fosse?",
+    "pt_BR": "Qual é sua rotina entre os pontos, ou qual você gostaria que fosse?"
+   }
+  },
+  {
+   "id": "tennis-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which statistic tells you the most about how a match is going?",
+    "de": "Welche Statistik verrät dir am meisten über den Verlauf eines Matches?",
+    "es": "¿Qué estadística te dice más sobre cómo va un partido?",
+    "fr": "Quelle statistique t'en dit le plus sur le déroulement d'un match ?",
+    "it": "Quale statistica ti dice di più sull'andamento di una partita?",
+    "pt": "Que estatística te diz mais sobre como está a correr um jogo?",
+    "pt_BR": "Qual estatística diz mais pra você sobre como está indo uma partida?"
+   }
+  },
+  {
+   "id": "tennis-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think the Big Four era changed tennis?",
+    "de": "Wie hat die Ära der Big Four das Tennis deiner Meinung nach verändert?",
+    "es": "¿Cómo crees que la era del Big Four cambió el tenis?",
+    "fr": "Selon toi, comment l'ère du Big Four a-t-elle changé le tennis ?",
+    "it": "Secondo te, come ha cambiato il tennis l'era dei Big Four?",
+    "pt": "Na tua opinião, como é que a era do Big Four mudou o ténis?",
+    "pt_BR": "Na sua opinião, como a era do Big Four mudou o tênis?"
+   }
+  },
+  {
+   "id": "tennis-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about the return of serve as a weapon?",
+    "de": "Was hältst du vom Return als Waffe?",
+    "es": "¿Qué opinas del resto como arma?",
+    "fr": "Que penses-tu du retour de service comme arme ?",
+    "it": "Cosa pensi della risposta al servizio come arma?",
+    "pt": "O que achas da resposta ao serviço como arma?",
+    "pt_BR": "O que você acha da devolução de saque como arma?"
+   }
+  },
+  {
+   "id": "tennis-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which doubles formation or tactic do you find most clever?",
+    "de": "Welche Doppelformation oder Taktik findest du am cleversten?",
+    "es": "¿Qué formación o táctica de dobles te parece más inteligente?",
+    "fr": "Quelle formation ou tactique de double trouves-tu la plus astucieuse ?",
+    "it": "Quale formazione o tattica di doppio trovi più intelligente?",
+    "pt": "Que formação ou tática de pares achas mais inteligente?",
+    "pt_BR": "Qual formação ou tática de duplas você acha mais inteligente?"
+   }
+  },
+  {
+   "id": "tennis-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you bounce back after losing a set?",
+    "de": "Wie kommst du zurück, nachdem du einen Satz verloren hast?",
+    "es": "¿Cómo te recuperas después de perder un set?",
+    "fr": "Comment rebondis-tu après avoir perdu un set ?",
+    "it": "Come ti riprendi dopo aver perso un set?",
+    "pt": "Como é que recuperas depois de perder um set?",
+    "pt_BR": "Como você se recupera depois de perder um set?"
+   }
+  },
+  {
+   "id": "tennis-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which tournament outside the Grand Slams would you love to attend?",
+    "de": "Welches Turnier außerhalb der Grand Slams würdest du gern besuchen?",
+    "es": "¿A qué torneo fuera de los Grand Slams te encantaría ir?",
+    "fr": "À quel tournoi hors Grand Chelem aimerais-tu assister ?",
+    "it": "A quale torneo fuori dal Grande Slam ti piacerebbe assistere?",
+    "pt": "A que torneio fora do Grand Slam gostavas de assistir?",
+    "pt_BR": "Qual torneio fora dos Grand Slams você adoraria assistir de perto?"
+   }
+  },
+  {
+   "id": "tennis-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think is the most underrated shot in tennis?",
+    "de": "Was ist deiner Meinung nach der am meisten unterschätzte Schlag im Tennis?",
+    "es": "¿Cuál crees que es el golpe más infravalorado del tenis?",
+    "fr": "Selon toi, quel est le coup le plus sous-estimé du tennis ?",
+    "it": "Secondo te, qual è il colpo più sottovalutato del tennis?",
+    "pt": "Na tua opinião, qual é a pancada mais subvalorizada do ténis?",
+    "pt_BR": "Na sua opinião, qual é o golpe mais subestimado do tênis?"
+   }
+  },
+  {
+   "id": "tennis-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you adapt your game on a windy or very hot day?",
+    "de": "Wie passt du dein Spiel an einem windigen oder sehr heißen Tag an?",
+    "es": "¿Cómo adaptas tu juego en un día de viento o de mucho calor?",
+    "fr": "Comment adaptes-tu ton jeu par grand vent ou par forte chaleur ?",
+    "it": "Come adatti il tuo gioco in una giornata ventosa o molto calda?",
+    "pt": "Como adaptas o teu jogo num dia de vento ou de muito calor?",
+    "pt_BR": "Como você adapta seu jogo num dia de vento ou de muito calor?"
+   }
+  },
+  {
+   "id": "tennis-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is the smartest tactical change you have seen a player make during a match?",
+    "de": "Was ist die klügste taktische Umstellung, die du einen Spieler während eines Matches hast machen sehen?",
+    "es": "¿Cuál es el cambio táctico más inteligente que has visto hacer a un jugador durante un partido?",
+    "fr": "Quel est le changement tactique le plus malin que tu aies vu un joueur faire en plein match ?",
+    "it": "Qual è il cambio tattico più intelligente che hai visto fare a un giocatore durante una partita?",
+    "pt": "Qual foi a mudança tática mais inteligente que viste um jogador fazer durante um jogo?",
+    "pt_BR": "Qual foi a mudança tática mais inteligente que você viu um jogador fazer durante uma partida?"
+   }
+  },
+  {
+   "id": "tennis-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you choose your racket and strings, or how would you?",
+    "de": "Wie wählst du deinen Schläger und deine Saiten aus, oder wie würdest du es tun?",
+    "es": "¿Cómo eliges tu raqueta y tu cordaje, o cómo lo harías?",
+    "fr": "Comment choisis-tu ta raquette et ton cordage, ou comment le ferais-tu ?",
+    "it": "Come scegli la tua racchetta e le corde, o come lo faresti?",
+    "pt": "Como escolhes a tua raquete e o encordoamento, ou como o farias?",
+    "pt_BR": "Como você escolhe sua raquete e o encordoamento, ou como escolheria?"
+   }
+  },
+  {
+   "id": "tennis-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which classic Grand Slam final would you love to rewatch, and why?",
+    "de": "Welches klassische Grand-Slam-Finale würdest du dir gern noch einmal ansehen, und warum?",
+    "es": "¿Qué final clásica de Grand Slam te encantaría volver a ver, y por qué?",
+    "fr": "Quelle finale mythique du Grand Chelem aimerais-tu revoir, et pourquoi ?",
+    "it": "Quale finale classica del Grande Slam ti piacerebbe rivedere, e perché?",
+    "pt": "Que final clássica do Grand Slam gostavas de rever, e porquê?",
+    "pt_BR": "Qual final clássica de Grand Slam você adoraria rever, e por quê?"
+   }
+  },
+  {
+   "id": "tennis-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What makes a great doubles partnership work, in your view?",
+    "de": "Was macht deiner Meinung nach ein großartiges Doppelteam aus?",
+    "es": "En tu opinión, ¿qué hace que funcione una gran pareja de dobles?",
+    "fr": "Selon toi, qu'est-ce qui fait fonctionner une grande paire de double ?",
+    "it": "Secondo te, cosa fa funzionare una grande coppia di doppio?",
+    "pt": "Na tua opinião, o que faz funcionar uma grande dupla de pares?",
+    "pt_BR": "Na sua opinião, o que faz uma grande dupla funcionar?"
+   }
+  },
+  {
+   "id": "tennis-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you like to play in a local league or tournament? What would you expect?",
+    "de": "Würdest du gern in einer lokalen Liga oder einem Turnier spielen? Was würdest du erwarten?",
+    "es": "¿Te gustaría jugar en una liga o torneo local? ¿Qué esperarías?",
+    "fr": "Aimerais-tu jouer dans une ligue ou un tournoi local ? À quoi t'attendrais-tu ?",
+    "it": "Ti piacerebbe giocare in un campionato o torneo locale? Cosa ti aspetteresti?",
+    "pt": "Gostavas de jogar numa liga ou torneio local? O que esperarias?",
+    "pt_BR": "Você gostaria de jogar numa liga ou torneio local? O que esperaria?"
+   }
+  },
+  {
+   "id": "tennis-084",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you build a match plan against a lefty with a heavy topspin forehand?",
+    "de": "Wie würdest du einen Matchplan gegen einen Linkshänder mit schwerer Topspin-Vorhand aufbauen?",
+    "es": "¿Cómo prepararías un plan de partido contra un zurdo con una derecha de mucho efecto liftado?",
+    "fr": "Comment construirais-tu un plan de jeu contre un gaucher au coup droit très lifté ?",
+    "it": "Come costruiresti un piano partita contro un mancino con un dritto molto carico di topspin?",
+    "pt": "Como montarias um plano de jogo contra um esquerdino com uma direita de muito topspin?",
+    "pt_BR": "Como você montaria um plano de jogo contra um canhoto com um forehand de muito topspin?"
+   }
+  },
+  {
+   "id": "tennis-085",
+   "lv": "advanced",
+   "i18n": {
+    "en": "In your opinion, how should we compare champions from the wooden racket era with today's?",
+    "de": "Wie sollte man deiner Meinung nach Champions aus der Holzschläger-Ära mit den heutigen vergleichen?",
+    "es": "En tu opinión, ¿cómo deberíamos comparar a los campeones de la era de las raquetas de madera con los de hoy?",
+    "fr": "Selon toi, comment comparer les champions de l'époque des raquettes en bois à ceux d'aujourd'hui ?",
+    "it": "Secondo te, come si dovrebbero confrontare i campioni dell'era delle racchette di legno con quelli di oggi?",
+    "pt": "Na tua opinião, como devemos comparar os campeões da era das raquetes de madeira com os de hoje?",
+    "pt_BR": "Na sua opinião, como comparar os campeões da era das raquetes de madeira com os de hoje?"
+   }
+  },
+  {
+   "id": "tennis-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Why do you think serve-and-volley became rare, and could it come back?",
+    "de": "Warum ist Serve-and-Volley deiner Meinung nach selten geworden, und könnte es zurückkehren?",
+    "es": "¿Por qué crees que el saque y volea se volvió raro, y podría volver?",
+    "fr": "Pourquoi le service-volée est-il devenu rare selon toi, et pourrait-il revenir ?",
+    "it": "Perché pensi che il serve and volley sia diventato raro, e potrebbe tornare?",
+    "pt": "Porque achas que o serviço-vólei se tornou raro, e poderia voltar?",
+    "pt_BR": "Por que você acha que o saque e voleio ficou raro, e será que pode voltar?"
+   }
+  },
+  {
+   "id": "tennis-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which part of the kinetic chain do you think most players neglect on the serve?",
+    "de": "Welchen Teil der kinetischen Kette vernachlässigen die meisten Spieler deiner Meinung nach beim Aufschlag?",
+    "es": "¿Qué parte de la cadena cinética crees que la mayoría descuida en el saque?",
+    "fr": "Selon toi, quelle partie de la chaîne cinétique la plupart des joueurs négligent-ils au service ?",
+    "it": "Secondo te, quale parte della catena cinetica trascura la maggior parte dei giocatori al servizio?",
+    "pt": "Na tua opinião, que parte da cadeia cinética a maioria dos jogadores descura no serviço?",
+    "pt_BR": "Na sua opinião, qual parte da cadeia cinética a maioria dos jogadores negligencia no saque?"
+   }
+  },
+  {
+   "id": "tennis-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you use match data to find an opponent's weakness on big points?",
+    "de": "Wie würdest du Matchdaten nutzen, um die Schwäche eines Gegners bei wichtigen Punkten zu finden?",
+    "es": "¿Cómo usarías los datos de partido para encontrar la debilidad de un rival en los puntos clave?",
+    "fr": "Comment utiliserais-tu les données de match pour trouver la faiblesse d'un adversaire sur les points clés ?",
+    "it": "Come useresti i dati delle partite per trovare il punto debole di un avversario nei punti importanti?",
+    "pt": "Como usarias dados de jogo para encontrar a fraqueza de um adversário nos pontos importantes?",
+    "pt_BR": "Como você usaria dados de partidas para achar o ponto fraco de um adversário nos pontos importantes?"
+   }
+  },
+  {
+   "id": "tennis-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you think about the future of the one-handed backhand?",
+    "de": "Was denkst du über die Zukunft der einhändigen Rückhand?",
+    "es": "¿Qué piensas sobre el futuro del revés a una mano?",
+    "fr": "Que penses-tu de l'avenir du revers à une main ?",
+    "it": "Cosa pensi del futuro del rovescio a una mano?",
+    "pt": "O que pensas do futuro da esquerda a uma mão?",
+    "pt_BR": "O que você acha do futuro do backhand de uma mão?"
+   }
+  },
+  {
+   "id": "tennis-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which champion's playing style would you study first to improve your own game?",
+    "de": "Den Spielstil welches Champions würdest du zuerst studieren, um dein eigenes Spiel zu verbessern?",
+    "es": "¿El estilo de qué campeón estudiarías primero para mejorar tu propio juego?",
+    "fr": "Quel style de champion étudierais-tu en premier pour améliorer ton propre jeu ?",
+    "it": "Lo stile di quale campione studieresti per primo per migliorare il tuo gioco?",
+    "pt": "O estilo de que campeão estudarias primeiro para melhorar o teu próprio jogo?",
+    "pt_BR": "O estilo de qual campeão você estudaria primeiro para melhorar seu próprio jogo?"
+   }
+  },
+  {
+   "id": "tennis-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has string technology changed the way tennis is played, in your view?",
+    "de": "Wie hat die Saitentechnologie deiner Meinung nach die Art verändert, wie Tennis gespielt wird?",
+    "es": "En tu opinión, ¿cómo ha cambiado la tecnología de cordajes la forma de jugar al tenis?",
+    "fr": "Selon toi, comment la technologie des cordages a-t-elle changé la façon de jouer au tennis ?",
+    "it": "Secondo te, come ha cambiato la tecnologia delle corde il modo di giocare a tennis?",
+    "pt": "Na tua opinião, como é que a tecnologia de cordas mudou a forma de jogar ténis?",
+    "pt_BR": "Na sua opinião, como a tecnologia das cordas mudou o jeito de jogar tênis?"
+   }
+  },
+  {
+   "id": "tennis-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would your ideal training week look like during a competitive season?",
+    "de": "Wie sähe deine ideale Trainingswoche während einer Wettkampfsaison aus?",
+    "es": "¿Cómo sería tu semana de entrenamiento ideal durante una temporada de competición?",
+    "fr": "À quoi ressemblerait ta semaine d'entraînement idéale en pleine saison de compétition ?",
+    "it": "Come sarebbe la tua settimana di allenamento ideale durante una stagione agonistica?",
+    "pt": "Como seria a tua semana de treino ideal durante uma época de competição?",
+    "pt_BR": "Como seria sua semana de treino ideal durante uma temporada de competição?"
+   }
+  },
+  {
+   "id": "tennis-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you coach a player who wins in practice but struggles in matches?",
+    "de": "Wie würdest du einen Spieler coachen, der im Training gewinnt, aber in Matches Probleme hat?",
+    "es": "¿Cómo entrenarías a un jugador que gana en los entrenamientos pero sufre en los partidos?",
+    "fr": "Comment coacherais-tu un joueur qui brille à l'entraînement mais peine en match ?",
+    "it": "Come alleneresti un giocatore che vince in allenamento ma fatica in partita?",
+    "pt": "Como treinarias um jogador que ganha nos treinos mas tem dificuldades nos jogos?",
+    "pt_BR": "Como você treinaria um jogador que vai bem nos treinos mas sofre nas partidas?"
+   }
+  },
+  {
+   "id": "tennis-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which surface do you think best rewards complete, all-court tennis, and why?",
+    "de": "Welcher Belag belohnt deiner Meinung nach komplettes Allround-Tennis am meisten, und warum?",
+    "es": "¿Qué superficie crees que premia más el tenis completo, y por qué?",
+    "fr": "Selon toi, quelle surface récompense le mieux un tennis complet, et pourquoi ?",
+    "it": "Secondo te, quale superficie premia di più un tennis completo, e perché?",
+    "pt": "Na tua opinião, que piso recompensa mais um ténis completo, e porquê?",
+    "pt_BR": "Na sua opinião, qual piso recompensa mais um tênis completo, e por quê?"
+   }
+  },
+  {
+   "id": "tennis-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think tennis scoring creates such big momentum swings?",
+    "de": "Wie erzeugt die Tenniszählweise deiner Meinung nach so große Momentumwechsel?",
+    "es": "¿Cómo crees que el sistema de puntuación del tenis provoca cambios de dinámica tan grandes?",
+    "fr": "Selon toi, comment le comptage au tennis crée-t-il de si grands retournements de dynamique ?",
+    "it": "Secondo te, come fa il punteggio del tennis a creare cambi di inerzia così grandi?",
+    "pt": "Na tua opinião, como é que a pontuação do ténis cria viragens de dinâmica tão grandes?",
+    "pt_BR": "Na sua opinião, como a contagem do tênis cria viradas de embalo tão grandes?"
+   }
+  },
+  {
+   "id": "tennis-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you change in the professional tennis calendar, and why?",
+    "de": "Was würdest du am Profi-Tenniskalender ändern, und warum?",
+    "es": "¿Qué cambiarías del calendario del tenis profesional, y por qué?",
+    "fr": "Que changerais-tu dans le calendrier du tennis professionnel, et pourquoi ?",
+    "it": "Cosa cambieresti nel calendario del tennis professionistico, e perché?",
+    "pt": "O que mudarias no calendário do ténis profissional, e porquê?",
+    "pt_BR": "O que você mudaria no calendário do tênis profissional, e por quê?"
+   }
+  },
+  {
+   "id": "tennis-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you wrote a scouting report on your own tennis game, what would it say?",
+    "de": "Wenn du einen Scouting-Bericht über dein eigenes Tennisspiel schreiben würdest, was stünde darin?",
+    "es": "Si escribieras un informe de scouting sobre tu propio tenis, ¿qué diría?",
+    "fr": "Si tu rédigeais un rapport de scouting sur ton propre jeu, que dirait-il ?",
+    "it": "Se scrivessi un report di scouting sul tuo tennis, cosa direbbe?",
+    "pt": "Se escrevesses um relatório de observação sobre o teu próprio ténis, o que diria?",
+    "pt_BR": "Se você escrevesse um relatório de scout sobre seu próprio tênis, o que ele diria?"
+   }
+  },
+  {
+   "id": "tennis-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does the debate about the greatest player of all time mean to you?",
+    "de": "Was bedeutet dir die Debatte über den größten Spieler aller Zeiten?",
+    "es": "¿Qué significa para ti el debate sobre el mejor tenista de todos los tiempos?",
+    "fr": "Que représente pour toi le débat sur le plus grand joueur de tous les temps ?",
+    "it": "Cosa significa per te il dibattito sul più grande tennista di tutti i tempi?",
+    "pt": "O que significa para ti o debate sobre o melhor tenista de sempre?",
+    "pt_BR": "O que significa pra você o debate sobre o maior tenista de todos os tempos?"
+   }
+  },
+  {
+   "id": "tennis-099",
+   "lv": "any",
+   "i18n": {
+    "en": "What music would you listen to before stepping onto a tennis court?",
+    "de": "Welche Musik würdest du hören, bevor du auf den Tennisplatz gehst?",
+    "es": "¿Qué música escucharías antes de salir a una pista de tenis?",
+    "fr": "Quelle musique écouterais-tu avant d'entrer sur un court de tennis ?",
+    "it": "Che musica ascolteresti prima di entrare in campo a tennis?",
+    "pt": "Que música ouvirias antes de entrar num campo de ténis?",
+    "pt_BR": "Que música você ouviria antes de entrar numa quadra de tênis?"
+   }
+  },
+  {
+   "id": "tennis-100",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "When do you think it is smart to change a losing game plan, and when should you stick with it?",
+    "de": "Wann ist es klug, einen erfolglosen Matchplan zu ändern, und wann sollte man dabei bleiben?",
+    "es": "¿Cuándo crees que conviene cambiar un plan que no funciona, y cuándo mantenerlo?",
+    "fr": "Quand est-il judicieux de changer un plan de jeu perdant, et quand faut-il s'y tenir ?",
+    "it": "Quando conviene cambiare un piano di gioco che non funziona, e quando invece mantenerlo?",
+    "pt": "Quando achas que vale a pena mudar um plano de jogo que está a falhar, e quando mantê-lo?",
+    "pt_BR": "Quando você acha que vale a pena mudar um plano de jogo que não está dando certo, e quando manter?"
+   }
+  }
+ ]
+}

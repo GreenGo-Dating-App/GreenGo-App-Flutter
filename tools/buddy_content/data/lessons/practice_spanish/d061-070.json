@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 61,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Comparisons: más que, menos que",
+     "g": "Compare people, places and things with más, menos and tan.",
+     "p": [
+      "Más + adjective + que = more ... than: el café es más fuerte que el té.",
+      "Menos ... que = less ... than; tan ... como = as ... as: soy tan alto como tú.",
+      "Irregular forms: mejor (better), peor (worse), mayor (older), menor (younger)."
+     ],
+     "q": "Compare two cities you know: which is bigger, cheaper or more beautiful?",
+     "c": "Write three comparisons about your family using más, menos and tan... como."
+    },
+    "de": {
+     "t": "Vergleiche: más que, menos que",
+     "g": "Du vergleichst Menschen, Orte und Dinge mit más, menos und tan.",
+     "p": [
+      "Más + Adjektiv + que = mehr ... als: el café es más fuerte que el té.",
+      "Menos ... que = weniger ... als; tan ... como = so ... wie: soy tan alto como tú.",
+      "Unregelmäßig: mejor (besser), peor (schlechter), mayor (älter), menor (jünger)."
+     ],
+     "q": "Vergleich zwei Städte, die du kennst: Welche ist größer, billiger oder schöner?",
+     "c": "Schreib drei Vergleiche über deine Familie mit más, menos und tan... como."
+    },
+    "es": {
+     "t": "Comparaciones: más que, menos que",
+     "g": "Compara personas, lugares y cosas con más, menos y tan.",
+     "p": [
+      "Más + adjetivo + que: el café es más fuerte que el té. Con números se usa de: más de diez.",
+      "Menos... que para la inferioridad y tan... como para la igualdad: soy tan alto como tú.",
+      "Formas irregulares: mejor, peor, mayor y menor. Se dice más bueno solo para el carácter."
+     ],
+     "q": "Compara dos ciudades que conoces: ¿cuál es más grande, más barata o más bonita?",
+     "c": "Escribe tres comparaciones sobre tu familia con más, menos y tan... como."
+    },
+    "fr": {
+     "t": "Comparaisons : más que, menos que",
+     "g": "Comparer des personnes, des lieux et des choses avec más, menos et tan.",
+     "p": [
+      "Más + adjectif + que = plus ... que : el café es más fuerte que el té.",
+      "Menos ... que = moins ... que ; tan ... como = aussi ... que : soy tan alto como tú.",
+      "Formes irrégulières : mejor (meilleur), peor (pire), mayor (plus âgé), menor (plus jeune)."
+     ],
+     "q": "Compare deux villes que tu connais : laquelle est plus grande, moins chère, plus belle ?",
+     "c": "Écris trois comparaisons sur ta famille avec más, menos et tan... como."
+    },
+    "it": {
+     "t": "Comparativi: más que, menos que",
+     "g": "Confronti persone, luoghi e cose con más, menos e tan.",
+     "p": [
+      "Más + aggettivo + que = più ... di: el café es más fuerte que el té.",
+      "Menos ... que = meno ... di; tan ... como = tanto ... quanto: soy tan alto como tú.",
+      "Forme irregolari: mejor (migliore), peor (peggiore), mayor (più grande), menor (più piccolo)."
+     ],
+     "q": "Confronta due città che conosci: quale è più grande, più economica o più bella?",
+     "c": "Scrivi tre confronti sulla tua famiglia con más, menos e tan... como."
+    },
+    "pt": {
+     "t": "Comparações: más que, menos que",
+     "g": "Compara pessoas, lugares e coisas com más, menos e tan.",
+     "p": [
+      "Más + adjetivo + que = mais ... do que: el café es más fuerte que el té.",
+      "Menos ... que = menos ... do que; tan ... como = tão ... como: soy tan alto como tú.",
+      "Formas irregulares: mejor (melhor), peor (pior), mayor (mais velho), menor (mais novo)."
+     ],
+     "q": "Compara duas cidades que conheces: qual é maior, mais barata ou mais bonita?",
+     "c": "Escreve três comparações sobre a tua família com más, menos e tan... como."
+    },
+    "pt_BR": {
+     "t": "Comparações: más que, menos que",
+     "g": "Compare pessoas, lugares e coisas com más, menos e tan.",
+     "p": [
+      "Más + adjetivo + que = mais ... do que: el café es más fuerte que el té.",
+      "Menos ... que = menos ... do que; tan ... como = tão ... quanto: soy tan alto como tú.",
+      "Formas irregulares: mejor (melhor), peor (pior), mayor (mais velho), menor (mais novo)."
+     ],
+     "q": "Compare duas cidades que você conhece: qual é maior, mais barata ou mais bonita?",
+     "c": "Escreva três comparações sobre sua família com más, menos e tan... como."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "más... que",
+      "ex": "Madrid es más grande que Sevilla."
+     },
+     {
+      "w": "menos... que",
+      "ex": "El tren es menos caro que el avión."
+     },
+     {
+      "w": "tan... como",
+      "ex": "Mi hermano es tan alto como yo."
+     },
+     {
+      "w": "mejor",
+      "ex": "Esta paella es mejor que la de ayer."
+     },
+     {
+      "w": "peor",
+      "ex": "El tráfico hoy es peor que el lunes."
+     },
+     {
+      "w": "mayor / menor",
+      "ex": "Mi hermana es mayor que yo."
+     }
+    ],
+    "gram": "Más/menos + adjetivo + que; tan + adjetivo + como. Irregulares: bueno > mejor, malo > peor, grande/viejo > mayor, joven > menor."
+   }
+  },
+  {
+   "d": 62,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Superlatives: el más alto",
+     "g": "Say which thing is number one with the superlative and -ísimo.",
+     "p": [
+      "El/la + más + adjective + de: el río más largo de España (the longest river in Spain).",
+      "Use de, not en, after a superlative: la chica más simpática de la clase.",
+      "Add -ísimo for very, very: buenísimo, carísimo, guapísima. Mejor and peor work too: el mejor."
+     ],
+     "q": "What is the most beautiful place you have ever visited, and why?",
+     "c": "Write your top three: the best food, the most boring film and the nicest city you know."
+    },
+    "de": {
+     "t": "Superlative: el más alto",
+     "g": "Du sagst mit dem Superlativ und -ísimo, was die Nummer eins ist.",
+     "p": [
+      "El/la + más + Adjektiv + de: el río más largo de España (der längste Fluss Spaniens).",
+      "Nach dem Superlativ steht de, nicht en: la chica más simpática de la clase.",
+      "Mit -ísimo heißt es sehr, sehr: buenísimo, carísimo, guapísima. Auch el mejor, el peor."
+     ],
+     "q": "Was ist der schönste Ort, den du je besucht hast, und warum?",
+     "c": "Schreib deine Top drei: das beste Essen, der langweiligste Film, die netteste Stadt."
+    },
+    "es": {
+     "t": "Superlativos: el más alto",
+     "g": "Di qué es lo número uno con el superlativo y con -ísimo.",
+     "p": [
+      "El/la + más + adjetivo + de: el río más largo de España. El nombre puede ir en medio.",
+      "Detrás del superlativo va de, no en: la chica más simpática de la clase.",
+      "El superlativo absoluto con -ísimo intensifica: buenísimo, carísimo, riquísimo, poquísimo."
+     ],
+     "q": "¿Cuál es el lugar más bonito que has visitado y por qué te gustó tanto?",
+     "c": "Escribe tu podio: la mejor comida, la película más aburrida y la ciudad más agradable."
+    },
+    "fr": {
+     "t": "Superlatifs : el más alto",
+     "g": "Dire ce qui est numéro un avec le superlatif et -ísimo.",
+     "p": [
+      "El/la + más + adjectif + de : el río más largo de España (le plus long fleuve d'Espagne).",
+      "Après un superlatif, on met de, pas en : la chica más simpática de la clase.",
+      "Ajoute -ísimo pour dire très très : buenísimo, carísimo, guapísima. Et aussi el mejor."
+     ],
+     "q": "Quel est le plus bel endroit que tu as visité, et pourquoi ?",
+     "c": "Écris ton top trois : le meilleur plat, le film le plus ennuyeux, la ville la plus sympa."
+    },
+    "it": {
+     "t": "Superlativi: el más alto",
+     "g": "Dici cosa è il numero uno con il superlativo e con -ísimo.",
+     "p": [
+      "El/la + más + aggettivo + de: el río más largo de España (il fiume più lungo della Spagna).",
+      "Dopo il superlativo si usa de, non en: la chica más simpática de la clase.",
+      "Con -ísimo dici molto molto: buenísimo, carísimo, guapísima. Anche el mejor, el peor."
+     ],
+     "q": "Qual è il posto più bello che hai mai visitato e perché?",
+     "c": "Scrivi la tua top tre: il cibo migliore, il film più noioso, la città più simpatica."
+    },
+    "pt": {
+     "t": "Superlativos: el más alto",
+     "g": "Diz qual é o número um com o superlativo e com -ísimo.",
+     "p": [
+      "El/la + más + adjetivo + de: el río más largo de España (o rio mais longo de Espanha).",
+      "Depois do superlativo usa-se de, não en: la chica más simpática de la clase.",
+      "Com -ísimo dizes muito, muito: buenísimo, carísimo, guapísima. E também el mejor."
+     ],
+     "q": "Qual é o lugar mais bonito que já visitaste e porquê?",
+     "c": "Escreve o teu top três: a melhor comida, o filme mais aborrecido e a cidade mais simpática."
+    },
+    "pt_BR": {
+     "t": "Superlativos: el más alto",
+     "g": "Diga qual é o número um com o superlativo e com -ísimo.",
+     "p": [
+      "El/la + más + adjetivo + de: el río más largo de España (o rio mais longo da Espanha).",
+      "Depois do superlativo vem de, não en: la chica más simpática de la clase.",
+      "Com -ísimo você diz muito, muito: buenísimo, carísimo, guapísima. E também el mejor."
+     ],
+     "q": "Qual é o lugar mais bonito que você já visitou e por quê?",
+     "c": "Escreva seu top três: a melhor comida, o filme mais chato e a cidade mais legal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el más alto",
+      "ex": "Pablo es el más alto de la clase."
+     },
+     {
+      "w": "la más bonita",
+      "ex": "Es la playa más bonita de la isla."
+     },
+     {
+      "w": "el mejor",
+      "ex": "Este es el mejor restaurante del barrio."
+     },
+     {
+      "w": "la peor",
+      "ex": "Fue la peor película del año."
+     },
+     {
+      "w": "buenísimo",
+      "ex": "El pan de esta panadería está buenísimo."
+     },
+     {
+      "w": "carísimo",
+      "ex": "Ese reloj es carísimo."
+     }
+    ],
+    "gram": "Superlativo: el/la/los/las + (nombre) + más + adjetivo + de: la ciudad más grande del país. Absoluto: -ísimo: buenísimo, grandísimo."
+   }
+  },
+  {
+   "d": 63,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Muy or mucho?",
+     "g": "Choose correctly between muy and mucho.",
+     "p": [
+      "Muy (very) goes before adjectives and adverbs: muy rico, muy cerca, muy bien.",
+      "Mucho before a noun agrees with it: mucho trabajo, mucha gente, muchos libros.",
+      "After a verb, mucho never changes: me gusta mucho, llueve mucho. Never say muy mucho!"
+     ],
+     "q": "What do you like very much, and what do you have a lot of at the moment?",
+     "c": "Write four sentences: two with muy and two with mucho about your week."
+    },
+    "de": {
+     "t": "Muy oder mucho?",
+     "g": "Du wählst richtig zwischen muy und mucho.",
+     "p": [
+      "Muy (sehr) steht vor Adjektiven und Adverbien: muy rico, muy cerca, muy bien.",
+      "Mucho vor Nomen passt sich an: mucho trabajo, mucha gente, muchos libros.",
+      "Nach dem Verb bleibt mucho gleich: me gusta mucho, llueve mucho. Nie muy mucho!"
+     ],
+     "q": "Was magst du sehr, und wovon hast du gerade viel?",
+     "c": "Schreib vier Sätze über deine Woche: zwei mit muy, zwei mit mucho."
+    },
+    "es": {
+     "t": "¿Muy o mucho?",
+     "g": "Elige bien entre muy y mucho, un error típico de quien aprende.",
+     "p": [
+      "Muy va delante de adjetivos y adverbios: muy rico, muy cerca, muy bien.",
+      "Mucho delante de un nombre concuerda: mucho trabajo, mucha gente, muchos libros.",
+      "Detrás del verbo, mucho no cambia: me gusta mucho. Ojo: mejor, peor, más y menos van con mucho."
+     ],
+     "q": "¿Qué te gusta mucho y de qué tienes mucho últimamente?",
+     "c": "Escribe cuatro frases sobre tu semana: dos con muy y dos con mucho."
+    },
+    "fr": {
+     "t": "Muy ou mucho ?",
+     "g": "Bien choisir entre muy et mucho.",
+     "p": [
+      "Muy (très) se place devant un adjectif ou un adverbe : muy rico, muy cerca, muy bien.",
+      "Mucho devant un nom s'accorde : mucho trabajo, mucha gente, muchos libros.",
+      "Après un verbe, mucho ne change pas : me gusta mucho, llueve mucho. Jamais muy mucho !"
+     ],
+     "q": "Qu'est-ce que tu aimes beaucoup, et de quoi as-tu beaucoup en ce moment ?",
+     "c": "Écris quatre phrases sur ta semaine : deux avec muy, deux avec mucho."
+    },
+    "it": {
+     "t": "Muy o mucho?",
+     "g": "Scegli bene tra muy e mucho.",
+     "p": [
+      "Muy (molto) va davanti ad aggettivi e avverbi: muy rico, muy cerca, muy bien.",
+      "Mucho davanti a un nome si accorda: mucho trabajo, mucha gente, muchos libros.",
+      "Dopo un verbo mucho non cambia: me gusta mucho, llueve mucho. Mai muy mucho!"
+     ],
+     "q": "Cosa ti piace molto e di cosa hai tanto in questo periodo?",
+     "c": "Scrivi quattro frasi sulla tua settimana: due con muy e due con mucho."
+    },
+    "pt": {
+     "t": "Muy ou mucho?",
+     "g": "Escolhe bem entre muy e mucho.",
+     "p": [
+      "Muy (muito) vem antes de adjetivos e advérbios: muy rico, muy cerca, muy bien.",
+      "Mucho antes de um nome concorda: mucho trabajo, mucha gente, muchos libros.",
+      "Depois do verbo, mucho não muda: me gusta mucho, llueve mucho. Nunca muy mucho!"
+     ],
+     "q": "De que gostas muito e de que tens muito neste momento?",
+     "c": "Escreve quatro frases sobre a tua semana: duas com muy e duas com mucho."
+    },
+    "pt_BR": {
+     "t": "Muy ou mucho?",
+     "g": "Escolha certo entre muy e mucho, que em português são os dois muito.",
+     "p": [
+      "Muy vem antes de adjetivos e advérbios: muy rico, muy cerca, muy bien.",
+      "Mucho antes de substantivo concorda: mucho trabajo, mucha gente, muchos libros.",
+      "Depois do verbo, mucho não muda: me gusta mucho, llueve mucho. Nunca muy mucho!"
+     ],
+     "q": "Do que você gosta muito e do que tem muito agora?",
+     "c": "Escreva quatro frases sobre sua semana: duas com muy e duas com mucho."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "muy",
+      "ex": "La sopa está muy rica."
+     },
+     {
+      "w": "mucho",
+      "ex": "Hoy tengo mucho trabajo."
+     },
+     {
+      "w": "mucha",
+      "ex": "Hay mucha gente en la plaza."
+     },
+     {
+      "w": "muchos",
+      "ex": "Tengo muchos amigos en Valencia."
+     },
+     {
+      "w": "muy bien",
+      "ex": "Hablas español muy bien."
+     },
+     {
+      "w": "trabajar mucho",
+      "ex": "Mi padre trabaja mucho."
+     }
+    ],
+    "gram": "Muy + adjetivo o adverbio: muy rico, muy bien. Mucho/a/os/as + nombre: mucha agua. Verbo + mucho (invariable): estudio mucho."
+   }
+  },
+  {
+   "d": 64,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing places",
+     "g": "Describe your city or village with useful adjectives.",
+     "p": [
+      "Adjectives: bonito, tranquilo, ruidoso (noisy), moderno, antiguo (old), animado (lively).",
+      "Use ser to say what a place is like: mi ciudad es tranquila y bastante moderna.",
+      "Combine with hay and estar: hay muchos parques; está cerca del mar."
+     ],
+     "q": "What is your town like? Is it quiet or lively, old or modern?",
+     "c": "Describe your neighbourhood in four sentences using ser, hay and estar."
+    },
+    "de": {
+     "t": "Orte beschreiben",
+     "g": "Du beschreibst deine Stadt oder dein Dorf mit nützlichen Adjektiven.",
+     "p": [
+      "Adjektive: bonito, tranquilo, ruidoso (laut), moderno, antiguo (alt), animado (lebhaft).",
+      "Mit ser sagst du, wie ein Ort ist: mi ciudad es tranquila y bastante moderna.",
+      "Kombinier mit hay und estar: hay muchos parques; está cerca del mar."
+     ],
+     "q": "Wie ist dein Wohnort? Ruhig oder lebhaft, alt oder modern?",
+     "c": "Beschreib dein Viertel in vier Sätzen mit ser, hay und estar."
+    },
+    "es": {
+     "t": "Describir lugares",
+     "g": "Describe tu ciudad o tu pueblo con adjetivos útiles y variados.",
+     "p": [
+      "Adjetivos: bonito, tranquilo, ruidoso, moderno, antiguo, animado, acogedor, limpio.",
+      "Ser para cómo es: mi ciudad es tranquila. Estar para cómo está ahora: hoy la playa está llena.",
+      "Hay para lo que existe y estar para dónde: hay muchos parques; está cerca del mar."
+     ],
+     "q": "¿Cómo es tu ciudad o tu pueblo? ¿Es tranquilo o animado, antiguo o moderno?",
+     "c": "Describe tu barrio en cuatro frases usando ser, hay y estar."
+    },
+    "fr": {
+     "t": "Décrire des lieux",
+     "g": "Décrire ta ville ou ton village avec des adjectifs utiles.",
+     "p": [
+      "Adjectifs : bonito, tranquilo, ruidoso (bruyant), moderno, antiguo (ancien), animado.",
+      "Avec ser, tu dis comment est un lieu : mi ciudad es tranquila y bastante moderna.",
+      "Combine avec hay et estar : hay muchos parques ; está cerca del mar."
+     ],
+     "q": "Comment est ta ville ? Calme ou animée, ancienne ou moderne ?",
+     "c": "Décris ton quartier en quatre phrases avec ser, hay et estar."
+    },
+    "it": {
+     "t": "Descrivere luoghi",
+     "g": "Descrivi la tua città o il tuo paese con aggettivi utili.",
+     "p": [
+      "Aggettivi: bonito, tranquilo, ruidoso (rumoroso), moderno, antiguo (antico), animado (vivace).",
+      "Con ser dici com'è un luogo: mi ciudad es tranquila y bastante moderna.",
+      "Combina con hay ed estar: hay muchos parques; está cerca del mar."
+     ],
+     "q": "Com'è la tua città? Tranquilla o vivace, antica o moderna?",
+     "c": "Descrivi il tuo quartiere in quattro frasi con ser, hay ed estar."
+    },
+    "pt": {
+     "t": "Descrever lugares",
+     "g": "Descreve a tua cidade ou aldeia com adjetivos úteis.",
+     "p": [
+      "Adjetivos: bonito, tranquilo, ruidoso (barulhento), moderno, antiguo (antigo), animado.",
+      "Com ser dizes como é um lugar: mi ciudad es tranquila y bastante moderna.",
+      "Junta hay e estar: hay muchos parques; está cerca del mar."
+     ],
+     "q": "Como é a tua terra? É tranquila ou animada, antiga ou moderna?",
+     "c": "Descreve o teu bairro em quatro frases com ser, hay e estar."
+    },
+    "pt_BR": {
+     "t": "Descrevendo lugares",
+     "g": "Descreva sua cidade com adjetivos úteis.",
+     "p": [
+      "Adjetivos: bonito, tranquilo, ruidoso (barulhento), moderno, antiguo (antigo), animado.",
+      "Com ser você diz como é um lugar: mi ciudad es tranquila y bastante moderna.",
+      "Junte hay e estar: hay muchos parques; está cerca del mar."
+     ],
+     "q": "Como é a sua cidade? Tranquila ou agitada, antiga ou moderna?",
+     "c": "Descreva seu bairro em quatro frases com ser, hay e estar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bonito",
+      "ex": "Mi pueblo es pequeño pero muy bonito."
+     },
+     {
+      "w": "tranquilo",
+      "ex": "Vivo en un barrio tranquilo."
+     },
+     {
+      "w": "ruidoso",
+      "ex": "El centro es ruidoso por la noche."
+     },
+     {
+      "w": "moderno",
+      "ex": "Hay un museo moderno junto al río."
+     },
+     {
+      "w": "antiguo",
+      "ex": "La catedral es muy antigua."
+     },
+     {
+      "w": "animado",
+      "ex": "La plaza está animada los sábados."
+     }
+    ],
+    "gram": "Ser + adjetivo para describir cómo es un lugar: es bonito. Hay para lo que existe: hay un parque. Estar para la ubicación: está en el norte."
+   }
+  },
+  {
+   "d": 65,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Animals and pets",
+     "g": "Talk about animals and the pets you have or would love to have.",
+     "p": [
+      "Pets and animals: el perro, el gato, el pájaro, el caballo, el conejo, el pez.",
+      "Say what you have with tener: tengo un perro que se llama Luna. Una mascota = a pet.",
+      "For likes, use the plural with the article: me encantan los gatos, no me gustan las arañas."
+     ],
+     "q": "Do you have a pet? If not, which animal would you like to have?",
+     "c": "Describe a pet you know: its name, its colour, its character and what it likes."
+    },
+    "de": {
+     "t": "Tiere und Haustiere",
+     "g": "Du sprichst über Tiere und Haustiere, die du hast oder gern hättest.",
+     "p": [
+      "Tiere: el perro, el gato, el pájaro, el caballo, el conejo, el pez (Fisch).",
+      "Mit tener sagst du, was du hast: tengo un perro que se llama Luna. Una mascota = Haustier.",
+      "Bei Vorlieben Plural mit Artikel: me encantan los gatos, no me gustan las arañas."
+     ],
+     "q": "Hast du ein Haustier? Wenn nicht, welches Tier hättest du gern?",
+     "c": "Beschreib ein Haustier, das du kennst: Name, Farbe, Charakter und was es mag."
+    },
+    "es": {
+     "t": "Animales y mascotas",
+     "g": "Habla de los animales que te gustan y de tus mascotas.",
+     "p": [
+      "Animales: el perro, el gato, el pájaro, el caballo, el conejo, el pez (vivo) y el pescado (comida).",
+      "Tengo un perro que se llama Luna. Mascota es la palabra común; en España también animal de compañía.",
+      "Para hablar en general, plural con artículo: me encantan los gatos, me dan miedo las arañas."
+     ],
+     "q": "¿Tienes mascota? Si no, ¿qué animal te gustaría tener y por qué?",
+     "c": "Describe una mascota que conoces: nombre, color, carácter y lo que le gusta."
+    },
+    "fr": {
+     "t": "Animaux et animaux de compagnie",
+     "g": "Parler des animaux et de ceux que tu as ou aimerais avoir.",
+     "p": [
+      "Animaux : el perro, el gato, el pájaro, el caballo, el conejo, el pez (poisson).",
+      "Avec tener : tengo un perro que se llama Luna. Una mascota = un animal de compagnie.",
+      "Pour les goûts, pluriel avec article : me encantan los gatos, no me gustan las arañas."
+     ],
+     "q": "As-tu un animal ? Sinon, lequel aimerais-tu avoir ?",
+     "c": "Décris un animal que tu connais : son nom, sa couleur, son caractère et ce qu'il aime."
+    },
+    "it": {
+     "t": "Animali e animali domestici",
+     "g": "Parli degli animali e di quelli che hai o vorresti avere.",
+     "p": [
+      "Animali: el perro (cane), el gato, el pájaro (uccello), el caballo, el conejo, el pez (pesce).",
+      "Con tener dici cosa hai: tengo un perro que se llama Luna. Una mascota = animale domestico.",
+      "Per i gusti usa il plurale con articolo: me encantan los gatos, no me gustan las arañas."
+     ],
+     "q": "Hai un animale? Se no, quale ti piacerebbe avere?",
+     "c": "Descrivi un animale che conosci: nome, colore, carattere e cosa gli piace."
+    },
+    "pt": {
+     "t": "Animais de estimação",
+     "g": "Fala dos animais e dos que tens ou gostavas de ter.",
+     "p": [
+      "Animais: el perro (cão), el gato, el pájaro, el caballo, el conejo (coelho), el pez (peixe).",
+      "Com tener dizes o que tens: tengo un perro que se llama Luna. Una mascota = animal de estimação.",
+      "Para gostos usa o plural com artigo: me encantan los gatos, no me gustan las arañas."
+     ],
+     "q": "Tens um animal? Se não, qual gostavas de ter?",
+     "c": "Descreve um animal que conheces: nome, cor, feitio e o que gosta de fazer."
+    },
+    "pt_BR": {
+     "t": "Animais e bichos de estimação",
+     "g": "Fale dos animais e dos bichos que você tem ou gostaria de ter.",
+     "p": [
+      "Animais: el perro (cachorro), el gato, el pájaro, el caballo, el conejo, el pez (peixe).",
+      "Com tener você diz o que tem: tengo un perro que se llama Luna. Una mascota = pet.",
+      "Para gostos use o plural com artigo: me encantan los gatos, no me gustan las arañas."
+     ],
+     "q": "Você tem um pet? Se não, qual animal gostaria de ter?",
+     "c": "Descreva um bicho que você conhece: nome, cor, jeito e do que ele gosta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el perro",
+      "ex": "Mi perro se llama Toby."
+     },
+     {
+      "w": "el gato",
+      "ex": "El gato duerme en el sofá."
+     },
+     {
+      "w": "el pájaro",
+      "ex": "Hay un pájaro en el árbol."
+     },
+     {
+      "w": "el caballo",
+      "ex": "Mi prima monta a caballo."
+     },
+     {
+      "w": "el conejo",
+      "ex": "Tenemos un conejo blanco."
+     },
+     {
+      "w": "la mascota",
+      "ex": "¿Tienes mascota?"
+     }
+    ],
+    "gram": "Tener + mascota: tengo un gato. Para gustos: me encantan los perros (artículo + plural en general). Pasear al perro."
+   }
+  },
+  {
+   "d": 66,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Nature words",
+     "g": "Describe landscapes you love with key nature words.",
+     "p": [
+      "Nature: el río, la montaña, la playa, el bosque (forest), el lago, la isla, el mar.",
+      "Movement with ir a: voy a la playa; location with estar en: estoy en la montaña.",
+      "Combine with comparisons: prefiero la montaña porque es más tranquila que la playa."
+     ],
+     "q": "Beach or mountains? Tell me about your favourite landscape.",
+     "c": "Describe a place in nature you love in three sentences with hay, es and está."
+    },
+    "de": {
+     "t": "Wörter aus der Natur",
+     "g": "Du beschreibst Landschaften, die du liebst, mit Naturwörtern.",
+     "p": [
+      "Natur: el río (Fluss), la montaña, la playa, el bosque (Wald), el lago, la isla, el mar.",
+      "Richtung mit ir a: voy a la playa; Ort mit estar en: estoy en la montaña.",
+      "Mit Vergleichen: prefiero la montaña porque es más tranquila que la playa."
+     ],
+     "q": "Strand oder Berge? Erzähl mir von deiner Lieblingslandschaft.",
+     "c": "Beschreib einen Ort in der Natur in drei Sätzen mit hay, es und está."
+    },
+    "es": {
+     "t": "Palabras de la naturaleza",
+     "g": "Describe los paisajes que te gustan con palabras de la naturaleza.",
+     "p": [
+      "Naturaleza: el río, la montaña, la playa, el bosque, el lago, la isla, el mar, el desierto, la selva.",
+      "Movimiento con ir a: voy a la playa; lugar con estar en: estoy en la montaña.",
+      "El mundo hispano tiene de todo: los Andes, el desierto de Atacama, las islas Canarias o la Amazonía."
+     ],
+     "q": "¿Playa o montaña? Háblame de tu paisaje favorito.",
+     "c": "Describe un lugar de la naturaleza que te encanta en tres frases con hay, es y está."
+    },
+    "fr": {
+     "t": "Mots de la nature",
+     "g": "Décrire les paysages que tu aimes avec des mots de la nature.",
+     "p": [
+      "Nature : el río (rivière), la montaña, la playa, el bosque (forêt), el lago, la isla, el mar.",
+      "Le mouvement avec ir a : voy a la playa ; le lieu avec estar en : estoy en la montaña.",
+      "Avec des comparaisons : prefiero la montaña porque es más tranquila que la playa."
+     ],
+     "q": "Plage ou montagne ? Parle-moi de ton paysage préféré.",
+     "c": "Décris un lieu de nature que tu aimes en trois phrases avec hay, es et está."
+    },
+    "it": {
+     "t": "Parole della natura",
+     "g": "Descrivi i paesaggi che ami con le parole della natura.",
+     "p": [
+      "Natura: el río (fiume), la montaña, la playa (spiaggia), el bosque, el lago, la isla, el mar.",
+      "Movimento con ir a: voy a la playa; luogo con estar en: estoy en la montaña.",
+      "Con i confronti: prefiero la montaña porque es más tranquila que la playa."
+     ],
+     "q": "Mare o montagna? Raccontami il tuo paesaggio preferito.",
+     "c": "Descrivi un luogo nella natura che ami in tre frasi con hay, es ed está."
+    },
+    "pt": {
+     "t": "Palavras da natureza",
+     "g": "Descreve as paisagens de que gostas com palavras da natureza.",
+     "p": [
+      "Natureza: el río, la montaña, la playa (praia), el bosque (floresta), el lago, la isla, el mar.",
+      "Movimento com ir a: voy a la playa; lugar com estar en: estoy en la montaña.",
+      "Com comparações: prefiero la montaña porque es más tranquila que la playa."
+     ],
+     "q": "Praia ou montanha? Fala-me da tua paisagem preferida.",
+     "c": "Descreve um lugar na natureza de que gostas em três frases com hay, es e está."
+    },
+    "pt_BR": {
+     "t": "Palavras da natureza",
+     "g": "Descreva as paisagens que você ama com palavras da natureza.",
+     "p": [
+      "Natureza: el río, la montaña, la playa (praia), el bosque (floresta), el lago, la isla, el mar.",
+      "Movimento com ir a: voy a la playa; lugar com estar en: estoy en la montaña.",
+      "Com comparações: prefiero la montaña porque es más tranquila que la playa."
+     ],
+     "q": "Praia ou montanha? Me conte sobre sua paisagem favorita.",
+     "c": "Descreva um lugar na natureza que você ama em três frases com hay, es e está."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el río",
+      "ex": "El río pasa por el centro de la ciudad."
+     },
+     {
+      "w": "la montaña",
+      "ex": "En verano subimos a la montaña."
+     },
+     {
+      "w": "la playa",
+      "ex": "La playa está a cinco minutos."
+     },
+     {
+      "w": "el bosque",
+      "ex": "Paseamos por el bosque los domingos."
+     },
+     {
+      "w": "el lago",
+      "ex": "El agua del lago está fría."
+     },
+     {
+      "w": "la isla",
+      "ex": "Mallorca es una isla preciosa."
+     }
+    ],
+    "gram": "Ir a la playa / a la montaña; estar en la playa. Me gusta más el mar que la montaña. Hay un lago cerca de mi casa."
+   }
+  },
+  {
+   "d": 67,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Making plans and invitations",
+     "g": "Invite people and arrange to meet in Spanish.",
+     "p": [
+      "Invite with ¿Quieres venir? or ¿Te apetece...? (Do you fancy...?): ¿Te apetece ir al cine?",
+      "Quedar means to meet up: ¿Quedamos a las ocho? ¿Dónde quedamos?",
+      "Suggest with ¿Por qué no...? or ¿Vamos a...?: ¿Por qué no cenamos juntos?"
+     ],
+     "q": "Invite me to do something this weekend. Where and when do we meet?",
+     "c": "Write a text inviting a friend: activity, day, time and meeting place."
+    },
+    "de": {
+     "t": "Pläne und Einladungen",
+     "g": "Du lädst Leute ein und verabredest dich auf Spanisch.",
+     "p": [
+      "Einladen mit ¿Quieres venir? oder ¿Te apetece...? (Hast du Lust auf...?).",
+      "Quedar heißt sich treffen: ¿Quedamos a las ocho? ¿Dónde quedamos?",
+      "Vorschlagen mit ¿Por qué no...? oder ¿Vamos a...?: ¿Por qué no cenamos juntos?"
+     ],
+     "q": "Lad mich zu etwas am Wochenende ein. Wo und wann treffen wir uns?",
+     "c": "Schreib eine Nachricht mit Einladung: Aktivität, Tag, Uhrzeit und Treffpunkt."
+    },
+    "es": {
+     "t": "Hacer planes e invitar",
+     "g": "Invita a otras personas y queda con ellas con naturalidad.",
+     "p": [
+      "Para invitar: ¿Quieres venir? o ¿Te apetece...? En América se oye más ¿Tienes ganas de...?",
+      "Quedar es citarse: ¿Quedamos a las ocho? ¿Dónde quedamos? En México se dice también vernos.",
+      "Para proponer: ¿Por qué no...? o ¿Vamos a...?: ¿Por qué no cenamos juntos el viernes?"
+     ],
+     "q": "Invítame a hacer algo este fin de semana. ¿Dónde y a qué hora quedamos?",
+     "c": "Escribe un mensaje para invitar a un amigo: plan, día, hora y lugar de encuentro."
+    },
+    "fr": {
+     "t": "Faire des plans et inviter",
+     "g": "Inviter des gens et fixer un rendez-vous en espagnol.",
+     "p": [
+      "Pour inviter : ¿Quieres venir? ou ¿Te apetece...? (Ça te dit... ?).",
+      "Quedar veut dire se retrouver : ¿Quedamos a las ocho? ¿Dónde quedamos?",
+      "Pour proposer : ¿Por qué no...? ou ¿Vamos a...? : ¿Por qué no cenamos juntos?"
+     ],
+     "q": "Invite-moi à faire quelque chose ce week-end. Où et quand se retrouve-t-on ?",
+     "c": "Écris un message pour inviter un ami : activité, jour, heure et lieu de rendez-vous."
+    },
+    "it": {
+     "t": "Fare piani e invitare",
+     "g": "Inviti qualcuno e ti dai appuntamento in spagnolo.",
+     "p": [
+      "Per invitare: ¿Quieres venir? o ¿Te apetece...? (Ti va...?).",
+      "Quedar vuol dire vedersi: ¿Quedamos a las ocho? ¿Dónde quedamos?",
+      "Per proporre: ¿Por qué no...? o ¿Vamos a...?: ¿Por qué no cenamos juntos?"
+     ],
+     "q": "Invitami a fare qualcosa questo fine settimana. Dove e quando ci vediamo?",
+     "c": "Scrivi un messaggio per invitare un amico: attività, giorno, ora e luogo."
+    },
+    "pt": {
+     "t": "Fazer planos e convidar",
+     "g": "Convida pessoas e combina encontros em espanhol.",
+     "p": [
+      "Para convidar: ¿Quieres venir? ou ¿Te apetece...? (Apetece-te...?).",
+      "Quedar quer dizer combinar encontro: ¿Quedamos a las ocho? ¿Dónde quedamos?",
+      "Para sugerir: ¿Por qué no...? ou ¿Vamos a...?: ¿Por qué no cenamos juntos?"
+     ],
+     "q": "Convida-me para fazer algo este fim de semana. Onde e quando nos encontramos?",
+     "c": "Escreve uma mensagem a convidar um amigo: atividade, dia, hora e local."
+    },
+    "pt_BR": {
+     "t": "Fazendo planos e convites",
+     "g": "Convide pessoas e marque encontros em espanhol.",
+     "p": [
+      "Para convidar: ¿Quieres venir? ou ¿Te apetece...? (Está a fim de...?).",
+      "Quedar quer dizer combinar de se encontrar: ¿Quedamos a las ocho? ¿Dónde quedamos?",
+      "Para sugerir: ¿Por qué no...? ou ¿Vamos a...?: ¿Por qué no cenamos juntos?"
+     ],
+     "q": "Me convide para fazer algo neste fim de semana. Onde e quando a gente se encontra?",
+     "c": "Escreva uma mensagem convidando um amigo: atividade, dia, hora e ponto de encontro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Quieres venir?",
+      "ex": "Vamos al cine, ¿quieres venir?"
+     },
+     {
+      "w": "¿Te apetece...?",
+      "ex": "¿Te apetece un café esta tarde?"
+     },
+     {
+      "w": "quedar",
+      "ex": "¿Quedamos el sábado?"
+     },
+     {
+      "w": "¿A qué hora?",
+      "ex": "¿A qué hora quedamos?"
+     },
+     {
+      "w": "¿Dónde quedamos?",
+      "ex": "¿Dónde quedamos, en la plaza?"
+     },
+     {
+      "w": "¿Por qué no...?",
+      "ex": "¿Por qué no vamos a la playa?"
+     }
+    ],
+    "gram": "Invitar: ¿Quieres + infinitivo? ¿Te apetece + infinitivo/nombre? Quedar = citarse: ¿Quedamos a las ocho? Quedamos en la plaza."
+   }
+  },
+  {
+   "d": 68,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Accepting and declining",
+     "g": "Answer invitations kindly, whether you say yes or no.",
+     "p": [
+      "Say yes: ¡Claro que sí!, ¡Genial!, ¡Vale! (OK, very common in Spain), Me encantaría.",
+      "Say no softly: Lo siento, no puedo, plus a reason with es que...: es que tengo que trabajar.",
+      "Offer another option to stay friendly: ¿Qué tal otro día? ¿Y el domingo?"
+     ],
+     "q": "I invite you to a picnic on Sunday. Do you accept or decline? Answer kindly!",
+     "c": "Write two replies to one invitation: one yes and one polite no with a reason."
+    },
+    "de": {
+     "t": "Zusagen und absagen",
+     "g": "Du antwortest freundlich auf Einladungen, ob Ja oder Nein.",
+     "p": [
+      "Zusagen: ¡Claro que sí!, ¡Genial!, ¡Vale! (OK, in Spanien sehr häufig), Me encantaría.",
+      "Sanft absagen: Lo siento, no puedo, plus Grund mit es que...: es que tengo que trabajar.",
+      "Biete etwas anderes an: ¿Qué tal otro día? ¿Y el domingo?"
+     ],
+     "q": "Ich lade dich am Sonntag zum Picknick ein. Sagst du zu oder ab? Antworte nett!",
+     "c": "Schreib zwei Antworten auf eine Einladung: ein Ja und ein höfliches Nein mit Grund."
+    },
+    "es": {
+     "t": "Aceptar y rechazar",
+     "g": "Responde a invitaciones con amabilidad, tanto si dices que sí como que no.",
+     "p": [
+      "Para aceptar: ¡Claro que sí!, ¡Genial!, ¡Vale! (muy de España), ¡Dale! (Argentina), Me encantaría.",
+      "Para rechazar con tacto: Lo siento, no puedo, y una razón con es que...: es que tengo que trabajar.",
+      "Propón otra opción para quedar bien: ¿Qué tal otro día? ¿Te va bien el domingo?"
+     ],
+     "q": "Te invito a un pícnic el domingo. ¿Aceptas o no? ¡Responde con amabilidad!",
+     "c": "Escribe dos respuestas a una invitación: un sí y un no amable con una razón."
+    },
+    "fr": {
+     "t": "Accepter et refuser",
+     "g": "Répondre gentiment aux invitations, que ce soit oui ou non.",
+     "p": [
+      "Pour accepter : ¡Claro que sí!, ¡Genial!, ¡Vale! (OK, très courant en Espagne), Me encantaría.",
+      "Pour refuser en douceur : Lo siento, no puedo, avec une raison : es que tengo que trabajar.",
+      "Propose autre chose : ¿Qué tal otro día? ¿Y el domingo?"
+     ],
+     "q": "Je t'invite à un pique-nique dimanche. Tu acceptes ou tu refuses ? Réponds gentiment !",
+     "c": "Écris deux réponses à une invitation : un oui et un non poli avec une raison."
+    },
+    "it": {
+     "t": "Accettare e rifiutare",
+     "g": "Rispondi con gentilezza agli inviti, sia con un sì che con un no.",
+     "p": [
+      "Per accettare: ¡Claro que sí!, ¡Genial!, ¡Vale! (ok, molto usato in Spagna), Me encantaría.",
+      "Per rifiutare con garbo: Lo siento, no puedo, più un motivo: es que tengo que trabajar.",
+      "Proponi un'alternativa: ¿Qué tal otro día? ¿Y el domingo?"
+     ],
+     "q": "Ti invito a un picnic domenica. Accetti o rifiuti? Rispondi con gentilezza!",
+     "c": "Scrivi due risposte a un invito: un sì e un no gentile con un motivo."
+    },
+    "pt": {
+     "t": "Aceitar e recusar",
+     "g": "Responde a convites com simpatia, quer digas sim quer não.",
+     "p": [
+      "Para aceitar: ¡Claro que sí!, ¡Genial!, ¡Vale! (ok, muito usado em Espanha), Me encantaría.",
+      "Para recusar com jeito: Lo siento, no puedo, mais uma razão: es que tengo que trabajar.",
+      "Propõe outra opção: ¿Qué tal otro día? ¿Y el domingo?"
+     ],
+     "q": "Convido-te para um piquenique no domingo. Aceitas ou recusas? Responde com simpatia!",
+     "c": "Escreve duas respostas a um convite: um sim e um não educado com uma razão."
+    },
+    "pt_BR": {
+     "t": "Aceitando e recusando",
+     "g": "Responda a convites com gentileza, dizendo sim ou não.",
+     "p": [
+      "Para aceitar: ¡Claro que sí!, ¡Genial!, ¡Vale! (ok, muito usado na Espanha), Me encantaría.",
+      "Para recusar com jeito: Lo siento, no puedo, mais um motivo: es que tengo que trabajar.",
+      "Sugira outra opção: ¿Qué tal otro día? ¿Y el domingo?"
+     ],
+     "q": "Te convido para um piquenique no domingo. Você aceita ou recusa? Responda com gentileza!",
+     "c": "Escreva duas respostas a um convite: um sim e um não educado com um motivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¡Claro que sí!",
+      "ex": "¿Vienes a la fiesta? ¡Claro que sí!"
+     },
+     {
+      "w": "¡Genial!",
+      "ex": "¡Genial! Nos vemos a las siete."
+     },
+     {
+      "w": "¡Vale!",
+      "ex": "Vale, quedamos en la plaza."
+     },
+     {
+      "w": "Lo siento, no puedo",
+      "ex": "Lo siento, no puedo, tengo clase."
+     },
+     {
+      "w": "¿Otro día?",
+      "ex": "Hoy no puedo, ¿otro día?"
+     },
+     {
+      "w": "Me encantaría",
+      "ex": "Me encantaría ir, gracias."
+     }
+    ],
+    "gram": "Aceptar: ¡Claro!, ¡Vale!, Me encantaría. Rechazar con amabilidad: Lo siento, no puedo + razón (es que tengo...) + alternativa: ¿otro día?"
+   }
+  },
+  {
+   "d": 69,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Birthdays and celebrations",
+     "g": "Learn the words to wish people well on special days.",
+     "p": [
+      "Wishes: ¡Feliz cumpleaños!, ¡Felicidades! (congratulations), ¡Feliz año nuevo!",
+      "Cumplir años = to turn an age: mañana cumplo 30. ¿Cuándo es tu cumpleaños?",
+      "Party words: el regalo, la tarta (pastel or torta in Latin America), las velas, ¡Salud! (cheers)."
+     ],
+     "q": "When is your birthday and how do you like to celebrate it?",
+     "c": "Write a short birthday message in Spanish for a friend, with a wish and a plan."
+    },
+    "de": {
+     "t": "Geburtstage und Feste",
+     "g": "Du lernst Glückwünsche für besondere Tage.",
+     "p": [
+      "Wünsche: ¡Feliz cumpleaños!, ¡Felicidades! (Glückwunsch), ¡Feliz año nuevo!",
+      "Cumplir años = ein Alter erreichen: mañana cumplo 30. ¿Cuándo es tu cumpleaños?",
+      "Partywörter: el regalo, la tarta (in Lateinamerika pastel oder torta), las velas, ¡Salud!"
+     ],
+     "q": "Wann hast du Geburtstag und wie feierst du am liebsten?",
+     "c": "Schreib einer Freundin eine kurze Geburtstagsnachricht mit Wunsch und Plan."
+    },
+    "es": {
+     "t": "Cumpleaños y celebraciones",
+     "g": "Aprende a felicitar en los días especiales y algunas costumbres.",
+     "p": [
+      "Felicitaciones: ¡Feliz cumpleaños!, ¡Felicidades!, ¡Feliz año nuevo!, ¡Enhorabuena! (por un logro).",
+      "Cumplir años: mañana cumplo 30. La tarta es pastel en México y torta en Argentina.",
+      "En España se toman doce uvas en Nochevieja; en muchos países se canta Las mañanitas o Cumpleaños feliz."
+     ],
+     "q": "¿Cuándo es tu cumpleaños y cómo te gusta celebrarlo?",
+     "c": "Escribe un mensaje de cumpleaños para un amigo, con un deseo y un plan."
+    },
+    "fr": {
+     "t": "Anniversaires et fêtes",
+     "g": "Apprendre les mots pour souhaiter de bonnes choses les jours spéciaux.",
+     "p": [
+      "Vœux : ¡Feliz cumpleaños!, ¡Felicidades! (félicitations), ¡Feliz año nuevo!",
+      "Cumplir años = avoir un âge : mañana cumplo 30. ¿Cuándo es tu cumpleaños?",
+      "La fête : el regalo, la tarta (pastel ou torta en Amérique latine), las velas, ¡Salud! (santé)."
+     ],
+     "q": "Quand est ton anniversaire et comment aimes-tu le fêter ?",
+     "c": "Écris un court message d'anniversaire à un ami, avec un vœu et un projet."
+    },
+    "it": {
+     "t": "Compleanni e feste",
+     "g": "Impari le parole per fare gli auguri nei giorni speciali.",
+     "p": [
+      "Auguri: ¡Feliz cumpleaños!, ¡Felicidades! (congratulazioni), ¡Feliz año nuevo!",
+      "Cumplir años = compiere gli anni: mañana cumplo 30. ¿Cuándo es tu cumpleaños?",
+      "La festa: el regalo, la tarta (pastel o torta in America Latina), las velas, ¡Salud! (salute)."
+     ],
+     "q": "Quando è il tuo compleanno e come ti piace festeggiarlo?",
+     "c": "Scrivi un breve messaggio di auguri a un amico, con un augurio e un piano."
+    },
+    "pt": {
+     "t": "Aniversários e festas",
+     "g": "Aprende as palavras para dar os parabéns em dias especiais.",
+     "p": [
+      "Votos: ¡Feliz cumpleaños!, ¡Felicidades! (parabéns), ¡Feliz año nuevo!",
+      "Cumplir años = fazer anos: mañana cumplo 30. ¿Cuándo es tu cumpleaños?",
+      "A festa: el regalo (presente), la tarta (bolo; pastel ou torta na América Latina), las velas."
+     ],
+     "q": "Quando fazes anos e como gostas de festejar?",
+     "c": "Escreve uma mensagem curta de aniversário a um amigo, com um desejo e um plano."
+    },
+    "pt_BR": {
+     "t": "Aniversários e comemorações",
+     "g": "Aprenda as palavras para dar parabéns em dias especiais.",
+     "p": [
+      "Votos: ¡Feliz cumpleaños!, ¡Felicidades! (parabéns), ¡Feliz año nuevo!",
+      "Cumplir años = fazer aniversário: mañana cumplo 30. ¿Cuándo es tu cumpleaños?",
+      "A festa: el regalo (presente), la tarta (bolo; pastel ou torta na América Latina), las velas."
+     ],
+     "q": "Quando é seu aniversário e como você gosta de comemorar?",
+     "c": "Escreva uma mensagem curta de aniversário para um amigo, com um desejo e um plano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¡Feliz cumpleaños!",
+      "ex": "¡Feliz cumpleaños, Marta!"
+     },
+     {
+      "w": "¡Felicidades!",
+      "ex": "¡Felicidades por tu nuevo trabajo!"
+     },
+     {
+      "w": "¡Feliz año nuevo!",
+      "ex": "¡Feliz año nuevo a todos!"
+     },
+     {
+      "w": "cumplir años",
+      "ex": "Hoy cumplo treinta años."
+     },
+     {
+      "w": "el regalo",
+      "ex": "Este regalo es para ti."
+     },
+     {
+      "w": "la tarta",
+      "ex": "Mi abuela hace la tarta de cumpleaños."
+     }
+    ],
+    "gram": "Cumplir + años: ¿Cuántos años cumples? Cumplo 25. Felicitar: ¡Feliz + celebración! o ¡Felicidades! Brindar: ¡Salud!"
+   }
+  },
+  {
+   "d": 70,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the restaurant",
+     "g": "Order a full meal in a Spanish restaurant.",
+     "p": [
+      "Ask for a table: Una mesa para dos, por favor. El menú del día = a set lunch menu.",
+      "Order by courses: de primero (starter), de segundo (main), de postre (dessert): de primero, sopa.",
+      "Useful lines: Para mí, el pollo. ¿Qué me recomienda? La cuenta, por favor."
+     ],
+     "q": "You are at a restaurant in Madrid. What do you order de primero, de segundo and de postre?",
+     "c": "Write a short dialogue with a waiter, from asking for a table to paying the bill."
+    },
+    "de": {
+     "t": "Im Restaurant",
+     "g": "Du bestellst ein ganzes Menü in einem spanischen Restaurant.",
+     "p": [
+      "Tisch: Una mesa para dos, por favor. El menú del día = Mittagsmenü mit festem Preis.",
+      "Nach Gängen bestellen: de primero (Vorspeise), de segundo (Hauptgang), de postre (Nachtisch).",
+      "Nützlich: Para mí, el pollo. ¿Qué me recomienda? La cuenta, por favor."
+     ],
+     "q": "Du bist in einem Restaurant in Madrid. Was bestellst du de primero, de segundo, de postre?",
+     "c": "Schreib einen kurzen Dialog mit dem Kellner, vom Tisch bis zur Rechnung."
+    },
+    "es": {
+     "t": "En el restaurante",
+     "g": "Pide una comida completa en un restaurante con soltura.",
+     "p": [
+      "Para pedir mesa: Una mesa para dos, por favor. El menú del día suele incluir dos platos, postre y bebida.",
+      "Se pide por platos: de primero, de segundo y de postre. Para mí, la sopa; para ella, la ensalada.",
+      "Frases útiles: ¿Qué me recomienda? ¿Me trae más pan? La cuenta, por favor. En América: el mesero."
+     ],
+     "q": "Estás en un restaurante de Madrid. ¿Qué pides de primero, de segundo y de postre?",
+     "c": "Escribe un diálogo corto con un camarero, desde pedir mesa hasta pagar."
+    },
+    "fr": {
+     "t": "Au restaurant",
+     "g": "Commander un repas complet dans un restaurant espagnol.",
+     "p": [
+      "Pour une table : Una mesa para dos, por favor. El menú del día = formule du midi à prix fixe.",
+      "On commande par plats : de primero (entrée), de segundo (plat), de postre (dessert).",
+      "Phrases utiles : Para mí, el pollo. ¿Qué me recomienda? La cuenta, por favor."
+     ],
+     "q": "Tu es dans un restaurant à Madrid. Que prends-tu de primero, de segundo et de postre ?",
+     "c": "Écris un petit dialogue avec un serveur, de la demande de table jusqu'à l'addition."
+    },
+    "it": {
+     "t": "Al ristorante",
+     "g": "Ordini un pasto completo in un ristorante spagnolo.",
+     "p": [
+      "Per un tavolo: Una mesa para dos, por favor. El menú del día = menù del giorno a prezzo fisso.",
+      "Si ordina per portate: de primero (primo), de segundo (secondo), de postre (dolce).",
+      "Frasi utili: Para mí, el pollo. ¿Qué me recomienda? La cuenta, por favor."
+     ],
+     "q": "Sei in un ristorante a Madrid. Cosa prendi de primero, de segundo e de postre?",
+     "c": "Scrivi un breve dialogo con un cameriere, dal tavolo fino al conto."
+    },
+    "pt": {
+     "t": "No restaurante",
+     "g": "Pede uma refeição completa num restaurante espanhol.",
+     "p": [
+      "Para pedir mesa: Una mesa para dos, por favor. El menú del día = prato do dia com preço fixo.",
+      "Pede-se por pratos: de primero (entrada), de segundo (prato principal), de postre (sobremesa).",
+      "Frases úteis: Para mí, el pollo. ¿Qué me recomienda? La cuenta, por favor."
+     ],
+     "q": "Estás num restaurante em Madrid. O que pedes de primero, de segundo e de postre?",
+     "c": "Escreve um pequeno diálogo com um empregado de mesa, desde a mesa até à conta."
+    },
+    "pt_BR": {
+     "t": "No restaurante",
+     "g": "Peça uma refeição completa em um restaurante espanhol.",
+     "p": [
+      "Para pedir mesa: Una mesa para dos, por favor. El menú del día = prato feito com preço fixo.",
+      "Peça por pratos: de primero (entrada), de segundo (prato principal), de postre (sobremesa).",
+      "Frases úteis: Para mí, el pollo. ¿Qué me recomienda? La cuenta, por favor."
+     ],
+     "q": "Você está em um restaurante em Madri. O que pede de primero, de segundo e de postre?",
+     "c": "Escreva um pequeno diálogo com um garçom, desde pedir a mesa até pagar a conta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "una mesa para dos",
+      "ex": "Buenas noches, una mesa para dos, por favor."
+     },
+     {
+      "w": "el menú del día",
+      "ex": "El menú del día cuesta poco y está rico."
+     },
+     {
+      "w": "de primero",
+      "ex": "De primero, quiero una ensalada."
+     },
+     {
+      "w": "de segundo",
+      "ex": "De segundo, el pescado, por favor."
+     },
+     {
+      "w": "de postre",
+      "ex": "De postre, un flan."
+     },
+     {
+      "w": "la cuenta",
+      "ex": "¿Nos trae la cuenta, por favor?"
+     }
+    ],
+    "gram": "Pedir: De primero/segundo/postre + quiero / voy a tomar + plato. Para mí, la sopa. ¿Me trae...? La cuenta, por favor."
+   }
+  }
+ ]
+}

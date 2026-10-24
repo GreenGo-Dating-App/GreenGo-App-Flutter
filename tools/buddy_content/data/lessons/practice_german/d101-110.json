@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 101,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Childhood memories",
+     "g": "Tell stories about your childhood with Als ich klein war... and the past tenses you know.",
+     "p": [
+      "Als ich klein war, ... starts a memory. The verb of the second part comes first: Als ich klein war, wohnte ich in Porto.",
+      "Use war, hatte and modal past forms for states: Ich hatte einen Hund. Ich durfte nicht allein raus.",
+      "Use the Perfekt for single events: Einmal bin ich vom Baum gefallen. Früher means in the past, back then."
+     ],
+     "q": "Als du klein warst: what did you like to play, and what were you not allowed to do?",
+     "c": "Write a short childhood memory of five sentences starting with Als ich klein war and using früher."
+    },
+    "de": {
+     "t": "Erinnerungen an die Kindheit",
+     "g": "Du erzählst Geschichten aus deiner Kindheit mit Als ich klein war... und den Vergangenheitsformen.",
+     "p": [
+      "Als ich klein war, ... leitet eine Erinnerung ein. Im zweiten Teil steht das Verb zuerst: Als ich klein war, wohnte ich in Porto.",
+      "Für Zustände benutzt du war, hatte und Modalverben: Ich hatte einen Hund. Ich durfte nicht allein raus.",
+      "Für einzelne Ereignisse das Perfekt: Einmal bin ich vom Baum gefallen. Früher heißt: in der Vergangenheit."
+     ],
+     "q": "Als du klein warst: Was hast du gern gespielt, und was durftest du nicht?",
+     "c": "Schreib eine kurze Kindheitserinnerung in fünf Sätzen, die mit Als ich klein war beginnt und früher benutzt."
+    },
+    "es": {
+     "t": "Recuerdos de infancia",
+     "g": "Cuenta historias de tu infancia con Als ich klein war... y los pasados que conoces.",
+     "p": [
+      "Als ich klein war, ... abre un recuerdo. En la segunda parte el verbo va primero: Als ich klein war, wohnte ich in Porto.",
+      "Para estados usa war, hatte y los modales en pasado: Ich hatte einen Hund. Ich durfte nicht allein raus.",
+      "Para hechos puntuales, el Perfekt: Einmal bin ich vom Baum gefallen. Früher significa antes, en aquella época."
+     ],
+     "q": "Als du klein warst: ¿a qué te gustaba jugar y qué no te dejaban hacer?",
+     "c": "Escribe un recuerdo de infancia de cinco frases que empiece con Als ich klein war y use früher."
+    },
+    "fr": {
+     "t": "Souvenirs d'enfance",
+     "g": "Raconter des souvenirs d'enfance avec Als ich klein war... et les temps du passé que tu connais.",
+     "p": [
+      "Als ich klein war, ... ouvre un souvenir. Dans la deuxième partie, le verbe vient d'abord : Als ich klein war, wohnte ich in Porto.",
+      "Pour les états, utilise war, hatte et les modaux au passé : Ich hatte einen Hund. Ich durfte nicht allein raus.",
+      "Pour un événement unique, le Perfekt : Einmal bin ich vom Baum gefallen. Früher veut dire autrefois."
+     ],
+     "q": "Als du klein warst : à quoi aimais-tu jouer, et qu'est-ce que tu n'avais pas le droit de faire ?",
+     "c": "Écris un souvenir d'enfance de cinq phrases qui commence par Als ich klein war et utilise früher."
+    },
+    "it": {
+     "t": "Ricordi d'infanzia",
+     "g": "Racconti storie della tua infanzia con Als ich klein war... e i tempi passati che conosci.",
+     "p": [
+      "Als ich klein war, ... apre un ricordo. Nella seconda parte il verbo viene prima: Als ich klein war, wohnte ich in Porto.",
+      "Per gli stati usa war, hatte e i modali al passato: Ich hatte einen Hund. Ich durfte nicht allein raus.",
+      "Per i singoli fatti il Perfekt: Einmal bin ich vom Baum gefallen. Früher significa una volta, in passato."
+     ],
+     "q": "Als du klein warst: a che cosa ti piaceva giocare e che cosa non potevi fare?",
+     "c": "Scrivi un ricordo d'infanzia di cinque frasi che cominci con Als ich klein war e usi früher."
+    },
+    "pt": {
+     "t": "Memórias de infância",
+     "g": "Contar histórias da tua infância com Als ich klein war... e os tempos do passado que conheces.",
+     "p": [
+      "Als ich klein war, ... abre uma memória. Na segunda parte o verbo vem primeiro: Als ich klein war, wohnte ich in Porto.",
+      "Para estados usa war, hatte e os modais no passado: Ich hatte einen Hund. Ich durfte nicht allein raus.",
+      "Para acontecimentos únicos, o Perfekt: Einmal bin ich vom Baum gefallen. Früher quer dizer antigamente."
+     ],
+     "q": "Als du klein warst: a que gostavas de brincar e o que não te deixavam fazer?",
+     "c": "Escreve uma memória de infância de cinco frases que comece com Als ich klein war e use früher."
+    },
+    "pt_BR": {
+     "t": "Lembranças de infância",
+     "g": "Contar histórias da sua infância com Als ich klein war... e os tempos do passado que você conhece.",
+     "p": [
+      "Als ich klein war, ... abre uma lembrança. Na segunda parte o verbo vem primeiro: Als ich klein war, wohnte ich in Porto.",
+      "Para estados use war, hatte e os modais no passado: Ich hatte einen Hund. Ich durfte nicht allein raus.",
+      "Para fatos únicos, o Perfekt: Einmal bin ich vom Baum gefallen. Früher quer dizer antigamente."
+     ],
+     "q": "Als du klein warst: do que você gostava de brincar e o que não podia fazer?",
+     "c": "Escreva uma lembrança de infância de cinco frases que comece com Als ich klein war e use früher."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "als ich klein war",
+      "ex": "Als ich klein war, hatte ich eine Katze."
+     },
+     {
+      "w": "früher",
+      "ex": "Früher habe ich auf dem Land gewohnt."
+     },
+     {
+      "w": "die Kindheit",
+      "ex": "Ich hatte eine schöne Kindheit."
+     },
+     {
+      "w": "spielen",
+      "ex": "Wir haben oft im Garten Fußball gespielt."
+     },
+     {
+      "w": "einmal",
+      "ex": "Einmal bin ich vom Fahrrad gefallen."
+     },
+     {
+      "w": "die Großeltern",
+      "ex": "In den Ferien war ich immer bei meinen Großeltern."
+     }
+    ],
+    "gram": "Als ich klein war, + Verb + Subjekt: Als ich klein war, spielte ich viel draußen. Früher hatte ich lange Haare."
+   }
+  },
+  {
+   "d": 102,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Holidays and travel",
+     "g": "Talk about holidays and travel: making plans, packing and choosing where to stay.",
+     "p": [
+      "Key phrases: Urlaub machen, verreisen, eine Reise buchen, den Koffer packen, Sehenswürdigkeiten besichtigen.",
+      "Where to stay: die Unterkunft, das Hotel, die Ferienwohnung, die Jugendherberge, der Campingplatz.",
+      "In the past: Wir haben Urlaub in Spanien gemacht. Wir haben in einer Ferienwohnung gewohnt."
+     ],
+     "q": "Tell me about a holiday you enjoyed: where did you go, where did you stay and what did you do?",
+     "c": "Write a packing list of eight things in German with articles, then one sentence about your dream trip."
+    },
+    "de": {
+     "t": "Urlaub und Reisen",
+     "g": "Du sprichst über Urlaub und Reisen: planen, Koffer packen und die passende Unterkunft finden.",
+     "p": [
+      "Wichtige Ausdrücke: Urlaub machen, verreisen, eine Reise buchen, den Koffer packen, Sehenswürdigkeiten besichtigen.",
+      "Übernachten: die Unterkunft, das Hotel, die Ferienwohnung, die Jugendherberge, der Campingplatz.",
+      "In der Vergangenheit: Wir haben Urlaub in Spanien gemacht. Wir haben in einer Ferienwohnung gewohnt."
+     ],
+     "q": "Erzähl von einem schönen Urlaub: Wohin bist du gefahren, wo hast du gewohnt, und was hast du gemacht?",
+     "c": "Schreib eine Packliste mit acht Dingen mit Artikel und dann einen Satz über deine Traumreise."
+    },
+    "es": {
+     "t": "Vacaciones y viajes",
+     "g": "Habla de vacaciones y viajes: planear, hacer la maleta y elegir alojamiento.",
+     "p": [
+      "Expresiones clave: Urlaub machen, verreisen, eine Reise buchen, den Koffer packen, Sehenswürdigkeiten besichtigen.",
+      "Alojamiento: die Unterkunft, das Hotel, die Ferienwohnung, die Jugendherberge, der Campingplatz.",
+      "En pasado: Wir haben Urlaub in Spanien gemacht. Wir haben in einer Ferienwohnung gewohnt."
+     ],
+     "q": "Háblame de unas vacaciones que disfrutaste: ¿adónde fuiste, dónde te alojaste y qué hiciste?",
+     "c": "Escribe una lista de equipaje con ocho cosas en alemán con su artículo y luego una frase sobre tu viaje soñado."
+    },
+    "fr": {
+     "t": "Vacances et voyages",
+     "g": "Parler de vacances et de voyages : organiser, faire sa valise et choisir un hébergement.",
+     "p": [
+      "Expressions clés : Urlaub machen, verreisen, eine Reise buchen, den Koffer packen, Sehenswürdigkeiten besichtigen.",
+      "Hébergement : die Unterkunft, das Hotel, die Ferienwohnung, die Jugendherberge, der Campingplatz.",
+      "Au passé : Wir haben Urlaub in Spanien gemacht. Wir haben in einer Ferienwohnung gewohnt."
+     ],
+     "q": "Parle-moi de vacances que tu as aimées : où es-tu allé, où as-tu logé et qu'as-tu fait ?",
+     "c": "Écris une liste de huit choses à mettre dans ta valise, avec l'article, puis une phrase sur ton voyage de rêve."
+    },
+    "it": {
+     "t": "Vacanze e viaggi",
+     "g": "Parli di vacanze e viaggi: organizzare, fare la valigia e scegliere l'alloggio.",
+     "p": [
+      "Espressioni chiave: Urlaub machen, verreisen, eine Reise buchen, den Koffer packen, Sehenswürdigkeiten besichtigen.",
+      "Alloggio: die Unterkunft, das Hotel, die Ferienwohnung, die Jugendherberge, der Campingplatz.",
+      "Al passato: Wir haben Urlaub in Spanien gemacht. Wir haben in einer Ferienwohnung gewohnt."
+     ],
+     "q": "Raccontami una vacanza che ti è piaciuta: dove sei andato, dove hai alloggiato e che cosa hai fatto?",
+     "c": "Scrivi una lista di otto cose da mettere in valigia con l'articolo e poi una frase sul tuo viaggio dei sogni."
+    },
+    "pt": {
+     "t": "Férias e viagens",
+     "g": "Falar de férias e viagens: planear, fazer a mala e escolher o alojamento.",
+     "p": [
+      "Expressões-chave: Urlaub machen, verreisen, eine Reise buchen, den Koffer packen, Sehenswürdigkeiten besichtigen.",
+      "Alojamento: die Unterkunft, das Hotel, die Ferienwohnung, die Jugendherberge, der Campingplatz.",
+      "No passado: Wir haben Urlaub in Spanien gemacht. Wir haben in einer Ferienwohnung gewohnt."
+     ],
+     "q": "Fala-me de umas férias de que gostaste: aonde foste, onde ficaste e o que fizeste?",
+     "c": "Escreve uma lista de oito coisas para a mala em alemão com o artigo e depois uma frase sobre a tua viagem de sonho."
+    },
+    "pt_BR": {
+     "t": "Férias e viagens",
+     "g": "Falar de férias e viagens: planejar, fazer a mala e escolher a hospedagem.",
+     "p": [
+      "Expressões-chave: Urlaub machen, verreisen, eine Reise buchen, den Koffer packen, Sehenswürdigkeiten besichtigen.",
+      "Hospedagem: die Unterkunft, das Hotel, die Ferienwohnung, die Jugendherberge, der Campingplatz.",
+      "No passado: Wir haben Urlaub in Spanien gemacht. Wir haben in einer Ferienwohnung gewohnt."
+     ],
+     "q": "Me fale de umas férias que você curtiu: aonde foi, onde ficou e o que fez?",
+     "c": "Escreva uma lista de oito coisas para a mala em alemão com o artigo e depois uma frase sobre sua viagem dos sonhos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Urlaub machen",
+      "ex": "Im Sommer machen wir Urlaub am Meer."
+     },
+     {
+      "w": "verreisen",
+      "ex": "Wir verreisen jedes Jahr im Herbst."
+     },
+     {
+      "w": "den Koffer packen",
+      "ex": "Ich muss heute noch den Koffer packen."
+     },
+     {
+      "w": "die Unterkunft",
+      "ex": "Die Unterkunft war sauber und günstig."
+     },
+     {
+      "w": "die Ferienwohnung",
+      "ex": "Wir haben eine Ferienwohnung in Tirol gemietet."
+     },
+     {
+      "w": "besichtigen",
+      "ex": "Wir haben das Schloss besichtigt."
+     }
+    ],
+    "gram": "Urlaub machen, verreisen. Im Perfekt: Wir sind nach Spanien gefahren und haben in einer Ferienwohnung gewohnt."
+   }
+  },
+  {
+   "d": 103,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "At the airport and station",
+     "g": "Handle travel at the airport and train station: flights, platforms, delays and changing trains.",
+     "p": [
+      "At the airport: der Flug, der Flughafen, einchecken, das Gepäck, die Bordkarte, der Abflug, die Ankunft.",
+      "At the station: der Bahnhof, das Gleis, die Fahrkarte, umsteigen. Der Zug fährt von Gleis 5 ab.",
+      "Problems: Der Zug hat zehn Minuten Verspätung. Der Flug ist gestrichen. Wo muss ich umsteigen?"
+     ],
+     "q": "Your train is late and you must change trains: what do you ask at the information desk?",
+     "c": "Write a short announcement for a train: number, destination, platform and a delay, like on a real station."
+    },
+    "de": {
+     "t": "Am Flughafen und am Bahnhof",
+     "g": "Du kommst am Flughafen und am Bahnhof zurecht: Flüge, Gleise, Verspätungen und Umsteigen.",
+     "p": [
+      "Flughafen: der Flug, der Flughafen, einchecken, das Gepäck, die Bordkarte, der Abflug, die Ankunft.",
+      "Bahnhof: der Bahnhof, das Gleis, die Fahrkarte, umsteigen. Der Zug fährt von Gleis 5 ab.",
+      "Probleme: Der Zug hat zehn Minuten Verspätung. Der Flug ist gestrichen. Wo muss ich umsteigen?"
+     ],
+     "q": "Dein Zug hat Verspätung und du musst umsteigen: Was fragst du an der Information?",
+     "c": "Schreib eine kurze Durchsage für einen Zug: Nummer, Ziel, Gleis und Verspätung, wie am echten Bahnhof."
+    },
+    "es": {
+     "t": "En el aeropuerto y la estación",
+     "g": "Desenvuélvete en el aeropuerto y la estación: vuelos, andenes, retrasos y transbordos.",
+     "p": [
+      "En el aeropuerto: der Flug, der Flughafen, einchecken, das Gepäck, die Bordkarte, der Abflug, die Ankunft.",
+      "En la estación: der Bahnhof, das Gleis, die Fahrkarte, umsteigen. Der Zug fährt von Gleis 5 ab.",
+      "Problemas: Der Zug hat zehn Minuten Verspätung. Der Flug ist gestrichen. Wo muss ich umsteigen?"
+     ],
+     "q": "Tu tren llega tarde y tienes que hacer transbordo: ¿qué preguntas en información?",
+     "c": "Escribe un aviso corto para un tren: número, destino, andén y retraso, como en una estación de verdad."
+    },
+    "fr": {
+     "t": "À l'aéroport et à la gare",
+     "g": "Se débrouiller à l'aéroport et à la gare : vols, voies, retards et correspondances.",
+     "p": [
+      "À l'aéroport : der Flug, der Flughafen, einchecken, das Gepäck, die Bordkarte, der Abflug, die Ankunft.",
+      "À la gare : der Bahnhof, das Gleis, die Fahrkarte, umsteigen. Der Zug fährt von Gleis 5 ab.",
+      "Problèmes : Der Zug hat zehn Minuten Verspätung. Der Flug ist gestrichen. Wo muss ich umsteigen?"
+     ],
+     "q": "Ton train a du retard et tu dois changer : que demandes-tu au guichet d'information ?",
+     "c": "Écris une courte annonce pour un train : numéro, destination, voie et retard, comme dans une vraie gare."
+    },
+    "it": {
+     "t": "All'aeroporto e in stazione",
+     "g": "Te la cavi all'aeroporto e in stazione: voli, binari, ritardi e cambi.",
+     "p": [
+      "All'aeroporto: der Flug, der Flughafen, einchecken, das Gepäck, die Bordkarte, der Abflug, die Ankunft.",
+      "In stazione: der Bahnhof, das Gleis, die Fahrkarte, umsteigen. Der Zug fährt von Gleis 5 ab.",
+      "Problemi: Der Zug hat zehn Minuten Verspätung. Der Flug ist gestrichen. Wo muss ich umsteigen?"
+     ],
+     "q": "Il tuo treno è in ritardo e devi cambiare: che cosa chiedi all'ufficio informazioni?",
+     "c": "Scrivi un breve annuncio per un treno: numero, destinazione, binario e ritardo, come in una vera stazione."
+    },
+    "pt": {
+     "t": "No aeroporto e na estação",
+     "g": "Desenrascar-te no aeroporto e na estação: voos, linhas, atrasos e mudanças de comboio.",
+     "p": [
+      "No aeroporto: der Flug, der Flughafen, einchecken, das Gepäck, die Bordkarte, der Abflug, die Ankunft.",
+      "Na estação: der Bahnhof, das Gleis, die Fahrkarte, umsteigen. Der Zug fährt von Gleis 5 ab.",
+      "Problemas: Der Zug hat zehn Minuten Verspätung. Der Flug ist gestrichen. Wo muss ich umsteigen?"
+     ],
+     "q": "O teu comboio está atrasado e tens de mudar: o que perguntas no balcão de informações?",
+     "c": "Escreve um aviso curto para um comboio: número, destino, linha e atraso, como numa estação a sério."
+    },
+    "pt_BR": {
+     "t": "No aeroporto e na estação",
+     "g": "Se virar no aeroporto e na estação de trem: voos, plataformas, atrasos e baldeações.",
+     "p": [
+      "No aeroporto: der Flug, der Flughafen, einchecken, das Gepäck, die Bordkarte, der Abflug, die Ankunft.",
+      "Na estação: der Bahnhof, das Gleis, die Fahrkarte, umsteigen. Der Zug fährt von Gleis 5 ab.",
+      "Problemas: Der Zug hat zehn Minuten Verspätung. Der Flug ist gestrichen. Wo muss ich umsteigen?"
+     ],
+     "q": "Seu trem está atrasado e você precisa fazer baldeação: o que pergunta no balcão de informações?",
+     "c": "Escreva um aviso curto para um trem: número, destino, plataforma e atraso, como numa estação de verdade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Flug",
+      "ex": "Der Flug nach Zürich dauert eine Stunde."
+     },
+     {
+      "w": "das Gleis",
+      "ex": "Der Zug nach Bern fährt von Gleis 7."
+     },
+     {
+      "w": "die Verspätung",
+      "ex": "Der Bus hat leider Verspätung."
+     },
+     {
+      "w": "umsteigen",
+      "ex": "In Frankfurt müssen wir umsteigen."
+     },
+     {
+      "w": "einchecken",
+      "ex": "Wir müssen zwei Stunden vorher einchecken."
+     },
+     {
+      "w": "das Gepäck",
+      "ex": "Mein Gepäck ist sehr schwer."
+     }
+    ],
+    "gram": "Der Zug fährt von Gleis 3 ab (abfahren). Er hat zehn Minuten Verspätung. Ich muss in Köln umsteigen (trennbar)."
+   }
+  },
+  {
+   "d": 104,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Subordinate clauses with weil",
+     "g": "Give reasons with weil and send the conjugated verb to the end of the clause.",
+     "p": [
+      "Weil starts a subordinate clause: the conjugated verb goes to the very end. Ich lerne Deutsch, weil ich in Wien arbeite.",
+      "Compare with denn (day 85): denn ich arbeite in Wien keeps normal order. Weil changes it.",
+      "With two verbs, the conjugated one is last: weil ich früh aufstehen muss; weil ich gestern krank war."
+     ],
+     "q": "Warum lernst du Deutsch? Give me two reasons with weil, and check that the verb is at the end.",
+     "c": "Write four sentences about your choices with weil, one with a modal verb and one with a separable verb."
+    },
+    "de": {
+     "t": "Nebensätze mit weil",
+     "g": "Du nennst Gründe mit weil. Das konjugierte Verb steht am Ende des Nebensatzes.",
+     "p": [
+      "Weil leitet einen Nebensatz ein: Das konjugierte Verb steht ganz am Ende. Ich lerne Deutsch, weil ich in Wien arbeite.",
+      "Vergleich mit denn (Tag 85): denn ich arbeite in Wien hat normale Wortstellung. Weil ändert sie.",
+      "Mit zwei Verben steht das konjugierte Verb zuletzt: weil ich früh aufstehen muss; weil ich gestern krank war."
+     ],
+     "q": "Warum lernst du Deutsch? Nenn zwei Gründe mit weil und prüf, ob das Verb am Ende steht.",
+     "c": "Schreib vier Sätze über deine Entscheidungen mit weil, einen mit Modalverb und einen mit trennbarem Verb."
+    },
+    "es": {
+     "t": "Oraciones subordinadas con weil",
+     "g": "Da razones con weil y manda el verbo conjugado al final de la oración.",
+     "p": [
+      "Weil introduce una subordinada: el verbo conjugado va al final. Ich lerne Deutsch, weil ich in Wien arbeite.",
+      "Compara con denn (día 85): denn ich arbeite in Wien mantiene el orden normal. Weil lo cambia.",
+      "Con dos verbos, el conjugado va el último: weil ich früh aufstehen muss; weil ich gestern krank war."
+     ],
+     "q": "¿Por qué aprendes alemán? Dame dos razones con weil y comprueba que el verbo esté al final.",
+     "c": "Escribe cuatro frases sobre tus decisiones con weil, una con un modal y otra con un verbo separable."
+    },
+    "fr": {
+     "t": "Les subordonnées avec weil",
+     "g": "Donner des raisons avec weil et envoyer le verbe conjugué à la fin de la proposition.",
+     "p": [
+      "Weil ouvre une subordonnée : le verbe conjugué va tout à la fin. Ich lerne Deutsch, weil ich in Wien arbeite.",
+      "Compare avec denn (jour 85) : denn ich arbeite in Wien garde l'ordre normal. Weil le change.",
+      "Avec deux verbes, le verbe conjugué est le dernier : weil ich früh aufstehen muss ; weil ich gestern krank war."
+     ],
+     "q": "Pourquoi apprends-tu l'allemand ? Donne deux raisons avec weil et vérifie que le verbe est à la fin.",
+     "c": "Écris quatre phrases sur tes choix avec weil, une avec un modal et une avec un verbe séparable."
+    },
+    "it": {
+     "t": "Subordinate con weil",
+     "g": "Dai motivi con weil e mandi il verbo coniugato alla fine della frase.",
+     "p": [
+      "Weil introduce una subordinata: il verbo coniugato va in fondo. Ich lerne Deutsch, weil ich in Wien arbeite.",
+      "Confronta con denn (giorno 85): denn ich arbeite in Wien ha l'ordine normale. Weil lo cambia.",
+      "Con due verbi, quello coniugato è l'ultimo: weil ich früh aufstehen muss; weil ich gestern krank war."
+     ],
+     "q": "Perché impari il tedesco? Dammi due motivi con weil e controlla che il verbo sia alla fine.",
+     "c": "Scrivi quattro frasi sulle tue scelte con weil, una con un modale e una con un verbo separabile."
+    },
+    "pt": {
+     "t": "Orações subordinadas com weil",
+     "g": "Dar razões com weil e mandar o verbo conjugado para o fim da oração.",
+     "p": [
+      "Weil abre uma subordinada: o verbo conjugado vai para o fim. Ich lerne Deutsch, weil ich in Wien arbeite.",
+      "Compara com denn (dia 85): denn ich arbeite in Wien mantém a ordem normal. Weil muda-a.",
+      "Com dois verbos, o conjugado fica em último: weil ich früh aufstehen muss; weil ich gestern krank war."
+     ],
+     "q": "Porque aprendes alemão? Dá-me duas razões com weil e confirma que o verbo está no fim.",
+     "c": "Escreve quatro frases sobre as tuas escolhas com weil, uma com um modal e outra com um verbo separável."
+    },
+    "pt_BR": {
+     "t": "Orações subordinadas com weil",
+     "g": "Dar motivos com weil e mandar o verbo conjugado para o fim da oração.",
+     "p": [
+      "Weil abre uma subordinada: o verbo conjugado vai para o final. Ich lerne Deutsch, weil ich in Wien arbeite.",
+      "Compare com denn (dia 85): denn ich arbeite in Wien mantém a ordem normal. Weil muda.",
+      "Com dois verbos, o conjugado fica por último: weil ich früh aufstehen muss; weil ich gestern krank war."
+     ],
+     "q": "Por que você aprende alemão? Me dê dois motivos com weil e confira se o verbo está no final.",
+     "c": "Escreva quatro frases sobre suas escolhas com weil, uma com um modal e outra com um verbo separável."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "weil",
+      "ex": "Ich bleibe zu Hause, weil ich müde bin."
+     },
+     {
+      "w": "warum",
+      "ex": "Warum kommst du nicht mit?"
+     },
+     {
+      "w": "der Grund",
+      "ex": "Der Grund ist einfach: Ich habe keine Zeit."
+     },
+     {
+      "w": "deshalb",
+      "ex": "Ich bin krank, deshalb bleibe ich im Bett."
+     },
+     {
+      "w": "weil ... muss",
+      "ex": "Ich gehe früh, weil ich morgen arbeiten muss."
+     },
+     {
+      "w": "weil ... war",
+      "ex": "Ich habe nichts gegessen, weil ich nicht hungrig war."
+     }
+    ],
+    "gram": "Weil + Nebensatz, konjugiertes Verb am Ende: Ich lerne Deutsch, weil ich in Berlin wohne / weil ich dort arbeiten will."
+   }
+  },
+  {
+   "d": 105,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Dass-clauses",
+     "g": "Report thoughts and opinions with dass: Ich glaube, dass... with the verb at the end.",
+     "p": [
+      "Dass works like weil: the conjugated verb goes to the end. Ich glaube, dass das Wetter morgen schön ist.",
+      "Typical starters: Ich glaube, ich denke, ich finde, ich hoffe, ich weiß, es ist schön, dass...",
+      "Ich finde, dass Deutsch interessant ist sounds a bit formal; in speech you can also say Ich finde, Deutsch ist interessant."
+     ],
+     "q": "What do you think about learning languages? Answer with Ich finde, dass... and Ich hoffe, dass...",
+     "c": "Write five sentences with dass about your plans and opinions, each with a different starter verb."
+    },
+    "de": {
+     "t": "Dass-Sätze",
+     "g": "Du gibst Gedanken und Meinungen mit dass wieder: Ich glaube, dass... mit dem Verb am Ende.",
+     "p": [
+      "Dass funktioniert wie weil: Das konjugierte Verb steht am Ende. Ich glaube, dass das Wetter morgen schön ist.",
+      "Typische Einleitungen: Ich glaube, ich denke, ich finde, ich hoffe, ich weiß, es ist schön, dass...",
+      "Gesprochen sagt man oft auch ohne dass: Ich finde, Deutsch ist interessant. Dann bleibt die normale Wortstellung."
+     ],
+     "q": "Was denkst du über das Sprachenlernen? Antworte mit Ich finde, dass... und Ich hoffe, dass...",
+     "c": "Schreib fünf Sätze mit dass über deine Pläne und Meinungen, jeder mit einem anderen Einleitungsverb."
+    },
+    "es": {
+     "t": "Oraciones con dass",
+     "g": "Expresa ideas y opiniones con dass: Ich glaube, dass... con el verbo al final.",
+     "p": [
+      "Dass funciona como weil: el verbo conjugado va al final. Ich glaube, dass das Wetter morgen schön ist.",
+      "Inicios típicos: Ich glaube, ich denke, ich finde, ich hoffe, ich weiß, es ist schön, dass...",
+      "Al hablar también se omite dass: Ich finde, Deutsch ist interessant. Entonces el orden es normal."
+     ],
+     "q": "¿Qué piensas de aprender idiomas? Responde con Ich finde, dass... e Ich hoffe, dass...",
+     "c": "Escribe cinco frases con dass sobre tus planes y opiniones, cada una con un verbo introductor distinto."
+    },
+    "fr": {
+     "t": "Les subordonnées avec dass",
+     "g": "Rapporter des pensées et des opinions avec dass : Ich glaube, dass... avec le verbe à la fin.",
+     "p": [
+      "Dass fonctionne comme weil : le verbe conjugué va à la fin. Ich glaube, dass das Wetter morgen schön ist.",
+      "Débuts typiques : Ich glaube, ich denke, ich finde, ich hoffe, ich weiß, es ist schön, dass...",
+      "À l'oral on omet souvent dass : Ich finde, Deutsch ist interessant. L'ordre reste alors normal."
+     ],
+     "q": "Que penses-tu de l'apprentissage des langues ? Réponds avec Ich finde, dass... et Ich hoffe, dass...",
+     "c": "Écris cinq phrases avec dass sur tes projets et tes opinions, chacune avec un verbe d'introduction différent."
+    },
+    "it": {
+     "t": "Frasi con dass",
+     "g": "Riferisci pensieri e opinioni con dass: Ich glaube, dass... con il verbo alla fine.",
+     "p": [
+      "Dass funziona come weil: il verbo coniugato va alla fine. Ich glaube, dass das Wetter morgen schön ist.",
+      "Inizi tipici: Ich glaube, ich denke, ich finde, ich hoffe, ich weiß, es ist schön, dass...",
+      "Parlando si omette spesso dass: Ich finde, Deutsch ist interessant. Allora l'ordine resta normale."
+     ],
+     "q": "Che cosa pensi dell'imparare le lingue? Rispondi con Ich finde, dass... e Ich hoffe, dass...",
+     "c": "Scrivi cinque frasi con dass sui tuoi progetti e opinioni, ognuna con un verbo introduttivo diverso."
+    },
+    "pt": {
+     "t": "Orações com dass",
+     "g": "Exprimir pensamentos e opiniões com dass: Ich glaube, dass... com o verbo no fim.",
+     "p": [
+      "Dass funciona como weil: o verbo conjugado vai para o fim. Ich glaube, dass das Wetter morgen schön ist.",
+      "Inícios típicos: Ich glaube, ich denke, ich finde, ich hoffe, ich weiß, es ist schön, dass...",
+      "A falar, muitas vezes omite-se dass: Ich finde, Deutsch ist interessant. Aí a ordem fica normal."
+     ],
+     "q": "O que pensas sobre aprender línguas? Responde com Ich finde, dass... e Ich hoffe, dass...",
+     "c": "Escreve cinco frases com dass sobre os teus planos e opiniões, cada uma com um verbo introdutor diferente."
+    },
+    "pt_BR": {
+     "t": "Orações com dass",
+     "g": "Expressar pensamentos e opiniões com dass: Ich glaube, dass... com o verbo no final.",
+     "p": [
+      "Dass funciona como weil: o verbo conjugado vai para o final. Ich glaube, dass das Wetter morgen schön ist.",
+      "Começos típicos: Ich glaube, ich denke, ich finde, ich hoffe, ich weiß, es ist schön, dass...",
+      "Na fala, muitas vezes se omite dass: Ich finde, Deutsch ist interessant. Aí a ordem fica normal."
+     ],
+     "q": "O que você acha de aprender idiomas? Responda com Ich finde, dass... e Ich hoffe, dass...",
+     "c": "Escreva cinco frases com dass sobre seus planos e opiniões, cada uma com um verbo introdutor diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dass",
+      "ex": "Ich weiß, dass du gut kochen kannst."
+     },
+     {
+      "w": "glauben",
+      "ex": "Ich glaube, dass der Laden heute geschlossen ist."
+     },
+     {
+      "w": "hoffen",
+      "ex": "Ich hoffe, dass du bald kommst."
+     },
+     {
+      "w": "denken",
+      "ex": "Ich denke, dass das eine gute Idee ist."
+     },
+     {
+      "w": "finden",
+      "ex": "Ich finde, dass Wien sehr schön ist."
+     },
+     {
+      "w": "Es ist schön, dass ...",
+      "ex": "Es ist schön, dass du da bist."
+     }
+    ],
+    "gram": "Hauptsatz + dass + Nebensatz, Verb am Ende: Ich hoffe, dass es morgen nicht regnet. Ich weiß, dass er kommen will."
+   }
+  },
+  {
+   "d": 106,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Wenn and als",
+     "g": "Choose between wenn and als for time clauses: wenn for repeated or future events, als for one past event.",
+     "p": [
+      "Als is for a single event or period in the past: Als ich zehn war, habe ich Gitarre gelernt.",
+      "Wenn is for repeated events (whenever) and for the present or future: Wenn ich Zeit habe, lese ich. Immer wenn es regnet...",
+      "Both send the verb to the end. If the clause comes first, the main clause starts with the verb: Wenn ich frei habe, schlafe ich lange."
+     ],
+     "q": "What do you do wenn du frei hast, and what happened als du zum ersten Mal Deutsch gehört hast?",
+     "c": "Write two sentences with als about your past and two with wenn about your habits."
+    },
+    "de": {
+     "t": "Wenn und als",
+     "g": "Du wählst zwischen wenn und als: wenn für Wiederholtes oder Zukünftiges, als für ein einmaliges Ereignis in der Vergangenheit.",
+     "p": [
+      "Als steht für ein einmaliges Ereignis oder eine Zeitspanne in der Vergangenheit: Als ich zehn war, habe ich Gitarre gelernt.",
+      "Wenn steht für Wiederholungen und für Gegenwart oder Zukunft: Wenn ich Zeit habe, lese ich. Immer wenn es regnet...",
+      "Beide schicken das Verb ans Ende. Steht der Nebensatz vorne, beginnt der Hauptsatz mit dem Verb: Wenn ich frei habe, schlafe ich lange."
+     ],
+     "q": "Was machst du, wenn du frei hast, und was ist passiert, als du zum ersten Mal Deutsch gehört hast?",
+     "c": "Schreib zwei Sätze mit als über deine Vergangenheit und zwei mit wenn über deine Gewohnheiten."
+    },
+    "es": {
+     "t": "Wenn y als",
+     "g": "Elige entre wenn y als: wenn para hechos repetidos o futuros, als para un hecho único en el pasado.",
+     "p": [
+      "Als es para un hecho o periodo único en el pasado: Als ich zehn war, habe ich Gitarre gelernt.",
+      "Wenn es para hechos repetidos (cada vez que) y para presente o futuro: Wenn ich Zeit habe, lese ich. Immer wenn es regnet...",
+      "Ambos mandan el verbo al final. Si la subordinada va primero, la principal empieza con el verbo: Wenn ich frei habe, schlafe ich lange."
+     ],
+     "q": "¿Qué haces wenn du frei hast, y qué pasó als du zum ersten Mal Deutsch gehört hast?",
+     "c": "Escribe dos frases con als sobre tu pasado y dos con wenn sobre tus costumbres."
+    },
+    "fr": {
+     "t": "Wenn et als",
+     "g": "Choisir entre wenn et als : wenn pour ce qui se répète ou viendra, als pour un fait unique du passé.",
+     "p": [
+      "Als s'emploie pour un fait ou une période unique du passé : Als ich zehn war, habe ich Gitarre gelernt.",
+      "Wenn s'emploie pour ce qui se répète (chaque fois que) et pour le présent ou le futur : Wenn ich Zeit habe, lese ich.",
+      "Verbe à la fin dans les deux cas. Subordonnée en tête : la principale commence par le verbe : Wenn ich frei habe, schlafe ich lange."
+     ],
+     "q": "Que fais-tu wenn du frei hast, et que s'est-il passé als du zum ersten Mal Deutsch gehört hast ?",
+     "c": "Écris deux phrases avec als sur ton passé et deux avec wenn sur tes habitudes."
+    },
+    "it": {
+     "t": "Wenn e als",
+     "g": "Scegli tra wenn e als: wenn per fatti ripetuti o futuri, als per un fatto unico nel passato.",
+     "p": [
+      "Als si usa per un fatto o un periodo unico nel passato: Als ich zehn war, habe ich Gitarre gelernt.",
+      "Wenn si usa per fatti ripetuti (ogni volta che) e per presente o futuro: Wenn ich Zeit habe, lese ich. Immer wenn es regnet...",
+      "Entrambi mandano il verbo alla fine. Se la subordinata è prima, la principale inizia col verbo: Wenn ich frei habe, schlafe ich lange."
+     ],
+     "q": "Che cosa fai wenn du frei hast, e che cosa è successo als du zum ersten Mal Deutsch gehört hast?",
+     "c": "Scrivi due frasi con als sul tuo passato e due con wenn sulle tue abitudini."
+    },
+    "pt": {
+     "t": "Wenn e als",
+     "g": "Escolher entre wenn e als: wenn para factos repetidos ou futuros, als para um facto único no passado.",
+     "p": [
+      "Als usa-se para um facto ou período único no passado: Als ich zehn war, habe ich Gitarre gelernt.",
+      "Wenn usa-se para repetições (sempre que) e para o presente ou futuro: Wenn ich Zeit habe, lese ich. Immer wenn es regnet...",
+      "Ambos mandam o verbo para o fim. Se a subordinada vem primeiro, a principal começa pelo verbo: Wenn ich frei habe, schlafe ich lange."
+     ],
+     "q": "O que fazes wenn du frei hast, e o que aconteceu als du zum ersten Mal Deutsch gehört hast?",
+     "c": "Escreve duas frases com als sobre o teu passado e duas com wenn sobre os teus hábitos."
+    },
+    "pt_BR": {
+     "t": "Wenn e als",
+     "g": "Escolher entre wenn e als: wenn para fatos repetidos ou futuros, als para um fato único no passado.",
+     "p": [
+      "Als é para um fato ou período único no passado: Als ich zehn war, habe ich Gitarre gelernt.",
+      "Wenn é para repetições (sempre que) e para presente ou futuro: Wenn ich Zeit habe, lese ich. Immer wenn es regnet...",
+      "Os dois mandam o verbo para o final. Se a subordinada vem antes, a principal começa com o verbo: Wenn ich frei habe, schlafe ich lange."
+     ],
+     "q": "O que você faz wenn du frei hast, e o que aconteceu als du zum ersten Mal Deutsch gehört hast?",
+     "c": "Escreva duas frases com als sobre seu passado e duas com wenn sobre seus hábitos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "als",
+      "ex": "Als ich in Berlin war, habe ich die Mauer gesehen."
+     },
+     {
+      "w": "wenn",
+      "ex": "Wenn ich müde bin, trinke ich Kaffee."
+     },
+     {
+      "w": "immer wenn",
+      "ex": "Immer wenn es regnet, bleibe ich zu Hause."
+     },
+     {
+      "w": "zum ersten Mal",
+      "ex": "Als ich zum ersten Mal in Wien war, war ich zwanzig."
+     },
+     {
+      "w": "damals",
+      "ex": "Damals hatte ich noch kein Handy."
+     },
+     {
+      "w": "frei haben",
+      "ex": "Wenn ich frei habe, gehe ich wandern."
+     }
+    ],
+    "gram": "Als: einmal in der Vergangenheit (Als ich klein war, ...). Wenn: wiederholt, Gegenwart, Zukunft (Wenn ich Zeit habe, ...). Verb am Ende."
+   }
+  },
+  {
+   "d": 107,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Ob and indirect questions",
+     "g": "Ask politely and report questions with ob and question words, with the verb at the end.",
+     "p": [
+      "Yes/no questions become ob-clauses: Kommt er? becomes Ich weiß nicht, ob er kommt.",
+      "W-questions keep their question word: Wo ist der Bahnhof? becomes Können Sie mir sagen, wo der Bahnhof ist?",
+      "Indirect questions sound more polite: Wissen Sie, wann der Zug fährt? Ich frage mich, ob das stimmt."
+     ],
+     "q": "Ask me two polite questions about my day, starting with Kannst du mir sagen, ... and Weißt du, ob ...?",
+     "c": "Turn five direct questions into indirect ones, for example Wann beginnt der Film? into Weißt du, wann der Film beginnt?"
+    },
+    "de": {
+     "t": "Ob und indirekte Fragen",
+     "g": "Du fragst höflich und gibst Fragen mit ob und W-Wörtern wieder, das Verb steht am Ende.",
+     "p": [
+      "Ja/Nein-Fragen werden zu ob-Sätzen: Kommt er? wird zu Ich weiß nicht, ob er kommt.",
+      "W-Fragen behalten das Fragewort: Wo ist der Bahnhof? wird zu Können Sie mir sagen, wo der Bahnhof ist?",
+      "Indirekte Fragen klingen höflicher: Wissen Sie, wann der Zug fährt? Ich frage mich, ob das stimmt."
+     ],
+     "q": "Stell mir zwei höfliche Fragen über meinen Tag, mit Kannst du mir sagen, ... und Weißt du, ob ...?",
+     "c": "Mach aus fünf direkten Fragen indirekte, zum Beispiel aus Wann beginnt der Film? Weißt du, wann der Film beginnt?"
+    },
+    "es": {
+     "t": "Ob y preguntas indirectas",
+     "g": "Pregunta con cortesía y repite preguntas con ob y palabras interrogativas, con el verbo al final.",
+     "p": [
+      "Las preguntas de sí/no se convierten en ob: Kommt er? pasa a Ich weiß nicht, ob er kommt.",
+      "Las preguntas con W mantienen su partícula: Wo ist der Bahnhof? pasa a Können Sie mir sagen, wo der Bahnhof ist?",
+      "Las preguntas indirectas suenan más amables: Wissen Sie, wann der Zug fährt? Ich frage mich, ob das stimmt."
+     ],
+     "q": "Hazme dos preguntas amables sobre mi día empezando con Kannst du mir sagen, ... y Weißt du, ob ...?",
+     "c": "Transforma cinco preguntas directas en indirectas, por ejemplo Wann beginnt der Film? en Weißt du, wann der Film beginnt?"
+    },
+    "fr": {
+     "t": "Ob et l'interrogation indirecte",
+     "g": "Demander poliment et rapporter des questions avec ob et les mots interrogatifs, verbe à la fin.",
+     "p": [
+      "Les questions oui/non deviennent des propositions avec ob : Kommt er? devient Ich weiß nicht, ob er kommt.",
+      "Les questions en W gardent leur mot interrogatif : Wo ist der Bahnhof? devient Können Sie mir sagen, wo der Bahnhof ist?",
+      "Les questions indirectes sont plus polies : Wissen Sie, wann der Zug fährt? Ich frage mich, ob das stimmt."
+     ],
+     "q": "Pose-moi deux questions polies sur ma journée avec Kannst du mir sagen, ... et Weißt du, ob ...?",
+     "c": "Transforme cinq questions directes en indirectes, par exemple Wann beginnt der Film? en Weißt du, wann der Film beginnt?"
+    },
+    "it": {
+     "t": "Ob e domande indirette",
+     "g": "Chiedi con gentilezza e riferisci domande con ob e le parole interrogative, con il verbo alla fine.",
+     "p": [
+      "Le domande sì/no diventano frasi con ob: Kommt er? diventa Ich weiß nicht, ob er kommt.",
+      "Le domande con W tengono la parola interrogativa: Wo ist der Bahnhof? diventa Können Sie mir sagen, wo der Bahnhof ist?",
+      "Le domande indirette sono più cortesi: Wissen Sie, wann der Zug fährt? Ich frage mich, ob das stimmt."
+     ],
+     "q": "Fammi due domande gentili sulla mia giornata con Kannst du mir sagen, ... e Weißt du, ob ...?",
+     "c": "Trasforma cinque domande dirette in indirette, per esempio Wann beginnt der Film? in Weißt du, wann der Film beginnt?"
+    },
+    "pt": {
+     "t": "Ob e perguntas indiretas",
+     "g": "Perguntar com delicadeza e relatar perguntas com ob e palavras interrogativas, com o verbo no fim.",
+     "p": [
+      "As perguntas de sim/não passam a ob: Kommt er? fica Ich weiß nicht, ob er kommt.",
+      "As perguntas com W mantêm a palavra interrogativa: Wo ist der Bahnhof? fica Können Sie mir sagen, wo der Bahnhof ist?",
+      "As perguntas indiretas soam mais educadas: Wissen Sie, wann der Zug fährt? Ich frage mich, ob das stimmt."
+     ],
+     "q": "Faz-me duas perguntas educadas sobre o meu dia, a começar com Kannst du mir sagen, ... e Weißt du, ob ...?",
+     "c": "Transforma cinco perguntas diretas em indiretas, por exemplo Wann beginnt der Film? em Weißt du, wann der Film beginnt?"
+    },
+    "pt_BR": {
+     "t": "Ob e perguntas indiretas",
+     "g": "Perguntar com educação e relatar perguntas com ob e palavras interrogativas, com o verbo no final.",
+     "p": [
+      "Perguntas de sim/não viram ob: Kommt er? vira Ich weiß nicht, ob er kommt.",
+      "Perguntas com W mantêm a palavra interrogativa: Wo ist der Bahnhof? vira Können Sie mir sagen, wo der Bahnhof ist?",
+      "Perguntas indiretas soam mais educadas: Wissen Sie, wann der Zug fährt? Ich frage mich, ob das stimmt."
+     ],
+     "q": "Me faça duas perguntas educadas sobre meu dia, começando com Kannst du mir sagen, ... e Weißt du, ob ...?",
+     "c": "Transforme cinco perguntas diretas em indiretas, por exemplo Wann beginnt der Film? em Weißt du, wann der Film beginnt?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ob",
+      "ex": "Ich weiß nicht, ob sie heute kommt."
+     },
+     {
+      "w": "Wissen Sie, wo ...?",
+      "ex": "Wissen Sie, wo die Post ist?"
+     },
+     {
+      "w": "Kannst du mir sagen, ...",
+      "ex": "Kannst du mir sagen, wann der Kurs beginnt?"
+     },
+     {
+      "w": "sich fragen",
+      "ex": "Ich frage mich, ob das Restaurant offen ist."
+     },
+     {
+      "w": "stimmen",
+      "ex": "Weißt du, ob das stimmt?"
+     },
+     {
+      "w": "wie viel",
+      "ex": "Können Sie mir sagen, wie viel das kostet?"
+     }
+    ],
+    "gram": "Indirekte Frage, Verb am Ende: Ich weiß nicht, ob er kommt. Können Sie mir sagen, wo der Bahnhof ist?"
+   }
+  },
+  {
+   "d": 108,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Health and healthy habits",
+     "g": "Talk about healthy habits and give friendly advice with sollte and imperatives.",
+     "p": [
+      "Healthy habits: Sport treiben, gesund essen, genug schlafen, viel Wasser trinken, spazieren gehen.",
+      "Give advice with du solltest + infinitive: Du solltest mehr schlafen. Or simply: Trink mehr Wasser!",
+      "Talk about yourself: Ich achte auf meine Ernährung. Ich mache dreimal pro Woche Sport. This is general advice, not medical."
+     ],
+     "q": "What do you do to feel good and healthy? Name two habits and one you would like to start.",
+     "c": "Write three tips for a friend who is often tired, with du solltest and one imperative."
+    },
+    "de": {
+     "t": "Gesundheit und gesunde Gewohnheiten",
+     "g": "Du sprichst über gesunde Gewohnheiten und gibst freundliche Tipps mit sollte und Imperativ.",
+     "p": [
+      "Gesunde Gewohnheiten: Sport treiben, gesund essen, genug schlafen, viel Wasser trinken, spazieren gehen.",
+      "Tipps mit du solltest + Infinitiv: Du solltest mehr schlafen. Oder einfach: Trink mehr Wasser!",
+      "Über dich: Ich achte auf meine Ernährung. Ich mache dreimal pro Woche Sport. Das sind allgemeine Tipps, keine Medizin."
+     ],
+     "q": "Was machst du, um dich gut und gesund zu fühlen? Nenn zwei Gewohnheiten und eine, die du anfangen möchtest.",
+     "c": "Schreib drei Tipps für eine Freundin, die oft müde ist, mit du solltest und einem Imperativ."
+    },
+    "es": {
+     "t": "Salud y hábitos sanos",
+     "g": "Habla de hábitos sanos y da consejos amables con sollte y el imperativo.",
+     "p": [
+      "Hábitos sanos: Sport treiben, gesund essen, genug schlafen, viel Wasser trinken, spazieren gehen.",
+      "Para aconsejar, du solltest + infinitivo: Du solltest mehr schlafen. O simplemente: Trink mehr Wasser!",
+      "Sobre ti: Ich achte auf meine Ernährung. Ich mache dreimal pro Woche Sport. Son consejos generales, no médicos."
+     ],
+     "q": "¿Qué haces para sentirte bien y sano? Nombra dos hábitos y uno que te gustaría empezar.",
+     "c": "Escribe tres consejos para un amigo que suele estar cansado, con du solltest y un imperativo."
+    },
+    "fr": {
+     "t": "Santé et bonnes habitudes",
+     "g": "Parler de bonnes habitudes et donner des conseils amicaux avec sollte et l'impératif.",
+     "p": [
+      "Bonnes habitudes : Sport treiben, gesund essen, genug schlafen, viel Wasser trinken, spazieren gehen.",
+      "Conseiller avec du solltest + infinitif : Du solltest mehr schlafen. Ou simplement : Trink mehr Wasser!",
+      "Sur toi : Ich achte auf meine Ernährung. Ich mache dreimal pro Woche Sport. Ce sont des conseils généraux, pas médicaux."
+     ],
+     "q": "Que fais-tu pour te sentir bien et en forme ? Cite deux habitudes et une que tu aimerais commencer.",
+     "c": "Écris trois conseils pour un ami souvent fatigué, avec du solltest et un impératif."
+    },
+    "it": {
+     "t": "Salute e buone abitudini",
+     "g": "Parli di abitudini sane e dai consigli amichevoli con sollte e l'imperativo.",
+     "p": [
+      "Abitudini sane: Sport treiben, gesund essen, genug schlafen, viel Wasser trinken, spazieren gehen.",
+      "Per consigliare, du solltest + infinito: Du solltest mehr schlafen. Oppure: Trink mehr Wasser!",
+      "Su di te: Ich achte auf meine Ernährung. Ich mache dreimal pro Woche Sport. Sono consigli generali, non medici."
+     ],
+     "q": "Che cosa fai per sentirti bene e in salute? Indica due abitudini e una che vorresti iniziare.",
+     "c": "Scrivi tre consigli per un amico che è spesso stanco, con du solltest e un imperativo."
+    },
+    "pt": {
+     "t": "Saúde e hábitos saudáveis",
+     "g": "Falar de hábitos saudáveis e dar conselhos simpáticos com sollte e o imperativo.",
+     "p": [
+      "Hábitos saudáveis: Sport treiben, gesund essen, genug schlafen, viel Wasser trinken, spazieren gehen.",
+      "Para aconselhar, du solltest + infinitivo: Du solltest mehr schlafen. Ou só: Trink mehr Wasser!",
+      "Sobre ti: Ich achte auf meine Ernährung. Ich mache dreimal pro Woche Sport. São conselhos gerais, não médicos."
+     ],
+     "q": "O que fazes para te sentires bem e saudável? Diz dois hábitos e um que gostavas de começar.",
+     "c": "Escreve três conselhos para um amigo que anda muitas vezes cansado, com du solltest e um imperativo."
+    },
+    "pt_BR": {
+     "t": "Saúde e hábitos saudáveis",
+     "g": "Falar de hábitos saudáveis e dar conselhos amigáveis com sollte e o imperativo.",
+     "p": [
+      "Hábitos saudáveis: Sport treiben, gesund essen, genug schlafen, viel Wasser trinken, spazieren gehen.",
+      "Para aconselhar, du solltest + infinitivo: Du solltest mehr schlafen. Ou só: Trink mehr Wasser!",
+      "Sobre você: Ich achte auf meine Ernährung. Ich mache dreimal pro Woche Sport. São dicas gerais, não médicas."
+     ],
+     "q": "O que você faz para se sentir bem e saudável? Diga dois hábitos e um que gostaria de começar.",
+     "c": "Escreva três dicas para um amigo que vive cansado, com du solltest e um imperativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Sport treiben",
+      "ex": "Ich treibe zweimal pro Woche Sport."
+     },
+     {
+      "w": "gesund",
+      "ex": "Obst und Gemüse sind gesund."
+     },
+     {
+      "w": "genug schlafen",
+      "ex": "Du solltest genug schlafen."
+     },
+     {
+      "w": "die Ernährung",
+      "ex": "Ich achte auf eine gesunde Ernährung."
+     },
+     {
+      "w": "sich bewegen",
+      "ex": "Man sollte sich jeden Tag bewegen."
+     },
+     {
+      "w": "du solltest",
+      "ex": "Du solltest mehr Wasser trinken."
+     }
+    ],
+    "gram": "Ratschlag: du solltest / Sie sollten + Infinitiv am Ende: Du solltest mehr spazieren gehen. Imperativ: Schlaf genug!"
+   }
+  },
+  {
+   "d": 109,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Reflexive verbs",
+     "g": "Use reflexive verbs like sich freuen, sich waschen and sich treffen with the right pronoun.",
+     "p": [
+      "Reflexive pronouns: ich - mich, du - dich, er/sie/es - sich, wir - uns, ihr - euch, sie/Sie - sich.",
+      "Some verbs are always reflexive: sich freuen (auf/über), sich beeilen, sich ausruhen. Ich freue mich auf das Wochenende.",
+      "Others can be: Ich wasche mich (myself) or Ich wasche das Auto. Wir treffen uns means we meet each other."
+     ],
+     "q": "What are you looking forward to? Answer with Ich freue mich auf... and say when you treffen dich with friends.",
+     "c": "Write your morning routine in four sentences with reflexive verbs: aufwachen, sich waschen, sich anziehen, sich beeilen."
+    },
+    "de": {
+     "t": "Reflexive Verben",
+     "g": "Du benutzt reflexive Verben wie sich freuen, sich waschen und sich treffen mit dem richtigen Pronomen.",
+     "p": [
+      "Reflexivpronomen: ich - mich, du - dich, er/sie/es - sich, wir - uns, ihr - euch, sie/Sie - sich.",
+      "Manche Verben sind immer reflexiv: sich freuen (auf/über), sich beeilen, sich ausruhen. Ich freue mich auf das Wochenende.",
+      "Andere können es sein: Ich wasche mich oder Ich wasche das Auto. Wir treffen uns heißt: einer trifft den anderen."
+     ],
+     "q": "Worauf freust du dich? Antworte mit Ich freue mich auf... und sag, wann du dich mit Freunden triffst.",
+     "c": "Schreib deine Morgenroutine in vier Sätzen mit reflexiven Verben: aufwachen, sich waschen, sich anziehen, sich beeilen."
+    },
+    "es": {
+     "t": "Verbos reflexivos",
+     "g": "Usa verbos reflexivos como sich freuen, sich waschen y sich treffen con el pronombre correcto.",
+     "p": [
+      "Pronombres reflexivos: ich - mich, du - dich, er/sie/es - sich, wir - uns, ihr - euch, sie/Sie - sich.",
+      "Algunos verbos siempre son reflexivos: sich freuen (auf/über), sich beeilen, sich ausruhen. Ich freue mich auf das Wochenende.",
+      "Otros pueden serlo: Ich wasche mich (a mí mismo) o Ich wasche das Auto. Wir treffen uns significa nos vemos."
+     ],
+     "q": "¿Qué esperas con ilusión? Responde con Ich freue mich auf... y di cuándo te ves con tus amigos.",
+     "c": "Escribe tu rutina de la mañana en cuatro frases con verbos reflexivos: aufwachen, sich waschen, sich anziehen, sich beeilen."
+    },
+    "fr": {
+     "t": "Les verbes pronominaux",
+     "g": "Utiliser des verbes pronominaux comme sich freuen, sich waschen et sich treffen avec le bon pronom.",
+     "p": [
+      "Pronoms réfléchis : ich - mich, du - dich, er/sie/es - sich, wir - uns, ihr - euch, sie/Sie - sich.",
+      "Certains verbes sont toujours pronominaux : sich freuen (auf/über), sich beeilen, sich ausruhen. Ich freue mich auf das Wochenende.",
+      "D'autres peuvent l'être : Ich wasche mich (je me lave) ou Ich wasche das Auto. Wir treffen uns veut dire on se retrouve."
+     ],
+     "q": "Qu'est-ce qui te réjouit d'avance ? Réponds avec Ich freue mich auf... et dis quand tu retrouves tes amis.",
+     "c": "Écris ta routine du matin en quatre phrases avec des verbes pronominaux : aufwachen, sich waschen, sich anziehen, sich beeilen."
+    },
+    "it": {
+     "t": "Verbi riflessivi",
+     "g": "Usi verbi riflessivi come sich freuen, sich waschen e sich treffen con il pronome giusto.",
+     "p": [
+      "Pronomi riflessivi: ich - mich, du - dich, er/sie/es - sich, wir - uns, ihr - euch, sie/Sie - sich.",
+      "Alcuni verbi sono sempre riflessivi: sich freuen (auf/über), sich beeilen, sich ausruhen. Ich freue mich auf das Wochenende.",
+      "Altri possono esserlo: Ich wasche mich (mi lavo) o Ich wasche das Auto. Wir treffen uns significa ci vediamo."
+     ],
+     "q": "Che cosa aspetti con gioia? Rispondi con Ich freue mich auf... e di' quando ti vedi con gli amici.",
+     "c": "Scrivi la tua routine del mattino in quattro frasi con verbi riflessivi: aufwachen, sich waschen, sich anziehen, sich beeilen."
+    },
+    "pt": {
+     "t": "Verbos reflexos",
+     "g": "Usar verbos reflexos como sich freuen, sich waschen e sich treffen com o pronome certo.",
+     "p": [
+      "Pronomes reflexos: ich - mich, du - dich, er/sie/es - sich, wir - uns, ihr - euch, sie/Sie - sich.",
+      "Alguns verbos são sempre reflexos: sich freuen (auf/über), sich beeilen, sich ausruhen. Ich freue mich auf das Wochenende.",
+      "Outros podem sê-lo: Ich wasche mich (lavo-me) ou Ich wasche das Auto. Wir treffen uns quer dizer encontramo-nos."
+     ],
+     "q": "Pelo que estás ansioso? Responde com Ich freue mich auf... e diz quando te encontras com amigos.",
+     "c": "Escreve a tua rotina da manhã em quatro frases com verbos reflexos: aufwachen, sich waschen, sich anziehen, sich beeilen."
+    },
+    "pt_BR": {
+     "t": "Verbos reflexivos",
+     "g": "Usar verbos reflexivos como sich freuen, sich waschen e sich treffen com o pronome certo.",
+     "p": [
+      "Pronomes reflexivos: ich - mich, du - dich, er/sie/es - sich, wir - uns, ihr - euch, sie/Sie - sich.",
+      "Alguns verbos são sempre reflexivos: sich freuen (auf/über), sich beeilen, sich ausruhen. Ich freue mich auf das Wochenende.",
+      "Outros podem ser: Ich wasche mich (me lavo) ou Ich wasche das Auto. Wir treffen uns quer dizer a gente se encontra."
+     ],
+     "q": "O que você está esperando com alegria? Responda com Ich freue mich auf... e diga quando encontra os amigos.",
+     "c": "Escreva sua rotina da manhã em quatro frases com verbos reflexivos: aufwachen, sich waschen, sich anziehen, sich beeilen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich freuen auf",
+      "ex": "Ich freue mich auf den Urlaub."
+     },
+     {
+      "w": "sich freuen über",
+      "ex": "Sie freut sich über das Geschenk."
+     },
+     {
+      "w": "sich treffen",
+      "ex": "Wir treffen uns um acht vor dem Kino."
+     },
+     {
+      "w": "sich beeilen",
+      "ex": "Beeil dich, der Bus kommt!"
+     },
+     {
+      "w": "sich anziehen",
+      "ex": "Die Kinder ziehen sich schnell an."
+     },
+     {
+      "w": "sich ausruhen",
+      "ex": "Am Sonntag ruhe ich mich aus."
+     }
+    ],
+    "gram": "Reflexivpronomen im Akkusativ: mich, dich, sich, uns, euch, sich. Ich freue mich. Wir treffen uns. Beeil dich!"
+   }
+  },
+  {
+   "d": 110,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Reflexive verbs with dative",
+     "g": "Use the dative reflexive pronoun when the sentence already has an object: Ich putze mir die Zähne.",
+     "p": [
+      "If there is another accusative object, the reflexive pronoun is dative: Ich wasche mir die Hände.",
+      "Only ich and du change: mich becomes mir, dich becomes dir. The others stay the same: er wäscht sich die Hände.",
+      "Useful: sich die Zähne putzen, sich etwas wünschen, sich etwas ansehen, sich etwas vorstellen."
+     ],
+     "q": "What do you wish for your next birthday? Answer with Ich wünsche mir... and one more dative reflexive.",
+     "c": "Write four sentences: two with mich and two with mir, for example Ich ziehe mich an / Ich ziehe mir die Jacke an."
+    },
+    "de": {
+     "t": "Reflexive Verben mit Dativ",
+     "g": "Du benutzt das Reflexivpronomen im Dativ, wenn der Satz schon ein Objekt hat: Ich putze mir die Zähne.",
+     "p": [
+      "Gibt es ein weiteres Akkusativobjekt, steht das Reflexivpronomen im Dativ: Ich wasche mir die Hände.",
+      "Nur ich und du ändern sich: mich wird mir, dich wird dir. Die anderen bleiben gleich: Er wäscht sich die Hände.",
+      "Nützlich: sich die Zähne putzen, sich etwas wünschen, sich etwas ansehen, sich etwas vorstellen."
+     ],
+     "q": "Was wünschst du dir zum nächsten Geburtstag? Antworte mit Ich wünsche mir... und einem weiteren Dativ-Reflexiv.",
+     "c": "Schreib vier Sätze: zwei mit mich und zwei mit mir, zum Beispiel Ich ziehe mich an / Ich ziehe mir die Jacke an."
+    },
+    "es": {
+     "t": "Verbos reflexivos con dativo",
+     "g": "Usa el reflexivo en dativo cuando la frase ya tiene otro complemento: Ich putze mir die Zähne.",
+     "p": [
+      "Si hay otro complemento en acusativo, el reflexivo va en dativo: Ich wasche mir die Hände.",
+      "Solo cambian ich y du: mich pasa a mir y dich a dir. Los demás igual: Er wäscht sich die Hände.",
+      "Útiles: sich die Zähne putzen, sich etwas wünschen, sich etwas ansehen, sich etwas vorstellen."
+     ],
+     "q": "¿Qué deseas para tu próximo cumpleaños? Responde con Ich wünsche mir... y otro reflexivo con dativo.",
+     "c": "Escribe cuatro frases: dos con mich y dos con mir, por ejemplo Ich ziehe mich an / Ich ziehe mir die Jacke an."
+    },
+    "fr": {
+     "t": "Verbes pronominaux au datif",
+     "g": "Utiliser le pronom réfléchi au datif quand la phrase a déjà un complément : Ich putze mir die Zähne.",
+     "p": [
+      "S'il y a un autre complément à l'accusatif, le réfléchi est au datif : Ich wasche mir die Hände.",
+      "Seuls ich et du changent : mich devient mir, dich devient dir. Les autres restent : Er wäscht sich die Hände.",
+      "Utiles : sich die Zähne putzen, sich etwas wünschen, sich etwas ansehen, sich etwas vorstellen."
+     ],
+     "q": "Que souhaites-tu pour ton prochain anniversaire ? Réponds avec Ich wünsche mir... et un autre réfléchi au datif.",
+     "c": "Écris quatre phrases : deux avec mich et deux avec mir, par exemple Ich ziehe mich an / Ich ziehe mir die Jacke an."
+    },
+    "it": {
+     "t": "Verbi riflessivi con il dativo",
+     "g": "Usi il riflessivo al dativo quando la frase ha già un complemento: Ich putze mir die Zähne.",
+     "p": [
+      "Se c'è un altro complemento all'accusativo, il riflessivo va al dativo: Ich wasche mir die Hände.",
+      "Cambiano solo ich e du: mich diventa mir, dich diventa dir. Gli altri restano: Er wäscht sich die Hände.",
+      "Utili: sich die Zähne putzen, sich etwas wünschen, sich etwas ansehen, sich etwas vorstellen."
+     ],
+     "q": "Che cosa desideri per il tuo prossimo compleanno? Rispondi con Ich wünsche mir... e un altro riflessivo al dativo.",
+     "c": "Scrivi quattro frasi: due con mich e due con mir, per esempio Ich ziehe mich an / Ich ziehe mir die Jacke an."
+    },
+    "pt": {
+     "t": "Verbos reflexos com dativo",
+     "g": "Usar o reflexo no dativo quando a frase já tem outro complemento: Ich putze mir die Zähne.",
+     "p": [
+      "Se houver outro complemento no acusativo, o reflexo vai no dativo: Ich wasche mir die Hände.",
+      "Só mudam ich e du: mich passa a mir e dich a dir. Os outros ficam iguais: Er wäscht sich die Hände.",
+      "Úteis: sich die Zähne putzen, sich etwas wünschen, sich etwas ansehen, sich etwas vorstellen."
+     ],
+     "q": "O que desejas para o teu próximo aniversário? Responde com Ich wünsche mir... e outro reflexo com dativo.",
+     "c": "Escreve quatro frases: duas com mich e duas com mir, por exemplo Ich ziehe mich an / Ich ziehe mir die Jacke an."
+    },
+    "pt_BR": {
+     "t": "Verbos reflexivos com dativo",
+     "g": "Usar o reflexivo no dativo quando a frase já tem outro complemento: Ich putze mir die Zähne.",
+     "p": [
+      "Se houver outro complemento no acusativo, o reflexivo vai no dativo: Ich wasche mir die Hände.",
+      "Só mudam ich e du: mich vira mir e dich vira dir. Os outros ficam iguais: Er wäscht sich die Hände.",
+      "Úteis: sich die Zähne putzen, sich etwas wünschen, sich etwas ansehen, sich etwas vorstellen."
+     ],
+     "q": "O que você quer ganhar no próximo aniversário? Responda com Ich wünsche mir... e outro reflexivo com dativo.",
+     "c": "Escreva quatro frases: duas com mich e duas com mir, por exemplo Ich ziehe mich an / Ich ziehe mir die Jacke an."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich die Zähne putzen",
+      "ex": "Ich putze mir zweimal am Tag die Zähne."
+     },
+     {
+      "w": "sich wünschen",
+      "ex": "Ich wünsche mir ein neues Fahrrad."
+     },
+     {
+      "w": "sich die Hände waschen",
+      "ex": "Wasch dir bitte die Hände!"
+     },
+     {
+      "w": "sich etwas ansehen",
+      "ex": "Wir sehen uns heute einen Film an."
+     },
+     {
+      "w": "sich vorstellen",
+      "ex": "Ich kann mir das gut vorstellen."
+     },
+     {
+      "w": "sich die Haare kämmen",
+      "ex": "Sie kämmt sich die Haare."
+     }
+    ],
+    "gram": "Reflexiv im Dativ, wenn es ein Akkusativobjekt gibt: Ich wasche mir die Hände. Du putzt dir die Zähne. Er wünscht sich ein Auto."
+   }
+  }
+ ]
+}

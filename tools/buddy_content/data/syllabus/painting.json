@@ -1,0 +1,2195 @@
+{
+ "topic": "painting",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Welcome to painting",
+   "f": "Why people paint, what this 365-day path covers and how one small lesson a day builds real skill"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "The main paint families",
+   "f": "Watercolour, gouache, acrylic and oil: what binds each one and how they behave on the surface"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "What is inside a tube of paint",
+   "f": "Pigment plus binder: why the same pigment feels different in oil, acrylic or watercolour"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Choosing your first medium",
+   "f": "Comparing cost, drying time, clean-up and forgiveness to pick a medium that suits your life"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Brush shapes explained",
+   "f": "Rounds, flats, filberts, brights, fans and riggers, and the marks each shape makes best"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "Brush hairs: natural and synthetic",
+   "f": "Soft, springy and stiff hairs, which media they suit and why synthetics are so popular today"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Caring for your brushes",
+   "f": "Rinsing, reshaping and storing brushes so they keep their point for years"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Painting surfaces",
+   "f": "Paper, canvas, wooden panels and boards, and which medium works on which surface"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Watercolour paper basics",
+   "f": "Weight, cotton content and the three textures: hot-pressed, cold-pressed and rough"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Canvas and gesso",
+   "f": "What gesso does, why surfaces are primed and how canvas differs from a panel"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Setting up your palette",
+   "f": "Arranging colours in a logical order and choosing a mixing area that stays clean"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "A simple painting corner",
+   "f": "Light, table height, water jars, rags and keeping everything within reach"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Holding the brush",
+   "f": "Gripping near the ferrule for control or far back for loose, expressive strokes"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Your first marks",
+   "f": "Dots, lines, dabs and sweeps: exploring what one brush can do on scrap paper"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Pressure and speed",
+   "f": "How pushing harder or moving faster changes the thickness and energy of a stroke"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Loading the brush",
+   "f": "Too much, too little or just right: controlling how much paint the brush carries"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "The colour wheel",
+   "f": "How the wheel organises colours and why painters still rely on it every day"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Primary colours",
+   "f": "Red, yellow and blue as a starting set, and why real pigments are never perfect primaries"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Secondary colours",
+   "f": "Mixing orange, green and violet and noticing how the choice of primaries changes the result"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Tertiary colours",
+   "f": "The in-between hues like yellow-green and red-violet that make the wheel feel complete"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "What is value",
+   "f": "Lightness and darkness of a colour, the most important ingredient for a convincing painting"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Painting a value scale",
+   "f": "Making five to nine even steps from white to black with a single colour"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Hue, value and saturation",
+   "f": "The three properties of colour and how to describe any colour using them"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Warm and cool colours",
+   "f": "Colour temperature, how warm colours advance and cool colours recede"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Complementary colours",
+   "f": "Opposites on the wheel, how they make each other vibrate and how they neutralise when mixed"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Mixing beautiful greys",
+   "f": "Creating lively coloured greys from complements instead of using plain black"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Tints, tones and shades",
+   "f": "Adding white, grey or a dark to a colour and how each choice changes its mood"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Earth colours",
+   "f": "Earth pigments like ochre, sienna and umber and why painters have loved them for millennia"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Keeping colours clean",
+   "f": "Avoiding muddy mixes by limiting how many pigments go into one mixture"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: tools and colour basics",
+   "f": "A relaxed look back at materials, brush marks and colour theory with a small colour swatch exercise"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Flat wash in watercolour",
+   "f": "Laying an even layer of colour across an area without streaks"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Graded wash",
+   "f": "A smooth transition from strong colour to pale using more water stroke by stroke"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Variegated wash",
+   "f": "Letting two or more colours melt into each other in one wet passage"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Wet-on-wet",
+   "f": "Painting into a damp surface for soft edges, blooms and dreamy effects"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Wet-on-dry",
+   "f": "Painting onto a dry surface for crisp edges and precise shapes"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Controlling water",
+   "f": "Reading the shine of the paper to know when it is wet, damp or dry enough to paint"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Lifting colour",
+   "f": "Removing paint with a clean damp brush or tissue to create highlights and clouds"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Saving the whites",
+   "f": "Planning the white paper as your brightest light, a core idea of transparent watercolour"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "First acrylic strokes",
+   "f": "How acrylic feels, why it dries fast and how to keep it workable"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Opaque coverage",
+   "f": "Painting light over dark with acrylic and gouache, something transparent watercolour cannot do"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Gouache: matte and bold",
+   "f": "What makes gouache special, from posters to illustration and quick studies"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Introducing oil paint",
+   "f": "Slow drying, rich colour and blending: what to expect from your first oil session"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Fat over lean",
+   "f": "The classic oil rule that each layer should be a little more flexible than the one below"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Safe and tidy studio habits",
+   "f": "Ventilation, avoiding eating while painting and disposing of rags and solvents responsibly"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Basic shapes in paint",
+   "f": "Seeing objects as spheres, cubes, cylinders and cones before adding detail"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Painting a sphere",
+   "f": "Light side, shadow side, core shadow, reflected light and cast shadow on a simple ball"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Painting a cube",
+   "f": "Showing three planes with three clear values to create solid form"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Painting a cylinder",
+   "f": "Smooth value changes around a curved form, like a cup or a bottle"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Light and shadow",
+   "f": "Where light comes from, how it falls and how a single light source makes forms read"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Cast shadows",
+   "f": "Shapes of shadows on the ground, their edges and why they are rarely pure grey"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Highlights",
+   "f": "Small bright accents that make surfaces look shiny, wet or polished"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Hard and soft edges",
+   "f": "Why some shapes need crisp borders while others should melt into their surroundings"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Your first still life",
+   "f": "Arranging two or three simple objects and painting them with big shapes first"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Painting fruit",
+   "f": "Rounded forms, subtle colour shifts and the joy of an apple or a lemon"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Painting glass and shine",
+   "f": "Seeing reflections and transparency as shapes of light and dark"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Painting fabric folds",
+   "f": "Simplifying drapery into light planes, shadow planes and soft turns"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Painting from photos",
+   "f": "Using reference photos wisely without copying every tiny detail"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Painting from life",
+   "f": "Why observing real objects trains your eye in ways a photo cannot"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Thumbnail sketches",
+   "f": "Tiny planning sketches to test composition and values before you paint"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: techniques and form",
+   "f": "Looking back at washes, opaque layers and simple forms with a mini still life"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Composition basics",
+   "f": "What composition is and how the arrangement of shapes guides the viewer"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Rule of thirds",
+   "f": "Placing points of interest off-centre for a more dynamic image"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Focal point",
+   "f": "Choosing one star of the painting and using contrast to draw the eye there"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Leading lines",
+   "f": "Roads, rivers and edges that carry the viewer into the picture"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Balance in a picture",
+   "f": "Symmetrical and asymmetrical balance and how visual weight works"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Negative space",
+   "f": "Painting the shapes around objects to see and draw them more accurately"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Simple landscape",
+   "f": "Sky, ground and a horizon: a first landscape built in three big areas"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Painting skies",
+   "f": "Blue gradients, warm horizons and the way the sky gets paler near the ground"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Painting clouds",
+   "f": "Soft edges, shadow undersides and giving clouds a sense of volume"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Painting trees simply",
+   "f": "Seeing a tree as a big mass of light and shadow before any leaves"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Painting grass and fields",
+   "f": "Suggesting texture with varied strokes instead of painting every blade"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Painting water",
+   "f": "Reflections, ripples and how still water mirrors the sky"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Distance and atmosphere",
+   "f": "Aerial perspective: faraway things become lighter, cooler and less detailed"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Painting a sunset",
+   "f": "Warm glows, silhouettes and keeping colours fresh rather than muddy"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Painting flowers",
+   "f": "Simple petals, centres and leaves, and capturing freshness with few strokes"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Painting textures",
+   "f": "Rough bark, smooth stone and soft fur suggested with different brush handling"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Sponges, knives and other tools",
+   "f": "Making marks with palette knives, sponges, cloth and even old cards"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Limited palette practice",
+   "f": "Painting with only three or four colours to gain harmony and confidence"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Monochrome painting",
+   "f": "Painting a whole picture in one colour to focus purely on value"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Painting small and often",
+   "f": "Why quick postcard-sized studies speed up progress more than one big piece"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Art history begins: cave paintings",
+   "f": "Lascaux, Chauvet and Altamira: the earliest painted animals and the pigments used"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Ancient Egyptian painting",
+   "f": "Tomb paintings, profile figures and the symbolic use of colour and scale"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Greek and Roman painting",
+   "f": "Painted pottery, Roman wall paintings and the colourful villas of Pompeii"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Byzantine icons",
+   "f": "Gold backgrounds, egg tempera on wood and a style meant to feel timeless"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Medieval manuscripts",
+   "f": "Illuminated books, precious pigments like ultramarine and tiny detailed scenes"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Giotto and a new realism",
+   "f": "How Giotto gave figures weight and emotion in early fourteenth-century Italy"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Egg tempera explained",
+   "f": "Pigment bound with egg yolk, fine hatching strokes and why it lasts for centuries"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "The birth of oil painting",
+   "f": "Jan van Eyck and Flemish painters who refined oil glazes in the fifteenth century"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Linear perspective in painting",
+   "f": "Brunelleschi's discovery and how painters built believable space on a flat surface"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: composition and early art",
+   "f": "A gentle recap of composition rules, landscape basics and painting history so far"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Leonardo da Vinci",
+   "f": "Sfumato, the Mona Lisa and his endless curiosity about light and nature"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Michelangelo the painter",
+   "f": "The Sistine Chapel ceiling and the power of the human figure"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Raphael and harmony",
+   "f": "Balanced compositions, gentle faces and the ideal of grace"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Venetian colour",
+   "f": "Titian, Giorgione and Venice's love of rich colour and glowing glazes"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Northern Renaissance detail",
+   "f": "Dürer, Bruegel and Bosch: precision, everyday life and imagination"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Fresco painting",
+   "f": "Painting into wet lime plaster, working in daily sections called giornate"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Colour harmony",
+   "f": "Analogous, complementary and triadic schemes to make colours feel unified"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Mood through colour",
+   "f": "How colour choice makes a scene feel calm, joyful, mysterious or energetic"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Simplifying what you see",
+   "f": "Squinting to merge small details into big readable shapes"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Big to small",
+   "f": "Working from large masses to medium shapes and only then to small details"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Brushwork character",
+   "f": "Smooth, blended surfaces versus visible, lively brushstrokes"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Painting a simple interior",
+   "f": "A room corner, a window and the light that falls across the floor"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Painting a window view",
+   "f": "Balancing a bright outdoor scene with a darker indoor frame"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Painting animals simply",
+   "f": "Basic shapes for cats, dogs and birds and capturing a gesture"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Painting a portrait: proportions",
+   "f": "Where eyes, nose, mouth and ears sit on an average head"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Painting eyes",
+   "f": "The eyeball as a sphere, eyelids, shadows and the tiny highlight"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Painting noses and mouths",
+   "f": "Planes of the nose and the soft edges around lips"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Mixing skin tones",
+   "f": "Building varied, natural skin colours from a few pigments for every complexion"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Self-portrait practice",
+   "f": "Using a mirror as a free and patient model"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Painting outdoors: plein air",
+   "f": "What to pack, choosing a view and working fast as the light changes"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Viewfinders and framing",
+   "f": "Using a simple card frame to find a good composition outdoors"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Painting in series",
+   "f": "Painting the same subject several times to explore ideas and grow faster"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Keeping a painting journal",
+   "f": "Notes on colours, mixes and lessons learned to track your progress"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Signing and dating your work",
+   "f": "Simple, discreet signatures and why dating work helps you see growth"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Ellipses for round objects",
+   "f": "How circles turn into ellipses in perspective on cups, bowls and vases"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Painting a cup of coffee",
+   "f": "An everyday object that combines an ellipse, liquid, shadow and a little shine"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Colour matching challenge",
+   "f": "Mixing paint to match the colours of real objects around you as closely as possible"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Quick five-minute studies",
+   "f": "Timed tiny paintings that teach you to decide fast and stop fussing over details"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Learning from mistakes",
+   "f": "Looking calmly at a painting that went wrong to find one clear thing to improve next time"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: the beginner journey",
+   "f": "Celebrating 120 days with a small painting that combines colour, value and composition"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Underpainting",
+   "f": "Starting with a toned layer or a monochrome base to set values before colour"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Toned grounds",
+   "f": "Painting on a mid-tone surface instead of white to judge lights and darks more easily"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Grisaille",
+   "f": "A full grey value painting later glazed with colour, a method used for centuries"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Glazing",
+   "f": "Thin transparent layers over dry paint for depth and luminous colour"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Scumbling",
+   "f": "Dragging thin, broken, lighter paint over a darker layer for soft atmospheric effects"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Impasto",
+   "f": "Thick paint that holds brush and knife marks and catches real light"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Dry brush",
+   "f": "Little paint on a dry brush to create rough textures like wood, grass or stone"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Alla prima",
+   "f": "Wet-into-wet painting finished in one session, direct and fresh"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Blocking in",
+   "f": "Covering the whole surface quickly with big flat shapes before refining"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Blending techniques",
+   "f": "Soft transitions with a clean brush, feathering and gradual mixing"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Palette knife painting",
+   "f": "Mixing and applying paint with a knife for bold, sculptural strokes"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Sgraffito",
+   "f": "Scratching into wet paint to reveal the layer underneath"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Masking fluid and tape",
+   "f": "Protecting areas in watercolour and acrylic for clean edges and sparkles"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Salt and texture tricks",
+   "f": "Salt, cling film and spatters in watercolour for natural textures"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Glazing with acrylic mediums",
+   "f": "Using gloss or matte mediums to make acrylic transparent and smooth"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Oil mediums",
+   "f": "Linseed oil, stand oil and solvent-free mediums and how they change flow and gloss"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Pigment properties",
+   "f": "Transparent, opaque, staining and granulating pigments and how to test them"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Lightfastness",
+   "f": "Why some pigments fade in sunlight and how to read ratings on a tube"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "A colour chart of your own",
+   "f": "Mixing every colour on your palette with every other to know your paints deeply"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "The split-primary palette",
+   "f": "A warm and a cool version of each primary for cleaner, wider mixes"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "The Zorn palette",
+   "f": "Yellow ochre, a red, black and white: a famous limited palette for portraits"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Colour temperature in light",
+   "f": "Warm light makes cool shadows and cool light makes warm shadows"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Local colour and light colour",
+   "f": "The real colour of an object versus how light changes it"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Reflected colour",
+   "f": "How colours bounce from one surface onto another nearby"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Seeing colour relationships",
+   "f": "Judging a colour by comparing it with its neighbours, not in isolation"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Edges in depth",
+   "f": "Using lost, soft, firm and hard edges to create focus and atmosphere"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Notan: light and dark design",
+   "f": "The Japanese idea of balancing light and dark shapes in a simple two-value design"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Value grouping",
+   "f": "Organising a painting into three or four clear value families"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Review: advanced techniques",
+   "f": "A recap of glazing, impasto, knives, mediums and colour palettes"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "The Baroque spirit",
+   "f": "Drama, movement and strong contrasts in seventeenth-century painting"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Caravaggio and chiaroscuro",
+   "f": "Strong light against deep darkness and real people as models"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Rembrandt",
+   "f": "Glowing light, thick impasto and deeply human portraits"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Vermeer and quiet light",
+   "f": "Soft window light, pearl-like highlights and calm everyday scenes"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Velázquez",
+   "f": "Loose, confident brushwork and the famous puzzle of Las Meninas"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Rubens and energy",
+   "f": "Swirling compositions, warm flesh tones and a busy, productive workshop"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Dutch Golden Age still life",
+   "f": "Flowers, food and objects painted with astonishing detail and symbolism"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Rococo lightness",
+   "f": "Pastel colours, playful scenes and elegant decoration in the eighteenth century"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Neoclassicism",
+   "f": "Clarity, order and inspiration from ancient Greece and Rome, as in Jacques-Louis David"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Romanticism",
+   "f": "Emotion, nature's power and imagination in Turner, Friedrich, Delacroix and Goya"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Turner and light",
+   "f": "How J. M. W. Turner turned skies, mist and sea into pure light and colour"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Constable's skies",
+   "f": "Cloud studies and English landscapes painted with fresh observation"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Realism",
+   "f": "Courbet, Millet and painting ordinary people and real life honestly"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Painting landscapes in depth",
+   "f": "Foreground, middle ground and background and how to connect them"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Mountains and rocks",
+   "f": "Planes, shadows and cool distant colour to give mountains weight"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Rivers and lakes",
+   "f": "Moving water, still reflections and painting the edge where water meets land"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Seascapes and waves",
+   "f": "The anatomy of a wave, foam and the colour of deep and shallow water"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Painting snow",
+   "f": "Snow is rarely white: blue shadows, warm lights and subtle colour"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Painting rain and wet streets",
+   "f": "Reflections, blurred lights and grey moods full of colour"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Painting fog and mist",
+   "f": "Low contrast, soft edges and the poetry of disappearing shapes"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Painting storms",
+   "f": "Dark clouds, dramatic breaks of light and wind-blown shapes painted with energy"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Night scenes",
+   "f": "Artificial light, deep blues and glowing windows after dark"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Urban sketch painting",
+   "f": "Buildings, streets and people painted quickly on location"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Simple architecture in paint",
+   "f": "Perspective, windows and shadows that make buildings feel solid"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Painting people in scenes",
+   "f": "Small figures with a few strokes to bring life and scale to a picture"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Painting trees in depth",
+   "f": "Branch structure, foliage masses and sky holes through the leaves"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Painting seasons",
+   "f": "Spring greens, summer light, autumn colours and winter greys"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Painting deserts",
+   "f": "Warm sand, strong sun, long shadows and the subtle colours of dry landscapes"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Review: Baroque to Realism",
+   "f": "A look back at the masters and landscape skills with a small inspired study"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Impressionism begins",
+   "f": "Monet, Renoir, Pissarro and friends painting light outdoors in nineteenth-century France"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Claude Monet",
+   "f": "Haystacks, water lilies and painting the same motif in changing light"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Edgar Degas",
+   "f": "Dancers, unusual viewpoints and modern Paris life"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Berthe Morisot and Mary Cassatt",
+   "f": "Two key Impressionist women and their intimate everyday scenes"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Broken colour",
+   "f": "Placing strokes of pure colour side by side so they mix in the viewer's eye"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Painting light, not things",
+   "f": "The Impressionist idea of painting how light looks rather than what you know"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Caillebotte and Impressionist cities",
+   "f": "Paris streets, bridges and bold perspectives in Gustave Caillebotte's paintings"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Post-Impressionism",
+   "f": "Artists who built on Impressionism with structure, emotion and symbol"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Vincent van Gogh",
+   "f": "Expressive brushwork, bold colour and swirling energy"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Paul Cézanne",
+   "f": "Building form with colour planes and seeing nature as geometric shapes"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Georges Seurat and pointillism",
+   "f": "Tiny dots of colour and a scientific approach to optical mixing"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Paul Gauguin",
+   "f": "Flat areas of bold colour and a decorative, dreamlike style"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Henri de Toulouse-Lautrec",
+   "f": "Posters, nightlife and lively lines influenced by Japanese prints"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Japanese prints and Europe",
+   "f": "How ukiyo-e by Hokusai and Hiroshige inspired Western painters"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Chinese ink painting",
+   "f": "Mountains, bamboo and water painted with ink, rice paper and few strokes"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Sumi-e brush practice",
+   "f": "Bamboo stems, leaves and orchids: the classic East Asian brush exercises"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Indian miniature painting",
+   "f": "Mughal and Rajput traditions with fine detail and jewel-like colour"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Persian miniature painting",
+   "f": "Delicate figures, gardens and patterns in illuminated manuscripts"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Aboriginal Australian painting",
+   "f": "Dot painting, ancestral stories and a living tradition shared respectfully"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Mexican muralism",
+   "f": "Rivera, Orozco and Siqueiros painting history and community on public walls"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Folk art traditions",
+   "f": "Decorative painting from many cultures, from Russian lacquer boxes to Brazilian naïve art"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Review: Impressionism and world traditions",
+   "f": "A recap of light-based painting and traditions from around the globe"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Portraits in depth",
+   "f": "Structure of the head, planes of the face and capturing a likeness"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Light on the face",
+   "f": "Rembrandt lighting, side light and front light and how each shapes a face"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Painting hair",
+   "f": "Big shapes and a few telling strands instead of painting every hair"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Painting hands",
+   "f": "Simplified shapes, gestures and expressive hand positions"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "The figure: proportions",
+   "f": "The head as a unit of measure and the basic proportions of the body"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Gesture in painting",
+   "f": "Capturing movement and pose quickly before any detail"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Painting clothing on figures",
+   "f": "How fabric drapes over the body and follows its movement"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Expression and emotion",
+   "f": "Showing a feeling through pose, colour and brushwork, not just the face"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Painting groups of people",
+   "f": "Overlapping, rhythm and leading the eye through several figures"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Animals in depth",
+   "f": "Fur direction, anatomy basics and capturing an animal's character"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Birds and feathers",
+   "f": "Wing shapes, soft feathers and quick studies of lively birds"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Still life in depth",
+   "f": "Choosing objects with a story, planning light and arranging a strong design"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Painting metal and reflections",
+   "f": "Silver, copper and chrome as patterns of sharp lights and darks"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Painting textiles and patterns",
+   "f": "Suggesting lace, stripes and prints without painting every detail"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Flowers in depth",
+   "f": "Petal structure, translucent light and loose but believable bouquets"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Food painting",
+   "f": "Making bread, fruit and cakes look delicious with warm light and texture"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Painting children and families",
+   "f": "Rounder proportions, gentle light and natural, playful poses"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Review: figures, animals and still life",
+   "f": "Gathering the lessons of portraits, figures and still life into one study"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Cityscapes",
+   "f": "Skylines, perspective and the rhythm of windows, roofs and streets"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Painting crowds and markets",
+   "f": "Suggesting busy scenes with shapes, colour spots and a few clear figures"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Painting vehicles and boats",
+   "f": "Simplified forms, reflections and placing them naturally in a scene"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Painting gardens",
+   "f": "Organising lush greenery into clear shapes with colour accents"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Painting interiors with light",
+   "f": "Lamps, sunbeams and reflections that bring a room to life"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Painting from imagination",
+   "f": "Using memory, sketches and knowledge to create scenes that do not exist"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Fantasy landscapes",
+   "f": "Imaginary worlds built on real rules of light, scale and atmosphere"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Storytelling in a painting",
+   "f": "Choosing the moment, the setting and details that hint at a story"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Painting the same scene twice",
+   "f": "Repainting a subject in a different medium or palette to compare"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Plein air in depth",
+   "f": "Planning a session, quick value studies and finishing fast before light shifts"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Painting changing light",
+   "f": "Morning, noon and evening light on the same scene"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Colour studies",
+   "f": "Small, fast paintings focused only on capturing colour relationships"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Value studies",
+   "f": "Small grey paintings to solve the design before using colour"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Master copies",
+   "f": "Learning by copying a detail of a great painting and noticing every decision"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Analysing a masterpiece",
+   "f": "Looking at composition, value, colour and edges in a famous painting"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Visiting a museum",
+   "f": "How to look slowly, take notes and sketch in front of real paintings"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Talking about art",
+   "f": "Useful words to describe what you see and how a painting makes you feel"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "An art movements timeline",
+   "f": "Putting the styles met so far in order to see how each one reacted to the last"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Review: cities, imagination and study",
+   "f": "A recap of urban scenes, invented worlds and learning from the masters"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Mixed media basics",
+   "f": "Combining paint with pencil, ink, collage or pastel"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Collage and paint",
+   "f": "Adding paper shapes and textures to a painting for surprise and depth"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Acrylic pouring",
+   "f": "Fluid paint, cells and controlled chance in abstract experiments"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Painting on unusual surfaces",
+   "f": "Wood, stones, fabric and recycled materials as fun supports"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Working larger",
+   "f": "Bigger brushes, stepping back and planning a larger canvas"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Working smaller",
+   "f": "Miniatures, fine brushes and keeping small paintings bold and readable"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Finishing a painting",
+   "f": "Knowing when to stop and making the last confident accents"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Fixing mistakes",
+   "f": "Wiping out, painting over, sanding and rescuing a painting that went wrong"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Varnishing basics",
+   "f": "Why varnish protects paintings and when it is safe to apply it"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Photographing your art",
+   "f": "Even light, straight angles and true colour for sharing your work"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Framing and presentation",
+   "f": "Mats, frames and simple ways to present work beautifully"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Building a daily painting habit",
+   "f": "Small daily slots, ready materials and celebrating consistency"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Review: the intermediate journey",
+   "f": "Celebrating 250 days with a painting that shows your favourite techniques"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Modern art begins",
+   "f": "How photography, new paints in tubes and new ideas changed painting around 1900"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Gustav Klimt and gold",
+   "f": "Decorative patterns, gold leaf and the Vienna Secession around 1900"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Fauvism",
+   "f": "Matisse, Derain and wild, expressive colour freed from realism"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Henri Matisse",
+   "f": "Colour, pattern and joy, from oil paintings to his late paper cut-outs"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Expressionism",
+   "f": "Inner feelings shown through bold colour and distortion, from Munch to Die Brücke"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Der Blaue Reiter",
+   "f": "Kandinsky, Franz Marc and the spiritual power of colour"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Cubism",
+   "f": "Picasso and Braque showing objects from many viewpoints at once"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Pablo Picasso",
+   "f": "A long career of constant change, from Blue Period to Cubism and beyond"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Amedeo Modigliani",
+   "f": "Elongated faces, almond-shaped eyes and graceful simplified portraits"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Futurism",
+   "f": "Speed, machines and movement painted by Italian artists like Boccioni and Balla"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Wassily Kandinsky and abstraction",
+   "f": "One of the pioneers of fully abstract painting and his ideas about colour and sound"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Piet Mondrian",
+   "f": "From trees to grids of primary colours and black lines"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Paul Klee",
+   "f": "Playful lines, colour squares and teaching at the Bauhaus"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Surrealism",
+   "f": "Dreams and the unconscious in Dalí, Magritte and Miró"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Frida Kahlo",
+   "f": "Vivid self-portraits rooted in Mexican culture and personal symbolism"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Tarsila do Amaral",
+   "f": "Brazilian modernism, warm bold colours and the famous painting Abaporu"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Georgia O'Keeffe",
+   "f": "Giant flowers, desert landscapes and a distinctly American modernism"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Edward Hopper",
+   "f": "Quiet cities, strong light and a feeling of solitude in everyday places"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Abstract Expressionism",
+   "f": "Large gestural canvases by Pollock, de Kooning and others in New York"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Mark Rothko and colour fields",
+   "f": "Big soft rectangles of colour meant to create a deep experience"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Helen Frankenthaler and Joan Mitchell",
+   "f": "Two major abstract painters: soak-stain colour and energetic, lyrical brushwork"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Pop Art",
+   "f": "Warhol, Lichtenstein and the bright imagery of ads and comics"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Op Art",
+   "f": "Bridget Riley, Victor Vasarely and paintings that seem to move"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Minimalism in painting",
+   "f": "Simple forms, flat colour and the idea of less is more"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Photorealism",
+   "f": "Paintings so precise they look like photographs"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "David Hockney",
+   "f": "Bright swimming pools, big landscapes and a lifelong love of trying new tools"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Contemporary painting today",
+   "f": "The many styles living painters explore, from figurative to abstract"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Review: modern movements",
+   "f": "A recap of the twentieth-century revolutions in painting"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Starting abstract painting",
+   "f": "Shape, colour, line and texture as the subject of the painting"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Composition in abstraction",
+   "f": "Balance, rhythm and focal areas in a painting without objects"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Gestural abstraction",
+   "f": "Painting with the whole arm, energy and spontaneous marks"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Geometric abstraction",
+   "f": "Hard edges, tape and planned colour relationships"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Abstracting from nature",
+   "f": "Simplifying a landscape step by step until it becomes abstract"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Texture and layers",
+   "f": "Building surfaces with modelling paste, scraping and layering"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Colour field experiments",
+   "f": "Large areas of colour and how they interact with each other"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Abstract colour moods",
+   "f": "Choosing two or three colour families to give an abstract painting a clear mood"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Intuitive painting",
+   "f": "Starting without a plan and responding to what appears on the surface"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Advanced colour: harmony by mixing",
+   "f": "Mixing a bit of one colour into all others for unity"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Advanced colour: chroma control",
+   "f": "Saving the most saturated colour for where it matters most"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Colour gamut mapping",
+   "f": "Planning a limited set of colours before painting to guarantee harmony"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Advanced value: high key and low key",
+   "f": "Paintings built mostly in light or mostly in dark values for mood"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Advanced edges: lost and found",
+   "f": "Letting shapes disappear and reappear to lead the eye"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Atmosphere and depth",
+   "f": "Combining value, colour, edge and detail to push space back"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Light effects: backlight",
+   "f": "Rim light, glowing edges and silhouettes against bright skies"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Light effects: dappled light",
+   "f": "Sunlight through leaves on the ground, faces and walls"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Light effects: overcast days",
+   "f": "Soft shadows, gentle contrast and subtle, rich colour under a cloudy sky"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Light effects: candle and firelight",
+   "f": "Warm local glows that fall off quickly into darkness"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Painting reflections advanced",
+   "f": "Reflections in water, glass and polished floors and their rules"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Painting skies advanced",
+   "f": "Cloud families, sky gradients and letting the sky set the mood of a landscape"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Painting transparency",
+   "f": "Glass, water and thin fabrics using layers of colour and edges"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Review: advanced colour and light",
+   "f": "A recap with a small study combining high-level colour and light ideas"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Traditional egg tempera",
+   "f": "Preparing a gesso panel and painting with egg yolk the old way"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Encaustic painting",
+   "f": "Painting with hot pigmented wax, an ancient technique still used today"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Fresco in depth",
+   "f": "Lime, sand and pigment, true fresco versus painting on dry plaster"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Gouache illustration",
+   "f": "Flat colour shapes and crisp edges in book and poster illustration"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Watercolour advanced",
+   "f": "Layered glazes, controlled blooms and painting light in transparent colour"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Oil painting advanced",
+   "f": "Building layers, controlling drying and achieving rich surface finishes"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Acrylic advanced",
+   "f": "Retarders, layering and getting soft blends from a fast-drying paint"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Digital painting basics",
+   "f": "Tablets, layers and brushes, and how traditional skills transfer to screens"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Making your own paint",
+   "f": "Grinding pigment with a binder to understand paint from the inside"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Natural pigments",
+   "f": "Earths, minerals and plant colours used through history and their stories"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "History of blue",
+   "f": "Ultramarine from lapis lazuli, Prussian blue and the search for perfect blues"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "History of red and yellow",
+   "f": "Vermilion, madder, ochre and the colourful journey of warm pigments"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Review: materials and old techniques",
+   "f": "A recap of tempera, encaustic, fresco and making paint"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Large compositions",
+   "f": "Planning big multi-figure or panoramic paintings with sketches and studies"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "The golden ratio and dynamic grids",
+   "f": "Classical proportional systems and how painters have used them"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Rhythm and repetition",
+   "f": "Repeating shapes and colours to create movement across the picture"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Cropping and point of view",
+   "f": "Bold crops, high and low viewpoints for more striking images"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Contrast as a tool",
+   "f": "Contrast of value, colour, size and texture to direct attention"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Simplicity versus complexity",
+   "f": "Deciding how much detail a painting really needs"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Visual storytelling advanced",
+   "f": "Symbols, gestures and composition that tell a deeper story"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Painting a narrative series",
+   "f": "Several paintings that tell one story or explore one theme"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Painting a triptych",
+   "f": "Three panels that work alone and together as one composition"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Finding your subject",
+   "f": "Discovering what you really want to paint and why it matters to you"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Developing a personal style",
+   "f": "How style grows naturally from repeated choices and honest practice"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Learning from influences",
+   "f": "Studying artists you love without copying, and making their lessons your own"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Sketchbook as a lab",
+   "f": "Using a sketchbook to test ideas, colours and compositions freely"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Review: composition and personal voice",
+   "f": "A recap of advanced composition and early steps toward your style"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Self-critique",
+   "f": "A friendly checklist to review your own paintings honestly and kindly"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Giving and receiving feedback",
+   "f": "How to give helpful critique and listen to feedback with an open mind"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Overcoming creative blocks",
+   "f": "Small prompts, new materials and changes of routine to restart creativity"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Perfectionism and progress",
+   "f": "Why unfinished and imperfect paintings are part of growing as an artist"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Setting painting goals",
+   "f": "Planning skills to learn and projects to finish over the coming months"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Painting challenges",
+   "f": "Thirty-day challenges, themes and prompts to stay motivated"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Painting with others",
+   "f": "Clubs, workshops and painting meetups as a way to learn and make friends"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Sharing art online",
+   "f": "Showing your work, telling the story behind it and connecting with others"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Building a portfolio",
+   "f": "Choosing your strongest and most coherent works to present"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Writing an artist statement",
+   "f": "Describing your work simply and honestly in a few sentences"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Exhibiting your work",
+   "f": "Local cafés, group shows and preparing paintings to hang"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Commissions basics",
+   "f": "Listening to a client's wishes and agreeing clearly on size and timing"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Review: the artist's life",
+   "f": "A recap of critique, motivation, sharing and exhibiting"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Caring for paintings",
+   "f": "Light, humidity and handling: keeping finished paintings safe for years"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Art conservation",
+   "f": "How restorers clean and protect old paintings and why they work so carefully"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Famous rediscoveries",
+   "f": "Hidden layers and underdrawings revealed by X-rays and infrared imaging"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Women in painting history",
+   "f": "Artemisia Gentileschi, Élisabeth Vigée Le Brun and others who shaped art"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Painting around the world today",
+   "f": "Lively painting scenes in Africa, Asia, Latin America and beyond"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Street art and murals",
+   "f": "Large public paintings that transform walls and neighbourhoods"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Painting and music",
+   "f": "Artists inspired by rhythm and sound, and painting to music yourself"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Painting and poetry",
+   "f": "Paintings inspired by poems and writing words in response to a painting"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Painting your hometown",
+   "f": "Capturing the places and colours that mean home to you"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Painting a cultural festival",
+   "f": "Colour, crowds and movement from celebrations around the world"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Painting a favourite memory",
+   "f": "Turning a cherished memory into a scene with mood and colour"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Painting with a friend abroad",
+   "f": "Comparing views, light and colours from two different countries"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Review: art, culture and the world",
+   "f": "A recap of conservation, history and painting across cultures"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Planning a major project",
+   "f": "Choosing a subject, size and schedule for your most ambitious painting yet"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Major project: studies",
+   "f": "Thumbnails, value studies and colour studies for your big painting"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Major project: drawing and block-in",
+   "f": "Transferring the design and covering the surface with big shapes"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Major project: building layers",
+   "f": "Developing form, colour and light across the whole painting"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Major project: details and focus",
+   "f": "Refining the focal area and keeping the rest supportive"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Major project: finishing touches",
+   "f": "Final accents, signature and stepping back to judge the whole"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Reflecting on your project",
+   "f": "What worked, what you learned and what you would change"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Looking at your first paintings",
+   "f": "Comparing day-one work with today to see how far you have come"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Your painting future",
+   "f": "Next steps, new media to try and ways to keep painting for life"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Review: the advanced journey",
+   "f": "A recap of the advanced stage, from modern movements to your major project"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Celebrating 365 days of painting",
+   "f": "Looking back on a full year, choosing favourites and sharing your painting story"
+  }
+ ]
+}

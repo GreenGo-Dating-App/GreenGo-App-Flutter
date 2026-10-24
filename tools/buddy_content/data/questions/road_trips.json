@@ -1,0 +1,1305 @@
+{
+"topic": "road_trips",
+"questions": [
+{
+"id": "road_trips-001",
+"lv": "any",
+"i18n": {
+"en": "What's the most memorable road trip you've ever taken?",
+"de": "Was war der unvergesslichste Roadtrip, den du je gemacht hast?",
+"es": "¿Cuál ha sido el viaje por carretera más memorable de tu vida?",
+"fr": "Quel est le road trip le plus mémorable que tu aies fait ?",
+"it": "Qual è il viaggio in auto più memorabile che tu abbia mai fatto?",
+"pt": "Qual foi a viagem de carro mais memorável que já fizeste?",
+"pt_BR": "Qual foi a viagem de carro mais marcante que você já fez?"
+}
+},
+{
+"id": "road_trips-002",
+"lv": "any",
+"i18n": {
+"en": "If you could drive any road in the world tomorrow, which one would you pick?",
+"de": "Wenn du morgen jede Straße der Welt fahren könntest, welche würdest du wählen?",
+"es": "Si mañana pudieras recorrer cualquier carretera del mundo, ¿cuál elegirías?",
+"fr": "Si tu pouvais rouler sur n'importe quelle route du monde demain, laquelle choisirais-tu ?",
+"it": "Se domani potessi percorrere qualsiasi strada del mondo, quale sceglieresti?",
+"pt": "Se amanhã pudesses percorrer qualquer estrada do mundo, qual escolherias?",
+"pt_BR": "Se amanhã você pudesse dirigir em qualquer estrada do mundo, qual escolheria?"
+}
+},
+{
+"id": "road_trips-003",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer driving or being the passenger on a long trip? Why?",
+"de": "Fährst du auf langen Strecken lieber selbst oder bist du lieber Beifahrer? Warum?",
+"es": "¿Prefieres conducir o ir de copiloto en un viaje largo? ¿Por qué?",
+"fr": "Tu préfères conduire ou être passager pendant un long trajet ? Pourquoi ?",
+"it": "Preferisci guidare o fare il passeggero in un viaggio lungo? Perché?",
+"pt": "Preferes conduzir ou ir como passageiro numa viagem longa? Porquê?",
+"pt_BR": "Você prefere dirigir ou ir de passageiro numa viagem longa? Por quê?"
+}
+},
+{
+"id": "road_trips-004",
+"lv": "any",
+"i18n": {
+"en": "What song always ends up on your road trip playlist?",
+"de": "Welcher Song landet immer auf deiner Roadtrip-Playlist?",
+"es": "¿Qué canción nunca falta en tu playlist de viaje en coche?",
+"fr": "Quelle chanson finit toujours dans ta playlist de road trip ?",
+"it": "Quale canzone non manca mai nella tua playlist da viaggio in auto?",
+"pt": "Que música nunca falta na tua playlist de viagem de carro?",
+"pt_BR": "Qual música nunca falta na sua playlist de viagem de carro?"
+}
+},
+{
+"id": "road_trips-005",
+"lv": "any",
+"i18n": {
+"en": "Who would be your ideal road trip companion, and why?",
+"de": "Wer wäre dein idealer Roadtrip-Begleiter und warum?",
+"es": "¿Quién sería tu compañero ideal de viaje por carretera y por qué?",
+"fr": "Qui serait ton compagnon de road trip idéal, et pourquoi ?",
+"it": "Chi sarebbe il tuo compagno ideale per un viaggio on the road, e perché?",
+"pt": "Quem seria o teu companheiro ideal para uma viagem de carro, e porquê?",
+"pt_BR": "Quem seria seu companheiro ideal de viagem de carro, e por quê?"
+}
+},
+{
+"id": "road_trips-006",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite road trip snack?",
+"de": "Was ist dein liebster Snack für unterwegs im Auto?",
+"es": "¿Cuál es tu tentempié favorito para un viaje en coche?",
+"fr": "Quel est ton en-cas préféré pendant un road trip ?",
+"it": "Qual è il tuo snack preferito durante un viaggio in auto?",
+"pt": "Qual é o teu petisco preferido para uma viagem de carro?",
+"pt_BR": "Qual é o seu lanche favorito pra viagem de carro?"
+}
+},
+{
+"id": "road_trips-007",
+"lv": "any",
+"i18n": {
+"en": "Do you like planning every detail of a trip or leaving room for surprises?",
+"de": "Planst du gern jedes Detail einer Reise oder lässt du lieber Platz für Überraschungen?",
+"es": "¿Te gusta planear cada detalle de un viaje o prefieres dejar espacio para sorpresas?",
+"fr": "Tu aimes planifier chaque détail d'un voyage ou laisser place aux surprises ?",
+"it": "Ti piace pianificare ogni dettaglio di un viaggio o lasciare spazio alle sorprese?",
+"pt": "Gostas de planear cada detalhe de uma viagem ou de deixar espaço para surpresas?",
+"pt_BR": "Você gosta de planejar cada detalhe da viagem ou prefere deixar espaço para surpresas?"
+}
+},
+{
+"id": "road_trips-008",
+"lv": "any",
+"i18n": {
+"en": "What kind of landscape makes you want to pull over and look?",
+"de": "Bei welcher Landschaft möchtest du sofort anhalten und schauen?",
+"es": "¿Qué tipo de paisaje te da ganas de parar el coche para contemplarlo?",
+"fr": "Quel genre de paysage te donne envie de t'arrêter pour l'admirer ?",
+"it": "Quale paesaggio ti fa venire voglia di accostare per guardarlo?",
+"pt": "Que tipo de paisagem te faz querer parar o carro só para olhar?",
+"pt_BR": "Que tipo de paisagem faz você querer parar o carro só pra olhar?"
+}
+},
+{
+"id": "road_trips-009",
+"lv": "any",
+"i18n": {
+"en": "Coast, mountains or countryside: which road trip setting do you love most?",
+"de": "Küste, Berge oder Land: Welche Kulisse liebst du auf Roadtrips am meisten?",
+"es": "Costa, montaña o campo: ¿qué escenario prefieres para un viaje en coche?",
+"fr": "Côte, montagne ou campagne : quel décor préfères-tu pour un road trip ?",
+"it": "Costa, montagna o campagna: quale scenario ami di più per un viaggio in auto?",
+"pt": "Costa, montanha ou campo: que cenário preferes para uma viagem de carro?",
+"pt_BR": "Litoral, montanha ou interior: qual cenário você mais ama numa viagem de carro?"
+}
+},
+{
+"id": "road_trips-010",
+"lv": "any",
+"i18n": {
+"en": "What's one small town you discovered by chance and still remember?",
+"de": "Welches kleine Städtchen hast du zufällig entdeckt und erinnerst dich noch heute daran?",
+"es": "¿Qué pueblo pequeño descubriste por casualidad y todavía recuerdas?",
+"fr": "Quelle petite ville as-tu découverte par hasard et dont tu te souviens encore ?",
+"it": "Qual è un paesino che hai scoperto per caso e che ricordi ancora?",
+"pt": "Que pequena vila descobriste por acaso e ainda recordas?",
+"pt_BR": "Qual cidadezinha você descobriu por acaso e ainda lembra?"
+}
+},
+{
+"id": "road_trips-011",
+"lv": "any",
+"i18n": {
+"en": "How do you usually pass the time on long drives?",
+"de": "Wie vertreibst du dir normalerweise die Zeit auf langen Fahrten?",
+"es": "¿Cómo sueles pasar el tiempo en los trayectos largos?",
+"fr": "Comment passes-tu le temps d'habitude pendant les longs trajets ?",
+"it": "Come passi di solito il tempo durante i tragitti lunghi?",
+"pt": "Como costumas passar o tempo nas viagens longas?",
+"pt_BR": "Como você costuma passar o tempo em viagens longas?"
+}
+},
+{
+"id": "road_trips-012",
+"lv": "any",
+"i18n": {
+"en": "Would you rather sleep in a cosy motel or under the stars at a campsite?",
+"de": "Schläfst du lieber in einem gemütlichen Motel oder unter den Sternen auf dem Campingplatz?",
+"es": "¿Prefieres dormir en un motel acogedor o bajo las estrellas en un camping?",
+"fr": "Tu préfères dormir dans un motel douillet ou sous les étoiles au camping ?",
+"it": "Preferisci dormire in un motel accogliente o sotto le stelle in campeggio?",
+"pt": "Preferes dormir num motel acolhedor ou sob as estrelas num parque de campismo?",
+"pt_BR": "Você prefere dormir num motel aconchegante ou sob as estrelas num camping?"
+}
+},
+{
+"id": "road_trips-013",
+"lv": "any",
+"i18n": {
+"en": "Which country would you love to explore by car one day?",
+"de": "Welches Land würdest du gern einmal mit dem Auto erkunden?",
+"es": "¿Qué país te encantaría recorrer en coche algún día?",
+"fr": "Quel pays aimerais-tu explorer en voiture un jour ?",
+"it": "Quale paese ti piacerebbe esplorare in auto un giorno?",
+"pt": "Que país adorarias explorar de carro um dia?",
+"pt_BR": "Qual país você adoraria explorar de carro um dia?"
+}
+},
+{
+"id": "road_trips-014",
+"lv": "any",
+"i18n": {
+"en": "What does freedom on the road mean to you?",
+"de": "Was bedeutet Freiheit auf der Straße für dich?",
+"es": "¿Qué significa para ti la libertad en la carretera?",
+"fr": "Que signifie pour toi la liberté sur la route ?",
+"it": "Che cosa significa per te la libertà sulla strada?",
+"pt": "O que significa para ti a liberdade na estrada?",
+"pt_BR": "O que liberdade na estrada significa pra você?"
+}
+},
+{
+"id": "road_trips-015",
+"lv": "any",
+"i18n": {
+"en": "What's the funniest thing that ever happened to you on a road trip?",
+"de": "Was war das Lustigste, das dir je auf einem Roadtrip passiert ist?",
+"es": "¿Qué es lo más divertido que te ha pasado en un viaje por carretera?",
+"fr": "Quelle est la chose la plus drôle qui te soit arrivée en road trip ?",
+"it": "Qual è la cosa più divertente che ti sia successa in un viaggio in auto?",
+"pt": "Qual foi a coisa mais engraçada que te aconteceu numa viagem de carro?",
+"pt_BR": "Qual foi a coisa mais engraçada que já aconteceu com você numa viagem de carro?"
+}
+},
+{
+"id": "road_trips-016",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy driving at sunrise, in the afternoon or at sunset?",
+"de": "Fährst du am liebsten bei Sonnenaufgang, am Nachmittag oder bei Sonnenuntergang?",
+"es": "¿Te gusta más conducir al amanecer, por la tarde o al atardecer?",
+"fr": "Tu préfères conduire au lever du soleil, l'après-midi ou au coucher du soleil ?",
+"it": "Ti piace di più guidare all'alba, nel pomeriggio o al tramonto?",
+"pt": "Gostas mais de conduzir ao nascer do sol, à tarde ou ao pôr do sol?",
+"pt_BR": "Você gosta mais de dirigir no nascer do sol, à tarde ou no pôr do sol?"
+}
+},
+{
+"id": "road_trips-017",
+"lv": "any",
+"i18n": {
+"en": "What's one thing you always pack for a trip by car?",
+"de": "Was packst du für eine Autoreise immer ein?",
+"es": "¿Qué es lo que nunca falta en tu equipaje para un viaje en coche?",
+"fr": "Quelle est la chose que tu emportes toujours pour un voyage en voiture ?",
+"it": "Qual è la cosa che metti sempre in valigia per un viaggio in auto?",
+"pt": "O que levas sempre na mala numa viagem de carro?",
+"pt_BR": "O que você sempre leva numa viagem de carro?"
+}
+},
+{
+"id": "road_trips-018",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite car, real or imaginary, for the perfect trip?",
+"de": "Hast du ein Lieblingsauto, echt oder erträumt, für die perfekte Reise?",
+"es": "¿Tienes un coche favorito, real o soñado, para el viaje perfecto?",
+"fr": "As-tu une voiture préférée, réelle ou rêvée, pour le voyage parfait ?",
+"it": "Hai un'auto preferita, reale o immaginaria, per il viaggio perfetto?",
+"pt": "Tens um carro preferido, real ou imaginário, para a viagem perfeita?",
+"pt_BR": "Você tem um carro favorito, real ou dos sonhos, para a viagem perfeita?"
+}
+},
+{
+"id": "road_trips-019",
+"lv": "any",
+"i18n": {
+"en": "Which famous road from a film or book would you love to drive?",
+"de": "Welche berühmte Straße aus einem Film oder Buch würdest du gern fahren?",
+"es": "¿Qué carretera famosa de una película o libro te encantaría recorrer?",
+"fr": "Quelle route célèbre d'un film ou d'un livre aimerais-tu parcourir ?",
+"it": "Quale strada famosa di un film o di un libro ti piacerebbe percorrere?",
+"pt": "Que estrada famosa de um filme ou livro adorarias percorrer?",
+"pt_BR": "Qual estrada famosa de um filme ou livro você adoraria percorrer?"
+}
+},
+{
+"id": "road_trips-020",
+"lv": "any",
+"i18n": {
+"en": "What makes a stop on the road truly worth it for you?",
+"de": "Was macht einen Zwischenstopp für dich wirklich lohnenswert?",
+"es": "¿Qué hace que una parada en el camino valga realmente la pena para ti?",
+"fr": "Qu'est-ce qui rend une étape vraiment intéressante pour toi ?",
+"it": "Che cosa rende una sosta lungo la strada davvero speciale per te?",
+"pt": "O que torna uma paragem na estrada realmente valiosa para ti?",
+"pt_BR": "O que faz uma parada na estrada valer muito a pena pra você?"
+}
+},
+{
+"id": "road_trips-021",
+"lv": "any",
+"i18n": {
+"en": "Do you collect anything on your trips, like stickers, maps or photos?",
+"de": "Sammelst du auf deinen Reisen etwas, zum Beispiel Aufkleber, Karten oder Fotos?",
+"es": "¿Coleccionas algo en tus viajes, como pegatinas, mapas o fotos?",
+"fr": "Collectionnes-tu quelque chose en voyage, comme des autocollants, des cartes ou des photos ?",
+"it": "Collezioni qualcosa nei tuoi viaggi, come adesivi, mappe o foto?",
+"pt": "Colecionas alguma coisa nas tuas viagens, como autocolantes, mapas ou fotografias?",
+"pt_BR": "Você coleciona algo nas viagens, como adesivos, mapas ou fotos?"
+}
+},
+{
+"id": "road_trips-022",
+"lv": "any",
+"i18n": {
+"en": "What's your dream road trip if time and budget didn't matter?",
+"de": "Wie sähe dein Traum-Roadtrip aus, wenn Zeit und Geld keine Rolle spielten?",
+"es": "¿Cuál sería tu viaje soñado en coche si el tiempo y el dinero no importaran?",
+"fr": "Quel serait ton road trip de rêve si le temps et le budget ne comptaient pas ?",
+"it": "Quale sarebbe il tuo viaggio in auto dei sogni senza limiti di tempo e budget?",
+"pt": "Qual seria a tua viagem de carro de sonho se tempo e dinheiro não importassem?",
+"pt_BR": "Qual seria sua viagem de carro dos sonhos se tempo e dinheiro não importassem?"
+}
+},
+{
+"id": "road_trips-023",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer a few long driving days or many short ones?",
+"de": "Hast du lieber wenige lange Fahrtage oder viele kurze?",
+"es": "¿Prefieres pocos días de mucho volante o muchos días de trayectos cortos?",
+"fr": "Tu préfères quelques longues journées de route ou beaucoup de courtes ?",
+"it": "Preferisci pochi giorni di guida lunga o tanti giorni con tragitti brevi?",
+"pt": "Preferes poucos dias de muita estrada ou muitos dias com trajetos curtos?",
+"pt_BR": "Você prefere poucos dias de muita estrada ou muitos dias com trechos curtos?"
+}
+},
+{
+"id": "road_trips-024",
+"lv": "any",
+"i18n": {
+"en": "What's a road trip tradition you have, or would like to start?",
+"de": "Welche Roadtrip-Tradition hast du, oder welche möchtest du beginnen?",
+"es": "¿Qué tradición tienes en tus viajes por carretera o cuál te gustaría empezar?",
+"fr": "Quelle tradition de road trip as-tu, ou aimerais-tu commencer ?",
+"it": "Quale tradizione hai nei viaggi in auto, o quale vorresti iniziare?",
+"pt": "Que tradição tens nas viagens de carro, ou qual gostarias de começar?",
+"pt_BR": "Que tradição você tem nas viagens de carro, ou qual gostaria de começar?"
+}
+},
+{
+"id": "road_trips-025",
+"lv": "any",
+"i18n": {
+"en": "Have you ever taken a detour that turned into the best part of the trip?",
+"de": "Hast du schon mal einen Umweg gemacht, der zum Highlight der Reise wurde?",
+"es": "¿Alguna vez un desvío se convirtió en lo mejor del viaje?",
+"fr": "As-tu déjà fait un détour qui est devenu le meilleur moment du voyage ?",
+"it": "Ti è mai capitata una deviazione che è diventata la parte migliore del viaggio?",
+"pt": "Já fizeste algum desvio que acabou por ser a melhor parte da viagem?",
+"pt_BR": "Você já fez um desvio que virou a melhor parte da viagem?"
+}
+},
+{
+"id": "road_trips-026",
+"lv": "any",
+"i18n": {
+"en": "What's the most beautiful view you've ever seen from a car window?",
+"de": "Was war der schönste Ausblick, den du je aus einem Autofenster gesehen hast?",
+"es": "¿Cuál es la vista más bonita que has visto desde la ventanilla de un coche?",
+"fr": "Quelle est la plus belle vue que tu aies vue depuis la fenêtre d'une voiture ?",
+"it": "Qual è il panorama più bello che hai visto dal finestrino di un'auto?",
+"pt": "Qual foi a vista mais bonita que já viste da janela de um carro?",
+"pt_BR": "Qual foi a vista mais bonita que você já viu da janela de um carro?"
+}
+},
+{
+"id": "road_trips-027",
+"lv": "any",
+"i18n": {
+"en": "Do you like road trips in summer, or do you prefer quieter seasons?",
+"de": "Magst du Roadtrips im Sommer oder lieber in ruhigeren Jahreszeiten?",
+"es": "¿Te gustan los viajes en coche en verano o prefieres temporadas más tranquilas?",
+"fr": "Tu aimes les road trips en été, ou préfères-tu les saisons plus calmes ?",
+"it": "Ti piacciono i viaggi in auto d'estate o preferisci le stagioni più tranquille?",
+"pt": "Gostas de viagens de carro no verão ou preferes épocas mais tranquilas?",
+"pt_BR": "Você gosta de viagem de carro no verão ou prefere épocas mais tranquilas?"
+}
+},
+{
+"id": "road_trips-028",
+"lv": "any",
+"i18n": {
+"en": "What kind of food do you love finding along the road?",
+"de": "Welches Essen findest du unterwegs am liebsten?",
+"es": "¿Qué tipo de comida te encanta encontrar por el camino?",
+"fr": "Quel genre de nourriture aimes-tu découvrir en chemin ?",
+"it": "Che tipo di cibo ami trovare lungo la strada?",
+"pt": "Que tipo de comida adoras encontrar pelo caminho?",
+"pt_BR": "Que tipo de comida você adora encontrar pelo caminho?"
+}
+},
+{
+"id": "road_trips-029",
+"lv": "any",
+"i18n": {
+"en": "Is there a road near where you live that you think everyone should drive?",
+"de": "Gibt es in deiner Nähe eine Straße, die deiner Meinung nach jeder fahren sollte?",
+"es": "¿Hay alguna carretera cerca de donde vives que todo el mundo debería recorrer?",
+"fr": "Y a-t-il une route près de chez toi que tout le monde devrait parcourir ?",
+"it": "C'è una strada vicino a casa tua che secondo te tutti dovrebbero percorrere?",
+"pt": "Há alguma estrada perto de onde vives que todos deviam percorrer?",
+"pt_BR": "Tem alguma estrada perto de onde você mora que todo mundo deveria conhecer?"
+}
+},
+{
+"id": "road_trips-030",
+"lv": "any",
+"i18n": {
+"en": "What would your perfect day on the road look like, hour by hour?",
+"de": "Wie sähe dein perfekter Tag unterwegs aus, Stunde für Stunde?",
+"es": "¿Cómo sería tu día perfecto en la carretera, hora por hora?",
+"fr": "À quoi ressemblerait ta journée parfaite sur la route, heure par heure ?",
+"it": "Come sarebbe la tua giornata perfetta in viaggio, ora per ora?",
+"pt": "Como seria o teu dia perfeito na estrada, hora a hora?",
+"pt_BR": "Como seria seu dia perfeito na estrada, hora por hora?"
+}
+},
+{
+"id": "road_trips-031",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy chatting with locals when you stop in a new place?",
+"de": "Unterhältst du dich gern mit Einheimischen, wenn du an einem neuen Ort anhältst?",
+"es": "¿Te gusta charlar con la gente local cuando paras en un lugar nuevo?",
+"fr": "Aimes-tu discuter avec les habitants quand tu t'arrêtes dans un nouvel endroit ?",
+"it": "Ti piace chiacchierare con la gente del posto quando ti fermi in un luogo nuovo?",
+"pt": "Gostas de conversar com as pessoas locais quando paras num sítio novo?",
+"pt_BR": "Você gosta de conversar com os moradores quando para num lugar novo?"
+}
+},
+{
+"id": "road_trips-032",
+"lv": "any",
+"i18n": {
+"en": "How do you like to remember a trip: photos, a journal or souvenirs?",
+"de": "Wie hältst du Reisen am liebsten fest: mit Fotos, einem Tagebuch oder Souvenirs?",
+"es": "¿Cómo te gusta recordar un viaje: con fotos, un diario o recuerdos?",
+"fr": "Comment aimes-tu garder le souvenir d'un voyage : photos, carnet ou souvenirs ?",
+"it": "Come ti piace ricordare un viaggio: foto, diario o souvenir?",
+"pt": "Como gostas de recordar uma viagem: fotografias, um diário ou lembranças?",
+"pt_BR": "Como você gosta de guardar uma viagem: fotos, diário ou lembrancinhas?"
+}
+},
+{
+"id": "road_trips-033",
+"lv": "any",
+"i18n": {
+"en": "Would you rather explore one region deeply or cover many places quickly?",
+"de": "Erkundest du lieber eine Region gründlich oder viele Orte im Schnelldurchlauf?",
+"es": "¿Prefieres explorar a fondo una región o recorrer muchos lugares rápidamente?",
+"fr": "Tu préfères explorer une région en profondeur ou voir beaucoup d'endroits rapidement ?",
+"it": "Preferisci esplorare a fondo una regione o vedere tanti posti in fretta?",
+"pt": "Preferes explorar uma região a fundo ou ver muitos sítios rapidamente?",
+"pt_BR": "Você prefere explorar uma região a fundo ou ver muitos lugares rapidinho?"
+}
+},
+{
+"id": "road_trips-034",
+"lv": "any",
+"i18n": {
+"en": "Have you ever travelled in a campervan, or would you like to try?",
+"de": "Bist du schon mal mit einem Campervan gereist, oder würdest du es gern ausprobieren?",
+"es": "¿Has viajado alguna vez en autocaravana o te gustaría probarlo?",
+"fr": "As-tu déjà voyagé en van aménagé, ou aimerais-tu essayer ?",
+"it": "Hai mai viaggiato in camper, o ti piacerebbe provare?",
+"pt": "Já viajaste numa autocaravana, ou gostavas de experimentar?",
+"pt_BR": "Você já viajou de motorhome, ou gostaria de experimentar?"
+}
+},
+{
+"id": "road_trips-035",
+"lv": "any",
+"i18n": {
+"en": "What's one place you visited by car that you'd happily return to?",
+"de": "An welchen Ort, den du mit dem Auto besucht hast, würdest du gern zurückkehren?",
+"es": "¿A qué lugar que visitaste en coche volverías encantado?",
+"fr": "Quel endroit visité en voiture reverrais-tu avec plaisir ?",
+"it": "In quale posto visitato in auto torneresti volentieri?",
+"pt": "A que sítio que visitaste de carro voltarias com todo o gosto?",
+"pt_BR": "Pra qual lugar que você visitou de carro voltaria com prazer?"
+}
+},
+{
+"id": "road_trips-036",
+"lv": "any",
+"i18n": {
+"en": "Are you more of a motorway driver or a back roads explorer?",
+"de": "Bist du eher Autobahnfahrer oder Entdecker der Nebenstraßen?",
+"es": "¿Eres más de autopista o de explorar carreteras secundarias?",
+"fr": "Es-tu plutôt autoroute ou petites routes de campagne ?",
+"it": "Sei più tipo da autostrada o da strade secondarie?",
+"pt": "És mais de autoestrada ou de explorar estradas secundárias?",
+"pt_BR": "Você é mais de rodovia ou de explorar estradas secundárias?"
+}
+},
+{
+"id": "road_trips-037",
+"lv": "any",
+"i18n": {
+"en": "What's a road trip lesson you learned the hard way?",
+"de": "Welche Roadtrip-Lektion hast du auf die harte Tour gelernt?",
+"es": "¿Qué lección de viaje en coche aprendiste por las malas?",
+"fr": "Quelle leçon de road trip as-tu apprise à tes dépens ?",
+"it": "Quale lezione di viaggio in auto hai imparato a tue spese?",
+"pt": "Que lição de viagem de carro aprendeste da pior maneira?",
+"pt_BR": "Que lição de viagem de carro você aprendeu do jeito mais difícil?"
+}
+},
+{
+"id": "road_trips-038",
+"lv": "any",
+"i18n": {
+"en": "Which do you enjoy more: the planning before a trip or the trip itself?",
+"de": "Was genießt du mehr: die Planung vor der Reise oder die Reise selbst?",
+"es": "¿Qué disfrutas más: planear el viaje o el viaje en sí?",
+"fr": "Qu'est-ce que tu préfères : préparer le voyage ou le voyage lui-même ?",
+"it": "Cosa ti piace di più: organizzare il viaggio o il viaggio stesso?",
+"pt": "O que gostas mais: de planear a viagem ou da viagem em si?",
+"pt_BR": "O que você curte mais: planejar a viagem ou a viagem em si?"
+}
+},
+{
+"id": "road_trips-039",
+"lv": "any",
+"i18n": {
+"en": "Who taught you to drive, and what do you remember from it?",
+"de": "Wer hat dir das Autofahren beigebracht, und woran erinnerst du dich?",
+"es": "¿Quién te enseñó a conducir y qué recuerdas de aquello?",
+"fr": "Qui t'a appris à conduire, et de quoi te souviens-tu ?",
+"it": "Chi ti ha insegnato a guidare, e cosa ricordi di quel periodo?",
+"pt": "Quem te ensinou a conduzir, e o que recordas disso?",
+"pt_BR": "Quem te ensinou a dirigir, e o que você lembra dessa época?"
+}
+},
+{
+"id": "road_trips-040",
+"lv": "any",
+"i18n": {
+"en": "What's a place you've only seen in pictures that you'd love to reach by car?",
+"de": "Welchen Ort kennst du nur von Bildern und würdest ihn gern mit dem Auto erreichen?",
+"es": "¿Qué lugar has visto solo en fotos y te encantaría alcanzar en coche?",
+"fr": "Quel endroit n'as-tu vu qu'en photo et aimerais-tu rejoindre en voiture ?",
+"it": "Quale posto hai visto solo in foto e ti piacerebbe raggiungere in auto?",
+"pt": "Que sítio só viste em fotografias e adorarias alcançar de carro?",
+"pt_BR": "Que lugar você só viu em fotos e adoraria conhecer indo de carro?"
+}
+},
+{
+"id": "road_trips-041",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever planned a road trip yourself? How did it go?",
+"de": "Hast du schon mal selbst einen Roadtrip geplant? Wie lief es?",
+"es": "¿Has planeado alguna vez un viaje por carretera tú mismo? ¿Qué tal salió?",
+"fr": "As-tu déjà organisé un road trip toi-même ? Comment ça s'est passé ?",
+"it": "Hai mai organizzato da solo un viaggio in auto? Com'è andata?",
+"pt": "Já planeaste uma viagem de carro sozinho? Como correu?",
+"pt_BR": "Você já planejou uma viagem de carro sozinho? Como foi?"
+}
+},
+{
+"id": "road_trips-042",
+"lv": "beginner",
+"i18n": {
+"en": "How many hours of driving per day feels comfortable for you?",
+"de": "Wie viele Stunden Fahrt am Tag sind für dich angenehm?",
+"es": "¿Cuántas horas de conducción al día te resultan cómodas?",
+"fr": "Combien d'heures de route par jour te semblent confortables ?",
+"it": "Quante ore di guida al giorno ti sembrano comode?",
+"pt": "Quantas horas de condução por dia te parecem confortáveis?",
+"pt_BR": "Quantas horas de direção por dia são confortáveis pra você?"
+}
+},
+{
+"id": "road_trips-043",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather start with a weekend trip or a full week on the road?",
+"de": "Würdest du lieber mit einem Wochenendtrip oder gleich einer ganzen Woche starten?",
+"es": "¿Preferirías empezar con una escapada de fin de semana o una semana entera?",
+"fr": "Tu préfèrerais commencer par un week-end ou par une semaine entière sur la route ?",
+"it": "Preferiresti iniziare con un weekend o con una settimana intera on the road?",
+"pt": "Preferias começar com um fim de semana ou com uma semana inteira na estrada?",
+"pt_BR": "Você prefere começar com um fim de semana ou uma semana inteira na estrada?"
+}
+},
+{
+"id": "road_trips-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you feel confident reading maps, or do you rely on your phone?",
+"de": "Fühlst du dich beim Kartenlesen sicher oder verlässt du dich aufs Handy?",
+"es": "¿Te sientes seguro leyendo mapas o dependes del móvil?",
+"fr": "Te sens-tu à l'aise avec les cartes, ou comptes-tu sur ton téléphone ?",
+"it": "Ti senti sicuro a leggere le mappe o ti affidi al telefono?",
+"pt": "Sentes-te confiante a ler mapas ou dependes do telemóvel?",
+"pt_BR": "Você se sente seguro lendo mapas ou depende do celular?"
+}
+},
+{
+"id": "road_trips-045",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever rented a car? What was the experience like?",
+"de": "Hast du schon mal ein Auto gemietet? Wie war die Erfahrung?",
+"es": "¿Has alquilado alguna vez un coche? ¿Qué tal la experiencia?",
+"fr": "As-tu déjà loué une voiture ? Comment était l'expérience ?",
+"it": "Hai mai noleggiato un'auto? Com'è stata l'esperienza?",
+"pt": "Já alugaste um carro? Como foi a experiência?",
+"pt_BR": "Você já alugou um carro? Como foi a experiência?"
+}
+},
+{
+"id": "road_trips-046",
+"lv": "beginner",
+"i18n": {
+"en": "What would you put in your car's essentials kit?",
+"de": "Was würdest du in dein Notfall-Set fürs Auto packen?",
+"es": "¿Qué pondrías en tu kit básico para el coche?",
+"fr": "Que mettrais-tu dans ta trousse d'essentiels pour la voiture ?",
+"it": "Cosa metteresti nel tuo kit di base per l'auto?",
+"pt": "O que porias no teu kit essencial para o carro?",
+"pt_BR": "O que você colocaria no seu kit básico do carro?"
+}
+},
+{
+"id": "road_trips-047",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer driving a manual or an automatic car?",
+"de": "Fährst du lieber Schaltwagen oder Automatik?",
+"es": "¿Prefieres conducir un coche manual o automático?",
+"fr": "Tu préfères conduire une boîte manuelle ou automatique ?",
+"it": "Preferisci guidare un'auto con cambio manuale o automatico?",
+"pt": "Preferes conduzir um carro manual ou automático?",
+"pt_BR": "Você prefere dirigir carro manual ou automático?"
+}
+},
+{
+"id": "road_trips-048",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about roundabouts? Easy or tricky?",
+"de": "Wie findest du Kreisverkehre? Einfach oder knifflig?",
+"es": "¿Qué te parecen las rotondas? ¿Fáciles o complicadas?",
+"fr": "Que penses-tu des ronds-points ? Faciles ou délicats ?",
+"it": "Cosa pensi delle rotatorie? Facili o complicate?",
+"pt": "O que achas das rotundas? Fáceis ou complicadas?",
+"pt_BR": "O que você acha das rotatórias? Fáceis ou complicadas?"
+}
+},
+{
+"id": "road_trips-049",
+"lv": "beginner",
+"i18n": {
+"en": "What do you like to do during a break at a rest stop?",
+"de": "Was machst du gern in einer Pause an einer Raststätte?",
+"es": "¿Qué te gusta hacer cuando paras a descansar en un área de servicio?",
+"fr": "Qu'aimes-tu faire pendant une pause sur une aire de repos ?",
+"it": "Cosa ti piace fare durante una pausa in un'area di servizio?",
+"pt": "O que gostas de fazer numa pausa numa área de serviço?",
+"pt_BR": "O que você gosta de fazer numa parada no posto da estrada?"
+}
+},
+{
+"id": "road_trips-050",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever driven in the rain or fog? How did it feel?",
+"de": "Bist du schon mal bei Regen oder Nebel gefahren? Wie hat es sich angefühlt?",
+"es": "¿Has conducido alguna vez con lluvia o niebla? ¿Cómo te sentiste?",
+"fr": "As-tu déjà conduit sous la pluie ou dans le brouillard ? Comment l'as-tu vécu ?",
+"it": "Hai mai guidato sotto la pioggia o nella nebbia? Come ti sei sentito?",
+"pt": "Já conduziste à chuva ou com nevoeiro? Como te sentiste?",
+"pt_BR": "Você já dirigiu na chuva ou na neblina? Como se sentiu?"
+}
+},
+{
+"id": "road_trips-051",
+"lv": "beginner",
+"i18n": {
+"en": "Would you feel comfortable driving on the other side of the road abroad?",
+"de": "Würdest du dich im Ausland beim Fahren auf der anderen Straßenseite wohlfühlen?",
+"es": "¿Te sentirías cómodo conduciendo por el otro lado de la carretera en el extranjero?",
+"fr": "Serais-tu à l'aise pour conduire de l'autre côté de la route à l'étranger ?",
+"it": "Ti sentiresti a tuo agio a guidare sull'altro lato della strada all'estero?",
+"pt": "Sentir-te-ias à vontade a conduzir do outro lado da estrada no estrangeiro?",
+"pt_BR": "Você ficaria à vontade dirigindo do outro lado da pista no exterior?"
+}
+},
+{
+"id": "road_trips-052",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite car game for long drives?",
+"de": "Was ist dein liebstes Spiel für lange Autofahrten?",
+"es": "¿Cuál es tu juego favorito para los viajes largos en coche?",
+"fr": "Quel est ton jeu préféré pour les longs trajets en voiture ?",
+"it": "Qual è il tuo gioco preferito per i lunghi viaggi in auto?",
+"pt": "Qual é o teu jogo preferido para viagens longas de carro?",
+"pt_BR": "Qual é sua brincadeira favorita pra viagens longas de carro?"
+}
+},
+{
+"id": "road_trips-053",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer booking places to sleep in advance or deciding on the day?",
+"de": "Buchst du Unterkünfte lieber im Voraus oder entscheidest du spontan am selben Tag?",
+"es": "¿Prefieres reservar dónde dormir con antelación o decidirlo el mismo día?",
+"fr": "Tu préfères réserver tes nuits à l'avance ou décider le jour même ?",
+"it": "Preferisci prenotare dove dormire in anticipo o decidere sul momento?",
+"pt": "Preferes reservar onde dormir com antecedência ou decidir no próprio dia?",
+"pt_BR": "Você prefere reservar onde dormir com antecedência ou decidir no mesmo dia?"
+}
+},
+{
+"id": "road_trips-054",
+"lv": "beginner",
+"i18n": {
+"en": "What would make a roadside picnic perfect for you?",
+"de": "Was würde ein Picknick am Straßenrand für dich perfekt machen?",
+"es": "¿Qué haría perfecto para ti un picnic al borde del camino?",
+"fr": "Qu'est-ce qui rendrait un pique-nique en bord de route parfait pour toi ?",
+"it": "Cosa renderebbe perfetto per te un picnic lungo la strada?",
+"pt": "O que tornaria perfeito para ti um piquenique à beira da estrada?",
+"pt_BR": "O que deixaria perfeito pra você um piquenique na beira da estrada?"
+}
+},
+{
+"id": "road_trips-055",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever been on a road trip with children or pets? How was it?",
+"de": "Warst du schon mal mit Kindern oder Haustieren auf einem Roadtrip? Wie war es?",
+"es": "¿Has hecho algún viaje en coche con niños o mascotas? ¿Qué tal fue?",
+"fr": "As-tu déjà fait un road trip avec des enfants ou des animaux ? Comment c'était ?",
+"it": "Hai mai fatto un viaggio in auto con bambini o animali? Com'è andata?",
+"pt": "Já fizeste uma viagem de carro com crianças ou animais? Como foi?",
+"pt_BR": "Você já fez viagem de carro com crianças ou bichos de estimação? Como foi?"
+}
+},
+{
+"id": "road_trips-056",
+"lv": "beginner",
+"i18n": {
+"en": "How do you keep track of money spent on a trip?",
+"de": "Wie behältst du auf Reisen den Überblick über deine Ausgaben?",
+"es": "¿Cómo llevas la cuenta de lo que gastas en un viaje?",
+"fr": "Comment suis-tu tes dépenses pendant un voyage ?",
+"it": "Come tieni traccia delle spese durante un viaggio?",
+"pt": "Como controlas o dinheiro que gastas numa viagem?",
+"pt_BR": "Como você controla o que gasta numa viagem?"
+}
+},
+{
+"id": "road_trips-057",
+"lv": "beginner",
+"i18n": {
+"en": "What's a famous road trip route you'd like to learn more about?",
+"de": "Über welche berühmte Roadtrip-Route möchtest du mehr erfahren?",
+"es": "¿Sobre qué ruta famosa de viaje por carretera te gustaría saber más?",
+"fr": "Sur quel itinéraire de road trip célèbre aimerais-tu en savoir plus ?",
+"it": "Su quale famoso itinerario on the road ti piacerebbe saperne di più?",
+"pt": "Sobre que rota famosa de viagem de carro gostarias de saber mais?",
+"pt_BR": "Sobre qual rota famosa de viagem de carro você gostaria de saber mais?"
+}
+},
+{
+"id": "road_trips-058",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather stop at viewpoints or at little cafés along the way?",
+"de": "Hältst du unterwegs lieber an Aussichtspunkten oder in kleinen Cafés?",
+"es": "¿Prefieres parar en miradores o en pequeños cafés del camino?",
+"fr": "Tu préfères t'arrêter aux points de vue ou dans les petits cafés en chemin ?",
+"it": "Preferisci fermarti ai belvedere o nei piccoli bar lungo la strada?",
+"pt": "Preferes parar em miradouros ou em pequenos cafés pelo caminho?",
+"pt_BR": "Você prefere parar em mirantes ou em cafezinhos pelo caminho?"
+}
+},
+{
+"id": "road_trips-059",
+"lv": "beginner",
+"i18n": {
+"en": "What's one road sign from another country that surprised you?",
+"de": "Welches Verkehrsschild aus einem anderen Land hat dich überrascht?",
+"es": "¿Qué señal de tráfico de otro país te sorprendió?",
+"fr": "Quel panneau routier d'un autre pays t'a surpris ?",
+"it": "Quale cartello stradale di un altro paese ti ha sorpreso?",
+"pt": "Que sinal de trânsito de outro país te surpreendeu?",
+"pt_BR": "Qual placa de trânsito de outro país te surpreendeu?"
+}
+},
+{
+"id": "road_trips-060",
+"lv": "beginner",
+"i18n": {
+"en": "How do you stay fresh and alert on a long day of driving?",
+"de": "Wie bleibst du an einem langen Fahrtag frisch und aufmerksam?",
+"es": "¿Cómo te mantienes fresco y atento en un día largo al volante?",
+"fr": "Comment restes-tu frais et attentif pendant une longue journée de route ?",
+"it": "Come resti fresco e attento in una lunga giornata di guida?",
+"pt": "Como te manténs fresco e atento num dia longo ao volante?",
+"pt_BR": "Como você se mantém disposto e atento num dia longo de estrada?"
+}
+},
+{
+"id": "road_trips-061",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy short walks during road trips, or do you stay near the car?",
+"de": "Machst du auf Roadtrips gern kurze Wanderungen oder bleibst du lieber beim Auto?",
+"es": "¿Te gusta dar paseos cortos en los viajes en coche o prefieres quedarte cerca del coche?",
+"fr": "Aimes-tu faire de petites balades en road trip, ou restes-tu près de la voiture ?",
+"it": "Ti piace fare brevi passeggiate durante i viaggi in auto o resti vicino alla macchina?",
+"pt": "Gostas de fazer pequenas caminhadas nas viagens de carro ou ficas perto do carro?",
+"pt_BR": "Você gosta de fazer caminhadas curtas nas viagens de carro ou fica perto do carro?"
+}
+},
+{
+"id": "road_trips-062",
+"lv": "beginner",
+"i18n": {
+"en": "What would be your first stop on a road trip starting from your home?",
+"de": "Was wäre dein erster Halt auf einem Roadtrip, der bei dir zu Hause beginnt?",
+"es": "¿Cuál sería tu primera parada en un viaje en coche saliendo desde tu casa?",
+"fr": "Quelle serait ta première étape pour un road trip au départ de chez toi ?",
+"it": "Quale sarebbe la tua prima tappa in un viaggio in auto partendo da casa?",
+"pt": "Qual seria a tua primeira paragem numa viagem de carro a partir de casa?",
+"pt_BR": "Qual seria sua primeira parada numa viagem de carro saindo de casa?"
+}
+},
+{
+"id": "road_trips-063",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer coastal roads or mountain roads, and why?",
+"de": "Magst du lieber Küstenstraßen oder Bergstraßen, und warum?",
+"es": "¿Prefieres las carreteras de costa o de montaña? ¿Por qué?",
+"fr": "Tu préfères les routes côtières ou les routes de montagne, et pourquoi ?",
+"it": "Preferisci le strade costiere o quelle di montagna, e perché?",
+"pt": "Preferes estradas costeiras ou de montanha, e porquê?",
+"pt_BR": "Você prefere estradas no litoral ou na serra, e por quê?"
+}
+},
+{
+"id": "road_trips-064",
+"lv": "beginner",
+"i18n": {
+"en": "What's the longest drive you've done in a single day?",
+"de": "Was war die längste Strecke, die du an einem einzigen Tag gefahren bist?",
+"es": "¿Cuál es el trayecto más largo que has hecho en un solo día?",
+"fr": "Quel est le plus long trajet que tu aies fait en une seule journée ?",
+"it": "Qual è il tragitto più lungo che hai fatto in un solo giorno?",
+"pt": "Qual foi a viagem mais longa que fizeste num só dia?",
+"pt_BR": "Qual foi o trecho mais longo que você já dirigiu num único dia?"
+}
+},
+{
+"id": "road_trips-065",
+"lv": "beginner",
+"i18n": {
+"en": "Which national park would you love to explore by car?",
+"de": "Welchen Nationalpark würdest du gern mit dem Auto erkunden?",
+"es": "¿Qué parque nacional te encantaría explorar en coche?",
+"fr": "Quel parc national aimerais-tu explorer en voiture ?",
+"it": "Quale parco nazionale ti piacerebbe esplorare in auto?",
+"pt": "Que parque nacional adorarias explorar de carro?",
+"pt_BR": "Qual parque nacional você adoraria explorar de carro?"
+}
+},
+{
+"id": "road_trips-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever crossed a border by car? What was it like?",
+"de": "Bist du schon mal mit dem Auto über eine Grenze gefahren? Wie war das?",
+"es": "¿Has cruzado alguna vez una frontera en coche? ¿Cómo fue?",
+"fr": "As-tu déjà passé une frontière en voiture ? Comment c'était ?",
+"it": "Hai mai attraversato un confine in auto? Com'è stato?",
+"pt": "Já atravessaste uma fronteira de carro? Como foi?",
+"pt_BR": "Você já cruzou uma fronteira de carro? Como foi?"
+}
+},
+{
+"id": "road_trips-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about life in a campervan for a few weeks?",
+"de": "Was hältst du davon, ein paar Wochen in einem Campervan zu leben?",
+"es": "¿Qué te parecería vivir unas semanas en una camper?",
+"fr": "Que penses-tu de vivre quelques semaines dans un van aménagé ?",
+"it": "Cosa ne pensi di vivere qualche settimana in camper?",
+"pt": "O que achas de viver umas semanas numa autocaravana?",
+"pt_BR": "O que você acha de viver algumas semanas num motorhome?"
+}
+},
+{
+"id": "road_trips-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you try an electric car for a long road trip? Why or why not?",
+"de": "Würdest du für einen langen Roadtrip ein Elektroauto ausprobieren? Warum oder warum nicht?",
+"es": "¿Probarías un coche eléctrico para un viaje largo? ¿Por qué sí o por qué no?",
+"fr": "Essaierais-tu une voiture électrique pour un long road trip ? Pourquoi ?",
+"it": "Proveresti un'auto elettrica per un lungo viaggio? Perché sì o perché no?",
+"pt": "Experimentarias um carro elétrico numa viagem longa? Porquê?",
+"pt_BR": "Você testaria um carro elétrico numa viagem longa? Por quê?"
+}
+},
+{
+"id": "road_trips-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you handle a flat tyre in the middle of nowhere?",
+"de": "Wie würdest du mit einer Reifenpanne mitten im Nirgendwo umgehen?",
+"es": "¿Cómo te las arreglarías con un pinchazo en medio de la nada?",
+"fr": "Comment gérerais-tu une crevaison au milieu de nulle part ?",
+"it": "Come affronteresti una gomma a terra in mezzo al nulla?",
+"pt": "Como lidarias com um pneu furado no meio do nada?",
+"pt_BR": "Como você lidaria com um pneu furado no meio do nada?"
+}
+},
+{
+"id": "road_trips-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make group decisions on a trip with friends?",
+"de": "Wie trefft ihr auf einer Reise mit Freunden gemeinsame Entscheidungen?",
+"es": "¿Cómo tomáis decisiones en grupo cuando viajas con amigos?",
+"fr": "Comment prenez-vous les décisions en groupe en voyage entre amis ?",
+"it": "Come prendete le decisioni di gruppo in un viaggio tra amici?",
+"pt": "Como tomam decisões em grupo numa viagem com amigos?",
+"pt_BR": "Como vocês tomam decisões em grupo numa viagem com amigos?"
+}
+},
+{
+"id": "road_trips-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever driven in snow or on icy roads?",
+"de": "Bist du schon mal bei Schnee oder auf glatten Straßen gefahren?",
+"es": "¿Has conducido alguna vez con nieve o sobre hielo?",
+"fr": "As-tu déjà conduit sur la neige ou sur des routes verglacées ?",
+"it": "Hai mai guidato sulla neve o su strade ghiacciate?",
+"pt": "Já conduziste com neve ou em estradas geladas?",
+"pt_BR": "Você já dirigiu na neve ou em estrada congelada?"
+}
+},
+{
+"id": "road_trips-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What theme would you choose for a road trip: history, food, music or nature?",
+"de": "Welches Thema würdest du für einen Roadtrip wählen: Geschichte, Essen, Musik oder Natur?",
+"es": "¿Qué tema elegirías para un viaje en coche: historia, comida, música o naturaleza?",
+"fr": "Quel thème choisirais-tu pour un road trip : histoire, cuisine, musique ou nature ?",
+"it": "Che tema sceglieresti per un viaggio in auto: storia, cibo, musica o natura?",
+"pt": "Que tema escolherias para uma viagem de carro: história, comida, música ou natureza?",
+"pt_BR": "Que tema você escolheria pra uma viagem de carro: história, comida, música ou natureza?"
+}
+},
+{
+"id": "road_trips-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you choose between the fastest route and the most scenic one?",
+"de": "Wie entscheidest du zwischen der schnellsten und der schönsten Route?",
+"es": "¿Cómo eliges entre la ruta más rápida y la más bonita?",
+"fr": "Comment choisis-tu entre l'itinéraire le plus rapide et le plus beau ?",
+"it": "Come scegli tra il percorso più veloce e quello più panoramico?",
+"pt": "Como escolhes entre o caminho mais rápido e o mais bonito?",
+"pt_BR": "Como você escolhe entre o caminho mais rápido e o mais bonito?"
+}
+},
+{
+"id": "road_trips-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you take your car on a ferry to explore islands?",
+"de": "Würdest du dein Auto auf eine Fähre mitnehmen, um Inseln zu erkunden?",
+"es": "¿Llevarías tu coche en un ferri para explorar islas?",
+"fr": "Prendrais-tu un ferry avec ta voiture pour explorer des îles ?",
+"it": "Porteresti la tua auto su un traghetto per esplorare delle isole?",
+"pt": "Levarias o teu carro num ferry para explorar ilhas?",
+"pt_BR": "Você levaria seu carro numa balsa pra explorar ilhas?"
+}
+},
+{
+"id": "road_trips-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you like to photograph or film your road trips?",
+"de": "Wie fotografierst oder filmst du deine Roadtrips am liebsten?",
+"es": "¿Cómo te gusta fotografiar o grabar tus viajes en coche?",
+"fr": "Comment aimes-tu photographier ou filmer tes road trips ?",
+"it": "Come ti piace fotografare o filmare i tuoi viaggi in auto?",
+"pt": "Como gostas de fotografar ou filmar as tuas viagens de carro?",
+"pt_BR": "Como você gosta de fotografar ou filmar suas viagens de carro?"
+}
+},
+{
+"id": "road_trips-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What does travelling sustainably by car mean to you?",
+"de": "Was bedeutet nachhaltiges Reisen mit dem Auto für dich?",
+"es": "¿Qué significa para ti viajar en coche de forma sostenible?",
+"fr": "Que signifie pour toi voyager en voiture de façon durable ?",
+"it": "Che cosa significa per te viaggiare in auto in modo sostenibile?",
+"pt": "O que significa para ti viajar de carro de forma sustentável?",
+"pt_BR": "O que significa pra você viajar de carro de forma sustentável?"
+}
+},
+{
+"id": "road_trips-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever had to change your plans because of weather or a closed road?",
+"de": "Musstest du schon mal wegen Wetter oder einer gesperrten Straße umplanen?",
+"es": "¿Alguna vez tuviste que cambiar de planes por el tiempo o una carretera cortada?",
+"fr": "As-tu déjà dû changer tes plans à cause de la météo ou d'une route fermée ?",
+"it": "Hai mai dovuto cambiare programma per il meteo o una strada chiusa?",
+"pt": "Já tiveste de mudar os planos por causa do tempo ou de uma estrada cortada?",
+"pt_BR": "Você já teve que mudar os planos por causa do tempo ou de uma estrada fechada?"
+}
+},
+{
+"id": "road_trips-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you split costs fairly when travelling with others?",
+"de": "Wie teilt ihr die Kosten fair, wenn du mit anderen reist?",
+"es": "¿Cómo repartís los gastos de forma justa cuando viajas con otros?",
+"fr": "Comment partagez-vous les frais équitablement quand tu voyages à plusieurs ?",
+"it": "Come dividete le spese in modo equo quando viaggi con altri?",
+"pt": "Como dividem as despesas de forma justa quando viajas com outras pessoas?",
+"pt_BR": "Como vocês dividem os gastos de forma justa quando viaja com outras pessoas?"
+}
+},
+{
+"id": "road_trips-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which region of the world seems most exciting for a two-week road trip?",
+"de": "Welche Region der Welt reizt dich am meisten für einen zweiwöchigen Roadtrip?",
+"es": "¿Qué región del mundo te parece más emocionante para un viaje de dos semanas en coche?",
+"fr": "Quelle région du monde te semble la plus excitante pour un road trip de deux semaines ?",
+"it": "Quale regione del mondo ti sembra più emozionante per un viaggio in auto di due settimane?",
+"pt": "Que região do mundo te parece mais entusiasmante para uma viagem de carro de duas semanas?",
+"pt_BR": "Qual região do mundo parece mais empolgante pra uma viagem de carro de duas semanas?"
+}
+},
+{
+"id": "road_trips-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you ever do a solo road trip? What would attract you to it?",
+"de": "Würdest du einen Roadtrip allein machen? Was würde dich daran reizen?",
+"es": "¿Harías un viaje en coche solo? ¿Qué te atraería de ello?",
+"fr": "Ferais-tu un road trip en solo ? Qu'est-ce qui t'attirerait ?",
+"it": "Faresti mai un viaggio in auto da solo? Cosa ti attirerebbe?",
+"pt": "Farias uma viagem de carro sozinho? O que te atrairia nisso?",
+"pt_BR": "Você faria uma viagem de carro sozinho? O que te atrairia nisso?"
+}
+},
+{
+"id": "road_trips-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you research a route before you go?",
+"de": "Wie recherchierst du eine Route, bevor du losfährst?",
+"es": "¿Cómo investigas una ruta antes de salir?",
+"fr": "Comment te renseignes-tu sur un itinéraire avant de partir ?",
+"it": "Come ti informi su un percorso prima di partire?",
+"pt": "Como pesquisas uma rota antes de partir?",
+"pt_BR": "Como você pesquisa uma rota antes de viajar?"
+}
+},
+{
+"id": "road_trips-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What's your opinion on wild camping versus staying at campsites?",
+"de": "Was hältst du von Wildcampen im Vergleich zu Campingplätzen?",
+"es": "¿Qué opinas de la acampada libre frente a los campings?",
+"fr": "Que penses-tu du camping sauvage par rapport aux campings ?",
+"it": "Cosa pensi del campeggio libero rispetto ai campeggi attrezzati?",
+"pt": "O que achas do campismo selvagem em comparação com os parques de campismo?",
+"pt_BR": "O que você acha de acampar livre em vez de ficar em campings?"
+}
+},
+{
+"id": "road_trips-083",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever tried to say a few words in the local language at a fuel station?",
+"de": "Hast du an einer Tankstelle schon mal ein paar Worte in der Landessprache versucht?",
+"es": "¿Has intentado alguna vez decir unas palabras en el idioma local en una gasolinera?",
+"fr": "As-tu déjà essayé de dire quelques mots dans la langue locale à une station-service?",
+"it": "Hai mai provato a dire qualche parola nella lingua locale a un distributore?",
+"pt": "Já tentaste dizer umas palavras na língua local numa bomba de gasolina?",
+"pt_BR": "Você já tentou falar algumas palavras no idioma local num posto de gasolina?"
+}
+},
+{
+"id": "road_trips-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you do on a rainy day in the middle of a road trip?",
+"de": "Was würdest du an einem Regentag mitten auf einem Roadtrip machen?",
+"es": "¿Qué harías en un día de lluvia en mitad de un viaje en coche?",
+"fr": "Que ferais-tu un jour de pluie en plein road trip ?",
+"it": "Cosa faresti in una giornata di pioggia nel bel mezzo di un viaggio in auto?",
+"pt": "O que farias num dia de chuva a meio de uma viagem de carro?",
+"pt_BR": "O que você faria num dia de chuva no meio de uma viagem de carro?"
+}
+},
+{
+"id": "road_trips-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which local rule or driving habit abroad surprised you the most?",
+"de": "Welche Verkehrsregel oder Fahrgewohnheit im Ausland hat dich am meisten überrascht?",
+"es": "¿Qué norma o costumbre al volante en el extranjero te sorprendió más?",
+"fr": "Quelle règle ou habitude de conduite à l'étranger t'a le plus surpris ?",
+"it": "Quale regola o abitudine di guida all'estero ti ha sorpreso di più?",
+"pt": "Que regra ou hábito de condução no estrangeiro mais te surpreendeu?",
+"pt_BR": "Qual regra ou costume ao volante no exterior mais te surpreendeu?"
+}
+},
+{
+"id": "road_trips-086",
+"lv": "advanced",
+"i18n": {
+"en": "Would you ever consider an overland journey across several countries?",
+"de": "Könntest du dir eine Überlandreise durch mehrere Länder vorstellen?",
+"es": "¿Te plantearías un viaje por tierra a través de varios países?",
+"fr": "Envisagerais-tu un voyage par la route à travers plusieurs pays ?",
+"it": "Prenderesti in considerazione un viaggio via terra attraverso più paesi?",
+"pt": "Considerarias uma viagem por terra através de vários países?",
+"pt_BR": "Você consideraria uma viagem por terra atravessando vários países?"
+}
+},
+{
+"id": "road_trips-087",
+"lv": "advanced",
+"i18n": {
+"en": "What would long-term van life give you, and what would you miss?",
+"de": "Was würde dir ein Leben im Van auf Dauer geben, und was würdest du vermissen?",
+"es": "¿Qué te daría vivir mucho tiempo en una furgoneta y qué echarías de menos?",
+"fr": "Qu'est-ce que la vie en van au long cours t'apporterait, et que regretterais-tu ?",
+"it": "Cosa ti darebbe vivere a lungo in un furgone, e cosa ti mancherebbe?",
+"pt": "O que te daria viver muito tempo numa carrinha, e do que sentirias falta?",
+"pt_BR": "O que viver muito tempo numa van te daria, e do que você sentiria falta?"
+}
+},
+{
+"id": "road_trips-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you design your own scenic route that no guidebook mentions?",
+"de": "Wie würdest du deine eigene Panoramaroute planen, die in keinem Reiseführer steht?",
+"es": "¿Cómo diseñarías tu propia ruta panorámica que no salga en ninguna guía?",
+"fr": "Comment concevrais-tu ta propre route panoramique absente des guides ?",
+"it": "Come progetteresti un tuo itinerario panoramico che nessuna guida cita?",
+"pt": "Como desenharias a tua própria rota panorâmica que nenhum guia menciona?",
+"pt_BR": "Como você criaria sua própria rota cênica que nenhum guia menciona?"
+}
+},
+{
+"id": "road_trips-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which legendary long-distance route fascinates you most, and why?",
+"de": "Welche legendäre Langstreckenroute fasziniert dich am meisten und warum?",
+"es": "¿Qué ruta legendaria de larga distancia te fascina más y por qué?",
+"fr": "Quel itinéraire légendaire au long cours te fascine le plus, et pourquoi ?",
+"it": "Quale leggendario percorso a lunga distanza ti affascina di più, e perché?",
+"pt": "Que rota lendária de longa distância te fascina mais, e porquê?",
+"pt_BR": "Qual rota lendária de longa distância mais te fascina, e por quê?"
+}
+},
+{
+"id": "road_trips-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance spontaneity and preparation on a remote trip?",
+"de": "Wie findest du auf einer abgelegenen Reise die Balance zwischen Spontaneität und Vorbereitung?",
+"es": "¿Cómo equilibras espontaneidad y preparación en un viaje por zonas remotas?",
+"fr": "Comment équilibres-tu spontanéité et préparation lors d'un voyage isolé ?",
+"it": "Come bilanci spontaneità e preparazione in un viaggio in zone remote?",
+"pt": "Como equilibras espontaneidade e preparação numa viagem a zonas remotas?",
+"pt_BR": "Como você equilibra espontaneidade e preparação numa viagem a lugares remotos?"
+}
+},
+{
+"id": "road_trips-091",
+"lv": "advanced",
+"i18n": {
+"en": "What story would you want your perfect road trip to tell?",
+"de": "Welche Geschichte soll dein perfekter Roadtrip erzählen?",
+"es": "¿Qué historia te gustaría que contara tu viaje en coche perfecto?",
+"fr": "Quelle histoire aimerais-tu que ton road trip parfait raconte ?",
+"it": "Quale storia vorresti che raccontasse il tuo viaggio in auto perfetto?",
+"pt": "Que história gostarias que a tua viagem de carro perfeita contasse?",
+"pt_BR": "Que história você gostaria que sua viagem de carro perfeita contasse?"
+}
+},
+{
+"id": "road_trips-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you prepare for a drive through a desert or the far north?",
+"de": "Wie würdest du dich auf eine Fahrt durch die Wüste oder den hohen Norden vorbereiten?",
+"es": "¿Cómo te prepararías para conducir por un desierto o por el extremo norte?",
+"fr": "Comment te préparerais-tu à rouler dans un désert ou dans le Grand Nord ?",
+"it": "Come ti prepareresti a un viaggio nel deserto o nel profondo nord?",
+"pt": "Como te prepararias para conduzir num deserto ou no extremo norte?",
+"pt_BR": "Como você se prepararia pra dirigir num deserto ou no extremo norte?"
+}
+},
+{
+"id": "road_trips-093",
+"lv": "advanced",
+"i18n": {
+"en": "What role does slow travel play in the way you like to explore?",
+"de": "Welche Rolle spielt langsames Reisen in deiner Art zu entdecken?",
+"es": "¿Qué papel tiene el viaje lento en tu forma de explorar?",
+"fr": "Quelle place le voyage lent a-t-il dans ta façon d'explorer ?",
+"it": "Che ruolo ha il viaggio lento nel tuo modo di esplorare?",
+"pt": "Que papel tem a viagem lenta na tua forma de explorar?",
+"pt_BR": "Que papel a viagem sem pressa tem no seu jeito de explorar?"
+}
+},
+{
+"id": "road_trips-094",
+"lv": "advanced",
+"i18n": {
+"en": "If you led a group road trip, how would you keep everyone happy?",
+"de": "Wenn du einen Gruppen-Roadtrip leiten würdest, wie würdest du alle bei Laune halten?",
+"es": "Si dirigieras un viaje en grupo por carretera, ¿cómo mantendrías contentos a todos?",
+"fr": "Si tu menais un road trip en groupe, comment garderais-tu tout le monde heureux ?",
+"it": "Se guidassi un viaggio di gruppo in auto, come terresti tutti contenti?",
+"pt": "Se liderasses uma viagem de carro em grupo, como manterias todos felizes?",
+"pt_BR": "Se você liderasse uma viagem de carro em grupo, como manteria todo mundo feliz?"
+}
+},
+{
+"id": "road_trips-095",
+"lv": "advanced",
+"i18n": {
+"en": "How would you turn your travel notes into a guide for friends?",
+"de": "Wie würdest du deine Reisenotizen in einen Reiseführer für Freunde verwandeln?",
+"es": "¿Cómo convertirías tus notas de viaje en una guía para tus amigos?",
+"fr": "Comment transformerais-tu tes notes de voyage en guide pour tes amis ?",
+"it": "Come trasformeresti i tuoi appunti di viaggio in una guida per gli amici?",
+"pt": "Como transformarias as tuas notas de viagem num guia para amigos?",
+"pt_BR": "Como você transformaria suas anotações de viagem num guia pros amigos?"
+}
+},
+{
+"id": "road_trips-096",
+"lv": "advanced",
+"i18n": {
+"en": "What would a road trip with a purpose, like learning or giving back, look like for you?",
+"de": "Wie sähe für dich ein Roadtrip mit Sinn aus, etwa zum Lernen oder Helfen?",
+"es": "¿Cómo sería para ti un viaje en coche con propósito, como aprender o ayudar?",
+"fr": "À quoi ressemblerait pour toi un road trip avec un but, comme apprendre ou aider ?",
+"it": "Come sarebbe per te un viaggio in auto con uno scopo, come imparare o aiutare?",
+"pt": "Como seria para ti uma viagem de carro com propósito, como aprender ou ajudar?",
+"pt_BR": "Como seria pra você uma viagem de carro com propósito, como aprender ou ajudar?"
+}
+},
+{
+"id": "road_trips-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which season would you choose for your dream route, and why that timing?",
+"de": "Welche Jahreszeit würdest du für deine Traumroute wählen, und warum genau dann?",
+"es": "¿Qué estación elegirías para tu ruta soñada y por qué en ese momento?",
+"fr": "Quelle saison choisirais-tu pour ta route de rêve, et pourquoi ce moment ?",
+"it": "Quale stagione sceglieresti per il tuo itinerario dei sogni, e perché proprio allora?",
+"pt": "Que estação escolherias para a tua rota de sonho, e porquê nessa altura?",
+"pt_BR": "Qual estação você escolheria pra sua rota dos sonhos, e por que nessa época?"
+}
+},
+{
+"id": "road_trips-098",
+"lv": "advanced",
+"i18n": {
+"en": "How has travelling by road changed the way you see the world?",
+"de": "Wie hat das Reisen auf der Straße deinen Blick auf die Welt verändert?",
+"es": "¿Cómo ha cambiado viajar por carretera tu forma de ver el mundo?",
+"fr": "Comment voyager par la route a-t-il changé ta façon de voir le monde ?",
+"it": "Come ha cambiato il tuo modo di vedere il mondo viaggiare su strada?",
+"pt": "Como é que viajar pela estrada mudou a tua forma de ver o mundo?",
+"pt_BR": "Como viajar pela estrada mudou o seu jeito de ver o mundo?"
+}
+},
+{
+"id": "road_trips-099",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give someone planning their very first road trip?",
+"de": "Welchen Rat würdest du jemandem geben, der seinen allerersten Roadtrip plant?",
+"es": "¿Qué consejo darías a alguien que planea su primer viaje por carretera?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui prépare son tout premier road trip ?",
+"it": "Che consiglio daresti a chi sta organizzando il suo primo viaggio in auto?",
+"pt": "Que conselho darias a alguém que planeia a sua primeira viagem de carro?",
+"pt_BR": "Que conselho você daria a alguém planejando a primeira viagem de carro?"
+}
+},
+{
+"id": "road_trips-100",
+"lv": "advanced",
+"i18n": {
+"en": "After all these trips, what does the perfect journey mean to you now?",
+"de": "Was bedeutet für dich nach all diesen Reisen heute die perfekte Reise?",
+"es": "Después de tantos viajes, ¿qué significa ahora para ti el viaje perfecto?",
+"fr": "Après tous ces voyages, que signifie pour toi aujourd'hui le voyage parfait ?",
+"it": "Dopo tutti questi viaggi, che cosa significa ora per te il viaggio perfetto?",
+"pt": "Depois de tantas viagens, o que significa agora para ti a viagem perfeita?",
+"pt_BR": "Depois de tantas viagens, o que a viagem perfeita significa pra você hoje?"
+}
+}
+]
+}

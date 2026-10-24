@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 121,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing personality",
+     "g": "Describe your own personality and other people's with common Spanish adjectives.",
+     "p": [
+      "Personality uses ser: soy paciente, es muy abierta. Estar is for moods: hoy está nervioso.",
+      "Adjectives in -o change for women: tímido / tímida. Paciente and amable stay the same.",
+      "Soften or boost: un poco tímido, bastante creativo, muy gracioso, nada paciente."
+     ],
+     "q": "How would your best friend describe your personality in Spanish?",
+     "c": "Describe three people you know with two personality adjectives each."
+    },
+    "de": {
+     "t": "Den Charakter beschreiben",
+     "g": "Du beschreibst deinen Charakter und den anderer mit gängigen spanischen Adjektiven.",
+     "p": [
+      "Für den Charakter nimmst du ser: soy paciente, es muy abierta. Estar steht für Stimmungen: hoy está nervioso.",
+      "Adjektive auf -o werden weiblich zu -a: tímido / tímida. Paciente und amable bleiben gleich.",
+      "Abstufen: un poco tímido, bastante creativo, muy gracioso, nada paciente."
+     ],
+     "q": "Wie würde dein bester Freund deinen Charakter auf Spanisch beschreiben?",
+     "c": "Beschreib drei Menschen, die du kennst, mit je zwei Charakter-Adjektiven."
+    },
+    "es": {
+     "t": "Describir la personalidad",
+     "g": "Describe tu forma de ser y la de otras personas con adjetivos frecuentes.",
+     "p": [
+      "El carácter va con ser: soy paciente, es muy abierta. Estar es para el estado de ánimo: hoy está nervioso.",
+      "Los adjetivos en -o cambian en femenino: tímido, tímida. Paciente y amable no cambian.",
+      "Matiza: un poco tímido, bastante creativo, muy gracioso, nada paciente."
+     ],
+     "q": "¿Cómo describiría tu mejor amigo tu forma de ser?",
+     "c": "Describe a tres personas que conoces con dos adjetivos de carácter cada una."
+    },
+    "fr": {
+     "t": "Décrire la personnalité",
+     "g": "Décrire ta personnalité et celle des autres avec des adjectifs espagnols courants.",
+     "p": [
+      "Le caractère se dit avec ser : soy paciente, es muy abierta. Estar sert pour l'humeur : hoy está nervioso.",
+      "Les adjectifs en -o passent en -a au féminin : tímido / tímida. Paciente et amable ne changent pas.",
+      "Nuancer : un poco tímido, bastante creativo, muy gracioso, nada paciente."
+     ],
+     "q": "Comment ton meilleur ami décrirait-il ta personnalité en espagnol ?",
+     "c": "Décris trois personnes que tu connais avec deux adjectifs de caractère chacune."
+    },
+    "it": {
+     "t": "Descrivere il carattere",
+     "g": "Descrivi il tuo carattere e quello degli altri con aggettivi spagnoli comuni.",
+     "p": [
+      "Il carattere vuole ser: soy paciente, es muy abierta. Estar indica l'umore: hoy está nervioso.",
+      "Gli aggettivi in -o al femminile fanno -a: tímido / tímida. Paciente e amable restano uguali.",
+      "Sfumature: un poco tímido, bastante creativo, muy gracioso, nada paciente."
+     ],
+     "q": "Come descriverebbe il tuo carattere il tuo migliore amico, in spagnolo?",
+     "c": "Descrivi tre persone che conosci con due aggettivi di carattere ciascuna."
+    },
+    "pt": {
+     "t": "Descrever a personalidade",
+     "g": "Descreves a tua personalidade e a dos outros com adjetivos espanhóis comuns.",
+     "p": [
+      "O carácter usa ser: soy paciente, es muy abierta. Estar é para o estado de espírito: hoy está nervioso.",
+      "Os adjetivos em -o mudam no feminino: tímido / tímida. Paciente e amable não mudam.",
+      "Para matizar: un poco tímido, bastante creativo, muy gracioso, nada paciente."
+     ],
+     "q": "Como é que o teu melhor amigo descreveria a tua personalidade em espanhol?",
+     "c": "Descreve três pessoas que conheces com dois adjetivos de carácter cada uma."
+    },
+    "pt_BR": {
+     "t": "Descrever a personalidade",
+     "g": "Descreva a sua personalidade e a dos outros com adjetivos comuns em espanhol.",
+     "p": [
+      "Personalidade usa ser: soy paciente, es muy abierta. Estar é para o humor: hoy está nervioso.",
+      "Adjetivos em -o mudam no feminino: tímido / tímida. Paciente e amable não mudam.",
+      "Para graduar: un poco tímido, bastante creativo, muy gracioso, nada paciente."
+     ],
+     "q": "Como o seu melhor amigo descreveria a sua personalidade em espanhol?",
+     "c": "Descreva três pessoas que você conhece com dois adjetivos de personalidade cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "abierto, abierta",
+      "ex": "Mi hermana es muy abierta y habla con todo el mundo."
+     },
+     {
+      "w": "tímido, tímida",
+      "ex": "De pequeño era muy tímido en clase."
+     },
+     {
+      "w": "paciente",
+      "ex": "Mi profesora es muy paciente con nosotros."
+     },
+     {
+      "w": "creativo, creativa",
+      "ex": "Mi amigo Luis es muy creativo: pinta y escribe canciones."
+     },
+     {
+      "w": "gracioso, graciosa",
+      "ex": "Tu primo es graciosísimo, siempre me hace reír."
+     },
+     {
+      "w": "tener buen carácter",
+      "ex": "Mi abuelo tiene muy buen carácter."
+     }
+    ],
+    "gram": "Ser + adjetivo para el carácter: es paciente, soy tímida. El adjetivo concuerda: un chico abierto, una chica abierta, unos amigos abiertos."
+   }
+  },
+  {
+   "d": 122,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing appearance",
+     "g": "Describe what people look like: hair, eyes, height and details.",
+     "p": [
+      "Tener for features: tiene el pelo rizado, tiene los ojos claros. Ser for overall look: es alta, es delgado.",
+      "Llevar for things you wear or have: lleva gafas, lleva barba, lleva el pelo corto.",
+      "Parecerse a means to look like someone: me parezco a mi padre."
+     ],
+     "q": "Who in your family do you look like, and how?",
+     "c": "Describe a famous person in four sentences so that someone could guess who it is."
+    },
+    "de": {
+     "t": "Das Aussehen beschreiben",
+     "g": "Du beschreibst, wie Menschen aussehen: Haare, Augen, Größe und Details.",
+     "p": [
+      "Tener für Merkmale: tiene el pelo rizado, tiene los ojos claros. Ser für den Gesamteindruck: es alta, es delgado.",
+      "Llevar für Dinge, die man trägt: lleva gafas, lleva barba, lleva el pelo corto.",
+      "Parecerse a heißt jemandem ähneln: me parezco a mi padre."
+     ],
+     "q": "Wem in deiner Familie siehst du ähnlich, und worin?",
+     "c": "Beschreib eine berühmte Person in vier Sätzen, sodass man sie erraten kann."
+    },
+    "es": {
+     "t": "Describir el aspecto físico",
+     "g": "Describe cómo son las personas: pelo, ojos, estatura y detalles.",
+     "p": [
+      "Tener para los rasgos: tiene el pelo rizado, tiene los ojos claros. Ser para el conjunto: es alta, es delgado.",
+      "Llevar para lo que se lleva puesto: lleva gafas, lleva barba, lleva el pelo corto.",
+      "Parecerse a: me parezco a mi padre, nos parecemos mucho."
+     ],
+     "q": "¿A quién te pareces de tu familia y en qué?",
+     "c": "Describe a una persona famosa en cuatro frases para que alguien adivine quién es."
+    },
+    "fr": {
+     "t": "Décrire l'apparence",
+     "g": "Décrire à quoi ressemblent les gens : cheveux, yeux, taille et détails.",
+     "p": [
+      "Tener pour les traits : tiene el pelo rizado, tiene los ojos claros. Ser pour l'ensemble : es alta, es delgado.",
+      "Llevar pour ce qu'on porte : lleva gafas, lleva barba, lleva el pelo corto.",
+      "Parecerse a veut dire ressembler à : me parezco a mi padre."
+     ],
+     "q": "À qui ressembles-tu dans ta famille, et en quoi ?",
+     "c": "Décris une célébrité en quatre phrases pour qu'on devine de qui il s'agit."
+    },
+    "it": {
+     "t": "Descrivere l'aspetto",
+     "g": "Descrivi com'è fisicamente una persona: capelli, occhi, altezza e dettagli.",
+     "p": [
+      "Tener per i tratti: tiene el pelo rizado, tiene los ojos claros. Ser per l'insieme: es alta, es delgado.",
+      "Llevar per ciò che si porta: lleva gafas, lleva barba, lleva el pelo corto.",
+      "Parecerse a significa assomigliare: me parezco a mi padre."
+     ],
+     "q": "A chi assomigli nella tua famiglia, e in cosa?",
+     "c": "Descrivi un personaggio famoso in quattro frasi, così che qualcuno indovini chi è."
+    },
+    "pt": {
+     "t": "Descrever o aspeto físico",
+     "g": "Descreves como são as pessoas: cabelo, olhos, altura e pormenores.",
+     "p": [
+      "Tener para os traços: tiene el pelo rizado, tiene los ojos claros. Ser para o conjunto: es alta, es delgado.",
+      "Llevar para o que se usa: lleva gafas, lleva barba, lleva el pelo corto.",
+      "Parecerse a quer dizer parecer-se com: me parezco a mi padre."
+     ],
+     "q": "Com quem te pareces na tua família, e em quê?",
+     "c": "Descreve uma pessoa famosa em quatro frases para alguém adivinhar quem é."
+    },
+    "pt_BR": {
+     "t": "Descrever a aparência",
+     "g": "Descreva como as pessoas são: cabelo, olhos, altura e detalhes.",
+     "p": [
+      "Tener para traços: tiene el pelo rizado, tiene los ojos claros. Ser para o conjunto: es alta, es delgado.",
+      "Llevar para o que se usa: lleva gafas, lleva barba, lleva el pelo corto.",
+      "Parecerse a significa ser parecido com: me parezco a mi padre."
+     ],
+     "q": "Com quem você se parece na sua família, e em quê?",
+     "c": "Descreva uma pessoa famosa em quatro frases para alguém adivinhar quem é."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el pelo rizado",
+      "ex": "Mi madre tiene el pelo rizado y castaño."
+     },
+     {
+      "w": "los ojos claros",
+      "ex": "Mi hermano tiene los ojos claros, casi verdes."
+     },
+     {
+      "w": "llevar gafas",
+      "ex": "Mi jefe lleva gafas de sol todo el día."
+     },
+     {
+      "w": "la barba",
+      "ex": "Mi padre lleva barba desde hace años."
+     },
+     {
+      "w": "alto, bajo, de estatura media",
+      "ex": "Ana es alta y su novio es de estatura media."
+     },
+     {
+      "w": "parecerse a",
+      "ex": "Me parezco mucho a mi abuela."
+     }
+    ],
+    "gram": "Tener para rasgos (tiene el pelo largo), llevar para lo que se lleva (lleva gafas, lleva barba) y ser para el conjunto (es alto)."
+   }
+  },
+  {
+   "d": 123,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Clothes and fashion",
+     "g": "Talk about clothes, patterns and personal style.",
+     "p": [
+      "Patterns and materials use de: de rayas, de cuadros, de lunares, de algodón, de lana.",
+      "Quedar works like gustar: te queda genial, me quedan pequeños.",
+      "Estar de moda means trendy; pasado de moda means out of fashion."
+     ],
+     "q": "What do you usually wear on a weekend, and is it comfortable or elegant?",
+     "c": "Describe today's outfit using colours, one pattern and one material."
+    },
+    "de": {
+     "t": "Kleidung und Mode",
+     "g": "Du sprichst über Kleidung, Muster und deinen Stil.",
+     "p": [
+      "Muster und Materialien mit de: de rayas, de cuadros, de lunares, de algodón, de lana.",
+      "Quedar funktioniert wie gustar: te queda genial, me quedan pequeños.",
+      "Estar de moda heißt angesagt sein, pasado de moda heißt altmodisch."
+     ],
+     "q": "Was trägst du am Wochenende, eher bequem oder elegant?",
+     "c": "Beschreib dein heutiges Outfit mit Farben, einem Muster und einem Material."
+    },
+    "es": {
+     "t": "Ropa y moda",
+     "g": "Habla de ropa, estampados y estilo personal.",
+     "p": [
+      "Dibujos y materiales con de: de rayas, de cuadros, de lunares, de algodón, de lana.",
+      "Quedar funciona como gustar: te queda genial, me quedan pequeños.",
+      "Estar de moda es lo actual; pasado de moda es lo que ya no se lleva."
+     ],
+     "q": "¿Qué sueles ponerte el fin de semana: algo cómodo o algo elegante?",
+     "c": "Describe la ropa que llevas hoy con colores, un estampado y un material."
+    },
+    "fr": {
+     "t": "Vêtements et mode",
+     "g": "Parler de vêtements, de motifs et de style personnel.",
+     "p": [
+      "Motifs et matières avec de : de rayas, de cuadros, de lunares, de algodón, de lana.",
+      "Quedar fonctionne comme gustar : te queda genial, me quedan pequeños.",
+      "Estar de moda veut dire être à la mode ; pasado de moda, démodé."
+     ],
+     "q": "Que portes-tu le week-end : plutôt confortable ou élégant ?",
+     "c": "Décris ta tenue du jour avec des couleurs, un motif et une matière."
+    },
+    "it": {
+     "t": "Vestiti e moda",
+     "g": "Parli di vestiti, fantasie e stile personale.",
+     "p": [
+      "Fantasie e materiali con de: de rayas, de cuadros, de lunares, de algodón, de lana.",
+      "Quedar funziona come gustar: te queda genial, me quedan pequeños.",
+      "Estar de moda significa essere di moda; pasado de moda, fuori moda."
+     ],
+     "q": "Cosa indossi di solito nel weekend: qualcosa di comodo o di elegante?",
+     "c": "Descrivi come sei vestito oggi con colori, una fantasia e un materiale."
+    },
+    "pt": {
+     "t": "Roupa e moda",
+     "g": "Falas de roupa, padrões e estilo pessoal.",
+     "p": [
+      "Padrões e materiais com de: de rayas, de cuadros, de lunares, de algodón, de lana.",
+      "Quedar funciona como gustar: te queda genial, me quedan pequeños.",
+      "Estar de moda é estar na moda; pasado de moda é fora de moda."
+     ],
+     "q": "O que costumas vestir ao fim de semana: algo confortável ou elegante?",
+     "c": "Descreve a roupa que tens hoje com cores, um padrão e um material."
+    },
+    "pt_BR": {
+     "t": "Roupas e moda",
+     "g": "Fale de roupas, estampas e estilo pessoal.",
+     "p": [
+      "Estampas e materiais com de: de rayas, de cuadros, de lunares, de algodón, de lana.",
+      "Quedar funciona como gustar: te queda genial, me quedan pequeños.",
+      "Estar de moda é estar na moda; pasado de moda é fora de moda."
+     ],
+     "q": "O que você costuma vestir no fim de semana: algo confortável ou elegante?",
+     "c": "Descreva a roupa que você está usando hoje com cores, uma estampa e um material."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "elegante",
+      "ex": "Para la boda voy a llevar algo elegante."
+     },
+     {
+      "w": "cómodo, cómoda",
+      "ex": "Estos zapatos son muy cómodos para caminar."
+     },
+     {
+      "w": "de rayas",
+      "ex": "Me encanta tu camiseta de rayas."
+     },
+     {
+      "w": "de cuadros",
+      "ex": "Mi padre siempre lleva camisas de cuadros."
+     },
+     {
+      "w": "te queda genial",
+      "ex": "Ese vestido te queda genial."
+     },
+     {
+      "w": "estar de moda",
+      "ex": "Los pantalones anchos están de moda otra vez."
+     }
+    ],
+    "gram": "Quedar funciona como gustar: me queda bien la chaqueta, te quedan grandes los zapatos. De + material o dibujo: de algodón, de lunares."
+   }
+  },
+  {
+   "d": 124,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Shopping: sizes and returns",
+     "g": "Ask for another size, try clothes on and return or exchange items.",
+     "p": [
+      "Ask: ¿Lo tiene en otra talla?, ¿Puedo probármelo?, ¿Dónde están los probadores?",
+      "Problems: me queda pequeño, me queda grande, me queda largo, tiene un defecto.",
+      "Returns: quiero devolverlo, ¿puedo cambiarlo por otro?, aquí tiene el tique."
+     ],
+     "q": "Have you ever returned something you bought? What happened?",
+     "c": "Act out a return at a shop: say what you bought, the problem and what you want."
+    },
+    "de": {
+     "t": "Einkaufen: Größen und Umtausch",
+     "g": "Du fragst nach einer anderen Größe, probierst an und tauschst um.",
+     "p": [
+      "Fragen: ¿Lo tiene en otra talla?, ¿Puedo probármelo?, ¿Dónde están los probadores?",
+      "Probleme: me queda pequeño, me queda grande, me queda largo, tiene un defecto.",
+      "Rückgabe: quiero devolverlo, ¿puedo cambiarlo por otro?, aquí tiene el tique."
+     ],
+     "q": "Hast du schon einmal etwas zurückgegeben? Was ist passiert?",
+     "c": "Spiel eine Rückgabe im Laden: was du gekauft hast, das Problem und was du willst."
+    },
+    "es": {
+     "t": "De compras: tallas y devoluciones",
+     "g": "Pide otra talla, pruébate ropa y devuelve o cambia lo que compras.",
+     "p": [
+      "Pregunta: ¿Lo tiene en otra talla?, ¿Puedo probármelo?, ¿Dónde están los probadores?",
+      "Problemas: me queda pequeño, me queda grande, me queda largo, tiene un defecto.",
+      "Devoluciones: quiero devolverlo, ¿puedo cambiarlo por otro?, aquí tiene el tique."
+     ],
+     "q": "¿Alguna vez has devuelto algo que compraste? ¿Qué pasó?",
+     "c": "Representa una devolución: di qué compraste, cuál es el problema y qué quieres."
+    },
+    "fr": {
+     "t": "Achats : tailles et retours",
+     "g": "Demander une autre taille, essayer et rendre ou échanger un article.",
+     "p": [
+      "Demander : ¿Lo tiene en otra talla?, ¿Puedo probármelo?, ¿Dónde están los probadores?",
+      "Problèmes : me queda pequeño, me queda grande, me queda largo, tiene un defecto.",
+      "Retours : quiero devolverlo, ¿puedo cambiarlo por otro?, aquí tiene el tique."
+     ],
+     "q": "As-tu déjà rendu quelque chose que tu avais acheté ? Que s'est-il passé ?",
+     "c": "Joue un retour en magasin : ce que tu as acheté, le problème et ce que tu veux."
+    },
+    "it": {
+     "t": "Shopping: taglie e resi",
+     "g": "Chiedi un'altra taglia, provi i vestiti e restituisci o cambi un articolo.",
+     "p": [
+      "Chiedere: ¿Lo tiene en otra talla?, ¿Puedo probármelo?, ¿Dónde están los probadores?",
+      "Problemi: me queda pequeño, me queda grande, me queda largo, tiene un defecto.",
+      "Resi: quiero devolverlo, ¿puedo cambiarlo por otro?, aquí tiene el tique."
+     ],
+     "q": "Hai mai restituito qualcosa che avevi comprato? Cosa è successo?",
+     "c": "Recita un reso in negozio: cosa hai comprato, il problema e cosa vuoi."
+    },
+    "pt": {
+     "t": "Compras: tamanhos e devoluções",
+     "g": "Pedes outro tamanho, experimentas roupa e devolves ou trocas um artigo.",
+     "p": [
+      "Perguntar: ¿Lo tiene en otra talla?, ¿Puedo probármelo?, ¿Dónde están los probadores?",
+      "Problemas: me queda pequeño, me queda grande, me queda largo, tiene un defecto.",
+      "Devoluções: quiero devolverlo, ¿puedo cambiarlo por otro?, aquí tiene el tique."
+     ],
+     "q": "Já alguma vez devolveste algo que compraste? O que aconteceu?",
+     "c": "Representa uma devolução numa loja: o que compraste, o problema e o que queres."
+    },
+    "pt_BR": {
+     "t": "Compras: tamanhos e trocas",
+     "g": "Peça outro tamanho, experimente roupas e devolva ou troque um produto.",
+     "p": [
+      "Perguntar: ¿Lo tiene en otra talla?, ¿Puedo probármelo?, ¿Dónde están los probadores?",
+      "Problemas: me queda pequeño, me queda grande, me queda largo, tiene un defecto.",
+      "Trocas: quiero devolverlo, ¿puedo cambiarlo por otro?, aquí tiene el tique."
+     ],
+     "q": "Você já devolveu algo que comprou? O que aconteceu?",
+     "c": "Encene uma troca numa loja: o que você comprou, o problema e o que você quer."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la talla",
+      "ex": "¿Lo tiene en otra talla?"
+     },
+     {
+      "w": "el probador",
+      "ex": "¿Dónde están los probadores?"
+     },
+     {
+      "w": "me queda pequeño",
+      "ex": "Este jersey me queda pequeño."
+     },
+     {
+      "w": "devolver",
+      "ex": "Quiero devolver estos pantalones."
+     },
+     {
+      "w": "el tique",
+      "ex": "Aquí tiene el tique de compra."
+     },
+     {
+      "w": "cambiar por",
+      "ex": "¿Puedo cambiarlo por una talla más grande?"
+     }
+    ],
+    "gram": "Pronombres de objeto directo con la ropa: lo (el jersey), la (la camisa), los, las. ¿Me lo puedo probar? Quiero devolverlo."
+   }
+  },
+  {
+   "d": 125,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Kitchen and cooking verbs",
+     "g": "Learn the key verbs and tools you need in a Spanish kitchen.",
+     "p": [
+      "Verbs: cortar, pelar, hervir, freír, hornear, mezclar, calentar, añadir.",
+      "Tools: la sartén, la olla, el horno, el cuchillo, la tabla, el bol.",
+      "Watch the stem changes: hervir becomes hierve, calentar becomes calienta, freír becomes fríe."
+     ],
+     "q": "What is the last thing you cooked, and which verbs describe what you did?",
+     "c": "Look around your kitchen and name six things in Spanish with el or la."
+    },
+    "de": {
+     "t": "Küche und Kochverben",
+     "g": "Du lernst die wichtigsten Verben und Geräte für eine spanische Küche.",
+     "p": [
+      "Verben: cortar, pelar, hervir, freír, hornear, mezclar, calentar, añadir.",
+      "Geräte: la sartén, la olla, el horno, el cuchillo, la tabla, el bol.",
+      "Achte auf Stammwechsel: hervir wird hierve, calentar wird calienta, freír wird fríe."
+     ],
+     "q": "Was hast du zuletzt gekocht, und welche Verben beschreiben, was du getan hast?",
+     "c": "Schau dich in deiner Küche um und nenne sechs Dinge auf Spanisch mit el oder la."
+    },
+    "es": {
+     "t": "Cocina y verbos culinarios",
+     "g": "Aprende los verbos y utensilios clave de la cocina.",
+     "p": [
+      "Verbos: cortar, pelar, hervir, freír, hornear, mezclar, calentar, añadir.",
+      "Utensilios: la sartén, la olla, el horno, el cuchillo, la tabla, el bol.",
+      "Ojo a los cambios de raíz: hervir, hierve; calentar, calienta; freír, fríe."
+     ],
+     "q": "¿Qué fue lo último que cocinaste y qué verbos describen lo que hiciste?",
+     "c": "Mira tu cocina y nombra seis cosas en español con el o la."
+    },
+    "fr": {
+     "t": "Cuisine et verbes culinaires",
+     "g": "Apprendre les verbes et ustensiles clés d'une cuisine espagnole.",
+     "p": [
+      "Verbes : cortar, pelar, hervir, freír, hornear, mezclar, calentar, añadir.",
+      "Ustensiles : la sartén, la olla, el horno, el cuchillo, la tabla, el bol.",
+      "Attention aux radicaux : hervir donne hierve, calentar donne calienta, freír donne fríe."
+     ],
+     "q": "Quelle est la dernière chose que tu as cuisinée, et avec quels verbes la décrire ?",
+     "c": "Regarde ta cuisine et nomme six objets en espagnol avec el ou la."
+    },
+    "it": {
+     "t": "Cucina e verbi culinari",
+     "g": "Impari i verbi e gli utensili principali della cucina spagnola.",
+     "p": [
+      "Verbi: cortar, pelar, hervir, freír, hornear, mezclar, calentar, añadir.",
+      "Utensili: la sartén, la olla, el horno, el cuchillo, la tabla, el bol.",
+      "Attento ai cambi di radice: hervir diventa hierve, calentar calienta, freír fríe."
+     ],
+     "q": "Qual è l'ultima cosa che hai cucinato e quali verbi descrivono cosa hai fatto?",
+     "c": "Guardati intorno in cucina e nomina sei cose in spagnolo con el o la."
+    },
+    "pt": {
+     "t": "Cozinha e verbos culinários",
+     "g": "Aprendes os verbos e utensílios essenciais de uma cozinha espanhola.",
+     "p": [
+      "Verbos: cortar, pelar, hervir, freír, hornear, mezclar, calentar, añadir.",
+      "Utensílios: la sartén, la olla, el horno, el cuchillo, la tabla, el bol.",
+      "Atenção às mudanças de raiz: hervir passa a hierve, calentar a calienta, freír a fríe."
+     ],
+     "q": "Qual foi a última coisa que cozinhaste e que verbos descrevem o que fizeste?",
+     "c": "Olha para a tua cozinha e diz seis coisas em espanhol com el ou la."
+    },
+    "pt_BR": {
+     "t": "Cozinha e verbos culinários",
+     "g": "Aprenda os verbos e utensílios essenciais de uma cozinha em espanhol.",
+     "p": [
+      "Verbos: cortar, pelar, hervir, freír, hornear, mezclar, calentar, añadir.",
+      "Utensílios: la sartén, la olla, el horno, el cuchillo, la tabla, el bol.",
+      "Atenção às mudanças no radical: hervir vira hierve, calentar vira calienta, freír vira fríe."
+     ],
+     "q": "Qual foi a última coisa que você cozinhou e que verbos descrevem o que fez?",
+     "c": "Olhe a sua cozinha e diga seis coisas em espanhol com el ou la."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cortar",
+      "ex": "Corta la cebolla en trozos pequeños."
+     },
+     {
+      "w": "hervir",
+      "ex": "Hierve el agua antes de echar la pasta."
+     },
+     {
+      "w": "freír",
+      "ex": "Mi abuela fríe las patatas en aceite de oliva."
+     },
+     {
+      "w": "hornear",
+      "ex": "Hay que hornear el pastel cuarenta minutos."
+     },
+     {
+      "w": "mezclar",
+      "ex": "Mezcla la harina con los huevos."
+     },
+     {
+      "w": "la sartén",
+      "ex": "Pon un poco de aceite en la sartén."
+     }
+    ],
+    "gram": "Verbos irregulares: hervir (hierve), freír (fríe), calentar (calienta). Participio irregular de freír: frito, como en patatas fritas."
+   }
+  },
+  {
+   "d": 126,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Following a recipe",
+     "g": "Explain a recipe step by step with sequence words and commands.",
+     "p": [
+      "Order the steps: primero, luego, después, mientras tanto, por último.",
+      "Recipes use tú commands: pela, corta, añade, mezcla. Pronouns attach: córtalas, añádelo.",
+      "Useful extras: a fuego lento, al gusto, una pizca de sal, durante diez minutos."
+     ],
+     "q": "What simple recipe could you explain to a friend right now?",
+     "c": "Write a five-step recipe for your favourite breakfast using a different sequence word in each step."
+    },
+    "de": {
+     "t": "Einem Rezept folgen",
+     "g": "Du erklärst ein Rezept Schritt für Schritt mit Reihenfolgewörtern und Imperativen.",
+     "p": [
+      "Schritte ordnen: primero, luego, después, mientras tanto, por último.",
+      "Rezepte nutzen den tú-Imperativ: pela, corta, añade, mezcla. Pronomen hängen sich an: córtalas.",
+      "Nützlich: a fuego lento, al gusto, una pizca de sal, durante diez minutos."
+     ],
+     "q": "Welches einfache Rezept könntest du einem Freund jetzt erklären?",
+     "c": "Schreib ein Frühstücksrezept in fünf Schritten, jeder mit einem anderen Reihenfolgewort."
+    },
+    "es": {
+     "t": "Seguir una receta",
+     "g": "Explica una receta paso a paso con conectores y el imperativo.",
+     "p": [
+      "Ordena los pasos: primero, luego, después, mientras tanto, por último.",
+      "Las recetas usan el imperativo de tú: pela, corta, añade, mezcla. Pronombres unidos: córtalas.",
+      "Expresiones útiles: a fuego lento, al gusto, una pizca de sal, durante diez minutos."
+     ],
+     "q": "¿Qué receta sencilla podrías explicarle ahora a un amigo?",
+     "c": "Escribe una receta de tu desayuno favorito en cinco pasos, con un conector distinto en cada uno."
+    },
+    "fr": {
+     "t": "Suivre une recette",
+     "g": "Expliquer une recette étape par étape avec des connecteurs et l'impératif.",
+     "p": [
+      "Ordonner les étapes : primero, luego, después, mientras tanto, por último.",
+      "Les recettes utilisent l'impératif tú : pela, corta, añade, mezcla. Pronoms collés : córtalas.",
+      "Utile : a fuego lento, al gusto, una pizca de sal, durante diez minutos."
+     ],
+     "q": "Quelle recette simple pourrais-tu expliquer à un ami maintenant ?",
+     "c": "Écris la recette de ton petit-déjeuner préféré en cinq étapes, chacune avec un connecteur différent."
+    },
+    "it": {
+     "t": "Seguire una ricetta",
+     "g": "Spieghi una ricetta passo dopo passo con connettivi e imperativo.",
+     "p": [
+      "Ordina i passaggi: primero, luego, después, mientras tanto, por último.",
+      "Le ricette usano l'imperativo con tú: pela, corta, añade, mezcla. Pronomi attaccati: córtalas.",
+      "Utili: a fuego lento, al gusto, una pizca de sal, durante diez minutos."
+     ],
+     "q": "Quale ricetta semplice potresti spiegare adesso a un amico?",
+     "c": "Scrivi la ricetta della tua colazione preferita in cinque passaggi, ognuno con un connettivo diverso."
+    },
+    "pt": {
+     "t": "Seguir uma receita",
+     "g": "Explicas uma receita passo a passo com conectores e o imperativo.",
+     "p": [
+      "Ordena os passos: primero, luego, después, mientras tanto, por último.",
+      "As receitas usam o imperativo de tú: pela, corta, añade, mezcla. Pronomes juntos: córtalas.",
+      "Úteis: a fuego lento, al gusto, una pizca de sal, durante diez minutos."
+     ],
+     "q": "Que receita simples poderias explicar agora a um amigo?",
+     "c": "Escreve a receita do teu pequeno-almoço preferido em cinco passos, cada um com um conector diferente."
+    },
+    "pt_BR": {
+     "t": "Seguir uma receita",
+     "g": "Explique uma receita passo a passo com conectores e o imperativo.",
+     "p": [
+      "Ordene os passos: primero, luego, después, mientras tanto, por último.",
+      "Receitas usam o imperativo de tú: pela, corta, añade, mezcla. Pronomes juntos: córtalas.",
+      "Úteis: a fuego lento, al gusto, una pizca de sal, durante diez minutos."
+     ],
+     "q": "Que receita simples você poderia explicar agora para um amigo?",
+     "c": "Escreva a receita do seu café da manhã favorito em cinco passos, cada um com um conector diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "primero",
+      "ex": "Primero, pela las patatas."
+     },
+     {
+      "w": "luego",
+      "ex": "Luego, córtalas en rodajas finas."
+     },
+     {
+      "w": "después",
+      "ex": "Después, fríelas a fuego medio."
+     },
+     {
+      "w": "mientras tanto",
+      "ex": "Mientras tanto, bate los huevos."
+     },
+     {
+      "w": "por último",
+      "ex": "Por último, añade sal al gusto."
+     },
+     {
+      "w": "a fuego lento",
+      "ex": "Deja la salsa a fuego lento diez minutos."
+     }
+    ],
+    "gram": "Imperativo de tú en recetas: corta, pela, añade, mezcla. El pronombre va unido: córtalas, añádelo. También vale el infinitivo: cortar."
+   }
+  },
+  {
+   "d": 127,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Typical dishes from your country",
+     "g": "Describe a dish you love: ingredients, taste and how it is eaten.",
+     "p": [
+      "Ingredients: está hecho con arroz y pollo, lleva tomate, ajo y aceite.",
+      "Taste: sabe a limón, es picante, dulce, salado, está riquísimo.",
+      "Customs: se come con pan, se sirve frío, se toma en Navidad."
+     ],
+     "q": "What dish from your country should every visitor try, and why?",
+     "c": "Describe a typical dish in four sentences without naming it, then let your Buddy guess."
+    },
+    "de": {
+     "t": "Typische Gerichte aus deinem Land",
+     "g": "Du beschreibst ein Lieblingsgericht: Zutaten, Geschmack und wie man es isst.",
+     "p": [
+      "Zutaten: está hecho con arroz y pollo, lleva tomate, ajo y aceite.",
+      "Geschmack: sabe a limón, es picante, dulce, salado, está riquísimo.",
+      "Bräuche: se come con pan, se sirve frío, se toma en Navidad."
+     ],
+     "q": "Welches Gericht aus deinem Land sollte jeder Besucher probieren, und warum?",
+     "c": "Beschreib ein typisches Gericht in vier Sätzen, ohne den Namen zu nennen, und lass raten."
+    },
+    "es": {
+     "t": "Platos típicos de tu país",
+     "g": "Describe un plato que te encanta: ingredientes, sabor y cómo se come.",
+     "p": [
+      "Ingredientes: está hecho con arroz y pollo, lleva tomate, ajo y aceite.",
+      "Sabor: sabe a limón, es picante, dulce, salado, está riquísimo.",
+      "Costumbres: se come con pan, se sirve frío, se toma en Navidad."
+     ],
+     "q": "¿Qué plato de tu país debería probar todo visitante y por qué?",
+     "c": "Describe un plato típico en cuatro frases sin decir su nombre y deja que tu Buddy lo adivine."
+    },
+    "fr": {
+     "t": "Plats typiques de ton pays",
+     "g": "Décrire un plat que tu adores : ingrédients, goût et façon de le manger.",
+     "p": [
+      "Ingrédients : está hecho con arroz y pollo, lleva tomate, ajo y aceite.",
+      "Goût : sabe a limón, es picante, dulce, salado, está riquísimo.",
+      "Coutumes : se come con pan, se sirve frío, se toma en Navidad."
+     ],
+     "q": "Quel plat de ton pays chaque visiteur devrait-il goûter, et pourquoi ?",
+     "c": "Décris un plat typique en quatre phrases sans le nommer et laisse ton Buddy deviner."
+    },
+    "it": {
+     "t": "Piatti tipici del tuo paese",
+     "g": "Descrivi un piatto che adori: ingredienti, sapore e come si mangia.",
+     "p": [
+      "Ingredienti: está hecho con arroz y pollo, lleva tomate, ajo y aceite.",
+      "Sapore: sabe a limón, es picante, dulce, salado, está riquísimo.",
+      "Usanze: se come con pan, se sirve frío, se toma en Navidad."
+     ],
+     "q": "Quale piatto del tuo paese dovrebbe assaggiare ogni visitatore, e perché?",
+     "c": "Descrivi un piatto tipico in quattro frasi senza nominarlo e lascia indovinare il tuo Buddy."
+    },
+    "pt": {
+     "t": "Pratos típicos do teu país",
+     "g": "Descreves um prato de que gostas muito: ingredientes, sabor e como se come.",
+     "p": [
+      "Ingredientes: está hecho con arroz y pollo, lleva tomate, ajo y aceite.",
+      "Sabor: sabe a limón, es picante, dulce, salado, está riquísimo.",
+      "Costumes: se come con pan, se sirve frío, se toma en Navidad."
+     ],
+     "q": "Que prato do teu país todos os visitantes deviam provar, e porquê?",
+     "c": "Descreve um prato típico em quatro frases sem dizer o nome e deixa o teu Buddy adivinhar."
+    },
+    "pt_BR": {
+     "t": "Pratos típicos do seu país",
+     "g": "Descreva um prato que você adora: ingredientes, sabor e como se come.",
+     "p": [
+      "Ingredientes: está hecho con arroz y pollo, lleva tomate, ajo y aceite.",
+      "Sabor: sabe a limón, es picante, dulce, salado, está riquísimo.",
+      "Costumes: se come con pan, se sirve frío, se toma en Navidad."
+     ],
+     "q": "Que prato do seu país todo visitante deveria provar, e por quê?",
+     "c": "Descreva um prato típico em quatro frases sem dizer o nome e deixe o seu Buddy adivinhar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "está hecho con",
+      "ex": "El gazpacho está hecho con tomate, pepino y pimiento."
+     },
+     {
+      "w": "sabe a",
+      "ex": "Este helado sabe a limón."
+     },
+     {
+      "w": "se come con",
+      "ex": "La paella se come con una cuchara de madera."
+     },
+     {
+      "w": "picante",
+      "ex": "La comida mexicana suele ser bastante picante."
+     },
+     {
+      "w": "el plato típico",
+      "ex": "El plato típico de mi región es el cocido."
+     },
+     {
+      "w": "riquísimo",
+      "ex": "La tortilla de mi madre está riquísima."
+     }
+    ],
+    "gram": "Saber a + sabor (sabe a ajo), estar hecho con + ingredientes, se come o se sirve + cómo. Estar rico: este plato está muy rico."
+   }
+  },
+  {
+   "d": 128,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "At the market",
+     "g": "Buy food at a market stall with quantities and polite requests.",
+     "p": [
+      "Quantities: un kilo de, medio kilo de, cien gramos de, una docena de, una botella de.",
+      "Asking: ¿Me da...?, Póngame..., Quería... The imperfect quería sounds softer.",
+      "The stallholder asks ¿Algo más?; answer Nada más, gracias, ¿cuánto es?"
+     ],
+     "q": "What do you usually buy fresh each week, and where do you buy it?",
+     "c": "Write a shopping list of six items, each with a quantity in Spanish."
+    },
+    "de": {
+     "t": "Auf dem Markt",
+     "g": "Du kaufst am Marktstand mit Mengenangaben und höflichen Bitten ein.",
+     "p": [
+      "Mengen: un kilo de, medio kilo de, cien gramos de, una docena de, una botella de.",
+      "Bitten: ¿Me da...?, Póngame..., Quería... Das Imperfekt quería klingt höflicher.",
+      "Der Verkäufer fragt ¿Algo más?; antworte Nada más, gracias, ¿cuánto es?"
+     ],
+     "q": "Was kaufst du jede Woche frisch, und wo kaufst du es?",
+     "c": "Schreib eine Einkaufsliste mit sechs Produkten, jedes mit einer Mengenangabe auf Spanisch."
+    },
+    "es": {
+     "t": "En el mercado",
+     "g": "Compra en un puesto del mercado con cantidades y peticiones educadas.",
+     "p": [
+      "Cantidades: un kilo de, medio kilo de, cien gramos de, una docena de, una botella de.",
+      "Pedir: ¿Me da...?, Póngame..., Quería... Quería suena más suave y educado.",
+      "El vendedor pregunta ¿Algo más?; responde Nada más, gracias, ¿cuánto es?"
+     ],
+     "q": "¿Qué compras fresco cada semana y dónde lo compras?",
+     "c": "Escribe una lista de la compra con seis productos, cada uno con su cantidad."
+    },
+    "fr": {
+     "t": "Au marché",
+     "g": "Faire ses courses au marché avec des quantités et des demandes polies.",
+     "p": [
+      "Quantités : un kilo de, medio kilo de, cien gramos de, una docena de, una botella de.",
+      "Demander : ¿Me da...?, Póngame..., Quería... L'imparfait quería est plus doux.",
+      "Le marchand demande ¿Algo más? ; réponds Nada más, gracias, ¿cuánto es?"
+     ],
+     "q": "Qu'achètes-tu de frais chaque semaine, et où ?",
+     "c": "Écris une liste de courses de six produits, chacun avec une quantité en espagnol."
+    },
+    "it": {
+     "t": "Al mercato",
+     "g": "Fai la spesa al mercato con quantità e richieste cortesi.",
+     "p": [
+      "Quantità: un kilo de, medio kilo de, cien gramos de, una docena de, una botella de.",
+      "Chiedere: ¿Me da...?, Póngame..., Quería... L'imperfetto quería è più gentile.",
+      "Il venditore chiede ¿Algo más?; rispondi Nada más, gracias, ¿cuánto es?"
+     ],
+     "q": "Cosa compri di fresco ogni settimana, e dove?",
+     "c": "Scrivi una lista della spesa di sei prodotti, ognuno con una quantità in spagnolo."
+    },
+    "pt": {
+     "t": "No mercado",
+     "g": "Compras numa banca do mercado com quantidades e pedidos educados.",
+     "p": [
+      "Quantidades: un kilo de, medio kilo de, cien gramos de, una docena de, una botella de.",
+      "Pedir: ¿Me da...?, Póngame..., Quería... O imperfeito quería soa mais suave.",
+      "O vendedor pergunta ¿Algo más?; responde Nada más, gracias, ¿cuánto es?"
+     ],
+     "q": "O que compras fresco todas as semanas, e onde?",
+     "c": "Escreve uma lista de compras com seis produtos, cada um com a quantidade em espanhol."
+    },
+    "pt_BR": {
+     "t": "Na feira",
+     "g": "Faça compras numa barraca de feira com quantidades e pedidos educados.",
+     "p": [
+      "Quantidades: un kilo de, medio kilo de, cien gramos de, una docena de, una botella de.",
+      "Pedir: ¿Me da...?, Póngame..., Quería... O imperfeito quería soa mais gentil.",
+      "O feirante pergunta ¿Algo más?; responda Nada más, gracias, ¿cuánto es?"
+     ],
+     "q": "O que você compra fresco toda semana, e onde?",
+     "c": "Escreva uma lista de compras com seis produtos, cada um com a quantidade em espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un kilo de",
+      "ex": "Póngame un kilo de tomates, por favor."
+     },
+     {
+      "w": "una docena de",
+      "ex": "Quería una docena de huevos."
+     },
+     {
+      "w": "medio kilo de",
+      "ex": "Medio kilo de fresas, por favor."
+     },
+     {
+      "w": "¿me da...?",
+      "ex": "¿Me da una barra de pan?"
+     },
+     {
+      "w": "¿algo más?",
+      "ex": "¿Algo más? No, nada más, gracias."
+     },
+     {
+      "w": "¿cuánto es?",
+      "ex": "¿Cuánto es todo?"
+     }
+    ],
+    "gram": "Cantidad + de + producto: un kilo de naranjas, una lata de atún, un paquete de arroz. Pedir con póngame, ¿me da...? o quería (más cortés)."
+   }
+  },
+  {
+   "d": 129,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Se impersonal: se habla español",
+     "g": "Make general statements without saying who does the action.",
+     "p": [
+      "Se + verb in third person: se habla español, se come bien, se dice así.",
+      "With a plural noun the verb is plural: se vende casa, se venden casas.",
+      "Super useful questions: ¿Cómo se dice...?, ¿Se puede...?, ¿Cómo se escribe...?"
+     ],
+     "q": "What languages are spoken in your country, and what is eaten at celebrations?",
+     "c": "Write four signs for a shop or street using se: se vende, se alquila, se necesita, se habla."
+    },
+    "de": {
+     "t": "Unpersönliches se: se habla español",
+     "g": "Du machst allgemeine Aussagen, ohne zu sagen, wer handelt (wie man auf Deutsch).",
+     "p": [
+      "Se + Verb in der 3. Person: se habla español, se come bien, se dice así.",
+      "Bei Pluralnomen steht das Verb im Plural: se vende casa, se venden casas.",
+      "Nützliche Fragen: ¿Cómo se dice...?, ¿Se puede...?, ¿Cómo se escribe...?"
+     ],
+     "q": "Welche Sprachen spricht man in deinem Land, und was isst man an Festen?",
+     "c": "Schreib vier Schilder für einen Laden oder eine Straße mit se: se vende, se alquila, se necesita, se habla."
+    },
+    "es": {
+     "t": "Se impersonal: se habla español",
+     "g": "Haz afirmaciones generales sin decir quién realiza la acción.",
+     "p": [
+      "Se + verbo en tercera persona: se habla español, se come bien, se dice así.",
+      "Con un nombre en plural, el verbo va en plural: se vende casa, se venden casas.",
+      "Preguntas muy útiles: ¿Cómo se dice...?, ¿Se puede...?, ¿Cómo se escribe...?"
+     ],
+     "q": "¿Qué idiomas se hablan en tu país y qué se come en las fiestas?",
+     "c": "Escribe cuatro carteles para una tienda o una calle con se: se vende, se alquila, se necesita, se habla."
+    },
+    "fr": {
+     "t": "Se impersonnel : se habla español",
+     "g": "Faire des affirmations générales sans dire qui agit (comme on en français).",
+     "p": [
+      "Se + verbe à la 3e personne : se habla español, se come bien, se dice así.",
+      "Avec un nom pluriel, le verbe est au pluriel : se vende casa, se venden casas.",
+      "Questions utiles : ¿Cómo se dice...?, ¿Se puede...?, ¿Cómo se escribe...?"
+     ],
+     "q": "Quelles langues parle-t-on dans ton pays, et que mange-t-on lors des fêtes ?",
+     "c": "Écris quatre panneaux pour une boutique ou une rue avec se : se vende, se alquila, se necesita, se habla."
+    },
+    "it": {
+     "t": "Se impersonale: se habla español",
+     "g": "Fai affermazioni generali senza dire chi compie l'azione (come il si italiano).",
+     "p": [
+      "Se + verbo alla terza persona: se habla español, se come bien, se dice así.",
+      "Con un nome plurale il verbo va al plurale: se vende casa, se venden casas.",
+      "Domande utilissime: ¿Cómo se dice...?, ¿Se puede...?, ¿Cómo se escribe...?"
+     ],
+     "q": "Quali lingue si parlano nel tuo paese e cosa si mangia alle feste?",
+     "c": "Scrivi quattro cartelli per un negozio o una via con se: se vende, se alquila, se necesita, se habla."
+    },
+    "pt": {
+     "t": "Se impessoal: se habla español",
+     "g": "Fazes afirmações gerais sem dizer quem faz a ação, como o se português.",
+     "p": [
+      "Se + verbo na terceira pessoa: se habla español, se come bien, se dice así.",
+      "Com um nome no plural, o verbo vai para o plural: se vende casa, se venden casas.",
+      "Perguntas muito úteis: ¿Cómo se dice...?, ¿Se puede...?, ¿Cómo se escribe...?"
+     ],
+     "q": "Que línguas se falam no teu país e o que se come nas festas?",
+     "c": "Escreve quatro cartazes para uma loja ou rua com se: se vende, se alquila, se necesita, se habla."
+    },
+    "pt_BR": {
+     "t": "Se impessoal: se habla español",
+     "g": "Faça afirmações gerais sem dizer quem faz a ação, como o se do português.",
+     "p": [
+      "Se + verbo na terceira pessoa: se habla español, se come bien, se dice así.",
+      "Com substantivo no plural, o verbo vai para o plural: se vende casa, se venden casas.",
+      "Perguntas muito úteis: ¿Cómo se dice...?, ¿Se puede...?, ¿Cómo se escribe...?"
+     ],
+     "q": "Que línguas se falam no seu país e o que se come nas festas?",
+     "c": "Escreva quatro placas para uma loja ou rua com se: se vende, se alquila, se necesita, se habla."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se habla",
+      "ex": "En Brasil se habla portugués."
+     },
+     {
+      "w": "se vende",
+      "ex": "Se vende piso en el centro."
+     },
+     {
+      "w": "se dice",
+      "ex": "¿Cómo se dice window en español?"
+     },
+     {
+      "w": "se necesita",
+      "ex": "Se necesita camarero con experiencia."
+     },
+     {
+      "w": "se puede",
+      "ex": "¿Se puede pagar con tarjeta?"
+     },
+     {
+      "w": "se come bien",
+      "ex": "En este barrio se come muy bien."
+     }
+    ],
+    "gram": "Se impersonal: se + verbo en tercera persona. El verbo concuerda con el nombre: se vende piso, se venden pisos. Habla en general."
+   }
+  },
+  {
+   "d": 130,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Algo, nada, alguien, nadie",
+     "g": "Use indefinite words and the Spanish double negative correctly.",
+     "p": [
+      "Pairs: algo / nada (something / nothing), alguien / nadie (someone / no one), algún / ningún.",
+      "Spanish needs the double negative: no veo a nadie, no quiero nada. It is correct, not a mistake!",
+      "People take a: ¿Conoces a alguien aquí? At the start no no is needed: nadie lo sabe."
+     ],
+     "q": "Is there something you never do on weekends? Answer with no... nada or nunca.",
+     "c": "Write three questions with algo, alguien and alguna, then answer each with nada, nadie and ninguna."
+    },
+    "de": {
+     "t": "Algo, nada, alguien, nadie",
+     "g": "Du benutzt Indefinitwörter und die spanische doppelte Verneinung richtig.",
+     "p": [
+      "Paare: algo / nada (etwas / nichts), alguien / nadie (jemand / niemand), algún / ningún.",
+      "Spanisch braucht die doppelte Verneinung: no veo a nadie, no quiero nada. Das ist korrekt!",
+      "Personen bekommen a: ¿Conoces a alguien aquí? Steht nadie vorn, fällt no weg: nadie lo sabe."
+     ],
+     "q": "Gibt es etwas, das du am Wochenende nie machst? Antworte mit no... nada oder nunca.",
+     "c": "Schreib drei Fragen mit algo, alguien und alguna und beantworte sie mit nada, nadie und ninguna."
+    },
+    "es": {
+     "t": "Algo, nada, alguien, nadie",
+     "g": "Usa bien los indefinidos y la doble negación del español.",
+     "p": [
+      "Parejas: algo y nada, alguien y nadie, algún y ningún, alguna y ninguna.",
+      "El español usa doble negación: no veo a nadie, no quiero nada. ¡Es correcto, no es un error!",
+      "Con personas se pone a: ¿Conoces a alguien aquí? Si nadie va delante, no hace falta no: nadie lo sabe."
+     ],
+     "q": "¿Hay algo que no haces nunca los fines de semana? Responde con no... nada o nunca.",
+     "c": "Escribe tres preguntas con algo, alguien y alguna, y respóndelas con nada, nadie y ninguna."
+    },
+    "fr": {
+     "t": "Algo, nada, alguien, nadie",
+     "g": "Utiliser les indéfinis et la double négation espagnole correctement.",
+     "p": [
+      "Paires : algo / nada (quelque chose / rien), alguien / nadie (quelqu'un / personne), algún / ningún.",
+      "L'espagnol garde la double négation : no veo a nadie, no quiero nada, comme ne... personne.",
+      "Les personnes prennent a : ¿Conoces a alguien aquí? En tête de phrase, pas de no : nadie lo sabe."
+     ],
+     "q": "Y a-t-il quelque chose que tu ne fais jamais le week-end ? Réponds avec no... nada ou nunca.",
+     "c": "Écris trois questions avec algo, alguien et alguna, puis réponds avec nada, nadie et ninguna."
+    },
+    "it": {
+     "t": "Algo, nada, alguien, nadie",
+     "g": "Usi bene gli indefiniti e la doppia negazione spagnola.",
+     "p": [
+      "Coppie: algo / nada (qualcosa / niente), alguien / nadie (qualcuno / nessuno), algún / ningún.",
+      "Come in italiano c'è la doppia negazione: no veo a nadie (non vedo nessuno), no quiero nada.",
+      "Con le persone si usa a: ¿Conoces a alguien aquí? Se nadie è all'inizio, niente no: nadie lo sabe."
+     ],
+     "q": "C'è qualcosa che non fai mai nel weekend? Rispondi con no... nada o nunca.",
+     "c": "Scrivi tre domande con algo, alguien e alguna, poi rispondi con nada, nadie e ninguna."
+    },
+    "pt": {
+     "t": "Algo, nada, alguien, nadie",
+     "g": "Usas bem os indefinidos e a dupla negação espanhola.",
+     "p": [
+      "Pares: algo / nada (algo / nada), alguien / nadie (alguém / ninguém), algún / ningún.",
+      "Tal como em português, há dupla negação: no veo a nadie (não vejo ninguém), no quiero nada.",
+      "Com pessoas usa-se a: ¿Conoces a alguien aquí? Se nadie vem primeiro, não há no: nadie lo sabe."
+     ],
+     "q": "Há alguma coisa que nunca fazes ao fim de semana? Responde com no... nada ou nunca.",
+     "c": "Escreve três perguntas com algo, alguien e alguna e responde com nada, nadie e ninguna."
+    },
+    "pt_BR": {
+     "t": "Algo, nada, alguien, nadie",
+     "g": "Use bem os indefinidos e a dupla negação do espanhol.",
+     "p": [
+      "Pares: algo / nada (algo / nada), alguien / nadie (alguém / ninguém), algún / ningún.",
+      "Como em português, existe dupla negação: no veo a nadie (não vejo ninguém), no quiero nada.",
+      "Com pessoas se usa a: ¿Conoces a alguien aquí? Se nadie vem antes, não precisa de no: nadie lo sabe."
+     ],
+     "q": "Tem alguma coisa que você nunca faz no fim de semana? Responda com no... nada ou nunca.",
+     "c": "Escreva três perguntas com algo, alguien e alguna e responda com nada, nadie e ninguna."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "algo",
+      "ex": "¿Quieres algo de beber?"
+     },
+     {
+      "w": "nada",
+      "ex": "No quiero nada, gracias."
+     },
+     {
+      "w": "alguien",
+      "ex": "¿Hay alguien en casa?"
+     },
+     {
+      "w": "nadie",
+      "ex": "No hay nadie en la oficina."
+     },
+     {
+      "w": "algún, alguna",
+      "ex": "¿Tienes alguna pregunta?"
+     },
+     {
+      "w": "ningún, ninguna",
+      "ex": "No tengo ninguna idea."
+     }
+    ],
+    "gram": "Doble negación: no + verbo + nada/nadie/nunca/ningún: no veo a nadie, no hago nada. Si nadie va delante, sin no: nadie lo sabe."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 91,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Perfekt with haben",
+     "g": "Welcome to A2! Talk about the past in spoken German with the Perfekt: haben + past participle.",
+     "p": [
+      "The Perfekt has two parts: haben in second position and the participle at the very end: Ich habe Fußball gespielt.",
+      "Germans use the Perfekt for almost everything past in conversation: Was hast du gestern gemacht?",
+      "Conjugate only haben: ich habe, du hast, er hat, wir haben. The participle never changes: gespielt."
+     ],
+     "q": "Was hast du gestern gemacht? Tell me three things with haben and a participle.",
+     "c": "Write five sentences about yesterday with haben: gekocht, gearbeitet, gekauft, gehört and gespielt."
+    },
+    "de": {
+     "t": "Perfekt mit haben",
+     "g": "Willkommen in A2! Du sprichst mit dem Perfekt über die Vergangenheit: haben + Partizip II.",
+     "p": [
+      "Das Perfekt hat zwei Teile: haben auf Position zwei und das Partizip ganz am Ende: Ich habe Fußball gespielt.",
+      "Im Gespräch benutzt man für fast alles Vergangene das Perfekt: Was hast du gestern gemacht?",
+      "Nur haben wird konjugiert: ich habe, du hast, er hat, wir haben. Das Partizip bleibt gleich: gespielt."
+     ],
+     "q": "Was hast du gestern gemacht? Erzähl mir drei Dinge mit haben und Partizip.",
+     "c": "Schreib fünf Sätze über gestern mit haben: gekocht, gearbeitet, gekauft, gehört und gespielt."
+    },
+    "es": {
+     "t": "Perfekt con haben",
+     "g": "¡Bienvenido al A2! Habla del pasado en el alemán hablado con el Perfekt: haben + participio.",
+     "p": [
+      "El Perfekt tiene dos partes: haben en segunda posición y el participio al final: Ich habe Fußball gespielt.",
+      "En la conversación se usa el Perfekt para casi todo el pasado: Was hast du gestern gemacht?",
+      "Solo se conjuga haben: ich habe, du hast, er hat, wir haben. El participio no cambia: gespielt."
+     ],
+     "q": "¿Was hast du gestern gemacht? Cuéntame tres cosas con haben y participio.",
+     "c": "Escribe cinco frases sobre ayer con haben: gekocht, gearbeitet, gekauft, gehört y gespielt."
+    },
+    "fr": {
+     "t": "Le Perfekt avec haben",
+     "g": "Bienvenue en A2 ! Parler du passé à l'oral avec le Perfekt : haben + participe passé.",
+     "p": [
+      "Le Perfekt a deux parties : haben en deuxième position et le participe tout à la fin : Ich habe Fußball gespielt.",
+      "À l'oral, on utilise le Perfekt pour presque tout le passé : Was hast du gestern gemacht?",
+      "On conjugue seulement haben : ich habe, du hast, er hat, wir haben. Le participe ne change pas : gespielt."
+     ],
+     "q": "Was hast du gestern gemacht? Raconte-moi trois choses avec haben et un participe.",
+     "c": "Écris cinq phrases sur hier avec haben : gekocht, gearbeitet, gekauft, gehört et gespielt."
+    },
+    "it": {
+     "t": "Il Perfekt con haben",
+     "g": "Benvenuto all'A2! Parli del passato nel tedesco parlato con il Perfekt: haben + participio.",
+     "p": [
+      "Il Perfekt ha due parti: haben in seconda posizione e il participio alla fine: Ich habe Fußball gespielt.",
+      "Nella conversazione si usa il Perfekt per quasi tutto il passato: Was hast du gestern gemacht?",
+      "Si coniuga solo haben: ich habe, du hast, er hat, wir haben. Il participio non cambia: gespielt."
+     ],
+     "q": "Was hast du gestern gemacht? Raccontami tre cose con haben e il participio.",
+     "c": "Scrivi cinque frasi su ieri con haben: gekocht, gearbeitet, gekauft, gehört e gespielt."
+    },
+    "pt": {
+     "t": "Perfekt com haben",
+     "g": "Bem-vindo ao A2! Falar do passado no alemão falado com o Perfekt: haben + particípio.",
+     "p": [
+      "O Perfekt tem duas partes: haben na segunda posição e o particípio no fim: Ich habe Fußball gespielt.",
+      "Na conversa usa-se o Perfekt para quase todo o passado: Was hast du gestern gemacht?",
+      "Só se conjuga haben: ich habe, du hast, er hat, wir haben. O particípio não muda: gespielt."
+     ],
+     "q": "Was hast du gestern gemacht? Conta-me três coisas com haben e particípio.",
+     "c": "Escreve cinco frases sobre ontem com haben: gekocht, gearbeitet, gekauft, gehört e gespielt."
+    },
+    "pt_BR": {
+     "t": "Perfekt com haben",
+     "g": "Bem-vindo ao A2! Falar do passado no alemão falado com o Perfekt: haben + particípio.",
+     "p": [
+      "O Perfekt tem duas partes: haben na segunda posição e o particípio no final: Ich habe Fußball gespielt.",
+      "Na conversa se usa o Perfekt para quase todo o passado: Was hast du gestern gemacht?",
+      "Só haben é conjugado: ich habe, du hast, er hat, wir haben. O particípio não muda: gespielt."
+     ],
+     "q": "Was hast du gestern gemacht? Me conte três coisas com haben e particípio.",
+     "c": "Escreva cinco frases sobre ontem com haben: gekocht, gearbeitet, gekauft, gehört e gespielt."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gespielt",
+      "ex": "Wir haben gestern Karten gespielt."
+     },
+     {
+      "w": "gemacht",
+      "ex": "Was hast du am Wochenende gemacht?"
+     },
+     {
+      "w": "gekocht",
+      "ex": "Mein Vater hat Suppe gekocht."
+     },
+     {
+      "w": "gearbeitet",
+      "ex": "Ich habe bis sechs Uhr gearbeitet."
+     },
+     {
+      "w": "gehört",
+      "ex": "Hast du das neue Lied gehört?"
+     },
+     {
+      "w": "gestern",
+      "ex": "Gestern habe ich viel gelernt."
+     }
+    ],
+    "gram": "Perfekt: haben (Position 2) + Partizip II (am Ende). Ich habe gestern Tennis gespielt. Hast du schon gegessen?"
+   }
+  },
+  {
+   "d": 92,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Past participles: regular",
+     "g": "Form the participle of regular verbs: ge- + stem + -t, as in gemacht, gekauft, gelernt.",
+     "p": [
+      "Take the stem and wrap it: machen, mach, gemacht; kaufen, kauf, gekauft; lernen, lern, gelernt.",
+      "If the stem ends in -t or -d, add -et: arbeiten, gearbeitet; warten, gewartet; reden, geredet.",
+      "The participle is always at the end of the sentence, after everything else: Ich habe heute ein Buch gekauft."
+     ],
+     "q": "What did you buy, learn or make last week? Answer with three regular participles.",
+     "c": "Make the participles of ten regular verbs you know, then use three of them in sentences."
+    },
+    "de": {
+     "t": "Partizip II: regelmäßige Verben",
+     "g": "Du bildest das Partizip regelmäßiger Verben: ge- + Stamm + -t, wie gemacht, gekauft, gelernt.",
+     "p": [
+      "Nimm den Stamm und rahme ihn ein: machen, mach, gemacht; kaufen, kauf, gekauft; lernen, lern, gelernt.",
+      "Endet der Stamm auf -t oder -d, kommt -et: arbeiten, gearbeitet; warten, gewartet; reden, geredet.",
+      "Das Partizip steht immer ganz am Ende des Satzes: Ich habe heute ein Buch gekauft."
+     ],
+     "q": "Was hast du letzte Woche gekauft, gelernt oder gemacht? Antworte mit drei regelmäßigen Partizipien.",
+     "c": "Bilde die Partizipien von zehn regelmäßigen Verben und benutze drei davon in Sätzen."
+    },
+    "es": {
+     "t": "Participios regulares",
+     "g": "Forma el participio de los verbos regulares: ge- + raíz + -t, como gemacht, gekauft, gelernt.",
+     "p": [
+      "Toma la raíz y rodéala: machen, mach, gemacht; kaufen, kauf, gekauft; lernen, lern, gelernt.",
+      "Si la raíz termina en -t o -d, se añade -et: arbeiten, gearbeitet; warten, gewartet; reden, geredet.",
+      "El participio va siempre al final de la frase: Ich habe heute ein Buch gekauft."
+     ],
+     "q": "¿Qué compraste, aprendiste o hiciste la semana pasada? Responde con tres participios regulares.",
+     "c": "Forma los participios de diez verbos regulares que conozcas y usa tres en frases."
+    },
+    "fr": {
+     "t": "Les participes passés réguliers",
+     "g": "Former le participe des verbes réguliers : ge- + radical + -t, comme gemacht, gekauft, gelernt.",
+     "p": [
+      "Prends le radical et encadre-le : machen, mach, gemacht ; kaufen, kauf, gekauft ; lernen, lern, gelernt.",
+      "Si le radical finit par -t ou -d, on ajoute -et : arbeiten, gearbeitet ; warten, gewartet ; reden, geredet.",
+      "Le participe est toujours à la fin de la phrase : Ich habe heute ein Buch gekauft."
+     ],
+     "q": "Qu'as-tu acheté, appris ou fait la semaine dernière ? Réponds avec trois participes réguliers.",
+     "c": "Forme les participes de dix verbes réguliers que tu connais, puis utilises-en trois dans des phrases."
+    },
+    "it": {
+     "t": "Participi regolari",
+     "g": "Formi il participio dei verbi regolari: ge- + radice + -t, come gemacht, gekauft, gelernt.",
+     "p": [
+      "Prendi la radice e incorniciala: machen, mach, gemacht; kaufen, kauf, gekauft; lernen, lern, gelernt.",
+      "Se la radice finisce in -t o -d, si aggiunge -et: arbeiten, gearbeitet; warten, gewartet; reden, geredet.",
+      "Il participio va sempre alla fine della frase: Ich habe heute ein Buch gekauft."
+     ],
+     "q": "Che cosa hai comprato, imparato o fatto la settimana scorsa? Rispondi con tre participi regolari.",
+     "c": "Forma i participi di dieci verbi regolari che conosci e usane tre in frasi."
+    },
+    "pt": {
+     "t": "Particípios regulares",
+     "g": "Formar o particípio dos verbos regulares: ge- + radical + -t, como gemacht, gekauft, gelernt.",
+     "p": [
+      "Pega no radical e rodeia-o: machen, mach, gemacht; kaufen, kauf, gekauft; lernen, lern, gelernt.",
+      "Se o radical acaba em -t ou -d, junta-se -et: arbeiten, gearbeitet; warten, gewartet; reden, geredet.",
+      "O particípio fica sempre no fim da frase: Ich habe heute ein Buch gekauft."
+     ],
+     "q": "O que compraste, aprendeste ou fizeste na semana passada? Responde com três particípios regulares.",
+     "c": "Forma os particípios de dez verbos regulares que conheces e usa três em frases."
+    },
+    "pt_BR": {
+     "t": "Particípios regulares",
+     "g": "Formar o particípio dos verbos regulares: ge- + radical + -t, como gemacht, gekauft, gelernt.",
+     "p": [
+      "Pegue o radical e coloque ge- e -t: machen, mach, gemacht; kaufen, kauf, gekauft; lernen, lern, gelernt.",
+      "Se o radical termina em -t ou -d, entra -et: arbeiten, gearbeitet; warten, gewartet; reden, geredet.",
+      "O particípio fica sempre no final da frase: Ich habe heute ein Buch gekauft."
+     ],
+     "q": "O que você comprou, aprendeu ou fez na semana passada? Responda com três particípios regulares.",
+     "c": "Forme os particípios de dez verbos regulares que você conhece e use três em frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gekauft",
+      "ex": "Ich habe neue Schuhe gekauft."
+     },
+     {
+      "w": "gelernt",
+      "ex": "Wir haben viele Wörter gelernt."
+     },
+     {
+      "w": "gewartet",
+      "ex": "Ich habe zwanzig Minuten auf den Bus gewartet."
+     },
+     {
+      "w": "gesagt",
+      "ex": "Was hat der Lehrer gesagt?"
+     },
+     {
+      "w": "gewohnt",
+      "ex": "Früher habe ich in Köln gewohnt."
+     },
+     {
+      "w": "geduscht",
+      "ex": "Ich habe heute Morgen kalt geduscht."
+     }
+    ],
+    "gram": "Regelmäßig: ge- + Stamm + -t (machen - gemacht). Stamm auf -t/-d: ge- + Stamm + -et (arbeiten - gearbeitet)."
+   }
+  },
+  {
+   "d": 93,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Past participles: irregular",
+     "g": "Learn the most common irregular participles, which end in -en and often change the vowel.",
+     "p": [
+      "Irregular participles end in -en: essen, gegessen; sehen, gesehen; schlafen, geschlafen.",
+      "Many change the stem vowel: trinken, getrunken; schreiben, geschrieben; finden, gefunden; sprechen, gesprochen.",
+      "There is no simple rule, so learn them in groups and as chunks: Ich habe gut geschlafen."
+     ],
+     "q": "What did you eat and drink yesterday, and did you see a good film? Use gegessen, getrunken and gesehen.",
+     "c": "Make flashcards for ten irregular participles and write one sentence with each of five of them."
+    },
+    "de": {
+     "t": "Partizip II: unregelmäßige Verben",
+     "g": "Du lernst die häufigsten unregelmäßigen Partizipien. Sie enden auf -en und ändern oft den Vokal.",
+     "p": [
+      "Unregelmäßige Partizipien enden auf -en: essen, gegessen; sehen, gesehen; schlafen, geschlafen.",
+      "Viele ändern den Stammvokal: trinken, getrunken; schreiben, geschrieben; finden, gefunden; sprechen, gesprochen.",
+      "Es gibt keine einfache Regel. Lern sie in Gruppen und als feste Sätze: Ich habe gut geschlafen."
+     ],
+     "q": "Was hast du gestern gegessen und getrunken, und hast du einen guten Film gesehen?",
+     "c": "Mach Lernkarten für zehn unregelmäßige Partizipien und schreib mit fünf davon je einen Satz."
+    },
+    "es": {
+     "t": "Participios irregulares",
+     "g": "Aprende los participios irregulares más comunes, que terminan en -en y a menudo cambian la vocal.",
+     "p": [
+      "Los participios irregulares terminan en -en: essen, gegessen; sehen, gesehen; schlafen, geschlafen.",
+      "Muchos cambian la vocal: trinken, getrunken; schreiben, geschrieben; finden, gefunden; sprechen, gesprochen.",
+      "No hay una regla sencilla: apréndelos por grupos y en frases hechas: Ich habe gut geschlafen."
+     ],
+     "q": "¿Qué comiste y bebiste ayer y viste una buena película? Usa gegessen, getrunken y gesehen.",
+     "c": "Haz tarjetas con diez participios irregulares y escribe una frase con cinco de ellos."
+    },
+    "fr": {
+     "t": "Les participes passés irréguliers",
+     "g": "Apprendre les participes irréguliers les plus courants, qui finissent en -en et changent souvent de voyelle.",
+     "p": [
+      "Les participes irréguliers finissent en -en : essen, gegessen ; sehen, gesehen ; schlafen, geschlafen.",
+      "Beaucoup changent de voyelle : trinken, getrunken ; schreiben, geschrieben ; finden, gefunden ; sprechen, gesprochen.",
+      "Il n'y a pas de règle simple : apprends-les par groupes et en phrases toutes faites : Ich habe gut geschlafen."
+     ],
+     "q": "Qu'as-tu mangé et bu hier, et as-tu vu un bon film ? Utilise gegessen, getrunken et gesehen.",
+     "c": "Fais des fiches pour dix participes irréguliers et écris une phrase avec cinq d'entre eux."
+    },
+    "it": {
+     "t": "Participi irregolari",
+     "g": "Impari i participi irregolari più comuni, che finiscono in -en e spesso cambiano la vocale.",
+     "p": [
+      "I participi irregolari finiscono in -en: essen, gegessen; sehen, gesehen; schlafen, geschlafen.",
+      "Molti cambiano vocale: trinken, getrunken; schreiben, geschrieben; finden, gefunden; sprechen, gesprochen.",
+      "Non c'è una regola semplice: imparali a gruppi e in frasi fatte: Ich habe gut geschlafen."
+     ],
+     "q": "Che cosa hai mangiato e bevuto ieri, e hai visto un bel film? Usa gegessen, getrunken e gesehen.",
+     "c": "Fai delle schede per dieci participi irregolari e scrivi una frase con cinque di essi."
+    },
+    "pt": {
+     "t": "Particípios irregulares",
+     "g": "Aprender os particípios irregulares mais comuns, que acabam em -en e muitas vezes mudam de vogal.",
+     "p": [
+      "Os particípios irregulares acabam em -en: essen, gegessen; sehen, gesehen; schlafen, geschlafen.",
+      "Muitos mudam de vogal: trinken, getrunken; schreiben, geschrieben; finden, gefunden; sprechen, gesprochen.",
+      "Não há regra simples: aprende-os por grupos e em frases feitas: Ich habe gut geschlafen."
+     ],
+     "q": "O que comeste e bebeste ontem, e viste um bom filme? Usa gegessen, getrunken e gesehen.",
+     "c": "Faz cartões para dez particípios irregulares e escreve uma frase com cinco deles."
+    },
+    "pt_BR": {
+     "t": "Particípios irregulares",
+     "g": "Aprender os particípios irregulares mais comuns, que terminam em -en e muitas vezes mudam a vogal.",
+     "p": [
+      "Os particípios irregulares terminam em -en: essen, gegessen; sehen, gesehen; schlafen, geschlafen.",
+      "Muitos mudam a vogal: trinken, getrunken; schreiben, geschrieben; finden, gefunden; sprechen, gesprochen.",
+      "Não existe regra simples: aprenda em grupos e em frases prontas: Ich habe gut geschlafen."
+     ],
+     "q": "O que você comeu e bebeu ontem, e viu um filme bom? Use gegessen, getrunken e gesehen.",
+     "c": "Faça flashcards com dez particípios irregulares e escreva uma frase com cinco deles."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gegessen",
+      "ex": "Wir haben im Restaurant Fisch gegessen."
+     },
+     {
+      "w": "getrunken",
+      "ex": "Ich habe heute zu viel Kaffee getrunken."
+     },
+     {
+      "w": "gesehen",
+      "ex": "Hast du den Film schon gesehen?"
+     },
+     {
+      "w": "geschrieben",
+      "ex": "Ich habe meiner Oma eine Karte geschrieben."
+     },
+     {
+      "w": "geschlafen",
+      "ex": "Hast du gut geschlafen?"
+     },
+     {
+      "w": "gesprochen",
+      "ex": "Wir haben lange über die Reise gesprochen."
+     }
+    ],
+    "gram": "Unregelmäßig: ge- + Stamm (oft mit Vokalwechsel) + -en: essen - gegessen, trinken - getrunken, schreiben - geschrieben."
+   }
+  },
+  {
+   "d": 94,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Perfekt with sein",
+     "g": "Use sein instead of haben in the Perfekt with verbs of movement and change of state.",
+     "p": [
+      "Movement from A to B takes sein: gehen, ich bin gegangen; fahren, ich bin gefahren; fliegen, ich bin geflogen.",
+      "Change of state too: aufwachen, ich bin aufgewacht; einschlafen, ich bin eingeschlafen; werden, ich bin geworden.",
+      "Also with sein: sein (ich bin gewesen), bleiben (ich bin geblieben), passieren (was ist passiert?)."
+     ],
+     "q": "Where did you go last weekend, and how did you get there? Use sein with gegangen, gefahren or geflogen.",
+     "c": "Write about a trip in four sentences: two with sein (gefahren, angekommen) and two with haben."
+    },
+    "de": {
+     "t": "Perfekt mit sein",
+     "g": "Bei Verben der Bewegung und Zustandsänderung bildest du das Perfekt mit sein statt haben.",
+     "p": [
+      "Bewegung von A nach B mit sein: gehen, ich bin gegangen; fahren, ich bin gefahren; fliegen, ich bin geflogen.",
+      "Auch Zustandsänderungen: aufwachen, ich bin aufgewacht; einschlafen, ich bin eingeschlafen; werden, ich bin geworden.",
+      "Außerdem mit sein: sein (ich bin gewesen), bleiben (ich bin geblieben), passieren (Was ist passiert?)."
+     ],
+     "q": "Wohin bist du letztes Wochenende gegangen oder gefahren, und wie bist du hingekommen?",
+     "c": "Schreib vier Sätze über eine Reise: zwei mit sein (gefahren, angekommen) und zwei mit haben."
+    },
+    "es": {
+     "t": "Perfekt con sein",
+     "g": "Usa sein en vez de haben en el Perfekt con verbos de movimiento y de cambio de estado.",
+     "p": [
+      "El movimiento de A a B lleva sein: gehen, ich bin gegangen; fahren, ich bin gefahren; fliegen, ich bin geflogen.",
+      "También el cambio de estado: aufwachen, ich bin aufgewacht; einschlafen, ich bin eingeschlafen; werden, ich bin geworden.",
+      "También con sein: sein (ich bin gewesen), bleiben (ich bin geblieben), passieren (Was ist passiert?)."
+     ],
+     "q": "¿Adónde fuiste el fin de semana pasado y cómo llegaste? Usa sein con gegangen, gefahren o geflogen.",
+     "c": "Escribe sobre un viaje en cuatro frases: dos con sein (gefahren, angekommen) y dos con haben."
+    },
+    "fr": {
+     "t": "Le Perfekt avec sein",
+     "g": "Utiliser sein au lieu de haben au Perfekt avec les verbes de déplacement et de changement d'état.",
+     "p": [
+      "Un déplacement de A à B prend sein : gehen, ich bin gegangen ; fahren, ich bin gefahren ; fliegen, ich bin geflogen.",
+      "Le changement d'état aussi : aufwachen, ich bin aufgewacht ; einschlafen, ich bin eingeschlafen ; werden, ich bin geworden.",
+      "Avec sein également : sein (ich bin gewesen), bleiben (ich bin geblieben), passieren (Was ist passiert?)."
+     ],
+     "q": "Où es-tu allé le week-end dernier, et comment ? Utilise sein avec gegangen, gefahren ou geflogen.",
+     "c": "Raconte un voyage en quatre phrases : deux avec sein (gefahren, angekommen) et deux avec haben."
+    },
+    "it": {
+     "t": "Il Perfekt con sein",
+     "g": "Usi sein invece di haben nel Perfekt con i verbi di movimento e di cambiamento di stato.",
+     "p": [
+      "Il movimento da A a B vuole sein: gehen, ich bin gegangen; fahren, ich bin gefahren; fliegen, ich bin geflogen.",
+      "Anche il cambiamento di stato: aufwachen, ich bin aufgewacht; einschlafen, ich bin eingeschlafen; werden, ich bin geworden.",
+      "Con sein anche: sein (ich bin gewesen), bleiben (ich bin geblieben), passieren (Was ist passiert?)."
+     ],
+     "q": "Dove sei andato lo scorso fine settimana e come ci sei arrivato? Usa sein con gegangen, gefahren o geflogen.",
+     "c": "Racconta un viaggio in quattro frasi: due con sein (gefahren, angekommen) e due con haben."
+    },
+    "pt": {
+     "t": "Perfekt com sein",
+     "g": "Usar sein em vez de haben no Perfekt com verbos de movimento e de mudança de estado.",
+     "p": [
+      "O movimento de A para B leva sein: gehen, ich bin gegangen; fahren, ich bin gefahren; fliegen, ich bin geflogen.",
+      "A mudança de estado também: aufwachen, ich bin aufgewacht; einschlafen, ich bin eingeschlafen; werden, ich bin geworden.",
+      "Também com sein: sein (ich bin gewesen), bleiben (ich bin geblieben), passieren (Was ist passiert?)."
+     ],
+     "q": "Aonde foste no fim de semana passado e como foste? Usa sein com gegangen, gefahren ou geflogen.",
+     "c": "Escreve sobre uma viagem em quatro frases: duas com sein (gefahren, angekommen) e duas com haben."
+    },
+    "pt_BR": {
+     "t": "Perfekt com sein",
+     "g": "Usar sein em vez de haben no Perfekt com verbos de movimento e de mudança de estado.",
+     "p": [
+      "Movimento de A para B leva sein: gehen, ich bin gegangen; fahren, ich bin gefahren; fliegen, ich bin geflogen.",
+      "Mudança de estado também: aufwachen, ich bin aufgewacht; einschlafen, ich bin eingeschlafen; werden, ich bin geworden.",
+      "Também com sein: sein (ich bin gewesen), bleiben (ich bin geblieben), passieren (Was ist passiert?)."
+     ],
+     "q": "Aonde você foi no último fim de semana e como chegou lá? Use sein com gegangen, gefahren ou geflogen.",
+     "c": "Escreva sobre uma viagem em quatro frases: duas com sein (gefahren, angekommen) e duas com haben."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gegangen",
+      "ex": "Wir sind gestern ins Theater gegangen."
+     },
+     {
+      "w": "gefahren",
+      "ex": "Ich bin mit dem Zug nach Hamburg gefahren."
+     },
+     {
+      "w": "geflogen",
+      "ex": "Sie ist letztes Jahr nach Kanada geflogen."
+     },
+     {
+      "w": "gekommen",
+      "ex": "Wann bist du nach Hause gekommen?"
+     },
+     {
+      "w": "geblieben",
+      "ex": "Wir sind zu Hause geblieben."
+     },
+     {
+      "w": "passiert",
+      "ex": "Was ist passiert?"
+     }
+    ],
+    "gram": "Perfekt mit sein: Bewegung (gehen, fahren, fliegen) und Zustandsänderung (aufwachen, werden) + sein, bleiben. Ich bin gefahren."
+   }
+  },
+  {
+   "d": 95,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Separable verbs in the Perfekt",
+     "g": "Form the Perfekt of separable verbs: the ge- goes between the prefix and the verb.",
+     "p": [
+      "The prefix stays at the front, ge- goes in the middle: aufstehen, aufgestanden; einkaufen, eingekauft.",
+      "Choose haben or sein as usual: Ich bin um sieben aufgestanden. Ich habe im Supermarkt eingekauft.",
+      "More examples: anrufen, angerufen; fernsehen, ferngesehen; ankommen, angekommen; mitbringen, mitgebracht."
+     ],
+     "q": "What did you do this morning? Tell me with aufgestanden, angezogen or eingekauft.",
+     "c": "Retell yesterday from morning to evening with four separable verbs in the Perfekt."
+    },
+    "de": {
+     "t": "Trennbare Verben im Perfekt",
+     "g": "Du bildest das Perfekt trennbarer Verben: Das ge- steht zwischen Vorsilbe und Verb.",
+     "p": [
+      "Die Vorsilbe bleibt vorne, ge- kommt in die Mitte: aufstehen, aufgestanden; einkaufen, eingekauft.",
+      "Haben oder sein wie gewohnt: Ich bin um sieben aufgestanden. Ich habe im Supermarkt eingekauft.",
+      "Mehr Beispiele: anrufen, angerufen; fernsehen, ferngesehen; ankommen, angekommen; mitbringen, mitgebracht."
+     ],
+     "q": "Was hast du heute Morgen gemacht? Erzähl mit aufgestanden, angezogen oder eingekauft.",
+     "c": "Erzähl deinen gestrigen Tag von morgens bis abends mit vier trennbaren Verben im Perfekt."
+    },
+    "es": {
+     "t": "Verbos separables en Perfekt",
+     "g": "Forma el Perfekt de los verbos separables: ge- va entre el prefijo y el verbo.",
+     "p": [
+      "El prefijo se queda delante y ge- va en medio: aufstehen, aufgestanden; einkaufen, eingekauft.",
+      "Haben o sein como siempre: Ich bin um sieben aufgestanden. Ich habe im Supermarkt eingekauft.",
+      "Más ejemplos: anrufen, angerufen; fernsehen, ferngesehen; ankommen, angekommen; mitbringen, mitgebracht."
+     ],
+     "q": "¿Qué hiciste esta mañana? Cuéntamelo con aufgestanden, angezogen o eingekauft.",
+     "c": "Cuenta tu día de ayer de la mañana a la noche con cuatro verbos separables en Perfekt."
+    },
+    "fr": {
+     "t": "Les verbes séparables au Perfekt",
+     "g": "Former le Perfekt des verbes séparables : ge- se place entre la particule et le verbe.",
+     "p": [
+      "La particule reste devant, ge- au milieu : aufstehen, aufgestanden ; einkaufen, eingekauft.",
+      "Haben ou sein comme d'habitude : Ich bin um sieben aufgestanden. Ich habe im Supermarkt eingekauft.",
+      "Autres exemples : anrufen, angerufen ; fernsehen, ferngesehen ; ankommen, angekommen ; mitbringen, mitgebracht."
+     ],
+     "q": "Qu'as-tu fait ce matin ? Raconte-le avec aufgestanden, angezogen ou eingekauft.",
+     "c": "Raconte ta journée d'hier du matin au soir avec quatre verbes séparables au Perfekt."
+    },
+    "it": {
+     "t": "Verbi separabili al Perfekt",
+     "g": "Formi il Perfekt dei verbi separabili: ge- va tra il prefisso e il verbo.",
+     "p": [
+      "Il prefisso resta davanti, ge- va in mezzo: aufstehen, aufgestanden; einkaufen, eingekauft.",
+      "Haben o sein come al solito: Ich bin um sieben aufgestanden. Ich habe im Supermarkt eingekauft.",
+      "Altri esempi: anrufen, angerufen; fernsehen, ferngesehen; ankommen, angekommen; mitbringen, mitgebracht."
+     ],
+     "q": "Che cosa hai fatto stamattina? Raccontalo con aufgestanden, angezogen o eingekauft.",
+     "c": "Racconta la tua giornata di ieri dalla mattina alla sera con quattro verbi separabili al Perfekt."
+    },
+    "pt": {
+     "t": "Verbos separáveis no Perfekt",
+     "g": "Formar o Perfekt dos verbos separáveis: o ge- fica entre o prefixo e o verbo.",
+     "p": [
+      "O prefixo fica à frente e o ge- no meio: aufstehen, aufgestanden; einkaufen, eingekauft.",
+      "Haben ou sein como sempre: Ich bin um sieben aufgestanden. Ich habe im Supermarkt eingekauft.",
+      "Mais exemplos: anrufen, angerufen; fernsehen, ferngesehen; ankommen, angekommen; mitbringen, mitgebracht."
+     ],
+     "q": "O que fizeste hoje de manhã? Conta-me com aufgestanden, angezogen ou eingekauft.",
+     "c": "Conta o teu dia de ontem de manhã à noite com quatro verbos separáveis no Perfekt."
+    },
+    "pt_BR": {
+     "t": "Verbos separáveis no Perfekt",
+     "g": "Formar o Perfekt dos verbos separáveis: o ge- fica entre o prefixo e o verbo.",
+     "p": [
+      "O prefixo fica na frente e o ge- no meio: aufstehen, aufgestanden; einkaufen, eingekauft.",
+      "Haben ou sein como sempre: Ich bin um sieben aufgestanden. Ich habe im Supermarkt eingekauft.",
+      "Mais exemplos: anrufen, angerufen; fernsehen, ferngesehen; ankommen, angekommen; mitbringen, mitgebracht."
+     ],
+     "q": "O que você fez hoje de manhã? Me conte com aufgestanden, angezogen ou eingekauft.",
+     "c": "Conte seu dia de ontem da manhã à noite com quatro verbos separáveis no Perfekt."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aufgestanden",
+      "ex": "Ich bin heute um sechs Uhr aufgestanden."
+     },
+     {
+      "w": "eingekauft",
+      "ex": "Hast du schon eingekauft?"
+     },
+     {
+      "w": "angerufen",
+      "ex": "Meine Schwester hat mich gestern angerufen."
+     },
+     {
+      "w": "ferngesehen",
+      "ex": "Am Abend haben wir ferngesehen."
+     },
+     {
+      "w": "angekommen",
+      "ex": "Der Zug ist pünktlich angekommen."
+     },
+     {
+      "w": "mitgebracht",
+      "ex": "Ich habe dir Kuchen mitgebracht."
+     }
+    ],
+    "gram": "Trennbare Verben: Vorsilbe + ge + Partizip: aufstehen - aufgestanden, einkaufen - eingekauft. Ich bin früh aufgestanden."
+   }
+  },
+  {
+   "d": 96,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Participles without ge-",
+     "g": "Learn which verbs form the participle without ge-: -ieren verbs and verbs with fixed prefixes.",
+     "p": [
+      "Verbs ending in -ieren take no ge-: studieren, studiert; telefonieren, telefoniert; reparieren, repariert.",
+      "Fixed (inseparable) prefixes be-, ver-, er-, ent-, emp-, ge-, zer- also drop ge-: besuchen, besucht; verstehen, verstanden.",
+      "More: bezahlen, bezahlt; erzählen, erzählt; vergessen, vergessen; bekommen, bekommen."
+     ],
+     "q": "What have you forgotten or understood recently? Use vergessen, verstanden, besucht or bezahlt.",
+     "c": "Write five sentences with participles without ge-: one -ieren verb and four verbs with be-, ver- or er-."
+    },
+    "de": {
+     "t": "Partizipien ohne ge-",
+     "g": "Du lernst, welche Verben das Partizip ohne ge- bilden: Verben auf -ieren und mit untrennbarer Vorsilbe.",
+     "p": [
+      "Verben auf -ieren haben kein ge-: studieren, studiert; telefonieren, telefoniert; reparieren, repariert.",
+      "Auch untrennbare Vorsilben be-, ver-, er-, ent-, emp-, ge-, zer- haben kein ge-: besuchen, besucht; verstehen, verstanden.",
+      "Weitere: bezahlen, bezahlt; erzählen, erzählt; vergessen, vergessen; bekommen, bekommen."
+     ],
+     "q": "Was hast du in letzter Zeit vergessen oder verstanden? Benutze vergessen, verstanden, besucht oder bezahlt.",
+     "c": "Schreib fünf Sätze mit Partizipien ohne ge-: ein Verb auf -ieren und vier mit be-, ver- oder er-."
+    },
+    "es": {
+     "t": "Participios sin ge-",
+     "g": "Aprende qué verbos forman el participio sin ge-: los verbos en -ieren y los de prefijo inseparable.",
+     "p": [
+      "Los verbos en -ieren no llevan ge-: studieren, studiert; telefonieren, telefoniert; reparieren, repariert.",
+      "Los prefijos inseparables be-, ver-, er-, ent-, emp-, ge-, zer- tampoco: besuchen, besucht; verstehen, verstanden.",
+      "Más: bezahlen, bezahlt; erzählen, erzählt; vergessen, vergessen; bekommen, bekommen."
+     ],
+     "q": "¿Qué has olvidado o entendido últimamente? Usa vergessen, verstanden, besucht o bezahlt.",
+     "c": "Escribe cinco frases con participios sin ge-: un verbo en -ieren y cuatro con be-, ver- o er-."
+    },
+    "fr": {
+     "t": "Les participes sans ge-",
+     "g": "Savoir quels verbes forment le participe sans ge- : les verbes en -ieren et à particule inséparable.",
+     "p": [
+      "Les verbes en -ieren ne prennent pas ge- : studieren, studiert ; telefonieren, telefoniert ; reparieren, repariert.",
+      "Les particules inséparables be-, ver-, er-, ent-, emp-, ge-, zer- non plus : besuchen, besucht ; verstehen, verstanden.",
+      "Autres : bezahlen, bezahlt ; erzählen, erzählt ; vergessen, vergessen ; bekommen, bekommen."
+     ],
+     "q": "Qu'as-tu oublié ou compris récemment ? Utilise vergessen, verstanden, besucht ou bezahlt.",
+     "c": "Écris cinq phrases avec des participes sans ge- : un verbe en -ieren et quatre avec be-, ver- ou er-."
+    },
+    "it": {
+     "t": "Participi senza ge-",
+     "g": "Impari quali verbi formano il participio senza ge-: i verbi in -ieren e quelli con prefisso inseparabile.",
+     "p": [
+      "I verbi in -ieren non hanno ge-: studieren, studiert; telefonieren, telefoniert; reparieren, repariert.",
+      "Neanche i prefissi inseparabili be-, ver-, er-, ent-, emp-, ge-, zer-: besuchen, besucht; verstehen, verstanden.",
+      "Altri: bezahlen, bezahlt; erzählen, erzählt; vergessen, vergessen; bekommen, bekommen."
+     ],
+     "q": "Che cosa hai dimenticato o capito di recente? Usa vergessen, verstanden, besucht o bezahlt.",
+     "c": "Scrivi cinque frasi con participi senza ge-: un verbo in -ieren e quattro con be-, ver- o er-."
+    },
+    "pt": {
+     "t": "Particípios sem ge-",
+     "g": "Saber que verbos formam o particípio sem ge-: os verbos em -ieren e os de prefixo inseparável.",
+     "p": [
+      "Os verbos em -ieren não levam ge-: studieren, studiert; telefonieren, telefoniert; reparieren, repariert.",
+      "Os prefixos inseparáveis be-, ver-, er-, ent-, emp-, ge-, zer- também não: besuchen, besucht; verstehen, verstanden.",
+      "Mais: bezahlen, bezahlt; erzählen, erzählt; vergessen, vergessen; bekommen, bekommen."
+     ],
+     "q": "O que esqueceste ou percebeste ultimamente? Usa vergessen, verstanden, besucht ou bezahlt.",
+     "c": "Escreve cinco frases com particípios sem ge-: um verbo em -ieren e quatro com be-, ver- ou er-."
+    },
+    "pt_BR": {
+     "t": "Particípios sem ge-",
+     "g": "Saber quais verbos formam o particípio sem ge-: os verbos em -ieren e os de prefixo inseparável.",
+     "p": [
+      "Verbos em -ieren não levam ge-: studieren, studiert; telefonieren, telefoniert; reparieren, repariert.",
+      "Prefixos inseparáveis be-, ver-, er-, ent-, emp-, ge-, zer- também não: besuchen, besucht; verstehen, verstanden.",
+      "Mais: bezahlen, bezahlt; erzählen, erzählt; vergessen, vergessen; bekommen, bekommen."
+     ],
+     "q": "O que você esqueceu ou entendeu ultimamente? Use vergessen, verstanden, besucht ou bezahlt.",
+     "c": "Escreva cinco frases com particípios sem ge-: um verbo em -ieren e quatro com be-, ver- ou er-."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "studiert",
+      "ex": "Sie hat in Heidelberg Medizin studiert."
+     },
+     {
+      "w": "telefoniert",
+      "ex": "Ich habe lange mit meiner Mutter telefoniert."
+     },
+     {
+      "w": "besucht",
+      "ex": "Wir haben am Sonntag meine Oma besucht."
+     },
+     {
+      "w": "verstanden",
+      "ex": "Hast du alles verstanden?"
+     },
+     {
+      "w": "vergessen",
+      "ex": "Ich habe meinen Schirm vergessen!"
+     },
+     {
+      "w": "bezahlt",
+      "ex": "Er hat die Rechnung schon bezahlt."
+     }
+    ],
+    "gram": "Kein ge-: Verben auf -ieren (studiert) und mit untrennbarer Vorsilbe be-, ver-, er-, ent-, emp-, zer- (besucht, verstanden)."
+   }
+  },
+  {
+   "d": 97,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "What did you do last weekend?",
+     "g": "Tell a short story about your weekend in the Perfekt, in order, with zuerst, dann, danach and zum Schluss.",
+     "p": [
+      "Order your story: zuerst (first), dann (then), danach (after that), später (later), zum Schluss (finally).",
+      "These words start the sentence, so the verb comes right after: Zuerst habe ich gefrühstückt. Dann bin ich gejoggt.",
+      "Add feelings and opinions: Das war toll! Es hat viel Spaß gemacht. Leider hat es geregnet."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Tell me the story with zuerst, dann and zum Schluss.",
+     "c": "Write your weekend story in six sentences with four sequence words and at least one sein verb."
+    },
+    "de": {
+     "t": "Was hast du letztes Wochenende gemacht?",
+     "g": "Du erzählst im Perfekt eine kleine Geschichte über dein Wochenende, in Reihenfolge, mit zuerst, dann, danach und zum Schluss.",
+     "p": [
+      "Ordne deine Geschichte: zuerst, dann, danach, später, zum Schluss.",
+      "Diese Wörter stehen am Satzanfang, das Verb folgt sofort: Zuerst habe ich gefrühstückt. Dann bin ich gejoggt.",
+      "Füg Gefühle und Meinungen hinzu: Das war toll! Es hat viel Spaß gemacht. Leider hat es geregnet."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Erzähl die Geschichte mit zuerst, dann und zum Schluss.",
+     "c": "Schreib deine Wochenendgeschichte in sechs Sätzen mit vier Reihenfolgewörtern und mindestens einem Verb mit sein."
+    },
+    "es": {
+     "t": "¿Qué hiciste el fin de semana?",
+     "g": "Cuenta una pequeña historia sobre tu fin de semana en Perfekt, en orden, con zuerst, dann, danach y zum Schluss.",
+     "p": [
+      "Ordena tu historia: zuerst (primero), dann (luego), danach (después), später (más tarde), zum Schluss (al final).",
+      "Estas palabras abren la frase, así que el verbo va justo detrás: Zuerst habe ich gefrühstückt. Dann bin ich gejoggt.",
+      "Añade sentimientos y opiniones: Das war toll! Es hat viel Spaß gemacht. Leider hat es geregnet."
+     ],
+     "q": "¿Was hast du letztes Wochenende gemacht? Cuéntamelo con zuerst, dann y zum Schluss.",
+     "c": "Escribe la historia de tu fin de semana en seis frases con cuatro palabras de orden y al menos un verbo con sein."
+    },
+    "fr": {
+     "t": "Qu'as-tu fait le week-end dernier ?",
+     "g": "Raconter ton week-end au Perfekt, dans l'ordre, avec zuerst, dann, danach et zum Schluss.",
+     "p": [
+      "Organise ton récit : zuerst (d'abord), dann (puis), danach (ensuite), später (plus tard), zum Schluss (pour finir).",
+      "Ces mots ouvrent la phrase, donc le verbe suit tout de suite : Zuerst habe ich gefrühstückt. Dann bin ich gejoggt.",
+      "Ajoute des sentiments et des avis : Das war toll! Es hat viel Spaß gemacht. Leider hat es geregnet."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Raconte-le avec zuerst, dann et zum Schluss.",
+     "c": "Écris ton week-end en six phrases avec quatre mots de chronologie et au moins un verbe avec sein."
+    },
+    "it": {
+     "t": "Che cosa hai fatto lo scorso fine settimana?",
+     "g": "Racconti il tuo fine settimana al Perfekt, in ordine, con zuerst, dann, danach e zum Schluss.",
+     "p": [
+      "Metti in ordine la storia: zuerst (prima), dann (poi), danach (dopo), später (più tardi), zum Schluss (alla fine).",
+      "Queste parole aprono la frase, quindi il verbo segue subito: Zuerst habe ich gefrühstückt. Dann bin ich gejoggt.",
+      "Aggiungi emozioni e opinioni: Das war toll! Es hat viel Spaß gemacht. Leider hat es geregnet."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Raccontamelo con zuerst, dann e zum Schluss.",
+     "c": "Scrivi il tuo fine settimana in sei frasi con quattro parole di sequenza e almeno un verbo con sein."
+    },
+    "pt": {
+     "t": "O que fizeste no fim de semana passado?",
+     "g": "Contar uma pequena história do teu fim de semana no Perfekt, por ordem, com zuerst, dann, danach e zum Schluss.",
+     "p": [
+      "Organiza a história: zuerst (primeiro), dann (depois), danach (a seguir), später (mais tarde), zum Schluss (por fim).",
+      "Estas palavras abrem a frase, por isso o verbo vem logo a seguir: Zuerst habe ich gefrühstückt. Dann bin ich gejoggt.",
+      "Junta sentimentos e opiniões: Das war toll! Es hat viel Spaß gemacht. Leider hat es geregnet."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Conta-me com zuerst, dann e zum Schluss.",
+     "c": "Escreve o teu fim de semana em seis frases com quatro palavras de sequência e pelo menos um verbo com sein."
+    },
+    "pt_BR": {
+     "t": "O que você fez no fim de semana?",
+     "g": "Contar uma pequena história do seu fim de semana no Perfekt, em ordem, com zuerst, dann, danach e zum Schluss.",
+     "p": [
+      "Organize a história: zuerst (primeiro), dann (depois), danach (em seguida), später (mais tarde), zum Schluss (no fim).",
+      "Essas palavras abrem a frase, então o verbo vem logo depois: Zuerst habe ich gefrühstückt. Dann bin ich gejoggt.",
+      "Acrescente sentimentos e opiniões: Das war toll! Es hat viel Spaß gemacht. Leider hat es geregnet."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Me conte com zuerst, dann e zum Schluss.",
+     "c": "Escreva seu fim de semana em seis frases com quatro palavras de sequência e pelo menos um verbo com sein."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "zuerst",
+      "ex": "Zuerst habe ich lange geschlafen."
+     },
+     {
+      "w": "dann",
+      "ex": "Dann bin ich in die Stadt gefahren."
+     },
+     {
+      "w": "danach",
+      "ex": "Danach haben wir zusammen gegessen."
+     },
+     {
+      "w": "später",
+      "ex": "Später haben wir einen Film gesehen."
+     },
+     {
+      "w": "zum Schluss",
+      "ex": "Zum Schluss sind wir müde nach Hause gegangen."
+     },
+     {
+      "w": "Spaß machen",
+      "ex": "Das Konzert hat viel Spaß gemacht."
+     }
+    ],
+    "gram": "Zuerst / Dann / Danach / Zum Schluss + Verb auf Position 2: Danach haben wir gegessen. Dann bin ich gefahren."
+   }
+  },
+  {
+   "d": 98,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Time markers for the past",
+     "g": "Place events in the past with gestern, letzte Woche, vor zwei Jahren, schon and noch nicht.",
+     "p": [
+      "Points in time: gestern, vorgestern, letzte Woche, letzten Monat, letztes Jahr, am Wochenende.",
+      "Vor + dative means ago: vor zwei Tagen, vor einer Woche, vor drei Jahren.",
+      "Schon means already, noch nicht means not yet: Hast du schon gegessen? Nein, noch nicht."
+     ],
+     "q": "What did you do vor einem Jahr, and is there something you have noch nicht done in German?",
+     "c": "Write a mini timeline of your life with five sentences using vor ... Jahren, letztes Jahr, gestern, schon and noch nicht."
+    },
+    "de": {
+     "t": "Zeitangaben für die Vergangenheit",
+     "g": "Du ordnest Ereignisse mit gestern, letzte Woche, vor zwei Jahren, schon und noch nicht in der Vergangenheit ein.",
+     "p": [
+      "Zeitpunkte: gestern, vorgestern, letzte Woche, letzten Monat, letztes Jahr, am Wochenende.",
+      "Vor + Dativ: vor zwei Tagen, vor einer Woche, vor drei Jahren.",
+      "Schon und noch nicht: Hast du schon gegessen? Nein, noch nicht."
+     ],
+     "q": "Was hast du vor einem Jahr gemacht, und was hast du auf Deutsch noch nicht gemacht?",
+     "c": "Schreib eine kleine Zeitleiste deines Lebens in fünf Sätzen mit vor ... Jahren, letztes Jahr, gestern, schon und noch nicht."
+    },
+    "es": {
+     "t": "Marcadores de tiempo del pasado",
+     "g": "Sitúa hechos en el pasado con gestern, letzte Woche, vor zwei Jahren, schon y noch nicht.",
+     "p": [
+      "Momentos: gestern, vorgestern, letzte Woche, letzten Monat, letztes Jahr, am Wochenende.",
+      "Vor + dativo significa hace: vor zwei Tagen, vor einer Woche, vor drei Jahren.",
+      "Schon significa ya y noch nicht, todavía no: Hast du schon gegessen? Nein, noch nicht."
+     ],
+     "q": "¿Qué hacías vor einem Jahr y qué todavía no has hecho en alemán?",
+     "c": "Escribe una minicronología de tu vida en cinco frases con vor ... Jahren, letztes Jahr, gestern, schon y noch nicht."
+    },
+    "fr": {
+     "t": "Les repères du passé",
+     "g": "Situer des événements dans le passé avec gestern, letzte Woche, vor zwei Jahren, schon et noch nicht.",
+     "p": [
+      "Moments : gestern, vorgestern, letzte Woche, letzten Monat, letztes Jahr, am Wochenende.",
+      "Vor + datif veut dire il y a : vor zwei Tagen, vor einer Woche, vor drei Jahren.",
+      "Schon veut dire déjà, noch nicht pas encore : Hast du schon gegessen? Nein, noch nicht."
+     ],
+     "q": "Qu'as-tu fait vor einem Jahr, et qu'est-ce que tu n'as pas encore fait en allemand ?",
+     "c": "Écris une petite frise de ta vie en cinq phrases avec vor ... Jahren, letztes Jahr, gestern, schon et noch nicht."
+    },
+    "it": {
+     "t": "Indicatori di tempo del passato",
+     "g": "Collochi i fatti nel passato con gestern, letzte Woche, vor zwei Jahren, schon e noch nicht.",
+     "p": [
+      "Momenti: gestern, vorgestern, letzte Woche, letzten Monat, letztes Jahr, am Wochenende.",
+      "Vor + dativo significa fa: vor zwei Tagen, vor einer Woche, vor drei Jahren.",
+      "Schon significa già, noch nicht non ancora: Hast du schon gegessen? Nein, noch nicht."
+     ],
+     "q": "Che cosa hai fatto vor einem Jahr e che cosa non hai ancora fatto in tedesco?",
+     "c": "Scrivi una piccola linea del tempo della tua vita in cinque frasi con vor ... Jahren, letztes Jahr, gestern, schon e noch nicht."
+    },
+    "pt": {
+     "t": "Marcadores de tempo do passado",
+     "g": "Situar acontecimentos no passado com gestern, letzte Woche, vor zwei Jahren, schon e noch nicht.",
+     "p": [
+      "Momentos: gestern, vorgestern, letzte Woche, letzten Monat, letztes Jahr, am Wochenende.",
+      "Vor + dativo quer dizer há: vor zwei Tagen, vor einer Woche, vor drei Jahren.",
+      "Schon quer dizer já e noch nicht ainda não: Hast du schon gegessen? Nein, noch nicht."
+     ],
+     "q": "O que fizeste vor einem Jahr, e o que ainda não fizeste em alemão?",
+     "c": "Escreve uma pequena cronologia da tua vida em cinco frases com vor ... Jahren, letztes Jahr, gestern, schon e noch nicht."
+    },
+    "pt_BR": {
+     "t": "Marcadores de tempo do passado",
+     "g": "Situar fatos no passado com gestern, letzte Woche, vor zwei Jahren, schon e noch nicht.",
+     "p": [
+      "Momentos: gestern, vorgestern, letzte Woche, letzten Monat, letztes Jahr, am Wochenende.",
+      "Vor + dativo significa há ... atrás: vor zwei Tagen, vor einer Woche, vor drei Jahren.",
+      "Schon significa já e noch nicht ainda não: Hast du schon gegessen? Nein, noch nicht."
+     ],
+     "q": "O que você fez vor einem Jahr, e o que você ainda não fez em alemão?",
+     "c": "Escreva uma pequena linha do tempo da sua vida em cinco frases com vor ... Jahren, letztes Jahr, gestern, schon e noch nicht."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vorgestern",
+      "ex": "Vorgestern war ich beim Friseur."
+     },
+     {
+      "w": "letzte Woche",
+      "ex": "Letzte Woche habe ich viel gearbeitet."
+     },
+     {
+      "w": "letztes Jahr",
+      "ex": "Letztes Jahr sind wir nach Italien gefahren."
+     },
+     {
+      "w": "vor zwei Jahren",
+      "ex": "Vor zwei Jahren habe ich mit Deutsch angefangen."
+     },
+     {
+      "w": "schon",
+      "ex": "Hast du den Brief schon geschrieben?"
+     },
+     {
+      "w": "noch nicht",
+      "ex": "Ich war noch nicht in Berlin."
+     }
+    ],
+    "gram": "Vor + Dativ (vor zwei Jahren). Letzte Woche / letzten Monat / letztes Jahr (Akkusativ). Schon - noch nicht."
+   }
+  },
+  {
+   "d": 99,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Präteritum of sein and haben",
+     "g": "Use the simple past forms ich war and ich hatte, which Germans use in speech instead of the Perfekt.",
+     "p": [
+      "Sein: ich war, du warst, er war, wir waren, ihr wart, sie waren. Wo warst du gestern?",
+      "Haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Ich hatte keine Zeit.",
+      "In speech, war and hatte are more common than ist gewesen and hat gehabt: Wie war dein Tag?"
+     ],
+     "q": "Wie war dein letzter Urlaub, and did you have good weather? Answer with war and hatte.",
+     "c": "Write four sentences about last week with war, warst, hatte and hatten."
+    },
+    "de": {
+     "t": "Präteritum von sein und haben",
+     "g": "Du benutzt die Formen ich war und ich hatte, die man auch beim Sprechen statt des Perfekts benutzt.",
+     "p": [
+      "Sein: ich war, du warst, er war, wir waren, ihr wart, sie waren. Wo warst du gestern?",
+      "Haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Ich hatte keine Zeit.",
+      "Beim Sprechen sind war und hatte häufiger als ist gewesen und hat gehabt: Wie war dein Tag?"
+     ],
+     "q": "Wie war dein letzter Urlaub, und hattest du gutes Wetter? Antworte mit war und hatte.",
+     "c": "Schreib vier Sätze über letzte Woche mit war, warst, hatte und hatten."
+    },
+    "es": {
+     "t": "Präteritum de sein y haben",
+     "g": "Usa las formas ich war e ich hatte, que en alemán se usan al hablar en lugar del Perfekt.",
+     "p": [
+      "Sein: ich war, du warst, er war, wir waren, ihr wart, sie waren. Wo warst du gestern?",
+      "Haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Ich hatte keine Zeit.",
+      "Al hablar, war y hatte son más comunes que ist gewesen y hat gehabt: Wie war dein Tag?"
+     ],
+     "q": "¿Cómo fueron tus últimas vacaciones y tuviste buen tiempo? Responde con war y hatte.",
+     "c": "Escribe cuatro frases sobre la semana pasada con war, warst, hatte y hatten."
+    },
+    "fr": {
+     "t": "Le prétérit de sein et haben",
+     "g": "Utiliser ich war et ich hatte, que les germanophones emploient à l'oral à la place du Perfekt.",
+     "p": [
+      "Sein : ich war, du warst, er war, wir waren, ihr wart, sie waren. Wo warst du gestern?",
+      "Haben : ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Ich hatte keine Zeit.",
+      "À l'oral, war et hatte sont plus fréquents que ist gewesen et hat gehabt : Wie war dein Tag?"
+     ],
+     "q": "Comment étaient tes dernières vacances, et avais-tu beau temps ? Réponds avec war et hatte.",
+     "c": "Écris quatre phrases sur la semaine dernière avec war, warst, hatte et hatten."
+    },
+    "it": {
+     "t": "Il Präteritum di sein e haben",
+     "g": "Usi le forme ich war e ich hatte, che i tedeschi usano anche parlando al posto del Perfekt.",
+     "p": [
+      "Sein: ich war, du warst, er war, wir waren, ihr wart, sie waren. Wo warst du gestern?",
+      "Haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Ich hatte keine Zeit.",
+      "Parlando, war e hatte sono più comuni di ist gewesen e hat gehabt: Wie war dein Tag?"
+     ],
+     "q": "Com'è stata la tua ultima vacanza e hai avuto bel tempo? Rispondi con war e hatte.",
+     "c": "Scrivi quattro frasi sulla settimana scorsa con war, warst, hatte e hatten."
+    },
+    "pt": {
+     "t": "Präteritum de sein e haben",
+     "g": "Usar as formas ich war e ich hatte, que os alemães usam a falar em vez do Perfekt.",
+     "p": [
+      "Sein: ich war, du warst, er war, wir waren, ihr wart, sie waren. Wo warst du gestern?",
+      "Haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Ich hatte keine Zeit.",
+      "A falar, war e hatte são mais comuns do que ist gewesen e hat gehabt: Wie war dein Tag?"
+     ],
+     "q": "Como foram as tuas últimas férias e tiveste bom tempo? Responde com war e hatte.",
+     "c": "Escreve quatro frases sobre a semana passada com war, warst, hatte e hatten."
+    },
+    "pt_BR": {
+     "t": "Präteritum de sein e haben",
+     "g": "Usar as formas ich war e ich hatte, que os alemães usam na fala no lugar do Perfekt.",
+     "p": [
+      "Sein: ich war, du warst, er war, wir waren, ihr wart, sie waren. Wo warst du gestern?",
+      "Haben: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten. Ich hatte keine Zeit.",
+      "Na fala, war e hatte são mais comuns que ist gewesen e hat gehabt: Wie war dein Tag?"
+     ],
+     "q": "Como foram suas últimas férias e o tempo estava bom? Responda com war e hatte.",
+     "c": "Escreva quatro frases sobre a semana passada com war, warst, hatte e hatten."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ich war",
+      "ex": "Gestern war ich im Kino."
+     },
+     {
+      "w": "du warst",
+      "ex": "Wo warst du am Wochenende?"
+     },
+     {
+      "w": "wir waren",
+      "ex": "Wir waren letztes Jahr in Wien."
+     },
+     {
+      "w": "ich hatte",
+      "ex": "Ich hatte gestern keine Zeit."
+     },
+     {
+      "w": "sie hatten",
+      "ex": "Sie hatten viel Glück mit dem Wetter."
+     },
+     {
+      "w": "Wie war ...?",
+      "ex": "Wie war dein Urlaub?"
+     }
+    ],
+    "gram": "Präteritum: sein - ich war, du warst, er war, wir waren. Haben - ich hatte, du hattest, er hatte, wir hatten."
+   }
+  },
+  {
+   "d": 100,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Präteritum of modal verbs",
+     "g": "Use the simple past of modal verbs: ich konnte, ich musste, ich wollte, ich durfte.",
+     "p": [
+      "Modal past forms drop the umlaut and add -te: können, konnte; müssen, musste; dürfen, durfte; wollen, wollte.",
+      "Ich and er/sie/es have the same form: ich musste, er musste. Du adds -st: du konntest.",
+      "Like war and hatte, modals in the past are almost always used in the Präteritum, also when speaking."
+     ],
+     "q": "Day 100, wunderbar! What could you not do before that you can do now in German? Use konnte and kann.",
+     "c": "Write four sentences about your childhood with musste, durfte, wollte and konnte."
+    },
+    "de": {
+     "t": "Präteritum der Modalverben",
+     "g": "Du benutzt das Präteritum der Modalverben: ich konnte, ich musste, ich wollte, ich durfte.",
+     "p": [
+      "Die Formen verlieren den Umlaut und bekommen -te: können, konnte; müssen, musste; dürfen, durfte; wollen, wollte.",
+      "Ich und er/sie/es haben dieselbe Form: ich musste, er musste. Bei du kommt -st dazu: du konntest.",
+      "Wie war und hatte stehen Modalverben in der Vergangenheit fast immer im Präteritum, auch beim Sprechen."
+     ],
+     "q": "Tag 100, wunderbar! Was konntest du früher auf Deutsch nicht, was du jetzt kannst? Benutze konnte und kann.",
+     "c": "Schreib vier Sätze über deine Kindheit mit musste, durfte, wollte und konnte."
+    },
+    "es": {
+     "t": "Präteritum de los verbos modales",
+     "g": "Usa el pasado simple de los modales: ich konnte, ich musste, ich wollte, ich durfte.",
+     "p": [
+      "Pierden la diéresis y añaden -te: können, konnte; müssen, musste; dürfen, durfte; wollen, wollte.",
+      "Ich y er/sie/es tienen la misma forma: ich musste, er musste. Con du se añade -st: du konntest.",
+      "Como war y hatte, los modales en pasado casi siempre van en Präteritum, también al hablar."
+     ],
+     "q": "¡Día 100, wunderbar! ¿Qué no podías hacer antes en alemán y ahora sí? Usa konnte y kann.",
+     "c": "Escribe cuatro frases sobre tu infancia con musste, durfte, wollte y konnte."
+    },
+    "fr": {
+     "t": "Le prétérit des verbes de modalité",
+     "g": "Utiliser le prétérit des modaux : ich konnte, ich musste, ich wollte, ich durfte.",
+     "p": [
+      "Ils perdent l'Umlaut et prennent -te : können, konnte ; müssen, musste ; dürfen, durfte ; wollen, wollte.",
+      "Ich et er/sie/es ont la même forme : ich musste, er musste. Avec du on ajoute -st : du konntest.",
+      "Comme war et hatte, les modaux au passé s'emploient presque toujours au prétérit, même à l'oral."
+     ],
+     "q": "Jour 100, wunderbar ! Que ne savais-tu pas faire avant en allemand et sais-tu faire maintenant ? Utilise konnte et kann.",
+     "c": "Écris quatre phrases sur ton enfance avec musste, durfte, wollte et konnte."
+    },
+    "it": {
+     "t": "Il Präteritum dei verbi modali",
+     "g": "Usi il passato semplice dei modali: ich konnte, ich musste, ich wollte, ich durfte.",
+     "p": [
+      "Perdono l'Umlaut e aggiungono -te: können, konnte; müssen, musste; dürfen, durfte; wollen, wollte.",
+      "Ich ed er/sie/es hanno la stessa forma: ich musste, er musste. Con du si aggiunge -st: du konntest.",
+      "Come war e hatte, al passato i modali si usano quasi sempre al Präteritum, anche parlando."
+     ],
+     "q": "Giorno 100, wunderbar! Che cosa non sapevi fare prima in tedesco e adesso sì? Usa konnte e kann.",
+     "c": "Scrivi quattro frasi sulla tua infanzia con musste, durfte, wollte e konnte."
+    },
+    "pt": {
+     "t": "Präteritum dos verbos modais",
+     "g": "Usar o passado simples dos modais: ich konnte, ich musste, ich wollte, ich durfte.",
+     "p": [
+      "Perdem o trema e juntam -te: können, konnte; müssen, musste; dürfen, durfte; wollen, wollte.",
+      "Ich e er/sie/es têm a mesma forma: ich musste, er musste. Com du junta-se -st: du konntest.",
+      "Tal como war e hatte, os modais no passado usam-se quase sempre no Präteritum, também a falar."
+     ],
+     "q": "Dia 100, wunderbar! O que não conseguias fazer antes em alemão e agora consegues? Usa konnte e kann.",
+     "c": "Escreve quatro frases sobre a tua infância com musste, durfte, wollte e konnte."
+    },
+    "pt_BR": {
+     "t": "Präteritum dos verbos modais",
+     "g": "Usar o passado simples dos modais: ich konnte, ich musste, ich wollte, ich durfte.",
+     "p": [
+      "Eles perdem o trema e ganham -te: können, konnte; müssen, musste; dürfen, durfte; wollen, wollte.",
+      "Ich e er/sie/es têm a mesma forma: ich musste, er musste. Com du entra -st: du konntest.",
+      "Assim como war e hatte, os modais no passado quase sempre ficam no Präteritum, também na fala."
+     ],
+     "q": "Dia 100, wunderbar! O que você não conseguia fazer antes em alemão e agora consegue? Use konnte e kann.",
+     "c": "Escreva quatro frases sobre sua infância com musste, durfte, wollte e konnte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ich konnte",
+      "ex": "Als Kind konnte ich gut schwimmen."
+     },
+     {
+      "w": "ich musste",
+      "ex": "Gestern musste ich lange arbeiten."
+     },
+     {
+      "w": "ich wollte",
+      "ex": "Ich wollte dich anrufen, aber ich hatte kein Netz."
+     },
+     {
+      "w": "ich durfte",
+      "ex": "Als Kind durfte ich nicht lange fernsehen."
+     },
+     {
+      "w": "du solltest",
+      "ex": "Du solltest doch um acht hier sein!"
+     },
+     {
+      "w": "wir mussten",
+      "ex": "Wir mussten eine Stunde warten."
+     }
+    ],
+    "gram": "Präteritum Modalverben ohne Umlaut + -te: können - konnte, müssen - musste, dürfen - durfte, wollen - wollte, sollen - sollte."
+   }
+  }
+ ]
+}

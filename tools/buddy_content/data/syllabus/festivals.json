@@ -1,0 +1,2195 @@
+{
+ "topic": "festivals",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Welcome to world festivals",
+   "f": "What festivals are, why every culture celebrates, and how this 365-day journey will unfold"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "Festival, holiday or tradition?",
+   "f": "Simple differences between a festival, a public holiday, a feast day and a family tradition"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Why humans celebrate",
+   "f": "Seasons, harvests, history and community: the big reasons behind celebrations everywhere"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Calendars that set the dates",
+   "f": "Solar, lunar and lunisolar calendars, and why some festivals move to a new date every year"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Your own festival calendar",
+   "f": "Make a personal list of the celebrations you know from home, school and family"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "The building blocks of a festival",
+   "f": "Food, music, lights, costumes, gifts and gatherings: the ingredients most celebrations share"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "New Year on 1 January",
+   "f": "Countdowns, fireworks and resolutions in countries that follow the Gregorian calendar"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Lucky New Year foods",
+   "f": "Twelve grapes in Spain, lentils in Italy, black-eyed peas in the US South and other lucky bites"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Lunar New Year basics",
+   "f": "Family reunions, red envelopes, dumplings and lion dances across East and Southeast Asia"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "The twelve zodiac animals",
+   "f": "The legend of the great animal race and how each lunar year gets its animal"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Nowruz, the Persian New Year",
+   "f": "A spring equinox celebration with the haft-sin table, spring cleaning and family visits"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Songkran, Thai New Year",
+   "f": "Playful water splashing, fresh starts and showing respect to elders in mid-April"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Happy New Year in many languages",
+   "f": "How to wish people a happy new year in different languages and when each new year falls"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Festivals of light",
+   "f": "Why lamps, candles and lanterns shine in so many celebrations during the dark months"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Diwali basics",
+   "f": "Oil lamps, rangoli patterns, sweets, new clothes and family time in the festival of lights"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Rangoli and floor art",
+   "f": "Designs made of coloured powder, rice and flowers that welcome guests at the door"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Hanukkah basics",
+   "f": "Eight nights of candles, the menorah, latkes, doughnuts and the spinning dreidel game"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Christmas customs worldwide",
+   "f": "Trees, markets, nativity scenes and festive meals, and how they differ from country to country"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Gift-bringers around the world",
+   "f": "Santa Claus, Father Christmas, Sinterklaas, La Befana and the Three Kings compared"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Christmas foods across cultures",
+   "f": "Panettone, stollen, bacalhau, tamales, mince pies and other festive dishes"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Winter solstice celebrations",
+   "f": "Yule, Dongzhi dumplings and other ways people welcome the return of longer days"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Yalda Night",
+   "f": "The Persian longest-night gathering with pomegranates, watermelon, nuts and poetry"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Carnival basics",
+   "f": "The festive season before Lent with masks, parades, music and dancing in many countries"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Masks and costumes",
+   "f": "Why people dress up at festivals and what masks can mean in different traditions"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Holi, the festival of colours",
+   "f": "Throwing coloured powder and water to welcome spring in India and Nepal"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Spring flower festivals",
+   "f": "Cherry blossoms, tulips and flower parades that celebrate the new season"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Hanami in Japan",
+   "f": "Picnics under cherry blossoms and the Japanese idea of enjoying beauty while it lasts"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Easter traditions around the world",
+   "f": "Painted eggs, egg hunts, special breads and spring markets in many countries"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "The art of decorated eggs",
+   "f": "Ukrainian pysanky, egg rolling, egg tapping and other egg customs"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: your first festival month",
+   "f": "Revisit calendars, new years, lights and spring, and pick your favourite festival so far"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Harvest festivals",
+   "f": "Thanking the land: why autumn harvest celebrations appear in cultures all over the world"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Thanksgiving in the US and Canada",
+   "f": "Shared meals, gratitude and the different dates the two countries celebrate"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "The Mid-Autumn Festival",
+   "f": "Mooncakes, lanterns and moon-gazing with family in China, Vietnam and beyond"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Chuseok in Korea",
+   "f": "The Korean harvest holiday with songpyeon rice cakes, family visits and folk games"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Pongal and Makar Sankranti",
+   "f": "A sweet harvest rice dish in South India and joyful kite flying across the country in January"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Kite festivals",
+   "f": "From Gujarat to Bali to Guatemala: why kites fill the sky at certain celebrations"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Lantern festivals",
+   "f": "Paper lanterns in China, Taiwan, Vietnam and Thailand, and the wishes they carry"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Fireworks: a global celebration",
+   "f": "Where fireworks come from and which festivals are most famous for them"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Festival music basics",
+   "f": "Drums, brass bands, bells and songs that set the mood of a celebration"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Festival dances",
+   "f": "Circle dances, maypole dances, samba and street dances explained in simple words"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Lion and dragon dances",
+   "f": "How performers bring the lion and dragon to life and why they bring good luck"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Parades and processions",
+   "f": "Floats, marching bands and street processions: how a festive parade is organised"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Festival greetings and wishes",
+   "f": "Kind phrases to wish people well at the most common celebrations"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Gift-giving customs",
+   "f": "What to give, how to wrap it and which gifts to avoid in different cultures"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Festive colours and their meanings",
+   "f": "Red for luck, white for purity, gold for wealth: what colours mean at celebrations"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Lucky numbers and symbols",
+   "f": "Why 8, 7 or 3 count as lucky in some places and how symbols appear at festivals"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Eid al-Fitr basics",
+   "f": "Marking the end of Ramadan with new clothes, sweets, family visits and generosity"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Festive sweets of the world",
+   "f": "Baklava, mochi, gulab jamun, brigadeiros and other treats made for celebrations"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Family traditions",
+   "f": "How each family adds its own small rituals to the big festivals"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Birthdays around the world",
+   "f": "Cakes, long-life noodles, birthday songs and other ways to celebrate another year"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Name days",
+   "f": "Celebrating your name day in Greece, Poland, Sweden, Hungary and other countries"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Children's festivals",
+   "f": "Children's Day and other celebrations made especially for kids around the world"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Hinamatsuri, the doll festival",
+   "f": "The Japanese girls' day in early March with beautiful tiered doll displays"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Mother's and Father's Day",
+   "f": "Different dates and customs for honouring parents in countries worldwide"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Teachers' Day around the world",
+   "f": "How countries thank their teachers with cards, flowers, songs and school events"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Midsummer in Sweden",
+   "f": "Maypoles, flower crowns, strawberries and the long bright night of Midsommar"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Saint John's Eve",
+   "f": "Midsummer bonfires, music and night-time gatherings by the sea in Southern Europe"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Festa Junina in Brazil",
+   "f": "Country-style June parties with quadrilha dancing, corn dishes, bonfires and plaid shirts"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Santos Populares in Portugal",
+   "f": "Lisbon's Saint Anthony and Porto's Saint John with grilled sardines and basil pots"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: celebrations through the seasons",
+   "f": "Look back on harvests, sweets, family days and summer festivals, and share a memory"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "National days",
+   "f": "How countries celebrate their national day with flags, parades, concerts and picnics"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Fête de la Musique",
+   "f": "Free music on every street corner in France on 21 June, now copied by cities worldwide"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Oktoberfest basics",
+   "f": "Munich's giant folk festival with big tents, brass bands, pretzels and traditional dress"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Traditional festival clothing",
+   "f": "Dirndl, kimono, sari, hanbok and other outfits people wear on special days"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Street food at festivals",
+   "f": "Why festivals are perfect for tasting local snacks and how to choose well"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Fairs and festive markets",
+   "f": "Night markets, seasonal fairs and funfairs as joyful meeting places"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Christmas markets in Central Europe",
+   "f": "Wooden stalls, gingerbread, roasted nuts and crafts in Germany, Austria and beyond"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Advent traditions",
+   "f": "Advent calendars, candle wreaths and counting down the days to Christmas"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Saint Lucia Day",
+   "f": "Candlelit processions, white robes and saffron buns in Sweden on 13 December"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Three Kings Day",
+   "f": "Epiphany parades, the ring-shaped king cake and gifts on 6 January in Spain and Latin America"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "La Befana in Italy",
+   "f": "The kind old woman on a broom who brings sweets to children on Epiphany eve"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Sinterklaas in the Netherlands",
+   "f": "Shoes by the fireplace, funny poems and chocolate letters on 5 December"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Hogmanay in Scotland",
+   "f": "First-footing, singing Auld Lang Syne and big New Year street parties"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Fun festival superstitions",
+   "f": "Playful beliefs about luck: first visitors, sweeping, wearing colours and eating certain foods"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Spring cleaning traditions",
+   "f": "Cleaning the house before Lunar New Year, Nowruz and other fresh starts"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Water festivals",
+   "f": "Songkran, Thingyan in Myanmar and other festivals where water means renewal"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Floating lights on water",
+   "f": "Lantern boats, floating candles and baskets on rivers and lakes around Asia"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Loy Krathong in Thailand",
+   "f": "Floating decorated baskets on the water under the November full moon"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Tết in Vietnam",
+   "f": "Vietnamese Lunar New Year with peach blossoms, bánh chưng rice cakes and lucky money"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Seollal in Korea",
+   "f": "Korean New Year with hanbok, bowing to elders, tteokguk soup and yut nori games"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Festivals and the moon",
+   "f": "How full and new moons set the dates of Mid-Autumn, Loy Krathong, Easter and Eid"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Festivals and the sun",
+   "f": "Equinoxes and solstices behind Nowruz, Midsummer, Inti Raymi and Yule"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Inti Raymi in Peru",
+   "f": "The Inca festival of the sun, recreated every June in Cusco with music and costumes"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Carnival in Rio de Janeiro",
+   "f": "Samba schools, the Sambadrome parade and lively street blocos in Brazil"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Carnival in Venice",
+   "f": "Elegant masks, historic costumes and canal-side events in Italy"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Carnival in Germany and Switzerland",
+   "f": "Fasching, Karneval and Fasnacht: jokes, parades, costumes and marching bands"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Mardi Gras in New Orleans",
+   "f": "Krewes, colourful beads, king cake and jazz in the American South"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Pancake Day",
+   "f": "Shrove Tuesday pancakes and pancake races in the United Kingdom and Ireland"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Maslenitsa",
+   "f": "A week of pancakes and outdoor fun saying goodbye to winter in Eastern Europe"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: carnival season",
+   "f": "Compare carnivals from Rio to Venice to Cologne and choose the one you would visit"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Mărțișor and Baba Marta",
+   "f": "Red-and-white threads worn to welcome March in Romania, Moldova and Bulgaria"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "May Day traditions",
+   "f": "Maypoles, flower garlands and lily of the valley gifts on 1 May"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "King's Day in the Netherlands",
+   "f": "Orange clothes, street flea markets and canal boat parties on 27 April"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Saint Patrick's Day",
+   "f": "Green outfits, Irish music, dancing and parades on 17 March around the world"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Matariki in New Zealand",
+   "f": "The Māori New Year, marked by the rising of the Matariki star cluster in midwinter"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Festivals and the stars",
+   "f": "How star clusters and star legends set celebration dates in different cultures"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Tanabata, the star festival",
+   "f": "Writing wishes on colourful paper strips and hanging them on bamboo in Japan"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "The Dragon Boat Festival",
+   "f": "Boat races, pounding drums and zongzi rice dumplings in early summer"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Foods wrapped in leaves",
+   "f": "Zongzi, tamales, bánh chưng and other festive foods wrapped in leaves"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Festivals at school",
+   "f": "How schools celebrate culture days, sports days and seasonal events"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Traditional games at festivals",
+   "f": "Tug of war, sack races and other traditional games that bring communities together"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "The Highland Games",
+   "f": "Caber tossing, bagpipes, tartan and Highland dancing at Scottish gatherings"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Naadam in Mongolia",
+   "f": "Wrestling, horse racing and archery: Mongolia's three traditional summer games"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Animals at festivals",
+   "f": "Camels, elephants, horses and imaginary dragons: the role of animals in celebrations"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "The Pushkar Fair",
+   "f": "A colourful camel and livestock fair with music and markets in the Rajasthan desert"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Snow and ice festivals",
+   "f": "Sapporo snow sculptures, Harbin ice palaces and other winter wonderlands"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Quebec Winter Carnival",
+   "f": "Bonhomme the snowman, ice palaces and canoe races on the frozen St Lawrence"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Enjoying big events comfortably",
+   "f": "Crowds, weather, water and meeting points: basics for a relaxed festival day"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Being a good festival guest",
+   "f": "Respecting hosts, dress codes, quiet moments and local customs"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Photographing festivals politely",
+   "f": "Asking before taking portraits, respecting special moments and capturing the atmosphere"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Festival words: the basics",
+   "f": "Everyday words like parade, float, costume, feast, fireworks and lantern"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Festival words: food and decorations",
+   "f": "Useful words for the dishes, decorations and greetings you hear at celebrations"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Describing a festival",
+   "f": "Simple ways to tell a friend what you saw, heard, tasted and felt"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Telling a festival story",
+   "f": "How to structure a short, lively story about a celebration you remember"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Inviting someone to a celebration",
+   "f": "Friendly ways to invite, accept and politely decline an invitation"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Festive table manners",
+   "f": "Seating, sharing dishes, waiting for the host and saying thank you"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Toasts around the world",
+   "f": "Cheers, salud, kampai, prost and santé: how and when people raise a glass"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Festive decorations",
+   "f": "Garlands, wreaths, paper cut-outs and flowers that dress up homes and streets"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Paper crafts for festivals",
+   "f": "Mexican papel picado, Chinese paper cutting and origami cranes"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: the beginner stage",
+   "f": "Celebrate finishing the first stage by planning a small celebration of your own"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "How festivals are born",
+   "f": "Ancient seasons, historic events and local legends that slowly grow into celebrations"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "How festivals change over time",
+   "f": "Old customs mixing with new ones: why no tradition stays exactly the same"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Festivals that travelled abroad",
+   "f": "Lunar New Year in London, Saint Patrick's Day in New York, Diwali in Leicester"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Diaspora celebrations",
+   "f": "How communities living abroad keep traditions alive and share them with their neighbours"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Notting Hill Carnival",
+   "f": "Caribbean culture, steel bands, sound systems and costumes in London every August"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Trinidad and Tobago Carnival",
+   "f": "Soca, calypso, steelpan and the joyful pre-dawn J'ouvert street party"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Steelpan, the oil-drum instrument",
+   "f": "How Trinidad turned old oil barrels into a melodic national instrument"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Crop Over in Barbados",
+   "f": "Celebrating the end of the sugar cane harvest with music, costumes and markets"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Junkanoo in the Bahamas",
+   "f": "Boxing Day and New Year parades with goatskin drums, cowbells and paper costumes"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Carnival of Oruro in Bolivia",
+   "f": "Diablada dancers, intricate masks and parades listed as world heritage"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Fiesta de la Candelaria in Puno",
+   "f": "Thousands of dancers and musicians celebrating on the shores of Lake Titicaca"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Guelaguetza in Oaxaca",
+   "f": "Regional dances, costumes and a spirit of sharing gifts in southern Mexico"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Mexican town fiestas",
+   "f": "Patron town festivals, brass bands, papel picado and fireworks towers in Mexico"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "The story of the piñata",
+   "f": "Where piñatas come from and how breaking them open became party fun"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Las Posadas in Mexico",
+   "f": "Nine nights of processions, songs, warm punch and piñatas before Christmas"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Fiestas Patrias in Chile",
+   "f": "Empanadas, kites, fondas and the cueca dance in mid-September"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Folk dances on national days",
+   "f": "Cueca, chacarera, joropo and other folk dances that shine on festive days"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Bumba-meu-boi",
+   "f": "A Brazilian folk drama about an ox, told with drums, songs and dazzling costumes"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "The Parintins Festival",
+   "f": "Two Amazon teams, Garantido and Caprichoso, compete with giant moving floats"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Frevo and maracatu in Pernambuco",
+   "f": "Small umbrellas, giant puppets and the rhythms of Recife and Olinda's carnival"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Carnival in Salvador da Bahia",
+   "f": "Trio elétrico trucks, axé music and huge street blocos in Bahia"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "New Year's Eve on a Brazilian beach",
+   "f": "White clothes, jumping seven waves and fireworks over Copacabana"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Las Fallas in Valencia",
+   "f": "Giant satirical sculptures, daytime firecracker shows and paella in March"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Feria de Abril in Seville",
+   "f": "Flamenco dresses, casetas, sevillanas dancing and horse-drawn carriages"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "La Tomatina",
+   "f": "The world's biggest tomato fight in Buñol and how the playful tradition started"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Human towers in Catalonia",
+   "f": "Castells built by teams at festivals and the values of strength, balance and courage"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Sant Jordi in Catalonia",
+   "f": "Book and rose stalls fill the streets of Barcelona on 23 April"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Semana Santa as cultural heritage",
+   "f": "The music, crafts and processions of Holy Week in Spain and Latin America"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "The Palio di Siena",
+   "f": "A historic horse race around Piazza del Campo and the pride of Siena's districts"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Review: Latin American and Iberian festivals",
+   "f": "Revisit carnivals, fiestas and ferias from the Andes to Andalusia and pick a favourite"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Infiorata flower carpets",
+   "f": "Italian streets covered in detailed pictures made from flower petals"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Ferragosto in Italy",
+   "f": "The mid-August holiday of beach trips, family lunches and quiet cities"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Sagre: Italian food festivals",
+   "f": "Village festivals dedicated to one local food, from chestnuts to truffles"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "The Regata Storica in Venice",
+   "f": "Historic boats, rowing races and costumes on the Grand Canal"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Bastille Day in France",
+   "f": "Military parade, fire brigade balls and fireworks on the French national day"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "The Nice Carnival",
+   "f": "Giant floats and flower battles on the French Riviera in February"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "The Menton Lemon Festival",
+   "f": "Huge sculptures made of oranges and lemons on the Côte d'Azur"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "The Festival of Lights in Lyon",
+   "f": "Candles in windows and spectacular light shows on buildings every December"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Galette des rois and Chandeleur",
+   "f": "The king cake with a hidden charm in January and crêpes in February"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "The Avignon Festival",
+   "f": "Theatre in courtyards, streets and squares during the French summer"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Carnival in Cologne",
+   "f": "The fifth season: costumes, Kamelle sweets thrown from floats and Rose Monday"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Oktoberfest up close",
+   "f": "Its royal wedding origins, the opening parade, the tents and Bavarian music"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Saint Martin's lantern walks",
+   "f": "Children carrying homemade lanterns and singing songs in November"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Maypoles in Germany and Austria",
+   "f": "Raising a decorated maypole in the village square on 1 May"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Harvest thanksgiving in Europe",
+   "f": "Harvest crowns, decorated altars and village feasts after the harvest"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Up Helly Aa in Shetland",
+   "f": "Torch processions, Viking costumes and a longship lit up in winter"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "The Eisteddfod in Wales",
+   "f": "Poetry, singing and music competitions celebrating the Welsh language"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Burns Night",
+   "f": "Scottish poetry, haggis, bagpipes and speeches on 25 January"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Cheese rolling and quirky British festivals",
+   "f": "Chasing a cheese wheel downhill and other wonderfully odd local traditions"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "The Edinburgh Festival Fringe",
+   "f": "The world's largest arts festival, where anyone can perform"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Carnival of Binche in Belgium",
+   "f": "The Gilles in wax masks and tall feathered hats throwing oranges to the crowd"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Walpurgis Night in Sweden",
+   "f": "Bonfires, choirs singing to spring and student celebrations on 30 April"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Swedish Christmas and Jul",
+   "f": "Julbord buffets, straw goats and the Christmas Eve family gathering"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Kurentovanje in Slovenia",
+   "f": "Furry kurent costumes with bells chasing winter away"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Ivan Kupala Night",
+   "f": "Flower wreaths floating on rivers and midsummer bonfires in Eastern Europe"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Easter Monday water fun",
+   "f": "Śmigus-dyngus in Poland and playful splashing customs in Central Europe"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Apokries and Clean Monday in Greece",
+   "f": "Greek carnival parades followed by kite flying and picnics"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Hıdırellez in Turkey",
+   "f": "A spring festival with wishes tied to rose trees and outdoor gatherings"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Sham el-Nessim in Egypt",
+   "f": "An ancient spring festival with picnics, coloured eggs and time in the parks"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review: European festivals",
+   "f": "Look back on Europe's flower carpets, lantern walks, bonfires and carnivals"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Nowruz traditions up close",
+   "f": "The seven items of the haft-sin, jumping over small fires and the 13th-day picnic"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Ramadan nights",
+   "f": "Lanterns, iftar meals shared with neighbours and night markets during Ramadan"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Eid customs around the world",
+   "f": "Eidi money for children, special breakfasts and new clothes from Morocco to Indonesia"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Hari Raya in Malaysia and Indonesia",
+   "f": "Open houses, ketupat rice cakes and asking for forgiveness"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Enkutatash, Ethiopian New Year",
+   "f": "Yellow daisies, songs and family meals in September"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "The Fes Festival of World Sacred Music",
+   "f": "Musicians from many traditions meeting in an old Moroccan city"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Durbar festivals in Nigeria",
+   "f": "Horse riders in splendid robes parading before the emir"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Homowo in Ghana",
+   "f": "A Ga harvest festival with a special dish of kpekple and street celebrations"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "The Argungu Fishing Festival",
+   "f": "Thousands of fishers entering a river together in northern Nigeria"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Cape Town's Minstrel Carnival",
+   "f": "Satin suits, banjos and street parades on the second day of the new year"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "The Sahara Festival in Douz",
+   "f": "Camel races, poetry and desert music in southern Tunisia"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Sauti za Busara in Zanzibar",
+   "f": "A music festival celebrating sounds from all over Africa"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Lake of Stars in Malawi",
+   "f": "Music and arts by the shore of Lake Malawi"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Onam in Kerala",
+   "f": "Flower carpets, the grand sadya feast on a banana leaf and snake boat races"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Navratri and garba dancing",
+   "f": "Nine nights of circle dancing with sticks and swirling skirts in Gujarat"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Durga Puja in Kolkata",
+   "f": "Artistic pandals, sculptures, music and food stalls across the city"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Ganesh Chaturthi",
+   "f": "Colourful Ganesha figures, music and processions in Mumbai and beyond"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Baisakhi and the spring harvest",
+   "f": "Bhangra dancing, fairs and harvest joy in Punjab in April"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Raksha Bandhan",
+   "f": "Sisters tying a rakhi thread on their brothers' wrists, and gifts in return"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "The Hornbill Festival in Nagaland",
+   "f": "Traditional dances, crafts and food from the many Naga communities"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "The Esala Perahera in Sri Lanka",
+   "f": "Decorated elephants, drummers and fire dancers in Kandy"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Sinhala and Tamil New Year",
+   "f": "Lighting the hearth at the lucky moment, milk rice and games in April"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Dashain and Tihar in Nepal",
+   "f": "Bamboo swings, kites and the day dogs are honoured with garlands"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Losar, the Tibetan New Year",
+   "f": "Butter sculptures, dumplings and family visits in Tibet, Nepal and Bhutan"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Tshechu festivals in Bhutan",
+   "f": "Masked dances in monastery courtyards and huge painted cloth displays"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "The Gion Matsuri in Kyoto",
+   "f": "Giant wooden floats and a whole month of festivities every July"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Nebuta and Awa Odori",
+   "f": "Glowing paper floats in Aomori and joyful street dancing in Tokushima"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Setsubun in Japan",
+   "f": "Throwing roasted beans and eating a lucky sushi roll at the start of spring"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Shichi-Go-San",
+   "f": "Japanese children aged three, five and seven dressed up for a special day"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Review: from the Middle East to Japan",
+   "f": "Revisit Nowruz, Eid, African and Indian festivals and Himalayan new years, and share what surprised you most"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Japanese summer matsuri",
+   "f": "Yukata, festival stalls, goldfish scooping and fireworks on summer nights"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Boryeong Mud Festival",
+   "f": "Playing in mineral-rich mud on a Korean beach every July"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "The Lotus Lantern Festival in Seoul",
+   "f": "Thousands of glowing lanterns parading through the city in spring"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "The Harbin Ice Festival",
+   "f": "Life-size ice castles and glowing sculptures in northeast China"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "The Pingxi Sky Lantern Festival",
+   "f": "Writing wishes on paper lanterns and releasing them into the night sky in Taiwan"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "The Lantern Festival in China",
+   "f": "The 15th day of the new year with riddles, lanterns and tangyuan sweet dumplings"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Nyepi, Bali's Day of Silence",
+   "f": "Giant ogoh-ogoh figures the night before, then a whole island in quiet"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Ati-Atihan and Sinulog",
+   "f": "Drums, face paint and street dancing at January festivals in the Philippines"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "The Pahiyas Festival",
+   "f": "Houses decorated with colourful rice wafers and fresh produce in Lucban"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Bun Bang Fai in Laos",
+   "f": "Homemade rockets launched to welcome the rainy season"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Boat races in Southeast Asia",
+   "f": "Long boat races on the Mekong and in Cambodia at the end of the rains"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Matariki traditions",
+   "f": "Sharing food, remembering, looking ahead and stargazing in New Zealand"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "The Pasifika Festival in Auckland",
+   "f": "Pacific Island food, music and dance from Samoa, Tonga, Fiji and more"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "New Year's Eve in Sydney",
+   "f": "Harbour fireworks among the first big New Year shows on the planet"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Vivid Sydney",
+   "f": "A winter festival of light, music and ideas on Sydney's landmarks"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Hula and the Merrie Monarch Festival",
+   "f": "Hawaii's celebration of hula, chant and Hawaiian culture"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Lei Day in Hawaii",
+   "f": "Flower garlands, music and contests every 1 May"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Canada Day and the Fourth of July",
+   "f": "Picnics, parades, fireworks and barbecues on two North American national days"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "The Calgary Stampede",
+   "f": "Rodeo shows, chuckwagon races, pancake breakfasts and cowboy hats"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Powwows",
+   "f": "Gatherings of dance, drumming and regalia in Native American and First Nations communities"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "The Albuquerque Balloon Fiesta",
+   "f": "Hundreds of hot-air balloons rising together at dawn in New Mexico"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Groundhog Day",
+   "f": "A famous groundhog predicting the end of winter in Punxsutawney"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Kwanzaa",
+   "f": "Seven days, seven principles and the kinara candle holder in African American culture"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Thanksgiving up close",
+   "f": "The parade, the football, the menu and the idea of giving thanks"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Music festivals",
+   "f": "From village concerts to huge outdoor festivals: how music festivals began"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Jazz festivals",
+   "f": "Montreux, New Orleans and the joy of hearing jazz in the open air"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Film festivals",
+   "f": "Cannes, Venice, Berlin and Toronto: red carpets, juries and new films"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Literature and book festivals",
+   "f": "Meeting authors, readings and book fairs in cities around the world"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Food festivals",
+   "f": "Chilli fiestas, cheese fairs, seafood festivals and street food weekends"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Review: from Asian lanterns to American fiestas",
+   "f": "Compare matsuri, lantern nights, Pacific celebrations and North American festivals"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Light festivals in modern cities",
+   "f": "Projections, installations and night walks that transform cities"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Folk festivals",
+   "f": "Traditional music, crafts and dance gatherings that keep heritage alive"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Flower festivals",
+   "f": "Keukenhof tulips, Chiang Mai flowers and Madeira's flower parade"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Balloon, kite and sky festivals",
+   "f": "Festivals that turn the sky into a colourful canvas"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Sand, snow and sculpture festivals",
+   "f": "Artists shaping sand, snow and ice into giant works of art"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Festivals in the countryside",
+   "f": "Village fairs, harvest feasts and small local traditions far from the big cities"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Festivals in big cities",
+   "f": "How megacities host millions of visitors, and how locals still enjoy their own festivals"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Volunteering at a festival",
+   "f": "What festival volunteers do and how it helps you meet people and learn about a culture"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Festival etiquette across cultures",
+   "f": "Shoes, gifts, greetings and photos: comparing what is polite at celebrations worldwide"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Review: the intermediate stage",
+   "f": "Celebrate the end of the second stage by mapping every festival you have explored"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Festivals as living heritage",
+   "f": "The idea of intangible cultural heritage and why festivals are worth protecting"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Invented traditions",
+   "f": "How some customs that feel ancient are fairly recent, and why that does not make them less real"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Shared roots, different faces",
+   "f": "How one celebration can look completely different in neighbouring countries"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Blending traditions",
+   "f": "How festivals absorb customs from different origins and become something new"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Calendars in depth",
+   "f": "Leap months, lunar years and the clever systems that keep festivals in their seasons"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "How the date of Easter is set",
+   "f": "The first Sunday after the first full moon after the spring equinox, explained simply"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Why Lunar New Year moves",
+   "f": "The new moon rule that places it between late January and mid-February"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Why Eid moves through the seasons",
+   "f": "The lunar Hijri year is about 11 days shorter than the solar year, so Eid shifts each year"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Festival symbolism decoded",
+   "f": "Reading the hidden meanings in festive foods, colours, numbers and shapes"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Food symbolism in depth",
+   "f": "Round foods for unity, long noodles for long life, whole fish for abundance"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Flowers with festive meanings",
+   "f": "Marigolds, lotus, cherry blossoms and lilies, and why flower choice differs by culture"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Festival music in depth",
+   "f": "Gamelan, samba drums, bagpipes and steelpan: how rhythm unites a crowd"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Taiko drumming",
+   "f": "Japanese drum ensembles and the energy they bring to summer festivals"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Samba schools from the inside",
+   "f": "Year-round work, themes, wings and the judging of Rio's carnival parade"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Costume making as an art",
+   "f": "The months of handwork behind carnival costumes, masks and festive dress"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Mask traditions compared",
+   "f": "Venetian, Oruro, Binche, Korean talchum and Bhutanese masks side by side"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Giants and big-headed figures",
+   "f": "Spanish gigantes y cabezudos, Belgian giants and Olinda's huge puppets"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Fire and light as symbols",
+   "f": "Why fire and light mean warmth, hope and renewal in festivals worldwide"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Water in celebrations",
+   "f": "Renewal, blessing and play: the many meanings of water at festivals"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Review: symbols and festival arts",
+   "f": "Revisit calendars, symbols, music, masks and costumes, and explain one in your own words"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Festivals and the local economy",
+   "f": "How festivals create work for artisans, cooks, musicians and small businesses"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Festival tourism: pros and cons",
+   "f": "Crowds, authenticity and local life: balancing visitors and residents"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Sustainable festivals",
+   "f": "Less waste, reusable cups, eco-friendly decorations and greener transport"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Eco-friendly celebrations at home",
+   "f": "Reusable wrapping, local food and natural decorations for your own festivities"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Accessible festivals",
+   "f": "How events welcome people with disabilities, young families and older visitors"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Behind the scenes of a festival",
+   "f": "Permits, volunteers, timetables, stages and the teams that keep everyone safe"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "The clubs that make festivals happen",
+   "f": "Neighbourhood associations, samba schools, krewes and falla commissions"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Friendly competition at festivals",
+   "f": "Judging floats, dances, songs and sculptures, and how rivalry raises quality"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Festivals and identity",
+   "f": "How celebrations help people feel connected to a place, a language or a heritage"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Festivals that keep languages alive",
+   "f": "The Eisteddfod, the Mòd and Matariki: celebrations that support languages"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Appreciation, not appropriation",
+   "f": "Joining other people's celebrations with respect, curiosity and understanding"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Joining another culture's festival",
+   "f": "How to ask, learn, take part and say thank you as a respectful guest"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Wearing traditional dress as a guest",
+   "f": "When it is welcome to wear a sari, kimono or dirndl, and how to wear it well"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Hosting a multicultural celebration",
+   "f": "Bringing your friends' traditions together in one welcoming party"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Celebrating at a diverse workplace",
+   "f": "Shared calendars, potluck lunches and inclusive ways to mark different holidays"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Festivals in multicultural cities",
+   "f": "Toronto, London, Singapore and São Paulo: festivals from every continent in one city"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Singapore's festival calendar",
+   "f": "Chinese New Year, Deepavali, Hari Raya and Christmas celebrated side by side"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "São Paulo's mix of traditions",
+   "f": "Japanese, Italian, Lebanese and northeastern Brazilian festivals in one metropolis"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Toronto's festival mosaic",
+   "f": "The Toronto Caribbean Carnival and celebrations from dozens of communities"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Online and digital celebrations",
+   "f": "Video calls, livestreamed parades and new ways to celebrate across distances"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Festivals in literature",
+   "f": "How novels, poems and stories capture the atmosphere of celebrations"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Festivals on screen",
+   "f": "Why filmmakers love carnivals, markets and New Year's Eve as settings"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Festivals in painting and prints",
+   "f": "Bruegel's village feasts, Japanese woodblock prints and festive scenes in art"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Festival photography as a craft",
+   "f": "Light, movement, colour and storytelling in great festival photos"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Writing about a festival",
+   "f": "Craft a vivid travel piece with senses, people and a clear story line"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Festive idioms and expressions",
+   "f": "Sayings in different languages that come from celebrations and feasts"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Comparing new years across cultures",
+   "f": "Gregorian, lunar, Persian, Ethiopian, Thai and Sinhala new years side by side"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Comparing harvest festivals",
+   "f": "Thanksgiving, Chuseok, Mid-Autumn, Pongal and Homowo compared"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Comparing festivals of light",
+   "f": "Diwali, Hanukkah, Saint Lucia, Loy Krathong and Lyon's lights compared"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Review: festivals and society",
+   "f": "Look back on economy, heritage, identity and respect, and share your own view"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Planning a festival trip",
+   "f": "Choosing a festival, timing your visit, booking early and preparing for crowds"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Building a festival itinerary",
+   "f": "Combining a festival with local sights, food and calm rest days"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Packing for a festival",
+   "f": "Clothes, comfort, weather and small items that make the day easier"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Key phrases before you go",
+   "f": "Learning greetings, thanks and festival wishes in the local language"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Respecting local rules at festivals",
+   "f": "Quiet zones, dress codes, photography limits and local regulations"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "A traveller's festival calendar",
+   "f": "Which months to travel for which celebrations around the world"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Festival highlights: January to March",
+   "f": "Lunar New Year, carnival, Sapporo, Holi and Nowruz in one season"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Festival highlights: April to June",
+   "f": "Songkran, King's Day, Hanami, Inti Raymi and Midsummer"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Festival highlights: July to September",
+   "f": "Gion Matsuri, Edinburgh, Notting Hill, Onam and Mid-Autumn"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Festival highlights: October to December",
+   "f": "Diwali, the Balloon Fiesta, Loy Krathong, Lyon's lights and Christmas markets"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Small festivals worth discovering",
+   "f": "Lesser-known local celebrations that offer a warm and genuine welcome"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Festivals along the Silk Road",
+   "f": "Nowruz, Naadam and Central Asian celebrations on ancient trade routes"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Festivals of the Mediterranean",
+   "f": "Shared customs around the sea: town patron days, boat blessings and long feasts"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Sea and fishing festivals",
+   "f": "Boat parades, fleet blessings and seafood feasts on coasts around the world"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Mountain festivals",
+   "f": "Alpine cattle descents, Andean fiestas and Himalayan gatherings"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "The Alpine cattle descent",
+   "f": "Cows decorated with flowers and bells returning from summer pastures"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Grape and olive harvests",
+   "f": "Picking, pressing and village feasts at harvest time around the Mediterranean"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Rice festivals",
+   "f": "Planting and harvest celebrations in the rice-growing cultures of Asia"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Tea and coffee celebrations",
+   "f": "The Japanese tea ceremony, the Ethiopian coffee ceremony and festive hot drinks"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Festive breads",
+   "f": "Challah, rosca de reyes, kulich, panettone and the meaning of their shapes"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "The stories behind festive desserts",
+   "f": "How mooncakes, king cakes and gulab jamun got their place at celebrations"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Cooking a festive dish",
+   "f": "Choose a festive recipe from another culture and plan how to cook it"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Hosting a festive meal",
+   "f": "Planning the menu, the table and the timing for a group celebration"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Festive songs to know",
+   "f": "Auld Lang Syne, Feliz Navidad and other songs sung at celebrations worldwide"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Games at family celebrations",
+   "f": "Mahjong, dreidel, yut nori, bingo and charades during the holidays"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Gratitude at festivals",
+   "f": "Why giving thanks sits at the heart of so many celebrations"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Generosity and sharing",
+   "f": "Food for neighbours, giving to others and open houses during festivals"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Honouring elders at festivals",
+   "f": "Bowing, blessings and listening to family stories during celebrations"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Passing traditions to children",
+   "f": "How customs reach the next generation through play, stories and helping"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Review: travel, food and family",
+   "f": "Revisit trip planning, festive food and family customs, and plan one idea for real"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "The future of festivals",
+   "f": "How technology, climate and travel may shape the celebrations of tomorrow"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "New celebrations being born",
+   "f": "Modern events like World Book Day, Earth Hour and new city festivals"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "International days",
+   "f": "World Book Day, International Day of Friendship, World Music Day and more"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "International Mother Language Day",
+   "f": "21 February, a day to celebrate the richness of the world's languages"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Moments the whole world shares",
+   "f": "New Year's Eve across time zones and other celebrations shared globally"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Creating your own tradition",
+   "f": "How to start a small personal or family ritual that lasts for years"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Organising a community festival",
+   "f": "Steps to plan a street party, culture day or neighbourhood fair"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Spreading the word about a festival",
+   "f": "Posters, social media and word of mouth to bring people together"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Choosing a theme for your festival",
+   "f": "Finding a theme that gives your celebration a clear identity"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Designing a festival programme",
+   "f": "Balancing music, food, children's activities and quiet moments"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "A festival for everyone",
+   "f": "Languages, accessibility, food choices and calm areas for all guests"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Learning from festival mishaps",
+   "f": "Rain plans, long queues and other lessons organisers learn"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Debate: big festivals or small ones?",
+   "f": "Weighing atmosphere, comfort, variety and authenticity"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Debate: keep traditions or change them?",
+   "f": "Should festivals stay the same or evolve? Exploring both sides kindly"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Festival memories",
+   "f": "Why celebrations stay in our memory and help shape who we are"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Interviewing someone about their festival",
+   "f": "Good questions to learn about a friend's favourite celebration"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Presenting a festival",
+   "f": "How to structure a short talk about a celebration from your culture"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Explaining your festival to a visitor",
+   "f": "Clear ways to explain customs that may seem unusual from the outside"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Answering curious questions",
+   "f": "Responding kindly and clearly when people ask about your traditions"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Festival trivia challenge",
+   "f": "A fun quiz-style look back at the most surprising festival facts"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Legends behind festivals",
+   "f": "How stories and folk tales explain festive customs around the world"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Nian and the colour red",
+   "f": "The legend of the beast Nian and why red decorations and firecrackers mark Lunar New Year"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Chang'e and the jade rabbit",
+   "f": "The moon legends told while eating mooncakes at the Mid-Autumn Festival"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "How gift-bringer stories grew",
+   "f": "How Saint Nicholas, the Three Kings and Befana tales changed over the centuries"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Famous festival characters",
+   "f": "Bonhomme, Ded Moroz, the Gilles and other beloved festive figures compared"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "King Momo and carnival royalty",
+   "f": "Carnival kings, queens and princes from Rio to Cologne"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Festive words in seven languages",
+   "f": "Key festival words in English, German, Spanish, French, Italian and Portuguese"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Festive greetings in seven languages",
+   "f": "Wishing people well in the GreenGo languages and a few more"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Your personal festival map",
+   "f": "Mark every festival you know, have attended or dream of attending"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Your festival bucket list",
+   "f": "Pick five festivals to experience one day and plan the first steps"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Celebrating with GreenGo friends",
+   "f": "Sharing your traditions with people from other cultures you meet"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "What festivals teach us",
+   "f": "Joy, gratitude, community and curiosity: the common lessons of celebrations"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Your favourite discoveries",
+   "f": "Revisit the festivals that surprised and inspired you most this year"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Planning your next celebration",
+   "f": "Turn what you learned into a real celebration with friends or family"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Final review: a year of festivals",
+   "f": "Celebrate completing the 365-day journey and look back on everything you explored"
+  }
+ ]
+}

@@ -1,0 +1,1305 @@
+{
+ "topic": "drawing",
+ "questions": [
+  {
+   "id": "drawing-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you love to draw most when you doodle?",
+    "de": "Was zeichnest du am liebsten, wenn du so vor dich hin kritzelst?",
+    "es": "¿Qué es lo que más te gusta dibujar cuando garabateas?",
+    "fr": "Qu'est-ce que tu aimes le plus dessiner quand tu gribouilles ?",
+    "it": "Che cosa ti piace di più disegnare quando scarabocchi?",
+    "pt": "O que mais gostas de desenhar quando rabiscas?",
+    "pt_BR": "O que você mais gosta de desenhar quando está rabiscando?"
+   }
+  },
+  {
+   "id": "drawing-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Did you draw a lot as a child? What did you like to draw?",
+    "de": "Hast du als Kind viel gezeichnet? Was hast du gern gemalt?",
+    "es": "¿Dibujabas mucho de pequeño? ¿Qué te gustaba dibujar?",
+    "fr": "Dessinais-tu beaucoup quand tu étais petit ? Qu'aimais-tu dessiner ?",
+    "it": "Disegnavi molto da piccolo? Che cosa ti piaceva disegnare?",
+    "pt": "Desenhavas muito em criança? O que gostavas de desenhar?",
+    "pt_BR": "Você desenhava muito quando criança? O que gostava de desenhar?"
+   }
+  },
+  {
+   "id": "drawing-003",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you prefer to draw with: pencil, pen or something else?",
+    "de": "Womit zeichnest du am liebsten: Bleistift, Stift oder etwas anderem?",
+    "es": "¿Con qué prefieres dibujar: lápiz, bolígrafo u otra cosa?",
+    "fr": "Avec quoi préfères-tu dessiner : crayon, stylo ou autre chose ?",
+    "it": "Con che cosa preferisci disegnare: matita, penna o altro?",
+    "pt": "Com o que preferes desenhar: lápis, caneta ou outra coisa?",
+    "pt_BR": "Com o que você prefere desenhar: lápis, caneta ou outra coisa?"
+   }
+  },
+  {
+   "id": "drawing-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Which illustrator or artist has drawings you really admire?",
+    "de": "Welche Illustratorin oder welcher Künstler hat Zeichnungen, die du richtig bewunderst?",
+    "es": "¿Qué ilustrador o artista tiene dibujos que admiras de verdad?",
+    "fr": "Quel illustrateur ou quel artiste fait des dessins que tu admires vraiment ?",
+    "it": "Quale illustratore o artista fa disegni che ammiri davvero?",
+    "pt": "Que ilustrador ou artista faz desenhos que admiras mesmo?",
+    "pt_BR": "Qual ilustrador ou artista faz desenhos que você admira de verdade?"
+   }
+  },
+  {
+   "id": "drawing-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you most love to be able to draw well?",
+    "de": "Was würdest du am liebsten richtig gut zeichnen können?",
+    "es": "¿Qué te encantaría saber dibujar bien?",
+    "fr": "Qu'est-ce que tu aimerais le plus savoir bien dessiner ?",
+    "it": "Che cosa ti piacerebbe di più saper disegnare bene?",
+    "pt": "O que mais adorarias saber desenhar bem?",
+    "pt_BR": "O que você mais adoraria saber desenhar bem?"
+   }
+  },
+  {
+   "id": "drawing-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you carry a notebook or sketchbook with you? What ends up in it?",
+    "de": "Hast du ein Notizbuch oder Skizzenbuch dabei? Was landet darin?",
+    "es": "¿Llevas contigo una libreta o un cuaderno de bocetos? ¿Qué acaba dentro?",
+    "fr": "As-tu toujours un carnet sur toi ? Qu'est-ce qui finit dedans ?",
+    "it": "Porti con te un taccuino o uno sketchbook? Che cosa ci finisce dentro?",
+    "pt": "Andas com um caderno ou caderno de esboços? O que vai parar lá dentro?",
+    "pt_BR": "Você anda com um caderno ou sketchbook? O que acaba indo parar nele?"
+   }
+  },
+  {
+   "id": "drawing-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Which cartoons or comics did you grow up with?",
+    "de": "Mit welchen Zeichentrickfilmen oder Comics bist du aufgewachsen?",
+    "es": "¿Con qué dibujos animados o cómics creciste?",
+    "fr": "Avec quels dessins animés ou quelles BD as-tu grandi ?",
+    "it": "Con quali cartoni animati o fumetti sei cresciuto?",
+    "pt": "Com que desenhos animados ou bandas desenhadas cresceste?",
+    "pt_BR": "Com quais desenhos animados ou quadrinhos você cresceu?"
+   }
+  },
+  {
+   "id": "drawing-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Where do you feel most comfortable drawing: at home, in a café or outdoors?",
+    "de": "Wo zeichnest du am entspanntesten: zu Hause, im Café oder draußen?",
+    "es": "¿Dónde te sientes más a gusto dibujando: en casa, en un café o al aire libre?",
+    "fr": "Où te sens-tu le plus à l'aise pour dessiner : chez toi, au café ou dehors ?",
+    "it": "Dove ti senti più a tuo agio a disegnare: a casa, al bar o all'aperto?",
+    "pt": "Onde te sentes mais à vontade a desenhar: em casa, num café ou ao ar livre?",
+    "pt_BR": "Onde você se sente mais à vontade desenhando: em casa, num café ou ao ar livre?"
+   }
+  },
+  {
+   "id": "drawing-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you doodle during phone calls? What kind of shapes appear?",
+    "de": "Kritzelst du beim Telefonieren? Welche Formen entstehen da?",
+    "es": "¿Garabateas mientras hablas por teléfono? ¿Qué formas te salen?",
+    "fr": "Gribouilles-tu au téléphone ? Quelles formes apparaissent ?",
+    "it": "Scarabocchi mentre sei al telefono? Che forme vengono fuori?",
+    "pt": "Rabiscas enquanto falas ao telefone? Que formas aparecem?",
+    "pt_BR": "Você rabisca enquanto fala ao telefone? Que formas aparecem?"
+   }
+  },
+  {
+   "id": "drawing-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Which place in your city would you love to sketch?",
+    "de": "Welchen Ort in deiner Stadt würdest du gern skizzieren?",
+    "es": "¿Qué lugar de tu ciudad te encantaría dibujar?",
+    "fr": "Quel endroit de ta ville aimerais-tu croquer ?",
+    "it": "Quale luogo della tua città ti piacerebbe disegnare?",
+    "pt": "Que sítio da tua cidade adorarias desenhar?",
+    "pt_BR": "Qual lugar da sua cidade você adoraria desenhar?"
+   }
+  },
+  {
+   "id": "drawing-011",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you draw to show someone from another country your culture?",
+    "de": "Was würdest du zeichnen, um jemandem aus einem anderen Land deine Kultur zu zeigen?",
+    "es": "¿Qué dibujarías para mostrar tu cultura a alguien de otro país?",
+    "fr": "Que dessinerais-tu pour montrer ta culture à quelqu'un d'un autre pays ?",
+    "it": "Che cosa disegneresti per mostrare la tua cultura a qualcuno di un altro Paese?",
+    "pt": "O que desenharias para mostrar a tua cultura a alguém de outro país?",
+    "pt_BR": "O que você desenharia pra mostrar sua cultura a alguém de outro país?"
+   }
+  },
+  {
+   "id": "drawing-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer drawing real things or things from your imagination?",
+    "de": "Zeichnest du lieber echte Dinge oder Dinge aus deiner Fantasie?",
+    "es": "¿Prefieres dibujar cosas reales o cosas salidas de tu imaginación?",
+    "fr": "Tu préfères dessiner des choses réelles ou sorties de ton imagination ?",
+    "it": "Preferisci disegnare cose reali o cose nate dalla tua immaginazione?",
+    "pt": "Preferes desenhar coisas reais ou saídas da tua imaginação?",
+    "pt_BR": "Você prefere desenhar coisas reais ou saídas da sua imaginação?"
+   }
+  },
+  {
+   "id": "drawing-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Which comic, manga or picture book do you love for its drawings?",
+    "de": "Welchen Comic, Manga oder welches Bilderbuch liebst du wegen der Zeichnungen?",
+    "es": "¿Qué cómic, manga o libro ilustrado te encanta por sus dibujos?",
+    "fr": "Quelle BD, quel manga ou quel album illustré adores-tu pour ses dessins ?",
+    "it": "Quale fumetto, manga o libro illustrato ami per i suoi disegni?",
+    "pt": "Que banda desenhada, manga ou livro ilustrado adoras pelos desenhos?",
+    "pt_BR": "Qual quadrinho, mangá ou livro ilustrado você adora pelos desenhos?"
+   }
+  },
+  {
+   "id": "drawing-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the drawing you remember being proudest of?",
+    "de": "An welche Zeichnung erinnerst du dich, auf die du besonders stolz warst?",
+    "es": "¿Cuál es el dibujo del que recuerdas haberte sentido más orgulloso?",
+    "fr": "De quel dessin te souviens-tu avoir été le plus fier ?",
+    "it": "Qual è il disegno di cui ricordi di essere stato più orgoglioso?",
+    "pt": "Qual é o desenho de que te lembras de ter tido mais orgulho?",
+    "pt_BR": "Qual é o desenho de que você lembra de ter sentido mais orgulho?"
+   }
+  },
+  {
+   "id": "drawing-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think drawing comes more from talent or from practice?",
+    "de": "Glaubst du, Zeichnen kommt eher von Talent oder von Übung?",
+    "es": "¿Crees que dibujar bien depende más del talento o de la práctica?",
+    "fr": "Penses-tu que le dessin vient plutôt du talent ou de la pratique ?",
+    "it": "Pensi che saper disegnare dipenda più dal talento o dalla pratica?",
+    "pt": "Achas que desenhar vem mais do talento ou da prática?",
+    "pt_BR": "Você acha que desenhar bem vem mais do talento ou da prática?"
+   }
+  },
+  {
+   "id": "drawing-016",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could illustrate any book, which one would you choose?",
+    "de": "Wenn du ein beliebiges Buch illustrieren könntest, welches würdest du wählen?",
+    "es": "Si pudieras ilustrar cualquier libro, ¿cuál elegirías?",
+    "fr": "Si tu pouvais illustrer n'importe quel livre, lequel choisirais-tu ?",
+    "it": "Se potessi illustrare un libro qualsiasi, quale sceglieresti?",
+    "pt": "Se pudesses ilustrar qualquer livro, qual escolherias?",
+    "pt_BR": "Se você pudesse ilustrar qualquer livro, qual escolheria?"
+   }
+  },
+  {
+   "id": "drawing-017",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel while you draw: calm, focused or playful?",
+    "de": "Wie fühlst du dich beim Zeichnen: ruhig, konzentriert oder verspielt?",
+    "es": "¿Cómo te sientes mientras dibujas: tranquilo, concentrado o juguetón?",
+    "fr": "Comment te sens-tu quand tu dessines : calme, concentré ou joueur ?",
+    "it": "Come ti senti mentre disegni: calmo, concentrato o giocoso?",
+    "pt": "Como te sentes enquanto desenhas: calmo, concentrado ou brincalhão?",
+    "pt_BR": "Como você se sente enquanto desenha: calmo, concentrado ou brincalhão?"
+   }
+  },
+  {
+   "id": "drawing-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal is your favourite to draw, or would you like to try?",
+    "de": "Welches Tier zeichnest du am liebsten, oder würdest du gern ausprobieren?",
+    "es": "¿Qué animal es tu favorito para dibujar, o cuál te gustaría probar?",
+    "fr": "Quel animal préfères-tu dessiner, ou aimerais-tu essayer ?",
+    "it": "Qual è il tuo animale preferito da disegnare, o quale vorresti provare?",
+    "pt": "Qual é o teu animal preferido para desenhar, ou qual gostavas de experimentar?",
+    "pt_BR": "Qual é o seu animal favorito pra desenhar, ou qual gostaria de tentar?"
+   }
+  },
+  {
+   "id": "drawing-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like detailed drawings or simple, minimal ones?",
+    "de": "Magst du detailreiche Zeichnungen oder schlichte, minimalistische?",
+    "es": "¿Te gustan los dibujos detallados o los sencillos y minimalistas?",
+    "fr": "Tu aimes les dessins détaillés ou simples et minimalistes ?",
+    "it": "Ti piacciono i disegni ricchi di dettagli o quelli semplici e minimal?",
+    "pt": "Gostas de desenhos detalhados ou simples e minimalistas?",
+    "pt_BR": "Você curte desenhos detalhados ou simples e minimalistas?"
+   }
+  },
+  {
+   "id": "drawing-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather draw people or places? What makes them interesting to you?",
+    "de": "Zeichnest du lieber Menschen oder Orte? Was macht sie für dich spannend?",
+    "es": "¿Prefieres dibujar personas o lugares? ¿Qué te resulta interesante de ellos?",
+    "fr": "Tu préfères dessiner des gens ou des lieux ? Qu'est-ce qui les rend intéressants pour toi ?",
+    "it": "Preferisci disegnare persone o luoghi? Che cosa li rende interessanti per te?",
+    "pt": "Preferes desenhar pessoas ou lugares? O que os torna interessantes para ti?",
+    "pt_BR": "Você prefere desenhar pessoas ou lugares? O que eles têm de interessante pra você?"
+   }
+  },
+  {
+   "id": "drawing-021",
+   "lv": "any",
+   "i18n": {
+    "en": "If you made a cartoon version of yourself, what would it look like?",
+    "de": "Wenn du eine Cartoon-Version von dir selbst zeichnen würdest, wie sähe sie aus?",
+    "es": "Si hicieras una versión de ti en dibujo animado, ¿cómo sería?",
+    "fr": "Si tu faisais une version de toi en dessin animé, à quoi ressemblerait-elle ?",
+    "it": "Se facessi una versione di te stesso in stile cartoon, come sarebbe?",
+    "pt": "Se fizesses uma versão de ti em desenho animado, como seria?",
+    "pt_BR": "Se você fizesse uma versão sua em desenho animado, como ela seria?"
+   }
+  },
+  {
+   "id": "drawing-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Which famous drawing or sketch do you find fascinating?",
+    "de": "Welche berühmte Zeichnung oder Skizze findest du faszinierend?",
+    "es": "¿Qué dibujo o boceto famoso te parece fascinante?",
+    "fr": "Quel dessin ou quelle esquisse célèbre te fascine ?",
+    "it": "Quale disegno o schizzo famoso trovi affascinante?",
+    "pt": "Que desenho ou esboço famoso achas fascinante?",
+    "pt_BR": "Qual desenho ou esboço famoso você acha fascinante?"
+   }
+  },
+  {
+   "id": "drawing-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy drawing alone, or is it more fun with others around?",
+    "de": "Zeichnest du lieber allein, oder macht es mit anderen mehr Spaß?",
+    "es": "¿Disfrutas dibujando a solas o es más divertido con otras personas cerca?",
+    "fr": "Aimes-tu dessiner seul, ou est-ce plus amusant entouré d'autres personnes ?",
+    "it": "Ti piace disegnare da solo o è più divertente in compagnia?",
+    "pt": "Gostas de desenhar sozinho ou é mais divertido com outras pessoas por perto?",
+    "pt_BR": "Você gosta de desenhar sozinho ou é mais divertido com outras pessoas por perto?"
+   }
+  },
+  {
+   "id": "drawing-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of music helps you focus when you are creating?",
+    "de": "Welche Musik hilft dir, dich beim kreativen Arbeiten zu konzentrieren?",
+    "es": "¿Qué tipo de música te ayuda a concentrarte cuando creas?",
+    "fr": "Quel genre de musique t'aide à te concentrer quand tu crées ?",
+    "it": "Che tipo di musica ti aiuta a concentrarti quando crei?",
+    "pt": "Que tipo de música te ajuda a concentrar quando estás a criar?",
+    "pt_BR": "Que tipo de música te ajuda a se concentrar quando você está criando?"
+   }
+  },
+  {
+   "id": "drawing-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Which object on your desk right now would be fun to draw?",
+    "de": "Welcher Gegenstand auf deinem Schreibtisch wäre gerade lustig zu zeichnen?",
+    "es": "¿Qué objeto de tu mesa sería divertido dibujar ahora mismo?",
+    "fr": "Quel objet sur ton bureau serait amusant à dessiner en ce moment ?",
+    "it": "Quale oggetto sulla tua scrivania sarebbe divertente disegnare adesso?",
+    "pt": "Que objeto na tua secretária seria giro desenhar agora?",
+    "pt_BR": "Qual objeto da sua mesa seria divertido desenhar agora?"
+   }
+  },
+  {
+   "id": "drawing-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever drawn a map of a place you love? What was on it?",
+    "de": "Hast du schon einmal eine Karte von einem Ort gezeichnet, den du liebst? Was war darauf?",
+    "es": "¿Alguna vez has dibujado un mapa de un lugar que te encanta? ¿Qué había en él?",
+    "fr": "As-tu déjà dessiné la carte d'un endroit que tu aimes ? Qu'y avait-il dessus ?",
+    "it": "Hai mai disegnato la mappa di un posto che ami? Che cosa c'era?",
+    "pt": "Já desenhaste um mapa de um sítio de que gostas muito? O que tinha?",
+    "pt_BR": "Você já desenhou um mapa de um lugar que ama? O que tinha nele?"
+   }
+  },
+  {
+   "id": "drawing-027",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you put on a postcard you drew yourself?",
+    "de": "Was würdest du auf eine selbst gezeichnete Postkarte malen?",
+    "es": "¿Qué pondrías en una postal dibujada por ti?",
+    "fr": "Que mettrais-tu sur une carte postale dessinée de ta main ?",
+    "it": "Che cosa metteresti su una cartolina disegnata da te?",
+    "pt": "O que porias num postal desenhado por ti?",
+    "pt_BR": "O que você colocaria num cartão-postal desenhado por você?"
+   }
+  },
+  {
+   "id": "drawing-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer drawing on paper or on a screen? Why?",
+    "de": "Zeichnest du lieber auf Papier oder auf einem Bildschirm? Warum?",
+    "es": "¿Prefieres dibujar en papel o en una pantalla? ¿Por qué?",
+    "fr": "Tu préfères dessiner sur papier ou sur écran ? Pourquoi ?",
+    "it": "Preferisci disegnare su carta o su uno schermo? Perché?",
+    "pt": "Preferes desenhar em papel ou num ecrã? Porquê?",
+    "pt_BR": "Você prefere desenhar no papel ou na tela? Por quê?"
+   }
+  },
+  {
+   "id": "drawing-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of drawing would you love to hang on your wall?",
+    "de": "Was für eine Zeichnung würdest du dir gern an die Wand hängen?",
+    "es": "¿Qué tipo de dibujo te encantaría colgar en tu pared?",
+    "fr": "Quel genre de dessin aimerais-tu accrocher à ton mur ?",
+    "it": "Che tipo di disegno ti piacerebbe appendere alla parete?",
+    "pt": "Que tipo de desenho adorarias pendurar na tua parede?",
+    "pt_BR": "Que tipo de desenho você adoraria pendurar na sua parede?"
+   }
+  },
+  {
+   "id": "drawing-030",
+   "lv": "any",
+   "i18n": {
+    "en": "If you added one colour to a black and white drawing, which would it be?",
+    "de": "Wenn du einer Schwarz-Weiß-Zeichnung eine einzige Farbe hinzufügen dürftest, welche wäre es?",
+    "es": "Si añadieras un solo color a un dibujo en blanco y negro, ¿cuál sería?",
+    "fr": "Si tu ajoutais une seule couleur à un dessin en noir et blanc, laquelle serait-ce ?",
+    "it": "Se aggiungessi un solo colore a un disegno in bianco e nero, quale sarebbe?",
+    "pt": "Se acrescentasses uma única cor a um desenho a preto e branco, qual seria?",
+    "pt_BR": "Se você colocasse uma única cor num desenho em preto e branco, qual seria?"
+   }
+  },
+  {
+   "id": "drawing-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What story from your life would make a great little comic?",
+    "de": "Welche Geschichte aus deinem Leben würde einen tollen kleinen Comic ergeben?",
+    "es": "¿Qué historia de tu vida daría para un cómic corto genial?",
+    "fr": "Quelle histoire de ta vie ferait une super petite BD ?",
+    "it": "Quale storia della tua vita diventerebbe un bel fumetto breve?",
+    "pt": "Que história da tua vida dava uma ótima banda desenhada curta?",
+    "pt_BR": "Que história da sua vida daria um quadrinho curto incrível?"
+   }
+  },
+  {
+   "id": "drawing-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Which traditional patterns from your culture do you find beautiful?",
+    "de": "Welche traditionellen Muster aus deiner Kultur findest du schön?",
+    "es": "¿Qué motivos o patrones tradicionales de tu cultura te parecen bonitos?",
+    "fr": "Quels motifs traditionnels de ta culture trouves-tu beaux ?",
+    "it": "Quali motivi decorativi tradizionali della tua cultura trovi belli?",
+    "pt": "Que padrões tradicionais da tua cultura achas bonitos?",
+    "pt_BR": "Quais padrões tradicionais da sua cultura você acha bonitos?"
+   }
+  },
+  {
+   "id": "drawing-033",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you like to spend a quiet evening, and could drawing fit in?",
+    "de": "Wie verbringst du gern einen ruhigen Abend, und hätte Zeichnen darin Platz?",
+    "es": "¿Cómo te gusta pasar una tarde tranquila, y cabría el dibujo en ella?",
+    "fr": "Comment aimes-tu passer une soirée calme, et le dessin pourrait-il y trouver sa place ?",
+    "it": "Come ti piace passare una serata tranquilla, e il disegno ci starebbe bene?",
+    "pt": "Como gostas de passar uma noite tranquila, e o desenho caberia nela?",
+    "pt_BR": "Como você gosta de passar uma noite tranquila, e o desenho caberia nela?"
+   }
+  },
+  {
+   "id": "drawing-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Which is more fun for you: cartoons or realistic drawing?",
+    "de": "Was macht dir mehr Spaß: Cartoons oder realistisches Zeichnen?",
+    "es": "¿Qué te divierte más: el dibujo de caricatura o el realista?",
+    "fr": "Qu'est-ce qui t'amuse le plus : le dessin humoristique ou le dessin réaliste ?",
+    "it": "Che cosa ti diverte di più: i cartoon o il disegno realistico?",
+    "pt": "O que te diverte mais: desenho cartoon ou desenho realista?",
+    "pt_BR": "O que é mais divertido pra você: desenho cartum ou desenho realista?"
+   }
+  },
+  {
+   "id": "drawing-035",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could sit and draw anywhere in the world, where would it be?",
+    "de": "Wenn du dich irgendwo auf der Welt hinsetzen und zeichnen könntest, wo wäre das?",
+    "es": "Si pudieras sentarte a dibujar en cualquier lugar del mundo, ¿dónde sería?",
+    "fr": "Si tu pouvais t'asseoir pour dessiner n'importe où dans le monde, où serait-ce ?",
+    "it": "Se potessi sederti a disegnare in qualsiasi posto del mondo, dove sarebbe?",
+    "pt": "Se pudesses sentar-te a desenhar em qualquer lugar do mundo, onde seria?",
+    "pt_BR": "Se você pudesse sentar pra desenhar em qualquer lugar do mundo, onde seria?"
+   }
+  },
+  {
+   "id": "drawing-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you draw to cheer up a friend?",
+    "de": "Was würdest du zeichnen, um einen Freund aufzuheitern?",
+    "es": "¿Qué dibujarías para animar a un amigo?",
+    "fr": "Que dessinerais-tu pour remonter le moral d'un ami ?",
+    "it": "Che cosa disegneresti per tirare su di morale un amico?",
+    "pt": "O que desenharias para animar um amigo?",
+    "pt_BR": "O que você desenharia pra animar um amigo?"
+   }
+  },
+  {
+   "id": "drawing-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever kept a journal? Would you like to add drawings to it?",
+    "de": "Hast du schon mal ein Tagebuch geführt? Würdest du gern Zeichnungen hinzufügen?",
+    "es": "¿Has llevado alguna vez un diario? ¿Te gustaría añadirle dibujos?",
+    "fr": "As-tu déjà tenu un journal ? Aimerais-tu y ajouter des dessins ?",
+    "it": "Hai mai tenuto un diario? Ti piacerebbe aggiungerci dei disegni?",
+    "pt": "Já tiveste um diário? Gostavas de lhe acrescentar desenhos?",
+    "pt_BR": "Você já teve um diário? Gostaria de colocar desenhos nele?"
+   }
+  },
+  {
+   "id": "drawing-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Which everyday moment would you like to capture in a quick sketch?",
+    "de": "Welchen Alltagsmoment würdest du gern in einer schnellen Skizze festhalten?",
+    "es": "¿Qué momento cotidiano te gustaría capturar en un boceto rápido?",
+    "fr": "Quel moment du quotidien aimerais-tu saisir dans un croquis rapide ?",
+    "it": "Quale momento quotidiano ti piacerebbe catturare in uno schizzo veloce?",
+    "pt": "Que momento do dia a dia gostavas de captar num esboço rápido?",
+    "pt_BR": "Que momento do dia a dia você gostaria de registrar num esboço rápido?"
+   }
+  },
+  {
+   "id": "drawing-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you notice first in a drawing: the lines, the shading or the composition?",
+    "de": "Was fällt dir an einer Zeichnung zuerst auf: die Linien, die Schattierung oder die Komposition?",
+    "es": "¿En qué te fijas primero en un dibujo: las líneas, el sombreado o la composición?",
+    "fr": "Que remarques-tu en premier dans un dessin : les lignes, les ombres ou la composition ?",
+    "it": "Che cosa noti per primo in un disegno: le linee, il chiaroscuro o la composizione?",
+    "pt": "Em que reparas primeiro num desenho: nas linhas, no sombreado ou na composição?",
+    "pt_BR": "O que você nota primeiro num desenho: as linhas, o sombreamento ou a composição?"
+   }
+  },
+  {
+   "id": "drawing-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you hope drawing will bring into your life?",
+    "de": "Was soll das Zeichnen deiner Hoffnung nach in dein Leben bringen?",
+    "es": "¿Qué esperas que el dibujo aporte a tu vida?",
+    "fr": "Qu'espères-tu que le dessin t'apporte dans la vie ?",
+    "it": "Che cosa speri che il disegno porti nella tua vita?",
+    "pt": "O que esperas que o desenho traga à tua vida?",
+    "pt_BR": "O que você espera que o desenho traga pra sua vida?"
+   }
+  },
+  {
+   "id": "drawing-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which pencils or pens do you have at home right now?",
+    "de": "Welche Bleistifte oder Stifte hast du gerade zu Hause?",
+    "es": "¿Qué lápices o bolígrafos tienes ahora mismo en casa?",
+    "fr": "Quels crayons ou stylos as-tu chez toi en ce moment ?",
+    "it": "Quali matite o penne hai a casa in questo momento?",
+    "pt": "Que lápis ou canetas tens neste momento em casa?",
+    "pt_BR": "Quais lápis ou canetas você tem em casa agora?"
+   }
+  },
+  {
+   "id": "drawing-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What simple object will you draw first?",
+    "de": "Welchen einfachen Gegenstand wirst du als Erstes zeichnen?",
+    "es": "¿Qué objeto sencillo vas a dibujar primero?",
+    "fr": "Quel objet simple vas-tu dessiner en premier ?",
+    "it": "Quale oggetto semplice disegnerai per primo?",
+    "pt": "Que objeto simples vais desenhar primeiro?",
+    "pt_BR": "Qual objeto simples você vai desenhar primeiro?"
+   }
+  },
+  {
+   "id": "drawing-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How long could you draw each day: five, fifteen or thirty minutes?",
+    "de": "Wie lange könntest du jeden Tag zeichnen: fünf, fünfzehn oder dreißig Minuten?",
+    "es": "¿Cuánto tiempo podrías dibujar cada día: cinco, quince o treinta minutos?",
+    "fr": "Combien de temps pourrais-tu dessiner chaque jour : cinq, quinze ou trente minutes ?",
+    "it": "Quanto tempo potresti disegnare ogni giorno: cinque, quindici o trenta minuti?",
+    "pt": "Quanto tempo conseguirias desenhar por dia: cinco, quinze ou trinta minutos?",
+    "pt_BR": "Quanto tempo você conseguiria desenhar por dia: cinco, quinze ou trinta minutos?"
+   }
+  },
+  {
+   "id": "drawing-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you find straight lines or curves easier to draw?",
+    "de": "Fallen dir gerade Linien oder Kurven leichter?",
+    "es": "¿Te resultan más fáciles las líneas rectas o las curvas?",
+    "fr": "Trouves-tu plus facile de tracer des lignes droites ou des courbes ?",
+    "it": "Ti vengono più facili le linee dritte o le curve?",
+    "pt": "Achas mais fácil desenhar linhas retas ou curvas?",
+    "pt_BR": "Você acha mais fácil desenhar linhas retas ou curvas?"
+   }
+  },
+  {
+   "id": "drawing-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you tried drawing without looking at the paper? How did it feel?",
+    "de": "Hast du schon mal gezeichnet, ohne aufs Papier zu schauen? Wie war das?",
+    "es": "¿Has probado a dibujar sin mirar el papel? ¿Qué tal fue?",
+    "fr": "As-tu déjà essayé de dessiner sans regarder la feuille ? Qu'as-tu ressenti ?",
+    "it": "Hai mai provato a disegnare senza guardare il foglio? Com'è stato?",
+    "pt": "Já experimentaste desenhar sem olhar para o papel? Como foi?",
+    "pt_BR": "Você já tentou desenhar sem olhar pro papel? Como foi?"
+   }
+  },
+  {
+   "id": "drawing-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What frustrates you most when you draw, and what helps?",
+    "de": "Was frustriert dich beim Zeichnen am meisten, und was hilft dir dann?",
+    "es": "¿Qué es lo que más te frustra al dibujar, y qué te ayuda?",
+    "fr": "Qu'est-ce qui te frustre le plus quand tu dessines, et qu'est-ce qui t'aide ?",
+    "it": "Che cosa ti frustra di più quando disegni, e che cosa ti aiuta?",
+    "pt": "O que mais te frustra quando desenhas, e o que te ajuda?",
+    "pt_BR": "O que mais te frustra quando você desenha, e o que ajuda?"
+   }
+  },
+  {
+   "id": "drawing-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which shading style appeals to you most: hatching, stippling or smooth blending?",
+    "de": "Welche Schattierungsart gefällt dir am besten: Schraffur, Punktieren oder weiches Verwischen?",
+    "es": "¿Qué tipo de sombreado te atrae más: el rayado, el punteado o el difuminado suave?",
+    "fr": "Quel type d'ombrage te plaît le plus : hachures, pointillés ou estompe douce ?",
+    "it": "Quale tipo di ombreggiatura ti piace di più: tratteggio, puntinato o sfumato morbido?",
+    "pt": "Que tipo de sombreado te atrai mais: tracejado, pontilhado ou esbatido suave?",
+    "pt_BR": "Qual tipo de sombreamento te atrai mais: hachura, pontilhismo ou esfumado suave?"
+   }
+  },
+  {
+   "id": "drawing-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you like to try charcoal? What draws you to it?",
+    "de": "Würdest du gern Kohle ausprobieren? Was reizt dich daran?",
+    "es": "¿Te gustaría probar el carboncillo? ¿Qué te atrae de él?",
+    "fr": "Aimerais-tu essayer le fusain ? Qu'est-ce qui t'attire ?",
+    "it": "Ti piacerebbe provare il carboncino? Che cosa ti attira?",
+    "pt": "Gostavas de experimentar carvão? O que te atrai nele?",
+    "pt_BR": "Você gostaria de experimentar carvão? O que te atrai nele?"
+   }
+  },
+  {
+   "id": "drawing-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you find harder: getting proportions right or shading?",
+    "de": "Was findest du schwieriger: die richtigen Proportionen oder das Schattieren?",
+    "es": "¿Qué te cuesta más: acertar con las proporciones o sombrear?",
+    "fr": "Qu'est-ce que tu trouves le plus dur : les proportions ou les ombres ?",
+    "it": "Che cosa trovi più difficile: le proporzioni o le ombre?",
+    "pt": "O que achas mais difícil: acertar nas proporções ou sombrear?",
+    "pt_BR": "O que você acha mais difícil: acertar as proporções ou sombrear?"
+   }
+  },
+  {
+   "id": "drawing-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which drawing tip do you already know and use?",
+    "de": "Welchen Zeichentipp kennst du schon und wendest ihn auch an?",
+    "es": "¿Qué consejo de dibujo ya conoces y usas?",
+    "fr": "Quel conseil de dessin connais-tu déjà et appliques-tu ?",
+    "it": "Quale consiglio di disegno conosci già e metti in pratica?",
+    "pt": "Que dica de desenho já conheces e usas?",
+    "pt_BR": "Qual dica de desenho você já conhece e usa?"
+   }
+  },
+  {
+   "id": "drawing-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever drawn a self-portrait? How did it turn out?",
+    "de": "Hast du schon mal ein Selbstporträt gezeichnet? Wie ist es geworden?",
+    "es": "¿Alguna vez has dibujado un autorretrato? ¿Cómo te quedó?",
+    "fr": "As-tu déjà dessiné un autoportrait ? Comment était le résultat ?",
+    "it": "Hai mai disegnato un autoritratto? Com'è venuto?",
+    "pt": "Já desenhaste um autorretrato? Como ficou?",
+    "pt_BR": "Você já desenhou um autorretrato? Como ficou?"
+   }
+  },
+  {
+   "id": "drawing-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which room in your home would you like to draw in one-point perspective?",
+    "de": "Welches Zimmer bei dir würdest du gern in Zentralperspektive zeichnen?",
+    "es": "¿Qué habitación de tu casa te gustaría dibujar en perspectiva con un punto de fuga?",
+    "fr": "Quelle pièce de chez toi aimerais-tu dessiner en perspective à un point de fuite ?",
+    "it": "Quale stanza di casa tua ti piacerebbe disegnare in prospettiva centrale?",
+    "pt": "Que divisão da tua casa gostavas de desenhar em perspetiva com um ponto de fuga?",
+    "pt_BR": "Qual cômodo da sua casa você gostaria de desenhar em perspectiva com um ponto de fuga?"
+   }
+  },
+  {
+   "id": "drawing-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you erase a lot, or do you let your mistakes stay on the page?",
+    "de": "Radierst du viel, oder lässt du deine Fehler auf dem Blatt stehen?",
+    "es": "¿Borras mucho o dejas tus errores en el papel?",
+    "fr": "Gommes-tu beaucoup, ou laisses-tu tes erreurs sur la feuille ?",
+    "it": "Cancelli molto o lasci i tuoi errori sul foglio?",
+    "pt": "Apagas muito ou deixas os erros ficarem no papel?",
+    "pt_BR": "Você apaga muito ou deixa os erros ficarem no papel?"
+   }
+  },
+  {
+   "id": "drawing-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which texture would be fun to try first: fur, wood, glass or stone?",
+    "de": "Welche Oberfläche würdest du zuerst ausprobieren: Fell, Holz, Glas oder Stein?",
+    "es": "¿Qué textura te apetecería probar primero: pelo, madera, cristal o piedra?",
+    "fr": "Quelle texture aimerais-tu essayer en premier : fourrure, bois, verre ou pierre ?",
+    "it": "Quale texture ti piacerebbe provare per prima: pelliccia, legno, vetro o pietra?",
+    "pt": "Que textura te apetecia experimentar primeiro: pelo, madeira, vidro ou pedra?",
+    "pt_BR": "Qual textura você gostaria de testar primeiro: pelo, madeira, vidro ou pedra?"
+   }
+  },
+  {
+   "id": "drawing-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which part of the face do you think is hardest to draw?",
+    "de": "Welcher Teil des Gesichts ist deiner Meinung nach am schwierigsten zu zeichnen?",
+    "es": "¿Qué parte del rostro crees que es la más difícil de dibujar?",
+    "fr": "Quelle partie du visage te semble la plus difficile à dessiner ?",
+    "it": "Quale parte del viso pensi sia la più difficile da disegnare?",
+    "pt": "Que parte do rosto achas mais difícil de desenhar?",
+    "pt_BR": "Qual parte do rosto você acha mais difícil de desenhar?"
+   }
+  },
+  {
+   "id": "drawing-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which animal would you like to build out of simple shapes first?",
+    "de": "Welches Tier würdest du zuerst aus einfachen Formen aufbauen?",
+    "es": "¿Qué animal te gustaría construir primero con formas sencillas?",
+    "fr": "Quel animal aimerais-tu construire d'abord avec des formes simples ?",
+    "it": "Quale animale ti piacerebbe costruire per primo con forme semplici?",
+    "pt": "Que animal gostavas de construir primeiro com formas simples?",
+    "pt_BR": "Qual animal você gostaria de montar primeiro com formas simples?"
+   }
+  },
+  {
+   "id": "drawing-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where could you keep your sketchbook so you draw more often?",
+    "de": "Wo könntest du dein Skizzenbuch hinlegen, damit du öfter zeichnest?",
+    "es": "¿Dónde podrías dejar tu cuaderno de bocetos para dibujar más a menudo?",
+    "fr": "Où pourrais-tu laisser ton carnet de croquis pour dessiner plus souvent ?",
+    "it": "Dove potresti tenere il tuo sketchbook per disegnare più spesso?",
+    "pt": "Onde podias deixar o teu caderno de esboços para desenhares mais vezes?",
+    "pt_BR": "Onde você poderia deixar seu sketchbook pra desenhar com mais frequência?"
+   }
+  },
+  {
+   "id": "drawing-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer drawing from photos or from real life? Why?",
+    "de": "Zeichnest du lieber nach Fotos oder nach der Wirklichkeit? Warum?",
+    "es": "¿Prefieres dibujar a partir de fotos o del natural? ¿Por qué?",
+    "fr": "Tu préfères dessiner d'après photo ou d'après nature ? Pourquoi ?",
+    "it": "Preferisci disegnare da foto o dal vero? Perché?",
+    "pt": "Preferes desenhar a partir de fotografias ou do natural? Porquê?",
+    "pt_BR": "Você prefere desenhar a partir de fotos ou observando ao vivo? Por quê?"
+   }
+  },
+  {
+   "id": "drawing-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which tree or plant near you would be fun to draw?",
+    "de": "Welcher Baum oder welche Pflanze in deiner Nähe wäre schön zu zeichnen?",
+    "es": "¿Qué árbol o planta cerca de ti sería divertido dibujar?",
+    "fr": "Quel arbre ou quelle plante près de chez toi serait amusant à dessiner ?",
+    "it": "Quale albero o pianta vicino a te sarebbe divertente disegnare?",
+    "pt": "Que árvore ou planta perto de ti seria giro desenhar?",
+    "pt_BR": "Qual árvore ou planta perto de você seria legal de desenhar?"
+   }
+  },
+  {
+   "id": "drawing-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you enjoy daily drawing prompts? What kind of prompts?",
+    "de": "Hättest du Spaß an täglichen Zeichenaufgaben? An welcher Art von Aufgaben?",
+    "es": "¿Te gustaría tener propuestas diarias de dibujo? ¿De qué tipo?",
+    "fr": "Aimerais-tu recevoir des idées de dessin chaque jour ? Lesquelles ?",
+    "it": "Ti piacerebbero degli spunti di disegno quotidiani? Di che tipo?",
+    "pt": "Gostavas de ter desafios de desenho diários? De que tipo?",
+    "pt_BR": "Você curtiria desafios diários de desenho? De que tipo?"
+   }
+  },
+  {
+   "id": "drawing-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which first drawing goal would make you proud this month?",
+    "de": "Welches erste Zeichenziel würde dich diesen Monat stolz machen?",
+    "es": "¿Qué primer objetivo de dibujo te haría sentir orgulloso este mes?",
+    "fr": "Quel premier objectif de dessin te rendrait fier ce mois-ci ?",
+    "it": "Quale primo obiettivo di disegno ti renderebbe orgoglioso questo mese?",
+    "pt": "Que primeiro objetivo de desenho te deixaria orgulhoso este mês?",
+    "pt_BR": "Qual primeira meta de desenho te deixaria orgulhoso este mês?"
+   }
+  },
+  {
+   "id": "drawing-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever copied a drawing you liked? What did you learn from it?",
+    "de": "Hast du schon mal eine Zeichnung abgezeichnet, die dir gefiel? Was hast du dabei gelernt?",
+    "es": "¿Alguna vez has copiado un dibujo que te gustaba? ¿Qué aprendiste?",
+    "fr": "As-tu déjà recopié un dessin qui te plaisait ? Qu'est-ce que ça t'a appris ?",
+    "it": "Hai mai copiato un disegno che ti piaceva? Che cosa hai imparato?",
+    "pt": "Já copiaste um desenho de que gostavas? O que aprendeste com isso?",
+    "pt_BR": "Você já copiou um desenho de que gostava? O que aprendeu com isso?"
+   }
+  },
+  {
+   "id": "drawing-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer quick little sketches or long, careful drawings?",
+    "de": "Magst du lieber schnelle kleine Skizzen oder lange, sorgfältige Zeichnungen?",
+    "es": "¿Prefieres bocetos rápidos y pequeños o dibujos largos y cuidadosos?",
+    "fr": "Tu préfères les petits croquis rapides ou les dessins longs et soignés ?",
+    "it": "Preferisci schizzi piccoli e veloci o disegni lunghi e accurati?",
+    "pt": "Preferes esboços pequenos e rápidos ou desenhos longos e cuidados?",
+    "pt_BR": "Você prefere esbocinhos rápidos ou desenhos longos e caprichados?"
+   }
+  },
+  {
+   "id": "drawing-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about showing your drawings to other people?",
+    "de": "Wie geht es dir damit, anderen deine Zeichnungen zu zeigen?",
+    "es": "¿Cómo te sientes al enseñar tus dibujos a otras personas?",
+    "fr": "Que ressens-tu à l'idée de montrer tes dessins à d'autres ?",
+    "it": "Come ti senti a mostrare i tuoi disegni ad altre persone?",
+    "pt": "Como te sentes ao mostrar os teus desenhos a outras pessoas?",
+    "pt_BR": "Como você se sente mostrando seus desenhos pra outras pessoas?"
+   }
+  },
+  {
+   "id": "drawing-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which simple scene from your day would you like to draw?",
+    "de": "Welche einfache Szene aus deinem Tag würdest du gern zeichnen?",
+    "es": "¿Qué escena sencilla de tu día te gustaría dibujar?",
+    "fr": "Quelle scène simple de ta journée aimerais-tu dessiner ?",
+    "it": "Quale scena semplice della tua giornata ti piacerebbe disegnare?",
+    "pt": "Que cena simples do teu dia gostavas de desenhar?",
+    "pt_BR": "Qual cena simples do seu dia você gostaria de desenhar?"
+   }
+  },
+  {
+   "id": "drawing-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you start a figure drawing: with a gesture line or with outlines?",
+    "de": "Wie beginnst du eine Figurenzeichnung: mit einer Bewegungslinie oder mit Umrissen?",
+    "es": "¿Cómo empiezas a dibujar una figura: con una línea de gesto o con contornos?",
+    "fr": "Comment commences-tu un dessin de personnage : par une ligne de mouvement ou par les contours ?",
+    "it": "Come inizi a disegnare una figura: con una linea di gesto o con i contorni?",
+    "pt": "Como começas a desenhar uma figura: com uma linha de gesto ou com contornos?",
+    "pt_BR": "Como você começa a desenhar uma figura: com uma linha de gesto ou com contornos?"
+   }
+  },
+  {
+   "id": "drawing-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which do you find trickier to draw: hands or feet?",
+    "de": "Was findest du kniffliger zu zeichnen: Hände oder Füße?",
+    "es": "¿Qué te resulta más complicado de dibujar: las manos o los pies?",
+    "fr": "Qu'est-ce qui est le plus délicat à dessiner pour toi : les mains ou les pieds ?",
+    "it": "Che cosa trovi più difficile da disegnare: le mani o i piedi?",
+    "pt": "O que achas mais complicado de desenhar: mãos ou pés?",
+    "pt_BR": "O que você acha mais complicado de desenhar: mãos ou pés?"
+   }
+  },
+  {
+   "id": "drawing-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried sketching on location in your city? What did you draw?",
+    "de": "Hast du schon vor Ort in deiner Stadt skizziert? Was hast du gezeichnet?",
+    "es": "¿Has probado a dibujar al natural por tu ciudad? ¿Qué dibujaste?",
+    "fr": "As-tu déjà dessiné sur le vif dans ta ville ? Qu'as-tu dessiné ?",
+    "it": "Hai mai provato a disegnare dal vero in giro per la tua città? Che cosa hai disegnato?",
+    "pt": "Já experimentaste desenhar ao vivo na tua cidade? O que desenhaste?",
+    "pt_BR": "Você já desenhou ao vivo pela sua cidade? O que desenhou?"
+   }
+  },
+  {
+   "id": "drawing-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which medium beyond pencil do you enjoy most: ink, charcoal, pastels or markers?",
+    "de": "Welches Medium außer Bleistift magst du am liebsten: Tusche, Kohle, Pastell oder Marker?",
+    "es": "Aparte del lápiz, ¿qué medio disfrutas más: tinta, carboncillo, pastel o rotuladores?",
+    "fr": "À part le crayon, quel médium préfères-tu : encre, fusain, pastel ou feutres ?",
+    "it": "Oltre alla matita, quale tecnica ti piace di più: inchiostro, carboncino, pastelli o pennarelli?",
+    "pt": "Além do lápis, que meio gostas mais: tinta-da-china, carvão, pastel ou marcadores?",
+    "pt_BR": "Além do lápis, qual material você mais curte: nanquim, carvão, pastel ou marcadores?"
+   }
+  },
+  {
+   "id": "drawing-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you plan the composition of a drawing before you start?",
+    "de": "Wie planst du die Komposition einer Zeichnung, bevor du anfängst?",
+    "es": "¿Cómo planificas la composición de un dibujo antes de empezar?",
+    "fr": "Comment prépares-tu la composition d'un dessin avant de commencer ?",
+    "it": "Come pianifichi la composizione di un disegno prima di iniziare?",
+    "pt": "Como planeias a composição de um desenho antes de começar?",
+    "pt_BR": "Como você planeja a composição de um desenho antes de começar?"
+   }
+  },
+  {
+   "id": "drawing-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which perspective challenge gives you the most trouble?",
+    "de": "Welche Perspektiv-Herausforderung macht dir am meisten zu schaffen?",
+    "es": "¿Qué reto de perspectiva te da más problemas?",
+    "fr": "Quel défi de perspective te pose le plus de difficultés ?",
+    "it": "Quale sfida di prospettiva ti mette più in difficoltà?",
+    "pt": "Que desafio de perspetiva te dá mais dores de cabeça?",
+    "pt_BR": "Qual desafio de perspectiva te dá mais dor de cabeça?"
+   }
+  },
+  {
+   "id": "drawing-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "If you created a comic, what would your main character be like?",
+    "de": "Wenn du einen Comic erschaffen würdest, wie wäre deine Hauptfigur?",
+    "es": "Si crearas un cómic, ¿cómo sería tu personaje principal?",
+    "fr": "Si tu créais une BD, à quoi ressemblerait ton personnage principal ?",
+    "it": "Se creassi un fumetto, come sarebbe il tuo personaggio principale?",
+    "pt": "Se criasses uma banda desenhada, como seria a tua personagem principal?",
+    "pt_BR": "Se você criasse um quadrinho, como seria seu personagem principal?"
+   }
+  },
+  {
+   "id": "drawing-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What helps you capture a likeness when you draw a portrait?",
+    "de": "Was hilft dir, beim Porträtzeichnen die Ähnlichkeit zu treffen?",
+    "es": "¿Qué te ayuda a lograr el parecido cuando dibujas un retrato?",
+    "fr": "Qu'est-ce qui t'aide à saisir la ressemblance quand tu dessines un portrait ?",
+    "it": "Che cosa ti aiuta a cogliere la somiglianza quando disegni un ritratto?",
+    "pt": "O que te ajuda a conseguir a semelhança quando desenhas um retrato?",
+    "pt_BR": "O que te ajuda a acertar a semelhança quando você desenha um retrato?"
+   }
+  },
+  {
+   "id": "drawing-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you prefer fast gesture drawings or long studies of one pose?",
+    "de": "Magst du lieber schnelle Gestenzeichnungen oder lange Studien einer Pose?",
+    "es": "¿Prefieres los dibujos de gesto rápidos o los estudios largos de una pose?",
+    "fr": "Tu préfères les croquis de mouvement rapides ou les longues études d'une pose ?",
+    "it": "Preferisci i disegni di gesto veloci o gli studi lunghi di una posa?",
+    "pt": "Preferes desenhos de gesto rápidos ou estudos longos de uma pose?",
+    "pt_BR": "Você prefere desenhos de gesto rápidos ou estudos longos de uma pose?"
+   }
+  },
+  {
+   "id": "drawing-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Whose sketchbooks would you love to look through, and why?",
+    "de": "In wessen Skizzenbüchern würdest du gern blättern, und warum?",
+    "es": "¿Los cuadernos de bocetos de quién te encantaría hojear, y por qué?",
+    "fr": "Dans les carnets de qui aimerais-tu feuilleter, et pourquoi ?",
+    "it": "Di chi ti piacerebbe sfogliare gli sketchbook, e perché?",
+    "pt": "Os cadernos de esboços de quem adorarias folhear, e porquê?",
+    "pt_BR": "Os sketchbooks de quem você adoraria folhear, e por quê?"
+   }
+  },
+  {
+   "id": "drawing-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What story would you tell in a four-panel comic strip?",
+    "de": "Welche Geschichte würdest du in einem Comicstrip mit vier Bildern erzählen?",
+    "es": "¿Qué historia contarías en una tira cómica de cuatro viñetas?",
+    "fr": "Quelle histoire raconterais-tu dans un strip de quatre cases ?",
+    "it": "Quale storia racconteresti in una striscia a fumetti di quattro vignette?",
+    "pt": "Que história contarias numa tira de banda desenhada com quatro vinhetas?",
+    "pt_BR": "Que história você contaria numa tirinha de quatro quadros?"
+   }
+  },
+  {
+   "id": "drawing-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you build up your collection of visual references?",
+    "de": "Wie baust du deine Sammlung an visuellen Referenzen auf?",
+    "es": "¿Cómo vas creando tu colección de referencias visuales?",
+    "fr": "Comment construis-tu ta collection de références visuelles ?",
+    "it": "Come costruisci la tua raccolta di riferimenti visivi?",
+    "pt": "Como vais construindo a tua coleção de referências visuais?",
+    "pt_BR": "Como você vai montando sua coleção de referências visuais?"
+   }
+  },
+  {
+   "id": "drawing-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which animal is hardest for you to draw, and why?",
+    "de": "Welches Tier fällt dir am schwersten zu zeichnen, und warum?",
+    "es": "¿Qué animal te cuesta más dibujar, y por qué?",
+    "fr": "Quel animal est le plus difficile à dessiner pour toi, et pourquoi ?",
+    "it": "Quale animale trovi più difficile da disegnare, e perché?",
+    "pt": "Que animal te custa mais desenhar, e porquê?",
+    "pt_BR": "Qual animal é mais difícil de desenhar pra você, e por quê?"
+   }
+  },
+  {
+   "id": "drawing-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever drawn while travelling? What did you capture?",
+    "de": "Hast du schon einmal auf Reisen gezeichnet? Was hast du festgehalten?",
+    "es": "¿Has dibujado alguna vez durante un viaje? ¿Qué captaste?",
+    "fr": "As-tu déjà dessiné en voyage ? Qu'as-tu saisi ?",
+    "it": "Hai mai disegnato durante un viaggio? Che cosa hai catturato?",
+    "pt": "Já desenhaste em viagem? O que captaste?",
+    "pt_BR": "Você já desenhou durante uma viagem? O que registrou?"
+   }
+  },
+  {
+   "id": "drawing-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you do when a drawing starts to look stiff?",
+    "de": "Was machst du, wenn eine Zeichnung anfängt, steif zu wirken?",
+    "es": "¿Qué haces cuando un dibujo empieza a verse rígido?",
+    "fr": "Que fais-tu quand un dessin commence à paraître figé ?",
+    "it": "Che cosa fai quando un disegno comincia a sembrare rigido?",
+    "pt": "O que fazes quando um desenho começa a parecer rígido?",
+    "pt_BR": "O que você faz quando um desenho começa a ficar duro?"
+   }
+  },
+  {
+   "id": "drawing-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you like adding colour to your drawings, or do you prefer black and white?",
+    "de": "Gibst du deinen Zeichnungen gern Farbe, oder magst du lieber Schwarz-Weiß?",
+    "es": "¿Te gusta añadir color a tus dibujos o prefieres el blanco y negro?",
+    "fr": "Aimes-tu ajouter de la couleur à tes dessins, ou préfères-tu le noir et blanc ?",
+    "it": "Ti piace aggiungere colore ai tuoi disegni o preferisci il bianco e nero?",
+    "pt": "Gostas de dar cor aos teus desenhos ou preferes o preto e branco?",
+    "pt_BR": "Você gosta de colorir seus desenhos ou prefere preto e branco?"
+   }
+  },
+  {
+   "id": "drawing-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which drawing exercise has helped you the most so far?",
+    "de": "Welche Zeichenübung hat dir bisher am meisten geholfen?",
+    "es": "¿Qué ejercicio de dibujo te ha ayudado más hasta ahora?",
+    "fr": "Quel exercice de dessin t'a le plus aidé jusqu'ici ?",
+    "it": "Quale esercizio di disegno ti ha aiutato di più finora?",
+    "pt": "Que exercício de desenho te ajudou mais até agora?",
+    "pt_BR": "Qual exercício de desenho mais te ajudou até agora?"
+   }
+  },
+  {
+   "id": "drawing-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you decide what to leave out of a drawing?",
+    "de": "Wie entscheidest du, was du in einer Zeichnung weglässt?",
+    "es": "¿Cómo decides qué dejar fuera de un dibujo?",
+    "fr": "Comment décides-tu de ce que tu laisses de côté dans un dessin ?",
+    "it": "Come decidi che cosa lasciare fuori da un disegno?",
+    "pt": "Como decides o que deixar de fora num desenho?",
+    "pt_BR": "Como você decide o que deixar de fora de um desenho?"
+   }
+  },
+  {
+   "id": "drawing-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which imaginary place would you love to draw in detail?",
+    "de": "Welchen erfundenen Ort würdest du gern detailliert zeichnen?",
+    "es": "¿Qué lugar imaginario te encantaría dibujar con detalle?",
+    "fr": "Quel lieu imaginaire aimerais-tu dessiner en détail ?",
+    "it": "Quale luogo immaginario ti piacerebbe disegnare nei dettagli?",
+    "pt": "Que lugar imaginário adorarias desenhar em pormenor?",
+    "pt_BR": "Qual lugar imaginário você adoraria desenhar com detalhes?"
+   }
+  },
+  {
+   "id": "drawing-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you use light and shadow to make a drawing more dramatic?",
+    "de": "Wie setzt du Licht und Schatten ein, um eine Zeichnung dramatischer zu machen?",
+    "es": "¿Cómo usas la luz y la sombra para dar más dramatismo a un dibujo?",
+    "fr": "Comment utilises-tu l'ombre et la lumière pour rendre un dessin plus spectaculaire ?",
+    "it": "Come usi luci e ombre per rendere un disegno più drammatico?",
+    "pt": "Como usas a luz e a sombra para dar mais dramatismo a um desenho?",
+    "pt_BR": "Como você usa luz e sombra pra deixar um desenho mais dramático?"
+   }
+  },
+  {
+   "id": "drawing-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you describe your drawing style today?",
+    "de": "Wie würdest du deinen heutigen Zeichenstil beschreiben?",
+    "es": "¿Cómo describirías tu estilo de dibujo hoy en día?",
+    "fr": "Comment décrirais-tu ton style de dessin aujourd'hui ?",
+    "it": "Come descriveresti oggi il tuo stile di disegno?",
+    "pt": "Como descreverias hoje o teu estilo de desenho?",
+    "pt_BR": "Como você descreveria hoje o seu estilo de desenho?"
+   }
+  },
+  {
+   "id": "drawing-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which master's drawings have influenced you the most?",
+    "de": "Welche Zeichnungen eines großen Meisters haben dich am meisten beeinflusst?",
+    "es": "¿Los dibujos de qué gran maestro te han influido más?",
+    "fr": "Les dessins de quel grand maître t'ont le plus influencé ?",
+    "it": "I disegni di quale grande maestro ti hanno influenzato di più?",
+    "pt": "Os desenhos de que grande mestre mais te influenciaram?",
+    "pt_BR": "Os desenhos de qual grande mestre mais te influenciaram?"
+   }
+  },
+  {
+   "id": "drawing-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you approach foreshortening in a dynamic pose?",
+    "de": "Wie gehst du bei einer dynamischen Pose an die Verkürzung heran?",
+    "es": "¿Cómo abordas el escorzo en una pose dinámica?",
+    "fr": "Comment abordes-tu le raccourci dans une pose dynamique ?",
+    "it": "Come affronti lo scorcio in una posa dinamica?",
+    "pt": "Como abordas o escorço numa pose dinâmica?",
+    "pt_BR": "Como você encara o escorço numa pose dinâmica?"
+   }
+  },
+  {
+   "id": "drawing-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you think makes a character design memorable?",
+    "de": "Was macht deiner Meinung nach ein Charakterdesign unvergesslich?",
+    "es": "¿Qué crees que hace que el diseño de un personaje sea memorable?",
+    "fr": "Selon toi, qu'est-ce qui rend un design de personnage mémorable ?",
+    "it": "Secondo te, che cosa rende memorabile il design di un personaggio?",
+    "pt": "O que achas que torna o design de uma personagem memorável?",
+    "pt_BR": "O que você acha que torna o design de um personagem marcante?"
+   }
+  },
+  {
+   "id": "drawing-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you tried storyboarding? What did you enjoy about it?",
+    "de": "Hast du schon mal Storyboards gezeichnet? Was hat dir daran gefallen?",
+    "es": "¿Has probado a hacer storyboards? ¿Qué te gustó?",
+    "fr": "As-tu déjà réalisé un storyboard ? Qu'est-ce qui t'a plu ?",
+    "it": "Hai mai provato a fare storyboard? Che cosa ti è piaciuto?",
+    "pt": "Já experimentaste fazer storyboards? O que gostaste?",
+    "pt_BR": "Você já tentou fazer storyboard? Do que gostou?"
+   }
+  },
+  {
+   "id": "drawing-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "At this stage, are you drawn more to realism or to expressive drawing? Why?",
+    "de": "Zieht es dich im Moment eher zum Realismus oder zum ausdrucksstarken Zeichnen? Warum?",
+    "es": "En esta etapa, ¿te atrae más el realismo o el dibujo expresivo? ¿Por qué?",
+    "fr": "À ce stade, es-tu plus attiré par le réalisme ou par le dessin expressif ? Pourquoi ?",
+    "it": "In questa fase ti attira di più il realismo o il disegno espressivo? Perché?",
+    "pt": "Nesta fase, atrai-te mais o realismo ou o desenho expressivo? Porquê?",
+    "pt_BR": "Nesta fase, você se sente mais atraído pelo realismo ou pelo desenho expressivo? Por quê?"
+   }
+  },
+  {
+   "id": "drawing-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you keep a drawing fresh after many hours of work?",
+    "de": "Wie hältst du eine Zeichnung nach vielen Stunden Arbeit lebendig?",
+    "es": "¿Cómo mantienes un dibujo fresco tras muchas horas de trabajo?",
+    "fr": "Comment gardes-tu un dessin vivant après de longues heures de travail ?",
+    "it": "Come mantieni un disegno fresco dopo molte ore di lavoro?",
+    "pt": "Como manténs um desenho fresco depois de muitas horas de trabalho?",
+    "pt_BR": "Como você mantém um desenho com frescor depois de muitas horas de trabalho?"
+   }
+  },
+  {
+   "id": "drawing-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which big drawing project would you love to complete one day?",
+    "de": "Welches große Zeichenprojekt würdest du gern eines Tages abschließen?",
+    "es": "¿Qué gran proyecto de dibujo te encantaría completar algún día?",
+    "fr": "Quel grand projet de dessin aimerais-tu mener à bien un jour ?",
+    "it": "Quale grande progetto di disegno ti piacerebbe portare a termine un giorno?",
+    "pt": "Que grande projeto de desenho adorarias concluir um dia?",
+    "pt_BR": "Qual grande projeto de desenho você adoraria concluir um dia?"
+   }
+  },
+  {
+   "id": "drawing-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What questions do you ask yourself when you critique your own drawings?",
+    "de": "Welche Fragen stellst du dir, wenn du deine eigenen Zeichnungen kritisch betrachtest?",
+    "es": "¿Qué preguntas te haces cuando analizas tus propios dibujos?",
+    "fr": "Quelles questions te poses-tu quand tu critiques tes propres dessins ?",
+    "it": "Quali domande ti fai quando valuti i tuoi disegni?",
+    "pt": "Que perguntas fazes a ti mesmo quando analisas os teus desenhos?",
+    "pt_BR": "Que perguntas você se faz quando avalia os próprios desenhos?"
+   }
+  },
+  {
+   "id": "drawing-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which tools, traditional or digital, feel most like you now?",
+    "de": "Welche Werkzeuge, analog oder digital, passen inzwischen am besten zu dir?",
+    "es": "¿Qué herramientas, tradicionales o digitales, sientes más tuyas ahora?",
+    "fr": "Quels outils, traditionnels ou numériques, te ressemblent le plus aujourd'hui ?",
+    "it": "Quali strumenti, tradizionali o digitali, senti più tuoi adesso?",
+    "pt": "Que ferramentas, tradicionais ou digitais, sentes mais tuas agora?",
+    "pt_BR": "Quais ferramentas, tradicionais ou digitais, mais combinam com você agora?"
+   }
+  },
+  {
+   "id": "drawing-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance practice studies with your own creative projects?",
+    "de": "Wie bringst du Übungsstudien und eigene kreative Projekte ins Gleichgewicht?",
+    "es": "¿Cómo equilibras los estudios de práctica con tus propios proyectos creativos?",
+    "fr": "Comment équilibres-tu les études d'entraînement et tes projets créatifs personnels ?",
+    "it": "Come bilanci gli studi di esercizio con i tuoi progetti creativi?",
+    "pt": "Como equilibras os estudos de prática com os teus próprios projetos criativos?",
+    "pt_BR": "Como você equilibra os estudos de prática com seus próprios projetos criativos?"
+   }
+  },
+  {
+   "id": "drawing-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would a portfolio of your best drawings look like?",
+    "de": "Wie würde eine Mappe mit deinen besten Zeichnungen aussehen?",
+    "es": "¿Cómo sería un portafolio con tus mejores dibujos?",
+    "fr": "À quoi ressemblerait un portfolio de tes meilleurs dessins ?",
+    "it": "Come sarebbe un portfolio con i tuoi disegni migliori?",
+    "pt": "Como seria um portefólio com os teus melhores desenhos?",
+    "pt_BR": "Como seria um portfólio com seus melhores desenhos?"
+   }
+  },
+  {
+   "id": "drawing-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which drawing habit would you like to keep for life?",
+    "de": "Welche Zeichengewohnheit möchtest du ein Leben lang beibehalten?",
+    "es": "¿Qué hábito de dibujo te gustaría mantener toda la vida?",
+    "fr": "Quelle habitude de dessin aimerais-tu garder toute ta vie ?",
+    "it": "Quale abitudine di disegno vorresti mantenere per tutta la vita?",
+    "pt": "Que hábito de desenho gostavas de manter para a vida toda?",
+    "pt_BR": "Qual hábito de desenho você gostaria de manter pra vida toda?"
+   }
+  },
+  {
+   "id": "drawing-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has drawing changed the way you notice things around you?",
+    "de": "Wie hat das Zeichnen verändert, wie du die Dinge um dich herum wahrnimmst?",
+    "es": "¿Cómo ha cambiado el dibujo tu forma de fijarte en lo que te rodea?",
+    "fr": "Comment le dessin a-t-il changé ta façon de remarquer ce qui t'entoure ?",
+    "it": "Come ha cambiato il disegno il tuo modo di notare ciò che ti circonda?",
+    "pt": "Como mudou o desenho a forma como reparas no que te rodeia?",
+    "pt_BR": "Como o desenho mudou o jeito como você repara nas coisas ao seu redor?"
+   }
+  },
+  {
+   "id": "drawing-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you say to someone who believes they simply can't draw?",
+    "de": "Was würdest du jemandem sagen, der glaubt, er könne einfach nicht zeichnen?",
+    "es": "¿Qué le dirías a alguien que cree que simplemente no sabe dibujar?",
+    "fr": "Que dirais-tu à quelqu'un qui pense ne pas savoir dessiner du tout ?",
+    "it": "Che cosa diresti a chi pensa di non saper proprio disegnare?",
+    "pt": "O que dirias a alguém que acha que simplesmente não sabe desenhar?",
+    "pt_BR": "O que você diria pra alguém que acha que simplesmente não sabe desenhar?"
+   }
+  }
+ ]
+}

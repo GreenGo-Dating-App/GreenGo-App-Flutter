@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 111,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: past and subordinate clauses",
+     "g": "Recap the Perfekt, the Präteritum of sein, haben and modals, and clauses with weil, dass, wenn and als.",
+     "p": [
+      "Perfekt: haben or sein + participle at the end. Präteritum for war, hatte, konnte, musste in speech too.",
+      "Weil, dass, wenn, als and ob send the conjugated verb to the end: ..., weil ich krank war.",
+      "Als for one past event, wenn for repeated or future ones. If the clause comes first, the main verb follows straight away."
+     ],
+     "q": "Tell me about a special day in your past: what happened, how was it and why do you remember it?",
+     "c": "Write a short story of six sentences with one Perfekt with sein, war or hatte, and weil, dass and als."
+    },
+    "de": {
+     "t": "Wiederholung: Vergangenheit und Nebensätze",
+     "g": "Du wiederholst das Perfekt, das Präteritum von sein, haben und Modalverben und Nebensätze mit weil, dass, wenn und als.",
+     "p": [
+      "Perfekt: haben oder sein + Partizip am Ende. Präteritum für war, hatte, konnte, musste, auch beim Sprechen.",
+      "Weil, dass, wenn, als und ob schicken das konjugierte Verb ans Ende: ..., weil ich krank war.",
+      "Als für ein einmaliges Ereignis, wenn für Wiederholtes oder Zukünftiges. Steht der Nebensatz vorne, folgt sofort das Verb."
+     ],
+     "q": "Erzähl mir von einem besonderen Tag in deiner Vergangenheit: Was ist passiert, wie war es, und warum erinnerst du dich daran?",
+     "c": "Schreib eine kurze Geschichte in sechs Sätzen mit einem Perfekt mit sein, mit war oder hatte und mit weil, dass und als."
+    },
+    "es": {
+     "t": "Repaso: pasado y subordinadas",
+     "g": "Repasa el Perfekt, el Präteritum de sein, haben y los modales, y las subordinadas con weil, dass, wenn y als.",
+     "p": [
+      "Perfekt: haben o sein + participio al final. Präteritum para war, hatte, konnte, musste, también al hablar.",
+      "Weil, dass, wenn, als y ob mandan el verbo conjugado al final: ..., weil ich krank war.",
+      "Als para un hecho único del pasado, wenn para lo repetido o futuro. Si la subordinada va delante, sigue el verbo principal."
+     ],
+     "q": "Háblame de un día especial de tu pasado: ¿qué pasó, cómo fue y por qué lo recuerdas?",
+     "c": "Escribe una historia de seis frases con un Perfekt con sein, war o hatte, y weil, dass y als."
+    },
+    "fr": {
+     "t": "Révision : passé et subordonnées",
+     "g": "Réviser le Perfekt, le prétérit de sein, haben et des modaux, et les subordonnées avec weil, dass, wenn et als.",
+     "p": [
+      "Perfekt : haben ou sein + participe à la fin. Prétérit pour war, hatte, konnte, musste, même à l'oral.",
+      "Weil, dass, wenn, als et ob renvoient le verbe conjugué à la fin : ..., weil ich krank war.",
+      "Als pour un fait unique du passé, wenn pour ce qui se répète ou viendra. Subordonnée en tête : le verbe principal suit aussitôt."
+     ],
+     "q": "Parle-moi d'un jour spécial de ton passé : que s'est-il passé, comment c'était et pourquoi t'en souviens-tu ?",
+     "c": "Écris une histoire de six phrases avec un Perfekt avec sein, war ou hatte, et weil, dass et als."
+    },
+    "it": {
+     "t": "Ripasso: passato e subordinate",
+     "g": "Ripassi il Perfekt, il Präteritum di sein, haben e dei modali, e le subordinate con weil, dass, wenn e als.",
+     "p": [
+      "Perfekt: haben o sein + participio alla fine. Präteritum per war, hatte, konnte, musste, anche parlando.",
+      "Weil, dass, wenn, als e ob mandano il verbo coniugato alla fine: ..., weil ich krank war.",
+      "Als per un fatto unico del passato, wenn per fatti ripetuti o futuri. Se la subordinata è prima, segue subito il verbo principale."
+     ],
+     "q": "Raccontami un giorno speciale del tuo passato: che cosa è successo, com'è stato e perché lo ricordi?",
+     "c": "Scrivi una storia di sei frasi con un Perfekt con sein, war o hatte, e weil, dass e als."
+    },
+    "pt": {
+     "t": "Revisão: passado e subordinadas",
+     "g": "Rever o Perfekt, o Präteritum de sein, haben e dos modais, e as subordinadas com weil, dass, wenn e als.",
+     "p": [
+      "Perfekt: haben ou sein + particípio no fim. Präteritum para war, hatte, konnte, musste, também a falar.",
+      "Weil, dass, wenn, als e ob mandam o verbo conjugado para o fim: ..., weil ich krank war.",
+      "Als para um facto único do passado, wenn para o que se repete ou é futuro. Subordinada à frente: o verbo principal vem logo."
+     ],
+     "q": "Fala-me de um dia especial do teu passado: o que aconteceu, como foi e porque te lembras dele?",
+     "c": "Escreve uma história de seis frases com um Perfekt com sein, war ou hatte, e weil, dass e als."
+    },
+    "pt_BR": {
+     "t": "Revisão: passado e subordinadas",
+     "g": "Revisar o Perfekt, o Präteritum de sein, haben e dos modais, e as subordinadas com weil, dass, wenn e als.",
+     "p": [
+      "Perfekt: haben ou sein + particípio no final. Präteritum para war, hatte, konnte, musste, também na fala.",
+      "Weil, dass, wenn, als e ob mandam o verbo conjugado para o final: ..., weil ich krank war.",
+      "Als para um fato único do passado, wenn para o que se repete ou é futuro. Subordinada na frente: o verbo principal vem logo."
+     ],
+     "q": "Me fale de um dia especial do seu passado: o que aconteceu, como foi e por que você se lembra dele?",
+     "c": "Escreva uma história de seis frases com um Perfekt com sein, war ou hatte, e weil, dass e als."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich erinnern an",
+      "ex": "Ich erinnere mich gern an diesen Tag."
+     },
+     {
+      "w": "besonders",
+      "ex": "Das war ein besonderer Tag für mich."
+     },
+     {
+      "w": "passieren",
+      "ex": "Was ist dann passiert?"
+     },
+     {
+      "w": "plötzlich",
+      "ex": "Plötzlich hat es angefangen zu regnen."
+     },
+     {
+      "w": "endlich",
+      "ex": "Endlich sind wir angekommen."
+     },
+     {
+      "w": "leider",
+      "ex": "Leider musste ich früh nach Hause gehen."
+     }
+    ],
+    "gram": "Als ich in Rom war, habe ich viel gesehen. Ich glaube, dass es toll war, weil ich Zeit hatte. Verb im Nebensatz am Ende."
+   }
+  },
+  {
+   "d": 112,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Adjective endings after der",
+     "g": "Use the weak adjective endings after der, die, das: der alte Mann, die neue Stadt.",
+     "p": [
+      "After the definite article, the adjective takes only -e or -en. Nominative singular: der alte Mann, die neue Stadt, das kleine Haus.",
+      "Accusative feminine and neuter are like nominative: die neue Stadt, das kleine Haus. Masculine: den alten Mann.",
+      "Everything else is -en: dem alten Mann, der neuen Stadt, die kleinen Häuser. Same after dieser, jeder, welcher."
+     ],
+     "q": "Describe three things in your room with der, die or das and an adjective, for example der rote Stuhl.",
+     "c": "Write six phrases with der/die/das + adjective + noun, then use two of them in the accusative and two in the dative."
+    },
+    "de": {
+     "t": "Adjektivendungen nach der",
+     "g": "Du benutzt die schwachen Adjektivendungen nach der, die, das: der alte Mann, die neue Stadt.",
+     "p": [
+      "Nach dem bestimmten Artikel hat das Adjektiv nur -e oder -en. Nominativ Singular: der alte Mann, die neue Stadt, das kleine Haus.",
+      "Akkusativ feminin und neutral wie im Nominativ: die neue Stadt, das kleine Haus. Maskulin: den alten Mann.",
+      "Sonst immer -en: dem alten Mann, der neuen Stadt, die kleinen Häuser. Genauso nach dieser, jeder, welcher."
+     ],
+     "q": "Beschreib drei Dinge in deinem Zimmer mit der, die oder das und einem Adjektiv, zum Beispiel der rote Stuhl.",
+     "c": "Schreib sechs Ausdrücke mit der/die/das + Adjektiv + Nomen und benutze zwei im Akkusativ und zwei im Dativ."
+    },
+    "es": {
+     "t": "Terminaciones del adjetivo tras der",
+     "g": "Usa las terminaciones débiles del adjetivo tras der, die, das: der alte Mann, die neue Stadt.",
+     "p": [
+      "Tras el artículo definido, el adjetivo solo lleva -e o -en. Nominativo singular: der alte Mann, die neue Stadt, das kleine Haus.",
+      "En acusativo, femenino y neutro como el nominativo: die neue Stadt, das kleine Haus. Masculino: den alten Mann.",
+      "El resto, siempre -en: dem alten Mann, der neuen Stadt, die kleinen Häuser. Igual tras dieser, jeder, welcher."
+     ],
+     "q": "Describe tres cosas de tu habitación con der, die o das y un adjetivo, por ejemplo der rote Stuhl.",
+     "c": "Escribe seis grupos der/die/das + adjetivo + sustantivo y usa dos en acusativo y dos en dativo."
+    },
+    "fr": {
+     "t": "Terminaisons de l'adjectif après der",
+     "g": "Utiliser les terminaisons faibles de l'adjectif après der, die, das : der alte Mann, die neue Stadt.",
+     "p": [
+      "Après l'article défini, l'adjectif prend seulement -e ou -en. Nominatif singulier : der alte Mann, die neue Stadt, das kleine Haus.",
+      "À l'accusatif, féminin et neutre comme au nominatif : die neue Stadt, das kleine Haus. Masculin : den alten Mann.",
+      "Partout ailleurs -en : dem alten Mann, der neuen Stadt, die kleinen Häuser. Pareil après dieser, jeder, welcher."
+     ],
+     "q": "Décris trois objets de ta chambre avec der, die ou das et un adjectif, par exemple der rote Stuhl.",
+     "c": "Écris six groupes der/die/das + adjectif + nom, puis utilises-en deux à l'accusatif et deux au datif."
+    },
+    "it": {
+     "t": "Desinenze dell'aggettivo dopo der",
+     "g": "Usi le desinenze deboli dell'aggettivo dopo der, die, das: der alte Mann, die neue Stadt.",
+     "p": [
+      "Dopo l'articolo determinativo l'aggettivo prende solo -e o -en. Nominativo singolare: der alte Mann, die neue Stadt, das kleine Haus.",
+      "All'accusativo femminile e neutro come al nominativo: die neue Stadt, das kleine Haus. Maschile: den alten Mann.",
+      "In tutti gli altri casi -en: dem alten Mann, der neuen Stadt, die kleinen Häuser. Lo stesso dopo dieser, jeder, welcher."
+     ],
+     "q": "Descrivi tre oggetti della tua stanza con der, die o das e un aggettivo, per esempio der rote Stuhl.",
+     "c": "Scrivi sei gruppi der/die/das + aggettivo + nome e usane due all'accusativo e due al dativo."
+    },
+    "pt": {
+     "t": "Terminações do adjetivo depois de der",
+     "g": "Usar as terminações fracas do adjetivo depois de der, die, das: der alte Mann, die neue Stadt.",
+     "p": [
+      "Depois do artigo definido, o adjetivo leva só -e ou -en. Nominativo singular: der alte Mann, die neue Stadt, das kleine Haus.",
+      "No acusativo, feminino e neutro como no nominativo: die neue Stadt, das kleine Haus. Masculino: den alten Mann.",
+      "Em todo o resto, -en: dem alten Mann, der neuen Stadt, die kleinen Häuser. O mesmo depois de dieser, jeder, welcher."
+     ],
+     "q": "Descreve três coisas do teu quarto com der, die ou das e um adjetivo, por exemplo der rote Stuhl.",
+     "c": "Escreve seis grupos der/die/das + adjetivo + nome e usa dois no acusativo e dois no dativo."
+    },
+    "pt_BR": {
+     "t": "Terminações do adjetivo depois de der",
+     "g": "Usar as terminações fracas do adjetivo depois de der, die, das: der alte Mann, die neue Stadt.",
+     "p": [
+      "Depois do artigo definido, o adjetivo leva só -e ou -en. Nominativo singular: der alte Mann, die neue Stadt, das kleine Haus.",
+      "No acusativo, feminino e neutro ficam como no nominativo: die neue Stadt, das kleine Haus. Masculino: den alten Mann.",
+      "No resto, sempre -en: dem alten Mann, der neuen Stadt, die kleinen Häuser. O mesmo depois de dieser, jeder, welcher."
+     ],
+     "q": "Descreva três coisas do seu quarto com der, die ou das e um adjetivo, por exemplo der rote Stuhl.",
+     "c": "Escreva seis grupos der/die/das + adjetivo + substantivo e use dois no acusativo e dois no dativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der alte Mann",
+      "ex": "Der alte Mann wohnt neben uns."
+     },
+     {
+      "w": "die neue Stadt",
+      "ex": "Die neue Stadt gefällt mir sehr."
+     },
+     {
+      "w": "das kleine Haus",
+      "ex": "Wir kaufen das kleine Haus am See."
+     },
+     {
+      "w": "den roten Pullover",
+      "ex": "Ich nehme den roten Pullover."
+     },
+     {
+      "w": "mit dem neuen Auto",
+      "ex": "Er fährt mit dem neuen Auto zur Arbeit."
+     },
+     {
+      "w": "die jungen Leute",
+      "ex": "Die jungen Leute tanzen im Park."
+     }
+    ],
+    "gram": "Nach der/die/das: -e (Nom. Sg., Akk. f/n) sonst -en: der alte Mann, den alten Mann, dem alten Mann, die alten Männer."
+   }
+  },
+  {
+   "d": 113,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Adjective endings after ein",
+     "g": "Use the mixed adjective endings after ein, kein and mein: ein alter Mann, eine neue Stadt.",
+     "p": [
+      "Ein has no ending in three places, so the adjective shows the gender: ein alter Mann, ein kleines Haus.",
+      "Feminine takes -e: eine neue Stadt. Accusative masculine: einen alten Mann. Neuter stays: ein kleines Haus.",
+      "In the dative and plural it is -en again: mit einem alten Freund, in einer neuen Stadt, meine guten Freunde."
+     ],
+     "q": "Describe a person you like with ein or eine and two adjectives: Sie ist eine fröhliche Frau mit einem tollen Lachen.",
+     "c": "Describe your home with five phrases using ein, eine, mein or kein + adjective + noun."
+    },
+    "de": {
+     "t": "Adjektivendungen nach ein",
+     "g": "Du benutzt die gemischten Adjektivendungen nach ein, kein und mein: ein alter Mann, eine neue Stadt.",
+     "p": [
+      "Ein hat an drei Stellen keine Endung, deshalb zeigt das Adjektiv das Genus: ein alter Mann, ein kleines Haus.",
+      "Feminin mit -e: eine neue Stadt. Akkusativ maskulin: einen alten Mann. Neutral bleibt: ein kleines Haus.",
+      "Im Dativ und Plural wieder -en: mit einem alten Freund, in einer neuen Stadt, meine guten Freunde."
+     ],
+     "q": "Beschreib eine Person, die du magst, mit ein oder eine und zwei Adjektiven: Sie ist eine fröhliche Frau mit einem tollen Lachen.",
+     "c": "Beschreib deine Wohnung mit fünf Ausdrücken mit ein, eine, mein oder kein + Adjektiv + Nomen."
+    },
+    "es": {
+     "t": "Terminaciones del adjetivo tras ein",
+     "g": "Usa las terminaciones mixtas tras ein, kein y mein: ein alter Mann, eine neue Stadt.",
+     "p": [
+      "Ein no tiene terminación en tres casos, así que el adjetivo muestra el género: ein alter Mann, ein kleines Haus.",
+      "El femenino lleva -e: eine neue Stadt. Acusativo masculino: einen alten Mann. El neutro no cambia: ein kleines Haus.",
+      "En dativo y plural vuelve -en: mit einem alten Freund, in einer neuen Stadt, meine guten Freunde."
+     ],
+     "q": "Describe a una persona que aprecias con ein o eine y dos adjetivos: Sie ist eine fröhliche Frau mit einem tollen Lachen.",
+     "c": "Describe tu casa con cinco grupos con ein, eine, mein o kein + adjetivo + sustantivo."
+    },
+    "fr": {
+     "t": "Terminaisons de l'adjectif après ein",
+     "g": "Utiliser les terminaisons mixtes après ein, kein et mein : ein alter Mann, eine neue Stadt.",
+     "p": [
+      "Ein n'a pas de terminaison à trois endroits, donc l'adjectif montre le genre : ein alter Mann, ein kleines Haus.",
+      "Féminin en -e : eine neue Stadt. Accusatif masculin : einen alten Mann. Le neutre ne change pas : ein kleines Haus.",
+      "Au datif et au pluriel, c'est de nouveau -en : mit einem alten Freund, in einer neuen Stadt, meine guten Freunde."
+     ],
+     "q": "Décris une personne que tu aimes bien avec ein ou eine et deux adjectifs : Sie ist eine fröhliche Frau mit einem tollen Lachen.",
+     "c": "Décris ton logement avec cinq groupes ein, eine, mein ou kein + adjectif + nom."
+    },
+    "it": {
+     "t": "Desinenze dell'aggettivo dopo ein",
+     "g": "Usi le desinenze miste dopo ein, kein e mein: ein alter Mann, eine neue Stadt.",
+     "p": [
+      "Ein in tre casi non ha desinenza, quindi è l'aggettivo a mostrare il genere: ein alter Mann, ein kleines Haus.",
+      "Il femminile prende -e: eine neue Stadt. Accusativo maschile: einen alten Mann. Il neutro resta: ein kleines Haus.",
+      "Al dativo e al plurale si torna a -en: mit einem alten Freund, in einer neuen Stadt, meine guten Freunde."
+     ],
+     "q": "Descrivi una persona a cui vuoi bene con ein o eine e due aggettivi: Sie ist eine fröhliche Frau mit einem tollen Lachen.",
+     "c": "Descrivi la tua casa con cinque gruppi ein, eine, mein o kein + aggettivo + nome."
+    },
+    "pt": {
+     "t": "Terminações do adjetivo depois de ein",
+     "g": "Usar as terminações mistas depois de ein, kein e mein: ein alter Mann, eine neue Stadt.",
+     "p": [
+      "Ein não tem terminação em três casos, por isso é o adjetivo que mostra o género: ein alter Mann, ein kleines Haus.",
+      "O feminino leva -e: eine neue Stadt. Acusativo masculino: einen alten Mann. O neutro não muda: ein kleines Haus.",
+      "No dativo e no plural volta o -en: mit einem alten Freund, in einer neuen Stadt, meine guten Freunde."
+     ],
+     "q": "Descreve uma pessoa de quem gostas com ein ou eine e dois adjetivos: Sie ist eine fröhliche Frau mit einem tollen Lachen.",
+     "c": "Descreve a tua casa com cinco grupos ein, eine, mein ou kein + adjetivo + nome."
+    },
+    "pt_BR": {
+     "t": "Terminações do adjetivo depois de ein",
+     "g": "Usar as terminações mistas depois de ein, kein e mein: ein alter Mann, eine neue Stadt.",
+     "p": [
+      "Ein fica sem terminação em três casos, então o adjetivo mostra o gênero: ein alter Mann, ein kleines Haus.",
+      "O feminino leva -e: eine neue Stadt. Acusativo masculino: einen alten Mann. O neutro não muda: ein kleines Haus.",
+      "No dativo e no plural volta o -en: mit einem alten Freund, in einer neuen Stadt, meine guten Freunde."
+     ],
+     "q": "Descreva uma pessoa de quem você gosta com ein ou eine e dois adjetivos: Sie ist eine fröhliche Frau mit einem tollen Lachen.",
+     "c": "Descreva sua casa com cinco grupos ein, eine, mein ou kein + adjetivo + substantivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ein alter Mann",
+      "ex": "Ein alter Mann sitzt auf der Bank."
+     },
+     {
+      "w": "eine neue Stadt",
+      "ex": "Berlin ist für mich eine neue Stadt."
+     },
+     {
+      "w": "ein kleines Haus",
+      "ex": "Wir haben ein kleines Haus mit Garten."
+     },
+     {
+      "w": "einen guten Freund",
+      "ex": "Ich habe einen guten Freund in Bern."
+     },
+     {
+      "w": "mit einer netten Frau",
+      "ex": "Ich habe mit einer netten Frau gesprochen."
+     },
+     {
+      "w": "meine besten Freunde",
+      "ex": "Meine besten Freunde wohnen in München."
+     }
+    ],
+    "gram": "Nach ein/kein/mein: ein alter Mann, eine neue Stadt, ein kleines Haus; Akk. einen alten Mann; Dativ und Plural -en."
+   }
+  },
+  {
+   "d": 114,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Adjectives without article",
+     "g": "Use strong adjective endings when there is no article: frisches Brot, kaltes Wasser.",
+     "p": [
+      "Without an article, the adjective takes the ending the article would have: der becomes -er, die -e, das -es.",
+      "Examples: guter Wein, frische Milch, kaltes Wasser, and plural: rote Äpfel. Common on menus and in shops.",
+      "In the accusative masculine it is -en: Ich trinke heißen Tee. In the dative: mit kaltem Wasser, mit frischer Milch."
+     ],
+     "q": "What do you like for breakfast? Answer with adjectives without an article, for example frisches Brot und heißen Kaffee.",
+     "c": "Write a small menu for a café with six items, each with an adjective and no article, like warmer Apfelkuchen."
+    },
+    "de": {
+     "t": "Adjektive ohne Artikel",
+     "g": "Du benutzt die starken Adjektivendungen, wenn kein Artikel steht: frisches Brot, kaltes Wasser.",
+     "p": [
+      "Ohne Artikel übernimmt das Adjektiv die Endung des Artikels: der wird -er, die -e, das -es.",
+      "Beispiele: guter Wein, frische Milch, kaltes Wasser und im Plural rote Äpfel. Typisch auf Speisekarten und im Laden.",
+      "Akkusativ maskulin -en: Ich trinke heißen Tee. Dativ: mit kaltem Wasser, mit frischer Milch."
+     ],
+     "q": "Was isst du gern zum Frühstück? Antworte mit Adjektiven ohne Artikel, zum Beispiel frisches Brot und heißen Kaffee.",
+     "c": "Schreib eine kleine Café-Speisekarte mit sechs Angeboten, jedes mit Adjektiv ohne Artikel, wie warmer Apfelkuchen."
+    },
+    "es": {
+     "t": "Adjetivos sin artículo",
+     "g": "Usa las terminaciones fuertes del adjetivo cuando no hay artículo: frisches Brot, kaltes Wasser.",
+     "p": [
+      "Sin artículo, el adjetivo toma la terminación del artículo: der pasa a -er, die a -e, das a -es.",
+      "Ejemplos: guter Wein, frische Milch, kaltes Wasser y en plural rote Äpfel. Muy típico en cartas y tiendas.",
+      "En acusativo masculino es -en: Ich trinke heißen Tee. En dativo: mit kaltem Wasser, mit frischer Milch."
+     ],
+     "q": "¿Qué te gusta desayunar? Responde con adjetivos sin artículo, por ejemplo frisches Brot und heißen Kaffee.",
+     "c": "Escribe una pequeña carta de café con seis productos, cada uno con un adjetivo y sin artículo, como warmer Apfelkuchen."
+    },
+    "fr": {
+     "t": "Adjectifs sans article",
+     "g": "Utiliser les terminaisons fortes de l'adjectif quand il n'y a pas d'article : frisches Brot, kaltes Wasser.",
+     "p": [
+      "Sans article, l'adjectif prend la terminaison de l'article : der donne -er, die -e, das -es.",
+      "Exemples : guter Wein, frische Milch, kaltes Wasser, et au pluriel rote Äpfel. Très courant sur les menus et en magasin.",
+      "À l'accusatif masculin c'est -en : Ich trinke heißen Tee. Au datif : mit kaltem Wasser, mit frischer Milch."
+     ],
+     "q": "Qu'aimes-tu au petit-déjeuner ? Réponds avec des adjectifs sans article, par exemple frisches Brot und heißen Kaffee.",
+     "c": "Écris une petite carte de café avec six produits, chacun avec un adjectif sans article, comme warmer Apfelkuchen."
+    },
+    "it": {
+     "t": "Aggettivi senza articolo",
+     "g": "Usi le desinenze forti dell'aggettivo quando non c'è l'articolo: frisches Brot, kaltes Wasser.",
+     "p": [
+      "Senza articolo, l'aggettivo prende la desinenza dell'articolo: der diventa -er, die -e, das -es.",
+      "Esempi: guter Wein, frische Milch, kaltes Wasser e al plurale rote Äpfel. Tipico nei menù e nei negozi.",
+      "All'accusativo maschile è -en: Ich trinke heißen Tee. Al dativo: mit kaltem Wasser, mit frischer Milch."
+     ],
+     "q": "Che cosa ti piace a colazione? Rispondi con aggettivi senza articolo, per esempio frisches Brot und heißen Kaffee.",
+     "c": "Scrivi un piccolo menù da bar con sei proposte, ognuna con un aggettivo senza articolo, come warmer Apfelkuchen."
+    },
+    "pt": {
+     "t": "Adjetivos sem artigo",
+     "g": "Usar as terminações fortes do adjetivo quando não há artigo: frisches Brot, kaltes Wasser.",
+     "p": [
+      "Sem artigo, o adjetivo fica com a terminação do artigo: der dá -er, die dá -e, das dá -es.",
+      "Exemplos: guter Wein, frische Milch, kaltes Wasser e no plural rote Äpfel. Muito comum em ementas e lojas.",
+      "No acusativo masculino é -en: Ich trinke heißen Tee. No dativo: mit kaltem Wasser, mit frischer Milch."
+     ],
+     "q": "O que gostas de comer ao pequeno-almoço? Responde com adjetivos sem artigo, por exemplo frisches Brot und heißen Kaffee.",
+     "c": "Escreve uma pequena ementa de café com seis produtos, cada um com um adjetivo sem artigo, como warmer Apfelkuchen."
+    },
+    "pt_BR": {
+     "t": "Adjetivos sem artigo",
+     "g": "Usar as terminações fortes do adjetivo quando não há artigo: frisches Brot, kaltes Wasser.",
+     "p": [
+      "Sem artigo, o adjetivo pega a terminação do artigo: der vira -er, die vira -e, das vira -es.",
+      "Exemplos: guter Wein, frische Milch, kaltes Wasser e no plural rote Äpfel. Muito comum em cardápios e lojas.",
+      "No acusativo masculino é -en: Ich trinke heißen Tee. No dativo: mit kaltem Wasser, mit frischer Milch."
+     ],
+     "q": "O que você gosta de comer no café da manhã? Responda com adjetivos sem artigo, por exemplo frisches Brot und heißen Kaffee.",
+     "c": "Escreva um pequeno cardápio de café com seis itens, cada um com um adjetivo sem artigo, como warmer Apfelkuchen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "frisches Brot",
+      "ex": "Beim Bäcker gibt es frisches Brot."
+     },
+     {
+      "w": "kaltes Wasser",
+      "ex": "Ich hätte gern ein Glas kaltes Wasser."
+     },
+     {
+      "w": "heißer Tee",
+      "ex": "Heißer Tee hilft bei Kälte."
+     },
+     {
+      "w": "frische Milch",
+      "ex": "Ich kaufe frische Milch vom Bauernhof."
+     },
+     {
+      "w": "guter Wein",
+      "ex": "Guter Wein muss nicht teuer sein."
+     },
+     {
+      "w": "rote Äpfel",
+      "ex": "Rote Äpfel sind süß."
+     }
+    ],
+    "gram": "Ohne Artikel: Adjektiv mit Artikelendung: guter Wein (der), frische Milch (die), kaltes Wasser (das); Akk. heißen Tee."
+   }
+  },
+  {
+   "d": 115,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing things in detail",
+     "g": "Put adjective endings to work in real descriptions of objects, places and people.",
+     "p": [
+      "Choose the article first, then the ending: der blaue Rucksack, ein blauer Rucksack, blaue Rucksäcke.",
+      "Add details with mit + dative: eine Tasche mit einem langen Gurt, ein Haus mit einem großen Garten.",
+      "Useful adjectives: groß, klein, alt, neu, bequem, praktisch, hell, dunkel, weich, bunt, hübsch."
+     ],
+     "q": "Describe your favourite object in detail: what it looks like, what it is made of and why you like it.",
+     "c": "You lost your bag: write a lost-and-found note describing it with at least four adjectives with correct endings."
+    },
+    "de": {
+     "t": "Dinge genau beschreiben",
+     "g": "Du benutzt die Adjektivendungen in echten Beschreibungen von Dingen, Orten und Personen.",
+     "p": [
+      "Wähle zuerst den Artikel, dann die Endung: der blaue Rucksack, ein blauer Rucksack, blaue Rucksäcke.",
+      "Details mit mit + Dativ: eine Tasche mit einem langen Gurt, ein Haus mit einem großen Garten.",
+      "Nützliche Adjektive: groß, klein, alt, neu, bequem, praktisch, hell, dunkel, weich, bunt, hübsch."
+     ],
+     "q": "Beschreib deinen Lieblingsgegenstand genau: Wie sieht er aus, woraus ist er, und warum magst du ihn?",
+     "c": "Du hast deine Tasche verloren: Schreib eine Fundbüro-Nachricht mit mindestens vier Adjektiven mit richtiger Endung."
+    },
+    "es": {
+     "t": "Describir cosas con detalle",
+     "g": "Pon en práctica las terminaciones del adjetivo describiendo objetos, lugares y personas.",
+     "p": [
+      "Primero el artículo, luego la terminación: der blaue Rucksack, ein blauer Rucksack, blaue Rucksäcke.",
+      "Añade detalles con mit + dativo: eine Tasche mit einem langen Gurt, ein Haus mit einem großen Garten.",
+      "Adjetivos útiles: groß, klein, alt, neu, bequem, praktisch, hell, dunkel, weich, bunt, hübsch."
+     ],
+     "q": "Describe con detalle tu objeto favorito: cómo es, de qué está hecho y por qué te gusta.",
+     "c": "Has perdido tu bolso: escribe un aviso para objetos perdidos con al menos cuatro adjetivos bien declinados."
+    },
+    "fr": {
+     "t": "Décrire les choses en détail",
+     "g": "Mettre en pratique les terminaisons de l'adjectif pour décrire des objets, des lieux et des personnes.",
+     "p": [
+      "D'abord l'article, puis la terminaison : der blaue Rucksack, ein blauer Rucksack, blaue Rucksäcke.",
+      "Ajoute des détails avec mit + datif : eine Tasche mit einem langen Gurt, ein Haus mit einem großen Garten.",
+      "Adjectifs utiles : groß, klein, alt, neu, bequem, praktisch, hell, dunkel, weich, bunt, hübsch."
+     ],
+     "q": "Décris en détail ton objet préféré : à quoi il ressemble, en quoi il est fait et pourquoi tu l'aimes.",
+     "c": "Tu as perdu ton sac : écris une annonce pour les objets trouvés avec au moins quatre adjectifs bien accordés."
+    },
+    "it": {
+     "t": "Descrivere le cose nei dettagli",
+     "g": "Metti in pratica le desinenze dell'aggettivo descrivendo oggetti, luoghi e persone.",
+     "p": [
+      "Prima l'articolo, poi la desinenza: der blaue Rucksack, ein blauer Rucksack, blaue Rucksäcke.",
+      "Aggiungi dettagli con mit + dativo: eine Tasche mit einem langen Gurt, ein Haus mit einem großen Garten.",
+      "Aggettivi utili: groß, klein, alt, neu, bequem, praktisch, hell, dunkel, weich, bunt, hübsch."
+     ],
+     "q": "Descrivi nei dettagli il tuo oggetto preferito: com'è, di che cosa è fatto e perché ti piace.",
+     "c": "Hai perso la borsa: scrivi un annuncio per l'ufficio oggetti smarriti con almeno quattro aggettivi ben declinati."
+    },
+    "pt": {
+     "t": "Descrever coisas em pormenor",
+     "g": "Pôr em prática as terminações do adjetivo em descrições reais de objetos, lugares e pessoas.",
+     "p": [
+      "Primeiro o artigo, depois a terminação: der blaue Rucksack, ein blauer Rucksack, blaue Rucksäcke.",
+      "Junta pormenores com mit + dativo: eine Tasche mit einem langen Gurt, ein Haus mit einem großen Garten.",
+      "Adjetivos úteis: groß, klein, alt, neu, bequem, praktisch, hell, dunkel, weich, bunt, hübsch."
+     ],
+     "q": "Descreve em pormenor o teu objeto preferido: como é, de que é feito e porque gostas dele.",
+     "c": "Perdeste a tua mala: escreve um aviso para os perdidos e achados com pelo menos quatro adjetivos bem declinados."
+    },
+    "pt_BR": {
+     "t": "Descrever coisas em detalhe",
+     "g": "Colocar em prática as terminações do adjetivo em descrições reais de objetos, lugares e pessoas.",
+     "p": [
+      "Primeiro o artigo, depois a terminação: der blaue Rucksack, ein blauer Rucksack, blaue Rucksäcke.",
+      "Acrescente detalhes com mit + dativo: eine Tasche mit einem langen Gurt, ein Haus mit einem großen Garten.",
+      "Adjetivos úteis: groß, klein, alt, neu, bequem, praktisch, hell, dunkel, weich, bunt, hübsch."
+     ],
+     "q": "Descreva em detalhe seu objeto favorito: como ele é, do que é feito e por que você gosta dele.",
+     "c": "Você perdeu sua bolsa: escreva um aviso de achados e perdidos com pelo menos quatro adjetivos bem declinados."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bequem",
+      "ex": "Ich trage gern bequeme Schuhe."
+     },
+     {
+      "w": "praktisch",
+      "ex": "Das ist eine sehr praktische Tasche."
+     },
+     {
+      "w": "hell",
+      "ex": "Wir haben eine helle Wohnung."
+     },
+     {
+      "w": "bunt",
+      "ex": "Sie trägt ein buntes Kleid."
+     },
+     {
+      "w": "weich",
+      "ex": "Das Kissen ist schön weich."
+     },
+     {
+      "w": "aus Holz",
+      "ex": "Der Tisch ist aus hellem Holz."
+     }
+    ],
+    "gram": "Artikel bestimmt die Endung: der blaue Rucksack, ein blauer Rucksack, blaue Rucksäcke. Mit + Dativ: mit einem großen Garten."
+   }
+  },
+  {
+   "d": 116,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Futur I and plans",
+     "g": "Talk about the future with werden + infinitive, and with the present tense plus a time word.",
+     "p": [
+      "Futur I: werden in second position, infinitive at the end: Ich werde nächstes Jahr nach Wien reisen.",
+      "Werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.",
+      "Germans often just use the present with a time word: Morgen fahre ich nach Bern. Werden adds a promise or prediction."
+     ],
+     "q": "What will you do next year? Tell me two plans with werden and one with the present tense and a time word.",
+     "c": "Write three promises for your German learning with ich werde, for example Ich werde jeden Tag zehn Minuten lesen."
+    },
+    "de": {
+     "t": "Futur I und Pläne",
+     "g": "Du sprichst über die Zukunft mit werden + Infinitiv und mit Präsens plus Zeitangabe.",
+     "p": [
+      "Futur I: werden auf Position zwei, Infinitiv am Ende: Ich werde nächstes Jahr nach Wien reisen.",
+      "Werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.",
+      "Oft reicht das Präsens mit Zeitangabe: Morgen fahre ich nach Bern. Werden betont ein Versprechen oder eine Vermutung."
+     ],
+     "q": "Was wirst du nächstes Jahr machen? Nenn zwei Pläne mit werden und einen mit Präsens und Zeitangabe.",
+     "c": "Schreib drei Versprechen für dein Deutschlernen mit ich werde, zum Beispiel Ich werde jeden Tag zehn Minuten lesen."
+    },
+    "es": {
+     "t": "Futur I y planes",
+     "g": "Habla del futuro con werden + infinitivo y con el presente más una expresión de tiempo.",
+     "p": [
+      "Futur I: werden en segunda posición, infinitivo al final: Ich werde nächstes Jahr nach Wien reisen.",
+      "Werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.",
+      "A menudo basta el presente con una expresión de tiempo: Morgen fahre ich nach Bern. Werden subraya una promesa o predicción."
+     ],
+     "q": "¿Qué harás el año que viene? Dime dos planes con werden y uno en presente con una expresión de tiempo.",
+     "c": "Escribe tres promesas para tu alemán con ich werde, por ejemplo Ich werde jeden Tag zehn Minuten lesen."
+    },
+    "fr": {
+     "t": "Le Futur I et les projets",
+     "g": "Parler de l'avenir avec werden + infinitif, et avec le présent plus un repère de temps.",
+     "p": [
+      "Futur I : werden en deuxième position, infinitif à la fin : Ich werde nächstes Jahr nach Wien reisen.",
+      "Werden : ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.",
+      "Souvent, le présent avec un repère de temps suffit : Morgen fahre ich nach Bern. Werden insiste sur une promesse ou une prévision."
+     ],
+     "q": "Que feras-tu l'année prochaine ? Donne deux projets avec werden et un au présent avec un repère de temps.",
+     "c": "Écris trois promesses pour ton allemand avec ich werde, par exemple Ich werde jeden Tag zehn Minuten lesen."
+    },
+    "it": {
+     "t": "Il Futur I e i progetti",
+     "g": "Parli del futuro con werden + infinito e con il presente più un'espressione di tempo.",
+     "p": [
+      "Futur I: werden in seconda posizione, infinito alla fine: Ich werde nächstes Jahr nach Wien reisen.",
+      "Werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.",
+      "Spesso basta il presente con un'espressione di tempo: Morgen fahre ich nach Bern. Werden sottolinea una promessa o una previsione."
+     ],
+     "q": "Che cosa farai l'anno prossimo? Dimmi due progetti con werden e uno al presente con un'espressione di tempo.",
+     "c": "Scrivi tre promesse per il tuo tedesco con ich werde, per esempio Ich werde jeden Tag zehn Minuten lesen."
+    },
+    "pt": {
+     "t": "Futur I e planos",
+     "g": "Falar do futuro com werden + infinitivo e com o presente mais uma expressão de tempo.",
+     "p": [
+      "Futur I: werden na segunda posição, infinitivo no fim: Ich werde nächstes Jahr nach Wien reisen.",
+      "Werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.",
+      "Muitas vezes basta o presente com uma expressão de tempo: Morgen fahre ich nach Bern. Werden reforça uma promessa ou previsão."
+     ],
+     "q": "O que vais fazer no próximo ano? Diz dois planos com werden e um no presente com uma expressão de tempo.",
+     "c": "Escreve três promessas para o teu alemão com ich werde, por exemplo Ich werde jeden Tag zehn Minuten lesen."
+    },
+    "pt_BR": {
+     "t": "Futur I e planos",
+     "g": "Falar do futuro com werden + infinitivo e com o presente mais uma expressão de tempo.",
+     "p": [
+      "Futur I: werden na segunda posição, infinitivo no final: Ich werde nächstes Jahr nach Wien reisen.",
+      "Werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden.",
+      "Muitas vezes basta o presente com uma expressão de tempo: Morgen fahre ich nach Bern. Werden reforça uma promessa ou previsão."
+     ],
+     "q": "O que você vai fazer no ano que vem? Diga dois planos com werden e um no presente com uma expressão de tempo.",
+     "c": "Escreva três promessas para o seu alemão com ich werde, por exemplo Ich werde jeden Tag zehn Minuten lesen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ich werde",
+      "ex": "Ich werde dich morgen anrufen."
+     },
+     {
+      "w": "du wirst",
+      "ex": "Du wirst die Prüfung bestimmt schaffen!"
+     },
+     {
+      "w": "nächstes Jahr",
+      "ex": "Nächstes Jahr werden wir umziehen."
+     },
+     {
+      "w": "bald",
+      "ex": "Bald fahre ich in den Urlaub."
+     },
+     {
+      "w": "in Zukunft",
+      "ex": "In Zukunft werde ich mehr Sport machen."
+     },
+     {
+      "w": "vorhaben",
+      "ex": "Was hast du am Wochenende vor?"
+     }
+    ],
+    "gram": "Futur I: werden (Position 2) + Infinitiv (Ende): Ich werde nach Wien reisen. Oft auch Präsens + Zeitangabe: Morgen reise ich."
+   }
+  },
+  {
+   "d": 117,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "The weather forecast",
+     "g": "Understand and give a simple weather forecast with Morgen wird es regnen and weather words.",
+     "p": [
+      "Forecast language uses werden: Morgen wird es sonnig. Am Nachmittag wird es regnen. Es wird kälter.",
+      "Weather words: das Gewitter, der Schauer, der Nebel, der Wind, die Wolke, bewölkt, sonnig, windig.",
+      "Temperatures: Es wird 20 Grad warm. Die Temperaturen liegen zwischen 5 und 10 Grad. Minus 3 Grad in der Nacht."
+     ],
+     "q": "What will the weather be like tomorrow where you are? Give me a forecast with wird and a temperature.",
+     "c": "Write a three-day weather forecast for your town with werden, two weather nouns and temperatures."
+    },
+    "de": {
+     "t": "Der Wetterbericht",
+     "g": "Du verstehst und machst eine einfache Wettervorhersage mit Morgen wird es regnen und Wetterwörtern.",
+     "p": [
+      "Im Wetterbericht steht oft werden: Morgen wird es sonnig. Am Nachmittag wird es regnen. Es wird kälter.",
+      "Wetterwörter: das Gewitter, der Schauer, der Nebel, der Wind, die Wolke, bewölkt, sonnig, windig.",
+      "Temperaturen: Es wird 20 Grad warm. Die Temperaturen liegen zwischen 5 und 10 Grad. Nachts minus 3 Grad."
+     ],
+     "q": "Wie wird das Wetter morgen bei dir? Mach eine Vorhersage mit wird und einer Temperatur.",
+     "c": "Schreib einen Wetterbericht für drei Tage für deine Stadt mit werden, zwei Wetter-Nomen und Temperaturen."
+    },
+    "es": {
+     "t": "El pronóstico del tiempo",
+     "g": "Entiende y da un pronóstico sencillo con Morgen wird es regnen y palabras del tiempo.",
+     "p": [
+      "El pronóstico usa werden: Morgen wird es sonnig. Am Nachmittag wird es regnen. Es wird kälter.",
+      "Palabras del tiempo: das Gewitter, der Schauer, der Nebel, der Wind, die Wolke, bewölkt, sonnig, windig.",
+      "Temperaturas: Es wird 20 Grad warm. Die Temperaturen liegen zwischen 5 und 10 Grad. Minus 3 Grad por la noche."
+     ],
+     "q": "¿Qué tiempo hará mañana donde estás? Dame un pronóstico con wird y una temperatura.",
+     "c": "Escribe el pronóstico de tres días para tu ciudad con werden, dos sustantivos del tiempo y temperaturas."
+    },
+    "fr": {
+     "t": "La météo",
+     "g": "Comprendre et donner une météo simple avec Morgen wird es regnen et le vocabulaire du temps.",
+     "p": [
+      "La météo utilise werden : Morgen wird es sonnig. Am Nachmittag wird es regnen. Es wird kälter.",
+      "Vocabulaire : das Gewitter, der Schauer, der Nebel, der Wind, die Wolke, bewölkt, sonnig, windig.",
+      "Températures : Es wird 20 Grad warm. Die Temperaturen liegen zwischen 5 und 10 Grad. Minus 3 Grad la nuit."
+     ],
+     "q": "Quel temps fera-t-il demain chez toi ? Donne-moi une prévision avec wird et une température.",
+     "c": "Écris la météo de ta ville sur trois jours avec werden, deux noms du temps et des températures."
+    },
+    "it": {
+     "t": "Le previsioni del tempo",
+     "g": "Capisci e dai previsioni del tempo semplici con Morgen wird es regnen e le parole del meteo.",
+     "p": [
+      "Le previsioni usano werden: Morgen wird es sonnig. Am Nachmittag wird es regnen. Es wird kälter.",
+      "Parole del meteo: das Gewitter, der Schauer, der Nebel, der Wind, die Wolke, bewölkt, sonnig, windig.",
+      "Temperature: Es wird 20 Grad warm. Die Temperaturen liegen zwischen 5 und 10 Grad. Di notte minus 3 Grad."
+     ],
+     "q": "Che tempo farà domani da te? Fammi una previsione con wird e una temperatura.",
+     "c": "Scrivi le previsioni di tre giorni per la tua città con werden, due nomi del meteo e le temperature."
+    },
+    "pt": {
+     "t": "A previsão do tempo",
+     "g": "Perceber e dar uma previsão do tempo simples com Morgen wird es regnen e palavras do tempo.",
+     "p": [
+      "A previsão usa werden: Morgen wird es sonnig. Am Nachmittag wird es regnen. Es wird kälter.",
+      "Palavras do tempo: das Gewitter, der Schauer, der Nebel, der Wind, die Wolke, bewölkt, sonnig, windig.",
+      "Temperaturas: Es wird 20 Grad warm. Die Temperaturen liegen zwischen 5 und 10 Grad. À noite minus 3 Grad."
+     ],
+     "q": "Como vai estar o tempo amanhã aí? Dá-me uma previsão com wird e uma temperatura.",
+     "c": "Escreve a previsão de três dias para a tua cidade com werden, dois nomes do tempo e temperaturas."
+    },
+    "pt_BR": {
+     "t": "A previsão do tempo",
+     "g": "Entender e dar uma previsão do tempo simples com Morgen wird es regnen e palavras do clima.",
+     "p": [
+      "A previsão usa werden: Morgen wird es sonnig. Am Nachmittag wird es regnen. Es wird kälter.",
+      "Palavras do clima: das Gewitter, der Schauer, der Nebel, der Wind, die Wolke, bewölkt, sonnig, windig.",
+      "Temperaturas: Es wird 20 Grad warm. Die Temperaturen liegen zwischen 5 und 10 Grad. À noite minus 3 Grad."
+     ],
+     "q": "Como vai estar o tempo amanhã aí? Me dê uma previsão com wird e uma temperatura.",
+     "c": "Escreva a previsão de três dias para sua cidade com werden, dois substantivos do clima e temperaturas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Wetterbericht",
+      "ex": "Laut Wetterbericht wird es morgen warm."
+     },
+     {
+      "w": "das Gewitter",
+      "ex": "Am Abend gibt es ein Gewitter."
+     },
+     {
+      "w": "der Schauer",
+      "ex": "Am Nachmittag kommen einzelne Schauer."
+     },
+     {
+      "w": "bewölkt",
+      "ex": "Morgen ist es bewölkt, aber trocken."
+     },
+     {
+      "w": "der Nebel",
+      "ex": "Am Morgen gibt es dichten Nebel."
+     },
+     {
+      "w": "die Temperatur",
+      "ex": "Die Temperaturen steigen auf 25 Grad."
+     }
+    ],
+    "gram": "Wettervorhersage mit werden: Morgen wird es regnen. Es wird kälter. Die Temperaturen liegen bei 10 Grad."
+   }
+  },
+  {
+   "d": 118,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Media and screens",
+     "g": "Talk about TV, series, social networks and streaming, and how you use screens.",
+     "p": [
+      "Words: das Fernsehen, fernsehen, die Serie, die Folge, streamen, die sozialen Netzwerke, das Handy.",
+      "Frequency: Ich sehe jeden Abend eine Folge. Ich bin selten in sozialen Netzwerken. Ich streame am Wochenende.",
+      "Opinions with dass and weil: Ich finde, dass Serien entspannend sind, weil ich nicht nachdenken muss."
+     ],
+     "q": "Which series or channels do you watch, and how much time do you spend on screens a day?",
+     "c": "Write four sentences about your media habits with one frequency word, one opinion with dass and one reason with weil."
+    },
+    "de": {
+     "t": "Medien und Bildschirme",
+     "g": "Du sprichst über Fernsehen, Serien, soziale Netzwerke und Streaming und darüber, wie du Bildschirme nutzt.",
+     "p": [
+      "Wörter: das Fernsehen, fernsehen, die Serie, die Folge, streamen, die sozialen Netzwerke, das Handy.",
+      "Häufigkeit: Ich sehe jeden Abend eine Folge. Ich bin selten in sozialen Netzwerken. Ich streame am Wochenende.",
+      "Meinung mit dass und weil: Ich finde, dass Serien entspannend sind, weil ich nicht nachdenken muss."
+     ],
+     "q": "Welche Serien oder Kanäle schaust du, und wie viel Zeit verbringst du am Tag vor Bildschirmen?",
+     "c": "Schreib vier Sätze über deine Mediengewohnheiten mit einem Häufigkeitswort, einer Meinung mit dass und einem Grund mit weil."
+    },
+    "es": {
+     "t": "Medios y pantallas",
+     "g": "Habla de la tele, las series, las redes sociales y el streaming, y de cómo usas las pantallas.",
+     "p": [
+      "Palabras: das Fernsehen, fernsehen, die Serie, die Folge, streamen, die sozialen Netzwerke, das Handy.",
+      "Frecuencia: Ich sehe jeden Abend eine Folge. Ich bin selten in sozialen Netzwerken. Ich streame am Wochenende.",
+      "Opiniones con dass y weil: Ich finde, dass Serien entspannend sind, weil ich nicht nachdenken muss."
+     ],
+     "q": "¿Qué series o canales ves y cuánto tiempo pasas al día delante de pantallas?",
+     "c": "Escribe cuatro frases sobre tus hábitos con los medios, con un adverbio de frecuencia, una opinión con dass y una razón con weil."
+    },
+    "fr": {
+     "t": "Médias et écrans",
+     "g": "Parler de télé, de séries, de réseaux sociaux et de streaming, et de ton usage des écrans.",
+     "p": [
+      "Vocabulaire : das Fernsehen, fernsehen, die Serie, die Folge, streamen, die sozialen Netzwerke, das Handy.",
+      "Fréquence : Ich sehe jeden Abend eine Folge. Ich bin selten in sozialen Netzwerken. Ich streame am Wochenende.",
+      "Opinions avec dass et weil : Ich finde, dass Serien entspannend sind, weil ich nicht nachdenken muss."
+     ],
+     "q": "Quelles séries ou chaînes regardes-tu, et combien de temps passes-tu devant les écrans par jour ?",
+     "c": "Écris quatre phrases sur tes habitudes médias avec un mot de fréquence, une opinion avec dass et une raison avec weil."
+    },
+    "it": {
+     "t": "Media e schermi",
+     "g": "Parli di TV, serie, social network e streaming, e di come usi gli schermi.",
+     "p": [
+      "Parole: das Fernsehen, fernsehen, die Serie, die Folge, streamen, die sozialen Netzwerke, das Handy.",
+      "Frequenza: Ich sehe jeden Abend eine Folge. Ich bin selten in sozialen Netzwerken. Ich streame am Wochenende.",
+      "Opinioni con dass e weil: Ich finde, dass Serien entspannend sind, weil ich nicht nachdenken muss."
+     ],
+     "q": "Quali serie o canali guardi e quanto tempo passi al giorno davanti agli schermi?",
+     "c": "Scrivi quattro frasi sulle tue abitudini con i media, con un avverbio di frequenza, un'opinione con dass e un motivo con weil."
+    },
+    "pt": {
+     "t": "Media e ecrãs",
+     "g": "Falar de televisão, séries, redes sociais e streaming, e de como usas os ecrãs.",
+     "p": [
+      "Palavras: das Fernsehen, fernsehen, die Serie, die Folge, streamen, die sozialen Netzwerke, das Handy.",
+      "Frequência: Ich sehe jeden Abend eine Folge. Ich bin selten in sozialen Netzwerken. Ich streame am Wochenende.",
+      "Opiniões com dass e weil: Ich finde, dass Serien entspannend sind, weil ich nicht nachdenken muss."
+     ],
+     "q": "Que séries ou canais vês e quanto tempo passas por dia em frente a ecrãs?",
+     "c": "Escreve quatro frases sobre os teus hábitos de media com uma palavra de frequência, uma opinião com dass e uma razão com weil."
+    },
+    "pt_BR": {
+     "t": "Mídia e telas",
+     "g": "Falar de TV, séries, redes sociais e streaming, e de como você usa as telas.",
+     "p": [
+      "Palavras: das Fernsehen, fernsehen, die Serie, die Folge, streamen, die sozialen Netzwerke, das Handy.",
+      "Frequência: Ich sehe jeden Abend eine Folge. Ich bin selten in sozialen Netzwerken. Ich streame am Wochenende.",
+      "Opiniões com dass e weil: Ich finde, dass Serien entspannend sind, weil ich nicht nachdenken muss."
+     ],
+     "q": "Que séries ou canais você assiste e quanto tempo passa por dia na frente de telas?",
+     "c": "Escreva quatro frases sobre seus hábitos de mídia com uma palavra de frequência, uma opinião com dass e um motivo com weil."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Serie",
+      "ex": "Ich schaue gerade eine spannende Serie."
+     },
+     {
+      "w": "die Folge",
+      "ex": "Heute Abend sehe ich die letzte Folge."
+     },
+     {
+      "w": "streamen",
+      "ex": "Wir streamen am Wochenende oft Filme."
+     },
+     {
+      "w": "die sozialen Netzwerke",
+      "ex": "Ich bin nicht oft in sozialen Netzwerken."
+     },
+     {
+      "w": "fernsehen",
+      "ex": "Meine Eltern sehen abends fern."
+     },
+     {
+      "w": "der Bildschirm",
+      "ex": "Ich sitze zu viel vor dem Bildschirm."
+     }
+    ],
+    "gram": "Häufigkeit: immer, oft, manchmal, selten, nie. Ich finde, dass Serien spannend sind. Ich sehe fern, weil ich müde bin."
+   }
+  },
+  {
+   "d": 119,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Cinema and films",
+     "g": "Talk about films: genres, subtitles, the original version and what you thought of a film.",
+     "p": [
+      "Genres: der Krimi, die Komödie, der Actionfilm, der Science-Fiction-Film, der Zeichentrickfilm, der Dokumentarfilm.",
+      "At the cinema: Der Film läuft um acht. Ist das die Originalversion mit Untertiteln? Wer spielt mit?",
+      "Give your opinion in the past: Der Film hat mir gut gefallen. Die Schauspieler waren super, aber das Ende war langweilig."
+     ],
+     "q": "What was the last film you saw? Tell me the genre, what you liked and what you did not like.",
+     "c": "Write a short film review in five sentences with a genre, one actor, gefallen in the Perfekt and an adjective with an ending."
+    },
+    "de": {
+     "t": "Kino und Filme",
+     "g": "Du sprichst über Filme: Genres, Untertitel, Originalversion und deine Meinung zu einem Film.",
+     "p": [
+      "Genres: der Krimi, die Komödie, der Actionfilm, der Science-Fiction-Film, der Zeichentrickfilm, der Dokumentarfilm.",
+      "Im Kino: Der Film läuft um acht. Ist das die Originalversion mit Untertiteln? Wer spielt mit?",
+      "Meinung in der Vergangenheit: Der Film hat mir gut gefallen. Die Schauspieler waren super, aber das Ende war langweilig."
+     ],
+     "q": "Welchen Film hast du zuletzt gesehen? Nenn das Genre, was dir gefallen hat und was nicht.",
+     "c": "Schreib eine kurze Filmkritik in fünf Sätzen mit Genre, einer Person aus dem Film, gefallen im Perfekt und einem Adjektiv mit Endung."
+    },
+    "es": {
+     "t": "Cine y películas",
+     "g": "Habla de películas: géneros, subtítulos, versión original y qué te pareció una película.",
+     "p": [
+      "Géneros: der Krimi, die Komödie, der Actionfilm, der Science-Fiction-Film, der Zeichentrickfilm, der Dokumentarfilm.",
+      "En el cine: Der Film läuft um acht. Ist das die Originalversion mit Untertiteln? Wer spielt mit?",
+      "Opina en pasado: Der Film hat mir gut gefallen. Die Schauspieler waren super, aber das Ende war langweilig."
+     ],
+     "q": "¿Cuál fue la última película que viste? Dime el género, qué te gustó y qué no.",
+     "c": "Escribe una crítica breve en cinco frases con el género, un actor, gefallen en Perfekt y un adjetivo declinado."
+    },
+    "fr": {
+     "t": "Cinéma et films",
+     "g": "Parler de films : genres, sous-titres, version originale et ton avis sur un film.",
+     "p": [
+      "Genres : der Krimi, die Komödie, der Actionfilm, der Science-Fiction-Film, der Zeichentrickfilm, der Dokumentarfilm.",
+      "Au cinéma : Der Film läuft um acht. Ist das die Originalversion mit Untertiteln? Wer spielt mit?",
+      "Donne ton avis au passé : Der Film hat mir gut gefallen. Die Schauspieler waren super, aber das Ende war langweilig."
+     ],
+     "q": "Quel est le dernier film que tu as vu ? Dis-moi le genre, ce qui t'a plu et ce qui ne t'a pas plu.",
+     "c": "Écris une courte critique en cinq phrases avec le genre, un acteur, gefallen au Perfekt et un adjectif accordé."
+    },
+    "it": {
+     "t": "Cinema e film",
+     "g": "Parli di film: generi, sottotitoli, versione originale e che cosa pensi di un film.",
+     "p": [
+      "Generi: der Krimi, die Komödie, der Actionfilm, der Science-Fiction-Film, der Zeichentrickfilm, der Dokumentarfilm.",
+      "Al cinema: Der Film läuft um acht. Ist das die Originalversion mit Untertiteln? Wer spielt mit?",
+      "Dai il tuo parere al passato: Der Film hat mir gut gefallen. Die Schauspieler waren super, aber das Ende war langweilig."
+     ],
+     "q": "Qual è l'ultimo film che hai visto? Dimmi il genere, che cosa ti è piaciuto e che cosa no.",
+     "c": "Scrivi una breve recensione in cinque frasi con il genere, un attore, gefallen al Perfekt e un aggettivo declinato."
+    },
+    "pt": {
+     "t": "Cinema e filmes",
+     "g": "Falar de filmes: géneros, legendas, versão original e o que achaste de um filme.",
+     "p": [
+      "Géneros: der Krimi, die Komödie, der Actionfilm, der Science-Fiction-Film, der Zeichentrickfilm, der Dokumentarfilm.",
+      "No cinema: Der Film läuft um acht. Ist das die Originalversion mit Untertiteln? Wer spielt mit?",
+      "Dá a tua opinião no passado: Der Film hat mir gut gefallen. Die Schauspieler waren super, aber das Ende war langweilig."
+     ],
+     "q": "Qual foi o último filme que viste? Diz-me o género, o que gostaste e o que não gostaste.",
+     "c": "Escreve uma crítica curta em cinco frases com o género, um ator, gefallen no Perfekt e um adjetivo declinado."
+    },
+    "pt_BR": {
+     "t": "Cinema e filmes",
+     "g": "Falar de filmes: gêneros, legendas, versão original e o que você achou de um filme.",
+     "p": [
+      "Gêneros: der Krimi, die Komödie, der Actionfilm, der Science-Fiction-Film, der Zeichentrickfilm, der Dokumentarfilm.",
+      "No cinema: Der Film läuft um acht. Ist das die Originalversion mit Untertiteln? Wer spielt mit?",
+      "Dê sua opinião no passado: Der Film hat mir gut gefallen. Die Schauspieler waren super, aber das Ende war langweilig."
+     ],
+     "q": "Qual foi o último filme que você viu? Me diga o gênero, o que gostou e o que não gostou.",
+     "c": "Escreva uma crítica curta em cinco frases com o gênero, um ator, gefallen no Perfekt e um adjetivo declinado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Krimi",
+      "ex": "Am Sonntag sehen wir immer einen Krimi."
+     },
+     {
+      "w": "die Komödie",
+      "ex": "Die Komödie war wirklich lustig."
+     },
+     {
+      "w": "die Untertitel",
+      "ex": "Ich sehe Filme gern mit deutschen Untertiteln."
+     },
+     {
+      "w": "die Originalversion",
+      "ex": "Läuft der Film in der Originalversion?"
+     },
+     {
+      "w": "der Schauspieler",
+      "ex": "Der Schauspieler spielt sehr gut."
+     },
+     {
+      "w": "laufen",
+      "ex": "Was läuft heute im Kino?"
+     }
+    ],
+    "gram": "Meinung im Perfekt: Der Film hat mir (sehr) gut / nicht gefallen. Mit Untertiteln (mit + Dativ Plural -n)."
+   }
+  },
+  {
+   "d": 120,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Music and concerts",
+     "g": "Talk about music: genres, instruments, concerts and your favourite bands.",
+     "p": [
+      "Genres: Pop, Rock, Jazz, Klassik, Hip-Hop, Volksmusik. Instruments with spielen: Ich spiele Gitarre, Klavier, Geige.",
+      "Concerts: Ich gehe auf ein Konzert. Die Band tritt am Freitag auf. Die Stimmung war toll!",
+      "Preferences: Ich höre am liebsten Jazz. Meine Lieblingsband ist ..., weil die Lieder so fröhlich sind."
+     ],
+     "q": "What music do you listen to most, and do you play an instrument or would you like to?",
+     "c": "Write about your favourite band or singer in five sentences with am liebsten, weil and a concert memory in the Perfekt."
+    },
+    "de": {
+     "t": "Musik und Konzerte",
+     "g": "Du sprichst über Musik: Genres, Instrumente, Konzerte und deine Lieblingsbands.",
+     "p": [
+      "Genres: Pop, Rock, Jazz, Klassik, Hip-Hop, Volksmusik. Instrumente mit spielen: Ich spiele Gitarre, Klavier, Geige.",
+      "Konzerte: Ich gehe auf ein Konzert. Die Band tritt am Freitag auf. Die Stimmung war toll!",
+      "Vorlieben: Ich höre am liebsten Jazz. Meine Lieblingsband ist ..., weil die Lieder so fröhlich sind."
+     ],
+     "q": "Welche Musik hörst du am meisten, und spielst du ein Instrument oder möchtest du eins lernen?",
+     "c": "Schreib fünf Sätze über deine Lieblingsband oder Lieblingssängerin mit am liebsten, weil und einer Konzerterinnerung im Perfekt."
+    },
+    "es": {
+     "t": "Música y conciertos",
+     "g": "Habla de música: géneros, instrumentos, conciertos y tus grupos favoritos.",
+     "p": [
+      "Géneros: Pop, Rock, Jazz, Klassik, Hip-Hop, Volksmusik. Instrumentos con spielen: Ich spiele Gitarre, Klavier, Geige.",
+      "Conciertos: Ich gehe auf ein Konzert. Die Band tritt am Freitag auf. Die Stimmung war toll!",
+      "Preferencias: Ich höre am liebsten Jazz. Meine Lieblingsband ist ..., weil die Lieder so fröhlich sind."
+     ],
+     "q": "¿Qué música escuchas más y tocas algún instrumento o te gustaría aprender uno?",
+     "c": "Escribe cinco frases sobre tu grupo o cantante favorito con am liebsten, weil y un recuerdo de concierto en Perfekt."
+    },
+    "fr": {
+     "t": "Musique et concerts",
+     "g": "Parler de musique : genres, instruments, concerts et tes groupes préférés.",
+     "p": [
+      "Genres : Pop, Rock, Jazz, Klassik, Hip-Hop, Volksmusik. Instruments avec spielen : Ich spiele Gitarre, Klavier, Geige.",
+      "Concerts : Ich gehe auf ein Konzert. Die Band tritt am Freitag auf. Die Stimmung war toll!",
+      "Préférences : Ich höre am liebsten Jazz. Meine Lieblingsband ist ..., weil die Lieder so fröhlich sind."
+     ],
+     "q": "Quelle musique écoutes-tu le plus, et joues-tu d'un instrument ou aimerais-tu en apprendre un ?",
+     "c": "Écris cinq phrases sur ton groupe ou ta chanteuse préférés avec am liebsten, weil et un souvenir de concert au Perfekt."
+    },
+    "it": {
+     "t": "Musica e concerti",
+     "g": "Parli di musica: generi, strumenti, concerti e i tuoi gruppi preferiti.",
+     "p": [
+      "Generi: Pop, Rock, Jazz, Klassik, Hip-Hop, Volksmusik. Strumenti con spielen: Ich spiele Gitarre, Klavier, Geige.",
+      "Concerti: Ich gehe auf ein Konzert. Die Band tritt am Freitag auf. Die Stimmung war toll!",
+      "Preferenze: Ich höre am liebsten Jazz. Meine Lieblingsband ist ..., weil die Lieder so fröhlich sind."
+     ],
+     "q": "Che musica ascolti di più e suoni uno strumento o ti piacerebbe impararne uno?",
+     "c": "Scrivi cinque frasi sul tuo gruppo o cantante preferito con am liebsten, weil e un ricordo di un concerto al Perfekt."
+    },
+    "pt": {
+     "t": "Música e concertos",
+     "g": "Falar de música: géneros, instrumentos, concertos e as tuas bandas preferidas.",
+     "p": [
+      "Géneros: Pop, Rock, Jazz, Klassik, Hip-Hop, Volksmusik. Instrumentos com spielen: Ich spiele Gitarre, Klavier, Geige.",
+      "Concertos: Ich gehe auf ein Konzert. Die Band tritt am Freitag auf. Die Stimmung war toll!",
+      "Preferências: Ich höre am liebsten Jazz. Meine Lieblingsband ist ..., weil die Lieder so fröhlich sind."
+     ],
+     "q": "Que música ouves mais, e tocas algum instrumento ou gostavas de aprender um?",
+     "c": "Escreve cinco frases sobre a tua banda ou cantora preferida com am liebsten, weil e uma memória de concerto no Perfekt."
+    },
+    "pt_BR": {
+     "t": "Música e shows",
+     "g": "Falar de música: gêneros, instrumentos, shows e suas bandas favoritas.",
+     "p": [
+      "Gêneros: Pop, Rock, Jazz, Klassik, Hip-Hop, Volksmusik. Instrumentos com spielen: Ich spiele Gitarre, Klavier, Geige.",
+      "Shows: Ich gehe auf ein Konzert. Die Band tritt am Freitag auf. Die Stimmung war toll!",
+      "Preferências: Ich höre am liebsten Jazz. Meine Lieblingsband ist ..., weil die Lieder so fröhlich sind."
+     ],
+     "q": "Que música você mais ouve, e você toca algum instrumento ou gostaria de aprender?",
+     "c": "Escreva cinco frases sobre sua banda ou cantora favorita com am liebsten, weil e uma lembrança de show no Perfekt."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Konzert",
+      "ex": "Gestern war ich auf einem tollen Konzert."
+     },
+     {
+      "w": "die Band",
+      "ex": "Die Band spielt heute im Stadtpark."
+     },
+     {
+      "w": "das Lied",
+      "ex": "Das Lied höre ich jeden Tag."
+     },
+     {
+      "w": "Gitarre spielen",
+      "ex": "Mein Bruder spielt seit fünf Jahren Gitarre."
+     },
+     {
+      "w": "auftreten",
+      "ex": "Die Sängerin tritt am Samstag in Wien auf."
+     },
+     {
+      "w": "die Stimmung",
+      "ex": "Die Stimmung im Saal war fantastisch."
+     }
+    ],
+    "gram": "Instrumente ohne Artikel: Ich spiele Klavier. Ich gehe auf ein Konzert (Akk.). Ich war auf einem Konzert (Dat.)."
+   }
+  }
+ ]
+}

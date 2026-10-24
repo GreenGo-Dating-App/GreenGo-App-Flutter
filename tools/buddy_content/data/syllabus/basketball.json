@@ -1,0 +1,2195 @@
+{
+ "topic": "basketball",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Welcome to basketball",
+   "f": "What the game is, why millions love it, and how this 365-day path will unfold"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "The court at a glance",
+   "f": "Baseline, sidelines, half-court line, paint, three-point arc and free-throw line explained"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "The ball and the hoop",
+   "f": "Ball sizes, the rim at 10 feet (3.05 m), backboard and net, and why they matter"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Five players a side",
+   "f": "How a team is formed, starters and bench, and the basic idea of positions"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "How you score",
+   "f": "Two-pointers, three-pointers and free throws, and how points add up"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "The game clock",
+   "f": "Quarters, halftime, overtime, and the difference between NBA and FIBA game lengths"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Dribbling basics",
+   "f": "Why you bounce the ball, using your fingertips, and keeping your eyes up"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Traveling explained",
+   "f": "What counts as a travel, the pivot foot, and common beginner mistakes"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Double dribble and carrying",
+   "f": "Two classic ball-handling violations and how referees spot them"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Passing fundamentals",
+   "f": "Chest pass, bounce pass and overhead pass, and when to use each"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Shooting form: BEEF",
+   "f": "Balance, eyes, elbow and follow-through: a simple shooting checklist"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "The layup",
+   "f": "Footwork for right- and left-handed layups and how to use the backboard"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Rebounding basics",
+   "f": "Offensive and defensive rebounds, boxing out and timing your jump"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Personal fouls",
+   "f": "Contact rules, what a foul is, and what happens after one is called"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Free throws",
+   "f": "When you get them, the routine at the line, and why they decide close games"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Point guard role",
+   "f": "The floor general: bringing the ball up, calling plays and setting the pace"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Shooting guard role",
+   "f": "Scoring from the perimeter, moving without the ball and spacing the floor"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Small forward role",
+   "f": "The versatile wing who scores, defends and connects the team"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Power forward role",
+   "f": "Strength near the basket, rebounding and the modern stretch four"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Center role",
+   "f": "Rim protection, post play, screens and controlling the paint"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Shot clock basics",
+   "f": "The 24-second shot clock and how it keeps the game moving"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Three-second rule",
+   "f": "Why attackers cannot camp in the paint, and the defensive version in the NBA"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Backcourt violations",
+   "f": "The 8-second rule and why you cannot go back over half court"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Out of bounds and inbounds",
+   "f": "Who gets the ball, five seconds to inbound, and the jump ball"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Man-to-man defense",
+   "f": "Guarding one player, defensive stance and staying between player and basket"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Zone defense basics",
+   "f": "Guarding an area instead of a player, and the classic 2-3 zone"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Referees and signals",
+   "f": "Common hand signals and how to read what the referee just called"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "The bench and substitutions",
+   "f": "When coaches sub, timeouts and the role of the sixth player"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Watching your first game",
+   "f": "What to follow on screen: score, clock, fouls and possessions"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: first month",
+   "f": "A friendly recap of the court, rules, roles and basic skills so far"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Birth of basketball, 1891",
+   "f": "James Naismith, a peach basket and the original 13 rules in Springfield"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "From college gyms to pros",
+   "f": "How the game spread through YMCAs, colleges and early professional leagues"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Basketball at the Olympics",
+   "f": "The men's debut in Berlin 1936, the women's in Montreal 1976, and how it grew"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "What FIBA does",
+   "f": "The international federation, world championships and global rules"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "The NBA in a nutshell",
+   "f": "Thirty teams, two conferences, a long regular season and the playoffs"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "The WNBA",
+   "f": "The women's professional league in the US, founded in 1996, and its stars"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "European club basketball",
+   "f": "Leagues like Spain's ACB, the EuroLeague and their passionate fans"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "College basketball",
+   "f": "NCAA tournaments, March Madness brackets and why fans love the upsets"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Streetball culture",
+   "f": "Outdoor courts, pickup games and legendary playgrounds like Rucker Park"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "3x3 basketball",
+   "f": "The fast half-court format, Olympic since Tokyo 2020, and its quick rules"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Crossover dribble",
+   "f": "Changing hands in front of your body to beat a defender"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Behind the back and between the legs",
+   "f": "Protecting the ball with advanced dribble changes"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Weak-hand training",
+   "f": "Why using both hands matters and simple drills for your weaker hand"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "The jump stop",
+   "f": "Stopping on two feet to stay balanced and keep both pivot options"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Pivoting with purpose",
+   "f": "Front and reverse pivots to find passing lanes and protect the ball"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Triple-threat position",
+   "f": "Ready to shoot, pass or dribble: the strongest stance with the ball"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "The jump shot",
+   "f": "From set shot to jump shot: rhythm, lift and release at the top"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Shooting off the catch",
+   "f": "Hands ready, feet set, and turning a pass into a quick shot"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Free-throw routine",
+   "f": "Building a repeatable routine for calm, confident free throws"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Floater and runner",
+   "f": "A soft one-handed shot over taller defenders in the lane"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Defensive stance",
+   "f": "Low hips, active hands and balance on the balls of your feet"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Defensive slides",
+   "f": "Moving sideways without crossing your feet to stay in front"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Closing out",
+   "f": "Sprinting to a shooter, then chopping your steps to avoid being beaten"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Help defense basics",
+   "f": "Seeing ball and player, and helping a teammate who gets beaten"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Blocking shots cleanly",
+   "f": "Timing, verticality and blocking without fouling"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Steals and deflections",
+   "f": "Reading passes and poking the ball away without reaching wildly"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Boxing out",
+   "f": "Finding your player, making contact and sealing them away from the rim"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Talking on defense",
+   "f": "Calling screens, switches and help so the whole team stays connected"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Transition defense",
+   "f": "Sprinting back, stopping the ball and finding open shooters"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: skills month",
+   "f": "A recap of dribbling moves, shooting form and defensive basics"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Pick-and-roll basics",
+   "f": "The most common play in basketball: screen, drive and roll to the rim"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Setting a good screen",
+   "f": "Stance, angle and staying still to avoid moving-screen fouls"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Using a screen",
+   "f": "Reading the defense and coming off shoulder to shoulder"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Give-and-go",
+   "f": "Pass to a teammate, cut to the basket and get the ball right back"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Backdoor cut",
+   "f": "Punishing an overplaying defender by cutting behind them"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "V-cut and L-cut",
+   "f": "Simple ways to get open on the wing before the catch"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Spacing the floor",
+   "f": "Why five players spread out and where the good spots are"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Fast break basics",
+   "f": "Outlet pass, filling the lanes and finishing before the defense sets"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Inbound plays",
+   "f": "Simple set plays from the baseline and the sideline"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "The assist",
+   "f": "What counts as an assist and why unselfish passing wins games"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Reading a box score",
+   "f": "Points, rebounds, assists, steals, blocks and turnovers explained"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Field goal percentage",
+   "f": "How shooting percentages work and what counts as a good number"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Double-doubles and triple-doubles",
+   "f": "Reaching double figures in two or three stat categories"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Plus-minus explained",
+   "f": "How the score changes while a player is on the court"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Basketball vocabulary I",
+   "f": "Words like and-one, swish, brick, dime and board"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Basketball vocabulary II",
+   "f": "Phrases like in the paint, from downtown, on fire and garbage time"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Commentator phrases",
+   "f": "Understanding classic play-by-play calls and expressions"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Jersey numbers and traditions",
+   "f": "Retired numbers, famous digits and why players choose them"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Mascots and team names",
+   "f": "Fun stories behind team names and nicknames around the world"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Arenas and atmosphere",
+   "f": "Famous arenas, home-court advantage and loud crowds"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Pre-game warm-up",
+   "f": "Dynamic stretches, light shooting and getting your body ready"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Basketball footwear",
+   "f": "What makes a basketball shoe: grip, support and fit"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Conditioning for basketball",
+   "f": "Short sprints, endurance and why the sport is interval training"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Jumping higher safely",
+   "f": "Simple plyometrics, soft landings and enough rest"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Cooling down and recovery",
+   "f": "Stretching, hydration and sleep after games and practice"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Ankle care basics",
+   "f": "Why ankles matter in basketball and general prevention habits"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Practicing alone",
+   "f": "Solo drills for shooting, dribbling and footwork"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Playing pickup games",
+   "f": "Park etiquette: calling next, fair teams and calling your own fouls"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Being a good teammate",
+   "f": "Encouragement, communication and celebrating others' success"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: team play month",
+   "f": "A recap of plays, stats, vocabulary and healthy habits"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "George Mikan, first big star",
+   "f": "The dominant center of the 1940s and 50s who shaped early rules"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Bill Russell's Celtics",
+   "f": "Defense, rebounding and 11 championships in 13 seasons"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Wilt Chamberlain's records",
+   "f": "The 100-point game of 1962 and his remarkable scoring seasons"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Oscar Robertson",
+   "f": "Averaging a triple-double for a full season in 1961-62"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Kareem's skyhook",
+   "f": "Kareem Abdul-Jabbar and one of the most unstoppable shots ever"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Magic and Bird",
+   "f": "How their 1980s rivalry lifted the whole league"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Michael Jordan's era",
+   "f": "Six titles with the Chicago Bulls in the 1990s and a global icon"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "The 1992 Dream Team",
+   "f": "The Barcelona Olympics and how it inspired players worldwide"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Women's legends",
+   "f": "Pioneers like Cheryl Miller, Lisa Leslie and Sheryl Swoopes"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Shaq and Kobe",
+   "f": "The Lakers' three straight titles from 2000 to 2002"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Tim Duncan's Spurs",
+   "f": "Fundamentals, team culture and five championships"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "LeBron James",
+   "f": "A long career of versatility, longevity and all-around excellence"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Stephen Curry's shooting",
+   "f": "How deep three-pointers changed the way teams play"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Global stars",
+   "f": "Players like Dirk Nowitzki, Pau Gasol, Manu Ginóbili and Tony Parker"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Diana Taurasi and Sue Bird",
+   "f": "Two record-setting WNBA careers and many Olympic gold medals"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Basketball in Lithuania",
+   "f": "A small nation with a giant love for the game"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Basketball in Serbia and the Balkans",
+   "f": "A tradition of smart passing and great coaching schools"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Basketball in Spain",
+   "f": "The ACB league, a golden generation and strong youth development"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Basketball in Argentina",
+   "f": "The golden generation and Olympic gold in Athens 2004"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Basketball in Brazil",
+   "f": "Oscar Schmidt, Hortência, Paula and a rich national history"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Basketball in China",
+   "f": "Yao Ming and the sport's enormous popularity"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Basketball in Africa",
+   "f": "Growing leagues, the Basketball Africa League and rising talent"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Basketball in the Philippines",
+   "f": "One of the most basketball-crazy countries in the world"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Basketball in France and Germany",
+   "f": "Strong national teams and growing professional leagues"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Basketball in Australia",
+   "f": "The NBL, the Boomers and the Opals on the world stage"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Wheelchair basketball",
+   "f": "Rules, player classification and the Paralympic game"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Fun drills with friends",
+   "f": "Games like HORSE, Around the World and Knockout"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Your basketball goals",
+   "f": "Setting personal goals for playing, watching or learning more"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Watching a game actively",
+   "f": "Tracking one player, one team plan and the key momentum swings"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: beginner level",
+   "f": "A celebration of everything learned in the first 120 days"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Intermediate level kickoff",
+   "f": "What changes now: reading the game, tactics and deeper skills"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Offense vs defense mindset",
+   "f": "How teams think about creating and denying good shots"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "The value of a possession",
+   "f": "Points per possession and why every trip down the floor counts"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Good shots vs bad shots",
+   "f": "Shot quality: open threes, layups and contested midrange jumpers"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Shot chart basics",
+   "f": "Reading where a player scores from on a shot chart"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "The corner three",
+   "f": "Why it is the shortest three-pointer and so valuable"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Pace of play",
+   "f": "Fast teams versus slow teams and how pace affects stats"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Advanced dribble combos",
+   "f": "Linking hesitation, crossover and spin into combinations"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "The hesitation move",
+   "f": "Freezing a defender with a sudden change of speed"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "The spin move",
+   "f": "Rolling off a defender while protecting the ball"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "The Euro step",
+   "f": "A side-to-side gather step popularized by European players"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "The step-back",
+   "f": "Creating space for a jumper by stepping away from the defender"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Finishing through contact",
+   "f": "Strong gathers, body control and the and-one"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Reverse layups",
+   "f": "Using the rim to shield the ball from shot blockers"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Post moves: drop step",
+   "f": "Sealing a defender and dropping to the basket"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Post moves: up-and-under",
+   "f": "The pump fake and step-through near the rim"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Hook shots",
+   "f": "A one-handed shot from the post that is hard to block"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Face-up game",
+   "f": "Turning to face the basket and attacking from the elbow"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Off-ball movement",
+   "f": "Cutting, relocating and using screens without the ball"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Pick-and-roll reads",
+   "f": "Ball handler options: shoot, drive, hit the roller or kick out"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Pick-and-pop",
+   "f": "When the screener steps out for a jumper instead of rolling"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Defending pick-and-roll: drop",
+   "f": "The big drops back to protect the rim"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Defending pick-and-roll: hedge",
+   "f": "A hard show to slow the ball handler, then a quick recovery"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Switching defense",
+   "f": "Exchanging assignments on screens and the mismatch problem"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Ice coverage",
+   "f": "Forcing side pick-and-rolls toward the baseline"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Blitzing the ball",
+   "f": "Trapping the ball handler with two defenders"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Hand-off actions",
+   "f": "Dribble hand-offs and why they work like moving screens"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Flare and pin-down screens",
+   "f": "Screens that free shooters away from the ball"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Stagger screens",
+   "f": "Two screens in a row to free a shooter"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Review: moves and coverages",
+   "f": "A recap of moves, post play and pick-and-roll coverages"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Motion offense",
+   "f": "Principles instead of set plays: pass, cut and screen"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "The triangle offense",
+   "f": "Tex Winter's system used by the Bulls and Lakers dynasties"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Princeton offense",
+   "f": "Backdoor cuts, passing and patience made famous by Pete Carril"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Flex offense",
+   "f": "Baseline screens and down screens in a continuous pattern"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Horns sets",
+   "f": "Two bigs at the elbows and the many options it creates"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Five-out offense",
+   "f": "All five players outside to open driving lanes"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Seven seconds or less",
+   "f": "The fast, spread offense of the mid-2000s Phoenix Suns"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Ball side and help side",
+   "f": "Understanding strong side and weak side in any offense"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Zone offense",
+   "f": "Attacking a zone with gaps, skip passes and the high post"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "The 1-3-1 zone",
+   "f": "An unusual zone that traps and confuses opponents"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "The 3-2 and 1-2-2 zones",
+   "f": "Zones that pressure shooters at the top"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Box-and-one and triangle-and-two",
+   "f": "Special defenses built to stop one or two star scorers"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Full-court press",
+   "f": "Pressure defenses like the 2-2-1 and the 1-2-1-1"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Breaking the press",
+   "f": "Spacing, passing and middle options against pressure"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Half-court traps",
+   "f": "Trapping in the corners and at half court"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Help and recover",
+   "f": "Rotations after a drive and the X-out drill"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Defensive rotations",
+   "f": "The tag, the sink and the dig in team defense"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Defending the post",
+   "f": "Fronting, three-quartering and playing behind"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Defending shooters",
+   "f": "Contesting without fouling and running shooters off the line"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Rebounding as a team",
+   "f": "Gang rebounding and keeping transition balance"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Offensive rebounding strategy",
+   "f": "When teams crash the boards and when they get back"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "End-of-quarter plays",
+   "f": "The two-for-one and the last shot of a quarter"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Late-game situations",
+   "f": "Fouling when behind, timeouts and clock management"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Advancing after a timeout",
+   "f": "How NBA rules let teams move the ball up after a late timeout"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "After-timeout plays",
+   "f": "Why coaches draw special sets out of timeouts"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Coaching from the sideline",
+   "f": "Substitution patterns, matchups and adjustments"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Halftime adjustments",
+   "f": "What coaches change in the locker room"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Scouting an opponent",
+   "f": "Tendencies, strengths and a simple game plan"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Watching film",
+   "f": "How players and coaches learn from video"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review: team tactics",
+   "f": "A recap of offenses, zones, presses and late-game strategy"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Great coaches: Red Auerbach",
+   "f": "Building the Celtics dynasty around defense and the fast break"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Great coaches: John Wooden",
+   "f": "UCLA's ten titles and the Pyramid of Success"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Great coaches: Phil Jackson",
+   "f": "Eleven NBA titles, the triangle and managing big stars"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Great coaches: Gregg Popovich",
+   "f": "The Spurs' culture of passing and international talent"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Great coaches: Pat Summitt",
+   "f": "Tennessee's women's program and eight national titles"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Great coaches in Europe",
+   "f": "Željko Obradović and the art of EuroLeague coaching"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Rule differences: NBA vs FIBA",
+   "f": "Court size, three-point distance, quarter length and foul limits"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Goaltending and interference",
+   "f": "When touching the ball or the rim is illegal"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Charge vs block",
+   "f": "The restricted area and how referees decide"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Flagrant and technical fouls",
+   "f": "Unsportsmanlike fouls and conduct penalties"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "The bonus and penalty",
+   "f": "Team fouls and when free throws start"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Instant replay",
+   "f": "When officials check the video and why"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Jump ball and possession arrow",
+   "f": "How possession is decided under different rule sets"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "The draft",
+   "f": "How young players join the NBA and the WNBA"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Free agency and trades",
+   "f": "How rosters change between seasons"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Salary cap basics",
+   "f": "Why leagues use caps to keep competition balanced"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Development leagues",
+   "f": "The G League and other paths to the pros"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Youth basketball pathways",
+   "f": "School teams, clubs, academies and scholarships"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "International competitions",
+   "f": "FIBA World Cup, EuroBasket, AmeriCup and AfroBasket"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "The EuroLeague Final Four",
+   "f": "A weekend format that crowns Europe's best club"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "NBA playoffs format",
+   "f": "Seven-game series, seeding and the play-in tournament"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "The NBA Finals",
+   "f": "History of the championship series and the Larry O'Brien Trophy"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "All-Star weekend",
+   "f": "The dunk contest, the three-point contest and the All-Star Game"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Famous dunk contests",
+   "f": "Iconic moments from Julius Erving to Vince Carter"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Awards: MVP and beyond",
+   "f": "MVP, Defensive Player, Rookie of the Year and Sixth Man awards"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "The Hall of Fame",
+   "f": "The Naismith Memorial Basketball Hall of Fame in Springfield"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Basketball in movies",
+   "f": "Classic films about the game and what they get right"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Basketball and fashion",
+   "f": "Sneaker culture and court style"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Basketball video games",
+   "f": "How games taught a generation about tactics and stats"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Review: the basketball world",
+   "f": "A recap of coaches, rules, leagues and culture"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "True shooting percentage",
+   "f": "A better shooting measure that includes threes and free throws"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Effective field goal percentage",
+   "f": "Giving extra weight to three-pointers"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Usage rate",
+   "f": "How much of a team's offense runs through one player"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Offensive and defensive rating",
+   "f": "Points scored and allowed per 100 possessions"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "The Four Factors",
+   "f": "Shooting, turnovers, rebounding and free throws, as described by Dean Oliver"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Assist-to-turnover ratio",
+   "f": "Measuring decision-making with the ball"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Rebound percentage",
+   "f": "Rebounds compared with the opportunities available"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "The analytics revolution",
+   "f": "Why teams now take more threes and shots at the rim"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "The midrange debate",
+   "f": "When the midrange jumper is still a valuable weapon"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Player tracking data",
+   "f": "Speed, distance and touches measured by cameras"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Shooting drills with numbers",
+   "f": "Tracking makes and misses to see real progress"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Building a practice plan",
+   "f": "Warm-up, skill blocks, scrimmage and cool-down"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Ball-handling circuits",
+   "f": "Two-ball dribbling, cones and tennis-ball drills"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Finishing drills",
+   "f": "The Mikan drill and its variations around the rim"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Shooting progression",
+   "f": "Form shooting close to the rim, then stepping back"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Defensive drills",
+   "f": "Shell drill, zigzag drill and closeout drills"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Passing drills",
+   "f": "Partner passing, the three-man weave and outlet drills"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Small-sided games",
+   "f": "2-on-2 and 3-on-3 to learn reading and spacing"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Basketball IQ",
+   "f": "Anticipation, reading defenders and making the simple play"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Mental toughness",
+   "f": "Confidence after misses and staying focused"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Focus under pressure",
+   "f": "Breathing and routines for tight moments"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Leadership on court",
+   "f": "Captains, communication and setting the tone"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Body language",
+   "f": "How posture and energy affect teammates"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Handling losses",
+   "f": "Learning from defeats and bouncing back"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Sportsmanship",
+   "f": "Respecting opponents, referees and fans"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Playing in a league",
+   "f": "Joining an amateur league or club team"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Officiating basics",
+   "f": "What it takes to referee a local game"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Keeping stats at a game",
+   "f": "Scoring a game by hand or with an app"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Coaching kids",
+   "f": "Fun first, simple drills and positive feedback"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Famous rivalries",
+   "f": "Celtics versus Lakers and other classic duels on court"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Historic comebacks",
+   "f": "Great turnarounds and what made them possible"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Iconic buzzer-beaters",
+   "f": "Last-second shots that fans still remember"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Great Olympic moments",
+   "f": "Memorable Olympic finals from the 1936 debut to modern times"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Underdog stories",
+   "f": "Teams that surprised everyone"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Team chemistry",
+   "f": "Why the best teams are more than five stars"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Role players",
+   "f": "Specialists who help teams win: defenders, shooters and glue players"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Sixth men and bench units",
+   "f": "The art of coming off the bench"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Your favorite team deep dive",
+   "f": "Analyzing a team's style, roster and history"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Planning your next steps",
+   "f": "Choosing focus areas for the advanced level"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Review: intermediate level",
+   "f": "A celebration of intermediate tactics, stats and culture"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Advanced level kickoff",
+   "f": "What advanced study looks like: systems, analytics and craft"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Positionless basketball",
+   "f": "Why modern teams value versatile players over fixed roles"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "The point forward",
+   "f": "Big playmakers who run the offense"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Stretch bigs",
+   "f": "Centers and forwards who shoot threes and pull defenders away"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Small-ball lineups",
+   "f": "Trading size for speed and shooting"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Two-big lineups today",
+   "f": "Playing two big men together in the modern game"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Rim protection metrics",
+   "f": "How analysts measure a defender's impact at the rim"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Spain pick-and-roll",
+   "f": "A back screen on the roller's defender, popularized by Spain"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Chicago action",
+   "f": "A pin-down screen flowing into a dribble hand-off"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Floppy sets",
+   "f": "A shooter chooses between screens on either side"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Elevator screens",
+   "f": "Two screeners closing the door on a chasing defender"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Hammer action",
+   "f": "A baseline drive and a corner three behind a back screen"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Ram screens",
+   "f": "A screen for the screener before a pick-and-roll"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Delay offense",
+   "f": "Big men at the top of the key as passing hubs"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Read-and-react offense",
+   "f": "A teaching system built on reading defenders"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Dribble-drive motion",
+   "f": "Spacing for constant drives, developed by Vance Walberg"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Pace-and-space systems",
+   "f": "Spreading the floor to create drives and threes"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Heliocentric offense",
+   "f": "Building everything around one main creator"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Ball movement offense",
+   "f": "The beautiful passing game of the 2014 Spurs"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Shot creation vs shot making",
+   "f": "Creating your own shot compared with converting chances"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Gravity",
+   "f": "How great shooters pull defenders and open space for others"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Advanced pick-and-roll defense",
+   "f": "Mixing coverages and disguising them"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Pre-switching and scram switches",
+   "f": "Fixing mismatches before and after they happen"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "No-middle defense",
+   "f": "Forcing drives to the baseline with help waiting behind"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Pack line defense",
+   "f": "Sagging help defense taught by Dick Bennett and Tony Bennett"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Matchup zones",
+   "f": "Zones that behave like man-to-man"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Defending elite shooters",
+   "f": "Top-locking, trailing and switching screens"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Defending star creators",
+   "f": "Showing crowds and forcing the ball out of their hands"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Defensive communication systems",
+   "f": "Code words and calls teams use on defense"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Review: advanced systems",
+   "f": "A recap of modern lineups, actions and defensive schemes"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Footwork masterclass",
+   "f": "Gathers, pivots and balance in elite scorers"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Hakeem's Dream Shake",
+   "f": "Hakeem Olajuwon's legendary post footwork"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Dirk's one-legged fadeaway",
+   "f": "A nearly unblockable signature shot and its imitators"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "The pull-up three",
+   "f": "Shooting off the dribble from long range"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Footwork for shooters",
+   "f": "The 1-2 step versus the hop into the shot"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Change of pace",
+   "f": "Speed variation as the real secret of great drivers"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Reading help defense",
+   "f": "Seeing the tagging defender and making the right pass"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Skip passes and kick-outs",
+   "f": "Moving the ball faster than defenders can rotate"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Lobs and alley-oops",
+   "f": "Timing and touch for the highlight pass"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Hockey assists",
+   "f": "The pass before the assist and how to value it"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Elite playmaking",
+   "f": "Studying passers like Magic Johnson, Steve Nash and Chris Paul"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Offensive rebounding craft",
+   "f": "Angles, tip-outs and second-chance points"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Elite shot blocking",
+   "f": "Verticality and timing from great rim protectors"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Perimeter defense craft",
+   "f": "Hands, feet and anticipation from top stoppers"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Drawing fouls",
+   "f": "Getting to the line by creating contact legally"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Free-throw science",
+   "f": "Arc, rotation and consistency at the line"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Shooting mechanics deep dive",
+   "f": "Arc, entry angle and backspin"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "One-motion vs two-motion shots",
+   "f": "Different shooting styles and their trade-offs"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Ambidextrous finishing",
+   "f": "Finishing with either hand from either side"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Building a signature move",
+   "f": "Developing your personal go-to shot"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Strength training for players",
+   "f": "General principles of building strength for the court"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Speed and agility work",
+   "f": "Lateral quickness, first step and change of direction"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Load management",
+   "f": "Why teams monitor minutes and rest players"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Sleep and performance",
+   "f": "General information on rest and recovery for athletes"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Nutrition basics for athletes",
+   "f": "General information on fueling for training and games"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Long careers",
+   "f": "How great players adapt their games as they get older"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Sports psychology",
+   "f": "Visualization, self-talk and focus routines"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Flow on the court",
+   "f": "What being in the zone means and how players describe it"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Clutch performance",
+   "f": "Pressure, decision-making and confidence late in games"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Review: elite skills",
+   "f": "A recap of advanced footwork, playmaking and physical preparation"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Game planning like a coach",
+   "f": "Building a full plan for a specific opponent"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Matchup hunting",
+   "f": "Finding and attacking the weakest defender"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Counter-adjustments",
+   "f": "Responding when the opponent changes strategy"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Playoff basketball",
+   "f": "Why the game changes in a seven-game series"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Series adjustments",
+   "f": "How coaches adapt from game to game in the playoffs"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Rotation management",
+   "f": "Minutes, staggering stars and bench units"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Timeout strategy",
+   "f": "When to call a timeout and when to let players play"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Coach's challenge strategy",
+   "f": "Using challenges wisely at the right moments"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "End-game math",
+   "f": "Fouling up three, the two-for-one and smart clock decisions"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Win probability models",
+   "f": "How analysts estimate each team's chances during a game"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Lineup data",
+   "f": "Net rating of five-man units and the problem of small samples"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Impact metrics",
+   "f": "Measures like RAPM and BPM, and their limits"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Defensive analytics",
+   "f": "Why defense is the hardest part of the game to measure"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Scouting reports",
+   "f": "Writing a clear, useful report on a player"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Evaluating prospects",
+   "f": "What scouts look for in young players"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Building a roster",
+   "f": "Balancing stars, shooters, defenders and depth"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Team culture",
+   "f": "How organizations build lasting winning habits"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Front office roles",
+   "f": "General managers, scouts and analysts"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Player development programs",
+   "f": "How teams grow young talent"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "International scouting",
+   "f": "Finding talent in leagues around the world"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "History of the three-point line",
+   "f": "From the ABA to the NBA in 1979 and FIBA in 1984"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "The ABA story",
+   "f": "Red, white and blue balls, the slam dunk and a lasting legacy"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Birth of the shot clock",
+   "f": "Danny Biasone and the 24-second clock of 1954"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Rule changes that shaped the game",
+   "f": "Wider lanes, hand-checking rules and freedom of movement"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Evolution of the center",
+   "f": "From Mikan to modern passing and shooting big men"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Evolution of the point guard",
+   "f": "From pass-first organizers to scoring creators"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Evolution of women's basketball",
+   "f": "From six-player rules to today's professional leagues"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Great European clubs",
+   "f": "Real Madrid, CSKA Moscow, Maccabi Tel Aviv, Olympiacos, Panathinaikos and more"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Yugoslavia's golden teams",
+   "f": "Legendary national teams and the great players they produced"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Review: history and evolution",
+   "f": "A recap of rule history, eras and roster building"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Analyzing a classic game",
+   "f": "Breaking down a famous game possession by possession"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Comparing eras",
+   "f": "Pace, rules and why comparisons across decades are tricky"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "The greatest of all time debate",
+   "f": "The criteria fans use and why opinions differ"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Great teams compared",
+   "f": "What made dynasties like the 1990s Bulls and 2010s Warriors special"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Women's dynasties",
+   "f": "The Houston Comets, the Minnesota Lynx and the UConn Huskies"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Basketball as a bridge",
+   "f": "How the sport connects people and cultures across borders"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Basketball and community",
+   "f": "Public courts, youth programs and local leagues"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Courts and arenas by design",
+   "f": "How courts, arenas and public spaces are designed"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Basketball media",
+   "f": "How broadcasts, podcasts and writing shape the game"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Researching players and teams",
+   "f": "Using stats sites and good writing to learn more"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Design your own play",
+   "f": "Drawing a set play with a purpose and counters"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Design your own defense",
+   "f": "Choosing a defensive identity for a team"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Coaching philosophy",
+   "f": "Defining your values, style and way of teaching"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Teaching the game",
+   "f": "Explaining skills clearly to beginners"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Self-scouting your game",
+   "f": "Honestly reviewing your strengths and weaknesses"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Creating a training season",
+   "f": "Planning months of practice with clear goals"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Organizing a tournament",
+   "f": "Brackets, schedules and friendly competition"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Basketball travel ideas",
+   "f": "Visiting famous courts, arenas and museums around the world"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Basketball across cultures",
+   "f": "What different countries bring to the game"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "The future of basketball",
+   "f": "Trends in shooting, skills and global growth"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Your basketball story",
+   "f": "Reflecting on how your view of the game has changed"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Teaching a friend",
+   "f": "Explaining one concept to someone new to basketball"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Your personal playbook",
+   "f": "Collecting your favorite ideas, plays and drills"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Final review",
+   "f": "Looking back at the biggest lessons of the year"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Celebration day",
+   "f": "Celebrating 365 days of basketball and setting new goals"
+  }
+ ]
+}

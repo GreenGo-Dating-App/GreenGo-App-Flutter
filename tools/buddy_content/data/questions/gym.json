@@ -1,0 +1,1305 @@
+{
+"topic": "gym",
+"questions": [
+{
+"id": "gym-001",
+"lv": "any",
+"i18n": {
+"en": "What got you interested in going to the gym?",
+"de": "Wie bist du darauf gekommen, ins Fitnessstudio zu gehen?",
+"es": "¿Qué te animó a empezar a ir al gimnasio?",
+"fr": "Qu'est-ce qui t'a donné envie d'aller à la salle de sport ?",
+"it": "Cosa ti ha fatto venire voglia di andare in palestra?",
+"pt": "O que te fez ganhar interesse pelo ginásio?",
+"pt_BR": "O que despertou seu interesse pela academia?"
+}
+},
+{
+"id": "gym-002",
+"lv": "any",
+"i18n": {
+"en": "What does a typical training week look like for you right now?",
+"de": "Wie sieht bei dir gerade eine typische Trainingswoche aus?",
+"es": "¿Cómo es ahora mismo una semana normal de entrenamiento para ti?",
+"fr": "À quoi ressemble ta semaine d'entraînement type en ce moment ?",
+"it": "Com'è in questo periodo la tua settimana tipo di allenamento?",
+"pt": "Como é neste momento uma semana normal de treino para ti?",
+"pt_BR": "Como é hoje uma semana típica de treino para você?"
+}
+},
+{
+"id": "gym-003",
+"lv": "any",
+"i18n": {
+"en": "Which exercise do you enjoy the most, and why?",
+"de": "Welche Übung machst du am liebsten, und warum?",
+"es": "¿Qué ejercicio es el que más disfrutas y por qué?",
+"fr": "Quel exercice préfères-tu, et pourquoi ?",
+"it": "Quale esercizio ti piace di più, e perché?",
+"pt": "Qual é o exercício de que mais gostas, e porquê?",
+"pt_BR": "Qual exercício você mais curte, e por quê?"
+}
+},
+{
+"id": "gym-004",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer training in the morning, at lunchtime or in the evening?",
+"de": "Trainierst du lieber morgens, mittags oder abends?",
+"es": "¿Prefieres entrenar por la mañana, al mediodía o por la tarde-noche?",
+"fr": "Tu préfères t'entraîner le matin, le midi ou le soir ?",
+"it": "Preferisci allenarti la mattina, in pausa pranzo o la sera?",
+"pt": "Preferes treinar de manhã, à hora de almoço ou à noite?",
+"pt_BR": "Você prefere treinar de manhã, na hora do almoço ou à noite?"
+}
+},
+{
+"id": "gym-005",
+"lv": "any",
+"i18n": {
+"en": "Do you like training alone, with a friend or in a group class?",
+"de": "Trainierst du lieber allein, mit einem Freund oder in einem Kurs?",
+"es": "¿Te gusta entrenar solo, con un amigo o en una clase en grupo?",
+"fr": "Tu aimes t'entraîner seul, avec un ami ou en cours collectif ?",
+"it": "Ti piace allenarti da solo, con un amico o in un corso di gruppo?",
+"pt": "Gostas de treinar sozinho, com um amigo ou numa aula de grupo?",
+"pt_BR": "Você gosta de treinar sozinho, com um amigo ou em aula coletiva?"
+}
+},
+{
+"id": "gym-006",
+"lv": "any",
+"i18n": {
+"en": "What is your main goal with training at the moment?",
+"de": "Was ist im Moment dein wichtigstes Trainingsziel?",
+"es": "¿Cuál es tu principal objetivo de entrenamiento ahora mismo?",
+"fr": "Quel est ton objectif principal d'entraînement en ce moment ?",
+"it": "Qual è il tuo obiettivo principale di allenamento in questo periodo?",
+"pt": "Qual é neste momento o teu principal objetivo de treino?",
+"pt_BR": "Qual é o seu principal objetivo de treino no momento?"
+}
+},
+{
+"id": "gym-007",
+"lv": "any",
+"i18n": {
+"en": "What kind of music, if any, do you listen to while training?",
+"de": "Welche Musik hörst du beim Training, wenn überhaupt?",
+"es": "¿Qué música escuchas al entrenar, si es que escuchas alguna?",
+"fr": "Quelle musique écoutes-tu pendant l'entraînement, si tu en écoutes ?",
+"it": "Che musica ascolti mentre ti alleni, se ne ascolti?",
+"pt": "Que música ouves enquanto treinas, se ouves alguma?",
+"pt_BR": "Que tipo de música você ouve no treino, se é que ouve?"
+}
+},
+{
+"id": "gym-008",
+"lv": "any",
+"i18n": {
+"en": "How do you feel right after a good workout?",
+"de": "Wie fühlst du dich direkt nach einem guten Training?",
+"es": "¿Cómo te sientes justo después de un buen entrenamiento?",
+"fr": "Comment te sens-tu juste après une bonne séance ?",
+"it": "Come ti senti subito dopo un bell'allenamento?",
+"pt": "Como te sentes logo a seguir a um bom treino?",
+"pt_BR": "Como você se sente logo depois de um bom treino?"
+}
+},
+{
+"id": "gym-009",
+"lv": "any",
+"i18n": {
+"en": "What keeps you motivated on days when you do not feel like training?",
+"de": "Was motiviert dich an Tagen, an denen du keine Lust auf Training hast?",
+"es": "¿Qué te motiva los días en que no tienes ganas de entrenar?",
+"fr": "Qu'est-ce qui te motive les jours où tu n'as pas envie de t'entraîner ?",
+"it": "Cosa ti motiva nei giorni in cui non hai voglia di allenarti?",
+"pt": "O que te motiva nos dias em que não te apetece treinar?",
+"pt_BR": "O que te motiva nos dias em que você não está a fim de treinar?"
+}
+},
+{
+"id": "gym-010",
+"lv": "any",
+"i18n": {
+"en": "Which exercise do you find the most challenging?",
+"de": "Welche Übung findest du am anspruchsvollsten?",
+"es": "¿Qué ejercicio te resulta más difícil?",
+"fr": "Quel exercice trouves-tu le plus difficile ?",
+"it": "Quale esercizio trovi più impegnativo?",
+"pt": "Que exercício achas mais desafiante?",
+"pt_BR": "Qual exercício você acha mais desafiador?"
+}
+},
+{
+"id": "gym-011",
+"lv": "any",
+"i18n": {
+"en": "What do you like most about your gym or training space?",
+"de": "Was gefällt dir an deinem Studio oder Trainingsort am besten?",
+"es": "¿Qué es lo que más te gusta de tu gimnasio o lugar de entrenamiento?",
+"fr": "Qu'est-ce que tu aimes le plus dans ta salle ou ton espace d'entraînement ?",
+"it": "Cosa ti piace di più della tua palestra o del posto dove ti alleni?",
+"pt": "O que mais gostas no teu ginásio ou espaço de treino?",
+"pt_BR": "O que você mais gosta na sua academia ou espaço de treino?"
+}
+},
+{
+"id": "gym-012",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer free weights, machines or bodyweight exercises?",
+"de": "Magst du lieber freie Gewichte, Geräte oder Übungen mit dem eigenen Körpergewicht?",
+"es": "¿Prefieres pesos libres, máquinas o ejercicios con tu propio peso?",
+"fr": "Tu préfères les poids libres, les machines ou le poids du corps ?",
+"it": "Preferisci pesi liberi, macchine o esercizi a corpo libero?",
+"pt": "Preferes pesos livres, máquinas ou exercícios com o peso do corpo?",
+"pt_BR": "Você prefere pesos livres, máquinas ou exercícios com o peso do corpo?"
+}
+},
+{
+"id": "gym-013",
+"lv": "any",
+"i18n": {
+"en": "How does training fit into the rest of your day?",
+"de": "Wie passt das Training in den Rest deines Tages?",
+"es": "¿Cómo encaja el entrenamiento en el resto de tu día?",
+"fr": "Comment l'entraînement s'intègre-t-il dans le reste de ta journée ?",
+"it": "Come si inserisce l'allenamento nel resto della tua giornata?",
+"pt": "Como é que o treino encaixa no resto do teu dia?",
+"pt_BR": "Como o treino se encaixa no resto do seu dia?"
+}
+},
+{
+"id": "gym-014",
+"lv": "any",
+"i18n": {
+"en": "What is a small win in the gym you were proud of?",
+"de": "Auf welchen kleinen Erfolg im Studio warst du stolz?",
+"es": "¿De qué pequeño logro en el gimnasio te sentiste orgulloso?",
+"fr": "De quelle petite victoire à la salle as-tu été fier ?",
+"it": "Di quale piccolo traguardo in palestra sei stato fiero?",
+"pt": "De que pequena vitória no ginásio te orgulhaste?",
+"pt_BR": "De qual pequena conquista na academia você sentiu orgulho?"
+}
+},
+{
+"id": "gym-015",
+"lv": "any",
+"i18n": {
+"en": "Besides the gym, which sports or activities do you enjoy?",
+"de": "Welche Sportarten oder Aktivitäten machst du neben dem Studio gern?",
+"es": "Además del gimnasio, ¿qué deportes o actividades te gustan?",
+"fr": "En dehors de la salle, quels sports ou activités aimes-tu ?",
+"it": "Oltre alla palestra, quali sport o attività ti piacciono?",
+"pt": "Além do ginásio, de que desportos ou atividades gostas?",
+"pt_BR": "Além da academia, de quais esportes ou atividades você gosta?"
+}
+},
+{
+"id": "gym-016",
+"lv": "any",
+"i18n": {
+"en": "How do you usually warm up before training?",
+"de": "Wie wärmst du dich normalerweise vor dem Training auf?",
+"es": "¿Cómo sueles calentar antes de entrenar?",
+"fr": "Comment t'échauffes-tu d'habitude avant l'entraînement ?",
+"it": "Come ti riscaldi di solito prima dell'allenamento?",
+"pt": "Como costumas aquecer antes de treinar?",
+"pt_BR": "Como você costuma aquecer antes do treino?"
+}
+},
+{
+"id": "gym-017",
+"lv": "any",
+"i18n": {
+"en": "Do you keep track of your workouts? How?",
+"de": "Hältst du deine Trainingseinheiten fest? Wie?",
+"es": "¿Llevas un registro de tus entrenamientos? ¿Cómo?",
+"fr": "Est-ce que tu notes tes séances ? Comment ?",
+"it": "Tieni traccia dei tuoi allenamenti? Come?",
+"pt": "Registas os teus treinos? Como?",
+"pt_BR": "Você registra seus treinos? Como?"
+}
+},
+{
+"id": "gym-018",
+"lv": "any",
+"i18n": {
+"en": "What does a good rest day look like for you?",
+"de": "Wie sieht für dich ein guter Ruhetag aus?",
+"es": "¿Cómo es para ti un buen día de descanso?",
+"fr": "À quoi ressemble pour toi une bonne journée de repos ?",
+"it": "Com'è per te una buona giornata di riposo?",
+"pt": "Como é para ti um bom dia de descanso?",
+"pt_BR": "Como é um bom dia de descanso para você?"
+}
+},
+{
+"id": "gym-019",
+"lv": "any",
+"i18n": {
+"en": "Who or what inspires you when it comes to fitness?",
+"de": "Wer oder was inspiriert dich beim Thema Fitness?",
+"es": "¿Quién o qué te inspira en el mundo del fitness?",
+"fr": "Qui ou qu'est-ce qui t'inspire en matière de fitness ?",
+"it": "Chi o cosa ti ispira quando si parla di fitness?",
+"pt": "Quem ou o que te inspira no que toca ao fitness?",
+"pt_BR": "Quem ou o que te inspira quando o assunto é treino?"
+}
+},
+{
+"id": "gym-020",
+"lv": "any",
+"i18n": {
+"en": "How has training changed your everyday energy or mood?",
+"de": "Wie hat das Training deine Energie oder Stimmung im Alltag verändert?",
+"es": "¿Cómo ha cambiado el entrenamiento tu energía o tu ánimo en el día a día?",
+"fr": "Comment l'entraînement a-t-il changé ton énergie ou ton humeur au quotidien ?",
+"it": "Come ha cambiato l'allenamento la tua energia o il tuo umore quotidiano?",
+"pt": "Como é que o treino mudou a tua energia ou o teu humor no dia a dia?",
+"pt_BR": "Como o treino mudou sua energia ou seu humor no dia a dia?"
+}
+},
+{
+"id": "gym-021",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer short intense sessions or longer relaxed ones?",
+"de": "Magst du lieber kurze, intensive Einheiten oder längere, entspannte?",
+"es": "¿Prefieres sesiones cortas e intensas o largas y tranquilas?",
+"fr": "Tu préfères les séances courtes et intenses ou longues et tranquilles ?",
+"it": "Preferisci sessioni brevi e intense o lunghe e tranquille?",
+"pt": "Preferes sessões curtas e intensas ou mais longas e calmas?",
+"pt_BR": "Você prefere sessões curtas e intensas ou mais longas e tranquilas?"
+}
+},
+{
+"id": "gym-022",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to cool down after a workout?",
+"de": "Wie kommst du nach dem Training am liebsten zur Ruhe?",
+"es": "¿Cuál es tu forma favorita de volver a la calma después de entrenar?",
+"fr": "Quelle est ta façon préférée de récupérer en fin de séance ?",
+"it": "Qual è il tuo modo preferito di defaticare dopo l'allenamento?",
+"pt": "Qual é a tua forma preferida de relaxar no fim do treino?",
+"pt_BR": "Qual é seu jeito favorito de desacelerar depois do treino?"
+}
+},
+{
+"id": "gym-023",
+"lv": "any",
+"i18n": {
+"en": "Is there a gym habit you are working on improving?",
+"de": "Gibt es eine Trainingsgewohnheit, an der du gerade arbeitest?",
+"es": "¿Hay algún hábito de gimnasio que estés intentando mejorar?",
+"fr": "Y a-t-il une habitude d'entraînement que tu essaies d'améliorer ?",
+"it": "C'è un'abitudine in palestra che stai cercando di migliorare?",
+"pt": "Há algum hábito de treino que estejas a tentar melhorar?",
+"pt_BR": "Tem algum hábito de treino que você está tentando melhorar?"
+}
+},
+{
+"id": "gym-024",
+"lv": "any",
+"i18n": {
+"en": "What do you wish you had known when you first started training?",
+"de": "Was hättest du gern gewusst, als du mit dem Training angefangen hast?",
+"es": "¿Qué te habría gustado saber cuando empezaste a entrenar?",
+"fr": "Qu'aurais-tu aimé savoir quand tu as commencé à t'entraîner ?",
+"it": "Cosa avresti voluto sapere quando hai iniziato ad allenarti?",
+"pt": "O que gostavas de ter sabido quando começaste a treinar?",
+"pt_BR": "O que você gostaria de ter sabido quando começou a treinar?"
+}
+},
+{
+"id": "gym-025",
+"lv": "any",
+"i18n": {
+"en": "Do you train at a gym, at home, outdoors or a mix?",
+"de": "Trainierst du im Studio, zu Hause, draußen oder gemischt?",
+"es": "¿Entrenas en el gimnasio, en casa, al aire libre o un poco de todo?",
+"fr": "Tu t'entraînes en salle, à la maison, dehors ou un peu partout ?",
+"it": "Ti alleni in palestra, a casa, all'aperto o un po' ovunque?",
+"pt": "Treinas no ginásio, em casa, ao ar livre ou um pouco de tudo?",
+"pt_BR": "Você treina na academia, em casa, ao ar livre ou um pouco de cada?"
+}
+},
+{
+"id": "gym-026",
+"lv": "any",
+"i18n": {
+"en": "What is the best piece of gym advice anyone ever gave you?",
+"de": "Was ist der beste Trainingstipp, den dir je jemand gegeben hat?",
+"es": "¿Cuál es el mejor consejo de gimnasio que te han dado?",
+"fr": "Quel est le meilleur conseil de salle qu'on t'ait jamais donné ?",
+"it": "Qual è il miglior consiglio sulla palestra che ti abbiano mai dato?",
+"pt": "Qual foi o melhor conselho de ginásio que alguém te deu?",
+"pt_BR": "Qual foi o melhor conselho de academia que alguém já te deu?"
+}
+},
+{
+"id": "gym-027",
+"lv": "any",
+"i18n": {
+"en": "How do you balance training with work, studies or family?",
+"de": "Wie bringst du Training mit Arbeit, Studium oder Familie unter einen Hut?",
+"es": "¿Cómo equilibras el entrenamiento con el trabajo, los estudios o la familia?",
+"fr": "Comment concilies-tu l'entraînement avec le travail, les études ou la famille ?",
+"it": "Come concili l'allenamento con lavoro, studio o famiglia?",
+"pt": "Como equilibras o treino com o trabalho, os estudos ou a família?",
+"pt_BR": "Como você equilibra o treino com trabalho, estudos ou família?"
+}
+},
+{
+"id": "gym-028",
+"lv": "any",
+"i18n": {
+"en": "Have you ever tried a workout or class that surprised you?",
+"de": "Hast du schon mal ein Training oder einen Kurs ausprobiert, der dich überrascht hat?",
+"es": "¿Has probado alguna vez un entrenamiento o una clase que te sorprendiera?",
+"fr": "As-tu déjà essayé une séance ou un cours qui t'a surpris ?",
+"it": "Hai mai provato un allenamento o un corso che ti ha sorpreso?",
+"pt": "Já experimentaste algum treino ou aula que te surpreendeu?",
+"pt_BR": "Você já experimentou algum treino ou aula que te surpreendeu?"
+}
+},
+{
+"id": "gym-029",
+"lv": "any",
+"i18n": {
+"en": "What do you usually bring in your gym bag?",
+"de": "Was hast du normalerweise in deiner Sporttasche dabei?",
+"es": "¿Qué sueles llevar en tu bolsa de deporte?",
+"fr": "Qu'emportes-tu d'habitude dans ton sac de sport ?",
+"it": "Cosa porti di solito nella tua borsa da palestra?",
+"pt": "O que costumas levar no teu saco de ginásio?",
+"pt_BR": "O que você costuma levar na sua mochila de academia?"
+}
+},
+{
+"id": "gym-030",
+"lv": "any",
+"i18n": {
+"en": "What makes a gym feel welcoming to you?",
+"de": "Wodurch fühlt sich ein Fitnessstudio für dich einladend an?",
+"es": "¿Qué hace que un gimnasio te resulte acogedor?",
+"fr": "Qu'est-ce qui rend une salle de sport accueillante à tes yeux ?",
+"it": "Cosa rende una palestra accogliente per te?",
+"pt": "O que faz um ginásio parecer acolhedor para ti?",
+"pt_BR": "O que faz uma academia parecer acolhedora para você?"
+}
+},
+{
+"id": "gym-031",
+"lv": "any",
+"i18n": {
+"en": "If you could master one exercise perfectly, which would it be?",
+"de": "Wenn du eine Übung perfekt beherrschen könntest, welche wäre es?",
+"es": "Si pudieras dominar a la perfección un ejercicio, ¿cuál sería?",
+"fr": "Si tu pouvais maîtriser parfaitement un exercice, lequel choisirais-tu ?",
+"it": "Se potessi padroneggiare alla perfezione un esercizio, quale sceglieresti?",
+"pt": "Se pudesses dominar na perfeição um exercício, qual seria?",
+"pt_BR": "Se você pudesse dominar um exercício com perfeição, qual seria?"
+}
+},
+{
+"id": "gym-032",
+"lv": "any",
+"i18n": {
+"en": "How do you celebrate reaching a training goal?",
+"de": "Wie feierst du, wenn du ein Trainingsziel erreicht hast?",
+"es": "¿Cómo celebras cuando alcanzas un objetivo de entrenamiento?",
+"fr": "Comment fêtes-tu un objectif d'entraînement atteint ?",
+"it": "Come festeggi quando raggiungi un obiettivo di allenamento?",
+"pt": "Como celebras quando atinges um objetivo de treino?",
+"pt_BR": "Como você comemora quando alcança uma meta de treino?"
+}
+},
+{
+"id": "gym-033",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you love about gym culture, and one you would change?",
+"de": "Was magst du an der Fitnesskultur, und was würdest du ändern?",
+"es": "¿Qué te encanta de la cultura del gimnasio y qué cambiarías?",
+"fr": "Qu'est-ce que tu adores dans la culture de la salle, et que changerais-tu ?",
+"it": "Cosa ami della cultura della palestra, e cosa cambieresti?",
+"pt": "De que gostas muito na cultura do ginásio, e o que mudarias?",
+"pt_BR": "O que você adora na cultura da academia, e o que mudaria?"
+}
+},
+{
+"id": "gym-034",
+"lv": "any",
+"i18n": {
+"en": "Have you ever visited a gym while travelling? What was it like?",
+"de": "Warst du auf Reisen schon mal in einem fremden Studio? Wie war es?",
+"es": "¿Has ido alguna vez a un gimnasio estando de viaje? ¿Qué tal fue?",
+"fr": "Es-tu déjà allé dans une salle en voyage ? C'était comment ?",
+"it": "Sei mai andato in palestra durante un viaggio? Com'è stato?",
+"pt": "Já foste a um ginásio durante uma viagem? Como foi?",
+"pt_BR": "Você já treinou numa academia durante uma viagem? Como foi?"
+}
+},
+{
+"id": "gym-035",
+"lv": "any",
+"i18n": {
+"en": "How do you know when it is time to take an extra rest day?",
+"de": "Woran merkst du, dass ein zusätzlicher Ruhetag angesagt ist?",
+"es": "¿Cómo sabes cuándo te conviene tomarte un día extra de descanso?",
+"fr": "Comment sais-tu qu'il est temps de prendre un jour de repos en plus ?",
+"it": "Come capisci quando è il momento di prenderti un giorno di riposo in più?",
+"pt": "Como sabes quando é altura de tirar um dia extra de descanso?",
+"pt_BR": "Como você sabe que é hora de tirar um dia extra de descanso?"
+}
+},
+{
+"id": "gym-036",
+"lv": "any",
+"i18n": {
+"en": "What would your dream home gym include?",
+"de": "Was gehört für dich in ein Traum-Heimstudio?",
+"es": "¿Qué tendría el gimnasio en casa de tus sueños?",
+"fr": "Que contiendrait ta salle de sport idéale à la maison ?",
+"it": "Cosa ci sarebbe nella palestra di casa dei tuoi sogni?",
+"pt": "O que teria o ginásio caseiro dos teus sonhos?",
+"pt_BR": "O que teria a academia em casa dos seus sonhos?"
+}
+},
+{
+"id": "gym-037",
+"lv": "any",
+"i18n": {
+"en": "What role does stretching or mobility work play in your routine?",
+"de": "Welche Rolle spielen Dehnen oder Mobilitätstraining in deiner Routine?",
+"es": "¿Qué papel tienen los estiramientos o la movilidad en tu rutina?",
+"fr": "Quelle place ont les étirements ou la mobilité dans ta routine ?",
+"it": "Che ruolo hanno lo stretching o la mobilità nella tua routine?",
+"pt": "Que papel têm os alongamentos ou a mobilidade na tua rotina?",
+"pt_BR": "Qual é o papel do alongamento ou da mobilidade na sua rotina?"
+}
+},
+{
+"id": "gym-038",
+"lv": "any",
+"i18n": {
+"en": "How do you like to mix cardio and strength training?",
+"de": "Wie kombinierst du gern Ausdauer- und Krafttraining?",
+"es": "¿Cómo te gusta combinar cardio y fuerza?",
+"fr": "Comment aimes-tu combiner cardio et musculation ?",
+"it": "Come ti piace combinare cardio e allenamento di forza?",
+"pt": "Como gostas de combinar cardio e treino de força?",
+"pt_BR": "Como você gosta de combinar cardio e musculação?"
+}
+},
+{
+"id": "gym-039",
+"lv": "any",
+"i18n": {
+"en": "Is there a sport or athlete that made you want to get stronger?",
+"de": "Gibt es eine Sportart oder einen Sportler, der dich zum Krafttraining motiviert hat?",
+"es": "¿Hay algún deporte o deportista que te dio ganas de ponerte más fuerte?",
+"fr": "Y a-t-il un sport ou un athlète qui t'a donné envie de devenir plus fort ?",
+"it": "C'è uno sport o un atleta che ti ha fatto venire voglia di diventare più forte?",
+"pt": "Há algum desporto ou atleta que te deu vontade de ficar mais forte?",
+"pt_BR": "Tem algum esporte ou atleta que te deu vontade de ficar mais forte?"
+}
+},
+{
+"id": "gym-040",
+"lv": "any",
+"i18n": {
+"en": "What would you say to a friend who is nervous about going to the gym?",
+"de": "Was würdest du einem Freund sagen, der nervös vor seinem ersten Studiobesuch ist?",
+"es": "¿Qué le dirías a un amigo al que le da corte ir al gimnasio?",
+"fr": "Que dirais-tu à un ami qui appréhende d'aller à la salle ?",
+"it": "Cosa diresti a un amico che è nervoso all'idea di andare in palestra?",
+"pt": "O que dirias a um amigo que está nervoso por ir ao ginásio?",
+"pt_BR": "O que você diria a um amigo que está nervoso para ir à academia?"
+}
+},
+{
+"id": "gym-041",
+"lv": "beginner",
+"i18n": {
+"en": "How long have you been training, or are you just starting out?",
+"de": "Wie lange trainierst du schon, oder fängst du gerade erst an?",
+"es": "¿Cuánto tiempo llevas entrenando, o acabas de empezar?",
+"fr": "Depuis combien de temps t'entraînes-tu, ou débutes-tu tout juste ?",
+"it": "Da quanto tempo ti alleni, o stai appena iniziando?",
+"pt": "Há quanto tempo treinas, ou estás mesmo a começar?",
+"pt_BR": "Há quanto tempo você treina, ou está começando agora?"
+}
+},
+{
+"id": "gym-042",
+"lv": "beginner",
+"i18n": {
+"en": "Which machine or piece of equipment would you like to learn to use?",
+"de": "Welches Gerät würdest du gern richtig bedienen lernen?",
+"es": "¿Qué máquina o aparato te gustaría aprender a usar?",
+"fr": "Quelle machine ou quel équipement aimerais-tu apprendre à utiliser ?",
+"it": "Quale macchina o attrezzo ti piacerebbe imparare a usare?",
+"pt": "Que máquina ou equipamento gostavas de aprender a usar?",
+"pt_BR": "Qual máquina ou equipamento você gostaria de aprender a usar?"
+}
+},
+{
+"id": "gym-043",
+"lv": "beginner",
+"i18n": {
+"en": "How did your very first gym session go?",
+"de": "Wie lief deine allererste Trainingseinheit im Studio?",
+"es": "¿Qué tal fue tu primerísima sesión en el gimnasio?",
+"fr": "Comment s'est passée ta toute première séance à la salle ?",
+"it": "Com'è andata la tua primissima sessione in palestra?",
+"pt": "Como correu a tua primeiríssima sessão no ginásio?",
+"pt_BR": "Como foi o seu primeiro treino na academia?"
+}
+},
+{
+"id": "gym-044",
+"lv": "beginner",
+"i18n": {
+"en": "Which bodyweight exercise do you feel most comfortable with?",
+"de": "Bei welcher Übung mit dem eigenen Körpergewicht fühlst du dich am sichersten?",
+"es": "¿Con qué ejercicio de peso corporal te sientes más cómodo?",
+"fr": "Avec quel exercice au poids du corps te sens-tu le plus à l'aise ?",
+"it": "Con quale esercizio a corpo libero ti senti più a tuo agio?",
+"pt": "Com que exercício de peso corporal te sentes mais à vontade?",
+"pt_BR": "Com qual exercício de peso corporal você se sente mais à vontade?"
+}
+},
+{
+"id": "gym-045",
+"lv": "beginner",
+"i18n": {
+"en": "What would make you feel more confident on the gym floor?",
+"de": "Was würde dir im Studio mehr Selbstvertrauen geben?",
+"es": "¿Qué te haría sentir más seguro en la sala del gimnasio?",
+"fr": "Qu'est-ce qui t'aiderait à te sentir plus à l'aise en salle ?",
+"it": "Cosa ti farebbe sentire più sicuro in sala pesi?",
+"pt": "O que te faria sentir mais confiante na sala do ginásio?",
+"pt_BR": "O que te faria se sentir mais confiante na área de treino da academia?"
+}
+},
+{
+"id": "gym-046",
+"lv": "beginner",
+"i18n": {
+"en": "How many days a week feel realistic for you to train?",
+"de": "Wie viele Trainingstage pro Woche sind für dich realistisch?",
+"es": "¿Cuántos días a la semana te parece realista entrenar?",
+"fr": "Combien de jours par semaine te semblent réalistes pour t'entraîner ?",
+"it": "Quanti giorni a settimana ti sembra realistico allenarti?",
+"pt": "Quantos dias por semana te parece realista treinar?",
+"pt_BR": "Quantos dias por semana parece realista você treinar?"
+}
+},
+{
+"id": "gym-047",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever asked a trainer or staff member for help? How did it go?",
+"de": "Hast du schon mal einen Trainer oder Mitarbeiter um Hilfe gebeten? Wie war es?",
+"es": "¿Has pedido ayuda alguna vez a un entrenador o empleado? ¿Qué tal fue?",
+"fr": "As-tu déjà demandé de l'aide à un coach ou au personnel ? Comment ça s'est passé ?",
+"it": "Hai mai chiesto aiuto a un istruttore o allo staff? Com'è andata?",
+"pt": "Já pediste ajuda a um treinador ou funcionário? Como correu?",
+"pt_BR": "Você já pediu ajuda a um instrutor ou funcionário? Como foi?"
+}
+},
+{
+"id": "gym-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which muscle did you feel working for the first time in a new way?",
+"de": "Welchen Muskel hast du zum ersten Mal so richtig arbeiten gespürt?",
+"es": "¿Qué músculo sentiste trabajar por primera vez de una forma nueva?",
+"fr": "Quel muscle as-tu senti travailler pour la première fois d'une façon nouvelle ?",
+"it": "Quale muscolo hai sentito lavorare per la prima volta in modo nuovo?",
+"pt": "Que músculo sentiste a trabalhar pela primeira vez de uma forma nova?",
+"pt_BR": "Qual músculo você sentiu trabalhar pela primeira vez de um jeito novo?"
+}
+},
+{
+"id": "gym-049",
+"lv": "beginner",
+"i18n": {
+"en": "What is the hardest part of building a regular gym habit for you?",
+"de": "Was ist für dich das Schwierigste daran, regelmäßig zu trainieren?",
+"es": "¿Qué es lo más difícil para ti de crear el hábito de ir al gimnasio?",
+"fr": "Qu'est-ce qui est le plus dur pour toi dans l'habitude d'aller à la salle ?",
+"it": "Qual è per te la parte più difficile nel creare l'abitudine della palestra?",
+"pt": "Qual é para ti a parte mais difícil de criar o hábito de ir ao ginásio?",
+"pt_BR": "Qual é a parte mais difícil para você de criar o hábito de ir à academia?"
+}
+},
+{
+"id": "gym-050",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer following a plan or deciding what to do each day?",
+"de": "Folgst du lieber einem Plan oder entscheidest du jeden Tag neu?",
+"es": "¿Prefieres seguir un plan o decidir cada día qué hacer?",
+"fr": "Tu préfères suivre un programme ou décider chaque jour quoi faire ?",
+"it": "Preferisci seguire una scheda o decidere ogni giorno cosa fare?",
+"pt": "Preferes seguir um plano ou decidir todos os dias o que fazer?",
+"pt_BR": "Você prefere seguir uma ficha de treino ou decidir a cada dia o que fazer?"
+}
+},
+{
+"id": "gym-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which part of gym etiquette took you a while to figure out?",
+"de": "Welche Regel der Studio-Etikette hast du erst nach einer Weile verstanden?",
+"es": "¿Qué norma de etiqueta del gimnasio te costó un tiempo entender?",
+"fr": "Quelle règle de savoir-vivre en salle as-tu mis du temps à comprendre ?",
+"it": "Quale regola di galateo in palestra ci hai messo un po' a capire?",
+"pt": "Que regra de etiqueta do ginásio demoraste a perceber?",
+"pt_BR": "Qual regra de etiqueta da academia você demorou a entender?"
+}
+},
+{
+"id": "gym-052",
+"lv": "beginner",
+"i18n": {
+"en": "How do you choose the weight to start with on a new exercise?",
+"de": "Wie wählst du das Startgewicht bei einer neuen Übung?",
+"es": "¿Cómo eliges el peso con el que empezar un ejercicio nuevo?",
+"fr": "Comment choisis-tu la charge de départ sur un nouvel exercice ?",
+"it": "Come scegli il peso con cui iniziare un nuovo esercizio?",
+"pt": "Como escolhes o peso para começar um exercício novo?",
+"pt_BR": "Como você escolhe o peso para começar um exercício novo?"
+}
+},
+{
+"id": "gym-053",
+"lv": "beginner",
+"i18n": {
+"en": "What is one exercise you would like to learn with good form?",
+"de": "Welche Übung möchtest du mit sauberer Technik lernen?",
+"es": "¿Qué ejercicio te gustaría aprender con buena técnica?",
+"fr": "Quel exercice aimerais-tu apprendre avec une bonne technique ?",
+"it": "Quale esercizio ti piacerebbe imparare con una buona tecnica?",
+"pt": "Que exercício gostavas de aprender com boa técnica?",
+"pt_BR": "Qual exercício você gostaria de aprender com a técnica certa?"
+}
+},
+{
+"id": "gym-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer the treadmill, the bike, the rower or something else?",
+"de": "Magst du lieber das Laufband, das Rad, das Rudergerät oder etwas anderes?",
+"es": "¿Prefieres la cinta, la bici, el remo u otra cosa?",
+"fr": "Tu préfères le tapis de course, le vélo, le rameur ou autre chose ?",
+"it": "Preferisci il tapis roulant, la bici, il vogatore o altro?",
+"pt": "Preferes a passadeira, a bicicleta, o remo ou outra coisa?",
+"pt_BR": "Você prefere a esteira, a bike, o remo ou outra coisa?"
+}
+},
+{
+"id": "gym-055",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually wear to train, and why?",
+"de": "Was trägst du normalerweise beim Training, und warum?",
+"es": "¿Qué ropa sueles ponerte para entrenar y por qué?",
+"fr": "Que portes-tu d'habitude pour t'entraîner, et pourquoi ?",
+"it": "Cosa indossi di solito per allenarti, e perché?",
+"pt": "O que costumas vestir para treinar, e porquê?",
+"pt_BR": "O que você costuma vestir para treinar, e por quê?"
+}
+},
+{
+"id": "gym-056",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about being watched or filmed while training?",
+"de": "Wie fühlst du dich, wenn dir beim Training jemand zusieht oder dich filmt?",
+"es": "¿Cómo te sientes cuando alguien te mira o te graba mientras entrenas?",
+"fr": "Comment te sens-tu quand on te regarde ou te filme pendant l'entraînement ?",
+"it": "Come ti senti quando qualcuno ti guarda o ti riprende mentre ti alleni?",
+"pt": "Como te sentes quando alguém te vê ou te filma a treinar?",
+"pt_BR": "Como você se sente quando alguém te observa ou te filma treinando?"
+}
+},
+{
+"id": "gym-057",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever felt sore after a workout? What helped you feel better?",
+"de": "Hattest du schon mal Muskelkater? Was hat dir gutgetan?",
+"es": "¿Has tenido agujetas después de entrenar? ¿Qué te ayudó a sentirte mejor?",
+"fr": "As-tu déjà eu des courbatures après une séance ? Qu'est-ce qui t'a fait du bien ?",
+"it": "Ti è mai venuto il mal di muscoli dopo l'allenamento? Cosa ti ha aiutato?",
+"pt": "Já ficaste com dores musculares depois de treinar? O que te ajudou?",
+"pt_BR": "Você já ficou dolorido depois de treinar? O que te ajudou a melhorar?"
+}
+},
+{
+"id": "gym-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which home exercise could you do even on a busy day?",
+"de": "Welche Übung für zu Hause schaffst du auch an einem vollen Tag?",
+"es": "¿Qué ejercicio en casa podrías hacer incluso en un día ajetreado?",
+"fr": "Quel exercice à la maison pourrais-tu faire même une journée chargée ?",
+"it": "Quale esercizio a casa riusciresti a fare anche in una giornata piena?",
+"pt": "Que exercício em casa conseguirias fazer mesmo num dia cheio?",
+"pt_BR": "Qual exercício em casa você conseguiria fazer mesmo num dia corrido?"
+}
+},
+{
+"id": "gym-059",
+"lv": "beginner",
+"i18n": {
+"en": "What would a perfect first month of training look like for you?",
+"de": "Wie sähe für dich ein perfekter erster Trainingsmonat aus?",
+"es": "¿Cómo sería para ti un primer mes de entrenamiento perfecto?",
+"fr": "À quoi ressemblerait pour toi un premier mois d'entraînement parfait ?",
+"it": "Come sarebbe per te un primo mese di allenamento perfetto?",
+"pt": "Como seria para ti um primeiro mês de treino perfeito?",
+"pt_BR": "Como seria para você um primeiro mês de treino perfeito?"
+}
+},
+{
+"id": "gym-060",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a gym buddy, or would you like one?",
+"de": "Hast du einen Trainingspartner, oder hättest du gern einen?",
+"es": "¿Tienes un compañero de gimnasio o te gustaría tenerlo?",
+"fr": "As-tu un partenaire d'entraînement, ou aimerais-tu en avoir un ?",
+"it": "Hai un compagno di palestra, o ti piacerebbe averne uno?",
+"pt": "Tens um parceiro de ginásio, ou gostavas de ter um?",
+"pt_BR": "Você tem um parceiro de academia, ou gostaria de ter um?"
+}
+},
+{
+"id": "gym-061",
+"lv": "beginner",
+"i18n": {
+"en": "What time of day is the gym quiet enough for you?",
+"de": "Zu welcher Tageszeit ist das Studio für dich ruhig genug?",
+"es": "¿A qué hora del día está el gimnasio lo bastante tranquilo para ti?",
+"fr": "À quelle heure la salle est-elle assez calme pour toi ?",
+"it": "A che ora del giorno la palestra è abbastanza tranquilla per te?",
+"pt": "A que horas do dia o ginásio está calmo o suficiente para ti?",
+"pt_BR": "Em que horário a academia fica tranquila o bastante para você?"
+}
+},
+{
+"id": "gym-062",
+"lv": "beginner",
+"i18n": {
+"en": "Which exercise felt awkward at first but easier now?",
+"de": "Welche Übung fühlte sich anfangs ungewohnt an und klappt jetzt besser?",
+"es": "¿Qué ejercicio te resultaba raro al principio y ahora te sale mejor?",
+"fr": "Quel exercice te semblait maladroit au début mais plus facile maintenant ?",
+"it": "Quale esercizio all'inizio ti sembrava goffo e ora ti viene meglio?",
+"pt": "Que exercício te parecia estranho ao início mas agora é mais fácil?",
+"pt_BR": "Qual exercício parecia estranho no começo e agora ficou mais fácil?"
+}
+},
+{
+"id": "gym-063",
+"lv": "beginner",
+"i18n": {
+"en": "How do you remind yourself to drink water during training?",
+"de": "Wie erinnerst du dich daran, beim Training genug zu trinken?",
+"es": "¿Cómo te acuerdas de beber agua mientras entrenas?",
+"fr": "Comment penses-tu à boire de l'eau pendant l'entraînement ?",
+"it": "Come ti ricordi di bere acqua durante l'allenamento?",
+"pt": "Como te lembras de beber água durante o treino?",
+"pt_BR": "Como você se lembra de beber água durante o treino?"
+}
+},
+{
+"id": "gym-064",
+"lv": "beginner",
+"i18n": {
+"en": "What is one gym word or term you learned recently?",
+"de": "Welchen Fachbegriff aus dem Studio hast du vor Kurzem gelernt?",
+"es": "¿Qué palabra o término de gimnasio has aprendido hace poco?",
+"fr": "Quel mot ou terme de salle de sport as-tu appris récemment ?",
+"it": "Quale parola o termine della palestra hai imparato di recente?",
+"pt": "Que palavra ou termo de ginásio aprendeste recentemente?",
+"pt_BR": "Qual palavra ou termo de academia você aprendeu recentemente?"
+}
+},
+{
+"id": "gym-065",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you get out the door on training days?",
+"de": "Was hilft dir, an Trainingstagen wirklich loszugehen?",
+"es": "¿Qué te ayuda a salir de casa los días de entrenamiento?",
+"fr": "Qu'est-ce qui t'aide à passer la porte les jours d'entraînement ?",
+"it": "Cosa ti aiuta a uscire di casa nei giorni di allenamento?",
+"pt": "O que te ajuda a sair de casa nos dias de treino?",
+"pt_BR": "O que te ajuda a sair de casa nos dias de treino?"
+}
+},
+{
+"id": "gym-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which training split do you follow, and why does it suit you?",
+"de": "Welchem Trainingssplit folgst du, und warum passt er zu dir?",
+"es": "¿Qué división de entrenamiento sigues y por qué te funciona?",
+"fr": "Quel split d'entraînement suis-tu, et pourquoi te convient-il ?",
+"it": "Quale split di allenamento segui, e perché fa per te?",
+"pt": "Que divisão de treino segues, e porque é que te serve?",
+"pt_BR": "Qual divisão de treino você segue, e por que ela combina com você?"
+}
+},
+{
+"id": "gym-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide when to add weight to an exercise?",
+"de": "Wie entscheidest du, wann du bei einer Übung das Gewicht erhöhst?",
+"es": "¿Cómo decides cuándo subir el peso de un ejercicio?",
+"fr": "Comment décides-tu quand augmenter la charge sur un exercice ?",
+"it": "Come decidi quando aumentare il peso in un esercizio?",
+"pt": "Como decides quando aumentar o peso num exercício?",
+"pt_BR": "Como você decide quando aumentar o peso de um exercício?"
+}
+},
+{
+"id": "gym-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever hit a plateau? What did you try to move past it?",
+"de": "Hattest du schon mal ein Leistungsplateau? Was hast du dagegen probiert?",
+"es": "¿Te has estancado alguna vez? ¿Qué probaste para superarlo?",
+"fr": "As-tu déjà stagné ? Qu'as-tu essayé pour passer ce cap ?",
+"it": "Ti sei mai trovato in stallo? Cosa hai provato per superarlo?",
+"pt": "Já estagnaste alguma vez? O que tentaste para ultrapassar isso?",
+"pt_BR": "Você já estagnou no treino? O que tentou para sair dessa?"
+}
+},
+{
+"id": "gym-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which lift has improved the most since you started?",
+"de": "Bei welcher Übung hast du dich seit dem Anfang am meisten verbessert?",
+"es": "¿En qué levantamiento has mejorado más desde que empezaste?",
+"fr": "Sur quel mouvement as-tu le plus progressé depuis tes débuts ?",
+"it": "In quale esercizio sei migliorato di più da quando hai iniziato?",
+"pt": "Em que exercício melhoraste mais desde que começaste?",
+"pt_BR": "Em qual exercício você mais evoluiu desde que começou?"
+}
+},
+{
+"id": "gym-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you use supersets or circuits in your workouts, if at all?",
+"de": "Wie setzt du Supersätze oder Zirkel in deinem Training ein, wenn überhaupt?",
+"es": "¿Usas superseries o circuitos en tus entrenamientos? ¿Cómo?",
+"fr": "Utilises-tu des supersets ou des circuits dans tes séances ? Comment ?",
+"it": "Usi superserie o circuiti nei tuoi allenamenti? In che modo?",
+"pt": "Usas supersets ou circuitos nos teus treinos? De que forma?",
+"pt_BR": "Você usa bi-sets ou circuitos nos seus treinos? De que jeito?"
+}
+},
+{
+"id": "gym-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you notice about your training on weeks when you sleep well?",
+"de": "Was fällt dir an deinem Training in Wochen auf, in denen du gut schläfst?",
+"es": "¿Qué notas en tus entrenamientos las semanas en que duermes bien?",
+"fr": "Que remarques-tu dans ton entraînement les semaines où tu dors bien ?",
+"it": "Cosa noti nei tuoi allenamenti nelle settimane in cui dormi bene?",
+"pt": "O que notas nos teus treinos nas semanas em que dormes bem?",
+"pt_BR": "O que você percebe nos seus treinos nas semanas em que dorme bem?"
+}
+},
+{
+"id": "gym-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever filmed your lifts to check your form? What did you learn?",
+"de": "Hast du schon mal deine Übungen gefilmt, um die Technik zu prüfen? Was hast du gelernt?",
+"es": "¿Te has grabado alguna vez levantando para revisar tu técnica? ¿Qué aprendiste?",
+"fr": "T'es-tu déjà filmé pour vérifier ta technique ? Qu'as-tu appris ?",
+"it": "Ti sei mai ripreso per controllare la tecnica? Cosa hai imparato?",
+"pt": "Já te filmaste a treinar para ver a técnica? O que aprendeste?",
+"pt_BR": "Você já se filmou treinando para checar a técnica? O que aprendeu?"
+}
+},
+{
+"id": "gym-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan lighter weeks or recovery into your training?",
+"de": "Wie planst du leichtere Wochen oder Erholung in dein Training ein?",
+"es": "¿Cómo incluyes semanas más ligeras o de recuperación en tu plan?",
+"fr": "Comment intègres-tu des semaines plus légères ou de récupération ?",
+"it": "Come inserisci settimane più leggere o di recupero nel tuo allenamento?",
+"pt": "Como planeias semanas mais leves ou de recuperação no teu treino?",
+"pt_BR": "Como você planeja semanas mais leves ou de recuperação no seu treino?"
+}
+},
+{
+"id": "gym-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which accessory exercise do you think is underrated?",
+"de": "Welche Ergänzungsübung wird deiner Meinung nach unterschätzt?",
+"es": "¿Qué ejercicio accesorio crees que está infravalorado?",
+"fr": "Quel exercice d'assistance trouves-tu sous-estimé ?",
+"it": "Quale esercizio complementare secondo te è sottovalutato?",
+"pt": "Que exercício acessório achas que é subestimado?",
+"pt_BR": "Qual exercício acessório você acha subestimado?"
+}
+},
+{
+"id": "gym-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you adjust your workout on a day when you feel low on energy?",
+"de": "Wie passt du dein Training an Tagen mit wenig Energie an?",
+"es": "¿Cómo ajustas tu entrenamiento un día en que te falta energía?",
+"fr": "Comment adaptes-tu ta séance un jour où tu manques d'énergie ?",
+"it": "Come adatti l'allenamento in una giornata in cui hai poca energia?",
+"pt": "Como ajustas o treino num dia em que tens pouca energia?",
+"pt_BR": "Como você ajusta o treino num dia em que está com pouca energia?"
+}
+},
+{
+"id": "gym-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you prefer higher reps with lighter weights or fewer reps with heavier ones?",
+"de": "Magst du lieber viele Wiederholungen mit wenig Gewicht oder wenige mit viel?",
+"es": "¿Prefieres muchas repeticiones con poco peso o pocas con más peso?",
+"fr": "Tu préfères beaucoup de répétitions avec peu de poids, ou peu avec plus lourd ?",
+"it": "Preferisci tante ripetizioni con poco peso o poche con carichi più pesanti?",
+"pt": "Preferes muitas repetições com pouco peso ou poucas com mais peso?",
+"pt_BR": "Você prefere muitas repetições com pouco peso ou poucas com mais carga?"
+}
+},
+{
+"id": "gym-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your favourite way to train when you are travelling?",
+"de": "Wie trainierst du am liebsten, wenn du unterwegs bist?",
+"es": "¿Cuál es tu forma favorita de entrenar cuando estás de viaje?",
+"fr": "Quelle est ta façon préférée de t'entraîner en voyage ?",
+"it": "Qual è il tuo modo preferito di allenarti quando sei in viaggio?",
+"pt": "Qual é a tua forma preferida de treinar quando estás a viajar?",
+"pt_BR": "Qual é seu jeito favorito de treinar quando está viajando?"
+}
+},
+{
+"id": "gym-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which coaching cue helped a movement finally click for you?",
+"de": "Welcher Coaching-Hinweis hat bei einer Übung endlich für den Aha-Moment gesorgt?",
+"es": "¿Qué indicación de un entrenador te ayudó a entender por fin un movimiento?",
+"fr": "Quelle consigne de coach t'a enfin fait comprendre un mouvement ?",
+"it": "Quale indicazione di un coach ti ha fatto finalmente capire un movimento?",
+"pt": "Que indicação de um treinador te ajudou finalmente a perceber um movimento?",
+"pt_BR": "Qual dica de treinador fez um movimento finalmente fazer sentido para você?"
+}
+},
+{
+"id": "gym-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you measure progress besides the weight on the bar?",
+"de": "Woran misst du Fortschritt außer am Gewicht auf der Stange?",
+"es": "¿Cómo mides tu progreso además del peso en la barra?",
+"fr": "Comment mesures-tu tes progrès en dehors du poids sur la barre ?",
+"it": "Come misuri i tuoi progressi oltre al peso sul bilanciere?",
+"pt": "Como medes o teu progresso para além do peso na barra?",
+"pt_BR": "Como você mede seu progresso além do peso na barra?"
+}
+},
+{
+"id": "gym-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you tried calisthenics skills like pull-up variations or handstands?",
+"de": "Hast du schon Calisthenics-Skills wie Klimmzugvarianten oder Handstände probiert?",
+"es": "¿Has probado habilidades de calistenia como variantes de dominadas o el pino?",
+"fr": "As-tu essayé des figures de calisthenics comme des variantes de tractions ou l'équilibre ?",
+"it": "Hai provato abilità di calisthenics come varianti di trazioni o la verticale?",
+"pt": "Já experimentaste skills de calistenia como variações de elevações ou o pino?",
+"pt_BR": "Você já tentou habilidades de calistenia, como variações de barra fixa ou parada de mão?"
+}
+},
+{
+"id": "gym-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you combine your gym work with another sport you enjoy?",
+"de": "Wie verbindest du dein Studiotraining mit einer anderen Sportart, die du magst?",
+"es": "¿Cómo combinas el gimnasio con otro deporte que te guste?",
+"fr": "Comment combines-tu la salle avec un autre sport que tu aimes ?",
+"it": "Come combini la palestra con un altro sport che ti piace?",
+"pt": "Como combinas o ginásio com outro desporto de que gostas?",
+"pt_BR": "Como você combina a academia com outro esporte de que gosta?"
+}
+},
+{
+"id": "gym-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What does your warm-up look like before a heavier session?",
+"de": "Wie sieht dein Aufwärmen vor einer schwereren Einheit aus?",
+"es": "¿Cómo es tu calentamiento antes de una sesión más pesada?",
+"fr": "À quoi ressemble ton échauffement avant une séance plus lourde ?",
+"it": "Com'è il tuo riscaldamento prima di una sessione più pesante?",
+"pt": "Como é o teu aquecimento antes de uma sessão mais pesada?",
+"pt_BR": "Como é o seu aquecimento antes de um treino mais pesado?"
+}
+},
+{
+"id": "gym-083",
+"lv": "intermediate",
+"i18n": {
+"en": "Which piece of gym gear do you find genuinely useful?",
+"de": "Welches Trainingszubehör findest du wirklich nützlich?",
+"es": "¿Qué accesorio de gimnasio te parece realmente útil?",
+"fr": "Quel accessoire de salle trouves-tu vraiment utile ?",
+"it": "Quale accessorio da palestra trovi davvero utile?",
+"pt": "Que acessório de ginásio achas mesmo útil?",
+"pt_BR": "Qual acessório de academia você acha realmente útil?"
+}
+},
+{
+"id": "gym-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep training fun after the first few months?",
+"de": "Wie sorgst du dafür, dass das Training nach den ersten Monaten Spaß macht?",
+"es": "¿Cómo mantienes la diversión en el entrenamiento pasados los primeros meses?",
+"fr": "Comment gardes-tu le plaisir de t'entraîner après les premiers mois ?",
+"it": "Come mantieni divertente l'allenamento dopo i primi mesi?",
+"pt": "Como manténs o treino divertido depois dos primeiros meses?",
+"pt_BR": "Como você mantém o treino divertido depois dos primeiros meses?"
+}
+},
+{
+"id": "gym-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a gym myth you used to believe?",
+"de": "An welchen Fitnessmythos hast du früher geglaubt?",
+"es": "¿Qué mito del gimnasio creías antes?",
+"fr": "Quel mythe de la salle de sport croyais-tu autrefois ?",
+"it": "Quale mito della palestra credevi un tempo?",
+"pt": "Em que mito do ginásio acreditavas antes?",
+"pt_BR": "Em qual mito de academia você acreditava antes?"
+}
+},
+{
+"id": "gym-086",
+"lv": "advanced",
+"i18n": {
+"en": "How do you organise your training across a whole year?",
+"de": "Wie planst du dein Training über ein ganzes Jahr?",
+"es": "¿Cómo organizas tu entrenamiento a lo largo de todo un año?",
+"fr": "Comment organises-tu ton entraînement sur une année entière ?",
+"it": "Come organizzi il tuo allenamento nell'arco di un anno intero?",
+"pt": "Como organizas o teu treino ao longo de um ano inteiro?",
+"pt_BR": "Como você organiza seu treino ao longo de um ano inteiro?"
+}
+},
+{
+"id": "gym-087",
+"lv": "advanced",
+"i18n": {
+"en": "Which periodisation style have you tried, and what did you think of it?",
+"de": "Welches Periodisierungsmodell hast du ausprobiert, und wie fandest du es?",
+"es": "¿Qué tipo de periodización has probado y qué te pareció?",
+"fr": "Quel type de périodisation as-tu essayé, et qu'en as-tu pensé ?",
+"it": "Quale tipo di periodizzazione hai provato, e cosa ne pensi?",
+"pt": "Que tipo de periodização experimentaste, e o que achaste?",
+"pt_BR": "Qual tipo de periodização você já testou, e o que achou?"
+}
+},
+{
+"id": "gym-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you manage fatigue when your training gets more demanding?",
+"de": "Wie gehst du mit Ermüdung um, wenn dein Training anspruchsvoller wird?",
+"es": "¿Cómo gestionas la fatiga cuando tu entrenamiento se vuelve más exigente?",
+"fr": "Comment gères-tu la fatigue quand ton entraînement devient plus exigeant ?",
+"it": "Come gestisci la fatica quando il tuo allenamento diventa più impegnativo?",
+"pt": "Como geres a fadiga quando o teu treino fica mais exigente?",
+"pt_BR": "Como você lida com o cansaço quando o treino fica mais puxado?"
+}
+},
+{
+"id": "gym-089",
+"lv": "advanced",
+"i18n": {
+"en": "What sticking point in a lift have you worked on, and how?",
+"de": "An welchem Schwachpunkt in einer Übung hast du gearbeitet, und wie?",
+"es": "¿Qué punto débil de un levantamiento has trabajado y cómo?",
+"fr": "Sur quel point faible d'un mouvement as-tu travaillé, et comment ?",
+"it": "Su quale punto debole di un esercizio hai lavorato, e come?",
+"pt": "Em que ponto fraco de um exercício trabalhaste, e como?",
+"pt_BR": "Em qual ponto fraco de um exercício você trabalhou, e como?"
+}
+},
+{
+"id": "gym-090",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever considered competing in a strength sport just for fun?",
+"de": "Hast du schon mal überlegt, aus Spaß an einem Kraftsport-Wettkampf teilzunehmen?",
+"es": "¿Te has planteado alguna vez competir en un deporte de fuerza solo por diversión?",
+"fr": "As-tu déjà pensé à participer à une compétition de force juste pour le plaisir ?",
+"it": "Hai mai pensato di gareggiare in uno sport di forza solo per divertimento?",
+"pt": "Já pensaste em competir num desporto de força só por diversão?",
+"pt_BR": "Você já pensou em competir num esporte de força só por diversão?"
+}
+},
+{
+"id": "gym-091",
+"lv": "advanced",
+"i18n": {
+"en": "How do you use data like logs, bar speed or heart rate in your training?",
+"de": "Wie nutzt du Daten wie Trainingsprotokolle, Hantelgeschwindigkeit oder Puls?",
+"es": "¿Cómo usas datos como registros, velocidad de la barra o pulso en tu entrenamiento?",
+"fr": "Comment utilises-tu des données comme ton carnet, la vitesse de barre ou le pouls ?",
+"it": "Come usi dati come registri, velocità del bilanciere o frequenza cardiaca?",
+"pt": "Como usas dados como registos, velocidade da barra ou frequência cardíaca no treino?",
+"pt_BR": "Como você usa dados como registros, velocidade da barra ou frequência cardíaca no treino?"
+}
+},
+{
+"id": "gym-092",
+"lv": "advanced",
+"i18n": {
+"en": "What would you change if you designed your next training block from scratch?",
+"de": "Was würdest du ändern, wenn du deinen nächsten Trainingsblock ganz neu planen würdest?",
+"es": "¿Qué cambiarías si diseñaras desde cero tu próximo bloque de entrenamiento?",
+"fr": "Que changerais-tu si tu concevais ton prochain cycle d'entraînement de zéro ?",
+"it": "Cosa cambieresti se progettassi da zero il tuo prossimo blocco di allenamento?",
+"pt": "O que mudarias se desenhasses de raiz o teu próximo bloco de treino?",
+"pt_BR": "O que você mudaria se montasse do zero o seu próximo bloco de treino?"
+}
+},
+{
+"id": "gym-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance strength goals with endurance or mobility goals?",
+"de": "Wie bringst du Kraftziele mit Ausdauer- oder Mobilitätszielen in Einklang?",
+"es": "¿Cómo equilibras los objetivos de fuerza con los de resistencia o movilidad?",
+"fr": "Comment équilibres-tu objectifs de force et objectifs d'endurance ou de mobilité ?",
+"it": "Come bilanci gli obiettivi di forza con quelli di resistenza o mobilità?",
+"pt": "Como equilibras objetivos de força com objetivos de resistência ou mobilidade?",
+"pt_BR": "Como você equilibra metas de força com metas de resistência ou mobilidade?"
+}
+},
+{
+"id": "gym-094",
+"lv": "advanced",
+"i18n": {
+"en": "How has your training philosophy changed over the years?",
+"de": "Wie hat sich deine Trainingsphilosophie über die Jahre verändert?",
+"es": "¿Cómo ha cambiado tu filosofía de entrenamiento con los años?",
+"fr": "Comment ta philosophie d'entraînement a-t-elle évolué au fil des années ?",
+"it": "Com'è cambiata la tua filosofia di allenamento negli anni?",
+"pt": "Como mudou a tua filosofia de treino ao longo dos anos?",
+"pt_BR": "Como sua filosofia de treino mudou ao longo dos anos?"
+}
+},
+{
+"id": "gym-095",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain a lift to a friend who is learning it for the first time?",
+"de": "Wie würdest du einem Freund eine Übung erklären, die er zum ersten Mal lernt?",
+"es": "¿Cómo le explicarías un levantamiento a un amigo que lo aprende por primera vez?",
+"fr": "Comment expliquerais-tu un mouvement à un ami qui l'apprend pour la première fois ?",
+"it": "Come spiegheresti un esercizio a un amico che lo impara per la prima volta?",
+"pt": "Como explicarias um exercício a um amigo que o está a aprender pela primeira vez?",
+"pt_BR": "Como você explicaria um exercício para um amigo que está aprendendo pela primeira vez?"
+}
+},
+{
+"id": "gym-096",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think about training close to failure versus leaving reps in reserve?",
+"de": "Was hältst du vom Training nah am Muskelversagen im Vergleich zu Wiederholungen in Reserve?",
+"es": "¿Qué opinas de entrenar cerca del fallo frente a dejar repeticiones en reserva?",
+"fr": "Que penses-tu de l'entraînement proche de l'échec par rapport aux répétitions en réserve ?",
+"it": "Cosa pensi dell'allenarti vicino al cedimento rispetto a lasciare ripetizioni in riserva?",
+"pt": "O que achas de treinar perto da falha em vez de deixar repetições em reserva?",
+"pt_BR": "O que você acha de treinar perto da falha versus deixar repetições em reserva?"
+}
+},
+{
+"id": "gym-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you approach getting back to training after a long break?",
+"de": "Wie gehst du den Wiedereinstieg ins Training nach einer langen Pause an?",
+"es": "¿Cómo afrontas la vuelta a entrenar después de un parón largo?",
+"fr": "Comment abordes-tu la reprise de l'entraînement après une longue pause ?",
+"it": "Come affronti il ritorno ad allenarti dopo una lunga pausa?",
+"pt": "Como encaras o regresso ao treino depois de uma longa pausa?",
+"pt_BR": "Como você encara a volta aos treinos depois de uma longa pausa?"
+}
+},
+{
+"id": "gym-098",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a gym community great, and how do you contribute to it?",
+"de": "Was macht eine gute Studio-Community aus, und was trägst du dazu bei?",
+"es": "¿Qué hace grande a una comunidad de gimnasio y cómo contribuyes tú?",
+"fr": "Qu'est-ce qui fait une super communauté de salle, et comment y contribues-tu ?",
+"it": "Cosa rende speciale una comunità di palestra, e come contribuisci tu?",
+"pt": "O que faz uma ótima comunidade de ginásio, e como contribuis para ela?",
+"pt_BR": "O que faz uma comunidade de academia ser incrível, e como você contribui para ela?"
+}
+},
+{
+"id": "gym-099",
+"lv": "advanced",
+"i18n": {
+"en": "Where do you hope your training will take you in the next five years?",
+"de": "Wohin soll dich dein Training in den nächsten fünf Jahren führen?",
+"es": "¿Adónde esperas que te lleve tu entrenamiento en los próximos cinco años?",
+"fr": "Où espères-tu que ton entraînement te mène dans les cinq prochaines années ?",
+"it": "Dove speri che ti porti il tuo allenamento nei prossimi cinque anni?",
+"pt": "Onde esperas que o teu treino te leve nos próximos cinco anos?",
+"pt_BR": "Aonde você espera que seu treino te leve nos próximos cinco anos?"
+}
+},
+{
+"id": "gym-100",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give your day-one self in the gym?",
+"de": "Welchen Rat würdest du deinem Ich vom ersten Trainingstag geben?",
+"es": "¿Qué consejo le darías a tu yo del primer día de gimnasio?",
+"fr": "Quel conseil donnerais-tu à toi-même lors de ton premier jour à la salle ?",
+"it": "Che consiglio daresti a te stesso al tuo primo giorno in palestra?",
+"pt": "Que conselho darias a ti próprio no teu primeiro dia de ginásio?",
+"pt_BR": "Que conselho você daria para o seu eu do primeiro dia de academia?"
+}
+}
+]
+}

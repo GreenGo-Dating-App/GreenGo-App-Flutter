@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 111,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: past tenses and pronouns",
+     "g": "Bring together passé composé, imparfait, y, en and relative pronouns in one review.",
+     "p": [
+      "Passé composé for events (j'ai visité, je suis parti), imparfait for scenes and habits (il faisait beau, j'allais).",
+      "Pronouns save repetition: y for places (j'y vais), en for quantities (j'en ai deux), le, la, lui, leur for people and things.",
+      "Relative pronouns join ideas: qui (subject), que (object), où (place or time)."
+     ],
+     "q": "Tell me about a trip you took: where it was, what it was like, and what you did there.",
+     "c": "Write a six-sentence French story of a past trip with both past tenses, y or en, and qui, que or où."
+    },
+    "de": {
+     "t": "Rückblick: Vergangenheit und Pronomen",
+     "g": "Du wiederholst Passé composé, Imparfait, y, en und Relativpronomen zusammen.",
+     "p": [
+      "Passé composé für Ereignisse (j'ai visité, je suis parti), Imparfait für Szenen und Gewohnheiten (il faisait beau, j'allais).",
+      "Pronomen sparen Wiederholungen: y für Orte (j'y vais), en für Mengen (j'en ai deux), le, la, lui, leur.",
+      "Relativpronomen verbinden Ideen: qui (Subjekt), que (Objekt), où (Ort oder Zeit)."
+     ],
+     "q": "Erzähl mir von einer Reise: wo es war, wie es war und was du dort gemacht hast.",
+     "c": "Schreib sechs Sätze über eine Reise mit beiden Zeiten, y oder en und qui, que oder où."
+    },
+    "es": {
+     "t": "Repaso: pasados y pronombres",
+     "g": "Repasa juntos el passé composé, el imparfait, y, en y los relativos.",
+     "p": [
+      "Passé composé para hechos (j'ai visité, je suis parti), imparfait para escenas y hábitos (il faisait beau, j'allais).",
+      "Los pronombres evitan repetir: y para lugares (j'y vais), en para cantidades (j'en ai deux), le, la, lui, leur.",
+      "Los relativos unen ideas: qui (sujeto), que (objeto), où (lugar o tiempo)."
+     ],
+     "q": "Háblame de un viaje que hiciste: dónde fue, cómo era y qué hiciste allí.",
+     "c": "Escribe seis frases sobre un viaje con los dos pasados, y o en, y qui, que u où."
+    },
+    "fr": {
+     "t": "Bilan : passés et pronoms",
+     "g": "Réviser ensemble passé composé, imparfait, y, en et pronoms relatifs.",
+     "p": [
+      "Passé composé pour les événements (j'ai visité, je suis parti), imparfait pour le décor et les habitudes.",
+      "Les pronoms évitent les répétitions : y pour les lieux, en pour les quantités, le, la, lui, leur.",
+      "Les relatifs relient les idées : qui (sujet), que (complément), où (lieu ou moment)."
+     ],
+     "q": "Parle-moi d'un voyage : où c'était, comment c'était et ce que tu as fait.",
+     "c": "Écris six phrases sur un voyage avec les deux passés, y ou en, et qui, que ou où."
+    },
+    "it": {
+     "t": "Ripasso: passati e pronomi",
+     "g": "Ripassa insieme passé composé, imparfait, y, en e i pronomi relativi.",
+     "p": [
+      "Passé composé per gli eventi (j'ai visité, je suis parti), imparfait per scene e abitudini (il faisait beau, j'allais).",
+      "I pronomi evitano ripetizioni: y per i luoghi (j'y vais), en per le quantità (j'en ai deux), le, la, lui, leur.",
+      "I relativi uniscono le idee: qui (soggetto), que (oggetto), où (luogo o tempo)."
+     ],
+     "q": "Parlami di un viaggio che hai fatto: dov'era, com'era e cosa hai fatto lì.",
+     "c": "Scrivi sei frasi su un viaggio con i due passati, y o en, e qui, que o où."
+    },
+    "pt": {
+     "t": "Revisão: passados e pronomes",
+     "g": "Rever juntos o passé composé, o imparfait, y, en e os relativos.",
+     "p": [
+      "Passé composé para acontecimentos (j'ai visité, je suis parti), imparfait para cenários e hábitos (il faisait beau, j'allais).",
+      "Os pronomes evitam repetições: y para lugares (j'y vais), en para quantidades (j'en ai deux), le, la, lui, leur.",
+      "Os relativos ligam ideias: qui (sujeito), que (complemento), où (lugar ou tempo)."
+     ],
+     "q": "Fala-me de uma viagem que fizeste: onde foi, como era e o que fizeste lá.",
+     "c": "Escreve seis frases sobre uma viagem com os dois passados, y ou en, e qui, que ou où."
+    },
+    "pt_BR": {
+     "t": "Revisão: passados e pronomes",
+     "g": "Revisar juntos o passé composé, o imparfait, y, en e os relativos.",
+     "p": [
+      "Passé composé para acontecimentos (j'ai visité, je suis parti), imparfait para cenários e hábitos (il faisait beau, j'allais).",
+      "Os pronomes evitam repetições: y para lugares (j'y vais), en para quantidades (j'en ai deux), le, la, lui, leur.",
+      "Os relativos ligam ideias: qui (sujeito), que (objeto), où (lugar ou tempo)."
+     ],
+     "q": "Me fale de uma viagem que você fez: onde foi, como era e o que você fez lá.",
+     "c": "Escreva seis frases sobre uma viagem com os dois passados, y ou en, e qui, que ou où."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "j'ai visité",
+      "ex": "L'été dernier, j'ai visité la Bretagne."
+     },
+     {
+      "w": "il faisait",
+      "ex": "Il faisait beau tous les jours."
+     },
+     {
+      "w": "j'y suis allé(e)",
+      "ex": "Le Mont-Saint-Michel ? J'y suis allé."
+     },
+     {
+      "w": "j'en ai pris",
+      "ex": "Des photos ? J'en ai pris beaucoup !"
+     },
+     {
+      "w": "l'hôtel où",
+      "ex": "L'hôtel où nous étions était charmant."
+     },
+     {
+      "w": "les gens que",
+      "ex": "Les gens que j'ai rencontrés étaient sympas."
+     }
+    ],
+    "gram": "Bilan : passé composé (événements) / imparfait (décor) ; y, en, le, lui ; qui, que, où pour relier les phrases."
+   }
+  },
+  {
+   "d": 112,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Simple future: forming it",
+     "g": "Form the simple future of regular verbs to talk about what will happen.",
+     "p": [
+      "Take the infinitive and add -ai, -as, -a, -ons, -ez, -ont: je parlerai, tu finiras, il mangera.",
+      "For -re verbs drop the final e first: prendre gives je prendrai, vendre gives nous vendrons.",
+      "The endings look like avoir in the present: j'ai, tu as, il a; that makes them easy to remember."
+     ],
+     "q": "What will you do next summer? Answer in French with two verbs in the simple future.",
+     "c": "Write five French sentences about next year with regular verbs in the future, like je voyagerai."
+    },
+    "de": {
+     "t": "Futur simple: Bildung",
+     "g": "Du bildest das Futur simple regelmäßiger Verben, um zu sagen, was sein wird.",
+     "p": [
+      "Nimm den Infinitiv und hänge -ai, -as, -a, -ons, -ez, -ont an: je parlerai, tu finiras, il mangera.",
+      "Bei Verben auf -re fällt das e weg: prendre → je prendrai, vendre → nous vendrons.",
+      "Die Endungen gleichen avoir im Präsens: j'ai, tu as, il a; so merkst du sie dir leicht."
+     ],
+     "q": "Was wirst du nächsten Sommer machen? Antworte mit zwei Verben im Futur simple.",
+     "c": "Schreib fünf Sätze über das nächste Jahr mit regelmäßigen Verben im Futur, z. B. je voyagerai."
+    },
+    "es": {
+     "t": "Futuro simple: cómo se forma",
+     "g": "Forma el futuro simple de los verbos regulares para hablar de lo que pasará.",
+     "p": [
+      "Toma el infinitivo y añade -ai, -as, -a, -ons, -ez, -ont: je parlerai, tu finiras, il mangera.",
+      "En los verbos en -re quita la e final: prendre da je prendrai, vendre da nous vendrons.",
+      "Las terminaciones se parecen a avoir en presente: j'ai, tu as, il a; así se recuerdan fácil."
+     ],
+     "q": "¿Qué harás el próximo verano? Responde con dos verbos en futuro simple.",
+     "c": "Escribe cinco frases sobre el año que viene con verbos regulares en futuro, como je voyagerai."
+    },
+    "fr": {
+     "t": "Le futur simple : la formation",
+     "g": "Former le futur simple des verbes réguliers.",
+     "p": [
+      "Infinitif + -ai, -as, -a, -ons, -ez, -ont : je parlerai, tu finiras, il mangera.",
+      "Pour les verbes en -re, on enlève le e : prendre → je prendrai, vendre → nous vendrons.",
+      "Les terminaisons ressemblent au présent de avoir : j'ai, tu as, il a. Facile à retenir !"
+     ],
+     "q": "Qu'est-ce que tu feras l'été prochain ? Utilise deux verbes au futur simple.",
+     "c": "Écris cinq phrases sur l'année prochaine avec des verbes réguliers au futur, comme je voyagerai."
+    },
+    "it": {
+     "t": "Futuro semplice: la formazione",
+     "g": "Forma il futuro semplice dei verbi regolari per dire cosa succederà.",
+     "p": [
+      "Prendi l'infinito e aggiungi -ai, -as, -a, -ons, -ez, -ont: je parlerai, tu finiras, il mangera.",
+      "Nei verbi in -re togli la e finale: prendre dà je prendrai, vendre dà nous vendrons.",
+      "Le desinenze somigliano ad avoir al presente: j'ai, tu as, il a; così si ricordano facilmente."
+     ],
+     "q": "Cosa farai la prossima estate? Rispondi con due verbi al futuro semplice.",
+     "c": "Scrivi cinque frasi sul prossimo anno con verbi regolari al futuro, come je voyagerai."
+    },
+    "pt": {
+     "t": "Futuro simples: a formação",
+     "g": "Formar o futuro simples dos verbos regulares para falar do que vai acontecer.",
+     "p": [
+      "Pega no infinitivo e junta -ai, -as, -a, -ons, -ez, -ont: je parlerai, tu finiras, il mangera.",
+      "Nos verbos em -re tira o e final: prendre dá je prendrai, vendre dá nous vendrons.",
+      "As terminações parecem avoir no presente: j'ai, tu as, il a; assim é fácil lembrar."
+     ],
+     "q": "O que vais fazer no próximo verão? Responde com dois verbos no futuro simples.",
+     "c": "Escreve cinco frases sobre o próximo ano com verbos regulares no futuro, como je voyagerai."
+    },
+    "pt_BR": {
+     "t": "Futuro simples: a formação",
+     "g": "Formar o futuro simples dos verbos regulares para falar do que vai acontecer.",
+     "p": [
+      "Pegue o infinitivo e acrescente -ai, -as, -a, -ons, -ez, -ont: je parlerai, tu finiras, il mangera.",
+      "Nos verbos em -re tire o e final: prendre dá je prendrai, vendre dá nous vendrons.",
+      "As terminações parecem avoir no presente: j'ai, tu as, il a; assim fica fácil lembrar."
+     ],
+     "q": "O que você vai fazer no próximo verão? Responda com dois verbos no futuro simples.",
+     "c": "Escreva cinco frases sobre o próximo ano com verbos regulares no futuro, como je voyagerai."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je parlerai",
+      "ex": "Un jour, je parlerai très bien français."
+     },
+     {
+      "w": "tu finiras",
+      "ex": "Tu finiras ton travail demain ?"
+     },
+     {
+      "w": "il prendra",
+      "ex": "Il prendra le train de midi."
+     },
+     {
+      "w": "nous voyagerons",
+      "ex": "Nous voyagerons en Italie en juin."
+     },
+     {
+      "w": "vous choisirez",
+      "ex": "Vous choisirez le dessert plus tard."
+     },
+     {
+      "w": "ils partiront",
+      "ex": "Ils partiront tôt le matin."
+     }
+    ],
+    "gram": "Futur simple : infinitif + -ai, -as, -a, -ons, -ez, -ont (je parlerai). Verbes en -re : sans e (je prendrai)."
+   }
+  },
+  {
+   "d": 113,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Irregular futures",
+     "g": "Learn the most common irregular stems in the simple future.",
+     "p": [
+      "Key stems: être → je serai, avoir → j'aurai, aller → j'irai, faire → je ferai.",
+      "More: pouvoir → je pourrai, voir → je verrai, venir → je viendrai, vouloir → je voudrai, devoir → je devrai.",
+      "The endings stay regular: -ai, -as, -a, -ons, -ez, -ont; il faut becomes il faudra."
+     ],
+     "q": "Where will you be in five years, and what will you do? Answer with serai, irai or ferai.",
+     "c": "Write five French sentences about a future holiday using five different irregular futures."
+    },
+    "de": {
+     "t": "Unregelmäßiges Futur",
+     "g": "Du lernst die häufigsten unregelmäßigen Stämme im Futur simple.",
+     "p": [
+      "Wichtige Stämme: être → je serai, avoir → j'aurai, aller → j'irai, faire → je ferai.",
+      "Weitere: pouvoir → je pourrai, voir → je verrai, venir → je viendrai, vouloir → je voudrai, devoir → je devrai.",
+      "Die Endungen bleiben regelmäßig: -ai, -as, -a, -ons, -ez, -ont; il faut wird zu il faudra."
+     ],
+     "q": "Wo wirst du in fünf Jahren sein und was wirst du tun? Antworte mit serai, irai oder ferai.",
+     "c": "Schreib fünf Sätze über einen künftigen Urlaub mit fünf verschiedenen unregelmäßigen Futurformen."
+    },
+    "es": {
+     "t": "Futuros irregulares",
+     "g": "Aprende las raíces irregulares más comunes del futuro simple.",
+     "p": [
+      "Raíces clave: être → je serai, avoir → j'aurai, aller → j'irai, faire → je ferai.",
+      "Más: pouvoir → je pourrai, voir → je verrai, venir → je viendrai, vouloir → je voudrai, devoir → je devrai.",
+      "Las terminaciones siguen regulares: -ai, -as, -a, -ons, -ez, -ont; il faut pasa a il faudra."
+     ],
+     "q": "¿Dónde estarás dentro de cinco años y qué harás? Responde con serai, irai o ferai.",
+     "c": "Escribe cinco frases sobre unas vacaciones futuras con cinco futuros irregulares distintos."
+    },
+    "fr": {
+     "t": "Les futurs irréguliers",
+     "g": "Apprendre les radicaux irréguliers les plus fréquents au futur simple.",
+     "p": [
+      "Radicaux clés : être → je serai, avoir → j'aurai, aller → j'irai, faire → je ferai.",
+      "Encore : pouvoir → je pourrai, voir → je verrai, venir → je viendrai, vouloir → je voudrai.",
+      "Les terminaisons restent régulières : -ai, -as, -a, -ons, -ez, -ont ; il faut → il faudra."
+     ],
+     "q": "Où tu seras dans cinq ans, et qu'est-ce que tu feras ?",
+     "c": "Écris cinq phrases sur des vacances futures avec cinq futurs irréguliers différents."
+    },
+    "it": {
+     "t": "Futuri irregolari",
+     "g": "Impara le radici irregolari più comuni del futuro semplice.",
+     "p": [
+      "Radici chiave: être → je serai, avoir → j'aurai, aller → j'irai, faire → je ferai.",
+      "Altre: pouvoir → je pourrai, voir → je verrai, venir → je viendrai, vouloir → je voudrai, devoir → je devrai.",
+      "Le desinenze restano regolari: -ai, -as, -a, -ons, -ez, -ont; il faut diventa il faudra."
+     ],
+     "q": "Dove sarai tra cinque anni e cosa farai? Rispondi con serai, irai o ferai.",
+     "c": "Scrivi cinque frasi su una vacanza futura con cinque futuri irregolari diversi."
+    },
+    "pt": {
+     "t": "Futuros irregulares",
+     "g": "Aprender as raízes irregulares mais comuns do futuro simples.",
+     "p": [
+      "Raízes-chave: être → je serai, avoir → j'aurai, aller → j'irai, faire → je ferai.",
+      "Mais: pouvoir → je pourrai, voir → je verrai, venir → je viendrai, vouloir → je voudrai, devoir → je devrai.",
+      "As terminações continuam regulares: -ai, -as, -a, -ons, -ez, -ont; il faut passa a il faudra."
+     ],
+     "q": "Onde estarás daqui a cinco anos e o que farás? Responde com serai, irai ou ferai.",
+     "c": "Escreve cinco frases sobre umas férias futuras com cinco futuros irregulares diferentes."
+    },
+    "pt_BR": {
+     "t": "Futuros irregulares",
+     "g": "Aprender as raízes irregulares mais comuns do futuro simples.",
+     "p": [
+      "Raízes-chave: être → je serai, avoir → j'aurai, aller → j'irai, faire → je ferai.",
+      "Mais: pouvoir → je pourrai, voir → je verrai, venir → je viendrai, vouloir → je voudrai, devoir → je devrai.",
+      "As terminações continuam regulares: -ai, -as, -a, -ons, -ez, -ont; il faut vira il faudra."
+     ],
+     "q": "Onde você estará daqui a cinco anos e o que fará? Responda com serai, irai ou ferai.",
+     "c": "Escreva cinco frases sobre umas férias futuras com cinco futuros irregulares diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je serai",
+      "ex": "Demain, je serai à Lyon."
+     },
+     {
+      "w": "j'aurai",
+      "ex": "J'aurai plus de temps en juillet."
+     },
+     {
+      "w": "j'irai",
+      "ex": "J'irai au marché samedi matin."
+     },
+     {
+      "w": "je ferai",
+      "ex": "Je ferai un gâteau pour ton anniversaire."
+     },
+     {
+      "w": "je pourrai",
+      "ex": "Je pourrai t'aider ce soir."
+     },
+     {
+      "w": "il faudra",
+      "ex": "Il faudra partir tôt demain."
+     }
+    ],
+    "gram": "Futurs irréguliers : serai, aurai, irai, ferai, pourrai, verrai, viendrai, voudrai, devrai ; il faudra. Terminaisons régulières."
+   }
+  },
+  {
+   "d": 114,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Plans and predictions",
+     "g": "Talk about your future plans and make predictions in French.",
+     "p": [
+      "Time words for the future: demain, après-demain, la semaine prochaine, l'année prochaine, dans deux ans, un jour.",
+      "Near future for sure plans (je vais déménager en mai), simple future for hopes and predictions (un jour, j'habiterai au bord de la mer).",
+      "Add hope and doubt: j'espère que..., peut-être que..., je pense que je..."
+     ],
+     "q": "What is one dream you have for the future? Tell me in French with un jour and the simple future.",
+     "c": "Write three French sentences: one plan for next week, one for next year and one dream for un jour."
+    },
+    "de": {
+     "t": "Pläne und Vorhersagen",
+     "g": "Du sprichst auf Französisch über Zukunftspläne und machst Vorhersagen.",
+     "p": [
+      "Zeitwörter: demain, après-demain, la semaine prochaine, l'année prochaine, dans deux ans, un jour.",
+      "Futur proche für feste Pläne (je vais déménager en mai), Futur simple für Hoffnungen (un jour, j'habiterai au bord de la mer).",
+      "Hoffnung und Zweifel: j'espère que..., peut-être que..., je pense que je..."
+     ],
+     "q": "Welchen Traum hast du für die Zukunft? Sag es mit un jour und dem Futur simple.",
+     "c": "Schreib drei Sätze: ein Plan für nächste Woche, einer für nächstes Jahr und ein Traum für un jour."
+    },
+    "es": {
+     "t": "Planes y predicciones",
+     "g": "Habla en francés de tus planes de futuro y haz predicciones.",
+     "p": [
+      "Palabras de futuro: demain, après-demain, la semaine prochaine, l'année prochaine, dans deux ans, un jour.",
+      "Futuro próximo para planes seguros (je vais déménager en mai), futuro simple para sueños (un jour, j'habiterai au bord de la mer).",
+      "Esperanza y duda: j'espère que..., peut-être que..., je pense que je..."
+     ],
+     "q": "¿Qué sueño tienes para el futuro? Dímelo con un jour y el futuro simple.",
+     "c": "Escribe tres frases: un plan para la semana que viene, otro para el año que viene y un sueño para un jour."
+    },
+    "fr": {
+     "t": "Projets et prévisions",
+     "g": "Parler de tes projets et faire des prévisions.",
+     "p": [
+      "Les mots du futur : demain, après-demain, la semaine prochaine, l'année prochaine, dans deux ans, un jour.",
+      "Futur proche pour un projet sûr (je vais déménager en mai), futur simple pour un rêve (un jour, j'habiterai au bord de la mer).",
+      "Espoir et doute : j'espère que..., peut-être que..., je pense que je..."
+     ],
+     "q": "Quel est ton rêve pour l'avenir ? Réponds avec un jour et le futur simple.",
+     "c": "Écris trois phrases : un projet pour la semaine prochaine, un pour l'année prochaine et un rêve."
+    },
+    "it": {
+     "t": "Progetti e previsioni",
+     "g": "Parla in francese dei tuoi progetti futuri e fai previsioni.",
+     "p": [
+      "Parole del futuro: demain, après-demain, la semaine prochaine, l'année prochaine, dans deux ans, un jour.",
+      "Futuro prossimo per piani sicuri (je vais déménager en mai), futuro semplice per sogni (un jour, j'habiterai au bord de la mer).",
+      "Speranza e dubbio: j'espère que..., peut-être que..., je pense que je..."
+     ],
+     "q": "Qual è un tuo sogno per il futuro? Dimmelo con un jour e il futuro semplice.",
+     "c": "Scrivi tre frasi: un progetto per la prossima settimana, uno per il prossimo anno e un sogno per un jour."
+    },
+    "pt": {
+     "t": "Planos e previsões",
+     "g": "Falar em francês dos teus planos futuros e fazer previsões.",
+     "p": [
+      "Palavras do futuro: demain, après-demain, la semaine prochaine, l'année prochaine, dans deux ans, un jour.",
+      "Futuro próximo para planos certos (je vais déménager en mai), futuro simples para sonhos (un jour, j'habiterai au bord de la mer).",
+      "Esperança e dúvida: j'espère que..., peut-être que..., je pense que je..."
+     ],
+     "q": "Que sonho tens para o futuro? Diz-me com un jour e o futuro simples.",
+     "c": "Escreve três frases: um plano para a próxima semana, um para o próximo ano e um sonho para un jour."
+    },
+    "pt_BR": {
+     "t": "Planos e previsões",
+     "g": "Falar em francês dos seus planos futuros e fazer previsões.",
+     "p": [
+      "Palavras do futuro: demain, après-demain, la semaine prochaine, l'année prochaine, dans deux ans, un jour.",
+      "Futuro próximo para planos certos (je vais déménager en mai), futuro simples para sonhos (un jour, j'habiterai au bord de la mer).",
+      "Esperança e dúvida: j'espère que..., peut-être que..., je pense que je..."
+     ],
+     "q": "Que sonho você tem para o futuro? Me diga com un jour e o futuro simples.",
+     "c": "Escreva três frases: um plano para a semana que vem, um para o ano que vem e um sonho para un jour."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'année prochaine",
+      "ex": "L'année prochaine, j'apprendrai la guitare."
+     },
+     {
+      "w": "dans deux ans",
+      "ex": "Dans deux ans, je finirai mes études."
+     },
+     {
+      "w": "un jour",
+      "ex": "Un jour, je visiterai le Sénégal."
+     },
+     {
+      "w": "j'espère que",
+      "ex": "J'espère que tu viendras à ma fête."
+     },
+     {
+      "w": "peut-être que",
+      "ex": "Peut-être qu'il fera beau demain."
+     },
+     {
+      "w": "déménager",
+      "ex": "Nous allons déménager en septembre."
+     }
+    ],
+    "gram": "Futur proche (je vais partir) pour un projet proche et sûr ; futur simple (je partirai) pour l'avenir, les rêves et les prévisions."
+   }
+  },
+  {
+   "d": 115,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Si + present, future",
+     "g": "Talk about real conditions with si + present and a result in the future.",
+     "p": [
+      "Structure: si + present, future: si j'ai le temps, je viendrai; s'il fait beau, nous irons à la plage.",
+      "Never put the future after si: say si tu viens, not si tu viendras.",
+      "You can switch the order: je viendrai si j'ai le temps; si becomes s' only before il and ils."
+     ],
+     "q": "What will you do this weekend if the weather is nice? Answer in French with si.",
+     "c": "Write four French sentences with si + present and a future, about your next free day."
+    },
+    "de": {
+     "t": "Si + Präsens, Futur",
+     "g": "Du sprichst über reale Bedingungen mit si + Präsens und Folge im Futur.",
+     "p": [
+      "Struktur: si + Präsens, Futur: si j'ai le temps, je viendrai; s'il fait beau, nous irons à la plage.",
+      "Nach si nie Futur: si tu viens, nicht si tu viendras.",
+      "Die Reihenfolge ist frei: je viendrai si j'ai le temps; si wird nur vor il und ils zu s'."
+     ],
+     "q": "Was machst du am Wochenende, wenn das Wetter schön ist? Antworte mit si.",
+     "c": "Schreib vier Sätze mit si + Präsens und Futur über deinen nächsten freien Tag."
+    },
+    "es": {
+     "t": "Si + presente, futuro",
+     "g": "Habla de condiciones reales con si + presente y un resultado en futuro.",
+     "p": [
+      "Estructura: si + presente, futuro: si j'ai le temps, je viendrai; s'il fait beau, nous irons à la plage.",
+      "Nunca pongas futuro después de si: si tu viens, no si tu viendras.",
+      "Puedes cambiar el orden: je viendrai si j'ai le temps; si pasa a s' solo ante il e ils."
+     ],
+     "q": "¿Qué harás este fin de semana si hace buen tiempo? Responde con si.",
+     "c": "Escribe cuatro frases con si + presente y futuro sobre tu próximo día libre."
+    },
+    "fr": {
+     "t": "Si + présent, futur",
+     "g": "Exprimer une condition réelle avec si + présent et un futur.",
+     "p": [
+      "Structure : si + présent, futur : si j'ai le temps, je viendrai ; s'il fait beau, nous irons à la plage.",
+      "Jamais de futur après si : on dit si tu viens, pas si tu viendras.",
+      "On peut inverser : je viendrai si j'ai le temps. Si devient s' seulement devant il et ils."
+     ],
+     "q": "Qu'est-ce que tu feras ce week-end s'il fait beau ?",
+     "c": "Écris quatre phrases avec si + présent et un futur sur ton prochain jour de congé."
+    },
+    "it": {
+     "t": "Si + presente, futuro",
+     "g": "Parla di condizioni reali con si + presente e un risultato al futuro.",
+     "p": [
+      "Struttura: si + presente, futuro: si j'ai le temps, je viendrai; s'il fait beau, nous irons à la plage.",
+      "Mai il futuro dopo si: si tu viens, non si tu viendras.",
+      "L'ordine può cambiare: je viendrai si j'ai le temps; si diventa s' solo davanti a il e ils."
+     ],
+     "q": "Cosa farai questo fine settimana se fa bel tempo? Rispondi con si.",
+     "c": "Scrivi quattro frasi con si + presente e futuro sul tuo prossimo giorno libero."
+    },
+    "pt": {
+     "t": "Si + presente, futuro",
+     "g": "Falar de condições reais com si + presente e um resultado no futuro.",
+     "p": [
+      "Estrutura: si + presente, futuro: si j'ai le temps, je viendrai; s'il fait beau, nous irons à la plage.",
+      "Nunca uses futuro depois de si: si tu viens, e não si tu viendras.",
+      "Podes trocar a ordem: je viendrai si j'ai le temps; si passa a s' só antes de il e ils."
+     ],
+     "q": "O que vais fazer este fim de semana se estiver bom tempo? Responde com si.",
+     "c": "Escreve quatro frases com si + presente e futuro sobre o teu próximo dia de folga."
+    },
+    "pt_BR": {
+     "t": "Si + presente, futuro",
+     "g": "Falar de condições reais com si + presente e um resultado no futuro.",
+     "p": [
+      "Estrutura: si + presente, futuro: si j'ai le temps, je viendrai; s'il fait beau, nous irons à la plage.",
+      "Nunca use futuro depois de si: si tu viens, e não si tu viendras.",
+      "Você pode trocar a ordem: je viendrai si j'ai le temps; si vira s' só antes de il e ils."
+     ],
+     "q": "O que você vai fazer neste fim de semana se o tempo estiver bom? Responda com si.",
+     "c": "Escreva quatro frases com si + presente e futuro sobre seu próximo dia de folga."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si j'ai le temps",
+      "ex": "Si j'ai le temps, je t'appellerai."
+     },
+     {
+      "w": "s'il fait beau",
+      "ex": "S'il fait beau, on ira au parc."
+     },
+     {
+      "w": "s'il pleut",
+      "ex": "S'il pleut, nous resterons à la maison."
+     },
+     {
+      "w": "si tu veux",
+      "ex": "Si tu veux, je viendrai avec toi."
+     },
+     {
+      "w": "si possible",
+      "ex": "Si possible, je partirai plus tôt."
+     },
+     {
+      "w": "sinon",
+      "ex": "Dépêche-toi, sinon tu rateras le bus."
+     }
+    ],
+    "gram": "Si + présent → futur simple : si tu viens, je serai content. Jamais de futur après si. S' devant il / ils."
+   }
+  },
+  {
+   "d": 116,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "The weather forecast",
+     "g": "Understand and give a simple weather forecast in French with the future.",
+     "p": [
+      "Forecasts use the future: il fera beau, il pleuvra, il neigera, il y aura du soleil, des nuages, des averses.",
+      "Useful words: la météo, les températures, le vent, un orage, éclaircies (sunny spells), entre 15 et 20 degrés.",
+      "Regions and times: dans le nord, sur la côte, demain matin, en fin de journée, ce week-end."
+     ],
+     "q": "Imagine tomorrow's weather where you live and give me the forecast in French.",
+     "c": "Write a three-sentence French forecast for your region for this weekend, using il y aura and il fera."
+    },
+    "de": {
+     "t": "Der Wetterbericht",
+     "g": "Du verstehst einen einfachen Wetterbericht und gibst selbst einen im Futur.",
+     "p": [
+      "Wetterberichte nutzen das Futur: il fera beau, il pleuvra, il neigera, il y aura du soleil, des nuages, des averses.",
+      "Nützlich: la météo, les températures, le vent, un orage, éclaircies (Aufheiterungen), entre 15 et 20 degrés.",
+      "Regionen und Zeiten: dans le nord, sur la côte, demain matin, en fin de journée, ce week-end."
+     ],
+     "q": "Stell dir das Wetter von morgen bei dir vor und gib mir den Wetterbericht auf Französisch.",
+     "c": "Schreib einen Wetterbericht in drei Sätzen für deine Region am Wochenende, mit il y aura und il fera."
+    },
+    "es": {
+     "t": "El pronóstico del tiempo",
+     "g": "Entiende y da un pronóstico del tiempo sencillo en francés con el futuro.",
+     "p": [
+      "Los pronósticos usan el futuro: il fera beau, il pleuvra, il neigera, il y aura du soleil, des nuages, des averses.",
+      "Palabras útiles: la météo, les températures, le vent, un orage, éclaircies (claros), entre 15 et 20 degrés.",
+      "Regiones y momentos: dans le nord, sur la côte, demain matin, en fin de journée, ce week-end."
+     ],
+     "q": "Imagina el tiempo de mañana donde vives y dame el pronóstico en francés.",
+     "c": "Escribe un pronóstico de tres frases para tu región este fin de semana, con il y aura e il fera."
+    },
+    "fr": {
+     "t": "La météo",
+     "g": "Comprendre et présenter une météo simple au futur.",
+     "p": [
+      "La météo utilise le futur : il fera beau, il pleuvra, il neigera, il y aura du soleil, des nuages, des averses.",
+      "Mots utiles : les températures, le vent, un orage, des éclaircies, entre 15 et 20 degrés.",
+      "Régions et moments : dans le nord, sur la côte, demain matin, en fin de journée, ce week-end."
+     ],
+     "q": "Imagine le temps de demain chez toi et présente-moi la météo.",
+     "c": "Écris une météo en trois phrases pour ta région ce week-end, avec il y aura et il fera."
+    },
+    "it": {
+     "t": "Le previsioni del tempo",
+     "g": "Capisci e fai previsioni del tempo semplici in francese con il futuro.",
+     "p": [
+      "Le previsioni usano il futuro: il fera beau, il pleuvra, il neigera, il y aura du soleil, des nuages, des averses.",
+      "Parole utili: la météo, les températures, le vent, un orage, éclaircies (schiarite), entre 15 et 20 degrés.",
+      "Regioni e momenti: dans le nord, sur la côte, demain matin, en fin de journée, ce week-end."
+     ],
+     "q": "Immagina il tempo di domani dove vivi e dammi le previsioni in francese.",
+     "c": "Scrivi previsioni di tre frasi per la tua regione nel weekend, con il y aura e il fera."
+    },
+    "pt": {
+     "t": "A previsão do tempo",
+     "g": "Perceber e fazer uma previsão do tempo simples em francês com o futuro.",
+     "p": [
+      "As previsões usam o futuro: il fera beau, il pleuvra, il neigera, il y aura du soleil, des nuages, des averses.",
+      "Palavras úteis: la météo, les températures, le vent, un orage, éclaircies (abertas), entre 15 et 20 degrés.",
+      "Regiões e momentos: dans le nord, sur la côte, demain matin, en fin de journée, ce week-end."
+     ],
+     "q": "Imagina o tempo de amanhã onde vives e faz-me a previsão em francês.",
+     "c": "Escreve uma previsão de três frases para a tua região no fim de semana, com il y aura e il fera."
+    },
+    "pt_BR": {
+     "t": "A previsão do tempo",
+     "g": "Entender e fazer uma previsão do tempo simples em francês com o futuro.",
+     "p": [
+      "As previsões usam o futuro: il fera beau, il pleuvra, il neigera, il y aura du soleil, des nuages, des averses.",
+      "Palavras úteis: la météo, les températures, le vent, un orage, éclaircies (períodos de sol), entre 15 et 20 degrés.",
+      "Regiões e momentos: dans le nord, sur la côte, demain matin, en fin de journée, ce week-end."
+     ],
+     "q": "Imagine o tempo de amanhã onde você mora e me dê a previsão em francês.",
+     "c": "Escreva uma previsão de três frases para sua região no fim de semana, com il y aura e il fera."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la météo",
+      "ex": "Tu as vu la météo pour demain ?"
+     },
+     {
+      "w": "il y aura",
+      "ex": "Demain, il y aura du soleil."
+     },
+     {
+      "w": "il pleuvra",
+      "ex": "Il pleuvra dans l'après-midi."
+     },
+     {
+      "w": "des averses",
+      "ex": "Attention, des averses sont prévues ce soir."
+     },
+     {
+      "w": "un orage",
+      "ex": "Il y aura peut-être un orage."
+     },
+     {
+      "w": "des éclaircies",
+      "ex": "Après la pluie, il y aura des éclaircies."
+     }
+    ],
+    "gram": "Météo au futur : il fera (faire), il pleuvra (pleuvoir), il neigera, il y aura (avoir) + du soleil, des nuages."
+   }
+  },
+  {
+   "d": 117,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Media and screens",
+     "g": "Talk about TV, series, social media and streaming in French.",
+     "p": [
+      "Screens: la télé, une série, un épisode, une émission, les informations (les infos), regarder en streaming.",
+      "Online: les réseaux sociaux, poster une photo, suivre quelqu'un, une vidéo, une application.",
+      "Opinions and habits: je regarde deux épisodes par soir, je passe trop de temps sur mon téléphone, j'adore cette série."
+     ],
+     "q": "What series are you watching at the moment? Tell me in French what it is about.",
+     "c": "Write four French sentences about your screen habits: what, when, how often and your opinion."
+    },
+    "de": {
+     "t": "Medien und Bildschirme",
+     "g": "Du sprichst auf Französisch über Fernsehen, Serien, soziale Netzwerke und Streaming.",
+     "p": [
+      "Bildschirm: la télé, une série, un épisode, une émission, les informations (les infos), regarder en streaming.",
+      "Online: les réseaux sociaux, poster une photo, suivre quelqu'un, une vidéo, une application.",
+      "Gewohnheiten: je regarde deux épisodes par soir, je passe trop de temps sur mon téléphone, j'adore cette série."
+     ],
+     "q": "Welche Serie schaust du gerade? Erzähl mir auf Französisch, worum es geht.",
+     "c": "Schreib vier Sätze über deine Bildschirmgewohnheiten: was, wann, wie oft und deine Meinung."
+    },
+    "es": {
+     "t": "Medios y pantallas",
+     "g": "Habla en francés de la tele, las series, las redes sociales y el streaming.",
+     "p": [
+      "Pantallas: la télé, une série, un épisode, une émission, les informations (les infos), regarder en streaming.",
+      "En línea: les réseaux sociaux, poster une photo, suivre quelqu'un, une vidéo, une application.",
+      "Hábitos: je regarde deux épisodes par soir, je passe trop de temps sur mon téléphone, j'adore cette série."
+     ],
+     "q": "¿Qué serie estás viendo ahora? Cuéntame en francés de qué trata.",
+     "c": "Escribe cuatro frases sobre tus hábitos con las pantallas: qué, cuándo, cuánto y tu opinión."
+    },
+    "fr": {
+     "t": "Médias et écrans",
+     "g": "Parler de la télé, des séries, des réseaux sociaux et du streaming.",
+     "p": [
+      "Les écrans : la télé, une série, un épisode, une émission, les infos, regarder en streaming.",
+      "En ligne : les réseaux sociaux, poster une photo, suivre quelqu'un, une vidéo, une application.",
+      "Habitudes : je regarde deux épisodes par soir, je passe trop de temps sur mon téléphone."
+     ],
+     "q": "Quelle série tu regardes en ce moment ? Ça parle de quoi ?",
+     "c": "Écris quatre phrases sur tes habitudes d'écran : quoi, quand, combien et ton avis."
+    },
+    "it": {
+     "t": "Media e schermi",
+     "g": "Parla in francese di TV, serie, social network e streaming.",
+     "p": [
+      "Schermi: la télé, une série, un épisode, une émission, les informations (les infos), regarder en streaming.",
+      "Online: les réseaux sociaux, poster une photo, suivre quelqu'un, une vidéo, une application.",
+      "Abitudini: je regarde deux épisodes par soir, je passe trop de temps sur mon téléphone, j'adore cette série."
+     ],
+     "q": "Che serie stai guardando in questo periodo? Raccontami in francese di cosa parla.",
+     "c": "Scrivi quattro frasi sulle tue abitudini con gli schermi: cosa, quando, quanto e la tua opinione."
+    },
+    "pt": {
+     "t": "Media e ecrãs",
+     "g": "Falar em francês de televisão, séries, redes sociais e streaming.",
+     "p": [
+      "Ecrãs: la télé, une série, un épisode, une émission, les informations (les infos), regarder en streaming.",
+      "Online: les réseaux sociaux, poster une photo, suivre quelqu'un, une vidéo, une application.",
+      "Hábitos: je regarde deux épisodes par soir, je passe trop de temps sur mon téléphone, j'adore cette série."
+     ],
+     "q": "Que série estás a ver neste momento? Conta-me em francês do que trata.",
+     "c": "Escreve quatro frases sobre os teus hábitos de ecrã: o quê, quando, quanto e a tua opinião."
+    },
+    "pt_BR": {
+     "t": "Mídia e telas",
+     "g": "Falar em francês de TV, séries, redes sociais e streaming.",
+     "p": [
+      "Telas: la télé, une série, un épisode, une émission, les informations (les infos), regarder en streaming.",
+      "On-line: les réseaux sociaux, poster une photo, suivre quelqu'un, une vidéo, une application.",
+      "Hábitos: je regarde deux épisodes par soir, je passe trop de temps sur mon téléphone, j'adore cette série."
+     ],
+     "q": "Que série você está vendo agora? Me conte em francês sobre o que é.",
+     "c": "Escreva quatro frases sobre seus hábitos de tela: o quê, quando, quanto e sua opinião."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une série",
+      "ex": "Je regarde une série policière."
+     },
+     {
+      "w": "un épisode",
+      "ex": "J'ai vu trois épisodes hier soir."
+     },
+     {
+      "w": "les réseaux sociaux",
+      "ex": "Elle poste ses photos sur les réseaux sociaux."
+     },
+     {
+      "w": "en streaming",
+      "ex": "On regarde le film en streaming."
+     },
+     {
+      "w": "les infos",
+      "ex": "Je regarde les infos le matin."
+     },
+     {
+      "w": "ça parle de",
+      "ex": "Ça parle d'une famille à Marseille."
+     }
+    ],
+    "gram": "Passer du temps sur / à + infinitif : je passe une heure à regarder des séries. Ça parle de quoi ? Ça parle de..."
+   }
+  },
+  {
+   "d": 118,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Cinema and films",
+     "g": "Talk about films and cinema in French and share your opinion.",
+     "p": [
+      "Film types: une comédie, un film d'action, un film d'aventure, un dessin animé, un documentaire, un film policier.",
+      "At the cinema: la séance, la salle, les sous-titres, la version originale (VO) or version française (VF).",
+      "Give your opinion: j'ai adoré, c'était drôle, émouvant, un peu ennuyeux; je te le conseille."
+     ],
+     "q": "What is the last film you saw? Tell me in French what kind it was and what you thought.",
+     "c": "Write a mini French review of a film you like: type, story in one line, and your opinion."
+    },
+    "de": {
+     "t": "Kino und Filme",
+     "g": "Du sprichst auf Französisch über Filme und Kino und sagst deine Meinung.",
+     "p": [
+      "Filmarten: une comédie, un film d'action, un film d'aventure, un dessin animé, un documentaire, un film policier.",
+      "Im Kino: la séance, la salle, les sous-titres, la version originale (VO) oder version française (VF).",
+      "Meinung: j'ai adoré, c'était drôle, émouvant, un peu ennuyeux; je te le conseille."
+     ],
+     "q": "Welchen Film hast du zuletzt gesehen? Sag mir auf Französisch, was für einer und wie er war.",
+     "c": "Schreib eine Mini-Filmkritik: Art, Handlung in einer Zeile und deine Meinung."
+    },
+    "es": {
+     "t": "Cine y películas",
+     "g": "Habla en francés de películas y de cine, y da tu opinión.",
+     "p": [
+      "Tipos: une comédie, un film d'action, un film d'aventure, un dessin animé, un documentaire, un film policier.",
+      "En el cine: la séance, la salle, les sous-titres, la version originale (VO) o version française (VF).",
+      "Opinión: j'ai adoré, c'était drôle, émouvant, un peu ennuyeux; je te le conseille."
+     ],
+     "q": "¿Cuál es la última película que viste? Dime en francés de qué tipo era y qué te pareció.",
+     "c": "Escribe una minicrítica de una película que te guste: tipo, historia en una línea y tu opinión."
+    },
+    "fr": {
+     "t": "Le cinéma",
+     "g": "Parler de films et de cinéma, et donner ton avis.",
+     "p": [
+      "Les genres : une comédie, un film d'action, un film d'aventure, un dessin animé, un documentaire, un polar.",
+      "Au cinéma : la séance, la salle, les sous-titres, la version originale (VO) ou française (VF).",
+      "Ton avis : j'ai adoré, c'était drôle, émouvant, un peu ennuyeux ; je te le conseille."
+     ],
+     "q": "C'est quoi, le dernier film que tu as vu ? Quel genre, et tu l'as aimé ?",
+     "c": "Écris une mini-critique d'un film que tu aimes : le genre, l'histoire en une ligne et ton avis."
+    },
+    "it": {
+     "t": "Cinema e film",
+     "g": "Parla in francese di film e di cinema e dai la tua opinione.",
+     "p": [
+      "Generi: une comédie, un film d'action, un film d'aventure, un dessin animé, un documentaire, un film policier.",
+      "Al cinema: la séance, la salle, les sous-titres, la version originale (VO) o version française (VF).",
+      "Opinione: j'ai adoré, c'était drôle, émouvant, un peu ennuyeux; je te le conseille."
+     ],
+     "q": "Qual è l'ultimo film che hai visto? Dimmi in francese di che genere era e cosa ne pensi.",
+     "c": "Scrivi una mini recensione di un film che ami: genere, trama in una riga e la tua opinione."
+    },
+    "pt": {
+     "t": "Cinema e filmes",
+     "g": "Falar em francês de filmes e de cinema e dar a tua opinião.",
+     "p": [
+      "Géneros: une comédie, un film d'action, un film d'aventure, un dessin animé, un documentaire, un film policier.",
+      "No cinema: la séance, la salle, les sous-titres, la version originale (VO) ou version française (VF).",
+      "Opinião: j'ai adoré, c'était drôle, émouvant, un peu ennuyeux; je te le conseille."
+     ],
+     "q": "Qual foi o último filme que viste? Diz-me em francês de que género era e o que achaste.",
+     "c": "Escreve uma mini crítica de um filme de que gostas: género, história numa linha e opinião."
+    },
+    "pt_BR": {
+     "t": "Cinema e filmes",
+     "g": "Falar em francês de filmes e de cinema e dar sua opinião.",
+     "p": [
+      "Gêneros: une comédie, un film d'action, un film d'aventure, un dessin animé, un documentaire, un film policier.",
+      "No cinema: la séance, la salle, les sous-titres, la version originale (VO) ou version française (VF).",
+      "Opinião: j'ai adoré, c'était drôle, émouvant, un peu ennuyeux; je te le conseille."
+     ],
+     "q": "Qual foi o último filme que você viu? Me diga em francês de que gênero era e o que achou.",
+     "c": "Escreva uma minicrítica de um filme de que você gosta: gênero, história numa linha e opinião."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une comédie",
+      "ex": "C'est une comédie très drôle."
+     },
+     {
+      "w": "les sous-titres",
+      "ex": "Je regarde les films avec les sous-titres."
+     },
+     {
+      "w": "en version originale",
+      "ex": "On a vu le film en version originale."
+     },
+     {
+      "w": "la séance",
+      "ex": "La prochaine séance est à vingt heures."
+     },
+     {
+      "w": "émouvant, émouvante",
+      "ex": "La fin du film est très émouvante."
+     },
+     {
+      "w": "je te le conseille",
+      "ex": "Ce film est génial, je te le conseille !"
+     }
+    ],
+    "gram": "Donner son avis au passé : j'ai adoré, c'était + adjectif (c'était drôle). Je te le conseille (deux pronoms)."
+   }
+  },
+  {
+   "d": 119,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Music and concerts",
+     "g": "Talk about music genres, instruments and your favourite artists in French.",
+     "p": [
+      "Genres: le rock, le jazz, le rap, la musique classique, la chanson française, la pop.",
+      "Instruments use jouer de: jouer du piano, de la guitare, du violon; sports use jouer à.",
+      "Fans and concerts: mon chanteur préféré, ma chanteuse préférée, un concert, un album, écouter en boucle."
+     ],
+     "q": "Who is your favourite singer or band, and why? Tell me in French.",
+     "c": "Write three French sentences about the music you like, one instrument and one concert you went to or dream of."
+    },
+    "de": {
+     "t": "Musik und Konzerte",
+     "g": "Du sprichst auf Französisch über Musikrichtungen, Instrumente und Lieblingskünstler.",
+     "p": [
+      "Richtungen: le rock, le jazz, le rap, la musique classique, la chanson française, la pop.",
+      "Instrumente mit jouer de: jouer du piano, de la guitare, du violon; Sport mit jouer à.",
+      "Fans und Konzerte: mon chanteur préféré, ma chanteuse préférée, un concert, un album, écouter en boucle."
+     ],
+     "q": "Wer ist dein Lieblingssänger oder deine Lieblingsband und warum? Sag es auf Französisch.",
+     "c": "Schreib drei Sätze über deine Musik, ein Instrument und ein Konzert, das du besucht hast oder dir wünschst."
+    },
+    "es": {
+     "t": "Música y conciertos",
+     "g": "Habla en francés de géneros musicales, instrumentos y tus artistas favoritos.",
+     "p": [
+      "Géneros: le rock, le jazz, le rap, la musique classique, la chanson française, la pop.",
+      "Los instrumentos van con jouer de: jouer du piano, de la guitare, du violon; los deportes con jouer à.",
+      "Fans y conciertos: mon chanteur préféré, ma chanteuse préférée, un concert, un album, écouter en boucle."
+     ],
+     "q": "¿Quién es tu cantante o grupo favorito y por qué? Dímelo en francés.",
+     "c": "Escribe tres frases sobre la música que te gusta, un instrumento y un concierto que viste o sueñas ver."
+    },
+    "fr": {
+     "t": "Musique et concerts",
+     "g": "Parler des styles de musique, des instruments et de tes artistes préférés.",
+     "p": [
+      "Les styles : le rock, le jazz, le rap, la musique classique, la chanson française, la pop.",
+      "Les instruments avec jouer de : jouer du piano, de la guitare, du violon ; le sport avec jouer à.",
+      "Fans et concerts : mon chanteur préféré, ma chanteuse préférée, un concert, un album, écouter en boucle."
+     ],
+     "q": "Qui est ton chanteur ou ton groupe préféré, et pourquoi ?",
+     "c": "Écris trois phrases sur ta musique, un instrument et un concert vu ou rêvé."
+    },
+    "it": {
+     "t": "Musica e concerti",
+     "g": "Parla in francese di generi musicali, strumenti e dei tuoi artisti preferiti.",
+     "p": [
+      "Generi: le rock, le jazz, le rap, la musique classique, la chanson française, la pop.",
+      "Gli strumenti vogliono jouer de: jouer du piano, de la guitare, du violon; gli sport jouer à.",
+      "Fan e concerti: mon chanteur préféré, ma chanteuse préférée, un concert, un album, écouter en boucle."
+     ],
+     "q": "Chi è il tuo cantante o gruppo preferito, e perché? Dimmelo in francese.",
+     "c": "Scrivi tre frasi sulla musica che ami, uno strumento e un concerto visto o sognato."
+    },
+    "pt": {
+     "t": "Música e concertos",
+     "g": "Falar em francês de géneros musicais, instrumentos e dos teus artistas preferidos.",
+     "p": [
+      "Géneros: le rock, le jazz, le rap, la musique classique, la chanson française, la pop.",
+      "Os instrumentos usam jouer de: jouer du piano, de la guitare, du violon; os desportos jouer à.",
+      "Fãs e concertos: mon chanteur préféré, ma chanteuse préférée, un concert, un album, écouter en boucle."
+     ],
+     "q": "Quem é o teu cantor ou banda preferida e porquê? Diz-me em francês.",
+     "c": "Escreve três frases sobre a música de que gostas, um instrumento e um concerto que viste ou sonhas ver."
+    },
+    "pt_BR": {
+     "t": "Música e shows",
+     "g": "Falar em francês de gêneros musicais, instrumentos e seus artistas favoritos.",
+     "p": [
+      "Gêneros: le rock, le jazz, le rap, la musique classique, la chanson française, la pop.",
+      "Os instrumentos usam jouer de: jouer du piano, de la guitare, du violon; os esportes jouer à.",
+      "Fãs e shows: mon chanteur préféré, ma chanteuse préférée, un concert, un album, écouter en boucle."
+     ],
+     "q": "Quem é seu cantor ou banda favorita e por quê? Me diga em francês.",
+     "c": "Escreva três frases sobre a música de que você gosta, um instrumento e um show que viu ou sonha ver."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "jouer de la guitare",
+      "ex": "Mon frère joue de la guitare."
+     },
+     {
+      "w": "jouer du piano",
+      "ex": "J'apprends à jouer du piano."
+     },
+     {
+      "w": "un concert",
+      "ex": "Nous allons à un concert samedi."
+     },
+     {
+      "w": "mon chanteur préféré",
+      "ex": "Mon chanteur préféré est Stromae."
+     },
+     {
+      "w": "écouter en boucle",
+      "ex": "J'écoute cette chanson en boucle."
+     },
+     {
+      "w": "la chanson française",
+      "ex": "J'adore la chanson française des années 60."
+     }
+    ],
+    "gram": "Jouer de + instrument (jouer du piano, de la guitare) ; jouer à + jeu ou sport (jouer au tennis)."
+   }
+  },
+  {
+   "d": 120,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Reading and books",
+     "g": "Talk about books and reading in French, and discover the French love of comics.",
+     "p": [
+      "Book words: un livre, un roman, un auteur, une autrice, un chapitre, une bibliothèque, une librairie (bookshop).",
+      "La BD, short for bande dessinée, is a major art in France and Belgium: Tintin, Astérix and many more.",
+      "Talk about reading: je lis un roman policier, j'ai lu ce livre en deux jours, ça se passe à Paris."
+     ],
+     "q": "What are you reading at the moment, or what is a book you loved? Tell me in French.",
+     "c": "Write three French sentences about a book or comic you like: title, where it takes place and your opinion."
+    },
+    "de": {
+     "t": "Lesen und Bücher",
+     "g": "Du sprichst auf Französisch über Bücher und Lesen und entdeckst die französische Liebe zu Comics.",
+     "p": [
+      "Wörter: un livre, un roman, un auteur, une autrice, un chapitre, une bibliothèque, une librairie (Buchhandlung).",
+      "Die BD, kurz für bande dessinée, ist in Frankreich und Belgien eine große Kunst: Tintin, Astérix und viele mehr.",
+      "Über Lesen: je lis un roman policier, j'ai lu ce livre en deux jours, ça se passe à Paris."
+     ],
+     "q": "Was liest du gerade, oder welches Buch hast du geliebt? Erzähl es mir auf Französisch.",
+     "c": "Schreib drei Sätze über ein Buch oder einen Comic: Titel, wo es spielt und deine Meinung."
+    },
+    "es": {
+     "t": "Lectura y libros",
+     "g": "Habla en francés de libros y lectura, y descubre el amor francés por el cómic.",
+     "p": [
+      "Palabras: un livre, un roman, un auteur, une autrice, un chapitre, une bibliothèque, une librairie (librería).",
+      "La BD, de bande dessinée, es un gran arte en Francia y Bélgica: Tintín, Astérix y muchos más.",
+      "Hablar de lectura: je lis un roman policier, j'ai lu ce livre en deux jours, ça se passe à Paris."
+     ],
+     "q": "¿Qué estás leyendo ahora o qué libro te encantó? Cuéntamelo en francés.",
+     "c": "Escribe tres frases sobre un libro o cómic que te guste: título, dónde ocurre y tu opinión."
+    },
+    "fr": {
+     "t": "La lecture et les livres",
+     "g": "Parler des livres et de la lecture, et découvrir l'amour des Français pour la BD.",
+     "p": [
+      "Vocabulaire : un livre, un roman, un auteur, une autrice, un chapitre, une bibliothèque, une librairie.",
+      "La BD (bande dessinée) est un art majeur en France et en Belgique : Tintin, Astérix et bien d'autres.",
+      "Parler de lecture : je lis un roman policier, j'ai lu ce livre en deux jours, ça se passe à Paris."
+     ],
+     "q": "Qu'est-ce que tu lis en ce moment, ou quel livre tu as adoré ?",
+     "c": "Écris trois phrases sur un livre ou une BD : le titre, où ça se passe et ton avis."
+    },
+    "it": {
+     "t": "Lettura e libri",
+     "g": "Parla in francese di libri e lettura, e scopri l'amore dei francesi per il fumetto.",
+     "p": [
+      "Parole: un livre, un roman, un auteur, une autrice, un chapitre, une bibliothèque, une librairie (libreria).",
+      "La BD, cioè bande dessinée, è una grande arte in Francia e in Belgio: Tintin, Astérix e tanti altri.",
+      "Parlare di lettura: je lis un roman policier, j'ai lu ce livre en deux jours, ça se passe à Paris."
+     ],
+     "q": "Cosa stai leggendo ora, o quale libro hai amato? Raccontamelo in francese.",
+     "c": "Scrivi tre frasi su un libro o fumetto che ami: titolo, dove si svolge e la tua opinione."
+    },
+    "pt": {
+     "t": "Leitura e livros",
+     "g": "Falar em francês de livros e leitura, e descobrir o amor francês pela banda desenhada.",
+     "p": [
+      "Palavras: un livre, un roman, un auteur, une autrice, un chapitre, une bibliothèque, une librairie (livraria).",
+      "A BD, de bande dessinée, é uma grande arte em França e na Bélgica: Tintim, Astérix e muitos mais.",
+      "Falar de leitura: je lis un roman policier, j'ai lu ce livre en deux jours, ça se passe à Paris."
+     ],
+     "q": "O que estás a ler agora, ou que livro adoraste? Conta-me em francês.",
+     "c": "Escreve três frases sobre um livro ou BD de que gostas: título, onde se passa e a tua opinião."
+    },
+    "pt_BR": {
+     "t": "Leitura e livros",
+     "g": "Falar em francês de livros e leitura, e descobrir o amor francês pelos quadrinhos.",
+     "p": [
+      "Palavras: un livre, un roman, un auteur, une autrice, un chapitre, une bibliothèque, une librairie (livraria).",
+      "A BD, de bande dessinée, é uma grande arte na França e na Bélgica: Tintim, Asterix e muitos outros.",
+      "Falar de leitura: je lis un roman policier, j'ai lu ce livre en deux jours, ça se passe à Paris."
+     ],
+     "q": "O que você está lendo agora, ou que livro adorou? Me conte em francês.",
+     "c": "Escreva três frases sobre um livro ou quadrinho de que você gosta: título, onde se passa e sua opinião."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un roman",
+      "ex": "Je lis un roman de Jules Verne."
+     },
+     {
+      "w": "une BD",
+      "ex": "Astérix est une BD très célèbre."
+     },
+     {
+      "w": "une bibliothèque",
+      "ex": "J'emprunte des livres à la bibliothèque."
+     },
+     {
+      "w": "une librairie",
+      "ex": "J'ai acheté ce livre dans une librairie."
+     },
+     {
+      "w": "ça se passe",
+      "ex": "L'histoire se passe à Bruxelles."
+     },
+     {
+      "w": "un chapitre",
+      "ex": "Je lis un chapitre chaque soir."
+     }
+    ],
+    "gram": "Lire : je lis, nous lisons, j'ai lu. Ça se passe à / en + lieu. Bibliothèque (emprunter) ≠ librairie (acheter)."
+   }
+  }
+ ]
+}

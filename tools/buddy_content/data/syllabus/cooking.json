@@ -1,0 +1,2195 @@
+{
+ "topic": "cooking",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Welcome to everyday cooking",
+   "f": "What this 365-day path covers, from kitchen basics to confident, creative home cooking"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "Setting up your kitchen",
+   "f": "Organising zones for prep, cooking and cleaning so everything you need is within reach"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Essential kitchen tools",
+   "f": "A chef's knife, cutting board, pans, pots, spatula and measuring tools: the core kit"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Kitchen hygiene basics",
+   "f": "Washing hands, clean surfaces and keeping raw and cooked foods apart"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Food storage and the fridge",
+   "f": "Where foods belong in the fridge, cold chain basics and storing leftovers safely"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "Reading a recipe",
+   "f": "Reading it through first, gathering ingredients and understanding common recipe terms"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Measuring ingredients",
+   "f": "Cups, spoons and scales, and why weighing ingredients matters most in baking"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Holding a knife safely",
+   "f": "A secure grip, the claw hand and why a sharp knife is a safer knife"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Basic knife cuts",
+   "f": "Slice, dice, mince and julienne explained with everyday vegetables"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Chopping an onion",
+   "f": "The classic method for even dice and tricks for fewer tears"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Garlic and fresh herbs",
+   "f": "Peeling, crushing and chopping garlic, and washing and handling fresh herbs"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Understanding heat",
+   "f": "Low, medium and high heat on the stove and what each one does to food"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Boiling and simmering",
+   "f": "The difference between a rolling boil and a gentle simmer, and when to use each"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Cooking perfect pasta",
+   "f": "Salting the water, timing it right and saving a cup of starchy pasta water"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Cooking rice",
+   "f": "Absorption and boiling methods, rinsing and letting rice rest before serving"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Boiling eggs",
+   "f": "Soft, jammy and hard-boiled eggs with simple timings and easy peeling"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Scrambled eggs and omelettes",
+   "f": "Low heat, a little butter and folding a tender omelette"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Frying an egg",
+   "f": "Sunny side up, over easy and crispy edges in a hot pan"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Salt, the key seasoning",
+   "f": "Types of salt and seasoning step by step rather than all at the end"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Pepper, acid and balance",
+   "f": "How black pepper, lemon juice and vinegar brighten and balance a dish"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Sautéing vegetables",
+   "f": "A hot pan, a little fat and leaving enough space so vegetables brown instead of steam"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Steaming vegetables",
+   "f": "Keeping vegetables colourful, crunchy and full of flavour"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Roasting vegetables",
+   "f": "High oven heat, enough oil and space on the tray for caramelised edges"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Making a simple salad",
+   "f": "Washing and drying greens and building a salad with crunch, colour and balance"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "A basic vinaigrette",
+   "f": "The classic oil to vinegar ratio and shaking or whisking a dressing together"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Simple tomato sauce",
+   "f": "A classic sauce from tinned tomatoes, garlic and olive oil"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Sandwiches and wraps",
+   "f": "Building tasty sandwiches and wraps with balance, texture and a good spread"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Beans and lentils for beginners",
+   "f": "Tinned versus dried, rinsing and quick dishes built on pulses"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "A simple vegetable soup",
+   "f": "Building soup from softened aromatics to the final seasoning"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: your first month",
+   "f": "A relaxed look back at the basics plus a simple three-dish meal challenge"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Understanding cooking fats",
+   "f": "Butter, olive oil and neutral oils, flavour and smoke points"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Pans and their materials",
+   "f": "Stainless steel, non-stick and cast iron, and when each one shines"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Searing for flavour",
+   "f": "Browning food and the Maillard reaction explained in simple words"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Cooking chicken breast",
+   "f": "Even thickness, a good sear and checking it is cooked through"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Safe cooking temperatures",
+   "f": "Using a food thermometer and the core temperatures that keep food safe"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Cooking minced meat",
+   "f": "Browning mince well for sauces, tacos and meatballs"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Cooking fish fillets",
+   "f": "Pan-frying fish gently and getting crispy skin without sticking"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Tofu basics",
+   "f": "Pressing, cubing and crisping tofu so it soaks up flavour"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Potatoes three ways",
+   "f": "Boiled, mashed and roasted potatoes and which varieties suit each"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Baked potatoes and wedges",
+   "f": "Crispy jackets and seasoned oven wedges"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Cooking other grains",
+   "f": "Couscous, quinoa, bulgur and barley with simple water ratios"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Stir-frying basics",
+   "f": "High heat, everything prepped in advance and adding ingredients in the right order"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Simple fried rice",
+   "f": "Why cold leftover rice works best for this quick, flexible dish"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "One-pan meals",
+   "f": "Sheet-pan and one-pot dinners that save time and washing up"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Fresh versus dried herbs",
+   "f": "When to add each kind and how to swap one for the other"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Spices for beginners",
+   "f": "Building a small spice collection and toasting spices to wake up their aroma"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "A quick pickle",
+   "f": "Fast vinegar pickles that add crunch and brightness to any plate"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Simple pan flatbread",
+   "f": "A quick dough cooked in a dry pan in a few minutes"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Pancakes",
+   "f": "Mixing batter gently, heating the pan well and flipping with confidence"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Breakfast bowls",
+   "f": "Oats, yogurt, fruit and crunchy toppings for a good start to the day"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Homemade granola",
+   "f": "Baking crunchy clusters with oats, nuts, seeds and a touch of honey"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Smoothies",
+   "f": "Balancing fruit, liquid, greens and texture in the blender"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Snacks and dips",
+   "f": "Hummus, guacamole and yogurt dips to share"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Cooking for one",
+   "f": "Scaling recipes down, smart portions and avoiding waste"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Leftovers made new",
+   "f": "Turning leftovers into different meals while keeping them safe"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Meal planning basics",
+   "f": "Planning a week of meals and writing a useful shopping list"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Smart grocery shopping",
+   "f": "Seasonal produce, reading labels and choosing pantry staples"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Building a pantry",
+   "f": "Staples like grains, tins, oils and spices that make cooking possible any day"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Reducing food waste",
+   "f": "Using stems, peels and leftovers creatively and storing food well"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: building confidence",
+   "f": "Looking back at proteins, grains and planning with a small cook-from-the-pantry challenge"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Introduction to baking",
+   "f": "Why baking needs precision and how home ovens really behave"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "What ingredients do in baking",
+   "f": "The roles of flour, sugar, fats and eggs in a recipe"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Leaveners",
+   "f": "Baking soda, baking powder and yeast, and how each one makes things rise"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Simple muffins",
+   "f": "The muffin method and why lumpy batter is a good sign"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Banana bread",
+   "f": "A forgiving quick bread that rescues very ripe bananas"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Chocolate chip cookies",
+   "f": "Creaming butter and sugar, chilling the dough and baking for chewy centres"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Shortbread",
+   "f": "The famous three-ingredient butter biscuit from Scotland"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "A simple sponge cake",
+   "f": "Whisking eggs and folding gently for a light, airy cake"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Knowing when bakes are done",
+   "f": "Skewer tests, colour, smell and a gentle press"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Scones",
+   "f": "Cold butter and a light hand for tall, tender scones"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Pizza dough",
+   "f": "Kneading, rising and stretching a pizza base by hand"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Homemade pizza",
+   "f": "Balanced toppings and a very hot oven for a crisp base"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Basic white bread",
+   "f": "Mixing, kneading, proofing and shaping your first loaf"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Fruit crumble",
+   "f": "An easy dessert with seasonal fruit under a buttery topping"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Custard basics",
+   "f": "Cooking eggs and milk gently so the custard stays silky"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Whipping cream",
+   "f": "Soft peaks, stiff peaks and stopping before it turns to butter"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Easy chocolate desserts",
+   "f": "Melting chocolate safely and making a quick chocolate mousse"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Fresh fruit desserts",
+   "f": "Fruit salads, poached fruit and baked fruit with spices"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Baking with less sugar",
+   "f": "Using fruit, spices and vanilla for natural sweetness"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Cooling and storing bakes",
+   "f": "Keeping cakes, cookies and bread fresh for longer"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Making stock",
+   "f": "Vegetable and chicken stock from scraps and bones"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Classic chicken soup",
+   "f": "A comforting soup found in many cultures around the world"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Lentil soup",
+   "f": "A hearty, budget-friendly soup warmed with spices"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Creamy soups without cream",
+   "f": "Blending vegetables and potatoes for a silky texture"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Chilli con carne",
+   "f": "A slow-simmered dish of meat or vegetables, beans and spices"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "A basic curry",
+   "f": "Building flavour with onion, garlic, ginger and ground spices"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Pasta sauces beyond tomato",
+   "f": "Pesto, aglio e olio and cacio e pepe from Italian kitchens"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Mac and cheese",
+   "f": "Making a smooth cheese sauce starting from a roux"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Simple stews",
+   "f": "Browning, adding liquid and slow cooking until tender"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: comfort cooking",
+   "f": "A look back at baking, soups and stews with a cosy meal challenge"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Taste as you cook",
+   "f": "Tasting at every stage and adjusting seasoning before serving"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "The five basic tastes",
+   "f": "Salty, sweet, sour, bitter and umami, and how to balance them"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Umami boosters",
+   "f": "Soy sauce, parmesan, mushrooms and tomato paste for deeper flavour"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Texture in food",
+   "f": "Contrasting crunchy, creamy and chewy for more exciting meals"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Colour on the plate",
+   "f": "Making meals look appetising with colourful vegetables and garnishes"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Basic plating",
+   "f": "Simple, pretty ways to plate food at home"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Cooking with citrus",
+   "f": "Zest, juice and segments of lemons, limes and oranges"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Cooking with yogurt",
+   "f": "Yogurt in marinades, sauces and cooling dips"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Marinades",
+   "f": "Acid, oil and flavour, and how long different foods should marinate"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Grilling basics",
+   "f": "Using a grill pan or outdoor grill safely for great char marks"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Cooking burgers",
+   "f": "Shaping patties, seasoning and getting a good crust"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Roasting a whole chicken",
+   "f": "Seasoning, roasting and resting for juicy meat and crisp skin"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Carving a chicken",
+   "f": "Breaking a roast chicken down into neat pieces"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Vegetarian mains",
+   "f": "Satisfying meals built around vegetables, grains and legumes"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Eggs for dinner",
+   "f": "Frittata, shakshuka and other quick egg suppers"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Quick weeknight dinners",
+   "f": "Meals ready in about 20 minutes with smart shortcuts"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Batch cooking",
+   "f": "Cooking once and eating well several times during the week"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Freezing food well",
+   "f": "What freezes well, how to wrap it and thawing safely"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Lunch boxes",
+   "f": "Packing tasty lunches that stay safe and fresh until midday"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Cooking for friends",
+   "f": "Planning a simple, stress-free dinner for guests"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Kitchen timing",
+   "f": "Getting every part of the meal ready at the same moment"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Cleaning as you go",
+   "f": "Keeping the kitchen under control while you cook"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Rescuing common mistakes",
+   "f": "Too salty, too spicy or slightly burnt: simple ways to save a dish"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Kitchen substitutions",
+   "f": "Clever swaps for when you run out of an ingredient"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Cooking with kids",
+   "f": "Safe, fun kitchen tasks for young helpers of different ages"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Breakfasts around the world",
+   "f": "Morning meals from different cultures, from congee to chilaquiles"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Street food at home",
+   "f": "Simple home versions of famous street foods from around the world"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Picnic food",
+   "f": "Portable dishes and keeping food cool and safe outdoors"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Hosting a brunch",
+   "f": "Planning a relaxed brunch menu that mostly cooks itself"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: the beginner stage",
+   "f": "Celebrating your beginner skills with a meal to share with people you care about"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Setting intermediate goals",
+   "f": "Choosing which cuisines and techniques to explore next"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Sharpening and honing knives",
+   "f": "Whetstones, honing steels and keeping a keen edge"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Precise knife cuts",
+   "f": "Brunoise, chiffonade and batonnet for even cooking and pretty plates"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Mise en place like a pro",
+   "f": "Organising prep so cooking flows calmly from start to finish"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "The French mother sauces",
+   "f": "Béchamel, velouté, espagnole, tomato and hollandaise in one overview"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Béchamel and its family",
+   "f": "White sauce and variations like Mornay for gratins and lasagne"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Making a pan sauce",
+   "f": "Deglazing the pan and reducing for a quick, glossy sauce"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Emulsions and mayonnaise",
+   "f": "Whisking homemade mayonnaise and why emulsions hold or break"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Hollandaise",
+   "f": "A warm butter emulsion and how to rescue it if it splits"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Reductions and glazes",
+   "f": "Concentrating flavour by reducing liquids to a syrupy glaze"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Braising",
+   "f": "Low and slow cooking in liquid for tender meat and vegetables"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Braised vegetables",
+   "f": "Fennel, leeks and cabbage made soft, sweet and savoury"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Poaching",
+   "f": "Gentle cooking in liquid for eggs, fish, chicken and fruit"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Poached eggs",
+   "f": "Fresh eggs, barely simmering water and good timing"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Cooking steak",
+   "f": "Thickness, searing, doneness levels and resting"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Juicy pork chops and tenderloin",
+   "f": "Cooking pork so it stays tender and moist"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Cooking with lamb",
+   "f": "Popular cuts and the herbs and spices that suit lamb"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Seafood basics",
+   "f": "Buying, storing and cooking shellfish safely"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Cooking prawns",
+   "f": "Peeling, deveining and cooking prawns quickly so they stay tender"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Oven-baked fish",
+   "f": "Baking fish in parchment parcels and on trays with vegetables"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Brining",
+   "f": "Wet and dry brines for juicier, well-seasoned meat"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Resting meat",
+   "f": "Why resting after cooking keeps the juices inside"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Thermometers and carryover cooking",
+   "f": "Reading temperatures accurately and allowing for heat that keeps rising"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Plant-based proteins",
+   "f": "Tempeh, seitan and legumes as tasty main ingredients"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Cooking dried beans",
+   "f": "Soaking, simmering and seasoning beans for great flavour"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Homemade hummus",
+   "f": "Smooth, creamy hummus with chickpeas and tahini"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Falafel",
+   "f": "Herby chickpea fritters from the Middle East"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Grain bowls",
+   "f": "Balancing grain, protein, vegetables and sauce in one bowl"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Risotto",
+   "f": "Toasting rice and adding hot stock gradually for creaminess"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Review: techniques and sauces",
+   "f": "Looking back at sauces, braising and proteins with a technique challenge"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Fresh pasta dough",
+   "f": "Flour, eggs and rolling the dough thin by hand or machine"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Shaping pasta",
+   "f": "Tagliatelle, farfalle and orecchiette made at home"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Filled pasta",
+   "f": "Ravioli and tortellini basics with simple fillings"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Gnocchi",
+   "f": "Light, tender potato gnocchi and how not to overwork the dough"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Italian cooking principles",
+   "f": "Few ingredients, great quality and strong regional traditions"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "French home cooking",
+   "f": "Bistro classics and the techniques behind them"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Spanish tapas",
+   "f": "Small plates and the joyful culture of sharing food"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Paella",
+   "f": "Rice, saffron and the prized crispy layer called socarrat"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Portuguese cooking",
+   "f": "Bacalhau, caldo verde and the famous pastel de nata"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Brazilian home cooking",
+   "f": "Rice and beans, farofa and pão de queijo"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Mexican cooking basics",
+   "f": "Chillies, corn and fresh salsas at the heart of Mexican food"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Making tortillas",
+   "f": "Corn and flour tortillas pressed and cooked at home"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Tacos",
+   "f": "Fillings, salsas and toppings for a fun taco night"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Indian spices and tempering",
+   "f": "Tadka: blooming whole spices in hot oil for big flavour"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Dal",
+   "f": "Comforting lentil dishes cooked across India"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Naan-style flatbreads",
+   "f": "Soft, blistered breads cooked in a very hot pan"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Chinese stir-fry techniques",
+   "f": "Wok heat, velveting and classic sauce combinations"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Dumplings",
+   "f": "Making fillings, folding wrappers and steaming or pan-frying dumplings"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Japanese home cooking",
+   "f": "Dashi, miso soup and perfectly cooked rice"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Sushi rice and simple rolls",
+   "f": "Seasoning sushi rice and rolling maki at home"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Korean flavours",
+   "f": "Gochujang, kimchi and building a bibimbap bowl"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Thai cooking",
+   "f": "Balancing sweet, sour, salty and spicy in every dish"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Curry pastes",
+   "f": "Pounding or blending a fragrant Thai curry paste"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Vietnamese fresh rolls",
+   "f": "Rice paper, fresh herbs and a tangy dipping sauce"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Middle Eastern mezze",
+   "f": "Dips, salads and breads for a generous shared table"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "North African tagines",
+   "f": "Slow-cooked stews with warm spices and dried fruit"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "West African jollof rice",
+   "f": "A beloved one-pot rice dish cooked in a rich tomato base"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Ethiopian flavours",
+   "f": "Berbere spice, lentil stews and the spongy flatbread injera"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Greek home cooking",
+   "f": "Olive oil, lemon, herbs and simple, sunny salads"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review: world kitchens",
+   "f": "Looking back at global dishes with a cook-around-the-world dinner challenge"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Understanding gluten",
+   "f": "How kneading and time build structure in bread dough"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Bread hydration",
+   "f": "Water ratios and how they change dough texture and crumb"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Sourdough starter",
+   "f": "Creating and feeding a starter from flour and water"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "A sourdough loaf",
+   "f": "Mixing, folding, shaping and scoring a naturally leavened loaf"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Focaccia",
+   "f": "A dimpled, olive oil rich bread that is easy and impressive"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Enriched doughs",
+   "f": "Brioche and soft rolls made with butter, milk and eggs"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Cinnamon rolls",
+   "f": "Rolling, filling, cutting and baking soft spiral buns"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Shortcrust pastry",
+   "f": "Cold butter, minimal handling and resting for tender pastry"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Sweet tarts",
+   "f": "Blind baking a tart shell and filling it with fruit or cream"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Savoury quiche",
+   "f": "Custard ratios and fillings for a wobbly, golden quiche"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Choux pastry",
+   "f": "Making éclairs and profiteroles from a cooked dough"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Rough puff pastry",
+   "f": "A home-friendly shortcut to flaky puff pastry"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Layer cakes",
+   "f": "Levelling, filling, stacking and frosting a layer cake"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Buttercream",
+   "f": "American and meringue buttercreams and how to flavour them"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Meringue and pavlova",
+   "f": "Whisking egg whites with sugar for crisp shells and soft centres"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Cheesecake",
+   "f": "A baked cheesecake with a smooth top and no cracks"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Pies",
+   "f": "Fruit pies, venting and lattice tops"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Gluten-free baking",
+   "f": "Flours and binders that work well without wheat"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Vegan baking",
+   "f": "Egg and dairy substitutes that still give great results"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Decorating bakes simply",
+   "f": "Glazes, simple piping and fresh fruit decorations"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Making jam",
+   "f": "Pectin, sugar and finding the setting point"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Fermentation basics",
+   "f": "Making sauerkraut and understanding how fermentation works"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Kimchi at home",
+   "f": "Salting cabbage and mixing the spicy seasoning paste"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Making yogurt",
+   "f": "Culturing milk at home with a spoon of live yogurt"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Fresh cheese at home",
+   "f": "Ricotta-style cheese and paneer from milk and acid"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Infused oils and vinegars",
+   "f": "Flavouring oils and vinegars safely at home"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Drying and dehydrating",
+   "f": "Dried fruit, herbs and tomatoes in the oven or a dehydrator"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Homemade condiments",
+   "f": "Ketchup, mustard and chilli sauce from scratch"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Homemade spice blends",
+   "f": "Garam masala, za'atar and ras el hanout mixed at home"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Review: baking and preserving",
+   "f": "Looking back at bread, pastry and preserving with a pantry project"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Seasonal cooking",
+   "f": "Why cooking with the seasons tastes better and how to start"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Spring produce",
+   "f": "Asparagus, peas, new potatoes and fresh herbs"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Summer produce",
+   "f": "Tomatoes, courgettes, corn and stone fruit"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Autumn produce",
+   "f": "Squash, mushrooms, apples and pears"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Winter produce",
+   "f": "Root vegetables, citrus, cabbages and hardy greens"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Cooking with mushrooms",
+   "f": "Cleaning, searing and getting to know different varieties"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Aubergines and peppers",
+   "f": "Roasting, charring and stuffing these summer favourites"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Leafy greens",
+   "f": "Spinach, kale and chard in salads, sautés and soups"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Cauliflower and broccoli",
+   "f": "Roasting, ricing and blending into creamy soups"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Squash and pumpkin",
+   "f": "Roasting, soups and smooth purées"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Salads as main meals",
+   "f": "Hearty, filling salads with grains, protein and great dressings"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Cold soups",
+   "f": "Gazpacho and other refreshing chilled soups"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Nutrition basics for cooks",
+   "f": "General ideas about balancing vegetables, protein, carbs and fats on a plate"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Cooking lighter",
+   "f": "Techniques that use less fat and salt without losing flavour"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Cooking around allergies",
+   "f": "Common food allergens and avoiding cross-contact in the kitchen"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Many diets at one table",
+   "f": "Cooking for vegetarians, vegans and different preferences together"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Budget cooking",
+   "f": "Tasty meals from simple, affordable ingredients"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Pressure cookers",
+   "f": "Fast stews, beans and rice cooked safely under pressure"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Slow cookers",
+   "f": "Set-and-forget meals that are ready when you get home"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Air fryers and convection",
+   "f": "Crispy food with less oil using hot circulating air"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Microwave cooking",
+   "f": "Steaming, melting and quick tricks beyond reheating"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Cooking outdoors",
+   "f": "Campfire and camping meals prepared safely"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Barbecue",
+   "f": "Direct and indirect heat, smoke and patience"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Grilled vegetables",
+   "f": "Charred vegetables and warm grilled salads"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Kebabs and skewers",
+   "f": "Marinating and threading skewers so everything cooks evenly"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Party food",
+   "f": "Easy finger food and nibbles for gatherings"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Planning a dinner party menu",
+   "f": "Balancing courses and doing most of the prep ahead"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Festive meals around the world",
+   "f": "Celebration dishes from many cultures and what they mean"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Family recipes",
+   "f": "Recording, cooking and preserving the recipes of your family"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Review: seasons and gatherings",
+   "f": "Looking back at seasonal cooking and hosting with a menu-planning challenge"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Food photography at home",
+   "f": "Natural light and angles for appetising food photos"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Writing a recipe",
+   "f": "Clear ingredient lists and steps that anyone can follow"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Recipe testing",
+   "f": "Cooking a recipe again and again and adjusting it each time"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Adapting recipes",
+   "f": "Changing portions, ingredients and methods with confidence"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Flavour pairing",
+   "f": "Classic pairings like tomato and basil and why they work"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Cooking without a recipe",
+   "f": "Using ratios and techniques to improvise confidently"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Building your own dish",
+   "f": "Combining technique, flavour and texture into an original plate"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Friendly cooking challenges",
+   "f": "Fun mystery-basket challenges with friends at home"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Your signature dish",
+   "f": "Developing one dish that feels truly yours"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Intermediate checkpoint",
+   "f": "Reviewing intermediate skills and choosing an advanced focus for the final stage"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "The advanced cook's mindset",
+   "f": "Precision, curiosity and tasting like a chef"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Kitchen science: heat transfer",
+   "f": "Conduction, convection and radiation in everyday cooking"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Kitchen science: proteins",
+   "f": "How heat changes proteins in meat, eggs and fish"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Kitchen science: starches",
+   "f": "How starches thicken sauces, soften and go stale"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Kitchen science: sugar",
+   "f": "Caramelisation and the stages of cooked sugar"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Caramel and toffee",
+   "f": "Wet and dry caramel made carefully and safely"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Tempering chocolate",
+   "f": "Melting, cooling and reheating chocolate for shine and snap"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Chocolate truffles",
+   "f": "Ganache ratios, rolling and coating handmade truffles"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Sous vide cooking",
+   "f": "Precise temperature cooking in a water bath at home"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Confit",
+   "f": "Slow cooking in fat for meltingly tender results"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Smoking food at home",
+   "f": "Stovetop and grill smoking with wood chips"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Butchery basics",
+   "f": "Breaking down a whole chicken and understanding meat cuts"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Filleting a fish",
+   "f": "Removing fillets cleanly and taking out pin bones"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Making fresh sausages",
+   "f": "Grinding, seasoning and stuffing sausages at home"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Terrines and pâtés",
+   "f": "Layered dishes set in a mould and served in slices"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Advanced stocks",
+   "f": "Brown stock and rich reductions for restaurant-style sauces"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Consommé",
+   "f": "Clarifying stock into a crystal-clear, deeply flavoured soup"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Advanced butter sauces",
+   "f": "Beurre blanc, béarnaise and their variations"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Ramen from scratch",
+   "f": "Broth, seasoning base, noodles and toppings built in layers"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Review: advanced techniques",
+   "f": "Looking back at kitchen science, chocolate and advanced methods"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Hand-pulled noodles",
+   "f": "Stretching and folding dough into long noodles"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Laminated dough",
+   "f": "Folding butter into dough to create hundreds of layers"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Croissants",
+   "f": "A multi-day bake broken down step by step"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Rye and wholegrain breads",
+   "f": "Working with heavier, low-gluten flours"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Baguettes",
+   "f": "Shaping, scoring and using steam for a crackly crust"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Macarons",
+   "f": "Meringue, macaronage and baking for smooth tops and frilly feet"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Entremets",
+   "f": "Layered mousse cakes with a mirror-smooth finish"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Plated desserts",
+   "f": "Composing desserts with sauces, crunch and contrast"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Ice cream and sorbet",
+   "f": "Custard bases, fruit sorbets and churning"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "No-churn frozen desserts",
+   "f": "Granita, semifreddo and parfait without a machine"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Advanced Indian cooking",
+   "f": "Regional dishes and layering spices at different stages"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Regional Chinese cooking",
+   "f": "Sichuan, Cantonese and other regional cuisines"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Advanced Japanese cooking",
+   "f": "Tempura, teriyaki and precise Japanese techniques"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Advanced Mexican cooking",
+   "f": "Moles and complex salsas built from dried chillies"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Peruvian cooking",
+   "f": "Ceviche, lomo saltado and Peru's famous fusion traditions"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Levantine cooking",
+   "f": "Kibbeh, fattoush and generous mezze tables"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Turkish cooking",
+   "f": "Meze, pide and slow-cooked dishes from Turkish kitchens"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Italian regional cooking",
+   "f": "From the butter of the north to the olive oil of the south"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "French classics",
+   "f": "Coq au vin, ratatouille and other timeless French dishes"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Review: global mastery",
+   "f": "Reflecting on advanced world cuisines with a cultural menu challenge"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Soufflés",
+   "f": "Stable egg whites and baking a soufflé that rises high"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Advanced egg cookery",
+   "f": "A French omelette, eggs Benedict and other precise egg dishes"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Vegetables as the star",
+   "f": "Advanced techniques that put vegetables at the centre of the plate"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Root-to-leaf cooking",
+   "f": "Using whole vegetables, from tops and stems to peels"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Fermented flavours",
+   "f": "Miso, koji and other fermented seasonings explained"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Advanced pickling",
+   "f": "Lacto-fermented and spiced pickles with complex flavour"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Curing and preserving",
+   "f": "Salt-cured fish and other traditional preserving methods done safely"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Cheese tasting and pairing",
+   "f": "Understanding cheese families and pairing them with food"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Composing a sharing board",
+   "f": "Building a beautiful board of breads, cheeses, fruit and spreads"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Review: preservation and flavour",
+   "f": "Looking back at fermenting, curing and pairing"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Modern kitchen techniques",
+   "f": "Foams, gels and spherification explained simply"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Gels and thickeners",
+   "f": "Gelatine, agar and xanthan and how each one sets or thickens"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Restaurant-style plating",
+   "f": "Height, negative space and colour for beautiful plates"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Tasting menus",
+   "f": "Designing a small multi-course experience at home"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Drink pairings without alcohol",
+   "f": "Pairing food with teas, juices and sparkling drinks"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Coffee and tea as ingredients",
+   "f": "Using coffee and tea to flavour sweet and savoury dishes"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Cooking with chillies",
+   "f": "Heat levels, varieties and balancing spice"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "A herb garden for cooks",
+   "f": "Growing herbs on a windowsill or balcony"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Foraging basics",
+   "f": "Common wild foods and the golden rule: only pick what you identify with certainty"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Sustainable cooking",
+   "f": "Seasonal, local and low-waste choices in the kitchen"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "The zero-waste kitchen",
+   "f": "Using every part of ingredients and composting the rest"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Cooking cheaper cuts",
+   "f": "Turning affordable cuts and pantry staples into great meals"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Cooking for large groups",
+   "f": "Scaling recipes and planning for many people"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Catering a celebration",
+   "f": "Logistics, timing and serving for a big gathering"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Kitchen workflow",
+   "f": "Organising your station like a professional kitchen"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Building knife speed",
+   "f": "Practising efficient, safe speed with your knife"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Professional kitchen vocabulary",
+   "f": "Brigade roles and the calls used in restaurant kitchens"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Food history",
+   "f": "How trade routes and migration shaped the world's cuisines"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Chefs who changed cooking",
+   "f": "Escoffier, Julia Child and other influential cooks and food writers"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Food and culture",
+   "f": "Meals, customs and hospitality across cultures"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Developing recipes",
+   "f": "From first idea to a tested, reliable recipe"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Fusion cooking done well",
+   "f": "Combining cuisines thoughtfully and respectfully"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Creating a menu",
+   "f": "Balanced courses around a theme or a season"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Teaching someone to cook",
+   "f": "Explaining techniques clearly and patiently"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Hosting a cooking class",
+   "f": "Planning a hands-on cooking session for friends"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Sharing recipes online",
+   "f": "Writing and filming recipes so others can cook them"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Food styling",
+   "f": "Making food look its very best for photos and the table"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Learning from cookbooks",
+   "f": "Reading cookbooks for technique, culture and inspiration"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Building a recipe collection",
+   "f": "Organising the recipes you love in one place"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Review: creativity and sharing",
+   "f": "Looking back at recipe development and teaching"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Equipment worth investing in",
+   "f": "Which kitchen tools really make a difference"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Caring for cast iron",
+   "f": "Seasoning and maintaining cast iron and carbon steel pans"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Knife care mastery",
+   "f": "Whetstone angles, stropping and storing knives well"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Ergonomics in the kitchen",
+   "f": "Posture, counter height and breaks for comfortable cooking"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Cooking and wellbeing",
+   "f": "Mindful cooking and taking time to enjoy meals"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Eating together",
+   "f": "The value of shared meals in cultures around the world"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Keeping food traditions alive",
+   "f": "Passing recipes and kitchen customs to the next generation"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Exploring food markets",
+   "f": "Discovering ingredients and inspiration at markets"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Food travel ideas",
+   "f": "Cooking classes and food experiences around the world"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Studying one cuisine deeply",
+   "f": "Choosing a cuisine and learning its key dishes and techniques"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Final challenge: the plan",
+   "f": "Planning a celebratory multi-course meal of your own design"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Final challenge: prep list",
+   "f": "Shopping list, prep list and a timeline for the big day"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Final challenge: starters",
+   "f": "Preparing appetisers that set the tone"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Final challenge: main course",
+   "f": "Cooking the main course with confidence"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Final challenge: dessert",
+   "f": "Finishing the meal with a memorable dessert"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Final challenge: serving",
+   "f": "Plating, serving and enjoying the meal with your guests"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Final challenge: reflection",
+   "f": "What went well and what you would change next time"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Your signature menu",
+   "f": "A menu that represents your taste and your story"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Revisiting your first dishes",
+   "f": "Cooking early dishes again with your new skills"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Then and now",
+   "f": "Measuring how much your cooking has grown"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Food for celebrations",
+   "f": "Festive foods from around the world and their stories"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Bread recap",
+   "f": "Revisiting bread skills from quick breads to sourdough"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Sauce recap",
+   "f": "Revisiting sauce skills from vinaigrettes to emulsions"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Pastry recap",
+   "f": "Revisiting pastry skills from shortcrust to choux"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Flavour recap",
+   "f": "Revisiting balance, seasoning and the five tastes"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Cooking for good causes",
+   "f": "Community kitchens, food drives and cooking for neighbours"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Your mini cookbook",
+   "f": "Writing a small collection of your best recipes to share"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "A lifelong cooking habit",
+   "f": "Routines that keep you cooking happily for years"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Your kitchen philosophy",
+   "f": "Writing down what cooking means to you"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Review: the advanced stage",
+   "f": "Looking back at the advanced skills you have built"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Your favourite recipes",
+   "f": "Reflecting on the dishes you loved most this year"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Your kitchen today",
+   "f": "How your tools, habits and confidence have grown"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Sharing your journey",
+   "f": "Telling others about your 365-day cooking path"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Your next year of cooking",
+   "f": "Goals, cuisines and dishes for the year ahead"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Celebrating a year of cooking",
+   "f": "Celebrating everything you cooked and learned in 365 days"
+  }
+ ]
+}

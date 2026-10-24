@@ -1,0 +1,1305 @@
+{
+"topic": "travel_phrases",
+"questions": [
+{
+"id": "travel_phrases-001",
+"lv": "any",
+"i18n": {
+"en": "Which phrase do you use most often when you travel?",
+"de": "Welchen Satz benutzt du auf Reisen am häufigsten?",
+"es": "¿Qué frase usas más a menudo cuando viajas?",
+"fr": "Quelle phrase utilises-tu le plus souvent en voyage ?",
+"it": "Quale frase usi più spesso quando viaggi?",
+"pt": "Que frase usas mais vezes quando viajas?",
+"pt_BR": "Qual frase você mais usa quando viaja?"
+}
+},
+{
+"id": "travel_phrases-002",
+"lv": "any",
+"i18n": {
+"en": "What's the first word you try to learn in a new language?",
+"de": "Was ist das erste Wort, das du in einer neuen Sprache lernen willst?",
+"es": "¿Cuál es la primera palabra que intentas aprender en un idioma nuevo?",
+"fr": "Quel est le premier mot que tu essaies d'apprendre dans une nouvelle langue ?",
+"it": "Qual è la prima parola che cerchi di imparare in una lingua nuova?",
+"pt": "Qual é a primeira palavra que tentas aprender numa língua nova?",
+"pt_BR": "Qual é a primeira palavra que você tenta aprender num idioma novo?"
+}
+},
+{
+"id": "travel_phrases-003",
+"lv": "any",
+"i18n": {
+"en": "Which languages can you say thank you in?",
+"de": "In welchen Sprachen kannst du danke sagen?",
+"es": "¿En qué idiomas sabes decir gracias?",
+"fr": "Dans quelles langues sais-tu dire merci ?",
+"it": "In quali lingue sai dire grazie?",
+"pt": "Em que línguas sabes dizer obrigado?",
+"pt_BR": "Em quais idiomas você sabe dizer obrigado?"
+}
+},
+{
+"id": "travel_phrases-004",
+"lv": "any",
+"i18n": {
+"en": "Has a local word ever made someone smile at you on a trip? What happened?",
+"de": "Hat ein Wort in der Landessprache dir auf Reisen schon mal ein Lächeln eingebracht? Was war los?",
+"es": "¿Alguna vez una palabra local te ha regalado una sonrisa en un viaje? ¿Qué pasó?",
+"fr": "Un mot dans la langue locale t'a-t-il déjà valu un sourire en voyage ? Raconte !",
+"it": "Una parola nella lingua locale ti ha mai fatto guadagnare un sorriso in viaggio? Cos'è successo?",
+"pt": "Já alguma palavra na língua local te valeu um sorriso numa viagem? O que aconteceu?",
+"pt_BR": "Alguma palavra no idioma local já te rendeu um sorriso numa viagem? O que aconteceu?"
+}
+},
+{
+"id": "travel_phrases-005",
+"lv": "any",
+"i18n": {
+"en": "Which country would you love to visit just to practise its language?",
+"de": "Welches Land würdest du gern besuchen, nur um die Sprache zu üben?",
+"es": "¿Qué país te encantaría visitar solo para practicar su idioma?",
+"fr": "Quel pays aimerais-tu visiter rien que pour pratiquer sa langue ?",
+"it": "Quale paese ti piacerebbe visitare solo per praticarne la lingua?",
+"pt": "Que país gostavas de visitar só para praticar a língua?",
+"pt_BR": "Que país você adoraria visitar só para praticar o idioma?"
+}
+},
+{
+"id": "travel_phrases-006",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer learning phrases before a trip or picking them up on the spot?",
+"de": "Lernst du Sätze lieber vor der Reise oder schnappst du sie vor Ort auf?",
+"es": "¿Prefieres aprender frases antes del viaje o ir aprendiéndolas allí?",
+"fr": "Tu préfères apprendre des phrases avant le voyage ou les attraper sur place ?",
+"it": "Preferisci imparare le frasi prima del viaggio o impararle sul posto?",
+"pt": "Preferes aprender frases antes da viagem ou ir apanhando-as no local?",
+"pt_BR": "Você prefere aprender frases antes da viagem ou ir pegando no próprio lugar?"
+}
+},
+{
+"id": "travel_phrases-007",
+"lv": "any",
+"i18n": {
+"en": "What's the funniest language mix-up you've ever had or heard about?",
+"de": "Was ist das lustigste sprachliche Missverständnis, das du erlebt oder gehört hast?",
+"es": "¿Cuál es la confusión de idioma más divertida que has vivido o escuchado?",
+"fr": "Quel est le quiproquo linguistique le plus drôle que tu aies vécu ou entendu ?",
+"it": "Qual è l'equivoco linguistico più divertente che hai vissuto o sentito raccontare?",
+"pt": "Qual foi a confusão de línguas mais engraçada que viveste ou ouviste contar?",
+"pt_BR": "Qual foi a confusão de idioma mais engraçada que você já viveu ou ouviu falar?"
+}
+},
+{
+"id": "travel_phrases-008",
+"lv": "any",
+"i18n": {
+"en": "Which language sounds the most beautiful to you, and why?",
+"de": "Welche Sprache klingt für dich am schönsten, und warum?",
+"es": "¿Qué idioma te suena más bonito y por qué?",
+"fr": "Quelle langue te semble la plus belle à l'oreille, et pourquoi ?",
+"it": "Quale lingua ti sembra la più bella da ascoltare, e perché?",
+"pt": "Que língua te soa mais bonita e porquê?",
+"pt_BR": "Qual idioma soa mais bonito para você, e por quê?"
+}
+},
+{
+"id": "travel_phrases-009",
+"lv": "any",
+"i18n": {
+"en": "How do you usually ask for help when you don't speak the local language?",
+"de": "Wie bittest du normalerweise um Hilfe, wenn du die Landessprache nicht sprichst?",
+"es": "¿Cómo sueles pedir ayuda cuando no hablas el idioma local?",
+"fr": "Comment demandes-tu de l'aide quand tu ne parles pas la langue du pays ?",
+"it": "Come chiedi aiuto di solito quando non parli la lingua del posto?",
+"pt": "Como costumas pedir ajuda quando não falas a língua local?",
+"pt_BR": "Como você costuma pedir ajuda quando não fala o idioma local?"
+}
+},
+{
+"id": "travel_phrases-010",
+"lv": "any",
+"i18n": {
+"en": "What's one phrase from your own language every visitor should learn?",
+"de": "Welchen Satz aus deiner Sprache sollte jeder Besucher lernen?",
+"es": "¿Qué frase de tu idioma debería aprender todo visitante?",
+"fr": "Quelle phrase de ta langue chaque visiteur devrait-il apprendre ?",
+"it": "Quale frase della tua lingua dovrebbe imparare ogni visitatore?",
+"pt": "Que frase da tua língua todos os visitantes deviam aprender?",
+"pt_BR": "Qual frase do seu idioma todo visitante deveria aprender?"
+}
+},
+{
+"id": "travel_phrases-011",
+"lv": "any",
+"i18n": {
+"en": "Do you use translation apps when you travel? How well do they work for you?",
+"de": "Nutzt du auf Reisen Übersetzungs-Apps? Wie gut klappt das bei dir?",
+"es": "¿Usas apps de traducción cuando viajas? ¿Qué tal te funcionan?",
+"fr": "Utilises-tu des applis de traduction en voyage ? Elles marchent bien pour toi ?",
+"it": "Usi app di traduzione quando viaggi? Come ti trovi?",
+"pt": "Usas aplicações de tradução quando viajas? Funcionam bem para ti?",
+"pt_BR": "Você usa apps de tradução quando viaja? Funcionam bem pra você?"
+}
+},
+{
+"id": "travel_phrases-012",
+"lv": "any",
+"i18n": {
+"en": "Which travel situation makes you most nervous language-wise?",
+"de": "Welche Reisesituation macht dich sprachlich am nervösesten?",
+"es": "¿Qué situación de viaje te pone más nervioso por el idioma?",
+"fr": "Quelle situation de voyage te stresse le plus côté langue ?",
+"it": "Quale situazione di viaggio ti mette più in ansia per la lingua?",
+"pt": "Que situação de viagem te deixa mais nervoso por causa da língua?",
+"pt_BR": "Qual situação de viagem te deixa mais nervoso por causa do idioma?"
+}
+},
+{
+"id": "travel_phrases-013",
+"lv": "any",
+"i18n": {
+"en": "How many languages do you speak, even just a little?",
+"de": "Wie viele Sprachen sprichst du, auch nur ein bisschen?",
+"es": "¿Cuántos idiomas hablas, aunque sea un poquito?",
+"fr": "Combien de langues parles-tu, même un tout petit peu ?",
+"it": "Quante lingue parli, anche solo un pochino?",
+"pt": "Quantas línguas falas, nem que seja um bocadinho?",
+"pt_BR": "Quantos idiomas você fala, nem que seja um pouquinho?"
+}
+},
+{
+"id": "travel_phrases-014",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite greeting from another language?",
+"de": "Was ist deine Lieblingsbegrüßung aus einer anderen Sprache?",
+"es": "¿Cuál es tu saludo favorito de otro idioma?",
+"fr": "Quelle est ta salutation préférée dans une autre langue ?",
+"it": "Qual è il tuo saluto preferito in un'altra lingua?",
+"pt": "Qual é a tua saudação preferida noutra língua?",
+"pt_BR": "Qual é sua saudação favorita em outro idioma?"
+}
+},
+{
+"id": "travel_phrases-015",
+"lv": "any",
+"i18n": {
+"en": "Have you ever had a whole conversation using only gestures? How did it go?",
+"de": "Hast du dich schon mal nur mit Gesten unterhalten? Wie lief es?",
+"es": "¿Alguna vez has tenido una conversación entera solo con gestos? ¿Cómo fue?",
+"fr": "As-tu déjà tenu toute une conversation uniquement par gestes ? Comment ça s'est passé ?",
+"it": "Hai mai fatto un'intera conversazione solo a gesti? Com'è andata?",
+"pt": "Já tiveste uma conversa inteira só com gestos? Como correu?",
+"pt_BR": "Você já teve uma conversa inteira só com gestos? Como foi?"
+}
+},
+{
+"id": "travel_phrases-016",
+"lv": "any",
+"i18n": {
+"en": "Which do you find easier: understanding people or speaking yourself?",
+"de": "Was fällt dir leichter: andere verstehen oder selbst sprechen?",
+"es": "¿Qué te resulta más fácil: entender a la gente o hablar tú?",
+"fr": "Qu'est-ce qui est le plus facile pour toi : comprendre ou parler ?",
+"it": "Cosa ti riesce più facile: capire gli altri o parlare tu?",
+"pt": "O que achas mais fácil: perceber as pessoas ou falar tu?",
+"pt_BR": "O que você acha mais fácil: entender as pessoas ou falar?"
+}
+},
+{
+"id": "travel_phrases-017",
+"lv": "any",
+"i18n": {
+"en": "What's a word in another language you simply love saying?",
+"de": "Welches Wort aus einer anderen Sprache sagst du einfach gern?",
+"es": "¿Qué palabra de otro idioma te encanta decir?",
+"fr": "Quel mot d'une autre langue adores-tu prononcer ?",
+"it": "Quale parola di un'altra lingua adori pronunciare?",
+"pt": "Que palavra de outra língua adoras dizer?",
+"pt_BR": "Qual palavra de outro idioma você adora falar?"
+}
+},
+{
+"id": "travel_phrases-018",
+"lv": "any",
+"i18n": {
+"en": "Where in the world have you felt most welcomed when trying the local language?",
+"de": "Wo auf der Welt hast du dich am willkommensten gefühlt, als du die Landessprache probiert hast?",
+"es": "¿Dónde te has sentido más bienvenido al intentar hablar el idioma local?",
+"fr": "Où t'es-tu senti le plus accueilli en essayant la langue locale ?",
+"it": "Dove ti sei sentito più accolto provando a parlare la lingua locale?",
+"pt": "Onde te sentiste mais bem recebido ao tentar falar a língua local?",
+"pt_BR": "Onde você se sentiu mais bem recebido ao tentar falar o idioma local?"
+}
+},
+{
+"id": "travel_phrases-019",
+"lv": "any",
+"i18n": {
+"en": "Do you write phrases down, save them on your phone or just memorise them?",
+"de": "Schreibst du Sätze auf, speicherst du sie im Handy oder lernst du sie auswendig?",
+"es": "¿Apuntas las frases, las guardas en el móvil o las memorizas?",
+"fr": "Tu notes les phrases, tu les enregistres sur ton téléphone ou tu les mémorises ?",
+"it": "Le frasi le scrivi, le salvi sul telefono o le impari a memoria?",
+"pt": "Escreves as frases, guarda-las no telemóvel ou decora-las?",
+"pt_BR": "Você anota as frases, salva no celular ou decora?"
+}
+},
+{
+"id": "travel_phrases-020",
+"lv": "any",
+"i18n": {
+"en": "What would you like to be able to say on your next trip?",
+"de": "Was möchtest du auf deiner nächsten Reise sagen können?",
+"es": "¿Qué te gustaría saber decir en tu próximo viaje?",
+"fr": "Qu'aimerais-tu savoir dire lors de ton prochain voyage ?",
+"it": "Cosa ti piacerebbe saper dire nel tuo prossimo viaggio?",
+"pt": "O que gostavas de saber dizer na tua próxima viagem?",
+"pt_BR": "O que você gostaria de saber dizer na sua próxima viagem?"
+}
+},
+{
+"id": "travel_phrases-021",
+"lv": "any",
+"i18n": {
+"en": "Who taught you your first words in a foreign language?",
+"de": "Wer hat dir deine ersten Wörter in einer Fremdsprache beigebracht?",
+"es": "¿Quién te enseñó tus primeras palabras en un idioma extranjero?",
+"fr": "Qui t'a appris tes premiers mots dans une langue étrangère ?",
+"it": "Chi ti ha insegnato le prime parole in una lingua straniera?",
+"pt": "Quem te ensinou as primeiras palavras numa língua estrangeira?",
+"pt_BR": "Quem te ensinou suas primeiras palavras num idioma estrangeiro?"
+}
+},
+{
+"id": "travel_phrases-022",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy chatting with strangers when you travel?",
+"de": "Plauderst du auf Reisen gern mit Fremden?",
+"es": "¿Te gusta charlar con desconocidos cuando viajas?",
+"fr": "Aimes-tu discuter avec des inconnus en voyage ?",
+"it": "Ti piace chiacchierare con gli sconosciuti quando viaggi?",
+"pt": "Gostas de conversar com desconhecidos quando viajas?",
+"pt_BR": "Você gosta de bater papo com desconhecidos quando viaja?"
+}
+},
+{
+"id": "travel_phrases-023",
+"lv": "any",
+"i18n": {
+"en": "Which travel phrase saved the day for you once?",
+"de": "Welcher Reisesatz hat dir schon mal den Tag gerettet?",
+"es": "¿Qué frase de viaje te salvó el día alguna vez?",
+"fr": "Quelle phrase de voyage t'a déjà sauvé la mise ?",
+"it": "Quale frase da viaggio ti ha salvato la giornata una volta?",
+"pt": "Que frase de viagem já te salvou o dia?",
+"pt_BR": "Qual frase de viagem já salvou o seu dia?"
+}
+},
+{
+"id": "travel_phrases-024",
+"lv": "any",
+"i18n": {
+"en": "What's harder for you: numbers, names or directions in another language?",
+"de": "Was ist für dich schwieriger: Zahlen, Namen oder Wegbeschreibungen in einer anderen Sprache?",
+"es": "¿Qué te cuesta más en otro idioma: números, nombres o direcciones?",
+"fr": "Qu'est-ce qui est le plus dur pour toi : les chiffres, les noms ou les directions ?",
+"it": "Cosa trovi più difficile in un'altra lingua: numeri, nomi o indicazioni stradali?",
+"pt": "O que achas mais difícil noutra língua: números, nomes ou indicações?",
+"pt_BR": "O que é mais difícil pra você em outro idioma: números, nomes ou direções?"
+}
+},
+{
+"id": "travel_phrases-025",
+"lv": "any",
+"i18n": {
+"en": "Do you like hearing different accents? Which one is your favourite?",
+"de": "Hörst du gern verschiedene Akzente? Welcher gefällt dir am besten?",
+"es": "¿Te gusta escuchar acentos distintos? ¿Cuál es tu favorito?",
+"fr": "Aimes-tu entendre différents accents ? Lequel préfères-tu ?",
+"it": "Ti piace ascoltare accenti diversi? Qual è il tuo preferito?",
+"pt": "Gostas de ouvir sotaques diferentes? Qual é o teu preferido?",
+"pt_BR": "Você gosta de ouvir sotaques diferentes? Qual é o seu favorito?"
+}
+},
+{
+"id": "travel_phrases-026",
+"lv": "any",
+"i18n": {
+"en": "Which phrase would you teach a friend before their first trip abroad?",
+"de": "Welchen Satz würdest du einem Freund vor seiner ersten Auslandsreise beibringen?",
+"es": "¿Qué frase le enseñarías a un amigo antes de su primer viaje al extranjero?",
+"fr": "Quelle phrase apprendrais-tu à un ami avant son premier voyage à l'étranger ?",
+"it": "Quale frase insegneresti a un amico prima del suo primo viaggio all'estero?",
+"pt": "Que frase ensinavas a um amigo antes da primeira viagem dele ao estrangeiro?",
+"pt_BR": "Qual frase você ensinaria a um amigo antes da primeira viagem dele ao exterior?"
+}
+},
+{
+"id": "travel_phrases-027",
+"lv": "any",
+"i18n": {
+"en": "What do you do when someone speaks too fast for you?",
+"de": "Was machst du, wenn jemand zu schnell für dich spricht?",
+"es": "¿Qué haces cuando alguien te habla demasiado rápido?",
+"fr": "Que fais-tu quand quelqu'un parle trop vite pour toi ?",
+"it": "Cosa fai quando qualcuno parla troppo veloce per te?",
+"pt": "O que fazes quando alguém fala depressa demais para ti?",
+"pt_BR": "O que você faz quando alguém fala rápido demais pra você?"
+}
+},
+{
+"id": "travel_phrases-028",
+"lv": "any",
+"i18n": {
+"en": "Is there a language you started learning and would love to pick up again?",
+"de": "Gibt es eine Sprache, die du mal angefangen hast und gern wieder aufgreifen würdest?",
+"es": "¿Hay algún idioma que empezaste a aprender y te gustaría retomar?",
+"fr": "Y a-t-il une langue que tu as commencée et que tu aimerais reprendre ?",
+"it": "C'è una lingua che hai iniziato a studiare e che vorresti riprendere?",
+"pt": "Há alguma língua que começaste a aprender e gostavas de retomar?",
+"pt_BR": "Tem algum idioma que você começou a aprender e adoraria retomar?"
+}
+},
+{
+"id": "travel_phrases-029",
+"lv": "any",
+"i18n": {
+"en": "What's the kindest thing a stranger did for you when you couldn't communicate?",
+"de": "Was war das Netteste, das ein Fremder für dich tat, als ihr euch kaum verständigen konntet?",
+"es": "¿Qué es lo más amable que hizo un desconocido por ti cuando no podíais entenderos?",
+"fr": "Quel est le geste le plus gentil d'un inconnu quand vous ne pouviez pas vous comprendre ?",
+"it": "Qual è la cosa più gentile che uno sconosciuto ha fatto per te quando non riuscivate a capirvi?",
+"pt": "Qual foi a coisa mais simpática que um desconhecido fez por ti quando não se conseguiam entender?",
+"pt_BR": "Qual foi a coisa mais gentil que um desconhecido fez por você quando vocês não conseguiam se entender?"
+}
+},
+{
+"id": "travel_phrases-030",
+"lv": "any",
+"i18n": {
+"en": "Do you feel like a different person when you speak another language?",
+"de": "Fühlst du dich wie ein anderer Mensch, wenn du eine andere Sprache sprichst?",
+"es": "¿Te sientes otra persona cuando hablas otro idioma?",
+"fr": "Te sens-tu différent quand tu parles une autre langue ?",
+"it": "Ti senti una persona diversa quando parli un'altra lingua?",
+"pt": "Sentes-te outra pessoa quando falas outra língua?",
+"pt_BR": "Você se sente outra pessoa quando fala outro idioma?"
+}
+},
+{
+"id": "travel_phrases-031",
+"lv": "any",
+"i18n": {
+"en": "Which place would you love to order a meal in the local language?",
+"de": "Wo würdest du gern einmal ein Essen in der Landessprache bestellen?",
+"es": "¿Dónde te encantaría pedir una comida en el idioma local?",
+"fr": "Où aimerais-tu commander un repas dans la langue du pays ?",
+"it": "Dove ti piacerebbe ordinare un pasto nella lingua del posto?",
+"pt": "Onde gostavas de pedir uma refeição na língua local?",
+"pt_BR": "Onde você adoraria pedir uma refeição no idioma local?"
+}
+},
+{
+"id": "travel_phrases-032",
+"lv": "any",
+"i18n": {
+"en": "What do you think is the most useful travel phrase in the world?",
+"de": "Was ist deiner Meinung nach der nützlichste Reisesatz der Welt?",
+"es": "¿Cuál crees que es la frase de viaje más útil del mundo?",
+"fr": "Selon toi, quelle est la phrase de voyage la plus utile au monde ?",
+"it": "Secondo te, qual è la frase da viaggio più utile al mondo?",
+"pt": "Qual achas que é a frase de viagem mais útil do mundo?",
+"pt_BR": "Qual você acha que é a frase de viagem mais útil do mundo?"
+}
+},
+{
+"id": "travel_phrases-033",
+"lv": "any",
+"i18n": {
+"en": "Do you like reading signs and menus to learn new words?",
+"de": "Liest du gern Schilder und Speisekarten, um neue Wörter zu lernen?",
+"es": "¿Te gusta leer carteles y menús para aprender palabras nuevas?",
+"fr": "Aimes-tu lire les panneaux et les menus pour apprendre de nouveaux mots ?",
+"it": "Ti piace leggere cartelli e menù per imparare parole nuove?",
+"pt": "Gostas de ler placas e ementas para aprender palavras novas?",
+"pt_BR": "Você gosta de ler placas e cardápios para aprender palavras novas?"
+}
+},
+{
+"id": "travel_phrases-034",
+"lv": "any",
+"i18n": {
+"en": "Which language do you find surprisingly easy?",
+"de": "Welche Sprache findest du überraschend einfach?",
+"es": "¿Qué idioma te parece sorprendentemente fácil?",
+"fr": "Quelle langue trouves-tu étonnamment facile ?",
+"it": "Quale lingua trovi sorprendentemente facile?",
+"pt": "Que língua achas surpreendentemente fácil?",
+"pt_BR": "Qual idioma você acha surpreendentemente fácil?"
+}
+},
+{
+"id": "travel_phrases-035",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when locals switch to English after you try their language?",
+"de": "Wie fühlst du dich, wenn Einheimische ins Englische wechseln, nachdem du ihre Sprache probiert hast?",
+"es": "¿Cómo te sientes cuando la gente cambia al inglés después de que intentas hablar su idioma?",
+"fr": "Que ressens-tu quand les gens passent à l'anglais après que tu as essayé leur langue ?",
+"it": "Come ti senti quando la gente passa all'inglese dopo che hai provato a parlare la loro lingua?",
+"pt": "Como te sentes quando as pessoas mudam para inglês depois de tentares a língua delas?",
+"pt_BR": "Como você se sente quando as pessoas mudam pro inglês depois que você tenta falar o idioma delas?"
+}
+},
+{
+"id": "travel_phrases-036",
+"lv": "any",
+"i18n": {
+"en": "What's a phrase you mispronounced at first? How did you learn it right?",
+"de": "Welchen Satz hast du anfangs falsch ausgesprochen? Wie hast du es richtig gelernt?",
+"es": "¿Qué frase pronunciabas mal al principio? ¿Cómo aprendiste a decirla bien?",
+"fr": "Quelle phrase prononçais-tu mal au début ? Comment as-tu appris à bien la dire ?",
+"it": "Quale frase pronunciavi male all'inizio? Come hai imparato a dirla bene?",
+"pt": "Que frase pronunciavas mal ao início? Como aprendeste a dizê-la bem?",
+"pt_BR": "Qual frase você pronunciava errado no começo? Como aprendeu a falar certo?"
+}
+},
+{
+"id": "travel_phrases-037",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer formal or casual language when you meet new people?",
+"de": "Magst du beim Kennenlernen lieber eine förmliche oder lockere Sprache?",
+"es": "¿Prefieres un lenguaje formal o informal al conocer gente nueva?",
+"fr": "Préfères-tu un langage formel ou détendu quand tu rencontres des gens ?",
+"it": "Preferisci un linguaggio formale o informale quando conosci gente nuova?",
+"pt": "Preferes linguagem formal ou informal quando conheces pessoas novas?",
+"pt_BR": "Você prefere linguagem formal ou informal quando conhece gente nova?"
+}
+},
+{
+"id": "travel_phrases-038",
+"lv": "any",
+"i18n": {
+"en": "What's your dream: speaking one language perfectly or many a little?",
+"de": "Was ist dein Traum: eine Sprache perfekt oder viele ein bisschen sprechen?",
+"es": "¿Qué sueñas más: hablar un idioma perfecto o muchos un poco?",
+"fr": "Ton rêve : parler une langue parfaitement ou plusieurs un peu ?",
+"it": "Il tuo sogno: parlare una lingua alla perfezione o tante un po'?",
+"pt": "Qual é o teu sonho: falar uma língua na perfeição ou várias um pouco?",
+"pt_BR": "Qual é o seu sonho: falar um idioma perfeitamente ou vários um pouco?"
+}
+},
+{
+"id": "travel_phrases-039",
+"lv": "any",
+"i18n": {
+"en": "Which phrase do you think locals love hearing from visitors?",
+"de": "Welchen Satz hören Einheimische deiner Meinung nach am liebsten von Besuchern?",
+"es": "¿Qué frase crees que a la gente local le encanta oír de los visitantes?",
+"fr": "Selon toi, quelle phrase les habitants adorent-ils entendre des visiteurs ?",
+"it": "Secondo te, quale frase la gente del posto ama sentire dai visitatori?",
+"pt": "Que frase achas que os locais adoram ouvir dos visitantes?",
+"pt_BR": "Qual frase você acha que os moradores adoram ouvir dos visitantes?"
+}
+},
+{
+"id": "travel_phrases-040",
+"lv": "any",
+"i18n": {
+"en": "Which word or phrase from a trip still makes you smile when you remember it?",
+"de": "Welches Wort oder welcher Satz von einer Reise bringt dich heute noch zum Lächeln?",
+"es": "¿Qué palabra o frase de un viaje todavía te hace sonreír al recordarla?",
+"fr": "Quel mot ou quelle phrase d'un voyage te fait encore sourire quand tu y repenses ?",
+"it": "Quale parola o frase di un viaggio ti fa ancora sorridere quando ci ripensi?",
+"pt": "Que palavra ou frase de uma viagem ainda te faz sorrir quando te lembras dela?",
+"pt_BR": "Qual palavra ou frase de uma viagem ainda te faz sorrir quando você lembra?"
+}
+},
+{
+"id": "travel_phrases-041",
+"lv": "beginner",
+"i18n": {
+"en": "Can you say hello and thank you in the language of your next destination?",
+"de": "Kannst du Hallo und Danke in der Sprache deines nächsten Reiseziels sagen?",
+"es": "¿Sabes decir hola y gracias en el idioma de tu próximo destino?",
+"fr": "Sais-tu dire bonjour et merci dans la langue de ta prochaine destination ?",
+"it": "Sai dire ciao e grazie nella lingua della tua prossima meta?",
+"pt": "Sabes dizer olá e obrigado na língua do teu próximo destino?",
+"pt_BR": "Você sabe dizer oi e obrigado no idioma do seu próximo destino?"
+}
+},
+{
+"id": "travel_phrases-042",
+"lv": "beginner",
+"i18n": {
+"en": "How would you ask where the toilet is in a language you're learning?",
+"de": "Wie würdest du in einer Sprache, die du lernst, nach der Toilette fragen?",
+"es": "¿Cómo preguntarías dónde está el baño en un idioma que estás aprendiendo?",
+"fr": "Comment demanderais-tu où sont les toilettes dans une langue que tu apprends ?",
+"it": "Come chiederesti dov'è il bagno in una lingua che stai imparando?",
+"pt": "Como perguntavas onde fica a casa de banho numa língua que estás a aprender?",
+"pt_BR": "Como você perguntaria onde fica o banheiro num idioma que está aprendendo?"
+}
+},
+{
+"id": "travel_phrases-043",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually order first in a café abroad?",
+"de": "Was bestellst du im Ausland im Café meistens zuerst?",
+"es": "¿Qué sueles pedir primero en una cafetería en el extranjero?",
+"fr": "Que commandes-tu en premier dans un café à l'étranger ?",
+"it": "Cosa ordini di solito per primo in un bar all'estero?",
+"pt": "O que costumas pedir primeiro num café no estrangeiro?",
+"pt_BR": "O que você costuma pedir primeiro num café no exterior?"
+}
+},
+{
+"id": "travel_phrases-044",
+"lv": "beginner",
+"i18n": {
+"en": "How confident do you feel counting in another language?",
+"de": "Wie sicher fühlst du dich beim Zählen in einer anderen Sprache?",
+"es": "¿Qué tal te defiendes contando en otro idioma?",
+"fr": "À quel point es-tu à l'aise pour compter dans une autre langue ?",
+"it": "Quanto ti senti sicuro a contare in un'altra lingua?",
+"pt": "Sentes-te à vontade a contar noutra língua?",
+"pt_BR": "Você se sente seguro contando em outro idioma?"
+}
+},
+{
+"id": "travel_phrases-045",
+"lv": "beginner",
+"i18n": {
+"en": "What's the trickiest sign you've ever tried to read abroad?",
+"de": "Was war das kniffligste Schild, das du im Ausland lesen wolltest?",
+"es": "¿Cuál es el cartel más difícil que has intentado leer en el extranjero?",
+"fr": "Quel est le panneau le plus difficile que tu aies essayé de lire à l'étranger ?",
+"it": "Qual è il cartello più complicato che hai provato a leggere all'estero?",
+"pt": "Qual foi a placa mais difícil que tentaste ler no estrangeiro?",
+"pt_BR": "Qual foi a placa mais difícil que você tentou ler no exterior?"
+}
+},
+{
+"id": "travel_phrases-046",
+"lv": "beginner",
+"i18n": {
+"en": "How do you introduce yourself to someone new on a trip?",
+"de": "Wie stellst du dich auf Reisen neuen Leuten vor?",
+"es": "¿Cómo te presentas a alguien nuevo en un viaje?",
+"fr": "Comment te présentes-tu à quelqu'un de nouveau en voyage ?",
+"it": "Come ti presenti a qualcuno di nuovo in viaggio?",
+"pt": "Como te apresentas a alguém novo numa viagem?",
+"pt_BR": "Como você se apresenta a alguém novo numa viagem?"
+}
+},
+{
+"id": "travel_phrases-047",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer taking taxis, buses or the metro in a new city?",
+"de": "Nimmst du in einer neuen Stadt lieber Taxi, Bus oder U-Bahn?",
+"es": "¿Prefieres taxi, autobús o metro en una ciudad nueva?",
+"fr": "En ville inconnue, tu préfères le taxi, le bus ou le métro ?",
+"it": "In una città nuova preferisci taxi, autobus o metro?",
+"pt": "Numa cidade nova preferes táxi, autocarro ou metro?",
+"pt_BR": "Numa cidade nova você prefere táxi, ônibus ou metrô?"
+}
+},
+{
+"id": "travel_phrases-048",
+"lv": "beginner",
+"i18n": {
+"en": "What would you say at a hotel desk if your room isn't ready yet?",
+"de": "Was würdest du an der Hotelrezeption sagen, wenn dein Zimmer noch nicht fertig ist?",
+"es": "¿Qué dirías en la recepción si tu habitación aún no está lista?",
+"fr": "Que dirais-tu à la réception si ta chambre n'est pas encore prête ?",
+"it": "Cosa diresti alla reception se la tua camera non fosse ancora pronta?",
+"pt": "O que dirias na receção se o teu quarto ainda não estivesse pronto?",
+"pt_BR": "O que você diria na recepção se seu quarto ainda não estivesse pronto?"
+}
+},
+{
+"id": "travel_phrases-049",
+"lv": "beginner",
+"i18n": {
+"en": "Which food would you love to order confidently in another language?",
+"de": "Welches Essen würdest du gern selbstbewusst in einer anderen Sprache bestellen?",
+"es": "¿Qué comida te gustaría pedir con seguridad en otro idioma?",
+"fr": "Quel plat aimerais-tu commander avec assurance dans une autre langue ?",
+"it": "Quale piatto ti piacerebbe ordinare con sicurezza in un'altra lingua?",
+"pt": "Que comida gostavas de pedir com confiança noutra língua?",
+"pt_BR": "Que comida você adoraria pedir com confiança em outro idioma?"
+}
+},
+{
+"id": "travel_phrases-050",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually ask for the bill in a restaurant abroad?",
+"de": "Wie bittest du im Ausland im Restaurant normalerweise um die Rechnung?",
+"es": "¿Cómo sueles pedir la cuenta en un restaurante en el extranjero?",
+"fr": "Comment demandes-tu l'addition dans un restaurant à l'étranger ?",
+"it": "Come chiedi di solito il conto in un ristorante all'estero?",
+"pt": "Como costumas pedir a conta num restaurante no estrangeiro?",
+"pt_BR": "Como você costuma pedir a conta num restaurante no exterior?"
+}
+},
+{
+"id": "travel_phrases-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever had to explain a food allergy or diet abroad? How did it go?",
+"de": "Musstest du im Ausland schon mal eine Allergie oder Ernährungsweise erklären? Wie lief es?",
+"es": "¿Alguna vez has tenido que explicar una alergia o dieta en el extranjero? ¿Qué tal fue?",
+"fr": "As-tu déjà dû expliquer une allergie ou un régime à l'étranger ? Comment ça s'est passé ?",
+"it": "Ti è mai capitato di spiegare un'allergia o una dieta all'estero? Com'è andata?",
+"pt": "Já tiveste de explicar uma alergia ou dieta no estrangeiro? Como correu?",
+"pt_BR": "Você já precisou explicar uma alergia ou dieta no exterior? Como foi?"
+}
+},
+{
+"id": "travel_phrases-052",
+"lv": "beginner",
+"i18n": {
+"en": "What's your go-to phrase when you get a little lost in a new city?",
+"de": "Was ist dein Standardsatz, wenn du dich in einer neuen Stadt etwas verlaufen hast?",
+"es": "¿Cuál es tu frase de cabecera cuando te pierdes un poco en una ciudad nueva?",
+"fr": "Quelle est ta phrase réflexe quand tu te perds un peu dans une nouvelle ville ?",
+"it": "Qual è la tua frase di riferimento quando ti perdi un po' in una città nuova?",
+"pt": "Qual é a tua frase de sempre quando te perdes um pouco numa cidade nova?",
+"pt_BR": "Qual é sua frase coringa quando se perde um pouco numa cidade nova?"
+}
+},
+{
+"id": "travel_phrases-053",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy shopping at local markets? What do you like to buy there?",
+"de": "Kaufst du gern auf lokalen Märkten ein? Was kaufst du dort am liebsten?",
+"es": "¿Te gusta comprar en mercados locales? ¿Qué sueles comprar allí?",
+"fr": "Aimes-tu faire tes achats sur les marchés locaux ? Qu'aimes-tu y acheter ?",
+"it": "Ti piace fare acquisti nei mercati locali? Cosa ti piace comprare?",
+"pt": "Gostas de fazer compras em mercados locais? O que gostas de comprar lá?",
+"pt_BR": "Você curte fazer compras em mercados locais? O que gosta de comprar lá?"
+}
+},
+{
+"id": "travel_phrases-054",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about bargaining at markets? Do you enjoy it?",
+"de": "Wie stehst du zum Handeln auf Märkten? Macht es dir Spaß?",
+"es": "¿Qué opinas de regatear en los mercados? ¿Te divierte?",
+"fr": "Que penses-tu du marchandage sur les marchés ? Ça t'amuse ?",
+"it": "Cosa pensi del contrattare nei mercati? Ti diverte?",
+"pt": "O que achas de regatear nos mercados? Divertes-te?",
+"pt_BR": "O que você acha de pechinchar em mercados? Você curte?"
+}
+},
+{
+"id": "travel_phrases-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which words do you always look up before you land in a new country?",
+"de": "Welche Wörter schlägst du immer nach, bevor du in einem neuen Land landest?",
+"es": "¿Qué palabras buscas siempre antes de aterrizar en un país nuevo?",
+"fr": "Quels mots cherches-tu toujours avant d'atterrir dans un nouveau pays ?",
+"it": "Quali parole cerchi sempre prima di atterrare in un paese nuovo?",
+"pt": "Que palavras procuras sempre antes de aterrar num país novo?",
+"pt_BR": "Quais palavras você sempre pesquisa antes de pousar num país novo?"
+}
+},
+{
+"id": "travel_phrases-056",
+"lv": "beginner",
+"i18n": {
+"en": "How would you ask someone to take a photo of you?",
+"de": "Wie würdest du jemanden bitten, ein Foto von dir zu machen?",
+"es": "¿Cómo le pedirías a alguien que te haga una foto?",
+"fr": "Comment demanderais-tu à quelqu'un de te prendre en photo ?",
+"it": "Come chiederesti a qualcuno di farti una foto?",
+"pt": "Como pedias a alguém para te tirar uma fotografia?",
+"pt_BR": "Como você pediria pra alguém tirar uma foto sua?"
+}
+},
+{
+"id": "travel_phrases-057",
+"lv": "beginner",
+"i18n": {
+"en": "What's the first thing you ask when you check in to a place to stay?",
+"de": "Was fragst du als Erstes, wenn du in einer Unterkunft eincheckst?",
+"es": "¿Qué es lo primero que preguntas al registrarte en un alojamiento?",
+"fr": "Quelle est la première question que tu poses en arrivant dans un hébergement ?",
+"it": "Qual è la prima cosa che chiedi quando fai il check-in in un alloggio?",
+"pt": "Qual é a primeira coisa que perguntas quando fazes check-in num alojamento?",
+"pt_BR": "Qual é a primeira coisa que você pergunta quando faz check-in numa hospedagem?"
+}
+},
+{
+"id": "travel_phrases-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like small talk about the weather, or does it bore you?",
+"de": "Magst du Smalltalk übers Wetter oder langweilt er dich?",
+"es": "¿Te gusta hablar del tiempo para romper el hielo o te aburre?",
+"fr": "Aimes-tu parler de la météo pour briser la glace, ou ça t'ennuie ?",
+"it": "Ti piace chiacchierare del tempo o ti annoia?",
+"pt": "Gostas de conversa sobre o tempo ou aborrece-te?",
+"pt_BR": "Você gosta de papo sobre o tempo ou acha chato?"
+}
+},
+{
+"id": "travel_phrases-059",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of souvenir do you usually bring home?",
+"de": "Welche Art von Souvenir bringst du meistens mit nach Hause?",
+"es": "¿Qué tipo de recuerdo sueles traer a casa?",
+"fr": "Quel genre de souvenir rapportes-tu d'habitude ?",
+"it": "Che tipo di souvenir porti di solito a casa?",
+"pt": "Que tipo de recordação costumas trazer para casa?",
+"pt_BR": "Que tipo de lembrancinha você costuma trazer pra casa?"
+}
+},
+{
+"id": "travel_phrases-060",
+"lv": "beginner",
+"i18n": {
+"en": "How do you politely say no to a street seller in a language you know?",
+"de": "Wie lehnst du einen Straßenverkäufer in einer Sprache, die du kannst, höflich ab?",
+"es": "¿Cómo dices que no con educación a un vendedor ambulante en un idioma que conoces?",
+"fr": "Comment refuses-tu poliment un vendeur de rue dans une langue que tu connais ?",
+"it": "Come dici di no con gentilezza a un venditore ambulante in una lingua che conosci?",
+"pt": "Como dizes que não com educação a um vendedor de rua numa língua que conheces?",
+"pt_BR": "Como você diz não com educação a um vendedor de rua num idioma que conhece?"
+}
+},
+{
+"id": "travel_phrases-061",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you remember new words best: writing, saying or using them?",
+"de": "Was hilft dir am besten beim Merken neuer Wörter: schreiben, sprechen oder benutzen?",
+"es": "¿Qué te ayuda más a recordar palabras nuevas: escribirlas, decirlas o usarlas?",
+"fr": "Qu'est-ce qui t'aide le plus à retenir des mots : les écrire, les dire ou les utiliser ?",
+"it": "Cosa ti aiuta di più a ricordare parole nuove: scriverle, dirle o usarle?",
+"pt": "O que te ajuda mais a lembrar palavras novas: escrevê-las, dizê-las ou usá-las?",
+"pt_BR": "O que mais te ajuda a lembrar palavras novas: escrever, falar ou usar?"
+}
+},
+{
+"id": "travel_phrases-062",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever bought a train or bus ticket in another language?",
+"de": "Hast du schon mal ein Zug- oder Busticket in einer anderen Sprache gekauft?",
+"es": "¿Alguna vez has comprado un billete de tren o autobús en otro idioma?",
+"fr": "As-tu déjà acheté un billet de train ou de bus dans une autre langue ?",
+"it": "Hai mai comprato un biglietto del treno o dell'autobus in un'altra lingua?",
+"pt": "Já compraste um bilhete de comboio ou autocarro noutra língua?",
+"pt_BR": "Você já comprou passagem de trem ou ônibus em outro idioma?"
+}
+},
+{
+"id": "travel_phrases-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which compliment would you love to give a cook in their own language?",
+"de": "Welches Kompliment würdest du einem Koch gern in seiner Sprache machen?",
+"es": "¿Qué cumplido te gustaría hacerle a un cocinero en su idioma?",
+"fr": "Quel compliment aimerais-tu faire à un cuisinier dans sa langue ?",
+"it": "Quale complimento ti piacerebbe fare a un cuoco nella sua lingua?",
+"pt": "Que elogio gostavas de fazer a um cozinheiro na língua dele?",
+"pt_BR": "Que elogio você adoraria fazer a um cozinheiro no idioma dele?"
+}
+},
+{
+"id": "travel_phrases-064",
+"lv": "beginner",
+"i18n": {
+"en": "What would you ask at a tourist office on your first day in a city?",
+"de": "Was würdest du am ersten Tag in einer Stadt in der Touristeninfo fragen?",
+"es": "¿Qué preguntarías en la oficina de turismo el primer día en una ciudad?",
+"fr": "Que demanderais-tu à l'office de tourisme ton premier jour en ville ?",
+"it": "Cosa chiederesti all'ufficio turistico il primo giorno in una città?",
+"pt": "O que perguntavas no posto de turismo no primeiro dia numa cidade?",
+"pt_BR": "O que você perguntaria no centro de informações turísticas no primeiro dia numa cidade?"
+}
+},
+{
+"id": "travel_phrases-065",
+"lv": "beginner",
+"i18n": {
+"en": "Do you feel shy speaking another language, or do you just go for it?",
+"de": "Bist du schüchtern, wenn du eine andere Sprache sprichst, oder legst du einfach los?",
+"es": "¿Te da vergüenza hablar otro idioma o te lanzas sin más?",
+"fr": "Es-tu timide quand tu parles une autre langue, ou tu te lances ?",
+"it": "Sei timido quando parli un'altra lingua o ti butti e basta?",
+"pt": "Ficas tímido a falar outra língua ou atiras-te de cabeça?",
+"pt_BR": "Você fica tímido falando outro idioma ou vai com tudo?"
+}
+},
+{
+"id": "travel_phrases-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep a conversation going when you run out of words?",
+"de": "Wie hältst du ein Gespräch am Laufen, wenn dir die Wörter ausgehen?",
+"es": "¿Cómo mantienes una conversación cuando te quedas sin palabras?",
+"fr": "Comment fais-tu durer une conversation quand les mots te manquent ?",
+"it": "Come porti avanti una conversazione quando ti mancano le parole?",
+"pt": "Como manténs uma conversa quando ficas sem palavras?",
+"pt_BR": "Como você mantém uma conversa quando faltam palavras?"
+}
+},
+{
+"id": "travel_phrases-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever made a phone call in another language? How did it feel?",
+"de": "Hast du schon mal in einer anderen Sprache telefoniert? Wie hat sich das angefühlt?",
+"es": "¿Alguna vez has hecho una llamada en otro idioma? ¿Cómo te sentiste?",
+"fr": "As-tu déjà passé un appel dans une autre langue ? Comment l'as-tu vécu ?",
+"it": "Hai mai fatto una telefonata in un'altra lingua? Come ti sei sentito?",
+"pt": "Já fizeste uma chamada noutra língua? Como te sentiste?",
+"pt_BR": "Você já fez uma ligação em outro idioma? Como se sentiu?"
+}
+},
+{
+"id": "travel_phrases-068",
+"lv": "intermediate",
+"i18n": {
+"en": "In languages with a formal and an informal you, how do you choose which to use?",
+"de": "Wie entscheidest du in Sprachen mit Sie und du, welche Form du benutzt?",
+"es": "En idiomas con usted y tú, ¿cómo decides cuál usar?",
+"fr": "Dans les langues avec vous et tu, comment choisis-tu la bonne forme ?",
+"it": "Nelle lingue con il Lei e il tu, come scegli quale usare?",
+"pt": "Nas línguas com tratamento formal e informal, como escolhes qual usar?",
+"pt_BR": "Em idiomas com tratamento formal e informal, como você escolhe qual usar?"
+}
+},
+{
+"id": "travel_phrases-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you politely complain about a noisy hotel room?",
+"de": "Wie würdest du dich höflich über ein lautes Hotelzimmer beschweren?",
+"es": "¿Cómo te quejarías con educación de una habitación de hotel ruidosa?",
+"fr": "Comment te plaindrais-tu poliment d'une chambre d'hôtel bruyante ?",
+"it": "Come ti lamenteresti con gentilezza di una camera d'albergo rumorosa?",
+"pt": "Como te queixavas com educação de um quarto de hotel barulhento?",
+"pt_BR": "Como você reclamaria com educação de um quarto de hotel barulhento?"
+}
+},
+{
+"id": "travel_phrases-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a greeting habit that surprised you, like bows or cheek kisses?",
+"de": "Welche Begrüßungsgewohnheit hat dich überrascht, etwa Verbeugungen oder Wangenküsse?",
+"es": "¿Qué costumbre de saludo te sorprendió, como las reverencias o los besos en la mejilla?",
+"fr": "Quelle façon de saluer t'a surpris, comme les révérences ou la bise ?",
+"it": "Quale abitudine di saluto ti ha sorpreso, come gli inchini o i baci sulla guancia?",
+"pt": "Que hábito de cumprimento te surpreendeu, como as vénias ou os beijinhos?",
+"pt_BR": "Que costume de cumprimento te surpreendeu, como reverências ou beijinhos no rosto?"
+}
+},
+{
+"id": "travel_phrases-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you describe a dish from your country to someone who's never tried it?",
+"de": "Wie beschreibst du ein Gericht aus deinem Land jemandem, der es nie probiert hat?",
+"es": "¿Cómo describes un plato de tu país a alguien que nunca lo ha probado?",
+"fr": "Comment décris-tu un plat de ton pays à quelqu'un qui n'y a jamais goûté ?",
+"it": "Come descrivi un piatto del tuo paese a qualcuno che non l'ha mai assaggiato?",
+"pt": "Como descreves um prato do teu país a alguém que nunca o provou?",
+"pt_BR": "Como você descreve um prato do seu país pra alguém que nunca provou?"
+}
+},
+{
+"id": "travel_phrases-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever joined a language exchange? What did you learn?",
+"de": "Warst du schon mal bei einem Sprachaustausch? Was hast du gelernt?",
+"es": "¿Has participado alguna vez en un intercambio de idiomas? ¿Qué aprendiste?",
+"fr": "As-tu déjà participé à un échange linguistique ? Qu'as-tu appris ?",
+"it": "Hai mai partecipato a uno scambio linguistico? Cosa hai imparato?",
+"pt": "Já participaste num intercâmbio de línguas? O que aprendeste?",
+"pt_BR": "Você já participou de um intercâmbio de idiomas? O que aprendeu?"
+}
+},
+{
+"id": "travel_phrases-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you like people to correct your mistakes when you speak?",
+"de": "Wie sollen andere deine Fehler korrigieren, wenn du sprichst?",
+"es": "¿Cómo prefieres que te corrijan los errores cuando hablas?",
+"fr": "Comment aimes-tu qu'on corrige tes erreurs quand tu parles ?",
+"it": "Come preferisci che ti correggano gli errori quando parli?",
+"pt": "Como gostas que te corrijam os erros quando falas?",
+"pt_BR": "Como você prefere que corrijam seus erros quando fala?"
+}
+},
+{
+"id": "travel_phrases-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a gesture that means something different in another country?",
+"de": "Welche Geste bedeutet in einem anderen Land etwas anderes?",
+"es": "¿Qué gesto significa algo distinto en otro país?",
+"fr": "Quel geste signifie autre chose dans un autre pays ?",
+"it": "Quale gesto significa qualcosa di diverso in un altro paese?",
+"pt": "Que gesto significa outra coisa noutro país?",
+"pt_BR": "Que gesto significa outra coisa em outro país?"
+}
+},
+{
+"id": "travel_phrases-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you explain what you do for work to people you meet abroad?",
+"de": "Wie erklärst du Leuten im Ausland, was du beruflich machst?",
+"es": "¿Cómo explicas a qué te dedicas a la gente que conoces en el extranjero?",
+"fr": "Comment expliques-tu ton métier aux gens que tu rencontres à l'étranger ?",
+"it": "Come spieghi il tuo lavoro alle persone che conosci all'estero?",
+"pt": "Como explicas o que fazes profissionalmente a quem conheces lá fora?",
+"pt_BR": "Como você explica o que faz no trabalho pras pessoas que conhece no exterior?"
+}
+},
+{
+"id": "travel_phrases-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever been invited to a local's home? What phrases helped you?",
+"de": "Wurdest du schon mal zu Einheimischen nach Hause eingeladen? Welche Sätze haben geholfen?",
+"es": "¿Te han invitado alguna vez a casa de alguien local? ¿Qué frases te ayudaron?",
+"fr": "As-tu déjà été invité chez des habitants ? Quelles phrases t'ont aidé ?",
+"it": "Sei mai stato invitato a casa di gente del posto? Quali frasi ti hanno aiutato?",
+"pt": "Já foste convidado para casa de alguém local? Que frases te ajudaram?",
+"pt_BR": "Você já foi convidado pra casa de alguém local? Que frases te ajudaram?"
+}
+},
+{
+"id": "travel_phrases-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle tipping when you're not sure of the local custom?",
+"de": "Wie gehst du mit Trinkgeld um, wenn du die örtliche Sitte nicht kennst?",
+"es": "¿Qué haces con la propina cuando no conoces la costumbre local?",
+"fr": "Comment gères-tu le pourboire quand tu ne connais pas l'usage local ?",
+"it": "Come ti regoli con la mancia quando non conosci l'usanza locale?",
+"pt": "Como lidas com a gorjeta quando não conheces o costume local?",
+"pt_BR": "Como você lida com a gorjeta quando não conhece o costume local?"
+}
+},
+{
+"id": "travel_phrases-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What's the best way you know to ask a local for a hidden gem?",
+"de": "Wie fragst du Einheimische am besten nach einem Geheimtipp?",
+"es": "¿Cuál es tu mejor forma de pedirle a alguien local un rincón secreto?",
+"fr": "Quelle est ta meilleure façon de demander une adresse secrète à un habitant ?",
+"it": "Qual è il modo migliore che conosci per chiedere a un locale un posto segreto?",
+"pt": "Qual é a melhor forma que conheces de pedir a um local um sítio escondido?",
+"pt_BR": "Qual é o melhor jeito que você conhece de pedir a um morador um lugar escondido?"
+}
+},
+{
+"id": "travel_phrases-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which accent do you find hardest to understand, and why?",
+"de": "Welchen Akzent findest du am schwersten zu verstehen, und warum?",
+"es": "¿Qué acento te cuesta más entender y por qué?",
+"fr": "Quel accent trouves-tu le plus dur à comprendre, et pourquoi ?",
+"it": "Quale accento trovi più difficile da capire, e perché?",
+"pt": "Que sotaque achas mais difícil de perceber e porquê?",
+"pt_BR": "Qual sotaque você acha mais difícil de entender, e por quê?"
+}
+},
+{
+"id": "travel_phrases-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you ask to change a train ticket to a later time?",
+"de": "Wie würdest du darum bitten, ein Zugticket auf eine spätere Verbindung umzubuchen?",
+"es": "¿Cómo pedirías cambiar un billete de tren a una hora más tarde?",
+"fr": "Comment demanderais-tu à changer un billet de train pour plus tard ?",
+"it": "Come chiederesti di cambiare un biglietto del treno con un orario più tardi?",
+"pt": "Como pedias para mudar um bilhete de comboio para mais tarde?",
+"pt_BR": "Como você pediria pra trocar uma passagem de trem para um horário mais tarde?"
+}
+},
+{
+"id": "travel_phrases-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What's a toast or celebration phrase you love from another culture?",
+"de": "Welchen Trinkspruch oder Glückwunsch aus einer anderen Kultur magst du besonders?",
+"es": "¿Qué brindis o frase de celebración de otra cultura te encanta?",
+"fr": "Quel toast ou quelle formule de fête d'une autre culture adores-tu ?",
+"it": "Quale brindisi o augurio di un'altra cultura ti piace tanto?",
+"pt": "Que brinde ou frase de celebração de outra cultura adoras?",
+"pt_BR": "Qual brinde ou frase de comemoração de outra cultura você adora?"
+}
+},
+{
+"id": "travel_phrases-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you write messages to hosts in their language? How do they react?",
+"de": "Schreibst du Gastgebern in ihrer Sprache? Wie reagieren sie?",
+"es": "¿Escribes a tus anfitriones en su idioma? ¿Cómo reaccionan?",
+"fr": "Écris-tu à tes hôtes dans leur langue ? Comment réagissent-ils ?",
+"it": "Scrivi ai tuoi host nella loro lingua? Come reagiscono?",
+"pt": "Escreves aos teus anfitriões na língua deles? Como reagem?",
+"pt_BR": "Você escreve para seus anfitriões no idioma deles? Como eles reagem?"
+}
+},
+{
+"id": "travel_phrases-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you ask what a word means without stopping the conversation?",
+"de": "Wie fragst du nach der Bedeutung eines Wortes, ohne das Gespräch zu unterbrechen?",
+"es": "¿Cómo preguntas qué significa una palabra sin cortar la conversación?",
+"fr": "Comment demandes-tu le sens d'un mot sans couper la conversation ?",
+"it": "Come chiedi cosa significa una parola senza interrompere la conversazione?",
+"pt": "Como perguntas o que significa uma palavra sem cortar a conversa?",
+"pt_BR": "Como você pergunta o que uma palavra significa sem cortar a conversa?"
+}
+},
+{
+"id": "travel_phrases-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What topics do you enjoy chatting about with new friends abroad?",
+"de": "Über welche Themen plauderst du gern mit neuen Freunden im Ausland?",
+"es": "¿De qué temas te gusta charlar con nuevos amigos en el extranjero?",
+"fr": "De quels sujets aimes-tu parler avec de nouveaux amis à l'étranger ?",
+"it": "Di quali argomenti ti piace chiacchierare con nuovi amici all'estero?",
+"pt": "Sobre que temas gostas de conversar com amigos novos lá fora?",
+"pt_BR": "Sobre quais assuntos você gosta de conversar com novos amigos no exterior?"
+}
+},
+{
+"id": "travel_phrases-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you ask for directions and check that you understood them correctly?",
+"de": "Wie fragst du nach dem Weg und prüfst, ob du alles richtig verstanden hast?",
+"es": "¿Cómo pides indicaciones y compruebas que las has entendido bien?",
+"fr": "Comment demandes-tu ton chemin et vérifies-tu que tu as bien compris ?",
+"it": "Come chiedi indicazioni e verifichi di averle capite bene?",
+"pt": "Como pedes indicações e confirmas que as percebeste bem?",
+"pt_BR": "Como você pede informações de caminho e confirma que entendeu direito?"
+}
+},
+{
+"id": "travel_phrases-086",
+"lv": "advanced",
+"i18n": {
+"en": "How do you disagree politely in a language that isn't your own?",
+"de": "Wie widersprichst du höflich in einer Sprache, die nicht deine eigene ist?",
+"es": "¿Cómo expresas un desacuerdo con educación en un idioma que no es el tuyo?",
+"fr": "Comment exprimes-tu poliment ton désaccord dans une langue qui n'est pas la tienne ?",
+"it": "Come esprimi un disaccordo con garbo in una lingua che non è la tua?",
+"pt": "Como discordas com educação numa língua que não é a tua?",
+"pt_BR": "Como você discorda com educação num idioma que não é o seu?"
+}
+},
+{
+"id": "travel_phrases-087",
+"lv": "advanced",
+"i18n": {
+"en": "Which idiom from another language do you wish existed in yours?",
+"de": "Welche Redewendung aus einer anderen Sprache hättest du gern in deiner?",
+"es": "¿Qué expresión de otro idioma te gustaría que existiera en el tuyo?",
+"fr": "Quelle expression d'une autre langue aimerais-tu avoir dans la tienne ?",
+"it": "Quale modo di dire di un'altra lingua vorresti che esistesse nella tua?",
+"pt": "Que expressão de outra língua gostavas que existisse na tua?",
+"pt_BR": "Qual expressão de outro idioma você queria que existisse no seu?"
+}
+},
+{
+"id": "travel_phrases-088",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever negotiated something important abroad? What phrases worked?",
+"de": "Hast du im Ausland schon mal etwas Wichtiges verhandelt? Welche Sätze haben funktioniert?",
+"es": "¿Has negociado algo importante en el extranjero? ¿Qué frases te funcionaron?",
+"fr": "As-tu déjà négocié quelque chose d'important à l'étranger ? Quelles phrases ont marché ?",
+"it": "Hai mai negoziato qualcosa di importante all'estero? Quali frasi hanno funzionato?",
+"pt": "Já negociaste algo importante no estrangeiro? Que frases resultaram?",
+"pt_BR": "Você já negociou algo importante no exterior? Que frases funcionaram?"
+}
+},
+{
+"id": "travel_phrases-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you notice a polite no in cultures that avoid saying no directly?",
+"de": "Wie erkennst du ein höfliches Nein in Kulturen, die selten direkt Nein sagen?",
+"es": "¿Cómo reconoces un no educado en culturas que evitan decir no directamente?",
+"fr": "Comment repères-tu un non poli dans les cultures qui évitent de dire non ?",
+"it": "Come riconosci un no gentile nelle culture che evitano di dire no apertamente?",
+"pt": "Como reconheces um não educado em culturas que evitam dizer não diretamente?",
+"pt_BR": "Como você percebe um não educado em culturas que evitam dizer não diretamente?"
+}
+},
+{
+"id": "travel_phrases-090",
+"lv": "advanced",
+"i18n": {
+"en": "What's a false friend that once confused you?",
+"de": "Welcher falsche Freund hat dich schon mal verwirrt?",
+"es": "¿Qué falso amigo te confundió alguna vez?",
+"fr": "Quel faux ami t'a déjà embrouillé ?",
+"it": "Quale falso amico ti ha confuso una volta?",
+"pt": "Que falso amigo já te baralhou?",
+"pt_BR": "Qual falso cognato já te confundiu?"
+}
+},
+{
+"id": "travel_phrases-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you tell a travel story so that locals really enjoy it?",
+"de": "Wie würdest du eine Reisegeschichte erzählen, damit Einheimische sie richtig genießen?",
+"es": "¿Cómo contarías una historia de viaje para que la gente local la disfrute de verdad?",
+"fr": "Comment raconterais-tu une histoire de voyage pour que les habitants l'apprécient vraiment ?",
+"it": "Come racconteresti una storia di viaggio perché la gente del posto la apprezzi davvero?",
+"pt": "Como contavas uma história de viagem para que os locais gostassem mesmo?",
+"pt_BR": "Como você contaria uma história de viagem pra que os moradores curtissem de verdade?"
+}
+},
+{
+"id": "travel_phrases-092",
+"lv": "advanced",
+"i18n": {
+"en": "Which slang word did you learn from locals and love using?",
+"de": "Welches Slangwort hast du von Einheimischen gelernt und benutzt es gern?",
+"es": "¿Qué palabra de jerga aprendiste de la gente local y te encanta usar?",
+"fr": "Quel mot d'argot as-tu appris des habitants et adores utiliser ?",
+"it": "Quale parola gergale hai imparato dalla gente del posto e ami usare?",
+"pt": "Que palavra de calão aprendeste com os locais e adoras usar?",
+"pt_BR": "Qual gíria você aprendeu com os moradores e adora usar?"
+}
+},
+{
+"id": "travel_phrases-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you change your tone when talking to officials versus new friends?",
+"de": "Wie änderst du deinen Ton bei Behörden im Vergleich zu neuen Freunden?",
+"es": "¿Cómo cambias tu tono al hablar con funcionarios frente a nuevos amigos?",
+"fr": "Comment adaptes-tu ton ton entre l'administration et les nouveaux amis ?",
+"it": "Come cambi tono quando parli con funzionari rispetto a nuovi amici?",
+"pt": "Como mudas o tom quando falas com funcionários públicos e com amigos novos?",
+"pt_BR": "Como você muda o tom quando fala com funcionários públicos e com amigos novos?"
+}
+},
+{
+"id": "travel_phrases-094",
+"lv": "advanced",
+"i18n": {
+"en": "What's the most complex situation you've solved in another language?",
+"de": "Was war die komplizierteste Situation, die du in einer anderen Sprache gelöst hast?",
+"es": "¿Cuál es la situación más complicada que has resuelto en otro idioma?",
+"fr": "Quelle est la situation la plus complexe que tu aies réglée dans une autre langue ?",
+"it": "Qual è la situazione più complicata che hai risolto in un'altra lingua?",
+"pt": "Qual foi a situação mais complicada que resolveste noutra língua?",
+"pt_BR": "Qual foi a situação mais complicada que você resolveu em outro idioma?"
+}
+},
+{
+"id": "travel_phrases-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do regional differences within one language affect the way you speak?",
+"de": "Wie beeinflussen regionale Unterschiede innerhalb einer Sprache deine Art zu sprechen?",
+"es": "¿Cómo influyen las diferencias regionales de un mismo idioma en tu forma de hablar?",
+"fr": "Comment les différences régionales d'une même langue influencent-elles ta façon de parler ?",
+"it": "Come influiscono le differenze regionali di una stessa lingua sul tuo modo di parlare?",
+"pt": "Como é que as diferenças regionais de uma mesma língua influenciam a tua maneira de falar?",
+"pt_BR": "Como as diferenças regionais de um mesmo idioma influenciam seu jeito de falar?"
+}
+},
+{
+"id": "travel_phrases-096",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever written a formal email or review in another language?",
+"de": "Hast du schon mal eine formelle E-Mail oder Bewertung in einer anderen Sprache geschrieben?",
+"es": "¿Has escrito alguna vez un correo formal o una reseña en otro idioma?",
+"fr": "As-tu déjà écrit un e-mail formel ou un avis dans une autre langue ?",
+"it": "Hai mai scritto un'email formale o una recensione in un'altra lingua?",
+"pt": "Já escreveste um email formal ou uma avaliação noutra língua?",
+"pt_BR": "Você já escreveu um e-mail formal ou uma avaliação em outro idioma?"
+}
+},
+{
+"id": "travel_phrases-097",
+"lv": "advanced",
+"i18n": {
+"en": "What would you include in your personal phrasebook for a dream trip?",
+"de": "Was würdest du in dein persönliches Sprachheft für eine Traumreise aufnehmen?",
+"es": "¿Qué incluirías en tu guía de frases personal para un viaje soñado?",
+"fr": "Que mettrais-tu dans ton guide de conversation perso pour un voyage de rêve ?",
+"it": "Cosa metteresti nel tuo frasario personale per un viaggio da sogno?",
+"pt": "O que incluías no teu guia de frases pessoal para uma viagem de sonho?",
+"pt_BR": "O que você colocaria no seu guia de frases pessoal pra uma viagem dos sonhos?"
+}
+},
+{
+"id": "travel_phrases-098",
+"lv": "advanced",
+"i18n": {
+"en": "How do you help visitors in your own city when they don't speak your language?",
+"de": "Wie hilfst du Besuchern in deiner Stadt, wenn sie deine Sprache nicht sprechen?",
+"es": "¿Cómo ayudas a los visitantes de tu ciudad cuando no hablan tu idioma?",
+"fr": "Comment aides-tu les visiteurs de ta ville quand ils ne parlent pas ta langue ?",
+"it": "Come aiuti i visitatori nella tua città quando non parlano la tua lingua?",
+"pt": "Como ajudas os visitantes na tua cidade quando não falam a tua língua?",
+"pt_BR": "Como você ajuda visitantes na sua cidade quando eles não falam seu idioma?"
+}
+},
+{
+"id": "travel_phrases-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which language would you like to reach real fluency in, and why?",
+"de": "In welcher Sprache möchtest du richtig fließend werden, und warum?",
+"es": "¿En qué idioma te gustaría llegar a hablar con fluidez de verdad y por qué?",
+"fr": "Dans quelle langue aimerais-tu devenir vraiment fluide, et pourquoi ?",
+"it": "In quale lingua vorresti diventare davvero fluente, e perché?",
+"pt": "Em que língua gostavas de chegar à fluência a sério e porquê?",
+"pt_BR": "Em qual idioma você gostaria de ter fluência de verdade, e por quê?"
+}
+},
+{
+"id": "travel_phrases-100",
+"lv": "advanced",
+"i18n": {
+"en": "What has learning travel phrases taught you about other cultures?",
+"de": "Was hat dir das Lernen von Reisesätzen über andere Kulturen beigebracht?",
+"es": "¿Qué te ha enseñado sobre otras culturas aprender frases de viaje?",
+"fr": "Qu'est-ce qu'apprendre des phrases de voyage t'a appris sur les autres cultures ?",
+"it": "Cosa ti ha insegnato sulle altre culture imparare frasi da viaggio?",
+"pt": "O que te ensinou sobre outras culturas aprender frases de viagem?",
+"pt_BR": "O que aprender frases de viagem te ensinou sobre outras culturas?"
+}
+}
+]
+}

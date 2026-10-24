@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking for directions",
+     "g": "Ask the way in German and understand simple directions.",
+     "p": [
+      "Start politely: Entschuldigung, wo ist der Bahnhof? or Wie komme ich zum Rathaus?",
+      "Key answers: geradeaus (straight on), links (left), rechts (right), an der Ampel (at the traffic lights), die zweite Straße links.",
+      "Distance words help too: Es ist nicht weit, gleich da vorne (right there), ungefähr fünf Minuten zu Fuß."
+     ],
+     "q": "Explain to me in German how to get from your home to the nearest supermarket.",
+     "c": "Choose two places in your town and write simple directions to each, using geradeaus, links and rechts."
+    },
+    "de": {
+     "t": "Nach dem Weg fragen",
+     "g": "Du fragst auf Deutsch nach dem Weg und verstehst einfache Wegbeschreibungen.",
+     "p": [
+      "Beginne höflich: Entschuldigung, wo ist der Bahnhof? oder Wie komme ich zum Rathaus?",
+      "Wichtige Antworten: geradeaus, links, rechts, an der Ampel, die zweite Straße links.",
+      "Auch Entfernungen helfen: Es ist nicht weit, gleich da vorne, ungefähr fünf Minuten zu Fuß."
+     ],
+     "q": "Erklär mir auf Deutsch, wie man von deiner Wohnung zum nächsten Supermarkt kommt.",
+     "c": "Wähl zwei Orte in deiner Stadt und schreib zu jedem eine einfache Wegbeschreibung mit geradeaus, links und rechts."
+    },
+    "es": {
+     "t": "Preguntar el camino",
+     "g": "Pregunta el camino en alemán y entiende indicaciones sencillas.",
+     "p": [
+      "Empieza con cortesía: Entschuldigung, wo ist der Bahnhof? o Wie komme ich zum Rathaus?",
+      "Respuestas clave: geradeaus (recto), links (izquierda), rechts (derecha), an der Ampel (en el semáforo), die zweite Straße links.",
+      "Las distancias también ayudan: Es ist nicht weit, gleich da vorne (justo ahí), ungefähr fünf Minuten zu Fuß."
+     ],
+     "q": "Explícame en alemán cómo ir de tu casa al supermercado más cercano.",
+     "c": "Elige dos lugares de tu ciudad y escribe indicaciones sencillas para cada uno con geradeaus, links y rechts."
+    },
+    "fr": {
+     "t": "Demander son chemin",
+     "g": "Demander le chemin en allemand et comprendre des indications simples.",
+     "p": [
+      "Commence poliment : Entschuldigung, wo ist der Bahnhof ? ou Wie komme ich zum Rathaus ?",
+      "Réponses clés : geradeaus (tout droit), links (à gauche), rechts (à droite), an der Ampel (au feu), die zweite Straße links.",
+      "Les distances aident aussi : Es ist nicht weit, gleich da vorne (juste là), ungefähr fünf Minuten zu Fuß."
+     ],
+     "q": "Explique-moi en allemand comment aller de chez toi au supermarché le plus proche.",
+     "c": "Choisis deux lieux de ta ville et écris des indications simples pour chacun avec geradeaus, links et rechts."
+    },
+    "it": {
+     "t": "Chiedere indicazioni",
+     "g": "Chiedi la strada in tedesco e capisci indicazioni semplici.",
+     "p": [
+      "Comincia con gentilezza: Entschuldigung, wo ist der Bahnhof? oppure Wie komme ich zum Rathaus?",
+      "Risposte chiave: geradeaus (dritto), links (a sinistra), rechts (a destra), an der Ampel (al semaforo), die zweite Straße links.",
+      "Aiutano anche le distanze: Es ist nicht weit, gleich da vorne (proprio lì), ungefähr fünf Minuten zu Fuß."
+     ],
+     "q": "Spiegami in tedesco come si va da casa tua al supermercato più vicino.",
+     "c": "Scegli due luoghi della tua città e scrivi indicazioni semplici per ciascuno con geradeaus, links e rechts."
+    },
+    "pt": {
+     "t": "Pedir direções",
+     "g": "Perguntar o caminho em alemão e perceber indicações simples.",
+     "p": [
+      "Começa com educação: Entschuldigung, wo ist der Bahnhof? ou Wie komme ich zum Rathaus?",
+      "Respostas-chave: geradeaus (em frente), links (à esquerda), rechts (à direita), an der Ampel (no semáforo), die zweite Straße links.",
+      "As distâncias também ajudam: Es ist nicht weit, gleich da vorne (logo ali), ungefähr fünf Minuten zu Fuß."
+     ],
+     "q": "Explica-me em alemão como se vai da tua casa ao supermercado mais próximo.",
+     "c": "Escolhe dois lugares da tua cidade e escreve indicações simples para cada um com geradeaus, links e rechts."
+    },
+    "pt_BR": {
+     "t": "Pedindo informação",
+     "g": "Perguntar o caminho em alemão e entender indicações simples.",
+     "p": [
+      "Comece com educação: Entschuldigung, wo ist der Bahnhof? ou Wie komme ich zum Rathaus?",
+      "Respostas-chave: geradeaus (em frente), links (à esquerda), rechts (à direita), an der Ampel (no semáforo), die zweite Straße links.",
+      "As distâncias também ajudam: Es ist nicht weit, gleich da vorne (logo ali), ungefähr fünf Minuten zu Fuß."
+     ],
+     "q": "Me explique em alemão como ir da sua casa até o supermercado mais próximo.",
+     "c": "Escolha dois lugares da sua cidade e escreva indicações simples para cada um com geradeaus, links e rechts."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Wie komme ich zum...?",
+      "ex": "Wie komme ich zum Bahnhof?"
+     },
+     {
+      "w": "geradeaus",
+      "ex": "Gehen Sie immer geradeaus."
+     },
+     {
+      "w": "links",
+      "ex": "Dann gehen Sie links."
+     },
+     {
+      "w": "rechts",
+      "ex": "Die Post ist rechts."
+     },
+     {
+      "w": "die Ampel",
+      "ex": "An der Ampel gehen Sie rechts."
+     },
+     {
+      "w": "weit",
+      "ex": "Ist das weit? – Nein, nur fünf Minuten."
+     }
+    ],
+    "gram": "Wo ist der/die/das...? Wie komme ich zum Bahnhof / zur Post? (zum = zu dem, zur = zu der). Gehen Sie geradeaus!"
+   }
+  },
+  {
+   "d": 42,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Transport",
+     "g": "Talk about how you travel and buy a ticket.",
+     "p": [
+      "Use mit + dative for transport: mit dem Bus, mit dem Zug, mit dem Auto, mit der U-Bahn, mit der S-Bahn.",
+      "On foot is zu Fuß: Ich gehe zu Fuß. With vehicles, use fahren: Ich fahre mit dem Fahrrad zur Arbeit.",
+      "Buying a ticket: Eine Fahrkarte nach München, bitte. Einfach oder hin und zurück? Remember to validate it if required."
+     ],
+     "q": "How do you get to work, school or the shops? Answer with ich fahre mit dem... or ich gehe zu Fuß.",
+     "c": "Write how three people you know travel each day, using mit dem, mit der and zu Fuß."
+    },
+    "de": {
+     "t": "Verkehrsmittel",
+     "g": "Du sprichst darüber, wie du unterwegs bist, und kaufst eine Fahrkarte.",
+     "p": [
+      "Verkehrsmittel mit mit + Dativ: mit dem Bus, mit dem Zug, mit dem Auto, mit der U-Bahn, mit der S-Bahn.",
+      "Ohne Fahrzeug sagst du zu Fuß: Ich gehe zu Fuß. Mit Fahrzeug: Ich fahre mit dem Fahrrad zur Arbeit.",
+      "Fahrkarte kaufen: Eine Fahrkarte nach München, bitte. Einfach oder hin und zurück?"
+     ],
+     "q": "Wie kommst du zur Arbeit, zur Schule oder zum Einkaufen? Antworte mit ich fahre mit dem... oder ich gehe zu Fuß.",
+     "c": "Schreib, wie drei Menschen, die du kennst, jeden Tag unterwegs sind: mit dem, mit der und zu Fuß."
+    },
+    "es": {
+     "t": "El transporte",
+     "g": "Habla de cómo te desplazas y compra un billete.",
+     "p": [
+      "Para el transporte se usa mit + dativo: mit dem Bus, mit dem Zug, mit dem Auto, mit der U-Bahn, mit der S-Bahn.",
+      "A pie es zu Fuß: Ich gehe zu Fuß. Con vehículo se usa fahren: Ich fahre mit dem Fahrrad zur Arbeit.",
+      "Comprar un billete: Eine Fahrkarte nach München, bitte. Einfach oder hin und zurück? (¿ida o ida y vuelta?)"
+     ],
+     "q": "¿Cómo vas al trabajo, a clase o a la compra? Responde con ich fahre mit dem... o ich gehe zu Fuß.",
+     "c": "Escribe cómo se desplazan cada día tres personas que conoces, con mit dem, mit der y zu Fuß."
+    },
+    "fr": {
+     "t": "Les transports",
+     "g": "Parler de tes déplacements et acheter un billet.",
+     "p": [
+      "Pour les transports : mit + datif : mit dem Bus, mit dem Zug, mit dem Auto, mit der U-Bahn, mit der S-Bahn.",
+      "À pied se dit zu Fuß : Ich gehe zu Fuß. Avec un véhicule, on utilise fahren : Ich fahre mit dem Fahrrad zur Arbeit.",
+      "Acheter un billet : Eine Fahrkarte nach München, bitte. Einfach oder hin und zurück ? (aller simple ou aller-retour ?)"
+     ],
+     "q": "Comment vas-tu au travail, en cours ou faire les courses ? Réponds avec ich fahre mit dem... ou ich gehe zu Fuß.",
+     "c": "Écris comment trois personnes que tu connais se déplacent chaque jour, avec mit dem, mit der et zu Fuß."
+    },
+    "it": {
+     "t": "I mezzi di trasporto",
+     "g": "Parli di come ti sposti e compri un biglietto.",
+     "p": [
+      "Per i mezzi si usa mit + dativo: mit dem Bus, mit dem Zug, mit dem Auto, mit der U-Bahn, mit der S-Bahn.",
+      "A piedi si dice zu Fuß: Ich gehe zu Fuß. Con un mezzo si usa fahren: Ich fahre mit dem Fahrrad zur Arbeit.",
+      "Comprare un biglietto: Eine Fahrkarte nach München, bitte. Einfach oder hin und zurück? (solo andata o andata e ritorno?)"
+     ],
+     "q": "Come vai al lavoro, a scuola o a fare la spesa? Rispondi con ich fahre mit dem... o ich gehe zu Fuß.",
+     "c": "Scrivi come si spostano ogni giorno tre persone che conosci, con mit dem, mit der e zu Fuß."
+    },
+    "pt": {
+     "t": "Os transportes",
+     "g": "Falar de como te deslocas e comprar um bilhete.",
+     "p": [
+      "Para os transportes usa-se mit + dativo: mit dem Bus, mit dem Zug, mit dem Auto, mit der U-Bahn, mit der S-Bahn.",
+      "A pé é zu Fuß: Ich gehe zu Fuß. Com veículo usa-se fahren: Ich fahre mit dem Fahrrad zur Arbeit.",
+      "Comprar um bilhete: Eine Fahrkarte nach München, bitte. Einfach oder hin und zurück? (só ida ou ida e volta?)"
+     ],
+     "q": "Como vais para o trabalho, para as aulas ou às compras? Responde com ich fahre mit dem... ou ich gehe zu Fuß.",
+     "c": "Escreve como três pessoas que conheces se deslocam todos os dias, com mit dem, mit der e zu Fuß."
+    },
+    "pt_BR": {
+     "t": "Transporte",
+     "g": "Falar de como você se desloca e comprar uma passagem.",
+     "p": [
+      "Para transporte use mit + dativo: mit dem Bus, mit dem Zug, mit dem Auto, mit der U-Bahn, mit der S-Bahn.",
+      "A pé é zu Fuß: Ich gehe zu Fuß. Com veículo use fahren: Ich fahre mit dem Fahrrad zur Arbeit.",
+      "Comprar uma passagem: Eine Fahrkarte nach München, bitte. Einfach oder hin und zurück? (só ida ou ida e volta?)"
+     ],
+     "q": "Como você vai para o trabalho, para a aula ou ao mercado? Responda com ich fahre mit dem... ou ich gehe zu Fuß.",
+     "c": "Escreva como três pessoas que você conhece se deslocam todo dia, com mit dem, mit der e zu Fuß."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Bus",
+      "ex": "Ich fahre mit dem Bus."
+     },
+     {
+      "w": "die U-Bahn",
+      "ex": "Wir fahren mit der U-Bahn."
+     },
+     {
+      "w": "zu Fuß",
+      "ex": "Ich gehe gern zu Fuß."
+     },
+     {
+      "w": "die Fahrkarte",
+      "ex": "Eine Fahrkarte nach Köln, bitte."
+     },
+     {
+      "w": "hin und zurück",
+      "ex": "Einmal hin und zurück, bitte."
+     },
+     {
+      "w": "die Haltestelle",
+      "ex": "Wo ist die Haltestelle?"
+     }
+    ],
+    "gram": "mit + Dativ: mit dem Bus/Zug/Auto, mit der U-Bahn/Straßenbahn. Ohne Fahrzeug: zu Fuß gehen. Ich fahre nach Berlin."
+   }
+  },
+  {
+   "d": 43,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The weather",
+     "g": "Talk about the weather in German.",
+     "p": [
+      "Many weather phrases start with es: Es ist sonnig, es ist warm, es ist kalt, es ist windig.",
+      "Weather verbs also use es: es regnet (it rains), es schneit (it snows), es donnert (it thunders).",
+      "Ask Wie ist das Wetter? and talk about temperature: Es sind 25 Grad. Die Sonne scheint."
+     ],
+     "q": "Wie ist das Wetter heute bei dir? Describe it in two or three German sentences.",
+     "c": "Check the weather forecast today and describe the next three days aloud in German."
+    },
+    "de": {
+     "t": "Das Wetter",
+     "g": "Du sprichst auf Deutsch über das Wetter.",
+     "p": [
+      "Viele Wetterausdrücke beginnen mit es: Es ist sonnig, es ist warm, es ist kalt, es ist windig.",
+      "Auch Wetterverben benutzen es: es regnet, es schneit, es donnert.",
+      "Frag: Wie ist das Wetter? Temperatur: Es sind 25 Grad. Die Sonne scheint."
+     ],
+     "q": "Wie ist das Wetter heute bei dir? Beschreib es in zwei oder drei Sätzen auf Deutsch.",
+     "c": "Schau dir heute den Wetterbericht an und beschreib die nächsten drei Tage laut auf Deutsch."
+    },
+    "es": {
+     "t": "El tiempo",
+     "g": "Habla del tiempo en alemán.",
+     "p": [
+      "Muchas expresiones empiezan con es: Es ist sonnig (hace sol), es ist warm, es ist kalt, es ist windig.",
+      "Los verbos del tiempo también usan es: es regnet (llueve), es schneit (nieva), es donnert (truena).",
+      "Pregunta Wie ist das Wetter? y habla de la temperatura: Es sind 25 Grad. Die Sonne scheint."
+     ],
+     "q": "¿Wie ist das Wetter hoy donde estás? Descríbelo en dos o tres frases en alemán.",
+     "c": "Mira hoy el pronóstico y describe en voz alta en alemán el tiempo de los próximos tres días."
+    },
+    "fr": {
+     "t": "La météo",
+     "g": "Parler du temps qu'il fait en allemand.",
+     "p": [
+      "Beaucoup d'expressions commencent par es : Es ist sonnig, es ist warm, es ist kalt, es ist windig.",
+      "Les verbes météo utilisent aussi es : es regnet (il pleut), es schneit (il neige), es donnert (il tonne).",
+      "Demande Wie ist das Wetter ? et parle de la température : Es sind 25 Grad. Die Sonne scheint."
+     ],
+     "q": "Wie ist das Wetter aujourd'hui chez toi ? Décris-le en deux ou trois phrases en allemand.",
+     "c": "Regarde la météo aujourd'hui et décris à voix haute en allemand les trois prochains jours."
+    },
+    "it": {
+     "t": "Il tempo",
+     "g": "Parli del tempo in tedesco.",
+     "p": [
+      "Molte espressioni cominciano con es: Es ist sonnig, es ist warm, es ist kalt, es ist windig.",
+      "Anche i verbi del tempo usano es: es regnet (piove), es schneit (nevica), es donnert (tuona).",
+      "Chiedi Wie ist das Wetter? e parla della temperatura: Es sind 25 Grad. Die Sonne scheint."
+     ],
+     "q": "Wie ist das Wetter oggi da te? Descrivilo in due o tre frasi in tedesco.",
+     "c": "Guarda le previsioni oggi e descrivi ad alta voce in tedesco i prossimi tre giorni."
+    },
+    "pt": {
+     "t": "O tempo",
+     "g": "Falar do tempo em alemão.",
+     "p": [
+      "Muitas expressões começam com es: Es ist sonnig, es ist warm, es ist kalt, es ist windig.",
+      "Os verbos do tempo também usam es: es regnet (chove), es schneit (neva), es donnert (troveja).",
+      "Pergunta Wie ist das Wetter? e fala da temperatura: Es sind 25 Grad. Die Sonne scheint."
+     ],
+     "q": "Wie ist das Wetter hoje aí? Descreve-o em duas ou três frases em alemão.",
+     "c": "Vê hoje a previsão do tempo e descreve em voz alta em alemão os próximos três dias."
+    },
+    "pt_BR": {
+     "t": "O tempo",
+     "g": "Falar do tempo em alemão.",
+     "p": [
+      "Muitas expressões começam com es: Es ist sonnig, es ist warm, es ist kalt, es ist windig.",
+      "Os verbos do tempo também usam es: es regnet (chove), es schneit (neva), es donnert (troveja).",
+      "Pergunte Wie ist das Wetter? e fale da temperatura: Es sind 25 Grad. Die Sonne scheint."
+     ],
+     "q": "Wie ist das Wetter hoje aí? Descreva em duas ou três frases em alemão.",
+     "c": "Veja hoje a previsão do tempo e descreva em voz alta em alemão os próximos três dias."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Wetter",
+      "ex": "Wie ist das Wetter heute?"
+     },
+     {
+      "w": "sonnig",
+      "ex": "Heute ist es sonnig."
+     },
+     {
+      "w": "es regnet",
+      "ex": "Es regnet schon den ganzen Tag."
+     },
+     {
+      "w": "es schneit",
+      "ex": "Im Dezember schneit es oft."
+     },
+     {
+      "w": "kalt",
+      "ex": "Im Winter ist es sehr kalt."
+     },
+     {
+      "w": "der Grad",
+      "ex": "Es sind zwanzig Grad."
+     }
+    ],
+    "gram": "Wetter mit es: Es ist warm/kalt/windig. Es regnet. Es schneit. Temperatur: Es sind 18 Grad. Die Sonne scheint."
+   }
+  },
+  {
+   "d": 44,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hobbies and free time",
+     "g": "Talk about your hobbies and what you do in your free time.",
+     "p": [
+      "Popular activities: lesen, schwimmen, wandern (hiking), Musik hören, kochen, tanzen and Freunde treffen.",
+      "Ask Was machst du in deiner Freizeit? or Was ist dein Hobby? and answer with gern: Ich wandere gern.",
+      "Add how often: oft, manchmal (sometimes), jeden Tag, am Wochenende: Am Wochenende treffe ich Freunde."
+     ],
+     "q": "Was machst du in deiner Freizeit? Tell me two hobbies and how often you do them.",
+     "c": "Write a short text about your free time with three hobbies, gern and one time word at the start."
+    },
+    "de": {
+     "t": "Hobbys und Freizeit",
+     "g": "Du sprichst über deine Hobbys und deine Freizeit.",
+     "p": [
+      "Beliebte Aktivitäten: lesen, schwimmen, wandern, Musik hören, kochen, tanzen und Freunde treffen.",
+      "Frag: Was machst du in deiner Freizeit? oder Was ist dein Hobby? Antworte mit gern: Ich wandere gern.",
+      "Sag, wie oft: oft, manchmal, jeden Tag, am Wochenende: Am Wochenende treffe ich Freunde."
+     ],
+     "q": "Was machst du in deiner Freizeit? Nenn mir zwei Hobbys und wie oft du sie machst.",
+     "c": "Schreib einen kurzen Text über deine Freizeit mit drei Hobbys, gern und einem Zeitwort am Anfang."
+    },
+    "es": {
+     "t": "Aficiones y tiempo libre",
+     "g": "Habla de tus aficiones y de lo que haces en tu tiempo libre.",
+     "p": [
+      "Actividades típicas: lesen, schwimmen, wandern (hacer senderismo), Musik hören, kochen, tanzen y Freunde treffen.",
+      "Pregunta Was machst du in deiner Freizeit? o Was ist dein Hobby? y responde con gern: Ich wandere gern.",
+      "Añade la frecuencia: oft, manchmal (a veces), jeden Tag, am Wochenende: Am Wochenende treffe ich Freunde."
+     ],
+     "q": "¿Was machst du in deiner Freizeit? Dime dos aficiones y con qué frecuencia las haces.",
+     "c": "Escribe un texto corto sobre tu tiempo libre con tres aficiones, gern y una palabra de tiempo al principio."
+    },
+    "fr": {
+     "t": "Loisirs et temps libre",
+     "g": "Parler de tes loisirs et de ton temps libre.",
+     "p": [
+      "Activités courantes : lesen, schwimmen, wandern (randonner), Musik hören, kochen, tanzen et Freunde treffen.",
+      "Demande Was machst du in deiner Freizeit ? ou Was ist dein Hobby ? et réponds avec gern : Ich wandere gern.",
+      "Précise la fréquence : oft, manchmal (parfois), jeden Tag, am Wochenende : Am Wochenende treffe ich Freunde."
+     ],
+     "q": "Was machst du in deiner Freizeit ? Dis-moi deux loisirs et à quelle fréquence tu les pratiques.",
+     "c": "Écris un court texte sur ton temps libre avec trois loisirs, gern et un mot de temps en tête."
+    },
+    "it": {
+     "t": "Hobby e tempo libero",
+     "g": "Parli dei tuoi hobby e di che cosa fai nel tempo libero.",
+     "p": [
+      "Attività comuni: lesen, schwimmen, wandern (fare escursioni), Musik hören, kochen, tanzen e Freunde treffen.",
+      "Chiedi Was machst du in deiner Freizeit? o Was ist dein Hobby? e rispondi con gern: Ich wandere gern.",
+      "Aggiungi la frequenza: oft, manchmal (a volte), jeden Tag, am Wochenende: Am Wochenende treffe ich Freunde."
+     ],
+     "q": "Was machst du in deiner Freizeit? Dimmi due hobby e quanto spesso li fai.",
+     "c": "Scrivi un breve testo sul tuo tempo libero con tre hobby, gern e una parola di tempo all'inizio."
+    },
+    "pt": {
+     "t": "Passatempos e tempo livre",
+     "g": "Falar dos teus passatempos e do que fazes no tempo livre.",
+     "p": [
+      "Atividades comuns: lesen, schwimmen, wandern (fazer caminhadas), Musik hören, kochen, tanzen e Freunde treffen.",
+      "Pergunta Was machst du in deiner Freizeit? ou Was ist dein Hobby? e responde com gern: Ich wandere gern.",
+      "Junta a frequência: oft, manchmal (às vezes), jeden Tag, am Wochenende: Am Wochenende treffe ich Freunde."
+     ],
+     "q": "Was machst du in deiner Freizeit? Diz-me dois passatempos e com que frequência os fazes.",
+     "c": "Escreve um pequeno texto sobre o teu tempo livre com três passatempos, gern e uma palavra de tempo no início."
+    },
+    "pt_BR": {
+     "t": "Hobbies e tempo livre",
+     "g": "Falar dos seus hobbies e do que você faz no tempo livre.",
+     "p": [
+      "Atividades comuns: lesen, schwimmen, wandern (fazer trilha), Musik hören, kochen, tanzen e Freunde treffen.",
+      "Pergunte Was machst du in deiner Freizeit? ou Was ist dein Hobby? e responda com gern: Ich wandere gern.",
+      "Acrescente a frequência: oft, manchmal (às vezes), jeden Tag, am Wochenende: Am Wochenende treffe ich Freunde."
+     ],
+     "q": "Was machst du in deiner Freizeit? Me diga dois hobbies e com que frequência você faz cada um.",
+     "c": "Escreva um textinho sobre seu tempo livre com três hobbies, gern e uma palavra de tempo no começo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Freizeit",
+      "ex": "Was machst du in deiner Freizeit?"
+     },
+     {
+      "w": "wandern",
+      "ex": "Am Sonntag wandern wir in den Bergen."
+     },
+     {
+      "w": "schwimmen",
+      "ex": "Ich schwimme gern im See."
+     },
+     {
+      "w": "Musik hören",
+      "ex": "Abends höre ich Musik."
+     },
+     {
+      "w": "Freunde treffen",
+      "ex": "Am Wochenende treffe ich Freunde."
+     },
+     {
+      "w": "manchmal",
+      "ex": "Manchmal koche ich für meine Familie."
+     }
+    ],
+    "gram": "Hobbys mit gern: Ich lese gern. Häufigkeit: immer, oft, manchmal, nie. Zeit vorn, Verb auf Position 2: Abends lese ich."
+   }
+  },
+  {
+   "d": 45,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Separable verbs",
+     "g": "Use separable verbs, whose prefix jumps to the end of the sentence.",
+     "p": [
+      "Verbs like aufstehen, einkaufen, fernsehen and anrufen split in the present: Ich stehe um sieben Uhr auf.",
+      "The verb part stays in position 2 and the prefix goes to the very end: Ich kaufe heute im Supermarkt ein.",
+      "In the dictionary they appear joined, and the stress is on the prefix: AUFstehen, EINkaufen, FERNsehen."
+     ],
+     "q": "What time do you get up on a weekday? Answer with ich stehe um... auf.",
+     "c": "Write five sentences about your day with aufstehen, einkaufen, fernsehen, anrufen and mitkommen."
+    },
+    "de": {
+     "t": "Trennbare Verben",
+     "g": "Du benutzt trennbare Verben, deren Vorsilbe ans Satzende springt.",
+     "p": [
+      "Verben wie aufstehen, einkaufen, fernsehen und anrufen trennen sich im Präsens: Ich stehe um sieben Uhr auf.",
+      "Der Verbteil bleibt auf Position 2, die Vorsilbe geht ganz ans Ende: Ich kaufe heute im Supermarkt ein.",
+      "Im Wörterbuch stehen sie zusammen, betont wird die Vorsilbe: AUFstehen, EINkaufen, FERNsehen."
+     ],
+     "q": "Um wie viel Uhr stehst du an einem Werktag auf? Antworte mit ich stehe um... auf.",
+     "c": "Schreib fünf Sätze über deinen Tag mit aufstehen, einkaufen, fernsehen, anrufen und mitkommen."
+    },
+    "es": {
+     "t": "Verbos separables",
+     "g": "Usa los verbos separables, cuyo prefijo salta al final de la frase.",
+     "p": [
+      "Aufstehen (levantarse), einkaufen (comprar), fernsehen (ver la tele) y anrufen (llamar) se separan: Ich stehe um sieben Uhr auf.",
+      "La parte del verbo queda en posición 2 y el prefijo va al final: Ich kaufe heute im Supermarkt ein.",
+      "En el diccionario aparecen juntos, y el acento cae en el prefijo: AUFstehen, EINkaufen, FERNsehen."
+     ],
+     "q": "¿A qué hora te levantas un día laborable? Responde con ich stehe um... auf.",
+     "c": "Escribe cinco frases sobre tu día con aufstehen, einkaufen, fernsehen, anrufen y mitkommen."
+    },
+    "fr": {
+     "t": "Les verbes séparables",
+     "g": "Utiliser les verbes séparables, dont le préfixe saute en fin de phrase.",
+     "p": [
+      "Aufstehen (se lever), einkaufen (faire les courses), fernsehen (la télé) et anrufen (appeler) se séparent : Ich stehe um sieben Uhr auf.",
+      "Le verbe reste en position 2 et le préfixe va tout à la fin : Ich kaufe heute im Supermarkt ein.",
+      "Dans le dictionnaire, ils sont attachés, et l'accent tombe sur le préfixe : AUFstehen, EINkaufen, FERNsehen."
+     ],
+     "q": "À quelle heure te lèves-tu en semaine ? Réponds avec ich stehe um... auf.",
+     "c": "Écris cinq phrases sur ta journée avec aufstehen, einkaufen, fernsehen, anrufen et mitkommen."
+    },
+    "it": {
+     "t": "I verbi separabili",
+     "g": "Usi i verbi separabili, il cui prefisso salta alla fine della frase.",
+     "p": [
+      "Aufstehen (alzarsi), einkaufen (fare la spesa), fernsehen (guardare la tv) e anrufen (telefonare) si separano: Ich stehe um sieben Uhr auf.",
+      "La parte verbale resta in posizione 2 e il prefisso va alla fine: Ich kaufe heute im Supermarkt ein.",
+      "Nel dizionario sono uniti e l'accento cade sul prefisso: AUFstehen, EINkaufen, FERNsehen."
+     ],
+     "q": "A che ora ti alzi in un giorno feriale? Rispondi con ich stehe um... auf.",
+     "c": "Scrivi cinque frasi sulla tua giornata con aufstehen, einkaufen, fernsehen, anrufen e mitkommen."
+    },
+    "pt": {
+     "t": "Verbos separáveis",
+     "g": "Usar os verbos separáveis, cujo prefixo salta para o fim da frase.",
+     "p": [
+      "Aufstehen (levantar-se), einkaufen (fazer compras), fernsehen (ver televisão) e anrufen (telefonar) separam-se: Ich stehe um sieben Uhr auf.",
+      "A parte verbal fica na posição 2 e o prefixo vai para o fim: Ich kaufe heute im Supermarkt ein.",
+      "No dicionário aparecem juntos, e o acento cai no prefixo: AUFstehen, EINkaufen, FERNsehen."
+     ],
+     "q": "A que horas te levantas num dia de semana? Responde com ich stehe um... auf.",
+     "c": "Escreve cinco frases sobre o teu dia com aufstehen, einkaufen, fernsehen, anrufen e mitkommen."
+    },
+    "pt_BR": {
+     "t": "Verbos separáveis",
+     "g": "Usar os verbos separáveis, cujo prefixo pula para o fim da frase.",
+     "p": [
+      "Verbos como aufstehen (levantar), einkaufen (fazer compras), fernsehen (ver TV) e anrufen (ligar) se separam: Ich stehe um sieben Uhr auf.",
+      "A parte verbal fica na posição 2 e o prefixo vai para o fim: Ich kaufe heute im Supermarkt ein.",
+      "No dicionário eles aparecem juntos, e o acento cai no prefixo: AUFstehen, EINkaufen, FERNsehen."
+     ],
+     "q": "Que horas você se levanta num dia de semana? Responda com ich stehe um... auf.",
+     "c": "Escreva cinco frases sobre o seu dia com aufstehen, einkaufen, fernsehen, anrufen e mitkommen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aufstehen",
+      "ex": "Ich stehe um sieben Uhr auf."
+     },
+     {
+      "w": "einkaufen",
+      "ex": "Am Samstag kaufe ich ein."
+     },
+     {
+      "w": "fernsehen",
+      "ex": "Abends sieht er fern."
+     },
+     {
+      "w": "anrufen",
+      "ex": "Ich rufe dich morgen an."
+     },
+     {
+      "w": "mitkommen",
+      "ex": "Kommst du mit?"
+     },
+     {
+      "w": "anfangen",
+      "ex": "Der Kurs fängt um neun Uhr an."
+     }
+    ],
+    "gram": "Trennbare Verben: Verb auf Position 2, Vorsilbe am Ende: aufstehen → Ich stehe früh auf. anrufen → Rufst du mich an?"
+   }
+  },
+  {
+   "d": 46,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My daily routine",
+     "g": "Describe your day in German from waking up to going to bed.",
+     "p": [
+      "Morning: Ich wache auf, ich stehe auf, ich frühstücke, ich fahre zur Arbeit. Many routine verbs are separable.",
+      "Afternoon and evening: Ich esse zu Mittag, ich komme nach Hause, ich koche, ich sehe fern.",
+      "Night: Ich gehe ins Bett. Link steps with zuerst (first), dann (then), danach (after that) and später."
+     ],
+     "q": "Tell me about your morning in three German sentences, using zuerst, dann and danach.",
+     "c": "Write your whole day in six to eight German sentences with times, from aufwachen to ins Bett gehen."
+    },
+    "de": {
+     "t": "Mein Tagesablauf",
+     "g": "Du beschreibst deinen Tag auf Deutsch vom Aufwachen bis zum Schlafengehen.",
+     "p": [
+      "Morgens: Ich wache auf, ich stehe auf, ich frühstücke, ich fahre zur Arbeit. Viele Alltagsverben sind trennbar.",
+      "Mittags und abends: Ich esse zu Mittag, ich komme nach Hause, ich koche, ich sehe fern.",
+      "Nachts: Ich gehe ins Bett. Verbinde die Schritte mit zuerst, dann, danach und später."
+     ],
+     "q": "Erzähl mir in drei Sätzen auf Deutsch von deinem Morgen, mit zuerst, dann und danach.",
+     "c": "Schreib deinen ganzen Tag in sechs bis acht Sätzen mit Uhrzeiten, vom Aufwachen bis zum Schlafengehen."
+    },
+    "es": {
+     "t": "Mi rutina diaria",
+     "g": "Describe tu día en alemán, desde que te despiertas hasta que te acuestas.",
+     "p": [
+      "Por la mañana: Ich wache auf, ich stehe auf, ich frühstücke, ich fahre zur Arbeit. Muchos verbos de rutina son separables.",
+      "Tarde y noche: Ich esse zu Mittag, ich komme nach Hause, ich koche, ich sehe fern.",
+      "Para acabar: Ich gehe ins Bett. Une los pasos con zuerst (primero), dann (luego), danach (después) y später."
+     ],
+     "q": "Cuéntame tu mañana en tres frases en alemán, usando zuerst, dann y danach.",
+     "c": "Escribe tu día entero en seis a ocho frases en alemán con horas, de aufwachen a ins Bett gehen."
+    },
+    "fr": {
+     "t": "Ma routine quotidienne",
+     "g": "Décrire ta journée en allemand, du réveil au coucher.",
+     "p": [
+      "Le matin : Ich wache auf, ich stehe auf, ich frühstücke, ich fahre zur Arbeit. Beaucoup de verbes de routine sont séparables.",
+      "L'après-midi et le soir : Ich esse zu Mittag, ich komme nach Hause, ich koche, ich sehe fern.",
+      "La nuit : Ich gehe ins Bett. Relie les étapes avec zuerst (d'abord), dann (ensuite), danach (après) et später."
+     ],
+     "q": "Raconte-moi ta matinée en trois phrases en allemand, avec zuerst, dann et danach.",
+     "c": "Écris toute ta journée en six à huit phrases en allemand avec les heures, de aufwachen à ins Bett gehen."
+    },
+    "it": {
+     "t": "La mia giornata",
+     "g": "Descrivi la tua giornata in tedesco, dal risveglio a quando vai a letto.",
+     "p": [
+      "Mattina: Ich wache auf, ich stehe auf, ich frühstücke, ich fahre zur Arbeit. Molti verbi della routine sono separabili.",
+      "Pomeriggio e sera: Ich esse zu Mittag, ich komme nach Hause, ich koche, ich sehe fern.",
+      "Notte: Ich gehe ins Bett. Collega i passaggi con zuerst (prima), dann (poi), danach (dopo) e später."
+     ],
+     "q": "Raccontami la tua mattina in tre frasi in tedesco, usando zuerst, dann e danach.",
+     "c": "Scrivi tutta la tua giornata in sei-otto frasi in tedesco con gli orari, da aufwachen a ins Bett gehen."
+    },
+    "pt": {
+     "t": "A minha rotina diária",
+     "g": "Descrever o teu dia em alemão, desde que acordas até te deitares.",
+     "p": [
+      "Manhã: Ich wache auf, ich stehe auf, ich frühstücke, ich fahre zur Arbeit. Muitos verbos da rotina são separáveis.",
+      "Tarde e noite: Ich esse zu Mittag, ich komme nach Hause, ich koche, ich sehe fern.",
+      "Para terminar: Ich gehe ins Bett. Liga os passos com zuerst (primeiro), dann (depois), danach (a seguir) e später."
+     ],
+     "q": "Conta-me a tua manhã em três frases em alemão, com zuerst, dann e danach.",
+     "c": "Escreve o teu dia inteiro em seis a oito frases em alemão com horas, de aufwachen a ins Bett gehen."
+    },
+    "pt_BR": {
+     "t": "Minha rotina diária",
+     "g": "Descrever seu dia em alemão, desde acordar até ir dormir.",
+     "p": [
+      "Manhã: Ich wache auf, ich stehe auf, ich frühstücke, ich fahre zur Arbeit. Muitos verbos da rotina são separáveis.",
+      "Tarde e noite: Ich esse zu Mittag, ich komme nach Hause, ich koche, ich sehe fern.",
+      "Para fechar: Ich gehe ins Bett. Ligue os passos com zuerst (primeiro), dann (depois), danach (em seguida) e später."
+     ],
+     "q": "Me conte sua manhã em três frases em alemão, com zuerst, dann e danach.",
+     "c": "Escreva seu dia inteiro em seis a oito frases em alemão com horários, de aufwachen até ins Bett gehen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aufwachen",
+      "ex": "Ich wache um sechs Uhr auf."
+     },
+     {
+      "w": "frühstücken",
+      "ex": "Wir frühstücken zusammen."
+     },
+     {
+      "w": "zu Mittag essen",
+      "ex": "Um zwölf esse ich zu Mittag."
+     },
+     {
+      "w": "nach Hause kommen",
+      "ex": "Ich komme um fünf nach Hause."
+     },
+     {
+      "w": "ins Bett gehen",
+      "ex": "Um elf gehe ich ins Bett."
+     },
+     {
+      "w": "zuerst",
+      "ex": "Zuerst dusche ich, dann frühstücke ich."
+     }
+    ],
+    "gram": "Tagesablauf: Zuerst stehe ich auf, dann frühstücke ich, danach fahre ich zur Arbeit. Nach zuerst/dann: Verb auf Position 2."
+   }
+  },
+  {
+   "d": 47,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Time expressions",
+     "g": "Say when things happen with the right little words.",
+     "p": [
+      "Clock times use um: um acht Uhr, um halb neun. Parts of the day use am: am Morgen, am Vormittag, am Nachmittag, am Abend.",
+      "Night is the exception: in der Nacht. Days use am (am Freitag), months and seasons use im (im Juli).",
+      "Adverbs with -s mean regularly: morgens, mittags, abends, montags. Ich lerne abends Deutsch."
+     ],
+     "q": "When do you have the most energy: am Morgen, am Nachmittag or am Abend? Tell me why.",
+     "c": "Write six sentences about your week, using um, am, im, in der Nacht and one -s adverb like abends."
+    },
+    "de": {
+     "t": "Zeitangaben",
+     "g": "Du sagst mit den richtigen kleinen Wörtern, wann etwas passiert.",
+     "p": [
+      "Uhrzeiten mit um: um acht Uhr, um halb neun. Tageszeiten mit am: am Morgen, am Vormittag, am Nachmittag, am Abend.",
+      "Die Ausnahme ist die Nacht: in der Nacht. Tage mit am (am Freitag), Monate und Jahreszeiten mit im (im Juli).",
+      "Adverbien auf -s bedeuten regelmäßig: morgens, mittags, abends, montags. Ich lerne abends Deutsch."
+     ],
+     "q": "Wann hast du am meisten Energie: am Morgen, am Nachmittag oder am Abend? Warum?",
+     "c": "Schreib sechs Sätze über deine Woche mit um, am, im, in der Nacht und einem Adverb auf -s wie abends."
+    },
+    "es": {
+     "t": "Expresiones de tiempo",
+     "g": "Di cuándo pasan las cosas con las palabritas correctas.",
+     "p": [
+      "Las horas van con um: um acht Uhr, um halb neun. Las partes del día con am: am Morgen, am Vormittag, am Nachmittag, am Abend.",
+      "La noche es la excepción: in der Nacht. Los días con am (am Freitag), los meses y estaciones con im (im Juli).",
+      "Los adverbios en -s indican costumbre: morgens, mittags, abends, montags. Ich lerne abends Deutsch."
+     ],
+     "q": "¿Cuándo tienes más energía: am Morgen, am Nachmittag o am Abend? Dime por qué.",
+     "c": "Escribe seis frases sobre tu semana con um, am, im, in der Nacht y un adverbio en -s como abends."
+    },
+    "fr": {
+     "t": "Les expressions de temps",
+     "g": "Dire quand les choses se passent avec les bons petits mots.",
+     "p": [
+      "Les heures avec um : um acht Uhr, um halb neun. Les moments de la journée avec am : am Morgen, am Vormittag, am Nachmittag, am Abend.",
+      "La nuit fait exception : in der Nacht. Les jours avec am (am Freitag), les mois et saisons avec im (im Juli).",
+      "Les adverbes en -s indiquent l'habitude : morgens, mittags, abends, montags. Ich lerne abends Deutsch."
+     ],
+     "q": "Quand as-tu le plus d'énergie : am Morgen, am Nachmittag ou am Abend ? Dis-moi pourquoi.",
+     "c": "Écris six phrases sur ta semaine avec um, am, im, in der Nacht et un adverbe en -s comme abends."
+    },
+    "it": {
+     "t": "Le espressioni di tempo",
+     "g": "Dici quando succedono le cose con le paroline giuste.",
+     "p": [
+      "Gli orari con um: um acht Uhr, um halb neun. Le parti del giorno con am: am Morgen, am Vormittag, am Nachmittag, am Abend.",
+      "La notte è l'eccezione: in der Nacht. I giorni con am (am Freitag), mesi e stagioni con im (im Juli).",
+      "Gli avverbi in -s indicano abitudine: morgens, mittags, abends, montags. Ich lerne abends Deutsch."
+     ],
+     "q": "Quando hai più energia: am Morgen, am Nachmittag o am Abend? Dimmi perché.",
+     "c": "Scrivi sei frasi sulla tua settimana con um, am, im, in der Nacht e un avverbio in -s come abends."
+    },
+    "pt": {
+     "t": "Expressões de tempo",
+     "g": "Dizer quando as coisas acontecem com as palavrinhas certas.",
+     "p": [
+      "As horas levam um: um acht Uhr, um halb neun. As partes do dia levam am: am Morgen, am Vormittag, am Nachmittag, am Abend.",
+      "A noite é a exceção: in der Nacht. Os dias levam am (am Freitag), os meses e estações im (im Juli).",
+      "Os advérbios em -s indicam hábito: morgens, mittags, abends, montags. Ich lerne abends Deutsch."
+     ],
+     "q": "Quando tens mais energia: am Morgen, am Nachmittag ou am Abend? Diz-me porquê.",
+     "c": "Escreve seis frases sobre a tua semana com um, am, im, in der Nacht e um advérbio em -s como abends."
+    },
+    "pt_BR": {
+     "t": "Expressões de tempo",
+     "g": "Dizer quando as coisas acontecem com as palavrinhas certas.",
+     "p": [
+      "As horas levam um: um acht Uhr, um halb neun. As partes do dia levam am: am Morgen, am Vormittag, am Nachmittag, am Abend.",
+      "A noite é a exceção: in der Nacht. Os dias levam am (am Freitag), os meses e estações im (im Juli).",
+      "Os advérbios em -s indicam hábito: morgens, mittags, abends, montags. Ich lerne abends Deutsch."
+     ],
+     "q": "Quando você tem mais energia: am Morgen, am Nachmittag ou am Abend? Me diga por quê.",
+     "c": "Escreva seis frases sobre sua semana com um, am, im, in der Nacht e um advérbio em -s como abends."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "um acht Uhr",
+      "ex": "Der Unterricht beginnt um acht Uhr."
+     },
+     {
+      "w": "am Morgen",
+      "ex": "Am Morgen trinke ich Kaffee."
+     },
+     {
+      "w": "am Nachmittag",
+      "ex": "Am Nachmittag gehe ich spazieren."
+     },
+     {
+      "w": "in der Nacht",
+      "ex": "In der Nacht ist es ruhig."
+     },
+     {
+      "w": "abends",
+      "ex": "Abends lese ich ein Buch."
+     },
+     {
+      "w": "jeden Tag",
+      "ex": "Ich lerne jeden Tag Deutsch."
+     }
+    ],
+    "gram": "um + Uhrzeit, am + Tag/Tageszeit (am Abend), aber in der Nacht; im + Monat/Jahreszeit. morgens, abends = regelmäßig."
+   }
+  },
+  {
+   "d": 48,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Modal verbs: können",
+     "g": "Say what you can do with können and put the main verb at the end.",
+     "p": [
+      "Können is irregular in the singular: ich kann, du kannst, er kann, wir können, ihr könnt, sie/Sie können.",
+      "Modal verb in position 2, the main verb in the infinitive at the very end: Ich kann gut schwimmen.",
+      "Können also asks for favours and possibilities: Kannst du mir helfen? Hier kann man gut essen."
+     ],
+     "q": "What can you do well, and what can you not do at all? Tell me with ich kann... and ich kann nicht...",
+     "c": "Write five sentences about skills, two with kann, two with kann nicht and one question with kannst du."
+    },
+    "de": {
+     "t": "Modalverben: können",
+     "g": "Du sagst mit können, was du kannst, und stellst das Hauptverb ans Ende.",
+     "p": [
+      "Können ist im Singular unregelmäßig: ich kann, du kannst, er kann, wir können, ihr könnt, sie/Sie können.",
+      "Das Modalverb steht auf Position 2, das Hauptverb im Infinitiv ganz am Ende: Ich kann gut schwimmen.",
+      "Mit können fragst du auch nach Hilfe und Möglichkeiten: Kannst du mir helfen? Hier kann man gut essen."
+     ],
+     "q": "Was kannst du gut, und was kannst du gar nicht? Sag es mit ich kann... und ich kann nicht...",
+     "c": "Schreib fünf Sätze über Fähigkeiten: zwei mit kann, zwei mit kann nicht und eine Frage mit kannst du."
+    },
+    "es": {
+     "t": "Verbos modales: können",
+     "g": "Di lo que sabes o puedes hacer con können y pon el verbo principal al final.",
+     "p": [
+      "Können es irregular en singular: ich kann, du kannst, er kann, wir können, ihr könnt, sie/Sie können.",
+      "El modal va en posición 2 y el verbo principal en infinitivo al final: Ich kann gut schwimmen.",
+      "Können también sirve para pedir favores y hablar de posibilidades: Kannst du mir helfen? Hier kann man gut essen."
+     ],
+     "q": "¿Qué sabes hacer bien y qué no sabes hacer nada? Dímelo con ich kann... e ich kann nicht...",
+     "c": "Escribe cinco frases sobre habilidades: dos con kann, dos con kann nicht y una pregunta con kannst du."
+    },
+    "fr": {
+     "t": "Les verbes de modalité : können",
+     "g": "Dire ce que tu sais ou peux faire avec können, le verbe principal à la fin.",
+     "p": [
+      "Können est irrégulier au singulier : ich kann, du kannst, er kann, wir können, ihr könnt, sie/Sie können.",
+      "Le modal est en position 2, le verbe principal à l'infinitif tout à la fin : Ich kann gut schwimmen.",
+      "Können sert aussi à demander un service ou une possibilité : Kannst du mir helfen ? Hier kann man gut essen."
+     ],
+     "q": "Que sais-tu bien faire, et que ne sais-tu pas faire du tout ? Dis-le avec ich kann... et ich kann nicht...",
+     "c": "Écris cinq phrases sur tes capacités : deux avec kann, deux avec kann nicht et une question avec kannst du."
+    },
+    "it": {
+     "t": "Verbi modali: können",
+     "g": "Dici che cosa sai o puoi fare con können e metti il verbo principale alla fine.",
+     "p": [
+      "Können è irregolare al singolare: ich kann, du kannst, er kann, wir können, ihr könnt, sie/Sie können.",
+      "Il modale sta in posizione 2, il verbo principale all'infinito alla fine: Ich kann gut schwimmen.",
+      "Können serve anche per chiedere favori e possibilità: Kannst du mir helfen? Hier kann man gut essen."
+     ],
+     "q": "Che cosa sai fare bene e che cosa non sai fare per niente? Dimmelo con ich kann... e ich kann nicht...",
+     "c": "Scrivi cinque frasi sulle abilità: due con kann, due con kann nicht e una domanda con kannst du."
+    },
+    "pt": {
+     "t": "Verbos modais: können",
+     "g": "Dizer o que sabes ou podes fazer com können e pôr o verbo principal no fim.",
+     "p": [
+      "Können é irregular no singular: ich kann, du kannst, er kann, wir können, ihr könnt, sie/Sie können.",
+      "O modal fica na posição 2 e o verbo principal no infinitivo, no fim: Ich kann gut schwimmen.",
+      "Können também serve para pedir favores e falar de possibilidades: Kannst du mir helfen? Hier kann man gut essen."
+     ],
+     "q": "O que sabes fazer bem, e o que não sabes fazer de todo? Diz-me com ich kann... e ich kann nicht...",
+     "c": "Escreve cinco frases sobre capacidades: duas com kann, duas com kann nicht e uma pergunta com kannst du."
+    },
+    "pt_BR": {
+     "t": "Verbos modais: können",
+     "g": "Dizer o que você sabe ou pode fazer com können e colocar o verbo principal no fim.",
+     "p": [
+      "Können é irregular no singular: ich kann, du kannst, er kann, wir können, ihr könnt, sie/Sie können.",
+      "O modal fica na posição 2 e o verbo principal no infinitivo, no final: Ich kann gut schwimmen.",
+      "Können também serve para pedir favores e falar de possibilidades: Kannst du mir helfen? Hier kann man gut essen."
+     ],
+     "q": "O que você sabe fazer bem, e o que não sabe fazer de jeito nenhum? Me diga com ich kann... e ich kann nicht...",
+     "c": "Escreva cinco frases sobre habilidades: duas com kann, duas com kann nicht e uma pergunta com kannst du."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "können",
+      "ex": "Wir können morgen kommen."
+     },
+     {
+      "w": "ich kann",
+      "ex": "Ich kann gut kochen."
+     },
+     {
+      "w": "kannst du",
+      "ex": "Kannst du mir helfen?"
+     },
+     {
+      "w": "Auto fahren",
+      "ex": "Sie kann noch nicht Auto fahren."
+     },
+     {
+      "w": "Gitarre spielen",
+      "ex": "Mein Bruder kann Gitarre spielen."
+     },
+     {
+      "w": "man kann",
+      "ex": "Hier kann man gut essen."
+     }
+    ],
+    "gram": "können: ich kann, du kannst, er kann, wir können, ihr könnt, sie können. Modalverb Position 2, Infinitiv am Ende: Ich kann schwimmen."
+   }
+  },
+  {
+   "d": 49,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Modal verbs: müssen, wollen",
+     "g": "Talk about obligations with müssen and wishes or plans with wollen.",
+     "p": [
+      "Müssen (have to): ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. Ich muss heute arbeiten.",
+      "Wollen (want to): ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Ich will nach Japan reisen.",
+      "Both follow the modal pattern, infinitive at the end. Careful: ich will means I want, not I will!"
+     ],
+     "q": "What do you have to do this week, and what do you really want to do? Use muss and will.",
+     "c": "Write a to-do list of three things with ich muss... and a wish list of three things with ich will..."
+    },
+    "de": {
+     "t": "Modalverben: müssen, wollen",
+     "g": "Du sprichst mit müssen über Pflichten und mit wollen über Wünsche und Pläne.",
+     "p": [
+      "Müssen: ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. Ich muss heute arbeiten.",
+      "Wollen: ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Ich will nach Japan reisen.",
+      "Beide folgen dem Modalverb-Muster mit dem Infinitiv am Ende. Ich will drückt einen klaren Wunsch aus."
+     ],
+     "q": "Was musst du diese Woche machen, und was willst du unbedingt machen? Benutze muss und will.",
+     "c": "Schreib eine To-do-Liste mit drei Sätzen mit ich muss... und eine Wunschliste mit drei Sätzen mit ich will..."
+    },
+    "es": {
+     "t": "Verbos modales: müssen, wollen",
+     "g": "Habla de obligaciones con müssen y de deseos o planes con wollen.",
+     "p": [
+      "Müssen (tener que): ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. Ich muss heute arbeiten.",
+      "Wollen (querer): ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Ich will nach Japan reisen.",
+      "Ambos siguen el patrón modal, con el infinitivo al final. Ich will expresa un deseo claro y directo."
+     ],
+     "q": "¿Qué tienes que hacer esta semana y qué quieres hacer de verdad? Usa muss y will.",
+     "c": "Escribe una lista de tareas con tres frases con ich muss... y una lista de deseos con tres frases con ich will..."
+    },
+    "fr": {
+     "t": "Les verbes de modalité : müssen, wollen",
+     "g": "Parler d'obligations avec müssen et d'envies ou de projets avec wollen.",
+     "p": [
+      "Müssen (devoir) : ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. Ich muss heute arbeiten.",
+      "Wollen (vouloir) : ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Ich will nach Japan reisen.",
+      "Les deux suivent le modèle des modaux, infinitif à la fin. Ich will exprime une volonté nette."
+     ],
+     "q": "Que dois-tu faire cette semaine, et que veux-tu vraiment faire ? Utilise muss et will.",
+     "c": "Écris une liste de trois choses à faire avec ich muss... et une liste de trois envies avec ich will..."
+    },
+    "it": {
+     "t": "Verbi modali: müssen, wollen",
+     "g": "Parli di obblighi con müssen e di desideri o progetti con wollen.",
+     "p": [
+      "Müssen (dovere): ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. Ich muss heute arbeiten.",
+      "Wollen (volere): ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Ich will nach Japan reisen.",
+      "Entrambi seguono lo schema dei modali, con l'infinito alla fine. Ich will esprime una volontà decisa."
+     ],
+     "q": "Che cosa devi fare questa settimana, e che cosa vuoi fare davvero? Usa muss e will.",
+     "c": "Scrivi una lista di tre cose da fare con ich muss... e una lista di tre desideri con ich will..."
+    },
+    "pt": {
+     "t": "Verbos modais: müssen, wollen",
+     "g": "Falar de obrigações com müssen e de desejos ou planos com wollen.",
+     "p": [
+      "Müssen (ter de): ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. Ich muss heute arbeiten.",
+      "Wollen (querer): ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Ich will nach Japan reisen.",
+      "Ambos seguem o padrão modal, com o infinitivo no fim. Ich will exprime uma vontade clara."
+     ],
+     "q": "O que tens de fazer esta semana, e o que queres mesmo fazer? Usa muss e will.",
+     "c": "Escreve uma lista de três tarefas com ich muss... e uma lista de três desejos com ich will..."
+    },
+    "pt_BR": {
+     "t": "Verbos modais: müssen, wollen",
+     "g": "Falar de obrigações com müssen e de desejos ou planos com wollen.",
+     "p": [
+      "Müssen (ter que): ich muss, du musst, er muss, wir müssen, ihr müsst, sie müssen. Ich muss heute arbeiten.",
+      "Wollen (querer): ich will, du willst, er will, wir wollen, ihr wollt, sie wollen. Ich will nach Japan reisen.",
+      "Os dois seguem o padrão modal, com o infinitivo no fim. Ich will expressa uma vontade clara."
+     ],
+     "q": "O que você tem que fazer esta semana, e o que você quer muito fazer? Use muss e will.",
+     "c": "Escreva uma lista de três tarefas com ich muss... e uma lista de três desejos com ich will..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "müssen",
+      "ex": "Wir müssen jetzt gehen."
+     },
+     {
+      "w": "ich muss",
+      "ex": "Ich muss heute lange arbeiten."
+     },
+     {
+      "w": "wollen",
+      "ex": "Wollt ihr ins Kino gehen?"
+     },
+     {
+      "w": "ich will",
+      "ex": "Ich will im Sommer nach Italien reisen."
+     },
+     {
+      "w": "reisen",
+      "ex": "Sie will um die Welt reisen."
+     },
+     {
+      "w": "aufräumen",
+      "ex": "Du musst dein Zimmer aufräumen."
+     }
+    ],
+    "gram": "müssen: ich muss, du musst, er muss. wollen: ich will, du willst, er will. Infinitiv am Ende: Ich muss heute einkaufen."
+   }
+  },
+  {
+   "d": 50,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Modal verbs: dürfen, sollen",
+     "g": "Talk about permission and rules with dürfen and advice or instructions with sollen.",
+     "p": [
+      "Dürfen (may, be allowed): ich darf, du darfst, er darf, wir dürfen. Hier darf man parken. Darf ich hier sitzen?",
+      "Nicht dürfen means must not: Hier darf man nicht schwimmen. It is stronger than nicht müssen (do not need to).",
+      "Sollen (should, be supposed to) passes on advice or tasks: Der Arzt sagt, ich soll mehr schlafen. Soll ich das Fenster öffnen?"
+     ],
+     "q": "What are you allowed and not allowed to do at your workplace or school? Use darf and darf nicht.",
+     "c": "Write three rules for a library or a park with man darf / man darf nicht, and one piece of advice with soll."
+    },
+    "de": {
+     "t": "Modalverben: dürfen, sollen",
+     "g": "Du sprichst mit dürfen über Erlaubnis und Regeln und mit sollen über Ratschläge und Aufträge.",
+     "p": [
+      "Dürfen: ich darf, du darfst, er darf, wir dürfen. Hier darf man parken. Darf ich hier sitzen?",
+      "Nicht dürfen ist ein Verbot: Hier darf man nicht schwimmen. Das ist stärker als nicht müssen.",
+      "Sollen gibt Ratschläge oder Aufträge weiter: Der Arzt sagt, ich soll mehr schlafen. Soll ich das Fenster öffnen?"
+     ],
+     "q": "Was darfst du an deinem Arbeitsplatz oder in der Schule und was nicht? Benutze darf und darf nicht.",
+     "c": "Schreib drei Regeln für eine Bibliothek oder einen Park mit man darf / man darf nicht und einen Rat mit soll."
+    },
+    "es": {
+     "t": "Verbos modales: dürfen, sollen",
+     "g": "Habla de permisos y normas con dürfen y de consejos o encargos con sollen.",
+     "p": [
+      "Dürfen (poder, tener permiso): ich darf, du darfst, er darf, wir dürfen. Hier darf man parken. Darf ich hier sitzen?",
+      "Nicht dürfen es una prohibición: Hier darf man nicht schwimmen. Es más fuerte que nicht müssen (no hace falta).",
+      "Sollen (deber, tener que según otro) transmite consejos o encargos: Der Arzt sagt, ich soll mehr schlafen. Soll ich das Fenster öffnen?"
+     ],
+     "q": "¿Qué puedes y qué no puedes hacer en tu trabajo o en clase? Usa darf y darf nicht.",
+     "c": "Escribe tres normas para una biblioteca o un parque con man darf / man darf nicht y un consejo con soll."
+    },
+    "fr": {
+     "t": "Les verbes de modalité : dürfen, sollen",
+     "g": "Parler d'autorisations et de règles avec dürfen, de conseils et de consignes avec sollen.",
+     "p": [
+      "Dürfen (avoir le droit) : ich darf, du darfst, er darf, wir dürfen. Hier darf man parken. Darf ich hier sitzen ?",
+      "Nicht dürfen exprime une interdiction : Hier darf man nicht schwimmen. C'est plus fort que nicht müssen (ne pas être obligé).",
+      "Sollen (être censé, devoir selon quelqu'un) transmet un conseil ou une consigne : Der Arzt sagt, ich soll mehr schlafen."
+     ],
+     "q": "Qu'as-tu le droit et pas le droit de faire au travail ou à l'école ? Utilise darf et darf nicht.",
+     "c": "Écris trois règles pour une bibliothèque ou un parc avec man darf / man darf nicht, et un conseil avec soll."
+    },
+    "it": {
+     "t": "Verbi modali: dürfen, sollen",
+     "g": "Parli di permessi e regole con dürfen e di consigli o incarichi con sollen.",
+     "p": [
+      "Dürfen (potere, avere il permesso): ich darf, du darfst, er darf, wir dürfen. Hier darf man parken. Darf ich hier sitzen?",
+      "Nicht dürfen è un divieto: Hier darf man nicht schwimmen. È più forte di nicht müssen (non essere obbligato).",
+      "Sollen (dovere secondo qualcuno) riporta consigli o incarichi: Der Arzt sagt, ich soll mehr schlafen. Soll ich das Fenster öffnen?"
+     ],
+     "q": "Che cosa puoi e non puoi fare al lavoro o a scuola? Usa darf e darf nicht.",
+     "c": "Scrivi tre regole per una biblioteca o un parco con man darf / man darf nicht e un consiglio con soll."
+    },
+    "pt": {
+     "t": "Verbos modais: dürfen, sollen",
+     "g": "Falar de autorizações e regras com dürfen e de conselhos ou tarefas com sollen.",
+     "p": [
+      "Dürfen (poder, ter autorização): ich darf, du darfst, er darf, wir dürfen. Hier darf man parken. Darf ich hier sitzen?",
+      "Nicht dürfen é uma proibição: Hier darf man nicht schwimmen. É mais forte do que nicht müssen (não ser preciso).",
+      "Sollen (dever, segundo alguém) transmite conselhos ou tarefas: Der Arzt sagt, ich soll mehr schlafen. Soll ich das Fenster öffnen?"
+     ],
+     "q": "O que podes e não podes fazer no trabalho ou na escola? Usa darf e darf nicht.",
+     "c": "Escreve três regras para uma biblioteca ou um parque com man darf / man darf nicht e um conselho com soll."
+    },
+    "pt_BR": {
+     "t": "Verbos modais: dürfen, sollen",
+     "g": "Falar de permissões e regras com dürfen e de conselhos ou tarefas com sollen.",
+     "p": [
+      "Dürfen (poder, ter permissão): ich darf, du darfst, er darf, wir dürfen. Hier darf man parken. Darf ich hier sitzen?",
+      "Nicht dürfen é uma proibição: Hier darf man nicht schwimmen. É mais forte que nicht müssen (não precisar).",
+      "Sollen (dever, segundo alguém) passa conselhos ou tarefas: Der Arzt sagt, ich soll mehr schlafen. Soll ich das Fenster öffnen?"
+     ],
+     "q": "O que você pode e não pode fazer no trabalho ou na escola? Use darf e darf nicht.",
+     "c": "Escreva três regras para uma biblioteca ou um parque com man darf / man darf nicht e um conselho com soll."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dürfen",
+      "ex": "Darf ich hier sitzen?"
+     },
+     {
+      "w": "man darf nicht",
+      "ex": "Hier darf man nicht parken."
+     },
+     {
+      "w": "sollen",
+      "ex": "Soll ich das Fenster öffnen?"
+     },
+     {
+      "w": "ich soll",
+      "ex": "Der Arzt sagt, ich soll mehr Wasser trinken."
+     },
+     {
+      "w": "parken",
+      "ex": "Hier dürfen Sie parken."
+     },
+     {
+      "w": "erlaubt",
+      "ex": "Fotografieren ist hier erlaubt."
+     }
+    ],
+    "gram": "dürfen = Erlaubnis (Darf ich...?), nicht dürfen = Verbot. sollen = Rat/Auftrag: Du sollst mehr schlafen. Infinitiv am Ende."
+   }
+  }
+ ]
+}

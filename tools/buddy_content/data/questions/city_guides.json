@@ -1,0 +1,1305 @@
+{
+"topic": "city_guides",
+"questions": [
+{
+"id": "city_guides-001",
+"lv": "any",
+"i18n": {
+"en": "Which city do you love most, and what makes it special to you?",
+"de": "Welche Stadt liebst du am meisten, und was macht sie für dich besonders?",
+"es": "¿Qué ciudad te gusta más y qué la hace especial para ti?",
+"fr": "Quelle ville aimes-tu le plus, et qu'est-ce qui la rend spéciale pour toi ?",
+"it": "Qual è la città che ami di più e che cosa la rende speciale per te?",
+"pt": "Qual é a cidade de que mais gostas e o que a torna especial para ti?",
+"pt_BR": "Qual cidade você mais ama e o que a torna especial pra você?"
+}
+},
+{
+"id": "city_guides-002",
+"lv": "any",
+"i18n": {
+"en": "What is the first thing you do when you arrive in a new city?",
+"de": "Was machst du als Erstes, wenn du in einer neuen Stadt ankommst?",
+"es": "¿Qué es lo primero que haces al llegar a una ciudad nueva?",
+"fr": "Quelle est la première chose que tu fais en arrivant dans une nouvelle ville ?",
+"it": "Qual è la prima cosa che fai quando arrivi in una città nuova?",
+"pt": "Qual é a primeira coisa que fazes quando chegas a uma cidade nova?",
+"pt_BR": "Qual é a primeira coisa que você faz quando chega numa cidade nova?"
+}
+},
+{
+"id": "city_guides-003",
+"lv": "any",
+"i18n": {
+"en": "Which city is at the top of your travel wish list?",
+"de": "Welche Stadt steht ganz oben auf deiner Reise-Wunschliste?",
+"es": "¿Qué ciudad está en lo más alto de tu lista de viajes soñados?",
+"fr": "Quelle ville est en tête de ta liste de voyages rêvés ?",
+"it": "Quale città è al primo posto nella tua lista dei desideri di viaggio?",
+"pt": "Que cidade está no topo da tua lista de viagens de sonho?",
+"pt_BR": "Qual cidade está no topo da sua lista de viagens dos sonhos?"
+}
+},
+{
+"id": "city_guides-004",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer exploring a city with a plan or just wandering?",
+"de": "Erkundest du eine Stadt lieber mit Plan oder lässt du dich einfach treiben?",
+"es": "¿Prefieres explorar una ciudad con un plan o simplemente pasear sin rumbo?",
+"fr": "Préfères-tu explorer une ville avec un plan ou simplement flâner ?",
+"it": "Preferisci esplorare una città con un piano o girare senza meta?",
+"pt": "Preferes explorar uma cidade com um plano ou simplesmente deambular?",
+"pt_BR": "Você prefere explorar uma cidade com um plano ou só passear sem rumo?"
+}
+},
+{
+"id": "city_guides-005",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite neighbourhood in your own city?",
+"de": "Was ist dein Lieblingsviertel in deiner eigenen Stadt?",
+"es": "¿Cuál es tu barrio favorito de tu propia ciudad?",
+"fr": "Quel est ton quartier préféré dans ta propre ville ?",
+"it": "Qual è il tuo quartiere preferito nella tua città?",
+"pt": "Qual é o teu bairro preferido na tua cidade?",
+"pt_BR": "Qual é o seu bairro favorito na sua cidade?"
+}
+},
+{
+"id": "city_guides-006",
+"lv": "any",
+"i18n": {
+"en": "Markets, museums or parks: what do you visit first?",
+"de": "Märkte, Museen oder Parks: Was besuchst du zuerst?",
+"es": "Mercados, museos o parques: ¿qué visitas primero?",
+"fr": "Marchés, musées ou parcs : que visites-tu en premier ?",
+"it": "Mercati, musei o parchi: che cosa visiti per primo?",
+"pt": "Mercados, museus ou parques: o que visitas primeiro?",
+"pt_BR": "Mercados, museus ou parques: o que você visita primeiro?"
+}
+},
+{
+"id": "city_guides-007",
+"lv": "any",
+"i18n": {
+"en": "What is the most beautiful view of a city you have ever seen?",
+"de": "Was war der schönste Blick auf eine Stadt, den du je hattest?",
+"es": "¿Cuál es la vista más bonita de una ciudad que has visto nunca?",
+"fr": "Quelle est la plus belle vue sur une ville que tu aies jamais vue ?",
+"it": "Qual è la vista più bella su una città che tu abbia mai visto?",
+"pt": "Qual é a vista mais bonita de uma cidade que já viste?",
+"pt_BR": "Qual é a vista mais bonita de uma cidade que você já viu?"
+}
+},
+{
+"id": "city_guides-008",
+"lv": "any",
+"i18n": {
+"en": "How do you like to get around in a city: walking, bike or metro?",
+"de": "Wie bewegst du dich am liebsten in einer Stadt: zu Fuß, mit dem Rad oder der U-Bahn?",
+"es": "¿Cómo prefieres moverte por una ciudad: a pie, en bici o en metro?",
+"fr": "Comment préfères-tu te déplacer en ville : à pied, à vélo ou en métro ?",
+"it": "Come preferisci muoverti in città: a piedi, in bici o in metro?",
+"pt": "Como preferes deslocar-te numa cidade: a pé, de bicicleta ou de metro?",
+"pt_BR": "Como você prefere se locomover numa cidade: a pé, de bike ou de metrô?"
+}
+},
+{
+"id": "city_guides-009",
+"lv": "any",
+"i18n": {
+"en": "What is a local dish you always look for when you visit a city?",
+"de": "Nach welchem lokalen Gericht suchst du immer, wenn du eine Stadt besuchst?",
+"es": "¿Qué plato local buscas siempre cuando visitas una ciudad?",
+"fr": "Quel plat local cherches-tu toujours quand tu visites une ville ?",
+"it": "Quale piatto locale cerchi sempre quando visiti una città?",
+"pt": "Que prato local procuras sempre quando visitas uma cidade?",
+"pt_BR": "Qual prato local você sempre procura quando visita uma cidade?"
+}
+},
+{
+"id": "city_guides-010",
+"lv": "any",
+"i18n": {
+"en": "Which city surprised you the most, and why?",
+"de": "Welche Stadt hat dich am meisten überrascht, und warum?",
+"es": "¿Qué ciudad te sorprendió más y por qué?",
+"fr": "Quelle ville t'a le plus surpris, et pourquoi ?",
+"it": "Quale città ti ha sorpreso di più, e perché?",
+"pt": "Que cidade te surpreendeu mais e porquê?",
+"pt_BR": "Qual cidade mais te surpreendeu, e por quê?"
+}
+},
+{
+"id": "city_guides-011",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy big busy cities or small calm towns more?",
+"de": "Magst du lieber große, lebhafte Städte oder kleine, ruhige Orte?",
+"es": "¿Disfrutas más de las grandes ciudades bulliciosas o de los pueblos tranquilos?",
+"fr": "Préfères-tu les grandes villes animées ou les petites villes calmes ?",
+"it": "Ti piacciono di più le grandi città vivaci o le piccole città tranquille?",
+"pt": "Gostas mais de cidades grandes e movimentadas ou de vilas pequenas e calmas?",
+"pt_BR": "Você curte mais cidades grandes e agitadas ou cidades pequenas e tranquilas?"
+}
+},
+{
+"id": "city_guides-012",
+"lv": "any",
+"i18n": {
+"en": "What makes you feel at home in a city you are visiting?",
+"de": "Was gibt dir in einer fremden Stadt das Gefühl, zu Hause zu sein?",
+"es": "¿Qué te hace sentir como en casa en una ciudad que visitas?",
+"fr": "Qu'est-ce qui te fait te sentir chez toi dans une ville que tu visites ?",
+"it": "Che cosa ti fa sentire a casa in una città che visiti?",
+"pt": "O que te faz sentir em casa numa cidade que visitas?",
+"pt_BR": "O que faz você se sentir em casa numa cidade que está visitando?"
+}
+},
+{
+"id": "city_guides-013",
+"lv": "any",
+"i18n": {
+"en": "Which city would you love to show to a friend, and where would you take them?",
+"de": "Welche Stadt würdest du gern einer Freundin zeigen, und wohin würdest du sie führen?",
+"es": "¿Qué ciudad te encantaría enseñarle a un amigo y adónde lo llevarías?",
+"fr": "Quelle ville aimerais-tu faire découvrir à un ami, et où l'emmènerais-tu ?",
+"it": "Quale città ti piacerebbe mostrare a un amico e dove lo porteresti?",
+"pt": "Que cidade adorarias mostrar a um amigo e onde o levarias?",
+"pt_BR": "Qual cidade você adoraria mostrar para um amigo, e aonde o levaria?"
+}
+},
+{
+"id": "city_guides-014",
+"lv": "any",
+"i18n": {
+"en": "Do you like visiting cafés when you travel? What makes a café great?",
+"de": "Besuchst du auf Reisen gern Cafés? Was macht ein tolles Café aus?",
+"es": "¿Te gusta ir a cafeterías cuando viajas? ¿Qué hace que un café sea genial?",
+"fr": "Aimes-tu aller dans les cafés en voyage ? Qu'est-ce qui fait un bon café ?",
+"it": "Ti piace andare nei caffè quando viaggi? Che cosa rende speciale un caffè?",
+"pt": "Gostas de ir a cafés quando viajas? O que faz um café ser ótimo?",
+"pt_BR": "Você gosta de ir a cafés quando viaja? O que faz um café ser incrível?"
+}
+},
+{
+"id": "city_guides-015",
+"lv": "any",
+"i18n": {
+"en": "What kind of souvenirs do you like to bring home?",
+"de": "Welche Art von Andenken bringst du gern mit nach Hause?",
+"es": "¿Qué tipo de recuerdos te gusta traer a casa?",
+"fr": "Quel genre de souvenirs aimes-tu rapporter ?",
+"it": "Che tipo di souvenir ti piace portare a casa?",
+"pt": "Que tipo de lembranças gostas de trazer para casa?",
+"pt_BR": "Que tipo de lembrancinha você gosta de trazer pra casa?"
+}
+},
+{
+"id": "city_guides-016",
+"lv": "any",
+"i18n": {
+"en": "Morning or evening: when do you enjoy a city most?",
+"de": "Morgens oder abends: Wann genießt du eine Stadt am meisten?",
+"es": "Mañana o noche: ¿cuándo disfrutas más de una ciudad?",
+"fr": "Matin ou soir : quand profites-tu le plus d'une ville ?",
+"it": "Mattina o sera: quando ti godi di più una città?",
+"pt": "Manhã ou noite: quando aproveitas mais uma cidade?",
+"pt_BR": "Manhã ou noite: quando você mais aproveita uma cidade?"
+}
+},
+{
+"id": "city_guides-017",
+"lv": "any",
+"i18n": {
+"en": "What is a city you have visited more than once? Why do you go back?",
+"de": "Welche Stadt hast du mehr als einmal besucht? Warum kehrst du zurück?",
+"es": "¿Qué ciudad has visitado más de una vez? ¿Por qué vuelves?",
+"fr": "Quelle ville as-tu visitée plus d'une fois ? Pourquoi y retournes-tu ?",
+"it": "Quale città hai visitato più di una volta? Perché ci torni?",
+"pt": "Que cidade visitaste mais do que uma vez? Porque voltas?",
+"pt_BR": "Qual cidade você já visitou mais de uma vez? Por que volta?"
+}
+},
+{
+"id": "city_guides-018",
+"lv": "any",
+"i18n": {
+"en": "Do you take many photos when you travel? What do you like to photograph?",
+"de": "Machst du auf Reisen viele Fotos? Was fotografierst du am liebsten?",
+"es": "¿Haces muchas fotos cuando viajas? ¿Qué te gusta fotografiar?",
+"fr": "Prends-tu beaucoup de photos en voyage ? Qu'aimes-tu photographier ?",
+"it": "Fai molte foto quando viaggi? Che cosa ti piace fotografare?",
+"pt": "Tiras muitas fotografias quando viajas? O que gostas de fotografar?",
+"pt_BR": "Você tira muitas fotos quando viaja? O que gosta de fotografar?"
+}
+},
+{
+"id": "city_guides-019",
+"lv": "any",
+"i18n": {
+"en": "Which famous landmark would you most like to see in person?",
+"de": "Welches berühmte Wahrzeichen möchtest du am liebsten mit eigenen Augen sehen?",
+"es": "¿Qué monumento famoso te gustaría más ver en persona?",
+"fr": "Quel monument célèbre aimerais-tu le plus voir de tes propres yeux ?",
+"it": "Quale monumento famoso vorresti vedere dal vivo più di tutti?",
+"pt": "Que monumento famoso mais gostavas de ver ao vivo?",
+"pt_BR": "Qual ponto turístico famoso você mais gostaria de ver pessoalmente?"
+}
+},
+{
+"id": "city_guides-020",
+"lv": "any",
+"i18n": {
+"en": "What do you love about your hometown?",
+"de": "Was liebst du an deiner Heimatstadt?",
+"es": "¿Qué te encanta de tu ciudad natal?",
+"fr": "Qu'est-ce que tu aimes dans ta ville natale ?",
+"it": "Che cosa ami della tua città natale?",
+"pt": "O que adoras na tua terra natal?",
+"pt_BR": "O que você ama na sua cidade natal?"
+}
+},
+{
+"id": "city_guides-021",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer old towns with history or modern cities with new architecture?",
+"de": "Magst du lieber historische Altstädte oder moderne Städte mit neuer Architektur?",
+"es": "¿Prefieres los cascos antiguos con historia o las ciudades modernas?",
+"fr": "Préfères-tu les vieilles villes chargées d'histoire ou les villes modernes ?",
+"it": "Preferisci i centri storici o le città moderne con architettura nuova?",
+"pt": "Preferes cidades antigas com história ou cidades modernas com arquitetura nova?",
+"pt_BR": "Você prefere cidades antigas cheias de história ou cidades modernas com arquitetura nova?"
+}
+},
+{
+"id": "city_guides-022",
+"lv": "any",
+"i18n": {
+"en": "What is the best street food you have tried in a city?",
+"de": "Was war das beste Streetfood, das du in einer Stadt probiert hast?",
+"es": "¿Cuál es la mejor comida callejera que has probado en una ciudad?",
+"fr": "Quelle est la meilleure street food que tu aies goûtée en ville ?",
+"it": "Qual è il miglior cibo di strada che hai assaggiato in una città?",
+"pt": "Qual foi a melhor comida de rua que provaste numa cidade?",
+"pt_BR": "Qual foi a melhor comida de rua que você já provou numa cidade?"
+}
+},
+{
+"id": "city_guides-023",
+"lv": "any",
+"i18n": {
+"en": "How do you find good local recommendations when you travel?",
+"de": "Wie findest du auf Reisen gute Tipps von Einheimischen?",
+"es": "¿Cómo encuentras buenas recomendaciones locales cuando viajas?",
+"fr": "Comment trouves-tu de bonnes adresses locales en voyage ?",
+"it": "Come trovi buoni consigli locali quando viaggi?",
+"pt": "Como encontras boas recomendações locais quando viajas?",
+"pt_BR": "Como você encontra boas dicas locais quando viaja?"
+}
+},
+{
+"id": "city_guides-024",
+"lv": "any",
+"i18n": {
+"en": "Which city would you choose for a perfect weekend away?",
+"de": "Welche Stadt würdest du für ein perfektes Wochenende wählen?",
+"es": "¿Qué ciudad elegirías para una escapada de fin de semana perfecta?",
+"fr": "Quelle ville choisirais-tu pour un week-end parfait ?",
+"it": "Quale città sceglieresti per un weekend perfetto?",
+"pt": "Que cidade escolherias para um fim de semana perfeito?",
+"pt_BR": "Qual cidade você escolheria para um fim de semana perfeito?"
+}
+},
+{
+"id": "city_guides-025",
+"lv": "any",
+"i18n": {
+"en": "What sounds or smells remind you of a city you love?",
+"de": "Welche Geräusche oder Gerüche erinnern dich an eine Stadt, die du liebst?",
+"es": "¿Qué sonidos u olores te recuerdan a una ciudad que te encanta?",
+"fr": "Quels sons ou odeurs te rappellent une ville que tu aimes ?",
+"it": "Quali suoni o profumi ti ricordano una città che ami?",
+"pt": "Que sons ou cheiros te lembram uma cidade de que gostas?",
+"pt_BR": "Quais sons ou cheiros te lembram uma cidade que você ama?"
+}
+},
+{
+"id": "city_guides-026",
+"lv": "any",
+"i18n": {
+"en": "Do you like travelling alone, with friends or with family in cities?",
+"de": "Bist du in Städten lieber allein, mit Freunden oder mit der Familie unterwegs?",
+"es": "¿Te gusta viajar a ciudades solo, con amigos o en familia?",
+"fr": "Aimes-tu visiter les villes seul, entre amis ou en famille ?",
+"it": "Ti piace visitare le città da solo, con gli amici o con la famiglia?",
+"pt": "Gostas de visitar cidades sozinho, com amigos ou com a família?",
+"pt_BR": "Você gosta de visitar cidades sozinho, com amigos ou com a família?"
+}
+},
+{
+"id": "city_guides-027",
+"lv": "any",
+"i18n": {
+"en": "What is a hidden spot in your city that visitors usually miss?",
+"de": "Welcher versteckte Ort in deiner Stadt wird von Besuchern meistens übersehen?",
+"es": "¿Qué rincón escondido de tu ciudad suelen pasar por alto los visitantes?",
+"fr": "Quel endroit caché de ta ville les visiteurs ratent-ils souvent ?",
+"it": "Quale angolo nascosto della tua città sfugge di solito ai visitatori?",
+"pt": "Que recanto escondido da tua cidade os visitantes costumam perder?",
+"pt_BR": "Qual cantinho escondido da sua cidade os visitantes costumam deixar passar?"
+}
+},
+{
+"id": "city_guides-028",
+"lv": "any",
+"i18n": {
+"en": "Which city's architecture do you find the most impressive?",
+"de": "Die Architektur welcher Stadt findest du am beeindruckendsten?",
+"es": "¿La arquitectura de qué ciudad te parece la más impresionante?",
+"fr": "L'architecture de quelle ville trouves-tu la plus impressionnante ?",
+"it": "L'architettura di quale città trovi più impressionante?",
+"pt": "A arquitetura de que cidade achas mais impressionante?",
+"pt_BR": "A arquitetura de qual cidade você acha mais impressionante?"
+}
+},
+{
+"id": "city_guides-029",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy festivals and events when you visit a city?",
+"de": "Erlebst du gern Feste und Veranstaltungen, wenn du eine Stadt besuchst?",
+"es": "¿Te gustan los festivales y eventos cuando visitas una ciudad?",
+"fr": "Aimes-tu les festivals et les événements quand tu visites une ville ?",
+"it": "Ti piacciono i festival e gli eventi quando visiti una città?",
+"pt": "Gostas de festivais e eventos quando visitas uma cidade?",
+"pt_BR": "Você curte festivais e eventos quando visita uma cidade?"
+}
+},
+{
+"id": "city_guides-030",
+"lv": "any",
+"i18n": {
+"en": "What makes a city easy and pleasant to walk around?",
+"de": "Was macht eine Stadt angenehm zum Spazierengehen?",
+"es": "¿Qué hace que una ciudad sea fácil y agradable para pasear?",
+"fr": "Qu'est-ce qui rend une ville agréable à parcourir à pied ?",
+"it": "Che cosa rende una città facile e piacevole da girare a piedi?",
+"pt": "O que torna uma cidade fácil e agradável para andar a pé?",
+"pt_BR": "O que torna uma cidade fácil e gostosa de andar a pé?"
+}
+},
+{
+"id": "city_guides-031",
+"lv": "any",
+"i18n": {
+"en": "What would your ideal city of the future look like?",
+"de": "Wie würde deine ideale Stadt der Zukunft aussehen?",
+"es": "¿Cómo sería tu ciudad ideal del futuro?",
+"fr": "À quoi ressemblerait ta ville idéale du futur ?",
+"it": "Come sarebbe la tua città ideale del futuro?",
+"pt": "Como seria a tua cidade ideal do futuro?",
+"pt_BR": "Como seria a sua cidade ideal do futuro?"
+}
+},
+{
+"id": "city_guides-032",
+"lv": "any",
+"i18n": {
+"en": "Which city has the best public transport you have used?",
+"de": "Welche Stadt hatte den besten Nahverkehr, den du je genutzt hast?",
+"es": "¿Qué ciudad tiene el mejor transporte público que has usado?",
+"fr": "Quelle ville a les meilleurs transports en commun que tu aies utilisés ?",
+"it": "Quale città ha i migliori mezzi pubblici che tu abbia usato?",
+"pt": "Que cidade tem os melhores transportes públicos que já usaste?",
+"pt_BR": "Qual cidade tem o melhor transporte público que você já usou?"
+}
+},
+{
+"id": "city_guides-033",
+"lv": "any",
+"i18n": {
+"en": "Do you like visiting markets? What do you usually buy there?",
+"de": "Gehst du gern auf Märkte? Was kaufst du dort meistens?",
+"es": "¿Te gusta visitar mercados? ¿Qué sueles comprar allí?",
+"fr": "Aimes-tu visiter les marchés ? Qu'y achètes-tu d'habitude ?",
+"it": "Ti piace visitare i mercati? Che cosa compri di solito?",
+"pt": "Gostas de visitar mercados? O que costumas comprar lá?",
+"pt_BR": "Você gosta de visitar mercados? O que costuma comprar lá?"
+}
+},
+{
+"id": "city_guides-034",
+"lv": "any",
+"i18n": {
+"en": "Which city would you like to live in for a few months, and why?",
+"de": "In welcher Stadt würdest du gern ein paar Monate leben, und warum?",
+"es": "¿En qué ciudad te gustaría vivir unos meses y por qué?",
+"fr": "Dans quelle ville aimerais-tu vivre quelques mois, et pourquoi ?",
+"it": "In quale città ti piacerebbe vivere per qualche mese, e perché?",
+"pt": "Em que cidade gostavas de viver alguns meses e porquê?",
+"pt_BR": "Em qual cidade você gostaria de morar por alguns meses, e por quê?"
+}
+},
+{
+"id": "city_guides-035",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite park or green space in any city?",
+"de": "Was ist dein Lieblingspark oder deine liebste Grünfläche in irgendeiner Stadt?",
+"es": "¿Cuál es tu parque o espacio verde favorito de cualquier ciudad?",
+"fr": "Quel est ton parc ou espace vert préféré, toutes villes confondues ?",
+"it": "Qual è il tuo parco o spazio verde preferito, in qualsiasi città?",
+"pt": "Qual é o teu parque ou espaço verde preferido em qualquer cidade?",
+"pt_BR": "Qual é o seu parque ou área verde favorita em qualquer cidade?"
+}
+},
+{
+"id": "city_guides-036",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy museums? Which one left a strong memory?",
+"de": "Magst du Museen? Welches ist dir besonders in Erinnerung geblieben?",
+"es": "¿Te gustan los museos? ¿Cuál te dejó un recuerdo especial?",
+"fr": "Aimes-tu les musées ? Lequel t'a laissé un souvenir fort ?",
+"it": "Ti piacciono i musei? Quale ti ha lasciato un ricordo forte?",
+"pt": "Gostas de museus? Qual te deixou uma memória marcante?",
+"pt_BR": "Você gosta de museus? Qual deixou uma lembrança marcante?"
+}
+},
+{
+"id": "city_guides-037",
+"lv": "any",
+"i18n": {
+"en": "Which city do you think has the friendliest people?",
+"de": "In welcher Stadt sind die Menschen deiner Meinung nach am freundlichsten?",
+"es": "¿En qué ciudad crees que la gente es más amable?",
+"fr": "Dans quelle ville les gens sont-ils les plus accueillants, selon toi ?",
+"it": "Secondo te, in quale città la gente è più cordiale?",
+"pt": "Em que cidade achas que as pessoas são mais simpáticas?",
+"pt_BR": "Em qual cidade você acha que as pessoas são mais simpáticas?"
+}
+},
+{
+"id": "city_guides-038",
+"lv": "any",
+"i18n": {
+"en": "What is a city you know only from films or books but would love to visit?",
+"de": "Welche Stadt kennst du nur aus Filmen oder Büchern und würdest sie gern besuchen?",
+"es": "¿Qué ciudad conoces solo por películas o libros y te encantaría visitar?",
+"fr": "Quelle ville connais-tu seulement par les films ou les livres et aimerais visiter ?",
+"it": "Quale città conosci solo dai film o dai libri e ti piacerebbe visitare?",
+"pt": "Que cidade conheces só de filmes ou livros e adorarias visitar?",
+"pt_BR": "Qual cidade você só conhece por filmes ou livros e adoraria visitar?"
+}
+},
+{
+"id": "city_guides-039",
+"lv": "any",
+"i18n": {
+"en": "If you could plan a free day in your city, how would you spend it?",
+"de": "Wenn du einen freien Tag in deiner Stadt planen könntest, wie würdest du ihn verbringen?",
+"es": "Si pudieras planear un día libre en tu ciudad, ¿cómo lo pasarías?",
+"fr": "Si tu pouvais organiser une journée libre dans ta ville, comment la passerais-tu ?",
+"it": "Se potessi organizzare una giornata libera nella tua città, come la passeresti?",
+"pt": "Se pudesses planear um dia livre na tua cidade, como o passarias?",
+"pt_BR": "Se pudesse planejar um dia livre na sua cidade, como você passaria?"
+}
+},
+{
+"id": "city_guides-040",
+"lv": "beginner",
+"i18n": {
+"en": "Do you use a paper map or your phone to find your way?",
+"de": "Benutzt du eine Papierkarte oder dein Handy, um dich zurechtzufinden?",
+"es": "¿Usas un mapa de papel o el móvil para orientarte?",
+"fr": "Utilises-tu une carte papier ou ton téléphone pour t'orienter ?",
+"it": "Usi una mappa di carta o il telefono per orientarti?",
+"pt": "Usas um mapa em papel ou o telemóvel para te orientares?",
+"pt_BR": "Você usa um mapa de papel ou o celular para se orientar?"
+}
+},
+{
+"id": "city_guides-041",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever got lost in a city? What happened?",
+"de": "Hast du dich schon einmal in einer Stadt verlaufen? Was ist passiert?",
+"es": "¿Alguna vez te has perdido en una ciudad? ¿Qué pasó?",
+"fr": "T'es-tu déjà perdu dans une ville ? Que s'est-il passé ?",
+"it": "Ti sei mai perso in una città? Che cosa è successo?",
+"pt": "Já te perdeste numa cidade? O que aconteceu?",
+"pt_BR": "Você já se perdeu numa cidade? O que aconteceu?"
+}
+},
+{
+"id": "city_guides-042",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually get from the airport to the city centre?",
+"de": "Wie kommst du normalerweise vom Flughafen ins Stadtzentrum?",
+"es": "¿Cómo sueles ir del aeropuerto al centro de la ciudad?",
+"fr": "Comment vas-tu d'habitude de l'aéroport au centre-ville ?",
+"it": "Come vai di solito dall'aeroporto al centro città?",
+"pt": "Como costumas ir do aeroporto para o centro da cidade?",
+"pt_BR": "Como você costuma ir do aeroporto para o centro da cidade?"
+}
+},
+{
+"id": "city_guides-043",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of place do you like to stay in: hotel, hostel or apartment?",
+"de": "Wo übernachtest du am liebsten: im Hotel, Hostel oder in einer Wohnung?",
+"es": "¿Dónde prefieres alojarte: hotel, hostal o apartamento?",
+"fr": "Où préfères-tu loger : hôtel, auberge de jeunesse ou appartement ?",
+"it": "Dove preferisci alloggiare: hotel, ostello o appartamento?",
+"pt": "Onde preferes ficar: hotel, hostel ou apartamento?",
+"pt_BR": "Onde você prefere se hospedar: hotel, hostel ou apartamento?"
+}
+},
+{
+"id": "city_guides-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like riding buses and trams to see a city?",
+"de": "Fährst du gern mit Bus und Straßenbahn, um eine Stadt zu sehen?",
+"es": "¿Te gusta ir en autobús o tranvía para ver una ciudad?",
+"fr": "Aimes-tu prendre le bus ou le tram pour découvrir une ville ?",
+"it": "Ti piace prendere l'autobus o il tram per vedere una città?",
+"pt": "Gostas de andar de autocarro ou elétrico para ver uma cidade?",
+"pt_BR": "Você gosta de andar de ônibus ou bonde para conhecer uma cidade?"
+}
+},
+{
+"id": "city_guides-045",
+"lv": "beginner",
+"i18n": {
+"en": "What is the main square or meeting point in your town?",
+"de": "Was ist der Hauptplatz oder Treffpunkt in deiner Stadt?",
+"es": "¿Cuál es la plaza principal o el punto de encuentro de tu ciudad?",
+"fr": "Quelle est la place principale ou le lieu de rendez-vous de ta ville ?",
+"it": "Qual è la piazza principale o il punto d'incontro della tua città?",
+"pt": "Qual é a praça principal ou o ponto de encontro da tua cidade?",
+"pt_BR": "Qual é a praça principal ou o ponto de encontro da sua cidade?"
+}
+},
+{
+"id": "city_guides-046",
+"lv": "beginner",
+"i18n": {
+"en": "Which landmark would you use to find your way in your city?",
+"de": "An welchem Wahrzeichen würdest du dich in deiner Stadt orientieren?",
+"es": "¿Qué monumento usarías para orientarte en tu ciudad?",
+"fr": "Quel repère utiliserais-tu pour t'orienter dans ta ville ?",
+"it": "Quale punto di riferimento useresti per orientarti nella tua città?",
+"pt": "Que ponto de referência usarias para te orientares na tua cidade?",
+"pt_BR": "Qual ponto de referência você usaria para se orientar na sua cidade?"
+}
+},
+{
+"id": "city_guides-047",
+"lv": "beginner",
+"i18n": {
+"en": "How long do you like to walk when exploring a city?",
+"de": "Wie lange gehst du gern zu Fuß, wenn du eine Stadt erkundest?",
+"es": "¿Cuánto tiempo te gusta caminar cuando exploras una ciudad?",
+"fr": "Combien de temps aimes-tu marcher quand tu explores une ville ?",
+"it": "Quanto ti piace camminare quando esplori una città?",
+"pt": "Quanto tempo gostas de caminhar quando exploras uma cidade?",
+"pt_BR": "Quanto tempo você gosta de caminhar quando explora uma cidade?"
+}
+},
+{
+"id": "city_guides-048",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite thing to eat at a market?",
+"de": "Was isst du auf einem Markt am liebsten?",
+"es": "¿Qué es lo que más te gusta comer en un mercado?",
+"fr": "Qu'aimes-tu le plus manger sur un marché ?",
+"it": "Qual è la cosa che ti piace di più mangiare al mercato?",
+"pt": "O que mais gostas de comer num mercado?",
+"pt_BR": "O que você mais gosta de comer numa feira ou mercado?"
+}
+},
+{
+"id": "city_guides-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer sightseeing in sunny weather or exploring museums on rainy days?",
+"de": "Magst du lieber Sightseeing bei Sonne oder Museen an Regentagen?",
+"es": "¿Prefieres hacer turismo con sol o visitar museos en días de lluvia?",
+"fr": "Préfères-tu visiter sous le soleil ou explorer les musées les jours de pluie ?",
+"it": "Preferisci fare un giro turistico col sole o visitare musei quando piove?",
+"pt": "Preferes passear com sol ou explorar museus em dias de chuva?",
+"pt_BR": "Você prefere passear com sol ou explorar museus em dias de chuva?"
+}
+},
+{
+"id": "city_guides-050",
+"lv": "beginner",
+"i18n": {
+"en": "Which city did you visit for the first time as a child?",
+"de": "Welche Stadt hast du als Kind zum ersten Mal besucht?",
+"es": "¿Qué ciudad visitaste por primera vez de pequeño?",
+"fr": "Quelle ville as-tu visitée pour la première fois enfant ?",
+"it": "Quale città hai visitato per la prima volta da bambino?",
+"pt": "Que cidade visitaste pela primeira vez em criança?",
+"pt_BR": "Qual cidade você visitou pela primeira vez quando era criança?"
+}
+},
+{
+"id": "city_guides-051",
+"lv": "beginner",
+"i18n": {
+"en": "What do you always pack in your day bag when you explore a city?",
+"de": "Was packst du immer in deinen Tagesrucksack, wenn du eine Stadt erkundest?",
+"es": "¿Qué llevas siempre en tu mochila cuando exploras una ciudad?",
+"fr": "Que mets-tu toujours dans ton sac quand tu explores une ville ?",
+"it": "Che cosa metti sempre nello zaino quando esplori una città?",
+"pt": "O que levas sempre na mochila quando exploras uma cidade?",
+"pt_BR": "O que você sempre leva na mochila quando explora uma cidade?"
+}
+},
+{
+"id": "city_guides-052",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like going up towers or hills to see a city from above?",
+"de": "Steigst du gern auf Türme oder Hügel, um eine Stadt von oben zu sehen?",
+"es": "¿Te gusta subir a torres o colinas para ver una ciudad desde arriba?",
+"fr": "Aimes-tu monter sur des tours ou des collines pour voir une ville d'en haut ?",
+"it": "Ti piace salire su torri o colline per vedere una città dall'alto?",
+"pt": "Gostas de subir a torres ou colinas para ver uma cidade de cima?",
+"pt_BR": "Você gosta de subir em torres ou morros para ver a cidade lá de cima?"
+}
+},
+{
+"id": "city_guides-053",
+"lv": "beginner",
+"i18n": {
+"en": "Which café or restaurant in your city would you recommend to a visitor?",
+"de": "Welches Café oder Restaurant in deiner Stadt würdest du Besuchern empfehlen?",
+"es": "¿Qué café o restaurante de tu ciudad recomendarías a un visitante?",
+"fr": "Quel café ou restaurant de ta ville recommanderais-tu à un visiteur ?",
+"it": "Quale bar o ristorante della tua città consiglieresti a un visitatore?",
+"pt": "Que café ou restaurante da tua cidade recomendarias a um visitante?",
+"pt_BR": "Qual café ou restaurante da sua cidade você recomendaria a um visitante?"
+}
+},
+{
+"id": "city_guides-054",
+"lv": "beginner",
+"i18n": {
+"en": "What is one polite word you like to learn before visiting a new country?",
+"de": "Welches höfliche Wort lernst du gern, bevor du ein neues Land besuchst?",
+"es": "¿Qué palabra amable te gusta aprender antes de visitar un país nuevo?",
+"fr": "Quel mot de politesse aimes-tu apprendre avant de visiter un nouveau pays ?",
+"it": "Quale parola di cortesia ti piace imparare prima di visitare un nuovo paese?",
+"pt": "Que palavra de cortesia gostas de aprender antes de visitar um país novo?",
+"pt_BR": "Qual palavra educada você gosta de aprender antes de visitar um país novo?"
+}
+},
+{
+"id": "city_guides-055",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy going to free walking tours?",
+"de": "Machst du gern kostenlose Stadtführungen zu Fuß mit?",
+"es": "¿Te gustan los free tours a pie?",
+"fr": "Aimes-tu les visites guidées gratuites à pied ?",
+"it": "Ti piacciono i tour a piedi gratuiti?",
+"pt": "Gostas de fazer visitas guiadas gratuitas a pé?",
+"pt_BR": "Você curte fazer free walking tours?"
+}
+},
+{
+"id": "city_guides-056",
+"lv": "beginner",
+"i18n": {
+"en": "What is the best park in your town for a picnic?",
+"de": "Welcher Park in deiner Stadt ist am besten für ein Picknick?",
+"es": "¿Cuál es el mejor parque de tu ciudad para un pícnic?",
+"fr": "Quel est le meilleur parc de ta ville pour un pique-nique ?",
+"it": "Qual è il parco migliore della tua città per un picnic?",
+"pt": "Qual é o melhor parque da tua cidade para um piquenique?",
+"pt_BR": "Qual é o melhor parque da sua cidade para um piquenique?"
+}
+},
+{
+"id": "city_guides-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which city would you like to visit to try its food?",
+"de": "Welche Stadt würdest du gern wegen ihres Essens besuchen?",
+"es": "¿Qué ciudad te gustaría visitar para probar su comida?",
+"fr": "Quelle ville aimerais-tu visiter pour goûter sa cuisine ?",
+"it": "Quale città ti piacerebbe visitare per assaggiarne la cucina?",
+"pt": "Que cidade gostavas de visitar para provar a comida?",
+"pt_BR": "Qual cidade você gostaria de visitar para provar a comida?"
+}
+},
+{
+"id": "city_guides-058",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel the first time you ride a metro in a new city?",
+"de": "Wie fühlst du dich, wenn du zum ersten Mal in einer neuen Stadt U-Bahn fährst?",
+"es": "¿Cómo te sientes la primera vez que vas en metro en una ciudad nueva?",
+"fr": "Comment te sens-tu la première fois que tu prends le métro dans une nouvelle ville ?",
+"it": "Come ti senti la prima volta che prendi la metro in una città nuova?",
+"pt": "Como te sentes da primeira vez que andas de metro numa cidade nova?",
+"pt_BR": "Como você se sente na primeira vez que anda de metrô numa cidade nova?"
+}
+},
+{
+"id": "city_guides-059",
+"lv": "beginner",
+"i18n": {
+"en": "What would you put on a one-day plan for your own city?",
+"de": "Was würdest du in einen Tagesplan für deine eigene Stadt aufnehmen?",
+"es": "¿Qué incluirías en un plan de un día para tu propia ciudad?",
+"fr": "Que mettrais-tu dans un programme d'une journée pour ta propre ville ?",
+"it": "Che cosa metteresti in un programma di un giorno per la tua città?",
+"pt": "O que incluirias num plano de um dia para a tua cidade?",
+"pt_BR": "O que você colocaria num roteiro de um dia na sua cidade?"
+}
+},
+{
+"id": "city_guides-060",
+"lv": "intermediate",
+"i18n": {
+"en": "Which neighbourhood of a famous city would you most like to explore?",
+"de": "Welches Viertel einer berühmten Stadt würdest du am liebsten erkunden?",
+"es": "¿Qué barrio de una ciudad famosa te gustaría más explorar?",
+"fr": "Quel quartier d'une ville célèbre aimerais-tu le plus explorer ?",
+"it": "Quale quartiere di una città famosa ti piacerebbe di più esplorare?",
+"pt": "Que bairro de uma cidade famosa mais gostavas de explorar?",
+"pt_BR": "Qual bairro de uma cidade famosa você mais gostaria de explorar?"
+}
+},
+{
+"id": "city_guides-061",
+"lv": "intermediate",
+"i18n": {
+"en": "Which architectural style do you find most beautiful, and where have you seen it?",
+"de": "Welchen Baustil findest du am schönsten, und wo hast du ihn gesehen?",
+"es": "¿Qué estilo arquitectónico te parece más bonito y dónde lo has visto?",
+"fr": "Quel style architectural trouves-tu le plus beau, et où l'as-tu vu ?",
+"it": "Quale stile architettonico trovi più bello e dove l'hai visto?",
+"pt": "Que estilo arquitetónico achas mais bonito e onde o viste?",
+"pt_BR": "Qual estilo arquitetônico você acha mais bonito, e onde o viu?"
+}
+},
+{
+"id": "city_guides-062",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you avoid crowds at popular sights?",
+"de": "Wie vermeidest du Menschenmengen an beliebten Sehenswürdigkeiten?",
+"es": "¿Cómo evitas las multitudes en los lugares más populares?",
+"fr": "Comment évites-tu la foule dans les sites très touristiques ?",
+"it": "Come eviti la folla nei luoghi più famosi?",
+"pt": "Como evitas as multidões nos locais mais populares?",
+"pt_BR": "Como você evita multidões nos pontos turísticos mais famosos?"
+}
+},
+{
+"id": "city_guides-063",
+"lv": "intermediate",
+"i18n": {
+"en": "Tell me about a day trip from a city that you really enjoyed.",
+"de": "Erzähl mir von einem Tagesausflug ab einer Stadt, der dir sehr gefallen hat.",
+"es": "Háblame de una excursión de un día desde una ciudad que te encantó.",
+"fr": "Parle-moi d'une excursion d'une journée depuis une ville qui t'a beaucoup plu.",
+"it": "Raccontami di una gita di un giorno fuori città che ti è piaciuta molto.",
+"pt": "Fala-me de uma excursão de um dia a partir de uma cidade de que gostaste muito.",
+"pt_BR": "Me conta de um bate-volta saindo de uma cidade que você curtiu muito."
+}
+},
+{
+"id": "city_guides-064",
+"lv": "intermediate",
+"i18n": {
+"en": "What local custom in another city surprised you?",
+"de": "Welcher Brauch in einer anderen Stadt hat dich überrascht?",
+"es": "¿Qué costumbre local de otra ciudad te sorprendió?",
+"fr": "Quelle coutume locale d'une autre ville t'a surpris ?",
+"it": "Quale usanza locale di un'altra città ti ha sorpreso?",
+"pt": "Que costume local de outra cidade te surpreendeu?",
+"pt_BR": "Qual costume local de outra cidade te surpreendeu?"
+}
+},
+{
+"id": "city_guides-065",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you research a city before your trip?",
+"de": "Wie informierst du dich vor einer Reise über eine Stadt?",
+"es": "¿Cómo investigas sobre una ciudad antes de viajar?",
+"fr": "Comment te renseignes-tu sur une ville avant ton voyage ?",
+"it": "Come ti informi su una città prima del viaggio?",
+"pt": "Como pesquisas sobre uma cidade antes da viagem?",
+"pt_BR": "Como você pesquisa sobre uma cidade antes da viagem?"
+}
+},
+{
+"id": "city_guides-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which city has the best food market you have visited?",
+"de": "Welche Stadt hat den besten Lebensmittelmarkt, den du besucht hast?",
+"es": "¿Qué ciudad tiene el mejor mercado de comida que has visitado?",
+"fr": "Quelle ville a le meilleur marché alimentaire que tu aies visité ?",
+"it": "Quale città ha il miglior mercato alimentare che tu abbia visitato?",
+"pt": "Que cidade tem o melhor mercado de comida que já visitaste?",
+"pt_BR": "Qual cidade tem o melhor mercado de comida que você já visitou?"
+}
+},
+{
+"id": "city_guides-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How does your city change between weekdays and weekends?",
+"de": "Wie verändert sich deine Stadt zwischen Werktagen und Wochenende?",
+"es": "¿Cómo cambia tu ciudad entre semana y el fin de semana?",
+"fr": "Comment ta ville change-t-elle entre la semaine et le week-end ?",
+"it": "Come cambia la tua città tra i giorni feriali e il fine settimana?",
+"pt": "Como muda a tua cidade entre a semana e o fim de semana?",
+"pt_BR": "Como sua cidade muda entre os dias úteis e o fim de semana?"
+}
+},
+{
+"id": "city_guides-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What is the best festival you have experienced in a city?",
+"de": "Was war das schönste Fest, das du in einer Stadt erlebt hast?",
+"es": "¿Cuál es el mejor festival que has vivido en una ciudad?",
+"fr": "Quel est le meilleur festival que tu aies vécu dans une ville ?",
+"it": "Qual è il festival più bello che hai vissuto in una città?",
+"pt": "Qual foi o melhor festival que viveste numa cidade?",
+"pt_BR": "Qual foi o melhor festival que você já curtiu numa cidade?"
+}
+},
+{
+"id": "city_guides-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you plan two perfect days in a city you know well?",
+"de": "Wie würdest du zwei perfekte Tage in einer Stadt planen, die du gut kennst?",
+"es": "¿Cómo planearías dos días perfectos en una ciudad que conoces bien?",
+"fr": "Comment organiserais-tu deux jours parfaits dans une ville que tu connais bien ?",
+"it": "Come organizzeresti due giorni perfetti in una città che conosci bene?",
+"pt": "Como planearias dois dias perfeitos numa cidade que conheces bem?",
+"pt_BR": "Como você planejaria dois dias perfeitos numa cidade que conhece bem?"
+}
+},
+{
+"id": "city_guides-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which city do you think is best for cycling, and why?",
+"de": "Welche Stadt ist deiner Meinung nach am besten zum Radfahren, und warum?",
+"es": "¿Qué ciudad crees que es la mejor para ir en bici y por qué?",
+"fr": "Quelle ville est la meilleure pour le vélo selon toi, et pourquoi ?",
+"it": "Secondo te, qual è la città migliore per andare in bici, e perché?",
+"pt": "Que cidade achas melhor para andar de bicicleta e porquê?",
+"pt_BR": "Qual cidade você acha a melhor para pedalar, e por quê?"
+}
+},
+{
+"id": "city_guides-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a tourist trap you learned to avoid?",
+"de": "Welche Touristenfalle hast du zu meiden gelernt?",
+"es": "¿Qué trampa para turistas has aprendido a evitar?",
+"fr": "Quel piège à touristes as-tu appris à éviter ?",
+"it": "Quale trappola per turisti hai imparato a evitare?",
+"pt": "Que armadilha para turistas aprendeste a evitar?",
+"pt_BR": "Qual armadilha para turistas você aprendeu a evitar?"
+}
+},
+{
+"id": "city_guides-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which famous city district would you compare to your own neighbourhood?",
+"de": "Mit welchem berühmten Stadtviertel würdest du dein eigenes vergleichen?",
+"es": "¿Con qué barrio famoso compararías tu propio barrio?",
+"fr": "À quel quartier célèbre comparerais-tu ton propre quartier ?",
+"it": "A quale famoso quartiere paragoneresti il tuo?",
+"pt": "Com que bairro famoso compararias o teu bairro?",
+"pt_BR": "Com qual bairro famoso você compararia o seu?"
+}
+},
+{
+"id": "city_guides-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make friends or meet locals when you travel?",
+"de": "Wie lernst du auf Reisen Leute oder Einheimische kennen?",
+"es": "¿Cómo haces amigos o conoces a gente local cuando viajas?",
+"fr": "Comment te fais-tu des amis ou rencontres-tu des locaux en voyage ?",
+"it": "Come fai amicizia o conosci gente del posto quando viaggi?",
+"pt": "Como fazes amigos ou conheces locais quando viajas?",
+"pt_BR": "Como você faz amigos ou conhece gente local quando viaja?"
+}
+},
+{
+"id": "city_guides-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your favourite city by the water: sea, river or lake?",
+"de": "Was ist deine liebste Stadt am Wasser: am Meer, Fluss oder See?",
+"es": "¿Cuál es tu ciudad favorita junto al agua: mar, río o lago?",
+"fr": "Quelle est ta ville préférée au bord de l'eau : mer, fleuve ou lac ?",
+"it": "Qual è la tua città preferita sull'acqua: mare, fiume o lago?",
+"pt": "Qual é a tua cidade preferida junto à água: mar, rio ou lago?",
+"pt_BR": "Qual é sua cidade favorita à beira d'água: mar, rio ou lago?"
+}
+},
+{
+"id": "city_guides-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which city would you choose for a rainy-day adventure, and what would you do?",
+"de": "Welche Stadt würdest du für ein Regentag-Abenteuer wählen, und was würdest du tun?",
+"es": "¿Qué ciudad elegirías para una aventura en un día de lluvia y qué harías?",
+"fr": "Quelle ville choisirais-tu pour une aventure un jour de pluie, et que ferais-tu ?",
+"it": "Quale città sceglieresti per un'avventura in un giorno di pioggia, e che cosa faresti?",
+"pt": "Que cidade escolherias para uma aventura num dia de chuva e o que farias?",
+"pt_BR": "Qual cidade você escolheria para uma aventura num dia de chuva, e o que faria?"
+}
+},
+{
+"id": "city_guides-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance famous sights and local everyday life on a trip?",
+"de": "Wie verbindest du auf Reisen berühmte Sehenswürdigkeiten mit dem Alltag vor Ort?",
+"es": "¿Cómo equilibras los lugares famosos y la vida cotidiana local en un viaje?",
+"fr": "Comment équilibres-tu sites célèbres et vie locale en voyage ?",
+"it": "Come bilanci i luoghi famosi e la vita quotidiana locale in un viaggio?",
+"pt": "Como equilibras os locais famosos e o dia a dia local numa viagem?",
+"pt_BR": "Como você equilibra pontos famosos e o dia a dia local numa viagem?"
+}
+},
+{
+"id": "city_guides-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you include in a guide to your neighbourhood?",
+"de": "Was würdest du in einen Reiseführer über dein Viertel aufnehmen?",
+"es": "¿Qué incluirías en una guía de tu barrio?",
+"fr": "Que mettrais-tu dans un guide de ton quartier ?",
+"it": "Che cosa metteresti in una guida del tuo quartiere?",
+"pt": "O que incluirias num guia do teu bairro?",
+"pt_BR": "O que você colocaria num guia do seu bairro?"
+}
+},
+{
+"id": "city_guides-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which city's night atmosphere do you enjoy most?",
+"de": "Die Abendstimmung welcher Stadt genießt du am meisten?",
+"es": "¿De qué ciudad disfrutas más el ambiente nocturno?",
+"fr": "De quelle ville apprécies-tu le plus l'ambiance du soir ?",
+"it": "Di quale città ami di più l'atmosfera serale?",
+"pt": "De que cidade mais aprecias o ambiente noturno?",
+"pt_BR": "De qual cidade você mais curte o clima à noite?"
+}
+},
+{
+"id": "city_guides-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever taken a cooking class or food tour abroad? How was it?",
+"de": "Hast du im Ausland schon einmal einen Kochkurs oder eine Food-Tour gemacht? Wie war es?",
+"es": "¿Has hecho alguna vez una clase de cocina o un tour gastronómico en el extranjero? ¿Qué tal?",
+"fr": "As-tu déjà suivi un cours de cuisine ou une visite gourmande à l'étranger ? C'était comment ?",
+"it": "Hai mai fatto un corso di cucina o un tour gastronomico all'estero? Com'è andata?",
+"pt": "Já fizeste uma aula de culinária ou um tour gastronómico no estrangeiro? Como foi?",
+"pt_BR": "Você já fez uma aula de culinária ou um tour gastronômico no exterior? Como foi?"
+}
+},
+{
+"id": "city_guides-080",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a city truly unique, in your opinion?",
+"de": "Was macht eine Stadt deiner Meinung nach wirklich einzigartig?",
+"es": "En tu opinión, ¿qué hace que una ciudad sea realmente única?",
+"fr": "Selon toi, qu'est-ce qui rend une ville vraiment unique ?",
+"it": "Secondo te, che cosa rende una città davvero unica?",
+"pt": "Na tua opinião, o que torna uma cidade verdadeiramente única?",
+"pt_BR": "Na sua opinião, o que torna uma cidade realmente única?"
+}
+},
+{
+"id": "city_guides-081",
+"lv": "advanced",
+"i18n": {
+"en": "How can travellers explore cities while respecting the people who live there?",
+"de": "Wie können Reisende Städte erkunden und dabei die Bewohner respektieren?",
+"es": "¿Cómo pueden los viajeros explorar ciudades respetando a quienes viven en ellas?",
+"fr": "Comment les voyageurs peuvent-ils explorer les villes en respectant leurs habitants ?",
+"it": "Come possono i viaggiatori esplorare le città rispettando chi ci vive?",
+"pt": "Como podem os viajantes explorar cidades respeitando quem lá vive?",
+"pt_BR": "Como os viajantes podem explorar cidades respeitando quem mora nelas?"
+}
+},
+{
+"id": "city_guides-082",
+"lv": "advanced",
+"i18n": {
+"en": "Which city do you think has reinvented itself in an inspiring way?",
+"de": "Welche Stadt hat sich deiner Meinung nach auf inspirierende Weise neu erfunden?",
+"es": "¿Qué ciudad crees que se ha reinventado de forma inspiradora?",
+"fr": "Quelle ville s'est réinventée de façon inspirante, selon toi ?",
+"it": "Secondo te, quale città si è reinventata in modo stimolante?",
+"pt": "Que cidade achas que se reinventou de forma inspiradora?",
+"pt_BR": "Qual cidade você acha que se reinventou de um jeito inspirador?"
+}
+},
+{
+"id": "city_guides-083",
+"lv": "advanced",
+"i18n": {
+"en": "What would you change to make your city more walkable and green?",
+"de": "Was würdest du ändern, damit deine Stadt fußgängerfreundlicher und grüner wird?",
+"es": "¿Qué cambiarías para que tu ciudad fuera más caminable y verde?",
+"fr": "Que changerais-tu pour rendre ta ville plus verte et plus agréable à pied ?",
+"it": "Che cosa cambieresti per rendere la tua città più verde e più vivibile a piedi?",
+"pt": "O que mudarias para tornar a tua cidade mais verde e melhor para andar a pé?",
+"pt_BR": "O que você mudaria para deixar sua cidade mais verde e boa de caminhar?"
+}
+},
+{
+"id": "city_guides-084",
+"lv": "advanced",
+"i18n": {
+"en": "How does a city's history show in its streets and buildings?",
+"de": "Wie zeigt sich die Geschichte einer Stadt in ihren Straßen und Gebäuden?",
+"es": "¿Cómo se refleja la historia de una ciudad en sus calles y edificios?",
+"fr": "Comment l'histoire d'une ville se lit-elle dans ses rues et ses bâtiments ?",
+"it": "Come si vede la storia di una città nelle sue strade e nei suoi edifici?",
+"pt": "Como se vê a história de uma cidade nas suas ruas e edifícios?",
+"pt_BR": "Como a história de uma cidade aparece nas ruas e nos prédios?"
+}
+},
+{
+"id": "city_guides-085",
+"lv": "advanced",
+"i18n": {
+"en": "Grid city or winding old town: which layout do you prefer to explore, and why?",
+"de": "Schachbrettstadt oder verwinkelte Altstadt: Was erkundest du lieber, und warum?",
+"es": "Ciudad en cuadrícula o casco antiguo laberíntico: ¿qué prefieres explorar y por qué?",
+"fr": "Ville en damier ou vieille ville sinueuse : laquelle préfères-tu explorer, et pourquoi ?",
+"it": "Città a scacchiera o centro storico tortuoso: quale preferisci esplorare, e perché?",
+"pt": "Cidade em quadrícula ou centro antigo labiríntico: qual preferes explorar e porquê?",
+"pt_BR": "Cidade planejada em quadras ou centro antigo cheio de vielas: qual você prefere explorar, e por quê?"
+}
+},
+{
+"id": "city_guides-086",
+"lv": "advanced",
+"i18n": {
+"en": "How would you design a themed walking tour for a city you love?",
+"de": "Wie würdest du eine thematische Stadtführung für eine Stadt gestalten, die du liebst?",
+"es": "¿Cómo diseñarías una ruta temática a pie por una ciudad que te encanta?",
+"fr": "Comment concevrais-tu une balade thématique dans une ville que tu aimes ?",
+"it": "Come progetteresti un percorso a piedi a tema in una città che ami?",
+"pt": "Como desenharias um passeio temático a pé numa cidade de que gostas?",
+"pt_BR": "Como você montaria um roteiro temático a pé numa cidade que ama?"
+}
+},
+{
+"id": "city_guides-087",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think cities will look like in fifty years?",
+"de": "Wie werden Städte deiner Meinung nach in fünfzig Jahren aussehen?",
+"es": "¿Cómo crees que serán las ciudades dentro de cincuenta años?",
+"fr": "À quoi ressembleront les villes dans cinquante ans, selon toi ?",
+"it": "Come pensi che saranno le città tra cinquant'anni?",
+"pt": "Como achas que serão as cidades daqui a cinquenta anos?",
+"pt_BR": "Como você acha que as cidades serão daqui a cinquenta anos?"
+}
+},
+{
+"id": "city_guides-088",
+"lv": "advanced",
+"i18n": {
+"en": "Is slow travel the best way to understand a city? Why or why not?",
+"de": "Ist langsames Reisen der beste Weg, eine Stadt zu verstehen? Warum oder warum nicht?",
+"es": "¿Es viajar despacio la mejor forma de entender una ciudad? ¿Por qué?",
+"fr": "Le voyage lent est-il la meilleure façon de comprendre une ville ? Pourquoi ?",
+"it": "Viaggiare con calma è il modo migliore per capire una città? Perché?",
+"pt": "Viajar devagar é a melhor forma de compreender uma cidade? Porquê?",
+"pt_BR": "Viajar devagar é o melhor jeito de entender uma cidade? Por quê?"
+}
+},
+{
+"id": "city_guides-089",
+"lv": "advanced",
+"i18n": {
+"en": "Compare two cities you know: what could each learn from the other?",
+"de": "Vergleiche zwei Städte, die du kennst: Was könnte jede von der anderen lernen?",
+"es": "Compara dos ciudades que conozcas: ¿qué podría aprender cada una de la otra?",
+"fr": "Compare deux villes que tu connais : que pourrait apprendre chacune de l'autre ?",
+"it": "Confronta due città che conosci: che cosa potrebbe imparare l'una dall'altra?",
+"pt": "Compara duas cidades que conheces: o que poderia cada uma aprender com a outra?",
+"pt_BR": "Compare duas cidades que você conhece: o que cada uma poderia aprender com a outra?"
+}
+},
+{
+"id": "city_guides-090",
+"lv": "advanced",
+"i18n": {
+"en": "How has a city you visited changed the way you see your own city?",
+"de": "Wie hat eine besuchte Stadt deinen Blick auf deine eigene Stadt verändert?",
+"es": "¿Cómo ha cambiado una ciudad que visitaste tu forma de ver tu propia ciudad?",
+"fr": "Comment une ville visitée a-t-elle changé ton regard sur ta propre ville ?",
+"it": "Come una città che hai visitato ha cambiato il tuo modo di vedere la tua?",
+"pt": "Como uma cidade que visitaste mudou a forma como vês a tua?",
+"pt_BR": "Como uma cidade que você visitou mudou o jeito como você vê a sua?"
+}
+},
+{
+"id": "city_guides-091",
+"lv": "advanced",
+"i18n": {
+"en": "What role do markets and squares play in the life of a community?",
+"de": "Welche Rolle spielen Märkte und Plätze im Leben einer Gemeinschaft?",
+"es": "¿Qué papel tienen los mercados y las plazas en la vida de una comunidad?",
+"fr": "Quel rôle jouent les marchés et les places dans la vie d'une communauté ?",
+"it": "Che ruolo hanno i mercati e le piazze nella vita di una comunità?",
+"pt": "Que papel têm os mercados e as praças na vida de uma comunidade?",
+"pt_BR": "Qual é o papel dos mercados e das praças na vida de uma comunidade?"
+}
+},
+{
+"id": "city_guides-092",
+"lv": "advanced",
+"i18n": {
+"en": "If you wrote a city guide for a friend, what would make it different from a guidebook?",
+"de": "Wenn du einen Stadtführer für eine Freundin schreiben würdest, was wäre anders als im Reiseführer?",
+"es": "Si escribieras una guía de una ciudad para un amigo, ¿en qué se distinguiría de una guía turística?",
+"fr": "Si tu écrivais un guide de ville pour un ami, en quoi serait-il différent d'un guide classique ?",
+"it": "Se scrivessi una guida di una città per un amico, in che cosa sarebbe diversa da una guida turistica?",
+"pt": "Se escrevesses um guia de uma cidade para um amigo, em que seria diferente de um guia turístico?",
+"pt_BR": "Se você escrevesse um guia de cidade para um amigo, o que o faria diferente de um guia turístico?"
+}
+},
+{
+"id": "city_guides-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which city taught you the most about another culture, and how?",
+"de": "Welche Stadt hat dir am meisten über eine andere Kultur beigebracht, und wie?",
+"es": "¿Qué ciudad te enseñó más sobre otra cultura y cómo?",
+"fr": "Quelle ville t'a le plus appris sur une autre culture, et comment ?",
+"it": "Quale città ti ha insegnato di più su un'altra cultura, e come?",
+"pt": "Que cidade te ensinou mais sobre outra cultura e como?",
+"pt_BR": "Qual cidade mais te ensinou sobre outra cultura, e como?"
+}
+},
+{
+"id": "city_guides-094",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a public square a place people truly want to spend time in?",
+"de": "Was macht einen Platz zu einem Ort, an dem Menschen wirklich gern Zeit verbringen?",
+"es": "¿Qué hace que una plaza sea un lugar donde la gente quiere pasar tiempo de verdad?",
+"fr": "Qu'est-ce qui fait qu'une place donne vraiment envie d'y passer du temps ?",
+"it": "Che cosa rende una piazza un luogo dove la gente vuole davvero trascorrere del tempo?",
+"pt": "O que faz de uma praça um lugar onde as pessoas querem mesmo passar tempo?",
+"pt_BR": "O que faz de uma praça um lugar onde as pessoas realmente querem passar o tempo?"
+}
+},
+{
+"id": "city_guides-095",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite memory from a city trip?",
+"de": "Was ist deine schönste Erinnerung an eine Städtereise?",
+"es": "¿Cuál es tu mejor recuerdo de un viaje a una ciudad?",
+"fr": "Quel est ton plus beau souvenir d'un voyage en ville ?",
+"it": "Qual è il tuo ricordo più bello di un viaggio in città?",
+"pt": "Qual é a tua melhor memória de uma viagem a uma cidade?",
+"pt_BR": "Qual é a sua lembrança favorita de uma viagem a uma cidade?"
+}
+},
+{
+"id": "city_guides-096",
+"lv": "beginner",
+"i18n": {
+"en": "What is the busiest street in your town, and what can you find there?",
+"de": "Was ist die belebteste Straße in deiner Stadt, und was findet man dort?",
+"es": "¿Cuál es la calle más concurrida de tu ciudad y qué hay en ella?",
+"fr": "Quelle est la rue la plus animée de ta ville, et qu'y trouve-t-on ?",
+"it": "Qual è la via più animata della tua città e che cosa ci si trova?",
+"pt": "Qual é a rua mais movimentada da tua cidade e o que se encontra lá?",
+"pt_BR": "Qual é a rua mais movimentada da sua cidade e o que tem lá?"
+}
+},
+{
+"id": "city_guides-097",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like trying the local snacks from street stalls?",
+"de": "Probierst du gern lokale Snacks an Straßenständen?",
+"es": "¿Te gusta probar los tentempiés locales de los puestos callejeros?",
+"fr": "Aimes-tu goûter les spécialités des stands de rue ?",
+"it": "Ti piace assaggiare gli snack locali dai chioschi di strada?",
+"pt": "Gostas de provar os petiscos locais das bancas de rua?",
+"pt_BR": "Você gosta de provar os lanches locais das barraquinhas de rua?"
+}
+},
+{
+"id": "city_guides-098",
+"lv": "beginner",
+"i18n": {
+"en": "Which museum in your city is your favourite?",
+"de": "Welches Museum in deiner Stadt magst du am liebsten?",
+"es": "¿Cuál es tu museo favorito de tu ciudad?",
+"fr": "Quel est ton musée préféré dans ta ville ?",
+"it": "Qual è il tuo museo preferito nella tua città?",
+"pt": "Qual é o teu museu preferido na tua cidade?",
+"pt_BR": "Qual é o seu museu favorito na sua cidade?"
+}
+},
+{
+"id": "city_guides-099",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer travelling to cities in summer or in winter?",
+"de": "Reist du lieber im Sommer oder im Winter in Städte?",
+"es": "¿Prefieres viajar a ciudades en verano o en invierno?",
+"fr": "Préfères-tu visiter des villes en été ou en hiver ?",
+"it": "Preferisci visitare le città d'estate o d'inverno?",
+"pt": "Preferes visitar cidades no verão ou no inverno?",
+"pt_BR": "Você prefere viajar para cidades no verão ou no inverno?"
+}
+},
+{
+"id": "city_guides-100",
+"lv": "beginner",
+"i18n": {
+"en": "What do you like to do on your first evening in a new place?",
+"de": "Was machst du gern am ersten Abend an einem neuen Ort?",
+"es": "¿Qué te gusta hacer la primera noche en un lugar nuevo?",
+"fr": "Qu'aimes-tu faire le premier soir dans un nouvel endroit ?",
+"it": "Che cosa ti piace fare la prima sera in un posto nuovo?",
+"pt": "O que gostas de fazer na primeira noite num sítio novo?",
+"pt_BR": "O que você gosta de fazer na primeira noite num lugar novo?"
+}
+}
+]
+}

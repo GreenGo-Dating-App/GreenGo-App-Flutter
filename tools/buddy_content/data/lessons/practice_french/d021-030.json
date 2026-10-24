@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular -er verbs",
+     "g": "Conjugate regular -er verbs, the biggest French verb family, in the present tense.",
+     "p": [
+      "Drop -er and add -e, -es, -e, -ons, -ez, -ent: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent.",
+      "Good news: je parle, tu parles, il parle and ils parlent all sound exactly the same.",
+      "Before a vowel, je becomes j' and the s of nous, vous, ils links with a z sound: j'aime, nous aimons."
+     ],
+     "q": "Tell me three things you do every week using -er verbs like travailler, parler or écouter.",
+     "c": "Pick one -er verb and conjugate it out loud for all six persons, then make one real sentence with it."
+    },
+    "de": {
+     "t": "Regelmäßige Verben auf -er",
+     "g": "Du konjugierst regelmäßige -er-Verben, die größte französische Verbfamilie, im Präsens.",
+     "p": [
+      "Streiche -er und hänge -e, -es, -e, -ons, -ez, -ent an: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent.",
+      "Gute Nachricht: je parle, tu parles, il parle und ils parlent klingen genau gleich.",
+      "Vor Vokal wird je zu j', und das s von nous, vous, ils wird als weiches s gebunden: j'aime, nous aimons."
+     ],
+     "q": "Erzähl mir drei Dinge, die du jede Woche machst, mit -er-Verben wie travailler, parler oder écouter.",
+     "c": "Nimm ein -er-Verb, konjugiere es laut für alle sechs Personen und bilde einen echten Satz damit."
+    },
+    "es": {
+     "t": "Verbos regulares en -er",
+     "g": "Conjuga los verbos regulares en -er, la mayor familia de verbos franceses, en presente.",
+     "p": [
+      "Quita -er y añade -e, -es, -e, -ons, -ez, -ent: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent.",
+      "Buena noticia: je parle, tu parles, il parle e ils parlent suenan exactamente igual.",
+      "Ante vocal, je se vuelve j' y la s de nous, vous, ils se enlaza con sonido z: j'aime, nous aimons."
+     ],
+     "q": "Dime tres cosas que haces cada semana con verbos en -er como travailler, parler o écouter.",
+     "c": "Elige un verbo en -er, conjúgalo en voz alta en las seis personas y haz una frase real con él."
+    },
+    "fr": {
+     "t": "Les verbes réguliers en -er",
+     "g": "Conjuguer au présent les verbes en -er, la plus grande famille de verbes français.",
+     "p": [
+      "On enlève -er et on ajoute -e, -es, -e, -ons, -ez, -ent : je parle, tu parles, nous parlons, vous parlez, ils parlent.",
+      "Bonne nouvelle : je parle, tu parles, il parle et ils parlent se prononcent de la même façon.",
+      "Devant une voyelle, je devient j' et on fait la liaison avec nous, vous, ils : j'aime, nous aimons."
+     ],
+     "q": "Dis-moi trois choses que tu fais chaque semaine avec des verbes comme travailler, parler ou écouter.",
+     "c": "Choisis un verbe en -er, conjugue-le à voix haute à toutes les personnes, puis fais une vraie phrase."
+    },
+    "it": {
+     "t": "Verbi regolari in -er",
+     "g": "Coniuga al presente i verbi regolari in -er, la famiglia di verbi più grande del francese.",
+     "p": [
+      "Togli -er e aggiungi -e, -es, -e, -ons, -ez, -ent: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent.",
+      "Buona notizia: je parle, tu parles, il parle e ils parlent si pronunciano esattamente uguali.",
+      "Davanti a vocale je diventa j', e la s di nous, vous, ils si lega con suono z: j'aime, nous aimons."
+     ],
+     "q": "Dimmi tre cose che fai ogni settimana con verbi in -er come travailler, parler o écouter.",
+     "c": "Scegli un verbo in -er, coniugalo ad alta voce per tutte e sei le persone e fai una frase vera."
+    },
+    "pt": {
+     "t": "Verbos regulares em -er",
+     "g": "Conjugar no presente os verbos regulares em -er, a maior família de verbos franceses.",
+     "p": [
+      "Tira -er e junta -e, -es, -e, -ons, -ez, -ent: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent.",
+      "Boa notícia: je parle, tu parles, il parle e ils parlent soam exatamente igual.",
+      "Antes de vogal, je passa a j' e o s de nous, vous, ils liga-se com som de z: j'aime, nous aimons."
+     ],
+     "q": "Diz-me três coisas que fazes todas as semanas com verbos em -er como travailler, parler ou écouter.",
+     "c": "Escolhe um verbo em -er, conjuga-o em voz alta nas seis pessoas e faz uma frase verdadeira com ele."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares em -er",
+     "g": "Conjugar no presente os verbos regulares em -er, a maior família de verbos do francês.",
+     "p": [
+      "Tire o -er e coloque -e, -es, -e, -ons, -ez, -ent: je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent.",
+      "Boa notícia: je parle, tu parles, il parle e ils parlent têm exatamente o mesmo som.",
+      "Antes de vogal, je vira j' e o s de nous, vous, ils se liga com som de z: j'aime, nous aimons."
+     ],
+     "q": "Me conte três coisas que você faz toda semana com verbos em -er como travailler, parler ou écouter.",
+     "c": "Escolha um verbo em -er, conjugue em voz alta nas seis pessoas e faça uma frase de verdade com ele."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parler",
+      "ex": "Je parle français et anglais."
+     },
+     {
+      "w": "habiter",
+      "ex": "Nous habitons à Toulouse."
+     },
+     {
+      "w": "travailler",
+      "ex": "Tu travailles le samedi ?"
+     },
+     {
+      "w": "écouter",
+      "ex": "Ils écoutent de la musique."
+     },
+     {
+      "w": "regarder",
+      "ex": "Vous regardez un film ?"
+     },
+     {
+      "w": "manger",
+      "ex": "Nous mangeons à midi."
+     }
+    ],
+    "gram": "Verbes en -er : radical + e, es, e, ons, ez, ent. Je parle, tu parles, il parle, ils parlent : même prononciation."
+   }
+  },
+  {
+   "d": 22,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "J'aime, je n'aime pas",
+     "g": "Say what you like and dislike in French, from love to hate.",
+     "p": [
+      "J'aime means I like or love; j'adore is stronger; je déteste means I hate, often said with a smile about small things.",
+      "After these verbs, use the article: j'aime le chocolat, je déteste les lundis, never j'aime chocolat.",
+      "Je préfère means I prefer: je préfère le thé; you can also add a verb: j'aime danser, j'adore voyager."
+     ],
+     "q": "Qu'est-ce que tu aimes et qu'est-ce que tu détestes? Give me one of each.",
+     "c": "Write a list of three things you adore and two you don't like, in full French sentences."
+    },
+    "de": {
+     "t": "J'aime, je n'aime pas",
+     "g": "Du sagst auf Französisch, was du magst und was nicht, von Liebe bis Abneigung.",
+     "p": [
+      "J'aime heißt ich mag; j'adore ist stärker; je déteste heißt ich hasse, oft augenzwinkernd über Kleinigkeiten.",
+      "Danach steht der Artikel: j'aime le chocolat, je déteste les lundis, nie j'aime chocolat.",
+      "Je préfère heißt ich bevorzuge: je préfère le thé; auch mit Verb: j'aime danser, j'adore voyager."
+     ],
+     "q": "Qu'est-ce que tu aimes et qu'est-ce que tu détestes? Nenn mir je ein Beispiel.",
+     "c": "Schreib eine Liste mit drei Dingen, die du liebst, und zwei, die du nicht magst, in ganzen Sätzen."
+    },
+    "es": {
+     "t": "J'aime, je n'aime pas",
+     "g": "Di en francés lo que te gusta y lo que no, del amor al odio.",
+     "p": [
+      "J'aime significa me gusta; j'adore es más fuerte, me encanta; je déteste es odio, a menudo con humor.",
+      "Detrás va el artículo: j'aime le chocolat, je déteste les lundis, nunca j'aime chocolat.",
+      "Je préfère es prefiero: je préfère le thé; también con verbo: j'aime danser, j'adore voyager."
+     ],
+     "q": "Qu'est-ce que tu aimes et qu'est-ce que tu détestes? Dame un ejemplo de cada.",
+     "c": "Escribe una lista de tres cosas que te encantan y dos que no te gustan, en frases completas."
+    },
+    "fr": {
+     "t": "J'aime, je n'aime pas",
+     "g": "Exprimer ses goûts, du plus fort au plus faible.",
+     "p": [
+      "J'aime, j'adore (plus fort) et je déteste (le contraire), souvent avec humour pour les petites choses.",
+      "Après ces verbes, on garde l'article : j'aime le chocolat, je déteste les lundis.",
+      "Je préfère sert à choisir : je préfère le thé ; on peut aussi ajouter un infinitif : j'adore voyager."
+     ],
+     "q": "Qu'est-ce que tu aimes et qu'est-ce que tu détestes ? Donne un exemple de chaque.",
+     "c": "Écris trois choses que tu adores et deux que tu n'aimes pas, en phrases complètes."
+    },
+    "it": {
+     "t": "J'aime, je n'aime pas",
+     "g": "Di' in francese cosa ti piace e cosa no, dall'amore all'odio.",
+     "p": [
+      "J'aime significa mi piace; j'adore è più forte, adoro; je déteste è odio, spesso detto con ironia.",
+      "Dopo questi verbi serve l'articolo: j'aime le chocolat, je déteste les lundis, mai j'aime chocolat.",
+      "Je préfère significa preferisco: je préfère le thé; anche con un verbo: j'aime danser, j'adore voyager."
+     ],
+     "q": "Qu'est-ce que tu aimes et qu'est-ce que tu détestes? Dammi un esempio per ciascuno.",
+     "c": "Scrivi una lista di tre cose che adori e due che non ti piacciono, con frasi complete."
+    },
+    "pt": {
+     "t": "J'aime, je n'aime pas",
+     "g": "Dizer em francês do que gostas e do que não gostas, do amor ao ódio.",
+     "p": [
+      "J'aime quer dizer gosto; j'adore é mais forte, adoro; je déteste é detesto, muitas vezes com humor.",
+      "Depois vem o artigo: j'aime le chocolat, je déteste les lundis, nunca j'aime chocolat.",
+      "Je préfère quer dizer prefiro: je préfère le thé; também com verbo: j'aime danser, j'adore voyager."
+     ],
+     "q": "Qu'est-ce que tu aimes et qu'est-ce que tu détestes? Dá-me um exemplo de cada.",
+     "c": "Escreve uma lista de três coisas que adoras e duas de que não gostas, em frases completas."
+    },
+    "pt_BR": {
+     "t": "J'aime, je n'aime pas",
+     "g": "Dizer em francês do que você gosta e do que não gosta, do amor ao ódio.",
+     "p": [
+      "J'aime quer dizer eu gosto; j'adore é mais forte, eu adoro; je déteste é eu detesto, muitas vezes com humor.",
+      "Depois vem o artigo: j'aime le chocolat, je déteste les lundis, nunca j'aime chocolat.",
+      "Je préfère quer dizer prefiro: je préfère le thé; também com verbo: j'aime danser, j'adore voyager."
+     ],
+     "q": "Qu'est-ce que tu aimes et qu'est-ce que tu détestes? Me dê um exemplo de cada.",
+     "c": "Escreva uma lista de três coisas que você adora e duas de que não gosta, em frases completas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aimer",
+      "ex": "J'aime le cinéma français."
+     },
+     {
+      "w": "adorer",
+      "ex": "Elle adore la musique."
+     },
+     {
+      "w": "détester",
+      "ex": "Je déteste attendre le bus."
+     },
+     {
+      "w": "préférer",
+      "ex": "Tu préfères le thé ou le café ?"
+     },
+     {
+      "w": "ne pas aimer",
+      "ex": "Il n'aime pas le fromage."
+     },
+     {
+      "w": "beaucoup",
+      "ex": "J'aime beaucoup lire."
+     }
+    ],
+    "gram": "Aimer, adorer, détester, préférer + article (j'aime le thé) ou + infinitif (j'adore voyager). Je préfère : é devient è."
+   }
+  },
+  {
+   "d": 23,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Saying no: ne... pas",
+     "g": "Make French sentences negative with ne... pas, and add never and nothing.",
+     "p": [
+      "Wrap the verb: je parle becomes je ne parle pas; before a vowel ne becomes n': je n'aime pas.",
+      "Swap pas for other words: ne... jamais means never and ne... rien means nothing: je ne mange rien.",
+      "In negative sentences un, une and des become de: j'ai un chat turns into je n'ai pas de chat."
+     ],
+     "q": "Tell me two things you never do with ne... jamais.",
+     "c": "Turn five positive sentences about your day into negative ones with ne... pas, jamais or rien."
+    },
+    "de": {
+     "t": "Verneinung: ne... pas",
+     "g": "Du verneinst französische Sätze mit ne... pas und sagst nie und nichts.",
+     "p": [
+      "Das Verb wird eingerahmt: je parle wird zu je ne parle pas; vor Vokal wird ne zu n': je n'aime pas.",
+      "Statt pas gehen auch andere Wörter: ne... jamais heißt nie, ne... rien heißt nichts: je ne mange rien.",
+      "Nach Verneinung werden un, une und des zu de: j'ai un chat wird zu je n'ai pas de chat."
+     ],
+     "q": "Erzähl mir zwei Dinge, die du nie machst, mit ne... jamais.",
+     "c": "Mach aus fünf positiven Sätzen über deinen Tag verneinte mit ne... pas, jamais oder rien."
+    },
+    "es": {
+     "t": "Decir no: ne... pas",
+     "g": "Niega frases en francés con ne... pas y añade nunca y nada.",
+     "p": [
+      "El verbo queda en medio: je parle pasa a je ne parle pas; ante vocal ne se vuelve n': je n'aime pas.",
+      "Cambia pas por otras palabras: ne... jamais es nunca y ne... rien es nada: je ne mange rien.",
+      "En negativa, un, une y des se convierten en de: j'ai un chat pasa a je n'ai pas de chat."
+     ],
+     "q": "Dime dos cosas que no haces nunca con ne... jamais.",
+     "c": "Transforma cinco frases positivas sobre tu día en negativas con ne... pas, jamais o rien."
+    },
+    "fr": {
+     "t": "La négation : ne... pas",
+     "g": "Former la négation avec ne... pas, et aussi ne... jamais et ne... rien.",
+     "p": [
+      "La négation encadre le verbe : je ne parle pas ; devant une voyelle, ne devient n' : je n'aime pas.",
+      "Ne... jamais exprime l'idée de jamais, ne... rien l'absence de chose : je ne mange rien.",
+      "Après la négation, un, une, des deviennent de : je n'ai pas de chat. À l'oral, le ne disparaît souvent."
+     ],
+     "q": "Cite deux choses que tu ne fais jamais, avec ne... jamais.",
+     "c": "Transforme cinq phrases positives sur ta journée en phrases négatives avec pas, jamais ou rien."
+    },
+    "it": {
+     "t": "Dire di no: ne... pas",
+     "g": "Rendi negative le frasi francesi con ne... pas e aggiungi mai e niente.",
+     "p": [
+      "Il verbo sta in mezzo: je parle diventa je ne parle pas; davanti a vocale ne diventa n': je n'aime pas.",
+      "Al posto di pas: ne... jamais significa mai e ne... rien niente: je ne mange rien.",
+      "Nella negazione un, une e des diventano de: j'ai un chat diventa je n'ai pas de chat."
+     ],
+     "q": "Dimmi due cose che non fai mai, con ne... jamais.",
+     "c": "Trasforma cinque frasi positive sulla tua giornata in negative con ne... pas, jamais o rien."
+    },
+    "pt": {
+     "t": "Dizer não: ne... pas",
+     "g": "Pôr frases francesas na negativa com ne... pas e juntar nunca e nada.",
+     "p": [
+      "O verbo fica no meio: je parle passa a je ne parle pas; antes de vogal ne passa a n': je n'aime pas.",
+      "Troca pas por outras palavras: ne... jamais é nunca e ne... rien é nada: je ne mange rien.",
+      "Na negativa, un, une e des passam a de: j'ai un chat passa a je n'ai pas de chat."
+     ],
+     "q": "Diz-me duas coisas que nunca fazes, com ne... jamais.",
+     "c": "Transforma cinco frases positivas sobre o teu dia em negativas com ne... pas, jamais ou rien."
+    },
+    "pt_BR": {
+     "t": "Dizendo não: ne... pas",
+     "g": "Colocar frases francesas na negativa com ne... pas e acrescentar nunca e nada.",
+     "p": [
+      "O verbo fica no meio: je parle vira je ne parle pas; antes de vogal ne vira n': je n'aime pas.",
+      "Troque pas por outras palavras: ne... jamais é nunca e ne... rien é nada: je ne mange rien.",
+      "Na negativa, un, une e des viram de: j'ai un chat vira je n'ai pas de chat."
+     ],
+     "q": "Me conte duas coisas que você nunca faz, com ne... jamais.",
+     "c": "Transforme cinco frases positivas sobre o seu dia em negativas com ne... pas, jamais ou rien."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ne... pas",
+      "ex": "Je ne parle pas allemand."
+     },
+     {
+      "w": "ne... jamais",
+      "ex": "Il ne mange jamais de viande."
+     },
+     {
+      "w": "ne... rien",
+      "ex": "Je ne comprends rien !"
+     },
+     {
+      "w": "pas de",
+      "ex": "Nous n'avons pas de voiture."
+     },
+     {
+      "w": "n'est pas",
+      "ex": "Ce n'est pas loin."
+     },
+     {
+      "w": "non, merci",
+      "ex": "Non, merci, je n'ai pas faim."
+     }
+    ],
+    "gram": "Ne + verbe + pas/jamais/rien : je ne parle pas. N' devant voyelle. Un, une, des → de : je n'ai pas de chat."
+   }
+  },
+  {
+   "d": 24,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking questions",
+     "g": "Ask yes-or-no questions in French in three ways, from casual to formal.",
+     "p": [
+      "The easiest way: keep the sentence and raise your voice at the end. Tu parles français?",
+      "Put est-ce que in front for a clear, neutral question: est-ce que tu parles français?",
+      "Inversion swaps verb and subject with a hyphen, more formal and written: parlez-vous français?"
+     ],
+     "q": "Ask me one question about my day using est-ce que, and I will answer you.",
+     "c": "Ask the same question in all three ways today, out loud, and notice how the tone changes."
+    },
+    "de": {
+     "t": "Fragen stellen",
+     "g": "Du stellst Ja-Nein-Fragen auf Französisch auf drei Arten, von locker bis förmlich.",
+     "p": [
+      "Am einfachsten: Satz behalten und die Stimme am Ende heben. Tu parles français?",
+      "Mit est-ce que davor wird die Frage klar und neutral: est-ce que tu parles français?",
+      "Die Inversion tauscht Verb und Subjekt mit Bindestrich, förmlicher: parlez-vous français?"
+     ],
+     "q": "Stell mir eine Frage zu meinem Tag mit est-ce que, und ich antworte dir.",
+     "c": "Stell heute dieselbe Frage laut auf alle drei Arten und achte darauf, wie sich der Ton ändert."
+    },
+    "es": {
+     "t": "Hacer preguntas",
+     "g": "Haz preguntas de sí o no en francés de tres maneras, de informal a formal.",
+     "p": [
+      "La más fácil: mantén la frase y sube la voz al final, como en español. Tu parles français?",
+      "Pon est-ce que delante para una pregunta clara y neutra: est-ce que tu parles français?",
+      "La inversión cambia verbo y sujeto con guion, más formal: parlez-vous français?"
+     ],
+     "q": "Hazme una pregunta sobre mi día con est-ce que y te responderé.",
+     "c": "Haz hoy la misma pregunta de las tres maneras en voz alta y nota cómo cambia el tono."
+    },
+    "fr": {
+     "t": "Poser des questions",
+     "g": "Poser une question fermée de trois façons, de la plus familière à la plus soutenue.",
+     "p": [
+      "À l'oral, on garde la phrase et on monte la voix à la fin : tu parles français ?",
+      "Est-ce que donne une question claire et neutre : est-ce que tu parles français ?",
+      "L'inversion, plus soutenue, inverse verbe et sujet avec un trait d'union : parlez-vous français ?"
+     ],
+     "q": "Pose-moi une question sur ma journée avec est-ce que, et je te réponds.",
+     "c": "Pose la même question des trois façons aujourd'hui, à voix haute, et observe le changement de ton."
+    },
+    "it": {
+     "t": "Fare domande",
+     "g": "Fai domande sì o no in francese in tre modi, dal colloquiale al formale.",
+     "p": [
+      "Il modo più facile: tieni la frase e alza la voce alla fine, come in italiano. Tu parles français?",
+      "Metti est-ce que davanti per una domanda chiara e neutra: est-ce que tu parles français?",
+      "L'inversione scambia verbo e soggetto con il trattino, più formale: parlez-vous français?"
+     ],
+     "q": "Fammi una domanda sulla mia giornata con est-ce que, e io ti rispondo.",
+     "c": "Oggi fai la stessa domanda nei tre modi ad alta voce e nota come cambia il tono."
+    },
+    "pt": {
+     "t": "Fazer perguntas",
+     "g": "Fazer perguntas de sim ou não em francês de três maneiras, do informal ao formal.",
+     "p": [
+      "A mais fácil: mantém a frase e sobe a voz no fim, como em português. Tu parles français?",
+      "Põe est-ce que à frente para uma pergunta clara e neutra: est-ce que tu parles français?",
+      "A inversão troca verbo e sujeito com hífen, mais formal: parlez-vous français?"
+     ],
+     "q": "Faz-me uma pergunta sobre o meu dia com est-ce que, e eu respondo.",
+     "c": "Faz hoje a mesma pergunta das três maneiras em voz alta e repara como muda o tom."
+    },
+    "pt_BR": {
+     "t": "Fazendo perguntas",
+     "g": "Fazer perguntas de sim ou não em francês de três jeitos, do informal ao formal.",
+     "p": [
+      "O jeito mais fácil: mantenha a frase e suba a voz no final, como em português. Tu parles français?",
+      "Coloque est-ce que na frente para uma pergunta clara e neutra: est-ce que tu parles français?",
+      "A inversão troca verbo e sujeito com hífen, mais formal: parlez-vous français?"
+     ],
+     "q": "Me faça uma pergunta sobre o meu dia com est-ce que, e eu respondo.",
+     "c": "Hoje faça a mesma pergunta dos três jeitos em voz alta e repare como o tom muda."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "est-ce que",
+      "ex": "Est-ce que tu aimes le sport ?"
+     },
+     {
+      "w": "Tu parles français ?",
+      "ex": "Tu parles français ? Un peu !"
+     },
+     {
+      "w": "Parlez-vous anglais ?",
+      "ex": "Pardon, parlez-vous anglais ?"
+     },
+     {
+      "w": "oui",
+      "ex": "Oui, j'habite ici."
+     },
+     {
+      "w": "non",
+      "ex": "Non, je ne suis pas étudiant."
+     },
+     {
+      "w": "si",
+      "ex": "Tu n'as pas faim ? Si, un peu !"
+     }
+    ],
+    "gram": "Trois façons : intonation (tu viens ?), est-ce que (est-ce que tu viens ?), inversion (viens-tu ?). Si répond oui à une question négative."
+   }
+  },
+  {
+   "d": 25,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Question words",
+     "g": "Ask open questions in French with qui, quoi, où, quand, comment, pourquoi and combien.",
+     "p": [
+      "Qui is who, où where, quand when, comment how, pourquoi why and combien how much or how many.",
+      "Casual French often puts the word at the end: tu habites où? Neutral French uses est-ce que: où est-ce que tu habites?",
+      "Qu'est-ce que asks what at the start: qu'est-ce que tu fais? At the end, use quoi: tu fais quoi?"
+     ],
+     "q": "Ask me three questions with three different question words. I am ready!",
+     "c": "Write five questions with five different question words that you could ask a new French friend."
+    },
+    "de": {
+     "t": "Fragewörter",
+     "g": "Du stellst offene Fragen mit qui, quoi, où, quand, comment, pourquoi und combien.",
+     "p": [
+      "Qui heißt wer, où wo, quand wann, comment wie, pourquoi warum und combien wie viel.",
+      "Locker steht das Fragewort oft am Ende: tu habites où? Neutral mit est-ce que: où est-ce que tu habites?",
+      "Was am Satzanfang ist qu'est-ce que: qu'est-ce que tu fais? Am Ende sagt man quoi: tu fais quoi?"
+     ],
+     "q": "Stell mir drei Fragen mit drei verschiedenen Fragewörtern. Ich bin bereit!",
+     "c": "Schreib fünf Fragen mit fünf Fragewörtern, die du einer neuen französischen Freundin stellen könntest."
+    },
+    "es": {
+     "t": "Palabras interrogativas",
+     "g": "Haz preguntas abiertas en francés con qui, quoi, où, quand, comment, pourquoi y combien.",
+     "p": [
+      "Qui es quién, où dónde, quand cuándo, comment cómo, pourquoi por qué y combien cuánto.",
+      "En lenguaje coloquial la palabra va al final: tu habites où? En neutro con est-ce que: où est-ce que tu habites?",
+      "Qué al inicio es qu'est-ce que: qu'est-ce que tu fais? Al final se dice quoi: tu fais quoi?"
+     ],
+     "q": "Hazme tres preguntas con tres palabras interrogativas distintas. ¡Estoy listo!",
+     "c": "Escribe cinco preguntas con cinco palabras interrogativas para un nuevo amigo francés."
+    },
+    "fr": {
+     "t": "Les mots interrogatifs",
+     "g": "Poser des questions ouvertes avec qui, quoi, où, quand, comment, pourquoi et combien.",
+     "p": [
+      "Qui pour la personne, où pour le lieu, quand pour le temps, comment pour la manière, pourquoi pour la cause.",
+      "À l'oral, le mot se place souvent à la fin : tu habites où ? En neutre : où est-ce que tu habites ?",
+      "En début de phrase on dit qu'est-ce que tu fais ? ; en fin de phrase, tu fais quoi ?"
+     ],
+     "q": "Pose-moi trois questions avec trois mots interrogatifs différents. Je suis prêt !",
+     "c": "Écris cinq questions avec cinq mots interrogatifs différents pour un nouvel ami."
+    },
+    "it": {
+     "t": "Le parole interrogative",
+     "g": "Fai domande aperte in francese con qui, quoi, où, quand, comment, pourquoi e combien.",
+     "p": [
+      "Qui è chi, où dove, quand quando, comment come, pourquoi perché e combien quanto.",
+      "Nel parlato la parola va spesso alla fine: tu habites où? In modo neutro: où est-ce que tu habites?",
+      "Cosa a inizio frase è qu'est-ce que: qu'est-ce que tu fais? Alla fine si dice quoi: tu fais quoi?"
+     ],
+     "q": "Fammi tre domande con tre parole interrogative diverse. Sono pronto!",
+     "c": "Scrivi cinque domande con cinque parole interrogative da fare a un nuovo amico francese."
+    },
+    "pt": {
+     "t": "Palavras interrogativas",
+     "g": "Fazer perguntas abertas em francês com qui, quoi, où, quand, comment, pourquoi e combien.",
+     "p": [
+      "Qui é quem, où onde, quand quando, comment como, pourquoi porquê e combien quanto.",
+      "Na fala informal a palavra vai muitas vezes para o fim: tu habites où? Neutro: où est-ce que tu habites?",
+      "O que no início é qu'est-ce que: qu'est-ce que tu fais? No fim diz-se quoi: tu fais quoi?"
+     ],
+     "q": "Faz-me três perguntas com três palavras interrogativas diferentes. Estou pronto!",
+     "c": "Escreve cinco perguntas com cinco palavras interrogativas para um novo amigo francês."
+    },
+    "pt_BR": {
+     "t": "Palavras interrogativas",
+     "g": "Fazer perguntas abertas em francês com qui, quoi, où, quand, comment, pourquoi e combien.",
+     "p": [
+      "Qui é quem, où onde, quand quando, comment como, pourquoi por que e combien quanto.",
+      "Na fala informal a palavra costuma ir para o fim: tu habites où? Neutro: où est-ce que tu habites?",
+      "O que no começo é qu'est-ce que: qu'est-ce que tu fais? No final se diz quoi: tu fais quoi?"
+     ],
+     "q": "Me faça três perguntas com três palavras interrogativas diferentes. Estou pronto!",
+     "c": "Escreva cinco perguntas com cinco palavras interrogativas para um novo amigo francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "qui",
+      "ex": "Qui est-ce ? C'est mon frère."
+     },
+     {
+      "w": "où",
+      "ex": "Tu habites où ?"
+     },
+     {
+      "w": "quand",
+      "ex": "Quand est-ce que tu arrives ?"
+     },
+     {
+      "w": "comment",
+      "ex": "Comment tu vas au travail ?"
+     },
+     {
+      "w": "pourquoi",
+      "ex": "Pourquoi tu apprends le français ?"
+     },
+     {
+      "w": "combien",
+      "ex": "Combien de frères as-tu ?"
+     }
+    ],
+    "gram": "Qui, quoi, où, quand, comment, pourquoi, combien. Début : où est-ce que tu vas ? Fin (oral) : tu vas où ? Quoi → qu'est-ce que."
+   }
+  },
+  {
+   "d": 26,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Colours and agreement",
+     "g": "Learn the colours in French and make them agree with the noun they describe.",
+     "p": [
+      "Common colours: rouge, bleu, vert, jaune, noir, blanc, gris, rose, violet; they come after the noun: une voiture rouge.",
+      "Add -e for feminine and -s for plural: un sac vert, une robe verte, des sacs verts, des robes vertes.",
+      "Some change more (blanc, blanche; violet, violette), and orange and marron never change: des chaussures marron."
+     ],
+     "q": "What colour is your favourite piece of clothing? Describe it in French.",
+     "c": "Name the colours of five things around you, making each colour agree with its noun."
+    },
+    "de": {
+     "t": "Farben und Angleichung",
+     "g": "Du lernst die Farben auf Französisch und passt sie an das Nomen an.",
+     "p": [
+      "Häufige Farben: rouge, bleu, vert, jaune, noir, blanc, gris, rose, violet; sie stehen nach dem Nomen: une voiture rouge.",
+      "Weiblich -e, Plural -s: un sac vert, une robe verte, des sacs verts, des robes vertes.",
+      "Manche ändern sich stärker (blanc, blanche; violet, violette); orange und marron bleiben immer gleich."
+     ],
+     "q": "Welche Farbe hat dein Lieblingskleidungsstück? Beschreib es auf Französisch.",
+     "c": "Nenn die Farben von fünf Dingen um dich herum und gleiche jede Farbe an ihr Nomen an."
+    },
+    "es": {
+     "t": "Colores y concordancia",
+     "g": "Aprende los colores en francés y haz que concuerden con el sustantivo.",
+     "p": [
+      "Colores comunes: rouge, bleu, vert, jaune, noir, blanc, gris, rose, violet; van detrás: une voiture rouge.",
+      "Se añade -e en femenino y -s en plural: un sac vert, une robe verte, des sacs verts, des robes vertes.",
+      "Algunos cambian más (blanc, blanche; violet, violette), y orange y marron nunca cambian."
+     ],
+     "q": "¿De qué color es tu prenda favorita? Descríbela en francés.",
+     "c": "Di el color de cinco cosas a tu alrededor, haciendo concordar cada color con su sustantivo."
+    },
+    "fr": {
+     "t": "Les couleurs et l'accord",
+     "g": "Nommer les couleurs et les accorder avec le nom.",
+     "p": [
+      "Les couleurs se placent après le nom : une voiture rouge, un pull bleu, des yeux noirs.",
+      "On ajoute -e au féminin et -s au pluriel : un sac vert, une robe verte, des robes vertes.",
+      "Certaines changent davantage (blanc, blanche ; violet, violette) ; orange et marron restent invariables."
+     ],
+     "q": "De quelle couleur est ton vêtement préféré ? Décris-le.",
+     "c": "Nomme la couleur de cinq objets autour de toi en faisant bien l'accord."
+    },
+    "it": {
+     "t": "I colori e l'accordo",
+     "g": "Impara i colori in francese e accordali con il nome.",
+     "p": [
+      "Colori comuni: rouge, bleu, vert, jaune, noir, blanc, gris, rose, violet; vanno dopo il nome: une voiture rouge.",
+      "Aggiungi -e al femminile e -s al plurale: un sac vert, une robe verte, des sacs verts, des robes vertes.",
+      "Alcuni cambiano di più (blanc, blanche; violet, violette); orange e marron non cambiano mai."
+     ],
+     "q": "Di che colore è il tuo capo preferito? Descrivilo in francese.",
+     "c": "Di' il colore di cinque cose intorno a te, accordando ogni colore con il suo nome."
+    },
+    "pt": {
+     "t": "Cores e concordância",
+     "g": "Aprender as cores em francês e fazê-las concordar com o nome.",
+     "p": [
+      "Cores comuns: rouge, bleu, vert, jaune, noir, blanc, gris, rose, violet; vêm depois do nome: une voiture rouge.",
+      "Junta -e no feminino e -s no plural: un sac vert, une robe verte, des sacs verts, des robes vertes.",
+      "Algumas mudam mais (blanc, blanche; violet, violette), e orange e marron nunca mudam."
+     ],
+     "q": "De que cor é a tua peça de roupa preferida? Descreve-a em francês.",
+     "c": "Diz a cor de cinco coisas à tua volta, fazendo cada cor concordar com o nome."
+    },
+    "pt_BR": {
+     "t": "Cores e concordância",
+     "g": "Aprender as cores em francês e fazer a concordância com o substantivo.",
+     "p": [
+      "Cores comuns: rouge, bleu, vert, jaune, noir, blanc, gris, rose, violet; vêm depois: une voiture rouge.",
+      "Acrescente -e no feminino e -s no plural: un sac vert, une robe verte, des sacs verts, des robes vertes.",
+      "Algumas mudam mais (blanc, blanche; violet, violette), e orange e marron nunca mudam."
+     ],
+     "q": "De que cor é sua roupa favorita? Descreva em francês.",
+     "c": "Diga a cor de cinco coisas ao seu redor, fazendo a concordância de cada cor com o substantivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rouge",
+      "ex": "J'ai une valise rouge."
+     },
+     {
+      "w": "vert, verte",
+      "ex": "Elle porte une robe verte."
+     },
+     {
+      "w": "bleu, bleue",
+      "ex": "Le ciel est bleu aujourd'hui."
+     },
+     {
+      "w": "blanc, blanche",
+      "ex": "J'ai une chemise blanche."
+     },
+     {
+      "w": "noir, noire",
+      "ex": "Ses chaussures sont noires."
+     },
+     {
+      "w": "marron",
+      "ex": "Il a les yeux marron."
+     }
+    ],
+    "gram": "La couleur suit le nom et s'accorde : vert, verte, verts, vertes. Blanc → blanche. Orange et marron sont invariables."
+   }
+  },
+  {
+   "d": 27,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing people",
+     "g": "Describe what people look like and what they are like in French.",
+     "p": [
+      "For looks: grand (tall), petit (short), jeune (young), mince (slim), with avoir for hair and eyes: elle a les cheveux bruns.",
+      "For personality: sympa (nice), gentil (kind), drôle (funny), timide (shy), sérieux (serious).",
+      "Make adjectives agree: il est grand, elle est grande; il est gentil, elle est gentille; sympa never changes."
+     ],
+     "q": "Describe your best friend to me in three sentences: looks and personality.",
+     "c": "Describe two people you know today in French, one with three looks words and one with three personality words."
+    },
+    "de": {
+     "t": "Menschen beschreiben",
+     "g": "Du beschreibst auf Französisch, wie Menschen aussehen und wie sie sind.",
+     "p": [
+      "Aussehen: grand (groß), petit (klein), jeune (jung), mince (schlank); Haare und Augen mit avoir: elle a les cheveux bruns.",
+      "Charakter: sympa (nett), gentil (lieb), drôle (lustig), timide (schüchtern), sérieux (ernst).",
+      "Adjektive angleichen: il est grand, elle est grande; il est gentil, elle est gentille; sympa bleibt gleich."
+     ],
+     "q": "Beschreib mir deine beste Freundin oder deinen besten Freund in drei Sätzen: Aussehen und Charakter.",
+     "c": "Beschreib heute zwei Menschen auf Französisch, einmal mit drei Wörtern zum Aussehen, einmal zum Charakter."
+    },
+    "es": {
+     "t": "Describir a las personas",
+     "g": "Describe en francés cómo es físicamente una persona y cómo es su carácter.",
+     "p": [
+      "Físico: grand (alto), petit (bajo), jeune (joven), mince (delgado); pelo y ojos con avoir: elle a les cheveux bruns.",
+      "Carácter: sympa (majo), gentil (amable), drôle (gracioso), timide (tímido), sérieux (serio).",
+      "Concuerda los adjetivos: il est grand, elle est grande; il est gentil, elle est gentille; sympa no cambia."
+     ],
+     "q": "Descríbeme a tu mejor amigo en tres frases: físico y carácter.",
+     "c": "Describe hoy en francés a dos personas, una con tres palabras de físico y otra con tres de carácter."
+    },
+    "fr": {
+     "t": "Décrire une personne",
+     "g": "Décrire l'apparence et le caractère de quelqu'un.",
+     "p": [
+      "Pour le physique : grand, petit, jeune, mince ; pour les cheveux et les yeux, avoir : elle a les cheveux bruns.",
+      "Pour le caractère : sympa, gentil, drôle, timide, sérieux, généreux.",
+      "L'adjectif s'accorde : il est grand, elle est grande ; gentil, gentille ; sympa ne change pas."
+     ],
+     "q": "Décris-moi ton meilleur ami en trois phrases : physique et caractère.",
+     "c": "Décris deux personnes aujourd'hui : l'une avec trois mots de physique, l'autre avec trois mots de caractère."
+    },
+    "it": {
+     "t": "Descrivere le persone",
+     "g": "Descrivi in francese l'aspetto e il carattere delle persone.",
+     "p": [
+      "Aspetto: grand (alto), petit (basso), jeune (giovane), mince (magro); capelli e occhi con avoir: elle a les cheveux bruns.",
+      "Carattere: sympa (simpatico), gentil (gentile), drôle (divertente), timide (timido), sérieux (serio).",
+      "Accorda gli aggettivi: il est grand, elle est grande; il est gentil, elle est gentille; sympa non cambia."
+     ],
+     "q": "Descrivimi il tuo migliore amico in tre frasi: aspetto e carattere.",
+     "c": "Oggi descrivi in francese due persone, una con tre parole sull'aspetto e una con tre sul carattere."
+    },
+    "pt": {
+     "t": "Descrever pessoas",
+     "g": "Descrever em francês o aspeto e a personalidade das pessoas.",
+     "p": [
+      "Aspeto: grand (alto), petit (baixo), jeune (jovem), mince (magro); cabelo e olhos com avoir: elle a les cheveux bruns.",
+      "Personalidade: sympa (simpático), gentil (querido), drôle (engraçado), timide (tímido), sérieux (sério).",
+      "Concorda os adjetivos: il est grand, elle est grande; il est gentil, elle est gentille; sympa não muda."
+     ],
+     "q": "Descreve-me o teu melhor amigo em três frases: aspeto e personalidade.",
+     "c": "Descreve hoje duas pessoas em francês, uma com três palavras de aspeto e outra com três de personalidade."
+    },
+    "pt_BR": {
+     "t": "Descrevendo pessoas",
+     "g": "Descrever em francês a aparência e a personalidade das pessoas.",
+     "p": [
+      "Aparência: grand (alto), petit (baixo), jeune (jovem), mince (magro); cabelo e olhos com avoir: elle a les cheveux bruns.",
+      "Personalidade: sympa (gente boa), gentil (gentil), drôle (engraçado), timide (tímido), sérieux (sério).",
+      "Faça a concordância: il est grand, elle est grande; il est gentil, elle est gentille; sympa não muda."
+     ],
+     "q": "Descreva seu melhor amigo para mim em três frases: aparência e personalidade.",
+     "c": "Hoje descreva duas pessoas em francês, uma com três palavras de aparência e outra com três de personalidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "grand, grande",
+      "ex": "Mon frère est très grand."
+     },
+     {
+      "w": "petit, petite",
+      "ex": "Ma grand-mère est petite."
+     },
+     {
+      "w": "sympa",
+      "ex": "Tes amis sont vraiment sympas."
+     },
+     {
+      "w": "gentil, gentille",
+      "ex": "Elle est gentille avec tout le monde."
+     },
+     {
+      "w": "drôle",
+      "ex": "Mon oncle est très drôle."
+     },
+     {
+      "w": "les cheveux",
+      "ex": "Il a les cheveux courts et blonds."
+     }
+    ],
+    "gram": "L'adjectif s'accorde : grand/grande, gentil/gentille. Cheveux et yeux avec avoir : elle a les yeux verts. Sympa est épicène."
+   }
+  },
+  {
+   "d": 28,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Adjective position",
+     "g": "Place French adjectives correctly: most go after the noun, a few short ones go before.",
+     "p": [
+      "Most adjectives follow the noun: un film intéressant, une ville moderne, un chat noir.",
+      "A small group goes before: beau, bon, petit, grand, jeune, vieux, joli, nouveau: une petite maison, un bon café.",
+      "Before a plural adjective, des often becomes de in writing: de belles fleurs; beau becomes bel before a vowel: un bel ami."
+     ],
+     "q": "Describe your town in two sentences: one adjective before the noun and one after.",
+     "c": "Write four phrases with petit, bon, grand and joli before the noun, and four with adjectives after it."
+    },
+    "de": {
+     "t": "Stellung der Adjektive",
+     "g": "Du stellst französische Adjektive richtig: die meisten nach dem Nomen, einige kurze davor.",
+     "p": [
+      "Die meisten stehen nach dem Nomen, anders als im Deutschen: un film intéressant, une ville moderne.",
+      "Eine kleine Gruppe steht davor: beau, bon, petit, grand, jeune, vieux, joli, nouveau: une petite maison.",
+      "Vor einem Plural-Adjektiv wird des schriftlich oft zu de: de belles fleurs; beau wird vor Vokal zu bel: un bel ami."
+     ],
+     "q": "Beschreib deine Stadt in zwei Sätzen: ein Adjektiv vor und eins nach dem Nomen.",
+     "c": "Schreib vier Ausdrücke mit petit, bon, grand und joli vor dem Nomen und vier mit Adjektiv danach."
+    },
+    "es": {
+     "t": "La posición del adjetivo",
+     "g": "Coloca bien los adjetivos franceses: casi todos detrás del nombre, unos pocos delante.",
+     "p": [
+      "La mayoría va detrás, como en español: un film intéressant, une ville moderne, un chat noir.",
+      "Un pequeño grupo va delante: beau, bon, petit, grand, jeune, vieux, joli, nouveau: une petite maison.",
+      "Ante un adjetivo plural, des suele pasar a de por escrito: de belles fleurs; beau pasa a bel ante vocal: un bel ami."
+     ],
+     "q": "Describe tu ciudad en dos frases: un adjetivo delante del nombre y otro detrás.",
+     "c": "Escribe cuatro expresiones con petit, bon, grand y joli delante y cuatro con adjetivos detrás."
+    },
+    "fr": {
+     "t": "La place de l'adjectif",
+     "g": "Placer correctement l'adjectif : en général après le nom, parfois avant.",
+     "p": [
+      "La plupart des adjectifs suivent le nom : un film intéressant, une ville moderne, un chat noir.",
+      "Quelques adjectifs courts se placent avant : beau, bon, petit, grand, jeune, vieux, joli, nouveau.",
+      "À l'écrit, des devient de devant un adjectif pluriel : de belles fleurs ; beau devient bel : un bel ami."
+     ],
+     "q": "Décris ta ville en deux phrases : un adjectif avant le nom et un après.",
+     "c": "Écris quatre groupes avec petit, bon, grand et joli avant le nom, et quatre avec un adjectif après."
+    },
+    "it": {
+     "t": "La posizione dell'aggettivo",
+     "g": "Metti al posto giusto gli aggettivi francesi: quasi tutti dopo il nome, alcuni corti prima.",
+     "p": [
+      "La maggior parte va dopo il nome: un film intéressant, une ville moderne, un chat noir.",
+      "Un piccolo gruppo va prima: beau, bon, petit, grand, jeune, vieux, joli, nouveau: une petite maison.",
+      "Davanti a un aggettivo plurale, des diventa spesso de nello scritto: de belles fleurs; beau diventa bel: un bel ami."
+     ],
+     "q": "Descrivi la tua città in due frasi: un aggettivo prima del nome e uno dopo.",
+     "c": "Scrivi quattro espressioni con petit, bon, grand e joli prima del nome e quattro con aggettivi dopo."
+    },
+    "pt": {
+     "t": "A posição do adjetivo",
+     "g": "Pôr bem os adjetivos franceses: quase todos depois do nome, alguns curtos antes.",
+     "p": [
+      "A maioria vem depois do nome, como em português: un film intéressant, une ville moderne.",
+      "Um pequeno grupo vem antes: beau, bon, petit, grand, jeune, vieux, joli, nouveau: une petite maison.",
+      "Antes de um adjetivo no plural, des passa muitas vezes a de por escrito: de belles fleurs; beau passa a bel: un bel ami."
+     ],
+     "q": "Descreve a tua cidade em duas frases: um adjetivo antes do nome e outro depois.",
+     "c": "Escreve quatro expressões com petit, bon, grand e joli antes do nome e quatro com adjetivos depois."
+    },
+    "pt_BR": {
+     "t": "A posição do adjetivo",
+     "g": "Colocar os adjetivos franceses no lugar certo: quase todos depois do nome, alguns curtos antes.",
+     "p": [
+      "A maioria vem depois do nome, como em português: un film intéressant, une ville moderne.",
+      "Um grupinho vem antes: beau, bon, petit, grand, jeune, vieux, joli, nouveau: une petite maison.",
+      "Antes de adjetivo no plural, des costuma virar de na escrita: de belles fleurs; beau vira bel: un bel ami."
+     ],
+     "q": "Descreva sua cidade em duas frases: um adjetivo antes do nome e outro depois.",
+     "c": "Escreva quatro expressões com petit, bon, grand e joli antes do nome e quatro com adjetivos depois."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un bon café",
+      "ex": "On boit un bon café ?"
+     },
+     {
+      "w": "une petite maison",
+      "ex": "Ils ont une petite maison."
+     },
+     {
+      "w": "une jolie ville",
+      "ex": "Annecy est une jolie ville."
+     },
+     {
+      "w": "un film intéressant",
+      "ex": "C'est un film intéressant."
+     },
+     {
+      "w": "un nouveau travail",
+      "ex": "J'ai un nouveau travail."
+     },
+     {
+      "w": "un vieux livre",
+      "ex": "C'est un vieux livre de ma mère."
+     }
+    ],
+    "gram": "Adjectif en général après le nom (un film intéressant). Avant : beau, bon, petit, grand, jeune, vieux, joli, nouveau."
+   }
+  },
+  {
+   "d": 29,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling the time",
+     "g": "Ask and tell the time in French, including quarter past, half past and quarter to.",
+     "p": [
+      "Ask quelle heure est-il? and answer with il est plus the hour: il est trois heures.",
+      "Et quart is quarter past, et demie half past, moins le quart quarter to: il est huit heures moins le quart.",
+      "Midi is noon and minuit midnight; timetables use the 24-hour clock: le train part à dix-sept heures trente."
+     ],
+     "q": "Quelle heure est-il chez toi maintenant? Answer in a full French sentence.",
+     "c": "Each time you look at a clock today, say the time quietly in French."
+    },
+    "de": {
+     "t": "Die Uhrzeit",
+     "g": "Du fragst und sagst die Uhrzeit auf Französisch, mit Viertel nach, halb und Viertel vor.",
+     "p": [
+      "Frag quelle heure est-il? und antworte mit il est und der Stunde: il est trois heures.",
+      "Et quart heißt Viertel nach, et demie halb, moins le quart Viertel vor; Achtung: deux heures et demie ist halb drei.",
+      "Midi heißt Mittag, minuit Mitternacht; Fahrpläne nutzen 24 Stunden: le train part à dix-sept heures trente."
+     ],
+     "q": "Quelle heure est-il bei dir gerade? Antworte in einem ganzen französischen Satz.",
+     "c": "Sag heute jedes Mal, wenn du auf die Uhr schaust, leise die Uhrzeit auf Französisch."
+    },
+    "es": {
+     "t": "La hora",
+     "g": "Pregunta y di la hora en francés, con y cuarto, y media y menos cuarto.",
+     "p": [
+      "Pregunta quelle heure est-il? y responde con il est y la hora: il est trois heures.",
+      "Et quart es y cuarto, et demie y media, moins le quart menos cuarto: il est huit heures moins le quart.",
+      "Midi es mediodía y minuit medianoche; los horarios usan 24 h: le train part à dix-sept heures trente."
+     ],
+     "q": "Quelle heure est-il donde estás ahora? Responde con una frase completa en francés.",
+     "c": "Cada vez que mires un reloj hoy, di la hora en voz baja en francés."
+    },
+    "fr": {
+     "t": "Dire l'heure",
+     "g": "Demander et dire l'heure, avec et quart, et demie et moins le quart.",
+     "p": [
+      "On demande quelle heure est-il ? et on répond il est trois heures, toujours avec le mot heure.",
+      "Et quart, et demie, moins le quart : il est huit heures moins le quart, il est midi et demi.",
+      "Midi et minuit remplacent douze heures ; les horaires officiels comptent sur 24 h : dix-sept heures trente."
+     ],
+     "q": "Quelle heure est-il chez toi en ce moment ? Réponds par une phrase complète.",
+     "c": "Chaque fois que tu regardes une horloge aujourd'hui, dis l'heure à voix basse."
+    },
+    "it": {
+     "t": "Dire l'ora",
+     "g": "Chiedi e di' l'ora in francese, con e un quarto, e mezza e meno un quarto.",
+     "p": [
+      "Chiedi quelle heure est-il? e rispondi con il est e l'ora: il est trois heures.",
+      "Et quart è e un quarto, et demie e mezza, moins le quart meno un quarto: il est huit heures moins le quart.",
+      "Midi è mezzogiorno e minuit mezzanotte; gli orari usano le 24 ore: le train part à dix-sept heures trente."
+     ],
+     "q": "Quelle heure est-il da te adesso? Rispondi con una frase completa in francese.",
+     "c": "Oggi, ogni volta che guardi un orologio, di' l'ora sottovoce in francese."
+    },
+    "pt": {
+     "t": "As horas",
+     "g": "Perguntar e dizer as horas em francês, com e um quarto, e meia e menos um quarto.",
+     "p": [
+      "Pergunta quelle heure est-il? e responde com il est e a hora: il est trois heures.",
+      "Et quart é e um quarto, et demie e meia, moins le quart menos um quarto: il est huit heures moins le quart.",
+      "Midi é meio-dia e minuit meia-noite; os horários usam 24 horas: le train part à dix-sept heures trente."
+     ],
+     "q": "Quelle heure est-il aí agora? Responde com uma frase completa em francês.",
+     "c": "Sempre que olhares para um relógio hoje, diz as horas baixinho em francês."
+    },
+    "pt_BR": {
+     "t": "As horas",
+     "g": "Perguntar e dizer as horas em francês, com e quinze, e meia e quinze para.",
+     "p": [
+      "Pergunte quelle heure est-il? e responda com il est e a hora: il est trois heures.",
+      "Et quart é e quinze, et demie e meia, moins le quart quinze para: il est huit heures moins le quart.",
+      "Midi é meio-dia e minuit meia-noite; horários usam 24 horas: le train part à dix-sept heures trente."
+     ],
+     "q": "Quelle heure est-il aí agora? Responda com uma frase completa em francês.",
+     "c": "Toda vez que olhar para um relógio hoje, diga as horas baixinho em francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Quelle heure est-il ?",
+      "ex": "Pardon, quelle heure est-il ?"
+     },
+     {
+      "w": "il est... heures",
+      "ex": "Il est dix heures."
+     },
+     {
+      "w": "et quart",
+      "ex": "Il est sept heures et quart."
+     },
+     {
+      "w": "et demie",
+      "ex": "Le film commence à neuf heures et demie."
+     },
+     {
+      "w": "moins le quart",
+      "ex": "Il est midi moins le quart."
+     },
+     {
+      "w": "minuit",
+      "ex": "Je dors à minuit."
+     }
+    ],
+    "gram": "Il est trois heures (et quart, et demie, moins le quart). Midi et demi, minuit et demi. Horaires : 24 h (dix-sept heures trente)."
+   }
+  },
+  {
+   "d": 30,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: first month of French",
+     "g": "Bring together everything from your first month in one friendly French chat.",
+     "p": [
+      "You can greet, introduce yourself, choose tu or vous, and count, spell and tell the time.",
+      "You know être, avoir and -er verbs, articles le, la, un, une, des, and negation with ne... pas.",
+      "You can ask questions, describe people with agreeing adjectives, and talk about likes and family."
+     ],
+     "q": "Introduce yourself to me in five French sentences: name, origin, age, family and one thing you love.",
+     "c": "Record yourself, or write, a one-minute French introduction using at least one point from each week."
+    },
+    "de": {
+     "t": "Rückblick: der erste Monat",
+     "g": "Du verbindest alles aus deinem ersten Monat in einem freundlichen Gespräch auf Französisch.",
+     "p": [
+      "Du kannst grüßen, dich vorstellen, tu oder vous wählen, zählen, buchstabieren und die Uhrzeit sagen.",
+      "Du kennst être, avoir und -er-Verben, die Artikel le, la, un, une, des und die Verneinung mit ne... pas.",
+      "Du kannst Fragen stellen, Menschen mit angeglichenen Adjektiven beschreiben und über Vorlieben und Familie sprechen."
+     ],
+     "q": "Stell dich mir in fünf französischen Sätzen vor: Name, Herkunft, Alter, Familie und etwas, das du liebst.",
+     "c": "Nimm dich auf oder schreib eine einminütige Vorstellung auf Französisch, mit je einem Punkt aus jeder Woche."
+    },
+    "es": {
+     "t": "Repaso: el primer mes",
+     "g": "Reúne todo lo de tu primer mes en una charla amistosa en francés.",
+     "p": [
+      "Ya sabes saludar, presentarte, elegir tu o vous, contar, deletrear y decir la hora.",
+      "Conoces être, avoir y los verbos en -er, los artículos le, la, un, une, des y la negación ne... pas.",
+      "Sabes hacer preguntas, describir personas con adjetivos que concuerdan y hablar de gustos y familia."
+     ],
+     "q": "Preséntate en cinco frases en francés: nombre, origen, edad, familia y algo que te encanta.",
+     "c": "Grábate, o escribe, una presentación de un minuto en francés con al menos un punto de cada semana."
+    },
+    "fr": {
+     "t": "Bilan : le premier mois",
+     "g": "Réunir tout le premier mois dans une conversation amicale.",
+     "p": [
+      "Tu sais saluer, te présenter, choisir entre tu et vous, compter, épeler et dire l'heure.",
+      "Tu connais être, avoir, les verbes en -er, les articles le, la, un, une, des et la négation ne... pas.",
+      "Tu sais poser des questions, décrire des personnes avec des adjectifs accordés et parler de tes goûts."
+     ],
+     "q": "Présente-toi en cinq phrases : prénom, origine, âge, famille et une chose que tu adores.",
+     "c": "Enregistre-toi ou écris une présentation d'une minute avec au moins un point de chaque semaine."
+    },
+    "it": {
+     "t": "Ripasso: il primo mese",
+     "g": "Metti insieme tutto il primo mese in una chiacchierata amichevole in francese.",
+     "p": [
+      "Sai salutare, presentarti, scegliere tra tu e vous, contare, fare lo spelling e dire l'ora.",
+      "Conosci être, avoir e i verbi in -er, gli articoli le, la, un, une, des e la negazione ne... pas.",
+      "Sai fare domande, descrivere persone con aggettivi accordati e parlare di gusti e famiglia."
+     ],
+     "q": "Presentati in cinque frasi in francese: nome, provenienza, età, famiglia e una cosa che adori.",
+     "c": "Registrati, o scrivi, una presentazione di un minuto in francese con almeno un punto di ogni settimana."
+    },
+    "pt": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Juntar tudo do primeiro mês numa conversa simpática em francês.",
+     "p": [
+      "Já sabes cumprimentar, apresentar-te, escolher tu ou vous, contar, soletrar e dizer as horas.",
+      "Conheces être, avoir e os verbos em -er, os artigos le, la, un, une, des e a negação ne... pas.",
+      "Sabes fazer perguntas, descrever pessoas com adjetivos concordados e falar de gostos e família."
+     ],
+     "q": "Apresenta-te em cinco frases em francês: nome, origem, idade, família e uma coisa que adoras.",
+     "c": "Grava-te, ou escreve, uma apresentação de um minuto em francês com pelo menos um ponto de cada semana."
+    },
+    "pt_BR": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Juntar tudo do primeiro mês numa conversa gostosa em francês.",
+     "p": [
+      "Você já sabe cumprimentar, se apresentar, escolher tu ou vous, contar, soletrar e dizer as horas.",
+      "Você conhece être, avoir e os verbos em -er, os artigos le, la, un, une, des e a negação ne... pas.",
+      "Você sabe fazer perguntas, descrever pessoas com adjetivos concordando e falar de gostos e família."
+     ],
+     "q": "Se apresente em cinco frases em francês: nome, origem, idade, família e uma coisa que você adora.",
+     "c": "Grave você mesmo, ou escreva, uma apresentação de um minuto em francês com um ponto de cada semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je me présente",
+      "ex": "Bonjour, je me présente : je suis Ana."
+     },
+     {
+      "w": "j'ai... ans",
+      "ex": "J'ai trente ans."
+     },
+     {
+      "w": "je viens de",
+      "ex": "Je viens du Portugal."
+     },
+     {
+      "w": "j'adore",
+      "ex": "J'adore la cuisine française."
+     },
+     {
+      "w": "je ne... pas",
+      "ex": "Je ne parle pas encore très bien."
+     },
+     {
+      "w": "À bientôt !",
+      "ex": "Merci pour la conversation, à bientôt !"
+     }
+    ],
+    "gram": "Bilan : être (je suis), avoir (j'ai), verbes en -er (je parle), articles, négation ne... pas, questions avec est-ce que."
+   }
+  }
+ ]
+}

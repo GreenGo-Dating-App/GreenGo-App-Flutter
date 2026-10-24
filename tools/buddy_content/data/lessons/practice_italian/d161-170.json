@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 161,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Making appointments formally",
+     "g": "Book a haircut, a visit or a meeting by phone or email.",
+     "p": [
+      "Start: buongiorno, vorrei prendere un appuntamento (make an appointment) per un taglio / per una visita / con il dottor Neri.",
+      "Agree on a time: quando sarebbe disponibile?, va bene giovedì alle 10?, preferirei il pomeriggio, ha qualcosa prima?",
+      "Change or cancel: vorrei spostare l'appuntamento (move it), devo disdire (cancel). Confirm: allora ci vediamo martedì."
+     ],
+     "q": "How would you book a haircut in Italian? What day and time would you ask for?",
+     "c": "Write a short phone dialogue booking an appointment, then one sentence moving it to another day."
+    },
+    "de": {
+     "t": "Förmlich Termine vereinbaren",
+     "g": "Du vereinbarst telefonisch oder per E-Mail einen Friseur-, Arzt- oder Besprechungstermin.",
+     "p": [
+      "Einstieg: buongiorno, vorrei prendere un appuntamento (Termin machen) per un taglio / per una visita / con il dottor Neri.",
+      "Uhrzeit absprechen: quando sarebbe disponibile?, va bene giovedì alle 10?, preferirei il pomeriggio, ha qualcosa prima?",
+      "Verschieben oder absagen: vorrei spostare l'appuntamento, devo disdire (absagen). Bestätigen: allora ci vediamo martedì."
+     ],
+     "q": "Wie würdest du auf Italienisch einen Friseurtermin machen? Welchen Tag und welche Uhrzeit möchtest du?",
+     "c": "Schreib einen kurzen Telefondialog für einen Termin und dann einen Satz, mit dem du ihn verschiebst."
+    },
+    "es": {
+     "t": "Pedir cita formalmente",
+     "g": "Pedir cita en la peluquería, una consulta o una reunión por teléfono o correo.",
+     "p": [
+      "Empieza: buongiorno, vorrei prendere un appuntamento (pedir cita) per un taglio / per una visita / con il dottor Neri.",
+      "Acordad la hora: quando sarebbe disponibile?, va bene giovedì alle 10?, preferirei il pomeriggio, ha qualcosa prima?",
+      "Cambiar o anular: vorrei spostare l'appuntamento (cambiarla), devo disdire (anular). Confirma: allora ci vediamo martedì."
+     ],
+     "q": "¿Cómo pedirías cita en la peluquería en italiano? ¿Qué día y hora pedirías?",
+     "c": "Escribe un diálogo telefónico corto pidiendo cita y luego una frase para cambiarla a otro día."
+    },
+    "fr": {
+     "t": "Prendre rendez-vous formellement",
+     "g": "Prendre rendez-vous chez le coiffeur, le médecin ou pour une réunion, par téléphone ou e-mail.",
+     "p": [
+      "Début : buongiorno, vorrei prendere un appuntamento per un taglio / per una visita / con il dottor Neri.",
+      "Fixer l'heure : quando sarebbe disponibile ?, va bene giovedì alle 10 ?, preferirei il pomeriggio, ha qualcosa prima ?",
+      "Déplacer ou annuler : vorrei spostare l'appuntamento, devo disdire (annuler). Confirmer : allora ci vediamo martedì."
+     ],
+     "q": "Comment prendrais-tu rendez-vous chez le coiffeur en italien ? Quel jour et quelle heure demanderais-tu ?",
+     "c": "Écris un court dialogue téléphonique pour prendre rendez-vous, puis une phrase pour le déplacer."
+    },
+    "it": {
+     "t": "Prendere un appuntamento",
+     "g": "Prendere un appuntamento dal parrucchiere, dal medico o per una riunione, al telefono o per email.",
+     "p": [
+      "Per cominciare: buongiorno, vorrei prendere un appuntamento per un taglio / per una visita / con il dottor Neri.",
+      "Per l'orario: quando sarebbe disponibile?, va bene giovedì alle 10?, preferirei il pomeriggio, ha qualcosa prima?",
+      "Spostare o disdire: vorrei spostare l'appuntamento, purtroppo devo disdire. Conferma: allora ci vediamo martedì."
+     ],
+     "q": "Come prenderesti un appuntamento dal parrucchiere? Che giorno e che ora chiederesti?",
+     "c": "Scrivi un breve dialogo al telefono per prendere un appuntamento, poi una frase per spostarlo a un altro giorno."
+    },
+    "pt": {
+     "t": "Marcar uma consulta formalmente",
+     "g": "Marcar o cabeleireiro, uma consulta ou uma reunião por telefone ou email.",
+     "p": [
+      "Começa: buongiorno, vorrei prendere un appuntamento (marcar) per un taglio / per una visita / con il dottor Neri.",
+      "Combina a hora: quando sarebbe disponibile?, va bene giovedì alle 10?, preferirei il pomeriggio, ha qualcosa prima?",
+      "Mudar ou desmarcar: vorrei spostare l'appuntamento, devo disdire (desmarcar). Confirma: allora ci vediamo martedì."
+     ],
+     "q": "Como marcarias o cabeleireiro em italiano? Que dia e que hora pedirias?",
+     "c": "Escreve um diálogo telefónico curto a marcar uma hora e depois uma frase para a passar para outro dia."
+    },
+    "pt_BR": {
+     "t": "Marcar horário formalmente",
+     "g": "Marcar cabeleireiro, consulta ou reunião por telefone ou e-mail.",
+     "p": [
+      "Comece: buongiorno, vorrei prendere un appuntamento (marcar horário) per un taglio / per una visita / con il dottor Neri.",
+      "Combine o horário: quando sarebbe disponibile?, va bene giovedì alle 10?, preferirei il pomeriggio, ha qualcosa prima?",
+      "Mudar ou cancelar: vorrei spostare l'appuntamento, devo disdire (desmarcar). Confirme: allora ci vediamo martedì."
+     ],
+     "q": "Como você marcaria cabeleireiro em italiano? Que dia e horário pediria?",
+     "c": "Escreva um diálogo curto por telefone marcando um horário e depois uma frase remarcando para outro dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "prendere un appuntamento",
+      "ex": "Vorrei prendere un appuntamento per venerdì."
+     },
+     {
+      "w": "sarebbe disponibile",
+      "ex": "Quando sarebbe disponibile per un incontro?"
+     },
+     {
+      "w": "preferirei",
+      "ex": "Preferirei la mattina, se possibile."
+     },
+     {
+      "w": "spostare",
+      "ex": "Possiamo spostare la riunione a lunedì?"
+     },
+     {
+      "w": "disdire",
+      "ex": "Mi dispiace, devo disdire l'appuntamento."
+     },
+     {
+      "w": "allora ci vediamo",
+      "ex": "Perfetto, allora ci vediamo giovedì alle tre."
+     }
+    ],
+    "gram": "Prendere appuntamento dal parrucchiere, dal medico (da + persona/luogo); con il dottore. Condizionale per cortesia."
+   }
+  },
+  {
+   "d": 162,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Shopping online",
+     "g": "Buy and return things online in Italian.",
+     "p": [
+      "The basics: il sito, il carrello (cart), aggiungere al carrello, ordinare, pagare con la carta, l'ordine (order).",
+      "Delivery: la spedizione (shipping), spedizione gratuita, la consegna (delivery), arriva in tre giorni, il corriere (courier).",
+      "Returns: il reso, fare un reso, restituire (give back), il rimborso. Common problem: il pacco non è arrivato."
+     ],
+     "q": "Do you shop online often? What was the last thing you ordered?",
+     "c": "Write a short message to an online shop: your order has not arrived or the size is wrong, and you want a reso."
+    },
+    "de": {
+     "t": "Online einkaufen",
+     "g": "Du kaufst online auf Italienisch ein und schickst Dinge zurück.",
+     "p": [
+      "Grundlagen: il sito, il carrello (Warenkorb), aggiungere al carrello, ordinare, pagare con la carta, l'ordine (Bestellung).",
+      "Lieferung: la spedizione (Versand), spedizione gratuita, la consegna (Zustellung), arriva in tre giorni, il corriere (Kurier).",
+      "Rückgabe: il reso, fare un reso, restituire (zurückgeben), il rimborso. Häufiges Problem: il pacco non è arrivato."
+     ],
+     "q": "Kaufst du oft online ein? Was hast du zuletzt bestellt?",
+     "c": "Schreib einem Onlineshop eine kurze Nachricht: Deine Bestellung ist nicht angekommen oder die Größe ist falsch, du willst einen reso."
+    },
+    "es": {
+     "t": "Comprar por internet",
+     "g": "Comprar y devolver cosas por internet en italiano.",
+     "p": [
+      "Lo básico: il sito, il carrello (carrito), aggiungere al carrello, ordinare (pedir), pagare con la carta, l'ordine (pedido).",
+      "Envío: la spedizione, spedizione gratuita, la consegna (entrega), arriva in tre giorni, il corriere (mensajero).",
+      "Devoluciones: il reso, fare un reso, restituire (devolver), il rimborso. Problema típico: il pacco non è arrivato."
+     ],
+     "q": "¿Compras a menudo por internet? ¿Qué fue lo último que pediste?",
+     "c": "Escribe un mensaje corto a una tienda online: tu pedido no ha llegado o la talla está mal y quieres un reso."
+    },
+    "fr": {
+     "t": "Acheter en ligne",
+     "g": "Acheter et retourner des articles en ligne en italien.",
+     "p": [
+      "Les bases : il sito, il carrello (panier), aggiungere al carrello, ordinare (commander), pagare con la carta, l'ordine.",
+      "Livraison : la spedizione (envoi), spedizione gratuita, la consegna (livraison), arriva in tre giorni, il corriere (livreur).",
+      "Retours : il reso, fare un reso, restituire (rendre), il rimborso. Problème courant : il pacco non è arrivato."
+     ],
+     "q": "Achètes-tu souvent en ligne ? Quelle est la dernière chose que tu as commandée ?",
+     "c": "Écris un court message à une boutique en ligne : ta commande n'est pas arrivée ou la taille ne va pas, tu veux un reso."
+    },
+    "it": {
+     "t": "Fare acquisti online",
+     "g": "Comprare e restituire prodotti online.",
+     "p": [
+      "Le basi: il sito, il carrello, aggiungere al carrello, ordinare, pagare con la carta, l'ordine, il codice dell'ordine.",
+      "La spedizione: spedizione gratuita, la consegna, arriva in tre giorni, il corriere, tracciare il pacco.",
+      "Il reso: fare un reso, restituire un prodotto, il rimborso. Problema frequente: il pacco non è arrivato."
+     ],
+     "q": "Fai spesso acquisti online? Qual è l'ultima cosa che hai ordinato?",
+     "c": "Scrivi un breve messaggio a un negozio online: l'ordine non è arrivato o la taglia è sbagliata, e vuoi fare un reso."
+    },
+    "pt": {
+     "t": "Compras online",
+     "g": "Comprar e devolver coisas online em italiano.",
+     "p": [
+      "O básico: il sito, il carrello (carrinho), aggiungere al carrello, ordinare (encomendar), pagare con la carta, l'ordine (encomenda).",
+      "Envio: la spedizione, spedizione gratuita, la consegna (entrega), arriva in tre giorni, il corriere (estafeta).",
+      "Devoluções: il reso, fare un reso, restituire (devolver), il rimborso. Problema típico: il pacco non è arrivato."
+     ],
+     "q": "Fazes compras online com frequência? Qual foi a última coisa que encomendaste?",
+     "c": "Escreve uma mensagem curta a uma loja online: a encomenda não chegou ou o tamanho está errado, e queres um reso."
+    },
+    "pt_BR": {
+     "t": "Compras pela internet",
+     "g": "Comprar e devolver coisas pela internet em italiano.",
+     "p": [
+      "O básico: il sito, il carrello (carrinho), aggiungere al carrello, ordinare (fazer o pedido), pagare con la carta, l'ordine (pedido).",
+      "Entrega: la spedizione (frete, envio), spedizione gratuita, la consegna, arriva in tre giorni, il corriere (transportadora).",
+      "Devoluções: il reso, fare un reso, restituire (devolver), il rimborso. Problema comum: il pacco non è arrivato."
+     ],
+     "q": "Você compra muito pela internet? Qual foi a última coisa que pediu?",
+     "c": "Escreva uma mensagem curta para uma loja online: o pedido não chegou ou o tamanho está errado, e você quer um reso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il carrello",
+      "ex": "Ho aggiunto due libri al carrello."
+     },
+     {
+      "w": "ordinare",
+      "ex": "Ho ordinato un paio di scarpe online."
+     },
+     {
+      "w": "la spedizione",
+      "ex": "La spedizione è gratuita sopra una certa cifra."
+     },
+     {
+      "w": "la consegna",
+      "ex": "La consegna è prevista per mercoledì."
+     },
+     {
+      "w": "fare un reso",
+      "ex": "La giacca è troppo grande, devo fare un reso."
+     },
+     {
+      "w": "il pacco non è arrivato",
+      "ex": "Buongiorno, il pacco non è ancora arrivato."
+     }
+    ],
+    "gram": "Ancora / già con il passato prossimo: il pacco non è ancora arrivato; l'ho già pagato. Aggiungere qualcosa al carrello."
+   }
+  },
+  {
+   "d": 163,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Bello, buono and grande",
+     "g": "Use the short forms of bello, buono and grande before nouns.",
+     "p": [
+      "Bello before a noun works like the article: bel ragazzo, bell'albero, bello stadio, bei libri, begli occhi, bella casa.",
+      "Buono works like un: buon giorno, buon amico, buono studente, buon'idea. After the noun it stays buono: un vino buono.",
+      "Grande can shorten to gran before a noun: una gran festa, un gran lavoro. Gran is informal and very common."
+     ],
+     "q": "What is something bello in your town, and a buon ristorante you like?",
+     "c": "Write six phrases: three with bel, bell', bei and three with buon or gran."
+    },
+    "de": {
+     "t": "Bello, buono und grande",
+     "g": "Du benutzt die Kurzformen von bello, buono und grande vor Nomen.",
+     "p": [
+      "Bello vor dem Nomen verhält sich wie der Artikel: bel ragazzo, bell'albero, bello stadio, bei libri, begli occhi, bella casa.",
+      "Buono verhält sich wie un: buon giorno, buon amico, buono studente, buon'idea. Nach dem Nomen bleibt buono: un vino buono.",
+      "Grande kann vor dem Nomen zu gran werden: una gran festa, un gran lavoro. Gran ist umgangssprachlich und sehr häufig."
+     ],
+     "q": "Was ist in deiner Stadt bello, und welches buon ristorante magst du?",
+     "c": "Schreib sechs Ausdrücke: drei mit bel, bell', bei und drei mit buon oder gran."
+    },
+    "es": {
+     "t": "Bello, buono y grande",
+     "g": "Usar las formas cortas de bello, buono y grande delante del sustantivo.",
+     "p": [
+      "Bello delante del sustantivo se comporta como el artículo: bel ragazzo, bell'albero, bello stadio, bei libri, begli occhi, bella casa.",
+      "Buono funciona como un: buon giorno, buon amico, buono studente, buon'idea. Detrás queda buono: un vino buono.",
+      "Grande puede acortarse en gran delante: una gran festa, un gran lavoro. Como en español gran fiesta."
+     ],
+     "q": "¿Qué es bello en tu ciudad y qué buon ristorante te gusta?",
+     "c": "Escribe seis expresiones: tres con bel, bell', bei y tres con buon o gran."
+    },
+    "fr": {
+     "t": "Bello, buono et grande",
+     "g": "Employer les formes courtes de bello, buono et grande devant le nom.",
+     "p": [
+      "Bello devant le nom suit l'article : bel ragazzo, bell'albero, bello stadio, bei libri, begli occhi, bella casa.",
+      "Buono suit un : buon giorno, buon amico, buono studente, buon'idea. Après le nom, il reste buono : un vino buono.",
+      "Grande peut devenir gran devant le nom : una gran festa, un gran lavoro. Gran est familier et très courant."
+     ],
+     "q": "Qu'est-ce qui est bello dans ta ville, et quel buon ristorante aimes-tu ?",
+     "c": "Écris six expressions : trois avec bel, bell', bei et trois avec buon ou gran."
+    },
+    "it": {
+     "t": "Bello, buono e grande",
+     "g": "Usare le forme tronche di bello, buono e grande davanti ai nomi.",
+     "p": [
+      "Bello davanti al nome segue l'articolo: bel ragazzo, bell'albero, bello stadio, bei libri, begli occhi, bella casa.",
+      "Buono segue un: buon giorno, buon amico, buono studente, buon'idea. Dopo il nome resta buono: un vino buono.",
+      "Grande davanti al nome può diventare gran: una gran festa, un gran lavoro. Gran è colloquiale e molto usato."
+     ],
+     "q": "Che cosa c'è di bello nella tua città? E qual è un buon ristorante che ti piace?",
+     "c": "Scrivi sei espressioni: tre con bel, bell', bei e tre con buon o gran."
+    },
+    "pt": {
+     "t": "Bello, buono e grande",
+     "g": "Usar as formas curtas de bello, buono e grande antes do nome.",
+     "p": [
+      "Bello antes do nome segue o artigo: bel ragazzo, bell'albero, bello stadio, bei libri, begli occhi, bella casa.",
+      "Buono segue un: buon giorno, buon amico, buono studente, buon'idea. Depois do nome fica buono: un vino buono.",
+      "Grande pode encurtar para gran antes do nome: una gran festa, un gran lavoro. É coloquial e muito usado."
+     ],
+     "q": "O que é bello na tua cidade, e que buon ristorante te agrada?",
+     "c": "Escreve seis expressões: três com bel, bell', bei e três com buon ou gran."
+    },
+    "pt_BR": {
+     "t": "Bello, buono e grande",
+     "g": "Usar as formas curtas de bello, buono e grande antes do substantivo.",
+     "p": [
+      "Bello antes do substantivo segue o artigo: bel ragazzo, bell'albero, bello stadio, bei libri, begli occhi, bella casa.",
+      "Buono segue un: buon giorno, buon amico, buono studente, buon'idea. Depois do substantivo fica buono: un vino buono.",
+      "Grande pode virar gran antes do substantivo: una gran festa, un gran lavoro. É coloquial e muito usado."
+     ],
+     "q": "O que tem de bello na sua cidade, e qual buon ristorante você curte?",
+     "c": "Escreva seis expressões: três com bel, bell', bei e três com buon ou gran."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un bel ragazzo",
+      "ex": "Il fratello di Giulia è un bel ragazzo."
+     },
+     {
+      "w": "un bell'albero",
+      "ex": "In giardino c'è un bell'albero di limoni."
+     },
+     {
+      "w": "dei bei libri",
+      "ex": "In questa libreria ci sono dei bei libri."
+     },
+     {
+      "w": "begli occhi",
+      "ex": "Il bambino ha dei begli occhi azzurri."
+     },
+     {
+      "w": "un buon amico",
+      "ex": "Marco è un buon amico, mi aiuta sempre."
+     },
+     {
+      "w": "una gran festa",
+      "ex": "Per i suoi trent'anni ha fatto una gran festa."
+     }
+    ],
+    "gram": "Bello si comporta come l'articolo (bel, bell', bello, bei, begli); buono come un (buon, buono, buona, buon'); gran."
+   }
+  },
+  {
+   "d": 164,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Suffixes: -ino, -one, -accio",
+     "g": "Change the meaning of words with diminutives and augmentatives.",
+     "p": [
+      "-ino / -ina / -etto makes things small or cute: gatto, gattino; casa, casetta; un attimino (just a moment).",
+      "-one makes things big: libro, librone; porta, portone (main door). Some change gender: la porta, il portone.",
+      "-accio adds a negative tone: tempo, tempaccio (awful weather); parola, parolaccia (swear word). Use with care."
+     ],
+     "q": "Can you make a word small, big and bad? Try with ragazzo: ragazzino, ragazzone, ragazzaccio.",
+     "c": "Find six words in your notes and add -ino, -one or -accio to each, then use two of them in a sentence."
+    },
+    "de": {
+     "t": "Suffixe: -ino, -one, -accio",
+     "g": "Du veränderst die Bedeutung von Wörtern mit Verkleinerungs- und Vergrößerungsformen.",
+     "p": [
+      "-ino / -ina / -etto macht Dinge klein oder niedlich: gatto, gattino; casa, casetta; un attimino (einen kleinen Moment).",
+      "-one macht Dinge groß: libro, librone; porta, portone (Haustor). Manchmal wechselt das Geschlecht: la porta, il portone.",
+      "-accio gibt einen negativen Ton: tempo, tempaccio (Mistwetter); parola, parolaccia (Schimpfwort). Vorsichtig benutzen."
+     ],
+     "q": "Kannst du ein Wort klein, groß und schlecht machen? Probier es mit ragazzo: ragazzino, ragazzone, ragazzaccio.",
+     "c": "Nimm sechs Wörter aus deinen Notizen, häng -ino, -one oder -accio an und benutze zwei davon in einem Satz."
+    },
+    "es": {
+     "t": "Sufijos: -ino, -one, -accio",
+     "g": "Cambiar el sentido de las palabras con diminutivos y aumentativos.",
+     "p": [
+      "-ino / -ina / -etto empequeñece o da cariño: gatto, gattino (gatito); casa, casetta; un attimino (un momentito).",
+      "-one agranda: libro, librone (librote); porta, portone (portón). A veces cambia el género: la porta, il portone.",
+      "-accio da un tono negativo: tempo, tempaccio (tiempo horrible); parola, parolaccia (palabrota). Úsalo con cuidado."
+     ],
+     "q": "¿Sabes hacer una palabra pequeña, grande y fea? Prueba con ragazzo: ragazzino, ragazzone, ragazzaccio.",
+     "c": "Busca seis palabras en tus apuntes, añade -ino, -one o -accio y usa dos en una frase."
+    },
+    "fr": {
+     "t": "Suffixes : -ino, -one, -accio",
+     "g": "Changer le sens des mots avec diminutifs et augmentatifs.",
+     "p": [
+      "-ino / -ina / -etto rend petit ou mignon : gatto, gattino (chaton) ; casa, casetta ; un attimino (une petite seconde).",
+      "-one rend grand : libro, librone (gros livre) ; porta, portone (porte cochère). Le genre peut changer : la porta, il portone.",
+      "-accio donne une nuance négative : tempo, tempaccio (sale temps) ; parola, parolaccia (gros mot). À utiliser avec soin."
+     ],
+     "q": "Sais-tu rendre un mot petit, grand et mauvais ? Essaie avec ragazzo : ragazzino, ragazzone, ragazzaccio.",
+     "c": "Prends six mots de tes notes, ajoute -ino, -one ou -accio et utilise-en deux dans une phrase."
+    },
+    "it": {
+     "t": "Suffissi: -ino, -one, -accio",
+     "g": "Cambiare il significato delle parole con diminutivi, accrescitivi e peggiorativi.",
+     "p": [
+      "-ino / -ina / -etto rendono piccolo o affettuoso: gatto, gattino; casa, casetta; aspetta un attimino.",
+      "-one rende grande: libro, librone; porta, portone. A volte cambia il genere: la porta, il portone.",
+      "-accio aggiunge un tono negativo: tempo, tempaccio; parola, parolaccia. Va usato con attenzione."
+     ],
+     "q": "Sai rendere una parola piccola, grande e brutta? Prova con ragazzo: ragazzino, ragazzone, ragazzaccio.",
+     "c": "Cerca sei parole nei tuoi appunti, aggiungi -ino, -one o -accio e usane due in una frase."
+    },
+    "pt": {
+     "t": "Sufixos: -ino, -one, -accio",
+     "g": "Mudar o sentido das palavras com diminutivos e aumentativos.",
+     "p": [
+      "-ino / -ina / -etto diminui ou dá carinho: gatto, gattino (gatinho); casa, casetta; un attimino (um bocadinho).",
+      "-one aumenta: libro, librone (livro grande); porta, portone (portão). Às vezes muda o género: la porta, il portone.",
+      "-accio dá um tom negativo: tempo, tempaccio (tempo horrível); parola, parolaccia (palavrão). Usa com cuidado."
+     ],
+     "q": "Consegues tornar uma palavra pequena, grande e feia? Experimenta com ragazzo: ragazzino, ragazzone, ragazzaccio.",
+     "c": "Procura seis palavras nos teus apontamentos, junta -ino, -one ou -accio e usa duas numa frase."
+    },
+    "pt_BR": {
+     "t": "Sufixos: -ino, -one, -accio",
+     "g": "Mudar o sentido das palavras com diminutivos e aumentativos.",
+     "p": [
+      "-ino / -ina / -etto diminui ou dá carinho: gatto, gattino (gatinho); casa, casetta; un attimino (um minutinho).",
+      "-one aumenta: libro, librone (livrão); porta, portone (portão). Às vezes muda o gênero: la porta, il portone.",
+      "-accio dá um tom negativo: tempo, tempaccio (tempo horrível); parola, parolaccia (palavrão). Use com cuidado."
+     ],
+     "q": "Você consegue deixar uma palavra pequena, grande e feia? Tente com ragazzo: ragazzino, ragazzone, ragazzaccio.",
+     "c": "Procure seis palavras nas suas anotações, acrescente -ino, -one ou -accio e use duas numa frase."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il gattino",
+      "ex": "Abbiamo trovato un gattino sotto la macchina."
+     },
+     {
+      "w": "la casetta",
+      "ex": "Hanno una casetta in montagna."
+     },
+     {
+      "w": "un attimino",
+      "ex": "Aspetta un attimino, arrivo subito."
+     },
+     {
+      "w": "il librone",
+      "ex": "Mi ha regalato un librone di ricette."
+     },
+     {
+      "w": "il portone",
+      "ex": "Ci vediamo davanti al portone alle otto."
+     },
+     {
+      "w": "che tempaccio",
+      "ex": "Che tempaccio oggi, piove da stamattina!"
+     }
+    ],
+    "gram": "Alterati: -ino/-etto (piccolo, affettuoso), -one (grande), -accio (negativo): ragazzino, ragazzone, ragazzaccio."
+   }
+  },
+  {
+   "d": 165,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Prefixes: ri-, s-, in-",
+     "g": "Build new words from ones you already know.",
+     "p": [
+      "Ri- means again: fare, rifare; leggere, rileggere; vedere, rivedere (see again). Ci rivediamo! means see you again.",
+      "S- often means the opposite: contento, scontento; caricare, scaricare; piacevole, spiacevole; fortuna, sfortuna.",
+      "In- means not: possibile, impossibile; utile, inutile; felice, infelice. Before p and b it becomes im-, before l il-: illegale."
+     ],
+     "q": "Can you find the opposite of comodo, gradevole and ordinato using a prefix?",
+     "c": "Make three words with ri-, three with s- and three with in- or im-, then write one sentence with each prefix."
+    },
+    "de": {
+     "t": "Präfixe: ri-, s-, in-",
+     "g": "Du bildest neue Wörter aus Wörtern, die du schon kennst.",
+     "p": [
+      "Ri- heißt wieder: fare, rifare; leggere, rileggere; vedere, rivedere (wiedersehen). Ci rivediamo! heißt wir sehen uns wieder.",
+      "S- bedeutet oft das Gegenteil: contento, scontento; caricare, scaricare; piacevole, spiacevole; fortuna, sfortuna.",
+      "In- heißt nicht: possibile, impossibile; utile, inutile; felice, infelice. Vor p und b wird es im-, vor l il-: illegale."
+     ],
+     "q": "Findest du mit einem Präfix das Gegenteil von comodo, gradevole und ordinato?",
+     "c": "Bilde drei Wörter mit ri-, drei mit s- und drei mit in- oder im- und schreib zu jedem Präfix einen Satz."
+    },
+    "es": {
+     "t": "Prefijos: ri-, s-, in-",
+     "g": "Formar palabras nuevas a partir de las que ya conoces.",
+     "p": [
+      "Ri- es re-: fare, rifare (rehacer); leggere, rileggere; vedere, rivedere (volver a ver). Ci rivediamo! es nos volvemos a ver.",
+      "S- a menudo expresa lo contrario: contento, scontento; caricare, scaricare; piacevole, spiacevole; fortuna, sfortuna.",
+      "In- es no: possibile, impossibile; utile, inutile; felice, infelice. Ante p y b es im-, ante l il-: illegale."
+     ],
+     "q": "¿Encuentras el contrario de comodo, gradevole y ordinato con un prefijo?",
+     "c": "Forma tres palabras con ri-, tres con s- y tres con in- o im-, y escribe una frase con cada prefijo."
+    },
+    "fr": {
+     "t": "Préfixes : ri-, s-, in-",
+     "g": "Former de nouveaux mots à partir de ceux que tu connais.",
+     "p": [
+      "Ri- veut dire re- : fare, rifare (refaire) ; leggere, rileggere ; vedere, rivedere (revoir). Ci rivediamo ! veut dire on se reverra.",
+      "S- exprime souvent le contraire : contento, scontento ; caricare, scaricare ; piacevole, spiacevole ; fortuna, sfortuna.",
+      "In- veut dire non : possibile, impossibile ; utile, inutile ; felice, infelice. Devant p et b il devient im-, devant l il- : illegale."
+     ],
+     "q": "Trouves-tu le contraire de comodo, gradevole et ordinato avec un préfixe ?",
+     "c": "Forme trois mots avec ri-, trois avec s- et trois avec in- ou im-, puis écris une phrase par préfixe."
+    },
+    "it": {
+     "t": "Prefissi: ri-, s-, in-",
+     "g": "Formare parole nuove partendo da quelle che conosci già.",
+     "p": [
+      "Ri- indica ripetizione: fare, rifare; leggere, rileggere; vedere, rivedere. Ci rivediamo! si dice salutandosi.",
+      "S- spesso indica il contrario: contento, scontento; caricare, scaricare; piacevole, spiacevole; fortuna, sfortuna.",
+      "In- indica negazione: possibile, impossibile; utile, inutile; felice, infelice. Davanti a p e b diventa im-, davanti a l il-."
+     ],
+     "q": "Trovi il contrario di comodo, gradevole e ordinato con un prefisso?",
+     "c": "Forma tre parole con ri-, tre con s- e tre con in- o im-, poi scrivi una frase per ogni prefisso."
+    },
+    "pt": {
+     "t": "Prefixos: ri-, s-, in-",
+     "g": "Formar palavras novas a partir das que já conheces.",
+     "p": [
+      "Ri- é re-: fare, rifare (refazer); leggere, rileggere; vedere, rivedere (rever). Ci rivediamo! é voltamos a ver-nos.",
+      "S- muitas vezes indica o contrário: contento, scontento; caricare, scaricare; piacevole, spiacevole; fortuna, sfortuna.",
+      "In- é não: possibile, impossibile; utile, inutile; felice, infelice. Antes de p e b fica im-, antes de l il-: illegale."
+     ],
+     "q": "Encontras o contrário de comodo, gradevole e ordinato com um prefixo?",
+     "c": "Forma três palavras com ri-, três com s- e três com in- ou im-, e escreve uma frase com cada prefixo."
+    },
+    "pt_BR": {
+     "t": "Prefixos: ri-, s-, in-",
+     "g": "Formar palavras novas a partir das que você já conhece.",
+     "p": [
+      "Ri- é re-: fare, rifare (refazer); leggere, rileggere; vedere, rivedere (rever). Ci rivediamo! é a gente se vê de novo.",
+      "S- muitas vezes indica o contrário: contento, scontento; caricare, scaricare; piacevole, spiacevole; fortuna, sfortuna.",
+      "In- é não: possibile, impossibile; utile, inutile; felice, infelice. Antes de p e b vira im-, antes de l il-: illegale."
+     ],
+     "q": "Você encontra o contrário de comodo, gradevole e ordinato com um prefixo?",
+     "c": "Forme três palavras com ri-, três com s- e três com in- ou im-, e escreva uma frase com cada prefixo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rifare",
+      "ex": "Ho sbagliato l'esercizio, devo rifarlo."
+     },
+     {
+      "w": "rileggere",
+      "ex": "Prima di inviare l'email, rileggila."
+     },
+     {
+      "w": "scontento",
+      "ex": "Il cliente era scontento del servizio."
+     },
+     {
+      "w": "sfortuna",
+      "ex": "Che sfortuna, ho perso il treno per un minuto!"
+     },
+     {
+      "w": "impossibile",
+      "ex": "Niente è impossibile se ci provi."
+     },
+     {
+      "w": "inutile",
+      "ex": "È inutile correre, il negozio è già chiuso."
+     }
+    ],
+    "gram": "Prefissi: ri- = di nuovo (rivedere); s- = contrario (scomodo); in-/im-/il- = non (inutile, impossibile, illogico)."
+   }
+  },
+  {
+   "d": 166,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Linking words: perché, quindi",
+     "g": "Connect ideas with the most useful Italian connectors.",
+     "p": [
+      "Cause and result: perché (because), quindi / allora (so). Studio italiano perché amo l'Italia, quindi guardo film italiani.",
+      "Contrast: però / ma (but), invece (instead, whereas), anche se (even if). È caro, però è bellissimo.",
+      "Time and addition: mentre (while), poi (then), inoltre (also, moreover). Mentre cucino, ascolto la radio."
+     ],
+     "q": "Why are you learning Italian? Answer with perché and add a consequence with quindi.",
+     "c": "Write a short text about your week using perché, quindi, però, invece, mentre and anche se once each."
+    },
+    "de": {
+     "t": "Bindewörter: perché, quindi",
+     "g": "Du verbindest Gedanken mit den nützlichsten italienischen Konnektoren.",
+     "p": [
+      "Grund und Folge: perché (weil), quindi / allora (also). Studio italiano perché amo l'Italia, quindi guardo film italiani.",
+      "Gegensatz: però / ma (aber), invece (stattdessen, dagegen), anche se (auch wenn). È caro, però è bellissimo.",
+      "Zeit und Ergänzung: mentre (während), poi (dann), inoltre (außerdem). Mentre cucino, ascolto la radio."
+     ],
+     "q": "Warum lernst du Italienisch? Antworte mit perché und füge eine Folge mit quindi hinzu.",
+     "c": "Schreib einen kurzen Text über deine Woche mit perché, quindi, però, invece, mentre und anche se, je einmal."
+    },
+    "es": {
+     "t": "Conectores: perché, quindi",
+     "g": "Unir ideas con los conectores italianos más útiles.",
+     "p": [
+      "Causa y consecuencia: perché (porque), quindi / allora (así que). Studio italiano perché amo l'Italia, quindi guardo film italiani.",
+      "Contraste: però / ma (pero), invece (en cambio), anche se (aunque). È caro, però è bellissimo.",
+      "Tiempo y suma: mentre (mientras), poi (luego), inoltre (además). Mentre cucino, ascolto la radio."
+     ],
+     "q": "¿Por qué aprendes italiano? Responde con perché y añade una consecuencia con quindi.",
+     "c": "Escribe un texto corto sobre tu semana con perché, quindi, però, invece, mentre y anche se, una vez cada uno."
+    },
+    "fr": {
+     "t": "Connecteurs : perché, quindi",
+     "g": "Relier tes idées avec les connecteurs italiens les plus utiles.",
+     "p": [
+      "Cause et conséquence : perché (parce que), quindi / allora (donc). Studio italiano perché amo l'Italia, quindi guardo film italiani.",
+      "Opposition : però / ma (mais), invece (au contraire, alors que), anche se (même si). È caro, però è bellissimo.",
+      "Temps et ajout : mentre (pendant que), poi (ensuite), inoltre (en plus). Mentre cucino, ascolto la radio."
+     ],
+     "q": "Pourquoi apprends-tu l'italien ? Réponds avec perché et ajoute une conséquence avec quindi.",
+     "c": "Écris un court texte sur ta semaine avec perché, quindi, però, invece, mentre et anche se, une fois chacun."
+    },
+    "it": {
+     "t": "Connettivi: perché, quindi",
+     "g": "Collegare le idee con i connettivi più utili.",
+     "p": [
+      "Causa ed effetto: perché, quindi, allora. Studio italiano perché amo l'Italia, quindi guardo film italiani.",
+      "Contrasto: però, ma, invece, anche se. È caro, però è bellissimo; io lavoro, mia sorella invece studia.",
+      "Tempo e aggiunta: mentre, poi, inoltre. Mentre cucino, ascolto la radio; inoltre leggo le notizie."
+     ],
+     "q": "Perché studi italiano? Rispondi con perché e aggiungi una conseguenza con quindi.",
+     "c": "Scrivi un breve testo sulla tua settimana usando una volta perché, quindi, però, invece, mentre e anche se."
+    },
+    "pt": {
+     "t": "Conectores: perché, quindi",
+     "g": "Ligar ideias com os conectores italianos mais úteis.",
+     "p": [
+      "Causa e consequência: perché (porque), quindi / allora (por isso). Studio italiano perché amo l'Italia, quindi guardo film italiani.",
+      "Contraste: però / ma (mas), invece (em vez disso, ao passo que), anche se (mesmo que). È caro, però è bellissimo.",
+      "Tempo e adição: mentre (enquanto), poi (depois), inoltre (além disso). Mentre cucino, ascolto la radio."
+     ],
+     "q": "Porque estás a aprender italiano? Responde com perché e junta uma consequência com quindi.",
+     "c": "Escreve um texto curto sobre a tua semana com perché, quindi, però, invece, mentre e anche se, uma vez cada."
+    },
+    "pt_BR": {
+     "t": "Conectivos: perché, quindi",
+     "g": "Ligar ideias com os conectivos italianos mais úteis.",
+     "p": [
+      "Causa e consequência: perché (porque), quindi / allora (então). Studio italiano perché amo l'Italia, quindi guardo film italiani.",
+      "Contraste: però / ma (mas), invece (já, ao contrário), anche se (mesmo que). È caro, però è bellissimo.",
+      "Tempo e adição: mentre (enquanto), poi (depois), inoltre (além disso). Mentre cucino, ascolto la radio."
+     ],
+     "q": "Por que você está aprendendo italiano? Responda com perché e acrescente uma consequência com quindi.",
+     "c": "Escreva um texto curto sobre sua semana com perché, quindi, però, invece, mentre e anche se, uma vez cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "perché",
+      "ex": "Resto a casa perché sono stanco."
+     },
+     {
+      "w": "quindi",
+      "ex": "Piove, quindi prendo l'ombrello."
+     },
+     {
+      "w": "però",
+      "ex": "Il viaggio è lungo, però ne vale la pena."
+     },
+     {
+      "w": "invece",
+      "ex": "Io amo il mare, mio marito invece preferisce la montagna."
+     },
+     {
+      "w": "mentre",
+      "ex": "Mentre aspetto il treno, leggo un libro."
+     },
+     {
+      "w": "anche se",
+      "ex": "Esco anche se fa freddo."
+     }
+    ],
+    "gram": "Connettivi: causa (perché), conseguenza (quindi, allora), contrasto (però, invece, anche se), tempo (mentre, poi)."
+   }
+  },
+  {
+   "d": 167,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Telling a story fluently",
+     "g": "Combine past tenses and connectors to tell an anecdote with rhythm.",
+     "p": [
+      "Set the scene with the imperfetto: era sabato, faceva caldo, ero in centro con un'amica.",
+      "Tell the events with the passato prossimo: a un certo punto ho visto..., all'improvviso è arrivato..., poi siamo andati...",
+      "Add rhythm: prima, poi, dopo, alla fine; and react: che fortuna!, non ci potevo credere, è stato divertentissimo."
+     ],
+     "q": "Tell me a funny or surprising thing that happened to you recently, with imperfetto for the scene and passato prossimo for the events.",
+     "c": "Write a six-sentence anecdote: two scene sentences in imperfetto, three events, one final reaction."
+    },
+    "de": {
+     "t": "Flüssig eine Geschichte erzählen",
+     "g": "Du kombinierst Vergangenheitszeiten und Konnektoren, um eine Anekdote lebendig zu erzählen.",
+     "p": [
+      "Die Szene im imperfetto: era sabato, faceva caldo, ero in centro con un'amica.",
+      "Die Ereignisse im passato prossimo: a un certo punto ho visto..., all'improvviso è arrivato..., poi siamo andati...",
+      "Rhythmus: prima, poi, dopo, alla fine; Reaktionen: che fortuna!, non ci potevo credere, è stato divertentissimo."
+     ],
+     "q": "Erzähl mir etwas Lustiges oder Überraschendes, das dir neulich passiert ist: imperfetto für die Szene, passato prossimo für die Ereignisse.",
+     "c": "Schreib eine Anekdote in sechs Sätzen: zwei Szenensätze im imperfetto, drei Ereignisse, eine Reaktion am Ende."
+    },
+    "es": {
+     "t": "Contar una historia con fluidez",
+     "g": "Combinar tiempos del pasado y conectores para contar una anécdota con ritmo.",
+     "p": [
+      "Describe la escena en imperfetto: era sabato, faceva caldo, ero in centro con un'amica.",
+      "Cuenta los hechos en passato prossimo: a un certo punto ho visto..., all'improvviso è arrivato..., poi siamo andati...",
+      "Da ritmo: prima, poi, dopo, alla fine; y reacciona: che fortuna!, non ci potevo credere, è stato divertentissimo."
+     ],
+     "q": "Cuéntame algo gracioso o sorprendente que te pasó hace poco: imperfetto para la escena y passato prossimo para los hechos.",
+     "c": "Escribe una anécdota de seis frases: dos de escena en imperfetto, tres hechos y una reacción final."
+    },
+    "fr": {
+     "t": "Raconter une histoire avec aisance",
+     "g": "Combiner les temps du passé et les connecteurs pour raconter une anecdote avec rythme.",
+     "p": [
+      "Pose le décor à l'imperfetto : era sabato, faceva caldo, ero in centro con un'amica.",
+      "Raconte les faits au passato prossimo : a un certo punto ho visto..., all'improvviso è arrivato..., poi siamo andati...",
+      "Donne du rythme : prima, poi, dopo, alla fine ; réagis : che fortuna !, non ci potevo credere, è stato divertentissimo."
+     ],
+     "q": "Raconte-moi un fait drôle ou surprenant qui t'est arrivé récemment : imperfetto pour le décor, passato prossimo pour les faits.",
+     "c": "Écris une anecdote de six phrases : deux de décor à l'imperfetto, trois faits et une réaction finale."
+    },
+    "it": {
+     "t": "Raccontare una storia con scioltezza",
+     "g": "Combinare i tempi del passato e i connettivi per raccontare un aneddoto con ritmo.",
+     "p": [
+      "La scena si descrive con l'imperfetto: era sabato, faceva caldo, ero in centro con un'amica.",
+      "I fatti si raccontano con il passato prossimo: a un certo punto ho visto..., all'improvviso è arrivato..., poi siamo andati...",
+      "Dai ritmo: prima, poi, dopo, alla fine; e reagisci: che fortuna!, non ci potevo credere, è stato divertentissimo."
+     ],
+     "q": "Raccontami una cosa buffa o sorprendente che ti è successa di recente, con imperfetto e passato prossimo.",
+     "c": "Scrivi un aneddoto di sei frasi: due di scena all'imperfetto, tre fatti al passato prossimo e una reazione finale."
+    },
+    "pt": {
+     "t": "Contar uma história com fluidez",
+     "g": "Combinar tempos do passado e conectores para contar uma história com ritmo.",
+     "p": [
+      "Descreve o cenário no imperfetto: era sabato, faceva caldo, ero in centro con un'amica.",
+      "Conta os factos no passato prossimo: a un certo punto ho visto..., all'improvviso è arrivato..., poi siamo andati...",
+      "Dá ritmo: prima, poi, dopo, alla fine; e reage: che fortuna!, non ci potevo credere, è stato divertentissimo."
+     ],
+     "q": "Conta-me uma coisa engraçada ou surpreendente que te aconteceu há pouco: imperfetto para o cenário, passato prossimo para os factos.",
+     "c": "Escreve uma história de seis frases: duas de cenário no imperfetto, três factos e uma reação final."
+    },
+    "pt_BR": {
+     "t": "Contar uma história com fluência",
+     "g": "Combinar tempos do passado e conectivos para contar um causo com ritmo.",
+     "p": [
+      "Descreva o cenário no imperfetto: era sabato, faceva caldo, ero in centro con un'amica.",
+      "Conte os fatos no passato prossimo: a un certo punto ho visto..., all'improvviso è arrivato..., poi siamo andati...",
+      "Dê ritmo: prima, poi, dopo, alla fine; e reaja: che fortuna!, non ci potevo credere, è stato divertentissimo."
+     ],
+     "q": "Conte uma coisa engraçada ou surpreendente que aconteceu com você há pouco: imperfetto para o cenário, passato prossimo para os fatos.",
+     "c": "Escreva um causo de seis frases: duas de cenário no imperfetto, três fatos e uma reação final."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a un certo punto",
+      "ex": "A un certo punto ho sentito un rumore strano."
+     },
+     {
+      "w": "all'improvviso",
+      "ex": "All'improvviso è andata via la luce."
+     },
+     {
+      "w": "alla fine",
+      "ex": "Alla fine abbiamo riso tutti insieme."
+     },
+     {
+      "w": "non ci potevo credere",
+      "ex": "Ho vinto il primo premio, non ci potevo credere!"
+     },
+     {
+      "w": "era sabato",
+      "ex": "Era sabato sera e la piazza era piena di gente."
+     },
+     {
+      "w": "è stato divertentissimo",
+      "ex": "Siamo rimasti chiusi fuori, ma è stato divertentissimo."
+     }
+    ],
+    "gram": "Imperfetto per lo sfondo (era, faceva, c'era), passato prossimo per i fatti (ho visto, è arrivato), più i connettivi."
+   }
+  },
+  {
+   "d": 168,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing a place you visited",
+     "g": "Talk about a trip: where, with whom, what you saw and ate.",
+     "p": [
+      "Where and with whom: l'anno scorso sono stato/a a Lisbona con la mia famiglia, ci siamo rimasti una settimana.",
+      "What it was like: la città era bellissima, c'era un'atmosfera rilassata, il tempo era perfetto (imperfetto for description).",
+      "What you did: abbiamo visitato il castello, ho assaggiato..., la cosa che mi è piaciuta di più è stata..."
+     ],
+     "q": "What is the most beautiful place you have visited? Tell me where, with whom and what you liked most.",
+     "c": "Write five sentences about a trip, using ci for the place: ci sono andato..., ci sono rimasto..., ci tornerei."
+    },
+    "de": {
+     "t": "Einen besuchten Ort beschreiben",
+     "g": "Du sprichst über eine Reise: wohin, mit wem, was du gesehen und gegessen hast.",
+     "p": [
+      "Wohin und mit wem: l'anno scorso sono stato/a a Lisbona con la mia famiglia, ci siamo rimasti una settimana.",
+      "Wie es war: la città era bellissima, c'era un'atmosfera rilassata, il tempo era perfetto (imperfetto für Beschreibungen).",
+      "Was du gemacht hast: abbiamo visitato il castello, ho assaggiato..., la cosa che mi è piaciuta di più è stata..."
+     ],
+     "q": "Was ist der schönste Ort, den du besucht hast? Sag mir wo, mit wem und was dir am besten gefiel.",
+     "c": "Schreib fünf Sätze über eine Reise und benutze ci für den Ort: ci sono andato..., ci sono rimasto..., ci tornerei."
+    },
+    "es": {
+     "t": "Describir un lugar que visitaste",
+     "g": "Hablar de un viaje: dónde, con quién, qué viste y qué comiste.",
+     "p": [
+      "Dónde y con quién: l'anno scorso sono stato/a a Lisbona con la mia famiglia, ci siamo rimasti una settimana.",
+      "Cómo era: la città era bellissima, c'era un'atmosfera rilassata, il tempo era perfetto (imperfetto para describir).",
+      "Qué hiciste: abbiamo visitato il castello, ho assaggiato..., la cosa che mi è piaciuta di più è stata..."
+     ],
+     "q": "¿Cuál es el lugar más bonito que has visitado? Dime dónde, con quién y qué te gustó más.",
+     "c": "Escribe cinco frases sobre un viaje usando ci para el lugar: ci sono andato..., ci sono rimasto..., ci tornerei."
+    },
+    "fr": {
+     "t": "Décrire un lieu visité",
+     "g": "Parler d'un voyage : où, avec qui, ce que tu as vu et mangé.",
+     "p": [
+      "Où et avec qui : l'anno scorso sono stato/a a Lisbona con la mia famiglia, ci siamo rimasti una settimana.",
+      "Comment c'était : la città era bellissima, c'era un'atmosfera rilassata, il tempo era perfetto (imperfetto pour décrire).",
+      "Ce que tu as fait : abbiamo visitato il castello, ho assaggiato..., la cosa che mi è piaciuta di più è stata..."
+     ],
+     "q": "Quel est le plus bel endroit que tu as visité ? Dis-moi où, avec qui et ce que tu as préféré.",
+     "c": "Écris cinq phrases sur un voyage avec ci pour le lieu : ci sono andato..., ci sono rimasto..., ci tornerei."
+    },
+    "it": {
+     "t": "Descrivere un posto visitato",
+     "g": "Raccontare un viaggio: dove, con chi, che cosa hai visto e mangiato.",
+     "p": [
+      "Dove e con chi: l'anno scorso sono stato/a a Lisbona con la mia famiglia, ci siamo rimasti una settimana.",
+      "Com'era: la città era bellissima, c'era un'atmosfera rilassata, il tempo era perfetto (imperfetto per descrivere).",
+      "Che cosa hai fatto: abbiamo visitato il castello, ho assaggiato..., la cosa che mi è piaciuta di più è stata..."
+     ],
+     "q": "Qual è il posto più bello che hai visitato? Dimmi dove, con chi e che cosa ti è piaciuto di più.",
+     "c": "Scrivi cinque frasi su un viaggio usando ci per il luogo: ci sono andato..., ci sono rimasto..., ci tornerei."
+    },
+    "pt": {
+     "t": "Descrever um lugar que visitaste",
+     "g": "Falar de uma viagem: onde, com quem, o que viste e comeste.",
+     "p": [
+      "Onde e com quem: l'anno scorso sono stato/a a Lisbona con la mia famiglia, ci siamo rimasti una settimana.",
+      "Como era: la città era bellissima, c'era un'atmosfera rilassata, il tempo era perfetto (imperfetto para descrever).",
+      "O que fizeste: abbiamo visitato il castello, ho assaggiato..., la cosa che mi è piaciuta di più è stata..."
+     ],
+     "q": "Qual é o lugar mais bonito que já visitaste? Diz-me onde, com quem e do que gostaste mais.",
+     "c": "Escreve cinco frases sobre uma viagem usando ci para o lugar: ci sono andato..., ci sono rimasto..., ci tornerei."
+    },
+    "pt_BR": {
+     "t": "Descrever um lugar que você visitou",
+     "g": "Falar de uma viagem: onde, com quem, o que viu e comeu.",
+     "p": [
+      "Onde e com quem: l'anno scorso sono stato/a a Lisbona con la mia famiglia, ci siamo rimasti una settimana.",
+      "Como era: la città era bellissima, c'era un'atmosfera rilassata, il tempo era perfetto (imperfetto para descrever).",
+      "O que fez: abbiamo visitato il castello, ho assaggiato..., la cosa che mi è piaciuta di più è stata..."
+     ],
+     "q": "Qual é o lugar mais bonito que você já visitou? Diga onde, com quem e do que mais gostou.",
+     "c": "Escreva cinco frases sobre uma viagem usando ci para o lugar: ci sono andato..., ci sono rimasto..., ci tornerei."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sono stato a",
+      "ex": "Sono stato a Siena due volte."
+     },
+     {
+      "w": "ci siamo rimasti",
+      "ex": "Ci siamo rimasti tre giorni ed è stato bellissimo."
+     },
+     {
+      "w": "c'era un'atmosfera",
+      "ex": "C'era un'atmosfera magica nel porto."
+     },
+     {
+      "w": "ho assaggiato",
+      "ex": "A Bologna ho assaggiato le tagliatelle al ragù."
+     },
+     {
+      "w": "mi è piaciuta di più",
+      "ex": "La cosa che mi è piaciuta di più è stata la vista."
+     },
+     {
+      "w": "ci tornerei",
+      "ex": "È un posto meraviglioso, ci tornerei domani."
+     }
+    ],
+    "gram": "Ci sostituisce un luogo già nominato: sei stato a Roma? Sì, ci sono stato; ci tornerei volentieri."
+   }
+  },
+  {
+   "d": 169,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Comparing past and present",
+     "g": "Describe how your town or life has changed.",
+     "p": [
+      "Una volta (once, in the past) + imperfetto: una volta qui c'era un cinema, una volta andavo a scuola a piedi.",
+      "Adesso / oggi + presente: adesso c'è un supermercato, oggi lavoro da casa. Prima... ora... works the same way.",
+      "Compare: la città è più grande di prima, ci sono meno negozi, è cambiata molto (it has changed a lot)."
+     ],
+     "q": "How has your town changed since you were a child? Use una volta... adesso...",
+     "c": "Write four pairs of sentences about your life: una volta + imperfetto, adesso + presente."
+    },
+    "de": {
+     "t": "Früher und heute vergleichen",
+     "g": "Du beschreibst, wie sich deine Stadt oder dein Leben verändert hat.",
+     "p": [
+      "Una volta (früher) + imperfetto: una volta qui c'era un cinema, una volta andavo a scuola a piedi.",
+      "Adesso / oggi + Präsens: adesso c'è un supermercato, oggi lavoro da casa. Prima... ora... funktioniert genauso.",
+      "Vergleichen: la città è più grande di prima, ci sono meno negozi, è cambiata molto (sie hat sich sehr verändert)."
+     ],
+     "q": "Wie hat sich deine Stadt seit deiner Kindheit verändert? Benutze una volta... adesso...",
+     "c": "Schreib vier Satzpaare über dein Leben: una volta + imperfetto, adesso + Präsens."
+    },
+    "es": {
+     "t": "Comparar pasado y presente",
+     "g": "Describir cómo han cambiado tu ciudad o tu vida.",
+     "p": [
+      "Una volta (antes) + imperfetto: una volta qui c'era un cinema, una volta andavo a scuola a piedi.",
+      "Adesso / oggi + presente: adesso c'è un supermercato, oggi lavoro da casa. Prima... ora... funciona igual.",
+      "Compara: la città è più grande di prima, ci sono meno negozi, è cambiata molto (ha cambiado mucho)."
+     ],
+     "q": "¿Cómo ha cambiado tu ciudad desde que eras niño? Usa una volta... adesso...",
+     "c": "Escribe cuatro pares de frases sobre tu vida: una volta + imperfetto, adesso + presente."
+    },
+    "fr": {
+     "t": "Comparer passé et présent",
+     "g": "Décrire comment ta ville ou ta vie a changé.",
+     "p": [
+      "Una volta (autrefois) + imperfetto : una volta qui c'era un cinema, una volta andavo a scuola a piedi.",
+      "Adesso / oggi + présent : adesso c'è un supermercato, oggi lavoro da casa. Prima... ora... marche pareil.",
+      "Comparer : la città è più grande di prima, ci sono meno negozi, è cambiata molto (elle a beaucoup changé)."
+     ],
+     "q": "Comment ta ville a-t-elle changé depuis ton enfance ? Utilise una volta... adesso...",
+     "c": "Écris quatre paires de phrases sur ta vie : una volta + imperfetto, adesso + présent."
+    },
+    "it": {
+     "t": "Confrontare passato e presente",
+     "g": "Descrivere come sono cambiati la tua città o la tua vita.",
+     "p": [
+      "Una volta + imperfetto: una volta qui c'era un cinema, una volta andavo a scuola a piedi.",
+      "Adesso / oggi + presente: adesso c'è un supermercato, oggi lavoro da casa. Anche prima... ora... funziona così.",
+      "Per confrontare: la città è più grande di prima, ci sono meno negozi, è cambiata molto."
+     ],
+     "q": "Com'è cambiata la tua città da quando eri bambino? Usa una volta... adesso...",
+     "c": "Scrivi quattro coppie di frasi sulla tua vita: una volta + imperfetto, adesso + presente."
+    },
+    "pt": {
+     "t": "Comparar passado e presente",
+     "g": "Descrever como a tua cidade ou a tua vida mudou.",
+     "p": [
+      "Una volta (antigamente) + imperfetto: una volta qui c'era un cinema, una volta andavo a scuola a piedi.",
+      "Adesso / oggi + presente: adesso c'è un supermercato, oggi lavoro da casa. Prima... ora... funciona igual.",
+      "Compara: la città è più grande di prima, ci sono meno negozi, è cambiata molto (mudou muito)."
+     ],
+     "q": "Como mudou a tua cidade desde que eras criança? Usa una volta... adesso...",
+     "c": "Escreve quatro pares de frases sobre a tua vida: una volta + imperfetto, adesso + presente."
+    },
+    "pt_BR": {
+     "t": "Comparar passado e presente",
+     "g": "Descrever como sua cidade ou sua vida mudou.",
+     "p": [
+      "Una volta (antigamente) + imperfetto: una volta qui c'era un cinema, una volta andavo a scuola a piedi.",
+      "Adesso / oggi + presente: adesso c'è un supermercato, oggi lavoro da casa. Prima... ora... funciona igual.",
+      "Compare: la città è più grande di prima, ci sono meno negozi, è cambiata molto (mudou muito)."
+     ],
+     "q": "Como sua cidade mudou desde que você era criança? Use una volta... adesso...",
+     "c": "Escreva quatro pares de frases sobre sua vida: una volta + imperfetto, adesso + presente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "una volta",
+      "ex": "Una volta in questa strada c'erano solo case."
+     },
+     {
+      "w": "adesso",
+      "ex": "Adesso ci sono tanti bar e ristoranti."
+     },
+     {
+      "w": "prima",
+      "ex": "Prima lavoravo in banca, ora faccio l'insegnante."
+     },
+     {
+      "w": "è cambiato molto",
+      "ex": "Il quartiere è cambiato molto negli ultimi anni."
+     },
+     {
+      "w": "più di prima",
+      "ex": "Oggi viaggio più di prima."
+     },
+     {
+      "w": "non c'è più",
+      "ex": "Il vecchio cinema non c'è più."
+     }
+    ],
+    "gram": "Una volta / prima + imperfetto (abitudini e situazioni passate); adesso / oggi / ora + presente. Più / meno di prima."
+   }
+  },
+  {
+   "d": 170,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Talking about your studies",
+     "g": "Talk about school subjects, university, exams and what you are learning.",
+     "p": [
+      "Subjects (le materie): matematica, storia, geografia, lingue straniere, scienze, arte. La mia materia preferita era...",
+      "University: iscriversi all'università (enrol), la laurea (degree), laurearsi in economia (graduate), il corso.",
+      "Exams: dare / fare un esame (take an exam), passare un esame, prendere un bel voto (good mark). Studiare per un esame."
+     ],
+     "q": "What was your favourite subject at school, and what are you learning now besides Italian?",
+     "c": "Write four sentences about your studies: favourite subject, an exam you remember, your degree or course, what you study now."
+    },
+    "de": {
+     "t": "Über dein Studium sprechen",
+     "g": "Du sprichst über Schulfächer, Universität, Prüfungen und das, was du gerade lernst.",
+     "p": [
+      "Fächer (le materie): matematica, storia, geografia, lingue straniere, scienze, arte. La mia materia preferita era...",
+      "Universität: iscriversi all'università (sich einschreiben), la laurea (Abschluss), laurearsi in economia, il corso.",
+      "Prüfungen: dare / fare un esame (Prüfung ablegen), passare un esame, prendere un bel voto (gute Note). Studiare per un esame."
+     ],
+     "q": "Was war in der Schule dein Lieblingsfach, und was lernst du jetzt außer Italienisch?",
+     "c": "Schreib vier Sätze über deine Ausbildung: Lieblingsfach, eine Prüfung, an die du dich erinnerst, Abschluss oder Kurs, was du jetzt lernst."
+    },
+    "es": {
+     "t": "Hablar de tus estudios",
+     "g": "Hablar de asignaturas, universidad, exámenes y lo que estás aprendiendo.",
+     "p": [
+      "Asignaturas (le materie): matematica, storia, geografia, lingue straniere, scienze, arte. La mia materia preferita era...",
+      "Universidad: iscriversi all'università (matricularse), la laurea (título), laurearsi in economia (licenciarse), il corso.",
+      "Exámenes: dare / fare un esame (examinarse), passare un esame (aprobar), prendere un bel voto (buena nota). Studiare per un esame."
+     ],
+     "q": "¿Cuál era tu asignatura favorita en el colegio y qué aprendes ahora además de italiano?",
+     "c": "Escribe cuatro frases sobre tus estudios: asignatura favorita, un examen que recuerdas, tu carrera o curso y lo que estudias ahora."
+    },
+    "fr": {
+     "t": "Parler de ses études",
+     "g": "Parler de matières, d'université, d'examens et de ce que tu apprends.",
+     "p": [
+      "Matières (le materie) : matematica, storia, geografia, lingue straniere, scienze, arte. La mia materia preferita era...",
+      "Université : iscriversi all'università (s'inscrire), la laurea (diplôme), laurearsi in economia (être diplômé), il corso.",
+      "Examens : dare / fare un esame (passer un examen), passare un esame (le réussir), prendere un bel voto (bonne note)."
+     ],
+     "q": "Quelle était ta matière préférée à l'école, et qu'apprends-tu maintenant en plus de l'italien ?",
+     "c": "Écris quatre phrases sur tes études : matière préférée, un examen marquant, ton diplôme ou cours, ce que tu étudies maintenant."
+    },
+    "it": {
+     "t": "Parlare dei propri studi",
+     "g": "Parlare di materie scolastiche, università, esami e di quello che stai imparando.",
+     "p": [
+      "Le materie: matematica, storia, geografia, lingue straniere, scienze, arte. La mia materia preferita era...",
+      "L'università: iscriversi all'università, la laurea, laurearsi in economia, il corso, la lezione.",
+      "Gli esami: dare un esame, passare un esame, prendere un bel voto. Studiare per un esame, essere bocciato."
+     ],
+     "q": "Qual era la tua materia preferita a scuola? E che cosa stai imparando adesso, oltre all'italiano?",
+     "c": "Scrivi quattro frasi sui tuoi studi: materia preferita, un esame che ricordi, la laurea o il corso, che cosa studi adesso."
+    },
+    "pt": {
+     "t": "Falar dos teus estudos",
+     "g": "Falar de disciplinas, universidade, exames e do que estás a aprender.",
+     "p": [
+      "Disciplinas (le materie): matematica, storia, geografia, lingue straniere, scienze, arte. La mia materia preferita era...",
+      "Universidade: iscriversi all'università (inscrever-se), la laurea (licenciatura), laurearsi in economia (licenciar-se), il corso.",
+      "Exames: dare / fare un esame (fazer um exame), passare un esame (passar), prendere un bel voto (boa nota). Studiare per un esame."
+     ],
+     "q": "Qual era a tua disciplina preferida na escola, e o que estás a aprender agora além do italiano?",
+     "c": "Escreve quatro frases sobre os teus estudos: disciplina preferida, um exame de que te lembras, o teu curso e o que estudas agora."
+    },
+    "pt_BR": {
+     "t": "Falar dos seus estudos",
+     "g": "Falar de matérias, faculdade, provas e do que você está aprendendo.",
+     "p": [
+      "Matérias (le materie): matematica, storia, geografia, lingue straniere, scienze, arte. La mia materia preferita era...",
+      "Faculdade: iscriversi all'università (matricular-se), la laurea (diploma), laurearsi in economia (formar-se), il corso.",
+      "Provas: dare / fare un esame (fazer prova), passare un esame (passar), prendere un bel voto (tirar nota boa). Studiare per un esame."
+     ],
+     "q": "Qual era sua matéria favorita na escola, e o que você está aprendendo agora além do italiano?",
+     "c": "Escreva quatro frases sobre seus estudos: matéria favorita, uma prova de que se lembra, seu curso e o que estuda agora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la materia preferita",
+      "ex": "La mia materia preferita era la storia."
+     },
+     {
+      "w": "iscriversi",
+      "ex": "Mi sono iscritta a un corso di fotografia."
+     },
+     {
+      "w": "laurearsi",
+      "ex": "Mio fratello si è laureato in ingegneria."
+     },
+     {
+      "w": "dare un esame",
+      "ex": "Domani do l'esame di chimica."
+     },
+     {
+      "w": "prendere un bel voto",
+      "ex": "Ho preso un bel voto in inglese."
+     },
+     {
+      "w": "il corso",
+      "ex": "Il corso di cucina comincia a ottobre."
+     }
+    ],
+    "gram": "Laurearsi in + materia (laurearsi in lettere); dare / passare un esame; iscriversi a + corso (iscriversi all'università)."
+   }
+  }
+ ]
+}

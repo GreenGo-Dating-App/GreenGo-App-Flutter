@@ -1,0 +1,1305 @@
+{
+"topic": "slang_idioms",
+"questions": [
+{
+"id": "slang_idioms-001",
+"lv": "any",
+"i18n": {
+"en": "Which expression from your language do you use the most?",
+"de": "Welchen Ausdruck aus deiner Sprache benutzt du am häufigsten?",
+"es": "¿Qué expresión de tu idioma usas más?",
+"fr": "Quelle expression de ta langue utilises-tu le plus ?",
+"it": "Qual è l'espressione della tua lingua che usi di più?",
+"pt": "Qual é a expressão da tua língua que usas mais?",
+"pt_BR": "Qual expressão do seu idioma você mais usa?"
+}
+},
+{
+"id": "slang_idioms-002",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite idiom in any language?",
+"de": "Was ist deine Lieblingsredewendung, egal in welcher Sprache?",
+"es": "¿Cuál es tu modismo favorito en cualquier idioma?",
+"fr": "Quelle est ton expression préférée, toutes langues confondues ?",
+"it": "Qual è il tuo modo di dire preferito, in qualsiasi lingua?",
+"pt": "Qual é a tua expressão idiomática preferida, em qualquer língua?",
+"pt_BR": "Qual é a sua expressão idiomática favorita, em qualquer idioma?"
+}
+},
+{
+"id": "slang_idioms-003",
+"lv": "any",
+"i18n": {
+"en": "Is there a slang word you hear everywhere these days?",
+"de": "Gibt es ein Slangwort, das du zurzeit überall hörst?",
+"es": "¿Hay alguna palabra de argot que oigas en todas partes últimamente?",
+"fr": "Y a-t-il un mot d'argot que tu entends partout en ce moment ?",
+"it": "C'è una parola gergale che senti dappertutto in questo periodo?",
+"pt": "Há alguma palavra de calão que ouças em todo o lado ultimamente?",
+"pt_BR": "Tem alguma gíria que você escuta em todo lugar ultimamente?"
+}
+},
+{
+"id": "slang_idioms-004",
+"lv": "any",
+"i18n": {
+"en": "Which expression from your language would be hardest to translate?",
+"de": "Welcher Ausdruck aus deiner Sprache wäre am schwersten zu übersetzen?",
+"es": "¿Qué expresión de tu idioma sería la más difícil de traducir?",
+"fr": "Quelle expression de ta langue serait la plus difficile à traduire ?",
+"it": "Quale espressione della tua lingua sarebbe la più difficile da tradurre?",
+"pt": "Que expressão da tua língua seria a mais difícil de traduzir?",
+"pt_BR": "Qual expressão do seu idioma seria a mais difícil de traduzir?"
+}
+},
+{
+"id": "slang_idioms-005",
+"lv": "any",
+"i18n": {
+"en": "Have you ever misunderstood an idiom? What happened?",
+"de": "Hast du schon mal eine Redewendung falsch verstanden? Was ist passiert?",
+"es": "¿Alguna vez entendiste mal un modismo? ¿Qué pasó?",
+"fr": "As-tu déjà mal compris une expression ? Que s'est-il passé ?",
+"it": "Ti è mai capitato di fraintendere un modo di dire? Che cosa è successo?",
+"pt": "Alguma vez percebeste mal uma expressão? O que aconteceu?",
+"pt_BR": "Você já entendeu errado alguma expressão? O que aconteceu?"
+}
+},
+{
+"id": "slang_idioms-006",
+"lv": "any",
+"i18n": {
+"en": "Which language do you think has the funniest expressions?",
+"de": "Welche Sprache hat deiner Meinung nach die lustigsten Ausdrücke?",
+"es": "¿Qué idioma crees que tiene las expresiones más graciosas?",
+"fr": "Selon toi, quelle langue a les expressions les plus drôles ?",
+"it": "Secondo te, quale lingua ha le espressioni più divertenti?",
+"pt": "Na tua opinião, que língua tem as expressões mais engraçadas?",
+"pt_BR": "Na sua opinião, qual idioma tem as expressões mais engraçadas?"
+}
+},
+{
+"id": "slang_idioms-007",
+"lv": "any",
+"i18n": {
+"en": "Do you use slang more with friends or online?",
+"de": "Benutzt du Slang eher mit Freunden oder online?",
+"es": "¿Usas más argot con tus amigos o en internet?",
+"fr": "Tu utilises plus d'argot avec tes amis ou en ligne ?",
+"it": "Usi più slang con gli amici o online?",
+"pt": "Usas mais calão com os amigos ou na internet?",
+"pt_BR": "Você usa mais gíria com os amigos ou na internet?"
+}
+},
+{
+"id": "slang_idioms-008",
+"lv": "any",
+"i18n": {
+"en": "What do you say when you are really happy?",
+"de": "Was sagst du, wenn du richtig glücklich bist?",
+"es": "¿Qué dices cuando estás muy feliz?",
+"fr": "Que dis-tu quand tu es vraiment heureux ?",
+"it": "Che cosa dici quando sei davvero felice?",
+"pt": "O que dizes quando estás mesmo feliz?",
+"pt_BR": "O que você fala quando está muito feliz?"
+}
+},
+{
+"id": "slang_idioms-009",
+"lv": "any",
+"i18n": {
+"en": "How do you say cool in your language or region?",
+"de": "Wie sagt man cool in deiner Sprache oder Region?",
+"es": "¿Cómo se dice guay o chévere en tu idioma o región?",
+"fr": "Comment dit-on cool dans ta langue ou ta région ?",
+"it": "Come si dice figo nella tua lingua o regione?",
+"pt": "Como se diz fixe na tua língua ou região?",
+"pt_BR": "Como se diz legal no seu idioma ou na sua região?"
+}
+},
+{
+"id": "slang_idioms-010",
+"lv": "any",
+"i18n": {
+"en": "Is there a word that only people from your region use?",
+"de": "Gibt es ein Wort, das nur Leute aus deiner Region benutzen?",
+"es": "¿Hay alguna palabra que solo usa la gente de tu región?",
+"fr": "Y a-t-il un mot que seuls les gens de ta région utilisent ?",
+"it": "C'è una parola che usano solo le persone della tua zona?",
+"pt": "Há alguma palavra que só as pessoas da tua região usam?",
+"pt_BR": "Tem alguma palavra que só o pessoal da sua região usa?"
+}
+},
+{
+"id": "slang_idioms-011",
+"lv": "any",
+"i18n": {
+"en": "Which expression does your family use that others find funny?",
+"de": "Welchen Ausdruck benutzt deine Familie, den andere lustig finden?",
+"es": "¿Qué expresión usa tu familia que a otros les hace gracia?",
+"fr": "Quelle expression ta famille utilise-t-elle que les autres trouvent drôle ?",
+"it": "Quale espressione usa la tua famiglia che gli altri trovano buffa?",
+"pt": "Que expressão a tua família usa que os outros acham engraçada?",
+"pt_BR": "Qual expressão a sua família usa que os outros acham engraçada?"
+}
+},
+{
+"id": "slang_idioms-012",
+"lv": "any",
+"i18n": {
+"en": "Which foreign expression would you like to adopt in daily life?",
+"de": "Welchen ausländischen Ausdruck würdest du gern in deinen Alltag übernehmen?",
+"es": "¿Qué expresión extranjera te gustaría adoptar en tu día a día?",
+"fr": "Quelle expression étrangère aimerais-tu adopter au quotidien ?",
+"it": "Quale espressione straniera vorresti adottare nella vita di tutti i giorni?",
+"pt": "Que expressão estrangeira gostavas de adotar no dia a dia?",
+"pt_BR": "Qual expressão estrangeira você gostaria de adotar no dia a dia?"
+}
+},
+{
+"id": "slang_idioms-013",
+"lv": "any",
+"i18n": {
+"en": "Do you like using idioms, or do you prefer plain language?",
+"de": "Benutzt du gern Redewendungen, oder sprichst du lieber ganz einfach?",
+"es": "¿Te gusta usar modismos o prefieres hablar de forma sencilla?",
+"fr": "Tu aimes utiliser des expressions, ou tu préfères parler simplement ?",
+"it": "Ti piace usare modi di dire o preferisci parlare in modo semplice?",
+"pt": "Gostas de usar expressões ou preferes falar de forma simples?",
+"pt_BR": "Você gosta de usar expressões ou prefere falar de um jeito simples?"
+}
+},
+{
+"id": "slang_idioms-014",
+"lv": "any",
+"i18n": {
+"en": "What do you say in your language to wish someone good luck?",
+"de": "Was sagt man in deiner Sprache, um jemandem Glück zu wünschen?",
+"es": "¿Qué se dice en tu idioma para desear buena suerte?",
+"fr": "Que dit-on dans ta langue pour souhaiter bonne chance ?",
+"it": "Che cosa si dice nella tua lingua per augurare buona fortuna?",
+"pt": "O que se diz na tua língua para desejar boa sorte?",
+"pt_BR": "O que se fala no seu idioma para desejar boa sorte?"
+}
+},
+{
+"id": "slang_idioms-015",
+"lv": "any",
+"i18n": {
+"en": "Which idiom makes you laugh when you picture it literally?",
+"de": "Welche Redewendung bringt dich zum Lachen, wenn du sie dir wörtlich vorstellst?",
+"es": "¿Qué modismo te hace reír si lo imaginas al pie de la letra?",
+"fr": "Quelle expression te fait rire quand tu l'imagines au pied de la lettre ?",
+"it": "Quale modo di dire ti fa ridere se lo immagini alla lettera?",
+"pt": "Que expressão te faz rir quando a imaginas à letra?",
+"pt_BR": "Qual expressão te faz rir quando você imagina ao pé da letra?"
+}
+},
+{
+"id": "slang_idioms-016",
+"lv": "any",
+"i18n": {
+"en": "How do people in your country greet friends casually?",
+"de": "Wie begrüßen sich Freunde in deinem Land ganz locker?",
+"es": "¿Cómo se saludan los amigos de manera informal en tu país?",
+"fr": "Comment les amis se saluent-ils de façon décontractée dans ton pays ?",
+"it": "Come si salutano gli amici in modo informale nel tuo paese?",
+"pt": "Como é que os amigos se cumprimentam informalmente no teu país?",
+"pt_BR": "Como os amigos se cumprimentam de um jeito informal no seu país?"
+}
+},
+{
+"id": "slang_idioms-017",
+"lv": "any",
+"i18n": {
+"en": "What do you say when something is very easy?",
+"de": "Was sagst du, wenn etwas sehr einfach ist?",
+"es": "¿Qué dices cuando algo es muy fácil?",
+"fr": "Que dis-tu quand quelque chose est très facile ?",
+"it": "Che cosa dici quando una cosa è facilissima?",
+"pt": "O que dizes quando uma coisa é muito fácil?",
+"pt_BR": "O que você fala quando uma coisa é muito fácil?"
+}
+},
+{
+"id": "slang_idioms-018",
+"lv": "any",
+"i18n": {
+"en": "How do you say you're tired in a casual way?",
+"de": "Wie sagst du locker, dass du müde bist?",
+"es": "¿Cómo dices que estás cansado de manera informal?",
+"fr": "Comment dis-tu que tu es fatigué de façon familière ?",
+"it": "Come dici in modo informale che sei stanco?",
+"pt": "Como dizes que estás cansado de forma informal?",
+"pt_BR": "Como você diz que está cansado de um jeito informal?"
+}
+},
+{
+"id": "slang_idioms-019",
+"lv": "any",
+"i18n": {
+"en": "Which word or expression do you find beautiful?",
+"de": "Welches Wort oder welchen Ausdruck findest du schön?",
+"es": "¿Qué palabra o expresión te parece bonita?",
+"fr": "Quel mot ou quelle expression trouves-tu beau ?",
+"it": "Quale parola o espressione trovi bella?",
+"pt": "Que palavra ou expressão achas bonita?",
+"pt_BR": "Qual palavra ou expressão você acha bonita?"
+}
+},
+{
+"id": "slang_idioms-020",
+"lv": "any",
+"i18n": {
+"en": "Do older people in your country use different slang from younger people?",
+"de": "Benutzen ältere Menschen in deinem Land anderen Slang als jüngere?",
+"es": "¿Los mayores de tu país usan un argot distinto al de los jóvenes?",
+"fr": "Les personnes âgées de ton pays utilisent-elles un argot différent des jeunes ?",
+"it": "Nel tuo paese le persone anziane usano uno slang diverso dai giovani?",
+"pt": "No teu país, os mais velhos usam um calão diferente dos mais novos?",
+"pt_BR": "No seu país, os mais velhos usam gírias diferentes das dos mais jovens?"
+}
+},
+{
+"id": "slang_idioms-021",
+"lv": "any",
+"i18n": {
+"en": "What is a proverb your grandparents used to say?",
+"de": "Welches Sprichwort haben deine Großeltern oft gesagt?",
+"es": "¿Qué refrán solían decir tus abuelos?",
+"fr": "Quel proverbe tes grands-parents avaient-ils l'habitude de dire ?",
+"it": "Qual è un proverbio che dicevano spesso i tuoi nonni?",
+"pt": "Que provérbio costumavam dizer os teus avós?",
+"pt_BR": "Qual ditado seus avós costumavam falar?"
+}
+},
+{
+"id": "slang_idioms-022",
+"lv": "any",
+"i18n": {
+"en": "What expression do you use when you are surprised?",
+"de": "Welchen Ausdruck benutzt du, wenn du überrascht bist?",
+"es": "¿Qué expresión usas cuando te sorprendes?",
+"fr": "Quelle expression utilises-tu quand tu es surpris ?",
+"it": "Quale espressione usi quando sei sorpreso?",
+"pt": "Que expressão usas quando ficas surpreendido?",
+"pt_BR": "Qual expressão você usa quando fica surpreso?"
+}
+},
+{
+"id": "slang_idioms-023",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite word that has no translation?",
+"de": "Hast du ein Lieblingswort, das man nicht übersetzen kann?",
+"es": "¿Tienes alguna palabra favorita que no tenga traducción?",
+"fr": "As-tu un mot préféré qui n'a pas de traduction ?",
+"it": "Hai una parola preferita che non ha traduzione?",
+"pt": "Tens alguma palavra preferida que não tem tradução?",
+"pt_BR": "Você tem alguma palavra favorita que não tem tradução?"
+}
+},
+{
+"id": "slang_idioms-024",
+"lv": "any",
+"i18n": {
+"en": "How do you laugh in text messages?",
+"de": "Wie lachst du in Textnachrichten?",
+"es": "¿Cómo te ríes en los mensajes?",
+"fr": "Comment écris-tu ton rire dans les messages ?",
+"it": "Come scrivi una risata nei messaggi?",
+"pt": "Como escreves o riso nas mensagens?",
+"pt_BR": "Como você escreve sua risada nas mensagens?"
+}
+},
+{
+"id": "slang_idioms-025",
+"lv": "any",
+"i18n": {
+"en": "Which emoji do you use most, and what does it mean to you?",
+"de": "Welches Emoji benutzt du am häufigsten, und was bedeutet es für dich?",
+"es": "¿Qué emoji usas más y qué significa para ti?",
+"fr": "Quel emoji utilises-tu le plus, et que signifie-t-il pour toi ?",
+"it": "Quale emoji usi di più, e che cosa significa per te?",
+"pt": "Que emoji usas mais, e o que significa para ti?",
+"pt_BR": "Qual emoji você mais usa, e o que ele significa pra você?"
+}
+},
+{
+"id": "slang_idioms-026",
+"lv": "any",
+"i18n": {
+"en": "What is a food idiom from your language?",
+"de": "Welche Redewendung mit Essen gibt es in deiner Sprache?",
+"es": "¿Qué modismo con comida hay en tu idioma?",
+"fr": "Quelle expression liée à la nourriture existe dans ta langue ?",
+"it": "Qual è un modo di dire sul cibo nella tua lingua?",
+"pt": "Que expressão com comida existe na tua língua?",
+"pt_BR": "Qual expressão com comida existe no seu idioma?"
+}
+},
+{
+"id": "slang_idioms-027",
+"lv": "any",
+"i18n": {
+"en": "Which animal expression do you know from your culture?",
+"de": "Welchen Ausdruck mit Tieren kennst du aus deiner Kultur?",
+"es": "¿Qué expresión con animales conoces de tu cultura?",
+"fr": "Quelle expression avec un animal connais-tu dans ta culture ?",
+"it": "Quale espressione con animali conosci della tua cultura?",
+"pt": "Que expressão com animais conheces da tua cultura?",
+"pt_BR": "Qual expressão com animais você conhece da sua cultura?"
+}
+},
+{
+"id": "slang_idioms-028",
+"lv": "any",
+"i18n": {
+"en": "Which language would you like to learn slang from?",
+"de": "Aus welcher Sprache würdest du gern Slang lernen?",
+"es": "¿De qué idioma te gustaría aprender argot?",
+"fr": "De quelle langue aimerais-tu apprendre l'argot ?",
+"it": "Di quale lingua ti piacerebbe imparare lo slang?",
+"pt": "De que língua gostavas de aprender calão?",
+"pt_BR": "De qual idioma você gostaria de aprender gírias?"
+}
+},
+{
+"id": "slang_idioms-029",
+"lv": "any",
+"i18n": {
+"en": "Have you ever used an expression in the wrong situation?",
+"de": "Hast du schon mal einen Ausdruck in der falschen Situation benutzt?",
+"es": "¿Alguna vez usaste una expresión en la situación equivocada?",
+"fr": "As-tu déjà utilisé une expression au mauvais moment ?",
+"it": "Ti è mai capitato di usare un'espressione nella situazione sbagliata?",
+"pt": "Alguma vez usaste uma expressão na situação errada?",
+"pt_BR": "Você já usou uma expressão na situação errada?"
+}
+},
+{
+"id": "slang_idioms-030",
+"lv": "any",
+"i18n": {
+"en": "How do you say thank you casually where you live?",
+"de": "Wie bedankt man sich bei dir ganz locker?",
+"es": "¿Cómo se dice gracias de forma informal donde vives?",
+"fr": "Comment dit-on merci de façon décontractée là où tu vis ?",
+"it": "Come si dice grazie in modo informale dove vivi?",
+"pt": "Como se agradece de forma informal onde vives?",
+"pt_BR": "Como se agradece de um jeito informal onde você mora?"
+}
+},
+{
+"id": "slang_idioms-031",
+"lv": "any",
+"i18n": {
+"en": "What expression do you use to encourage a friend?",
+"de": "Mit welchem Ausdruck machst du einem Freund Mut?",
+"es": "¿Qué expresión usas para animar a un amigo?",
+"fr": "Quelle expression utilises-tu pour encourager un ami ?",
+"it": "Quale espressione usi per incoraggiare un amico?",
+"pt": "Que expressão usas para dar ânimo a um amigo?",
+"pt_BR": "Qual expressão você usa para dar força a um amigo?"
+}
+},
+{
+"id": "slang_idioms-032",
+"lv": "any",
+"i18n": {
+"en": "Which new expression have you learned recently?",
+"de": "Welchen neuen Ausdruck hast du kürzlich gelernt?",
+"es": "¿Qué expresión nueva has aprendido últimamente?",
+"fr": "Quelle nouvelle expression as-tu apprise récemment ?",
+"it": "Quale nuova espressione hai imparato di recente?",
+"pt": "Que expressão nova aprendeste ultimamente?",
+"pt_BR": "Qual expressão nova você aprendeu recentemente?"
+}
+},
+{
+"id": "slang_idioms-033",
+"lv": "any",
+"i18n": {
+"en": "Do you think slang makes a language richer?",
+"de": "Glaubst du, dass Slang eine Sprache reicher macht?",
+"es": "¿Crees que el argot enriquece un idioma?",
+"fr": "Penses-tu que l'argot enrichit une langue ?",
+"it": "Pensi che lo slang renda una lingua più ricca?",
+"pt": "Achas que o calão torna uma língua mais rica?",
+"pt_BR": "Você acha que as gírias deixam um idioma mais rico?"
+}
+},
+{
+"id": "slang_idioms-034",
+"lv": "any",
+"i18n": {
+"en": "What is the most useful expression for a visitor to your country?",
+"de": "Was ist der nützlichste Ausdruck für Besucher in deinem Land?",
+"es": "¿Cuál es la expresión más útil para alguien que visita tu país?",
+"fr": "Quelle est l'expression la plus utile pour un visiteur dans ton pays ?",
+"it": "Qual è l'espressione più utile per chi visita il tuo paese?",
+"pt": "Qual é a expressão mais útil para quem visita o teu país?",
+"pt_BR": "Qual é a expressão mais útil para quem visita o seu país?"
+}
+},
+{
+"id": "slang_idioms-035",
+"lv": "any",
+"i18n": {
+"en": "How do people where you live say goodbye to friends?",
+"de": "Wie verabschieden sich Leute bei dir von Freunden?",
+"es": "¿Cómo se despide la gente de sus amigos donde vives?",
+"fr": "Comment les gens disent-ils au revoir à leurs amis là où tu vis ?",
+"it": "Come si salutano gli amici quando si lasciano, dove vivi?",
+"pt": "Como é que as pessoas se despedem dos amigos onde vives?",
+"pt_BR": "Como o pessoal se despede dos amigos onde você mora?"
+}
+},
+{
+"id": "slang_idioms-036",
+"lv": "any",
+"i18n": {
+"en": "Which TV series or film taught you some slang?",
+"de": "Welche Serie oder welcher Film hat dir etwas Slang beigebracht?",
+"es": "¿Qué serie o película te enseñó algo de argot?",
+"fr": "Quelle série ou quel film t'a appris un peu d'argot ?",
+"it": "Quale serie o film ti ha insegnato un po' di slang?",
+"pt": "Que série ou filme te ensinou algum calão?",
+"pt_BR": "Qual série ou filme te ensinou alguma gíria?"
+}
+},
+{
+"id": "slang_idioms-037",
+"lv": "any",
+"i18n": {
+"en": "Is there an expression that reminds you of your childhood?",
+"de": "Gibt es einen Ausdruck, der dich an deine Kindheit erinnert?",
+"es": "¿Hay alguna expresión que te recuerde tu infancia?",
+"fr": "Y a-t-il une expression qui te rappelle ton enfance ?",
+"it": "C'è un'espressione che ti ricorda la tua infanzia?",
+"pt": "Há alguma expressão que te lembre a tua infância?",
+"pt_BR": "Tem alguma expressão que te lembra a sua infância?"
+}
+},
+{
+"id": "slang_idioms-038",
+"lv": "any",
+"i18n": {
+"en": "Which expression would you teach a friend from another country first?",
+"de": "Welchen Ausdruck würdest du einem Freund aus einem anderen Land zuerst beibringen?",
+"es": "¿Qué expresión le enseñarías primero a un amigo de otro país?",
+"fr": "Quelle expression apprendrais-tu en premier à un ami étranger ?",
+"it": "Quale espressione insegneresti per prima a un amico di un altro paese?",
+"pt": "Que expressão ensinarias primeiro a um amigo de outro país?",
+"pt_BR": "Qual expressão você ensinaria primeiro a um amigo de outro país?"
+}
+},
+{
+"id": "slang_idioms-039",
+"lv": "any",
+"i18n": {
+"en": "Which idiom best describes your personality?",
+"de": "Welche Redewendung beschreibt deine Persönlichkeit am besten?",
+"es": "¿Qué modismo describe mejor tu personalidad?",
+"fr": "Quelle expression décrit le mieux ta personnalité ?",
+"it": "Quale modo di dire descrive meglio la tua personalità?",
+"pt": "Que expressão descreve melhor a tua personalidade?",
+"pt_BR": "Qual expressão descreve melhor a sua personalidade?"
+}
+},
+{
+"id": "slang_idioms-040",
+"lv": "any",
+"i18n": {
+"en": "Which word do people from other regions say differently from you?",
+"de": "Welches Wort sagen Leute aus anderen Regionen anders als du?",
+"es": "¿Qué palabra dice la gente de otras regiones de forma distinta a ti?",
+"fr": "Quel mot les gens d'autres régions disent-ils autrement que toi ?",
+"it": "Quale parola dicono in modo diverso da te le persone di altre regioni?",
+"pt": "Que palavra é que as pessoas de outras regiões dizem de outra maneira?",
+"pt_BR": "Qual palavra o pessoal de outras regiões fala diferente de você?"
+}
+},
+{
+"id": "slang_idioms-041",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when you meet a friend on the street?",
+"de": "Was sagst du, wenn du einen Freund auf der Straße triffst?",
+"es": "¿Qué dices cuando te encuentras a un amigo por la calle?",
+"fr": "Que dis-tu quand tu croises un ami dans la rue ?",
+"it": "Che cosa dici quando incontri un amico per strada?",
+"pt": "O que dizes quando encontras um amigo na rua?",
+"pt_BR": "O que você fala quando encontra um amigo na rua?"
+}
+},
+{
+"id": "slang_idioms-042",
+"lv": "beginner",
+"i18n": {
+"en": "How do you answer when someone asks how you are?",
+"de": "Was antwortest du, wenn dich jemand fragt, wie es dir geht?",
+"es": "¿Qué respondes cuando alguien te pregunta qué tal estás?",
+"fr": "Que réponds-tu quand on te demande comment ça va ?",
+"it": "Che cosa rispondi quando qualcuno ti chiede come stai?",
+"pt": "O que respondes quando alguém te pergunta como estás?",
+"pt_BR": "O que você responde quando alguém pergunta como você está?"
+}
+},
+{
+"id": "slang_idioms-043",
+"lv": "beginner",
+"i18n": {
+"en": "When was the last time you had to break the ice?",
+"de": "Wann musstest du zuletzt das Eis brechen?",
+"es": "¿Cuándo fue la última vez que tuviste que romper el hielo?",
+"fr": "Quand as-tu dû briser la glace pour la dernière fois ?",
+"it": "Quando è stata l'ultima volta che hai dovuto rompere il ghiaccio?",
+"pt": "Quando foi a última vez que tiveste de quebrar o gelo?",
+"pt_BR": "Quando foi a última vez que você teve que quebrar o gelo?"
+}
+},
+{
+"id": "slang_idioms-044",
+"lv": "beginner",
+"i18n": {
+"en": "What is something that is a piece of cake for you?",
+"de": "Was ist für dich ein Kinderspiel?",
+"es": "¿Qué cosa es pan comido para ti?",
+"fr": "Qu'est-ce qui est du gâteau pour toi ?",
+"it": "Che cosa è un gioco da ragazzi per te?",
+"pt": "O que é que para ti é canja?",
+"pt_BR": "O que é moleza pra você?"
+}
+},
+{
+"id": "slang_idioms-045",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when the weather is really bad?",
+"de": "Was sagst du, wenn das Wetter richtig schlecht ist?",
+"es": "¿Qué dices cuando hace un tiempo malísimo?",
+"fr": "Que dis-tu quand il fait un temps horrible ?",
+"it": "Che cosa dici quando il tempo è proprio brutto?",
+"pt": "O que dizes quando está um tempo mesmo mau?",
+"pt_BR": "O que você fala quando o tempo está muito ruim?"
+}
+},
+{
+"id": "slang_idioms-046",
+"lv": "beginner",
+"i18n": {
+"en": "How do you say yes and no casually in your language?",
+"de": "Wie sagst du in deiner Sprache locker ja und nein?",
+"es": "¿Cómo dices sí y no de manera informal en tu idioma?",
+"fr": "Comment dis-tu oui et non de façon familière dans ta langue ?",
+"it": "Come dici sì e no in modo informale nella tua lingua?",
+"pt": "Como dizes sim e não de forma informal na tua língua?",
+"pt_BR": "Como você fala sim e não de um jeito informal no seu idioma?"
+}
+},
+{
+"id": "slang_idioms-047",
+"lv": "beginner",
+"i18n": {
+"en": "Which colour idiom do you know?",
+"de": "Welche Redewendung mit einer Farbe kennst du?",
+"es": "¿Qué modismo con colores conoces?",
+"fr": "Quelle expression avec une couleur connais-tu ?",
+"it": "Quale modo di dire con un colore conosci?",
+"pt": "Que expressão com cores conheces?",
+"pt_BR": "Qual expressão com cores você conhece?"
+}
+},
+{
+"id": "slang_idioms-048",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when something is very expensive?",
+"de": "Was sagst du, wenn etwas sehr teuer ist?",
+"es": "¿Qué dices cuando algo es carísimo?",
+"fr": "Que dis-tu quand quelque chose coûte très cher ?",
+"it": "Che cosa dici quando una cosa costa carissima?",
+"pt": "O que dizes quando uma coisa é caríssima?",
+"pt_BR": "O que você fala quando uma coisa é caríssima?"
+}
+},
+{
+"id": "slang_idioms-049",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when you are very hungry?",
+"de": "Was sagst du, wenn du großen Hunger hast?",
+"es": "¿Qué dices cuando tienes muchísima hambre?",
+"fr": "Que dis-tu quand tu as très faim ?",
+"it": "Che cosa dici quando hai una fame da lupi?",
+"pt": "O que dizes quando tens muita fome?",
+"pt_BR": "O que você fala quando está com muita fome?"
+}
+},
+{
+"id": "slang_idioms-050",
+"lv": "beginner",
+"i18n": {
+"en": "What do you call your friends in a casual way?",
+"de": "Wie nennst du deine Freunde ganz locker?",
+"es": "¿Cómo llamas a tus amigos de forma informal?",
+"fr": "Comment appelles-tu tes amis de façon familière ?",
+"it": "Come chiami i tuoi amici in modo informale?",
+"pt": "Como chamas os teus amigos de forma informal?",
+"pt_BR": "Como você chama seus amigos de um jeito informal?"
+}
+},
+{
+"id": "slang_idioms-051",
+"lv": "beginner",
+"i18n": {
+"en": "How do you say sorry when you make a small mistake?",
+"de": "Wie entschuldigst du dich, wenn dir ein kleiner Fehler passiert?",
+"es": "¿Cómo pides perdón cuando cometes un pequeño error?",
+"fr": "Comment t'excuses-tu quand tu fais une petite erreur ?",
+"it": "Come chiedi scusa quando fai un piccolo errore?",
+"pt": "Como pedes desculpa quando dás um pequeno erro?",
+"pt_BR": "Como você pede desculpa quando comete um errinho?"
+}
+},
+{
+"id": "slang_idioms-052",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite word for great?",
+"de": "Was ist dein Lieblingswort für toll?",
+"es": "¿Cuál es tu palabra favorita para decir genial?",
+"fr": "Quel est ton mot préféré pour dire génial ?",
+"it": "Qual è la tua parola preferita per dire fantastico?",
+"pt": "Qual é a tua palavra preferida para dizer espetacular?",
+"pt_BR": "Qual é sua palavra favorita para dizer incrível?"
+}
+},
+{
+"id": "slang_idioms-053",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when you finish work for the day?",
+"de": "Was sagst du, wenn du Feierabend machst?",
+"es": "¿Qué dices cuando terminas de trabajar por hoy?",
+"fr": "Que dis-tu quand tu as fini ta journée de travail ?",
+"it": "Che cosa dici quando finisci di lavorare per oggi?",
+"pt": "O que dizes quando acabas o dia de trabalho?",
+"pt_BR": "O que você fala quando termina o expediente?"
+}
+},
+{
+"id": "slang_idioms-054",
+"lv": "beginner",
+"i18n": {
+"en": "Are you an early bird or a night owl?",
+"de": "Bist du eher Frühaufsteher oder Nachteule?",
+"es": "¿Eres más madrugador o noctámbulo?",
+"fr": "Es-tu plutôt lève-tôt ou couche-tard ?",
+"it": "Sei più mattiniero o nottambulo?",
+"pt": "És mais madrugador ou mais noctívago?",
+"pt_BR": "Você é mais madrugador ou mais coruja?"
+}
+},
+{
+"id": "slang_idioms-055",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when you completely agree with someone?",
+"de": "Was sagst du, wenn du jemandem völlig zustimmst?",
+"es": "¿Qué dices cuando estás totalmente de acuerdo con alguien?",
+"fr": "Que dis-tu quand tu es tout à fait d'accord avec quelqu'un ?",
+"it": "Che cosa dici quando sei completamente d'accordo con qualcuno?",
+"pt": "O que dizes quando concordas totalmente com alguém?",
+"pt_BR": "O que você fala quando concorda totalmente com alguém?"
+}
+},
+{
+"id": "slang_idioms-056",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when you don't understand something?",
+"de": "Was sagst du, wenn du etwas nicht verstehst?",
+"es": "¿Qué dices cuando no entiendes algo?",
+"fr": "Que dis-tu quand tu ne comprends pas quelque chose ?",
+"it": "Che cosa dici quando non capisci qualcosa?",
+"pt": "O que dizes quando não percebes alguma coisa?",
+"pt_BR": "O que você fala quando não entende alguma coisa?"
+}
+},
+{
+"id": "slang_idioms-057",
+"lv": "beginner",
+"i18n": {
+"en": "Which little filler words do you use when you talk?",
+"de": "Welche kleinen Füllwörter benutzt du beim Sprechen?",
+"es": "¿Qué muletillas usas cuando hablas?",
+"fr": "Quels petits mots de remplissage utilises-tu quand tu parles ?",
+"it": "Quali intercalari usi quando parli?",
+"pt": "Que bordões usas quando falas?",
+"pt_BR": "Quais palavrinhas de apoio, tipo né, você usa quando fala?"
+}
+},
+{
+"id": "slang_idioms-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which text abbreviations do you use most?",
+"de": "Welche Abkürzungen benutzt du beim Schreiben am häufigsten?",
+"es": "¿Qué abreviaturas usas más en los mensajes?",
+"fr": "Quelles abréviations utilises-tu le plus dans tes messages ?",
+"it": "Quali abbreviazioni usi di più nei messaggi?",
+"pt": "Que abreviaturas usas mais nas mensagens?",
+"pt_BR": "Quais abreviações você mais usa nas mensagens?"
+}
+},
+{
+"id": "slang_idioms-059",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when you are in a hurry?",
+"de": "Was sagst du, wenn du es eilig hast?",
+"es": "¿Qué dices cuando tienes prisa?",
+"fr": "Que dis-tu quand tu es pressé ?",
+"it": "Che cosa dici quando vai di fretta?",
+"pt": "O que dizes quando estás com pressa?",
+"pt_BR": "O que você fala quando está com pressa?"
+}
+},
+{
+"id": "slang_idioms-060",
+"lv": "beginner",
+"i18n": {
+"en": "How do you say you're very busy in your language?",
+"de": "Wie sagst du in deiner Sprache, dass du viel zu tun hast?",
+"es": "¿Cómo dices en tu idioma que estás muy ocupado?",
+"fr": "Comment dis-tu dans ta langue que tu es débordé ?",
+"it": "Come dici nella tua lingua che sei molto impegnato?",
+"pt": "Como dizes na tua língua que estás muito ocupado?",
+"pt_BR": "Como você diz no seu idioma que está muito ocupado?"
+}
+},
+{
+"id": "slang_idioms-061",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say when you just want to relax?",
+"de": "Was sagst du, wenn du einfach nur entspannen willst?",
+"es": "¿Qué dices cuando solo quieres relajarte?",
+"fr": "Que dis-tu quand tu veux juste te détendre ?",
+"it": "Che cosa dici quando vuoi solo rilassarti?",
+"pt": "O que dizes quando só queres descontrair?",
+"pt_BR": "O que você fala quando só quer relaxar?"
+}
+},
+{
+"id": "slang_idioms-062",
+"lv": "beginner",
+"i18n": {
+"en": "What expression do you use for something that rarely happens?",
+"de": "Welchen Ausdruck benutzt du für etwas, das selten passiert?",
+"es": "¿Qué expresión usas para algo que pasa muy de vez en cuando?",
+"fr": "Quelle expression utilises-tu pour quelque chose qui arrive rarement ?",
+"it": "Quale espressione usi per una cosa che succede di rado?",
+"pt": "Que expressão usas para uma coisa que acontece raramente?",
+"pt_BR": "Qual expressão você usa para algo que quase nunca acontece?"
+}
+},
+{
+"id": "slang_idioms-063",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say to a friend before an exam?",
+"de": "Was sagst du einem Freund vor einer Prüfung?",
+"es": "¿Qué le dices a un amigo antes de un examen?",
+"fr": "Que dis-tu à un ami avant un examen ?",
+"it": "Che cosa dici a un amico prima di un esame?",
+"pt": "O que dizes a um amigo antes de um exame?",
+"pt_BR": "O que você fala para um amigo antes de uma prova?"
+}
+},
+{
+"id": "slang_idioms-064",
+"lv": "beginner",
+"i18n": {
+"en": "How would you describe a lazy day in your language?",
+"de": "Wie würdest du einen faulen Tag in deiner Sprache beschreiben?",
+"es": "¿Cómo describirías un día de no hacer nada en tu idioma?",
+"fr": "Comment décrirais-tu une journée de flemme dans ta langue ?",
+"it": "Come descriveresti una giornata pigra nella tua lingua?",
+"pt": "Como descreverias um dia de preguiça na tua língua?",
+"pt_BR": "Como você descreveria um dia de preguiça no seu idioma?"
+}
+},
+{
+"id": "slang_idioms-065",
+"lv": "beginner",
+"i18n": {
+"en": "What expression do you use for really good news?",
+"de": "Welchen Ausdruck benutzt du bei richtig guten Nachrichten?",
+"es": "¿Qué expresión usas cuando recibes muy buenas noticias?",
+"fr": "Quelle expression utilises-tu pour une super nouvelle ?",
+"it": "Quale espressione usi per una notizia bellissima?",
+"pt": "Que expressão usas quando recebes uma notícia ótima?",
+"pt_BR": "Qual expressão você usa quando recebe uma notícia ótima?"
+}
+},
+{
+"id": "slang_idioms-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which slang from another country do you find most interesting?",
+"de": "Welcher Slang aus einem anderen Land interessiert dich am meisten?",
+"es": "¿Qué argot de otro país te parece más interesante?",
+"fr": "Quel argot d'un autre pays trouves-tu le plus intéressant ?",
+"it": "Quale slang di un altro paese trovi più interessante?",
+"pt": "Que calão de outro país achas mais interessante?",
+"pt_BR": "Qual gíria de outro país você acha mais interessante?"
+}
+},
+{
+"id": "slang_idioms-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever been tricked by a false friend in a foreign language?",
+"de": "Bist du schon mal auf einen falschen Freund in einer Fremdsprache hereingefallen?",
+"es": "¿Alguna vez te engañó un falso amigo en un idioma extranjero?",
+"fr": "T'es-tu déjà fait piéger par un faux ami dans une langue étrangère ?",
+"it": "Ti sei mai fatto ingannare da un falso amico in una lingua straniera?",
+"pt": "Já foste enganado por um falso amigo numa língua estrangeira?",
+"pt_BR": "Você já caiu na armadilha de um falso cognato num idioma estrangeiro?"
+}
+},
+{
+"id": "slang_idioms-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which English word has entered your language, and how is it used?",
+"de": "Welches englische Wort ist in deine Sprache eingezogen, und wie wird es benutzt?",
+"es": "¿Qué palabra inglesa ha entrado en tu idioma y cómo se usa?",
+"fr": "Quel mot anglais est entré dans ta langue, et comment l'utilise-t-on ?",
+"it": "Quale parola inglese è entrata nella tua lingua, e come si usa?",
+"pt": "Que palavra inglesa entrou na tua língua, e como se usa?",
+"pt_BR": "Qual palavra em inglês entrou no seu idioma, e como ela é usada?"
+}
+},
+{
+"id": "slang_idioms-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How is slang in your city different from the rest of your country?",
+"de": "Wie unterscheidet sich der Slang in deiner Stadt vom Rest des Landes?",
+"es": "¿En qué se diferencia el argot de tu ciudad del resto de tu país?",
+"fr": "En quoi l'argot de ta ville est-il différent de celui du reste du pays ?",
+"it": "In che cosa lo slang della tua città è diverso dal resto del paese?",
+"pt": "Em que é que o calão da tua cidade é diferente do resto do país?",
+"pt_BR": "Em que as gírias da sua cidade são diferentes das do resto do país?"
+}
+},
+{
+"id": "slang_idioms-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which internet slang do you use, and what does your family think of it?",
+"de": "Welchen Internet-Slang benutzt du, und was hält deine Familie davon?",
+"es": "¿Qué argot de internet usas y qué opina tu familia de él?",
+"fr": "Quel argot d'internet utilises-tu, et qu'en pense ta famille ?",
+"it": "Quale slang di internet usi, e che cosa ne pensa la tua famiglia?",
+"pt": "Que calão da internet usas, e o que acha a tua família disso?",
+"pt_BR": "Quais gírias de internet você usa, e o que sua família acha disso?"
+}
+},
+{
+"id": "slang_idioms-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which work jargon do you hear often, and do you like it?",
+"de": "Welchen Arbeitsjargon hörst du oft, und magst du ihn?",
+"es": "¿Qué jerga de trabajo oyes a menudo y te gusta?",
+"fr": "Quel jargon professionnel entends-tu souvent, et l'aimes-tu ?",
+"it": "Quale gergo di lavoro senti spesso, e ti piace?",
+"pt": "Que jargão de trabalho ouves muitas vezes, e gostas dele?",
+"pt_BR": "Qual jargão de trabalho você escuta muito, e você gosta dele?"
+}
+},
+{
+"id": "slang_idioms-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which proverb from your culture do you agree with?",
+"de": "Welchem Sprichwort aus deiner Kultur stimmst du zu?",
+"es": "¿Con qué refrán de tu cultura estás de acuerdo?",
+"fr": "Avec quel proverbe de ta culture es-tu d'accord ?",
+"it": "Con quale proverbio della tua cultura sei d'accordo?",
+"pt": "Com que provérbio da tua cultura concordas?",
+"pt_BR": "Com qual ditado da sua cultura você concorda?"
+}
+},
+{
+"id": "slang_idioms-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which proverb do you not agree with, and why?",
+"de": "Welchem Sprichwort stimmst du nicht zu, und warum?",
+"es": "¿Con qué refrán no estás de acuerdo y por qué?",
+"fr": "Avec quel proverbe n'es-tu pas d'accord, et pourquoi ?",
+"it": "Con quale proverbio non sei d'accordo, e perché?",
+"pt": "Com que provérbio não concordas, e porquê?",
+"pt_BR": "Com qual ditado você não concorda, e por quê?"
+}
+},
+{
+"id": "slang_idioms-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which expressions do people in your country use to sound polite?",
+"de": "Mit welchen Ausdrücken zeigt man in deinem Land Höflichkeit?",
+"es": "¿Qué expresiones usa la gente de tu país para sonar educada?",
+"fr": "Quelles expressions utilise-t-on dans ton pays pour être poli ?",
+"it": "Quali espressioni si usano nel tuo paese per essere gentili?",
+"pt": "Que expressões se usam no teu país para mostrar boa educação?",
+"pt_BR": "Quais expressões o pessoal do seu país usa para ser educado?"
+}
+},
+{
+"id": "slang_idioms-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you tease your friends in a friendly way?",
+"de": "Wie ziehst du deine Freunde auf nette Art auf?",
+"es": "¿Cómo les tomas el pelo a tus amigos de forma cariñosa?",
+"fr": "Comment taquines-tu tes amis gentiment ?",
+"it": "Come prendi in giro i tuoi amici in modo affettuoso?",
+"pt": "Como é que brincas com os teus amigos de forma carinhosa?",
+"pt_BR": "Como você zoa seus amigos de um jeito carinhoso?"
+}
+},
+{
+"id": "slang_idioms-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Which untranslatable word from another language do you love?",
+"de": "Welches unübersetzbare Wort aus einer anderen Sprache liebst du?",
+"es": "¿Qué palabra intraducible de otro idioma te encanta?",
+"fr": "Quel mot intraduisible d'une autre langue adores-tu ?",
+"it": "Quale parola intraducibile di un'altra lingua adori?",
+"pt": "Que palavra intraduzível de outra língua adoras?",
+"pt_BR": "Qual palavra intraduzível de outro idioma você adora?"
+}
+},
+{
+"id": "slang_idioms-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which idiom would you use to describe your week?",
+"de": "Mit welcher Redewendung würdest du deine Woche beschreiben?",
+"es": "¿Qué modismo usarías para describir tu semana?",
+"fr": "Quelle expression utiliserais-tu pour décrire ta semaine ?",
+"it": "Quale modo di dire useresti per descrivere la tua settimana?",
+"pt": "Que expressão usarias para descrever a tua semana?",
+"pt_BR": "Qual expressão você usaria para descrever a sua semana?"
+}
+},
+{
+"id": "slang_idioms-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which local expression confuses visitors to your region?",
+"de": "Welcher Ausdruck aus deiner Region verwirrt Besucher?",
+"es": "¿Qué expresión de tu región confunde a los visitantes?",
+"fr": "Quelle expression de ta région déroute les visiteurs ?",
+"it": "Quale espressione della tua zona confonde i visitatori?",
+"pt": "Que expressão da tua região confunde quem vem de fora?",
+"pt_BR": "Qual expressão da sua região confunde quem vem de fora?"
+}
+},
+{
+"id": "slang_idioms-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever picked up slang from a TV series or a song?",
+"de": "Hast du schon mal Slang aus einer Serie oder einem Lied übernommen?",
+"es": "¿Alguna vez adoptaste argot de una serie o una canción?",
+"fr": "As-tu déjà repris de l'argot d'une série ou d'une chanson ?",
+"it": "Ti è mai capitato di prendere lo slang da una serie o da una canzone?",
+"pt": "Já adotaste calão de uma série ou de uma canção?",
+"pt_BR": "Você já pegou alguma gíria de uma série ou de uma música?"
+}
+},
+{
+"id": "slang_idioms-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people in your country show they are being sarcastic?",
+"de": "Wie zeigen Leute in deinem Land, dass sie sarkastisch sind?",
+"es": "¿Cómo muestra la gente de tu país que está siendo sarcástica?",
+"fr": "Comment les gens de ton pays montrent-ils qu'ils sont sarcastiques ?",
+"it": "Come fanno capire le persone del tuo paese che stanno facendo del sarcasmo?",
+"pt": "Como é que as pessoas no teu país mostram que estão a ser sarcásticas?",
+"pt_BR": "Como o pessoal do seu país mostra que está sendo sarcástico?"
+}
+},
+{
+"id": "slang_idioms-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which slang word do you think will disappear soon?",
+"de": "Welches Slangwort wird deiner Meinung nach bald verschwinden?",
+"es": "¿Qué palabra de argot crees que pronto desaparecerá?",
+"fr": "Quel mot d'argot va bientôt disparaître, selon toi ?",
+"it": "Quale parola gergale pensi che sparirà presto?",
+"pt": "Que palavra de calão achas que vai desaparecer em breve?",
+"pt_BR": "Qual gíria você acha que vai sumir logo?"
+}
+},
+{
+"id": "slang_idioms-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you say when you find a real bargain?",
+"de": "Was sagst du, wenn du ein echtes Schnäppchen findest?",
+"es": "¿Qué dices cuando encuentras una auténtica ganga?",
+"fr": "Que dis-tu quand tu trouves une vraie bonne affaire ?",
+"it": "Che cosa dici quando trovi un vero affare?",
+"pt": "O que dizes quando encontras uma verdadeira pechincha?",
+"pt_BR": "O que você fala quando acha uma pechincha de verdade?"
+}
+},
+{
+"id": "slang_idioms-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a good expression for celebrating success?",
+"de": "Welcher Ausdruck passt gut, um einen Erfolg zu feiern?",
+"es": "¿Qué expresión es buena para celebrar un éxito?",
+"fr": "Quelle expression est parfaite pour fêter une réussite ?",
+"it": "Qual è una bella espressione per festeggiare un successo?",
+"pt": "Que expressão é boa para celebrar um sucesso?",
+"pt_BR": "Qual é uma boa expressão para comemorar uma conquista?"
+}
+},
+{
+"id": "slang_idioms-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which idiom about time do you use most?",
+"de": "Welche Redewendung über die Zeit benutzt du am meisten?",
+"es": "¿Qué modismo sobre el tiempo usas más?",
+"fr": "Quelle expression sur le temps utilises-tu le plus ?",
+"it": "Quale modo di dire sul tempo usi di più?",
+"pt": "Que expressão sobre o tempo usas mais?",
+"pt_BR": "Qual expressão sobre o tempo você mais usa?"
+}
+},
+{
+"id": "slang_idioms-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people make a toast at celebrations in your culture?",
+"de": "Wie stößt man bei Feiern in deiner Kultur an?",
+"es": "¿Cómo se brinda en las celebraciones de tu cultura?",
+"fr": "Comment trinque-t-on lors des fêtes dans ta culture ?",
+"it": "Come si fa un brindisi alle feste nella tua cultura?",
+"pt": "Como se faz um brinde nas celebrações da tua cultura?",
+"pt_BR": "Como se faz um brinde nas comemorações da sua cultura?"
+}
+},
+{
+"id": "slang_idioms-086",
+"lv": "advanced",
+"i18n": {
+"en": "Do you know the origin of an idiom from your language?",
+"de": "Kennst du die Herkunft einer Redewendung aus deiner Sprache?",
+"es": "¿Conoces el origen de algún modismo de tu idioma?",
+"fr": "Connais-tu l'origine d'une expression de ta langue ?",
+"it": "Conosci l'origine di un modo di dire della tua lingua?",
+"pt": "Conheces a origem de alguma expressão da tua língua?",
+"pt_BR": "Você conhece a origem de alguma expressão do seu idioma?"
+}
+},
+{
+"id": "slang_idioms-087",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think social media is changing the way we speak?",
+"de": "Wie verändern soziale Medien deiner Meinung nach unsere Art zu sprechen?",
+"es": "¿Cómo crees que las redes sociales están cambiando nuestra forma de hablar?",
+"fr": "Comment les réseaux sociaux changent-ils notre façon de parler, selon toi ?",
+"it": "Secondo te, come stanno cambiando i social il nostro modo di parlare?",
+"pt": "Como achas que as redes sociais estão a mudar a nossa forma de falar?",
+"pt_BR": "Como você acha que as redes sociais estão mudando o nosso jeito de falar?"
+}
+},
+{
+"id": "slang_idioms-088",
+"lv": "advanced",
+"i18n": {
+"en": "When do you think using slang is not appropriate?",
+"de": "Wann ist Slang deiner Meinung nach unpassend?",
+"es": "¿Cuándo crees que no es apropiado usar argot?",
+"fr": "Quand penses-tu qu'il ne faut pas utiliser d'argot ?",
+"it": "Quando pensi che non sia opportuno usare lo slang?",
+"pt": "Quando achas que não é adequado usar calão?",
+"pt_BR": "Quando você acha que não é adequado usar gírias?"
+}
+},
+{
+"id": "slang_idioms-089",
+"lv": "advanced",
+"i18n": {
+"en": "How would you translate a joke from your language into another one?",
+"de": "Wie würdest du einen Witz aus deiner Sprache in eine andere übersetzen?",
+"es": "¿Cómo traducirías un chiste de tu idioma a otro?",
+"fr": "Comment traduirais-tu une blague de ta langue dans une autre ?",
+"it": "Come tradurresti una barzelletta dalla tua lingua in un'altra?",
+"pt": "Como traduzirias uma piada da tua língua para outra?",
+"pt_BR": "Como você traduziria uma piada do seu idioma para outro?"
+}
+},
+{
+"id": "slang_idioms-090",
+"lv": "advanced",
+"i18n": {
+"en": "Which line from a book or film do people quote in your country?",
+"de": "Welches Zitat aus einem Buch oder Film zitieren die Leute in deinem Land?",
+"es": "¿Qué frase de un libro o película cita la gente en tu país?",
+"fr": "Quelle réplique de livre ou de film les gens citent-ils dans ton pays ?",
+"it": "Quale battuta di un libro o di un film cita la gente nel tuo paese?",
+"pt": "Que frase de um livro ou filme as pessoas citam no teu país?",
+"pt_BR": "Qual frase de livro ou filme o pessoal costuma citar no seu país?"
+}
+},
+{
+"id": "slang_idioms-091",
+"lv": "advanced",
+"i18n": {
+"en": "Do you think idioms reveal something about a culture? Which example comes to mind?",
+"de": "Verraten Redewendungen etwas über eine Kultur? Welches Beispiel fällt dir ein?",
+"es": "¿Crees que los modismos revelan algo de una cultura? ¿Qué ejemplo se te ocurre?",
+"fr": "Les expressions révèlent-elles quelque chose d'une culture ? Quel exemple te vient ?",
+"it": "Pensi che i modi di dire rivelino qualcosa di una cultura? Che esempio ti viene in mente?",
+"pt": "Achas que as expressões revelam algo sobre uma cultura? Que exemplo te ocorre?",
+"pt_BR": "Você acha que as expressões revelam algo sobre uma cultura? Qual exemplo vem à mente?"
+}
+},
+{
+"id": "slang_idioms-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain your favourite idiom to someone who has never heard it?",
+"de": "Wie würdest du deine Lieblingsredewendung jemandem erklären, der sie nie gehört hat?",
+"es": "¿Cómo explicarías tu modismo favorito a alguien que nunca lo ha oído?",
+"fr": "Comment expliquerais-tu ton expression préférée à quelqu'un qui ne l'a jamais entendue ?",
+"it": "Come spiegheresti il tuo modo di dire preferito a chi non l'ha mai sentito?",
+"pt": "Como explicarias a tua expressão preferida a alguém que nunca a ouviu?",
+"pt_BR": "Como você explicaria sua expressão favorita para alguém que nunca ouviu?"
+}
+},
+{
+"id": "slang_idioms-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which old-fashioned expression would you like to bring back?",
+"de": "Welchen altmodischen Ausdruck würdest du gern wiederbeleben?",
+"es": "¿Qué expresión anticuada te gustaría recuperar?",
+"fr": "Quelle expression démodée aimerais-tu remettre au goût du jour ?",
+"it": "Quale espressione antiquata vorresti riportare in uso?",
+"pt": "Que expressão antiquada gostavas de recuperar?",
+"pt_BR": "Qual expressão antiga você gostaria de trazer de volta?"
+}
+},
+{
+"id": "slang_idioms-094",
+"lv": "advanced",
+"i18n": {
+"en": "How do regional accents and slang shape people's identity?",
+"de": "Wie prägen regionale Akzente und Slang die Identität der Menschen?",
+"es": "¿Cómo influyen los acentos y el argot regionales en la identidad de la gente?",
+"fr": "Comment les accents et l'argot régionaux façonnent-ils l'identité des gens ?",
+"it": "In che modo accenti e slang regionali plasmano l'identità delle persone?",
+"pt": "De que forma os sotaques e o calão regionais moldam a identidade das pessoas?",
+"pt_BR": "De que forma os sotaques e as gírias regionais moldam a identidade das pessoas?"
+}
+},
+{
+"id": "slang_idioms-095",
+"lv": "advanced",
+"i18n": {
+"en": "What makes humour hard to translate between cultures?",
+"de": "Was macht Humor zwischen Kulturen so schwer übersetzbar?",
+"es": "¿Qué hace que el humor sea difícil de traducir entre culturas?",
+"fr": "Qu'est-ce qui rend l'humour difficile à traduire d'une culture à l'autre ?",
+"it": "Che cosa rende l'umorismo difficile da tradurre tra culture diverse?",
+"pt": "O que torna o humor difícil de traduzir entre culturas?",
+"pt_BR": "O que torna o humor difícil de traduzir entre culturas?"
+}
+},
+{
+"id": "slang_idioms-096",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever invented a word or expression with friends? What does it mean?",
+"de": "Hast du mit Freunden schon mal ein Wort oder einen Ausdruck erfunden? Was bedeutet er?",
+"es": "¿Alguna vez inventaste una palabra o expresión con amigos? ¿Qué significa?",
+"fr": "As-tu déjà inventé un mot ou une expression avec des amis ? Que veut-il dire ?",
+"it": "Hai mai inventato una parola o un'espressione con gli amici? Che cosa significa?",
+"pt": "Já inventaste uma palavra ou expressão com amigos? O que significa?",
+"pt_BR": "Você já inventou uma palavra ou expressão com os amigos? O que significa?"
+}
+},
+{
+"id": "slang_idioms-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which tongue twister in your language can you say quickly?",
+"de": "Welchen Zungenbrecher in deiner Sprache kannst du schnell sagen?",
+"es": "¿Qué trabalenguas de tu idioma puedes decir rápido?",
+"fr": "Quel virelangue de ta langue arrives-tu à dire vite ?",
+"it": "Quale scioglilingua della tua lingua riesci a dire velocemente?",
+"pt": "Que trava-línguas da tua língua consegues dizer depressa?",
+"pt_BR": "Qual trava-língua do seu idioma você consegue falar rápido?"
+}
+},
+{
+"id": "slang_idioms-098",
+"lv": "advanced",
+"i18n": {
+"en": "If you could create a new idiom, what would it be and what would it mean?",
+"de": "Wenn du eine neue Redewendung erfinden könntest, wie würde sie lauten und was bedeuten?",
+"es": "Si pudieras crear un modismo nuevo, ¿cuál sería y qué significaría?",
+"fr": "Si tu pouvais créer une nouvelle expression, quelle serait-elle et que voudrait-elle dire ?",
+"it": "Se potessi creare un nuovo modo di dire, quale sarebbe e che cosa significherebbe?",
+"pt": "Se pudesses criar uma expressão nova, qual seria e o que significaria?",
+"pt_BR": "Se você pudesse criar uma expressão nova, qual seria e o que significaria?"
+}
+},
+{
+"id": "slang_idioms-099",
+"lv": "advanced",
+"i18n": {
+"en": "How has the way you speak changed since you were a teenager?",
+"de": "Wie hat sich deine Art zu sprechen seit deiner Jugend verändert?",
+"es": "¿Cómo ha cambiado tu forma de hablar desde que eras adolescente?",
+"fr": "Comment ta façon de parler a-t-elle changé depuis ton adolescence ?",
+"it": "Com'è cambiato il tuo modo di parlare da quando eri adolescente?",
+"pt": "Como mudou a tua forma de falar desde a adolescência?",
+"pt_BR": "Como seu jeito de falar mudou desde a adolescência?"
+}
+},
+{
+"id": "slang_idioms-100",
+"lv": "advanced",
+"i18n": {
+"en": "If you could keep only five expressions, which would you choose?",
+"de": "Wenn du nur fünf Ausdrücke behalten dürftest, welche würdest du wählen?",
+"es": "Si solo pudieras quedarte con cinco expresiones, ¿cuáles elegirías?",
+"fr": "Si tu ne pouvais garder que cinq expressions, lesquelles choisirais-tu ?",
+"it": "Se potessi tenere solo cinque espressioni, quali sceglieresti?",
+"pt": "Se só pudesses ficar com cinco expressões, quais escolherias?",
+"pt_BR": "Se você só pudesse ficar com cinco expressões, quais escolheria?"
+}
+}
+]
+}

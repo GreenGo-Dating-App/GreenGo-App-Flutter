@@ -1,0 +1,2195 @@
+{
+"topic": "practice_italian",
+"days": [
+{
+"d": 1,
+"lv": "A1",
+"t": "Ciao! First Italian greetings",
+"f": "Say ciao, buongiorno, buonasera and arrivederci and know when each one fits"
+},
+{
+"d": 2,
+"lv": "A1",
+"t": "The Italian alphabet",
+"f": "The 21 letters, the borrowed j, k, w, x, y and how to spell your name aloud"
+},
+{
+"d": 3,
+"lv": "A1",
+"t": "Vowels and sweet sounds",
+"f": "Pronounce the five pure vowels a, e, i, o, u clearly, the heart of Italian music"
+},
+{
+"d": 4,
+"lv": "A1",
+"t": "C and G: hard or soft?",
+"f": "Ca, co, cu versus ce, ci; ga, go, gu versus ge, gi, plus the trick with h in che and ghi"
+},
+{
+"d": 5,
+"lv": "A1",
+"t": "Mi chiamo... introducing yourself",
+"f": "Use mi chiamo, sono and piacere to introduce yourself and ask come ti chiami?"
+},
+{
+"d": 6,
+"lv": "A1",
+"t": "Tu or Lei? Formal and informal",
+"f": "When to use tu with friends and Lei with strangers, elders and shop staff"
+},
+{
+"d": 7,
+"lv": "A1",
+"t": "How are you? Come stai?",
+"f": "Ask and answer come stai / come sta with bene, benissimo, così così, non c'è male"
+},
+{
+"d": 8,
+"lv": "A1",
+"t": "Numbers 0 to 20",
+"f": "Count from zero to twenty and use the numbers for ages and phone numbers"
+},
+{
+"d": 9,
+"lv": "A1",
+"t": "Where are you from? Di dove sei?",
+"f": "Say sono di Roma, vengo dal Brasile and learn common nationality adjectives"
+},
+{
+"d": 10,
+"lv": "A1",
+"t": "Essere: the verb to be",
+"f": "Conjugate essere in the present tense and use it to describe people and places"
+},
+{
+"d": 11,
+"lv": "A1",
+"t": "Avere: the verb to have",
+"f": "Conjugate avere and use it for age (ho vent'anni), possessions and feelings like ho fame"
+},
+{
+"d": 12,
+"lv": "A1",
+"t": "Masculine and feminine nouns",
+"f": "Most nouns ending in -o are masculine, in -a feminine, and -e can be either"
+},
+{
+"d": 13,
+"lv": "A1",
+"t": "Singular to plural",
+"f": "Change -o to -i, -a to -e and -e to -i, and meet a few nouns that never change"
+},
+{
+"d": 14,
+"lv": "A1",
+"t": "Definite articles: il, lo, la",
+"f": "Choose il, lo, l', la, i, gli, le according to gender, number and first letter"
+},
+{
+"d": 15,
+"lv": "A1",
+"t": "Indefinite articles: un, una",
+"f": "Use un, uno, una and un' correctly, and when Italians skip the article"
+},
+{
+"d": 16,
+"lv": "A1",
+"t": "Polite words: per favore, grazie",
+"f": "Per favore, grazie, prego, scusa / mi scusi, permesso and how to sound kind"
+},
+{
+"d": 17,
+"lv": "A1",
+"t": "Numbers 21 to 100",
+"f": "Build tens and units, drop vowels in ventuno and ventotto, and read prices aloud"
+},
+{
+"d": 18,
+"lv": "A1",
+"t": "Days of the week",
+"f": "Lunedì to domenica, why they are lowercase and how to say on Mondays (il lunedì)"
+},
+{
+"d": 19,
+"lv": "A1",
+"t": "Months and seasons",
+"f": "The twelve months, the four seasons and how to say your birthday"
+},
+{
+"d": 20,
+"lv": "A1",
+"t": "Telling the time: che ore sono?",
+"f": "È l'una, sono le tre e mezza, mezzogiorno, mezzanotte, and a quarter past or to"
+},
+{
+"d": 21,
+"lv": "A1",
+"t": "Regular -are verbs",
+"f": "Conjugate parlare, abitare, lavorare and other -are verbs in the present tense"
+},
+{
+"d": 22,
+"lv": "A1",
+"t": "Regular -ere verbs",
+"f": "Conjugate leggere, scrivere, vedere and other -ere verbs in the present tense"
+},
+{
+"d": 23,
+"lv": "A1",
+"t": "Regular -ire verbs",
+"f": "Conjugate dormire, partire, aprire and the -isc- group like capire and finire"
+},
+{
+"d": 24,
+"lv": "A1",
+"t": "Asking questions",
+"f": "Make questions with intonation and with chi, che cosa, dove, quando, come, perché"
+},
+{
+"d": 25,
+"lv": "A1",
+"t": "Saying no: negation",
+"f": "Put non before the verb and learn niente, mai and nessuno for double negatives"
+},
+{
+"d": 26,
+"lv": "A1",
+"t": "My family: la famiglia",
+"f": "Madre, padre, fratello, sorella, nonni, cugini and talking about your family"
+},
+{
+"d": 27,
+"lv": "A1",
+"t": "Possessives: mio, tuo, suo",
+"f": "Use possessive adjectives with articles, and the family exception: mia madre"
+},
+{
+"d": 28,
+"lv": "A1",
+"t": "Colours and describing things",
+"f": "Learn the colours and how adjectives agree in gender and number with nouns"
+},
+{
+"d": 29,
+"lv": "A1",
+"t": "Describing people",
+"f": "Alto, basso, simpatico, gentile: describe appearance and character"
+},
+{
+"d": 30,
+"lv": "A1",
+"t": "Review: my first month of Italian",
+"f": "Recap greetings, essere and avere, articles, numbers and the present tense"
+},
+{
+"d": 31,
+"lv": "A1",
+"t": "At the bar: un caffè, per favore",
+"f": "Order espresso, cappuccino and cornetto, and how a bar works in Italy"
+},
+{
+"d": 32,
+"lv": "A1",
+"t": "Food basics: il cibo",
+"f": "Pane, pasta, formaggio, frutta, verdura and saying what you like"
+},
+{
+"d": 33,
+"lv": "A1",
+"t": "Mi piace: likes and dislikes",
+"f": "Use mi piace with one thing and mi piacciono with many, plus non mi piace"
+},
+{
+"d": 34,
+"lv": "A1",
+"t": "At the restaurant",
+"f": "Book a table, read the menu sections antipasto, primo, secondo, contorno, dolce"
+},
+{
+"d": 35,
+"lv": "A1",
+"t": "Ordering and paying",
+"f": "Vorrei, prendo, il conto per favore, and the coperto on Italian bills"
+},
+{
+"d": 36,
+"lv": "A1",
+"t": "Going shopping: i negozi",
+"f": "Panetteria, macelleria, farmacia, edicola: which shop sells what"
+},
+{
+"d": 37,
+"lv": "A1",
+"t": "Quanto costa? Prices and money",
+"f": "Ask prices, understand euro and cents and say it is too expensive"
+},
+{
+"d": 38,
+"lv": "A1",
+"t": "Clothes and sizes",
+"f": "Maglia, pantaloni, scarpe; ask for a size and try things on"
+},
+{
+"d": 39,
+"lv": "A1",
+"t": "Demonstratives: questo and quello",
+"f": "Point to things near and far with questo and quello and their forms"
+},
+{
+"d": 40,
+"lv": "A1",
+"t": "Irregular verbs: andare and venire",
+"f": "Conjugate andare and venire and use them with a, in and da"
+},
+{
+"d": 41,
+"lv": "A1",
+"t": "Irregular verbs: fare",
+"f": "Use fare for activities, weather and many fixed phrases like fare colazione"
+},
+{
+"d": 42,
+"lv": "A1",
+"t": "Irregular verbs: stare and dare",
+"f": "Conjugate stare and dare, and stare for health and location"
+},
+{
+"d": 43,
+"lv": "A1",
+"t": "Modal verbs: volere, potere, dovere",
+"f": "Express wanting, being able to and having to, followed by an infinitive"
+},
+{
+"d": 44,
+"lv": "A1",
+"t": "Simple prepositions: di, a, da, in",
+"f": "The basic meanings of di, a, da and in with places and times"
+},
+{
+"d": 45,
+"lv": "A1",
+"t": "Prepositions: con, su, per, tra, fra",
+"f": "Use con, su, per, tra and fra in everyday sentences"
+},
+{
+"d": 46,
+"lv": "A1",
+"t": "Articulated prepositions",
+"f": "Combine prepositions with articles: al, del, nella, sul, dagli"
+},
+{
+"d": 47,
+"lv": "A1",
+"t": "Where is it? Dov'è?",
+"f": "Ask for places, use c'è and ci sono, and say what exists around you"
+},
+{
+"d": 48,
+"lv": "A1",
+"t": "Directions: a destra, a sinistra",
+"f": "Follow and give simple directions: dritto, a destra, a sinistra, all'angolo"
+},
+{
+"d": 49,
+"lv": "A1",
+"t": "In the city: la città",
+"f": "Piazza, via, chiesa, museo, stazione: name places in an Italian town"
+},
+{
+"d": 50,
+"lv": "A1",
+"t": "Transport: bus, tram and metro",
+"f": "Buy a ticket, validate it and ask which stop to get off at"
+},
+{
+"d": 51,
+"lv": "A1",
+"t": "At the train station",
+"f": "Read the departures board, buy tickets, binario and andata e ritorno"
+},
+{
+"d": 52,
+"lv": "A1",
+"t": "My home: la casa",
+"f": "Rooms of the house and furniture, and describing where you live"
+},
+{
+"d": 53,
+"lv": "A1",
+"t": "Daily routine verbs",
+"f": "Svegliarsi, alzarsi, lavarsi: an introduction to reflexive verbs"
+},
+{
+"d": 54,
+"lv": "A1",
+"t": "Reflexive verbs in action",
+"f": "Conjugate reflexive verbs and describe your morning step by step"
+},
+{
+"d": 55,
+"lv": "A1",
+"t": "Frequency: sempre, spesso, mai",
+"f": "Say how often you do things with adverbs of frequency"
+},
+{
+"d": 56,
+"lv": "A1",
+"t": "Work and jobs: il lavoro",
+"f": "Name professions and say what you do and where you work"
+},
+{
+"d": 57,
+"lv": "A1",
+"t": "The weather: che tempo fa?",
+"f": "Fa caldo, fa freddo, piove, nevica, c'è il sole and talking about seasons"
+},
+{
+"d": 58,
+"lv": "A1",
+"t": "Hobbies and free time",
+"f": "Talk about sports, music, reading and what you do at the weekend"
+},
+{
+"d": 59,
+"lv": "A1",
+"t": "Sapere or conoscere?",
+"f": "Know facts and skills with sapere, know people and places with conoscere"
+},
+{
+"d": 60,
+"lv": "A1",
+"t": "Review: daily life in Italian",
+"f": "Recap food, shopping, directions, routine and the irregular verbs so far"
+},
+{
+"d": 61,
+"lv": "A1",
+"t": "Numbers above 100",
+"f": "Cento, mille, un milione, years and big prices"
+},
+{
+"d": 62,
+"lv": "A1",
+"t": "Ordinal numbers",
+"f": "Primo, secondo, terzo, the floors of a building and dates like il primo maggio"
+},
+{
+"d": 63,
+"lv": "A1",
+"t": "Dates and appointments",
+"f": "Say the date, make an appointment and use a che ora? correctly"
+},
+{
+"d": 64,
+"lv": "A1",
+"t": "On the phone",
+"f": "Pronto!, chi parla?, leave a message and spell a word by phone"
+},
+{
+"d": 65,
+"lv": "A1",
+"t": "Making plans with friends",
+"f": "Invite, accept and decline: ti va di...?, volentieri, mi dispiace, non posso"
+},
+{
+"d": 66,
+"lv": "A1",
+"t": "The present for the near future",
+"f": "Use the present tense for plans: domani vado al mare"
+},
+{
+"d": 67,
+"lv": "A1",
+"t": "Adverbs ending in -mente",
+"f": "Form lentamente, facilmente and other adverbs from adjectives"
+},
+{
+"d": 68,
+"lv": "A1",
+"t": "Molto, poco, troppo",
+"f": "Use quantity words as adjectives and adverbs, with the right agreement"
+},
+{
+"d": 69,
+"lv": "A1",
+"t": "Body parts: il corpo",
+"f": "Testa, braccio, gamba and the irregular plurals le braccia, le mani"
+},
+{
+"d": 70,
+"lv": "A1",
+"t": "At the doctor: basic phrases",
+"f": "Mi fa male, ho mal di testa, ho la febbre: describe how you feel simply"
+},
+{
+"d": 71,
+"lv": "A1",
+"t": "At the pharmacy",
+"f": "Ask the pharmacist for help and understand basic instructions"
+},
+{
+"d": 72,
+"lv": "A1",
+"t": "Direct object pronouns",
+"f": "Replace nouns with lo, la, li, le: lo compro, la vedo"
+},
+{
+"d": 73,
+"lv": "A1",
+"t": "Ci: there and about it",
+"f": "Use ci for places (ci vado) and fixed phrases like ci vuole"
+},
+{
+"d": 74,
+"lv": "A1",
+"t": "Ne: some of it",
+"f": "Use ne for quantities: quanti ne vuoi? ne prendo due"
+},
+{
+"d": 75,
+"lv": "A1",
+"t": "Hotel check-in",
+"f": "Book a room, ask about breakfast, wifi and check-out time"
+},
+{
+"d": 76,
+"lv": "A1",
+"t": "Feelings and emotions",
+"f": "Felice, stanco, arrabbiato, emozionato: say how you feel and why"
+},
+{
+"d": 77,
+"lv": "A1",
+"t": "Comparisons: più and meno",
+"f": "Compare things: più alto di, meno caro di, and tanto quanto"
+},
+{
+"d": 78,
+"lv": "A1",
+"t": "Superlatives",
+"f": "Il più bello, bellissimo and the irregular forms migliore and peggiore"
+},
+{
+"d": 79,
+"lv": "A1",
+"t": "The market: al mercato",
+"f": "Buy fruit and vegetables by weight: un chilo, un etto, mezzo chilo"
+},
+{
+"d": 80,
+"lv": "A1",
+"t": "Italian cooking verbs",
+"f": "Tagliare, bollire, mescolare: follow a simple recipe for pasta al pomodoro"
+},
+{
+"d": 81,
+"lv": "A1",
+"t": "Fruit and vegetables",
+"f": "Name seasonal produce and say which ones you prefer"
+},
+{
+"d": 82,
+"lv": "A1",
+"t": "Gestures and body language",
+"f": "Famous Italian hand gestures and what they mean politely"
+},
+{
+"d": 83,
+"lv": "A1",
+"t": "Small talk with strangers",
+"f": "Chat about the weather, the city and where people come from"
+},
+{
+"d": 84,
+"lv": "A1",
+"t": "Writing a short message",
+"f": "Write a friendly text or postcard: cara, caro, un abbraccio, a presto"
+},
+{
+"d": 85,
+"lv": "A1",
+"t": "Italian regions and cities",
+"f": "The 20 regions, their capitals and how to say where a city is"
+},
+{
+"d": 86,
+"lv": "A1",
+"t": "Asking for and giving opinions simply",
+"f": "Ti piace?, com'è?, è buono, è bello: share simple impressions"
+},
+{
+"d": 87,
+"lv": "A1",
+"t": "Celebrations: buon compleanno!",
+"f": "Auguri, buon compleanno, buone feste and congratulations"
+},
+{
+"d": 88,
+"lv": "A1",
+"t": "Sounds of Italian: stress and rhythm",
+"f": "Where the stress falls in words like città, tavolo, parlano"
+},
+{
+"d": 89,
+"lv": "A1",
+"t": "My favourite Italian words",
+"f": "Collect and use 20 lovely everyday words from the A1 course"
+},
+{
+"d": 90,
+"lv": "A1",
+"t": "Review: A1 complete!",
+"f": "Celebrate A1 with a recap of pronouns, comparisons, plans and everyday talk"
+},
+{
+"d": 91,
+"lv": "A2",
+"t": "Passato prossimo with avere",
+"f": "Form the past with avere plus a past participle: ho mangiato, ho visto"
+},
+{
+"d": 92,
+"lv": "A2",
+"t": "Passato prossimo with essere",
+"f": "Verbs of motion and change take essere and agree: sono andata, siamo partiti"
+},
+{
+"d": 93,
+"lv": "A2",
+"t": "Irregular past participles",
+"f": "Fatto, detto, scritto, preso, messo, letto, venuto and other common forms"
+},
+{
+"d": 94,
+"lv": "A2",
+"t": "What did you do yesterday?",
+"f": "Tell a short story about your day with passato prossimo and time words"
+},
+{
+"d": 95,
+"lv": "A2",
+"t": "Time markers for the past",
+"f": "Ieri, l'altro ieri, la settimana scorsa, fa and già, appena, ancora"
+},
+{
+"d": 96,
+"lv": "A2",
+"t": "Reflexive verbs in the past",
+"f": "Mi sono svegliato, ci siamo divertiti: reflexives always take essere"
+},
+{
+"d": 97,
+"lv": "A2",
+"t": "The weekend story",
+"f": "Narrate your weekend in order with prima, poi, dopo, alla fine"
+},
+{
+"d": 98,
+"lv": "A2",
+"t": "The imperfetto: forms",
+"f": "Conjugate the imperfect: parlavo, leggevo, dormivo and irregular ero, facevo"
+},
+{
+"d": 99,
+"lv": "A2",
+"t": "Imperfetto for habits",
+"f": "Describe what you used to do: da bambino giocavo sempre in giardino"
+},
+{
+"d": 100,
+"lv": "A2",
+"t": "Imperfetto for descriptions",
+"f": "Set the scene in the past: era una bella giornata, c'era tanta gente"
+},
+{
+"d": 101,
+"lv": "A2",
+"t": "Passato prossimo or imperfetto?",
+"f": "Actions versus background: mentre leggevo, è squillato il telefono"
+},
+{
+"d": 102,
+"lv": "A2",
+"t": "Childhood memories",
+"f": "Talk about where you lived and what you loved as a child"
+},
+{
+"d": 103,
+"lv": "A2",
+"t": "Stare + gerundio",
+"f": "Describe actions in progress: sto mangiando, stavo uscendo"
+},
+{
+"d": 104,
+"lv": "A2",
+"t": "Indirect object pronouns",
+"f": "Gli, le, mi, ti, ci, vi: telefono a Marco becomes gli telefono"
+},
+{
+"d": 105,
+"lv": "A2",
+"t": "Piacere in all tenses",
+"f": "Mi è piaciuto il film, ti piacevano i cartoni animati, and agreement"
+},
+{
+"d": 106,
+"lv": "A2",
+"t": "Other verbs like piacere",
+"f": "Mancare, servire, sembrare, interessare: mi manca casa, mi serve aiuto"
+},
+{
+"d": 107,
+"lv": "A2",
+"t": "Review: talking about the past",
+"f": "Recap passato prossimo, imperfetto, gerundio and object pronouns"
+},
+{
+"d": 108,
+"lv": "A2",
+"t": "Double pronouns",
+"f": "Combine pronouns: me lo dai?, glielo dico, te ne porto due"
+},
+{
+"d": 109,
+"lv": "A2",
+"t": "Pronouns with modal verbs",
+"f": "Lo voglio vedere or voglio vederlo: both positions are correct"
+},
+{
+"d": 110,
+"lv": "A2",
+"t": "Informal imperative: tu, noi, voi",
+"f": "Give friendly instructions: mangia!, andiamo!, venite qui!"
+},
+{
+"d": 111,
+"lv": "A2",
+"t": "Negative imperative",
+"f": "Non mangiare!, non preoccuparti: the infinitive trick for tu"
+},
+{
+"d": 112,
+"lv": "A2",
+"t": "Formal imperative: Lei",
+"f": "Polite requests: prenda, scusi, si accomodi, mi dica"
+},
+{
+"d": 113,
+"lv": "A2",
+"t": "Imperative with pronouns",
+"f": "Dimmi, fallo, dammelo, and the doubled consonant in short forms"
+},
+{
+"d": 114,
+"lv": "A2",
+"t": "Following a recipe",
+"f": "Read and give recipe steps with the imperative: taglia, aggiungi, cuoci"
+},
+{
+"d": 115,
+"lv": "A2",
+"t": "Giving directions like a local",
+"f": "Gira a destra, prendi la seconda, attraversa la piazza"
+},
+{
+"d": 116,
+"lv": "A2",
+"t": "Future tense: forms",
+"f": "Conjugate the futuro semplice: parlerò, leggerò, partirò, and sarò, avrò"
+},
+{
+"d": 117,
+"lv": "A2",
+"t": "Future irregular stems",
+"f": "Andrò, verrò, vorrò, potrò, dovrò, farò, berrò and their patterns"
+},
+{
+"d": 118,
+"lv": "A2",
+"t": "Making predictions and plans",
+"f": "Domani pioverà, l'anno prossimo studierò: talk about the future"
+},
+{
+"d": 119,
+"lv": "A2",
+"t": "Future of probability",
+"f": "Saranno le otto, avrà trent'anni: guessing with the future"
+},
+{
+"d": 120,
+"lv": "A2",
+"t": "Se + future: real conditions",
+"f": "Se avrò tempo, verrò: talk about likely conditions"
+},
+{
+"d": 121,
+"lv": "A2",
+"t": "Holidays and vacations",
+"f": "Plan a trip: andare in vacanza, prenotare, fare le valigie"
+},
+{
+"d": 122,
+"lv": "A2",
+"t": "Review: commands and the future",
+"f": "Recap imperatives, pronouns in commands and the futuro semplice"
+},
+{
+"d": 123,
+"lv": "A2",
+"t": "Conditional: forms",
+"f": "Conjugate the condizionale presente: vorrei, potrei, sarebbe, andrei"
+},
+{
+"d": 124,
+"lv": "A2",
+"t": "Polite requests with the conditional",
+"f": "Potrebbe aiutarmi?, vorrei un'informazione, mi farebbe un favore?"
+},
+{
+"d": 125,
+"lv": "A2",
+"t": "Wishes and advice",
+"f": "Mi piacerebbe..., dovresti..., al tuo posto io..."
+},
+{
+"d": 126,
+"lv": "A2",
+"t": "Talking about dream plans",
+"f": "Describe your dream house, trip or job with the conditional"
+},
+{
+"d": 127,
+"lv": "A2",
+"t": "Si impersonale",
+"f": "Si mangia bene qui, in Italia si cena tardi: general statements"
+},
+{
+"d": 128,
+"lv": "A2",
+"t": "Si passivante",
+"f": "Si vendono biglietti, si affitta appartamento: reading signs and ads"
+},
+{
+"d": 129,
+"lv": "A2",
+"t": "Relative pronoun che",
+"f": "Join sentences: la ragazza che studia italiano, il libro che leggo"
+},
+{
+"d": 130,
+"lv": "A2",
+"t": "Relative pronoun cui",
+"f": "Use cui after prepositions: la città in cui vivo, l'amico con cui parlo"
+},
+{
+"d": 131,
+"lv": "A2",
+"t": "Chi and quello che",
+"f": "Chi cerca trova, quello che dici è vero: general relatives"
+},
+{
+"d": 132,
+"lv": "A2",
+"t": "Indefinites: qualcuno, qualcosa",
+"f": "Qualcuno, qualcosa, niente, nessuno, ognuno, tutto in sentences"
+},
+{
+"d": 133,
+"lv": "A2",
+"t": "Ogni, qualche, alcuni",
+"f": "Choose ogni, qualche, alcuni and parecchi with the right noun form"
+},
+{
+"d": 134,
+"lv": "A2",
+"t": "Partitive articles",
+"f": "Del pane, dei biscotti, delle mele: saying some in Italian"
+},
+{
+"d": 135,
+"lv": "A2",
+"t": "Expressing opinions",
+"f": "Secondo me, per me, penso che, credo che: introduce your opinion"
+},
+{
+"d": 136,
+"lv": "A2",
+"t": "Review: requests, relatives and opinions",
+"f": "Recap conditional, si, relative pronouns and indefinites"
+},
+{
+"d": 137,
+"lv": "A2",
+"t": "Sports and fitness",
+"f": "Fare sport, giocare a calcio, andare in palestra and sports vocabulary"
+},
+{
+"d": 138,
+"lv": "A2",
+"t": "Music and concerts",
+"f": "Generi musicali, strumenti, and talking about your favourite songs"
+},
+{
+"d": 139,
+"lv": "A2",
+"t": "Cinema and TV series",
+"f": "Recommend a film, describe the plot and say what you liked"
+},
+{
+"d": 140,
+"lv": "A2",
+"t": "Books and reading",
+"f": "Talk about genres, authors and the book you are reading now"
+},
+{
+"d": 141,
+"lv": "A2",
+"t": "Technology vocabulary",
+"f": "Computer, telefono, scaricare, caricare, la password: everyday tech words"
+},
+{
+"d": 142,
+"lv": "A2",
+"t": "Social media and messaging",
+"f": "Mandare un messaggio, mettere mi piace, chattare: online life in Italian"
+},
+{
+"d": 143,
+"lv": "A2",
+"t": "Email in Italian",
+"f": "Formal and informal openings and closings: Gentile, Cordiali saluti"
+},
+{
+"d": 144,
+"lv": "A2",
+"t": "Italian festivals and traditions",
+"f": "Carnevale, Ferragosto, la Befana and how Italians celebrate"
+},
+{
+"d": 145,
+"lv": "A2",
+"t": "Christmas and New Year in Italy",
+"f": "Panettone, il cenone, il presepe and festive greetings"
+},
+{
+"d": 146,
+"lv": "A2",
+"t": "Italian coffee culture",
+"f": "Caffè macchiato, ristretto, corretto and the unwritten rules of the bar"
+},
+{
+"d": 147,
+"lv": "A2",
+"t": "Pizza and regional dishes",
+"f": "Pizza napoletana, risotto alla milanese, pesto genovese and their regions"
+},
+{
+"d": 148,
+"lv": "A2",
+"t": "Pasta shapes and sauces",
+"f": "Why each shape goes with a sauce: spaghetti, penne, orecchiette, tagliatelle"
+},
+{
+"d": 149,
+"lv": "A2",
+"t": "Wine regions and aperitivo",
+"f": "The aperitivo tradition, spritz and Italy's famous wine regions, simply"
+},
+{
+"d": 150,
+"lv": "A2",
+"t": "Gelato and desserts",
+"f": "Order gelato with cono or coppetta, gusti, and classic desserts like tiramisù"
+},
+{
+"d": 151,
+"lv": "A2",
+"t": "Review: Italian culture and food",
+"f": "Recap culture topics, hobbies and leisure vocabulary"
+},
+{
+"d": 152,
+"lv": "A2",
+"t": "Renting a flat",
+"f": "Affitto, bilocale, spese incluse, contratto: read housing ads"
+},
+{
+"d": 153,
+"lv": "A2",
+"t": "Problems and complaints",
+"f": "Report a problem politely: non funziona, c'è un errore, vorrei cambiarlo"
+},
+{
+"d": 154,
+"lv": "A2",
+"t": "At the post office and bank",
+"f": "Spedire un pacco, aprire un conto, fare un bonifico: everyday errands"
+},
+{
+"d": 155,
+"lv": "A2",
+"t": "Asking for help",
+"f": "Mi può aiutare?, non ho capito, può ripetere più lentamente?"
+},
+{
+"d": 156,
+"lv": "A2",
+"t": "Lost and found",
+"f": "Ho perso il portafoglio: describe objects and report a loss"
+},
+{
+"d": 157,
+"lv": "A2",
+"t": "Car, bike and road vocabulary",
+"f": "Guidare, parcheggiare, la benzina, il casello: getting around by car"
+},
+{
+"d": 158,
+"lv": "A2",
+"t": "Nature and the countryside",
+"f": "Mountains, lakes, sea and countryside words, and a day trip out of town"
+},
+{
+"d": 159,
+"lv": "A2",
+"t": "Animals and pets",
+"f": "Talk about pets and common animals: cane, gatto, cavallo"
+},
+{
+"d": 160,
+"lv": "A2",
+"t": "Health and wellbeing",
+"f": "Healthy habits: dormire bene, camminare, mangiare sano"
+},
+{
+"d": 161,
+"lv": "A2",
+"t": "Making appointments formally",
+"f": "Book a haircut, a visit or a meeting by phone or email"
+},
+{
+"d": 162,
+"lv": "A2",
+"t": "Shopping online",
+"f": "Il carrello, la spedizione, il reso: buying and returning things online"
+},
+{
+"d": 163,
+"lv": "A2",
+"t": "Bello, buono and grande",
+"f": "Their shortened forms before nouns: bel ragazzo, buon giorno, gran festa"
+},
+{
+"d": 164,
+"lv": "A2",
+"t": "Suffixes: -ino, -one, -accio",
+"f": "Gattino, librone, tempaccio: diminutives and augmentatives"
+},
+{
+"d": 165,
+"lv": "A2",
+"t": "Prefixes: ri-, s-, in-",
+"f": "Rifare, scontento, impossibile: building new words from old ones"
+},
+{
+"d": 166,
+"lv": "A2",
+"t": "Linking words: perché, quindi",
+"f": "Connect ideas with perché, quindi, però, invece, mentre, anche se"
+},
+{
+"d": 167,
+"lv": "A2",
+"t": "Telling a story fluently",
+"f": "Combine past tenses and connectors to tell an anecdote with rhythm"
+},
+{
+"d": 168,
+"lv": "A2",
+"t": "Describing a place you visited",
+"f": "Talk about a trip: where, with whom, what you saw and ate"
+},
+{
+"d": 169,
+"lv": "A2",
+"t": "Comparing past and present",
+"f": "Una volta... adesso...: how your town or life has changed"
+},
+{
+"d": 170,
+"lv": "A2",
+"t": "Talking about your studies",
+"f": "School subjects, university, exams and what you are learning now"
+},
+{
+"d": 171,
+"lv": "A2",
+"t": "Job interview basics",
+"f": "Present your experience, strengths and goals in simple, polite Italian"
+},
+{
+"d": 172,
+"lv": "A2",
+"t": "Writing a short CV profile",
+"f": "Describe skills and experience in a few clear sentences"
+},
+{
+"d": 173,
+"lv": "A2",
+"t": "Italian false friends",
+"f": "Camera is not camera, morbido is not morbid: avoid common traps"
+},
+{
+"d": 174,
+"lv": "A2",
+"t": "Common A2 mistakes",
+"f": "Fix typical errors with articles, prepositions and essere versus avere"
+},
+{
+"d": 175,
+"lv": "A2",
+"t": "Listening tips: understanding natives",
+"f": "Strategies for fast speech, contractions and filler words like allora, cioè"
+},
+{
+"d": 176,
+"lv": "A2",
+"t": "Pronunciation: double consonants",
+"f": "Pala versus palla, casa versus cassa: why doubles matter"
+},
+{
+"d": 177,
+"lv": "A2",
+"t": "Pronunciation: gl, gn and sc",
+"f": "Famiglia, gnocchi, sciare, pesce: tricky Italian sounds"
+},
+{
+"d": 178,
+"lv": "A2",
+"t": "Talking about the weekend plans",
+"f": "Combine future and present to describe what you will do next weekend"
+},
+{
+"d": 179,
+"lv": "A2",
+"t": "Describing your neighbourhood",
+"f": "Talk about shops, services and atmosphere where you live"
+},
+{
+"d": 180,
+"lv": "A2",
+"t": "Review: A2 complete!",
+"f": "Celebrate A2: past, future, conditional, pronouns and real-life situations"
+},
+{
+"d": 181,
+"lv": "B1",
+"t": "Trapassato prossimo",
+"f": "Talk about the past before the past: quando sono arrivato, il treno era già partito"
+},
+{
+"d": 182,
+"lv": "B1",
+"t": "Past tense review in context",
+"f": "Choose between passato prossimo, imperfetto and trapassato in a real story"
+},
+{
+"d": 183,
+"lv": "B1",
+"t": "Futuro anteriore",
+"f": "Dopo che avrò finito, uscirò: actions completed before a future moment"
+},
+{
+"d": 184,
+"lv": "B1",
+"t": "Future perfect of probability",
+"f": "Avrà perso il treno: guessing about what probably happened"
+},
+{
+"d": 185,
+"lv": "B1",
+"t": "Condizionale passato",
+"f": "Avrei voluto, sarei venuto: regrets and things that did not happen"
+},
+{
+"d": 186,
+"lv": "B1",
+"t": "Future in the past",
+"f": "Ha detto che sarebbe venuto: reporting promises with the past conditional"
+},
+{
+"d": 187,
+"lv": "B1",
+"t": "Polite criticism and suggestions",
+"f": "Avresti dovuto..., sarebbe meglio se...: soft feedback in Italian"
+},
+{
+"d": 188,
+"lv": "B1",
+"t": "Congiuntivo: why it exists",
+"f": "The subjunctive expresses opinion, doubt, wish and emotion rather than fact"
+},
+{
+"d": 189,
+"lv": "B1",
+"t": "Congiuntivo presente: regular forms",
+"f": "Form parli, legga, dorma, capisca for regular verbs"
+},
+{
+"d": 190,
+"lv": "B1",
+"t": "Congiuntivo presente: irregular forms",
+"f": "Sia, abbia, vada, faccia, possa, voglia, debba, sappia, stia, dia"
+},
+{
+"d": 191,
+"lv": "B1",
+"t": "Penso che + congiuntivo",
+"f": "Opinions with penso che, credo che, mi sembra che plus the subjunctive"
+},
+{
+"d": 192,
+"lv": "B1",
+"t": "Wishes: voglio che, spero che",
+"f": "Spero che tu stia bene, voglio che venga anche lei"
+},
+{
+"d": 193,
+"lv": "B1",
+"t": "Emotions: sono contento che",
+"f": "Sono felice che, mi dispiace che, ho paura che plus the subjunctive"
+},
+{
+"d": 194,
+"lv": "B1",
+"t": "Impersonal expressions",
+"f": "È importante che, bisogna che, è possibile che plus the subjunctive"
+},
+{
+"d": 195,
+"lv": "B1",
+"t": "Review: B1 tenses and congiuntivo",
+"f": "Recap compound tenses, the past conditional and the present subjunctive"
+},
+{
+"d": 196,
+"lv": "B1",
+"t": "Conjunctions with the subjunctive",
+"f": "Benché, sebbene, affinché, prima che, a patto che, senza che"
+},
+{
+"d": 197,
+"lv": "B1",
+"t": "Subjunctive or indicative?",
+"f": "So che è vero versus penso che sia vero: certainty versus opinion"
+},
+{
+"d": 198,
+"lv": "B1",
+"t": "Congiuntivo passato",
+"f": "Penso che abbia già mangiato, sono contento che tu sia venuto"
+},
+{
+"d": 199,
+"lv": "B1",
+"t": "Relative clauses with congiuntivo",
+"f": "Cerco una casa che abbia un giardino: describing what you look for"
+},
+{
+"d": 200,
+"lv": "B1",
+"t": "Il quale and la quale",
+"f": "Formal relatives: il motivo per il quale, la persona alla quale"
+},
+{
+"d": 201,
+"lv": "B1",
+"t": "Pronominal verbs: andarsene",
+"f": "Me ne vado, ce l'ho fatta, prendersela: everyday verbs with pronouns"
+},
+{
+"d": 202,
+"lv": "B1",
+"t": "Farcela, metterci, volerci",
+"f": "Ce la faccio, ci metto un'ora, ci vuole pazienza"
+},
+{
+"d": 203,
+"lv": "B1",
+"t": "Passive voice with essere",
+"f": "Il libro è stato scritto da..., la casa è costruita: forming the passive"
+},
+{
+"d": 204,
+"lv": "B1",
+"t": "Passive with venire and andare",
+"f": "Viene servito caldo, va fatto subito: nuances of the passive"
+},
+{
+"d": 205,
+"lv": "B1",
+"t": "Reported speech: present",
+"f": "Dice che è stanco, mi chiede se voglio venire"
+},
+{
+"d": 206,
+"lv": "B1",
+"t": "Reported speech: past",
+"f": "Ha detto che era stanco: shifting tenses when reporting"
+},
+{
+"d": 207,
+"lv": "B1",
+"t": "Reported questions and commands",
+"f": "Mi ha chiesto dove abitavo, mi ha detto di aspettare"
+},
+{
+"d": 208,
+"lv": "B1",
+"t": "Gerund as a connector",
+"f": "Studiando ogni giorno, imparerai: cause, means and time with the gerund"
+},
+{
+"d": 209,
+"lv": "B1",
+"t": "Infinitive constructions",
+"f": "Prima di uscire, dopo aver mangiato, invece di lamentarsi"
+},
+{
+"d": 210,
+"lv": "B1",
+"t": "Review: passive, reported speech, gerund",
+"f": "Recap the structures of the last two weeks with real examples"
+},
+{
+"d": 211,
+"lv": "B1",
+"t": "Italian idioms: food",
+"f": "In bocca al lupo, essere come il prezzemolo, non tutte le ciambelle riescono col buco"
+},
+{
+"d": 212,
+"lv": "B1",
+"t": "Italian idioms: animals",
+"f": "Avere una fame da lupi, essere un pesce fuor d'acqua, essere una lumaca"
+},
+{
+"d": 213,
+"lv": "B1",
+"t": "Italian idioms: body",
+"f": "Avere le mani in pasta, costare un occhio della testa, a occhio e croce"
+},
+{
+"d": 214,
+"lv": "B1",
+"t": "Common sayings: proverbi",
+"f": "Chi va piano va sano e va lontano, l'abito non fa il monaco"
+},
+{
+"d": 215,
+"lv": "B1",
+"t": "Expressing agreement and disagreement",
+"f": "Sono d'accordo, hai ragione, non sono del tutto convinto, dipende"
+},
+{
+"d": 216,
+"lv": "B1",
+"t": "Debating politely",
+"f": "Present arguments with innanzitutto, inoltre, d'altra parte, in conclusione"
+},
+{
+"d": 217,
+"lv": "B1",
+"t": "Giving reasons and causes",
+"f": "Siccome, dato che, poiché, visto che: explain why"
+},
+{
+"d": 218,
+"lv": "B1",
+"t": "Expressing consequences",
+"f": "Perciò, di conseguenza, così che, tanto che: explain results"
+},
+{
+"d": 219,
+"lv": "B1",
+"t": "Hypotheses: se + congiuntivo imperfetto",
+"f": "Introduce unreal conditions: se avessi tempo..."
+},
+{
+"d": 220,
+"lv": "B1",
+"t": "Congiuntivo imperfetto: forms",
+"f": "Parlassi, leggessi, dormissi and irregular fossi, dessi, stessi, facessi"
+},
+{
+"d": 221,
+"lv": "B1",
+"t": "Periodo ipotetico of possibility",
+"f": "Se avessi più soldi, viaggerei: imagine a different present"
+},
+{
+"d": 222,
+"lv": "B1",
+"t": "What would you do if...?",
+"f": "Discuss hypothetical situations with se and the conditional"
+},
+{
+"d": 223,
+"lv": "B1",
+"t": "Come se + congiuntivo",
+"f": "Parla come se fosse un esperto: comparisons with unreal situations"
+},
+{
+"d": 224,
+"lv": "B1",
+"t": "Magari! Expressing wishes",
+"f": "Magari fosse vero!, vorrei che tu fossi qui: strong wishes"
+},
+{
+"d": 225,
+"lv": "B1",
+"t": "Review: hypotheses and wishes",
+"f": "Recap congiuntivo imperfetto and the second conditional"
+},
+{
+"d": 226,
+"lv": "B1",
+"t": "The news in simple Italian",
+"f": "Read and summarise a short news article in neutral language"
+},
+{
+"d": 227,
+"lv": "B1",
+"t": "Weather forecasts and reports",
+"f": "Understand previsioni del tempo: nuvoloso, temporali, temperature in calo"
+},
+{
+"d": 228,
+"lv": "B1",
+"t": "Talking about the environment",
+"f": "Riciclare, la raccolta differenziata, risparmiare energia: everyday green habits"
+},
+{
+"d": 229,
+"lv": "B1",
+"t": "Cities versus countryside",
+"f": "Compare city and village life, pros and cons, in clear arguments"
+},
+{
+"d": 230,
+"lv": "B1",
+"t": "Travel stories and mishaps",
+"f": "Narrate a travel story with surprises using all the past tenses"
+},
+{
+"d": 231,
+"lv": "B1",
+"t": "Describing art and paintings",
+"f": "In primo piano, sullo sfondo: describe a painting and your impressions"
+},
+{
+"d": 232,
+"lv": "B1",
+"t": "Italian art history in brief",
+"f": "Giotto, Leonardo, Michelangelo, Caravaggio: key names and works"
+},
+{
+"d": 233,
+"lv": "B1",
+"t": "Italian architecture",
+"f": "Roman, Romanesque, Renaissance and Baroque buildings and their words"
+},
+{
+"d": 234,
+"lv": "B1",
+"t": "Italian cinema classics",
+"f": "Fellini, De Sica and famous films: describe a scene and its mood"
+},
+{
+"d": 235,
+"lv": "B1",
+"t": "Italian music: from opera to pop",
+"f": "Verdi, Puccini, cantautori and Sanremo: music vocabulary and history"
+},
+{
+"d": 236,
+"lv": "B1",
+"t": "Italian literature: Dante",
+"f": "Who Dante was, the Divina Commedia and phrases still used today"
+},
+{
+"d": 237,
+"lv": "B1",
+"t": "Italian literature: modern authors",
+"f": "Calvino, Ginzburg, Eco and how to talk about a novel"
+},
+{
+"d": 238,
+"lv": "B1",
+"t": "Famous Italian inventions",
+"f": "The espresso machine, the radio pioneers, the piano: talk about inventions"
+},
+{
+"d": 239,
+"lv": "B1",
+"t": "Italian design and fashion",
+"f": "Milan, made in Italy and vocabulary for style and design"
+},
+{
+"d": 240,
+"lv": "B1",
+"t": "Review: culture and the arts",
+"f": "Recap art, music, cinema and literature vocabulary"
+},
+{
+"d": 241,
+"lv": "B1",
+"t": "Formal letters and emails",
+"f": "Structure a formal email: oggetto, la presente per, in attesa di un riscontro"
+},
+{
+"d": 242,
+"lv": "B1",
+"t": "Making a complaint in writing",
+"f": "Write a polite, clear complaint with facts and a request"
+},
+{
+"d": 243,
+"lv": "B1",
+"t": "Workplace Italian",
+"f": "Riunione, scadenza, progetto, collega: talk about your working day"
+},
+{
+"d": 244,
+"lv": "B1",
+"t": "Phone calls at work",
+"f": "Le passo il collega, resti in linea, richiamo più tardi"
+},
+{
+"d": 245,
+"lv": "B1",
+"t": "Presentations in Italian",
+"f": "Open, structure and close a short presentation with clear signposts"
+},
+{
+"d": 246,
+"lv": "B1",
+"t": "Negotiating and compromising",
+"f": "Propose, counter-propose and reach agreement politely"
+},
+{
+"d": 247,
+"lv": "B1",
+"t": "Customer service phrases",
+"f": "Help a customer: in cosa posso esserle utile?, mi lasci verificare"
+},
+{
+"d": 248,
+"lv": "B1",
+"t": "Numbers, statistics and trends",
+"f": "Describe charts: aumentare, diminuire, la metà, il doppio, per cento"
+},
+{
+"d": 249,
+"lv": "B1",
+"t": "Bureaucracy vocabulary",
+"f": "Il modulo, la ricevuta, la fila, il documento d'identità: handling paperwork"
+},
+{
+"d": 250,
+"lv": "B1",
+"t": "Renting a car and travelling by road",
+"f": "Contract words, insurance basics and road signs in Italy"
+},
+{
+"d": 251,
+"lv": "B1",
+"t": "Review: practical and work Italian",
+"f": "Recap formal writing, work talk and practical situations"
+},
+{
+"d": 252,
+"lv": "B1",
+"t": "Italian slang and colloquial speech",
+"f": "Figo, boh, dai, mitico, una figata: register and friendly everyday slang"
+},
+{
+"d": 253,
+"lv": "B1",
+"t": "Fillers and discourse markers",
+"f": "Allora, cioè, insomma, praticamente, tipo: sound natural"
+},
+{
+"d": 254,
+"lv": "B1",
+"t": "Regional accents and dialects",
+"f": "Why Italian sounds different in Naples, Milan, Rome and Sicily"
+},
+{
+"d": 255,
+"lv": "B1",
+"t": "Tongue twisters for fluency",
+"f": "Trentatré trentini and other scioglilingua to train pronunciation"
+},
+{
+"d": 256,
+"lv": "B1",
+"t": "Interjections and exclamations",
+"f": "Mamma mia, accidenti, che bello, evviva: express feelings"
+},
+{
+"d": 257,
+"lv": "B1",
+"t": "Understanding Italian humour",
+"f": "Wordplay, irony and gentle jokes in everyday conversation"
+},
+{
+"d": 258,
+"lv": "B1",
+"t": "Speaking about yourself in depth",
+"f": "Talk about values, goals and experiences in a longer monologue"
+},
+{
+"d": 259,
+"lv": "B1",
+"t": "Storytelling with emotion",
+"f": "Use tense, detail and suspense to tell a memorable story"
+},
+{
+"d": 260,
+"lv": "B1",
+"t": "Describing people in depth",
+"f": "Personality nuances: testardo, generoso, permaloso, solare"
+},
+{
+"d": 261,
+"lv": "B1",
+"t": "Talking about habits and changes",
+"f": "Smettere di, cominciare a, continuare a: describe changing routines"
+},
+{
+"d": 262,
+"lv": "B1",
+"t": "Expressing surprise and disbelief",
+"f": "Davvero?, non ci credo!, ma dai!: react naturally in conversation"
+},
+{
+"d": 263,
+"lv": "B1",
+"t": "Making excuses and apologising",
+"f": "Scusami tanto, purtroppo non ho potuto, non era mia intenzione"
+},
+{
+"d": 264,
+"lv": "B1",
+"t": "Giving and asking for advice",
+"f": "Ti consiglio di, se fossi in te, perché non provi a...?"
+},
+{
+"d": 265,
+"lv": "B1",
+"t": "Describing a process step by step",
+"f": "Explain how something works with first, then, finally and the si form"
+},
+{
+"d": 266,
+"lv": "B1",
+"t": "Describing objects in detail",
+"f": "Shape, material and use: è di legno, serve per, è rotondo"
+},
+{
+"d": 267,
+"lv": "B1",
+"t": "Talking about your city's history",
+"f": "Narrate the past of your town with passive and past tenses"
+},
+{
+"d": 268,
+"lv": "B1",
+"t": "Cooking together in Italian",
+"f": "Discuss a recipe, quantities and tips with a friend"
+},
+{
+"d": 269,
+"lv": "B1",
+"t": "Italian families and generations",
+"f": "Discuss family roles, nonni and traditions across generations"
+},
+{
+"d": 270,
+"lv": "B1",
+"t": "Friendship and social life",
+"f": "Talk about friends, making plans and what friendship means to you"
+},
+{
+"d": 271,
+"lv": "B1",
+"t": "A funny day: telling anecdotes",
+"f": "Tell a funny anecdote using connectors and tenses smoothly"
+},
+{
+"d": 272,
+"lv": "B1",
+"t": "Talking about dreams and ambitions",
+"f": "Sogni nel cassetto: express long-term dreams with conditional and subjunctive"
+},
+{
+"d": 273,
+"lv": "B1",
+"t": "Describing changes in your life",
+"f": "Diventare, cambiare, crescere: talk about personal growth"
+},
+{
+"d": 274,
+"lv": "B1",
+"t": "Italian at the hairdresser and spa",
+"f": "Book, explain what you want and react politely"
+},
+{
+"d": 275,
+"lv": "B1",
+"t": "Shopping for gifts",
+"f": "Ask for advice, describe the person and choose the perfect regalo"
+},
+{
+"d": 276,
+"lv": "B1",
+"t": "Italian sports culture",
+"f": "Calcio, ciclismo, the Giro d'Italia and how fans talk about sport"
+},
+{
+"d": 277,
+"lv": "B1",
+"t": "Island life: Sicily and Sardinia",
+"f": "Describe landscapes, food and traditions of Italy's big islands"
+},
+{
+"d": 278,
+"lv": "B1",
+"t": "Mountains and lakes of the north",
+"f": "Dolomites, Lake Como, Lake Garda: plan a northern trip in Italian"
+},
+{
+"d": 279,
+"lv": "B1",
+"t": "Listening practice: a dialogue at the market",
+"f": "Follow a fast natural dialogue and retell it in your own words"
+},
+{
+"d": 280,
+"lv": "B1",
+"t": "Review: B1 complete!",
+"f": "Celebrate B1: subjunctive, hypotheses, idioms and fluent storytelling"
+},
+{
+"d": 281,
+"lv": "B2",
+"t": "Congiuntivo trapassato",
+"f": "Se avessi saputo, pensavo che fosse già partito: the past perfect subjunctive"
+},
+{
+"d": 282,
+"lv": "B2",
+"t": "Periodo ipotetico of impossibility",
+"f": "Se fossi venuto, ti saresti divertito: conditions about the past"
+},
+{
+"d": 283,
+"lv": "B2",
+"t": "Mixed hypothetical sentences",
+"f": "Se avessi studiato, ora parlerei meglio: past cause, present result"
+},
+{
+"d": 284,
+"lv": "B2",
+"t": "Sequence of tenses: overview",
+"f": "How the main verb decides the subjunctive tense in the dependent clause"
+},
+{
+"d": 285,
+"lv": "B2",
+"t": "Sequence of tenses in practice",
+"f": "Credevo che fosse, credo che fosse, crederò che sia: practise the rules"
+},
+{
+"d": 286,
+"lv": "B2",
+"t": "Passato remoto: why it matters",
+"f": "The literary past used in books, history and in southern everyday speech"
+},
+{
+"d": 287,
+"lv": "B2",
+"t": "Passato remoto: regular forms",
+"f": "Parlai, credetti, partii: recognise and form the regular passato remoto"
+},
+{
+"d": 288,
+"lv": "B2",
+"t": "Passato remoto: irregular forms",
+"f": "Fui, ebbi, feci, dissi, vidi, venni, nacque: key irregular forms"
+},
+{
+"d": 289,
+"lv": "B2",
+"t": "Reading a fairy tale",
+"f": "C'era una volta: read a classic tale with passato remoto and imperfetto"
+},
+{
+"d": 290,
+"lv": "B2",
+"t": "Implicit clauses with participles",
+"f": "Finito il lavoro, uscì: the past participle as a compact clause"
+},
+{
+"d": 291,
+"lv": "B2",
+"t": "Gerundio passato",
+"f": "Avendo finito, essendo arrivato: cause and time in elegant Italian"
+},
+{
+"d": 292,
+"lv": "B2",
+"t": "Infinito passato",
+"f": "Dopo aver letto, mi scuso di essere arrivato tardi"
+},
+{
+"d": 293,
+"lv": "B2",
+"t": "Review: advanced tenses",
+"f": "Recap congiuntivo trapassato, passato remoto and implicit clauses"
+},
+{
+"d": 294,
+"lv": "B2",
+"t": "Causative fare",
+"f": "Faccio riparare la macchina, mi sono fatto tagliare i capelli"
+},
+{
+"d": 295,
+"lv": "B2",
+"t": "Lasciare + infinitive",
+"f": "Lascia stare, lasciami pensare: allowing and letting"
+},
+{
+"d": 296,
+"lv": "B2",
+"t": "Verbs with prepositions",
+"f": "Pensare a, credere in, dipendere da, riuscire a, smettere di"
+},
+{
+"d": 297,
+"lv": "B2",
+"t": "Verbs that change meaning",
+"f": "Sentire, servire, mancare, tenere: one verb, many meanings"
+},
+{
+"d": 298,
+"lv": "B2",
+"t": "Nouns with two plurals",
+"f": "Il braccio, le braccia and i bracci; il muro, le mura"
+},
+{
+"d": 299,
+"lv": "B2",
+"t": "Collocations: fare, dare, prendere",
+"f": "Fare una domanda, dare fastidio, prendere una decisione"
+},
+{
+"d": 300,
+"lv": "B2",
+"t": "Collocations: mettere, tenere, avere",
+"f": "Mettere in dubbio, tenere conto, avere senso"
+},
+{
+"d": 301,
+"lv": "B2",
+"t": "Advanced connectors",
+"f": "Tuttavia, nonostante, purché, qualora, laddove: refined linking words"
+},
+{
+"d": 302,
+"lv": "B2",
+"t": "Nominalisation in formal Italian",
+"f": "L'arrivo del treno, la chiusura dei negozi: nouns from verbs"
+},
+{
+"d": 303,
+"lv": "B2",
+"t": "Register: formal, neutral, informal",
+"f": "Say the same thing in three registers, from a chat to an email"
+},
+{
+"d": 304,
+"lv": "B2",
+"t": "Review: words and structure",
+"f": "Recap causatives, prepositions, collocations and connectors"
+},
+{
+"d": 305,
+"lv": "B2",
+"t": "Reading newspapers",
+"f": "Headlines, abbreviations and typical newspaper style"
+},
+{
+"d": 306,
+"lv": "B2",
+"t": "Writing an opinion essay",
+"f": "Thesis, arguments, counterarguments and a strong conclusion"
+},
+{
+"d": 307,
+"lv": "B2",
+"t": "Summarising a text",
+"f": "Pick key ideas and restate them in your own words"
+},
+{
+"d": 308,
+"lv": "B2",
+"t": "Reviewing a film or book",
+"f": "Give a balanced review: trama, personaggi, punti di forza, giudizio"
+},
+{
+"d": 309,
+"lv": "B2",
+"t": "Writing a cover letter",
+"f": "Lettera di presentazione: motivation, skills and a polite closing"
+},
+{
+"d": 310,
+"lv": "B2",
+"t": "Advanced job interview",
+"f": "Talk about challenges, achievements and future goals convincingly"
+},
+{
+"d": 311,
+"lv": "B2",
+"t": "Leading a meeting",
+"f": "Open, moderate, summarise and close: passo la parola a, riassumendo"
+},
+{
+"d": 312,
+"lv": "B2",
+"t": "Small talk at a business dinner",
+"f": "Polite topics, compliments and toasts at a formal meal"
+},
+{
+"d": 313,
+"lv": "B2",
+"t": "Persuasive language",
+"f": "Rhetorical questions, emphasis and examples to convince"
+},
+{
+"d": 314,
+"lv": "B2",
+"t": "Expressing nuance and hedging",
+"f": "Forse, in un certo senso, tendenzialmente: soften your statements"
+},
+{
+"d": 315,
+"lv": "B2",
+"t": "Review: professional Italian",
+"f": "Recap formal writing, interviews, meetings and persuasion"
+},
+{
+"d": 316,
+"lv": "B2",
+"t": "Italian history: Ancient Rome",
+"f": "Rome's founding legend, the Republic and the Empire in simple narration"
+},
+{
+"d": 317,
+"lv": "B2",
+"t": "Italian history: the Middle Ages",
+"f": "Communes, maritime republics and the rise of Florence and Venice"
+},
+{
+"d": 318,
+"lv": "B2",
+"t": "Italian history: the Renaissance",
+"f": "Patrons, artists and scientists who shaped the Renaissance"
+},
+{
+"d": 319,
+"lv": "B2",
+"t": "Italian history: unification",
+"f": "Garibaldi, Cavour and the birth of the Kingdom of Italy in 1861"
+},
+{
+"d": 320,
+"lv": "B2",
+"t": "Modern Italy",
+"f": "The Republic since 1946, the economic boom and Italy in Europe"
+},
+{
+"d": 321,
+"lv": "B2",
+"t": "The Italian language story",
+"f": "From Latin to Tuscan to standard Italian, and the role of Dante"
+},
+{
+"d": 322,
+"lv": "B2",
+"t": "Italian geography in depth",
+"f": "The Alps, the Apennines, the islands, lakes and coasts"
+},
+{
+"d": 323,
+"lv": "B2",
+"t": "UNESCO sites of Italy",
+"f": "Pompeii, Venice, Cinque Terre, Matera: describe heritage sites"
+},
+{
+"d": 324,
+"lv": "B2",
+"t": "Italian gastronomy in depth",
+"f": "DOP products, slow food and regional cooking philosophy"
+},
+{
+"d": 325,
+"lv": "B2",
+"t": "The art of Italian conversation",
+"f": "Turn-taking, interrupting politely and keeping a chat alive"
+},
+{
+"d": 326,
+"lv": "B2",
+"t": "Review: Italy's history and culture",
+"f": "Recap history, geography and gastronomy discussions"
+},
+{
+"d": 327,
+"lv": "B2",
+"t": "Idioms at B2 level",
+"f": "Prendere due piccioni con una fava, rompere il ghiaccio, essere al verde"
+},
+{
+"d": 328,
+"lv": "B2",
+"t": "Phrasal-like verbs: tirare fuori",
+"f": "Tirare fuori, buttare giù, mettere su, venire fuori: verb plus adverb"
+},
+{
+"d": 329,
+"lv": "B2",
+"t": "Word formation in depth",
+"f": "Families of words: lavoro, lavorare, lavoratore, lavorativo"
+},
+{
+"d": 330,
+"lv": "B2",
+"t": "Synonyms to enrich your style",
+"f": "Replace dire, fare and bello with precise alternatives"
+},
+{
+"d": 331,
+"lv": "B2",
+"t": "Homographs and accents",
+"f": "Pèsca and pésca, àncora and ancóra: words that change with stress"
+},
+{
+"d": 332,
+"lv": "B2",
+"t": "Punctuation and style",
+"f": "Commas, semicolons and paragraphs in good Italian writing"
+},
+{
+"d": 333,
+"lv": "B2",
+"t": "Spelling traps for advanced learners",
+"f": "Qu versus cu, the apostrophe in un'amica, accents on è and perché"
+},
+{
+"d": 334,
+"lv": "B2",
+"t": "Translating your thoughts naturally",
+"f": "Avoid literal translation and think in Italian structures"
+},
+{
+"d": 335,
+"lv": "B2",
+"t": "Listening to podcasts and radio",
+"f": "Strategies to follow long, fast speech and take notes"
+},
+{
+"d": 336,
+"lv": "B2",
+"t": "Understanding films without subtitles",
+"f": "Train your ear for dialogue, slang and regional voices"
+},
+{
+"d": 337,
+"lv": "B2",
+"t": "Review: style and comprehension",
+"f": "Recap vocabulary building, spelling and listening strategies"
+},
+{
+"d": 338,
+"lv": "B2",
+"t": "Talking about society and change",
+"f": "Discuss family, work and technology trends with balanced arguments"
+},
+{
+"d": 339,
+"lv": "B2",
+"t": "Education systems compared",
+"f": "School in Italy versus your country: discuss pros and cons"
+},
+{
+"d": 340,
+"lv": "B2",
+"t": "Work-life balance",
+"f": "Smart working, ferie, orari: discuss modern work habits"
+},
+{
+"d": 341,
+"lv": "B2",
+"t": "Travel and sustainable tourism",
+"f": "Overtourism, slow travel and responsible choices, in nuanced Italian"
+},
+{
+"d": 342,
+"lv": "B2",
+"t": "Science and discovery",
+"f": "Galileo, Volta, Fermi and how to talk about scientific ideas simply"
+},
+{
+"d": 343,
+"lv": "B2",
+"t": "Health and lifestyle debates",
+"f": "Discuss diet, sport and wellbeing trends with good arguments"
+},
+{
+"d": 344,
+"lv": "B2",
+"t": "Technology and the future",
+"f": "Artificial intelligence, apps and online life: opinions and predictions"
+},
+{
+"d": 345,
+"lv": "B2",
+"t": "Volunteering and community",
+"f": "Talk about helping others and local associations"
+},
+{
+"d": 346,
+"lv": "B2",
+"t": "Review: discussing ideas",
+"f": "Recap the language of debate on society, work and technology"
+},
+{
+"d": 347,
+"lv": "B2",
+"t": "Poetry: reading Italian verse",
+"f": "Read short poems by Ungaretti or Montale and feel the rhythm"
+},
+{
+"d": 348,
+"lv": "B2",
+"t": "Songwriting and lyrics",
+"f": "Analyse the lyrics of a classic Italian song and its imagery"
+},
+{
+"d": 349,
+"lv": "B2",
+"t": "Creative writing: a short story",
+"f": "Plan and write a short story using varied tenses and description"
+},
+{
+"d": 350,
+"lv": "B2",
+"t": "Describing feelings with precision",
+"f": "Nostalgia, malinconia, entusiasmo: the vocabulary of emotions"
+},
+{
+"d": 351,
+"lv": "B2",
+"t": "Irony and understatement",
+"f": "Non è proprio un genio: say more by saying less"
+},
+{
+"d": 352,
+"lv": "B2",
+"t": "Telling jokes in Italian",
+"f": "Timing, wordplay and simple barzellette that work"
+},
+{
+"d": 353,
+"lv": "B2",
+"t": "Giving a toast or a speech",
+"f": "Un brindisi: structure a short, warm speech for a celebration"
+},
+{
+"d": 354,
+"lv": "B2",
+"t": "Arguing both sides",
+"f": "Present pros and cons fairly before giving your view"
+},
+{
+"d": 355,
+"lv": "B2",
+"t": "Improvisation games",
+"f": "Keep talking on a random topic for one minute without stopping"
+},
+{
+"d": 356,
+"lv": "B2",
+"t": "Review: creative Italian",
+"f": "Recap poetry, storytelling, humour and speeches"
+},
+{
+"d": 357,
+"lv": "B2",
+"t": "Italian for travellers: expert tips",
+"f": "Handle any travel situation with confidence and local phrases"
+},
+{
+"d": 358,
+"lv": "B2",
+"t": "Living in Italy: everyday culture",
+"f": "Habits, schedules, meals and social codes that surprise newcomers"
+},
+{
+"d": 359,
+"lv": "B2",
+"t": "Mock B2 exam: reading and writing",
+"f": "Practise exam-style reading questions and a 150-word text"
+},
+{
+"d": 360,
+"lv": "B2",
+"t": "Mock B2 exam: listening and speaking",
+"f": "Practise exam-style listening and a structured oral presentation"
+},
+{
+"d": 361,
+"lv": "B2",
+"t": "Your Italian journey",
+"f": "Reflect on your progress, favourite words and next goals in Italian"
+},
+{
+"d": 362,
+"lv": "B2",
+"t": "Italian etiquette in depth",
+"f": "Gifts, punctuality, greetings with kisses and table manners"
+},
+{
+"d": 363,
+"lv": "B2",
+"t": "Exploring Italian proverbs deeper",
+"f": "Rosso di sera bel tempo si spera: meaning and use of weather proverbs"
+},
+{
+"d": 364,
+"lv": "B2",
+"t": "Fluency sprint: talk for three minutes",
+"f": "Speak on a familiar topic for three minutes using B2 connectors"
+},
+{
+"d": 365,
+"lv": "B2",
+"t": "Review: B2 complete, bravissimo!",
+"f": "Celebrate a full year: recap the B2 essentials and plan what comes next"
+}
+]
+}

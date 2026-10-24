@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 71,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the pharmacy",
+     "g": "Ask a pharmacist for help and understand simple instructions.",
+     "p": [
+      "Italian pharmacies have a green cross. Start with: buongiorno, avrei bisogno di qualcosa per il raffreddore.",
+      "Useful words: la ricetta (prescription), le compresse, lo sciroppo, la crema, i cerotti.",
+      "Instructions often sound like: una compressa due volte al giorno, dopo i pasti. Language practice only, ask a professional."
+     ],
+     "q": "What would you ask for at an Italian pharmacy if you had a cold?",
+     "c": "Write a three-line exchange at the pharmacy: your request, the answer and grazie, arrivederci."
+    },
+    "de": {
+     "t": "In der Apotheke",
+     "g": "Du bittest in der Apotheke um Hilfe und verstehst einfache Anweisungen.",
+     "p": [
+      "Italienische Apotheken haben ein grünes Kreuz. Beginn mit: buongiorno, avrei bisogno di qualcosa per il raffreddore.",
+      "Nützliche Wörter: la ricetta (Rezept), le compresse, lo sciroppo, la crema, i cerotti.",
+      "Anweisungen klingen oft so: una compressa due volte al giorno, dopo i pasti. Nur Sprachübung, frag Fachleute."
+     ],
+     "q": "Was würdest du in einer italienischen Apotheke verlangen, wenn du erkältet bist?",
+     "c": "Schreib einen Dreizeiler in der Apotheke: deine Bitte, die Antwort und grazie, arrivederci."
+    },
+    "es": {
+     "t": "En la farmacia",
+     "g": "Pedir ayuda al farmacéutico y entender instrucciones sencillas.",
+     "p": [
+      "Las farmacias italianas tienen una cruz verde. Empieza con: buongiorno, avrei bisogno di qualcosa per il raffreddore.",
+      "Palabras útiles: la ricetta (receta), le compresse, lo sciroppo, la crema, i cerotti.",
+      "Las instrucciones suenan así: una compressa due volte al giorno, dopo i pasti. Solo práctica de idioma, consulta a un profesional."
+     ],
+     "q": "¿Qué pedirías en una farmacia italiana si estuvieras resfriado?",
+     "c": "Escribe un intercambio de tres líneas en la farmacia: tu petición, la respuesta y grazie, arrivederci."
+    },
+    "fr": {
+     "t": "À la pharmacie",
+     "g": "Demander de l'aide au pharmacien et comprendre des consignes simples.",
+     "p": [
+      "Les pharmacies italiennes ont une croix verte. Commence par : buongiorno, avrei bisogno di qualcosa per il raffreddore.",
+      "Mots utiles : la ricetta (ordonnance), le compresse, lo sciroppo, la crema, i cerotti.",
+      "Les consignes ressemblent à : una compressa due volte al giorno, dopo i pasti. Pratique de langue seulement, demande à un pro."
+     ],
+     "q": "Que demanderais-tu dans une pharmacie italienne si tu étais enrhumé ?",
+     "c": "Écris un échange de trois lignes à la pharmacie : ta demande, la réponse et grazie, arrivederci."
+    },
+    "it": {
+     "t": "In farmacia",
+     "g": "Chiedere aiuto al farmacista e capire istruzioni semplici.",
+     "p": [
+      "Le farmacie italiane hanno la croce verde. Si comincia con: buongiorno, avrei bisogno di qualcosa per il raffreddore.",
+      "Parole utili: la ricetta, le compresse, lo sciroppo, la crema, i cerotti.",
+      "Le istruzioni suonano così: una compressa due volte al giorno, dopo i pasti. Solo pratica di lingua, chiedi a un esperto."
+     ],
+     "q": "Cosa chiederesti in una farmacia italiana se avessi il raffreddore?",
+     "c": "Scrivi uno scambio di tre righe in farmacia: la richiesta, la risposta e grazie, arrivederci."
+    },
+    "pt": {
+     "t": "Na farmácia",
+     "g": "Pedir ajuda ao farmacêutico e perceber instruções simples.",
+     "p": [
+      "As farmácias italianas têm uma cruz verde. Começa com: buongiorno, avrei bisogno di qualcosa per il raffreddore.",
+      "Palavras úteis: la ricetta (receita), le compresse, lo sciroppo, la crema, i cerotti.",
+      "As instruções soam assim: una compressa due volte al giorno, dopo i pasti. Só prática de língua, pergunta a um profissional."
+     ],
+     "q": "O que pedirias numa farmácia italiana se estivesses constipado?",
+     "c": "Escreve uma troca de três linhas na farmácia: o teu pedido, a resposta e grazie, arrivederci."
+    },
+    "pt_BR": {
+     "t": "Na farmácia",
+     "g": "Pedir ajuda ao farmacêutico e entender instruções simples.",
+     "p": [
+      "As farmácias italianas têm uma cruz verde. Comece com: buongiorno, avrei bisogno di qualcosa per il raffreddore.",
+      "Palavras úteis: la ricetta (receita), le compresse, lo sciroppo, la crema, i cerotti.",
+      "As instruções soam assim: una compressa due volte al giorno, dopo i pasti. Só prática de idioma, consulte um profissional."
+     ],
+     "q": "O que você pediria numa farmácia italiana se estivesse resfriado?",
+     "c": "Escreva uma troca de três linhas na farmácia: seu pedido, a resposta e grazie, arrivederci."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la farmacia",
+      "ex": "C'è una farmacia aperta qui vicino?"
+     },
+     {
+      "w": "avrei bisogno di",
+      "ex": "Avrei bisogno di qualcosa per la tosse."
+     },
+     {
+      "w": "la ricetta",
+      "ex": "Per questo serve la ricetta del medico?"
+     },
+     {
+      "w": "le compresse",
+      "ex": "Prenda due compresse al giorno."
+     },
+     {
+      "w": "lo sciroppo",
+      "ex": "Questo sciroppo è per bambini."
+     },
+     {
+      "w": "i cerotti",
+      "ex": "Vorrei una scatola di cerotti."
+     }
+    ],
+    "gram": "Avrei bisogno di + nome per chiedere con gentilezza; istruzioni con numero + volte al giorno (tre volte al giorno)."
+   }
+  },
+  {
+   "d": 72,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Direct object pronouns",
+     "g": "Replace a noun with lo, la, li, le to avoid repeating it.",
+     "p": [
+      "Lo for masculine singular, la feminine singular, li masculine plural, le feminine plural.",
+      "The pronoun goes before the verb: compro il pane, lo compro; vedo Maria, la vedo; non li conosco.",
+      "Lo and la become l' before a vowel or h: l'aspetto, l'ho. People too: mi, ti, ci, vi. Mi senti?"
+     ],
+     "q": "Do you drink coffee every day? Answer with a pronoun: sì, lo bevo or no, non lo bevo.",
+     "c": "Rewrite five sentences replacing the object with lo, la, li or le."
+    },
+    "de": {
+     "t": "Direkte Objektpronomen",
+     "g": "Du ersetzt ein Nomen durch lo, la, li, le, um Wiederholungen zu vermeiden.",
+     "p": [
+      "Lo für männlich Singular, la weiblich Singular, li männlich Plural, le weiblich Plural.",
+      "Das Pronomen steht vor dem Verb: compro il pane, lo compro; vedo Maria, la vedo; non li conosco.",
+      "Lo und la werden vor Vokal oder h zu l': l'aspetto, l'ho. Für Personen auch: mi, ti, ci, vi. Mi senti?"
+     ],
+     "q": "Trinkst du jeden Tag Kaffee? Antworte mit Pronomen: sì, lo bevo oder no, non lo bevo.",
+     "c": "Schreib fünf Sätze um und ersetze das Objekt durch lo, la, li oder le."
+    },
+    "es": {
+     "t": "Pronombres de objeto directo",
+     "g": "Sustituir un nombre por lo, la, li, le para no repetirlo.",
+     "p": [
+      "Lo para masculino singular, la femenino singular, li masculino plural, le femenino plural.",
+      "El pronombre va antes del verbo: compro il pane, lo compro; vedo Maria, la vedo; non li conosco.",
+      "Lo y la pasan a l' ante vocal o h: l'aspetto, l'ho. Para personas también: mi, ti, ci, vi. Mi senti?"
+     ],
+     "q": "¿Bebes café cada día? Responde con pronombre: sì, lo bevo o no, non lo bevo.",
+     "c": "Reescribe cinco frases cambiando el objeto por lo, la, li o le."
+    },
+    "fr": {
+     "t": "Les pronoms COD",
+     "g": "Remplacer un nom par lo, la, li, le pour éviter de le répéter.",
+     "p": [
+      "Lo masculin singulier, la féminin singulier, li masculin pluriel, le féminin pluriel.",
+      "Le pronom se place avant le verbe : compro il pane, lo compro ; vedo Maria, la vedo ; non li conosco.",
+      "Lo et la deviennent l' devant voyelle ou h : l'aspetto, l'ho. Pour les personnes : mi, ti, ci, vi. Mi senti ?"
+     ],
+     "q": "Tu bois du café tous les jours ? Réponds avec un pronom : sì, lo bevo ou no, non lo bevo.",
+     "c": "Réécris cinq phrases en remplaçant le complément par lo, la, li ou le."
+    },
+    "it": {
+     "t": "I pronomi diretti",
+     "g": "Sostituire un nome con lo, la, li, le per non ripeterlo.",
+     "p": [
+      "Lo per il maschile singolare, la femminile singolare, li maschile plurale, le femminile plurale.",
+      "Il pronome va prima del verbo: compro il pane, lo compro; vedo Maria, la vedo; non li conosco.",
+      "Lo e la diventano l' davanti a vocale o h: l'aspetto, l'ho. Per le persone anche mi, ti, ci, vi. Mi senti?"
+     ],
+     "q": "Bevi il caffè ogni giorno? Rispondi con un pronome: sì, lo bevo o no, non lo bevo.",
+     "c": "Riscrivi cinque frasi sostituendo l'oggetto con lo, la, li o le."
+    },
+    "pt": {
+     "t": "Pronomes de objeto direto",
+     "g": "Substituir um nome por lo, la, li, le para não o repetir.",
+     "p": [
+      "Lo para masculino singular, la feminino singular, li masculino plural, le feminino plural.",
+      "O pronome vem antes do verbo: compro il pane, lo compro; vedo Maria, la vedo; non li conosco.",
+      "Lo e la passam a l' antes de vogal ou h: l'aspetto, l'ho. Para pessoas também: mi, ti, ci, vi. Mi senti?"
+     ],
+     "q": "Bebes café todos os dias? Responde com pronome: sì, lo bevo ou no, non lo bevo.",
+     "c": "Reescreve cinco frases trocando o objeto por lo, la, li ou le."
+    },
+    "pt_BR": {
+     "t": "Pronomes de objeto direto",
+     "g": "Substituir um substantivo por lo, la, li, le para não repetir.",
+     "p": [
+      "Lo para masculino singular, la feminino singular, li masculino plural, le feminino plural.",
+      "O pronome vem antes do verbo: compro il pane, lo compro; vedo Maria, la vedo; non li conosco.",
+      "Lo e la viram l' antes de vogal ou h: l'aspetto, l'ho. Para pessoas também: mi, ti, ci, vi. Mi senti?"
+     ],
+     "q": "Você toma café todo dia? Responda com pronome: sì, lo bevo ou no, non lo bevo.",
+     "c": "Reescreva cinco frases trocando o objeto por lo, la, li ou le."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo",
+      "ex": "Il giornale? Lo leggo ogni mattina."
+     },
+     {
+      "w": "la",
+      "ex": "La pizza la mangio il sabato."
+     },
+     {
+      "w": "li",
+      "ex": "I biglietti? Li compro online."
+     },
+     {
+      "w": "le",
+      "ex": "Le chiavi? Non le trovo!"
+     },
+     {
+      "w": "l'aspetto",
+      "ex": "Marco arriva tardi, ma l'aspetto."
+     },
+     {
+      "w": "mi senti?",
+      "ex": "Pronto, mi senti bene?"
+     }
+    ],
+    "gram": "Pronomi diretti lo, la, li, le (e mi, ti, ci, vi) prima del verbo coniugato: lo vedo, non la conosco; l' davanti a vocale."
+   }
+  },
+  {
+   "d": 73,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ci: there and about it",
+     "g": "Use ci to replace a place and learn useful fixed phrases.",
+     "p": [
+      "Ci replaces a place after a, in, da: vai a Roma? Sì, ci vado domani. Ci abito da tre anni.",
+      "It goes before the verb, like other pronouns: non ci vado mai, ci torno volentieri.",
+      "Fixed phrases: ci vuole (it takes, singular), ci vogliono (plural): ci vuole un'ora, ci vogliono due ore."
+     ],
+     "q": "Do you go to the cinema often? Answer with ci: ci vado spesso, non ci vado mai...",
+     "c": "Say how long it takes you to get to three places using ci vuole and ci vogliono."
+    },
+    "de": {
+     "t": "Ci: dort und darüber",
+     "g": "Du ersetzt einen Ort mit ci und lernst nützliche feste Wendungen.",
+     "p": [
+      "Ci ersetzt einen Ort nach a, in, da: vai a Roma? Sì, ci vado domani. Ci abito da tre anni.",
+      "Es steht vor dem Verb wie andere Pronomen: non ci vado mai, ci torno volentieri.",
+      "Feste Wendungen: ci vuole (man braucht, Singular), ci vogliono (Plural): ci vuole un'ora, ci vogliono due ore."
+     ],
+     "q": "Gehst du oft ins Kino? Antworte mit ci: ci vado spesso, non ci vado mai...",
+     "c": "Sag mit ci vuole und ci vogliono, wie lange du zu drei Orten brauchst."
+    },
+    "es": {
+     "t": "Ci: allí y sobre eso",
+     "g": "Usar ci para sustituir un lugar y aprender frases hechas útiles.",
+     "p": [
+      "Ci sustituye un lugar tras a, in, da: vai a Roma? Sì, ci vado domani. Ci abito da tre anni.",
+      "Va antes del verbo, como los demás pronombres: non ci vado mai, ci torno volentieri.",
+      "Frases hechas: ci vuole (hace falta, singular), ci vogliono (plural): ci vuole un'ora, ci vogliono due ore."
+     ],
+     "q": "¿Vas a menudo al cine? Responde con ci: ci vado spesso, non ci vado mai...",
+     "c": "Di cuánto tardas en llegar a tres sitios con ci vuole y ci vogliono."
+    },
+    "fr": {
+     "t": "Ci : y et à ce sujet",
+     "g": "Utiliser ci pour remplacer un lieu et apprendre des expressions figées.",
+     "p": [
+      "Ci remplace un lieu après a, in, da, comme y : vai a Roma ? Sì, ci vado domani. Ci abito da tre anni.",
+      "Il se place avant le verbe : non ci vado mai, ci torno volentieri.",
+      "Expressions : ci vuole (il faut, singulier), ci vogliono (pluriel) : ci vuole un'ora, ci vogliono due ore."
+     ],
+     "q": "Tu vas souvent au cinéma ? Réponds avec ci : ci vado spesso, non ci vado mai...",
+     "c": "Dis combien de temps il te faut pour aller à trois endroits avec ci vuole et ci vogliono."
+    },
+    "it": {
+     "t": "Ci: luogo e frasi fatte",
+     "g": "Usare ci al posto di un luogo e imparare frasi fisse utili.",
+     "p": [
+      "Ci sostituisce un luogo dopo a, in, da: vai a Roma? Sì, ci vado domani. Ci abito da tre anni.",
+      "Va prima del verbo come gli altri pronomi: non ci vado mai, ci torno volentieri.",
+      "Frasi fisse: ci vuole con il singolare, ci vogliono con il plurale: ci vuole un'ora, ci vogliono due ore."
+     ],
+     "q": "Vai spesso al cinema? Rispondi con ci: ci vado spesso, non ci vado mai...",
+     "c": "Di' quanto tempo ci vuole per arrivare in tre posti, con ci vuole e ci vogliono."
+    },
+    "pt": {
+     "t": "Ci: lá e sobre isso",
+     "g": "Usar ci para substituir um lugar e aprender expressões fixas úteis.",
+     "p": [
+      "Ci substitui um lugar depois de a, in, da: vai a Roma? Sì, ci vado domani. Ci abito da tre anni.",
+      "Vem antes do verbo, como os outros pronomes: non ci vado mai, ci torno volentieri.",
+      "Expressões fixas: ci vuole (é preciso, singular), ci vogliono (plural): ci vuole un'ora, ci vogliono due ore."
+     ],
+     "q": "Vais muitas vezes ao cinema? Responde com ci: ci vado spesso, non ci vado mai...",
+     "c": "Diz quanto tempo demoras a chegar a três sítios com ci vuole e ci vogliono."
+    },
+    "pt_BR": {
+     "t": "Ci: lá e sobre isso",
+     "g": "Usar ci para substituir um lugar e aprender expressões fixas úteis.",
+     "p": [
+      "Ci substitui um lugar depois de a, in, da: vai a Roma? Sì, ci vado domani. Ci abito da tre anni.",
+      "Vem antes do verbo, como os outros pronomes: non ci vado mai, ci torno volentieri.",
+      "Expressões fixas: ci vuole (leva, singular), ci vogliono (plural): ci vuole un'ora, ci vogliono due ore."
+     ],
+     "q": "Você vai sempre ao cinema? Responda com ci: ci vado spesso, non ci vado mai...",
+     "c": "Diga quanto tempo leva para chegar a três lugares com ci vuole e ci vogliono."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ci vado",
+      "ex": "Al mercato? Ci vado ogni sabato."
+     },
+     {
+      "w": "ci abito",
+      "ex": "Conosco Torino, ci abito da anni."
+     },
+     {
+      "w": "ci torno",
+      "ex": "Venezia è bellissima, ci torno volentieri."
+     },
+     {
+      "w": "non ci vado mai",
+      "ex": "In discoteca non ci vado mai."
+     },
+     {
+      "w": "ci vuole",
+      "ex": "Per arrivare in centro ci vuole mezz'ora."
+     },
+     {
+      "w": "ci vogliono",
+      "ex": "Per la torta ci vogliono tre uova."
+     }
+    ],
+    "gram": "Ci sostituisce un luogo (a Roma → ci) e va prima del verbo; ci vuole + singolare, ci vogliono + plurale."
+   }
+  },
+  {
+   "d": 74,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ne: some of it",
+     "g": "Use ne to talk about quantities without repeating the noun.",
+     "p": [
+      "Ne means of it or of them. Quante mele vuoi? Ne prendo due. Hai dei fratelli? Sì, ne ho uno.",
+      "Ne goes before the verb and you add the number or amount after: ne vorrei un chilo, ne bevo poco.",
+      "With no quantity it means none at all: non ne ho. Compare: lo prendo (the whole thing) and ne prendo un po'."
+     ],
+     "q": "How many cups of coffee do you drink a day? Answer with ne: ne bevo...",
+     "c": "Answer five quantity questions using ne: quanti libri, amici, caffè, lingue, fratelli?"
+    },
+    "de": {
+     "t": "Ne: etwas davon",
+     "g": "Du sprichst mit ne über Mengen, ohne das Nomen zu wiederholen.",
+     "p": [
+      "Ne bedeutet davon. Quante mele vuoi? Ne prendo due. Hai dei fratelli? Sì, ne ho uno.",
+      "Ne steht vor dem Verb, die Menge kommt danach: ne vorrei un chilo, ne bevo poco.",
+      "Ohne Menge heißt es gar keine: non ne ho. Vergleich: lo prendo (das Ganze) und ne prendo un po'."
+     ],
+     "q": "Wie viele Tassen Kaffee trinkst du am Tag? Antworte mit ne: ne bevo...",
+     "c": "Beantworte fünf Mengenfragen mit ne: quanti libri, amici, caffè, lingue, fratelli?"
+    },
+    "es": {
+     "t": "Ne: un poco de eso",
+     "g": "Usar ne para hablar de cantidades sin repetir el nombre.",
+     "p": [
+      "Ne significa de eso o de ellos. Quante mele vuoi? Ne prendo due. Hai dei fratelli? Sì, ne ho uno.",
+      "Ne va antes del verbo y la cantidad después: ne vorrei un chilo, ne bevo poco.",
+      "Sin cantidad significa ninguno: non ne ho. Compara: lo prendo (todo) y ne prendo un po'."
+     ],
+     "q": "¿Cuántas tazas de café bebes al día? Responde con ne: ne bevo...",
+     "c": "Responde cinco preguntas de cantidad con ne: quanti libri, amici, caffè, lingue, fratelli?"
+    },
+    "fr": {
+     "t": "Ne : en",
+     "g": "Utiliser ne pour parler de quantités sans répéter le nom.",
+     "p": [
+      "Ne correspond au en français. Quante mele vuoi ? Ne prendo due. Hai dei fratelli ? Sì, ne ho uno.",
+      "Ne se place avant le verbe, la quantité après : ne vorrei un chilo, ne bevo poco.",
+      "Sans quantité, cela veut dire aucun : non ne ho. Compare : lo prendo (le tout) et ne prendo un po'."
+     ],
+     "q": "Combien de tasses de café bois-tu par jour ? Réponds avec ne : ne bevo...",
+     "c": "Réponds à cinq questions de quantité avec ne : quanti libri, amici, caffè, lingue, fratelli ?"
+    },
+    "it": {
+     "t": "Ne: una parte di qualcosa",
+     "g": "Usare ne per parlare di quantità senza ripetere il nome.",
+     "p": [
+      "Ne significa di questo o di questi. Quante mele vuoi? Ne prendo due. Hai dei fratelli? Sì, ne ho uno.",
+      "Ne va prima del verbo e la quantità dopo: ne vorrei un chilo, ne bevo poco.",
+      "Senza quantità significa nessuno: non ne ho. Confronta: lo prendo (tutto) e ne prendo un po'."
+     ],
+     "q": "Quante tazze di caffè bevi al giorno? Rispondi con ne: ne bevo...",
+     "c": "Rispondi a cinque domande di quantità con ne: quanti libri, amici, caffè, lingue, fratelli?"
+    },
+    "pt": {
+     "t": "Ne: um pouco disso",
+     "g": "Usar ne para falar de quantidades sem repetir o nome.",
+     "p": [
+      "Ne quer dizer disso ou deles. Quante mele vuoi? Ne prendo due. Hai dei fratelli? Sì, ne ho uno.",
+      "Ne vem antes do verbo e a quantidade depois: ne vorrei un chilo, ne bevo poco.",
+      "Sem quantidade quer dizer nenhum: non ne ho. Compara: lo prendo (tudo) e ne prendo un po'."
+     ],
+     "q": "Quantas chávenas de café bebes por dia? Responde com ne: ne bevo...",
+     "c": "Responde a cinco perguntas de quantidade com ne: quanti libri, amici, caffè, lingue, fratelli?"
+    },
+    "pt_BR": {
+     "t": "Ne: um pouco disso",
+     "g": "Usar ne para falar de quantidades sem repetir o substantivo.",
+     "p": [
+      "Ne quer dizer disso ou deles. Quante mele vuoi? Ne prendo due. Hai dei fratelli? Sì, ne ho uno.",
+      "Ne vem antes do verbo e a quantidade depois: ne vorrei un chilo, ne bevo poco.",
+      "Sem quantidade quer dizer nenhum: non ne ho. Compare: lo prendo (tudo) e ne prendo un po'."
+     ],
+     "q": "Quantas xícaras de café você toma por dia? Responda com ne: ne bevo...",
+     "c": "Responda a cinco perguntas de quantidade com ne: quanti libri, amici, caffè, lingue, fratelli?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ne prendo",
+      "ex": "Le pesche sono buone, ne prendo quattro."
+     },
+     {
+      "w": "quanti ne vuoi?",
+      "ex": "Ho dei biscotti, quanti ne vuoi?"
+     },
+     {
+      "w": "ne ho uno",
+      "ex": "Fratelli? Ne ho uno, più grande."
+     },
+     {
+      "w": "non ne ho",
+      "ex": "Mi dispiace, di monete non ne ho."
+     },
+     {
+      "w": "ne vorrei",
+      "ex": "Ne vorrei mezzo chilo, grazie."
+     },
+     {
+      "w": "ne bevo poco",
+      "ex": "Il latte? Ne bevo poco."
+     }
+    ],
+    "gram": "Ne sostituisce una parte di qualcosa e va prima del verbo, con la quantità dopo: ne compro due; non ne ho = zero."
+   }
+  },
+  {
+   "d": 75,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hotel check-in",
+     "g": "Check in at a hotel and ask the key questions about your stay.",
+     "p": [
+      "At reception: buonasera, ho una prenotazione a nome Smith. Ask for una camera singola, doppia or matrimoniale.",
+      "Key questions: la colazione è inclusa? a che ora è la colazione? c'è il wifi? qual è la password?",
+      "Before leaving: a che ora devo lasciare la camera? You may hear il check-out è entro le undici."
+     ],
+     "q": "What do you always want to know when you arrive at a hotel? Ask it in Italian.",
+     "c": "Act out a check-in aloud: booking name, room type, breakfast time and wifi."
+    },
+    "de": {
+     "t": "Hotel-Check-in",
+     "g": "Du checkst im Hotel ein und stellst die wichtigsten Fragen zum Aufenthalt.",
+     "p": [
+      "An der Rezeption: buonasera, ho una prenotazione a nome Smith. Zimmer: camera singola, doppia oder matrimoniale.",
+      "Wichtige Fragen: la colazione è inclusa? a che ora è la colazione? c'è il wifi? qual è la password?",
+      "Vor der Abreise: a che ora devo lasciare la camera? Du hörst vielleicht: il check-out è entro le undici."
+     ],
+     "q": "Was willst du immer wissen, wenn du in einem Hotel ankommst? Frag es auf Italienisch.",
+     "c": "Spiel einen Check-in laut durch: Buchungsname, Zimmerart, Frühstückszeit und WLAN."
+    },
+    "es": {
+     "t": "Check-in en el hotel",
+     "g": "Registrarte en un hotel y hacer las preguntas clave de tu estancia.",
+     "p": [
+      "En recepción: buonasera, ho una prenotazione a nome Smith. Pide una camera singola, doppia o matrimoniale.",
+      "Preguntas clave: la colazione è inclusa? a che ora è la colazione? c'è il wifi? qual è la password?",
+      "Antes de irte: a che ora devo lasciare la camera? Quizá oigas: il check-out è entro le undici."
+     ],
+     "q": "¿Qué quieres saber siempre al llegar a un hotel? Pregúntalo en italiano.",
+     "c": "Representa en voz alta un check-in: nombre de la reserva, tipo de habitación, desayuno y wifi."
+    },
+    "fr": {
+     "t": "L'arrivée à l'hôtel",
+     "g": "Faire le check-in à l'hôtel et poser les questions clés sur ton séjour.",
+     "p": [
+      "À la réception : buonasera, ho una prenotazione a nome Smith. Chambre : camera singola, doppia ou matrimoniale.",
+      "Questions clés : la colazione è inclusa ? a che ora è la colazione ? c'è il wifi ? qual è la password ?",
+      "Avant de partir : a che ora devo lasciare la camera ? On peut te dire : il check-out è entro le undici."
+     ],
+     "q": "Que veux-tu toujours savoir en arrivant à l'hôtel ? Demande-le en italien.",
+     "c": "Joue un check-in à voix haute : nom de la réservation, type de chambre, petit-déjeuner et wifi."
+    },
+    "it": {
+     "t": "Il check-in in albergo",
+     "g": "Fare il check-in in hotel e chiedere le cose importanti del soggiorno.",
+     "p": [
+      "Alla reception: buonasera, ho una prenotazione a nome Smith. Si chiede una camera singola, doppia o matrimoniale.",
+      "Domande chiave: la colazione è inclusa? a che ora è la colazione? c'è il wifi? qual è la password?",
+      "Prima di partire: a che ora devo lasciare la camera? Spesso il check-out è entro le undici."
+     ],
+     "q": "Che cosa vuoi sapere sempre quando arrivi in un albergo?",
+     "c": "Recita ad alta voce un check-in: nome della prenotazione, tipo di camera, colazione e wifi."
+    },
+    "pt": {
+     "t": "Check-in no hotel",
+     "g": "Fazer o check-in num hotel e perguntar o essencial da estadia.",
+     "p": [
+      "Na receção: buonasera, ho una prenotazione a nome Smith. Pede uma camera singola, doppia ou matrimoniale.",
+      "Perguntas-chave: la colazione è inclusa? a che ora è la colazione? c'è il wifi? qual è la password?",
+      "Antes de sair: a che ora devo lasciare la camera? Podes ouvir: il check-out è entro le undici."
+     ],
+     "q": "O que queres saber sempre quando chegas a um hotel? Pergunta em italiano.",
+     "c": "Encena em voz alta um check-in: nome da reserva, tipo de quarto, pequeno-almoço e wifi."
+    },
+    "pt_BR": {
+     "t": "Check-in no hotel",
+     "g": "Fazer o check-in num hotel e perguntar o essencial da estadia.",
+     "p": [
+      "Na recepção: buonasera, ho una prenotazione a nome Smith. Peça uma camera singola, doppia ou matrimoniale.",
+      "Perguntas-chave: la colazione è inclusa? a che ora è la colazione? c'è il wifi? qual è la password?",
+      "Antes de sair: a che ora devo lasciare la camera? Você pode ouvir: il check-out è entro le undici."
+     ],
+     "q": "O que você sempre quer saber ao chegar num hotel? Pergunte em italiano.",
+     "c": "Encene em voz alta um check-in: nome da reserva, tipo de quarto, café da manhã e wifi."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la prenotazione",
+      "ex": "Ho una prenotazione a nome Bianchi."
+     },
+     {
+      "w": "la camera doppia",
+      "ex": "Vorrei una camera doppia per due notti."
+     },
+     {
+      "w": "la colazione è inclusa?",
+      "ex": "Scusi, la colazione è inclusa?"
+     },
+     {
+      "w": "la chiave",
+      "ex": "Ecco la chiave, camera numero dodici."
+     },
+     {
+      "w": "l'ascensore",
+      "ex": "L'ascensore è in fondo a destra."
+     },
+     {
+      "w": "lasciare la camera",
+      "ex": "Dobbiamo lasciare la camera entro le undici."
+     }
+    ],
+    "gram": "Ho una prenotazione a nome + cognome; c'è...? per chiedere servizi; dovere + infinito per gli obblighi (devo lasciare la camera)."
+   }
+  },
+  {
+   "d": 76,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Feelings and emotions",
+     "g": "Say how you feel and explain why.",
+     "p": [
+      "Use essere or sentirsi + adjective: sono felice, sono stanca, mi sento nervoso. The adjective agrees.",
+      "More feelings: contento, triste, arrabbiato, emozionato, preoccupato, tranquillo, annoiato.",
+      "Explain with perché: sono contento perché domani parto. Ask others: come stai? come ti senti oggi?"
+     ],
+     "q": "Come ti senti oggi, e perché?",
+     "c": "Write three sentences about feelings this week, each with perché and a reason."
+    },
+    "de": {
+     "t": "Gefühle und Emotionen",
+     "g": "Du sagst, wie du dich fühlst, und erklärst, warum.",
+     "p": [
+      "Mit essere oder sentirsi + Adjektiv: sono felice, sono stanca, mi sento nervoso. Das Adjektiv passt sich an.",
+      "Weitere Gefühle: contento, triste, arrabbiato, emozionato, preoccupato, tranquillo, annoiato.",
+      "Begründen mit perché: sono contento perché domani parto. Fragen: come stai? come ti senti oggi?"
+     ],
+     "q": "Come ti senti oggi, und warum?",
+     "c": "Schreib drei Sätze über deine Gefühle diese Woche, jeweils mit perché und einem Grund."
+    },
+    "es": {
+     "t": "Sentimientos y emociones",
+     "g": "Decir cómo te sientes y explicar por qué.",
+     "p": [
+      "Usa essere o sentirsi + adjetivo: sono felice, sono stanca, mi sento nervoso. El adjetivo concuerda.",
+      "Más sentimientos: contento, triste, arrabbiato, emozionato, preoccupato, tranquillo, annoiato.",
+      "Explica con perché: sono contento perché domani parto. Pregunta: come stai? come ti senti oggi?"
+     ],
+     "q": "Come ti senti oggi, ¿y por qué?",
+     "c": "Escribe tres frases sobre tus sentimientos esta semana, cada una con perché y un motivo."
+    },
+    "fr": {
+     "t": "Sentiments et émotions",
+     "g": "Dire comment tu te sens et expliquer pourquoi.",
+     "p": [
+      "Avec essere ou sentirsi + adjectif : sono felice, sono stanca, mi sento nervoso. L'adjectif s'accorde.",
+      "D'autres émotions : contento, triste, arrabbiato, emozionato, preoccupato, tranquillo, annoiato.",
+      "Explique avec perché : sono contento perché domani parto. Demande : come stai ? come ti senti oggi ?"
+     ],
+     "q": "Come ti senti oggi, et pourquoi ?",
+     "c": "Écris trois phrases sur tes émotions de la semaine, chacune avec perché et une raison."
+    },
+    "it": {
+     "t": "Sentimenti ed emozioni",
+     "g": "Dire come ti senti e spiegare perché.",
+     "p": [
+      "Si usa essere o sentirsi + aggettivo: sono felice, sono stanca, mi sento nervoso. L'aggettivo si accorda.",
+      "Altri stati d'animo: contento, triste, arrabbiato, emozionato, preoccupato, tranquillo, annoiato.",
+      "Si spiega con perché: sono contento perché domani parto. Si chiede: come stai? come ti senti oggi?"
+     ],
+     "q": "Come ti senti oggi, e perché?",
+     "c": "Scrivi tre frasi sulle tue emozioni di questa settimana, ognuna con perché e un motivo."
+    },
+    "pt": {
+     "t": "Sentimentos e emoções",
+     "g": "Dizer como te sentes e explicar porquê.",
+     "p": [
+      "Usa essere ou sentirsi + adjetivo: sono felice, sono stanca, mi sento nervoso. O adjetivo concorda.",
+      "Mais sentimentos: contento, triste, arrabbiato, emozionato, preoccupato, tranquillo, annoiato.",
+      "Explica com perché: sono contento perché domani parto. Pergunta: come stai? come ti senti oggi?"
+     ],
+     "q": "Come ti senti oggi, e porquê?",
+     "c": "Escreve três frases sobre os teus sentimentos desta semana, cada uma com perché e um motivo."
+    },
+    "pt_BR": {
+     "t": "Sentimentos e emoções",
+     "g": "Dizer como você se sente e explicar por quê.",
+     "p": [
+      "Use essere ou sentirsi + adjetivo: sono felice, sono stanca, mi sento nervoso. O adjetivo concorda.",
+      "Mais sentimentos: contento, triste, arrabbiato, emozionato, preoccupato, tranquillo, annoiato.",
+      "Explique com perché: sono contento perché domani parto. Pergunte: come stai? come ti senti oggi?"
+     ],
+     "q": "Come ti senti oggi, e por quê?",
+     "c": "Escreva três frases sobre seus sentimentos nesta semana, cada uma com perché e um motivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "felice",
+      "ex": "Sono felice di vederti!"
+     },
+     {
+      "w": "stanco / stanca",
+      "ex": "Stasera sono stanca, resto a casa."
+     },
+     {
+      "w": "emozionato",
+      "ex": "Sono emozionato per il viaggio."
+     },
+     {
+      "w": "preoccupato",
+      "ex": "Perché sei preoccupato?"
+     },
+     {
+      "w": "arrabbiato",
+      "ex": "Non sono arrabbiato, solo un po' triste."
+     },
+     {
+      "w": "mi sento",
+      "ex": "Oggi mi sento tranquillo."
+     }
+    ],
+    "gram": "Essere / sentirsi + aggettivo concordato (sono contenta, si sentono stanchi); perché + motivo per spiegare."
+   }
+  },
+  {
+   "d": 77,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Comparisons: più and meno",
+     "g": "Compare people and things with più, meno and tanto quanto.",
+     "p": [
+      "More or less than: più + adjective + di, meno + adjective + di. Roma è più grande di Firenze.",
+      "Use che instead of di when comparing two adjectives, verbs or nouns: è più bello che utile, meglio tardi che mai.",
+      "Equal: tanto quanto or così come. Marco è alto quanto Luca. The first word is often dropped."
+     ],
+     "q": "Compare your town with a famous Italian city: is it più grande or meno grande?",
+     "c": "Write four comparisons about your family or friends with più, meno and quanto."
+    },
+    "de": {
+     "t": "Vergleiche: più und meno",
+     "g": "Du vergleichst Menschen und Dinge mit più, meno und tanto quanto.",
+     "p": [
+      "Mehr oder weniger als: più + Adjektiv + di, meno + Adjektiv + di. Roma è più grande di Firenze.",
+      "Che statt di beim Vergleich von zwei Adjektiven, Verben oder Nomen: è più bello che utile, meglio tardi che mai.",
+      "Gleichheit: tanto quanto oder così come. Marco è alto quanto Luca. Das erste Wort fällt oft weg."
+     ],
+     "q": "Vergleich deine Stadt mit einer berühmten italienischen: più grande oder meno grande?",
+     "c": "Schreib vier Vergleiche über Familie oder Freunde mit più, meno und quanto."
+    },
+    "es": {
+     "t": "Comparaciones: più y meno",
+     "g": "Comparar personas y cosas con più, meno y tanto quanto.",
+     "p": [
+      "Más o menos que: più + adjetivo + di, meno + adjetivo + di. Roma è più grande di Firenze.",
+      "Se usa che en vez de di al comparar dos adjetivos, verbos o nombres: è più bello che utile, meglio tardi che mai.",
+      "Igualdad: tanto quanto o così come. Marco è alto quanto Luca. La primera palabra suele omitirse."
+     ],
+     "q": "Compara tu ciudad con una ciudad italiana famosa: ¿es più grande o meno grande?",
+     "c": "Escribe cuatro comparaciones sobre tu familia o amigos con più, meno y quanto."
+    },
+    "fr": {
+     "t": "Comparaisons : più et meno",
+     "g": "Comparer des personnes et des choses avec più, meno et tanto quanto.",
+     "p": [
+      "Plus ou moins que : più + adjectif + di, meno + adjectif + di. Roma è più grande di Firenze.",
+      "On met che au lieu de di entre deux adjectifs, verbes ou noms : è più bello che utile, meglio tardi che mai.",
+      "Égalité : tanto quanto ou così come. Marco è alto quanto Luca. Le premier mot tombe souvent."
+     ],
+     "q": "Compare ta ville à une ville italienne célèbre : più grande ou meno grande ?",
+     "c": "Écris quatre comparaisons sur ta famille ou tes amis avec più, meno et quanto."
+    },
+    "it": {
+     "t": "Comparativi: più e meno",
+     "g": "Confrontare persone e cose con più, meno e tanto quanto.",
+     "p": [
+      "Maggioranza e minoranza: più + aggettivo + di, meno + aggettivo + di. Roma è più grande di Firenze.",
+      "Si usa che invece di di tra due aggettivi, verbi o nomi: è più bello che utile, meglio tardi che mai.",
+      "Uguaglianza: tanto quanto o così come. Marco è alto quanto Luca. La prima parola spesso cade."
+     ],
+     "q": "Confronta la tua città con una città italiana famosa: è più grande o meno grande?",
+     "c": "Scrivi quattro paragoni sulla tua famiglia o sui tuoi amici con più, meno e quanto."
+    },
+    "pt": {
+     "t": "Comparações: più e meno",
+     "g": "Comparar pessoas e coisas com più, meno e tanto quanto.",
+     "p": [
+      "Mais ou menos do que: più + adjetivo + di, meno + adjetivo + di. Roma è più grande di Firenze.",
+      "Usa-se che em vez de di entre dois adjetivos, verbos ou nomes: è più bello che utile, meglio tardi che mai.",
+      "Igualdade: tanto quanto ou così come. Marco è alto quanto Luca. A primeira palavra cai muitas vezes."
+     ],
+     "q": "Compara a tua cidade com uma cidade italiana famosa: è più grande ou meno grande?",
+     "c": "Escreve quatro comparações sobre a tua família ou amigos com più, meno e quanto."
+    },
+    "pt_BR": {
+     "t": "Comparações: più e meno",
+     "g": "Comparar pessoas e coisas com più, meno e tanto quanto.",
+     "p": [
+      "Mais ou menos do que: più + adjetivo + di, meno + adjetivo + di. Roma è più grande di Firenze.",
+      "Usa-se che em vez de di entre dois adjetivos, verbos ou substantivos: è più bello che utile, meglio tardi che mai.",
+      "Igualdade: tanto quanto ou così come. Marco è alto quanto Luca. A primeira palavra muitas vezes cai."
+     ],
+     "q": "Compare sua cidade com uma cidade italiana famosa: è più grande ou meno grande?",
+     "c": "Escreva quatro comparações sobre sua família ou amigos com più, meno e quanto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "più... di",
+      "ex": "Il treno è più veloce dell'autobus."
+     },
+     {
+      "w": "meno... di",
+      "ex": "Questo ristorante è meno caro di quello."
+     },
+     {
+      "w": "più... che",
+      "ex": "Leggere è più rilassante che guardare la TV."
+     },
+     {
+      "w": "(tanto)... quanto",
+      "ex": "Mia sorella è alta quanto me."
+     },
+     {
+      "w": "così... come",
+      "ex": "Napoli non è così fredda come Milano."
+     },
+     {
+      "w": "rispetto a",
+      "ex": "Rispetto a ieri, oggi fa più caldo."
+     }
+    ],
+    "gram": "Più / meno + aggettivo + di (+ articolo: del, della); che tra due aggettivi o verbi; (tanto) quanto per l'uguaglianza."
+   }
+  },
+  {
+   "d": 78,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Superlatives",
+     "g": "Say something is the best, the most beautiful or simply bellissimo.",
+     "p": [
+      "Relative superlative: il / la più + adjective (+ di): è la città più bella d'Italia, il più alto della classe.",
+      "Absolute superlative: add -issimo: bello, bellissimo; buono, buonissimo. It agrees: una pizza buonissima.",
+      "Irregular forms: buono, migliore, il migliore; cattivo, peggiore, il peggiore. È il mio migliore amico."
+     ],
+     "q": "What is the most beautiful place you know? Describe it with a superlative.",
+     "c": "Write five sentences about your favourites with il più, -issimo, migliore and peggiore."
+    },
+    "de": {
+     "t": "Superlative",
+     "g": "Du sagst, dass etwas das Beste, das Schönste oder einfach bellissimo ist.",
+     "p": [
+      "Relativer Superlativ: il / la più + Adjektiv (+ di): è la città più bella d'Italia, il più alto della classe.",
+      "Absoluter Superlativ mit -issimo: bello, bellissimo; buono, buonissimo. Er passt sich an: una pizza buonissima.",
+      "Unregelmäßig: buono, migliore, il migliore; cattivo, peggiore, il peggiore. È il mio migliore amico."
+     ],
+     "q": "Was ist der schönste Ort, den du kennst? Beschreib ihn mit einem Superlativ.",
+     "c": "Schreib fünf Sätze über deine Favoriten mit il più, -issimo, migliore und peggiore."
+    },
+    "es": {
+     "t": "Los superlativos",
+     "g": "Decir que algo es lo mejor, lo más bonito o simplemente bellissimo.",
+     "p": [
+      "Superlativo relativo: il / la più + adjetivo (+ di): è la città più bella d'Italia, il più alto della classe.",
+      "Superlativo absoluto con -issimo: bello, bellissimo; buono, buonissimo. Concuerda: una pizza buonissima.",
+      "Formas irregulares: buono, migliore, il migliore; cattivo, peggiore, il peggiore. È il mio migliore amico."
+     ],
+     "q": "¿Cuál es el lugar más bonito que conoces? Descríbelo con un superlativo.",
+     "c": "Escribe cinco frases sobre tus favoritos con il più, -issimo, migliore y peggiore."
+    },
+    "fr": {
+     "t": "Les superlatifs",
+     "g": "Dire que quelque chose est le meilleur, le plus beau ou tout simplement bellissimo.",
+     "p": [
+      "Superlatif relatif : il / la più + adjectif (+ di) : è la città più bella d'Italia, il più alto della classe.",
+      "Superlatif absolu avec -issimo : bello, bellissimo ; buono, buonissimo. Il s'accorde : una pizza buonissima.",
+      "Formes irrégulières : buono, migliore, il migliore ; cattivo, peggiore, il peggiore. È il mio migliore amico."
+     ],
+     "q": "Quel est le plus bel endroit que tu connais ? Décris-le avec un superlatif.",
+     "c": "Écris cinq phrases sur tes préférés avec il più, -issimo, migliore et peggiore."
+    },
+    "it": {
+     "t": "I superlativi",
+     "g": "Dire che qualcosa è il migliore, il più bello o semplicemente bellissimo.",
+     "p": [
+      "Superlativo relativo: il / la più + aggettivo (+ di): è la città più bella d'Italia, il più alto della classe.",
+      "Superlativo assoluto con -issimo: bello, bellissimo; buono, buonissimo. Si accorda: una pizza buonissima.",
+      "Forme irregolari: buono, migliore, il migliore; cattivo, peggiore, il peggiore. È il mio migliore amico."
+     ],
+     "q": "Qual è il posto più bello che conosci? Descrivilo con un superlativo.",
+     "c": "Scrivi cinque frasi sulle tue cose preferite con il più, -issimo, migliore e peggiore."
+    },
+    "pt": {
+     "t": "Os superlativos",
+     "g": "Dizer que algo é o melhor, o mais bonito ou simplesmente bellissimo.",
+     "p": [
+      "Superlativo relativo: il / la più + adjetivo (+ di): è la città più bella d'Italia, il più alto della classe.",
+      "Superlativo absoluto com -issimo: bello, bellissimo; buono, buonissimo. Concorda: una pizza buonissima.",
+      "Formas irregulares: buono, migliore, il migliore; cattivo, peggiore, il peggiore. È il mio migliore amico."
+     ],
+     "q": "Qual é o sítio mais bonito que conheces? Descreve-o com um superlativo.",
+     "c": "Escreve cinco frases sobre os teus favoritos com il più, -issimo, migliore e peggiore."
+    },
+    "pt_BR": {
+     "t": "Os superlativos",
+     "g": "Dizer que algo é o melhor, o mais bonito ou simplesmente bellissimo.",
+     "p": [
+      "Superlativo relativo: il / la più + adjetivo (+ di): è la città più bella d'Italia, il più alto della classe.",
+      "Superlativo absoluto com -issimo: bello, bellissimo; buono, buonissimo. Concorda: una pizza buonissima.",
+      "Formas irregulares: buono, migliore, il migliore; cattivo, peggiore, il peggiore. È il mio migliore amico."
+     ],
+     "q": "Qual é o lugar mais bonito que você conhece? Descreva com um superlativo.",
+     "c": "Escreva cinco frases sobre seus favoritos com il più, -issimo, migliore e peggiore."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il più bello",
+      "ex": "È il panorama più bello del mondo!"
+     },
+     {
+      "w": "bellissimo",
+      "ex": "Che bellissima giornata!"
+     },
+     {
+      "w": "buonissimo",
+      "ex": "Questo gelato è buonissimo."
+     },
+     {
+      "w": "migliore",
+      "ex": "Questa è la migliore pizzeria della città."
+     },
+     {
+      "w": "peggiore",
+      "ex": "Oggi è stato il giorno peggiore della settimana."
+     },
+     {
+      "w": "il mio migliore amico",
+      "ex": "Luca è il mio migliore amico."
+     }
+    ],
+    "gram": "Superlativo relativo: il / la più + aggettivo + di; assoluto: -issimo (bellissima); buono → migliore, cattivo → peggiore."
+   }
+  },
+  {
+   "d": 79,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The market: al mercato",
+     "g": "Buy fruit and vegetables by weight at an Italian market.",
+     "p": [
+      "Weights: un chilo (1 kg), mezzo chilo, un etto (100 g), due etti. Ask: me ne dà un chilo?",
+      "Typical lines: vorrei mezzo chilo di pomodori. The seller asks: altro? You answer: no, basta così, grazie.",
+      "Use ne from day 74: le fragole sono buone? Sì, ne prendo due etti. Quant'è in tutto?"
+     ],
+     "q": "What would you buy at an Italian market this morning, and how much of each?",
+     "c": "Write a shopping list with five items and weights: un chilo di..., due etti di..."
+    },
+    "de": {
+     "t": "Der Markt: al mercato",
+     "g": "Du kaufst auf einem italienischen Markt Obst und Gemüse nach Gewicht.",
+     "p": [
+      "Gewichte: un chilo (1 kg), mezzo chilo, un etto (100 g), due etti. Frage: me ne dà un chilo?",
+      "Typisch: vorrei mezzo chilo di pomodori. Der Verkäufer fragt: altro? Du sagst: no, basta così, grazie.",
+      "Ne aus Tag 74: le fragole sono buone? Sì, ne prendo due etti. Quant'è in tutto?"
+     ],
+     "q": "Was würdest du heute Morgen auf einem italienischen Markt kaufen, und wie viel davon?",
+     "c": "Schreib eine Einkaufsliste mit fünf Dingen und Gewichten: un chilo di..., due etti di..."
+    },
+    "es": {
+     "t": "El mercado: al mercato",
+     "g": "Comprar fruta y verdura al peso en un mercado italiano.",
+     "p": [
+      "Pesos: un chilo (1 kg), mezzo chilo, un etto (100 g), due etti. Pregunta: me ne dà un chilo?",
+      "Frases típicas: vorrei mezzo chilo di pomodori. El vendedor pregunta: altro? Respondes: no, basta così, grazie.",
+      "Usa ne del día 74: le fragole sono buone? Sì, ne prendo due etti. Quant'è in tutto?"
+     ],
+     "q": "¿Qué comprarías esta mañana en un mercado italiano y cuánto de cada cosa?",
+     "c": "Escribe una lista de la compra con cinco cosas y pesos: un chilo di..., due etti di..."
+    },
+    "fr": {
+     "t": "Le marché : al mercato",
+     "g": "Acheter fruits et légumes au poids sur un marché italien.",
+     "p": [
+      "Poids : un chilo (1 kg), mezzo chilo, un etto (100 g), due etti. Demande : me ne dà un chilo ?",
+      "Phrases typiques : vorrei mezzo chilo di pomodori. Le vendeur : altro ? Toi : no, basta così, grazie.",
+      "Utilise ne du jour 74 : le fragole sono buone ? Sì, ne prendo due etti. Quant'è in tutto ?"
+     ],
+     "q": "Qu'achèterais-tu ce matin sur un marché italien, et en quelle quantité ?",
+     "c": "Écris une liste de courses de cinq produits avec les poids : un chilo di..., due etti di..."
+    },
+    "it": {
+     "t": "Al mercato",
+     "g": "Comprare frutta e verdura a peso in un mercato italiano.",
+     "p": [
+      "I pesi: un chilo, mezzo chilo, un etto (cento grammi), due etti. Si chiede: me ne dà un chilo?",
+      "Frasi tipiche: vorrei mezzo chilo di pomodori. Il venditore chiede: altro? Rispondi: no, basta così, grazie.",
+      "Usa il ne del giorno 74: le fragole sono buone? Sì, ne prendo due etti. Quant'è in tutto?"
+     ],
+     "q": "Cosa compreresti stamattina al mercato, e quanto di ogni cosa?",
+     "c": "Scrivi una lista della spesa con cinque prodotti e i pesi: un chilo di..., due etti di..."
+    },
+    "pt": {
+     "t": "O mercado: al mercato",
+     "g": "Comprar fruta e legumes ao peso num mercado italiano.",
+     "p": [
+      "Pesos: un chilo (1 kg), mezzo chilo, un etto (100 g), due etti. Pergunta: me ne dà un chilo?",
+      "Frases típicas: vorrei mezzo chilo di pomodori. O vendedor pergunta: altro? Respondes: no, basta così, grazie.",
+      "Usa o ne do dia 74: le fragole sono buone? Sì, ne prendo due etti. Quant'è in tutto?"
+     ],
+     "q": "O que comprarias esta manhã num mercado italiano, e quanto de cada coisa?",
+     "c": "Escreve uma lista de compras com cinco produtos e pesos: un chilo di..., due etti di..."
+    },
+    "pt_BR": {
+     "t": "A feira: al mercato",
+     "g": "Comprar frutas e verduras por peso numa feira italiana.",
+     "p": [
+      "Pesos: un chilo (1 kg), mezzo chilo, un etto (100 g), due etti. Pergunte: me ne dà un chilo?",
+      "Frases típicas: vorrei mezzo chilo di pomodori. O vendedor pergunta: altro? Você responde: no, basta così, grazie.",
+      "Use o ne do dia 74: le fragole sono buone? Sì, ne prendo due etti. Quant'è in tutto?"
+     ],
+     "q": "O que você compraria hoje de manhã numa feira italiana, e quanto de cada coisa?",
+     "c": "Escreva uma lista de compras com cinco produtos e pesos: un chilo di..., due etti di..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un chilo di",
+      "ex": "Vorrei un chilo di arance."
+     },
+     {
+      "w": "mezzo chilo",
+      "ex": "Mi dà mezzo chilo di zucchine?"
+     },
+     {
+      "w": "un etto",
+      "ex": "Un etto di prosciutto, per favore."
+     },
+     {
+      "w": "altro?",
+      "ex": "Altro? No, basta così, grazie."
+     },
+     {
+      "w": "quant'è?",
+      "ex": "Quant'è in tutto?"
+     },
+     {
+      "w": "maturo",
+      "ex": "Queste pesche sono mature?"
+     }
+    ],
+    "gram": "Quantità + di + nome senza articolo: un chilo di mele, due etti di olive; ne + quantità: ne prendo mezzo chilo."
+   }
+  },
+  {
+   "d": 80,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Italian cooking verbs",
+     "g": "Follow a simple pasta al pomodoro recipe in Italian.",
+     "p": [
+      "Key verbs: tagliare (cut), bollire (boil), cuocere (cook), mescolare (stir), aggiungere (add), scolare (drain).",
+      "Recipes often use the present with si: si taglia la cipolla, si aggiunge il sale. Or noi: mettiamo l'acqua.",
+      "The classic steps: bollire l'acqua, salare, cuocere la pasta al dente, scolarla e condirla con il sugo."
+     ],
+     "q": "What is a dish you know how to cook? Name two steps in Italian.",
+     "c": "Write the steps of pasta al pomodoro in five short Italian sentences."
+    },
+    "de": {
+     "t": "Italienische Kochverben",
+     "g": "Du folgst einem einfachen Rezept für pasta al pomodoro auf Italienisch.",
+     "p": [
+      "Wichtige Verben: tagliare (schneiden), bollire (kochen), cuocere (garen), mescolare (rühren), aggiungere (hinzufügen), scolare (abgießen).",
+      "Rezepte nutzen oft si + Präsens: si taglia la cipolla, si aggiunge il sale. Oder noi: mettiamo l'acqua.",
+      "Die Schritte: bollire l'acqua, salare, cuocere la pasta al dente, scolarla e condirla con il sugo."
+     ],
+     "q": "Welches Gericht kannst du kochen? Nenn zwei Schritte auf Italienisch.",
+     "c": "Schreib die Schritte für pasta al pomodoro in fünf kurzen italienischen Sätzen."
+    },
+    "es": {
+     "t": "Verbos de cocina italianos",
+     "g": "Seguir en italiano una receta sencilla de pasta al pomodoro.",
+     "p": [
+      "Verbos clave: tagliare (cortar), bollire (hervir), cuocere (cocer), mescolare (remover), aggiungere (añadir), scolare (escurrir).",
+      "Las recetas usan a menudo si + presente: si taglia la cipolla, si aggiunge il sale. O noi: mettiamo l'acqua.",
+      "Los pasos clásicos: bollire l'acqua, salare, cuocere la pasta al dente, scolarla e condirla con il sugo."
+     ],
+     "q": "¿Qué plato sabes cocinar? Di dos pasos en italiano.",
+     "c": "Escribe los pasos de la pasta al pomodoro en cinco frases cortas en italiano."
+    },
+    "fr": {
+     "t": "Les verbes de cuisine",
+     "g": "Suivre en italien une recette simple de pasta al pomodoro.",
+     "p": [
+      "Verbes clés : tagliare (couper), bollire (bouillir), cuocere (cuire), mescolare (mélanger), aggiungere (ajouter), scolare (égoutter).",
+      "Les recettes utilisent souvent si + présent : si taglia la cipolla, si aggiunge il sale. Ou noi : mettiamo l'acqua.",
+      "Les étapes : bollire l'acqua, salare, cuocere la pasta al dente, scolarla e condirla con il sugo."
+     ],
+     "q": "Quel plat sais-tu cuisiner ? Donne deux étapes en italien.",
+     "c": "Écris les étapes de la pasta al pomodoro en cinq phrases courtes en italien."
+    },
+    "it": {
+     "t": "I verbi della cucina",
+     "g": "Seguire una ricetta semplice: la pasta al pomodoro.",
+     "p": [
+      "Verbi chiave: tagliare, bollire, cuocere, mescolare, aggiungere, scolare.",
+      "Nelle ricette si usa spesso il si + presente: si taglia la cipolla, si aggiunge il sale. Oppure noi: mettiamo l'acqua.",
+      "I passaggi classici: bollire l'acqua, salare, cuocere la pasta al dente, scolarla e condirla con il sugo."
+     ],
+     "q": "Qual è un piatto che sai cucinare? Dimmi due passaggi.",
+     "c": "Scrivi i passaggi della pasta al pomodoro in cinque frasi brevi."
+    },
+    "pt": {
+     "t": "Verbos de cozinha italianos",
+     "g": "Seguir em italiano uma receita simples de pasta al pomodoro.",
+     "p": [
+      "Verbos-chave: tagliare (cortar), bollire (ferver), cuocere (cozinhar), mescolare (mexer), aggiungere (juntar), scolare (escorrer).",
+      "As receitas usam muitas vezes si + presente: si taglia la cipolla, si aggiunge il sale. Ou noi: mettiamo l'acqua.",
+      "Os passos clássicos: bollire l'acqua, salare, cuocere la pasta al dente, scolarla e condirla con il sugo."
+     ],
+     "q": "Que prato sabes cozinhar? Diz dois passos em italiano.",
+     "c": "Escreve os passos da pasta al pomodoro em cinco frases curtas em italiano."
+    },
+    "pt_BR": {
+     "t": "Verbos de cozinha italianos",
+     "g": "Seguir em italiano uma receita simples de pasta al pomodoro.",
+     "p": [
+      "Verbos-chave: tagliare (cortar), bollire (ferver), cuocere (cozinhar), mescolare (mexer), aggiungere (acrescentar), scolare (escorrer).",
+      "As receitas muitas vezes usam si + presente: si taglia la cipolla, si aggiunge il sale. Ou noi: mettiamo l'acqua.",
+      "Os passos clássicos: bollire l'acqua, salare, cuocere la pasta al dente, scolarla e condirla con il sugo."
+     ],
+     "q": "Que prato você sabe cozinhar? Diga dois passos em italiano.",
+     "c": "Escreva os passos da pasta al pomodoro em cinco frases curtas em italiano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tagliare",
+      "ex": "Si taglia la cipolla a pezzetti."
+     },
+     {
+      "w": "bollire",
+      "ex": "Quando l'acqua bolle, si aggiunge il sale."
+     },
+     {
+      "w": "cuocere",
+      "ex": "Cuociamo la pasta per dieci minuti."
+     },
+     {
+      "w": "mescolare",
+      "ex": "Mescolo il sugo con un cucchiaio di legno."
+     },
+     {
+      "w": "scolare",
+      "ex": "Scoliamo la pasta al dente."
+     },
+     {
+      "w": "aggiungere",
+      "ex": "Alla fine aggiungi il basilico."
+     }
+    ],
+    "gram": "Nelle ricette: si impersonale + presente (si taglia, si aggiungono i pomodori) o la prima plurale (mettiamo, cuociamo)."
+   }
+  }
+ ]
+}

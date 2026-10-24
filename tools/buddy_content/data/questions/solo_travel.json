@@ -1,0 +1,1305 @@
+{
+"topic": "solo_travel",
+"questions": [
+{
+"id": "solo_travel-001",
+"lv": "any",
+"i18n": {
+"en": "Have you ever travelled on your own? Where did you go?",
+"de": "Bist du schon mal allein gereist? Wohin ging es?",
+"es": "¿Has viajado alguna vez sin compañía? ¿Adónde fuiste?",
+"fr": "As-tu déjà voyagé en solo ? Où es-tu allé ?",
+"it": "Hai mai viaggiato da solo? Dove sei andato?",
+"pt": "Já viajaste sozinho? Para onde foste?",
+"pt_BR": "Você já viajou sozinho? Para onde foi?"
+}
+},
+{
+"id": "solo_travel-002",
+"lv": "any",
+"i18n": {
+"en": "What attracts you most about travelling alone?",
+"de": "Was reizt dich am meisten am Alleinreisen?",
+"es": "¿Qué es lo que más te atrae de viajar en solitario?",
+"fr": "Qu'est-ce qui t'attire le plus dans le voyage en solo ?",
+"it": "Cosa ti attira di più del viaggiare da solo?",
+"pt": "O que mais te atrai em viajar sozinho?",
+"pt_BR": "O que mais te atrai em viajar sozinho?"
+}
+},
+{
+"id": "solo_travel-003",
+"lv": "any",
+"i18n": {
+"en": "Which place would you love to visit on your own one day?",
+"de": "Welchen Ort würdest du gern eines Tages allein besuchen?",
+"es": "¿Qué lugar te encantaría visitar por tu cuenta algún día?",
+"fr": "Quel endroit aimerais-tu visiter en solo un jour ?",
+"it": "Quale posto ti piacerebbe visitare da solo un giorno?",
+"pt": "Que sítio adorarias visitar sozinho um dia?",
+"pt_BR": "Qual lugar você adoraria visitar sozinho um dia?"
+}
+},
+{
+"id": "solo_travel-004",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy spending time alone in everyday life?",
+"de": "Verbringst du im Alltag gern Zeit allein?",
+"es": "¿Disfrutas pasando tiempo a solas en tu día a día?",
+"fr": "Aimes-tu passer du temps seul au quotidien ?",
+"it": "Ti piace passare del tempo da solo nella vita di tutti i giorni?",
+"pt": "Gostas de passar tempo sozinho no dia a dia?",
+"pt_BR": "Você gosta de passar tempo sozinho no dia a dia?"
+}
+},
+{
+"id": "solo_travel-005",
+"lv": "any",
+"i18n": {
+"en": "What worries you most about the idea of travelling solo?",
+"de": "Was beunruhigt dich am meisten bei der Vorstellung, allein zu reisen?",
+"es": "¿Qué es lo que más te preocupa de la idea de viajar en solitario?",
+"fr": "Qu'est-ce qui t'inquiète le plus à l'idée de voyager en solo ?",
+"it": "Cosa ti preoccupa di più all'idea di viaggiare da solo?",
+"pt": "O que mais te preocupa na ideia de viajar sozinho?",
+"pt_BR": "O que mais te preocupa na ideia de viajar sozinho?"
+}
+},
+{
+"id": "solo_travel-006",
+"lv": "any",
+"i18n": {
+"en": "Are you more of a planner or do you like to improvise when you travel?",
+"de": "Planst du Reisen lieber genau oder improvisierst du gern?",
+"es": "¿Eres de planificarlo todo o prefieres improvisar cuando viajas?",
+"fr": "Es-tu plutôt du genre à tout planifier ou à improviser en voyage ?",
+"it": "Sei più tipo da pianificare tutto o preferisci improvvisare in viaggio?",
+"pt": "És mais de planear tudo ou preferes improvisar quando viajas?",
+"pt_BR": "Você é mais de planejar tudo ou prefere improvisar quando viaja?"
+}
+},
+{
+"id": "solo_travel-007",
+"lv": "any",
+"i18n": {
+"en": "What kind of traveller are you: explorer, relaxer or social butterfly?",
+"de": "Was für ein Reisetyp bist du: Entdecker, Genießer oder Kontaktfreudiger?",
+"es": "¿Qué tipo de viajero eres: explorador, relajado o muy sociable?",
+"fr": "Quel voyageur es-tu : explorateur, contemplatif ou grand sociable ?",
+"it": "Che tipo di viaggiatore sei: esploratore, rilassato o molto socievole?",
+"pt": "Que tipo de viajante és: explorador, descontraído ou muito sociável?",
+"pt_BR": "Que tipo de viajante você é: explorador, tranquilo ou super sociável?"
+}
+},
+{
+"id": "solo_travel-008",
+"lv": "any",
+"i18n": {
+"en": "What is the best thing that ever happened to you while travelling?",
+"de": "Was ist das Schönste, das dir je auf Reisen passiert ist?",
+"es": "¿Qué es lo mejor que te ha pasado viajando?",
+"fr": "Quelle est la plus belle chose qui te soit arrivée en voyage ?",
+"it": "Qual è la cosa più bella che ti è successa in viaggio?",
+"pt": "Qual foi a melhor coisa que te aconteceu numa viagem?",
+"pt_BR": "Qual foi a melhor coisa que já te aconteceu numa viagem?"
+}
+},
+{
+"id": "solo_travel-009",
+"lv": "any",
+"i18n": {
+"en": "Do you like to eat alone in a restaurant? Why or why not?",
+"de": "Isst du gern allein im Restaurant? Warum oder warum nicht?",
+"es": "¿Te gusta comer a solas en un restaurante? ¿Por qué?",
+"fr": "Aimes-tu manger seul au restaurant ? Pourquoi ?",
+"it": "Ti piace mangiare da solo al ristorante? Perché?",
+"pt": "Gostas de comer sozinho num restaurante? Porquê?",
+"pt_BR": "Você gosta de comer sozinho num restaurante? Por quê?"
+}
+},
+{
+"id": "solo_travel-010",
+"lv": "any",
+"i18n": {
+"en": "How do you usually make new friends when you are away from home?",
+"de": "Wie findest du normalerweise neue Freunde, wenn du unterwegs bist?",
+"es": "¿Cómo sueles hacer amigos cuando estás lejos de casa?",
+"fr": "Comment te fais-tu de nouveaux amis quand tu es loin de chez toi ?",
+"it": "Come fai di solito nuove amicizie quando sei lontano da casa?",
+"pt": "Como costumas fazer amigos quando estás longe de casa?",
+"pt_BR": "Como você costuma fazer amigos quando está longe de casa?"
+}
+},
+{
+"id": "solo_travel-011",
+"lv": "any",
+"i18n": {
+"en": "Which would you choose for a solo trip: a big city, nature or the coast?",
+"de": "Was würdest du für eine Solo-Reise wählen: Großstadt, Natur oder Küste?",
+"es": "Para un viaje en solitario, ¿qué elegirías: gran ciudad, naturaleza o costa?",
+"fr": "Pour un voyage en solo, tu choisirais une grande ville, la nature ou la côte ?",
+"it": "Per un viaggio da solo, sceglieresti una grande città, la natura o il mare?",
+"pt": "Para uma viagem a solo, escolherias uma grande cidade, a natureza ou o litoral?",
+"pt_BR": "Numa viagem solo, você escolheria cidade grande, natureza ou litoral?"
+}
+},
+{
+"id": "solo_travel-012",
+"lv": "any",
+"i18n": {
+"en": "What would you do on your first day alone in a new city?",
+"de": "Was würdest du an deinem ersten Tag allein in einer neuen Stadt machen?",
+"es": "¿Qué harías en tu primer día a solas en una ciudad nueva?",
+"fr": "Que ferais-tu le premier jour seul dans une nouvelle ville ?",
+"it": "Cosa faresti il primo giorno da solo in una città nuova?",
+"pt": "O que farias no teu primeiro dia sozinho numa cidade nova?",
+"pt_BR": "O que você faria no seu primeiro dia sozinho numa cidade nova?"
+}
+},
+{
+"id": "solo_travel-013",
+"lv": "any",
+"i18n": {
+"en": "Who inspires you to travel more?",
+"de": "Wer inspiriert dich, mehr zu reisen?",
+"es": "¿Quién te inspira a viajar más?",
+"fr": "Qui t'inspire à voyager davantage ?",
+"it": "Chi ti ispira a viaggiare di più?",
+"pt": "Quem te inspira a viajar mais?",
+"pt_BR": "Quem te inspira a viajar mais?"
+}
+},
+{
+"id": "solo_travel-014",
+"lv": "any",
+"i18n": {
+"en": "How do you like to remember your trips: photos, a journal or souvenirs?",
+"de": "Wie hältst du Reisen am liebsten fest: Fotos, Tagebuch oder Souvenirs?",
+"es": "¿Cómo prefieres recordar tus viajes: fotos, un diario o recuerdos?",
+"fr": "Comment aimes-tu garder tes voyages en mémoire : photos, carnet ou souvenirs ?",
+"it": "Come preferisci ricordare i tuoi viaggi: foto, diario o souvenir?",
+"pt": "Como preferes recordar as tuas viagens: fotos, diário ou recordações?",
+"pt_BR": "Como você prefere lembrar das viagens: fotos, diário ou lembrancinhas?"
+}
+},
+{
+"id": "solo_travel-015",
+"lv": "any",
+"i18n": {
+"en": "What does freedom mean to you when you travel?",
+"de": "Was bedeutet Freiheit für dich auf Reisen?",
+"es": "¿Qué significa para ti la libertad cuando viajas?",
+"fr": "Que signifie la liberté pour toi en voyage ?",
+"it": "Cosa significa per te la libertà quando viaggi?",
+"pt": "O que significa para ti a liberdade quando viajas?",
+"pt_BR": "O que liberdade significa para você quando viaja?"
+}
+},
+{
+"id": "solo_travel-016",
+"lv": "any",
+"i18n": {
+"en": "Would you rather travel slowly in one place or see many places quickly?",
+"de": "Reist du lieber langsam an einem Ort oder siehst du schnell viele Orte?",
+"es": "¿Prefieres viajar despacio en un solo lugar o ver muchos sitios rápido?",
+"fr": "Préfères-tu voyager lentement au même endroit ou voir beaucoup de lieux vite ?",
+"it": "Preferisci viaggiare con calma in un posto o vedere tanti posti in fretta?",
+"pt": "Preferes viajar devagar num só sítio ou ver muitos sítios depressa?",
+"pt_BR": "Você prefere viajar devagar num lugar só ou ver muitos lugares rápido?"
+}
+},
+{
+"id": "solo_travel-017",
+"lv": "any",
+"i18n": {
+"en": "What small thing makes you feel at home in a new place?",
+"de": "Welche Kleinigkeit gibt dir an einem neuen Ort ein Gefühl von Zuhause?",
+"es": "¿Qué pequeño detalle te hace sentir en casa en un lugar nuevo?",
+"fr": "Quel petit détail te fait te sentir chez toi dans un nouvel endroit ?",
+"it": "Quale piccola cosa ti fa sentire a casa in un posto nuovo?",
+"pt": "Que pequena coisa te faz sentir em casa num sítio novo?",
+"pt_BR": "Que pequena coisa faz você se sentir em casa num lugar novo?"
+}
+},
+{
+"id": "solo_travel-018",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer hotels, hostels or staying with locals?",
+"de": "Übernachtest du lieber im Hotel, im Hostel oder bei Einheimischen?",
+"es": "¿Prefieres hoteles, albergues o alojarte con gente local?",
+"fr": "Tu préfères les hôtels, les auberges ou loger chez l'habitant ?",
+"it": "Preferisci hotel, ostelli o stare a casa di gente del posto?",
+"pt": "Preferes hotéis, hostels ou ficar em casa de locais?",
+"pt_BR": "Você prefere hotel, hostel ou ficar na casa de moradores locais?"
+}
+},
+{
+"id": "solo_travel-019",
+"lv": "any",
+"i18n": {
+"en": "What is a skill you think every solo traveller should have?",
+"de": "Welche Fähigkeit sollte deiner Meinung nach jeder Alleinreisende haben?",
+"es": "¿Qué habilidad crees que debería tener todo viajero en solitario?",
+"fr": "Quelle compétence chaque voyageur solo devrait-il avoir selon toi ?",
+"it": "Quale abilità dovrebbe avere secondo te ogni viaggiatore solitario?",
+"pt": "Que competência achas que todo o viajante a solo devia ter?",
+"pt_BR": "Qual habilidade você acha que todo viajante solo deveria ter?"
+}
+},
+{
+"id": "solo_travel-020",
+"lv": "any",
+"i18n": {
+"en": "How do your friends or family feel about solo travel?",
+"de": "Was halten deine Freunde oder deine Familie vom Alleinreisen?",
+"es": "¿Qué opinan tus amigos o tu familia de viajar en solitario?",
+"fr": "Que pensent tes amis ou ta famille du voyage en solo ?",
+"it": "Cosa pensano amici o famiglia del viaggiare da soli?",
+"pt": "O que pensam os teus amigos ou a tua família sobre viajar sozinho?",
+"pt_BR": "O que seus amigos ou sua família acham de viajar sozinho?"
+}
+},
+{
+"id": "solo_travel-021",
+"lv": "beginner",
+"i18n": {
+"en": "What would a perfect first solo day trip look like for you?",
+"de": "Wie sähe für dich ein perfekter erster Tagesausflug allein aus?",
+"es": "¿Cómo sería para ti una primera excursión perfecta por tu cuenta?",
+"fr": "À quoi ressemblerait pour toi une première sortie en solo parfaite ?",
+"it": "Come sarebbe per te una prima gita da solo perfetta?",
+"pt": "Como seria para ti um primeiro passeio a solo perfeito?",
+"pt_BR": "Como seria para você um primeiro passeio solo perfeito?"
+}
+},
+{
+"id": "solo_travel-022",
+"lv": "beginner",
+"i18n": {
+"en": "How would you choose your first solo destination?",
+"de": "Wie würdest du dein erstes Ziel für eine Solo-Reise auswählen?",
+"es": "¿Cómo elegirías tu primer destino en solitario?",
+"fr": "Comment choisirais-tu ta première destination en solo ?",
+"it": "Come sceglieresti la tua prima meta da solo?",
+"pt": "Como escolherias o teu primeiro destino a solo?",
+"pt_BR": "Como você escolheria seu primeiro destino solo?"
+}
+},
+{
+"id": "solo_travel-023",
+"lv": "beginner",
+"i18n": {
+"en": "Who would you share your travel plans with before leaving?",
+"de": "Mit wem würdest du vor der Abreise deine Reisepläne teilen?",
+"es": "¿Con quién compartirías tus planes antes de salir de viaje?",
+"fr": "Avec qui partagerais-tu ton programme avant de partir ?",
+"it": "Con chi condivideresti i tuoi piani prima di partire?",
+"pt": "Com quem partilharias os teus planos antes de partir?",
+"pt_BR": "Com quem você compartilharia seus planos antes de viajar?"
+}
+},
+{
+"id": "solo_travel-024",
+"lv": "beginner",
+"i18n": {
+"en": "What do you look for in reviews before booking a place to stay?",
+"de": "Worauf achtest du in Bewertungen, bevor du eine Unterkunft buchst?",
+"es": "¿En qué te fijas en las opiniones antes de reservar alojamiento?",
+"fr": "Que regardes-tu dans les avis avant de réserver un logement ?",
+"it": "Cosa guardi nelle recensioni prima di prenotare un alloggio?",
+"pt": "Em que reparas nas avaliações antes de reservar alojamento?",
+"pt_BR": "No que você presta atenção nas avaliações antes de reservar hospedagem?"
+}
+},
+{
+"id": "solo_travel-025",
+"lv": "beginner",
+"i18n": {
+"en": "Which local phrases would you learn first before a trip?",
+"de": "Welche Sätze in der Landessprache würdest du vor einer Reise zuerst lernen?",
+"es": "¿Qué frases locales aprenderías primero antes de un viaje?",
+"fr": "Quelles expressions locales apprendrais-tu en premier avant un voyage ?",
+"it": "Quali frasi locali impareresti per prime prima di un viaggio?",
+"pt": "Que frases locais aprenderias primeiro antes de uma viagem?",
+"pt_BR": "Quais frases no idioma local você aprenderia primeiro antes de viajar?"
+}
+},
+{
+"id": "solo_travel-026",
+"lv": "beginner",
+"i18n": {
+"en": "How do you like to get from the airport to your accommodation?",
+"de": "Wie kommst du am liebsten vom Flughafen zu deiner Unterkunft?",
+"es": "¿Cómo prefieres ir del aeropuerto al alojamiento?",
+"fr": "Comment préfères-tu aller de l'aéroport à ton logement ?",
+"it": "Come preferisci andare dall'aeroporto all'alloggio?",
+"pt": "Como preferes ir do aeroporto até ao alojamento?",
+"pt_BR": "Como você prefere ir do aeroporto até a hospedagem?"
+}
+},
+{
+"id": "solo_travel-027",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever stayed in a hostel? What was it like?",
+"de": "Hast du schon mal in einem Hostel übernachtet? Wie war es?",
+"es": "¿Te has alojado alguna vez en un albergue? ¿Qué tal fue?",
+"fr": "As-tu déjà dormi dans une auberge de jeunesse ? C'était comment ?",
+"it": "Hai mai dormito in un ostello? Com'è stato?",
+"pt": "Já ficaste num hostel? Como foi?",
+"pt_BR": "Você já ficou num hostel? Como foi?"
+}
+},
+{
+"id": "solo_travel-028",
+"lv": "beginner",
+"i18n": {
+"en": "What helps you feel confident when you walk around a new place?",
+"de": "Was hilft dir, dich sicher zu fühlen, wenn du an einem neuen Ort unterwegs bist?",
+"es": "¿Qué te ayuda a sentirte seguro al pasear por un lugar nuevo?",
+"fr": "Qu'est-ce qui t'aide à te sentir à l'aise en te promenant dans un nouvel endroit ?",
+"it": "Cosa ti aiuta a sentirti sicuro quando giri per un posto nuovo?",
+"pt": "O que te ajuda a sentir-te confiante a passear num sítio novo?",
+"pt_BR": "O que te ajuda a se sentir confiante andando por um lugar novo?"
+}
+},
+{
+"id": "solo_travel-029",
+"lv": "beginner",
+"i18n": {
+"en": "How do you keep your money and cards organised when travelling?",
+"de": "Wie organisierst du auf Reisen dein Geld und deine Karten?",
+"es": "¿Cómo organizas el dinero y las tarjetas cuando viajas?",
+"fr": "Comment organises-tu ton argent et tes cartes en voyage ?",
+"it": "Come organizzi soldi e carte quando viaggi?",
+"pt": "Como organizas o dinheiro e os cartões quando viajas?",
+"pt_BR": "Como você organiza dinheiro e cartões quando viaja?"
+}
+},
+{
+"id": "solo_travel-030",
+"lv": "beginner",
+"i18n": {
+"en": "What would you bring to read or do while waiting at a station?",
+"de": "Was würdest du zum Lesen oder Beschäftigen für die Wartezeit am Bahnhof mitnehmen?",
+"es": "¿Qué llevarías para leer o hacer mientras esperas en una estación?",
+"fr": "Qu'emporterais-tu pour lire ou t'occuper en attendant à la gare ?",
+"it": "Cosa porteresti da leggere o da fare mentre aspetti in stazione?",
+"pt": "O que levarias para ler ou fazer enquanto esperas numa estação?",
+"pt_BR": "O que você levaria para ler ou fazer enquanto espera numa estação?"
+}
+},
+{
+"id": "solo_travel-031",
+"lv": "beginner",
+"i18n": {
+"en": "How would you spend an evening alone in a new city?",
+"de": "Wie würdest du einen Abend allein in einer neuen Stadt verbringen?",
+"es": "¿Cómo pasarías una tarde-noche a solas en una ciudad nueva?",
+"fr": "Comment passerais-tu une soirée seul dans une nouvelle ville ?",
+"it": "Come passeresti una serata da solo in una città nuova?",
+"pt": "Como passarias uma noite sozinho numa cidade nova?",
+"pt_BR": "Como você passaria uma noite sozinho numa cidade nova?"
+}
+},
+{
+"id": "solo_travel-032",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever joined a free walking tour? Would you like to?",
+"de": "Hast du schon mal an einer kostenlosen Stadtführung teilgenommen? Hättest du Lust dazu?",
+"es": "¿Has hecho alguna vez un free tour a pie? ¿Te gustaría?",
+"fr": "As-tu déjà fait une visite guidée gratuite à pied ? Ça te tenterait ?",
+"it": "Hai mai fatto un free walking tour? Ti piacerebbe?",
+"pt": "Já fizeste uma visita guiada gratuita a pé? Gostavas de fazer?",
+"pt_BR": "Você já fez um free walking tour? Gostaria de fazer?"
+}
+},
+{
+"id": "solo_travel-033",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite way to start a chat with someone new?",
+"de": "Wie beginnst du am liebsten ein Gespräch mit jemand Neuem?",
+"es": "¿Cuál es tu forma favorita de empezar una charla con alguien nuevo?",
+"fr": "Quelle est ta façon préférée d'engager la conversation avec quelqu'un ?",
+"it": "Qual è il tuo modo preferito per iniziare a chiacchierare con qualcuno di nuovo?",
+"pt": "Qual é a tua forma preferida de começar uma conversa com alguém novo?",
+"pt_BR": "Qual é seu jeito favorito de puxar conversa com alguém novo?"
+}
+},
+{
+"id": "solo_travel-034",
+"lv": "beginner",
+"i18n": {
+"en": "What would you do if you got a little lost in a new city?",
+"de": "Was würdest du tun, wenn du dich in einer neuen Stadt ein bisschen verläufst?",
+"es": "¿Qué harías si te perdieras un poco en una ciudad nueva?",
+"fr": "Que ferais-tu si tu te perdais un peu dans une nouvelle ville ?",
+"it": "Cosa faresti se ti perdessi un po' in una città nuova?",
+"pt": "O que farias se te perdesses um pouco numa cidade nova?",
+"pt_BR": "O que você faria se ficasse um pouco perdido numa cidade nova?"
+}
+},
+{
+"id": "solo_travel-035",
+"lv": "beginner",
+"i18n": {
+"en": "Which local food would you be most excited to try alone?",
+"de": "Welches lokale Essen würdest du am liebsten allein probieren?",
+"es": "¿Qué comida local te haría más ilusión probar por tu cuenta?",
+"fr": "Quel plat local aurais-tu le plus envie de goûter seul ?",
+"it": "Quale cibo locale saresti più curioso di provare da solo?",
+"pt": "Que comida local estarias mais entusiasmado para provar sozinho?",
+"pt_BR": "Qual comida local você ficaria mais animado para provar sozinho?"
+}
+},
+{
+"id": "solo_travel-036",
+"lv": "beginner",
+"i18n": {
+"en": "How often would you check in with family during a solo trip?",
+"de": "Wie oft würdest du dich während einer Solo-Reise bei deiner Familie melden?",
+"es": "¿Cada cuánto darías noticias a tu familia durante un viaje en solitario?",
+"fr": "À quelle fréquence donnerais-tu des nouvelles à ta famille pendant un voyage en solo ?",
+"it": "Ogni quanto daresti notizie alla famiglia durante un viaggio da solo?",
+"pt": "Com que frequência darias notícias à família numa viagem a solo?",
+"pt_BR": "Com que frequência você daria notícias à família numa viagem solo?"
+}
+},
+{
+"id": "solo_travel-037",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather take a train, bus or plane on your first solo trip?",
+"de": "Würdest du bei deiner ersten Solo-Reise lieber Zug, Bus oder Flugzeug nehmen?",
+"es": "En tu primer viaje en solitario, ¿preferirías tren, autobús o avión?",
+"fr": "Pour ton premier voyage en solo, tu prendrais plutôt le train, le bus ou l'avion ?",
+"it": "Nel tuo primo viaggio da solo, prenderesti il treno, il pullman o l'aereo?",
+"pt": "Na tua primeira viagem a solo, preferias comboio, autocarro ou avião?",
+"pt_BR": "Na sua primeira viagem solo, você preferiria trem, ônibus ou avião?"
+}
+},
+{
+"id": "solo_travel-038",
+"lv": "beginner",
+"i18n": {
+"en": "What is one thing you would pack to feel more relaxed on a solo trip?",
+"de": "Was würdest du einpacken, um dich auf einer Solo-Reise entspannter zu fühlen?",
+"es": "¿Qué llevarías para sentirte más tranquilo en un viaje en solitario?",
+"fr": "Qu'emporterais-tu pour te sentir plus serein en voyage solo ?",
+"it": "Cosa porteresti per sentirti più tranquillo in un viaggio da solo?",
+"pt": "Que coisa levarias para te sentires mais tranquilo numa viagem a solo?",
+"pt_BR": "O que você levaria para se sentir mais tranquilo numa viagem solo?"
+}
+},
+{
+"id": "solo_travel-039",
+"lv": "beginner",
+"i18n": {
+"en": "How do you say no politely when someone insists on selling you something?",
+"de": "Wie sagst du höflich Nein, wenn dir jemand hartnäckig etwas verkaufen will?",
+"es": "¿Cómo dices que no con educación cuando alguien insiste en venderte algo?",
+"fr": "Comment dis-tu non poliment quand quelqu'un insiste pour te vendre quelque chose ?",
+"it": "Come dici di no con gentilezza quando qualcuno insiste per venderti qualcosa?",
+"pt": "Como dizes que não com educação quando alguém insiste em vender-te algo?",
+"pt_BR": "Como você diz não com educação quando alguém insiste em te vender algo?"
+}
+},
+{
+"id": "solo_travel-040",
+"lv": "beginner",
+"i18n": {
+"en": "What makes a café or restaurant feel welcoming to a solo guest?",
+"de": "Was macht ein Café oder Restaurant für Alleinreisende einladend?",
+"es": "¿Qué hace que un café o restaurante resulte acogedor para quien va solo?",
+"fr": "Qu'est-ce qui rend un café ou un restaurant accueillant pour un client seul ?",
+"it": "Cosa rende un bar o un ristorante accogliente per chi è da solo?",
+"pt": "O que torna um café ou restaurante acolhedor para quem vai sozinho?",
+"pt_BR": "O que faz um café ou restaurante ser acolhedor para quem está sozinho?"
+}
+},
+{
+"id": "solo_travel-041",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like taking photos of yourself on trips, or of places only?",
+"de": "Fotografierst du auf Reisen gern dich selbst oder lieber nur Orte?",
+"es": "¿Te gusta hacerte fotos en los viajes o solo fotografías lugares?",
+"fr": "En voyage, tu aimes te prendre en photo ou seulement les lieux ?",
+"it": "In viaggio ti piace fotografarti o preferisci fotografare solo i luoghi?",
+"pt": "Gostas de tirar fotos a ti próprio nas viagens ou só aos lugares?",
+"pt_BR": "Você gosta de tirar fotos suas nas viagens ou só dos lugares?"
+}
+},
+{
+"id": "solo_travel-042",
+"lv": "beginner",
+"i18n": {
+"en": "What would you write in your travel journal after your first solo day?",
+"de": "Was würdest du nach deinem ersten Tag allein ins Reisetagebuch schreiben?",
+"es": "¿Qué escribirías en tu diario de viaje tras tu primer día en solitario?",
+"fr": "Qu'écrirais-tu dans ton carnet après ta première journée en solo ?",
+"it": "Cosa scriveresti nel diario di viaggio dopo il primo giorno da solo?",
+"pt": "O que escreverias no teu diário de viagem depois do primeiro dia a solo?",
+"pt_BR": "O que você escreveria no diário de viagem depois do primeiro dia solo?"
+}
+},
+{
+"id": "solo_travel-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which museum or attraction would you love to explore at your own pace?",
+"de": "Welches Museum oder welche Sehenswürdigkeit würdest du gern in deinem Tempo erkunden?",
+"es": "¿Qué museo o atracción te encantaría recorrer a tu ritmo?",
+"fr": "Quel musée ou site aimerais-tu découvrir à ton rythme ?",
+"it": "Quale museo o attrazione ti piacerebbe esplorare con i tuoi tempi?",
+"pt": "Que museu ou atração adorarias explorar ao teu ritmo?",
+"pt_BR": "Qual museu ou atração você adoraria explorar no seu ritmo?"
+}
+},
+{
+"id": "solo_travel-044",
+"lv": "beginner",
+"i18n": {
+"en": "How would you plan a simple budget for a short solo trip?",
+"de": "Wie würdest du ein einfaches Budget für eine kurze Solo-Reise planen?",
+"es": "¿Cómo planearías un presupuesto sencillo para un viaje corto en solitario?",
+"fr": "Comment prévoirais-tu un petit budget pour un court voyage en solo ?",
+"it": "Come pianificheresti un budget semplice per un breve viaggio da solo?",
+"pt": "Como planearias um orçamento simples para uma viagem curta a solo?",
+"pt_BR": "Como você planejaria um orçamento simples para uma viagem solo curta?"
+}
+},
+{
+"id": "solo_travel-045",
+"lv": "beginner",
+"i18n": {
+"en": "What time of day would you like to arrive in a new city, and why?",
+"de": "Zu welcher Tageszeit würdest du gern in einer neuen Stadt ankommen, und warum?",
+"es": "¿A qué hora del día te gustaría llegar a una ciudad nueva y por qué?",
+"fr": "À quel moment de la journée aimerais-tu arriver dans une nouvelle ville, et pourquoi ?",
+"it": "A che ora del giorno ti piacerebbe arrivare in una città nuova, e perché?",
+"pt": "A que hora do dia gostarias de chegar a uma cidade nova, e porquê?",
+"pt_BR": "Em que horário você gostaria de chegar numa cidade nova, e por quê?"
+}
+},
+{
+"id": "solo_travel-046",
+"lv": "any",
+"i18n": {
+"en": "What song would be the soundtrack of your solo adventure?",
+"de": "Welches Lied wäre der Soundtrack deines Solo-Abenteuers?",
+"es": "¿Qué canción sería la banda sonora de tu aventura en solitario?",
+"fr": "Quelle chanson serait la bande-son de ton aventure en solo ?",
+"it": "Quale canzone sarebbe la colonna sonora della tua avventura da solo?",
+"pt": "Que canção seria a banda sonora da tua aventura a solo?",
+"pt_BR": "Qual música seria a trilha sonora da sua aventura solo?"
+}
+},
+{
+"id": "solo_travel-047",
+"lv": "any",
+"i18n": {
+"en": "What has travel taught you about yourself?",
+"de": "Was hat dir das Reisen über dich selbst beigebracht?",
+"es": "¿Qué te ha enseñado viajar sobre ti mismo?",
+"fr": "Qu'est-ce que les voyages t'ont appris sur toi-même ?",
+"it": "Cosa ti ha insegnato il viaggiare su te stesso?",
+"pt": "O que é que viajar te ensinou sobre ti próprio?",
+"pt_BR": "O que viajar te ensinou sobre você mesmo?"
+}
+},
+{
+"id": "solo_travel-048",
+"lv": "any",
+"i18n": {
+"en": "Is there a trip you keep dreaming about but haven't done yet?",
+"de": "Gibt es eine Reise, von der du immer wieder träumst, die du aber noch nicht gemacht hast?",
+"es": "¿Hay algún viaje con el que sueñas pero que aún no has hecho?",
+"fr": "Y a-t-il un voyage dont tu rêves sans l'avoir encore fait ?",
+"it": "C'è un viaggio che sogni da tempo ma non hai ancora fatto?",
+"pt": "Há alguma viagem com que sonhas mas que ainda não fizeste?",
+"pt_BR": "Tem alguma viagem que você sonha fazer mas ainda não fez?"
+}
+},
+{
+"id": "solo_travel-049",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer sunrise or sunset when you explore a new place?",
+"de": "Magst du beim Erkunden neuer Orte lieber den Sonnenaufgang oder den Sonnenuntergang?",
+"es": "¿Prefieres el amanecer o el atardecer cuando exploras un lugar nuevo?",
+"fr": "Tu préfères le lever ou le coucher du soleil quand tu explores un nouvel endroit ?",
+"it": "Preferisci l'alba o il tramonto quando esplori un posto nuovo?",
+"pt": "Preferes o nascer ou o pôr do sol quando exploras um sítio novo?",
+"pt_BR": "Você prefere o nascer ou o pôr do sol ao explorar um lugar novo?"
+}
+},
+{
+"id": "solo_travel-050",
+"lv": "any",
+"i18n": {
+"en": "What is the kindest thing a stranger has done for you while travelling?",
+"de": "Was ist das Netteste, was ein Fremder auf Reisen für dich getan hat?",
+"es": "¿Qué es lo más amable que ha hecho por ti un desconocido en un viaje?",
+"fr": "Quel est le geste le plus gentil qu'un inconnu ait eu pour toi en voyage ?",
+"it": "Qual è la cosa più gentile che uno sconosciuto ha fatto per te in viaggio?",
+"pt": "Qual foi a coisa mais simpática que um desconhecido fez por ti numa viagem?",
+"pt_BR": "Qual foi a coisa mais gentil que um desconhecido já fez por você numa viagem?"
+}
+},
+{
+"id": "solo_travel-051",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you plan a two-week solo trip: one base or many stops?",
+"de": "Wie würdest du eine zweiwöchige Solo-Reise planen: ein Standort oder viele Stationen?",
+"es": "¿Cómo planearías dos semanas en solitario: una sola base o muchas paradas?",
+"fr": "Comment organiserais-tu deux semaines en solo : un seul point de chute ou plusieurs étapes ?",
+"it": "Come pianificheresti due settimane da solo: una sola base o tante tappe?",
+"pt": "Como planearias duas semanas a solo: uma só base ou muitas paragens?",
+"pt_BR": "Como você planejaria duas semanas solo: uma base só ou várias paradas?"
+}
+},
+{
+"id": "solo_travel-052",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you manage in a country where you don't speak the language?",
+"de": "Wie kommst du in einem Land zurecht, dessen Sprache du nicht sprichst?",
+"es": "¿Cómo te las arreglas en un país cuyo idioma no hablas?",
+"fr": "Comment te débrouilles-tu dans un pays dont tu ne parles pas la langue ?",
+"it": "Come te la cavi in un paese di cui non parli la lingua?",
+"pt": "Como te desenrascas num país cuja língua não falas?",
+"pt_BR": "Como você se vira num país em que não fala a língua?"
+}
+},
+{
+"id": "solo_travel-053",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you go hiking alone? What would you do to prepare?",
+"de": "Würdest du allein wandern gehen? Wie würdest du dich vorbereiten?",
+"es": "¿Harías senderismo a solas? ¿Cómo te prepararías?",
+"fr": "Partirais-tu randonner seul ? Comment te préparerais-tu ?",
+"it": "Andresti a fare un'escursione da solo? Come ti prepareresti?",
+"pt": "Farias uma caminhada sozinho? Como te prepararias?",
+"pt_BR": "Você faria uma trilha sozinho? Como se prepararia?"
+}
+},
+{
+"id": "solo_travel-054",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your idea of a perfect solo road trip?",
+"de": "Wie sieht für dich ein perfekter Roadtrip allein aus?",
+"es": "¿Cómo sería para ti el viaje por carretera en solitario perfecto?",
+"fr": "Quel serait pour toi le road trip en solo idéal ?",
+"it": "Come sarebbe per te il road trip da solo perfetto?",
+"pt": "Como seria para ti a road trip a solo perfeita?",
+"pt_BR": "Como seria para você a road trip solo perfeita?"
+}
+},
+{
+"id": "solo_travel-055",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever felt culture shock? How did you handle it?",
+"de": "Hattest du schon mal einen Kulturschock? Wie bist du damit umgegangen?",
+"es": "¿Has sentido alguna vez choque cultural? ¿Cómo lo llevaste?",
+"fr": "As-tu déjà vécu un choc culturel ? Comment l'as-tu géré ?",
+"it": "Hai mai provato uno shock culturale? Come l'hai gestito?",
+"pt": "Já sentiste choque cultural? Como lidaste com isso?",
+"pt_BR": "Você já sentiu choque cultural? Como lidou com isso?"
+}
+},
+{
+"id": "solo_travel-056",
+"lv": "intermediate",
+"i18n": {
+"en": "Which class would you love to take abroad: cooking, dance or language?",
+"de": "Welchen Kurs würdest du gern im Ausland machen: Kochen, Tanzen oder eine Sprache?",
+"es": "¿Qué clase te encantaría tomar en el extranjero: cocina, baile o idiomas?",
+"fr": "Quel cours aimerais-tu suivre à l'étranger : cuisine, danse ou langue ?",
+"it": "Che corso ti piacerebbe seguire all'estero: cucina, ballo o lingua?",
+"pt": "Que aula adorarias fazer no estrangeiro: culinária, dança ou línguas?",
+"pt_BR": "Que aula você adoraria fazer no exterior: culinária, dança ou idioma?"
+}
+},
+{
+"id": "solo_travel-057",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance social time and alone time on a long trip?",
+"de": "Wie hältst du auf einer langen Reise das Gleichgewicht zwischen Gesellschaft und Zeit für dich?",
+"es": "¿Cómo equilibras el tiempo social y el tiempo a solas en un viaje largo?",
+"fr": "Comment équilibres-tu moments sociaux et moments seul lors d'un long voyage ?",
+"it": "Come bilanci il tempo con gli altri e quello da solo in un viaggio lungo?",
+"pt": "Como equilibras o tempo com outras pessoas e o tempo sozinho numa viagem longa?",
+"pt_BR": "Como você equilibra tempo com outras pessoas e tempo sozinho numa viagem longa?"
+}
+},
+{
+"id": "solo_travel-058",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you do if your train or flight was cancelled?",
+"de": "Was würdest du tun, wenn dein Zug oder Flug gestrichen würde?",
+"es": "¿Qué harías si cancelaran tu tren o tu vuelo?",
+"fr": "Que ferais-tu si ton train ou ton vol était annulé ?",
+"it": "Cosa faresti se il tuo treno o volo venisse cancellato?",
+"pt": "O que farias se o teu comboio ou voo fosse cancelado?",
+"pt_BR": "O que você faria se seu trem ou voo fosse cancelado?"
+}
+},
+{
+"id": "solo_travel-059",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever stayed with a local family? What did you learn?",
+"de": "Hast du schon mal bei einer einheimischen Familie gewohnt? Was hast du gelernt?",
+"es": "¿Te has alojado alguna vez con una familia local? ¿Qué aprendiste?",
+"fr": "As-tu déjà logé dans une famille locale ? Qu'as-tu appris ?",
+"it": "Hai mai alloggiato presso una famiglia del posto? Cosa hai imparato?",
+"pt": "Já ficaste em casa de uma família local? O que aprendeste?",
+"pt_BR": "Você já ficou na casa de uma família local? O que aprendeu?"
+}
+},
+{
+"id": "solo_travel-060",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you research local customs before visiting a new country?",
+"de": "Wie informierst du dich über örtliche Bräuche, bevor du ein neues Land besuchst?",
+"es": "¿Cómo investigas las costumbres locales antes de visitar un país nuevo?",
+"fr": "Comment te renseignes-tu sur les coutumes locales avant de visiter un pays ?",
+"it": "Come ti informi sulle usanze locali prima di visitare un nuovo paese?",
+"pt": "Como pesquisas os costumes locais antes de visitar um país novo?",
+"pt_BR": "Como você pesquisa os costumes locais antes de visitar um país novo?"
+}
+},
+{
+"id": "solo_travel-061",
+"lv": "intermediate",
+"i18n": {
+"en": "Which world region would you love to explore solo, and why?",
+"de": "Welche Weltregion würdest du gern allein erkunden, und warum?",
+"es": "¿Qué región del mundo te encantaría explorar por tu cuenta y por qué?",
+"fr": "Quelle région du monde aimerais-tu explorer en solo, et pourquoi ?",
+"it": "Quale regione del mondo ti piacerebbe esplorare da solo, e perché?",
+"pt": "Que região do mundo adorarias explorar a solo, e porquê?",
+"pt_BR": "Qual região do mundo você adoraria explorar sozinho, e por quê?"
+}
+},
+{
+"id": "solo_travel-062",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do when you start to feel tired or homesick on the road?",
+"de": "Was machst du, wenn du unterwegs müde wirst oder Heimweh bekommst?",
+"es": "¿Qué haces cuando empiezas a sentir cansancio o nostalgia de casa en un viaje?",
+"fr": "Que fais-tu quand tu te sens fatigué ou que ta maison te manque en voyage ?",
+"it": "Cosa fai quando in viaggio ti senti stanco o hai nostalgia di casa?",
+"pt": "O que fazes quando começas a sentir cansaço ou saudades de casa em viagem?",
+"pt_BR": "O que você faz quando bate cansaço ou saudade de casa na viagem?"
+}
+},
+{
+"id": "solo_travel-063",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you join a small group tour during a solo trip? Why?",
+"de": "Würdest du dich während einer Solo-Reise einer kleinen Gruppentour anschließen? Warum?",
+"es": "¿Te unirías a un tour en grupo pequeño durante un viaje en solitario? ¿Por qué?",
+"fr": "Rejoindrais-tu une excursion en petit groupe pendant un voyage en solo ? Pourquoi ?",
+"it": "Ti uniresti a un tour di piccolo gruppo durante un viaggio da solo? Perché?",
+"pt": "Juntavas-te a uma visita em pequeno grupo durante uma viagem a solo? Porquê?",
+"pt_BR": "Você entraria num passeio em grupo pequeno durante uma viagem solo? Por quê?"
+}
+},
+{
+"id": "solo_travel-064",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you choose a neighbourhood to stay in when you go alone?",
+"de": "Wie wählst du ein Viertel zum Übernachten aus, wenn du allein reist?",
+"es": "¿Cómo eliges el barrio donde alojarte cuando viajas sin compañía?",
+"fr": "Comment choisis-tu le quartier où loger quand tu voyages seul ?",
+"it": "Come scegli il quartiere dove alloggiare quando viaggi da solo?",
+"pt": "Como escolhes o bairro onde ficar quando viajas sozinho?",
+"pt_BR": "Como você escolhe o bairro para se hospedar quando viaja sozinho?"
+}
+},
+{
+"id": "solo_travel-065",
+"lv": "intermediate",
+"i18n": {
+"en": "What festival or event would you love to attend on your own?",
+"de": "Welches Festival oder Event würdest du gern allein besuchen?",
+"es": "¿A qué festival o evento te encantaría ir por tu cuenta?",
+"fr": "À quel festival ou événement aimerais-tu aller en solo ?",
+"it": "A quale festival o evento ti piacerebbe andare da solo?",
+"pt": "A que festival ou evento adorarias ir sozinho?",
+"pt_BR": "Em qual festival ou evento você adoraria ir sozinho?"
+}
+},
+{
+"id": "solo_travel-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep your energy up during a busy trip?",
+"de": "Wie hältst du deine Energie auf einer vollen Reise hoch?",
+"es": "¿Cómo mantienes la energía durante un viaje intenso?",
+"fr": "Comment gardes-tu ton énergie pendant un voyage chargé ?",
+"it": "Come mantieni alta l'energia durante un viaggio intenso?",
+"pt": "Como manténs a energia durante uma viagem cheia de atividades?",
+"pt_BR": "Como você mantém a energia numa viagem cheia de programas?"
+}
+},
+{
+"id": "solo_travel-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever changed your plans on the spot? What happened?",
+"de": "Hast du schon mal spontan deine Pläne geändert? Was ist passiert?",
+"es": "¿Has cambiado alguna vez tus planes sobre la marcha? ¿Qué pasó?",
+"fr": "As-tu déjà changé tes plans sur un coup de tête ? Que s'est-il passé ?",
+"it": "Hai mai cambiato i tuoi piani all'improvviso? Cos'è successo?",
+"pt": "Já mudaste os teus planos em cima da hora? O que aconteceu?",
+"pt_BR": "Você já mudou seus planos de última hora? O que aconteceu?"
+}
+},
+{
+"id": "solo_travel-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What travel apps do you find most useful when you're alone?",
+"de": "Welche Reise-Apps findest du am nützlichsten, wenn du allein unterwegs bist?",
+"es": "¿Qué aplicaciones de viaje te resultan más útiles cuando vas solo?",
+"fr": "Quelles applis de voyage trouves-tu les plus utiles quand tu es seul ?",
+"it": "Quali app di viaggio trovi più utili quando sei da solo?",
+"pt": "Que aplicações de viagem achas mais úteis quando estás sozinho?",
+"pt_BR": "Quais apps de viagem você acha mais úteis quando está sozinho?"
+}
+},
+{
+"id": "solo_travel-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you say goodbye to friends you made while travelling?",
+"de": "Wie verabschiedest du dich von Freunden, die du auf Reisen kennengelernt hast?",
+"es": "¿Cómo te despides de los amigos que hiciste viajando?",
+"fr": "Comment dis-tu au revoir aux amis rencontrés en voyage ?",
+"it": "Come saluti gli amici conosciuti in viaggio?",
+"pt": "Como te despedes dos amigos que fizeste em viagem?",
+"pt_BR": "Como você se despede dos amigos que fez viajando?"
+}
+},
+{
+"id": "solo_travel-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you try to travel in a more sustainable way?",
+"de": "Wie versuchst du, nachhaltiger zu reisen?",
+"es": "¿Cómo intentas viajar de forma más sostenible?",
+"fr": "Comment essaies-tu de voyager de façon plus durable ?",
+"it": "Come cerchi di viaggiare in modo più sostenibile?",
+"pt": "Como tentas viajar de forma mais sustentável?",
+"pt_BR": "Como você tenta viajar de forma mais sustentável?"
+}
+},
+{
+"id": "solo_travel-071",
+"lv": "advanced",
+"i18n": {
+"en": "Could you imagine travelling solo for several months? Where would you go?",
+"de": "Könntest du dir vorstellen, mehrere Monate allein zu reisen? Wohin würde es gehen?",
+"es": "¿Te imaginas viajar en solitario durante varios meses? ¿Adónde irías?",
+"fr": "Pourrais-tu imaginer voyager en solo pendant plusieurs mois ? Où irais-tu ?",
+"it": "Ti immagini a viaggiare da solo per diversi mesi? Dove andresti?",
+"pt": "Conseguias imaginar-te a viajar sozinho durante vários meses? Para onde irias?",
+"pt_BR": "Você se imagina viajando sozinho por vários meses? Para onde iria?"
+}
+},
+{
+"id": "solo_travel-072",
+"lv": "advanced",
+"i18n": {
+"en": "Would you like to work remotely while travelling? What appeals to you?",
+"de": "Würdest du gern unterwegs remote arbeiten? Was reizt dich daran?",
+"es": "¿Te gustaría trabajar en remoto mientras viajas? ¿Qué te atrae?",
+"fr": "Aimerais-tu travailler à distance en voyageant ? Qu'est-ce qui te plaît là-dedans ?",
+"it": "Ti piacerebbe lavorare da remoto mentre viaggi? Cosa ti attira?",
+"pt": "Gostavas de trabalhar remotamente enquanto viajas? O que te atrai?",
+"pt_BR": "Você gostaria de trabalhar remoto enquanto viaja? O que te atrai nisso?"
+}
+},
+{
+"id": "solo_travel-073",
+"lv": "advanced",
+"i18n": {
+"en": "Which long journey by train, road or on foot would you love to do?",
+"de": "Welche lange Reise mit dem Zug, auf der Straße oder zu Fuß würdest du gern machen?",
+"es": "¿Qué gran viaje en tren, por carretera o a pie te encantaría hacer?",
+"fr": "Quel long voyage en train, par la route ou à pied aimerais-tu faire ?",
+"it": "Quale lungo viaggio in treno, su strada o a piedi ti piacerebbe fare?",
+"pt": "Que grande viagem de comboio, de carro ou a pé adorarias fazer?",
+"pt_BR": "Qual grande viagem de trem, de carro ou a pé você adoraria fazer?"
+}
+},
+{
+"id": "solo_travel-074",
+"lv": "advanced",
+"i18n": {
+"en": "How has travelling alone changed the way you make decisions?",
+"de": "Wie hat das Alleinreisen deine Art, Entscheidungen zu treffen, verändert?",
+"es": "¿Cómo ha cambiado viajar en solitario tu forma de tomar decisiones?",
+"fr": "En quoi voyager seul a-t-il changé ta façon de prendre des décisions ?",
+"it": "Come ha cambiato il viaggiare da solo il tuo modo di prendere decisioni?",
+"pt": "Como é que viajar sozinho mudou a tua forma de tomar decisões?",
+"pt_BR": "Como viajar sozinho mudou seu jeito de tomar decisões?"
+}
+},
+{
+"id": "solo_travel-075",
+"lv": "advanced",
+"i18n": {
+"en": "What would you want to learn deeply while living abroad for a while?",
+"de": "Was würdest du gern gründlich lernen, wenn du eine Zeit lang im Ausland lebst?",
+"es": "¿Qué te gustaría aprender a fondo viviendo un tiempo en el extranjero?",
+"fr": "Qu'aimerais-tu apprendre en profondeur en vivant un moment à l'étranger ?",
+"it": "Cosa vorresti imparare a fondo vivendo per un po' all'estero?",
+"pt": "O que gostarias de aprender a fundo vivendo uns tempos no estrangeiro?",
+"pt_BR": "O que você gostaria de aprender a fundo morando um tempo no exterior?"
+}
+},
+{
+"id": "solo_travel-076",
+"lv": "advanced",
+"i18n": {
+"en": "How do you show respect when you photograph people on your travels?",
+"de": "Wie zeigst du Respekt, wenn du auf Reisen Menschen fotografierst?",
+"es": "¿Cómo muestras respeto cuando fotografías a personas en tus viajes?",
+"fr": "Comment fais-tu preuve de respect quand tu photographies des gens en voyage ?",
+"it": "Come dimostri rispetto quando fotografi le persone in viaggio?",
+"pt": "Como mostras respeito quando fotografas pessoas nas tuas viagens?",
+"pt_BR": "Como você demonstra respeito ao fotografar pessoas nas viagens?"
+}
+},
+{
+"id": "solo_travel-077",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give to someone planning their first solo trip?",
+"de": "Welchen Rat würdest du jemandem geben, der seine erste Solo-Reise plant?",
+"es": "¿Qué consejo darías a alguien que planea su primer viaje en solitario?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui prépare son premier voyage en solo ?",
+"it": "Che consiglio daresti a chi sta pianificando il primo viaggio da solo?",
+"pt": "Que conselho darias a alguém que está a planear a primeira viagem a solo?",
+"pt_BR": "Que conselho você daria a alguém planejando a primeira viagem solo?"
+}
+},
+{
+"id": "solo_travel-078",
+"lv": "advanced",
+"i18n": {
+"en": "Which themed journey appeals to you: food, history, art or nature?",
+"de": "Welche Themenreise reizt dich: Essen, Geschichte, Kunst oder Natur?",
+"es": "¿Qué viaje temático te atrae más: gastronomía, historia, arte o naturaleza?",
+"fr": "Quel voyage thématique te tente : gastronomie, histoire, art ou nature ?",
+"it": "Quale viaggio a tema ti attira: cibo, storia, arte o natura?",
+"pt": "Que viagem temática te atrai: comida, história, arte ou natureza?",
+"pt_BR": "Qual viagem temática te atrai: gastronomia, história, arte ou natureza?"
+}
+},
+{
+"id": "solo_travel-079",
+"lv": "advanced",
+"i18n": {
+"en": "How do you support local communities when you travel?",
+"de": "Wie unterstützt du auf Reisen die Menschen vor Ort?",
+"es": "¿Cómo apoyas a las comunidades locales cuando viajas?",
+"fr": "Comment soutiens-tu les communautés locales quand tu voyages ?",
+"it": "Come sostieni le comunità locali quando viaggi?",
+"pt": "Como apoias as comunidades locais quando viajas?",
+"pt_BR": "Como você apoia as comunidades locais quando viaja?"
+}
+},
+{
+"id": "solo_travel-080",
+"lv": "advanced",
+"i18n": {
+"en": "What personal habits keep you calm when plans fall apart?",
+"de": "Welche Gewohnheiten helfen dir, ruhig zu bleiben, wenn Pläne platzen?",
+"es": "¿Qué hábitos te ayudan a mantener la calma cuando los planes se tuercen?",
+"fr": "Quelles habitudes t'aident à rester calme quand tes plans tombent à l'eau ?",
+"it": "Quali abitudini ti aiutano a restare calmo quando i piani saltano?",
+"pt": "Que hábitos te ajudam a manter a calma quando os planos falham?",
+"pt_BR": "Quais hábitos te ajudam a manter a calma quando os planos dão errado?"
+}
+},
+{
+"id": "solo_travel-081",
+"lv": "advanced",
+"i18n": {
+"en": "Would you like to host or guide travellers in your own city one day?",
+"de": "Würdest du eines Tages gern Reisende in deiner Stadt beherbergen oder herumführen?",
+"es": "¿Te gustaría algún día alojar o guiar a viajeros en tu ciudad?",
+"fr": "Aimerais-tu un jour accueillir ou guider des voyageurs dans ta ville ?",
+"it": "Ti piacerebbe un giorno ospitare o guidare viaggiatori nella tua città?",
+"pt": "Gostavas um dia de receber ou guiar viajantes na tua cidade?",
+"pt_BR": "Você gostaria um dia de hospedar ou guiar viajantes na sua cidade?"
+}
+},
+{
+"id": "solo_travel-082",
+"lv": "advanced",
+"i18n": {
+"en": "What does your personal safety routine look like on a trip?",
+"de": "Wie sieht deine persönliche Sicherheitsroutine auf Reisen aus?",
+"es": "¿Cómo es tu rutina personal de seguridad en un viaje?",
+"fr": "À quoi ressemble ta routine de sécurité personnelle en voyage ?",
+"it": "Com'è la tua routine personale di sicurezza in viaggio?",
+"pt": "Como é a tua rotina pessoal de segurança numa viagem?",
+"pt_BR": "Como é sua rotina pessoal de segurança numa viagem?"
+}
+},
+{
+"id": "solo_travel-083",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep your travel experiences alive once you are home?",
+"de": "Wie hältst du deine Reiseerlebnisse lebendig, wenn du wieder zu Hause bist?",
+"es": "¿Cómo mantienes vivas tus experiencias de viaje al volver a casa?",
+"fr": "Comment fais-tu vivre tes souvenirs de voyage une fois rentré ?",
+"it": "Come tieni vive le esperienze di viaggio una volta tornato a casa?",
+"pt": "Como manténs vivas as tuas experiências de viagem quando voltas para casa?",
+"pt_BR": "Como você mantém vivas suas experiências de viagem quando volta para casa?"
+}
+},
+{
+"id": "solo_travel-084",
+"lv": "advanced",
+"i18n": {
+"en": "Which solo trip would you call the turning point of your travels?",
+"de": "Welche Solo-Reise würdest du als Wendepunkt deines Reisens bezeichnen?",
+"es": "¿Qué viaje en solitario dirías que marcó un antes y un después para ti?",
+"fr": "Quel voyage en solo a été un tournant pour toi ?",
+"it": "Quale viaggio da solo è stato per te una svolta?",
+"pt": "Que viagem a solo foi para ti um ponto de viragem?",
+"pt_BR": "Qual viagem solo foi um divisor de águas para você?"
+}
+},
+{
+"id": "solo_travel-085",
+"lv": "advanced",
+"i18n": {
+"en": "If you planned your dream solo journey today, what would it be?",
+"de": "Wenn du heute deine Traumreise allein planen würdest, wie sähe sie aus?",
+"es": "Si hoy planearas el viaje en solitario de tus sueños, ¿cómo sería?",
+"fr": "Si tu préparais aujourd'hui ton voyage en solo de rêve, à quoi ressemblerait-il ?",
+"it": "Se oggi pianificassi il viaggio da solo dei tuoi sogni, come sarebbe?",
+"pt": "Se planeasses hoje a viagem a solo dos teus sonhos, como seria?",
+"pt_BR": "Se você planejasse hoje a viagem solo dos seus sonhos, como seria?"
+}
+},
+{
+"id": "solo_travel-086",
+"lv": "any",
+"i18n": {
+"en": "What is a small adventure you could have alone this month?",
+"de": "Welches kleine Abenteuer könntest du diesen Monat allein erleben?",
+"es": "¿Qué pequeña aventura podrías vivir por tu cuenta este mes?",
+"fr": "Quelle petite aventure pourrais-tu vivre en solo ce mois-ci ?",
+"it": "Quale piccola avventura potresti vivere da solo questo mese?",
+"pt": "Que pequena aventura podias viver sozinho este mês?",
+"pt_BR": "Que pequena aventura você poderia viver sozinho este mês?"
+}
+},
+{
+"id": "solo_travel-087",
+"lv": "any",
+"i18n": {
+"en": "Which city do you think is perfect for a first solo trip?",
+"de": "Welche Stadt ist deiner Meinung nach perfekt für eine erste Solo-Reise?",
+"es": "¿Qué ciudad te parece perfecta para un primer viaje en solitario?",
+"fr": "Quelle ville te semble parfaite pour un premier voyage en solo ?",
+"it": "Quale città ti sembra perfetta per un primo viaggio da solo?",
+"pt": "Que cidade achas perfeita para uma primeira viagem a solo?",
+"pt_BR": "Qual cidade você acha perfeita para uma primeira viagem solo?"
+}
+},
+{
+"id": "solo_travel-088",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when you arrive somewhere completely new?",
+"de": "Wie fühlst du dich, wenn du an einem völlig neuen Ort ankommst?",
+"es": "¿Cómo te sientes al llegar a un lugar totalmente nuevo?",
+"fr": "Que ressens-tu en arrivant dans un endroit totalement nouveau ?",
+"it": "Come ti senti quando arrivi in un posto completamente nuovo?",
+"pt": "Como te sentes quando chegas a um sítio completamente novo?",
+"pt_BR": "Como você se sente ao chegar num lugar totalmente novo?"
+}
+},
+{
+"id": "solo_travel-089",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy doing when nobody else is choosing the plan?",
+"de": "Was machst du gern, wenn niemand sonst den Plan bestimmt?",
+"es": "¿Qué te gusta hacer cuando nadie más elige el plan?",
+"fr": "Qu'aimes-tu faire quand personne d'autre ne choisit le programme ?",
+"it": "Cosa ti piace fare quando nessun altro decide il programma?",
+"pt": "O que gostas de fazer quando mais ninguém escolhe o plano?",
+"pt_BR": "O que você gosta de fazer quando ninguém mais escolhe o programa?"
+}
+},
+{
+"id": "solo_travel-090",
+"lv": "any",
+"i18n": {
+"en": "Which travel story do you love telling your friends?",
+"de": "Welche Reisegeschichte erzählst du deinen Freunden am liebsten?",
+"es": "¿Qué anécdota de viaje te encanta contar a tus amigos?",
+"fr": "Quelle histoire de voyage adores-tu raconter à tes amis ?",
+"it": "Quale storia di viaggio ami raccontare agli amici?",
+"pt": "Que história de viagem adoras contar aos teus amigos?",
+"pt_BR": "Qual história de viagem você adora contar aos amigos?"
+}
+},
+{
+"id": "solo_travel-091",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to spend a slow, lazy travel day?",
+"de": "Wie verbringst du am liebsten einen ruhigen, faulen Reisetag?",
+"es": "¿Cuál es tu forma favorita de pasar un día de viaje tranquilo y sin prisa?",
+"fr": "Quelle est ta façon préférée de passer une journée de voyage tranquille ?",
+"it": "Qual è il tuo modo preferito di passare una giornata di viaggio tranquilla?",
+"pt": "Qual é a tua forma preferida de passar um dia de viagem calmo e preguiçoso?",
+"pt_BR": "Qual é seu jeito favorito de passar um dia de viagem tranquilo e preguiçoso?"
+}
+},
+{
+"id": "solo_travel-092",
+"lv": "any",
+"i18n": {
+"en": "What would you like to get better at as a traveller?",
+"de": "Worin würdest du als Reisender gern besser werden?",
+"es": "¿En qué te gustaría mejorar como viajero?",
+"fr": "En quoi aimerais-tu progresser en tant que voyageur ?",
+"it": "In cosa ti piacerebbe migliorare come viaggiatore?",
+"pt": "Em que gostarias de melhorar como viajante?",
+"pt_BR": "Em que você gostaria de melhorar como viajante?"
+}
+},
+{
+"id": "solo_travel-093",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer quiet places or lively ones when you travel alone?",
+"de": "Magst du auf Solo-Reisen lieber ruhige oder lebhafte Orte?",
+"es": "¿Prefieres lugares tranquilos o animados cuando viajas a solas?",
+"fr": "En solo, tu préfères les endroits calmes ou animés ?",
+"it": "Quando viaggi da solo preferisci posti tranquilli o vivaci?",
+"pt": "Quando viajas sozinho, preferes sítios calmos ou animados?",
+"pt_BR": "Quando viaja sozinho, você prefere lugares tranquilos ou animados?"
+}
+},
+{
+"id": "solo_travel-094",
+"lv": "any",
+"i18n": {
+"en": "Which local tradition from another country would you love to experience?",
+"de": "Welche Tradition aus einem anderen Land würdest du gern erleben?",
+"es": "¿Qué tradición de otro país te encantaría vivir?",
+"fr": "Quelle tradition d'un autre pays aimerais-tu vivre ?",
+"it": "Quale tradizione di un altro paese ti piacerebbe vivere?",
+"pt": "Que tradição de outro país adorarias viver?",
+"pt_BR": "Qual tradição de outro país você adoraria viver?"
+}
+},
+{
+"id": "solo_travel-095",
+"lv": "any",
+"i18n": {
+"en": "What is the most beautiful view you have seen while travelling?",
+"de": "Was ist die schönste Aussicht, die du auf Reisen gesehen hast?",
+"es": "¿Cuál es la vista más bonita que has visto viajando?",
+"fr": "Quelle est la plus belle vue que tu aies vue en voyage ?",
+"it": "Qual è il panorama più bello che hai visto in viaggio?",
+"pt": "Qual é a vista mais bonita que viste numa viagem?",
+"pt_BR": "Qual foi a vista mais bonita que você já viu viajando?"
+}
+},
+{
+"id": "solo_travel-096",
+"lv": "any",
+"i18n": {
+"en": "How do you treat yourself after a long travel day?",
+"de": "Wie belohnst du dich nach einem langen Reisetag?",
+"es": "¿Cómo te mimas después de un largo día de viaje?",
+"fr": "Comment te fais-tu plaisir après une longue journée de voyage ?",
+"it": "Come ti coccoli dopo una lunga giornata di viaggio?",
+"pt": "Como te mimas depois de um longo dia de viagem?",
+"pt_BR": "Como você se mima depois de um longo dia de viagem?"
+}
+},
+{
+"id": "solo_travel-097",
+"lv": "any",
+"i18n": {
+"en": "Which solo traveller, real or fictional, would you love to meet?",
+"de": "Welchen Alleinreisenden, echt oder erfunden, würdest du gern treffen?",
+"es": "¿Qué viajero solitario, real o de ficción, te encantaría conocer?",
+"fr": "Quel voyageur solitaire, réel ou imaginaire, aimerais-tu rencontrer ?",
+"it": "Quale viaggiatore solitario, reale o immaginario, ti piacerebbe incontrare?",
+"pt": "Que viajante solitário, real ou fictício, adorarias conhecer?",
+"pt_BR": "Qual viajante solo, real ou fictício, você adoraria conhecer?"
+}
+},
+{
+"id": "solo_travel-098",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect morning look like for you on a trip?",
+"de": "Wie sieht für dich ein perfekter Morgen auf Reisen aus?",
+"es": "¿Cómo es para ti una mañana perfecta de viaje?",
+"fr": "À quoi ressemble pour toi une matinée parfaite en voyage ?",
+"it": "Com'è per te una mattina perfetta in viaggio?",
+"pt": "Como é para ti uma manhã perfeita em viagem?",
+"pt_BR": "Como é para você uma manhã perfeita de viagem?"
+}
+},
+{
+"id": "solo_travel-099",
+"lv": "any",
+"i18n": {
+"en": "What would you tell your younger self about travelling alone?",
+"de": "Was würdest du deinem jüngeren Ich übers Alleinreisen sagen?",
+"es": "¿Qué le dirías a tu yo más joven sobre viajar en solitario?",
+"fr": "Que dirais-tu à ton toi plus jeune à propos du voyage en solo ?",
+"it": "Cosa diresti al te più giovane sul viaggiare da solo?",
+"pt": "O que dirias ao teu eu mais novo sobre viajar sozinho?",
+"pt_BR": "O que você diria para o seu eu mais jovem sobre viajar sozinho?"
+}
+},
+{
+"id": "solo_travel-100",
+"lv": "any",
+"i18n": {
+"en": "Where would you go tomorrow if you could leave on your own?",
+"de": "Wohin würdest du morgen fahren, wenn du allein losziehen könntest?",
+"es": "¿Adónde irías mañana si pudieras salir de viaje por tu cuenta?",
+"fr": "Où irais-tu demain si tu pouvais partir seul ?",
+"it": "Dove andresti domani se potessi partire da solo?",
+"pt": "Para onde irias amanhã se pudesses partir sozinho?",
+"pt_BR": "Para onde você iria amanhã se pudesse viajar sozinho?"
+}
+}
+]
+}

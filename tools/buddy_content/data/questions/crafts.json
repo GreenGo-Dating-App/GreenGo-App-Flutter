@@ -1,0 +1,1305 @@
+{
+ "topic": "crafts",
+ "questions": [
+  {
+   "id": "crafts-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What first made you curious about handmade crafts?",
+    "de": "Was hat dich zum ersten Mal neugierig auf Handarbeit und Basteln gemacht?",
+    "es": "¿Qué fue lo primero que despertó tu curiosidad por las manualidades?",
+    "fr": "Qu'est-ce qui t'a donné envie de t'intéresser aux loisirs créatifs au départ ?",
+    "it": "Che cosa ti ha incuriosito per la prima volta del fai da te e dei lavori manuali?",
+    "pt": "O que é que te despertou a curiosidade pelo artesanato pela primeira vez?",
+    "pt_BR": "O que despertou sua curiosidade por artesanato pela primeira vez?"
+   }
+  },
+  {
+   "id": "crafts-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a handmade object at home that means a lot to you? What is its story?",
+    "de": "Gibt es bei dir zu Hause ein handgemachtes Stück, das dir viel bedeutet? Was ist seine Geschichte?",
+    "es": "¿Hay algún objeto hecho a mano en tu casa que signifique mucho para ti? ¿Cuál es su historia?",
+    "fr": "Y a-t-il chez toi un objet fait main qui compte beaucoup pour toi ? Quelle est son histoire ?",
+    "it": "C'è un oggetto fatto a mano a casa tua che significa molto per te? Qual è la sua storia?",
+    "pt": "Há em tua casa algum objeto feito à mão que signifique muito para ti? Qual é a história dele?",
+    "pt_BR": "Tem algum objeto feito à mão na sua casa que significa muito pra você? Qual é a história dele?"
+   }
+  },
+  {
+   "id": "crafts-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Did anyone in your family knit, sew, carve or make things by hand?",
+    "de": "Hat in deiner Familie jemand gestrickt, genäht, geschnitzt oder anderes von Hand gemacht?",
+    "es": "¿Alguien de tu familia tejía, cosía, tallaba o hacía cosas a mano?",
+    "fr": "Quelqu'un dans ta famille tricotait, cousait, sculptait ou fabriquait des choses à la main ?",
+    "it": "Qualcuno nella tua famiglia lavorava a maglia, cuciva, intagliava o creava cose a mano?",
+    "pt": "Alguém na tua família fazia tricô, costurava, esculpia ou fazia coisas à mão?",
+    "pt_BR": "Alguém da sua família tricotava, costurava, entalhava ou fazia coisas à mão?"
+   }
+  },
+  {
+   "id": "crafts-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Which craft from your country or region do you find most beautiful?",
+    "de": "Welches Handwerk aus deinem Land oder deiner Region findest du am schönsten?",
+    "es": "¿Qué artesanía de tu país o región te parece la más bonita?",
+    "fr": "Quel artisanat de ton pays ou de ta région trouves-tu le plus beau ?",
+    "it": "Quale artigianato del tuo paese o della tua regione trovi più bello?",
+    "pt": "Que artesanato do teu país ou da tua região achas mais bonito?",
+    "pt_BR": "Qual artesanato do seu país ou da sua região você acha mais bonito?"
+   }
+  },
+  {
+   "id": "crafts-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer crafts that are quick and fun, or slow projects that take weeks?",
+    "de": "Magst du lieber schnelle, lustige Bastelprojekte oder langsame Projekte, die Wochen dauern?",
+    "es": "¿Prefieres manualidades rápidas y divertidas o proyectos lentos que llevan semanas?",
+    "fr": "Tu préfères les créations rapides et amusantes ou les projets lents qui prennent des semaines ?",
+    "it": "Preferisci lavoretti veloci e divertenti o progetti lenti che richiedono settimane?",
+    "pt": "Preferes trabalhos rápidos e divertidos ou projetos lentos que levam semanas?",
+    "pt_BR": "Você prefere trabalhos rápidos e divertidos ou projetos lentos que levam semanas?"
+   }
+  },
+  {
+   "id": "crafts-006",
+   "lv": "any",
+   "i18n": {
+    "en": "How does it feel when you finish something you made yourself?",
+    "de": "Wie fühlt es sich für dich an, wenn du etwas Selbstgemachtes fertigstellst?",
+    "es": "¿Qué sientes cuando terminas algo que has hecho tú mismo?",
+    "fr": "Qu'est-ce que tu ressens quand tu termines quelque chose que tu as fait toi-même ?",
+    "it": "Che cosa provi quando finisci qualcosa che hai fatto con le tue mani?",
+    "pt": "O que sentes quando acabas algo que fizeste tu mesmo?",
+    "pt_BR": "O que você sente quando termina algo que você mesmo fez?"
+   }
+  },
+  {
+   "id": "crafts-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Where in your home would you set up your dream craft corner?",
+    "de": "Wo bei dir zu Hause würdest du deine Traum-Bastelecke einrichten?",
+    "es": "¿En qué parte de tu casa montarías tu rincón de manualidades soñado?",
+    "fr": "Où chez toi installerais-tu le coin créatif de tes rêves ?",
+    "it": "In quale angolo di casa tua allestiresti il tuo spazio creativo dei sogni?",
+    "pt": "Em que parte da tua casa montarias o teu cantinho de artesanato de sonho?",
+    "pt_BR": "Em que lugar da sua casa você montaria seu cantinho de artesanato dos sonhos?"
+   }
+  },
+  {
+   "id": "crafts-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like to craft alone in silence, or with music, podcasts or friends around?",
+    "de": "Bastelst du lieber allein in Ruhe oder mit Musik, Podcasts oder Freunden um dich herum?",
+    "es": "¿Te gusta hacer manualidades solo en silencio o con música, pódcasts o amigos cerca?",
+    "fr": "Tu aimes créer seul dans le calme, ou avec de la musique, des podcasts ou des amis autour ?",
+    "it": "Ti piace creare da solo in silenzio, o con musica, podcast o amici intorno?",
+    "pt": "Gostas de fazer artesanato sozinho em silêncio, ou com música, podcasts ou amigos por perto?",
+    "pt_BR": "Você gosta de fazer artesanato sozinho em silêncio ou com música, podcasts ou amigos por perto?"
+   }
+  },
+  {
+   "id": "crafts-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Which material do you love to touch the most: yarn, clay, paper, wood or fabric?",
+    "de": "Welches Material fasst du am liebsten an: Wolle, Ton, Papier, Holz oder Stoff?",
+    "es": "¿Qué material te gusta más tocar: lana, arcilla, papel, madera o tela?",
+    "fr": "Quelle matière aimes-tu le plus toucher : la laine, l'argile, le papier, le bois ou le tissu ?",
+    "it": "Quale materiale ami di più toccare: lana, argilla, carta, legno o stoffa?",
+    "pt": "Que material mais gostas de tocar: lã, barro, papel, madeira ou tecido?",
+    "pt_BR": "Qual material você mais gosta de tocar: lã, argila, papel, madeira ou tecido?"
+   }
+  },
+  {
+   "id": "crafts-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever received a handmade gift? How did it make you feel?",
+    "de": "Hast du schon einmal ein selbstgemachtes Geschenk bekommen? Wie hast du dich dabei gefühlt?",
+    "es": "¿Alguna vez te han regalado algo hecho a mano? ¿Cómo te sentiste?",
+    "fr": "As-tu déjà reçu un cadeau fait main ? Qu'as-tu ressenti ?",
+    "it": "Hai mai ricevuto un regalo fatto a mano? Come ti sei sentito?",
+    "pt": "Já recebeste um presente feito à mão? Como te sentiste?",
+    "pt_BR": "Você já ganhou um presente feito à mão? Como se sentiu?"
+   }
+  },
+  {
+   "id": "crafts-011",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could learn any craft from a master in another country, which would it be?",
+    "de": "Wenn du ein Handwerk bei einem Meister in einem anderen Land lernen könntest, welches wäre es?",
+    "es": "Si pudieras aprender una artesanía con un maestro de otro país, ¿cuál elegirías?",
+    "fr": "Si tu pouvais apprendre un artisanat auprès d'un maître dans un autre pays, lequel choisirais-tu ?",
+    "it": "Se potessi imparare un mestiere artigiano da un maestro in un altro paese, quale sceglieresti?",
+    "pt": "Se pudesses aprender um ofício com um mestre noutro país, qual escolherias?",
+    "pt_BR": "Se você pudesse aprender um artesanato com um mestre em outro país, qual escolheria?"
+   }
+  },
+  {
+   "id": "crafts-012",
+   "lv": "any",
+   "i18n": {
+    "en": "What colours do you find yourself choosing again and again?",
+    "de": "Welche Farben wählst du immer wieder aus?",
+    "es": "¿Qué colores sueles elegir una y otra vez?",
+    "fr": "Quelles couleurs choisis-tu encore et encore ?",
+    "it": "Quali colori ti ritrovi a scegliere sempre?",
+    "pt": "Que cores dás por ti a escolher vezes sem conta?",
+    "pt_BR": "Quais cores você acaba escolhendo sempre?"
+   }
+  },
+  {
+   "id": "crafts-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy following instructions exactly, or do you prefer to improvise?",
+    "de": "Hältst du dich gern genau an Anleitungen, oder improvisierst du lieber?",
+    "es": "¿Disfrutas siguiendo las instrucciones al pie de la letra o prefieres improvisar?",
+    "fr": "Tu aimes suivre les instructions à la lettre, ou tu préfères improviser ?",
+    "it": "Ti piace seguire le istruzioni alla lettera o preferisci improvvisare?",
+    "pt": "Gostas de seguir as instruções à risca ou preferes improvisar?",
+    "pt_BR": "Você gosta de seguir as instruções à risca ou prefere improvisar?"
+   }
+  },
+  {
+   "id": "crafts-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think handmade things have that factory-made things do not?",
+    "de": "Was haben handgemachte Dinge deiner Meinung nach, was Fabrikware nicht hat?",
+    "es": "¿Qué crees que tienen las cosas hechas a mano que no tienen las de fábrica?",
+    "fr": "Selon toi, qu'ont les objets faits main que les objets industriels n'ont pas ?",
+    "it": "Secondo te, che cosa hanno gli oggetti fatti a mano che quelli industriali non hanno?",
+    "pt": "O que achas que as coisas feitas à mão têm que as de fábrica não têm?",
+    "pt_BR": "O que você acha que as coisas feitas à mão têm que as de fábrica não têm?"
+   }
+  },
+  {
+   "id": "crafts-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever visited a craft market or workshop while travelling? What did you see?",
+    "de": "Hast du auf Reisen schon einmal einen Kunsthandwerksmarkt oder eine Werkstatt besucht? Was hast du gesehen?",
+    "es": "¿Has visitado alguna vez un mercado artesanal o un taller durante un viaje? ¿Qué viste?",
+    "fr": "As-tu déjà visité un marché d'artisans ou un atelier en voyage ? Qu'as-tu vu ?",
+    "it": "Hai mai visitato un mercato artigiano o una bottega durante un viaggio? Che cosa hai visto?",
+    "pt": "Já visitaste algum mercado de artesanato ou oficina numa viagem? O que viste?",
+    "pt_BR": "Você já visitou uma feira de artesanato ou um ateliê durante uma viagem? O que viu?"
+   }
+  },
+  {
+   "id": "crafts-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Which craft do you think would be the most relaxing for you, and why?",
+    "de": "Welches Handwerk wäre für dich wohl am entspannendsten, und warum?",
+    "es": "¿Qué manualidad crees que te relajaría más, y por qué?",
+    "fr": "Quel artisanat serait le plus relaxant pour toi, à ton avis, et pourquoi ?",
+    "it": "Quale attività manuale pensi che ti rilasserebbe di più, e perché?",
+    "pt": "Que tipo de artesanato achas que seria o mais relaxante para ti, e porquê?",
+    "pt_BR": "Qual tipo de artesanato você acha que seria o mais relaxante pra você, e por quê?"
+   }
+  },
+  {
+   "id": "crafts-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a craft you once tried and gave up? Would you give it another chance?",
+    "de": "Gibt es ein Handwerk, das du mal ausprobiert und aufgegeben hast? Würdest du ihm noch eine Chance geben?",
+    "es": "¿Hay alguna manualidad que probaste y dejaste? ¿Le darías otra oportunidad?",
+    "fr": "Y a-t-il un artisanat que tu as essayé puis abandonné ? Lui donnerais-tu une seconde chance ?",
+    "it": "C'è un'attività manuale che hai provato e poi abbandonato? Le daresti un'altra possibilità?",
+    "pt": "Há algum artesanato que experimentaste e deixaste? Darias-lhe outra oportunidade?",
+    "pt_BR": "Tem algum artesanato que você experimentou e largou? Daria outra chance pra ele?"
+   }
+  },
+  {
+   "id": "crafts-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Who would you most like to make a handmade gift for, and what would it be?",
+    "de": "Für wen würdest du am liebsten ein selbstgemachtes Geschenk machen, und was wäre es?",
+    "es": "¿Para quién te gustaría más hacer un regalo a mano, y qué sería?",
+    "fr": "Pour qui aimerais-tu le plus fabriquer un cadeau fait main, et ce serait quoi ?",
+    "it": "Per chi ti piacerebbe di più creare un regalo fatto a mano, e che cosa sarebbe?",
+    "pt": "Para quem mais gostarias de fazer um presente à mão, e o que seria?",
+    "pt_BR": "Pra quem você mais gostaria de fazer um presente à mão, e o que seria?"
+   }
+  },
+  {
+   "id": "crafts-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you keep things to reuse for crafts, like jars, boxes or fabric scraps?",
+    "de": "Hebst du Dinge zum Basteln auf, zum Beispiel Gläser, Schachteln oder Stoffreste?",
+    "es": "¿Guardas cosas para reutilizarlas en manualidades, como frascos, cajas o retales?",
+    "fr": "Gardes-tu des choses pour les réutiliser en bricolage, comme des bocaux, des boîtes ou des chutes de tissu ?",
+    "it": "Conservi cose da riutilizzare per i lavoretti, come barattoli, scatole o ritagli di stoffa?",
+    "pt": "Guardas coisas para reaproveitar no artesanato, como frascos, caixas ou retalhos?",
+    "pt_BR": "Você guarda coisas pra reaproveitar no artesanato, como potes, caixas ou retalhos?"
+   }
+  },
+  {
+   "id": "crafts-020",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite season for crafting, and what do you like to make then?",
+    "de": "In welcher Jahreszeit bastelst du am liebsten, und was machst du dann gern?",
+    "es": "¿Cuál es tu estación favorita para hacer manualidades y qué te gusta hacer entonces?",
+    "fr": "Quelle est ta saison préférée pour créer, et qu'aimes-tu fabriquer à ce moment-là ?",
+    "it": "Qual è la tua stagione preferita per creare, e che cosa ti piace fare in quel periodo?",
+    "pt": "Qual é a tua estação preferida para fazer artesanato, e o que gostas de fazer nessa altura?",
+    "pt_BR": "Qual é a sua estação favorita pra fazer artesanato, e o que você gosta de fazer nessa época?"
+   }
+  },
+  {
+   "id": "crafts-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather make something useful or something purely decorative?",
+    "de": "Machst du lieber etwas Nützliches oder etwas rein Dekoratives?",
+    "es": "¿Prefieres hacer algo útil o algo puramente decorativo?",
+    "fr": "Tu préfères fabriquer quelque chose d'utile ou de purement décoratif ?",
+    "it": "Preferisci creare qualcosa di utile o qualcosa di puramente decorativo?",
+    "pt": "Preferes fazer algo útil ou algo puramente decorativo?",
+    "pt_BR": "Você prefere fazer algo útil ou algo puramente decorativo?"
+   }
+  },
+  {
+   "id": "crafts-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Which handmade tradition would you love to share with a friend from another culture?",
+    "de": "Welche Handwerkstradition würdest du gern mit einem Freund aus einer anderen Kultur teilen?",
+    "es": "¿Qué tradición artesanal te gustaría compartir con un amigo de otra cultura?",
+    "fr": "Quelle tradition artisanale aimerais-tu partager avec un ami d'une autre culture ?",
+    "it": "Quale tradizione artigiana ti piacerebbe condividere con un amico di un'altra cultura?",
+    "pt": "Que tradição artesanal gostarias de partilhar com um amigo de outra cultura?",
+    "pt_BR": "Qual tradição artesanal você gostaria de compartilhar com um amigo de outra cultura?"
+   }
+  },
+  {
+   "id": "crafts-023",
+   "lv": "any",
+   "i18n": {
+    "en": "How much time could you happily spend on a craft each week?",
+    "de": "Wie viel Zeit könntest du pro Woche gern mit einem Handwerk verbringen?",
+    "es": "¿Cuánto tiempo podrías dedicar con gusto a una manualidad cada semana?",
+    "fr": "Combien de temps pourrais-tu consacrer avec plaisir à une activité créative chaque semaine ?",
+    "it": "Quanto tempo potresti dedicare volentieri a un'attività manuale ogni settimana?",
+    "pt": "Quanto tempo poderias dedicar com gosto a um artesanato por semana?",
+    "pt_BR": "Quanto tempo você poderia dedicar com prazer a um artesanato por semana?"
+   }
+  },
+  {
+   "id": "crafts-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a maker you admire, online or in real life? What do you like about their work?",
+    "de": "Gibt es jemanden, dessen Handarbeiten du bewunderst, online oder im echten Leben? Was gefällt dir daran?",
+    "es": "¿Hay algún artesano que admires, en internet o en la vida real? ¿Qué te gusta de su trabajo?",
+    "fr": "Y a-t-il un créateur que tu admires, en ligne ou dans la vraie vie ? Qu'aimes-tu dans son travail ?",
+    "it": "C'è un artigiano o creativo che ammiri, online o nella vita reale? Che cosa ti piace del suo lavoro?",
+    "pt": "Há algum artesão que admires, online ou na vida real? O que gostas no trabalho dele?",
+    "pt_BR": "Tem algum artesão que você admira, na internet ou na vida real? O que você gosta no trabalho dele?"
+   }
+  },
+  {
+   "id": "crafts-025",
+   "lv": "any",
+   "i18n": {
+    "en": "If your home had one wall for your own creations, what would you put on it?",
+    "de": "Wenn du zu Hause eine Wand nur für deine eigenen Werke hättest, was würdest du daran hängen?",
+    "es": "Si tuvieras en casa una pared solo para tus creaciones, ¿qué pondrías en ella?",
+    "fr": "Si tu avais chez toi un mur rien que pour tes créations, qu'y mettrais-tu ?",
+    "it": "Se a casa avessi una parete solo per le tue creazioni, che cosa ci metteresti?",
+    "pt": "Se tivesses em casa uma parede só para as tuas criações, o que porias lá?",
+    "pt_BR": "Se você tivesse em casa uma parede só pras suas criações, o que colocaria nela?"
+   }
+  },
+  {
+   "id": "crafts-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What did you love making as a child: drawings, paper planes, clay figures or something else?",
+    "de": "Was hast du als Kind am liebsten gebastelt: Bilder, Papierflieger, Knetfiguren oder etwas anderes?",
+    "es": "¿Qué te encantaba hacer de pequeño: dibujos, aviones de papel, figuras de plastilina u otra cosa?",
+    "fr": "Qu'adorais-tu fabriquer enfant : des dessins, des avions en papier, des figurines en pâte à modeler ou autre chose ?",
+    "it": "Che cosa amavi creare da bambino: disegni, aeroplanini di carta, figure di plastilina o altro?",
+    "pt": "O que adoravas fazer em criança: desenhos, aviões de papel, bonecos de plasticina ou outra coisa?",
+    "pt_BR": "O que você adorava fazer quando criança: desenhos, aviõezinhos de papel, bonecos de massinha ou outra coisa?"
+   }
+  },
+  {
+   "id": "crafts-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think crafting has changed the way you look at everyday objects?",
+    "de": "Glaubst du, dass Handarbeit deinen Blick auf Alltagsgegenstände verändert hat?",
+    "es": "¿Crees que las manualidades han cambiado tu forma de ver los objetos cotidianos?",
+    "fr": "Penses-tu que les loisirs créatifs ont changé ta façon de voir les objets du quotidien ?",
+    "it": "Pensi che creare con le mani abbia cambiato il tuo modo di guardare gli oggetti di tutti i giorni?",
+    "pt": "Achas que o artesanato mudou a forma como olhas para os objetos do dia a dia?",
+    "pt_BR": "Você acha que o artesanato mudou o jeito como você olha pros objetos do dia a dia?"
+   }
+  },
+  {
+   "id": "crafts-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which would you choose for a weekend workshop: pottery, weaving, woodwork or jewellery?",
+    "de": "Was würdest du für einen Wochenendkurs wählen: Töpfern, Weben, Holzarbeiten oder Schmuck?",
+    "es": "¿Qué elegirías para un taller de fin de semana: cerámica, tejido en telar, madera o joyería?",
+    "fr": "Que choisirais-tu pour un atelier le temps d'un week-end : poterie, tissage, travail du bois ou bijoux ?",
+    "it": "Che cosa sceglieresti per un laboratorio nel weekend: ceramica, tessitura, legno o gioielli?",
+    "pt": "O que escolherias para um workshop de fim de semana: olaria, tecelagem, madeira ou joalharia?",
+    "pt_BR": "O que você escolheria pra uma oficina de fim de semana: cerâmica, tecelagem, marcenaria ou bijuteria?"
+   }
+  },
+  {
+   "id": "crafts-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you love to make with your own hands for your home?",
+    "de": "Was würdest du gern mit deinen eigenen Händen für dein Zuhause machen?",
+    "es": "¿Qué te encantaría hacer con tus propias manos para tu casa?",
+    "fr": "Qu'aimerais-tu fabriquer de tes propres mains pour ta maison ?",
+    "it": "Che cosa ti piacerebbe realizzare con le tue mani per la tua casa?",
+    "pt": "O que adorarias fazer com as tuas próprias mãos para a tua casa?",
+    "pt_BR": "O que você adoraria fazer com as próprias mãos pra sua casa?"
+   }
+  },
+  {
+   "id": "crafts-030",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy the planning part of a project or do you just want to start making?",
+    "de": "Magst du die Planungsphase eines Projekts, oder willst du einfach gleich loslegen?",
+    "es": "¿Disfrutas la parte de planificar un proyecto o prefieres ponerte a hacerlo enseguida?",
+    "fr": "Tu aimes la phase de préparation d'un projet ou tu veux juste te lancer tout de suite ?",
+    "it": "Ti piace la fase di progettazione o preferisci iniziare subito a creare?",
+    "pt": "Gostas da parte de planear um projeto ou queres simplesmente começar logo?",
+    "pt_BR": "Você curte a parte de planejar um projeto ou prefere já começar a fazer?"
+   }
+  },
+  {
+   "id": "crafts-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which crafts are popular among people your age where you live?",
+    "de": "Welche Handarbeiten sind bei Leuten in deinem Alter dort, wo du lebst, beliebt?",
+    "es": "¿Qué manualidades son populares entre la gente de tu edad donde vives?",
+    "fr": "Quels loisirs créatifs sont populaires chez les gens de ton âge là où tu vis ?",
+    "it": "Quali attività manuali sono di moda tra le persone della tua età dove vivi?",
+    "pt": "Que tipos de artesanato são populares entre as pessoas da tua idade onde vives?",
+    "pt_BR": "Quais tipos de artesanato são populares entre as pessoas da sua idade onde você mora?"
+   }
+  },
+  {
+   "id": "crafts-032",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually react when a project does not turn out as planned?",
+    "de": "Wie reagierst du normalerweise, wenn ein Projekt nicht so gelingt wie geplant?",
+    "es": "¿Cómo sueles reaccionar cuando un proyecto no sale como esperabas?",
+    "fr": "Comment réagis-tu d'habitude quand un projet ne se passe pas comme prévu ?",
+    "it": "Come reagisci di solito quando un progetto non viene come previsto?",
+    "pt": "Como costumas reagir quando um projeto não sai como planeaste?",
+    "pt_BR": "Como você costuma reagir quando um projeto não sai como planejado?"
+   }
+  },
+  {
+   "id": "crafts-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you like to join a knitting circle, a pottery class or a maker space? Why?",
+    "de": "Würdest du gern einem Strickkreis, einem Töpferkurs oder einem Makerspace beitreten? Warum?",
+    "es": "¿Te gustaría unirte a un grupo de tejido, a una clase de cerámica o a un espacio maker? ¿Por qué?",
+    "fr": "Aimerais-tu rejoindre un cercle de tricot, un cours de poterie ou un atelier partagé ? Pourquoi ?",
+    "it": "Ti piacerebbe entrare in un gruppo di maglia, un corso di ceramica o un makerspace? Perché?",
+    "pt": "Gostavas de entrar num grupo de tricô, numa aula de olaria ou num espaço maker? Porquê?",
+    "pt_BR": "Você gostaria de entrar num grupo de tricô, numa aula de cerâmica ou num espaço maker? Por quê?"
+   }
+  },
+  {
+   "id": "crafts-034",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something handmade you would love to own one day, even if you cannot make it yet?",
+    "de": "Welches handgemachte Stück hättest du gern eines Tages, auch wenn du es noch nicht selbst machen kannst?",
+    "es": "¿Qué objeto hecho a mano te encantaría tener algún día, aunque todavía no sepas hacerlo?",
+    "fr": "Quel objet fait main aimerais-tu posséder un jour, même si tu ne sais pas encore le faire ?",
+    "it": "Quale oggetto fatto a mano ti piacerebbe avere un giorno, anche se ancora non sai realizzarlo?",
+    "pt": "Que objeto feito à mão adorarias ter um dia, mesmo que ainda não o saibas fazer?",
+    "pt_BR": "Qual objeto feito à mão você adoraria ter um dia, mesmo que ainda não saiba fazer?"
+   }
+  },
+  {
+   "id": "crafts-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think everyone can learn a craft, or is it a natural talent?",
+    "de": "Glaubst du, dass jeder ein Handwerk lernen kann, oder ist es angeborenes Talent?",
+    "es": "¿Crees que cualquiera puede aprender una artesanía o es un talento natural?",
+    "fr": "Penses-tu que tout le monde peut apprendre un artisanat, ou est-ce un talent inné ?",
+    "it": "Pensi che chiunque possa imparare un mestiere manuale, o che sia un talento naturale?",
+    "pt": "Achas que qualquer pessoa pode aprender um ofício manual, ou é um talento natural?",
+    "pt_BR": "Você acha que qualquer pessoa pode aprender um artesanato ou é um talento natural?"
+   }
+  },
+  {
+   "id": "crafts-036",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel about making mistakes when you learn something new with your hands?",
+    "de": "Wie gehst du damit um, Fehler zu machen, wenn du etwas Neues mit den Händen lernst?",
+    "es": "¿Qué te parece equivocarte cuando aprendes algo nuevo con las manos?",
+    "fr": "Comment vis-tu le fait de te tromper quand tu apprends quelque chose de nouveau avec tes mains ?",
+    "it": "Come vivi gli errori quando impari qualcosa di nuovo con le mani?",
+    "pt": "Como lidas com os erros quando aprendes algo novo com as mãos?",
+    "pt_BR": "Como você lida com os erros quando aprende algo novo com as mãos?"
+   }
+  },
+  {
+   "id": "crafts-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Which handmade item from another country would you love to bring home as a souvenir?",
+    "de": "Welches handgemachte Stück aus einem anderen Land würdest du gern als Souvenir mitbringen?",
+    "es": "¿Qué objeto artesanal de otro país te encantaría llevarte como recuerdo?",
+    "fr": "Quel objet artisanal d'un autre pays aimerais-tu rapporter en souvenir ?",
+    "it": "Quale oggetto artigianale di un altro paese ti piacerebbe portare a casa come ricordo?",
+    "pt": "Que peça artesanal de outro país adorarias trazer como recordação?",
+    "pt_BR": "Qual peça artesanal de outro país você adoraria trazer como lembrança?"
+   }
+  },
+  {
+   "id": "crafts-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like crafts that make a mess, like clay and paint, or tidy ones like paper and thread?",
+    "de": "Magst du Handarbeiten, die Dreck machen, wie Ton und Farbe, oder saubere wie Papier und Faden?",
+    "es": "¿Te gustan las manualidades que ensucian, como la arcilla y la pintura, o las limpias, como el papel y el hilo?",
+    "fr": "Tu aimes les activités salissantes comme l'argile et la peinture, ou plutôt les propres comme le papier et le fil ?",
+    "it": "Ti piacciono i lavori che sporcano, come argilla e colori, o quelli puliti, come carta e filo?",
+    "pt": "Gostas de artesanato que suja, como barro e tinta, ou do mais arrumado, como papel e linha?",
+    "pt_BR": "Você gosta de artesanato que faz sujeira, como argila e tinta, ou do mais limpinho, como papel e linha?"
+   }
+  },
+  {
+   "id": "crafts-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What would your perfect lazy afternoon of crafting look like?",
+    "de": "Wie sähe für dich ein perfekter gemütlicher Bastelnachmittag aus?",
+    "es": "¿Cómo sería tu tarde perfecta y tranquila de manualidades?",
+    "fr": "À quoi ressemblerait ton après-midi créatif idéal et tranquille ?",
+    "it": "Come sarebbe il tuo pomeriggio perfetto e rilassato dedicato ai lavori manuali?",
+    "pt": "Como seria a tua tarde perfeita e descontraída de artesanato?",
+    "pt_BR": "Como seria sua tarde perfeita e tranquila de artesanato?"
+   }
+  },
+  {
+   "id": "crafts-040",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a skill from a grandparent or older relative you wish you had learned?",
+    "de": "Gibt es eine Fertigkeit von Großeltern oder älteren Verwandten, die du gern gelernt hättest?",
+    "es": "¿Hay alguna habilidad de tus abuelos o familiares mayores que te hubiera gustado aprender?",
+    "fr": "Y a-t-il un savoir-faire de tes grands-parents ou d'un aîné que tu aurais aimé apprendre ?",
+    "it": "C'è un'abilità dei tuoi nonni o di un parente più anziano che avresti voluto imparare?",
+    "pt": "Há alguma habilidade dos teus avós ou de um familiar mais velho que gostarias de ter aprendido?",
+    "pt_BR": "Tem alguma habilidade dos seus avós ou de algum parente mais velho que você gostaria de ter aprendido?"
+   }
+  },
+  {
+   "id": "crafts-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which craft would you like to try first on this path, and why?",
+    "de": "Welches Handwerk möchtest du auf diesem Weg als Erstes ausprobieren, und warum?",
+    "es": "¿Qué manualidad te gustaría probar primero en este camino, y por qué?",
+    "fr": "Quel artisanat aimerais-tu essayer en premier sur ce parcours, et pourquoi ?",
+    "it": "Quale attività manuale vorresti provare per prima in questo percorso, e perché?",
+    "pt": "Que tipo de artesanato gostavas de experimentar primeiro neste percurso, e porquê?",
+    "pt_BR": "Qual artesanato você gostaria de experimentar primeiro nessa jornada, e por quê?"
+   }
+  },
+  {
+   "id": "crafts-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What craft supplies do you already have at home?",
+    "de": "Welche Bastelmaterialien hast du schon zu Hause?",
+    "es": "¿Qué materiales de manualidades tienes ya en casa?",
+    "fr": "Quel matériel créatif as-tu déjà à la maison ?",
+    "it": "Quali materiali per lavoretti hai già a casa?",
+    "pt": "Que materiais de artesanato já tens em casa?",
+    "pt_BR": "Quais materiais de artesanato você já tem em casa?"
+   }
+  },
+  {
+   "id": "crafts-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever folded an origami model? What was it?",
+    "de": "Hast du schon einmal eine Origami-Figur gefaltet? Was war es?",
+    "es": "¿Has hecho alguna vez una figura de origami? ¿Cuál fue?",
+    "fr": "As-tu déjà plié un modèle d'origami ? Lequel ?",
+    "it": "Hai mai piegato un modello di origami? Che cos'era?",
+    "pt": "Já dobraste algum modelo de origami? Qual foi?",
+    "pt_BR": "Você já dobrou algum origami? Qual foi?"
+   }
+  },
+  {
+   "id": "crafts-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather start with knitting or crochet? What attracts you to it?",
+    "de": "Möchtest du lieber mit Stricken oder Häkeln anfangen? Was reizt dich daran?",
+    "es": "¿Prefieres empezar con dos agujas o con ganchillo? ¿Qué te atrae de ello?",
+    "fr": "Tu préfères commencer par le tricot ou le crochet ? Qu'est-ce qui t'attire ?",
+    "it": "Preferisci iniziare con la maglia o con l'uncinetto? Che cosa ti attira?",
+    "pt": "Preferes começar pelo tricô ou pelo croché? O que te atrai nisso?",
+    "pt_BR": "Você prefere começar pelo tricô ou pelo crochê? O que te atrai nisso?"
+   }
+  },
+  {
+   "id": "crafts-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Who would you make your very first handmade card for?",
+    "de": "Für wen würdest du deine allererste selbstgemachte Karte basteln?",
+    "es": "¿Para quién harías tu primera tarjeta hecha a mano?",
+    "fr": "Pour qui ferais-tu ta toute première carte faite main ?",
+    "it": "Per chi faresti il tuo primissimo biglietto fatto a mano?",
+    "pt": "Para quem farias o teu primeiro postal feito à mão?",
+    "pt_BR": "Pra quem você faria seu primeiro cartão feito à mão?"
+   }
+  },
+  {
+   "id": "crafts-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about sewing on a button or mending a small hole yourself?",
+    "de": "Wie findest du es, selbst einen Knopf anzunähen oder ein kleines Loch zu flicken?",
+    "es": "¿Qué te parece coser un botón o arreglar un agujerito tú mismo?",
+    "fr": "Que penses-tu de recoudre un bouton ou de repriser un petit trou toi-même ?",
+    "it": "Come ti senti all'idea di attaccare un bottone o rammendare un buchino da solo?",
+    "pt": "O que achas de pregar um botão ou remendar um pequeno buraco sozinho?",
+    "pt_BR": "O que você acha de pregar um botão ou remendar um furinho sozinho?"
+   }
+  },
+  {
+   "id": "crafts-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which simple embroidery design would you stitch first: a flower, a word or something else?",
+    "de": "Welches einfache Stickmotiv würdest du zuerst sticken: eine Blume, ein Wort oder etwas anderes?",
+    "es": "¿Qué diseño sencillo bordarías primero: una flor, una palabra u otra cosa?",
+    "fr": "Quel motif simple broderais-tu en premier : une fleur, un mot ou autre chose ?",
+    "it": "Quale disegno semplice ricameresti per primo: un fiore, una parola o altro?",
+    "pt": "Que desenho simples bordarias primeiro: uma flor, uma palavra ou outra coisa?",
+    "pt_BR": "Qual desenho simples você bordaria primeiro: uma flor, uma palavra ou outra coisa?"
+   }
+  },
+  {
+   "id": "crafts-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you like to shape from clay if you had a lump in your hands right now?",
+    "de": "Was würdest du formen, wenn du jetzt gerade einen Klumpen Ton in den Händen hättest?",
+    "es": "¿Qué modelarías si tuvieras ahora mismo un trozo de arcilla en las manos?",
+    "fr": "Que façonnerais-tu si tu avais un morceau d'argile entre les mains maintenant ?",
+    "it": "Che cosa modelleresti se avessi in questo momento un pezzo di argilla tra le mani?",
+    "pt": "O que moldarias se tivesses agora um pedaço de barro nas mãos?",
+    "pt_BR": "O que você moldaria se tivesse agora um pedaço de argila nas mãos?"
+   }
+  },
+  {
+   "id": "crafts-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which everyday object at home could you turn into something new and creative?",
+    "de": "Welchen Alltagsgegenstand bei dir zu Hause könntest du in etwas Neues, Kreatives verwandeln?",
+    "es": "¿Qué objeto cotidiano de tu casa podrías convertir en algo nuevo y creativo?",
+    "fr": "Quel objet du quotidien chez toi pourrais-tu transformer en quelque chose de nouveau et créatif ?",
+    "it": "Quale oggetto di uso quotidiano a casa tua potresti trasformare in qualcosa di nuovo e creativo?",
+    "pt": "Que objeto do dia a dia em tua casa poderias transformar em algo novo e criativo?",
+    "pt_BR": "Qual objeto do dia a dia na sua casa você poderia transformar em algo novo e criativo?"
+   }
+  },
+  {
+   "id": "crafts-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a good place with natural light where you could craft?",
+    "de": "Hast du einen guten Platz mit Tageslicht, an dem du basteln könntest?",
+    "es": "¿Tienes un buen lugar con luz natural donde podrías hacer manualidades?",
+    "fr": "As-tu un bon endroit avec de la lumière naturelle pour tes créations ?",
+    "it": "Hai un buon posto con luce naturale dove poter creare?",
+    "pt": "Tens um bom sítio com luz natural onde possas fazer artesanato?",
+    "pt_BR": "Você tem um bom lugar com luz natural onde poderia fazer artesanato?"
+   }
+  },
+  {
+   "id": "crafts-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What small project would make you proud to finish in your first month?",
+    "de": "Welches kleine Projekt würde dich stolz machen, wenn du es im ersten Monat fertigstellst?",
+    "es": "¿Qué pequeño proyecto te haría sentir orgulloso de terminar en tu primer mes?",
+    "fr": "Quel petit projet serais-tu fier de terminer pendant ton premier mois ?",
+    "it": "Quale piccolo progetto ti renderebbe orgoglioso di finire nel tuo primo mese?",
+    "pt": "Que pequeno projeto te deixaria orgulhoso de terminar no teu primeiro mês?",
+    "pt_BR": "Qual pequeno projeto te deixaria orgulhoso de terminar no seu primeiro mês?"
+   }
+  },
+  {
+   "id": "crafts-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer learning from videos, books, or someone showing you in person?",
+    "de": "Lernst du lieber mit Videos, Büchern oder wenn dir jemand es persönlich zeigt?",
+    "es": "¿Prefieres aprender con vídeos, libros o con alguien que te enseñe en persona?",
+    "fr": "Tu préfères apprendre avec des vidéos, des livres ou avec quelqu'un qui te montre en personne ?",
+    "it": "Preferisci imparare con video, libri o con qualcuno che ti mostra di persona?",
+    "pt": "Preferes aprender com vídeos, livros ou com alguém que te mostre pessoalmente?",
+    "pt_BR": "Você prefere aprender com vídeos, livros ou com alguém te mostrando pessoalmente?"
+   }
+  },
+  {
+   "id": "crafts-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which colour of yarn or paper would you pick for your first project?",
+    "de": "Welche Farbe würdest du für die Wolle oder das Papier deines ersten Projekts wählen?",
+    "es": "¿Qué color de lana o de papel elegirías para tu primer proyecto?",
+    "fr": "Quelle couleur de laine ou de papier choisirais-tu pour ton premier projet ?",
+    "it": "Quale colore di lana o di carta sceglieresti per il tuo primo progetto?",
+    "pt": "Que cor de lã ou de papel escolherias para o teu primeiro projeto?",
+    "pt_BR": "Qual cor de lã ou de papel você escolheria pro seu primeiro projeto?"
+   }
+  },
+  {
+   "id": "crafts-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever made a friendship bracelet? Who did you give it to?",
+    "de": "Hast du schon einmal ein Freundschaftsarmband geknüpft? Wem hast du es geschenkt?",
+    "es": "¿Has hecho alguna vez una pulsera de la amistad? ¿A quién se la regalaste?",
+    "fr": "As-tu déjà fait un bracelet brésilien ? À qui l'as-tu offert ?",
+    "it": "Hai mai fatto un braccialetto dell'amicizia? A chi l'hai regalato?",
+    "pt": "Já fizeste alguma pulseira da amizade? A quem a deste?",
+    "pt_BR": "Você já fez uma pulseira da amizade? Pra quem você deu?"
+   }
+  },
+  {
+   "id": "crafts-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What part of learning a new craft feels hardest for you at the start?",
+    "de": "Was fällt dir am Anfang beim Lernen eines neuen Handwerks am schwersten?",
+    "es": "¿Qué parte de aprender una nueva manualidad te resulta más difícil al principio?",
+    "fr": "Qu'est-ce qui te semble le plus difficile au début quand tu apprends un nouvel artisanat ?",
+    "it": "Quale parte dell'imparare un nuovo lavoro manuale ti sembra più difficile all'inizio?",
+    "pt": "Que parte de aprender um novo artesanato te parece mais difícil no início?",
+    "pt_BR": "Qual parte de aprender um novo artesanato parece mais difícil pra você no começo?"
+   }
+  },
+  {
+   "id": "crafts-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you enjoy a scarf as your first knitting project, or something smaller?",
+    "de": "Wäre ein Schal ein schönes erstes Strickprojekt für dich, oder lieber etwas Kleineres?",
+    "es": "¿Te gustaría una bufanda como primer proyecto de punto, o algo más pequeño?",
+    "fr": "Une écharpe te plairait-elle comme premier projet de tricot, ou plutôt quelque chose de plus petit ?",
+    "it": "Ti piacerebbe una sciarpa come primo progetto a maglia, o qualcosa di più piccolo?",
+    "pt": "Gostavas de fazer um cachecol como primeiro projeto de tricô, ou algo mais pequeno?",
+    "pt_BR": "Você curtiria um cachecol como primeiro projeto de tricô ou algo menor?"
+   }
+  },
+  {
+   "id": "crafts-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which natural materials could you collect near your home for a craft?",
+    "de": "Welche Naturmaterialien könntest du in der Nähe deines Zuhauses für ein Bastelprojekt sammeln?",
+    "es": "¿Qué materiales naturales podrías recoger cerca de tu casa para una manualidad?",
+    "fr": "Quels matériaux naturels pourrais-tu ramasser près de chez toi pour une création ?",
+    "it": "Quali materiali naturali potresti raccogliere vicino a casa per un lavoretto?",
+    "pt": "Que materiais naturais poderias apanhar perto de casa para um trabalho manual?",
+    "pt_BR": "Quais materiais naturais você poderia coletar perto de casa pra um artesanato?"
+   }
+  },
+  {
+   "id": "crafts-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How patient do you feel when counting stitches or measuring carefully?",
+    "de": "Wie geduldig bist du, wenn du Maschen zählst oder sorgfältig abmisst?",
+    "es": "¿Cuánta paciencia tienes al contar puntos o medir con cuidado?",
+    "fr": "Te sens-tu patient quand tu comptes des mailles ou que tu mesures soigneusement ?",
+    "it": "Quanta pazienza hai quando conti i punti o misuri con attenzione?",
+    "pt": "Quão paciente te sentes quando contas pontos ou medes com cuidado?",
+    "pt_BR": "Quanta paciência você tem pra contar pontos ou medir com cuidado?"
+   }
+  },
+  {
+   "id": "crafts-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you like to decorate with paint or stamps: a bag, a box or something else?",
+    "de": "Was würdest du gern mit Farbe oder Stempeln verzieren: eine Tasche, eine Schachtel oder etwas anderes?",
+    "es": "¿Qué te gustaría decorar con pintura o sellos: una bolsa, una caja u otra cosa?",
+    "fr": "Qu'aimerais-tu décorer avec de la peinture ou des tampons : un sac, une boîte ou autre chose ?",
+    "it": "Che cosa ti piacerebbe decorare con colori o timbri: una borsa, una scatola o altro?",
+    "pt": "O que gostavas de decorar com tinta ou carimbos: um saco, uma caixa ou outra coisa?",
+    "pt_BR": "O que você gostaria de decorar com tinta ou carimbos: uma bolsa, uma caixa ou outra coisa?"
+   }
+  },
+  {
+   "id": "crafts-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which handmade gift would you like to be able to make by the end of this year?",
+    "de": "Welches selbstgemachte Geschenk möchtest du bis Ende dieses Jahres machen können?",
+    "es": "¿Qué regalo hecho a mano te gustaría saber hacer al final de este año de aprendizaje?",
+    "fr": "Quel cadeau fait main aimerais-tu savoir fabriquer à la fin de cette année d'apprentissage ?",
+    "it": "Quale regalo fatto a mano vorresti saper fare alla fine di quest'anno di percorso?",
+    "pt": "Que presente feito à mão gostavas de saber fazer no fim deste ano de aprendizagem?",
+    "pt_BR": "Qual presente feito à mão você gostaria de saber fazer no fim deste ano de aprendizado?"
+   }
+  },
+  {
+   "id": "crafts-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a good pair of scissors you use only for crafts?",
+    "de": "Hast du eine gute Schere, die du nur zum Basteln benutzt?",
+    "es": "¿Tienes unas buenas tijeras que uses solo para manualidades?",
+    "fr": "As-tu une bonne paire de ciseaux réservée aux loisirs créatifs ?",
+    "it": "Hai un buon paio di forbici che usi solo per i lavori manuali?",
+    "pt": "Tens uma boa tesoura que uses só para artesanato?",
+    "pt_BR": "Você tem uma boa tesoura que usa só pra artesanato?"
+   }
+  },
+  {
+   "id": "crafts-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which craft would you love to try with a child, a friend or a family member?",
+    "de": "Welches Handwerk würdest du gern mit einem Kind, einem Freund oder jemandem aus der Familie ausprobieren?",
+    "es": "¿Qué manualidad te encantaría probar con un niño, un amigo o alguien de tu familia?",
+    "fr": "Quelle activité créative aimerais-tu essayer avec un enfant, un ami ou un proche ?",
+    "it": "Quale attività manuale ti piacerebbe provare con un bambino, un amico o un familiare?",
+    "pt": "Que artesanato adorarias experimentar com uma criança, um amigo ou alguém da família?",
+    "pt_BR": "Qual artesanato você adoraria experimentar com uma criança, um amigo ou alguém da família?"
+   }
+  },
+  {
+   "id": "crafts-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you hope crafting will bring into your daily life?",
+    "de": "Was erhoffst du dir vom Basteln und Werken für deinen Alltag?",
+    "es": "¿Qué esperas que las manualidades aporten a tu día a día?",
+    "fr": "Qu'espères-tu que les loisirs créatifs apportent à ton quotidien ?",
+    "it": "Che cosa speri che i lavori manuali portino nella tua vita di tutti i giorni?",
+    "pt": "O que esperas que o artesanato traga ao teu dia a dia?",
+    "pt_BR": "O que você espera que o artesanato traga pro seu dia a dia?"
+   }
+  },
+  {
+   "id": "crafts-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather make jewellery for yourself or for others?",
+    "de": "Würdest du Schmuck lieber für dich selbst oder für andere machen?",
+    "es": "¿Preferirías hacer joyas para ti o para otras personas?",
+    "fr": "Tu préfères fabriquer des bijoux pour toi ou pour les autres ?",
+    "it": "Preferiresti creare gioielli per te o per gli altri?",
+    "pt": "Preferias fazer bijutaria para ti ou para os outros?",
+    "pt_BR": "Você prefere fazer bijuterias pra você ou pros outros?"
+   }
+  },
+  {
+   "id": "crafts-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is one small craft habit you could start this week?",
+    "de": "Welche kleine Bastelgewohnheit könntest du diese Woche beginnen?",
+    "es": "¿Qué pequeño hábito creativo podrías empezar esta semana?",
+    "fr": "Quelle petite habitude créative pourrais-tu commencer cette semaine ?",
+    "it": "Quale piccola abitudine creativa potresti iniziare questa settimana?",
+    "pt": "Que pequeno hábito de artesanato poderias começar esta semana?",
+    "pt_BR": "Qual pequeno hábito de artesanato você poderia começar esta semana?"
+   }
+  },
+  {
+   "id": "crafts-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which technique from your beginner months do you now do almost without thinking?",
+    "de": "Welche Technik aus deinen Anfängermonaten beherrschst du inzwischen fast ohne nachzudenken?",
+    "es": "¿Qué técnica de tus primeros meses haces ya casi sin pensar?",
+    "fr": "Quelle technique de tes premiers mois maîtrises-tu maintenant presque sans réfléchir ?",
+    "it": "Quale tecnica dei tuoi primi mesi ormai esegui quasi senza pensarci?",
+    "pt": "Que técnica dos teus primeiros meses já fazes quase sem pensar?",
+    "pt_BR": "Qual técnica dos seus primeiros meses você já faz quase sem pensar?"
+   }
+  },
+  {
+   "id": "crafts-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you like to try the pottery wheel? What do you imagine it feels like?",
+    "de": "Möchtest du die Töpferscheibe ausprobieren? Wie stellst du dir das Gefühl vor?",
+    "es": "¿Te gustaría probar el torno de alfarero? ¿Cómo te imaginas que se siente?",
+    "fr": "Aimerais-tu essayer le tour de potier ? Quelle sensation imagines-tu ?",
+    "it": "Ti piacerebbe provare il tornio? Che sensazione immagini che dia?",
+    "pt": "Gostavas de experimentar a roda de oleiro? Como imaginas que seja a sensação?",
+    "pt_BR": "Você gostaria de experimentar o torno de cerâmica? Como imagina que é a sensação?"
+   }
+  },
+  {
+   "id": "crafts-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which craft tradition from another culture would you like to study more closely?",
+    "de": "Welche Handwerkstradition aus einer anderen Kultur möchtest du genauer kennenlernen?",
+    "es": "¿Qué tradición artesanal de otra cultura te gustaría estudiar más a fondo?",
+    "fr": "Quelle tradition artisanale d'une autre culture aimerais-tu étudier de plus près ?",
+    "it": "Quale tradizione artigiana di un'altra cultura vorresti studiare più da vicino?",
+    "pt": "Que tradição artesanal de outra cultura gostavas de estudar mais a fundo?",
+    "pt_BR": "Qual tradição artesanal de outra cultura você gostaria de estudar mais a fundo?"
+   }
+  },
+  {
+   "id": "crafts-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you choose colours and materials when you start a new project?",
+    "de": "Wie wählst du Farben und Materialien aus, wenn du ein neues Projekt beginnst?",
+    "es": "¿Cómo eliges colores y materiales cuando empiezas un proyecto nuevo?",
+    "fr": "Comment choisis-tu les couleurs et les matériaux quand tu commences un nouveau projet ?",
+    "it": "Come scegli colori e materiali quando inizi un nuovo progetto?",
+    "pt": "Como escolhes cores e materiais quando começas um projeto novo?",
+    "pt_BR": "Como você escolhe cores e materiais quando começa um projeto novo?"
+   }
+  },
+  {
+   "id": "crafts-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather learn to sew clothes or make a quilt? Why?",
+    "de": "Würdest du lieber lernen, Kleidung zu nähen oder einen Quilt zu machen? Warum?",
+    "es": "¿Preferirías aprender a coser ropa o a hacer un edredón de patchwork? ¿Por qué?",
+    "fr": "Tu préférerais apprendre à coudre des vêtements ou à faire un patchwork ? Pourquoi ?",
+    "it": "Preferiresti imparare a cucire vestiti o a fare una trapunta patchwork? Perché?",
+    "pt": "Preferias aprender a costurar roupa ou a fazer uma manta de patchwork? Porquê?",
+    "pt_BR": "Você prefere aprender a costurar roupas ou a fazer uma colcha de patchwork? Por quê?"
+   }
+  },
+  {
+   "id": "crafts-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What project has taught you the most so far, and what did you learn?",
+    "de": "Welches Projekt hat dir bisher am meisten beigebracht, und was hast du gelernt?",
+    "es": "¿Qué proyecto te ha enseñado más hasta ahora y qué aprendiste?",
+    "fr": "Quel projet t'a le plus appris jusqu'ici, et qu'as-tu appris ?",
+    "it": "Quale progetto ti ha insegnato di più finora, e che cosa hai imparato?",
+    "pt": "Que projeto te ensinou mais até agora, e o que aprendeste?",
+    "pt_BR": "Qual projeto te ensinou mais até agora, e o que você aprendeu?"
+   }
+  },
+  {
+   "id": "crafts-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you prefer following patterns from others or adapting them in your own way?",
+    "de": "Folgst du lieber fremden Anleitungen, oder passt du sie auf deine eigene Art an?",
+    "es": "¿Prefieres seguir patrones de otros o adaptarlos a tu manera?",
+    "fr": "Tu préfères suivre les modèles des autres ou les adapter à ta façon ?",
+    "it": "Preferisci seguire gli schemi di altri o adattarli a modo tuo?",
+    "pt": "Preferes seguir moldes de outras pessoas ou adaptá-los à tua maneira?",
+    "pt_BR": "Você prefere seguir moldes de outras pessoas ou adaptar do seu jeito?"
+   }
+  },
+  {
+   "id": "crafts-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which tool would you most like to add to your craft kit next?",
+    "de": "Welches Werkzeug würdest du als Nächstes am liebsten deiner Ausrüstung hinzufügen?",
+    "es": "¿Qué herramienta te gustaría añadir a continuación a tu kit de manualidades?",
+    "fr": "Quel outil aimerais-tu le plus ajouter ensuite à ton matériel ?",
+    "it": "Quale strumento ti piacerebbe di più aggiungere al tuo kit creativo?",
+    "pt": "Que ferramenta mais gostavas de acrescentar a seguir ao teu kit de artesanato?",
+    "pt_BR": "Qual ferramenta você mais gostaria de adicionar em seguida ao seu kit de artesanato?"
+   }
+  },
+  {
+   "id": "crafts-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you keep track of your projects: a notebook, photos or just memory?",
+    "de": "Wie behältst du den Überblick über deine Projekte: Notizbuch, Fotos oder einfach im Kopf?",
+    "es": "¿Cómo llevas el control de tus proyectos: un cuaderno, fotos o simplemente de memoria?",
+    "fr": "Comment suis-tu tes projets : un carnet, des photos ou simplement de mémoire ?",
+    "it": "Come tieni traccia dei tuoi progetti: un quaderno, delle foto o semplicemente a memoria?",
+    "pt": "Como acompanhas os teus projetos: um caderno, fotografias ou só de memória?",
+    "pt_BR": "Como você acompanha seus projetos: um caderno, fotos ou só de memória?"
+   }
+  },
+  {
+   "id": "crafts-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which two crafts would you like to combine in one project?",
+    "de": "Welche zwei Handwerke würdest du gern in einem Projekt kombinieren?",
+    "es": "¿Qué dos manualidades te gustaría combinar en un solo proyecto?",
+    "fr": "Quels deux artisanats aimerais-tu combiner dans un même projet ?",
+    "it": "Quali due tecniche artigianali ti piacerebbe combinare in un unico progetto?",
+    "pt": "Que dois tipos de artesanato gostavas de combinar num só projeto?",
+    "pt_BR": "Quais dois tipos de artesanato você gostaria de combinar num só projeto?"
+   }
+  },
+  {
+   "id": "crafts-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried natural dyeing or would you like to? Which plant would you use?",
+    "de": "Hast du schon mit Naturfarben gefärbt oder würdest du es gern tun? Welche Pflanze würdest du nehmen?",
+    "es": "¿Has probado a teñir con tintes naturales o te gustaría? ¿Qué planta usarías?",
+    "fr": "As-tu déjà essayé la teinture végétale, ou aimerais-tu le faire ? Quelle plante utiliserais-tu ?",
+    "it": "Hai mai provato la tintura naturale o ti piacerebbe? Quale pianta useresti?",
+    "pt": "Já experimentaste tingir com corantes naturais ou gostavas de o fazer? Que planta usarias?",
+    "pt_BR": "Você já tingiu com corantes naturais ou gostaria de tentar? Qual planta usaria?"
+   }
+  },
+  {
+   "id": "crafts-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What does your craft space look like now compared to when you started?",
+    "de": "Wie sieht dein Bastelplatz heute im Vergleich zu deinem Anfang aus?",
+    "es": "¿Cómo es tu espacio de manualidades ahora comparado con cuando empezaste?",
+    "fr": "À quoi ressemble ton espace créatif aujourd'hui par rapport à tes débuts ?",
+    "it": "Com'è il tuo spazio creativo adesso rispetto a quando hai iniziato?",
+    "pt": "Como é o teu espaço de artesanato agora em comparação com quando começaste?",
+    "pt_BR": "Como está seu espaço de artesanato agora comparado a quando você começou?"
+   }
+  },
+  {
+   "id": "crafts-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever crafted together with others? What was the atmosphere like?",
+    "de": "Hast du schon einmal mit anderen zusammen gebastelt? Wie war die Stimmung?",
+    "es": "¿Has hecho manualidades alguna vez en grupo? ¿Cómo era el ambiente?",
+    "fr": "As-tu déjà créé avec d'autres personnes ? Quelle était l'ambiance ?",
+    "it": "Hai mai creato insieme ad altre persone? Com'era l'atmosfera?",
+    "pt": "Já fizeste artesanato com outras pessoas? Como era o ambiente?",
+    "pt_BR": "Você já fez artesanato junto com outras pessoas? Como era o clima?"
+   }
+  },
+  {
+   "id": "crafts-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which unfinished project is waiting for you, and what would help you finish it?",
+    "de": "Welches unfertige Projekt wartet auf dich, und was würde dir helfen, es abzuschließen?",
+    "es": "¿Qué proyecto sin terminar te está esperando y qué te ayudaría a acabarlo?",
+    "fr": "Quel projet inachevé t'attend, et qu'est-ce qui t'aiderait à le terminer ?",
+    "it": "Quale progetto incompiuto ti aspetta, e che cosa ti aiuterebbe a finirlo?",
+    "pt": "Que projeto por acabar está à tua espera, e o que te ajudaria a terminá-lo?",
+    "pt_BR": "Qual projeto inacabado está esperando por você, e o que te ajudaria a terminar?"
+   }
+  },
+  {
+   "id": "crafts-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you like to show or share the things you make?",
+    "de": "Wie zeigst oder teilst du am liebsten die Dinge, die du machst?",
+    "es": "¿Cómo te gusta mostrar o compartir lo que haces?",
+    "fr": "Comment aimes-tu montrer ou partager ce que tu fabriques ?",
+    "it": "Come ti piace mostrare o condividere le cose che crei?",
+    "pt": "Como gostas de mostrar ou partilhar as coisas que fazes?",
+    "pt_BR": "Como você gosta de mostrar ou compartilhar as coisas que faz?"
+   }
+  },
+  {
+   "id": "crafts-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which printing or carving technique sounds most fun to you: linocut, stamps or wood?",
+    "de": "Welche Druck- oder Schnitztechnik klingt für dich am spannendsten: Linolschnitt, Stempel oder Holz?",
+    "es": "¿Qué técnica de grabado o talla te parece más divertida: linograbado, sellos o madera?",
+    "fr": "Quelle technique d'impression ou de taille te semble la plus amusante : linogravure, tampons ou bois ?",
+    "it": "Quale tecnica di stampa o intaglio ti sembra più divertente: linoleografia, timbri o legno?",
+    "pt": "Que técnica de impressão ou entalhe te parece mais divertida: linogravura, carimbos ou madeira?",
+    "pt_BR": "Qual técnica de impressão ou entalhe parece mais divertida pra você: linogravura, carimbos ou madeira?"
+   }
+  },
+  {
+   "id": "crafts-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you do when you feel stuck or uninspired in a project?",
+    "de": "Was machst du, wenn du bei einem Projekt feststeckst oder dir die Inspiration fehlt?",
+    "es": "¿Qué haces cuando te sientes atascado o sin inspiración en un proyecto?",
+    "fr": "Que fais-tu quand tu te sens bloqué ou en manque d'inspiration sur un projet ?",
+    "it": "Che cosa fai quando ti senti bloccato o senza ispirazione in un progetto?",
+    "pt": "O que fazes quando te sentes bloqueado ou sem inspiração num projeto?",
+    "pt_BR": "O que você faz quando se sente travado ou sem inspiração num projeto?"
+   }
+  },
+  {
+   "id": "crafts-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which mistake in a project turned out to be a happy surprise?",
+    "de": "Welcher Fehler in einem Projekt hat sich als schöne Überraschung herausgestellt?",
+    "es": "¿Qué error en un proyecto acabó siendo una sorpresa agradable?",
+    "fr": "Quelle erreur dans un projet s'est révélée être une heureuse surprise ?",
+    "it": "Quale errore in un progetto si è rivelato una piacevole sorpresa?",
+    "pt": "Que erro num projeto acabou por ser uma surpresa feliz?",
+    "pt_BR": "Qual erro num projeto acabou virando uma surpresa boa?"
+   }
+  },
+  {
+   "id": "crafts-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you like to make something wearable, like a hat, a bag or jewellery? Which one?",
+    "de": "Möchtest du etwas Tragbares machen, etwa eine Mütze, eine Tasche oder Schmuck? Was davon?",
+    "es": "¿Te gustaría hacer algo que se pueda llevar, como un gorro, un bolso o joyas? ¿Qué elegirías?",
+    "fr": "Aimerais-tu fabriquer quelque chose à porter, comme un bonnet, un sac ou des bijoux ? Lequel ?",
+    "it": "Ti piacerebbe creare qualcosa da indossare, come un cappello, una borsa o dei gioielli? Cosa?",
+    "pt": "Gostavas de fazer algo para usar, como um gorro, uma mala ou bijutaria? Qual escolherias?",
+    "pt_BR": "Você gostaria de fazer algo pra usar, como um gorro, uma bolsa ou bijuteria? Qual escolheria?"
+   }
+  },
+  {
+   "id": "crafts-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How has crafting changed the way you spend your free time?",
+    "de": "Wie hat das Werken und Basteln deine Freizeitgestaltung verändert?",
+    "es": "¿Cómo han cambiado las manualidades tu manera de pasar el tiempo libre?",
+    "fr": "Comment les loisirs créatifs ont-ils changé ta façon de passer ton temps libre ?",
+    "it": "Come hanno cambiato i lavori manuali il modo in cui passi il tempo libero?",
+    "pt": "Como é que o artesanato mudou a forma como passas o teu tempo livre?",
+    "pt_BR": "Como o artesanato mudou o jeito que você passa seu tempo livre?"
+   }
+  },
+  {
+   "id": "crafts-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which advanced technique are you most excited to master, and why?",
+    "de": "Auf welche fortgeschrittene Technik freust du dich am meisten, und warum?",
+    "es": "¿Qué técnica avanzada te ilusiona más dominar, y por qué?",
+    "fr": "Quelle technique avancée as-tu le plus hâte de maîtriser, et pourquoi ?",
+    "it": "Quale tecnica avanzata sei più entusiasta di padroneggiare, e perché?",
+    "pt": "Que técnica avançada estás mais entusiasmado por dominar, e porquê?",
+    "pt_BR": "Qual técnica avançada você está mais animado pra dominar, e por quê?"
+   }
+  },
+  {
+   "id": "crafts-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you describe your personal style as a maker?",
+    "de": "Wie würdest du deinen persönlichen Stil als Gestalter beschreiben?",
+    "es": "¿Cómo describirías tu estilo personal como artesano?",
+    "fr": "Comment décrirais-tu ton style personnel de créateur ?",
+    "it": "Come descriveresti il tuo stile personale da creativo?",
+    "pt": "Como descreverias o teu estilo pessoal como artesão?",
+    "pt_BR": "Como você descreveria seu estilo pessoal como artesão?"
+   }
+  },
+  {
+   "id": "crafts-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you ever designed your own pattern or piece from scratch? How did it go?",
+    "de": "Hast du schon einmal ein eigenes Muster oder Werkstück von Grund auf entworfen? Wie lief es?",
+    "es": "¿Has diseñado alguna vez tu propio patrón o pieza desde cero? ¿Cómo te fue?",
+    "fr": "As-tu déjà conçu ton propre modèle ou ta propre pièce de A à Z ? Comment ça s'est passé ?",
+    "it": "Hai mai progettato da zero un tuo schema o un tuo pezzo? Com'è andata?",
+    "pt": "Já criaste o teu próprio molde ou peça do zero? Como correu?",
+    "pt_BR": "Você já criou seu próprio molde ou peça do zero? Como foi?"
+   }
+  },
+  {
+   "id": "crafts-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you ever like to sell your work, or do you prefer to keep crafting just for joy?",
+    "de": "Würdest du deine Arbeiten gern einmal verkaufen, oder bastelst du lieber nur aus Freude?",
+    "es": "¿Te gustaría vender tus creaciones algún día o prefieres hacerlas solo por placer?",
+    "fr": "Aimerais-tu un jour vendre tes créations, ou préfères-tu créer juste pour le plaisir ?",
+    "it": "Ti piacerebbe vendere le tue creazioni un giorno, o preferisci creare solo per piacere?",
+    "pt": "Gostavas de vender os teus trabalhos um dia, ou preferes fazer artesanato só por prazer?",
+    "pt_BR": "Você gostaria de vender seus trabalhos um dia ou prefere fazer artesanato só por prazer?"
+   }
+  },
+  {
+   "id": "crafts-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you teach first if a friend asked you to show them your favourite craft?",
+    "de": "Was würdest du zuerst zeigen, wenn ein Freund dich bitten würde, ihm dein Lieblingshandwerk beizubringen?",
+    "es": "¿Qué enseñarías primero si un amigo te pidiera que le mostraras tu manualidad favorita?",
+    "fr": "Que montrerais-tu en premier si un ami te demandait de lui apprendre ton artisanat préféré ?",
+    "it": "Che cosa insegneresti per prima cosa se un amico ti chiedesse di mostrargli il tuo lavoro preferito?",
+    "pt": "O que ensinarias primeiro se um amigo te pedisse para lhe mostrar o teu artesanato favorito?",
+    "pt_BR": "O que você ensinaria primeiro se um amigo pedisse pra você mostrar seu artesanato favorito?"
+   }
+  },
+  {
+   "id": "crafts-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which piece you have made would you like to keep for many years, maybe for future generations?",
+    "de": "Welches deiner Werkstücke würdest du gern viele Jahre behalten, vielleicht für kommende Generationen?",
+    "es": "¿Qué pieza que has hecho te gustaría conservar muchos años, quizá para futuras generaciones?",
+    "fr": "Quelle pièce que tu as faite aimerais-tu garder longtemps, peut-être pour les générations futures ?",
+    "it": "Quale pezzo che hai realizzato vorresti conservare per molti anni, magari per le generazioni future?",
+    "pt": "Que peça que fizeste gostavas de guardar durante muitos anos, talvez para as próximas gerações?",
+    "pt_BR": "Qual peça que você fez você gostaria de guardar por muitos anos, talvez pras próximas gerações?"
+   }
+  },
+  {
+   "id": "crafts-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance precision and spontaneity in your work?",
+    "de": "Wie findest du in deiner Arbeit das Gleichgewicht zwischen Präzision und Spontaneität?",
+    "es": "¿Cómo equilibras la precisión y la espontaneidad en tu trabajo?",
+    "fr": "Comment trouves-tu l'équilibre entre précision et spontanéité dans ton travail ?",
+    "it": "Come bilanci precisione e spontaneità nel tuo lavoro?",
+    "pt": "Como equilibras a precisão e a espontaneidade no teu trabalho?",
+    "pt_BR": "Como você equilibra precisão e espontaneidade no seu trabalho?"
+   }
+  },
+  {
+   "id": "crafts-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What ambitious project would you choose as the big final piece of this path?",
+    "de": "Welches ehrgeizige Projekt würdest du als großes Abschlussstück dieses Weges wählen?",
+    "es": "¿Qué proyecto ambicioso elegirías como gran pieza final de este camino?",
+    "fr": "Quel projet ambitieux choisirais-tu comme grande pièce finale de ce parcours ?",
+    "it": "Quale progetto ambizioso sceglieresti come grande opera finale di questo percorso?",
+    "pt": "Que projeto ambicioso escolherias como grande peça final deste percurso?",
+    "pt_BR": "Qual projeto ambicioso você escolheria como grande peça final dessa jornada?"
+   }
+  },
+  {
+   "id": "crafts-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think about sustainability when you choose materials now?",
+    "de": "Wie achtest du heute auf Nachhaltigkeit, wenn du Materialien auswählst?",
+    "es": "¿Cómo tienes en cuenta la sostenibilidad cuando eliges materiales ahora?",
+    "fr": "Comment prends-tu en compte la durabilité quand tu choisis tes matériaux aujourd'hui ?",
+    "it": "Come tieni conto della sostenibilità quando scegli i materiali adesso?",
+    "pt": "Como tens em conta a sustentabilidade quando escolhes materiais agora?",
+    "pt_BR": "Como você leva em conta a sustentabilidade quando escolhe materiais hoje?"
+   }
+  },
+  {
+   "id": "crafts-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which master craftsperson or art movement inspires your work the most?",
+    "de": "Welcher Kunsthandwerker oder welche Kunstbewegung inspiriert deine Arbeit am meisten?",
+    "es": "¿Qué maestro artesano o movimiento artístico inspira más tu trabajo?",
+    "fr": "Quel maître artisan ou quel mouvement artistique inspire le plus ton travail ?",
+    "it": "Quale maestro artigiano o movimento artistico ispira di più il tuo lavoro?",
+    "pt": "Que mestre artesão ou movimento artístico mais inspira o teu trabalho?",
+    "pt_BR": "Qual mestre artesão ou movimento artístico mais inspira seu trabalho?"
+   }
+  },
+  {
+   "id": "crafts-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you organised a small craft workshop, what would you make with the group?",
+    "de": "Wenn du einen kleinen Bastelworkshop organisieren würdest, was würdest du mit der Gruppe machen?",
+    "es": "Si organizaras un pequeño taller de manualidades, ¿qué harías con el grupo?",
+    "fr": "Si tu organisais un petit atelier créatif, que fabriquerais-tu avec le groupe ?",
+    "it": "Se organizzassi un piccolo laboratorio creativo, che cosa realizzeresti con il gruppo?",
+    "pt": "Se organizasses um pequeno workshop de artesanato, o que farias com o grupo?",
+    "pt_BR": "Se você organizasse uma pequena oficina de artesanato, o que faria com o grupo?"
+   }
+  },
+  {
+   "id": "crafts-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you take care of your hands, back and eyes during long making sessions?",
+    "de": "Wie schonst du Hände, Rücken und Augen bei langen Arbeitssitzungen?",
+    "es": "¿Cómo cuidas tus manos, tu espalda y tus ojos durante sesiones largas de trabajo?",
+    "fr": "Comment prends-tu soin de tes mains, de ton dos et de tes yeux pendant les longues séances de création ?",
+    "it": "Come ti prendi cura di mani, schiena e occhi durante le lunghe sessioni di lavoro?",
+    "pt": "Como cuidas das mãos, das costas e dos olhos durante longas sessões de trabalho?",
+    "pt_BR": "Como você cuida das mãos, das costas e dos olhos durante longas sessões de trabalho?"
+   }
+  },
+  {
+   "id": "crafts-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Comparing your first project with your latest one, what has changed the most?",
+    "de": "Wenn du dein erstes mit deinem neuesten Projekt vergleichst, was hat sich am meisten verändert?",
+    "es": "Si comparas tu primer proyecto con el más reciente, ¿qué es lo que más ha cambiado?",
+    "fr": "En comparant ton premier projet avec le plus récent, qu'est-ce qui a le plus changé ?",
+    "it": "Confrontando il tuo primo progetto con l'ultimo, che cosa è cambiato di più?",
+    "pt": "Comparando o teu primeiro projeto com o mais recente, o que mudou mais?",
+    "pt_BR": "Comparando seu primeiro projeto com o mais recente, o que mais mudou?"
+   }
+  },
+  {
+   "id": "crafts-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which brand-new craft would you like to explore after mastering your favourite one?",
+    "de": "Welches völlig neue Handwerk möchtest du entdecken, wenn du dein Lieblingshandwerk beherrschst?",
+    "es": "¿Qué manualidad totalmente nueva te gustaría explorar después de dominar tu favorita?",
+    "fr": "Quel artisanat tout nouveau aimerais-tu explorer après avoir maîtrisé ton préféré ?",
+    "it": "Quale attività manuale del tutto nuova vorresti esplorare dopo aver padroneggiato la tua preferita?",
+    "pt": "Que artesanato totalmente novo gostavas de explorar depois de dominares o teu favorito?",
+    "pt_BR": "Qual artesanato totalmente novo você gostaria de explorar depois de dominar o seu favorito?"
+   }
+  },
+  {
+   "id": "crafts-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does crafting mean to you now, after so many days of making?",
+    "de": "Was bedeutet dir das Gestalten mit den Händen jetzt, nach so vielen Tagen des Machens?",
+    "es": "¿Qué significan para ti las manualidades ahora, después de tantos días creando?",
+    "fr": "Que représente la création manuelle pour toi maintenant, après tant de jours passés à fabriquer ?",
+    "it": "Che cosa significa per te creare con le mani adesso, dopo tanti giorni di lavoro?",
+    "pt": "O que significa o artesanato para ti agora, depois de tantos dias a criar?",
+    "pt_BR": "O que o artesanato significa pra você agora, depois de tantos dias criando?"
+   }
+  }
+ ]
+}

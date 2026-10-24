@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 91,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Passato prossimo with avere",
+     "g": "Talk about finished actions with avere plus a past participle.",
+     "p": [
+      "Form: present of avere + past participle. Ho mangiato, hai visto, abbiamo parlato, hanno dormito.",
+      "Regular participles: -are becomes -ato (parlato), -ere becomes -uto (venduto), -ire becomes -ito (dormito).",
+      "With avere the participle usually does not change: Maria ha mangiato, i ragazzi hanno mangiato. Negative: non ho capito."
+     ],
+     "q": "Welcome to A2! What did you eat yesterday? Answer with ho mangiato...",
+     "c": "Write five sentences about yesterday with avere: ho lavorato, ho comprato, ho finito..."
+    },
+    "de": {
+     "t": "Passato prossimo mit avere",
+     "g": "Du sprichst mit avere + Partizip über abgeschlossene Handlungen.",
+     "p": [
+      "Bildung: Präsens von avere + Partizip. Ho mangiato, hai visto, abbiamo parlato, hanno dormito.",
+      "Regelmäßige Partizipien: -are wird -ato (parlato), -ere wird -uto (venduto), -ire wird -ito (dormito).",
+      "Mit avere bleibt das Partizip meist gleich: Maria ha mangiato, i ragazzi hanno mangiato. Verneinung: non ho capito."
+     ],
+     "q": "Willkommen in A2! Was hast du gestern gegessen? Antworte mit ho mangiato...",
+     "c": "Schreib fünf Sätze über gestern mit avere: ho lavorato, ho comprato, ho finito..."
+    },
+    "es": {
+     "t": "Passato prossimo con avere",
+     "g": "Hablar de acciones terminadas con avere + participio.",
+     "p": [
+      "Forma: presente de avere + participio. Ho mangiato, hai visto, abbiamo parlato, hanno dormito.",
+      "Participios regulares: -are pasa a -ato (parlato), -ere a -uto (venduto), -ire a -ito (dormito).",
+      "Con avere el participio normalmente no cambia: Maria ha mangiato, i ragazzi hanno mangiato. Negación: non ho capito."
+     ],
+     "q": "¡Bienvenido al A2! ¿Qué comiste ayer? Responde con ho mangiato...",
+     "c": "Escribe cinco frases sobre ayer con avere: ho lavorato, ho comprato, ho finito..."
+    },
+    "fr": {
+     "t": "Le passato prossimo avec avere",
+     "g": "Parler d'actions terminées avec avere + participe passé.",
+     "p": [
+      "Forme : présent de avere + participe. Ho mangiato, hai visto, abbiamo parlato, hanno dormito.",
+      "Participes réguliers : -are devient -ato (parlato), -ere devient -uto (venduto), -ire devient -ito (dormito).",
+      "Avec avere le participe ne change pas d'habitude : Maria ha mangiato, i ragazzi hanno mangiato. Négation : non ho capito."
+     ],
+     "q": "Bienvenue en A2 ! Qu'as-tu mangé hier ? Réponds avec ho mangiato...",
+     "c": "Écris cinq phrases sur hier avec avere : ho lavorato, ho comprato, ho finito..."
+    },
+    "it": {
+     "t": "Il passato prossimo con avere",
+     "g": "Raccontare azioni concluse con avere + participio passato.",
+     "p": [
+      "Forma: presente di avere + participio. Ho mangiato, hai visto, abbiamo parlato, hanno dormito.",
+      "Participi regolari: -are diventa -ato (parlato), -ere diventa -uto (venduto), -ire diventa -ito (dormito).",
+      "Con avere il participio di solito non cambia: Maria ha mangiato, i ragazzi hanno mangiato. Negativo: non ho capito."
+     ],
+     "q": "Benvenuto nell'A2! Che cosa hai mangiato ieri? Rispondi con ho mangiato...",
+     "c": "Scrivi cinque frasi su ieri con avere: ho lavorato, ho comprato, ho finito..."
+    },
+    "pt": {
+     "t": "Passato prossimo com avere",
+     "g": "Falar de ações terminadas com avere + particípio passado.",
+     "p": [
+      "Forma: presente de avere + particípio. Ho mangiato, hai visto, abbiamo parlato, hanno dormito.",
+      "Particípios regulares: -are passa a -ato (parlato), -ere a -uto (venduto), -ire a -ito (dormito).",
+      "Com avere o particípio normalmente não muda: Maria ha mangiato, i ragazzi hanno mangiato. Negativa: non ho capito."
+     ],
+     "q": "Bem-vindo ao A2! O que comeste ontem? Responde com ho mangiato...",
+     "c": "Escreve cinco frases sobre ontem com avere: ho lavorato, ho comprato, ho finito..."
+    },
+    "pt_BR": {
+     "t": "Passato prossimo com avere",
+     "g": "Falar de ações concluídas com avere + particípio passado.",
+     "p": [
+      "Forma: presente de avere + particípio. Ho mangiato, hai visto, abbiamo parlato, hanno dormito.",
+      "Particípios regulares: -are vira -ato (parlato), -ere vira -uto (venduto), -ire vira -ito (dormito).",
+      "Com avere o particípio normalmente não muda: Maria ha mangiato, i ragazzi hanno mangiato. Negativa: non ho capito."
+     ],
+     "q": "Bem-vindo ao A2! O que você comeu ontem? Responda com ho mangiato...",
+     "c": "Escreva cinco frases sobre ontem com avere: ho lavorato, ho comprato, ho finito..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ho mangiato",
+      "ex": "Ieri sera ho mangiato una pizza."
+     },
+     {
+      "w": "hai visto?",
+      "ex": "Hai visto il nuovo film di Sorrentino?"
+     },
+     {
+      "w": "abbiamo parlato",
+      "ex": "Abbiamo parlato per due ore."
+     },
+     {
+      "w": "ho dormito",
+      "ex": "Stanotte ho dormito benissimo."
+     },
+     {
+      "w": "hanno comprato",
+      "ex": "I miei hanno comprato una casa al mare."
+     },
+     {
+      "w": "non ho capito",
+      "ex": "Scusa, non ho capito la domanda."
+     }
+    ],
+    "gram": "Passato prossimo = avere al presente + participio (-ato, -uto, -ito): ho parlato, ho venduto, ho dormito."
+   }
+  },
+  {
+   "d": 92,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Passato prossimo with essere",
+     "g": "Use essere for verbs of motion and change, with agreement.",
+     "p": [
+      "Verbs like andare, venire, partire, arrivare, uscire, entrare, tornare, restare, nascere take essere.",
+      "The participle agrees with the subject like an adjective: Marco è andato, Anna è andata, siamo partiti, sono uscite.",
+      "Essere and stare also use essere: sono stato a Roma means I have been to Rome."
+     ],
+     "q": "Where did you go last weekend? Answer with sono andato or sono andata.",
+     "c": "Write four sentences about a trip with essere verbs, and check every ending."
+    },
+    "de": {
+     "t": "Passato prossimo mit essere",
+     "g": "Du benutzt essere für Verben der Bewegung und Veränderung, mit Angleichung.",
+     "p": [
+      "Verben wie andare, venire, partire, arrivare, uscire, entrare, tornare, restare, nascere nehmen essere.",
+      "Das Partizip passt sich dem Subjekt an: Marco è andato, Anna è andata, siamo partiti, sono uscite.",
+      "Auch essere und stare: sono stato a Roma heißt ich bin in Rom gewesen."
+     ],
+     "q": "Wohin bist du letztes Wochenende gegangen? Antworte mit sono andato oder sono andata.",
+     "c": "Schreib vier Sätze über eine Reise mit essere-Verben und prüf jede Endung."
+    },
+    "es": {
+     "t": "Passato prossimo con essere",
+     "g": "Usar essere con verbos de movimiento y cambio, con concordancia.",
+     "p": [
+      "Verbos como andare, venire, partire, arrivare, uscire, entrare, tornare, restare, nascere van con essere.",
+      "El participio concuerda con el sujeto: Marco è andato, Anna è andata, siamo partiti, sono uscite.",
+      "Essere y stare también: sono stato a Roma significa he estado en Roma."
+     ],
+     "q": "¿Adónde fuiste el fin de semana pasado? Responde con sono andato o sono andata.",
+     "c": "Escribe cuatro frases sobre un viaje con verbos con essere y revisa cada terminación."
+    },
+    "fr": {
+     "t": "Le passato prossimo avec essere",
+     "g": "Utiliser essere avec les verbes de mouvement et de changement, avec l'accord.",
+     "p": [
+      "Des verbes comme andare, venire, partire, arrivare, uscire, entrare, tornare, restare, nascere prennent essere.",
+      "Le participe s'accorde avec le sujet : Marco è andato, Anna è andata, siamo partiti, sono uscite.",
+      "Essere et stare aussi : sono stato a Roma veut dire j'ai été à Rome."
+     ],
+     "q": "Où es-tu allé le week-end dernier ? Réponds avec sono andato ou sono andata.",
+     "c": "Écris quatre phrases sur un voyage avec des verbes en essere et vérifie chaque terminaison."
+    },
+    "it": {
+     "t": "Il passato prossimo con essere",
+     "g": "Usare essere con i verbi di movimento e cambiamento, con l'accordo.",
+     "p": [
+      "Verbi come andare, venire, partire, arrivare, uscire, entrare, tornare, restare, nascere vogliono essere.",
+      "Il participio si accorda con il soggetto: Marco è andato, Anna è andata, siamo partiti, sono uscite.",
+      "Anche essere e stare: sono stato a Roma."
+     ],
+     "q": "Dove sei andato o andata lo scorso fine settimana?",
+     "c": "Scrivi quattro frasi su un viaggio con verbi che vogliono essere e controlla ogni desinenza."
+    },
+    "pt": {
+     "t": "Passato prossimo com essere",
+     "g": "Usar essere com verbos de movimento e mudança, com concordância.",
+     "p": [
+      "Verbos como andare, venire, partire, arrivare, uscire, entrare, tornare, restare, nascere levam essere.",
+      "O particípio concorda com o sujeito: Marco è andato, Anna è andata, siamo partiti, sono uscite.",
+      "Essere e stare também: sono stato a Roma quer dizer estive em Roma."
+     ],
+     "q": "Aonde foste no fim de semana passado? Responde com sono andato ou sono andata.",
+     "c": "Escreve quatro frases sobre uma viagem com verbos com essere e verifica cada terminação."
+    },
+    "pt_BR": {
+     "t": "Passato prossimo com essere",
+     "g": "Usar essere com verbos de movimento e mudança, com concordância.",
+     "p": [
+      "Verbos como andare, venire, partire, arrivare, uscire, entrare, tornare, restare, nascere pedem essere.",
+      "O particípio concorda com o sujeito: Marco è andato, Anna è andata, siamo partiti, sono uscite.",
+      "Essere e stare também: sono stato a Roma quer dizer estive em Roma."
+     ],
+     "q": "Aonde você foi no fim de semana passado? Responda com sono andato ou sono andata.",
+     "c": "Escreva quatro frases sobre uma viagem com verbos com essere e confira cada terminação."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sono andato / andata",
+      "ex": "Sabato sono andata al lago."
+     },
+     {
+      "w": "siamo partiti",
+      "ex": "Siamo partiti presto la mattina."
+     },
+     {
+      "w": "è arrivata",
+      "ex": "Giulia è arrivata alle otto."
+     },
+     {
+      "w": "sono uscito",
+      "ex": "Ieri sera sono uscito con gli amici."
+     },
+     {
+      "w": "sono tornati",
+      "ex": "I ragazzi sono tornati tardi."
+     },
+     {
+      "w": "sono stato",
+      "ex": "Sei mai stato a Venezia?"
+     }
+    ],
+    "gram": "Con essere il participio si accorda col soggetto: è andato, è andata, sono andati, sono andate; verbi di moto e di stato."
+   }
+  },
+  {
+   "d": 93,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Irregular past participles",
+     "g": "Learn the most common irregular past participles.",
+     "p": [
+      "Many common verbs are irregular: fare, fatto; dire, detto; scrivere, scritto; leggere, letto.",
+      "More: prendere, preso; mettere, messo; vedere, visto; aprire, aperto; chiudere, chiuso; bere, bevuto.",
+      "With essere: venire, venuto; essere, stato; nascere, nato. Sono venuta a piedi."
+     ],
+     "q": "What have you read or written this week? Use ho letto or ho scritto.",
+     "c": "Make flashcards for ten irregular participles and write one sentence with each."
+    },
+    "de": {
+     "t": "Unregelmäßige Partizipien",
+     "g": "Du lernst die häufigsten unregelmäßigen Partizipien.",
+     "p": [
+      "Viele häufige Verben sind unregelmäßig: fare, fatto; dire, detto; scrivere, scritto; leggere, letto.",
+      "Weitere: prendere, preso; mettere, messo; vedere, visto; aprire, aperto; chiudere, chiuso; bere, bevuto.",
+      "Mit essere: venire, venuto; essere, stato; nascere, nato. Sono venuta a piedi."
+     ],
+     "q": "Was hast du diese Woche gelesen oder geschrieben? Benutze ho letto oder ho scritto.",
+     "c": "Mach Lernkarten für zehn unregelmäßige Partizipien und schreib zu jedem einen Satz."
+    },
+    "es": {
+     "t": "Participios irregulares",
+     "g": "Aprender los participios irregulares más comunes.",
+     "p": [
+      "Muchos verbos frecuentes son irregulares: fare, fatto; dire, detto; scrivere, scritto; leggere, letto.",
+      "Más: prendere, preso; mettere, messo; vedere, visto; aprire, aperto; chiudere, chiuso; bere, bevuto.",
+      "Con essere: venire, venuto; essere, stato; nascere, nato. Sono venuta a piedi."
+     ],
+     "q": "¿Qué has leído o escrito esta semana? Usa ho letto o ho scritto.",
+     "c": "Haz tarjetas con diez participios irregulares y escribe una frase con cada uno."
+    },
+    "fr": {
+     "t": "Les participes irréguliers",
+     "g": "Apprendre les participes passés irréguliers les plus courants.",
+     "p": [
+      "Beaucoup de verbes fréquents sont irréguliers : fare, fatto ; dire, detto ; scrivere, scritto ; leggere, letto.",
+      "Autres : prendere, preso ; mettere, messo ; vedere, visto ; aprire, aperto ; chiudere, chiuso ; bere, bevuto.",
+      "Avec essere : venire, venuto ; essere, stato ; nascere, nato. Sono venuta a piedi."
+     ],
+     "q": "Qu'as-tu lu ou écrit cette semaine ? Utilise ho letto ou ho scritto.",
+     "c": "Fais des fiches pour dix participes irréguliers et écris une phrase avec chacun."
+    },
+    "it": {
+     "t": "I participi irregolari",
+     "g": "Imparare i participi passati irregolari più comuni.",
+     "p": [
+      "Molti verbi frequenti sono irregolari: fare, fatto; dire, detto; scrivere, scritto; leggere, letto.",
+      "Altri: prendere, preso; mettere, messo; vedere, visto; aprire, aperto; chiudere, chiuso; bere, bevuto.",
+      "Con essere: venire, venuto; essere, stato; nascere, nato. Sono venuta a piedi."
+     ],
+     "q": "Che cosa hai letto o scritto questa settimana? Usa ho letto o ho scritto.",
+     "c": "Prepara dieci schede con participi irregolari e scrivi una frase per ognuno."
+    },
+    "pt": {
+     "t": "Particípios irregulares",
+     "g": "Aprender os particípios passados irregulares mais comuns.",
+     "p": [
+      "Muitos verbos frequentes são irregulares: fare, fatto; dire, detto; scrivere, scritto; leggere, letto.",
+      "Mais: prendere, preso; mettere, messo; vedere, visto; aprire, aperto; chiudere, chiuso; bere, bevuto.",
+      "Com essere: venire, venuto; essere, stato; nascere, nato. Sono venuta a piedi."
+     ],
+     "q": "O que leste ou escreveste esta semana? Usa ho letto ou ho scritto.",
+     "c": "Faz cartões com dez particípios irregulares e escreve uma frase com cada um."
+    },
+    "pt_BR": {
+     "t": "Particípios irregulares",
+     "g": "Aprender os particípios passados irregulares mais comuns.",
+     "p": [
+      "Muitos verbos frequentes são irregulares: fare, fatto; dire, detto; scrivere, scritto; leggere, letto.",
+      "Mais: prendere, preso; mettere, messo; vedere, visto; aprire, aperto; chiudere, chiuso; bere, bevuto.",
+      "Com essere: venire, venuto; essere, stato; nascere, nato. Sono venuta a piedi."
+     ],
+     "q": "O que você leu ou escreveu esta semana? Use ho letto ou ho scritto.",
+     "c": "Faça cartões com dez particípios irregulares e escreva uma frase com cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fatto",
+      "ex": "Che cosa hai fatto oggi?"
+     },
+     {
+      "w": "detto",
+      "ex": "Mi ha detto una cosa bellissima."
+     },
+     {
+      "w": "scritto",
+      "ex": "Ho scritto una mail al professore."
+     },
+     {
+      "w": "preso",
+      "ex": "Abbiamo preso il treno delle nove."
+     },
+     {
+      "w": "letto",
+      "ex": "Hai letto questo libro?"
+     },
+     {
+      "w": "venuto / venuta",
+      "ex": "Mia madre è venuta a trovarmi."
+     }
+    ],
+    "gram": "Participi irregolari frequenti: fatto, detto, scritto, letto, preso, messo, visto, aperto, chiuso, bevuto, venuto, stato."
+   }
+  },
+  {
+   "d": 94,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "What did you do yesterday?",
+     "g": "Tell a short story about your day with the passato prossimo.",
+     "p": [
+      "Mix avere and essere verbs: mi sono svegliato presto, ho fatto colazione, sono andato al lavoro.",
+      "Add time words: la mattina, a mezzogiorno, il pomeriggio, la sera, verso le otto.",
+      "Ask back: e tu, che cosa hai fatto ieri? Show interest: ah sì? e poi? com'è andata?"
+     ],
+     "q": "Che cosa hai fatto ieri? Tell me three things in order.",
+     "c": "Write your yesterday in six sentences: morning, afternoon and evening, with avere and essere."
+    },
+    "de": {
+     "t": "Was hast du gestern gemacht?",
+     "g": "Du erzählst mit dem passato prossimo eine kurze Geschichte über deinen Tag.",
+     "p": [
+      "Mische avere- und essere-Verben: mi sono svegliato presto, ho fatto colazione, sono andato al lavoro.",
+      "Zeitwörter dazu: la mattina, a mezzogiorno, il pomeriggio, la sera, verso le otto.",
+      "Zurückfragen: e tu, che cosa hai fatto ieri? Interesse zeigen: ah sì? e poi? com'è andata?"
+     ],
+     "q": "Che cosa hai fatto ieri? Erzähl mir drei Dinge der Reihe nach.",
+     "c": "Schreib deinen gestrigen Tag in sechs Sätzen: Morgen, Nachmittag und Abend, mit avere und essere."
+    },
+    "es": {
+     "t": "¿Qué hiciste ayer?",
+     "g": "Contar una pequeña historia de tu día con el passato prossimo.",
+     "p": [
+      "Mezcla verbos con avere y con essere: mi sono svegliato presto, ho fatto colazione, sono andato al lavoro.",
+      "Añade marcadores: la mattina, a mezzogiorno, il pomeriggio, la sera, verso le otto.",
+      "Pregunta tú también: e tu, che cosa hai fatto ieri? Muestra interés: ah sì? e poi? com'è andata?"
+     ],
+     "q": "Che cosa hai fatto ieri? Cuéntame tres cosas en orden.",
+     "c": "Escribe tu día de ayer en seis frases: mañana, tarde y noche, con avere y essere."
+    },
+    "fr": {
+     "t": "Qu'as-tu fait hier ?",
+     "g": "Raconter une petite histoire de ta journée au passato prossimo.",
+     "p": [
+      "Mélange avere et essere : mi sono svegliato presto, ho fatto colazione, sono andato al lavoro.",
+      "Ajoute des repères : la mattina, a mezzogiorno, il pomeriggio, la sera, verso le otto.",
+      "Relance : e tu, che cosa hai fatto ieri ? Montre de l'intérêt : ah sì ? e poi ? com'è andata ?"
+     ],
+     "q": "Che cosa hai fatto ieri ? Raconte-moi trois choses dans l'ordre.",
+     "c": "Écris ta journée d'hier en six phrases : matin, après-midi et soir, avec avere et essere."
+    },
+    "it": {
+     "t": "Che cosa hai fatto ieri?",
+     "g": "Raccontare una breve storia della tua giornata con il passato prossimo.",
+     "p": [
+      "Mescola verbi con avere e con essere: mi sono svegliato presto, ho fatto colazione, sono andato al lavoro.",
+      "Aggiungi le parole del tempo: la mattina, a mezzogiorno, il pomeriggio, la sera, verso le otto.",
+      "Fai domande anche tu: e tu, che cosa hai fatto ieri? Mostra interesse: ah sì? e poi? com'è andata?"
+     ],
+     "q": "Che cosa hai fatto ieri? Raccontami tre cose in ordine.",
+     "c": "Scrivi la tua giornata di ieri in sei frasi: mattina, pomeriggio e sera, con avere ed essere."
+    },
+    "pt": {
+     "t": "O que fizeste ontem?",
+     "g": "Contar uma pequena história do teu dia com o passato prossimo.",
+     "p": [
+      "Mistura verbos com avere e com essere: mi sono svegliato presto, ho fatto colazione, sono andato al lavoro.",
+      "Junta marcadores de tempo: la mattina, a mezzogiorno, il pomeriggio, la sera, verso le otto.",
+      "Pergunta também: e tu, che cosa hai fatto ieri? Mostra interesse: ah sì? e poi? com'è andata?"
+     ],
+     "q": "Che cosa hai fatto ieri? Conta-me três coisas por ordem.",
+     "c": "Escreve o teu dia de ontem em seis frases: manhã, tarde e noite, com avere e essere."
+    },
+    "pt_BR": {
+     "t": "O que você fez ontem?",
+     "g": "Contar uma pequena história do seu dia com o passato prossimo.",
+     "p": [
+      "Misture verbos com avere e com essere: mi sono svegliato presto, ho fatto colazione, sono andato al lavoro.",
+      "Acrescente marcadores de tempo: la mattina, a mezzogiorno, il pomeriggio, la sera, verso le otto.",
+      "Pergunte também: e tu, che cosa hai fatto ieri? Mostre interesse: ah sì? e poi? com'è andata?"
+     ],
+     "q": "Che cosa hai fatto ieri? Me conte três coisas em ordem.",
+     "c": "Escreva o seu dia de ontem em seis frases: manhã, tarde e noite, com avere e essere."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ieri",
+      "ex": "Ieri ho lavorato fino alle sei."
+     },
+     {
+      "w": "ho fatto colazione",
+      "ex": "Ho fatto colazione al bar."
+     },
+     {
+      "w": "il pomeriggio",
+      "ex": "Il pomeriggio sono andato in palestra."
+     },
+     {
+      "w": "verso le otto",
+      "ex": "Verso le otto ho cenato con mia sorella."
+     },
+     {
+      "w": "com'è andata?",
+      "ex": "Com'è andata la giornata?"
+     },
+     {
+      "w": "e poi?",
+      "ex": "E poi? Che cosa è successo?"
+     }
+    ],
+    "gram": "Racconto al passato prossimo: avere con i verbi transitivi (ho fatto), essere con moto e riflessivi (sono andato, mi sono alzato)."
+   }
+  },
+  {
+   "d": 95,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Time markers for the past",
+     "g": "Place past events in time with the right words.",
+     "p": [
+      "Ieri, l'altro ieri, ieri sera, la settimana scorsa, il mese scorso, l'anno scorso.",
+      "Fa means ago and comes after the time: due giorni fa, un anno fa, tanto tempo fa.",
+      "Già (already), appena (just), non... ancora (not yet) sit between avere or essere and the participle: ho già mangiato, non ho ancora finito."
+     ],
+     "q": "What did you do una settimana fa? And have you already had dinner today?",
+     "c": "Write five sentences with fa, scorso, già, appena and non... ancora."
+    },
+    "de": {
+     "t": "Zeitangaben für die Vergangenheit",
+     "g": "Du ordnest vergangene Ereignisse mit den richtigen Wörtern zeitlich ein.",
+     "p": [
+      "Ieri, l'altro ieri, ieri sera, la settimana scorsa, il mese scorso, l'anno scorso.",
+      "Fa bedeutet vor und steht nach der Zeit: due giorni fa, un anno fa, tanto tempo fa.",
+      "Già (schon), appena (gerade), non... ancora (noch nicht) stehen zwischen Hilfsverb und Partizip: ho già mangiato, non ho ancora finito."
+     ],
+     "q": "Was hast du una settimana fa gemacht? Und hast du heute schon zu Abend gegessen?",
+     "c": "Schreib fünf Sätze mit fa, scorso, già, appena und non... ancora."
+    },
+    "es": {
+     "t": "Marcadores de tiempo del pasado",
+     "g": "Situar en el tiempo los hechos pasados con las palabras correctas.",
+     "p": [
+      "Ieri, l'altro ieri, ieri sera, la settimana scorsa, il mese scorso, l'anno scorso.",
+      "Fa significa hace y va después del tiempo: due giorni fa, un anno fa, tanto tempo fa.",
+      "Già (ya), appena (acabar de), non... ancora (todavía no) van entre el auxiliar y el participio: ho già mangiato, non ho ancora finito."
+     ],
+     "q": "¿Qué hiciste una settimana fa? ¿Y ya has cenado hoy?",
+     "c": "Escribe cinco frases con fa, scorso, già, appena y non... ancora."
+    },
+    "fr": {
+     "t": "Les repères du passé",
+     "g": "Situer des faits passés dans le temps avec les bons mots.",
+     "p": [
+      "Ieri, l'altro ieri, ieri sera, la settimana scorsa, il mese scorso, l'anno scorso.",
+      "Fa veut dire il y a et se place après la durée : due giorni fa, un anno fa, tanto tempo fa.",
+      "Già (déjà), appena (venir de), non... ancora (pas encore) vont entre auxiliaire et participe : ho già mangiato, non ho ancora finito."
+     ],
+     "q": "Qu'as-tu fait una settimana fa ? Et as-tu déjà dîné aujourd'hui ?",
+     "c": "Écris cinq phrases avec fa, scorso, già, appena et non... ancora."
+    },
+    "it": {
+     "t": "Le espressioni di tempo del passato",
+     "g": "Collocare nel tempo i fatti passati con le parole giuste.",
+     "p": [
+      "Ieri, l'altro ieri, ieri sera, la settimana scorsa, il mese scorso, l'anno scorso.",
+      "Fa va dopo la quantità di tempo: due giorni fa, un anno fa, tanto tempo fa.",
+      "Già, appena e non... ancora stanno tra l'ausiliare e il participio: ho già mangiato, ho appena finito, non ho ancora finito."
+     ],
+     "q": "Che cosa hai fatto una settimana fa? E hai già cenato oggi?",
+     "c": "Scrivi cinque frasi con fa, scorso, già, appena e non... ancora."
+    },
+    "pt": {
+     "t": "Marcadores de tempo do passado",
+     "g": "Situar no tempo os acontecimentos passados com as palavras certas.",
+     "p": [
+      "Ieri, l'altro ieri, ieri sera, la settimana scorsa, il mese scorso, l'anno scorso.",
+      "Fa quer dizer há e vem depois do tempo: due giorni fa, un anno fa, tanto tempo fa.",
+      "Già (já), appena (acabar de), non... ancora (ainda não) ficam entre o auxiliar e o particípio: ho già mangiato, non ho ancora finito."
+     ],
+     "q": "O que fizeste una settimana fa? E já jantaste hoje?",
+     "c": "Escreve cinco frases com fa, scorso, già, appena e non... ancora."
+    },
+    "pt_BR": {
+     "t": "Marcadores de tempo do passado",
+     "g": "Situar no tempo os acontecimentos passados com as palavras certas.",
+     "p": [
+      "Ieri, l'altro ieri, ieri sera, la settimana scorsa, il mese scorso, l'anno scorso.",
+      "Fa quer dizer há / atrás e vem depois do tempo: due giorni fa, un anno fa, tanto tempo fa.",
+      "Già (já), appena (acabar de), non... ancora (ainda não) ficam entre o auxiliar e o particípio: ho già mangiato, non ho ancora finito."
+     ],
+     "q": "O que você fez una settimana fa? E já jantou hoje?",
+     "c": "Escreva cinco frases com fa, scorso, già, appena e non... ancora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'altro ieri",
+      "ex": "L'altro ieri ho visto Marta in centro."
+     },
+     {
+      "w": "la settimana scorsa",
+      "ex": "La settimana scorsa sono stato a Bari."
+     },
+     {
+      "w": "due anni fa",
+      "ex": "Due anni fa ho cominciato a studiare italiano."
+     },
+     {
+      "w": "già",
+      "ex": "Hai già mangiato? Sì, grazie."
+     },
+     {
+      "w": "appena",
+      "ex": "Sono appena arrivata a casa."
+     },
+     {
+      "w": "non... ancora",
+      "ex": "Non ho ancora finito il libro."
+     }
+    ],
+    "gram": "Tempo + fa (tre giorni fa); scorso si accorda (l'anno scorso, la settimana scorsa); già, appena, ancora tra ausiliare e participio."
+   }
+  },
+  {
+   "d": 96,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Reflexive verbs in the past",
+     "g": "Talk about your routine in the past with reflexive verbs.",
+     "p": [
+      "Reflexive verbs always take essere in the passato prossimo: mi sono svegliato, ti sei vestita, si è lavato.",
+      "So the participle agrees: Anna si è alzata presto, ci siamo divertiti, le ragazze si sono preparate.",
+      "The pronoun comes first: non mi sono annoiato. Common ones: divertirsi, riposarsi, sposarsi, trovarsi bene."
+     ],
+     "q": "Ti sei divertito o divertita lo scorso weekend? What did you do?",
+     "c": "Write your morning routine of yesterday with five reflexive verbs in the past."
+    },
+    "de": {
+     "t": "Reflexive Verben in der Vergangenheit",
+     "g": "Du erzählst deine Routine in der Vergangenheit mit reflexiven Verben.",
+     "p": [
+      "Reflexive Verben nehmen im passato prossimo immer essere: mi sono svegliato, ti sei vestita, si è lavato.",
+      "Darum passt sich das Partizip an: Anna si è alzata presto, ci siamo divertiti, le ragazze si sono preparate.",
+      "Das Pronomen steht vorn: non mi sono annoiato. Häufig: divertirsi, riposarsi, sposarsi, trovarsi bene."
+     ],
+     "q": "Ti sei divertito o divertita letztes Wochenende? Was hast du gemacht?",
+     "c": "Schreib deine gestrige Morgenroutine mit fünf reflexiven Verben in der Vergangenheit."
+    },
+    "es": {
+     "t": "Verbos reflexivos en pasado",
+     "g": "Contar tu rutina en pasado con verbos reflexivos.",
+     "p": [
+      "Los reflexivos siempre llevan essere en el passato prossimo: mi sono svegliato, ti sei vestita, si è lavato.",
+      "Por eso el participio concuerda: Anna si è alzata presto, ci siamo divertiti, le ragazze si sono preparate.",
+      "El pronombre va delante: non mi sono annoiato. Frecuentes: divertirsi, riposarsi, sposarsi, trovarsi bene."
+     ],
+     "q": "Ti sei divertito o divertita el fin de semana pasado? ¿Qué hiciste?",
+     "c": "Escribe tu rutina de ayer por la mañana con cinco verbos reflexivos en pasado."
+    },
+    "fr": {
+     "t": "Les verbes pronominaux au passé",
+     "g": "Raconter ta routine au passé avec des verbes pronominaux.",
+     "p": [
+      "Les pronominaux prennent toujours essere au passato prossimo : mi sono svegliato, ti sei vestita, si è lavato.",
+      "Le participe s'accorde donc : Anna si è alzata presto, ci siamo divertiti, le ragazze si sono preparate.",
+      "Le pronom vient d'abord : non mi sono annoiato. Courants : divertirsi, riposarsi, sposarsi, trovarsi bene."
+     ],
+     "q": "Ti sei divertito o divertita le week-end dernier ? Qu'as-tu fait ?",
+     "c": "Écris ta routine d'hier matin avec cinq verbes pronominaux au passé."
+    },
+    "it": {
+     "t": "I verbi riflessivi al passato",
+     "g": "Raccontare la routine al passato con i verbi riflessivi.",
+     "p": [
+      "I riflessivi vogliono sempre essere al passato prossimo: mi sono svegliato, ti sei vestita, si è lavato.",
+      "Quindi il participio si accorda: Anna si è alzata presto, ci siamo divertiti, le ragazze si sono preparate.",
+      "Il pronome va prima: non mi sono annoiato. Frequenti: divertirsi, riposarsi, sposarsi, trovarsi bene."
+     ],
+     "q": "Ti sei divertito o divertita lo scorso weekend? Che cosa hai fatto?",
+     "c": "Scrivi la tua mattina di ieri con cinque verbi riflessivi al passato."
+    },
+    "pt": {
+     "t": "Verbos reflexos no passado",
+     "g": "Contar a tua rotina no passado com verbos reflexos.",
+     "p": [
+      "Os reflexos levam sempre essere no passato prossimo: mi sono svegliato, ti sei vestita, si è lavato.",
+      "Por isso o particípio concorda: Anna si è alzata presto, ci siamo divertiti, le ragazze si sono preparate.",
+      "O pronome vem primeiro: non mi sono annoiato. Frequentes: divertirsi, riposarsi, sposarsi, trovarsi bene."
+     ],
+     "q": "Ti sei divertito o divertita no fim de semana passado? O que fizeste?",
+     "c": "Escreve a tua manhã de ontem com cinco verbos reflexos no passado."
+    },
+    "pt_BR": {
+     "t": "Verbos reflexivos no passado",
+     "g": "Contar a sua rotina no passado com verbos reflexivos.",
+     "p": [
+      "Os reflexivos sempre pedem essere no passato prossimo: mi sono svegliato, ti sei vestita, si è lavato.",
+      "Por isso o particípio concorda: Anna si è alzata presto, ci siamo divertiti, le ragazze si sono preparate.",
+      "O pronome vem antes: non mi sono annoiato. Frequentes: divertirsi, riposarsi, sposarsi, trovarsi bene."
+     ],
+     "q": "Ti sei divertito o divertita no fim de semana passado? O que você fez?",
+     "c": "Escreva a sua manhã de ontem com cinco verbos reflexivos no passado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi sono svegliato",
+      "ex": "Stamattina mi sono svegliato alle sei."
+     },
+     {
+      "w": "si è alzata",
+      "ex": "Lucia si è alzata tardi."
+     },
+     {
+      "w": "ci siamo divertiti",
+      "ex": "Alla festa ci siamo divertiti molto."
+     },
+     {
+      "w": "ti sei riposato?",
+      "ex": "Ti sei riposato in vacanza?"
+     },
+     {
+      "w": "si sono sposati",
+      "ex": "I miei amici si sono sposati a giugno."
+     },
+     {
+      "w": "mi sono trovato bene",
+      "ex": "A Bologna mi sono trovata benissimo."
+     }
+    ],
+    "gram": "Riflessivi al passato: pronome + essere + participio accordato (mi sono alzata, ci siamo vestiti, si sono divertite)."
+   }
+  },
+  {
+   "d": 97,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "The weekend story",
+     "g": "Narrate your weekend in a clear order.",
+     "p": [
+      "Order words: prima (first), poi (then), dopo (after), più tardi (later), alla fine (in the end).",
+      "Dopo can take a noun or infinitive: dopo pranzo, dopo cena. Prima di + noun: prima di colazione.",
+      "Link it all: sabato mattina prima ho fatto la spesa, poi sono andata al parco e alla fine ho cucinato per tutti."
+     ],
+     "q": "Raccontami il tuo weekend: prima, poi, alla fine!",
+     "c": "Write your last weekend in five sentences using prima, poi, dopo, più tardi and alla fine."
+    },
+    "de": {
+     "t": "Die Wochenendgeschichte",
+     "g": "Du erzählst dein Wochenende in klarer Reihenfolge.",
+     "p": [
+      "Ordnungswörter: prima (zuerst), poi (dann), dopo (danach), più tardi (später), alla fine (am Ende).",
+      "Dopo mit Nomen: dopo pranzo, dopo cena. Prima di + Nomen: prima di colazione.",
+      "Alles verbinden: sabato mattina prima ho fatto la spesa, poi sono andata al parco e alla fine ho cucinato per tutti."
+     ],
+     "q": "Raccontami il tuo weekend: prima, poi, alla fine!",
+     "c": "Schreib dein letztes Wochenende in fünf Sätzen mit prima, poi, dopo, più tardi und alla fine."
+    },
+    "es": {
+     "t": "La historia del fin de semana",
+     "g": "Contar tu fin de semana en un orden claro.",
+     "p": [
+      "Palabras de orden: prima (primero), poi (luego), dopo (después), più tardi (más tarde), alla fine (al final).",
+      "Dopo con un nombre: dopo pranzo, dopo cena. Prima di + nombre: prima di colazione.",
+      "Une todo: sabato mattina prima ho fatto la spesa, poi sono andata al parco e alla fine ho cucinato per tutti."
+     ],
+     "q": "Raccontami il tuo weekend: prima, poi, alla fine!",
+     "c": "Escribe tu último fin de semana en cinco frases con prima, poi, dopo, più tardi y alla fine."
+    },
+    "fr": {
+     "t": "Le récit du week-end",
+     "g": "Raconter ton week-end dans un ordre clair.",
+     "p": [
+      "Mots d'ordre : prima (d'abord), poi (puis), dopo (après), più tardi (plus tard), alla fine (à la fin).",
+      "Dopo avec un nom : dopo pranzo, dopo cena. Prima di + nom : prima di colazione.",
+      "On relie tout : sabato mattina prima ho fatto la spesa, poi sono andata al parco e alla fine ho cucinato per tutti."
+     ],
+     "q": "Raccontami il tuo weekend : prima, poi, alla fine !",
+     "c": "Écris ton dernier week-end en cinq phrases avec prima, poi, dopo, più tardi et alla fine."
+    },
+    "it": {
+     "t": "Il racconto del weekend",
+     "g": "Raccontare il tuo fine settimana in ordine chiaro.",
+     "p": [
+      "Parole per l'ordine: prima, poi, dopo, più tardi, alla fine.",
+      "Dopo con un nome: dopo pranzo, dopo cena. Prima di + nome: prima di colazione.",
+      "Collega tutto: sabato mattina prima ho fatto la spesa, poi sono andata al parco e alla fine ho cucinato per tutti."
+     ],
+     "q": "Raccontami il tuo weekend: prima, poi, alla fine!",
+     "c": "Scrivi il tuo ultimo weekend in cinque frasi con prima, poi, dopo, più tardi e alla fine."
+    },
+    "pt": {
+     "t": "A história do fim de semana",
+     "g": "Contar o teu fim de semana por uma ordem clara.",
+     "p": [
+      "Palavras de ordem: prima (primeiro), poi (depois), dopo (a seguir), più tardi (mais tarde), alla fine (no fim).",
+      "Dopo com um nome: dopo pranzo, dopo cena. Prima di + nome: prima di colazione.",
+      "Liga tudo: sabato mattina prima ho fatto la spesa, poi sono andata al parco e alla fine ho cucinato per tutti."
+     ],
+     "q": "Raccontami il tuo weekend: prima, poi, alla fine!",
+     "c": "Escreve o teu último fim de semana em cinco frases com prima, poi, dopo, più tardi e alla fine."
+    },
+    "pt_BR": {
+     "t": "A história do fim de semana",
+     "g": "Contar o seu fim de semana numa ordem clara.",
+     "p": [
+      "Palavras de ordem: prima (primeiro), poi (depois), dopo (em seguida), più tardi (mais tarde), alla fine (no final).",
+      "Dopo com substantivo: dopo pranzo, dopo cena. Prima di + substantivo: prima di colazione.",
+      "Junte tudo: sabato mattina prima ho fatto la spesa, poi sono andata al parco e alla fine ho cucinato per tutti."
+     ],
+     "q": "Raccontami il tuo weekend: prima, poi, alla fine!",
+     "c": "Escreva seu último fim de semana em cinco frases com prima, poi, dopo, più tardi e alla fine."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "prima",
+      "ex": "Prima ho fatto la doccia."
+     },
+     {
+      "w": "poi",
+      "ex": "Poi sono uscita a fare due passi."
+     },
+     {
+      "w": "dopo pranzo",
+      "ex": "Dopo pranzo abbiamo giocato a carte."
+     },
+     {
+      "w": "più tardi",
+      "ex": "Più tardi sono arrivati i miei cugini."
+     },
+     {
+      "w": "alla fine",
+      "ex": "Alla fine siamo andati tutti a dormire."
+     },
+     {
+      "w": "fare la spesa",
+      "ex": "Sabato mattina ho fatto la spesa."
+     }
+    ],
+    "gram": "Connettivi temporali per raccontare: prima, poi, dopo (+ nome), più tardi, alla fine; prima di + nome o infinito."
+   }
+  },
+  {
+   "d": 98,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "The imperfetto: forms",
+     "g": "Conjugate the imperfect tense, regular and irregular.",
+     "p": [
+      "Drop -re and add -vo, -vi, -va, -vamo, -vate, -vano: parlavo, leggevi, dormiva, parlavamo, leggevate, dormivano.",
+      "The stress is easy: the same vowel stays in all forms. Parlavano stresses -la-: parLAvano.",
+      "Key irregulars: essere (ero, eri, era, eravamo, eravate, erano), fare (facevo), bere (bevevo), dire (dicevo)."
+     ],
+     "q": "Can you conjugate essere in the imperfetto from io to loro?",
+     "c": "Write the full imperfetto of parlare, leggere and fare, then say each form aloud."
+    },
+    "de": {
+     "t": "Das imperfetto: Formen",
+     "g": "Du konjugierst das Imperfekt, regelmäßig und unregelmäßig.",
+     "p": [
+      "-re weg und -vo, -vi, -va, -vamo, -vate, -vano dran: parlavo, leggevi, dormiva, parlavamo, leggevate, dormivano.",
+      "Die Betonung ist einfach: Der Vokal bleibt in allen Formen. Parlavano betont -la-: parLAvano.",
+      "Wichtige Ausnahmen: essere (ero, eri, era, eravamo, eravate, erano), fare (facevo), bere (bevevo), dire (dicevo)."
+     ],
+     "q": "Kannst du essere im imperfetto von io bis loro konjugieren?",
+     "c": "Schreib das ganze imperfetto von parlare, leggere und fare und sprich jede Form laut."
+    },
+    "es": {
+     "t": "El imperfetto: formas",
+     "g": "Conjugar el pretérito imperfecto, regular e irregular.",
+     "p": [
+      "Quita -re y añade -vo, -vi, -va, -vamo, -vate, -vano: parlavo, leggevi, dormiva, parlavamo, leggevate, dormivano.",
+      "El acento es fácil: la misma vocal en todas las formas. Parlavano lleva el acento en -la-: parLAvano.",
+      "Irregulares clave: essere (ero, eri, era, eravamo, eravate, erano), fare (facevo), bere (bevevo), dire (dicevo)."
+     ],
+     "q": "¿Puedes conjugar essere en imperfetto de io a loro?",
+     "c": "Escribe el imperfetto completo de parlare, leggere y fare y di cada forma en voz alta."
+    },
+    "fr": {
+     "t": "L'imperfetto : les formes",
+     "g": "Conjuguer l'imparfait, régulier et irrégulier.",
+     "p": [
+      "On enlève -re et on ajoute -vo, -vi, -va, -vamo, -vate, -vano : parlavo, leggevi, dormiva, parlavamo, leggevate, dormivano.",
+      "L'accent est simple : la même voyelle dans toutes les formes. Parlavano s'accentue sur -la- : parLAvano.",
+      "Irréguliers clés : essere (ero, eri, era, eravamo, eravate, erano), fare (facevo), bere (bevevo), dire (dicevo)."
+     ],
+     "q": "Peux-tu conjuguer essere à l'imperfetto de io à loro ?",
+     "c": "Écris tout l'imperfetto de parlare, leggere et fare, puis dis chaque forme à voix haute."
+    },
+    "it": {
+     "t": "L'imperfetto: le forme",
+     "g": "Coniugare l'imperfetto regolare e irregolare.",
+     "p": [
+      "Si toglie -re e si aggiunge -vo, -vi, -va, -vamo, -vate, -vano: parlavo, leggevi, dormiva, parlavamo, leggevate, dormivano.",
+      "L'accento è facile: la stessa vocale in tutte le forme. Parlavano ha l'accento su -la-: parLAvano.",
+      "Irregolari chiave: essere (ero, eri, era, eravamo, eravate, erano), fare (facevo), bere (bevevo), dire (dicevo)."
+     ],
+     "q": "Sai coniugare essere all'imperfetto da io a loro?",
+     "c": "Scrivi tutto l'imperfetto di parlare, leggere e fare, poi di' ogni forma ad alta voce."
+    },
+    "pt": {
+     "t": "O imperfetto: formas",
+     "g": "Conjugar o pretérito imperfeito, regular e irregular.",
+     "p": [
+      "Tira-se -re e junta-se -vo, -vi, -va, -vamo, -vate, -vano: parlavo, leggevi, dormiva, parlavamo, leggevate, dormivano.",
+      "O acento é fácil: a mesma vogal em todas as formas. Parlavano tem o acento em -la-: parLAvano.",
+      "Irregulares-chave: essere (ero, eri, era, eravamo, eravate, erano), fare (facevo), bere (bevevo), dire (dicevo)."
+     ],
+     "q": "Consegues conjugar essere no imperfetto de io a loro?",
+     "c": "Escreve o imperfetto completo de parlare, leggere e fare e diz cada forma em voz alta."
+    },
+    "pt_BR": {
+     "t": "O imperfetto: formas",
+     "g": "Conjugar o pretérito imperfeito, regular e irregular.",
+     "p": [
+      "Tire -re e acrescente -vo, -vi, -va, -vamo, -vate, -vano: parlavo, leggevi, dormiva, parlavamo, leggevate, dormivano.",
+      "O acento é fácil: a mesma vogal em todas as formas. Parlavano tem o acento em -la-: parLAvano.",
+      "Irregulares-chave: essere (ero, eri, era, eravamo, eravate, erano), fare (facevo), bere (bevevo), dire (dicevo)."
+     ],
+     "q": "Você consegue conjugar essere no imperfetto de io a loro?",
+     "c": "Escreva o imperfetto completo de parlare, leggere e fare e diga cada forma em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parlavo",
+      "ex": "Da piccola parlavo solo il dialetto."
+     },
+     {
+      "w": "leggevamo",
+      "ex": "La sera leggevamo un libro insieme."
+     },
+     {
+      "w": "dormiva",
+      "ex": "Il gatto dormiva sul divano."
+     },
+     {
+      "w": "ero / era",
+      "ex": "Ero stanco e la casa era silenziosa."
+     },
+     {
+      "w": "facevo",
+      "ex": "Che lavoro facevi prima?"
+     },
+     {
+      "w": "bevevano",
+      "ex": "I nonni bevevano sempre un caffè dopo pranzo."
+     }
+    ],
+    "gram": "Imperfetto: radice + -avo, -evo, -ivo (parlavo, leggevo, dormivo); irregolari: ero, facevo, bevevo, dicevo."
+   }
+  },
+  {
+   "d": 99,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Imperfetto for habits",
+     "g": "Describe what you used to do with the imperfetto.",
+     "p": [
+      "The imperfetto tells repeated past habits: da bambino giocavo sempre in giardino.",
+      "Signal words: sempre, spesso, di solito, ogni estate, tutti i giorni, la domenica, da piccolo, quando ero giovane.",
+      "Compare with today: prima andavo in ufficio in macchina, adesso vado in bici."
+     ],
+     "q": "What did you always do on Sundays when you were a child?",
+     "c": "Write four habits from your childhood starting with da bambino or da bambina..."
+    },
+    "de": {
+     "t": "Imperfetto für Gewohnheiten",
+     "g": "Du beschreibst mit dem imperfetto, was du früher gemacht hast.",
+     "p": [
+      "Das imperfetto erzählt wiederholte Gewohnheiten: da bambino giocavo sempre in giardino.",
+      "Signalwörter: sempre, spesso, di solito, ogni estate, tutti i giorni, la domenica, da piccolo, quando ero giovane.",
+      "Vergleich mit heute: prima andavo in ufficio in macchina, adesso vado in bici."
+     ],
+     "q": "Was hast du als Kind sonntags immer gemacht?",
+     "c": "Schreib vier Gewohnheiten aus deiner Kindheit, beginnend mit da bambino oder da bambina..."
+    },
+    "es": {
+     "t": "Imperfetto para los hábitos",
+     "g": "Describir lo que solías hacer con el imperfetto.",
+     "p": [
+      "El imperfetto cuenta hábitos repetidos del pasado: da bambino giocavo sempre in giardino.",
+      "Palabras señal: sempre, spesso, di solito, ogni estate, tutti i giorni, la domenica, da piccolo, quando ero giovane.",
+      "Compara con hoy: prima andavo in ufficio in macchina, adesso vado in bici."
+     ],
+     "q": "¿Qué hacías siempre los domingos cuando eras pequeño?",
+     "c": "Escribe cuatro costumbres de tu infancia empezando con da bambino o da bambina..."
+    },
+    "fr": {
+     "t": "L'imperfetto pour les habitudes",
+     "g": "Décrire ce que tu faisais avant avec l'imperfetto.",
+     "p": [
+      "L'imperfetto raconte les habitudes passées : da bambino giocavo sempre in giardino.",
+      "Mots repères : sempre, spesso, di solito, ogni estate, tutti i giorni, la domenica, da piccolo, quando ero giovane.",
+      "Comparer avec aujourd'hui : prima andavo in ufficio in macchina, adesso vado in bici."
+     ],
+     "q": "Que faisais-tu toujours le dimanche quand tu étais enfant ?",
+     "c": "Écris quatre habitudes de ton enfance en commençant par da bambino ou da bambina..."
+    },
+    "it": {
+     "t": "L'imperfetto per le abitudini",
+     "g": "Descrivere quello che facevi di solito con l'imperfetto.",
+     "p": [
+      "L'imperfetto racconta abitudini ripetute nel passato: da bambino giocavo sempre in giardino.",
+      "Parole segnale: sempre, spesso, di solito, ogni estate, tutti i giorni, la domenica, da piccolo, quando ero giovane.",
+      "Confronto con oggi: prima andavo in ufficio in macchina, adesso vado in bici."
+     ],
+     "q": "Che cosa facevi sempre la domenica quando eri piccolo o piccola?",
+     "c": "Scrivi quattro abitudini della tua infanzia cominciando con da bambino o da bambina..."
+    },
+    "pt": {
+     "t": "Imperfetto para hábitos",
+     "g": "Descrever o que costumavas fazer com o imperfetto.",
+     "p": [
+      "O imperfetto conta hábitos repetidos no passado: da bambino giocavo sempre in giardino.",
+      "Palavras-sinal: sempre, spesso, di solito, ogni estate, tutti i giorni, la domenica, da piccolo, quando ero giovane.",
+      "Compara com hoje: prima andavo in ufficio in macchina, adesso vado in bici."
+     ],
+     "q": "O que fazias sempre ao domingo quando eras pequeno?",
+     "c": "Escreve quatro hábitos da tua infância a começar por da bambino ou da bambina..."
+    },
+    "pt_BR": {
+     "t": "Imperfetto para hábitos",
+     "g": "Descrever o que você costumava fazer com o imperfetto.",
+     "p": [
+      "O imperfetto conta hábitos repetidos no passado: da bambino giocavo sempre in giardino.",
+      "Palavras-sinal: sempre, spesso, di solito, ogni estate, tutti i giorni, la domenica, da piccolo, quando ero giovane.",
+      "Compare com hoje: prima andavo in ufficio in macchina, adesso vado in bici."
+     ],
+     "q": "O que você sempre fazia aos domingos quando era criança?",
+     "c": "Escreva quatro hábitos da sua infância começando com da bambino ou da bambina..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "da bambino / bambina",
+      "ex": "Da bambina andavo sempre dai nonni."
+     },
+     {
+      "w": "giocavo",
+      "ex": "Giocavo a calcio tutti i pomeriggi."
+     },
+     {
+      "w": "ogni estate",
+      "ex": "Ogni estate andavamo al mare in Puglia."
+     },
+     {
+      "w": "di solito",
+      "ex": "Di solito mia madre cucinava la domenica."
+     },
+     {
+      "w": "prima... adesso",
+      "ex": "Prima guardavo molta TV, adesso leggo di più."
+     },
+     {
+      "w": "quando ero giovane",
+      "ex": "Quando ero giovane ascoltavo molta musica."
+     }
+    ],
+    "gram": "Imperfetto per le azioni abituali nel passato, spesso con sempre, di solito, ogni + tempo, da piccolo, quando ero..."
+   }
+  },
+  {
+   "d": 100,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Imperfetto for descriptions",
+     "g": "Set the scene in the past: weather, people, places and feelings.",
+     "p": [
+      "Use the imperfetto to describe the background: era una bella giornata, faceva caldo, il cielo era azzurro.",
+      "People and feelings: mio nonno era alto e simpatico, avevo dieci anni, ero felice.",
+      "Places and situations: c'era tanta gente, c'erano molti bambini, la piazza era piena di luci."
+     ],
+     "q": "Day 100, bravo! Describe a beautiful day from your past: what was the weather, where were you?",
+     "c": "Write five descriptive sentences about a happy memory using era, c'era, c'erano, avevo and faceva."
+    },
+    "de": {
+     "t": "Imperfetto für Beschreibungen",
+     "g": "Du beschreibst die Szene in der Vergangenheit: Wetter, Menschen, Orte, Gefühle.",
+     "p": [
+      "Mit dem imperfetto beschreibst du den Hintergrund: era una bella giornata, faceva caldo, il cielo era azzurro.",
+      "Menschen und Gefühle: mio nonno era alto e simpatico, avevo dieci anni, ero felice.",
+      "Orte und Situationen: c'era tanta gente, c'erano molti bambini, la piazza era piena di luci."
+     ],
+     "q": "Tag 100, bravo! Beschreib einen schönen Tag aus deiner Vergangenheit: Wie war das Wetter, wo warst du?",
+     "c": "Schreib fünf beschreibende Sätze über eine glückliche Erinnerung mit era, c'era, c'erano, avevo und faceva."
+    },
+    "es": {
+     "t": "Imperfetto para las descripciones",
+     "g": "Ambientar el pasado: tiempo, personas, lugares y sentimientos.",
+     "p": [
+      "Usa el imperfetto para describir el fondo: era una bella giornata, faceva caldo, il cielo era azzurro.",
+      "Personas y sentimientos: mio nonno era alto e simpatico, avevo dieci anni, ero felice.",
+      "Lugares y situaciones: c'era tanta gente, c'erano molti bambini, la piazza era piena di luci."
+     ],
+     "q": "¡Día 100, bravo! Describe un día bonito de tu pasado: ¿qué tiempo hacía, dónde estabas?",
+     "c": "Escribe cinco frases descriptivas sobre un recuerdo feliz con era, c'era, c'erano, avevo y faceva."
+    },
+    "fr": {
+     "t": "L'imperfetto pour décrire",
+     "g": "Planter le décor au passé : météo, personnes, lieux et émotions.",
+     "p": [
+      "L'imperfetto décrit l'arrière-plan : era una bella giornata, faceva caldo, il cielo era azzurro.",
+      "Personnes et émotions : mio nonno era alto e simpatico, avevo dieci anni, ero felice.",
+      "Lieux et situations : c'era tanta gente, c'erano molti bambini, la piazza era piena di luci."
+     ],
+     "q": "Jour 100, bravo ! Décris une belle journée de ton passé : quel temps faisait-il, où étais-tu ?",
+     "c": "Écris cinq phrases descriptives sur un souvenir heureux avec era, c'era, c'erano, avevo et faceva."
+    },
+    "it": {
+     "t": "L'imperfetto per descrivere",
+     "g": "Descrivere la scena nel passato: tempo, persone, luoghi ed emozioni.",
+     "p": [
+      "L'imperfetto descrive lo sfondo: era una bella giornata, faceva caldo, il cielo era azzurro.",
+      "Persone ed emozioni: mio nonno era alto e simpatico, avevo dieci anni, ero felice.",
+      "Luoghi e situazioni: c'era tanta gente, c'erano molti bambini, la piazza era piena di luci."
+     ],
+     "q": "Giorno 100, bravo! Descrivi una bella giornata del tuo passato: che tempo faceva, dov'eri?",
+     "c": "Scrivi cinque frasi descrittive su un ricordo felice con era, c'era, c'erano, avevo e faceva."
+    },
+    "pt": {
+     "t": "Imperfetto para descrições",
+     "g": "Descrever o cenário no passado: tempo, pessoas, lugares e sentimentos.",
+     "p": [
+      "Usa o imperfetto para descrever o fundo: era una bella giornata, faceva caldo, il cielo era azzurro.",
+      "Pessoas e sentimentos: mio nonno era alto e simpatico, avevo dieci anni, ero felice.",
+      "Lugares e situações: c'era tanta gente, c'erano molti bambini, la piazza era piena di luci."
+     ],
+     "q": "Dia 100, bravo! Descreve um dia bonito do teu passado: que tempo fazia, onde estavas?",
+     "c": "Escreve cinco frases descritivas sobre uma memória feliz com era, c'era, c'erano, avevo e faceva."
+    },
+    "pt_BR": {
+     "t": "Imperfetto para descrições",
+     "g": "Descrever o cenário no passado: tempo, pessoas, lugares e sentimentos.",
+     "p": [
+      "Use o imperfetto para descrever o fundo: era una bella giornata, faceva caldo, il cielo era azzurro.",
+      "Pessoas e sentimentos: mio nonno era alto e simpatico, avevo dieci anni, ero felice.",
+      "Lugares e situações: c'era tanta gente, c'erano molti bambini, la piazza era piena di luci."
+     ],
+     "q": "Dia 100, bravo! Descreva um dia bonito do seu passado: como estava o tempo, onde você estava?",
+     "c": "Escreva cinco frases descritivas sobre uma lembrança feliz com era, c'era, c'erano, avevo e faceva."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "era una bella giornata",
+      "ex": "Era una bella giornata di primavera."
+     },
+     {
+      "w": "faceva caldo",
+      "ex": "Faceva caldo e c'era il sole."
+     },
+     {
+      "w": "c'era",
+      "ex": "In piazza c'era tanta gente."
+     },
+     {
+      "w": "c'erano",
+      "ex": "C'erano bancarelle e musica dappertutto."
+     },
+     {
+      "w": "avevo... anni",
+      "ex": "Avevo otto anni e una bici rossa."
+     },
+     {
+      "w": "il ricordo",
+      "ex": "È uno dei miei ricordi più belli."
+     }
+    ],
+    "gram": "Imperfetto per descrivere tempo, persone, luoghi, età e stati d'animo nel passato: era, c'era, c'erano, avevo, faceva."
+   }
+  }
+ ]
+}

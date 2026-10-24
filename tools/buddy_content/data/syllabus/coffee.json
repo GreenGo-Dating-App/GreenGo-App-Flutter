@@ -1,0 +1,2195 @@
+{
+"topic": "coffee",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to the world of coffee",
+"f": "A first look at the journey from a cherry on a tree to the cup in your hands"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "The coffee plant",
+"f": "Coffea shrubs, their glossy leaves, white flowers and red cherries"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "From cherry to bean",
+"f": "What is inside a coffee cherry and which part becomes the bean we roast"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Arabica and robusta",
+"f": "The two main species: how they differ in taste, caffeine and where they grow"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "The coffee belt",
+"f": "Why coffee grows between the tropics and how altitude shapes flavour"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "The legend of Kaldi",
+"f": "The famous Ethiopian story of the goatherd and his energetic goats"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "How coffee spread worldwide",
+"f": "From Ethiopia and Yemen to Europe, the Americas and Asia"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Green coffee",
+"f": "What raw, unroasted beans look like, smell like and how they are stored"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Roasting in a nutshell",
+"f": "How heat turns green beans brown and creates aroma and flavour"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Light, medium and dark roasts",
+"f": "How roast level changes acidity, body and bitterness in the cup"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Reading a coffee bag",
+"f": "Origin, roast date, process, variety and tasting notes explained"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Freshness matters",
+"f": "Why roast date counts and the best window for brewing beans"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Storing coffee at home",
+"f": "Airtight, dark, cool and dry: keeping beans fresh for longer"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Whole bean or pre-ground",
+"f": "Why grinding just before brewing makes such a difference"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Blade and burr grinders",
+"f": "How each grinder works and why burrs give a more even grind"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Grind size basics",
+"f": "From extra fine to coarse and which brew method needs which"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "The coffee-to-water ratio",
+"f": "A simple starting ratio and how to adjust it to your taste"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Water: the biggest ingredient",
+"f": "Why clean, good-tasting water makes better coffee"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Water temperature",
+"f": "The ideal brewing range and what happens when water is too hot or cool"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Your first scale and timer",
+"f": "Weighing coffee and timing the brew for repeatable results"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "The French press",
+"f": "Full immersion brewing: steeping, plunging and pouring off promptly"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "French press troubleshooting",
+"f": "Silt, bitterness and weak cups: simple fixes"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Automatic drip machines",
+"f": "Getting the best from a filter machine at home or in the office"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Pour-over basics",
+"f": "The bloom, slow spiral pours and a clean, bright cup"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "The cone dripper",
+"f": "Brewing with a cone-shaped dripper and a paper filter"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Flat-bottom drippers",
+"f": "How a flat bed changes flow and evenness of extraction"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Paper, metal and cloth filters",
+"f": "How each filter changes body, clarity and oils in the cup"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "The bloom explained",
+"f": "Why fresh coffee bubbles when wet and why we pause for it"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Tasting your first cups",
+"f": "Noticing sweetness, acidity, bitterness and body"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month of coffee",
+"f": "Brew the same coffee two ways and describe the difference"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "The moka pot",
+"f": "Stovetop brewing: filling, heat control and avoiding a burnt taste"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "The AeroPress",
+"f": "A versatile press: standard and inverted methods"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Cold brew",
+"f": "Steeping coarse coffee in cold water for many hours for a smooth drink"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Iced coffee vs cold brew",
+"f": "Two different ways to enjoy coffee cold and how they taste"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Turkish coffee",
+"f": "Very fine coffee simmered in a cezve and served with its foam"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Vietnamese phin",
+"f": "A small metal filter, slow drips and sweetened condensed milk"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "The siphon brewer",
+"f": "Vacuum brewing with two glass chambers: science you can watch"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "The percolator",
+"f": "A classic stovetop method and how to keep it from over-extracting"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Clever and immersion drippers",
+"f": "Combining steeping and filtering in one device"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Choosing a method for you",
+"f": "Matching brew methods to your taste, time and budget"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "What espresso is",
+"f": "Pressure, fine coffee and a short, intense shot"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "How an espresso machine works",
+"f": "Boiler, pump, group head and portafilter explained"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Espresso grinders",
+"f": "Why espresso needs a precise grinder with fine adjustments"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Dosing and distribution",
+"f": "Filling the basket evenly for a balanced shot"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Tamping",
+"f": "Pressing the coffee bed level and firm"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Pulling your first shot",
+"f": "Dose, yield and time: the three numbers of espresso"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Reading crema",
+"f": "What the golden foam on top can and cannot tell you"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Sour or bitter shots",
+"f": "Recognising under- and over-extraction in espresso"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Ristretto and lungo",
+"f": "Shorter and longer shots and how they taste"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "The Americano and the long black",
+"f": "Espresso with hot water, in two different orders"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Milk basics for coffee",
+"f": "How milk proteins and fats create foam and sweetness"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Steaming milk",
+"f": "Stretching and texturing milk with a steam wand"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Microfoam",
+"f": "Silky, glossy milk that pours smoothly"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "The cappuccino",
+"f": "Espresso, steamed milk and foam in balanced proportions"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "The latte",
+"f": "A larger, milkier drink with a thin layer of foam"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "The flat white",
+"f": "A small, strong milk drink with velvety microfoam"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "The macchiato and cortado",
+"f": "Small drinks with just a touch of milk"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Plant milks in coffee",
+"f": "Oat, soy, almond and others: how they foam and taste"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Frothing without a machine",
+"f": "Using a jar, a whisk or a French press to froth milk"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: espresso and milk",
+"f": "Make two milk drinks and compare texture and taste"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Introduction to coffee tasting",
+"f": "Using smell, taste and mouthfeel to describe a cup"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Aroma and smell",
+"f": "Why most of what we taste in coffee comes through the nose"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Acidity in coffee",
+"f": "Bright, juicy acidity and how it differs from sourness"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Sweetness in coffee",
+"f": "Where natural sweetness comes from and how to notice it"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Bitterness",
+"f": "The good bitterness of dark chocolate and the harsh kind"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Body and mouthfeel",
+"f": "Light, silky, syrupy or heavy: the feel of coffee"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Aftertaste and finish",
+"f": "What lingers after you swallow and why it matters"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "The coffee flavour wheel",
+"f": "A tool for finding words for what you taste"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Tasting side by side",
+"f": "Comparing two coffees at once to train your palate"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Building a flavour vocabulary",
+"f": "Using fruits, nuts, spices and sweets to describe coffee"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Coffee from Ethiopia",
+"f": "Floral and fruity coffees from the birthplace of arabica"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Coffee from Kenya",
+"f": "Bright, juicy coffees with blackcurrant notes"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Coffee from Colombia",
+"f": "Balanced, sweet coffees from mountain farms"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Coffee from Brazil",
+"f": "The largest producer and its nutty, chocolatey coffees"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Coffee from Central America",
+"f": "Guatemala, Costa Rica, Honduras and their classic profiles"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Coffee from Indonesia",
+"f": "Sumatra, Java and Sulawesi and their earthy depth"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Coffee from Vietnam",
+"f": "A robusta giant and its strong coffee traditions"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Coffee from Yemen",
+"f": "One of the oldest coffee traditions and the port of Mocha"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Coffee from Jamaica and Hawaii",
+"f": "Island coffees with famous names"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Coffee from India",
+"f": "Monsooned Malabar and shade-grown coffee"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Coffee from Tanzania and Uganda",
+"f": "East African coffees, from the slopes of Kilimanjaro to robusta heartlands"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Coffee from Peru",
+"f": "Gentle, sweet coffees often grown by small cooperatives in the Andes"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Coffee from Rwanda",
+"f": "Bright, tea-like coffees from the land of a thousand hills"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Blends vs single origins",
+"f": "Why some coffees mix several origins and others celebrate just one place"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Guessing origins blind",
+"f": "A fun game: tasting a coffee and guessing where it comes from"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Seasonal coffees",
+"f": "Why specialty roasters change their offer with each harvest"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Choosing beans in a shop",
+"f": "What to look for on the shelf when buying coffee"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Talking to your barista",
+"f": "Asking good questions to discover coffees you will love"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Exploring with subscriptions",
+"f": "How coffee subscriptions help you try many roasters and origins"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: a tour of origins",
+"f": "Taste two origins and note the differences you notice"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Washed processing",
+"f": "Removing fruit before drying for clean, bright coffees"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Natural processing",
+"f": "Drying whole cherries for fruity, heavy-bodied coffees"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Honey processing",
+"f": "Drying with some sticky fruit left on the bean"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Wet-hulled processing",
+"f": "The Indonesian method behind earthy, full coffees"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "How processing changes flavour",
+"f": "Tasting the same origin with different processes"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Drying beds and patios",
+"f": "How beans are dried and why careful drying matters"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Harvesting coffee",
+"f": "Hand-picking ripe cherries versus strip picking"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Coffee farmers' year",
+"f": "Flowering, growing, harvesting and preparing for the next season"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Shade-grown coffee",
+"f": "Coffee grown under trees and its effect on farms and flavour"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Altitude and flavour",
+"f": "Why high-grown beans are often denser and brighter"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Caffeine basics",
+"f": "What caffeine is and how much is in different coffee drinks"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Decaf coffee",
+"f": "How caffeine is removed: water, CO2 and solvent methods"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Half-caf and low-caffeine options",
+"f": "Enjoying coffee with less caffeine"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Coffee in Italy",
+"f": "The espresso bar, standing at the counter and morning cappuccino customs"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Coffee in France",
+"f": "Café culture, terraces and the petit noir"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Coffee in Austria",
+"f": "The Viennese coffee house and its long tradition"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Coffee in Turkey and Greece",
+"f": "Thick, unfiltered coffee and social rituals"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Coffee in Ethiopia",
+"f": "The coffee ceremony: roasting, brewing and sharing"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Coffee in Brazil",
+"f": "The cafezinho as a gesture of welcome"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Coffee in Portugal",
+"f": "The bica and the everyday espresso culture"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Coffee in Scandinavia",
+"f": "Fika, light roasts and high consumption"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Coffee in Japan",
+"f": "Kissaten, careful pour-overs and canned coffee"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Coffee in Australia",
+"f": "The flat white, brunch culture and independent cafés"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Coffee in Vietnam",
+"f": "Egg coffee, iced coffee with milk and sidewalk cafés"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Café etiquette around the world",
+"f": "How to order, pay and behave in cafés in different countries"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "How to order like a local",
+"f": "Common coffee names and how they differ between countries"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Making coffee for guests",
+"f": "Brewing for several people and serving with care"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Cleaning your equipment",
+"f": "Why oils and scale ruin flavour and how to clean gear"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Descaling machines",
+"f": "Removing mineral build-up and protecting your machine"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: graduating from beginner",
+"f": "Brew your best cup with your favourite method and write tasting notes"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "What extraction means",
+"f": "Dissolving flavour from grounds into water, step by step"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Under- and over-extraction",
+"f": "Sour, thin cups versus bitter, dry cups and how to fix them"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "The extraction compass",
+"f": "Adjusting grind, ratio and time to move towards balance"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Strength vs extraction",
+"f": "Why a strong cup and a well-extracted cup are not the same"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Total dissolved solids",
+"f": "What TDS means and how it describes coffee strength"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Grind distribution",
+"f": "Fines, boulders and why grinder quality matters"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Burr shapes",
+"f": "Flat and conical burrs and how they influence flavour"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Dialling in pour-over",
+"f": "A method for adjusting grind and pours systematically"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Pour-over pouring techniques",
+"f": "Pulse pouring, continuous pouring and agitation"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Agitation",
+"f": "Stirring, swirling and how movement changes extraction"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Brewing larger batches",
+"f": "Scaling pour-over and immersion for several cups"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Bypass brewing",
+"f": "Adding water after brewing to adjust strength"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "The kettle",
+"f": "Gooseneck kettles and why control of flow matters"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Temperature and roast level",
+"f": "Hotter water for light roasts, cooler for darker ones"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Water chemistry basics",
+"f": "Hardness, alkalinity and how minerals affect taste"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Making your own brew water",
+"f": "Mixing minerals into pure water for consistent results"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Filtered water options",
+"f": "Jug filters, softeners and what they change"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Advanced AeroPress recipes",
+"f": "Ratios, steep times and bypass recipes"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "AeroPress competition style",
+"f": "Creative recipes from the World AeroPress Championship tradition"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Cold brew concentrate",
+"f": "Making a concentrate and diluting it well"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Japanese-style iced coffee",
+"f": "Brewing hot directly onto ice for a bright cold coffee"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Nitro cold brew",
+"f": "How nitrogen gives cold brew a creamy, stout-like texture"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Flash brewing and ice ratios",
+"f": "Calculating ice so the drink is not watered down"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Brewing at altitude",
+"f": "How a lower boiling point in the mountains changes brewing"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Single-dose grinding",
+"f": "Weighing each dose and why many home baristas grind this way"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Review: brewing science",
+"f": "Brew one coffee at three grind sizes and taste the change"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Dialling in espresso",
+"f": "Changing one variable at a time to find a sweet shot"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Brew ratios for espresso",
+"f": "Normale, ristretto and lungo ratios explained"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Shot time and flow",
+"f": "What a fast or slow shot tells you"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Espresso baskets",
+"f": "Precision, ridged and ridgeless baskets and their effects"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Puck preparation",
+"f": "WDT, levelling tools and puck screens"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Channelling",
+"f": "Why water finds weak paths and how to prevent it"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Pre-infusion",
+"f": "Wetting the puck gently before full pressure"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Blooming espresso",
+"f": "Pausing after pre-infusion to let the puck saturate evenly"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Espresso temperature",
+"f": "How brew temperature changes taste and balance"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Single origin espresso",
+"f": "Pulling shots of a single coffee and its challenges"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Espresso blends",
+"f": "Why roasters blend beans for balance and consistency"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Milk and espresso balance",
+"f": "Matching shot strength to milk volume"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Latte art: the heart",
+"f": "Pouring height, flow and the basic heart shape"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Latte art: the tulip",
+"f": "Stacking layers to pour a tulip"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Latte art: the rosetta",
+"f": "Wiggling the pitcher to create a leaf pattern"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Latte art practice tips",
+"f": "Practising with water and soap, and pitcher choice"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Iced espresso drinks",
+"f": "Iced lattes, shakerato and espresso tonic"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Espresso cocktails without alcohol",
+"f": "Creative mocktails built on espresso"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Affogato",
+"f": "Espresso poured over ice cream: a simple Italian dessert"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Mocha and chocolate drinks",
+"f": "Combining coffee with chocolate in balance"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Syrups and flavoured drinks",
+"f": "Making simple syrups like vanilla and caramel at home"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Spiced coffees",
+"f": "Cardamom, cinnamon and other spices in coffee traditions"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Coffee and sweeteners",
+"f": "Sugar, honey and others: how they change perception"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Home espresso machine types",
+"f": "Single boiler, heat exchanger, dual boiler and lever"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Maintaining an espresso machine",
+"f": "Backflushing, gaskets and daily cleaning"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Grinder maintenance",
+"f": "Cleaning burrs, clearing retained grounds and keeping the grind consistent"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Review: espresso skills",
+"f": "Pull and taste three shots with different ratios"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Coffee varieties",
+"f": "Typica, Bourbon and their many descendants"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Bourbon and its colours",
+"f": "Red, yellow and pink Bourbon and their sweet profiles"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Gesha",
+"f": "The famous variety with jasmine and tropical fruit notes"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "SL28 and SL34",
+"f": "Kenyan varieties developed for flavour and climate"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Caturra, Catuai and dwarf varieties",
+"f": "Compact plants that changed farming"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Hybrids and new varieties",
+"f": "Breeding for disease resistance and quality"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Liberica and excelsa",
+"f": "Less common coffee species and their flavours"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Coffee leaf rust",
+"f": "The plant disease that shaped coffee history and farming"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Climate and coffee",
+"f": "How changing weather affects growers"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Coffee farm visit",
+"f": "What happens on a farm through the year"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "The washing station",
+"f": "How cherries are sorted, pulped, fermented and washed"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Fermentation experiments",
+"f": "Anaerobic and other controlled fermentations"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Grading green coffee",
+"f": "Defects, screen size and quality scores"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Specialty coffee",
+"f": "What the term means and how coffees are scored"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Microlots and single estates",
+"f": "Small, traceable lots and why they matter"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Coffee cooperatives",
+"f": "How small farmers work together to process and sell their coffee"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Coffee competitions for farmers",
+"f": "How quality auctions such as Cup of Excellence reward top lots"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Women in coffee",
+"f": "The many women farmers, roasters and baristas shaping the coffee world"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Direct trade and relationship coffee",
+"f": "Roasters working closely with farmers"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Certifications",
+"f": "Fair Trade, Rainforest Alliance, organic and what each one covers"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Coffee trade journey",
+"f": "Farmer, exporter, importer, roaster and café"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Coffee and sustainability",
+"f": "Water use, biodiversity and waste in coffee"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Reusable cups and waste",
+"f": "Reducing waste at home and in cafés"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Composting coffee grounds",
+"f": "Using spent grounds in gardens and at home"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Cascara",
+"f": "The dried skins of the coffee cherry brewed as a fruity infusion"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Coffee leaf tea",
+"f": "A lesser-known drink made from the leaves of the coffee plant"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Review: coffee from the farm",
+"f": "Map the journey of a bag of coffee you own"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Roasting basics in depth",
+"f": "Drying, browning and development stages"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "First crack",
+"f": "The popping sound that marks a key roasting moment"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Second crack",
+"f": "Darker roasting and the oils that rise to the surface"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Roast development",
+"f": "Time after first crack and its effect on taste"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Roast colour",
+"f": "Measuring and comparing roast colour"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Home roasting: pan and oven",
+"f": "Simple ways to roast beans at home"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Home roasting: popcorn machines",
+"f": "A popular hobbyist method and safety tips"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Home roasting machines",
+"f": "Small drum and air roasters for enthusiasts"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Resting after roasting",
+"f": "Why fresh roasted coffee needs days to degas"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Degassing and valves",
+"f": "One-way valves on bags and why they exist"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Roasting for espresso vs filter",
+"f": "How roasters adjust profiles for each"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Blending at home",
+"f": "Combining two coffees to create your own blend"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Cupping: the professional tasting",
+"f": "The standard method for evaluating coffee"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Setting up a cupping",
+"f": "Bowls, spoons, ratios and timing"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Breaking the crust",
+"f": "The aromatic moment of a cupping"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Slurping and scoring",
+"f": "Spraying coffee across the palate and taking notes"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Triangle tests",
+"f": "Training to identify the odd cup out"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Calibrating your palate",
+"f": "Tasting with others and comparing notes"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Aroma kits",
+"f": "Training your nose with reference scents"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Sensory traps",
+"f": "Expectation, packaging and price biases in tasting"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Review: roasting and cupping",
+"f": "Cup a lighter and a darker roast side by side and score them"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Coffee and food pairing",
+"f": "Matching coffee with pastries, chocolate and fruit"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Coffee and cheese",
+"f": "A surprising pairing worth trying"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Coffee and breakfast",
+"f": "Matching brews with morning dishes from around the world"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Coffee and chocolate tasting",
+"f": "Tasting coffees alongside chocolates of different origins"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Coffee in desserts",
+"f": "Tiramisu, coffee cakes and coffee ice cream"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Cooking with coffee",
+"f": "Coffee rubs, sauces and savoury uses"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Coffee in Spain",
+"f": "Café con leche, cortado and café solo"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Coffee in Mexico",
+"f": "Café de olla with cinnamon and piloncillo"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Coffee in the Middle East",
+"f": "Cardamom coffee and traditions of hospitality"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Coffee in the United States",
+"f": "Diners, drip coffee and the rise of specialty cafés"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Coffee in Colombia",
+"f": "Tinto and the coffee cultural landscape"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Coffee in South Korea",
+"f": "A vibrant café scene with design-led and themed cafés"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Coffee in Singapore and Malaysia",
+"f": "Kopi, the kopitiam and a unique roasting tradition"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Coffee in Hong Kong",
+"f": "Yuenyeung: coffee and milk tea mixed in one cup"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Coffee in Thailand",
+"f": "Oliang and sweet iced coffee culture"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Coffee in India",
+"f": "South Indian filter coffee poured high between two cups"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Coffee in Cuba",
+"f": "Café cubano with its sweet whipped espumita"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Coffee in Senegal",
+"f": "Café Touba, spiced with grains of Selim"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Coffee in Finland",
+"f": "Light roasts and some of the highest consumption in the world"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Coffee in Germany",
+"f": "Kaffee und Kuchen, the afternoon coffee and cake ritual"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Tea vs coffee cultures",
+"f": "How countries chose their favourite hot drink"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Coffee in literature and art",
+"f": "Cafés as places where writers and artists met"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Famous historic cafés",
+"f": "Café Procope, Caffè Florian and other legendary cafés"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "The coffeehouse as a meeting place",
+"f": "Coffee houses in Istanbul, London and Vienna"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "The story of instant coffee",
+"f": "How instant coffee is made and why it became popular"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Café menus decoded",
+"f": "Understanding the words you find on specialty café menus"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Coffee and music",
+"f": "Jazz, café playlists and the sound of the coffee house"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Photographing coffee",
+"f": "Taking beautiful photos of your cups, beans and latte art"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate graduation",
+"f": "Host a mini cupping of three coffees and share your notes"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Refractometers",
+"f": "Measuring TDS and calculating extraction yield"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Extraction yield maths",
+"f": "Using TDS, dose and beverage weight to find extraction"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "The brewing control chart",
+"f": "Mapping strength and extraction to find your ideal zone"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Particle size analysis",
+"f": "How grind distribution is measured and compared"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Advanced pour-over recipes",
+"f": "Recipes from competition baristas and why they work"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Pour-over with high-end grinders",
+"f": "Unimodal grinders and clarity in the cup"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Flow rate and bed depth",
+"f": "How dripper geometry and flow shape extraction"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Brewing with different papers",
+"f": "Paper thickness and flow speed"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Water recipes by roast",
+"f": "Choosing mineral content for different coffees"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Advanced cold brew methods",
+"f": "Slow drip towers and temperature control"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Pressure profiling",
+"f": "Changing pressure during the shot for different flavours"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Flow profiling",
+"f": "Controlling flow rate rather than pressure"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Lever machines",
+"f": "Spring and manual levers and their declining pressure"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Turbo shots",
+"f": "Fast, coarser shots at lower pressure"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Long and allongé shots",
+"f": "Higher ratios for clarity and lightness"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Espresso with light roasts",
+"f": "Strategies for extracting bright coffees as espresso"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Espresso recipe design",
+"f": "Creating a recipe for a new coffee from scratch"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Advanced latte art",
+"f": "Swans, layered tulips and complex designs"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Etching and colour art",
+"f": "Drawing on foam with a tool and colours"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Milk science in depth",
+"f": "Proteins, fats, sugars and steaming temperature"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Advanced plant milk steaming",
+"f": "Getting stable foam from oat, soy and nut milks"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Batch brew excellence",
+"f": "Making filter coffee machines shine in a busy setting"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Freezing coffee beans",
+"f": "How freezing in portions can preserve freshness"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Grind temperature",
+"f": "How heat during grinding can affect flavour"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Espresso puck forensics",
+"f": "What a used puck can and cannot tell you"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Decaf espresso done well",
+"f": "Dialling in decaf so it tastes sweet and full"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Review: advanced brewing",
+"f": "Measure extraction of your favourite brew and adjust"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Origin deep dive: Ethiopia regions",
+"f": "Yirgacheffe, Sidamo, Guji and Harrar"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Origin deep dive: Kenya regions",
+"f": "Nyeri, Kirinyaga and the auction system"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Origin deep dive: Colombia regions",
+"f": "Huila, Nariño and the coffee axis"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Origin deep dive: Brazil regions",
+"f": "Sul de Minas, Cerrado and Mogiana"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Origin deep dive: Panama",
+"f": "Boquete and the rise of Gesha"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Origin deep dive: Rwanda and Burundi",
+"f": "Bright coffees from the hills of central Africa"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Origin deep dive: Peru and Bolivia",
+"f": "High-altitude coffees from the Andes"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Origin deep dive: Yunnan",
+"f": "China's growing specialty coffee region"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Origin deep dive: Papua New Guinea",
+"f": "Smallholder coffees from the highlands"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Origin deep dive: Mexico and Guatemala",
+"f": "Chiapas, Antigua, Huehuetenango and more"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Review: origins mastery",
+"f": "Blind taste two origins and guess where they are from"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Advanced processing: anaerobic",
+"f": "Fermenting in sealed tanks and its effects"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Advanced processing: carbonic maceration",
+"f": "A technique borrowed from winemaking"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Advanced processing: co-ferments",
+"f": "Adding fruit or yeast and the debate about it"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Advanced processing: experimental drying",
+"f": "Slow drying, shade drying and new ideas"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Green coffee storage",
+"f": "Moisture, packaging and ageing of green beans"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Moisture and density",
+"f": "Measuring green coffee and what the numbers tell a roaster"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Buying green coffee",
+"f": "Sourcing small quantities of green beans for home roasting"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Aged and monsooned coffees",
+"f": "Deliberately aged beans and their character"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Advanced roasting: profiles",
+"f": "Reading a roast curve and rate of rise"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Advanced roasting: charge and heat",
+"f": "Charge temperature and heat application"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Advanced roasting: airflow",
+"f": "How airflow affects heat transfer and flavour"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Roasting defects",
+"f": "Baked, scorched and underdeveloped coffees"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Sample roasting",
+"f": "Small roasts used to evaluate green coffee before buying"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Roasting naturals and decafs",
+"f": "Why these coffees need gentler, adapted profiles"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Logging your roasts",
+"f": "Recording curves and notes to repeat good results"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Review: roasting mastery",
+"f": "Compare two roast levels of the same green coffee"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "The barista profession",
+"f": "Skills, workflow and hospitality behind the bar"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Café workflow",
+"f": "Speed, consistency and teamwork during busy times"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Barista championships",
+"f": "How barista competitions work and what judges look for"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Brewers Cup",
+"f": "The competition for filter coffee"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Latte Art championships",
+"f": "Creativity and precision under the spotlight"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Cup Tasters",
+"f": "The competition based on triangle tests"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Q graders",
+"f": "The professional certification for evaluating green and roasted coffee"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Cupping forms in detail",
+"f": "How professional scoring sheets break down quality"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Signature drinks",
+"f": "Designing a creative coffee drink with a story"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Menu design for coffee",
+"f": "Building a clear, inviting coffee menu"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Opening a café: first thoughts",
+"f": "What people usually consider before opening a small café"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Home coffee bar design",
+"f": "Planning a beautiful and practical coffee corner"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Choosing a grinder for the long term",
+"f": "What to consider when upgrading"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Choosing an espresso machine",
+"f": "Features that matter for different needs"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Travel coffee kits",
+"f": "Brewing great coffee on the road"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Coffee for camping",
+"f": "Simple methods for outdoor brewing"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Coffee for the office",
+"f": "Better coffee for a team without fuss"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Brewing for a big group",
+"f": "Planning coffee for a party or event without stress"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Coffee pairing dinner",
+"f": "Designing a menu where each course meets a coffee"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Review: coffee professionals",
+"f": "Design your own signature drink and present it"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "History: coffee in the Ottoman Empire",
+"f": "Coffee houses and coffee traditions in Istanbul"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "History: coffee arrives in Europe",
+"f": "Venice, London and Vienna's first coffee houses"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "History: coffee in the Americas",
+"f": "How coffee spread to the Caribbean and Latin America"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "History: espresso machines",
+"f": "From early steam machines to the lever and the pump"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "History: the three waves",
+"f": "The waves of coffee from mass market to specialty"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Coffee and science",
+"f": "Research on roasting chemistry and aroma compounds"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Aroma chemistry",
+"f": "The compounds that create caramel, fruit and floral notes"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Coffee and design",
+"f": "Iconic coffee makers that became design classics"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Coffee words around the world",
+"f": "How the word coffee travelled through languages"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Coffee in the United Kingdom",
+"f": "From historic coffee houses to a modern café boom"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Coffee in Indonesia",
+"f": "Kopi tubruk and a rich mix of island traditions"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Coffee rituals at home",
+"f": "Creating a mindful morning brewing ritual"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Mindful tasting",
+"f": "Slowing down and paying full attention to a cup"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Creating a house blend",
+"f": "Designing a blend you would happily drink every day"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "A seasonal coffee menu",
+"f": "Building drinks around the seasons and local ingredients"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Describing coffee for others",
+"f": "Writing tasting notes that invite people to try"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Review: culture and history",
+"f": "Tell the story of coffee in your own country"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Teaching a friend to brew",
+"f": "Explaining a brew method simply and clearly"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Hosting a coffee tasting",
+"f": "Planning a tasting for friends with a theme"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Coffee journaling",
+"f": "Recording recipes, notes and favourite coffees"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Building a tasting library",
+"f": "Keeping notes on origins, processes and roasters"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Exploring local roasters",
+"f": "How to find and support roasters near you"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Visiting cafés as a traveller",
+"f": "Discovering coffee scenes in new cities"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Coffee tourism",
+"f": "Visiting coffee regions, farms and museums"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "A coffee walk in your city",
+"f": "Planning a café crawl to compare styles"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Coffee and community",
+"f": "How cafés bring people together across cultures"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Sustainable choices as a drinker",
+"f": "Small steps that help farmers and the planet"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "The future of coffee",
+"f": "New varieties, climate adaptation and innovation"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Coffee and technology",
+"f": "Smart scales, apps and connected machines"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Lessons from champions",
+"f": "What world champions teach about curiosity and practice"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Your coffee philosophy",
+"f": "Defining what great coffee means to you"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Your perfect cup revisited",
+"f": "Brew your very first method again and compare"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Your espresso revisited",
+"f": "Pull a shot with all your new skills"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Your tasting skills revisited",
+"f": "Retake an early side-by-side tasting"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Designing your coffee menu",
+"f": "Create a home menu of five drinks you love"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the year in coffee",
+"f": "Look back across the whole path and celebrate your progress"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "A coffee morning showcase",
+"f": "Brew several methods for friends and compare them"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "A cultural coffee showcase",
+"f": "Recreate coffee traditions from three countries"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing your coffee passion",
+"f": "Inspiring others and sharing what you learned"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "What comes next",
+"f": "Setting new coffee goals for the year ahead"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Your celebration cup",
+"f": "Brew a special coffee to celebrate 365 days together"
+}
+]
+}

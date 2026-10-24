@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Food and drink basics",
+     "g": "Name everyday food and drinks and say what you like to eat.",
+     "p": [
+      "Basic food: bread, rice, eggs, cheese, chicken, fish.",
+      "Fruit and vegetables: apples, bananas, tomatoes, carrots, potatoes.",
+      "Drinks: water, juice, milk, tea, coffee; say I like... and I don't like..."
+     ],
+     "q": "What do you usually have for breakfast?",
+     "c": "Name in English everything you eat and drink today."
+    },
+    "de": {
+     "t": "Essen und Trinken: die Basics",
+     "g": "Du lernst alltägliche Lebensmittel und Getränke und sagst, was du gern isst.",
+     "p": [
+      "Grundnahrung: bread, rice, eggs, cheese, chicken, fish.",
+      "Obst und Gemüse: apples, bananas, tomatoes, carrots, potatoes.",
+      "Getränke: water, juice, milk, tea, coffee; sag I like... und I don't like..."
+     ],
+     "q": "Was isst du normalerweise zum Frühstück?",
+     "c": "Benenne heute auf Englisch alles, was du isst und trinkst."
+    },
+    "es": {
+     "t": "Comida y bebida básicas",
+     "g": "Aprende comidas y bebidas cotidianas y a decir lo que te gusta comer.",
+     "p": [
+      "Comida básica: bread, rice, eggs, cheese, chicken, fish.",
+      "Frutas y verduras: apples, bananas, tomatoes, carrots, potatoes.",
+      "Bebidas: water, juice, milk, tea, coffee; di I like... e I don't like..."
+     ],
+     "q": "¿Qué sueles desayunar?",
+     "c": "Nombra hoy en inglés todo lo que comas y bebas."
+    },
+    "fr": {
+     "t": "Manger et boire : les bases",
+     "g": "Nommer les aliments et boissons du quotidien et dire ce que tu aimes manger.",
+     "p": [
+      "Aliments de base : bread, rice, eggs, cheese, chicken, fish.",
+      "Fruits et légumes : apples, bananas, tomatoes, carrots, potatoes.",
+      "Boissons : water, juice, milk, tea, coffee ; dis I like... et I don't like..."
+     ],
+     "q": "Que prends-tu d'habitude au petit-déjeuner ?",
+     "c": "Nomme en anglais tout ce que tu manges et bois aujourd'hui."
+    },
+    "it": {
+     "t": "Cibo e bevande di base",
+     "g": "Impari cibi e bevande di tutti i giorni e a dire cosa ti piace mangiare.",
+     "p": [
+      "Cibi di base: bread, rice, eggs, cheese, chicken, fish.",
+      "Frutta e verdura: apples, bananas, tomatoes, carrots, potatoes.",
+      "Bevande: water, juice, milk, tea, coffee; di' I like... e I don't like..."
+     ],
+     "q": "Cosa mangi di solito a colazione?",
+     "c": "Nomina oggi in inglese tutto quello che mangi e bevi."
+    },
+    "pt": {
+     "t": "Comida e bebida: o básico",
+     "g": "Aprende comidas e bebidas do dia a dia e a dizer o que gostas de comer.",
+     "p": [
+      "Comida básica: bread, rice, eggs, cheese, chicken, fish.",
+      "Fruta e legumes: apples, bananas, tomatoes, carrots, potatoes.",
+      "Bebidas: water, juice, milk, tea, coffee; diz I like... e I don't like..."
+     ],
+     "q": "O que costumas comer ao pequeno-almoço?",
+     "c": "Diz em inglês o nome de tudo o que comeres e beberes hoje."
+    },
+    "pt_BR": {
+     "t": "Comida e bebida: o básico",
+     "g": "Aprenda comidas e bebidas do dia a dia e a dizer o que você gosta de comer.",
+     "p": [
+      "Comida básica: bread, rice, eggs, cheese, chicken, fish.",
+      "Frutas e legumes: apples, bananas, tomatoes, carrots, potatoes.",
+      "Bebidas: water, juice, milk, tea, coffee; diga I like... e I don't like..."
+     ],
+     "q": "O que você costuma comer no café da manhã?",
+     "c": "Diga em inglês o nome de tudo o que você comer e beber hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bread",
+      "ex": "I have bread and butter for breakfast."
+     },
+     {
+      "w": "rice",
+      "ex": "We eat rice and beans."
+     },
+     {
+      "w": "eggs",
+      "ex": "She likes eggs in the morning."
+     },
+     {
+      "w": "vegetables",
+      "ex": "Vegetables are good for you."
+     },
+     {
+      "w": "fruit",
+      "ex": "I eat fruit every day."
+     },
+     {
+      "w": "juice",
+      "ex": "Can I have orange juice?"
+     }
+    ],
+    "gram": "I like + noun: I like fish. I don't like + noun: I don't like milk. Plural for countable food: apples."
+   }
+  },
+  {
+   "d": 32,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ordering at a café",
+     "g": "Order food and drinks politely in a café.",
+     "p": [
+      "Order with Can I have a coffee, please? or I'd like a sandwich, please.",
+      "I'd like means I would like; it sounds polite and friendly.",
+      "The staff may ask Anything else? or To have here or to take away?"
+     ],
+     "q": "What would you order right now in your favourite café? Say it politely.",
+     "c": "Practise ordering your favourite drink and snack aloud, twice, in English."
+    },
+    "de": {
+     "t": "Bestellen im Café",
+     "g": "Du lernst, im Café höflich Essen und Getränke zu bestellen.",
+     "p": [
+      "Bestell mit Can I have a coffee, please? oder I'd like a sandwich, please.",
+      "I'd like bedeutet I would like und klingt höflich und freundlich.",
+      "Das Personal fragt vielleicht Anything else? oder To have here or to take away?"
+     ],
+     "q": "Was würdest du jetzt in deinem Lieblingscafé bestellen? Sag es höflich.",
+     "c": "Übe zweimal laut auf Englisch, dein Lieblingsgetränk und einen Snack zu bestellen."
+    },
+    "es": {
+     "t": "Pedir en una cafetería",
+     "g": "Aprende a pedir comida y bebida con educación en una cafetería.",
+     "p": [
+      "Pide con Can I have a coffee, please? o I'd like a sandwich, please.",
+      "I'd like significa I would like y suena educado y amable.",
+      "Te pueden preguntar Anything else? o To have here or to take away?"
+     ],
+     "q": "¿Qué pedirías ahora en tu cafetería favorita? Dilo con educación.",
+     "c": "Practica dos veces en voz alta cómo pedir tu bebida y tu tentempié favoritos en inglés."
+    },
+    "fr": {
+     "t": "Commander dans un café",
+     "g": "Commander poliment à manger et à boire dans un café.",
+     "p": [
+      "Commande avec Can I have a coffee, please? ou I'd like a sandwich, please.",
+      "I'd like veut dire I would like ; c'est poli et chaleureux.",
+      "On peut te demander Anything else? ou To have here or to take away?"
+     ],
+     "q": "Que commanderais-tu maintenant dans ton café préféré ? Dis-le poliment.",
+     "c": "Entraîne-toi deux fois à voix haute à commander ta boisson et ton en-cas préférés en anglais."
+    },
+    "it": {
+     "t": "Ordinare al bar",
+     "g": "Impari a ordinare con gentilezza cibo e bevande al bar.",
+     "p": [
+      "Ordina con Can I have a coffee, please? o I'd like a sandwich, please.",
+      "I'd like significa I would like e suona gentile e cordiale.",
+      "Il personale può chiedere Anything else? o To have here or to take away?"
+     ],
+     "q": "Cosa ordineresti adesso nel tuo bar preferito? Dillo con gentilezza.",
+     "c": "Esercitati due volte ad alta voce a ordinare in inglese la tua bevanda e il tuo snack preferiti."
+    },
+    "pt": {
+     "t": "Pedir num café",
+     "g": "Aprende a pedir comida e bebida com educação num café.",
+     "p": [
+      "Pede com Can I have a coffee, please? ou I'd like a sandwich, please.",
+      "I'd like quer dizer I would like e soa educado e simpático.",
+      "Podem perguntar Anything else? ou To have here or to take away?"
+     ],
+     "q": "O que pedirias agora no teu café preferido? Di-lo com educação.",
+     "c": "Treina duas vezes em voz alta, em inglês, o pedido da tua bebida e do teu lanche preferidos."
+    },
+    "pt_BR": {
+     "t": "Pedindo numa cafeteria",
+     "g": "Aprenda a pedir comida e bebida com educação numa cafeteria.",
+     "p": [
+      "Peça com Can I have a coffee, please? ou I'd like a sandwich, please.",
+      "I'd like quer dizer I would like e soa educado e simpático.",
+      "Podem perguntar Anything else? ou For here or to go?"
+     ],
+     "q": "O que você pediria agora na sua cafeteria favorita? Fale com educação.",
+     "c": "Treine duas vezes em voz alta, em inglês, o pedido da sua bebida e do seu lanche favoritos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Can I have...?",
+      "ex": "Can I have a tea, please?"
+     },
+     {
+      "w": "I'd like...",
+      "ex": "I'd like a cheese sandwich, please."
+     },
+     {
+      "w": "a cup of",
+      "ex": "A cup of coffee, please."
+     },
+     {
+      "w": "Anything else?",
+      "ex": "Anything else? No, thank you."
+     },
+     {
+      "w": "to take away",
+      "ex": "A latte to take away, please."
+     },
+     {
+      "w": "the menu",
+      "ex": "Can I see the menu, please?"
+     }
+    ],
+    "gram": "Polite orders: Can I have + item, please? / I'd like (= I would like) + item, please."
+   }
+  },
+  {
+   "d": 33,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Countable and uncountable nouns",
+     "g": "Tell apart nouns you can count from nouns you cannot.",
+     "p": [
+      "Countable nouns have a plural and take a or an: an apple, two apples.",
+      "Uncountable nouns have no plural and no a: water, rice, milk, bread, money.",
+      "Use some with uncountables: some water, some rice, a glass of water."
+     ],
+     "q": "Look at your kitchen: name two countable and two uncountable things.",
+     "c": "Sort ten food words into two lists today: countable and uncountable."
+    },
+    "de": {
+     "t": "Zählbare und unzählbare Nomen",
+     "g": "Du lernst, zählbare von unzählbaren Nomen zu unterscheiden.",
+     "p": [
+      "Zählbare Nomen haben einen Plural und a oder an: an apple, two apples.",
+      "Unzählbare haben keinen Plural und kein a: water, rice, milk, bread, money.",
+      "Bei Unzählbaren nimmst du some: some water, some rice, a glass of water."
+     ],
+     "q": "Schau in deine Küche: Nenn zwei zählbare und zwei unzählbare Dinge.",
+     "c": "Sortier heute zehn Lebensmittel in zwei Listen: zählbar und unzählbar."
+    },
+    "es": {
+     "t": "Sustantivos contables e incontables",
+     "g": "Aprende a distinguir los sustantivos que se cuentan de los que no.",
+     "p": [
+      "Los contables tienen plural y llevan a o an: an apple, two apples.",
+      "Los incontables no tienen plural ni a: water, rice, milk, bread, money.",
+      "Con los incontables usa some: some water, some rice, a glass of water."
+     ],
+     "q": "Mira tu cocina: nombra dos cosas contables y dos incontables.",
+     "c": "Clasifica hoy diez alimentos en dos listas: contables e incontables."
+    },
+    "fr": {
+     "t": "Noms dénombrables et indénombrables",
+     "g": "Distinguer les noms qu'on peut compter de ceux qu'on ne peut pas compter.",
+     "p": [
+      "Les dénombrables ont un pluriel et prennent a ou an : an apple, two apples.",
+      "Les indénombrables n'ont ni pluriel ni a : water, rice, milk, bread, money.",
+      "Avec eux, on utilise some : some water, some rice, a glass of water."
+     ],
+     "q": "Regarde ta cuisine : nomme deux choses dénombrables et deux indénombrables.",
+     "c": "Classe dix aliments en deux listes aujourd'hui : dénombrables et indénombrables."
+    },
+    "it": {
+     "t": "Nomi numerabili e non numerabili",
+     "g": "Impari a distinguere i nomi che si contano da quelli che non si contano.",
+     "p": [
+      "I numerabili hanno il plurale e vogliono a o an: an apple, two apples.",
+      "I non numerabili non hanno plurale né a: water, rice, milk, bread, money.",
+      "Con questi si usa some: some water, some rice, a glass of water."
+     ],
+     "q": "Guarda la tua cucina: nomina due cose numerabili e due non numerabili.",
+     "c": "Dividi oggi dieci alimenti in due liste: numerabili e non numerabili."
+    },
+    "pt": {
+     "t": "Nomes contáveis e incontáveis",
+     "g": "Aprende a distinguir os nomes que se contam dos que não se contam.",
+     "p": [
+      "Os contáveis têm plural e levam a ou an: an apple, two apples.",
+      "Os incontáveis não têm plural nem a: water, rice, milk, bread, money.",
+      "Com incontáveis usa-se some: some water, some rice, a glass of water."
+     ],
+     "q": "Olha para a tua cozinha: diz duas coisas contáveis e duas incontáveis.",
+     "c": "Separa hoje dez alimentos em duas listas: contáveis e incontáveis."
+    },
+    "pt_BR": {
+     "t": "Substantivos contáveis e incontáveis",
+     "g": "Aprenda a diferenciar os substantivos que se contam dos que não se contam.",
+     "p": [
+      "Os contáveis têm plural e levam a ou an: an apple, two apples.",
+      "Os incontáveis não têm plural nem a: water, rice, milk, bread, money.",
+      "Com incontáveis use some: some water, some rice, a glass of water."
+     ],
+     "q": "Olhe para a sua cozinha: diga duas coisas contáveis e duas incontáveis.",
+     "c": "Separe hoje dez alimentos em duas listas: contáveis e incontáveis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "an apple",
+      "ex": "I'd like an apple, please."
+     },
+     {
+      "w": "water",
+      "ex": "Can I have some water?"
+     },
+     {
+      "w": "milk",
+      "ex": "There's milk in the fridge."
+     },
+     {
+      "w": "money",
+      "ex": "I don't have much money with me."
+     },
+     {
+      "w": "a glass of",
+      "ex": "A glass of water, please."
+     },
+     {
+      "w": "a piece of",
+      "ex": "Can I have a piece of cake?"
+     }
+    ],
+    "gram": "Countable: a banana, three bananas. Uncountable: no a, no -s: some bread, a slice of bread."
+   }
+  },
+  {
+   "d": 34,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Some and any",
+     "g": "Use some and any correctly in positive sentences, negatives and questions.",
+     "p": [
+      "Use some in positive sentences: I have some eggs.",
+      "Use any in negatives and most questions: I don't have any milk. Do you have any sugar?",
+      "Use some in offers and requests: Would you like some tea? Can I have some water?"
+     ],
+     "q": "What do you have in your fridge right now? Use some and any.",
+     "c": "Write a short shopping list and three sentences with some and any about it."
+    },
+    "de": {
+     "t": "Some und any",
+     "g": "Du lernst some und any richtig in bejahten Sätzen, Verneinungen und Fragen.",
+     "p": [
+      "Some steht in bejahten Sätzen: I have some eggs.",
+      "Any steht in Verneinungen und den meisten Fragen: I don't have any milk. Do you have any sugar?",
+      "Bei Angeboten und Bitten nimmt man some: Would you like some tea? Can I have some water?"
+     ],
+     "q": "Was ist gerade in deinem Kühlschrank? Benutze some und any.",
+     "c": "Schreib eine kleine Einkaufsliste und drei Sätze dazu mit some und any."
+    },
+    "es": {
+     "t": "Some y any",
+     "g": "Aprende a usar some y any en frases afirmativas, negativas y preguntas.",
+     "p": [
+      "Some en frases afirmativas: I have some eggs.",
+      "Any en negativas y en la mayoría de preguntas: I don't have any milk. Do you have any sugar?",
+      "Some en ofrecimientos y peticiones: Would you like some tea? Can I have some water?"
+     ],
+     "q": "¿Qué tienes ahora mismo en la nevera? Usa some y any.",
+     "c": "Escribe una lista de la compra corta y tres frases sobre ella con some y any."
+    },
+    "fr": {
+     "t": "Some et any",
+     "g": "Employer some et any dans les phrases affirmatives, négatives et interrogatives.",
+     "p": [
+      "Some dans les phrases affirmatives : I have some eggs.",
+      "Any dans les négations et la plupart des questions : I don't have any milk. Do you have any sugar?",
+      "Some pour proposer ou demander : Would you like some tea? Can I have some water?"
+     ],
+     "q": "Qu'y a-t-il dans ton frigo en ce moment ? Utilise some et any.",
+     "c": "Écris une petite liste de courses et trois phrases à son sujet avec some et any."
+    },
+    "it": {
+     "t": "Some e any",
+     "g": "Impari a usare some e any in frasi affermative, negative e domande.",
+     "p": [
+      "Some nelle frasi affermative: I have some eggs.",
+      "Any nelle negative e in quasi tutte le domande: I don't have any milk. Do you have any sugar?",
+      "Some nelle offerte e richieste: Would you like some tea? Can I have some water?"
+     ],
+     "q": "Cosa c'è adesso nel tuo frigo? Usa some e any.",
+     "c": "Scrivi una breve lista della spesa e tre frasi su di essa con some e any."
+    },
+    "pt": {
+     "t": "Some e any",
+     "g": "Aprende a usar some e any em frases afirmativas, negativas e perguntas.",
+     "p": [
+      "Some em frases afirmativas: I have some eggs.",
+      "Any em negativas e na maioria das perguntas: I don't have any milk. Do you have any sugar?",
+      "Some em ofertas e pedidos: Would you like some tea? Can I have some water?"
+     ],
+     "q": "O que tens agora no frigorífico? Usa some e any.",
+     "c": "Escreve uma pequena lista de compras e três frases sobre ela com some e any."
+    },
+    "pt_BR": {
+     "t": "Some e any",
+     "g": "Aprenda a usar some e any em frases afirmativas, negativas e perguntas.",
+     "p": [
+      "Some em frases afirmativas: I have some eggs.",
+      "Any em negativas e na maioria das perguntas: I don't have any milk. Do you have any sugar?",
+      "Some em ofertas e pedidos: Would you like some tea? Can I have some water?"
+     ],
+     "q": "O que você tem agora na geladeira? Use some e any.",
+     "c": "Escreva uma pequena lista de compras e três frases sobre ela com some e any."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "some",
+      "ex": "I have some apples."
+     },
+     {
+      "w": "any",
+      "ex": "We don't have any bread."
+     },
+     {
+      "w": "Do you have any...?",
+      "ex": "Do you have any sugar?"
+     },
+     {
+      "w": "Would you like some...?",
+      "ex": "Would you like some tea?"
+     },
+     {
+      "w": "sugar",
+      "ex": "There's some sugar on the table."
+     },
+     {
+      "w": "butter",
+      "ex": "Is there any butter?"
+     }
+    ],
+    "gram": "Some in positive sentences and offers; any in negatives and questions: I don't have any eggs."
+   }
+  },
+  {
+   "d": 35,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "How much? How many?",
+     "g": "Ask about quantity with how much and how many.",
+     "p": [
+      "Use how many with countable nouns: How many eggs do you need?",
+      "Use how much with uncountable nouns: How much water do you drink?",
+      "Answer with a lot, a few, a little or a number: Just a few. About two litres."
+     ],
+     "q": "How many cups of tea or coffee do you drink a day?",
+     "c": "Ask yourself five how much or how many questions about your day and answer them."
+    },
+    "de": {
+     "t": "How much? How many?",
+     "g": "Du lernst, mit how much und how many nach Mengen zu fragen.",
+     "p": [
+      "How many bei zählbaren Nomen: How many eggs do you need?",
+      "How much bei unzählbaren Nomen: How much water do you drink?",
+      "Antworte mit a lot, a few, a little oder einer Zahl: Just a few. About two litres."
+     ],
+     "q": "Wie viele Tassen Tee oder Kaffee trinkst du am Tag?",
+     "c": "Stell dir fünf Fragen mit how much oder how many über deinen Tag und beantworte sie."
+    },
+    "es": {
+     "t": "How much? How many?",
+     "g": "Aprende a preguntar por cantidades con how much y how many.",
+     "p": [
+      "How many con contables: How many eggs do you need?",
+      "How much con incontables: How much water do you drink?",
+      "Responde con a lot, a few, a little o un número: Just a few. About two litres."
+     ],
+     "q": "¿Cuántas tazas de té o café tomas al día?",
+     "c": "Hazte cinco preguntas con how much o how many sobre tu día y respóndelas."
+    },
+    "fr": {
+     "t": "How much ? How many ?",
+     "g": "Demander une quantité avec how much et how many.",
+     "p": [
+      "How many avec les dénombrables : How many eggs do you need?",
+      "How much avec les indénombrables : How much water do you drink?",
+      "Réponds avec a lot, a few, a little ou un nombre : Just a few. About two litres."
+     ],
+     "q": "Combien de tasses de thé ou de café bois-tu par jour ?",
+     "c": "Pose-toi cinq questions avec how much ou how many sur ta journée et réponds-y."
+    },
+    "it": {
+     "t": "How much? How many?",
+     "g": "Impari a chiedere le quantità con how much e how many.",
+     "p": [
+      "How many con i numerabili: How many eggs do you need?",
+      "How much con i non numerabili: How much water do you drink?",
+      "Rispondi con a lot, a few, a little o un numero: Just a few. About two litres."
+     ],
+     "q": "Quante tazze di tè o caffè bevi al giorno?",
+     "c": "Fatti cinque domande con how much o how many sulla tua giornata e rispondi."
+    },
+    "pt": {
+     "t": "How much? How many?",
+     "g": "Aprende a perguntar quantidades com how much e how many.",
+     "p": [
+      "How many com contáveis: How many eggs do you need?",
+      "How much com incontáveis: How much water do you drink?",
+      "Responde com a lot, a few, a little ou um número: Just a few. About two litres."
+     ],
+     "q": "Quantas chávenas de chá ou café bebes por dia?",
+     "c": "Faz a ti mesmo cinco perguntas com how much ou how many sobre o teu dia e responde."
+    },
+    "pt_BR": {
+     "t": "How much? How many?",
+     "g": "Aprenda a perguntar quantidades com how much e how many.",
+     "p": [
+      "How many com contáveis: How many eggs do you need?",
+      "How much com incontáveis: How much water do you drink?",
+      "Responda com a lot, a few, a little ou um número: Just a few. About two liters."
+     ],
+     "q": "Quantas xícaras de chá ou café você toma por dia?",
+     "c": "Faça para si mesmo cinco perguntas com how much ou how many sobre seu dia e responda."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "How many...?",
+      "ex": "How many brothers do you have?"
+     },
+     {
+      "w": "How much...?",
+      "ex": "How much milk do you need?"
+     },
+     {
+      "w": "a lot of",
+      "ex": "She drinks a lot of water."
+     },
+     {
+      "w": "a few",
+      "ex": "I have a few friends here."
+     },
+     {
+      "w": "a little",
+      "ex": "Just a little sugar, please."
+     },
+     {
+      "w": "a litre",
+      "ex": "We need a litre of milk."
+     }
+    ],
+    "gram": "How many + plural countable (How many apples?); how much + uncountable (How much rice?)."
+   }
+  },
+  {
+   "d": 36,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Shopping for clothes",
+     "g": "Name common clothes and ask for help in a clothes shop.",
+     "p": [
+      "Clothes: shirt, T-shirt, jeans, dress, jacket, shoes.",
+      "Ask Can I try this on? and Where are the changing rooms?",
+      "Talk about size: Do you have this in a medium? It's too small."
+     ],
+     "q": "What are you wearing right now? Describe it in English.",
+     "c": "Name every piece of clothing you put on today in English, with its colour."
+    },
+    "de": {
+     "t": "Kleidung einkaufen",
+     "g": "Du lernst gängige Kleidungsstücke und fragst im Laden nach Hilfe.",
+     "p": [
+      "Kleidung: shirt, T-shirt, jeans, dress, jacket, shoes.",
+      "Frag Can I try this on? und Where are the changing rooms?",
+      "Zur Größe: Do you have this in a medium? It's too small."
+     ],
+     "q": "Was trägst du gerade? Beschreib es auf Englisch.",
+     "c": "Benenne heute jedes Kleidungsstück, das du anziehst, auf Englisch mit Farbe."
+    },
+    "es": {
+     "t": "Comprar ropa",
+     "g": "Aprende prendas comunes y a pedir ayuda en una tienda de ropa.",
+     "p": [
+      "Ropa: shirt, T-shirt, jeans, dress, jacket, shoes.",
+      "Pregunta Can I try this on? y Where are the changing rooms?",
+      "Habla de tallas: Do you have this in a medium? It's too small."
+     ],
+     "q": "¿Qué llevas puesto ahora mismo? Descríbelo en inglés.",
+     "c": "Nombra hoy en inglés cada prenda que te pongas, con su color."
+    },
+    "fr": {
+     "t": "Acheter des vêtements",
+     "g": "Nommer les vêtements courants et demander de l'aide dans une boutique.",
+     "p": [
+      "Vêtements : shirt, T-shirt, jeans, dress, jacket, shoes.",
+      "Demande Can I try this on? et Where are the changing rooms?",
+      "Pour la taille : Do you have this in a medium? It's too small."
+     ],
+     "q": "Que portes-tu en ce moment ? Décris-le en anglais.",
+     "c": "Nomme en anglais chaque vêtement que tu mets aujourd'hui, avec sa couleur."
+    },
+    "it": {
+     "t": "Comprare vestiti",
+     "g": "Impari i capi d'abbigliamento comuni e a chiedere aiuto in un negozio.",
+     "p": [
+      "Vestiti: shirt, T-shirt, jeans, dress, jacket, shoes.",
+      "Chiedi Can I try this on? e Where are the changing rooms?",
+      "Per la taglia: Do you have this in a medium? It's too small."
+     ],
+     "q": "Cosa indossi in questo momento? Descrivilo in inglese.",
+     "c": "Nomina oggi in inglese ogni capo che indossi, con il suo colore."
+    },
+    "pt": {
+     "t": "Comprar roupa",
+     "g": "Aprende peças de roupa comuns e a pedir ajuda numa loja.",
+     "p": [
+      "Roupa: shirt, T-shirt, jeans, dress, jacket, shoes.",
+      "Pergunta Can I try this on? e Where are the changing rooms?",
+      "Sobre tamanhos: Do you have this in a medium? It's too small."
+     ],
+     "q": "O que tens vestido agora? Descreve em inglês.",
+     "c": "Diz hoje em inglês o nome de cada peça de roupa que vestires, com a cor."
+    },
+    "pt_BR": {
+     "t": "Comprando roupas",
+     "g": "Aprenda peças de roupa comuns e a pedir ajuda numa loja.",
+     "p": [
+      "Roupas: shirt, T-shirt, jeans, dress, jacket, shoes.",
+      "Pergunte Can I try this on? e Where are the fitting rooms?",
+      "Sobre tamanho: Do you have this in a medium? It's too small."
+     ],
+     "q": "O que você está vestindo agora? Descreva em inglês.",
+     "c": "Diga hoje em inglês o nome de cada peça de roupa que vestir, com a cor."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "shirt",
+      "ex": "I need a white shirt for work."
+     },
+     {
+      "w": "jeans",
+      "ex": "These jeans are very comfortable."
+     },
+     {
+      "w": "jacket",
+      "ex": "Take a jacket, it's cold."
+     },
+     {
+      "w": "shoes",
+      "ex": "I love your new shoes!"
+     },
+     {
+      "w": "Can I try this on?",
+      "ex": "Excuse me, can I try this on?"
+     },
+     {
+      "w": "size",
+      "ex": "What size are you? Medium."
+     }
+    ],
+    "gram": "Too + adjective for a problem: It's too big. Jeans and shoes are always plural: These jeans are new."
+   }
+  },
+  {
+   "d": 37,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Paying in a shop",
+     "g": "Ask the price, pay and handle receipts and change.",
+     "p": [
+      "Ask How much is it? for one thing and How much are they? for many.",
+      "Ask Can I pay by card? or say I'll pay in cash.",
+      "Learn receipt (the paper) and change (money you get back): Here's your change."
+     ],
+     "q": "How do you usually pay when you go shopping?",
+     "c": "Act out paying for something in English, from How much is it? to Thank you."
+    },
+    "de": {
+     "t": "Bezahlen im Laden",
+     "g": "Du lernst, nach dem Preis zu fragen, zu bezahlen und mit Kassenbon und Wechselgeld umzugehen.",
+     "p": [
+      "Frag How much is it? für eine Sache und How much are they? für mehrere.",
+      "Frag Can I pay by card? oder sag I'll pay in cash.",
+      "Lerne receipt (der Bon) und change (das Wechselgeld): Here's your change."
+     ],
+     "q": "Wie bezahlst du normalerweise beim Einkaufen?",
+     "c": "Spiel auf Englisch einen Bezahlvorgang durch, von How much is it? bis Thank you."
+    },
+    "es": {
+     "t": "Pagar en una tienda",
+     "g": "Aprende a preguntar el precio, pagar y manejar el ticket y el cambio.",
+     "p": [
+      "Pregunta How much is it? para una cosa y How much are they? para varias.",
+      "Pregunta Can I pay by card? o di I'll pay in cash.",
+      "Aprende receipt (el ticket) y change (el cambio): Here's your change."
+     ],
+     "q": "¿Cómo sueles pagar cuando vas de compras?",
+     "c": "Representa en inglés un pago completo, de How much is it? a Thank you."
+    },
+    "fr": {
+     "t": "Payer dans un magasin",
+     "g": "Demander le prix, payer et gérer le ticket et la monnaie.",
+     "p": [
+      "Demande How much is it? pour un article et How much are they? pour plusieurs.",
+      "Demande Can I pay by card? ou dis I'll pay in cash.",
+      "Retiens receipt (le ticket) et change (la monnaie rendue) : Here's your change."
+     ],
+     "q": "Comment paies-tu d'habitude quand tu fais des achats ?",
+     "c": "Joue en anglais une scène de paiement, de How much is it? jusqu'à Thank you."
+    },
+    "it": {
+     "t": "Pagare in un negozio",
+     "g": "Impari a chiedere il prezzo, pagare e gestire scontrino e resto.",
+     "p": [
+      "Chiedi How much is it? per una cosa e How much are they? per più cose.",
+      "Chiedi Can I pay by card? o di' I'll pay in cash.",
+      "Impara receipt (lo scontrino) e change (il resto): Here's your change."
+     ],
+     "q": "Come paghi di solito quando fai acquisti?",
+     "c": "Recita in inglese un pagamento, da How much is it? a Thank you."
+    },
+    "pt": {
+     "t": "Pagar numa loja",
+     "g": "Aprende a perguntar o preço, pagar e lidar com o talão e o troco.",
+     "p": [
+      "Pergunta How much is it? para uma coisa e How much are they? para várias.",
+      "Pergunta Can I pay by card? ou diz I'll pay in cash.",
+      "Aprende receipt (o talão) e change (o troco): Here's your change."
+     ],
+     "q": "Como costumas pagar quando vais às compras?",
+     "c": "Encena em inglês um pagamento, desde How much is it? até Thank you."
+    },
+    "pt_BR": {
+     "t": "Pagando numa loja",
+     "g": "Aprenda a perguntar o preço, pagar e lidar com nota fiscal e troco.",
+     "p": [
+      "Pergunte How much is it? para uma coisa e How much are they? para várias.",
+      "Pergunte Can I pay by card? ou diga I'll pay in cash.",
+      "Aprenda receipt (o comprovante) e change (o troco): Here's your change."
+     ],
+     "q": "Como você costuma pagar quando faz compras?",
+     "c": "Encene em inglês um pagamento, de How much is it? até Thank you."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "How much is it?",
+      "ex": "How much is it? It's ten euros."
+     },
+     {
+      "w": "by card",
+      "ex": "Can I pay by card?"
+     },
+     {
+      "w": "in cash",
+      "ex": "I'll pay in cash."
+     },
+     {
+      "w": "receipt",
+      "ex": "Can I have the receipt, please?"
+     },
+     {
+      "w": "change",
+      "ex": "Here's your change."
+     },
+     {
+      "w": "expensive",
+      "ex": "This bag is too expensive."
+     }
+    ],
+    "gram": "How much is + singular? How much are + plural? Pay by card, pay in cash."
+   }
+  },
+  {
+   "d": 38,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "There is and there are",
+     "g": "Describe what exists in a place with there is and there are.",
+     "p": [
+      "There is (there's) for one thing: There's a park near my house.",
+      "There are for many things: There are two cafés on my street.",
+      "Questions and negatives: Is there a bank? There isn't any milk. There aren't any shops."
+     ],
+     "q": "What is there in your street? Tell me three things.",
+     "c": "Describe your street in five sentences with there is and there are."
+    },
+    "de": {
+     "t": "There is und there are",
+     "g": "Du lernst, mit there is und there are zu beschreiben, was es an einem Ort gibt.",
+     "p": [
+      "There is (there's) für eine Sache: There's a park near my house.",
+      "There are für mehrere: There are two cafés on my street.",
+      "Fragen und Verneinung: Is there a bank? There isn't any milk. There aren't any shops."
+     ],
+     "q": "Was gibt es in deiner Straße? Nenn mir drei Dinge.",
+     "c": "Beschreib deine Straße in fünf Sätzen mit there is und there are."
+    },
+    "es": {
+     "t": "There is y there are",
+     "g": "Aprende a describir lo que hay en un lugar con there is y there are.",
+     "p": [
+      "There is (there's) para una cosa: There's a park near my house.",
+      "There are para varias: There are two cafés on my street.",
+      "Preguntas y negativas: Is there a bank? There isn't any milk. There aren't any shops."
+     ],
+     "q": "¿Qué hay en tu calle? Dime tres cosas.",
+     "c": "Describe tu calle en cinco frases con there is y there are."
+    },
+    "fr": {
+     "t": "There is et there are",
+     "g": "Décrire ce qu'il y a dans un lieu avec there is et there are.",
+     "p": [
+      "There is (there's) pour une chose : There's a park near my house.",
+      "There are pour plusieurs : There are two cafés on my street.",
+      "Questions et négations : Is there a bank? There isn't any milk. There aren't any shops."
+     ],
+     "q": "Qu'y a-t-il dans ta rue ? Cite trois choses.",
+     "c": "Décris ta rue en cinq phrases avec there is et there are."
+    },
+    "it": {
+     "t": "There is e there are",
+     "g": "Impari a descrivere cosa c'è in un luogo con there is e there are.",
+     "p": [
+      "There is (there's) per una cosa: There's a park near my house.",
+      "There are per più cose: There are two cafés on my street.",
+      "Domande e negative: Is there a bank? There isn't any milk. There aren't any shops."
+     ],
+     "q": "Cosa c'è nella tua via? Dimmi tre cose.",
+     "c": "Descrivi la tua via in cinque frasi con there is e there are."
+    },
+    "pt": {
+     "t": "There is e there are",
+     "g": "Aprende a descrever o que existe num lugar com there is e there are.",
+     "p": [
+      "There is (there's) para uma coisa: There's a park near my house.",
+      "There are para várias: There are two cafés on my street.",
+      "Perguntas e negativas: Is there a bank? There isn't any milk. There aren't any shops."
+     ],
+     "q": "O que há na tua rua? Diz-me três coisas.",
+     "c": "Descreve a tua rua em cinco frases com there is e there are."
+    },
+    "pt_BR": {
+     "t": "There is e there are",
+     "g": "Aprenda a descrever o que existe num lugar com there is e there are.",
+     "p": [
+      "There is (there's) para uma coisa: There's a park near my house.",
+      "There are para várias: There are two cafés on my street.",
+      "Perguntas e negativas: Is there a bank? There isn't any milk. There aren't any shops."
+     ],
+     "q": "O que tem na sua rua? Me diga três coisas.",
+     "c": "Descreva sua rua em cinco frases com there is e there are."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "there is / there's",
+      "ex": "There's a bakery on the corner."
+     },
+     {
+      "w": "there are",
+      "ex": "There are three bedrooms."
+     },
+     {
+      "w": "Is there...?",
+      "ex": "Is there a bus stop near here?"
+     },
+     {
+      "w": "Are there...?",
+      "ex": "Are there any good restaurants here?"
+     },
+     {
+      "w": "there isn't",
+      "ex": "There isn't a lift in this building."
+     },
+     {
+      "w": "there aren't",
+      "ex": "There aren't any chairs."
+     }
+    ],
+    "gram": "There is + singular/uncountable; there are + plural. Questions: Is there...? Are there...?"
+   }
+  },
+  {
+   "d": 39,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Rooms and furniture at home",
+     "g": "Name the rooms and furniture in your home and describe it.",
+     "p": [
+      "Rooms: kitchen, bedroom, bathroom, living room, hall.",
+      "Furniture: sofa, table, chair, bed, wardrobe, shelf.",
+      "Combine with there is and there are: There's a big sofa in the living room."
+     ],
+     "q": "What is your favourite room at home, and what is in it?",
+     "c": "Walk through your home and name every room and three pieces of furniture in English."
+    },
+    "de": {
+     "t": "Zimmer und Möbel",
+     "g": "Du lernst die Zimmer und Möbel deiner Wohnung und beschreibst sie.",
+     "p": [
+      "Zimmer: kitchen, bedroom, bathroom, living room, hall.",
+      "Möbel: sofa, table, chair, bed, wardrobe, shelf.",
+      "Kombiniere mit there is und there are: There's a big sofa in the living room."
+     ],
+     "q": "Was ist dein Lieblingszimmer, und was steht darin?",
+     "c": "Geh durch deine Wohnung und benenne jedes Zimmer und drei Möbelstücke auf Englisch."
+    },
+    "es": {
+     "t": "Habitaciones y muebles de casa",
+     "g": "Aprende las partes de la casa y los muebles y describe tu hogar.",
+     "p": [
+      "Partes: kitchen, bedroom, bathroom, living room, hall.",
+      "Muebles: sofa, table, chair, bed, wardrobe, shelf.",
+      "Combínalos con there is y there are: There's a big sofa in the living room."
+     ],
+     "q": "¿Cuál es tu habitación favorita de casa y qué hay en ella?",
+     "c": "Recorre tu casa y nombra en inglés cada habitación y tres muebles."
+    },
+    "fr": {
+     "t": "Pièces et meubles de la maison",
+     "g": "Nommer les pièces et les meubles de ton logement et le décrire.",
+     "p": [
+      "Pièces : kitchen, bedroom, bathroom, living room, hall.",
+      "Meubles : sofa, table, chair, bed, wardrobe, shelf.",
+      "Combine avec there is et there are : There's a big sofa in the living room."
+     ],
+     "q": "Quelle est ta pièce préférée, et qu'y a-t-il dedans ?",
+     "c": "Fais le tour de chez toi et nomme chaque pièce et trois meubles en anglais."
+    },
+    "it": {
+     "t": "Stanze e mobili di casa",
+     "g": "Impari i nomi delle stanze e dei mobili e descrivi casa tua.",
+     "p": [
+      "Stanze: kitchen, bedroom, bathroom, living room, hall.",
+      "Mobili: sofa, table, chair, bed, wardrobe, shelf.",
+      "Combinali con there is e there are: There's a big sofa in the living room."
+     ],
+     "q": "Qual è la tua stanza preferita, e cosa c'è dentro?",
+     "c": "Fai il giro di casa e nomina in inglese ogni stanza e tre mobili."
+    },
+    "pt": {
+     "t": "Divisões e móveis da casa",
+     "g": "Aprende os nomes das divisões e dos móveis e descreve a tua casa.",
+     "p": [
+      "Divisões: kitchen, bedroom, bathroom, living room, hall.",
+      "Móveis: sofa, table, chair, bed, wardrobe, shelf.",
+      "Junta com there is e there are: There's a big sofa in the living room."
+     ],
+     "q": "Qual é a tua divisão preferida da casa, e o que tem lá dentro?",
+     "c": "Percorre a tua casa e diz em inglês o nome de cada divisão e de três móveis."
+    },
+    "pt_BR": {
+     "t": "Cômodos e móveis da casa",
+     "g": "Aprenda os nomes dos cômodos e dos móveis e descreva sua casa.",
+     "p": [
+      "Cômodos: kitchen, bedroom, bathroom, living room, hall.",
+      "Móveis: sofa, table, chair, bed, wardrobe, shelf.",
+      "Junte com there is e there are: There's a big sofa in the living room."
+     ],
+     "q": "Qual é o seu cômodo favorito, e o que tem nele?",
+     "c": "Ande pela sua casa e diga em inglês o nome de cada cômodo e de três móveis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "kitchen",
+      "ex": "We eat in the kitchen."
+     },
+     {
+      "w": "bedroom",
+      "ex": "My bedroom is small but cosy."
+     },
+     {
+      "w": "living room",
+      "ex": "The TV is in the living room."
+     },
+     {
+      "w": "sofa",
+      "ex": "The cat sleeps on the sofa."
+     },
+     {
+      "w": "wardrobe",
+      "ex": "My clothes are in the wardrobe."
+     },
+     {
+      "w": "shelf",
+      "ex": "The books are on the shelf."
+     }
+    ],
+    "gram": "Describe a home with there is/are + in the + room: There are two chairs in the kitchen."
+   }
+  },
+  {
+   "d": 40,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prepositions of place: in, on, under",
+     "g": "Say exactly where things are with in, on, under and friends.",
+     "p": [
+      "In is inside something: in the box. On is on a surface: on the table.",
+      "Under is below; behind is at the back; in front of is the opposite.",
+      "Next to is beside one thing; between is in the middle of two things."
+     ],
+     "q": "Where is your phone right now? Use one preposition of place.",
+     "c": "Hide an object at home and describe its position in English with two prepositions."
+    },
+    "de": {
+     "t": "Ortspräpositionen: in, on, under",
+     "g": "Du lernst, mit in, on, under und Co. genau zu sagen, wo etwas ist.",
+     "p": [
+      "In heißt drinnen: in the box. On heißt auf einer Fläche: on the table.",
+      "Under heißt unter; behind ist hinten, in front of ist davor.",
+      "Next to heißt neben einer Sache; between ist zwischen zwei Dingen."
+     ],
+     "q": "Wo ist dein Handy gerade? Benutze eine Ortspräposition.",
+     "c": "Versteck einen Gegenstand und beschreib seine Lage auf Englisch mit zwei Präpositionen."
+    },
+    "es": {
+     "t": "Preposiciones de lugar: in, on, under",
+     "g": "Aprende a decir dónde están las cosas con in, on, under y otras.",
+     "p": [
+      "In es dentro: in the box. On es sobre una superficie: on the table.",
+      "Under es debajo; behind es detrás e in front of, delante.",
+      "Next to es al lado de algo; between, entre dos cosas."
+     ],
+     "q": "¿Dónde está tu móvil ahora mismo? Usa una preposición de lugar.",
+     "c": "Esconde un objeto en casa y describe dónde está en inglés con dos preposiciones."
+    },
+    "fr": {
+     "t": "Prépositions de lieu : in, on, under",
+     "g": "Dire précisément où sont les choses avec in, on, under et compagnie.",
+     "p": [
+      "In, c'est dedans : in the box. On, c'est sur une surface : on the table.",
+      "Under, c'est sous ; behind, derrière ; in front of, devant.",
+      "Next to, c'est à côté d'une chose ; between, entre deux choses."
+     ],
+     "q": "Où est ton téléphone en ce moment ? Utilise une préposition de lieu.",
+     "c": "Cache un objet chez toi et décris sa position en anglais avec deux prépositions."
+    },
+    "it": {
+     "t": "Preposizioni di luogo: in, on, under",
+     "g": "Impari a dire dove sono le cose con in, on, under e simili.",
+     "p": [
+      "In è dentro: in the box. On è sopra una superficie: on the table.",
+      "Under è sotto; behind è dietro, in front of è davanti.",
+      "Next to è accanto a una cosa; between è tra due cose."
+     ],
+     "q": "Dov'è il tuo telefono adesso? Usa una preposizione di luogo.",
+     "c": "Nascondi un oggetto in casa e descrivi dov'è in inglese con due preposizioni."
+    },
+    "pt": {
+     "t": "Preposições de lugar: in, on, under",
+     "g": "Aprende a dizer onde estão as coisas com in, on, under e companhia.",
+     "p": [
+      "In é dentro: in the box. On é em cima de uma superfície: on the table.",
+      "Under é debaixo; behind é atrás e in front of é à frente.",
+      "Next to é ao lado de uma coisa; between é entre duas coisas."
+     ],
+     "q": "Onde está o teu telemóvel agora? Usa uma preposição de lugar.",
+     "c": "Esconde um objeto em casa e descreve onde está, em inglês, com duas preposições."
+    },
+    "pt_BR": {
+     "t": "Preposições de lugar: in, on, under",
+     "g": "Aprenda a dizer onde estão as coisas com in, on, under e companhia.",
+     "p": [
+      "In é dentro: in the box. On é em cima de uma superfície: on the table.",
+      "Under é embaixo; behind é atrás e in front of é na frente.",
+      "Next to é ao lado de uma coisa; between é entre duas coisas."
+     ],
+     "q": "Onde está seu celular agora? Use uma preposição de lugar.",
+     "c": "Esconda um objeto em casa e descreva onde ele está, em inglês, com duas preposições."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in",
+      "ex": "The keys are in my bag."
+     },
+     {
+      "w": "on",
+      "ex": "Your phone is on the table."
+     },
+     {
+      "w": "under",
+      "ex": "The cat is under the bed."
+     },
+     {
+      "w": "next to",
+      "ex": "The lamp is next to the sofa."
+     },
+     {
+      "w": "between",
+      "ex": "The bank is between the café and the shop."
+     },
+     {
+      "w": "behind",
+      "ex": "The bike is behind the door."
+     }
+    ],
+    "gram": "In = inside, on = on a surface, under = below, next to = beside, between = in the middle of two."
+   }
+  }
+ ]
+}

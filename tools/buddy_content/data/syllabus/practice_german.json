@@ -1,0 +1,2195 @@
+{
+"topic": "practice_german",
+"days": [
+{
+"d": 1,
+"lv": "A1",
+"t": "Hallo! First German greetings",
+"f": "Say hallo, guten Morgen, guten Tag, guten Abend and tschüss and know when each fits"
+},
+{
+"d": 2,
+"lv": "A1",
+"t": "The German alphabet",
+"f": "Spell your name and meet the special letters ä, ö, ü and ß"
+},
+{
+"d": 3,
+"lv": "A1",
+"t": "German sounds",
+"f": "Ei versus ie, ch, sch, w, v, z and the soft final -er sound"
+},
+{
+"d": 4,
+"lv": "A1",
+"t": "Ich heiße: introducing yourself",
+"f": "Say your name and ask wie heißt du? and wie heißen Sie?"
+},
+{
+"d": 5,
+"lv": "A1",
+"t": "Du or Sie?",
+"f": "When to use informal du and polite Sie, and how people switch to du"
+},
+{
+"d": 6,
+"lv": "A1",
+"t": "Wie geht's?",
+"f": "Ask and answer with gut, sehr gut, es geht, nicht so gut, und dir?"
+},
+{
+"d": 7,
+"lv": "A1",
+"t": "Numbers 0 to 20",
+"f": "Count from null to zwanzig and give your phone number"
+},
+{
+"d": 8,
+"lv": "A1",
+"t": "Sein: the verb to be",
+"f": "Conjugate sein in the present tense and describe yourself"
+},
+{
+"d": 9,
+"lv": "A1",
+"t": "Personal pronouns",
+"f": "Ich, du, er, sie, es, wir, ihr, sie, Sie and how to use them"
+},
+{
+"d": 10,
+"lv": "A1",
+"t": "Countries and languages",
+"f": "Woher kommst du? Ich komme aus..., ich spreche Deutsch und Englisch"
+},
+{
+"d": 11,
+"lv": "A1",
+"t": "Where do you live? Wohnen",
+"f": "Ich wohne in Hamburg: your first regular verb and its endings"
+},
+{
+"d": 12,
+"lv": "A1",
+"t": "Regular verbs in the present",
+"f": "Machen, lernen, spielen: stem plus -e, -st, -t, -en, -t, -en"
+},
+{
+"d": 13,
+"lv": "A1",
+"t": "Three genders: der, die, das",
+"f": "Masculine, feminine and neuter nouns, with tips to guess the gender"
+},
+{
+"d": 14,
+"lv": "A1",
+"t": "Ein and eine",
+"f": "Indefinite articles: das ist ein Tisch, das ist eine Lampe"
+},
+{
+"d": 15,
+"lv": "A1",
+"t": "Haben: the verb to have",
+"f": "Conjugate haben and talk about what you have"
+},
+{
+"d": 16,
+"lv": "A1",
+"t": "Polite words: bitte, danke",
+"f": "Bitte, danke, danke schön, gern geschehen, Entschuldigung"
+},
+{
+"d": 17,
+"lv": "A1",
+"t": "Numbers 21 to 100",
+"f": "Einundzwanzig: units come before tens, all the way to hundert"
+},
+{
+"d": 18,
+"lv": "A1",
+"t": "Family members",
+"f": "Mutter, Vater, Bruder, Schwester, Großeltern and mein, meine"
+},
+{
+"d": 19,
+"lv": "A1",
+"t": "Days of the week",
+"f": "Montag to Sonntag, heute, morgen, gestern and am Montag"
+},
+{
+"d": 20,
+"lv": "A1",
+"t": "Months and seasons",
+"f": "The twelve months, the four seasons and im Sommer, im Januar"
+},
+{
+"d": 21,
+"lv": "A1",
+"t": "Word order: verb in position 2",
+"f": "The golden rule: the verb is the second element in a statement"
+},
+{
+"d": 22,
+"lv": "A1",
+"t": "Yes-no questions",
+"f": "Kommst du? Verb first in questions, and answers with ja, nein, doch"
+},
+{
+"d": 23,
+"lv": "A1",
+"t": "W-questions",
+"f": "Wer, was, wo, woher, wohin, wann, wie, warum"
+},
+{
+"d": 24,
+"lv": "A1",
+"t": "Saying no: nicht and kein",
+"f": "Ich habe kein Auto, ich komme nicht: two ways to say no"
+},
+{
+"d": 25,
+"lv": "A1",
+"t": "Plural forms",
+"f": "-e, -er, -n, -s and umlaut plurals like Haus, Häuser"
+},
+{
+"d": 26,
+"lv": "A1",
+"t": "Colours",
+"f": "Rot, blau, grün, gelb and describing things with sein"
+},
+{
+"d": 27,
+"lv": "A1",
+"t": "Describing people",
+"f": "Groß, klein, jung, alt, nett, lustig: looks and personality"
+},
+{
+"d": 28,
+"lv": "A1",
+"t": "Gern: likes and dislikes",
+"f": "Ich spiele gern Fußball, ich esse nicht gern Fisch, lieber, am liebsten"
+},
+{
+"d": 29,
+"lv": "A1",
+"t": "Telling the time",
+"f": "Wie spät ist es? Viertel nach, halb drei, Viertel vor"
+},
+{
+"d": 30,
+"lv": "A1",
+"t": "Review: first month of German",
+"f": "Recap greetings, sein, haben, articles, word order and numbers"
+},
+{
+"d": 31,
+"lv": "A1",
+"t": "At the café: einen Kaffee, bitte",
+"f": "Order coffee and cake and ask for the bill: zahlen, bitte"
+},
+{
+"d": 32,
+"lv": "A1",
+"t": "Food and drinks",
+"f": "Brot, Käse, Wurst, Obst, Gemüse: everyday food vocabulary"
+},
+{
+"d": 33,
+"lv": "A1",
+"t": "The accusative case",
+"f": "Ich habe einen Bruder: den, einen, keinen for masculine objects"
+},
+{
+"d": 34,
+"lv": "A1",
+"t": "At the bakery",
+"f": "Ein Brötchen, eine Brezel, zwei Stück Kuchen at the Bäckerei"
+},
+{
+"d": 35,
+"lv": "A1",
+"t": "Möchten: polite wishes",
+"f": "Ich möchte..., ich hätte gern...: ordering politely"
+},
+{
+"d": 36,
+"lv": "A1",
+"t": "At the restaurant",
+"f": "Reserve a table, read the Speisekarte: Vorspeise, Hauptgericht, Nachtisch"
+},
+{
+"d": 37,
+"lv": "A1",
+"t": "Prices and money",
+"f": "Was kostet das? Euro, Cent, zu teuer, bar oder mit Karte?"
+},
+{
+"d": 38,
+"lv": "A1",
+"t": "Irregular verbs: essen, lesen, sehen",
+"f": "Stem vowel change e to i or ie: du isst, er liest"
+},
+{
+"d": 39,
+"lv": "A1",
+"t": "Irregular verbs: fahren, schlafen",
+"f": "Stem vowel change a to ä: du fährst, er schläft"
+},
+{
+"d": 40,
+"lv": "A1",
+"t": "Places in town",
+"f": "Der Bahnhof, die Post, die Apotheke, das Rathaus"
+},
+{
+"d": 41,
+"lv": "A1",
+"t": "Asking for directions",
+"f": "Wo ist...? Geradeaus, links, rechts, an der Ampel"
+},
+{
+"d": 42,
+"lv": "A1",
+"t": "Transport",
+"f": "Mit dem Bus, mit der U-Bahn, zu Fuß and buying a ticket"
+},
+{
+"d": 43,
+"lv": "A1",
+"t": "The weather",
+"f": "Es ist sonnig, es regnet, es schneit, es ist warm, es ist kalt"
+},
+{
+"d": 44,
+"lv": "A1",
+"t": "Hobbies and free time",
+"f": "Lesen, schwimmen, wandern, Musik hören, Freunde treffen"
+},
+{
+"d": 45,
+"lv": "A1",
+"t": "Separable verbs",
+"f": "Aufstehen, einkaufen, fernsehen: ich stehe um sieben Uhr auf"
+},
+{
+"d": 46,
+"lv": "A1",
+"t": "My daily routine",
+"f": "Describe your day from aufwachen to ins Bett gehen"
+},
+{
+"d": 47,
+"lv": "A1",
+"t": "Time expressions",
+"f": "Um acht Uhr, am Morgen, am Abend, in der Nacht"
+},
+{
+"d": 48,
+"lv": "A1",
+"t": "Modal verbs: können",
+"f": "Ich kann schwimmen: ability with können and the verb at the end"
+},
+{
+"d": 49,
+"lv": "A1",
+"t": "Modal verbs: müssen, wollen",
+"f": "Ich muss arbeiten, ich will reisen: must and want"
+},
+{
+"d": 50,
+"lv": "A1",
+"t": "Modal verbs: dürfen, sollen",
+"f": "Hier darf man parken: permission, rules and advice"
+},
+{
+"d": 51,
+"lv": "A1",
+"t": "Clothes",
+"f": "Die Hose, das Hemd, die Jacke, die Schuhe and what you wear"
+},
+{
+"d": 52,
+"lv": "A1",
+"t": "Shopping for clothes",
+"f": "Welche Größe? Kann ich das anprobieren? Das steht dir gut"
+},
+{
+"d": 53,
+"lv": "A1",
+"t": "The home",
+"f": "Rooms and furniture: Küche, Schlafzimmer, Wohnzimmer, Sofa"
+},
+{
+"d": 54,
+"lv": "A1",
+"t": "Possessive articles",
+"f": "Mein, dein, sein, ihr, unser, euer, ihr, Ihr"
+},
+{
+"d": 55,
+"lv": "A1",
+"t": "Possessives in the accusative",
+"f": "Ich suche meinen Schlüssel: the -en ending for masculine"
+},
+{
+"d": 56,
+"lv": "A1",
+"t": "The imperative",
+"f": "Komm! Kommt! Kommen Sie! Instructions and polite requests"
+},
+{
+"d": 57,
+"lv": "A1",
+"t": "Making plans with friends",
+"f": "Hast du am Samstag Zeit? Proposing, accepting and declining"
+},
+{
+"d": 58,
+"lv": "A1",
+"t": "Prepositions with accusative",
+"f": "Durch, für, gegen, ohne, um: always accusative"
+},
+{
+"d": 59,
+"lv": "A1",
+"t": "The dative case: introduction",
+"f": "Dem, der, dem, den: indirect objects like ich gebe dem Kind"
+},
+{
+"d": 60,
+"lv": "A1",
+"t": "Review: daily life in German",
+"f": "Recap food, town, transport, routine, modals and the accusative"
+},
+{
+"d": 61,
+"lv": "A1",
+"t": "Prepositions with dative",
+"f": "Aus, bei, mit, nach, seit, von, zu: always dative"
+},
+{
+"d": 62,
+"lv": "A1",
+"t": "Dative verbs",
+"f": "Helfen, danken, gefallen, gehören: verbs that take the dative"
+},
+{
+"d": 63,
+"lv": "A1",
+"t": "Dative pronouns",
+"f": "Mir, dir, ihm, ihr: wie geht es dir? Das gefällt mir"
+},
+{
+"d": 64,
+"lv": "A1",
+"t": "The body",
+"f": "Der Kopf, der Arm, das Bein and mir tut der Kopf weh"
+},
+{
+"d": 65,
+"lv": "A1",
+"t": "At the doctor and pharmacy",
+"f": "Ich habe Fieber, ich bin erkältet, ich brauche einen Termin"
+},
+{
+"d": 66,
+"lv": "A1",
+"t": "Jobs and professions",
+"f": "Ich bin Lehrerin, er ist Ingenieur: no article, and -in for women"
+},
+{
+"d": 67,
+"lv": "A1",
+"t": "At work and school",
+"f": "Das Büro, die Kollegen, der Unterricht: what you do every day"
+},
+{
+"d": 68,
+"lv": "A1",
+"t": "Animals and pets",
+"f": "Der Hund, die Katze, das Pferd and describing your pet"
+},
+{
+"d": 69,
+"lv": "A1",
+"t": "Nature and the outdoors",
+"f": "Der Wald, der Berg, der See, das Meer and going outside"
+},
+{
+"d": 70,
+"lv": "A1",
+"t": "Ordinal numbers and dates",
+"f": "Der erste, am dritten Mai: saying dates and birthdays"
+},
+{
+"d": 71,
+"lv": "A1",
+"t": "Big numbers and years",
+"f": "Tausend, eine Million and years like neunzehnhundertneunzig"
+},
+{
+"d": 72,
+"lv": "A1",
+"t": "Comparisons",
+"f": "Schneller als, so groß wie: comparing with als and wie"
+},
+{
+"d": 73,
+"lv": "A1",
+"t": "Superlatives",
+"f": "Am schnellsten, der beste, die größte: the most and the best"
+},
+{
+"d": 74,
+"lv": "A1",
+"t": "Gut, besser, am besten",
+"f": "Irregular comparisons: viel, mehr, gern, lieber"
+},
+{
+"d": 75,
+"lv": "A1",
+"t": "Two-way prepositions: where?",
+"f": "In, an, auf, unter + dative: das Buch liegt auf dem Tisch"
+},
+{
+"d": 76,
+"lv": "A1",
+"t": "Two-way prepositions: where to?",
+"f": "In, an, auf + accusative: ich lege das Buch auf den Tisch"
+},
+{
+"d": 77,
+"lv": "A1",
+"t": "Liegen, legen, stehen, stellen",
+"f": "Position verbs and whether they need dative or accusative"
+},
+{
+"d": 78,
+"lv": "A1",
+"t": "On the phone",
+"f": "Hallo, hier ist...; kann ich bitte mit... sprechen?"
+},
+{
+"d": 79,
+"lv": "A1",
+"t": "Writing a short message",
+"f": "Texts and simple emails: Liebe Anna, viele Grüße, bis bald"
+},
+{
+"d": 80,
+"lv": "A1",
+"t": "German-speaking countries",
+"f": "Germany, Austria, Switzerland, Liechtenstein and their capitals"
+},
+{
+"d": 81,
+"lv": "A1",
+"t": "Feelings and moods",
+"f": "Glücklich, traurig, müde, nervös and ich habe Hunger, Durst"
+},
+{
+"d": 82,
+"lv": "A1",
+"t": "Es gibt: there is",
+"f": "Es gibt einen Park: es gibt always takes the accusative"
+},
+{
+"d": 83,
+"lv": "A1",
+"t": "Small talk",
+"f": "Weather, weekend and plans: keeping a friendly chat going"
+},
+{
+"d": 84,
+"lv": "A1",
+"t": "Very common expressions",
+"f": "Alles klar, genau, kein Problem, na ja, super, schade"
+},
+{
+"d": 85,
+"lv": "A1",
+"t": "Linking words: und, aber, oder, denn",
+"f": "Connecting sentences without changing word order"
+},
+{
+"d": 86,
+"lv": "A1",
+"t": "Describing your town",
+"f": "Meine Stadt ist..., es gibt..., man kann..."
+},
+{
+"d": 87,
+"lv": "A1",
+"t": "Booking a hotel room",
+"f": "Ein Doppelzimmer für zwei Nächte, ist das Frühstück inklusive?"
+},
+{
+"d": 88,
+"lv": "A1",
+"t": "A simple recipe",
+"f": "Schneiden, mischen, kochen, backen and following a recipe"
+},
+{
+"d": 89,
+"lv": "A1",
+"t": "Telling about your week",
+"f": "Combine routine, plans and opinions in a short talk"
+},
+{
+"d": 90,
+"lv": "A1",
+"t": "Review: A1 checkpoint",
+"f": "Recap all of A1 with a full conversation about yourself"
+},
+{
+"d": 91,
+"lv": "A2",
+"t": "Perfekt with haben",
+"f": "Ich habe gespielt: talking about the past in spoken German"
+},
+{
+"d": 92,
+"lv": "A2",
+"t": "Past participles: regular",
+"f": "Ge- + stem + -t: gemacht, gekauft, gelernt"
+},
+{
+"d": 93,
+"lv": "A2",
+"t": "Past participles: irregular",
+"f": "Gegessen, getrunken, gesehen, geschrieben"
+},
+{
+"d": 94,
+"lv": "A2",
+"t": "Perfekt with sein",
+"f": "Ich bin gefahren: verbs of movement and change of state"
+},
+{
+"d": 95,
+"lv": "A2",
+"t": "Separable verbs in the Perfekt",
+"f": "Ich bin aufgestanden, ich habe eingekauft"
+},
+{
+"d": 96,
+"lv": "A2",
+"t": "Participles without ge-",
+"f": "Studiert, besucht, verstanden: -ieren verbs and fixed prefixes"
+},
+{
+"d": 97,
+"lv": "A2",
+"t": "What did you do last weekend?",
+"f": "Tell a story with zuerst, dann, danach, zum Schluss"
+},
+{
+"d": 98,
+"lv": "A2",
+"t": "Time markers for the past",
+"f": "Gestern, letzte Woche, vor zwei Jahren, schon, noch nicht"
+},
+{
+"d": 99,
+"lv": "A2",
+"t": "Präteritum of sein and haben",
+"f": "Ich war, ich hatte: simple past forms used in speech"
+},
+{
+"d": 100,
+"lv": "A2",
+"t": "Präteritum of modal verbs",
+"f": "Ich konnte, ich musste, ich wollte, ich durfte"
+},
+{
+"d": 101,
+"lv": "A2",
+"t": "Childhood memories",
+"f": "Als ich klein war...: telling stories about the past"
+},
+{
+"d": 102,
+"lv": "A2",
+"t": "Holidays and travel",
+"f": "Urlaub machen, Koffer packen, verreisen, die Unterkunft"
+},
+{
+"d": 103,
+"lv": "A2",
+"t": "At the airport and station",
+"f": "Der Flug, das Gleis, die Verspätung, umsteigen"
+},
+{
+"d": 104,
+"lv": "A2",
+"t": "Subordinate clauses with weil",
+"f": "Ich lerne Deutsch, weil...: the verb goes to the end"
+},
+{
+"d": 105,
+"lv": "A2",
+"t": "Dass-clauses",
+"f": "Ich glaube, dass...: reporting thoughts and opinions"
+},
+{
+"d": 106,
+"lv": "A2",
+"t": "Wenn and als",
+"f": "Wenn for repeated or future events, als for one-time past events"
+},
+{
+"d": 107,
+"lv": "A2",
+"t": "Ob and indirect questions",
+"f": "Ich weiß nicht, ob...; kannst du mir sagen, wo...?"
+},
+{
+"d": 108,
+"lv": "A2",
+"t": "Health and healthy habits",
+"f": "Sport treiben, gesund essen, gut schlafen and giving advice"
+},
+{
+"d": 109,
+"lv": "A2",
+"t": "Reflexive verbs",
+"f": "Sich freuen, sich waschen, sich treffen: ich freue mich"
+},
+{
+"d": 110,
+"lv": "A2",
+"t": "Reflexive verbs with dative",
+"f": "Ich putze mir die Zähne, ich wünsche mir..."
+},
+{
+"d": 111,
+"lv": "A2",
+"t": "Review: past and subordinate clauses",
+"f": "Recap Perfekt, Präteritum, weil, dass, wenn and als"
+},
+{
+"d": 112,
+"lv": "A2",
+"t": "Adjective endings after der",
+"f": "Der alte Mann, die neue Stadt: weak endings"
+},
+{
+"d": 113,
+"lv": "A2",
+"t": "Adjective endings after ein",
+"f": "Ein alter Mann, eine neue Stadt: mixed endings"
+},
+{
+"d": 114,
+"lv": "A2",
+"t": "Adjectives without article",
+"f": "Frisches Brot, kaltes Wasser: strong endings"
+},
+{
+"d": 115,
+"lv": "A2",
+"t": "Describing things in detail",
+"f": "Using adjective endings in real descriptions"
+},
+{
+"d": 116,
+"lv": "A2",
+"t": "Futur I and plans",
+"f": "Ich werde reisen, and the present tense for future plans"
+},
+{
+"d": 117,
+"lv": "A2",
+"t": "The weather forecast",
+"f": "Morgen wird es regnen: Gewitter, Schauer, Temperaturen"
+},
+{
+"d": 118,
+"lv": "A2",
+"t": "Media and screens",
+"f": "Fernsehen, Serien, soziale Netzwerke, streamen"
+},
+{
+"d": 119,
+"lv": "A2",
+"t": "Cinema and films",
+"f": "Ein Krimi, eine Komödie, Untertitel, die Originalversion"
+},
+{
+"d": 120,
+"lv": "A2",
+"t": "Music and concerts",
+"f": "Genres, instruments and talking about your favourite bands"
+},
+{
+"d": 121,
+"lv": "A2",
+"t": "Reading and books",
+"f": "Ein Roman, ein Hörbuch, ein Comic and German reading habits"
+},
+{
+"d": 122,
+"lv": "A2",
+"t": "Giving opinions",
+"f": "Ich finde, meiner Meinung nach, ich denke, dass..."
+},
+{
+"d": 123,
+"lv": "A2",
+"t": "Agreeing and disagreeing",
+"f": "Da hast du recht, das stimmt, ich sehe das anders"
+},
+{
+"d": 124,
+"lv": "A2",
+"t": "Housing: renting a flat",
+"f": "Die Wohnung, die Miete, die Nebenkosten, die WG"
+},
+{
+"d": 125,
+"lv": "A2",
+"t": "Household chores",
+"f": "Abwaschen, staubsaugen, aufräumen, den Müll trennen"
+},
+{
+"d": 126,
+"lv": "A2",
+"t": "Shopping at the market",
+"f": "Frisches Obst, regional, saisonal: chatting at the Markt"
+},
+{
+"d": 127,
+"lv": "A2",
+"t": "At the supermarket",
+"f": "Die Kasse, der Einkaufswagen, das Pfand, die Tüte"
+},
+{
+"d": 128,
+"lv": "A2",
+"t": "Complaining politely",
+"f": "Ich möchte das umtauschen, ich hätte gern mein Geld zurück"
+},
+{
+"d": 129,
+"lv": "A2",
+"t": "Genitive basics",
+"f": "Des Mannes, der Frau: possession, and wegen, trotz, während"
+},
+{
+"d": 130,
+"lv": "A2",
+"t": "Von + dative for possession",
+"f": "Das Auto von meinem Vater: the spoken alternative to the genitive"
+},
+{
+"d": 131,
+"lv": "A2",
+"t": "Indefinite pronouns",
+"f": "Jemand, niemand, etwas, nichts, alles, man"
+},
+{
+"d": 132,
+"lv": "A2",
+"t": "Frequency adverbs",
+"f": "Immer, oft, manchmal, selten, nie and where they go"
+},
+{
+"d": 133,
+"lv": "A2",
+"t": "Word order: time, manner, place",
+"f": "TeKaMoLo: ich fahre morgen mit dem Zug nach Wien"
+},
+{
+"d": 134,
+"lv": "A2",
+"t": "Verbs with prepositions",
+"f": "Warten auf, denken an, sich interessieren für"
+},
+{
+"d": 135,
+"lv": "A2",
+"t": "Da- and wo- compounds",
+"f": "Darauf, daran, worauf, woran: replacing prepositional phrases"
+},
+{
+"d": 136,
+"lv": "A2",
+"t": "Friends and relationships",
+"f": "Sich gut verstehen, sich streiten, befreundet sein"
+},
+{
+"d": 137,
+"lv": "A2",
+"t": "Describing character",
+"f": "Hilfsbereit, schüchtern, ehrlich, stur: personality in depth"
+},
+{
+"d": 138,
+"lv": "A2",
+"t": "Making an appointment",
+"f": "Einen Termin vereinbaren at the doctor, the hairdresser or an office"
+},
+{
+"d": 139,
+"lv": "A2",
+"t": "Emails: formal and informal",
+"f": "Sehr geehrte Damen und Herren, mit freundlichen Grüßen"
+},
+{
+"d": 140,
+"lv": "A2",
+"t": "Celebrations and holidays",
+"f": "Weihnachten, Ostern, Karneval, Oktoberfest, Silvester"
+},
+{
+"d": 141,
+"lv": "A2",
+"t": "Review: adjectives and opinions",
+"f": "Recap adjective endings, the genitive and giving opinions"
+},
+{
+"d": 142,
+"lv": "A2",
+"t": "Konjunktiv II: würde + infinitive",
+"f": "Ich würde gern reisen: wishes and polite requests"
+},
+{
+"d": 143,
+"lv": "A2",
+"t": "Konjunktiv II: wäre and hätte",
+"f": "Ich wäre gern..., ich hätte gern...: the most common forms"
+},
+{
+"d": 144,
+"lv": "A2",
+"t": "Polite requests",
+"f": "Könnten Sie...? Würden Sie bitte...? Softening requests"
+},
+{
+"d": 145,
+"lv": "A2",
+"t": "Giving advice",
+"f": "Du solltest..., an deiner Stelle würde ich..."
+},
+{
+"d": 146,
+"lv": "A2",
+"t": "Wenn + Konjunktiv II",
+"f": "Wenn ich reich wäre, würde ich...: dreams and hypotheses"
+},
+{
+"d": 147,
+"lv": "A2",
+"t": "Dream holidays",
+"f": "Wohin würdest du fahren, wenn du könntest?"
+},
+{
+"d": 148,
+"lv": "A2",
+"t": "Sports in depth",
+"f": "Fußball, die Bundesliga, Radfahren and talking about matches"
+},
+{
+"d": 149,
+"lv": "A2",
+"t": "Environment basics",
+"f": "Recycling, Mülltrennung, Energie sparen, Umweltschutz"
+},
+{
+"d": 150,
+"lv": "A2",
+"t": "City life vs country life",
+"f": "Comparing the advantages and drawbacks of where to live"
+},
+{
+"d": 151,
+"lv": "A2",
+"t": "Technology in daily life",
+"f": "Das Handy, herunterladen, das Passwort, das WLAN"
+},
+{
+"d": 152,
+"lv": "A2",
+"t": "Job hunting",
+"f": "Der Lebenslauf, das Anschreiben, die Stellenanzeige"
+},
+{
+"d": 153,
+"lv": "A2",
+"t": "Job interview basics",
+"f": "Talk about your experience, strengths and goals politely"
+},
+{
+"d": 154,
+"lv": "A2",
+"t": "School and studies",
+"f": "Die Grundschule, das Gymnasium, die Uni, eine Prüfung bestehen"
+},
+{
+"d": 155,
+"lv": "A2",
+"t": "Seit, vor, für: time",
+"f": "Seit zwei Jahren, vor einem Jahr, für eine Woche"
+},
+{
+"d": 156,
+"lv": "A2",
+"t": "Infinitive with zu",
+"f": "Ich habe Lust, ... zu; es ist schön, Deutsch zu lernen"
+},
+{
+"d": 157,
+"lv": "A2",
+"t": "Um... zu: expressing purpose",
+"f": "Ich lerne Deutsch, um in Berlin zu arbeiten"
+},
+{
+"d": 158,
+"lv": "A2",
+"t": "German food culture",
+"f": "Regional dishes, Abendbrot, Kaffee und Kuchen, Brezeln"
+},
+{
+"d": 159,
+"lv": "A2",
+"t": "Invitations and table manners",
+"f": "Guten Appetit, Prost, something to bring and being on time"
+},
+{
+"d": 160,
+"lv": "A2",
+"t": "Lost and found",
+"f": "Ich habe meine Tasche verloren: describing lost objects"
+},
+{
+"d": 161,
+"lv": "A2",
+"t": "Car and road",
+"f": "Autofahren, der Führerschein, tanken, der Stau, parken"
+},
+{
+"d": 162,
+"lv": "A2",
+"t": "Asking for help",
+"f": "Können Sie mir helfen? Wie bitte? Können Sie das wiederholen?"
+},
+{
+"d": 163,
+"lv": "A2",
+"t": "Fillers and spoken German",
+"f": "Also, halt, eben, na ja, ähm: sounding natural"
+},
+{
+"d": 164,
+"lv": "A2",
+"t": "Modal particles",
+"f": "Doch, mal, ja, denn, eben: small words with a big effect"
+},
+{
+"d": 165,
+"lv": "A2",
+"t": "Common colloquial words",
+"f": "Krass, Quatsch, Kumpel, echt, cool, toll"
+},
+{
+"d": 166,
+"lv": "A2",
+"t": "Berlin and its districts",
+"f": "Kreuzberg, Mitte, Prenzlauer Berg and Berlin life"
+},
+{
+"d": 167,
+"lv": "A2",
+"t": "Regions of Germany",
+"f": "Bayern, Hamburg, Sachsen, the Rhineland and their specialities"
+},
+{
+"d": 168,
+"lv": "A2",
+"t": "Austria and Switzerland",
+"f": "Grüß Gott, Grüezi, Jänner, Velo: differences in vocabulary"
+},
+{
+"d": 169,
+"lv": "A2",
+"t": "Welcher and dieser",
+"f": "Which one? Welches Kleid? Dieses hier: question words and demonstratives"
+},
+{
+"d": 170,
+"lv": "A2",
+"t": "Relative clauses: nominative",
+"f": "Der Mann, der dort steht: relative pronouns"
+},
+{
+"d": 171,
+"lv": "A2",
+"t": "Relative clauses: accusative, dative",
+"f": "Der Film, den ich sehe; die Frau, der ich helfe"
+},
+{
+"d": 172,
+"lv": "A2",
+"t": "Describing a photo",
+"f": "Im Vordergrund, im Hintergrund, man sieht, es sieht so aus, als ob"
+},
+{
+"d": 173,
+"lv": "A2",
+"t": "Narrating a trip",
+"f": "A full travel story with past tenses and connectors"
+},
+{
+"d": 174,
+"lv": "A2",
+"t": "Plusquamperfekt",
+"f": "Ich hatte schon gegessen: the past before the past"
+},
+{
+"d": 175,
+"lv": "A2",
+"t": "Nachdem and bevor",
+"f": "Nachdem ich gegessen hatte, ging ich: sequencing events"
+},
+{
+"d": 176,
+"lv": "A2",
+"t": "Listening tips for real German",
+"f": "Strategies for fast speech, accents and swallowed endings"
+},
+{
+"d": 177,
+"lv": "A2",
+"t": "German false friends",
+"f": "Bekommen, Gift, Handy, aktuell, Chef: words that trick learners"
+},
+{
+"d": 178,
+"lv": "A2",
+"t": "Compound nouns",
+"f": "Hand + Schuh = Handschuh: building long German words"
+},
+{
+"d": 179,
+"lv": "A2",
+"t": "Talking about your goals",
+"f": "What you want to achieve in German and how you will practise"
+},
+{
+"d": 180,
+"lv": "A2",
+"t": "Review: A2 checkpoint",
+"f": "Recap all of A2 with a long conversation about past and future"
+},
+{
+"d": 181,
+"lv": "B1",
+"t": "Präteritum of regular verbs",
+"f": "Ich machte, er spielte: the written past tense"
+},
+{
+"d": 182,
+"lv": "B1",
+"t": "Präteritum of irregular verbs",
+"f": "Ging, kam, sah, nahm, fand: strong verbs in stories"
+},
+{
+"d": 183,
+"lv": "B1",
+"t": "Präteritum in stories",
+"f": "Reading and telling fairy tales: es war einmal..."
+},
+{
+"d": 184,
+"lv": "B1",
+"t": "Passive voice: present",
+"f": "Das Haus wird gebaut: werden + participle"
+},
+{
+"d": 185,
+"lv": "B1",
+"t": "Passive in the past",
+"f": "Das Haus wurde gebaut, ist gebaut worden"
+},
+{
+"d": 186,
+"lv": "B1",
+"t": "Passive with modal verbs",
+"f": "Das muss gemacht werden: rules and instructions"
+},
+{
+"d": 187,
+"lv": "B1",
+"t": "Alternatives to the passive",
+"f": "Man, sich lassen and -bar: das lässt sich machen, das ist machbar"
+},
+{
+"d": 188,
+"lv": "B1",
+"t": "Konjunktiv II past",
+"f": "Ich hätte gemacht, ich wäre gegangen: other possible pasts"
+},
+{
+"d": 189,
+"lv": "B1",
+"t": "Talking about regrets",
+"f": "Hätte ich nur..., wenn ich das gewusst hätte..."
+},
+{
+"d": 190,
+"lv": "B1",
+"t": "Konjunktiv II with modals",
+"f": "Ich hätte kommen sollen, du hättest anrufen können"
+},
+{
+"d": 191,
+"lv": "B1",
+"t": "Polite criticism and suggestions",
+"f": "Es wäre besser, wenn..., du hättest vielleicht..."
+},
+{
+"d": 192,
+"lv": "B1",
+"t": "Als ob and als wenn",
+"f": "Er tut so, als ob er alles wüsste: comparisons with Konjunktiv II"
+},
+{
+"d": 193,
+"lv": "B1",
+"t": "Relative clauses with prepositions",
+"f": "Die Stadt, in der ich wohne; der Freund, mit dem ich reise"
+},
+{
+"d": 194,
+"lv": "B1",
+"t": "Relative words wo and was",
+"f": "Alles, was ich weiß; die Stadt, wo ich lebe"
+},
+{
+"d": 195,
+"lv": "B1",
+"t": "Review: passive and Konjunktiv II",
+"f": "Recap passive forms, the past subjunctive and relative clauses"
+},
+{
+"d": 196,
+"lv": "B1",
+"t": "Genitive in depth",
+"f": "Des Landes, eines Freundes and genitive prepositions"
+},
+{
+"d": 197,
+"lv": "B1",
+"t": "Adjectives as nouns",
+"f": "Der Deutsche, die Bekannte, etwas Neues, nichts Besonderes"
+},
+{
+"d": 198,
+"lv": "B1",
+"t": "N-declension",
+"f": "Der Student, den Studenten, dem Kollegen: weak masculine nouns"
+},
+{
+"d": 199,
+"lv": "B1",
+"t": "Two-part conjunctions",
+"f": "Sowohl... als auch, weder... noch, entweder... oder, nicht nur... sondern auch"
+},
+{
+"d": 200,
+"lv": "B1",
+"t": "Obwohl and trotzdem",
+"f": "Obwohl es regnet, gehe ich; es regnet, trotzdem gehe ich"
+},
+{
+"d": 201,
+"lv": "B1",
+"t": "Deshalb, deswegen, darum",
+"f": "Consequence connectors with the verb in position 2"
+},
+{
+"d": 202,
+"lv": "B1",
+"t": "Während, bevor, bis, seitdem",
+"f": "Temporal conjunctions in subordinate clauses"
+},
+{
+"d": 203,
+"lv": "B1",
+"t": "Damit vs um... zu",
+"f": "Purpose with the same or a different subject"
+},
+{
+"d": 204,
+"lv": "B1",
+"t": "Ohne... zu and statt... zu",
+"f": "Er ging, ohne sich zu verabschieden"
+},
+{
+"d": 205,
+"lv": "B1",
+"t": "Indirect speech: introduction",
+"f": "Konjunktiv I: er sagt, er sei krank, sie habe Zeit"
+},
+{
+"d": 206,
+"lv": "B1",
+"t": "Reporting what people say",
+"f": "Using dass, Konjunktiv I and Konjunktiv II in reported speech"
+},
+{
+"d": 207,
+"lv": "B1",
+"t": "Expressing cause",
+"f": "Weil, da, denn, wegen, aufgrund, nämlich"
+},
+{
+"d": 208,
+"lv": "B1",
+"t": "Expressing contrast",
+"f": "Aber, sondern, jedoch, während, im Gegensatz zu"
+},
+{
+"d": 209,
+"lv": "B1",
+"t": "Structuring an argument",
+"f": "Erstens, zweitens, außerdem, einerseits... andererseits, schließlich"
+},
+{
+"d": 210,
+"lv": "B1",
+"t": "News vocabulary",
+"f": "Die Nachrichten, die Schlagzeile, der Artikel, die Quelle"
+},
+{
+"d": 211,
+"lv": "B1",
+"t": "Summarising an article",
+"f": "Es geht um, der Autor erklärt, zusammenfassend"
+},
+{
+"d": 212,
+"lv": "B1",
+"t": "Work life in German-speaking lands",
+"f": "Arbeitszeiten, Urlaubstage, Feierabend, Pünktlichkeit"
+},
+{
+"d": 213,
+"lv": "B1",
+"t": "Meetings at work",
+"f": "Die Tagesordnung, das Protokoll, einen Vorschlag machen"
+},
+{
+"d": 214,
+"lv": "B1",
+"t": "Professional emails",
+"f": "Bezüglich, anbei, ich freue mich auf Ihre Rückmeldung"
+},
+{
+"d": 215,
+"lv": "B1",
+"t": "Telephone at work",
+"f": "Ich verbinde Sie, eine Nachricht hinterlassen, zurückrufen"
+},
+{
+"d": 216,
+"lv": "B1",
+"t": "Presenting a project",
+"f": "Einleitung, Ablauf, Ergebnisse, nächste Schritte"
+},
+{
+"d": 217,
+"lv": "B1",
+"t": "The dual training system",
+"f": "Ausbildung, Berufsschule, Azubi: learning on the job"
+},
+{
+"d": 218,
+"lv": "B1",
+"t": "Review: connectors and work",
+"f": "Recap conjunctions, reported speech and work language"
+},
+{
+"d": 219,
+"lv": "B1",
+"t": "Education systems",
+"f": "Grundschule, Gymnasium, Abitur, Hochschule, Studium"
+},
+{
+"d": 220,
+"lv": "B1",
+"t": "Learning languages",
+"f": "Talking about methods, motivation and progress"
+},
+{
+"d": 221,
+"lv": "B1",
+"t": "Health and well-being",
+"f": "Stress, Entspannung, Work-Life-Balance, sich erholen"
+},
+{
+"d": 222,
+"lv": "B1",
+"t": "At the doctor in detail",
+"f": "Describe symptoms precisely and understand general advice"
+},
+{
+"d": 223,
+"lv": "B1",
+"t": "Sustainable living",
+"f": "Regional einkaufen, Müll vermeiden, Fahrrad fahren"
+},
+{
+"d": 224,
+"lv": "B1",
+"t": "Climate and nature",
+"f": "Klimawandel, Artenvielfalt, erneuerbare Energien"
+},
+{
+"d": 225,
+"lv": "B1",
+"t": "Volunteering and community",
+"f": "Ehrenamt, sich engagieren, anderen helfen"
+},
+{
+"d": 226,
+"lv": "B1",
+"t": "Club culture: der Verein",
+"f": "Sports clubs, choirs and why Germans love their Vereine"
+},
+{
+"d": 227,
+"lv": "B1",
+"t": "Cities of the German-speaking world",
+"f": "Wien, Zürich, Hamburg, München and Köln compared"
+},
+{
+"d": 228,
+"lv": "B1",
+"t": "Austrian German",
+"f": "Servus, Paradeiser, Erdäpfel, Sackerl: words from Austria"
+},
+{
+"d": 229,
+"lv": "B1",
+"t": "Swiss Standard German",
+"f": "Grüezi, merci vielmal, das Velo and no ß in Switzerland"
+},
+{
+"d": 230,
+"lv": "B1",
+"t": "German history highlights",
+"f": "Gutenberg, Luther's Bible, the fall of the Wall and reunification"
+},
+{
+"d": 231,
+"lv": "B1",
+"t": "Art and museums",
+"f": "Dürer, the Bauhaus and Berlin's Museumsinsel"
+},
+{
+"d": 232,
+"lv": "B1",
+"t": "Literature classics",
+"f": "Goethe, Schiller, the Brothers Grimm and Kafka"
+},
+{
+"d": 233,
+"lv": "B1",
+"t": "German cinema",
+"f": "Good Bye, Lenin!, Lola rennt and talking about films"
+},
+{
+"d": 234,
+"lv": "B1",
+"t": "Music: from Bach to today",
+"f": "Bach, Beethoven, Mozart, Schlager and modern pop"
+},
+{
+"d": 235,
+"lv": "B1",
+"t": "Describing a film or book",
+"f": "Plot, characters, es geht um, ich kann es empfehlen"
+},
+{
+"d": 236,
+"lv": "B1",
+"t": "Writing a review",
+"f": "Positive and negative critique: ein Meisterwerk, enttäuschend"
+},
+{
+"d": 237,
+"lv": "B1",
+"t": "Idioms with food",
+"f": "Das ist nicht mein Bier, alles hat ein Ende, nur die Wurst hat zwei"
+},
+{
+"d": 238,
+"lv": "B1",
+"t": "Idioms with animals",
+"f": "Da steppt der Bär, ich glaub, mein Schwein pfeift"
+},
+{
+"d": 239,
+"lv": "B1",
+"t": "Idioms with body parts",
+"f": "Daumen drücken, Hals- und Beinbruch, jemanden auf den Arm nehmen"
+},
+{
+"d": 240,
+"lv": "B1",
+"t": "Expressing surprise",
+"f": "Echt? Wahnsinn! Das gibt's doch nicht!"
+},
+{
+"d": 241,
+"lv": "B1",
+"t": "Enthusiasm and disappointment",
+"f": "Toll! Wie schade! Ich bin ein bisschen enttäuscht"
+},
+{
+"d": 242,
+"lv": "B1",
+"t": "Expressing annoyance politely",
+"f": "Das nervt, ich habe die Nase voll, das stört mich etwas"
+},
+{
+"d": 243,
+"lv": "B1",
+"t": "Encouraging and reassuring",
+"f": "Keine Sorge, das wird schon, du schaffst das, viel Erfolg"
+},
+{
+"d": 244,
+"lv": "B1",
+"t": "Review: culture and expressions",
+"f": "Recap idioms, emotions and cultural topics in a chat"
+},
+{
+"d": 245,
+"lv": "B1",
+"t": "Prefixes: ver-, be-, er-, ent-",
+"f": "How inseparable prefixes change meaning: verstehen, bekommen"
+},
+{
+"d": 246,
+"lv": "B1",
+"t": "Separable prefixes in depth",
+"f": "An-, aus-, mit-, vor-, zurück-: one verb, many meanings"
+},
+{
+"d": 247,
+"lv": "B1",
+"t": "Word families",
+"f": "Arbeiten, die Arbeit, der Arbeiter, arbeitslos"
+},
+{
+"d": 248,
+"lv": "B1",
+"t": "Suffixes: -ung, -heit, -keit, -schaft",
+"f": "Building nouns and guessing their gender"
+},
+{
+"d": 249,
+"lv": "B1",
+"t": "Suffixes: -bar, -lich, -ig, -los",
+"f": "Building adjectives: machbar, freundlich, lustig, arbeitslos"
+},
+{
+"d": 250,
+"lv": "B1",
+"t": "Nominal style",
+"f": "Eine Entscheidung treffen, zur Verfügung stellen: noun-verb pairs"
+},
+{
+"d": 251,
+"lv": "B1",
+"t": "Lassen",
+"f": "Ich lasse mein Auto reparieren: having something done"
+},
+{
+"d": 252,
+"lv": "B1",
+"t": "Verbs of perception + infinitive",
+"f": "Ich sehe ihn kommen, ich höre sie singen"
+},
+{
+"d": 253,
+"lv": "B1",
+"t": "Reflexive verbs in depth",
+"f": "Sich vorstellen, sich etwas vorstellen, sich beeilen"
+},
+{
+"d": 254,
+"lv": "B1",
+"t": "More verbs with prepositions",
+"f": "Sich beschäftigen mit, sich verlassen auf, abhängen von"
+},
+{
+"d": 255,
+"lv": "B1",
+"t": "Negation in depth",
+"f": "Nicht mehr, noch nicht, kein... mehr, gar nicht, überhaupt nicht"
+},
+{
+"d": 256,
+"lv": "B1",
+"t": "Indefinite words",
+"f": "Irgendwo, irgendwann, irgendjemand, manche, einige"
+},
+{
+"d": 257,
+"lv": "B1",
+"t": "Expressing conditions",
+"f": "Falls, sofern, vorausgesetzt, dass, es sei denn"
+},
+{
+"d": 258,
+"lv": "B1",
+"t": "Telling an anecdote",
+"f": "A hook, vivid details, a climax and a funny ending"
+},
+{
+"d": 259,
+"lv": "B1",
+"t": "Debating: making a point",
+"f": "Ich bin der Meinung, es ist klar, dass, man darf nicht vergessen"
+},
+{
+"d": 260,
+"lv": "B1",
+"t": "Debating: responding",
+"f": "Das mag sein, aber...; ich verstehe deinen Punkt; im Gegenteil"
+},
+{
+"d": 261,
+"lv": "B1",
+"t": "Social media and society",
+"f": "Influencer, Bildschirmzeit, Falschmeldungen"
+},
+{
+"d": 262,
+"lv": "B1",
+"t": "Technology and the future",
+"f": "Künstliche Intelligenz, Roboter, Homeoffice"
+},
+{
+"d": 263,
+"lv": "B1",
+"t": "Travel planning in depth",
+"f": "Reiseroute, Unterkunft, Budget and the unexpected"
+},
+{
+"d": 264,
+"lv": "B1",
+"t": "Solving a travel problem",
+"f": "Flug gestrichen, Gepäck verloren and making a polite complaint"
+},
+{
+"d": 265,
+"lv": "B1",
+"t": "Renting and contracts",
+"f": "Der Mietvertrag, die Kaution, kündigen, die Hausordnung"
+},
+{
+"d": 266,
+"lv": "B1",
+"t": "Banking basics",
+"f": "Ein Konto eröffnen, überweisen, die Bankkarte, die IBAN"
+},
+{
+"d": 267,
+"lv": "B1",
+"t": "Paperwork and offices",
+"f": "Die Anmeldung, das Formular, der Ausweis, der Termin beim Amt"
+},
+{
+"d": 268,
+"lv": "B1",
+"t": "Formal letters",
+"f": "Betreff, Anrede, Schlussformel and a clear structure"
+},
+{
+"d": 269,
+"lv": "B1",
+"t": "Writing an opinion paragraph",
+"f": "A thesis, two arguments, an example and a conclusion"
+},
+{
+"d": 270,
+"lv": "B1",
+"t": "Sports and big events",
+"f": "Die Weltmeisterschaft, trainieren, der Wettkampf, gewinnen"
+},
+{
+"d": 271,
+"lv": "B1",
+"t": "Bread and wine culture",
+"f": "German bread variety and the wine regions along the Rhine and Mosel"
+},
+{
+"d": 272,
+"lv": "B1",
+"t": "Cooking conversation",
+"f": "Anbraten, würzen, köcheln lassen: talking like a cook"
+},
+{
+"d": 273,
+"lv": "B1",
+"t": "Fashion and style",
+"f": "Sich anziehen, modisch, der Stil, schick"
+},
+{
+"d": 274,
+"lv": "B1",
+"t": "Describing feelings in depth",
+"f": "Gerührt, erleichtert, verlegen, stolz, dankbar"
+},
+{
+"d": 275,
+"lv": "B1",
+"t": "Friendship and conflict",
+"f": "Sich versöhnen, sich entschuldigen, in Kontakt bleiben"
+},
+{
+"d": 276,
+"lv": "B1",
+"t": "Futur I vs present for future",
+"f": "Plans, promises and assumptions with werden"
+},
+{
+"d": 277,
+"lv": "B1",
+"t": "Futur II",
+"f": "Er wird schon angekommen sein: assumptions about the past"
+},
+{
+"d": 278,
+"lv": "B1",
+"t": "Spoken vs written German",
+"f": "Registers: umgangssprachlich, standard and gehoben"
+},
+{
+"d": 279,
+"lv": "B1",
+"t": "Preparing a B1 style talk",
+"f": "Monologue structure and handling follow-up questions"
+},
+{
+"d": 280,
+"lv": "B1",
+"t": "Review: B1 checkpoint",
+"f": "Recap all of B1 with a debate and a personal story"
+},
+{
+"d": 281,
+"lv": "B2",
+"t": "Konjunktiv I in the news",
+"f": "Der Sprecher sagte, er werde..., es gebe...: reported speech in media"
+},
+{
+"d": 282,
+"lv": "B2",
+"t": "Konjunktiv I past",
+"f": "Er sagt, er habe das nicht gewusst"
+},
+{
+"d": 283,
+"lv": "B2",
+"t": "Extended participial attributes",
+"f": "Der von allen geschätzte Lehrer: dense written style"
+},
+{
+"d": 284,
+"lv": "B2",
+"t": "Partizip I and II as adjectives",
+"f": "Die lachenden Kinder, das gekochte Ei"
+},
+{
+"d": 285,
+"lv": "B2",
+"t": "Participle clauses",
+"f": "Im Park angekommen, setzten wir uns: compact sentences"
+},
+{
+"d": 286,
+"lv": "B2",
+"t": "State passive with sein",
+"f": "Die Tür ist geschlossen: a state versus a process"
+},
+{
+"d": 287,
+"lv": "B2",
+"t": "Modal verbs for assumptions",
+"f": "Er muss müde sein, sie dürfte recht haben, das kann sein"
+},
+{
+"d": 288,
+"lv": "B2",
+"t": "Modals in compound tenses",
+"f": "Er hat kommen müssen, sie hätte es wissen müssen"
+},
+{
+"d": 289,
+"lv": "B2",
+"t": "Je... desto",
+"f": "Je mehr ich übe, desto besser spreche ich"
+},
+{
+"d": 290,
+"lv": "B2",
+"t": "Word order in long sentences",
+"f": "Middle field rules, pronouns first and where nicht goes"
+},
+{
+"d": 291,
+"lv": "B2",
+"t": "Fronting for emphasis",
+"f": "Den Film habe ich schon gesehen: putting the topic first"
+},
+{
+"d": 292,
+"lv": "B2",
+"t": "Es as a placeholder",
+"f": "Es freut mich, dass...; es wurde viel gelacht"
+},
+{
+"d": 293,
+"lv": "B2",
+"t": "Advanced connectors",
+"f": "Dennoch, folglich, somit, zudem, allerdings"
+},
+{
+"d": 294,
+"lv": "B2",
+"t": "Prepositions with genitive",
+"f": "Angesichts, innerhalb, außerhalb, anstatt, aufgrund"
+},
+{
+"d": 295,
+"lv": "B2",
+"t": "Review: advanced grammar",
+"f": "Recap Konjunktiv I, participles, modals and word order"
+},
+{
+"d": 296,
+"lv": "B2",
+"t": "Formal register",
+"f": "Vocabulary and structures of gehobene Sprache"
+},
+{
+"d": 297,
+"lv": "B2",
+"t": "Nuancing your opinion",
+"f": "Mir scheint, gewissermaßen, im Grunde, eher"
+},
+{
+"d": 298,
+"lv": "B2",
+"t": "Hedging and politeness",
+"f": "Ich wollte fragen, ob...; wären Sie so freundlich"
+},
+{
+"d": 299,
+"lv": "B2",
+"t": "Persuasion techniques",
+"f": "Rhetorical questions, examples and appeals to shared values"
+},
+{
+"d": 300,
+"lv": "B2",
+"t": "Writing an essay: introduction",
+"f": "A hook, the central question and an outline"
+},
+{
+"d": 301,
+"lv": "B2",
+"t": "Writing an essay: body",
+"f": "Arguments, examples and transitions"
+},
+{
+"d": 302,
+"lv": "B2",
+"t": "Writing an essay: conclusion",
+"f": "Summary, your own view and a look ahead"
+},
+{
+"d": 303,
+"lv": "B2",
+"t": "Formal letter of complaint",
+"f": "Structure, tone and firm but polite language"
+},
+{
+"d": 304,
+"lv": "B2",
+"t": "Cover letter in German",
+"f": "Das Anschreiben: structure and key phrases"
+},
+{
+"d": 305,
+"lv": "B2",
+"t": "Job interview advanced",
+"f": "Erzählen Sie von sich, Stärken und Schwächen, Ziele"
+},
+{
+"d": 306,
+"lv": "B2",
+"t": "Negotiating",
+"f": "Ein Angebot machen, einen Kompromiss finden, sich einigen"
+},
+{
+"d": 307,
+"lv": "B2",
+"t": "Leading a meeting",
+"f": "Moderieren, das Wort erteilen, zusammenfassen"
+},
+{
+"d": 308,
+"lv": "B2",
+"t": "Giving a presentation",
+"f": "Win the audience, illustrate and answer questions"
+},
+{
+"d": 309,
+"lv": "B2",
+"t": "Economy vocabulary",
+"f": "Das Wachstum, der Arbeitsmarkt, die Kaufkraft, das Unternehmen"
+},
+{
+"d": 310,
+"lv": "B2",
+"t": "Science and research",
+"f": "Eine Studie, eine Hypothese, eine Entdeckung, beweisen"
+},
+{
+"d": 311,
+"lv": "B2",
+"t": "Health and society",
+"f": "Das Gesundheitssystem, die Krankenversicherung, Vorsorge"
+},
+{
+"d": 312,
+"lv": "B2",
+"t": "Cities and urban planning",
+"f": "Stadtplanung, öffentlicher Nahverkehr, Grünflächen"
+},
+{
+"d": 313,
+"lv": "B2",
+"t": "Media literacy",
+"f": "Quellen prüfen, Objektivität, Meinungsbildung"
+},
+{
+"d": 314,
+"lv": "B2",
+"t": "Ethics of technology",
+"f": "Datenschutz, Privatsphäre, Algorithmen"
+},
+{
+"d": 315,
+"lv": "B2",
+"t": "Review: argumentation and work",
+"f": "Recap essays, formal letters and professional talk"
+},
+{
+"d": 316,
+"lv": "B2",
+"t": "Idioms: everyday life",
+"f": "Tomaten auf den Augen haben, ins Fettnäpfchen treten"
+},
+{
+"d": 317,
+"lv": "B2",
+"t": "Idioms: work and effort",
+"f": "Sich ins Zeug legen, auf der Matte stehen, Feierabend machen"
+},
+{
+"d": 318,
+"lv": "B2",
+"t": "Idioms: talking and thinking",
+"f": "Um den heißen Brei reden, auf dem Schlauch stehen"
+},
+{
+"d": 319,
+"lv": "B2",
+"t": "Proverbs",
+"f": "Übung macht den Meister; Ende gut, alles gut"
+},
+{
+"d": 320,
+"lv": "B2",
+"t": "Youth language",
+"f": "Digga, lost, cringe, Ehrenmann: how young people talk"
+},
+{
+"d": 321,
+"lv": "B2",
+"t": "Colloquial words",
+"f": "Die Kohle, die Bude, pennen, quatschen, der Kram"
+},
+{
+"d": 322,
+"lv": "B2",
+"t": "Humour and wordplay",
+"f": "Wortspiele, Kalauer and the myth that Germans have no humour"
+},
+{
+"d": 323,
+"lv": "B2",
+"t": "Dialects of German",
+"f": "Bairisch, Sächsisch, Schwäbisch, Plattdeutsch: an overview"
+},
+{
+"d": 324,
+"lv": "B2",
+"t": "Swiss German in depth",
+"f": "Schwiizerdütsch in speech versus standard German in writing"
+},
+{
+"d": 325,
+"lv": "B2",
+"t": "Austrian culture",
+"f": "Coffee house culture, Wiener Schmäh and Austrian politeness"
+},
+{
+"d": 326,
+"lv": "B2",
+"t": "Gender-inclusive German",
+"f": "Lehrerinnen und Lehrer, Studierende and other forms"
+},
+{
+"d": 327,
+"lv": "B2",
+"t": "Anglicisms in German",
+"f": "Downloaden, das Meeting, chillen and German alternatives"
+},
+{
+"d": 328,
+"lv": "B2",
+"t": "Spelling traps: ss or ß, das or dass",
+"f": "The most common spelling mistakes and how to avoid them"
+},
+{
+"d": 329,
+"lv": "B2",
+"t": "Capitalisation rules",
+"f": "Nouns and nominalised words: das Lesen, etwas Gutes"
+},
+{
+"d": 330,
+"lv": "B2",
+"t": "Review: language variety",
+"f": "Recap idioms, slang, dialects and spelling"
+},
+{
+"d": 331,
+"lv": "B2",
+"t": "Philosophy café",
+"f": "Kant, Hegel, Hannah Arendt and big questions in German"
+},
+{
+"d": 332,
+"lv": "B2",
+"t": "Discussing art",
+"f": "Das Werk, die Epoche, die Technik, was mich berührt"
+},
+{
+"d": 333,
+"lv": "B2",
+"t": "Architecture and heritage",
+"f": "Burgen, Schlösser, Fachwerk and the Bauhaus"
+},
+{
+"d": 334,
+"lv": "B2",
+"t": "Poetry",
+"f": "Goethe, Rilke, Heine: reading a short poem"
+},
+{
+"d": 335,
+"lv": "B2",
+"t": "Theatre",
+"f": "Brecht, Schiller, die Bühne, die Inszenierung"
+},
+{
+"d": 336,
+"lv": "B2",
+"t": "Fairy tales and legends",
+"f": "The Brothers Grimm, the Lorelei and their lessons"
+},
+{
+"d": 337,
+"lv": "B2",
+"t": "Advent and winter traditions",
+"f": "Weihnachtsmarkt, Adventskalender, Nikolaus, Plätzchen"
+},
+{
+"d": 338,
+"lv": "B2",
+"t": "Everyday values and customs",
+"f": "Pünktlichkeit, Ruhezeiten, Ordnung, Mülltrennung"
+},
+{
+"d": 339,
+"lv": "B2",
+"t": "Cultural differences",
+"f": "Direct communication, Sie and du at work, greetings"
+},
+{
+"d": 340,
+"lv": "B2",
+"t": "Living in a German-speaking country",
+"f": "Settling in, making friends and adapting to habits"
+},
+{
+"d": 341,
+"lv": "B2",
+"t": "Interpreting statistics",
+"f": "Die Hälfte, ein Drittel, um zehn Prozent steigen"
+},
+{
+"d": 342,
+"lv": "B2",
+"t": "Describing trends",
+"f": "Zunehmen, abnehmen, sinken, sich stabilisieren"
+},
+{
+"d": 343,
+"lv": "B2",
+"t": "Cause and effect in depth",
+"f": "Führen zu, verursachen, zurückzuführen sein auf"
+},
+{
+"d": 344,
+"lv": "B2",
+"t": "Precise vocabulary",
+"f": "Replacing machen, sagen and Ding with precise words"
+},
+{
+"d": 345,
+"lv": "B2",
+"t": "Review: culture and analysis",
+"f": "Recap art, culture and data vocabulary"
+},
+{
+"d": 346,
+"lv": "B2",
+"t": "Listening: radio and podcasts",
+"f": "Strategies for long, fast audio and note-taking"
+},
+{
+"d": 347,
+"lv": "B2",
+"t": "Reading the press",
+"f": "Headlines, commentaries and journalistic style"
+},
+{
+"d": 348,
+"lv": "B2",
+"t": "Debate: work and leisure",
+"f": "The four-day week: arguments and counter-arguments"
+},
+{
+"d": 349,
+"lv": "B2",
+"t": "Debate: city and environment",
+"f": "Car-free centres, green spaces, public transport"
+},
+{
+"d": 350,
+"lv": "B2",
+"t": "Debate: education",
+"f": "School, homework and online learning: argue both sides"
+},
+{
+"d": 351,
+"lv": "B2",
+"t": "Debate: technology",
+"f": "Screens, AI and privacy: arguing with nuance"
+},
+{
+"d": 352,
+"lv": "B2",
+"t": "Storytelling with style",
+"f": "Rhythm, suspense and dialogue in a vivid story"
+},
+{
+"d": 353,
+"lv": "B2",
+"t": "Paraphrasing",
+"f": "Mit anderen Worten, das heißt: saying things another way"
+},
+{
+"d": 354,
+"lv": "B2",
+"t": "Summarising long texts",
+"f": "Keep the essentials, reformulate and connect ideas"
+},
+{
+"d": 355,
+"lv": "B2",
+"t": "Synthesis of sources",
+"f": "Combining several texts into one clear summary"
+},
+{
+"d": 356,
+"lv": "B2",
+"t": "Spontaneous speaking",
+"f": "Reacting fast, gaining time and filling gaps with style"
+},
+{
+"d": 357,
+"lv": "B2",
+"t": "Phone and video calls pro",
+"f": "Handling glitches, interrupting and clarifying politely"
+},
+{
+"d": 358,
+"lv": "B2",
+"t": "Mediation",
+"f": "Explaining a text to someone else in simple words"
+},
+{
+"d": 359,
+"lv": "B2",
+"t": "Error clinic: common B2 mistakes",
+"f": "Fixing the most frequent mistakes of advanced learners"
+},
+{
+"d": 360,
+"lv": "B2",
+"t": "Pronunciation polish",
+"f": "Ü and ö, the r sounds, word stress and melody"
+},
+{
+"d": 361,
+"lv": "B2",
+"t": "Preparing a B2 style exam",
+"f": "Formats for listening, reading, writing and speaking"
+},
+{
+"d": 362,
+"lv": "B2",
+"t": "Mock oral exam",
+"f": "Present and defend a point of view for ten minutes"
+},
+{
+"d": 363,
+"lv": "B2",
+"t": "Your German journey",
+"f": "Reflect on your progress using past, present and future"
+},
+{
+"d": 364,
+"lv": "B2",
+"t": "Keeping German alive",
+"f": "Habits, books, series and friends to keep improving"
+},
+{
+"d": 365,
+"lv": "B2",
+"t": "Final review: B2 celebration",
+"f": "Celebrate the year with a full conversation on any topic"
+}
+]
+}

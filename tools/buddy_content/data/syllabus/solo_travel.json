@@ -1,0 +1,2195 @@
+{
+"topic": "solo_travel",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to solo travel",
+"f": "Why travelling alone can be one of the most rewarding experiences of your life"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Why people travel solo",
+"f": "Freedom, growth, flexibility and meeting new people on your own terms"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Common solo travel worries",
+"f": "Loneliness, safety and confidence: naming worries is the first step to easing them"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Your solo travel style",
+"f": "Explorer, relaxer, social butterfly or culture lover: discover what you enjoy most"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Starting small: a solo day trip",
+"f": "Practise solo travel with a day out in a nearby town"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "A solo weekend nearby",
+"f": "A short trip close to home to build confidence step by step"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Choosing your first destination",
+"f": "Look for easy transport, a friendly vibe and good services for first-timers"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "What makes a place solo-friendly",
+"f": "Good transport, helpful locals and a lively traveller scene make solo trips easier"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "When to travel",
+"f": "Seasons, crowds and weather that shape a solo trip"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Setting a simple budget",
+"f": "Accommodation, food, transport and a small cushion for surprises"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "The single supplement",
+"f": "Why some tours and rooms cost more alone, and how to avoid paying extra"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Booking your first nights",
+"f": "Why booking the first nights in advance makes arrival relaxed"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Where to stay when solo",
+"f": "Hotels, hostels, guesthouses and rentals: pros and cons for one"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Reading reviews wisely",
+"f": "Look for solo traveller reviews, location notes and recent comments"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Choosing a good location",
+"f": "Central, well-lit and near transport makes solo stays easier"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Hostels demystified",
+"f": "Dorms, private rooms, common areas and the social side of hostels"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Guesthouses and family-run stays",
+"f": "Personal hosts who share local tips and a warm welcome"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Planning a flexible itinerary",
+"f": "Balance plans and free time so you can follow your curiosity"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Researching your destination",
+"f": "Customs, transport, neighbourhoods and highlights before you go"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Learning a few local phrases",
+"f": "Hello, please, thank you and excuse me open many doors"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Sharing your plans with someone",
+"f": "Leave your itinerary with a trusted friend or family member"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Regular check-ins",
+"f": "Agree on simple messages so loved ones know you are fine"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Copies of important documents",
+"f": "Keep digital and paper copies of passport, insurance and bookings"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Travel insurance basics",
+"f": "Why insurance matters even more when you travel alone, and what to read"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Health preparation",
+"f": "Check recommended vaccinations and pack personal medicines in advance"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Emergency contacts",
+"f": "Save local emergency numbers and your embassy's details"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Packing light when solo",
+"f": "You carry everything yourself, so a light bag means freedom"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Your solo travel kit",
+"f": "Door wedge, small lock, power bank and offline maps for peace of mind"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Staying connected",
+"f": "Local SIM, eSIM or roaming: keeping data on the road"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: getting ready",
+"f": "Recap your plan, budget, bookings and safety basics for a first solo trip"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "The day of departure",
+"f": "A calm checklist so your solo trip starts without stress"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Solo at the airport",
+"f": "Navigating check-in, security and gates on your own with ease"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Enjoying waiting time",
+"f": "Reading, journaling and people-watching while you wait"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Arriving in a new place",
+"f": "Plan your route to the accommodation before you land"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Getting from the airport",
+"f": "Official taxis, trains and pre-booked transfers for a smooth arrival"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Arriving in daylight",
+"f": "Why daytime arrivals feel easier in a new city"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Checking in confidently",
+"f": "Questions to ask at reception and getting a feel for your stay"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Exploring your neighbourhood",
+"f": "A first walk to find food, a shop and your bearings"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Public transport basics",
+"f": "Tickets, maps and apps for buses, metros and trams"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Walking a city alone",
+"f": "Comfortable routes, landmarks and the joy of wandering"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Using maps offline",
+"f": "Download maps and mark your accommodation before you go out"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Trusting your intuition",
+"f": "If something feels wrong, it is fine to leave or to say no"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Blending in",
+"f": "Dress like locals and walk with purpose to feel more relaxed"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Keeping valuables secure",
+"f": "Anti-theft bags and splitting cash and cards between places"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Phone habits in public",
+"f": "Hold your phone wisely in crowds and keep it charged"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Common tourist scams",
+"f": "Overly friendly strangers, fake petitions and taxi detours to watch for"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Saying no politely and firmly",
+"f": "Simple phrases to decline offers without stress"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Smart taxi and ride-hailing habits",
+"f": "Check the plate, share your trip and choose official services"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Evenings with awareness",
+"f": "Well-lit streets, busy areas and planning your way home"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Room safety habits",
+"f": "Locking doors, using the safe and keeping your room number private"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "What to share and what not",
+"f": "Chat freely, but keep details like your exact address to yourself"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Social media and location",
+"f": "Post photos after you leave a place rather than in real time"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Handling money abroad",
+"f": "ATMs, cards, cash and telling your bank before you travel"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Using ATMs safely",
+"f": "Choose machines inside banks and shield your PIN"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Tipping customs",
+"f": "Tipping varies a lot, so learn local habits before you go"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Asking locals for help",
+"f": "Ask shop staff, families or officials when you need directions"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "If you get lost",
+"f": "Stay calm, step into a café or shop, check your offline map and ask"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "If you lose something",
+"f": "Steps to take if your phone, card or passport goes missing"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Feeling confident by day three",
+"f": "Why the first days feel strange and how confidence grows"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: arriving and staying safe",
+"f": "Recap arrival routines, transport and everyday safety habits"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Eating alone with confidence",
+"f": "Enjoy meals solo: bring a book or simply savour the moment"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Solo-friendly places to eat",
+"f": "Counters, food halls and markets are perfect for one"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Street food adventures",
+"f": "Pick busy stalls with quick turnover and enjoy local flavours"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Cooking in shared kitchens",
+"f": "Hostel and guesthouse kitchens save money and spark chats"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Food tours and cooking classes",
+"f": "A tasty way to learn about a culture and meet others"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Meeting other travellers",
+"f": "Common rooms, walking tours and activities make connecting easy"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Free walking tours",
+"f": "A great first-day activity for orientation and new friends"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Group day trips",
+"f": "Join a tour to reach places that are hard to visit alone"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Starting a conversation",
+"f": "Easy openers like asking for tips or sharing a recommendation"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Meeting locals respectfully",
+"f": "Language exchanges, classes and community events"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Language exchange meetups",
+"f": "Practise a language and make local friends at the same time"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Apps for meeting people",
+"f": "Travel communities and event apps for friendly meetups in public places"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Meeting new people wisely",
+"f": "Meet in public places and let someone know your plans"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Travelling with new friends",
+"f": "How to join others for a few days and part ways kindly"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Enjoying your own company",
+"f": "Solitude as a gift: time to think, notice and recharge"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "When loneliness appears",
+"f": "It is normal, and small steps like a call home or a group activity help"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Staying in touch with home",
+"f": "Calls, voice notes and photos without spending the whole trip online"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Journaling your journey",
+"f": "Writing a few lines a day to remember and reflect"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Taking photos of yourself",
+"f": "Tripods, timers and asking others to take your picture"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Solo photography ideas",
+"f": "Capture details, people and moments that tell your story"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Planning a day by mood",
+"f": "Choose activities based on your energy, not just the guidebook"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Rest days",
+"f": "Why slow days keep a solo trip fun and prevent burnout"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Museums and galleries alone",
+"f": "Go at your own pace and stay as long as you like"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Parks and nature in the city",
+"f": "Green spaces for calm moments and a glimpse of local life"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Markets and local life",
+"f": "Observe daily routines and practise your new phrases"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Evenings out solo",
+"f": "Concerts, theatres and night markets for a fun night alone"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Cafés as your base",
+"f": "A favourite café becomes a cosy home base in a new city"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Volunteering on short trips",
+"f": "Responsible ways to give time and connect with communities"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Confidence that comes home",
+"f": "How solo travel skills carry over into everyday life"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: solo but not alone",
+"f": "Recap eating out, socialising and enjoying your own company"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Travelling by train alone",
+"f": "Reserving seats, finding platforms and enjoying the view"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Overnight trains",
+"f": "Choosing a berth, keeping valuables close and sleeping well"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Long-distance buses",
+"f": "Choosing reliable companies and comfortable seats"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Domestic flights",
+"f": "When flying saves time between distant regions"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Ferries and boats",
+"f": "Booking, tips against seasickness and enjoying the crossing"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Renting a car alone",
+"f": "Insurance, local driving rules and planning your stops"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Cycling as a solo traveller",
+"f": "Bike shares and simple cycling trips in new places"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Booking transport smartly",
+"f": "Comparing options and booking popular routes early"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Dealing with delays",
+"f": "Staying calm and having a plan B when transport runs late"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Missed connections",
+"f": "What to do if you miss a train, bus or flight"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Packing for moving often",
+"f": "Organise your bag for quick check-ins and check-outs"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Doing laundry on the road",
+"f": "Laundromats, sink washing and hostel services"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Staying healthy while travelling",
+"f": "Sleep, water, food hygiene and sun protection"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Finding a pharmacy or doctor",
+"f": "How to look for medical help abroad if you ever need it"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Staying active on the road",
+"f": "Walking, running routes and simple hotel-room workouts"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Managing your energy",
+"f": "Balance busy days with quiet ones to avoid exhaustion"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Tracking your spending",
+"f": "A quick daily budget check keeps your trip on track"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Saving money as a solo traveller",
+"f": "Free activities, city passes and eating like a local"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Treating yourself",
+"f": "Plan small splurges that make the trip feel special"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Respecting local customs",
+"f": "Greetings, dress and behaviour that show respect"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Dressing for different cultures",
+"f": "Modest clothing for sacred sites and more conservative areas"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Understanding body language",
+"f": "Gestures and personal space differ from culture to culture"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Photography etiquette",
+"f": "Ask before photographing people and respect signs"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Being a responsible traveller",
+"f": "Support local businesses and respect nature"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Learning from mistakes",
+"f": "Every travel hiccup becomes a story and a lesson"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Changing plans on the go",
+"f": "The freedom to stay longer or leave early is a solo superpower"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Extending a stay",
+"f": "How to extend bookings and adjust your budget"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Coming home",
+"f": "Reverse culture shock and keeping the travel spirit alive"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Sharing your stories",
+"f": "Tell friends about your trip and inspire others"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner solo traveller",
+"f": "Plan a full one-week solo trip using everything you have learned"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to intermediate solo travel",
+"f": "Going further: longer trips, new regions and deeper experiences"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Planning a two-week solo trip",
+"f": "Pacing, route and balance for a longer journey"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Choosing a route",
+"f": "Linear, circular or hub-and-spoke routes for solo trips"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Slow travel basics",
+"f": "Fewer places, more depth and less stress"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Travelling in a new language zone",
+"f": "Translation apps, gestures and plenty of patience"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Using translation tools",
+"f": "Camera translation, offline language packs and simple phrases"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Learning travel phrases fast",
+"f": "Ten phrases that cover most daily situations"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Reading signs and menus",
+"f": "Recognising key words in a new language or script"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Solo trips to big cities",
+"f": "Navigating huge cities with confidence"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Solo trips to small towns",
+"f": "A slower pace, fewer travellers and warmer welcomes"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Solo trips to the countryside",
+"f": "Planning transport and stays in rural areas"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Solo beach holidays",
+"f": "Enjoying the coast alone and keeping belongings safe"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Island hopping solo",
+"f": "Ferry planning and enjoying relaxed island life"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Solo nature trips",
+"f": "Parks, forests and lakes for peaceful days"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Solo hiking safety",
+"f": "Share your route, check the weather and choose marked trails"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Choosing the right trail",
+"f": "Difficulty, length and conditions for solo hikers"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Joining group hikes",
+"f": "Hiking clubs and guided walks for company and peace of mind"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Solo camping basics",
+"f": "Choosing official campsites and setting up alone"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Wildlife etiquette",
+"f": "Keeping your distance and respecting animals in their habitat"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Weather awareness outdoors",
+"f": "Reading forecasts and knowing when to turn back"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Solo road trips",
+"f": "Planning drives, rest stops and accommodation along the way"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Driving abroad",
+"f": "International permits, road signs and local rules"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Solo train adventures",
+"f": "Rail passes and scenic routes for one"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Hitchhiking: better alternatives",
+"f": "Why buses and ride-sharing are easier and safer choices"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Late arrivals done well",
+"f": "When you must arrive late: pre-booked transfers and stays"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Choosing a good neighbourhood",
+"f": "Researching areas and asking hosts for tips"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Recognising pressure tactics",
+"f": "Spotting pushy sales and walking away politely"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Nights out with good judgement",
+"f": "Pace yourself, stay with people you trust and plan your ride home"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Situational awareness",
+"f": "Noticing your surroundings while staying relaxed"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: going further",
+"f": "Recap routes, languages, nature trips and smart awareness"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Solo travel for women: confidence",
+"f": "Practical, positive tips that many women travellers share"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Researching local norms",
+"f": "Dress codes and social customs that make trips smoother"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Choosing comfortable stays",
+"f": "Female-only dorms, honest reviews and well-located rooms"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Building a support network",
+"f": "Online communities and groups of solo travellers"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Solo travel for introverts",
+"f": "Recharge time, quiet places and gentle socialising"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Solo travel for extroverts",
+"f": "Social hostels, group activities and making friends fast"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Solo travel for older travellers",
+"f": "A comfortable pace, tours and accessible stays"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Solo travel for young travellers",
+"f": "Budget tips, hostels and first big adventures"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Accessible solo travel",
+"f": "Planning for mobility needs and asking for assistance"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Solo travel on a tight budget",
+"f": "Hostels, overland transport and free activities"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Solo travel in comfort",
+"f": "Boutique stays and private tours for a relaxed trip"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Solo travel as a vegetarian or vegan",
+"f": "Finding good food and learning key phrases"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Food allergies abroad",
+"f": "Allergy cards in the local language and careful ordering"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Solo trips for festivals",
+"f": "Enjoying big events alone and finding friendly company"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Solo trips for concerts and sports",
+"f": "Tickets, transport and meeting fellow fans"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Solo city breaks in winter",
+"f": "Cosy cafés, museums and festive markets"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Solo summer adventures",
+"f": "Heat, crowds and booking ahead in peak season"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Solo travel in shoulder season",
+"f": "Fewer crowds and better prices in spring and autumn"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Solo cultural immersion",
+"f": "Classes, homestays and local events"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Taking a class abroad",
+"f": "Cooking, dance, language or crafts for a deeper connection"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Homestays as a solo traveller",
+"f": "Living with a family and being a great guest"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Learning local etiquette",
+"f": "Greetings, meals and visiting homes in new cultures"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Gifts for your hosts",
+"f": "Small gifts for hosts and how to give them"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Visiting religious sites",
+"f": "Dress, behaviour and photo rules at holy places"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Understanding local time",
+"f": "Meal times, siestas and opening hours around the world"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Haggling politely",
+"f": "Where bargaining is normal and how to do it with a smile"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Handling culture shock",
+"f": "Recognising the stages and being kind to yourself"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Staying open-minded",
+"f": "Curiosity over judgement when things feel different"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Reflecting through travel",
+"f": "What travel teaches you about yourself"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: culture and connection",
+"f": "Recap cultural skills and the many styles of solo travel"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Solo trips in Europe",
+"f": "Trains, compact cities and many solo-friendly options"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Solo trips in Southeast Asia",
+"f": "A popular region with a strong traveller scene"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Solo trips in Latin America",
+"f": "Language, long-distance buses and vibrant culture"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Solo trips in East Asia",
+"f": "Efficient transport, etiquette and amazing food"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Solo trips in Oceania",
+"f": "Road trips, nature and friendly hostels"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Solo trips in North America",
+"f": "Long distances, national parks and city breaks"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Solo trips in Africa",
+"f": "Tours, local guides and careful planning"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Solo trips in the Middle East",
+"f": "Hospitality, dress codes and historic sites"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Solo trips in South Asia",
+"f": "Colourful culture, long train rides and patience"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Solo trips in Central Asia",
+"f": "Silk Road history and planning around transport"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Solo trips in Scandinavia",
+"f": "Nature, calm cities and managing high costs smartly"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Solo trips in the Mediterranean",
+"f": "Islands, food and sunny coastal towns"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Choosing guided tours wisely",
+"f": "Group size, reviews and responsible operators"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Hiring local guides",
+"f": "Supporting locals and gaining deeper insight"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Small group adventures",
+"f": "Combining independence with company on multi-day trips"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Solo cruise travel",
+"f": "Solo cabins, social events and shore excursions"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Solo retreats",
+"f": "Yoga, meditation or writing retreats for personal time"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Wellness travel alone",
+"f": "Spas, hot springs and restful destinations"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Solo adventure sports",
+"f": "Choosing certified operators for diving, rafting or paragliding"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Learning to dive or surf",
+"f": "Courses are a great way to meet people and learn a skill"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Solo photography projects",
+"f": "Themes and stories to photograph on a trip"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Keeping a travel blog or diary",
+"f": "Sharing your journey in words or pictures"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Mindful travel",
+"f": "Being present and noticing small details"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Digital detox days",
+"f": "Time offline to fully enjoy where you are"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Managing travel fatigue",
+"f": "Signs of burnout and how to rest"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Sleeping well on the road",
+"f": "Earplugs, routines and choosing quiet rooms"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Jet lag strategies",
+"f": "Light, meals and sleep to adjust to new time zones"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Staying fit while travelling",
+"f": "Simple routines for long trips"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Eating well on the road",
+"f": "Balancing treats with nourishing meals"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Wellbeing on long trips",
+"f": "Routines, connection and kindness to yourself"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Review: regions and wellbeing",
+"f": "Recap world regions, tour styles and keeping body and mind happy on the road"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "When plans go wrong",
+"f": "Flexible thinking and problem-solving under pressure"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Dealing with cancelled bookings",
+"f": "Refunds, rebooking and staying calm"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Lost passport steps",
+"f": "Contacting your embassy and replacing documents"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Feeling unwell abroad",
+"f": "Using your insurance and finding care if needed"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Asking for help confidently",
+"f": "Tourist offices, police and embassies as helpful resources"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Travel insurance claims",
+"f": "Receipts, reports and deadlines to keep in mind"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Money backup plans",
+"f": "Emergency cash, backup cards and transfers"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Managing multiple currencies",
+"f": "Exchange rates, fees and travel cards"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Avoiding card fees",
+"f": "Choosing local currency at terminals and low-fee cards"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Budgeting for longer trips",
+"f": "Weekly budgets and simple tracking tools"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Building trust with hosts",
+"f": "Clear communication and honest reviews on rentals and homestays"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Hospitality networks",
+"f": "How hosting communities work and tips for good stays"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "House-sitting as a solo traveller",
+"f": "Caring for homes and pets in exchange for a place to stay"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Work exchange programmes",
+"f": "Helping a few hours a day in exchange for room and board"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Volunteering responsibly",
+"f": "Choosing ethical projects that truly help"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Solo trips with a purpose",
+"f": "Learning, giving back or chasing a passion"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Travel and language learning",
+"f": "Using trips to boost your language skills"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Language schools abroad",
+"f": "Study holidays that combine classes and travel"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Making friends through hobbies",
+"f": "Clubs, sports and meetups around your interests"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Joining local events",
+"f": "Community calendars, festivals and free events"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Being a good dorm mate",
+"f": "Quiet, tidy and considerate habits in shared rooms"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Hostel social life",
+"f": "Find the social style that suits you, from game nights to quiet chats"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Group travel dynamics",
+"f": "Joining a group while keeping your independence"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Parting ways gracefully",
+"f": "Saying goodbye to travel friends and staying in touch"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Travel friendships that last",
+"f": "Keeping connections alive after the trip"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Solo travel and family worries",
+"f": "Reassuring loved ones and sharing your plans"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Explaining solo travel to others",
+"f": "Answering questions with confidence and good humour"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "The right season for a region",
+"f": "Monsoons, winters and festivals by region"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Planning around public holidays",
+"f": "Busy times, closures and special events"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Booking smart in peak season",
+"f": "Early bookings and flexible alternatives"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Off-the-beaten-path travel",
+"f": "Less touristy places and the extra planning they need"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Preparing for remote areas",
+"f": "Supplies, connectivity and telling someone your plans"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Respecting local communities",
+"f": "Responsible behaviour in small and rural places"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Leave No Trace for solo travellers",
+"f": "Protecting nature on every trip"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Sustainable solo travel",
+"f": "Trains over planes, local businesses and less waste"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Travelling greener",
+"f": "Simple ways to reduce the footprint of your trips"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Ethical animal experiences",
+"f": "Choosing wildlife encounters that respect animals"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your solo travel app toolkit",
+"f": "Maps, translation, transport and safety apps"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate solo traveller",
+"f": "Plan a three-week solo trip that mixes culture and nature"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to advanced solo travel",
+"f": "Long-term journeys, remote places and becoming a mentor for others"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Planning a long-term solo journey",
+"f": "Months on the road: route, budget and rhythm"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Career breaks and sabbaticals",
+"f": "Planning time off for a big solo trip"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Long-term travel budget",
+"f": "Monthly costs, savings and staying flexible"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Visas and permits basics",
+"f": "Checking entry rules and staying legal on long trips"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Overland travel",
+"f": "Crossing regions by land for deeper journeys"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Land border crossings",
+"f": "Documents, patience and preparation for crossing by land"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Round-the-world planning",
+"f": "Routes, seasons and ticket options"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Becoming a digital nomad",
+"f": "Working remotely while travelling solo"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Choosing nomad-friendly bases",
+"f": "Internet, coworking spaces and community"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Balancing work and travel",
+"f": "Routines that keep both work and adventure alive"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Coworking and coliving",
+"f": "Shared spaces for productivity and community"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Time zones and remote work",
+"f": "Scheduling calls and tasks across continents"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Long stays in one place",
+"f": "Renting monthly and living like a local"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Building routines abroad",
+"f": "Gyms, markets and favourite spots that create a home feeling"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Learning a language deeply",
+"f": "Classes and immersion during long stays"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Making local friends long-term",
+"f": "Clubs, classes and community involvement"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Health on long trips",
+"f": "Check-ups, prescriptions and insurance for months away"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Managing money long-term",
+"f": "Banking, tracking expenses and knowing where to get advice"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Staying secure online",
+"f": "Strong passwords, two-step login and safe public Wi-Fi habits"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Protecting your identity",
+"f": "Guarding documents and personal data on the road"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Backup plans for long trips",
+"f": "Spare cards, document copies and emergency funds"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Solo travel in remote regions",
+"f": "Planning for limited transport and services"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Solo trekking in mountains",
+"f": "Guides, huts and well-known routes at altitude"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Altitude awareness",
+"f": "Acclimatising slowly and knowing the common signs of altitude sickness"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Desert journeys",
+"f": "Heat, water and joining tours for remote areas"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Polar and cold-region trips",
+"f": "Expedition cruises and staying safe in winter conditions"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Jungle and rainforest trips",
+"f": "Local guides, insects and humid conditions"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Solo travel by motorbike",
+"f": "Licences, gear and planning routes"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Solo cycling tours",
+"f": "Long-distance cycling routes and logistics"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Review: long-term and remote",
+"f": "Recap long journeys, remote work and adventurous terrain"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Sailing and boat travel",
+"f": "Crewing on boats and joining sailing trips"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Great train journeys of the world",
+"f": "Famous long rail journeys for solo travellers"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Epic road trips",
+"f": "Iconic routes and planning them alone"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Pilgrimage routes",
+"f": "Long walks like the Camino de Santiago or the Kumano Kodo"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Long-distance walking trails",
+"f": "Planning, resupply and companionship on the trail"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Expedition-style trips",
+"f": "Joining expeditions with experienced teams"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Assessing risk on adventures",
+"f": "Weighing risks and choosing well-run, safe options"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Emergency communication",
+"f": "Satellite devices and agreed check-in schedules"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Why learn first aid",
+"f": "A basic first-aid course is valuable for every traveller"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Wilderness first aid basics",
+"f": "Extra skills that matter far from help"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Reading people and situations",
+"f": "Social awareness and trusting your instincts"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Confident communication",
+"f": "Setting boundaries and using assertive body language"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Staying calm in tense moments",
+"f": "Calm words, patience and leaving situations gracefully"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Negotiation skills",
+"f": "Prices, services and finding win-win outcomes"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Problem-solving like a pro",
+"f": "Thinking creatively when things go wrong"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Adapting to the unexpected",
+"f": "Flexibility as the core solo travel skill"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Planning for complex destinations",
+"f": "Extra research, local guides and official advice"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Checking official travel advice",
+"f": "Using government travel advisories as part of planning"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Cultural intelligence",
+"f": "Understanding the values behind customs"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Deeper cultural conversations",
+"f": "Asking respectful questions and really listening"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Avoiding stereotypes",
+"f": "Seeing people as individuals, not clichés"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Responsible storytelling",
+"f": "Sharing photos and stories with respect"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Ethical photography of people",
+"f": "Consent, dignity and giving something back"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Supporting local economies",
+"f": "Where your money makes a real difference"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Community-based tourism",
+"f": "Staying with and learning from local communities"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Giving back after travel",
+"f": "Supporting the places you have visited"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Travel writing basics",
+"f": "Telling engaging stories from your trips"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Creating a travel portfolio",
+"f": "Photos, writing or videos that capture your journeys"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Travel as a life skill",
+"f": "How solo travel builds leadership and resilience"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Review: skills and responsibility",
+"f": "Recap communication, culture and ethical travel"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Solo travel and personal growth",
+"f": "How independence changes the way you see yourself"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Facing fears through travel",
+"f": "Small brave steps that build lasting confidence"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Decision-making alone",
+"f": "Trusting your choices and learning from them"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Solitude and reflection",
+"f": "Using quiet time for clarity and new ideas"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Travel as learning",
+"f": "Discovering history, art and science through places"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Themed solo trips",
+"f": "Food, architecture, history or music as the thread of a journey"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Food journeys",
+"f": "Planning a trip around regional cuisines"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Architecture journeys",
+"f": "Exploring cities through their buildings"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "History journeys",
+"f": "Ancient sites and heritage trails"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Music and arts journeys",
+"f": "Festivals, concert halls and creative scenes"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Nature and wildlife journeys",
+"f": "National parks and responsible wildlife watching"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Stargazing trips",
+"f": "Dark sky places and planning night outings"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Photography journeys",
+"f": "Chasing light and landscapes on your own schedule"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Wellness journeys",
+"f": "Retreats, hot springs and mindful travel"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Learning journeys",
+"f": "Courses and workshops around the world"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Hosting travellers yourself",
+"f": "Giving back by hosting or showing visitors around"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Mentoring new solo travellers",
+"f": "Sharing tips and encouragement with beginners"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Leading a small group trip",
+"f": "Planning and guiding friends with your solo skills"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Planning trips for others",
+"f": "Using your experience to help friends plan"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Solo travel communities",
+"f": "Contributing to forums and meetups"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Writing a solo travel guide",
+"f": "Turning your experience into helpful advice"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Solo travel myths",
+"f": "Clearing up common misunderstandings about travelling alone"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Mixing solo and shared travel",
+"f": "Meeting friends mid-trip and then going solo again"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Solo travel in your own country",
+"f": "Discovering home with fresh eyes"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Microadventures",
+"f": "Small solo adventures close to home"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Expert weekend escapes",
+"f": "Making short trips feel big"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Last-minute solo trips",
+"f": "Booking and leaving quickly with confidence"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Solo on special days",
+"f": "Spending birthdays and holidays as a happy solo traveller"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Celebrating milestones abroad",
+"f": "Marking achievements with a meaningful trip"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Review: growth and inspiration",
+"f": "Recap themed trips, mentoring and personal growth"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Designing your dream solo trip",
+"f": "Planning the journey you have always wanted"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Mapping your travel goals",
+"f": "A list of places and experiences for the years ahead"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Saving for big dreams",
+"f": "Simple saving plans for major trips"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Loyalty programmes basics",
+"f": "How points, miles and smart booking can stretch a travel budget"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Choosing travel gear for life",
+"f": "Durable gear for many future trips"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Your ultimate packing list",
+"f": "A refined list built from all your experience"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Your personal safety system",
+"f": "The habits and tools that work best for you"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Your solo travel rituals",
+"f": "Arrival, daily and departure routines that keep you grounded"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Handling big changes on the road",
+"f": "Staying calm through major plan shifts"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Returning from long trips",
+"f": "Readjusting to home life after months away"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Keeping travel in everyday life",
+"f": "Exploring your own city like a traveller"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Staying connected to cultures",
+"f": "Cooking, languages and friends from your trips"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Reflecting on your journeys",
+"f": "What you have learned about the world"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Gratitude and travel",
+"f": "Appreciating the people and places along the way"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Challenge: a city of strangers",
+"f": "Plan a trip to a city where you know nobody"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Challenge: a new language",
+"f": "Plan a trip where you practise a language you are learning"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Challenge: into nature",
+"f": "Plan a safe and well-prepared solo nature adventure"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Challenge: one slow month",
+"f": "Plan a month living in one place"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Your top solo travel tips",
+"f": "Write the tips you would share with a friend"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Review: advanced solo traveller",
+"f": "A full review of long-term, remote and expert skills"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Becoming a lifelong traveller",
+"f": "Making travel a joyful part of your life"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Your solo travel story",
+"f": "Telling the story of your year of learning"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Inspiring others to go solo",
+"f": "Encouraging friends to take their first trip"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating a year of solo travel",
+"f": "Celebrate your growth and plan your next solo adventure"
+}
+]
+}

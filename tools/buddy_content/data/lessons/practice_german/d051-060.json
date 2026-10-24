@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Clothes",
+     "g": "Name everyday clothes and say what you are wearing.",
+     "p": [
+      "Die Hose (trousers), das Hemd (shirt), das T-Shirt, der Pullover, die Jacke, das Kleid (dress), der Rock (skirt).",
+      "Plural items: die Schuhe, die Socken, die Jeans. Accessories: die Mütze (cap), der Schal (scarf).",
+      "Say what you wear with tragen or anhaben: Ich trage eine Jacke. Er hat einen blauen Pullover an."
+     ],
+     "q": "What are you wearing right now? Tell me in German with ich trage... and one colour.",
+     "c": "Describe your outfit today and the outfit of one person you saw, using tragen and colours."
+    },
+    "de": {
+     "t": "Kleidung",
+     "g": "Du nennst Alltagskleidung und sagst, was du trägst.",
+     "p": [
+      "Die Hose, das Hemd, das T-Shirt, der Pullover, die Jacke, das Kleid, der Rock.",
+      "Im Plural: die Schuhe, die Socken. Accessoires: die Mütze, der Schal. Die Jeans kann Singular oder Plural sein.",
+      "Mit tragen oder anhaben sagst du, was du anhast: Ich trage eine Jacke. Er hat einen Pullover an."
+     ],
+     "q": "Was trägst du gerade? Sag es mir auf Deutsch mit ich trage... und einer Farbe.",
+     "c": "Beschreib dein heutiges Outfit und das Outfit einer Person, die du gesehen hast, mit tragen und Farben."
+    },
+    "es": {
+     "t": "La ropa",
+     "g": "Nombra la ropa de diario y di qué llevas puesto.",
+     "p": [
+      "Die Hose (pantalón), das Hemd (camisa), das T-Shirt, der Pullover (jersey), die Jacke (chaqueta), das Kleid (vestido), der Rock (falda).",
+      "En plural: die Schuhe (zapatos), die Socken (calcetines). Complementos: die Mütze (gorro), der Schal (bufanda).",
+      "Para decir qué llevas usa tragen o anhaben: Ich trage eine Jacke. Er hat einen Pullover an."
+     ],
+     "q": "¿Qué llevas puesto ahora? Dímelo en alemán con ich trage... y un color.",
+     "c": "Describe tu ropa de hoy y la de una persona que hayas visto, con tragen y colores."
+    },
+    "fr": {
+     "t": "Les vêtements",
+     "g": "Nommer les vêtements du quotidien et dire ce que tu portes.",
+     "p": [
+      "Die Hose (pantalon), das Hemd (chemise), das T-Shirt, der Pullover, die Jacke (veste), das Kleid (robe), der Rock (jupe).",
+      "Au pluriel : die Schuhe (chaussures), die Socken (chaussettes). Accessoires : die Mütze (bonnet), der Schal (écharpe).",
+      "Pour dire ce que tu portes : tragen ou anhaben : Ich trage eine Jacke. Er hat einen Pullover an."
+     ],
+     "q": "Que portes-tu en ce moment ? Dis-le en allemand avec ich trage... et une couleur.",
+     "c": "Décris ta tenue du jour et celle d'une personne que tu as vue, avec tragen et des couleurs."
+    },
+    "it": {
+     "t": "I vestiti",
+     "g": "Nomini i vestiti di tutti i giorni e dici che cosa indossi.",
+     "p": [
+      "Die Hose (pantaloni), das Hemd (camicia), das T-Shirt, der Pullover (maglione), die Jacke (giacca), das Kleid (vestito), der Rock (gonna).",
+      "Al plurale: die Schuhe (scarpe), die Socken (calzini). Accessori: die Mütze (berretto), der Schal (sciarpa).",
+      "Per dire che cosa indossi usa tragen o anhaben: Ich trage eine Jacke. Er hat einen Pullover an."
+     ],
+     "q": "Che cosa indossi adesso? Dimmelo in tedesco con ich trage... e un colore.",
+     "c": "Descrivi il tuo abbigliamento di oggi e quello di una persona che hai visto, con tragen e i colori."
+    },
+    "pt": {
+     "t": "A roupa",
+     "g": "Nomear a roupa do dia a dia e dizer o que tens vestido.",
+     "p": [
+      "Die Hose (calças), das Hemd (camisa), das T-Shirt, der Pullover (camisola), die Jacke (casaco), das Kleid (vestido), der Rock (saia).",
+      "No plural: die Schuhe (sapatos), die Socken (meias). Acessórios: die Mütze (gorro), der Schal (cachecol).",
+      "Para dizer o que vestes usa tragen ou anhaben: Ich trage eine Jacke. Er hat einen Pullover an."
+     ],
+     "q": "O que tens vestido agora? Diz-me em alemão com ich trage... e uma cor.",
+     "c": "Descreve a tua roupa de hoje e a de uma pessoa que viste, com tragen e cores."
+    },
+    "pt_BR": {
+     "t": "Roupas",
+     "g": "Nomear as roupas do dia a dia e dizer o que você está vestindo.",
+     "p": [
+      "Die Hose (calça), das Hemd (camisa), das T-Shirt, der Pullover (suéter), die Jacke (jaqueta), das Kleid (vestido), der Rock (saia).",
+      "No plural: die Schuhe (sapatos), die Socken (meias). Acessórios: die Mütze (gorro), der Schal (cachecol).",
+      "Para dizer o que você veste use tragen ou anhaben: Ich trage eine Jacke. Er hat einen Pullover an."
+     ],
+     "q": "O que você está vestindo agora? Me diga em alemão com ich trage... e uma cor.",
+     "c": "Descreva sua roupa de hoje e a de uma pessoa que você viu, com tragen e cores."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Hose",
+      "ex": "Die Hose ist zu lang."
+     },
+     {
+      "w": "das Hemd",
+      "ex": "Er trägt ein weißes Hemd."
+     },
+     {
+      "w": "die Jacke",
+      "ex": "Nimm eine Jacke mit, es ist kalt!"
+     },
+     {
+      "w": "das Kleid",
+      "ex": "Das Kleid ist sehr schön."
+     },
+     {
+      "w": "die Schuhe",
+      "ex": "Meine Schuhe sind neu."
+     },
+     {
+      "w": "tragen",
+      "ex": "Ich trage heute einen Pullover."
+     }
+    ],
+    "gram": "tragen (du trägst, er trägt) + Akkusativ: Ich trage einen Rock, eine Bluse, ein T-Shirt. anhaben: Er hat eine Jacke an."
+   }
+  },
+  {
+   "d": 52,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Shopping for clothes",
+     "g": "Shop for clothes: ask for sizes, try things on and give compliments.",
+     "p": [
+      "The shop assistant asks Kann ich Ihnen helfen? You answer Ich suche eine Jacke or Ich schaue nur, danke.",
+      "Ask Welche Größe haben Sie? Haben Sie das in M? Kann ich das anprobieren? Wo ist die Umkleidekabine?",
+      "Feedback: Das passt (it fits), das ist zu groß, zu klein. Das steht dir gut means it looks good on you."
+     ],
+     "q": "You try on a jacket that is too small. What do you say to the shop assistant in German?",
+     "c": "Role-play a shopping scene aloud: ask for an item, your size, a fitting room, and say whether it fits."
+    },
+    "de": {
+     "t": "Kleidung kaufen",
+     "g": "Du kaufst Kleidung: nach Größen fragen, anprobieren und Komplimente machen.",
+     "p": [
+      "Die Verkäuferin fragt: Kann ich Ihnen helfen? Du antwortest: Ich suche eine Jacke. Oder: Ich schaue nur, danke.",
+      "Frag: Haben Sie das in M? Kann ich das anprobieren? Wo ist die Umkleidekabine?",
+      "Reaktionen: Das passt, das ist zu groß, zu klein. Das steht dir gut heißt, es sieht an dir schön aus."
+     ],
+     "q": "Du probierst eine Jacke an, die zu klein ist. Was sagst du der Verkäuferin auf Deutsch?",
+     "c": "Spiel laut eine Szene im Geschäft: Artikel suchen, Größe nennen, nach der Kabine fragen und sagen, ob es passt."
+    },
+    "es": {
+     "t": "Comprar ropa",
+     "g": "Compra ropa: pregunta por tallas, pruébate cosas y haz cumplidos.",
+     "p": [
+      "El dependiente pregunta Kann ich Ihnen helfen? Tú respondes Ich suche eine Jacke o Ich schaue nur, danke (solo estoy mirando).",
+      "Pregunta Welche Größe haben Sie? Haben Sie das in M? Kann ich das anprobieren? Wo ist die Umkleidekabine?",
+      "Reacciones: Das passt (me queda bien), das ist zu groß, zu klein. Das steht dir gut significa te queda muy bien."
+     ],
+     "q": "Te pruebas una chaqueta que te queda pequeña. ¿Qué le dices al dependiente en alemán?",
+     "c": "Representa en voz alta una escena de compras: pide una prenda, tu talla, el probador y di si te queda bien."
+    },
+    "fr": {
+     "t": "Acheter des vêtements",
+     "g": "Acheter des vêtements : demander une taille, essayer et faire des compliments.",
+     "p": [
+      "La vendeuse demande Kann ich Ihnen helfen ? Tu réponds Ich suche eine Jacke ou Ich schaue nur, danke (je regarde seulement).",
+      "Demande Welche Größe haben Sie ? Haben Sie das in M ? Kann ich das anprobieren ? Wo ist die Umkleidekabine ?",
+      "Réactions : Das passt (ça va), das ist zu groß, zu klein. Das steht dir gut veut dire ça te va bien."
+     ],
+     "q": "Tu essaies une veste trop petite. Que dis-tu à la vendeuse en allemand ?",
+     "c": "Joue une scène de magasin à voix haute : demande un article, ta taille, la cabine, et dis si ça te va."
+    },
+    "it": {
+     "t": "Comprare vestiti",
+     "g": "Compri vestiti: chiedi la taglia, provi i capi e fai complimenti.",
+     "p": [
+      "La commessa chiede Kann ich Ihnen helfen? Tu rispondi Ich suche eine Jacke oppure Ich schaue nur, danke (do solo un'occhiata).",
+      "Chiedi Welche Größe haben Sie? Haben Sie das in M? Kann ich das anprobieren? Wo ist die Umkleidekabine?",
+      "Reazioni: Das passt (va bene), das ist zu groß, zu klein. Das steht dir gut vuol dire ti sta bene."
+     ],
+     "q": "Provi una giacca troppo piccola. Che cosa dici alla commessa in tedesco?",
+     "c": "Recita ad alta voce una scena in negozio: chiedi un capo, la tua taglia, il camerino e di' se ti va bene."
+    },
+    "pt": {
+     "t": "Comprar roupa",
+     "g": "Comprar roupa: perguntar o tamanho, experimentar e fazer elogios.",
+     "p": [
+      "A empregada pergunta Kann ich Ihnen helfen? Tu respondes Ich suche eine Jacke ou Ich schaue nur, danke (só estou a ver).",
+      "Pergunta Welche Größe haben Sie? Haben Sie das in M? Kann ich das anprobieren? Wo ist die Umkleidekabine?",
+      "Reações: Das passt (serve), das ist zu groß, zu klein. Das steht dir gut quer dizer fica-te bem."
+     ],
+     "q": "Experimentas um casaco demasiado pequeno. O que dizes à empregada em alemão?",
+     "c": "Representa em voz alta uma cena numa loja: pede uma peça, o teu tamanho, o provador e diz se serve."
+    },
+    "pt_BR": {
+     "t": "Comprando roupa",
+     "g": "Comprar roupa: perguntar o tamanho, experimentar e fazer elogios.",
+     "p": [
+      "A vendedora pergunta Kann ich Ihnen helfen? Você responde Ich suche eine Jacke ou Ich schaue nur, danke (só estou olhando).",
+      "Pergunte Welche Größe haben Sie? Haben Sie das in M? Kann ich das anprobieren? Wo ist die Umkleidekabine?",
+      "Reações: Das passt (serve), das ist zu groß, zu klein. Das steht dir gut quer dizer ficou bem em você."
+     ],
+     "q": "Você experimenta uma jaqueta pequena demais. O que você diz para a vendedora em alemão?",
+     "c": "Encene em voz alta uma cena numa loja: peça uma peça, seu tamanho, o provador e diga se serviu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Größe",
+      "ex": "Welche Größe haben Sie?"
+     },
+     {
+      "w": "anprobieren",
+      "ex": "Kann ich die Hose anprobieren?"
+     },
+     {
+      "w": "die Umkleidekabine",
+      "ex": "Die Umkleidekabine ist dort hinten."
+     },
+     {
+      "w": "passen",
+      "ex": "Die Schuhe passen gut."
+     },
+     {
+      "w": "zu groß",
+      "ex": "Der Pullover ist leider zu groß."
+     },
+     {
+      "w": "Das steht dir gut.",
+      "ex": "Das Kleid steht dir sehr gut!"
+     }
+    ],
+    "gram": "Passt das? – Ja, das passt. / Nein, das ist zu klein. Das steht dir/Ihnen gut. anprobieren ist trennbar: Ich probiere das an."
+   }
+  },
+  {
+   "d": 53,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The home",
+     "g": "Name the rooms of a home and the most important furniture.",
+     "p": [
+      "Rooms: die Küche (kitchen), das Wohnzimmer, das Schlafzimmer, das Bad (bathroom), der Flur (hallway), der Balkon.",
+      "Furniture: das Sofa, der Tisch, der Stuhl, das Bett, der Schrank (wardrobe, cupboard), das Regal (shelf).",
+      "Describe with haben and es gibt: Meine Wohnung hat drei Zimmer. Im Wohnzimmer gibt es ein Sofa."
+     ],
+     "q": "What is your favourite room at home, and what is in it? Tell me in German.",
+     "c": "Walk through your home and name every room and two pieces of furniture in each, with der, die or das."
+    },
+    "de": {
+     "t": "Die Wohnung",
+     "g": "Du nennst die Räume einer Wohnung und die wichtigsten Möbel.",
+     "p": [
+      "Räume: die Küche, das Wohnzimmer, das Schlafzimmer, das Bad, der Flur, der Balkon.",
+      "Möbel: das Sofa, der Tisch, der Stuhl, das Bett, der Schrank, das Regal.",
+      "Beschreib mit haben und es gibt: Meine Wohnung hat drei Zimmer. Im Wohnzimmer gibt es ein Sofa."
+     ],
+     "q": "Was ist dein Lieblingsraum zu Hause, und was gibt es dort? Erzähl es mir auf Deutsch.",
+     "c": "Geh durch deine Wohnung und nenne jeden Raum und je zwei Möbel darin mit der, die oder das."
+    },
+    "es": {
+     "t": "La casa",
+     "g": "Nombra las habitaciones de una casa y los muebles más importantes.",
+     "p": [
+      "Habitaciones: die Küche (cocina), das Wohnzimmer (salón), das Schlafzimmer (dormitorio), das Bad (baño), der Flur (pasillo), der Balkon.",
+      "Muebles: das Sofa, der Tisch (mesa), der Stuhl (silla), das Bett (cama), der Schrank (armario), das Regal (estantería).",
+      "Describe con haben y es gibt: Meine Wohnung hat drei Zimmer. Im Wohnzimmer gibt es ein Sofa."
+     ],
+     "q": "¿Cuál es tu habitación favorita de casa y qué hay en ella? Cuéntamelo en alemán.",
+     "c": "Recorre tu casa y nombra cada habitación y dos muebles de cada una, con der, die o das."
+    },
+    "fr": {
+     "t": "Le logement",
+     "g": "Nommer les pièces d'un logement et les meubles principaux.",
+     "p": [
+      "Les pièces : die Küche (cuisine), das Wohnzimmer (salon), das Schlafzimmer (chambre), das Bad (salle de bains), der Flur (couloir).",
+      "Les meubles : das Sofa, der Tisch (table), der Stuhl (chaise), das Bett (lit), der Schrank (armoire), das Regal (étagère).",
+      "Décris avec haben et es gibt : Meine Wohnung hat drei Zimmer. Im Wohnzimmer gibt es ein Sofa."
+     ],
+     "q": "Quelle est ta pièce préférée chez toi, et qu'y a-t-il dedans ? Raconte-le en allemand.",
+     "c": "Fais le tour de chez toi et nomme chaque pièce et deux meubles dans chacune, avec der, die ou das."
+    },
+    "it": {
+     "t": "La casa",
+     "g": "Nomini le stanze di una casa e i mobili più importanti.",
+     "p": [
+      "Stanze: die Küche (cucina), das Wohnzimmer (soggiorno), das Schlafzimmer (camera da letto), das Bad (bagno), der Flur (corridoio).",
+      "Mobili: das Sofa, der Tisch (tavolo), der Stuhl (sedia), das Bett (letto), der Schrank (armadio), das Regal (scaffale).",
+      "Descrivi con haben ed es gibt: Meine Wohnung hat drei Zimmer. Im Wohnzimmer gibt es ein Sofa."
+     ],
+     "q": "Qual è la tua stanza preferita di casa, e che cosa c'è dentro? Raccontamelo in tedesco.",
+     "c": "Gira per casa e nomina ogni stanza e due mobili in ciascuna, con der, die o das."
+    },
+    "pt": {
+     "t": "A casa",
+     "g": "Nomear as divisões de uma casa e os móveis mais importantes.",
+     "p": [
+      "Divisões: die Küche (cozinha), das Wohnzimmer (sala), das Schlafzimmer (quarto), das Bad (casa de banho), der Flur (corredor), der Balkon.",
+      "Móveis: das Sofa, der Tisch (mesa), der Stuhl (cadeira), das Bett (cama), der Schrank (armário), das Regal (estante).",
+      "Descreve com haben e es gibt: Meine Wohnung hat drei Zimmer. Im Wohnzimmer gibt es ein Sofa."
+     ],
+     "q": "Qual é a tua divisão preferida da casa, e o que há nela? Conta-me em alemão.",
+     "c": "Percorre a tua casa e nomeia cada divisão e dois móveis em cada uma, com der, die ou das."
+    },
+    "pt_BR": {
+     "t": "A casa",
+     "g": "Nomear os cômodos de uma casa e os móveis mais importantes.",
+     "p": [
+      "Cômodos: die Küche (cozinha), das Wohnzimmer (sala), das Schlafzimmer (quarto), das Bad (banheiro), der Flur (corredor).",
+      "Móveis: das Sofa, der Tisch (mesa), der Stuhl (cadeira), das Bett (cama), der Schrank (armário), das Regal (estante).",
+      "Descreva com haben e es gibt: Meine Wohnung hat drei Zimmer. Im Wohnzimmer gibt es ein Sofa."
+     ],
+     "q": "Qual é seu cômodo favorito em casa, e o que tem nele? Me conte em alemão.",
+     "c": "Ande pela sua casa e nomeie cada cômodo e dois móveis em cada um, com der, die ou das."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Küche",
+      "ex": "Die Küche ist klein, aber hell."
+     },
+     {
+      "w": "das Wohnzimmer",
+      "ex": "Im Wohnzimmer steht ein Sofa."
+     },
+     {
+      "w": "das Schlafzimmer",
+      "ex": "Das Schlafzimmer hat ein großes Fenster."
+     },
+     {
+      "w": "das Bad",
+      "ex": "Das Bad ist neben der Küche."
+     },
+     {
+      "w": "der Schrank",
+      "ex": "Der Schrank ist voll."
+     },
+     {
+      "w": "die Wohnung",
+      "ex": "Unsere Wohnung hat drei Zimmer."
+     }
+    ],
+    "gram": "Die Wohnung hat + Akkusativ: einen Balkon, eine Küche, ein Bad. Im Wohnzimmer gibt es ein Sofa. (im = in dem)"
+   }
+  },
+  {
+   "d": 54,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessive articles",
+     "g": "Say whose things are with mein, dein, sein, ihr, unser, euer and Ihr.",
+     "p": [
+      "Each person has its own word: ich → mein, du → dein, er/es → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr.",
+      "They take the same endings as ein: mein Bruder, meine Schwester, mein Haus, meine Eltern.",
+      "Sein means his, ihr means her or their: Das ist Toms Auto. Das ist sein Auto. Das ist Annas Katze. Das ist ihre Katze."
+     ],
+     "q": "Tell me about two people close to you and one of their things: Das ist meine Freundin, ihr Hund heißt...",
+     "c": "Write eight short sentences with all eight possessives, for example Unser Lehrer ist nett."
+    },
+    "de": {
+     "t": "Possessivartikel",
+     "g": "Du sagst mit mein, dein, sein, ihr, unser, euer und Ihr, wem etwas gehört.",
+     "p": [
+      "Jede Person hat ihr Wort: ich → mein, du → dein, er/es → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr.",
+      "Die Endungen sind wie bei ein: mein Bruder, meine Schwester, mein Haus, meine Eltern.",
+      "Sein gehört zu er, ihr zu sie: Das ist Toms Auto, das ist sein Auto. Das ist Annas Katze, das ist ihre Katze."
+     ],
+     "q": "Erzähl mir von zwei Menschen, die dir nahestehen, und einer Sache von ihnen: Das ist meine Freundin, ihr Hund heißt...",
+     "c": "Schreib acht kurze Sätze mit allen acht Possessivartikeln, zum Beispiel: Unser Lehrer ist nett."
+    },
+    "es": {
+     "t": "Los posesivos",
+     "g": "Di de quién son las cosas con mein, dein, sein, ihr, unser, euer e Ihr.",
+     "p": [
+      "Cada persona tiene su palabra: ich → mein, du → dein, er/es → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr.",
+      "Llevan las mismas terminaciones que ein: mein Bruder, meine Schwester, mein Haus, meine Eltern.",
+      "Sein es de él, ihr de ella o de ellos: Das ist Toms Auto, das ist sein Auto. Das ist Annas Katze, das ist ihre Katze."
+     ],
+     "q": "Háblame de dos personas cercanas y de algo suyo: Das ist meine Freundin, ihr Hund heißt...",
+     "c": "Escribe ocho frases cortas con los ocho posesivos, por ejemplo Unser Lehrer ist nett."
+    },
+    "fr": {
+     "t": "Les déterminants possessifs",
+     "g": "Dire à qui sont les choses avec mein, dein, sein, ihr, unser, euer et Ihr.",
+     "p": [
+      "Chaque personne a son mot : ich → mein, du → dein, er/es → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr.",
+      "Ils prennent les terminaisons de ein : mein Bruder, meine Schwester, mein Haus, meine Eltern.",
+      "Sein renvoie à un homme, ihr à une femme ou à plusieurs : Das ist Toms Auto, sein Auto. Das ist Annas Katze, ihre Katze."
+     ],
+     "q": "Parle-moi de deux proches et d'une chose à eux : Das ist meine Freundin, ihr Hund heißt...",
+     "c": "Écris huit phrases courtes avec les huit possessifs, par exemple Unser Lehrer ist nett."
+    },
+    "it": {
+     "t": "Gli aggettivi possessivi",
+     "g": "Dici di chi sono le cose con mein, dein, sein, ihr, unser, euer e Ihr.",
+     "p": [
+      "Ogni persona ha la sua parola: ich → mein, du → dein, er/es → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr.",
+      "Prendono le stesse desinenze di ein: mein Bruder, meine Schwester, mein Haus, meine Eltern.",
+      "Sein è di lui, ihr di lei o di loro: Das ist Toms Auto, das ist sein Auto. Das ist Annas Katze, das ist ihre Katze."
+     ],
+     "q": "Parlami di due persone vicine a te e di una loro cosa: Das ist meine Freundin, ihr Hund heißt...",
+     "c": "Scrivi otto frasi brevi con tutti e otto i possessivi, per esempio Unser Lehrer ist nett."
+    },
+    "pt": {
+     "t": "Os possessivos",
+     "g": "Dizer de quem são as coisas com mein, dein, sein, ihr, unser, euer e Ihr.",
+     "p": [
+      "Cada pessoa tem a sua palavra: ich → mein, du → dein, er/es → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr.",
+      "Têm as mesmas terminações que ein: mein Bruder, meine Schwester, mein Haus, meine Eltern.",
+      "Sein é dele, ihr é dela ou deles: Das ist Toms Auto, das ist sein Auto. Das ist Annas Katze, das ist ihre Katze."
+     ],
+     "q": "Fala-me de duas pessoas próximas e de uma coisa delas: Das ist meine Freundin, ihr Hund heißt...",
+     "c": "Escreve oito frases curtas com os oito possessivos, por exemplo Unser Lehrer ist nett."
+    },
+    "pt_BR": {
+     "t": "Os possessivos",
+     "g": "Dizer de quem são as coisas com mein, dein, sein, ihr, unser, euer e Ihr.",
+     "p": [
+      "Cada pessoa tem sua palavra: ich → mein, du → dein, er/es → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr.",
+      "Eles têm as mesmas terminações que ein: mein Bruder, meine Schwester, mein Haus, meine Eltern.",
+      "Sein é dele, ihr é dela ou deles: Das ist Toms Auto, das ist sein Auto. Das ist Annas Katze, das ist ihre Katze."
+     ],
+     "q": "Me fale de duas pessoas próximas e de uma coisa delas: Das ist meine Freundin, ihr Hund heißt...",
+     "c": "Escreva oito frases curtas com os oito possessivos, por exemplo Unser Lehrer ist nett."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dein",
+      "ex": "Ist das dein Handy?"
+     },
+     {
+      "w": "sein",
+      "ex": "Max sucht sein Buch."
+     },
+     {
+      "w": "ihr",
+      "ex": "Lisa und ihre Schwester wohnen hier."
+     },
+     {
+      "w": "unser",
+      "ex": "Unser Haus ist alt."
+     },
+     {
+      "w": "euer",
+      "ex": "Wo ist eure Wohnung?"
+     },
+     {
+      "w": "Ihr",
+      "ex": "Ist das Ihr Koffer, Herr Braun?"
+     }
+    ],
+    "gram": "mein, dein, sein, ihr, unser, euer, ihr, Ihr + Endungen wie ein: unser Sohn, unsere Tochter. euer → eure: eure Kinder."
+   }
+  },
+  {
+   "d": 55,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessives in the accusative",
+     "g": "Use possessives as objects, with the -en ending for masculine nouns.",
+     "p": [
+      "Just like ein → einen, a masculine object adds -en: Ich suche meinen Schlüssel. Hast du deinen Pass?",
+      "Feminine, neuter and plural stay the same: Ich suche meine Brille, mein Handy, meine Schuhe.",
+      "Unser and euer follow the same rule: Wir besuchen unseren Opa. Ihr ruft euren Vater an."
+     ],
+     "q": "What do you often look for at home? Tell me with ich suche oft meinen..., meine... or mein...",
+     "c": "Write five sentences with suchen, brauchen, besuchen and anrufen, using a possessive with -en at least three times."
+    },
+    "de": {
+     "t": "Possessivartikel im Akkusativ",
+     "g": "Du benutzt Possessivartikel als Objekt, mit der Endung -en im Maskulinum.",
+     "p": [
+      "Wie bei ein → einen bekommt ein maskulines Objekt -en: Ich suche meinen Schlüssel. Hast du deinen Pass?",
+      "Feminin, neutral und Plural bleiben gleich: Ich suche meine Brille, mein Handy, meine Schuhe.",
+      "Unser und euer folgen derselben Regel: Wir besuchen unseren Opa. Ihr ruft euren Vater an."
+     ],
+     "q": "Was suchst du zu Hause oft? Sag es mit ich suche oft meinen..., meine... oder mein...",
+     "c": "Schreib fünf Sätze mit suchen, brauchen, besuchen und anrufen, mindestens dreimal mit einem Possessivartikel auf -en."
+    },
+    "es": {
+     "t": "Posesivos en acusativo",
+     "g": "Usa los posesivos como complemento, con la terminación -en en masculino.",
+     "p": [
+      "Igual que ein → einen, un complemento masculino añade -en: Ich suche meinen Schlüssel. Hast du deinen Pass?",
+      "Femenino, neutro y plural no cambian: Ich suche meine Brille, mein Handy, meine Schuhe.",
+      "Unser y euer siguen la misma regla: Wir besuchen unseren Opa. Ihr ruft euren Vater an."
+     ],
+     "q": "¿Qué buscas a menudo en casa? Dímelo con ich suche oft meinen..., meine... o mein...",
+     "c": "Escribe cinco frases con suchen, brauchen, besuchen y anrufen, usando un posesivo con -en al menos tres veces."
+    },
+    "fr": {
+     "t": "Les possessifs à l'accusatif",
+     "g": "Utiliser les possessifs comme complément, avec la terminaison -en au masculin.",
+     "p": [
+      "Comme ein → einen, un complément masculin prend -en : Ich suche meinen Schlüssel. Hast du deinen Pass ?",
+      "Féminin, neutre et pluriel ne changent pas : Ich suche meine Brille, mein Handy, meine Schuhe.",
+      "Unser et euer suivent la même règle : Wir besuchen unseren Opa. Ihr ruft euren Vater an."
+     ],
+     "q": "Que cherches-tu souvent chez toi ? Dis-le avec ich suche oft meinen..., meine... ou mein...",
+     "c": "Écris cinq phrases avec suchen, brauchen, besuchen et anrufen, avec un possessif en -en au moins trois fois."
+    },
+    "it": {
+     "t": "I possessivi all'accusativo",
+     "g": "Usi i possessivi come complemento oggetto, con la desinenza -en al maschile.",
+     "p": [
+      "Come ein → einen, un oggetto maschile prende -en: Ich suche meinen Schlüssel. Hast du deinen Pass?",
+      "Femminile, neutro e plurale restano uguali: Ich suche meine Brille, mein Handy, meine Schuhe.",
+      "Unser ed euer seguono la stessa regola: Wir besuchen unseren Opa. Ihr ruft euren Vater an."
+     ],
+     "q": "Che cosa cerchi spesso in casa? Dimmelo con ich suche oft meinen..., meine... o mein...",
+     "c": "Scrivi cinque frasi con suchen, brauchen, besuchen e anrufen, usando un possessivo in -en almeno tre volte."
+    },
+    "pt": {
+     "t": "Possessivos no acusativo",
+     "g": "Usar os possessivos como complemento, com a terminação -en no masculino.",
+     "p": [
+      "Tal como ein → einen, um complemento masculino ganha -en: Ich suche meinen Schlüssel. Hast du deinen Pass?",
+      "Feminino, neutro e plural ficam iguais: Ich suche meine Brille, mein Handy, meine Schuhe.",
+      "Unser e euer seguem a mesma regra: Wir besuchen unseren Opa. Ihr ruft euren Vater an."
+     ],
+     "q": "O que procuras muitas vezes em casa? Diz-me com ich suche oft meinen..., meine... ou mein...",
+     "c": "Escreve cinco frases com suchen, brauchen, besuchen e anrufen, com um possessivo em -en pelo menos três vezes."
+    },
+    "pt_BR": {
+     "t": "Possessivos no acusativo",
+     "g": "Usar os possessivos como objeto, com a terminação -en no masculino.",
+     "p": [
+      "Assim como ein → einen, um objeto masculino ganha -en: Ich suche meinen Schlüssel. Hast du deinen Pass?",
+      "Feminino, neutro e plural ficam iguais: Ich suche meine Brille, mein Handy, meine Schuhe.",
+      "Unser e euer seguem a mesma regra: Wir besuchen unseren Opa. Ihr ruft euren Vater an."
+     ],
+     "q": "O que você vive procurando em casa? Me diga com ich suche oft meinen..., meine... ou mein...",
+     "c": "Escreva cinco frases com suchen, brauchen, besuchen e anrufen, com um possessivo em -en pelo menos três vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "suchen",
+      "ex": "Ich suche meinen Schlüssel."
+     },
+     {
+      "w": "der Schlüssel",
+      "ex": "Hast du deinen Schlüssel?"
+     },
+     {
+      "w": "der Pass",
+      "ex": "Er braucht seinen Pass."
+     },
+     {
+      "w": "die Brille",
+      "ex": "Sie sucht ihre Brille."
+     },
+     {
+      "w": "besuchen",
+      "ex": "Wir besuchen unseren Opa."
+     },
+     {
+      "w": "das Handy",
+      "ex": "Ich finde mein Handy nicht."
+     }
+    ],
+    "gram": "Akkusativ maskulin: mein → meinen, dein → deinen, unser → unseren, euer → euren. Ich rufe meinen Bruder an."
+   }
+  },
+  {
+   "d": 56,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The imperative",
+     "g": "Give instructions and make polite requests with the imperative.",
+     "p": [
+      "For du, use the stem without -st and without du: du kommst → Komm! du machst → Mach! Verbs like fahren lose the umlaut: Fahr!",
+      "For ihr, use the ihr form without ihr: Kommt! Macht! For Sie, swap the order: Kommen Sie! Warten Sie bitte!",
+      "Add bitte, mal or doch to sound friendlier: Komm doch mit! Hilf mir bitte! Note: du isst → Iss! du liest → Lies!"
+     ],
+     "q": "Give me a friendly instruction in German, the way you would to a friend: Komm..., Mach..., Hilf mir...",
+     "c": "Write three instructions for a recipe or game in all three forms: du, ihr and Sie."
+    },
+    "de": {
+     "t": "Der Imperativ",
+     "g": "Du gibst Anweisungen und bittest höflich mit dem Imperativ.",
+     "p": [
+      "Bei du nimmst du die Form ohne -st und ohne du: du kommst → Komm! du machst → Mach! Bei fahren fällt der Umlaut weg: Fahr!",
+      "Bei ihr die ihr-Form ohne ihr: Kommt! Macht! Bei Sie wird die Reihenfolge getauscht: Kommen Sie! Warten Sie bitte!",
+      "Mit bitte, mal oder doch klingt es freundlicher: Komm doch mit! Hilf mir bitte! Beachte: du isst → Iss! du liest → Lies!"
+     ],
+     "q": "Gib mir eine freundliche Anweisung auf Deutsch, so wie einem Freund: Komm..., Mach..., Hilf mir...",
+     "c": "Schreib drei Anweisungen für ein Rezept oder ein Spiel in allen drei Formen: du, ihr und Sie."
+    },
+    "es": {
+     "t": "El imperativo",
+     "g": "Da instrucciones y haz peticiones corteses con el imperativo.",
+     "p": [
+      "Para du, usa la forma sin -st y sin du: du kommst → Komm! du machst → Mach! Los verbos como fahren pierden la diéresis: Fahr!",
+      "Para ihr, la forma de ihr sin ihr: Kommt! Macht! Para Sie, se invierte el orden: Kommen Sie! Warten Sie bitte!",
+      "Añade bitte, mal o doch para sonar más amable: Komm doch mit! Hilf mir bitte! Ojo: du isst → Iss! du liest → Lies!"
+     ],
+     "q": "Dame una instrucción amable en alemán, como a un amigo: Komm..., Mach..., Hilf mir...",
+     "c": "Escribe tres instrucciones para una receta o un juego en las tres formas: du, ihr y Sie."
+    },
+    "fr": {
+     "t": "L'impératif",
+     "g": "Donner des consignes et faire des demandes polies à l'impératif.",
+     "p": [
+      "Pour du, on prend la forme sans -st et sans du : du kommst → Komm ! du machst → Mach ! Les verbes comme fahren perdent le tréma : Fahr !",
+      "Pour ihr, la forme de ihr sans ihr : Kommt ! Macht ! Pour Sie, on inverse : Kommen Sie ! Warten Sie bitte !",
+      "Ajoute bitte, mal ou doch pour être plus aimable : Komm doch mit ! Hilf mir bitte ! Attention : du isst → Iss ! du liest → Lies !"
+     ],
+     "q": "Donne-moi une consigne amicale en allemand, comme à un ami : Komm..., Mach..., Hilf mir...",
+     "c": "Écris trois consignes pour une recette ou un jeu aux trois formes : du, ihr et Sie."
+    },
+    "it": {
+     "t": "L'imperativo",
+     "g": "Dai istruzioni e fai richieste cortesi con l'imperativo.",
+     "p": [
+      "Per du usa la forma senza -st e senza du: du kommst → Komm! du machst → Mach! I verbi come fahren perdono l'Umlaut: Fahr!",
+      "Per ihr, la forma di ihr senza ihr: Kommt! Macht! Per Sie si inverte l'ordine: Kommen Sie! Warten Sie bitte!",
+      "Aggiungi bitte, mal o doch per essere più gentile: Komm doch mit! Hilf mir bitte! Attenzione: du isst → Iss! du liest → Lies!"
+     ],
+     "q": "Dammi un'istruzione gentile in tedesco, come a un amico: Komm..., Mach..., Hilf mir...",
+     "c": "Scrivi tre istruzioni per una ricetta o un gioco in tutte e tre le forme: du, ihr e Sie."
+    },
+    "pt": {
+     "t": "O imperativo",
+     "g": "Dar instruções e fazer pedidos educados com o imperativo.",
+     "p": [
+      "Para du usa-se a forma sem -st e sem du: du kommst → Komm! du machst → Mach! Verbos como fahren perdem o trema: Fahr!",
+      "Para ihr, a forma de ihr sem ihr: Kommt! Macht! Para Sie, troca-se a ordem: Kommen Sie! Warten Sie bitte!",
+      "Junta bitte, mal ou doch para soar mais simpático: Komm doch mit! Hilf mir bitte! Atenção: du isst → Iss! du liest → Lies!"
+     ],
+     "q": "Dá-me uma instrução simpática em alemão, como a um amigo: Komm..., Mach..., Hilf mir...",
+     "c": "Escreve três instruções para uma receita ou um jogo nas três formas: du, ihr e Sie."
+    },
+    "pt_BR": {
+     "t": "O imperativo",
+     "g": "Dar instruções e fazer pedidos educados com o imperativo.",
+     "p": [
+      "Para du use a forma sem -st e sem du: du kommst → Komm! du machst → Mach! Verbos como fahren perdem o trema: Fahr!",
+      "Para ihr, a forma de ihr sem ihr: Kommt! Macht! Para Sie, inverta a ordem: Kommen Sie! Warten Sie bitte!",
+      "Acrescente bitte, mal ou doch para soar mais simpático: Komm doch mit! Hilf mir bitte! Atenção: du isst → Iss! du liest → Lies!"
+     ],
+     "q": "Me dê uma instrução simpática em alemão, como para um amigo: Komm..., Mach..., Hilf mir...",
+     "c": "Escreva três instruções para uma receita ou um jogo nas três formas: du, ihr e Sie."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Komm!",
+      "ex": "Komm bitte schnell!"
+     },
+     {
+      "w": "Kommt!",
+      "ex": "Kinder, kommt essen!"
+     },
+     {
+      "w": "Kommen Sie!",
+      "ex": "Kommen Sie bitte herein."
+     },
+     {
+      "w": "Hilf mir!",
+      "ex": "Hilf mir bitte mal!"
+     },
+     {
+      "w": "Warten Sie!",
+      "ex": "Warten Sie bitte einen Moment."
+     },
+     {
+      "w": "Mach mit!",
+      "ex": "Mach doch mit!"
+     }
+    ],
+    "gram": "Imperativ: du kommst → Komm! ihr kommt → Kommt! Sie kommen → Kommen Sie! e → i bleibt: Nimm! Lies! Aber: Fahr! (ohne ä)"
+   }
+  },
+  {
+   "d": 57,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Making plans with friends",
+     "g": "Suggest plans, accept and decline politely in German.",
+     "p": [
+      "Ask about free time: Hast du am Samstag Zeit? Was machst du am Freitagabend?",
+      "Suggest: Wollen wir ins Kino gehen? Hast du Lust auf Pizza? Accept with Ja, gern! Gute Idee! Super, das passt.",
+      "Decline kindly: Leider kann ich nicht, ich muss arbeiten. Vielleicht nächste Woche? Agree a time: Um wie viel Uhr? Wo treffen wir uns?"
+     ],
+     "q": "Imagine I invite you: Hast du am Sonntag Lust auf einen Spaziergang? Answer me in German!",
+     "c": "Write a short chat with a friend in German: invite, suggest a time and place, and accept or decline."
+    },
+    "de": {
+     "t": "Pläne mit Freunden machen",
+     "g": "Du schlägst Pläne vor, sagst zu und sagst höflich ab.",
+     "p": [
+      "Frag nach Zeit: Hast du am Samstag Zeit? Was machst du am Freitagabend?",
+      "Vorschlagen: Wollen wir ins Kino gehen? Hast du Lust auf Pizza? Zusagen: Ja, gern! Gute Idee! Super, das passt.",
+      "Freundlich absagen: Leider kann ich nicht, ich muss arbeiten. Vielleicht nächste Woche? Dann: Um wie viel Uhr? Wo treffen wir uns?"
+     ],
+     "q": "Stell dir vor, ich lade dich ein: Hast du am Sonntag Lust auf einen Spaziergang? Antworte mir auf Deutsch!",
+     "c": "Schreib einen kurzen Chat mit einem Freund: einladen, Zeit und Ort vorschlagen und zu- oder absagen."
+    },
+    "es": {
+     "t": "Hacer planes con amigos",
+     "g": "Propón planes, acepta y rechaza con cortesía en alemán.",
+     "p": [
+      "Pregunta por el tiempo libre: Hast du am Samstag Zeit? Was machst du am Freitagabend?",
+      "Propón: Wollen wir ins Kino gehen? Hast du Lust auf Pizza? Acepta con Ja, gern! Gute Idee! Super, das passt.",
+      "Rechaza con amabilidad: Leider kann ich nicht, ich muss arbeiten. Vielleicht nächste Woche? Queda: Um wie viel Uhr? Wo treffen wir uns?"
+     ],
+     "q": "Imagina que te invito: Hast du am Sonntag Lust auf einen Spaziergang? ¡Respóndeme en alemán!",
+     "c": "Escribe un chat corto con un amigo en alemán: invita, propón hora y lugar, y acepta o rechaza."
+    },
+    "fr": {
+     "t": "Faire des projets entre amis",
+     "g": "Proposer un projet, accepter et refuser poliment en allemand.",
+     "p": [
+      "Demande si l'autre est libre : Hast du am Samstag Zeit ? Was machst du am Freitagabend ?",
+      "Propose : Wollen wir ins Kino gehen ? Hast du Lust auf Pizza ? Accepte avec Ja, gern ! Gute Idee ! Super, das passt.",
+      "Refuse gentiment : Leider kann ich nicht, ich muss arbeiten. Vielleicht nächste Woche ? Fixe : Um wie viel Uhr ? Wo treffen wir uns ?"
+     ],
+     "q": "Imagine que je t'invite : Hast du am Sonntag Lust auf einen Spaziergang ? Réponds-moi en allemand !",
+     "c": "Écris un court chat avec un ami en allemand : invite, propose une heure et un lieu, puis accepte ou refuse."
+    },
+    "it": {
+     "t": "Fare programmi con gli amici",
+     "g": "Proponi programmi, accetti e rifiuti con gentilezza in tedesco.",
+     "p": [
+      "Chiedi se l'altro è libero: Hast du am Samstag Zeit? Was machst du am Freitagabend?",
+      "Proponi: Wollen wir ins Kino gehen? Hast du Lust auf Pizza? Accetta con Ja, gern! Gute Idee! Super, das passt.",
+      "Rifiuta con gentilezza: Leider kann ich nicht, ich muss arbeiten. Vielleicht nächste Woche? Poi: Um wie viel Uhr? Wo treffen wir uns?"
+     ],
+     "q": "Immagina che ti inviti: Hast du am Sonntag Lust auf einen Spaziergang? Rispondimi in tedesco!",
+     "c": "Scrivi una breve chat con un amico in tedesco: invita, proponi ora e luogo, e accetta o rifiuta."
+    },
+    "pt": {
+     "t": "Fazer planos com amigos",
+     "g": "Propor planos, aceitar e recusar com educação em alemão.",
+     "p": [
+      "Pergunta se o outro está livre: Hast du am Samstag Zeit? Was machst du am Freitagabend?",
+      "Propõe: Wollen wir ins Kino gehen? Hast du Lust auf Pizza? Aceita com Ja, gern! Gute Idee! Super, das passt.",
+      "Recusa com simpatia: Leider kann ich nicht, ich muss arbeiten. Vielleicht nächste Woche? Combina: Um wie viel Uhr? Wo treffen wir uns?"
+     ],
+     "q": "Imagina que te convido: Hast du am Sonntag Lust auf einen Spaziergang? Responde-me em alemão!",
+     "c": "Escreve uma pequena conversa com um amigo em alemão: convida, propõe hora e lugar, e aceita ou recusa."
+    },
+    "pt_BR": {
+     "t": "Fazendo planos com amigos",
+     "g": "Propor planos, aceitar e recusar com educação em alemão.",
+     "p": [
+      "Pergunte se a pessoa está livre: Hast du am Samstag Zeit? Was machst du am Freitagabend?",
+      "Proponha: Wollen wir ins Kino gehen? Hast du Lust auf Pizza? Aceite com Ja, gern! Gute Idee! Super, das passt.",
+      "Recuse com gentileza: Leider kann ich nicht, ich muss arbeiten. Vielleicht nächste Woche? Combine: Um wie viel Uhr? Wo treffen wir uns?"
+     ],
+     "q": "Imagine que eu te convido: Hast du am Sonntag Lust auf einen Spaziergang? Me responda em alemão!",
+     "c": "Escreva um chat curto com um amigo em alemão: convide, proponha hora e lugar, e aceite ou recuse."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Hast du Zeit?",
+      "ex": "Hast du am Samstag Zeit?"
+     },
+     {
+      "w": "Lust haben",
+      "ex": "Hast du Lust auf Kino?"
+     },
+     {
+      "w": "Wollen wir...?",
+      "ex": "Wollen wir zusammen kochen?"
+     },
+     {
+      "w": "leider",
+      "ex": "Leider kann ich heute nicht."
+     },
+     {
+      "w": "Gute Idee!",
+      "ex": "Ins Schwimmbad? Gute Idee!"
+     },
+     {
+      "w": "sich treffen",
+      "ex": "Wo treffen wir uns?"
+     }
+    ],
+    "gram": "Vorschlag: Wollen wir...? / Hast du Lust auf + Akk.? Zusage: Gern! Absage: Leider kann ich nicht, ich muss..."
+   }
+  },
+  {
+   "d": 58,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prepositions with accusative",
+     "g": "Use the five prepositions that always take the accusative.",
+     "p": [
+      "Durch (through), für (for), gegen (against), ohne (without), um (around, at): remember them as DOGFU.",
+      "After them, masculine changes: für den Vater, ohne einen Schirm, durch den Park. Feminine and neuter stay.",
+      "Pronouns change too: für mich, für dich, ohne ihn, gegen uns. Um is also for clock times: um acht Uhr."
+     ],
+     "q": "Who did you last buy a present for? Answer with ich habe ein Geschenk für... or ich kaufe etwas für...",
+     "c": "Write five sentences, one with each of durch, für, gegen, ohne and um, with at least two masculine nouns."
+    },
+    "de": {
+     "t": "Präpositionen mit Akkusativ",
+     "g": "Du benutzt die fünf Präpositionen, die immer den Akkusativ verlangen.",
+     "p": [
+      "Durch, für, gegen, ohne, um: Merk sie dir als DOGFU.",
+      "Danach ändert sich das Maskulinum: für den Vater, ohne einen Schirm, durch den Park. Feminin und neutral bleiben.",
+      "Auch Pronomen ändern sich: für mich, für dich, ohne ihn, gegen uns. Um steht auch bei der Uhrzeit: um acht Uhr."
+     ],
+     "q": "Für wen hast du zuletzt ein Geschenk gekauft? Antworte mit ich kaufe etwas für...",
+     "c": "Schreib fünf Sätze, je einen mit durch, für, gegen, ohne und um, mit mindestens zwei maskulinen Nomen."
+    },
+    "es": {
+     "t": "Preposiciones con acusativo",
+     "g": "Usa las cinco preposiciones que siempre llevan acusativo.",
+     "p": [
+      "Durch (a través de), für (para), gegen (contra), ohne (sin), um (alrededor de, a las): recuérdalas como DOGFU.",
+      "Tras ellas el masculino cambia: für den Vater, ohne einen Schirm, durch den Park. Femenino y neutro no cambian.",
+      "También los pronombres: für mich, für dich, ohne ihn, gegen uns. Um sirve también para la hora: um acht Uhr."
+     ],
+     "q": "¿Para quién compraste un regalo la última vez? Responde con ich kaufe etwas für...",
+     "c": "Escribe cinco frases, una con durch, für, gegen, ohne y um, con al menos dos sustantivos masculinos."
+    },
+    "fr": {
+     "t": "Les prépositions à l'accusatif",
+     "g": "Utiliser les cinq prépositions toujours suivies de l'accusatif.",
+     "p": [
+      "Durch (à travers), für (pour), gegen (contre), ohne (sans), um (autour de, à) : retiens-les avec DOGFU.",
+      "Après elles, le masculin change : für den Vater, ohne einen Schirm, durch den Park. Féminin et neutre ne bougent pas.",
+      "Les pronoms aussi : für mich, für dich, ohne ihn, gegen uns. Um sert aussi pour l'heure : um acht Uhr."
+     ],
+     "q": "Pour qui as-tu acheté un cadeau la dernière fois ? Réponds avec ich kaufe etwas für...",
+     "c": "Écris cinq phrases, une avec durch, für, gegen, ohne et um, avec au moins deux noms masculins."
+    },
+    "it": {
+     "t": "Preposizioni con l'accusativo",
+     "g": "Usi le cinque preposizioni che vogliono sempre l'accusativo.",
+     "p": [
+      "Durch (attraverso), für (per), gegen (contro), ohne (senza), um (intorno a, alle): ricordale come DOGFU.",
+      "Dopo di esse il maschile cambia: für den Vater, ohne einen Schirm, durch den Park. Femminile e neutro restano.",
+      "Anche i pronomi: für mich, für dich, ohne ihn, gegen uns. Um si usa anche per l'ora: um acht Uhr."
+     ],
+     "q": "Per chi hai comprato un regalo l'ultima volta? Rispondi con ich kaufe etwas für...",
+     "c": "Scrivi cinque frasi, una con durch, für, gegen, ohne e um, con almeno due nomi maschili."
+    },
+    "pt": {
+     "t": "Preposições com acusativo",
+     "g": "Usar as cinco preposições que levam sempre acusativo.",
+     "p": [
+      "Durch (através de), für (para), gegen (contra), ohne (sem), um (à volta de, às): lembra-te delas como DOGFU.",
+      "Depois delas o masculino muda: für den Vater, ohne einen Schirm, durch den Park. Feminino e neutro ficam iguais.",
+      "Os pronomes também: für mich, für dich, ohne ihn, gegen uns. Um serve também para as horas: um acht Uhr."
+     ],
+     "q": "Para quem compraste um presente da última vez? Responde com ich kaufe etwas für...",
+     "c": "Escreve cinco frases, uma com durch, für, gegen, ohne e um, com pelo menos dois nomes masculinos."
+    },
+    "pt_BR": {
+     "t": "Preposições com acusativo",
+     "g": "Usar as cinco preposições que sempre pedem acusativo.",
+     "p": [
+      "Durch (através de), für (para), gegen (contra), ohne (sem), um (em volta de, às): lembre delas como DOGFU.",
+      "Depois delas o masculino muda: für den Vater, ohne einen Schirm, durch den Park. Feminino e neutro ficam iguais.",
+      "Os pronomes também: für mich, für dich, ohne ihn, gegen uns. Um também serve para as horas: um acht Uhr."
+     ],
+     "q": "Para quem você comprou um presente da última vez? Responda com ich kaufe etwas für...",
+     "c": "Escreva cinco frases, uma com durch, für, gegen, ohne e um, com pelo menos dois nomes masculinos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "durch",
+      "ex": "Wir gehen durch den Park."
+     },
+     {
+      "w": "für",
+      "ex": "Das Geschenk ist für meinen Bruder."
+     },
+     {
+      "w": "gegen",
+      "ex": "Wir spielen heute gegen Köln."
+     },
+     {
+      "w": "ohne",
+      "ex": "Ich gehe nie ohne meinen Schirm."
+     },
+     {
+      "w": "um",
+      "ex": "Wir sitzen um den Tisch."
+     },
+     {
+      "w": "das Geschenk",
+      "ex": "Ich kaufe ein Geschenk für dich."
+     }
+    ],
+    "gram": "durch, für, gegen, ohne, um + Akkusativ: für den Mann, ohne einen Plan. Pronomen: für mich, für dich, ohne ihn."
+   }
+  },
+  {
+   "d": 59,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The dative case: introduction",
+     "g": "Meet the dative, the case of the indirect object: the person who receives something.",
+     "p": [
+      "In Ich gebe dem Kind einen Apfel, the child receives (dative) and the apple is given (accusative).",
+      "Dative articles: der → dem, die → der, das → dem, plural die → den (+ -n on the noun): den Kindern.",
+      "Ein becomes einem or einer: Ich schenke einer Freundin ein Buch. Verbs like geben, schenken, zeigen, helfen use it."
+     ],
+     "q": "Who do you often give or show something to? Answer with ich gebe meinem... or ich zeige meiner...",
+     "c": "Write four sentences with geben, schenken and zeigen, one each with dem, der, dem and den."
+    },
+    "de": {
+     "t": "Der Dativ: Einführung",
+     "g": "Du lernst den Dativ kennen: den Fall des indirekten Objekts, der Person, die etwas bekommt.",
+     "p": [
+      "In Ich gebe dem Kind einen Apfel bekommt das Kind etwas (Dativ), der Apfel wird gegeben (Akkusativ).",
+      "Dativartikel: der → dem, die → der, das → dem, Plural die → den, oft mit -n am Nomen: den Kindern.",
+      "Ein wird zu einem oder einer: Ich schenke einer Freundin ein Buch. Verben wie geben, schenken, zeigen, helfen."
+     ],
+     "q": "Wem gibst oder zeigst du oft etwas? Antworte mit ich gebe meinem... oder ich zeige meiner...",
+     "c": "Schreib vier Sätze mit geben, schenken und zeigen, je einen mit dem, der, dem und den."
+    },
+    "es": {
+     "t": "El dativo: introducción",
+     "g": "Conoce el dativo, el caso del complemento indirecto: la persona que recibe algo.",
+     "p": [
+      "En Ich gebe dem Kind einen Apfel, el niño recibe (dativo) y la manzana es lo que se da (acusativo).",
+      "Artículos en dativo: der → dem, die → der, das → dem, plural die → den (+ -n en el sustantivo): den Kindern.",
+      "Ein pasa a einem o einer: Ich schenke einer Freundin ein Buch. Lo usan verbos como geben, schenken, zeigen, helfen."
+     ],
+     "q": "¿A quién das o enseñas cosas a menudo? Responde con ich gebe meinem... o ich zeige meiner...",
+     "c": "Escribe cuatro frases con geben, schenken y zeigen, una con dem, der, dem y den."
+    },
+    "fr": {
+     "t": "Le datif : introduction",
+     "g": "Découvrir le datif, le cas du complément indirect : la personne qui reçoit quelque chose.",
+     "p": [
+      "Dans Ich gebe dem Kind einen Apfel, l'enfant reçoit (datif) et la pomme est donnée (accusatif).",
+      "Articles au datif : der → dem, die → der, das → dem, pluriel die → den (+ -n au nom) : den Kindern.",
+      "Ein devient einem ou einer : Ich schenke einer Freundin ein Buch. Verbes typiques : geben, schenken, zeigen, helfen."
+     ],
+     "q": "À qui donnes-tu ou montres-tu souvent quelque chose ? Réponds avec ich gebe meinem... ou ich zeige meiner...",
+     "c": "Écris quatre phrases avec geben, schenken et zeigen, une avec dem, der, dem et den."
+    },
+    "it": {
+     "t": "Il dativo: introduzione",
+     "g": "Conosci il dativo, il caso del complemento di termine: la persona che riceve qualcosa.",
+     "p": [
+      "In Ich gebe dem Kind einen Apfel, il bambino riceve (dativo) e la mela viene data (accusativo).",
+      "Articoli al dativo: der → dem, die → der, das → dem, plurale die → den (+ -n sul nome): den Kindern.",
+      "Ein diventa einem o einer: Ich schenke einer Freundin ein Buch. Verbi tipici: geben, schenken, zeigen, helfen."
+     ],
+     "q": "A chi dai o mostri spesso qualcosa? Rispondi con ich gebe meinem... o ich zeige meiner...",
+     "c": "Scrivi quattro frasi con geben, schenken e zeigen, una con dem, der, dem e den."
+    },
+    "pt": {
+     "t": "O dativo: introdução",
+     "g": "Conhecer o dativo, o caso do complemento indireto: a pessoa que recebe algo.",
+     "p": [
+      "Em Ich gebe dem Kind einen Apfel, a criança recebe (dativo) e a maçã é o que se dá (acusativo).",
+      "Artigos no dativo: der → dem, die → der, das → dem, plural die → den (+ -n no nome): den Kindern.",
+      "Ein passa a einem ou einer: Ich schenke einer Freundin ein Buch. Verbos típicos: geben, schenken, zeigen, helfen."
+     ],
+     "q": "A quem dás ou mostras coisas muitas vezes? Responde com ich gebe meinem... ou ich zeige meiner...",
+     "c": "Escreve quatro frases com geben, schenken e zeigen, uma com dem, der, dem e den."
+    },
+    "pt_BR": {
+     "t": "O dativo: introdução",
+     "g": "Conhecer o dativo, o caso do objeto indireto: a pessoa que recebe algo.",
+     "p": [
+      "Em Ich gebe dem Kind einen Apfel, a criança recebe (dativo) e a maçã é o que se dá (acusativo).",
+      "Artigos no dativo: der → dem, die → der, das → dem, plural die → den (+ -n no nome): den Kindern.",
+      "Ein vira einem ou einer: Ich schenke einer Freundin ein Buch. Verbos típicos: geben, schenken, zeigen, helfen."
+     ],
+     "q": "Para quem você costuma dar ou mostrar coisas? Responda com ich gebe meinem... ou ich zeige meiner...",
+     "c": "Escreva quatro frases com geben, schenken e zeigen, uma com dem, der, dem e den."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "geben",
+      "ex": "Ich gebe dem Kind einen Apfel."
+     },
+     {
+      "w": "schenken",
+      "ex": "Wir schenken der Lehrerin Blumen."
+     },
+     {
+      "w": "zeigen",
+      "ex": "Er zeigt dem Gast das Zimmer."
+     },
+     {
+      "w": "helfen",
+      "ex": "Ich helfe meiner Mutter."
+     },
+     {
+      "w": "den Kindern",
+      "ex": "Sie liest den Kindern ein Buch vor."
+     },
+     {
+      "w": "Wem?",
+      "ex": "Wem gibst du das Buch?"
+     }
+    ],
+    "gram": "Dativ = Wem?: der → dem, die → der, das → dem, die (Pl.) → den + -n. Ich gebe dem Mann (Dat.) den Schlüssel (Akk.)."
+   }
+  },
+  {
+   "d": 60,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: daily life in German",
+     "g": "Bring together your second month: food, town, transport, routine, modal verbs and the accusative.",
+     "p": [
+      "You can order at a café, bakery and restaurant, ask prices and shop for clothes with möchten and hätte gern.",
+      "You can find your way, use transport, describe your home and routine with separable verbs and time words.",
+      "You use modal verbs, possessives, the imperative, the accusative with für, ohne and co., and you have met the dative. Wunderbar!"
+     ],
+     "q": "Tell me about a typical Saturday in German: what you do, where you go, how you get there and what you must do.",
+     "c": "Write a short text about your day: use one separable verb, one modal verb, one possessive and one accusative preposition."
+    },
+    "de": {
+     "t": "Wiederholung: Alltag auf Deutsch",
+     "g": "Du verbindest deinen zweiten Monat: Essen, Stadt, Verkehr, Tagesablauf, Modalverben und Akkusativ.",
+     "p": [
+      "Du bestellst im Café, in der Bäckerei und im Restaurant, fragst nach Preisen und kaufst Kleidung mit möchten und hätte gern.",
+      "Du findest den Weg, nutzt Verkehrsmittel und beschreibst Wohnung und Tagesablauf mit trennbaren Verben und Zeitangaben.",
+      "Du benutzt Modalverben, Possessivartikel, Imperativ, Akkusativ mit für, ohne und Co. und kennst den Dativ. Wunderbar!"
+     ],
+     "q": "Erzähl mir von einem typischen Samstag: was du machst, wohin du gehst, wie du hinkommst und was du musst.",
+     "c": "Schreib einen kurzen Text über deinen Tag mit einem trennbaren Verb, einem Modalverb, einem Possessivartikel und einer Akkusativpräposition."
+    },
+    "es": {
+     "t": "Repaso: la vida diaria en alemán",
+     "g": "Une tu segundo mes: comida, ciudad, transporte, rutina, verbos modales y acusativo.",
+     "p": [
+      "Sabes pedir en un café, una panadería y un restaurante, preguntar precios y comprar ropa con möchten y hätte gern.",
+      "Sabes orientarte, usar el transporte y describir tu casa y tu rutina con verbos separables y expresiones de tiempo.",
+      "Usas verbos modales, posesivos, el imperativo, el acusativo con für, ohne y compañía, y ya conoces el dativo. ¡Wunderbar!"
+     ],
+     "q": "Cuéntame un sábado típico en alemán: qué haces, adónde vas, cómo llegas y qué tienes que hacer.",
+     "c": "Escribe un texto corto sobre tu día con un verbo separable, un modal, un posesivo y una preposición de acusativo."
+    },
+    "fr": {
+     "t": "Révision : la vie quotidienne en allemand",
+     "g": "Relier ton deuxième mois : nourriture, ville, transports, routine, verbes de modalité et accusatif.",
+     "p": [
+      "Tu sais commander au café, à la boulangerie et au restaurant, demander un prix et acheter des vêtements avec möchten et hätte gern.",
+      "Tu trouves ton chemin, prends les transports et décris ton logement et ta routine avec verbes séparables et expressions de temps.",
+      "Tu utilises modaux, possessifs, impératif, accusatif avec für, ohne et compagnie, et tu connais le datif. Wunderbar !"
+     ],
+     "q": "Raconte-moi un samedi typique en allemand : ce que tu fais, où tu vas, comment tu y vas et ce que tu dois faire.",
+     "c": "Écris un court texte sur ta journée avec un verbe séparable, un modal, un possessif et une préposition à l'accusatif."
+    },
+    "it": {
+     "t": "Ripasso: la vita quotidiana in tedesco",
+     "g": "Colleghi il tuo secondo mese: cibo, città, trasporti, routine, verbi modali e accusativo.",
+     "p": [
+      "Sai ordinare al bar, in panetteria e al ristorante, chiedere i prezzi e comprare vestiti con möchten e hätte gern.",
+      "Sai orientarti, usare i mezzi e descrivere casa e giornata con i verbi separabili e le espressioni di tempo.",
+      "Usi modali, possessivi, imperativo, accusativo con für, ohne e compagnia, e conosci il dativo. Wunderbar!"
+     ],
+     "q": "Raccontami un sabato tipico in tedesco: che cosa fai, dove vai, come ci arrivi e che cosa devi fare.",
+     "c": "Scrivi un breve testo sulla tua giornata con un verbo separabile, un modale, un possessivo e una preposizione con l'accusativo."
+    },
+    "pt": {
+     "t": "Revisão: o dia a dia em alemão",
+     "g": "Juntar o teu segundo mês: comida, cidade, transportes, rotina, verbos modais e acusativo.",
+     "p": [
+      "Sabes pedir num café, numa padaria e num restaurante, perguntar preços e comprar roupa com möchten e hätte gern.",
+      "Sabes orientar-te, usar os transportes e descrever a tua casa e a tua rotina com verbos separáveis e expressões de tempo.",
+      "Usas modais, possessivos, imperativo, acusativo com für, ohne e companhia, e já conheces o dativo. Wunderbar!"
+     ],
+     "q": "Conta-me um sábado típico em alemão: o que fazes, aonde vais, como lá chegas e o que tens de fazer.",
+     "c": "Escreve um pequeno texto sobre o teu dia com um verbo separável, um modal, um possessivo e uma preposição de acusativo."
+    },
+    "pt_BR": {
+     "t": "Revisão: o dia a dia em alemão",
+     "g": "Juntar seu segundo mês: comida, cidade, transporte, rotina, verbos modais e acusativo.",
+     "p": [
+      "Você sabe pedir num café, numa padaria e num restaurante, perguntar preços e comprar roupa com möchten e hätte gern.",
+      "Você sabe se orientar, usar o transporte e descrever sua casa e sua rotina com verbos separáveis e expressões de tempo.",
+      "Você usa modais, possessivos, imperativo, acusativo com für, ohne e cia., e já conhece o dativo. Wunderbar!"
+     ],
+     "q": "Me conte um sábado típico em alemão: o que você faz, aonde vai, como chega lá e o que tem que fazer.",
+     "c": "Escreva um textinho sobre seu dia com um verbo separável, um modal, um possessivo e uma preposição de acusativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Alltag",
+      "ex": "Mein Alltag ist ziemlich ruhig."
+     },
+     {
+      "w": "der Samstag",
+      "ex": "Am Samstag kaufe ich auf dem Markt ein."
+     },
+     {
+      "w": "zuerst",
+      "ex": "Zuerst frühstücke ich mit meiner Familie."
+     },
+     {
+      "w": "danach",
+      "ex": "Danach fahre ich mit dem Rad in die Stadt."
+     },
+     {
+      "w": "wunderbar",
+      "ex": "Dein Deutsch wird wunderbar!"
+     },
+     {
+      "w": "üben",
+      "ex": "Ich übe jeden Tag ein bisschen."
+     }
+    ],
+    "gram": "Wiederholung: Am Samstag stehe ich spät auf. Ich muss einkaufen. Ich suche meinen Schlüssel. Das Geschenk ist für dich."
+   }
+  }
+ ]
+}

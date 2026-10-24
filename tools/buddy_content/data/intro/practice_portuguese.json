@@ -1,0 +1,33 @@
+{
+"topic": "practice_portuguese",
+"intro": {
+"en": [
+"Olá! I'm {name}, and I'll be your Portuguese buddy on a 365-day path, from your very first olá all the way to confident B2 conversations.",
+"Every day we'll do one small lesson: greetings, food, travel, past and future, idioms from Portugal and Brazil and lots of real chatting. To start: why would you like to learn Portuguese?"
+],
+"de": [
+"Olá! Ich bin {name} und begleite dich 365 Tage lang beim Portugiesischlernen, vom allerersten Olá bis zu sicheren Gesprächen auf B2-Niveau.",
+"Jeden Tag eine kleine Lektion: Begrüßungen, Essen, Reisen, Vergangenheit und Zukunft, Redewendungen aus Portugal und Brasilien und viel Plaudern. Sag mal, warum möchtest du Portugiesisch lernen?"
+],
+"es": [
+"¡Olá! Soy {name} y te acompañaré en un camino de 365 días para aprender portugués, desde tu primer olá hasta conversar con soltura a nivel B2.",
+"Cada día haremos una pequeña lección: saludos, comida, viajes, pasado y futuro, expresiones de Portugal y Brasil y mucha conversación real. Para empezar, ¿por qué quieres aprender portugués?"
+],
+"fr": [
+"Olá ! Je suis {name} et je vais t'accompagner sur un parcours de 365 jours en portugais, de ton tout premier olá jusqu'à des conversations assurées niveau B2.",
+"Chaque jour, une petite leçon : salutations, cuisine, voyages, passé et futur, expressions du Portugal et du Brésil et vraies discussions. Pour commencer, pourquoi veux-tu apprendre le portugais ?"
+],
+"it": [
+"Olá! Sono {name} e ti accompagnerò in un percorso di 365 giorni per imparare il portoghese, dal tuo primo olá fino a conversare con sicurezza a livello B2.",
+"Ogni giorno faremo una piccola lezione: saluti, cibo, viaggi, passato e futuro, modi di dire di Portogallo e Brasile e tanta conversazione vera. Per cominciare: perché vuoi imparare il portoghese?"
+],
+"pt": [
+"Olá! Chamo-me {name} e vou acompanhar-te num percurso de 365 dias de português, desde o teu primeiro olá até conversas confiantes de nível B2.",
+"Todos os dias faremos uma pequena lição: cumprimentos, comida, viagens, passado e futuro, expressões de Portugal e do Brasil e muita conversa a sério. Para começar, porque queres aprender português?"
+],
+"pt_BR": [
+"Olá! Eu sou {name} e vou te acompanhar numa jornada de 365 dias de português, do seu primeiro olá até conversar com confiança no nível B2.",
+"Todo dia teremos uma pequena lição: cumprimentos, comida, viagens, passado e futuro, expressões de Portugal e do Brasil e muito bate-papo de verdade. Pra começar, por que você quer aprender português?"
+]
+}
+}

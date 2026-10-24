@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 141,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Problems when travelling",
+     "g": "Explain travel problems clearly and ask for a solution.",
+     "p": [
+      "Something just happened: he perdido mi maleta, me han robado la cartera.",
+      "Finished past: ayer perdí el tren, el vuelo salió tarde.",
+      "Describe and ask: la habitación es ruidosa, la ducha no funciona, ¿qué puedo hacer?"
+     ],
+     "q": "What problem have you had on a trip, and how did you solve it?",
+     "c": "Write three short complaints for a hotel reception, each with a problem and a request."
+    },
+    "de": {
+     "t": "Probleme auf Reisen",
+     "g": "Du erklärst Reiseprobleme klar und bittest um eine Lösung.",
+     "p": [
+      "Gerade passiert: he perdido mi maleta, me han robado la cartera.",
+      "Abgeschlossen: ayer perdí el tren, el vuelo salió tarde.",
+      "Beschreiben und fragen: la habitación es ruidosa, la ducha no funciona, ¿qué puedo hacer?"
+     ],
+     "q": "Welches Problem hattest du auf einer Reise, und wie hast du es gelöst?",
+     "c": "Schreib drei kurze Beschwerden für die Hotelrezeption, jede mit Problem und Bitte."
+    },
+    "es": {
+     "t": "Problemas de viaje",
+     "g": "Explica problemas de viaje con claridad y pide una solución.",
+     "p": [
+      "Algo reciente: he perdido mi maleta, me han robado la cartera.",
+      "Pasado terminado: ayer perdí el tren, el vuelo salió tarde.",
+      "Describe y pide: la habitación es ruidosa, la ducha no funciona, ¿qué puedo hacer?"
+     ],
+     "q": "¿Qué problema has tenido en un viaje y cómo lo resolviste?",
+     "c": "Escribe tres quejas cortas para la recepción de un hotel, cada una con un problema y una petición."
+    },
+    "fr": {
+     "t": "Problèmes en voyage",
+     "g": "Expliquer clairement un problème en voyage et demander une solution.",
+     "p": [
+      "Juste arrivé : he perdido mi maleta, me han robado la cartera.",
+      "Passé terminé : ayer perdí el tren, el vuelo salió tarde.",
+      "Décrire et demander : la habitación es ruidosa, la ducha no funciona, ¿qué puedo hacer?"
+     ],
+     "q": "Quel problème as-tu eu en voyage, et comment l'as-tu résolu ?",
+     "c": "Écris trois courtes plaintes pour la réception d'un hôtel, chacune avec un problème et une demande."
+    },
+    "it": {
+     "t": "Problemi in viaggio",
+     "g": "Spieghi con chiarezza un problema di viaggio e chiedi una soluzione.",
+     "p": [
+      "Appena successo: he perdido mi maleta, me han robado la cartera.",
+      "Passato concluso: ayer perdí el tren, el vuelo salió tarde.",
+      "Descrivere e chiedere: la habitación es ruidosa, la ducha no funciona, ¿qué puedo hacer?"
+     ],
+     "q": "Che problema hai avuto in viaggio e come l'hai risolto?",
+     "c": "Scrivi tre brevi reclami per la reception di un hotel, ognuno con problema e richiesta."
+    },
+    "pt": {
+     "t": "Problemas em viagem",
+     "g": "Explicas problemas de viagem com clareza e pedes uma solução.",
+     "p": [
+      "Acabou de acontecer: he perdido mi maleta, me han robado la cartera.",
+      "Passado terminado: ayer perdí el tren, el vuelo salió tarde.",
+      "Descrever e pedir: la habitación es ruidosa, la ducha no funciona, ¿qué puedo hacer?"
+     ],
+     "q": "Que problema tiveste numa viagem e como o resolveste?",
+     "c": "Escreve três queixas curtas para a receção de um hotel, cada uma com um problema e um pedido."
+    },
+    "pt_BR": {
+     "t": "Problemas em viagem",
+     "g": "Explique problemas de viagem com clareza e peça uma solução.",
+     "p": [
+      "Acabou de acontecer: he perdido mi maleta, me han robado la cartera.",
+      "Passado concluído: ayer perdí el tren, el vuelo salió tarde.",
+      "Descrever e pedir: la habitación es ruidosa, la ducha no funciona, ¿qué puedo hacer?"
+     ],
+     "q": "Que problema você teve numa viagem e como resolveu?",
+     "c": "Escreva três reclamações curtas para a recepção de um hotel, cada uma com um problema e um pedido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "he perdido",
+      "ex": "He perdido mi maleta en el aeropuerto."
+     },
+     {
+      "w": "perdí el tren",
+      "ex": "Perdí el tren y llegué tarde."
+     },
+     {
+      "w": "ruidoso, ruidosa",
+      "ex": "La habitación es muy ruidosa."
+     },
+     {
+      "w": "no funciona",
+      "ex": "El aire acondicionado no funciona."
+     },
+     {
+      "w": "¿qué puedo hacer?",
+      "ex": "He perdido el pasaporte, ¿qué puedo hacer?"
+     },
+     {
+      "w": "la oficina de objetos perdidos",
+      "ex": "Pregunta en la oficina de objetos perdidos."
+     }
+    ],
+    "gram": "Pretérito perfecto para un problema reciente (he perdido la cartera) e indefinido para un hecho cerrado (ayer perdí el tren)."
+   }
+  },
+  {
+   "d": 142,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Booking accommodation",
+     "g": "Book a room and ask the key questions before you pay.",
+     "p": [
+      "Polite start: quería reservar una habitación doble para tres noches.",
+      "Dates: del viernes al lunes, del 3 al 6 de mayo, llego el día 3.",
+      "Questions: ¿Está incluido el desayuno?, ¿Tiene aparcamiento?, ¿Hasta cuándo puedo cancelar?"
+     ],
+     "q": "What matters most to you when you choose a place to stay?",
+     "c": "Write a short booking message to a hotel with dates, room type and two questions."
+    },
+    "de": {
+     "t": "Eine Unterkunft buchen",
+     "g": "Du buchst ein Zimmer und stellst vor dem Bezahlen die wichtigen Fragen.",
+     "p": [
+      "Höflicher Einstieg: quería reservar una habitación doble para tres noches.",
+      "Daten: del viernes al lunes, del 3 al 6 de mayo, llego el día 3.",
+      "Fragen: ¿Está incluido el desayuno?, ¿Tiene aparcamiento?, ¿Hasta cuándo puedo cancelar?"
+     ],
+     "q": "Was ist dir bei der Wahl einer Unterkunft am wichtigsten?",
+     "c": "Schreib eine kurze Buchungsnachricht an ein Hotel mit Daten, Zimmerart und zwei Fragen."
+    },
+    "es": {
+     "t": "Reservar alojamiento",
+     "g": "Reserva una habitación y haz las preguntas clave antes de pagar.",
+     "p": [
+      "Empieza con cortesía: quería reservar una habitación doble para tres noches.",
+      "Fechas: del viernes al lunes, del 3 al 6 de mayo, llego el día 3.",
+      "Preguntas: ¿Está incluido el desayuno?, ¿Tiene aparcamiento?, ¿Hasta cuándo puedo cancelar?"
+     ],
+     "q": "¿Qué es lo más importante para ti al elegir alojamiento?",
+     "c": "Escribe un mensaje corto a un hotel con las fechas, el tipo de habitación y dos preguntas."
+    },
+    "fr": {
+     "t": "Réserver un hébergement",
+     "g": "Réserver une chambre et poser les bonnes questions avant de payer.",
+     "p": [
+      "Début poli : quería reservar una habitación doble para tres noches.",
+      "Dates : del viernes al lunes, del 3 al 6 de mayo, llego el día 3.",
+      "Questions : ¿Está incluido el desayuno?, ¿Tiene aparcamiento?, ¿Hasta cuándo puedo cancelar?"
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi quand tu choisis un logement ?",
+     "c": "Écris un court message de réservation à un hôtel avec dates, type de chambre et deux questions."
+    },
+    "it": {
+     "t": "Prenotare un alloggio",
+     "g": "Prenoti una camera e fai le domande importanti prima di pagare.",
+     "p": [
+      "Inizio cortese: quería reservar una habitación doble para tres noches.",
+      "Date: del viernes al lunes, del 3 al 6 de mayo, llego el día 3.",
+      "Domande: ¿Está incluido el desayuno?, ¿Tiene aparcamiento?, ¿Hasta cuándo puedo cancelar?"
+     ],
+     "q": "Cosa conta di più per te quando scegli dove alloggiare?",
+     "c": "Scrivi un breve messaggio di prenotazione a un hotel con date, tipo di camera e due domande."
+    },
+    "pt": {
+     "t": "Reservar alojamento",
+     "g": "Reservas um quarto e fazes as perguntas importantes antes de pagar.",
+     "p": [
+      "Início educado: quería reservar una habitación doble para tres noches.",
+      "Datas: del viernes al lunes, del 3 al 6 de mayo, llego el día 3.",
+      "Perguntas: ¿Está incluido el desayuno?, ¿Tiene aparcamiento?, ¿Hasta cuándo puedo cancelar?"
+     ],
+     "q": "O que é mais importante para ti quando escolhes alojamento?",
+     "c": "Escreve uma mensagem curta de reserva a um hotel com datas, tipo de quarto e duas perguntas."
+    },
+    "pt_BR": {
+     "t": "Reservar hospedagem",
+     "g": "Reserve um quarto e faça as perguntas importantes antes de pagar.",
+     "p": [
+      "Começo educado: quería reservar una habitación doble para tres noches.",
+      "Datas: del viernes al lunes, del 3 al 6 de mayo, llego el día 3.",
+      "Perguntas: ¿Está incluido el desayuno?, ¿Tiene aparcamiento?, ¿Hasta cuándo puedo cancelar?"
+     ],
+     "q": "O que é mais importante para você na hora de escolher hospedagem?",
+     "c": "Escreva uma mensagem curta de reserva para um hotel com datas, tipo de quarto e duas perguntas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quería reservar",
+      "ex": "Quería reservar una habitación doble."
+     },
+     {
+      "w": "¿está incluido el desayuno?",
+      "ex": "¿Está incluido el desayuno en el precio?"
+     },
+     {
+      "w": "la habitación individual",
+      "ex": "Necesito una habitación individual."
+     },
+     {
+      "w": "tres noches",
+      "ex": "Es para tres noches, del viernes al lunes."
+     },
+     {
+      "w": "con vistas al mar",
+      "ex": "¿Tienen alguna habitación con vistas al mar?"
+     },
+     {
+      "w": "cancelar la reserva",
+      "ex": "¿Hasta cuándo puedo cancelar la reserva?"
+     }
+    ],
+    "gram": "Quería + infinitivo suena más educado que quiero: quería reservar. Fechas con del... al...: del 3 al 6 de mayo."
+   }
+  },
+  {
+   "d": 143,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Writing a travel post",
+     "g": "Write a short post about a trip, mixing present, past and future.",
+     "p": [
+      "Now: hace buen tiempo, estamos alojados en un hotel pequeño, la gente es simpática.",
+      "Today: hemos visto la catedral, hemos comido paella. Tomorrow: mañana vamos a ir a la playa.",
+      "Add feelings and tips: lo mejor del viaje es..., ¡os lo recomiendo!"
+     ],
+     "q": "Where would you like to write a travel post from, and what would you say?",
+     "c": "Write a five-sentence travel post about a real or dream trip with present, perfect and ir a."
+    },
+    "de": {
+     "t": "Einen Reisepost schreiben",
+     "g": "Du schreibst einen kurzen Post über eine Reise mit Gegenwart, Vergangenheit und Zukunft.",
+     "p": [
+      "Jetzt: hace buen tiempo, estamos alojados en un hotel pequeño, la gente es simpática.",
+      "Heute: hemos visto la catedral, hemos comido paella. Morgen: mañana vamos a ir a la playa.",
+      "Gefühle und Tipps: lo mejor del viaje es..., ¡os lo recomiendo!"
+     ],
+     "q": "Von wo würdest du gern einen Reisepost schreiben, und was würdest du sagen?",
+     "c": "Schreib einen Reisepost in fünf Sätzen über eine echte oder erträumte Reise mit Präsens, Perfekt und ir a."
+    },
+    "es": {
+     "t": "Escribir un post de viaje",
+     "g": "Escribe un post corto sobre un viaje mezclando presente, pasado y futuro.",
+     "p": [
+      "Ahora: hace buen tiempo, estamos alojados en un hotel pequeño, la gente es simpática.",
+      "Hoy: hemos visto la catedral, hemos comido paella. Mañana: vamos a ir a la playa.",
+      "Añade emociones y consejos: lo mejor del viaje es..., ¡os lo recomiendo!"
+     ],
+     "q": "¿Desde dónde te gustaría escribir un post de viaje y qué contarías?",
+     "c": "Escribe un post de cinco frases sobre un viaje real o soñado con presente, perfecto e ir a."
+    },
+    "fr": {
+     "t": "Écrire un post de voyage",
+     "g": "Écrire un court post de voyage en mélangeant présent, passé et futur.",
+     "p": [
+      "Maintenant : hace buen tiempo, estamos alojados en un hotel pequeño, la gente es simpática.",
+      "Aujourd'hui : hemos visto la catedral, hemos comido paella. Demain : mañana vamos a ir a la playa.",
+      "Émotions et conseils : lo mejor del viaje es..., ¡os lo recomiendo!"
+     ],
+     "q": "D'où aimerais-tu écrire un post de voyage, et que raconterais-tu ?",
+     "c": "Écris un post de cinq phrases sur un voyage réel ou rêvé avec présent, passé composé et ir a."
+    },
+    "it": {
+     "t": "Scrivere un post di viaggio",
+     "g": "Scrivi un breve post su un viaggio mescolando presente, passato e futuro.",
+     "p": [
+      "Adesso: hace buen tiempo, estamos alojados en un hotel pequeño, la gente es simpática.",
+      "Oggi: hemos visto la catedral, hemos comido paella. Domani: mañana vamos a ir a la playa.",
+      "Emozioni e consigli: lo mejor del viaje es..., ¡os lo recomiendo!"
+     ],
+     "q": "Da dove ti piacerebbe scrivere un post di viaggio, e cosa racconteresti?",
+     "c": "Scrivi un post di cinque frasi su un viaggio vero o sognato con presente, passato prossimo e ir a."
+    },
+    "pt": {
+     "t": "Escrever um post de viagem",
+     "g": "Escreves um post curto sobre uma viagem com presente, passado e futuro.",
+     "p": [
+      "Agora: hace buen tiempo, estamos alojados en un hotel pequeño, la gente es simpática.",
+      "Hoje: hemos visto la catedral, hemos comido paella. Amanhã: mañana vamos a ir a la playa.",
+      "Emoções e dicas: lo mejor del viaje es..., ¡os lo recomiendo!"
+     ],
+     "q": "De onde gostavas de escrever um post de viagem, e o que contarias?",
+     "c": "Escreve um post de cinco frases sobre uma viagem real ou sonhada com presente, perfeito e ir a."
+    },
+    "pt_BR": {
+     "t": "Escrever um post de viagem",
+     "g": "Escreva um post curto sobre uma viagem com presente, passado e futuro.",
+     "p": [
+      "Agora: hace buen tiempo, estamos alojados en un hotel pequeño, la gente es simpática.",
+      "Hoje: hemos visto la catedral, hemos comido paella. Amanhã: mañana vamos a ir a la playa.",
+      "Emoções e dicas: lo mejor del viaje es..., ¡os lo recomiendo!"
+     ],
+     "q": "De onde você gostaria de escrever um post de viagem, e o que contaria?",
+     "c": "Escreva um post de cinco frases sobre uma viagem real ou dos sonhos com presente, perfeito e ir a."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hace buen tiempo",
+      "ex": "Aquí hace buen tiempo todos los días."
+     },
+     {
+      "w": "hemos visto",
+      "ex": "Hoy hemos visto la catedral y el puerto."
+     },
+     {
+      "w": "mañana vamos a",
+      "ex": "Mañana vamos a subir a la montaña."
+     },
+     {
+      "w": "lo mejor del viaje",
+      "ex": "Lo mejor del viaje es la comida."
+     },
+     {
+      "w": "¡os lo recomiendo!",
+      "ex": "Es un sitio precioso, ¡os lo recomiendo!"
+     },
+     {
+      "w": "estamos alojados en",
+      "ex": "Estamos alojados en un hotel pequeño."
+     }
+    ],
+    "gram": "En un post de viaje se mezclan tiempos: presente (hace sol), perfecto para hoy (hemos visto) e ir a + infinitivo para mañana (vamos a ir)."
+   }
+  },
+  {
+   "d": 144,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Polite conditional: me gustaría",
+     "g": "Sound polite and express wishes with the conditional.",
+     "p": [
+      "Form: infinitive + -ía: me gustaría, sería, viajaría. Irregular stems: podría, querría, tendría, haría.",
+      "Polite requests: ¿Podría ayudarme?, ¿Te importaría esperar?, ¿Sería posible...?",
+      "Wishes: me gustaría vivir en la playa, sería genial aprender a bailar salsa."
+     ],
+     "q": "What would you like to do next year that you have never done?",
+     "c": "Turn five direct requests (dame, quiero, ayúdame...) into polite ones with the conditional."
+    },
+    "de": {
+     "t": "Höflicher Konditional: me gustaría",
+     "g": "Du klingst höflich und äußerst Wünsche mit dem Konditional.",
+     "p": [
+      "Form: Infinitiv + -ía: me gustaría, sería, viajaría. Unregelmäßig: podría, querría, tendría, haría.",
+      "Höfliche Bitten: ¿Podría ayudarme?, ¿Te importaría esperar?, ¿Sería posible...?",
+      "Wünsche: me gustaría vivir en la playa, sería genial aprender a bailar salsa."
+     ],
+     "q": "Was würdest du nächstes Jahr gern tun, was du noch nie gemacht hast?",
+     "c": "Mach aus fünf direkten Bitten (dame, quiero, ayúdame...) höfliche mit dem Konditional."
+    },
+    "es": {
+     "t": "Condicional de cortesía: me gustaría",
+     "g": "Suena educado y expresa deseos con el condicional.",
+     "p": [
+      "Forma: infinitivo + -ía: me gustaría, sería, viajaría. Irregulares: podría, querría, tendría, haría.",
+      "Peticiones corteses: ¿Podría ayudarme?, ¿Te importaría esperar?, ¿Sería posible...?",
+      "Deseos: me gustaría vivir en la playa, sería genial aprender a bailar salsa."
+     ],
+     "q": "¿Qué te gustaría hacer el año que viene que nunca has hecho?",
+     "c": "Transforma cinco peticiones directas (dame, quiero, ayúdame...) en peticiones corteses con el condicional."
+    },
+    "fr": {
+     "t": "Conditionnel de politesse : me gustaría",
+     "g": "Être poli et exprimer des souhaits avec le conditionnel.",
+     "p": [
+      "Forme : infinitif + -ía : me gustaría, sería, viajaría. Irréguliers : podría, querría, tendría, haría.",
+      "Demandes polies : ¿Podría ayudarme?, ¿Te importaría esperar?, ¿Sería posible...?",
+      "Souhaits : me gustaría vivir en la playa, sería genial aprender a bailar salsa."
+     ],
+     "q": "Qu'aimerais-tu faire l'an prochain que tu n'as jamais fait ?",
+     "c": "Transforme cinq demandes directes (dame, quiero, ayúdame...) en demandes polies au conditionnel."
+    },
+    "it": {
+     "t": "Condizionale di cortesia: me gustaría",
+     "g": "Sei cortese ed esprimi desideri con il condizionale.",
+     "p": [
+      "Forma: infinito + -ía: me gustaría, sería, viajaría. Irregolari: podría, querría, tendría, haría.",
+      "Richieste cortesi: ¿Podría ayudarme?, ¿Te importaría esperar?, ¿Sería posible...?",
+      "Desideri: me gustaría vivir en la playa, sería genial aprender a bailar salsa."
+     ],
+     "q": "Cosa ti piacerebbe fare l'anno prossimo che non hai mai fatto?",
+     "c": "Trasforma cinque richieste dirette (dame, quiero, ayúdame...) in richieste cortesi con il condizionale."
+    },
+    "pt": {
+     "t": "Condicional de cortesia: me gustaría",
+     "g": "Soas educado e exprimes desejos com o condicional.",
+     "p": [
+      "Forma: infinitivo + -ía: me gustaría, sería, viajaría. Irregulares: podría, querría, tendría, haría.",
+      "Pedidos educados: ¿Podría ayudarme?, ¿Te importaría esperar?, ¿Sería posible...?",
+      "Desejos: me gustaría vivir en la playa, sería genial aprender a bailar salsa."
+     ],
+     "q": "O que gostavas de fazer no próximo ano que nunca fizeste?",
+     "c": "Transforma cinco pedidos diretos (dame, quiero, ayúdame...) em pedidos educados com o condicional."
+    },
+    "pt_BR": {
+     "t": "Condicional de cortesia: me gustaría",
+     "g": "Soe educado e expresse desejos com o condicional (futuro do pretérito).",
+     "p": [
+      "Forma: infinitivo + -ía: me gustaría, sería, viajaría. Irregulares: podría, querría, tendría, haría.",
+      "Pedidos educados: ¿Podría ayudarme?, ¿Te importaría esperar?, ¿Sería posible...?",
+      "Desejos: me gustaría vivir en la playa, sería genial aprender a bailar salsa."
+     ],
+     "q": "O que você gostaria de fazer no ano que vem que nunca fez?",
+     "c": "Transforme cinco pedidos diretos (dame, quiero, ayúdame...) em pedidos educados com o condicional."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me gustaría",
+      "ex": "Me gustaría viajar a México."
+     },
+     {
+      "w": "¿podría...?",
+      "ex": "¿Podría traerme la cuenta, por favor?"
+     },
+     {
+      "w": "querría",
+      "ex": "Querría hablar con el director."
+     },
+     {
+      "w": "¿te importaría...?",
+      "ex": "¿Te importaría cerrar la ventana?"
+     },
+     {
+      "w": "sería",
+      "ex": "Sería genial vernos el sábado."
+     },
+     {
+      "w": "¿sería posible...?",
+      "ex": "¿Sería posible cambiar la fecha?"
+     }
+    ],
+    "gram": "Condicional = infinitivo + ía, ías, ía, íamos, íais, ían: me gustaría, podría. Sirve para pedir con cortesía y hablar de deseos."
+   }
+  },
+  {
+   "d": 145,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "School and education",
+     "g": "Talk about your school days and education in Spanish.",
+     "p": [
+      "Stages in Spain: el colegio (primary), el instituto (secondary), la universidad.",
+      "Subjects and results: las asignaturas, aprobar, suspender, sacar buenas notas, el examen.",
+      "Memories use the imperfect: iba al colegio a pie, mi asignatura favorita era el arte."
+     ],
+     "q": "What was your favourite subject at school, and why?",
+     "c": "Write five sentences about your school days with the imperfect and one with the preterite."
+    },
+    "de": {
+     "t": "Schule und Bildung",
+     "g": "Du sprichst auf Spanisch über deine Schulzeit und Ausbildung.",
+     "p": [
+      "Stufen in Spanien: el colegio (Grundschule), el instituto (weiterführende Schule), la universidad.",
+      "Fächer und Ergebnisse: las asignaturas, aprobar, suspender, sacar buenas notas, el examen.",
+      "Erinnerungen im Imperfekt: iba al colegio a pie, mi asignatura favorita era el arte."
+     ],
+     "q": "Was war dein Lieblingsfach in der Schule, und warum?",
+     "c": "Schreib fünf Sätze über deine Schulzeit im Imperfekt und einen im Indefinido."
+    },
+    "es": {
+     "t": "El colegio y los estudios",
+     "g": "Habla de tus años de colegio y de tu formación.",
+     "p": [
+      "Etapas en España: el colegio, el instituto, la universidad.",
+      "Asignaturas y resultados: aprobar, suspender, sacar buenas notas, el examen, los deberes.",
+      "Los recuerdos van en imperfecto: iba al colegio andando, mi asignatura favorita era el arte."
+     ],
+     "q": "¿Cuál era tu asignatura favorita en el colegio y por qué?",
+     "c": "Escribe cinco frases sobre tus años de colegio en imperfecto y una en indefinido."
+    },
+    "fr": {
+     "t": "L'école et les études",
+     "g": "Parler de tes années d'école et de ta formation en espagnol.",
+     "p": [
+      "Étapes en Espagne : el colegio (primaire), el instituto (collège-lycée), la universidad.",
+      "Matières et résultats : las asignaturas, aprobar, suspender, sacar buenas notas, el examen.",
+      "Les souvenirs à l'imparfait : iba al colegio a pie, mi asignatura favorita era el arte."
+     ],
+     "q": "Quelle était ta matière préférée à l'école, et pourquoi ?",
+     "c": "Écris cinq phrases sur tes années d'école à l'imparfait et une au passé simple espagnol."
+    },
+    "it": {
+     "t": "La scuola e gli studi",
+     "g": "Parli dei tuoi anni di scuola e della tua formazione in spagnolo.",
+     "p": [
+      "Tappe in Spagna: el colegio (elementari), el instituto (superiori), la universidad.",
+      "Materie e risultati: las asignaturas, aprobar, suspender, sacar buenas notas, el examen.",
+      "I ricordi all'imperfetto: iba al colegio a pie, mi asignatura favorita era el arte."
+     ],
+     "q": "Qual era la tua materia preferita a scuola, e perché?",
+     "c": "Scrivi cinque frasi sui tuoi anni di scuola all'imperfetto e una al passato remoto spagnolo."
+    },
+    "pt": {
+     "t": "A escola e os estudos",
+     "g": "Falas dos teus anos de escola e da tua formação em espanhol.",
+     "p": [
+      "Etapas em Espanha: el colegio (primária), el instituto (secundária), la universidad.",
+      "Disciplinas e resultados: las asignaturas, aprobar, suspender, sacar buenas notas, el examen.",
+      "As memórias vão no imperfeito: iba al colegio a pie, mi asignatura favorita era el arte."
+     ],
+     "q": "Qual era a tua disciplina preferida na escola, e porquê?",
+     "c": "Escreve cinco frases sobre os teus anos de escola no imperfeito e uma no pretérito indefinido."
+    },
+    "pt_BR": {
+     "t": "A escola e os estudos",
+     "g": "Fale dos seus anos de escola e da sua formação em espanhol.",
+     "p": [
+      "Etapas na Espanha: el colegio (fundamental), el instituto (ensino médio), la universidad.",
+      "Matérias e resultados: las asignaturas, aprobar, suspender, sacar buenas notas, el examen.",
+      "As lembranças vão no imperfeito: iba al colegio a pie, mi asignatura favorita era el arte."
+     ],
+     "q": "Qual era a sua matéria favorita na escola, e por quê?",
+     "c": "Escreva cinco frases sobre os seus anos de escola no imperfeito e uma no pretérito indefinido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la asignatura",
+      "ex": "Mi asignatura favorita era la historia."
+     },
+     {
+      "w": "el colegio",
+      "ex": "Fui al colegio en mi barrio."
+     },
+     {
+      "w": "el instituto",
+      "ex": "En el instituto estudiaba mucho inglés."
+     },
+     {
+      "w": "la universidad",
+      "ex": "Estudié Biología en la universidad."
+     },
+     {
+      "w": "aprobar, suspender",
+      "ex": "Aprobé todo menos Matemáticas, que la suspendí."
+     },
+     {
+      "w": "sacar buenas notas",
+      "ex": "Mi hermana siempre sacaba buenas notas."
+     }
+    ],
+    "gram": "Imperfecto para recuerdos del colegio (iba andando, mi profesora era simpática) e indefinido para hechos concretos (aprobé el examen)."
+   }
+  },
+  {
+   "d": 146,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Technology vocabulary",
+     "g": "Learn everyday tech words to talk about your devices.",
+     "p": [
+      "Devices: el móvil, el ordenador portátil, la tableta, la pantalla, el teclado, los auriculares.",
+      "Common needs: la contraseña, la batería, el cargador, la red wifi, descargar, actualizar.",
+      "Accidents with se me: se me ha roto la pantalla, se me ha acabado la batería."
+     ],
+     "q": "Which device could you not live without, and why?",
+     "c": "Describe three problems you have had with technology using se me ha."
+    },
+    "de": {
+     "t": "Technikwortschatz",
+     "g": "Du lernst Alltagswörter für deine Geräte.",
+     "p": [
+      "Geräte: el móvil, el ordenador portátil, la tableta, la pantalla, el teclado, los auriculares.",
+      "Häufig gebraucht: la contraseña, la batería, el cargador, la red wifi, descargar, actualizar.",
+      "Missgeschicke mit se me: se me ha roto la pantalla, se me ha acabado la batería."
+     ],
+     "q": "Auf welches Gerät könntest du nicht verzichten, und warum?",
+     "c": "Beschreib drei Probleme, die du mit Technik hattest, mit se me ha."
+    },
+    "es": {
+     "t": "Vocabulario de tecnología",
+     "g": "Aprende palabras cotidianas para hablar de tus aparatos.",
+     "p": [
+      "Aparatos: el móvil, el ordenador portátil, la tableta, la pantalla, el teclado, los auriculares.",
+      "Lo básico: la contraseña, la batería, el cargador, la red wifi, descargar, actualizar.",
+      "Accidentes con se me: se me ha roto la pantalla, se me ha acabado la batería."
+     ],
+     "q": "¿Sin qué aparato no podrías vivir y por qué?",
+     "c": "Describe tres problemas que has tenido con la tecnología usando se me ha."
+    },
+    "fr": {
+     "t": "Vocabulaire de la technologie",
+     "g": "Apprendre les mots du quotidien pour parler de tes appareils.",
+     "p": [
+      "Appareils : el móvil, el ordenador portátil, la tableta, la pantalla, el teclado, los auriculares.",
+      "L'essentiel : la contraseña, la batería, el cargador, la red wifi, descargar, actualizar.",
+      "Accidents avec se me : se me ha roto la pantalla, se me ha acabado la batería."
+     ],
+     "q": "De quel appareil ne pourrais-tu pas te passer, et pourquoi ?",
+     "c": "Décris trois problèmes que tu as eus avec la technologie avec se me ha."
+    },
+    "it": {
+     "t": "Lessico della tecnologia",
+     "g": "Impari le parole quotidiane per parlare dei tuoi dispositivi.",
+     "p": [
+      "Dispositivi: el móvil, el ordenador portátil, la tableta, la pantalla, el teclado, los auriculares.",
+      "L'essenziale: la contraseña, la batería, el cargador, la red wifi, descargar, actualizar.",
+      "Incidenti con se me: se me ha roto la pantalla, se me ha acabado la batería."
+     ],
+     "q": "Senza quale dispositivo non potresti vivere, e perché?",
+     "c": "Descrivi tre problemi che hai avuto con la tecnologia usando se me ha."
+    },
+    "pt": {
+     "t": "Vocabulário de tecnologia",
+     "g": "Aprendes palavras do dia a dia para falar dos teus aparelhos.",
+     "p": [
+      "Aparelhos: el móvil, el ordenador portátil, la tableta, la pantalla, el teclado, los auriculares.",
+      "O essencial: la contraseña, la batería, el cargador, la red wifi, descargar, actualizar.",
+      "Acidentes com se me: se me ha roto la pantalla, se me ha acabado la batería."
+     ],
+     "q": "Sem que aparelho não conseguirias viver, e porquê?",
+     "c": "Descreve três problemas que tiveste com tecnologia usando se me ha."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de tecnologia",
+     "g": "Aprenda palavras do dia a dia para falar dos seus aparelhos.",
+     "p": [
+      "Aparelhos: el móvil, el ordenador portátil, la tableta, la pantalla, el teclado, los auriculares.",
+      "O essencial: la contraseña, la batería, el cargador, la red wifi, descargar, actualizar.",
+      "Acidentes com se me: se me ha roto la pantalla, se me ha acabado la batería."
+     ],
+     "q": "Sem qual aparelho você não conseguiria viver, e por quê?",
+     "c": "Descreva três problemas que você teve com tecnologia usando se me ha."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "descargar",
+      "ex": "Voy a descargar la aplicación."
+     },
+     {
+      "w": "la contraseña",
+      "ex": "He olvidado mi contraseña."
+     },
+     {
+      "w": "la pantalla",
+      "ex": "Se me ha roto la pantalla del móvil."
+     },
+     {
+      "w": "la batería",
+      "ex": "Me queda poca batería."
+     },
+     {
+      "w": "el cargador",
+      "ex": "¿Me dejas tu cargador?"
+     },
+     {
+      "w": "el ordenador portátil",
+      "ex": "Trabajo con un ordenador portátil."
+     }
+    ],
+    "gram": "Se me ha + participio para accidentes con aparatos: se me ha roto la pantalla, se me ha olvidado la contraseña, se me ha acabado la batería."
+   }
+  },
+  {
+   "d": 147,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Using apps and the internet",
+     "g": "Talk about what you do online: sign up, log in, share and upload.",
+     "p": [
+      "Steps: registrarse, iniciar sesión, cerrar sesión, buscar, descargar la aplicación.",
+      "Social: compartir un enlace, subir una foto, dar me gusta, seguir a alguien, comentar.",
+      "Pronouns attach to commands: compártelo, súbela, mándamelo por mensaje."
+     ],
+     "q": "Which app do you use most every day, and what do you do on it?",
+     "c": "Explain to a friend in four steps how to sign up for your favourite app."
+    },
+    "de": {
+     "t": "Apps und Internet nutzen",
+     "g": "Du sprichst über das, was du online machst: anmelden, einloggen, teilen, hochladen.",
+     "p": [
+      "Schritte: registrarse, iniciar sesión, cerrar sesión, buscar, descargar la aplicación.",
+      "Sozial: compartir un enlace, subir una foto, dar me gusta, seguir a alguien, comentar.",
+      "Pronomen hängen am Imperativ: compártelo, súbela, mándamelo por mensaje."
+     ],
+     "q": "Welche App nutzt du jeden Tag am meisten, und was machst du darin?",
+     "c": "Erklär einem Freund in vier Schritten, wie man sich bei deiner Lieblings-App anmeldet."
+    },
+    "es": {
+     "t": "Usar aplicaciones e internet",
+     "g": "Habla de lo que haces en línea: registrarte, entrar, compartir y subir.",
+     "p": [
+      "Pasos: registrarse, iniciar sesión, cerrar sesión, buscar, descargar la aplicación.",
+      "Redes: compartir un enlace, subir una foto, dar me gusta, seguir a alguien, comentar.",
+      "Los pronombres van unidos al imperativo: compártelo, súbela, mándamelo por mensaje."
+     ],
+     "q": "¿Qué aplicación usas más cada día y qué haces en ella?",
+     "c": "Explica a un amigo en cuatro pasos cómo registrarse en tu aplicación favorita."
+    },
+    "fr": {
+     "t": "Utiliser les applis et internet",
+     "g": "Parler de ce que tu fais en ligne : t'inscrire, te connecter, partager, publier.",
+     "p": [
+      "Étapes : registrarse, iniciar sesión, cerrar sesión, buscar, descargar la aplicación.",
+      "Réseaux : compartir un enlace, subir una foto, dar me gusta, seguir a alguien, comentar.",
+      "Les pronoms s'accrochent à l'impératif : compártelo, súbela, mándamelo por mensaje."
+     ],
+     "q": "Quelle appli utilises-tu le plus chaque jour, et pour quoi faire ?",
+     "c": "Explique à un ami en quatre étapes comment s'inscrire sur ton appli préférée."
+    },
+    "it": {
+     "t": "Usare app e internet",
+     "g": "Parli di cosa fai online: registrarti, accedere, condividere e caricare.",
+     "p": [
+      "Passaggi: registrarse, iniciar sesión, cerrar sesión, buscar, descargar la aplicación.",
+      "Social: compartir un enlace, subir una foto, dar me gusta, seguir a alguien, comentar.",
+      "I pronomi si attaccano all'imperativo: compártelo, súbela, mándamelo por mensaje."
+     ],
+     "q": "Quale app usi di più ogni giorno e cosa ci fai?",
+     "c": "Spiega a un amico in quattro passaggi come registrarsi alla tua app preferita."
+    },
+    "pt": {
+     "t": "Usar aplicações e a internet",
+     "g": "Falas do que fazes online: registar-te, iniciar sessão, partilhar e publicar.",
+     "p": [
+      "Passos: registrarse, iniciar sesión, cerrar sesión, buscar, descargar la aplicación.",
+      "Redes: compartir un enlace, subir una foto, dar me gusta, seguir a alguien, comentar.",
+      "Os pronomes juntam-se ao imperativo: compártelo, súbela, mándamelo por mensaje."
+     ],
+     "q": "Que aplicação usas mais todos os dias e o que fazes nela?",
+     "c": "Explica a um amigo em quatro passos como se regista na tua aplicação preferida."
+    },
+    "pt_BR": {
+     "t": "Usar aplicativos e a internet",
+     "g": "Fale do que você faz online: se cadastrar, fazer login, compartilhar e postar.",
+     "p": [
+      "Passos: registrarse, iniciar sesión, cerrar sesión, buscar, descargar la aplicación.",
+      "Redes: compartir un enlace, subir una foto, dar me gusta, seguir a alguien, comentar.",
+      "Os pronomes se juntam ao imperativo: compártelo, súbela, mándamelo por mensaje."
+     ],
+     "q": "Qual aplicativo você usa mais todo dia e o que faz nele?",
+     "c": "Explique a um amigo em quatro passos como se cadastrar no seu aplicativo favorito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "buscar",
+      "ex": "Busca la receta en internet."
+     },
+     {
+      "w": "registrarse",
+      "ex": "Tienes que registrarte con tu correo."
+     },
+     {
+      "w": "iniciar sesión",
+      "ex": "No puedo iniciar sesión en la aplicación."
+     },
+     {
+      "w": "compartir",
+      "ex": "¿Puedes compartir el enlace conmigo?"
+     },
+     {
+      "w": "subir una foto",
+      "ex": "He subido una foto de la playa."
+     },
+     {
+      "w": "el enlace",
+      "ex": "Te mando el enlace por mensaje."
+     }
+    ],
+    "gram": "Verbos pronominales en internet: registrarse (me registro, te registras), conectarse. Con pronombre: compártelo, súbela, mándamelo."
+   }
+  },
+  {
+   "d": 148,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Writing an informal email",
+     "g": "Write a friendly email or message to a friend in Spanish.",
+     "p": [
+      "Opening: Querida Ana: or Hola, Pablo: Spanish uses a colon after the greeting.",
+      "Body: ¿qué tal?, te escribo para contarte..., ¿sabes qué?, tengo ganas de verte.",
+      "Closing: un abrazo, besos, hasta pronto, escríbeme pronto."
+     ],
+     "q": "Who would you write a long email to in Spanish, and what news would you share?",
+     "c": "Write a six-line email to a friend with a greeting, two pieces of news, a question and a closing."
+    },
+    "de": {
+     "t": "Eine informelle E-Mail schreiben",
+     "g": "Du schreibst einem Freund eine freundliche E-Mail auf Spanisch.",
+     "p": [
+      "Anrede: Querida Ana: oder Hola, Pablo: Im Spanischen steht nach der Anrede ein Doppelpunkt.",
+      "Hauptteil: ¿qué tal?, te escribo para contarte..., ¿sabes qué?, tengo ganas de verte.",
+      "Schluss: un abrazo, besos, hasta pronto, escríbeme pronto."
+     ],
+     "q": "Wem würdest du eine lange E-Mail auf Spanisch schreiben, und welche Neuigkeiten?",
+     "c": "Schreib eine sechszeilige E-Mail an einen Freund mit Anrede, zwei Neuigkeiten, einer Frage und Gruß."
+    },
+    "es": {
+     "t": "Escribir un correo informal",
+     "g": "Escribe un correo o mensaje amistoso a un amigo.",
+     "p": [
+      "Saludo: Querida Ana: o Hola, Pablo: En español se ponen dos puntos después del saludo.",
+      "Cuerpo: ¿qué tal?, te escribo para contarte..., ¿sabes qué?, tengo ganas de verte.",
+      "Despedida: un abrazo, besos, hasta pronto, escríbeme pronto."
+     ],
+     "q": "¿A quién le escribirías un correo largo y qué noticias le darías?",
+     "c": "Escribe un correo de seis líneas a un amigo con saludo, dos noticias, una pregunta y despedida."
+    },
+    "fr": {
+     "t": "Écrire un e-mail informel",
+     "g": "Écrire un e-mail ou un message amical à un ami en espagnol.",
+     "p": [
+      "Début : Querida Ana: ou Hola, Pablo: En espagnol, on met deux-points après la salutation.",
+      "Corps : ¿qué tal?, te escribo para contarte..., ¿sabes qué?, tengo ganas de verte.",
+      "Fin : un abrazo, besos, hasta pronto, escríbeme pronto."
+     ],
+     "q": "À qui écrirais-tu un long e-mail en espagnol, et quelles nouvelles donnerais-tu ?",
+     "c": "Écris un e-mail de six lignes à un ami : salutation, deux nouvelles, une question et une formule finale."
+    },
+    "it": {
+     "t": "Scrivere un'e-mail informale",
+     "g": "Scrivi un'e-mail o un messaggio amichevole a un amico in spagnolo.",
+     "p": [
+      "Apertura: Querida Ana: o Hola, Pablo: In spagnolo dopo il saluto si mettono i due punti.",
+      "Corpo: ¿qué tal?, te escribo para contarte..., ¿sabes qué?, tengo ganas de verte.",
+      "Chiusura: un abrazo, besos, hasta pronto, escríbeme pronto."
+     ],
+     "q": "A chi scriveresti una lunga e-mail in spagnolo, e quali novità racconteresti?",
+     "c": "Scrivi un'e-mail di sei righe a un amico con saluto, due novità, una domanda e chiusura."
+    },
+    "pt": {
+     "t": "Escrever um e-mail informal",
+     "g": "Escreves um e-mail ou mensagem amigável a um amigo em espanhol.",
+     "p": [
+      "Abertura: Querida Ana: ou Hola, Pablo: Em espanhol usam-se dois pontos depois da saudação.",
+      "Corpo: ¿qué tal?, te escribo para contarte..., ¿sabes qué?, tengo ganas de verte.",
+      "Despedida: un abrazo, besos, hasta pronto, escríbeme pronto."
+     ],
+     "q": "A quem escreverias um e-mail longo em espanhol, e que novidades contarias?",
+     "c": "Escreve um e-mail de seis linhas a um amigo com saudação, duas novidades, uma pergunta e despedida."
+    },
+    "pt_BR": {
+     "t": "Escrever um e-mail informal",
+     "g": "Escreva um e-mail ou mensagem amigável para um amigo em espanhol.",
+     "p": [
+      "Abertura: Querida Ana: ou Hola, Pablo: Em espanhol se usam dois pontos depois da saudação.",
+      "Corpo: ¿qué tal?, te escribo para contarte..., ¿sabes qué?, tengo ganas de verte.",
+      "Despedida: un abrazo, besos, hasta pronto, escríbeme pronto."
+     ],
+     "q": "Para quem você escreveria um e-mail longo em espanhol, e que novidades contaria?",
+     "c": "Escreva um e-mail de seis linhas para um amigo com saudação, duas novidades, uma pergunta e despedida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Querida Ana:",
+      "ex": "Querida Ana: ¡Cuánto tiempo sin saber de ti!"
+     },
+     {
+      "w": "¿qué tal?",
+      "ex": "¿Qué tal estás? ¿Qué tal el trabajo?"
+     },
+     {
+      "w": "te escribo para",
+      "ex": "Te escribo para contarte una noticia."
+     },
+     {
+      "w": "tengo ganas de verte",
+      "ex": "¡Tengo muchas ganas de verte!"
+     },
+     {
+      "w": "un abrazo",
+      "ex": "Un abrazo muy fuerte, Marta."
+     },
+     {
+      "w": "besos",
+      "ex": "Besos a todos y hasta pronto."
+     }
+    ],
+    "gram": "En un correo informal: saludo con querido/a + nombre y dos puntos, tú, frases cortas y despedida cariñosa: un abrazo, besos, hasta pronto."
+   }
+  },
+  {
+   "d": 149,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Formal and informal Spanish",
+     "g": "Choose between tú and usted and write a short formal message.",
+     "p": [
+      "Tú for friends, family and people your age; usted for older people, clients and official contexts.",
+      "Usted takes the third-person verb: ¿Usted habla inglés?, le escribo para..., su respuesta.",
+      "Formal email: Estimado señor:, le escribo para..., quedo a la espera de..., atentamente."
+     ],
+     "q": "In your country, when do people switch from formal to informal speech?",
+     "c": "Rewrite a short informal message (hola, ¿puedes...?) as a formal email with usted."
+    },
+    "de": {
+     "t": "Förmliches und informelles Spanisch",
+     "g": "Du wählst zwischen tú und usted und schreibst eine kurze förmliche Nachricht.",
+     "p": [
+      "Tú für Freunde, Familie und Gleichaltrige; usted für Ältere, Kunden und Offizielles.",
+      "Usted nimmt das Verb in der 3. Person: ¿Usted habla inglés?, le escribo para..., su respuesta.",
+      "Förmliche E-Mail: Estimado señor:, le escribo para..., quedo a la espera de..., atentamente."
+     ],
+     "q": "Wann wechselt man in deinem Land vom Sie zum Du?",
+     "c": "Schreib eine kurze informelle Nachricht (hola, ¿puedes...?) als förmliche E-Mail mit usted um."
+    },
+    "es": {
+     "t": "Español formal e informal",
+     "g": "Elige entre tú y usted y escribe un mensaje formal corto.",
+     "p": [
+      "Tú para amigos, familia y gente de tu edad; usted para mayores, clientes y contextos oficiales.",
+      "Usted lleva el verbo en tercera persona: ¿Usted habla inglés?, le escribo para..., su respuesta.",
+      "Correo formal: Estimado señor:, le escribo para..., quedo a la espera de..., atentamente."
+     ],
+     "q": "En tu país, ¿cuándo se pasa del trato formal al informal?",
+     "c": "Reescribe un mensaje informal corto (hola, ¿puedes...?) como correo formal con usted."
+    },
+    "fr": {
+     "t": "Espagnol formel et informel",
+     "g": "Choisir entre tú et usted et écrire un court message formel.",
+     "p": [
+      "Tú pour les amis, la famille et les gens de ton âge ; usted pour les aînés, les clients et l'officiel.",
+      "Usted prend le verbe à la 3e personne : ¿Usted habla inglés?, le escribo para..., su respuesta.",
+      "E-mail formel : Estimado señor:, le escribo para..., quedo a la espera de..., atentamente."
+     ],
+     "q": "Dans ton pays, quand passe-t-on du vouvoiement au tutoiement ?",
+     "c": "Réécris un court message informel (hola, ¿puedes...?) en e-mail formel avec usted."
+    },
+    "it": {
+     "t": "Spagnolo formale e informale",
+     "g": "Scegli tra tú e usted e scrivi un breve messaggio formale.",
+     "p": [
+      "Tú per amici, famiglia e coetanei; usted per persone anziane, clienti e contesti ufficiali.",
+      "Usted vuole il verbo alla terza persona, come Lei: ¿Usted habla inglés?, le escribo para...",
+      "E-mail formale: Estimado señor:, le escribo para..., quedo a la espera de..., atentamente."
+     ],
+     "q": "Nel tuo paese, quando si passa dal Lei al tu?",
+     "c": "Riscrivi un breve messaggio informale (hola, ¿puedes...?) come e-mail formale con usted."
+    },
+    "pt": {
+     "t": "Espanhol formal e informal",
+     "g": "Escolhes entre tú e usted e escreves uma mensagem formal curta.",
+     "p": [
+      "Tú para amigos, família e pessoas da tua idade; usted para mais velhos, clientes e contextos oficiais.",
+      "Usted leva o verbo na terceira pessoa, como você: ¿Usted habla inglés?, le escribo para...",
+      "E-mail formal: Estimado señor:, le escribo para..., quedo a la espera de..., atentamente."
+     ],
+     "q": "No teu país, quando se passa do trato formal ao informal?",
+     "c": "Reescreve uma mensagem informal curta (hola, ¿puedes...?) como e-mail formal com usted."
+    },
+    "pt_BR": {
+     "t": "Espanhol formal e informal",
+     "g": "Escolha entre tú e usted e escreva uma mensagem formal curta.",
+     "p": [
+      "Tú para amigos, família e pessoas da sua idade; usted para mais velhos, clientes e contextos oficiais.",
+      "Usted leva o verbo na terceira pessoa, como o senhor: ¿Usted habla inglés?, le escribo para...",
+      "E-mail formal: Estimado señor:, le escribo para..., quedo a la espera de..., atentamente."
+     ],
+     "q": "No seu país, quando as pessoas passam do tratamento formal para o informal?",
+     "c": "Reescreva uma mensagem informal curta (hola, ¿puedes...?) como e-mail formal com usted."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Estimado señor:",
+      "ex": "Estimado señor García:"
+     },
+     {
+      "w": "usted",
+      "ex": "¿Usted es el responsable del departamento?"
+     },
+     {
+      "w": "le escribo para",
+      "ex": "Le escribo para solicitar información."
+     },
+     {
+      "w": "quedo a la espera de",
+      "ex": "Quedo a la espera de su respuesta."
+     },
+     {
+      "w": "atentamente",
+      "ex": "Atentamente, Laura Pérez."
+     },
+     {
+      "w": "un cordial saludo",
+      "ex": "Reciba un cordial saludo."
+     }
+    ],
+    "gram": "Usted lleva el verbo en tercera persona: ¿Usted habla inglés? Pronombres le y su: le escribo, su respuesta. Tú es para amigos y familia."
+   }
+  },
+  {
+   "d": 150,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Expressing opinions: creo que",
+     "g": "Share your views with common opinion phrases.",
+     "p": [
+      "Openers: creo que, pienso que, me parece que, para mí, en mi opinión.",
+      "After creo que use the normal indicative: creo que es caro, pienso que tiene razón.",
+      "Careful: no creo que changes the verb (no creo que sea caro). For now, learn it as a fixed phrase."
+     ],
+     "q": "What do you think about learning languages with apps? Start with en mi opinión.",
+     "c": "Give your opinion on three topics (food, cities, social media) with a different opener each time."
+    },
+    "de": {
+     "t": "Meinungen äußern: creo que",
+     "g": "Du sagst deine Meinung mit typischen Wendungen.",
+     "p": [
+      "Einstiege: creo que, pienso que, me parece que, para mí, en mi opinión.",
+      "Nach creo que steht der normale Indikativ: creo que es caro, pienso que tiene razón.",
+      "Vorsicht: no creo que ändert das Verb (no creo que sea caro). Lern es vorerst als feste Wendung."
+     ],
+     "q": "Was hältst du davon, Sprachen mit Apps zu lernen? Beginne mit en mi opinión.",
+     "c": "Sag deine Meinung zu drei Themen (Essen, Städte, soziale Medien), jedes Mal mit einem anderen Einstieg."
+    },
+    "es": {
+     "t": "Dar tu opinión: creo que",
+     "g": "Comparte tu punto de vista con expresiones de opinión frecuentes.",
+     "p": [
+      "Para empezar: creo que, pienso que, me parece que, para mí, en mi opinión.",
+      "Después de creo que va el indicativo: creo que es caro, pienso que tiene razón.",
+      "Ojo: no creo que cambia el verbo (no creo que sea caro). De momento apréndelo como frase hecha."
+     ],
+     "q": "¿Qué opinas de aprender idiomas con aplicaciones? Empieza con en mi opinión.",
+     "c": "Da tu opinión sobre tres temas (comida, ciudades, redes sociales) con una expresión distinta cada vez."
+    },
+    "fr": {
+     "t": "Donner son avis : creo que",
+     "g": "Partager ton point de vue avec des expressions d'opinion courantes.",
+     "p": [
+      "Pour commencer : creo que, pienso que, me parece que, para mí, en mi opinión.",
+      "Après creo que, l'indicatif normal : creo que es caro, pienso que tiene razón.",
+      "Attention : no creo que change le verbe (no creo que sea caro), comme je ne crois pas que."
+     ],
+     "q": "Que penses-tu de l'apprentissage des langues avec des applis ? Commence par en mi opinión.",
+     "c": "Donne ton avis sur trois thèmes (cuisine, villes, réseaux sociaux) avec une expression différente à chaque fois."
+    },
+    "it": {
+     "t": "Esprimere opinioni: creo que",
+     "g": "Condividi il tuo punto di vista con espressioni comuni.",
+     "p": [
+      "Per iniziare: creo que, pienso que, me parece que, para mí, en mi opinión.",
+      "Attenzione: dopo creo que va l'indicativo, non il congiuntivo: creo que es caro, pienso que tiene razón.",
+      "Al negativo cambia: no creo que sea caro. Per ora imparalo come frase fatta."
+     ],
+     "q": "Cosa pensi dell'imparare le lingue con le app? Inizia con en mi opinión.",
+     "c": "Dai la tua opinione su tre temi (cibo, città, social) con un'espressione diversa ogni volta."
+    },
+    "pt": {
+     "t": "Dar a tua opinião: creo que",
+     "g": "Partilhas o teu ponto de vista com expressões de opinião comuns.",
+     "p": [
+      "Para começar: creo que, pienso que, me parece que, para mí, en mi opinión.",
+      "Depois de creo que vai o indicativo normal: creo que es caro, pienso que tiene razón.",
+      "Atenção: no creo que muda o verbo (no creo que sea caro), como não acho que seja."
+     ],
+     "q": "O que pensas de aprender línguas com aplicações? Começa com en mi opinión.",
+     "c": "Dá a tua opinião sobre três temas (comida, cidades, redes sociais) com uma expressão diferente de cada vez."
+    },
+    "pt_BR": {
+     "t": "Dar sua opinião: creo que",
+     "g": "Compartilhe seu ponto de vista com expressões de opinião comuns.",
+     "p": [
+      "Para começar: creo que, pienso que, me parece que, para mí, en mi opinión.",
+      "Depois de creo que vai o indicativo normal: creo que es caro, pienso que tiene razón.",
+      "Atenção: no creo que muda o verbo (no creo que sea caro), como não acho que seja."
+     ],
+     "q": "O que você acha de aprender idiomas com aplicativos? Comece com en mi opinión.",
+     "c": "Dê sua opinião sobre três temas (comida, cidades, redes sociais) com uma expressão diferente a cada vez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "creo que",
+      "ex": "Creo que es una buena idea."
+     },
+     {
+      "w": "pienso que",
+      "ex": "Pienso que el español es fácil de pronunciar."
+     },
+     {
+      "w": "para mí",
+      "ex": "Para mí, lo más importante es la familia."
+     },
+     {
+      "w": "en mi opinión",
+      "ex": "En mi opinión, la ciudad necesita más parques."
+     },
+     {
+      "w": "me parece que",
+      "ex": "Me parece que va a llover."
+     },
+     {
+      "w": "no creo que",
+      "ex": "No creo que sea tan difícil."
+     }
+    ],
+    "gram": "Creo que, pienso que y me parece que + indicativo: creo que tienes razón. En negativo cambia: no creo que sea verdad (lo verás luego)."
+   }
+  }
+ ]
+}

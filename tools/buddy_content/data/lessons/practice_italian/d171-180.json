@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 171,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Job interview basics",
+     "g": "Present your experience, strengths and goals in simple, polite Italian.",
+     "p": [
+      "Use Lei and the conditional: buongiorno, piacere; mi chiamo...; sarei molto interessato/a a questa posizione.",
+      "Experience: lavoro come... da tre anni, ho lavorato per..., mi sono occupato/a di clienti (I dealt with customers).",
+      "Strengths and goals: sono preciso/a, organizzato/a, mi piace lavorare in squadra; vorrei crescere professionalmente."
+     ],
+     "q": "In an interview, how would you describe yourself in three Italian adjectives?",
+     "c": "Prepare a 30-second Italian self-presentation: name, current job, one past experience, two strengths, one goal."
+    },
+    "de": {
+     "t": "Grundlagen des Vorstellungsgesprächs",
+     "g": "Du stellst Erfahrung, Stärken und Ziele in einfachem, höflichem Italienisch vor.",
+     "p": [
+      "Lei und Konditional: buongiorno, piacere; mi chiamo...; sarei molto interessato/a a questa posizione.",
+      "Erfahrung: lavoro come... da tre anni, ho lavorato per..., mi sono occupato/a di clienti (ich habe Kunden betreut).",
+      "Stärken und Ziele: sono preciso/a, organizzato/a, mi piace lavorare in squadra; vorrei crescere professionalmente."
+     ],
+     "q": "Wie würdest du dich im Vorstellungsgespräch mit drei italienischen Adjektiven beschreiben?",
+     "c": "Bereite eine 30-Sekunden-Vorstellung vor: Name, jetziger Job, eine frühere Erfahrung, zwei Stärken, ein Ziel."
+    },
+    "es": {
+     "t": "Lo básico de una entrevista de trabajo",
+     "g": "Presentar tu experiencia, puntos fuertes y metas en un italiano sencillo y educado.",
+     "p": [
+      "Usa Lei y el condicional: buongiorno, piacere; mi chiamo...; sarei molto interessato/a a questa posizione.",
+      "Experiencia: lavoro come... da tre anni, ho lavorato per..., mi sono occupato/a di clienti (me encargué de clientes).",
+      "Puntos fuertes y metas: sono preciso/a, organizzato/a, mi piace lavorare in squadra; vorrei crescere professionalmente."
+     ],
+     "q": "En una entrevista, ¿cómo te describirías con tres adjetivos en italiano?",
+     "c": "Prepara una presentación de 30 segundos: nombre, trabajo actual, una experiencia pasada, dos puntos fuertes y una meta."
+    },
+    "fr": {
+     "t": "Les bases de l'entretien d'embauche",
+     "g": "Présenter ton expérience, tes atouts et tes objectifs dans un italien simple et poli.",
+     "p": [
+      "Lei et conditionnel : buongiorno, piacere ; mi chiamo... ; sarei molto interessato/a a questa posizione.",
+      "Expérience : lavoro come... da tre anni, ho lavorato per..., mi sono occupato/a di clienti (je me suis occupé des clients).",
+      "Atouts et objectifs : sono preciso/a, organizzato/a, mi piace lavorare in squadra ; vorrei crescere professionalmente."
+     ],
+     "q": "En entretien, comment te décrirais-tu avec trois adjectifs italiens ?",
+     "c": "Prépare une présentation de 30 secondes : nom, poste actuel, une expérience passée, deux atouts et un objectif."
+    },
+    "it": {
+     "t": "Il colloquio di lavoro",
+     "g": "Presentare esperienze, punti di forza e obiettivi in un italiano semplice e cortese.",
+     "p": [
+      "Lei e condizionale: buongiorno, piacere; mi chiamo...; sarei molto interessato/a a questa posizione.",
+      "L'esperienza: lavoro come... da tre anni, ho lavorato per..., mi sono occupato/a dei clienti.",
+      "Punti di forza e obiettivi: sono preciso/a, organizzato/a, mi piace lavorare in squadra; vorrei crescere professionalmente."
+     ],
+     "q": "In un colloquio, come ti descriveresti con tre aggettivi?",
+     "c": "Prepara una presentazione di 30 secondi: nome, lavoro attuale, un'esperienza passata, due punti di forza e un obiettivo."
+    },
+    "pt": {
+     "t": "O básico de uma entrevista de emprego",
+     "g": "Apresentar a tua experiência, pontos fortes e objetivos num italiano simples e educado.",
+     "p": [
+      "Usa Lei e o condicional: buongiorno, piacere; mi chiamo...; sarei molto interessato/a a questa posizione.",
+      "Experiência: lavoro come... da tre anni, ho lavorato per..., mi sono occupato/a di clienti (tratei de clientes).",
+      "Pontos fortes e objetivos: sono preciso/a, organizzato/a, mi piace lavorare in squadra; vorrei crescere professionalmente."
+     ],
+     "q": "Numa entrevista, como te descreverias com três adjetivos em italiano?",
+     "c": "Prepara uma apresentação de 30 segundos: nome, emprego atual, uma experiência passada, dois pontos fortes e um objetivo."
+    },
+    "pt_BR": {
+     "t": "O básico de uma entrevista de emprego",
+     "g": "Apresentar sua experiência, pontos fortes e metas num italiano simples e educado.",
+     "p": [
+      "Use Lei e o condicional: buongiorno, piacere; mi chiamo...; sarei molto interessato/a a questa posizione.",
+      "Experiência: lavoro come... da tre anni, ho lavorato per..., mi sono occupato/a di clienti (cuidei de clientes).",
+      "Pontos fortes e metas: sono preciso/a, organizzato/a, mi piace lavorare in squadra; vorrei crescere professionalmente."
+     ],
+     "q": "Numa entrevista, como você se descreveria com três adjetivos em italiano?",
+     "c": "Prepare uma apresentação de 30 segundos: nome, trabalho atual, uma experiência passada, dois pontos fortes e uma meta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il colloquio",
+      "ex": "Domani ho un colloquio in un'agenzia di viaggi."
+     },
+     {
+      "w": "lavoro come",
+      "ex": "Lavoro come receptionist da due anni."
+     },
+     {
+      "w": "mi sono occupato di",
+      "ex": "Mi sono occupato della gestione dei clienti."
+     },
+     {
+      "w": "lavorare in squadra",
+      "ex": "Mi piace molto lavorare in squadra."
+     },
+     {
+      "w": "il punto di forza",
+      "ex": "Il mio punto di forza è la precisione."
+     },
+     {
+      "w": "crescere professionalmente",
+      "ex": "In futuro vorrei crescere professionalmente."
+     }
+    ],
+    "gram": "Da + tempo con il presente per un'azione che continua: lavoro qui da tre anni. Occuparsi di qualcosa: mi occupo di vendite."
+   }
+  },
+  {
+   "d": 172,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Writing a short CV profile",
+     "g": "Describe your skills and experience in a few clear sentences.",
+     "p": [
+      "A CV is il curriculum (vitae). The short profile at the top often starts with a role: impiegata con cinque anni di esperienza...",
+      "Skills (competenze): ottima conoscenza dell'inglese, buona conoscenza dell'italiano, uso del computer, capacità di organizzazione.",
+      "Keep it clear: short sentences, present tense, concrete facts. Ending: disponibile da subito, automunito/a (has own car)."
+     ],
+     "q": "Which three skills would you put in your Italian CV profile?",
+     "c": "Write a four-sentence CV profile in Italian: role and experience, two skills, languages, availability."
+    },
+    "de": {
+     "t": "Ein kurzes Lebenslaufprofil schreiben",
+     "g": "Du beschreibst Fähigkeiten und Erfahrung in wenigen klaren Sätzen.",
+     "p": [
+      "Ein Lebenslauf ist il curriculum (vitae). Das Kurzprofil beginnt oft mit einer Rolle: impiegata con cinque anni di esperienza...",
+      "Fähigkeiten (competenze): ottima conoscenza dell'inglese, buona conoscenza dell'italiano, uso del computer, capacità di organizzazione.",
+      "Klar bleiben: kurze Sätze, Präsens, konkrete Fakten. Schluss: disponibile da subito, automunito/a (mit eigenem Auto)."
+     ],
+     "q": "Welche drei Fähigkeiten würdest du in dein italienisches Profil schreiben?",
+     "c": "Schreib ein Lebenslaufprofil in vier Sätzen: Rolle und Erfahrung, zwei Fähigkeiten, Sprachen, Verfügbarkeit."
+    },
+    "es": {
+     "t": "Escribir un perfil breve de CV",
+     "g": "Describir tus habilidades y experiencia en pocas frases claras.",
+     "p": [
+      "El CV es il curriculum (vitae). El perfil breve del principio suele empezar con un puesto: impiegata con cinque anni di esperienza...",
+      "Competencias (competenze): ottima conoscenza dell'inglese, buona conoscenza dell'italiano, uso del computer, capacità di organizzazione.",
+      "Sé claro: frases cortas, presente y datos concretos. Al final: disponibile da subito, automunito/a (con coche propio)."
+     ],
+     "q": "¿Qué tres habilidades pondrías en tu perfil de CV en italiano?",
+     "c": "Escribe un perfil de CV de cuatro frases en italiano: puesto y experiencia, dos habilidades, idiomas y disponibilidad."
+    },
+    "fr": {
+     "t": "Rédiger un court profil de CV",
+     "g": "Décrire tes compétences et ton expérience en quelques phrases claires.",
+     "p": [
+      "Le CV se dit il curriculum (vitae). Le profil en haut commence souvent par un poste : impiegata con cinque anni di esperienza...",
+      "Compétences (competenze) : ottima conoscenza dell'inglese, buona conoscenza dell'italiano, uso del computer, capacità di organizzazione.",
+      "Reste clair : phrases courtes, présent, faits concrets. Pour finir : disponibile da subito, automunito/a (véhiculé)."
+     ],
+     "q": "Quelles trois compétences mettrais-tu dans ton profil de CV italien ?",
+     "c": "Écris un profil de CV de quatre phrases en italien : poste et expérience, deux compétences, langues, disponibilité."
+    },
+    "it": {
+     "t": "Scrivere un breve profilo per il CV",
+     "g": "Descrivere competenze ed esperienze in poche frasi chiare.",
+     "p": [
+      "Il CV è il curriculum vitae. Il breve profilo in alto spesso comincia con un ruolo: impiegata con cinque anni di esperienza...",
+      "Le competenze: ottima conoscenza dell'inglese, buona conoscenza dell'italiano, uso del computer, capacità di organizzazione.",
+      "Sii chiaro: frasi brevi, presente, fatti concreti. Alla fine: disponibile da subito, automunito/a."
+     ],
+     "q": "Quali tre competenze metteresti nel tuo profilo del curriculum?",
+     "c": "Scrivi un profilo di quattro frasi: ruolo ed esperienza, due competenze, lingue e disponibilità."
+    },
+    "pt": {
+     "t": "Escrever um perfil curto de CV",
+     "g": "Descrever as tuas competências e experiência em poucas frases claras.",
+     "p": [
+      "O CV é il curriculum (vitae). O perfil curto no topo começa muitas vezes por uma função: impiegata con cinque anni di esperienza...",
+      "Competências (competenze): ottima conoscenza dell'inglese, buona conoscenza dell'italiano, uso del computer, capacità di organizzazione.",
+      "Sê claro: frases curtas, presente e factos concretos. No fim: disponibile da subito, automunito/a (com carro próprio)."
+     ],
+     "q": "Que três competências porias no teu perfil de CV em italiano?",
+     "c": "Escreve um perfil de CV de quatro frases em italiano: função e experiência, duas competências, línguas e disponibilidade."
+    },
+    "pt_BR": {
+     "t": "Escrever um perfil curto de currículo",
+     "g": "Descrever suas habilidades e experiência em poucas frases claras.",
+     "p": [
+      "O currículo é il curriculum (vitae). O perfil curto no topo costuma começar com o cargo: impiegata con cinque anni di esperienza...",
+      "Competências (competenze): ottima conoscenza dell'inglese, buona conoscenza dell'italiano, uso del computer, capacità di organizzazione.",
+      "Seja claro: frases curtas, presente e fatos concretos. No final: disponibile da subito, automunito/a (com carro próprio)."
+     ],
+     "q": "Que três habilidades você colocaria no seu perfil de currículo em italiano?",
+     "c": "Escreva um perfil de currículo de quatro frases em italiano: cargo e experiência, duas habilidades, idiomas e disponibilidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il curriculum",
+      "ex": "Ho mandato il curriculum a tre aziende."
+     },
+     {
+      "w": "anni di esperienza",
+      "ex": "Sono un cuoco con dieci anni di esperienza."
+     },
+     {
+      "w": "ottima conoscenza",
+      "ex": "Ho un'ottima conoscenza dello spagnolo."
+     },
+     {
+      "w": "le competenze",
+      "ex": "Tra le mie competenze c'è la grafica."
+     },
+     {
+      "w": "disponibile da subito",
+      "ex": "Sono disponibile da subito, anche nel weekend."
+     },
+     {
+      "w": "capacità di organizzazione",
+      "ex": "Ho una buona capacità di organizzazione."
+     }
+    ],
+    "gram": "Nel CV si usano frasi nominali e il presente: ottima conoscenza dell'inglese; con + anni di esperienza; disponibile a + infinito."
+   }
+  },
+  {
+   "d": 173,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Italian false friends",
+     "g": "Avoid common traps where Italian words look familiar but mean something else.",
+     "p": [
+      "La camera is a bedroom, not a camera (la macchina fotografica). La libreria is a bookshop; a library is la biblioteca.",
+      "Morbido means soft, not morbid. Simpatico means nice, not sympathetic (comprensivo). Educato means polite, not educated (istruito).",
+      "Parenti are relatives, not parents (genitori). Fattoria is a farm, not a factory (fabbrica). Eventualmente means possibly."
+     ],
+     "q": "Which false friend surprises you the most? Have you ever mixed one up?",
+     "c": "Write five sentences using camera, libreria, morbido, parenti and simpatico in their real Italian meaning."
+    },
+    "de": {
+     "t": "Italienische falsche Freunde",
+     "g": "Du vermeidest Fallen, in denen italienische Wörter bekannt aussehen, aber etwas anderes bedeuten.",
+     "p": [
+      "Caldo heißt warm, nicht kalt (freddo). La camera ist ein Zimmer, keine Kamera (la macchina fotografica). Libreria ist eine Buchhandlung.",
+      "Morbido heißt weich, nicht morbide. Simpatico heißt nett. Educato heißt höflich, nicht gebildet (istruito). Il burro ist Butter.",
+      "Parenti sind Verwandte, nicht Eltern (genitori). Fattoria ist ein Bauernhof, keine Fabrik (fabbrica). Eventualmente heißt eventuell."
+     ],
+     "q": "Welcher falsche Freund überrascht dich am meisten? Hast du schon einmal einen verwechselt?",
+     "c": "Schreib fünf Sätze mit caldo, camera, libreria, morbido und parenti in ihrer echten italienischen Bedeutung."
+    },
+    "es": {
+     "t": "Falsos amigos del italiano",
+     "g": "Evitar trampas: palabras italianas que parecen conocidas pero significan otra cosa.",
+     "p": [
+      "Il burro es mantequilla, no un burro (asino). Caldo significa caliente, no caldo (brodo). La camera es la habitación.",
+      "Salire es subir, no salir (uscire). Guardare es mirar, no guardar (conservare). Morbido es blando, suave.",
+      "Subito es enseguida, no de repente. Parenti son familiares, no solo padres (genitori). Imbarazzato es avergonzado, nunca embarazada."
+     ],
+     "q": "¿Qué falso amigo te sorprende más? ¿Alguna vez has confundido alguno?",
+     "c": "Escribe cinco frases con burro, caldo, salire, guardare y subito con su significado italiano real."
+    },
+    "fr": {
+     "t": "Les faux amis de l'italien",
+     "g": "Éviter les pièges des mots italiens qui ressemblent au français mais veulent dire autre chose.",
+     "p": [
+      "La camera est une chambre, pas une caméra. La libreria est une librairie, mais la bibliothèque se dit biblioteca. Il burro est le beurre.",
+      "Morbido veut dire doux, moelleux, pas morbide. Caldo veut dire chaud, comme calorie. Salire veut dire monter, pas salir (sporcare).",
+      "Parenti sont les proches de la famille, pas seulement les parents (genitori). Fattoria est une ferme. Subito veut dire tout de suite."
+     ],
+     "q": "Quel faux ami te surprend le plus ? T'est-il déjà arrivé d'en confondre un ?",
+     "c": "Écris cinq phrases avec camera, morbido, caldo, salire et parenti dans leur vrai sens italien."
+    },
+    "it": {
+     "t": "I falsi amici",
+     "g": "Evitare le parole che sembrano familiari in un'altra lingua ma significano altro.",
+     "p": [
+      "Camera in italiano è la stanza da letto; per le foto si dice macchina fotografica. La libreria vende libri, la biblioteca li presta.",
+      "Morbido significa soffice. Caldo è il contrario di freddo. Burro è il grasso del latte. Salire significa andare su.",
+      "I parenti sono i familiari, i genitori sono madre e padre. Fattoria è un'azienda agricola. Subito vuol dire immediatamente."
+     ],
+     "q": "Quale falso amico ti sorprende di più? Ti è mai capitato di confonderne uno?",
+     "c": "Scrivi cinque frasi con camera, libreria, morbido, parenti e salire nel loro vero significato italiano."
+    },
+    "pt": {
+     "t": "Falsos amigos do italiano",
+     "g": "Evitar armadilhas: palavras italianas que parecem conhecidas mas querem dizer outra coisa.",
+     "p": [
+      "Il burro é manteiga, não um burro (asino). Caldo significa quente, não caldo (brodo). La camera é o quarto.",
+      "Salire é subir, não sair (uscire). Guardare é olhar, não guardar (conservare). Morbido é macio, fofo.",
+      "Subito é já, imediatamente. Parenti são familiares, não pais (genitori). Esquisito em italiano, squisito, significa delicioso!"
+     ],
+     "q": "Que falso amigo te surpreende mais? Já alguma vez confundiste algum?",
+     "c": "Escreve cinco frases com burro, caldo, salire, guardare e squisito com o seu sentido italiano real."
+    },
+    "pt_BR": {
+     "t": "Falsos amigos do italiano",
+     "g": "Evitar armadilhas: palavras italianas que parecem conhecidas mas significam outra coisa.",
+     "p": [
+      "Il burro é manteiga, não um burro (asino). Caldo significa quente, não caldo (brodo). La camera é o quarto.",
+      "Salire é subir, não sair (uscire). Guardare é olhar, não guardar (conservare). Morbido é macio, fofinho.",
+      "Subito é já, na hora. Parenti são parentes, não pais (genitori). E squisito, que parece esquisito, significa delicioso!"
+     ],
+     "q": "Qual falso amigo mais surpreende você? Já confundiu algum?",
+     "c": "Escreva cinco frases com burro, caldo, salire, guardare e squisito com o sentido italiano real."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la camera",
+      "ex": "La mia camera ha una finestra sul giardino."
+     },
+     {
+      "w": "morbido",
+      "ex": "Questo cuscino è morbidissimo."
+     },
+     {
+      "w": "i parenti",
+      "ex": "A Natale vengono tutti i parenti."
+     },
+     {
+      "w": "la libreria",
+      "ex": "Ho comprato questo romanzo in una libreria del centro."
+     },
+     {
+      "w": "il burro",
+      "ex": "Per la torta servono burro e zucchero."
+     },
+     {
+      "w": "salire",
+      "ex": "Saliamo al terzo piano a piedi."
+     }
+    ],
+    "gram": "Falsi amici: camera = stanza, libreria = negozio di libri, burro = grasso del latte, salire = andare su, caldo = non freddo."
+   }
+  },
+  {
+   "d": 174,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Common A2 mistakes",
+     "g": "Fix typical errors with articles, prepositions and essere versus avere.",
+     "p": [
+      "Articles: lo before s + consonant and z (lo studente, lo zaino); l' before vowels; il problema and il programma are masculine.",
+      "Prepositions: vado a Roma (city), in Italia (country), in banca, a casa, al cinema. Sono di Milano = I am from Milan.",
+      "Essere or avere: movement and change take essere (sono andato, è nato); most others avere. Ho 20 anni, not sono."
+     ],
+     "q": "Which mistake do you make most often in Italian? Let us fix it together.",
+     "c": "Correct these in your head, then write them right: sono 25 anni, il studente, vado in Roma, ho andato."
+    },
+    "de": {
+     "t": "Typische A2-Fehler",
+     "g": "Du korrigierst typische Fehler bei Artikeln, Präpositionen und essere oder avere.",
+     "p": [
+      "Artikel: lo vor s + Konsonant und z (lo studente, lo zaino); l' vor Vokalen; il problema und il programma sind maskulin.",
+      "Präpositionen: vado a Roma (Stadt), in Italia (Land), in banca, a casa, al cinema. Sono di Milano = ich komme aus Mailand.",
+      "Essere oder avere: Bewegung und Veränderung mit essere (sono andato, è nato); die meisten mit avere. Ho 20 anni, nicht sono."
+     ],
+     "q": "Welchen Fehler machst du im Italienischen am häufigsten? Lass ihn uns zusammen beheben.",
+     "c": "Korrigiere diese Sätze im Kopf und schreib sie richtig: sono 25 anni, il studente, vado in Roma, ho andato."
+    },
+    "es": {
+     "t": "Errores típicos del A2",
+     "g": "Corregir errores frecuentes con artículos, preposiciones y essere o avere.",
+     "p": [
+      "Artículos: lo ante s + consonante y z (lo studente, lo zaino); l' ante vocal; il problema e il programma son masculinos.",
+      "Preposiciones: vado a Roma (ciudad), in Italia (país), in banca, a casa, al cinema. Sono di Milano = soy de Milán.",
+      "Essere o avere: movimiento y cambio llevan essere (sono andato, è nato); casi todo lo demás avere. Ho 20 anni: la edad va con avere."
+     ],
+     "q": "¿Qué error cometes más en italiano? Vamos a corregirlo juntos.",
+     "c": "Corrige mentalmente y escribe bien: sono 25 anni, il studente, vado in Roma, ho andato."
+    },
+    "fr": {
+     "t": "Erreurs typiques du niveau A2",
+     "g": "Corriger les erreurs fréquentes d'articles, de prépositions et d'essere ou avere.",
+     "p": [
+      "Articles : lo devant s + consonne et z (lo studente, lo zaino) ; l' devant voyelle ; il problema et il programma sont masculins.",
+      "Prépositions : vado a Roma (ville), in Italia (pays), in banca, a casa, al cinema. Sono di Milano = je suis de Milan.",
+      "Essere ou avere : mouvement et changement avec essere (sono andato, è nato) ; le reste surtout avec avere. Ho 20 anni, comme j'ai 20 ans."
+     ],
+     "q": "Quelle erreur fais-tu le plus souvent en italien ? Corrigeons-la ensemble.",
+     "c": "Corrige dans ta tête puis écris correctement : sono 25 anni, il studente, vado in Roma, ho andato."
+    },
+    "it": {
+     "t": "Errori tipici del livello A2",
+     "g": "Correggere gli errori più comuni con articoli, preposizioni ed essere o avere.",
+     "p": [
+      "Articoli: lo davanti a s + consonante e z (lo studente, lo zaino); l' davanti a vocale; il problema, il programma sono maschili.",
+      "Preposizioni: vado a Roma (città), in Italia (paese), in banca, a casa, al cinema. Sono di Milano indica l'origine.",
+      "Essere o avere: movimento e cambiamento vogliono essere (sono andato, è nato); quasi tutto il resto avere. Ho vent'anni."
+     ],
+     "q": "Qual è l'errore che fai più spesso in italiano? Correggiamolo insieme.",
+     "c": "Correggi a mente e poi scrivi bene: sono 25 anni, il studente, vado in Roma, ho andato."
+    },
+    "pt": {
+     "t": "Erros típicos do A2",
+     "g": "Corrigir erros frequentes com artigos, preposições e essere ou avere.",
+     "p": [
+      "Artigos: lo antes de s + consoante e z (lo studente, lo zaino); l' antes de vogal; il problema e il programma são masculinos.",
+      "Preposições: vado a Roma (cidade), in Italia (país), in banca, a casa, al cinema. Sono di Milano = sou de Milão.",
+      "Essere ou avere: movimento e mudança com essere (sono andato, è nato); quase tudo o resto com avere. Ho 20 anni: a idade vai com avere."
+     ],
+     "q": "Que erro dás mais vezes em italiano? Vamos corrigi-lo juntos.",
+     "c": "Corrige mentalmente e escreve bem: sono 25 anni, il studente, vado in Roma, ho andato."
+    },
+    "pt_BR": {
+     "t": "Erros típicos do A2",
+     "g": "Corrigir erros comuns com artigos, preposições e essere ou avere.",
+     "p": [
+      "Artigos: lo antes de s + consoante e z (lo studente, lo zaino); l' antes de vogal; il problema e il programma são masculinos.",
+      "Preposições: vado a Roma (cidade), in Italia (país), in banca, a casa, al cinema. Sono di Milano = sou de Milão.",
+      "Essere ou avere: movimento e mudança com essere (sono andato, è nato); quase todo o resto com avere. Ho 20 anni: idade vai com avere."
+     ],
+     "q": "Qual erro você mais comete em italiano? Vamos corrigir juntos.",
+     "c": "Corrija mentalmente e escreva certo: sono 25 anni, il studente, vado in Roma, ho andato."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo studente",
+      "ex": "Lo studente nuovo si chiama Pietro."
+     },
+     {
+      "w": "il problema",
+      "ex": "Non c'è nessun problema, tranquillo."
+     },
+     {
+      "w": "vado a Roma",
+      "ex": "Domani vado a Roma per lavoro."
+     },
+     {
+      "w": "in Italia",
+      "ex": "Abito in Italia da due anni."
+     },
+     {
+      "w": "sono andato",
+      "ex": "Ieri sono andato al mercato con mia madre."
+     },
+     {
+      "w": "ho trent'anni",
+      "ex": "Ho trent'anni e lavoro in un ospedale."
+     }
+    ],
+    "gram": "A + città, in + paese; lo + s impura e z; essere con verbi di movimento e cambiamento (sono partito), avere con l'età."
+   }
+  },
+  {
+   "d": 175,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Listening tips: understanding natives",
+     "g": "Use strategies to follow fast speech and filler words.",
+     "p": [
+      "Natives link words: c'è un, l'ho, com'è, dov'è; and shorten: buongiorno sounds like ngiorno, va bene becomes vabbè.",
+      "Filler words give you time: allora (so), cioè (I mean), insomma (in short, well), dunque, ecco, praticamente, boh (no idea).",
+      "Strategy: listen for key words, not every word; use context; ask scusi, può ripetere? Watch with Italian subtitles."
+     ],
+     "q": "Which Italian filler word have you heard most often in films or songs?",
+     "c": "Listen to two minutes of Italian audio today and count how many times you hear allora, cioè and insomma."
+    },
+    "de": {
+     "t": "Hörtipps: Muttersprachler verstehen",
+     "g": "Du nutzt Strategien, um schnellem Sprechen und Füllwörtern zu folgen.",
+     "p": [
+      "Muttersprachler verbinden Wörter: c'è un, l'ho, com'è, dov'è; und kürzen: buongiorno klingt wie ngiorno, va bene wird vabbè.",
+      "Füllwörter geben dir Zeit: allora (also), cioè (das heißt), insomma (kurz gesagt, na ja), dunque, ecco, praticamente, boh (keine Ahnung).",
+      "Strategie: auf Schlüsselwörter achten, nicht auf jedes Wort; Kontext nutzen; scusi, può ripetere? Mit italienischen Untertiteln schauen."
+     ],
+     "q": "Welches italienische Füllwort hast du in Filmen oder Liedern am häufigsten gehört?",
+     "c": "Hör dir heute zwei Minuten italienisches Audio an und zähl, wie oft allora, cioè und insomma vorkommen."
+    },
+    "es": {
+     "t": "Consejos de escucha: entender a los nativos",
+     "g": "Usar estrategias para seguir el habla rápida y las muletillas.",
+     "p": [
+      "Los nativos enlazan palabras: c'è un, l'ho, com'è, dov'è; y acortan: buongiorno suena a ngiorno, va bene se vuelve vabbè.",
+      "Las muletillas te dan tiempo: allora (entonces), cioè (o sea), insomma (en fin), dunque, ecco, praticamente, boh (ni idea).",
+      "Estrategia: escucha palabras clave, no todas; usa el contexto; pide scusi, può ripetere? Mira series con subtítulos en italiano."
+     ],
+     "q": "¿Qué muletilla italiana has oído más en películas o canciones?",
+     "c": "Escucha hoy dos minutos de audio en italiano y cuenta cuántas veces oyes allora, cioè e insomma."
+    },
+    "fr": {
+     "t": "Conseils d'écoute : comprendre les natifs",
+     "g": "Utiliser des stratégies pour suivre un débit rapide et les mots de remplissage.",
+     "p": [
+      "Les natifs enchaînent les mots : c'è un, l'ho, com'è, dov'è ; et raccourcissent : buongiorno devient ngiorno, va bene devient vabbè.",
+      "Les mots de remplissage te donnent du temps : allora (alors), cioè (c'est-à-dire), insomma (bref, enfin), dunque, ecco, praticamente, boh.",
+      "Stratégie : repère les mots clés, pas chaque mot ; sers-toi du contexte ; demande scusi, può ripetere ? Regarde avec sous-titres italiens."
+     ],
+     "q": "Quel mot de remplissage italien as-tu le plus entendu dans des films ou chansons ?",
+     "c": "Écoute aujourd'hui deux minutes d'audio italien et compte combien de fois tu entends allora, cioè et insomma."
+    },
+    "it": {
+     "t": "Ascoltare: capire i madrelingua",
+     "g": "Usare strategie per seguire il parlato veloce e le parole riempitive.",
+     "p": [
+      "I madrelingua legano le parole: c'è un, l'ho, com'è, dov'è; e accorciano: buongiorno diventa ngiorno, va bene diventa vabbè.",
+      "Le parole riempitive danno tempo: allora, cioè, insomma, dunque, ecco, praticamente, boh (non lo so).",
+      "Strategia: ascolta le parole chiave, non ogni parola; usa il contesto; chiedi scusi, può ripetere? Guarda film con sottotitoli italiani."
+     ],
+     "q": "Quale parola riempitiva italiana hai sentito più spesso in film o canzoni?",
+     "c": "Ascolta oggi due minuti di audio in italiano e conta quante volte senti allora, cioè e insomma."
+    },
+    "pt": {
+     "t": "Dicas de audição: perceber os nativos",
+     "g": "Usar estratégias para acompanhar a fala rápida e as palavras de enchimento.",
+     "p": [
+      "Os nativos ligam palavras: c'è un, l'ho, com'è, dov'è; e encurtam: buongiorno soa a ngiorno, va bene passa a vabbè.",
+      "As palavras de enchimento dão-te tempo: allora (então), cioè (ou seja), insomma (enfim), dunque, ecco, praticamente, boh (sei lá).",
+      "Estratégia: ouve as palavras-chave, não todas; usa o contexto; pede scusi, può ripetere? Vê séries com legendas em italiano."
+     ],
+     "q": "Que palavra de enchimento italiana ouviste mais em filmes ou canções?",
+     "c": "Ouve hoje dois minutos de áudio em italiano e conta quantas vezes ouves allora, cioè e insomma."
+    },
+    "pt_BR": {
+     "t": "Dicas de escuta: entender os nativos",
+     "g": "Usar estratégias para acompanhar a fala rápida e as palavras de apoio.",
+     "p": [
+      "Os nativos ligam palavras: c'è un, l'ho, com'è, dov'è; e encurtam: buongiorno soa como ngiorno, va bene vira vabbè.",
+      "As palavras de apoio dão tempo: allora (então), cioè (ou seja), insomma (enfim), dunque, ecco, praticamente, boh (sei lá).",
+      "Estratégia: escute as palavras-chave, não todas; use o contexto; peça scusi, può ripetere? Assista com legendas em italiano."
+     ],
+     "q": "Que palavra de apoio italiana você mais ouviu em filmes ou músicas?",
+     "c": "Escute hoje dois minutos de áudio em italiano e conte quantas vezes ouve allora, cioè e insomma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "allora",
+      "ex": "Allora, che cosa facciamo stasera?"
+     },
+     {
+      "w": "cioè",
+      "ex": "È un lavoro difficile, cioè, molto stressante."
+     },
+     {
+      "w": "insomma",
+      "ex": "Insomma, la vacanza è andata bene."
+     },
+     {
+      "w": "ecco",
+      "ex": "Ecco, questo è il problema."
+     },
+     {
+      "w": "praticamente",
+      "ex": "Praticamente abbiamo finito tutto in un'ora."
+     },
+     {
+      "w": "boh",
+      "ex": "Dov'è Luca? Boh, non lo so."
+     }
+    ],
+    "gram": "Segnali discorsivi: allora (inizio), cioè (spiegazione), insomma (conclusione), ecco (presentare), boh (non lo so)."
+   }
+  },
+  {
+   "d": 176,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Pronunciation: double consonants",
+     "g": "Hear and say the difference between single and double consonants.",
+     "p": [
+      "Doubles are held longer, like a short pause: pala (shovel) vs palla (ball), casa (house) vs cassa (till).",
+      "The difference changes meaning: caro (dear) vs carro (cart), sete (thirst) vs sette (seven), nono (ninth) vs nonno (grandpa).",
+      "Tip: stop slightly on the double, as in English black cat. Practise: fatto, mamma, notte, bello, pizza, spaghetti."
+     ],
+     "q": "Can you say sette, nonno and palla slowly, holding the double sound?",
+     "c": "Record yourself saying five minimal pairs (pala/palla, casa/cassa, sete/sette, nono/nonno, caro/carro) and listen."
+    },
+    "de": {
+     "t": "Aussprache: Doppelkonsonanten",
+     "g": "Du hörst und sprichst den Unterschied zwischen einfachen und doppelten Konsonanten.",
+     "p": [
+      "Doppelte werden länger gehalten, wie eine kurze Pause: pala (Schaufel) vs palla (Ball), casa (Haus) vs cassa (Kasse).",
+      "Der Unterschied ändert die Bedeutung: caro (lieb) vs carro (Karren), sete (Durst) vs sette (sieben), nono (neunter) vs nonno (Opa).",
+      "Tipp: Halt kurz auf dem Doppelkonsonanten an, wie in Schiff-fahrt. Übe: fatto, mamma, notte, bello, pizza, spaghetti."
+     ],
+     "q": "Kannst du sette, nonno und palla langsam sagen und den Doppelklang halten?",
+     "c": "Nimm dich mit fünf Minimalpaaren auf (pala/palla, casa/cassa, sete/sette, nono/nonno, caro/carro) und hör zu."
+    },
+    "es": {
+     "t": "Pronunciación: consonantes dobles",
+     "g": "Oír y pronunciar la diferencia entre consonantes simples y dobles.",
+     "p": [
+      "Las dobles se alargan, como una pequeña pausa: pala vs palla (pelota), casa vs cassa (caja registradora).",
+      "La diferencia cambia el sentido: caro vs carro, sete (sed) vs sette (siete), nono (noveno) vs nonno (abuelo).",
+      "Truco: detente un instante en la doble. Practica: fatto, mamma, notte, bello, pizza, spaghetti. Ojo: rr italiana es como la española."
+     ],
+     "q": "¿Sabes decir sette, nonno y palla despacio, alargando la doble?",
+     "c": "Grábate diciendo cinco pares mínimos (pala/palla, casa/cassa, sete/sette, nono/nonno, caro/carro) y escúchate."
+    },
+    "fr": {
+     "t": "Prononciation : les consonnes doubles",
+     "g": "Entendre et prononcer la différence entre consonnes simples et doubles.",
+     "p": [
+      "Les doubles se tiennent plus longtemps, comme une petite pause : pala (pelle) vs palla (balle), casa (maison) vs cassa (caisse).",
+      "La différence change le sens : caro (cher) vs carro (char), sete (soif) vs sette (sept), nono (neuvième) vs nonno (grand-père).",
+      "Astuce : marque un léger arrêt sur la double, comme dans là-dedans. Entraîne-toi : fatto, mamma, notte, bello, pizza, spaghetti."
+     ],
+     "q": "Sais-tu dire sette, nonno et palla lentement en tenant la double ?",
+     "c": "Enregistre-toi avec cinq paires minimales (pala/palla, casa/cassa, sete/sette, nono/nonno, caro/carro) et écoute."
+    },
+    "it": {
+     "t": "Pronuncia: le doppie",
+     "g": "Sentire e pronunciare la differenza tra consonanti semplici e doppie.",
+     "p": [
+      "Le doppie durano di più, come una piccola pausa: pala e palla, casa e cassa.",
+      "La differenza cambia il significato: caro e carro, sete e sette, nono e nonno.",
+      "Consiglio: fermati un istante sulla doppia. Esercitati con fatto, mamma, notte, bello, pizza, spaghetti."
+     ],
+     "q": "Sai dire sette, nonno e palla lentamente, tenendo bene la doppia?",
+     "c": "Registrati mentre dici cinque coppie minime (pala/palla, casa/cassa, sete/sette, nono/nonno, caro/carro) e riascoltati."
+    },
+    "pt": {
+     "t": "Pronúncia: consoantes duplas",
+     "g": "Ouvir e dizer a diferença entre consoantes simples e duplas.",
+     "p": [
+      "As duplas duram mais, como uma pequena pausa: pala (pá) vs palla (bola), casa vs cassa (caixa registadora).",
+      "A diferença muda o sentido: caro vs carro, sete (sede) vs sette (sete), nono (nono) vs nonno (avô).",
+      "Dica: para um instante na dupla. Pratica: fatto, mamma, notte, bello, pizza, spaghetti. Atenção: sete em italiano é sede!"
+     ],
+     "q": "Consegues dizer sette, nonno e palla devagar, segurando a dupla?",
+     "c": "Grava-te a dizer cinco pares mínimos (pala/palla, casa/cassa, sete/sette, nono/nonno, caro/carro) e ouve."
+    },
+    "pt_BR": {
+     "t": "Pronúncia: consoantes duplas",
+     "g": "Ouvir e falar a diferença entre consoantes simples e duplas.",
+     "p": [
+      "As duplas duram mais, como uma pausinha: pala (pá) vs palla (bola), casa vs cassa (caixa registradora).",
+      "A diferença muda o sentido: caro vs carro, sete (sede) vs sette (sete), nono (nono) vs nonno (avô).",
+      "Dica: segure um instante na dupla. Pratique: fatto, mamma, notte, bello, pizza, spaghetti. Atenção: sete em italiano é sede!"
+     ],
+     "q": "Você consegue dizer sette, nonno e palla devagar, segurando a dupla?",
+     "c": "Grave você dizendo cinco pares mínimos (pala/palla, casa/cassa, sete/sette, nono/nonno, caro/carro) e escute."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la palla",
+      "ex": "I bambini giocano con la palla in cortile."
+     },
+     {
+      "w": "la cassa",
+      "ex": "Si paga alla cassa vicino all'uscita."
+     },
+     {
+      "w": "sette",
+      "ex": "Ci vediamo alle sette davanti al cinema."
+     },
+     {
+      "w": "il nonno",
+      "ex": "Mio nonno racconta storie bellissime."
+     },
+     {
+      "w": "il carro",
+      "ex": "A Carnevale passa un carro enorme."
+     },
+     {
+      "w": "ho sete",
+      "ex": "Fa caldo e ho molta sete."
+     }
+    ],
+    "gram": "Le consonanti doppie si pronunciano più lunghe e cambiano il significato: pala/palla, caro/carro, sete/sette, nono/nonno."
+   }
+  },
+  {
+   "d": 177,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Pronunciation: gl, gn and sc",
+     "g": "Pronounce the tricky Italian sounds gl, gn and sc.",
+     "p": [
+      "Gli sounds like lli in million, said softly: famiglia, figlio, aglio, luglio, biglietto. Keep the tongue flat.",
+      "Gn sounds like ny in canyon: gnocchi, bagno, sogno, lasagne, montagna, Spagna.",
+      "Sc before e or i sounds like sh: sciare, pesce, scena, uscire. Before a, o, u or h it is sk: scuola, scarpe, schema."
+     ],
+     "q": "Can you say la mia famiglia mangia gnocchi e pesce in montagna three times fast?",
+     "c": "Read aloud: biglietto, lasagne, sciarpa, scuola, figlio, sogno, pesce, schiena. Mark the ones that are hard for you."
+    },
+    "de": {
+     "t": "Aussprache: gl, gn und sc",
+     "g": "Du sprichst die schwierigen Laute gl, gn und sc richtig aus.",
+     "p": [
+      "Gli klingt wie ein weiches lj: famiglia, figlio, aglio, luglio, biglietto. Die Zunge flach halten.",
+      "Gn klingt wie nj in Champagner: gnocchi, bagno, sogno, lasagne, montagna, Spagna.",
+      "Sc vor e oder i klingt wie sch: sciare, pesce, scena, uscire. Vor a, o, u oder h ist es sk: scuola, scarpe, schema."
+     ],
+     "q": "Kannst du la mia famiglia mangia gnocchi e pesce in montagna dreimal schnell sagen?",
+     "c": "Lies laut: biglietto, lasagne, sciarpa, scuola, figlio, sogno, pesce, schiena. Markier die schwierigen."
+    },
+    "es": {
+     "t": "Pronunciación: gl, gn y sc",
+     "g": "Pronunciar los sonidos difíciles gl, gn y sc.",
+     "p": [
+      "Gli suena parecido a la ll tradicional de calle: famiglia, figlio, aglio, luglio, biglietto. Lengua plana.",
+      "Gn suena como la ñ: gnocchi (ñoqui), bagno, sogno, lasagne, montagna, Spagna (España).",
+      "Sc ante e o i suena como sh: sciare, pesce, scena, uscire. Ante a, o, u o h es sk: scuola, scarpe, schema."
+     ],
+     "q": "¿Puedes decir la mia famiglia mangia gnocchi e pesce in montagna tres veces rápido?",
+     "c": "Lee en voz alta: biglietto, lasagne, sciarpa, scuola, figlio, sogno, pesce, schiena. Marca las difíciles."
+    },
+    "fr": {
+     "t": "Prononciation : gl, gn et sc",
+     "g": "Prononcer les sons italiens difficiles gl, gn et sc.",
+     "p": [
+      "Gli ressemble à un l mouillé, proche de lli : famiglia, figlio, aglio, luglio, biglietto. Langue bien à plat.",
+      "Gn se prononce comme en français dans montagne : gnocchi, bagno, sogno, lasagne, montagna, Spagna.",
+      "Sc devant e ou i se prononce ch : sciare, pesce, scena, uscire. Devant a, o, u ou h c'est sk : scuola, scarpe, schema."
+     ],
+     "q": "Peux-tu dire la mia famiglia mangia gnocchi e pesce in montagna trois fois vite ?",
+     "c": "Lis à voix haute : biglietto, lasagne, sciarpa, scuola, figlio, sogno, pesce, schiena. Note les plus difficiles."
+    },
+    "it": {
+     "t": "Pronuncia: gl, gn e sc",
+     "g": "Pronunciare bene i suoni gl, gn e sc.",
+     "p": [
+      "Gli è un suono morbido, con la lingua appoggiata al palato: famiglia, figlio, aglio, luglio, biglietto.",
+      "Gn è un suono nasale unico: gnocchi, bagno, sogno, lasagne, montagna, Spagna.",
+      "Sc davanti a e o i ha un suono dolce: sciare, pesce, scena, uscire. Davanti a a, o, u o h è duro: scuola, scarpe, schema."
+     ],
+     "q": "Sai dire la mia famiglia mangia gnocchi e pesce in montagna tre volte di seguito, veloce?",
+     "c": "Leggi ad alta voce: biglietto, lasagne, sciarpa, scuola, figlio, sogno, pesce, schiena. Segna quelle difficili."
+    },
+    "pt": {
+     "t": "Pronúncia: gl, gn e sc",
+     "g": "Pronunciar os sons difíceis gl, gn e sc.",
+     "p": [
+      "Gli soa como o lh português: famiglia (família), figlio (filho), aglio (alho), luglio, biglietto.",
+      "Gn soa como o nh: gnocchi (nhoque), bagno, sogno (sonho), lasagne, montagna (montanha), Spagna.",
+      "Sc antes de e ou i soa como ch: sciare, pesce, scena, uscire. Antes de a, o, u ou h é sk: scuola, scarpe, schema."
+     ],
+     "q": "Consegues dizer la mia famiglia mangia gnocchi e pesce in montagna três vezes depressa?",
+     "c": "Lê em voz alta: biglietto, lasagne, sciarpa, scuola, figlio, sogno, pesce, schiena. Marca as difíceis."
+    },
+    "pt_BR": {
+     "t": "Pronúncia: gl, gn e sc",
+     "g": "Pronunciar os sons difíceis gl, gn e sc.",
+     "p": [
+      "Gli soa como o lh: famiglia (família), figlio (filho), aglio (alho), luglio, biglietto.",
+      "Gn soa como o nh: gnocchi (nhoque), bagno, sogno (sonho), lasagne, montagna (montanha), Spagna.",
+      "Sc antes de e ou i soa como ch (x): sciare, pesce, scena, uscire. Antes de a, o, u ou h é sk: scuola, scarpe, schema."
+     ],
+     "q": "Você consegue dizer la mia famiglia mangia gnocchi e pesce in montagna três vezes rápido?",
+     "c": "Leia em voz alta: biglietto, lasagne, sciarpa, scuola, figlio, sogno, pesce, schiena. Marque as difíceis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la famiglia",
+      "ex": "La mia famiglia vive in un paese vicino a Bari."
+     },
+     {
+      "w": "il biglietto",
+      "ex": "Ho già comprato il biglietto del treno."
+     },
+     {
+      "w": "gli gnocchi",
+      "ex": "Il giovedì a Roma si mangiano gli gnocchi."
+     },
+     {
+      "w": "il sogno",
+      "ex": "Il mio sogno è vivere in Toscana."
+     },
+     {
+      "w": "sciare",
+      "ex": "D'inverno andiamo a sciare sulle Dolomiti."
+     },
+     {
+      "w": "la scuola",
+      "ex": "La scuola è a dieci minuti da casa."
+     }
+    ],
+    "gram": "Gli e gn hanno un suono palatale (figlio, sogno); sc + e/i = suono dolce (pesce, sci), sc + a/o/u/h = suono duro (scuola)."
+   }
+  },
+  {
+   "d": 178,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Talking about the weekend plans",
+     "g": "Combine future and present to describe what you will do next weekend.",
+     "p": [
+      "Fixed plans often use the present: sabato vado al mare, domenica pranzo dai miei (at my parents').",
+      "The future adds intention or less certainty: forse andrò al cinema, se farà bello faremo una gita.",
+      "Useful: ho intenzione di (I intend to), penso di, ho in programma (I have planned), stare per (to be about to)."
+     ],
+     "q": "What are your plans for next weekend? Tell me one sure thing and one maybe.",
+     "c": "Write your weekend plan: two sentences in the present for fixed plans and two in the future with forse or se."
+    },
+    "de": {
+     "t": "Über Wochenendpläne sprechen",
+     "g": "Du kombinierst Futur und Präsens, um dein nächstes Wochenende zu beschreiben.",
+     "p": [
+      "Feste Pläne oft im Präsens: sabato vado al mare, domenica pranzo dai miei (bei meinen Eltern).",
+      "Das Futur zeigt Absicht oder Unsicherheit: forse andrò al cinema, se farà bello faremo una gita.",
+      "Nützlich: ho intenzione di (ich habe vor), penso di, ho in programma (ich habe geplant), stare per (gerade dabei sein)."
+     ],
+     "q": "Was hast du nächstes Wochenende vor? Sag mir etwas Sicheres und ein Vielleicht.",
+     "c": "Schreib deinen Wochenendplan: zwei Sätze im Präsens für feste Pläne und zwei im Futur mit forse oder se."
+    },
+    "es": {
+     "t": "Hablar de los planes del fin de semana",
+     "g": "Combinar futuro y presente para contar qué harás el próximo fin de semana.",
+     "p": [
+      "Los planes fijos suelen ir en presente: sabato vado al mare, domenica pranzo dai miei (en casa de mis padres).",
+      "El futuro añade intención o menos certeza: forse andrò al cinema, se farà bello faremo una gita.",
+      "Útil: ho intenzione di (tengo intención de), penso di, ho in programma (tengo previsto), stare per (estar a punto de)."
+     ],
+     "q": "¿Qué planes tienes para el próximo fin de semana? Dime algo seguro y algo quizá.",
+     "c": "Escribe tu plan del finde: dos frases en presente para lo fijo y dos en futuro con forse o se."
+    },
+    "fr": {
+     "t": "Parler de ses projets du week-end",
+     "g": "Combiner futur et présent pour décrire ton prochain week-end.",
+     "p": [
+      "Les projets fixés se disent souvent au présent : sabato vado al mare, domenica pranzo dai miei (chez mes parents).",
+      "Le futur ajoute une intention ou moins de certitude : forse andrò al cinema, se farà bello faremo una gita.",
+      "Utile : ho intenzione di (j'ai l'intention de), penso di, ho in programma (j'ai prévu), stare per (être sur le point de)."
+     ],
+     "q": "Quels sont tes projets pour le week-end prochain ? Dis-moi une chose sûre et un peut-être.",
+     "c": "Écris ton programme du week-end : deux phrases au présent pour le fixé et deux au futur avec forse ou se."
+    },
+    "it": {
+     "t": "I programmi per il fine settimana",
+     "g": "Combinare futuro e presente per raccontare che cosa farai il prossimo fine settimana.",
+     "p": [
+      "I programmi sicuri usano spesso il presente: sabato vado al mare, domenica pranzo dai miei.",
+      "Il futuro aggiunge intenzione o incertezza: forse andrò al cinema, se farà bello faremo una gita.",
+      "Utile: ho intenzione di, penso di, ho in programma, stare per + infinito (sto per uscire)."
+     ],
+     "q": "Che programmi hai per il prossimo fine settimana? Dimmi una cosa sicura e una forse.",
+     "c": "Scrivi il tuo programma: due frasi al presente per le cose sicure e due al futuro con forse o se."
+    },
+    "pt": {
+     "t": "Falar dos planos do fim de semana",
+     "g": "Combinar futuro e presente para dizer o que vais fazer no próximo fim de semana.",
+     "p": [
+      "Planos fixos usam muitas vezes o presente: sabato vado al mare, domenica pranzo dai miei (em casa dos meus pais).",
+      "O futuro junta intenção ou menos certeza: forse andrò al cinema, se farà bello faremo una gita.",
+      "Útil: ho intenzione di (tenciono), penso di, ho in programma (tenho planeado), stare per (estar prestes a)."
+     ],
+     "q": "Que planos tens para o próximo fim de semana? Diz-me uma coisa certa e uma talvez.",
+     "c": "Escreve o teu plano: duas frases no presente para o que é certo e duas no futuro com forse ou se."
+    },
+    "pt_BR": {
+     "t": "Falar dos planos do fim de semana",
+     "g": "Combinar futuro e presente para dizer o que você vai fazer no próximo fim de semana.",
+     "p": [
+      "Planos certos costumam ir no presente: sabato vado al mare, domenica pranzo dai miei (na casa dos meus pais).",
+      "O futuro acrescenta intenção ou menos certeza: forse andrò al cinema, se farà bello faremo una gita.",
+      "Útil: ho intenzione di (pretendo), penso di, ho in programma (estou planejando), stare per (estar prestes a)."
+     ],
+     "q": "Quais são seus planos para o próximo fim de semana? Diga uma coisa certa e uma talvez.",
+     "c": "Escreva seu plano: duas frases no presente para o que é certo e duas no futuro com forse ou se."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sabato vado",
+      "ex": "Sabato vado a trovare mia zia a Verona."
+     },
+     {
+      "w": "dai miei",
+      "ex": "Domenica pranzo dai miei, come sempre."
+     },
+     {
+      "w": "forse andrò",
+      "ex": "Forse andrò al cinema con Sara."
+     },
+     {
+      "w": "ho intenzione di",
+      "ex": "Ho intenzione di riposarmi tutto il weekend."
+     },
+     {
+      "w": "ho in programma",
+      "ex": "Per domenica ho in programma una gita al lago."
+     },
+     {
+      "w": "sto per uscire",
+      "ex": "Ti richiamo dopo, sto per uscire."
+     }
+    ],
+    "gram": "Presente per programmi sicuri (domani parto), futuro per intenzioni e ipotesi (forse partirò); stare per + infinito."
+   }
+  },
+  {
+   "d": 179,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing your neighbourhood",
+     "g": "Talk about the shops, services and atmosphere where you live.",
+     "p": [
+      "Il quartiere is your neighbourhood. Shops and services: il panificio, la farmacia, l'edicola (newsstand), il parco, la fermata.",
+      "Location: vicino a, lontano da, di fronte a (opposite), accanto a (next to), in fondo alla strada (at the end of the street).",
+      "Atmosphere: è tranquillo, vivace, rumoroso, verde; ci sono tanti giovani; mi trovo bene qui (I feel at home here)."
+     ],
+     "q": "What do you like most about your quartiere, and what is missing?",
+     "c": "Describe your neighbourhood in five sentences: two shops, one place with di fronte a or accanto a, the atmosphere, your opinion."
+    },
+    "de": {
+     "t": "Dein Viertel beschreiben",
+     "g": "Du sprichst über Läden, Dienste und die Atmosphäre in deinem Wohnviertel.",
+     "p": [
+      "Il quartiere ist dein Viertel. Läden und Dienste: il panificio, la farmacia, l'edicola (Kiosk), il parco, la fermata.",
+      "Lage: vicino a, lontano da, di fronte a (gegenüber), accanto a (neben), in fondo alla strada (am Ende der Straße).",
+      "Atmosphäre: è tranquillo, vivace, rumoroso, verde; ci sono tanti giovani; mi trovo bene qui (ich fühle mich hier wohl)."
+     ],
+     "q": "Was gefällt dir an deinem quartiere am besten, und was fehlt?",
+     "c": "Beschreib dein Viertel in fünf Sätzen: zwei Läden, ein Ort mit di fronte a oder accanto a, die Atmosphäre, deine Meinung."
+    },
+    "es": {
+     "t": "Describir tu barrio",
+     "g": "Hablar de las tiendas, los servicios y el ambiente donde vives.",
+     "p": [
+      "Il quartiere es tu barrio. Tiendas y servicios: il panificio, la farmacia, l'edicola (quiosco), il parco, la fermata.",
+      "Ubicación: vicino a, lontano da, di fronte a (enfrente de), accanto a (al lado de), in fondo alla strada (al final de la calle).",
+      "Ambiente: è tranquillo, vivace, rumoroso, verde; ci sono tanti giovani; mi trovo bene qui (estoy a gusto aquí)."
+     ],
+     "q": "¿Qué es lo que más te gusta de tu quartiere y qué falta?",
+     "c": "Describe tu barrio en cinco frases: dos tiendas, un lugar con di fronte a o accanto a, el ambiente y tu opinión."
+    },
+    "fr": {
+     "t": "Décrire ton quartier",
+     "g": "Parler des commerces, des services et de l'ambiance là où tu vis.",
+     "p": [
+      "Il quartiere est ton quartier. Commerces et services : il panificio, la farmacia, l'edicola (kiosque), il parco, la fermata.",
+      "Situer : vicino a, lontano da, di fronte a (en face de), accanto a (à côté de), in fondo alla strada (au bout de la rue).",
+      "Ambiance : è tranquillo, vivace, rumoroso, verde ; ci sono tanti giovani ; mi trovo bene qui (je me sens bien ici)."
+     ],
+     "q": "Qu'aimes-tu le plus dans ton quartiere, et qu'est-ce qui manque ?",
+     "c": "Décris ton quartier en cinq phrases : deux commerces, un lieu avec di fronte a ou accanto a, l'ambiance, ton avis."
+    },
+    "it": {
+     "t": "Descrivere il tuo quartiere",
+     "g": "Parlare di negozi, servizi e atmosfera della zona in cui vivi.",
+     "p": [
+      "Negozi e servizi del quartiere: il panificio, la farmacia, l'edicola, il parco, la fermata dell'autobus.",
+      "Posizione: vicino a, lontano da, di fronte a, accanto a, in fondo alla strada, all'angolo.",
+      "Atmosfera: è tranquillo, vivace, rumoroso, verde; ci sono tanti giovani; mi trovo bene qui."
+     ],
+     "q": "Che cosa ti piace di più del tuo quartiere, e che cosa manca?",
+     "c": "Descrivi il tuo quartiere in cinque frasi: due negozi, un posto con di fronte a o accanto a, l'atmosfera e la tua opinione."
+    },
+    "pt": {
+     "t": "Descrever o teu bairro",
+     "g": "Falar das lojas, dos serviços e do ambiente onde vives.",
+     "p": [
+      "Il quartiere é o teu bairro. Lojas e serviços: il panificio (padaria), la farmacia, l'edicola (quiosque), il parco, la fermata.",
+      "Localização: vicino a, lontano da, di fronte a (em frente a), accanto a (ao lado de), in fondo alla strada (ao fundo da rua).",
+      "Ambiente: è tranquillo, vivace, rumoroso, verde; ci sono tanti giovani; mi trovo bene qui (sinto-me bem aqui)."
+     ],
+     "q": "Do que gostas mais no teu quartiere, e o que falta?",
+     "c": "Descreve o teu bairro em cinco frases: duas lojas, um sítio com di fronte a ou accanto a, o ambiente e a tua opinião."
+    },
+    "pt_BR": {
+     "t": "Descrever seu bairro",
+     "g": "Falar das lojas, dos serviços e do clima do lugar onde você mora.",
+     "p": [
+      "Il quartiere é o seu bairro. Lojas e serviços: il panificio (padaria), la farmacia, l'edicola (banca de jornal), il parco, la fermata.",
+      "Localização: vicino a, lontano da, di fronte a (em frente a), accanto a (ao lado de), in fondo alla strada (no fim da rua).",
+      "Clima: è tranquillo, vivace, rumoroso, verde; ci sono tanti giovani; mi trovo bene qui (me sinto bem aqui)."
+     ],
+     "q": "Do que você mais gosta no seu quartiere, e o que falta?",
+     "c": "Descreva seu bairro em cinco frases: duas lojas, um lugar com di fronte a ou accanto a, o clima e sua opinião."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il quartiere",
+      "ex": "Il mio quartiere è tranquillo e pieno di verde."
+     },
+     {
+      "w": "il panificio",
+      "ex": "Il panificio sotto casa apre alle sette."
+     },
+     {
+      "w": "l'edicola",
+      "ex": "Compro il giornale all'edicola in piazza."
+     },
+     {
+      "w": "di fronte a",
+      "ex": "La farmacia è di fronte alla scuola."
+     },
+     {
+      "w": "accanto a",
+      "ex": "Abito accanto a un piccolo parco."
+     },
+     {
+      "w": "mi trovo bene",
+      "ex": "Mi trovo bene qui, i vicini sono gentili."
+     }
+    ],
+    "gram": "Preposizioni di luogo: vicino a, lontano da, di fronte a, accanto a, in fondo a. Trovarsi bene / male in un posto."
+   }
+  },
+  {
+   "d": 180,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: A2 complete!",
+     "g": "Celebrate A2 by reviewing past, future, conditional, pronouns and real-life Italian.",
+     "p": [
+      "Past: passato prossimo for events, imperfetto for scenes and habits. Future: farò, sarà; for plans and guesses.",
+      "Conditional: vorrei, potrebbe, dovresti, mi piacerebbe. Pronouns: lo, gli, ne, ci, dimmelo. Relatives: che, cui.",
+      "Real life: renting, complaints, appointments, emails, interviews, travel stories. Complimenti, A2 completato!"
+     ],
+     "q": "What are you proudest of after these 180 days of Italian? Answer in Italian with sono orgoglioso/a di...",
+     "c": "Write a short letter to yourself in Italian: what you did (past), what you will do at B1 (future), and one dream (conditional)."
+    },
+    "de": {
+     "t": "Wiederholung: A2 geschafft!",
+     "g": "Du feierst A2 und wiederholst Vergangenheit, Futur, Konditional, Pronomen und Alltagsitalienisch.",
+     "p": [
+      "Vergangenheit: passato prossimo für Ereignisse, imperfetto für Szenen und Gewohnheiten. Futur: farò, sarà; für Pläne und Vermutungen.",
+      "Konditional: vorrei, potrebbe, dovresti, mi piacerebbe. Pronomen: lo, gli, ne, ci, dimmelo. Relativpronomen: che, cui.",
+      "Alltag: Wohnung mieten, Beschwerden, Termine, E-Mails, Vorstellungsgespräche, Reiseerzählungen. Complimenti, A2 completato!"
+     ],
+     "q": "Worauf bist du nach diesen 180 Tagen Italienisch am meisten stolz? Antworte auf Italienisch mit sono orgoglioso/a di...",
+     "c": "Schreib dir einen kurzen Brief auf Italienisch: was du gemacht hast (passato), was du in B1 tun wirst (futuro), ein Traum (condizionale)."
+    },
+    "es": {
+     "t": "Repaso: ¡A2 completado!",
+     "g": "Celebrar el A2 repasando pasado, futuro, condicional, pronombres y el italiano de la vida real.",
+     "p": [
+      "Pasado: passato prossimo para hechos, imperfetto para escenas y costumbres. Futuro: farò, sarà; para planes y suposiciones.",
+      "Condicional: vorrei, potrebbe, dovresti, mi piacerebbe. Pronombres: lo, gli, ne, ci, dimmelo. Relativos: che, cui.",
+      "Vida real: alquilar, reclamar, pedir cita, correos, entrevistas, relatos de viaje. Complimenti, A2 completato!"
+     ],
+     "q": "¿De qué estás más orgulloso tras estos 180 días de italiano? Responde en italiano con sono orgoglioso/a di...",
+     "c": "Escríbete una carta corta en italiano: qué hiciste (pasado), qué harás en B1 (futuro) y un sueño (condicional)."
+    },
+    "fr": {
+     "t": "Révision : A2 terminé !",
+     "g": "Fêter l'A2 en révisant passé, futur, conditionnel, pronoms et l'italien du quotidien.",
+     "p": [
+      "Passé : passato prossimo pour les faits, imperfetto pour le décor et les habitudes. Futur : farò, sarà ; projets et suppositions.",
+      "Conditionnel : vorrei, potrebbe, dovresti, mi piacerebbe. Pronoms : lo, gli, ne, ci, dimmelo. Relatifs : che, cui.",
+      "Vie réelle : louer, réclamer, prendre rendez-vous, e-mails, entretiens, récits de voyage. Complimenti, A2 completato !"
+     ],
+     "q": "De quoi es-tu le plus fier après ces 180 jours d'italien ? Réponds en italien avec sono orgoglioso/a di...",
+     "c": "Écris-toi une courte lettre en italien : ce que tu as fait (passé), ce que tu feras au B1 (futur) et un rêve (conditionnel)."
+    },
+    "it": {
+     "t": "Ripasso: A2 completato!",
+     "g": "Festeggiare l'A2 ripassando passato, futuro, condizionale, pronomi e italiano della vita reale.",
+     "p": [
+      "Passato: passato prossimo per i fatti, imperfetto per scene e abitudini. Futuro: farò, sarà; per programmi e ipotesi.",
+      "Condizionale: vorrei, potrebbe, dovresti, mi piacerebbe. Pronomi: lo, gli, ne, ci, dimmelo. Relativi: che, cui.",
+      "Vita reale: affittare casa, reclami, appuntamenti, email, colloqui, racconti di viaggio. Complimenti, A2 completato!"
+     ],
+     "q": "Di che cosa sei più orgoglioso dopo questi 180 giorni di italiano? Rispondi con sono orgoglioso/a di...",
+     "c": "Scrivi una breve lettera a te stesso: che cosa hai fatto (passato), che cosa farai al B1 (futuro) e un sogno (condizionale)."
+    },
+    "pt": {
+     "t": "Revisão: A2 concluído!",
+     "g": "Celebrar o A2 a rever passado, futuro, condicional, pronomes e o italiano do dia a dia.",
+     "p": [
+      "Passado: passato prossimo para factos, imperfetto para cenários e hábitos. Futuro: farò, sarà; para planos e suposições.",
+      "Condicional: vorrei, potrebbe, dovresti, mi piacerebbe. Pronomes: lo, gli, ne, ci, dimmelo. Relativos: che, cui.",
+      "Vida real: arrendar casa, reclamar, marcar consultas, emails, entrevistas, histórias de viagem. Complimenti, A2 completato!"
+     ],
+     "q": "De que te orgulhas mais depois destes 180 dias de italiano? Responde em italiano com sono orgoglioso/a di...",
+     "c": "Escreve uma carta curta a ti próprio em italiano: o que fizeste (passado), o que farás no B1 (futuro) e um sonho (condicional)."
+    },
+    "pt_BR": {
+     "t": "Revisão: A2 concluído!",
+     "g": "Comemorar o A2 revisando passado, futuro, condicional, pronomes e o italiano do dia a dia.",
+     "p": [
+      "Passado: passato prossimo para fatos, imperfetto para cenários e hábitos. Futuro: farò, sarà; para planos e suposições.",
+      "Condicional: vorrei, potrebbe, dovresti, mi piacerebbe. Pronomes: lo, gli, ne, ci, dimmelo. Relativos: che, cui.",
+      "Vida real: alugar casa, reclamar, marcar horário, e-mails, entrevistas, histórias de viagem. Complimenti, A2 completato!"
+     ],
+     "q": "Do que você mais se orgulha depois desses 180 dias de italiano? Responda em italiano com sono orgoglioso/a di...",
+     "c": "Escreva uma carta curta para você mesmo em italiano: o que fez (passado), o que fará no B1 (futuro) e um sonho (condicional)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sono orgoglioso di",
+      "ex": "Sono orgoglioso di parlare un po' di italiano."
+     },
+     {
+      "w": "ho imparato",
+      "ex": "In questi mesi ho imparato tantissimo."
+     },
+     {
+      "w": "quando ero",
+      "ex": "Quando ero all'inizio, non capivo quasi niente."
+     },
+     {
+      "w": "farò",
+      "ex": "Al livello B1 farò conversazioni più lunghe."
+     },
+     {
+      "w": "mi piacerebbe",
+      "ex": "Mi piacerebbe vivere un anno in Italia."
+     },
+     {
+      "w": "complimenti",
+      "ex": "Complimenti, hai completato il livello A2!"
+     }
+    ],
+    "gram": "Ripasso A2: passato prossimo e imperfetto, futuro semplice, condizionale presente, pronomi (lo, gli, ne, ci), che e cui."
+   }
+  }
+ ]
+}

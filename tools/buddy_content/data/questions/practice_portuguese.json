@@ -1,0 +1,1305 @@
+{
+"topic": "practice_portuguese",
+"questions": [
+{
+"id": "practice_portuguese-001",
+"lv": "any",
+"i18n": {
+"en": "What made you want to learn Portuguese?",
+"de": "Was hat dich dazu gebracht, Portugiesisch zu lernen?",
+"es": "¿Qué te animó a aprender portugués?",
+"fr": "Qu'est-ce qui t'a donné envie d'apprendre le portugais ?",
+"it": "Che cosa ti ha spinto a imparare il portoghese?",
+"pt": "O que te levou a querer aprender português?",
+"pt_BR": "O que fez você querer aprender português?"
+}
+},
+{
+"id": "practice_portuguese-002",
+"lv": "any",
+"i18n": {
+"en": "Which Portuguese word do you find the most beautiful?",
+"de": "Welches portugiesische Wort findest du am schönsten?",
+"es": "¿Qué palabra portuguesa te parece la más bonita?",
+"fr": "Quel mot portugais trouves-tu le plus beau ?",
+"it": "Qual è la parola portoghese che trovi più bella?",
+"pt": "Qual é a palavra portuguesa que achas mais bonita?",
+"pt_BR": "Qual palavra em português você acha mais bonita?"
+}
+},
+{
+"id": "practice_portuguese-003",
+"lv": "any",
+"i18n": {
+"en": "Would you rather visit Portugal or Brazil first, and why?",
+"de": "Würdest du zuerst lieber Portugal oder Brasilien besuchen, und warum?",
+"es": "¿Preferirías visitar primero Portugal o Brasil? ¿Por qué?",
+"fr": "Tu préférerais visiter d'abord le Portugal ou le Brésil, et pourquoi ?",
+"it": "Preferiresti visitare prima il Portogallo o il Brasile, e perché?",
+"pt": "Preferias visitar primeiro Portugal ou o Brasil, e porquê?",
+"pt_BR": "Você preferiria visitar primeiro Portugal ou o Brasil? Por quê?"
+}
+},
+{
+"id": "practice_portuguese-004",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite food from a Portuguese-speaking country?",
+"de": "Was ist dein Lieblingsessen aus einem portugiesischsprachigen Land?",
+"es": "¿Cuál es tu comida favorita de un país de habla portuguesa?",
+"fr": "Quel est ton plat préféré d'un pays lusophone ?",
+"it": "Qual è il tuo piatto preferito di un paese di lingua portoghese?",
+"pt": "Qual é a tua comida preferida de um país de língua portuguesa?",
+"pt_BR": "Qual é sua comida favorita de um país que fala português?"
+}
+},
+{
+"id": "practice_portuguese-005",
+"lv": "any",
+"i18n": {
+"en": "Do you know any songs in Portuguese?",
+"de": "Kennst du Lieder auf Portugiesisch?",
+"es": "¿Conoces alguna canción en portugués?",
+"fr": "Connais-tu des chansons en portugais ?",
+"it": "Conosci qualche canzone in portoghese?",
+"pt": "Conheces alguma canção em português?",
+"pt_BR": "Você conhece alguma música em português?"
+}
+},
+{
+"id": "practice_portuguese-006",
+"lv": "any",
+"i18n": {
+"en": "How do you usually practise a new language?",
+"de": "Wie übst du normalerweise eine neue Sprache?",
+"es": "¿Cómo sueles practicar un idioma nuevo?",
+"fr": "Comment pratiques-tu d'habitude une nouvelle langue ?",
+"it": "Come ti eserciti di solito con una nuova lingua?",
+"pt": "Como costumas praticar uma língua nova?",
+"pt_BR": "Como você costuma praticar um idioma novo?"
+}
+},
+{
+"id": "practice_portuguese-007",
+"lv": "any",
+"i18n": {
+"en": "What is the hardest part of Portuguese for you so far?",
+"de": "Was ist für dich bisher das Schwierigste am Portugiesischen?",
+"es": "¿Qué es lo más difícil del portugués para ti hasta ahora?",
+"fr": "Qu'est-ce qui est le plus difficile en portugais pour toi jusqu'ici ?",
+"it": "Qual è finora la parte più difficile del portoghese per te?",
+"pt": "Até agora, qual é a parte mais difícil do português para ti?",
+"pt_BR": "Até agora, qual é a parte mais difícil do português pra você?"
+}
+},
+{
+"id": "practice_portuguese-008",
+"lv": "any",
+"i18n": {
+"en": "Do you know anyone who speaks Portuguese?",
+"de": "Kennst du jemanden, der Portugiesisch spricht?",
+"es": "¿Conoces a alguien que hable portugués?",
+"fr": "Connais-tu quelqu'un qui parle portugais ?",
+"it": "Conosci qualcuno che parla portoghese?",
+"pt": "Conheces alguém que fale português?",
+"pt_BR": "Você conhece alguém que fala português?"
+}
+},
+{
+"id": "practice_portuguese-009",
+"lv": "any",
+"i18n": {
+"en": "Which Portuguese-speaking country would you love to discover?",
+"de": "Welches portugiesischsprachige Land würdest du gern entdecken?",
+"es": "¿Qué país de habla portuguesa te encantaría descubrir?",
+"fr": "Quel pays lusophone aimerais-tu découvrir ?",
+"it": "Quale paese di lingua portoghese ti piacerebbe scoprire?",
+"pt": "Que país de língua portuguesa adorarias descobrir?",
+"pt_BR": "Qual país de língua portuguesa você adoraria conhecer?"
+}
+},
+{
+"id": "practice_portuguese-010",
+"lv": "any",
+"i18n": {
+"en": "What would you like to be able to say in Portuguese a year from now?",
+"de": "Was möchtest du in einem Jahr auf Portugiesisch sagen können?",
+"es": "¿Qué te gustaría poder decir en portugués dentro de un año?",
+"fr": "Qu'aimerais-tu savoir dire en portugais dans un an ?",
+"it": "Che cosa vorresti saper dire in portoghese tra un anno?",
+"pt": "O que gostavas de conseguir dizer em português daqui a um ano?",
+"pt_BR": "O que você gostaria de conseguir dizer em português daqui a um ano?"
+}
+},
+{
+"id": "practice_portuguese-011",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer learning with music, films or books?",
+"de": "Lernst du lieber mit Musik, Filmen oder Büchern?",
+"es": "¿Prefieres aprender con música, películas o libros?",
+"fr": "Tu préfères apprendre avec la musique, les films ou les livres ?",
+"it": "Preferisci imparare con la musica, i film o i libri?",
+"pt": "Preferes aprender com música, filmes ou livros?",
+"pt_BR": "Você prefere aprender com música, filmes ou livros?"
+}
+},
+{
+"id": "practice_portuguese-012",
+"lv": "any",
+"i18n": {
+"en": "At what time of day do you like to study best?",
+"de": "Zu welcher Tageszeit lernst du am liebsten?",
+"es": "¿A qué hora del día prefieres estudiar?",
+"fr": "À quel moment de la journée préfères-tu étudier ?",
+"it": "In quale momento della giornata preferisci studiare?",
+"pt": "A que hora do dia preferes estudar?",
+"pt_BR": "Em que hora do dia você prefere estudar?"
+}
+},
+{
+"id": "practice_portuguese-013",
+"lv": "any",
+"i18n": {
+"en": "Have you ever tried a pastel de nata or a brigadeiro?",
+"de": "Hast du schon mal ein Pastel de Nata oder einen Brigadeiro probiert?",
+"es": "¿Has probado alguna vez un pastel de nata o un brigadeiro?",
+"fr": "As-tu déjà goûté un pastel de nata ou un brigadeiro ?",
+"it": "Hai mai assaggiato un pastel de nata o un brigadeiro?",
+"pt": "Já provaste um pastel de nata ou um brigadeiro?",
+"pt_BR": "Você já experimentou um pastel de nata ou um brigadeiro?"
+}
+},
+{
+"id": "practice_portuguese-014",
+"lv": "any",
+"i18n": {
+"en": "Which other languages do you speak or study?",
+"de": "Welche anderen Sprachen sprichst oder lernst du?",
+"es": "¿Qué otros idiomas hablas o estudias?",
+"fr": "Quelles autres langues parles-tu ou étudies-tu ?",
+"it": "Quali altre lingue parli o studi?",
+"pt": "Que outras línguas falas ou estudas?",
+"pt_BR": "Que outros idiomas você fala ou estuda?"
+}
+},
+{
+"id": "practice_portuguese-015",
+"lv": "any",
+"i18n": {
+"en": "What do you imagine when you hear the word saudade?",
+"de": "Woran denkst du, wenn du das Wort Saudade hörst?",
+"es": "¿Qué imaginas cuando oyes la palabra saudade?",
+"fr": "Qu'est-ce que tu imagines quand tu entends le mot saudade ?",
+"it": "Che cosa immagini quando senti la parola saudade?",
+"pt": "O que imaginas quando ouves a palavra saudade?",
+"pt_BR": "O que você imagina quando ouve a palavra saudade?"
+}
+},
+{
+"id": "practice_portuguese-016",
+"lv": "any",
+"i18n": {
+"en": "Which Portuguese sound do you find funny or tricky?",
+"de": "Welchen portugiesischen Laut findest du lustig oder knifflig?",
+"es": "¿Qué sonido del portugués te parece gracioso o difícil?",
+"fr": "Quel son du portugais trouves-tu amusant ou difficile ?",
+"it": "Quale suono del portoghese trovi buffo o difficile?",
+"pt": "Que som do português achas engraçado ou difícil?",
+"pt_BR": "Qual som do português você acha engraçado ou difícil?"
+}
+},
+{
+"id": "practice_portuguese-017",
+"lv": "any",
+"i18n": {
+"en": "If you could live in a Lusophone city for a month, which would you choose?",
+"de": "Wenn du einen Monat in einer portugiesischsprachigen Stadt leben könntest, welche wäre es?",
+"es": "Si pudieras vivir un mes en una ciudad lusófona, ¿cuál elegirías?",
+"fr": "Si tu pouvais vivre un mois dans une ville lusophone, laquelle choisirais-tu ?",
+"it": "Se potessi vivere un mese in una città lusofona, quale sceglieresti?",
+"pt": "Se pudesses viver um mês numa cidade lusófona, qual escolherias?",
+"pt_BR": "Se você pudesse morar um mês numa cidade lusófona, qual escolheria?"
+}
+},
+{
+"id": "practice_portuguese-018",
+"lv": "any",
+"i18n": {
+"en": "What is one small goal for your Portuguese this week?",
+"de": "Was ist ein kleines Ziel für dein Portugiesisch diese Woche?",
+"es": "¿Cuál es un pequeño objetivo para tu portugués esta semana?",
+"fr": "Quel petit objectif as-tu pour ton portugais cette semaine ?",
+"it": "Qual è un piccolo obiettivo per il tuo portoghese questa settimana?",
+"pt": "Qual é um pequeno objetivo para o teu português esta semana?",
+"pt_BR": "Qual é uma pequena meta para o seu português nesta semana?"
+}
+},
+{
+"id": "practice_portuguese-019",
+"lv": "any",
+"i18n": {
+"en": "Do you like football? Do you know any Brazilian or Portuguese players?",
+"de": "Magst du Fußball? Kennst du brasilianische oder portugiesische Spieler?",
+"es": "¿Te gusta el fútbol? ¿Conoces a algún jugador brasileño o portugués?",
+"fr": "Tu aimes le foot ? Tu connais des joueurs brésiliens ou portugais ?",
+"it": "Ti piace il calcio? Conosci qualche giocatore brasiliano o portoghese?",
+"pt": "Gostas de futebol? Conheces algum jogador brasileiro ou português?",
+"pt_BR": "Você gosta de futebol? Conhece algum jogador brasileiro ou português?"
+}
+},
+{
+"id": "practice_portuguese-020",
+"lv": "any",
+"i18n": {
+"en": "What kind of music do you enjoy most?",
+"de": "Welche Art von Musik hörst du am liebsten?",
+"es": "¿Qué tipo de música disfrutas más?",
+"fr": "Quel genre de musique aimes-tu le plus ?",
+"it": "Che genere di musica ti piace di più?",
+"pt": "Que tipo de música gostas mais de ouvir?",
+"pt_BR": "Que tipo de música você mais curte?"
+}
+},
+{
+"id": "practice_portuguese-021",
+"lv": "any",
+"i18n": {
+"en": "How do you celebrate when you learn something new?",
+"de": "Wie feierst du es, wenn du etwas Neues gelernt hast?",
+"es": "¿Cómo celebras cuando aprendes algo nuevo?",
+"fr": "Comment fêtes-tu le fait d'apprendre quelque chose de nouveau ?",
+"it": "Come festeggi quando impari qualcosa di nuovo?",
+"pt": "Como celebras quando aprendes algo novo?",
+"pt_BR": "Como você comemora quando aprende algo novo?"
+}
+},
+{
+"id": "practice_portuguese-022",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer practising by text or by voice?",
+"de": "Übst du lieber schriftlich oder mit Sprachnachrichten?",
+"es": "¿Prefieres practicar por escrito o por voz?",
+"fr": "Tu préfères pratiquer à l'écrit ou à l'oral ?",
+"it": "Preferisci esercitarti per iscritto o a voce?",
+"pt": "Preferes praticar por escrito ou por voz?",
+"pt_BR": "Você prefere praticar por texto ou por voz?"
+}
+},
+{
+"id": "practice_portuguese-023",
+"lv": "any",
+"i18n": {
+"en": "Which topic would you love to talk about in Portuguese?",
+"de": "Über welches Thema würdest du gern auf Portugiesisch sprechen?",
+"es": "¿De qué tema te encantaría hablar en portugués?",
+"fr": "De quel sujet aimerais-tu parler en portugais ?",
+"it": "Di quale argomento ti piacerebbe parlare in portoghese?",
+"pt": "Sobre que tema adorarias falar em português?",
+"pt_BR": "Sobre qual assunto você adoraria falar em português?"
+}
+},
+{
+"id": "practice_portuguese-024",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite beach or seaside place?",
+"de": "Was ist dein Lieblingsstrand oder dein liebster Ort am Meer?",
+"es": "¿Cuál es tu playa o lugar costero favorito?",
+"fr": "Quelle est ta plage ou ton coin de mer préféré ?",
+"it": "Qual è la tua spiaggia o località di mare preferita?",
+"pt": "Qual é a tua praia ou sítio à beira-mar preferido?",
+"pt_BR": "Qual é sua praia ou lugar à beira-mar favorito?"
+}
+},
+{
+"id": "practice_portuguese-025",
+"lv": "any",
+"i18n": {
+"en": "Do you like coffee? How do you take it?",
+"de": "Magst du Kaffee? Wie trinkst du ihn?",
+"es": "¿Te gusta el café? ¿Cómo lo tomas?",
+"fr": "Tu aimes le café ? Comment le prends-tu ?",
+"it": "Ti piace il caffè? Come lo prendi?",
+"pt": "Gostas de café? Como é que o tomas?",
+"pt_BR": "Você gosta de café? Como você toma?"
+}
+},
+{
+"id": "practice_portuguese-026",
+"lv": "any",
+"i18n": {
+"en": "What are your hobbies?",
+"de": "Was sind deine Hobbys?",
+"es": "¿Cuáles son tus aficiones?",
+"fr": "Quels sont tes loisirs ?",
+"it": "Quali sono i tuoi hobby?",
+"pt": "Quais são os teus passatempos?",
+"pt_BR": "Quais são os seus hobbies?"
+}
+},
+{
+"id": "practice_portuguese-027",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect weekend look like for you?",
+"de": "Wie sieht für dich ein perfektes Wochenende aus?",
+"es": "¿Cómo sería para ti un fin de semana perfecto?",
+"fr": "À quoi ressemble un week-end parfait pour toi ?",
+"it": "Com'è per te un fine settimana perfetto?",
+"pt": "Como é para ti um fim de semana perfeito?",
+"pt_BR": "Como é um fim de semana perfeito pra você?"
+}
+},
+{
+"id": "practice_portuguese-028",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer the city or the countryside?",
+"de": "Magst du lieber die Stadt oder das Land?",
+"es": "¿Prefieres la ciudad o el campo?",
+"fr": "Tu préfères la ville ou la campagne ?",
+"it": "Preferisci la città o la campagna?",
+"pt": "Preferes a cidade ou o campo?",
+"pt_BR": "Você prefere a cidade ou o campo?"
+}
+},
+{
+"id": "practice_portuguese-029",
+"lv": "any",
+"i18n": {
+"en": "What is the best trip you have ever taken?",
+"de": "Was war die schönste Reise, die du je gemacht hast?",
+"es": "¿Cuál es el mejor viaje que has hecho?",
+"fr": "Quel est le plus beau voyage que tu aies fait ?",
+"it": "Qual è il viaggio più bello che hai fatto?",
+"pt": "Qual foi a melhor viagem que já fizeste?",
+"pt_BR": "Qual foi a melhor viagem que você já fez?"
+}
+},
+{
+"id": "practice_portuguese-030",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer cooking at home or eating out?",
+"de": "Kochst du lieber zu Hause oder gehst du lieber essen?",
+"es": "¿Prefieres cocinar en casa o comer fuera?",
+"fr": "Tu préfères cuisiner chez toi ou manger dehors ?",
+"it": "Preferisci cucinare a casa o mangiare fuori?",
+"pt": "Preferes cozinhar em casa ou comer fora?",
+"pt_BR": "Você prefere cozinhar em casa ou comer fora?"
+}
+},
+{
+"id": "practice_portuguese-031",
+"lv": "any",
+"i18n": {
+"en": "What always makes you smile?",
+"de": "Was bringt dich immer zum Lächeln?",
+"es": "¿Qué es lo que siempre te hace sonreír?",
+"fr": "Qu'est-ce qui te fait toujours sourire ?",
+"it": "Che cosa ti fa sempre sorridere?",
+"pt": "O que é que te faz sempre sorrir?",
+"pt_BR": "O que sempre faz você sorrir?"
+}
+},
+{
+"id": "practice_portuguese-032",
+"lv": "any",
+"i18n": {
+"en": "Which festival in a Lusophone country would you love to see?",
+"de": "Welches Fest in einem portugiesischsprachigen Land würdest du gern erleben?",
+"es": "¿Qué fiesta de un país lusófono te encantaría ver?",
+"fr": "Quelle fête d'un pays lusophone aimerais-tu voir ?",
+"it": "Quale festa di un paese lusofono ti piacerebbe vedere?",
+"pt": "Que festa de um país lusófono adorarias ver?",
+"pt_BR": "Qual festa de um país lusófono você adoraria ver?"
+}
+},
+{
+"id": "practice_portuguese-033",
+"lv": "any",
+"i18n": {
+"en": "Do you find European or Brazilian Portuguese easier to understand?",
+"de": "Verstehst du europäisches oder brasilianisches Portugiesisch leichter?",
+"es": "¿Te resulta más fácil entender el portugués europeo o el brasileño?",
+"fr": "Tu comprends plus facilement le portugais européen ou brésilien ?",
+"it": "Capisci più facilmente il portoghese europeo o quello brasiliano?",
+"pt": "Achas mais fácil perceber o português europeu ou o do Brasil?",
+"pt_BR": "Você acha mais fácil entender o português europeu ou o brasileiro?"
+}
+},
+{
+"id": "practice_portuguese-034",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite season, and why?",
+"de": "Was ist deine Lieblingsjahreszeit, und warum?",
+"es": "¿Cuál es tu estación favorita y por qué?",
+"fr": "Quelle est ta saison préférée, et pourquoi ?",
+"it": "Qual è la tua stagione preferita, e perché?",
+"pt": "Qual é a tua estação do ano preferida, e porquê?",
+"pt_BR": "Qual é sua estação do ano favorita, e por quê?"
+}
+},
+{
+"id": "practice_portuguese-035",
+"lv": "any",
+"i18n": {
+"en": "What helps you remember new words?",
+"de": "Was hilft dir, dir neue Wörter zu merken?",
+"es": "¿Qué te ayuda a recordar palabras nuevas?",
+"fr": "Qu'est-ce qui t'aide à retenir les nouveaux mots ?",
+"it": "Che cosa ti aiuta a ricordare le parole nuove?",
+"pt": "O que te ajuda a memorizar palavras novas?",
+"pt_BR": "O que ajuda você a memorizar palavras novas?"
+}
+},
+{
+"id": "practice_portuguese-036",
+"lv": "any",
+"i18n": {
+"en": "Who would you like to speak Portuguese with?",
+"de": "Mit wem würdest du gern Portugiesisch sprechen?",
+"es": "¿Con quién te gustaría hablar portugués?",
+"fr": "Avec qui aimerais-tu parler portugais ?",
+"it": "Con chi ti piacerebbe parlare portoghese?",
+"pt": "Com quem gostavas de falar português?",
+"pt_BR": "Com quem você gostaria de falar português?"
+}
+},
+{
+"id": "practice_portuguese-037",
+"lv": "any",
+"i18n": {
+"en": "Which dish from your country would you share with a Portuguese-speaking friend?",
+"de": "Welches Gericht aus deinem Land würdest du mit einem portugiesischsprachigen Freund teilen?",
+"es": "¿Qué plato de tu país compartirías con un amigo lusohablante?",
+"fr": "Quel plat de ton pays partagerais-tu avec un ami lusophone ?",
+"it": "Quale piatto del tuo paese condivideresti con un amico lusofono?",
+"pt": "Que prato do teu país partilharias com um amigo lusófono?",
+"pt_BR": "Qual prato do seu país você dividiria com um amigo que fala português?"
+}
+},
+{
+"id": "practice_portuguese-038",
+"lv": "any",
+"i18n": {
+"en": "Do you like reading? What was the last book you enjoyed?",
+"de": "Liest du gern? Welches Buch hat dir zuletzt gefallen?",
+"es": "¿Te gusta leer? ¿Cuál fue el último libro que disfrutaste?",
+"fr": "Tu aimes lire ? Quel est le dernier livre qui t'a plu ?",
+"it": "Ti piace leggere? Qual è l'ultimo libro che ti è piaciuto?",
+"pt": "Gostas de ler? Qual foi o último livro de que gostaste?",
+"pt_BR": "Você gosta de ler? Qual foi o último livro que você curtiu?"
+}
+},
+{
+"id": "practice_portuguese-039",
+"lv": "any",
+"i18n": {
+"en": "What keeps you motivated on days when studying feels hard?",
+"de": "Was motiviert dich an Tagen, an denen das Lernen schwerfällt?",
+"es": "¿Qué te motiva los días en que estudiar cuesta más?",
+"fr": "Qu'est-ce qui te motive les jours où étudier semble difficile ?",
+"it": "Che cosa ti motiva nei giorni in cui studiare è più faticoso?",
+"pt": "O que te motiva nos dias em que estudar custa mais?",
+"pt_BR": "O que te motiva nos dias em que estudar fica mais difícil?"
+}
+},
+{
+"id": "practice_portuguese-040",
+"lv": "any",
+"i18n": {
+"en": "Which mistake do you make most often, and how can I help?",
+"de": "Welchen Fehler machst du am häufigsten, und wie kann ich dir helfen?",
+"es": "¿Qué error cometes más a menudo y cómo puedo ayudarte?",
+"fr": "Quelle erreur fais-tu le plus souvent, et comment puis-je t'aider ?",
+"it": "Quale errore fai più spesso, e come posso aiutarti?",
+"pt": "Que erro dás mais vezes, e como te posso ajudar?",
+"pt_BR": "Qual erro você comete com mais frequência, e como posso ajudar?"
+}
+},
+{
+"id": "practice_portuguese-041",
+"lv": "beginner",
+"i18n": {
+"en": "How do you introduce yourself in Portuguese?",
+"de": "Wie stellst du dich auf Portugiesisch vor?",
+"es": "¿Cómo te presentas en portugués?",
+"fr": "Comment te présentes-tu en portugais ?",
+"it": "Come ti presenti in portoghese?",
+"pt": "Como te apresentas em português?",
+"pt_BR": "Como você se apresenta em português?"
+}
+},
+{
+"id": "practice_portuguese-042",
+"lv": "beginner",
+"i18n": {
+"en": "Where are you from, and where do you live now?",
+"de": "Woher kommst du, und wo wohnst du jetzt?",
+"es": "¿De dónde eres y dónde vives ahora?",
+"fr": "D'où viens-tu, et où habites-tu maintenant ?",
+"it": "Di dove sei, e dove vivi adesso?",
+"pt": "De onde és e onde vives agora?",
+"pt_BR": "De onde você é e onde mora agora?"
+}
+},
+{
+"id": "practice_portuguese-043",
+"lv": "beginner",
+"i18n": {
+"en": "How many people are there in your family?",
+"de": "Wie viele Personen gibt es in deiner Familie?",
+"es": "¿Cuántas personas hay en tu familia?",
+"fr": "Combien de personnes y a-t-il dans ta famille ?",
+"it": "Quante persone ci sono nella tua famiglia?",
+"pt": "Quantas pessoas há na tua família?",
+"pt_BR": "Quantas pessoas tem na sua família?"
+}
+},
+{
+"id": "practice_portuguese-044",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually have for breakfast?",
+"de": "Was isst du normalerweise zum Frühstück?",
+"es": "¿Qué sueles desayunar?",
+"fr": "Que prends-tu d'habitude au petit-déjeuner ?",
+"it": "Che cosa mangi di solito a colazione?",
+"pt": "O que costumas comer ao pequeno-almoço?",
+"pt_BR": "O que você costuma comer no café da manhã?"
+}
+},
+{
+"id": "practice_portuguese-045",
+"lv": "beginner",
+"i18n": {
+"en": "What colour are your favourite clothes?",
+"de": "Welche Farbe hat deine Lieblingskleidung?",
+"es": "¿De qué color es tu ropa favorita?",
+"fr": "De quelle couleur sont tes vêtements préférés ?",
+"it": "Di che colore sono i tuoi vestiti preferiti?",
+"pt": "De que cor é a tua roupa preferida?",
+"pt_BR": "De que cor é a sua roupa favorita?"
+}
+},
+{
+"id": "practice_portuguese-046",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do on weekdays?",
+"de": "Was machst du unter der Woche?",
+"es": "¿Qué haces entre semana?",
+"fr": "Que fais-tu en semaine ?",
+"it": "Che cosa fai nei giorni feriali?",
+"pt": "O que fazes durante a semana?",
+"pt_BR": "O que você faz durante a semana?"
+}
+},
+{
+"id": "practice_portuguese-047",
+"lv": "beginner",
+"i18n": {
+"en": "What is the weather like where you are today?",
+"de": "Wie ist das Wetter heute bei dir?",
+"es": "¿Qué tiempo hace hoy donde estás?",
+"fr": "Quel temps fait-il chez toi aujourd'hui ?",
+"it": "Che tempo fa oggi dove sei?",
+"pt": "Como está o tempo hoje onde estás?",
+"pt_BR": "Como está o tempo hoje aí onde você está?"
+}
+},
+{
+"id": "practice_portuguese-048",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite day of the week?",
+"de": "Was ist dein Lieblingstag in der Woche?",
+"es": "¿Cuál es tu día favorito de la semana?",
+"fr": "Quel est ton jour préféré de la semaine ?",
+"it": "Qual è il tuo giorno preferito della settimana?",
+"pt": "Qual é o teu dia preferido da semana?",
+"pt_BR": "Qual é o seu dia favorito da semana?"
+}
+},
+{
+"id": "practice_portuguese-049",
+"lv": "beginner",
+"i18n": {
+"en": "What do you have in your bag right now?",
+"de": "Was hast du gerade in deiner Tasche?",
+"es": "¿Qué llevas ahora mismo en tu bolso o mochila?",
+"fr": "Qu'as-tu dans ton sac en ce moment ?",
+"it": "Che cosa hai nella borsa in questo momento?",
+"pt": "O que tens na mala neste momento?",
+"pt_BR": "O que você tem na bolsa agora?"
+}
+},
+{
+"id": "practice_portuguese-050",
+"lv": "beginner",
+"i18n": {
+"en": "What do you like to drink when it's hot?",
+"de": "Was trinkst du gern, wenn es heiß ist?",
+"es": "¿Qué te gusta beber cuando hace calor?",
+"fr": "Qu'aimes-tu boire quand il fait chaud ?",
+"it": "Che cosa ti piace bere quando fa caldo?",
+"pt": "O que gostas de beber quando está calor?",
+"pt_BR": "O que você gosta de beber quando está calor?"
+}
+},
+{
+"id": "practice_portuguese-051",
+"lv": "beginner",
+"i18n": {
+"en": "How do you get to work or school?",
+"de": "Wie kommst du zur Arbeit oder zur Schule?",
+"es": "¿Cómo vas al trabajo o a clase?",
+"fr": "Comment vas-tu au travail ou à l'école ?",
+"it": "Come vai al lavoro o a scuola?",
+"pt": "Como vais para o trabalho ou para a escola?",
+"pt_BR": "Como você vai para o trabalho ou para a escola?"
+}
+},
+{
+"id": "practice_portuguese-052",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite room in your home?",
+"de": "Welcher Raum in deiner Wohnung ist dein Lieblingsraum?",
+"es": "¿Cuál es tu habitación favorita de tu casa?",
+"fr": "Quelle est ta pièce préférée chez toi ?",
+"it": "Qual è la tua stanza preferita di casa?",
+"pt": "Qual é a tua divisão preferida da casa?",
+"pt_BR": "Qual é o seu cômodo favorito da casa?"
+}
+},
+{
+"id": "practice_portuguese-053",
+"lv": "beginner",
+"i18n": {
+"en": "What time do you usually wake up?",
+"de": "Um wie viel Uhr wachst du normalerweise auf?",
+"es": "¿A qué hora te despiertas normalmente?",
+"fr": "À quelle heure te réveilles-tu d'habitude ?",
+"it": "A che ora ti svegli di solito?",
+"pt": "A que horas costumas acordar?",
+"pt_BR": "Que horas você costuma acordar?"
+}
+},
+{
+"id": "practice_portuguese-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have a pet? What is it like?",
+"de": "Hast du ein Haustier? Wie ist es so?",
+"es": "¿Tienes mascota? ¿Cómo es?",
+"fr": "As-tu un animal de compagnie ? Comment est-il ?",
+"it": "Hai un animale domestico? Com'è?",
+"pt": "Tens um animal de estimação? Como é?",
+"pt_BR": "Você tem um bichinho de estimação? Como ele é?"
+}
+},
+{
+"id": "practice_portuguese-055",
+"lv": "beginner",
+"i18n": {
+"en": "What do you like doing in your free time?",
+"de": "Was machst du gern in deiner Freizeit?",
+"es": "¿Qué te gusta hacer en tu tiempo libre?",
+"fr": "Qu'aimes-tu faire pendant ton temps libre ?",
+"it": "Che cosa ti piace fare nel tempo libero?",
+"pt": "O que gostas de fazer nos tempos livres?",
+"pt_BR": "O que você gosta de fazer no tempo livre?"
+}
+},
+{
+"id": "practice_portuguese-056",
+"lv": "beginner",
+"i18n": {
+"en": "What is your job, or what would you like to do?",
+"de": "Was ist dein Beruf, oder was möchtest du gern machen?",
+"es": "¿En qué trabajas o a qué te gustaría dedicarte?",
+"fr": "Quel est ton métier, ou que voudrais-tu faire ?",
+"it": "Che lavoro fai, o che lavoro ti piacerebbe fare?",
+"pt": "Qual é a tua profissão, ou o que gostavas de fazer?",
+"pt_BR": "Qual é sua profissão, ou o que você gostaria de fazer?"
+}
+},
+{
+"id": "practice_portuguese-057",
+"lv": "beginner",
+"i18n": {
+"en": "When is your birthday?",
+"de": "Wann hast du Geburtstag?",
+"es": "¿Cuándo es tu cumpleaños?",
+"fr": "Quand est ton anniversaire ?",
+"it": "Quando è il tuo compleanno?",
+"pt": "Quando fazes anos?",
+"pt_BR": "Quando é o seu aniversário?"
+}
+},
+{
+"id": "practice_portuguese-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which sports do you like to play or watch?",
+"de": "Welche Sportarten machst oder schaust du gern?",
+"es": "¿Qué deportes te gusta practicar o ver?",
+"fr": "Quels sports aimes-tu pratiquer ou regarder ?",
+"it": "Quali sport ti piace praticare o guardare?",
+"pt": "Que desportos gostas de praticar ou ver?",
+"pt_BR": "Quais esportes você gosta de praticar ou assistir?"
+}
+},
+{
+"id": "practice_portuguese-059",
+"lv": "beginner",
+"i18n": {
+"en": "What is there near your home?",
+"de": "Was gibt es in der Nähe deiner Wohnung?",
+"es": "¿Qué hay cerca de tu casa?",
+"fr": "Qu'y a-t-il près de chez toi ?",
+"it": "Che cosa c'è vicino a casa tua?",
+"pt": "O que há perto da tua casa?",
+"pt_BR": "O que tem perto da sua casa?"
+}
+},
+{
+"id": "practice_portuguese-060",
+"lv": "beginner",
+"i18n": {
+"en": "What would you order at a Portuguese café?",
+"de": "Was würdest du in einem portugiesischen Café bestellen?",
+"es": "¿Qué pedirías en una cafetería portuguesa?",
+"fr": "Que commanderais-tu dans un café portugais ?",
+"it": "Che cosa ordineresti in un caffè portoghese?",
+"pt": "O que pedirias num café português?",
+"pt_BR": "O que você pediria numa padaria ou café em Portugal?"
+}
+},
+{
+"id": "practice_portuguese-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which month do you like most?",
+"de": "Welcher Monat gefällt dir am besten?",
+"es": "¿Qué mes te gusta más?",
+"fr": "Quel mois préfères-tu ?",
+"it": "Quale mese ti piace di più?",
+"pt": "De que mês gostas mais?",
+"pt_BR": "De qual mês você gosta mais?"
+}
+},
+{
+"id": "practice_portuguese-062",
+"lv": "beginner",
+"i18n": {
+"en": "How would you describe your best friend?",
+"de": "Wie würdest du deinen besten Freund oder deine beste Freundin beschreiben?",
+"es": "¿Cómo describirías a tu mejor amigo o amiga?",
+"fr": "Comment décrirais-tu ton meilleur ami ou ta meilleure amie ?",
+"it": "Come descriveresti il tuo migliore amico o la tua migliore amica?",
+"pt": "Como descreverias o teu melhor amigo ou a tua melhor amiga?",
+"pt_BR": "Como você descreveria seu melhor amigo ou sua melhor amiga?"
+}
+},
+{
+"id": "practice_portuguese-063",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually wear in winter?",
+"de": "Was trägst du im Winter normalerweise?",
+"es": "¿Qué sueles ponerte en invierno?",
+"fr": "Que portes-tu d'habitude en hiver ?",
+"it": "Che cosa indossi di solito d'inverno?",
+"pt": "O que costumas vestir no inverno?",
+"pt_BR": "O que você costuma vestir no inverno?"
+}
+},
+{
+"id": "practice_portuguese-064",
+"lv": "beginner",
+"i18n": {
+"en": "What are you going to do this weekend?",
+"de": "Was machst du dieses Wochenende?",
+"es": "¿Qué vas a hacer este fin de semana?",
+"fr": "Que vas-tu faire ce week-end ?",
+"it": "Che cosa farai questo fine settimana?",
+"pt": "O que vais fazer este fim de semana?",
+"pt_BR": "O que você vai fazer neste fim de semana?"
+}
+},
+{
+"id": "practice_portuguese-065",
+"lv": "beginner",
+"i18n": {
+"en": "Which fruit do you like most?",
+"de": "Welches Obst magst du am liebsten?",
+"es": "¿Qué fruta te gusta más?",
+"fr": "Quel fruit préfères-tu ?",
+"it": "Qual è la frutta che ti piace di più?",
+"pt": "Qual é a fruta de que mais gostas?",
+"pt_BR": "Qual fruta você mais gosta?"
+}
+},
+{
+"id": "practice_portuguese-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What did you do last weekend?",
+"de": "Was hast du letztes Wochenende gemacht?",
+"es": "¿Qué hiciste el fin de semana pasado?",
+"fr": "Qu'as-tu fait le week-end dernier ?",
+"it": "Che cosa hai fatto lo scorso fine settimana?",
+"pt": "O que fizeste no fim de semana passado?",
+"pt_BR": "O que você fez no fim de semana passado?"
+}
+},
+{
+"id": "practice_portuguese-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What were you like as a child?",
+"de": "Wie warst du als Kind?",
+"es": "¿Cómo eras de niño o de niña?",
+"fr": "Comment étais-tu quand tu étais enfant ?",
+"it": "Com'eri da bambino o da bambina?",
+"pt": "Como eras quando eras criança?",
+"pt_BR": "Como você era quando criança?"
+}
+},
+{
+"id": "practice_portuguese-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Can you tell me about a trip you will never forget?",
+"de": "Erzählst du mir von einer Reise, die du nie vergessen wirst?",
+"es": "¿Me cuentas un viaje que nunca olvidarás?",
+"fr": "Tu me racontes un voyage que tu n'oublieras jamais ?",
+"it": "Mi racconti un viaggio che non dimenticherai mai?",
+"pt": "Contas-me uma viagem que nunca vais esquecer?",
+"pt_BR": "Você me conta sobre uma viagem que nunca vai esquecer?"
+}
+},
+{
+"id": "practice_portuguese-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What did you use to do in summer when you were younger?",
+"de": "Was hast du früher im Sommer gemacht, als du jünger warst?",
+"es": "¿Qué solías hacer en verano cuando eras más joven?",
+"fr": "Que faisais-tu l'été quand tu étais plus jeune ?",
+"it": "Che cosa facevi d'estate quando eri più giovane?",
+"pt": "O que costumavas fazer no verão quando eras mais novo?",
+"pt_BR": "O que você costumava fazer no verão quando era mais novo?"
+}
+},
+{
+"id": "practice_portuguese-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a recipe you know well, and how do you make it?",
+"de": "Welches Rezept kennst du gut, und wie bereitest du es zu?",
+"es": "¿Qué receta conoces bien y cómo la preparas?",
+"fr": "Quelle recette connais-tu bien, et comment la prépares-tu ?",
+"it": "Quale ricetta conosci bene, e come la prepari?",
+"pt": "Que receita conheces bem, e como a fazes?",
+"pt_BR": "Qual receita você conhece bem, e como você faz?"
+}
+},
+{
+"id": "practice_portuguese-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you change about your city?",
+"de": "Was würdest du an deiner Stadt ändern?",
+"es": "¿Qué cambiarías de tu ciudad?",
+"fr": "Que changerais-tu dans ta ville ?",
+"it": "Che cosa cambieresti della tua città?",
+"pt": "O que mudarias na tua cidade?",
+"pt_BR": "O que você mudaria na sua cidade?"
+}
+},
+{
+"id": "practice_portuguese-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Which film or series have you enjoyed recently, and why?",
+"de": "Welcher Film oder welche Serie hat dir zuletzt gefallen, und warum?",
+"es": "¿Qué película o serie te ha gustado últimamente y por qué?",
+"fr": "Quel film ou quelle série t'a plu récemment, et pourquoi ?",
+"it": "Quale film o serie ti è piaciuta di recente, e perché?",
+"pt": "Que filme ou série gostaste de ver ultimamente, e porquê?",
+"pt_BR": "Qual filme ou série você curtiu ultimamente, e por quê?"
+}
+},
+{
+"id": "practice_portuguese-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever had a problem while travelling? How did you solve it?",
+"de": "Hattest du schon mal ein Problem auf Reisen? Wie hast du es gelöst?",
+"es": "¿Alguna vez tuviste un problema de viaje? ¿Cómo lo resolviste?",
+"fr": "As-tu déjà eu un problème en voyage ? Comment l'as-tu résolu ?",
+"it": "Ti è mai capitato un problema in viaggio? Come l'hai risolto?",
+"pt": "Já tiveste algum problema numa viagem? Como o resolveste?",
+"pt_BR": "Você já teve algum problema em viagem? Como resolveu?"
+}
+},
+{
+"id": "practice_portuguese-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think of learning languages with apps?",
+"de": "Was hältst du davon, Sprachen mit Apps zu lernen?",
+"es": "¿Qué opinas de aprender idiomas con aplicaciones?",
+"fr": "Que penses-tu de l'apprentissage des langues avec des applis ?",
+"it": "Che cosa pensi di imparare le lingue con le app?",
+"pt": "O que achas de aprender línguas com aplicações?",
+"pt_BR": "O que você acha de aprender idiomas com aplicativos?"
+}
+},
+{
+"id": "practice_portuguese-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How has your daily routine changed in recent years?",
+"de": "Wie hat sich dein Alltag in den letzten Jahren verändert?",
+"es": "¿Cómo ha cambiado tu rutina en los últimos años?",
+"fr": "Comment ta routine a-t-elle changé ces dernières années ?",
+"it": "Com'è cambiata la tua routine negli ultimi anni?",
+"pt": "Como mudou a tua rotina nos últimos anos?",
+"pt_BR": "Como sua rotina mudou nos últimos anos?"
+}
+},
+{
+"id": "practice_portuguese-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What advice would you give someone visiting your country?",
+"de": "Welchen Rat würdest du jemandem geben, der dein Land besucht?",
+"es": "¿Qué consejo le darías a alguien que visita tu país?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui visite ton pays ?",
+"it": "Che consiglio daresti a chi visita il tuo paese?",
+"pt": "Que conselho darias a alguém que visita o teu país?",
+"pt_BR": "Que conselho você daria para alguém que vai visitar o seu país?"
+}
+},
+{
+"id": "practice_portuguese-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which family tradition do you love?",
+"de": "Welche Familientradition liebst du?",
+"es": "¿Qué tradición familiar te encanta?",
+"fr": "Quelle tradition familiale adores-tu ?",
+"it": "Quale tradizione di famiglia ami?",
+"pt": "Que tradição de família adoras?",
+"pt_BR": "Qual tradição de família você adora?"
+}
+},
+{
+"id": "practice_portuguese-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which healthy habits are you trying to keep?",
+"de": "Welche gesunden Gewohnheiten versuchst du beizubehalten?",
+"es": "¿Qué hábitos saludables intentas mantener?",
+"fr": "Quelles bonnes habitudes essaies-tu de garder ?",
+"it": "Quali abitudini sane cerchi di mantenere?",
+"pt": "Que hábitos saudáveis tentas manter?",
+"pt_BR": "Quais hábitos saudáveis você tenta manter?"
+}
+},
+{
+"id": "practice_portuguese-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which job would you like to try for one day?",
+"de": "Welchen Beruf würdest du gern einen Tag lang ausprobieren?",
+"es": "¿Qué trabajo te gustaría probar durante un día?",
+"fr": "Quel métier aimerais-tu essayer pendant une journée ?",
+"it": "Quale lavoro ti piacerebbe provare per un giorno?",
+"pt": "Que profissão gostavas de experimentar por um dia?",
+"pt_BR": "Qual profissão você gostaria de experimentar por um dia?"
+}
+},
+{
+"id": "practice_portuguese-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you usually spend public holidays?",
+"de": "Wie verbringst du normalerweise Feiertage?",
+"es": "¿Cómo sueles pasar los días festivos?",
+"fr": "Comment passes-tu d'habitude les jours fériés ?",
+"it": "Come trascorri di solito i giorni festivi?",
+"pt": "Como costumas passar os feriados?",
+"pt_BR": "Como você costuma passar os feriados?"
+}
+},
+{
+"id": "practice_portuguese-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What is the best present you have ever received?",
+"de": "Was ist das schönste Geschenk, das du je bekommen hast?",
+"es": "¿Cuál es el mejor regalo que has recibido?",
+"fr": "Quel est le plus beau cadeau que tu aies reçu ?",
+"it": "Qual è il regalo più bello che hai ricevuto?",
+"pt": "Qual foi o melhor presente que já recebeste?",
+"pt_BR": "Qual foi o melhor presente que você já ganhou?"
+}
+},
+{
+"id": "practice_portuguese-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Can you tell me about a person who inspires you?",
+"de": "Erzählst du mir von einer Person, die dich inspiriert?",
+"es": "¿Me hablas de una persona que te inspira?",
+"fr": "Tu me parles d'une personne qui t'inspire ?",
+"it": "Mi parli di una persona che ti ispira?",
+"pt": "Falas-me de uma pessoa que te inspira?",
+"pt_BR": "Você me fala de uma pessoa que te inspira?"
+}
+},
+{
+"id": "practice_portuguese-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you miss most when you are far from home?",
+"de": "Was vermisst du am meisten, wenn du weit weg von zu Hause bist?",
+"es": "¿Qué es lo que más echas de menos cuando estás lejos de casa?",
+"fr": "Qu'est-ce qui te manque le plus quand tu es loin de chez toi ?",
+"it": "Che cosa ti manca di più quando sei lontano da casa?",
+"pt": "Do que sentes mais saudades quando estás longe de casa?",
+"pt_BR": "Do que você sente mais saudade quando está longe de casa?"
+}
+},
+{
+"id": "practice_portuguese-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Where would you like to live one day?",
+"de": "Wo würdest du gern eines Tages leben?",
+"es": "¿Dónde te gustaría vivir algún día?",
+"fr": "Où aimerais-tu vivre un jour ?",
+"it": "Dove ti piacerebbe vivere un giorno?",
+"pt": "Onde gostavas de viver um dia?",
+"pt_BR": "Onde você gostaria de morar um dia?"
+}
+},
+{
+"id": "practice_portuguese-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What have you learned recently that surprised you?",
+"de": "Was hast du kürzlich gelernt, das dich überrascht hat?",
+"es": "¿Qué has aprendido últimamente que te sorprendió?",
+"fr": "Qu'as-tu appris récemment qui t'a surpris ?",
+"it": "Che cosa hai imparato di recente che ti ha sorpreso?",
+"pt": "O que aprendeste recentemente que te surpreendeu?",
+"pt_BR": "O que você aprendeu recentemente que te surpreendeu?"
+}
+},
+{
+"id": "practice_portuguese-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you could live anywhere in the world, where would it be and why?",
+"de": "Wenn du überall auf der Welt leben könntest, wo wäre das und warum?",
+"es": "Si pudieras vivir en cualquier lugar del mundo, ¿dónde sería y por qué?",
+"fr": "Si tu pouvais vivre n'importe où dans le monde, ce serait où et pourquoi ?",
+"it": "Se potessi vivere ovunque nel mondo, dove sarebbe e perché?",
+"pt": "Se pudesses viver em qualquer lugar do mundo, onde seria e porquê?",
+"pt_BR": "Se você pudesse morar em qualquer lugar do mundo, onde seria e por quê?"
+}
+},
+{
+"id": "practice_portuguese-087",
+"lv": "advanced",
+"i18n": {
+"en": "What would you do if you had a whole year free?",
+"de": "Was würdest du tun, wenn du ein ganzes Jahr frei hättest?",
+"es": "¿Qué harías si tuvieras un año entero libre?",
+"fr": "Que ferais-tu si tu avais une année entière de libre ?",
+"it": "Che cosa faresti se avessi un anno intero libero?",
+"pt": "O que farias se tivesses um ano inteiro livre?",
+"pt_BR": "O que você faria se tivesse um ano inteiro livre?"
+}
+},
+{
+"id": "practice_portuguese-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think technology will change the way we learn languages?",
+"de": "Wie wird die Technik deiner Meinung nach das Sprachenlernen verändern?",
+"es": "¿Cómo crees que la tecnología cambiará la forma de aprender idiomas?",
+"fr": "Comment penses-tu que la technologie changera notre façon d'apprendre les langues ?",
+"it": "Come pensi che la tecnologia cambierà il modo di imparare le lingue?",
+"pt": "Como achas que a tecnologia vai mudar a forma de aprender línguas?",
+"pt_BR": "Como você acha que a tecnologia vai mudar o jeito de aprender idiomas?"
+}
+},
+{
+"id": "practice_portuguese-089",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think makes a city a good place to live?",
+"de": "Was macht deiner Meinung nach eine Stadt lebenswert?",
+"es": "¿Qué crees que hace de una ciudad un buen lugar para vivir?",
+"fr": "Selon toi, qu'est-ce qui rend une ville agréable à vivre ?",
+"it": "Secondo te, che cosa rende una città un buon posto in cui vivere?",
+"pt": "Na tua opinião, o que faz de uma cidade um bom sítio para viver?",
+"pt_BR": "Na sua opinião, o que faz de uma cidade um bom lugar para morar?"
+}
+},
+{
+"id": "practice_portuguese-090",
+"lv": "advanced",
+"i18n": {
+"en": "Which Portuguese or Brazilian expression would you like to use more often?",
+"de": "Welche portugiesische oder brasilianische Redewendung würdest du gern öfter benutzen?",
+"es": "¿Qué expresión portuguesa o brasileña te gustaría usar más a menudo?",
+"fr": "Quelle expression portugaise ou brésilienne aimerais-tu utiliser plus souvent ?",
+"it": "Quale espressione portoghese o brasiliana vorresti usare più spesso?",
+"pt": "Que expressão portuguesa ou brasileira gostavas de usar mais vezes?",
+"pt_BR": "Qual expressão portuguesa ou brasileira você gostaria de usar mais?"
+}
+},
+{
+"id": "practice_portuguese-091",
+"lv": "advanced",
+"i18n": {
+"en": "Looking back, what would you have done differently when you started learning languages?",
+"de": "Was hättest du rückblickend anders gemacht, als du mit dem Sprachenlernen angefangen hast?",
+"es": "Mirando atrás, ¿qué habrías hecho diferente al empezar a aprender idiomas?",
+"fr": "Avec le recul, qu'aurais-tu fait autrement en commençant à apprendre des langues ?",
+"it": "Ripensandoci, che cosa avresti fatto diversamente quando hai iniziato a studiare le lingue?",
+"pt": "Olhando para trás, o que terias feito de forma diferente ao começar a aprender línguas?",
+"pt_BR": "Olhando para trás, o que você teria feito diferente ao começar a aprender idiomas?"
+}
+},
+{
+"id": "practice_portuguese-092",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think travelling changes the way people see the world?",
+"de": "Wie verändert Reisen deiner Meinung nach den Blick auf die Welt?",
+"es": "¿Cómo crees que viajar cambia la forma de ver el mundo?",
+"fr": "Comment penses-tu que voyager change notre regard sur le monde ?",
+"it": "Come pensi che viaggiare cambi il modo di vedere il mondo?",
+"pt": "Como achas que viajar muda a forma como vemos o mundo?",
+"pt_BR": "Como você acha que viajar muda o jeito de ver o mundo?"
+}
+},
+{
+"id": "practice_portuguese-093",
+"lv": "advanced",
+"i18n": {
+"en": "Which cultural difference between your country and a Lusophone country interests you?",
+"de": "Welcher kulturelle Unterschied zwischen deinem Land und einem portugiesischsprachigen Land interessiert dich?",
+"es": "¿Qué diferencia cultural entre tu país y un país lusófono te interesa?",
+"fr": "Quelle différence culturelle entre ton pays et un pays lusophone t'intéresse ?",
+"it": "Quale differenza culturale tra il tuo paese e un paese lusofono ti interessa?",
+"pt": "Que diferença cultural entre o teu país e um país lusófono te interessa?",
+"pt_BR": "Qual diferença cultural entre o seu país e um país lusófono te interessa?"
+}
+},
+{
+"id": "practice_portuguese-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which book, film or song in Portuguese would you recommend, and why?",
+"de": "Welches Buch, welchen Film oder welches Lied auf Portugiesisch würdest du empfehlen, und warum?",
+"es": "¿Qué libro, película o canción en portugués recomendarías y por qué?",
+"fr": "Quel livre, film ou chanson en portugais recommanderais-tu, et pourquoi ?",
+"it": "Quale libro, film o canzone in portoghese consiglieresti, e perché?",
+"pt": "Que livro, filme ou canção em português recomendarias, e porquê?",
+"pt_BR": "Qual livro, filme ou música em português você recomendaria, e por quê?"
+}
+},
+{
+"id": "practice_portuguese-095",
+"lv": "advanced",
+"i18n": {
+"en": "What does success mean to you?",
+"de": "Was bedeutet Erfolg für dich?",
+"es": "¿Qué significa para ti el éxito?",
+"fr": "Que signifie la réussite pour toi ?",
+"it": "Che cosa significa per te il successo?",
+"pt": "O que significa para ti ter sucesso?",
+"pt_BR": "O que significa sucesso pra você?"
+}
+},
+{
+"id": "practice_portuguese-096",
+"lv": "advanced",
+"i18n": {
+"en": "How important is a sense of humour when you learn a language?",
+"de": "Wie wichtig ist Humor, wenn man eine Sprache lernt?",
+"es": "¿Qué importancia tiene el sentido del humor al aprender un idioma?",
+"fr": "Quelle est l'importance de l'humour quand on apprend une langue ?",
+"it": "Quanto è importante il senso dell'umorismo quando si impara una lingua?",
+"pt": "Que importância tem o sentido de humor quando se aprende uma língua?",
+"pt_BR": "Qual a importância do senso de humor quando a gente aprende um idioma?"
+}
+},
+{
+"id": "practice_portuguese-097",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think the future of work will look like?",
+"de": "Wie wird die Arbeitswelt der Zukunft deiner Meinung nach aussehen?",
+"es": "¿Cómo crees que será el trabajo del futuro?",
+"fr": "À quoi ressemblera le travail de demain, selon toi ?",
+"it": "Come immagini il lavoro del futuro?",
+"pt": "Como imaginas o trabalho do futuro?",
+"pt_BR": "Como você imagina o trabalho do futuro?"
+}
+},
+{
+"id": "practice_portuguese-098",
+"lv": "advanced",
+"i18n": {
+"en": "If you could have dinner with a famous Lusophone writer or artist, who would it be?",
+"de": "Wenn du mit einer berühmten portugiesischsprachigen Persönlichkeit aus Kunst oder Literatur essen könntest, wer wäre es?",
+"es": "Si pudieras cenar con un escritor o artista lusófono famoso, ¿quién sería?",
+"fr": "Si tu pouvais dîner avec un écrivain ou un artiste lusophone célèbre, qui choisirais-tu ?",
+"it": "Se potessi cenare con uno scrittore o artista lusofono famoso, chi sarebbe?",
+"pt": "Se pudesses jantar com um escritor ou artista lusófono famoso, quem seria?",
+"pt_BR": "Se você pudesse jantar com um escritor ou artista lusófono famoso, quem seria?"
+}
+},
+{
+"id": "practice_portuguese-099",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain saudade to someone from your culture?",
+"de": "Wie würdest du Saudade jemandem aus deiner Kultur erklären?",
+"es": "¿Cómo le explicarías la saudade a alguien de tu cultura?",
+"fr": "Comment expliquerais-tu la saudade à quelqu'un de ta culture ?",
+"it": "Come spiegheresti la saudade a qualcuno della tua cultura?",
+"pt": "Como explicarias a saudade a alguém da tua cultura?",
+"pt_BR": "Como você explicaria a saudade para alguém da sua cultura?"
+}
+},
+{
+"id": "practice_portuguese-100",
+"lv": "advanced",
+"i18n": {
+"en": "What would you like to tell your future self after reaching B2?",
+"de": "Was möchtest du deinem zukünftigen Ich sagen, wenn du B2 erreicht hast?",
+"es": "¿Qué te gustaría decirle a tu yo del futuro cuando llegues al B2?",
+"fr": "Que voudrais-tu dire à ton futur toi une fois le niveau B2 atteint ?",
+"it": "Che cosa vorresti dire al tuo io futuro dopo aver raggiunto il B2?",
+"pt": "O que gostavas de dizer ao teu eu do futuro depois de chegares ao B2?",
+"pt_BR": "O que você gostaria de dizer ao seu eu do futuro depois de chegar ao B2?"
+}
+}
+]
+}

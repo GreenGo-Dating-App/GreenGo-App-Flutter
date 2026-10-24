@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My town: places in the city",
+     "g": "Name the places in your town and say what you do there.",
+     "p": [
+      "Places: bank, supermarket, post office, library, station, park.",
+      "Say what you do there: I buy food at the supermarket; I borrow books from the library.",
+      "Use near and far from: The station is near my house."
+     ],
+     "q": "What places are near your home? Name three.",
+     "c": "Name in English every place you pass today, or five places you know well."
+    },
+    "de": {
+     "t": "Meine Stadt: Orte in der Stadt",
+     "g": "Du lernst die Orte deiner Stadt und sagst, was du dort machst.",
+     "p": [
+      "Orte: bank, supermarket, post office, library, station, park.",
+      "Sag, was du dort machst: I buy food at the supermarket; I borrow books from the library.",
+      "Benutze near und far from: The station is near my house."
+     ],
+     "q": "Welche Orte sind in der Nähe deiner Wohnung? Nenn drei.",
+     "c": "Benenne heute jeden Ort, an dem du vorbeikommst, auf Englisch, oder fünf, die du gut kennst."
+    },
+    "es": {
+     "t": "Mi ciudad: lugares de la ciudad",
+     "g": "Aprende los lugares de tu ciudad y a decir qué haces en ellos.",
+     "p": [
+      "Lugares: bank, supermarket, post office, library, station, park.",
+      "Di qué haces allí: I buy food at the supermarket; I borrow books from the library.",
+      "Usa near y far from: The station is near my house."
+     ],
+     "q": "¿Qué lugares hay cerca de tu casa? Nombra tres.",
+     "c": "Nombra hoy en inglés cada lugar por el que pases, o cinco lugares que conozcas bien."
+    },
+    "fr": {
+     "t": "Ma ville : les lieux de la ville",
+     "g": "Nommer les lieux de ta ville et dire ce que tu y fais.",
+     "p": [
+      "Lieux : bank, supermarket, post office, library, station, park.",
+      "Dis ce que tu y fais : I buy food at the supermarket ; I borrow books from the library.",
+      "Utilise near et far from : The station is near my house."
+     ],
+     "q": "Quels lieux sont près de chez toi ? Cites-en trois.",
+     "c": "Nomme en anglais chaque lieu devant lequel tu passes aujourd'hui, ou cinq lieux que tu connais."
+    },
+    "it": {
+     "t": "La mia città: i luoghi in città",
+     "g": "Impari i luoghi della tua città e a dire cosa ci fai.",
+     "p": [
+      "Luoghi: bank, supermarket, post office, library, station, park.",
+      "Di' cosa ci fai: I buy food at the supermarket; I borrow books from the library.",
+      "Usa near e far from: The station is near my house."
+     ],
+     "q": "Quali luoghi ci sono vicino a casa tua? Nominane tre.",
+     "c": "Nomina oggi in inglese ogni luogo davanti a cui passi, o cinque luoghi che conosci bene."
+    },
+    "pt": {
+     "t": "A minha cidade: lugares na cidade",
+     "g": "Aprende os lugares da tua cidade e a dizer o que fazes lá.",
+     "p": [
+      "Lugares: bank, supermarket, post office, library, station, park.",
+      "Diz o que fazes lá: I buy food at the supermarket; I borrow books from the library.",
+      "Usa near e far from: The station is near my house."
+     ],
+     "q": "Que lugares há perto da tua casa? Diz três.",
+     "c": "Diz hoje em inglês o nome de cada lugar por onde passares, ou de cinco lugares que conheces bem."
+    },
+    "pt_BR": {
+     "t": "Minha cidade: lugares na cidade",
+     "g": "Aprenda os lugares da sua cidade e a dizer o que você faz lá.",
+     "p": [
+      "Lugares: bank, supermarket, post office, library, station, park.",
+      "Diga o que faz lá: I buy food at the supermarket; I borrow books from the library.",
+      "Use near e far from: The station is near my house."
+     ],
+     "q": "Que lugares ficam perto da sua casa? Diga três.",
+     "c": "Diga hoje em inglês o nome de cada lugar por onde passar, ou de cinco lugares que você conhece bem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bank",
+      "ex": "The bank opens at nine."
+     },
+     {
+      "w": "supermarket",
+      "ex": "I go to the supermarket on Saturdays."
+     },
+     {
+      "w": "post office",
+      "ex": "Is the post office open today?"
+     },
+     {
+      "w": "library",
+      "ex": "I study at the library."
+     },
+     {
+      "w": "station",
+      "ex": "The station is near the park."
+     },
+     {
+      "w": "near",
+      "ex": "My school is near my house."
+     }
+    ],
+    "gram": "At for places where you do something: at the bank, at the station. Near = not far: near the park."
+   }
+  },
+  {
+   "d": 42,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking for directions",
+     "g": "Ask strangers politely how to find a place.",
+     "p": [
+      "Start with Excuse me to get attention politely.",
+      "Ask Where is the station? or Is there a pharmacy near here?",
+      "Ask How do I get to the museum? and finish with Thank you very much."
+     ],
+     "q": "Imagine you are lost in London. How do you ask me for the nearest station?",
+     "c": "Practise three direction questions aloud for places in your own town."
+    },
+    "de": {
+     "t": "Nach dem Weg fragen",
+     "g": "Du lernst, Fremde höflich nach dem Weg zu fragen.",
+     "p": [
+      "Fang mit Excuse me an, um höflich Aufmerksamkeit zu bekommen.",
+      "Frag Where is the station? oder Is there a pharmacy near here?",
+      "Frag How do I get to the museum? und bedanke dich mit Thank you very much."
+     ],
+     "q": "Stell dir vor, du hast dich in London verlaufen. Wie fragst du nach dem nächsten Bahnhof?",
+     "c": "Übe laut drei Fragen nach dem Weg zu Orten in deiner Stadt."
+    },
+    "es": {
+     "t": "Preguntar cómo llegar",
+     "g": "Aprende a preguntar con educación a un desconocido cómo encontrar un lugar.",
+     "p": [
+      "Empieza con Excuse me para llamar la atención con educación.",
+      "Pregunta Where is the station? o Is there a pharmacy near here?",
+      "Pregunta How do I get to the museum? y termina con Thank you very much."
+     ],
+     "q": "Imagina que te pierdes en Londres. ¿Cómo me preguntas por la estación más cercana?",
+     "c": "Practica en voz alta tres preguntas para llegar a lugares de tu ciudad."
+    },
+    "fr": {
+     "t": "Demander son chemin",
+     "g": "Demander poliment à un inconnu comment trouver un lieu.",
+     "p": [
+      "Commence par Excuse me pour attirer l'attention poliment.",
+      "Demande Where is the station? ou Is there a pharmacy near here?",
+      "Demande How do I get to the museum? et termine par Thank you very much."
+     ],
+     "q": "Imagine que tu es perdu à Londres. Comment me demandes-tu la gare la plus proche ?",
+     "c": "Entraîne-toi à voix haute avec trois questions pour aller à des lieux de ta ville."
+    },
+    "it": {
+     "t": "Chiedere indicazioni",
+     "g": "Impari a chiedere con gentilezza a uno sconosciuto come trovare un posto.",
+     "p": [
+      "Inizia con Excuse me per attirare l'attenzione con garbo.",
+      "Chiedi Where is the station? o Is there a pharmacy near here?",
+      "Chiedi How do I get to the museum? e chiudi con Thank you very much."
+     ],
+     "q": "Immagina di esserti perso a Londra. Come mi chiedi la stazione più vicina?",
+     "c": "Esercitati ad alta voce con tre domande per raggiungere luoghi della tua città."
+    },
+    "pt": {
+     "t": "Pedir indicações",
+     "g": "Aprende a perguntar com educação a um desconhecido como chegar a um sítio.",
+     "p": [
+      "Começa com Excuse me para chamar a atenção com educação.",
+      "Pergunta Where is the station? ou Is there a pharmacy near here?",
+      "Pergunta How do I get to the museum? e termina com Thank you very much."
+     ],
+     "q": "Imagina que estás perdido em Londres. Como me perguntas pela estação mais próxima?",
+     "c": "Treina em voz alta três perguntas para chegar a sítios da tua cidade."
+    },
+    "pt_BR": {
+     "t": "Pedindo informações de caminho",
+     "g": "Aprenda a perguntar com educação a um desconhecido como chegar a um lugar.",
+     "p": [
+      "Comece com Excuse me para chamar a atenção com educação.",
+      "Pergunte Where is the station? ou Is there a pharmacy near here?",
+      "Pergunte How do I get to the museum? e termine com Thank you very much."
+     ],
+     "q": "Imagine que você está perdido em Londres. Como me pergunta pela estação mais próxima?",
+     "c": "Treine em voz alta três perguntas para chegar a lugares da sua cidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Excuse me",
+      "ex": "Excuse me, can you help me?"
+     },
+     {
+      "w": "Where is...?",
+      "ex": "Where is the bus station?"
+     },
+     {
+      "w": "near here",
+      "ex": "Is there a café near here?"
+     },
+     {
+      "w": "How do I get to...?",
+      "ex": "How do I get to the museum?"
+     },
+     {
+      "w": "pharmacy",
+      "ex": "The pharmacy is open until ten."
+     },
+     {
+      "w": "lost",
+      "ex": "Sorry, I'm lost."
+     }
+    ],
+    "gram": "Polite direction questions: Excuse me, where is...? / Is there a... near here? / How do I get to...?"
+   }
+  },
+  {
+   "d": 43,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Giving directions: turn left",
+     "g": "Give simple directions so someone can find a place.",
+     "p": [
+      "Go straight on, turn left, turn right, take the second street on the left.",
+      "It's on the corner, it's opposite the bank, it's next to the café.",
+      "Use imperatives for directions: Go, turn, cross, take, with no you."
+     ],
+     "q": "How do you get from your home to the nearest shop? Give me directions.",
+     "c": "Write directions from your door to a place you visit often, in four steps."
+    },
+    "de": {
+     "t": "Den Weg erklären: turn left",
+     "g": "Du lernst, einfache Wegbeschreibungen zu geben.",
+     "p": [
+      "Go straight on, turn left, turn right, take the second street on the left.",
+      "It's on the corner, it's opposite the bank, it's next to the café.",
+      "Für Wegbeschreibungen nimmt man den Imperativ: Go, turn, cross, take, ohne you."
+     ],
+     "q": "Wie kommt man von deiner Wohnung zum nächsten Laden? Beschreib mir den Weg.",
+     "c": "Schreib den Weg von deiner Tür zu einem Ort, den du oft besuchst, in vier Schritten."
+    },
+    "es": {
+     "t": "Dar indicaciones: turn left",
+     "g": "Aprende a dar indicaciones sencillas para que alguien encuentre un lugar.",
+     "p": [
+      "Go straight on, turn left, turn right, take the second street on the left.",
+      "It's on the corner, it's opposite the bank, it's next to the café.",
+      "Para indicar se usa el imperativo: Go, turn, cross, take, sin you."
+     ],
+     "q": "¿Cómo se llega desde tu casa a la tienda más cercana? Dame indicaciones.",
+     "c": "Escribe en cuatro pasos cómo llegar desde tu puerta a un sitio al que vas a menudo."
+    },
+    "fr": {
+     "t": "Indiquer le chemin : turn left",
+     "g": "Donner des indications simples pour qu'on trouve un lieu.",
+     "p": [
+      "Go straight on, turn left, turn right, take the second street on the left.",
+      "It's on the corner, it's opposite the bank, it's next to the café.",
+      "On utilise l'impératif : Go, turn, cross, take, sans you."
+     ],
+     "q": "Comment va-t-on de chez toi au magasin le plus proche ? Indique-moi le chemin.",
+     "c": "Écris en quatre étapes le chemin de ta porte à un lieu où tu vas souvent."
+    },
+    "it": {
+     "t": "Dare indicazioni: turn left",
+     "g": "Impari a dare indicazioni semplici per trovare un posto.",
+     "p": [
+      "Go straight on, turn left, turn right, take the second street on the left.",
+      "It's on the corner, it's opposite the bank, it's next to the café.",
+      "Per le indicazioni si usa l'imperativo: Go, turn, cross, take, senza you."
+     ],
+     "q": "Come si va da casa tua al negozio più vicino? Dammi le indicazioni.",
+     "c": "Scrivi in quattro passi la strada dalla tua porta a un posto dove vai spesso."
+    },
+    "pt": {
+     "t": "Dar indicações: turn left",
+     "g": "Aprende a dar indicações simples para alguém encontrar um sítio.",
+     "p": [
+      "Go straight on, turn left, turn right, take the second street on the left.",
+      "It's on the corner, it's opposite the bank, it's next to the café.",
+      "Nas indicações usa-se o imperativo: Go, turn, cross, take, sem you."
+     ],
+     "q": "Como se vai da tua casa à loja mais próxima? Dá-me indicações.",
+     "c": "Escreve em quatro passos o caminho da tua porta até um sítio onde vais muitas vezes."
+    },
+    "pt_BR": {
+     "t": "Dando direções: turn left",
+     "g": "Aprenda a dar direções simples para alguém encontrar um lugar.",
+     "p": [
+      "Go straight on, turn left, turn right, take the second street on the left.",
+      "It's on the corner, it's opposite the bank, it's next to the café.",
+      "Nas direções se usa o imperativo: Go, turn, cross, take, sem you."
+     ],
+     "q": "Como se vai da sua casa até a loja mais próxima? Me dê as direções.",
+     "c": "Escreva em quatro passos o caminho da sua porta até um lugar que você frequenta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "go straight on",
+      "ex": "Go straight on for two minutes."
+     },
+     {
+      "w": "turn left",
+      "ex": "Turn left at the traffic lights."
+     },
+     {
+      "w": "turn right",
+      "ex": "Turn right after the bank."
+     },
+     {
+      "w": "on the corner",
+      "ex": "The café is on the corner."
+     },
+     {
+      "w": "opposite",
+      "ex": "The station is opposite the park."
+     },
+     {
+      "w": "cross",
+      "ex": "Cross the street at the lights."
+     }
+    ],
+    "gram": "Directions use the imperative (base verb, no subject): Turn left. Go straight on. Take the first right."
+   }
+  },
+  {
+   "d": 44,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Transport: bus, train, taxi",
+     "g": "Talk about how you travel around your town and further away.",
+     "p": [
+      "Use by for transport: by bus, by train, by car, by bike, by taxi.",
+      "But say on foot when you walk: I go to work on foot.",
+      "Use get on and get off for buses and trains: Get off at the next stop."
+     ],
+     "q": "How do you usually get to work, school or the shops?",
+     "c": "Say in English how you travelled every time you move today."
+    },
+    "de": {
+     "t": "Verkehrsmittel: bus, train, taxi",
+     "g": "Du lernst, darüber zu sprechen, wie du dich in der Stadt und weiter weg fortbewegst.",
+     "p": [
+      "By steht vor Verkehrsmitteln: by bus, by train, by car, by bike, by taxi.",
+      "Aber zu Fuß heißt on foot: I go to work on foot.",
+      "Get on und get off für Bus und Bahn: Get off at the next stop."
+     ],
+     "q": "Wie kommst du normalerweise zur Arbeit, zur Schule oder zum Einkaufen?",
+     "c": "Sag heute bei jedem Weg auf Englisch, wie du unterwegs warst."
+    },
+    "es": {
+     "t": "Transporte: bus, train, taxi",
+     "g": "Aprende a hablar de cómo te mueves por tu ciudad y más lejos.",
+     "p": [
+      "Usa by con el transporte: by bus, by train, by car, by bike, by taxi.",
+      "Pero andando se dice on foot: I go to work on foot.",
+      "Usa get on y get off para autobuses y trenes: Get off at the next stop."
+     ],
+     "q": "¿Cómo sueles ir al trabajo, a clase o de compras?",
+     "c": "Di en inglés cómo te desplazas cada vez que vayas a algún sitio hoy."
+    },
+    "fr": {
+     "t": "Transports : bus, train, taxi",
+     "g": "Parler de ta façon de te déplacer en ville et plus loin.",
+     "p": [
+      "On utilise by pour le moyen : by bus, by train, by car, by bike, by taxi.",
+      "Mais à pied se dit on foot : I go to work on foot.",
+      "Get on et get off pour bus et trains : Get off at the next stop."
+     ],
+     "q": "Comment vas-tu d'habitude au travail, en cours ou faire tes courses ?",
+     "c": "Dis en anglais comment tu te déplaces à chaque trajet aujourd'hui."
+    },
+    "it": {
+     "t": "Trasporti: bus, train, taxi",
+     "g": "Impari a parlare di come ti sposti in città e più lontano.",
+     "p": [
+      "Con i mezzi si usa by: by bus, by train, by car, by bike, by taxi.",
+      "Ma a piedi si dice on foot: I go to work on foot.",
+      "Get on e get off per autobus e treni: Get off at the next stop."
+     ],
+     "q": "Come vai di solito al lavoro, a scuola o a fare la spesa?",
+     "c": "Di' in inglese come ti sposti ogni volta che vai da qualche parte oggi."
+    },
+    "pt": {
+     "t": "Transportes: bus, train, taxi",
+     "g": "Aprende a falar de como te deslocas na cidade e para mais longe.",
+     "p": [
+      "Usa by com os transportes: by bus, by train, by car, by bike, by taxi.",
+      "Mas a pé diz-se on foot: I go to work on foot.",
+      "Usa get on e get off para autocarros e comboios: Get off at the next stop."
+     ],
+     "q": "Como costumas ir para o trabalho, para as aulas ou às compras?",
+     "c": "Diz em inglês como te deslocas sempre que fores a algum lado hoje."
+    },
+    "pt_BR": {
+     "t": "Transportes: bus, train, taxi",
+     "g": "Aprenda a falar de como você se locomove pela cidade e para mais longe.",
+     "p": [
+      "Use by com os transportes: by bus, by train, by car, by bike, by taxi.",
+      "Mas a pé se diz on foot: I go to work on foot.",
+      "Use get on e get off para ônibus e trens: Get off at the next stop."
+     ],
+     "q": "Como você costuma ir para o trabalho, a escola ou as compras?",
+     "c": "Diga em inglês como você se locomove toda vez que for a algum lugar hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "by bus",
+      "ex": "I go to school by bus."
+     },
+     {
+      "w": "by train",
+      "ex": "We travel to Paris by train."
+     },
+     {
+      "w": "on foot",
+      "ex": "She goes to work on foot."
+     },
+     {
+      "w": "taxi",
+      "ex": "Let's take a taxi."
+     },
+     {
+      "w": "get on",
+      "ex": "Get on the bus here."
+     },
+     {
+      "w": "get off",
+      "ex": "Get off at the third stop."
+     }
+    ],
+    "gram": "By + transport with no article: by car, by bus (not by the bus). Walking: on foot."
+   }
+  },
+  {
+   "d": 45,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Buying a ticket",
+     "g": "Buy a train or bus ticket with confidence.",
+     "p": [
+      "Ask for A single to Oxford, please or A return to Oxford, please.",
+      "A single is one way; a return goes there and back (US: one-way and round-trip).",
+      "Ask Which platform is it? and What time is the next train?"
+     ],
+     "q": "Imagine you are at a station. Ask me for a ticket to a city you like.",
+     "c": "Write a short ticket-office dialogue in English with four lines."
+    },
+    "de": {
+     "t": "Eine Fahrkarte kaufen",
+     "g": "Du lernst, sicher eine Zug- oder Busfahrkarte zu kaufen.",
+     "p": [
+      "Verlang A single to Oxford, please oder A return to Oxford, please.",
+      "A single ist einfach, a return hin und zurück (amerikanisch one-way und round-trip).",
+      "Frag Which platform is it? und What time is the next train?"
+     ],
+     "q": "Stell dir vor, du bist am Bahnhof. Verlang bei mir eine Fahrkarte in eine Stadt, die du magst.",
+     "c": "Schreib einen kurzen Dialog am Fahrkartenschalter auf Englisch, mit vier Zeilen."
+    },
+    "es": {
+     "t": "Comprar un billete",
+     "g": "Aprende a comprar un billete de tren o autobús con seguridad.",
+     "p": [
+      "Pide A single to Oxford, please o A return to Oxford, please.",
+      "A single es solo ida; a return es ida y vuelta (en EE. UU. one-way y round-trip).",
+      "Pregunta Which platform is it? y What time is the next train?"
+     ],
+     "q": "Imagina que estás en la estación. Pídeme un billete a una ciudad que te guste.",
+     "c": "Escribe un breve diálogo en la taquilla, en inglés, de cuatro líneas."
+    },
+    "fr": {
+     "t": "Acheter un billet",
+     "g": "Acheter un billet de train ou de bus avec assurance.",
+     "p": [
+      "Demande A single to Oxford, please ou A return to Oxford, please.",
+      "A single est un aller simple, a return un aller-retour (américain : one-way, round-trip).",
+      "Demande Which platform is it? et What time is the next train?"
+     ],
+     "q": "Imagine que tu es à la gare. Demande-moi un billet pour une ville que tu aimes.",
+     "c": "Écris un court dialogue au guichet, en anglais, en quatre répliques."
+    },
+    "it": {
+     "t": "Comprare un biglietto",
+     "g": "Impari a comprare con sicurezza un biglietto del treno o dell'autobus.",
+     "p": [
+      "Chiedi A single to Oxford, please o A return to Oxford, please.",
+      "A single è solo andata, a return andata e ritorno (in americano one-way e round-trip).",
+      "Chiedi Which platform is it? e What time is the next train?"
+     ],
+     "q": "Immagina di essere in stazione. Chiedimi un biglietto per una città che ti piace.",
+     "c": "Scrivi un breve dialogo in biglietteria, in inglese, di quattro battute."
+    },
+    "pt": {
+     "t": "Comprar um bilhete",
+     "g": "Aprende a comprar um bilhete de comboio ou autocarro com confiança.",
+     "p": [
+      "Pede A single to Oxford, please ou A return to Oxford, please.",
+      "A single é só ida; a return é ida e volta (nos EUA one-way e round-trip).",
+      "Pergunta Which platform is it? e What time is the next train?"
+     ],
+     "q": "Imagina que estás na estação. Pede-me um bilhete para uma cidade de que gostes.",
+     "c": "Escreve um pequeno diálogo na bilheteira, em inglês, com quatro falas."
+    },
+    "pt_BR": {
+     "t": "Comprando uma passagem",
+     "g": "Aprenda a comprar uma passagem de trem ou ônibus com confiança.",
+     "p": [
+      "Peça A single to Oxford, please ou A return to Oxford, please.",
+      "A single é só ida; a return é ida e volta (nos EUA one-way e round-trip).",
+      "Pergunte Which platform is it? e What time is the next train?"
+     ],
+     "q": "Imagine que você está na estação. Me peça uma passagem para uma cidade de que gosta.",
+     "c": "Escreva um pequeno diálogo na bilheteria, em inglês, com quatro falas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ticket",
+      "ex": "Where can I buy a ticket?"
+     },
+     {
+      "w": "a single",
+      "ex": "A single to York, please."
+     },
+     {
+      "w": "a return",
+      "ex": "Two returns to Bath, please."
+     },
+     {
+      "w": "platform",
+      "ex": "The train leaves from platform four."
+     },
+     {
+      "w": "timetable",
+      "ex": "Let's check the timetable."
+     },
+     {
+      "w": "the next train",
+      "ex": "When is the next train to Leeds?"
+     }
+    ],
+    "gram": "A single/return to + place, please. Ask: What time does the next train leave? Which platform?"
+   }
+  },
+  {
+   "d": 46,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Can and can't for ability",
+     "g": "Say what you can and can't do with can.",
+     "p": [
+      "Can is the same for everyone: I can, she can, they can, never she cans.",
+      "The verb after can has no to: I can swim, not I can to swim.",
+      "Negative can't, question Can you...? Short answers: Yes, I can. No, I can't."
+     ],
+     "q": "What is something you can do well, and something you can't do yet?",
+     "c": "Write three things you can do and three you can't do yet, then pick one to learn."
+    },
+    "de": {
+     "t": "Can und can't für Fähigkeiten",
+     "g": "Du lernst, mit can zu sagen, was du kannst und nicht kannst.",
+     "p": [
+      "Can ist für alle gleich: I can, she can, they can, nie she cans.",
+      "Nach can steht das Verb ohne to: I can swim, nicht I can to swim.",
+      "Verneinung can't, Frage Can you...? Kurzantworten: Yes, I can. No, I can't."
+     ],
+     "q": "Was kannst du gut, und was kannst du noch nicht?",
+     "c": "Schreib drei Dinge, die du kannst, und drei, die du noch nicht kannst, und wähle eins zum Lernen."
+    },
+    "es": {
+     "t": "Can y can't para habilidades",
+     "g": "Aprende a decir lo que sabes y no sabes hacer con can.",
+     "p": [
+      "Can es igual para todos: I can, she can, they can, nunca she cans.",
+      "El verbo tras can va sin to: I can swim, no I can to swim.",
+      "Negativa can't, pregunta Can you...? Respuestas cortas: Yes, I can. No, I can't."
+     ],
+     "q": "¿Qué sabes hacer bien y qué no sabes hacer todavía?",
+     "c": "Escribe tres cosas que sabes hacer y tres que aún no, y elige una para aprender."
+    },
+    "fr": {
+     "t": "Can et can't pour les capacités",
+     "g": "Dire ce que tu sais faire ou non avec can.",
+     "p": [
+      "Can est identique pour tous : I can, she can, they can, jamais she cans.",
+      "Le verbe après can n'a pas de to : I can swim, pas I can to swim.",
+      "Négation can't, question Can you...? Réponses courtes : Yes, I can. No, I can't."
+     ],
+     "q": "Qu'est-ce que tu sais bien faire, et que ne sais-tu pas encore faire ?",
+     "c": "Écris trois choses que tu sais faire et trois pas encore, puis choisis-en une à apprendre."
+    },
+    "it": {
+     "t": "Can e can't per le capacità",
+     "g": "Impari a dire cosa sai e non sai fare con can.",
+     "p": [
+      "Can è uguale per tutti: I can, she can, they can, mai she cans.",
+      "Il verbo dopo can non ha il to: I can swim, non I can to swim.",
+      "Negativa can't, domanda Can you...? Risposte brevi: Yes, I can. No, I can't."
+     ],
+     "q": "Cosa sai fare bene, e cosa non sai ancora fare?",
+     "c": "Scrivi tre cose che sai fare e tre che non sai ancora fare, e scegline una da imparare."
+    },
+    "pt": {
+     "t": "Can e can't para capacidades",
+     "g": "Aprende a dizer o que sabes e não sabes fazer com can.",
+     "p": [
+      "Can é igual para todos: I can, she can, they can, nunca she cans.",
+      "O verbo depois de can não leva to: I can swim, e não I can to swim.",
+      "Negativa can't, pergunta Can you...? Respostas curtas: Yes, I can. No, I can't."
+     ],
+     "q": "O que sabes fazer bem, e o que ainda não sabes fazer?",
+     "c": "Escreve três coisas que sabes fazer e três que ainda não sabes, e escolhe uma para aprender."
+    },
+    "pt_BR": {
+     "t": "Can e can't para habilidades",
+     "g": "Aprenda a dizer o que você sabe e não sabe fazer com can.",
+     "p": [
+      "Can é igual para todos: I can, she can, they can, nunca she cans.",
+      "O verbo depois de can fica sem to: I can swim, e não I can to swim.",
+      "Negativa can't, pergunta Can you...? Respostas curtas: Yes, I can. No, I can't."
+     ],
+     "q": "O que você sabe fazer bem, e o que ainda não sabe fazer?",
+     "c": "Escreva três coisas que você sabe fazer e três que ainda não, e escolha uma para aprender."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "can",
+      "ex": "I can speak two languages."
+     },
+     {
+      "w": "can't",
+      "ex": "He can't drive yet."
+     },
+     {
+      "w": "Can you...?",
+      "ex": "Can you play the piano?"
+     },
+     {
+      "w": "swim",
+      "ex": "My son can swim very well."
+     },
+     {
+      "w": "cook",
+      "ex": "I can't cook, but I can bake."
+     },
+     {
+      "w": "ride a bike",
+      "ex": "She can ride a bike."
+     }
+    ],
+    "gram": "Can + base verb, same for all persons: She can dance (not She cans dance / can to dance)."
+   }
+  },
+  {
+   "d": 47,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hobbies and free time",
+     "g": "Talk about what you do in your free time.",
+     "p": [
+      "Hobbies: reading, cooking, painting, gaming, gardening, taking photos.",
+      "Ask What do you do in your free time? or What are your hobbies?",
+      "Answer with the present simple: I read a lot. I play video games at the weekend."
+     ],
+     "q": "What do you love doing in your free time?",
+     "c": "Tell someone, or me, about your favourite hobby in three English sentences."
+    },
+    "de": {
+     "t": "Hobbys und Freizeit",
+     "g": "Du lernst, über deine Freizeit zu sprechen.",
+     "p": [
+      "Hobbys: reading, cooking, painting, gaming, gardening, taking photos.",
+      "Frag What do you do in your free time? oder What are your hobbies?",
+      "Antworte im present simple: I read a lot. I play video games at the weekend."
+     ],
+     "q": "Was machst du in deiner Freizeit am liebsten?",
+     "c": "Erzähl jemandem, oder mir, in drei englischen Sätzen von deinem Lieblingshobby."
+    },
+    "es": {
+     "t": "Aficiones y tiempo libre",
+     "g": "Aprende a hablar de lo que haces en tu tiempo libre.",
+     "p": [
+      "Aficiones: reading, cooking, painting, gaming, gardening, taking photos.",
+      "Pregunta What do you do in your free time? o What are your hobbies?",
+      "Responde con el present simple: I read a lot. I play video games at the weekend."
+     ],
+     "q": "¿Qué te encanta hacer en tu tiempo libre?",
+     "c": "Cuéntale a alguien, o a mí, tu afición favorita en tres frases en inglés."
+    },
+    "fr": {
+     "t": "Loisirs et temps libre",
+     "g": "Parler de ce que tu fais pendant ton temps libre.",
+     "p": [
+      "Loisirs : reading, cooking, painting, gaming, gardening, taking photos.",
+      "Demande What do you do in your free time? ou What are your hobbies?",
+      "Réponds au present simple : I read a lot. I play video games at the weekend."
+     ],
+     "q": "Qu'adores-tu faire pendant ton temps libre ?",
+     "c": "Parle de ton loisir préféré à quelqu'un, ou à moi, en trois phrases en anglais."
+    },
+    "it": {
+     "t": "Hobby e tempo libero",
+     "g": "Impari a parlare di cosa fai nel tempo libero.",
+     "p": [
+      "Hobby: reading, cooking, painting, gaming, gardening, taking photos.",
+      "Chiedi What do you do in your free time? o What are your hobbies?",
+      "Rispondi con il present simple: I read a lot. I play video games at the weekend."
+     ],
+     "q": "Cosa ami fare nel tuo tempo libero?",
+     "c": "Racconta a qualcuno, o a me, il tuo hobby preferito in tre frasi in inglese."
+    },
+    "pt": {
+     "t": "Passatempos e tempos livres",
+     "g": "Aprende a falar do que fazes nos teus tempos livres.",
+     "p": [
+      "Passatempos: reading, cooking, painting, gaming, gardening, taking photos.",
+      "Pergunta What do you do in your free time? ou What are your hobbies?",
+      "Responde no present simple: I read a lot. I play video games at the weekend."
+     ],
+     "q": "O que adoras fazer nos teus tempos livres?",
+     "c": "Fala a alguém, ou a mim, do teu passatempo preferido em três frases em inglês."
+    },
+    "pt_BR": {
+     "t": "Hobbies e tempo livre",
+     "g": "Aprenda a falar sobre o que você faz no seu tempo livre.",
+     "p": [
+      "Hobbies: reading, cooking, painting, gaming, gardening, taking photos.",
+      "Pergunte What do you do in your free time? ou What are your hobbies?",
+      "Responda no present simple: I read a lot. I play video games on the weekend."
+     ],
+     "q": "O que você adora fazer no seu tempo livre?",
+     "c": "Conte para alguém, ou para mim, sobre seu hobby favorito em três frases em inglês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "free time",
+      "ex": "What do you do in your free time?"
+     },
+     {
+      "w": "hobby",
+      "ex": "My favourite hobby is painting."
+     },
+     {
+      "w": "reading",
+      "ex": "Reading helps me relax."
+     },
+     {
+      "w": "gardening",
+      "ex": "My grandma loves gardening."
+     },
+     {
+      "w": "take photos",
+      "ex": "I take photos of old buildings."
+     },
+     {
+      "w": "play video games",
+      "ex": "My kids play video games after school."
+     }
+    ],
+    "gram": "Talk about hobbies with the present simple: I paint on Sundays. She plays chess every week."
+   }
+  },
+  {
+   "d": 48,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Like, love, hate + -ing",
+     "g": "Use -ing after verbs of liking to talk about activities.",
+     "p": [
+      "After like, love, enjoy and hate, use verb + -ing: I love dancing.",
+      "Negatives and questions: I don't like waiting. Do you enjoy cooking?",
+      "Spelling: dance becomes dancing, swim becomes swimming, read becomes reading."
+     ],
+     "q": "What do you love doing, and what do you hate doing?",
+     "c": "Make four sentences today with love, like, don't like and hate plus an -ing verb."
+    },
+    "de": {
+     "t": "Like, love, hate + -ing",
+     "g": "Du lernst, nach Verben des Mögens die -ing-Form für Tätigkeiten zu benutzen.",
+     "p": [
+      "Nach like, love, enjoy und hate kommt Verb + -ing: I love dancing.",
+      "Verneinung und Frage: I don't like waiting. Do you enjoy cooking?",
+      "Schreibung: dance wird dancing, swim wird swimming, read wird reading."
+     ],
+     "q": "Was machst du total gern, und was hasst du?",
+     "c": "Bilde heute vier Sätze mit love, like, don't like und hate plus -ing-Verb."
+    },
+    "es": {
+     "t": "Like, love, hate + -ing",
+     "g": "Aprende a usar -ing tras los verbos de gusto para hablar de actividades.",
+     "p": [
+      "Tras like, love, enjoy y hate va el verbo + -ing: I love dancing.",
+      "Negativas y preguntas: I don't like waiting. Do you enjoy cooking?",
+      "Ortografía: dance pasa a dancing, swim a swimming, read a reading."
+     ],
+     "q": "¿Qué te encanta hacer y qué odias hacer?",
+     "c": "Haz hoy cuatro frases con love, like, don't like y hate más un verbo en -ing."
+    },
+    "fr": {
+     "t": "Like, love, hate + -ing",
+     "g": "Utiliser la forme -ing après les verbes de goût pour parler d'activités.",
+     "p": [
+      "Après like, love, enjoy et hate, on met verbe + -ing : I love dancing.",
+      "Négation et question : I don't like waiting. Do you enjoy cooking?",
+      "Orthographe : dance donne dancing, swim donne swimming, read donne reading."
+     ],
+     "q": "Qu'adores-tu faire, et que détestes-tu faire ?",
+     "c": "Fais quatre phrases aujourd'hui avec love, like, don't like et hate plus un verbe en -ing."
+    },
+    "it": {
+     "t": "Like, love, hate + -ing",
+     "g": "Impari a usare la forma in -ing dopo i verbi di gradimento.",
+     "p": [
+      "Dopo like, love, enjoy e hate si usa verbo + -ing: I love dancing.",
+      "Negative e domande: I don't like waiting. Do you enjoy cooking?",
+      "Ortografia: dance diventa dancing, swim diventa swimming, read diventa reading."
+     ],
+     "q": "Cosa ami fare, e cosa odi fare?",
+     "c": "Fai oggi quattro frasi con love, like, don't like e hate più un verbo in -ing."
+    },
+    "pt": {
+     "t": "Like, love, hate + -ing",
+     "g": "Aprende a usar -ing depois dos verbos de gosto para falar de atividades.",
+     "p": [
+      "Depois de like, love, enjoy e hate usa-se verbo + -ing: I love dancing.",
+      "Negativas e perguntas: I don't like waiting. Do you enjoy cooking?",
+      "Ortografia: dance passa a dancing, swim a swimming, read a reading."
+     ],
+     "q": "O que adoras fazer, e o que detestas fazer?",
+     "c": "Faz hoje quatro frases com love, like, don't like e hate mais um verbo em -ing."
+    },
+    "pt_BR": {
+     "t": "Like, love, hate + -ing",
+     "g": "Aprenda a usar -ing depois dos verbos de gosto para falar de atividades.",
+     "p": [
+      "Depois de like, love, enjoy e hate vem verbo + -ing: I love dancing.",
+      "Negativas e perguntas: I don't like waiting. Do you enjoy cooking?",
+      "Ortografia: dance vira dancing, swim vira swimming, read vira reading."
+     ],
+     "q": "O que você adora fazer, e o que odeia fazer?",
+     "c": "Faça hoje quatro frases com love, like, don't like e hate mais um verbo em -ing."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "love",
+      "ex": "I love dancing."
+     },
+     {
+      "w": "like",
+      "ex": "She likes reading in bed."
+     },
+     {
+      "w": "enjoy",
+      "ex": "We enjoy walking by the sea."
+     },
+     {
+      "w": "hate",
+      "ex": "I hate waiting for the bus."
+     },
+     {
+      "w": "don't mind",
+      "ex": "I don't mind cooking."
+     },
+     {
+      "w": "swimming",
+      "ex": "They love swimming in summer."
+     }
+    ],
+    "gram": "Like/love/enjoy/hate + verb-ing: I enjoy cooking. Double the consonant in short verbs: run-running."
+   }
+  },
+  {
+   "d": 49,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Sports and games",
+     "g": "Use the right verb for each sport: play, go or do.",
+     "p": [
+      "Play for ball games and games against others: play football, play chess.",
+      "Go for activities ending in -ing: go running, go swimming, go cycling.",
+      "Do for many individual activities: do yoga, do karate, do exercise."
+     ],
+     "q": "Which sports do you play, go or do, or love watching?",
+     "c": "Write one sentence each with play, go and do about sports you or friends practise."
+    },
+    "de": {
+     "t": "Sport und Spiele",
+     "g": "Du lernst das richtige Verb für jede Sportart: play, go oder do.",
+     "p": [
+      "Play für Ballsportarten und Spiele gegen andere: play football, play chess.",
+      "Go für Aktivitäten auf -ing: go running, go swimming, go cycling.",
+      "Do für viele Einzelaktivitäten: do yoga, do karate, do exercise."
+     ],
+     "q": "Welche Sportarten machst du, oder schaust du gern zu?",
+     "c": "Schreib je einen Satz mit play, go und do über Sport, den du oder Freunde machen."
+    },
+    "es": {
+     "t": "Deportes y juegos",
+     "g": "Aprende el verbo correcto para cada deporte: play, go o do.",
+     "p": [
+      "Play para deportes de pelota y juegos contra otros: play football, play chess.",
+      "Go para actividades en -ing: go running, go swimming, go cycling.",
+      "Do para muchas actividades individuales: do yoga, do karate, do exercise."
+     ],
+     "q": "¿Qué deportes practicas o te encanta ver?",
+     "c": "Escribe una frase con play, otra con go y otra con do sobre deportes que tú o tus amigos hacéis."
+    },
+    "fr": {
+     "t": "Sports et jeux",
+     "g": "Choisir le bon verbe pour chaque sport : play, go ou do.",
+     "p": [
+      "Play pour les sports de ballon et les jeux contre d'autres : play football, play chess.",
+      "Go pour les activités en -ing : go running, go swimming, go cycling.",
+      "Do pour beaucoup d'activités individuelles : do yoga, do karate, do exercise."
+     ],
+     "q": "Quels sports pratiques-tu, ou adores-tu regarder ?",
+     "c": "Écris une phrase avec play, une avec go et une avec do sur des sports que toi ou tes amis pratiquez."
+    },
+    "it": {
+     "t": "Sport e giochi",
+     "g": "Impari il verbo giusto per ogni sport: play, go o do.",
+     "p": [
+      "Play per gli sport con la palla e i giochi contro altri: play football, play chess.",
+      "Go per le attività in -ing: go running, go swimming, go cycling.",
+      "Do per molte attività individuali: do yoga, do karate, do exercise."
+     ],
+     "q": "Quali sport pratichi, o ami guardare?",
+     "c": "Scrivi una frase con play, una con go e una con do sugli sport che fai tu o i tuoi amici."
+    },
+    "pt": {
+     "t": "Desportos e jogos",
+     "g": "Aprende o verbo certo para cada desporto: play, go ou do.",
+     "p": [
+      "Play para desportos com bola e jogos contra outros: play football, play chess.",
+      "Go para atividades em -ing: go running, go swimming, go cycling.",
+      "Do para muitas atividades individuais: do yoga, do karate, do exercise."
+     ],
+     "q": "Que desportos praticas, ou adoras ver?",
+     "c": "Escreve uma frase com play, outra com go e outra com do sobre desportos que tu ou os teus amigos praticam."
+    },
+    "pt_BR": {
+     "t": "Esportes e jogos",
+     "g": "Aprenda o verbo certo para cada esporte: play, go ou do.",
+     "p": [
+      "Play para esportes com bola e jogos contra outros: play soccer, play chess.",
+      "Go para atividades em -ing: go running, go swimming, go cycling.",
+      "Do para muitas atividades individuais: do yoga, do karate, do exercise."
+     ],
+     "q": "Que esportes você pratica, ou adora assistir?",
+     "c": "Escreva uma frase com play, outra com go e outra com do sobre esportes que você ou seus amigos praticam."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "play football",
+      "ex": "We play football on Sundays."
+     },
+     {
+      "w": "play tennis",
+      "ex": "Do you play tennis?"
+     },
+     {
+      "w": "go running",
+      "ex": "I go running in the park."
+     },
+     {
+      "w": "go swimming",
+      "ex": "She goes swimming twice a week."
+     },
+     {
+      "w": "do yoga",
+      "ex": "My mum does yoga every morning."
+     },
+     {
+      "w": "team",
+      "ex": "Which team do you support?"
+     }
+    ],
+    "gram": "Play + ball games (play basketball), go + -ing activities (go cycling), do + other activities (do judo)."
+   }
+  },
+  {
+   "d": 50,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The weather",
+     "g": "Talk about the weather, a favourite topic in English small talk.",
+     "p": [
+      "Ask What's the weather like? and answer It's sunny, it's cloudy, it's windy.",
+      "For rain and snow now, say It's raining or It's snowing.",
+      "Temperature: It's hot, warm, cool, cold; a lovely day is perfect for small talk."
+     ],
+     "q": "What's the weather like where you are right now?",
+     "c": "Describe the weather aloud in English this morning and again this evening."
+    },
+    "de": {
+     "t": "Das Wetter",
+     "g": "Du lernst, über das Wetter zu sprechen, ein Lieblingsthema im englischen Small Talk.",
+     "p": [
+      "Frag What's the weather like? und antworte It's sunny, it's cloudy, it's windy.",
+      "Für Regen und Schnee gerade jetzt: It's raining oder It's snowing.",
+      "Temperatur: It's hot, warm, cool, cold; a lovely day passt perfekt zum Small Talk."
+     ],
+     "q": "Wie ist das Wetter gerade bei dir?",
+     "c": "Beschreib heute Morgen und heute Abend das Wetter laut auf Englisch."
+    },
+    "es": {
+     "t": "El tiempo",
+     "g": "Aprende a hablar del tiempo, un tema estrella de la charla en inglés.",
+     "p": [
+      "Pregunta What's the weather like? y responde It's sunny, it's cloudy, it's windy.",
+      "Para lluvia y nieve ahora, di It's raining o It's snowing.",
+      "Temperatura: It's hot, warm, cool, cold; a lovely day es perfecto para charlar."
+     ],
+     "q": "¿Qué tiempo hace ahora donde estás?",
+     "c": "Describe el tiempo en voz alta en inglés por la mañana y otra vez por la noche."
+    },
+    "fr": {
+     "t": "La météo",
+     "g": "Parler du temps qu'il fait, sujet favori des conversations en anglais.",
+     "p": [
+      "Demande What's the weather like? et réponds It's sunny, it's cloudy, it's windy.",
+      "Pour la pluie et la neige en ce moment : It's raining ou It's snowing.",
+      "Températures : It's hot, warm, cool, cold ; a lovely day, parfait pour papoter."
+     ],
+     "q": "Quel temps fait-il là où tu es en ce moment ?",
+     "c": "Décris la météo à voix haute en anglais ce matin, puis ce soir."
+    },
+    "it": {
+     "t": "Il tempo atmosferico",
+     "g": "Impari a parlare del tempo, l'argomento preferito delle chiacchiere in inglese.",
+     "p": [
+      "Chiedi What's the weather like? e rispondi It's sunny, it's cloudy, it's windy.",
+      "Per pioggia e neve in questo momento: It's raining o It's snowing.",
+      "Temperatura: It's hot, warm, cool, cold; a lovely day è perfetto per chiacchierare."
+     ],
+     "q": "Che tempo fa adesso dove sei?",
+     "c": "Descrivi il tempo ad alta voce in inglese stamattina e di nuovo stasera."
+    },
+    "pt": {
+     "t": "O tempo",
+     "g": "Aprende a falar do tempo, o tema preferido das conversas de circunstância em inglês.",
+     "p": [
+      "Pergunta What's the weather like? e responde It's sunny, it's cloudy, it's windy.",
+      "Para chuva e neve agora diz It's raining ou It's snowing.",
+      "Temperatura: It's hot, warm, cool, cold; a lovely day é perfeito para conversar."
+     ],
+     "q": "Como está o tempo aí onde estás agora?",
+     "c": "Descreve o tempo em voz alta em inglês de manhã e outra vez à noite."
+    },
+    "pt_BR": {
+     "t": "O clima",
+     "g": "Aprenda a falar do tempo, o assunto favorito do bate-papo em inglês.",
+     "p": [
+      "Pergunte What's the weather like? e responda It's sunny, it's cloudy, it's windy.",
+      "Para chuva e neve agora diga It's raining ou It's snowing.",
+      "Temperatura: It's hot, warm, cool, cold; a lovely day é perfeito para puxar papo."
+     ],
+     "q": "Como está o tempo aí onde você está agora?",
+     "c": "Descreva o tempo em voz alta em inglês de manhã e de novo à noite."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "What's the weather like?",
+      "ex": "What's the weather like in Rome?"
+     },
+     {
+      "w": "sunny",
+      "ex": "It's sunny and warm today."
+     },
+     {
+      "w": "cloudy",
+      "ex": "It's cloudy, but it's not cold."
+     },
+     {
+      "w": "It's raining.",
+      "ex": "Take an umbrella. It's raining."
+     },
+     {
+      "w": "windy",
+      "ex": "It's very windy by the sea."
+     },
+     {
+      "w": "cold",
+      "ex": "It's cold in the morning."
+     }
+    ],
+    "gram": "Weather uses it: It's sunny. It's raining. Adjective: rain-rainy, sun-sunny, wind-windy, cloud-cloudy."
+   }
+  }
+ ]
+}

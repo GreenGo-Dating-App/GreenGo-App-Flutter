@@ -1,0 +1,1305 @@
+{
+ "topic": "painting",
+ "questions": [
+  {
+   "id": "painting-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What first made you curious about painting?",
+    "de": "Was hat dich zum ersten Mal neugierig aufs Malen gemacht?",
+    "es": "¿Qué fue lo que primero despertó tu curiosidad por la pintura?",
+    "fr": "Qu'est-ce qui t'a donné envie de t'intéresser à la peinture au départ ?",
+    "it": "Che cosa ti ha incuriosito per la prima volta della pittura?",
+    "pt": "O que é que te despertou a curiosidade pela pintura pela primeira vez?",
+    "pt_BR": "O que despertou sua curiosidade pela pintura pela primeira vez?"
+   }
+  },
+  {
+   "id": "painting-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Which painting would you love to see in person one day, and why?",
+    "de": "Welches Gemälde würdest du gern einmal im Original sehen, und warum?",
+    "es": "¿Qué cuadro te encantaría ver en persona algún día, y por qué?",
+    "fr": "Quel tableau aimerais-tu voir en vrai un jour, et pourquoi ?",
+    "it": "Quale quadro ti piacerebbe vedere dal vivo un giorno, e perché?",
+    "pt": "Que quadro adorarias ver ao vivo um dia, e porquê?",
+    "pt_BR": "Que quadro você adoraria ver ao vivo um dia, e por quê?"
+   }
+  },
+  {
+   "id": "painting-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer bright, bold colours or soft, gentle ones?",
+    "de": "Magst du lieber kräftige, leuchtende Farben oder sanfte, zarte Töne?",
+    "es": "¿Prefieres los colores vivos e intensos o los suaves y delicados?",
+    "fr": "Tu préfères les couleurs vives et franches ou les teintes douces et délicates ?",
+    "it": "Preferisci i colori accesi e decisi o quelli tenui e delicati?",
+    "pt": "Preferes cores vivas e intensas ou tons suaves e delicados?",
+    "pt_BR": "Você prefere cores vivas e intensas ou tons suaves e delicados?"
+   }
+  },
+  {
+   "id": "painting-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Which colour do you find yourself drawn to again and again?",
+    "de": "Zu welcher Farbe fühlst du dich immer wieder hingezogen?",
+    "es": "¿Qué color te atrae una y otra vez?",
+    "fr": "Quelle couleur t'attire encore et toujours ?",
+    "it": "Quale colore ti attira sempre, ancora e ancora?",
+    "pt": "Que cor te atrai vezes sem conta?",
+    "pt_BR": "Qual cor sempre acaba chamando a sua atenção?"
+   }
+  },
+  {
+   "id": "painting-005",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could hang one famous painting in your home, which would it be?",
+    "de": "Wenn du ein berühmtes Gemälde bei dir zu Hause aufhängen könntest, welches wäre es?",
+    "es": "Si pudieras colgar un cuadro famoso en tu casa, ¿cuál elegirías?",
+    "fr": "Si tu pouvais accrocher un tableau célèbre chez toi, lequel choisirais-tu ?",
+    "it": "Se potessi appendere a casa tua un quadro famoso, quale sceglieresti?",
+    "pt": "Se pudesses pendurar um quadro famoso em tua casa, qual escolherias?",
+    "pt_BR": "Se você pudesse pendurar um quadro famoso na sua casa, qual escolheria?"
+   }
+  },
+  {
+   "id": "painting-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Who is a painter whose work you enjoy, and what do you like about it?",
+    "de": "Welche Malerin oder welchen Maler magst du, und was gefällt dir an den Werken?",
+    "es": "¿Qué pintor o pintora te gusta, y qué es lo que te atrae de su obra?",
+    "fr": "Quel peintre ou quelle peintre aimes-tu, et qu'est-ce qui te plaît dans son œuvre ?",
+    "it": "Quale pittore o pittrice ami, e che cosa ti piace delle sue opere?",
+    "pt": "Que pintor ou pintora aprecias, e o que te agrada no seu trabalho?",
+    "pt_BR": "Qual pintor ou pintora você curte, e o que mais gosta no trabalho dele ou dela?"
+   }
+  },
+  {
+   "id": "painting-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer realistic paintings or abstract ones? What draws you in?",
+    "de": "Gefallen dir realistische oder abstrakte Bilder besser? Was fesselt dich daran?",
+    "es": "¿Prefieres la pintura realista o la abstracta? ¿Qué te atrapa de ella?",
+    "fr": "Tu préfères la peinture réaliste ou abstraite ? Qu'est-ce qui t'y attire ?",
+    "it": "Preferisci la pittura realistica o quella astratta? Che cosa ti cattura?",
+    "pt": "Preferes pintura realista ou abstrata? O que te cativa nela?",
+    "pt_BR": "Você prefere pintura realista ou abstrata? O que mais te atrai nela?"
+   }
+  },
+  {
+   "id": "painting-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Which museum or gallery has impressed you the most so far?",
+    "de": "Welches Museum oder welche Galerie hat dich bisher am meisten beeindruckt?",
+    "es": "¿Qué museo o galería es el que más te ha impresionado hasta ahora?",
+    "fr": "Quel musée ou quelle galerie t'a le plus impressionné jusqu'ici ?",
+    "it": "Quale museo o galleria ti ha colpito di più finora?",
+    "pt": "Que museu ou galeria te impressionou mais até hoje?",
+    "pt_BR": "Qual museu ou galeria mais te impressionou até hoje?"
+   }
+  },
+  {
+   "id": "painting-009",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you most love to paint: a landscape, a portrait, a still life or something else?",
+    "de": "Was würdest du am liebsten malen: eine Landschaft, ein Porträt, ein Stillleben oder etwas anderes?",
+    "es": "¿Qué te gustaría más pintar: un paisaje, un retrato, un bodegón u otra cosa?",
+    "fr": "Que préférerais-tu peindre : un paysage, un portrait, une nature morte ou autre chose ?",
+    "it": "Che cosa ti piacerebbe di più dipingere: un paesaggio, un ritratto, una natura morta o altro?",
+    "pt": "O que mais gostarias de pintar: uma paisagem, um retrato, uma natureza-morta ou outra coisa?",
+    "pt_BR": "O que você mais gostaria de pintar: uma paisagem, um retrato, uma natureza-morta ou outra coisa?"
+   }
+  },
+  {
+   "id": "painting-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a painting from your country that almost everyone there knows?",
+    "de": "Gibt es ein Gemälde aus deinem Land, das dort fast jeder kennt?",
+    "es": "¿Hay algún cuadro de tu país que casi todo el mundo allí conozca?",
+    "fr": "Y a-t-il un tableau de ton pays que presque tout le monde connaît là-bas ?",
+    "it": "C'è un quadro del tuo Paese che lì conoscono quasi tutti?",
+    "pt": "Há algum quadro do teu país que quase toda a gente lá conheça?",
+    "pt_BR": "Existe algum quadro do seu país que quase todo mundo lá conhece?"
+   }
+  },
+  {
+   "id": "painting-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which place in your town would make a beautiful painting?",
+    "de": "Welcher Ort in deiner Stadt würde ein schönes Bild abgeben?",
+    "es": "¿Qué lugar de tu ciudad quedaría precioso en un cuadro?",
+    "fr": "Quel endroit de ta ville ferait un beau tableau ?",
+    "it": "Quale luogo della tua città sarebbe perfetto per un bel quadro?",
+    "pt": "Que sítio da tua cidade daria um belo quadro?",
+    "pt_BR": "Qual lugar da sua cidade daria uma pintura linda?"
+   }
+  },
+  {
+   "id": "painting-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like listening to music while you create something? What kind?",
+    "de": "Hörst du gern Musik, während du etwas gestaltest? Welche Art?",
+    "es": "¿Te gusta escuchar música mientras creas algo? ¿Qué tipo de música?",
+    "fr": "Aimes-tu écouter de la musique quand tu crées quelque chose ? Laquelle ?",
+    "it": "Ti piace ascoltare musica mentre crei qualcosa? Di che genere?",
+    "pt": "Gostas de ouvir música enquanto crias alguma coisa? De que tipo?",
+    "pt_BR": "Você gosta de ouvir música enquanto cria alguma coisa? Que tipo?"
+   }
+  },
+  {
+   "id": "painting-013",
+   "lv": "any",
+   "i18n": {
+    "en": "When do you feel most creative: in the morning, the afternoon or at night?",
+    "de": "Wann fühlst du dich am kreativsten: morgens, nachmittags oder abends?",
+    "es": "¿Cuándo te sientes más creativo o creativa: por la mañana, por la tarde o por la noche?",
+    "fr": "Quand te sens-tu le plus créatif : le matin, l'après-midi ou le soir ?",
+    "it": "Quando ti senti più creativo: al mattino, nel pomeriggio o la sera?",
+    "pt": "Quando te sentes mais criativo: de manhã, à tarde ou à noite?",
+    "pt_BR": "Quando você se sente mais criativo: de manhã, à tarde ou à noite?"
+   }
+  },
+  {
+   "id": "painting-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Which season has the most beautiful colours where you live?",
+    "de": "Welche Jahreszeit hat bei dir die schönsten Farben?",
+    "es": "¿Qué estación del año tiene los colores más bonitos donde vives?",
+    "fr": "Quelle saison offre les plus belles couleurs là où tu vis ?",
+    "it": "Quale stagione ha i colori più belli dove vivi?",
+    "pt": "Que estação do ano tem as cores mais bonitas onde vives?",
+    "pt_BR": "Qual estação do ano tem as cores mais bonitas onde você mora?"
+   }
+  },
+  {
+   "id": "painting-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever seen a mural or street painting that surprised you? What was it like?",
+    "de": "Hast du schon mal ein Wandbild oder Street Art gesehen, das dich überrascht hat? Wie sah es aus?",
+    "es": "¿Has visto alguna vez un mural o arte urbano que te sorprendiera? ¿Cómo era?",
+    "fr": "As-tu déjà vu une fresque murale ou du street art qui t'a surpris ? À quoi ça ressemblait ?",
+    "it": "Hai mai visto un murale o un'opera di street art che ti ha sorpreso? Com'era?",
+    "pt": "Já viste algum mural ou arte urbana que te surpreendeu? Como era?",
+    "pt_BR": "Você já viu algum mural ou arte de rua que te surpreendeu? Como era?"
+   }
+  },
+  {
+   "id": "painting-016",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could spend a day with any painter from history, who would you choose?",
+    "de": "Wenn du einen Tag mit einem Maler oder einer Malerin der Geschichte verbringen könntest, wen würdest du wählen?",
+    "es": "Si pudieras pasar un día con cualquier pintor de la historia, ¿a quién elegirías?",
+    "fr": "Si tu pouvais passer une journée avec un peintre de l'histoire, qui choisirais-tu ?",
+    "it": "Se potessi passare una giornata con un pittore del passato, chi sceglieresti?",
+    "pt": "Se pudesses passar um dia com um pintor da história, quem escolherias?",
+    "pt_BR": "Se você pudesse passar um dia com qualquer pintor da história, quem escolheria?"
+   }
+  },
+  {
+   "id": "painting-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a painting need to catch your attention?",
+    "de": "Was braucht ein Bild, damit es deine Aufmerksamkeit fesselt?",
+    "es": "¿Qué necesita un cuadro para llamar tu atención?",
+    "fr": "De quoi un tableau a-t-il besoin pour attirer ton attention ?",
+    "it": "Che cosa deve avere un quadro per attirare la tua attenzione?",
+    "pt": "O que precisa um quadro de ter para te chamar a atenção?",
+    "pt_BR": "O que um quadro precisa ter pra chamar sua atenção?"
+   }
+  },
+  {
+   "id": "painting-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer looking at art on your own or with friends?",
+    "de": "Schaust du dir Kunst lieber allein oder mit Freunden an?",
+    "es": "¿Prefieres ver arte a solas o con amigos?",
+    "fr": "Tu préfères regarder l'art seul ou avec des amis ?",
+    "it": "Preferisci guardare l'arte da solo o con gli amici?",
+    "pt": "Preferes ver arte sozinho ou com amigos?",
+    "pt_BR": "Você prefere ver arte sozinho ou com amigos?"
+   }
+  },
+  {
+   "id": "painting-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Which art period sounds most exciting to you: the Renaissance, Impressionism, modern art or another?",
+    "de": "Welche Kunstepoche findest du am spannendsten: Renaissance, Impressionismus, Moderne oder eine andere?",
+    "es": "¿Qué época del arte te parece más apasionante: el Renacimiento, el impresionismo, el arte moderno u otra?",
+    "fr": "Quelle période de l'art te semble la plus passionnante : la Renaissance, l'impressionnisme, l'art moderne ou une autre ?",
+    "it": "Quale periodo artistico ti affascina di più: Rinascimento, Impressionismo, arte moderna o un altro?",
+    "pt": "Que período da arte te parece mais fascinante: o Renascimento, o Impressionismo, a arte moderna ou outro?",
+    "pt_BR": "Qual período da arte parece mais fascinante pra você: Renascimento, Impressionismo, arte moderna ou outro?"
+   }
+  },
+  {
+   "id": "painting-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a colour that reminds you of your childhood? Why that one?",
+    "de": "Gibt es eine Farbe, die dich an deine Kindheit erinnert? Warum gerade diese?",
+    "es": "¿Hay algún color que te recuerde tu infancia? ¿Por qué ese?",
+    "fr": "Y a-t-il une couleur qui te rappelle ton enfance ? Pourquoi celle-là ?",
+    "it": "C'è un colore che ti ricorda l'infanzia? Perché proprio quello?",
+    "pt": "Há alguma cor que te lembre a infância? Porquê essa?",
+    "pt_BR": "Tem alguma cor que te lembra a sua infância? Por que essa?"
+   }
+  },
+  {
+   "id": "painting-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you paint to show a friend abroad what your home is like?",
+    "de": "Was würdest du malen, um einem Freund im Ausland zu zeigen, wie es bei dir zu Hause ist?",
+    "es": "¿Qué pintarías para mostrarle a un amigo de otro país cómo es tu tierra?",
+    "fr": "Que peindrais-tu pour montrer à un ami étranger à quoi ressemble ton chez-toi ?",
+    "it": "Che cosa dipingeresti per mostrare a un amico all'estero com'è casa tua?",
+    "pt": "O que pintarias para mostrar a um amigo estrangeiro como é a tua terra?",
+    "pt_BR": "O que você pintaria pra mostrar a um amigo de outro país como é a sua terra?"
+   }
+  },
+  {
+   "id": "painting-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have any art at home? Which piece is your favourite?",
+    "de": "Hast du Kunst bei dir zu Hause? Welches Stück ist dein Lieblingsstück?",
+    "es": "¿Tienes alguna obra de arte en casa? ¿Cuál es tu favorita?",
+    "fr": "As-tu des œuvres d'art chez toi ? Laquelle est ta préférée ?",
+    "it": "Hai qualche opera d'arte in casa? Qual è la tua preferita?",
+    "pt": "Tens alguma obra de arte em casa? Qual é a tua preferida?",
+    "pt_BR": "Você tem alguma obra de arte em casa? Qual é a sua favorita?"
+   }
+  },
+  {
+   "id": "painting-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather paint outdoors in nature or in a cosy room at home?",
+    "de": "Würdest du lieber draußen in der Natur malen oder in einem gemütlichen Zimmer zu Hause?",
+    "es": "¿Preferirías pintar al aire libre en la naturaleza o en un rincón acogedor de casa?",
+    "fr": "Tu préférerais peindre dehors dans la nature ou dans une pièce douillette chez toi ?",
+    "it": "Preferiresti dipingere all'aperto nella natura o in una stanza accogliente di casa?",
+    "pt": "Preferias pintar ao ar livre na natureza ou num cantinho acolhedor em casa?",
+    "pt_BR": "Você preferiria pintar ao ar livre na natureza ou num cantinho aconchegante em casa?"
+   }
+  },
+  {
+   "id": "painting-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What feeling would you like your paintings to share with people?",
+    "de": "Welches Gefühl möchtest du mit deinen Bildern bei anderen wecken?",
+    "es": "¿Qué sentimiento te gustaría transmitir a la gente con tus cuadros?",
+    "fr": "Quelle émotion aimerais-tu transmettre aux gens avec tes tableaux ?",
+    "it": "Quale emozione vorresti trasmettere alle persone con i tuoi quadri?",
+    "pt": "Que sentimento gostarias de transmitir às pessoas com os teus quadros?",
+    "pt_BR": "Que sentimento você gostaria de transmitir às pessoas com suas pinturas?"
+   }
+  },
+  {
+   "id": "painting-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever made a handmade gift for someone? How was it received?",
+    "de": "Hast du schon einmal jemandem etwas Selbstgemachtes geschenkt? Wie kam es an?",
+    "es": "¿Alguna vez has hecho un regalo a mano para alguien? ¿Cómo lo recibió?",
+    "fr": "As-tu déjà offert un cadeau fait main à quelqu'un ? Comment a-t-il été reçu ?",
+    "it": "Hai mai fatto un regalo fatto a mano per qualcuno? Come l'ha accolto?",
+    "pt": "Já fizeste algum presente feito à mão para alguém? Como foi recebido?",
+    "pt_BR": "Você já fez um presente à mão pra alguém? Como a pessoa reagiu?"
+   }
+  },
+  {
+   "id": "painting-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Which artist from your own country do you admire, and why?",
+    "de": "Welche Künstlerin oder welchen Künstler aus deinem Land bewunderst du, und warum?",
+    "es": "¿Qué artista de tu país admiras, y por qué?",
+    "fr": "Quel artiste de ton pays admires-tu, et pourquoi ?",
+    "it": "Quale artista del tuo Paese ammiri, e perché?",
+    "pt": "Que artista do teu país admiras, e porquê?",
+    "pt_BR": "Qual artista do seu país você admira, e por quê?"
+   }
+  },
+  {
+   "id": "painting-027",
+   "lv": "any",
+   "i18n": {
+    "en": "What sky have you seen that you wish you could paint?",
+    "de": "Welchen Himmel hast du schon gesehen, den du gern malen würdest?",
+    "es": "¿Qué cielo has visto que te gustaría poder pintar?",
+    "fr": "Quel ciel as-tu déjà vu que tu aimerais savoir peindre ?",
+    "it": "Quale cielo hai visto che ti piacerebbe saper dipingere?",
+    "pt": "Que céu já viste que gostavas de conseguir pintar?",
+    "pt_BR": "Que céu você já viu que gostaria de conseguir pintar?"
+   }
+  },
+  {
+   "id": "painting-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think anyone can learn to paint? What makes you think so?",
+    "de": "Glaubst du, dass jeder malen lernen kann? Wie kommst du darauf?",
+    "es": "¿Crees que cualquiera puede aprender a pintar? ¿Por qué lo piensas?",
+    "fr": "Penses-tu que tout le monde peut apprendre à peindre ? Pourquoi ?",
+    "it": "Pensi che chiunque possa imparare a dipingere? Perché lo pensi?",
+    "pt": "Achas que qualquer pessoa pode aprender a pintar? Porquê?",
+    "pt_BR": "Você acha que qualquer pessoa pode aprender a pintar? Por quê?"
+   }
+  },
+  {
+   "id": "painting-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Which other creative hobbies do you enjoy besides painting?",
+    "de": "Welche anderen kreativen Hobbys hast du neben dem Malen?",
+    "es": "¿Qué otras aficiones creativas disfrutas además de la pintura?",
+    "fr": "Quels autres loisirs créatifs aimes-tu en plus de la peinture ?",
+    "it": "Quali altri hobby creativi ti piacciono oltre alla pittura?",
+    "pt": "Que outros passatempos criativos gostas de ter além da pintura?",
+    "pt_BR": "Que outros hobbies criativos você curte além da pintura?"
+   }
+  },
+  {
+   "id": "painting-030",
+   "lv": "any",
+   "i18n": {
+    "en": "If your life were a painting, which colours would it have right now?",
+    "de": "Wenn dein Leben ein Gemälde wäre, welche Farben hätte es gerade?",
+    "es": "Si tu vida fuera un cuadro, ¿qué colores tendría ahora mismo?",
+    "fr": "Si ta vie était un tableau, quelles couleurs aurait-il en ce moment ?",
+    "it": "Se la tua vita fosse un quadro, quali colori avrebbe in questo momento?",
+    "pt": "Se a tua vida fosse um quadro, que cores teria neste momento?",
+    "pt_BR": "Se a sua vida fosse um quadro, que cores ele teria agora?"
+   }
+  },
+  {
+   "id": "painting-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What relaxes you more: painting, looking at art or reading about artists?",
+    "de": "Was entspannt dich mehr: selbst malen, Kunst anschauen oder über Künstler lesen?",
+    "es": "¿Qué te relaja más: pintar, mirar arte o leer sobre artistas?",
+    "fr": "Qu'est-ce qui te détend le plus : peindre, regarder de l'art ou lire sur des artistes ?",
+    "it": "Che cosa ti rilassa di più: dipingere, guardare l'arte o leggere di artisti?",
+    "pt": "O que te relaxa mais: pintar, ver arte ou ler sobre artistas?",
+    "pt_BR": "O que te relaxa mais: pintar, ver arte ou ler sobre artistas?"
+   }
+  },
+  {
+   "id": "painting-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you enjoy a painting afternoon with friends? What would you paint together?",
+    "de": "Hättest du Spaß an einem Malnachmittag mit Freunden? Was würdet ihr zusammen malen?",
+    "es": "¿Te gustaría una tarde de pintura con amigos? ¿Qué pintaríais juntos?",
+    "fr": "Ça te plairait, un après-midi peinture entre amis ? Que peindriez-vous ensemble ?",
+    "it": "Ti piacerebbe un pomeriggio di pittura con gli amici? Che cosa dipingereste insieme?",
+    "pt": "Gostavas de uma tarde de pintura com amigos? O que pintariam juntos?",
+    "pt_BR": "Você curtiria uma tarde de pintura com amigos? O que vocês pintariam juntos?"
+   }
+  },
+  {
+   "id": "painting-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Which famous painting do you find mysterious, and what makes it so?",
+    "de": "Welches berühmte Gemälde findest du geheimnisvoll, und woran liegt das?",
+    "es": "¿Qué cuadro famoso te parece misterioso, y qué lo hace así?",
+    "fr": "Quel tableau célèbre te paraît mystérieux, et qu'est-ce qui le rend ainsi ?",
+    "it": "Quale quadro famoso trovi misterioso, e che cosa lo rende tale?",
+    "pt": "Que quadro famoso achas misterioso, e o que o torna assim?",
+    "pt_BR": "Qual quadro famoso você acha misterioso, e o que o deixa assim?"
+   }
+  },
+  {
+   "id": "painting-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Which object in your home would make a lovely still life?",
+    "de": "Welcher Gegenstand bei dir zu Hause wäre ein schönes Stillleben?",
+    "es": "¿Qué objeto de tu casa sería un bonito bodegón?",
+    "fr": "Quel objet de ta maison ferait une jolie nature morte ?",
+    "it": "Quale oggetto di casa tua sarebbe perfetto per una bella natura morta?",
+    "pt": "Que objeto da tua casa daria uma bela natureza-morta?",
+    "pt_BR": "Qual objeto da sua casa daria uma natureza-morta bonita?"
+   }
+  },
+  {
+   "id": "painting-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like to plan everything, or do you let ideas come while you create?",
+    "de": "Planst du gern alles im Voraus, oder lässt du die Ideen beim Gestalten kommen?",
+    "es": "¿Te gusta planearlo todo o dejas que las ideas lleguen mientras creas?",
+    "fr": "Aimes-tu tout planifier, ou laisses-tu venir les idées pendant que tu crées ?",
+    "it": "Ti piace pianificare tutto o lasci che le idee arrivino mentre crei?",
+    "pt": "Gostas de planear tudo ou deixas as ideias surgirem enquanto crias?",
+    "pt_BR": "Você gosta de planejar tudo ou deixa as ideias surgirem enquanto cria?"
+   }
+  },
+  {
+   "id": "painting-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What traditional art or craft from your culture do you love?",
+    "de": "Welche traditionelle Kunst oder welches Handwerk aus deiner Kultur liebst du?",
+    "es": "¿Qué arte o artesanía tradicional de tu cultura te encanta?",
+    "fr": "Quel art ou artisanat traditionnel de ta culture aimes-tu ?",
+    "it": "Quale arte o artigianato tradizionale della tua cultura ami?",
+    "pt": "Que arte ou artesanato tradicional da tua cultura adoras?",
+    "pt_BR": "Qual arte ou artesanato tradicional da sua cultura você adora?"
+   }
+  },
+  {
+   "id": "painting-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal would you love to paint, and why that one?",
+    "de": "Welches Tier würdest du gern malen, und warum gerade dieses?",
+    "es": "¿Qué animal te encantaría pintar, y por qué ese?",
+    "fr": "Quel animal aimerais-tu peindre, et pourquoi celui-là ?",
+    "it": "Quale animale ti piacerebbe dipingere, e perché proprio quello?",
+    "pt": "Que animal adorarias pintar, e porquê esse?",
+    "pt_BR": "Qual animal você adoraria pintar, e por que esse?"
+   }
+  },
+  {
+   "id": "painting-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather paint something huge like a wall or something tiny like a postcard?",
+    "de": "Würdest du lieber etwas Riesiges wie eine Wand malen oder etwas Winziges wie eine Postkarte?",
+    "es": "¿Preferirías pintar algo enorme como una pared o algo diminuto como una postal?",
+    "fr": "Tu préférerais peindre quelque chose d'immense comme un mur ou de minuscule comme une carte postale ?",
+    "it": "Preferiresti dipingere qualcosa di enorme come un muro o di minuscolo come una cartolina?",
+    "pt": "Preferias pintar algo enorme como uma parede ou minúsculo como um postal?",
+    "pt_BR": "Você preferiria pintar algo enorme como uma parede ou minúsculo como um cartão-postal?"
+   }
+  },
+  {
+   "id": "painting-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you hope painting will add to your everyday life?",
+    "de": "Was soll das Malen deiner Meinung nach zu deinem Alltag beitragen?",
+    "es": "¿Qué esperas que la pintura aporte a tu día a día?",
+    "fr": "Qu'espères-tu que la peinture apporte à ton quotidien ?",
+    "it": "Che cosa speri che la pittura aggiunga alla tua vita di tutti i giorni?",
+    "pt": "O que esperas que a pintura traga ao teu dia a dia?",
+    "pt_BR": "O que você espera que a pintura traga pro seu dia a dia?"
+   }
+  },
+  {
+   "id": "painting-040",
+   "lv": "any",
+   "i18n": {
+    "en": "Where would be your dream place to paint while travelling?",
+    "de": "Wo wäre dein Traumort, um auf Reisen zu malen?",
+    "es": "¿Cuál sería tu lugar soñado para pintar durante un viaje?",
+    "fr": "Quel serait ton lieu de rêve pour peindre en voyage ?",
+    "it": "Quale sarebbe il tuo posto dei sogni per dipingere in viaggio?",
+    "pt": "Qual seria o teu lugar de sonho para pintar em viagem?",
+    "pt_BR": "Qual seria o seu lugar dos sonhos pra pintar numa viagem?"
+   }
+  },
+  {
+   "id": "painting-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which medium would you like to try first: watercolour, acrylic, gouache or oil?",
+    "de": "Welches Medium möchtest du zuerst ausprobieren: Aquarell, Acryl, Gouache oder Öl?",
+    "es": "¿Qué técnica te gustaría probar primero: acuarela, acrílico, gouache u óleo?",
+    "fr": "Quel médium aimerais-tu essayer en premier : aquarelle, acrylique, gouache ou huile ?",
+    "it": "Quale tecnica vorresti provare per prima: acquerello, acrilico, gouache o olio?",
+    "pt": "Que técnica gostavas de experimentar primeiro: aguarela, acrílico, guache ou óleo?",
+    "pt_BR": "Qual técnica você gostaria de experimentar primeiro: aquarela, acrílica, guache ou óleo?"
+   }
+  },
+  {
+   "id": "painting-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What painting supplies do you already have at home?",
+    "de": "Welche Malsachen hast du schon zu Hause?",
+    "es": "¿Qué materiales de pintura tienes ya en casa?",
+    "fr": "Quel matériel de peinture as-tu déjà chez toi ?",
+    "it": "Quali materiali da pittura hai già a casa?",
+    "pt": "Que materiais de pintura já tens em casa?",
+    "pt_BR": "Que materiais de pintura você já tem em casa?"
+   }
+  },
+  {
+   "id": "painting-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where at home could you set up a small painting corner?",
+    "de": "Wo bei dir zu Hause könntest du dir eine kleine Malecke einrichten?",
+    "es": "¿En qué parte de tu casa podrías montar un pequeño rincón para pintar?",
+    "fr": "Où pourrais-tu installer un petit coin peinture chez toi ?",
+    "it": "Dove potresti allestire un piccolo angolo per dipingere in casa?",
+    "pt": "Onde é que em casa poderias montar um pequeno canto de pintura?",
+    "pt_BR": "Em que lugar da sua casa você poderia montar um cantinho de pintura?"
+   }
+  },
+  {
+   "id": "painting-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How much time a day could you realistically give to painting?",
+    "de": "Wie viel Zeit am Tag könntest du realistisch fürs Malen einplanen?",
+    "es": "¿Cuánto tiempo al día podrías dedicar de verdad a pintar?",
+    "fr": "Combien de temps par jour pourrais-tu réellement consacrer à la peinture ?",
+    "it": "Quanto tempo al giorno potresti dedicare davvero alla pittura?",
+    "pt": "Quanto tempo por dia conseguirias realisticamente dedicar à pintura?",
+    "pt_BR": "Quanto tempo por dia você conseguiria, na real, dedicar à pintura?"
+   }
+  },
+  {
+   "id": "painting-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever mixed two colours and been surprised by the result?",
+    "de": "Hast du schon mal zwei Farben gemischt und warst vom Ergebnis überrascht?",
+    "es": "¿Alguna vez has mezclado dos colores y te ha sorprendido el resultado?",
+    "fr": "As-tu déjà mélangé deux couleurs et été surpris par le résultat ?",
+    "it": "Ti è mai capitato di mescolare due colori e restare sorpreso dal risultato?",
+    "pt": "Já misturaste duas cores e ficaste surpreendido com o resultado?",
+    "pt_BR": "Você já misturou duas cores e se surpreendeu com o resultado?"
+   }
+  },
+  {
+   "id": "painting-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What feels harder to you: mixing the right colour or getting the right shape?",
+    "de": "Was fällt dir schwerer: die richtige Farbe zu mischen oder die richtige Form zu treffen?",
+    "es": "¿Qué te resulta más difícil: mezclar el color exacto o conseguir la forma correcta?",
+    "fr": "Qu'est-ce qui te semble plus difficile : mélanger la bonne couleur ou trouver la bonne forme ?",
+    "it": "Che cosa ti sembra più difficile: ottenere il colore giusto o la forma giusta?",
+    "pt": "O que te parece mais difícil: misturar a cor certa ou acertar na forma?",
+    "pt_BR": "O que parece mais difícil pra você: misturar a cor certa ou acertar a forma?"
+   }
+  },
+  {
+   "id": "painting-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What simple object would you like to paint first?",
+    "de": "Welchen einfachen Gegenstand würdest du gern als Erstes malen?",
+    "es": "¿Qué objeto sencillo te gustaría pintar primero?",
+    "fr": "Quel objet simple aimerais-tu peindre en premier ?",
+    "it": "Quale oggetto semplice ti piacerebbe dipingere per primo?",
+    "pt": "Que objeto simples gostavas de pintar primeiro?",
+    "pt_BR": "Qual objeto simples você gostaria de pintar primeiro?"
+   }
+  },
+  {
+   "id": "painting-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer big brushes for loose strokes or small ones for fine detail?",
+    "de": "Magst du lieber große Pinsel für lockere Striche oder kleine für feine Details?",
+    "es": "¿Prefieres pinceles grandes para trazos sueltos o pequeños para los detalles?",
+    "fr": "Tu préfères les gros pinceaux pour des touches libres ou les petits pour les détails ?",
+    "it": "Preferisci pennelli grandi per pennellate libere o piccoli per i dettagli?",
+    "pt": "Preferes pincéis grandes para pinceladas soltas ou pequenos para os detalhes?",
+    "pt_BR": "Você prefere pincéis grandes pra pinceladas soltas ou pequenos pros detalhes?"
+   }
+  },
+  {
+   "id": "painting-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you usually react when something you make doesn't turn out as planned?",
+    "de": "Wie reagierst du meistens, wenn etwas, das du machst, nicht wie geplant gelingt?",
+    "es": "¿Cómo sueles reaccionar cuando algo que haces no sale como lo planeabas?",
+    "fr": "Comment réagis-tu d'habitude quand ce que tu fais ne se passe pas comme prévu ?",
+    "it": "Come reagisci di solito quando qualcosa che fai non viene come previsto?",
+    "pt": "Como costumas reagir quando algo que fazes não sai como planeado?",
+    "pt_BR": "Como você costuma reagir quando algo que você faz não sai como planejado?"
+   }
+  },
+  {
+   "id": "painting-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather paint from photos or from real life? Why?",
+    "de": "Würdest du lieber nach Fotos oder nach der Natur malen? Warum?",
+    "es": "¿Preferirías pintar a partir de fotos o del natural? ¿Por qué?",
+    "fr": "Tu préférerais peindre d'après photo ou d'après nature ? Pourquoi ?",
+    "it": "Preferiresti dipingere da foto o dal vero? Perché?",
+    "pt": "Preferias pintar a partir de fotografias ou do natural? Porquê?",
+    "pt_BR": "Você preferiria pintar a partir de fotos ou ao vivo, observando de verdade? Por quê?"
+   }
+  },
+  {
+   "id": "painting-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which primary colour do you like most, and what would you mix with it?",
+    "de": "Welche Grundfarbe magst du am liebsten, und womit würdest du sie mischen?",
+    "es": "¿Qué color primario te gusta más, y con qué lo mezclarías?",
+    "fr": "Quelle couleur primaire préfères-tu, et avec quoi la mélangerais-tu ?",
+    "it": "Quale colore primario ti piace di più, e con che cosa lo mescoleresti?",
+    "pt": "Que cor primária preferes, e com o que a misturarias?",
+    "pt_BR": "Qual cor primária você mais gosta, e com o que a misturaria?"
+   }
+  },
+  {
+   "id": "painting-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "If you painted a simple landscape today, what would you put in it?",
+    "de": "Wenn du heute eine einfache Landschaft malen würdest, was käme hinein?",
+    "es": "Si hoy pintaras un paisaje sencillo, ¿qué pondrías en él?",
+    "fr": "Si tu peignais un paysage simple aujourd'hui, qu'y mettrais-tu ?",
+    "it": "Se oggi dipingessi un paesaggio semplice, che cosa ci metteresti?",
+    "pt": "Se hoje pintasses uma paisagem simples, o que lá porias?",
+    "pt_BR": "Se você pintasse uma paisagem simples hoje, o que colocaria nela?"
+   }
+  },
+  {
+   "id": "painting-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you think is harder to paint: skies or water?",
+    "de": "Was ist deiner Meinung nach schwieriger zu malen: Himmel oder Wasser?",
+    "es": "¿Qué crees que es más difícil de pintar: el cielo o el agua?",
+    "fr": "À ton avis, qu'est-ce qui est plus difficile à peindre : le ciel ou l'eau ?",
+    "it": "Secondo te è più difficile dipingere il cielo o l'acqua?",
+    "pt": "O que achas mais difícil de pintar: o céu ou a água?",
+    "pt_BR": "O que você acha mais difícil de pintar: o céu ou a água?"
+   }
+  },
+  {
+   "id": "painting-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you like neat, clean results or messy, expressive ones?",
+    "de": "Magst du saubere, ordentliche Ergebnisse oder wilde, ausdrucksstarke?",
+    "es": "¿Te gustan los resultados limpios y ordenados o los más libres y expresivos?",
+    "fr": "Tu aimes les résultats nets et propres ou plutôt libres et expressifs ?",
+    "it": "Ti piacciono i risultati ordinati e puliti o quelli liberi ed espressivi?",
+    "pt": "Gostas de resultados limpos e arrumados ou mais soltos e expressivos?",
+    "pt_BR": "Você gosta de resultados limpinhos e organizados ou mais soltos e expressivos?"
+   }
+  },
+  {
+   "id": "painting-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "If you painted a whole picture in just one colour, which colour would you choose?",
+    "de": "Wenn du ein ganzes Bild in nur einer Farbe malen würdest, welche wäre es?",
+    "es": "Si pintaras un cuadro entero con un solo color, ¿cuál elegirías?",
+    "fr": "Si tu peignais tout un tableau avec une seule couleur, laquelle choisirais-tu ?",
+    "it": "Se dipingessi un intero quadro con un solo colore, quale sceglieresti?",
+    "pt": "Se pintasses um quadro inteiro com uma só cor, qual escolherias?",
+    "pt_BR": "Se você pintasse um quadro inteiro com uma cor só, qual escolheria?"
+   }
+  },
+  {
+   "id": "painting-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you like to keep track of what you learn: a notebook, photos or memory?",
+    "de": "Wie hältst du am liebsten fest, was du lernst: Notizbuch, Fotos oder Gedächtnis?",
+    "es": "¿Cómo prefieres registrar lo que aprendes: en un cuaderno, con fotos o de memoria?",
+    "fr": "Comment aimes-tu garder une trace de ce que tu apprends : carnet, photos ou mémoire ?",
+    "it": "Come preferisci tenere traccia di ciò che impari: quaderno, foto o memoria?",
+    "pt": "Como gostas de registar o que aprendes: num caderno, com fotos ou de memória?",
+    "pt_BR": "Como você gosta de registrar o que aprende: num caderno, com fotos ou de cabeça?"
+   }
+  },
+  {
+   "id": "painting-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which fruit or flower would you pick for your very first still life?",
+    "de": "Welche Frucht oder Blume würdest du für dein allererstes Stillleben wählen?",
+    "es": "¿Qué fruta o flor elegirías para tu primer bodegón?",
+    "fr": "Quel fruit ou quelle fleur choisirais-tu pour ta toute première nature morte ?",
+    "it": "Quale frutto o fiore sceglieresti per la tua primissima natura morta?",
+    "pt": "Que fruta ou flor escolherias para a tua primeira natureza-morta?",
+    "pt_BR": "Qual fruta ou flor você escolheria pra sua primeira natureza-morta?"
+   }
+  },
+  {
+   "id": "painting-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which part of a face would you most like to learn to paint?",
+    "de": "Welchen Teil eines Gesichts würdest du am liebsten malen lernen?",
+    "es": "¿Qué parte del rostro te gustaría más aprender a pintar?",
+    "fr": "Quelle partie du visage aimerais-tu le plus apprendre à peindre ?",
+    "it": "Quale parte del viso ti piacerebbe di più imparare a dipingere?",
+    "pt": "Que parte do rosto mais gostavas de aprender a pintar?",
+    "pt_BR": "Qual parte do rosto você mais gostaria de aprender a pintar?"
+   }
+  },
+  {
+   "id": "painting-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you like to try painting with a palette knife? What appeals to you about it?",
+    "de": "Würdest du gern mal mit einem Malmesser malen? Was reizt dich daran?",
+    "es": "¿Te gustaría probar a pintar con espátula? ¿Qué te atrae de ello?",
+    "fr": "Aimerais-tu essayer de peindre au couteau ? Qu'est-ce qui t'attire là-dedans ?",
+    "it": "Ti piacerebbe provare a dipingere con la spatola? Che cosa ti attira?",
+    "pt": "Gostavas de experimentar pintar com espátula? O que te atrai nisso?",
+    "pt_BR": "Você gostaria de experimentar pintar com espátula? O que te atrai nisso?"
+   }
+  },
+  {
+   "id": "painting-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which surface are you most excited to try: paper, canvas or wood?",
+    "de": "Auf welchen Malgrund freust du dich am meisten: Papier, Leinwand oder Holz?",
+    "es": "¿Qué superficie te hace más ilusión probar: papel, lienzo o madera?",
+    "fr": "Quel support as-tu le plus envie d'essayer : papier, toile ou bois ?",
+    "it": "Quale supporto sei più curioso di provare: carta, tela o legno?",
+    "pt": "Que suporte estás mais entusiasmado para experimentar: papel, tela ou madeira?",
+    "pt_BR": "Qual superfície você está mais animado pra experimentar: papel, tela ou madeira?"
+   }
+  },
+  {
+   "id": "painting-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What small painting goal could you reach this week?",
+    "de": "Welches kleine Malziel könntest du diese Woche erreichen?",
+    "es": "¿Qué pequeño objetivo de pintura podrías cumplir esta semana?",
+    "fr": "Quel petit objectif de peinture pourrais-tu atteindre cette semaine ?",
+    "it": "Quale piccolo obiettivo di pittura potresti raggiungere questa settimana?",
+    "pt": "Que pequeno objetivo de pintura conseguirias atingir esta semana?",
+    "pt_BR": "Que pequena meta de pintura você conseguiria cumprir esta semana?"
+   }
+  },
+  {
+   "id": "painting-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried watercolour? What surprised you about it?",
+    "de": "Hast du schon mal mit Aquarell gemalt? Was hat dich daran überrascht?",
+    "es": "¿Has probado alguna vez la acuarela? ¿Qué te sorprendió?",
+    "fr": "As-tu déjà essayé l'aquarelle ? Qu'est-ce qui t'a surpris ?",
+    "it": "Hai mai provato l'acquerello? Che cosa ti ha sorpreso?",
+    "pt": "Já experimentaste aguarela? O que te surpreendeu?",
+    "pt_BR": "Você já experimentou aquarela? O que te surpreendeu?"
+   }
+  },
+  {
+   "id": "painting-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "If you could use only three colours, which would you pick?",
+    "de": "Wenn du nur drei Farben benutzen dürftest, welche würdest du nehmen?",
+    "es": "Si solo pudieras usar tres colores, ¿cuáles escogerías?",
+    "fr": "Si tu ne pouvais utiliser que trois couleurs, lesquelles prendrais-tu ?",
+    "it": "Se potessi usare solo tre colori, quali sceglieresti?",
+    "pt": "Se só pudesses usar três cores, quais escolherias?",
+    "pt_BR": "Se você só pudesse usar três cores, quais escolheria?"
+   }
+  },
+  {
+   "id": "painting-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What painting tip have you heard that you would like to test yourself?",
+    "de": "Welchen Maltipp hast du schon gehört, den du selbst ausprobieren möchtest?",
+    "es": "¿Qué consejo de pintura has oído que te gustaría comprobar tú mismo?",
+    "fr": "Quel conseil de peinture as-tu entendu que tu aimerais tester toi-même ?",
+    "it": "Quale consiglio di pittura hai sentito che vorresti mettere alla prova?",
+    "pt": "Que dica de pintura já ouviste que gostavas de testar tu mesmo?",
+    "pt_BR": "Que dica de pintura você já ouviu e gostaria de testar por conta própria?"
+   }
+  },
+  {
+   "id": "painting-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Who would you love to show your first finished painting to?",
+    "de": "Wem würdest du dein erstes fertiges Bild am liebsten zeigen?",
+    "es": "¿A quién te encantaría enseñarle tu primer cuadro terminado?",
+    "fr": "À qui aimerais-tu montrer ton premier tableau terminé ?",
+    "it": "A chi ti piacerebbe mostrare il tuo primo quadro finito?",
+    "pt": "A quem adorarias mostrar o teu primeiro quadro terminado?",
+    "pt_BR": "Pra quem você adoraria mostrar seu primeiro quadro pronto?"
+   }
+  },
+  {
+   "id": "painting-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which technique are you most curious about: glazing, impasto, wet-on-wet or dry brush?",
+    "de": "Welche Technik reizt dich am meisten: Lasur, Impasto, Nass-in-Nass oder Trockenpinsel?",
+    "es": "¿Qué técnica te intriga más: veladura, empaste, húmedo sobre húmedo o pincel seco?",
+    "fr": "Quelle technique t'intrigue le plus : glacis, empâtement, mouillé sur mouillé ou brosse sèche ?",
+    "it": "Quale tecnica ti incuriosisce di più: velatura, impasto, bagnato su bagnato o pennello asciutto?",
+    "pt": "Que técnica te desperta mais curiosidade: velatura, empaste, molhado sobre molhado ou pincel seco?",
+    "pt_BR": "Qual técnica te deixa mais curioso: veladura, empaste, molhado no molhado ou pincel seco?"
+   }
+  },
+  {
+   "id": "painting-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you decide where the focal point of a painting should be?",
+    "de": "Wie entscheidest du, wo der Blickfang eines Bildes liegen soll?",
+    "es": "¿Cómo decides dónde debe estar el punto focal de un cuadro?",
+    "fr": "Comment décides-tu où placer le point focal d'un tableau ?",
+    "it": "Come decidi dove mettere il punto focale di un quadro?",
+    "pt": "Como decides onde deve ficar o ponto focal de um quadro?",
+    "pt_BR": "Como você decide onde deve ficar o ponto focal de uma pintura?"
+   }
+  },
+  {
+   "id": "painting-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you prefer painting warm light or cool light? Why?",
+    "de": "Malst du lieber warmes oder kühles Licht? Warum?",
+    "es": "¿Prefieres pintar luz cálida o luz fría? ¿Por qué?",
+    "fr": "Tu préfères peindre une lumière chaude ou froide ? Pourquoi ?",
+    "it": "Preferisci dipingere la luce calda o quella fredda? Perché?",
+    "pt": "Preferes pintar luz quente ou luz fria? Porquê?",
+    "pt_BR": "Você prefere pintar luz quente ou luz fria? Por quê?"
+   }
+  },
+  {
+   "id": "painting-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which old master would you like to copy a detail from, just to learn?",
+    "de": "Von welchem alten Meister würdest du gern ein Detail kopieren, einfach um zu lernen?",
+    "es": "¿De qué gran maestro te gustaría copiar un detalle, solo para aprender?",
+    "fr": "De quel grand maître aimerais-tu copier un détail, juste pour apprendre ?",
+    "it": "Da quale grande maestro ti piacerebbe copiare un dettaglio, solo per imparare?",
+    "pt": "De que grande mestre gostavas de copiar um pormenor, só para aprender?",
+    "pt_BR": "De qual grande mestre você gostaria de copiar um detalhe, só pra aprender?"
+   }
+  },
+  {
+   "id": "painting-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you usually start a painting: thumbnails, a careful sketch or straight in with paint?",
+    "de": "Wie beginnst du meistens ein Bild: mit Miniskizzen, einer genauen Vorzeichnung oder direkt mit Farbe?",
+    "es": "¿Cómo sueles empezar un cuadro: con bocetos pequeños, un dibujo cuidadoso o directamente con pintura?",
+    "fr": "Comment commences-tu un tableau : petites esquisses, dessin soigné ou directement à la peinture ?",
+    "it": "Come inizi di solito un quadro: piccoli schizzi, un disegno accurato o subito con il colore?",
+    "pt": "Como costumas começar um quadro: esboços pequenos, um desenho cuidado ou diretamente com tinta?",
+    "pt_BR": "Como você costuma começar uma pintura: esbocinhos, um desenho caprichado ou direto com tinta?"
+   }
+  },
+  {
+   "id": "painting-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which part of landscape painting do you find most challenging?",
+    "de": "Was findest du an der Landschaftsmalerei am herausforderndsten?",
+    "es": "¿Qué parte de la pintura de paisaje te resulta más desafiante?",
+    "fr": "Qu'est-ce que tu trouves le plus difficile dans la peinture de paysage ?",
+    "it": "Quale aspetto della pittura di paesaggio trovi più impegnativo?",
+    "pt": "Que parte da pintura de paisagem achas mais desafiante?",
+    "pt_BR": "Qual parte da pintura de paisagem você acha mais desafiadora?"
+   }
+  },
+  {
+   "id": "painting-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which colour scheme do you enjoy most: analogous, complementary or triadic?",
+    "de": "Welches Farbschema magst du am liebsten: analog, komplementär oder triadisch?",
+    "es": "¿Qué esquema de color disfrutas más: análogo, complementario o triádico?",
+    "fr": "Quelle harmonie de couleurs préfères-tu : analogue, complémentaire ou triadique ?",
+    "it": "Quale schema di colori ti piace di più: analogo, complementare o triadico?",
+    "pt": "Que esquema de cores mais gostas: análogo, complementar ou triádico?",
+    "pt_BR": "Qual esquema de cores você mais curte: análogo, complementar ou triádico?"
+   }
+  },
+  {
+   "id": "painting-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you know when a painting is finished?",
+    "de": "Woran erkennst du, dass ein Bild fertig ist?",
+    "es": "¿Cómo sabes cuándo un cuadro está terminado?",
+    "fr": "Comment sais-tu qu'un tableau est terminé ?",
+    "it": "Come capisci che un quadro è finito?",
+    "pt": "Como sabes quando um quadro está terminado?",
+    "pt_BR": "Como você sabe quando uma pintura está pronta?"
+   }
+  },
+  {
+   "id": "painting-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried painting outdoors? How did the changing light affect you?",
+    "de": "Hast du schon draußen gemalt? Wie bist du mit dem wechselnden Licht klargekommen?",
+    "es": "¿Has probado a pintar al aire libre? ¿Cómo te afectó el cambio de luz?",
+    "fr": "As-tu déjà peint en plein air ? Comment as-tu géré la lumière qui change ?",
+    "it": "Hai mai dipinto all'aperto? Come hai gestito la luce che cambia?",
+    "pt": "Já experimentaste pintar ao ar livre? Como lidaste com a luz a mudar?",
+    "pt_BR": "Você já pintou ao ar livre? Como lidou com a luz mudando?"
+   }
+  },
+  {
+   "id": "painting-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which Impressionist painter speaks to you the most, and why?",
+    "de": "Welcher impressionistische Maler spricht dich am meisten an, und warum?",
+    "es": "¿Qué pintor impresionista te llega más, y por qué?",
+    "fr": "Quel peintre impressionniste te parle le plus, et pourquoi ?",
+    "it": "Quale pittore impressionista senti più vicino, e perché?",
+    "pt": "Que pintor impressionista mais te diz, e porquê?",
+    "pt_BR": "Qual pintor impressionista mais fala com você, e por quê?"
+   }
+  },
+  {
+   "id": "painting-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you do to keep your colours fresh and not muddy?",
+    "de": "Was tust du, damit deine Farben frisch bleiben und nicht matschig werden?",
+    "es": "¿Qué haces para que tus colores sigan limpios y no se ensucien?",
+    "fr": "Que fais-tu pour garder des couleurs fraîches et éviter qu'elles deviennent boueuses ?",
+    "it": "Che cosa fai per mantenere i colori freschi senza che diventino fangosi?",
+    "pt": "O que fazes para manter as cores frescas e não as deixar enlameadas?",
+    "pt_BR": "O que você faz pra manter as cores limpas e não deixar que fiquem barrentas?"
+   }
+  },
+  {
+   "id": "painting-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How has the way you see colours in everyday life changed since you started painting?",
+    "de": "Wie hat sich dein Blick auf Farben im Alltag verändert, seit du malst?",
+    "es": "¿Cómo ha cambiado tu forma de ver los colores en el día a día desde que pintas?",
+    "fr": "Comment ta façon de voir les couleurs au quotidien a-t-elle changé depuis que tu peins ?",
+    "it": "Com'è cambiato il tuo modo di vedere i colori nella vita quotidiana da quando dipingi?",
+    "pt": "Como mudou a tua forma de ver as cores no dia a dia desde que pintas?",
+    "pt_BR": "Como mudou o seu jeito de ver as cores no dia a dia desde que você começou a pintar?"
+   }
+  },
+  {
+   "id": "painting-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which subject would you like to explore in a series of several paintings?",
+    "de": "Welches Motiv würdest du gern in einer Serie aus mehreren Bildern erkunden?",
+    "es": "¿Qué tema te gustaría explorar en una serie de varios cuadros?",
+    "fr": "Quel sujet aimerais-tu explorer dans une série de plusieurs tableaux ?",
+    "it": "Quale soggetto ti piacerebbe esplorare in una serie di più quadri?",
+    "pt": "Que tema gostavas de explorar numa série de vários quadros?",
+    "pt_BR": "Qual tema você gostaria de explorar numa série de várias pinturas?"
+   }
+  },
+  {
+   "id": "painting-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a painting mistake that taught you a lot?",
+    "de": "Welcher Fehler beim Malen hat dir besonders viel beigebracht?",
+    "es": "¿Qué error al pintar te ha enseñado mucho?",
+    "fr": "Quelle erreur en peinture t'a beaucoup appris ?",
+    "it": "Quale errore in pittura ti ha insegnato molto?",
+    "pt": "Que erro a pintar te ensinou muito?",
+    "pt_BR": "Qual erro na pintura te ensinou muita coisa?"
+   }
+  },
+  {
+   "id": "painting-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you rather focus on portraits or landscapes for a whole month? Why?",
+    "de": "Würdest du dich einen ganzen Monat lieber auf Porträts oder auf Landschaften konzentrieren? Warum?",
+    "es": "¿Preferirías centrarte un mes entero en retratos o en paisajes? ¿Por qué?",
+    "fr": "Tu préférerais te consacrer un mois entier aux portraits ou aux paysages ? Pourquoi ?",
+    "it": "Preferiresti dedicarti per un mese intero ai ritratti o ai paesaggi? Perché?",
+    "pt": "Preferias dedicar um mês inteiro a retratos ou a paisagens? Porquê?",
+    "pt_BR": "Você preferiria se dedicar um mês inteiro a retratos ou a paisagens? Por quê?"
+   }
+  },
+  {
+   "id": "painting-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which painting tradition from another culture would you like to try?",
+    "de": "Welche Maltradition aus einer anderen Kultur würdest du gern ausprobieren?",
+    "es": "¿Qué tradición pictórica de otra cultura te gustaría probar?",
+    "fr": "Quelle tradition picturale d'une autre culture aimerais-tu essayer ?",
+    "it": "Quale tradizione pittorica di un'altra cultura ti piacerebbe provare?",
+    "pt": "Que tradição de pintura de outra cultura gostavas de experimentar?",
+    "pt_BR": "Qual tradição de pintura de outra cultura você gostaria de experimentar?"
+   }
+  },
+  {
+   "id": "painting-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you feel about showing unfinished work to other people?",
+    "de": "Wie geht es dir damit, anderen unfertige Arbeiten zu zeigen?",
+    "es": "¿Cómo te sientes al enseñar trabajos sin terminar a otras personas?",
+    "fr": "Que ressens-tu quand tu montres un travail inachevé à d'autres ?",
+    "it": "Come ti senti a mostrare lavori non finiti ad altre persone?",
+    "pt": "Como te sentes ao mostrar trabalhos inacabados a outras pessoas?",
+    "pt_BR": "Como você se sente mostrando trabalhos inacabados pra outras pessoas?"
+   }
+  },
+  {
+   "id": "painting-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What mood would you like to create in your next painting, and how?",
+    "de": "Welche Stimmung möchtest du in deinem nächsten Bild erzeugen, und wie?",
+    "es": "¿Qué ambiente te gustaría crear en tu próximo cuadro, y cómo?",
+    "fr": "Quelle ambiance aimerais-tu créer dans ton prochain tableau, et comment ?",
+    "it": "Quale atmosfera vorresti creare nel tuo prossimo quadro, e come?",
+    "pt": "Que ambiente gostavas de criar no teu próximo quadro, e como?",
+    "pt_BR": "Que clima você gostaria de criar na sua próxima pintura, e como?"
+   }
+  },
+  {
+   "id": "painting-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you enjoy more: smooth blending or visible brushstrokes?",
+    "de": "Was gefällt dir mehr: weiche Übergänge oder sichtbare Pinselstriche?",
+    "es": "¿Qué disfrutas más: los degradados suaves o las pinceladas visibles?",
+    "fr": "Qu'est-ce que tu préfères : les fondus doux ou les coups de pinceau visibles ?",
+    "it": "Che cosa ti piace di più: le sfumature morbide o le pennellate visibili?",
+    "pt": "O que gostas mais: transições suaves ou pinceladas visíveis?",
+    "pt_BR": "Do que você gosta mais: transições suaves ou pinceladas visíveis?"
+   }
+  },
+  {
+   "id": "painting-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "If you could take a workshop with any painter, what would you most want to learn?",
+    "de": "Wenn du einen Workshop bei einem beliebigen Maler machen könntest, was würdest du am liebsten lernen?",
+    "es": "Si pudieras hacer un taller con cualquier pintor, ¿qué te gustaría aprender sobre todo?",
+    "fr": "Si tu pouvais suivre un atelier avec n'importe quel peintre, que voudrais-tu surtout apprendre ?",
+    "it": "Se potessi seguire un workshop con qualsiasi pittore, che cosa vorresti imparare soprattutto?",
+    "pt": "Se pudesses fazer um workshop com qualquer pintor, o que mais gostavas de aprender?",
+    "pt_BR": "Se você pudesse fazer um workshop com qualquer pintor, o que mais gostaria de aprender?"
+   }
+  },
+  {
+   "id": "painting-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which modern art movement has changed how you think about painting?",
+    "de": "Welche Strömung der modernen Kunst hat dein Denken über Malerei verändert?",
+    "es": "¿Qué movimiento del arte moderno ha cambiado tu forma de entender la pintura?",
+    "fr": "Quel mouvement de l'art moderne a changé ta façon de penser la peinture ?",
+    "it": "Quale movimento dell'arte moderna ha cambiato il tuo modo di pensare la pittura?",
+    "pt": "Que movimento da arte moderna mudou a tua forma de pensar a pintura?",
+    "pt_BR": "Qual movimento da arte moderna mudou o seu jeito de pensar a pintura?"
+   }
+  },
+  {
+   "id": "painting-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you describe your personal style in a few words?",
+    "de": "Wie würdest du deinen persönlichen Stil in wenigen Worten beschreiben?",
+    "es": "¿Cómo describirías tu estilo personal en pocas palabras?",
+    "fr": "Comment décrirais-tu ton style personnel en quelques mots ?",
+    "it": "Come descriveresti il tuo stile personale in poche parole?",
+    "pt": "Como descreverias o teu estilo pessoal em poucas palavras?",
+    "pt_BR": "Como você descreveria o seu estilo pessoal em poucas palavras?"
+   }
+  },
+  {
+   "id": "painting-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which themes keep coming back in your paintings?",
+    "de": "Welche Themen tauchen in deinen Bildern immer wieder auf?",
+    "es": "¿Qué temas aparecen una y otra vez en tus cuadros?",
+    "fr": "Quels thèmes reviennent sans cesse dans tes tableaux ?",
+    "it": "Quali temi ritornano sempre nei tuoi quadri?",
+    "pt": "Que temas voltam sempre a aparecer nos teus quadros?",
+    "pt_BR": "Quais temas sempre voltam nas suas pinturas?"
+   }
+  },
+  {
+   "id": "painting-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance planning and spontaneity in a big painting?",
+    "de": "Wie hältst du bei einem großen Bild die Balance zwischen Planung und Spontaneität?",
+    "es": "¿Cómo equilibras la planificación y la espontaneidad en un cuadro grande?",
+    "fr": "Comment équilibres-tu préparation et spontanéité dans un grand tableau ?",
+    "it": "Come bilanci pianificazione e spontaneità in un quadro di grandi dimensioni?",
+    "pt": "Como equilibras planeamento e espontaneidade num quadro grande?",
+    "pt_BR": "Como você equilibra planejamento e espontaneidade numa pintura grande?"
+   }
+  },
+  {
+   "id": "painting-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you tried abstract painting? What did it teach you?",
+    "de": "Hast du dich schon an abstrakter Malerei versucht? Was hat sie dir beigebracht?",
+    "es": "¿Has probado la pintura abstracta? ¿Qué te enseñó?",
+    "fr": "As-tu déjà essayé la peinture abstraite ? Qu'est-ce qu'elle t'a appris ?",
+    "it": "Hai provato la pittura astratta? Che cosa ti ha insegnato?",
+    "pt": "Já experimentaste pintura abstrata? O que te ensinou?",
+    "pt_BR": "Você já experimentou pintura abstrata? O que ela te ensinou?"
+   }
+  },
+  {
+   "id": "painting-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you look at first when you critique your own work?",
+    "de": "Worauf achtest du zuerst, wenn du deine eigenen Arbeiten kritisch betrachtest?",
+    "es": "¿En qué te fijas primero cuando analizas críticamente tu propio trabajo?",
+    "fr": "Que regardes-tu en premier quand tu critiques ton propre travail ?",
+    "it": "A che cosa guardi per primo quando valuti criticamente il tuo lavoro?",
+    "pt": "Em que reparas primeiro quando fazes uma crítica ao teu próprio trabalho?",
+    "pt_BR": "No que você presta atenção primeiro quando avalia o próprio trabalho?"
+   }
+  },
+  {
+   "id": "painting-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you get going again when you hit a creative block?",
+    "de": "Wie kommst du wieder in Schwung, wenn du eine kreative Blockade hast?",
+    "es": "¿Cómo retomas el ritmo cuando sufres un bloqueo creativo?",
+    "fr": "Comment repars-tu quand tu fais face à un blocage créatif ?",
+    "it": "Come riparti quando ti trovi davanti a un blocco creativo?",
+    "pt": "Como voltas a arrancar quando tens um bloqueio criativo?",
+    "pt_BR": "Como você retoma o ritmo quando bate um bloqueio criativo?"
+   }
+  },
+  {
+   "id": "painting-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you like to exhibit your work someday? Where would you love to show it?",
+    "de": "Würdest du deine Arbeiten gern einmal ausstellen? Wo am liebsten?",
+    "es": "¿Te gustaría exponer tu obra algún día? ¿Dónde te encantaría mostrarla?",
+    "fr": "Aimerais-tu exposer ton travail un jour ? Où rêverais-tu de le montrer ?",
+    "it": "Ti piacerebbe esporre i tuoi lavori un giorno? Dove ti piacerebbe mostrarli?",
+    "pt": "Gostavas de expor o teu trabalho um dia? Onde adorarias mostrá-lo?",
+    "pt_BR": "Você gostaria de expor seu trabalho um dia? Onde adoraria mostrar?"
+   }
+  },
+  {
+   "id": "painting-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which of your paintings are you proudest of so far, and why?",
+    "de": "Auf welches deiner Bilder bist du bisher am stolzesten, und warum?",
+    "es": "¿De qué cuadro tuyo estás más orgulloso hasta ahora, y por qué?",
+    "fr": "De quel tableau es-tu le plus fier jusqu'à présent, et pourquoi ?",
+    "it": "Di quale tuo quadro sei più orgoglioso finora, e perché?",
+    "pt": "De que quadro teu tens mais orgulho até agora, e porquê?",
+    "pt_BR": "De qual pintura sua você mais se orgulha até agora, e por quê?"
+   }
+  },
+  {
+   "id": "painting-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you use edges and contrast to guide the viewer's eye?",
+    "de": "Wie nutzt du Kanten und Kontraste, um den Blick des Betrachters zu lenken?",
+    "es": "¿Cómo usas los bordes y el contraste para guiar la mirada del espectador?",
+    "fr": "Comment utilises-tu les contours et le contraste pour guider le regard ?",
+    "it": "Come usi i bordi e il contrasto per guidare lo sguardo di chi osserva?",
+    "pt": "Como usas as arestas e o contraste para guiar o olhar de quem vê?",
+    "pt_BR": "Como você usa as bordas e o contraste pra guiar o olhar de quem vê?"
+   }
+  },
+  {
+   "id": "painting-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would your dream large-scale painting project be?",
+    "de": "Wie sähe dein großes Traumprojekt in der Malerei aus?",
+    "es": "¿Cómo sería tu proyecto soñado de pintura a gran escala?",
+    "fr": "À quoi ressemblerait ton projet de peinture de rêve à grande échelle ?",
+    "it": "Come sarebbe il tuo progetto pittorico dei sogni in grande formato?",
+    "pt": "Como seria o teu projeto de pintura de sonho em grande escala?",
+    "pt_BR": "Como seria o seu projeto dos sonhos de pintura em grande escala?"
+   }
+  },
+  {
+   "id": "painting-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you decide which feedback to follow and which to let go?",
+    "de": "Wie entscheidest du, welches Feedback du annimmst und welches du loslässt?",
+    "es": "¿Cómo decides qué comentarios seguir y cuáles dejar pasar?",
+    "fr": "Comment choisis-tu les retours à suivre et ceux à laisser de côté ?",
+    "it": "Come decidi quali consigli seguire e quali lasciar perdere?",
+    "pt": "Como decides que opiniões seguir e quais deixar de lado?",
+    "pt_BR": "Como você decide quais opiniões seguir e quais deixar pra lá?"
+   }
+  },
+  {
+   "id": "painting-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which unusual material or technique would you like to experiment with next?",
+    "de": "Mit welchem ungewöhnlichen Material oder welcher Technik möchtest du als Nächstes experimentieren?",
+    "es": "¿Con qué material o técnica poco habitual te gustaría experimentar ahora?",
+    "fr": "Avec quel matériau ou quelle technique inhabituelle aimerais-tu expérimenter ensuite ?",
+    "it": "Con quale materiale o tecnica insolita ti piacerebbe sperimentare adesso?",
+    "pt": "Com que material ou técnica invulgar gostavas de experimentar a seguir?",
+    "pt_BR": "Com qual material ou técnica diferente você gostaria de experimentar agora?"
+   }
+  },
+  {
+   "id": "painting-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has painting changed the way you look at the world?",
+    "de": "Wie hat das Malen deinen Blick auf die Welt verändert?",
+    "es": "¿Cómo ha cambiado la pintura tu manera de mirar el mundo?",
+    "fr": "Comment la peinture a-t-elle changé ta façon de regarder le monde ?",
+    "it": "Come ha cambiato la pittura il tuo modo di guardare il mondo?",
+    "pt": "Como mudou a pintura a tua forma de olhar para o mundo?",
+    "pt_BR": "Como a pintura mudou o seu jeito de olhar o mundo?"
+   }
+  },
+  {
+   "id": "painting-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What advice would you give someone picking up a brush for the first time?",
+    "de": "Welchen Rat würdest du jemandem geben, der zum ersten Mal einen Pinsel in die Hand nimmt?",
+    "es": "¿Qué consejo le darías a alguien que coge un pincel por primera vez?",
+    "fr": "Quel conseil donnerais-tu à quelqu'un qui prend un pinceau pour la première fois ?",
+    "it": "Che consiglio daresti a chi prende in mano un pennello per la prima volta?",
+    "pt": "Que conselho darias a alguém que pega num pincel pela primeira vez?",
+    "pt_BR": "Que conselho você daria pra alguém que vai pegar num pincel pela primeira vez?"
+   }
+  }
+ ]
+}

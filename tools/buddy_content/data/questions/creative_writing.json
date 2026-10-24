@@ -1,0 +1,1305 @@
+{
+"topic": "creative_writing",
+"questions": [
+{
+"id": "creative_writing-001",
+"lv": "any",
+"i18n": {
+"en": "What first made you want to write stories?",
+"de": "Was hat dich zuerst dazu gebracht, Geschichten schreiben zu wollen?",
+"es": "¿Qué fue lo primero que te dio ganas de escribir historias?",
+"fr": "Qu'est-ce qui t'a donné envie d'écrire des histoires au départ ?",
+"it": "Cosa ti ha fatto venire voglia di scrivere storie la prima volta?",
+"pt": "O que te fez querer escrever histórias pela primeira vez?",
+"pt_BR": "O que fez você querer escrever histórias pela primeira vez?"
+}
+},
+{
+"id": "creative_writing-002",
+"lv": "any",
+"i18n": {
+"en": "Which book or story would you love to have written yourself, and why?",
+"de": "Welches Buch oder welche Geschichte hättest du gern selbst geschrieben, und warum?",
+"es": "¿Qué libro o relato te habría encantado escribir a ti, y por qué?",
+"fr": "Quel livre ou quelle histoire aurais-tu adoré écrire toi-même, et pourquoi ?",
+"it": "Quale libro o racconto avresti voluto scrivere tu, e perché?",
+"pt": "Que livro ou história adorarias ter escrito tu, e porquê?",
+"pt_BR": "Que livro ou história você adoraria ter escrito, e por quê?"
+}
+},
+{
+"id": "creative_writing-003",
+"lv": "any",
+"i18n": {
+"en": "Where do you usually get your best ideas?",
+"de": "Wo kommen dir normalerweise die besten Ideen?",
+"es": "¿Dónde se te suelen ocurrir las mejores ideas?",
+"fr": "Où te viennent généralement tes meilleures idées ?",
+"it": "Dove ti vengono di solito le idee migliori?",
+"pt": "Onde costumas ter as tuas melhores ideias?",
+"pt_BR": "Onde você costuma ter suas melhores ideias?"
+}
+},
+{
+"id": "creative_writing-004",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer writing by hand or on a screen? What do you like about it?",
+"de": "Schreibst du lieber von Hand oder am Bildschirm? Was gefällt dir daran?",
+"es": "¿Prefieres escribir a mano o en una pantalla? ¿Qué te gusta de ello?",
+"fr": "Tu préfères écrire à la main ou sur un écran ? Qu'est-ce qui te plaît là-dedans ?",
+"it": "Preferisci scrivere a mano o su uno schermo? Cosa ti piace di più?",
+"pt": "Preferes escrever à mão ou num ecrã? O que gostas nisso?",
+"pt_BR": "Você prefere escrever à mão ou na tela? Do que você gosta nisso?"
+}
+},
+{
+"id": "creative_writing-005",
+"lv": "any",
+"i18n": {
+"en": "What time of day do you feel most creative?",
+"de": "Zu welcher Tageszeit fühlst du dich am kreativsten?",
+"es": "¿En qué momento del día te sientes más creativo o creativa?",
+"fr": "À quel moment de la journée te sens-tu le plus créatif ?",
+"it": "In quale momento della giornata ti senti più creativo?",
+"pt": "Em que altura do dia te sentes mais criativo?",
+"pt_BR": "Em que hora do dia você se sente mais criativo?"
+}
+},
+{
+"id": "creative_writing-006",
+"lv": "any",
+"i18n": {
+"en": "Which genre do you enjoy reading the most?",
+"de": "Welches Genre liest du am liebsten?",
+"es": "¿Qué género te gusta más leer?",
+"fr": "Quel genre aimes-tu le plus lire ?",
+"it": "Quale genere ti piace leggere di più?",
+"pt": "Que género gostas mais de ler?",
+"pt_BR": "Qual gênero você mais gosta de ler?"
+}
+},
+{
+"id": "creative_writing-007",
+"lv": "any",
+"i18n": {
+"en": "Who is a fictional character you would love to meet, and what would you ask them?",
+"de": "Welche Romanfigur würdest du gern treffen, und was würdest du sie fragen?",
+"es": "¿Qué personaje de ficción te encantaría conocer y qué le preguntarías?",
+"fr": "Quel personnage de fiction aimerais-tu rencontrer, et que lui demanderais-tu ?",
+"it": "Quale personaggio di fantasia vorresti incontrare, e cosa gli chiederesti?",
+"pt": "Que personagem de ficção adorarias conhecer, e o que lhe perguntarias?",
+"pt_BR": "Que personagem de ficção você adoraria conhecer, e o que perguntaria a ele?"
+}
+},
+{
+"id": "creative_writing-008",
+"lv": "any",
+"i18n": {
+"en": "Is there a story from your childhood that you still remember well?",
+"de": "Gibt es eine Geschichte aus deiner Kindheit, an die du dich noch gut erinnerst?",
+"es": "¿Hay alguna historia de tu infancia que todavía recuerdes bien?",
+"fr": "Y a-t-il une histoire de ton enfance dont tu te souviens encore bien ?",
+"it": "C'è una storia della tua infanzia che ricordi ancora bene?",
+"pt": "Há alguma história da tua infância de que ainda te lembres bem?",
+"pt_BR": "Tem alguma história da sua infância de que você ainda se lembra bem?"
+}
+},
+{
+"id": "creative_writing-009",
+"lv": "any",
+"i18n": {
+"en": "What place would make a perfect setting for a story?",
+"de": "Welcher Ort wäre der perfekte Schauplatz für eine Geschichte?",
+"es": "¿Qué lugar sería el escenario perfecto para una historia?",
+"fr": "Quel lieu serait le décor parfait pour une histoire ?",
+"it": "Quale luogo sarebbe l'ambientazione perfetta per una storia?",
+"pt": "Que lugar seria o cenário perfeito para uma história?",
+"pt_BR": "Que lugar seria o cenário perfeito para uma história sua?"
+}
+},
+{
+"id": "creative_writing-010",
+"lv": "any",
+"i18n": {
+"en": "Do you like stories with happy endings or open endings? Why?",
+"de": "Magst du lieber Geschichten mit Happy End oder mit offenem Ende? Warum?",
+"es": "¿Te gustan más las historias con final feliz o con final abierto? ¿Por qué?",
+"fr": "Tu préfères les histoires qui finissent bien ou les fins ouvertes ? Pourquoi ?",
+"it": "Preferisci le storie a lieto fine o con un finale aperto? Perché?",
+"pt": "Gostas mais de histórias com final feliz ou final aberto? Porquê?",
+"pt_BR": "Você prefere histórias com final feliz ou final aberto? Por quê?"
+}
+},
+{
+"id": "creative_writing-011",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy most about writing: the ideas, the drafting or the polishing?",
+"de": "Was macht dir beim Schreiben am meisten Spaß: die Ideen, das Entwerfen oder das Feilen?",
+"es": "¿Qué disfrutas más al escribir: las ideas, el borrador o el pulido final?",
+"fr": "Qu'est-ce que tu préfères dans l'écriture : les idées, le premier jet ou la relecture ?",
+"it": "Cosa ti piace di più dello scrivere: le idee, la stesura o la rifinitura?",
+"pt": "O que mais gostas na escrita: as ideias, o rascunho ou o polimento?",
+"pt_BR": "O que você mais curte na escrita: as ideias, o rascunho ou a revisão final?"
+}
+},
+{
+"id": "creative_writing-012",
+"lv": "any",
+"i18n": {
+"en": "Which author's style do you admire, and what makes it special to you?",
+"de": "Welchen Schreibstil bewunderst du, und was macht ihn für dich besonders?",
+"es": "¿Qué autor o autora admiras por su estilo y qué lo hace especial para ti?",
+"fr": "Quel style d'auteur admires-tu, et qu'est-ce qui le rend spécial pour toi ?",
+"it": "Quale autore ammiri per lo stile, e cosa lo rende speciale per te?",
+"pt": "Que autor admiras pelo estilo, e o que o torna especial para ti?",
+"pt_BR": "Que autor você admira pelo estilo, e o que o torna especial para você?"
+}
+},
+{
+"id": "creative_writing-013",
+"lv": "any",
+"i18n": {
+"en": "Have you ever kept a diary or journal? What did you write about?",
+"de": "Hast du schon einmal Tagebuch geführt? Worüber hast du geschrieben?",
+"es": "¿Alguna vez has llevado un diario? ¿Sobre qué escribías?",
+"fr": "As-tu déjà tenu un journal ? De quoi parlais-tu ?",
+"it": "Hai mai tenuto un diario? Di cosa scrivevi?",
+"pt": "Já alguma vez tiveste um diário? Sobre o que escrevias?",
+"pt_BR": "Você já teve um diário? Sobre o que escrevia?"
+}
+},
+{
+"id": "creative_writing-014",
+"lv": "any",
+"i18n": {
+"en": "What is a small everyday moment that you think would make a great story?",
+"de": "Welcher kleine Alltagsmoment würde deiner Meinung nach eine tolle Geschichte ergeben?",
+"es": "¿Qué pequeño momento cotidiano crees que daría para una gran historia?",
+"fr": "Quel petit moment du quotidien ferait selon toi une belle histoire ?",
+"it": "Quale piccolo momento quotidiano secondo te diventerebbe una bella storia?",
+"pt": "Que pequeno momento do dia a dia achas que daria uma ótima história?",
+"pt_BR": "Que pequeno momento do dia a dia você acha que daria uma ótima história?"
+}
+},
+{
+"id": "creative_writing-015",
+"lv": "any",
+"i18n": {
+"en": "Do you listen to music while you write? What kind?",
+"de": "Hörst du beim Schreiben Musik? Welche Art?",
+"es": "¿Escuchas música mientras escribes? ¿De qué tipo?",
+"fr": "Écoutes-tu de la musique quand tu écris ? Quel genre ?",
+"it": "Ascolti musica mentre scrivi? Che tipo?",
+"pt": "Ouves música enquanto escreves? De que tipo?",
+"pt_BR": "Você ouve música enquanto escreve? De que tipo?"
+}
+},
+{
+"id": "creative_writing-016",
+"lv": "any",
+"i18n": {
+"en": "What story from your culture or family do you think the world should know?",
+"de": "Welche Geschichte aus deiner Kultur oder Familie sollte die Welt kennen?",
+"es": "¿Qué historia de tu cultura o tu familia crees que el mundo debería conocer?",
+"fr": "Quelle histoire de ta culture ou de ta famille le monde devrait-il connaître ?",
+"it": "Quale storia della tua cultura o famiglia dovrebbe conoscere il mondo?",
+"pt": "Que história da tua cultura ou família achas que o mundo devia conhecer?",
+"pt_BR": "Que história da sua cultura ou família você acha que o mundo deveria conhecer?"
+}
+},
+{
+"id": "creative_writing-017",
+"lv": "any",
+"i18n": {
+"en": "If you could live inside any story world for a day, which would you choose?",
+"de": "Wenn du einen Tag in einer Geschichte leben könntest, welche würdest du wählen?",
+"es": "Si pudieras vivir un día dentro del mundo de una historia, ¿cuál elegirías?",
+"fr": "Si tu pouvais vivre une journée dans l'univers d'une histoire, lequel choisirais-tu ?",
+"it": "Se potessi vivere un giorno nel mondo di una storia, quale sceglieresti?",
+"pt": "Se pudesses viver um dia dentro do mundo de uma história, qual escolherias?",
+"pt_BR": "Se você pudesse viver um dia dentro do mundo de uma história, qual escolheria?"
+}
+},
+{
+"id": "creative_writing-018",
+"lv": "any",
+"i18n": {
+"en": "What does your ideal writing space look like?",
+"de": "Wie sieht dein idealer Schreibplatz aus?",
+"es": "¿Cómo es tu espacio ideal para escribir?",
+"fr": "À quoi ressemble ton coin d'écriture idéal ?",
+"it": "Com'è il tuo angolo ideale per scrivere?",
+"pt": "Como é o teu espaço ideal para escrever?",
+"pt_BR": "Como é o seu espaço ideal para escrever?"
+}
+},
+{
+"id": "creative_writing-019",
+"lv": "any",
+"i18n": {
+"en": "Which story have you read more than once, and what keeps you coming back?",
+"de": "Welche Geschichte hast du mehr als einmal gelesen, und was zieht dich immer wieder an?",
+"es": "¿Qué historia has leído más de una vez y qué te hace volver a ella?",
+"fr": "Quelle histoire as-tu lue plusieurs fois, et qu'est-ce qui t'y ramène ?",
+"it": "Quale storia hai letto più di una volta, e cosa ti spinge a rileggerla?",
+"pt": "Que história leste mais do que uma vez, e o que te faz voltar a ela?",
+"pt_BR": "Que história você leu mais de uma vez, e o que faz você voltar a ela?"
+}
+},
+{
+"id": "creative_writing-020",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer writing about real life or about invented worlds?",
+"de": "Schreibst du lieber über das echte Leben oder über erfundene Welten?",
+"es": "¿Prefieres escribir sobre la vida real o sobre mundos inventados?",
+"fr": "Tu préfères écrire sur la vraie vie ou sur des mondes inventés ?",
+"it": "Preferisci scrivere della vita reale o di mondi inventati?",
+"pt": "Preferes escrever sobre a vida real ou sobre mundos inventados?",
+"pt_BR": "Você prefere escrever sobre a vida real ou sobre mundos inventados?"
+}
+},
+{
+"id": "creative_writing-021",
+"lv": "any",
+"i18n": {
+"en": "What is the most interesting thing you have overheard that could start a story?",
+"de": "Was ist das Interessanteste, das du zufällig gehört hast und das eine Geschichte beginnen könnte?",
+"es": "¿Qué es lo más curioso que has oído por casualidad y que podría empezar una historia?",
+"fr": "Quelle est la chose la plus intrigante que tu aies entendue par hasard et qui pourrait lancer une histoire ?",
+"it": "Qual è la cosa più curiosa che hai sentito per caso e che potrebbe iniziare una storia?",
+"pt": "Qual foi a coisa mais curiosa que ouviste por acaso e que podia começar uma história?",
+"pt_BR": "Qual foi a coisa mais curiosa que você ouviu por acaso e que poderia começar uma história?"
+}
+},
+{
+"id": "creative_writing-022",
+"lv": "any",
+"i18n": {
+"en": "Which film or series has a story you really admire?",
+"de": "Welcher Film oder welche Serie hat eine Geschichte, die du wirklich bewunderst?",
+"es": "¿Qué película o serie tiene una historia que admiras de verdad?",
+"fr": "Quel film ou quelle série a une histoire que tu admires vraiment ?",
+"it": "Quale film o serie ha una storia che ammiri davvero?",
+"pt": "Que filme ou série tem uma história que admiras mesmo?",
+"pt_BR": "Que filme ou série tem uma história que você admira de verdade?"
+}
+},
+{
+"id": "creative_writing-023",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when you share something you wrote with others?",
+"de": "Wie fühlst du dich, wenn du etwas Geschriebenes mit anderen teilst?",
+"es": "¿Cómo te sientes cuando compartes con otros algo que has escrito?",
+"fr": "Que ressens-tu quand tu partages avec d'autres quelque chose que tu as écrit ?",
+"it": "Come ti senti quando condividi con gli altri qualcosa che hai scritto?",
+"pt": "Como te sentes quando partilhas com os outros algo que escreveste?",
+"pt_BR": "Como você se sente quando compartilha com outras pessoas algo que escreveu?"
+}
+},
+{
+"id": "creative_writing-024",
+"lv": "any",
+"i18n": {
+"en": "What would the title of a story about your life so far be?",
+"de": "Wie würde der Titel einer Geschichte über dein bisheriges Leben lauten?",
+"es": "¿Cuál sería el título de una historia sobre tu vida hasta ahora?",
+"fr": "Quel serait le titre d'une histoire sur ta vie jusqu'ici ?",
+"it": "Quale sarebbe il titolo di una storia sulla tua vita finora?",
+"pt": "Qual seria o título de uma história sobre a tua vida até agora?",
+"pt_BR": "Qual seria o título de uma história sobre a sua vida até agora?"
+}
+},
+{
+"id": "creative_writing-025",
+"lv": "any",
+"i18n": {
+"en": "Which language do you enjoy writing in most, and why?",
+"de": "In welcher Sprache schreibst du am liebsten, und warum?",
+"es": "¿En qué idioma te gusta más escribir y por qué?",
+"fr": "Dans quelle langue préfères-tu écrire, et pourquoi ?",
+"it": "In quale lingua ti piace di più scrivere, e perché?",
+"pt": "Em que língua gostas mais de escrever, e porquê?",
+"pt_BR": "Em que idioma você mais gosta de escrever, e por quê?"
+}
+},
+{
+"id": "creative_writing-026",
+"lv": "any",
+"i18n": {
+"en": "What is a smell or sound that instantly brings back a memory for you?",
+"de": "Welcher Geruch oder welches Geräusch weckt bei dir sofort eine Erinnerung?",
+"es": "¿Qué olor o sonido te trae un recuerdo al instante?",
+"fr": "Quelle odeur ou quel son te rappelle immédiatement un souvenir ?",
+"it": "Quale odore o suono ti riporta subito alla mente un ricordo?",
+"pt": "Que cheiro ou som te traz logo uma memória?",
+"pt_BR": "Que cheiro ou som traz uma lembrança na hora para você?"
+}
+},
+{
+"id": "creative_writing-027",
+"lv": "any",
+"i18n": {
+"en": "Would you rather write a mystery, a fantasy adventure or a funny story?",
+"de": "Würdest du lieber einen Krimi, ein Fantasy-Abenteuer oder eine lustige Geschichte schreiben?",
+"es": "¿Preferirías escribir un misterio, una aventura fantástica o una historia divertida?",
+"fr": "Tu préférerais écrire un mystère, une aventure fantastique ou une histoire drôle ?",
+"it": "Preferiresti scrivere un giallo, un'avventura fantasy o una storia divertente?",
+"pt": "Preferias escrever um mistério, uma aventura fantástica ou uma história engraçada?",
+"pt_BR": "Você preferiria escrever um mistério, uma aventura de fantasia ou uma história engraçada?"
+}
+},
+{
+"id": "creative_writing-028",
+"lv": "any",
+"i18n": {
+"en": "What do you do when you feel stuck in your writing?",
+"de": "Was machst du, wenn du beim Schreiben feststeckst?",
+"es": "¿Qué haces cuando te quedas atascado al escribir?",
+"fr": "Que fais-tu quand tu bloques dans ton écriture ?",
+"it": "Cosa fai quando ti blocchi mentre scrivi?",
+"pt": "O que fazes quando ficas bloqueado na escrita?",
+"pt_BR": "O que você faz quando trava na hora de escrever?"
+}
+},
+{
+"id": "creative_writing-029",
+"lv": "any",
+"i18n": {
+"en": "Which story have you heard from a grandparent or older relative?",
+"de": "Welche Geschichte hast du von Großeltern oder älteren Verwandten gehört?",
+"es": "¿Qué historia te contó un abuelo, una abuela o algún familiar mayor?",
+"fr": "Quelle histoire as-tu entendue de tes grands-parents ou d'un parent plus âgé ?",
+"it": "Quale storia ti ha raccontato un nonno, una nonna o un parente più anziano?",
+"pt": "Que história ouviste de um avô, de uma avó ou de um familiar mais velho?",
+"pt_BR": "Que história você ouviu de um avô, uma avó ou um parente mais velho?"
+}
+},
+{
+"id": "creative_writing-030",
+"lv": "any",
+"i18n": {
+"en": "What kind of hero do you enjoy following in a story?",
+"de": "Was für eine Heldin oder einen Helden begleitest du in Geschichten am liebsten?",
+"es": "¿Qué tipo de protagonista te gusta seguir en una historia?",
+"fr": "Quel genre de héros aimes-tu suivre dans une histoire ?",
+"it": "Che tipo di protagonista ti piace seguire in una storia?",
+"pt": "Que tipo de herói gostas de acompanhar numa história?",
+"pt_BR": "Que tipo de herói você gosta de acompanhar numa história?"
+}
+},
+{
+"id": "creative_writing-031",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite opening line from a book?",
+"de": "Hast du einen Lieblingsanfangssatz aus einem Buch?",
+"es": "¿Tienes una primera frase favorita de algún libro?",
+"fr": "As-tu une première phrase de livre préférée ?",
+"it": "Hai una prima frase di un libro che ami particolarmente?",
+"pt": "Tens uma frase de abertura preferida de algum livro?",
+"pt_BR": "Você tem uma frase de abertura favorita de algum livro?"
+}
+},
+{
+"id": "creative_writing-032",
+"lv": "any",
+"i18n": {
+"en": "If you wrote a story set in your hometown, where would it begin?",
+"de": "Wenn du eine Geschichte in deiner Heimatstadt spielen ließest, wo würde sie beginnen?",
+"es": "Si escribieras una historia ambientada en tu ciudad, ¿dónde empezaría?",
+"fr": "Si tu écrivais une histoire dans ta ville natale, où commencerait-elle ?",
+"it": "Se scrivessi una storia ambientata nella tua città, dove inizierebbe?",
+"pt": "Se escrevesses uma história passada na tua terra, onde começaria?",
+"pt_BR": "Se você escrevesse uma história na sua cidade natal, onde ela começaria?"
+}
+},
+{
+"id": "creative_writing-033",
+"lv": "any",
+"i18n": {
+"en": "What makes a character feel real to you when you read?",
+"de": "Was lässt eine Figur beim Lesen für dich echt wirken?",
+"es": "¿Qué hace que un personaje te parezca real cuando lees?",
+"fr": "Qu'est-ce qui rend un personnage réel à tes yeux quand tu lis ?",
+"it": "Cosa rende un personaggio reale ai tuoi occhi quando leggi?",
+"pt": "O que faz uma personagem parecer real para ti quando lês?",
+"pt_BR": "O que faz um personagem parecer real para você quando lê?"
+}
+},
+{
+"id": "creative_writing-034",
+"lv": "any",
+"i18n": {
+"en": "Which season inspires your imagination the most?",
+"de": "Welche Jahreszeit beflügelt deine Fantasie am meisten?",
+"es": "¿Qué estación del año inspira más tu imaginación?",
+"fr": "Quelle saison inspire le plus ton imagination ?",
+"it": "Quale stagione ispira di più la tua immaginazione?",
+"pt": "Que estação do ano mais inspira a tua imaginação?",
+"pt_BR": "Qual estação do ano mais inspira a sua imaginação?"
+}
+},
+{
+"id": "creative_writing-035",
+"lv": "any",
+"i18n": {
+"en": "Have you ever invented a story to tell a child or a friend?",
+"de": "Hast du schon einmal eine Geschichte für ein Kind oder einen Freund erfunden?",
+"es": "¿Alguna vez has inventado una historia para contársela a un niño o a un amigo?",
+"fr": "As-tu déjà inventé une histoire pour un enfant ou un ami ?",
+"it": "Hai mai inventato una storia da raccontare a un bambino o a un amico?",
+"pt": "Já alguma vez inventaste uma história para contar a uma criança ou a um amigo?",
+"pt_BR": "Você já inventou uma história para contar a uma criança ou a um amigo?"
+}
+},
+{
+"id": "creative_writing-036",
+"lv": "any",
+"i18n": {
+"en": "What kind of feedback helps you the most when you write?",
+"de": "Welche Art von Feedback hilft dir beim Schreiben am meisten?",
+"es": "¿Qué tipo de comentarios te ayudan más cuando escribes?",
+"fr": "Quel genre de retour t'aide le plus quand tu écris ?",
+"it": "Che tipo di feedback ti aiuta di più quando scrivi?",
+"pt": "Que tipo de feedback te ajuda mais quando escreves?",
+"pt_BR": "Que tipo de feedback mais te ajuda quando você escreve?"
+}
+},
+{
+"id": "creative_writing-037",
+"lv": "any",
+"i18n": {
+"en": "Which traveller's tale, true or invented, has stayed with you?",
+"de": "Welche Reisegeschichte, wahr oder erfunden, ist dir im Gedächtnis geblieben?",
+"es": "¿Qué relato de viaje, real o inventado, se te ha quedado grabado?",
+"fr": "Quel récit de voyage, vrai ou inventé, t'a marqué ?",
+"it": "Quale racconto di viaggio, vero o inventato, ti è rimasto impresso?",
+"pt": "Que relato de viagem, verdadeiro ou inventado, te ficou na memória?",
+"pt_BR": "Que relato de viagem, real ou inventado, ficou na sua memória?"
+}
+},
+{
+"id": "creative_writing-038",
+"lv": "any",
+"i18n": {
+"en": "What everyday object in your home could hold a secret story?",
+"de": "Welcher Alltagsgegenstand bei dir zu Hause könnte eine geheime Geschichte bergen?",
+"es": "¿Qué objeto cotidiano de tu casa podría esconder una historia secreta?",
+"fr": "Quel objet du quotidien chez toi pourrait cacher une histoire secrète ?",
+"it": "Quale oggetto di casa tua potrebbe nascondere una storia segreta?",
+"pt": "Que objeto do dia a dia da tua casa poderia esconder uma história secreta?",
+"pt_BR": "Que objeto do dia a dia da sua casa poderia esconder uma história secreta?"
+}
+},
+{
+"id": "creative_writing-039",
+"lv": "any",
+"i18n": {
+"en": "Do you read books in more than one language? How does it feel?",
+"de": "Liest du Bücher in mehr als einer Sprache? Wie fühlt sich das an?",
+"es": "¿Lees libros en más de un idioma? ¿Qué se siente?",
+"fr": "Lis-tu des livres dans plusieurs langues ? Qu'est-ce que ça te fait ?",
+"it": "Leggi libri in più di una lingua? Che effetto ti fa?",
+"pt": "Lês livros em mais do que uma língua? Como é a sensação?",
+"pt_BR": "Você lê livros em mais de um idioma? Como é essa experiência?"
+}
+},
+{
+"id": "creative_writing-040",
+"lv": "any",
+"i18n": {
+"en": "What is one writing goal you would love to reach this year of practice?",
+"de": "Welches Schreibziel würdest du in diesem Übungsjahr gern erreichen?",
+"es": "¿Qué meta de escritura te encantaría alcanzar en este año de práctica?",
+"fr": "Quel objectif d'écriture aimerais-tu atteindre pendant cette année de pratique ?",
+"it": "Quale obiettivo di scrittura ti piacerebbe raggiungere in questo anno di pratica?",
+"pt": "Que objetivo de escrita adorarias alcançar neste ano de prática?",
+"pt_BR": "Que meta de escrita você adoraria alcançar neste ano de prática?"
+}
+},
+{
+"id": "creative_writing-041",
+"lv": "beginner",
+"i18n": {
+"en": "How often would you like to write each week?",
+"de": "Wie oft möchtest du pro Woche schreiben?",
+"es": "¿Con qué frecuencia te gustaría escribir cada semana?",
+"fr": "Combien de fois par semaine aimerais-tu écrire ?",
+"it": "Quante volte a settimana ti piacerebbe scrivere?",
+"pt": "Quantas vezes por semana gostarias de escrever?",
+"pt_BR": "Quantas vezes por semana você gostaria de escrever?"
+}
+},
+{
+"id": "creative_writing-042",
+"lv": "beginner",
+"i18n": {
+"en": "What did you notice on your way home today that could go into a story?",
+"de": "Was ist dir heute auf dem Heimweg aufgefallen, das in eine Geschichte passen könnte?",
+"es": "¿Qué viste hoy de camino a casa que podría entrar en una historia?",
+"fr": "Qu'as-tu remarqué aujourd'hui en rentrant qui pourrait figurer dans une histoire ?",
+"it": "Cosa hai notato oggi tornando a casa che potrebbe finire in una storia?",
+"pt": "O que reparaste hoje a caminho de casa que podia entrar numa história?",
+"pt_BR": "O que você notou hoje no caminho para casa que poderia entrar numa história?"
+}
+},
+{
+"id": "creative_writing-043",
+"lv": "beginner",
+"i18n": {
+"en": "Can you describe your favourite room using only sounds and smells?",
+"de": "Kannst du dein Lieblingszimmer nur mit Geräuschen und Gerüchen beschreiben?",
+"es": "¿Puedes describir tu habitación favorita solo con sonidos y olores?",
+"fr": "Peux-tu décrire ta pièce préférée uniquement avec des sons et des odeurs ?",
+"it": "Riesci a descrivere la tua stanza preferita solo con suoni e odori?",
+"pt": "Consegues descrever a tua divisão preferida só com sons e cheiros?",
+"pt_BR": "Você consegue descrever seu cômodo favorito só com sons e cheiros?"
+}
+},
+{
+"id": "creative_writing-044",
+"lv": "beginner",
+"i18n": {
+"en": "What is a 'what if' question that makes you curious today?",
+"de": "Welche Was-wäre-wenn-Frage macht dich heute neugierig?",
+"es": "¿Qué pregunta de tipo «¿y si...?» te despierta curiosidad hoy?",
+"fr": "Quelle question « et si... » éveille ta curiosité aujourd'hui ?",
+"it": "Quale domanda del tipo «e se...?» ti incuriosisce oggi?",
+"pt": "Que pergunta do tipo «e se...?» te deixa curioso hoje?",
+"pt_BR": "Que pergunta do tipo 'e se...?' deixa você curioso hoje?"
+}
+},
+{
+"id": "creative_writing-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which of your five senses do you find easiest to write about?",
+"de": "Über welchen deiner fünf Sinne fällt es dir am leichtesten zu schreiben?",
+"es": "¿Sobre cuál de tus cinco sentidos te resulta más fácil escribir?",
+"fr": "Sur lequel de tes cinq sens trouves-tu le plus facile d'écrire ?",
+"it": "Su quale dei cinque sensi ti viene più facile scrivere?",
+"pt": "Sobre qual dos cinco sentidos achas mais fácil escrever?",
+"pt_BR": "Sobre qual dos cinco sentidos você acha mais fácil escrever?"
+}
+},
+{
+"id": "creative_writing-046",
+"lv": "beginner",
+"i18n": {
+"en": "How would you describe a friend using one detail only?",
+"de": "Wie würdest du eine Freundin oder einen Freund mit nur einem Detail beschreiben?",
+"es": "¿Cómo describirías a un amigo o amiga con un solo detalle?",
+"fr": "Comment décrirais-tu un ami avec un seul détail ?",
+"it": "Come descriveresti un amico con un solo dettaglio?",
+"pt": "Como descreverias um amigo com um único pormenor?",
+"pt_BR": "Como você descreveria um amigo com um único detalhe?"
+}
+},
+{
+"id": "creative_writing-047",
+"lv": "beginner",
+"i18n": {
+"en": "Could you tell me a story in exactly six words right now?",
+"de": "Kannst du mir jetzt gleich eine Geschichte in genau sechs Wörtern erzählen?",
+"es": "¿Podrías contarme ahora mismo una historia en exactamente seis palabras?",
+"fr": "Pourrais-tu me raconter une histoire en six mots exactement, là, maintenant ?",
+"it": "Sapresti raccontarmi una storia in esattamente sei parole, adesso?",
+"pt": "Consegues contar-me agora uma história em exatamente seis palavras?",
+"pt_BR": "Você consegue me contar agora uma história em exatamente seis palavras?"
+}
+},
+{
+"id": "creative_writing-048",
+"lv": "beginner",
+"i18n": {
+"en": "What would your main character want more than anything?",
+"de": "Was würde sich deine Hauptfigur mehr als alles andere wünschen?",
+"es": "¿Qué desearía tu protagonista más que nada en el mundo?",
+"fr": "Que voudrait ton personnage principal plus que tout ?",
+"it": "Cosa vorrebbe il tuo protagonista più di ogni altra cosa?",
+"pt": "O que quereria a tua personagem principal mais do que tudo?",
+"pt_BR": "O que o seu personagem principal mais deseja no mundo?"
+}
+},
+{
+"id": "creative_writing-049",
+"lv": "beginner",
+"i18n": {
+"en": "What name would you give a brave inventor in a story, and why?",
+"de": "Welchen Namen würdest du einer mutigen Erfinderin in einer Geschichte geben, und warum?",
+"es": "¿Qué nombre le pondrías a una inventora valiente en una historia y por qué?",
+"fr": "Quel nom donnerais-tu à une inventrice courageuse dans une histoire, et pourquoi ?",
+"it": "Che nome daresti a un'inventrice coraggiosa in una storia, e perché?",
+"pt": "Que nome darias a uma inventora corajosa numa história, e porquê?",
+"pt_BR": "Que nome você daria a uma inventora corajosa numa história, e por quê?"
+}
+},
+{
+"id": "creative_writing-050",
+"lv": "beginner",
+"i18n": {
+"en": "Which cliché do you notice most often in stories?",
+"de": "Welches Klischee fällt dir in Geschichten am häufigsten auf?",
+"es": "¿Qué cliché notas más a menudo en las historias?",
+"fr": "Quel cliché remarques-tu le plus souvent dans les histoires ?",
+"it": "Quale cliché noti più spesso nelle storie?",
+"pt": "Que cliché notas com mais frequência nas histórias?",
+"pt_BR": "Que clichê você nota com mais frequência nas histórias?"
+}
+},
+{
+"id": "creative_writing-051",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about writing a messy first draft?",
+"de": "Wie stehst du dazu, einen chaotischen ersten Entwurf zu schreiben?",
+"es": "¿Qué te parece escribir un primer borrador desordenado?",
+"fr": "Que penses-tu de l'idée d'écrire un premier jet brouillon ?",
+"it": "Come ti senti all'idea di scrivere una prima bozza disordinata?",
+"pt": "O que achas de escrever um primeiro rascunho desarrumado?",
+"pt_BR": "O que você acha de escrever um primeiro rascunho bagunçado?"
+}
+},
+{
+"id": "creative_writing-052",
+"lv": "beginner",
+"i18n": {
+"en": "What animal would make a fun main character, and what would it want?",
+"de": "Welches Tier wäre eine lustige Hauptfigur, und was würde es wollen?",
+"es": "¿Qué animal sería un protagonista divertido y qué querría?",
+"fr": "Quel animal ferait un personnage principal amusant, et que voudrait-il ?",
+"it": "Quale animale sarebbe un protagonista divertente, e cosa vorrebbe?",
+"pt": "Que animal seria uma personagem principal divertida, e o que quereria?",
+"pt_BR": "Que animal seria um protagonista divertido, e o que ele iria querer?"
+}
+},
+{
+"id": "creative_writing-053",
+"lv": "beginner",
+"i18n": {
+"en": "Which fairy tale or folk tale would you like to retell in your own way?",
+"de": "Welches Märchen oder welche Volkssage würdest du gern auf deine Art neu erzählen?",
+"es": "¿Qué cuento popular o de hadas te gustaría contar a tu manera?",
+"fr": "Quel conte de fées ou conte populaire aimerais-tu réécrire à ta façon ?",
+"it": "Quale fiaba o leggenda popolare vorresti raccontare a modo tuo?",
+"pt": "Que conto de fadas ou conto popular gostavas de recontar à tua maneira?",
+"pt_BR": "Que conto de fadas ou conto popular você gostaria de recontar do seu jeito?"
+}
+},
+{
+"id": "creative_writing-054",
+"lv": "beginner",
+"i18n": {
+"en": "What is a funny situation from your life that could become a short story?",
+"de": "Welche lustige Situation aus deinem Leben könnte eine Kurzgeschichte werden?",
+"es": "¿Qué situación graciosa de tu vida podría convertirse en un relato corto?",
+"fr": "Quelle situation drôle de ta vie pourrait devenir une petite histoire ?",
+"it": "Quale situazione buffa della tua vita potrebbe diventare un racconto?",
+"pt": "Que situação engraçada da tua vida poderia virar um conto?",
+"pt_BR": "Que situação engraçada da sua vida poderia virar um conto?"
+}
+},
+{
+"id": "creative_writing-055",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather write in first person or third person? Why?",
+"de": "Schreibst du lieber in der Ich-Form oder in der dritten Person? Warum?",
+"es": "¿Prefieres escribir en primera o en tercera persona? ¿Por qué?",
+"fr": "Tu préfères écrire à la première ou à la troisième personne ? Pourquoi ?",
+"it": "Preferisci scrivere in prima o in terza persona? Perché?",
+"pt": "Preferes escrever na primeira ou na terceira pessoa? Porquê?",
+"pt_BR": "Você prefere escrever em primeira ou terceira pessoa? Por quê?"
+}
+},
+{
+"id": "creative_writing-056",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of conflict do you enjoy most: a puzzle, a rivalry or a big challenge?",
+"de": "Welche Art von Konflikt magst du am meisten: ein Rätsel, eine Rivalität oder eine große Herausforderung?",
+"es": "¿Qué tipo de conflicto te gusta más: un enigma, una rivalidad o un gran reto?",
+"fr": "Quel type de conflit préfères-tu : une énigme, une rivalité ou un grand défi ?",
+"it": "Che tipo di conflitto preferisci: un enigma, una rivalità o una grande sfida?",
+"pt": "Que tipo de conflito preferes: um enigma, uma rivalidade ou um grande desafio?",
+"pt_BR": "Que tipo de conflito você prefere: um enigma, uma rivalidade ou um grande desafio?"
+}
+},
+{
+"id": "creative_writing-057",
+"lv": "beginner",
+"i18n": {
+"en": "What would you write in a postcard story from your dream destination?",
+"de": "Was würdest du in eine Postkartengeschichte von deinem Traumziel schreiben?",
+"es": "¿Qué escribirías en una historia-postal desde tu destino soñado?",
+"fr": "Qu'écrirais-tu dans une histoire-carte postale depuis ta destination de rêve ?",
+"it": "Cosa scriveresti in una storia-cartolina dalla tua meta dei sogni?",
+"pt": "O que escreverias num conto-postal a partir do teu destino de sonho?",
+"pt_BR": "O que você escreveria num conto-cartão-postal do seu destino dos sonhos?"
+}
+},
+{
+"id": "creative_writing-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which meal from your childhood could be the heart of a story?",
+"de": "Welches Gericht aus deiner Kindheit könnte das Herz einer Geschichte sein?",
+"es": "¿Qué comida de tu infancia podría ser el corazón de una historia?",
+"fr": "Quel plat de ton enfance pourrait être au cœur d'une histoire ?",
+"it": "Quale piatto della tua infanzia potrebbe essere il cuore di una storia?",
+"pt": "Que prato da tua infância poderia ser o coração de uma história?",
+"pt_BR": "Que prato da sua infância poderia ser o coração de uma história?"
+}
+},
+{
+"id": "creative_writing-059",
+"lv": "beginner",
+"i18n": {
+"en": "How do you like to celebrate when you finish a piece of writing?",
+"de": "Wie feierst du gern, wenn du einen Text fertig geschrieben hast?",
+"es": "¿Cómo te gusta celebrar cuando terminas un texto?",
+"fr": "Comment aimes-tu fêter la fin d'un texte ?",
+"it": "Come ti piace festeggiare quando finisci un testo?",
+"pt": "Como gostas de celebrar quando acabas um texto?",
+"pt_BR": "Como você gosta de comemorar quando termina um texto?"
+}
+},
+{
+"id": "creative_writing-060",
+"lv": "intermediate",
+"i18n": {
+"en": "Which point of view feels most natural for the story you want to tell next?",
+"de": "Welche Erzählperspektive passt am besten zu der Geschichte, die du als Nächstes erzählen willst?",
+"es": "¿Qué punto de vista te parece más natural para tu próxima historia?",
+"fr": "Quel point de vue te semble le plus naturel pour ta prochaine histoire ?",
+"it": "Quale punto di vista ti sembra più naturale per la tua prossima storia?",
+"pt": "Que ponto de vista te parece mais natural para a próxima história que queres contar?",
+"pt_BR": "Que ponto de vista parece mais natural para a próxima história que você quer contar?"
+}
+},
+{
+"id": "creative_writing-061",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you describe your writing voice to someone who has never read you?",
+"de": "Wie würdest du deine Schreibstimme jemandem beschreiben, der dich nie gelesen hat?",
+"es": "¿Cómo describirías tu voz como escritor a alguien que nunca te ha leído?",
+"fr": "Comment décrirais-tu ta voix d'auteur à quelqu'un qui ne t'a jamais lu ?",
+"it": "Come descriveresti la tua voce di scrittore a chi non ti ha mai letto?",
+"pt": "Como descreverias a tua voz de escritor a alguém que nunca te leu?",
+"pt_BR": "Como você descreveria sua voz de escritor para alguém que nunca leu você?"
+}
+},
+{
+"id": "creative_writing-062",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you plan your stories in detail or discover them as you write?",
+"de": "Planst du deine Geschichten genau oder entdeckst du sie beim Schreiben?",
+"es": "¿Planificas tus historias al detalle o las descubres mientras escribes?",
+"fr": "Planifies-tu tes histoires en détail ou les découvres-tu en écrivant ?",
+"it": "Pianifichi le tue storie nei dettagli o le scopri mentre scrivi?",
+"pt": "Planeias as tuas histórias ao pormenor ou descobre-las enquanto escreves?",
+"pt_BR": "Você planeja suas histórias em detalhe ou descobre a trama enquanto escreve?"
+}
+},
+{
+"id": "creative_writing-063",
+"lv": "intermediate",
+"i18n": {
+"en": "What is the hardest part of writing dialogue for you?",
+"de": "Was ist für dich das Schwierigste beim Schreiben von Dialogen?",
+"es": "¿Qué es lo más difícil para ti al escribir diálogos?",
+"fr": "Qu'est-ce qui est le plus difficile pour toi quand tu écris des dialogues ?",
+"it": "Qual è per te la parte più difficile nello scrivere i dialoghi?",
+"pt": "Qual é para ti a parte mais difícil de escrever diálogos?",
+"pt_BR": "Qual é a parte mais difícil de escrever diálogos para você?"
+}
+},
+{
+"id": "creative_writing-064",
+"lv": "intermediate",
+"i18n": {
+"en": "Which genre would you like to try that you have never written before?",
+"de": "Welches Genre, das du noch nie geschrieben hast, würdest du gern ausprobieren?",
+"es": "¿Qué género que nunca has escrito te gustaría probar?",
+"fr": "Quel genre que tu n'as jamais écrit aimerais-tu essayer ?",
+"it": "Quale genere che non hai mai scritto ti piacerebbe provare?",
+"pt": "Que género que nunca escreveste gostarias de experimentar?",
+"pt_BR": "Que gênero que você nunca escreveu gostaria de experimentar?"
+}
+},
+{
+"id": "creative_writing-065",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep a story moving in the middle when energy drops?",
+"de": "Wie hältst du eine Geschichte in der Mitte in Schwung, wenn die Energie nachlässt?",
+"es": "¿Cómo mantienes el ritmo de una historia en la mitad, cuando la energía baja?",
+"fr": "Comment fais-tu avancer une histoire au milieu, quand l'énergie retombe ?",
+"it": "Come mantieni viva una storia a metà, quando l'energia cala?",
+"pt": "Como manténs uma história a andar a meio, quando a energia baixa?",
+"pt_BR": "Como você mantém uma história em movimento no meio, quando a energia cai?"
+}
+},
+{
+"id": "creative_writing-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What invented world would you love to build, and what is its most unusual rule?",
+"de": "Welche erfundene Welt würdest du gern erschaffen, und was ist ihre ungewöhnlichste Regel?",
+"es": "¿Qué mundo inventado te encantaría crear y cuál sería su regla más curiosa?",
+"fr": "Quel monde imaginaire aimerais-tu créer, et quelle est sa règle la plus insolite ?",
+"it": "Quale mondo immaginario ti piacerebbe creare, e qual è la sua regola più insolita?",
+"pt": "Que mundo inventado adorarias construir, e qual é a sua regra mais invulgar?",
+"pt_BR": "Que mundo inventado você adoraria criar, e qual é a regra mais inusitada dele?"
+}
+},
+{
+"id": "creative_writing-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which true story from your life would you like to write as a personal essay?",
+"de": "Welche wahre Geschichte aus deinem Leben würdest du gern als persönlichen Essay schreiben?",
+"es": "¿Qué historia real de tu vida te gustaría escribir como ensayo personal?",
+"fr": "Quelle histoire vraie de ta vie aimerais-tu écrire sous forme d'essai personnel ?",
+"it": "Quale storia vera della tua vita vorresti scrivere come saggio personale?",
+"pt": "Que história verdadeira da tua vida gostavas de escrever como ensaio pessoal?",
+"pt_BR": "Que história real da sua vida você gostaria de escrever como ensaio pessoal?"
+}
+},
+{
+"id": "creative_writing-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you show a character's feelings without naming them?",
+"de": "Wie zeigst du die Gefühle einer Figur, ohne sie zu benennen?",
+"es": "¿Cómo muestras los sentimientos de un personaje sin nombrarlos?",
+"fr": "Comment montres-tu les émotions d'un personnage sans les nommer ?",
+"it": "Come mostri i sentimenti di un personaggio senza nominarli?",
+"pt": "Como mostras os sentimentos de uma personagem sem os nomear?",
+"pt_BR": "Como você mostra os sentimentos de um personagem sem nomeá-los?"
+}
+},
+{
+"id": "creative_writing-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What kind of villain or rival do you find most interesting?",
+"de": "Was für einen Gegenspieler oder Rivalen findest du am interessantesten?",
+"es": "¿Qué tipo de antagonista o rival te parece más interesante?",
+"fr": "Quel genre d'antagoniste ou de rival trouves-tu le plus intéressant ?",
+"it": "Che tipo di antagonista o rivale trovi più interessante?",
+"pt": "Que tipo de antagonista ou rival achas mais interessante?",
+"pt_BR": "Que tipo de antagonista ou rival você acha mais interessante?"
+}
+},
+{
+"id": "creative_writing-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which story structure do you enjoy most as a reader?",
+"de": "Welche Erzählstruktur gefällt dir als Leserin oder Leser am besten?",
+"es": "¿Qué estructura narrativa disfrutas más como lector?",
+"fr": "Quelle structure narrative préfères-tu en tant que lecteur ?",
+"it": "Quale struttura narrativa ti piace di più da lettore?",
+"pt": "Que estrutura narrativa mais aprecias como leitor?",
+"pt_BR": "Que estrutura narrativa você mais curte como leitor?"
+}
+},
+{
+"id": "creative_writing-071",
+"lv": "beginner",
+"i18n": {
+"en": "Which photo on your phone could inspire a story, and what happens in it?",
+"de": "Welches Foto auf deinem Handy könnte eine Geschichte inspirieren, und was passiert darin?",
+"es": "¿Qué foto de tu móvil podría inspirar una historia y qué pasa en ella?",
+"fr": "Quelle photo de ton téléphone pourrait inspirer une histoire, et que s'y passe-t-il ?",
+"it": "Quale foto sul tuo telefono potrebbe ispirare una storia, e cosa succede?",
+"pt": "Que fotografia do teu telemóvel podia inspirar uma história, e o que acontece nela?",
+"pt_BR": "Que foto do seu celular poderia inspirar uma história, e o que acontece nela?"
+}
+},
+{
+"id": "creative_writing-072",
+"lv": "beginner",
+"i18n": {
+"en": "What would a bedtime story you invent be about?",
+"de": "Wovon würde eine Gutenachtgeschichte handeln, die du erfindest?",
+"es": "¿De qué trataría un cuento para dormir inventado por ti?",
+"fr": "De quoi parlerait une histoire du soir que tu inventerais ?",
+"it": "Di cosa parlerebbe una favola della buonanotte inventata da te?",
+"pt": "Sobre o que seria uma história para adormecer inventada por ti?",
+"pt_BR": "Sobre o que seria uma história de ninar inventada por você?"
+}
+},
+{
+"id": "creative_writing-073",
+"lv": "beginner",
+"i18n": {
+"en": "Which strong verb do you love, and how would you use it in a sentence?",
+"de": "Welches ausdrucksstarke Verb magst du, und wie würdest du es in einem Satz verwenden?",
+"es": "¿Qué verbo expresivo te encanta y cómo lo usarías en una frase?",
+"fr": "Quel verbe fort aimes-tu, et comment l'utiliserais-tu dans une phrase ?",
+"it": "Quale verbo espressivo ami, e come lo useresti in una frase?",
+"pt": "Que verbo expressivo adoras, e como o usarias numa frase?",
+"pt_BR": "Que verbo expressivo você adora, e como o usaria numa frase?"
+}
+},
+{
+"id": "creative_writing-074",
+"lv": "beginner",
+"i18n": {
+"en": "What would happen if your favourite café could talk?",
+"de": "Was würde passieren, wenn dein Lieblingscafé sprechen könnte?",
+"es": "¿Qué pasaría si tu cafetería favorita pudiera hablar?",
+"fr": "Que se passerait-il si ton café préféré pouvait parler ?",
+"it": "Cosa succederebbe se il tuo bar preferito potesse parlare?",
+"pt": "O que aconteceria se o teu café preferido pudesse falar?",
+"pt_BR": "O que aconteceria se o seu café favorito pudesse falar?"
+}
+},
+{
+"id": "creative_writing-075",
+"lv": "beginner",
+"i18n": {
+"en": "What small writing habit would be easy for you to start tomorrow?",
+"de": "Welche kleine Schreibgewohnheit könntest du morgen leicht beginnen?",
+"es": "¿Qué pequeño hábito de escritura te resultaría fácil empezar mañana?",
+"fr": "Quelle petite habitude d'écriture pourrais-tu facilement commencer demain ?",
+"it": "Quale piccola abitudine di scrittura potresti iniziare facilmente domani?",
+"pt": "Que pequeno hábito de escrita seria fácil começares amanhã?",
+"pt_BR": "Que pequeno hábito de escrita seria fácil você começar amanhã?"
+}
+},
+{
+"id": "creative_writing-076",
+"lv": "beginner",
+"i18n": {
+"en": "Which festival or celebration would make a lively setting for your story?",
+"de": "Welches Fest oder welche Feier wäre ein lebendiger Schauplatz für deine Geschichte?",
+"es": "¿Qué fiesta o celebración sería un escenario animado para tu historia?",
+"fr": "Quelle fête ou célébration serait un décor vivant pour ton histoire ?",
+"it": "Quale festa o celebrazione sarebbe un'ambientazione vivace per la tua storia?",
+"pt": "Que festa ou celebração seria um cenário animado para a tua história?",
+"pt_BR": "Que festa ou comemoração seria um cenário animado para a sua história?"
+}
+},
+{
+"id": "creative_writing-077",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide when a scene should end?",
+"de": "Wie entscheidest du, wann eine Szene enden sollte?",
+"es": "¿Cómo decides cuándo debe terminar una escena?",
+"fr": "Comment décides-tu du moment où une scène doit se terminer ?",
+"it": "Come decidi quando una scena deve finire?",
+"pt": "Como decides quando uma cena deve terminar?",
+"pt_BR": "Como você decide quando uma cena deve terminar?"
+}
+},
+{
+"id": "creative_writing-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever shared your work in a writing group? What was it like?",
+"de": "Hast du deine Texte schon einmal in einer Schreibgruppe geteilt? Wie war das?",
+"es": "¿Alguna vez has compartido tus textos en un grupo de escritura? ¿Cómo fue?",
+"fr": "As-tu déjà partagé tes textes dans un atelier d'écriture ? Comment ça s'est passé ?",
+"it": "Hai mai condiviso i tuoi testi in un gruppo di scrittura? Com'è andata?",
+"pt": "Já alguma vez partilhaste os teus textos num grupo de escrita? Como foi?",
+"pt_BR": "Você já compartilhou seus textos num grupo de escrita? Como foi?"
+}
+},
+{
+"id": "creative_writing-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which detail from a real place would you borrow for an invented city?",
+"de": "Welches Detail eines echten Ortes würdest du für eine erfundene Stadt übernehmen?",
+"es": "¿Qué detalle de un lugar real tomarías prestado para una ciudad inventada?",
+"fr": "Quel détail d'un lieu réel emprunterais-tu pour une ville imaginaire ?",
+"it": "Quale dettaglio di un luogo reale prenderesti in prestito per una città inventata?",
+"pt": "Que pormenor de um lugar real pedirias emprestado para uma cidade inventada?",
+"pt_BR": "Que detalhe de um lugar real você pegaria emprestado para uma cidade inventada?"
+}
+},
+{
+"id": "creative_writing-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you give two characters clearly different ways of speaking?",
+"de": "Wie gibst du zwei Figuren deutlich unterschiedliche Sprechweisen?",
+"es": "¿Cómo consigues que dos personajes hablen de forma claramente distinta?",
+"fr": "Comment donnes-tu à deux personnages des façons de parler bien différentes ?",
+"it": "Come fai a dare a due personaggi modi di parlare ben diversi?",
+"pt": "Como dás a duas personagens maneiras de falar claramente diferentes?",
+"pt_BR": "Como você dá a dois personagens jeitos de falar bem diferentes?"
+}
+},
+{
+"id": "creative_writing-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Which piece of advice about writing has helped you the most?",
+"de": "Welcher Schreibratschlag hat dir am meisten geholfen?",
+"es": "¿Qué consejo sobre escritura te ha ayudado más?",
+"fr": "Quel conseil d'écriture t'a le plus aidé ?",
+"it": "Quale consiglio di scrittura ti ha aiutato di più?",
+"pt": "Que conselho sobre escrita te ajudou mais?",
+"pt_BR": "Que conselho sobre escrita mais ajudou você?"
+}
+},
+{
+"id": "creative_writing-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you change if you rewrote the first story you ever wrote?",
+"de": "Was würdest du ändern, wenn du deine allererste Geschichte neu schreiben würdest?",
+"es": "¿Qué cambiarías si reescribieras la primera historia que escribiste?",
+"fr": "Que changerais-tu si tu réécrivais la toute première histoire que tu as écrite ?",
+"it": "Cosa cambieresti se riscrivessi la prima storia che hai scritto?",
+"pt": "O que mudarias se reescrevesses a primeira história que escreveste?",
+"pt_BR": "O que você mudaria se reescrevesse a primeira história que escreveu?"
+}
+},
+{
+"id": "creative_writing-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you like to use humour in your stories?",
+"de": "Wie setzt du Humor in deinen Geschichten gern ein?",
+"es": "¿Cómo te gusta usar el humor en tus historias?",
+"fr": "Comment aimes-tu utiliser l'humour dans tes histoires ?",
+"it": "Come ti piace usare l'umorismo nelle tue storie?",
+"pt": "Como gostas de usar o humor nas tuas histórias?",
+"pt_BR": "Como você gosta de usar o humor nas suas histórias?"
+}
+},
+{
+"id": "creative_writing-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which era of history would you love to set a story in?",
+"de": "In welcher historischen Epoche würdest du gern eine Geschichte spielen lassen?",
+"es": "¿En qué época de la historia te encantaría ambientar un relato?",
+"fr": "Dans quelle époque historique aimerais-tu situer une histoire ?",
+"it": "In quale epoca storica ti piacerebbe ambientare una storia?",
+"pt": "Em que época da história adorarias situar uma história?",
+"pt_BR": "Em que época da história você adoraria ambientar uma narrativa?"
+}
+},
+{
+"id": "creative_writing-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you look for when you revise your second draft?",
+"de": "Worauf achtest du, wenn du deinen zweiten Entwurf überarbeitest?",
+"es": "¿En qué te fijas cuando revisas tu segundo borrador?",
+"fr": "À quoi fais-tu attention quand tu révises ton deuxième jet ?",
+"it": "A cosa fai attenzione quando rivedi la seconda stesura?",
+"pt": "Em que te concentras quando revês o teu segundo rascunho?",
+"pt_BR": "No que você presta atenção quando revisa seu segundo rascunho?"
+}
+},
+{
+"id": "creative_writing-086",
+"lv": "advanced",
+"i18n": {
+"en": "What theme keeps appearing in your writing, even when you do not plan it?",
+"de": "Welches Thema taucht in deinen Texten immer wieder auf, auch ungeplant?",
+"es": "¿Qué tema aparece una y otra vez en tu escritura, incluso sin planearlo?",
+"fr": "Quel thème revient sans cesse dans ton écriture, même sans le prévoir ?",
+"it": "Quale tema ricorre nella tua scrittura, anche quando non lo pianifichi?",
+"pt": "Que tema aparece sempre na tua escrita, mesmo sem o planeares?",
+"pt_BR": "Que tema sempre aparece na sua escrita, mesmo sem você planejar?"
+}
+},
+{
+"id": "creative_writing-087",
+"lv": "advanced",
+"i18n": {
+"en": "Would you ever try an unreliable narrator? What would they hide?",
+"de": "Würdest du einen unzuverlässigen Erzähler ausprobieren? Was würde er verbergen?",
+"es": "¿Probarías alguna vez un narrador poco fiable? ¿Qué escondería?",
+"fr": "Essaierais-tu un narrateur peu fiable ? Que cacherait-il ?",
+"it": "Proveresti mai un narratore inaffidabile? Cosa nasconderebbe?",
+"pt": "Experimentarias um narrador pouco fiável? O que esconderia ele?",
+"pt_BR": "Você experimentaria um narrador não confiável? O que ele esconderia?"
+}
+},
+{
+"id": "creative_writing-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which novel-sized idea have you been carrying around for a while?",
+"de": "Welche Idee in Romanlänge trägst du schon eine Weile mit dir herum?",
+"es": "¿Qué idea con tamaño de novela llevas tiempo dándole vueltas?",
+"fr": "Quelle idée de roman portes-tu en toi depuis un moment ?",
+"it": "Quale idea da romanzo ti porti dietro da un po'?",
+"pt": "Que ideia com dimensão de romance andas a guardar há algum tempo?",
+"pt_BR": "Que ideia do tamanho de um romance você carrega há um tempo?"
+}
+},
+{
+"id": "creative_writing-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance what you explain and what you leave for the reader?",
+"de": "Wie hältst du die Balance zwischen dem, was du erklärst, und dem, was du dem Leser überlässt?",
+"es": "¿Cómo equilibras lo que explicas y lo que dejas al lector?",
+"fr": "Comment équilibres-tu ce que tu expliques et ce que tu laisses au lecteur ?",
+"it": "Come bilanci ciò che spieghi e ciò che lasci al lettore?",
+"pt": "Como equilibras o que explicas e o que deixas para o leitor?",
+"pt_BR": "Como você equilibra o que explica e o que deixa para o leitor?"
+}
+},
+{
+"id": "creative_writing-090",
+"lv": "advanced",
+"i18n": {
+"en": "Which experimental form, like letters or lists, would suit a story of yours?",
+"de": "Welche experimentelle Form, etwa Briefe oder Listen, würde zu einer deiner Geschichten passen?",
+"es": "¿Qué forma experimental, como cartas o listas, encajaría con alguna de tus historias?",
+"fr": "Quelle forme expérimentale, comme des lettres ou des listes, conviendrait à une de tes histoires ?",
+"it": "Quale forma sperimentale, come lettere o elenchi, si adatterebbe a una tua storia?",
+"pt": "Que forma experimental, como cartas ou listas, combinaria com uma história tua?",
+"pt_BR": "Que forma experimental, como cartas ou listas, combinaria com uma história sua?"
+}
+},
+{
+"id": "creative_writing-091",
+"lv": "advanced",
+"i18n": {
+"en": "How do you know when a story is truly finished?",
+"de": "Woran merkst du, dass eine Geschichte wirklich fertig ist?",
+"es": "¿Cómo sabes cuándo una historia está realmente terminada?",
+"fr": "Comment sais-tu qu'une histoire est vraiment terminée ?",
+"it": "Come capisci quando una storia è davvero finita?",
+"pt": "Como sabes quando uma história está mesmo terminada?",
+"pt_BR": "Como você sabe quando uma história está realmente pronta?"
+}
+},
+{
+"id": "creative_writing-092",
+"lv": "advanced",
+"i18n": {
+"en": "What is one passage you loved but had to cut? How did that feel?",
+"de": "Welche Passage hast du geliebt, aber streichen müssen? Wie hat sich das angefühlt?",
+"es": "¿Qué fragmento te encantaba pero tuviste que cortar? ¿Cómo te sentiste?",
+"fr": "Quel passage adorais-tu mais as-tu dû couper ? Qu'as-tu ressenti ?",
+"it": "Quale passaggio amavi ma hai dovuto tagliare? Come ti sei sentito?",
+"pt": "Que passagem adoravas mas tiveste de cortar? Como te sentiste?",
+"pt_BR": "Que trecho você adorava mas teve que cortar? Como se sentiu?"
+}
+},
+{
+"id": "creative_writing-093",
+"lv": "advanced",
+"i18n": {
+"en": "How would your story change if you told it in reverse order?",
+"de": "Wie würde sich deine Geschichte verändern, wenn du sie rückwärts erzählen würdest?",
+"es": "¿Cómo cambiaría tu historia si la contaras en orden inverso?",
+"fr": "Comment ton histoire changerait-elle si tu la racontais à rebours ?",
+"it": "Come cambierebbe la tua storia se la raccontassi al contrario?",
+"pt": "Como mudaria a tua história se a contasses de trás para a frente?",
+"pt_BR": "Como a sua história mudaria se você a contasse de trás para frente?"
+}
+},
+{
+"id": "creative_writing-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which symbol or recurring image would you weave through a longer work?",
+"de": "Welches Symbol oder wiederkehrende Bild würdest du durch ein längeres Werk ziehen?",
+"es": "¿Qué símbolo o imagen recurrente entrelazarías en una obra larga?",
+"fr": "Quel symbole ou quelle image récurrente tisserais-tu dans une œuvre longue ?",
+"it": "Quale simbolo o immagine ricorrente intrecceresti in un'opera lunga?",
+"pt": "Que símbolo ou imagem recorrente entrelaçarias numa obra longa?",
+"pt_BR": "Que símbolo ou imagem recorrente você entrelaçaria numa obra longa?"
+}
+},
+{
+"id": "creative_writing-095",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever translated or rewritten your own story in another language?",
+"de": "Hast du schon einmal eine eigene Geschichte in eine andere Sprache übersetzt oder umgeschrieben?",
+"es": "¿Alguna vez has traducido o reescrito un relato tuyo en otro idioma?",
+"fr": "As-tu déjà traduit ou réécrit une de tes histoires dans une autre langue ?",
+"it": "Hai mai tradotto o riscritto una tua storia in un'altra lingua?",
+"pt": "Já alguma vez traduziste ou reescreveste uma história tua noutra língua?",
+"pt_BR": "Você já traduziu ou reescreveu uma história sua em outro idioma?"
+}
+},
+{
+"id": "creative_writing-096",
+"lv": "advanced",
+"i18n": {
+"en": "Where would you most like to share or publish your writing one day?",
+"de": "Wo würdest du deine Texte eines Tages am liebsten teilen oder veröffentlichen?",
+"es": "¿Dónde te gustaría compartir o publicar tus textos algún día?",
+"fr": "Où aimerais-tu un jour partager ou publier tes textes ?",
+"it": "Dove ti piacerebbe condividere o pubblicare i tuoi testi un giorno?",
+"pt": "Onde gostarias de partilhar ou publicar os teus textos um dia?",
+"pt_BR": "Onde você gostaria de compartilhar ou publicar seus textos um dia?"
+}
+},
+{
+"id": "creative_writing-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep going after a story gets rejected or ignored?",
+"de": "Wie machst du weiter, wenn eine Geschichte abgelehnt oder übersehen wird?",
+"es": "¿Cómo sigues adelante cuando un relato es rechazado o pasa desapercibido?",
+"fr": "Comment continues-tu quand une histoire est refusée ou passe inaperçue ?",
+"it": "Come vai avanti quando una storia viene rifiutata o ignorata?",
+"pt": "Como continuas quando uma história é rejeitada ou passa despercebida?",
+"pt_BR": "Como você segue em frente quando uma história é rejeitada ou ignorada?"
+}
+},
+{
+"id": "creative_writing-098",
+"lv": "advanced",
+"i18n": {
+"en": "What would your personal list of rules for good writing include?",
+"de": "Was stünde auf deiner persönlichen Liste von Regeln für gutes Schreiben?",
+"es": "¿Qué incluiría tu lista personal de reglas para escribir bien?",
+"fr": "Que contiendrait ta liste personnelle de règles pour bien écrire ?",
+"it": "Cosa includerebbe la tua lista personale di regole per scrivere bene?",
+"pt": "O que incluiria a tua lista pessoal de regras para escrever bem?",
+"pt_BR": "O que entraria na sua lista pessoal de regras para escrever bem?"
+}
+},
+{
+"id": "creative_writing-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which writer from another culture has changed the way you tell stories?",
+"de": "Welche Autorin oder welcher Autor aus einer anderen Kultur hat deine Art zu erzählen verändert?",
+"es": "¿Qué escritor de otra cultura ha cambiado tu forma de contar historias?",
+"fr": "Quel écrivain d'une autre culture a changé ta façon de raconter des histoires ?",
+"it": "Quale scrittore di un'altra cultura ha cambiato il tuo modo di raccontare?",
+"pt": "Que escritor de outra cultura mudou a tua forma de contar histórias?",
+"pt_BR": "Que escritor de outra cultura mudou o seu jeito de contar histórias?"
+}
+},
+{
+"id": "creative_writing-100",
+"lv": "advanced",
+"i18n": {
+"en": "What big writing project would you love to finish in the next few years?",
+"de": "Welches große Schreibprojekt würdest du in den nächsten Jahren gern abschließen?",
+"es": "¿Qué gran proyecto de escritura te encantaría terminar en los próximos años?",
+"fr": "Quel grand projet d'écriture aimerais-tu terminer dans les prochaines années ?",
+"it": "Quale grande progetto di scrittura vorresti finire nei prossimi anni?",
+"pt": "Que grande projeto de escrita adorarias terminar nos próximos anos?",
+"pt_BR": "Que grande projeto de escrita você adoraria terminar nos próximos anos?"
+}
+}
+]
+}

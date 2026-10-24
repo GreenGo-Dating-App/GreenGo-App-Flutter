@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking for directions",
+     "g": "Ask the way in French and understand simple directions.",
+     "p": [
+      "Start politely: excusez-moi, où est la gare? or pour aller à la gare, s'il vous plaît?",
+      "Key directions: tout droit (straight on), à gauche (left), à droite (right), au coin (at the corner).",
+      "Useful verbs: tournez à gauche, continuez tout droit, traversez la place; c'est à cinq minutes à pied."
+     ],
+     "q": "Explain to me in French how to get from your home to the nearest café.",
+     "c": "Give yourself directions in French today as you walk somewhere: tout droit, à gauche, à droite."
+    },
+    "de": {
+     "t": "Nach dem Weg fragen",
+     "g": "Du fragst auf Französisch nach dem Weg und verstehst einfache Wegbeschreibungen.",
+     "p": [
+      "Beginne höflich: excusez-moi, où est la gare? oder pour aller à la gare, s'il vous plaît?",
+      "Richtungen: tout droit (geradeaus), à gauche (links), à droite (rechts), au coin (an der Ecke).",
+      "Nützliche Verben: tournez à gauche, continuez tout droit, traversez la place; c'est à cinq minutes à pied."
+     ],
+     "q": "Erklär mir auf Französisch, wie man von deiner Wohnung zum nächsten Café kommt.",
+     "c": "Gib dir heute beim Gehen selbst Anweisungen auf Französisch: tout droit, à gauche, à droite."
+    },
+    "es": {
+     "t": "Preguntar el camino",
+     "g": "Pregunta cómo llegar a un sitio en francés y entiende indicaciones sencillas.",
+     "p": [
+      "Empieza con educación: excusez-moi, où est la gare? o pour aller à la gare, s'il vous plaît?",
+      "Direcciones clave: tout droit (todo recto), à gauche (a la izquierda), à droite (a la derecha), au coin (en la esquina).",
+      "Verbos útiles: tournez à gauche, continuez tout droit, traversez la place; c'est à cinq minutes à pied."
+     ],
+     "q": "Explícame en francés cómo ir de tu casa a la cafetería más cercana.",
+     "c": "Hoy, cuando camines a algún sitio, date indicaciones en francés: tout droit, à gauche, à droite."
+    },
+    "fr": {
+     "t": "Demander son chemin",
+     "g": "Demander son chemin et comprendre des indications simples.",
+     "p": [
+      "On commence poliment : excusez-moi, où est la gare ? ou pour aller à la gare, s'il vous plaît ?",
+      "Les directions : tout droit, à gauche, à droite, au coin de la rue, au bout de la rue.",
+      "À l'impératif : tournez à gauche, continuez tout droit, traversez la place ; c'est à cinq minutes à pied."
+     ],
+     "q": "Explique-moi comment aller de chez toi au café le plus proche.",
+     "c": "Donne-toi des indications à voix basse en marchant aujourd'hui : tout droit, à gauche, à droite."
+    },
+    "it": {
+     "t": "Chiedere indicazioni",
+     "g": "Chiedi la strada in francese e capisci indicazioni semplici.",
+     "p": [
+      "Inizia con garbo: excusez-moi, où est la gare? oppure pour aller à la gare, s'il vous plaît?",
+      "Direzioni chiave: tout droit (dritto), à gauche (a sinistra), à droite (a destra), au coin (all'angolo).",
+      "Verbi utili: tournez à gauche, continuez tout droit, traversez la place; c'est à cinq minutes à pied."
+     ],
+     "q": "Spiegami in francese come andare da casa tua al bar più vicino.",
+     "c": "Oggi, mentre cammini, datti indicazioni in francese: tout droit, à gauche, à droite."
+    },
+    "pt": {
+     "t": "Pedir direções",
+     "g": "Perguntar o caminho em francês e perceber indicações simples.",
+     "p": [
+      "Começa com educação: excusez-moi, où est la gare? ou pour aller à la gare, s'il vous plaît?",
+      "Direções-chave: tout droit (sempre em frente), à gauche (à esquerda), à droite (à direita), au coin (na esquina).",
+      "Verbos úteis: tournez à gauche, continuez tout droit, traversez la place; c'est à cinq minutes à pied."
+     ],
+     "q": "Explica-me em francês como ir da tua casa ao café mais próximo.",
+     "c": "Hoje, quando fores a pé para algum lado, dá-te indicações em francês: tout droit, à gauche, à droite."
+    },
+    "pt_BR": {
+     "t": "Pedindo informações",
+     "g": "Perguntar o caminho em francês e entender indicações simples.",
+     "p": [
+      "Comece com educação: excusez-moi, où est la gare? ou pour aller à la gare, s'il vous plaît?",
+      "Direções-chave: tout droit (em frente), à gauche (à esquerda), à droite (à direita), au coin (na esquina).",
+      "Verbos úteis: tournez à gauche, continuez tout droit, traversez la place; c'est à cinq minutes à pied."
+     ],
+     "q": "Me explique em francês como ir da sua casa até o café mais perto.",
+     "c": "Hoje, quando andar para algum lugar, dê a si mesmo indicações em francês: tout droit, à gauche, à droite."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Où est... ?",
+      "ex": "Excusez-moi, où est le musée ?"
+     },
+     {
+      "w": "tout droit",
+      "ex": "Continuez tout droit."
+     },
+     {
+      "w": "à gauche",
+      "ex": "Tournez à gauche après le pont."
+     },
+     {
+      "w": "à droite",
+      "ex": "La poste est à droite."
+     },
+     {
+      "w": "au coin de la rue",
+      "ex": "La boulangerie est au coin de la rue."
+     },
+     {
+      "w": "traverser",
+      "ex": "Traversez la place."
+     }
+    ],
+    "gram": "Indications à l'impératif (vous) : tournez, continuez, traversez, prenez la première rue à droite. Pour aller à... ?"
+   }
+  },
+  {
+   "d": 42,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Getting around: transport",
+     "g": "Talk about how you travel in French and buy a ticket.",
+     "p": [
+      "Means of transport: le métro, le bus, le train, le tram, le vélo, la voiture, l'avion.",
+      "Use en for vehicles you ride inside (en bus, en train, en voiture) but à for à pied and à vélo.",
+      "Buying a ticket: un billet pour Lyon, s'il vous plaît; un aller simple (one-way) or un aller-retour (return)."
+     ],
+     "q": "How do you usually go to work or school? Answer with en or à.",
+     "c": "Write how you would travel to three places, from your street to another country, with en or à."
+    },
+    "de": {
+     "t": "Unterwegs: Verkehrsmittel",
+     "g": "Du sprichst auf Französisch darüber, wie du reist, und kaufst eine Fahrkarte.",
+     "p": [
+      "Verkehrsmittel: le métro, le bus, le train, le tram, le vélo, la voiture, l'avion.",
+      "En steht bei Fahrzeugen, in denen man sitzt (en bus, en train, en voiture), aber à pied und à vélo.",
+      "Fahrkarte kaufen: un billet pour Lyon, s'il vous plaît; un aller simple (einfach) oder un aller-retour (hin und zurück)."
+     ],
+     "q": "Wie kommst du normalerweise zur Arbeit oder zur Schule? Antworte mit en oder à.",
+     "c": "Schreib auf, wie du an drei Orte reisen würdest, von deiner Straße bis ins Ausland, mit en oder à."
+    },
+    "es": {
+     "t": "Moverse: el transporte",
+     "g": "Habla en francés de cómo te desplazas y compra un billete.",
+     "p": [
+      "Medios de transporte: le métro, le bus, le train, le tram, le vélo, la voiture, l'avion.",
+      "Se usa en con vehículos en los que vas dentro (en bus, en train, en voiture), pero à pied y à vélo.",
+      "Comprar billete: un billet pour Lyon, s'il vous plaît; un aller simple (solo ida) o un aller-retour (ida y vuelta)."
+     ],
+     "q": "¿Cómo sueles ir al trabajo o a clase? Responde con en o à.",
+     "c": "Escribe cómo irías a tres lugares, de tu calle a otro país, con en o à."
+    },
+    "fr": {
+     "t": "Se déplacer : les transports",
+     "g": "Parler de ses déplacements et acheter un billet.",
+     "p": [
+      "Les transports : le métro, le bus, le train, le tram, le vélo, la voiture, l'avion.",
+      "On dit en pour un véhicule dans lequel on monte (en bus, en voiture), mais à pied et à vélo.",
+      "Au guichet : un billet pour Lyon, s'il vous plaît ; un aller simple ou un aller-retour."
+     ],
+     "q": "Comment vas-tu d'habitude au travail ou en cours ? Réponds avec en ou à.",
+     "c": "Écris comment tu irais à trois endroits, de ta rue jusqu'à un autre pays, avec en ou à."
+    },
+    "it": {
+     "t": "Spostarsi: i trasporti",
+     "g": "Parla in francese di come ti sposti e compra un biglietto.",
+     "p": [
+      "Mezzi di trasporto: le métro, le bus, le train, le tram, le vélo, la voiture, l'avion.",
+      "Si usa en per i mezzi in cui si sale (en bus, en train, en voiture), ma à pied e à vélo.",
+      "Comprare un biglietto: un billet pour Lyon, s'il vous plaît; un aller simple (solo andata) o un aller-retour."
+     ],
+     "q": "Come vai di solito al lavoro o a scuola? Rispondi con en o à.",
+     "c": "Scrivi come andresti in tre posti, dalla tua via a un altro paese, con en o à."
+    },
+    "pt": {
+     "t": "Deslocar-se: os transportes",
+     "g": "Falar em francês de como te deslocas e comprar um bilhete.",
+     "p": [
+      "Meios de transporte: le métro, le bus, le train, le tram, le vélo, la voiture, l'avion.",
+      "Usa-se en com veículos onde se entra (en bus, en train, en voiture), mas à pied e à vélo.",
+      "Comprar bilhete: un billet pour Lyon, s'il vous plaît; un aller simple (só ida) ou un aller-retour (ida e volta)."
+     ],
+     "q": "Como costumas ir para o trabalho ou para as aulas? Responde com en ou à.",
+     "c": "Escreve como irias a três sítios, da tua rua até outro país, com en ou à."
+    },
+    "pt_BR": {
+     "t": "Se locomovendo: transportes",
+     "g": "Falar em francês sobre como você se locomove e comprar uma passagem.",
+     "p": [
+      "Meios de transporte: le métro, le bus, le train, le tram, le vélo, la voiture, l'avion.",
+      "Usa-se en com veículos em que você entra (en bus, en train, en voiture), mas à pied e à vélo.",
+      "Comprar passagem: un billet pour Lyon, s'il vous plaît; un aller simple (só ida) ou un aller-retour (ida e volta)."
+     ],
+     "q": "Como você costuma ir para o trabalho ou a faculdade? Responda com en ou à.",
+     "c": "Escreva como você iria a três lugares, da sua rua até outro país, com en ou à."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le métro",
+      "ex": "Je prends le métro tous les jours."
+     },
+     {
+      "w": "en bus",
+      "ex": "Elle va au travail en bus."
+     },
+     {
+      "w": "à pied",
+      "ex": "L'école est à dix minutes à pied."
+     },
+     {
+      "w": "à vélo",
+      "ex": "Le dimanche, on se promène à vélo."
+     },
+     {
+      "w": "un billet",
+      "ex": "Un billet pour Nantes, s'il vous plaît."
+     },
+     {
+      "w": "un aller-retour",
+      "ex": "Un aller-retour pour Lille, s'il vous plaît."
+     }
+    ],
+    "gram": "En + véhicule fermé (en bus, en train, en voiture, en avion). À pied, à vélo. Prendre le métro, prendre le train."
+   }
+  },
+  {
+   "d": 43,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Faire: to do and to make",
+     "g": "Conjugate faire and use it for sports, chores and plans.",
+     "p": [
+      "Faire is irregular: je fais, tu fais, il fait, nous faisons, vous faites, ils font.",
+      "It covers do and make: faire les courses (shopping), faire la cuisine (cook), faire le ménage (clean).",
+      "For sports and activities use faire + du, de la, de l': je fais du tennis, elle fait de la natation."
+     ],
+     "q": "Qu'est-ce que tu fais le week-end? Tell me two things with faire.",
+     "c": "Write five sentences with five different forms of faire about your week."
+    },
+    "de": {
+     "t": "Faire: machen und tun",
+     "g": "Du konjugierst faire und nutzt es für Sport, Haushalt und Pläne.",
+     "p": [
+      "Faire ist unregelmäßig: je fais, tu fais, il fait, nous faisons, vous faites, ils font.",
+      "Es heißt machen und tun: faire les courses (einkaufen), faire la cuisine (kochen), faire le ménage (putzen).",
+      "Für Sport nimmt man faire + du, de la, de l': je fais du tennis, elle fait de la natation."
+     ],
+     "q": "Qu'est-ce que tu fais le week-end? Erzähl mir zwei Dinge mit faire.",
+     "c": "Schreib fünf Sätze mit fünf verschiedenen Formen von faire über deine Woche."
+    },
+    "es": {
+     "t": "Faire: hacer",
+     "g": "Conjuga faire y úsalo para deportes, tareas de casa y planes.",
+     "p": [
+      "Faire es irregular: je fais, tu fais, il fait, nous faisons, vous faites, ils font.",
+      "Sirve para muchas cosas: faire les courses (hacer la compra), faire la cuisine (cocinar), faire le ménage (limpiar).",
+      "Para deportes se usa faire + du, de la, de l': je fais du tennis, elle fait de la natation."
+     ],
+     "q": "Qu'est-ce que tu fais le week-end? Dime dos cosas con faire.",
+     "c": "Escribe cinco frases con cinco formas distintas de faire sobre tu semana."
+    },
+    "fr": {
+     "t": "Faire : le verbe faire",
+     "g": "Conjuguer faire et l'utiliser pour le sport, les tâches et les projets.",
+     "p": [
+      "Faire est irrégulier : je fais, tu fais, il fait, nous faisons, vous faites, ils font.",
+      "On le trouve partout : faire les courses, faire la cuisine, faire le ménage, faire une promenade.",
+      "Pour une activité, faire + du, de la, de l' : je fais du tennis, elle fait de la natation."
+     ],
+     "q": "Qu'est-ce que tu fais le week-end ? Cite deux choses avec faire.",
+     "c": "Écris cinq phrases avec cinq formes différentes de faire sur ta semaine."
+    },
+    "it": {
+     "t": "Faire: fare",
+     "g": "Coniuga faire e usalo per sport, faccende e progetti.",
+     "p": [
+      "Faire è irregolare: je fais, tu fais, il fait, nous faisons, vous faites, ils font.",
+      "Si usa ovunque: faire les courses (fare la spesa), faire la cuisine (cucinare), faire le ménage (le pulizie).",
+      "Per gli sport si usa faire + du, de la, de l': je fais du tennis, elle fait de la natation."
+     ],
+     "q": "Qu'est-ce que tu fais le week-end? Dimmi due cose con faire.",
+     "c": "Scrivi cinque frasi con cinque forme diverse di faire sulla tua settimana."
+    },
+    "pt": {
+     "t": "Faire: fazer",
+     "g": "Conjugar faire e usá-lo para desportos, tarefas e planos.",
+     "p": [
+      "Faire é irregular: je fais, tu fais, il fait, nous faisons, vous faites, ils font.",
+      "Serve para muita coisa: faire les courses (fazer compras), faire la cuisine (cozinhar), faire le ménage (limpar).",
+      "Para desportos usa-se faire + du, de la, de l': je fais du tennis, elle fait de la natation."
+     ],
+     "q": "Qu'est-ce que tu fais le week-end? Diz-me duas coisas com faire.",
+     "c": "Escreve cinco frases com cinco formas diferentes de faire sobre a tua semana."
+    },
+    "pt_BR": {
+     "t": "Faire: fazer",
+     "g": "Conjugar faire e usar para esportes, tarefas de casa e planos.",
+     "p": [
+      "Faire é irregular: je fais, tu fais, il fait, nous faisons, vous faites, ils font.",
+      "Serve para muita coisa: faire les courses (fazer compras), faire la cuisine (cozinhar), faire le ménage (faxina).",
+      "Para esportes se usa faire + du, de la, de l': je fais du tennis, elle fait de la natation."
+     ],
+     "q": "Qu'est-ce que tu fais le week-end? Me diga duas coisas com faire.",
+     "c": "Escreva cinco frases com cinco formas diferentes de faire sobre sua semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je fais",
+      "ex": "Je fais du yoga le matin."
+     },
+     {
+      "w": "vous faites",
+      "ex": "Qu'est-ce que vous faites ce soir ?"
+     },
+     {
+      "w": "ils font",
+      "ex": "Ils font une promenade au parc."
+     },
+     {
+      "w": "faire les courses",
+      "ex": "Nous faisons les courses le samedi."
+     },
+     {
+      "w": "faire la cuisine",
+      "ex": "Mon père fait la cuisine."
+     },
+     {
+      "w": "faire le ménage",
+      "ex": "Je fais le ménage le dimanche."
+     }
+    ],
+    "gram": "Faire : je fais, tu fais, il fait, nous faisons, vous faites, ils font. Sport : faire du/de la/de l' + activité."
+   }
+  },
+  {
+   "d": 44,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The weather",
+     "g": "Describe the weather in French with il fait, il pleut and il neige.",
+     "p": [
+      "Many weather phrases use il fait: il fait beau (nice), il fait chaud (hot), il fait froid (cold), il fait mauvais (bad).",
+      "Some have their own verbs: il pleut (it is raining), il neige (it is snowing); add il y a du vent or du soleil.",
+      "Ask quel temps fait-il? and talk about temperature: il fait vingt degrés."
+     ],
+     "q": "Quel temps fait-il chez toi aujourd'hui? Describe it in two sentences.",
+     "c": "Look out of the window three times today and describe the weather in French each time."
+    },
+    "de": {
+     "t": "Das Wetter",
+     "g": "Du beschreibst das Wetter auf Französisch mit il fait, il pleut und il neige.",
+     "p": [
+      "Viele Wetterausdrücke nutzen il fait: il fait beau (schön), il fait chaud (heiß), il fait froid (kalt), il fait mauvais.",
+      "Manche haben eigene Verben: il pleut (es regnet), il neige (es schneit); dazu il y a du vent oder du soleil.",
+      "Frag quel temps fait-il? und sprich über Temperatur: il fait vingt degrés."
+     ],
+     "q": "Quel temps fait-il bei dir heute? Beschreib es in zwei Sätzen.",
+     "c": "Schau heute dreimal aus dem Fenster und beschreib jedes Mal das Wetter auf Französisch."
+    },
+    "es": {
+     "t": "El tiempo",
+     "g": "Describe el tiempo en francés con il fait, il pleut e il neige.",
+     "p": [
+      "Muchas expresiones usan il fait, como hace en español: il fait beau (buen tiempo), il fait chaud (calor), il fait froid (frío).",
+      "Algunas tienen verbo propio: il pleut (llueve), il neige (nieva); y también il y a du vent o du soleil.",
+      "Pregunta quel temps fait-il? y habla de temperatura: il fait vingt degrés."
+     ],
+     "q": "Quel temps fait-il donde estás hoy? Descríbelo en dos frases.",
+     "c": "Mira por la ventana tres veces hoy y describe el tiempo en francés cada vez."
+    },
+    "fr": {
+     "t": "La météo",
+     "g": "Décrire le temps qu'il fait avec il fait, il pleut et il neige.",
+     "p": [
+      "Beaucoup d'expressions utilisent il fait : il fait beau, il fait chaud, il fait froid, il fait mauvais.",
+      "D'autres ont leur propre verbe : il pleut, il neige ; on ajoute il y a du vent, il y a du soleil.",
+      "On demande quel temps fait-il ? et on parle de température : il fait vingt degrés."
+     ],
+     "q": "Quel temps fait-il chez toi aujourd'hui ? Décris-le en deux phrases.",
+     "c": "Regarde par la fenêtre trois fois aujourd'hui et décris le temps à chaque fois."
+    },
+    "it": {
+     "t": "Il tempo",
+     "g": "Descrivi il tempo in francese con il fait, il pleut e il neige.",
+     "p": [
+      "Molte espressioni usano il fait, come fa in italiano: il fait beau (bel tempo), il fait chaud (caldo), il fait froid (freddo).",
+      "Alcune hanno un verbo proprio: il pleut (piove), il neige (nevica); poi il y a du vent o du soleil.",
+      "Chiedi quel temps fait-il? e parla della temperatura: il fait vingt degrés."
+     ],
+     "q": "Quel temps fait-il da te oggi? Descrivilo in due frasi.",
+     "c": "Oggi guarda fuori dalla finestra tre volte e descrivi il tempo in francese ogni volta."
+    },
+    "pt": {
+     "t": "O tempo",
+     "g": "Descrever o tempo em francês com il fait, il pleut e il neige.",
+     "p": [
+      "Muitas expressões usam il fait, como faz em português: il fait beau (bom tempo), il fait chaud (calor), il fait froid (frio).",
+      "Algumas têm verbo próprio: il pleut (chove), il neige (neva); e ainda il y a du vent ou du soleil.",
+      "Pergunta quel temps fait-il? e fala da temperatura: il fait vingt degrés."
+     ],
+     "q": "Quel temps fait-il aí hoje? Descreve-o em duas frases.",
+     "c": "Olha pela janela três vezes hoje e descreve o tempo em francês de cada vez."
+    },
+    "pt_BR": {
+     "t": "O tempo",
+     "g": "Descrever o tempo em francês com il fait, il pleut e il neige.",
+     "p": [
+      "Muitas expressões usam il fait, como faz em português: il fait beau (tempo bom), il fait chaud (calor), il fait froid (frio).",
+      "Algumas têm verbo próprio: il pleut (chove), il neige (neva); e também il y a du vent ou du soleil.",
+      "Pergunte quel temps fait-il? e fale da temperatura: il fait vingt degrés."
+     ],
+     "q": "Quel temps fait-il aí hoje? Descreva em duas frases.",
+     "c": "Olhe pela janela três vezes hoje e descreva o tempo em francês a cada vez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il fait beau",
+      "ex": "Il fait beau, on va au parc ?"
+     },
+     {
+      "w": "il fait chaud",
+      "ex": "En juillet, il fait très chaud."
+     },
+     {
+      "w": "il fait froid",
+      "ex": "Il fait froid ce matin."
+     },
+     {
+      "w": "il pleut",
+      "ex": "Il pleut, prends ton parapluie !"
+     },
+     {
+      "w": "il neige",
+      "ex": "Il neige à la montagne."
+     },
+     {
+      "w": "il y a du vent",
+      "ex": "Il y a du vent sur la plage."
+     }
+    ],
+    "gram": "Quel temps fait-il ? Il fait beau/chaud/froid/mauvais. Il pleut, il neige. Il y a du soleil, du vent. Il fait vingt degrés."
+   }
+  },
+  {
+   "d": 45,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hobbies and free time",
+     "g": "Talk about sports, music and free time in French with jouer à, jouer de and faire du.",
+     "p": [
+      "Jouer à is for games and ball sports: je joue au foot, au tennis, aux cartes.",
+      "Jouer de is for instruments: je joue du piano, de la guitare, du violon.",
+      "Faire du works for many activities: faire du vélo, de la danse, de la randonnée (hiking)."
+     ],
+     "q": "Qu'est-ce que tu fais pendant ton temps libre? Tell me with jouer or faire.",
+     "c": "Write about three hobbies of people you know, using jouer à, jouer de and faire du once each."
+    },
+    "de": {
+     "t": "Hobbys und Freizeit",
+     "g": "Du sprichst über Sport, Musik und Freizeit mit jouer à, jouer de und faire du.",
+     "p": [
+      "Jouer à steht bei Spielen und Ballsport: je joue au foot, au tennis, aux cartes.",
+      "Jouer de steht bei Instrumenten: je joue du piano, de la guitare, du violon.",
+      "Faire du passt zu vielen Aktivitäten: faire du vélo, de la danse, de la randonnée (Wandern)."
+     ],
+     "q": "Qu'est-ce que tu fais pendant ton temps libre? Erzähl es mir mit jouer oder faire.",
+     "c": "Schreib über drei Hobbys von Menschen, die du kennst, mit jouer à, jouer de und faire du je einmal."
+    },
+    "es": {
+     "t": "Aficiones y tiempo libre",
+     "g": "Habla de deporte, música y tiempo libre con jouer à, jouer de y faire du.",
+     "p": [
+      "Jouer à es para juegos y deportes de pelota: je joue au foot, au tennis, aux cartes.",
+      "Jouer de es para instrumentos: je joue du piano, de la guitare, du violon.",
+      "Faire du sirve para muchas actividades: faire du vélo, de la danse, de la randonnée (senderismo)."
+     ],
+     "q": "Qu'est-ce que tu fais pendant ton temps libre? Dímelo con jouer o faire.",
+     "c": "Escribe sobre tres aficiones de personas que conoces, con jouer à, jouer de y faire du una vez cada uno."
+    },
+    "fr": {
+     "t": "Les loisirs",
+     "g": "Parler de sport, de musique et de temps libre avec jouer à, jouer de et faire du.",
+     "p": [
+      "Jouer à pour les jeux et les sports de balle : je joue au foot, au tennis, aux cartes.",
+      "Jouer de pour les instruments : je joue du piano, de la guitare, du violon.",
+      "Faire du pour beaucoup d'activités : faire du vélo, de la danse, de la randonnée."
+     ],
+     "q": "Qu'est-ce que tu fais pendant ton temps libre ? Réponds avec jouer ou faire.",
+     "c": "Écris trois loisirs de tes proches, avec jouer à, jouer de et faire du une fois chacun."
+    },
+    "it": {
+     "t": "Hobby e tempo libero",
+     "g": "Parla di sport, musica e tempo libero con jouer à, jouer de e faire du.",
+     "p": [
+      "Jouer à si usa per giochi e sport con la palla: je joue au foot, au tennis, aux cartes.",
+      "Jouer de si usa per gli strumenti: je joue du piano, de la guitare, du violon.",
+      "Faire du va bene per molte attività: faire du vélo, de la danse, de la randonnée (escursionismo)."
+     ],
+     "q": "Qu'est-ce que tu fais pendant ton temps libre? Dimmelo con jouer o faire.",
+     "c": "Scrivi tre hobby di persone che conosci, con jouer à, jouer de e faire du una volta ciascuno."
+    },
+    "pt": {
+     "t": "Passatempos e tempo livre",
+     "g": "Falar de desporto, música e tempo livre com jouer à, jouer de e faire du.",
+     "p": [
+      "Jouer à é para jogos e desportos com bola: je joue au foot, au tennis, aux cartes.",
+      "Jouer de é para instrumentos: je joue du piano, de la guitare, du violon.",
+      "Faire du serve para muitas atividades: faire du vélo, de la danse, de la randonnée (caminhadas)."
+     ],
+     "q": "Qu'est-ce que tu fais pendant ton temps libre? Diz-me com jouer ou faire.",
+     "c": "Escreve três passatempos de pessoas que conheces, com jouer à, jouer de e faire du uma vez cada."
+    },
+    "pt_BR": {
+     "t": "Hobbies e tempo livre",
+     "g": "Falar de esporte, música e tempo livre com jouer à, jouer de e faire du.",
+     "p": [
+      "Jouer à é para jogos e esportes com bola: je joue au foot, au tennis, aux cartes.",
+      "Jouer de é para instrumentos: je joue du piano, de la guitare, du violon.",
+      "Faire du serve para muitas atividades: faire du vélo, de la danse, de la randonnée (trilha)."
+     ],
+     "q": "Qu'est-ce que tu fais pendant ton temps libre? Me conte com jouer ou faire.",
+     "c": "Escreva três hobbies de pessoas que você conhece, com jouer à, jouer de e faire du uma vez cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "jouer au foot",
+      "ex": "Le mercredi, je joue au foot."
+     },
+     {
+      "w": "jouer du piano",
+      "ex": "Ma sœur joue du piano."
+     },
+     {
+      "w": "jouer de la guitare",
+      "ex": "Tu joues de la guitare ?"
+     },
+     {
+      "w": "faire du vélo",
+      "ex": "On fait du vélo le dimanche."
+     },
+     {
+      "w": "faire de la randonnée",
+      "ex": "J'adore faire de la randonnée."
+     },
+     {
+      "w": "le temps libre",
+      "ex": "Pendant mon temps libre, je lis."
+     }
+    ],
+    "gram": "Jouer à + jeu ou sport (au foot, aux cartes). Jouer de + instrument (du piano). Faire du/de la + activité (du vélo)."
+   }
+  },
+  {
+   "d": 46,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular -ir verbs",
+     "g": "Conjugate regular -ir verbs like finir and choisir in the present tense.",
+     "p": [
+      "Drop -ir and add -is, -is, -it, -issons, -issez, -issent: je finis, nous finissons, ils finissent.",
+      "The plural forms carry the extra -iss-, which is the sign of this verb group.",
+      "Common members: finir (finish), choisir (choose), réussir (succeed), grandir (grow up), remplir (fill)."
+     ],
+     "q": "At what time do you finish work or school? Answer with finir.",
+     "c": "Conjugate choisir out loud for all six persons, then write one sentence with réussir."
+    },
+    "de": {
+     "t": "Regelmäßige Verben auf -ir",
+     "g": "Du konjugierst regelmäßige -ir-Verben wie finir und choisir im Präsens.",
+     "p": [
+      "Streiche -ir und hänge -is, -is, -it, -issons, -issez, -issent an: je finis, nous finissons, ils finissent.",
+      "Die Pluralformen haben das zusätzliche -iss-, das Kennzeichen dieser Gruppe.",
+      "Häufige Verben: finir (beenden), choisir (wählen), réussir (schaffen), grandir (wachsen), remplir (füllen)."
+     ],
+     "q": "Um wie viel Uhr hörst du mit Arbeit oder Schule auf? Antworte mit finir.",
+     "c": "Konjugiere choisir laut für alle sechs Personen und schreib einen Satz mit réussir."
+    },
+    "es": {
+     "t": "Verbos regulares en -ir",
+     "g": "Conjuga verbos regulares en -ir como finir y choisir en presente.",
+     "p": [
+      "Quita -ir y añade -is, -is, -it, -issons, -issez, -issent: je finis, nous finissons, ils finissent.",
+      "Las formas del plural llevan el -iss- extra, la marca de este grupo.",
+      "Verbos comunes: finir (terminar), choisir (elegir), réussir (lograr), grandir (crecer), remplir (llenar)."
+     ],
+     "q": "¿A qué hora terminas el trabajo o las clases? Responde con finir.",
+     "c": "Conjuga choisir en voz alta en las seis personas y escribe una frase con réussir."
+    },
+    "fr": {
+     "t": "Les verbes réguliers en -ir",
+     "g": "Conjuguer au présent les verbes du deuxième groupe comme finir et choisir.",
+     "p": [
+      "On enlève -ir et on ajoute -is, -is, -it, -issons, -issez, -issent : je finis, nous finissons.",
+      "Le -iss- au pluriel est la marque du deuxième groupe : vous choisissez, ils réussissent.",
+      "Verbes courants : finir, choisir, réussir, grandir, remplir, réfléchir."
+     ],
+     "q": "À quelle heure finis-tu le travail ou les cours ? Réponds avec finir.",
+     "c": "Conjugue choisir à voix haute à toutes les personnes, puis écris une phrase avec réussir."
+    },
+    "it": {
+     "t": "Verbi regolari in -ir",
+     "g": "Coniuga al presente i verbi regolari in -ir come finir e choisir.",
+     "p": [
+      "Togli -ir e aggiungi -is, -is, -it, -issons, -issez, -issent: je finis, nous finissons, ils finissent.",
+      "Le forme plurali hanno il -iss- in più, come finisco in italiano: è il segno di questo gruppo.",
+      "Verbi comuni: finir (finire), choisir (scegliere), réussir (riuscire), grandir (crescere), remplir (riempire)."
+     ],
+     "q": "A che ora finisci il lavoro o le lezioni? Rispondi con finir.",
+     "c": "Coniuga choisir ad alta voce per tutte e sei le persone e scrivi una frase con réussir."
+    },
+    "pt": {
+     "t": "Verbos regulares em -ir",
+     "g": "Conjugar no presente verbos regulares em -ir como finir e choisir.",
+     "p": [
+      "Tira -ir e junta -is, -is, -it, -issons, -issez, -issent: je finis, nous finissons, ils finissent.",
+      "As formas do plural levam o -iss- extra, a marca deste grupo.",
+      "Verbos comuns: finir (acabar), choisir (escolher), réussir (conseguir), grandir (crescer), remplir (encher)."
+     ],
+     "q": "A que horas acabas o trabalho ou as aulas? Responde com finir.",
+     "c": "Conjuga choisir em voz alta nas seis pessoas e escreve uma frase com réussir."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares em -ir",
+     "g": "Conjugar no presente verbos regulares em -ir como finir e choisir.",
+     "p": [
+      "Tire o -ir e coloque -is, -is, -it, -issons, -issez, -issent: je finis, nous finissons, ils finissent.",
+      "As formas do plural ganham o -iss- extra, a marca desse grupo.",
+      "Verbos comuns: finir (terminar), choisir (escolher), réussir (conseguir), grandir (crescer), remplir (encher)."
+     ],
+     "q": "Que horas você termina o trabalho ou as aulas? Responda com finir.",
+     "c": "Conjugue choisir em voz alta nas seis pessoas e escreva uma frase com réussir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "finir",
+      "ex": "Je finis le travail à dix-huit heures."
+     },
+     {
+      "w": "choisir",
+      "ex": "Vous choisissez le dessert ?"
+     },
+     {
+      "w": "réussir",
+      "ex": "Elle réussit toujours ses examens."
+     },
+     {
+      "w": "grandir",
+      "ex": "Les enfants grandissent vite."
+     },
+     {
+      "w": "remplir",
+      "ex": "Remplis la bouteille d'eau, s'il te plaît."
+     },
+     {
+      "w": "réfléchir",
+      "ex": "Je réfléchis avant de répondre."
+     }
+    ],
+    "gram": "Verbes en -ir (2e groupe) : je finis, tu finis, il finit, nous finissons, vous finissez, ils finissent."
+   }
+  },
+  {
+   "d": 47,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My daily routine",
+     "g": "Describe your morning routine in French with your first reflexive verbs.",
+     "p": [
+      "Reflexive verbs describe things you do to yourself and use an extra pronoun: je me lève (I get up).",
+      "Key verbs: se réveiller (wake up), se lever (get up), se laver (wash), s'habiller (get dressed), se coucher (go to bed).",
+      "Before a vowel, me becomes m': je m'habille; with time: je me lève à sept heures."
+     ],
+     "q": "What time do you get up and go to bed? Answer with je me lève and je me couche.",
+     "c": "Write your morning in three French sentences using three reflexive verbs."
+    },
+    "de": {
+     "t": "Mein Tagesablauf",
+     "g": "Du beschreibst deine Morgenroutine auf Französisch mit deinen ersten reflexiven Verben.",
+     "p": [
+      "Reflexive Verben haben ein zusätzliches Pronomen, wie im Deutschen: je me lève (ich stehe auf).",
+      "Wichtige Verben: se réveiller (aufwachen), se lever (aufstehen), se laver (sich waschen), s'habiller (sich anziehen), se coucher.",
+      "Vor Vokal wird me zu m': je m'habille; mit Uhrzeit: je me lève à sept heures."
+     ],
+     "q": "Wann stehst du auf und wann gehst du ins Bett? Antworte mit je me lève und je me couche.",
+     "c": "Beschreib deinen Morgen in drei französischen Sätzen mit drei reflexiven Verben."
+    },
+    "es": {
+     "t": "Mi rutina diaria",
+     "g": "Describe tu rutina de la mañana en francés con tus primeros verbos reflexivos.",
+     "p": [
+      "Los verbos reflexivos llevan un pronombre extra, como en español: je me lève (me levanto).",
+      "Verbos clave: se réveiller (despertarse), se lever (levantarse), se laver (lavarse), s'habiller (vestirse), se coucher (acostarse).",
+      "Ante vocal, me pasa a m': je m'habille; con la hora: je me lève à sept heures."
+     ],
+     "q": "¿A qué hora te levantas y te acuestas? Responde con je me lève y je me couche.",
+     "c": "Escribe tu mañana en tres frases en francés con tres verbos reflexivos."
+    },
+    "fr": {
+     "t": "Ma routine quotidienne",
+     "g": "Décrire sa routine du matin avec les premiers verbes pronominaux.",
+     "p": [
+      "Les verbes pronominaux ont un pronom en plus : je me lève, tu te réveilles.",
+      "Verbes clés : se réveiller, se lever, se laver, s'habiller, se brosser les dents, se coucher.",
+      "Devant une voyelle, me devient m' : je m'habille ; avec l'heure : je me lève à sept heures."
+     ],
+     "q": "À quelle heure te lèves-tu et te couches-tu ? Réponds avec je me lève et je me couche.",
+     "c": "Raconte ta matinée en trois phrases avec trois verbes pronominaux."
+    },
+    "it": {
+     "t": "La mia routine quotidiana",
+     "g": "Descrivi la tua mattina in francese con i primi verbi riflessivi.",
+     "p": [
+      "I verbi riflessivi hanno un pronome in più, come in italiano: je me lève (mi alzo).",
+      "Verbi chiave: se réveiller (svegliarsi), se lever (alzarsi), se laver (lavarsi), s'habiller (vestirsi), se coucher (andare a letto).",
+      "Davanti a vocale me diventa m': je m'habille; con l'ora: je me lève à sept heures."
+     ],
+     "q": "A che ora ti alzi e vai a letto? Rispondi con je me lève e je me couche.",
+     "c": "Scrivi la tua mattina in tre frasi in francese con tre verbi riflessivi."
+    },
+    "pt": {
+     "t": "A minha rotina diária",
+     "g": "Descrever a tua manhã em francês com os primeiros verbos reflexos.",
+     "p": [
+      "Os verbos reflexos têm um pronome extra, como em português: je me lève (levanto-me).",
+      "Verbos-chave: se réveiller (acordar), se lever (levantar-se), se laver (lavar-se), s'habiller (vestir-se), se coucher (deitar-se).",
+      "Antes de vogal, me passa a m': je m'habille; com a hora: je me lève à sept heures."
+     ],
+     "q": "A que horas te levantas e te deitas? Responde com je me lève e je me couche.",
+     "c": "Escreve a tua manhã em três frases em francês com três verbos reflexos."
+    },
+    "pt_BR": {
+     "t": "Minha rotina diária",
+     "g": "Descrever sua manhã em francês com os primeiros verbos reflexivos.",
+     "p": [
+      "Os verbos reflexivos têm um pronome a mais, como em português: je me lève (eu me levanto).",
+      "Verbos-chave: se réveiller (acordar), se lever (levantar), se laver (se lavar), s'habiller (se vestir), se coucher (deitar).",
+      "Antes de vogal, me vira m': je m'habille; com a hora: je me lève à sept heures."
+     ],
+     "q": "Que horas você se levanta e vai dormir? Responda com je me lève e je me couche.",
+     "c": "Escreva sua manhã em três frases em francês com três verbos reflexivos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se réveiller",
+      "ex": "Je me réveille à six heures et demie."
+     },
+     {
+      "w": "se lever",
+      "ex": "Je me lève tout de suite."
+     },
+     {
+      "w": "se laver",
+      "ex": "Je me lave le visage."
+     },
+     {
+      "w": "s'habiller",
+      "ex": "Je m'habille vite le matin."
+     },
+     {
+      "w": "se brosser les dents",
+      "ex": "Je me brosse les dents après le café."
+     },
+     {
+      "w": "se coucher",
+      "ex": "Je me couche vers vingt-trois heures."
+     }
+    ],
+    "gram": "Verbe pronominal : pronom réfléchi + verbe. Je me lève, je m'habille (m' devant voyelle), je me couche à vingt-deux heures."
+   }
+  },
+  {
+   "d": 48,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Reflexive verbs in practice",
+     "g": "Conjugate reflexive verbs for every person and tell your morning step by step.",
+     "p": [
+      "The reflexive pronoun matches the subject: je me, tu te, il se, nous nous, vous vous, ils se.",
+      "Example: je me prépare, tu te prépares, elle se prépare, nous nous préparons, vous vous préparez, ils se préparent.",
+      "Link steps with d'abord (first), ensuite (then), puis (next) and enfin (finally)."
+     ],
+     "q": "Tell me your morning in four steps with d'abord, ensuite, puis and enfin.",
+     "c": "Describe a family member's morning in French using il se or elle se three times."
+    },
+    "de": {
+     "t": "Reflexive Verben in der Praxis",
+     "g": "Du konjugierst reflexive Verben für alle Personen und erzählst deinen Morgen Schritt für Schritt.",
+     "p": [
+      "Das Reflexivpronomen passt sich an: je me, tu te, il se, nous nous, vous vous, ils se.",
+      "Beispiel: je me prépare, tu te prépares, elle se prépare, nous nous préparons, vous vous préparez, ils se préparent.",
+      "Verbinde die Schritte mit d'abord (zuerst), ensuite (dann), puis (danach) und enfin (schließlich)."
+     ],
+     "q": "Erzähl mir deinen Morgen in vier Schritten mit d'abord, ensuite, puis und enfin.",
+     "c": "Beschreib den Morgen eines Familienmitglieds auf Französisch und nutze dreimal il se oder elle se."
+    },
+    "es": {
+     "t": "Verbos reflexivos en práctica",
+     "g": "Conjuga los verbos reflexivos en todas las personas y cuenta tu mañana paso a paso.",
+     "p": [
+      "El pronombre concuerda con el sujeto: je me, tu te, il se, nous nous, vous vous, ils se.",
+      "Ejemplo: je me prépare, tu te prépares, elle se prépare, nous nous préparons, vous vous préparez, ils se préparent.",
+      "Enlaza los pasos con d'abord (primero), ensuite (luego), puis (después) y enfin (por último)."
+     ],
+     "q": "Cuéntame tu mañana en cuatro pasos con d'abord, ensuite, puis y enfin.",
+     "c": "Describe en francés la mañana de un familiar usando il se o elle se tres veces."
+    },
+    "fr": {
+     "t": "Les verbes pronominaux en pratique",
+     "g": "Conjuguer les verbes pronominaux à toutes les personnes et raconter sa matinée.",
+     "p": [
+      "Le pronom s'accorde avec le sujet : je me, tu te, il se, nous nous, vous vous, ils se.",
+      "Exemple : je me prépare, tu te prépares, nous nous préparons, vous vous préparez, ils se préparent.",
+      "On enchaîne les étapes avec d'abord, ensuite, puis et enfin."
+     ],
+     "q": "Raconte-moi ta matinée en quatre étapes avec d'abord, ensuite, puis et enfin.",
+     "c": "Décris la matinée d'un proche en utilisant il se ou elle se trois fois."
+    },
+    "it": {
+     "t": "I verbi riflessivi in pratica",
+     "g": "Coniuga i verbi riflessivi per tutte le persone e racconta la tua mattina passo dopo passo.",
+     "p": [
+      "Il pronome si accorda con il soggetto: je me, tu te, il se, nous nous, vous vous, ils se.",
+      "Esempio: je me prépare, tu te prépares, elle se prépare, nous nous préparons, vous vous préparez, ils se préparent.",
+      "Collega i passi con d'abord (prima), ensuite (poi), puis (dopo) ed enfin (infine)."
+     ],
+     "q": "Raccontami la tua mattina in quattro passi con d'abord, ensuite, puis ed enfin.",
+     "c": "Descrivi in francese la mattina di un familiare usando il se o elle se tre volte."
+    },
+    "pt": {
+     "t": "Verbos reflexos na prática",
+     "g": "Conjugar os verbos reflexos em todas as pessoas e contar a tua manhã passo a passo.",
+     "p": [
+      "O pronome concorda com o sujeito: je me, tu te, il se, nous nous, vous vous, ils se.",
+      "Exemplo: je me prépare, tu te prépares, elle se prépare, nous nous préparons, vous vous préparez, ils se préparent.",
+      "Liga os passos com d'abord (primeiro), ensuite (depois), puis (a seguir) e enfin (por fim)."
+     ],
+     "q": "Conta-me a tua manhã em quatro passos com d'abord, ensuite, puis e enfin.",
+     "c": "Descreve em francês a manhã de um familiar usando il se ou elle se três vezes."
+    },
+    "pt_BR": {
+     "t": "Verbos reflexivos na prática",
+     "g": "Conjugar os verbos reflexivos em todas as pessoas e contar sua manhã passo a passo.",
+     "p": [
+      "O pronome concorda com o sujeito: je me, tu te, il se, nous nous, vous vous, ils se.",
+      "Exemplo: je me prépare, tu te prépares, elle se prépare, nous nous préparons, vous vous préparez, ils se préparent.",
+      "Ligue os passos com d'abord (primeiro), ensuite (depois), puis (em seguida) e enfin (por fim)."
+     ],
+     "q": "Me conte sua manhã em quatro passos com d'abord, ensuite, puis e enfin.",
+     "c": "Descreva em francês a manhã de um parente usando il se ou elle se três vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se préparer",
+      "ex": "Nous nous préparons pour le travail."
+     },
+     {
+      "w": "se doucher",
+      "ex": "Il se douche le matin."
+     },
+     {
+      "w": "se dépêcher",
+      "ex": "Dépêche-toi, on est en retard !"
+     },
+     {
+      "w": "d'abord",
+      "ex": "D'abord, je me lève."
+     },
+     {
+      "w": "ensuite",
+      "ex": "Ensuite, je prends mon petit-déjeuner."
+     },
+     {
+      "w": "enfin",
+      "ex": "Enfin, je pars au travail."
+     }
+    ],
+    "gram": "Pronoms réfléchis : je me, tu te, il/elle/on se, nous nous, vous vous, ils/elles se. D'abord, ensuite, puis, enfin."
+   }
+  },
+  {
+   "d": 49,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Clothes",
+     "g": "Name everyday clothes in French and say what you are wearing.",
+     "p": [
+      "Key items: un pantalon (trousers), un jean, une robe, une jupe, une chemise, un pull, une veste, un manteau.",
+      "Feet and extras: des chaussures, des baskets (trainers), des chaussettes, un chapeau, une écharpe.",
+      "Say what you wear with porter: je porte un jean et un pull bleu; and put on is mettre: je mets ma veste."
+     ],
+     "q": "What are you wearing right now? Describe it in French with colours.",
+     "c": "Describe your outfit today in French in two sentences, with at least one colour that agrees."
+    },
+    "de": {
+     "t": "Kleidung",
+     "g": "Du benennst alltägliche Kleidung auf Französisch und sagst, was du trägst.",
+     "p": [
+      "Wichtige Teile: un pantalon (Hose), un jean, une robe (Kleid), une jupe, une chemise, un pull, une veste, un manteau.",
+      "Füße und Extras: des chaussures, des baskets (Turnschuhe), des chaussettes, un chapeau, une écharpe.",
+      "Was man trägt, sagt man mit porter: je porte un jean et un pull bleu; anziehen ist mettre: je mets ma veste."
+     ],
+     "q": "Was trägst du gerade? Beschreib es auf Französisch mit Farben.",
+     "c": "Beschreib dein heutiges Outfit in zwei französischen Sätzen, mit mindestens einer angeglichenen Farbe."
+    },
+    "es": {
+     "t": "La ropa",
+     "g": "Nombra la ropa de diario en francés y di lo que llevas puesto.",
+     "p": [
+      "Prendas clave: un pantalon, un jean, une robe (vestido), une jupe (falda), une chemise, un pull, une veste, un manteau.",
+      "Pies y extras: des chaussures, des baskets (zapatillas), des chaussettes, un chapeau, une écharpe (bufanda).",
+      "Para decir qué llevas se usa porter: je porte un jean et un pull bleu; ponerse es mettre: je mets ma veste."
+     ],
+     "q": "¿Qué llevas puesto ahora? Descríbelo en francés con colores.",
+     "c": "Describe tu ropa de hoy en dos frases en francés, con al menos un color que concuerde."
+    },
+    "fr": {
+     "t": "Les vêtements",
+     "g": "Nommer les vêtements du quotidien et dire ce qu'on porte.",
+     "p": [
+      "Les essentiels : un pantalon, un jean, une robe, une jupe, une chemise, un pull, une veste, un manteau.",
+      "Les pieds et les accessoires : des chaussures, des baskets, des chaussettes, un chapeau, une écharpe.",
+      "On dit ce qu'on porte avec porter : je porte un jean et un pull bleu ; on enfile avec mettre : je mets ma veste."
+     ],
+     "q": "Qu'est-ce que tu portes en ce moment ? Décris-le avec des couleurs.",
+     "c": "Décris ta tenue du jour en deux phrases, avec au moins une couleur accordée."
+    },
+    "it": {
+     "t": "I vestiti",
+     "g": "Nomina i vestiti di tutti i giorni in francese e di' cosa indossi.",
+     "p": [
+      "Capi chiave: un pantalon, un jean, une robe (vestito), une jupe (gonna), une chemise, un pull, une veste, un manteau.",
+      "Piedi e accessori: des chaussures, des baskets (scarpe da ginnastica), des chaussettes, un chapeau, une écharpe.",
+      "Per dire cosa indossi si usa porter: je porte un jean et un pull bleu; mettersi è mettre: je mets ma veste."
+     ],
+     "q": "Cosa indossi in questo momento? Descrivilo in francese con i colori.",
+     "c": "Descrivi il tuo look di oggi in due frasi in francese, con almeno un colore accordato."
+    },
+    "pt": {
+     "t": "A roupa",
+     "g": "Dizer as peças de roupa do dia a dia em francês e o que tens vestido.",
+     "p": [
+      "Peças-chave: un pantalon (calças), un jean, une robe (vestido), une jupe (saia), une chemise, un pull, une veste, un manteau.",
+      "Pés e acessórios: des chaussures, des baskets (ténis), des chaussettes, un chapeau, une écharpe (cachecol).",
+      "Para dizer o que vestes usa-se porter: je porte un jean et un pull bleu; vestir é mettre: je mets ma veste."
+     ],
+     "q": "O que tens vestido agora? Descreve-o em francês com cores.",
+     "c": "Descreve a tua roupa de hoje em duas frases em francês, com pelo menos uma cor concordada."
+    },
+    "pt_BR": {
+     "t": "Roupas",
+     "g": "Dizer as roupas do dia a dia em francês e o que você está vestindo.",
+     "p": [
+      "Peças-chave: un pantalon (calça), un jean, une robe (vestido), une jupe (saia), une chemise, un pull, une veste, un manteau.",
+      "Pés e acessórios: des chaussures, des baskets (tênis), des chaussettes (meias), un chapeau, une écharpe.",
+      "Para dizer o que veste se usa porter: je porte un jean et un pull bleu; colocar é mettre: je mets ma veste."
+     ],
+     "q": "O que você está vestindo agora? Descreva em francês com cores.",
+     "c": "Descreva sua roupa de hoje em duas frases em francês, com pelo menos uma cor concordando."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un pantalon",
+      "ex": "Je porte un pantalon noir."
+     },
+     {
+      "w": "une robe",
+      "ex": "Elle a une jolie robe rouge."
+     },
+     {
+      "w": "un pull",
+      "ex": "Mets un pull, il fait froid !"
+     },
+     {
+      "w": "une veste",
+      "ex": "Ta veste est très élégante."
+     },
+     {
+      "w": "des chaussures",
+      "ex": "J'ai besoin de nouvelles chaussures."
+     },
+     {
+      "w": "porter",
+      "ex": "Aujourd'hui, je porte une chemise blanche."
+     }
+    ],
+    "gram": "Porter = avoir sur soi (je porte un jean). Mettre = enfiler (je mets mon manteau). La couleur s'accorde : une robe verte."
+   }
+  },
+  {
+   "d": 50,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Shopping for clothes",
+     "g": "Shop for clothes in French: sizes, colours and trying things on.",
+     "p": [
+      "Ask je peux essayer? (can I try it on?) and look for les cabines (fitting rooms).",
+      "Size is la taille (and la pointure for shoes): je fais du M, je fais du 38; vous avez la taille au-dessus?",
+      "Give feedback: c'est trop grand, trop petit, ça me va bien (it suits me); je le prends means I'll take it."
+     ],
+     "q": "You love a jacket but it is too small. What do you say to the shop assistant?",
+     "c": "Role-play buying a piece of clothing out loud: ask to try it, comment on the size and decide."
+    },
+    "de": {
+     "t": "Kleidung kaufen",
+     "g": "Du kaufst auf Französisch Kleidung: Größen, Farben und Anprobieren.",
+     "p": [
+      "Frag je peux essayer? (kann ich das anprobieren?) und such les cabines (Umkleidekabinen).",
+      "Größe heißt la taille (bei Schuhen la pointure): je fais du M, je fais du 38; vous avez la taille au-dessus?",
+      "Gib Rückmeldung: c'est trop grand, trop petit, ça me va bien (steht mir); je le prends heißt ich nehme es."
+     ],
+     "q": "Du liebst eine Jacke, aber sie ist zu klein. Was sagst du zur Verkäuferin?",
+     "c": "Spiel laut einen Kleidungskauf durch: anprobieren, die Größe kommentieren und dich entscheiden."
+    },
+    "es": {
+     "t": "Comprar ropa",
+     "g": "Compra ropa en francés: tallas, colores y probarse cosas.",
+     "p": [
+      "Pregunta je peux essayer? (¿puedo probármelo?) y busca les cabines (los probadores).",
+      "La talla es la taille (y el número de zapato la pointure): je fais du M, je fais du 38; vous avez la taille au-dessus?",
+      "Opina: c'est trop grand, trop petit, ça me va bien (me queda bien); je le prends significa me lo llevo."
+     ],
+     "q": "Te encanta una chaqueta, pero te queda pequeña. ¿Qué le dices al dependiente?",
+     "c": "Representa en voz alta la compra de una prenda: pide probártela, comenta la talla y decide."
+    },
+    "fr": {
+     "t": "Acheter des vêtements",
+     "g": "Faire du shopping : tailles, couleurs et essayage.",
+     "p": [
+      "On demande je peux essayer ? et on cherche les cabines d'essayage.",
+      "La taille pour les vêtements, la pointure pour les chaussures : je fais du M, je chausse du 38.",
+      "On réagit : c'est trop grand, trop petit, ça me va bien ; pour acheter : je le prends."
+     ],
+     "q": "Tu adores une veste, mais elle est trop petite. Que dis-tu au vendeur ?",
+     "c": "Joue un achat de vêtement à voix haute : demande à essayer, commente la taille et décide."
+    },
+    "it": {
+     "t": "Comprare vestiti",
+     "g": "Compra vestiti in francese: taglie, colori e prove in camerino.",
+     "p": [
+      "Chiedi je peux essayer? (posso provarlo?) e cerca les cabines (i camerini).",
+      "La taglia è la taille (per le scarpe la pointure): je fais du M, je fais du 38; vous avez la taille au-dessus?",
+      "Commenta: c'est trop grand, trop petit, ça me va bien (mi sta bene); je le prends significa lo prendo."
+     ],
+     "q": "Ti piace molto una giacca, ma è troppo piccola. Cosa dici al commesso?",
+     "c": "Recita ad alta voce l'acquisto di un capo: chiedi di provarlo, commenta la taglia e decidi."
+    },
+    "pt": {
+     "t": "Comprar roupa",
+     "g": "Comprar roupa em francês: tamanhos, cores e provar.",
+     "p": [
+      "Pergunta je peux essayer? (posso experimentar?) e procura les cabines (os provadores).",
+      "O tamanho é la taille (e o número do sapato la pointure): je fais du M, je fais du 38; vous avez la taille au-dessus?",
+      "Comenta: c'est trop grand, trop petit, ça me va bien (fica-me bem); je le prends quer dizer levo-o."
+     ],
+     "q": "Adoras um casaco, mas é pequeno demais. O que dizes ao empregado?",
+     "c": "Representa em voz alta a compra de uma peça: pede para experimentar, comenta o tamanho e decide."
+    },
+    "pt_BR": {
+     "t": "Comprando roupa",
+     "g": "Comprar roupa em francês: tamanhos, cores e provador.",
+     "p": [
+      "Pergunte je peux essayer? (posso experimentar?) e procure les cabines (os provadores).",
+      "O tamanho é la taille (e o número do sapato la pointure): je fais du M, je fais du 38; vous avez la taille au-dessus?",
+      "Comente: c'est trop grand, trop petit, ça me va bien (ficou bom em mim); je le prends quer dizer vou levar."
+     ],
+     "q": "Você amou uma jaqueta, mas ela ficou pequena. O que diz ao vendedor?",
+     "c": "Encene em voz alta a compra de uma roupa: peça para experimentar, comente o tamanho e decida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Je peux essayer ?",
+      "ex": "Je peux essayer ce pantalon ?"
+     },
+     {
+      "w": "la taille",
+      "ex": "Vous avez une taille plus petite ?"
+     },
+     {
+      "w": "la cabine d'essayage",
+      "ex": "Les cabines d'essayage sont au fond."
+     },
+     {
+      "w": "trop grand",
+      "ex": "Ce manteau est trop grand."
+     },
+     {
+      "w": "ça me va bien",
+      "ex": "Cette couleur me va bien."
+     },
+     {
+      "w": "je le prends",
+      "ex": "Parfait, je le prends !"
+     }
+    ],
+    "gram": "Essayer un vêtement : je peux essayer ? Taille / pointure. Ça me va (bien). Je le prends (m.) / je la prends (f.)."
+   }
+  }
+ ]
+}

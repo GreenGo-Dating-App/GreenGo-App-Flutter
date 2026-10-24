@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 101,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Imparfait for descriptions",
+     "g": "Use the imparfait to describe your childhood, past habits and scenes.",
+     "p": [
+      "Habits: quand j'étais petit, je jouais au foot tous les jours; le dimanche, nous allions chez mes grands-parents.",
+      "Descriptions: la maison était grande, il faisait beau, ma grand-mère avait les cheveux blancs.",
+      "Typical signals: quand j'étais petit, avant, d'habitude, souvent, tous les étés, à cette époque."
+     ],
+     "q": "What did you like to do when you were a child? Answer in French with quand j'étais petit or petite.",
+     "c": "Write four French sentences about your childhood home and habits using the imparfait."
+    },
+    "de": {
+     "t": "Imparfait für Beschreibungen",
+     "g": "Du beschreibst mit dem Imparfait deine Kindheit, frühere Gewohnheiten und Szenen.",
+     "p": [
+      "Gewohnheiten: quand j'étais petit, je jouais au foot tous les jours; le dimanche, nous allions chez mes grands-parents.",
+      "Beschreibungen: la maison était grande, il faisait beau, ma grand-mère avait les cheveux blancs.",
+      "Typische Signale: quand j'étais petit, avant, d'habitude, souvent, tous les étés, à cette époque."
+     ],
+     "q": "Was hast du als Kind gern gemacht? Antworte mit quand j'étais petit oder petite.",
+     "c": "Schreib vier Sätze im Imparfait über dein Zuhause und deine Gewohnheiten als Kind."
+    },
+    "es": {
+     "t": "Imparfait para describir",
+     "g": "Usa el imparfait para describir tu infancia, hábitos pasados y escenas.",
+     "p": [
+      "Hábitos: quand j'étais petit, je jouais au foot tous les jours; le dimanche, nous allions chez mes grands-parents.",
+      "Descripciones: la maison était grande, il faisait beau, ma grand-mère avait les cheveux blancs.",
+      "Señales típicas: quand j'étais petit, avant, d'habitude, souvent, tous les étés, à cette époque."
+     ],
+     "q": "¿Qué te gustaba hacer de niño? Responde con quand j'étais petit o petite.",
+     "c": "Escribe cuatro frases en imparfait sobre la casa y las costumbres de tu infancia."
+    },
+    "fr": {
+     "t": "L'imparfait pour décrire",
+     "g": "Utiliser l'imparfait pour décrire ton enfance, tes habitudes passées et des scènes.",
+     "p": [
+      "Habitudes : quand j'étais petit, je jouais au foot tous les jours ; le dimanche, nous allions chez mes grands-parents.",
+      "Descriptions : la maison était grande, il faisait beau, ma grand-mère avait les cheveux blancs.",
+      "Mots typiques : quand j'étais petit, avant, d'habitude, souvent, tous les étés, à cette époque."
+     ],
+     "q": "Qu'est-ce que tu aimais faire quand tu étais petit ou petite ?",
+     "c": "Écris quatre phrases à l'imparfait sur la maison et les habitudes de ton enfance."
+    },
+    "it": {
+     "t": "Imparfait per descrivere",
+     "g": "Usa l'imparfait per descrivere l'infanzia, le abitudini passate e le scene.",
+     "p": [
+      "Abitudini: quand j'étais petit, je jouais au foot tous les jours; le dimanche, nous allions chez mes grands-parents.",
+      "Descrizioni: la maison était grande, il faisait beau, ma grand-mère avait les cheveux blancs.",
+      "Segnali tipici: quand j'étais petit, avant, d'habitude, souvent, tous les étés, à cette époque."
+     ],
+     "q": "Cosa ti piaceva fare da bambino? Rispondi con quand j'étais petit o petite.",
+     "c": "Scrivi quattro frasi all'imparfait sulla casa e sulle abitudini della tua infanzia."
+    },
+    "pt": {
+     "t": "Imparfait para descrever",
+     "g": "Usar o imparfait para descrever a infância, hábitos passados e cenas.",
+     "p": [
+      "Hábitos: quand j'étais petit, je jouais au foot tous les jours; le dimanche, nous allions chez mes grands-parents.",
+      "Descrições: la maison était grande, il faisait beau, ma grand-mère avait les cheveux blancs.",
+      "Sinais típicos: quand j'étais petit, avant, d'habitude, souvent, tous les étés, à cette époque."
+     ],
+     "q": "O que gostavas de fazer em criança? Responde com quand j'étais petit ou petite.",
+     "c": "Escreve quatro frases no imparfait sobre a casa e os hábitos da tua infância."
+    },
+    "pt_BR": {
+     "t": "Imparfait para descrever",
+     "g": "Usar o imparfait para descrever a infância, hábitos passados e cenas.",
+     "p": [
+      "Hábitos: quand j'étais petit, je jouais au foot tous les jours; le dimanche, nous allions chez mes grands-parents.",
+      "Descrições: la maison était grande, il faisait beau, ma grand-mère avait les cheveux blancs.",
+      "Sinais típicos: quand j'étais petit, avant, d'habitude, souvent, tous les étés, à cette époque."
+     ],
+     "q": "O que você gostava de fazer quando criança? Responda com quand j'étais petit ou petite.",
+     "c": "Escreva quatro frases no imparfait sobre a casa e os hábitos da sua infância."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quand j'étais petit(e)",
+      "ex": "Quand j'étais petite, j'adorais dessiner."
+     },
+     {
+      "w": "avant",
+      "ex": "Avant, j'habitais à la campagne."
+     },
+     {
+      "w": "tous les étés",
+      "ex": "Tous les étés, nous allions à la mer."
+     },
+     {
+      "w": "à cette époque",
+      "ex": "À cette époque, il n'y avait pas de portable."
+     },
+     {
+      "w": "souvent",
+      "ex": "Mon père chantait souvent dans la cuisine."
+     },
+     {
+      "w": "jouer à",
+      "ex": "Je jouais au ballon avec mes cousins."
+     }
+    ],
+    "gram": "Imparfait pour les habitudes (je jouais tous les jours) et les descriptions (il faisait beau, la maison était grande)."
+   }
+  },
+  {
+   "d": 102,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Passé composé or imparfait?",
+     "g": "Choose between passé composé and imparfait to separate background from events.",
+     "p": [
+      "Imparfait sets the scene or tells what was going on: il pleuvait, j'étais fatigué, je regardais la télé.",
+      "Passé composé tells the event that happened: quand je suis sorti, le téléphone a sonné.",
+      "Together: il pleuvait quand je suis sorti; je lisais quand tu as appelé."
+     ],
+     "q": "What were you doing yesterday at eight in the evening, and did anything happen? Answer in French.",
+     "c": "Write three French sentences that mix a background in imparfait and an event in passé composé."
+    },
+    "de": {
+     "t": "Passé composé oder imparfait?",
+     "g": "Du wählst zwischen Passé composé und Imparfait, um Hintergrund und Ereignis zu trennen.",
+     "p": [
+      "Imparfait beschreibt die Szene oder was gerade lief: il pleuvait, j'étais fatigué, je regardais la télé.",
+      "Passé composé erzählt das Ereignis: quand je suis sorti, le téléphone a sonné.",
+      "Zusammen: il pleuvait quand je suis sorti; je lisais quand tu as appelé."
+     ],
+     "q": "Was hast du gestern um acht Uhr abends gemacht, und ist etwas passiert? Antworte auf Französisch.",
+     "c": "Schreib drei Sätze mit einem Hintergrund im Imparfait und einem Ereignis im Passé composé."
+    },
+    "es": {
+     "t": "¿Passé composé o imparfait?",
+     "g": "Elige entre passé composé e imparfait para separar el fondo de los hechos.",
+     "p": [
+      "El imparfait pinta la escena o lo que estaba pasando: il pleuvait, j'étais fatigué, je regardais la télé.",
+      "El passé composé cuenta el hecho: quand je suis sorti, le téléphone a sonné.",
+      "Juntos: il pleuvait quand je suis sorti; je lisais quand tu as appelé."
+     ],
+     "q": "¿Qué hacías ayer a las ocho de la tarde y pasó algo? Responde en francés.",
+     "c": "Escribe tres frases que mezclen un fondo en imparfait y un hecho en passé composé."
+    },
+    "fr": {
+     "t": "Passé composé ou imparfait ?",
+     "g": "Choisir entre passé composé et imparfait : le décor et les événements.",
+     "p": [
+      "L'imparfait pose le décor ou une action en cours : il pleuvait, j'étais fatigué, je regardais la télé.",
+      "Le passé composé raconte l'événement : quand je suis sorti, le téléphone a sonné.",
+      "Ensemble : il pleuvait quand je suis sorti ; je lisais quand tu as appelé."
+     ],
+     "q": "Qu'est-ce que tu faisais hier à vingt heures, et qu'est-ce qui s'est passé ?",
+     "c": "Écris trois phrases qui mélangent un décor à l'imparfait et un événement au passé composé."
+    },
+    "it": {
+     "t": "Passé composé o imparfait?",
+     "g": "Scegli tra passé composé e imparfait per separare lo sfondo dagli eventi.",
+     "p": [
+      "L'imparfait descrive la scena o ciò che stava succedendo: il pleuvait, j'étais fatigué, je regardais la télé.",
+      "Il passé composé racconta l'evento: quand je suis sorti, le téléphone a sonné.",
+      "Insieme: il pleuvait quand je suis sorti; je lisais quand tu as appelé. Come in italiano!"
+     ],
+     "q": "Cosa facevi ieri alle otto di sera, ed è successo qualcosa? Rispondi in francese.",
+     "c": "Scrivi tre frasi che uniscano uno sfondo all'imparfait e un evento al passé composé."
+    },
+    "pt": {
+     "t": "Passé composé ou imparfait?",
+     "g": "Escolher entre passé composé e imparfait para separar o cenário dos acontecimentos.",
+     "p": [
+      "O imparfait descreve o cenário ou o que estava a acontecer: il pleuvait, j'étais fatigué, je regardais la télé.",
+      "O passé composé conta o acontecimento: quand je suis sorti, le téléphone a sonné.",
+      "Juntos: il pleuvait quand je suis sorti; je lisais quand tu as appelé."
+     ],
+     "q": "O que estavas a fazer ontem às oito da noite, e aconteceu alguma coisa? Responde em francês.",
+     "c": "Escreve três frases que juntem um cenário no imparfait e um acontecimento no passé composé."
+    },
+    "pt_BR": {
+     "t": "Passé composé ou imparfait?",
+     "g": "Escolher entre passé composé e imparfait para separar o cenário dos acontecimentos.",
+     "p": [
+      "O imparfait descreve o cenário ou o que estava acontecendo: il pleuvait, j'étais fatigué, je regardais la télé.",
+      "O passé composé conta o acontecimento: quand je suis sorti, le téléphone a sonné.",
+      "Juntos: il pleuvait quand je suis sorti; je lisais quand tu as appelé."
+     ],
+     "q": "O que você estava fazendo ontem às oito da noite, e aconteceu alguma coisa? Responda em francês.",
+     "c": "Escreva três frases que juntem um cenário no imparfait e um acontecimento no passé composé."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il pleuvait",
+      "ex": "Il pleuvait quand je suis arrivé."
+     },
+     {
+      "w": "quand",
+      "ex": "Je dormais quand tu as téléphoné."
+     },
+     {
+      "w": "soudain",
+      "ex": "Soudain, le chat a sauté sur la table."
+     },
+     {
+      "w": "pendant que",
+      "ex": "Pendant que je cuisinais, il est rentré."
+     },
+     {
+      "w": "tout à coup",
+      "ex": "Tout à coup, la lumière s'est éteinte."
+     },
+     {
+      "w": "sonner",
+      "ex": "Le téléphone a sonné à minuit."
+     }
+    ],
+    "gram": "Imparfait = décor, action en cours (je lisais) ; passé composé = événement ponctuel (tu as appelé). Soudain, tout à coup → PC."
+   }
+  },
+  {
+   "d": 103,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Telling a childhood memory",
+     "g": "Tell a personal childhood memory by combining imparfait and passé composé.",
+     "p": [
+      "Set the scene in the imparfait: j'avais huit ans, c'était l'été, nous étions chez ma tante.",
+      "Tell what happened in the passé composé: un jour, j'ai trouvé un petit chat; nous l'avons gardé.",
+      "End with your feelings: j'étais très heureux, c'est un très bon souvenir."
+     ],
+     "q": "Tell me a happy memory from your childhood in French, in four or five sentences.",
+     "c": "Write a short childhood memory in French: two sentences of scene, two of events, one feeling."
+    },
+    "de": {
+     "t": "Eine Kindheitserinnerung erzählen",
+     "g": "Du erzählst eine Erinnerung aus deiner Kindheit mit Imparfait und Passé composé.",
+     "p": [
+      "Szene im Imparfait: j'avais huit ans, c'était l'été, nous étions chez ma tante.",
+      "Was passierte, im Passé composé: un jour, j'ai trouvé un petit chat; nous l'avons gardé.",
+      "Ende mit deinen Gefühlen: j'étais très heureux, c'est un très bon souvenir."
+     ],
+     "q": "Erzähl mir auf Französisch in vier oder fünf Sätzen eine schöne Kindheitserinnerung.",
+     "c": "Schreib eine kurze Erinnerung: zwei Sätze Szene, zwei Sätze Ereignisse, ein Gefühl."
+    },
+    "es": {
+     "t": "Contar un recuerdo de infancia",
+     "g": "Cuenta un recuerdo personal de tu infancia combinando imparfait y passé composé.",
+     "p": [
+      "Pinta la escena en imparfait: j'avais huit ans, c'était l'été, nous étions chez ma tante.",
+      "Cuenta lo que pasó en passé composé: un jour, j'ai trouvé un petit chat; nous l'avons gardé.",
+      "Termina con tus sentimientos: j'étais très heureux, c'est un très bon souvenir."
+     ],
+     "q": "Cuéntame en francés un recuerdo feliz de tu infancia, en cuatro o cinco frases.",
+     "c": "Escribe un recuerdo corto: dos frases de escena, dos de hechos y un sentimiento."
+    },
+    "fr": {
+     "t": "Raconter un souvenir d'enfance",
+     "g": "Raconter un souvenir d'enfance en combinant imparfait et passé composé.",
+     "p": [
+      "Le décor à l'imparfait : j'avais huit ans, c'était l'été, nous étions chez ma tante.",
+      "Les événements au passé composé : un jour, j'ai trouvé un petit chat ; nous l'avons gardé.",
+      "Termine par tes sentiments : j'étais très heureux, c'est un très bon souvenir."
+     ],
+     "q": "Raconte-moi un souvenir heureux de ton enfance en quatre ou cinq phrases.",
+     "c": "Écris un petit souvenir : deux phrases de décor, deux d'événements et un sentiment."
+    },
+    "it": {
+     "t": "Raccontare un ricordo d'infanzia",
+     "g": "Racconta un ricordo della tua infanzia unendo imparfait e passé composé.",
+     "p": [
+      "La scena all'imparfait: j'avais huit ans, c'était l'été, nous étions chez ma tante.",
+      "Cosa è successo al passé composé: un jour, j'ai trouvé un petit chat; nous l'avons gardé.",
+      "Chiudi con i sentimenti: j'étais très heureux, c'est un très bon souvenir."
+     ],
+     "q": "Raccontami in francese un ricordo felice della tua infanzia, in quattro o cinque frasi.",
+     "c": "Scrivi un breve ricordo: due frasi di scena, due di eventi e un sentimento."
+    },
+    "pt": {
+     "t": "Contar uma memória de infância",
+     "g": "Contar uma memória da tua infância juntando imparfait e passé composé.",
+     "p": [
+      "O cenário no imparfait: j'avais huit ans, c'était l'été, nous étions chez ma tante.",
+      "O que aconteceu no passé composé: un jour, j'ai trouvé un petit chat; nous l'avons gardé.",
+      "Termina com os sentimentos: j'étais très heureux, c'est un très bon souvenir."
+     ],
+     "q": "Conta-me em francês uma memória feliz da tua infância, em quatro ou cinco frases.",
+     "c": "Escreve uma pequena memória: duas frases de cenário, duas de acontecimentos e um sentimento."
+    },
+    "pt_BR": {
+     "t": "Contar uma lembrança de infância",
+     "g": "Contar uma lembrança da sua infância juntando imparfait e passé composé.",
+     "p": [
+      "O cenário no imparfait: j'avais huit ans, c'était l'été, nous étions chez ma tante.",
+      "O que aconteceu no passé composé: un jour, j'ai trouvé un petit chat; nous l'avons gardé.",
+      "Termine com os sentimentos: j'étais très heureux, c'est un très bon souvenir."
+     ],
+     "q": "Me conte em francês uma lembrança feliz da sua infância, em quatro ou cinco frases.",
+     "c": "Escreva uma pequena lembrança: duas frases de cenário, duas de acontecimentos e um sentimento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un souvenir",
+      "ex": "C'est mon meilleur souvenir d'enfance."
+     },
+     {
+      "w": "j'avais... ans",
+      "ex": "J'avais sept ans et j'étais en vacances."
+     },
+     {
+      "w": "un jour",
+      "ex": "Un jour, mon grand-père m'a appris à nager."
+     },
+     {
+      "w": "c'était",
+      "ex": "C'était un après-midi d'été."
+     },
+     {
+      "w": "se souvenir de",
+      "ex": "Je me souviens bien de cette journée."
+     },
+     {
+      "w": "heureux, heureuse",
+      "ex": "Nous étions très heureux ce jour-là."
+     }
+    ],
+    "gram": "Récit : imparfait pour le cadre (j'avais huit ans, il faisait beau) + passé composé pour les faits (un jour, j'ai trouvé...)."
+   }
+  },
+  {
+   "d": 104,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "The pronoun y",
+     "g": "Use y to replace a place or à + a thing.",
+     "p": [
+      "Y replaces a place introduced by à, en, chez, dans: tu vas à Paris? Oui, j'y vais.",
+      "Y also replaces à + a thing or idea: tu penses à ton voyage? Oui, j'y pense.",
+      "It goes before the verb: j'y vais, je n'y vais pas; in the passé composé: j'y suis allé."
+     ],
+     "q": "Do you often go to the cinema? Answer in French with y: oui, j'y vais... or non, je n'y vais pas...",
+     "c": "Answer three French questions about places in your life using y, like tu vas au travail en bus?"
+    },
+    "de": {
+     "t": "Das Pronomen y",
+     "g": "Du benutzt y, um einen Ort oder à + Sache zu ersetzen.",
+     "p": [
+      "Y ersetzt einen Ort mit à, en, chez, dans: tu vas à Paris? Oui, j'y vais.",
+      "Y ersetzt auch à + Sache oder Idee: tu penses à ton voyage? Oui, j'y pense.",
+      "Es steht vor dem Verb: j'y vais, je n'y vais pas; im Passé composé: j'y suis allé."
+     ],
+     "q": "Gehst du oft ins Kino? Antworte mit y: oui, j'y vais... oder non, je n'y vais pas...",
+     "c": "Beantworte drei Fragen über Orte in deinem Leben mit y, z. B. tu vas au travail en bus?"
+    },
+    "es": {
+     "t": "El pronombre y",
+     "g": "Usa y para sustituir un lugar o à + cosa.",
+     "p": [
+      "Y sustituye un lugar con à, en, chez, dans: tu vas à Paris? Oui, j'y vais.",
+      "Y también sustituye à + cosa o idea: tu penses à ton voyage? Oui, j'y pense.",
+      "Va antes del verbo: j'y vais, je n'y vais pas; en passé composé: j'y suis allé."
+     ],
+     "q": "¿Vas a menudo al cine? Responde con y: oui, j'y vais... o non, je n'y vais pas...",
+     "c": "Responde tres preguntas sobre lugares de tu vida con y, como tu vas au travail en bus?"
+    },
+    "fr": {
+     "t": "Le pronom y",
+     "g": "Utiliser y pour remplacer un lieu ou à + une chose.",
+     "p": [
+      "Y remplace un lieu avec à, en, chez, dans : tu vas à Paris ? Oui, j'y vais.",
+      "Y remplace aussi à + une chose ou une idée : tu penses à ton voyage ? Oui, j'y pense.",
+      "Il se place avant le verbe : j'y vais, je n'y vais pas ; au passé composé : j'y suis allé."
+     ],
+     "q": "Tu vas souvent au cinéma ? Réponds avec y.",
+     "c": "Réponds à trois questions sur les lieux de ta vie avec y, comme tu vas au travail en bus ?"
+    },
+    "it": {
+     "t": "Il pronome y",
+     "g": "Usa y per sostituire un luogo o à + cosa.",
+     "p": [
+      "Y sostituisce un luogo con à, en, chez, dans: tu vas à Paris? Oui, j'y vais. Come il ci italiano!",
+      "Y sostituisce anche à + cosa o idea: tu penses à ton voyage? Oui, j'y pense.",
+      "Va prima del verbo: j'y vais, je n'y vais pas; nel passé composé: j'y suis allé."
+     ],
+     "q": "Vai spesso al cinema? Rispondi con y: oui, j'y vais... o non, je n'y vais pas...",
+     "c": "Rispondi a tre domande sui luoghi della tua vita con y, come tu vas au travail en bus?"
+    },
+    "pt": {
+     "t": "O pronome y",
+     "g": "Usar y para substituir um lugar ou à + coisa.",
+     "p": [
+      "Y substitui um lugar com à, en, chez, dans: tu vas à Paris? Oui, j'y vais.",
+      "Y também substitui à + coisa ou ideia: tu penses à ton voyage? Oui, j'y pense.",
+      "Vem antes do verbo: j'y vais, je n'y vais pas; no passé composé: j'y suis allé."
+     ],
+     "q": "Vais muitas vezes ao cinema? Responde com y: oui, j'y vais... ou non, je n'y vais pas...",
+     "c": "Responde a três perguntas sobre lugares da tua vida com y, como tu vas au travail en bus?"
+    },
+    "pt_BR": {
+     "t": "O pronome y",
+     "g": "Usar y para substituir um lugar ou à + coisa.",
+     "p": [
+      "Y substitui um lugar com à, en, chez, dans: tu vas à Paris? Oui, j'y vais.",
+      "Y também substitui à + coisa ou ideia: tu penses à ton voyage? Oui, j'y pense.",
+      "Vem antes do verbo: j'y vais, je n'y vais pas; no passé composé: j'y suis allé."
+     ],
+     "q": "Você vai muito ao cinema? Responda com y: oui, j'y vais... ou non, je n'y vais pas...",
+     "c": "Responda três perguntas sobre lugares da sua vida com y, como tu vas au travail en bus?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "j'y vais",
+      "ex": "La piscine ? J'y vais le mardi."
+     },
+     {
+      "w": "je n'y vais pas",
+      "ex": "Le stade ? Je n'y vais jamais."
+     },
+     {
+      "w": "j'y suis allé(e)",
+      "ex": "Rome ? J'y suis allée l'an dernier."
+     },
+     {
+      "w": "penser à",
+      "ex": "Ton anniversaire ? J'y pense !"
+     },
+     {
+      "w": "vas-y !",
+      "ex": "Tu veux essayer ? Vas-y !"
+     },
+     {
+      "w": "on y va ?",
+      "ex": "Le film commence. On y va ?"
+     }
+    ],
+    "gram": "Y remplace un lieu (à, en, chez, dans + lieu) ou à + chose : j'y vais, j'y pense, je n'y suis pas allé."
+   }
+  },
+  {
+   "d": 105,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "The pronoun en",
+     "g": "Use en to replace de + a thing and to talk about quantities.",
+     "p": [
+      "En replaces de, du, de la, des + noun: tu veux du café? Oui, j'en veux.",
+      "With numbers and quantities, keep the number at the end: tu as des frères? J'en ai deux. J'en ai beaucoup.",
+      "It also replaces de + a place: tu viens de la gare? Oui, j'en viens."
+     ],
+     "q": "How many brothers, sisters or cousins do you have? Answer in French with en: j'en ai...",
+     "c": "Answer three French questions about food and objects at home using en and a quantity."
+    },
+    "de": {
+     "t": "Das Pronomen en",
+     "g": "Du benutzt en, um de + Sache zu ersetzen und über Mengen zu sprechen.",
+     "p": [
+      "En ersetzt de, du, de la, des + Nomen: tu veux du café? Oui, j'en veux.",
+      "Bei Zahlen und Mengen bleibt die Zahl am Ende: tu as des frères? J'en ai deux. J'en ai beaucoup.",
+      "Es ersetzt auch de + Ort: tu viens de la gare? Oui, j'en viens."
+     ],
+     "q": "Wie viele Geschwister oder Cousins hast du? Antworte mit en: j'en ai...",
+     "c": "Beantworte drei Fragen über Essen und Dinge zu Hause mit en und einer Menge."
+    },
+    "es": {
+     "t": "El pronombre en",
+     "g": "Usa en para sustituir de + cosa y para hablar de cantidades.",
+     "p": [
+      "En sustituye de, du, de la, des + sustantivo: tu veux du café? Oui, j'en veux.",
+      "Con números y cantidades, el número va al final: tu as des frères? J'en ai deux. J'en ai beaucoup.",
+      "También sustituye de + lugar: tu viens de la gare? Oui, j'en viens."
+     ],
+     "q": "¿Cuántos hermanos o primos tienes? Responde con en: j'en ai...",
+     "c": "Responde tres preguntas sobre comida y objetos de casa con en y una cantidad."
+    },
+    "fr": {
+     "t": "Le pronom en",
+     "g": "Utiliser en pour remplacer de + une chose et parler des quantités.",
+     "p": [
+      "En remplace de, du, de la, des + nom : tu veux du café ? Oui, j'en veux.",
+      "Avec un nombre ou une quantité, on garde le nombre : tu as des frères ? J'en ai deux. J'en ai beaucoup.",
+      "En remplace aussi de + lieu : tu viens de la gare ? Oui, j'en viens."
+     ],
+     "q": "Combien de frères, de sœurs ou de cousins tu as ? Réponds avec en.",
+     "c": "Réponds à trois questions sur la nourriture et les objets chez toi avec en et une quantité."
+    },
+    "it": {
+     "t": "Il pronome en",
+     "g": "Usa en per sostituire de + cosa e per parlare di quantità.",
+     "p": [
+      "En sostituisce de, du, de la, des + nome: tu veux du café? Oui, j'en veux. Come il ne italiano!",
+      "Con numeri e quantità il numero resta alla fine: tu as des frères? J'en ai deux. J'en ai beaucoup.",
+      "Sostituisce anche de + luogo: tu viens de la gare? Oui, j'en viens."
+     ],
+     "q": "Quanti fratelli, sorelle o cugini hai? Rispondi con en: j'en ai...",
+     "c": "Rispondi a tre domande su cibo e oggetti di casa con en e una quantità."
+    },
+    "pt": {
+     "t": "O pronome en",
+     "g": "Usar en para substituir de + coisa e para falar de quantidades.",
+     "p": [
+      "En substitui de, du, de la, des + nome: tu veux du café? Oui, j'en veux.",
+      "Com números e quantidades, o número fica no fim: tu as des frères? J'en ai deux. J'en ai beaucoup.",
+      "Também substitui de + lugar: tu viens de la gare? Oui, j'en viens."
+     ],
+     "q": "Quantos irmãos ou primos tens? Responde com en: j'en ai...",
+     "c": "Responde a três perguntas sobre comida e objetos de casa com en e uma quantidade."
+    },
+    "pt_BR": {
+     "t": "O pronome en",
+     "g": "Usar en para substituir de + coisa e para falar de quantidades.",
+     "p": [
+      "En substitui de, du, de la, des + substantivo: tu veux du café? Oui, j'en veux.",
+      "Com números e quantidades, o número fica no fim: tu as des frères? J'en ai deux. J'en ai beaucoup.",
+      "Também substitui de + lugar: tu viens de la gare? Oui, j'en viens."
+     ],
+     "q": "Quantos irmãos ou primos você tem? Responda com en: j'en ai...",
+     "c": "Responda três perguntas sobre comida e objetos de casa com en e uma quantidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "j'en veux",
+      "ex": "Du gâteau ? Oui, j'en veux bien !"
+     },
+     {
+      "w": "j'en ai deux",
+      "ex": "Des enfants ? J'en ai deux."
+     },
+     {
+      "w": "il y en a",
+      "ex": "Des pommes ? Il y en a dans le panier."
+     },
+     {
+      "w": "je n'en ai pas",
+      "ex": "Du pain ? Je n'en ai plus."
+     },
+     {
+      "w": "beaucoup",
+      "ex": "Des livres ? J'en ai beaucoup."
+     },
+     {
+      "w": "un peu",
+      "ex": "Du lait ? J'en prends un peu."
+     }
+    ],
+    "gram": "En remplace de + nom (j'en veux) ; avec une quantité, on la répète : j'en ai trois, j'en ai beaucoup."
+   }
+  },
+  {
+   "d": 106,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Pronoun order",
+     "g": "Put two object pronouns together in the right order.",
+     "p": [
+      "Order before the verb: me, te, nous, vous come first, then le, la, les, then lui, leur, then y, then en.",
+      "Examples: je le lui donne (I give it to him), il me l'a dit, je vous les envoie.",
+      "Y and en always come last: il y en a, je lui en parle; in the passé composé the pronouns go before avoir: je le lui ai donné."
+     ],
+     "q": "Do you lend your books to friends? Answer in French with two pronouns: oui, je les leur prête.",
+     "c": "Rewrite three French sentences replacing both objects, like je donne le livre à Marie → je le lui donne."
+    },
+    "de": {
+     "t": "Reihenfolge der Pronomen",
+     "g": "Du setzt zwei Objektpronomen in die richtige Reihenfolge.",
+     "p": [
+      "Vor dem Verb: zuerst me, te, nous, vous, dann le, la, les, dann lui, leur, dann y, zuletzt en.",
+      "Beispiele: je le lui donne (ich gebe es ihm), il me l'a dit, je vous les envoie.",
+      "Y und en kommen immer zuletzt: il y en a, je lui en parle; im Passé composé vor avoir: je le lui ai donné."
+     ],
+     "q": "Leihst du Freunden deine Bücher? Antworte mit zwei Pronomen: oui, je les leur prête.",
+     "c": "Ersetze in drei Sätzen beide Objekte, z. B. je donne le livre à Marie → je le lui donne."
+    },
+    "es": {
+     "t": "El orden de los pronombres",
+     "g": "Coloca dos pronombres de objeto juntos en el orden correcto.",
+     "p": [
+      "Antes del verbo: primero me, te, nous, vous, luego le, la, les, después lui, leur, luego y, y al final en.",
+      "Ejemplos: je le lui donne (se lo doy), il me l'a dit, je vous les envoie.",
+      "Y y en siempre al final: il y en a, je lui en parle; en passé composé, antes de avoir: je le lui ai donné."
+     ],
+     "q": "¿Prestas tus libros a tus amigos? Responde con dos pronombres: oui, je les leur prête.",
+     "c": "Reescribe tres frases sustituyendo los dos objetos, como je donne le livre à Marie → je le lui donne."
+    },
+    "fr": {
+     "t": "L'ordre des pronoms",
+     "g": "Placer deux pronoms compléments dans le bon ordre.",
+     "p": [
+      "Avant le verbe : me, te, nous, vous, puis le, la, les, puis lui, leur, puis y, puis en.",
+      "Exemples : je le lui donne, il me l'a dit, je vous les envoie.",
+      "Y et en sont toujours à la fin : il y en a, je lui en parle ; au passé composé : je le lui ai donné."
+     ],
+     "q": "Tu prêtes tes livres à tes amis ? Réponds avec deux pronoms.",
+     "c": "Remplace les deux compléments dans trois phrases : je donne le livre à Marie → je le lui donne."
+    },
+    "it": {
+     "t": "L'ordine dei pronomi",
+     "g": "Metti due pronomi complemento insieme nell'ordine giusto.",
+     "p": [
+      "Prima del verbo: prima me, te, nous, vous, poi le, la, les, poi lui, leur, poi y, infine en.",
+      "Esempi: je le lui donne (glielo do), il me l'a dit, je vous les envoie.",
+      "Y ed en sempre alla fine: il y en a, je lui en parle; nel passé composé prima di avoir: je le lui ai donné."
+     ],
+     "q": "Presti i tuoi libri agli amici? Rispondi con due pronomi: oui, je les leur prête.",
+     "c": "Riscrivi tre frasi sostituendo i due complementi, come je donne le livre à Marie → je le lui donne."
+    },
+    "pt": {
+     "t": "A ordem dos pronomes",
+     "g": "Juntar dois pronomes complemento na ordem certa.",
+     "p": [
+      "Antes do verbo: primeiro me, te, nous, vous, depois le, la, les, depois lui, leur, depois y e por fim en.",
+      "Exemplos: je le lui donne (dou-lho), il me l'a dit, je vous les envoie.",
+      "Y e en ficam sempre no fim: il y en a, je lui en parle; no passé composé antes de avoir: je le lui ai donné."
+     ],
+     "q": "Emprestas os teus livros aos amigos? Responde com dois pronomes: oui, je les leur prête.",
+     "c": "Reescreve três frases substituindo os dois complementos, como je donne le livre à Marie → je le lui donne."
+    },
+    "pt_BR": {
+     "t": "A ordem dos pronomes",
+     "g": "Juntar dois pronomes de objeto na ordem certa.",
+     "p": [
+      "Antes do verbo: primeiro me, te, nous, vous, depois le, la, les, depois lui, leur, depois y e por fim en.",
+      "Exemplos: je le lui donne (eu dou para ele), il me l'a dit, je vous les envoie.",
+      "Y e en ficam sempre no fim: il y en a, je lui en parle; no passé composé antes de avoir: je le lui ai donné."
+     ],
+     "q": "Você empresta seus livros aos amigos? Responda com dois pronomes: oui, je les leur prête.",
+     "c": "Reescreva três frases trocando os dois objetos, como je donne le livre à Marie → je le lui donne."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je le lui donne",
+      "ex": "Le cadeau ? Je le lui donne ce soir."
+     },
+     {
+      "w": "il me l'a dit",
+      "ex": "La nouvelle ? Il me l'a dit hier."
+     },
+     {
+      "w": "je vous les envoie",
+      "ex": "Les photos ? Je vous les envoie demain."
+     },
+     {
+      "w": "il y en a",
+      "ex": "Des cafés ? Il y en a partout ici."
+     },
+     {
+      "w": "je lui en parle",
+      "ex": "Ton projet ? Je lui en parle demain."
+     },
+     {
+      "w": "prêter",
+      "ex": "Ton vélo ? Tu me le prêtes ?"
+     }
+    ],
+    "gram": "Ordre : me / te / nous / vous → le / la / les → lui / leur → y → en + verbe : je le lui donne, il y en a."
+   }
+  },
+  {
+   "d": 107,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Relative pronouns qui and que",
+     "g": "Join two sentences with qui and que to describe people and things.",
+     "p": [
+      "Qui is the subject of the next verb: l'homme qui parle est mon voisin (the man who is speaking).",
+      "Que is the object; a new subject follows: le livre que je lis est passionnant (the book that I am reading).",
+      "Que becomes qu' before a vowel: le film qu'il a vu; qui never changes: l'amie qui arrive."
+     ],
+     "q": "Describe your favourite object with qui or que: c'est un... que j'adore, qui...",
+     "c": "Write four French sentences about people and things you like, two with qui and two with que."
+    },
+    "de": {
+     "t": "Relativpronomen qui und que",
+     "g": "Du verbindest zwei Sätze mit qui und que, um Personen und Dinge zu beschreiben.",
+     "p": [
+      "Qui ist Subjekt des folgenden Verbs: l'homme qui parle est mon voisin (der Mann, der spricht).",
+      "Que ist Objekt, danach kommt ein neues Subjekt: le livre que je lis est passionnant (das Buch, das ich lese).",
+      "Que wird vor Vokal zu qu': le film qu'il a vu; qui ändert sich nie: l'amie qui arrive."
+     ],
+     "q": "Beschreib deinen Lieblingsgegenstand mit qui oder que: c'est un... que j'adore, qui...",
+     "c": "Schreib vier Sätze über Menschen und Dinge, die du magst, zwei mit qui und zwei mit que."
+    },
+    "es": {
+     "t": "Relativos qui y que",
+     "g": "Une dos frases con qui y que para describir personas y cosas.",
+     "p": [
+      "Qui es el sujeto del verbo siguiente: l'homme qui parle est mon voisin (el hombre que habla).",
+      "Que es el objeto; después viene otro sujeto: le livre que je lis est passionnant (el libro que leo).",
+      "Que pasa a qu' ante vocal: le film qu'il a vu; qui nunca cambia: l'amie qui arrive."
+     ],
+     "q": "Describe tu objeto favorito con qui o que: c'est un... que j'adore, qui...",
+     "c": "Escribe cuatro frases sobre personas y cosas que te gustan, dos con qui y dos con que."
+    },
+    "fr": {
+     "t": "Les pronoms relatifs qui et que",
+     "g": "Relier deux phrases avec qui et que pour décrire des personnes et des choses.",
+     "p": [
+      "Qui est sujet du verbe qui suit : l'homme qui parle est mon voisin.",
+      "Que est complément ; un nouveau sujet suit : le livre que je lis est passionnant.",
+      "Que devient qu' devant une voyelle : le film qu'il a vu ; qui ne change jamais : l'amie qui arrive."
+     ],
+     "q": "Décris ton objet préféré avec qui ou que : c'est un... que j'adore, qui...",
+     "c": "Écris quatre phrases sur des personnes et des choses que tu aimes, deux avec qui, deux avec que."
+    },
+    "it": {
+     "t": "Relativi qui e que",
+     "g": "Unisci due frasi con qui e que per descrivere persone e cose.",
+     "p": [
+      "Qui è il soggetto del verbo che segue: l'homme qui parle est mon voisin (l'uomo che parla).",
+      "Que è l'oggetto; segue un nuovo soggetto: le livre que je lis est passionnant (il libro che leggo).",
+      "Que diventa qu' davanti a vocale: le film qu'il a vu; qui non cambia mai: l'amie qui arrive."
+     ],
+     "q": "Descrivi il tuo oggetto preferito con qui o que: c'est un... que j'adore, qui...",
+     "c": "Scrivi quattro frasi su persone e cose che ami, due con qui e due con que."
+    },
+    "pt": {
+     "t": "Relativos qui e que",
+     "g": "Ligar duas frases com qui e que para descrever pessoas e coisas.",
+     "p": [
+      "Qui é o sujeito do verbo seguinte: l'homme qui parle est mon voisin (o homem que fala).",
+      "Que é o complemento; segue-se outro sujeito: le livre que je lis est passionnant (o livro que leio).",
+      "Que passa a qu' antes de vogal: le film qu'il a vu; qui nunca muda: l'amie qui arrive."
+     ],
+     "q": "Descreve o teu objeto preferido com qui ou que: c'est un... que j'adore, qui...",
+     "c": "Escreve quatro frases sobre pessoas e coisas de que gostas, duas com qui e duas com que."
+    },
+    "pt_BR": {
+     "t": "Relativos qui e que",
+     "g": "Ligar duas frases com qui e que para descrever pessoas e coisas.",
+     "p": [
+      "Qui é o sujeito do verbo seguinte: l'homme qui parle est mon voisin (o homem que fala).",
+      "Que é o objeto; depois vem outro sujeito: le livre que je lis est passionnant (o livro que eu leio).",
+      "Que vira qu' antes de vogal: le film qu'il a vu; qui nunca muda: l'amie qui arrive."
+     ],
+     "q": "Descreva seu objeto favorito com qui ou que: c'est un... que j'adore, qui...",
+     "c": "Escreva quatro frases sobre pessoas e coisas de que você gosta, duas com qui e duas com que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "qui",
+      "ex": "J'ai une amie qui habite à Genève."
+     },
+     {
+      "w": "que",
+      "ex": "C'est la chanson que je préfère."
+     },
+     {
+      "w": "qu'",
+      "ex": "Voici le gâteau qu'elle a fait."
+     },
+     {
+      "w": "la personne qui",
+      "ex": "C'est la personne qui m'a aidé."
+     },
+     {
+      "w": "le livre que",
+      "ex": "Le livre que tu m'as prêté est super."
+     },
+     {
+      "w": "passionnant, passionnante",
+      "ex": "C'est un film passionnant."
+     }
+    ],
+    "gram": "Qui = sujet (l'homme qui parle) ; que / qu' = complément d'objet, suivi d'un sujet (le livre que je lis)."
+   }
+  },
+  {
+   "d": 108,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Relative pronoun où",
+     "g": "Use où to talk about places and moments in a relative clause.",
+     "p": [
+      "Où replaces a place: la ville où je suis né, le café où nous nous retrouvons.",
+      "Où also replaces a moment: le jour où on s'est rencontrés, l'année où j'ai commencé le français.",
+      "Do not confuse with qui and que: c'est la ville que j'aime (object) but la ville où j'habite (place)."
+     ],
+     "q": "Describe the town where you were born, using où in French.",
+     "c": "Write three French sentences with où: one place you love, one day you remember, one café you visit."
+    },
+    "de": {
+     "t": "Relativpronomen où",
+     "g": "Du benutzt où für Orte und Zeitpunkte in einem Relativsatz.",
+     "p": [
+      "Où ersetzt einen Ort: la ville où je suis né, le café où nous nous retrouvons.",
+      "Où ersetzt auch einen Zeitpunkt: le jour où on s'est rencontrés, l'année où j'ai commencé le français.",
+      "Nicht verwechseln: c'est la ville que j'aime (Objekt), aber la ville où j'habite (Ort)."
+     ],
+     "q": "Beschreib auf Französisch die Stadt, in der du geboren bist, mit où.",
+     "c": "Schreib drei Sätze mit où: ein Lieblingsort, ein Tag zum Erinnern, ein Café, in das du gehst."
+    },
+    "es": {
+     "t": "El relativo où",
+     "g": "Usa où para hablar de lugares y momentos en una oración de relativo.",
+     "p": [
+      "Où sustituye un lugar: la ville où je suis né, le café où nous nous retrouvons.",
+      "Où también sustituye un momento: le jour où on s'est rencontrés, l'année où j'ai commencé le français.",
+      "No lo confundas: c'est la ville que j'aime (objeto), pero la ville où j'habite (lugar)."
+     ],
+     "q": "Describe en francés la ciudad donde naciste usando où.",
+     "c": "Escribe tres frases con où: un lugar que amas, un día que recuerdas, un café al que vas."
+    },
+    "fr": {
+     "t": "Le pronom relatif où",
+     "g": "Utiliser où pour parler d'un lieu ou d'un moment.",
+     "p": [
+      "Où remplace un lieu : la ville où je suis né, le café où nous nous retrouvons.",
+      "Où remplace aussi un moment : le jour où on s'est rencontrés, l'année où j'ai commencé le français.",
+      "Attention : c'est la ville que j'aime (complément), mais la ville où j'habite (lieu)."
+     ],
+     "q": "Décris la ville où tu es né ou née.",
+     "c": "Écris trois phrases avec où : un lieu que tu adores, un jour dont tu te souviens, un café."
+    },
+    "it": {
+     "t": "Il relativo où",
+     "g": "Usa où per parlare di luoghi e momenti in una frase relativa.",
+     "p": [
+      "Où sostituisce un luogo: la ville où je suis né, le café où nous nous retrouvons.",
+      "Où sostituisce anche un momento: le jour où on s'est rencontrés, l'année où j'ai commencé le français.",
+      "Non confonderlo: c'est la ville que j'aime (oggetto), ma la ville où j'habite (luogo)."
+     ],
+     "q": "Descrivi in francese la città dove sei nato, usando où.",
+     "c": "Scrivi tre frasi con où: un luogo che ami, un giorno che ricordi, un caffè dove vai."
+    },
+    "pt": {
+     "t": "O relativo où",
+     "g": "Usar où para falar de lugares e momentos numa oração relativa.",
+     "p": [
+      "Où substitui um lugar: la ville où je suis né, le café où nous nous retrouvons.",
+      "Où também substitui um momento: le jour où on s'est rencontrés, l'année où j'ai commencé le français.",
+      "Não confundas: c'est la ville que j'aime (complemento), mas la ville où j'habite (lugar)."
+     ],
+     "q": "Descreve em francês a cidade onde nasceste, usando où.",
+     "c": "Escreve três frases com où: um lugar de que gostas, um dia de que te lembras, um café onde vais."
+    },
+    "pt_BR": {
+     "t": "O relativo où",
+     "g": "Usar où para falar de lugares e momentos numa oração relativa.",
+     "p": [
+      "Où substitui um lugar: la ville où je suis né, le café où nous nous retrouvons.",
+      "Où também substitui um momento: le jour où on s'est rencontrés, l'année où j'ai commencé le français.",
+      "Não confunda: c'est la ville que j'aime (objeto), mas la ville où j'habite (lugar)."
+     ],
+     "q": "Descreva em francês a cidade onde você nasceu, usando où.",
+     "c": "Escreva três frases com où: um lugar que você adora, um dia de que se lembra, um café aonde vai."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la ville où",
+      "ex": "C'est la ville où j'ai grandi."
+     },
+     {
+      "w": "le jour où",
+      "ex": "Le jour où je suis arrivé, il neigeait."
+     },
+     {
+      "w": "la maison où",
+      "ex": "Voici la maison où habitait mon grand-père."
+     },
+     {
+      "w": "le moment où",
+      "ex": "C'est le moment où tout a commencé."
+     },
+     {
+      "w": "grandir",
+      "ex": "J'ai grandi dans un petit village."
+     },
+     {
+      "w": "se retrouver",
+      "ex": "Le café où on se retrouve est fermé."
+     }
+    ],
+    "gram": "Où = lieu (la ville où j'habite) ou temps (le jour où il est né). Ne pas confondre avec que (la ville que j'aime)."
+   }
+  },
+  {
+   "d": 109,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Health and the doctor",
+     "g": "Make a doctor's appointment in French and describe how you feel, with general vocabulary.",
+     "p": [
+      "Booking: je voudrais prendre rendez-vous avec le docteur Martin, c'est possible demain matin?",
+      "Describing: j'ai de la fièvre, je tousse depuis trois jours, j'ai mal au ventre; depuis tells how long.",
+      "At the doctor: une ordonnance (prescription), la pharmacie, se reposer. This is language practice, not medical advice."
+     ],
+     "q": "Imagine you call a doctor's office: how do you ask for an appointment in French?",
+     "c": "Write a short French dialogue to book an appointment, with a day, a time and one symptom with depuis."
+    },
+    "de": {
+     "t": "Gesundheit und Arztbesuch",
+     "g": "Du vereinbarst auf Französisch einen Arzttermin und beschreibst allgemein, wie es dir geht.",
+     "p": [
+      "Termin: je voudrais prendre rendez-vous avec le docteur Martin, c'est possible demain matin?",
+      "Beschreiben: j'ai de la fièvre, je tousse depuis trois jours, j'ai mal au ventre; depuis sagt, seit wann.",
+      "Beim Arzt: une ordonnance (Rezept), la pharmacie, se reposer. Das ist Sprachübung, kein medizinischer Rat."
+     ],
+     "q": "Stell dir vor, du rufst in einer Praxis an: wie fragst du auf Französisch nach einem Termin?",
+     "c": "Schreib einen kurzen Dialog für einen Termin, mit Tag, Uhrzeit und einer Beschwerde mit depuis."
+    },
+    "es": {
+     "t": "La salud y el médico",
+     "g": "Pide cita con el médico en francés y describe cómo te sientes con vocabulario general.",
+     "p": [
+      "Pedir cita: je voudrais prendre rendez-vous avec le docteur Martin, c'est possible demain matin?",
+      "Describir: j'ai de la fièvre, je tousse depuis trois jours, j'ai mal au ventre; depuis indica desde cuándo.",
+      "En la consulta: une ordonnance (receta), la pharmacie, se reposer. Es práctica de idioma, no consejo médico."
+     ],
+     "q": "Imagina que llamas a una consulta: ¿cómo pides cita en francés?",
+     "c": "Escribe un diálogo corto para pedir cita, con día, hora y un síntoma con depuis."
+    },
+    "fr": {
+     "t": "La santé et le médecin",
+     "g": "Prendre rendez-vous chez le médecin et dire comment tu te sens, avec du vocabulaire général.",
+     "p": [
+      "Prendre rendez-vous : je voudrais un rendez-vous avec le docteur Martin, c'est possible demain matin ?",
+      "Décrire : j'ai de la fièvre, je tousse depuis trois jours, j'ai mal au ventre ; depuis indique la durée.",
+      "Chez le médecin : une ordonnance, la pharmacie, se reposer. C'est un exercice de langue, pas un avis médical."
+     ],
+     "q": "Tu appelles un cabinet médical : comment tu demandes un rendez-vous ?",
+     "c": "Écris un petit dialogue pour prendre rendez-vous : un jour, une heure et un symptôme avec depuis."
+    },
+    "it": {
+     "t": "La salute e il medico",
+     "g": "Prendi un appuntamento dal medico in francese e descrivi come ti senti con un lessico generale.",
+     "p": [
+      "Appuntamento: je voudrais prendre rendez-vous avec le docteur Martin, c'est possible demain matin?",
+      "Descrivere: j'ai de la fièvre, je tousse depuis trois jours, j'ai mal au ventre; depuis indica da quando.",
+      "Dal medico: une ordonnance (ricetta), la pharmacie, se reposer. È pratica linguistica, non un consiglio medico."
+     ],
+     "q": "Immagina di chiamare uno studio medico: come chiedi un appuntamento in francese?",
+     "c": "Scrivi un breve dialogo per prendere appuntamento, con giorno, ora e un sintomo con depuis."
+    },
+    "pt": {
+     "t": "A saúde e o médico",
+     "g": "Marcar uma consulta em francês e descrever como te sentes, com vocabulário geral.",
+     "p": [
+      "Marcar: je voudrais prendre rendez-vous avec le docteur Martin, c'est possible demain matin?",
+      "Descrever: j'ai de la fièvre, je tousse depuis trois jours, j'ai mal au ventre; depuis diz desde quando.",
+      "No médico: une ordonnance (receita), la pharmacie, se reposer. É prática de língua, não aconselhamento médico."
+     ],
+     "q": "Imagina que ligas para um consultório: como pedes uma consulta em francês?",
+     "c": "Escreve um pequeno diálogo para marcar consulta, com dia, hora e um sintoma com depuis."
+    },
+    "pt_BR": {
+     "t": "A saúde e o médico",
+     "g": "Marcar uma consulta em francês e descrever como você se sente, com vocabulário geral.",
+     "p": [
+      "Marcar: je voudrais prendre rendez-vous avec le docteur Martin, c'est possible demain matin?",
+      "Descrever: j'ai de la fièvre, je tousse depuis trois jours, j'ai mal au ventre; depuis diz desde quando.",
+      "No médico: une ordonnance (receita), la pharmacie, se reposer. É prática de idioma, não orientação médica."
+     ],
+     "q": "Imagine que você liga para um consultório: como pede uma consulta em francês?",
+     "c": "Escreva um pequeno diálogo para marcar consulta, com dia, horário e um sintoma com depuis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "prendre rendez-vous",
+      "ex": "Je voudrais prendre rendez-vous lundi."
+     },
+     {
+      "w": "le médecin",
+      "ex": "Le médecin reçoit le matin."
+     },
+     {
+      "w": "avoir de la fièvre",
+      "ex": "Mon fils a de la fièvre depuis hier."
+     },
+     {
+      "w": "une ordonnance",
+      "ex": "Le médecin me donne une ordonnance."
+     },
+     {
+      "w": "depuis",
+      "ex": "Je tousse depuis trois jours."
+     },
+     {
+      "w": "se reposer",
+      "ex": "Il faut vous reposer quelques jours."
+     }
+    ],
+    "gram": "Présent + depuis + durée pour une situation qui continue : j'ai mal à la tête depuis hier, je tousse depuis lundi."
+   }
+  },
+  {
+   "d": 110,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Healthy habits",
+     "g": "Talk about healthy habits in French and give friendly advice.",
+     "p": [
+      "Habits: faire du sport, marcher, bien dormir, manger équilibré, boire de l'eau, se détendre.",
+      "Give advice: il faut dormir huit heures, tu devrais marcher plus, essaie de manger des légumes.",
+      "Talk about frequency: tous les jours, deux fois par semaine, rarement, de temps en temps."
+     ],
+     "q": "What do you do to feel good? Tell me two healthy habits in French and how often.",
+     "c": "Write three pieces of friendly French advice for a busy friend, with il faut, essaie de and tu devrais."
+    },
+    "de": {
+     "t": "Gesunde Gewohnheiten",
+     "g": "Du sprichst auf Französisch über gesunde Gewohnheiten und gibst freundliche Tipps.",
+     "p": [
+      "Gewohnheiten: faire du sport, marcher, bien dormir, manger équilibré, boire de l'eau, se détendre.",
+      "Rat geben: il faut dormir huit heures, tu devrais marcher plus, essaie de manger des légumes.",
+      "Häufigkeit: tous les jours, deux fois par semaine, rarement, de temps en temps."
+     ],
+     "q": "Was tust du, um dich wohlzufühlen? Nenne zwei gesunde Gewohnheiten und wie oft.",
+     "c": "Schreib drei freundliche Tipps für einen gestressten Freund mit il faut, essaie de und tu devrais."
+    },
+    "es": {
+     "t": "Hábitos saludables",
+     "g": "Habla en francés de hábitos saludables y da consejos amables.",
+     "p": [
+      "Hábitos: faire du sport, marcher, bien dormir, manger équilibré, boire de l'eau, se détendre.",
+      "Dar consejos: il faut dormir huit heures, tu devrais marcher plus, essaie de manger des légumes.",
+      "Frecuencia: tous les jours, deux fois par semaine, rarement, de temps en temps."
+     ],
+     "q": "¿Qué haces para sentirte bien? Dime dos hábitos saludables y con qué frecuencia.",
+     "c": "Escribe tres consejos amables para un amigo muy ocupado con il faut, essaie de y tu devrais."
+    },
+    "fr": {
+     "t": "Les bonnes habitudes",
+     "g": "Parler des habitudes saines et donner des conseils amicaux.",
+     "p": [
+      "Habitudes : faire du sport, marcher, bien dormir, manger équilibré, boire de l'eau, se détendre.",
+      "Conseils : il faut dormir huit heures, tu devrais marcher plus, essaie de manger des légumes.",
+      "La fréquence : tous les jours, deux fois par semaine, rarement, de temps en temps."
+     ],
+     "q": "Qu'est-ce que tu fais pour te sentir bien ? Donne deux habitudes et leur fréquence.",
+     "c": "Écris trois conseils amicaux pour un ami très occupé, avec il faut, essaie de et tu devrais."
+    },
+    "it": {
+     "t": "Abitudini sane",
+     "g": "Parla in francese di abitudini sane e dai consigli amichevoli.",
+     "p": [
+      "Abitudini: faire du sport, marcher, bien dormir, manger équilibré, boire de l'eau, se détendre.",
+      "Consigli: il faut dormir huit heures, tu devrais marcher plus, essaie de manger des légumes.",
+      "Frequenza: tous les jours, deux fois par semaine, rarement, de temps en temps."
+     ],
+     "q": "Cosa fai per stare bene? Dimmi due abitudini sane e quanto spesso.",
+     "c": "Scrivi tre consigli amichevoli per un amico molto impegnato con il faut, essaie de e tu devrais."
+    },
+    "pt": {
+     "t": "Hábitos saudáveis",
+     "g": "Falar em francês de hábitos saudáveis e dar conselhos simpáticos.",
+     "p": [
+      "Hábitos: faire du sport, marcher, bien dormir, manger équilibré, boire de l'eau, se détendre.",
+      "Dar conselhos: il faut dormir huit heures, tu devrais marcher plus, essaie de manger des légumes.",
+      "Frequência: tous les jours, deux fois par semaine, rarement, de temps en temps."
+     ],
+     "q": "O que fazes para te sentires bem? Diz-me dois hábitos saudáveis e com que frequência.",
+     "c": "Escreve três conselhos simpáticos para um amigo muito ocupado, com il faut, essaie de e tu devrais."
+    },
+    "pt_BR": {
+     "t": "Hábitos saudáveis",
+     "g": "Falar em francês de hábitos saudáveis e dar conselhos amigáveis.",
+     "p": [
+      "Hábitos: faire du sport, marcher, bien dormir, manger équilibré, boire de l'eau, se détendre.",
+      "Dar conselhos: il faut dormir huit heures, tu devrais marcher plus, essaie de manger des légumes.",
+      "Frequência: tous les jours, deux fois par semaine, rarement, de temps en temps."
+     ],
+     "q": "O que você faz para se sentir bem? Me diga dois hábitos saudáveis e com que frequência.",
+     "c": "Escreva três conselhos amigáveis para um amigo muito ocupado, com il faut, essaie de e tu devrais."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "manger équilibré",
+      "ex": "J'essaie de manger équilibré."
+     },
+     {
+      "w": "bien dormir",
+      "ex": "Pour bien dormir, j'éteins mon téléphone."
+     },
+     {
+      "w": "tu devrais",
+      "ex": "Tu devrais boire plus d'eau."
+     },
+     {
+      "w": "essayer de",
+      "ex": "Essaie de marcher un peu chaque jour."
+     },
+     {
+      "w": "deux fois par semaine",
+      "ex": "Je nage deux fois par semaine."
+     },
+     {
+      "w": "se détendre",
+      "ex": "Le soir, je lis pour me détendre."
+     }
+    ],
+    "gram": "Conseiller : il faut + infinitif, tu devrais + infinitif, essaie de + infinitif. Fréquence : deux fois par semaine."
+   }
+  }
+ ]
+}

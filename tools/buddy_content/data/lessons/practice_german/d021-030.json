@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Word order: verb in position 2",
+     "g": "Learn the golden rule of German statements: the conjugated verb comes second.",
+     "p": [
+      "In a statement the verb is always element number 2: Ich lerne heute Deutsch.",
+      "If something else comes first, the subject moves behind the verb: Heute lerne ich Deutsch.",
+      "An element can be several words: In Am Montag um acht Uhr fahre ich..., the whole time phrase is position 1."
+     ],
+     "q": "Tell me what you do tomorrow, starting your sentence with Morgen... Where does the verb go?",
+     "c": "Write three sentences, then rewrite each one starting with a time word like heute, morgen or am Abend."
+    },
+    "de": {
+     "t": "Satzbau: Verb auf Position 2",
+     "g": "Du lernst die goldene Regel im Aussagesatz: Das konjugierte Verb steht an zweiter Stelle.",
+     "p": [
+      "Im Aussagesatz ist das Verb immer Element Nummer 2: Ich lerne heute Deutsch.",
+      "Steht etwas anderes vorn, kommt das Subjekt hinter das Verb: Heute lerne ich Deutsch.",
+      "Ein Element kann aus mehreren Wörtern bestehen: Am Montag um acht Uhr fahre ich..."
+     ],
+     "q": "Erzähl mir, was du morgen machst, und beginne mit Morgen... Wo steht das Verb?",
+     "c": "Schreib drei Sätze und formuliere jeden neu mit einem Zeitwort vorn: heute, morgen oder am Abend."
+    },
+    "es": {
+     "t": "Orden: el verbo en la posición 2",
+     "g": "Aprende la regla de oro de la frase alemana: el verbo conjugado va en segundo lugar.",
+     "p": [
+      "En una afirmación el verbo es siempre el elemento número 2: Ich lerne heute Deutsch.",
+      "Si otra cosa va primero, el sujeto pasa detrás del verbo: Heute lerne ich Deutsch.",
+      "Un elemento puede tener varias palabras: Am Montag um acht Uhr fahre ich... sigue siendo posición 1 más verbo."
+     ],
+     "q": "Dime qué haces mañana empezando con Morgen... ¿Dónde va el verbo?",
+     "c": "Escribe tres frases y reescribe cada una empezando por heute, morgen o am Abend."
+    },
+    "fr": {
+     "t": "Ordre des mots : le verbe en position 2",
+     "g": "Apprendre la règle d'or de la phrase allemande : le verbe conjugué est en deuxième position.",
+     "p": [
+      "Dans une phrase affirmative, le verbe est toujours l'élément numéro 2 : Ich lerne heute Deutsch.",
+      "Si autre chose vient en premier, le sujet passe après le verbe : Heute lerne ich Deutsch.",
+      "Un élément peut compter plusieurs mots : Am Montag um acht Uhr fahre ich... reste position 1 puis verbe."
+     ],
+     "q": "Dis-moi ce que tu fais demain en commençant par Morgen... Où va le verbe ?",
+     "c": "Écris trois phrases, puis réécris chacune en commençant par heute, morgen ou am Abend."
+    },
+    "it": {
+     "t": "Ordine delle parole: verbo in posizione 2",
+     "g": "Impari la regola d'oro della frase tedesca: il verbo coniugato sta al secondo posto.",
+     "p": [
+      "In una frase affermativa il verbo è sempre l'elemento numero 2: Ich lerne heute Deutsch.",
+      "Se qualcos'altro va al primo posto, il soggetto si sposta dopo il verbo: Heute lerne ich Deutsch.",
+      "Un elemento può avere più parole: Am Montag um acht Uhr fahre ich... è sempre posizione 1 più verbo."
+     ],
+     "q": "Dimmi che cosa fai domani cominciando con Morgen... Dove va il verbo?",
+     "c": "Scrivi tre frasi e riscrivi ciascuna cominciando con heute, morgen o am Abend."
+    },
+    "pt": {
+     "t": "Ordem: o verbo na posição 2",
+     "g": "Aprender a regra de ouro da frase alemã: o verbo conjugado fica em segundo lugar.",
+     "p": [
+      "Numa afirmação o verbo é sempre o elemento número 2: Ich lerne heute Deutsch.",
+      "Se outra coisa vem primeiro, o sujeito passa para depois do verbo: Heute lerne ich Deutsch.",
+      "Um elemento pode ter várias palavras: Am Montag um acht Uhr fahre ich... continua a ser posição 1 mais verbo."
+     ],
+     "q": "Diz-me o que fazes amanhã começando por Morgen... Onde fica o verbo?",
+     "c": "Escreve três frases e reescreve cada uma começando por heute, morgen ou am Abend."
+    },
+    "pt_BR": {
+     "t": "Ordem: o verbo na posição 2",
+     "g": "Aprender a regra de ouro da frase alemã: o verbo conjugado fica em segundo lugar.",
+     "p": [
+      "Numa afirmação o verbo é sempre o elemento número 2: Ich lerne heute Deutsch.",
+      "Se outra coisa vem primeiro, o sujeito vai para depois do verbo: Heute lerne ich Deutsch.",
+      "Um elemento pode ter várias palavras: Am Montag um acht Uhr fahre ich... continua sendo posição 1 mais verbo."
+     ],
+     "q": "Me conte o que você faz amanhã começando com Morgen... Onde fica o verbo?",
+     "c": "Escreva três frases e reescreva cada uma começando com heute, morgen ou am Abend."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "heute",
+      "ex": "Heute lerne ich Deutsch."
+     },
+     {
+      "w": "morgen",
+      "ex": "Morgen fahre ich nach Köln."
+     },
+     {
+      "w": "am Abend",
+      "ex": "Am Abend koche ich."
+     },
+     {
+      "w": "dann",
+      "ex": "Dann trinken wir Kaffee."
+     },
+     {
+      "w": "jetzt",
+      "ex": "Jetzt habe ich Zeit."
+     },
+     {
+      "w": "oft",
+      "ex": "Oft spiele ich Fußball."
+     }
+    ],
+    "gram": "Im Aussagesatz steht das Verb auf Position 2: Ich spiele heute Tennis. → Heute spiele ich Tennis."
+   }
+  },
+  {
+   "d": 22,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Yes-no questions",
+     "g": "Ask yes-no questions by putting the verb first and answer with ja, nein or doch.",
+     "p": [
+      "For a yes-no question, start with the verb: Kommst du? Hast du Zeit? Sprechen Sie Englisch?",
+      "Answer with ja or nein: Ja, ich komme. Nein, ich habe keine Zeit.",
+      "Doch is a special yes that contradicts a negative question: Kommst du nicht? – Doch! (Yes, I am!)"
+     ],
+     "q": "Ask me one yes-no question in German about my day, starting with a verb.",
+     "c": "Write five yes-no questions for a new friend, each starting with a different verb."
+    },
+    "de": {
+     "t": "Ja-Nein-Fragen",
+     "g": "Du stellst Ja-Nein-Fragen mit dem Verb vorn und antwortest mit ja, nein oder doch.",
+     "p": [
+      "Bei Ja-Nein-Fragen steht das Verb am Anfang: Kommst du? Hast du Zeit? Sprechen Sie Englisch?",
+      "Antworte mit ja oder nein: Ja, ich komme. Nein, ich habe keine Zeit.",
+      "Doch ist ein besonderes Ja auf eine negative Frage: Kommst du nicht? – Doch!"
+     ],
+     "q": "Stell mir eine Ja-Nein-Frage auf Deutsch über meinen Tag und beginne mit einem Verb.",
+     "c": "Schreib fünf Ja-Nein-Fragen für eine neue Freundin, jede mit einem anderen Verb am Anfang."
+    },
+    "es": {
+     "t": "Preguntas de sí o no",
+     "g": "Haz preguntas de sí o no poniendo el verbo delante y responde con ja, nein o doch.",
+     "p": [
+      "Para preguntar sí o no, empieza por el verbo: Kommst du? Hast du Zeit? Sprechen Sie Englisch?",
+      "Responde con ja o nein: Ja, ich komme. Nein, ich habe keine Zeit.",
+      "Doch es un sí especial que contradice una pregunta negativa: Kommst du nicht? – Doch! (¡Sí que voy!)"
+     ],
+     "q": "Hazme una pregunta de sí o no en alemán sobre mi día, empezando por un verbo.",
+     "c": "Escribe cinco preguntas de sí o no para un amigo nuevo, cada una con un verbo distinto delante."
+    },
+    "fr": {
+     "t": "Les questions fermées",
+     "g": "Poser des questions oui-non avec le verbe en tête et répondre ja, nein ou doch.",
+     "p": [
+      "Pour une question fermée, on commence par le verbe : Kommst du ? Hast du Zeit ? Sprechen Sie Englisch ?",
+      "Réponds avec ja ou nein : Ja, ich komme. Nein, ich habe keine Zeit.",
+      "Doch est un oui spécial qui contredit une question négative, comme si en français : Kommst du nicht ? – Doch !"
+     ],
+     "q": "Pose-moi une question fermée en allemand sur ma journée, en commençant par un verbe.",
+     "c": "Écris cinq questions oui-non pour un nouvel ami, chacune avec un verbe différent en tête."
+    },
+    "it": {
+     "t": "Domande sì o no",
+     "g": "Fai domande sì o no con il verbo all'inizio e rispondi con ja, nein o doch.",
+     "p": [
+      "Per una domanda sì o no si comincia con il verbo: Kommst du? Hast du Zeit? Sprechen Sie Englisch?",
+      "Rispondi con ja o nein: Ja, ich komme. Nein, ich habe keine Zeit.",
+      "Doch è un sì speciale che contraddice una domanda negativa: Kommst du nicht? – Doch! (Ma sì che vengo!)"
+     ],
+     "q": "Fammi una domanda sì o no in tedesco sulla mia giornata, cominciando con un verbo.",
+     "c": "Scrivi cinque domande sì o no per un nuovo amico, ognuna con un verbo diverso all'inizio."
+    },
+    "pt": {
+     "t": "Perguntas de sim ou não",
+     "g": "Fazer perguntas de sim ou não com o verbo à frente e responder com ja, nein ou doch.",
+     "p": [
+      "Numa pergunta de sim ou não começa-se pelo verbo: Kommst du? Hast du Zeit? Sprechen Sie Englisch?",
+      "Responde com ja ou nein: Ja, ich komme. Nein, ich habe keine Zeit.",
+      "Doch é um sim especial que contradiz uma pergunta negativa: Kommst du nicht? – Doch! (Vou, sim!)"
+     ],
+     "q": "Faz-me uma pergunta de sim ou não em alemão sobre o meu dia, começando por um verbo.",
+     "c": "Escreve cinco perguntas de sim ou não para um novo amigo, cada uma com um verbo diferente à frente."
+    },
+    "pt_BR": {
+     "t": "Perguntas de sim ou não",
+     "g": "Fazer perguntas de sim ou não com o verbo na frente e responder com ja, nein ou doch.",
+     "p": [
+      "Numa pergunta de sim ou não comece pelo verbo: Kommst du? Hast du Zeit? Sprechen Sie Englisch?",
+      "Responda com ja ou nein: Ja, ich komme. Nein, ich habe keine Zeit.",
+      "Doch é um sim especial que contradiz uma pergunta negativa: Kommst du nicht? – Doch! (Vou, sim!)"
+     ],
+     "q": "Me faça uma pergunta de sim ou não em alemão sobre o meu dia, começando com um verbo.",
+     "c": "Escreva cinco perguntas de sim ou não para um amigo novo, cada uma com um verbo diferente na frente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ja",
+      "ex": "Ja, ich komme gern."
+     },
+     {
+      "w": "nein",
+      "ex": "Nein, heute nicht."
+     },
+     {
+      "w": "doch",
+      "ex": "Hast du keinen Hunger? – Doch!"
+     },
+     {
+      "w": "Kommst du mit?",
+      "ex": "Wir gehen ins Kino. Kommst du mit?"
+     },
+     {
+      "w": "Sprechen Sie Englisch?",
+      "ex": "Entschuldigung, sprechen Sie Englisch?"
+     },
+     {
+      "w": "vielleicht",
+      "ex": "Vielleicht komme ich morgen."
+     }
+    ],
+    "gram": "Ja-Nein-Frage: Verb auf Position 1: Hast du Zeit? Antwort: ja / nein. Auf negative Fragen antwortet man mit doch."
+   }
+  },
+  {
+   "d": 23,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "W-questions",
+     "g": "Ask open questions with the German W-words.",
+     "p": [
+      "Wer (who), was (what), wo (where), woher (where from), wohin (where to), wann (when), wie (how), warum (why).",
+      "After the W-word comes the verb, then the subject: Wo wohnst du? Was machst du heute? Warum lernst du Deutsch?",
+      "Wo is a place, wohin a direction: Wo bist du? Wohin fährst du? Do not mix up wer (who) and wo (where)!"
+     ],
+     "q": "Here is one for you: Warum lernst du Deutsch? Answer with weil... or just in a few words.",
+     "c": "Write one question with each of the eight W-words and answer three of them about yourself."
+    },
+    "de": {
+     "t": "W-Fragen",
+     "g": "Du stellst offene Fragen mit den deutschen W-Wörtern.",
+     "p": [
+      "Wer, was, wo, woher, wohin, wann, wie, warum: Mit diesen Wörtern fragst du nach Person, Sache, Ort, Zeit, Art und Grund.",
+      "Nach dem W-Wort kommt das Verb, dann das Subjekt: Wo wohnst du? Was machst du heute? Warum lernst du Deutsch?",
+      "Wo fragt nach dem Ort, wohin nach der Richtung: Wo bist du? Wohin fährst du?"
+     ],
+     "q": "Hier eine Frage für dich: Warum lernst du Deutsch? Antworte in ein paar Wörtern.",
+     "c": "Schreib mit jedem der acht W-Wörter eine Frage und beantworte drei davon über dich."
+    },
+    "es": {
+     "t": "Preguntas con W",
+     "g": "Haz preguntas abiertas con las palabras interrogativas alemanas.",
+     "p": [
+      "Wer (quién), was (qué), wo (dónde), woher (de dónde), wohin (adónde), wann (cuándo), wie (cómo), warum (por qué).",
+      "Tras la palabra W va el verbo y luego el sujeto: Wo wohnst du? Was machst du heute? Warum lernst du Deutsch?",
+      "Wo es lugar, wohin dirección: Wo bist du? Wohin fährst du? ¡Ojo: wer es quién y wo es dónde!"
+     ],
+     "q": "Te toca: Warum lernst du Deutsch? Responde en pocas palabras.",
+     "c": "Escribe una pregunta con cada una de las ocho palabras W y responde tres sobre ti."
+    },
+    "fr": {
+     "t": "Les questions en W",
+     "g": "Poser des questions ouvertes avec les mots interrogatifs allemands.",
+     "p": [
+      "Wer (qui), was (quoi), wo (où), woher (d'où), wohin (vers où), wann (quand), wie (comment), warum (pourquoi).",
+      "Après le mot en W vient le verbe, puis le sujet : Wo wohnst du ? Was machst du heute ? Warum lernst du Deutsch ?",
+      "Wo indique le lieu, wohin la direction : Wo bist du ? Wohin fährst du ? Attention : wer = qui, wo = où !"
+     ],
+     "q": "À toi : Warum lernst du Deutsch ? Réponds en quelques mots.",
+     "c": "Écris une question avec chacun des huit mots en W et réponds à trois d'entre elles sur toi."
+    },
+    "it": {
+     "t": "Le domande con W",
+     "g": "Fai domande aperte con le parole interrogative tedesche.",
+     "p": [
+      "Wer (chi), was (che cosa), wo (dove), woher (da dove), wohin (verso dove), wann (quando), wie (come), warum (perché).",
+      "Dopo la parola W viene il verbo, poi il soggetto: Wo wohnst du? Was machst du heute? Warum lernst du Deutsch?",
+      "Wo indica il luogo, wohin la direzione: Wo bist du? Wohin fährst du? Attenzione: wer = chi, wo = dove!"
+     ],
+     "q": "Tocca a te: Warum lernst du Deutsch? Rispondi in poche parole.",
+     "c": "Scrivi una domanda con ciascuna delle otto parole W e rispondi a tre su di te."
+    },
+    "pt": {
+     "t": "Perguntas com W",
+     "g": "Fazer perguntas abertas com as palavras interrogativas alemãs.",
+     "p": [
+      "Wer (quem), was (o quê), wo (onde), woher (de onde), wohin (para onde), wann (quando), wie (como), warum (porquê).",
+      "Depois da palavra W vem o verbo e depois o sujeito: Wo wohnst du? Was machst du heute? Warum lernst du Deutsch?",
+      "Wo é lugar, wohin é direção: Wo bist du? Wohin fährst du? Atenção: wer é quem e wo é onde!"
+     ],
+     "q": "É a tua vez: Warum lernst du Deutsch? Responde em poucas palavras.",
+     "c": "Escreve uma pergunta com cada uma das oito palavras W e responde a três sobre ti."
+    },
+    "pt_BR": {
+     "t": "Perguntas com W",
+     "g": "Fazer perguntas abertas com as palavras interrogativas alemãs.",
+     "p": [
+      "Wer (quem), was (o quê), wo (onde), woher (de onde), wohin (para onde), wann (quando), wie (como), warum (por quê).",
+      "Depois da palavra W vem o verbo e depois o sujeito: Wo wohnst du? Was machst du heute? Warum lernst du Deutsch?",
+      "Wo é lugar, wohin é direção: Wo bist du? Wohin fährst du? Atenção: wer é quem e wo é onde!"
+     ],
+     "q": "Sua vez: Warum lernst du Deutsch? Responda em poucas palavras.",
+     "c": "Escreva uma pergunta com cada uma das oito palavras W e responda três sobre você."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "wer",
+      "ex": "Wer ist das?"
+     },
+     {
+      "w": "was",
+      "ex": "Was machst du gern?"
+     },
+     {
+      "w": "wohin",
+      "ex": "Wohin fährst du im Sommer?"
+     },
+     {
+      "w": "wann",
+      "ex": "Wann beginnt der Kurs?"
+     },
+     {
+      "w": "wie",
+      "ex": "Wie ist dein Name?"
+     },
+     {
+      "w": "warum",
+      "ex": "Warum lernst du Deutsch?"
+     }
+    ],
+    "gram": "W-Frage: W-Wort + Verb + Subjekt: Wo wohnst du? wo = Ort, wohin = Richtung, woher = Herkunft."
+   }
+  },
+  {
+   "d": 24,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Saying no: nicht and kein",
+     "g": "Say no in German with the two negation words nicht and kein.",
+     "p": [
+      "Kein replaces ein or no article before a noun: Ich habe ein Auto → Ich habe kein Auto. Ich trinke keinen Kaffee.",
+      "Nicht negates verbs, adjectives and the rest: Ich komme nicht. Das ist nicht teuer. Ich wohne nicht in Berlin.",
+      "Kein takes endings like ein: kein Bruder, keine Zeit, kein Geld, keine Kinder."
+     ],
+     "q": "Tell me two things you do not have or do not do, one with kein and one with nicht.",
+     "c": "Write five true sentences about yourself, using kein at least twice and nicht at least twice."
+    },
+    "de": {
+     "t": "Verneinung: nicht und kein",
+     "g": "Du verneinst auf Deutsch mit den zwei Wörtern nicht und kein.",
+     "p": [
+      "Kein ersetzt ein oder den Nullartikel vor einem Nomen: Ich habe ein Auto → Ich habe kein Auto.",
+      "Nicht verneint Verben, Adjektive und den Rest: Ich komme nicht. Das ist nicht teuer. Ich wohne nicht in Berlin.",
+      "Kein hat Endungen wie ein: kein Bruder, keine Zeit, kein Geld, keine Kinder."
+     ],
+     "q": "Nenn mir zwei Dinge, die du nicht hast oder nicht machst: einmal mit kein, einmal mit nicht.",
+     "c": "Schreib fünf wahre Sätze über dich, mindestens zweimal mit kein und zweimal mit nicht."
+    },
+    "es": {
+     "t": "Decir no: nicht y kein",
+     "g": "Niega en alemán con las dos palabras nicht y kein.",
+     "p": [
+      "Kein sustituye a ein o a la ausencia de artículo ante un sustantivo: Ich habe ein Auto → Ich habe kein Auto.",
+      "Nicht niega verbos, adjetivos y lo demás: Ich komme nicht. Das ist nicht teuer. Ich wohne nicht in Berlin.",
+      "Kein lleva terminaciones como ein: kein Bruder, keine Zeit, kein Geld, keine Kinder."
+     ],
+     "q": "Dime dos cosas que no tienes o no haces, una con kein y otra con nicht.",
+     "c": "Escribe cinco frases verdaderas sobre ti, usando kein al menos dos veces y nicht al menos dos."
+    },
+    "fr": {
+     "t": "Dire non : nicht et kein",
+     "g": "Exprimer la négation en allemand avec nicht et kein.",
+     "p": [
+      "Kein remplace ein ou l'absence d'article devant un nom : Ich habe ein Auto → Ich habe kein Auto.",
+      "Nicht nie les verbes, les adjectifs et le reste : Ich komme nicht. Das ist nicht teuer. Ich wohne nicht in Berlin.",
+      "Kein prend les terminaisons de ein : kein Bruder, keine Zeit, kein Geld, keine Kinder."
+     ],
+     "q": "Dis-moi deux choses que tu n'as pas ou ne fais pas, une avec kein et une avec nicht.",
+     "c": "Écris cinq phrases vraies sur toi, avec kein au moins deux fois et nicht au moins deux fois."
+    },
+    "it": {
+     "t": "Dire di no: nicht e kein",
+     "g": "Neghi in tedesco con le due parole nicht e kein.",
+     "p": [
+      "Kein sostituisce ein o l'assenza di articolo davanti a un nome: Ich habe ein Auto → Ich habe kein Auto.",
+      "Nicht nega verbi, aggettivi e il resto: Ich komme nicht. Das ist nicht teuer. Ich wohne nicht in Berlin.",
+      "Kein prende le desinenze di ein: kein Bruder, keine Zeit, kein Geld, keine Kinder."
+     ],
+     "q": "Dimmi due cose che non hai o non fai, una con kein e una con nicht.",
+     "c": "Scrivi cinque frasi vere su di te, usando kein almeno due volte e nicht almeno due volte."
+    },
+    "pt": {
+     "t": "Dizer não: nicht e kein",
+     "g": "Negar em alemão com as duas palavras nicht e kein.",
+     "p": [
+      "Kein substitui ein ou a falta de artigo antes de um nome: Ich habe ein Auto → Ich habe kein Auto.",
+      "Nicht nega verbos, adjetivos e o resto: Ich komme nicht. Das ist nicht teuer. Ich wohne nicht in Berlin.",
+      "Kein tem as terminações de ein: kein Bruder, keine Zeit, kein Geld, keine Kinder."
+     ],
+     "q": "Diz-me duas coisas que não tens ou não fazes, uma com kein e outra com nicht.",
+     "c": "Escreve cinco frases verdadeiras sobre ti, com kein pelo menos duas vezes e nicht pelo menos duas."
+    },
+    "pt_BR": {
+     "t": "Dizendo não: nicht e kein",
+     "g": "Negar em alemão com as duas palavras nicht e kein.",
+     "p": [
+      "Kein substitui ein ou a falta de artigo antes de um nome: Ich habe ein Auto → Ich habe kein Auto.",
+      "Nicht nega verbos, adjetivos e o resto: Ich komme nicht. Das ist nicht teuer. Ich wohne nicht in Berlin.",
+      "Kein tem as terminações de ein: kein Bruder, keine Zeit, kein Geld, keine Kinder."
+     ],
+     "q": "Me diga duas coisas que você não tem ou não faz, uma com kein e outra com nicht.",
+     "c": "Escreva cinco frases verdadeiras sobre você, com kein pelo menos duas vezes e nicht pelo menos duas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "nicht",
+      "ex": "Ich komme heute nicht."
+     },
+     {
+      "w": "kein",
+      "ex": "Ich habe kein Auto."
+     },
+     {
+      "w": "keine",
+      "ex": "Ich habe keine Zeit."
+     },
+     {
+      "w": "keinen",
+      "ex": "Er trinkt keinen Kaffee."
+     },
+     {
+      "w": "nicht so",
+      "ex": "Das ist nicht so teuer."
+     },
+     {
+      "w": "gar nicht",
+      "ex": "Ich bin gar nicht müde."
+     }
+    ],
+    "gram": "kein vor Nomen (statt ein / ohne Artikel): Ich habe keine Katze. nicht für Verb, Adjektiv, Ort: Ich bin nicht müde."
+   }
+  },
+  {
+   "d": 25,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Plural forms",
+     "g": "Recognise the main German plural patterns and learn nouns with their plural.",
+     "p": [
+      "Many plurals add -e (der Tag, die Tage), -er (das Kind, die Kinder) or -n/-en (die Lampe, die Lampen).",
+      "Some add an umlaut too: das Haus, die Häuser; der Stuhl, die Stühle. Foreign words often add -s: das Auto, die Autos.",
+      "Good news: the plural article is always die, for every gender: die Tische, die Lampen, die Bücher."
+     ],
+     "q": "Pick two things you have more than one of. Can you say them in the plural in German?",
+     "c": "Learn six nouns with article and plural, like das Buch, die Bücher, and test yourself tonight."
+    },
+    "de": {
+     "t": "Pluralformen",
+     "g": "Du erkennst die wichtigsten Pluralmuster und lernst Nomen mit ihrem Plural.",
+     "p": [
+      "Viele Plurale enden auf -e (der Tag, die Tage), -er (das Kind, die Kinder) oder -n/-en (die Lampe, die Lampen).",
+      "Manche bekommen auch einen Umlaut: das Haus, die Häuser; der Stuhl, die Stühle. Fremdwörter oft auf -s: die Autos.",
+      "Gute Nachricht: Der Pluralartikel ist immer die, für alle Genera: die Tische, die Lampen, die Bücher."
+     ],
+     "q": "Nimm zwei Dinge, die du mehrfach hast. Kannst du sie auf Deutsch im Plural sagen?",
+     "c": "Lern sechs Nomen mit Artikel und Plural, wie das Buch, die Bücher, und teste dich heute Abend."
+    },
+    "es": {
+     "t": "Formas del plural",
+     "g": "Reconoce los principales plurales alemanes y aprende cada sustantivo con su plural.",
+     "p": [
+      "Muchos añaden -e (der Tag, die Tage), -er (das Kind, die Kinder) o -n/-en (die Lampe, die Lampen).",
+      "Algunos añaden además diéresis: das Haus, die Häuser; der Stuhl, die Stühle. Las palabras extranjeras suelen añadir -s: die Autos.",
+      "Buena noticia: el artículo plural es siempre die, para todos los géneros: die Tische, die Lampen, die Bücher."
+     ],
+     "q": "Piensa en dos cosas que tienes repetidas. ¿Sabes decirlas en plural en alemán?",
+     "c": "Aprende seis sustantivos con artículo y plural, como das Buch, die Bücher, y ponte a prueba esta noche."
+    },
+    "fr": {
+     "t": "Les formes du pluriel",
+     "g": "Reconnaître les principaux pluriels allemands et apprendre chaque nom avec son pluriel.",
+     "p": [
+      "Beaucoup ajoutent -e (der Tag, die Tage), -er (das Kind, die Kinder) ou -n/-en (die Lampe, die Lampen).",
+      "Certains prennent aussi un tréma : das Haus, die Häuser ; der Stuhl, die Stühle. Les mots étrangers ajoutent souvent -s : die Autos.",
+      "Bonne nouvelle : l'article pluriel est toujours die, quel que soit le genre : die Tische, die Lampen, die Bücher."
+     ],
+     "q": "Pense à deux choses que tu as en plusieurs exemplaires. Sais-tu les dire au pluriel en allemand ?",
+     "c": "Apprends six noms avec article et pluriel, comme das Buch, die Bücher, et teste-toi ce soir."
+    },
+    "it": {
+     "t": "Le forme del plurale",
+     "g": "Riconosci i principali plurali tedeschi e impari ogni nome con il suo plurale.",
+     "p": [
+      "Molti aggiungono -e (der Tag, die Tage), -er (das Kind, die Kinder) o -n/-en (die Lampe, die Lampen).",
+      "Alcuni prendono anche l'Umlaut: das Haus, die Häuser; der Stuhl, die Stühle. Le parole straniere spesso aggiungono -s: die Autos.",
+      "Buona notizia: l'articolo plurale è sempre die, per tutti i generi: die Tische, die Lampen, die Bücher."
+     ],
+     "q": "Pensa a due cose che hai in più esemplari. Sai dirle al plurale in tedesco?",
+     "c": "Impara sei nomi con articolo e plurale, come das Buch, die Bücher, e mettiti alla prova stasera."
+    },
+    "pt": {
+     "t": "Formas do plural",
+     "g": "Reconhecer os principais plurais alemães e aprender cada nome com o seu plural.",
+     "p": [
+      "Muitos juntam -e (der Tag, die Tage), -er (das Kind, die Kinder) ou -n/-en (die Lampe, die Lampen).",
+      "Alguns levam também trema: das Haus, die Häuser; der Stuhl, die Stühle. Palavras estrangeiras juntam muitas vezes -s: die Autos.",
+      "Boa notícia: o artigo do plural é sempre die, para todos os géneros: die Tische, die Lampen, die Bücher."
+     ],
+     "q": "Pensa em duas coisas que tens repetidas. Sabes dizê-las no plural em alemão?",
+     "c": "Aprende seis nomes com artigo e plural, como das Buch, die Bücher, e testa-te logo à noite."
+    },
+    "pt_BR": {
+     "t": "Formas do plural",
+     "g": "Reconhecer os principais plurais alemães e aprender cada nome com seu plural.",
+     "p": [
+      "Muitos ganham -e (der Tag, die Tage), -er (das Kind, die Kinder) ou -n/-en (die Lampe, die Lampen).",
+      "Alguns ganham também trema: das Haus, die Häuser; der Stuhl, die Stühle. Palavras estrangeiras costumam ganhar -s: die Autos.",
+      "Boa notícia: o artigo do plural é sempre die, para todos os gêneros: die Tische, die Lampen, die Bücher."
+     ],
+     "q": "Pense em duas coisas que você tem repetidas. Sabe dizê-las no plural em alemão?",
+     "c": "Aprenda seis nomes com artigo e plural, como das Buch, die Bücher, e se teste hoje à noite."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Tag, die Tage",
+      "ex": "Die Tage sind im Sommer lang."
+     },
+     {
+      "w": "das Kind, die Kinder",
+      "ex": "Die Kinder spielen im Park."
+     },
+     {
+      "w": "das Haus, die Häuser",
+      "ex": "Die Häuser hier sind alt."
+     },
+     {
+      "w": "die Lampe, die Lampen",
+      "ex": "Die Lampen sind neu."
+     },
+     {
+      "w": "der Stuhl, die Stühle",
+      "ex": "Wir brauchen vier Stühle."
+     },
+     {
+      "w": "das Auto, die Autos",
+      "ex": "Die Autos sind laut."
+     }
+    ],
+    "gram": "Plural: -e, -er, -(e)n, -s, oft mit Umlaut (Haus → Häuser). Der Artikel im Plural ist immer die."
+   }
+  },
+  {
+   "d": 26,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Colours",
+     "g": "Name the colours and describe things with sein.",
+     "p": [
+      "Rot, blau, grün, gelb, schwarz, weiß, grau, braun, orange, rosa and lila.",
+      "After sein, colours have no ending: Das Auto ist rot. Der Himmel ist blau. Die Bananen sind gelb.",
+      "Hell- and dunkel- make light and dark shades: hellblau, dunkelgrün. Was ist deine Lieblingsfarbe?"
+     ],
+     "q": "Was ist deine Lieblingsfarbe, and what is one thing you own in that colour?",
+     "c": "Describe five things around you with their colour: Der Stuhl ist braun, die Tasse ist weiß..."
+    },
+    "de": {
+     "t": "Farben",
+     "g": "Du nennst die Farben und beschreibst Dinge mit sein.",
+     "p": [
+      "Rot, blau, grün, gelb, schwarz, weiß, grau, braun, orange, rosa und lila.",
+      "Nach sein haben Farben keine Endung: Das Auto ist rot. Der Himmel ist blau. Die Bananen sind gelb.",
+      "Hell- und dunkel- machen helle und dunkle Töne: hellblau, dunkelgrün."
+     ],
+     "q": "Was ist deine Lieblingsfarbe, und welches Ding hast du in dieser Farbe?",
+     "c": "Beschreib fünf Dinge um dich herum mit ihrer Farbe: Der Stuhl ist braun, die Tasse ist weiß..."
+    },
+    "es": {
+     "t": "Los colores",
+     "g": "Nombra los colores y describe cosas con sein.",
+     "p": [
+      "Rot, blau, grün, gelb, schwarz, weiß, grau, braun, orange, rosa y lila.",
+      "Después de sein los colores no llevan terminación: Das Auto ist rot. Der Himmel ist blau. Die Bananen sind gelb.",
+      "Hell- y dunkel- forman tonos claros y oscuros: hellblau (azul claro), dunkelgrün (verde oscuro)."
+     ],
+     "q": "¿Was ist deine Lieblingsfarbe, y qué cosa tienes de ese color?",
+     "c": "Describe cinco cosas a tu alrededor con su color: Der Stuhl ist braun, die Tasse ist weiß..."
+    },
+    "fr": {
+     "t": "Les couleurs",
+     "g": "Nommer les couleurs et décrire des objets avec sein.",
+     "p": [
+      "Rot, blau, grün, gelb, schwarz, weiß, grau, braun, orange, rosa et lila.",
+      "Après sein, la couleur ne prend pas de terminaison : Das Auto ist rot. Der Himmel ist blau. Die Bananen sind gelb.",
+      "Hell- et dunkel- donnent les nuances claires et foncées : hellblau (bleu clair), dunkelgrün (vert foncé)."
+     ],
+     "q": "Was ist deine Lieblingsfarbe, et quel objet as-tu de cette couleur ?",
+     "c": "Décris cinq objets autour de toi avec leur couleur : Der Stuhl ist braun, die Tasse ist weiß..."
+    },
+    "it": {
+     "t": "I colori",
+     "g": "Nomini i colori e descrivi le cose con sein.",
+     "p": [
+      "Rot, blau, grün, gelb, schwarz, weiß, grau, braun, orange, rosa e lila.",
+      "Dopo sein i colori non hanno desinenza: Das Auto ist rot. Der Himmel ist blau. Die Bananen sind gelb.",
+      "Hell- e dunkel- formano le tonalità chiare e scure: hellblau (azzurro chiaro), dunkelgrün (verde scuro)."
+     ],
+     "q": "Was ist deine Lieblingsfarbe, e che cosa hai di quel colore?",
+     "c": "Descrivi cinque cose intorno a te con il loro colore: Der Stuhl ist braun, die Tasse ist weiß..."
+    },
+    "pt": {
+     "t": "As cores",
+     "g": "Nomear as cores e descrever coisas com sein.",
+     "p": [
+      "Rot, blau, grün, gelb, schwarz, weiß, grau, braun, orange, rosa e lila.",
+      "Depois de sein as cores não têm terminação: Das Auto ist rot. Der Himmel ist blau. Die Bananen sind gelb.",
+      "Hell- e dunkel- fazem tons claros e escuros: hellblau (azul-claro), dunkelgrün (verde-escuro)."
+     ],
+     "q": "Was ist deine Lieblingsfarbe, e que coisa tens dessa cor?",
+     "c": "Descreve cinco coisas à tua volta com a sua cor: Der Stuhl ist braun, die Tasse ist weiß..."
+    },
+    "pt_BR": {
+     "t": "As cores",
+     "g": "Nomear as cores e descrever coisas com sein.",
+     "p": [
+      "Rot, blau, grün, gelb, schwarz, weiß, grau, braun, orange, rosa e lila.",
+      "Depois de sein as cores não têm terminação: Das Auto ist rot. Der Himmel ist blau. Die Bananen sind gelb.",
+      "Hell- e dunkel- fazem tons claros e escuros: hellblau (azul-claro), dunkelgrün (verde-escuro)."
+     ],
+     "q": "Was ist deine Lieblingsfarbe, e que coisa você tem dessa cor?",
+     "c": "Descreva cinco coisas ao seu redor com a cor delas: Der Stuhl ist braun, die Tasse ist weiß..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rot",
+      "ex": "Die Tomate ist rot."
+     },
+     {
+      "w": "blau",
+      "ex": "Der Himmel ist heute blau."
+     },
+     {
+      "w": "grün",
+      "ex": "Das Gras ist grün."
+     },
+     {
+      "w": "gelb",
+      "ex": "Die Bananen sind gelb."
+     },
+     {
+      "w": "schwarz",
+      "ex": "Meine Katze ist schwarz."
+     },
+     {
+      "w": "die Lieblingsfarbe",
+      "ex": "Meine Lieblingsfarbe ist Grün."
+     }
+    ],
+    "gram": "Nach sein keine Endung: Die Tasche ist rot. hell-/dunkel-: hellblau, dunkelrot. Frage: Welche Farbe hat das Auto?"
+   }
+  },
+  {
+   "d": 27,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing people",
+     "g": "Describe how people look and what they are like.",
+     "p": [
+      "Looks: groß (tall), klein (short), jung, alt, schlank; hair: Er hat kurze Haare, sie hat blonde Haare.",
+      "Personality: nett (nice), lustig (funny), freundlich, ruhig (quiet), klug (clever), sympathisch (likeable).",
+      "Soften or boost with sehr, ziemlich and ein bisschen: Er ist sehr nett, aber ein bisschen ruhig."
+     ],
+     "q": "Describe your best friend to me in German with two looks words and two personality words.",
+     "c": "Write a short description of three people you know, using sehr, ziemlich or ein bisschen."
+    },
+    "de": {
+     "t": "Menschen beschreiben",
+     "g": "Du beschreibst, wie Menschen aussehen und wie sie sind.",
+     "p": [
+      "Aussehen: groß, klein, jung, alt, schlank; Haare: Er hat kurze Haare, sie hat blonde Haare.",
+      "Charakter: nett, lustig, freundlich, ruhig, klug, sympathisch.",
+      "Mit sehr, ziemlich und ein bisschen machst du es stärker oder schwächer: Er ist sehr nett, aber ein bisschen ruhig."
+     ],
+     "q": "Beschreib mir deine beste Freundin oder deinen besten Freund mit zwei Wörtern für Aussehen und zwei für Charakter.",
+     "c": "Schreib eine kurze Beschreibung von drei Menschen, die du kennst, mit sehr, ziemlich oder ein bisschen."
+    },
+    "es": {
+     "t": "Describir a personas",
+     "g": "Describe cómo es la gente físicamente y de carácter.",
+     "p": [
+      "Aspecto: groß (alto), klein (bajo), jung, alt, schlank (delgado); pelo: Er hat kurze Haare, sie hat blonde Haare.",
+      "Carácter: nett (majo), lustig (divertido), freundlich (amable), ruhig (tranquilo), klug (listo), sympathisch (simpático).",
+      "Suaviza o refuerza con sehr, ziemlich y ein bisschen: Er ist sehr nett, aber ein bisschen ruhig."
+     ],
+     "q": "Descríbeme a tu mejor amigo o amiga en alemán con dos palabras de aspecto y dos de carácter.",
+     "c": "Escribe una breve descripción de tres personas que conoces, usando sehr, ziemlich o ein bisschen."
+    },
+    "fr": {
+     "t": "Décrire des personnes",
+     "g": "Décrire l'apparence et le caractère des gens.",
+     "p": [
+      "Apparence : groß (grand), klein (petit), jung, alt, schlank (mince) ; cheveux : Er hat kurze Haare, sie hat blonde Haare.",
+      "Caractère : nett (gentil), lustig (drôle), freundlich (aimable), ruhig (calme), klug (intelligent), sympathisch.",
+      "Nuance avec sehr, ziemlich et ein bisschen : Er ist sehr nett, aber ein bisschen ruhig."
+     ],
+     "q": "Décris-moi ton meilleur ami ou ta meilleure amie en allemand avec deux mots d'apparence et deux de caractère.",
+     "c": "Écris une courte description de trois personnes que tu connais avec sehr, ziemlich ou ein bisschen."
+    },
+    "it": {
+     "t": "Descrivere le persone",
+     "g": "Descrivi l'aspetto e il carattere delle persone.",
+     "p": [
+      "Aspetto: groß (alto), klein (basso), jung, alt, schlank (magro); capelli: Er hat kurze Haare, sie hat blonde Haare.",
+      "Carattere: nett (gentile), lustig (divertente), freundlich (cordiale), ruhig (tranquillo), klug (intelligente), sympathisch (simpatico).",
+      "Attenua o rafforza con sehr, ziemlich ed ein bisschen: Er ist sehr nett, aber ein bisschen ruhig."
+     ],
+     "q": "Descrivimi il tuo migliore amico o la tua migliore amica in tedesco con due parole sull'aspetto e due sul carattere.",
+     "c": "Scrivi una breve descrizione di tre persone che conosci, usando sehr, ziemlich o ein bisschen."
+    },
+    "pt": {
+     "t": "Descrever pessoas",
+     "g": "Descrever a aparência e a personalidade das pessoas.",
+     "p": [
+      "Aparência: groß (alto), klein (baixo), jung, alt, schlank (magro); cabelo: Er hat kurze Haare, sie hat blonde Haare.",
+      "Personalidade: nett (simpático), lustig (divertido), freundlich (amável), ruhig (calmo), klug (inteligente), sympathisch.",
+      "Suaviza ou reforça com sehr, ziemlich e ein bisschen: Er ist sehr nett, aber ein bisschen ruhig."
+     ],
+     "q": "Descreve-me o teu melhor amigo ou a tua melhor amiga em alemão com duas palavras de aparência e duas de personalidade.",
+     "c": "Escreve uma breve descrição de três pessoas que conheces, com sehr, ziemlich ou ein bisschen."
+    },
+    "pt_BR": {
+     "t": "Descrevendo pessoas",
+     "g": "Descrever a aparência e a personalidade das pessoas.",
+     "p": [
+      "Aparência: groß (alto), klein (baixo), jung, alt, schlank (magro); cabelo: Er hat kurze Haare, sie hat blonde Haare.",
+      "Personalidade: nett (legal), lustig (engraçado), freundlich (simpático), ruhig (calmo), klug (inteligente), sympathisch.",
+      "Suavize ou reforce com sehr, ziemlich e ein bisschen: Er ist sehr nett, aber ein bisschen ruhig."
+     ],
+     "q": "Descreva para mim seu melhor amigo ou sua melhor amiga em alemão com duas palavras de aparência e duas de personalidade.",
+     "c": "Escreva uma breve descrição de três pessoas que você conhece, com sehr, ziemlich ou ein bisschen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "groß",
+      "ex": "Mein Bruder ist sehr groß."
+     },
+     {
+      "w": "klein",
+      "ex": "Meine Oma ist klein und lustig."
+     },
+     {
+      "w": "nett",
+      "ex": "Die Lehrerin ist sehr nett."
+     },
+     {
+      "w": "lustig",
+      "ex": "Tom ist immer lustig."
+     },
+     {
+      "w": "ruhig",
+      "ex": "Sie ist ein bisschen ruhig."
+     },
+     {
+      "w": "die Haare",
+      "ex": "Er hat kurze, braune Haare."
+     }
+    ],
+    "gram": "Beschreiben mit sein + Adjektiv: Sie ist nett. Mit haben: Er hat blaue Augen. Verstärken: sehr, ziemlich, ein bisschen."
+   }
+  },
+  {
+   "d": 28,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Gern: likes and dislikes",
+     "g": "Say what you like doing with gern, and what you prefer with lieber and am liebsten.",
+     "p": [
+      "Put gern after the verb to say you like doing something: Ich spiele gern Fußball. Ich lese gern.",
+      "Nicht gern means you do not like it: Ich esse nicht gern Fisch.",
+      "Lieber means rather, am liebsten most of all: Ich trinke gern Tee, lieber Kaffee und am liebsten Kakao."
+     ],
+     "q": "What do you like doing at the weekend? Tell me with gern, and what you do am liebsten.",
+     "c": "Write three sentences: one with gern, one with nicht gern and one with am liebsten."
+    },
+    "de": {
+     "t": "Gern: Vorlieben und Abneigungen",
+     "g": "Du sagst mit gern, was du gern machst, und mit lieber und am liebsten, was du vorziehst.",
+     "p": [
+      "Gern steht nach dem Verb: Ich spiele gern Fußball. Ich lese gern.",
+      "Nicht gern heißt, du magst es nicht: Ich esse nicht gern Fisch.",
+      "Lieber ist die Steigerung, am liebsten die Spitze: Ich trinke gern Tee, lieber Kaffee und am liebsten Kakao."
+     ],
+     "q": "Was machst du am Wochenende gern? Und was machst du am liebsten?",
+     "c": "Schreib drei Sätze: einen mit gern, einen mit nicht gern und einen mit am liebsten."
+    },
+    "es": {
+     "t": "Gern: gustos y preferencias",
+     "g": "Di lo que te gusta hacer con gern y lo que prefieres con lieber y am liebsten.",
+     "p": [
+      "Gern va detrás del verbo para decir que te gusta hacer algo: Ich spiele gern Fußball. Ich lese gern.",
+      "Nicht gern significa que no te gusta: Ich esse nicht gern Fisch.",
+      "Lieber significa más bien, am liebsten lo que más: Ich trinke gern Tee, lieber Kaffee und am liebsten Kakao."
+     ],
+     "q": "¿Qué te gusta hacer el fin de semana? Dímelo con gern y lo que haces am liebsten.",
+     "c": "Escribe tres frases: una con gern, otra con nicht gern y otra con am liebsten."
+    },
+    "fr": {
+     "t": "Gern : goûts et préférences",
+     "g": "Dire ce que tu aimes faire avec gern, et ce que tu préfères avec lieber et am liebsten.",
+     "p": [
+      "Gern se place après le verbe pour dire qu'on aime faire quelque chose : Ich spiele gern Fußball. Ich lese gern.",
+      "Nicht gern veut dire qu'on n'aime pas : Ich esse nicht gern Fisch.",
+      "Lieber veut dire plutôt, am liebsten par-dessus tout : Ich trinke gern Tee, lieber Kaffee und am liebsten Kakao."
+     ],
+     "q": "Qu'aimes-tu faire le week-end ? Dis-le avec gern, et ce que tu fais am liebsten.",
+     "c": "Écris trois phrases : une avec gern, une avec nicht gern et une avec am liebsten."
+    },
+    "it": {
+     "t": "Gern: gusti e preferenze",
+     "g": "Dici che cosa ti piace fare con gern e che cosa preferisci con lieber e am liebsten.",
+     "p": [
+      "Gern va dopo il verbo per dire che ti piace fare qualcosa: Ich spiele gern Fußball. Ich lese gern.",
+      "Nicht gern vuol dire che non ti piace: Ich esse nicht gern Fisch.",
+      "Lieber vuol dire piuttosto, am liebsten più di tutto: Ich trinke gern Tee, lieber Kaffee und am liebsten Kakao."
+     ],
+     "q": "Che cosa ti piace fare nel fine settimana? Dimmelo con gern, e che cosa fai am liebsten.",
+     "c": "Scrivi tre frasi: una con gern, una con nicht gern e una con am liebsten."
+    },
+    "pt": {
+     "t": "Gern: gostos e preferências",
+     "g": "Dizer o que gostas de fazer com gern e o que preferes com lieber e am liebsten.",
+     "p": [
+      "Gern vem depois do verbo para dizer que gostas de fazer algo: Ich spiele gern Fußball. Ich lese gern.",
+      "Nicht gern quer dizer que não gostas: Ich esse nicht gern Fisch.",
+      "Lieber quer dizer de preferência, am liebsten acima de tudo: Ich trinke gern Tee, lieber Kaffee und am liebsten Kakao."
+     ],
+     "q": "O que gostas de fazer ao fim de semana? Diz-me com gern, e o que fazes am liebsten.",
+     "c": "Escreve três frases: uma com gern, uma com nicht gern e uma com am liebsten."
+    },
+    "pt_BR": {
+     "t": "Gern: gostos e preferências",
+     "g": "Dizer o que você gosta de fazer com gern e o que prefere com lieber e am liebsten.",
+     "p": [
+      "Gern vem depois do verbo para dizer que você gosta de fazer algo: Ich spiele gern Fußball. Ich lese gern.",
+      "Nicht gern quer dizer que você não gosta: Ich esse nicht gern Fisch.",
+      "Lieber quer dizer de preferência, am liebsten acima de tudo: Ich trinke gern Tee, lieber Kaffee und am liebsten Kakao."
+     ],
+     "q": "O que você gosta de fazer no fim de semana? Me conte com gern, e o que você faz am liebsten.",
+     "c": "Escreva três frases: uma com gern, uma com nicht gern e uma com am liebsten."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gern",
+      "ex": "Ich lese gern Krimis."
+     },
+     {
+      "w": "nicht gern",
+      "ex": "Ich esse nicht gern Fisch."
+     },
+     {
+      "w": "lieber",
+      "ex": "Ich trinke lieber Tee."
+     },
+     {
+      "w": "am liebsten",
+      "ex": "Am liebsten spiele ich Tennis."
+     },
+     {
+      "w": "Fußball spielen",
+      "ex": "Wir spielen gern Fußball."
+     },
+     {
+      "w": "tanzen",
+      "ex": "Tanzt du gern?"
+     }
+    ],
+    "gram": "Verb + gern: Ich schwimme gern. Steigerung: gern – lieber – am liebsten. Verneinung: Ich koche nicht gern."
+   }
+  },
+  {
+   "d": 29,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling the time",
+     "g": "Ask for the time and say it in everyday German.",
+     "p": [
+      "Ask wie spät ist es? or wie viel Uhr ist es? The answer: Es ist drei Uhr. Es ist Viertel nach drei.",
+      "Halb looks forward to the next hour: halb vier means 3:30, half towards four!",
+      "Use nach (past) and vor (to): zehn nach acht (8:10), Viertel vor neun (8:45). Timetables use 24 hours: 18:30 Uhr."
+     ],
+     "q": "Wie spät ist es jetzt bei dir? Answer in German, the everyday way.",
+     "c": "Each time you check the clock today, say the time in German, at least five times."
+    },
+    "de": {
+     "t": "Die Uhrzeit",
+     "g": "Du fragst nach der Uhrzeit und sagst sie im Alltagsdeutsch.",
+     "p": [
+      "Frag: Wie spät ist es? oder Wie viel Uhr ist es? Antwort: Es ist drei Uhr. Es ist Viertel nach drei.",
+      "Halb schaut auf die nächste Stunde: halb vier ist 3:30 Uhr!",
+      "Mit nach und vor: zehn nach acht (8:10), Viertel vor neun (8:45). Fahrpläne benutzen 24 Stunden: 18:30 Uhr."
+     ],
+     "q": "Wie spät ist es jetzt bei dir? Antworte auf Deutsch, so wie im Alltag.",
+     "c": "Sag heute jedes Mal die Uhrzeit auf Deutsch, wenn du auf die Uhr schaust, mindestens fünfmal."
+    },
+    "es": {
+     "t": "La hora",
+     "g": "Pregunta la hora y dila como en el alemán de todos los días.",
+     "p": [
+      "Pregunta wie spät ist es? o wie viel Uhr ist es? Respuesta: Es ist drei Uhr. Es ist Viertel nach drei.",
+      "Halb mira a la hora siguiente: halb vier son las 3:30, ¡media hacia las cuatro!",
+      "Usa nach (y) y vor (menos): zehn nach acht (8:10), Viertel vor neun (8:45). Los horarios usan 24 horas: 18:30 Uhr."
+     ],
+     "q": "¿Wie spät ist es ahora donde estás? Responde en alemán, de la forma cotidiana.",
+     "c": "Cada vez que mires el reloj hoy, di la hora en alemán, al menos cinco veces."
+    },
+    "fr": {
+     "t": "Dire l'heure",
+     "g": "Demander l'heure et la dire comme dans l'allemand de tous les jours.",
+     "p": [
+      "Demande wie spät ist es ? ou wie viel Uhr ist es ? Réponse : Es ist drei Uhr. Es ist Viertel nach drei.",
+      "Halb regarde vers l'heure suivante : halb vier veut dire 3 h 30, la moitié vers quatre heures !",
+      "Avec nach (et) et vor (moins) : zehn nach acht (8 h 10), Viertel vor neun (8 h 45). Les horaires officiels utilisent 24 heures : 18:30 Uhr."
+     ],
+     "q": "Wie spät ist es maintenant chez toi ? Réponds en allemand, à la façon courante.",
+     "c": "Chaque fois que tu regardes l'heure aujourd'hui, dis-la en allemand, au moins cinq fois."
+    },
+    "it": {
+     "t": "L'ora",
+     "g": "Chiedi l'ora e dilla come nel tedesco di tutti i giorni.",
+     "p": [
+      "Chiedi wie spät ist es? o wie viel Uhr ist es? Risposta: Es ist drei Uhr. Es ist Viertel nach drei.",
+      "Halb guarda all'ora successiva: halb vier vuol dire 3:30, metà verso le quattro!",
+      "Usa nach (e) e vor (meno): zehn nach acht (8:10), Viertel vor neun (8:45). Gli orari usano le 24 ore: 18:30 Uhr."
+     ],
+     "q": "Wie spät ist es adesso da te? Rispondi in tedesco, nel modo quotidiano.",
+     "c": "Ogni volta che guardi l'orologio oggi, di' l'ora in tedesco, almeno cinque volte."
+    },
+    "pt": {
+     "t": "As horas",
+     "g": "Perguntar as horas e dizê-las no alemão do dia a dia.",
+     "p": [
+      "Pergunta wie spät ist es? ou wie viel Uhr ist es? Resposta: Es ist drei Uhr. Es ist Viertel nach drei.",
+      "Halb olha para a hora seguinte: halb vier quer dizer 3h30, meia hora a caminho das quatro!",
+      "Usa nach (e) e vor (menos): zehn nach acht (8h10), Viertel vor neun (8h45). Os horários usam 24 horas: 18:30 Uhr."
+     ],
+     "q": "Wie spät ist es agora aí? Responde em alemão, da forma do dia a dia.",
+     "c": "Cada vez que olhares para o relógio hoje, diz as horas em alemão, pelo menos cinco vezes."
+    },
+    "pt_BR": {
+     "t": "As horas",
+     "g": "Perguntar as horas e dizer como no alemão do dia a dia.",
+     "p": [
+      "Pergunte wie spät ist es? ou wie viel Uhr ist es? Resposta: Es ist drei Uhr. Es ist Viertel nach drei.",
+      "Halb olha para a hora seguinte: halb vier quer dizer 3h30, meia hora indo para as quatro!",
+      "Use nach (e) e vor (para as): zehn nach acht (8h10), Viertel vor neun (8h45). Horários usam 24 horas: 18:30 Uhr."
+     ],
+     "q": "Wie spät ist es agora aí? Responda em alemão, do jeito do dia a dia.",
+     "c": "Cada vez que olhar o relógio hoje, diga a hora em alemão, pelo menos cinco vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Wie spät ist es?",
+      "ex": "Entschuldigung, wie spät ist es?"
+     },
+     {
+      "w": "Uhr",
+      "ex": "Es ist acht Uhr."
+     },
+     {
+      "w": "Viertel nach",
+      "ex": "Es ist Viertel nach zwei."
+     },
+     {
+      "w": "halb",
+      "ex": "Es ist halb vier."
+     },
+     {
+      "w": "Viertel vor",
+      "ex": "Es ist Viertel vor neun."
+     },
+     {
+      "w": "um",
+      "ex": "Der Film beginnt um zwanzig Uhr."
+     }
+    ],
+    "gram": "Es ist halb drei = 2:30 (halb zur nächsten Stunde!). zehn nach / vor, Viertel nach / vor. Wann? – um acht Uhr."
+   }
+  },
+  {
+   "d": 30,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: first month of German",
+     "g": "Look back at your first month and connect greetings, verbs, articles, word order and numbers.",
+     "p": [
+      "You can greet, introduce yourself, ask wie geht's? and choose between du and Sie.",
+      "You know sein, haben and regular verbs, der/die/das, ein/eine, kein and nicht, and the verb in position 2.",
+      "You can count to 100, tell the time, and name days, months, colours and family members. Great progress!"
+     ],
+     "q": "Introduce yourself to me in four German sentences: name, origin, where you live and one hobby.",
+     "c": "Write a short paragraph about yourself using sein, haben, gern and one sentence that starts with a time word."
+    },
+    "de": {
+     "t": "Wiederholung: der erste Monat",
+     "g": "Du schaust auf deinen ersten Monat zurück und verbindest Grüße, Verben, Artikel, Satzbau und Zahlen.",
+     "p": [
+      "Du kannst grüßen, dich vorstellen, wie geht's? fragen und zwischen du und Sie wählen.",
+      "Du kennst sein, haben und regelmäßige Verben, der/die/das, ein/eine, kein und nicht und das Verb auf Position 2.",
+      "Du zählst bis 100, sagst die Uhrzeit und nennst Tage, Monate, Farben und Familie. Toller Fortschritt!"
+     ],
+     "q": "Stell dich mir in vier Sätzen auf Deutsch vor: Name, Herkunft, Wohnort und ein Hobby.",
+     "c": "Schreib einen kurzen Text über dich mit sein, haben, gern und einem Satz, der mit einem Zeitwort beginnt."
+    },
+    "es": {
+     "t": "Repaso: el primer mes",
+     "g": "Repasa tu primer mes y une saludos, verbos, artículos, orden de palabras y números.",
+     "p": [
+      "Ya sabes saludar, presentarte, preguntar wie geht's? y elegir entre du y Sie.",
+      "Conoces sein, haben y los verbos regulares, der/die/das, ein/eine, kein y nicht, y el verbo en posición 2.",
+      "Sabes contar hasta 100, decir la hora y nombrar días, meses, colores y familia. ¡Gran avance!"
+     ],
+     "q": "Preséntate en cuatro frases en alemán: nombre, origen, dónde vives y una afición.",
+     "c": "Escribe un párrafo corto sobre ti con sein, haben, gern y una frase que empiece por una palabra de tiempo."
+    },
+    "fr": {
+     "t": "Révision : le premier mois",
+     "g": "Revoir ton premier mois en reliant salutations, verbes, articles, ordre des mots et nombres.",
+     "p": [
+      "Tu sais saluer, te présenter, demander wie geht's ? et choisir entre du et Sie.",
+      "Tu connais sein, haben et les verbes réguliers, der/die/das, ein/eine, kein et nicht, et le verbe en position 2.",
+      "Tu comptes jusqu'à 100, tu dis l'heure et tu nommes jours, mois, couleurs et famille. Beau progrès !"
+     ],
+     "q": "Présente-toi en quatre phrases en allemand : nom, origine, lieu d'habitation et un loisir.",
+     "c": "Écris un court paragraphe sur toi avec sein, haben, gern et une phrase qui commence par un mot de temps."
+    },
+    "it": {
+     "t": "Ripasso: il primo mese",
+     "g": "Ripassi il tuo primo mese collegando saluti, verbi, articoli, ordine delle parole e numeri.",
+     "p": [
+      "Sai salutare, presentarti, chiedere wie geht's? e scegliere tra du e Sie.",
+      "Conosci sein, haben e i verbi regolari, der/die/das, ein/eine, kein e nicht, e il verbo in posizione 2.",
+      "Sai contare fino a 100, dire l'ora e nominare giorni, mesi, colori e familiari. Che progressi!"
+     ],
+     "q": "Presentati in quattro frasi in tedesco: nome, provenienza, dove abiti e un hobby.",
+     "c": "Scrivi un breve testo su di te con sein, haben, gern e una frase che comincia con una parola di tempo."
+    },
+    "pt": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Rever o teu primeiro mês ligando saudações, verbos, artigos, ordem das palavras e números.",
+     "p": [
+      "Já sabes cumprimentar, apresentar-te, perguntar wie geht's? e escolher entre du e Sie.",
+      "Conheces sein, haben e os verbos regulares, der/die/das, ein/eine, kein e nicht, e o verbo na posição 2.",
+      "Contas até 100, dizes as horas e nomeias dias, meses, cores e família. Grande progresso!"
+     ],
+     "q": "Apresenta-te em quatro frases em alemão: nome, origem, onde moras e um passatempo.",
+     "c": "Escreve um pequeno texto sobre ti com sein, haben, gern e uma frase que comece por uma palavra de tempo."
+    },
+    "pt_BR": {
+     "t": "Revisão: o primeiro mês",
+     "g": "Revisar seu primeiro mês ligando cumprimentos, verbos, artigos, ordem das palavras e números.",
+     "p": [
+      "Você já sabe cumprimentar, se apresentar, perguntar wie geht's? e escolher entre du e Sie.",
+      "Você conhece sein, haben e os verbos regulares, der/die/das, ein/eine, kein e nicht, e o verbo na posição 2.",
+      "Você conta até 100, diz as horas e nomeia dias, meses, cores e família. Que progresso!"
+     ],
+     "q": "Se apresente em quatro frases em alemão: nome, origem, onde mora e um hobby.",
+     "c": "Escreva um pequeno texto sobre você com sein, haben, gern e uma frase que comece com uma palavra de tempo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich vorstellen",
+      "ex": "Darf ich mich vorstellen? Ich bin Jana."
+     },
+     {
+      "w": "das Hobby",
+      "ex": "Mein Hobby ist Fotografieren."
+     },
+     {
+      "w": "wiederholen",
+      "ex": "Heute wiederholen wir alles."
+     },
+     {
+      "w": "schon",
+      "ex": "Ich kann schon viel Deutsch."
+     },
+     {
+      "w": "noch",
+      "ex": "Ich lerne noch."
+     },
+     {
+      "w": "super",
+      "ex": "Das machst du super!"
+     }
+    ],
+    "gram": "Wiederholung: Ich bin..., ich habe..., ich wohne in... Verb auf Position 2: Am Abend lerne ich Deutsch. Kein vor Nomen."
+   }
+  }
+ ]
+}

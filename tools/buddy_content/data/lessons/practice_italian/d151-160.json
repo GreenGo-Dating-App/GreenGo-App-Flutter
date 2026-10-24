@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 151,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: Italian culture and food",
+     "g": "Recap culture topics, hobbies and leisure vocabulary.",
+     "p": [
+      "Leisure: fare sport, giocare a calcio, suonare la chitarra, guardare una serie, sto leggendo un giallo.",
+      "Culture: Carnevale, Ferragosto, la Befana, il presepe, il cenone; tech and social: scaricare, mandare un vocale.",
+      "Food: un caffè al banco, la pizza napoletana, le orecchiette, l'aperitivo, un cono con due gusti, il tiramisù."
+     ],
+     "q": "If an Italian friend visited you, which food and which tradition from your country would you share?",
+     "c": "Write a short paragraph about your perfect Italian Sunday: food, coffee, a hobby and an aperitivo."
+    },
+    "de": {
+     "t": "Wiederholung: italienische Kultur und Essen",
+     "g": "Du wiederholst Kulturthemen, Hobbys und Freizeitwortschatz.",
+     "p": [
+      "Freizeit: fare sport, giocare a calcio, suonare la chitarra, guardare una serie, sto leggendo un giallo.",
+      "Kultur: Carnevale, Ferragosto, la Befana, il presepe, il cenone; Technik und Social: scaricare, mandare un vocale.",
+      "Essen: un caffè al banco, la pizza napoletana, le orecchiette, l'aperitivo, un cono con due gusti, il tiramisù."
+     ],
+     "q": "Wenn dich ein italienischer Freund besuchte, welches Essen und welche Tradition deines Landes würdest du teilen?",
+     "c": "Schreib einen kurzen Text über deinen perfekten italienischen Sonntag: Essen, Kaffee, ein Hobby und ein Aperitivo."
+    },
+    "es": {
+     "t": "Repaso: cultura y comida italianas",
+     "g": "Repasar temas de cultura, aficiones y vocabulario de ocio.",
+     "p": [
+      "Ocio: fare sport, giocare a calcio, suonare la chitarra, guardare una serie, sto leggendo un giallo.",
+      "Cultura: Carnevale, Ferragosto, la Befana, il presepe, il cenone; tecnología y redes: scaricare, mandare un vocale.",
+      "Comida: un caffè al banco, la pizza napoletana, le orecchiette, l'aperitivo, un cono con due gusti, il tiramisù."
+     ],
+     "q": "Si un amigo italiano te visitara, ¿qué comida y qué tradición de tu país compartirías?",
+     "c": "Escribe un párrafo corto sobre tu domingo italiano perfecto: comida, café, una afición y un aperitivo."
+    },
+    "fr": {
+     "t": "Révision : culture et cuisine italiennes",
+     "g": "Revoir les thèmes culturels, les loisirs et le vocabulaire du temps libre.",
+     "p": [
+      "Loisirs : fare sport, giocare a calcio, suonare la chitarra, guardare una serie, sto leggendo un giallo.",
+      "Culture : Carnevale, Ferragosto, la Befana, il presepe, il cenone ; tech et réseaux : scaricare, mandare un vocale.",
+      "Cuisine : un caffè al banco, la pizza napoletana, le orecchiette, l'aperitivo, un cono con due gusti, il tiramisù."
+     ],
+     "q": "Si un ami italien venait te voir, quel plat et quelle tradition de ton pays partagerais-tu ?",
+     "c": "Écris un court paragraphe sur ton dimanche italien idéal : repas, café, un loisir et un aperitivo."
+    },
+    "it": {
+     "t": "Ripasso: cultura e cucina italiana",
+     "g": "Ripassare cultura, hobby e lessico del tempo libero.",
+     "p": [
+      "Tempo libero: fare sport, giocare a calcio, suonare la chitarra, guardare una serie, sto leggendo un giallo.",
+      "Cultura: Carnevale, Ferragosto, la Befana, il presepe, il cenone; tecnologia e social: scaricare, mandare un vocale.",
+      "Cucina: un caffè al banco, la pizza napoletana, le orecchiette, l'aperitivo, un cono con due gusti, il tiramisù."
+     ],
+     "q": "Se un amico italiano venisse a trovarti, quale piatto e quale tradizione del tuo paese condivideresti?",
+     "c": "Scrivi un breve testo sulla tua domenica italiana perfetta: cibo, caffè, un hobby e un aperitivo."
+    },
+    "pt": {
+     "t": "Revisão: cultura e comida italianas",
+     "g": "Rever temas de cultura, passatempos e vocabulário de lazer.",
+     "p": [
+      "Lazer: fare sport, giocare a calcio, suonare la chitarra, guardare una serie, sto leggendo un giallo.",
+      "Cultura: Carnevale, Ferragosto, la Befana, il presepe, il cenone; tecnologia e redes: scaricare, mandare un vocale.",
+      "Comida: un caffè al banco, la pizza napoletana, le orecchiette, l'aperitivo, un cono con due gusti, il tiramisù."
+     ],
+     "q": "Se um amigo italiano te visitasse, que comida e que tradição do teu país partilharias?",
+     "c": "Escreve um parágrafo curto sobre o teu domingo italiano perfeito: comida, café, um passatempo e um aperitivo."
+    },
+    "pt_BR": {
+     "t": "Revisão: cultura e comida italianas",
+     "g": "Revisar temas de cultura, hobbies e vocabulário de lazer.",
+     "p": [
+      "Lazer: fare sport, giocare a calcio, suonare la chitarra, guardare una serie, sto leggendo un giallo.",
+      "Cultura: Carnevale, Ferragosto, la Befana, il presepe, il cenone; tecnologia e redes: scaricare, mandare un vocale.",
+      "Comida: un caffè al banco, la pizza napoletana, le orecchiette, l'aperitivo, un cono con due gusti, il tiramisù."
+     ],
+     "q": "Se um amigo italiano visitasse você, que comida e que tradição do seu país você compartilharia?",
+     "c": "Escreva um parágrafo curto sobre seu domingo italiano perfeito: comida, café, um hobby e um aperitivo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il tempo libero",
+      "ex": "Nel tempo libero suono il pianoforte."
+     },
+     {
+      "w": "la tradizione",
+      "ex": "Il presepe è una tradizione molto sentita."
+     },
+     {
+      "w": "al banco",
+      "ex": "La mattina prendo il caffè al banco."
+     },
+     {
+      "w": "fare l'aperitivo",
+      "ex": "Il venerdì facciamo l'aperitivo con i colleghi."
+     },
+     {
+      "w": "il piatto tipico",
+      "ex": "Qual è il piatto tipico della tua città?"
+     },
+     {
+      "w": "il dolce",
+      "ex": "Come dolce prendo una panna cotta."
+     }
+    ],
+    "gram": "Ripasso: fare / giocare a / suonare; a Natale, a Ferragosto; partitivi e articoli con cibi: degli spaghetti, la pizza."
+   }
+  },
+  {
+   "d": 152,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Renting a flat",
+     "g": "Read housing ads and ask the right questions.",
+     "p": [
+      "Types: un monolocale (one room), un bilocale (two rooms), un trilocale. Arredato means furnished.",
+      "Money words: l'affitto (rent), le spese condominiali (building costs), spese incluse / escluse, la caparra (deposit).",
+      "Il contratto (lease), il padrone di casa (landlord), l'inquilino (tenant). Ask: è ancora disponibile? Si può visitare?"
+     ],
+     "q": "What would your ideal flat in Italy be like: monolocale or bilocale, arredato or not?",
+     "c": "Write a short housing ad with si affitta: type, rooms, furnished or not, spese incluse or escluse."
+    },
+    "de": {
+     "t": "Eine Wohnung mieten",
+     "g": "Du liest Wohnungsanzeigen und stellst die richtigen Fragen.",
+     "p": [
+      "Arten: un monolocale (Einzimmer), un bilocale (zwei Zimmer), un trilocale. Arredato heißt möbliert.",
+      "Geldwörter: l'affitto (Miete), le spese condominiali (Nebenkosten), spese incluse / escluse, la caparra (Kaution).",
+      "Il contratto (Mietvertrag), il padrone di casa (Vermieter), l'inquilino (Mieter). Frag: è ancora disponibile? Si può visitare?"
+     ],
+     "q": "Wie wäre deine ideale Wohnung in Italien: monolocale oder bilocale, arredato oder nicht?",
+     "c": "Schreib eine kurze Wohnungsanzeige mit si affitta: Art, Zimmer, möbliert oder nicht, spese incluse oder escluse."
+    },
+    "es": {
+     "t": "Alquilar un piso",
+     "g": "Leer anuncios de vivienda y hacer las preguntas adecuadas.",
+     "p": [
+      "Tipos: un monolocale (estudio), un bilocale (dos ambientes), un trilocale. Arredato significa amueblado.",
+      "Dinero: l'affitto (alquiler), le spese condominiali (gastos de comunidad), spese incluse / escluse, la caparra (fianza).",
+      "Il contratto, il padrone di casa (casero), l'inquilino. Pregunta: è ancora disponibile? Si può visitare?"
+     ],
+     "q": "¿Cómo sería tu piso ideal en Italia: monolocale o bilocale, arredato o no?",
+     "c": "Escribe un anuncio corto con si affitta: tipo, habitaciones, amueblado o no, spese incluse o escluse."
+    },
+    "fr": {
+     "t": "Louer un appartement",
+     "g": "Lire des annonces immobilières et poser les bonnes questions.",
+     "p": [
+      "Types : un monolocale (studio), un bilocale (deux pièces), un trilocale. Arredato veut dire meublé.",
+      "Argent : l'affitto (le loyer), le spese condominiali (charges), spese incluse / escluse, la caparra (caution).",
+      "Il contratto (bail), il padrone di casa (propriétaire), l'inquilino (locataire). Demande : è ancora disponibile ? Si può visitare ?"
+     ],
+     "q": "Comment serait ton appartement idéal en Italie : monolocale ou bilocale, arredato ou non ?",
+     "c": "Écris une petite annonce avec si affitta : type, pièces, meublé ou non, spese incluse ou escluse."
+    },
+    "it": {
+     "t": "Affittare un appartamento",
+     "g": "Leggere gli annunci di case e fare le domande giuste.",
+     "p": [
+      "Tipi: il monolocale, il bilocale, il trilocale. Arredato o non arredato, con cucina abitabile o angolo cottura.",
+      "Soldi: l'affitto, le spese condominiali, spese incluse o escluse, la caparra da versare alla firma.",
+      "Il contratto, il padrone di casa, l'inquilino. Domande: è ancora disponibile? Si può visitare?"
+     ],
+     "q": "Come sarebbe il tuo appartamento ideale in Italia: monolocale o bilocale, arredato o no?",
+     "c": "Scrivi un breve annuncio con si affitta: tipo, stanze, arredato o no, spese incluse o escluse."
+    },
+    "pt": {
+     "t": "Arrendar um apartamento",
+     "g": "Ler anúncios de casas e fazer as perguntas certas.",
+     "p": [
+      "Tipos: un monolocale (estúdio, T0), un bilocale (T1), un trilocale (T2). Arredato significa mobilado.",
+      "Dinheiro: l'affitto (renda), le spese condominiali (condomínio), spese incluse / escluse, la caparra (caução).",
+      "Il contratto, il padrone di casa (senhorio), l'inquilino. Pergunta: è ancora disponibile? Si può visitare?"
+     ],
+     "q": "Como seria o teu apartamento ideal em Itália: monolocale ou bilocale, arredato ou não?",
+     "c": "Escreve um anúncio curto com si affitta: tipo, divisões, mobilado ou não, spese incluse ou escluse."
+    },
+    "pt_BR": {
+     "t": "Alugar um apartamento",
+     "g": "Ler anúncios de imóveis e fazer as perguntas certas.",
+     "p": [
+      "Tipos: un monolocale (quitinete), un bilocale (sala e quarto), un trilocale. Arredato significa mobiliado.",
+      "Dinheiro: l'affitto (aluguel), le spese condominiali (condomínio), spese incluse / escluse, la caparra (caução).",
+      "Il contratto, il padrone di casa (proprietário), l'inquilino. Pergunte: è ancora disponibile? Si può visitare?"
+     ],
+     "q": "Como seria seu apartamento ideal na Itália: monolocale ou bilocale, arredato ou não?",
+     "c": "Escreva um anúncio curto com si affitta: tipo, cômodos, mobiliado ou não, spese incluse ou escluse."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il bilocale",
+      "ex": "Cerco un bilocale vicino all'università."
+     },
+     {
+      "w": "arredato",
+      "ex": "L'appartamento è arredato e luminoso."
+     },
+     {
+      "w": "l'affitto",
+      "ex": "L'affitto si paga all'inizio del mese."
+     },
+     {
+      "w": "spese incluse",
+      "ex": "Il prezzo è con spese incluse?"
+     },
+     {
+      "w": "il padrone di casa",
+      "ex": "Il padrone di casa è molto disponibile."
+     },
+     {
+      "w": "si può visitare?",
+      "ex": "L'appartamento si può visitare domani?"
+     }
+    ],
+    "gram": "Negli annunci: si affitta / affittasi bilocale arredato, spese escluse. Domande con si: si può visitare? si possono avere animali?"
+   }
+  },
+  {
+   "d": 153,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Problems and complaints",
+     "g": "Report a problem politely and ask for a solution.",
+     "p": [
+      "Describe the problem: non funziona (it does not work), è rotto (it is broken), c'è un errore nel conto, manca un pezzo.",
+      "Ask politely with the conditional: vorrei cambiarlo, potrei avere un rimborso?, potrebbe controllare, per favore?",
+      "Soften with scusi, mi dispiace disturbarla, ma... Stay calm and thank them: grazie per la pazienza."
+     ],
+     "q": "Have you ever had to complain about something in a shop or hotel? What happened?",
+     "c": "Write a polite three-line complaint to a hotel: the problem, a request with potrebbe, and a thank you."
+    },
+    "de": {
+     "t": "Probleme und Beschwerden",
+     "g": "Du meldest ein Problem höflich und bittest um eine Lösung.",
+     "p": [
+      "Problem beschreiben: non funziona (funktioniert nicht), è rotto (kaputt), c'è un errore nel conto, manca un pezzo.",
+      "Höflich mit Konditional: vorrei cambiarlo, potrei avere un rimborso?, potrebbe controllare, per favore?",
+      "Abmildern mit scusi, mi dispiace disturbarla, ma... Ruhig bleiben und danken: grazie per la pazienza."
+     ],
+     "q": "Musstest du dich schon mal in einem Laden oder Hotel beschweren? Was ist passiert?",
+     "c": "Schreib eine höfliche Beschwerde in drei Zeilen an ein Hotel: Problem, Bitte mit potrebbe und Dank."
+    },
+    "es": {
+     "t": "Problemas y reclamaciones",
+     "g": "Comunicar un problema con educación y pedir una solución.",
+     "p": [
+      "Describe el problema: non funziona, è rotto (está roto), c'è un errore nel conto (en la cuenta), manca un pezzo.",
+      "Pide con el condicional: vorrei cambiarlo, potrei avere un rimborso?, potrebbe controllare, per favore?",
+      "Suaviza con scusi, mi dispiace disturbarla, ma... Mantén la calma y agradece: grazie per la pazienza."
+     ],
+     "q": "¿Alguna vez has tenido que reclamar en una tienda o un hotel? ¿Qué pasó?",
+     "c": "Escribe una reclamación educada de tres líneas a un hotel: el problema, una petición con potrebbe y las gracias."
+    },
+    "fr": {
+     "t": "Problèmes et réclamations",
+     "g": "Signaler poliment un problème et demander une solution.",
+     "p": [
+      "Décris le problème : non funziona (ça ne marche pas), è rotto (c'est cassé), c'è un errore nel conto, manca un pezzo.",
+      "Demande au conditionnel : vorrei cambiarlo, potrei avere un rimborso ?, potrebbe controllare, per favore ?",
+      "Adoucis avec scusi, mi dispiace disturbarla, ma... Reste calme et remercie : grazie per la pazienza."
+     ],
+     "q": "As-tu déjà dû faire une réclamation dans un magasin ou un hôtel ? Que s'est-il passé ?",
+     "c": "Écris une réclamation polie de trois lignes à un hôtel : le problème, une demande avec potrebbe et un merci."
+    },
+    "it": {
+     "t": "Problemi e reclami",
+     "g": "Segnalare un problema con gentilezza e chiedere una soluzione.",
+     "p": [
+      "Descrivi il problema: non funziona, è rotto, c'è un errore nel conto, manca un pezzo, la camera è rumorosa.",
+      "Chiedi con il condizionale: vorrei cambiarlo, potrei avere un rimborso?, potrebbe controllare, per favore?",
+      "Ammorbidisci con scusi, mi dispiace disturbarla, ma... Resta calmo e ringrazia: grazie per la pazienza."
+     ],
+     "q": "Ti è mai capitato di fare un reclamo in un negozio o in un albergo? Che cosa è successo?",
+     "c": "Scrivi un reclamo gentile di tre righe a un albergo: il problema, una richiesta con potrebbe e un ringraziamento."
+    },
+    "pt": {
+     "t": "Problemas e reclamações",
+     "g": "Comunicar um problema com educação e pedir uma solução.",
+     "p": [
+      "Descreve o problema: non funziona, è rotto (está avariado), c'è un errore nel conto, manca un pezzo.",
+      "Pede com o condicional: vorrei cambiarlo, potrei avere un rimborso?, potrebbe controllare, per favore?",
+      "Suaviza com scusi, mi dispiace disturbarla, ma... Mantém a calma e agradece: grazie per la pazienza."
+     ],
+     "q": "Já tiveste de reclamar numa loja ou num hotel? O que aconteceu?",
+     "c": "Escreve uma reclamação educada de três linhas a um hotel: o problema, um pedido com potrebbe e um agradecimento."
+    },
+    "pt_BR": {
+     "t": "Problemas e reclamações",
+     "g": "Comunicar um problema com educação e pedir uma solução.",
+     "p": [
+      "Descreva o problema: non funziona, è rotto (está quebrado), c'è un errore nel conto, manca un pezzo.",
+      "Peça com o condicional: vorrei cambiarlo, potrei avere un rimborso?, potrebbe controllare, per favore?",
+      "Suavize com scusi, mi dispiace disturbarla, ma... Mantenha a calma e agradeça: grazie per la pazienza."
+     ],
+     "q": "Você já precisou reclamar numa loja ou num hotel? O que aconteceu?",
+     "c": "Escreva uma reclamação educada de três linhas para um hotel: o problema, um pedido com potrebbe e um agradecimento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "non funziona",
+      "ex": "Scusi, l'aria condizionata non funziona."
+     },
+     {
+      "w": "è rotto",
+      "ex": "Il caricabatterie che ho comprato è rotto."
+     },
+     {
+      "w": "c'è un errore",
+      "ex": "Mi scusi, c'è un errore nel conto."
+     },
+     {
+      "w": "vorrei cambiarlo",
+      "ex": "Questo maglione è troppo piccolo, vorrei cambiarlo."
+     },
+     {
+      "w": "un rimborso",
+      "ex": "Potrei avere un rimborso o un buono?"
+     },
+     {
+      "w": "mi dispiace disturbarla",
+      "ex": "Mi dispiace disturbarla, ma la doccia perde acqua."
+     }
+    ],
+    "gram": "Reclamo cortese: scusi + problema (non funziona, è rotto) + richiesta al condizionale (potrebbe..., vorrei...)."
+   }
+  },
+  {
+   "d": 154,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "At the post office and bank",
+     "g": "Handle everyday errands at the post office and bank.",
+     "p": [
+      "Post office (la posta): spedire un pacco (send a parcel), una raccomandata (registered letter), il francobollo (stamp).",
+      "Bank (la banca): aprire un conto (open an account), il bancomat (cashpoint and debit card), prelevare (withdraw).",
+      "Fare un bonifico is a bank transfer. Useful: devo fare la fila (queue), prendo il numero, tocca a me (my turn)."
+     ],
+     "q": "What errand do you find most annoying: the post office, the bank or something else?",
+     "c": "Write a mini dialogue at the post office: you want to send a parcel to your country and ask how long it takes."
+    },
+    "de": {
+     "t": "Auf der Post und in der Bank",
+     "g": "Du erledigst Alltagsgeschäfte auf der Post und in der Bank.",
+     "p": [
+      "Post (la posta): spedire un pacco (Paket schicken), una raccomandata (Einschreiben), il francobollo (Briefmarke).",
+      "Bank (la banca): aprire un conto (Konto eröffnen), il bancomat (Geldautomat und Karte), prelevare (abheben).",
+      "Fare un bonifico ist eine Überweisung. Nützlich: devo fare la fila (anstehen), prendo il numero, tocca a me."
+     ],
+     "q": "Welche Erledigung findest du am lästigsten: Post, Bank oder etwas anderes?",
+     "c": "Schreib einen Mini-Dialog auf der Post: Du willst ein Paket in dein Land schicken und fragst, wie lange es dauert."
+    },
+    "es": {
+     "t": "En correos y en el banco",
+     "g": "Hacer gestiones cotidianas en correos y en el banco.",
+     "p": [
+      "Correos (la posta): spedire un pacco (enviar un paquete), una raccomandata (carta certificada), il francobollo (sello).",
+      "Banco (la banca): aprire un conto (abrir una cuenta), il bancomat (cajero y tarjeta), prelevare (sacar dinero).",
+      "Fare un bonifico es hacer una transferencia. Útil: devo fare la fila (hacer cola), prendo il numero, tocca a me."
+     ],
+     "q": "¿Qué gestión te resulta más pesada: correos, el banco u otra?",
+     "c": "Escribe un minidiálogo en correos: quieres enviar un paquete a tu país y preguntas cuánto tarda."
+    },
+    "fr": {
+     "t": "À la poste et à la banque",
+     "g": "Faire les démarches du quotidien à la poste et à la banque.",
+     "p": [
+      "Poste (la posta) : spedire un pacco (envoyer un colis), una raccomandata (lettre recommandée), il francobollo (timbre).",
+      "Banque (la banca) : aprire un conto (ouvrir un compte), il bancomat (distributeur et carte), prelevare (retirer).",
+      "Fare un bonifico, c'est faire un virement. Utile : devo fare la fila (faire la queue), prendo il numero, tocca a me."
+     ],
+     "q": "Quelle démarche trouves-tu la plus pénible : la poste, la banque ou autre chose ?",
+     "c": "Écris un mini dialogue à la poste : tu veux envoyer un colis dans ton pays et demandes le délai."
+    },
+    "it": {
+     "t": "Alla posta e in banca",
+     "g": "Sbrigare le commissioni di tutti i giorni alla posta e in banca.",
+     "p": [
+      "Alla posta: spedire un pacco, una raccomandata, comprare un francobollo, ritirare un pacco.",
+      "In banca: aprire un conto, il bancomat, prelevare contanti, versare dei soldi, la carta di credito.",
+      "Fare un bonifico per pagare a distanza. Frasi utili: devo fare la fila, prendo il numero, tocca a me."
+     ],
+     "q": "Quale commissione trovi più noiosa: la posta, la banca o altro?",
+     "c": "Scrivi un mini dialogo alla posta: vuoi spedire un pacco nel tuo paese e chiedi quanto tempo ci vuole."
+    },
+    "pt": {
+     "t": "Nos correios e no banco",
+     "g": "Tratar de assuntos do dia a dia nos correios e no banco.",
+     "p": [
+      "Correios (la posta): spedire un pacco (enviar uma encomenda), una raccomandata (carta registada), il francobollo (selo).",
+      "Banco (la banca): aprire un conto (abrir uma conta), il bancomat (multibanco e cartão), prelevare (levantar dinheiro).",
+      "Fare un bonifico é fazer uma transferência. Útil: devo fare la fila (estar na fila), prendo il numero, tocca a me."
+     ],
+     "q": "Que tarefa achas mais aborrecida: os correios, o banco ou outra?",
+     "c": "Escreve um minidiálogo nos correios: queres enviar uma encomenda para o teu país e perguntas quanto tempo demora."
+    },
+    "pt_BR": {
+     "t": "No correio e no banco",
+     "g": "Resolver coisas do dia a dia no correio e no banco.",
+     "p": [
+      "Correio (la posta): spedire un pacco (mandar um pacote), una raccomandata (carta registrada), il francobollo (selo).",
+      "Banco (la banca): aprire un conto (abrir uma conta), il bancomat (caixa eletrônico e cartão), prelevare (sacar).",
+      "Fare un bonifico é fazer uma transferência. Útil: devo fare la fila (pegar fila), prendo il numero, tocca a me."
+     ],
+     "q": "Que tarefa você acha mais chata: o correio, o banco ou outra?",
+     "c": "Escreva um minidiálogo no correio: você quer mandar um pacote para o seu país e pergunta quanto tempo leva."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "spedire un pacco",
+      "ex": "Vorrei spedire questo pacco in Brasile."
+     },
+     {
+      "w": "il francobollo",
+      "ex": "Mi dà un francobollo per l'estero?"
+     },
+     {
+      "w": "aprire un conto",
+      "ex": "Per aprire un conto serve un documento."
+     },
+     {
+      "w": "prelevare",
+      "ex": "Devo prelevare al bancomat prima di uscire."
+     },
+     {
+      "w": "fare un bonifico",
+      "ex": "Ti faccio un bonifico stasera."
+     },
+     {
+      "w": "tocca a me",
+      "ex": "Scusi, tocca a me, ho il numero 42."
+     }
+    ],
+    "gram": "Quanto tempo ci vuole? Ci vogliono tre giorni / ci vuole una settimana: ci vuole + singolare, ci vogliono + plurale."
+   }
+  },
+  {
+   "d": 155,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Asking for help",
+     "g": "Ask for help and handle not understanding with confidence.",
+     "p": [
+      "Ask for help: mi può aiutare?, scusi, ho bisogno di aiuto, potrebbe darmi una mano? (lend me a hand).",
+      "When you do not understand: non ho capito, può ripetere?, più lentamente, per favore. Come si dice...? Che cosa vuol dire...?",
+      "Check meaning: cioè?, intende dire che...?, può scriverlo? Thank warmly: grazie mille, è stato molto gentile."
+     ],
+     "q": "What do you usually say when you do not understand someone in a foreign language?",
+     "c": "Learn by heart five rescue phrases: non ho capito, può ripetere, più lentamente, che cosa vuol dire, può scriverlo."
+    },
+    "de": {
+     "t": "Um Hilfe bitten",
+     "g": "Du bittest um Hilfe und gehst sicher damit um, wenn du nichts verstehst.",
+     "p": [
+      "Um Hilfe bitten: mi può aiutare?, scusi, ho bisogno di aiuto, potrebbe darmi una mano? (mit anpacken).",
+      "Wenn du nichts verstehst: non ho capito, può ripetere?, più lentamente, per favore. Come si dice...? Che cosa vuol dire...?",
+      "Bedeutung prüfen: cioè?, intende dire che...?, può scriverlo? Herzlich danken: grazie mille, è stato molto gentile."
+     ],
+     "q": "Was sagst du normalerweise, wenn du jemanden in einer Fremdsprache nicht verstehst?",
+     "c": "Lerne fünf Rettungssätze auswendig: non ho capito, può ripetere, più lentamente, che cosa vuol dire, può scriverlo."
+    },
+    "es": {
+     "t": "Pedir ayuda",
+     "g": "Pedir ayuda y manejar con seguridad cuando no entiendes.",
+     "p": [
+      "Pedir ayuda: mi può aiutare?, scusi, ho bisogno di aiuto, potrebbe darmi una mano? (echarme una mano).",
+      "Cuando no entiendes: non ho capito, può ripetere?, più lentamente, per favore. Come si dice...? Che cosa vuol dire...?",
+      "Comprueba: cioè?, intende dire che...?, può scriverlo? Agradece: grazie mille, è stato molto gentile."
+     ],
+     "q": "¿Qué sueles decir cuando no entiendes a alguien en otro idioma?",
+     "c": "Aprende de memoria cinco frases de rescate: non ho capito, può ripetere, più lentamente, che cosa vuol dire, può scriverlo."
+    },
+    "fr": {
+     "t": "Demander de l'aide",
+     "g": "Demander de l'aide et gérer sereinement quand tu ne comprends pas.",
+     "p": [
+      "Demander de l'aide : mi può aiutare ?, scusi, ho bisogno di aiuto, potrebbe darmi una mano ? (donner un coup de main).",
+      "Quand tu ne comprends pas : non ho capito, può ripetere ?, più lentamente, per favore. Come si dice... ? Che cosa vuol dire... ?",
+      "Vérifie : cioè ?, intende dire che... ?, può scriverlo ? Remercie : grazie mille, è stato molto gentile."
+     ],
+     "q": "Que dis-tu d'habitude quand tu ne comprends pas quelqu'un dans une langue étrangère ?",
+     "c": "Apprends par cœur cinq phrases de secours : non ho capito, può ripetere, più lentamente, che cosa vuol dire, può scriverlo."
+    },
+    "it": {
+     "t": "Chiedere aiuto",
+     "g": "Chiedere aiuto e gestire con sicurezza i momenti in cui non capisci.",
+     "p": [
+      "Chiedere aiuto: mi può aiutare?, scusi, ho bisogno di aiuto, potrebbe darmi una mano?",
+      "Quando non capisci: non ho capito, può ripetere?, più lentamente, per favore. Come si dice...? Che cosa vuol dire...?",
+      "Per verificare: cioè?, intende dire che...?, può scriverlo? Per ringraziare: grazie mille, è stato molto gentile."
+     ],
+     "q": "Che cosa dici di solito quando non capisci qualcuno in una lingua straniera?",
+     "c": "Impara a memoria cinque frasi di salvataggio: non ho capito, può ripetere, più lentamente, che cosa vuol dire, può scriverlo."
+    },
+    "pt": {
+     "t": "Pedir ajuda",
+     "g": "Pedir ajuda e lidar com confiança quando não percebes.",
+     "p": [
+      "Pedir ajuda: mi può aiutare?, scusi, ho bisogno di aiuto, potrebbe darmi una mano? (dar uma mão).",
+      "Quando não percebes: non ho capito, può ripetere?, più lentamente, per favore. Come si dice...? Che cosa vuol dire...?",
+      "Confirma: cioè?, intende dire che...?, può scriverlo? Agradece: grazie mille, è stato molto gentile."
+     ],
+     "q": "O que costumas dizer quando não percebes alguém numa língua estrangeira?",
+     "c": "Decora cinco frases de salvação: non ho capito, può ripetere, più lentamente, che cosa vuol dire, può scriverlo."
+    },
+    "pt_BR": {
+     "t": "Pedir ajuda",
+     "g": "Pedir ajuda e lidar com confiança quando você não entende.",
+     "p": [
+      "Pedir ajuda: mi può aiutare?, scusi, ho bisogno di aiuto, potrebbe darmi una mano? (dar uma força).",
+      "Quando não entende: non ho capito, può ripetere?, più lentamente, per favore. Come si dice...? Che cosa vuol dire...?",
+      "Confirme: cioè?, intende dire che...?, può scriverlo? Agradeça: grazie mille, è stato molto gentile."
+     ],
+     "q": "O que você costuma dizer quando não entende alguém em outra língua?",
+     "c": "Decore cinco frases de socorro: non ho capito, può ripetere, più lentamente, che cosa vuol dire, può scriverlo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi può aiutare?",
+      "ex": "Scusi, mi può aiutare? Non trovo questa via."
+     },
+     {
+      "w": "non ho capito",
+      "ex": "Mi scusi, non ho capito. Può ripetere?"
+     },
+     {
+      "w": "più lentamente",
+      "ex": "Può parlare più lentamente, per favore?"
+     },
+     {
+      "w": "che cosa vuol dire",
+      "ex": "Che cosa vuol dire la parola sciopero?"
+     },
+     {
+      "w": "darmi una mano",
+      "ex": "Mi puoi dare una mano a portare le borse?"
+     },
+     {
+      "w": "grazie mille",
+      "ex": "Grazie mille, è stata molto gentile!"
+     }
+    ],
+    "gram": "Volere dire = significare: che cosa vuol dire? Formale con Lei: mi può aiutare?, può ripetere? Informale: mi puoi aiutare?"
+   }
+  },
+  {
+   "d": 156,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Lost and found",
+     "g": "Report a lost item and describe it clearly.",
+     "p": [
+      "Ho perso il portafoglio / il telefono / le chiavi. L'ho lasciato sul treno. Non lo trovo più.",
+      "Describe the object: è nero, di pelle (leather), piccolo, con una cerniera (zip); dentro c'erano i documenti.",
+      "Where to go: l'ufficio oggetti smarriti (lost property office). Say when and where: ieri sera, sull'autobus numero 3."
+     ],
+     "q": "Have you ever lost something important? Where was it, and did you find it again?",
+     "c": "Describe one of your bags or wallets in Italian as if you had lost it: colour, material, size and contents."
+    },
+    "de": {
+     "t": "Fundbüro",
+     "g": "Du meldest einen Verlust und beschreibst den Gegenstand genau.",
+     "p": [
+      "Ho perso il portafoglio / il telefono / le chiavi. L'ho lasciato sul treno. Non lo trovo più.",
+      "Gegenstand beschreiben: è nero, di pelle (aus Leder), piccolo, con una cerniera (Reißverschluss); dentro c'erano i documenti.",
+      "Wohin: l'ufficio oggetti smarriti (Fundbüro). Sag, wann und wo: ieri sera, sull'autobus numero 3."
+     ],
+     "q": "Hast du schon einmal etwas Wichtiges verloren? Wo war es, und hast du es wiedergefunden?",
+     "c": "Beschreib eine deiner Taschen oder Geldbörsen auf Italienisch, als hättest du sie verloren: Farbe, Material, Größe, Inhalt."
+    },
+    "es": {
+     "t": "Objetos perdidos",
+     "g": "Denunciar una pérdida y describir el objeto con claridad.",
+     "p": [
+      "Ho perso il portafoglio / il telefono / le chiavi. L'ho lasciato sul treno. Non lo trovo più.",
+      "Describe el objeto: è nero, di pelle (de piel), piccolo, con una cerniera (cremallera); dentro c'erano i documenti.",
+      "Adónde ir: l'ufficio oggetti smarriti (objetos perdidos). Di cuándo y dónde: ieri sera, sull'autobus numero 3."
+     ],
+     "q": "¿Alguna vez has perdido algo importante? ¿Dónde fue y lo recuperaste?",
+     "c": "Describe en italiano uno de tus bolsos o carteras como si lo hubieras perdido: color, material, tamaño y contenido."
+    },
+    "fr": {
+     "t": "Objets trouvés",
+     "g": "Signaler une perte et décrire clairement l'objet.",
+     "p": [
+      "Ho perso il portafoglio / il telefono / le chiavi. L'ho lasciato sul treno. Non lo trovo più.",
+      "Décris l'objet : è nero, di pelle (en cuir), piccolo, con una cerniera (fermeture éclair) ; dentro c'erano i documenti.",
+      "Où aller : l'ufficio oggetti smarriti (objets trouvés). Dis quand et où : ieri sera, sull'autobus numero 3."
+     ],
+     "q": "As-tu déjà perdu quelque chose d'important ? Où, et l'as-tu retrouvé ?",
+     "c": "Décris en italien un de tes sacs ou portefeuilles comme si tu l'avais perdu : couleur, matière, taille, contenu."
+    },
+    "it": {
+     "t": "Oggetti smarriti",
+     "g": "Denunciare lo smarrimento di un oggetto e descriverlo bene.",
+     "p": [
+      "Ho perso il portafoglio / il telefono / le chiavi. L'ho lasciato sul treno. Non lo trovo più.",
+      "Descrivi l'oggetto: è nero, di pelle, piccolo, con una cerniera; dentro c'erano i documenti e una foto.",
+      "Dove andare: all'ufficio oggetti smarriti. Di' quando e dove: ieri sera, sull'autobus numero 3."
+     ],
+     "q": "Ti è mai capitato di perdere qualcosa di importante? Dove eri, e l'hai ritrovato?",
+     "c": "Descrivi una tua borsa o un tuo portafoglio come se l'avessi perso: colore, materiale, misura e contenuto."
+    },
+    "pt": {
+     "t": "Perdidos e achados",
+     "g": "Comunicar a perda de um objeto e descrevê-lo com clareza.",
+     "p": [
+      "Ho perso il portafoglio / il telefono / le chiavi. L'ho lasciato sul treno. Non lo trovo più.",
+      "Descreve o objeto: è nero, di pelle (de pele), piccolo, con una cerniera (fecho); dentro c'erano i documenti.",
+      "Onde ir: l'ufficio oggetti smarriti (perdidos e achados). Diz quando e onde: ieri sera, sull'autobus numero 3."
+     ],
+     "q": "Já perdeste alguma coisa importante? Onde foi, e voltaste a encontrá-la?",
+     "c": "Descreve em italiano uma das tuas malas ou carteiras como se a tivesses perdido: cor, material, tamanho e conteúdo."
+    },
+    "pt_BR": {
+     "t": "Achados e perdidos",
+     "g": "Comunicar a perda de um objeto e descrevê-lo com clareza.",
+     "p": [
+      "Ho perso il portafoglio / il telefono / le chiavi. L'ho lasciato sul treno. Non lo trovo più.",
+      "Descreva o objeto: è nero, di pelle (de couro), piccolo, con una cerniera (zíper); dentro c'erano i documenti.",
+      "Onde ir: l'ufficio oggetti smarriti (achados e perdidos). Diga quando e onde: ieri sera, sull'autobus numero 3."
+     ],
+     "q": "Você já perdeu algo importante? Onde foi, e conseguiu achar de novo?",
+     "c": "Descreva em italiano uma bolsa ou carteira sua como se tivesse perdido: cor, material, tamanho e conteúdo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ho perso",
+      "ex": "Ho perso le chiavi di casa stamattina."
+     },
+     {
+      "w": "il portafoglio",
+      "ex": "Il mio portafoglio è marrone, di pelle."
+     },
+     {
+      "w": "l'ho lasciato",
+      "ex": "Il telefono? L'ho lasciato sul sedile del treno."
+     },
+     {
+      "w": "di pelle",
+      "ex": "Cerco una borsa nera di pelle."
+     },
+     {
+      "w": "dentro c'erano",
+      "ex": "Dentro c'erano la patente e due carte."
+     },
+     {
+      "w": "gli oggetti smarriti",
+      "ex": "L'ufficio oggetti smarriti è in stazione."
+     }
+    ],
+    "gram": "Passato prossimo con pronome: l'ho perso, l'ho persa, li ho persi; dentro c'era / c'erano + imperfetto per descrivere."
+   }
+  },
+  {
+   "d": 157,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Car, bike and road vocabulary",
+     "g": "Get around by car or bike with the right words.",
+     "p": [
+      "Verbs: guidare (drive), parcheggiare (park), fare benzina (get fuel), andare in bici, noleggiare una macchina (rent).",
+      "Road words: l'autostrada (motorway), il casello (toll booth), il distributore (petrol station), il semaforo, l'incrocio.",
+      "Useful: la patente (licence), c'è traffico, la ZTL (limited traffic zone in old town centres: do not drive in!)."
+     ],
+     "q": "Do you prefer travelling by car, by bike or by train? Why?",
+     "c": "Describe your route to a place you often go, in four sentences: giro a destra, vado dritto, parcheggio vicino a..."
+    },
+    "de": {
+     "t": "Auto, Fahrrad und Straße",
+     "g": "Du bist mit Auto oder Rad mit den richtigen Wörtern unterwegs.",
+     "p": [
+      "Verben: guidare (fahren), parcheggiare (parken), fare benzina (tanken), andare in bici, noleggiare una macchina (mieten).",
+      "Straße: l'autostrada (Autobahn), il casello (Mautstelle), il distributore (Tankstelle), il semaforo (Ampel), l'incrocio.",
+      "Nützlich: la patente (Führerschein), c'è traffico, la ZTL (verkehrsberuhigte Zone in Altstädten: nicht hineinfahren!)."
+     ],
+     "q": "Reist du lieber mit dem Auto, dem Rad oder dem Zug? Warum?",
+     "c": "Beschreib in vier Sätzen deinen Weg zu einem Ort, an den du oft fährst: giro a destra, vado dritto, parcheggio vicino a..."
+    },
+    "es": {
+     "t": "Coche, bici y carretera",
+     "g": "Moverte en coche o en bici con las palabras adecuadas.",
+     "p": [
+      "Verbos: guidare (conducir), parcheggiare (aparcar), fare benzina (echar gasolina), andare in bici, noleggiare una macchina.",
+      "Carretera: l'autostrada, il casello (peaje), il distributore (gasolinera), il semaforo, l'incrocio (cruce).",
+      "Útil: la patente (carné), c'è traffico, la ZTL (zona de tráfico limitado en los centros históricos: ¡no entres!)."
+     ],
+     "q": "¿Prefieres viajar en coche, en bici o en tren? ¿Por qué?",
+     "c": "Describe en cuatro frases tu ruta a un sitio al que vas a menudo: giro a destra, vado dritto, parcheggio vicino a..."
+    },
+    "fr": {
+     "t": "Voiture, vélo et route",
+     "g": "Te déplacer en voiture ou à vélo avec les bons mots.",
+     "p": [
+      "Verbes : guidare (conduire), parcheggiare (se garer), fare benzina (faire le plein), andare in bici, noleggiare una macchina (louer).",
+      "La route : l'autostrada, il casello (péage), il distributore (station-service), il semaforo (feu), l'incrocio (carrefour).",
+      "Utile : la patente (permis), c'è traffico, la ZTL (zone à trafic limité des centres historiques : n'y entre pas !)."
+     ],
+     "q": "Préfères-tu voyager en voiture, à vélo ou en train ? Pourquoi ?",
+     "c": "Décris en quatre phrases ton trajet vers un lieu où tu vas souvent : giro a destra, vado dritto, parcheggio vicino a..."
+    },
+    "it": {
+     "t": "Auto, bici e strada",
+     "g": "Muoversi in auto o in bici con le parole giuste.",
+     "p": [
+      "Verbi: guidare, parcheggiare, fare benzina, andare in bici, noleggiare una macchina, allacciare la cintura.",
+      "La strada: l'autostrada, il casello, il distributore, il semaforo, l'incrocio, la rotonda.",
+      "Utile: la patente, c'è traffico, la ZTL (zona a traffico limitato nei centri storici: senza permesso non si entra!)."
+     ],
+     "q": "Preferisci viaggiare in macchina, in bici o in treno? Perché?",
+     "c": "Descrivi in quattro frasi il percorso verso un posto dove vai spesso: giro a destra, vado dritto, parcheggio vicino a..."
+    },
+    "pt": {
+     "t": "Carro, bicicleta e estrada",
+     "g": "Andar de carro ou de bicicleta com as palavras certas.",
+     "p": [
+      "Verbos: guidare (conduzir), parcheggiare (estacionar), fare benzina (abastecer), andare in bici, noleggiare una macchina (alugar).",
+      "Estrada: l'autostrada (autoestrada), il casello (portagem), il distributore (bomba de gasolina), il semaforo, l'incrocio.",
+      "Útil: la patente (carta de condução), c'è traffico, la ZTL (zona de trânsito limitado nos centros históricos: não entres!)."
+     ],
+     "q": "Preferes viajar de carro, de bicicleta ou de comboio? Porquê?",
+     "c": "Descreve em quatro frases o caminho para um sítio onde vais muitas vezes: giro a destra, vado dritto, parcheggio vicino a..."
+    },
+    "pt_BR": {
+     "t": "Carro, bicicleta e estrada",
+     "g": "Andar de carro ou de bicicleta com as palavras certas.",
+     "p": [
+      "Verbos: guidare (dirigir), parcheggiare (estacionar), fare benzina (abastecer), andare in bici, noleggiare una macchina (alugar).",
+      "Estrada: l'autostrada (rodovia), il casello (pedágio), il distributore (posto de gasolina), il semaforo, l'incrocio.",
+      "Útil: la patente (carteira de motorista), c'è traffico, la ZTL (zona de trânsito limitado nos centros históricos: não entre!)."
+     ],
+     "q": "Você prefere viajar de carro, de bicicleta ou de trem? Por quê?",
+     "c": "Descreva em quatro frases o caminho até um lugar aonde vai sempre: giro a destra, vado dritto, parcheggio vicino a..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "guidare",
+      "ex": "Mia sorella guida molto bene."
+     },
+     {
+      "w": "parcheggiare",
+      "ex": "In centro è difficile parcheggiare."
+     },
+     {
+      "w": "fare benzina",
+      "ex": "Fermiamoci a fare benzina prima dell'autostrada."
+     },
+     {
+      "w": "il casello",
+      "ex": "Al casello si paga il pedaggio."
+     },
+     {
+      "w": "la patente",
+      "ex": "Ho preso la patente a diciotto anni."
+     },
+     {
+      "w": "andare in bici",
+      "ex": "La domenica vado in bici lungo il fiume."
+     }
+    ],
+    "gram": "In macchina, in bici, in treno (mezzo di trasporto) ma a piedi. Guidare la macchina; andare in macchina."
+   }
+  },
+  {
+   "d": 158,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Nature and the countryside",
+     "g": "Talk about mountains, lakes, sea and a day trip out of town.",
+     "p": [
+      "Landscape: la montagna, la collina (hill), il lago, il fiume (river), il mare, la spiaggia, il bosco (wood), la campagna.",
+      "Prepositions: in montagna, in campagna, al mare, al lago. Fare una gita (day trip), fare una passeggiata, fare un picnic.",
+      "Italy is full of contrasts: the Alps and Dolomites in the north, the hills of Tuscany, lakes like Garda and Como."
+     ],
+     "q": "Do you prefer mare or montagna? Describe your ideal day trip out of town.",
+     "c": "Plan a gita for next Sunday in four sentences using the future: andremo..., faremo..., porteremo..., torneremo..."
+    },
+    "de": {
+     "t": "Natur und Land",
+     "g": "Du sprichst über Berge, Seen, Meer und einen Ausflug aufs Land.",
+     "p": [
+      "Landschaft: la montagna, la collina (Hügel), il lago, il fiume (Fluss), il mare, la spiaggia, il bosco (Wald), la campagna.",
+      "Präpositionen: in montagna, in campagna, al mare, al lago. Fare una gita (Ausflug), fare una passeggiata, fare un picnic.",
+      "Italien ist voller Kontraste: Alpen und Dolomiten im Norden, die Hügel der Toskana, Seen wie Garda und Como."
+     ],
+     "q": "Magst du lieber mare oder montagna? Beschreib deinen idealen Ausflug ins Grüne.",
+     "c": "Plane eine gita für nächsten Sonntag in vier Sätzen im Futur: andremo..., faremo..., porteremo..., torneremo..."
+    },
+    "es": {
+     "t": "Naturaleza y campo",
+     "g": "Hablar de montañas, lagos, mar y una excursión fuera de la ciudad.",
+     "p": [
+      "Paisaje: la montagna, la collina (colina), il lago, il fiume (río), il mare, la spiaggia, il bosco (bosque), la campagna.",
+      "Preposiciones: in montagna, in campagna, al mare, al lago. Fare una gita (excursión), fare una passeggiata, fare un picnic.",
+      "Italia está llena de contrastes: los Alpes y los Dolomitas al norte, las colinas de la Toscana, lagos como el de Garda y el de Como."
+     ],
+     "q": "¿Prefieres mare o montagna? Describe tu excursión ideal fuera de la ciudad.",
+     "c": "Planea una gita para el domingo en cuatro frases con el futuro: andremo..., faremo..., porteremo..., torneremo..."
+    },
+    "fr": {
+     "t": "Nature et campagne",
+     "g": "Parler de montagne, de lacs, de mer et d'une excursion hors de la ville.",
+     "p": [
+      "Paysage : la montagna, la collina (colline), il lago, il fiume (fleuve), il mare, la spiaggia, il bosco (bois), la campagna.",
+      "Prépositions : in montagna, in campagna, al mare, al lago. Fare una gita (excursion), fare una passeggiata, fare un picnic.",
+      "L'Italie est pleine de contrastes : Alpes et Dolomites au nord, collines de Toscane, lacs comme le lac de Garde et le lac de Côme."
+     ],
+     "q": "Tu préfères mare ou montagna ? Décris ton excursion idéale hors de la ville.",
+     "c": "Organise une gita pour dimanche en quatre phrases au futur : andremo..., faremo..., porteremo..., torneremo..."
+    },
+    "it": {
+     "t": "Natura e campagna",
+     "g": "Parlare di montagna, laghi, mare e di una gita fuori città.",
+     "p": [
+      "Paesaggio: la montagna, la collina, il lago, il fiume, il mare, la spiaggia, il bosco, la campagna.",
+      "Preposizioni: in montagna, in campagna, al mare, al lago. Fare una gita, fare una passeggiata, fare un picnic.",
+      "L'Italia è piena di contrasti: le Alpi e le Dolomiti al nord, le colline toscane, laghi come il Garda e il lago di Como."
+     ],
+     "q": "Preferisci il mare o la montagna? Descrivi la tua gita ideale fuori città.",
+     "c": "Organizza una gita per domenica prossima in quattro frasi al futuro: andremo..., faremo..., porteremo..., torneremo..."
+    },
+    "pt": {
+     "t": "Natureza e campo",
+     "g": "Falar de montanhas, lagos, mar e de um passeio fora da cidade.",
+     "p": [
+      "Paisagem: la montagna, la collina (colina), il lago, il fiume (rio), il mare, la spiaggia, il bosco (bosque), la campagna.",
+      "Preposições: in montagna, in campagna, al mare, al lago. Fare una gita (passeio), fare una passeggiata, fare un picnic.",
+      "Itália está cheia de contrastes: os Alpes e as Dolomites a norte, as colinas da Toscana, lagos como o de Garda e o de Como."
+     ],
+     "q": "Preferes mare ou montagna? Descreve o teu passeio ideal fora da cidade.",
+     "c": "Planeia uma gita para domingo em quatro frases no futuro: andremo..., faremo..., porteremo..., torneremo..."
+    },
+    "pt_BR": {
+     "t": "Natureza e interior",
+     "g": "Falar de montanhas, lagos, mar e de um passeio fora da cidade.",
+     "p": [
+      "Paisagem: la montagna, la collina (morro), il lago, il fiume (rio), il mare, la spiaggia, il bosco (mata), la campagna.",
+      "Preposições: in montagna, in campagna, al mare, al lago. Fare una gita (passeio), fare una passeggiata, fare un picnic.",
+      "A Itália é cheia de contrastes: os Alpes e as Dolomitas no norte, as colinas da Toscana, lagos como o de Garda e o de Como."
+     ],
+     "q": "Você prefere mare ou montagna? Descreva seu passeio ideal fora da cidade.",
+     "c": "Planeje uma gita para domingo em quatro frases no futuro: andremo..., faremo..., porteremo..., torneremo..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "in montagna",
+      "ex": "D'inverno andiamo in montagna a sciare."
+     },
+     {
+      "w": "al lago",
+      "ex": "Domenica facciamo un picnic al lago."
+     },
+     {
+      "w": "la collina",
+      "ex": "Dalla collina si vede tutta la città."
+     },
+     {
+      "w": "il bosco",
+      "ex": "Nel bosco ci sono tanti funghi in autunno."
+     },
+     {
+      "w": "fare una gita",
+      "ex": "Sabato facciamo una gita in campagna."
+     },
+     {
+      "w": "il fiume",
+      "ex": "Il fiume Arno attraversa Firenze."
+     }
+    ],
+    "gram": "In montagna, in campagna, in collina; al mare, al lago, al fiume. Fare una gita / una passeggiata."
+   }
+  },
+  {
+   "d": 159,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Animals and pets",
+     "g": "Talk about your pets and common animals.",
+     "p": [
+      "Pets: il cane, il gatto, il pesce rosso (goldfish), il coniglio (rabbit), il criceto (hamster), l'uccellino.",
+      "Farm and wild animals: il cavallo, la mucca, la pecora, il maiale, la gallina; il lupo, l'orso, la volpe.",
+      "Talking about pets: ho un cane che si chiama Max, ha tre anni, è molto affettuoso. Portare a spasso il cane = walk the dog."
+     ],
+     "q": "Do you have a pet, or would you like one? Tell me its name and personality.",
+     "c": "Describe a pet (real or dream) in four sentences: name, age, look and one funny habit."
+    },
+    "de": {
+     "t": "Tiere und Haustiere",
+     "g": "Du sprichst über deine Haustiere und bekannte Tiere.",
+     "p": [
+      "Haustiere: il cane, il gatto, il pesce rosso (Goldfisch), il coniglio (Kaninchen), il criceto (Hamster), l'uccellino.",
+      "Bauernhof- und Wildtiere: il cavallo, la mucca, la pecora, il maiale, la gallina; il lupo, l'orso, la volpe.",
+      "Über Haustiere: ho un cane che si chiama Max, ha tre anni, è molto affettuoso. Portare a spasso il cane = Gassi gehen."
+     ],
+     "q": "Hast du ein Haustier oder hättest du gern eins? Sag mir seinen Namen und Charakter.",
+     "c": "Beschreib ein Haustier (echt oder erträumt) in vier Sätzen: Name, Alter, Aussehen und eine lustige Angewohnheit."
+    },
+    "es": {
+     "t": "Animales y mascotas",
+     "g": "Hablar de tus mascotas y de animales comunes.",
+     "p": [
+      "Mascotas: il cane, il gatto, il pesce rosso, il coniglio (conejo), il criceto (hámster), l'uccellino (pajarito).",
+      "Animales de granja y salvajes: il cavallo, la mucca (vaca), la pecora (oveja), il maiale, la gallina; il lupo, l'orso, la volpe.",
+      "Hablar de mascotas: ho un cane che si chiama Max, ha tre anni, è molto affettuoso. Portare a spasso il cane = pasear al perro."
+     ],
+     "q": "¿Tienes una mascota o te gustaría tener una? Dime su nombre y su carácter.",
+     "c": "Describe una mascota (real o soñada) en cuatro frases: nombre, edad, aspecto y una costumbre graciosa."
+    },
+    "fr": {
+     "t": "Animaux et animaux de compagnie",
+     "g": "Parler de tes animaux de compagnie et des animaux courants.",
+     "p": [
+      "Compagnie : il cane, il gatto, il pesce rosso (poisson rouge), il coniglio (lapin), il criceto (hamster), l'uccellino.",
+      "Ferme et nature : il cavallo, la mucca (vache), la pecora (brebis), il maiale, la gallina ; il lupo, l'orso, la volpe.",
+      "Parler de son animal : ho un cane che si chiama Max, ha tre anni, è molto affettuoso. Portare a spasso il cane = promener le chien."
+     ],
+     "q": "As-tu un animal ou aimerais-tu en avoir un ? Dis-moi son nom et son caractère.",
+     "c": "Décris un animal (réel ou rêvé) en quatre phrases : nom, âge, aspect et une habitude amusante."
+    },
+    "it": {
+     "t": "Animali domestici e non",
+     "g": "Parlare dei tuoi animali domestici e degli animali più comuni.",
+     "p": [
+      "Animali domestici: il cane, il gatto, il pesce rosso, il coniglio, il criceto, l'uccellino.",
+      "Animali della fattoria e selvatici: il cavallo, la mucca, la pecora, il maiale, la gallina; il lupo, l'orso, la volpe.",
+      "Per parlarne: ho un cane che si chiama Max, ha tre anni, è molto affettuoso. Ogni sera porto a spasso il cane."
+     ],
+     "q": "Hai un animale domestico o ti piacerebbe averne uno? Dimmi come si chiama e che carattere ha.",
+     "c": "Descrivi un animale (vero o dei sogni) in quattro frasi: nome, età, aspetto e un'abitudine buffa."
+    },
+    "pt": {
+     "t": "Animais e animais de estimação",
+     "g": "Falar dos teus animais de estimação e de animais comuns.",
+     "p": [
+      "Estimação: il cane, il gatto, il pesce rosso (peixinho vermelho), il coniglio (coelho), il criceto (hamster), l'uccellino.",
+      "Quinta e natureza: il cavallo, la mucca (vaca), la pecora (ovelha), il maiale, la gallina; il lupo, l'orso, la volpe.",
+      "Falar do animal: ho un cane che si chiama Max, ha tre anni, è molto affettuoso. Portare a spasso il cane = passear o cão."
+     ],
+     "q": "Tens um animal de estimação ou gostavas de ter? Diz-me o nome e o feitio dele.",
+     "c": "Descreve um animal (real ou de sonho) em quatro frases: nome, idade, aspeto e um hábito engraçado."
+    },
+    "pt_BR": {
+     "t": "Animais e bichos de estimação",
+     "g": "Falar dos seus bichos de estimação e de animais comuns.",
+     "p": [
+      "Estimação: il cane, il gatto, il pesce rosso (peixinho dourado), il coniglio (coelho), il criceto (hamster), l'uccellino.",
+      "Fazenda e natureza: il cavallo, la mucca (vaca), la pecora (ovelha), il maiale, la gallina; il lupo, l'orso, la volpe.",
+      "Falar do bicho: ho un cane che si chiama Max, ha tre anni, è molto affettuoso. Portare a spasso il cane = passear com o cachorro."
+     ],
+     "q": "Você tem um bicho de estimação ou gostaria de ter? Diga o nome e o jeito dele.",
+     "c": "Descreva um bicho (real ou dos sonhos) em quatro frases: nome, idade, aparência e uma mania engraçada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il cane",
+      "ex": "Il mio cane si chiama Briciola ed è bianco."
+     },
+     {
+      "w": "il gatto",
+      "ex": "Il gatto dorme tutto il giorno sul divano."
+     },
+     {
+      "w": "il coniglio",
+      "ex": "Mia figlia vorrebbe un coniglio nano."
+     },
+     {
+      "w": "il cavallo",
+      "ex": "In campagna andiamo a cavallo."
+     },
+     {
+      "w": "portare a spasso il cane",
+      "ex": "Porto a spasso il cane ogni sera alle sette."
+     },
+     {
+      "w": "affettuoso",
+      "ex": "È un gatto molto affettuoso e curioso."
+     }
+    ],
+    "gram": "Ho un cane che si chiama...; il gatto / i gatti, il cane / i cani; il bue / i buoi è irregolare. Andare a cavallo."
+   }
+  },
+  {
+   "d": 160,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Health and wellbeing",
+     "g": "Talk about healthy everyday habits in Italian.",
+     "p": [
+      "Healthy habits: dormire bene, camminare ogni giorno, mangiare sano (eat healthily), bere molta acqua, fare stretching.",
+      "Frequency words: di solito, spesso, ogni tanto (now and then), raramente, mai. Cerco di... means I try to...",
+      "Wellbeing: rilassarsi, staccare (switch off), stare all'aria aperta, passare tempo con gli amici. Mi sento bene!"
+     ],
+     "q": "What is one healthy habit you have, and one you would like to start?",
+     "c": "Write four sentences about your weekly habits with cerco di, di solito, ogni tanto and non... mai."
+    },
+    "de": {
+     "t": "Gesundheit und Wohlbefinden",
+     "g": "Du sprichst über gesunde Alltagsgewohnheiten auf Italienisch.",
+     "p": [
+      "Gesunde Gewohnheiten: dormire bene, camminare ogni giorno, mangiare sano (gesund essen), bere molta acqua, fare stretching.",
+      "Häufigkeit: di solito, spesso, ogni tanto (ab und zu), raramente, mai. Cerco di... heißt ich versuche zu...",
+      "Wohlbefinden: rilassarsi, staccare (abschalten), stare all'aria aperta, passare tempo con gli amici. Mi sento bene!"
+     ],
+     "q": "Welche gesunde Gewohnheit hast du, und welche möchtest du anfangen?",
+     "c": "Schreib vier Sätze über deine Woche mit cerco di, di solito, ogni tanto und non... mai."
+    },
+    "es": {
+     "t": "Salud y bienestar",
+     "g": "Hablar de hábitos cotidianos saludables en italiano.",
+     "p": [
+      "Hábitos sanos: dormire bene, camminare ogni giorno, mangiare sano (comer sano), bere molta acqua, fare stretching.",
+      "Frecuencia: di solito, spesso, ogni tanto (de vez en cuando), raramente, mai. Cerco di... es intento...",
+      "Bienestar: rilassarsi, staccare (desconectar), stare all'aria aperta, passare tempo con gli amici. Mi sento bene!"
+     ],
+     "q": "¿Qué hábito sano tienes y cuál te gustaría empezar?",
+     "c": "Escribe cuatro frases sobre tu semana con cerco di, di solito, ogni tanto y non... mai."
+    },
+    "fr": {
+     "t": "Santé et bien-être",
+     "g": "Parler des bonnes habitudes du quotidien en italien.",
+     "p": [
+      "Bonnes habitudes : dormire bene, camminare ogni giorno, mangiare sano (manger sain), bere molta acqua, fare stretching.",
+      "Fréquence : di solito, spesso, ogni tanto (de temps en temps), raramente, mai. Cerco di... veut dire j'essaie de...",
+      "Bien-être : rilassarsi, staccare (décrocher), stare all'aria aperta, passare tempo con gli amici. Mi sento bene !"
+     ],
+     "q": "Quelle bonne habitude as-tu, et laquelle aimerais-tu commencer ?",
+     "c": "Écris quatre phrases sur ta semaine avec cerco di, di solito, ogni tanto et non... mai."
+    },
+    "it": {
+     "t": "Salute e benessere",
+     "g": "Parlare delle abitudini sane di tutti i giorni.",
+     "p": [
+      "Abitudini sane: dormire bene, camminare ogni giorno, mangiare sano, bere molta acqua, fare stretching.",
+      "Frequenza: di solito, spesso, ogni tanto, raramente, mai. Cerco di + infinito: cerco di dormire otto ore.",
+      "Benessere: rilassarsi, staccare dal lavoro, stare all'aria aperta, passare tempo con gli amici. Mi sento bene!"
+     ],
+     "q": "Qual è un'abitudine sana che hai, e quale ti piacerebbe cominciare?",
+     "c": "Scrivi quattro frasi sulla tua settimana con cerco di, di solito, ogni tanto e non... mai."
+    },
+    "pt": {
+     "t": "Saúde e bem-estar",
+     "g": "Falar de hábitos saudáveis do dia a dia em italiano.",
+     "p": [
+      "Hábitos saudáveis: dormire bene, camminare ogni giorno, mangiare sano (comer de forma saudável), bere molta acqua, fare stretching.",
+      "Frequência: di solito, spesso, ogni tanto (de vez em quando), raramente, mai. Cerco di... é tento...",
+      "Bem-estar: rilassarsi, staccare (desligar), stare all'aria aperta, passare tempo con gli amici. Mi sento bene!"
+     ],
+     "q": "Que hábito saudável tens, e qual gostarias de começar?",
+     "c": "Escreve quatro frases sobre a tua semana com cerco di, di solito, ogni tanto e non... mai."
+    },
+    "pt_BR": {
+     "t": "Saúde e bem-estar",
+     "g": "Falar de hábitos saudáveis do dia a dia em italiano.",
+     "p": [
+      "Hábitos saudáveis: dormire bene, camminare ogni giorno, mangiare sano (comer bem), bere molta acqua, fare stretching.",
+      "Frequência: di solito, spesso, ogni tanto (de vez em quando), raramente, mai. Cerco di... é eu tento...",
+      "Bem-estar: rilassarsi, staccare (desligar), stare all'aria aperta, passare tempo con gli amici. Mi sento bene!"
+     ],
+     "q": "Que hábito saudável você tem, e qual gostaria de começar?",
+     "c": "Escreva quatro frases sobre sua semana com cerco di, di solito, ogni tanto e non... mai."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mangiare sano",
+      "ex": "Da quando mangio sano mi sento meglio."
+     },
+     {
+      "w": "dormire bene",
+      "ex": "Per dormire bene spengo il telefono alle dieci."
+     },
+     {
+      "w": "cerco di",
+      "ex": "Cerco di camminare almeno mezz'ora al giorno."
+     },
+     {
+      "w": "ogni tanto",
+      "ex": "Ogni tanto mi concedo un gelato."
+     },
+     {
+      "w": "staccare",
+      "ex": "Nel weekend stacco completamente dal lavoro."
+     },
+     {
+      "w": "all'aria aperta",
+      "ex": "Mi piace fare sport all'aria aperta."
+     }
+    ],
+    "gram": "Cercare di + infinito: cerco di bere più acqua. Avverbi di frequenza: di solito, spesso, ogni tanto, non... mai."
+   }
+  }
+ ]
+}

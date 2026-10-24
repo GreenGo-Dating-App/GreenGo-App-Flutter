@@ -1,0 +1,2195 @@
+{
+"topic": "budget_travel",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to budget travel",
+"f": "Why travelling on a budget is about smart choices, not missing out, and how it lets you take more trips"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your travel money mindset",
+"f": "Seeing value instead of just price and deciding what really matters to you on a trip"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Setting a trip goal",
+"f": "Define where, when, how long and why before you start thinking about the budget"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "The four big costs",
+"f": "Transport, accommodation, food and activities: where most travel money goes"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Building a simple trip budget",
+"f": "List expected costs per category and add a small buffer for surprises"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Daily budget vs total budget",
+"f": "Why a per-day spending target is easier to follow than one big number"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Tracking spending on the road",
+"f": "Simple notebook or app habits to log what you spend each day"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Saving up for a trip",
+"f": "Small weekly savings, a dedicated travel fund and celebrating each milestone"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Cheap places vs cheap habits",
+"f": "Living costs vary by place, but smart habits save money anywhere in the world"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Researching living costs",
+"f": "How to estimate meals, local transport and beds in a place before you go"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Shoulder season magic",
+"f": "Travelling just before or after peak season for lower prices and fewer crowds"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Off-season pros and cons",
+"f": "Bargains and quiet streets versus shorter opening hours and some closed sights"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Flexible dates save money",
+"f": "How shifting your trip by a few days can change transport and accommodation costs"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Midweek travel advantages",
+"f": "Why midweek departures and stays are often cheaper than weekends"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Local holidays and events",
+"f": "Check calendars so festivals and school breaks don't surprise your budget"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Booking timing basics",
+"f": "When booking early pays off and when last-minute deals can work"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "How flight prices work",
+"f": "Demand, seat classes and fare buckets explained in plain words"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Using flight search engines",
+"f": "Compare many airlines at once with flexible dates and nearby airports"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Budget airlines explained",
+"f": "What low-cost carriers include, what costs extra and how to stay within the base fare"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Baggage rules and fees",
+"f": "Know cabin bag sizes and weights to avoid costly surprises at the gate"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Alternative airports",
+"f": "Secondary airports can be cheaper, but count the transfer time and cost"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Setting price alerts",
+"f": "Let fare changes come to you instead of checking prices every day"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "One-way and open-jaw tickets",
+"f": "Fly into one city and out of another to avoid expensive backtracking"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Hidden costs of cheap flights",
+"f": "Seat selection, check-in fees and awkward hours that can eat up your savings"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Trains on a budget",
+"f": "Advance fares, slower regional trains and off-peak tickets"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Night trains and night buses",
+"f": "Travel while you sleep and save the cost of one night's accommodation"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Long-distance buses",
+"f": "Comfortable, cheap coaches and how to pick a reliable company"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Ridesharing and carpooling",
+"f": "Sharing a car ride and its costs with others heading the same way"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Comparing transport options",
+"f": "Weigh price, time, comfort and carbon footprint for each route"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: planning and transport",
+"f": "Look back on budgets, timing and getting there, then plan a mini trip on paper"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Types of budget stays",
+"f": "Hostels, guesthouses, budget hotels, apartments and more at a glance"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Hostels demystified",
+"f": "Dorms, private rooms, lockers and the friendly social side of hostel life"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Choosing a good hostel",
+"f": "Read reviews for cleanliness, location, safety and atmosphere"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Guesthouses and family-run stays",
+"f": "Simple rooms with local hosts, often with breakfast and great insider tips"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Budget hotels and chains",
+"f": "When a simple hotel room is the best value, especially for two or three people"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Holiday rentals",
+"f": "Apartments with kitchens can save money on longer stays and for groups"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Location vs price",
+"f": "A cheap room far from everything may cost more in transport and time"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Reading accommodation reviews",
+"f": "Spot patterns in reviews and focus on recent, detailed ones"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Booking direct vs platforms",
+"f": "Sometimes the property itself offers a better rate or small extras"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Cancellation policies",
+"f": "Flexible versus non-refundable rates and when each one makes sense"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Free breakfast and kitchen access",
+"f": "Small included extras that add up to real savings over a trip"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Camping basics",
+"f": "Campsites as a cheap way to sleep close to nature"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Hospitality exchange networks",
+"f": "Staying with locals for free and the etiquette of being a good guest"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Eating well for less",
+"f": "Local food, markets and simple habits that cut food costs without losing flavour"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Street food smarts",
+"f": "Enjoy street food wisely: busy stalls, fresh cooking and local favourites"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Lunch menus and set meals",
+"f": "Many places offer a cheaper fixed lunch with several courses"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Shopping at local markets",
+"f": "Fresh produce, local snacks and practising a few words with vendors"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Supermarket picnics",
+"f": "Build a tasty picnic and eat with a view for a fraction of a restaurant bill"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Cooking in hostels",
+"f": "Simple one-pot recipes and sharing meals with fellow travellers"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Water and drinks on a budget",
+"f": "Refillable bottles, tap water where it is safe and skipping pricey drinks"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Avoiding tourist-trap restaurants",
+"f": "Walk a few streets away from big sights and look for places full of locals"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Tipping customs around the world",
+"f": "Know local tipping norms so you are polite and still on budget"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Free walking tours",
+"f": "How tip-based tours work and how to get the most out of them"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Free museum days",
+"f": "Many museums have free days or hours, so plan your visits around them"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Parks, gardens and viewpoints",
+"f": "Some of the best experiences in any city cost nothing at all"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Free festivals and events",
+"f": "Find public concerts, markets and celebrations in local listings"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Self-guided city walks",
+"f": "Create your own walking route through interesting neighbourhoods"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Beaches, hikes and nature",
+"f": "Outdoor adventures that need only good shoes and curiosity"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Libraries and public buildings",
+"f": "Beautiful architecture and quiet spaces you can often visit for free"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: stays, food and free fun",
+"f": "Recap how to sleep, eat and explore for less, then plan a completely free day"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "City passes: worth it?",
+"f": "Calculate whether a sightseeing pass really saves money for your plans"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Student and youth discounts",
+"f": "Cards and ID that unlock reduced prices on transport and sights"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Discounts for other groups",
+"f": "Seniors, families, teachers and others often get reduced rates"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Public transport day passes",
+"f": "When an unlimited pass beats buying single tickets"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Walking and cycling cities",
+"f": "Explore on foot or by shared bike to save money and see more"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Getting from the airport cheaply",
+"f": "Trains, buses and shared shuttles instead of pricey taxis"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Taxis and ride apps wisely",
+"f": "Agree prices, use meters and compare apps to avoid overpaying"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Packing light saves money",
+"f": "Carry-on-only travel avoids bag fees and makes cheap transport easier"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "The carry-on packing list",
+"f": "Versatile clothes, layers and essentials that fit in one small bag"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Travel gear on a budget",
+"f": "Which items are worth buying and which you can borrow or skip"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Toiletries and refills",
+"f": "Solid bars, small refill bottles and buying basics at your destination"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Money basics abroad",
+"f": "Cash, cards and how payment habits differ between countries"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Avoiding bank fees",
+"f": "Look for cards without foreign transaction fees and with low withdrawal costs"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Exchanging currency smartly",
+"f": "Why airport exchange desks are usually the most expensive choice"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Paying in local currency",
+"f": "Decline dynamic currency conversion at card terminals and ATMs"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Keeping money safe",
+"f": "Split cash and cards, use a hidden pouch and stay alert in crowds"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Phone and data abroad",
+"f": "Local SIM cards, eSIMs and roaming options compared"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Free Wi-Fi tips",
+"f": "Find reliable Wi-Fi and use it safely with basic precautions"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Useful budget travel apps",
+"f": "Maps, translation, transport and expense apps that save money"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Offline tools",
+"f": "Download maps, translations and tickets before you lose signal"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Travel insurance basics",
+"f": "What travel insurance usually covers and why it can save a trip"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Visas and entry costs",
+"f": "Check entry rules early so fees and paperwork don't surprise you"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Health prep on a budget",
+"f": "Plan routine checks early and pack a small first-aid kit"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Safety on a budget",
+"f": "Choosing safe areas and transport without overspending"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Common tourist scams",
+"f": "Recognise classic tricks and keep a friendly but firm no"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Haggling politely",
+"f": "Where bargaining is normal and how to do it with a smile"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Souvenirs without overspending",
+"f": "Choose small, meaningful or useful souvenirs instead of clutter"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Saying no to impulse buys",
+"f": "Simple rules to pause before spending on things you don't need"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Weekend trips on a budget",
+"f": "Plan a cheap two-day getaway close to home"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: money, gear and safety",
+"f": "Recap packing, payments and staying safe, then pack a test bag"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Day trips from a city base",
+"f": "Stay in one place and explore nearby towns by local transport"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Exploring your own region",
+"f": "Being a tourist at home: often the cheapest travel of all"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Budget travel solo",
+"f": "The benefits of solo travel and how to manage costs on your own"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Travelling with friends",
+"f": "Splitting costs, sharing rooms and agreeing on a budget together"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Splitting group costs fairly",
+"f": "Shared expense apps and simple rules that keep friendships happy"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Budget travel with kids",
+"f": "Family rooms, kids' discounts and simple activities children love"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Travelling with a partner",
+"f": "Sharing rooms, meals and costs with one travel companion"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Low-cost travel for seniors",
+"f": "A slower pace, senior discounts and comfortable budget options"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Accessible budget travel",
+"f": "Finding affordable accessible stays, transport and attractions"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Learning basic local phrases",
+"f": "A few words like hello, thank you and how much go a long way"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Reading menus abroad",
+"f": "Decode common menu words and avoid ordering by accident the priciest dish"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Understanding local prices",
+"f": "Learn typical prices fast so you notice when something is too high"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Mealtimes and local rhythms",
+"f": "Eating when locals do often means better food at better prices"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Early-bird and lunch deals",
+"f": "Timing your meals to catch local discounts and daily specials"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Cheap entertainment at night",
+"f": "Street performers, open-air cinema, night markets and sunsets"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Free audio guides and podcasts",
+"f": "Download free guides to learn about places as you walk"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Using local tourist offices",
+"f": "Free maps, event lists and honest advice from local staff"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Chatting with locals for tips",
+"f": "The best cheap spots are often found by asking politely"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Cheap travel photography",
+"f": "Great travel photos with just your phone and good light"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Journaling your trip",
+"f": "Keep memories in a simple travel journal instead of buying souvenirs"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Rest days are budget days",
+"f": "Slowing down saves money and energy on longer trips"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Laundry on the road",
+"f": "Hand-washing, laundromats and hostel washing machines"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Staying healthy cheaply",
+"f": "Sleep, water, simple food and walking keep you well on the road"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "When to splurge",
+"f": "Choosing one special experience that is truly worth spending more on"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Planning a first budget trip",
+"f": "Put the basics together: destination, dates, budget and route"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Making a simple itinerary",
+"f": "Balance must-sees with free time and avoid costly rushing"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Booking your first budget trip",
+"f": "Book in a smart order: transport first, then stays, then extras"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Pre-trip checklist",
+"f": "Documents, money, bookings, apps and packing all checked and ready"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Reflecting after a trip",
+"f": "Compare planned and actual spending to learn for next time"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner graduation",
+"f": "Celebrate what you've learned so far and plan your next affordable adventure"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Thinking like a savvy traveller",
+"f": "Moving from single saving tips to a full strategy for cheaper and richer trips"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Advanced flight searching",
+"f": "Use calendar views, explore maps and multi-city searches to find hidden value"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Stopovers as free mini-trips",
+"f": "Some airlines allow stopovers that add a second destination at little extra cost"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Positioning flights",
+"f": "Travel to a hub city first to catch a much cheaper long-haul fare"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Mixing airlines on one trip",
+"f": "Self-transfer itineraries and why you must leave plenty of connection time"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Error fares and flash sales",
+"f": "What they are, how to react quickly and which risks to accept"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Frequent flyer basics",
+"f": "How airline miles are earned and redeemed for cheaper travel"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Loyalty programmes for stays",
+"f": "Hotel and hostel rewards that can turn regular stays into free nights"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Reward cards, used responsibly",
+"f": "The general idea of travel reward cards and why paying in full each month matters"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Rail passes explained",
+"f": "Regional and multi-country passes and how to judge whether one pays off"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Advance train tickets",
+"f": "Booking windows, saver fares and seat reservations"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Slow trains and scenic routes",
+"f": "Regional lines that are cheaper and often far more beautiful"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Overland border crossings",
+"f": "Planning land crossings by bus or train between neighbouring countries"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Ferries and boat travel",
+"f": "Deck passes, overnight ferries and island hopping on a budget"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Renting a car cheaply",
+"f": "Compare insurance, fuel policies and pick-up locations before you book"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Road trips on a budget",
+"f": "Share fuel costs, sleep simply and cook on the road"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Campervan travel",
+"f": "Relocation deals and how a van combines transport and a bed"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Cycling tours",
+"f": "Travelling by bicycle: low cost, healthy and close to the landscape"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Minibuses and shared taxis",
+"f": "How shared minibuses and collective taxis work in many countries"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Urban transport like a local",
+"f": "Rechargeable cards, free transfers and night buses in big cities"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Finding hidden-gem stays",
+"f": "Small guesthouses and local listings beyond the big booking sites"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Long-stay discounts",
+"f": "Weekly and monthly rates and how to ask for them politely"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "House sitting",
+"f": "Looking after homes and pets in exchange for free accommodation"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Volunteering for room and board",
+"f": "Work exchange programmes: what to expect and how to choose a good one"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Working holiday visas",
+"f": "A general overview of programmes that let young people work while travelling"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Skills exchange stays",
+"f": "Sharing a skill like languages, design or gardening in return for a stay"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Home exchange",
+"f": "Swapping homes with another traveller for free stays on both sides"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Farm stays and unusual stays",
+"f": "Farm stays, mountain huts and other low-cost places to sleep with a story"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "University dorms in summer",
+"f": "Student rooms that many cities offer to travellers during the holidays"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: transport and stays",
+"f": "Recap advanced transport and stay strategies and rethink a past trip with them"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Grocery strategies abroad",
+"f": "Store brands, discount supermarkets and evening markdowns"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Cooking regional dishes cheaply",
+"f": "Learn one local recipe using ingredients from the market"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "A self-guided food tour",
+"f": "Create your own tasting walk through a market district"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Coffee and snack culture",
+"f": "Enjoy local cafés like a regular without overspending"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Eating vegetarian on a budget",
+"f": "Plant-based staples like rice, beans and vegetables are cheap almost everywhere"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Dietary needs on the road",
+"f": "Managing allergies or special diets affordably with a little planning"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Food apps and surplus deals",
+"f": "Apps that sell surplus food at a discount and help reduce waste"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "A budget cooking kit",
+"f": "A tiny travel kit with a container, cutlery and a few spices"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Planning meals for a week",
+"f": "Weekly meal planning when you have a kitchen on a longer stay"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Treat meals that are worth it",
+"f": "Pick one memorable local meal and enjoy it without guilt"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Southeast Asia on a budget",
+"f": "Classic routes, night buses, guesthouses and a lively street food culture"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "South Asia on a budget",
+"f": "Trains, simple stays and incredible variety at low cost"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "East Asia smart savings",
+"f": "Rail passes, convenience-store meals and capsule-style stays"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Central Asia overland",
+"f": "Silk Road cities, homestays and shared taxis across the steppe"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "The Middle East on a budget",
+"f": "Ancient sites, local buses and strong traditions of hospitality"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "North Africa on a budget",
+"f": "Medinas, trains and traditional guesthouses at good value"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "East Africa smart travel",
+"f": "Overland routes, local buses and planning wildlife trips with costs in mind"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Southern Africa on a budget",
+"f": "Backpacker buses, camping and self-drive options"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "West Africa travel basics",
+"f": "Shared taxis, colourful markets and planning carefully with local advice"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Western Europe on less",
+"f": "Advance trains, coaches and free museum days in pricier countries"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Eastern Europe on a budget",
+"f": "Great-value cities, night trains and hearty, affordable food"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Northern Europe smart savings",
+"f": "Making expensive countries affordable with camping, cooking and passes"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Southern Europe on a budget",
+"f": "Islands, ferries, long lunches and shoulder-season bargains"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "The Balkans on a budget",
+"f": "Buses, coastal towns and mountain villages at excellent value"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Central America on a budget",
+"f": "Local buses, tourist shuttles and laid-back lake and surf towns"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "South America on a budget",
+"f": "Long-distance buses, set lunch menus and a strong hostel culture"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "The Caribbean on a budget",
+"f": "Local ferries, guesthouses and ways to avoid resort prices"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "North America on less",
+"f": "Coaches, national park passes, camping and shared road trips"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Oceania on a budget",
+"f": "Campervans, working holidays and simple campsites"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: the world on a budget",
+"f": "Compare regions and pick the one that fits your style and budget"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Free things: a deep dive",
+"f": "Building a whole day around free experiences in any city"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "National parks on a budget",
+"f": "Passes, camping and hiking in protected nature"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Hiking trails and long walks",
+"f": "Famous walking routes and how to enjoy them cheaply"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Festivals without the price tag",
+"f": "Volunteering at festivals and finding free fringe events"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Cheap cultural experiences",
+"f": "Local theatre, student concerts, open rehearsals and community events"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Free classes and workshops",
+"f": "Cooking demos, community classes and library events"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Language exchange meetups",
+"f": "Meet locals, practise languages and make friends for free"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Street art and architecture walks",
+"f": "Self-guided routes past murals and notable buildings"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Sunrise and sunset spots",
+"f": "Free natural shows and how to find the best viewpoints"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Seasonal free experiences",
+"f": "Autumn leaves, spring blossoms, winter lights and long summer evenings"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Slow travel principles",
+"f": "Staying longer in fewer places for lower costs and deeper connections"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Choosing a base for a month",
+"f": "Picking a town with good value, transport links and things to do"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Renting monthly abroad",
+"f": "Searching for monthly rentals and checking them before you pay"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Living like a local",
+"f": "Daily routines, neighbourhood shops and markets during a long stay"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Joining local communities",
+"f": "Clubs, sports groups and volunteering during longer stays"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Remote work and budget travel",
+"f": "The basics of working online while travelling slowly"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Co-working vs cafés",
+"f": "Choosing affordable work spots with reliable internet"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Budgeting for long stays",
+"f": "A monthly template for rent, food, transport and fun"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Visa rules for long trips",
+"f": "General ideas about stay limits and why you always check official sources"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Staying connected long-term",
+"f": "Local SIM plans, eSIMs and home internet for longer stays"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Sustainable budget travel",
+"f": "How eco-friendly choices often save money too"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Low-carbon transport choices",
+"f": "Trains, buses and fewer flights for greener and often cheaper trips"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Reducing plastic on the road",
+"f": "Refillable bottles, reusable bags and solid toiletries"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Supporting local businesses",
+"f": "Spending where your money stays in the community"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Responsible wildlife experiences",
+"f": "Choosing ethical nature activities that respect animals"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Respecting local customs",
+"f": "Dress, greetings and behaviour that show respect wherever you go"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Overtourism and quieter places",
+"f": "Choosing lesser-known destinations to spread tourism more fairly"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Leave no trace",
+"f": "Simple outdoor ethics for hikers, picnickers and campers"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Giving back while travelling",
+"f": "Thoughtful ways to contribute that truly help communities"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: slow and responsible travel",
+"f": "Recap slow, green and respectful travel and set your personal travel rules"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Planning multi-city trips",
+"f": "Ordering cities to reduce backtracking and transport costs"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Route mapping tools",
+"f": "Use maps and route planners to design efficient itineraries"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Combining transport modes",
+"f": "Mixing trains, buses, ferries and flights in one smart route"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Budget buffers and emergencies",
+"f": "How big a buffer to keep and what it is really for"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Handling travel disruptions",
+"f": "Delays, cancellations and rebooking with calm and know-how"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Passenger rights basics",
+"f": "General ideas about compensation rules and where to check them"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Lost luggage and documents",
+"f": "Steps to take and how preparation reduces stress and cost"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Backup plans for bookings",
+"f": "Keep flexible options when your plans may change"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Negotiating stays",
+"f": "Politely asking for discounts on longer or off-season stays"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Bargaining in markets: deeper",
+"f": "Cultural context, fair prices and building friendly rapport"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Understanding exchange rates",
+"f": "How rates move and simple ways to compare prices with home"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Multi-currency cards and wallets",
+"f": "How travel cards hold several currencies with low fees"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Cash countries vs card countries",
+"f": "Adapting to how locals prefer to pay in each place"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "ATM strategy",
+"f": "Fewer, larger withdrawals and choosing bank-owned machines"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Expense tracking like a pro",
+"f": "Categories, daily averages and adjusting your spending mid-trip"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Budget vs reality",
+"f": "Spot where you overspend and adjust without stress"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Deal newsletters and alerts",
+"f": "Following deal sources without falling for false urgency"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Avoiding false bargains",
+"f": "When the cheapest option costs more in time, comfort or safety"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Planning around big events",
+"f": "Saving money by avoiding or wisely booking big event dates"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "School holiday strategies",
+"f": "Travelling outside peak family periods or planning far ahead"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Budget city breaks",
+"f": "Making a short city trip cheap from start to finish"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Budget beach holidays",
+"f": "Coastal trips away from resort prices"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Budget mountain trips",
+"f": "Huts, hostels and hiking among the peaks"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Budget island hopping",
+"f": "Ferries, passes and choosing less touristy islands"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Budget winter travel",
+"f": "Snowy landscapes, lights and winter markets without high costs"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Budget food-focused trips",
+"f": "Planning a whole trip around tasting local cuisine for less"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Budget culture trips",
+"f": "Museums, heritage sites and history at modest cost"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Budget wellness trips",
+"f": "Hot springs, nature walks and public baths at modest cost"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Budget adventure activities",
+"f": "Kayaking, surfing and climbing with fairly priced local operators"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: trip types",
+"f": "Match trip styles to budgets and sketch your next trip type"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Group travel planning",
+"f": "Organising friends: budgets, roles and shared bookings"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Planning a family budget trip",
+"f": "Kid-friendly routes, rest days and affordable family stays"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Multi-generational trips",
+"f": "Balancing comfort and budget for travellers of different ages"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Celebrating on a budget",
+"f": "Birthdays or milestones abroad with special yet affordable plans"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Adding days to work trips",
+"f": "Extending a business trip into a few cheap personal days"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Travelling with pets on a budget",
+"f": "General planning for pet-friendly stays and transport"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Accessible travel in depth",
+"f": "Resources, discounts and accessible planning for affordable trips"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Learning a language before a trip",
+"f": "Free apps and exchanges to learn basics that save money on the road"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Cultural intelligence for savings",
+"f": "How understanding a culture helps you avoid costly mistakes"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate graduation",
+"f": "Recap your intermediate skills and plan a full two-week budget trip"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "The long-term travel mindset",
+"f": "Shifting from short holidays to months on the road"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Planning a gap year",
+"f": "Structuring months of travel, work and learning on a budget"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Round-the-world routes",
+"f": "Classic global loops and how to plan them efficiently"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "RTW tickets vs one-way flights",
+"f": "Comparing multi-stop tickets with booking each leg as you go"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Budgeting a year of travel",
+"f": "Building a realistic year-long budget region by region"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Saving for long-term travel",
+"f": "Saving strategies, selling things and reducing fixed costs at home"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Managing home while away",
+"f": "Rent, subscriptions, mail and other things to sort before leaving"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Banking setup for long trips",
+"f": "Backup cards, notifying your bank and reliable access to funds"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Insurance for long trips",
+"f": "General points to consider when choosing cover for long stays abroad"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Health planning for long trips",
+"f": "General pre-trip checks and supplies to plan for months away"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Packing for months in one bag",
+"f": "A capsule wardrobe that works across several climates"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Gear maintenance on the road",
+"f": "Repairing clothes, bags and electronics cheaply"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Digital organisation",
+"f": "Cloud backups of documents, tickets and photos"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Earning while travelling",
+"f": "A general overview of remote and seasonal work options"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Seasonal work abroad",
+"f": "Harvest, tourism and hospitality jobs that welcome travellers"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Freelancing basics on the road",
+"f": "Finding clients and managing your time while travelling"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Taxes and residency awareness",
+"f": "General info only: rules vary by country, so always check official sources"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Routines for long-term travel",
+"f": "Daily habits that keep you healthy, productive and on budget"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Avoiding travel burnout",
+"f": "Recognising travel fatigue and planning proper rest stops"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: long-term foundations",
+"f": "Recap long-term travel basics and draft a rough plan for a year away"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Advanced points strategies",
+"f": "Combining loyalty programmes and redeeming for the best value"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Award flight searching",
+"f": "Finding reward seats and using flexible routing"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Hub-and-spoke planning",
+"f": "Using budget hubs to reach many destinations cheaply"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Building complex itineraries",
+"f": "Multi-country routes with open-jaws, ferries and overland legs"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Overland epics",
+"f": "Famous long overland journeys and how travellers plan them"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Long-distance rail adventures",
+"f": "Epic train journeys like the Trans-Siberian that cross whole continents"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Freighters and slow sea travel",
+"f": "Cargo ship passages and repositioning cruises as unusual options"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Repositioning deals",
+"f": "Cheap cruises and campervans that move between seasons"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Off-the-beaten-path planning",
+"f": "Researching lesser-known places when information is limited"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Travelling in remote areas",
+"f": "Logistics, supplies and good preparation for remote places"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Travel research like an expert",
+"f": "Using forums, local sources and official sites wisely"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Reading maps for route costs",
+"f": "Estimating time and cost from maps and timetables"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Estimating costs without data",
+"f": "Building a budget for places with little online information"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Price psychology",
+"f": "How pricing tricks work and how to stay calm and rational"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Dynamic pricing explained",
+"f": "Why prices change with demand, timing and booking patterns"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Comparing total trip value",
+"f": "Looking beyond price at the experience you get for your money"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Travel spreadsheets",
+"f": "Building a full trip planner with simple budget formulas"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Scenario planning",
+"f": "Planning comfortable, normal and tight versions of the same trip"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Risk management for travellers",
+"f": "Balancing savings with safety and peace of mind"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Contingency funds",
+"f": "Sizing an emergency fund and keeping it easy to access"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Crisis-ready travel",
+"f": "Copies of documents, emergency contacts and embassy information"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Weather seasons and nature",
+"f": "Planning around monsoons, hurricane seasons and extreme heat"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Finding care abroad",
+"f": "General info on locating pharmacies and clinics and using your insurance"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Wellbeing on the road",
+"f": "Handling loneliness and homesickness and keeping in touch"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Solo travel safety habits",
+"f": "Advanced safety habits that cost little or nothing"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Night arrivals made easy",
+"f": "Planning late arrivals safely without overspending"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Trust and intuition",
+"f": "Reading situations well and knowing when to spend more for safety"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Cultural etiquette deep dive",
+"f": "Gestures, gifts and table manners across world regions"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Hospitality etiquette",
+"f": "Being a great guest in homestays and exchanges"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: planning and safety",
+"f": "Recap research, risk and etiquette, then stress-test one of your plans"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Ultra-light travel",
+"f": "Travelling with a tiny bag and almost no extra fees"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Minimalism and travel",
+"f": "Owning less at home so you can travel more"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "A zero-waste travel challenge",
+"f": "Testing a few days of travel with almost no waste"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Eco-friendly long trips",
+"f": "Making months of travel lower in both carbon and cost"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Community-based tourism",
+"f": "Staying and touring with projects run by local communities"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Volunteering ethically",
+"f": "Researching projects so your help really helps"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Cultural exchange programmes",
+"f": "Programmes that combine learning, hosting and travel"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Learning on the road",
+"f": "Short courses, workshops and skills you can learn abroad"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Photo projects on a budget",
+"f": "Themed photo projects that give your trips a purpose"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Writing about your travels",
+"f": "Blogging and journaling to record and share your journeys"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Sharing tips with travellers",
+"f": "Writing useful reviews and helping the travel community"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Hosting travellers at home",
+"f": "Giving back by welcoming guests through hospitality networks"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Language learning through travel",
+"f": "Immersion strategies during long stays abroad"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Making friends across cultures",
+"f": "Building lasting friendships while you travel"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Travel and personal growth",
+"f": "How budget travel builds confidence and problem-solving skills"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Joining local festivals",
+"f": "Taking part in celebrations as a respectful, curious guest"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Food culture deep dive",
+"f": "Understanding why each region eats what it eats"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Markets of the world",
+"f": "Famous markets and how to enjoy them on a budget"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Architecture on a budget",
+"f": "Recognising styles and finding free ways to see great buildings"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "History trips on a budget",
+"f": "Planning journeys around a historical theme"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Nature trips on a budget",
+"f": "Forests, coasts and wildlife with affordable access"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Hidden costs of long trips",
+"f": "Gear replacement, extra fees and small daily spending leaks"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Mid-trip budget audits",
+"f": "Reviewing and resetting your budget halfway through a trip"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Rebalancing a trip",
+"f": "Swapping expensive legs for cheaper alternatives"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Making money last longer",
+"f": "Stretching funds with slow travel and work exchanges"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "When plans change",
+"f": "Adapting your route and budget to new opportunities"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Saying yes to opportunities",
+"f": "Balancing spontaneity with your budget limits"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Travelling with less stress",
+"f": "Planning just enough to stay relaxed and flexible"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Coming home well",
+"f": "Reverse culture shock and settling back in with good habits"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: travel with purpose",
+"f": "Recap meaningful travel and choose a purpose for your next trip"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Designing your dream budget trip",
+"f": "Start the final project: choose a dream destination and travel style"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Project: research the destination",
+"f": "Gather information on costs, seasons, culture and transport"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Project: set the budget",
+"f": "Turn your research into a daily and total budget"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Project: choose transport",
+"f": "Pick the best-value way to get there and to get around"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Project: choose stays",
+"f": "Mix stay types for value, comfort and experience"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Project: plan the food",
+"f": "Plan markets, cooking and one or two treat meals"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Project: plan free experiences",
+"f": "Fill your days with free and low-cost highlights"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Project: plan one splurge",
+"f": "Choose the one experience worth spending more on"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Project: risks and backup plans",
+"f": "Add buffers, insurance and plan B options"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Project: the packing list",
+"f": "Build a personal carry-on list for this exact trip"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Project: the final itinerary",
+"f": "Put it all together day by day"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Project: review and refine",
+"f": "Check the plan for gaps and hidden costs"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Teaching budget travel to others",
+"f": "Explaining your methods clearly to a friend"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Helping a friend plan",
+"f": "Using your new skills to plan someone else's trip"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Budget travel myths",
+"f": "Common myths about cheap travel and the truth behind them"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Your top ten saving habits",
+"f": "Choosing the money-saving habits that worked best for you"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Your personal travel style",
+"f": "Defining how you like to travel and where you like to spend"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Balancing comfort and savings",
+"f": "Finding your personal sweet spot between thrift and comfort"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Travel as a lifelong habit",
+"f": "Building regular, affordable trips into your life"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Micro-adventures",
+"f": "Tiny local adventures that cost almost nothing"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "A seasonal travel calendar",
+"f": "Planning a year of trips around seasons and good-value periods"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Building a travel fund system",
+"f": "Automating your savings for future trips"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Planning your next five trips",
+"f": "A long-term wish list with rough budgets"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Places that reward slow travel",
+"f": "Destinations that get cheaper and richer the longer you stay"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Lessons from famous travellers",
+"f": "What Ibn Battuta, Marco Polo and others show about curiosity over money"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Travel stories that inspire",
+"f": "Telling your best budget travel story"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Gratitude and travel",
+"f": "Valuing experiences and people over things"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Year in review: transport",
+"f": "Look back at everything you learned about getting around cheaply"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Year in review: stays and food",
+"f": "Look back at sleeping and eating well for less"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the full journey",
+"f": "Recap the whole path, from your first budget to your dream trip"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your budget travel toolkit",
+"f": "Assemble your favourite apps, lists and templates in one place"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Setting next year's travel goals",
+"f": "Choose goals for trips, savings and new skills"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Becoming a mentor",
+"f": "Sharing budget travel wisdom with friends and your community"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your next adventure",
+"f": "Commit to the very first step of your next trip"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebration day",
+"f": "Celebrate a year of learning and all the adventures still ahead"
+}
+]
+}

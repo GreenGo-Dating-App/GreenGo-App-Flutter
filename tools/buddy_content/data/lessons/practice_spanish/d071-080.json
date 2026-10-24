@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 71,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the hotel",
+     "g": "Check in at a hotel and ask the key questions.",
+     "p": [
+      "Check in: Tengo una reserva a nombre de... (I have a booking under the name...).",
+      "Rooms: habitación doble, habitación individual, con baño, con vistas al mar.",
+      "Ask: ¿A qué hora es el desayuno? ¿Está incluido el desayuno? ¿Hay wifi?"
+     ],
+     "q": "You arrive at a hotel in Granada. What do you say at reception?",
+     "c": "Write a check-in dialogue: booking, room type, nights and breakfast time."
+    },
+    "de": {
+     "t": "Im Hotel",
+     "g": "Du checkst im Hotel ein und stellst die wichtigsten Fragen.",
+     "p": [
+      "Einchecken: Tengo una reserva a nombre de... (Ich habe eine Reservierung auf den Namen...).",
+      "Zimmer: habitación doble, habitación individual, con baño, con vistas al mar.",
+      "Fragen: ¿A qué hora es el desayuno? ¿Está incluido el desayuno? ¿Hay wifi?"
+     ],
+     "q": "Du kommst in einem Hotel in Granada an. Was sagst du an der Rezeption?",
+     "c": "Schreib einen Check-in-Dialog: Reservierung, Zimmer, Nächte und Frühstückszeit."
+    },
+    "es": {
+     "t": "En el hotel",
+     "g": "Haz el registro en un hotel y pregunta lo esencial.",
+     "p": [
+      "Al llegar: Tengo una reserva a nombre de... Te pedirán el pasaporte o el DNI.",
+      "Habitaciones: doble, individual, con baño, con vistas al mar. En América se oye también el cuarto.",
+      "Pregunta: ¿A qué hora es el desayuno? ¿Está incluido? ¿A qué hora hay que dejar la habitación?"
+     ],
+     "q": "Llegas a un hotel en Granada. ¿Qué dices en la recepción?",
+     "c": "Escribe un diálogo de llegada: reserva, tipo de habitación, noches y hora del desayuno."
+    },
+    "fr": {
+     "t": "À l'hôtel",
+     "g": "S'enregistrer à l'hôtel et poser les questions clés.",
+     "p": [
+      "À l'arrivée : Tengo una reserva a nombre de... (J'ai une réservation au nom de...).",
+      "Chambres : habitación doble, habitación individual, con baño, con vistas al mar.",
+      "Demande : ¿A qué hora es el desayuno? ¿Está incluido el desayuno? ¿Hay wifi?"
+     ],
+     "q": "Tu arrives dans un hôtel à Grenade. Que dis-tu à la réception ?",
+     "c": "Écris un dialogue d'arrivée : réservation, chambre, nuits et heure du petit-déjeuner."
+    },
+    "it": {
+     "t": "In albergo",
+     "g": "Fai il check-in in albergo e poni le domande principali.",
+     "p": [
+      "All'arrivo: Tengo una reserva a nombre de... (Ho una prenotazione a nome di...).",
+      "Camere: habitación doble, habitación individual, con baño, con vistas al mar.",
+      "Chiedi: ¿A qué hora es el desayuno? ¿Está incluido el desayuno? ¿Hay wifi?"
+     ],
+     "q": "Arrivi in un albergo a Granada. Cosa dici alla reception?",
+     "c": "Scrivi un dialogo di check-in: prenotazione, camera, notti e orario della colazione."
+    },
+    "pt": {
+     "t": "No hotel",
+     "g": "Faz o check-in num hotel e faz as perguntas essenciais.",
+     "p": [
+      "À chegada: Tengo una reserva a nombre de... (Tenho uma reserva em nome de...).",
+      "Quartos: habitación doble, habitación individual, con baño, con vistas al mar.",
+      "Pergunta: ¿A qué hora es el desayuno? ¿Está incluido el desayuno? ¿Hay wifi?"
+     ],
+     "q": "Chegas a um hotel em Granada. O que dizes na receção?",
+     "c": "Escreve um diálogo de check-in: reserva, tipo de quarto, noites e hora do pequeno-almoço."
+    },
+    "pt_BR": {
+     "t": "No hotel",
+     "g": "Faça o check-in em um hotel e pergunte o essencial.",
+     "p": [
+      "Na chegada: Tengo una reserva a nombre de... (Tenho uma reserva em nome de...).",
+      "Quartos: habitación doble, habitación individual, con baño, con vistas al mar.",
+      "Pergunte: ¿A qué hora es el desayuno? ¿Está incluido el desayuno? ¿Hay wifi?"
+     ],
+     "q": "Você chega a um hotel em Granada. O que diz na recepção?",
+     "c": "Escreva um diálogo de check-in: reserva, tipo de quarto, noites e horário do café da manhã."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tengo una reserva",
+      "ex": "Hola, tengo una reserva a nombre de García."
+     },
+     {
+      "w": "la habitación doble",
+      "ex": "Quiero una habitación doble para tres noches."
+     },
+     {
+      "w": "la habitación individual",
+      "ex": "¿Tienen una habitación individual libre?"
+     },
+     {
+      "w": "el desayuno",
+      "ex": "¿A qué hora es el desayuno?"
+     },
+     {
+      "w": "la llave",
+      "ex": "Aquí tiene la llave de su habitación."
+     },
+     {
+      "w": "la recepción",
+      "ex": "Pregunte en la recepción, por favor."
+     }
+    ],
+    "gram": "En el hotel: Tengo una reserva a nombre de... ¿A qué hora es + el desayuno/la salida? ¿Está incluido el desayuno?"
+   }
+  },
+  {
+   "d": 72,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Polite requests: ¿Puede...?",
+     "g": "Ask for things politely in shops, cafés and on the street.",
+     "p": [
+      "¿Puede + infinitive? = Can you...?: ¿Puede ayudarme? ¿Puede repetir?",
+      "¿Podría...? (Could you...?) is even more polite: ¿Podría cerrar la ventana?",
+      "Questions with me sound natural: ¿Me trae un café? ¿Me deja pasar? End with Muy amable."
+     ],
+     "q": "How would you politely ask a stranger to take a photo of you?",
+     "c": "Write three polite requests for a café, a shop and the street using puede and podría."
+    },
+    "de": {
+     "t": "Höfliche Bitten: ¿Puede...?",
+     "g": "Du bittest höflich um etwas, im Laden, im Café und auf der Straße.",
+     "p": [
+      "¿Puede + Infinitiv? = Können Sie...?: ¿Puede ayudarme? ¿Puede repetir?",
+      "¿Podría...? (Könnten Sie...?) ist noch höflicher: ¿Podría cerrar la ventana?",
+      "Fragen mit me klingen natürlich: ¿Me trae un café? ¿Me deja pasar? Dann: Muy amable."
+     ],
+     "q": "Wie bittest du einen Fremden höflich, ein Foto von dir zu machen?",
+     "c": "Schreib drei höfliche Bitten für Café, Laden und Straße mit puede und podría."
+    },
+    "es": {
+     "t": "Peticiones corteses: ¿Puede...?",
+     "g": "Pide cosas con cortesía en tiendas, bares y por la calle.",
+     "p": [
+      "¿Puede + infinitivo?: ¿Puede ayudarme? ¿Puede repetir? Con tú: ¿Puedes pasarme la sal?",
+      "¿Podría...? suena más formal y suave: ¿Podría cerrar la ventana, por favor?",
+      "Las preguntas con me son muy naturales: ¿Me trae un café? ¿Me deja pasar? Y al final: muy amable."
+     ],
+     "q": "¿Cómo le pedirías con educación a un desconocido que te haga una foto?",
+     "c": "Escribe tres peticiones corteses para un bar, una tienda y la calle con puede y podría."
+    },
+    "fr": {
+     "t": "Demandes polies : ¿Puede...?",
+     "g": "Demander poliment des choses au magasin, au café et dans la rue.",
+     "p": [
+      "¿Puede + infinitif ? = Pouvez-vous... ? : ¿Puede ayudarme? ¿Puede repetir?",
+      "¿Podría...? (Pourriez-vous... ?) est encore plus poli : ¿Podría cerrar la ventana?",
+      "Les questions avec me sont naturelles : ¿Me trae un café? ¿Me deja pasar? Puis : Muy amable."
+     ],
+     "q": "Comment demandes-tu poliment à un inconnu de te prendre en photo ?",
+     "c": "Écris trois demandes polies pour un café, un magasin et la rue avec puede et podría."
+    },
+    "it": {
+     "t": "Richieste gentili: ¿Puede...?",
+     "g": "Chiedi le cose con gentilezza nei negozi, al bar e per strada.",
+     "p": [
+      "¿Puede + infinito? = Può...?: ¿Puede ayudarme? ¿Puede repetir?",
+      "¿Podría...? (Potrebbe...?) è ancora più cortese: ¿Podría cerrar la ventana?",
+      "Le domande con me sono naturali: ¿Me trae un café? ¿Me deja pasar? Poi: Muy amable."
+     ],
+     "q": "Come chiederesti gentilmente a uno sconosciuto di farti una foto?",
+     "c": "Scrivi tre richieste gentili per un bar, un negozio e la strada con puede e podría."
+    },
+    "pt": {
+     "t": "Pedidos educados: ¿Puede...?",
+     "g": "Pede coisas com educação em lojas, cafés e na rua.",
+     "p": [
+      "¿Puede + infinitivo? = Pode...?: ¿Puede ayudarme? ¿Puede repetir?",
+      "¿Podría...? (Poderia...?) é ainda mais educado: ¿Podría cerrar la ventana?",
+      "Perguntas com me soam naturais: ¿Me trae un café? ¿Me deja pasar? No fim: Muy amable."
+     ],
+     "q": "Como pedirias com educação a um desconhecido que te tire uma fotografia?",
+     "c": "Escreve três pedidos educados para um café, uma loja e a rua com puede e podría."
+    },
+    "pt_BR": {
+     "t": "Pedidos educados: ¿Puede...?",
+     "g": "Peça coisas com educação em lojas, cafés e na rua.",
+     "p": [
+      "¿Puede + infinitivo? = Pode...?: ¿Puede ayudarme? ¿Puede repetir?",
+      "¿Podría...? (Poderia...?) é ainda mais educado: ¿Podría cerrar la ventana?",
+      "Perguntas com me soam naturais: ¿Me trae un café? ¿Me deja pasar? No fim: Muy amable."
+     ],
+     "q": "Como você pediria com educação a um desconhecido para tirar uma foto sua?",
+     "c": "Escreva três pedidos educados para um café, uma loja e a rua com puede e podría."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Puede ayudarme?",
+      "ex": "Perdone, ¿puede ayudarme?"
+     },
+     {
+      "w": "¿Me trae...?",
+      "ex": "¿Me trae un vaso de agua, por favor?"
+     },
+     {
+      "w": "¿Podría...?",
+      "ex": "¿Podría hablar más despacio?"
+     },
+     {
+      "w": "¿Me deja...?",
+      "ex": "¿Me deja su bolígrafo un momento?"
+     },
+     {
+      "w": "perdone",
+      "ex": "Perdone, ¿dónde está la salida?"
+     },
+     {
+      "w": "muy amable",
+      "ex": "Gracias, es usted muy amable."
+     }
+    ],
+    "gram": "Petición cortés: ¿Puede/Podría + infinitivo? ¿Me + verbo...? (¿Me trae...?, ¿Me deja...?). Podría es más formal que puede."
+   }
+  },
+  {
+   "d": 73,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Tener que and hay que",
+     "g": "Say what you or people in general must do.",
+     "p": [
+      "Tener que + infinitive = have to (personal): tengo que trabajar, ¿tienes que salir?",
+      "Hay que + infinitive = one must (general, no subject): hay que reservar, hay que pagar aquí.",
+      "No tener que = not have to: hoy no tengo que madrugar (I don't have to get up early)."
+     ],
+     "q": "What do you have to do this week, and what do you not have to do?",
+     "c": "Write three sentences with tengo que and two general rules with hay que."
+    },
+    "de": {
+     "t": "Tener que und hay que",
+     "g": "Du sagst, was du oder man allgemein tun muss.",
+     "p": [
+      "Tener que + Infinitiv = müssen (persönlich): tengo que trabajar, ¿tienes que salir?",
+      "Hay que + Infinitiv = man muss (allgemein): hay que reservar, hay que pagar aquí.",
+      "No tener que = nicht müssen: hoy no tengo que madrugar (früh aufstehen)."
+     ],
+     "q": "Was musst du diese Woche machen, und was musst du nicht?",
+     "c": "Schreib drei Sätze mit tengo que und zwei allgemeine Regeln mit hay que."
+    },
+    "es": {
+     "t": "Tener que y hay que",
+     "g": "Expresa lo que tienes que hacer tú o lo que hay que hacer en general.",
+     "p": [
+      "Tener que + infinitivo es una obligación personal: tengo que trabajar, ¿tienes que salir?",
+      "Hay que + infinitivo es impersonal y no lleva sujeto: hay que reservar, hay que pagar aquí.",
+      "No tener que es no ser necesario: hoy no tengo que madrugar. No confundir con no deber."
+     ],
+     "q": "¿Qué tienes que hacer esta semana y qué no tienes que hacer?",
+     "c": "Escribe tres frases con tengo que y dos normas generales con hay que."
+    },
+    "fr": {
+     "t": "Tener que et hay que",
+     "g": "Dire ce que toi ou les gens en général doivent faire.",
+     "p": [
+      "Tener que + infinitif = devoir (personnel) : tengo que trabajar, ¿tienes que salir?",
+      "Hay que + infinitif = il faut (général) : hay que reservar, hay que pagar aquí.",
+      "No tener que = ne pas être obligé : hoy no tengo que madrugar (se lever tôt)."
+     ],
+     "q": "Qu'est-ce que tu dois faire cette semaine, et qu'est-ce que tu n'as pas besoin de faire ?",
+     "c": "Écris trois phrases avec tengo que et deux règles générales avec hay que."
+    },
+    "it": {
+     "t": "Tener que e hay que",
+     "g": "Dici cosa devi fare tu o cosa bisogna fare in generale.",
+     "p": [
+      "Tener que + infinito = dovere (personale): tengo que trabajar, ¿tienes que salir?",
+      "Hay que + infinito = bisogna (generale): hay que reservar, hay que pagar aquí.",
+      "No tener que = non dovere: hoy no tengo que madrugar (alzarmi presto)."
+     ],
+     "q": "Cosa devi fare questa settimana e cosa non devi fare?",
+     "c": "Scrivi tre frasi con tengo que e due regole generali con hay que."
+    },
+    "pt": {
+     "t": "Tener que e hay que",
+     "g": "Diz o que tens de fazer ou o que é preciso fazer em geral.",
+     "p": [
+      "Tener que + infinitivo = ter de (pessoal): tengo que trabajar, ¿tienes que salir?",
+      "Hay que + infinitivo = é preciso (geral): hay que reservar, hay que pagar aquí.",
+      "No tener que = não ter de: hoy no tengo que madrugar (levantar-me cedo)."
+     ],
+     "q": "O que tens de fazer esta semana e o que não tens de fazer?",
+     "c": "Escreve três frases com tengo que e duas regras gerais com hay que."
+    },
+    "pt_BR": {
+     "t": "Tener que e hay que",
+     "g": "Diga o que você tem que fazer ou o que é preciso fazer em geral.",
+     "p": [
+      "Tener que + infinitivo = ter que (pessoal): tengo que trabajar, ¿tienes que salir?",
+      "Hay que + infinitivo = é preciso (geral): hay que reservar, hay que pagar aquí.",
+      "No tener que = não precisar: hoy no tengo que madrugar (acordar cedo)."
+     ],
+     "q": "O que você tem que fazer esta semana e o que não precisa fazer?",
+     "c": "Escreva três frases com tengo que e duas regras gerais com hay que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tener que",
+      "ex": "Tengo que trabajar mañana."
+     },
+     {
+      "w": "hay que",
+      "ex": "Hay que reservar mesa los sábados."
+     },
+     {
+      "w": "no tener que",
+      "ex": "Hoy no tengo que madrugar."
+     },
+     {
+      "w": "necesitar",
+      "ex": "Necesito comprar pan."
+     },
+     {
+      "w": "madrugar",
+      "ex": "Los lunes tengo que madrugar."
+     },
+     {
+      "w": "reservar",
+      "ex": "Hay que reservar con antelación."
+     }
+    ],
+    "gram": "Tener que + infinitivo = obligación personal: tengo que estudiar. Hay que + infinitivo = obligación general, impersonal: hay que pagar."
+   }
+  },
+  {
+   "d": 74,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ordinal numbers: primero, segundo",
+     "g": "Use first, second, third for floors, streets and rankings.",
+     "p": [
+      "Ordinals 1-5: primero, segundo, tercero, cuarto, quinto. They agree: la segunda calle.",
+      "Primero and tercero drop the -o before a masculine noun: el primer día, el tercer piso.",
+      "For dates, Spanish uses normal numbers: el dos de mayo; only the 1st can be el primero de mayo."
+     ],
+     "q": "Which floor do you live on, and what was your first trip abroad?",
+     "c": "Give directions inside a building: which floor, which door, using four ordinals."
+    },
+    "de": {
+     "t": "Ordnungszahlen: primero, segundo",
+     "g": "Du benutzt erste, zweite, dritte für Etagen, Straßen und Ranglisten.",
+     "p": [
+      "Ordnungszahlen 1-5: primero, segundo, tercero, cuarto, quinto. Sie passen sich an: la segunda calle.",
+      "Primero und tercero verlieren vor männlichen Nomen das -o: el primer día, el tercer piso.",
+      "Beim Datum normale Zahlen: el dos de mayo; nur der 1. kann el primero de mayo sein."
+     ],
+     "q": "In welchem Stock wohnst du, und was war deine erste Auslandsreise?",
+     "c": "Erklär den Weg in einem Gebäude: Stock und Tür, mit vier Ordnungszahlen."
+    },
+    "es": {
+     "t": "Números ordinales: primero, segundo",
+     "g": "Usa los ordinales para pisos, calles, clasificaciones y fechas.",
+     "p": [
+      "Del 1 al 10: primero, segundo, tercero, cuarto, quinto, sexto, séptimo, octavo, noveno, décimo.",
+      "Primero y tercero pierden la -o ante masculino: el primer día, el tercer piso. Concuerdan: la segunda.",
+      "En las fechas se usan cardinales: el dos de mayo. Para el día 1 vale el uno o el primero."
+     ],
+     "q": "¿En qué piso vives? ¿Cuál fue tu primer viaje al extranjero?",
+     "c": "Explica cómo llegar dentro de un edificio: piso y puerta, usando cuatro ordinales."
+    },
+    "fr": {
+     "t": "Nombres ordinaux : primero, segundo",
+     "g": "Utiliser premier, deuxième, troisième pour étages, rues et classements.",
+     "p": [
+      "Ordinaux 1-5 : primero, segundo, tercero, cuarto, quinto. Ils s'accordent : la segunda calle.",
+      "Primero et tercero perdent le -o devant un nom masculin : el primer día, el tercer piso.",
+      "Pour les dates, nombres normaux : el dos de mayo ; seul le 1er peut être el primero de mayo."
+     ],
+     "q": "À quel étage habites-tu, et quel a été ton premier voyage à l'étranger ?",
+     "c": "Explique un chemin dans un bâtiment : étage et porte, avec quatre ordinaux."
+    },
+    "it": {
+     "t": "Numeri ordinali: primero, segundo",
+     "g": "Usi primo, secondo, terzo per piani, strade e classifiche.",
+     "p": [
+      "Ordinali 1-5: primero, segundo, tercero, cuarto, quinto. Si accordano: la segunda calle.",
+      "Primero e tercero perdono la -o davanti a un nome maschile: el primer día, el tercer piso.",
+      "Per le date si usano i numeri normali: el dos de mayo; solo il 1 può essere el primero."
+     ],
+     "q": "A che piano abiti e qual è stato il tuo primo viaggio all'estero?",
+     "c": "Spiega un percorso in un edificio: piano e porta, con quattro ordinali."
+    },
+    "pt": {
+     "t": "Números ordinais: primero, segundo",
+     "g": "Usa primeiro, segundo, terceiro para andares, ruas e classificações.",
+     "p": [
+      "Ordinais 1-5: primero, segundo, tercero, cuarto, quinto. Concordam: la segunda calle.",
+      "Primero e tercero perdem o -o antes de um nome masculino: el primer día, el tercer piso.",
+      "Nas datas usam-se números normais: el dos de mayo; só o dia 1 pode ser el primero."
+     ],
+     "q": "Em que andar moras e qual foi a tua primeira viagem ao estrangeiro?",
+     "c": "Explica um caminho dentro de um edifício: andar e porta, com quatro ordinais."
+    },
+    "pt_BR": {
+     "t": "Números ordinais: primero, segundo",
+     "g": "Use primeiro, segundo, terceiro para andares, ruas e classificações.",
+     "p": [
+      "Ordinais 1-5: primero, segundo, tercero, cuarto, quinto. Concordam: la segunda calle.",
+      "Primero e tercero perdem o -o antes de substantivo masculino: el primer día, el tercer piso.",
+      "Nas datas usam-se números normais: el dos de mayo; só o dia 1 pode ser el primero."
+     ],
+     "q": "Em que andar você mora e qual foi sua primeira viagem ao exterior?",
+     "c": "Explique um caminho dentro de um prédio: andar e porta, com quatro ordinais."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "primero",
+      "ex": "Vivo en el primer piso."
+     },
+     {
+      "w": "segundo",
+      "ex": "Es la segunda calle a la derecha."
+     },
+     {
+      "w": "tercero",
+      "ex": "Llegó en tercer lugar."
+     },
+     {
+      "w": "cuarto",
+      "ex": "El baño está en el cuarto piso."
+     },
+     {
+      "w": "quinto",
+      "ex": "Es la quinta vez que vengo a Lima."
+     },
+     {
+      "w": "la planta",
+      "ex": "La oficina está en la tercera planta."
+     }
+    ],
+    "gram": "Ordinales concuerdan: primero/a, segundo/a. Primero y tercero pierden la -o ante nombre masculino: el primer día, el tercer piso."
+   }
+  },
+  {
+   "d": 75,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Frequency words: siempre, nunca",
+     "g": "Say how often you do things.",
+     "p": [
+      "From most to least: siempre, a menudo (often), a veces, casi nunca, nunca.",
+      "Nunca before the verb needs no no: nunca bebo café. After the verb: no bebo café nunca.",
+      "Also: todos los días, una vez a la semana, dos veces al mes. ¿Con qué frecuencia...?"
+     ],
+     "q": "How often do you cook, do sport and travel?",
+     "c": "Write five sentences about your habits, each with a different frequency word."
+    },
+    "de": {
+     "t": "Häufigkeit: siempre, nunca",
+     "g": "Du sagst, wie oft du etwas tust.",
+     "p": [
+      "Von oft bis nie: siempre, a menudo (oft), a veces (manchmal), casi nunca, nunca.",
+      "Nunca vor dem Verb braucht kein no: nunca bebo café. Danach: no bebo café nunca.",
+      "Auch: todos los días, una vez a la semana, dos veces al mes. ¿Con qué frecuencia...?"
+     ],
+     "q": "Wie oft kochst du, treibst du Sport und reist du?",
+     "c": "Schreib fünf Sätze über deine Gewohnheiten, jeder mit einem anderen Häufigkeitswort."
+    },
+    "es": {
+     "t": "Adverbios de frecuencia: siempre, nunca",
+     "g": "Di con qué frecuencia haces las cosas.",
+     "p": [
+      "De más a menos: siempre, a menudo, a veces, casi nunca, nunca. También: con frecuencia, de vez en cuando.",
+      "Nunca antes del verbo va solo: nunca bebo café. Detrás necesita doble negación: no bebo café nunca.",
+      "Más expresiones: todos los días, una vez a la semana, dos veces al mes. ¿Cada cuánto...?"
+     ],
+     "q": "¿Cada cuánto cocinas, haces deporte y viajas?",
+     "c": "Escribe cinco frases sobre tus hábitos, cada una con una expresión de frecuencia distinta."
+    },
+    "fr": {
+     "t": "Fréquence : siempre, nunca",
+     "g": "Dire à quelle fréquence tu fais les choses.",
+     "p": [
+      "Du plus au moins : siempre, a menudo (souvent), a veces (parfois), casi nunca, nunca.",
+      "Nunca avant le verbe n'a pas besoin de no : nunca bebo café. Après : no bebo café nunca.",
+      "Aussi : todos los días, una vez a la semana, dos veces al mes. ¿Con qué frecuencia...?"
+     ],
+     "q": "À quelle fréquence cuisines-tu, fais-tu du sport et voyages-tu ?",
+     "c": "Écris cinq phrases sur tes habitudes, chacune avec un mot de fréquence différent."
+    },
+    "it": {
+     "t": "Frequenza: siempre, nunca",
+     "g": "Dici quanto spesso fai le cose.",
+     "p": [
+      "Dal più al meno: siempre, a menudo (spesso), a veces (a volte), casi nunca, nunca.",
+      "Nunca prima del verbo non vuole no: nunca bebo café. Dopo: no bebo café nunca.",
+      "Anche: todos los días, una vez a la semana, dos veces al mes. ¿Con qué frecuencia...?"
+     ],
+     "q": "Quanto spesso cucini, fai sport e viaggi?",
+     "c": "Scrivi cinque frasi sulle tue abitudini, ognuna con una parola di frequenza diversa."
+    },
+    "pt": {
+     "t": "Frequência: siempre, nunca",
+     "g": "Diz com que frequência fazes as coisas.",
+     "p": [
+      "Do mais ao menos: siempre, a menudo (muitas vezes), a veces, casi nunca, nunca.",
+      "Nunca antes do verbo dispensa o no: nunca bebo café. Depois: no bebo café nunca.",
+      "Também: todos los días, una vez a la semana, dos veces al mes. ¿Con qué frecuencia...?"
+     ],
+     "q": "Com que frequência cozinhas, fazes desporto e viajas?",
+     "c": "Escreve cinco frases sobre os teus hábitos, cada uma com uma palavra de frequência diferente."
+    },
+    "pt_BR": {
+     "t": "Frequência: siempre, nunca",
+     "g": "Diga com que frequência você faz as coisas.",
+     "p": [
+      "Do mais ao menos: siempre, a menudo (com frequência), a veces, casi nunca, nunca.",
+      "Nunca antes do verbo dispensa o no: nunca bebo café. Depois: no bebo café nunca.",
+      "Também: todos los días, una vez a la semana, dos veces al mes. ¿Con qué frecuencia...?"
+     ],
+     "q": "Com que frequência você cozinha, faz esporte e viaja?",
+     "c": "Escreva cinco frases sobre seus hábitos, cada uma com uma palavra de frequência diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "siempre",
+      "ex": "Siempre desayuno café con tostadas."
+     },
+     {
+      "w": "a menudo",
+      "ex": "Voy al cine a menudo."
+     },
+     {
+      "w": "a veces",
+      "ex": "A veces cocino para mis amigos."
+     },
+     {
+      "w": "casi nunca",
+      "ex": "Casi nunca veo la televisión."
+     },
+     {
+      "w": "nunca",
+      "ex": "Nunca llego tarde al trabajo."
+     },
+     {
+      "w": "todos los días",
+      "ex": "Camino media hora todos los días."
+     }
+    ],
+    "gram": "Frecuencia: siempre, a menudo, a veces, casi nunca, nunca. Nunca delante del verbo: nunca como carne; detrás exige no: no como carne nunca."
+   }
+  },
+  {
+   "d": 76,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Linking words: y, pero, porque",
+     "g": "Connect ideas to build longer, more natural sentences.",
+     "p": [
+      "Y (and), o (or), pero (but), porque (because): estudio español porque me gusta viajar.",
+      "Small changes: y becomes e before i- or hi- (padres e hijos); o becomes u before o- (siete u ocho).",
+      "También = also; tampoco = neither: no me gusta el frío, a mí tampoco."
+     ],
+     "q": "Why are you learning Spanish? Answer with porque, pero and también.",
+     "c": "Join short sentences about your day into three long ones with y, pero and porque."
+    },
+    "de": {
+     "t": "Bindewörter: y, pero, porque",
+     "g": "Du verbindest Ideen zu längeren, natürlicheren Sätzen.",
+     "p": [
+      "Y (und), o (oder), pero (aber), porque (weil): estudio español porque me gusta viajar.",
+      "Kleine Änderungen: y wird e vor i- oder hi- (padres e hijos); o wird u vor o- (siete u ocho).",
+      "También = auch; tampoco = auch nicht: no me gusta el frío, a mí tampoco."
+     ],
+     "q": "Warum lernst du Spanisch? Antworte mit porque, pero und también.",
+     "c": "Verbinde kurze Sätze über deinen Tag zu drei langen mit y, pero und porque."
+    },
+    "es": {
+     "t": "Conectores: y, pero, porque",
+     "g": "Une ideas para hacer frases más largas y naturales.",
+     "p": [
+      "Y, o, pero y porque: estudio español porque me gusta viajar, pero tengo poco tiempo.",
+      "Cambios de sonido: y pasa a e ante i- o hi- (padres e hijos); o pasa a u ante o- (siete u ocho).",
+      "También para sumar y tampoco para negar: no me gusta el frío, a mí tampoco. ¿Por qué? lleva tilde."
+     ],
+     "q": "¿Por qué aprendes español? Responde con porque, pero y también.",
+     "c": "Une frases cortas sobre tu día en tres frases largas con y, pero y porque."
+    },
+    "fr": {
+     "t": "Mots de liaison : y, pero, porque",
+     "g": "Relier des idées pour faire des phrases plus longues et naturelles.",
+     "p": [
+      "Y (et), o (ou), pero (mais), porque (parce que) : estudio español porque me gusta viajar.",
+      "Petits changements : y devient e devant i- ou hi- (padres e hijos) ; o devient u devant o-.",
+      "También = aussi ; tampoco = non plus : no me gusta el frío, a mí tampoco."
+     ],
+     "q": "Pourquoi apprends-tu l'espagnol ? Réponds avec porque, pero et también.",
+     "c": "Relie des phrases courtes sur ta journée en trois longues avec y, pero et porque."
+    },
+    "it": {
+     "t": "Connettivi: y, pero, porque",
+     "g": "Colleghi le idee per fare frasi più lunghe e naturali.",
+     "p": [
+      "Y (e), o (o), pero (ma), porque (perché): estudio español porque me gusta viajar.",
+      "Piccoli cambi: y diventa e davanti a i- o hi- (padres e hijos); o diventa u davanti a o-.",
+      "También = anche; tampoco = neanche: no me gusta el frío, a mí tampoco."
+     ],
+     "q": "Perché studi spagnolo? Rispondi con porque, pero e también.",
+     "c": "Unisci frasi brevi sulla tua giornata in tre frasi lunghe con y, pero e porque."
+    },
+    "pt": {
+     "t": "Conectores: y, pero, porque",
+     "g": "Liga ideias para fazer frases mais longas e naturais.",
+     "p": [
+      "Y (e), o (ou), pero (mas), porque: estudio español porque me gusta viajar.",
+      "Pequenas mudanças: y passa a e antes de i- ou hi- (padres e hijos); o passa a u antes de o-.",
+      "También = também; tampoco = também não: no me gusta el frío, a mí tampoco."
+     ],
+     "q": "Porque estás a aprender espanhol? Responde com porque, pero e también.",
+     "c": "Junta frases curtas sobre o teu dia em três frases longas com y, pero e porque."
+    },
+    "pt_BR": {
+     "t": "Conectores: y, pero, porque",
+     "g": "Ligue ideias para fazer frases mais longas e naturais.",
+     "p": [
+      "Y (e), o (ou), pero (mas), porque: estudio español porque me gusta viajar.",
+      "Pequenas mudanças: y vira e antes de i- ou hi- (padres e hijos); o vira u antes de o-.",
+      "También = também; tampoco = também não: no me gusta el frío, a mí tampoco."
+     ],
+     "q": "Por que você está aprendendo espanhol? Responda com porque, pero e también.",
+     "c": "Junte frases curtas sobre seu dia em três frases longas com y, pero e porque."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "y",
+      "ex": "Tengo un hermano y una hermana."
+     },
+     {
+      "w": "o",
+      "ex": "¿Quieres té o café?"
+     },
+     {
+      "w": "pero",
+      "ex": "Me gusta el mar, pero prefiero la montaña."
+     },
+     {
+      "w": "porque",
+      "ex": "Estudio español porque me encanta viajar."
+     },
+     {
+      "w": "también",
+      "ex": "Yo también hablo inglés."
+     },
+     {
+      "w": "tampoco",
+      "ex": "No me gusta el frío. A mí tampoco."
+     }
+    ],
+    "gram": "Conectores: y (e ante i-/hi-: padre e hijo), o (u ante o-/ho-: siete u ocho), pero, porque. También (+) / tampoco (-)."
+   }
+  },
+  {
+   "d": 77,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Saber or conocer?",
+     "g": "Choose between the two Spanish verbs for to know.",
+     "p": [
+      "Saber = know facts or how to do something: sé nadar, ¿sabes dónde está el banco?",
+      "Conocer = know people and places (be familiar with): conozco Lima, conozco a tu hermano.",
+      "Irregular yo forms: sé and conozco. Note the a before people: conozco a Ana."
+     ],
+     "q": "Which cities do you know well, and what do you know how to do really well?",
+     "c": "Write three sentences with sé and three with conozco about yourself."
+    },
+    "de": {
+     "t": "Saber oder conocer?",
+     "g": "Du wählst zwischen den zwei spanischen Verben für kennen und wissen.",
+     "p": [
+      "Saber = wissen, können: sé nadar (ich kann schwimmen), ¿sabes dónde está el banco?",
+      "Conocer = kennen (Menschen, Orte): conozco Lima, conozco a tu hermano.",
+      "Unregelmäßig in der Ich-Form: sé und conozco. Vor Personen steht a: conozco a Ana."
+     ],
+     "q": "Welche Städte kennst du gut, und was kannst du richtig gut?",
+     "c": "Schreib drei Sätze mit sé und drei mit conozco über dich."
+    },
+    "es": {
+     "t": "¿Saber o conocer?",
+     "g": "Distingue bien entre saber y conocer, dos verbos que confunden a muchos estudiantes.",
+     "p": [
+      "Saber se usa para datos y habilidades: sé nadar, ¿sabes dónde está el banco?",
+      "Conocer se usa para personas, lugares y cosas que has experimentado: conozco Lima, conozco a tu hermano.",
+      "Formas irregulares en yo: sé y conozco. Con personas se añade a: conozco a Ana."
+     ],
+     "q": "¿Qué ciudades conoces bien y qué sabes hacer muy bien?",
+     "c": "Escribe tres frases con sé y tres con conozco sobre ti."
+    },
+    "fr": {
+     "t": "Saber ou conocer ?",
+     "g": "Choisir entre les deux verbes espagnols pour savoir et connaître.",
+     "p": [
+      "Saber = savoir (faits, compétences) : sé nadar, ¿sabes dónde está el banco?",
+      "Conocer = connaître (personnes, lieux) : conozco Lima, conozco a tu hermano.",
+      "Formes irrégulières : sé et conozco. Devant une personne, on met a : conozco a Ana."
+     ],
+     "q": "Quelles villes connais-tu bien, et que sais-tu très bien faire ?",
+     "c": "Écris trois phrases avec sé et trois avec conozco sur toi."
+    },
+    "it": {
+     "t": "Saber o conocer?",
+     "g": "Scegli tra i due verbi spagnoli per sapere e conoscere.",
+     "p": [
+      "Saber = sapere (fatti, capacità): sé nadar (so nuotare), ¿sabes dónde está el banco?",
+      "Conocer = conoscere (persone, luoghi): conozco Lima, conozco a tu hermano.",
+      "Forme irregolari: sé e conozco. Davanti a persone si mette a: conozco a Ana."
+     ],
+     "q": "Quali città conosci bene e cosa sai fare davvero bene?",
+     "c": "Scrivi tre frasi con sé e tre con conozco su di te."
+    },
+    "pt": {
+     "t": "Saber ou conocer?",
+     "g": "Escolhe entre saber e conocer, como saber e conhecer em português.",
+     "p": [
+      "Saber = factos e capacidades: sé nadar, ¿sabes dónde está el banco?",
+      "Conocer = pessoas e lugares: conozco Lima, conozco a tu hermano.",
+      "Formas irregulares: sé e conozco. Antes de pessoas vem a: conozco a Ana."
+     ],
+     "q": "Que cidades conheces bem e o que sabes fazer muito bem?",
+     "c": "Escreve três frases com sé e três com conozco sobre ti."
+    },
+    "pt_BR": {
+     "t": "Saber ou conocer?",
+     "g": "Escolha entre saber e conocer, como saber e conhecer em português.",
+     "p": [
+      "Saber = fatos e habilidades: sé nadar, ¿sabes dónde está el banco?",
+      "Conocer = pessoas e lugares: conozco Lima, conozco a tu hermano.",
+      "Formas irregulares: sé e conozco. Antes de pessoas vem a: conozco a Ana."
+     ],
+     "q": "Que cidades você conhece bem e o que sabe fazer muito bem?",
+     "c": "Escreva três frases com sé e três com conozco sobre você."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "saber",
+      "ex": "No sé dónde está la estación."
+     },
+     {
+      "w": "sé nadar",
+      "ex": "Sé nadar desde pequeño."
+     },
+     {
+      "w": "conocer",
+      "ex": "Conozco un restaurante muy bueno."
+     },
+     {
+      "w": "conozco Lima",
+      "ex": "Conozco Lima, pero no Cuzco."
+     },
+     {
+      "w": "conocer a alguien",
+      "ex": "¿Conoces a mi amiga Sofía?"
+     },
+     {
+      "w": "¿Sabes...?",
+      "ex": "¿Sabes a qué hora abre el museo?"
+     }
+    ],
+    "gram": "Saber (sé) = datos y habilidades: sé cocinar. Conocer (conozco) = personas y lugares, con a ante personas: conozco a Ana."
+   }
+  },
+  {
+   "d": 78,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Personal a",
+     "g": "Use the little a before people as direct objects.",
+     "p": [
+      "When a person receives the action, add a: veo a mi hermana, llamo a Pedro.",
+      "With things, no a: veo la tele, busco mis llaves. Compare: busco a Ana / busco un taxi.",
+      "A + el becomes al: espero al profesor. Many people also use a with their pets."
+     ],
+     "q": "Who do you call or visit most often? Answer with llamo a and visito a.",
+     "c": "Write five sentences: three with personal a and two with things, without a."
+    },
+    "de": {
+     "t": "Das persönliche a",
+     "g": "Du setzt das kleine a vor Personen als direktes Objekt.",
+     "p": [
+      "Ist eine Person Objekt, steht a davor: veo a mi hermana, llamo a Pedro.",
+      "Bei Dingen kein a: veo la tele, busco mis llaves. Vergleich: busco a Ana / busco un taxi.",
+      "A + el wird al: espero al profesor. Viele setzen a auch vor ihr Haustier."
+     ],
+     "q": "Wen rufst du am häufigsten an oder besuchst du? Antworte mit llamo a und visito a.",
+     "c": "Schreib fünf Sätze: drei mit persönlichem a und zwei mit Dingen ohne a."
+    },
+    "es": {
+     "t": "La a personal",
+     "g": "Usa la a delante de personas que son complemento directo.",
+     "p": [
+      "Cuando la persona recibe la acción, se pone a: veo a mi hermana, llamo a Pedro.",
+      "Con cosas no: veo la tele, busco mis llaves. Compara: busco a Ana y busco un taxi.",
+      "A + el se contrae en al: espero al profesor. Con mascotas queridas también se usa: paseo a Toby."
+     ],
+     "q": "¿A quién llamas o visitas más a menudo? Responde con llamo a y visito a.",
+     "c": "Escribe cinco frases: tres con a personal y dos con cosas, sin a."
+    },
+    "fr": {
+     "t": "Le a personnel",
+     "g": "Mettre le petit a devant les personnes complément d'objet direct.",
+     "p": [
+      "Quand une personne reçoit l'action, on ajoute a : veo a mi hermana, llamo a Pedro.",
+      "Avec des choses, pas de a : veo la tele, busco mis llaves. Compare : busco a Ana / busco un taxi.",
+      "A + el devient al : espero al profesor. Beaucoup l'utilisent aussi pour leur animal."
+     ],
+     "q": "Qui appelles-tu ou visites-tu le plus souvent ? Réponds avec llamo a et visito a.",
+     "c": "Écris cinq phrases : trois avec le a personnel et deux avec des choses, sans a."
+    },
+    "it": {
+     "t": "La a personale",
+     "g": "Metti la piccola a davanti alle persone come complemento oggetto.",
+     "p": [
+      "Quando una persona riceve l'azione, si aggiunge a: veo a mi hermana, llamo a Pedro.",
+      "Con le cose niente a: veo la tele, busco mis llaves. Confronta: busco a Ana / busco un taxi.",
+      "A + el diventa al: espero al profesor. Molti la usano anche per gli animali di casa."
+     ],
+     "q": "Chi chiami o visiti più spesso? Rispondi con llamo a e visito a.",
+     "c": "Scrivi cinque frasi: tre con la a personale e due con cose, senza a."
+    },
+    "pt": {
+     "t": "O a pessoal",
+     "g": "Usa o pequeno a antes de pessoas como complemento direto.",
+     "p": [
+      "Quando uma pessoa recebe a ação, junta-se a: veo a mi hermana, llamo a Pedro.",
+      "Com coisas não há a: veo la tele, busco mis llaves. Compara: busco a Ana / busco un taxi.",
+      "A + el dá al: espero al profesor. Muitos usam a também com os animais de estimação."
+     ],
+     "q": "A quem telefonas ou visitas mais vezes? Responde com llamo a e visito a.",
+     "c": "Escreve cinco frases: três com a pessoal e duas com coisas, sem a."
+    },
+    "pt_BR": {
+     "t": "O a pessoal",
+     "g": "Use o pequeno a antes de pessoas como objeto direto.",
+     "p": [
+      "Quando uma pessoa recebe a ação, coloca-se a: veo a mi hermana, llamo a Pedro.",
+      "Com coisas não tem a: veo la tele, busco mis llaves. Compare: busco a Ana / busco un taxi.",
+      "A + el vira al: espero al profesor. Muita gente usa a também com seus pets."
+     ],
+     "q": "Para quem você liga ou quem visita com mais frequência? Responda com llamo a e visito a.",
+     "c": "Escreva cinco frases: três com a pessoal e duas com coisas, sem a."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ver a",
+      "ex": "Veo a mi hermana los domingos."
+     },
+     {
+      "w": "llamar a",
+      "ex": "Esta tarde llamo a Pedro."
+     },
+     {
+      "w": "visitar a",
+      "ex": "Visitamos a los abuelos en verano."
+     },
+     {
+      "w": "esperar a",
+      "ex": "Espero a mi amiga en la puerta."
+     },
+     {
+      "w": "ayudar a",
+      "ex": "Ayudo a mi vecino con la compra."
+     },
+     {
+      "w": "buscar a",
+      "ex": "Busco a la profesora de inglés."
+     }
+    ],
+    "gram": "A personal: cuando el objeto directo es una persona (o mascota querida), va a delante: veo a Juan. Con cosas no: veo la tele. A + el = al."
+   }
+  },
+  {
+   "d": 79,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Talking about the near past: he comido",
+     "g": "Meet the pretérito perfecto to talk about recent actions.",
+     "p": [
+      "Form: haber (he, has, ha, hemos, habéis, han) + participle: he trabajado, ¿has comido?",
+      "Participles: -ar verbs take -ado (hablado), -er and -ir verbs take -ido (comido, vivido).",
+      "Haber and the participle never split: ya he comido. Negation goes first: no he comido."
+     ],
+     "q": "What have you done so far today? Tell me two things with he + participle.",
+     "c": "Write four sentences about today with he, has, ha and hemos."
+    },
+    "de": {
+     "t": "Die nahe Vergangenheit: he comido",
+     "g": "Du lernst das pretérito perfecto für kürzlich Geschehenes kennen.",
+     "p": [
+      "Bildung: haber (he, has, ha, hemos, habéis, han) + Partizip: he trabajado, ¿has comido?",
+      "Partizip: -ar-Verben auf -ado (hablado), -er- und -ir-Verben auf -ido (comido, vivido).",
+      "Haber und Partizip bleiben zusammen: ya he comido. Verneinung davor: no he comido."
+     ],
+     "q": "Was hast du heute schon gemacht? Nenn mir zwei Dinge mit he + Partizip.",
+     "c": "Schreib vier Sätze über heute mit he, has, ha und hemos."
+    },
+    "es": {
+     "t": "El pasado cercano: he comido",
+     "g": "Conoce el pretérito perfecto para hablar de acciones recientes.",
+     "p": [
+      "Se forma con haber (he, has, ha, hemos, habéis, han) + participio: he trabajado, ¿has comido?",
+      "Participios regulares: -ado para los verbos en -ar y -ido para -er e -ir: hablado, comido, vivido.",
+      "Haber y el participio van juntos: ya he comido. En gran parte de América se prefiere el indefinido."
+     ],
+     "q": "¿Qué has hecho hoy hasta ahora? Cuéntame dos cosas con he + participio.",
+     "c": "Escribe cuatro frases sobre hoy con he, has, ha y hemos."
+    },
+    "fr": {
+     "t": "Le passé proche : he comido",
+     "g": "Découvrir le pretérito perfecto pour les actions récentes.",
+     "p": [
+      "Formation : haber (he, has, ha, hemos, habéis, han) + participe : he trabajado, ¿has comido?",
+      "Participes : -ar donne -ado (hablado), -er et -ir donnent -ido (comido, vivido).",
+      "Haber et le participe ne se séparent pas : ya he comido. La négation avant : no he comido."
+     ],
+     "q": "Qu'as-tu fait aujourd'hui jusqu'ici ? Dis-moi deux choses avec he + participe.",
+     "c": "Écris quatre phrases sur aujourd'hui avec he, has, ha et hemos."
+    },
+    "it": {
+     "t": "Il passato vicino: he comido",
+     "g": "Conosci il pretérito perfecto per parlare di azioni recenti.",
+     "p": [
+      "Si forma con haber (he, has, ha, hemos, habéis, han) + participio: he trabajado, ¿has comido?",
+      "Participi: -ar fa -ado (hablado), -er e -ir fanno -ido (comido, vivido). Sempre con haber!",
+      "Haber e participio stanno insieme: ya he comido. La negazione va prima: no he comido."
+     ],
+     "q": "Cosa hai fatto oggi finora? Dimmi due cose con he + participio.",
+     "c": "Scrivi quattro frasi su oggi con he, has, ha e hemos."
+    },
+    "pt": {
+     "t": "O passado próximo: he comido",
+     "g": "Conhece o pretérito perfecto para falar de ações recentes.",
+     "p": [
+      "Forma-se com haber (he, has, ha, hemos, habéis, han) + particípio: he trabajado, ¿has comido?",
+      "Particípios: -ar dá -ado (hablado), -er e -ir dão -ido (comido, vivido).",
+      "Atenção: é como dizer já comi, não tenho comido. Haber e particípio ficam juntos: ya he comido."
+     ],
+     "q": "O que fizeste hoje até agora? Diz-me duas coisas com he + particípio.",
+     "c": "Escreve quatro frases sobre hoje com he, has, ha e hemos."
+    },
+    "pt_BR": {
+     "t": "O passado próximo: he comido",
+     "g": "Conheça o pretérito perfecto para falar de ações recentes.",
+     "p": [
+      "Forma-se com haber (he, has, ha, hemos, habéis, han) + particípio: he trabajado, ¿has comido?",
+      "Particípios: -ar vira -ado (hablado), -er e -ir viram -ido (comido, vivido).",
+      "Atenção: equivale a já comi, não a tenho comido. Haber e particípio ficam juntos: ya he comido."
+     ],
+     "q": "O que você fez hoje até agora? Me conte duas coisas com he + particípio.",
+     "c": "Escreva quatro frases sobre hoje com he, has, ha e hemos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "he comido",
+      "ex": "Ya he comido, gracias."
+     },
+     {
+      "w": "has trabajado",
+      "ex": "¿Has trabajado mucho hoy?"
+     },
+     {
+      "w": "ha llegado",
+      "ex": "Mi hermano ha llegado esta mañana."
+     },
+     {
+      "w": "hemos visto",
+      "ex": "Hemos visto una película muy buena."
+     },
+     {
+      "w": "hoy",
+      "ex": "Hoy he hablado con mi madre."
+     },
+     {
+      "w": "ya",
+      "ex": "¿Ya has terminado?"
+     }
+    ],
+    "gram": "Pretérito perfecto: haber (he, has, ha, hemos, habéis, han) + participio (-ado / -ido): he hablado, has comido, ha vivido."
+   }
+  },
+  {
+   "d": 80,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "What did you do today?",
+     "g": "Tell what you have done today and this week.",
+     "p": [
+      "Use the perfecto with time that is not over: hoy, esta mañana, esta semana, este mes.",
+      "Key irregular participles: hecho (done), visto (seen), escrito (written), dicho (said), vuelto.",
+      "Ir is regular here: he ido. Ask ¿Qué has hecho hoy? and answer: he ido al trabajo."
+     ],
+     "q": "¿Qué has hecho esta semana? Tell me three things.",
+     "c": "Write a mini diary of today with five verbs in the perfecto, two of them irregular."
+    },
+    "de": {
+     "t": "Was hast du heute gemacht?",
+     "g": "Du erzählst, was du heute und diese Woche gemacht hast.",
+     "p": [
+      "Perfecto mit nicht abgeschlossener Zeit: hoy, esta mañana, esta semana, este mes.",
+      "Unregelmäßige Partizipien: hecho (gemacht), visto (gesehen), escrito, dicho (gesagt), vuelto.",
+      "Ir ist hier regelmäßig: he ido. Frag ¿Qué has hecho hoy? Antwort: he ido al trabajo."
+     ],
+     "q": "¿Qué has hecho esta semana? Erzähl mir drei Dinge.",
+     "c": "Schreib ein Mini-Tagebuch von heute mit fünf Verben im perfecto, zwei davon unregelmäßig."
+    },
+    "es": {
+     "t": "¿Qué has hecho hoy?",
+     "g": "Cuenta lo que has hecho hoy y esta semana con el pretérito perfecto.",
+     "p": [
+      "Se usa con tiempo no terminado: hoy, esta mañana, esta semana, este mes, este año.",
+      "Participios irregulares clave: hecho, visto, escrito, dicho, puesto, vuelto, abierto, roto.",
+      "Pregunta ¿Qué has hecho hoy? y responde: he ido al trabajo, he visto a Ana, he escrito un correo."
+     ],
+     "q": "¿Qué has hecho esta semana? Cuéntame tres cosas.",
+     "c": "Escribe un minidiario de hoy con cinco verbos en perfecto, dos de ellos irregulares."
+    },
+    "fr": {
+     "t": "Qu'as-tu fait aujourd'hui ?",
+     "g": "Raconter ce que tu as fait aujourd'hui et cette semaine.",
+     "p": [
+      "Le perfecto avec un temps pas encore fini : hoy, esta mañana, esta semana, este mes.",
+      "Participes irréguliers clés : hecho (fait), visto (vu), escrito (écrit), dicho (dit), vuelto.",
+      "Ir est régulier ici : he ido. Demande ¿Qué has hecho hoy? Réponse : he ido al trabajo."
+     ],
+     "q": "¿Qué has hecho esta semana? Raconte-moi trois choses.",
+     "c": "Écris un mini journal d'aujourd'hui avec cinq verbes au perfecto, dont deux irréguliers."
+    },
+    "it": {
+     "t": "Cosa hai fatto oggi?",
+     "g": "Racconti cosa hai fatto oggi e questa settimana.",
+     "p": [
+      "Il perfecto si usa con un tempo non finito: hoy, esta mañana, esta semana, este mes.",
+      "Participi irregolari chiave: hecho (fatto), visto, escrito (scritto), dicho (detto), vuelto.",
+      "Ir è regolare: he ido (sono andato, ma con haber!). ¿Qué has hecho hoy? He ido al trabajo."
+     ],
+     "q": "¿Qué has hecho esta semana? Raccontami tre cose.",
+     "c": "Scrivi un mini diario di oggi con cinque verbi al perfecto, due irregolari."
+    },
+    "pt": {
+     "t": "O que fizeste hoje?",
+     "g": "Conta o que fizeste hoje e esta semana.",
+     "p": [
+      "O perfecto usa-se com tempo não terminado: hoy, esta mañana, esta semana, este mes.",
+      "Particípios irregulares: hecho (feito), visto, escrito, dicho (dito), vuelto (voltado).",
+      "Ir é regular aqui: he ido. Pergunta ¿Qué has hecho hoy? Resposta: he ido al trabajo."
+     ],
+     "q": "¿Qué has hecho esta semana? Conta-me três coisas.",
+     "c": "Escreve um minidiário de hoje com cinco verbos no perfecto, dois deles irregulares."
+    },
+    "pt_BR": {
+     "t": "O que você fez hoje?",
+     "g": "Conte o que você fez hoje e nesta semana.",
+     "p": [
+      "O perfecto se usa com tempo não terminado: hoy, esta mañana, esta semana, este mes.",
+      "Particípios irregulares: hecho (feito), visto, escrito, dicho (dito), vuelto (voltado).",
+      "Ir é regular aqui: he ido. Pergunte ¿Qué has hecho hoy? Resposta: he ido al trabajo."
+     ],
+     "q": "¿Qué has hecho esta semana? Me conte três coisas.",
+     "c": "Escreva um minidiário de hoje com cinco verbos no perfecto, dois deles irregulares."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "esta mañana",
+      "ex": "Esta mañana he ido al mercado."
+     },
+     {
+      "w": "esta semana",
+      "ex": "Esta semana he trabajado mucho."
+     },
+     {
+      "w": "hecho",
+      "ex": "¿Qué has hecho hoy?"
+     },
+     {
+      "w": "visto",
+      "ex": "He visto a Laura en el parque."
+     },
+     {
+      "w": "ido",
+      "ex": "Hemos ido a la playa."
+     },
+     {
+      "w": "escrito",
+      "ex": "He escrito un correo a mi jefe."
+     }
+    ],
+    "gram": "Perfecto con tiempo no terminado: hoy, esta mañana, esta semana. Participios irregulares: hecho, visto, escrito, dicho, puesto, vuelto."
+   }
+  }
+ ]
+}

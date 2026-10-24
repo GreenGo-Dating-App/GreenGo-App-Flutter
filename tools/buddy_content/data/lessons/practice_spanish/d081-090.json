@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 81,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Writing a short message",
+     "g": "Write a quick friendly text or note in Spanish.",
+     "p": [
+      "Open with Hola, Ana or Querida Ana: (Dear Ana). In Spanish letters, a colon follows the name.",
+      "Keep it short: a greeting, the news or question, and a plan: ¿quedamos mañana?",
+      "Close warmly: Un beso, Un abrazo, Nos vemos, Hasta pronto. Then sign your name."
+     ],
+     "q": "Who would you send a message to in Spanish today, and what would you say?",
+     "c": "Write a five-line message to a friend: greeting, news, invitation, goodbye and name."
+    },
+    "de": {
+     "t": "Eine kurze Nachricht schreiben",
+     "g": "Du schreibst eine kurze, freundliche Nachricht auf Spanisch.",
+     "p": [
+      "Beginne mit Hola, Ana oder Querida Ana: (Liebe Ana). Im Brief folgt ein Doppelpunkt.",
+      "Halte es kurz: Gruß, Neuigkeit oder Frage und ein Plan: ¿quedamos mañana?",
+      "Herzlicher Schluss: Un beso, Un abrazo, Nos vemos, Hasta pronto. Dann dein Name."
+     ],
+     "q": "Wem würdest du heute eine Nachricht auf Spanisch schicken, und was würdest du sagen?",
+     "c": "Schreib einer Freundin fünf Zeilen: Gruß, Neuigkeit, Einladung, Abschied und Name."
+    },
+    "es": {
+     "t": "Escribir un mensaje corto",
+     "g": "Escribe un mensaje o una nota informal con naturalidad.",
+     "p": [
+      "Empieza con Hola, Ana o Querida Ana: (en español se usan dos puntos tras el saludo de una carta).",
+      "Sé breve: saludo, noticia o pregunta y un plan: ¿quedamos mañana? En el chat se abrevia: q tal, xq.",
+      "Despídete con cariño: un beso, un abrazo, nos vemos, hasta pronto. Y firma con tu nombre."
+     ],
+     "q": "¿A quién le enviarías hoy un mensaje y qué le dirías?",
+     "c": "Escribe un mensaje de cinco líneas a un amigo: saludo, noticia, invitación, despedida y firma."
+    },
+    "fr": {
+     "t": "Écrire un petit message",
+     "g": "Écrire un message court et amical en espagnol.",
+     "p": [
+      "Commence par Hola, Ana ou Querida Ana: (Chère Ana). En espagnol, deux-points après le nom.",
+      "Reste bref : salut, nouvelle ou question, et un projet : ¿quedamos mañana?",
+      "Termine chaleureusement : Un beso, Un abrazo, Nos vemos, Hasta pronto. Puis signe."
+     ],
+     "q": "À qui enverrais-tu un message en espagnol aujourd'hui, et que dirais-tu ?",
+     "c": "Écris cinq lignes à un ami : salut, nouvelle, invitation, au revoir et signature."
+    },
+    "it": {
+     "t": "Scrivere un messaggio breve",
+     "g": "Scrivi un messaggio breve e amichevole in spagnolo.",
+     "p": [
+      "Inizia con Hola, Ana o Querida Ana: (Cara Ana). In spagnolo dopo il nome vanno i due punti.",
+      "Breve: saluto, notizia o domanda e una proposta: ¿quedamos mañana?",
+      "Chiudi con calore: Un beso, Un abrazo, Nos vemos, Hasta pronto. Poi la firma."
+     ],
+     "q": "A chi manderesti oggi un messaggio in spagnolo e cosa diresti?",
+     "c": "Scrivi cinque righe a un amico: saluto, notizia, invito, saluto finale e firma."
+    },
+    "pt": {
+     "t": "Escrever uma mensagem curta",
+     "g": "Escreve uma mensagem curta e simpática em espanhol.",
+     "p": [
+      "Começa com Hola, Ana ou Querida Ana: (Querida Ana). Em espanhol usam-se dois pontos.",
+      "Sê breve: saudação, novidade ou pergunta e um plano: ¿quedamos mañana?",
+      "Despede-te com carinho: Un beso, Un abrazo, Nos vemos, Hasta pronto. Depois assina."
+     ],
+     "q": "A quem enviarias hoje uma mensagem em espanhol e o que dirias?",
+     "c": "Escreve cinco linhas a um amigo: saudação, novidade, convite, despedida e nome."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma mensagem curta",
+     "g": "Escreva uma mensagem curta e simpática em espanhol.",
+     "p": [
+      "Comece com Hola, Ana ou Querida Ana: (Querida Ana). Em espanhol se usam dois pontos.",
+      "Seja breve: saudação, novidade ou pergunta e um plano: ¿quedamos mañana?",
+      "Despeça-se com carinho: Un beso, Un abrazo, Nos vemos, Hasta pronto. Depois assine."
+     ],
+     "q": "Para quem você mandaria hoje uma mensagem em espanhol e o que diria?",
+     "c": "Escreva cinco linhas para um amigo: saudação, novidade, convite, despedida e nome."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Hola, ¿qué tal?",
+      "ex": "Hola, Ana, ¿qué tal todo?"
+     },
+     {
+      "w": "¿quedamos?",
+      "ex": "¿Quedamos mañana para comer?"
+     },
+     {
+      "w": "un beso",
+      "ex": "Hasta pronto. Un beso, Luis."
+     },
+     {
+      "w": "un abrazo",
+      "ex": "Un abrazo fuerte, Marta."
+     },
+     {
+      "w": "nos vemos",
+      "ex": "¡Nos vemos el viernes!"
+     },
+     {
+      "w": "Querido/a",
+      "ex": "Querida Elena: gracias por todo."
+     }
+    ],
+    "gram": "Mensaje informal: saludo (Hola, Ana / Querida Ana:) + mensaje + despedida (Un beso, Un abrazo, Nos vemos, Hasta pronto) + nombre."
+   }
+  },
+  {
+   "d": 82,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Small talk with new people",
+     "g": "Start and keep a light chat going with someone new.",
+     "p": [
+      "Openers: ¿Eres de aquí? ¡Qué buen tiempo hace! ¿Es tu primera vez en la ciudad?",
+      "Ask about work politely: ¿A qué te dedicas? (What do you do?). Answer: Soy profesor.",
+      "React with ¡Qué...!: ¡Qué bien!, ¡Qué interesante!, ¡Qué casualidad! (What a coincidence!)."
+     ],
+     "q": "Imagine we meet at a party in Bogotá. How do you start the conversation?",
+     "c": "Write five small-talk questions you could ask someone new, and answer them yourself."
+    },
+    "de": {
+     "t": "Smalltalk mit neuen Leuten",
+     "g": "Du beginnst ein lockeres Gespräch mit jemand Neuem und hältst es am Laufen.",
+     "p": [
+      "Einstiege: ¿Eres de aquí? ¡Qué buen tiempo hace! ¿Es tu primera vez en la ciudad?",
+      "Nach dem Beruf fragen: ¿A qué te dedicas? (Was machst du beruflich?). Soy profesor.",
+      "Reagieren mit ¡Qué...!: ¡Qué bien!, ¡Qué interesante!, ¡Qué casualidad! (Was für ein Zufall!)."
+     ],
+     "q": "Stell dir vor, wir treffen uns auf einer Party in Bogotá. Wie beginnst du das Gespräch?",
+     "c": "Schreib fünf Smalltalk-Fragen für jemand Neuen und beantworte sie selbst."
+    },
+    "es": {
+     "t": "Charlar con gente nueva",
+     "g": "Empieza y mantén una conversación ligera con alguien que acabas de conocer.",
+     "p": [
+      "Para empezar: ¿Eres de aquí? ¡Qué buen tiempo hace! ¿Es tu primera vez en la ciudad?",
+      "Sobre el trabajo: ¿A qué te dedicas? es más natural que ¿Cuál es tu profesión?",
+      "Reacciona con ¡Qué...!: ¡Qué bien!, ¡Qué interesante!, ¡Qué casualidad! Escuchar también cuenta."
+     ],
+     "q": "Imagina que nos conocemos en una fiesta en Bogotá. ¿Cómo empiezas la conversación?",
+     "c": "Escribe cinco preguntas para charlar con alguien nuevo y contéstalas tú."
+    },
+    "fr": {
+     "t": "Bavarder avec de nouvelles personnes",
+     "g": "Lancer et entretenir une conversation légère avec quelqu'un de nouveau.",
+     "p": [
+      "Pour commencer : ¿Eres de aquí? ¡Qué buen tiempo hace! ¿Es tu primera vez en la ciudad?",
+      "Le travail : ¿A qué te dedicas? (Tu fais quoi dans la vie ?). Réponse : Soy profesor.",
+      "Réagis avec ¡Qué...! : ¡Qué bien!, ¡Qué interesante!, ¡Qué casualidad! (Quel hasard !)."
+     ],
+     "q": "Imagine qu'on se rencontre à une fête à Bogotá. Comment commences-tu ?",
+     "c": "Écris cinq questions pour bavarder avec quelqu'un de nouveau et réponds-y toi-même."
+    },
+    "it": {
+     "t": "Chiacchiere con persone nuove",
+     "g": "Inizi e porti avanti una chiacchierata leggera con qualcuno di nuovo.",
+     "p": [
+      "Per iniziare: ¿Eres de aquí? ¡Qué buen tiempo hace! ¿Es tu primera vez en la ciudad?",
+      "Sul lavoro: ¿A qué te dedicas? (Che lavoro fai?). Risposta: Soy profesor.",
+      "Reagisci con ¡Qué...!: ¡Qué bien!, ¡Qué interesante!, ¡Qué casualidad! (Che coincidenza!)."
+     ],
+     "q": "Immagina di conoscerci a una festa a Bogotá. Come inizi la conversazione?",
+     "c": "Scrivi cinque domande per chiacchierare con qualcuno di nuovo e rispondi tu."
+    },
+    "pt": {
+     "t": "Conversa de circunstância",
+     "g": "Começa e mantém uma conversa leve com alguém novo.",
+     "p": [
+      "Para começar: ¿Eres de aquí? ¡Qué buen tiempo hace! ¿Es tu primera vez en la ciudad?",
+      "Sobre o trabalho: ¿A qué te dedicas? (O que fazes na vida?). Resposta: Soy profesor.",
+      "Reage com ¡Qué...!: ¡Qué bien!, ¡Qué interesante!, ¡Qué casualidad! (Que coincidência!)."
+     ],
+     "q": "Imagina que nos conhecemos numa festa em Bogotá. Como começas a conversa?",
+     "c": "Escreve cinco perguntas para conversar com alguém novo e responde tu mesmo."
+    },
+    "pt_BR": {
+     "t": "Bate-papo com gente nova",
+     "g": "Comece e mantenha uma conversa leve com alguém que você acabou de conhecer.",
+     "p": [
+      "Para começar: ¿Eres de aquí? ¡Qué buen tiempo hace! ¿Es tu primera vez en la ciudad?",
+      "Sobre trabalho: ¿A qué te dedicas? (O que você faz?). Resposta: Soy profesor.",
+      "Reaja com ¡Qué...!: ¡Qué bien!, ¡Qué interesante!, ¡Qué casualidad! (Que coincidência!)."
+     ],
+     "q": "Imagine que a gente se conhece numa festa em Bogotá. Como você começa a conversa?",
+     "c": "Escreva cinco perguntas de bate-papo para alguém novo e responda você mesmo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Eres de aquí?",
+      "ex": "¿Eres de aquí o estás de viaje?"
+     },
+     {
+      "w": "¿A qué te dedicas?",
+      "ex": "¿A qué te dedicas? Soy enfermera."
+     },
+     {
+      "w": "¡Qué buen tiempo hace!",
+      "ex": "¡Qué buen tiempo hace hoy!"
+     },
+     {
+      "w": "¿Cuánto tiempo llevas aquí?",
+      "ex": "¿Cuánto tiempo llevas en Madrid?"
+     },
+     {
+      "w": "encantado/a",
+      "ex": "Encantada de conocerte."
+     },
+     {
+      "w": "¡Qué casualidad!",
+      "ex": "¿Tú también eres de Lyon? ¡Qué casualidad!"
+     }
+    ],
+    "gram": "Charla: ¿A qué te dedicas? = ¿En qué trabajas? Exclamaciones con qué: ¡Qué + adjetivo/nombre!: ¡Qué bonito!, ¡Qué calor!"
+   }
+  },
+  {
+   "d": 83,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Classroom phrases",
+     "g": "Learn the phrases that keep a conversation going when you get stuck.",
+     "p": [
+      "Ask for words: ¿Cómo se dice ... en español? ¿Qué significa ...? (What does ... mean?)",
+      "Ask for help: ¿Puede repetir?, más despacio, por favor, no entiendo, ¿cómo se escribe?",
+      "These phrases are your safety net: using them is a sign of a good learner, not a weak one."
+     ],
+     "q": "Which word in Spanish did you need recently but did not know? Ask me with ¿Cómo se dice...?",
+     "c": "Use three of today's phrases in your next chat with me or with a Spanish speaker."
+    },
+    "de": {
+     "t": "Sätze für den Unterricht",
+     "g": "Du lernst Sätze, die dir helfen, wenn du im Gespräch hängen bleibst.",
+     "p": [
+      "Nach Wörtern fragen: ¿Cómo se dice ... en español? ¿Qué significa ...? (Was bedeutet ...?)",
+      "Um Hilfe bitten: ¿Puede repetir?, más despacio, por favor, no entiendo, ¿cómo se escribe?",
+      "Diese Sätze sind dein Sicherheitsnetz: Wer sie nutzt, lernt gut, nicht schlecht."
+     ],
+     "q": "Welches Wort hast du kürzlich gebraucht und nicht gewusst? Frag mich mit ¿Cómo se dice...?",
+     "c": "Benutze drei der heutigen Sätze in deinem nächsten Chat mit mir oder einer Spanischsprecherin."
+    },
+    "es": {
+     "t": "Frases para la clase",
+     "g": "Aprende las frases que salvan una conversación cuando te atascas.",
+     "p": [
+      "Para pedir palabras: ¿Cómo se dice... en español? ¿Qué significa...? ¿Cómo se pronuncia?",
+      "Para pedir ayuda: ¿Puede repetir?, más despacio, por favor, no entiendo, ¿cómo se escribe?",
+      "Son tu red de seguridad. Cualquier hablante nativo agradece que se las digas en vez de callar."
+     ],
+     "q": "¿Qué palabra necesitaste hace poco y no sabías? Pregúntamela con ¿Cómo se dice...?",
+     "c": "Usa tres de estas frases en tu próxima conversación conmigo o con otra persona."
+    },
+    "fr": {
+     "t": "Phrases de classe",
+     "g": "Apprendre les phrases qui sauvent une conversation quand tu bloques.",
+     "p": [
+      "Demander un mot : ¿Cómo se dice ... en español? ¿Qué significa ...? (Que veut dire ... ?)",
+      "Demander de l'aide : ¿Puede repetir?, más despacio, por favor, no entiendo, ¿cómo se escribe?",
+      "Ces phrases sont ton filet de sécurité : les utiliser montre que tu apprends bien."
+     ],
+     "q": "Quel mot t'a manqué récemment en espagnol ? Demande-le-moi avec ¿Cómo se dice...?",
+     "c": "Utilise trois de ces phrases dans ta prochaine conversation avec moi ou un hispanophone."
+    },
+    "it": {
+     "t": "Frasi per la lezione",
+     "g": "Impari le frasi che salvano una conversazione quando ti blocchi.",
+     "p": [
+      "Chiedere parole: ¿Cómo se dice ... en español? ¿Qué significa ...? (Cosa significa ...?)",
+      "Chiedere aiuto: ¿Puede repetir?, más despacio, por favor, no entiendo, ¿cómo se escribe?",
+      "Sono la tua rete di sicurezza: usarle è segno di uno studente bravo, non debole."
+     ],
+     "q": "Quale parola ti è mancata di recente? Chiedimela con ¿Cómo se dice...?",
+     "c": "Usa tre di queste frasi nella tua prossima chiacchierata con me o con un ispanofono."
+    },
+    "pt": {
+     "t": "Frases para a aula",
+     "g": "Aprende as frases que salvam uma conversa quando ficas sem palavras.",
+     "p": [
+      "Pedir palavras: ¿Cómo se dice ... en español? ¿Qué significa ...? (O que significa ...?)",
+      "Pedir ajuda: ¿Puede repetir?, más despacio, por favor, no entiendo, ¿cómo se escribe?",
+      "Estas frases são a tua rede de segurança: usá-las mostra que aprendes bem."
+     ],
+     "q": "Que palavra te faltou há pouco em espanhol? Pergunta-ma com ¿Cómo se dice...?",
+     "c": "Usa três destas frases na tua próxima conversa comigo ou com um falante de espanhol."
+    },
+    "pt_BR": {
+     "t": "Frases para a aula",
+     "g": "Aprenda as frases que salvam uma conversa quando você trava.",
+     "p": [
+      "Pedir palavras: ¿Cómo se dice ... en español? ¿Qué significa ...? (O que significa ...?)",
+      "Pedir ajuda: ¿Puede repetir?, más despacio, por favor, no entiendo, ¿cómo se escribe?",
+      "Essas frases são sua rede de segurança: usá-las mostra que você aprende bem."
+     ],
+     "q": "Que palavra faltou para você há pouco em espanhol? Me pergunte com ¿Cómo se dice...?",
+     "c": "Use três dessas frases na sua próxima conversa comigo ou com um falante de espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Cómo se dice...?",
+      "ex": "¿Cómo se dice window en español?"
+     },
+     {
+      "w": "¿Qué significa...?",
+      "ex": "¿Qué significa madrugar?"
+     },
+     {
+      "w": "¿Puede repetir?",
+      "ex": "Perdón, ¿puede repetir, por favor?"
+     },
+     {
+      "w": "más despacio",
+      "ex": "Más despacio, por favor."
+     },
+     {
+      "w": "No entiendo",
+      "ex": "Lo siento, no entiendo."
+     },
+     {
+      "w": "¿Cómo se escribe?",
+      "ex": "¿Cómo se escribe tu apellido?"
+     }
+    ],
+    "gram": "Se impersonal en preguntas útiles: ¿Cómo se dice...?, ¿Cómo se escribe?, ¿Cómo se pronuncia? Pedir: ¿Puede + infinitivo?"
+   }
+  },
+  {
+   "d": 84,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The rolled r: pero or perro?",
+     "g": "Practise the soft tapped r and the strong rolled rr.",
+     "p": [
+      "Single r between vowels is a quick tap, like the tt in American butter: pero, caro.",
+      "rr is a trill (several taps): perro, carro. Changing it changes the word: pero = but, perro = dog.",
+      "A single r at the start of a word or after n, l, s is also strong: rojo, Roma, Enrique."
+     ],
+     "q": "Which sounds in Spanish are hardest for you to pronounce?",
+     "c": "Say this aloud five times, slowly then faster: El perro de Rosa corre por la carretera."
+    },
+    "de": {
+     "t": "Das gerollte r: pero oder perro?",
+     "g": "Du übst das weiche, getippte r und das kräftig gerollte rr.",
+     "p": [
+      "Ein r zwischen Vokalen ist ein kurzer Zungenschlag: pero, caro.",
+      "rr ist ein Zungen-r mit mehreren Schlägen: perro, carro. Pero = aber, perro = Hund!",
+      "Ein r am Wortanfang oder nach n, l, s ist auch stark: rojo, Roma, Enrique."
+     ],
+     "q": "Welche spanischen Laute fallen dir am schwersten?",
+     "c": "Sprich fünfmal laut, erst langsam, dann schneller: El perro de Rosa corre por la carretera."
+    },
+    "es": {
+     "t": "La erre: ¿pero o perro?",
+     "g": "Practica la r suave y la rr fuerte, un rasgo muy típico del español.",
+     "p": [
+      "La r simple entre vocales es un golpe rápido de la lengua: pero, caro, para, hora.",
+      "La rr es una vibración múltiple: perro, carro. Cambia el significado: pero no es perro.",
+      "La r inicial o tras n, l, s también suena fuerte: rojo, Roma, Enrique, Israel."
+     ],
+     "q": "¿Qué sonidos del español te cuesta más pronunciar?",
+     "c": "Di en voz alta cinco veces: Erre con erre cigarro, erre con erre barril, rápido ruedan los carros."
+    },
+    "fr": {
+     "t": "Le r roulé : pero ou perro ?",
+     "g": "S'entraîner au r battu doux et au rr roulé fort.",
+     "p": [
+      "Un r entre voyelles est un coup de langue rapide, pas le r français de la gorge : pero, caro.",
+      "rr est roulé (plusieurs battements) : perro, carro. Pero = mais, perro = chien !",
+      "Un r en début de mot ou après n, l, s est aussi fort : rojo, Roma, Enrique."
+     ],
+     "q": "Quels sons espagnols sont les plus difficiles pour toi ?",
+     "c": "Dis cinq fois à voix haute, lentement puis vite : El perro de Rosa corre por la carretera."
+    },
+    "it": {
+     "t": "La r: pero o perro?",
+     "g": "Ti eserciti con la r leggera e la rr forte, simili all'italiano.",
+     "p": [
+      "La r tra vocali è un colpo rapido di lingua, come in caro: pero, caro.",
+      "La rr è vibrante forte, come in italiano carro: perro, carro. Pero = ma, perro = cane!",
+      "Anche la r a inizio parola o dopo n, l, s è forte: rojo, Roma, Enrique."
+     ],
+     "q": "Quali suoni dello spagnolo trovi più difficili da pronunciare?",
+     "c": "Ripeti cinque volte ad alta voce: El perro de Rosa corre por la carretera."
+    },
+    "pt": {
+     "t": "O r vibrante: pero ou perro?",
+     "g": "Treina o r simples e o rr forte.",
+     "p": [
+      "O r entre vogais é um toque rápido da língua, como em caro: pero, caro.",
+      "O rr é vibrado com a ponta da língua, não na garganta: perro, carro. Pero = mas, perro = cão!",
+      "O r inicial ou depois de n, l, s também é forte e vibrado: rojo, Roma, Enrique."
+     ],
+     "q": "Que sons do espanhol te custam mais a pronunciar?",
+     "c": "Diz cinco vezes em voz alta: El perro de Rosa corre por la carretera."
+    },
+    "pt_BR": {
+     "t": "O r vibrante: pero ou perro?",
+     "g": "Treine o r fraco e o rr forte do espanhol.",
+     "p": [
+      "O r entre vogais é um toque rápido da língua, como em caro: pero, caro.",
+      "O rr vibra na ponta da língua, não é o r de garganta do Brasil: perro, carro. Perro = cachorro!",
+      "O r inicial ou depois de n, l, s também vibra forte: rojo, Roma, Enrique."
+     ],
+     "q": "Quais sons do espanhol são mais difíceis para você?",
+     "c": "Diga cinco vezes em voz alta: El perro de Rosa corre por la carretera."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pero / perro",
+      "ex": "Pero mi perro no come pescado."
+     },
+     {
+      "w": "caro / carro",
+      "ex": "El carro nuevo es muy caro."
+     },
+     {
+      "w": "rojo",
+      "ex": "Me gusta el coche rojo."
+     },
+     {
+      "w": "Roma",
+      "ex": "Roma es una ciudad preciosa."
+     },
+     {
+      "w": "Enrique",
+      "ex": "Enrique es de Puerto Rico."
+     },
+     {
+      "w": "el ferrocarril",
+      "ex": "El ferrocarril cruza la montaña."
+     }
+    ],
+    "gram": "R suave entre vocales: pero, caro. RR fuerte: rr entre vocales (perro) y r al inicio o tras n, l, s (rojo, Enrique)."
+   }
+  },
+  {
+   "d": 85,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Stress and written accents",
+     "g": "Learn where the stress falls and why accents matter.",
+     "p": [
+      "Words ending in a vowel, n or s stress the second-to-last syllable: casa, hablan, lunes.",
+      "Other words stress the last syllable: hablar, ciudad, papel. Any exception carries an accent: café.",
+      "Accents also separate pairs: papa (potato, pope) / papá (dad), esta / está, tu / tú, si / sí."
+     ],
+     "q": "Which Spanish word with an accent do you like the most?",
+     "c": "Read aloud: café, árbol, teléfono, ciudad, examen. Then explain why each has or lacks an accent."
+    },
+    "de": {
+     "t": "Betonung und Akzente",
+     "g": "Du lernst, wo die Betonung liegt und warum Akzente wichtig sind.",
+     "p": [
+      "Wörter auf Vokal, n oder s werden auf der vorletzten Silbe betont: casa, hablan, lunes.",
+      "Andere auf der letzten: hablar, ciudad, papel. Jede Ausnahme bekommt einen Akzent: café.",
+      "Akzente unterscheiden Paare: papa (Kartoffel, Papst) / papá (Papa), esta / está, tu / tú, si / sí."
+     ],
+     "q": "Welches spanische Wort mit Akzent magst du am liebsten?",
+     "c": "Lies laut: café, árbol, teléfono, ciudad, examen. Erklär, warum sie (k)einen Akzent haben."
+    },
+    "es": {
+     "t": "Acentuación y tildes",
+     "g": "Repasa dónde va el acento y por qué importa la tilde.",
+     "p": [
+      "Llanas: acento en la penúltima; llevan tilde si no acaban en vocal, n o s: casa, árbol, lápiz.",
+      "Agudas: acento en la última; llevan tilde si acaban en vocal, n o s: café, canción. Esdrújulas, siempre: teléfono.",
+      "La tilde diacrítica distingue palabras: papa / papá, el / él, tu / tú, si / sí, mas / más."
+     ],
+     "q": "¿Qué palabra con tilde te parece más bonita y por qué?",
+     "c": "Lee en voz alta: café, árbol, teléfono, ciudad, examen, y explica por qué llevan o no tilde."
+    },
+    "fr": {
+     "t": "Accent tonique et accents écrits",
+     "g": "Apprendre où tombe l'accent et pourquoi les accents écrits comptent.",
+     "p": [
+      "Mots finis par voyelle, n ou s : accent sur l'avant-dernière syllabe : casa, hablan, lunes.",
+      "Les autres : sur la dernière : hablar, ciudad, papel. Toute exception a un accent : café.",
+      "Les accents distinguent : papa (patate, pape) / papá (papa), esta / está, tu / tú, si / sí."
+     ],
+     "q": "Quel mot espagnol avec un accent préfères-tu ?",
+     "c": "Lis à voix haute : café, árbol, teléfono, ciudad, examen. Explique pourquoi accent ou pas."
+    },
+    "it": {
+     "t": "Accento tonico e accenti scritti",
+     "g": "Impari dove cade l'accento e perché gli accenti scritti contano.",
+     "p": [
+      "Parole che finiscono in vocale, n o s: accento sulla penultima: casa, hablan, lunes.",
+      "Le altre sull'ultima: hablar, ciudad, papel. Ogni eccezione ha l'accento: café.",
+      "Gli accenti distinguono coppie: papa (patata, papa) / papá (papà), esta / está, tu / tú, si / sí."
+     ],
+     "q": "Qual è la parola spagnola con accento che ti piace di più?",
+     "c": "Leggi ad alta voce: café, árbol, teléfono, ciudad, examen. Spiega perché hanno o no l'accento."
+    },
+    "pt": {
+     "t": "Acentuação e acentos gráficos",
+     "g": "Aprende onde cai o acento e porque é que os acentos importam.",
+     "p": [
+      "Palavras acabadas em vogal, n ou s: acento na penúltima sílaba: casa, hablan, lunes.",
+      "As outras na última: hablar, ciudad, papel. Qualquer exceção leva acento: café.",
+      "Os acentos distinguem pares: papa (batata, papa) / papá (pai), esta / está, tu / tú, si / sí."
+     ],
+     "q": "Qual é a palavra espanhola com acento de que mais gostas?",
+     "c": "Lê em voz alta: café, árbol, teléfono, ciudad, examen. Explica porque têm ou não acento."
+    },
+    "pt_BR": {
+     "t": "Tonicidade e acentos",
+     "g": "Aprenda onde cai a sílaba tônica e por que os acentos importam.",
+     "p": [
+      "Palavras terminadas em vogal, n ou s: tônica na penúltima sílaba: casa, hablan, lunes.",
+      "As outras, na última: hablar, ciudad, papel. Toda exceção leva acento: café.",
+      "Os acentos distinguem pares: papa (batata, papa) / papá (pai), esta / está, tu / tú, si / sí."
+     ],
+     "q": "Qual palavra espanhola com acento você acha mais bonita?",
+     "c": "Leia em voz alta: café, árbol, teléfono, ciudad, examen. Explique por que têm ou não acento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "papa / papá",
+      "ex": "El papa vive en Roma; mi papá vive en Lima."
+     },
+     {
+      "w": "esta / está",
+      "ex": "Esta casa está en el centro."
+     },
+     {
+      "w": "el / él",
+      "ex": "Él tiene el libro."
+     },
+     {
+      "w": "tu / tú",
+      "ex": "Tú tienes tu móvil aquí."
+     },
+     {
+      "w": "si / sí",
+      "ex": "Si quieres, sí, vamos."
+     },
+     {
+      "w": "el teléfono",
+      "ex": "El teléfono está en la mesa."
+     }
+    ],
+    "gram": "Palabras acabadas en vocal, n o s: acento en la penúltima sílaba (casa, hablan). Si no, en la última (hablar, ciudad). Lo demás lleva tilde."
+   }
+  },
+  {
+   "d": 86,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Spanish around the world",
+     "g": "Get a first taste of how Spanish varies across more than twenty countries.",
+     "p": [
+      "Spanish is official in about twenty countries and has over 500 million native speakers.",
+      "Words change: coche (Spain) / carro or auto (America), móvil / celular, zumo / jugo.",
+      "Grammar too: vosotros in Spain, ustedes everywhere in America; vos tenés in Argentina."
+     ],
+     "q": "Which Spanish-speaking country would you most like to visit, and why?",
+     "c": "Pick one country and find three words that are different there from the Spanish you learned."
+    },
+    "de": {
+     "t": "Spanisch auf der ganzen Welt",
+     "g": "Du bekommst einen ersten Eindruck, wie Spanisch in über zwanzig Ländern variiert.",
+     "p": [
+      "Spanisch ist in rund zwanzig Ländern Amtssprache und hat über 500 Millionen Muttersprachler.",
+      "Wörter ändern sich: coche (Spanien) / carro oder auto (Amerika), móvil / celular, zumo / jugo.",
+      "Auch Grammatik: vosotros in Spanien, ustedes in ganz Amerika; vos tenés in Argentinien."
+     ],
+     "q": "Welches spanischsprachige Land würdest du am liebsten besuchen, und warum?",
+     "c": "Wähl ein Land und such drei Wörter, die dort anders sind als in deinem Spanisch."
+    },
+    "es": {
+     "t": "El español en el mundo",
+     "g": "Descubre la variedad del español en más de veinte países.",
+     "p": [
+      "El español es oficial en una veintena de países y tiene más de 500 millones de hablantes nativos.",
+      "Cambia el léxico: coche, carro o auto; móvil o celular; zumo o jugo. Todas las formas son correctas.",
+      "Y la gramática: vosotros en España, ustedes en América, vos tenés en Argentina. Nos entendemos todos."
+     ],
+     "q": "¿Qué país hispanohablante te gustaría visitar más y por qué?",
+     "c": "Elige un país y busca tres palabras que allí se dicen de otra manera."
+    },
+    "fr": {
+     "t": "L'espagnol dans le monde",
+     "g": "Découvrir comment l'espagnol varie dans plus de vingt pays.",
+     "p": [
+      "L'espagnol est officiel dans une vingtaine de pays et compte plus de 500 millions de natifs.",
+      "Les mots changent : coche (Espagne) / carro ou auto (Amérique), móvil / celular, zumo / jugo.",
+      "La grammaire aussi : vosotros en Espagne, ustedes en Amérique ; vos tenés en Argentine."
+     ],
+     "q": "Quel pays hispanophone aimerais-tu le plus visiter, et pourquoi ?",
+     "c": "Choisis un pays et trouve trois mots qui y sont différents de ton espagnol."
+    },
+    "it": {
+     "t": "Lo spagnolo nel mondo",
+     "g": "Scopri come lo spagnolo cambia in più di venti paesi.",
+     "p": [
+      "Lo spagnolo è ufficiale in una ventina di paesi e ha oltre 500 milioni di madrelingua.",
+      "Le parole cambiano: coche (Spagna) / carro o auto (America), móvil / celular, zumo / jugo.",
+      "Anche la grammatica: vosotros in Spagna, ustedes in America; vos tenés in Argentina."
+     ],
+     "q": "Quale paese ispanofono vorresti visitare di più e perché?",
+     "c": "Scegli un paese e trova tre parole che lì sono diverse dallo spagnolo che hai imparato."
+    },
+    "pt": {
+     "t": "O espanhol no mundo",
+     "g": "Descobre como o espanhol varia em mais de vinte países.",
+     "p": [
+      "O espanhol é oficial em cerca de vinte países e tem mais de 500 milhões de falantes nativos.",
+      "As palavras mudam: coche (Espanha) / carro ou auto (América), móvil / celular, zumo / jugo.",
+      "A gramática também: vosotros em Espanha, ustedes na América; vos tenés na Argentina."
+     ],
+     "q": "Que país de língua espanhola gostavas mais de visitar e porquê?",
+     "c": "Escolhe um país e procura três palavras que lá são diferentes do espanhol que aprendeste."
+    },
+    "pt_BR": {
+     "t": "O espanhol pelo mundo",
+     "g": "Descubra como o espanhol varia em mais de vinte países.",
+     "p": [
+      "O espanhol é oficial em cerca de vinte países e tem mais de 500 milhões de falantes nativos.",
+      "As palavras mudam: coche (Espanha) / carro ou auto (América), móvil / celular, zumo / jugo.",
+      "A gramática também: vosotros na Espanha, ustedes na América; vos tenés na Argentina."
+     ],
+     "q": "Qual país de língua espanhola você mais gostaria de visitar e por quê?",
+     "c": "Escolha um país e procure três palavras que lá são diferentes do espanhol que você aprendeu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el coche / el carro / el auto",
+      "ex": "En México dicen carro; en España, coche."
+     },
+     {
+      "w": "el móvil / el celular",
+      "ex": "Te llamo al celular esta tarde."
+     },
+     {
+      "w": "vosotros / ustedes",
+      "ex": "En América se usa ustedes para todos."
+     },
+     {
+      "w": "el zumo / el jugo",
+      "ex": "Un jugo de naranja, por favor."
+     },
+     {
+      "w": "vos",
+      "ex": "En Argentina dicen vos sos muy amable."
+     },
+     {
+      "w": "hispanohablante",
+      "ex": "Hay más de 500 millones de hispanohablantes."
+     }
+    ],
+    "gram": "Variación: vosotros (España) / ustedes (América). Vos en Argentina y Uruguay: vos tenés. Seseo en América: ciudad suena siudad."
+   }
+  },
+  {
+   "d": 87,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Estar for feelings and states",
+     "g": "Say how you feel today with estar.",
+     "p": [
+      "Feelings and states use estar: estoy cansado, está contenta, estamos listos.",
+      "The adjective agrees: Ana está cansada, mis padres están contentos.",
+      "Ser vs estar can change meaning: ser listo = clever, estar listo = ready."
+     ],
+     "q": "¿Cómo estás hoy? Tell me how you feel and why.",
+     "c": "Write how three people you know are feeling today, using estar and porque."
+    },
+    "de": {
+     "t": "Estar für Gefühle und Zustände",
+     "g": "Du sagst mit estar, wie du dich heute fühlst.",
+     "p": [
+      "Gefühle und Zustände mit estar: estoy cansado, está contenta, estamos listos.",
+      "Das Adjektiv passt sich an: Ana está cansada, mis padres están contentos.",
+      "Ser oder estar kann die Bedeutung ändern: ser listo = klug, estar listo = bereit."
+     ],
+     "q": "¿Cómo estás hoy? Sag mir, wie du dich fühlst und warum.",
+     "c": "Schreib, wie sich drei Menschen, die du kennst, heute fühlen, mit estar und porque."
+    },
+    "es": {
+     "t": "Estar para sentimientos y estados",
+     "g": "Di cómo te sientes hoy con estar y adjetivos de estado.",
+     "p": [
+      "Los estados y sentimientos van con estar: estoy cansado, está contenta, estamos listos.",
+      "El adjetivo concuerda en género y número: Ana está cansada, mis padres están contentos.",
+      "Ser o estar cambia el sentido: ser listo es ser inteligente; estar listo, estar preparado."
+     ],
+     "q": "¿Cómo estás hoy? Cuéntame cómo te sientes y por qué.",
+     "c": "Escribe cómo están hoy tres personas que conoces, con estar y porque."
+    },
+    "fr": {
+     "t": "Estar pour les sentiments et les états",
+     "g": "Dire comment tu te sens aujourd'hui avec estar.",
+     "p": [
+      "Sentiments et états avec estar : estoy cansado, está contenta, estamos listos.",
+      "L'adjectif s'accorde : Ana está cansada, mis padres están contentos.",
+      "Ser ou estar peut changer le sens : ser listo = intelligent, estar listo = prêt."
+     ],
+     "q": "¿Cómo estás hoy? Dis-moi comment tu te sens et pourquoi.",
+     "c": "Écris comment se sentent aujourd'hui trois personnes que tu connais, avec estar et porque."
+    },
+    "it": {
+     "t": "Estar per sentimenti e stati",
+     "g": "Dici come ti senti oggi con estar.",
+     "p": [
+      "Sentimenti e stati vogliono estar: estoy cansado, está contenta, estamos listos.",
+      "L'aggettivo si accorda: Ana está cansada, mis padres están contentos.",
+      "Ser o estar può cambiare senso: ser listo = intelligente, estar listo = pronto."
+     ],
+     "q": "¿Cómo estás hoy? Dimmi come ti senti e perché.",
+     "c": "Scrivi come si sentono oggi tre persone che conosci, con estar e porque."
+    },
+    "pt": {
+     "t": "Estar para sentimentos e estados",
+     "g": "Diz como te sentes hoje com estar.",
+     "p": [
+      "Sentimentos e estados usam estar: estoy cansado, está contenta, estamos listos.",
+      "O adjetivo concorda: Ana está cansada, mis padres están contentos.",
+      "Ser ou estar pode mudar o sentido: ser listo = esperto, estar listo = pronto."
+     ],
+     "q": "¿Cómo estás hoy? Diz-me como te sentes e porquê.",
+     "c": "Escreve como estão hoje três pessoas que conheces, com estar e porque."
+    },
+    "pt_BR": {
+     "t": "Estar para sentimentos e estados",
+     "g": "Diga como você se sente hoje com estar.",
+     "p": [
+      "Sentimentos e estados usam estar: estoy cansado, está contenta, estamos listos.",
+      "O adjetivo concorda: Ana está cansada, mis padres están contentos.",
+      "Ser ou estar pode mudar o sentido: ser listo = esperto, estar listo = pronto."
+     ],
+     "q": "¿Cómo estás hoy? Me diga como você se sente e por quê.",
+     "c": "Escreva como estão hoje três pessoas que você conhece, com estar e porque."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estoy cansado/a",
+      "ex": "Hoy estoy muy cansada."
+     },
+     {
+      "w": "estoy contento/a",
+      "ex": "Estoy contento con mi nuevo trabajo."
+     },
+     {
+      "w": "estamos listos",
+      "ex": "¿Estamos listos? ¡Vamos!"
+     },
+     {
+      "w": "estar enfadado/a",
+      "ex": "Mi hermano está enfadado conmigo."
+     },
+     {
+      "w": "estar nervioso/a",
+      "ex": "Estoy nervioso antes del examen."
+     },
+     {
+      "w": "estar tranquilo/a",
+      "ex": "Ahora estoy más tranquila."
+     }
+    ],
+    "gram": "Estar + adjetivo para estados: estoy cansado. Concordancia: está contenta, estamos listos. Ser listo = inteligente; estar listo = preparado."
+   }
+  },
+  {
+   "d": 88,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessive pronouns: el mío",
+     "g": "Say who things belong to with mío, tuyo and suyo.",
+     "p": [
+      "Ask ¿De quién es? (Whose is it?) and answer: es mío, es tuya, es suyo.",
+      "They agree with the thing owned: la maleta es mía, los libros son tuyos.",
+      "Use the article to replace a noun: mi casa es pequeña, la tuya es grande."
+     ],
+     "q": "Is your phone the same as a friend's? Compare: el mío es..., el suyo es...",
+     "c": "Write four mini dialogues with ¿De quién es? and answers with mío, tuyo, suyo and nuestro."
+    },
+    "de": {
+     "t": "Possessivpronomen: el mío",
+     "g": "Du sagst mit mío, tuyo und suyo, wem etwas gehört.",
+     "p": [
+      "Frag ¿De quién es? (Wem gehört das?) und antworte: es mío, es tuya, es suyo.",
+      "Sie richten sich nach dem Besitz: la maleta es mía, los libros son tuyos.",
+      "Mit Artikel ersetzen sie ein Nomen: mi casa es pequeña, la tuya es grande."
+     ],
+     "q": "Ist dein Handy wie das einer Freundin? Vergleich: el mío es..., el suyo es...",
+     "c": "Schreib vier Mini-Dialoge mit ¿De quién es? und Antworten mit mío, tuyo, suyo, nuestro."
+    },
+    "es": {
+     "t": "Posesivos: el mío",
+     "g": "Di de quién son las cosas con los posesivos tónicos.",
+     "p": [
+      "Pregunta ¿De quién es? y responde: es mío, es tuya, es suyo. Suyo puede ser de él, de ella o de usted.",
+      "Concuerdan con lo poseído, no con el dueño: la maleta es mía, los libros son tuyos.",
+      "Con artículo sustituyen al nombre: mi casa es pequeña, la tuya es grande. Evita repetir."
+     ],
+     "q": "¿Tu móvil es como el de un amigo? Compara: el mío es..., el suyo es...",
+     "c": "Escribe cuatro minidiálogos con ¿De quién es? y respuestas con mío, tuyo, suyo y nuestro."
+    },
+    "fr": {
+     "t": "Pronoms possessifs : el mío",
+     "g": "Dire à qui appartiennent les choses avec mío, tuyo et suyo.",
+     "p": [
+      "Demande ¿De quién es? (À qui est-ce ?) et réponds : es mío, es tuya, es suyo.",
+      "Ils s'accordent avec l'objet possédé : la maleta es mía, los libros son tuyos.",
+      "Avec l'article, ils remplacent un nom : mi casa es pequeña, la tuya es grande."
+     ],
+     "q": "Ton portable ressemble-t-il à celui d'un ami ? Compare : el mío es..., el suyo es...",
+     "c": "Écris quatre mini-dialogues avec ¿De quién es? et des réponses avec mío, tuyo, suyo, nuestro."
+    },
+    "it": {
+     "t": "Pronomi possessivi: el mío",
+     "g": "Dici di chi sono le cose con mío, tuyo e suyo.",
+     "p": [
+      "Chiedi ¿De quién es? (Di chi è?) e rispondi: es mío, es tuya, es suyo.",
+      "Si accordano con la cosa posseduta: la maleta es mía, los libros son tuyos.",
+      "Con l'articolo sostituiscono un nome: mi casa es pequeña, la tuya es grande."
+     ],
+     "q": "Il tuo telefono è come quello di un amico? Confronta: el mío es..., el suyo es...",
+     "c": "Scrivi quattro mini dialoghi con ¿De quién es? e risposte con mío, tuyo, suyo e nuestro."
+    },
+    "pt": {
+     "t": "Pronomes possessivos: el mío",
+     "g": "Diz de quem são as coisas com mío, tuyo e suyo.",
+     "p": [
+      "Pergunta ¿De quién es? (De quem é?) e responde: es mío, es tuya, es suyo.",
+      "Concordam com a coisa possuída: la maleta es mía, los libros son tuyos.",
+      "Com artigo substituem um nome: mi casa es pequeña, la tuya es grande."
+     ],
+     "q": "O teu telemóvel é igual ao de um amigo? Compara: el mío es..., el suyo es...",
+     "c": "Escreve quatro minidiálogos com ¿De quién es? e respostas com mío, tuyo, suyo e nuestro."
+    },
+    "pt_BR": {
+     "t": "Pronomes possessivos: el mío",
+     "g": "Diga de quem são as coisas com mío, tuyo e suyo.",
+     "p": [
+      "Pergunte ¿De quién es? (De quem é?) e responda: es mío, es tuya, es suyo.",
+      "Concordam com a coisa possuída: la maleta es mía, los libros son tuyos.",
+      "Com artigo substituem um substantivo: mi casa es pequeña, la tuya es grande."
+     ],
+     "q": "Seu celular é igual ao de um amigo? Compare: el mío es..., el suyo es...",
+     "c": "Escreva quatro minidiálogos com ¿De quién es? e respostas com mío, tuyo, suyo e nuestro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿De quién es?",
+      "ex": "¿De quién es esta chaqueta?"
+     },
+     {
+      "w": "es mío / mía",
+      "ex": "La maleta azul es mía."
+     },
+     {
+      "w": "el tuyo / la tuya",
+      "ex": "Mi coche es rojo, ¿y el tuyo?"
+     },
+     {
+      "w": "el suyo / la suya",
+      "ex": "Este paraguas no es mío, es suyo."
+     },
+     {
+      "w": "el nuestro",
+      "ex": "Su piso es grande; el nuestro es pequeño."
+     },
+     {
+      "w": "los míos",
+      "ex": "Tus zapatos son negros; los míos, marrones."
+     }
+    ],
+    "gram": "Posesivos tónicos: mío, tuyo, suyo, nuestro, vuestro; concuerdan con lo poseído. Tras ser: es mío. Con artículo: el mío, la tuya."
+   }
+  },
+  {
+   "d": 89,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My favourite Spanish words",
+     "g": "Collect lovely everyday words and start using them.",
+     "p": [
+      "Some gems: sobremesa (chatting at the table after a meal), madrugar (to get up early).",
+      "Merienda (afternoon snack), estrenar (to use something for the first time), un paseo (a stroll).",
+      "Ojalá means I really hope: ¡Ojalá haga sol mañana! Learn it as a fixed phrase for now."
+     ],
+     "q": "Which Spanish word from the course do you like the most, and why?",
+     "c": "Make your own list of twenty favourite A1 words and use five of them in sentences today."
+    },
+    "de": {
+     "t": "Meine spanischen Lieblingswörter",
+     "g": "Du sammelst schöne Alltagswörter und benutzt sie.",
+     "p": [
+      "Ein paar Schätze: sobremesa (Plaudern am Tisch nach dem Essen), madrugar (früh aufstehen).",
+      "Merienda (Nachmittagssnack), estrenar (etwas zum ersten Mal benutzen), un paseo (Spaziergang).",
+      "Ojalá heißt hoffentlich: ¡Ojalá haga sol mañana! Lern es erst einmal als feste Wendung."
+     ],
+     "q": "Welches spanische Wort aus dem Kurs magst du am liebsten, und warum?",
+     "c": "Mach deine Liste mit zwanzig Lieblingswörtern aus A1 und benutze heute fünf in Sätzen."
+    },
+    "es": {
+     "t": "Mis palabras favoritas en español",
+     "g": "Colecciona palabras cotidianas preciosas y empieza a usarlas.",
+     "p": [
+      "Joyas sin traducción fácil: sobremesa (charla tras la comida), madrugar, merienda, estrenar.",
+      "Ojalá viene del árabe y expresa un deseo: ¡Ojalá haga sol mañana! Va con subjuntivo.",
+      "Otras palabras con encanto: un paseo, la tertulia, el duende, friolero, la siesta."
+     ],
+     "q": "¿Qué palabra del curso te gusta más y por qué?",
+     "c": "Haz tu lista de veinte palabras favoritas del nivel A1 y usa cinco de ellas en frases hoy."
+    },
+    "fr": {
+     "t": "Mes mots espagnols préférés",
+     "g": "Collectionner de jolis mots du quotidien et commencer à les utiliser.",
+     "p": [
+      "Quelques perles : sobremesa (bavarder à table après le repas), madrugar (se lever tôt).",
+      "Merienda (goûter), estrenar (utiliser pour la première fois), un paseo (une balade).",
+      "Ojalá veut dire pourvu que : ¡Ojalá haga sol mañana! Apprends-le comme expression figée."
+     ],
+     "q": "Quel mot espagnol du cours préfères-tu, et pourquoi ?",
+     "c": "Fais ta liste de vingt mots A1 préférés et utilise-en cinq dans des phrases aujourd'hui."
+    },
+    "it": {
+     "t": "Le mie parole spagnole preferite",
+     "g": "Raccogli belle parole quotidiane e inizia a usarle.",
+     "p": [
+      "Qualche perla: sobremesa (chiacchierare a tavola dopo pranzo), madrugar (alzarsi presto).",
+      "Merienda (merenda), estrenar (usare per la prima volta), un paseo (una passeggiata).",
+      "Ojalá vuol dire magari: ¡Ojalá haga sol mañana! Per ora imparalo come frase fissa."
+     ],
+     "q": "Quale parola spagnola del corso ti piace di più e perché?",
+     "c": "Fai la tua lista di venti parole A1 preferite e usane cinque in frasi oggi."
+    },
+    "pt": {
+     "t": "As minhas palavras espanholas favoritas",
+     "g": "Coleciona palavras bonitas do dia a dia e começa a usá-las.",
+     "p": [
+      "Algumas pérolas: sobremesa (conversa à mesa depois de comer; não é doce!), madrugar.",
+      "Merienda (lanche), estrenar (usar pela primeira vez, estrear), un paseo (um passeio).",
+      "Ojalá quer dizer oxalá: ¡Ojalá haga sol mañana! Por agora aprende-o como expressão fixa."
+     ],
+     "q": "Qual é a palavra espanhola do curso de que mais gostas e porquê?",
+     "c": "Faz a tua lista de vinte palavras favoritas do A1 e usa cinco em frases hoje."
+    },
+    "pt_BR": {
+     "t": "Minhas palavras favoritas em espanhol",
+     "g": "Colecione palavras bonitas do dia a dia e comece a usá-las.",
+     "p": [
+      "Algumas pérolas: sobremesa (papo à mesa depois de comer; não é doce!), madrugar (acordar cedo).",
+      "Merienda (lanche da tarde), estrenar (estrear), un paseo (um passeio).",
+      "Ojalá quer dizer tomara: ¡Ojalá haga sol mañana! Por enquanto, aprenda como expressão fixa."
+     ],
+     "q": "Qual palavra espanhola do curso você mais gosta e por quê?",
+     "c": "Faça sua lista de vinte palavras favoritas do A1 e use cinco em frases hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la sobremesa",
+      "ex": "Después de comer, la sobremesa dura horas."
+     },
+     {
+      "w": "madrugar",
+      "ex": "No me gusta madrugar los domingos."
+     },
+     {
+      "w": "la merienda",
+      "ex": "A las seis tomamos la merienda."
+     },
+     {
+      "w": "ojalá",
+      "ex": "¡Ojalá haga sol mañana!"
+     },
+     {
+      "w": "el paseo",
+      "ex": "Damos un paseo por el parque."
+     },
+     {
+      "w": "estrenar",
+      "ex": "Hoy estreno zapatos nuevos."
+     }
+    ],
+    "gram": "Ojalá + subjuntivo expresa un deseo (fórmula fija): ¡Ojalá haga sol! Dar un paseo = pasear. Estrenar = usar algo por primera vez."
+   }
+  },
+  {
+   "d": 90,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: A1 complete!",
+     "g": "Celebrate finishing A1 with a recap of everything you can now do.",
+     "p": [
+      "You can introduce yourself, describe people and places, and talk about likes with gustar.",
+      "You can make plans with ir a, invite and reply, compare things and say what you must do.",
+      "You can order food, check in at a hotel, ask for help and say what you have done today."
+     ],
+     "q": "What are you proudest of after 90 days of Spanish?",
+     "c": "Tell me about yourself in eight sentences using as many A1 structures as you can."
+    },
+    "de": {
+     "t": "Wiederholung: A1 geschafft!",
+     "g": "Du feierst den Abschluss von A1 mit einem Rückblick auf alles, was du kannst.",
+     "p": [
+      "Du kannst dich vorstellen, Menschen und Orte beschreiben und mit gustar über Vorlieben reden.",
+      "Du planst mit ir a, lädst ein und antwortest, vergleichst und sagst, was du tun musst.",
+      "Du bestellst Essen, checkst im Hotel ein, bittest um Hilfe und sagst, was du heute gemacht hast."
+     ],
+     "q": "Worauf bist du nach 90 Tagen Spanisch am meisten stolz?",
+     "c": "Erzähl in acht Sätzen von dir und benutze so viele A1-Strukturen wie möglich."
+    },
+    "es": {
+     "t": "Repaso: ¡A1 completado!",
+     "g": "Celebra el fin del nivel A1 repasando todo lo que ya sabes hacer.",
+     "p": [
+      "Sabes presentarte, describir personas y lugares, y hablar de gustos con gustar y encantar.",
+      "Sabes hacer planes con ir a, invitar y responder, comparar y decir lo que tienes que hacer.",
+      "Sabes pedir en un restaurante, registrarte en un hotel, pedir ayuda y contar qué has hecho hoy."
+     ],
+     "q": "¿De qué te sientes más orgulloso u orgullosa después de 90 días de español?",
+     "c": "Háblame de ti en ocho frases usando todas las estructuras del A1 que puedas."
+    },
+    "fr": {
+     "t": "Révision : A1 terminé !",
+     "g": "Fêter la fin du A1 en révisant tout ce que tu sais faire.",
+     "p": [
+      "Tu sais te présenter, décrire des gens et des lieux, et parler de tes goûts avec gustar.",
+      "Tu sais faire des projets avec ir a, inviter et répondre, comparer et dire ce que tu dois faire.",
+      "Tu sais commander, t'enregistrer à l'hôtel, demander de l'aide et dire ce que tu as fait."
+     ],
+     "q": "De quoi es-tu le plus fier ou la plus fière après 90 jours d'espagnol ?",
+     "c": "Parle-moi de toi en huit phrases avec un maximum de structures du A1."
+    },
+    "it": {
+     "t": "Ripasso: A1 completato!",
+     "g": "Festeggi la fine dell'A1 ripassando tutto quello che sai fare.",
+     "p": [
+      "Sai presentarti, descrivere persone e luoghi e parlare di gusti con gustar.",
+      "Sai fare piani con ir a, invitare e rispondere, confrontare e dire cosa devi fare.",
+      "Sai ordinare, fare il check-in, chiedere aiuto e dire cosa hai fatto oggi."
+     ],
+     "q": "Di cosa sei più orgoglioso o orgogliosa dopo 90 giorni di spagnolo?",
+     "c": "Parlami di te in otto frasi usando quante più strutture dell'A1 possibile."
+    },
+    "pt": {
+     "t": "Revisão: A1 concluído!",
+     "g": "Celebra o fim do A1 revendo tudo o que já sabes fazer.",
+     "p": [
+      "Sabes apresentar-te, descrever pessoas e lugares e falar de gostos com gustar.",
+      "Sabes fazer planos com ir a, convidar e responder, comparar e dizer o que tens de fazer.",
+      "Sabes pedir comida, fazer check-in, pedir ajuda e contar o que fizeste hoje."
+     ],
+     "q": "Do que te orgulhas mais depois de 90 dias de espanhol?",
+     "c": "Fala-me de ti em oito frases usando o máximo de estruturas do A1 que conseguires."
+    },
+    "pt_BR": {
+     "t": "Revisão: A1 concluído!",
+     "g": "Comemore o fim do A1 revisando tudo o que você já sabe fazer.",
+     "p": [
+      "Você sabe se apresentar, descrever pessoas e lugares e falar de gostos com gustar.",
+      "Você faz planos com ir a, convida e responde, compara e diz o que tem que fazer.",
+      "Você pede comida, faz check-in, pede ajuda e conta o que fez hoje."
+     ],
+     "q": "Do que você mais se orgulha depois de 90 dias de espanhol?",
+     "c": "Fale de você em oito frases usando o máximo de estruturas do A1 que conseguir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¡Enhorabuena!",
+      "ex": "¡Enhorabuena! Has terminado el nivel A1."
+     },
+     {
+      "w": "el nivel",
+      "ex": "Ya tengo un buen nivel de español."
+     },
+     {
+      "w": "aprender",
+      "ex": "He aprendido mucho este trimestre."
+     },
+     {
+      "w": "practicar",
+      "ex": "Practico español todos los días."
+     },
+     {
+      "w": "el objetivo",
+      "ex": "Mi objetivo es viajar a México."
+     },
+     {
+      "w": "seguir",
+      "ex": "¡Seguimos con el nivel A2!"
+     }
+    ],
+    "gram": "Repaso A1: presente, ser/estar, gustar, ir a + infinitivo, comparativos, tener que y pretérito perfecto: hoy he aprendido mucho."
+   }
+  }
+ ]
+}

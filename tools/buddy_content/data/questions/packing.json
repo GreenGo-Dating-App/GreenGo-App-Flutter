@@ -1,0 +1,1305 @@
+{
+"topic": "packing",
+"questions": [
+{
+"id": "packing-001",
+"lv": "any",
+"i18n": {
+"en": "Are you a light packer or do you like to bring a bit of everything?",
+"de": "Packst du eher leicht oder nimmst du gern von allem etwas mit?",
+"es": "¿Sueles viajar ligero o te gusta llevar un poco de todo?",
+"fr": "Tu voyages plutôt léger ou tu aimes emporter un peu de tout ?",
+"it": "Viaggi leggero o ti piace portare un po' di tutto?",
+"pt": "Costumas viajar leve ou gostas de levar um pouco de tudo?",
+"pt_BR": "Você costuma viajar leve ou gosta de levar de tudo um pouco?"
+}
+},
+{
+"id": "packing-002",
+"lv": "any",
+"i18n": {
+"en": "When do you usually start packing: days before or the night before?",
+"de": "Wann fängst du meistens an zu packen: Tage vorher oder am Abend davor?",
+"es": "¿Cuándo sueles hacer la maleta: días antes o la noche anterior?",
+"fr": "Quand fais-tu ta valise d'habitude : plusieurs jours avant ou la veille au soir ?",
+"it": "Quando prepari di solito la valigia: giorni prima o la sera prima?",
+"pt": "Quando costumas fazer a mala: dias antes ou na noite anterior?",
+"pt_BR": "Quando você costuma fazer a mala: dias antes ou na noite anterior?"
+}
+},
+{
+"id": "packing-003",
+"lv": "any",
+"i18n": {
+"en": "What is one item you always pack, no matter where you go?",
+"de": "Welchen Gegenstand packst du immer ein, egal wohin du reist?",
+"es": "¿Qué objeto metes siempre en la maleta, vayas donde vayas?",
+"fr": "Quel objet emportes-tu toujours, peu importe la destination ?",
+"it": "Qual è l'oggetto che metti sempre in valigia, ovunque tu vada?",
+"pt": "Que objeto levas sempre, seja qual for o destino?",
+"pt_BR": "Qual item você sempre leva, não importa para onde vá?"
+}
+},
+{
+"id": "packing-004",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer a suitcase with wheels or a backpack, and why?",
+"de": "Magst du lieber einen Rollkoffer oder einen Rucksack, und warum?",
+"es": "¿Prefieres una maleta con ruedas o una mochila? ¿Por qué?",
+"fr": "Tu préfères une valise à roulettes ou un sac à dos, et pourquoi ?",
+"it": "Preferisci un trolley o uno zaino, e perché?",
+"pt": "Preferes uma mala com rodas ou uma mochila, e porquê?",
+"pt_BR": "Você prefere mala de rodinhas ou mochila? Por quê?"
+}
+},
+{
+"id": "packing-005",
+"lv": "any",
+"i18n": {
+"en": "What is the funniest thing you have ever forgotten to pack?",
+"de": "Was ist das Lustigste, das du je vergessen hast einzupacken?",
+"es": "¿Qué es lo más gracioso que has olvidado meter en la maleta?",
+"fr": "Quelle est la chose la plus drôle que tu aies oublié d'emporter ?",
+"it": "Qual è la cosa più buffa che ti sei dimenticato di mettere in valigia?",
+"pt": "Qual foi a coisa mais engraçada que já te esqueceste de levar?",
+"pt_BR": "Qual foi a coisa mais engraçada que você já esqueceu de levar?"
+}
+},
+{
+"id": "packing-006",
+"lv": "any",
+"i18n": {
+"en": "Do you roll your clothes or fold them?",
+"de": "Rollst du deine Kleidung oder faltest du sie?",
+"es": "¿Enrollas la ropa o la doblas?",
+"fr": "Tu roules tes vêtements ou tu les plies ?",
+"it": "Arrotoli i vestiti o li pieghi?",
+"pt": "Enrolas a roupa ou dobra-la?",
+"pt_BR": "Você enrola as roupas ou dobra?"
+}
+},
+{
+"id": "packing-007",
+"lv": "any",
+"i18n": {
+"en": "Have you ever tried packing cubes? What did you think?",
+"de": "Hast du schon mal Packwürfel ausprobiert? Wie fandest du sie?",
+"es": "¿Has probado alguna vez los organizadores de maleta? ¿Qué te parecieron?",
+"fr": "As-tu déjà essayé les cubes de rangement ? Qu'en as-tu pensé ?",
+"it": "Hai mai provato i cubi organizzatori per la valigia? Che ne pensi?",
+"pt": "Já experimentaste cubos organizadores? O que achaste?",
+"pt_BR": "Você já testou organizadores de mala? O que achou?"
+}
+},
+{
+"id": "packing-008",
+"lv": "any",
+"i18n": {
+"en": "What kind of trip do you find hardest to pack for?",
+"de": "Für welche Art von Reise fällt dir das Packen am schwersten?",
+"es": "¿Para qué tipo de viaje te cuesta más hacer la maleta?",
+"fr": "Pour quel type de voyage as-tu le plus de mal à faire ta valise ?",
+"it": "Per che tipo di viaggio ti è più difficile fare la valigia?",
+"pt": "Para que tipo de viagem te custa mais fazer a mala?",
+"pt_BR": "Para que tipo de viagem você acha mais difícil fazer a mala?"
+}
+},
+{
+"id": "packing-009",
+"lv": "any",
+"i18n": {
+"en": "Do you use a packing list, or do you pack from memory?",
+"de": "Benutzt du eine Packliste oder packst du aus dem Kopf?",
+"es": "¿Usas una lista para hacer la maleta o lo haces de memoria?",
+"fr": "Tu utilises une liste ou tu fais ta valise de mémoire ?",
+"it": "Usi una lista o prepari la valigia a memoria?",
+"pt": "Usas uma lista ou fazes a mala de memória?",
+"pt_BR": "Você usa uma lista ou faz a mala de cabeça?"
+}
+},
+{
+"id": "packing-010",
+"lv": "any",
+"i18n": {
+"en": "How many pairs of shoes do you usually take on a one-week trip?",
+"de": "Wie viele Paar Schuhe nimmst du normalerweise für eine Woche mit?",
+"es": "¿Cuántos pares de zapatos sueles llevar para un viaje de una semana?",
+"fr": "Combien de paires de chaussures prends-tu pour un voyage d'une semaine ?",
+"it": "Quante paia di scarpe porti di solito per un viaggio di una settimana?",
+"pt": "Quantos pares de sapatos costumas levar para uma viagem de uma semana?",
+"pt_BR": "Quantos pares de sapato você costuma levar numa viagem de uma semana?"
+}
+},
+{
+"id": "packing-011",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite piece of travel clothing, and why?",
+"de": "Was ist dein liebstes Kleidungsstück auf Reisen, und warum?",
+"es": "¿Cuál es tu prenda favorita para viajar y por qué?",
+"fr": "Quel est ton vêtement de voyage préféré, et pourquoi ?",
+"it": "Qual è il tuo capo preferito da viaggio, e perché?",
+"pt": "Qual é a tua peça de roupa preferida para viajar, e porquê?",
+"pt_BR": "Qual é a sua peça de roupa favorita para viajar, e por quê?"
+}
+},
+{
+"id": "packing-012",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy packing, or is it a chore for you?",
+"de": "Macht dir Packen Spaß oder ist es eher eine lästige Pflicht?",
+"es": "¿Disfrutas haciendo la maleta o te parece una tarea pesada?",
+"fr": "Tu aimes faire ta valise ou c'est une corvée pour toi ?",
+"it": "Ti piace fare la valigia o per te è una seccatura?",
+"pt": "Gostas de fazer a mala ou para ti é uma seca?",
+"pt_BR": "Você curte fazer a mala ou acha uma chatice?"
+}
+},
+{
+"id": "packing-013",
+"lv": "any",
+"i18n": {
+"en": "What souvenir did you once struggle to fit in your bag?",
+"de": "Welches Souvenir hat mal kaum in deine Tasche gepasst?",
+"es": "¿Qué recuerdo te costó meter en la maleta alguna vez?",
+"fr": "Quel souvenir as-tu eu du mal à faire entrer dans ton sac ?",
+"it": "Quale souvenir hai faticato a far entrare in valigia?",
+"pt": "Que recordação te deu trabalho para caber na mala?",
+"pt_BR": "Que lembrancinha já deu trabalho para caber na sua mala?"
+}
+},
+{
+"id": "packing-014",
+"lv": "any",
+"i18n": {
+"en": "What is in your bag for a long flight or train ride?",
+"de": "Was hast du für einen langen Flug oder eine lange Zugfahrt dabei?",
+"es": "¿Qué llevas en el bolso para un vuelo o un tren largo?",
+"fr": "Qu'as-tu dans ton sac pour un long vol ou un long trajet en train ?",
+"it": "Cosa porti nella borsa per un volo o un viaggio in treno lungo?",
+"pt": "O que levas na mala de mão para um voo ou viagem de comboio longa?",
+"pt_BR": "O que vai na sua bolsa para um voo ou uma viagem de trem longa?"
+}
+},
+{
+"id": "packing-015",
+"lv": "any",
+"i18n": {
+"en": "Have you ever travelled with only hand luggage? How did it go?",
+"de": "Bist du schon mal nur mit Handgepäck gereist? Wie lief es?",
+"es": "¿Has viajado alguna vez solo con equipaje de mano? ¿Qué tal fue?",
+"fr": "As-tu déjà voyagé avec un simple bagage cabine ? Comment ça s'est passé ?",
+"it": "Hai mai viaggiato solo con il bagaglio a mano? Com'è andata?",
+"pt": "Já viajaste só com bagagem de mão? Como correu?",
+"pt_BR": "Você já viajou só com bagagem de mão? Como foi?"
+}
+},
+{
+"id": "packing-016",
+"lv": "any",
+"i18n": {
+"en": "Which toiletries could you never travel without?",
+"de": "Auf welche Pflegeprodukte könntest du auf Reisen nie verzichten?",
+"es": "¿Sin qué productos de aseo nunca podrías viajar?",
+"fr": "Sans quels produits de toilette ne pourrais-tu jamais voyager ?",
+"it": "Senza quali prodotti per l'igiene non potresti mai viaggiare?",
+"pt": "Sem que produtos de higiene nunca conseguirias viajar?",
+"pt_BR": "Sem quais itens de higiene você nunca viajaria?"
+}
+},
+{
+"id": "packing-017",
+"lv": "any",
+"i18n": {
+"en": "What gadgets do you take with you on every trip?",
+"de": "Welche Geräte nimmst du auf jede Reise mit?",
+"es": "¿Qué aparatos llevas contigo en cada viaje?",
+"fr": "Quels appareils emportes-tu à chaque voyage ?",
+"it": "Quali dispositivi porti con te in ogni viaggio?",
+"pt": "Que aparelhos levas contigo em todas as viagens?",
+"pt_BR": "Quais aparelhos você leva em toda viagem?"
+}
+},
+{
+"id": "packing-018",
+"lv": "any",
+"i18n": {
+"en": "Do you pack differently for work trips and holidays?",
+"de": "Packst du für Geschäftsreisen anders als für den Urlaub?",
+"es": "¿Haces la maleta de forma distinta para viajes de trabajo y vacaciones?",
+"fr": "Fais-tu ta valise différemment pour le travail et pour les vacances ?",
+"it": "Prepari la valigia in modo diverso per lavoro e per vacanza?",
+"pt": "Fazes a mala de forma diferente para trabalho e para férias?",
+"pt_BR": "Você faz a mala de um jeito diferente para trabalho e para férias?"
+}
+},
+{
+"id": "packing-019",
+"lv": "any",
+"i18n": {
+"en": "What colour palette do you like for your travel clothes?",
+"de": "Welche Farben magst du für deine Reisekleidung?",
+"es": "¿Qué paleta de colores prefieres para tu ropa de viaje?",
+"fr": "Quelles couleurs aimes-tu pour tes vêtements de voyage ?",
+"it": "Quale palette di colori preferisci per i vestiti da viaggio?",
+"pt": "Que paleta de cores preferes para a roupa de viagem?",
+"pt_BR": "Que paleta de cores você prefere para as roupas de viagem?"
+}
+},
+{
+"id": "packing-020",
+"lv": "any",
+"i18n": {
+"en": "Who taught you how to pack, or did you learn on your own?",
+"de": "Wer hat dir das Packen beigebracht, oder hast du es selbst gelernt?",
+"es": "¿Quién te enseñó a hacer la maleta o aprendiste por tu cuenta?",
+"fr": "Qui t'a appris à faire ta valise, ou as-tu appris tout seul ?",
+"it": "Chi ti ha insegnato a fare la valigia, o hai imparato da solo?",
+"pt": "Quem te ensinou a fazer a mala, ou aprendeste sozinho?",
+"pt_BR": "Quem te ensinou a fazer a mala, ou você aprendeu sozinho?"
+}
+},
+{
+"id": "packing-021",
+"lv": "beginner",
+"i18n": {
+"en": "What would be on your packing list for a weekend away?",
+"de": "Was stünde auf deiner Packliste für ein Wochenende weg?",
+"es": "¿Qué pondrías en tu lista para una escapada de fin de semana?",
+"fr": "Que mettrais-tu sur ta liste pour un week-end ?",
+"it": "Cosa metteresti nella lista per un weekend fuori?",
+"pt": "O que estaria na tua lista para um fim de semana fora?",
+"pt_BR": "O que estaria na sua lista para um fim de semana fora?"
+}
+},
+{
+"id": "packing-022",
+"lv": "beginner",
+"i18n": {
+"en": "Where do you keep your passport and documents when you travel?",
+"de": "Wo bewahrst du auf Reisen deinen Pass und deine Dokumente auf?",
+"es": "¿Dónde guardas el pasaporte y los documentos cuando viajas?",
+"fr": "Où ranges-tu ton passeport et tes documents en voyage ?",
+"it": "Dove tieni passaporto e documenti quando viaggi?",
+"pt": "Onde guardas o passaporte e os documentos quando viajas?",
+"pt_BR": "Onde você guarda o passaporte e os documentos quando viaja?"
+}
+},
+{
+"id": "packing-023",
+"lv": "beginner",
+"i18n": {
+"en": "Do you check the weather forecast before you pack?",
+"de": "Schaust du dir vor dem Packen die Wettervorhersage an?",
+"es": "¿Miras el pronóstico del tiempo antes de hacer la maleta?",
+"fr": "Regardes-tu la météo avant de faire ta valise ?",
+"it": "Controlli le previsioni del tempo prima di fare la valigia?",
+"pt": "Vês a previsão do tempo antes de fazer a mala?",
+"pt_BR": "Você confere a previsão do tempo antes de fazer a mala?"
+}
+},
+{
+"id": "packing-024",
+"lv": "beginner",
+"i18n": {
+"en": "What do you put in your small personal bag on a plane or bus?",
+"de": "Was packst du in deine kleine Tasche für Flugzeug oder Bus?",
+"es": "¿Qué metes en tu bolso pequeño para el avión o el autobús?",
+"fr": "Que mets-tu dans ton petit sac pour l'avion ou le bus ?",
+"it": "Cosa metti nella borsa piccola per l'aereo o il pullman?",
+"pt": "O que pões na tua mala pequena para o avião ou o autocarro?",
+"pt_BR": "O que você coloca na bolsa pequena para o avião ou o ônibus?"
+}
+},
+{
+"id": "packing-025",
+"lv": "beginner",
+"i18n": {
+"en": "How do you keep your chargers and cables tidy?",
+"de": "Wie hältst du Ladegeräte und Kabel ordentlich?",
+"es": "¿Cómo mantienes ordenados los cargadores y cables?",
+"fr": "Comment gardes-tu tes chargeurs et câbles bien rangés ?",
+"it": "Come tieni in ordine caricabatterie e cavi?",
+"pt": "Como manténs os carregadores e cabos arrumados?",
+"pt_BR": "Como você mantém carregadores e cabos organizados?"
+}
+},
+{
+"id": "packing-026",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever had a bottle leak in your bag? What happened?",
+"de": "Ist dir schon mal eine Flasche in der Tasche ausgelaufen? Was ist passiert?",
+"es": "¿Alguna vez se te ha derramado un bote en la maleta? ¿Qué pasó?",
+"fr": "Une bouteille a-t-elle déjà fui dans ton sac ? Que s'est-il passé ?",
+"it": "Ti si è mai aperta una boccetta in valigia? Cos'è successo?",
+"pt": "Já te verteu algum frasco na mala? O que aconteceu?",
+"pt_BR": "Já vazou algum frasco na sua mala? O que aconteceu?"
+}
+},
+{
+"id": "packing-027",
+"lv": "beginner",
+"i18n": {
+"en": "What snacks do you like to bring on a journey?",
+"de": "Welche Snacks nimmst du gern für unterwegs mit?",
+"es": "¿Qué tentempiés te gusta llevar en un viaje?",
+"fr": "Quels en-cas aimes-tu emporter pour un trajet ?",
+"it": "Quali snack ti piace portare in viaggio?",
+"pt": "Que snacks gostas de levar numa viagem?",
+"pt_BR": "Quais lanchinhos você gosta de levar na viagem?"
+}
+},
+{
+"id": "packing-028",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer a hard or a soft suitcase?",
+"de": "Magst du lieber einen Hartschalen- oder einen Weichgepäckkoffer?",
+"es": "¿Prefieres una maleta rígida o blanda?",
+"fr": "Tu préfères une valise rigide ou souple ?",
+"it": "Preferisci una valigia rigida o morbida?",
+"pt": "Preferes uma mala rígida ou flexível?",
+"pt_BR": "Você prefere mala rígida ou de tecido?"
+}
+},
+{
+"id": "packing-029",
+"lv": "beginner",
+"i18n": {
+"en": "What would you pack for a day at the beach?",
+"de": "Was würdest du für einen Tag am Strand einpacken?",
+"es": "¿Qué llevarías para un día de playa?",
+"fr": "Qu'emporterais-tu pour une journée à la plage ?",
+"it": "Cosa porteresti per una giornata al mare?",
+"pt": "O que levarias para um dia de praia?",
+"pt_BR": "O que você levaria para um dia de praia?"
+}
+},
+{
+"id": "packing-030",
+"lv": "beginner",
+"i18n": {
+"en": "How do you make your luggage easy to recognise at the airport?",
+"de": "Wie machst du dein Gepäck am Flughafen leicht erkennbar?",
+"es": "¿Cómo haces que tu maleta sea fácil de reconocer en el aeropuerto?",
+"fr": "Comment rends-tu ta valise facile à repérer à l'aéroport ?",
+"it": "Come rendi la tua valigia facile da riconoscere in aeroporto?",
+"pt": "Como tornas a tua mala fácil de reconhecer no aeroporto?",
+"pt_BR": "Como você deixa sua mala fácil de reconhecer no aeroporto?"
+}
+},
+{
+"id": "packing-031",
+"lv": "beginner",
+"i18n": {
+"en": "What clothes would you pack for a city break?",
+"de": "Welche Kleidung würdest du für einen Städtetrip einpacken?",
+"es": "¿Qué ropa llevarías para una escapada a una ciudad?",
+"fr": "Quels vêtements emporterais-tu pour un week-end en ville ?",
+"it": "Quali vestiti porteresti per un city break?",
+"pt": "Que roupa levarias para uma escapadinha a uma cidade?",
+"pt_BR": "Que roupas você levaria para uma viagem curta a uma cidade?"
+}
+},
+{
+"id": "packing-032",
+"lv": "beginner",
+"i18n": {
+"en": "Do you leave space in your bag for things you might buy?",
+"de": "Lässt du Platz in der Tasche für Dinge, die du vielleicht kaufst?",
+"es": "¿Dejas espacio en la maleta para lo que puedas comprar?",
+"fr": "Laisses-tu de la place dans ton sac pour tes achats éventuels ?",
+"it": "Lasci spazio in valigia per le cose che potresti comprare?",
+"pt": "Deixas espaço na mala para o que possas comprar?",
+"pt_BR": "Você deixa espaço na mala para o que pode comprar?"
+}
+},
+{
+"id": "packing-033",
+"lv": "beginner",
+"i18n": {
+"en": "What do you take to sleep well in a new place?",
+"de": "Was nimmst du mit, um an einem neuen Ort gut zu schlafen?",
+"es": "¿Qué llevas para dormir bien en un lugar nuevo?",
+"fr": "Qu'emportes-tu pour bien dormir dans un nouvel endroit ?",
+"it": "Cosa porti per dormire bene in un posto nuovo?",
+"pt": "O que levas para dormir bem num sítio novo?",
+"pt_BR": "O que você leva para dormir bem num lugar novo?"
+}
+},
+{
+"id": "packing-034",
+"lv": "beginner",
+"i18n": {
+"en": "How do you pack clothes so they don't get wrinkled?",
+"de": "Wie packst du Kleidung, damit sie nicht knittert?",
+"es": "¿Cómo guardas la ropa para que no se arrugue?",
+"fr": "Comment ranges-tu tes vêtements pour qu'ils ne se froissent pas ?",
+"it": "Come sistemi i vestiti perché non si stropiccino?",
+"pt": "Como arrumas a roupa para não amarrotar?",
+"pt_BR": "Como você guarda as roupas para não amassarem?"
+}
+},
+{
+"id": "packing-035",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever weighed your bag before going to the airport?",
+"de": "Hast du deine Tasche schon mal vor dem Flughafen gewogen?",
+"es": "¿Has pesado alguna vez la maleta antes de ir al aeropuerto?",
+"fr": "As-tu déjà pesé ta valise avant d'aller à l'aéroport ?",
+"it": "Hai mai pesato la valigia prima di andare in aeroporto?",
+"pt": "Já pesaste a mala antes de ir para o aeroporto?",
+"pt_BR": "Você já pesou a mala antes de ir para o aeroporto?"
+}
+},
+{
+"id": "packing-036",
+"lv": "beginner",
+"i18n": {
+"en": "What do you pack in case of rain?",
+"de": "Was packst du für den Fall, dass es regnet?",
+"es": "¿Qué metes en la maleta por si llueve?",
+"fr": "Que prends-tu au cas où il pleuvrait ?",
+"it": "Cosa metti in valigia nel caso piova?",
+"pt": "O que levas para o caso de chover?",
+"pt_BR": "O que você leva caso chova?"
+}
+},
+{
+"id": "packing-037",
+"lv": "beginner",
+"i18n": {
+"en": "Which items do you keep together in one pouch?",
+"de": "Welche Dinge bewahrst du zusammen in einem Täschchen auf?",
+"es": "¿Qué cosas guardas juntas en un mismo neceser o bolsita?",
+"fr": "Quels objets ranges-tu ensemble dans une même pochette ?",
+"it": "Quali oggetti tieni insieme in una sola pochette?",
+"pt": "Que objetos guardas juntos numa só bolsinha?",
+"pt_BR": "Quais itens você guarda juntos numa nécessaire?"
+}
+},
+{
+"id": "packing-038",
+"lv": "beginner",
+"i18n": {
+"en": "What does your quick check before leaving home look like?",
+"de": "Wie sieht dein kurzer Check aus, bevor du das Haus verlässt?",
+"es": "¿Cómo es tu repaso rápido antes de salir de casa?",
+"fr": "À quoi ressemble ta petite vérification avant de quitter la maison ?",
+"it": "Com'è il tuo controllo veloce prima di uscire di casa?",
+"pt": "Como é a tua verificação rápida antes de saíres de casa?",
+"pt_BR": "Como é a sua checagem rápida antes de sair de casa?"
+}
+},
+{
+"id": "packing-039",
+"lv": "beginner",
+"i18n": {
+"en": "Do you pack a small first-aid kit? What's inside?",
+"de": "Packst du eine kleine Reiseapotheke ein? Was ist drin?",
+"es": "¿Llevas un pequeño botiquín? ¿Qué tiene dentro?",
+"fr": "Emportes-tu une petite trousse de secours ? Qu'y a-t-il dedans ?",
+"it": "Porti un piccolo kit di pronto soccorso? Cosa c'è dentro?",
+"pt": "Levas um pequeno estojo de primeiros socorros? O que tem lá dentro?",
+"pt_BR": "Você leva um kit de primeiros socorros? O que tem nele?"
+}
+},
+{
+"id": "packing-040",
+"lv": "beginner",
+"i18n": {
+"en": "How do you keep worn clothes separate from clean ones?",
+"de": "Wie trennst du getragene von sauberer Kleidung?",
+"es": "¿Cómo separas la ropa usada de la limpia?",
+"fr": "Comment sépares-tu les vêtements portés des vêtements propres ?",
+"it": "Come separi i vestiti usati da quelli puliti?",
+"pt": "Como separas a roupa usada da roupa lavada?",
+"pt_BR": "Como você separa a roupa usada da limpa?"
+}
+},
+{
+"id": "packing-041",
+"lv": "beginner",
+"i18n": {
+"en": "What would you pack to visit family for a few days?",
+"de": "Was würdest du einpacken, um ein paar Tage Familie zu besuchen?",
+"es": "¿Qué llevarías para visitar a la familia unos días?",
+"fr": "Qu'emporterais-tu pour rendre visite à ta famille quelques jours ?",
+"it": "Cosa porteresti per qualche giorno dalla famiglia?",
+"pt": "O que levarias para visitar a família durante uns dias?",
+"pt_BR": "O que você levaria para passar uns dias com a família?"
+}
+},
+{
+"id": "packing-042",
+"lv": "beginner",
+"i18n": {
+"en": "Which shoes are the most comfortable for long walks, in your opinion?",
+"de": "Welche Schuhe sind deiner Meinung nach am bequemsten für lange Spaziergänge?",
+"es": "¿Qué zapatos te parecen los más cómodos para caminar mucho?",
+"fr": "Quelles chaussures trouves-tu les plus confortables pour marcher longtemps ?",
+"it": "Quali scarpe trovi più comode per camminare a lungo?",
+"pt": "Que sapatos achas mais confortáveis para longas caminhadas?",
+"pt_BR": "Quais sapatos você acha mais confortáveis para caminhar muito?"
+}
+},
+{
+"id": "packing-043",
+"lv": "beginner",
+"i18n": {
+"en": "Do you bring a reusable water bottle when you travel?",
+"de": "Nimmst du auf Reisen eine wiederverwendbare Trinkflasche mit?",
+"es": "¿Llevas una botella reutilizable cuando viajas?",
+"fr": "Emportes-tu une gourde réutilisable en voyage ?",
+"it": "Porti una borraccia riutilizzabile quando viaggi?",
+"pt": "Levas uma garrafa reutilizável quando viajas?",
+"pt_BR": "Você leva uma garrafinha reutilizável quando viaja?"
+}
+},
+{
+"id": "packing-044",
+"lv": "beginner",
+"i18n": {
+"en": "What would you never pack again after a past trip?",
+"de": "Was würdest du nach einer früheren Reise nie wieder einpacken?",
+"es": "¿Qué no volverías a meter en la maleta después de algún viaje?",
+"fr": "Qu'est-ce que tu n'emporterais plus jamais après un ancien voyage ?",
+"it": "Cosa non metteresti mai più in valigia dopo un viaggio passato?",
+"pt": "O que nunca mais levarias depois de uma viagem passada?",
+"pt_BR": "O que você nunca mais levaria depois de alguma viagem?"
+}
+},
+{
+"id": "packing-045",
+"lv": "beginner",
+"i18n": {
+"en": "How do you pack your toiletry bag for a short trip?",
+"de": "Wie packst du deinen Kulturbeutel für eine kurze Reise?",
+"es": "¿Cómo preparas tu neceser para un viaje corto?",
+"fr": "Comment prépares-tu ta trousse de toilette pour un court voyage ?",
+"it": "Come prepari il beauty case per un viaggio breve?",
+"pt": "Como preparas a tua bolsa de higiene para uma viagem curta?",
+"pt_BR": "Como você monta sua nécessaire para uma viagem curta?"
+}
+},
+{
+"id": "packing-046",
+"lv": "any",
+"i18n": {
+"en": "What does your dream suitcase or travel bag look like?",
+"de": "Wie sieht dein Traumkoffer oder deine Traumreisetasche aus?",
+"es": "¿Cómo sería tu maleta o bolsa de viaje ideal?",
+"fr": "À quoi ressemble ta valise ou ton sac de voyage idéal ?",
+"it": "Com'è la tua valigia o borsa da viaggio dei sogni?",
+"pt": "Como seria a tua mala ou saco de viagem de sonho?",
+"pt_BR": "Como seria sua mala ou bolsa de viagem dos sonhos?"
+}
+},
+{
+"id": "packing-047",
+"lv": "any",
+"i18n": {
+"en": "What item surprised you by being really useful on a trip?",
+"de": "Welcher Gegenstand hat dich auf einer Reise als überraschend nützlich begeistert?",
+"es": "¿Qué objeto te sorprendió por lo útil que fue en un viaje?",
+"fr": "Quel objet t'a surpris par son utilité en voyage ?",
+"it": "Quale oggetto ti ha sorpreso per quanto è stato utile in viaggio?",
+"pt": "Que objeto te surpreendeu por ser tão útil numa viagem?",
+"pt_BR": "Qual item te surpreendeu por ser muito útil numa viagem?"
+}
+},
+{
+"id": "packing-048",
+"lv": "any",
+"i18n": {
+"en": "Do you pack your bag the same way every time?",
+"de": "Packst du deine Tasche jedes Mal auf die gleiche Weise?",
+"es": "¿Haces la maleta siempre de la misma manera?",
+"fr": "Fais-tu ta valise toujours de la même façon ?",
+"it": "Fai la valigia sempre allo stesso modo?",
+"pt": "Fazes a mala sempre da mesma maneira?",
+"pt_BR": "Você faz a mala sempre do mesmo jeito?"
+}
+},
+{
+"id": "packing-049",
+"lv": "any",
+"i18n": {
+"en": "What is your best tip for packing quickly?",
+"de": "Was ist dein bester Tipp, um schnell zu packen?",
+"es": "¿Cuál es tu mejor truco para hacer la maleta rápido?",
+"fr": "Quelle est ta meilleure astuce pour faire ta valise vite ?",
+"it": "Qual è il tuo miglior consiglio per fare la valigia in fretta?",
+"pt": "Qual é a tua melhor dica para fazer a mala depressa?",
+"pt_BR": "Qual é a sua melhor dica para fazer a mala rápido?"
+}
+},
+{
+"id": "packing-050",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when your bag is finally packed?",
+"de": "Wie fühlst du dich, wenn deine Tasche endlich gepackt ist?",
+"es": "¿Cómo te sientes cuando por fin tienes la maleta hecha?",
+"fr": "Comment te sens-tu quand ta valise est enfin bouclée ?",
+"it": "Come ti senti quando la valigia è finalmente pronta?",
+"pt": "Como te sentes quando finalmente tens a mala feita?",
+"pt_BR": "Como você se sente quando a mala finalmente está pronta?"
+}
+},
+{
+"id": "packing-051",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you pack for a trip with both beach days and cold mountain days?",
+"de": "Wie würdest du für eine Reise mit Strandtagen und kalten Bergtagen packen?",
+"es": "¿Cómo harías la maleta para un viaje con días de playa y días fríos de montaña?",
+"fr": "Comment ferais-tu ta valise pour un voyage entre plage et montagne froide ?",
+"it": "Come faresti la valigia per un viaggio tra giorni di mare e giorni freddi in montagna?",
+"pt": "Como farias a mala para uma viagem com dias de praia e dias frios na montanha?",
+"pt_BR": "Como você faria a mala para uma viagem com dias de praia e dias frios na montanha?"
+}
+},
+{
+"id": "packing-052",
+"lv": "intermediate",
+"i18n": {
+"en": "What does your layering system look like for cold weather?",
+"de": "Wie sieht dein Zwiebelprinzip für kaltes Wetter aus?",
+"es": "¿Cómo combinas las capas de ropa cuando hace frío?",
+"fr": "Comment organises-tu tes couches de vêtements quand il fait froid ?",
+"it": "Come organizzi i tuoi strati di abbigliamento quando fa freddo?",
+"pt": "Como organizas as camadas de roupa quando está frio?",
+"pt_BR": "Como você organiza as camadas de roupa no frio?"
+}
+},
+{
+"id": "packing-053",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever built a capsule wardrobe for a trip? How did it work?",
+"de": "Hast du schon mal eine Capsule-Garderobe für eine Reise zusammengestellt? Wie lief es?",
+"es": "¿Has armado alguna vez un armario cápsula para un viaje? ¿Qué tal funcionó?",
+"fr": "As-tu déjà composé une garde-robe capsule pour un voyage ? Ça a marché ?",
+"it": "Hai mai creato un guardaroba capsula per un viaggio? Com'è andata?",
+"pt": "Já montaste um guarda-roupa cápsula para uma viagem? Como correu?",
+"pt_BR": "Você já montou um guarda-roupa cápsula para uma viagem? Como foi?"
+}
+},
+{
+"id": "packing-054",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you do laundry when you travel for more than a week?",
+"de": "Wie wäschst du Wäsche, wenn du länger als eine Woche unterwegs bist?",
+"es": "¿Cómo lavas la ropa cuando viajas más de una semana?",
+"fr": "Comment fais-tu ta lessive quand tu voyages plus d'une semaine ?",
+"it": "Come fai il bucato quando viaggi per più di una settimana?",
+"pt": "Como lavas a roupa quando viajas mais de uma semana?",
+"pt_BR": "Como você lava roupa quando viaja por mais de uma semana?"
+}
+},
+{
+"id": "packing-055",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you pack for a camping weekend?",
+"de": "Was würdest du für ein Camping-Wochenende einpacken?",
+"es": "¿Qué llevarías para un fin de semana de acampada?",
+"fr": "Qu'emporterais-tu pour un week-end de camping ?",
+"it": "Cosa porteresti per un weekend in campeggio?",
+"pt": "O que levarias para um fim de semana a acampar?",
+"pt_BR": "O que você levaria para um fim de semana acampando?"
+}
+},
+{
+"id": "packing-056",
+"lv": "intermediate",
+"i18n": {
+"en": "Which fabrics do you trust most for hot and humid places?",
+"de": "Welchen Stoffen vertraust du am meisten an heißen, feuchten Orten?",
+"es": "¿En qué tejidos confías más para lugares calurosos y húmedos?",
+"fr": "Quels tissus préfères-tu pour les endroits chauds et humides ?",
+"it": "Di quali tessuti ti fidi di più per i posti caldi e umidi?",
+"pt": "Em que tecidos confias mais para sítios quentes e húmidos?",
+"pt_BR": "Em quais tecidos você mais confia para lugares quentes e úmidos?"
+}
+},
+{
+"id": "packing-057",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you pack a smart outfit so it arrives looking good?",
+"de": "Wie packst du ein schickes Outfit, damit es gut ankommt?",
+"es": "¿Cómo guardas un conjunto elegante para que llegue impecable?",
+"fr": "Comment ranges-tu une tenue habillée pour qu'elle arrive impeccable ?",
+"it": "Come metti in valigia un abito elegante perché arrivi in ordine?",
+"pt": "Como arrumas uma roupa elegante para chegar impecável?",
+"pt_BR": "Como você guarda uma roupa social para ela chegar impecável?"
+}
+},
+{
+"id": "packing-058",
+"lv": "intermediate",
+"i18n": {
+"en": "What is in your day hiking bag?",
+"de": "Was ist in deinem Rucksack für eine Tageswanderung?",
+"es": "¿Qué llevas en la mochila para una ruta de un día?",
+"fr": "Qu'y a-t-il dans ton sac pour une randonnée à la journée ?",
+"it": "Cosa c'è nel tuo zaino per un'escursione di un giorno?",
+"pt": "O que levas na mochila para uma caminhada de um dia?",
+"pt_BR": "O que vai na sua mochila para uma trilha de um dia?"
+}
+},
+{
+"id": "packing-059",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you protect your electronics from sand, rain or humidity?",
+"de": "Wie schützt du deine Elektronik vor Sand, Regen oder Feuchtigkeit?",
+"es": "¿Cómo proteges tus aparatos de la arena, la lluvia o la humedad?",
+"fr": "Comment protèges-tu tes appareils du sable, de la pluie ou de l'humidité ?",
+"it": "Come proteggi i dispositivi da sabbia, pioggia o umidità?",
+"pt": "Como proteges os teus aparelhos da areia, da chuva ou da humidade?",
+"pt_BR": "Como você protege seus eletrônicos de areia, chuva ou umidade?"
+}
+},
+{
+"id": "packing-060",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you pack for a business trip that ends with a few free days?",
+"de": "Was würdest du für eine Geschäftsreise mit ein paar freien Tagen danach packen?",
+"es": "¿Qué llevarías para un viaje de trabajo que termina con unos días libres?",
+"fr": "Qu'emporterais-tu pour un voyage d'affaires suivi de quelques jours libres ?",
+"it": "Cosa porteresti per un viaggio di lavoro che finisce con qualche giorno libero?",
+"pt": "O que levarias para uma viagem de trabalho que acaba com uns dias livres?",
+"pt_BR": "O que você levaria numa viagem de trabalho que termina com uns dias livres?"
+}
+},
+{
+"id": "packing-061",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you organise luggage when travelling with family or friends?",
+"de": "Wie organisierst du das Gepäck, wenn du mit Familie oder Freunden reist?",
+"es": "¿Cómo organizas el equipaje cuando viajas con familia o amigos?",
+"fr": "Comment organises-tu les bagages quand tu voyages en famille ou entre amis ?",
+"it": "Come organizzi i bagagli quando viaggi con famiglia o amici?",
+"pt": "Como organizas a bagagem quando viajas com família ou amigos?",
+"pt_BR": "Como você organiza a bagagem quando viaja com família ou amigos?"
+}
+},
+{
+"id": "packing-062",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you keep in your carry-on in case your checked bag is delayed?",
+"de": "Was hast du im Handgepäck, falls dein aufgegebener Koffer verspätet ankommt?",
+"es": "¿Qué llevas en el equipaje de mano por si tu maleta facturada se retrasa?",
+"fr": "Que gardes-tu en cabine au cas où ta valise en soute serait retardée ?",
+"it": "Cosa tieni nel bagaglio a mano nel caso la valigia in stiva arrivi in ritardo?",
+"pt": "O que levas na bagagem de mão caso a mala de porão se atrase?",
+"pt_BR": "O que você leva na bagagem de mão caso a mala despachada atrase?"
+}
+},
+{
+"id": "packing-063",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you pack fragile souvenirs to bring them home safely?",
+"de": "Wie packst du zerbrechliche Souvenirs, damit sie heil ankommen?",
+"es": "¿Cómo guardas los recuerdos frágiles para que lleguen enteros a casa?",
+"fr": "Comment emballes-tu les souvenirs fragiles pour les ramener intacts ?",
+"it": "Come imballi i souvenir fragili per portarli a casa sani e salvi?",
+"pt": "Como embalas recordações frágeis para chegarem inteiras a casa?",
+"pt_BR": "Como você embala lembranças frágeis para chegarem inteiras em casa?"
+}
+},
+{
+"id": "packing-064",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you pack for a trip in the rainy season?",
+"de": "Was würdest du für eine Reise in der Regenzeit einpacken?",
+"es": "¿Qué meterías en la maleta para un viaje en temporada de lluvias?",
+"fr": "Qu'emporterais-tu pour un voyage pendant la saison des pluies ?",
+"it": "Cosa porteresti per un viaggio nella stagione delle piogge?",
+"pt": "O que levarias para uma viagem na época das chuvas?",
+"pt_BR": "O que você levaria para uma viagem na época de chuvas?"
+}
+},
+{
+"id": "packing-065",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever packed for a cruise, a ferry trip or a boat holiday?",
+"de": "Hast du schon mal für eine Kreuzfahrt, eine Fähre oder einen Bootsurlaub gepackt?",
+"es": "¿Has hecho alguna vez la maleta para un crucero, un ferri o unas vacaciones en barco?",
+"fr": "As-tu déjà fait tes bagages pour une croisière, un ferry ou des vacances en bateau ?",
+"it": "Hai mai fatto la valigia per una crociera, un traghetto o una vacanza in barca?",
+"pt": "Já fizeste a mala para um cruzeiro, um ferry ou umas férias de barco?",
+"pt_BR": "Você já fez a mala para um cruzeiro, uma balsa ou férias de barco?"
+}
+},
+{
+"id": "packing-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which sports or hobby gear have you ever travelled with?",
+"de": "Mit welcher Sport- oder Hobbyausrüstung bist du schon gereist?",
+"es": "¿Con qué equipo deportivo o de afición has viajado alguna vez?",
+"fr": "Avec quel équipement de sport ou de loisir as-tu déjà voyagé ?",
+"it": "Con quale attrezzatura sportiva o per un hobby hai viaggiato?",
+"pt": "Com que equipamento de desporto ou de passatempo já viajaste?",
+"pt_BR": "Com qual equipamento de esporte ou hobby você já viajou?"
+}
+},
+{
+"id": "packing-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you pack to stay comfortable on an overnight train or bus?",
+"de": "Was packst du ein, um es im Nachtzug oder Nachtbus bequem zu haben?",
+"es": "¿Qué llevas para ir cómodo en un tren o autobús nocturno?",
+"fr": "Qu'emportes-tu pour être à l'aise dans un train ou un bus de nuit ?",
+"it": "Cosa porti per stare comodo su un treno o un pullman notturno?",
+"pt": "O que levas para estares confortável num comboio ou autocarro noturno?",
+"pt_BR": "O que você leva para ficar confortável num trem ou ônibus noturno?"
+}
+},
+{
+"id": "packing-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide what to pack for a hostel stay?",
+"de": "Wie entscheidest du, was du für einen Hostelaufenthalt einpackst?",
+"es": "¿Cómo decides qué llevar para alojarte en un albergue?",
+"fr": "Comment choisis-tu quoi emporter pour un séjour en auberge de jeunesse ?",
+"it": "Come decidi cosa portare per un soggiorno in ostello?",
+"pt": "Como decides o que levar para ficar num hostel?",
+"pt_BR": "Como você decide o que levar para ficar num hostel?"
+}
+},
+{
+"id": "packing-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you pack for a winter trip to see snow?",
+"de": "Was würdest du für eine Winterreise in den Schnee einpacken?",
+"es": "¿Qué llevarías para un viaje de invierno para ver la nieve?",
+"fr": "Qu'emporterais-tu pour un voyage d'hiver à la neige ?",
+"it": "Cosa porteresti per un viaggio invernale sulla neve?",
+"pt": "O que levarias para uma viagem de inverno para ver neve?",
+"pt_BR": "O que você levaria numa viagem de inverno para ver neve?"
+}
+},
+{
+"id": "packing-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you respect local dress customs when you pack?",
+"de": "Wie berücksichtigst du beim Packen die örtlichen Kleidungsgewohnheiten?",
+"es": "¿Cómo tienes en cuenta las costumbres locales de vestimenta al hacer la maleta?",
+"fr": "Comment tiens-tu compte des usages vestimentaires locaux en faisant ta valise ?",
+"it": "Come tieni conto delle usanze locali sull'abbigliamento quando fai la valigia?",
+"pt": "Como tens em conta os costumes locais de vestuário quando fazes a mala?",
+"pt_BR": "Como você leva em conta os costumes locais de roupa ao fazer a mala?"
+}
+},
+{
+"id": "packing-071",
+"lv": "advanced",
+"i18n": {
+"en": "Could you travel for a month with just one bag? What would you take?",
+"de": "Könntest du einen Monat mit nur einer Tasche reisen? Was würdest du mitnehmen?",
+"es": "¿Podrías viajar un mes con una sola bolsa? ¿Qué llevarías?",
+"fr": "Pourrais-tu voyager un mois avec un seul sac ? Qu'emporterais-tu ?",
+"it": "Riusciresti a viaggiare un mese con un solo bagaglio? Cosa porteresti?",
+"pt": "Conseguias viajar um mês só com uma mala? O que levarias?",
+"pt_BR": "Você conseguiria viajar um mês com uma bagagem só? O que levaria?"
+}
+},
+{
+"id": "packing-072",
+"lv": "advanced",
+"i18n": {
+"en": "Which item gives you the most use for its weight?",
+"de": "Welcher Gegenstand bietet dir den größten Nutzen für sein Gewicht?",
+"es": "¿Qué objeto te da más utilidad en relación con su peso?",
+"fr": "Quel objet t'apporte le plus d'utilité par rapport à son poids ?",
+"it": "Quale oggetto ti offre più utilità rispetto al suo peso?",
+"pt": "Que objeto te dá mais utilidade em relação ao peso?",
+"pt_BR": "Qual item te dá mais utilidade em relação ao peso?"
+}
+},
+{
+"id": "packing-073",
+"lv": "advanced",
+"i18n": {
+"en": "How would you plan your packing for a trip around the world?",
+"de": "Wie würdest du das Packen für eine Weltreise planen?",
+"es": "¿Cómo planearías el equipaje para una vuelta al mundo?",
+"fr": "Comment préparerais-tu tes bagages pour un tour du monde ?",
+"it": "Come pianificheresti i bagagli per un giro del mondo?",
+"pt": "Como planearias a bagagem para uma volta ao mundo?",
+"pt_BR": "Como você planejaria a bagagem para uma volta ao mundo?"
+}
+},
+{
+"id": "packing-074",
+"lv": "advanced",
+"i18n": {
+"en": "What would you buy at your destination instead of packing it?",
+"de": "Was würdest du lieber vor Ort kaufen, statt es einzupacken?",
+"es": "¿Qué comprarías en el destino en lugar de llevarlo?",
+"fr": "Qu'achèterais-tu sur place plutôt que de l'emporter ?",
+"it": "Cosa compreresti sul posto invece di portarlo?",
+"pt": "O que comprarias no destino em vez de levar?",
+"pt_BR": "O que você compraria no destino em vez de levar?"
+}
+},
+{
+"id": "packing-075",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance comfort and a light bag?",
+"de": "Wie bringst du Komfort und leichtes Gepäck in Einklang?",
+"es": "¿Cómo equilibras la comodidad y un equipaje ligero?",
+"fr": "Comment trouves-tu l'équilibre entre confort et bagage léger ?",
+"it": "Come bilanci comodità e bagaglio leggero?",
+"pt": "Como equilibras conforto e bagagem leve?",
+"pt_BR": "Como você equilibra conforto e bagagem leve?"
+}
+},
+{
+"id": "packing-076",
+"lv": "advanced",
+"i18n": {
+"en": "What would your packing list for a multi-day trek look like?",
+"de": "Wie sähe deine Packliste für eine mehrtägige Trekkingtour aus?",
+"es": "¿Cómo sería tu lista para un trekking de varios días?",
+"fr": "À quoi ressemblerait ta liste pour un trek de plusieurs jours ?",
+"it": "Come sarebbe la tua lista per un trekking di più giorni?",
+"pt": "Como seria a tua lista para um trekking de vários dias?",
+"pt_BR": "Como seria sua lista para um trekking de vários dias?"
+}
+},
+{
+"id": "packing-077",
+"lv": "advanced",
+"i18n": {
+"en": "Which travel gear have you repaired instead of replacing?",
+"de": "Welche Reiseausrüstung hast du repariert statt ersetzt?",
+"es": "¿Qué equipo de viaje has reparado en lugar de cambiarlo?",
+"fr": "Quel équipement de voyage as-tu réparé au lieu de le remplacer ?",
+"it": "Quale attrezzatura da viaggio hai riparato invece di sostituirla?",
+"pt": "Que equipamento de viagem reparaste em vez de substituir?",
+"pt_BR": "Qual equipamento de viagem você consertou em vez de trocar?"
+}
+},
+{
+"id": "packing-078",
+"lv": "advanced",
+"i18n": {
+"en": "How do you make your packing more sustainable?",
+"de": "Wie machst du dein Packen nachhaltiger?",
+"es": "¿Cómo haces que tu equipaje sea más sostenible?",
+"fr": "Comment rends-tu tes bagages plus durables pour la planète ?",
+"it": "Come rendi il tuo modo di fare la valigia più sostenibile?",
+"pt": "Como tornas a tua bagagem mais sustentável?",
+"pt_BR": "Como você deixa sua bagagem mais sustentável?"
+}
+},
+{
+"id": "packing-079",
+"lv": "advanced",
+"i18n": {
+"en": "What would you pack if you were moving to another country?",
+"de": "Was würdest du einpacken, wenn du in ein anderes Land ziehen würdest?",
+"es": "¿Qué llevarías si te mudaras a otro país?",
+"fr": "Qu'emporterais-tu si tu déménageais dans un autre pays ?",
+"it": "Cosa porteresti se ti trasferissi in un altro paese?",
+"pt": "O que levarias se fosses viver para outro país?",
+"pt_BR": "O que você levaria se fosse morar em outro país?"
+}
+},
+{
+"id": "packing-080",
+"lv": "advanced",
+"i18n": {
+"en": "What does your ideal remote work travel kit include?",
+"de": "Was gehört zu deinem idealen Reiseset fürs Arbeiten unterwegs?",
+"es": "¿Qué incluye tu kit ideal para trabajar en remoto mientras viajas?",
+"fr": "Que contient ton kit idéal pour travailler à distance en voyage ?",
+"it": "Cosa include il tuo kit ideale per lavorare da remoto in viaggio?",
+"pt": "O que inclui o teu kit ideal para trabalhar remotamente em viagem?",
+"pt_BR": "O que inclui seu kit ideal para trabalhar remoto viajando?"
+}
+},
+{
+"id": "packing-081",
+"lv": "advanced",
+"i18n": {
+"en": "How do you decide when an item is 'just in case' and should stay home?",
+"de": "Woran merkst du, dass etwas nur für den Fall der Fälle ist und zu Hause bleiben sollte?",
+"es": "¿Cómo decides que algo es solo 'por si acaso' y debe quedarse en casa?",
+"fr": "Comment décides-tu qu'un objet est juste « au cas où » et doit rester à la maison ?",
+"it": "Come capisci che un oggetto è solo 'per sicurezza' e deve restare a casa?",
+"pt": "Como decides que algo é só 'para o caso de' e deve ficar em casa?",
+"pt_BR": "Como você decide que algo é só 'por via das dúvidas' e deve ficar em casa?"
+}
+},
+{
+"id": "packing-082",
+"lv": "advanced",
+"i18n": {
+"en": "What would you pack for a trip to a very remote place with few shops?",
+"de": "Was würdest du für eine Reise an einen sehr abgelegenen Ort mit wenigen Läden einpacken?",
+"es": "¿Qué llevarías a un lugar muy remoto con pocas tiendas?",
+"fr": "Qu'emporterais-tu pour un endroit très isolé avec peu de magasins ?",
+"it": "Cosa porteresti in un posto molto remoto con pochi negozi?",
+"pt": "O que levarias para um sítio muito remoto com poucas lojas?",
+"pt_BR": "O que você levaria para um lugar bem remoto com poucas lojas?"
+}
+},
+{
+"id": "packing-083",
+"lv": "advanced",
+"i18n": {
+"en": "How has your way of packing changed over the years?",
+"de": "Wie hat sich deine Art zu packen im Lauf der Jahre verändert?",
+"es": "¿Cómo ha cambiado tu forma de hacer la maleta con los años?",
+"fr": "Comment ta façon de faire ta valise a-t-elle évolué avec les années ?",
+"it": "Com'è cambiato il tuo modo di fare la valigia negli anni?",
+"pt": "Como mudou a tua forma de fazer a mala ao longo dos anos?",
+"pt_BR": "Como seu jeito de fazer a mala mudou ao longo dos anos?"
+}
+},
+{
+"id": "packing-084",
+"lv": "advanced",
+"i18n": {
+"en": "Which gear would you invest in, and where would you save money?",
+"de": "In welche Ausrüstung würdest du investieren und wo würdest du sparen?",
+"es": "¿En qué equipo invertirías y en qué ahorrarías?",
+"fr": "Dans quel équipement investirais-tu, et sur quoi économiserais-tu ?",
+"it": "In quale attrezzatura investiresti e dove risparmieresti?",
+"pt": "Em que equipamento investirias e onde pouparias?",
+"pt_BR": "Em qual equipamento você investiria e onde economizaria?"
+}
+},
+{
+"id": "packing-085",
+"lv": "advanced",
+"i18n": {
+"en": "If you wrote a packing guide, what would its first rule be?",
+"de": "Wenn du einen Packratgeber schreiben würdest, wie lautete die erste Regel?",
+"es": "Si escribieras una guía para hacer la maleta, ¿cuál sería la primera regla?",
+"fr": "Si tu écrivais un guide pour faire sa valise, quelle serait la première règle ?",
+"it": "Se scrivessi una guida per fare la valigia, quale sarebbe la prima regola?",
+"pt": "Se escrevesses um guia para fazer a mala, qual seria a primeira regra?",
+"pt_BR": "Se você escrevesse um guia de como fazer a mala, qual seria a primeira regra?"
+}
+},
+{
+"id": "packing-086",
+"lv": "any",
+"i18n": {
+"en": "What does a perfectly packed bag look like to you?",
+"de": "Wie sieht für dich eine perfekt gepackte Tasche aus?",
+"es": "¿Cómo es para ti una maleta perfectamente hecha?",
+"fr": "À quoi ressemble pour toi un sac parfaitement fait ?",
+"it": "Com'è per te una valigia fatta alla perfezione?",
+"pt": "Como é para ti uma mala perfeitamente feita?",
+"pt_BR": "Como é, para você, uma mala perfeitamente arrumada?"
+}
+},
+{
+"id": "packing-087",
+"lv": "any",
+"i18n": {
+"en": "Which trip would you love to pack for next?",
+"de": "Für welche Reise würdest du als Nächstes gern packen?",
+"es": "¿Para qué viaje te encantaría hacer la maleta la próxima vez?",
+"fr": "Pour quel voyage aimerais-tu faire ta prochaine valise ?",
+"it": "Per quale viaggio ti piacerebbe fare la prossima valigia?",
+"pt": "Para que viagem adorarias fazer a próxima mala?",
+"pt_BR": "Para qual viagem você adoraria fazer a próxima mala?"
+}
+},
+{
+"id": "packing-088",
+"lv": "any",
+"i18n": {
+"en": "Do you unpack right away when you arrive, or live out of your bag?",
+"de": "Packst du bei der Ankunft sofort aus oder lebst du aus der Tasche?",
+"es": "¿Deshaces la maleta nada más llegar o vives sacando cosas de ella?",
+"fr": "Défais-tu ta valise dès l'arrivée ou vis-tu dans ton sac ?",
+"it": "Disfi la valigia appena arrivi o vivi tirando fuori le cose al momento?",
+"pt": "Desfazes a mala logo que chegas ou vais tirando as coisas lá de dentro?",
+"pt_BR": "Você desfaz a mala assim que chega ou vai tirando as coisas dela?"
+}
+},
+{
+"id": "packing-089",
+"lv": "any",
+"i18n": {
+"en": "What is the lightest you have ever travelled?",
+"de": "Mit wie wenig Gepäck bist du jemals gereist?",
+"es": "¿Cuál ha sido el viaje en el que llevaste menos equipaje?",
+"fr": "Quel est le voyage où tu as été le plus léger ?",
+"it": "Qual è il viaggio in cui hai portato meno bagaglio?",
+"pt": "Qual foi a viagem em que levaste menos bagagem?",
+"pt_BR": "Qual foi a viagem em que você levou menos bagagem?"
+}
+},
+{
+"id": "packing-090",
+"lv": "any",
+"i18n": {
+"en": "What is a packing habit you would like to change?",
+"de": "Welche Packgewohnheit würdest du gern ändern?",
+"es": "¿Qué costumbre al hacer la maleta te gustaría cambiar?",
+"fr": "Quelle habitude de valise aimerais-tu changer ?",
+"it": "Quale abitudine nel fare la valigia vorresti cambiare?",
+"pt": "Que hábito ao fazer a mala gostarias de mudar?",
+"pt_BR": "Qual hábito ao fazer a mala você gostaria de mudar?"
+}
+},
+{
+"id": "packing-091",
+"lv": "any",
+"i18n": {
+"en": "Do you bring something from home to feel cosy while away?",
+"de": "Nimmst du etwas von zu Hause mit, um dich unterwegs wohlzufühlen?",
+"es": "¿Llevas algo de casa para sentirte a gusto fuera?",
+"fr": "Emportes-tu quelque chose de chez toi pour te sentir bien ailleurs ?",
+"it": "Porti qualcosa da casa per sentirti a tuo agio lontano?",
+"pt": "Levas alguma coisa de casa para te sentires aconchegado fora?",
+"pt_BR": "Você leva algo de casa para se sentir aconchegado fora?"
+}
+},
+{
+"id": "packing-092",
+"lv": "any",
+"i18n": {
+"en": "What gift do you like to bring when visiting someone abroad?",
+"de": "Welches Geschenk bringst du gern mit, wenn du jemanden im Ausland besuchst?",
+"es": "¿Qué regalo te gusta llevar cuando visitas a alguien en otro país?",
+"fr": "Quel cadeau aimes-tu apporter quand tu rends visite à quelqu'un à l'étranger ?",
+"it": "Che regalo ti piace portare quando visiti qualcuno all'estero?",
+"pt": "Que presente gostas de levar quando visitas alguém no estrangeiro?",
+"pt_BR": "Que presente você gosta de levar quando visita alguém no exterior?"
+}
+},
+{
+"id": "packing-093",
+"lv": "any",
+"i18n": {
+"en": "How do you pack differently in summer and in winter?",
+"de": "Wie packst du im Sommer anders als im Winter?",
+"es": "¿Cómo cambia tu maleta en verano y en invierno?",
+"fr": "En quoi ta valise d'été diffère-t-elle de ta valise d'hiver ?",
+"it": "In cosa cambia la tua valigia d'estate e d'inverno?",
+"pt": "Como muda a tua mala no verão e no inverno?",
+"pt_BR": "Como sua mala muda no verão e no inverno?"
+}
+},
+{
+"id": "packing-094",
+"lv": "any",
+"i18n": {
+"en": "Is there an item you packed for years but never used?",
+"de": "Gibt es etwas, das du jahrelang eingepackt, aber nie benutzt hast?",
+"es": "¿Hay algo que llevaste durante años y nunca usaste?",
+"fr": "Y a-t-il un objet que tu as emporté pendant des années sans jamais t'en servir ?",
+"it": "C'è qualcosa che hai portato per anni senza mai usarlo?",
+"pt": "Há alguma coisa que levaste durante anos e nunca usaste?",
+"pt_BR": "Tem algo que você levou por anos e nunca usou?"
+}
+},
+{
+"id": "packing-095",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite packing tip from another traveller?",
+"de": "Was ist dein liebster Packtipp von einem anderen Reisenden?",
+"es": "¿Cuál es tu truco favorito que te dio otro viajero?",
+"fr": "Quelle est ta meilleure astuce de valise apprise d'un autre voyageur ?",
+"it": "Qual è il consiglio sulla valigia più bello che ti ha dato un altro viaggiatore?",
+"pt": "Qual é a tua dica preferida de outro viajante para fazer a mala?",
+"pt_BR": "Qual é sua dica favorita de outro viajante para fazer a mala?"
+}
+},
+{
+"id": "packing-096",
+"lv": "any",
+"i18n": {
+"en": "Do you pack your bag alone or with someone's help?",
+"de": "Packst du allein oder mit Hilfe von jemandem?",
+"es": "¿Haces la maleta solo o con ayuda de alguien?",
+"fr": "Fais-tu ta valise seul ou avec l'aide de quelqu'un ?",
+"it": "Fai la valigia da solo o con l'aiuto di qualcuno?",
+"pt": "Fazes a mala sozinho ou com a ajuda de alguém?",
+"pt_BR": "Você faz a mala sozinho ou com a ajuda de alguém?"
+}
+},
+{
+"id": "packing-097",
+"lv": "any",
+"i18n": {
+"en": "How would you pack for a surprise trip with only one hour's notice?",
+"de": "Wie würdest du für eine Überraschungsreise mit nur einer Stunde Vorlauf packen?",
+"es": "¿Cómo harías la maleta para un viaje sorpresa con solo una hora de aviso?",
+"fr": "Comment ferais-tu ta valise pour un voyage surprise annoncé une heure avant ?",
+"it": "Come faresti la valigia per un viaggio a sorpresa con solo un'ora di preavviso?",
+"pt": "Como farias a mala para uma viagem surpresa com apenas uma hora de aviso?",
+"pt_BR": "Como você faria a mala para uma viagem surpresa com só uma hora de aviso?"
+}
+},
+{
+"id": "packing-098",
+"lv": "any",
+"i18n": {
+"en": "What does packing light mean to you?",
+"de": "Was bedeutet leichtes Reisegepäck für dich?",
+"es": "¿Qué significa para ti viajar ligero?",
+"fr": "Que signifie voyager léger pour toi ?",
+"it": "Che cosa significa per te viaggiare leggero?",
+"pt": "O que significa para ti viajar leve?",
+"pt_BR": "O que significa para você viajar leve?"
+}
+},
+{
+"id": "packing-099",
+"lv": "any",
+"i18n": {
+"en": "What would be inside your always-ready travel kit?",
+"de": "Was wäre in deinem Reiseset, das immer bereitliegt?",
+"es": "¿Qué habría en tu kit de viaje siempre listo?",
+"fr": "Que contiendrait ta trousse de voyage toujours prête ?",
+"it": "Cosa ci sarebbe nel tuo kit da viaggio sempre pronto?",
+"pt": "O que haveria no teu kit de viagem sempre pronto?",
+"pt_BR": "O que teria no seu kit de viagem sempre pronto?"
+}
+},
+{
+"id": "packing-100",
+"lv": "any",
+"i18n": {
+"en": "Which trip taught you the most about packing?",
+"de": "Welche Reise hat dir am meisten übers Packen beigebracht?",
+"es": "¿Qué viaje te enseñó más sobre cómo hacer la maleta?",
+"fr": "Quel voyage t'a le plus appris sur l'art de faire ta valise ?",
+"it": "Quale viaggio ti ha insegnato di più su come fare la valigia?",
+"pt": "Que viagem te ensinou mais sobre fazer a mala?",
+"pt_BR": "Qual viagem mais te ensinou a fazer a mala?"
+}
+}
+]
+}

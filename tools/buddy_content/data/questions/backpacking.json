@@ -1,0 +1,1305 @@
+{
+"topic": "backpacking",
+"questions": [
+{
+"id": "backpacking-001",
+"lv": "any",
+"i18n": {
+"en": "What made you curious about backpacking?",
+"de": "Was hat deine Neugier aufs Backpacking geweckt?",
+"es": "¿Qué despertó tu curiosidad por viajar de mochilero?",
+"fr": "Qu'est-ce qui t'a donné envie de voyager sac au dos ?",
+"it": "Cosa ti ha incuriosito del viaggiare zaino in spalla?",
+"pt": "O que despertou a tua curiosidade por viajar de mochila às costas?",
+"pt_BR": "O que despertou sua curiosidade pelo mochilão?"
+}
+},
+{
+"id": "backpacking-002",
+"lv": "any",
+"i18n": {
+"en": "Where in the world would you most love to go with just a backpack?",
+"de": "Wohin auf der Welt würdest du am liebsten nur mit einem Rucksack reisen?",
+"es": "¿A qué lugar del mundo te encantaría ir solo con una mochila?",
+"fr": "Où dans le monde aimerais-tu le plus aller avec juste un sac à dos ?",
+"it": "In quale posto del mondo ti piacerebbe di più andare solo con uno zaino?",
+"pt": "Para onde no mundo mais gostavas de ir só com uma mochila?",
+"pt_BR": "Pra onde no mundo você mais gostaria de ir só com uma mochila?"
+}
+},
+{
+"id": "backpacking-003",
+"lv": "any",
+"i18n": {
+"en": "Who would be your ideal companion on a backpacking trip?",
+"de": "Wer wäre dein idealer Reisepartner für einen Backpacking-Trip?",
+"es": "¿Quién sería tu compañero ideal para un viaje de mochilero?",
+"fr": "Qui serait ton compagnon idéal pour un voyage sac au dos ?",
+"it": "Chi sarebbe il tuo compagno ideale per un viaggio zaino in spalla?",
+"pt": "Quem seria o teu companheiro ideal para uma viagem de mochila às costas?",
+"pt_BR": "Quem seria sua companhia ideal num mochilão?"
+}
+},
+{
+"id": "backpacking-004",
+"lv": "any",
+"i18n": {
+"en": "What's the first thing you'd put in your backpack?",
+"de": "Was würdest du als Erstes in deinen Rucksack packen?",
+"es": "¿Qué es lo primero que meterías en tu mochila?",
+"fr": "Quelle est la première chose que tu mettrais dans ton sac à dos ?",
+"it": "Qual è la prima cosa che metteresti nello zaino?",
+"pt": "Qual é a primeira coisa que metias na mochila?",
+"pt_BR": "Qual é a primeira coisa que você colocaria na mochila?"
+}
+},
+{
+"id": "backpacking-005",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer a fixed route or wandering wherever the road takes you?",
+"de": "Hast du lieber eine feste Route oder lässt du dich einfach treiben?",
+"es": "¿Prefieres una ruta fija o ir adonde te lleve el camino?",
+"fr": "Tu préfères un itinéraire fixe ou te laisser porter par la route ?",
+"it": "Preferisci un itinerario fisso o andare dove ti porta la strada?",
+"pt": "Preferes uma rota fixa ou ir para onde o caminho te levar?",
+"pt_BR": "Você prefere um roteiro fixo ou ir pra onde a estrada te levar?"
+}
+},
+{
+"id": "backpacking-006",
+"lv": "any",
+"i18n": {
+"en": "What does travelling light mean to you?",
+"de": "Was bedeutet leichtes Reisen für dich?",
+"es": "¿Qué significa para ti viajar ligero?",
+"fr": "Que signifie pour toi voyager léger ?",
+"it": "Che cosa significa per te viaggiare leggero?",
+"pt": "O que significa para ti viajar leve?",
+"pt_BR": "O que significa pra você viajar leve?"
+}
+},
+{
+"id": "backpacking-007",
+"lv": "any",
+"i18n": {
+"en": "Which backpacker route have you always dreamed about?",
+"de": "Von welcher Backpacker-Route träumst du schon lange?",
+"es": "¿Con qué ruta mochilera has soñado siempre?",
+"fr": "De quel itinéraire de routard as-tu toujours rêvé ?",
+"it": "Quale itinerario da backpacker sogni da sempre?",
+"pt": "Com que rota mochileira sempre sonhaste?",
+"pt_BR": "Com qual rota de mochileiro você sempre sonhou?"
+}
+},
+{
+"id": "backpacking-008",
+"lv": "any",
+"i18n": {
+"en": "Would you rather explore busy cities or quiet nature on a backpacking trip?",
+"de": "Erkundest du auf Rucksackreisen lieber lebhafte Städte oder ruhige Natur?",
+"es": "En un viaje de mochilero, ¿prefieres ciudades animadas o naturaleza tranquila?",
+"fr": "En voyage sac au dos, tu préfères les villes animées ou la nature paisible ?",
+"it": "In un viaggio zaino in spalla preferisci città vivaci o natura tranquilla?",
+"pt": "Numa viagem de mochila, preferes cidades movimentadas ou natureza tranquila?",
+"pt_BR": "Num mochilão, você prefere cidades agitadas ou natureza tranquila?"
+}
+},
+{
+"id": "backpacking-009",
+"lv": "any",
+"i18n": {
+"en": "What's the best travel story you've ever heard from another traveller?",
+"de": "Was ist die beste Reisegeschichte, die dir je ein anderer Reisender erzählt hat?",
+"es": "¿Cuál es la mejor historia de viaje que te ha contado otro viajero?",
+"fr": "Quelle est la meilleure histoire de voyage qu'un autre voyageur t'ait racontée ?",
+"it": "Qual è la storia di viaggio più bella che ti abbia raccontato un altro viaggiatore?",
+"pt": "Qual foi a melhor história de viagem que outro viajante te contou?",
+"pt_BR": "Qual foi a melhor história de viagem que outro viajante já te contou?"
+}
+},
+{
+"id": "backpacking-010",
+"lv": "any",
+"i18n": {
+"en": "Which country do you think is perfect for first-time backpackers?",
+"de": "Welches Land ist deiner Meinung nach perfekt für Backpacking-Anfänger?",
+"es": "¿Qué país crees que es perfecto para mochileros primerizos?",
+"fr": "Quel pays te semble parfait pour un premier voyage sac au dos ?",
+"it": "Quale paese pensi sia perfetto per chi fa il primo viaggio zaino in spalla?",
+"pt": "Que país achas perfeito para quem viaja de mochila pela primeira vez?",
+"pt_BR": "Qual país você acha perfeito para quem vai fazer o primeiro mochilão?"
+}
+},
+{
+"id": "backpacking-011",
+"lv": "any",
+"i18n": {
+"en": "How do you like to spend a lazy day on the road?",
+"de": "Wie verbringst du auf Reisen am liebsten einen faulen Tag?",
+"es": "¿Cómo te gusta pasar un día tranquilo cuando estás de viaje?",
+"fr": "Comment aimes-tu passer une journée tranquille en voyage ?",
+"it": "Come ti piace passare una giornata pigra in viaggio?",
+"pt": "Como gostas de passar um dia descontraído na estrada?",
+"pt_BR": "Como você gosta de passar um dia de preguiça na estrada?"
+}
+},
+{
+"id": "backpacking-012",
+"lv": "any",
+"i18n": {
+"en": "What kind of people do you enjoy meeting when you travel?",
+"de": "Welche Menschen lernst du auf Reisen besonders gern kennen?",
+"es": "¿Qué tipo de gente te gusta conocer cuando viajas?",
+"fr": "Quel genre de personnes aimes-tu rencontrer en voyage ?",
+"it": "Che tipo di persone ti piace conoscere quando viaggi?",
+"pt": "Que tipo de pessoas gostas de conhecer quando viajas?",
+"pt_BR": "Que tipo de gente você gosta de conhecer quando viaja?"
+}
+},
+{
+"id": "backpacking-013",
+"lv": "any",
+"i18n": {
+"en": "What do you like about hostels, or what makes you curious about them?",
+"de": "Was magst du an Hostels oder was macht dich neugierig auf sie?",
+"es": "¿Qué te gusta de los hostels o qué te da curiosidad de ellos?",
+"fr": "Qu'est-ce qui te plaît dans les auberges de jeunesse, ou qui t'intrigue ?",
+"it": "Cosa ti piace degli ostelli, o cosa ti incuriosisce?",
+"pt": "O que gostas nos hostels, ou o que te deixa curioso sobre eles?",
+"pt_BR": "O que você curte nos hostels, ou o que te deixa curioso sobre eles?"
+}
+},
+{
+"id": "backpacking-014",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer long train rides, bus journeys or ferries? Why?",
+"de": "Magst du lieber lange Zugfahrten, Busreisen oder Fähren? Warum?",
+"es": "¿Prefieres los viajes largos en tren, en autobús o en ferri? ¿Por qué?",
+"fr": "Tu préfères les longs trajets en train, en bus ou en ferry ? Pourquoi ?",
+"it": "Preferisci i lunghi viaggi in treno, in autobus o in traghetto? Perché?",
+"pt": "Preferes viagens longas de comboio, de autocarro ou de ferry? Porquê?",
+"pt_BR": "Você prefere viagens longas de trem, de ônibus ou de balsa? Por quê?"
+}
+},
+{
+"id": "backpacking-015",
+"lv": "any",
+"i18n": {
+"en": "What's a skill you think every backpacker should have?",
+"de": "Welche Fähigkeit sollte deiner Meinung nach jeder Backpacker haben?",
+"es": "¿Qué habilidad crees que debería tener todo mochilero?",
+"fr": "Quelle compétence chaque routard devrait-il avoir, selon toi ?",
+"it": "Quale abilità pensi che ogni backpacker dovrebbe avere?",
+"pt": "Que competência achas que todos os mochileiros deviam ter?",
+"pt_BR": "Qual habilidade você acha que todo mochileiro deveria ter?"
+}
+},
+{
+"id": "backpacking-016",
+"lv": "any",
+"i18n": {
+"en": "Which landscape would you love to hike through someday?",
+"de": "Durch welche Landschaft würdest du gern einmal wandern?",
+"es": "¿Por qué paisaje te encantaría caminar algún día?",
+"fr": "Quel paysage aimerais-tu traverser à pied un jour ?",
+"it": "Quale paesaggio ti piacerebbe attraversare a piedi un giorno?",
+"pt": "Que paisagem adorarias percorrer a pé um dia?",
+"pt_BR": "Por qual paisagem você adoraria fazer uma trilha um dia?"
+}
+},
+{
+"id": "backpacking-017",
+"lv": "any",
+"i18n": {
+"en": "What's the most spontaneous thing you've ever done while travelling?",
+"de": "Was war das Spontanste, das du je auf Reisen gemacht hast?",
+"es": "¿Qué es lo más espontáneo que has hecho estando de viaje?",
+"fr": "Quelle est la chose la plus spontanée que tu aies faite en voyage ?",
+"it": "Qual è la cosa più spontanea che hai fatto in viaggio?",
+"pt": "Qual foi a coisa mais espontânea que já fizeste em viagem?",
+"pt_BR": "Qual foi a coisa mais espontânea que você já fez viajando?"
+}
+},
+{
+"id": "backpacking-018",
+"lv": "any",
+"i18n": {
+"en": "Which dish would you love to try in its home country?",
+"de": "Welches Gericht würdest du gern in seinem Ursprungsland probieren?",
+"es": "¿Qué plato te encantaría probar en su país de origen?",
+"fr": "Quel plat aimerais-tu goûter dans son pays d'origine ?",
+"it": "Quale piatto ti piacerebbe assaggiare nel suo paese d'origine?",
+"pt": "Que prato adorarias provar no seu país de origem?",
+"pt_BR": "Qual prato você adoraria provar no país de origem?"
+}
+},
+{
+"id": "backpacking-019",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about sharing a room with other travellers?",
+"de": "Wie findest du es, ein Zimmer mit anderen Reisenden zu teilen?",
+"es": "¿Qué te parece compartir habitación con otros viajeros?",
+"fr": "Que penses-tu de partager une chambre avec d'autres voyageurs ?",
+"it": "Cosa pensi di condividere la stanza con altri viaggiatori?",
+"pt": "O que achas de partilhar o quarto com outros viajantes?",
+"pt_BR": "O que você acha de dividir o quarto com outros viajantes?"
+}
+},
+{
+"id": "backpacking-020",
+"lv": "any",
+"i18n": {
+"en": "What does freedom mean to you when you travel?",
+"de": "Was bedeutet Freiheit für dich auf Reisen?",
+"es": "¿Qué significa para ti la libertad cuando viajas?",
+"fr": "Que signifie la liberté pour toi quand tu voyages ?",
+"it": "Che cosa significa per te la libertà quando viaggi?",
+"pt": "O que significa para ti a liberdade quando viajas?",
+"pt_BR": "O que liberdade significa pra você quando viaja?"
+}
+},
+{
+"id": "backpacking-021",
+"lv": "any",
+"i18n": {
+"en": "Which small item has saved the day for you on a trip?",
+"de": "Welcher kleine Gegenstand hat dich auf einer Reise schon mal gerettet?",
+"es": "¿Qué objeto pequeño te ha salvado el día en algún viaje?",
+"fr": "Quel petit objet t'a déjà sauvé la mise en voyage ?",
+"it": "Quale piccolo oggetto ti ha salvato la giornata in un viaggio?",
+"pt": "Que pequeno objeto já te salvou o dia numa viagem?",
+"pt_BR": "Qual objeto pequeno já salvou seu dia numa viagem?"
+}
+},
+{
+"id": "backpacking-022",
+"lv": "any",
+"i18n": {
+"en": "Do you like sharing your adventures online or keeping them private?",
+"de": "Teilst du deine Abenteuer gern online oder behältst du sie lieber für dich?",
+"es": "¿Te gusta compartir tus aventuras en internet o prefieres guardarlas para ti?",
+"fr": "Tu aimes partager tes aventures en ligne ou tu préfères les garder pour toi ?",
+"it": "Ti piace condividere le tue avventure online o preferisci tenerle per te?",
+"pt": "Gostas de partilhar as tuas aventuras online ou preferes guardá-las para ti?",
+"pt_BR": "Você gosta de compartilhar suas aventuras na internet ou prefere guardar pra você?"
+}
+},
+{
+"id": "backpacking-023",
+"lv": "any",
+"i18n": {
+"en": "What's a place you visited that felt completely different from home?",
+"de": "Welcher Ort, den du besucht hast, war ganz anders als dein Zuhause?",
+"es": "¿Qué lugar que has visitado te pareció totalmente distinto a tu casa?",
+"fr": "Quel endroit visité t'a semblé complètement différent de chez toi ?",
+"it": "Quale posto che hai visitato ti è sembrato completamente diverso da casa?",
+"pt": "Que sítio que visitaste te pareceu completamente diferente de casa?",
+"pt_BR": "Qual lugar que você visitou pareceu totalmente diferente de casa?"
+}
+},
+{
+"id": "backpacking-024",
+"lv": "any",
+"i18n": {
+"en": "What would you love to learn from people in other cultures?",
+"de": "Was würdest du gern von Menschen aus anderen Kulturen lernen?",
+"es": "¿Qué te encantaría aprender de personas de otras culturas?",
+"fr": "Qu'aimerais-tu apprendre des personnes d'autres cultures ?",
+"it": "Cosa ti piacerebbe imparare dalle persone di altre culture?",
+"pt": "O que adorarias aprender com pessoas de outras culturas?",
+"pt_BR": "O que você adoraria aprender com pessoas de outras culturas?"
+}
+},
+{
+"id": "backpacking-025",
+"lv": "any",
+"i18n": {
+"en": "How do you usually choose where to go next?",
+"de": "Wie entscheidest du normalerweise, wohin es als Nächstes geht?",
+"es": "¿Cómo sueles elegir tu próximo destino?",
+"fr": "Comment choisis-tu en général ta prochaine destination ?",
+"it": "Come scegli di solito la tua prossima meta?",
+"pt": "Como costumas escolher o teu próximo destino?",
+"pt_BR": "Como você costuma escolher o próximo destino?"
+}
+},
+{
+"id": "backpacking-026",
+"lv": "any",
+"i18n": {
+"en": "What music would be the soundtrack of your backpacking trip?",
+"de": "Welche Musik wäre der Soundtrack deiner Rucksackreise?",
+"es": "¿Qué música sería la banda sonora de tu viaje de mochilero?",
+"fr": "Quelle musique serait la bande-son de ton voyage sac au dos ?",
+"it": "Quale musica sarebbe la colonna sonora del tuo viaggio zaino in spalla?",
+"pt": "Que música seria a banda sonora da tua viagem de mochila?",
+"pt_BR": "Que música seria a trilha sonora do seu mochilão?"
+}
+},
+{
+"id": "backpacking-027",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer sunrise hikes or sunset walks?",
+"de": "Magst du lieber Wanderungen zum Sonnenaufgang oder Spaziergänge bei Sonnenuntergang?",
+"es": "¿Prefieres caminatas al amanecer o paseos al atardecer?",
+"fr": "Tu préfères les randonnées au lever du soleil ou les balades au coucher ?",
+"it": "Preferisci le escursioni all'alba o le passeggiate al tramonto?",
+"pt": "Preferes caminhadas ao nascer do sol ou passeios ao pôr do sol?",
+"pt_BR": "Você prefere trilhas ao nascer do sol ou passeios no pôr do sol?"
+}
+},
+{
+"id": "backpacking-028",
+"lv": "any",
+"i18n": {
+"en": "Which travel book, film or show inspired you to explore?",
+"de": "Welches Reisebuch, welcher Film oder welche Serie hat dich zum Entdecken inspiriert?",
+"es": "¿Qué libro, película o serie de viajes te inspiró a explorar?",
+"fr": "Quel livre, film ou série de voyage t'a donné envie d'explorer ?",
+"it": "Quale libro, film o serie di viaggio ti ha ispirato a esplorare?",
+"pt": "Que livro, filme ou série de viagens te inspirou a explorar?",
+"pt_BR": "Qual livro, filme ou série de viagem te inspirou a explorar?"
+}
+},
+{
+"id": "backpacking-029",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite way to make new friends on the road?",
+"de": "Wie findest du unterwegs am liebsten neue Freunde?",
+"es": "¿Cuál es tu forma favorita de hacer amigos durante un viaje?",
+"fr": "Quelle est ta façon préférée de te faire des amis en route ?",
+"it": "Qual è il tuo modo preferito di fare nuove amicizie in viaggio?",
+"pt": "Qual é a tua forma preferida de fazer amigos na estrada?",
+"pt_BR": "Qual é o seu jeito favorito de fazer amigos na estrada?"
+}
+},
+{
+"id": "backpacking-030",
+"lv": "any",
+"i18n": {
+"en": "Would you rather go island hopping or explore mountain villages?",
+"de": "Würdest du lieber von Insel zu Insel reisen oder Bergdörfer erkunden?",
+"es": "¿Preferirías saltar de isla en isla o explorar pueblos de montaña?",
+"fr": "Tu préférerais sauter d'île en île ou explorer des villages de montagne ?",
+"it": "Preferiresti saltare da un'isola all'altra o esplorare villaggi di montagna?",
+"pt": "Preferias andar de ilha em ilha ou explorar aldeias de montanha?",
+"pt_BR": "Você preferiria pular de ilha em ilha ou explorar vilarejos nas montanhas?"
+}
+},
+{
+"id": "backpacking-031",
+"lv": "any",
+"i18n": {
+"en": "How many countries would you like to visit on one trip?",
+"de": "Wie viele Länder würdest du gern auf einer einzigen Reise besuchen?",
+"es": "¿Cuántos países te gustaría visitar en un solo viaje?",
+"fr": "Combien de pays aimerais-tu visiter en un seul voyage ?",
+"it": "Quanti paesi ti piacerebbe visitare in un solo viaggio?",
+"pt": "Quantos países gostavas de visitar numa só viagem?",
+"pt_BR": "Quantos países você gostaria de visitar numa única viagem?"
+}
+},
+{
+"id": "backpacking-032",
+"lv": "any",
+"i18n": {
+"en": "What do you think is the hardest part of backpacking?",
+"de": "Was ist deiner Meinung nach das Schwierigste am Backpacking?",
+"es": "¿Qué crees que es lo más difícil de viajar de mochilero?",
+"fr": "Selon toi, quelle est la partie la plus difficile du voyage sac au dos ?",
+"it": "Secondo te qual è la parte più difficile del viaggiare zaino in spalla?",
+"pt": "Qual achas que é a parte mais difícil de viajar de mochila às costas?",
+"pt_BR": "O que você acha que é a parte mais difícil de um mochilão?"
+}
+},
+{
+"id": "backpacking-033",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite thing to do on a long journey?",
+"de": "Was machst du auf langen Fahrten am liebsten?",
+"es": "¿Qué es lo que más te gusta hacer en un trayecto largo?",
+"fr": "Qu'aimes-tu le plus faire pendant un long trajet ?",
+"it": "Cosa ti piace di più fare durante un lungo tragitto?",
+"pt": "O que mais gostas de fazer numa viagem longa?",
+"pt_BR": "O que você mais gosta de fazer numa viagem longa?"
+}
+},
+{
+"id": "backpacking-034",
+"lv": "any",
+"i18n": {
+"en": "How do you stay organised when you travel?",
+"de": "Wie bleibst du auf Reisen organisiert?",
+"es": "¿Cómo te mantienes organizado cuando viajas?",
+"fr": "Comment restes-tu organisé quand tu voyages ?",
+"it": "Come resti organizzato quando viaggi?",
+"pt": "Como te manténs organizado quando viajas?",
+"pt_BR": "Como você se mantém organizado quando viaja?"
+}
+},
+{
+"id": "backpacking-035",
+"lv": "any",
+"i18n": {
+"en": "Which local tradition would you love to experience as a guest?",
+"de": "Welche lokale Tradition würdest du gern einmal als Gast miterleben?",
+"es": "¿Qué tradición local te encantaría vivir como invitado?",
+"fr": "Quelle tradition locale aimerais-tu vivre en tant qu'invité ?",
+"it": "Quale tradizione locale ti piacerebbe vivere da ospite?",
+"pt": "Que tradição local adorarias viver como convidado?",
+"pt_BR": "Qual tradição local você adoraria viver como convidado?"
+}
+},
+{
+"id": "backpacking-036",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite kind of weather for exploring?",
+"de": "Bei welchem Wetter bist du am liebsten auf Entdeckungstour?",
+"es": "¿Cuál es tu clima favorito para explorar?",
+"fr": "Quel temps préfères-tu pour partir explorer ?",
+"it": "Qual è il tuo tempo preferito per andare in esplorazione?",
+"pt": "Qual é o teu tempo preferido para explorar?",
+"pt_BR": "Qual é o seu clima favorito para explorar?"
+}
+},
+{
+"id": "backpacking-037",
+"lv": "any",
+"i18n": {
+"en": "What do you miss most from home when you travel?",
+"de": "Was vermisst du auf Reisen am meisten von zu Hause?",
+"es": "¿Qué es lo que más echas de menos de casa cuando viajas?",
+"fr": "Qu'est-ce qui te manque le plus de chez toi quand tu voyages ?",
+"it": "Cosa ti manca di più di casa quando viaggi?",
+"pt": "Do que sentes mais falta de casa quando viajas?",
+"pt_BR": "Do que você mais sente falta de casa quando viaja?"
+}
+},
+{
+"id": "backpacking-038",
+"lv": "any",
+"i18n": {
+"en": "Which lesser-known place would you love to explore?",
+"de": "Welchen weniger bekannten Ort würdest du gern erkunden?",
+"es": "¿Qué lugar poco conocido te encantaría explorar?",
+"fr": "Quel endroit méconnu aimerais-tu explorer ?",
+"it": "Quale posto poco conosciuto ti piacerebbe esplorare?",
+"pt": "Que sítio pouco conhecido adorarias explorar?",
+"pt_BR": "Qual lugar pouco conhecido você adoraria explorar?"
+}
+},
+{
+"id": "backpacking-039",
+"lv": "any",
+"i18n": {
+"en": "What's one thing travel has taught you that school didn't?",
+"de": "Was hat dir das Reisen beigebracht, was du in der Schule nicht gelernt hast?",
+"es": "¿Qué te ha enseñado viajar que no aprendiste en la escuela?",
+"fr": "Qu'est-ce que le voyage t'a appris que l'école ne t'a pas appris ?",
+"it": "Cosa ti ha insegnato il viaggio che la scuola non ti ha insegnato?",
+"pt": "O que te ensinou viajar que a escola não te ensinou?",
+"pt_BR": "O que viajar te ensinou que a escola não ensinou?"
+}
+},
+{
+"id": "backpacking-040",
+"lv": "any",
+"i18n": {
+"en": "What's your next backpacking dream?",
+"de": "Was ist dein nächster Backpacking-Traum?",
+"es": "¿Cuál es tu próximo sueño mochilero?",
+"fr": "Quel est ton prochain rêve de voyage sac au dos ?",
+"it": "Qual è il tuo prossimo sogno da backpacker?",
+"pt": "Qual é o teu próximo sonho mochileiro?",
+"pt_BR": "Qual é o seu próximo sonho de mochilão?"
+}
+},
+{
+"id": "backpacking-041",
+"lv": "beginner",
+"i18n": {
+"en": "What size of backpack do you think you'd need for a two-week trip?",
+"de": "Wie groß müsste dein Rucksack für eine zweiwöchige Reise wohl sein?",
+"es": "¿De qué tamaño crees que necesitarías la mochila para un viaje de dos semanas?",
+"fr": "Quelle taille de sac à dos te faudrait-il pour un voyage de deux semaines ?",
+"it": "Di che dimensione pensi ti servirebbe lo zaino per un viaggio di due settimane?",
+"pt": "De que tamanho achas que precisarias a mochila para uma viagem de duas semanas?",
+"pt_BR": "De que tamanho você acha que precisaria a mochila para uma viagem de duas semanas?"
+}
+},
+{
+"id": "backpacking-042",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever packed a bag that was way too heavy? What happened?",
+"de": "Hast du schon mal viel zu schwer gepackt? Was ist passiert?",
+"es": "¿Alguna vez has hecho una maleta demasiado pesada? ¿Qué pasó?",
+"fr": "As-tu déjà préparé un sac beaucoup trop lourd ? Que s'est-il passé ?",
+"it": "Ti è mai capitato di preparare uno zaino troppo pesante? Cosa è successo?",
+"pt": "Já fizeste uma mala pesada demais? O que aconteceu?",
+"pt_BR": "Você já arrumou uma mala pesada demais? O que aconteceu?"
+}
+},
+{
+"id": "backpacking-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which clothes would you put in a backpacking capsule wardrobe?",
+"de": "Welche Kleidungsstücke kämen in deine Capsule Wardrobe für die Rucksackreise?",
+"es": "¿Qué prendas incluirías en un armario cápsula para viajar de mochilero?",
+"fr": "Quels vêtements mettrais-tu dans une garde-robe capsule pour voyager sac au dos ?",
+"it": "Quali vestiti metteresti in un guardaroba essenziale da backpacker?",
+"pt": "Que roupas porias num guarda-roupa cápsula para viajar de mochila?",
+"pt_BR": "Quais roupas você colocaria num guarda-roupa cápsula para o mochilão?"
+}
+},
+{
+"id": "backpacking-044",
+"lv": "beginner",
+"i18n": {
+"en": "Would you choose a dorm or a private room in a hostel? Why?",
+"de": "Würdest du im Hostel einen Schlafsaal oder ein Privatzimmer wählen? Warum?",
+"es": "En un hostel, ¿elegirías un dormitorio compartido o una habitación privada? ¿Por qué?",
+"fr": "Dans une auberge, choisirais-tu un dortoir ou une chambre privée ? Pourquoi ?",
+"it": "In ostello sceglieresti una camerata o una camera privata? Perché?",
+"pt": "Num hostel, escolherias um dormitório ou um quarto privado? Porquê?",
+"pt_BR": "Num hostel, você escolheria um quarto compartilhado ou privativo? Por quê?"
+}
+},
+{
+"id": "backpacking-045",
+"lv": "beginner",
+"i18n": {
+"en": "What would you look for in hostel reviews before booking?",
+"de": "Worauf würdest du in Hostel-Bewertungen vor dem Buchen achten?",
+"es": "¿En qué te fijarías en las opiniones de un hostel antes de reservar?",
+"fr": "Que chercherais-tu dans les avis d'une auberge avant de réserver ?",
+"it": "A cosa faresti attenzione nelle recensioni di un ostello prima di prenotare?",
+"pt": "Em que repararias nas opiniões de um hostel antes de reservar?",
+"pt_BR": "No que você prestaria atenção nas avaliações de um hostel antes de reservar?"
+}
+},
+{
+"id": "backpacking-046",
+"lv": "beginner",
+"i18n": {
+"en": "How do you sleep best in a new place?",
+"de": "Wie schläfst du an einem neuen Ort am besten?",
+"es": "¿Cómo consigues dormir mejor en un sitio nuevo?",
+"fr": "Comment dors-tu le mieux dans un nouvel endroit ?",
+"it": "Come riesci a dormire meglio in un posto nuovo?",
+"pt": "Como consegues dormir melhor num sítio novo?",
+"pt_BR": "Como você consegue dormir melhor num lugar novo?"
+}
+},
+{
+"id": "backpacking-047",
+"lv": "beginner",
+"i18n": {
+"en": "What's your plan for keeping your valuables safe in a hostel?",
+"de": "Wie würdest du deine Wertsachen im Hostel sicher aufbewahren?",
+"es": "¿Cómo mantendrías tus objetos de valor seguros en un hostel?",
+"fr": "Comment garderais-tu tes objets de valeur en sécurité dans une auberge ?",
+"it": "Come terresti al sicuro i tuoi oggetti di valore in ostello?",
+"pt": "Como guardarias os teus objetos de valor em segurança num hostel?",
+"pt_BR": "Como você manteria seus objetos de valor seguros num hostel?"
+}
+},
+{
+"id": "backpacking-048",
+"lv": "beginner",
+"i18n": {
+"en": "Would you feel comfortable cooking in a shared hostel kitchen?",
+"de": "Würdest du dich wohlfühlen, in einer gemeinsamen Hostelküche zu kochen?",
+"es": "¿Te sentirías cómodo cocinando en la cocina compartida de un hostel?",
+"fr": "Serais-tu à l'aise pour cuisiner dans la cuisine commune d'une auberge ?",
+"it": "Ti sentiresti a tuo agio a cucinare nella cucina comune di un ostello?",
+"pt": "Sentias-te à vontade a cozinhar na cozinha partilhada de um hostel?",
+"pt_BR": "Você se sentiria à vontade cozinhando na cozinha compartilhada de um hostel?"
+}
+},
+{
+"id": "backpacking-049",
+"lv": "beginner",
+"i18n": {
+"en": "How would you start a conversation in a hostel common room?",
+"de": "Wie würdest du im Gemeinschaftsraum eines Hostels ein Gespräch beginnen?",
+"es": "¿Cómo empezarías una conversación en la sala común de un hostel?",
+"fr": "Comment lancerais-tu une conversation dans la salle commune d'une auberge ?",
+"it": "Come inizieresti una conversazione nella sala comune di un ostello?",
+"pt": "Como começarias uma conversa na sala comum de um hostel?",
+"pt_BR": "Como você puxaria conversa na área comum de um hostel?"
+}
+},
+{
+"id": "backpacking-050",
+"lv": "beginner",
+"i18n": {
+"en": "What would you put in your small first-aid kit?",
+"de": "Was würdest du in deine kleine Reiseapotheke packen?",
+"es": "¿Qué meterías en tu pequeño botiquín de viaje?",
+"fr": "Que mettrais-tu dans ta petite trousse de secours ?",
+"it": "Cosa metteresti nel tuo piccolo kit di pronto soccorso?",
+"pt": "O que porias no teu pequeno kit de primeiros socorros?",
+"pt_BR": "O que você colocaria no seu kit de primeiros socorros?"
+}
+},
+{
+"id": "backpacking-051",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever taken a night bus or night train? How was it?",
+"de": "Bist du schon mal mit einem Nachtbus oder Nachtzug gefahren? Wie war es?",
+"es": "¿Has viajado alguna vez en autobús o tren nocturno? ¿Qué tal fue?",
+"fr": "As-tu déjà pris un bus ou un train de nuit ? C'était comment ?",
+"it": "Hai mai preso un autobus o un treno notturno? Com'è stato?",
+"pt": "Já viajaste num autocarro ou comboio noturno? Como foi?",
+"pt_BR": "Você já pegou um ônibus ou trem noturno? Como foi?"
+}
+},
+{
+"id": "backpacking-052",
+"lv": "beginner",
+"i18n": {
+"en": "How do you find your way in a town you've never been to?",
+"de": "Wie findest du dich in einer Stadt zurecht, in der du noch nie warst?",
+"es": "¿Cómo te orientas en un pueblo o ciudad donde nunca has estado?",
+"fr": "Comment te repères-tu dans une ville où tu n'es jamais allé ?",
+"it": "Come ti orienti in una città in cui non sei mai stato?",
+"pt": "Como te orientas numa cidade onde nunca estiveste?",
+"pt_BR": "Como você se localiza numa cidade onde nunca esteve?"
+}
+},
+{
+"id": "backpacking-053",
+"lv": "beginner",
+"i18n": {
+"en": "Which classic route would you choose for your first big trip?",
+"de": "Welche klassische Route würdest du für deine erste große Reise wählen?",
+"es": "¿Qué ruta clásica elegirías para tu primer gran viaje?",
+"fr": "Quel itinéraire classique choisirais-tu pour ton premier grand voyage ?",
+"it": "Quale itinerario classico sceglieresti per il tuo primo grande viaggio?",
+"pt": "Que rota clássica escolherias para a tua primeira grande viagem?",
+"pt_BR": "Qual rota clássica você escolheria para a sua primeira grande viagem?"
+}
+},
+{
+"id": "backpacking-054",
+"lv": "beginner",
+"i18n": {
+"en": "How many nights do you like to stay in one place?",
+"de": "Wie viele Nächte bleibst du gern an einem Ort?",
+"es": "¿Cuántas noches te gusta quedarte en un mismo lugar?",
+"fr": "Combien de nuits aimes-tu rester au même endroit ?",
+"it": "Quante notti ti piace fermarti nello stesso posto?",
+"pt": "Quantas noites gostas de ficar no mesmo sítio?",
+"pt_BR": "Quantas noites você gosta de ficar num mesmo lugar?"
+}
+},
+{
+"id": "backpacking-055",
+"lv": "beginner",
+"i18n": {
+"en": "How would you set a daily budget for a backpacking trip?",
+"de": "Wie würdest du ein Tagesbudget für eine Rucksackreise festlegen?",
+"es": "¿Cómo fijarías un presupuesto diario para un viaje de mochilero?",
+"fr": "Comment fixerais-tu un budget quotidien pour un voyage sac au dos ?",
+"it": "Come stabiliresti un budget giornaliero per un viaggio zaino in spalla?",
+"pt": "Como definirias um orçamento diário para uma viagem de mochila?",
+"pt_BR": "Como você definiria um orçamento diário para um mochilão?"
+}
+},
+{
+"id": "backpacking-056",
+"lv": "beginner",
+"i18n": {
+"en": "What would you do if you missed your bus?",
+"de": "Was würdest du tun, wenn du deinen Bus verpasst?",
+"es": "¿Qué harías si perdieras tu autobús?",
+"fr": "Que ferais-tu si tu ratais ton bus ?",
+"it": "Cosa faresti se perdessi l'autobus?",
+"pt": "O que farias se perdesses o autocarro?",
+"pt_BR": "O que você faria se perdesse o ônibus?"
+}
+},
+{
+"id": "backpacking-057",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather backpack solo or with a friend?",
+"de": "Würdest du lieber allein oder mit einem Freund backpacken?",
+"es": "¿Preferirías viajar de mochilero solo o con un amigo?",
+"fr": "Tu préférerais voyager sac au dos seul ou avec un ami ?",
+"it": "Preferiresti viaggiare zaino in spalla da solo o con un amico?",
+"pt": "Preferias viajar de mochila sozinho ou com um amigo?",
+"pt_BR": "Você preferiria fazer um mochilão sozinho ou com um amigo?"
+}
+},
+{
+"id": "backpacking-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which local phrases would you learn before your first trip?",
+"de": "Welche Sätze in der Landessprache würdest du vor deiner ersten Reise lernen?",
+"es": "¿Qué frases del idioma local aprenderías antes de tu primer viaje?",
+"fr": "Quelles expressions locales apprendrais-tu avant ton premier voyage ?",
+"it": "Quali frasi nella lingua locale impareresti prima del tuo primo viaggio?",
+"pt": "Que frases da língua local aprenderias antes da tua primeira viagem?",
+"pt_BR": "Quais frases no idioma local você aprenderia antes da primeira viagem?"
+}
+},
+{
+"id": "backpacking-059",
+"lv": "beginner",
+"i18n": {
+"en": "How do you deal with long travel days?",
+"de": "Wie gehst du mit langen Reisetagen um?",
+"es": "¿Cómo llevas los días largos de viaje?",
+"fr": "Comment gères-tu les longues journées de transport ?",
+"it": "Come affronti le lunghe giornate di viaggio?",
+"pt": "Como lidas com os dias longos de viagem?",
+"pt_BR": "Como você lida com dias longos de viagem?"
+}
+},
+{
+"id": "backpacking-060",
+"lv": "beginner",
+"i18n": {
+"en": "What's your trick for staying fresh without much luggage?",
+"de": "Wie bleibst du mit wenig Gepäck trotzdem frisch?",
+"es": "¿Cuál es tu truco para ir siempre fresco con poco equipaje?",
+"fr": "Quelle est ton astuce pour rester frais avec peu de bagages ?",
+"it": "Qual è il tuo trucco per restare in ordine con pochi bagagli?",
+"pt": "Qual é o teu truque para andar sempre fresco com pouca bagagem?",
+"pt_BR": "Qual é o seu truque para se manter limpinho com pouca bagagem?"
+}
+},
+{
+"id": "backpacking-061",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever done laundry while travelling? How?",
+"de": "Hast du auf Reisen schon mal Wäsche gewaschen? Wie?",
+"es": "¿Has lavado ropa alguna vez estando de viaje? ¿Cómo?",
+"fr": "As-tu déjà fait ta lessive en voyage ? Comment ?",
+"it": "Hai mai fatto il bucato in viaggio? Come?",
+"pt": "Já lavaste roupa durante uma viagem? Como?",
+"pt_BR": "Você já lavou roupa durante uma viagem? Como?"
+}
+},
+{
+"id": "backpacking-062",
+"lv": "beginner",
+"i18n": {
+"en": "How do you take care of your feet on long walking days?",
+"de": "Wie pflegst du deine Füße an langen Wandertagen?",
+"es": "¿Cómo cuidas tus pies en los días de mucho caminar?",
+"fr": "Comment prends-tu soin de tes pieds lors des longues journées de marche ?",
+"it": "Come ti prendi cura dei piedi nelle lunghe giornate di cammino?",
+"pt": "Como cuidas dos pés nos dias de muita caminhada?",
+"pt_BR": "Como você cuida dos pés em dias de muita caminhada?"
+}
+},
+{
+"id": "backpacking-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which day hike near a city would you love to try?",
+"de": "Welche Tageswanderung in der Nähe einer Stadt würdest du gern ausprobieren?",
+"es": "¿Qué excursión de un día cerca de una ciudad te encantaría hacer?",
+"fr": "Quelle randonnée d'une journée près d'une ville aimerais-tu faire ?",
+"it": "Quale escursione di un giorno vicino a una città ti piacerebbe fare?",
+"pt": "Que caminhada de um dia perto de uma cidade adorarias fazer?",
+"pt_BR": "Qual trilha de um dia perto de uma cidade você adoraria fazer?"
+}
+},
+{
+"id": "backpacking-064",
+"lv": "beginner",
+"i18n": {
+"en": "What would make you feel confident before your first backpacking trip?",
+"de": "Was würde dir vor deiner ersten Rucksackreise Selbstvertrauen geben?",
+"es": "¿Qué te haría sentir seguro antes de tu primer viaje de mochilero?",
+"fr": "Qu'est-ce qui te rendrait confiant avant ton premier voyage sac au dos ?",
+"it": "Cosa ti farebbe sentire sicuro prima del tuo primo viaggio zaino in spalla?",
+"pt": "O que te faria sentir confiante antes da tua primeira viagem de mochila?",
+"pt_BR": "O que te deixaria confiante antes do seu primeiro mochilão?"
+}
+},
+{
+"id": "backpacking-065",
+"lv": "beginner",
+"i18n": {
+"en": "What would you test on a weekend trip before a big journey?",
+"de": "Was würdest du vor einer großen Reise auf einem Wochenendtrip testen?",
+"es": "¿Qué pondrías a prueba en una escapada de fin de semana antes de un gran viaje?",
+"fr": "Que testerais-tu lors d'un week-end avant un grand voyage ?",
+"it": "Cosa metteresti alla prova in un weekend prima di un grande viaggio?",
+"pt": "O que testarias numa escapadinha de fim de semana antes de uma grande viagem?",
+"pt_BR": "O que você testaria num fim de semana antes de uma grande viagem?"
+}
+},
+{
+"id": "backpacking-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How light do you think you could pack for a month on the road?",
+"de": "Wie leicht könntest du wohl für einen Monat unterwegs packen?",
+"es": "¿Cuánto crees que podrías aligerar tu equipaje para un mes de viaje?",
+"fr": "Jusqu'à quel point pourrais-tu voyager léger pendant un mois sur la route ?",
+"it": "Quanto leggero pensi di poter viaggiare per un mese in giro?",
+"pt": "Até que ponto achas que conseguias viajar leve durante um mês na estrada?",
+"pt_BR": "Quão leve você acha que conseguiria viajar durante um mês na estrada?"
+}
+},
+{
+"id": "backpacking-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which piece of gear would you never travel without?",
+"de": "Ohne welches Ausrüstungsteil würdest du nie verreisen?",
+"es": "¿Sin qué pieza de tu equipo no viajarías nunca?",
+"fr": "Sans quel équipement ne partirais-tu jamais en voyage ?",
+"it": "Senza quale pezzo di attrezzatura non viaggeresti mai?",
+"pt": "Sem que peça de equipamento nunca viajarias?",
+"pt_BR": "Sem qual item do seu equipamento você nunca viajaria?"
+}
+},
+{
+"id": "backpacking-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you try volunteering in a hostel in exchange for a bed?",
+"de": "Würdest du in einem Hostel mithelfen und dafür kostenlos übernachten?",
+"es": "¿Probarías a hacer voluntariado en un hostel a cambio de una cama?",
+"fr": "Essaierais-tu de faire du bénévolat dans une auberge en échange d'un lit ?",
+"it": "Proveresti a fare volontariato in un ostello in cambio di un letto?",
+"pt": "Experimentavas fazer voluntariado num hostel em troca de uma cama?",
+"pt_BR": "Você toparia fazer voluntariado num hostel em troca de hospedagem?"
+}
+},
+{
+"id": "backpacking-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What's your opinion on wild camping where it's allowed?",
+"de": "Was hältst du vom Wildcampen dort, wo es erlaubt ist?",
+"es": "¿Qué opinas de la acampada libre donde está permitida?",
+"fr": "Que penses-tu du camping sauvage là où il est autorisé ?",
+"it": "Cosa pensi del campeggio libero dove è consentito?",
+"pt": "O que achas do campismo selvagem onde é permitido?",
+"pt_BR": "O que você acha de acampar na natureza onde é permitido?"
+}
+},
+{
+"id": "backpacking-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which multi-day trek would you love to walk?",
+"de": "Welche mehrtägige Trekkingtour würdest du gern gehen?",
+"es": "¿Qué trekking de varios días te encantaría hacer?",
+"fr": "Quel trek de plusieurs jours aimerais-tu faire ?",
+"it": "Quale trekking di più giorni ti piacerebbe fare?",
+"pt": "Que trekking de vários dias adorarias fazer?",
+"pt_BR": "Qual travessia de vários dias você adoraria fazer?"
+}
+},
+{
+"id": "backpacking-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you plan food and water for a three-day hike?",
+"de": "Wie würdest du Essen und Wasser für eine dreitägige Wanderung planen?",
+"es": "¿Cómo planificarías la comida y el agua para una ruta de tres días?",
+"fr": "Comment prévoirais-tu nourriture et eau pour une randonnée de trois jours ?",
+"it": "Come organizzeresti cibo e acqua per un'escursione di tre giorni?",
+"pt": "Como planearias a comida e a água para uma caminhada de três dias?",
+"pt_BR": "Como você planejaria comida e água para uma trilha de três dias?"
+}
+},
+{
+"id": "backpacking-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you rather cross a border by land or fly over it? Why?",
+"de": "Überquerst du eine Grenze lieber auf dem Landweg oder fliegst du drüber? Warum?",
+"es": "¿Prefieres cruzar una frontera por tierra o en avión? ¿Por qué?",
+"fr": "Tu préfères passer une frontière par voie terrestre ou en avion ? Pourquoi ?",
+"it": "Preferisci attraversare un confine via terra o in aereo? Perché?",
+"pt": "Preferes atravessar uma fronteira por terra ou de avião? Porquê?",
+"pt_BR": "Você prefere cruzar uma fronteira por terra ou de avião? Por quê?"
+}
+},
+{
+"id": "backpacking-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which region would you choose for a month-long overland trip?",
+"de": "Welche Region würdest du für eine einmonatige Überlandreise wählen?",
+"es": "¿Qué región elegirías para un viaje de un mes por tierra?",
+"fr": "Quelle région choisirais-tu pour un mois de voyage par voie terrestre ?",
+"it": "Quale regione sceglieresti per un viaggio via terra di un mese?",
+"pt": "Que região escolherias para uma viagem de um mês por terra?",
+"pt_BR": "Qual região você escolheria para uma viagem de um mês por terra?"
+}
+},
+{
+"id": "backpacking-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you connect with local culture beyond the tourist sights?",
+"de": "Wie kommst du abseits der Sehenswürdigkeiten mit der lokalen Kultur in Kontakt?",
+"es": "¿Cómo conectas con la cultura local más allá de los sitios turísticos?",
+"fr": "Comment te rapproches-tu de la culture locale au-delà des sites touristiques ?",
+"it": "Come entri in contatto con la cultura locale oltre le attrazioni turistiche?",
+"pt": "Como te ligas à cultura local para além dos pontos turísticos?",
+"pt_BR": "Como você se conecta com a cultura local além dos pontos turísticos?"
+}
+},
+{
+"id": "backpacking-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What eco-friendly habit do you practise when you travel?",
+"de": "Welche umweltfreundliche Gewohnheit pflegst du auf Reisen?",
+"es": "¿Qué hábito sostenible practicas cuando viajas?",
+"fr": "Quelle habitude écologique pratiques-tu en voyage ?",
+"it": "Quale abitudine sostenibile pratichi quando viaggi?",
+"pt": "Que hábito amigo do ambiente praticas quando viajas?",
+"pt_BR": "Qual hábito sustentável você pratica quando viaja?"
+}
+},
+{
+"id": "backpacking-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you choose responsible tours and activities?",
+"de": "Wie wählst du verantwortungsvolle Touren und Aktivitäten aus?",
+"es": "¿Cómo eliges excursiones y actividades responsables?",
+"fr": "Comment choisis-tu des excursions et activités responsables ?",
+"it": "Come scegli tour e attività responsabili?",
+"pt": "Como escolhes passeios e atividades responsáveis?",
+"pt_BR": "Como você escolhe passeios e atividades responsáveis?"
+}
+},
+{
+"id": "backpacking-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you do first if you lost your passport abroad?",
+"de": "Was würdest du als Erstes tun, wenn du im Ausland deinen Pass verlierst?",
+"es": "¿Qué harías primero si perdieras el pasaporte en el extranjero?",
+"fr": "Que ferais-tu en premier si tu perdais ton passeport à l'étranger ?",
+"it": "Cosa faresti per prima cosa se perdessi il passaporto all'estero?",
+"pt": "O que farias primeiro se perdesses o passaporte no estrangeiro?",
+"pt_BR": "O que você faria primeiro se perdesse o passaporte no exterior?"
+}
+},
+{
+"id": "backpacking-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep your energy up during weeks of travel?",
+"de": "Wie hältst du deine Energie über Wochen auf Reisen aufrecht?",
+"es": "¿Cómo mantienes la energía durante semanas de viaje?",
+"fr": "Comment gardes-tu ton énergie pendant des semaines de voyage ?",
+"it": "Come mantieni l'energia durante settimane di viaggio?",
+"pt": "Como manténs a energia durante semanas de viagem?",
+"pt_BR": "Como você mantém a energia durante semanas de viagem?"
+}
+},
+{
+"id": "backpacking-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you like to work while backpacking? What kind of work?",
+"de": "Würdest du während des Backpackings gern arbeiten? Was für eine Arbeit?",
+"es": "¿Te gustaría trabajar mientras viajas de mochilero? ¿En qué?",
+"fr": "Aimerais-tu travailler pendant ton voyage sac au dos ? Quel genre de travail ?",
+"it": "Ti piacerebbe lavorare durante il viaggio zaino in spalla? Che tipo di lavoro?",
+"pt": "Gostavas de trabalhar enquanto viajas de mochila? Em quê?",
+"pt_BR": "Você gostaria de trabalhar durante o mochilão? Com o quê?"
+}
+},
+{
+"id": "backpacking-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you document your trips in a way you'll treasure?",
+"de": "Wie hältst du deine Reisen so fest, dass du dich lange daran freust?",
+"es": "¿Cómo documentas tus viajes para guardarlos como un tesoro?",
+"fr": "Comment gardes-tu une trace de tes voyages que tu chériras ?",
+"it": "Come documenti i tuoi viaggi in modo da custodirli con affetto?",
+"pt": "Como registas as tuas viagens de forma a guardá-las com carinho?",
+"pt_BR": "Como você registra suas viagens de um jeito que vai guardar com carinho?"
+}
+},
+{
+"id": "backpacking-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle disagreements with a travel companion?",
+"de": "Wie gehst du mit Meinungsverschiedenheiten mit Reisepartnern um?",
+"es": "¿Cómo manejas los desacuerdos con un compañero de viaje?",
+"fr": "Comment gères-tu les désaccords avec un compagnon de voyage ?",
+"it": "Come gestisci i disaccordi con un compagno di viaggio?",
+"pt": "Como lidas com desentendimentos com um companheiro de viagem?",
+"pt_BR": "Como você lida com desentendimentos com alguém que viaja com você?"
+}
+},
+{
+"id": "backpacking-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which travel season do you prefer: dry, rainy, cold or hot? Why?",
+"de": "Welche Reisezeit magst du am liebsten: trocken, regnerisch, kalt oder heiß? Warum?",
+"es": "¿Qué temporada prefieres para viajar: seca, lluviosa, fría o calurosa? ¿Por qué?",
+"fr": "Quelle saison préfères-tu pour voyager : sèche, pluvieuse, froide ou chaude ? Pourquoi ?",
+"it": "Quale stagione preferisci per viaggiare: secca, piovosa, fredda o calda? Perché?",
+"pt": "Que época preferes para viajar: seca, chuvosa, fria ou quente? Porquê?",
+"pt_BR": "Qual época você prefere para viajar: seca, chuvosa, fria ou quente? Por quê?"
+}
+},
+{
+"id": "backpacking-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What's your strategy for finding a bed when you arrive without a booking?",
+"de": "Wie findest du ein Bett, wenn du ohne Reservierung ankommst?",
+"es": "¿Cuál es tu estrategia para encontrar cama cuando llegas sin reserva?",
+"fr": "Quelle est ta stratégie pour trouver un lit quand tu arrives sans réservation ?",
+"it": "Qual è la tua strategia per trovare un letto quando arrivi senza prenotazione?",
+"pt": "Qual é a tua estratégia para arranjar cama quando chegas sem reserva?",
+"pt_BR": "Qual é a sua estratégia para achar onde dormir quando chega sem reserva?"
+}
+},
+{
+"id": "backpacking-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide when it's time to move on from a place?",
+"de": "Woran merkst du, dass es Zeit ist, weiterzuziehen?",
+"es": "¿Cómo decides cuándo es hora de irte de un lugar?",
+"fr": "Comment sais-tu qu'il est temps de quitter un endroit ?",
+"it": "Come capisci che è ora di lasciare un posto?",
+"pt": "Como decides que está na hora de seguir viagem?",
+"pt_BR": "Como você decide que é hora de partir de um lugar?"
+}
+},
+{
+"id": "backpacking-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think shared travel spaces teach us about other cultures?",
+"de": "Was können uns gemeinsame Orte wie Hostels über andere Kulturen lehren?",
+"es": "¿Qué crees que nos enseñan los espacios compartidos de viaje sobre otras culturas?",
+"fr": "Selon toi, que nous apprennent les lieux partagés en voyage sur les autres cultures ?",
+"it": "Cosa pensi che gli spazi condivisi in viaggio ci insegnino sulle altre culture?",
+"pt": "O que achas que os espaços partilhados em viagem nos ensinam sobre outras culturas?",
+"pt_BR": "O que você acha que os espaços compartilhados de viagem ensinam sobre outras culturas?"
+}
+},
+{
+"id": "backpacking-086",
+"lv": "advanced",
+"i18n": {
+"en": "If you had a full year to backpack, where would you start?",
+"de": "Wenn du ein ganzes Jahr zum Backpacken hättest, wo würdest du anfangen?",
+"es": "Si tuvieras un año entero para viajar de mochilero, ¿por dónde empezarías?",
+"fr": "Si tu avais une année entière pour voyager sac au dos, où commencerais-tu ?",
+"it": "Se avessi un anno intero per viaggiare zaino in spalla, da dove inizieresti?",
+"pt": "Se tivesses um ano inteiro para viajar de mochila, por onde começavas?",
+"pt_BR": "Se você tivesse um ano inteiro de mochilão, por onde começaria?"
+}
+},
+{
+"id": "backpacking-087",
+"lv": "advanced",
+"i18n": {
+"en": "Would you try a round-the-world trip without flying? Why or why not?",
+"de": "Würdest du eine Weltreise ohne Flugzeug wagen? Warum oder warum nicht?",
+"es": "¿Te atreverías a dar la vuelta al mundo sin volar? ¿Por qué sí o por qué no?",
+"fr": "Tenterais-tu un tour du monde sans prendre l'avion ? Pourquoi ?",
+"it": "Proveresti a fare il giro del mondo senza volare? Perché sì o perché no?",
+"pt": "Experimentavas uma volta ao mundo sem andar de avião? Porquê?",
+"pt_BR": "Você tentaria dar a volta ao mundo sem avião? Por que sim ou por que não?"
+}
+},
+{
+"id": "backpacking-088",
+"lv": "advanced",
+"i18n": {
+"en": "Which long-distance trail would you love to hike from start to finish?",
+"de": "Welchen Fernwanderweg würdest du gern von Anfang bis Ende gehen?",
+"es": "¿Qué sendero de larga distancia te encantaría recorrer de principio a fin?",
+"fr": "Quel sentier de grande randonnée aimerais-tu parcourir du début à la fin ?",
+"it": "Quale sentiero a lunga percorrenza ti piacerebbe percorrere dall'inizio alla fine?",
+"pt": "Que trilho de longa distância adorarias percorrer do início ao fim?",
+"pt_BR": "Qual trilha de longa distância você adoraria percorrer do começo ao fim?"
+}
+},
+{
+"id": "backpacking-089",
+"lv": "advanced",
+"i18n": {
+"en": "How would you prepare for travelling in a remote region?",
+"de": "Wie würdest du dich auf eine Reise in eine abgelegene Region vorbereiten?",
+"es": "¿Cómo te prepararías para viajar a una región remota?",
+"fr": "Comment te préparerais-tu pour voyager dans une région isolée ?",
+"it": "Come ti prepareresti per viaggiare in una regione remota?",
+"pt": "Como te prepararias para viajar numa região remota?",
+"pt_BR": "Como você se prepararia para viajar por uma região remota?"
+}
+},
+{
+"id": "backpacking-090",
+"lv": "advanced",
+"i18n": {
+"en": "What's the most adventurous journey you can imagine doing?",
+"de": "Was ist die abenteuerlichste Reise, die du dir vorstellen kannst?",
+"es": "¿Cuál es el viaje más aventurero que te imaginas haciendo?",
+"fr": "Quel est le voyage le plus aventureux que tu puisses imaginer faire ?",
+"it": "Qual è il viaggio più avventuroso che riesci a immaginare di fare?",
+"pt": "Qual é a viagem mais aventureira que te imaginas a fazer?",
+"pt_BR": "Qual é a viagem mais aventureira que você consegue imaginar fazendo?"
+}
+},
+{
+"id": "backpacking-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you keep your pack as light as possible for several months?",
+"de": "Wie würdest du deinen Rucksack für mehrere Monate so leicht wie möglich halten?",
+"es": "¿Cómo mantendrías tu mochila lo más ligera posible durante varios meses?",
+"fr": "Comment garderais-tu ton sac le plus léger possible pendant plusieurs mois ?",
+"it": "Come terresti lo zaino il più leggero possibile per diversi mesi?",
+"pt": "Como manterias a mochila o mais leve possível durante vários meses?",
+"pt_BR": "Como você manteria a mochila o mais leve possível por vários meses?"
+}
+},
+{
+"id": "backpacking-092",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance spontaneity and planning on very long trips?",
+"de": "Wie findest du auf sehr langen Reisen die Balance zwischen Spontaneität und Planung?",
+"es": "¿Cómo equilibras espontaneidad y planificación en viajes muy largos?",
+"fr": "Comment équilibres-tu spontanéité et organisation lors de très longs voyages ?",
+"it": "Come bilanci spontaneità e pianificazione nei viaggi molto lunghi?",
+"pt": "Como equilibras espontaneidade e planeamento em viagens muito longas?",
+"pt_BR": "Como você equilibra espontaneidade e planejamento em viagens muito longas?"
+}
+},
+{
+"id": "backpacking-093",
+"lv": "advanced",
+"i18n": {
+"en": "What would you tell someone who is nervous about their first backpacking trip?",
+"de": "Was würdest du jemandem sagen, der vor seiner ersten Rucksackreise nervös ist?",
+"es": "¿Qué le dirías a alguien que está nervioso antes de su primer viaje de mochilero?",
+"fr": "Que dirais-tu à quelqu'un d'inquiet avant son premier voyage sac au dos ?",
+"it": "Cosa diresti a qualcuno agitato prima del suo primo viaggio zaino in spalla?",
+"pt": "O que dirias a alguém nervoso antes da primeira viagem de mochila?",
+"pt_BR": "O que você diria a alguém nervoso antes do primeiro mochilão?"
+}
+},
+{
+"id": "backpacking-094",
+"lv": "advanced",
+"i18n": {
+"en": "How has travelling changed the way you see your own culture?",
+"de": "Wie hat das Reisen deinen Blick auf deine eigene Kultur verändert?",
+"es": "¿Cómo ha cambiado viajar tu forma de ver tu propia cultura?",
+"fr": "Comment le voyage a-t-il changé ton regard sur ta propre culture ?",
+"it": "Come ha cambiato il viaggiare il tuo modo di vedere la tua cultura?",
+"pt": "Como é que viajar mudou a tua forma de ver a tua própria cultura?",
+"pt_BR": "Como viajar mudou o seu jeito de ver a sua própria cultura?"
+}
+},
+{
+"id": "backpacking-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which famous traveller from history would you love to travel with?",
+"de": "Mit welchem berühmten Reisenden der Geschichte würdest du gern unterwegs sein?",
+"es": "¿Con qué viajero famoso de la historia te encantaría viajar?",
+"fr": "Avec quel grand voyageur de l'histoire aimerais-tu partir ?",
+"it": "Con quale famoso viaggiatore della storia ti piacerebbe viaggiare?",
+"pt": "Com que viajante famoso da história adorarias viajar?",
+"pt_BR": "Com qual viajante famoso da história você adoraria viajar?"
+}
+},
+{
+"id": "backpacking-096",
+"lv": "advanced",
+"i18n": {
+"en": "What would your ideal gap year look like?",
+"de": "Wie sähe dein ideales Gap Year aus?",
+"es": "¿Cómo sería tu año sabático ideal?",
+"fr": "À quoi ressemblerait ton année de césure idéale ?",
+"it": "Come sarebbe il tuo anno sabbatico ideale?",
+"pt": "Como seria o teu ano sabático ideal?",
+"pt_BR": "Como seria o seu ano sabático ideal?"
+}
+},
+{
+"id": "backpacking-097",
+"lv": "advanced",
+"i18n": {
+"en": "How would you give back to the places that welcome you?",
+"de": "Wie würdest du den Orten, die dich willkommen heißen, etwas zurückgeben?",
+"es": "¿Cómo devolverías algo a los lugares que te acogen?",
+"fr": "Comment rendrais-tu la pareille aux lieux qui t'accueillent ?",
+"it": "Come ricambieresti i luoghi che ti accolgono?",
+"pt": "Como retribuirias aos lugares que te recebem?",
+"pt_BR": "Como você retribuiria aos lugares que te recebem?"
+}
+},
+{
+"id": "backpacking-098",
+"lv": "advanced",
+"i18n": {
+"en": "What does it mean to you to travel respectfully?",
+"de": "Was bedeutet respektvolles Reisen für dich?",
+"es": "¿Qué significa para ti viajar con respeto?",
+"fr": "Que signifie pour toi voyager avec respect ?",
+"it": "Che cosa significa per te viaggiare con rispetto?",
+"pt": "O que significa para ti viajar com respeito?",
+"pt_BR": "O que significa pra você viajar com respeito?"
+}
+},
+{
+"id": "backpacking-099",
+"lv": "advanced",
+"i18n": {
+"en": "Which lesson from the road would you pass on to future travellers?",
+"de": "Welche Lektion von unterwegs würdest du an künftige Reisende weitergeben?",
+"es": "¿Qué lección del camino transmitirías a los futuros viajeros?",
+"fr": "Quelle leçon de la route transmettrais-tu aux futurs voyageurs ?",
+"it": "Quale lezione imparata in viaggio trasmetteresti ai futuri viaggiatori?",
+"pt": "Que lição da estrada passarias aos futuros viajantes?",
+"pt_BR": "Qual lição da estrada você passaria para os futuros viajantes?"
+}
+},
+{
+"id": "backpacking-100",
+"lv": "advanced",
+"i18n": {
+"en": "What's one backpacking goal you want to achieve in the next few years?",
+"de": "Welches Backpacking-Ziel möchtest du in den nächsten Jahren erreichen?",
+"es": "¿Qué meta mochilera quieres cumplir en los próximos años?",
+"fr": "Quel objectif de voyage sac au dos veux-tu atteindre dans les prochaines années ?",
+"it": "Quale obiettivo da backpacker vuoi raggiungere nei prossimi anni?",
+"pt": "Que objetivo mochileiro queres alcançar nos próximos anos?",
+"pt_BR": "Qual meta de mochilão você quer alcançar nos próximos anos?"
+}
+}
+]
+}

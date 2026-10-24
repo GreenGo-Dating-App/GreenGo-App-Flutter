@@ -1,0 +1,2195 @@
+{
+ "topic": "tennis",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Welcome to tennis",
+   "f": "What tennis is, why people love it, and how this 365-day path will unfold"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "The tennis court",
+   "f": "Baselines, service lines, singles and doubles sidelines, the net and the center mark"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Court surfaces",
+   "f": "Hard, clay and grass courts and how each one changes the bounce"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Rackets explained",
+   "f": "Head size, weight, balance and grip size in simple terms"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Tennis balls",
+   "f": "Pressure, felt and why balls lose their bounce over time"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "How scoring works",
+   "f": "Love, 15, 30, 40 and game: the classic tennis count"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Deuce and advantage",
+   "f": "What happens at 40-40 and how you win a game from there"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Games, sets and matches",
+   "f": "Six games to a set, tiebreaks, and best-of-three or best-of-five matches"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "The tiebreak",
+   "f": "How the 7-point tiebreak works and who serves when"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Ready position",
+   "f": "Feet apart, knees bent, racket in front: your base for every shot"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "The Eastern forehand grip",
+   "f": "A classic, easy grip for learning the forehand"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Forehand basics",
+   "f": "Unit turn, swing path and follow-through on your most natural shot"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Backhand basics",
+   "f": "One-handed versus two-handed backhands for beginners"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "The contact point",
+   "f": "Hitting the ball in front of your body for control and power"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Footwork basics",
+   "f": "Small adjustment steps and recovering to the middle after each shot"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "The split step",
+   "f": "A small hop as the opponent hits that makes you quicker"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Rallying cooperatively",
+   "f": "Keeping the ball in play with a partner to build rhythm"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Serve basics",
+   "f": "Stance, toss and swing for a simple, reliable serve"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "The ball toss",
+   "f": "Why a consistent toss is the secret of a good serve"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Serve rules",
+   "f": "Two attempts, faults, foot faults and serving diagonally"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "The let",
+   "f": "When a point is replayed, including serves that clip the net"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Return of serve basics",
+   "f": "Getting ready, a short backswing and blocking the ball back"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Volley basics",
+   "f": "A short punch, a firm wrist and no big swing at the net"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "The continental grip",
+   "f": "The all-purpose grip for serves, volleys and slices"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "The overhead smash",
+   "f": "Turning sideways, pointing at the ball and hitting down"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "In or out?",
+   "f": "A ball touching the line is in, and how line calls work"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Etiquette on court",
+   "f": "Calling the score, returning balls and respecting neighbouring courts"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Doubles basics",
+   "f": "Alleys, partners, positions and who covers what"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Warming up for tennis",
+   "f": "Mini-tennis, light rallies and dynamic stretches"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: first month",
+   "f": "A friendly recap of the court, scoring, grips and basic strokes"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Origins of tennis",
+   "f": "From the French jeu de paume to lawn tennis in 19th-century England"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Wimbledon's beginning",
+   "f": "The first Championships in 1877 at the All England Club"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "The four Grand Slams",
+   "f": "Australian Open, Roland-Garros, Wimbledon and US Open"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "The Australian Open",
+   "f": "Melbourne's hard-court Slam that opens the season in January"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Roland-Garros",
+   "f": "The French Open, played on red clay in Paris"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Wimbledon traditions",
+   "f": "Grass courts, white clothing and strawberries and cream"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "The US Open",
+   "f": "New York's hard-court Slam and its famous night sessions"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "The calendar Grand Slam",
+   "f": "Winning all four majors in the same calendar year"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "ATP and WTA tours",
+   "f": "How the men's and women's professional tours are organized"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Rankings explained",
+   "f": "How points from tournaments create the world rankings"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "The Davis Cup",
+   "f": "The men's national team competition founded in 1900"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "The Billie Jean King Cup",
+   "f": "The women's national team competition, formerly the Fed Cup"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Tennis at the Olympics",
+   "f": "A full medal sport again since Seoul 1988"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Wheelchair tennis",
+   "f": "The two-bounce rule, great champions and Paralympic play"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Umpires and line judges",
+   "f": "The chair umpire, line calls and electronic line calling"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Hawk-Eye and challenges",
+   "f": "How ball-tracking technology settles close calls"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Topspin explained",
+   "f": "Brushing up the back of the ball to make it dip and kick up"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Slice explained",
+   "f": "Hitting under the ball for a low, skidding backspin shot"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Flat shots",
+   "f": "Hitting through the ball with little spin for speed"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Net clearance and depth",
+   "f": "Why aiming higher over the net makes shots deeper and safer"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Cross-court rallies",
+   "f": "Why cross-court is the safer, longer shot"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Down-the-line shots",
+   "f": "Changing direction and when to take the risk"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Recovery footwork",
+   "f": "Getting back into position after each shot"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Moving to wide balls",
+   "f": "Crossover steps and open-stance hitting on the run"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Attacking short balls",
+   "f": "Moving forward to take advantage of a short ball"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "The approach shot",
+   "f": "Hitting deep and following the ball to the net"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Hitting a lob",
+   "f": "Defensive and offensive lobs over a net player"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "The drop shot",
+   "f": "A soft shot that lands just over the net"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Second serve basics",
+   "f": "More spin, more safety and fewer double faults"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: spin and placement",
+   "f": "A recap of spin types, directions and court movement"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Semi-Western forehand grip",
+   "f": "The most common modern forehand grip and why players love it"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Western forehand grip",
+   "f": "An extreme grip for heavy topspin and high balls"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Two-handed backhand technique",
+   "f": "Hand positions, shoulder turn and driving through the ball"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "One-handed backhand technique",
+   "f": "Grip, balance and the elegant extended finish"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "The backhand slice",
+   "f": "A versatile shot for defending, approaching and changing pace"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "The flat serve",
+   "f": "A fast first serve aimed close to the lines"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "The slice serve",
+   "f": "Curving the ball away from the receiver"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "The kick serve",
+   "f": "A high-bouncing topspin serve for safe second serves"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Serve targets",
+   "f": "Wide, body and T: the three main serve directions"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Serve rhythm",
+   "f": "Linking toss and swing in one smooth, relaxed motion"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Return positions",
+   "f": "Standing deep or close depending on the serve"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Volley footwork",
+   "f": "Stepping into volleys and split-stepping at the net"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Low and high volleys",
+   "f": "Bending your knees and adjusting the racket face"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "The half-volley",
+   "f": "Picking the ball up just after the bounce"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "The swinging volley",
+   "f": "Taking a high ball out of the air with a full swing"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Net positioning",
+   "f": "Where to stand and how to cover angles at the net"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Passing shots",
+   "f": "Beating a net player down the line or cross-court"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Defensive shots",
+   "f": "Slicing, lobbing and buying time when you are stretched"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Tennis vocabulary I",
+   "f": "Words like ace, double fault, break point and rally"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Tennis vocabulary II",
+   "f": "Expressions like hold, break, bagel, breadstick and golden set"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Reading a match score",
+   "f": "Scoreboard abbreviations and how set scores are written"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Watching a match on TV",
+   "f": "What to follow: serves, patterns and momentum"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Watching live at a tournament",
+   "f": "Seats, silence during points and moving at changeovers"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Tennis clothing and shoes",
+   "f": "Court shoes for different surfaces and comfortable gear"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Strings and tension",
+   "f": "How string type and tension affect control and power"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Grip care",
+   "f": "Overgrips, replacing grips and keeping a dry hand"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Conditioning for tennis",
+   "f": "Short bursts, endurance and footwork fitness"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Shoulder and elbow care",
+   "f": "General habits to protect your arm when you play often"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Hydration and breaks",
+   "f": "Changeovers, drinking water and playing in the heat"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: technique month",
+   "f": "A recap of grips, serves, volleys and match watching"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Early legends",
+   "f": "Suzanne Lenglen and Bill Tilden in tennis's first golden age"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Rod Laver",
+   "f": "Two calendar Grand Slams, in 1962 and 1969"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Margaret Court",
+   "f": "A record 24 Grand Slam singles titles"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Billie Jean King",
+   "f": "A champion who fought for equal recognition of women's tennis"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Arthur Ashe",
+   "f": "Grace, intelligence and historic titles at the US Open and Wimbledon"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Björn Borg and John McEnroe",
+   "f": "Ice versus fire in one of tennis's great rivalries"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Chris Evert and Martina Navratilova",
+   "f": "A rivalry of contrasting styles and deep respect"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Steffi Graf's Golden Slam",
+   "f": "All four majors plus Olympic gold in 1988"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Pete Sampras and Andre Agassi",
+   "f": "The serve-and-volleyer against the great returner in the 1990s"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Monica Seles",
+   "f": "Two hands on both sides and fearless, aggressive returns"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "The Williams sisters",
+   "f": "Venus and Serena and how they transformed the women's game"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Roger Federer",
+   "f": "Elegance, all-court play and eight Wimbledon titles"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Rafael Nadal",
+   "f": "Heavy topspin, fighting spirit and 14 Roland-Garros titles"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Novak Djokovic",
+   "f": "Flexibility, defense, great returns and a record-breaking haul of majors"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Andy Murray",
+   "f": "Counterpunching skill, two Wimbledon titles and two Olympic golds"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Modern women's champions",
+   "f": "Players like Justine Henin, Kim Clijsters and Iga Świątek"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Tennis in France",
+   "f": "Roland-Garros, the Four Musketeers and a deep club culture"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Tennis in Spain",
+   "f": "Clay-court schools and a long line of champions"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Tennis in Australia",
+   "f": "A great tennis nation from Rod Laver to Ash Barty"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Tennis in the United States",
+   "f": "College tennis, the US Open and many legends"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Tennis in Italy",
+   "f": "The Foro Italico in Rome and the rise of Italian players"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Tennis in Brazil",
+   "f": "Maria Esther Bueno and Gustavo Kuerten"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Tennis in Germany",
+   "f": "Boris Becker, Steffi Graf and youth development"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Tennis in Argentina",
+   "f": "Guillermo Vilas, Gabriela Sabatini and generations of clay specialists"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Tennis in Asia",
+   "f": "Li Na, Kei Nishikori, Naomi Osaka and growing popularity"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Fun tennis games",
+   "f": "King of the court, Canadian doubles and target games"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Finding partners and clubs",
+   "f": "How to join a club, find hitting partners and play socially"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Your tennis goals",
+   "f": "Setting goals for playing, watching or learning more"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Charting a match",
+   "f": "Counting winners and errors to understand a match"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: beginner level",
+   "f": "A celebration of everything learned in the first 120 days"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Intermediate level kickoff",
+   "f": "What changes now: tactics, patterns and refining your strokes"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Consistency first",
+   "f": "Why reducing errors wins more points than chasing winners"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Percentage tennis",
+   "f": "Choosing shots with the best balance of risk and reward"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "The five ball controls",
+   "f": "Direction, height, depth, spin and speed"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Rally tolerance",
+   "f": "Building the patience to hit many balls in a row"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Hitting on the rise",
+   "f": "Taking the ball early to rob opponents of time"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "The heavy topspin forehand",
+   "f": "A low-to-high swing and fast racket head speed"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "The inside-out forehand",
+   "f": "Running around the backhand to hit a forehand cross-court"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "The inside-in forehand",
+   "f": "The risky but powerful change of direction down the line"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "The forehand on the run",
+   "f": "Open stance, balance and recovering after wide balls"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Two-hander down the line",
+   "f": "Redirecting the ball with the backhand"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Backhand cross-court battles",
+   "f": "Building points with steady backhand rallies"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Slice to change pace",
+   "f": "Mixing slice into topspin rallies to break the rhythm"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Defensive slice on the run",
+   "f": "Buying time when pulled wide on the backhand"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Footwork patterns",
+   "f": "Adjustment steps, crossover steps and the drop step"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Open vs closed stance",
+   "f": "When each stance works best for forehands and backhands"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Weight transfer",
+   "f": "Using your legs and rotation instead of only your arm"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "The kinetic chain",
+   "f": "How power travels from the ground through the body to the racket"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Leg drive on the serve",
+   "f": "Knee bend, the trophy position and pushing up into the ball"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Pronation on the serve",
+   "f": "The natural forearm rotation behind fast serves"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Second-serve confidence",
+   "f": "Spin, margin and a routine to avoid double faults"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Serve plus one",
+   "f": "Planning the shot after the serve"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Return tactics",
+   "f": "Blocking, chipping and attacking returns"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Returning a kick serve",
+   "f": "Stepping in or moving back to handle high bounces"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Returning a big serve",
+   "f": "A short backswing and using the server's pace"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Approach and volley patterns",
+   "f": "Approaching down the line and covering the angle"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Serve-and-volley tactics",
+   "f": "When and how to follow the serve to the net"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Volley placement",
+   "f": "Deep volleys versus angled volleys"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Defending against net rushers",
+   "f": "Passing shots, lobs and low balls at the feet"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Review: strokes and patterns",
+   "f": "A recap of refined strokes, serve patterns and net play"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Playing styles overview",
+   "f": "Aggressive baseliner, counterpuncher, all-courter and serve-volleyer"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "The aggressive baseliner",
+   "f": "Big groundstrokes and taking control from the back"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "The counterpuncher",
+   "f": "Defense, speed and turning defense into attack"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "The all-court player",
+   "f": "Comfortable everywhere and able to mix styles"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "The serve-and-volleyer",
+   "f": "Attacking the net behind the serve"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "The big server",
+   "f": "Building a game around aces and free points"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Playing a steady retriever",
+   "f": "Patience and attacking short balls against consistent players"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Playing a big hitter",
+   "f": "Depth, pace changes and making them hit one more ball"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Playing a lefty",
+   "f": "How left-handed spin and angles change the patterns"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Tactics on clay",
+   "f": "Longer rallies, sliding and heavy topspin"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Tactics on grass",
+   "f": "Low bounces, big serves and short points"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Tactics on hard courts",
+   "f": "A balanced surface that rewards every style"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Indoor tennis",
+   "f": "Faster conditions with no wind or sun"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Playing in the wind",
+   "f": "Adjusting margins, spin and footwork on windy days"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Playing in sun and heat",
+   "f": "Toss adjustments, pacing and hydration"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Sliding on clay",
+   "f": "How clay-court players slide into their shots"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Building a point",
+   "f": "Neutral, attacking and finishing phases of a rally"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Using the whole court",
+   "f": "Width, depth and short angles to move opponents"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Wrong-footing an opponent",
+   "f": "Hitting behind a player who is running"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "The short angle",
+   "f": "Pulling opponents off the court with sharp cross-courts"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Patterns of play",
+   "f": "Classic sequences like serving wide, then hitting into the open court"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Doubles formations",
+   "f": "One up one back, both up and both back"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "The I-formation",
+   "f": "A doubles serving setup that confuses returners"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "The Australian formation",
+   "f": "Server and partner starting on the same side"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Poaching in doubles",
+   "f": "Crossing at the net to intercept returns"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Doubles communication",
+   "f": "Signals, talking between points and teamwork"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Mixed doubles",
+   "f": "The format, tactics and fun of mixed play"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Great doubles teams",
+   "f": "The Bryan brothers, the Woodies and Navratilova and Shriver"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Doubles scoring variants",
+   "f": "No-ad scoring and the match tiebreak"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review: styles and doubles",
+   "f": "A recap of playing styles, surfaces and doubles tactics"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "ATP Masters 1000 events",
+   "f": "The biggest men's tournaments after the Slams"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "WTA 1000 events",
+   "f": "The top tier of women's tournaments after the Slams"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "The ATP and WTA Finals",
+   "f": "The season-ending events for the top eight players"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "The clay swing",
+   "f": "Monte-Carlo, Madrid, Rome and Roland-Garros"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "The grass season",
+   "f": "The short grass swing with Queen's, Halle and Wimbledon"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "The summer hard-court swing",
+   "f": "North American events leading to the US Open"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Indian Wells and Miami",
+   "f": "The spring hard-court double in the United States"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Challenger and ITF tours",
+   "f": "The paths players take toward the main tour"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Junior tennis",
+   "f": "Junior Grand Slams and the step up to professional tennis"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "College tennis",
+   "f": "University tennis as a path to the pros"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "A tennis season calendar",
+   "f": "How the year flows from Melbourne to the season finals"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Points and tournament levels",
+   "f": "Why bigger events give more ranking points"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Life on tour",
+   "f": "Travel, coaches, physios and constant time zone changes"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Coaching rules",
+   "f": "How coaching during matches is regulated"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Code of conduct",
+   "f": "Time violations, warnings and sportsmanship rules"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "The serve clock",
+   "f": "Time limits between points"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Final-set tiebreaks",
+   "f": "How deciding sets at the Slams evolved"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Famous long matches",
+   "f": "Isner versus Mahut at Wimbledon 2010 and other marathons"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Famous finals",
+   "f": "Classic Grand Slam finals that fans still talk about"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "The 2008 Wimbledon final",
+   "f": "Federer versus Nadal, often called one of the greatest matches ever"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "The Big Four era",
+   "f": "How Federer, Nadal, Djokovic and Murray dominated for years"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "New generations",
+   "f": "How new champions build their styles on the old masters"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Tennis fashion history",
+   "f": "From long dresses and trousers to modern performance wear"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Racket technology history",
+   "f": "Wood, aluminium, graphite and modern frames"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "String technology",
+   "f": "Natural gut, polyester and how strings changed spin"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Evolution of the serve",
+   "f": "From underarm beginnings to modern power serving"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Tennis in films and books",
+   "f": "Stories that capture the drama of tennis"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "The Hall of Fame",
+   "f": "The International Tennis Hall of Fame in Newport, Rhode Island"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Tennis museums and venues",
+   "f": "Visiting historic courts and tennis museums"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Review: tournaments and history",
+   "f": "A recap of tours, events, rules and memorable matches"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Match statistics",
+   "f": "First-serve percentage, points won and break points"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Winners and unforced errors",
+   "f": "What they mean and why the ratio matters"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Forced errors",
+   "f": "When pressure from the opponent causes the miss"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Serve statistics",
+   "f": "Aces, double faults and serve points won"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Return statistics",
+   "f": "Return points won and break point conversion"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Rally length data",
+   "f": "Why most points are short and the first shots matter most"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Pressure points",
+   "f": "Break points, 30-30 and how players handle them"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Momentum in matches",
+   "f": "How runs of games happen and how to stop one"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Scouting your opponent",
+   "f": "Watching the warm-up for strengths and weaknesses"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Match plan basics",
+   "f": "Choosing two or three key tactics before a match"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Practice plan structure",
+   "f": "Warm-up, technique, live ball and points"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Drills for consistency",
+   "f": "Cross-court targets and rally goals"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Drills for the serve",
+   "f": "Target practice and second-serve repetitions"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Drills for the net",
+   "f": "Volley-to-volley, reflex drills and approach patterns"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Drills for footwork",
+   "f": "Ladders, spider runs and recovery drills"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Live-ball drills",
+   "f": "Drills that turn into points to simulate matches"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Playing practice sets",
+   "f": "Using sets to test patterns and routines"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Mental game basics",
+   "f": "Focusing on the next point, not the scoreboard"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Between-point routines",
+   "f": "Breathing, the towel and planning the next point"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Handling nerves",
+   "f": "Calming routines for tight moments"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Positive self-talk",
+   "f": "Talking to yourself like a helpful coach"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Bouncing back from a bad game",
+   "f": "Resetting after mistakes"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Fair play and line calls",
+   "f": "Honest calls and handling disagreements politely"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Playing league tennis",
+   "f": "Joining local leagues and team competitions"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Your first tournament",
+   "f": "Entering, preparing for and enjoying a local event"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Rating systems",
+   "f": "How systems like NTRP, UTR and national ratings work"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Choosing a racket",
+   "f": "Testing frames and matching one to your style"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Choosing strings",
+   "f": "Matching strings and tension to your game"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Coaching basics",
+   "f": "Helping beginners learn with simple feedback"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Teaching kids tennis",
+   "f": "Red, orange and green balls and smaller courts"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Women's tennis rivalries",
+   "f": "Graf and Seles, Serena and Venus, and other great duels"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Men's tennis rivalries",
+   "f": "Borg and McEnroe, Sampras and Agassi, Federer and Nadal"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Great comebacks",
+   "f": "Matches won from two sets down or after saving match points"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Upsets that shocked tennis",
+   "f": "Surprising wins by underdogs"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Grace under pressure",
+   "f": "Champions known for staying calm in big moments"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Sportsmanship moments",
+   "f": "Memorable gestures of respect between rivals"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Tennis and travel",
+   "f": "Following tournaments around the world"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Your favorite player deep dive",
+   "f": "Analyzing a player's style, strengths and history"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Planning your next steps",
+   "f": "Choosing focus areas for the advanced level"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Review: intermediate level",
+   "f": "A celebration of intermediate tactics, stats and culture"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Advanced level kickoff",
+   "f": "What advanced study looks like: biomechanics, tactics and analysis"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Biomechanics of the forehand",
+   "f": "Hip and shoulder separation, lag and a relaxed arm"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "The windshield-wiper finish",
+   "f": "The modern forehand follow-through and its effect on spin"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Lag and racket drop",
+   "f": "How a relaxed arm creates racket head speed"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Biomechanics of the backhand",
+   "f": "Coil, extension and balance on both backhand types"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Serve biomechanics",
+   "f": "Leg drive, trunk rotation, pronation and the kinetic chain"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Toss placement by serve type",
+   "f": "Toss positions for flat, slice and kick serves"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Racket head speed",
+   "f": "Where real power comes from and why relaxation matters"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Spin rates",
+   "f": "How much spin top players generate and what it does to the ball"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Trajectory and margins",
+   "f": "Net clearance and landing depth as control tools"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Ball physics on each surface",
+   "f": "Friction, bounce height and speed on clay, grass and hard courts"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Grip transitions",
+   "f": "Changing grips smoothly between shots"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Hybrid backhands",
+   "f": "Mixing slice and topspin on the backhand side"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "The squash shot",
+   "f": "A defensive forehand from far out of position"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "The tweener",
+   "f": "The between-the-legs trick shot and when it actually works"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Reflex volleys",
+   "f": "Fast hands in quick exchanges at the net"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "The drop volley",
+   "f": "Taking the pace off at the net to win the point"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Advanced footwork",
+   "f": "Hops, glides and adjustments on the fly"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Defense to offense",
+   "f": "Turning a defensive position into an attacking one"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Court positioning science",
+   "f": "Bisecting the angle of the opponent's possible replies"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Taking time away",
+   "f": "Standing closer to the baseline to rush opponents"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Return positioning strategy",
+   "f": "Deep return positions versus aggressive ones"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Serve disguise",
+   "f": "Hiding the direction with the same toss and motion"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Reading the serve",
+   "f": "Clues from the toss and the server's body position"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Advanced serve patterns",
+   "f": "Patterns by score, surface and opponent"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "First-strike tennis",
+   "f": "Serve plus one and return plus one patterns"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Point construction on clay",
+   "f": "Using height, angles and patience to open the court"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Point construction on grass",
+   "f": "Low slices, serves and quick finishes"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Adapting during a match",
+   "f": "Recognizing what works and changing the plan"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Review: advanced technique",
+   "f": "A recap of biomechanics, specialty shots and first-strike tennis"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Studying Federer's style",
+   "f": "Footwork, timing and all-court variety"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Studying Nadal's style",
+   "f": "Left-handed topspin, defense and relentless intensity"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Studying Djokovic's style",
+   "f": "Return of serve, flexibility and balance"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Studying Serena Williams's style",
+   "f": "One of the greatest serves in history and dominant power"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Studying Steffi Graf's style",
+   "f": "A fearsome forehand, a slice backhand and great speed"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Studying Navratilova's style",
+   "f": "Left-handed serve-and-volley excellence"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Studying Pete Sampras's style",
+   "f": "The serve, the running forehand and calm on big points"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Studying Andre Agassi's style",
+   "f": "Early ball striking and outstanding returns"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Studying Justine Henin's style",
+   "f": "One of the most admired one-handed backhands"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Studying Ash Barty's style",
+   "f": "Slice, variety and intelligent point building"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Artists of variety",
+   "f": "Players known for touch, creativity and surprise"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "The one-handed backhand today",
+   "f": "Why it is rarer and who still uses it"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "The modern two-handed backhand",
+   "f": "Players who turned it into a weapon"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Lefties in tennis history",
+   "f": "Laver, McEnroe, Navratilova, Seles, Nadal and others"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Tall servers",
+   "f": "How height changes serving and returning"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Smaller champions",
+   "f": "How shorter players win with speed and smart tactics"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Evolution of playing styles",
+   "f": "How styles changed from wooden rackets to polyester strings"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "The decline of serve-and-volley",
+   "f": "Why it became rare and whether it could return"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Surface speed changes",
+   "f": "How courts and balls have changed over the decades"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Review: champions and styles",
+   "f": "A recap of the playing styles of great champions"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Periodization",
+   "f": "Planning training phases across a season"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Tennis-specific strength",
+   "f": "General strength principles for tennis players"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Speed and agility",
+   "f": "First step, change of direction and recovery speed"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Flexibility and mobility",
+   "f": "Why mobility helps both strokes and movement"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Recovery for tennis players",
+   "f": "General information on sleep, rest and recovery days"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Match-day nutrition basics",
+   "f": "General information on fueling before and during long matches"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Playing long matches",
+   "f": "Pacing your energy across three or five sets"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Tennis at every age",
+   "f": "How players adapt their game as they get older"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Mental training techniques",
+   "f": "Visualization, goal setting and routines"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Review: performance",
+   "f": "A recap of training, recovery and mental preparation"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Advanced match analysis",
+   "f": "Charting shot patterns and point outcomes"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Serve direction data",
+   "f": "Finding an opponent's tendencies on big points"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Return depth analysis",
+   "f": "Measuring return quality, not just returns made"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Valuing court positions",
+   "f": "How analysts value attacking and defensive positions"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Win probability in tennis",
+   "f": "Why tennis scoring creates big swings"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Key points matter more",
+   "f": "Why some points weigh more than others"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Hold and break percentages",
+   "f": "Comparing serve strength and return strength"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Tactical scouting reports",
+   "f": "Writing a clear report on an opponent"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Adjustments between sets",
+   "f": "What to change when the plan is not working"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Advanced doubles tactics",
+   "f": "Signals, fake poaches and serve patterns in doubles"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Doubles return strategy",
+   "f": "Low returns, lobs and attacking the net player"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Doubles specialists",
+   "f": "What makes a great doubles player different"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Team event strategy",
+   "f": "Lineups and pressure in Davis Cup and Billie Jean King Cup ties"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Coaching an advanced player",
+   "f": "Feedback, video and tactical guidance"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Video analysis",
+   "f": "Filming and reviewing your own strokes"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Using technology",
+   "f": "Sensors, apps and tracking for players"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Equipment fine-tuning",
+   "f": "Weight, balance and customizing a racket"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Pro string setups",
+   "f": "Hybrids, tensions and what amateurs can learn from them"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Court maintenance",
+   "f": "How clay, grass and hard courts are cared for"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Tournament organization",
+   "f": "What it takes to run a tennis event"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "The Open Era",
+   "f": "Why 1968 changed tennis forever"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Women's tennis pioneers",
+   "f": "The Original 9 and the founding of the WTA"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Equal prize money",
+   "f": "How the Grand Slams moved to equal pay for men and women"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Wimbledon's history",
+   "f": "Centre Court, the roof and lasting traditions"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Roland-Garros history",
+   "f": "The Four Musketeers and the red clay of Paris"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "US Open history",
+   "f": "From Newport and Forest Hills to Flushing Meadows"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Australian Open history",
+   "f": "From grass courts to hard courts at Melbourne Park"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Davis Cup history",
+   "f": "Great ties and memorable national triumphs"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Wheelchair tennis champions",
+   "f": "Esther Vergeer, Shingo Kunieda and their records"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Review: history",
+   "f": "A recap of the Open Era, pioneers and Grand Slam stories"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Analyzing a classic match",
+   "f": "Breaking down a famous match point by point"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Comparing eras",
+   "f": "Equipment, surfaces and why comparisons are hard"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "The greatest of all time debate",
+   "f": "The criteria fans use and why opinions differ"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Tennis as a global sport",
+   "f": "How tennis connects players and fans across cultures"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Tennis and community",
+   "f": "Public courts, clubs and programs for kids"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Inclusive tennis",
+   "f": "Adaptive tennis and programs for all ages and abilities"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Padel, pickleball and tennis",
+   "f": "How these related racket sports compare"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Tennis media",
+   "f": "Broadcasts, commentary and tennis writing"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Tennis travel ideas",
+   "f": "Visiting Grand Slams, historic clubs and museums"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Tennis across cultures",
+   "f": "What different countries bring to the game"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Design your game style",
+   "f": "Defining your own identity on court"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Build your match plan",
+   "f": "Writing a complete plan for a specific opponent"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Coaching philosophy",
+   "f": "Your values and your way of teaching tennis"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Teaching the serve",
+   "f": "Explaining the serve step by step to a beginner"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Self-scouting",
+   "f": "An honest review of your strengths and weaknesses"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Creating a training season",
+   "f": "Planning months of practice with clear goals"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Organizing a club event",
+   "f": "Round robins, ladders and social tournaments"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Tennis for life",
+   "f": "Keeping the game in your life for decades"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "The future of tennis",
+   "f": "Technology, new formats and global growth"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Your tennis story",
+   "f": "Reflecting on how your view of the game has changed"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Teaching a friend",
+   "f": "Explaining one concept to someone new to tennis"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Your personal playbook",
+   "f": "Collecting your favorite patterns and drills"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Your dream tournament trip",
+   "f": "Planning a visit to a big event"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Final review",
+   "f": "Looking back at the biggest lessons of the year"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Celebration day",
+   "f": "Celebrating 365 days of tennis and setting new goals"
+  }
+ ]
+}

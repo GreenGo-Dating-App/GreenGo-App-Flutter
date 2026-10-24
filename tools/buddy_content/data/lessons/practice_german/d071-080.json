@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 71,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Big numbers and years",
+     "g": "Say big numbers like hundert, tausend and eine Million, and read years the German way.",
+     "p": [
+      "Hundert and tausend: zweihundert, dreitausend. Numbers are written as one word: zweitausendfünfhundert.",
+      "Years up to 1999 are said in hundreds: 1990 is neunzehnhundertneunzig. From 2000: zweitausendzehn.",
+      "Say im Jahr 2010 or just 2010, never in 2010. Ich bin 1995 geboren."
+     ],
+     "q": "In which year were you born, and which year was important for you? Say the years in German.",
+     "c": "Write three years in German words: your birth year, a year you travelled and a year from your childhood."
+    },
+    "de": {
+     "t": "Große Zahlen und Jahreszahlen",
+     "g": "Du sagst große Zahlen wie hundert, tausend und eine Million und liest Jahreszahlen richtig.",
+     "p": [
+      "Hundert und tausend: zweihundert, dreitausend. Man schreibt Zahlen in einem Wort: zweitausendfünfhundert.",
+      "Jahre bis 1999 sagt man in Hunderten: 1990 ist neunzehnhundertneunzig. Ab 2000: zweitausendzehn.",
+      "Man sagt im Jahr 2010 oder einfach 2010, nie in 2010. Ich bin 1995 geboren."
+     ],
+     "q": "In welchem Jahr bist du geboren, und welches Jahr war für dich wichtig? Sag die Jahreszahlen auf Deutsch.",
+     "c": "Schreib drei Jahreszahlen in Worten: dein Geburtsjahr, ein Reisejahr und ein Jahr aus deiner Kindheit."
+    },
+    "es": {
+     "t": "Números grandes y años",
+     "g": "Di números grandes como hundert, tausend y eine Million, y lee los años al estilo alemán.",
+     "p": [
+      "Hundert y tausend: zweihundert, dreitausend. Los números se escriben en una palabra: zweitausendfünfhundert.",
+      "Hasta 1999 los años se dicen en centenas: 1990 es neunzehnhundertneunzig. Desde 2000: zweitausendzehn.",
+      "Se dice im Jahr 2010 o solo 2010, nunca in 2010. Ich bin 1995 geboren."
+     ],
+     "q": "¿En qué año naciste y qué año fue importante para ti? Di los años en alemán.",
+     "c": "Escribe en letras tres años: el de tu nacimiento, uno en que viajaste y uno de tu infancia."
+    },
+    "fr": {
+     "t": "Grands nombres et années",
+     "g": "Dire de grands nombres comme hundert, tausend et eine Million, et lire les années à l'allemande.",
+     "p": [
+      "Hundert et tausend : zweihundert, dreitausend. Les nombres s'écrivent en un mot : zweitausendfünfhundert.",
+      "Jusqu'à 1999, on dit les années en centaines : 1990 se dit neunzehnhundertneunzig. Dès 2000 : zweitausendzehn.",
+      "On dit im Jahr 2010 ou simplement 2010, jamais in 2010. Ich bin 1995 geboren."
+     ],
+     "q": "En quelle année es-tu né, et quelle année a compté pour toi ? Dis les années en allemand.",
+     "c": "Écris en lettres trois années : ta naissance, une année de voyage et une année de ton enfance."
+    },
+    "it": {
+     "t": "Numeri grandi e anni",
+     "g": "Dici numeri grandi come hundert, tausend ed eine Million e leggi gli anni alla tedesca.",
+     "p": [
+      "Hundert e tausend: zweihundert, dreitausend. I numeri si scrivono in una parola: zweitausendfünfhundert.",
+      "Fino al 1999 gli anni si dicono a centinaia: 1990 è neunzehnhundertneunzig. Dal 2000: zweitausendzehn.",
+      "Si dice im Jahr 2010 o solo 2010, mai in 2010. Ich bin 1995 geboren."
+     ],
+     "q": "In che anno sei nato e quale anno è stato importante per te? Di' gli anni in tedesco.",
+     "c": "Scrivi in lettere tre anni: quello di nascita, un anno di viaggio e un anno della tua infanzia."
+    },
+    "pt": {
+     "t": "Números grandes e anos",
+     "g": "Dizer números grandes como hundert, tausend e eine Million, e ler os anos à alemã.",
+     "p": [
+      "Hundert e tausend: zweihundert, dreitausend. Os números escrevem-se numa palavra: zweitausendfünfhundert.",
+      "Até 1999 os anos dizem-se em centenas: 1990 é neunzehnhundertneunzig. A partir de 2000: zweitausendzehn.",
+      "Diz-se im Jahr 2010 ou só 2010, nunca in 2010. Ich bin 1995 geboren."
+     ],
+     "q": "Em que ano nasceste e que ano foi importante para ti? Diz os anos em alemão.",
+     "c": "Escreve por extenso três anos: o do teu nascimento, um ano de viagem e um ano da tua infância."
+    },
+    "pt_BR": {
+     "t": "Números grandes e anos",
+     "g": "Dizer números grandes como hundert, tausend e eine Million, e ler os anos do jeito alemão.",
+     "p": [
+      "Hundert e tausend: zweihundert, dreitausend. Os números se escrevem numa palavra só: zweitausendfünfhundert.",
+      "Até 1999 os anos são ditos em centenas: 1990 é neunzehnhundertneunzig. A partir de 2000: zweitausendzehn.",
+      "Diga im Jahr 2010 ou só 2010, nunca in 2010. Ich bin 1995 geboren."
+     ],
+     "q": "Em que ano você nasceu e que ano foi importante para você? Diga os anos em alemão.",
+     "c": "Escreva por extenso três anos: o do seu nascimento, um ano de viagem e um ano da sua infância."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hundert",
+      "ex": "Das Buch hat dreihundert Seiten."
+     },
+     {
+      "w": "tausend",
+      "ex": "Die Stadt hat zwanzigtausend Einwohner."
+     },
+     {
+      "w": "eine Million",
+      "ex": "Wien hat fast zwei Millionen Einwohner."
+     },
+     {
+      "w": "das Jahr",
+      "ex": "Im Jahr 2015 war ich in Berlin."
+     },
+     {
+      "w": "geboren",
+      "ex": "Ich bin neunzehnhundertneunzig geboren."
+     },
+     {
+      "w": "ungefähr",
+      "ex": "Das kostet ungefähr tausend Euro."
+     }
+    ],
+    "gram": "1990 = neunzehnhundertneunzig, 2024 = zweitausendvierundzwanzig. Ich bin 1990 geboren. Im Jahr 2010 (nicht: in 2010)."
+   }
+  },
+  {
+   "d": 72,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Comparisons",
+     "g": "Compare people and things with the comparative + als and with so ... wie.",
+     "p": [
+      "Add -er to the adjective: schnell, schneller; klein, kleiner. Short words often take an umlaut: alt, älter; groß, größer.",
+      "Different: Mein Bruder ist größer als ich. Same: Anna ist so groß wie Paul. Use als, not wie, after -er.",
+      "Negative equality: Der Bus ist nicht so schnell wie der Zug."
+     ],
+     "q": "Compare two cities you know: which is bigger, older or more beautiful? Use als and so ... wie.",
+     "c": "Write four comparisons about you and a friend or family member, two with als and two with so ... wie."
+    },
+    "de": {
+     "t": "Vergleiche",
+     "g": "Du vergleichst Personen und Dinge mit dem Komparativ + als und mit so ... wie.",
+     "p": [
+      "Hänge -er an das Adjektiv: schnell, schneller; klein, kleiner. Kurze Wörter haben oft Umlaut: alt, älter; groß, größer.",
+      "Ungleich: Mein Bruder ist größer als ich. Gleich: Anna ist so groß wie Paul. Nach -er steht als, nicht wie.",
+      "Verneint: Der Bus ist nicht so schnell wie der Zug."
+     ],
+     "q": "Vergleich zwei Städte, die du kennst: Welche ist größer, älter oder schöner? Benutze als und so ... wie.",
+     "c": "Schreib vier Vergleiche über dich und eine andere Person, zwei mit als und zwei mit so ... wie."
+    },
+    "es": {
+     "t": "Comparaciones",
+     "g": "Compara personas y cosas con el comparativo + als y con so ... wie.",
+     "p": [
+      "Se añade -er al adjetivo: schnell, schneller; klein, kleiner. Las palabras cortas suelen llevar diéresis: alt, älter; groß, größer.",
+      "Diferencia: Mein Bruder ist größer als ich. Igualdad: Anna ist so groß wie Paul. Tras -er va als, no wie.",
+      "En negativo: Der Bus ist nicht so schnell wie der Zug."
+     ],
+     "q": "Compara dos ciudades que conozcas: ¿cuál es más grande, más antigua o más bonita? Usa als y so ... wie.",
+     "c": "Escribe cuatro comparaciones sobre ti y otra persona, dos con als y dos con so ... wie."
+    },
+    "fr": {
+     "t": "Les comparaisons",
+     "g": "Comparer des personnes et des choses avec le comparatif + als et avec so ... wie.",
+     "p": [
+      "On ajoute -er à l'adjectif : schnell, schneller ; klein, kleiner. Les mots courts prennent souvent l'Umlaut : alt, älter ; groß, größer.",
+      "Différence : Mein Bruder ist größer als ich. Égalité : Anna ist so groß wie Paul. Après -er, on met als, pas wie.",
+      "À la forme négative : Der Bus ist nicht so schnell wie der Zug."
+     ],
+     "q": "Compare deux villes que tu connais : laquelle est plus grande, plus ancienne ou plus belle ? Utilise als et so ... wie.",
+     "c": "Écris quatre comparaisons entre toi et une autre personne, deux avec als et deux avec so ... wie."
+    },
+    "it": {
+     "t": "I comparativi",
+     "g": "Confronti persone e cose con il comparativo + als e con so ... wie.",
+     "p": [
+      "Si aggiunge -er all'aggettivo: schnell, schneller; klein, kleiner. Le parole brevi prendono spesso l'Umlaut: alt, älter; groß, größer.",
+      "Differenza: Mein Bruder ist größer als ich. Uguaglianza: Anna ist so groß wie Paul. Dopo -er si usa als, non wie.",
+      "Al negativo: Der Bus ist nicht so schnell wie der Zug."
+     ],
+     "q": "Confronta due città che conosci: quale è più grande, più antica o più bella? Usa als e so ... wie.",
+     "c": "Scrivi quattro confronti tra te e un'altra persona, due con als e due con so ... wie."
+    },
+    "pt": {
+     "t": "Comparações",
+     "g": "Comparar pessoas e coisas com o comparativo + als e com so ... wie.",
+     "p": [
+      "Junta-se -er ao adjetivo: schnell, schneller; klein, kleiner. As palavras curtas levam muitas vezes trema: alt, älter; groß, größer.",
+      "Diferença: Mein Bruder ist größer als ich. Igualdade: Anna ist so groß wie Paul. Depois de -er usa-se als, não wie.",
+      "Na negativa: Der Bus ist nicht so schnell wie der Zug."
+     ],
+     "q": "Compara duas cidades que conheces: qual é maior, mais antiga ou mais bonita? Usa als e so ... wie.",
+     "c": "Escreve quatro comparações entre ti e outra pessoa, duas com als e duas com so ... wie."
+    },
+    "pt_BR": {
+     "t": "Comparações",
+     "g": "Comparar pessoas e coisas com o comparativo + als e com so ... wie.",
+     "p": [
+      "Acrescente -er ao adjetivo: schnell, schneller; klein, kleiner. Palavras curtas muitas vezes ganham trema: alt, älter; groß, größer.",
+      "Diferença: Mein Bruder ist größer als ich. Igualdade: Anna ist so groß wie Paul. Depois de -er vem als, não wie.",
+      "Na negativa: Der Bus ist nicht so schnell wie der Zug."
+     ],
+     "q": "Compare duas cidades que você conhece: qual é maior, mais antiga ou mais bonita? Use als e so ... wie.",
+     "c": "Escreva quatro comparações entre você e outra pessoa, duas com als e duas com so ... wie."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "schneller als",
+      "ex": "Der Zug ist schneller als das Auto."
+     },
+     {
+      "w": "so groß wie",
+      "ex": "Meine Schwester ist so groß wie ich."
+     },
+     {
+      "w": "älter",
+      "ex": "Mein Bruder ist zwei Jahre älter als ich."
+     },
+     {
+      "w": "größer",
+      "ex": "Berlin ist größer als München."
+     },
+     {
+      "w": "billiger",
+      "ex": "Das Brot hier ist billiger als im Supermarkt."
+     },
+     {
+      "w": "nicht so ... wie",
+      "ex": "Heute ist es nicht so warm wie gestern."
+     }
+    ],
+    "gram": "Komparativ: Adjektiv + -er (+ oft Umlaut): alt - älter. Ungleich: größer als. Gleich: so groß wie. Nicht so ... wie."
+   }
+  },
+  {
+   "d": 73,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Superlatives",
+     "g": "Say what is the most or the best with am ...sten and der/die/das ...ste.",
+     "p": [
+      "After a verb use am + -sten: Der Zug fährt am schnellsten. Ich mag den Sommer am liebsten.",
+      "Before a noun use the article + -ste: der schnellste Zug, die größte Stadt, das schönste Haus.",
+      "After d, t, s, ß, z add -esten: am ältesten, am heißesten. Short words keep the umlaut: am größten."
+     ],
+     "q": "What is the most beautiful place you know, and which season do you like am liebsten?",
+     "c": "Write three superlatives about your country: the biggest city, the highest mountain and the most beautiful place."
+    },
+    "de": {
+     "t": "Der Superlativ",
+     "g": "Du sagst, was am meisten oder am besten ist, mit am ...sten und der/die/das ...ste.",
+     "p": [
+      "Beim Verb steht am + -sten: Der Zug fährt am schnellsten. Ich mag den Sommer am liebsten.",
+      "Vor dem Nomen steht der Artikel + -ste: der schnellste Zug, die größte Stadt, das schönste Haus.",
+      "Nach d, t, s, ß, z kommt -esten: am ältesten, am heißesten. Kurze Wörter behalten den Umlaut: am größten."
+     ],
+     "q": "Was ist der schönste Ort, den du kennst, und welche Jahreszeit magst du am liebsten?",
+     "c": "Schreib drei Superlative über dein Land: die größte Stadt, der höchste Berg und der schönste Ort."
+    },
+    "es": {
+     "t": "Los superlativos",
+     "g": "Di qué es lo más o lo mejor con am ...sten y der/die/das ...ste.",
+     "p": [
+      "Con el verbo se usa am + -sten: Der Zug fährt am schnellsten. Ich mag den Sommer am liebsten.",
+      "Delante de un sustantivo, artículo + -ste: der schnellste Zug, die größte Stadt, das schönste Haus.",
+      "Tras d, t, s, ß, z se añade -esten: am ältesten, am heißesten. Las cortas mantienen la diéresis: am größten."
+     ],
+     "q": "¿Cuál es el lugar más bonito que conoces y qué estación te gusta am liebsten?",
+     "c": "Escribe tres superlativos sobre tu país: la ciudad más grande, la montaña más alta y el lugar más bonito."
+    },
+    "fr": {
+     "t": "Les superlatifs",
+     "g": "Dire ce qui est le plus ou le meilleur avec am ...sten et der/die/das ...ste.",
+     "p": [
+      "Avec un verbe : am + -sten : Der Zug fährt am schnellsten. Ich mag den Sommer am liebsten.",
+      "Devant un nom : article + -ste : der schnellste Zug, die größte Stadt, das schönste Haus.",
+      "Après d, t, s, ß, z on ajoute -esten : am ältesten, am heißesten. Les mots courts gardent l'Umlaut : am größten."
+     ],
+     "q": "Quel est le plus bel endroit que tu connais, et quelle saison aimes-tu am liebsten ?",
+     "c": "Écris trois superlatifs sur ton pays : la plus grande ville, la plus haute montagne et le plus bel endroit."
+    },
+    "it": {
+     "t": "I superlativi",
+     "g": "Dici che cosa è il più o il migliore con am ...sten e der/die/das ...ste.",
+     "p": [
+      "Con il verbo si usa am + -sten: Der Zug fährt am schnellsten. Ich mag den Sommer am liebsten.",
+      "Davanti al nome si usa articolo + -ste: der schnellste Zug, die größte Stadt, das schönste Haus.",
+      "Dopo d, t, s, ß, z si aggiunge -esten: am ältesten, am heißesten. Le parole brevi tengono l'Umlaut: am größten."
+     ],
+     "q": "Qual è il posto più bello che conosci e quale stagione ti piace am liebsten?",
+     "c": "Scrivi tre superlativi sul tuo paese: la città più grande, la montagna più alta e il posto più bello."
+    },
+    "pt": {
+     "t": "Os superlativos",
+     "g": "Dizer o que é o mais ou o melhor com am ...sten e der/die/das ...ste.",
+     "p": [
+      "Com o verbo usa-se am + -sten: Der Zug fährt am schnellsten. Ich mag den Sommer am liebsten.",
+      "Antes de um nome, artigo + -ste: der schnellste Zug, die größte Stadt, das schönste Haus.",
+      "Depois de d, t, s, ß, z junta-se -esten: am ältesten, am heißesten. As palavras curtas mantêm o trema: am größten."
+     ],
+     "q": "Qual é o sítio mais bonito que conheces e de que estação gostas am liebsten?",
+     "c": "Escreve três superlativos sobre o teu país: a maior cidade, a montanha mais alta e o sítio mais bonito."
+    },
+    "pt_BR": {
+     "t": "Os superlativos",
+     "g": "Dizer o que é o mais ou o melhor com am ...sten e der/die/das ...ste.",
+     "p": [
+      "Com o verbo se usa am + -sten: Der Zug fährt am schnellsten. Ich mag den Sommer am liebsten.",
+      "Antes do substantivo, artigo + -ste: der schnellste Zug, die größte Stadt, das schönste Haus.",
+      "Depois de d, t, s, ß, z vem -esten: am ältesten, am heißesten. Palavras curtas mantêm o trema: am größten."
+     ],
+     "q": "Qual é o lugar mais bonito que você conhece e de que estação você gosta am liebsten?",
+     "c": "Escreva três superlativos sobre seu país: a maior cidade, a montanha mais alta e o lugar mais bonito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "am schnellsten",
+      "ex": "Mit dem Zug bin ich am schnellsten dort."
+     },
+     {
+      "w": "der größte",
+      "ex": "Das ist der größte Park der Stadt."
+     },
+     {
+      "w": "die schönste",
+      "ex": "Das ist die schönste Straße hier."
+     },
+     {
+      "w": "am ältesten",
+      "ex": "Meine Oma ist in der Familie am ältesten."
+     },
+     {
+      "w": "am liebsten",
+      "ex": "Am liebsten esse ich Pizza."
+     },
+     {
+      "w": "der höchste",
+      "ex": "Die Zugspitze ist der höchste Berg Deutschlands."
+     }
+    ],
+    "gram": "Superlativ: am + Adjektiv + -(e)sten (am schnellsten, am ältesten) oder der/die/das + -(e)ste (der schnellste Zug)."
+   }
+  },
+  {
+   "d": 74,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Gut, besser, am besten",
+     "g": "Use the irregular comparisons of gut, viel, gern and hoch in everyday sentences.",
+     "p": [
+      "Gut, besser, am besten: Ich koche gut, mein Vater kocht besser, meine Mutter kocht am besten.",
+      "Viel, mehr, am meisten and gern, lieber, am liebsten: Ich trinke gern Tee, lieber Kaffee, am liebsten Wasser.",
+      "Also irregular: hoch, höher, am höchsten and nah, näher, am nächsten."
+     ],
+     "q": "What do you like doing, what do you like doing more, and what do you like am liebsten? Answer with gern, lieber, am liebsten.",
+     "c": "Rank three foods or hobbies with gern, lieber, am liebsten, and three people with gut, besser, am besten."
+    },
+    "de": {
+     "t": "Gut, besser, am besten",
+     "g": "Du benutzt die unregelmäßigen Formen von gut, viel, gern und hoch im Alltag.",
+     "p": [
+      "Gut, besser, am besten: Ich koche gut, mein Vater kocht besser, meine Mutter kocht am besten.",
+      "Viel, mehr, am meisten und gern, lieber, am liebsten: Ich trinke gern Tee, lieber Kaffee, am liebsten Wasser.",
+      "Auch unregelmäßig: hoch, höher, am höchsten und nah, näher, am nächsten."
+     ],
+     "q": "Was machst du gern, was lieber und was am liebsten? Antworte mit gern, lieber und am liebsten.",
+     "c": "Ordne drei Speisen oder Hobbys mit gern, lieber, am liebsten und drei Personen mit gut, besser, am besten."
+    },
+    "es": {
+     "t": "Gut, besser, am besten",
+     "g": "Usa los comparativos irregulares de gut, viel, gern y hoch en frases cotidianas.",
+     "p": [
+      "Gut, besser, am besten: Ich koche gut, mein Vater kocht besser, meine Mutter kocht am besten.",
+      "Viel, mehr, am meisten y gern, lieber, am liebsten: Ich trinke gern Tee, lieber Kaffee, am liebsten Wasser.",
+      "También irregulares: hoch, höher, am höchsten y nah, näher, am nächsten."
+     ],
+     "q": "¿Qué te gusta hacer, qué prefieres y qué te gusta am liebsten? Responde con gern, lieber y am liebsten.",
+     "c": "Ordena tres comidas o aficiones con gern, lieber, am liebsten y tres personas con gut, besser, am besten."
+    },
+    "fr": {
+     "t": "Gut, besser, am besten",
+     "g": "Utiliser les comparatifs irréguliers de gut, viel, gern et hoch au quotidien.",
+     "p": [
+      "Gut, besser, am besten : Ich koche gut, mein Vater kocht besser, meine Mutter kocht am besten.",
+      "Viel, mehr, am meisten et gern, lieber, am liebsten : Ich trinke gern Tee, lieber Kaffee, am liebsten Wasser.",
+      "Aussi irréguliers : hoch, höher, am höchsten et nah, näher, am nächsten."
+     ],
+     "q": "Qu'aimes-tu faire, que préfères-tu et qu'aimes-tu am liebsten ? Réponds avec gern, lieber et am liebsten.",
+     "c": "Classe trois plats ou loisirs avec gern, lieber, am liebsten et trois personnes avec gut, besser, am besten."
+    },
+    "it": {
+     "t": "Gut, besser, am besten",
+     "g": "Usi i comparativi irregolari di gut, viel, gern e hoch nelle frasi di ogni giorno.",
+     "p": [
+      "Gut, besser, am besten: Ich koche gut, mein Vater kocht besser, meine Mutter kocht am besten.",
+      "Viel, mehr, am meisten e gern, lieber, am liebsten: Ich trinke gern Tee, lieber Kaffee, am liebsten Wasser.",
+      "Irregolari anche: hoch, höher, am höchsten e nah, näher, am nächsten."
+     ],
+     "q": "Che cosa ti piace fare, che cosa preferisci e che cosa ti piace am liebsten? Rispondi con gern, lieber e am liebsten.",
+     "c": "Metti in ordine tre cibi o hobby con gern, lieber, am liebsten e tre persone con gut, besser, am besten."
+    },
+    "pt": {
+     "t": "Gut, besser, am besten",
+     "g": "Usar as formas irregulares de gut, viel, gern e hoch em frases do dia a dia.",
+     "p": [
+      "Gut, besser, am besten: Ich koche gut, mein Vater kocht besser, meine Mutter kocht am besten.",
+      "Viel, mehr, am meisten e gern, lieber, am liebsten: Ich trinke gern Tee, lieber Kaffee, am liebsten Wasser.",
+      "Também irregulares: hoch, höher, am höchsten e nah, näher, am nächsten."
+     ],
+     "q": "O que gostas de fazer, o que preferes e o que gostas am liebsten? Responde com gern, lieber e am liebsten.",
+     "c": "Ordena três comidas ou passatempos com gern, lieber, am liebsten e três pessoas com gut, besser, am besten."
+    },
+    "pt_BR": {
+     "t": "Gut, besser, am besten",
+     "g": "Usar as formas irregulares de gut, viel, gern e hoch em frases do dia a dia.",
+     "p": [
+      "Gut, besser, am besten: Ich koche gut, mein Vater kocht besser, meine Mutter kocht am besten.",
+      "Viel, mehr, am meisten e gern, lieber, am liebsten: Ich trinke gern Tee, lieber Kaffee, am liebsten Wasser.",
+      "Também irregulares: hoch, höher, am höchsten e nah, näher, am nächsten."
+     ],
+     "q": "O que você gosta de fazer, o que prefere e o que curte am liebsten? Responda com gern, lieber e am liebsten.",
+     "c": "Ordene três comidas ou hobbies com gern, lieber, am liebsten e três pessoas com gut, besser, am besten."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "besser",
+      "ex": "Heute geht es mir besser."
+     },
+     {
+      "w": "am besten",
+      "ex": "Meine Oma kocht am besten."
+     },
+     {
+      "w": "mehr",
+      "ex": "Ich möchte mehr Deutsch sprechen."
+     },
+     {
+      "w": "am meisten",
+      "ex": "Am meisten lese ich am Wochenende."
+     },
+     {
+      "w": "lieber",
+      "ex": "Ich trinke lieber Tee als Kaffee."
+     },
+     {
+      "w": "höher",
+      "ex": "Der Turm ist höher als die Kirche."
+     }
+    ],
+    "gram": "Unregelmäßig: gut - besser - am besten, viel - mehr - am meisten, gern - lieber - am liebsten, hoch - höher - am höchsten."
+   }
+  },
+  {
+   "d": 75,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Two-way prepositions: where?",
+     "g": "Say where something is with in, an, auf, unter and other two-way prepositions + dative.",
+     "p": [
+      "Nine two-way prepositions: in, an, auf, unter, über, vor, hinter, neben, zwischen.",
+      "For position (Wo?) they take the dative: Das Buch liegt auf dem Tisch. Die Katze ist unter dem Bett.",
+      "Short forms: in dem becomes im, an dem becomes am: im Zimmer, am Fenster."
+     ],
+     "q": "Look around your room: wo ist dein Handy, wo ist deine Tasche? Answer with auf, neben or unter + dative.",
+     "c": "Describe your desk or kitchen in five sentences with five different prepositions and the dative."
+    },
+    "de": {
+     "t": "Wechselpräpositionen: wo?",
+     "g": "Du sagst mit in, an, auf, unter und anderen Wechselpräpositionen + Dativ, wo etwas ist.",
+     "p": [
+      "Die neun Wechselpräpositionen: in, an, auf, unter, über, vor, hinter, neben, zwischen.",
+      "Bei der Position (Wo?) steht der Dativ: Das Buch liegt auf dem Tisch. Die Katze ist unter dem Bett.",
+      "Kurzformen: in dem wird im, an dem wird am: im Zimmer, am Fenster."
+     ],
+     "q": "Schau dich in deinem Zimmer um: Wo ist dein Handy, wo ist deine Tasche? Antworte mit auf, neben oder unter + Dativ.",
+     "c": "Beschreib deinen Schreibtisch oder deine Küche in fünf Sätzen mit fünf verschiedenen Präpositionen."
+    },
+    "es": {
+     "t": "Preposiciones de doble caso: ¿dónde?",
+     "g": "Di dónde está algo con in, an, auf, unter y otras preposiciones de doble caso + dativo.",
+     "p": [
+      "Las nueve preposiciones de doble caso: in, an, auf, unter, über, vor, hinter, neben, zwischen.",
+      "Para la posición (Wo?) llevan dativo: Das Buch liegt auf dem Tisch. Die Katze ist unter dem Bett.",
+      "Contracciones: in dem es im, an dem es am: im Zimmer, am Fenster."
+     ],
+     "q": "Mira tu habitación: ¿dónde está tu móvil, dónde está tu bolso? Responde con auf, neben o unter + dativo.",
+     "c": "Describe tu escritorio o tu cocina en cinco frases con cinco preposiciones diferentes y el dativo."
+    },
+    "fr": {
+     "t": "Prépositions mixtes : où ?",
+     "g": "Dire où se trouve quelque chose avec in, an, auf, unter et les autres prépositions mixtes + datif.",
+     "p": [
+      "Les neuf prépositions mixtes : in, an, auf, unter, über, vor, hinter, neben, zwischen.",
+      "Pour la position (Wo?), elles prennent le datif : Das Buch liegt auf dem Tisch. Die Katze ist unter dem Bett.",
+      "Contractions : in dem devient im, an dem devient am : im Zimmer, am Fenster."
+     ],
+     "q": "Regarde ta chambre : où est ton portable, où est ton sac ? Réponds avec auf, neben ou unter + datif.",
+     "c": "Décris ton bureau ou ta cuisine en cinq phrases avec cinq prépositions différentes et le datif."
+    },
+    "it": {
+     "t": "Preposizioni miste: dove?",
+     "g": "Dici dove si trova qualcosa con in, an, auf, unter e le altre preposizioni miste + dativo.",
+     "p": [
+      "Le nove preposizioni miste: in, an, auf, unter, über, vor, hinter, neben, zwischen.",
+      "Per lo stato in luogo (Wo?) vogliono il dativo: Das Buch liegt auf dem Tisch. Die Katze ist unter dem Bett.",
+      "Forme contratte: in dem diventa im, an dem diventa am: im Zimmer, am Fenster."
+     ],
+     "q": "Guardati intorno: dov'è il tuo cellulare, dov'è la tua borsa? Rispondi con auf, neben o unter + dativo.",
+     "c": "Descrivi la tua scrivania o la tua cucina in cinque frasi con cinque preposizioni diverse e il dativo."
+    },
+    "pt": {
+     "t": "Preposições de dois casos: onde?",
+     "g": "Dizer onde está algo com in, an, auf, unter e outras preposições de dois casos + dativo.",
+     "p": [
+      "As nove preposições de dois casos: in, an, auf, unter, über, vor, hinter, neben, zwischen.",
+      "Para a posição (Wo?) pedem dativo: Das Buch liegt auf dem Tisch. Die Katze ist unter dem Bett.",
+      "Contrações: in dem dá im, an dem dá am: im Zimmer, am Fenster."
+     ],
+     "q": "Olha à tua volta: onde está o teu telemóvel, onde está a tua mala? Responde com auf, neben ou unter + dativo.",
+     "c": "Descreve a tua secretária ou a tua cozinha em cinco frases com cinco preposições diferentes e o dativo."
+    },
+    "pt_BR": {
+     "t": "Preposições de dois casos: onde?",
+     "g": "Dizer onde algo está com in, an, auf, unter e outras preposições de dois casos + dativo.",
+     "p": [
+      "As nove preposições de dois casos: in, an, auf, unter, über, vor, hinter, neben, zwischen.",
+      "Para posição (Wo?) elas pedem dativo: Das Buch liegt auf dem Tisch. Die Katze ist unter dem Bett.",
+      "Contrações: in dem vira im, an dem vira am: im Zimmer, am Fenster."
+     ],
+     "q": "Olhe em volta: onde está seu celular, onde está sua bolsa? Responda com auf, neben ou unter + dativo.",
+     "c": "Descreva sua mesa ou sua cozinha em cinco frases com cinco preposições diferentes e o dativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "auf dem Tisch",
+      "ex": "Das Buch liegt auf dem Tisch."
+     },
+     {
+      "w": "unter dem Bett",
+      "ex": "Die Schuhe sind unter dem Bett."
+     },
+     {
+      "w": "im Zimmer",
+      "ex": "Mein Bruder ist im Zimmer."
+     },
+     {
+      "w": "neben der Tür",
+      "ex": "Der Schrank steht neben der Tür."
+     },
+     {
+      "w": "an der Wand",
+      "ex": "Das Bild hängt an der Wand."
+     },
+     {
+      "w": "zwischen",
+      "ex": "Die Lampe steht zwischen dem Sofa und dem Regal."
+     }
+    ],
+    "gram": "Wo? Wechselpräposition + Dativ: Das Buch liegt auf dem Tisch. Die Katze schläft im (in dem) Bett. Das Bild hängt am Fenster."
+   }
+  },
+  {
+   "d": 76,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Two-way prepositions: where to?",
+     "g": "Say where something goes with in, an, auf + accusative when there is movement to a place.",
+     "p": [
+      "For direction (Wohin?) the same prepositions take the accusative: Ich lege das Buch auf den Tisch.",
+      "Only the masculine changes visibly from yesterday: den instead of dem. Die and das stay: in die Küche, ins Kino.",
+      "Short forms: in das becomes ins, an das becomes ans: ins Bett, ans Meer. Ask Wohin? for movement, Wo? for place."
+     ],
+     "q": "Where do you go after work or school? Answer with in den, in die or ins + accusative.",
+     "c": "Write three pairs of sentences: Ich gehe ins Kino / Ich bin im Kino, and two more like that."
+    },
+    "de": {
+     "t": "Wechselpräpositionen: wohin?",
+     "g": "Du sagst mit in, an, auf + Akkusativ, wohin etwas geht, wenn es eine Bewegung gibt.",
+     "p": [
+      "Bei der Richtung (Wohin?) haben dieselben Präpositionen den Akkusativ: Ich lege das Buch auf den Tisch.",
+      "Sichtbar ändert sich vor allem das Maskulinum: den statt dem. Die und das bleiben: in die Küche, ins Kino.",
+      "Kurzformen: in das wird ins, an das wird ans: ins Bett, ans Meer. Wohin? für Bewegung, Wo? für den Ort."
+     ],
+     "q": "Wohin gehst du nach der Arbeit oder Schule? Antworte mit in den, in die oder ins + Akkusativ.",
+     "c": "Schreib drei Satzpaare: Ich gehe ins Kino / Ich bin im Kino und zwei weitere."
+    },
+    "es": {
+     "t": "Preposiciones de doble caso: ¿adónde?",
+     "g": "Di adónde va algo con in, an, auf + acusativo cuando hay movimiento hacia un lugar.",
+     "p": [
+      "Para la dirección (Wohin?) las mismas preposiciones llevan acusativo: Ich lege das Buch auf den Tisch.",
+      "Respecto a ayer cambia sobre todo el masculino: den en vez de dem. Die y das se quedan: in die Küche, ins Kino.",
+      "Contracciones: in das es ins, an das es ans: ins Bett, ans Meer. Wohin? para movimiento, Wo? para lugar."
+     ],
+     "q": "¿Adónde vas después del trabajo o la clase? Responde con in den, in die o ins + acusativo.",
+     "c": "Escribe tres pares de frases: Ich gehe ins Kino / Ich bin im Kino y dos más así."
+    },
+    "fr": {
+     "t": "Prépositions mixtes : où (direction) ?",
+     "g": "Dire où va quelque chose avec in, an, auf + accusatif quand il y a un mouvement vers un lieu.",
+     "p": [
+      "Pour la direction (Wohin?), les mêmes prépositions prennent l'accusatif : Ich lege das Buch auf den Tisch.",
+      "C'est surtout le masculin qui change : den au lieu de dem. Die et das restent : in die Küche, ins Kino.",
+      "Contractions : in das devient ins, an das devient ans : ins Bett, ans Meer. Wohin? pour le mouvement, Wo? pour le lieu."
+     ],
+     "q": "Où vas-tu après le travail ou l'école ? Réponds avec in den, in die ou ins + accusatif.",
+     "c": "Écris trois paires de phrases : Ich gehe ins Kino / Ich bin im Kino, et deux autres du même type."
+    },
+    "it": {
+     "t": "Preposizioni miste: verso dove?",
+     "g": "Dici dove va qualcosa con in, an, auf + accusativo quando c'è movimento verso un luogo.",
+     "p": [
+      "Per la direzione (Wohin?) le stesse preposizioni vogliono l'accusativo: Ich lege das Buch auf den Tisch.",
+      "Cambia soprattutto il maschile: den invece di dem. Die e das restano: in die Küche, ins Kino.",
+      "Forme contratte: in das diventa ins, an das diventa ans: ins Bett, ans Meer. Wohin? per il moto, Wo? per il luogo."
+     ],
+     "q": "Dove vai dopo il lavoro o la scuola? Rispondi con in den, in die o ins + accusativo.",
+     "c": "Scrivi tre coppie di frasi: Ich gehe ins Kino / Ich bin im Kino e altre due così."
+    },
+    "pt": {
+     "t": "Preposições de dois casos: para onde?",
+     "g": "Dizer para onde vai algo com in, an, auf + acusativo quando há movimento para um lugar.",
+     "p": [
+      "Para a direção (Wohin?) as mesmas preposições pedem acusativo: Ich lege das Buch auf den Tisch.",
+      "Muda sobretudo o masculino: den em vez de dem. Die e das ficam iguais: in die Küche, ins Kino.",
+      "Contrações: in das dá ins, an das dá ans: ins Bett, ans Meer. Wohin? para movimento, Wo? para lugar."
+     ],
+     "q": "Para onde vais depois do trabalho ou das aulas? Responde com in den, in die ou ins + acusativo.",
+     "c": "Escreve três pares de frases: Ich gehe ins Kino / Ich bin im Kino e mais dois assim."
+    },
+    "pt_BR": {
+     "t": "Preposições de dois casos: para onde?",
+     "g": "Dizer para onde algo vai com in, an, auf + acusativo quando há movimento para um lugar.",
+     "p": [
+      "Para direção (Wohin?) as mesmas preposições pedem acusativo: Ich lege das Buch auf den Tisch.",
+      "Muda principalmente o masculino: den em vez de dem. Die e das ficam iguais: in die Küche, ins Kino.",
+      "Contrações: in das vira ins, an das vira ans: ins Bett, ans Meer. Wohin? para movimento, Wo? para lugar."
+     ],
+     "q": "Para onde você vai depois do trabalho ou da aula? Responda com in den, in die ou ins + acusativo.",
+     "c": "Escreva três pares de frases: Ich gehe ins Kino / Ich bin im Kino e mais dois assim."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ins Kino",
+      "ex": "Am Freitag gehen wir ins Kino."
+     },
+     {
+      "w": "in die Küche",
+      "ex": "Ich gehe kurz in die Küche."
+     },
+     {
+      "w": "auf den Tisch",
+      "ex": "Stell die Tassen bitte auf den Tisch."
+     },
+     {
+      "w": "ans Meer",
+      "ex": "Im August fahren wir ans Meer."
+     },
+     {
+      "w": "in den Park",
+      "ex": "Die Kinder laufen in den Park."
+     },
+     {
+      "w": "wohin",
+      "ex": "Wohin gehst du heute Abend?"
+     }
+    ],
+    "gram": "Wohin? Wechselpräposition + Akkusativ: Ich gehe in den Park / in die Stadt / ins (in das) Kino. Wo? + Dativ: im Kino."
+   }
+  },
+  {
+   "d": 77,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Liegen, legen, stehen, stellen",
+     "g": "Use the position verbs correctly: which describe a place (dative) and which a movement (accusative).",
+     "p": [
+      "Position, Wo? + dative: liegen, stehen, hängen, sitzen. Das Buch liegt auf dem Tisch.",
+      "Movement, Wohin? + accusative: legen, stellen, hängen, setzen. Ich lege das Buch auf den Tisch.",
+      "Lying flat is liegen/legen, upright is stehen/stellen: die Flasche steht, das Handy liegt."
+     ],
+     "q": "Where are your keys right now, and where do you usually put them? Use liegen and legen.",
+     "c": "Tidy one shelf and describe it: three sentences with stellen or legen and three with stehen or liegen."
+    },
+    "de": {
+     "t": "Liegen, legen, stehen, stellen",
+     "g": "Du benutzt die Positionsverben richtig: Welche beschreiben einen Ort (Dativ), welche eine Bewegung (Akkusativ)?",
+     "p": [
+      "Position, Wo? + Dativ: liegen, stehen, hängen, sitzen. Das Buch liegt auf dem Tisch.",
+      "Bewegung, Wohin? + Akkusativ: legen, stellen, hängen, setzen. Ich lege das Buch auf den Tisch.",
+      "Flach ist liegen/legen, aufrecht ist stehen/stellen: Die Flasche steht, das Handy liegt."
+     ],
+     "q": "Wo liegen deine Schlüssel gerade, und wohin legst du sie normalerweise? Benutze liegen und legen.",
+     "c": "Räum ein Regal auf und beschreib es: drei Sätze mit stellen oder legen und drei mit stehen oder liegen."
+    },
+    "es": {
+     "t": "Liegen, legen, stehen, stellen",
+     "g": "Usa bien los verbos de posición: cuáles indican un lugar (dativo) y cuáles un movimiento (acusativo).",
+     "p": [
+      "Posición, Wo? + dativo: liegen, stehen, hängen, sitzen. Das Buch liegt auf dem Tisch.",
+      "Movimiento, Wohin? + acusativo: legen, stellen, hängen, setzen. Ich lege das Buch auf den Tisch.",
+      "Tumbado es liegen/legen y de pie es stehen/stellen: die Flasche steht, das Handy liegt."
+     ],
+     "q": "¿Dónde están tus llaves ahora y dónde las sueles dejar? Usa liegen y legen.",
+     "c": "Ordena una estantería y descríbela: tres frases con stellen o legen y tres con stehen o liegen."
+    },
+    "fr": {
+     "t": "Liegen, legen, stehen, stellen",
+     "g": "Utiliser les verbes de position : lesquels décrivent un lieu (datif) et lesquels un mouvement (accusatif).",
+     "p": [
+      "Position, Wo? + datif : liegen, stehen, hängen, sitzen. Das Buch liegt auf dem Tisch.",
+      "Mouvement, Wohin? + accusatif : legen, stellen, hängen, setzen. Ich lege das Buch auf den Tisch.",
+      "À plat, c'est liegen/legen ; debout, stehen/stellen : die Flasche steht, das Handy liegt."
+     ],
+     "q": "Où sont tes clés en ce moment, et où les poses-tu d'habitude ? Utilise liegen et legen.",
+     "c": "Range une étagère et décris-la : trois phrases avec stellen ou legen et trois avec stehen ou liegen."
+    },
+    "it": {
+     "t": "Liegen, legen, stehen, stellen",
+     "g": "Usi bene i verbi di posizione: quali indicano un luogo (dativo) e quali un movimento (accusativo).",
+     "p": [
+      "Posizione, Wo? + dativo: liegen, stehen, hängen, sitzen. Das Buch liegt auf dem Tisch.",
+      "Movimento, Wohin? + accusativo: legen, stellen, hängen, setzen. Ich lege das Buch auf den Tisch.",
+      "In orizzontale è liegen/legen, in verticale stehen/stellen: die Flasche steht, das Handy liegt."
+     ],
+     "q": "Dove sono le tue chiavi adesso e dove le metti di solito? Usa liegen e legen.",
+     "c": "Metti in ordine uno scaffale e descrivilo: tre frasi con stellen o legen e tre con stehen o liegen."
+    },
+    "pt": {
+     "t": "Liegen, legen, stehen, stellen",
+     "g": "Usar bem os verbos de posição: quais indicam um lugar (dativo) e quais um movimento (acusativo).",
+     "p": [
+      "Posição, Wo? + dativo: liegen, stehen, hängen, sitzen. Das Buch liegt auf dem Tisch.",
+      "Movimento, Wohin? + acusativo: legen, stellen, hängen, setzen. Ich lege das Buch auf den Tisch.",
+      "Deitado é liegen/legen, de pé é stehen/stellen: die Flasche steht, das Handy liegt."
+     ],
+     "q": "Onde estão as tuas chaves agora e onde costumas pô-las? Usa liegen e legen.",
+     "c": "Arruma uma prateleira e descreve-a: três frases com stellen ou legen e três com stehen ou liegen."
+    },
+    "pt_BR": {
+     "t": "Liegen, legen, stehen, stellen",
+     "g": "Usar bem os verbos de posição: quais indicam um lugar (dativo) e quais um movimento (acusativo).",
+     "p": [
+      "Posição, Wo? + dativo: liegen, stehen, hängen, sitzen. Das Buch liegt auf dem Tisch.",
+      "Movimento, Wohin? + acusativo: legen, stellen, hängen, setzen. Ich lege das Buch auf den Tisch.",
+      "Deitado é liegen/legen, em pé é stehen/stellen: die Flasche steht, das Handy liegt."
+     ],
+     "q": "Onde estão suas chaves agora e onde você costuma colocá-las? Use liegen e legen.",
+     "c": "Arrume uma prateleira e descreva: três frases com stellen ou legen e três com stehen ou liegen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "liegen",
+      "ex": "Der Schlüssel liegt auf dem Tisch."
+     },
+     {
+      "w": "legen",
+      "ex": "Ich lege den Schlüssel auf den Tisch."
+     },
+     {
+      "w": "stehen",
+      "ex": "Die Vase steht im Regal."
+     },
+     {
+      "w": "stellen",
+      "ex": "Ich stelle die Vase ins Regal."
+     },
+     {
+      "w": "hängen",
+      "ex": "Ich hänge das Bild an die Wand."
+     },
+     {
+      "w": "sitzen / setzen",
+      "ex": "Ich setze mich auf das Sofa und sitze dort."
+     }
+    ],
+    "gram": "Wo? + Dativ: liegen, stehen, hängen, sitzen. Wohin? + Akkusativ: legen, stellen, hängen, setzen. Ich stelle es auf den Tisch."
+   }
+  },
+  {
+   "d": 78,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "On the phone",
+     "g": "Make a simple phone call in German: say who you are and ask to speak to someone.",
+     "p": [
+      "Start with your name: Hallo, hier ist Maria. Formal: Guten Tag, hier spricht Maria Lopez.",
+      "Ask for someone: Kann ich bitte mit Herrn Weber sprechen? Possible answers: Einen Moment, bitte. Er ist leider nicht da.",
+      "Useful: Können Sie das bitte wiederholen? Ich rufe später noch einmal an. Auf Wiederhören! ends a call."
+     ],
+     "q": "Imagine you call a friend to meet up: how do you start the call and what do you ask?",
+     "c": "Practise a short phone call aloud: greet, say who you are, ask for someone and end with Auf Wiederhören."
+    },
+    "de": {
+     "t": "Am Telefon",
+     "g": "Du führst ein einfaches Telefonat: Du sagst, wer du bist, und fragst nach einer Person.",
+     "p": [
+      "Beginn mit deinem Namen: Hallo, hier ist Maria. Formell: Guten Tag, hier spricht Maria Lopez.",
+      "Nach jemandem fragen: Kann ich bitte mit Herrn Weber sprechen? Antworten: Einen Moment, bitte. Er ist leider nicht da.",
+      "Nützlich: Können Sie das bitte wiederholen? Ich rufe später noch einmal an. Am Ende: Auf Wiederhören!"
+     ],
+     "q": "Stell dir vor, du rufst eine Freundin an, um dich zu verabreden: Wie beginnst du, und was fragst du?",
+     "c": "Übe laut ein kurzes Telefonat: Begrüßung, wer du bist, nach jemandem fragen und Auf Wiederhören."
+    },
+    "es": {
+     "t": "Al teléfono",
+     "g": "Haz una llamada sencilla en alemán: di quién eres y pide hablar con alguien.",
+     "p": [
+      "Empieza con tu nombre: Hallo, hier ist Maria. Formal: Guten Tag, hier spricht Maria Lopez.",
+      "Para preguntar por alguien: Kann ich bitte mit Herrn Weber sprechen? Respuestas: Einen Moment, bitte. Er ist leider nicht da.",
+      "Útil: Können Sie das bitte wiederholen? Ich rufe später noch einmal an. Para despedirte: Auf Wiederhören!"
+     ],
+     "q": "Imagina que llamas a un amigo para quedar: ¿cómo empiezas la llamada y qué le preguntas?",
+     "c": "Practica en voz alta una llamada corta: saluda, di quién eres, pregunta por alguien y termina con Auf Wiederhören."
+    },
+    "fr": {
+     "t": "Au téléphone",
+     "g": "Passer un appel simple en allemand : dire qui tu es et demander à parler à quelqu'un.",
+     "p": [
+      "Commence par ton nom : Hallo, hier ist Maria. Formel : Guten Tag, hier spricht Maria Lopez.",
+      "Demander quelqu'un : Kann ich bitte mit Herrn Weber sprechen? Réponses : Einen Moment, bitte. Er ist leider nicht da.",
+      "Utile : Können Sie das bitte wiederholen? Ich rufe später noch einmal an. Pour finir : Auf Wiederhören!"
+     ],
+     "q": "Imagine que tu appelles un ami pour vous voir : comment commences-tu l'appel et que lui demandes-tu ?",
+     "c": "Entraîne-toi à voix haute : salue, dis qui tu es, demande quelqu'un et termine par Auf Wiederhören."
+    },
+    "it": {
+     "t": "Al telefono",
+     "g": "Fai una telefonata semplice in tedesco: dici chi sei e chiedi di parlare con qualcuno.",
+     "p": [
+      "Comincia con il tuo nome: Hallo, hier ist Maria. Formale: Guten Tag, hier spricht Maria Lopez.",
+      "Chiedere di qualcuno: Kann ich bitte mit Herrn Weber sprechen? Risposte: Einen Moment, bitte. Er ist leider nicht da.",
+      "Utile: Können Sie das bitte wiederholen? Ich rufe später noch einmal an. Per chiudere: Auf Wiederhören!"
+     ],
+     "q": "Immagina di chiamare un amico per vedervi: come cominci la telefonata e che cosa chiedi?",
+     "c": "Esercitati ad alta voce: saluta, di' chi sei, chiedi di qualcuno e chiudi con Auf Wiederhören."
+    },
+    "pt": {
+     "t": "Ao telefone",
+     "g": "Fazer uma chamada simples em alemão: dizer quem és e pedir para falar com alguém.",
+     "p": [
+      "Começa com o teu nome: Hallo, hier ist Maria. Formal: Guten Tag, hier spricht Maria Lopez.",
+      "Perguntar por alguém: Kann ich bitte mit Herrn Weber sprechen? Respostas: Einen Moment, bitte. Er ist leider nicht da.",
+      "Útil: Können Sie das bitte wiederholen? Ich rufe später noch einmal an. Para terminar: Auf Wiederhören!"
+     ],
+     "q": "Imagina que ligas a um amigo para combinar um encontro: como começas a chamada e o que perguntas?",
+     "c": "Pratica em voz alta: cumprimenta, diz quem és, pergunta por alguém e termina com Auf Wiederhören."
+    },
+    "pt_BR": {
+     "t": "No telefone",
+     "g": "Fazer uma ligação simples em alemão: dizer quem você é e pedir para falar com alguém.",
+     "p": [
+      "Comece com seu nome: Hallo, hier ist Maria. Formal: Guten Tag, hier spricht Maria Lopez.",
+      "Pedir para falar com alguém: Kann ich bitte mit Herrn Weber sprechen? Respostas: Einen Moment, bitte. Er ist leider nicht da.",
+      "Útil: Können Sie das bitte wiederholen? Ich rufe später noch einmal an. Para terminar: Auf Wiederhören!"
+     ],
+     "q": "Imagine que você liga para um amigo para marcar algo: como começa a ligação e o que pergunta?",
+     "c": "Pratique em voz alta: cumprimente, diga quem é, peça para falar com alguém e termine com Auf Wiederhören."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hier ist ...",
+      "ex": "Hallo, hier ist Tom."
+     },
+     {
+      "w": "anrufen",
+      "ex": "Ich rufe dich heute Abend an."
+     },
+     {
+      "w": "sprechen mit",
+      "ex": "Kann ich bitte mit Frau Klein sprechen?"
+     },
+     {
+      "w": "Einen Moment, bitte.",
+      "ex": "Einen Moment, bitte, ich verbinde."
+     },
+     {
+      "w": "wiederholen",
+      "ex": "Können Sie das bitte wiederholen?"
+     },
+     {
+      "w": "Auf Wiederhören!",
+      "ex": "Danke für den Anruf. Auf Wiederhören!"
+     }
+    ],
+    "gram": "Am Telefon: Hier ist / Hier spricht + Name. Kann ich bitte mit + Dativ sprechen? Ich rufe später an (anrufen, trennbar)."
+   }
+  },
+  {
+   "d": 79,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Writing a short message",
+     "g": "Write short texts and simple emails to friends with the right greeting and closing.",
+     "p": [
+      "Greeting: Liebe Anna (female), Lieber Tom (male), Hallo zusammen for a group. Formal: Sehr geehrte Frau Weber.",
+      "Closing: Viele Grüße, Liebe Grüße, bis bald. Formal: Mit freundlichen Grüßen.",
+      "In a short message, say why you write: Ich möchte dich einladen. Hast du am Samstag Zeit?"
+     ],
+     "q": "Who did you last write a message to, and what was it about? Tell me in two or three German sentences.",
+     "c": "Write a short message to a friend inviting them for coffee, with Liebe/Lieber, a question and Viele Grüße."
+    },
+    "de": {
+     "t": "Eine kurze Nachricht schreiben",
+     "g": "Du schreibst kurze Nachrichten und einfache E-Mails an Freunde mit der passenden Anrede und dem Gruß.",
+     "p": [
+      "Anrede: Liebe Anna (weiblich), Lieber Tom (männlich), Hallo zusammen für eine Gruppe. Formell: Sehr geehrte Frau Weber.",
+      "Gruß: Viele Grüße, Liebe Grüße, bis bald. Formell: Mit freundlichen Grüßen.",
+      "Sag in der Nachricht, warum du schreibst: Ich möchte dich einladen. Hast du am Samstag Zeit?"
+     ],
+     "q": "Wem hast du zuletzt eine Nachricht geschrieben, und worum ging es? Erzähl in zwei oder drei Sätzen.",
+     "c": "Schreib einer Freundin oder einem Freund eine kurze Einladung zum Kaffee mit Liebe/Lieber, einer Frage und Viele Grüße."
+    },
+    "es": {
+     "t": "Escribir un mensaje corto",
+     "g": "Escribe mensajes cortos y correos sencillos a amigos con el saludo y la despedida adecuados.",
+     "p": [
+      "Saludo: Liebe Anna (mujer), Lieber Tom (hombre), Hallo zusammen para un grupo. Formal: Sehr geehrte Frau Weber.",
+      "Despedida: Viele Grüße, Liebe Grüße, bis bald. Formal: Mit freundlichen Grüßen.",
+      "Di por qué escribes: Ich möchte dich einladen. Hast du am Samstag Zeit?"
+     ],
+     "q": "¿A quién escribiste tu último mensaje y de qué trataba? Cuéntamelo en dos o tres frases en alemán.",
+     "c": "Escribe un mensaje corto invitando a un amigo a un café, con Liebe/Lieber, una pregunta y Viele Grüße."
+    },
+    "fr": {
+     "t": "Écrire un petit message",
+     "g": "Écrire des messages courts et des e-mails simples à des amis avec la bonne formule d'appel et de fin.",
+     "p": [
+      "Appel : Liebe Anna (femme), Lieber Tom (homme), Hallo zusammen pour un groupe. Formel : Sehr geehrte Frau Weber.",
+      "Fin : Viele Grüße, Liebe Grüße, bis bald. Formel : Mit freundlichen Grüßen.",
+      "Dis pourquoi tu écris : Ich möchte dich einladen. Hast du am Samstag Zeit?"
+     ],
+     "q": "À qui as-tu écrit ton dernier message, et de quoi parlait-il ? Dis-le en deux ou trois phrases en allemand.",
+     "c": "Écris un petit message pour inviter un ami à prendre un café, avec Liebe/Lieber, une question et Viele Grüße."
+    },
+    "it": {
+     "t": "Scrivere un breve messaggio",
+     "g": "Scrivi messaggi brevi ed e-mail semplici agli amici con il saluto iniziale e finale giusti.",
+     "p": [
+      "Inizio: Liebe Anna (donna), Lieber Tom (uomo), Hallo zusammen per un gruppo. Formale: Sehr geehrte Frau Weber.",
+      "Fine: Viele Grüße, Liebe Grüße, bis bald. Formale: Mit freundlichen Grüßen.",
+      "Di' perché scrivi: Ich möchte dich einladen. Hast du am Samstag Zeit?"
+     ],
+     "q": "A chi hai scritto l'ultimo messaggio e di che cosa parlava? Raccontamelo in due o tre frasi in tedesco.",
+     "c": "Scrivi un breve messaggio per invitare un amico a un caffè, con Liebe/Lieber, una domanda e Viele Grüße."
+    },
+    "pt": {
+     "t": "Escrever uma mensagem curta",
+     "g": "Escrever mensagens curtas e e-mails simples a amigos com a saudação e a despedida certas.",
+     "p": [
+      "Saudação: Liebe Anna (mulher), Lieber Tom (homem), Hallo zusammen para um grupo. Formal: Sehr geehrte Frau Weber.",
+      "Despedida: Viele Grüße, Liebe Grüße, bis bald. Formal: Mit freundlichen Grüßen.",
+      "Diz porque escreves: Ich möchte dich einladen. Hast du am Samstag Zeit?"
+     ],
+     "q": "A quem escreveste a última mensagem e sobre o quê? Conta-me em duas ou três frases em alemão.",
+     "c": "Escreve uma mensagem curta a convidar um amigo para um café, com Liebe/Lieber, uma pergunta e Viele Grüße."
+    },
+    "pt_BR": {
+     "t": "Escrever uma mensagem curta",
+     "g": "Escrever mensagens curtas e e-mails simples para amigos com a saudação e a despedida certas.",
+     "p": [
+      "Saudação: Liebe Anna (mulher), Lieber Tom (homem), Hallo zusammen para um grupo. Formal: Sehr geehrte Frau Weber.",
+      "Despedida: Viele Grüße, Liebe Grüße, bis bald. Formal: Mit freundlichen Grüßen.",
+      "Diga por que você escreve: Ich möchte dich einladen. Hast du am Samstag Zeit?"
+     ],
+     "q": "Para quem você mandou a última mensagem e sobre o quê? Me conte em duas ou três frases em alemão.",
+     "c": "Escreva uma mensagem curta convidando um amigo para um café, com Liebe/Lieber, uma pergunta e Viele Grüße."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Liebe Anna,",
+      "ex": "Liebe Anna, wie geht es dir?"
+     },
+     {
+      "w": "Lieber Tom,",
+      "ex": "Lieber Tom, danke für deine Nachricht!"
+     },
+     {
+      "w": "Viele Grüße",
+      "ex": "Bis Samstag! Viele Grüße, Lena"
+     },
+     {
+      "w": "bis bald",
+      "ex": "Ich freue mich, bis bald!"
+     },
+     {
+      "w": "einladen",
+      "ex": "Ich möchte dich zum Essen einladen."
+     },
+     {
+      "w": "die Nachricht",
+      "ex": "Ich schreibe dir später eine Nachricht."
+     }
+    ],
+    "gram": "Anrede: Liebe + Frau, Lieber + Mann, Sehr geehrte/r (formell). Gruß: Viele Grüße, Liebe Grüße, Mit freundlichen Grüßen."
+   }
+  },
+  {
+   "d": 80,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "German-speaking countries",
+     "g": "Get to know the German-speaking countries and their capitals and talk about them.",
+     "p": [
+      "Germany (Deutschland, capital Berlin), Austria (Österreich, Wien), Switzerland (die Schweiz, Bern), Liechtenstein (Vaduz).",
+      "German is also an official language in Luxembourg and Belgium, and spoken in South Tyrol in Italy.",
+      "Countries usually have no article: in Deutschland, nach Österreich. But: die Schweiz, in der Schweiz, in die Schweiz."
+     ],
+     "q": "Which German-speaking country would you like to visit, and what would you like to see there?",
+     "c": "Write one sentence for each of the four countries: its German name, its capital and one thing it is known for."
+    },
+    "de": {
+     "t": "Deutschsprachige Länder",
+     "g": "Du lernst die deutschsprachigen Länder und ihre Hauptstädte kennen und sprichst über sie.",
+     "p": [
+      "Deutschland (Hauptstadt Berlin), Österreich (Wien), die Schweiz (Bern) und Liechtenstein (Vaduz).",
+      "Deutsch ist auch Amtssprache in Luxemburg und Belgien und wird in Südtirol in Italien gesprochen.",
+      "Länder haben meist keinen Artikel: in Deutschland, nach Österreich. Aber: die Schweiz, in der Schweiz, in die Schweiz."
+     ],
+     "q": "Welches deutschsprachige Land möchtest du besuchen, und was möchtest du dort sehen?",
+     "c": "Schreib zu jedem der vier Länder einen Satz: Name, Hauptstadt und etwas, wofür das Land bekannt ist."
+    },
+    "es": {
+     "t": "Países de habla alemana",
+     "g": "Conoce los países de habla alemana y sus capitales, y habla de ellos.",
+     "p": [
+      "Alemania (Deutschland, capital Berlín), Austria (Österreich, Viena), Suiza (die Schweiz, Berna), Liechtenstein (Vaduz).",
+      "El alemán también es oficial en Luxemburgo y Bélgica, y se habla en el Tirol del Sur, en Italia.",
+      "Los países suelen ir sin artículo: in Deutschland, nach Österreich. Pero: die Schweiz, in der Schweiz, in die Schweiz."
+     ],
+     "q": "¿Qué país de habla alemana te gustaría visitar y qué te gustaría ver allí?",
+     "c": "Escribe una frase para cada uno de los cuatro países: su nombre en alemán, su capital y algo por lo que es conocido."
+    },
+    "fr": {
+     "t": "Les pays germanophones",
+     "g": "Découvrir les pays germanophones et leurs capitales, et en parler.",
+     "p": [
+      "L'Allemagne (Deutschland, capitale Berlin), l'Autriche (Österreich, Vienne), la Suisse (die Schweiz, Berne), le Liechtenstein (Vaduz).",
+      "L'allemand est aussi langue officielle au Luxembourg et en Belgique, et on le parle au Tyrol du Sud, en Italie.",
+      "Les pays n'ont souvent pas d'article : in Deutschland, nach Österreich. Mais : die Schweiz, in der Schweiz, in die Schweiz."
+     ],
+     "q": "Quel pays germanophone aimerais-tu visiter, et qu'aimerais-tu y voir ?",
+     "c": "Écris une phrase pour chacun des quatre pays : son nom allemand, sa capitale et une chose qui le rend célèbre."
+    },
+    "it": {
+     "t": "I paesi di lingua tedesca",
+     "g": "Conosci i paesi di lingua tedesca e le loro capitali e ne parli.",
+     "p": [
+      "Germania (Deutschland, capitale Berlino), Austria (Österreich, Vienna), Svizzera (die Schweiz, Berna), Liechtenstein (Vaduz).",
+      "Il tedesco è lingua ufficiale anche in Lussemburgo e Belgio e si parla in Alto Adige, in Italia.",
+      "I paesi di solito non hanno articolo: in Deutschland, nach Österreich. Ma: die Schweiz, in der Schweiz, in die Schweiz."
+     ],
+     "q": "Quale paese di lingua tedesca ti piacerebbe visitare e che cosa vorresti vedere?",
+     "c": "Scrivi una frase per ciascuno dei quattro paesi: nome in tedesco, capitale e una cosa per cui è famoso."
+    },
+    "pt": {
+     "t": "Países de língua alemã",
+     "g": "Conhecer os países de língua alemã e as suas capitais, e falar sobre eles.",
+     "p": [
+      "Alemanha (Deutschland, capital Berlim), Áustria (Österreich, Viena), Suíça (die Schweiz, Berna), Liechtenstein (Vaduz).",
+      "O alemão é também oficial no Luxemburgo e na Bélgica, e fala-se no Tirol do Sul, em Itália.",
+      "Os países em geral não têm artigo: in Deutschland, nach Österreich. Mas: die Schweiz, in der Schweiz, in die Schweiz."
+     ],
+     "q": "Que país de língua alemã gostavas de visitar e o que gostavas de ver lá?",
+     "c": "Escreve uma frase para cada um dos quatro países: o nome em alemão, a capital e algo pelo qual é conhecido."
+    },
+    "pt_BR": {
+     "t": "Países de língua alemã",
+     "g": "Conhecer os países de língua alemã e suas capitais, e falar sobre eles.",
+     "p": [
+      "Alemanha (Deutschland, capital Berlim), Áustria (Österreich, Viena), Suíça (die Schweiz, Berna), Liechtenstein (Vaduz).",
+      "O alemão também é oficial em Luxemburgo e na Bélgica, e é falado no Tirol do Sul, na Itália.",
+      "Os países geralmente não têm artigo: in Deutschland, nach Österreich. Mas: die Schweiz, in der Schweiz, in die Schweiz."
+     ],
+     "q": "Que país de língua alemã você gostaria de visitar e o que gostaria de ver lá?",
+     "c": "Escreva uma frase para cada um dos quatro países: o nome em alemão, a capital e algo pelo qual é conhecido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Deutschland",
+      "ex": "Berlin ist die Hauptstadt von Deutschland."
+     },
+     {
+      "w": "Österreich",
+      "ex": "In Österreich spricht man Deutsch."
+     },
+     {
+      "w": "die Schweiz",
+      "ex": "Ich fahre im Winter in die Schweiz."
+     },
+     {
+      "w": "Liechtenstein",
+      "ex": "Liechtenstein ist ein sehr kleines Land."
+     },
+     {
+      "w": "die Hauptstadt",
+      "ex": "Wien ist die Hauptstadt von Österreich."
+     },
+     {
+      "w": "die Sprache",
+      "ex": "Die Schweiz hat vier Sprachen."
+     }
+    ],
+    "gram": "Länder meist ohne Artikel: in/nach Deutschland. Mit Artikel: die Schweiz - in der Schweiz (wo?), in die Schweiz (wohin?)."
+   }
+  }
+ ]
+}

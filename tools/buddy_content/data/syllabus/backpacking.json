@@ -1,0 +1,2195 @@
+{
+"topic": "backpacking",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What is backpacking?",
+"f": "Independent, flexible travel with everything on your back, and why so many people love it"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "The backpacker spirit",
+"f": "Curiosity, openness and flexibility as your most important pieces of gear"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Classic routes at a glance",
+"f": "A first look at famous circuits like the Banana Pancake Trail and the Gringo Trail"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Choosing your first trip",
+"f": "Pick a beginner-friendly region with easy transport and plenty of hostels"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "How long should a trip be?",
+"f": "A long weekend, two weeks or several months: what each trip length feels like"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Planning vs going with the flow",
+"f": "How much to book ahead and how much to leave open for surprises"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Choosing a backpack",
+"f": "Travel packs vs hiking packs, and front-loading vs top-loading designs"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Backpack size in litres",
+"f": "Why roughly 30 to 45 litres is a sweet spot for many travellers"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Fitting a backpack",
+"f": "Adjusting torso length, hip belt and shoulder straps the right way"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Carrying weight comfortably",
+"f": "Pack heavy items close to your back and centred for better balance"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "The art of travelling light",
+"f": "Why less stuff means more freedom, flexibility and fun"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "One-bag travel",
+"f": "Travelling with a single carry-on-sized backpack"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Packing cubes and organisation",
+"f": "Keeping your bag tidy and finding things fast"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Rolling vs folding clothes",
+"f": "Simple techniques to save space and reduce wrinkles"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "The capsule wardrobe",
+"f": "A few mix-and-match pieces in colours that go together"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Quick-dry fabrics",
+"f": "Merino wool, synthetics and why cotton takes so long to dry"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Layering for any climate",
+"f": "Base, mid and outer layers explained simply"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Footwear choices",
+"f": "One pair of comfortable walking shoes plus sandals works for most trips"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "The daypack",
+"f": "A small foldable bag for day trips and city walks"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Toiletries for backpackers",
+"f": "Small, solid and multi-use toiletries that save space and weight"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "The essential tech kit",
+"f": "Phone, charger, universal adapter and a power bank"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Small items that save the day",
+"f": "Headlamp, padlock, earplugs, sleep mask and a little tape"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "A basic first-aid kit",
+"f": "Plasters, blister care and a few simple supplies"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Documents and copies",
+"f": "Passport, printed copies and secure digital backups"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "What not to pack",
+"f": "Common overpacking mistakes and the trap of just-in-case items"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Weighing your pack",
+"f": "Do a test pack, weigh it and remove what you won't really use"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "The test walk",
+"f": "Walk around your neighbourhood with a full pack before the trip"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Packing for hot climates",
+"f": "Light, breathable and sun-protective clothing"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Packing for cold climates",
+"f": "Staying warm without carrying a huge bag"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your perfect pack",
+"f": "Recap your packing skills and do a full packing run from scratch"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Hostels 101",
+"f": "What hostels are, how they work and who stays in them"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Dorms vs private rooms",
+"f": "Choosing based on budget, privacy and how well you sleep"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Mixed and single-gender dorms",
+"f": "The dorm options hostels offer and choosing what feels comfortable"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Reading hostel reviews",
+"f": "What ratings for cleanliness, staff and atmosphere really tell you"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Lively vs quiet hostels",
+"f": "Picking a hostel vibe that matches your travel style"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Hostel check-in",
+"f": "What to expect at reception: ID, keys, deposits and house rules"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Lockers and security",
+"f": "Padlocks, valuables and keeping your things safe"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Hostel etiquette",
+"f": "Quiet hours, lights, late packing and being a considerate roommate"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Sleeping well in dorms",
+"f": "Earplugs, eye masks and choosing the right bunk"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Hostel kitchens",
+"f": "Labelling food, cleaning up and cooking for one"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Common rooms and new friends",
+"f": "Easy ways to start conversations in shared spaces"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Hostel activities",
+"f": "Walking tours, shared dinners and game nights"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Working at a hostel",
+"f": "Volunteering at reception or cleaning in exchange for a bed"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Beyond hostels",
+"f": "Guesthouses, homestays and campsites for backpackers"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Homestays",
+"f": "Living with a local family and what to expect"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Planning a route",
+"f": "Draw a loose route connecting the places you most want to see"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Linear vs loop routes",
+"f": "Choosing between one-way journeys and circular routes"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Pacing your route",
+"f": "How many nights to spend in each place without rushing"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Overland travel basics",
+"f": "Buses, trains and boats as the backbone of backpacking"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Reading timetables",
+"f": "Understanding schedules, platforms and connections"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Bus station survival",
+"f": "Finding the right bus, buying tickets and storing luggage"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Train travel for backpackers",
+"f": "Classes, sleeper berths and how to book"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Night transport",
+"f": "Overnight buses and trains that save time and a night's stay"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Border crossings by land",
+"f": "Documents, procedures and a healthy dose of patience"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Local transport adventures",
+"f": "Tuk-tuks, minibuses, ferries and shared taxis"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Arriving in a new town",
+"f": "Getting your bearings and finding your hostel calmly"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Navigation with offline maps",
+"f": "Pin your hostel and key places before you arrive"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Asking for directions",
+"f": "Simple phrases and gestures that work almost everywhere"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Mastering travel days",
+"f": "Planning snacks, water, entertainment and rest for long journeys"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: hostels and routes",
+"f": "Recap stays and getting around, then sketch a two-week route"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "The Banana Pancake Trail",
+"f": "Southeast Asia's classic backpacker loop through Thailand, Laos, Vietnam and Cambodia"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "The Gringo Trail",
+"f": "South America's well-trodden route through the Andes and beyond"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Interrailing in Europe",
+"f": "Rail-pass travel across many European countries"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "The Balkan backpacking loop",
+"f": "Coastal towns, mountains and old cities linked by buses"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Central America overland",
+"f": "Travelling from Mexico down to Panama by bus"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Australia's East Coast",
+"f": "A classic route of beaches, reef and rainforest"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "New Zealand loops",
+"f": "Hostels, buses and campervans across two islands"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "India's backpacker circuit",
+"f": "Trains, deserts, mountains and beaches in one huge country"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Japan with a backpack",
+"f": "Efficient trains, friendly hostels and easy navigation"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Backpacking Morocco",
+"f": "Medinas, desert landscapes and mountain villages"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Southern Africa overland",
+"f": "Backpacker buses, national parks and coastal towns"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Scandinavia with a backpack",
+"f": "The right to roam, hiking and hostels in Nordic countries"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "North America by bus",
+"f": "Long journeys, national parks and city hostels"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Choosing your dream route",
+"f": "Compare routes by season, budget and interests"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Seasons and weather on routes",
+"f": "Matching each route to its best travel season"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Visas along a route",
+"f": "Checking entry rules for every country in advance"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Budgeting for backpacking",
+"f": "Daily budgets for beds, food, transport and fun"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Saving money on the road",
+"f": "Cooking, walking and choosing free activities"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Money safety",
+"f": "Splitting cash and cards and using ATMs wisely"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Staying connected",
+"f": "SIM cards, eSIMs and Wi-Fi in hostels"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Health on the road",
+"f": "Sleep, water, sun protection and washing your hands"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Food hygiene for travellers",
+"f": "Choosing busy stalls, freshly cooked food and safe water"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Foot care and blisters",
+"f": "Preventing and caring for blisters on long walking days"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Safety basics",
+"f": "Situational awareness and trusting your instincts"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Avoiding common scams",
+"f": "Recognising tricks aimed at backpackers"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Solo backpacking",
+"f": "Freedom, confidence and meeting people along the way"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Backpacking with a friend",
+"f": "Agreeing on pace, budget and personal space"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Meeting travel buddies",
+"f": "Joining other travellers for a few days on the road"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Goodbyes on the road",
+"f": "Parting ways with new friends and keeping in touch"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: routes and road skills",
+"f": "Recap routes, money and safety, then pick your first real route"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Laundry for backpackers",
+"f": "Sink washing, quick-dry tricks and laundromats"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Keeping gear fresh",
+"f": "Airing out shoes, washing bags and avoiding bad smells"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Repairing gear",
+"f": "Sewing kits, tape and simple fixes on the go"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Protecting electronics",
+"f": "Dry bags, cases and regular backups"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Charging on the go",
+"f": "Power banks, multi-port chargers and finding outlets"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Photography with a light kit",
+"f": "Great travel photos with just a phone"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Travel journaling",
+"f": "Notebooks and apps to capture your memories"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Phrases for every country",
+"f": "Learning a handful of key phrases for each place you visit"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Cultural respect",
+"f": "Dress codes and customs at heritage sites and in public spaces"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Eating like a local",
+"f": "Street food, markets and regional specialities"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Cooking on the road",
+"f": "Simple hostel meals and shared dinners"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Hydration on the go",
+"f": "Refillable bottles and water filters"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Rest days",
+"f": "Why slowing down keeps a long trip fun"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Dealing with homesickness",
+"f": "Staying connected and building small comfort routines"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Handling travel fatigue",
+"f": "Signs that you need a break and how to recharge"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Flexibility when plans change",
+"f": "Missed buses, closed sights and unexpected opportunities"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Making decisions on the road",
+"f": "Choosing where to go next with confidence"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Backpacker social life",
+"f": "Group dinners, games and swapping stories with fellow travellers"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Being a responsible backpacker",
+"f": "Respecting locals, nature and other guests"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Low impact in towns and nature",
+"f": "Reducing waste and leaving places as you found them"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Introduction to trekking",
+"f": "Multi-day walks as part of a backpacking trip"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Day hikes from hostels",
+"f": "Easy hikes to add to city and town stays"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Trail markings and maps",
+"f": "Reading trail signs and simple topographic maps"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Hiking safety basics",
+"f": "Checking the weather, sharing your plans and knowing when to turn back"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Hut-to-hut hiking",
+"f": "Mountain huts that let you trek with a lighter pack"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Camping basics for backpackers",
+"f": "Tents, sleeping bags and choosing a good pitch"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "A weekend backpacking trial",
+"f": "Plan a short trip to test your new skills"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Your first trip checklist",
+"f": "Everything to check before you head out the door"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Reflecting after your first trip",
+"f": "What worked, what didn't and what to change next time"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner graduation",
+"f": "Celebrate your beginner skills and plan your first big trip"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Levelling up as a backpacker",
+"f": "Moving from your first trip to confident, longer journeys"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Ultralight principles",
+"f": "Base weight, multi-use items and cutting unnecessary grams"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Base weight explained",
+"f": "What counts toward pack weight and why it matters on long trips"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Multi-use gear",
+"f": "A sarong as towel, blanket and curtain, and other clever ideas"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Choosing a travel towel",
+"f": "Microfibre towels and lighter alternatives"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Sleeping bags and liners",
+"f": "When you need a sleeping bag and why a liner is handy in hostels"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Rain gear",
+"f": "Pack covers, rain jackets and dry bags"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Sun protection gear",
+"f": "Hats, sunglasses and covering up in strong sun"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Water filters and purifiers",
+"f": "Options for safe drinking water on the road and on the trail"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Choosing trekking shoes",
+"f": "Trail runners vs hiking boots and what suits your trip"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Trekking poles",
+"f": "When poles help and how to use them well"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Backpacking stoves and cooking",
+"f": "Simple outdoor cooking setups for treks"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Tents for backpackers",
+"f": "Balancing weight, space and weather protection"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Sleeping pads",
+"f": "Comfort and insulation from the cold ground"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Navigation apps for trails",
+"f": "Offline trail maps and GPS tracking"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Compass basics",
+"f": "Using a compass together with a paper map"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Reading mountain weather",
+"f": "Clouds, wind and how fast weather can change in the hills"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Altitude awareness",
+"f": "General info on ascending slowly and listening to your body up high"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Planning a multi-day trek",
+"f": "Distances, water sources, food and resupply points"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Food for treks",
+"f": "Light, energy-rich and easy-to-prepare meals"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Famous long-distance trails",
+"f": "An overview of iconic trails on every continent"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "The Camino de Santiago",
+"f": "A historic walking route across northern Spain with simple walkers' hostels"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "The Annapurna Circuit",
+"f": "Teahouse trekking through the Nepalese Himalaya"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Machu Picchu treks",
+"f": "The Inca Trail permit system and alternative treks like Salkantay"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Tour du Mont Blanc",
+"f": "A hut-to-hut circuit through France, Italy and Switzerland"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Torres del Paine treks",
+"f": "Patagonian circuits and booking campsites in advance"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Kungsleden in Sweden",
+"f": "Lapland's King's Trail with huts and wide wild landscapes"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "The West Highland Way",
+"f": "Scotland's popular long-distance walk from near Glasgow to Fort William"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Tongariro Alpine Crossing",
+"f": "New Zealand's famous volcanic day hike"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: gear and trekking",
+"f": "Recap gear and trekking skills and plan a two-day trek"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Hostel hopping strategies",
+"f": "Booking flexibly and finding beds on arrival"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Last-minute bookings",
+"f": "When booking on the day works and when to book ahead"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Work exchange in hostels",
+"f": "Finding and succeeding at hostel volunteering"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Farm and eco volunteering",
+"f": "Organic farms and conservation projects that host travellers"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "House and pet sitting",
+"f": "Free stays in exchange for looking after homes and animals"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Couchsurfing culture",
+"f": "Staying with locals and the etiquette of being a guest"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Wild camping rules",
+"f": "Where wild camping is allowed and how to do it respectfully"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Campsites around the world",
+"f": "Facilities, booking tips and campsite etiquette"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Unusual places to sleep",
+"f": "Mountain huts, treehouses and capsule hotels"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Long-stay hostels",
+"f": "Weekly rates and building a community during longer stays"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Night bus mastery",
+"f": "Choosing seats and staying comfortable and safe overnight"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Sleeper trains",
+"f": "Berths, classes and booking tips for overnight trains"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Boat journeys",
+"f": "River boats, ferries and slow boats as part of a route"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Island hopping by ferry",
+"f": "Planning island routes and buying ferry tickets"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Motorbike travel basics",
+"f": "Licences, helmets and renting responsibly"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Bicycle touring",
+"f": "Panniers, route planning and camping by bike"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Shared rides",
+"f": "Carpooling apps and shared taxis between towns"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Domestic flights strategically",
+"f": "When a short flight saves days of overland travel"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Overland across continents",
+"f": "Planning very long land journeys step by step"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Border towns and crossings",
+"f": "Common procedures and staying patient at land borders"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Mainland Southeast Asia in depth",
+"f": "Route details for Thailand, Laos, Vietnam and Cambodia"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Indonesia and the Philippines",
+"f": "Island hopping through two vast archipelagos"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Sri Lanka and Nepal",
+"f": "Compact countries with an amazing variety of landscapes"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Central Asia's Silk Road",
+"f": "Uzbekistan, Kyrgyzstan, homestays and mountain lakes"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "The Caucasus",
+"f": "Georgia and Armenia for hikers and food lovers"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Turkey overland",
+"f": "Long-distance buses, cave stays and coastal towns"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "An Eastern Europe rail loop",
+"f": "Poland, Czechia, Hungary and Romania by train"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "The Iberian Peninsula",
+"f": "Spain and Portugal by bus and train"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Patagonia",
+"f": "Long bus rides, trekking and windswept landscapes"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: regions and transport",
+"f": "Recap regions and transport, then compare two dream routes"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Backpacking Mexico",
+"f": "Colonial towns, beaches and ancient ruins"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Peru and Bolivia",
+"f": "The Andes, salt flats and high-altitude travel"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Backpacking Colombia",
+"f": "The coffee region, Caribbean coast and colourful cities"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Brazil with a backpack",
+"f": "Huge distances, long buses and endless beaches"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "East Africa overland",
+"f": "Kenya, Tanzania and Uganda by road"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Jordan and Egypt",
+"f": "Desert landscapes and world-famous ancient sites"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Vietnam north to south",
+"f": "A classic route along the whole country"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "China by train",
+"f": "High-speed rail and vast distances made easy"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "South Korea and Taiwan",
+"f": "Easy transport, great food and friendly hostels"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Iceland with a backpack",
+"f": "Camping, the Ring Road and changeable weather"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Cultural immersion",
+"f": "Going beyond sightseeing to really connect with places"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Learning local languages fast",
+"f": "Survival phrases and practising with locals every day"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Volunteering responsibly",
+"f": "Choosing ethical projects that truly benefit communities"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Local festivals",
+"f": "Experiencing celebrations as a welcome guest"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Respectful photography",
+"f": "Asking permission and respecting people's privacy"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Gifts and hospitality customs",
+"f": "What to bring and how to behave when invited into a home"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Bargaining culture",
+"f": "Where to haggle and how to keep it friendly"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Non-verbal communication",
+"f": "Gestures and body language that differ around the world"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Food adventures",
+"f": "Trying new dishes with curiosity and an open mind"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Making local friends",
+"f": "Language exchanges, sports and markets as meeting points"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Backpacking sustainably",
+"f": "Lower-impact choices that are easy to make on the road"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Reducing plastic",
+"f": "Reusable bottles, bags and cutlery"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Choosing eco-friendly hostels",
+"f": "What to look for in a truly green hostel"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Low-carbon routes",
+"f": "Choosing overland travel instead of flying"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Supporting local economies",
+"f": "Local guides, family-run stays and markets"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Responsible wildlife encounters",
+"f": "Choosing experiences that respect animals"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Leave no trace on trails",
+"f": "The seven principles of outdoor ethics in practice"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Respecting heritage sites",
+"f": "Rules and behaviour at historic and protected places"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Overtourism awareness",
+"f": "Visiting popular places responsibly and choosing quieter ones"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: culture and sustainability",
+"f": "Recap culture and green travel and write your personal travel principles"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Safety deep dive",
+"f": "Advanced safety habits for longer trips"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Night arrival planning",
+"f": "Booking the first night and arranging safe transfers"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Keeping valuables safe",
+"f": "Decoy wallets, hidden pouches and backup cards"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Digital security",
+"f": "Strong passwords, VPNs and care on public Wi-Fi"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Emergency planning",
+"f": "Contacts, insurance details and embassy information"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Losing your passport",
+"f": "Practical steps to take if documents go missing"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Getting help abroad",
+"f": "General info on finding clinics, pharmacies and using insurance"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Natural hazards",
+"f": "Weather seasons and staying informed with local news"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Confidence for solo travellers",
+"f": "Practical habits experienced solo travellers swear by"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Trusting your gut",
+"f": "Recognising when to change plans and move on"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Money on long trips",
+"f": "Managing your funds over several months"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Budget tracking for backpackers",
+"f": "Apps, daily averages and simple spending reviews"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Working holidays",
+"f": "A general overview of working holiday visa programmes"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Remote work and backpacking",
+"f": "Balancing a laptop job with life on the road"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Seasonal jobs for travellers",
+"f": "Hospitality, farm and ski-season jobs that hire travellers"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Selling skills on the road",
+"f": "Teaching, photography and design as travel income"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Extending a trip",
+"f": "Ways to make your time and money last longer"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Visa planning for long trips",
+"f": "Stay limits and always checking official sources"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Planning a big trip budget",
+"f": "Month-by-month budgeting for a long journey"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Insurance for backpackers",
+"f": "General points to consider when choosing travel cover"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Travel day rituals",
+"f": "Routines that turn long travel days into good days"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Staying fit on the road",
+"f": "Bodyweight workouts, walking and active sightseeing"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Sleeping well while moving",
+"f": "Routines that help you sleep in new places"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Wellbeing on long trips",
+"f": "General habits that keep your mood and energy up"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Staying in touch with home",
+"f": "Calls, updates and managing time zones"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Reflective journaling",
+"f": "Journal prompts that help you process your journey"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Documenting your journey",
+"f": "Photos, short videos and maps of your route"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Sharing stories online",
+"f": "Blogs, social media and protecting your privacy"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Creative projects on the road",
+"f": "Sketching, writing and music while travelling"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: life on the road",
+"f": "Recap life on the road and set your own wellbeing routines"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Group backpacking",
+"f": "Planning a trip with a group of friends"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Backpacking with family",
+"f": "Kids, smaller packs and a gentler pace"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Backpacking later in life",
+"f": "Comfort and adventure for older travellers"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Accessible backpacking",
+"f": "Planning independent trips with mobility needs"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Backpacking in winter",
+"f": "Cold-weather routes, gear and cosy hostels"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Backpacking in the rainy season",
+"f": "Green landscapes, fewer crowds and rain-ready planning"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Desert travel basics",
+"f": "Heat, water and sun protection in dry regions"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Mountain towns",
+"f": "Altitude, layers and choosing a good hiking base"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Coastal and island routes",
+"f": "Ferries, beaches and sun along the coast"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate graduation",
+"f": "Recap your intermediate skills and plan a month-long trip"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Becoming an expert backpacker",
+"f": "Long journeys, remote routes and helping others on the road"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Planning a gap year",
+"f": "Combining months of travel, work and learning"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Round-the-world backpacking",
+"f": "Designing a route that circles the globe"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Around the world overland",
+"f": "Planning a world trip with as few flights as possible"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Year-long budgeting",
+"f": "Planning a year of travel region by region"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Preparing home for a long trip",
+"f": "Storage, subscriptions and mail before you leave"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Banking for long trips",
+"f": "Backup cards and managing money remotely"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Pre-trip health planning",
+"f": "General checks and a travel clinic visit well before departure"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Gear for a year",
+"f": "Choosing durable, versatile gear that lasts"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "One bag for all climates",
+"f": "Packing for tropics and mountains at the same time"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Replacing gear abroad",
+"f": "Buying, repairing and passing on gear along the way"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Digital nomad backpacking",
+"f": "Fitting a work setup into a small pack"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Organising documents digitally",
+"f": "Cloud copies and offline access to everything important"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Long-term routines",
+"f": "Daily habits for months on the road"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Avoiding burnout",
+"f": "Slow phases and proper breaks on long journeys"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Slow backpacking",
+"f": "Staying weeks in one place to go deeper"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Base-camp travel",
+"f": "Exploring a whole region from a single base"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Using travel forums well",
+"f": "Getting current information from fellow travellers"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Researching remote regions",
+"f": "Working with limited information and local sources"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: long-term foundations",
+"f": "Recap long-term travel basics and draft a long-trip plan"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Off-the-beaten-path routes",
+"f": "Finding and choosing less-travelled areas"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Remote travel logistics",
+"f": "Supplies, cash and gaps in transport"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Expedition-style planning",
+"f": "Detailed plans for remote and demanding journeys"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Long-distance trekking mastery",
+"f": "Months-long trails and how hikers manage them"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Thru-hiking basics",
+"f": "Hiking an entire long-distance trail from end to end"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Resupply strategies",
+"f": "Town stops, food parcels and planning food for weeks"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Navigation without signal",
+"f": "Offline maps, compass and natural landmarks"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Weather strategy for treks",
+"f": "Seasonal windows and keeping spare days"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "High mountains and glaciers",
+"f": "General info on guided options and respecting serious terrain"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Desert and jungle treks",
+"f": "Special considerations and the value of local guides"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Crossing continents by rail",
+"f": "The Trans-Siberian and other epic railways"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Overland Africa",
+"f": "Long routes, local buses and overland trucks"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Pan-American journeys",
+"f": "Travelling the Americas from north to south overland"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "The Silk Road overland",
+"f": "From Europe to Asia by land along historic trade routes"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Long island chains",
+"f": "Island-hopping routes across whole archipelagos"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Cycling across countries",
+"f": "Planning a long-distance bike tour"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Motorbike adventures",
+"f": "Longer motorbike journeys ridden responsibly"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Sailing as crew",
+"f": "Joining boats as volunteer crew to cross seas"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Slow boats and rivers",
+"f": "Long river journeys at a gentle pace"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Mixing transport creatively",
+"f": "Designing journeys that combine many modes"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Advanced safety",
+"f": "Thinking through risks on unusual routes"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Handling a crisis",
+"f": "Staying calm and resourceful when things go wrong"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Why take a first-aid course",
+"f": "General value of first-aid training for travellers"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Limited connectivity",
+"f": "Planning for regions with little or no internet"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Cultural fluency",
+"f": "Adapting quickly and gracefully to new customs"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Many languages, one route",
+"f": "Learning bits of several languages along a route"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Being a great guest",
+"f": "Homestay and hospitality etiquette in depth"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Ethical storytelling",
+"f": "Representing people and places fairly when you share"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Giving back to communities",
+"f": "Thoughtful contributions that make a real difference"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: advanced routes and skills",
+"f": "Recap advanced skills and stress-test an adventurous route"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Ultralight mastery",
+"f": "Taking your base weight down even further"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Gear lists for different trips",
+"f": "City, trek, beach and mixed-trip packing lists"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "DIY gear",
+"f": "Making simple pieces of gear yourself"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Zero-waste backpacking",
+"f": "Keeping waste close to zero on the road"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Minimalism on the road",
+"f": "Living simply with very few possessions"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Backpacking and wellbeing",
+"f": "Nature, movement and calm as part of your journey"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Mindful travel",
+"f": "Being present and noticing the small details"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Learning skills abroad",
+"f": "Cooking, language and craft courses on the road"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Diving and surfing trips",
+"f": "Learning water sports at affordable spots"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Climbing and adventure towns",
+"f": "Famous bases for climbing and outdoor sports"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Photo storytelling",
+"f": "Telling the story of a journey through images"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Writing travel stories",
+"f": "Crafting engaging narratives from your trips"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Starting a travel blog",
+"f": "The basics of sharing your journey online"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Mapping your journey",
+"f": "Creating maps of everywhere you have been"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Hosting fellow travellers",
+"f": "Giving back by welcoming travellers at home"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Mentoring new backpackers",
+"f": "Helping first-timers prepare and feel confident"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Leading a group trip",
+"f": "Organising and guiding friends on a journey"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Building a travel community",
+"f": "Meetups and groups that connect travellers"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Backpacking myths",
+"f": "Common myths about backpacking and the truth"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Lessons from great travellers",
+"f": "What Ibn Battuta, Isabella Bird and others teach us"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "A short history of backpacking",
+"f": "From the Grand Tour to the overland trail and modern gap years"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Classic travel literature",
+"f": "Books that inspired generations of travellers"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "The mid-trip review",
+"f": "Reassessing route, budget and energy halfway through"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Changing routes on the fly",
+"f": "Adapting quickly to new opportunities"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Making a trip last longer",
+"f": "Stretching both time and money on the road"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Knowing when to go home",
+"f": "Recognising the right moment to end a trip"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Reverse culture shock",
+"f": "Settling back in after a long journey"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Bringing travel home",
+"f": "Keeping the travel spirit alive in everyday life"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Dreaming up future trips",
+"f": "Building a wish list of adventures to come"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: travel with purpose",
+"f": "Recap meaningful travel and choose a purpose for your next trip"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Project: your dream route",
+"f": "Start the final project: design your dream backpacking trip"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Project: research",
+"f": "Gather information on seasons, visas and transport"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Project: route map",
+"f": "Draw the route and decide your pacing"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Project: budget",
+"f": "Set a daily and total budget for the trip"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Project: stays",
+"f": "Choose a mix of hostels, homestays and camping"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Project: transport plan",
+"f": "Plan how you will travel each leg"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Project: gear list",
+"f": "Write your personal packing list for this trip"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Project: safety plan",
+"f": "Prepare emergency information and backups"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Project: cultural prep",
+"f": "Learn key phrases and customs for each country"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Project: experiences",
+"f": "Pick the treks, festivals and food experiences you want"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Project: flexible days",
+"f": "Build spare days into the plan for surprises"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Project: final review",
+"f": "Polish the whole plan and check for gaps"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Sharing your plan",
+"f": "Getting useful feedback from other travellers"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Teaching packing to a friend",
+"f": "Explaining your packing methods clearly"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Your top ten backpacking lessons",
+"f": "Reflecting on what this year has taught you"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Your backpacker identity",
+"f": "Defining your own style of travel"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Comfort vs adventure",
+"f": "Finding your personal balance between the two"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Micro-adventures near home",
+"f": "Short local overnight trips with your backpack"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "A lifelong backpacking habit",
+"f": "Making regular trips part of your life"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "A seasonal backpacking calendar",
+"f": "Planning a year of trips around the seasons"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Building a gear library",
+"f": "Storing and maintaining gear between trips"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Saving for the next big trip",
+"f": "Simple systems to fund your next adventure"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your next five adventures",
+"f": "A wish list of routes with rough plans"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Routes for every life stage",
+"f": "Trip ideas that suit different times of life"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Gratitude on the road",
+"f": "Appreciating the people who helped you along the way"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Sharing your best story",
+"f": "Telling your favourite travel story well"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Year in review: gear",
+"f": "Look back at everything you learned about gear and packing"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Year in review: routes",
+"f": "Look back at the routes and regions you explored"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Year in review: people",
+"f": "Look back at the people and cultures you met"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the full journey",
+"f": "Recap the whole path, from your first pack to your dream route"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your backpacking toolkit",
+"f": "Collect your favourite lists, apps and templates"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Next year's goals",
+"f": "Set goals for trips, skills and new places"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Inspiring others",
+"f": "Encouraging friends to take their first backpacking trip"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Packing for your next adventure",
+"f": "Take the first concrete step toward your next trip"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebration day",
+"f": "Celebrate a year of learning and the adventures still to come"
+}
+]
+}

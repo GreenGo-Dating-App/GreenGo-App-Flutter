@@ -1,0 +1,2195 @@
+{
+"topic": "poetry",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What is a poem",
+"f": "How poetry uses lines, sound and images to say a lot in a small space"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Why people write poetry",
+"f": "Poetry as a way to notice, remember, celebrate and share feelings across cultures"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Reading a poem aloud",
+"f": "Hearing rhythm and music by reading slowly, pausing at line ends and breathing"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Reading a poem twice",
+"f": "Why a second reading reveals new images, sounds and meanings"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Your poetry notebook",
+"f": "Keeping a small notebook for images, phrases, overheard words and first drafts"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Noticing like a poet",
+"f": "Paying close attention to small everyday things that others walk past"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "The image",
+"f": "Creating a clear picture in the reader's mind with concrete, specific words"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Images from sight",
+"f": "Writing colour, shape, light and movement precisely in a few words"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Images from sound",
+"f": "Capturing noises and silence in lines that readers can almost hear"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Images from smell and taste",
+"f": "Using scent and flavour to wake up memories in a poem"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Images from touch",
+"f": "Texture, temperature and weight as doorways into a poem"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Writing a five-senses poem",
+"f": "A short poem where each line uses a different sense"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "The line",
+"f": "What a line of poetry is and how its length changes the reading"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Line breaks",
+"f": "Choosing where to end a line for emphasis, surprise or a pause"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "The stanza",
+"f": "Grouping lines into stanzas, the 'rooms' of a poem"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "White space",
+"f": "How blank space on the page gives a poem breath and silence"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Free verse basics",
+"f": "Poems without fixed rhyme or meter that still have shape and music"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Writing your first free verse poem",
+"f": "A short free verse poem about something you see every day"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Simile",
+"f": "Comparing with 'like' or 'as' to make readers see something anew"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Metaphor",
+"f": "Saying one thing is another to reveal a hidden likeness"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Personification",
+"f": "Giving human qualities to objects, animals or weather"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Fresh comparisons",
+"f": "Avoiding worn-out comparisons and finding surprising ones of your own"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Hyperbole for fun",
+"f": "Playful exaggeration that adds energy and humour to a poem"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Review: images and comparisons",
+"f": "A light review of images, lines, stanzas and figurative language"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "The music of words",
+"f": "Why sound matters as much as meaning in poetry"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Rhyme basics",
+"f": "Full rhyme, how it creates pleasure and pattern, and when to use it"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Slant rhyme",
+"f": "Near rhymes like 'shape' and 'keep' that feel subtle and modern"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Internal rhyme",
+"f": "Rhymes inside lines that add music without a sing-song effect"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Alliteration",
+"f": "Repeating first consonant sounds for rhythm and emphasis"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Assonance",
+"f": "Repeating vowel sounds to create a soft, musical flow"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Consonance",
+"f": "Repeating consonant sounds within and at the ends of words"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Onomatopoeia",
+"f": "Words that sound like what they mean, like buzz, splash and crunch"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Repetition",
+"f": "Repeating words and lines to build rhythm, emphasis and feeling"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Rhythm without rules",
+"f": "Feeling the beat of natural speech in your lines"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Counting syllables",
+"f": "How to count syllables, a skill for many poetic forms"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Review: sound and rhythm",
+"f": "A light review of rhyme, sound devices, repetition and rhythm"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Haiku: the basics",
+"f": "The Japanese three-line form, its traditional 5-7-5 pattern and focus on a moment"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Haiku and the seasons",
+"f": "The season word, or kigo, and how it anchors a haiku in time"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Matsuo Bashō",
+"f": "Meeting the celebrated haiku master and his famous poem about the old pond"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Writing a haiku walk",
+"f": "Taking a short walk and writing three haiku about what you notice"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Senryu",
+"f": "The haiku's cousin that focuses on everyday human life, often with gentle humour"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "The acrostic poem",
+"f": "A poem where the first letters of each line spell a word"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "The list poem",
+"f": "Building a poem from a list of things, wishes or memories"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "The cinquain",
+"f": "A five-line form with a growing and shrinking shape"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "The limerick",
+"f": "A funny five-line form with a bouncy rhythm and an AABBA rhyme"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Writing a limerick",
+"f": "Creating your own limerick with a playful character and a twist"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "The couplet",
+"f": "Two rhyming lines that make a neat, memorable unit"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "The quatrain",
+"f": "Four-line stanzas and common rhyme patterns like ABAB and AABB"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "The tercet",
+"f": "Three-line stanzas and their balanced, flowing feel"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Shape poems",
+"f": "Concrete poems whose layout forms a picture of the subject"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Review: first forms",
+"f": "A light review of haiku, acrostics, list poems, limericks and stanzas"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Writing about everyday objects",
+"f": "Finding wonder in a cup, a key or a pair of shoes"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Pablo Neruda's odes",
+"f": "How Neruda praised simple things like tomatoes and socks in his famous odes"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Writing an ode to something ordinary",
+"f": "Celebrating an everyday object with joy and detail"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Writing about weather",
+"f": "Rain, wind and sunlight as subjects and moods in short poems"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Writing about the sea",
+"f": "Waves, tides and shores as rich sources of image and sound"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Writing about trees and plants",
+"f": "Gardens, forests and a single leaf as subjects for poems"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Writing about animals",
+"f": "Observing an animal closely and capturing its movement and spirit"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Writing about the sky",
+"f": "Clouds, stars and sunsets as endlessly fresh subjects"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Writing about a city",
+"f": "Streets, markets and city sounds as material for poems"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Writing about home",
+"f": "Rooms, rituals and smells that make a place feel like home"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Writing about food",
+"f": "Poems that taste, sizzle and celebrate meals and kitchens"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Writing about music",
+"f": "Capturing how a song or instrument feels in words"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Writing about a journey",
+"f": "Trains, roads and arrivals as images of discovery"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Writing about a festival",
+"f": "Lights, colours and traditions of celebrations around the world"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Writing about friendship",
+"f": "Warm poems about friends, shared moments and kindness"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Review: subjects all around",
+"f": "A light review of finding poems in everyday life and the world"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Tone in poetry",
+"f": "How word choice makes a poem feel playful, calm, joyful or thoughtful"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Mood and atmosphere",
+"f": "Creating a feeling in the reader through images and sound"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "The speaker of a poem",
+"f": "Understanding that the 'I' in a poem is a voice, not always the poet"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Writing in different voices",
+"f": "Trying a poem in the voice of a child, a grandparent or a traveller"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Persona poems for beginners",
+"f": "Speaking as an animal, an object or a place"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Address poems",
+"f": "Poems that speak directly to someone or something, like 'To the Moon'"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Question poems",
+"f": "Poems built from questions that spark curiosity and wonder"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Instruction poems",
+"f": "Poems written as playful instructions, like 'How to Watch the Rain'"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Letter poems",
+"f": "Poems written as letters to a friend, a place or your future self"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Emily Dickinson",
+"f": "Her short poems, dashes and slant rhymes, and how she saw big ideas in small things"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "William Wordsworth and nature",
+"f": "His famous daffodils poem and the joy of remembering beauty"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Langston Hughes and rhythm",
+"f": "How Hughes brought the rhythms of jazz and blues into poetry"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Rabindranath Tagore",
+"f": "The Bengali poet's lyrical, nature-filled verse and his worldwide influence"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Gabriela Mistral",
+"f": "The Chilean poet's tender poems about children, landscape and teaching"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Reading poems from many languages",
+"f": "Enjoying poems in translation and what travels across languages"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Review: voice and poets",
+"f": "A light review of tone, speakers, persona and poets met so far"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Poems for children",
+"f": "Rhythm, rhyme and playful language in poems for young readers"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Nonsense poetry",
+"f": "Edward Lear, Lewis Carroll and the joy of made-up words and silly logic"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Writing a nonsense poem",
+"f": "Inventing words and creatures in a playful rhyming poem"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Tongue twisters as poems",
+"f": "Using alliteration and sound for fun, fast-paced verses"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Riddle poems",
+"f": "Describing something without naming it so readers can guess"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Writing a riddle poem",
+"f": "Creating a riddle poem about an everyday object"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Chants and call-and-response",
+"f": "Poems shaped for groups to speak together with rhythm"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Song lyrics and poems",
+"f": "How lyrics and poems are related and how they differ"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Writing a poem from a song title",
+"f": "Using a favourite song's title as a starting line"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Found poetry",
+"f": "Making poems from words found in signs, menus and newspapers"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Blackout poetry",
+"f": "Darkening words on a printed page to reveal a hidden poem"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Collage poems",
+"f": "Combining phrases from different sources into a new poem"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Review: playful poetry",
+"f": "A light review of nonsense, riddles, chants and found poems"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Drafting a poem",
+"f": "Letting a first draft be loose, then shaping it later"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Freewriting toward a poem",
+"f": "Writing freely and circling the lines that shine"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Choosing the right word",
+"f": "Weighing synonyms for sound, meaning and feeling"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Cutting extra words",
+"f": "Removing filler words so every word in the poem matters"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Strong endings",
+"f": "Final lines that echo, surprise or open a door"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Strong openings",
+"f": "First lines that pull readers into the poem immediately"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Titles for poems",
+"f": "Titles that add meaning, set a scene or ask a question"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Reading your poem aloud to revise",
+"f": "Hearing stumbles and rhythms to improve a draft"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Sharing poems kindly",
+"f": "Giving and receiving gentle feedback on poems"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Memorising a short poem",
+"f": "Learning a poem by heart and why poets have done it for centuries"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Reciting with expression",
+"f": "Using pace, pauses and emphasis to perform a poem"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "A poem a day",
+"f": "Building a small daily poetry habit that fits your life"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Poems of gratitude",
+"f": "Writing about the small things that make you thankful"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Poems of morning and evening",
+"f": "Capturing the quiet moods of the start and end of the day"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Poems of the four seasons",
+"f": "A small sequence of four short poems, one per season"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Writing a poem from a photograph",
+"f": "Using a picture as a window into a poem"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Writing a poem from a memory",
+"f": "Turning a happy memory into a short poem full of detail"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "A poem about your name",
+"f": "Exploring the story, sound and meaning of your own name in verse"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Where I'm from poems",
+"f": "A list-style poem about the places, foods, sayings and people that shaped you"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "A poem about a colour",
+"f": "Gathering everything one colour means to you into a vivid poem"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Poems of wishes",
+"f": "Writing a poem made of hopeful wishes for yourself, a friend or the world"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Making a mini anthology",
+"f": "Choosing your favourite poems from these months and ordering them"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Celebrating your first poems",
+"f": "Looking back at your progress and picking a poem to polish"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Beginner review and reading",
+"f": "Reviewing beginner skills and preparing one poem to read aloud"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "What is meter",
+"f": "The pattern of stressed and unstressed syllables that gives lines a beat"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Hearing stress in words",
+"f": "Finding which syllables are stressed in everyday words and phrases"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "The iamb",
+"f": "The da-DUM foot, the heartbeat rhythm of much English poetry"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Iambic pentameter",
+"f": "Five iambs per line, the rhythm of Shakespeare and many classic poems"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "The trochee",
+"f": "The DUM-da foot and its strong, chant-like opening beat"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Anapests and dactyls",
+"f": "Three-syllable feet that create galloping or rolling rhythms"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Scanning a line",
+"f": "Marking stresses in a line to see and hear its meter"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Breaking the meter on purpose",
+"f": "Using a variation in rhythm to highlight a word or moment"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Syllabic verse",
+"f": "Poems built on syllable counts, common in French, Italian and Japanese poetry"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Meter in other languages",
+"f": "How Romance languages count syllables, like the Italian endecasillabo"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Review: meter and rhythm",
+"f": "A light review of stress, feet, scansion and syllabic verse"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Enjambment",
+"f": "Letting a sentence run over the line break to create momentum and surprise"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "End-stopped lines",
+"f": "Lines that finish with a pause, giving weight and calm"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Caesura",
+"f": "The pause inside a line and how it shapes rhythm and meaning"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Rhyme schemes",
+"f": "Mapping rhyme patterns with letters, like ABAB or ABBA"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Rhyming without forcing",
+"f": "Avoiding awkward word order just to make a rhyme fit"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "The ballad",
+"f": "Storytelling poems in quatrains with a song-like rhythm and refrain"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Writing a ballad",
+"f": "Telling a cheerful or adventurous story in ballad stanzas"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Refrains",
+"f": "A repeated line or stanza that becomes the heart of a poem"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Blank verse",
+"f": "Unrhymed iambic pentameter and its natural, speech-like flow"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "The narrative poem",
+"f": "Telling a story in verse with character, scene and change"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "The lyric poem",
+"f": "Short poems expressing a personal feeling or moment"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Review: lines, rhyme and story",
+"f": "A light review of enjambment, rhyme schemes, ballads and lyric poems"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "The sonnet: an introduction",
+"f": "Fourteen lines, a turn of thought and a long history across languages"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "The Petrarchan sonnet",
+"f": "The Italian octave and sestet, and the turn, or volta, between them"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "The Shakespearean sonnet",
+"f": "Three quatrains and a final couplet with an ABAB CDCD EFEF GG scheme"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "The volta",
+"f": "The turning point in a sonnet where the thought shifts or deepens"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Writing a sonnet about a place",
+"f": "Drafting a sonnet about a city, landscape or room you know well"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Modern sonnets",
+"f": "How contemporary poets bend sonnet rules while keeping its spirit"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Camões and the Portuguese sonnet",
+"f": "The great Portuguese poet Luís de Camões and his celebrated sonnets"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "The villanelle",
+"f": "Nineteen lines with two refrains that weave through the poem"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Writing a villanelle",
+"f": "Choosing two strong refrains and building a villanelle around them"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "The pantoum",
+"f": "A Malay-origin form where lines repeat in interlocking quatrains"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "The ghazal",
+"f": "Couplets with a repeated word or phrase, from Arabic and Persian tradition"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Writing a ghazal",
+"f": "Creating a ghazal around a radif, the repeated ending phrase"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Tanka",
+"f": "The Japanese five-line form that adds reflection to a haiku-like image"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Renga and collaborative poems",
+"f": "Linked verse written in turns by several poets"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "The haibun",
+"f": "A Japanese form that pairs a short prose passage with a haiku"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Bashō's travel journal",
+"f": "How Bashō's 'The Narrow Road to the Deep North' blends travel prose and haiku"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "The triolet",
+"f": "An eight-line French form with two lines that return like an echo"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Haiku beyond 5-7-5",
+"f": "Modern haiku in many languages: short and image-focused without strict counts"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Review: traditional forms",
+"f": "A light review of sonnets, villanelles, pantoums, ghazals and tanka"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "The ode in depth",
+"f": "Classical and modern odes and their spirit of praise"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Writing a praise poem",
+"f": "Celebrating a person, place or skill you admire"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Occasional poems",
+"f": "Poems written for celebrations like birthdays, weddings or graduations"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Poems of place",
+"f": "Capturing the spirit of a specific landscape or neighbourhood"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Pastoral poetry",
+"f": "Poems about countryside life and nature from ancient times to today"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Nature poetry today",
+"f": "Close observation of the natural world in contemporary poems"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Mary Oliver and attention",
+"f": "How Mary Oliver turned close attention to nature into poetry"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Li Bai and the moon",
+"f": "The Tang dynasty poet's famous images of mountains, rivers and moonlight"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Wisława Szymborska",
+"f": "The Polish Nobel laureate's playful, curious poems about everyday wonders"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Fernando Pessoa's heteronyms",
+"f": "How Pessoa wrote as several invented poets with different styles"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Writing as a heteronym",
+"f": "Inventing a poet persona with its own name, style and view of life"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Cecília Meireles and music",
+"f": "The Brazilian poet's musical, delicate lyric poems"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Carlos Drummond de Andrade",
+"f": "The Brazilian poet's wit, everyday scenes and famous stone in the road"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Federico García Lorca's imagery",
+"f": "The Spanish poet's vivid, musical images of Andalusia"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Giacomo Leopardi and the infinite",
+"f": "The Italian poet's famous poem about the hedge and endless horizons"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Goethe and lyric poetry",
+"f": "Goethe's short lyric poems and their influence on song"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Review: poets of the world",
+"f": "A light review of odes, place poems and the poets explored"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Ekphrastic poetry",
+"f": "Writing poems in response to paintings, sculptures and photographs"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Writing about a famous painting",
+"f": "Choosing an artwork and entering it through a poem"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Poems from music",
+"f": "Translating the feeling of a piece of music into words"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Poems from film scenes",
+"f": "Turning a memorable film moment into a poem"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Persona poems in depth",
+"f": "Speaking as a historical figure, a character from a story or an object"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Dramatic monologue",
+"f": "A speaker addressing a listener and revealing more than they intend"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Dialogue poems",
+"f": "Poems built as conversations between two voices"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Poems in two languages",
+"f": "Mixing languages in a poem to capture a bilingual life"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Translating a short poem",
+"f": "Trying to carry a poem's sense and music into another language"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Comparing translations",
+"f": "Seeing how different translators handle the same poem"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Review: voices and translations",
+"f": "A light review of ekphrasis, persona, dialogue and translation"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Concrete poetry",
+"f": "Poems whose visual shape is part of their meaning"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Erasure poetry",
+"f": "Creating poems by removing words from an existing text"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Cento",
+"f": "A patchwork poem made entirely of lines borrowed from other poems"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Golden shovel",
+"f": "A form that uses each word of a borrowed line as the end of new lines"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Spoken word poetry",
+"f": "Poems written for performance with rhythm, repetition and presence"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Performing your poem",
+"f": "Voice, pace, eye contact and gesture in reading poetry aloud"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Slam poetry basics",
+"f": "The energy and timing of poems performed in friendly competitions"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Writing a poem to perform",
+"f": "Drafting a poem that comes alive when spoken aloud"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Poetry and rap",
+"f": "Rhyme, flow and wordplay shared by rap and poetry"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Review: visual and spoken poetry",
+"f": "A light review of concrete, erasure, cento and performance poetry"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Imagery that builds",
+"f": "Linking images across a poem so they grow in meaning"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Extended metaphor",
+"f": "Developing one metaphor through a whole poem"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Symbol in poetry",
+"f": "Images that carry deeper meanings without heavy explanation"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Ambiguity as richness",
+"f": "Words and lines that hold more than one meaning at once"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Compression",
+"f": "Saying more with fewer words through careful choices"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Abstract versus concrete",
+"f": "Grounding big ideas like hope or time in concrete images"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Writing about emotions with images",
+"f": "Expressing feelings through objects and scenes rather than naming them"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Writing joy",
+"f": "Capturing delight and happiness in fresh, specific images"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Writing calm",
+"f": "Poems that slow readers down and create a sense of peace"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Writing wonder",
+"f": "Poems about curiosity, discovery and amazement"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Writing nostalgia",
+"f": "Gentle, warm poems about places and times you remember fondly"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Humour in poetry",
+"f": "Wit, surprise and playful logic in light verse"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Light verse",
+"f": "Clever, funny poems with tight rhyme and rhythm"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Abecedarian poems",
+"f": "Poems where each line begins with the next letter of the alphabet"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Anaphora",
+"f": "Repeating a phrase at the start of lines for power, rhythm and momentum"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Catalogue poems",
+"f": "Long, generous lists that gather a whole world into one poem"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Walt Whitman's long lines",
+"f": "His expansive free verse celebrating people, work and nature"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Review: imagery and feeling",
+"f": "A light review of extended metaphor, symbol, compression and tone"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Revising poems: big picture",
+"f": "Asking what a poem is truly about and reshaping it"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Revising line breaks",
+"f": "Trying different breaks to change speed and emphasis"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Revising for sound",
+"f": "Strengthening the music of a poem with sound devices"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Revising for image",
+"f": "Sharpening vague images into precise, vivid ones"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Revising endings",
+"f": "Finding the ending that lands best by testing alternatives"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Workshopping a poem",
+"f": "How poetry workshops work and how to give useful feedback"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Responding to feedback on poems",
+"f": "Choosing which suggestions serve your poem"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Reading poetry collections",
+"f": "How poets arrange poems into books with a shape and flow"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Reading a poet in depth",
+"f": "Spending time with one poet's work to learn their moves"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Imitation as practice",
+"f": "Writing a poem modelled on a favourite poem's structure"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Writing after a poem",
+"f": "Responding to a poem with your own, in conversation with it"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Poems of travel",
+"f": "Capturing new places, languages and encounters in verse"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Poems of food and markets",
+"f": "The colours, sounds and smells of markets in poems"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Poems about learning",
+"f": "Poems about learning a skill, a language or something new"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Poems about crafts and hands",
+"f": "Celebrating bakers, weavers, gardeners and makers in verse"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Poems about cities at night",
+"f": "Lights, quiet streets and late-night sounds in poems"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Poems about rain",
+"f": "Exploring rain through many moods, sounds and images"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Poems about the moon",
+"f": "A favourite subject of poets across cultures and centuries"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Poems about light",
+"f": "Morning light, candlelight and city lights as poetic material"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Sequences of poems",
+"f": "Linking several short poems around one subject or journey"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Writing a poem sequence",
+"f": "Drafting a sequence of five short poems on a theme"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Poems about maps and place names",
+"f": "Using maps and the music of place names as poetic material"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Untranslatable words",
+"f": "Words from other languages with no exact translation as seeds for poems"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Proverbs in poems",
+"f": "Weaving sayings from your culture into fresh, surprising lines"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Poems about childhood games",
+"f": "Playgrounds, toys and games remembered in vivid verse"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Fast drafting with constraints",
+"f": "Timed poems and word limits that spark unexpected ideas"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Oulipo constraints",
+"f": "Playful rules, like avoiding a letter, from the French Oulipo group"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Poems about sport and movement",
+"f": "Capturing speed, balance and teamwork in rhythmic lines"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Poems about city animals",
+"f": "Pigeons, cats and sparrows as lively subjects for urban poems"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Listening at poetry readings",
+"f": "What you learn as an audience member at readings and open mics"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Building a poetry routine",
+"f": "Weekly habits for reading, writing and revising poems"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Intermediate review and reading",
+"f": "Reviewing intermediate skills and preparing poems to share"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "The sestina",
+"f": "Six end-words rotating through six stanzas and a short envoi"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Writing a sestina",
+"f": "Choosing six flexible end-words and building a sestina step by step"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Terza rima",
+"f": "Dante's interlocking tercets with an ABA BCB rhyme chain"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Dante and the Italian tradition",
+"f": "How Dante shaped Italian poetry and the terza rima form"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "The rondeau",
+"f": "A French form built on a returning refrain from its opening words"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "The rondel and roundel",
+"f": "Related French forms with musical repetitions and two rhymes"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Ottava rima",
+"f": "Eight-line stanzas with an ABABABCC scheme, beloved by Italian poets"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Rhyme royal",
+"f": "Seven-line stanzas with an ABABBCC rhyme, used by Chaucer"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "The Sapphic stanza",
+"f": "The ancient Greek stanza of Sappho and its adaptations in modern languages"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Alexandrines",
+"f": "The twelve-syllable French line of Racine and Baudelaire and its grandeur"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "The décima",
+"f": "The ten-line Spanish form, popular in Latin American improvised song"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "The cordel tradition",
+"f": "Brazilian folk poetry in printed booklets with rhyme and storytelling"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Inventing your own form",
+"f": "Designing a new set of rules and writing a poem that follows them"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Review: advanced forms",
+"f": "A light review of sestina, terza rima, rondeau and other forms"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Mastering meter",
+"f": "Writing fluent metrical lines that still sound natural"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Metrical substitution",
+"f": "Using inverted feet and extra syllables expressively"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Accentual verse",
+"f": "Counting stresses only, as in Old English and modern strong-stress poems"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Sprung rhythm",
+"f": "Gerard Manley Hopkins' energetic rhythm built on stressed syllables"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Sound patterning at an advanced level",
+"f": "Weaving vowel and consonant patterns through a whole poem"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Rhyme as surprise",
+"f": "Unexpected rhymes, mosaic rhymes and rhymes across lines"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Syntax and the line",
+"f": "Playing sentence structure against line breaks for tension"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Long lines and breath",
+"f": "Writing expansive lines that carry readers like a wave"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Short lines and silence",
+"f": "Minimalist poems where each word stands alone"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Punctuation as music",
+"f": "Dashes, colons and missing punctuation as tools of rhythm"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Review: rhythm and sound mastery",
+"f": "A light review of meter, sound patterns and syntax"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "The prose poem",
+"f": "Poems written in paragraphs that keep poetry's intensity and music"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Charles Baudelaire and the prose poem",
+"f": "How Baudelaire helped shape the prose poem in French"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Writing a prose poem",
+"f": "Drafting a prose poem built on one vivid, strange or joyful image"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "The long poem",
+"f": "Sustaining a poem across many pages with movement and variety"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "The poem sequence",
+"f": "Linked poems that build an arc together"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "The book-length project",
+"f": "Planning a collection around a theme, place or question"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Documentary poetry",
+"f": "Poems built from research, records and real voices"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Poems of science",
+"f": "Writing about stars, cells and discovery with accuracy and wonder"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Poems of mathematics",
+"f": "Patterns, numbers and shapes as inspiration for poems"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Poems about language itself",
+"f": "Poems that play with grammar, words and meaning"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Ars poetica",
+"f": "Writing a poem about what poetry is and why you write"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Poems of history",
+"f": "Imagining moments from history through careful research and empathy"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Recipe poems",
+"f": "Using recipes and kitchen rituals as the structure for a poem"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Review: larger projects",
+"f": "A light review of prose poems, long poems and themed projects"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Voice at an advanced level",
+"f": "Developing a recognisable, flexible poetic voice"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Persona and mask",
+"f": "Writing through invented speakers to explore new perspectives"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Multiple voices in one poem",
+"f": "Polyphonic poems where several speakers share the page"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Irony in poetry",
+"f": "Saying one thing while meaning another for wit and depth"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Understatement",
+"f": "Quiet phrasing that makes strong feelings land harder"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Wit and wordplay",
+"f": "Puns, double meanings and clever turns in serious and light poems"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Tension and resolution",
+"f": "Building and releasing tension across lines and stanzas"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Leaps and associations",
+"f": "Moving between surprising images while keeping readers with you"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Mystery and clarity",
+"f": "Balancing what is shown and what is left for readers to discover"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Closure and openness",
+"f": "Choosing between closed and open endings for a poem"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "The turn in any poem",
+"f": "Using a shift in thought or tone in free verse, not only sonnets"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Juxtaposition",
+"f": "Placing contrasting images side by side to spark meaning"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Negative capability",
+"f": "John Keats's idea of staying open to uncertainty, mystery and wonder"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "The poem as discovery",
+"f": "Writing to find out what you think rather than to state it"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Review: voice and technique",
+"f": "A light review of persona, irony, leaps and endings"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Reading poetry critically",
+"f": "Analysing how a poem's form, sound and image create meaning"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Close reading a sonnet",
+"f": "Studying a famous sonnet line by line to see how it works"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Close reading free verse",
+"f": "Unpacking the choices behind a contemporary free verse poem"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Poetry movements: an overview",
+"f": "Romanticism, Symbolism, Modernism and other movements in brief"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Symbolism",
+"f": "French Symbolist poets and their music of suggestion"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Imagism",
+"f": "Ezra Pound, H.D. and the clear, precise image"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Modernism in poetry",
+"f": "How poets like T. S. Eliot changed form and voice in the early twentieth century"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Brazilian Modernism",
+"f": "Poets of the 1922 Modern Art Week and their fresh, playful language"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Latin American poetry",
+"f": "Neruda, Mistral, Octavio Paz and their worldwide influence on modern poetry"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Contemporary world poetry",
+"f": "Discovering living poets from many countries and languages"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Haiku masters beyond Bashō",
+"f": "Yosa Buson, Kobayashi Issa and Masaoka Shiki"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Persian poetic tradition",
+"f": "Rumi, Hafez and the beauty of classical Persian lyric forms"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Review: traditions and movements",
+"f": "A light review of close reading and major poetic movements"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Translation as art",
+"f": "The choices translators make between sense, sound and form"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Translating a sonnet",
+"f": "Trying to keep meaning, rhyme and meter when translating a sonnet"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Versions and adaptations",
+"f": "Free adaptations that capture a poem's spirit more than its words"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Writing in a second language",
+"f": "The freedom and challenge of writing poems in another language"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Bilingual poetry collections",
+"f": "Facing-page translations and what they offer readers"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Revision at an advanced level",
+"f": "Revising a poem through many drafts without losing its spark"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Revising a collection",
+"f": "Ordering, cutting and linking poems into a strong manuscript"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Titles that work harder",
+"f": "Titles that add layers, context or a second meaning"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Epigraphs",
+"f": "Quoting another writer at the start of a poem to open a conversation"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Notes and dedications",
+"f": "When to add notes or dedications and how to keep them brief"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Proofreading poems",
+"f": "Checking line breaks, spacing and punctuation carefully"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Knowing when a poem is done",
+"f": "Recognising when revision starts to harm rather than help"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Reading your draft as a stranger",
+"f": "Techniques for gaining distance before revising a poem"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Cutting a poem in half",
+"f": "Experimenting with radical cuts to find a poem's true core"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Review: translation and revision",
+"f": "A light review of translation and advanced revision"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Sharing poems with the world",
+"f": "Options from readings and journals to zines and online spaces"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Submitting poems to journals",
+"f": "Choosing a selection, reading guidelines and tracking submissions"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Writing a short poet's bio",
+"f": "Introducing yourself in a few friendly, clear sentences"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Handling rejection as a poet",
+"f": "Staying motivated and continuing to send work out"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Poetry contests and prizes",
+"f": "How contests work and how to choose ones that fit your work"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "The chapbook",
+"f": "A short collection of poems and how poets create and share them"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Making a handmade zine",
+"f": "Designing and folding a small booklet of your poems"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Giving a poetry reading",
+"f": "Planning a set, introducing poems and connecting with an audience"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Hosting an open mic",
+"f": "Organising a friendly event where people share poems"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Teaching poetry to others",
+"f": "Leading a small workshop for friends, children or colleagues"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Poetry and visual art collaborations",
+"f": "Pairing poems with illustration, photography or calligraphy"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Poetry and music collaborations",
+"f": "Setting poems to music and writing with musicians"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Poetry in public spaces",
+"f": "Poems on walls, buses and benches and why cities love them"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Review: sharing and community",
+"f": "A light review of submissions, chapbooks, readings and collaborations"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Poems for the screen",
+"f": "Writing poems for digital spaces, social posts and short videos"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Recording a poem",
+"f": "Recording your poem with a clear voice, good pacing and gentle sound"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Living a poetic life",
+"f": "Habits of attention, reading and writing that last for years"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Reading poetry daily",
+"f": "Building a lifelong habit of reading at least one poem a day"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Keeping a commonplace book",
+"f": "Copying favourite lines and quotes to learn from them"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Writing through every season",
+"f": "Keeping a poetry practice alive in busy and quiet times"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Your personal anthology",
+"f": "Choosing the poems by others that matter most to you"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Writing your own poetic manifesto",
+"f": "Stating what you believe about poetry in your own words"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Capstone: choosing a theme",
+"f": "Selecting the theme for a final sequence of poems"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Capstone: gathering material",
+"f": "Collecting images, memories and research for the sequence"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Capstone: drafting the first poems",
+"f": "Writing the opening poems of your sequence"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Capstone: experimenting with form",
+"f": "Including at least one fixed form in the sequence"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Capstone: drafting the final poems",
+"f": "Completing the sequence with a strong closing poem"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Capstone: ordering the sequence",
+"f": "Arranging the poems so they build an arc"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Capstone: revision",
+"f": "Revising every poem with the skills learned this year"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Capstone: titles and final polish",
+"f": "Choosing titles and proofreading the whole sequence"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Capstone: reading it aloud",
+"f": "Performing the sequence and reflecting on the experience"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Looking back on your poetry year",
+"f": "Reviewing your growth from first images to a finished sequence"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Your next poems",
+"f": "Setting goals and dreams for the next stage of your poetry journey"
+}
+]
+}

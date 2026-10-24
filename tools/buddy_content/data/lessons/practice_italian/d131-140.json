@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 131,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Chi and quello che",
+     "g": "Use chi and quello che for general statements about people and things.",
+     "p": [
+      "Chi means whoever or those who, always with a singular verb: chi cerca trova, chi studia impara.",
+      "Quello che (or ciò che) means what or the thing that: quello che dici è vero, fai quello che vuoi.",
+      "Tutto quello che means everything that: ho mangiato tutto quello che c'era. Very common in songs and proverbs."
+     ],
+     "q": "Do you know a proverb in your language like chi cerca trova? How would you say it in Italian?",
+     "c": "Write two sentences with chi (chi... ) and two with quello che about your habits."
+    },
+    "de": {
+     "t": "Chi und quello che",
+     "g": "Du benutzt chi und quello che für allgemeine Aussagen über Menschen und Dinge.",
+     "p": [
+      "Chi heißt wer oder diejenigen, die, immer mit Verb im Singular: chi cerca trova, chi studia impara.",
+      "Quello che (oder ciò che) heißt das, was: quello che dici è vero, fai quello che vuoi.",
+      "Tutto quello che heißt alles, was: ho mangiato tutto quello che c'era. Sehr häufig in Liedern und Sprichwörtern."
+     ],
+     "q": "Kennst du ein Sprichwort wie chi cerca trova in deiner Sprache? Wie sagst du es auf Italienisch?",
+     "c": "Schreib zwei Sätze mit chi und zwei mit quello che über deine Gewohnheiten."
+    },
+    "es": {
+     "t": "Chi y quello che",
+     "g": "Usar chi y quello che para frases generales sobre personas y cosas.",
+     "p": [
+      "Chi significa quien o el que, siempre con verbo en singular: chi cerca trova (quien busca encuentra), chi studia impara.",
+      "Quello che (o ciò che) es lo que: quello che dici è vero, fai quello che vuoi.",
+      "Tutto quello che es todo lo que: ho mangiato tutto quello che c'era. Muy común en canciones y refranes."
+     ],
+     "q": "¿Conoces un refrán en tu idioma como chi cerca trova? ¿Cómo lo dirías en italiano?",
+     "c": "Escribe dos frases con chi y dos con quello che sobre tus costumbres."
+    },
+    "fr": {
+     "t": "Chi et quello che",
+     "g": "Utiliser chi et quello che pour des phrases générales sur les gens et les choses.",
+     "p": [
+      "Chi signifie celui qui ou qui, toujours avec un verbe au singulier : chi cerca trova, chi studia impara.",
+      "Quello che (ou ciò che) veut dire ce que, ce qui : quello che dici è vero, fai quello che vuoi.",
+      "Tutto quello che veut dire tout ce que : ho mangiato tutto quello che c'era. Très fréquent dans les chansons et proverbes."
+     ],
+     "q": "Connais-tu un proverbe comme chi cerca trova dans ta langue ? Comment le dirais-tu en italien ?",
+     "c": "Écris deux phrases avec chi et deux avec quello che sur tes habitudes."
+    },
+    "it": {
+     "t": "Chi e quello che",
+     "g": "Usare chi e quello che per frasi generali su persone e cose.",
+     "p": [
+      "Chi significa la persona che o le persone che, sempre con il verbo al singolare: chi cerca trova, chi studia impara.",
+      "Quello che (o ciò che) indica la cosa che: quello che dici è vero, fai quello che vuoi.",
+      "Tutto quello che indica ogni cosa: ho mangiato tutto quello che c'era. Molto frequente in canzoni e proverbi."
+     ],
+     "q": "Conosci un proverbio nella tua lingua simile a chi cerca trova? Come lo diresti in italiano?",
+     "c": "Scrivi due frasi con chi e due con quello che sulle tue abitudini."
+    },
+    "pt": {
+     "t": "Chi e quello che",
+     "g": "Usar chi e quello che em frases gerais sobre pessoas e coisas.",
+     "p": [
+      "Chi significa quem, sempre com verbo no singular: chi cerca trova (quem procura encontra), chi studia impara.",
+      "Quello che (ou ciò che) é o que, aquilo que: quello che dici è vero, fai quello che vuoi.",
+      "Tutto quello che é tudo o que: ho mangiato tutto quello che c'era. Muito comum em canções e provérbios."
+     ],
+     "q": "Conheces um provérbio na tua língua como chi cerca trova? Como o dirias em italiano?",
+     "c": "Escreve duas frases com chi e duas com quello che sobre os teus hábitos."
+    },
+    "pt_BR": {
+     "t": "Chi e quello che",
+     "g": "Usar chi e quello che em frases gerais sobre pessoas e coisas.",
+     "p": [
+      "Chi significa quem, sempre com verbo no singular: chi cerca trova (quem procura acha), chi studia impara.",
+      "Quello che (ou ciò che) é o que, aquilo que: quello che dici è vero, fai quello che vuoi.",
+      "Tutto quello che é tudo o que: ho mangiato tutto quello che c'era. Muito comum em músicas e provérbios."
+     ],
+     "q": "Você conhece um ditado na sua língua como chi cerca trova? Como diria em italiano?",
+     "c": "Escreva duas frases com chi e duas com quello che sobre seus hábitos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "chi cerca trova",
+      "ex": "Non arrenderti: chi cerca trova!"
+     },
+     {
+      "w": "chi studia",
+      "ex": "Chi studia ogni giorno impara più in fretta."
+     },
+     {
+      "w": "quello che dici",
+      "ex": "Quello che dici è vero, hai ragione."
+     },
+     {
+      "w": "ciò che",
+      "ex": "Ciò che conta è divertirsi."
+     },
+     {
+      "w": "tutto quello che",
+      "ex": "Ho capito tutto quello che ha detto."
+     },
+     {
+      "w": "fai quello che vuoi",
+      "ex": "In vacanza fai quello che vuoi."
+     }
+    ],
+    "gram": "Chi = la persona che (verbo al singolare): chi dorme non piglia pesci. Quello che / ciò che = la cosa che: quello che vedi."
+   }
+  },
+  {
+   "d": 132,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Indefinites: qualcuno, qualcosa",
+     "g": "Talk about someone, something, nobody and nothing.",
+     "p": [
+      "Qualcuno is someone, qualcosa something: c'è qualcuno?, vuoi qualcosa da bere? Both take a singular verb.",
+      "Nessuno and niente (or nulla) are negative. After the verb add non: non c'è nessuno, non ho capito niente.",
+      "Ognuno means each one, tutto everything: ognuno porta qualcosa, ho visto tutto. Tutti means everybody."
+     ],
+     "q": "Is there qualcosa you always carry with you? And qualcuno you call every week?",
+     "c": "Write four sentences about your day with qualcuno, qualcosa, nessuno and niente."
+    },
+    "de": {
+     "t": "Indefinitpronomen: qualcuno, qualcosa",
+     "g": "Du sprichst über jemanden, etwas, niemanden und nichts.",
+     "p": [
+      "Qualcuno heißt jemand, qualcosa etwas: c'è qualcuno?, vuoi qualcosa da bere? Beide mit Verb im Singular.",
+      "Nessuno und niente (oder nulla) sind verneint. Nach dem Verb kommt non dazu: non c'è nessuno, non ho capito niente.",
+      "Ognuno heißt jeder, tutto alles: ognuno porta qualcosa, ho visto tutto. Tutti heißt alle."
+     ],
+     "q": "Gibt es qualcosa, das du immer dabeihast? Und qualcuno, den du jede Woche anrufst?",
+     "c": "Schreib vier Sätze über deinen Tag mit qualcuno, qualcosa, nessuno und niente."
+    },
+    "es": {
+     "t": "Indefinidos: qualcuno, qualcosa",
+     "g": "Hablar de alguien, algo, nadie y nada.",
+     "p": [
+      "Qualcuno es alguien, qualcosa algo: c'è qualcuno?, vuoi qualcosa da bere? Ambos con verbo en singular.",
+      "Nessuno y niente (o nulla) son negativos. Detrás del verbo exigen non: non c'è nessuno, non ho capito niente.",
+      "Ognuno es cada uno, tutto todo: ognuno porta qualcosa, ho visto tutto. Tutti es todos."
+     ],
+     "q": "¿Hay qualcosa que siempre llevas contigo? ¿Y qualcuno a quien llamas cada semana?",
+     "c": "Escribe cuatro frases sobre tu día con qualcuno, qualcosa, nessuno y niente."
+    },
+    "fr": {
+     "t": "Les indéfinis : qualcuno, qualcosa",
+     "g": "Parler de quelqu'un, quelque chose, personne et rien.",
+     "p": [
+      "Qualcuno veut dire quelqu'un, qualcosa quelque chose : c'è qualcuno ?, vuoi qualcosa da bere ? Verbe au singulier.",
+      "Nessuno et niente (ou nulla) sont négatifs. Après le verbe, on garde non : non c'è nessuno, non ho capito niente.",
+      "Ognuno veut dire chacun, tutto tout : ognuno porta qualcosa, ho visto tutto. Tutti veut dire tout le monde."
+     ],
+     "q": "Y a-t-il qualcosa que tu as toujours sur toi ? Et qualcuno que tu appelles chaque semaine ?",
+     "c": "Écris quatre phrases sur ta journée avec qualcuno, qualcosa, nessuno et niente."
+    },
+    "it": {
+     "t": "Gli indefiniti: qualcuno, qualcosa",
+     "g": "Parlare di qualcuno, qualcosa, nessuno e niente.",
+     "p": [
+      "Qualcuno indica una persona non precisata, qualcosa una cosa: c'è qualcuno?, vuoi qualcosa da bere? Verbo al singolare.",
+      "Nessuno e niente (o nulla) sono negativi. Dopo il verbo serve non: non c'è nessuno, non ho capito niente.",
+      "Ognuno significa ogni persona, tutto ogni cosa: ognuno porta qualcosa, ho visto tutto. Tutti indica tutte le persone."
+     ],
+     "q": "C'è qualcosa che porti sempre con te? E qualcuno che chiami ogni settimana?",
+     "c": "Scrivi quattro frasi sulla tua giornata con qualcuno, qualcosa, nessuno e niente."
+    },
+    "pt": {
+     "t": "Indefinidos: qualcuno, qualcosa",
+     "g": "Falar de alguém, alguma coisa, ninguém e nada.",
+     "p": [
+      "Qualcuno é alguém, qualcosa é alguma coisa: c'è qualcuno?, vuoi qualcosa da bere? Ambos com verbo no singular.",
+      "Nessuno e niente (ou nulla) são negativos. Depois do verbo pedem non: non c'è nessuno, non ho capito niente.",
+      "Ognuno é cada um, tutto é tudo: ognuno porta qualcosa, ho visto tutto. Tutti é todos."
+     ],
+     "q": "Há qualcosa que trazes sempre contigo? E qualcuno a quem ligas todas as semanas?",
+     "c": "Escreve quatro frases sobre o teu dia com qualcuno, qualcosa, nessuno e niente."
+    },
+    "pt_BR": {
+     "t": "Indefinidos: qualcuno, qualcosa",
+     "g": "Falar de alguém, alguma coisa, ninguém e nada.",
+     "p": [
+      "Qualcuno é alguém, qualcosa é alguma coisa: c'è qualcuno?, vuoi qualcosa da bere? Ambos com verbo no singular.",
+      "Nessuno e niente (ou nulla) são negativos. Depois do verbo pedem non: non c'è nessuno, non ho capito niente.",
+      "Ognuno é cada um, tutto é tudo: ognuno porta qualcosa, ho visto tutto. Tutti é todo mundo."
+     ],
+     "q": "Tem qualcosa que você sempre leva junto? E qualcuno para quem você liga toda semana?",
+     "c": "Escreva quatro frases sobre o seu dia com qualcuno, qualcosa, nessuno e niente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "qualcuno",
+      "ex": "Qualcuno ha visto le mie chiavi?"
+     },
+     {
+      "w": "qualcosa da bere",
+      "ex": "Vuoi qualcosa da bere? Un'acqua, un succo?"
+     },
+     {
+      "w": "non c'è nessuno",
+      "ex": "Ho suonato, ma non c'è nessuno in casa."
+     },
+     {
+      "w": "non ho capito niente",
+      "ex": "Parlava veloce e non ho capito niente."
+     },
+     {
+      "w": "ognuno",
+      "ex": "Alla festa ognuno porta un dolce."
+     },
+     {
+      "w": "tutto",
+      "ex": "Hai preparato tutto per la partenza?"
+     }
+    ],
+    "gram": "Qualcuno, qualcosa, ognuno + verbo singolare. Nessuno e niente dopo il verbo vogliono non: non vedo nessuno."
+   }
+  },
+  {
+   "d": 133,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Ogni, qualche, alcuni",
+     "g": "Choose ogni, qualche, alcuni and parecchi with the right noun form.",
+     "p": [
+      "Ogni (every) and qualche (some) never change and take a singular noun: ogni giorno, qualche volta, qualche amico.",
+      "Alcuni / alcune (some, a few) take a plural noun: alcuni amici, alcune idee. Qualche amico = alcuni amici.",
+      "Parecchio / parecchia / parecchi / parecchie means quite a lot and agrees: parecchi libri, parecchia gente."
+     ],
+     "q": "What do you do ogni giorno, and what do you do only qualche volta?",
+     "c": "Write the same idea twice, once with qualche + singular and once with alcuni + plural, for three nouns."
+    },
+    "de": {
+     "t": "Ogni, qualche, alcuni",
+     "g": "Du wählst ogni, qualche, alcuni und parecchi mit der richtigen Nomenform.",
+     "p": [
+      "Ogni (jeder) und qualche (einige) sind unveränderlich und stehen mit Singular: ogni giorno, qualche volta, qualche amico.",
+      "Alcuni / alcune (einige) stehen mit Plural: alcuni amici, alcune idee. Qualche amico = alcuni amici.",
+      "Parecchio / parecchia / parecchi / parecchie heißt ziemlich viel und wird angeglichen: parecchi libri, parecchia gente."
+     ],
+     "q": "Was machst du ogni giorno und was nur qualche volta?",
+     "c": "Schreib dieselbe Idee zweimal, mit qualche + Singular und mit alcuni + Plural, für drei Nomen."
+    },
+    "es": {
+     "t": "Ogni, qualche, alcuni",
+     "g": "Elegir ogni, qualche, alcuni y parecchi con la forma correcta del sustantivo.",
+     "p": [
+      "Ogni (cada) y qualche (algún, algunos) no cambian y van con singular: ogni giorno, qualche volta, qualche amico.",
+      "Alcuni / alcune (algunos) van con plural: alcuni amici, alcune idee. Ojo: qualche amico = alcuni amici.",
+      "Parecchio / parecchia / parecchi / parecchie es bastante, bastantes, y concuerda: parecchi libri, parecchia gente."
+     ],
+     "q": "¿Qué haces ogni giorno y qué haces solo qualche volta?",
+     "c": "Escribe la misma idea dos veces, con qualche + singular y con alcuni + plural, para tres sustantivos."
+    },
+    "fr": {
+     "t": "Ogni, qualche, alcuni",
+     "g": "Choisir ogni, qualche, alcuni et parecchi avec la bonne forme du nom.",
+     "p": [
+      "Ogni (chaque) et qualche (quelques) sont invariables, suivis du singulier : ogni giorno, qualche volta, qualche amico.",
+      "Alcuni / alcune (quelques) prennent le pluriel : alcuni amici, alcune idee. Attention : qualche amico = alcuni amici.",
+      "Parecchio / parecchia / parecchi / parecchie veut dire pas mal de et s'accorde : parecchi libri, parecchia gente."
+     ],
+     "q": "Que fais-tu ogni giorno, et que fais-tu seulement qualche volta ?",
+     "c": "Écris la même idée deux fois, avec qualche + singulier puis alcuni + pluriel, pour trois noms."
+    },
+    "it": {
+     "t": "Ogni, qualche, alcuni",
+     "g": "Scegliere ogni, qualche, alcuni e parecchi con la forma giusta del nome.",
+     "p": [
+      "Ogni e qualche sono invariabili e vogliono il singolare: ogni giorno, qualche volta, qualche amico.",
+      "Alcuni / alcune vogliono il plurale: alcuni amici, alcune idee. Qualche amico ha lo stesso senso di alcuni amici.",
+      "Parecchio / parecchia / parecchi / parecchie indica una quantità notevole e si accorda: parecchi libri, parecchia gente."
+     ],
+     "q": "Che cosa fai ogni giorno e che cosa fai solo qualche volta?",
+     "c": "Scrivi la stessa idea due volte, con qualche + singolare e con alcuni + plurale, per tre nomi."
+    },
+    "pt": {
+     "t": "Ogni, qualche, alcuni",
+     "g": "Escolher ogni, qualche, alcuni e parecchi com a forma certa do nome.",
+     "p": [
+      "Ogni (cada) e qualche (algum, alguns) não mudam e levam singular: ogni giorno, qualche volta, qualche amico.",
+      "Alcuni / alcune (alguns) levam plural: alcuni amici, alcune idee. Atenção: qualche amico = alcuni amici.",
+      "Parecchio / parecchia / parecchi / parecchie é bastante, bastantes, e concorda: parecchi libri, parecchia gente."
+     ],
+     "q": "O que fazes ogni giorno e o que fazes só qualche volta?",
+     "c": "Escreve a mesma ideia duas vezes, com qualche + singular e com alcuni + plural, para três nomes."
+    },
+    "pt_BR": {
+     "t": "Ogni, qualche, alcuni",
+     "g": "Escolher ogni, qualche, alcuni e parecchi com a forma certa do substantivo.",
+     "p": [
+      "Ogni (cada) e qualche (algum, alguns) não mudam e pedem singular: ogni giorno, qualche volta, qualche amico.",
+      "Alcuni / alcune (alguns) pedem plural: alcuni amici, alcune idee. Atenção: qualche amico = alcuni amici.",
+      "Parecchio / parecchia / parecchi / parecchie é bastante, bastantes, e concorda: parecchi libri, parecchia gente."
+     ],
+     "q": "O que você faz ogni giorno e o que faz só qualche volta?",
+     "c": "Escreva a mesma ideia duas vezes, com qualche + singular e com alcuni + plural, para três substantivos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ogni giorno",
+      "ex": "Ogni giorno bevo un caffè al bar sotto casa."
+     },
+     {
+      "w": "qualche volta",
+      "ex": "Qualche volta andiamo al cinema insieme."
+     },
+     {
+      "w": "qualche amico",
+      "ex": "Stasera vengono qualche amico e mia sorella."
+     },
+     {
+      "w": "alcuni amici",
+      "ex": "Sabato esco con alcuni amici dell'università."
+     },
+     {
+      "w": "alcune idee",
+      "ex": "Ho alcune idee per il compleanno di Anna."
+     },
+     {
+      "w": "parecchia gente",
+      "ex": "In piazza c'era parecchia gente."
+     }
+    ],
+    "gram": "Ogni e qualche + nome singolare (ogni mattina, qualche libro); alcuni/alcune + plurale; parecchio si accorda col nome."
+   }
+  },
+  {
+   "d": 134,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Partitive articles",
+     "g": "Say some in Italian with del, dello, della, dei, degli, delle.",
+     "p": [
+      "Partitive = di + article: del pane, dello zucchero, della frutta, dell'acqua. It means some or a bit of.",
+      "In the plural: dei biscotti, degli spinaci, delle mele. It means some, a few.",
+      "In negative sentences it usually disappears: non ho pane, non compro mele. Un po' di is a friendly alternative."
+     ],
+     "q": "What do you usually buy at the market? Answer with del, della, dei, delle.",
+     "c": "Write a shopping list of six items, each with the right partitive article."
+    },
+    "de": {
+     "t": "Teilungsartikel",
+     "g": "Du sagst etwas oder einige mit del, dello, della, dei, degli, delle.",
+     "p": [
+      "Teilungsartikel = di + Artikel: del pane, dello zucchero, della frutta, dell'acqua. Bedeutet etwas, ein bisschen.",
+      "Im Plural: dei biscotti, degli spinaci, delle mele. Bedeutet einige, ein paar.",
+      "In verneinten Sätzen fällt er meist weg: non ho pane, non compro mele. Un po' di ist eine freundliche Alternative."
+     ],
+     "q": "Was kaufst du normalerweise auf dem Markt? Antworte mit del, della, dei, delle.",
+     "c": "Schreib eine Einkaufsliste mit sechs Dingen, jedes mit dem richtigen Teilungsartikel."
+    },
+    "es": {
+     "t": "Artículos partitivos",
+     "g": "Decir algo de, unos o unas con del, dello, della, dei, degli, delle.",
+     "p": [
+      "Partitivo = di + artículo: del pane (pan, algo de pan), dello zucchero, della frutta, dell'acqua.",
+      "En plural: dei biscotti, degli spinaci, delle mele. Equivale a unos, unas.",
+      "En frases negativas suele desaparecer: non ho pane, non compro mele. Un po' di es una alternativa cómoda."
+     ],
+     "q": "¿Qué sueles comprar en el mercado? Responde con del, della, dei, delle.",
+     "c": "Escribe una lista de la compra con seis cosas, cada una con su partitivo correcto."
+    },
+    "fr": {
+     "t": "Les articles partitifs",
+     "g": "Dire du, de la, des avec del, dello, della, dei, degli, delle.",
+     "p": [
+      "Partitif = di + article, comme en français : del pane (du pain), dello zucchero, della frutta, dell'acqua.",
+      "Au pluriel : dei biscotti, degli spinaci, delle mele (des pommes).",
+      "À la forme négative, il disparaît souvent : non ho pane, non compro mele. Un po' di est une alternative pratique."
+     ],
+     "q": "Qu'achètes-tu d'habitude au marché ? Réponds avec del, della, dei, delle.",
+     "c": "Écris une liste de courses de six articles, chacun avec le bon partitif."
+    },
+    "it": {
+     "t": "Gli articoli partitivi",
+     "g": "Indicare una quantità non precisa con del, dello, della, dei, degli, delle.",
+     "p": [
+      "Partitivo = di + articolo: del pane, dello zucchero, della frutta, dell'acqua. Indica un po' di qualcosa.",
+      "Al plurale: dei biscotti, degli spinaci, delle mele. Indica alcuni, alcune.",
+      "Nelle frasi negative di solito sparisce: non ho pane, non compro mele. Un po' di è un'alternativa comoda."
+     ],
+     "q": "Che cosa compri di solito al mercato? Rispondi con del, della, dei, delle.",
+     "c": "Scrivi una lista della spesa di sei prodotti, ognuno con l'articolo partitivo giusto."
+    },
+    "pt": {
+     "t": "Artigos partitivos",
+     "g": "Dizer algum, uns ou umas com del, dello, della, dei, degli, delle.",
+     "p": [
+      "Partitivo = di + artigo: del pane (pão, algum pão), dello zucchero, della frutta, dell'acqua.",
+      "No plural: dei biscotti, degli spinaci, delle mele. Equivale a uns, umas.",
+      "Em frases negativas costuma desaparecer: non ho pane, non compro mele. Un po' di é uma boa alternativa."
+     ],
+     "q": "O que costumas comprar no mercado? Responde com del, della, dei, delle.",
+     "c": "Escreve uma lista de compras com seis produtos, cada um com o partitivo certo."
+    },
+    "pt_BR": {
+     "t": "Artigos partitivos",
+     "g": "Dizer um pouco de, uns ou umas com del, dello, della, dei, degli, delle.",
+     "p": [
+      "Partitivo = di + artigo: del pane (um pouco de pão), dello zucchero, della frutta, dell'acqua.",
+      "No plural: dei biscotti, degli spinaci, delle mele. Equivale a uns, umas.",
+      "Em frases negativas costuma sumir: non ho pane, non compro mele. Un po' di é uma boa alternativa."
+     ],
+     "q": "O que você costuma comprar na feira? Responda com del, della, dei, delle.",
+     "c": "Escreva uma lista de compras com seis produtos, cada um com o partitivo certo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "del pane",
+      "ex": "Puoi comprare del pane fresco?"
+     },
+     {
+      "w": "dello zucchero",
+      "ex": "Metti dello zucchero nel caffè?"
+     },
+     {
+      "w": "della frutta",
+      "ex": "A merenda mangio della frutta."
+     },
+     {
+      "w": "dei biscotti",
+      "ex": "Ho comprato dei biscotti per la colazione."
+     },
+     {
+      "w": "degli spinaci",
+      "ex": "Stasera cucino degli spinaci con l'aglio."
+     },
+     {
+      "w": "delle mele",
+      "ex": "Al mercato prendo delle mele e delle pere."
+     }
+    ],
+    "gram": "Partitivo = di + articolo determinativo: del, dello, dell', della, dei, degli, delle. Nelle negazioni spesso si omette."
+   }
+  },
+  {
+   "d": 135,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Expressing opinions",
+     "g": "Introduce your opinion naturally in a conversation.",
+     "p": [
+      "Simple starters: secondo me, per me, a mio parere + normal sentence: secondo me questo film è bellissimo.",
+      "Penso di / credo di + infinitive when the subject is the same: penso di avere ragione, credo di sì.",
+      "Penso che / credo che need a special verb form (congiuntivo, coming at B1). Learn fixed chunks: penso che sia vero."
+     ],
+     "q": "Secondo te, what is the best season to visit Italy, and why?",
+     "c": "Give your opinion on three things (a food, a city, a sport) with secondo me, per me and penso che sia."
+    },
+    "de": {
+     "t": "Meinungen äußern",
+     "g": "Du leitest deine Meinung im Gespräch natürlich ein.",
+     "p": [
+      "Einfache Einstiege: secondo me, per me, a mio parere + normaler Satz: secondo me questo film è bellissimo.",
+      "Penso di / credo di + Infinitiv bei gleichem Subjekt: penso di avere ragione, credo di sì.",
+      "Penso che / credo che brauchen eine besondere Verbform (congiuntivo, kommt in B1). Lerne feste Teile: penso che sia vero."
+     ],
+     "q": "Secondo te, welche Jahreszeit ist die beste für Italien, und warum?",
+     "c": "Sag deine Meinung zu drei Dingen (ein Essen, eine Stadt, ein Sport) mit secondo me, per me und penso che sia."
+    },
+    "es": {
+     "t": "Expresar opiniones",
+     "g": "Introducir tu opinión de forma natural en una conversación.",
+     "p": [
+      "Inicios sencillos: secondo me, per me, a mio parere + frase normal: secondo me questo film è bellissimo.",
+      "Penso di / credo di + infinitivo con el mismo sujeto: penso di avere ragione, credo di sì.",
+      "Penso che / credo che piden una forma especial (congiuntivo, en B1). Aprende bloques fijos: penso che sia vero."
+     ],
+     "q": "Secondo te, ¿cuál es la mejor estación para visitar Italia y por qué?",
+     "c": "Da tu opinión sobre tres cosas (una comida, una ciudad, un deporte) con secondo me, per me y penso che sia."
+    },
+    "fr": {
+     "t": "Exprimer son opinion",
+     "g": "Introduire ton avis naturellement dans une conversation.",
+     "p": [
+      "Débuts simples : secondo me, per me, a mio parere + phrase normale : secondo me questo film è bellissimo.",
+      "Penso di / credo di + infinitif avec le même sujet : penso di avere ragione, credo di sì.",
+      "Penso che / credo che demandent une forme spéciale (congiuntivo, au B1). Retiens des blocs : penso che sia vero."
+     ],
+     "q": "Secondo te, quelle est la meilleure saison pour visiter l'Italie, et pourquoi ?",
+     "c": "Donne ton avis sur trois choses (un plat, une ville, un sport) avec secondo me, per me et penso che sia."
+    },
+    "it": {
+     "t": "Esprimere opinioni",
+     "g": "Introdurre la propria opinione in modo naturale in una conversazione.",
+     "p": [
+      "Formule semplici: secondo me, per me, a mio parere + frase normale: secondo me questo film è bellissimo.",
+      "Penso di / credo di + infinito quando il soggetto è lo stesso: penso di avere ragione, credo di sì.",
+      "Penso che / credo che vogliono il congiuntivo (lo vedremo al B1). Per ora impara blocchi fissi: penso che sia vero."
+     ],
+     "q": "Secondo te, qual è la stagione migliore per visitare l'Italia, e perché?",
+     "c": "Dai la tua opinione su tre cose (un piatto, una città, uno sport) con secondo me, per me e penso che sia."
+    },
+    "pt": {
+     "t": "Exprimir opiniões",
+     "g": "Introduzir a tua opinião de forma natural numa conversa.",
+     "p": [
+      "Inícios simples: secondo me, per me, a mio parere + frase normal: secondo me questo film è bellissimo.",
+      "Penso di / credo di + infinitivo com o mesmo sujeito: penso di avere ragione, credo di sì.",
+      "Penso che / credo che pedem uma forma especial (congiuntivo, no B1). Aprende blocos fixos: penso che sia vero."
+     ],
+     "q": "Secondo te, qual é a melhor estação para visitar Itália, e porquê?",
+     "c": "Dá a tua opinião sobre três coisas (um prato, uma cidade, um desporto) com secondo me, per me e penso che sia."
+    },
+    "pt_BR": {
+     "t": "Expressar opiniões",
+     "g": "Introduzir sua opinião de forma natural numa conversa.",
+     "p": [
+      "Começos simples: secondo me, per me, a mio parere + frase normal: secondo me questo film è bellissimo.",
+      "Penso di / credo di + infinitivo com o mesmo sujeito: penso di avere ragione, credo di sì.",
+      "Penso che / credo che pedem uma forma especial (congiuntivo, no B1). Aprenda blocos fixos: penso che sia vero."
+     ],
+     "q": "Secondo te, qual é a melhor estação para visitar a Itália, e por quê?",
+     "c": "Dê sua opinião sobre três coisas (um prato, uma cidade, um esporte) com secondo me, per me e penso che sia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "secondo me",
+      "ex": "Secondo me questo ristorante è il migliore."
+     },
+     {
+      "w": "per me",
+      "ex": "Per me la pizza è più buona a Napoli."
+     },
+     {
+      "w": "a mio parere",
+      "ex": "A mio parere il film è troppo lungo."
+     },
+     {
+      "w": "credo di sì",
+      "ex": "Domani piove? Credo di sì."
+     },
+     {
+      "w": "penso di",
+      "ex": "Penso di andare al mare a luglio."
+     },
+     {
+      "w": "secondo te",
+      "ex": "Secondo te, che regalo posso fare a Marta?"
+     }
+    ],
+    "gram": "Secondo me / per me + indicativo; penso di + infinito (stesso soggetto); penso che + congiuntivo: penso che sia giusto."
+   }
+  },
+  {
+   "d": 136,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: requests, relatives and opinions",
+     "g": "Recap the conditional, si, relative pronouns and indefinites.",
+     "p": [
+      "Conditional for politeness and dreams: potrebbe aiutarmi?, vorrei, dovresti, mi piacerebbe vivere al mare.",
+      "Si impersonale and passivante: qui si mangia bene, si vendono biglietti. Relatives: che, cui, chi, quello che.",
+      "Indefinites and partitives: qualcuno, niente, ogni, qualche + singular, alcuni + plural, del pane, delle mele."
+     ],
+     "q": "Can you describe the place where you live using si, che and cui in three sentences?",
+     "c": "Write a short paragraph about a café you like: what you would order, what si fa there, the person with whom you go."
+    },
+    "de": {
+     "t": "Wiederholung: Bitten, Relativsätze, Meinungen",
+     "g": "Du wiederholst Konditional, si, Relativpronomen und Indefinitpronomen.",
+     "p": [
+      "Konditional für Höflichkeit und Träume: potrebbe aiutarmi?, vorrei, dovresti, mi piacerebbe vivere al mare.",
+      "Unpersönliches und passivisches si: qui si mangia bene, si vendono biglietti. Relativpronomen: che, cui, chi, quello che.",
+      "Indefinita und Teilungsartikel: qualcuno, niente, ogni, qualche + Singular, alcuni + Plural, del pane, delle mele."
+     ],
+     "q": "Beschreibst du den Ort, an dem du wohnst, in drei Sätzen mit si, che und cui?",
+     "c": "Schreib einen kurzen Text über ein Café: was du bestellen würdest, was man dort macht, mit wem du hingehst."
+    },
+    "es": {
+     "t": "Repaso: peticiones, relativos y opiniones",
+     "g": "Repasar el condicional, el si, los relativos y los indefinidos.",
+     "p": [
+      "Condicional para cortesía y sueños: potrebbe aiutarmi?, vorrei, dovresti, mi piacerebbe vivere al mare.",
+      "Si impersonal y pasivo: qui si mangia bene, si vendono biglietti. Relativos: che, cui, chi, quello che.",
+      "Indefinidos y partitivos: qualcuno, niente, ogni, qualche + singular, alcuni + plural, del pane, delle mele."
+     ],
+     "q": "¿Puedes describir el lugar donde vives con si, che y cui en tres frases?",
+     "c": "Escribe un párrafo corto sobre un café que te gusta: qué pedirías, qué si fa allí y con quién vas."
+    },
+    "fr": {
+     "t": "Révision : demandes, relatifs et opinions",
+     "g": "Revoir le conditionnel, le si, les relatifs et les indéfinis.",
+     "p": [
+      "Conditionnel pour la politesse et les rêves : potrebbe aiutarmi ?, vorrei, dovresti, mi piacerebbe vivere al mare.",
+      "Si impersonnel et passif : qui si mangia bene, si vendono biglietti. Relatifs : che, cui, chi, quello che.",
+      "Indéfinis et partitifs : qualcuno, niente, ogni, qualche + singulier, alcuni + pluriel, del pane, delle mele."
+     ],
+     "q": "Peux-tu décrire l'endroit où tu vis en trois phrases avec si, che et cui ?",
+     "c": "Écris un court paragraphe sur un café que tu aimes : ce que tu commanderais, ce qu'on y fait, avec qui tu y vas."
+    },
+    "it": {
+     "t": "Ripasso: richieste, relativi e opinioni",
+     "g": "Ripassare condizionale, si, pronomi relativi e indefiniti.",
+     "p": [
+      "Condizionale per cortesia e sogni: potrebbe aiutarmi?, vorrei, dovresti, mi piacerebbe vivere al mare.",
+      "Si impersonale e passivante: qui si mangia bene, si vendono biglietti. Relativi: che, cui, chi, quello che.",
+      "Indefiniti e partitivi: qualcuno, niente, ogni, qualche + singolare, alcuni + plurale, del pane, delle mele."
+     ],
+     "q": "Sai descrivere il posto in cui vivi con si, che e cui in tre frasi?",
+     "c": "Scrivi un breve testo su un bar che ti piace: che cosa ordineresti, che cosa si fa lì, con chi ci vai."
+    },
+    "pt": {
+     "t": "Revisão: pedidos, relativos e opiniões",
+     "g": "Rever o condicional, o si, os relativos e os indefinidos.",
+     "p": [
+      "Condicional para cortesia e sonhos: potrebbe aiutarmi?, vorrei, dovresti, mi piacerebbe vivere al mare.",
+      "Si impessoal e passivo: qui si mangia bene, si vendono biglietti. Relativos: che, cui, chi, quello che.",
+      "Indefinidos e partitivos: qualcuno, niente, ogni, qualche + singular, alcuni + plural, del pane, delle mele."
+     ],
+     "q": "Consegues descrever o sítio onde vives com si, che e cui em três frases?",
+     "c": "Escreve um parágrafo curto sobre um café de que gostas: o que pedirias, o que si fa lá e com quem vais."
+    },
+    "pt_BR": {
+     "t": "Revisão: pedidos, relativos e opiniões",
+     "g": "Revisar o condicional, o si, os relativos e os indefinidos.",
+     "p": [
+      "Condicional para cortesia e sonhos: potrebbe aiutarmi?, vorrei, dovresti, mi piacerebbe vivere al mare.",
+      "Si impessoal e passivo: qui si mangia bene, si vendono biglietti. Relativos: che, cui, chi, quello che.",
+      "Indefinidos e partitivos: qualcuno, niente, ogni, qualche + singular, alcuni + plural, del pane, delle mele."
+     ],
+     "q": "Você consegue descrever o lugar onde mora com si, che e cui em três frases?",
+     "c": "Escreva um parágrafo curto sobre um café de que gosta: o que pediria, o que si fa lá e com quem você vai."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "potrebbe",
+      "ex": "Potrebbe ripetere il numero, per favore?"
+     },
+     {
+      "w": "si vendono",
+      "ex": "In questo negozio si vendono prodotti locali."
+     },
+     {
+      "w": "il bar in cui",
+      "ex": "Il bar in cui facciamo colazione è in piazza."
+     },
+     {
+      "w": "quello che preferisco",
+      "ex": "Quello che preferisco è il cornetto alla crema."
+     },
+     {
+      "w": "qualche volta",
+      "ex": "Qualche volta ci vado anche la sera."
+     },
+     {
+      "w": "delle paste",
+      "ex": "La domenica compriamo delle paste."
+     }
+    ],
+    "gram": "Ripasso: condizionale di cortesia, si impersonale/passivante, che/cui/chi, ogni/qualche + singolare, partitivi."
+   }
+  },
+  {
+   "d": 137,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Sports and fitness",
+     "g": "Talk about sports and fitness in Italian.",
+     "p": [
+      "Fare sport, fare nuoto, fare yoga; giocare a calcio, a tennis, a basket (giocare a + game). Correre is to run.",
+      "Andare in palestra (gym), allenarsi (to train), la partita (match), la squadra (team), tifare per (to support).",
+      "Calcio is Italy's passion: tifo per la Juventus, guardiamo la partita insieme. Il ciclismo and the Giro d'Italia too."
+     ],
+     "q": "Do you do any sport? How often, and do you tifare per a team?",
+     "c": "Write three sentences about your sporting week using fare, giocare a and andare in palestra."
+    },
+    "de": {
+     "t": "Sport und Fitness",
+     "g": "Du sprichst auf Italienisch über Sport und Fitness.",
+     "p": [
+      "Fare sport, fare nuoto, fare yoga; giocare a calcio, a tennis, a basket (giocare a + Spiel). Correre heißt laufen.",
+      "Andare in palestra (Fitnessstudio), allenarsi (trainieren), la partita (Spiel), la squadra (Mannschaft), tifare per (Fan sein).",
+      "Calcio ist Italiens Leidenschaft: tifo per la Juventus, guardiamo la partita insieme. Auch il ciclismo und der Giro d'Italia."
+     ],
+     "q": "Treibst du Sport? Wie oft, und tifi per eine Mannschaft?",
+     "c": "Schreib drei Sätze über deine Sportwoche mit fare, giocare a und andare in palestra."
+    },
+    "es": {
+     "t": "Deporte y forma física",
+     "g": "Hablar de deporte y ejercicio en italiano.",
+     "p": [
+      "Fare sport, fare nuoto, fare yoga; giocare a calcio, a tennis, a basket (giocare a + juego). Correre es correr.",
+      "Andare in palestra (gimnasio), allenarsi (entrenar), la partita (partido), la squadra (equipo), tifare per (ser hincha de).",
+      "El calcio es la pasión italiana: tifo per la Juventus, guardiamo la partita insieme. También il ciclismo y el Giro d'Italia."
+     ],
+     "q": "¿Haces algún deporte? ¿Con qué frecuencia? ¿Tifi per algún equipo?",
+     "c": "Escribe tres frases sobre tu semana deportiva con fare, giocare a y andare in palestra."
+    },
+    "fr": {
+     "t": "Sport et forme",
+     "g": "Parler de sport et de forme physique en italien.",
+     "p": [
+      "Fare sport, fare nuoto, fare yoga ; giocare a calcio, a tennis, a basket (giocare a + jeu). Correre veut dire courir.",
+      "Andare in palestra (salle de sport), allenarsi (s'entraîner), la partita (le match), la squadra (l'équipe), tifare per (supporter).",
+      "Le calcio est la passion italienne : tifo per la Juventus, guardiamo la partita insieme. Aussi il ciclismo et le Giro d'Italia."
+     ],
+     "q": "Fais-tu du sport ? À quelle fréquence, et tifi per une équipe ?",
+     "c": "Écris trois phrases sur ta semaine sportive avec fare, giocare a et andare in palestra."
+    },
+    "it": {
+     "t": "Sport e attività fisica",
+     "g": "Parlare di sport e di forma fisica.",
+     "p": [
+      "Fare sport, fare nuoto, fare yoga; giocare a calcio, a tennis, a basket (giocare a + gioco). Correre, camminare.",
+      "Andare in palestra, allenarsi, la partita, la squadra, tifare per una squadra, il tifoso.",
+      "Il calcio è una passione italiana: tifo per la Juventus, guardiamo la partita insieme. Amatissimi anche il ciclismo e il Giro d'Italia."
+     ],
+     "q": "Fai qualche sport? Quanto spesso? E tifi per una squadra?",
+     "c": "Scrivi tre frasi sulla tua settimana sportiva con fare, giocare a e andare in palestra."
+    },
+    "pt": {
+     "t": "Desporto e forma física",
+     "g": "Falar de desporto e exercício em italiano.",
+     "p": [
+      "Fare sport, fare nuoto, fare yoga; giocare a calcio, a tennis, a basket (giocare a + jogo). Correre é correr.",
+      "Andare in palestra (ginásio), allenarsi (treinar), la partita (jogo), la squadra (equipa), tifare per (ser adepto de).",
+      "O calcio é a paixão italiana: tifo per la Juventus, guardiamo la partita insieme. Também il ciclismo e o Giro d'Italia."
+     ],
+     "q": "Praticas algum desporto? Com que frequência? E tifi per alguma equipa?",
+     "c": "Escreve três frases sobre a tua semana desportiva com fare, giocare a e andare in palestra."
+    },
+    "pt_BR": {
+     "t": "Esporte e forma física",
+     "g": "Falar de esporte e exercício em italiano.",
+     "p": [
+      "Fare sport, fare nuoto, fare yoga; giocare a calcio, a tennis, a basket (giocare a + jogo). Correre é correr.",
+      "Andare in palestra (academia), allenarsi (treinar), la partita (partida), la squadra (time), tifare per (torcer para).",
+      "O calcio é a paixão italiana: tifo per la Juventus, guardiamo la partita insieme. Também il ciclismo e o Giro d'Italia."
+     ],
+     "q": "Você pratica algum esporte? Com que frequência? E tifi per algum time?",
+     "c": "Escreva três frases sobre sua semana esportiva com fare, giocare a e andare in palestra."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "giocare a calcio",
+      "ex": "Il sabato gioco a calcio con i colleghi."
+     },
+     {
+      "w": "andare in palestra",
+      "ex": "Vado in palestra tre volte alla settimana."
+     },
+     {
+      "w": "fare nuoto",
+      "ex": "D'estate faccio nuoto al lago."
+     },
+     {
+      "w": "la partita",
+      "ex": "Stasera guardiamo la partita al bar."
+     },
+     {
+      "w": "tifare per",
+      "ex": "Mio padre tifa per il Napoli da sempre."
+     },
+     {
+      "w": "allenarsi",
+      "ex": "Mi alleno ogni mattina prima del lavoro."
+     }
+    ],
+    "gram": "Fare + sport individuale (fare nuoto, fare yoga); giocare a + gioco di squadra (giocare a calcio); andare in palestra."
+   }
+  },
+  {
+   "d": 138,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Music and concerts",
+     "g": "Talk about music genres, instruments and your favourite songs.",
+     "p": [
+      "Genres: la musica pop, il rock, il jazz, la musica classica, l'opera, il rap. Mi piace il jazz, ascolto molto pop.",
+      "Instruments: suonare la chitarra, il pianoforte, la batteria, il violino. Suonare = play an instrument; giocare = play a game.",
+      "Concerts: andare a un concerto, il cantante, la band, il biglietto. La mia canzone preferita è..."
+     ],
+     "q": "What is your favourite song right now, and do you suonare an instrument?",
+     "c": "Write three sentences: your favourite genre, an instrument you play or would like to play, a concert you remember."
+    },
+    "de": {
+     "t": "Musik und Konzerte",
+     "g": "Du sprichst über Musikrichtungen, Instrumente und Lieblingslieder.",
+     "p": [
+      "Richtungen: la musica pop, il rock, il jazz, la musica classica, l'opera, il rap. Mi piace il jazz, ascolto molto pop.",
+      "Instrumente: suonare la chitarra, il pianoforte, la batteria, il violino. Suonare = ein Instrument spielen; giocare = ein Spiel spielen.",
+      "Konzerte: andare a un concerto, il cantante, la band, il biglietto. La mia canzone preferita è..."
+     ],
+     "q": "Was ist gerade dein Lieblingslied, und suoni ein Instrument?",
+     "c": "Schreib drei Sätze: deine Lieblingsmusik, ein Instrument, das du spielst oder spielen möchtest, ein Konzert, an das du dich erinnerst."
+    },
+    "es": {
+     "t": "Música y conciertos",
+     "g": "Hablar de géneros musicales, instrumentos y tus canciones favoritas.",
+     "p": [
+      "Géneros: la musica pop, il rock, il jazz, la musica classica, l'opera, il rap. Mi piace il jazz, ascolto molto pop.",
+      "Instrumentos: suonare la chitarra, il pianoforte, la batteria, il violino. Suonare = tocar; giocare = jugar.",
+      "Conciertos: andare a un concerto, il cantante, la band, il biglietto. La mia canzone preferita è..."
+     ],
+     "q": "¿Cuál es tu canción favorita ahora mismo y suoni algún instrumento?",
+     "c": "Escribe tres frases: tu género favorito, un instrumento que tocas o te gustaría tocar y un concierto que recuerdas."
+    },
+    "fr": {
+     "t": "Musique et concerts",
+     "g": "Parler de styles musicaux, d'instruments et de tes chansons préférées.",
+     "p": [
+      "Styles : la musica pop, il rock, il jazz, la musica classica, l'opera, il rap. Mi piace il jazz, ascolto molto pop.",
+      "Instruments : suonare la chitarra, il pianoforte, la batteria, il violino. Suonare = jouer d'un instrument ; giocare = jouer à un jeu.",
+      "Concerts : andare a un concerto, il cantante, la band, il biglietto. La mia canzone preferita è..."
+     ],
+     "q": "Quelle est ta chanson préférée en ce moment, et suoni un instrument ?",
+     "c": "Écris trois phrases : ton style préféré, un instrument que tu joues ou aimerais jouer, un concert dont tu te souviens."
+    },
+    "it": {
+     "t": "Musica e concerti",
+     "g": "Parlare di generi musicali, strumenti e canzoni preferite.",
+     "p": [
+      "Generi: la musica pop, il rock, il jazz, la musica classica, l'opera, il rap. Mi piace il jazz, ascolto molto pop.",
+      "Strumenti: suonare la chitarra, il pianoforte, la batteria, il violino. Si suona uno strumento, si gioca a un gioco.",
+      "Concerti: andare a un concerto, il cantante, la band, il biglietto. La mia canzone preferita è..."
+     ],
+     "q": "Qual è la tua canzone preferita in questo periodo? Suoni qualche strumento?",
+     "c": "Scrivi tre frasi: il tuo genere preferito, uno strumento che suoni o vorresti suonare, un concerto che ricordi."
+    },
+    "pt": {
+     "t": "Música e concertos",
+     "g": "Falar de géneros musicais, instrumentos e canções preferidas.",
+     "p": [
+      "Géneros: la musica pop, il rock, il jazz, la musica classica, l'opera, il rap. Mi piace il jazz, ascolto molto pop.",
+      "Instrumentos: suonare la chitarra, il pianoforte, la batteria, il violino. Suonare = tocar; giocare = jogar.",
+      "Concertos: andare a un concerto, il cantante, la band, il biglietto. La mia canzone preferita è..."
+     ],
+     "q": "Qual é a tua canção preferida neste momento, e suoni algum instrumento?",
+     "c": "Escreve três frases: o teu género preferido, um instrumento que tocas ou gostarias de tocar, um concerto de que te lembras."
+    },
+    "pt_BR": {
+     "t": "Música e shows",
+     "g": "Falar de gêneros musicais, instrumentos e músicas favoritas.",
+     "p": [
+      "Gêneros: la musica pop, il rock, il jazz, la musica classica, l'opera, il rap. Mi piace il jazz, ascolto molto pop.",
+      "Instrumentos: suonare la chitarra, il pianoforte, la batteria, il violino. Suonare = tocar; giocare = jogar.",
+      "Shows: andare a un concerto, il cantante, la band, il biglietto. La mia canzone preferita è..."
+     ],
+     "q": "Qual é sua música favorita no momento, e você suoni algum instrumento?",
+     "c": "Escreva três frases: seu gênero favorito, um instrumento que toca ou gostaria de tocar e um show de que se lembra."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "suonare la chitarra",
+      "ex": "Mio fratello suona la chitarra in una band."
+     },
+     {
+      "w": "il pianoforte",
+      "ex": "Da bambina ho studiato pianoforte per cinque anni."
+     },
+     {
+      "w": "andare a un concerto",
+      "ex": "Sabato andiamo a un concerto in piazza."
+     },
+     {
+      "w": "la canzone preferita",
+      "ex": "La mia canzone preferita è Azzurro."
+     },
+     {
+      "w": "il cantante",
+      "ex": "Il cantante ha una voce bellissima."
+     },
+     {
+      "w": "ascoltare musica",
+      "ex": "Ascolto musica quando cucino."
+     }
+    ],
+    "gram": "Suonare + strumento (suono il violino); giocare a + gioco. Mi piace / mi piacciono + genere o canzoni."
+   }
+  },
+  {
+   "d": 139,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Cinema and TV series",
+     "g": "Recommend a film, describe the plot and say what you liked.",
+     "p": [
+      "Types: un film comico, d'azione, giallo (crime), di fantascienza, d'animazione; una serie TV, la puntata (episode), la stagione.",
+      "Describe the plot in the present: parla di una ragazza che..., la storia è ambientata a Roma, il protagonista è...",
+      "Give your opinion: mi è piaciuto molto, la fine è sorprendente, te lo consiglio! Non mi è piaciuto per niente."
+     ],
+     "q": "What is the last film or series you watched? What is it about and would you recommend it?",
+     "c": "Write a mini review: title, genre, one sentence with parla di..., and your verdict with te lo consiglio or no."
+    },
+    "de": {
+     "t": "Kino und Serien",
+     "g": "Du empfiehlst einen Film, beschreibst die Handlung und sagst, was dir gefallen hat.",
+     "p": [
+      "Arten: un film comico, d'azione, giallo (Krimi), di fantascienza, d'animazione; una serie TV, la puntata (Folge), la stagione.",
+      "Handlung im Präsens: parla di una ragazza che..., la storia è ambientata a Roma, il protagonista è...",
+      "Meinung: mi è piaciuto molto, la fine è sorprendente, te lo consiglio! Non mi è piaciuto per niente."
+     ],
+     "q": "Welchen Film oder welche Serie hast du zuletzt gesehen? Worum geht es, und würdest du ihn empfehlen?",
+     "c": "Schreib eine Mini-Kritik: Titel, Genre, ein Satz mit parla di... und dein Urteil mit te lo consiglio oder nicht."
+    },
+    "es": {
+     "t": "Cine y series",
+     "g": "Recomendar una película, contar el argumento y decir qué te gustó.",
+     "p": [
+      "Tipos: un film comico, d'azione, giallo (policíaco), di fantascienza, d'animazione; una serie TV, la puntata (episodio), la stagione.",
+      "Cuenta el argumento en presente: parla di una ragazza che..., la storia è ambientata a Roma, il protagonista è...",
+      "Opina: mi è piaciuto molto, la fine è sorprendente, te lo consiglio! Non mi è piaciuto per niente."
+     ],
+     "q": "¿Cuál es la última película o serie que has visto? ¿De qué trata y la recomendarías?",
+     "c": "Escribe una mini reseña: título, género, una frase con parla di... y tu veredicto con te lo consiglio o no."
+    },
+    "fr": {
+     "t": "Cinéma et séries",
+     "g": "Recommander un film, raconter l'histoire et dire ce que tu as aimé.",
+     "p": [
+      "Genres : un film comico, d'azione, giallo (policier), di fantascienza, d'animazione ; una serie TV, la puntata (épisode), la stagione.",
+      "Raconte au présent : parla di una ragazza che..., la storia è ambientata a Roma, il protagonista è...",
+      "Donne ton avis : mi è piaciuto molto, la fine è sorprendente, te lo consiglio ! Non mi è piaciuto per niente."
+     ],
+     "q": "Quel est le dernier film ou la dernière série que tu as vu ? De quoi ça parle, et tu le conseilles ?",
+     "c": "Écris une mini critique : titre, genre, une phrase avec parla di... et ton verdict avec te lo consiglio ou non."
+    },
+    "it": {
+     "t": "Cinema e serie TV",
+     "g": "Consigliare un film, raccontare la trama e dire che cosa ti è piaciuto.",
+     "p": [
+      "Generi: un film comico, d'azione, giallo, di fantascienza, d'animazione; una serie TV, la puntata, la stagione.",
+      "La trama si racconta al presente: parla di una ragazza che..., la storia è ambientata a Roma, il protagonista è...",
+      "Il giudizio: mi è piaciuto molto, la fine è sorprendente, te lo consiglio! Non mi è piaciuto per niente."
+     ],
+     "q": "Qual è l'ultimo film o l'ultima serie che hai visto? Di che cosa parla e lo consiglieresti?",
+     "c": "Scrivi una mini recensione: titolo, genere, una frase con parla di... e il tuo giudizio con te lo consiglio o no."
+    },
+    "pt": {
+     "t": "Cinema e séries",
+     "g": "Recomendar um filme, contar o enredo e dizer o que gostaste.",
+     "p": [
+      "Tipos: un film comico, d'azione, giallo (policial), di fantascienza, d'animazione; una serie TV, la puntata (episódio), la stagione.",
+      "Conta o enredo no presente: parla di una ragazza che..., la storia è ambientata a Roma, il protagonista è...",
+      "Dá a tua opinião: mi è piaciuto molto, la fine è sorprendente, te lo consiglio! Non mi è piaciuto per niente."
+     ],
+     "q": "Qual foi o último filme ou série que viste? De que trata e recomendava-lo?",
+     "c": "Escreve uma mini crítica: título, género, uma frase com parla di... e o teu veredicto com te lo consiglio ou não."
+    },
+    "pt_BR": {
+     "t": "Cinema e séries",
+     "g": "Recomendar um filme, contar o enredo e dizer do que você gostou.",
+     "p": [
+      "Tipos: un film comico, d'azione, giallo (policial), di fantascienza, d'animazione; una serie TV, la puntata (episódio), la stagione.",
+      "Conte o enredo no presente: parla di una ragazza che..., la storia è ambientata a Roma, il protagonista è...",
+      "Dê sua opinião: mi è piaciuto molto, la fine è sorprendente, te lo consiglio! Non mi è piaciuto per niente."
+     ],
+     "q": "Qual foi o último filme ou série que você viu? Do que se trata e você recomendaria?",
+     "c": "Escreva uma mini crítica: título, gênero, uma frase com parla di... e seu veredito com te lo consiglio ou não."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parla di",
+      "ex": "Il film parla di due amici che aprono un ristorante."
+     },
+     {
+      "w": "è ambientato a",
+      "ex": "Il romanzo è ambientato a Napoli negli anni Cinquanta."
+     },
+     {
+      "w": "la puntata",
+      "ex": "Ieri sera ho visto tre puntate di fila."
+     },
+     {
+      "w": "il protagonista",
+      "ex": "Il protagonista è un giovane medico."
+     },
+     {
+      "w": "te lo consiglio",
+      "ex": "È un film bellissimo, te lo consiglio!"
+     },
+     {
+      "w": "un film giallo",
+      "ex": "Stasera guardiamo un film giallo?"
+     }
+    ],
+    "gram": "Per raccontare una trama si usa il presente: parla di..., è ambientato a...; giudizio con mi è piaciuto / non mi è piaciuto."
+   }
+  },
+  {
+   "d": 140,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Books and reading",
+     "g": "Talk about genres, authors and the book you are reading now.",
+     "p": [
+      "Genres: il romanzo (novel), il giallo (crime novel, from the yellow covers), la biografia, il fumetto (comic), la poesia.",
+      "Talking about it: sto leggendo un romanzo di..., l'autore / l'autrice, il personaggio, la pagina, il capitolo.",
+      "Famous Italian authors: Dante, Collodi (Pinocchio), Italo Calvino, Elsa Morante, Umberto Eco. Leggere is to read."
+     ],
+     "q": "What are you reading at the moment? Tell me with sto leggendo... and one sentence about the story.",
+     "c": "Write about a book you love: title, author, genre and why you liked it, in four sentences."
+    },
+    "de": {
+     "t": "Bücher und Lesen",
+     "g": "Du sprichst über Genres, Autoren und das Buch, das du gerade liest.",
+     "p": [
+      "Genres: il romanzo (Roman), il giallo (Krimi, wegen der gelben Umschläge), la biografia, il fumetto (Comic), la poesia.",
+      "Darüber sprechen: sto leggendo un romanzo di..., l'autore / l'autrice, il personaggio, la pagina, il capitolo.",
+      "Berühmte italienische Autoren: Dante, Collodi (Pinocchio), Italo Calvino, Elsa Morante, Umberto Eco. Leggere heißt lesen."
+     ],
+     "q": "Was liest du gerade? Erzähl mit sto leggendo... und einem Satz über die Geschichte.",
+     "c": "Schreib über ein Buch, das du liebst: Titel, Autor, Genre und warum es dir gefiel, in vier Sätzen."
+    },
+    "es": {
+     "t": "Libros y lectura",
+     "g": "Hablar de géneros, autores y del libro que estás leyendo.",
+     "p": [
+      "Géneros: il romanzo (novela), il giallo (novela policíaca, por sus tapas amarillas), la biografia, il fumetto (cómic), la poesia.",
+      "Para hablar de él: sto leggendo un romanzo di..., l'autore / l'autrice, il personaggio, la pagina, il capitolo.",
+      "Autores italianos famosos: Dante, Collodi (Pinocho), Italo Calvino, Elsa Morante, Umberto Eco. Leggere es leer."
+     ],
+     "q": "¿Qué estás leyendo ahora? Cuéntamelo con sto leggendo... y una frase sobre la historia.",
+     "c": "Escribe sobre un libro que te encanta: título, autor, género y por qué te gustó, en cuatro frases."
+    },
+    "fr": {
+     "t": "Livres et lecture",
+     "g": "Parler de genres, d'auteurs et du livre que tu lis en ce moment.",
+     "p": [
+      "Genres : il romanzo (roman), il giallo (polar, à cause des couvertures jaunes), la biografia, il fumetto (BD), la poesia.",
+      "Pour en parler : sto leggendo un romanzo di..., l'autore / l'autrice, il personaggio, la pagina, il capitolo.",
+      "Auteurs italiens célèbres : Dante, Collodi (Pinocchio), Italo Calvino, Elsa Morante, Umberto Eco. Leggere veut dire lire."
+     ],
+     "q": "Que lis-tu en ce moment ? Raconte avec sto leggendo... et une phrase sur l'histoire.",
+     "c": "Écris sur un livre que tu adores : titre, auteur, genre et pourquoi il t'a plu, en quatre phrases."
+    },
+    "it": {
+     "t": "Libri e lettura",
+     "g": "Parlare di generi, autori e del libro che stai leggendo.",
+     "p": [
+      "Generi: il romanzo, il giallo (si chiama così per le copertine gialle di una famosa collana), la biografia, il fumetto, la poesia.",
+      "Per parlarne: sto leggendo un romanzo di..., l'autore / l'autrice, il personaggio, la pagina, il capitolo.",
+      "Autori italiani famosi: Dante, Collodi (Pinocchio), Italo Calvino, Elsa Morante, Umberto Eco."
+     ],
+     "q": "Che cosa stai leggendo in questo periodo? Rispondi con sto leggendo... e una frase sulla storia.",
+     "c": "Scrivi di un libro che ami: titolo, autore, genere e perché ti è piaciuto, in quattro frasi."
+    },
+    "pt": {
+     "t": "Livros e leitura",
+     "g": "Falar de géneros, autores e do livro que estás a ler.",
+     "p": [
+      "Géneros: il romanzo (romance), il giallo (policial, pelas capas amarelas), la biografia, il fumetto (banda desenhada), la poesia.",
+      "Para falar dele: sto leggendo un romanzo di..., l'autore / l'autrice, il personaggio, la pagina, il capitolo.",
+      "Autores italianos famosos: Dante, Collodi (Pinóquio), Italo Calvino, Elsa Morante, Umberto Eco. Leggere é ler."
+     ],
+     "q": "O que estás a ler neste momento? Conta com sto leggendo... e uma frase sobre a história.",
+     "c": "Escreve sobre um livro de que gostas muito: título, autor, género e porque gostaste, em quatro frases."
+    },
+    "pt_BR": {
+     "t": "Livros e leitura",
+     "g": "Falar de gêneros, autores e do livro que você está lendo.",
+     "p": [
+      "Gêneros: il romanzo (romance), il giallo (policial, pelas capas amarelas), la biografia, il fumetto (quadrinhos), la poesia.",
+      "Para falar dele: sto leggendo un romanzo di..., l'autore / l'autrice, il personaggio, la pagina, il capitolo.",
+      "Autores italianos famosos: Dante, Collodi (Pinóquio), Italo Calvino, Elsa Morante, Umberto Eco. Leggere é ler."
+     ],
+     "q": "O que você está lendo agora? Conte com sto leggendo... e uma frase sobre a história.",
+     "c": "Escreva sobre um livro que você ama: título, autor, gênero e por que gostou, em quatro frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sto leggendo",
+      "ex": "Sto leggendo un romanzo di Italo Calvino."
+     },
+     {
+      "w": "il romanzo",
+      "ex": "È un romanzo lungo ma molto avvincente."
+     },
+     {
+      "w": "il giallo",
+      "ex": "D'estate leggo sempre un giallo in spiaggia."
+     },
+     {
+      "w": "l'autrice",
+      "ex": "L'autrice è nata a Roma nel 1912."
+     },
+     {
+      "w": "il personaggio",
+      "ex": "Il personaggio che preferisco è il nonno."
+     },
+     {
+      "w": "il fumetto",
+      "ex": "Da piccolo leggevo un fumetto ogni settimana."
+     }
+    ],
+    "gram": "Stare + gerundio per l'azione in corso: sto leggendo, stai scrivendo. Un libro di + autore: un romanzo di Calvino."
+   }
+  }
+ ]
+}

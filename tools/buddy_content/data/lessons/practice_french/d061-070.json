@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 61,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The body",
+     "g": "Name the main parts of the body in French and say where it hurts with j'ai mal à.",
+     "p": [
+      "La tête, le bras, la jambe, le pied, la main, le dos: learn each noun with its article.",
+      "J'ai mal à + body part: à + le becomes au (j'ai mal au dos), à + les becomes aux (j'ai mal aux pieds).",
+      "With la and l' nothing changes: j'ai mal à la tête, j'ai mal à l'oreille."
+     ],
+     "q": "Point to three parts of your body and tell me their names in French.",
+     "c": "Say in French where you would feel sore after a long walk, using j'ai mal au and j'ai mal aux."
+    },
+    "de": {
+     "t": "Der Körper",
+     "g": "Du benennst die wichtigsten Körperteile auf Französisch und sagst mit j'ai mal à, wo es wehtut.",
+     "p": [
+      "La tête, le bras, la jambe, le pied, la main, le dos: lerne jedes Nomen mit seinem Artikel.",
+      "J'ai mal à + Körperteil: à + le wird zu au (j'ai mal au dos), à + les zu aux (j'ai mal aux pieds).",
+      "Bei la und l' ändert sich nichts: j'ai mal à la tête, j'ai mal à l'oreille."
+     ],
+     "q": "Zeig auf drei Körperteile und nenn mir ihre französischen Namen.",
+     "c": "Sag auf Französisch, was dir nach einer langen Wanderung wehtun könnte, mit j'ai mal au und aux."
+    },
+    "es": {
+     "t": "El cuerpo",
+     "g": "Nombra las partes principales del cuerpo en francés y di dónde te duele con j'ai mal à.",
+     "p": [
+      "La tête, le bras, la jambe, le pied, la main, le dos: aprende cada sustantivo con su artículo.",
+      "J'ai mal à + parte del cuerpo: à + le se vuelve au (j'ai mal au dos) y à + les, aux (j'ai mal aux pieds).",
+      "Con la y l' no cambia nada: j'ai mal à la tête, j'ai mal à l'oreille."
+     ],
+     "q": "Señala tres partes de tu cuerpo y dime cómo se llaman en francés.",
+     "c": "Di en francés qué te dolería tras una larga caminata, usando j'ai mal au y j'ai mal aux."
+    },
+    "fr": {
+     "t": "Le corps",
+     "g": "Nommer les parties du corps et dire où on a mal avec j'ai mal à.",
+     "p": [
+      "La tête, le bras, la jambe, le pied, la main, le dos : apprends chaque nom avec son article.",
+      "J'ai mal à + partie du corps : à + le devient au (j'ai mal au dos), à + les devient aux (j'ai mal aux pieds).",
+      "Avec la et l', rien ne change : j'ai mal à la tête, j'ai mal à l'oreille."
+     ],
+     "q": "Montre trois parties de ton corps et dis-moi leur nom en français.",
+     "c": "Dis où tu aurais mal après une longue marche, avec j'ai mal au et j'ai mal aux."
+    },
+    "it": {
+     "t": "Il corpo",
+     "g": "Impara a nominare le parti del corpo in francese e a dire dove ti fa male con j'ai mal à.",
+     "p": [
+      "La tête, le bras, la jambe, le pied, la main, le dos: impara ogni nome con il suo articolo.",
+      "J'ai mal à + parte del corpo: à + le diventa au (j'ai mal au dos), à + les diventa aux (j'ai mal aux pieds).",
+      "Con la e l' non cambia nulla: j'ai mal à la tête, j'ai mal à l'oreille."
+     ],
+     "q": "Indica tre parti del tuo corpo e dimmi come si chiamano in francese.",
+     "c": "Di' in francese dove ti farebbe male dopo una lunga camminata, con j'ai mal au e j'ai mal aux."
+    },
+    "pt": {
+     "t": "O corpo",
+     "g": "Nomear as partes principais do corpo em francês e dizer onde dói com j'ai mal à.",
+     "p": [
+      "La tête, le bras, la jambe, le pied, la main, le dos: aprende cada nome com o seu artigo.",
+      "J'ai mal à + parte do corpo: à + le dá au (j'ai mal au dos) e à + les dá aux (j'ai mal aux pieds).",
+      "Com la e l' nada muda: j'ai mal à la tête, j'ai mal à l'oreille."
+     ],
+     "q": "Aponta para três partes do teu corpo e diz-me os nomes em francês.",
+     "c": "Diz em francês onde te doeria depois de uma longa caminhada, com j'ai mal au e j'ai mal aux."
+    },
+    "pt_BR": {
+     "t": "O corpo",
+     "g": "Nomear as partes principais do corpo em francês e dizer onde dói com j'ai mal à.",
+     "p": [
+      "La tête, le bras, la jambe, le pied, la main, le dos: aprenda cada substantivo com o artigo.",
+      "J'ai mal à + parte do corpo: à + le vira au (j'ai mal au dos) e à + les vira aux (j'ai mal aux pieds).",
+      "Com la e l' nada muda: j'ai mal à la tête, j'ai mal à l'oreille."
+     ],
+     "q": "Aponte para três partes do seu corpo e me diga os nomes em francês.",
+     "c": "Diga em francês onde doeria depois de uma longa caminhada, usando j'ai mal au e j'ai mal aux."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la tête",
+      "ex": "Le chapeau est sur ma tête."
+     },
+     {
+      "w": "le bras",
+      "ex": "Il porte son sac sur le bras."
+     },
+     {
+      "w": "la jambe",
+      "ex": "Après le sport, j'ai mal aux jambes."
+     },
+     {
+      "w": "le dos",
+      "ex": "J'ai mal au dos ce matin."
+     },
+     {
+      "w": "la main",
+      "ex": "Lève la main, s'il te plaît."
+     },
+     {
+      "w": "le pied",
+      "ex": "Je vais au travail à pied."
+     }
+    ],
+    "gram": "J'ai mal à + partie du corps : au dos, à la tête, à l'oreille, aux pieds (à + le = au, à + les = aux)."
+   }
+  },
+  {
+   "d": 62,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the pharmacy",
+     "g": "Explain simple symptoms at a French pharmacy and ask for something for a cold.",
+     "p": [
+      "French pharmacists give friendly advice: start with bonjour, then j'ai un rhume or je tousse.",
+      "Useful symptoms: j'ai de la fièvre, j'ai mal à la gorge, j'ai le nez qui coule.",
+      "Ask: vous avez quelque chose contre le rhume? and listen for the advice; for anything serious, see a doctor."
+     ],
+     "q": "Imagine you have a cold: how would you describe it to the pharmacist in French?",
+     "c": "Prepare two French sentences you could say at a pharmacy: one symptom and one request."
+    },
+    "de": {
+     "t": "In der Apotheke",
+     "g": "Du beschreibst in einer französischen Apotheke einfache Beschwerden und fragst nach etwas gegen Erkältung.",
+     "p": [
+      "Französische Apotheker beraten gern: beginne mit bonjour, dann j'ai un rhume oder je tousse.",
+      "Nützliche Beschwerden: j'ai de la fièvre, j'ai mal à la gorge, j'ai le nez qui coule.",
+      "Frag: vous avez quelque chose contre le rhume? Bei Ernsterem geh bitte zum Arzt."
+     ],
+     "q": "Stell dir vor, du bist erkältet: wie beschreibst du das dem Apotheker auf Französisch?",
+     "c": "Bereite zwei Sätze für die Apotheke vor: eine Beschwerde und eine Bitte."
+    },
+    "es": {
+     "t": "En la farmacia",
+     "g": "Explica síntomas sencillos en una farmacia francesa y pide algo para el resfriado.",
+     "p": [
+      "Los farmacéuticos franceses aconsejan con gusto: empieza con bonjour y luego j'ai un rhume o je tousse.",
+      "Síntomas útiles: j'ai de la fièvre, j'ai mal à la gorge, j'ai le nez qui coule.",
+      "Pregunta: vous avez quelque chose contre le rhume? Para algo serio, consulta a un médico."
+     ],
+     "q": "Imagina que tienes un resfriado: ¿cómo se lo describirías al farmacéutico en francés?",
+     "c": "Prepara dos frases en francés para la farmacia: un síntoma y una petición."
+    },
+    "fr": {
+     "t": "À la pharmacie",
+     "g": "Expliquer des symptômes simples et demander quelque chose contre le rhume.",
+     "p": [
+      "Le pharmacien donne volontiers des conseils : commence par bonjour, puis j'ai un rhume ou je tousse.",
+      "Symptômes utiles : j'ai de la fièvre, j'ai mal à la gorge, j'ai le nez qui coule.",
+      "Demande : vous avez quelque chose contre le rhume ? Pour un problème sérieux, consulte un médecin."
+     ],
+     "q": "Imagine que tu as un rhume : comment tu l'expliques au pharmacien ?",
+     "c": "Prépare deux phrases pour la pharmacie : un symptôme et une demande."
+    },
+    "it": {
+     "t": "In farmacia",
+     "g": "Spiega sintomi semplici in una farmacia francese e chiedi qualcosa per il raffreddore.",
+     "p": [
+      "I farmacisti francesi danno volentieri consigli: inizia con bonjour, poi j'ai un rhume o je tousse.",
+      "Sintomi utili: j'ai de la fièvre, j'ai mal à la gorge, j'ai le nez qui coule.",
+      "Chiedi: vous avez quelque chose contre le rhume? Per qualcosa di serio, rivolgiti a un medico."
+     ],
+     "q": "Immagina di avere il raffreddore: come lo descriveresti al farmacista in francese?",
+     "c": "Prepara due frasi in francese per la farmacia: un sintomo e una richiesta."
+    },
+    "pt": {
+     "t": "Na farmácia",
+     "g": "Explicar sintomas simples numa farmácia francesa e pedir algo para a constipação.",
+     "p": [
+      "Os farmacêuticos franceses aconselham de bom grado: começa com bonjour e depois j'ai un rhume ou je tousse.",
+      "Sintomas úteis: j'ai de la fièvre, j'ai mal à la gorge, j'ai le nez qui coule.",
+      "Pergunta: vous avez quelque chose contre le rhume? Para algo sério, consulta um médico."
+     ],
+     "q": "Imagina que estás constipado: como o explicarias ao farmacêutico em francês?",
+     "c": "Prepara duas frases em francês para a farmácia: um sintoma e um pedido."
+    },
+    "pt_BR": {
+     "t": "Na farmácia",
+     "g": "Explicar sintomas simples numa farmácia francesa e pedir algo para o resfriado.",
+     "p": [
+      "Os farmacêuticos franceses adoram aconselhar: comece com bonjour e depois j'ai un rhume ou je tousse.",
+      "Sintomas úteis: j'ai de la fièvre, j'ai mal à la gorge, j'ai le nez qui coule.",
+      "Pergunte: vous avez quelque chose contre le rhume? Para algo sério, procure um médico."
+     ],
+     "q": "Imagine que você está resfriado: como explicaria isso ao farmacêutico em francês?",
+     "c": "Prepare duas frases em francês para a farmácia: um sintoma e um pedido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un rhume",
+      "ex": "J'ai un rhume depuis hier."
+     },
+     {
+      "w": "tousser",
+      "ex": "Je tousse un peu la nuit."
+     },
+     {
+      "w": "la gorge",
+      "ex": "J'ai mal à la gorge."
+     },
+     {
+      "w": "la fièvre",
+      "ex": "Il a de la fièvre ce soir."
+     },
+     {
+      "w": "un médicament",
+      "ex": "Ce médicament est pour la toux."
+     },
+     {
+      "w": "le pharmacien",
+      "ex": "Le pharmacien me donne un conseil."
+     }
+    ],
+    "gram": "Avoir + de la / du : j'ai de la fièvre, j'ai du mal à dormir. Demander : vous avez quelque chose contre le rhume ?"
+   }
+  },
+  {
+   "d": 63,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Jobs and professions",
+     "g": "Say what you and others do for a living, with no article after être.",
+     "p": [
+      "In French you say je suis professeur, il est ingénieur: no un or une after être for a job.",
+      "Many jobs change for women: un acteur, une actrice; un infirmier, une infirmière; un vendeur, une vendeuse.",
+      "Ask: qu'est-ce que tu fais dans la vie? Answer: je suis... or je travaille dans..."
+     ],
+     "q": "What do you do in life? Tell me in French, without an article.",
+     "c": "Name the jobs of three people you know in French, for example ma sœur est infirmière."
+    },
+    "de": {
+     "t": "Berufe",
+     "g": "Du sagst, was du und andere beruflich machen, ohne Artikel nach être.",
+     "p": [
+      "Auf Französisch sagt man je suis professeur, il est ingénieur: kein un oder une nach être beim Beruf.",
+      "Viele Berufe haben eine weibliche Form: acteur, actrice; infirmier, infirmière; vendeur, vendeuse.",
+      "Frag: qu'est-ce que tu fais dans la vie? Antworte: je suis... oder je travaille dans..."
+     ],
+     "q": "Was machst du beruflich? Sag es mir auf Französisch, ohne Artikel.",
+     "c": "Nenne die Berufe von drei Menschen, die du kennst, z. B. ma sœur est infirmière."
+    },
+    "es": {
+     "t": "Trabajos y profesiones",
+     "g": "Di a qué te dedicas tú y otras personas, sin artículo después de être.",
+     "p": [
+      "En francés se dice je suis professeur, il est ingénieur: sin un ni une tras être con una profesión.",
+      "Muchas profesiones cambian en femenino: acteur, actrice; infirmier, infirmière; vendeur, vendeuse.",
+      "Pregunta: qu'est-ce que tu fais dans la vie? Responde: je suis... o je travaille dans..."
+     ],
+     "q": "¿A qué te dedicas? Dímelo en francés, sin artículo.",
+     "c": "Di en francés las profesiones de tres personas que conoces, por ejemplo ma sœur est infirmière."
+    },
+    "fr": {
+     "t": "Les métiers",
+     "g": "Dire ce que toi et les autres faites dans la vie, sans article après être.",
+     "p": [
+      "On dit je suis professeur, il est ingénieur : pas de un ou une après être pour un métier.",
+      "Beaucoup de métiers ont un féminin : acteur, actrice ; infirmier, infirmière ; vendeur, vendeuse.",
+      "Demande : qu'est-ce que tu fais dans la vie ? Réponds : je suis... ou je travaille dans..."
+     ],
+     "q": "Qu'est-ce que tu fais dans la vie ? Réponds sans article.",
+     "c": "Donne le métier de trois personnes que tu connais, par exemple ma sœur est infirmière."
+    },
+    "it": {
+     "t": "Lavori e professioni",
+     "g": "Di' che lavoro fai tu e fanno gli altri, senza articolo dopo être.",
+     "p": [
+      "In francese si dice je suis professeur, il est ingénieur: niente un o une dopo être per il mestiere.",
+      "Molti mestieri cambiano al femminile: acteur, actrice; infirmier, infirmière; vendeur, vendeuse.",
+      "Chiedi: qu'est-ce que tu fais dans la vie? Rispondi: je suis... o je travaille dans..."
+     ],
+     "q": "Che lavoro fai? Dimmelo in francese, senza articolo.",
+     "c": "Di' in francese il lavoro di tre persone che conosci, per esempio ma sœur est infirmière."
+    },
+    "pt": {
+     "t": "Profissões",
+     "g": "Dizer o que tu e os outros fazem na vida, sem artigo depois de être.",
+     "p": [
+      "Em francês diz-se je suis professeur, il est ingénieur: sem un nem une depois de être com a profissão.",
+      "Muitas profissões mudam no feminino: acteur, actrice; infirmier, infirmière; vendeur, vendeuse.",
+      "Pergunta: qu'est-ce que tu fais dans la vie? Responde: je suis... ou je travaille dans..."
+     ],
+     "q": "O que fazes na vida? Diz-me em francês, sem artigo.",
+     "c": "Diz em francês a profissão de três pessoas que conheces, por exemplo ma sœur est infirmière."
+    },
+    "pt_BR": {
+     "t": "Profissões",
+     "g": "Dizer o que você e os outros fazem na vida, sem artigo depois de être.",
+     "p": [
+      "Em francês se diz je suis professeur, il est ingénieur: sem un nem une depois de être com profissão.",
+      "Muitas profissões mudam no feminino: acteur, actrice; infirmier, infirmière; vendeur, vendeuse.",
+      "Pergunte: qu'est-ce que tu fais dans la vie? Responda: je suis... ou je travaille dans..."
+     ],
+     "q": "O que você faz na vida? Me diga em francês, sem artigo.",
+     "c": "Diga em francês a profissão de três pessoas que você conhece, por exemplo ma sœur est infirmière."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le professeur",
+      "ex": "Mon père est professeur de maths."
+     },
+     {
+      "w": "l'ingénieur",
+      "ex": "Elle est ingénieure dans une grande entreprise."
+     },
+     {
+      "w": "l'infirmière",
+      "ex": "Ma sœur est infirmière à l'hôpital."
+     },
+     {
+      "w": "le vendeur",
+      "ex": "Le vendeur est très sympa."
+     },
+     {
+      "w": "le cuisinier",
+      "ex": "Il est cuisinier dans un restaurant."
+     },
+     {
+      "w": "travailler dans",
+      "ex": "Je travaille dans une banque."
+     }
+    ],
+    "gram": "Être + métier sans article : je suis médecin. Mais avec un adjectif : c'est un bon médecin."
+   }
+  },
+  {
+   "d": 64,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At work and school",
+     "g": "Talk about your workplace or school and what you do there every day.",
+     "p": [
+      "Work words: le bureau, les collègues, le patron, une réunion, une pause café.",
+      "School words: les cours, le prof, les devoirs, un examen, la cantine.",
+      "Use the present: je travaille de 9 h à 17 h, j'ai cours le lundi, je déjeune avec mes collègues."
+     ],
+     "q": "Describe your workplace or school in three French sentences.",
+     "c": "Write down your schedule for tomorrow in French: when you start, one task and when you finish."
+    },
+    "de": {
+     "t": "Arbeit und Schule",
+     "g": "Du sprichst über deinen Arbeitsplatz oder deine Schule und was du dort jeden Tag machst.",
+     "p": [
+      "Arbeit: le bureau, les collègues, le patron, une réunion, une pause café.",
+      "Schule: les cours, le prof, les devoirs, un examen, la cantine.",
+      "Nutze das Präsens: je travaille de 9 h à 17 h, j'ai cours le lundi, je déjeune avec mes collègues."
+     ],
+     "q": "Beschreib deinen Arbeitsplatz oder deine Schule in drei französischen Sätzen.",
+     "c": "Schreib deinen Plan für morgen auf Französisch: Beginn, eine Aufgabe und Ende."
+    },
+    "es": {
+     "t": "En el trabajo y en clase",
+     "g": "Habla de tu trabajo o tu escuela y de lo que haces allí cada día.",
+     "p": [
+      "Trabajo: le bureau, les collègues, le patron, une réunion, une pause café.",
+      "Escuela: les cours, le prof, les devoirs, un examen, la cantine.",
+      "Usa el presente: je travaille de 9 h à 17 h, j'ai cours le lundi, je déjeune avec mes collègues."
+     ],
+     "q": "Describe tu trabajo o tu escuela en tres frases en francés.",
+     "c": "Escribe en francés tu horario de mañana: cuándo empiezas, una tarea y cuándo terminas."
+    },
+    "fr": {
+     "t": "Au travail et à l'école",
+     "g": "Parler de ton lieu de travail ou de ton école et de ce que tu y fais.",
+     "p": [
+      "Au travail : le bureau, les collègues, le patron, une réunion, une pause café.",
+      "À l'école : les cours, le prof, les devoirs, un examen, la cantine.",
+      "Au présent : je travaille de 9 h à 17 h, j'ai cours le lundi, je déjeune avec mes collègues."
+     ],
+     "q": "Décris ton travail ou ton école en trois phrases.",
+     "c": "Écris ton emploi du temps de demain : le début, une tâche et la fin."
+    },
+    "it": {
+     "t": "Al lavoro e a scuola",
+     "g": "Parla del tuo posto di lavoro o della tua scuola e di cosa fai lì ogni giorno.",
+     "p": [
+      "Lavoro: le bureau, les collègues, le patron, une réunion, une pause café.",
+      "Scuola: les cours, le prof, les devoirs, un examen, la cantine.",
+      "Usa il presente: je travaille de 9 h à 17 h, j'ai cours le lundi, je déjeune avec mes collègues."
+     ],
+     "q": "Descrivi il tuo lavoro o la tua scuola in tre frasi in francese.",
+     "c": "Scrivi in francese il tuo programma di domani: inizio, un compito e fine."
+    },
+    "pt": {
+     "t": "No trabalho e na escola",
+     "g": "Falar do teu local de trabalho ou da tua escola e do que fazes lá todos os dias.",
+     "p": [
+      "Trabalho: le bureau, les collègues, le patron, une réunion, une pause café.",
+      "Escola: les cours, le prof, les devoirs, un examen, la cantine.",
+      "Usa o presente: je travaille de 9 h à 17 h, j'ai cours le lundi, je déjeune avec mes collègues."
+     ],
+     "q": "Descreve o teu trabalho ou a tua escola em três frases em francês.",
+     "c": "Escreve em francês o teu horário de amanhã: quando começas, uma tarefa e quando acabas."
+    },
+    "pt_BR": {
+     "t": "No trabalho e na escola",
+     "g": "Falar do seu trabalho ou da sua escola e do que você faz lá todo dia.",
+     "p": [
+      "Trabalho: le bureau, les collègues, le patron, une réunion, une pause café.",
+      "Escola: les cours, le prof, les devoirs, un examen, la cantine.",
+      "Use o presente: je travaille de 9 h à 17 h, j'ai cours le lundi, je déjeune avec mes collègues."
+     ],
+     "q": "Descreva seu trabalho ou sua escola em três frases em francês.",
+     "c": "Escreva em francês seu horário de amanhã: quando começa, uma tarefa e quando termina."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le bureau",
+      "ex": "Je suis au bureau à huit heures."
+     },
+     {
+      "w": "les collègues",
+      "ex": "Mes collègues sont très sympas."
+     },
+     {
+      "w": "une réunion",
+      "ex": "J'ai une réunion à dix heures."
+     },
+     {
+      "w": "les cours",
+      "ex": "Les cours commencent à neuf heures."
+     },
+     {
+      "w": "les devoirs",
+      "ex": "Le soir, je fais mes devoirs."
+     },
+     {
+      "w": "un examen",
+      "ex": "Demain, j'ai un examen de français."
+     }
+    ],
+    "gram": "Horaires : je travaille de 9 h à 17 h. Avoir cours : j'ai cours le lundi. Au bureau, à l'école, à la fac."
+   }
+  },
+  {
+   "d": 65,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Animals and pets",
+     "g": "Name common animals and describe your pet or a favourite animal in French.",
+     "p": [
+      "Pets and farm animals: le chien, le chat, le lapin, le poisson, le cheval, la vache.",
+      "Describe with avoir and être: j'ai un chat, il s'appelle Félix, il est petit et très mignon.",
+      "Careful: le cheval becomes les chevaux in the plural, like le journal, les journaux."
+     ],
+     "q": "Do you have a pet, or which animal do you like most? Describe it in French.",
+     "c": "Describe an animal in three French sentences: its name, its colour and its character."
+    },
+    "de": {
+     "t": "Tiere und Haustiere",
+     "g": "Du benennst häufige Tiere und beschreibst dein Haustier oder dein Lieblingstier auf Französisch.",
+     "p": [
+      "Haus- und Hoftiere: le chien, le chat, le lapin, le poisson, le cheval, la vache.",
+      "Beschreiben mit avoir und être: j'ai un chat, il s'appelle Félix, il est petit et très mignon.",
+      "Achtung: le cheval wird im Plural zu les chevaux, wie le journal, les journaux."
+     ],
+     "q": "Hast du ein Haustier oder welches Tier magst du am liebsten? Beschreib es auf Französisch.",
+     "c": "Beschreib ein Tier in drei Sätzen: Name, Farbe und Charakter."
+    },
+    "es": {
+     "t": "Animales y mascotas",
+     "g": "Nombra animales comunes y describe tu mascota o tu animal favorito en francés.",
+     "p": [
+      "Mascotas y animales de granja: le chien, le chat, le lapin, le poisson, le cheval, la vache.",
+      "Describe con avoir y être: j'ai un chat, il s'appelle Félix, il est petit et très mignon.",
+      "Ojo: le cheval en plural es les chevaux, como le journal, les journaux."
+     ],
+     "q": "¿Tienes mascota o qué animal te gusta más? Descríbelo en francés.",
+     "c": "Describe un animal en tres frases en francés: su nombre, su color y su carácter."
+    },
+    "fr": {
+     "t": "Les animaux",
+     "g": "Nommer des animaux courants et décrire ton animal de compagnie ou ton animal préféré.",
+     "p": [
+      "Animaux familiers et de la ferme : le chien, le chat, le lapin, le poisson, le cheval, la vache.",
+      "Décris avec avoir et être : j'ai un chat, il s'appelle Félix, il est petit et très mignon.",
+      "Attention : le cheval donne les chevaux au pluriel, comme le journal, les journaux."
+     ],
+     "q": "Tu as un animal, ou quel animal tu préfères ? Décris-le.",
+     "c": "Décris un animal en trois phrases : son nom, sa couleur et son caractère."
+    },
+    "it": {
+     "t": "Animali domestici",
+     "g": "Nomina animali comuni e descrivi il tuo animale domestico o il tuo animale preferito in francese.",
+     "p": [
+      "Animali domestici e della fattoria: le chien, le chat, le lapin, le poisson, le cheval, la vache.",
+      "Descrivi con avoir ed être: j'ai un chat, il s'appelle Félix, il est petit et très mignon.",
+      "Attenzione: le cheval al plurale diventa les chevaux, come le journal, les journaux."
+     ],
+     "q": "Hai un animale o qual è il tuo animale preferito? Descrivilo in francese.",
+     "c": "Descrivi un animale in tre frasi in francese: nome, colore e carattere."
+    },
+    "pt": {
+     "t": "Animais de estimação",
+     "g": "Nomear animais comuns e descrever o teu animal de estimação ou o teu animal preferido.",
+     "p": [
+      "Animais de casa e da quinta: le chien, le chat, le lapin, le poisson, le cheval, la vache.",
+      "Descreve com avoir e être: j'ai un chat, il s'appelle Félix, il est petit et très mignon.",
+      "Atenção: le cheval no plural é les chevaux, como le journal, les journaux."
+     ],
+     "q": "Tens um animal ou qual é o teu animal preferido? Descreve-o em francês.",
+     "c": "Descreve um animal em três frases em francês: o nome, a cor e o feitio."
+    },
+    "pt_BR": {
+     "t": "Animais de estimação",
+     "g": "Nomear animais comuns e descrever seu bichinho ou seu animal favorito em francês.",
+     "p": [
+      "Animais de casa e da fazenda: le chien, le chat, le lapin, le poisson, le cheval, la vache.",
+      "Descreva com avoir e être: j'ai un chat, il s'appelle Félix, il est petit et très mignon.",
+      "Atenção: le cheval no plural vira les chevaux, como le journal, les journaux."
+     ],
+     "q": "Você tem um bichinho ou qual animal prefere? Descreva em francês.",
+     "c": "Descreva um animal em três frases em francês: o nome, a cor e o jeito dele."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le chien",
+      "ex": "Mon chien adore jouer dans le jardin."
+     },
+     {
+      "w": "le chat",
+      "ex": "Le chat dort sur le canapé."
+     },
+     {
+      "w": "le cheval",
+      "ex": "Les chevaux courent dans le champ."
+     },
+     {
+      "w": "le lapin",
+      "ex": "Ma fille a un petit lapin blanc."
+     },
+     {
+      "w": "l'oiseau",
+      "ex": "Un oiseau chante devant ma fenêtre."
+     },
+     {
+      "w": "mignon, mignonne",
+      "ex": "Ton chat est vraiment mignon !"
+     }
+    ],
+    "gram": "Pluriels en -aux : un cheval, des chevaux ; un animal, des animaux. Il s'appelle... pour donner le nom."
+   }
+  },
+  {
+   "d": 66,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Nature and the outdoors",
+     "g": "Talk about landscapes and outdoor activities you enjoy in French.",
+     "p": [
+      "Landscapes: la mer, la montagne, la forêt, la plage, le lac, la campagne.",
+      "Prepositions: à la mer, à la montagne, à la campagne, but dans la forêt and sur la plage.",
+      "Activities: faire une randonnée, nager, faire du camping, se promener, faire du ski."
+     ],
+     "q": "Do you prefer the sea or the mountains? Tell me why in French.",
+     "c": "Describe your ideal day outdoors in French: the place and two activities."
+    },
+    "de": {
+     "t": "Natur und draußen",
+     "g": "Du sprichst auf Französisch über Landschaften und Aktivitäten im Freien.",
+     "p": [
+      "Landschaften: la mer, la montagne, la forêt, la plage, le lac, la campagne.",
+      "Präpositionen: à la mer, à la montagne, à la campagne, aber dans la forêt und sur la plage.",
+      "Aktivitäten: faire une randonnée, nager, faire du camping, se promener, faire du ski."
+     ],
+     "q": "Lieber Meer oder Berge? Sag mir auf Französisch, warum.",
+     "c": "Beschreib auf Französisch deinen idealen Tag draußen: Ort und zwei Aktivitäten."
+    },
+    "es": {
+     "t": "La naturaleza",
+     "g": "Habla en francés de paisajes y de actividades al aire libre que te gustan.",
+     "p": [
+      "Paisajes: la mer, la montagne, la forêt, la plage, le lac, la campagne.",
+      "Preposiciones: à la mer, à la montagne, à la campagne, pero dans la forêt y sur la plage.",
+      "Actividades: faire une randonnée, nager, faire du camping, se promener, faire du ski."
+     ],
+     "q": "¿Prefieres el mar o la montaña? Dime por qué en francés.",
+     "c": "Describe en francés tu día ideal al aire libre: el lugar y dos actividades."
+    },
+    "fr": {
+     "t": "La nature",
+     "g": "Parler des paysages et des activités de plein air que tu aimes.",
+     "p": [
+      "Paysages : la mer, la montagne, la forêt, la plage, le lac, la campagne.",
+      "Prépositions : à la mer, à la montagne, à la campagne, mais dans la forêt et sur la plage.",
+      "Activités : faire une randonnée, nager, faire du camping, se promener, faire du ski."
+     ],
+     "q": "Tu préfères la mer ou la montagne ? Explique pourquoi.",
+     "c": "Décris ta journée idéale en plein air : le lieu et deux activités."
+    },
+    "it": {
+     "t": "La natura",
+     "g": "Parla in francese di paesaggi e attività all'aria aperta che ti piacciono.",
+     "p": [
+      "Paesaggi: la mer, la montagne, la forêt, la plage, le lac, la campagne.",
+      "Preposizioni: à la mer, à la montagne, à la campagne, ma dans la forêt e sur la plage.",
+      "Attività: faire une randonnée, nager, faire du camping, se promener, faire du ski."
+     ],
+     "q": "Preferisci il mare o la montagna? Dimmi perché in francese.",
+     "c": "Descrivi in francese la tua giornata ideale all'aperto: il posto e due attività."
+    },
+    "pt": {
+     "t": "A natureza",
+     "g": "Falar em francês de paisagens e de atividades ao ar livre de que gostas.",
+     "p": [
+      "Paisagens: la mer, la montagne, la forêt, la plage, le lac, la campagne.",
+      "Preposições: à la mer, à la montagne, à la campagne, mas dans la forêt e sur la plage.",
+      "Atividades: faire une randonnée, nager, faire du camping, se promener, faire du ski."
+     ],
+     "q": "Preferes o mar ou a montanha? Diz-me porquê em francês.",
+     "c": "Descreve em francês o teu dia ideal ao ar livre: o lugar e duas atividades."
+    },
+    "pt_BR": {
+     "t": "A natureza",
+     "g": "Falar em francês de paisagens e atividades ao ar livre de que você gosta.",
+     "p": [
+      "Paisagens: la mer, la montagne, la forêt, la plage, le lac, la campagne.",
+      "Preposições: à la mer, à la montagne, à la campagne, mas dans la forêt e sur la plage.",
+      "Atividades: faire une randonnée, nager, faire du camping, se promener, faire du ski."
+     ],
+     "q": "Você prefere o mar ou a montanha? Me diga por quê em francês.",
+     "c": "Descreva em francês seu dia ideal ao ar livre: o lugar e duas atividades."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la mer",
+      "ex": "L'été, nous allons à la mer."
+     },
+     {
+      "w": "la montagne",
+      "ex": "J'adore marcher à la montagne."
+     },
+     {
+      "w": "la forêt",
+      "ex": "On se promène dans la forêt."
+     },
+     {
+      "w": "la plage",
+      "ex": "Les enfants jouent sur la plage."
+     },
+     {
+      "w": "une randonnée",
+      "ex": "Nous faisons une randonnée dimanche."
+     },
+     {
+      "w": "la campagne",
+      "ex": "Mes grands-parents habitent à la campagne."
+     }
+    ],
+    "gram": "À la mer, à la montagne, à la campagne ; dans la forêt ; sur la plage. Faire du camping, faire une randonnée."
+   }
+  },
+  {
+   "d": 67,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Venir and venir de",
+     "g": "Conjugate venir and use venir de + infinitive for something you have just done.",
+     "p": [
+      "Venir is irregular: je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+      "Je viens de + city or country tells where you are from: je viens de Lyon, je viens du Brésil.",
+      "Venir de + infinitive means just did: je viens de manger = I have just eaten."
+     ],
+     "q": "Tell me where you come from, and one thing you have just done, in French.",
+     "c": "Say three French sentences with je viens de + infinitive about the last hour."
+    },
+    "de": {
+     "t": "Venir und venir de",
+     "g": "Du konjugierst venir und sagst mit venir de + Infinitiv, was du gerade getan hast.",
+     "p": [
+      "Venir ist unregelmäßig: je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+      "Je viens de + Ort sagt, woher du kommst: je viens de Lyon, je viens du Brésil.",
+      "Venir de + Infinitiv heißt gerade eben: je viens de manger = ich habe gerade gegessen."
+     ],
+     "q": "Sag mir auf Französisch, woher du kommst und was du gerade gemacht hast.",
+     "c": "Bilde drei Sätze mit je viens de + Infinitiv über die letzte Stunde."
+    },
+    "es": {
+     "t": "Venir y venir de",
+     "g": "Conjuga venir y usa venir de + infinitivo para algo que acabas de hacer.",
+     "p": [
+      "Venir es irregular: je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+      "Je viens de + lugar dice de dónde eres: je viens de Lyon, je viens du Brésil.",
+      "Venir de + infinitivo es acabar de: je viens de manger = acabo de comer."
+     ],
+     "q": "Dime en francés de dónde vienes y algo que acabas de hacer.",
+     "c": "Di tres frases en francés con je viens de + infinitivo sobre la última hora."
+    },
+    "fr": {
+     "t": "Venir et venir de",
+     "g": "Conjuguer venir et utiliser venir de + infinitif pour une action qui vient de se passer.",
+     "p": [
+      "Venir est irrégulier : je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+      "Je viens de + lieu indique l'origine : je viens de Lyon, je viens du Brésil.",
+      "Venir de + infinitif = passé récent : je viens de manger."
+     ],
+     "q": "Dis-moi d'où tu viens et une chose que tu viens de faire.",
+     "c": "Fais trois phrases avec je viens de + infinitif sur la dernière heure."
+    },
+    "it": {
+     "t": "Venir e venir de",
+     "g": "Coniuga venir e usa venir de + infinito per qualcosa che hai appena fatto.",
+     "p": [
+      "Venir è irregolare: je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+      "Je viens de + luogo dice da dove vieni: je viens de Lyon, je viens du Brésil.",
+      "Venir de + infinito significa avere appena fatto: je viens de manger = ho appena mangiato."
+     ],
+     "q": "Dimmi in francese da dove vieni e una cosa che hai appena fatto.",
+     "c": "Di' tre frasi in francese con je viens de + infinito sull'ultima ora."
+    },
+    "pt": {
+     "t": "Venir e venir de",
+     "g": "Conjugar venir e usar venir de + infinitivo para algo que acabaste de fazer.",
+     "p": [
+      "Venir é irregular: je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+      "Je viens de + lugar diz de onde és: je viens de Lyon, je viens du Brésil.",
+      "Venir de + infinitivo é acabar de: je viens de manger = acabei de comer."
+     ],
+     "q": "Diz-me em francês de onde vens e uma coisa que acabaste de fazer.",
+     "c": "Diz três frases em francês com je viens de + infinitivo sobre a última hora."
+    },
+    "pt_BR": {
+     "t": "Venir e venir de",
+     "g": "Conjugar venir e usar venir de + infinitivo para algo que você acabou de fazer.",
+     "p": [
+      "Venir é irregular: je viens, tu viens, il vient, nous venons, vous venez, ils viennent.",
+      "Je viens de + lugar diz de onde você é: je viens de Lyon, je viens du Brésil.",
+      "Venir de + infinitivo é acabar de: je viens de manger = acabei de comer."
+     ],
+     "q": "Me diga em francês de onde você vem e uma coisa que acabou de fazer.",
+     "c": "Diga três frases em francês com je viens de + infinitivo sobre a última hora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "venir",
+      "ex": "Tu viens au cinéma ce soir ?"
+     },
+     {
+      "w": "je viens de (lieu)",
+      "ex": "Je viens de Marseille."
+     },
+     {
+      "w": "venir de + infinitif",
+      "ex": "Je viens de finir mon travail."
+     },
+     {
+      "w": "revenir",
+      "ex": "Il revient de vacances demain."
+     },
+     {
+      "w": "tout à l'heure",
+      "ex": "Elle vient d'arriver tout à l'heure."
+     },
+     {
+      "w": "à l'instant",
+      "ex": "Le train vient de partir à l'instant."
+     }
+    ],
+    "gram": "Venir : je viens, nous venons, ils viennent. Passé récent : venir de + infinitif (je viens de manger)."
+   }
+  },
+  {
+   "d": 68,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Savoir or connaître?",
+     "g": "Choose between savoir and connaître, the two French verbs for to know.",
+     "p": [
+      "Savoir is for facts and skills: je sais où il habite, je sais nager (no word for how).",
+      "Connaître is for people, places and things you are familiar with: je connais Paris, je connais Marie.",
+      "Forms: je sais, tu sais, il sait, nous savons; je connais, il connaît, nous connaissons."
+     ],
+     "q": "Tell me one person you know, one place you know and one thing you know how to do, in French.",
+     "c": "Write two sentences with je sais and two with je connais about yourself."
+    },
+    "de": {
+     "t": "Savoir oder connaître?",
+     "g": "Du wählst zwischen savoir und connaître, den zwei französischen Verben für wissen und kennen.",
+     "p": [
+      "Savoir für Fakten und Fähigkeiten: je sais où il habite, je sais nager (können).",
+      "Connaître für Personen, Orte und Vertrautes: je connais Paris, je connais Marie.",
+      "Formen: je sais, tu sais, il sait, nous savons; je connais, il connaît, nous connaissons."
+     ],
+     "q": "Nenn mir auf Französisch eine Person, einen Ort, die du kennst, und etwas, das du kannst.",
+     "c": "Schreib zwei Sätze mit je sais und zwei mit je connais über dich."
+    },
+    "es": {
+     "t": "¿Savoir o connaître?",
+     "g": "Elige entre savoir y connaître, los dos verbos franceses para saber y conocer.",
+     "p": [
+      "Savoir es para datos y habilidades: je sais où il habite, je sais nager.",
+      "Connaître es para personas, lugares y cosas conocidas: je connais Paris, je connais Marie.",
+      "Formas: je sais, tu sais, il sait, nous savons; je connais, il connaît, nous connaissons."
+     ],
+     "q": "Dime en francés una persona y un lugar que conoces, y algo que sabes hacer.",
+     "c": "Escribe dos frases con je sais y dos con je connais sobre ti."
+    },
+    "fr": {
+     "t": "Savoir ou connaître ?",
+     "g": "Choisir entre savoir et connaître.",
+     "p": [
+      "Savoir pour les faits et les compétences : je sais où il habite, je sais nager.",
+      "Connaître pour les personnes, les lieux et ce qui est familier : je connais Paris, je connais Marie.",
+      "Formes : je sais, il sait, nous savons ; je connais, il connaît, nous connaissons."
+     ],
+     "q": "Dis-moi une personne et un lieu que tu connais, et une chose que tu sais faire.",
+     "c": "Écris deux phrases avec je sais et deux avec je connais sur toi."
+    },
+    "it": {
+     "t": "Savoir o connaître?",
+     "g": "Scegli tra savoir e connaître, i due verbi francesi per sapere e conoscere.",
+     "p": [
+      "Savoir è per fatti e abilità: je sais où il habite, je sais nager.",
+      "Connaître è per persone, luoghi e cose familiari: je connais Paris, je connais Marie.",
+      "Forme: je sais, tu sais, il sait, nous savons; je connais, il connaît, nous connaissons."
+     ],
+     "q": "Dimmi in francese una persona e un luogo che conosci, e una cosa che sai fare.",
+     "c": "Scrivi due frasi con je sais e due con je connais su di te."
+    },
+    "pt": {
+     "t": "Savoir ou connaître?",
+     "g": "Escolher entre savoir e connaître, os dois verbos franceses para saber e conhecer.",
+     "p": [
+      "Savoir é para factos e capacidades: je sais où il habite, je sais nager.",
+      "Connaître é para pessoas, lugares e coisas familiares: je connais Paris, je connais Marie.",
+      "Formas: je sais, tu sais, il sait, nous savons; je connais, il connaît, nous connaissons."
+     ],
+     "q": "Diz-me em francês uma pessoa e um lugar que conheces, e uma coisa que sabes fazer.",
+     "c": "Escreve duas frases com je sais e duas com je connais sobre ti."
+    },
+    "pt_BR": {
+     "t": "Savoir ou connaître?",
+     "g": "Escolher entre savoir e connaître, os dois verbos franceses para saber e conhecer.",
+     "p": [
+      "Savoir é para fatos e habilidades: je sais où il habite, je sais nager.",
+      "Connaître é para pessoas, lugares e coisas familiares: je connais Paris, je connais Marie.",
+      "Formas: je sais, tu sais, il sait, nous savons; je connais, il connaît, nous connaissons."
+     ],
+     "q": "Me diga em francês uma pessoa e um lugar que você conhece, e algo que sabe fazer.",
+     "c": "Escreva duas frases com je sais e duas com je connais sobre você."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "savoir",
+      "ex": "Je sais parler un peu français."
+     },
+     {
+      "w": "connaître",
+      "ex": "Tu connais ce restaurant ?"
+     },
+     {
+      "w": "je ne sais pas",
+      "ex": "Je ne sais pas où est la gare."
+     },
+     {
+      "w": "savoir + infinitif",
+      "ex": "Elle sait jouer du piano."
+     },
+     {
+      "w": "connaître quelqu'un",
+      "ex": "Je connais bien ton frère."
+     },
+     {
+      "w": "un endroit",
+      "ex": "Je connais un endroit très calme."
+     }
+    ],
+    "gram": "Savoir + fait ou infinitif (je sais nager, je sais qu'il vient). Connaître + nom de personne ou de lieu (je connais Lyon)."
+   }
+  },
+  {
+   "d": 69,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ordinal numbers and dates",
+     "g": "Use ordinal numbers and say dates the French way.",
+     "p": [
+      "Add -ième to the number: deux, deuxième; trois, troisième; but un becomes premier or première.",
+      "Dates use normal numbers: le 14 juillet, le 3 mai; only the first day is ordinal: le 1er janvier.",
+      "Ask: on est le combien aujourd'hui? or quelle est la date? Answer: on est le 8 mars."
+     ],
+     "q": "When is your birthday? Say the date in French.",
+     "c": "Say in French the dates of three days that matter to you, like a holiday or a birthday."
+    },
+    "de": {
+     "t": "Ordnungszahlen und Datum",
+     "g": "Du benutzt Ordnungszahlen und sagst das Datum auf Französisch.",
+     "p": [
+      "Man hängt -ième an: deux, deuxième; trois, troisième; aber un wird zu premier oder première.",
+      "Beim Datum nimmt man Grundzahlen: le 14 juillet, le 3 mai; nur der Erste ist ordinal: le 1er janvier.",
+      "Frag: on est le combien aujourd'hui? oder quelle est la date? Antwort: on est le 8 mars."
+     ],
+     "q": "Wann hast du Geburtstag? Sag das Datum auf Französisch.",
+     "c": "Nenne auf Französisch drei wichtige Daten für dich, z. B. einen Feiertag oder Geburtstag."
+    },
+    "es": {
+     "t": "Ordinales y fechas",
+     "g": "Usa los números ordinales y di las fechas a la francesa.",
+     "p": [
+      "Se añade -ième: deux, deuxième; trois, troisième; pero un se vuelve premier o première.",
+      "Las fechas usan números normales: le 14 juillet, le 3 mai; solo el día uno es ordinal: le 1er janvier.",
+      "Pregunta: on est le combien aujourd'hui? o quelle est la date? Respuesta: on est le 8 mars."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Di la fecha en francés.",
+     "c": "Di en francés tres fechas importantes para ti, como una fiesta o un cumpleaños."
+    },
+    "fr": {
+     "t": "Ordinaux et dates",
+     "g": "Utiliser les nombres ordinaux et dire la date.",
+     "p": [
+      "On ajoute -ième : deux, deuxième ; trois, troisième ; mais un devient premier ou première.",
+      "Pour la date, on dit le 14 juillet, le 3 mai ; seul le premier jour est ordinal : le 1er janvier.",
+      "Demande : on est le combien aujourd'hui ? Réponds : on est le 8 mars."
+     ],
+     "q": "C'est quand, ton anniversaire ? Dis la date.",
+     "c": "Dis trois dates importantes pour toi, comme une fête ou un anniversaire."
+    },
+    "it": {
+     "t": "Ordinali e date",
+     "g": "Usa i numeri ordinali e di' le date alla francese.",
+     "p": [
+      "Si aggiunge -ième: deux, deuxième; trois, troisième; ma un diventa premier o première.",
+      "Le date usano i numeri normali: le 14 juillet, le 3 mai; solo il primo è ordinale: le 1er janvier.",
+      "Chiedi: on est le combien aujourd'hui? o quelle est la date? Risposta: on est le 8 mars."
+     ],
+     "q": "Quando è il tuo compleanno? Di' la data in francese.",
+     "c": "Di' in francese tre date importanti per te, come una festa o un compleanno."
+    },
+    "pt": {
+     "t": "Ordinais e datas",
+     "g": "Usar os números ordinais e dizer as datas à francesa.",
+     "p": [
+      "Acrescenta-se -ième: deux, deuxième; trois, troisième; mas un passa a premier ou première.",
+      "As datas usam números normais: le 14 juillet, le 3 mai; só o dia um é ordinal: le 1er janvier.",
+      "Pergunta: on est le combien aujourd'hui? ou quelle est la date? Resposta: on est le 8 mars."
+     ],
+     "q": "Quando fazes anos? Diz a data em francês.",
+     "c": "Diz em francês três datas importantes para ti, como um feriado ou um aniversário."
+    },
+    "pt_BR": {
+     "t": "Ordinais e datas",
+     "g": "Usar os números ordinais e dizer as datas do jeito francês.",
+     "p": [
+      "Acrescenta-se -ième: deux, deuxième; trois, troisième; mas un vira premier ou première.",
+      "As datas usam números normais: le 14 juillet, le 3 mai; só o dia primeiro é ordinal: le 1er janvier.",
+      "Pergunte: on est le combien aujourd'hui? ou quelle est la date? Resposta: on est le 8 mars."
+     ],
+     "q": "Quando é seu aniversário? Diga a data em francês.",
+     "c": "Diga em francês três datas importantes para você, como um feriado ou um aniversário."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "premier, première",
+      "ex": "C'est mon premier jour ici."
+     },
+     {
+      "w": "deuxième",
+      "ex": "J'habite au deuxième étage."
+     },
+     {
+      "w": "le 1er janvier",
+      "ex": "Le 1er janvier, c'est le Nouvel An."
+     },
+     {
+      "w": "le 14 juillet",
+      "ex": "Le 14 juillet, c'est la fête nationale."
+     },
+     {
+      "w": "un anniversaire",
+      "ex": "Mon anniversaire, c'est le 12 mai."
+     },
+     {
+      "w": "on est le combien ?",
+      "ex": "On est le combien aujourd'hui ? Le 5."
+     }
+    ],
+    "gram": "Ordinal : nombre + -ième (troisième), sauf premier. Date : le + nombre + mois (le 3 mai), mais le 1er mai."
+   }
+  },
+  {
+   "d": 70,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Big numbers and years",
+     "g": "Count to a million and say years in French.",
+     "p": [
+      "Cent, deux cents, mille, deux mille: cents takes an s only when nothing follows (deux cents, deux cent dix).",
+      "Mille never takes an s: trois mille. Un million de habitants needs de before a noun.",
+      "Years: 1998 is mille neuf cent quatre-vingt-dix-huit, 2010 is deux mille dix; en 2010 = in 2010."
+     ],
+     "q": "In what year were you born? Say it in French.",
+     "c": "Write three important years in French words, for example the year you started school."
+    },
+    "de": {
+     "t": "Große Zahlen und Jahre",
+     "g": "Du zählst bis eine Million und sagst Jahreszahlen auf Französisch.",
+     "p": [
+      "Cent, deux cents, mille, deux mille: cents hat nur ein s, wenn nichts folgt (deux cents, deux cent dix).",
+      "Mille hat nie ein s: trois mille. Un million d'habitants braucht de vor dem Nomen.",
+      "Jahre: 1998 = mille neuf cent quatre-vingt-dix-huit, 2010 = deux mille dix; en 2010 = im Jahr 2010."
+     ],
+     "q": "In welchem Jahr bist du geboren? Sag es auf Französisch.",
+     "c": "Schreib drei wichtige Jahre in französischen Worten, z. B. dein Schulanfangsjahr."
+    },
+    "es": {
+     "t": "Números grandes y años",
+     "g": "Cuenta hasta un millón y di los años en francés.",
+     "p": [
+      "Cent, deux cents, mille, deux mille: cents lleva s solo si no sigue nada (deux cents, deux cent dix).",
+      "Mille nunca lleva s: trois mille. Un million d'habitants necesita de antes del sustantivo.",
+      "Años: 1998 es mille neuf cent quatre-vingt-dix-huit, 2010 es deux mille dix; en 2010 = en 2010."
+     ],
+     "q": "¿En qué año naciste? Dilo en francés.",
+     "c": "Escribe en letras francesas tres años importantes, por ejemplo cuando empezaste la escuela."
+    },
+    "fr": {
+     "t": "Grands nombres et années",
+     "g": "Compter jusqu'à un million et dire les années.",
+     "p": [
+      "Cent, deux cents, mille : cents prend un s seulement à la fin (deux cents, mais deux cent dix).",
+      "Mille est invariable : trois mille. Un million d'habitants : de devant le nom.",
+      "Années : 1998 = mille neuf cent quatre-vingt-dix-huit, 2010 = deux mille dix ; on dit en 2010."
+     ],
+     "q": "Tu es né en quelle année ? Dis-le en toutes lettres.",
+     "c": "Écris trois années importantes en lettres, par exemple l'année où tu as commencé l'école."
+    },
+    "it": {
+     "t": "Numeri grandi e anni",
+     "g": "Conta fino a un milione e di' gli anni in francese.",
+     "p": [
+      "Cent, deux cents, mille: cents prende la s solo se non segue nulla (deux cents, deux cent dix).",
+      "Mille non prende mai la s: trois mille. Un million d'habitants vuole de prima del nome.",
+      "Anni: 1998 è mille neuf cent quatre-vingt-dix-huit, 2010 è deux mille dix; en 2010 = nel 2010."
+     ],
+     "q": "In che anno sei nato? Dillo in francese.",
+     "c": "Scrivi in lettere francesi tre anni importanti, per esempio quando hai iniziato la scuola."
+    },
+    "pt": {
+     "t": "Números grandes e anos",
+     "g": "Contar até um milhão e dizer os anos em francês.",
+     "p": [
+      "Cent, deux cents, mille: cents só leva s se nada vier depois (deux cents, deux cent dix).",
+      "Mille nunca leva s: trois mille. Un million d'habitants precisa de de antes do nome.",
+      "Anos: 1998 é mille neuf cent quatre-vingt-dix-huit, 2010 é deux mille dix; en 2010 = em 2010."
+     ],
+     "q": "Em que ano nasceste? Diz em francês.",
+     "c": "Escreve por extenso em francês três anos importantes, como o ano em que começaste a escola."
+    },
+    "pt_BR": {
+     "t": "Números grandes e anos",
+     "g": "Contar até um milhão e dizer os anos em francês.",
+     "p": [
+      "Cent, deux cents, mille: cents só leva s se nada vier depois (deux cents, deux cent dix).",
+      "Mille nunca leva s: trois mille. Un million d'habitants precisa de de antes do substantivo.",
+      "Anos: 1998 é mille neuf cent quatre-vingt-dix-huit, 2010 é deux mille dix; en 2010 = em 2010."
+     ],
+     "q": "Em que ano você nasceu? Diga em francês.",
+     "c": "Escreva por extenso em francês três anos importantes, como o ano em que você começou a escola."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cent",
+      "ex": "Il y a cent personnes dans la salle."
+     },
+     {
+      "w": "mille",
+      "ex": "Ce village a mille habitants."
+     },
+     {
+      "w": "un million",
+      "ex": "Un million de personnes visitent ce musée."
+     },
+     {
+      "w": "deux mille dix",
+      "ex": "Je suis arrivé ici en deux mille dix."
+     },
+     {
+      "w": "en + année",
+      "ex": "Elle est née en 1995."
+     },
+     {
+      "w": "environ",
+      "ex": "La ville a environ deux cent mille habitants."
+     }
+    ],
+    "gram": "Deux cents mais deux cent dix ; mille invariable ; un million de + nom. Les années : en 2010 (deux mille dix)."
+   }
+  }
+ ]
+}

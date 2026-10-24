@@ -1,0 +1,1305 @@
+{
+ "topic": "yoga",
+ "questions": [
+  {
+   "id": "yoga-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What first made you curious about yoga?",
+    "de": "Was hat dich zuerst neugierig auf Yoga gemacht?",
+    "es": "¿Qué fue lo primero que te despertó la curiosidad por el yoga?",
+    "fr": "Qu'est-ce qui t'a donné envie de découvrir le yoga ?",
+    "it": "Che cosa ti ha incuriosito per la prima volta dello yoga?",
+    "pt": "O que te despertou primeiro a curiosidade pelo yoga?",
+    "pt_BR": "O que primeiro te deixou curioso sobre yoga?"
+   }
+  },
+  {
+   "id": "yoga-002",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you describe your ideal yoga session?",
+    "de": "Wie würdest du deine ideale Yogastunde beschreiben?",
+    "es": "¿Cómo describirías tu sesión de yoga ideal?",
+    "fr": "Comment décrirais-tu ta séance de yoga idéale ?",
+    "it": "Come descriveresti la tua sessione di yoga ideale?",
+    "pt": "Como descreverias a tua sessão de yoga ideal?",
+    "pt_BR": "Como você descreveria sua sessão de yoga ideal?"
+   }
+  },
+  {
+   "id": "yoga-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer practising yoga in the morning or in the evening? Why?",
+    "de": "Übst du Yoga lieber morgens oder abends? Warum?",
+    "es": "¿Prefieres practicar yoga por la mañana o por la noche? ¿Por qué?",
+    "fr": "Tu préfères pratiquer le yoga le matin ou le soir ? Pourquoi ?",
+    "it": "Preferisci praticare yoga la mattina o la sera? Perché?",
+    "pt": "Preferes praticar yoga de manhã ou à noite? Porquê?",
+    "pt_BR": "Você prefere praticar yoga de manhã ou à noite? Por quê?"
+   }
+  },
+  {
+   "id": "yoga-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Where would you love to do yoga outdoors one day?",
+    "de": "Wo würdest du eines Tages gern draußen Yoga machen?",
+    "es": "¿Dónde te encantaría hacer yoga al aire libre algún día?",
+    "fr": "Où aimerais-tu faire du yoga en plein air un jour ?",
+    "it": "Dove ti piacerebbe fare yoga all'aperto un giorno?",
+    "pt": "Onde gostavas de fazer yoga ao ar livre um dia?",
+    "pt_BR": "Onde você adoraria fazer yoga ao ar livre um dia?"
+   }
+  },
+  {
+   "id": "yoga-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What helps you relax after a busy day?",
+    "de": "Was hilft dir, nach einem vollen Tag zu entspannen?",
+    "es": "¿Qué te ayuda a relajarte después de un día ajetreado?",
+    "fr": "Qu'est-ce qui t'aide à te détendre après une journée chargée ?",
+    "it": "Che cosa ti aiuta a rilassarti dopo una giornata piena?",
+    "pt": "O que te ajuda a relaxar depois de um dia cheio?",
+    "pt_BR": "O que te ajuda a relaxar depois de um dia corrido?"
+   }
+  },
+  {
+   "id": "yoga-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy practising alone or with other people more?",
+    "de": "Übst du lieber allein oder mit anderen?",
+    "es": "¿Disfrutas más practicando solo o con otras personas?",
+    "fr": "Tu aimes mieux pratiquer seul ou avec d'autres personnes ?",
+    "it": "Ti piace di più praticare da solo o con altre persone?",
+    "pt": "Gostas mais de praticar sozinho ou com outras pessoas?",
+    "pt_BR": "Você curte mais praticar sozinho ou com outras pessoas?"
+   }
+  },
+  {
+   "id": "yoga-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Which yoga pose names do you find the funniest or most interesting?",
+    "de": "Welche Namen von Yogahaltungen findest du am lustigsten oder spannendsten?",
+    "es": "¿Qué nombres de posturas de yoga te parecen más divertidos o curiosos?",
+    "fr": "Quels noms de postures de yoga trouves-tu les plus drôles ou intéressants ?",
+    "it": "Quali nomi delle posizioni yoga trovi più divertenti o curiosi?",
+    "pt": "Que nomes de posturas de yoga achas mais engraçados ou interessantes?",
+    "pt_BR": "Quais nomes de posturas de yoga você acha mais engraçados ou interessantes?"
+   }
+  },
+  {
+   "id": "yoga-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of music, if any, do you like during yoga?",
+    "de": "Welche Musik magst du beim Yoga, wenn überhaupt?",
+    "es": "¿Qué tipo de música te gusta durante el yoga, si es que pones alguna?",
+    "fr": "Quel genre de musique aimes-tu pendant le yoga, si tu en mets ?",
+    "it": "Che tipo di musica ti piace durante lo yoga, se ne metti?",
+    "pt": "Que tipo de música gostas de ouvir durante o yoga, se ouves alguma?",
+    "pt_BR": "Que tipo de música você curte durante o yoga, se é que coloca alguma?"
+   }
+  },
+  {
+   "id": "yoga-009",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually feel right after moving and stretching?",
+    "de": "Wie fühlst du dich normalerweise direkt nach Bewegung und Dehnen?",
+    "es": "¿Cómo te sueles sentir justo después de moverte y estirarte?",
+    "fr": "Comment te sens-tu en général juste après avoir bougé et t'être étiré ?",
+    "it": "Come ti senti di solito subito dopo esserti mosso e allungato?",
+    "pt": "Como te costumas sentir logo depois de te mexeres e alongares?",
+    "pt_BR": "Como você costuma se sentir logo depois de se mexer e alongar?"
+   }
+  },
+  {
+   "id": "yoga-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a calm moment look like in your daily life?",
+    "de": "Wie sieht ein ruhiger Moment in deinem Alltag aus?",
+    "es": "¿Cómo es un momento de calma en tu día a día?",
+    "fr": "À quoi ressemble un moment calme dans ton quotidien ?",
+    "it": "Com'è un momento di calma nella tua vita quotidiana?",
+    "pt": "Como é um momento de calma no teu dia a dia?",
+    "pt_BR": "Como é um momento de calma no seu dia a dia?"
+   }
+  },
+  {
+   "id": "yoga-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a sport or hobby you would like yoga to complement?",
+    "de": "Gibt es einen Sport oder ein Hobby, das Yoga ergänzen soll?",
+    "es": "¿Hay algún deporte o hobby que te gustaría complementar con yoga?",
+    "fr": "Y a-t-il un sport ou un loisir que tu aimerais compléter avec le yoga ?",
+    "it": "C'è uno sport o un hobby che vorresti completare con lo yoga?",
+    "pt": "Há algum desporto ou passatempo que gostavas de complementar com yoga?",
+    "pt_BR": "Tem algum esporte ou hobby que você gostaria de complementar com yoga?"
+   }
+  },
+  {
+   "id": "yoga-012",
+   "lv": "any",
+   "i18n": {
+    "en": "What does your perfect practice space at home look like?",
+    "de": "Wie sieht dein perfekter Übungsplatz zu Hause aus?",
+    "es": "¿Cómo sería tu espacio perfecto para practicar en casa?",
+    "fr": "À quoi ressemble ton coin de pratique idéal à la maison ?",
+    "it": "Com'è il tuo spazio ideale per praticare a casa?",
+    "pt": "Como seria o teu espaço perfeito para praticar em casa?",
+    "pt_BR": "Como seria seu cantinho perfeito pra praticar em casa?"
+   }
+  },
+  {
+   "id": "yoga-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever seen yoga practised in another country? What was it like?",
+    "de": "Hast du schon mal Yoga in einem anderen Land erlebt? Wie war es?",
+    "es": "¿Has visto practicar yoga en otro país? ¿Cómo fue?",
+    "fr": "As-tu déjà vu pratiquer le yoga dans un autre pays ? C'était comment ?",
+    "it": "Hai mai visto praticare yoga in un altro paese? Com'era?",
+    "pt": "Já viste praticar yoga noutro país? Como foi?",
+    "pt_BR": "Você já viu yoga sendo praticado em outro país? Como foi?"
+   }
+  },
+  {
+   "id": "yoga-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Which matters more to you in yoga: movement, breathing or calm?",
+    "de": "Was ist dir beim Yoga am wichtigsten: Bewegung, Atmung oder Ruhe?",
+    "es": "¿Qué te importa más en el yoga: el movimiento, la respiración o la calma?",
+    "fr": "Qu'est-ce qui compte le plus pour toi dans le yoga : le mouvement, la respiration ou le calme ?",
+    "it": "Cosa conta di più per te nello yoga: il movimento, il respiro o la calma?",
+    "pt": "O que conta mais para ti no yoga: o movimento, a respiração ou a calma?",
+    "pt_BR": "O que importa mais pra você no yoga: o movimento, a respiração ou a calma?"
+   }
+  },
+  {
+   "id": "yoga-015",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you like to start your mornings?",
+    "de": "Wie beginnst du am liebsten deinen Morgen?",
+    "es": "¿Cómo te gusta empezar las mañanas?",
+    "fr": "Comment aimes-tu commencer tes matinées ?",
+    "it": "Come ti piace iniziare le tue mattine?",
+    "pt": "Como gostas de começar as tuas manhãs?",
+    "pt_BR": "Como você gosta de começar suas manhãs?"
+   }
+  },
+  {
+   "id": "yoga-016",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you like to feel more of thanks to yoga?",
+    "de": "Wovon möchtest du dank Yoga mehr spüren?",
+    "es": "¿Qué te gustaría sentir más gracias al yoga?",
+    "fr": "Qu'aimerais-tu ressentir davantage grâce au yoga ?",
+    "it": "Che cosa ti piacerebbe sentire di più grazie allo yoga?",
+    "pt": "O que gostavas de sentir mais graças ao yoga?",
+    "pt_BR": "O que você gostaria de sentir mais graças ao yoga?"
+   }
+  },
+  {
+   "id": "yoga-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer slow, quiet practices or lively, flowing ones?",
+    "de": "Magst du lieber langsame, ruhige Praxis oder lebendige Flows?",
+    "es": "¿Prefieres prácticas lentas y tranquilas o dinámicas y fluidas?",
+    "fr": "Tu préfères les pratiques lentes et calmes ou dynamiques et fluides ?",
+    "it": "Preferisci pratiche lente e tranquille o vivaci e fluide?",
+    "pt": "Preferes práticas lentas e calmas ou dinâmicas e fluidas?",
+    "pt_BR": "Você prefere práticas lentas e calmas ou animadas e fluidas?"
+   }
+  },
+  {
+   "id": "yoga-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Who in your life would you love to try a yoga class with?",
+    "de": "Mit wem würdest du gern mal eine Yogastunde ausprobieren?",
+    "es": "¿Con quién te encantaría probar una clase de yoga?",
+    "fr": "Avec qui aimerais-tu essayer un cours de yoga ?",
+    "it": "Con chi ti piacerebbe provare una lezione di yoga?",
+    "pt": "Com quem gostavas de experimentar uma aula de yoga?",
+    "pt_BR": "Com quem você adoraria experimentar uma aula de yoga?"
+   }
+  },
+  {
+   "id": "yoga-019",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite way to stretch when you wake up?",
+    "de": "Wie dehnst du dich am liebsten nach dem Aufwachen?",
+    "es": "¿Cuál es tu forma favorita de estirarte al despertar?",
+    "fr": "Quelle est ta façon préférée de t'étirer au réveil ?",
+    "it": "Qual è il tuo modo preferito di stiracchiarti al risveglio?",
+    "pt": "Qual é a tua forma preferida de te espreguiçares ao acordar?",
+    "pt_BR": "Qual é seu jeito favorito de se espreguiçar ao acordar?"
+   }
+  },
+  {
+   "id": "yoga-020",
+   "lv": "any",
+   "i18n": {
+    "en": "How much time could you realistically give to yoga each day?",
+    "de": "Wie viel Zeit könntest du realistisch jeden Tag für Yoga aufbringen?",
+    "es": "¿Cuánto tiempo podrías dedicar al yoga cada día, siendo realista?",
+    "fr": "Combien de temps pourrais-tu réalistement consacrer au yoga chaque jour ?",
+    "it": "Quanto tempo potresti dedicare realisticamente allo yoga ogni giorno?",
+    "pt": "Quanto tempo conseguias, realisticamente, dedicar ao yoga por dia?",
+    "pt_BR": "Quanto tempo você conseguiria, de verdade, dedicar ao yoga por dia?"
+   }
+  },
+  {
+   "id": "yoga-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you imagine when you hear the word yoga?",
+    "de": "Was stellst du dir vor, wenn du das Wort Yoga hörst?",
+    "es": "¿Qué te imaginas cuando oyes la palabra yoga?",
+    "fr": "Qu'est-ce que tu imagines quand tu entends le mot yoga ?",
+    "it": "Che cosa immagini quando senti la parola yoga?",
+    "pt": "O que imaginas quando ouves a palavra yoga?",
+    "pt_BR": "O que você imagina quando ouve a palavra yoga?"
+   }
+  },
+  {
+   "id": "yoga-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like trying new activities, or do you stick to favourites?",
+    "de": "Probierst du gern Neues aus, oder bleibst du bei deinen Favoriten?",
+    "es": "¿Te gusta probar actividades nuevas o prefieres tus favoritas de siempre?",
+    "fr": "Tu aimes essayer de nouvelles activités ou tu restes fidèle à tes favorites ?",
+    "it": "Ti piace provare attività nuove o resti fedele alle tue preferite?",
+    "pt": "Gostas de experimentar atividades novas ou ficas pelas tuas favoritas?",
+    "pt_BR": "Você gosta de testar atividades novas ou fica nas suas favoritas?"
+   }
+  },
+  {
+   "id": "yoga-023",
+   "lv": "any",
+   "i18n": {
+    "en": "What does balance mean to you in everyday life?",
+    "de": "Was bedeutet Balance für dich im Alltag?",
+    "es": "¿Qué significa el equilibrio para ti en la vida diaria?",
+    "fr": "Que signifie l'équilibre pour toi au quotidien ?",
+    "it": "Che cosa significa per te l'equilibrio nella vita di tutti i giorni?",
+    "pt": "O que significa o equilíbrio para ti no dia a dia?",
+    "pt_BR": "O que equilíbrio significa pra você no dia a dia?"
+   }
+  },
+  {
+   "id": "yoga-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Which do you enjoy more: a cosy indoor practice or fresh air outside?",
+    "de": "Was magst du mehr: gemütliche Praxis drinnen oder frische Luft draußen?",
+    "es": "¿Qué disfrutas más: practicar a gusto en casa o al aire libre?",
+    "fr": "Qu'est-ce que tu préfères : une pratique cosy à l'intérieur ou l'air frais dehors ?",
+    "it": "Cosa ti piace di più: una pratica accogliente al chiuso o l'aria fresca all'aperto?",
+    "pt": "O que gostas mais: praticar no conforto de casa ou ao ar livre?",
+    "pt_BR": "O que você curte mais: praticar no aconchego de casa ou ao ar livre?"
+   }
+  },
+  {
+   "id": "yoga-025",
+   "lv": "any",
+   "i18n": {
+    "en": "What small daily habit has made you feel good lately?",
+    "de": "Welche kleine tägliche Gewohnheit tut dir in letzter Zeit gut?",
+    "es": "¿Qué pequeño hábito diario te ha hecho sentir bien últimamente?",
+    "fr": "Quelle petite habitude quotidienne te fait du bien ces derniers temps ?",
+    "it": "Quale piccola abitudine quotidiana ti ha fatto stare bene ultimamente?",
+    "pt": "Que pequeno hábito diário te tem feito sentir bem ultimamente?",
+    "pt_BR": "Que pequeno hábito diário tem te feito bem ultimamente?"
+   }
+  },
+  {
+   "id": "yoga-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever tried meditation? How did it go?",
+    "de": "Hast du schon mal meditiert? Wie war es?",
+    "es": "¿Has probado alguna vez a meditar? ¿Qué tal te fue?",
+    "fr": "As-tu déjà essayé la méditation ? Comment ça s'est passé ?",
+    "it": "Hai mai provato a meditare? Com'è andata?",
+    "pt": "Já experimentaste meditar? Como correu?",
+    "pt_BR": "Você já tentou meditar? Como foi?"
+   }
+  },
+  {
+   "id": "yoga-027",
+   "lv": "any",
+   "i18n": {
+    "en": "What would make a yoga class feel welcoming to you?",
+    "de": "Was würde eine Yogastunde für dich einladend machen?",
+    "es": "¿Qué haría que una clase de yoga te resultara acogedora?",
+    "fr": "Qu'est-ce qui rendrait un cours de yoga accueillant pour toi ?",
+    "it": "Che cosa renderebbe accogliente per te una lezione di yoga?",
+    "pt": "O que faria uma aula de yoga parecer acolhedora para ti?",
+    "pt_BR": "O que faria uma aula de yoga parecer acolhedora pra você?"
+   }
+  },
+  {
+   "id": "yoga-028",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you like to spend a slow, relaxed Sunday?",
+    "de": "Wie verbringst du am liebsten einen ruhigen, entspannten Sonntag?",
+    "es": "¿Cómo te gusta pasar un domingo tranquilo y relajado?",
+    "fr": "Comment aimes-tu passer un dimanche calme et détendu ?",
+    "it": "Come ti piace trascorrere una domenica lenta e rilassata?",
+    "pt": "Como gostas de passar um domingo calmo e descontraído?",
+    "pt_BR": "Como você gosta de passar um domingo tranquilo e relaxado?"
+   }
+  },
+  {
+   "id": "yoga-029",
+   "lv": "any",
+   "i18n": {
+    "en": "If you joined a yoga retreat, what would you hope to do there?",
+    "de": "Wenn du auf ein Yoga-Retreat fahren würdest, was würdest du dort gern erleben?",
+    "es": "Si fueras a un retiro de yoga, ¿qué te gustaría hacer allí?",
+    "fr": "Si tu partais en retraite de yoga, qu'aimerais-tu y faire ?",
+    "it": "Se partecipassi a un ritiro di yoga, cosa ti piacerebbe fare lì?",
+    "pt": "Se fosses a um retiro de yoga, o que gostavas de lá fazer?",
+    "pt_BR": "Se você fosse a um retiro de yoga, o que gostaria de fazer lá?"
+   }
+  },
+  {
+   "id": "yoga-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you find more challenging: staying still or moving a lot?",
+    "de": "Was fällt dir schwerer: stillzuhalten oder viel in Bewegung zu sein?",
+    "es": "¿Qué te cuesta más: quedarte quieto o moverte mucho?",
+    "fr": "Qu'est-ce qui est le plus difficile pour toi : rester immobile ou bouger beaucoup ?",
+    "it": "Cosa trovi più difficile: stare fermo o muoverti tanto?",
+    "pt": "O que achas mais difícil: ficar quieto ou mexer-te muito?",
+    "pt_BR": "O que é mais difícil pra você: ficar parado ou se mexer bastante?"
+   }
+  },
+  {
+   "id": "yoga-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like to plan your workouts or decide in the moment?",
+    "de": "Planst du dein Training gern oder entscheidest du spontan?",
+    "es": "¿Te gusta planificar tus entrenamientos o decidir sobre la marcha?",
+    "fr": "Tu aimes planifier tes séances ou décider sur le moment ?",
+    "it": "Ti piace pianificare gli allenamenti o decidere al momento?",
+    "pt": "Gostas de planear os teus treinos ou decidir na hora?",
+    "pt_BR": "Você gosta de planejar seus treinos ou decidir na hora?"
+   }
+  },
+  {
+   "id": "yoga-032",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you tell a friend who is nervous about their first yoga class?",
+    "de": "Was würdest du einer Freundin sagen, die vor ihrer ersten Yogastunde nervös ist?",
+    "es": "¿Qué le dirías a un amigo que está nervioso antes de su primera clase de yoga?",
+    "fr": "Que dirais-tu à un ami nerveux avant son premier cours de yoga ?",
+    "it": "Cosa diresti a un amico nervoso per la sua prima lezione di yoga?",
+    "pt": "O que dirias a um amigo nervoso antes da primeira aula de yoga?",
+    "pt_BR": "O que você diria pra um amigo nervoso antes da primeira aula de yoga?"
+   }
+  },
+  {
+   "id": "yoga-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal pose names would you invent for a fun kids' class?",
+    "de": "Welche Tierhaltungen würdest du dir für eine lustige Kinderstunde ausdenken?",
+    "es": "¿Qué posturas de animales inventarías para una clase divertida para niños?",
+    "fr": "Quelles postures d'animaux inventerais-tu pour un cours amusant pour enfants ?",
+    "it": "Quali posizioni di animali inventeresti per una lezione divertente per bambini?",
+    "pt": "Que posturas de animais inventavas para uma aula divertida para crianças?",
+    "pt_BR": "Que posturas de bichos você inventaria pra uma aula divertida pra crianças?"
+   }
+  },
+  {
+   "id": "yoga-034",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one thing you would like to learn about yoga's history?",
+    "de": "Was würdest du gern über die Geschichte des Yoga erfahren?",
+    "es": "¿Qué te gustaría aprender sobre la historia del yoga?",
+    "fr": "Qu'aimerais-tu apprendre sur l'histoire du yoga ?",
+    "it": "Che cosa ti piacerebbe imparare sulla storia dello yoga?",
+    "pt": "O que gostavas de aprender sobre a história do yoga?",
+    "pt_BR": "O que você gostaria de aprender sobre a história do yoga?"
+   }
+  },
+  {
+   "id": "yoga-035",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you keep yourself motivated when starting something new?",
+    "de": "Wie bleibst du motiviert, wenn du etwas Neues anfängst?",
+    "es": "¿Cómo te mantienes motivado cuando empiezas algo nuevo?",
+    "fr": "Comment restes-tu motivé quand tu commences quelque chose de nouveau ?",
+    "it": "Come resti motivato quando inizi qualcosa di nuovo?",
+    "pt": "Como te manténs motivado quando começas algo novo?",
+    "pt_BR": "Como você se mantém motivado quando começa algo novo?"
+   }
+  },
+  {
+   "id": "yoga-036",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather try yoga on a beach, in a forest or on a rooftop?",
+    "de": "Würdest du lieber Yoga am Strand, im Wald oder auf einer Dachterrasse ausprobieren?",
+    "es": "¿Preferirías probar yoga en la playa, en un bosque o en una azotea?",
+    "fr": "Tu préférerais essayer le yoga sur une plage, en forêt ou sur un toit ?",
+    "it": "Preferiresti provare yoga in spiaggia, in un bosco o su una terrazza?",
+    "pt": "Preferias experimentar yoga na praia, numa floresta ou num terraço?",
+    "pt_BR": "Você preferiria testar yoga na praia, numa floresta ou num terraço?"
+   }
+  },
+  {
+   "id": "yoga-037",
+   "lv": "any",
+   "i18n": {
+    "en": "What does taking care of yourself look like for you?",
+    "de": "Wie sieht Selbstfürsorge für dich aus?",
+    "es": "¿Cómo es para ti cuidarte a ti mismo?",
+    "fr": "À quoi ressemble prendre soin de toi, pour toi ?",
+    "it": "Che cosa significa per te prenderti cura di te stesso?",
+    "pt": "Como é, para ti, cuidar de ti próprio?",
+    "pt_BR": "Como é, pra você, cuidar de si mesmo?"
+   }
+  },
+  {
+   "id": "yoga-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Which part of a yoga class do you think you would enjoy most?",
+    "de": "Welcher Teil einer Yogastunde würde dir wohl am meisten gefallen?",
+    "es": "¿Qué parte de una clase de yoga crees que disfrutarías más?",
+    "fr": "Quelle partie d'un cours de yoga penses-tu apprécier le plus ?",
+    "it": "Quale parte di una lezione di yoga pensi che ti piacerebbe di più?",
+    "pt": "Que parte de uma aula de yoga achas que irias gostar mais?",
+    "pt_BR": "Qual parte de uma aula de yoga você acha que curtiria mais?"
+   }
+  },
+  {
+   "id": "yoga-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer learning from videos, books or a live teacher?",
+    "de": "Lernst du lieber mit Videos, Büchern oder einer Lehrperson vor Ort?",
+    "es": "¿Prefieres aprender con vídeos, libros o un profesor en persona?",
+    "fr": "Tu préfères apprendre avec des vidéos, des livres ou un professeur en direct ?",
+    "it": "Preferisci imparare con video, libri o un insegnante dal vivo?",
+    "pt": "Preferes aprender com vídeos, livros ou um professor ao vivo?",
+    "pt_BR": "Você prefere aprender com vídeos, livros ou um professor ao vivo?"
+   }
+  },
+  {
+   "id": "yoga-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite way to unplug from screens?",
+    "de": "Wie schaltest du am liebsten von Bildschirmen ab?",
+    "es": "¿Cuál es tu forma favorita de desconectar de las pantallas?",
+    "fr": "Quelle est ta façon préférée de décrocher des écrans ?",
+    "it": "Qual è il tuo modo preferito di staccare dagli schermi?",
+    "pt": "Qual é a tua forma preferida de desligar dos ecrãs?",
+    "pt_BR": "Qual é seu jeito favorito de se desconectar das telas?"
+   }
+  },
+  {
+   "id": "yoga-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you tried any yoga poses yet? Which one felt nicest?",
+    "de": "Hast du schon Yogahaltungen ausprobiert? Welche hat sich am besten angefühlt?",
+    "es": "¿Ya has probado alguna postura de yoga? ¿Cuál te sentó mejor?",
+    "fr": "As-tu déjà essayé des postures de yoga ? Laquelle t'a fait le plus de bien ?",
+    "it": "Hai già provato qualche posizione di yoga? Quale ti è piaciuta di più?",
+    "pt": "Já experimentaste alguma postura de yoga? Qual te soube melhor?",
+    "pt_BR": "Você já testou alguma postura de yoga? Qual foi a mais gostosa?"
+   }
+  },
+  {
+   "id": "yoga-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where at home could you roll out a yoga mat?",
+    "de": "Wo bei dir zu Hause könntest du eine Yogamatte ausrollen?",
+    "es": "¿En qué lugar de tu casa podrías extender una esterilla?",
+    "fr": "Où chez toi pourrais-tu dérouler un tapis de yoga ?",
+    "it": "Dove a casa tua potresti srotolare un tappetino?",
+    "pt": "Onde em casa poderias estender um tapete de yoga?",
+    "pt_BR": "Em que lugar da sua casa você poderia abrir um tapetinho de yoga?"
+   }
+  },
+  {
+   "id": "yoga-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How does it feel when you take three slow, deep breaths?",
+    "de": "Wie fühlt es sich an, wenn du drei langsame, tiefe Atemzüge nimmst?",
+    "es": "¿Qué sientes cuando haces tres respiraciones lentas y profundas?",
+    "fr": "Qu'est-ce que tu ressens quand tu prends trois respirations lentes et profondes ?",
+    "it": "Come ti senti quando fai tre respiri lenti e profondi?",
+    "pt": "O que sentes quando fazes três respirações lentas e profundas?",
+    "pt_BR": "O que você sente quando faz três respirações lentas e profundas?"
+   }
+  },
+  {
+   "id": "yoga-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which household items could you use as yoga props?",
+    "de": "Welche Haushaltsgegenstände könntest du als Yoga-Hilfsmittel nutzen?",
+    "es": "¿Qué objetos de casa podrías usar como accesorios de yoga?",
+    "fr": "Quels objets de la maison pourrais-tu utiliser comme accessoires de yoga ?",
+    "it": "Quali oggetti di casa potresti usare come supporti per lo yoga?",
+    "pt": "Que objetos de casa poderias usar como acessórios de yoga?",
+    "pt_BR": "Que objetos de casa você poderia usar como acessórios de yoga?"
+   }
+  },
+  {
+   "id": "yoga-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you hope to feel after your first week of practice?",
+    "de": "Wie möchtest du dich nach deiner ersten Übungswoche fühlen?",
+    "es": "¿Cómo te gustaría sentirte después de tu primera semana de práctica?",
+    "fr": "Comment aimerais-tu te sentir après ta première semaine de pratique ?",
+    "it": "Come vorresti sentirti dopo la tua prima settimana di pratica?",
+    "pt": "Como gostavas de te sentir depois da primeira semana de prática?",
+    "pt_BR": "Como você espera se sentir depois da primeira semana de prática?"
+   }
+  },
+  {
+   "id": "yoga-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which feels easier for you right now: standing poses or floor poses?",
+    "de": "Was fällt dir gerade leichter: Haltungen im Stehen oder am Boden?",
+    "es": "¿Qué te resulta más fácil ahora: las posturas de pie o en el suelo?",
+    "fr": "Qu'est-ce qui te semble plus facile en ce moment : les postures debout ou au sol ?",
+    "it": "Cosa ti viene più facile ora: le posizioni in piedi o a terra?",
+    "pt": "O que te parece mais fácil agora: posturas de pé ou no chão?",
+    "pt_BR": "O que é mais fácil pra você agora: posturas em pé ou no chão?"
+   }
+  },
+  {
+   "id": "yoga-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What time of day could you fit in a five-minute practice?",
+    "de": "Zu welcher Tageszeit könntest du fünf Minuten Yoga einbauen?",
+    "es": "¿En qué momento del día podrías hacer una práctica de cinco minutos?",
+    "fr": "À quel moment de la journée pourrais-tu caser cinq minutes de pratique ?",
+    "it": "In quale momento della giornata potresti inserire cinque minuti di pratica?",
+    "pt": "Em que altura do dia conseguias encaixar cinco minutos de prática?",
+    "pt_BR": "Em que hora do dia você conseguiria encaixar cinco minutos de prática?"
+   }
+  },
+  {
+   "id": "yoga-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How did child's pose feel for you the first time?",
+    "de": "Wie hat sich die Kindhaltung beim ersten Mal für dich angefühlt?",
+    "es": "¿Qué tal te sentó la postura del niño la primera vez?",
+    "fr": "Comment as-tu vécu la posture de l'enfant la première fois ?",
+    "it": "Come ti sei sentito nella posizione del bambino la prima volta?",
+    "pt": "Como te sentiste na postura da criança da primeira vez?",
+    "pt_BR": "Como você se sentiu na postura da criança na primeira vez?"
+   }
+  },
+  {
+   "id": "yoga-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What kind of yoga class would you like to try first?",
+    "de": "Welche Art von Yogastunde würdest du zuerst ausprobieren?",
+    "es": "¿Qué tipo de clase de yoga te gustaría probar primero?",
+    "fr": "Quel type de cours de yoga aimerais-tu essayer en premier ?",
+    "it": "Che tipo di lezione di yoga ti piacerebbe provare per prima?",
+    "pt": "Que tipo de aula de yoga gostavas de experimentar primeiro?",
+    "pt_BR": "Que tipo de aula de yoga você gostaria de experimentar primeiro?"
+   }
+  },
+  {
+   "id": "yoga-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you like it when a teacher explains each step slowly?",
+    "de": "Magst du es, wenn eine Lehrperson jeden Schritt langsam erklärt?",
+    "es": "¿Te gusta que el profesor explique cada paso despacio?",
+    "fr": "Tu aimes quand un professeur explique chaque étape lentement ?",
+    "it": "Ti piace quando l'insegnante spiega ogni passaggio con calma?",
+    "pt": "Gostas quando o professor explica cada passo devagar?",
+    "pt_BR": "Você gosta quando o professor explica cada passo devagar?"
+   }
+  },
+  {
+   "id": "yoga-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which pose would you like to master in your first month?",
+    "de": "Welche Haltung möchtest du in deinem ersten Monat meistern?",
+    "es": "¿Qué postura te gustaría dominar en tu primer mes?",
+    "fr": "Quelle posture aimerais-tu maîtriser pendant ton premier mois ?",
+    "it": "Quale posizione vorresti padroneggiare nel tuo primo mese?",
+    "pt": "Que postura gostavas de dominar no teu primeiro mês?",
+    "pt_BR": "Qual postura você gostaria de dominar no seu primeiro mês?"
+   }
+  },
+  {
+   "id": "yoga-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about holding a pose for five breaths?",
+    "de": "Wie geht es dir damit, eine Haltung fünf Atemzüge lang zu halten?",
+    "es": "¿Qué te parece mantener una postura durante cinco respiraciones?",
+    "fr": "Que penses-tu de tenir une posture pendant cinq respirations ?",
+    "it": "Come ti trovi a mantenere una posizione per cinque respiri?",
+    "pt": "Como te sentes ao manter uma postura durante cinco respirações?",
+    "pt_BR": "Como você se sente mantendo uma postura por cinco respirações?"
+   }
+  },
+  {
+   "id": "yoga-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would help you remember to practise every day?",
+    "de": "Was würde dir helfen, jeden Tag ans Üben zu denken?",
+    "es": "¿Qué te ayudaría a acordarte de practicar cada día?",
+    "fr": "Qu'est-ce qui t'aiderait à penser à pratiquer chaque jour ?",
+    "it": "Che cosa ti aiuterebbe a ricordarti di praticare ogni giorno?",
+    "pt": "O que te ajudaria a lembrar-te de praticar todos os dias?",
+    "pt_BR": "O que te ajudaria a lembrar de praticar todo dia?"
+   }
+  },
+  {
+   "id": "yoga-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which part of your body would you most like to stretch right now?",
+    "de": "Welchen Körperteil würdest du jetzt am liebsten dehnen?",
+    "es": "¿Qué parte del cuerpo te gustaría estirar ahora mismo?",
+    "fr": "Quelle partie du corps aimerais-tu le plus étirer en ce moment ?",
+    "it": "Quale parte del corpo ti piacerebbe allungare proprio adesso?",
+    "pt": "Que parte do corpo mais gostavas de alongar agora?",
+    "pt_BR": "Qual parte do corpo você mais gostaria de alongar agora?"
+   }
+  },
+  {
+   "id": "yoga-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How did downward-facing dog feel the first time you tried it?",
+    "de": "Wie hat sich der herabschauende Hund beim ersten Versuch angefühlt?",
+    "es": "¿Qué sentiste la primera vez que hiciste el perro boca abajo?",
+    "fr": "Comment as-tu trouvé le chien tête en bas la première fois ?",
+    "it": "Come ti è sembrato il cane a testa in giù la prima volta?",
+    "pt": "Como foi o cão olhando para baixo da primeira vez?",
+    "pt_BR": "Como foi o cachorro olhando pra baixo na primeira vez?"
+   }
+  },
+  {
+   "id": "yoga-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you enjoy balancing poses, or do they make you laugh?",
+    "de": "Magst du Balancehaltungen, oder bringen sie dich zum Lachen?",
+    "es": "¿Te gustan las posturas de equilibrio o te hacen reír?",
+    "fr": "Tu aimes les postures d'équilibre, ou elles te font rire ?",
+    "it": "Ti piacciono le posizioni di equilibrio o ti fanno ridere?",
+    "pt": "Gostas das posturas de equilíbrio ou dão-te vontade de rir?",
+    "pt_BR": "Você curte posturas de equilíbrio ou elas te fazem rir?"
+   }
+  },
+  {
+   "id": "yoga-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would your perfect ten-minute routine include?",
+    "de": "Was würde deine perfekte Zehn-Minuten-Routine enthalten?",
+    "es": "¿Qué incluiría tu rutina perfecta de diez minutos?",
+    "fr": "Que contiendrait ta routine idéale de dix minutes ?",
+    "it": "Che cosa includerebbe la tua routine perfetta di dieci minuti?",
+    "pt": "O que incluiria a tua rotina perfeita de dez minutos?",
+    "pt_BR": "O que teria na sua rotina perfeita de dez minutos?"
+   }
+  },
+  {
+   "id": "yoga-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which yoga word have you learned recently that you like?",
+    "de": "Welches Yoga-Wort hast du kürzlich gelernt und magst es?",
+    "es": "¿Qué palabra de yoga has aprendido hace poco y te gusta?",
+    "fr": "Quel mot de yoga as-tu appris récemment et apprécies-tu ?",
+    "it": "Quale parola dello yoga hai imparato di recente e ti piace?",
+    "pt": "Que palavra de yoga aprendeste recentemente e de que gostas?",
+    "pt_BR": "Que palavra de yoga você aprendeu recentemente e curtiu?"
+   }
+  },
+  {
+   "id": "yoga-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel during the final relaxation at the end?",
+    "de": "Wie fühlst du dich in der Endentspannung?",
+    "es": "¿Cómo te sientes durante la relajación final?",
+    "fr": "Comment te sens-tu pendant la relaxation finale ?",
+    "it": "Come ti senti durante il rilassamento finale?",
+    "pt": "Como te sentes durante o relaxamento final?",
+    "pt_BR": "Como você se sente durante o relaxamento final?"
+   }
+  },
+  {
+   "id": "yoga-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather follow a calm voice or soft music while practising?",
+    "de": "Würdest du beim Üben lieber einer ruhigen Stimme oder leiser Musik folgen?",
+    "es": "¿Preferirías seguir una voz tranquila o música suave mientras practicas?",
+    "fr": "Tu préférerais suivre une voix calme ou une musique douce en pratiquant ?",
+    "it": "Preferiresti seguire una voce calma o una musica dolce mentre pratichi?",
+    "pt": "Preferias seguir uma voz calma ou música suave enquanto praticas?",
+    "pt_BR": "Você preferiria seguir uma voz calma ou música suave enquanto pratica?"
+   }
+  },
+  {
+   "id": "yoga-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What surprised you most when you started learning about yoga?",
+    "de": "Was hat dich am meisten überrascht, als du mit Yoga angefangen hast?",
+    "es": "¿Qué te sorprendió más cuando empezaste a aprender sobre yoga?",
+    "fr": "Qu'est-ce qui t'a le plus surpris quand tu as commencé le yoga ?",
+    "it": "Che cosa ti ha sorpreso di più quando hai iniziato a conoscere lo yoga?",
+    "pt": "O que te surpreendeu mais quando começaste a aprender yoga?",
+    "pt_BR": "O que mais te surpreendeu quando começou a aprender sobre yoga?"
+   }
+  },
+  {
+   "id": "yoga-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer short daily sessions or one longer weekly class?",
+    "de": "Magst du lieber kurze tägliche Einheiten oder eine längere Stunde pro Woche?",
+    "es": "¿Prefieres sesiones cortas cada día o una clase larga a la semana?",
+    "fr": "Tu préfères de courtes séances quotidiennes ou un long cours par semaine ?",
+    "it": "Preferisci brevi sessioni quotidiane o una lezione più lunga a settimana?",
+    "pt": "Preferes sessões curtas diárias ou uma aula mais longa por semana?",
+    "pt_BR": "Você prefere sessões curtas todo dia ou uma aula mais longa por semana?"
+   }
+  },
+  {
+   "id": "yoga-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you celebrate completing your first week of yoga?",
+    "de": "Wie würdest du deine erste vollendete Yogawoche feiern?",
+    "es": "¿Cómo celebrarías haber completado tu primera semana de yoga?",
+    "fr": "Comment fêterais-tu ta première semaine de yoga terminée ?",
+    "it": "Come festeggeresti la tua prima settimana di yoga completata?",
+    "pt": "Como celebravas a tua primeira semana de yoga concluída?",
+    "pt_BR": "Como você comemoraria sua primeira semana de yoga completa?"
+   }
+  },
+  {
+   "id": "yoga-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which breathing exercise has felt most calming for you so far?",
+    "de": "Welche Atemübung hat dich bisher am meisten beruhigt?",
+    "es": "¿Qué ejercicio de respiración te ha relajado más hasta ahora?",
+    "fr": "Quel exercice de respiration t'a le plus apaisé jusqu'ici ?",
+    "it": "Quale esercizio di respirazione ti ha calmato di più finora?",
+    "pt": "Que exercício de respiração te acalmou mais até agora?",
+    "pt_BR": "Qual exercício de respiração mais te acalmou até agora?"
+   }
+  },
+  {
+   "id": "yoga-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What clothes feel the most comfortable for you to move in?",
+    "de": "In welcher Kleidung bewegst du dich am bequemsten?",
+    "es": "¿Con qué ropa te sientes más cómodo para moverte?",
+    "fr": "Dans quels vêtements te sens-tu le plus à l'aise pour bouger ?",
+    "it": "In quali vestiti ti senti più comodo per muoverti?",
+    "pt": "Com que roupa te sentes mais confortável para te mexeres?",
+    "pt_BR": "Com que roupa você se sente mais confortável pra se mexer?"
+   }
+  },
+  {
+   "id": "yoga-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which yoga style would you like to explore next, and why?",
+    "de": "Welchen Yogastil möchtest du als Nächstes entdecken und warum?",
+    "es": "¿Qué estilo de yoga te gustaría explorar ahora y por qué?",
+    "fr": "Quel style de yoga aimerais-tu explorer ensuite, et pourquoi ?",
+    "it": "Quale stile di yoga ti piacerebbe esplorare adesso e perché?",
+    "pt": "Que estilo de yoga gostavas de explorar a seguir e porquê?",
+    "pt_BR": "Qual estilo de yoga você gostaria de explorar agora e por quê?"
+   }
+  },
+  {
+   "id": "yoga-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How has your balance changed since you started practising?",
+    "de": "Wie hat sich dein Gleichgewicht verändert, seit du übst?",
+    "es": "¿Cómo ha cambiado tu equilibrio desde que empezaste a practicar?",
+    "fr": "Comment ton équilibre a-t-il évolué depuis que tu pratiques ?",
+    "it": "Com'è cambiato il tuo equilibrio da quando hai iniziato a praticare?",
+    "pt": "Como mudou o teu equilíbrio desde que começaste a praticar?",
+    "pt_BR": "Como seu equilíbrio mudou desde que você começou a praticar?"
+   }
+  },
+  {
+   "id": "yoga-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which transition between poses do you find the trickiest?",
+    "de": "Welcher Übergang zwischen Haltungen fällt dir am schwersten?",
+    "es": "¿Qué transición entre posturas te parece más complicada?",
+    "fr": "Quelle transition entre les postures trouves-tu la plus délicate ?",
+    "it": "Quale passaggio tra le posizioni trovi più difficile?",
+    "pt": "Que transição entre posturas achas mais complicada?",
+    "pt_BR": "Qual transição entre posturas você acha mais complicada?"
+   }
+  },
+  {
+   "id": "yoga-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you enjoy sun salutations, or would you change something about them?",
+    "de": "Magst du Sonnengrüße, oder würdest du etwas daran ändern?",
+    "es": "¿Te gustan los saludos al sol o cambiarías algo de ellos?",
+    "fr": "Tu aimes les salutations au soleil, ou tu y changerais quelque chose ?",
+    "it": "Ti piacciono i saluti al sole o cambieresti qualcosa?",
+    "pt": "Gostas das saudações ao sol ou mudavas alguma coisa nelas?",
+    "pt_BR": "Você curte as saudações ao sol ou mudaria alguma coisa nelas?"
+   }
+  },
+  {
+   "id": "yoga-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What peak pose would you love to build a practice around?",
+    "de": "Um welche Höhepunkthaltung würdest du gern eine Praxis aufbauen?",
+    "es": "¿En torno a qué postura principal te gustaría construir una práctica?",
+    "fr": "Autour de quelle posture phare aimerais-tu construire une pratique ?",
+    "it": "Intorno a quale posizione culminante ti piacerebbe costruire una pratica?",
+    "pt": "À volta de que postura principal gostavas de construir uma prática?",
+    "pt_BR": "Em torno de qual postura principal você gostaria de montar uma prática?"
+   }
+  },
+  {
+   "id": "yoga-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you adapt your practice on low-energy days?",
+    "de": "Wie passt du deine Praxis an Tagen mit wenig Energie an?",
+    "es": "¿Cómo adaptas tu práctica en los días de poca energía?",
+    "fr": "Comment adaptes-tu ta pratique les jours où tu manques d'énergie ?",
+    "it": "Come adatti la tua pratica nei giorni con poca energia?",
+    "pt": "Como adaptas a tua prática nos dias com pouca energia?",
+    "pt_BR": "Como você adapta sua prática nos dias de pouca energia?"
+   }
+  },
+  {
+   "id": "yoga-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which props have become your favourites, and how do you use them?",
+    "de": "Welche Hilfsmittel sind deine Favoriten geworden und wie nutzt du sie?",
+    "es": "¿Qué accesorios se han vuelto tus favoritos y cómo los usas?",
+    "fr": "Quels accessoires sont devenus tes favoris, et comment les utilises-tu ?",
+    "it": "Quali supporti sono diventati i tuoi preferiti e come li usi?",
+    "pt": "Que acessórios se tornaram os teus favoritos e como os usas?",
+    "pt_BR": "Quais acessórios viraram seus favoritos e como você usa?"
+   }
+  },
+  {
+   "id": "yoga-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried a yoga class in a new style recently? What stood out?",
+    "de": "Hast du kürzlich eine Stunde in einem neuen Stil besucht? Was ist dir aufgefallen?",
+    "es": "¿Has probado hace poco una clase de un estilo nuevo? ¿Qué te llamó la atención?",
+    "fr": "As-tu essayé récemment un cours d'un nouveau style ? Qu'est-ce qui t'a marqué ?",
+    "it": "Hai provato di recente una lezione di uno stile nuovo? Cosa ti ha colpito?",
+    "pt": "Experimentaste recentemente uma aula de um estilo novo? O que te marcou?",
+    "pt_BR": "Você testou recentemente uma aula de um estilo novo? O que chamou sua atenção?"
+   }
+  },
+  {
+   "id": "yoga-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you combine yoga with your other sports or hobbies?",
+    "de": "Wie verbindest du Yoga mit deinen anderen Sportarten oder Hobbys?",
+    "es": "¿Cómo combinas el yoga con tus otros deportes o aficiones?",
+    "fr": "Comment combines-tu le yoga avec tes autres sports ou loisirs ?",
+    "it": "Come combini lo yoga con gli altri sport o hobby?",
+    "pt": "Como combinas o yoga com os teus outros desportos ou passatempos?",
+    "pt_BR": "Como você combina o yoga com seus outros esportes ou hobbies?"
+   }
+  },
+  {
+   "id": "yoga-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which breathing technique do you use outside of yoga?",
+    "de": "Welche Atemtechnik nutzt du auch außerhalb des Yoga?",
+    "es": "¿Qué técnica de respiración usas fuera del yoga?",
+    "fr": "Quelle technique de respiration utilises-tu en dehors du yoga ?",
+    "it": "Quale tecnica di respirazione usi anche fuori dallo yoga?",
+    "pt": "Que técnica de respiração usas fora do yoga?",
+    "pt_BR": "Qual técnica de respiração você usa fora do yoga?"
+   }
+  },
+  {
+   "id": "yoga-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What does your current weekly yoga rhythm look like?",
+    "de": "Wie sieht dein aktueller wöchentlicher Yoga-Rhythmus aus?",
+    "es": "¿Cómo es tu ritmo semanal de yoga en este momento?",
+    "fr": "À quoi ressemble ton rythme hebdomadaire de yoga en ce moment ?",
+    "it": "Com'è il tuo ritmo settimanale di yoga in questo periodo?",
+    "pt": "Como é o teu ritmo semanal de yoga neste momento?",
+    "pt_BR": "Como é seu ritmo semanal de yoga hoje em dia?"
+   }
+  },
+  {
+   "id": "yoga-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about practising in silence versus with music?",
+    "de": "Was hältst du vom Üben in Stille im Vergleich zu mit Musik?",
+    "es": "¿Qué opinas de practicar en silencio frente a hacerlo con música?",
+    "fr": "Que penses-tu de pratiquer en silence plutôt qu'en musique ?",
+    "it": "Che ne pensi di praticare in silenzio rispetto a farlo con la musica?",
+    "pt": "O que achas de praticar em silêncio em vez de com música?",
+    "pt_BR": "O que você acha de praticar em silêncio em vez de com música?"
+   }
+  },
+  {
+   "id": "yoga-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which counter pose do you love after a strong practice?",
+    "de": "Welche Ausgleichshaltung liebst du nach einer kräftigen Praxis?",
+    "es": "¿Qué contrapostura te encanta después de una práctica intensa?",
+    "fr": "Quelle contre-posture adores-tu après une pratique intense ?",
+    "it": "Quale contro-posizione adori dopo una pratica intensa?",
+    "pt": "Que contrapostura adoras depois de uma prática intensa?",
+    "pt_BR": "Qual contrapostura você adora depois de uma prática intensa?"
+   }
+  },
+  {
+   "id": "yoga-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you keep your practice fresh and avoid routine?",
+    "de": "Wie hältst du deine Praxis frisch und vermeidest Routine?",
+    "es": "¿Cómo mantienes tu práctica fresca y evitas la rutina?",
+    "fr": "Comment gardes-tu ta pratique vivante sans tomber dans la routine ?",
+    "it": "Come mantieni la tua pratica fresca ed eviti la routine?",
+    "pt": "Como manténs a tua prática fresca e evitas a rotina?",
+    "pt_BR": "Como você mantém sua prática renovada e foge da rotina?"
+   }
+  },
+  {
+   "id": "yoga-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What intention or theme would you choose for today's practice?",
+    "de": "Welche Absicht oder welches Thema würdest du für die heutige Praxis wählen?",
+    "es": "¿Qué intención o tema elegirías para la práctica de hoy?",
+    "fr": "Quelle intention ou quel thème choisirais-tu pour la pratique du jour ?",
+    "it": "Quale intenzione o tema sceglieresti per la pratica di oggi?",
+    "pt": "Que intenção ou tema escolhias para a prática de hoje?",
+    "pt_BR": "Que intenção ou tema você escolheria pra prática de hoje?"
+   }
+  },
+  {
+   "id": "yoga-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you like to try partner yoga or acro yoga? Why or why not?",
+    "de": "Würdest du gern Partner-Yoga oder Acro-Yoga ausprobieren? Warum oder warum nicht?",
+    "es": "¿Te gustaría probar el yoga en pareja o el acroyoga? ¿Por qué?",
+    "fr": "Aimerais-tu essayer le yoga à deux ou l'acroyoga ? Pourquoi ?",
+    "it": "Ti piacerebbe provare lo yoga in coppia o l'acroyoga? Perché?",
+    "pt": "Gostavas de experimentar yoga a pares ou acroyoga? Porquê?",
+    "pt_BR": "Você gostaria de experimentar yoga em dupla ou acroyoga? Por quê?"
+   }
+  },
+  {
+   "id": "yoga-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which classical yoga idea, like contentment or kindness, speaks to you?",
+    "de": "Welche klassische Yoga-Idee, etwa Zufriedenheit oder Güte, spricht dich an?",
+    "es": "¿Qué idea clásica del yoga, como la satisfacción o la amabilidad, te inspira?",
+    "fr": "Quelle idée classique du yoga, comme le contentement ou la bienveillance, te parle ?",
+    "it": "Quale idea classica dello yoga, come la contentezza o la gentilezza, ti ispira?",
+    "pt": "Que ideia clássica do yoga, como o contentamento ou a bondade, te inspira?",
+    "pt_BR": "Qual ideia clássica do yoga, como contentamento ou gentileza, mais te inspira?"
+   }
+  },
+  {
+   "id": "yoga-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What has yoga taught you about patience?",
+    "de": "Was hat dir Yoga über Geduld beigebracht?",
+    "es": "¿Qué te ha enseñado el yoga sobre la paciencia?",
+    "fr": "Qu'est-ce que le yoga t'a appris sur la patience ?",
+    "it": "Che cosa ti ha insegnato lo yoga sulla pazienza?",
+    "pt": "O que te ensinou o yoga sobre a paciência?",
+    "pt_BR": "O que o yoga te ensinou sobre paciência?"
+   }
+  },
+  {
+   "id": "yoga-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you design a calming evening sequence for a friend?",
+    "de": "Wie würdest du für eine Freundin eine beruhigende Abendsequenz gestalten?",
+    "es": "¿Cómo diseñarías una secuencia relajante de noche para un amigo?",
+    "fr": "Comment concevrais-tu une séquence apaisante du soir pour un ami ?",
+    "it": "Come progetteresti una sequenza serale rilassante per un amico?",
+    "pt": "Como desenharias uma sequência calmante para a noite para um amigo?",
+    "pt_BR": "Como você montaria uma sequência relaxante pra noite pra um amigo?"
+   }
+  },
+  {
+   "id": "yoga-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which balancing pose has improved the most for you?",
+    "de": "Welche Balancehaltung hat sich bei dir am meisten verbessert?",
+    "es": "¿Qué postura de equilibrio ha mejorado más en tu caso?",
+    "fr": "Quelle posture d'équilibre s'est le plus améliorée chez toi ?",
+    "it": "Quale posizione di equilibrio è migliorata di più per te?",
+    "pt": "Que postura de equilíbrio melhorou mais no teu caso?",
+    "pt_BR": "Qual postura de equilíbrio mais melhorou no seu caso?"
+   }
+  },
+  {
+   "id": "yoga-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which advanced pose are you working toward, and how do you prepare?",
+    "de": "Auf welche fortgeschrittene Haltung arbeitest du hin, und wie bereitest du dich vor?",
+    "es": "¿Hacia qué postura avanzada estás trabajando y cómo te preparas?",
+    "fr": "Vers quelle posture avancée travailles-tu, et comment te prépares-tu ?",
+    "it": "Verso quale posizione avanzata stai lavorando e come ti prepari?",
+    "pt": "Para que postura avançada estás a trabalhar e como te preparas?",
+    "pt_BR": "Qual postura avançada você está buscando e como se prepara?"
+   }
+  },
+  {
+   "id": "yoga-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has your idea of progress in yoga changed over time?",
+    "de": "Wie hat sich deine Vorstellung von Fortschritt im Yoga mit der Zeit verändert?",
+    "es": "¿Cómo ha cambiado con el tiempo tu idea de progreso en el yoga?",
+    "fr": "Comment ta vision du progrès en yoga a-t-elle évolué avec le temps ?",
+    "it": "Com'è cambiata nel tempo la tua idea di progresso nello yoga?",
+    "pt": "Como mudou ao longo do tempo a tua ideia de progresso no yoga?",
+    "pt_BR": "Como sua ideia de progresso no yoga mudou com o tempo?"
+   }
+  },
+  {
+   "id": "yoga-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you think makes a great yoga teacher?",
+    "de": "Was macht deiner Meinung nach eine großartige Yogalehrkraft aus?",
+    "es": "¿Qué crees que hace a un gran profesor de yoga?",
+    "fr": "Selon toi, qu'est-ce qui fait un excellent professeur de yoga ?",
+    "it": "Secondo te, che cosa rende un insegnante di yoga davvero bravo?",
+    "pt": "O que achas que faz um grande professor de yoga?",
+    "pt_BR": "O que você acha que faz um ótimo professor de yoga?"
+   }
+  },
+  {
+   "id": "yoga-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you ever like to teach yoga? What would your classes feel like?",
+    "de": "Würdest du gern mal Yoga unterrichten? Wie würden sich deine Stunden anfühlen?",
+    "es": "¿Te gustaría enseñar yoga algún día? ¿Cómo serían tus clases?",
+    "fr": "Aimerais-tu enseigner le yoga un jour ? À quoi ressembleraient tes cours ?",
+    "it": "Ti piacerebbe insegnare yoga un giorno? Come sarebbero le tue lezioni?",
+    "pt": "Gostavas de ensinar yoga um dia? Como seriam as tuas aulas?",
+    "pt_BR": "Você gostaria de dar aulas de yoga um dia? Como seriam suas aulas?"
+   }
+  },
+  {
+   "id": "yoga-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you approach inversions or arm balances with confidence?",
+    "de": "Wie gehst du Umkehrhaltungen oder Armbalancen mit Vertrauen an?",
+    "es": "¿Cómo afrontas las inversiones o los equilibrios sobre brazos con confianza?",
+    "fr": "Comment abordes-tu les inversions ou les équilibres sur les bras avec confiance ?",
+    "it": "Come affronti le inversioni o gli equilibri sulle braccia con fiducia?",
+    "pt": "Como encaras as inversões ou os equilíbrios de braços com confiança?",
+    "pt_BR": "Como você encara inversões ou equilíbrios de braço com confiança?"
+   }
+  },
+  {
+   "id": "yoga-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which classical yoga text or famous teacher would you like to study more?",
+    "de": "Welchen klassischen Yogatext oder welche bekannte Lehrperson möchtest du näher studieren?",
+    "es": "¿Qué texto clásico o maestro famoso de yoga te gustaría estudiar más?",
+    "fr": "Quel texte classique ou quel maître célèbre du yoga aimerais-tu approfondir ?",
+    "it": "Quale testo classico o maestro famoso dello yoga vorresti approfondire?",
+    "pt": "Que texto clássico ou mestre famoso do yoga gostavas de estudar mais?",
+    "pt_BR": "Qual texto clássico ou mestre famoso de yoga você gostaria de estudar mais?"
+   }
+  },
+  {
+   "id": "yoga-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance strong practices with gentle and restorative days?",
+    "de": "Wie bringst du kräftige Einheiten mit sanften und regenerativen Tagen ins Gleichgewicht?",
+    "es": "¿Cómo equilibras las prácticas intensas con días suaves y restaurativos?",
+    "fr": "Comment équilibres-tu les pratiques intenses avec des jours doux et réparateurs ?",
+    "it": "Come bilanci le pratiche intense con giorni dolci e rigenerativi?",
+    "pt": "Como equilibras as práticas intensas com dias suaves e restaurativos?",
+    "pt_BR": "Como você equilibra práticas intensas com dias leves e restaurativos?"
+   }
+  },
+  {
+   "id": "yoga-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does a longer meditation sit feel like for you now?",
+    "de": "Wie fühlt sich eine längere Meditation heute für dich an?",
+    "es": "¿Cómo vives ahora una meditación más larga?",
+    "fr": "Comment vis-tu aujourd'hui une méditation plus longue ?",
+    "it": "Come vivi adesso una meditazione più lunga?",
+    "pt": "Como vives agora uma meditação mais longa?",
+    "pt_BR": "Como é pra você hoje uma meditação mais longa?"
+   }
+  },
+  {
+   "id": "yoga-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you designed your own yoga retreat, what would the programme be?",
+    "de": "Wenn du dein eigenes Yoga-Retreat gestalten würdest, wie sähe das Programm aus?",
+    "es": "Si diseñaras tu propio retiro de yoga, ¿cuál sería el programa?",
+    "fr": "Si tu organisais ta propre retraite de yoga, quel serait le programme ?",
+    "it": "Se progettassi il tuo ritiro di yoga, quale sarebbe il programma?",
+    "pt": "Se criasses o teu próprio retiro de yoga, qual seria o programa?",
+    "pt_BR": "Se você criasse seu próprio retiro de yoga, qual seria a programação?"
+   }
+  },
+  {
+   "id": "yoga-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you bring yoga ideas into your work and relationships?",
+    "de": "Wie bringst du Yoga-Ideen in deine Arbeit und deine Beziehungen ein?",
+    "es": "¿Cómo llevas las ideas del yoga a tu trabajo y a tus relaciones?",
+    "fr": "Comment intègres-tu les idées du yoga dans ton travail et tes relations ?",
+    "it": "Come porti le idee dello yoga nel lavoro e nei rapporti con gli altri?",
+    "pt": "Como levas as ideias do yoga para o trabalho e para as tuas relações?",
+    "pt_BR": "Como você leva as ideias do yoga pro trabalho e pros seus relacionamentos?"
+   }
+  },
+  {
+   "id": "yoga-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which pose felt impossible once but is now part of your practice?",
+    "de": "Welche Haltung schien dir einst unmöglich und gehört jetzt zu deiner Praxis?",
+    "es": "¿Qué postura te parecía imposible y ahora forma parte de tu práctica?",
+    "fr": "Quelle posture te semblait impossible autrefois et fait aujourd'hui partie de ta pratique ?",
+    "it": "Quale posizione ti sembrava impossibile e ora fa parte della tua pratica?",
+    "pt": "Que postura te parecia impossível e agora faz parte da tua prática?",
+    "pt_BR": "Qual postura parecia impossível e agora faz parte da sua prática?"
+   }
+  },
+  {
+   "id": "yoga-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you explain yoga to someone who has never heard of it?",
+    "de": "Wie würdest du Yoga jemandem erklären, der noch nie davon gehört hat?",
+    "es": "¿Cómo le explicarías el yoga a alguien que nunca ha oído hablar de él?",
+    "fr": "Comment expliquerais-tu le yoga à quelqu'un qui n'en a jamais entendu parler ?",
+    "it": "Come spiegheresti lo yoga a qualcuno che non ne ha mai sentito parlare?",
+    "pt": "Como explicarias o yoga a alguém que nunca ouviu falar dele?",
+    "pt_BR": "Como você explicaria yoga pra alguém que nunca ouviu falar?"
+   }
+  },
+  {
+   "id": "yoga-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What role do you want yoga to play in your life in ten years?",
+    "de": "Welche Rolle soll Yoga in zehn Jahren in deinem Leben spielen?",
+    "es": "¿Qué papel quieres que tenga el yoga en tu vida dentro de diez años?",
+    "fr": "Quelle place veux-tu que le yoga ait dans ta vie dans dix ans ?",
+    "it": "Che ruolo vuoi che lo yoga abbia nella tua vita tra dieci anni?",
+    "pt": "Que papel queres que o yoga tenha na tua vida daqui a dez anos?",
+    "pt_BR": "Que papel você quer que o yoga tenha na sua vida daqui a dez anos?"
+   }
+  },
+  {
+   "id": "yoga-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you create your own sequences: by feel or by careful planning?",
+    "de": "Wie entwirfst du eigene Sequenzen: nach Gefühl oder mit genauer Planung?",
+    "es": "¿Cómo creas tus propias secuencias: por intuición o con una planificación cuidadosa?",
+    "fr": "Comment crées-tu tes propres séquences : au feeling ou avec une planification précise ?",
+    "it": "Come crei le tue sequenze: d'istinto o con una pianificazione attenta?",
+    "pt": "Como crias as tuas próprias sequências: por intuição ou com planeamento cuidadoso?",
+    "pt_BR": "Como você cria suas sequências: no feeling ou com planejamento cuidadoso?"
+   }
+  },
+  {
+   "id": "yoga-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What advice would you give your beginner self on day one?",
+    "de": "Welchen Rat würdest du deinem Anfänger-Ich am ersten Tag geben?",
+    "es": "¿Qué consejo le darías a tu yo principiante el primer día?",
+    "fr": "Quel conseil donnerais-tu à toi-même, débutant, le premier jour ?",
+    "it": "Che consiglio daresti al te principiante del primo giorno?",
+    "pt": "Que conselho darias ao teu eu principiante no primeiro dia?",
+    "pt_BR": "Que conselho você daria pro seu eu iniciante no primeiro dia?"
+   }
+  }
+ ]
+}

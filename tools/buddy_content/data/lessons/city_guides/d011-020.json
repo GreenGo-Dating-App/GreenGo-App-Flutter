@@ -1,0 +1,835 @@
+{
+ "topic": "city_guides",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Residential districts",
+     "g": "Find out where locals live, shop and relax, and why these areas are worth a visit.",
+     "p": [
+      "Residential areas show daily life: school runs, corner shops, laundries and neighbours chatting.",
+      "Prices in cafés and bakeries are often lower than in the centre, and the food is made for locals.",
+      "Weekend mornings are lovely here: markets, families in the park and people walking their dogs."
+     ],
+     "q": "What does a typical street look like in the area where you live?",
+     "c": "Pick a residential district you don't know and plan a coffee stop there this week."
+    },
+    "de": {
+     "t": "Wohnviertel",
+     "g": "Finde heraus, wo Einheimische wohnen, einkaufen und entspannen, und warum sich ein Besuch lohnt.",
+     "p": [
+      "Wohnviertel zeigen den Alltag: Schulwege, Eckläden, Waschsalons und plaudernde Nachbarn.",
+      "In Cafés und Bäckereien ist es oft günstiger als im Zentrum, und das Essen ist für Einheimische gemacht.",
+      "Am Wochenende morgens ist es hier schön: Märkte, Familien im Park und Leute mit ihren Hunden."
+     ],
+     "q": "Wie sieht eine typische Straße in deiner Wohngegend aus?",
+     "c": "Wähle ein Wohnviertel, das du nicht kennst, und plane diese Woche dort einen Kaffee ein."
+    },
+    "es": {
+     "t": "Barrios residenciales",
+     "g": "Descubre dónde viven, compran y se relajan los vecinos, y por qué merece la pena visitar estas zonas.",
+     "p": [
+      "Los barrios residenciales muestran la vida diaria: la salida del cole, tiendas de barrio y vecinos charlando.",
+      "Los cafés y panaderías suelen ser más baratos que en el centro, y la comida está pensada para los vecinos.",
+      "Las mañanas de fin de semana son preciosas: mercados, familias en el parque y gente paseando al perro."
+     ],
+     "q": "¿Cómo es una calle típica de la zona donde vives?",
+     "c": "Elige un barrio residencial que no conozcas y planea tomar un café allí esta semana."
+    },
+    "fr": {
+     "t": "Les quartiers résidentiels",
+     "g": "Découvre où les habitants vivent, font leurs courses et se détendent, et pourquoi ces quartiers valent le détour.",
+     "p": [
+      "Les quartiers résidentiels montrent la vie quotidienne : sorties d'école, épiceries, laveries et voisins qui discutent.",
+      "Cafés et boulangeries y sont souvent moins chers qu'au centre, et la cuisine est faite pour les habitants.",
+      "Le week-end matin, c'est charmant : marchés, familles au parc et promeneurs de chiens."
+     ],
+     "q": "À quoi ressemble une rue typique de ton quartier ?",
+     "c": "Choisis un quartier résidentiel que tu ne connais pas et prévois d'y prendre un café cette semaine."
+    },
+    "it": {
+     "t": "I quartieri residenziali",
+     "g": "Scopri dove la gente del posto vive, fa la spesa e si rilassa, e perché vale la pena visitare queste zone.",
+     "p": [
+      "I quartieri residenziali mostrano la vita quotidiana: l'uscita da scuola, botteghe, lavanderie e vicini che chiacchierano.",
+      "Bar e forni costano spesso meno che in centro e il cibo è pensato per chi ci abita.",
+      "Il sabato e la domenica mattina sono belli: mercati, famiglie al parco e persone a spasso con il cane."
+     ],
+     "q": "Com'è una via tipica della zona in cui vivi?",
+     "c": "Scegli un quartiere residenziale che non conosci e organizza lì un caffè questa settimana."
+    },
+    "pt": {
+     "t": "Bairros residenciais",
+     "g": "Descobre onde os moradores vivem, fazem compras e descansam, e porque vale a pena visitar estas zonas.",
+     "p": [
+      "Os bairros residenciais mostram o dia a dia: a saída da escola, mercearias, lavandarias e vizinhos à conversa.",
+      "Os cafés e pastelarias costumam ser mais baratos do que no centro, e a comida é feita para quem lá vive.",
+      "As manhãs de fim de semana são ótimas: mercados, famílias no jardim e pessoas a passear o cão."
+     ],
+     "q": "Como é uma rua típica da zona onde vives?",
+     "c": "Escolhe um bairro residencial que não conheces e planeia tomar lá um café esta semana."
+    },
+    "pt_BR": {
+     "t": "Bairros residenciais",
+     "g": "Descubra onde os moradores vivem, compram e relaxam, e por que vale a pena visitar essas regiões.",
+     "p": [
+      "Os bairros residenciais mostram o dia a dia: saída da escola, mercadinhos, lavanderias e vizinhos batendo papo.",
+      "Cafés e padarias costumam ser mais baratos que no centro, e a comida é feita para quem mora ali.",
+      "As manhãs de fim de semana são ótimas: feiras, famílias na praça e gente passeando com o cachorro."
+     ],
+     "q": "Como é uma rua típica da região onde você mora?",
+     "c": "Escolha um bairro residencial que você não conhece e planeje tomar um café lá esta semana."
+    }
+   }
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Waterfronts and riversides",
+     "g": "See how harbours, rivers and promenades become the social heart of many cities.",
+     "p": [
+      "Most great cities grew beside water, because rivers and ports brought trade, food and travellers.",
+      "The banks of the Seine in Paris are a UNESCO World Heritage Site; Sydney's harbour is its icon.",
+      "Old docks are often reborn as promenades, museums and cafés, ideal for a sunset walk."
+     ],
+     "q": "Is there a river, lake or sea in your city, and what do people do there?",
+     "c": "Find the nearest waterfront to you and plan a walk along it at sunset."
+    },
+    "de": {
+     "t": "Ufer und Hafenpromenaden",
+     "g": "Sieh, wie Häfen, Flüsse und Promenaden zum geselligen Herz vieler Städte werden.",
+     "p": [
+      "Die meisten großen Städte wuchsen am Wasser, denn Flüsse und Häfen brachten Handel, Essen und Reisende.",
+      "Die Seineufer in Paris sind UNESCO-Welterbe, und der Hafen von Sydney ist das Wahrzeichen der Stadt.",
+      "Alte Docks werden oft zu Promenaden, Museen und Cafés, perfekt für einen Spaziergang bei Sonnenuntergang."
+     ],
+     "q": "Gibt es in deiner Stadt einen Fluss, See oder das Meer, und was machen die Leute dort?",
+     "c": "Finde das nächste Ufer in deiner Nähe und plane dort einen Spaziergang bei Sonnenuntergang."
+    },
+    "es": {
+     "t": "Paseos marítimos y riberas",
+     "g": "Descubre cómo puertos, ríos y paseos se convierten en el corazón social de muchas ciudades.",
+     "p": [
+      "Casi todas las grandes ciudades nacieron junto al agua: ríos y puertos traían comercio, comida y viajeros.",
+      "Las orillas del Sena en París son Patrimonio de la Humanidad, y el puerto de Sídney es su gran icono.",
+      "Los viejos muelles renacen a menudo como paseos, museos y cafés, ideales para pasear al atardecer."
+     ],
+     "q": "¿Hay un río, un lago o el mar en tu ciudad? ¿Qué hace allí la gente?",
+     "c": "Busca la orilla más cercana y planea un paseo por ella al atardecer."
+    },
+    "fr": {
+     "t": "Quais et bords de l'eau",
+     "g": "Vois comment ports, fleuves et promenades deviennent le cœur social de nombreuses villes.",
+     "p": [
+      "La plupart des grandes villes sont nées au bord de l'eau : fleuves et ports apportaient commerce, vivres et voyageurs.",
+      "Les rives de la Seine à Paris sont inscrites au patrimoine mondial de l'UNESCO ; le port de Sydney est son emblème.",
+      "Les anciens docks renaissent souvent en promenades, musées et cafés, parfaits au coucher du soleil."
+     ],
+     "q": "Y a-t-il un fleuve, un lac ou la mer dans ta ville, et qu'y font les gens ?",
+     "c": "Trouve le bord de l'eau le plus proche et prévois d'y marcher au coucher du soleil."
+    },
+    "it": {
+     "t": "Lungomari e lungofiumi",
+     "g": "Scopri come porti, fiumi e passeggiate diventano il cuore sociale di molte città.",
+     "p": [
+      "Quasi tutte le grandi città sono nate vicino all'acqua: fiumi e porti portavano commerci, cibo e viaggiatori.",
+      "Le rive della Senna a Parigi sono Patrimonio UNESCO e il porto di Sydney è il simbolo della città.",
+      "I vecchi moli rinascono spesso come passeggiate, musei e caffè, ideali per una camminata al tramonto."
+     ],
+     "q": "Nella tua città c'è un fiume, un lago o il mare? Che cosa ci fa la gente?",
+     "c": "Trova la riva più vicina a te e organizza una passeggiata lì al tramonto."
+    },
+    "pt": {
+     "t": "Frentes ribeirinhas e marginais",
+     "g": "Vê como portos, rios e passeios se tornam o coração social de muitas cidades.",
+     "p": [
+      "A maioria das grandes cidades nasceu junto à água: rios e portos traziam comércio, comida e viajantes.",
+      "As margens do Sena em Paris são Património Mundial da UNESCO; o porto de Sydney é o seu ícone.",
+      "As antigas docas renascem muitas vezes como passeios, museus e cafés, ideais ao pôr do sol."
+     ],
+     "q": "Há um rio, um lago ou o mar na tua cidade, e o que fazem lá as pessoas?",
+     "c": "Descobre a margem mais perto de ti e planeia um passeio por lá ao pôr do sol."
+    },
+    "pt_BR": {
+     "t": "Orlas e beira-rio",
+     "g": "Veja como portos, rios e calçadões viram o coração social de muitas cidades.",
+     "p": [
+      "A maioria das grandes cidades nasceu perto da água: rios e portos traziam comércio, comida e viajantes.",
+      "As margens do Sena, em Paris, são Patrimônio Mundial da UNESCO; o porto de Sydney é o símbolo da cidade.",
+      "Antigas docas muitas vezes renascem como calçadões, museus e cafés, perfeitos para o pôr do sol."
+     ],
+     "q": "Tem rio, lago ou mar na sua cidade? O que as pessoas fazem lá?",
+     "c": "Encontre a orla mais perto de você e planeje uma caminhada por lá no pôr do sol."
+    }
+   }
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: maps and neighbourhoods",
+     "g": "Recap orientation, maps and the main types of city districts.",
+     "p": [
+      "Orientation: sun in the east at sunrise, a river or hill as reference, and two or three landmark anchors.",
+      "Maps: paper for the big picture, phone for live position, offline maps saved before you go.",
+      "Districts: historic centre, business district, residential areas and waterfront, each with its own mood."
+     ],
+     "q": "Which type of district from these lessons would you explore first in a new city?",
+     "c": "Sketch a simple map of your city from memory with its centre, one landmark and its water or hills."
+    },
+    "de": {
+     "t": "Wiederholung: Karten und Viertel",
+     "g": "Wiederhole Orientierung, Karten und die wichtigsten Arten von Stadtvierteln.",
+     "p": [
+      "Orientierung: Sonne morgens im Osten, Fluss oder Hügel als Bezug und zwei, drei Wahrzeichen als Anker.",
+      "Karten: Papier für den Überblick, Handy für den Standort, Offline-Karten vor der Reise speichern.",
+      "Viertel: Altstadt, Geschäftsviertel, Wohnviertel und Ufer, jedes mit eigener Stimmung."
+     ],
+     "q": "Welche Art von Viertel aus diesen Lektionen würdest du in einer neuen Stadt zuerst erkunden?",
+     "c": "Zeichne aus dem Gedächtnis einen einfachen Plan deiner Stadt mit Zentrum, einem Wahrzeichen und Wasser oder Hügeln."
+    },
+    "es": {
+     "t": "Repaso: mapas y barrios",
+     "g": "Repasa la orientación, los mapas y los principales tipos de barrios de una ciudad.",
+     "p": [
+      "Orientación: el sol sale por el este, un río o una colina como referencia y dos o tres monumentos como anclas.",
+      "Mapas: el papel para la visión general, el móvil para tu posición y los mapas sin conexión descargados antes.",
+      "Barrios: casco histórico, distrito financiero, zonas residenciales y ribera, cada uno con su ambiente."
+     ],
+     "q": "¿Qué tipo de barrio de estas lecciones explorarías primero en una ciudad nueva?",
+     "c": "Dibuja de memoria un mapa sencillo de tu ciudad con el centro, un monumento y su agua o colinas."
+    },
+    "fr": {
+     "t": "Révision : plans et quartiers",
+     "g": "Révise l'orientation, les plans et les grands types de quartiers urbains.",
+     "p": [
+      "Orientation : soleil à l'est au lever, un fleuve ou une colline comme repère, et deux ou trois monuments ancres.",
+      "Cartes : le papier pour la vue d'ensemble, le téléphone pour ta position, les cartes hors ligne prêtes avant.",
+      "Quartiers : centre historique, quartier d'affaires, zones résidentielles et bords de l'eau, chacun son ambiance."
+     ],
+     "q": "Quel type de quartier vu dans ces leçons explorerais-tu en premier dans une nouvelle ville ?",
+     "c": "Dessine de mémoire un plan simple de ta ville avec le centre, un monument et son eau ou ses collines."
+    },
+    "it": {
+     "t": "Ripasso: mappe e quartieri",
+     "g": "Ripassa l'orientamento, le mappe e i principali tipi di quartiere.",
+     "p": [
+      "Orientamento: il sole sorge a est, un fiume o una collina come riferimento e due o tre monumenti come ancore.",
+      "Mappe: la carta per la visione d'insieme, il telefono per la posizione, le mappe offline salvate prima.",
+      "Quartieri: centro storico, quartiere degli affari, zone residenziali e lungofiume, ognuno con la sua atmosfera."
+     ],
+     "q": "Quale tipo di quartiere di queste lezioni esploreresti per primo in una città nuova?",
+     "c": "Disegna a memoria una mappa semplice della tua città con il centro, un monumento e l'acqua o le colline."
+    },
+    "pt": {
+     "t": "Revisão: mapas e bairros",
+     "g": "Revê a orientação, os mapas e os principais tipos de bairros de uma cidade.",
+     "p": [
+      "Orientação: o sol nasce a leste, um rio ou uma colina como referência e dois ou três monumentos como âncoras.",
+      "Mapas: papel para a visão geral, telemóvel para a tua posição e mapas offline guardados antes de partir.",
+      "Bairros: centro histórico, zona de negócios, zonas residenciais e frente ribeirinha, cada um com o seu ambiente."
+     ],
+     "q": "Que tipo de bairro destas lições explorarias primeiro numa cidade nova?",
+     "c": "Desenha de memória um mapa simples da tua cidade com o centro, um monumento e a água ou as colinas."
+    },
+    "pt_BR": {
+     "t": "Revisão: mapas e bairros",
+     "g": "Revise orientação, mapas e os principais tipos de bairros de uma cidade.",
+     "p": [
+      "Orientação: o sol nasce no leste, um rio ou morro como referência e dois ou três pontos turísticos como âncoras.",
+      "Mapas: papel para a visão geral, celular para sua posição e mapas offline baixados antes da viagem.",
+      "Bairros: centro histórico, centro financeiro, áreas residenciais e orla, cada um com seu clima."
+     ],
+     "q": "Que tipo de bairro destas lições você exploraria primeiro numa cidade nova?",
+     "c": "Desenhe de memória um mapa simples da sua cidade com o centro, um ponto turístico e a água ou os morros."
+    }
+   }
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Walking: the best way to see a city",
+     "g": "Learn why walking reveals details, sounds and smells you miss on wheels.",
+     "p": [
+      "At about five kilometres an hour you have time to notice doorways, signs, smells and street music.",
+      "You can stop anywhere: a shop window, a tiny church or a bakery that smells too good to pass.",
+      "Walking also shows you how areas connect, so the city's map slowly builds up in your head."
+     ],
+     "q": "What is the best thing you ever discovered just by walking?",
+     "c": "Leave the bus or car behind for one trip today and walk it, noting one surprise along the way."
+    },
+    "de": {
+     "t": "Zu Fuß: die beste Art, eine Stadt zu sehen",
+     "g": "Erfahre, warum du zu Fuß Details, Geräusche und Gerüche entdeckst, die dir auf Rädern entgehen.",
+     "p": [
+      "Bei etwa fünf Kilometern pro Stunde bemerkst du Hauseingänge, Schilder, Düfte und Straßenmusik.",
+      "Du kannst überall anhalten: an einem Schaufenster, einer kleinen Kirche oder einer duftenden Bäckerei.",
+      "Zu Fuß siehst du auch, wie Viertel zusammenhängen, so entsteht der Stadtplan langsam in deinem Kopf."
+     ],
+     "q": "Was ist das Schönste, das du je einfach beim Gehen entdeckt hast?",
+     "c": "Lass heute für eine Strecke Bus oder Auto stehen, geh zu Fuß und notiere eine Überraschung."
+    },
+    "es": {
+     "t": "Caminar: la mejor forma de ver una ciudad",
+     "g": "Descubre por qué caminar revela detalles, sonidos y olores que te pierdes sobre ruedas.",
+     "p": [
+      "A unos cinco kilómetros por hora tienes tiempo de ver portales, letreros, olores y música callejera.",
+      "Puedes parar donde quieras: un escaparate, una iglesia pequeña o una panadería que huele de maravilla.",
+      "Caminar también te enseña cómo se conectan las zonas, y el mapa de la ciudad se forma poco a poco en tu cabeza."
+     ],
+     "q": "¿Qué es lo mejor que has descubierto solo por ir caminando?",
+     "c": "Deja hoy el bus o el coche en un trayecto, hazlo a pie y apunta una sorpresa del camino."
+    },
+    "fr": {
+     "t": "La marche : la meilleure façon de voir une ville",
+     "g": "Découvre pourquoi marcher révèle des détails, des sons et des odeurs qu'on rate sur roues.",
+     "p": [
+      "À environ cinq kilomètres à l'heure, tu remarques porches, enseignes, odeurs et musiciens de rue.",
+      "Tu peux t'arrêter partout : une vitrine, une petite église ou une boulangerie qui sent trop bon.",
+      "Marcher montre aussi comment les quartiers se relient, et le plan de la ville se construit dans ta tête."
+     ],
+     "q": "Quelle est la plus belle chose que tu aies découverte simplement en marchant ?",
+     "c": "Laisse le bus ou la voiture pour un trajet aujourd'hui, fais-le à pied et note une surprise en route."
+    },
+    "it": {
+     "t": "Camminare: il modo migliore per vedere una città",
+     "g": "Scopri perché camminando noti dettagli, suoni e profumi che ti perdi su ruote.",
+     "p": [
+      "A circa cinque chilometri all'ora hai il tempo di notare portoni, insegne, profumi e musica di strada.",
+      "Puoi fermarti ovunque: una vetrina, una chiesetta o un forno che profuma troppo per tirare dritto.",
+      "Camminando vedi anche come si collegano le zone, e la mappa della città si forma pian piano nella tua testa."
+     ],
+     "q": "Qual è la cosa più bella che hai scoperto semplicemente camminando?",
+     "c": "Oggi lascia autobus o auto per un tragitto, fallo a piedi e annota una sorpresa lungo la strada."
+    },
+    "pt": {
+     "t": "Caminhar: a melhor forma de ver uma cidade",
+     "g": "Descobre porque caminhar revela pormenores, sons e cheiros que perdes sobre rodas.",
+     "p": [
+      "A cerca de cinco quilómetros por hora tens tempo para reparar em portas, letreiros, cheiros e música de rua.",
+      "Podes parar onde quiseres: uma montra, uma igreja pequena ou uma pastelaria que cheira bem demais.",
+      "Caminhar mostra também como as zonas se ligam, e o mapa da cidade vai-se formando na tua cabeça."
+     ],
+     "q": "Qual foi a melhor coisa que já descobriste só por andar a pé?",
+     "c": "Deixa hoje o autocarro ou o carro num trajeto, fá-lo a pé e aponta uma surpresa pelo caminho."
+    },
+    "pt_BR": {
+     "t": "Caminhar: o melhor jeito de conhecer uma cidade",
+     "g": "Descubra por que caminhar revela detalhes, sons e cheiros que você perde sobre rodas.",
+     "p": [
+      "A uns cinco quilômetros por hora dá tempo de reparar em portas, placas, cheiros e música de rua.",
+      "Você pode parar onde quiser: uma vitrine, uma igrejinha ou uma padaria com um cheiro irresistível.",
+      "Caminhar também mostra como as regiões se ligam, e o mapa da cidade vai se formando na sua cabeça."
+     ],
+     "q": "Qual foi a melhor coisa que você já descobriu só andando a pé?",
+     "c": "Deixe hoje o ônibus ou o carro de lado em um trajeto, vá a pé e anote uma surpresa no caminho."
+    }
+   }
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Planning a first walk",
+     "g": "Plan a two to three hour loop with a start, a highlight and a break.",
+     "p": [
+      "Pick a start that is easy to reach, like a station or a main square, and end back near it.",
+      "Put one highlight in the middle, such as a viewpoint, a market or a famous building.",
+      "Plan a break for coffee or a snack; walking about five kilometres with stops fits nicely in three hours."
+     ],
+     "q": "If you planned a walk in your city for a visitor, where would it start?",
+     "c": "Draw a loop of about five kilometres on a map with one start, one highlight and one café stop."
+    },
+    "de": {
+     "t": "Den ersten Spaziergang planen",
+     "g": "Plane eine Runde von zwei bis drei Stunden mit Startpunkt, Höhepunkt und Pause.",
+     "p": [
+      "Wähle einen gut erreichbaren Start, etwa einen Bahnhof oder Hauptplatz, und ende wieder in seiner Nähe.",
+      "Setz einen Höhepunkt in die Mitte, zum Beispiel einen Aussichtspunkt, einen Markt oder ein berühmtes Gebäude.",
+      "Plane eine Kaffee- oder Snackpause ein; rund fünf Kilometer mit Stopps passen gut in drei Stunden."
+     ],
+     "q": "Wenn du für einen Gast einen Spaziergang in deiner Stadt planst, wo würde er beginnen?",
+     "c": "Zeichne eine Runde von etwa fünf Kilometern mit Start, Höhepunkt und Café-Stopp auf eine Karte."
+    },
+    "es": {
+     "t": "Planificar un primer paseo",
+     "g": "Planifica una ruta circular de dos a tres horas con un inicio, un momento estrella y una pausa.",
+     "p": [
+      "Elige un inicio fácil de alcanzar, como una estación o una plaza principal, y termina cerca de él.",
+      "Pon un momento estrella en medio, como un mirador, un mercado o un edificio famoso.",
+      "Prevé una pausa para un café o un tentempié; unos cinco kilómetros con paradas caben bien en tres horas."
+     ],
+     "q": "Si planificaras un paseo por tu ciudad para un visitante, ¿dónde empezaría?",
+     "c": "Traza en un mapa un circuito de unos cinco kilómetros con inicio, momento estrella y parada en un café."
+    },
+    "fr": {
+     "t": "Préparer une première balade",
+     "g": "Prépare une boucle de deux à trois heures avec un départ, un temps fort et une pause.",
+     "p": [
+      "Choisis un départ facile d'accès, comme une gare ou une place principale, et reviens près de lui à la fin.",
+      "Place un temps fort au milieu : un point de vue, un marché ou un bâtiment célèbre.",
+      "Prévois une pause café ou en-cas ; environ cinq kilomètres avec des arrêts tiennent bien en trois heures."
+     ],
+     "q": "Si tu préparais une balade dans ta ville pour un visiteur, où commencerait-elle ?",
+     "c": "Trace sur un plan une boucle d'environ cinq kilomètres avec un départ, un temps fort et un café."
+    },
+    "it": {
+     "t": "Pianificare la prima passeggiata",
+     "g": "Pianifica un giro ad anello di due o tre ore con una partenza, un momento clou e una pausa.",
+     "p": [
+      "Scegli una partenza facile da raggiungere, come una stazione o una piazza principale, e finisci lì vicino.",
+      "Metti un momento clou a metà strada: un belvedere, un mercato o un edificio famoso.",
+      "Prevedi una pausa per un caffè o uno spuntino; circa cinque chilometri con soste stanno bene in tre ore."
+     ],
+     "q": "Se dovessi organizzare una passeggiata nella tua città per un ospite, da dove partiresti?",
+     "c": "Disegna su una mappa un anello di circa cinque chilometri con partenza, momento clou e sosta al bar."
+    },
+    "pt": {
+     "t": "Planear um primeiro passeio",
+     "g": "Planeia um percurso circular de duas a três horas com um início, um ponto alto e uma pausa.",
+     "p": [
+      "Escolhe um início fácil de alcançar, como uma estação ou uma praça principal, e termina perto dele.",
+      "Coloca um ponto alto a meio, como um miradouro, um mercado ou um edifício famoso.",
+      "Prevê uma pausa para um café ou um lanche; cerca de cinco quilómetros com paragens cabem bem em três horas."
+     ],
+     "q": "Se planeasses um passeio pela tua cidade para um visitante, onde começaria?",
+     "c": "Desenha num mapa um circuito de uns cinco quilómetros com início, ponto alto e paragem para café."
+    },
+    "pt_BR": {
+     "t": "Planejando o primeiro passeio",
+     "g": "Planeje um circuito de duas a três horas com um início, um ponto alto e uma pausa.",
+     "p": [
+      "Escolha um início fácil de chegar, como uma estação ou uma praça central, e termine perto dele.",
+      "Coloque um ponto alto no meio do caminho, como um mirante, um mercado ou um prédio famoso.",
+      "Reserve uma pausa para café ou lanche; uns cinco quilômetros com paradas cabem bem em três horas."
+     ],
+     "q": "Se você planejasse um passeio na sua cidade para um visitante, onde ele começaria?",
+     "c": "Trace num mapa um circuito de uns cinco quilômetros com início, ponto alto e parada para café."
+    }
+   }
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Public transport basics",
+     "g": "Learn what buses, trams, metros and trains are each best for.",
+     "p": [
+      "Metros are fast and frequent and avoid traffic: perfect for crossing a big city quickly.",
+      "Buses and trams stop more often and stay above ground, so you see the streets as you ride.",
+      "Suburban and regional trains cover longer distances, for day trips or reaching the airport."
+     ],
+     "q": "Which kind of public transport do you use most, and what do you like about it?",
+     "c": "Look up your city's transport network and find which line would take you to the centre fastest."
+    },
+    "de": {
+     "t": "Grundlagen des Nahverkehrs",
+     "g": "Lerne, wofür Bus, Straßenbahn, U-Bahn und Zug jeweils am besten geeignet sind.",
+     "p": [
+      "U-Bahnen sind schnell, fahren oft und umgehen den Verkehr, ideal, um eine Großstadt zu durchqueren.",
+      "Busse und Straßenbahnen halten öfter und fahren oberirdisch, so siehst du die Straßen unterwegs.",
+      "S-Bahnen und Regionalzüge fahren weitere Strecken, etwa für Tagesausflüge oder zum Flughafen."
+     ],
+     "q": "Welches Verkehrsmittel nutzt du am meisten, und was gefällt dir daran?",
+     "c": "Schau dir das Verkehrsnetz deiner Stadt an und finde die schnellste Linie ins Zentrum."
+    },
+    "es": {
+     "t": "Transporte público básico",
+     "g": "Aprende para qué sirve mejor cada medio: autobús, tranvía, metro y tren.",
+     "p": [
+      "El metro es rápido, frecuente y evita el tráfico: perfecto para cruzar una gran ciudad en poco tiempo.",
+      "Autobuses y tranvías paran más a menudo y van por la superficie, así ves las calles mientras viajas.",
+      "Los trenes de cercanías y regionales cubren distancias largas, para excursiones o llegar al aeropuerto."
+     ],
+     "q": "¿Qué transporte público usas más y qué te gusta de él?",
+     "c": "Consulta la red de transporte de tu ciudad y busca qué línea te lleva antes al centro."
+    },
+    "fr": {
+     "t": "Les bases des transports en commun",
+     "g": "Apprends à quoi servent le mieux le bus, le tramway, le métro et le train.",
+     "p": [
+      "Le métro est rapide, fréquent et évite les bouchons : parfait pour traverser une grande ville vite.",
+      "Bus et tramways s'arrêtent plus souvent et roulent en surface, tu vois donc les rues en chemin.",
+      "Les trains de banlieue et régionaux couvrent de plus longues distances, pour une excursion ou l'aéroport."
+     ],
+     "q": "Quel transport en commun utilises-tu le plus, et qu'est-ce que tu aimes chez lui ?",
+     "c": "Consulte le réseau de ta ville et trouve la ligne la plus rapide pour aller au centre."
+    },
+    "it": {
+     "t": "Le basi dei trasporti pubblici",
+     "g": "Impara a cosa servono meglio autobus, tram, metropolitana e treno.",
+     "p": [
+      "La metro è veloce, frequente ed evita il traffico: perfetta per attraversare in fretta una grande città.",
+      "Autobus e tram fermano più spesso e viaggiano in superficie, così vedi le strade mentre ti sposti.",
+      "I treni suburbani e regionali coprono distanze lunghe, per gite fuori porta o per l'aeroporto."
+     ],
+     "q": "Quale mezzo pubblico usi di più e che cosa ti piace?",
+     "c": "Consulta la rete dei trasporti della tua città e trova la linea più veloce per il centro."
+    },
+    "pt": {
+     "t": "Noções de transportes públicos",
+     "g": "Aprende para que serve melhor cada meio: autocarro, elétrico, metro e comboio.",
+     "p": [
+      "O metro é rápido, frequente e evita o trânsito: perfeito para atravessar depressa uma grande cidade.",
+      "Autocarros e elétricos param mais vezes e andam à superfície, por isso vês as ruas pelo caminho.",
+      "Os comboios suburbanos e regionais fazem distâncias maiores, para passeios ou para chegar ao aeroporto."
+     ],
+     "q": "Que transporte público usas mais, e o que gostas nele?",
+     "c": "Consulta a rede de transportes da tua cidade e descobre a linha mais rápida até ao centro."
+    },
+    "pt_BR": {
+     "t": "Noções de transporte público",
+     "g": "Aprenda para que serve melhor cada meio: ônibus, bonde, metrô e trem.",
+     "p": [
+      "O metrô é rápido, frequente e foge do trânsito: perfeito para cruzar uma cidade grande depressa.",
+      "Ônibus e bondes param mais vezes e andam na superfície, então você vê as ruas no caminho.",
+      "Trens metropolitanos e regionais cobrem distâncias maiores, para passeios ou para chegar ao aeroporto."
+     ],
+     "q": "Que transporte público você usa mais, e do que gosta nele?",
+     "c": "Consulte a rede de transporte da sua cidade e descubra a linha mais rápida até o centro."
+    }
+   }
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a metro map",
+     "g": "Understand lines, colours, interchanges and directions named after the final stop.",
+     "p": [
+      "Metro maps are diagrams, not true maps: Harry Beck's 1931 London design made straight lines the norm.",
+      "Each line has a colour or number; an interchange is a station where two or more lines meet.",
+      "Direction is shown by the final stop of the line, so know the terminus before you go down."
+     ],
+     "q": "Have you ever taken a metro in the wrong direction? What happened?",
+     "c": "Pick two stations on a metro map and plan the route, with line, direction and any change."
+    },
+    "de": {
+     "t": "Einen U-Bahn-Plan lesen",
+     "g": "Verstehe Linien, Farben, Umsteigestationen und Richtungen, die nach der Endstation benannt sind.",
+     "p": [
+      "U-Bahn-Pläne sind Schemata, keine echten Karten: Harry Becks Londoner Plan von 1931 setzte gerade Linien durch.",
+      "Jede Linie hat eine Farbe oder Nummer; an Umsteigestationen treffen sich zwei oder mehr Linien.",
+      "Die Richtung wird mit der Endstation angegeben, also kenn die Endstation, bevor du hinuntergehst."
+     ],
+     "q": "Bist du schon mal in die falsche Richtung gefahren? Was ist passiert?",
+     "c": "Wähle zwei Stationen auf einem U-Bahn-Plan und plane die Route mit Linie, Richtung und Umstieg."
+    },
+    "es": {
+     "t": "Leer un plano de metro",
+     "g": "Entiende líneas, colores, transbordos y direcciones que llevan el nombre de la última parada.",
+     "p": [
+      "Los planos de metro son esquemas, no mapas reales: el diseño de Harry Beck para Londres en 1931 impuso las líneas rectas.",
+      "Cada línea tiene un color o número; un transbordo es una estación donde se cruzan dos o más líneas.",
+      "La dirección se indica con la parada final de la línea: conócela antes de bajar al andén."
+     ],
+     "q": "¿Alguna vez cogiste el metro en dirección contraria? ¿Qué pasó?",
+     "c": "Elige dos estaciones en un plano de metro y planifica la ruta con línea, dirección y transbordo."
+    },
+    "fr": {
+     "t": "Lire un plan de métro",
+     "g": "Comprends lignes, couleurs, correspondances et directions nommées d'après le terminus.",
+     "p": [
+      "Les plans de métro sont des schémas, pas de vraies cartes : celui de Harry Beck pour Londres en 1931 a imposé les lignes droites.",
+      "Chaque ligne a une couleur ou un numéro ; une correspondance est une station où se croisent plusieurs lignes.",
+      "La direction porte le nom du terminus de la ligne : repère-le avant de descendre sur le quai."
+     ],
+     "q": "T'es-tu déjà trompé de direction dans le métro ? Que s'est-il passé ?",
+     "c": "Choisis deux stations sur un plan de métro et prépare le trajet : ligne, direction et correspondance."
+    },
+    "it": {
+     "t": "Leggere una mappa della metro",
+     "g": "Capisci linee, colori, coincidenze e direzioni indicate con il capolinea.",
+     "p": [
+      "Le mappe della metro sono schemi, non vere mappe: il disegno di Harry Beck per Londra del 1931 impose le linee dritte.",
+      "Ogni linea ha un colore o un numero; una stazione di scambio è dove si incrociano due o più linee.",
+      "La direzione si indica con il capolinea della linea: conoscilo prima di scendere in banchina."
+     ],
+     "q": "Ti è mai capitato di prendere la metro nella direzione sbagliata? Com'è andata?",
+     "c": "Scegli due stazioni su una mappa della metro e pianifica il percorso con linea, direzione e cambio."
+    },
+    "pt": {
+     "t": "Ler um mapa de metro",
+     "g": "Percebe linhas, cores, correspondências e sentidos indicados pela última estação.",
+     "p": [
+      "Os mapas de metro são esquemas, não mapas reais: o desenho de Harry Beck para Londres em 1931 impôs as linhas retas.",
+      "Cada linha tem uma cor ou número; uma correspondência é uma estação onde se cruzam duas ou mais linhas.",
+      "O sentido é indicado pela estação terminal da linha: sabe qual é antes de desceres ao cais."
+     ],
+     "q": "Já apanhaste o metro no sentido errado? O que aconteceu?",
+     "c": "Escolhe duas estações num mapa de metro e planeia o percurso com linha, sentido e correspondência."
+    },
+    "pt_BR": {
+     "t": "Lendo o mapa do metrô",
+     "g": "Entenda linhas, cores, baldeações e sentidos indicados pela estação final.",
+     "p": [
+      "Mapas de metrô são esquemas, não mapas reais: o desenho de Harry Beck para Londres, em 1931, consagrou as linhas retas.",
+      "Cada linha tem uma cor ou número; uma baldeação é uma estação onde se cruzam duas ou mais linhas.",
+      "O sentido é indicado pela última estação da linha: saiba qual é antes de descer para a plataforma."
+     ],
+     "q": "Você já pegou o metrô no sentido errado? O que aconteceu?",
+     "c": "Escolha duas estações num mapa de metrô e planeje o trajeto com linha, sentido e baldeação."
+    }
+   }
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Tickets, passes and cards",
+     "g": "Learn how single tickets, day passes and contactless cards work in fare systems.",
+     "p": [
+      "A single ticket suits one or two rides; a day or week pass pays off if you travel several times.",
+      "Many cities use smart cards: Hong Kong's Octopus card, launched in 1997, was one of the first.",
+      "In many cities you can now tap a contactless bank card or phone at the gate instead of buying a ticket."
+     ],
+     "q": "How do you usually pay for public transport where you live?",
+     "c": "Look up the fares in a city you want to visit and decide if a single ticket or a day pass is better."
+    },
+    "de": {
+     "t": "Tickets, Pässe und Karten",
+     "g": "Lerne, wie Einzeltickets, Tageskarten und kontaktlose Karten in Tarifsystemen funktionieren.",
+     "p": [
+      "Ein Einzelticket passt für ein, zwei Fahrten; eine Tages- oder Wochenkarte lohnt sich bei vielen Fahrten.",
+      "Viele Städte nutzen Chipkarten: Die Octopus-Karte in Hongkong, eingeführt 1997, war eine der ersten.",
+      "In vielen Städten hältst du heute einfach eine kontaktlose Bankkarte oder das Handy an das Lesegerät."
+     ],
+     "q": "Wie bezahlst du bei dir normalerweise den Nahverkehr?",
+     "c": "Schau dir die Tarife einer Wunschstadt an und entscheide, ob Einzelticket oder Tageskarte besser ist."
+    },
+    "es": {
+     "t": "Billetes, abonos y tarjetas",
+     "g": "Aprende cómo funcionan los billetes sencillos, los abonos de un día y las tarjetas sin contacto.",
+     "p": [
+      "Un billete sencillo sirve para uno o dos viajes; un abono diario o semanal compensa si viajas varias veces.",
+      "Muchas ciudades usan tarjetas inteligentes: la Octopus de Hong Kong, lanzada en 1997, fue de las primeras.",
+      "En muchas ciudades ya puedes pasar una tarjeta bancaria sin contacto o el móvil en el torno."
+     ],
+     "q": "¿Cómo sueles pagar el transporte público donde vives?",
+     "c": "Consulta las tarifas de una ciudad que quieras visitar y decide si te conviene billete sencillo o abono diario."
+    },
+    "fr": {
+     "t": "Tickets, forfaits et cartes",
+     "g": "Apprends comment fonctionnent tickets à l'unité, forfaits journée et cartes sans contact.",
+     "p": [
+      "Un ticket à l'unité convient pour un ou deux trajets ; un forfait jour ou semaine vaut le coup si tu bouges souvent.",
+      "Beaucoup de villes utilisent des cartes à puce : la carte Octopus de Hong Kong, lancée en 1997, fut l'une des premières.",
+      "Dans beaucoup de villes, tu peux simplement passer ta carte bancaire sans contact ou ton téléphone au portique."
+     ],
+     "q": "Comment paies-tu en général les transports là où tu vis ?",
+     "c": "Regarde les tarifs d'une ville qui te tente et décide si un ticket à l'unité ou un forfait jour est mieux."
+    },
+    "it": {
+     "t": "Biglietti, abbonamenti e carte",
+     "g": "Impara come funzionano corsa singola, biglietto giornaliero e carte contactless.",
+     "p": [
+      "La corsa singola va bene per uno o due viaggi; il giornaliero o settimanale conviene se ti sposti spesso.",
+      "Molte città usano smart card: la Octopus di Hong Kong, lanciata nel 1997, è stata tra le prime.",
+      "In molte città oggi basta avvicinare al tornello una carta bancaria contactless o il telefono."
+     ],
+     "q": "Come paghi di solito i mezzi pubblici dove vivi?",
+     "c": "Guarda le tariffe di una città che vuoi visitare e decidi se conviene la corsa singola o il giornaliero."
+    },
+    "pt": {
+     "t": "Bilhetes, passes e cartões",
+     "g": "Aprende como funcionam os bilhetes simples, os passes diários e os cartões sem contacto.",
+     "p": [
+      "Um bilhete simples serve para uma ou duas viagens; um passe diário ou semanal compensa se viajares várias vezes.",
+      "Muitas cidades usam cartões inteligentes: o Octopus de Hong Kong, lançado em 1997, foi dos primeiros.",
+      "Em muitas cidades já podes passar um cartão bancário sem contacto ou o telemóvel no torniquete."
+     ],
+     "q": "Como costumas pagar os transportes públicos onde vives?",
+     "c": "Vê as tarifas de uma cidade que queres visitar e decide se compensa o bilhete simples ou o passe diário."
+    },
+    "pt_BR": {
+     "t": "Passagens, passes e cartões",
+     "g": "Aprenda como funcionam a passagem avulsa, o passe diário e os cartões por aproximação.",
+     "p": [
+      "A passagem avulsa serve para uma ou duas viagens; o passe diário ou semanal compensa se você andar bastante.",
+      "Muitas cidades usam cartões inteligentes: o Octopus de Hong Kong, lançado em 1997, foi um dos primeiros.",
+      "Em muitas cidades já dá para encostar o cartão do banco por aproximação ou o celular na catraca."
+     ],
+     "q": "Como você costuma pagar o transporte público onde mora?",
+     "c": "Pesquise as tarifas de uma cidade que você quer visitar e decida se vale mais a passagem avulsa ou o passe diário."
+    }
+   }
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Validating and travel etiquette",
+     "g": "Validate your ticket, stand aside at doors and give seats to those who need them.",
+     "p": [
+      "In many cities you must validate a paper ticket in a machine before or when boarding, or it isn't valid.",
+      "Let people get off first, step away from the doors and take off a big backpack in crowded carriages.",
+      "Offer priority seats to older people, pregnant passengers and anyone with reduced mobility."
+     ],
+     "q": "What good manners on public transport matter most to you?",
+     "c": "On your next ride, notice one local habit, like which side people stand on the escalator."
+    },
+    "de": {
+     "t": "Entwerten und Fahrgast-Knigge",
+     "g": "Entwerte dein Ticket, mach an den Türen Platz und biete Sitzplätze denen an, die sie brauchen.",
+     "p": [
+      "In vielen Städten musst du ein Papierticket vor oder beim Einsteigen entwerten, sonst ist es ungültig.",
+      "Lass erst aussteigen, geh von den Türen weg und nimm im vollen Wagen einen großen Rucksack ab.",
+      "Biete Vorrangplätze älteren Menschen, Schwangeren und Personen mit eingeschränkter Mobilität an."
+     ],
+     "q": "Welche guten Manieren im Nahverkehr sind dir am wichtigsten?",
+     "c": "Achte bei der nächsten Fahrt auf eine lokale Gewohnheit, etwa auf welcher Seite man auf der Rolltreppe steht."
+    },
+    "es": {
+     "t": "Validar y buenos modales al viajar",
+     "g": "Valida tu billete, apártate de las puertas y cede el asiento a quien lo necesite.",
+     "p": [
+      "En muchas ciudades hay que validar el billete de papel en una máquina al subir; si no, no es válido.",
+      "Deja salir antes de entrar, apártate de las puertas y quítate la mochila grande si el vagón va lleno.",
+      "Cede los asientos reservados a personas mayores, embarazadas y personas con movilidad reducida."
+     ],
+     "q": "¿Qué buenos modales en el transporte público te parecen más importantes?",
+     "c": "En tu próximo viaje, fíjate en una costumbre local, como en qué lado se quedan quietos en la escalera mecánica."
+    },
+    "fr": {
+     "t": "Valider et savoir-vivre en transport",
+     "g": "Valide ton titre, dégage les portes et cède ta place à ceux qui en ont besoin.",
+     "p": [
+      "Dans beaucoup de villes, il faut composter ou valider le ticket papier en montant, sinon il n'est pas valable.",
+      "Laisse descendre avant de monter, éloigne-toi des portes et retire ton gros sac à dos dans une rame bondée.",
+      "Cède les places prioritaires aux personnes âgées, aux femmes enceintes et aux personnes à mobilité réduite."
+     ],
+     "q": "Quelles bonnes manières dans les transports comptent le plus pour toi ?",
+     "c": "Lors de ton prochain trajet, observe une habitude locale, comme le côté où l'on se tient sur l'escalator."
+    },
+    "it": {
+     "t": "Convalidare e galateo dei mezzi",
+     "g": "Convalida il biglietto, liberati dalle porte e cedi il posto a chi ne ha bisogno.",
+     "p": [
+      "In molte città il biglietto di carta va convalidato all'obliteratrice salendo, altrimenti non è valido.",
+      "Fai scendere prima di salire, allontanati dalle porte e togli lo zaino grande nei vagoni affollati.",
+      "Cedi i posti riservati ad anziani, donne in gravidanza e persone con mobilità ridotta."
+     ],
+     "q": "Quali buone maniere sui mezzi pubblici ti stanno più a cuore?",
+     "c": "Al prossimo viaggio, nota un'abitudine locale, come il lato in cui si sta fermi sulla scala mobile."
+    },
+    "pt": {
+     "t": "Validar e boas maneiras em viagem",
+     "g": "Valida o bilhete, afasta-te das portas e cede o lugar a quem precisa.",
+     "p": [
+      "Em muitas cidades tens de validar o bilhete numa máquina ao entrar; caso contrário, não é válido.",
+      "Deixa sair antes de entrar, afasta-te das portas e tira a mochila grande nas carruagens cheias.",
+      "Cede os lugares prioritários a pessoas idosas, grávidas e pessoas com mobilidade reduzida."
+     ],
+     "q": "Que boas maneiras nos transportes públicos achas mais importantes?",
+     "c": "Na próxima viagem, repara num hábito local, como o lado em que as pessoas ficam paradas na escada rolante."
+    },
+    "pt_BR": {
+     "t": "Validar e etiqueta no transporte",
+     "g": "Valide sua passagem, saia da frente das portas e ceda o lugar a quem precisa.",
+     "p": [
+      "Em muitas cidades é preciso validar o bilhete de papel numa máquina ao embarcar, senão ele não vale.",
+      "Deixe sair antes de entrar, afaste-se das portas e tire a mochila grande das costas no vagão cheio.",
+      "Ceda os assentos preferenciais a idosos, gestantes e pessoas com mobilidade reduzida."
+     ],
+     "q": "Que boas maneiras no transporte público você acha mais importantes?",
+     "c": "Na próxima viagem, repare num costume local, como o lado em que as pessoas ficam paradas na escada rolante."
+    }
+   }
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Buses and trams",
+     "g": "Read route numbers, request stops and enjoy the view from above ground.",
+     "p": [
+      "The number and final destination are shown on the front; check the direction at the stop sign.",
+      "On many buses you press a button or pull a cord to request the next stop, or the driver may not stop.",
+      "Ride for the views: Lisbon's yellow tram 28 and London's double-deckers are sightseeing on a budget."
+     ],
+     "q": "Do you have a favourite bus or tram route with a great view?",
+     "c": "Find a bus or tram line in your city that crosses the centre and ride it just to look out."
+    },
+    "de": {
+     "t": "Busse und Straßenbahnen",
+     "g": "Lies Liniennummern, melde Haltestellen an und genieße die Aussicht über der Erde.",
+     "p": [
+      "Nummer und Endziel stehen vorn am Fahrzeug; prüfe die Richtung am Haltestellenschild.",
+      "In vielen Bussen drückst du einen Knopf, um den nächsten Halt anzufordern, sonst hält der Fahrer vielleicht nicht.",
+      "Fahr für die Aussicht: Lissabons gelbe Tram 28 und Londons Doppeldecker sind Sightseeing zum kleinen Preis."
+     ],
+     "q": "Hast du eine Lieblingslinie mit Bus oder Tram und toller Aussicht?",
+     "c": "Finde eine Bus- oder Tramlinie, die durch dein Zentrum fährt, und fahr sie nur, um hinauszuschauen."
+    },
+    "es": {
+     "t": "Autobuses y tranvías",
+     "g": "Lee los números de línea, pide parada y disfruta de las vistas desde la superficie.",
+     "p": [
+      "El número y el destino final aparecen delante; comprueba la dirección en el poste de la parada.",
+      "En muchos autobuses hay que pulsar un botón para pedir la parada; si no, el conductor puede no parar.",
+      "Viaja por las vistas: el tranvía amarillo 28 de Lisboa y los autobuses de dos pisos de Londres son turismo económico."
+     ],
+     "q": "¿Tienes una línea de autobús o tranvía favorita con buenas vistas?",
+     "c": "Busca una línea de autobús o tranvía que cruce el centro de tu ciudad y súbete solo para mirar."
+    },
+    "fr": {
+     "t": "Bus et tramways",
+     "g": "Lis les numéros de ligne, demande l'arrêt et profite de la vue en surface.",
+     "p": [
+      "Le numéro et la destination finale sont affichés à l'avant ; vérifie la direction au panneau de l'arrêt.",
+      "Dans beaucoup de bus, on appuie sur un bouton pour demander l'arrêt, sinon le chauffeur risque de ne pas s'arrêter.",
+      "Monte pour la vue : le tram jaune 28 de Lisbonne et les bus à impériale de Londres, c'est du tourisme à petit prix."
+     ],
+     "q": "As-tu une ligne de bus ou de tram préférée avec une belle vue ?",
+     "c": "Trouve une ligne de bus ou de tram qui traverse ton centre-ville et prends-la juste pour regarder dehors."
+    },
+    "it": {
+     "t": "Autobus e tram",
+     "g": "Leggi i numeri delle linee, prenota la fermata e goditi la vista in superficie.",
+     "p": [
+      "Numero e capolinea sono indicati davanti; controlla la direzione sul palo della fermata.",
+      "Su molti autobus si preme un pulsante per prenotare la fermata, altrimenti l'autista potrebbe non fermarsi.",
+      "Sali per il panorama: il tram giallo 28 di Lisbona e i bus a due piani di Londra sono turismo low cost."
+     ],
+     "q": "Hai una linea di autobus o tram preferita con una bella vista?",
+     "c": "Trova una linea di autobus o tram che attraversa il centro della tua città e prendila solo per guardare fuori."
+    },
+    "pt": {
+     "t": "Autocarros e elétricos",
+     "g": "Lê os números das carreiras, pede a paragem e aproveita a vista à superfície.",
+     "p": [
+      "O número e o destino final aparecem à frente; confirma o sentido no poste da paragem.",
+      "Em muitos autocarros carregas num botão para pedir a paragem; se não, o motorista pode não parar.",
+      "Anda pelas vistas: o elétrico amarelo 28 de Lisboa e os autocarros de dois andares de Londres são turismo barato."
+     ],
+     "q": "Tens uma carreira de autocarro ou elétrico preferida com boa vista?",
+     "c": "Descobre uma carreira de autocarro ou elétrico que atravesse o centro da tua cidade e anda nela só para ver."
+    },
+    "pt_BR": {
+     "t": "Ônibus e bondes",
+     "g": "Leia os números das linhas, peça parada e curta a vista na superfície.",
+     "p": [
+      "O número e o destino final aparecem na frente; confira o sentido na placa do ponto.",
+      "Em muitos ônibus você aperta um botão para pedir parada; se não, o motorista pode passar direto.",
+      "Ande pela vista: o bonde amarelo 28 de Lisboa e os ônibus de dois andares de Londres são passeio barato."
+     ],
+     "q": "Você tem uma linha de ônibus ou bonde favorita com uma vista bonita?",
+     "c": "Encontre uma linha de ônibus ou bonde que cruze o centro da sua cidade e ande nela só para olhar a paisagem."
+    }
+   }
+  }
+ ]
+}

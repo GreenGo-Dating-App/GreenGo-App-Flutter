@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Masculine and feminine nouns",
+     "g": "Recognise the gender of Spanish nouns and learn the main exceptions.",
+     "p": [
+      "Every noun is masculine or feminine; most in -o are masculine (el libro), most in -a feminine (la puerta).",
+      "Common exceptions: el día, el mapa, el problema, but la mano and la foto.",
+      "Nouns in -ción and -dad are feminine (la canción, la ciudad); learn each new noun with its article."
+     ],
+     "q": "Do you know a word in your own language that is masculine but feminine in Spanish, or the reverse?",
+     "c": "Write six Spanish nouns with el or la in front, including at least one exception."
+    },
+    "de": {
+     "t": "Männliche und weibliche Nomen",
+     "g": "Du erkennst das Geschlecht spanischer Nomen und lernst die wichtigsten Ausnahmen.",
+     "p": [
+      "Es gibt nur männlich und weiblich; meist ist -o männlich (el libro) und -a weiblich (la puerta).",
+      "Häufige Ausnahmen: el día, el mapa, el problema, aber la mano und la foto.",
+      "Wörter auf -ción und -dad sind weiblich (la canción, la ciudad); lern jedes Nomen mit Artikel."
+     ],
+     "q": "Kennst du ein Wort, das im Deutschen ein anderes Geschlecht hat als im Spanischen, etwa el sol?",
+     "c": "Schreib sechs spanische Nomen mit el oder la davor, mindestens eins davon eine Ausnahme."
+    },
+    "es": {
+     "t": "Sustantivos masculinos y femeninos",
+     "g": "Repasa el género de los sustantivos y las excepciones más frecuentes.",
+     "p": [
+      "Casi todos los sustantivos en -o son masculinos (el libro) y en -a femeninos (la puerta).",
+      "Excepciones habituales: el día, el mapa, el problema, el idioma, la mano, la foto, la moto.",
+      "Las palabras en -ción y -dad son femeninas: la canción, la ciudad, la verdad."
+     ],
+     "q": "¿Qué excepción de género te parece más curiosa? ¿Conoces alguna más?",
+     "c": "Haz una lista de seis sustantivos con su artículo, incluidas dos excepciones."
+    },
+    "fr": {
+     "t": "Noms masculins et féminins",
+     "g": "Reconnaître le genre des noms espagnols et retenir les principales exceptions.",
+     "p": [
+      "La plupart des noms en -o sont masculins (el libro), ceux en -a féminins (la puerta).",
+      "Exceptions courantes : el día, el mapa, el problema, mais la mano et la foto.",
+      "Les noms en -ción et -dad sont féminins (la canción, la ciudad) ; attention, el coche et la leche ne suivent pas le français."
+     ],
+     "q": "Connais-tu un mot masculin en français mais féminin en espagnol, comme la leche ?",
+     "c": "Écris six noms espagnols avec el ou la, dont au moins une exception."
+    },
+    "it": {
+     "t": "Nomi maschili e femminili",
+     "g": "Riconosci il genere dei nomi spagnoli e impari le eccezioni principali.",
+     "p": [
+      "Quasi tutti i nomi in -o sono maschili (el libro) e quelli in -a femminili (la puerta), come in italiano.",
+      "Eccezioni frequenti: el día, el mapa, el problema, ma la mano e la foto.",
+      "Attenzione ai falsi amici di genere: la leche (il latte), la sal (il sale), el árbol (l'albero)."
+     ],
+     "q": "Conosci una parola maschile in italiano ma femminile in spagnolo?",
+     "c": "Scrivi sei nomi spagnoli con el o la, includendo almeno un'eccezione."
+    },
+    "pt": {
+     "t": "Nomes masculinos e femininos",
+     "g": "Reconhece o género dos nomes espanhóis e aprende as principais exceções.",
+     "p": [
+      "A maioria dos nomes em -o é masculina (el libro) e em -a feminina (la puerta), como em português.",
+      "Exceções frequentes: el día, el mapa, el problema, mas la mano e la foto.",
+      "Cuidado com as diferenças: la leche (o leite), la sal (o sal), el color (a cor), la nariz (o nariz)."
+     ],
+     "q": "Conheces uma palavra masculina em português mas feminina em espanhol?",
+     "c": "Escreve seis nomes espanhóis com el ou la, incluindo pelo menos uma exceção."
+    },
+    "pt_BR": {
+     "t": "Substantivos masculinos e femininos",
+     "g": "Reconheça o gênero dos substantivos espanhóis e aprenda as principais exceções.",
+     "p": [
+      "A maioria dos substantivos em -o é masculina (el libro) e em -a feminina (la puerta), como em português.",
+      "Exceções frequentes: el día, el mapa, el problema, mas la mano e la foto.",
+      "Cuidado com as diferenças: la leche (o leite), la sal (o sal), el color (a cor), la nariz (o nariz)."
+     ],
+     "q": "Você conhece uma palavra masculina em português mas feminina em espanhol?",
+     "c": "Escreva seis substantivos espanhóis com el ou la, incluindo pelo menos uma exceção."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el libro",
+      "ex": "El libro está en la mesa."
+     },
+     {
+      "w": "la puerta",
+      "ex": "Cierra la puerta, por favor."
+     },
+     {
+      "w": "el día",
+      "ex": "Hoy es un día precioso."
+     },
+     {
+      "w": "la mano",
+      "ex": "Dame la mano."
+     },
+     {
+      "w": "el problema",
+      "ex": "No hay ningún problema."
+     },
+     {
+      "w": "la canción",
+      "ex": "Es una canción muy bonita."
+     }
+    ],
+    "gram": "Casi todos los sustantivos en -o son masculinos y en -a femeninos. Excepciones: el día, el mapa, el problema, la mano. En -ción: femenino."
+   }
+  },
+  {
+   "d": 12,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Singular to plural",
+     "g": "Form the plural of Spanish nouns correctly.",
+     "p": [
+      "After a vowel just add -s: casa, casas; libro, libros.",
+      "After a consonant add -es: ciudad, ciudades; flor, flores.",
+      "A final z becomes c in the plural: lápiz, lápices; luz, luces. The article changes too: los, las."
+     ],
+     "q": "Look around you: name three things in the plural in Spanish, like las sillas or los libros.",
+     "c": "Turn ten nouns you already know into the plural and say each one aloud with its article."
+    },
+    "de": {
+     "t": "Vom Singular zum Plural",
+     "g": "Du bildest den Plural spanischer Nomen richtig.",
+     "p": [
+      "Nach einem Vokal hängst du -s an: casa, casas; libro, libros.",
+      "Nach einem Konsonanten kommt -es: ciudad, ciudades; flor, flores.",
+      "Ein z am Ende wird zu c: lápiz, lápices; luz, luces. Auch der Artikel ändert sich: los, las."
+     ],
+     "q": "Schau dich um: Nenne drei Dinge im Plural auf Spanisch, etwa las sillas oder los libros.",
+     "c": "Setz zehn bekannte Nomen in den Plural und sprich jedes laut mit Artikel."
+    },
+    "es": {
+     "t": "Del singular al plural",
+     "g": "Repasa cómo se forma el plural de los sustantivos.",
+     "p": [
+      "Tras vocal se añade -s: casa, casas; libro, libros.",
+      "Tras consonante se añade -es: ciudad, ciudades; flor, flores.",
+      "La z final pasa a c: lápiz, lápices; luz, luces. Y el artículo cambia: los, las."
+     ],
+     "q": "Mira a tu alrededor: ¿qué tres cosas ves en plural? Dilas con su artículo.",
+     "c": "Pon diez palabras en plural, incluidas al menos dos terminadas en z."
+    },
+    "fr": {
+     "t": "Du singulier au pluriel",
+     "g": "Former correctement le pluriel des noms espagnols.",
+     "p": [
+      "Après une voyelle, on ajoute -s : casa, casas ; libro, libros.",
+      "Après une consonne, on ajoute -es : ciudad, ciudades ; flor, flores. Le s se prononce toujours.",
+      "Le z final devient c : lápiz, lápices ; luz, luces. L'article change aussi : los, las."
+     ],
+     "q": "Regarde autour de toi : nomme trois objets au pluriel en espagnol, comme las sillas.",
+     "c": "Mets dix noms que tu connais au pluriel et dis-les à voix haute avec leur article."
+    },
+    "it": {
+     "t": "Dal singolare al plurale",
+     "g": "Formi correttamente il plurale dei nomi spagnoli.",
+     "p": [
+      "A differenza dell'italiano, dopo una vocale si aggiunge -s: casa, casas; libro, libros.",
+      "Dopo una consonante si aggiunge -es: ciudad, ciudades; flor, flores.",
+      "La z finale diventa c: lápiz, lápices; luz, luces. Cambia anche l'articolo: los, las."
+     ],
+     "q": "Guardati intorno: nomina tre cose al plurale in spagnolo, come las sillas.",
+     "c": "Metti al plurale dieci nomi che conosci e dilli ad alta voce con l'articolo."
+    },
+    "pt": {
+     "t": "Do singular ao plural",
+     "g": "Forma corretamente o plural dos nomes espanhóis.",
+     "p": [
+      "Depois de vogal junta-se -s: casa, casas; libro, libros.",
+      "Depois de consoante junta-se -es: ciudad, ciudades; flor, flores.",
+      "O z final passa a c: lápiz, lápices; luz, luces. O artigo também muda: los, las."
+     ],
+     "q": "Olha à tua volta: diz três coisas no plural em espanhol, como las sillas.",
+     "c": "Põe dez nomes que conheces no plural e diz cada um em voz alta com o artigo."
+    },
+    "pt_BR": {
+     "t": "Do singular ao plural",
+     "g": "Forme corretamente o plural dos substantivos espanhóis.",
+     "p": [
+      "Depois de vogal acrescente -s: casa, casas; libro, libros.",
+      "Depois de consoante acrescente -es: ciudad, ciudades; flor, flores.",
+      "O z final vira c: lápiz, lápices; luz, luces. O artigo também muda: los, las."
+     ],
+     "q": "Olhe ao seu redor: diga três coisas no plural em espanhol, como las sillas.",
+     "c": "Coloque dez substantivos que você conhece no plural e diga cada um em voz alta com o artigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "las casas",
+      "ex": "Las casas son blancas."
+     },
+     {
+      "w": "las ciudades",
+      "ex": "Me gustan las ciudades grandes."
+     },
+     {
+      "w": "los árboles",
+      "ex": "Los árboles del parque son altos."
+     },
+     {
+      "w": "los lápices",
+      "ex": "Necesito dos lápices."
+     },
+     {
+      "w": "las flores",
+      "ex": "Las flores huelen muy bien."
+     },
+     {
+      "w": "los días",
+      "ex": "Los días son largos en verano."
+     }
+    ],
+    "gram": "Vocal + -s (casa, casas); consonante + -es (ciudad, ciudades). La z final cambia a c: lápiz, lápices; luz, luces."
+   }
+  },
+  {
+   "d": 13,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Articles: el, la, los, las",
+     "g": "Use definite and indefinite articles correctly in Spanish.",
+     "p": [
+      "The: el (m.), la (f.), los (m. pl.), las (f. pl.): el libro, las mesas.",
+      "A/an and some: un, una, unos, unas: un coche, unas gafas.",
+      "Two must-know contractions: a + el = al, de + el = del: voy al parque, la casa del vecino."
+     ],
+     "q": "What is on your desk right now? Tell me with un, una, unos or unas.",
+     "c": "Label five objects at home in your head with the right article, then switch them to the plural."
+    },
+    "de": {
+     "t": "Artikel: el, la, los, las",
+     "g": "Du verwendest bestimmte und unbestimmte Artikel richtig.",
+     "p": [
+      "Der/die/das: el (m.), la (f.), los (m. Pl.), las (f. Pl.): el libro, las mesas.",
+      "Ein/eine und einige: un, una, unos, unas: un coche, unas gafas.",
+      "Zwei Pflicht-Verschmelzungen: a + el = al, de + el = del: voy al parque, la casa del vecino."
+     ],
+     "q": "Was liegt gerade auf deinem Tisch? Sag es mit un, una, unos oder unas.",
+     "c": "Benenne im Kopf fünf Dinge zu Hause mit dem richtigen Artikel und setz sie dann in den Plural."
+    },
+    "es": {
+     "t": "Los artículos: el, la, un, una",
+     "g": "Usa bien los artículos determinados e indeterminados.",
+     "p": [
+      "Determinados: el, la, los, las, para algo concreto o ya conocido: el libro de Ana.",
+      "Indeterminados: un, una, unos, unas, para algo nuevo o no concreto: tengo un perro.",
+      "Contracciones obligatorias: a + el = al y de + el = del: voy al cine, vengo del trabajo."
+     ],
+     "q": "¿Qué hay ahora mismo en tu mesa? Descríbelo usando un, una, unos o unas.",
+     "c": "Escribe tres frases con al y tres con del sobre tu día de hoy."
+    },
+    "fr": {
+     "t": "Les articles : el, la, los, las",
+     "g": "Employer correctement les articles définis et indéfinis.",
+     "p": [
+      "Le/la/les : el (m.), la (f.), los (m. pl.), las (f. pl.) : el libro, las mesas.",
+      "Un/une/des : un, una, unos, unas : un coche, unas gafas.",
+      "Deux contractions obligatoires : a + el = al, de + el = del, comme au et du en français."
+     ],
+     "q": "Qu'y a-t-il sur ton bureau en ce moment ? Dis-le avec un, una, unos ou unas.",
+     "c": "Nomme dans ta tête cinq objets de chez toi avec le bon article, puis mets-les au pluriel."
+    },
+    "it": {
+     "t": "Gli articoli: el, la, los, las",
+     "g": "Usi correttamente gli articoli determinativi e indeterminativi.",
+     "p": [
+      "Il/la/i/le: el (m.), la (f.), los (m. pl.), las (f. pl.): el libro, las mesas. Niente lo o gli.",
+      "Un/una/dei/delle: un, una, unos, unas: un coche, unas gafas.",
+      "Due preposizioni articolate obbligatorie: a + el = al, de + el = del: voy al parque."
+     ],
+     "q": "Cosa c'è sulla tua scrivania adesso? Dimmelo con un, una, unos o unas.",
+     "c": "Nomina mentalmente cinque oggetti di casa con l'articolo giusto e poi mettili al plurale."
+    },
+    "pt": {
+     "t": "Os artigos: el, la, los, las",
+     "g": "Usa corretamente os artigos definidos e indefinidos.",
+     "p": [
+      "O/a/os/as: el (m.), la (f.), los (m. pl.), las (f. pl.): el libro, las mesas.",
+      "Um/uma/uns/umas: un, una, unos, unas: un coche, unas gafas.",
+      "Duas contrações obrigatórias: a + el = al, de + el = del; mas a + la e de + la não se juntam."
+     ],
+     "q": "O que está agora na tua secretária? Diz com un, una, unos ou unas.",
+     "c": "Nomeia mentalmente cinco objetos de casa com o artigo certo e depois põe-nos no plural."
+    },
+    "pt_BR": {
+     "t": "Os artigos: el, la, los, las",
+     "g": "Use corretamente os artigos definidos e indefinidos.",
+     "p": [
+      "O/a/os/as: el (m.), la (f.), los (m. pl.), las (f. pl.): el libro, las mesas.",
+      "Um/uma/uns/umas: un, una, unos, unas: un coche, unas gafas.",
+      "Duas contrações obrigatórias: a + el = al, de + el = del; mas a + la e de + la não se juntam."
+     ],
+     "q": "O que tem agora na sua mesa? Diga com un, una, unos ou unas.",
+     "c": "Nomeie de cabeça cinco objetos da casa com o artigo certo e depois coloque-os no plural."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el coche",
+      "ex": "El coche de mi padre es rojo."
+     },
+     {
+      "w": "la mesa",
+      "ex": "La mesa es de madera."
+     },
+     {
+      "w": "un amigo",
+      "ex": "Tengo un amigo en Valencia."
+     },
+     {
+      "w": "una ventana",
+      "ex": "Mi cuarto tiene una ventana grande."
+     },
+     {
+      "w": "unos zapatos",
+      "ex": "Necesito unos zapatos nuevos."
+     },
+     {
+      "w": "unas gafas",
+      "ex": "¿Tienes unas gafas de sol?"
+     }
+    ],
+    "gram": "Artículos determinados: el, la, los, las. Indeterminados: un, una, unos, unas. A + el = al; de + el = del."
+   }
+  },
+  {
+   "d": 14,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Countries and nationalities",
+     "g": "Name countries and make nationalities agree in gender and number.",
+     "p": [
+      "Countries take a capital letter (Francia), nationalities do not (francés).",
+      "Nationalities in -o change to -a: italiano, italiana; those in consonant add -a: español, española.",
+      "Endings in -e stay the same for both: estadounidense, canadiense; plurals add -s or -es."
+     ],
+     "q": "Which countries have you visited or would love to visit? Name the people there too.",
+     "c": "Write the nationality of five friends or famous people in Spanish, with the right ending."
+    },
+    "de": {
+     "t": "Länder und Nationalitäten",
+     "g": "Du nennst Länder und passt Nationalitäten an Geschlecht und Zahl an.",
+     "p": [
+      "Länder schreibt man groß (Alemania), Nationalitäten klein (alemán).",
+      "Endet die Nationalität auf -o, wird sie zu -a: italiano, italiana; nach Konsonant kommt -a dazu: alemán, alemana.",
+      "Endungen auf -e bleiben gleich: estadounidense, canadiense; im Plural kommt -s oder -es dazu."
+     ],
+     "q": "Welche Länder hast du besucht oder möchtest du sehen? Nenn auch die Leute dort.",
+     "c": "Schreib die Nationalität von fünf Freunden oder Promis auf Spanisch mit der richtigen Endung."
+    },
+    "es": {
+     "t": "Países y nacionalidades",
+     "g": "Nombra países y haz concordar las nacionalidades en género y número.",
+     "p": [
+      "Los países van con mayúscula (Francia) y las nacionalidades con minúscula (francés).",
+      "En -o cambian a -a (italiano, italiana); tras consonante se añade -a (español, española).",
+      "Las acabadas en -e no cambian: estadounidense, canadiense. Ojo con las tildes: francés, francesa."
+     ],
+     "q": "¿Qué países has visitado o te gustaría visitar? ¿Cómo se llama su gente?",
+     "c": "Escribe la nacionalidad de cinco personas famosas en masculino y femenino."
+    },
+    "fr": {
+     "t": "Pays et nationalités",
+     "g": "Nommer des pays et accorder les nationalités en genre et en nombre.",
+     "p": [
+      "Les pays prennent une majuscule (Francia), les nationalités non (francés).",
+      "En -o on passe à -a : italiano, italiana ; après une consonne on ajoute -a : francés, francesa.",
+      "Les terminaisons en -e ne changent pas : estadounidense, canadiense ; au pluriel on ajoute -s ou -es."
+     ],
+     "q": "Quels pays as-tu visités ou rêves-tu de voir ? Nomme aussi leurs habitants.",
+     "c": "Écris la nationalité de cinq amis ou célébrités en espagnol avec la bonne terminaison."
+    },
+    "it": {
+     "t": "Paesi e nazionalità",
+     "g": "Nomini i paesi e accordi le nazionalità in genere e numero.",
+     "p": [
+      "I paesi vogliono la maiuscola (Italia), le nazionalità no (italiano).",
+      "In -o si passa ad -a: italiano, italiana; dopo consonante si aggiunge -a: francés, francesa.",
+      "Le forme in -e non cambiano: estadounidense, canadiense; al plurale si aggiunge -s o -es."
+     ],
+     "q": "Quali paesi hai visitato o sogni di vedere? Nomina anche i loro abitanti.",
+     "c": "Scrivi in spagnolo la nazionalità di cinque amici o personaggi famosi con la desinenza giusta."
+    },
+    "pt": {
+     "t": "Países e nacionalidades",
+     "g": "Nomeia países e faz concordar as nacionalidades em género e número.",
+     "p": [
+      "Os países levam maiúscula (Portugal), as nacionalidades não (portugués).",
+      "Em -o passam a -a: italiano, italiana; depois de consoante junta-se -a: portugués, portuguesa.",
+      "As terminadas em -e não mudam: estadounidense, canadiense; no plural junta-se -s ou -es."
+     ],
+     "q": "Que países já visitaste ou gostavas de visitar? Diz também como se chamam os habitantes.",
+     "c": "Escreve em espanhol a nacionalidade de cinco amigos ou famosos com a terminação certa."
+    },
+    "pt_BR": {
+     "t": "Países e nacionalidades",
+     "g": "Nomeie países e faça as nacionalidades concordarem em gênero e número.",
+     "p": [
+      "Os países levam maiúscula (Brasil), as nacionalidades não (brasileño).",
+      "Em -o mudam para -a: brasileño, brasileña; depois de consoante acrescenta-se -a: portugués, portuguesa.",
+      "As terminadas em -e não mudam: estadounidense, canadiense; no plural acrescenta-se -s ou -es."
+     ],
+     "q": "Que países você já visitou ou sonha visitar? Diga também como se chamam seus habitantes.",
+     "c": "Escreva em espanhol a nacionalidade de cinco amigos ou famosos com a terminação certa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "España, español",
+      "ex": "Soy de España, soy español."
+     },
+     {
+      "w": "Brasil, brasileño",
+      "ex": "Mis vecinos son brasileños."
+     },
+     {
+      "w": "Francia, francés",
+      "ex": "Ella es francesa, de Lyon."
+     },
+     {
+      "w": "Italia, italiano",
+      "ex": "Los italianos hablan con las manos."
+     },
+     {
+      "w": "Estados Unidos, estadounidense",
+      "ex": "Mi jefe es estadounidense."
+     },
+     {
+      "w": "Japón, japonés",
+      "ex": "Tengo una amiga japonesa."
+     }
+    ],
+    "gram": "Las nacionalidades concuerdan en género y número: español, española, españoles, españolas. Las acabadas en -e no cambian: canadiense."
+   }
+  },
+  {
+   "d": 15,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Family members",
+     "g": "Talk about your family with the main family words.",
+     "p": [
+      "Pairs to learn: madre/padre, hermano/hermana, abuelo/abuela, tío/tía, primo/prima.",
+      "The masculine plural covers both: los padres means parents, los hermanos can mean brothers and sisters.",
+      "Use tengo to count them: tengo dos hermanos y una prima en Chile."
+     ],
+     "q": "¿Tienes hermanos o primos? Tell me about one family member in Spanish.",
+     "c": "Draw a tiny family tree and label at least six people in Spanish."
+    },
+    "de": {
+     "t": "Familienmitglieder",
+     "g": "Du sprichst mit den wichtigsten Wörtern über deine Familie.",
+     "p": [
+      "Paare zum Lernen: madre/padre, hermano/hermana, abuelo/abuela, tío/tía, primo/prima.",
+      "Der männliche Plural schließt beide ein: los padres heißt Eltern, los hermanos auch Geschwister.",
+      "Mit tengo zählst du sie: tengo dos hermanos y una prima en Chile."
+     ],
+     "q": "¿Tienes hermanos o primos? Erzähl mir auf Spanisch von einem Familienmitglied.",
+     "c": "Zeichne einen kleinen Stammbaum und beschrifte mindestens sechs Personen auf Spanisch."
+    },
+    "es": {
+     "t": "La familia",
+     "g": "Habla de tu familia con el vocabulario básico de parentesco.",
+     "p": [
+      "Parejas clave: madre y padre, hermano y hermana, abuelo y abuela, tío y tía, primo y prima.",
+      "El masculino plural incluye a todos: los padres son padre y madre; los hermanos pueden ser chicos y chicas.",
+      "Para contar se usa tengo: tengo dos hermanos y una prima en Chile."
+     ],
+     "q": "¿Tienes hermanos o primos? Háblame de un familiar con el que te lleves muy bien.",
+     "c": "Dibuja un pequeño árbol genealógico y escribe el parentesco de al menos seis personas."
+    },
+    "fr": {
+     "t": "Les membres de la famille",
+     "g": "Parler de ta famille avec les mots essentiels.",
+     "p": [
+      "Paires à retenir : madre/padre, hermano/hermana, abuelo/abuela, tío/tía, primo/prima.",
+      "Le masculin pluriel inclut les deux : los padres veut dire les parents, los hermanos les frères et sœurs.",
+      "On compte avec tengo : tengo dos hermanos y una prima en Chile."
+     ],
+     "q": "¿Tienes hermanos o primos? Parle-moi d'un membre de ta famille en espagnol.",
+     "c": "Dessine un petit arbre généalogique et nomme au moins six personnes en espagnol."
+    },
+    "it": {
+     "t": "I membri della famiglia",
+     "g": "Parli della tua famiglia con le parole principali.",
+     "p": [
+      "Coppie da imparare: madre/padre, hermano/hermana, abuelo/abuela, tío/tía, primo/prima.",
+      "Il maschile plurale include tutti: los padres sono i genitori, los hermanos anche fratelli e sorelle.",
+      "Per contarli usi tengo: tengo dos hermanos y una prima en Chile."
+     ],
+     "q": "¿Tienes hermanos o primos? Parlami in spagnolo di un membro della tua famiglia.",
+     "c": "Disegna un piccolo albero genealogico e scrivi in spagnolo almeno sei parentele."
+    },
+    "pt": {
+     "t": "Os membros da família",
+     "g": "Fala da tua família com as palavras principais.",
+     "p": [
+      "Pares a aprender: madre/padre, hermano/hermana, abuelo/abuela, tío/tía, primo/prima.",
+      "O masculino plural inclui ambos: los padres são os pais (pai e mãe), los hermanos os irmãos.",
+      "Para contar usa tengo: tengo dos hermanos y una prima en Chile."
+     ],
+     "q": "¿Tienes hermanos o primos? Fala-me em espanhol de um familiar.",
+     "c": "Desenha uma pequena árvore genealógica e escreve em espanhol pelo menos seis parentescos."
+    },
+    "pt_BR": {
+     "t": "Os membros da família",
+     "g": "Fale da sua família com as palavras principais.",
+     "p": [
+      "Pares para aprender: madre/padre, hermano/hermana, abuelo/abuela, tío/tía, primo/prima.",
+      "O masculino plural inclui ambos: los padres são os pais (pai e mãe), los hermanos os irmãos.",
+      "Para contar use tengo: tengo dos hermanos y una prima en Chile."
+     ],
+     "q": "¿Tienes hermanos o primos? Me conte em espanhol sobre alguém da sua família.",
+     "c": "Desenhe uma pequena árvore genealógica e escreva em espanhol pelo menos seis parentescos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la madre, el padre",
+      "ex": "Mi madre es profesora y mi padre, cocinero."
+     },
+     {
+      "w": "el hermano, la hermana",
+      "ex": "Tengo una hermana mayor."
+     },
+     {
+      "w": "el abuelo, la abuela",
+      "ex": "Mi abuela tiene un jardín precioso."
+     },
+     {
+      "w": "el tío, la tía",
+      "ex": "Mi tío vive en Buenos Aires."
+     },
+     {
+      "w": "los primos",
+      "ex": "Mis primos vienen el domingo."
+     },
+     {
+      "w": "los padres",
+      "ex": "Mis padres viven en el campo."
+     }
+    ],
+    "gram": "El masculino plural incluye a los dos sexos: los padres (padre y madre), los hermanos, los abuelos. Tengo + número + familiares."
+   }
+  },
+  {
+   "d": 16,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessives: mi, tu, su",
+     "g": "Say whose people and things are with Spanish possessives.",
+     "p": [
+      "Mi (my), tu (your), su (his, her, its, your formal, their); add -s for plural things: mis amigos.",
+      "Nuestro and vuestro also change for gender: nuestra casa, nuestros padres.",
+      "They agree with the thing owned, not the owner: Ana y sus hermanos. Su can be ambiguous, so context helps."
+     ],
+     "q": "Tell me about three things you own with mi or mis, like mi bici or mis libros.",
+     "c": "Describe a photo of friends or family in two sentences using mi, su and nuestro."
+    },
+    "de": {
+     "t": "Possessivbegleiter: mi, tu, su",
+     "g": "Du sagst mit spanischen Possessiven, wem Personen und Dinge gehören.",
+     "p": [
+      "Mi (mein), tu (dein), su (sein, ihr, Ihr); im Plural kommt -s dazu: mis amigos.",
+      "Nuestro und vuestro ändern auch das Geschlecht: nuestra casa, nuestros padres.",
+      "Sie richten sich nach dem Besitz, nicht nach dem Besitzer: Ana y sus hermanos. Su kann mehrdeutig sein."
+     ],
+     "q": "Erzähl mir von drei Dingen, die dir gehören, mit mi oder mis, etwa mi bici oder mis libros.",
+     "c": "Beschreib ein Foto von Freunden oder Familie in zwei Sätzen mit mi, su und nuestro."
+    },
+    "es": {
+     "t": "Los posesivos: mi, tu, su",
+     "g": "Indica de quién son las personas y las cosas con los posesivos.",
+     "p": [
+      "Mi, tu, su y sus plurales mis, tus, sus: mi coche, tus amigas, sus padres.",
+      "Nuestro y vuestro cambian también en género: nuestra casa, vuestros hijos.",
+      "Concuerdan con lo poseído, no con el dueño; y su puede ser de él, de ella, de usted o de ellos."
+     ],
+     "q": "Háblame de tres cosas que son tuyas y que te gustan mucho, usando mi o mis.",
+     "c": "Describe una foto de amigos o familia en dos frases con mi, su y nuestro."
+    },
+    "fr": {
+     "t": "Les possessifs : mi, tu, su",
+     "g": "Dire à qui sont les personnes et les choses avec les possessifs.",
+     "p": [
+      "Mi (mon/ma), tu (ton/ta), su (son/sa, votre, leur) ; au pluriel on ajoute -s : mis amigos.",
+      "Nuestro et vuestro changent aussi de genre : nuestra casa, nuestros padres.",
+      "Ils s'accordent avec la chose possédée : Ana y sus hermanos. Su peut être ambigu, le contexte aide."
+     ],
+     "q": "Parle-moi de trois choses à toi avec mi ou mis, comme mi bici ou mis libros.",
+     "c": "Décris une photo d'amis ou de famille en deux phrases avec mi, su et nuestro."
+    },
+    "it": {
+     "t": "I possessivi: mi, tu, su",
+     "g": "Dici di chi sono persone e cose con i possessivi spagnoli.",
+     "p": [
+      "Mi (mio), tu (tuo), su (suo, Suo, loro); al plurale si aggiunge -s: mis amigos. Senza articolo davanti!",
+      "Nuestro e vuestro cambiano anche per genere: nuestra casa, nuestros padres.",
+      "Concordano con la cosa posseduta: Ana y sus hermanos. Su può essere ambiguo, il contesto aiuta."
+     ],
+     "q": "Parlami di tre cose tue con mi o mis, come mi bici o mis libros.",
+     "c": "Descrivi una foto di amici o famiglia in due frasi con mi, su e nuestro."
+    },
+    "pt": {
+     "t": "Os possessivos: mi, tu, su",
+     "g": "Diz de quem são as pessoas e as coisas com os possessivos.",
+     "p": [
+      "Mi (meu), tu (teu), su (seu, dele, dela, deles); no plural junta-se -s: mis amigos. Sem artigo antes!",
+      "Nuestro e vuestro mudam também de género: nuestra casa, nuestros padres.",
+      "Concordam com a coisa possuída: Ana y sus hermanos. Su pode ser ambíguo, o contexto ajuda."
+     ],
+     "q": "Fala-me de três coisas tuas com mi ou mis, como mi bici ou mis libros.",
+     "c": "Descreve uma foto de amigos ou família em duas frases com mi, su e nuestro."
+    },
+    "pt_BR": {
+     "t": "Os possessivos: mi, tu, su",
+     "g": "Diga de quem são as pessoas e as coisas com os possessivos.",
+     "p": [
+      "Mi (meu), tu (teu), su (seu, dele, dela, deles); no plural acrescenta-se -s: mis amigos. Sem artigo antes!",
+      "Nuestro e vuestro também mudam de gênero: nuestra casa, nuestros padres.",
+      "Concordam com a coisa possuída: Ana y sus hermanos. Su pode ser ambíguo, o contexto ajuda."
+     ],
+     "q": "Me fale de três coisas suas com mi ou mis, como mi bici ou mis libros.",
+     "c": "Descreva uma foto de amigos ou família em duas frases com mi, su e nuestro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi, mis",
+      "ex": "Mi casa es tu casa. Mis hijos son mayores."
+     },
+     {
+      "w": "tu, tus",
+      "ex": "¿Son tus llaves?"
+     },
+     {
+      "w": "su, sus",
+      "ex": "Ana y su hermano viven juntos."
+     },
+     {
+      "w": "nuestro, nuestra",
+      "ex": "Nuestra profesora es muy paciente."
+     },
+     {
+      "w": "vuestro, vuestra",
+      "ex": "¿Es vuestro coche?"
+     },
+     {
+      "w": "sus padres",
+      "ex": "Pedro visita a sus padres los domingos."
+     }
+    ],
+    "gram": "Concuerdan con lo poseído, no con el dueño: mi libro, mis libros; nuestra casa, nuestros amigos. Su = de él, ella, usted o ellos."
+   }
+  },
+  {
+   "d": 17,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing people with ser",
+     "g": "Describe people's looks and personality with ser and matching adjectives.",
+     "p": [
+      "Use ser + adjective for looks and character: Lucía es alta y simpática.",
+      "Adjectives agree: alto, alta, altos, altas; those in -e or consonant only add -s: inteligentes.",
+      "Adjectives usually go after the noun: un amigo divertido, una persona trabajadora."
+     ],
+     "q": "Describe your best friend in Spanish with three adjectives.",
+     "c": "Describe three people you saw today with ser and two adjectives each."
+    },
+    "de": {
+     "t": "Menschen beschreiben mit ser",
+     "g": "Du beschreibst Aussehen und Charakter mit ser und passenden Adjektiven.",
+     "p": [
+      "Ser + Adjektiv für Aussehen und Charakter: Lucía es alta y simpática.",
+      "Adjektive passen sich an: alto, alta, altos, altas; Endungen auf -e oder Konsonant bekommen nur -s: inteligentes.",
+      "Adjektive stehen meist nach dem Nomen: un amigo divertido, una persona trabajadora."
+     ],
+     "q": "Beschreib deinen besten Freund oder deine beste Freundin auf Spanisch mit drei Adjektiven.",
+     "c": "Beschreib drei Menschen, die du heute gesehen hast, mit ser und je zwei Adjektiven."
+    },
+    "es": {
+     "t": "Describir a personas con ser",
+     "g": "Describe el físico y el carácter de las personas con ser y adjetivos.",
+     "p": [
+      "Ser + adjetivo para el aspecto y la personalidad: Lucía es alta y simpática.",
+      "El adjetivo concuerda: alto, alta, altos, altas; los acabados en -e o consonante solo añaden -s o -es.",
+      "Normalmente va detrás del sustantivo: un amigo divertido, una persona trabajadora."
+     ],
+     "q": "Describe a tu mejor amigo o amiga con tres adjetivos que no sean bueno ni simpático.",
+     "c": "Describe a tres personas que has visto hoy con ser y dos adjetivos cada una."
+    },
+    "fr": {
+     "t": "Décrire les gens avec ser",
+     "g": "Décrire l'apparence et le caractère avec ser et des adjectifs accordés.",
+     "p": [
+      "Ser + adjectif pour le physique et le caractère : Lucía es alta y simpática.",
+      "Les adjectifs s'accordent : alto, alta, altos, altas ; ceux en -e ou consonne prennent juste -s : inteligentes.",
+      "L'adjectif se place en général après le nom : un amigo divertido, una persona trabajadora."
+     ],
+     "q": "Décris ton meilleur ami ou ta meilleure amie en espagnol avec trois adjectifs.",
+     "c": "Décris trois personnes vues aujourd'hui avec ser et deux adjectifs chacune."
+    },
+    "it": {
+     "t": "Descrivere le persone con ser",
+     "g": "Descrivi aspetto e carattere con ser e aggettivi concordati.",
+     "p": [
+      "Ser + aggettivo per aspetto e carattere: Lucía es alta y simpática.",
+      "Gli aggettivi concordano: alto, alta, altos, altas; quelli in -e o consonante aggiungono solo -s: inteligentes.",
+      "L'aggettivo va di solito dopo il nome: un amigo divertido, una persona trabajadora."
+     ],
+     "q": "Descrivi in spagnolo il tuo migliore amico o la tua migliore amica con tre aggettivi.",
+     "c": "Descrivi tre persone viste oggi con ser e due aggettivi ciascuna."
+    },
+    "pt": {
+     "t": "Descrever pessoas com ser",
+     "g": "Descreve o aspeto e o carácter com ser e adjetivos concordados.",
+     "p": [
+      "Ser + adjetivo para aspeto e personalidade: Lucía es alta y simpática.",
+      "Os adjetivos concordam: alto, alta, altos, altas; os terminados em -e ou consoante só juntam -s: inteligentes.",
+      "Atenção a falsos amigos: largo quer dizer comprido e exquisito quer dizer delicioso."
+     ],
+     "q": "Descreve em espanhol o teu melhor amigo ou a tua melhor amiga com três adjetivos.",
+     "c": "Descreve três pessoas que viste hoje com ser e dois adjetivos cada."
+    },
+    "pt_BR": {
+     "t": "Descrevendo pessoas com ser",
+     "g": "Descreva aparência e personalidade com ser e adjetivos concordados.",
+     "p": [
+      "Ser + adjetivo para aparência e personalidade: Lucía es alta y simpática.",
+      "Os adjetivos concordam: alto, alta, altos, altas; os terminados em -e ou consoante só ganham -s: inteligentes.",
+      "Atenção a falsos amigos: largo quer dizer comprido e exquisito quer dizer delicioso."
+     ],
+     "q": "Descreva em espanhol seu melhor amigo ou sua melhor amiga com três adjetivos.",
+     "c": "Descreva três pessoas que você viu hoje com ser e dois adjetivos cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "alto, alta",
+      "ex": "Mi hermano es muy alto."
+     },
+     {
+      "w": "bajo, baja",
+      "ex": "Mi abuela es baja y muy elegante."
+     },
+     {
+      "w": "simpático, simpática",
+      "ex": "Tu amiga es muy simpática."
+     },
+     {
+      "w": "inteligente",
+      "ex": "Es una niña muy inteligente."
+     },
+     {
+      "w": "divertido, divertida",
+      "ex": "Mis primos son muy divertidos."
+     },
+     {
+      "w": "trabajador, trabajadora",
+      "ex": "Ella es trabajadora y amable."
+     }
+    ],
+    "gram": "Ser + adjetivo para el físico y el carácter. El adjetivo concuerda y va detrás del sustantivo: una chica simpática, unos chicos altos."
+   }
+  },
+  {
+   "d": 18,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Colours and adjective agreement",
+     "g": "Name colours and make them agree with the noun.",
+     "p": [
+      "Colours in -o have four forms: rojo, roja, rojos, rojas: el coche rojo, las flores rojas.",
+      "Colours in -e or a consonant change only for number: verde, verdes; azul, azules; gris, grises.",
+      "Colours follow the noun: una casa blanca, unos zapatos negros."
+     ],
+     "q": "What colour is your favourite piece of clothing? Answer with the noun and the colour.",
+     "c": "Name the colours of five objects around you in Spanish, making each one agree."
+    },
+    "de": {
+     "t": "Farben und Adjektivangleichung",
+     "g": "Du nennst Farben und passt sie an das Nomen an.",
+     "p": [
+      "Farben auf -o haben vier Formen: rojo, roja, rojos, rojas: el coche rojo, las flores rojas.",
+      "Farben auf -e oder Konsonant ändern nur die Zahl: verde, verdes; azul, azules; gris, grises.",
+      "Farben stehen nach dem Nomen: una casa blanca, unos zapatos negros."
+     ],
+     "q": "Welche Farbe hat dein Lieblingskleidungsstück? Antworte mit Nomen und Farbe.",
+     "c": "Nenne auf Spanisch die Farben von fünf Dingen um dich herum, jeweils richtig angeglichen."
+    },
+    "es": {
+     "t": "Los colores y la concordancia",
+     "g": "Nombra los colores y hazlos concordar con el sustantivo.",
+     "p": [
+      "Los colores en -o tienen cuatro formas: rojo, roja, rojos, rojas: las flores rojas.",
+      "Los acabados en -e o consonante solo cambian en número: verde, verdes; azul, azules; gris, grises.",
+      "Van detrás del sustantivo: una casa blanca, unos zapatos negros."
+     ],
+     "q": "¿De qué color es tu prenda favorita y por qué te gusta tanto?",
+     "c": "Nombra los colores de cinco objetos de tu alrededor con la concordancia correcta."
+    },
+    "fr": {
+     "t": "Les couleurs et l'accord",
+     "g": "Nommer les couleurs et les accorder avec le nom.",
+     "p": [
+      "Les couleurs en -o ont quatre formes : rojo, roja, rojos, rojas : las flores rojas.",
+      "Celles en -e ou en consonne ne changent qu'au pluriel : verde, verdes ; azul, azules ; gris, grises.",
+      "La couleur suit le nom : una casa blanca, unos zapatos negros."
+     ],
+     "q": "De quelle couleur est ton vêtement préféré ? Réponds avec le nom et la couleur.",
+     "c": "Nomme en espagnol les couleurs de cinq objets autour de toi, avec le bon accord."
+    },
+    "it": {
+     "t": "I colori e la concordanza",
+     "g": "Nomini i colori e li accordi con il nome.",
+     "p": [
+      "I colori in -o hanno quattro forme: rojo, roja, rojos, rojas: las flores rojas.",
+      "Quelli in -e o consonante cambiano solo al plurale: verde, verdes; azul, azules; gris, grises.",
+      "Il colore segue il nome: una casa blanca, unos zapatos negros. Attenzione: rojo è rosso, rosa è rosa."
+     ],
+     "q": "Di che colore è il tuo capo d'abbigliamento preferito? Rispondi con nome e colore.",
+     "c": "Nomina in spagnolo i colori di cinque oggetti intorno a te, con la concordanza giusta."
+    },
+    "pt": {
+     "t": "As cores e a concordância",
+     "g": "Nomeia as cores e fá-las concordar com o nome.",
+     "p": [
+      "As cores em -o têm quatro formas: rojo, roja, rojos, rojas: las flores rojas.",
+      "As terminadas em -e ou consoante só mudam no número: verde, verdes; azul, azules; gris, grises.",
+      "A cor vem depois do nome: una casa blanca, unos zapatos negros. Atenção: rojo é vermelho."
+     ],
+     "q": "De que cor é a tua peça de roupa preferida? Responde com o nome e a cor.",
+     "c": "Diz em espanhol as cores de cinco objetos à tua volta, com a concordância certa."
+    },
+    "pt_BR": {
+     "t": "As cores e a concordância",
+     "g": "Nomeie as cores e faça elas concordarem com o substantivo.",
+     "p": [
+      "As cores em -o têm quatro formas: rojo, roja, rojos, rojas: las flores rojas.",
+      "As terminadas em -e ou consoante só mudam no número: verde, verdes; azul, azules; gris, grises.",
+      "A cor vem depois do substantivo: una casa blanca, unos zapatos negros. Atenção: rojo é vermelho."
+     ],
+     "q": "De que cor é a sua peça de roupa favorita? Responda com o substantivo e a cor.",
+     "c": "Diga em espanhol as cores de cinco objetos ao seu redor, com a concordância certa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rojo, roja",
+      "ex": "Quiero la camiseta roja."
+     },
+     {
+      "w": "blanco, blanca",
+      "ex": "Las paredes son blancas."
+     },
+     {
+      "w": "negro, negra",
+      "ex": "Tengo un gato negro."
+     },
+     {
+      "w": "amarillo, amarilla",
+      "ex": "El taxi es amarillo."
+     },
+     {
+      "w": "verde",
+      "ex": "Me encantan los ojos verdes."
+     },
+     {
+      "w": "azul",
+      "ex": "El cielo está muy azul hoy."
+     }
+    ],
+    "gram": "Los colores en -o tienen cuatro formas: rojo, roja, rojos, rojas. En -e o consonante solo cambia el número: verde, verdes; azul, azules."
+   }
+  },
+  {
+   "d": 19,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Tener: age and possessions",
+     "g": "Conjugate tener and use it for age and the things you have.",
+     "p": [
+      "Tener: tengo, tienes, tiene, tenemos, tenéis, tienen; it is irregular, so learn it by heart.",
+      "Spanish gives age with tener: tengo treinta años, literally I have thirty years.",
+      "Ask ¿Cuántos años tienes? and talk about things you own: tengo una bici azul."
+     ],
+     "q": "¿Cuántos años tienes? And what is something you have that you really love?",
+     "c": "Write three sentences with tener: your age, a pet or object you have, and something your family has."
+    },
+    "de": {
+     "t": "Tener: Alter und Besitz",
+     "g": "Du konjugierst tener und nutzt es für Alter und Besitz.",
+     "p": [
+      "Tener: tengo, tienes, tiene, tenemos, tenéis, tienen; es ist unregelmäßig, also auswendig lernen.",
+      "Das Alter sagt man mit tener: tengo treinta años, wörtlich ich habe dreißig Jahre.",
+      "Frag ¿Cuántos años tienes? und sprich über Besitz: tengo una bici azul."
+     ],
+     "q": "¿Cuántos años tienes? Und was besitzt du, das du richtig liebst?",
+     "c": "Schreib drei Sätze mit tener: dein Alter, ein Haustier oder Gegenstand und etwas, das deine Familie hat."
+    },
+    "es": {
+     "t": "Tener: edad y posesión",
+     "g": "Conjuga tener y úsalo para la edad y lo que posees.",
+     "p": [
+      "Tener: tengo, tienes, tiene, tenemos, tenéis, tienen. Es irregular y se usa muchísimo.",
+      "La edad se expresa con tener: tengo treinta años. Error típico de otros idiomas: soy treinta años.",
+      "Pregunta ¿Cuántos años tienes? y habla de lo que tienes: tengo una bici azul."
+     ],
+     "q": "¿Qué objeto tienes desde hace muchos años y por qué lo guardas?",
+     "c": "Escribe tres frases con tener: una edad, una mascota u objeto y algo que tiene tu familia."
+    },
+    "fr": {
+     "t": "Tener : l'âge et la possession",
+     "g": "Conjuguer tener et l'utiliser pour l'âge et ce que tu possèdes.",
+     "p": [
+      "Tener : tengo, tienes, tiene, tenemos, tenéis, tienen ; irrégulier, à apprendre par cœur.",
+      "L'âge se dit avec tener, comme avec avoir en français : tengo treinta años.",
+      "Demande ¿Cuántos años tienes? et parle de ce que tu as : tengo una bici azul."
+     ],
+     "q": "¿Cuántos años tienes? Et qu'est-ce que tu possèdes et adores vraiment ?",
+     "c": "Écris trois phrases avec tener : ton âge, un animal ou objet que tu as, et quelque chose qu'a ta famille."
+    },
+    "it": {
+     "t": "Tener: età e possesso",
+     "g": "Coniughi tener e lo usi per l'età e per ciò che possiedi.",
+     "p": [
+      "Tener: tengo, tienes, tiene, tenemos, tenéis, tienen; è irregolare, va imparato a memoria.",
+      "L'età si dice con tener, come con avere: tengo treinta años.",
+      "Chiedi ¿Cuántos años tienes? e parla di ciò che hai: tengo una bici azul. Tener significa avere."
+     ],
+     "q": "¿Cuántos años tienes? E qual è una cosa che hai e che ami davvero?",
+     "c": "Scrivi tre frasi con tener: la tua età, un animale o oggetto che hai e qualcosa che ha la tua famiglia."
+    },
+    "pt": {
+     "t": "Tener: idade e posse",
+     "g": "Conjuga tener e usa-o para a idade e para o que tens.",
+     "p": [
+      "Tener: tengo, tienes, tiene, tenemos, tenéis, tienen; é irregular, aprende-o de cor.",
+      "A idade diz-se com tener, como em português: tengo treinta años.",
+      "Pergunta ¿Cuántos años tienes? e fala do que tens: tengo una bici azul."
+     ],
+     "q": "¿Cuántos años tienes? E o que é que tens e adoras mesmo?",
+     "c": "Escreve três frases com tener: a tua idade, um animal ou objeto que tens e algo que a tua família tem."
+    },
+    "pt_BR": {
+     "t": "Tener: idade e posse",
+     "g": "Conjugue tener e use para a idade e para o que você tem.",
+     "p": [
+      "Tener: tengo, tienes, tiene, tenemos, tenéis, tienen; é irregular, decore.",
+      "A idade é dita com tener, como em português: tengo treinta años.",
+      "Pergunte ¿Cuántos años tienes? e fale do que você tem: tengo una bici azul."
+     ],
+     "q": "¿Cuántos años tienes? E o que você tem e adora de verdade?",
+     "c": "Escreva três frases com tener: sua idade, um bicho ou objeto que você tem e algo que sua família tem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tengo",
+      "ex": "Tengo treinta años."
+     },
+     {
+      "w": "tienes",
+      "ex": "¿Cuántos años tienes?"
+     },
+     {
+      "w": "tiene",
+      "ex": "Mi hermano tiene un perro."
+     },
+     {
+      "w": "tenemos",
+      "ex": "Tenemos una casa en la playa."
+     },
+     {
+      "w": "tenéis",
+      "ex": "¿Tenéis hijos?"
+     },
+     {
+      "w": "tienen",
+      "ex": "Mis abuelos tienen un huerto."
+     }
+    ],
+    "gram": "Tener: tengo, tienes, tiene, tenemos, tenéis, tienen. La edad se dice con tener: tengo veinte años (no soy veinte años)."
+   }
+  },
+  {
+   "d": 20,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 21 to 100",
+     "g": "Build numbers up to cien and use them for ages, addresses and phone numbers.",
+     "p": [
+      "21 to 29 are one word: veintiuno, veintidós, veintitrés...",
+      "From 31 on, use y: treinta y uno, cuarenta y cinco. Tens: treinta, cuarenta, cincuenta, sesenta, setenta, ochenta, noventa.",
+      "100 is cien; uno becomes un before a masculine noun: veintiún años."
+     ],
+     "q": "How old are three people in your family? Say the numbers in Spanish.",
+     "c": "Read five numbers you see today, on prices, buses or doors, aloud in Spanish."
+    },
+    "de": {
+     "t": "Zahlen von 21 bis 100",
+     "g": "Du bildest Zahlen bis cien und nutzt sie für Alter, Adressen und Telefonnummern.",
+     "p": [
+      "21 bis 29 schreibt man in einem Wort: veintiuno, veintidós, veintitrés...",
+      "Ab 31 mit y und in normaler Reihenfolge: treinta y uno (dreißig und eins), cuarenta y cinco.",
+      "Die Zehner: treinta, cuarenta, cincuenta, sesenta, setenta, ochenta, noventa; 100 ist cien."
+     ],
+     "q": "Wie alt sind drei Menschen in deiner Familie? Sag die Zahlen auf Spanisch.",
+     "c": "Lies heute fünf Zahlen, die du siehst, etwa auf Bussen oder Türen, laut auf Spanisch."
+    },
+    "es": {
+     "t": "Los números del 21 al 100",
+     "g": "Construye números hasta cien y úsalos para edades, direcciones y teléfonos.",
+     "p": [
+      "Del 21 al 29 se escriben en una palabra: veintiuno, veintidós, veintitrés.",
+      "Desde el 31 se usa y: treinta y uno, cuarenta y cinco, noventa y nueve.",
+      "Cien es 100; uno pasa a un ante masculino: veintiún años, treinta y un días."
+     ],
+     "q": "¿Cuántos años tienen tres personas de tu familia? Dilo con todas las letras.",
+     "c": "Escribe con letras cinco números que veas hoy en portales, autobuses o relojes."
+    },
+    "fr": {
+     "t": "Les nombres de 21 à 100",
+     "g": "Former les nombres jusqu'à cien et les utiliser pour l'âge, l'adresse et le téléphone.",
+     "p": [
+      "De 21 à 29 en un seul mot : veintiuno, veintidós, veintitrés...",
+      "Dès 31 avec y : treinta y uno, cuarenta y cinco ; et pas de calcul compliqué : setenta, ochenta, noventa.",
+      "100 se dit cien ; uno devient un devant un nom masculin : veintiún años."
+     ],
+     "q": "Quel âge ont trois personnes de ta famille ? Dis les nombres en espagnol.",
+     "c": "Lis à voix haute en espagnol cinq nombres vus aujourd'hui, sur un bus ou une porte."
+    },
+    "it": {
+     "t": "I numeri da 21 a 100",
+     "g": "Costruisci i numeri fino a cien e li usi per età, indirizzi e telefoni.",
+     "p": [
+      "Da 21 a 29 in una parola: veintiuno, veintidós, veintitrés...",
+      "Da 31 in poi con y: treinta y uno, cuarenta y cinco, noventa y nueve.",
+      "Le decine: treinta, cuarenta, cincuenta, sesenta, setenta, ochenta, noventa; 100 è cien."
+     ],
+     "q": "Quanti anni hanno tre persone della tua famiglia? Di' i numeri in spagnolo.",
+     "c": "Leggi ad alta voce in spagnolo cinque numeri che vedi oggi, su autobus o porte."
+    },
+    "pt": {
+     "t": "Os números de 21 a 100",
+     "g": "Forma números até cien e usa-os para idades, moradas e telefones.",
+     "p": [
+      "De 21 a 29 numa só palavra: veintiuno, veintidós, veintitrés...",
+      "A partir de 31 com y: treinta y uno, cuarenta y cinco, noventa y nueve.",
+      "As dezenas: treinta, cuarenta, cincuenta, sesenta, setenta, ochenta, noventa; 100 é cien."
+     ],
+     "q": "Que idade têm três pessoas da tua família? Diz os números em espanhol.",
+     "c": "Lê em voz alta em espanhol cinco números que vejas hoje, em autocarros ou portas."
+    },
+    "pt_BR": {
+     "t": "Os números de 21 a 100",
+     "g": "Forme números até cien e use para idades, endereços e telefones.",
+     "p": [
+      "De 21 a 29 numa só palavra: veintiuno, veintidós, veintitrés...",
+      "A partir de 31 com y: treinta y uno, cuarenta y cinco, noventa y nueve.",
+      "As dezenas: treinta, cuarenta, cincuenta, sesenta, setenta, ochenta, noventa; 100 é cien."
+     ],
+     "q": "Quantos anos têm três pessoas da sua família? Diga os números em espanhol.",
+     "c": "Leia em voz alta em espanhol cinco números que você vir hoje, em ônibus ou portas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "veintiuno",
+      "ex": "Mi primo tiene veintiún años."
+     },
+     {
+      "w": "treinta y dos",
+      "ex": "Vivo en el número treinta y dos."
+     },
+     {
+      "w": "cuarenta",
+      "ex": "Mi madre tiene cuarenta años."
+     },
+     {
+      "w": "cincuenta y cinco",
+      "ex": "Hay cincuenta y cinco alumnos."
+     },
+     {
+      "w": "setenta",
+      "ex": "Mi abuelo tiene setenta y ocho años."
+     },
+     {
+      "w": "cien",
+      "ex": "El libro tiene cien páginas."
+     }
+    ],
+    "gram": "Del 21 al 29 en una palabra: veintiuno, veintidós. Desde el 31 con y: treinta y uno. 100 = cien. Uno pasa a un ante masculino."
+   }
+  }
+ ]
+}

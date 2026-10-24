@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Months and dates",
+     "g": "Name the twelve months and say dates in British and American style.",
+     "p": [
+      "January to December always start with a capital letter.",
+      "Use in for months (in May) and on for dates (on the third of May).",
+      "British people say the third of May; Americans often say May third."
+     ],
+     "q": "When is your birthday? Say the full date in English.",
+     "c": "Say aloud the dates of three birthdays in your family, in English."
+    },
+    "de": {
+     "t": "Monate und Datum",
+     "g": "Du lernst die zwölf Monate und sagst ein Datum auf britische und amerikanische Art.",
+     "p": [
+      "January bis December schreibt man immer groß.",
+      "In steht vor Monaten (in May), on vor einem Datum (on the third of May).",
+      "Briten sagen the third of May, Amerikaner oft May third."
+     ],
+     "q": "Wann hast du Geburtstag? Sag das ganze Datum auf Englisch.",
+     "c": "Sag heute laut auf Englisch die Geburtstage von drei Familienmitgliedern."
+    },
+    "es": {
+     "t": "Meses y fechas",
+     "g": "Aprende los doce meses y a decir fechas al estilo británico y americano.",
+     "p": [
+      "De January a December siempre van con mayúscula.",
+      "Usa in con meses (in May) y on con fechas (on the third of May).",
+      "En el Reino Unido se dice the third of May; en EE. UU., a menudo May third."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Di la fecha completa en inglés.",
+     "c": "Di en voz alta en inglés las fechas de tres cumpleaños de tu familia."
+    },
+    "fr": {
+     "t": "Les mois et les dates",
+     "g": "Nommer les douze mois et dire une date à la britannique et à l'américaine.",
+     "p": [
+      "De January à December, toujours une majuscule.",
+      "In devant les mois (in May), on devant une date (on the third of May).",
+      "Les Britanniques disent the third of May, les Américains souvent May third."
+     ],
+     "q": "Quand est ton anniversaire ? Dis la date complète en anglais.",
+     "c": "Dis à voix haute en anglais la date de trois anniversaires de ta famille."
+    },
+    "it": {
+     "t": "Mesi e date",
+     "g": "Impari i dodici mesi e a dire le date all'inglese e all'americana.",
+     "p": [
+      "Da January a December hanno sempre la maiuscola.",
+      "In davanti ai mesi (in May), on davanti alle date (on the third of May).",
+      "Gli inglesi dicono the third of May, gli americani spesso May third."
+     ],
+     "q": "Quando è il tuo compleanno? Di' la data completa in inglese.",
+     "c": "Di' ad alta voce in inglese le date di tre compleanni della tua famiglia."
+    },
+    "pt": {
+     "t": "Meses e datas",
+     "g": "Aprende os doze meses e a dizer datas à maneira britânica e americana.",
+     "p": [
+      "De January a December levam sempre maiúscula.",
+      "In antes dos meses (in May) e on antes das datas (on the third of May).",
+      "Os britânicos dizem the third of May; os americanos muitas vezes May third."
+     ],
+     "q": "Quando fazes anos? Diz a data completa em inglês.",
+     "c": "Diz em voz alta, em inglês, as datas de três aniversários da tua família."
+    },
+    "pt_BR": {
+     "t": "Meses e datas",
+     "g": "Aprenda os doze meses e a dizer datas no estilo britânico e americano.",
+     "p": [
+      "De January a December sempre têm maiúscula.",
+      "In antes dos meses (in May) e on antes das datas (on the third of May).",
+      "Britânicos dizem the third of May; americanos costumam dizer May third."
+     ],
+     "q": "Quando é o seu aniversário? Diga a data completa em inglês.",
+     "c": "Fale em voz alta, em inglês, as datas de três aniversários da sua família."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "January",
+      "ex": "It's cold in January."
+     },
+     {
+      "w": "May",
+      "ex": "My birthday is in May."
+     },
+     {
+      "w": "August",
+      "ex": "We travel in August."
+     },
+     {
+      "w": "December",
+      "ex": "December is a happy month."
+     },
+     {
+      "w": "the third of May",
+      "ex": "The party is on the third of May."
+     },
+     {
+      "w": "birthday",
+      "ex": "When is your birthday?"
+     }
+    ],
+    "gram": "In + month (in July), on + date (on the 5th of July). Ordinals: first, second, third, fourth, fifth."
+   }
+  },
+  {
+   "d": 22,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling the time",
+     "g": "Ask and tell the time in English, both the easy and the classic way.",
+     "p": [
+      "Ask What time is it? and answer It's seven o'clock.",
+      "Classic style: half past six (6:30), quarter past nine (9:15), quarter to nine (8:45).",
+      "Easy style: just read the digits, six thirty, nine fifteen; use at for times: at 8."
+     ],
+     "q": "What time do you usually wake up? Say it in two ways.",
+     "c": "Each time you look at a clock today, say the time in English."
+    },
+    "de": {
+     "t": "Die Uhrzeit sagen",
+     "g": "Du lernst, auf Englisch nach der Uhrzeit zu fragen und sie zu sagen, einfach und klassisch.",
+     "p": [
+      "Frag What time is it? und antworte It's seven o'clock.",
+      "Klassisch: half past six (6:30), quarter past nine (9:15), quarter to nine (8:45).",
+      "Einfach: Ziffern lesen, six thirty, nine fifteen. Achtung: half past six ist 6:30, nicht 5:30."
+     ],
+     "q": "Wann stehst du normalerweise auf? Sag es auf zwei Arten.",
+     "c": "Sag heute jedes Mal, wenn du auf die Uhr schaust, die Zeit auf Englisch."
+    },
+    "es": {
+     "t": "Decir la hora",
+     "g": "Aprende a preguntar y decir la hora en inglés, de forma fácil y clásica.",
+     "p": [
+      "Pregunta What time is it? y responde It's seven o'clock.",
+      "Estilo clásico: half past six (6:30), quarter past nine (9:15), quarter to nine (8:45).",
+      "Estilo fácil: lee las cifras, six thirty, nine fifteen; usa at con horas: at 8."
+     ],
+     "q": "¿A qué hora te levantas normalmente? Dilo de dos maneras.",
+     "c": "Cada vez que mires un reloj hoy, di la hora en inglés."
+    },
+    "fr": {
+     "t": "Dire l'heure",
+     "g": "Demander et dire l'heure en anglais, de façon simple et classique.",
+     "p": [
+      "Demande What time is it? et réponds It's seven o'clock.",
+      "Classique : half past six (6 h 30), quarter past nine (9 h 15), quarter to nine (8 h 45).",
+      "Simple : lis les chiffres, six thirty, nine fifteen ; avec une heure, on dit at : at 8."
+     ],
+     "q": "À quelle heure te lèves-tu d'habitude ? Dis-le de deux façons.",
+     "c": "Chaque fois que tu regardes une horloge aujourd'hui, dis l'heure en anglais."
+    },
+    "it": {
+     "t": "Dire l'ora",
+     "g": "Impari a chiedere e dire l'ora in inglese, in modo semplice e classico.",
+     "p": [
+      "Chiedi What time is it? e rispondi It's seven o'clock.",
+      "Classico: half past six (6:30), quarter past nine (9:15), quarter to nine (8:45).",
+      "Semplice: leggi le cifre, six thirty, nine fifteen; con gli orari si usa at: at 8."
+     ],
+     "q": "A che ora ti svegli di solito? Dillo in due modi.",
+     "c": "Ogni volta che guardi un orologio oggi, di' l'ora in inglese."
+    },
+    "pt": {
+     "t": "Dizer as horas",
+     "g": "Aprende a perguntar e a dizer as horas em inglês, da forma fácil e da clássica.",
+     "p": [
+      "Pergunta What time is it? e responde It's seven o'clock.",
+      "Clássica: half past six (6:30), quarter past nine (9:15), quarter to nine (8:45).",
+      "Fácil: lê os números, six thirty, nine fifteen; com horas usa-se at: at 8."
+     ],
+     "q": "A que horas acordas normalmente? Diz de duas maneiras.",
+     "c": "Sempre que olhares para um relógio hoje, diz as horas em inglês."
+    },
+    "pt_BR": {
+     "t": "Dizendo as horas",
+     "g": "Aprenda a perguntar e dizer as horas em inglês, do jeito fácil e do clássico.",
+     "p": [
+      "Pergunte What time is it? e responda It's seven o'clock.",
+      "Clássico: half past six (6:30), quarter past nine (9:15), quarter to nine (8:45).",
+      "Fácil: leia os números, six thirty, nine fifteen; com horários use at: at 8."
+     ],
+     "q": "Que horas você costuma acordar? Diga de duas maneiras.",
+     "c": "Toda vez que olhar para um relógio hoje, diga as horas em inglês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "What time is it?",
+      "ex": "Excuse me, what time is it?"
+     },
+     {
+      "w": "o'clock",
+      "ex": "It's ten o'clock."
+     },
+     {
+      "w": "half past",
+      "ex": "The film starts at half past seven."
+     },
+     {
+      "w": "quarter past",
+      "ex": "It's quarter past three."
+     },
+     {
+      "w": "quarter to",
+      "ex": "I leave at quarter to eight."
+     },
+     {
+      "w": "at",
+      "ex": "The shop closes at six."
+     }
+    ],
+    "gram": "It's + time: It's half past two. At + time for events: The class starts at nine."
+   }
+  },
+  {
+   "d": 23,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Present simple: I work, I live",
+     "g": "Use the present simple for facts and habits with I, you, we and they.",
+     "p": [
+      "The present simple is for routines and facts: I work in an office.",
+      "With I, you, we and they the verb stays in its base form: we live, they play.",
+      "Time words help: every day, on Mondays, in the morning."
+     ],
+     "q": "Tell me three things you do every week, starting with I.",
+     "c": "Write five true sentences about your life with I and the present simple."
+    },
+    "de": {
+     "t": "Present simple: I work, I live",
+     "g": "Du lernst das present simple für Fakten und Gewohnheiten mit I, you, we und they.",
+     "p": [
+      "Das present simple steht für Routinen und Fakten: I work in an office.",
+      "Mit I, you, we und they bleibt das Verb in der Grundform: we live, they play.",
+      "Zeitwörter helfen: every day, on Mondays, in the morning."
+     ],
+     "q": "Nenn mir drei Dinge, die du jede Woche machst, mit I am Anfang.",
+     "c": "Schreib fünf wahre Sätze über dein Leben mit I im present simple."
+    },
+    "es": {
+     "t": "Present simple: I work, I live",
+     "g": "Aprende el present simple para hechos y hábitos con I, you, we y they.",
+     "p": [
+      "El present simple sirve para rutinas y hechos: I work in an office.",
+      "Con I, you, we y they el verbo no cambia: we live, they play.",
+      "Ayudan las expresiones de tiempo: every day, on Mondays, in the morning."
+     ],
+     "q": "Dime tres cosas que haces cada semana, empezando por I.",
+     "c": "Escribe cinco frases verdaderas sobre tu vida con I y el present simple."
+    },
+    "fr": {
+     "t": "Present simple : I work, I live",
+     "g": "Utiliser le present simple pour les faits et habitudes avec I, you, we et they.",
+     "p": [
+      "Le present simple exprime routines et faits : I work in an office.",
+      "Avec I, you, we et they, le verbe reste à la forme de base : we live, they play.",
+      "Les mots de temps aident : every day, on Mondays, in the morning."
+     ],
+     "q": "Dis-moi trois choses que tu fais chaque semaine, en commençant par I.",
+     "c": "Écris cinq phrases vraies sur ta vie avec I et le present simple."
+    },
+    "it": {
+     "t": "Present simple: I work, I live",
+     "g": "Impari il present simple per fatti e abitudini con I, you, we e they.",
+     "p": [
+      "Il present simple indica routine e fatti: I work in an office.",
+      "Con I, you, we e they il verbo resta alla forma base: we live, they play.",
+      "Aiutano le espressioni di tempo: every day, on Mondays, in the morning."
+     ],
+     "q": "Dimmi tre cose che fai ogni settimana, iniziando con I.",
+     "c": "Scrivi cinque frasi vere sulla tua vita con I e il present simple."
+    },
+    "pt": {
+     "t": "Present simple: I work, I live",
+     "g": "Aprende o present simple para factos e hábitos com I, you, we e they.",
+     "p": [
+      "O present simple serve para rotinas e factos: I work in an office.",
+      "Com I, you, we e they o verbo fica na forma base: we live, they play.",
+      "As expressões de tempo ajudam: every day, on Mondays, in the morning."
+     ],
+     "q": "Diz-me três coisas que fazes todas as semanas, a começar por I.",
+     "c": "Escreve cinco frases verdadeiras sobre a tua vida com I e o present simple."
+    },
+    "pt_BR": {
+     "t": "Present simple: I work, I live",
+     "g": "Aprenda o present simple para fatos e hábitos com I, you, we e they.",
+     "p": [
+      "O present simple serve para rotinas e fatos: I work in an office.",
+      "Com I, you, we e they o verbo fica na forma base: we live, they play.",
+      "Expressões de tempo ajudam: every day, on Mondays, in the morning."
+     ],
+     "q": "Me diga três coisas que você faz toda semana, começando com I.",
+     "c": "Escreva cinco frases verdadeiras sobre sua vida com I e o present simple."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "work",
+      "ex": "I work in a bank."
+     },
+     {
+      "w": "live",
+      "ex": "We live near the sea."
+     },
+     {
+      "w": "study",
+      "ex": "They study English at night."
+     },
+     {
+      "w": "speak",
+      "ex": "I speak Portuguese and a little English."
+     },
+     {
+      "w": "play",
+      "ex": "You play the guitar very well."
+     },
+     {
+      "w": "every day",
+      "ex": "I walk to work every day."
+     }
+    ],
+    "gram": "Present simple with I/you/we/they: base verb. I work. We study. They live in Spain."
+   }
+  },
+  {
+   "d": 24,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Present simple: he works, she lives",
+     "g": "Add -s or -es to the verb with he, she and it in the present simple.",
+     "p": [
+      "With he, she and it add -s: she works, he lives, it rains.",
+      "After -s, -sh, -ch, -o add -es: he watches, she goes, it fixes.",
+      "Learn the special forms: have becomes has, do becomes does, go becomes goes."
+     ],
+     "q": "Tell me about a friend: what does he or she do every day?",
+     "c": "Write five sentences about one person you know, adding -s each time."
+    },
+    "de": {
+     "t": "Present simple: he works, she lives",
+     "g": "Du lernst, im present simple bei he, she und it -s oder -es anzuhängen.",
+     "p": [
+      "Bei he, she und it kommt ein -s dazu: she works, he lives, it rains.",
+      "Nach -s, -sh, -ch, -o kommt -es: he watches, she goes, it fixes.",
+      "Merk dir die Sonderformen: have wird has, do wird does, go wird goes."
+     ],
+     "q": "Erzähl von einem Freund: Was macht er oder sie jeden Tag?",
+     "c": "Schreib fünf Sätze über eine Person, die du kennst, jedes Mal mit -s."
+    },
+    "es": {
+     "t": "Present simple: he works, she lives",
+     "g": "Aprende a añadir -s o -es al verbo con he, she e it en present simple.",
+     "p": [
+      "Con he, she e it se añade -s: she works, he lives, it rains.",
+      "Tras -s, -sh, -ch, -o se añade -es: he watches, she goes, it fixes.",
+      "Aprende las formas especiales: have pasa a has, do a does, go a goes."
+     ],
+     "q": "Háblame de un amigo: ¿qué hace él o ella cada día?",
+     "c": "Escribe cinco frases sobre una persona que conoces, añadiendo la -s cada vez."
+    },
+    "fr": {
+     "t": "Present simple : he works, she lives",
+     "g": "Ajouter -s ou -es au verbe avec he, she et it au present simple.",
+     "p": [
+      "Avec he, she et it, on ajoute -s : she works, he lives, it rains.",
+      "Après -s, -sh, -ch, -o, on ajoute -es : he watches, she goes, it fixes.",
+      "Retiens les formes spéciales : have devient has, do devient does, go devient goes."
+     ],
+     "q": "Parle-moi d'un ami : que fait-il ou que fait-elle chaque jour ?",
+     "c": "Écris cinq phrases sur une personne que tu connais, avec le -s à chaque fois."
+    },
+    "it": {
+     "t": "Present simple: he works, she lives",
+     "g": "Impari ad aggiungere -s o -es al verbo con he, she e it nel present simple.",
+     "p": [
+      "Con he, she e it si aggiunge -s: she works, he lives, it rains.",
+      "Dopo -s, -sh, -ch, -o si aggiunge -es: he watches, she goes, it fixes.",
+      "Impara le forme speciali: have diventa has, do diventa does, go diventa goes."
+     ],
+     "q": "Parlami di un amico: cosa fa lui o lei ogni giorno?",
+     "c": "Scrivi cinque frasi su una persona che conosci, aggiungendo la -s ogni volta."
+    },
+    "pt": {
+     "t": "Present simple: he works, she lives",
+     "g": "Aprende a juntar -s ou -es ao verbo com he, she e it no present simple.",
+     "p": [
+      "Com he, she e it junta-se -s: she works, he lives, it rains.",
+      "Depois de -s, -sh, -ch, -o junta-se -es: he watches, she goes, it fixes.",
+      "Aprende as formas especiais: have passa a has, do a does, go a goes."
+     ],
+     "q": "Fala-me de um amigo: o que é que ele ou ela faz todos os dias?",
+     "c": "Escreve cinco frases sobre uma pessoa que conheces, sempre com o -s."
+    },
+    "pt_BR": {
+     "t": "Present simple: he works, she lives",
+     "g": "Aprenda a colocar -s ou -es no verbo com he, she e it no present simple.",
+     "p": [
+      "Com he, she e it acrescenta-se -s: she works, he lives, it rains.",
+      "Depois de -s, -sh, -ch, -o acrescenta-se -es: he watches, she goes, it fixes.",
+      "Aprenda as formas especiais: have vira has, do vira does, go vira goes."
+     ],
+     "q": "Me fale de um amigo: o que ele ou ela faz todo dia?",
+     "c": "Escreva cinco frases sobre uma pessoa que você conhece, sempre com o -s."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "works",
+      "ex": "My sister works in a hotel."
+     },
+     {
+      "w": "lives",
+      "ex": "He lives in Toronto."
+     },
+     {
+      "w": "watches",
+      "ex": "She watches TV after dinner."
+     },
+     {
+      "w": "goes",
+      "ex": "He goes to school by bike."
+     },
+     {
+      "w": "has",
+      "ex": "My dad has a big garden."
+     },
+     {
+      "w": "does",
+      "ex": "She does her homework at six."
+     }
+    ],
+    "gram": "He/she/it + verb-s: she plays, he watches, it goes. Special: have-has, do-does, go-goes."
+   }
+  },
+  {
+   "d": 25,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Daily routine verbs",
+     "g": "Describe a normal day from morning to night in English.",
+     "p": [
+      "Morning: wake up, get up, have a shower, have breakfast.",
+      "Day: go to work or school, have lunch, finish work, come home.",
+      "Evening: cook dinner, watch TV, go to bed; join them with then and after that."
+     ],
+     "q": "What does a normal weekday look like for you?",
+     "c": "Tell your whole day aloud in English in six short sentences."
+    },
+    "de": {
+     "t": "Verben für den Tagesablauf",
+     "g": "Du lernst, einen normalen Tag von morgens bis abends auf Englisch zu beschreiben.",
+     "p": [
+      "Morgens: wake up, get up, have a shower, have breakfast.",
+      "Tagsüber: go to work oder school, have lunch, finish work, come home.",
+      "Abends: cook dinner, watch TV, go to bed; verbinde mit then und after that."
+     ],
+     "q": "Wie sieht ein normaler Wochentag bei dir aus?",
+     "c": "Erzähl deinen ganzen Tag laut auf Englisch in sechs kurzen Sätzen."
+    },
+    "es": {
+     "t": "Verbos de la rutina diaria",
+     "g": "Aprende a describir un día normal de la mañana a la noche en inglés.",
+     "p": [
+      "Mañana: wake up, get up, have a shower, have breakfast.",
+      "Día: go to work o school, have lunch, finish work, come home.",
+      "Noche: cook dinner, watch TV, go to bed; únelos con then y after that."
+     ],
+     "q": "¿Cómo es un día normal entre semana para ti?",
+     "c": "Cuenta tu día entero en voz alta en inglés en seis frases cortas."
+    },
+    "fr": {
+     "t": "Les verbes de la routine",
+     "g": "Décrire une journée ordinaire du matin au soir en anglais.",
+     "p": [
+      "Le matin : wake up, get up, have a shower, have breakfast.",
+      "La journée : go to work ou school, have lunch, finish work, come home.",
+      "Le soir : cook dinner, watch TV, go to bed ; relie-les avec then et after that."
+     ],
+     "q": "À quoi ressemble une journée de semaine ordinaire pour toi ?",
+     "c": "Raconte toute ta journée à voix haute en anglais en six phrases courtes."
+    },
+    "it": {
+     "t": "I verbi della routine",
+     "g": "Impari a descrivere una giornata normale dalla mattina alla sera in inglese.",
+     "p": [
+      "Mattina: wake up, get up, have a shower, have breakfast.",
+      "Giorno: go to work o school, have lunch, finish work, come home.",
+      "Sera: cook dinner, watch TV, go to bed; collegali con then e after that."
+     ],
+     "q": "Com'è una tua giornata feriale normale?",
+     "c": "Racconta tutta la tua giornata ad alta voce in inglese in sei frasi brevi."
+    },
+    "pt": {
+     "t": "Verbos da rotina diária",
+     "g": "Aprende a descrever um dia normal, de manhã à noite, em inglês.",
+     "p": [
+      "Manhã: wake up, get up, have a shower, have breakfast.",
+      "Dia: go to work ou school, have lunch, finish work, come home.",
+      "Noite: cook dinner, watch TV, go to bed; liga-os com then e after that."
+     ],
+     "q": "Como é um dia de semana normal para ti?",
+     "c": "Conta o teu dia inteiro em voz alta em inglês, em seis frases curtas."
+    },
+    "pt_BR": {
+     "t": "Verbos da rotina diária",
+     "g": "Aprenda a descrever um dia normal, de manhã à noite, em inglês.",
+     "p": [
+      "Manhã: wake up, get up, have a shower, have breakfast.",
+      "Dia: go to work ou school, have lunch, finish work, come home.",
+      "Noite: cook dinner, watch TV, go to bed; ligue tudo com then e after that."
+     ],
+     "q": "Como é um dia de semana normal para você?",
+     "c": "Conte seu dia inteiro em voz alta em inglês, em seis frases curtas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "wake up",
+      "ex": "I wake up at seven."
+     },
+     {
+      "w": "get up",
+      "ex": "She gets up at half past six."
+     },
+     {
+      "w": "have breakfast",
+      "ex": "We have breakfast together."
+     },
+     {
+      "w": "go to work",
+      "ex": "He goes to work by train."
+     },
+     {
+      "w": "come home",
+      "ex": "I come home at six."
+     },
+     {
+      "w": "go to bed",
+      "ex": "They go to bed at eleven."
+     }
+    ],
+    "gram": "Routines use the present simple: I get up at 7, then I have breakfast. After that, I go to work."
+   }
+  },
+  {
+   "d": 26,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Questions with do and does",
+     "g": "Ask yes/no questions in the present simple with do and does.",
+     "p": [
+      "Use do with I, you, we, they: Do you like tea?",
+      "Use does with he, she, it, and the verb loses its -s: Does she work here?",
+      "Short answers: Yes, I do. No, she doesn't."
+     ],
+     "q": "Do you like coffee? Answer me, then ask me a question with does.",
+     "c": "Ask someone, or me, three questions starting with Do you...?"
+    },
+    "de": {
+     "t": "Fragen mit do und does",
+     "g": "Du lernst Ja/Nein-Fragen im present simple mit do und does.",
+     "p": [
+      "Do für I, you, we, they: Do you like tea?",
+      "Does für he, she, it, und das Verb verliert sein -s: Does she work here?",
+      "Kurzantworten: Yes, I do. No, she doesn't."
+     ],
+     "q": "Do you like coffee? Antworte und stell mir dann eine Frage mit does.",
+     "c": "Stell heute jemandem, oder mir, drei Fragen mit Do you...?"
+    },
+    "es": {
+     "t": "Preguntas con do y does",
+     "g": "Aprende a hacer preguntas de sí o no en present simple con do y does.",
+     "p": [
+      "Do con I, you, we, they: Do you like tea?",
+      "Does con he, she, it, y el verbo pierde la -s: Does she work here?",
+      "Respuestas cortas: Yes, I do. No, she doesn't."
+     ],
+     "q": "Do you like coffee? Contéstame y luego hazme una pregunta con does.",
+     "c": "Hazle hoy a alguien, o a mí, tres preguntas que empiecen por Do you...?"
+    },
+    "fr": {
+     "t": "Questions avec do et does",
+     "g": "Poser des questions fermées au present simple avec do et does.",
+     "p": [
+      "Do avec I, you, we, they : Do you like tea?",
+      "Does avec he, she, it, et le verbe perd son -s : Does she work here?",
+      "Réponses courtes : Yes, I do. No, she doesn't."
+     ],
+     "q": "Do you like coffee? Réponds-moi, puis pose-moi une question avec does.",
+     "c": "Pose aujourd'hui trois questions commençant par Do you...? à quelqu'un, ou à moi."
+    },
+    "it": {
+     "t": "Domande con do e does",
+     "g": "Impari a fare domande sì/no nel present simple con do e does.",
+     "p": [
+      "Do con I, you, we, they: Do you like tea?",
+      "Does con he, she, it, e il verbo perde la -s: Does she work here?",
+      "Risposte brevi: Yes, I do. No, she doesn't."
+     ],
+     "q": "Do you like coffee? Rispondimi e poi fammi una domanda con does.",
+     "c": "Fai oggi a qualcuno, o a me, tre domande che iniziano con Do you...?"
+    },
+    "pt": {
+     "t": "Perguntas com do e does",
+     "g": "Aprende a fazer perguntas de sim ou não no present simple com do e does.",
+     "p": [
+      "Do com I, you, we, they: Do you like tea?",
+      "Does com he, she, it, e o verbo perde o -s: Does she work here?",
+      "Respostas curtas: Yes, I do. No, she doesn't."
+     ],
+     "q": "Do you like coffee? Responde-me e depois faz-me uma pergunta com does.",
+     "c": "Faz hoje a alguém, ou a mim, três perguntas a começar por Do you...?"
+    },
+    "pt_BR": {
+     "t": "Perguntas com do e does",
+     "g": "Aprenda a fazer perguntas de sim ou não no present simple com do e does.",
+     "p": [
+      "Do com I, you, we, they: Do you like tea?",
+      "Does com he, she, it, e o verbo perde o -s: Does she work here?",
+      "Respostas curtas: Yes, I do. No, she doesn't."
+     ],
+     "q": "Do you like coffee? Me responda e depois me faça uma pergunta com does.",
+     "c": "Faça hoje para alguém, ou para mim, três perguntas começando com Do you...?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Do you...?",
+      "ex": "Do you live near here?"
+     },
+     {
+      "w": "Does she...?",
+      "ex": "Does she speak French?"
+     },
+     {
+      "w": "Yes, I do.",
+      "ex": "Do you like music? Yes, I do."
+     },
+     {
+      "w": "No, he doesn't.",
+      "ex": "Does he drive? No, he doesn't."
+     },
+     {
+      "w": "like",
+      "ex": "Do they like pizza?"
+     },
+     {
+      "w": "often",
+      "ex": "Do you often cook?"
+     }
+    ],
+    "gram": "Do/Does + subject + base verb: Does he play tennis? (not Does he plays). Short answer: Yes, he does."
+   }
+  },
+  {
+   "d": 27,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Negatives: don't and doesn't",
+     "g": "Say what is not true in the present simple with don't and doesn't.",
+     "p": [
+      "Use don't (do not) with I, you, we, they: I don't drink coffee.",
+      "Use doesn't (does not) with he, she, it: He doesn't live here.",
+      "After doesn't the verb has no -s: she doesn't like, not she doesn't likes."
+     ],
+     "q": "Tell me two things you don't do and one thing your friend doesn't do.",
+     "c": "Write three true negative sentences about yourself and two about someone else."
+    },
+    "de": {
+     "t": "Verneinung: don't und doesn't",
+     "g": "Du lernst, im present simple mit don't und doesn't zu verneinen.",
+     "p": [
+      "Don't (do not) für I, you, we, they: I don't drink coffee.",
+      "Doesn't (does not) für he, she, it: He doesn't live here.",
+      "Nach doesn't hat das Verb kein -s: she doesn't like, nicht she doesn't likes."
+     ],
+     "q": "Nenn mir zwei Dinge, die du nicht machst, und eins, das dein Freund nicht macht.",
+     "c": "Schreib drei wahre verneinte Sätze über dich und zwei über jemand anderen."
+    },
+    "es": {
+     "t": "Negativas: don't y doesn't",
+     "g": "Aprende a negar en present simple con don't y doesn't.",
+     "p": [
+      "Don't (do not) con I, you, we, they: I don't drink coffee.",
+      "Doesn't (does not) con he, she, it: He doesn't live here.",
+      "Tras doesn't el verbo no lleva -s: she doesn't like, no she doesn't likes."
+     ],
+     "q": "Dime dos cosas que no haces y una que no hace tu amigo.",
+     "c": "Escribe tres frases negativas verdaderas sobre ti y dos sobre otra persona."
+    },
+    "fr": {
+     "t": "La négation : don't et doesn't",
+     "g": "Dire ce qui n'est pas vrai au present simple avec don't et doesn't.",
+     "p": [
+      "Don't (do not) avec I, you, we, they : I don't drink coffee.",
+      "Doesn't (does not) avec he, she, it : He doesn't live here.",
+      "Après doesn't, le verbe n'a pas de -s : she doesn't like, pas she doesn't likes."
+     ],
+     "q": "Dis-moi deux choses que tu ne fais pas et une que ton ami ne fait pas.",
+     "c": "Écris trois phrases négatives vraies sur toi et deux sur quelqu'un d'autre."
+    },
+    "it": {
+     "t": "Negazioni: don't e doesn't",
+     "g": "Impari a dire ciò che non è vero nel present simple con don't e doesn't.",
+     "p": [
+      "Don't (do not) con I, you, we, they: I don't drink coffee.",
+      "Doesn't (does not) con he, she, it: He doesn't live here.",
+      "Dopo doesn't il verbo non ha la -s: she doesn't like, non she doesn't likes."
+     ],
+     "q": "Dimmi due cose che non fai e una che il tuo amico non fa.",
+     "c": "Scrivi tre frasi negative vere su di te e due su un'altra persona."
+    },
+    "pt": {
+     "t": "Negativas: don't e doesn't",
+     "g": "Aprende a negar no present simple com don't e doesn't.",
+     "p": [
+      "Don't (do not) com I, you, we, they: I don't drink coffee.",
+      "Doesn't (does not) com he, she, it: He doesn't live here.",
+      "Depois de doesn't o verbo não leva -s: she doesn't like, e não she doesn't likes."
+     ],
+     "q": "Diz-me duas coisas que não fazes e uma que o teu amigo não faz.",
+     "c": "Escreve três frases negativas verdadeiras sobre ti e duas sobre outra pessoa."
+    },
+    "pt_BR": {
+     "t": "Negativas: don't e doesn't",
+     "g": "Aprenda a negar no present simple com don't e doesn't.",
+     "p": [
+      "Don't (do not) com I, you, we, they: I don't drink coffee.",
+      "Doesn't (does not) com he, she, it: He doesn't live here.",
+      "Depois de doesn't o verbo fica sem -s: she doesn't like, e não she doesn't likes."
+     ],
+     "q": "Me diga duas coisas que você não faz e uma que seu amigo não faz.",
+     "c": "Escreva três frases negativas verdadeiras sobre você e duas sobre outra pessoa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "don't",
+      "ex": "I don't eat meat."
+     },
+     {
+      "w": "doesn't",
+      "ex": "She doesn't watch TV."
+     },
+     {
+      "w": "drink",
+      "ex": "We don't drink coffee at night."
+     },
+     {
+      "w": "drive",
+      "ex": "My mum doesn't drive."
+     },
+     {
+      "w": "eat",
+      "ex": "They don't eat fish."
+     },
+     {
+      "w": "on Sundays",
+      "ex": "He doesn't work on Sundays."
+     }
+    ],
+    "gram": "Negative: subject + don't/doesn't + base verb. He doesn't work here (not He doesn't works)."
+   }
+  },
+  {
+   "d": 28,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Jobs and workplaces",
+     "g": "Say what you do for a living and where you work.",
+     "p": [
+      "Use a or an with jobs: I'm a teacher, she's an engineer.",
+      "Ask What do you do? to ask about someone's job.",
+      "Say where: A nurse works in a hospital; a chef works in a restaurant."
+     ],
+     "q": "What do you do, or what would you love to do one day?",
+     "c": "Name five jobs of people you know and say where each one works."
+    },
+    "de": {
+     "t": "Berufe und Arbeitsorte",
+     "g": "Du lernst zu sagen, was du beruflich machst und wo du arbeitest.",
+     "p": [
+      "Vor Berufen steht a oder an: I'm a teacher, she's an engineer.",
+      "Frag What do you do?, um nach dem Beruf zu fragen.",
+      "Sag den Ort: A nurse works in a hospital; a chef works in a restaurant."
+     ],
+     "q": "Was machst du beruflich, oder was würdest du gern einmal machen?",
+     "c": "Nenn fünf Berufe von Menschen, die du kennst, und wo sie arbeiten."
+    },
+    "es": {
+     "t": "Profesiones y lugares de trabajo",
+     "g": "Aprende a decir a qué te dedicas y dónde trabajas.",
+     "p": [
+      "Con las profesiones se usa a o an: I'm a teacher, she's an engineer.",
+      "Pregunta What do you do? para saber a qué se dedica alguien.",
+      "Di el lugar: A nurse works in a hospital; a chef works in a restaurant."
+     ],
+     "q": "¿A qué te dedicas, o a qué te encantaría dedicarte algún día?",
+     "c": "Nombra cinco profesiones de gente que conoces y dónde trabaja cada uno."
+    },
+    "fr": {
+     "t": "Métiers et lieux de travail",
+     "g": "Dire quel est ton métier et où tu travailles.",
+     "p": [
+      "Devant un métier, on met a ou an : I'm a teacher, she's an engineer.",
+      "Demande What do you do? pour connaître le métier de quelqu'un.",
+      "Dis le lieu : A nurse works in a hospital ; a chef works in a restaurant."
+     ],
+     "q": "Que fais-tu dans la vie, ou que rêverais-tu de faire un jour ?",
+     "c": "Cite cinq métiers de gens que tu connais et où chacun travaille."
+    },
+    "it": {
+     "t": "Lavori e luoghi di lavoro",
+     "g": "Impari a dire che lavoro fai e dove lavori.",
+     "p": [
+      "Davanti ai mestieri si mette a o an: I'm a teacher, she's an engineer.",
+      "Chiedi What do you do? per sapere che lavoro fa qualcuno.",
+      "Di' il luogo: A nurse works in a hospital; a chef works in a restaurant."
+     ],
+     "q": "Che lavoro fai, o che lavoro ti piacerebbe fare un giorno?",
+     "c": "Nomina cinque lavori di persone che conosci e dove lavora ciascuno."
+    },
+    "pt": {
+     "t": "Profissões e locais de trabalho",
+     "g": "Aprende a dizer o que fazes na vida e onde trabalhas.",
+     "p": [
+      "Antes da profissão usa-se a ou an: I'm a teacher, she's an engineer.",
+      "Pergunta What do you do? para saber a profissão de alguém.",
+      "Diz o local: A nurse works in a hospital; a chef works in a restaurant."
+     ],
+     "q": "O que fazes na vida, ou o que adorarias fazer um dia?",
+     "c": "Diz cinco profissões de pessoas que conheces e onde cada uma trabalha."
+    },
+    "pt_BR": {
+     "t": "Profissões e locais de trabalho",
+     "g": "Aprenda a dizer o que você faz e onde trabalha.",
+     "p": [
+      "Antes da profissão se usa a ou an: I'm a teacher, she's an engineer.",
+      "Pergunte What do you do? para saber a profissão de alguém.",
+      "Diga o lugar: A nurse works in a hospital; a chef works in a restaurant."
+     ],
+     "q": "O que você faz, ou o que adoraria fazer um dia?",
+     "c": "Diga cinco profissões de pessoas que você conhece e onde cada uma trabalha."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "teacher",
+      "ex": "I'm a teacher at a primary school."
+     },
+     {
+      "w": "nurse",
+      "ex": "My aunt is a nurse."
+     },
+     {
+      "w": "engineer",
+      "ex": "He's an engineer."
+     },
+     {
+      "w": "chef",
+      "ex": "She's a chef in a hotel."
+     },
+     {
+      "w": "office",
+      "ex": "I work in an office."
+     },
+     {
+      "w": "What do you do?",
+      "ex": "What do you do? I'm a designer."
+     }
+    ],
+    "gram": "Jobs need a/an: She's a doctor, he's an artist (not She's doctor). Ask: What do you do?"
+   }
+  },
+  {
+   "d": 29,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Adverbs of frequency: always, never",
+     "g": "Say how often you do things and put the adverb in the right place.",
+     "p": [
+      "From most to least: always, usually, often, sometimes, rarely, never.",
+      "Put them before the main verb: I often cook. She never runs.",
+      "But after to be: He is always late. We are sometimes tired."
+     ],
+     "q": "What do you always do in the morning, and what do you never do?",
+     "c": "Write six sentences about your habits, one with each adverb."
+    },
+    "de": {
+     "t": "Häufigkeitsadverbien: always, never",
+     "g": "Du lernst zu sagen, wie oft du etwas machst, und wohin das Adverb gehört.",
+     "p": [
+      "Von oft zu selten: always, usually, often, sometimes, rarely, never.",
+      "Sie stehen vor dem Hauptverb: I often cook. She never runs.",
+      "Aber nach to be: He is always late. We are sometimes tired."
+     ],
+     "q": "Was machst du morgens immer, und was machst du nie?",
+     "c": "Schreib sechs Sätze über deine Gewohnheiten, mit jedem Adverb einmal."
+    },
+    "es": {
+     "t": "Adverbios de frecuencia: always, never",
+     "g": "Aprende a decir con qué frecuencia haces cosas y dónde va el adverbio.",
+     "p": [
+      "De más a menos: always, usually, often, sometimes, rarely, never.",
+      "Van antes del verbo principal: I often cook. She never runs.",
+      "Pero después de to be: He is always late. We are sometimes tired."
+     ],
+     "q": "¿Qué haces siempre por la mañana y qué no haces nunca?",
+     "c": "Escribe seis frases sobre tus hábitos, una con cada adverbio."
+    },
+    "fr": {
+     "t": "Adverbes de fréquence : always, never",
+     "g": "Dire à quelle fréquence tu fais les choses et placer l'adverbe au bon endroit.",
+     "p": [
+      "Du plus au moins : always, usually, often, sometimes, rarely, never.",
+      "Ils se placent avant le verbe principal : I often cook. She never runs.",
+      "Mais après to be : He is always late. We are sometimes tired."
+     ],
+     "q": "Que fais-tu toujours le matin, et que ne fais-tu jamais ?",
+     "c": "Écris six phrases sur tes habitudes, une avec chaque adverbe."
+    },
+    "it": {
+     "t": "Avverbi di frequenza: always, never",
+     "g": "Impari a dire quanto spesso fai le cose e dove mettere l'avverbio.",
+     "p": [
+      "Dal più al meno: always, usually, often, sometimes, rarely, never.",
+      "Vanno prima del verbo principale: I often cook. She never runs.",
+      "Ma dopo to be: He is always late. We are sometimes tired."
+     ],
+     "q": "Cosa fai sempre la mattina, e cosa non fai mai?",
+     "c": "Scrivi sei frasi sulle tue abitudini, una con ogni avverbio."
+    },
+    "pt": {
+     "t": "Advérbios de frequência: always, never",
+     "g": "Aprende a dizer com que frequência fazes as coisas e onde pôr o advérbio.",
+     "p": [
+      "Do mais ao menos: always, usually, often, sometimes, rarely, never.",
+      "Ficam antes do verbo principal: I often cook. She never runs.",
+      "Mas depois de to be: He is always late. We are sometimes tired."
+     ],
+     "q": "O que fazes sempre de manhã, e o que nunca fazes?",
+     "c": "Escreve seis frases sobre os teus hábitos, uma com cada advérbio."
+    },
+    "pt_BR": {
+     "t": "Advérbios de frequência: always, never",
+     "g": "Aprenda a dizer com que frequência você faz as coisas e onde colocar o advérbio.",
+     "p": [
+      "Do mais ao menos: always, usually, often, sometimes, rarely, never.",
+      "Ficam antes do verbo principal: I often cook. She never runs.",
+      "Mas depois de to be: He is always late. We are sometimes tired."
+     ],
+     "q": "O que você sempre faz de manhã, e o que nunca faz?",
+     "c": "Escreva seis frases sobre seus hábitos, uma com cada advérbio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "always",
+      "ex": "I always drink water in the morning."
+     },
+     {
+      "w": "usually",
+      "ex": "We usually eat at eight."
+     },
+     {
+      "w": "often",
+      "ex": "She often reads before bed."
+     },
+     {
+      "w": "sometimes",
+      "ex": "I sometimes walk to work."
+     },
+     {
+      "w": "rarely",
+      "ex": "He rarely watches TV."
+     },
+     {
+      "w": "never",
+      "ex": "They never eat fast food."
+     }
+    ],
+    "gram": "Frequency adverbs go before the main verb (I often swim) but after to be (She is never late)."
+   }
+  },
+  {
+   "d": 30,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month in English",
+     "g": "Look back at your first month and use everything in a friendly chat.",
+     "p": [
+      "You can greet, introduce yourself, spell your name and say where you are from.",
+      "You know to be, numbers, family words, days, months and the time.",
+      "You can talk about routines with the present simple, questions, negatives and always or never."
+     ],
+     "q": "Introduce yourself to me in five sentences: name, origin, age, job and one daily habit.",
+     "c": "Record or write a short self-introduction in English and compare it with day 4."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat Englisch",
+     "g": "Du schaust auf deinen ersten Monat zurück und nutzt alles in einem lockeren Gespräch.",
+     "p": [
+      "Du kannst grüßen, dich vorstellen, buchstabieren und sagen, woher du kommst.",
+      "Du kennst to be, Zahlen, Familie, Wochentage, Monate und die Uhrzeit.",
+      "Du sprichst über Routinen mit present simple, Fragen, Verneinung und always oder never."
+     ],
+     "q": "Stell dich mir in fünf Sätzen vor: Name, Herkunft, Alter, Beruf und eine Gewohnheit.",
+     "c": "Nimm eine kurze Vorstellung auf Englisch auf oder schreib sie und vergleiche mit Tag 4."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes en inglés",
+     "g": "Repasa tu primer mes y úsalo todo en una charla amistosa.",
+     "p": [
+      "Ya sabes saludar, presentarte, deletrear tu nombre y decir de dónde eres.",
+      "Conoces to be, los números, la familia, los días, los meses y la hora.",
+      "Hablas de rutinas con present simple, preguntas, negativas y always o never."
+     ],
+     "q": "Preséntate en cinco frases: nombre, origen, edad, trabajo y un hábito diario.",
+     "c": "Graba o escribe una breve presentación en inglés y compárala con la del día 4."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois d'anglais",
+     "g": "Revenir sur ton premier mois et tout réutiliser dans une conversation amicale.",
+     "p": [
+      "Tu sais saluer, te présenter, épeler ton nom et dire d'où tu viens.",
+      "Tu connais to be, les nombres, la famille, les jours, les mois et l'heure.",
+      "Tu parles de tes routines au present simple, avec questions, négations, always et never."
+     ],
+     "q": "Présente-toi en cinq phrases : prénom, origine, âge, métier et une habitude.",
+     "c": "Enregistre ou écris une courte présentation en anglais et compare-la avec le jour 4."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di inglese",
+     "g": "Ripassi il primo mese e usi tutto in una chiacchierata amichevole.",
+     "p": [
+      "Sai salutare, presentarti, fare lo spelling del nome e dire di dove sei.",
+      "Conosci to be, i numeri, la famiglia, i giorni, i mesi e l'ora.",
+      "Parli di routine con il present simple, domande, negazioni e always o never."
+     ],
+     "q": "Presentati in cinque frasi: nome, origine, età, lavoro e un'abitudine quotidiana.",
+     "c": "Registra o scrivi una breve presentazione in inglese e confrontala con quella del giorno 4."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de inglês",
+     "g": "Revê o primeiro mês e usa tudo numa conversa descontraída.",
+     "p": [
+      "Já sabes cumprimentar, apresentar-te, soletrar o nome e dizer de onde és.",
+      "Conheces to be, números, família, dias, meses e as horas.",
+      "Falas de rotinas com o present simple, perguntas, negativas e always ou never."
+     ],
+     "q": "Apresenta-te em cinco frases: nome, origem, idade, profissão e um hábito diário.",
+     "c": "Grava ou escreve uma pequena apresentação em inglês e compara-a com a do dia 4."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de inglês",
+     "g": "Revise seu primeiro mês e use tudo numa conversa descontraída.",
+     "p": [
+      "Você já sabe cumprimentar, se apresentar, soletrar o nome e dizer de onde é.",
+      "Você conhece to be, números, família, dias, meses e as horas.",
+      "Você fala de rotinas com present simple, perguntas, negativas e always ou never."
+     ],
+     "q": "Se apresente para mim em cinco frases: nome, origem, idade, profissão e um hábito diário.",
+     "c": "Grave ou escreva uma pequena apresentação em inglês e compare com a do dia 4."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Nice to meet you.",
+      "ex": "Hi, I'm Ana. Nice to meet you."
+     },
+     {
+      "w": "I'm from...",
+      "ex": "I'm from Mexico, but I live in Lisbon."
+     },
+     {
+      "w": "years old",
+      "ex": "I'm thirty-two years old."
+     },
+     {
+      "w": "What do you do?",
+      "ex": "What do you do? I'm a nurse."
+     },
+     {
+      "w": "usually",
+      "ex": "I usually get up at seven."
+     },
+     {
+      "w": "on Saturdays",
+      "ex": "I don't work on Saturdays."
+     }
+    ],
+    "gram": "Review: to be (I'm from Peru), present simple (She works, Do you...?, I don't...), always/never."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "A, an and the",
+     "g": "Choose between a, an and the in simple sentences.",
+     "p": [
+      "Use a before a consonant sound: a book, a university.",
+      "Use an before a vowel sound: an apple, an hour.",
+      "Use the for something specific or already known: the book on the table."
+     ],
+     "q": "Can you name three things in your room with a or an?",
+     "c": "Point at ten objects around you today and name each one with a or an."
+    },
+    "de": {
+     "t": "A, an und the",
+     "g": "Du lernst, in einfachen Sätzen zwischen a, an und the zu wählen.",
+     "p": [
+      "A steht vor einem Konsonantenlaut: a book, a university.",
+      "An steht vor einem Vokallaut: an apple, an hour.",
+      "The nimmst du für etwas Bestimmtes oder Bekanntes: the book on the table."
+     ],
+     "q": "Kannst du drei Dinge in deinem Zimmer mit a oder an nennen?",
+     "c": "Zeig heute auf zehn Gegenstände und benenne jeden mit a oder an."
+    },
+    "es": {
+     "t": "A, an y the",
+     "g": "Aprende a elegir entre a, an y the en frases sencillas.",
+     "p": [
+      "A va delante de un sonido consonante: a book, a university.",
+      "An va delante de un sonido vocálico: an apple, an hour.",
+      "The es para algo concreto o ya conocido: the book on the table."
+     ],
+     "q": "¿Puedes nombrar tres cosas de tu habitación con a o an?",
+     "c": "Señala hoy diez objetos a tu alrededor y nómbralos con a o an."
+    },
+    "fr": {
+     "t": "A, an et the",
+     "g": "Choisir entre a, an et the dans des phrases simples.",
+     "p": [
+      "A devant un son de consonne : a book, a university.",
+      "An devant un son de voyelle : an apple, an hour.",
+      "The pour quelque chose de précis ou déjà connu : the book on the table."
+     ],
+     "q": "Peux-tu nommer trois objets de ta chambre avec a ou an ?",
+     "c": "Montre dix objets autour de toi aujourd'hui et nomme chacun avec a ou an."
+    },
+    "it": {
+     "t": "A, an e the",
+     "g": "Impari a scegliere tra a, an e the in frasi semplici.",
+     "p": [
+      "A va davanti a un suono consonantico: a book, a university.",
+      "An va davanti a un suono vocalico: an apple, an hour.",
+      "The si usa per qualcosa di preciso o già noto: the book on the table."
+     ],
+     "q": "Sai nominare tre cose della tua stanza con a o an?",
+     "c": "Indica oggi dieci oggetti intorno a te e nominali con a o an."
+    },
+    "pt": {
+     "t": "A, an e the",
+     "g": "Aprende a escolher entre a, an e the em frases simples.",
+     "p": [
+      "A vem antes de um som de consoante: a book, a university.",
+      "An vem antes de um som de vogal: an apple, an hour.",
+      "The é para algo específico ou já conhecido: the book on the table."
+     ],
+     "q": "Consegues dizer três coisas do teu quarto com a ou an?",
+     "c": "Aponta hoje para dez objetos à tua volta e diz o nome de cada um com a ou an."
+    },
+    "pt_BR": {
+     "t": "A, an e the",
+     "g": "Aprenda a escolher entre a, an e the em frases simples.",
+     "p": [
+      "A vem antes de som de consoante: a book, a university.",
+      "An vem antes de som de vogal: an apple, an hour.",
+      "The é para algo específico ou já conhecido: the book on the table."
+     ],
+     "q": "Você consegue dizer três coisas do seu quarto com a ou an?",
+     "c": "Aponte hoje para dez objetos ao seu redor e diga o nome de cada um com a ou an."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "a book",
+      "ex": "I have a book in my bag."
+     },
+     {
+      "w": "an apple",
+      "ex": "She eats an apple every day."
+     },
+     {
+      "w": "an hour",
+      "ex": "The class is an hour long."
+     },
+     {
+      "w": "a university",
+      "ex": "It's a university in London."
+     },
+     {
+      "w": "an umbrella",
+      "ex": "Take an umbrella, it's cloudy."
+     },
+     {
+      "w": "the door",
+      "ex": "Please close the door."
+     }
+    ],
+    "gram": "A before consonant sounds, an before vowel sounds (sound, not spelling!), the for specific things."
+   }
+  },
+  {
+   "d": 12,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Singular and plural nouns",
+     "g": "Make English nouns plural and learn the most common irregular plurals.",
+     "p": [
+      "Most nouns add -s: one car, two cars.",
+      "Nouns ending in -s, -sh, -ch, -x add -es: bus, buses; box, boxes.",
+      "Some plurals are irregular: child, children; person, people; man, men; woman, women."
+     ],
+     "q": "How many people live in your home? Tell me with plurals.",
+     "c": "Write ten plurals today, including children and people."
+    },
+    "de": {
+     "t": "Singular und Plural",
+     "g": "Du lernst, englische Nomen in den Plural zu setzen, und die häufigsten Ausnahmen.",
+     "p": [
+      "Die meisten Nomen bekommen -s: one car, two cars.",
+      "Endungen auf -s, -sh, -ch, -x bekommen -es: bus, buses; box, boxes.",
+      "Manche Plurale sind unregelmäßig: child, children; person, people; man, men; woman, women."
+     ],
+     "q": "Wie viele Menschen leben bei dir zu Hause? Antworte mit Pluralformen.",
+     "c": "Schreib heute zehn Pluralformen auf, darunter children und people."
+    },
+    "es": {
+     "t": "Sustantivos en singular y plural",
+     "g": "Aprende a formar el plural en inglés y los plurales irregulares más comunes.",
+     "p": [
+      "La mayoría añade -s: one car, two cars.",
+      "Los que terminan en -s, -sh, -ch, -x añaden -es: bus, buses; box, boxes.",
+      "Algunos son irregulares: child, children; person, people; man, men; woman, women."
+     ],
+     "q": "¿Cuántas personas viven en tu casa? Cuéntamelo con plurales.",
+     "c": "Escribe hoy diez plurales, incluidos children y people."
+    },
+    "fr": {
+     "t": "Noms au singulier et au pluriel",
+     "g": "Mettre les noms anglais au pluriel et connaître les pluriels irréguliers courants.",
+     "p": [
+      "La plupart prennent -s : one car, two cars.",
+      "Ceux en -s, -sh, -ch, -x prennent -es : bus, buses ; box, boxes.",
+      "Certains sont irréguliers : child, children ; person, people ; man, men ; woman, women."
+     ],
+     "q": "Combien de personnes vivent chez toi ? Réponds avec des pluriels.",
+     "c": "Écris dix pluriels aujourd'hui, dont children et people."
+    },
+    "it": {
+     "t": "Nomi singolari e plurali",
+     "g": "Impari a formare il plurale in inglese e i plurali irregolari più comuni.",
+     "p": [
+      "La maggior parte aggiunge -s: one car, two cars.",
+      "I nomi in -s, -sh, -ch, -x aggiungono -es: bus, buses; box, boxes.",
+      "Alcuni sono irregolari: child, children; person, people; man, men; woman, women."
+     ],
+     "q": "Quante persone vivono a casa tua? Rispondi usando i plurali.",
+     "c": "Scrivi oggi dieci plurali, compresi children e people."
+    },
+    "pt": {
+     "t": "Nomes no singular e no plural",
+     "g": "Aprende a pôr nomes ingleses no plural e os plurais irregulares mais comuns.",
+     "p": [
+      "A maioria junta -s: one car, two cars.",
+      "Os que acabam em -s, -sh, -ch, -x juntam -es: bus, buses; box, boxes.",
+      "Alguns são irregulares: child, children; person, people; man, men; woman, women."
+     ],
+     "q": "Quantas pessoas vivem na tua casa? Diz-me com plurais.",
+     "c": "Escreve hoje dez plurais, incluindo children e people."
+    },
+    "pt_BR": {
+     "t": "Substantivos no singular e no plural",
+     "g": "Aprenda a formar o plural em inglês e os plurais irregulares mais comuns.",
+     "p": [
+      "A maioria ganha -s: one car, two cars.",
+      "Os terminados em -s, -sh, -ch, -x ganham -es: bus, buses; box, boxes.",
+      "Alguns são irregulares: child, children; person, people; man, men; woman, women."
+     ],
+     "q": "Quantas pessoas moram na sua casa? Me conte usando plurais.",
+     "c": "Escreva hoje dez plurais, incluindo children e people."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cars",
+      "ex": "There are two cars outside."
+     },
+     {
+      "w": "buses",
+      "ex": "The buses are red in London."
+     },
+     {
+      "w": "boxes",
+      "ex": "Put the boxes on the floor."
+     },
+     {
+      "w": "children",
+      "ex": "They have three children."
+     },
+     {
+      "w": "people",
+      "ex": "Many people live here."
+     },
+     {
+      "w": "women",
+      "ex": "Two women are at the door."
+     }
+    ],
+    "gram": "Plural: add -s (cats) or -es after s, sh, ch, x (dishes). Irregular: child-children, man-men, person-people."
+   }
+  },
+  {
+   "d": 13,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "This, that, these, those",
+     "g": "Point to things near and far, one or many, with this, that, these and those.",
+     "p": [
+      "This is for one thing near you; these is for many things near you.",
+      "That is for one thing far away; those is for many things far away.",
+      "Use them before a noun or alone: this cup, Is that yours?"
+     ],
+     "q": "Look around: what can you describe with this and with those?",
+     "c": "Name five things today using this, that, these and those at least once each."
+    },
+    "de": {
+     "t": "This, that, these, those",
+     "g": "Du lernst, mit this, that, these und those auf Nahes und Fernes zu zeigen.",
+     "p": [
+      "This für eine Sache in deiner Nähe, these für mehrere Dinge in der Nähe.",
+      "That für eine Sache weiter weg, those für mehrere Dinge weiter weg.",
+      "Du kannst sie vor einem Nomen oder allein benutzen: this cup, Is that yours?"
+     ],
+     "q": "Schau dich um: Was kannst du mit this und was mit those beschreiben?",
+     "c": "Benenne heute fünf Dinge und nutze dabei this, that, these und those je einmal."
+    },
+    "es": {
+     "t": "This, that, these, those",
+     "g": "Aprende a señalar cosas cercanas y lejanas, una o varias, con this, that, these y those.",
+     "p": [
+      "This es para una cosa cerca; these para varias cosas cerca.",
+      "That es para una cosa lejos; those para varias cosas lejos.",
+      "Puedes usarlos con un sustantivo o solos: this cup, Is that yours?"
+     ],
+     "q": "Mira a tu alrededor: ¿qué puedes describir con this y qué con those?",
+     "c": "Nombra hoy cinco cosas usando this, that, these y those al menos una vez cada uno."
+    },
+    "fr": {
+     "t": "This, that, these, those",
+     "g": "Désigner des choses proches ou lointaines, une ou plusieurs, avec this, that, these, those.",
+     "p": [
+      "This pour une chose proche, these pour plusieurs choses proches.",
+      "That pour une chose éloignée, those pour plusieurs choses éloignées.",
+      "On les met devant un nom ou seuls : this cup, Is that yours?"
+     ],
+     "q": "Regarde autour de toi : que peux-tu décrire avec this, et avec those ?",
+     "c": "Nomme cinq choses aujourd'hui en utilisant this, that, these et those au moins une fois."
+    },
+    "it": {
+     "t": "This, that, these, those",
+     "g": "Impari a indicare cose vicine e lontane, una o tante, con this, that, these e those.",
+     "p": [
+      "This per una cosa vicina, these per più cose vicine.",
+      "That per una cosa lontana, those per più cose lontane.",
+      "Si usano davanti a un nome o da soli: this cup, Is that yours?"
+     ],
+     "q": "Guardati intorno: cosa puoi descrivere con this e cosa con those?",
+     "c": "Nomina oggi cinque cose usando this, that, these e those almeno una volta ciascuno."
+    },
+    "pt": {
+     "t": "This, that, these, those",
+     "g": "Aprende a apontar coisas perto e longe, uma ou várias, com this, that, these e those.",
+     "p": [
+      "This é para uma coisa perto; these para várias coisas perto.",
+      "That é para uma coisa longe; those para várias coisas longe.",
+      "Usam-se antes de um nome ou sozinhos: this cup, Is that yours?"
+     ],
+     "q": "Olha à tua volta: o que podes descrever com this e o que podes descrever com those?",
+     "c": "Diz hoje o nome de cinco coisas usando this, that, these e those pelo menos uma vez."
+    },
+    "pt_BR": {
+     "t": "This, that, these, those",
+     "g": "Aprenda a apontar coisas perto e longe, uma ou várias, com this, that, these e those.",
+     "p": [
+      "This é para uma coisa perto; these para várias coisas perto.",
+      "That é para uma coisa longe; those para várias coisas longe.",
+      "Dá para usar antes de um substantivo ou sozinho: this cup, Is that yours?"
+     ],
+     "q": "Olhe ao redor: o que você descreve com this e o que descreve com those?",
+     "c": "Fale hoje o nome de cinco coisas usando this, that, these e those pelo menos uma vez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "this",
+      "ex": "This cup is hot."
+     },
+     {
+      "w": "that",
+      "ex": "Is that your car?"
+     },
+     {
+      "w": "these",
+      "ex": "These shoes are new."
+     },
+     {
+      "w": "those",
+      "ex": "Those birds are beautiful."
+     },
+     {
+      "w": "What's this?",
+      "ex": "What's this in English?"
+     },
+     {
+      "w": "over there",
+      "ex": "That shop over there is great."
+     }
+    ],
+    "gram": "Near: this (one), these (many). Far: that (one), those (many). These books are mine; that one is yours."
+   }
+  },
+  {
+   "d": 14,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Family members",
+     "g": "Name the people in your family and talk about them in English.",
+     "p": [
+      "Parents are your mother and father; mum and dad are the friendly words.",
+      "Siblings are brothers and sisters; grandparents are grandmother and grandfather.",
+      "Aunts, uncles and cousins complete the picture: My cousin is ten."
+     ],
+     "q": "Who is in your family? Tell me about one person you love.",
+     "c": "Draw a small family tree today and label it in English."
+    },
+    "de": {
+     "t": "Familienmitglieder",
+     "g": "Du lernst, die Menschen deiner Familie auf Englisch zu benennen.",
+     "p": [
+      "Parents sind mother und father; mum und dad sind die liebevollen Wörter.",
+      "Geschwister heißen brothers und sisters; Großeltern grandmother und grandfather.",
+      "Aunts, uncles und cousins vervollständigen das Bild: My cousin is ten."
+     ],
+     "q": "Wer gehört zu deiner Familie? Erzähl mir von einer Person, die du liebst.",
+     "c": "Zeichne heute einen kleinen Stammbaum und beschrifte ihn auf Englisch."
+    },
+    "es": {
+     "t": "Los miembros de la familia",
+     "g": "Aprende a nombrar a tu familia y a hablar de ella en inglés.",
+     "p": [
+      "Parents son mother y father; mum y dad son las palabras cariñosas.",
+      "Los hermanos son brothers y sisters; los abuelos, grandmother y grandfather.",
+      "Aunts, uncles y cousins completan el cuadro: My cousin is ten."
+     ],
+     "q": "¿Quién forma tu familia? Háblame de una persona a la que quieras.",
+     "c": "Dibuja hoy un pequeño árbol genealógico y escribe los nombres en inglés."
+    },
+    "fr": {
+     "t": "Les membres de la famille",
+     "g": "Nommer les membres de ta famille et parler d'eux en anglais.",
+     "p": [
+      "Parents, ce sont mother et father ; mum et dad sont les mots affectueux.",
+      "Frères et sœurs : brothers et sisters ; grands-parents : grandmother et grandfather.",
+      "Aunts, uncles et cousins complètent le tableau : My cousin is ten."
+     ],
+     "q": "Qui compose ta famille ? Parle-moi d'une personne que tu aimes.",
+     "c": "Dessine un petit arbre généalogique aujourd'hui et annote-le en anglais."
+    },
+    "it": {
+     "t": "I membri della famiglia",
+     "g": "Impari a nominare i tuoi familiari e a parlarne in inglese.",
+     "p": [
+      "Parents sono mother e father; mum e dad sono le parole affettuose.",
+      "Fratelli e sorelle sono brothers e sisters; i nonni grandmother e grandfather.",
+      "Aunts, uncles e cousins completano il quadro: My cousin is ten."
+     ],
+     "q": "Chi c'è nella tua famiglia? Parlami di una persona a cui vuoi bene.",
+     "c": "Disegna oggi un piccolo albero genealogico e scrivi le etichette in inglese."
+    },
+    "pt": {
+     "t": "Os membros da família",
+     "g": "Aprende a dizer quem é quem na tua família e a falar dela em inglês.",
+     "p": [
+      "Parents são mother e father; mum e dad são as palavras carinhosas.",
+      "Irmãos são brothers e sisters; avós são grandmother e grandfather.",
+      "Aunts, uncles e cousins completam o quadro: My cousin is ten."
+     ],
+     "q": "Quem faz parte da tua família? Fala-me de uma pessoa de quem gostas muito.",
+     "c": "Desenha hoje uma pequena árvore genealógica e escreve os nomes em inglês."
+    },
+    "pt_BR": {
+     "t": "Os membros da família",
+     "g": "Aprenda a dizer quem é quem na sua família e a falar dela em inglês.",
+     "p": [
+      "Parents são mother e father; mom e dad são as palavras carinhosas.",
+      "Irmãos são brothers e sisters; avós são grandmother e grandfather.",
+      "Aunts, uncles e cousins completam o quadro: My cousin is ten."
+     ],
+     "q": "Quem faz parte da sua família? Me conte sobre uma pessoa que você ama.",
+     "c": "Desenhe hoje uma pequena árvore genealógica e escreva os nomes em inglês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mother / mum",
+      "ex": "My mum is a nurse."
+     },
+     {
+      "w": "father / dad",
+      "ex": "My dad loves football."
+     },
+     {
+      "w": "sister",
+      "ex": "I have one sister."
+     },
+     {
+      "w": "brother",
+      "ex": "My brother lives in Rome."
+     },
+     {
+      "w": "grandparents",
+      "ex": "My grandparents live near us."
+     },
+     {
+      "w": "cousin",
+      "ex": "My cousin Lia is twelve."
+     }
+    ],
+    "gram": "Mum is British English, mom is American English. Cousin is the same word for a boy or a girl."
+   }
+  },
+  {
+   "d": 15,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessive adjectives: my, your, his",
+     "g": "Say whose things and people are with my, your, his, her, its, our and their.",
+     "p": [
+      "I-my, you-your, he-his, she-her, it-its, we-our, they-their.",
+      "His is for a man, her is for a woman: his car, her bag.",
+      "They never change for plurals: my friends, their children."
+     ],
+     "q": "Can you tell me about your best friend using his or her?",
+     "c": "Write six sentences about your family, using a different possessive in each."
+    },
+    "de": {
+     "t": "Possessivbegleiter: my, your, his",
+     "g": "Du lernst, mit my, your, his, her, its, our und their Besitz auszudrücken.",
+     "p": [
+      "I-my, you-your, he-his, she-her, it-its, we-our, they-their.",
+      "His gehört zu einem Mann, her zu einer Frau: his car, her bag.",
+      "Sie ändern sich nie im Plural: my friends, their children."
+     ],
+     "q": "Erzählst du mir mit his oder her von deinem besten Freund oder deiner besten Freundin?",
+     "c": "Schreib sechs Sätze über deine Familie, jeweils mit einem anderen Possessiv."
+    },
+    "es": {
+     "t": "Adjetivos posesivos: my, your, his",
+     "g": "Aprende a decir de quién son las cosas con my, your, his, her, its, our y their.",
+     "p": [
+      "I-my, you-your, he-his, she-her, it-its, we-our, they-their.",
+      "His es de un hombre y her de una mujer: his car, her bag.",
+      "Nunca cambian en plural: my friends, their children."
+     ],
+     "q": "¿Me hablas de tu mejor amigo o amiga usando his o her?",
+     "c": "Escribe seis frases sobre tu familia, cada una con un posesivo distinto."
+    },
+    "fr": {
+     "t": "Adjectifs possessifs : my, your, his",
+     "g": "Dire à qui sont les choses et les personnes avec my, your, his, her, its, our, their.",
+     "p": [
+      "I-my, you-your, he-his, she-her, it-its, we-our, they-their.",
+      "His se rapporte à un homme, her à une femme : his car, her bag.",
+      "Ils ne s'accordent jamais au pluriel : my friends, their children."
+     ],
+     "q": "Parle-moi de ton meilleur ami ou de ta meilleure amie avec his ou her.",
+     "c": "Écris six phrases sur ta famille, avec un possessif différent dans chacune."
+    },
+    "it": {
+     "t": "Aggettivi possessivi: my, your, his",
+     "g": "Impari a dire di chi sono cose e persone con my, your, his, her, its, our e their.",
+     "p": [
+      "I-my, you-your, he-his, she-her, it-its, we-our, they-their.",
+      "His si riferisce a un uomo, her a una donna: his car, her bag.",
+      "Non cambiano mai al plurale: my friends, their children."
+     ],
+     "q": "Mi parli del tuo migliore amico o amica usando his o her?",
+     "c": "Scrivi sei frasi sulla tua famiglia, ognuna con un possessivo diverso."
+    },
+    "pt": {
+     "t": "Possessivos: my, your, his",
+     "g": "Aprende a dizer de quem são as coisas com my, your, his, her, its, our e their.",
+     "p": [
+      "I-my, you-your, he-his, she-her, it-its, we-our, they-their.",
+      "His refere-se a um homem e her a uma mulher: his car, her bag.",
+      "Nunca mudam no plural: my friends, their children."
+     ],
+     "q": "Falas-me do teu melhor amigo ou amiga usando his ou her?",
+     "c": "Escreve seis frases sobre a tua família, cada uma com um possessivo diferente."
+    },
+    "pt_BR": {
+     "t": "Possessivos: my, your, his",
+     "g": "Aprenda a dizer de quem são as coisas com my, your, his, her, its, our e their.",
+     "p": [
+      "I-my, you-your, he-his, she-her, it-its, we-our, they-their.",
+      "His é de um homem e her de uma mulher: his car, her bag.",
+      "Nunca mudam no plural: my friends, their children."
+     ],
+     "q": "Você me fala do seu melhor amigo ou amiga usando his ou her?",
+     "c": "Escreva seis frases sobre sua família, cada uma com um possessivo diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "my",
+      "ex": "My name is Ana."
+     },
+     {
+      "w": "your",
+      "ex": "Is this your phone?"
+     },
+     {
+      "w": "his",
+      "ex": "His brother is a doctor."
+     },
+     {
+      "w": "her",
+      "ex": "Her car is blue."
+     },
+     {
+      "w": "our",
+      "ex": "Our house is small."
+     },
+     {
+      "w": "their",
+      "ex": "Their children are at school."
+     }
+    ],
+    "gram": "Possessives: my, your, his, her, its, our, their. Its has no apostrophe: The dog wants its ball."
+   }
+  },
+  {
+   "d": 16,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing people: tall, short, kind",
+     "g": "Describe how people look and what they are like with simple adjectives.",
+     "p": [
+      "For looks: tall, short, young, old, with long or short hair.",
+      "For character: kind, funny, friendly, quiet, clever.",
+      "Adjectives go before the noun: a kind teacher, not a teacher kind."
+     ],
+     "q": "Describe a good friend of yours with two adjectives for looks and two for character.",
+     "c": "Describe three people you see today in your head with one English adjective each."
+    },
+    "de": {
+     "t": "Menschen beschreiben: tall, short, kind",
+     "g": "Du lernst, Aussehen und Charakter mit einfachen Adjektiven zu beschreiben.",
+     "p": [
+      "Fürs Aussehen: tall, short, young, old, with long oder short hair.",
+      "Für den Charakter: kind, funny, friendly, quiet, clever.",
+      "Adjektive stehen vor dem Nomen: a kind teacher, nicht a teacher kind."
+     ],
+     "q": "Beschreib einen guten Freund mit zwei Adjektiven fürs Aussehen und zwei für den Charakter.",
+     "c": "Beschreib heute im Kopf drei Menschen, die du siehst, mit je einem englischen Adjektiv."
+    },
+    "es": {
+     "t": "Describir personas: tall, short, kind",
+     "g": "Aprende a describir el aspecto y el carácter con adjetivos sencillos.",
+     "p": [
+      "Para el aspecto: tall, short, young, old, with long o short hair.",
+      "Para el carácter: kind, funny, friendly, quiet, clever.",
+      "El adjetivo va antes del sustantivo: a kind teacher, no a teacher kind."
+     ],
+     "q": "Describe a un buen amigo con dos adjetivos de aspecto y dos de carácter.",
+     "c": "Describe hoy mentalmente a tres personas que veas, con un adjetivo en inglés cada una."
+    },
+    "fr": {
+     "t": "Décrire les gens : tall, short, kind",
+     "g": "Décrire l'apparence et le caractère avec des adjectifs simples.",
+     "p": [
+      "Pour l'apparence : tall, short, young, old, with long ou short hair.",
+      "Pour le caractère : kind, funny, friendly, quiet, clever.",
+      "L'adjectif se place avant le nom : a kind teacher, pas a teacher kind."
+     ],
+     "q": "Décris un bon ami avec deux adjectifs pour le physique et deux pour le caractère.",
+     "c": "Décris dans ta tête trois personnes croisées aujourd'hui avec un adjectif anglais chacune."
+    },
+    "it": {
+     "t": "Descrivere le persone: tall, short, kind",
+     "g": "Impari a descrivere aspetto e carattere con aggettivi semplici.",
+     "p": [
+      "Per l'aspetto: tall, short, young, old, with long o short hair.",
+      "Per il carattere: kind, funny, friendly, quiet, clever.",
+      "L'aggettivo va prima del nome: a kind teacher, non a teacher kind."
+     ],
+     "q": "Descrivi un tuo buon amico con due aggettivi per l'aspetto e due per il carattere.",
+     "c": "Descrivi oggi mentalmente tre persone che vedi, con un aggettivo inglese ciascuna."
+    },
+    "pt": {
+     "t": "Descrever pessoas: tall, short, kind",
+     "g": "Aprende a descrever o aspeto e a personalidade com adjetivos simples.",
+     "p": [
+      "Para o aspeto: tall, short, young, old, with long ou short hair.",
+      "Para a personalidade: kind, funny, friendly, quiet, clever.",
+      "O adjetivo vem antes do nome: a kind teacher, e não a teacher kind."
+     ],
+     "q": "Descreve um bom amigo com dois adjetivos de aspeto e dois de personalidade.",
+     "c": "Descreve hoje mentalmente três pessoas que vires, com um adjetivo em inglês cada."
+    },
+    "pt_BR": {
+     "t": "Descrevendo pessoas: tall, short, kind",
+     "g": "Aprenda a descrever a aparência e a personalidade com adjetivos simples.",
+     "p": [
+      "Para a aparência: tall, short, young, old, with long ou short hair.",
+      "Para a personalidade: kind, funny, friendly, quiet, clever.",
+      "O adjetivo vem antes do substantivo: a kind teacher, e não a teacher kind."
+     ],
+     "q": "Descreva um bom amigo com dois adjetivos de aparência e dois de personalidade.",
+     "c": "Descreva hoje mentalmente três pessoas que você vir, com um adjetivo em inglês cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tall",
+      "ex": "My brother is very tall."
+     },
+     {
+      "w": "short",
+      "ex": "She's short with long hair."
+     },
+     {
+      "w": "kind",
+      "ex": "He's a kind man."
+     },
+     {
+      "w": "funny",
+      "ex": "My dad is really funny."
+     },
+     {
+      "w": "friendly",
+      "ex": "Our neighbours are friendly."
+     },
+     {
+      "w": "quiet",
+      "ex": "Tom is a quiet student."
+     }
+    ],
+    "gram": "Adjective before the noun: a tall woman, a funny friend. After to be: She is tall. He is funny."
+   }
+  },
+  {
+   "d": 17,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Colours and simple adjectives",
+     "g": "Use colours and basic adjectives like big, small, new and old.",
+     "p": [
+      "Main colours: red, blue, green, yellow, black, white, brown, grey.",
+      "Basic adjectives: big, small, new, old, long, short.",
+      "Adjectives never take -s: red cars, big houses, never reds cars."
+     ],
+     "q": "What colour is your favourite piece of clothing?",
+     "c": "Describe five things you own with a colour and one more adjective: a small black bag."
+    },
+    "de": {
+     "t": "Farben und einfache Adjektive",
+     "g": "Du lernst Farben und Grundadjektive wie big, small, new und old.",
+     "p": [
+      "Hauptfarben: red, blue, green, yellow, black, white, brown, grey.",
+      "Grundadjektive: big, small, new, old, long, short.",
+      "Adjektive bekommen nie ein -s: red cars, big houses, niemals reds cars."
+     ],
+     "q": "Welche Farbe hat dein Lieblingskleidungsstück?",
+     "c": "Beschreib fünf Dinge, die dir gehören, mit Farbe und einem Adjektiv: a small black bag."
+    },
+    "es": {
+     "t": "Colores y adjetivos sencillos",
+     "g": "Aprende los colores y adjetivos básicos como big, small, new y old.",
+     "p": [
+      "Colores principales: red, blue, green, yellow, black, white, brown, grey.",
+      "Adjetivos básicos: big, small, new, old, long, short.",
+      "Los adjetivos nunca llevan -s: red cars, big houses, nunca reds cars."
+     ],
+     "q": "¿De qué color es tu prenda de ropa favorita?",
+     "c": "Describe cinco cosas tuyas con un color y otro adjetivo: a small black bag."
+    },
+    "fr": {
+     "t": "Couleurs et adjectifs simples",
+     "g": "Utiliser les couleurs et des adjectifs de base comme big, small, new et old.",
+     "p": [
+      "Couleurs principales : red, blue, green, yellow, black, white, brown, grey.",
+      "Adjectifs de base : big, small, new, old, long, short.",
+      "Les adjectifs ne prennent jamais de -s : red cars, big houses, jamais reds cars."
+     ],
+     "q": "De quelle couleur est ton vêtement préféré ?",
+     "c": "Décris cinq objets à toi avec une couleur et un autre adjectif : a small black bag."
+    },
+    "it": {
+     "t": "Colori e aggettivi semplici",
+     "g": "Impari i colori e aggettivi di base come big, small, new e old.",
+     "p": [
+      "Colori principali: red, blue, green, yellow, black, white, brown, grey.",
+      "Aggettivi di base: big, small, new, old, long, short.",
+      "Gli aggettivi non prendono mai la -s: red cars, big houses, mai reds cars."
+     ],
+     "q": "Di che colore è il tuo capo d'abbigliamento preferito?",
+     "c": "Descrivi cinque cose tue con un colore e un altro aggettivo: a small black bag."
+    },
+    "pt": {
+     "t": "Cores e adjetivos simples",
+     "g": "Aprende as cores e adjetivos básicos como big, small, new e old.",
+     "p": [
+      "Cores principais: red, blue, green, yellow, black, white, brown, grey.",
+      "Adjetivos básicos: big, small, new, old, long, short.",
+      "Os adjetivos nunca levam -s: red cars, big houses, nunca reds cars."
+     ],
+     "q": "De que cor é a tua peça de roupa preferida?",
+     "c": "Descreve cinco coisas tuas com uma cor e outro adjetivo: a small black bag."
+    },
+    "pt_BR": {
+     "t": "Cores e adjetivos simples",
+     "g": "Aprenda as cores e adjetivos básicos como big, small, new e old.",
+     "p": [
+      "Cores principais: red, blue, green, yellow, black, white, brown, gray.",
+      "Adjetivos básicos: big, small, new, old, long, short.",
+      "Adjetivos nunca levam -s: red cars, big houses, nunca reds cars."
+     ],
+     "q": "Qual é a cor da sua roupa favorita?",
+     "c": "Descreva cinco coisas suas com uma cor e outro adjetivo: a small black bag."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "red",
+      "ex": "I have a red jacket."
+     },
+     {
+      "w": "blue",
+      "ex": "The sky is blue today."
+     },
+     {
+      "w": "green",
+      "ex": "Green is my favourite colour."
+     },
+     {
+      "w": "big",
+      "ex": "They live in a big house."
+     },
+     {
+      "w": "small",
+      "ex": "It's a small dog."
+     },
+     {
+      "w": "old",
+      "ex": "This is an old photo."
+     }
+    ],
+    "gram": "Adjectives never change: a red car, two red cars. Order: size before colour, a big black dog."
+   }
+  },
+  {
+   "d": 18,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 21 to 100",
+     "g": "Build numbers from twenty-one to one hundred and hear thirteen versus thirty.",
+     "p": [
+      "Tens: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.",
+      "Join tens and units with a hyphen: twenty-one, forty-five, ninety-nine.",
+      "Thirteen stresses the end (thir-TEEN); thirty stresses the start (THIR-ty)."
+     ],
+     "q": "What number from 21 to 100 is important to you, and why?",
+     "c": "Read aloud five numbers you see today, like prices or house numbers, in English."
+    },
+    "de": {
+     "t": "Zahlen von 21 bis 100",
+     "g": "Du lernst die Zahlen von einundzwanzig bis hundert und den Unterschied thirteen-thirty.",
+     "p": [
+      "Zehner: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.",
+      "Zehner und Einer verbindet ein Bindestrich: twenty-one, forty-five, ninety-nine.",
+      "Thirteen betont das Ende (thir-TEEN), thirty den Anfang (THIR-ty)."
+     ],
+     "q": "Welche Zahl zwischen 21 und 100 ist dir wichtig, und warum?",
+     "c": "Lies heute fünf Zahlen, die du siehst, etwa Hausnummern, laut auf Englisch."
+    },
+    "es": {
+     "t": "Números del 21 al 100",
+     "g": "Aprende a formar números del veintiuno al cien y a distinguir thirteen de thirty.",
+     "p": [
+      "Decenas: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.",
+      "Une decenas y unidades con guion: twenty-one, forty-five, ninety-nine.",
+      "Thirteen se acentúa al final (thir-TEEN); thirty al principio (THIR-ty)."
+     ],
+     "q": "¿Qué número del 21 al 100 es importante para ti y por qué?",
+     "c": "Lee hoy en voz alta en inglés cinco números que veas, como portales o autobuses."
+    },
+    "fr": {
+     "t": "Les nombres de 21 à 100",
+     "g": "Former les nombres de vingt et un à cent et distinguer thirteen de thirty.",
+     "p": [
+      "Dizaines : twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.",
+      "Dizaines et unités avec un trait d'union : twenty-one, forty-five, ninety-nine.",
+      "Thirteen s'accentue à la fin (thir-TEEN), thirty au début (THIR-ty)."
+     ],
+     "q": "Quel nombre entre 21 et 100 compte pour toi, et pourquoi ?",
+     "c": "Lis à voix haute en anglais cinq nombres que tu vois aujourd'hui, comme des numéros de rue."
+    },
+    "it": {
+     "t": "I numeri da 21 a 100",
+     "g": "Impari a formare i numeri da ventuno a cento e a distinguere thirteen da thirty.",
+     "p": [
+      "Decine: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.",
+      "Unisci decine e unità con il trattino: twenty-one, forty-five, ninety-nine.",
+      "Thirteen ha l'accento alla fine (thir-TEEN), thirty all'inizio (THIR-ty)."
+     ],
+     "q": "Quale numero tra 21 e 100 è importante per te, e perché?",
+     "c": "Leggi ad alta voce in inglese cinque numeri che vedi oggi, come i civici o gli autobus."
+    },
+    "pt": {
+     "t": "Números de 21 a 100",
+     "g": "Aprende a formar números de vinte e um a cem e a distinguir thirteen de thirty.",
+     "p": [
+      "Dezenas: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.",
+      "Junta dezenas e unidades com hífen: twenty-one, forty-five, ninety-nine.",
+      "Thirteen tem acento no fim (thir-TEEN); thirty no início (THIR-ty)."
+     ],
+     "q": "Que número de 21 a 100 é importante para ti, e porquê?",
+     "c": "Lê hoje em voz alta, em inglês, cinco números que vires, como portas ou autocarros."
+    },
+    "pt_BR": {
+     "t": "Números de 21 a 100",
+     "g": "Aprenda a formar números de vinte e um a cem e a diferenciar thirteen de thirty.",
+     "p": [
+      "Dezenas: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.",
+      "Junte dezenas e unidades com hífen: twenty-one, forty-five, ninety-nine.",
+      "Thirteen tem a tônica no fim (thir-TEEN); thirty no começo (THIR-ty)."
+     ],
+     "q": "Qual número de 21 a 100 é importante para você, e por quê?",
+     "c": "Leia hoje em voz alta, em inglês, cinco números que você vir, como de casas ou ônibus."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "twenty-one",
+      "ex": "She's twenty-one today."
+     },
+     {
+      "w": "thirty",
+      "ex": "The bus takes thirty minutes."
+     },
+     {
+      "w": "forty-five",
+      "ex": "Turn to page forty-five."
+     },
+     {
+      "w": "sixty",
+      "ex": "My grandpa is sixty."
+     },
+     {
+      "w": "ninety-nine",
+      "ex": "I have ninety-nine songs on this list."
+     },
+     {
+      "w": "one hundred",
+      "ex": "There are one hundred people here."
+     }
+    ],
+    "gram": "Join tens and units with a hyphen: thirty-two. Stress: thirTEEN (13) but THIRty (30)."
+   }
+  },
+  {
+   "d": 19,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling your age and phone number",
+     "g": "Say how old you are and read phone numbers clearly in English.",
+     "p": [
+      "Say I'm twenty-five or I'm twenty-five years old, never I have twenty-five.",
+      "Ask How old are you? only when it feels polite and friendly.",
+      "Read phone numbers digit by digit; 0 is often oh, and 77 is double seven."
+     ],
+     "q": "How would you read the number 0 7 7 3 5 aloud in English?",
+     "c": "Say your age and a phone number you know by heart aloud in English."
+    },
+    "de": {
+     "t": "Alter und Telefonnummer nennen",
+     "g": "Du lernst, dein Alter zu sagen und Telefonnummern deutlich vorzulesen.",
+     "p": [
+      "Sag I'm twenty-five oder I'm twenty-five years old, nie I have twenty-five.",
+      "Frag How old are you? nur, wenn es höflich und passend ist.",
+      "Telefonnummern liest man Ziffer für Ziffer; 0 heißt oft oh, 77 heißt double seven."
+     ],
+     "q": "Wie liest du die Nummer 0 7 7 3 5 laut auf Englisch?",
+     "c": "Sag dein Alter und eine Nummer, die du auswendig kennst, laut auf Englisch."
+    },
+    "es": {
+     "t": "Decir tu edad y tu teléfono",
+     "g": "Aprende a decir cuántos años tienes y a leer números de teléfono con claridad.",
+     "p": [
+      "Di I'm twenty-five o I'm twenty-five years old, nunca I have twenty-five.",
+      "Pregunta How old are you? solo cuando resulte educado y natural.",
+      "Los teléfonos se leen dígito a dígito; el 0 suele ser oh y el 77, double seven."
+     ],
+     "q": "¿Cómo leerías en voz alta en inglés el número 0 7 7 3 5?",
+     "c": "Di en voz alta en inglés tu edad y un número de teléfono que sepas de memoria."
+    },
+    "fr": {
+     "t": "Dire son âge et son numéro",
+     "g": "Dire ton âge et lire clairement un numéro de téléphone en anglais.",
+     "p": [
+      "Dis I'm twenty-five ou I'm twenty-five years old, jamais I have twenty-five.",
+      "Ne demande How old are you? que si c'est poli et naturel.",
+      "On lit les numéros chiffre par chiffre ; 0 se dit souvent oh, et 77 double seven."
+     ],
+     "q": "Comment lirais-tu à voix haute en anglais le numéro 0 7 7 3 5 ?",
+     "c": "Dis à voix haute en anglais ton âge et un numéro que tu connais par cœur."
+    },
+    "it": {
+     "t": "Dire l'età e il numero di telefono",
+     "g": "Impari a dire quanti anni hai e a leggere bene i numeri di telefono.",
+     "p": [
+      "Di' I'm twenty-five o I'm twenty-five years old, mai I have twenty-five.",
+      "Chiedi How old are you? solo quando è educato e naturale.",
+      "I numeri si leggono cifra per cifra; lo 0 spesso è oh e 77 è double seven."
+     ],
+     "q": "Come leggeresti ad alta voce in inglese il numero 0 7 7 3 5?",
+     "c": "Di' ad alta voce in inglese la tua età e un numero che sai a memoria."
+    },
+    "pt": {
+     "t": "Dizer a idade e o número de telefone",
+     "g": "Aprende a dizer quantos anos tens e a ler números de telefone com clareza.",
+     "p": [
+      "Diz I'm twenty-five ou I'm twenty-five years old, nunca I have twenty-five.",
+      "Pergunta How old are you? só quando for educado e natural.",
+      "Os números leem-se dígito a dígito; o 0 é muitas vezes oh e 77 é double seven."
+     ],
+     "q": "Como lerias em voz alta em inglês o número 0 7 7 3 5?",
+     "c": "Diz em voz alta, em inglês, a tua idade e um número que saibas de cor."
+    },
+    "pt_BR": {
+     "t": "Dizendo sua idade e seu telefone",
+     "g": "Aprenda a dizer sua idade e a ler números de telefone com clareza.",
+     "p": [
+      "Diga I'm twenty-five ou I'm twenty-five years old, nunca I have twenty-five.",
+      "Pergunte How old are you? só quando for educado e natural.",
+      "Telefones se leem dígito por dígito; o 0 muitas vezes é oh e 77 é double seven."
+     ],
+     "q": "Como você leria em voz alta em inglês o número 0 7 7 3 5?",
+     "c": "Fale em voz alta, em inglês, sua idade e um número que você sabe de cor."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "How old are you?",
+      "ex": "How old are you, Mia?"
+     },
+     {
+      "w": "years old",
+      "ex": "I'm thirty years old."
+     },
+     {
+      "w": "phone number",
+      "ex": "What's your phone number?"
+     },
+     {
+      "w": "oh",
+      "ex": "It's oh two oh, five six."
+     },
+     {
+      "w": "double",
+      "ex": "My number ends in double four."
+     },
+     {
+      "w": "mobile",
+      "ex": "Can I have your mobile number?"
+     }
+    ],
+    "gram": "Age uses to be, not have: I am 25 (years old). Read phone numbers one digit at a time."
+   }
+  },
+  {
+   "d": 20,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Days of the week",
+     "g": "Name the days of the week and use them with on and at the weekend.",
+     "p": [
+      "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+      "Days always start with a capital letter in English.",
+      "Use on for days (on Monday) and at the weekend in British English, on the weekend in American."
+     ],
+     "q": "What is your favourite day of the week, and what do you do on that day?",
+     "c": "Say what you do on each day of this week in one short English sentence."
+    },
+    "de": {
+     "t": "Die Wochentage",
+     "g": "Du lernst die Wochentage und ihren Gebrauch mit on und at the weekend.",
+     "p": [
+      "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+      "Wochentage schreibt man im Englischen immer groß.",
+      "On steht vor Tagen (on Monday); britisch at the weekend, amerikanisch on the weekend."
+     ],
+     "q": "Was ist dein Lieblingstag der Woche, und was machst du dann?",
+     "c": "Sag für jeden Tag dieser Woche in einem kurzen Satz, was du machst."
+    },
+    "es": {
+     "t": "Los días de la semana",
+     "g": "Aprende los días de la semana y a usarlos con on y at the weekend.",
+     "p": [
+      "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+      "En inglés los días siempre van con mayúscula.",
+      "Usa on con los días (on Monday); en británico at the weekend, en americano on the weekend."
+     ],
+     "q": "¿Cuál es tu día favorito de la semana y qué haces ese día?",
+     "c": "Di una frase corta en inglés sobre lo que haces cada día de esta semana."
+    },
+    "fr": {
+     "t": "Les jours de la semaine",
+     "g": "Nommer les jours de la semaine et les utiliser avec on et at the weekend.",
+     "p": [
+      "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+      "En anglais, les jours prennent toujours une majuscule.",
+      "On devant les jours (on Monday) ; at the weekend en britannique, on the weekend en américain."
+     ],
+     "q": "Quel est ton jour préféré de la semaine, et que fais-tu ce jour-là ?",
+     "c": "Dis en une phrase courte en anglais ce que tu fais chaque jour de cette semaine."
+    },
+    "it": {
+     "t": "I giorni della settimana",
+     "g": "Impari i giorni della settimana e a usarli con on e at the weekend.",
+     "p": [
+      "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+      "In inglese i giorni hanno sempre la maiuscola.",
+      "On davanti ai giorni (on Monday); at the weekend in britannico, on the weekend in americano."
+     ],
+     "q": "Qual è il tuo giorno preferito della settimana, e cosa fai quel giorno?",
+     "c": "Di' in una frase breve in inglese cosa fai ogni giorno di questa settimana."
+    },
+    "pt": {
+     "t": "Os dias da semana",
+     "g": "Aprende os dias da semana e a usá-los com on e at the weekend.",
+     "p": [
+      "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+      "Em inglês os dias levam sempre maiúscula.",
+      "On antes dos dias (on Monday); at the weekend no inglês britânico, on the weekend no americano."
+     ],
+     "q": "Qual é o teu dia preferido da semana, e o que fazes nesse dia?",
+     "c": "Diz numa frase curta em inglês o que fazes em cada dia desta semana."
+    },
+    "pt_BR": {
+     "t": "Os dias da semana",
+     "g": "Aprenda os dias da semana e a usá-los com on e on the weekend.",
+     "p": [
+      "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.",
+      "Em inglês os dias sempre têm letra maiúscula.",
+      "On antes dos dias (on Monday); on the weekend no inglês americano, at the weekend no britânico."
+     ],
+     "q": "Qual é o seu dia favorito da semana, e o que você faz nesse dia?",
+     "c": "Fale numa frase curta em inglês o que você faz em cada dia desta semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Monday",
+      "ex": "I go to the gym on Monday."
+     },
+     {
+      "w": "Wednesday",
+      "ex": "We have English on Wednesday."
+     },
+     {
+      "w": "Friday",
+      "ex": "Friday is my favourite day."
+     },
+     {
+      "w": "Saturday",
+      "ex": "On Saturday I sleep late."
+     },
+     {
+      "w": "the weekend",
+      "ex": "What do you do at the weekend?"
+     },
+     {
+      "w": "every day",
+      "ex": "I read every day."
+     }
+    ],
+    "gram": "Days take a capital letter and the preposition on: on Tuesday, on Sunday morning."
+   }
+  }
+ ]
+}

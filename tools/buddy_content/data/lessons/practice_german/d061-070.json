@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 61,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prepositions with dative",
+     "g": "Learn the seven prepositions that always take the dative: aus, bei, mit, nach, seit, von, zu.",
+     "p": [
+      "After aus, bei, mit, nach, seit, von and zu the article changes: dem for der and das, der for die, den plus -n in the plural.",
+      "Short forms are very common: zu dem becomes zum, zu der becomes zur, bei dem becomes beim, von dem becomes vom.",
+      "Nach is for cities and countries without an article (nach Berlin), zu is for people and places (zum Arzt, zu Anna)."
+     ],
+     "q": "Where do you come from, who do you live with and how do you go to work? Answer with aus, bei and mit.",
+     "c": "Write three sentences about your day using mit dem Bus, zum Supermarkt and seit einem Jahr."
+    },
+    "de": {
+     "t": "Präpositionen mit Dativ",
+     "g": "Du lernst die sieben Präpositionen, die immer den Dativ haben: aus, bei, mit, nach, seit, von, zu.",
+     "p": [
+      "Nach aus, bei, mit, nach, seit, von und zu ändert sich der Artikel: dem für der und das, der für die, den plus -n im Plural.",
+      "Kurzformen sind sehr häufig: zu dem wird zum, zu der wird zur, bei dem wird beim, von dem wird vom.",
+      "Nach steht bei Städten und Ländern ohne Artikel (nach Berlin), zu bei Personen und Orten (zum Arzt, zu Anna)."
+     ],
+     "q": "Woher kommst du, bei wem wohnst du und wie fährst du zur Arbeit? Antworte mit aus, bei und mit.",
+     "c": "Schreib drei Sätze über deinen Tag mit mit dem Bus, zum Supermarkt und seit einem Jahr."
+    },
+    "es": {
+     "t": "Preposiciones con dativo",
+     "g": "Aprende las siete preposiciones que siempre llevan dativo: aus, bei, mit, nach, seit, von, zu.",
+     "p": [
+      "Tras aus, bei, mit, nach, seit, von y zu el artículo cambia: dem para der y das, der para die, den más -n en plural.",
+      "Las contracciones son muy comunes: zu dem es zum, zu der es zur, bei dem es beim y von dem es vom.",
+      "Nach va con ciudades y países sin artículo (nach Berlin); zu, con personas y lugares (zum Arzt, zu Anna)."
+     ],
+     "q": "¿De dónde eres, con quién vives y cómo vas al trabajo? Responde con aus, bei y mit.",
+     "c": "Escribe tres frases sobre tu día con mit dem Bus, zum Supermarkt y seit einem Jahr."
+    },
+    "fr": {
+     "t": "Les prépositions avec le datif",
+     "g": "Apprendre les sept prépositions toujours suivies du datif : aus, bei, mit, nach, seit, von, zu.",
+     "p": [
+      "Après aus, bei, mit, nach, seit, von et zu, l'article change : dem pour der et das, der pour die, den plus -n au pluriel.",
+      "Les contractions sont très fréquentes : zu dem devient zum, zu der zur, bei dem beim et von dem vom.",
+      "Nach s'emploie pour les villes et pays sans article (nach Berlin), zu pour les personnes et les lieux (zum Arzt, zu Anna)."
+     ],
+     "q": "D'où viens-tu, chez qui habites-tu et comment vas-tu au travail ? Réponds avec aus, bei et mit.",
+     "c": "Écris trois phrases sur ta journée avec mit dem Bus, zum Supermarkt et seit einem Jahr."
+    },
+    "it": {
+     "t": "Preposizioni con il dativo",
+     "g": "Impari le sette preposizioni che vogliono sempre il dativo: aus, bei, mit, nach, seit, von, zu.",
+     "p": [
+      "Dopo aus, bei, mit, nach, seit, von e zu l'articolo cambia: dem per der e das, der per die, den più -n al plurale.",
+      "Le forme contratte sono comunissime: zu dem diventa zum, zu der zur, bei dem beim, von dem vom.",
+      "Nach si usa per città e paesi senza articolo (nach Berlin), zu per persone e luoghi (zum Arzt, zu Anna)."
+     ],
+     "q": "Da dove vieni, con chi abiti e come vai al lavoro? Rispondi con aus, bei e mit.",
+     "c": "Scrivi tre frasi sulla tua giornata con mit dem Bus, zum Supermarkt e seit einem Jahr."
+    },
+    "pt": {
+     "t": "Preposições com dativo",
+     "g": "Aprender as sete preposições que pedem sempre o dativo: aus, bei, mit, nach, seit, von, zu.",
+     "p": [
+      "Depois de aus, bei, mit, nach, seit, von e zu o artigo muda: dem para der e das, der para die, den mais -n no plural.",
+      "As contrações são muito usadas: zu dem dá zum, zu der dá zur, bei dem dá beim e von dem dá vom.",
+      "Nach usa-se com cidades e países sem artigo (nach Berlin); zu com pessoas e lugares (zum Arzt, zu Anna)."
+     ],
+     "q": "De onde és, com quem vives e como vais para o trabalho? Responde com aus, bei e mit.",
+     "c": "Escreve três frases sobre o teu dia com mit dem Bus, zum Supermarkt e seit einem Jahr."
+    },
+    "pt_BR": {
+     "t": "Preposições com dativo",
+     "g": "Aprender as sete preposições que sempre pedem o dativo: aus, bei, mit, nach, seit, von, zu.",
+     "p": [
+      "Depois de aus, bei, mit, nach, seit, von e zu o artigo muda: dem para der e das, der para die, den mais -n no plural.",
+      "As contrações são muito comuns: zu dem vira zum, zu der vira zur, bei dem vira beim e von dem vira vom.",
+      "Nach vai com cidades e países sem artigo (nach Berlin); zu, com pessoas e lugares (zum Arzt, zu Anna)."
+     ],
+     "q": "De onde você é, com quem mora e como vai para o trabalho? Responda com aus, bei e mit.",
+     "c": "Escreva três frases sobre seu dia com mit dem Bus, zum Supermarkt e seit einem Jahr."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "aus",
+      "ex": "Ich komme aus Spanien."
+     },
+     {
+      "w": "bei",
+      "ex": "Ich wohne bei meiner Tante."
+     },
+     {
+      "w": "mit",
+      "ex": "Ich fahre mit dem Fahrrad zur Arbeit."
+     },
+     {
+      "w": "nach",
+      "ex": "Nach dem Essen trinken wir Kaffee."
+     },
+     {
+      "w": "seit",
+      "ex": "Ich lerne seit einem Monat Deutsch."
+     },
+     {
+      "w": "zum / zur",
+      "ex": "Ich gehe zum Bäcker und dann zur Post."
+     }
+    ],
+    "gram": "Aus, bei, mit, nach, seit, von, zu + Dativ: mit dem Zug, mit der Bahn, mit den Kindern. Zu dem = zum, zu der = zur."
+   }
+  },
+  {
+   "d": 62,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Dative verbs",
+     "g": "Meet common verbs whose object is in the dative: helfen, danken, gefallen, gehören.",
+     "p": [
+      "With helfen and danken the person gets the dative: Ich helfe dem Mann, ich danke der Lehrerin.",
+      "Gefallen works backwards: Das Buch gefällt dem Kind means the child likes the book, the thing is the subject.",
+      "Gehören shows ownership: Das Auto gehört meinem Bruder. Other dative verbs: antworten, schmecken, passen."
+     ],
+     "q": "Who do you like to help, and what in your town gefällt dir? Tell me with a dative verb.",
+     "c": "Say thank you to someone today in German, then write: Ich danke meiner Freundin / meinem Freund."
+    },
+    "de": {
+     "t": "Verben mit Dativ",
+     "g": "Du lernst häufige Verben mit Dativobjekt: helfen, danken, gefallen, gehören.",
+     "p": [
+      "Bei helfen und danken steht die Person im Dativ: Ich helfe dem Mann, ich danke der Lehrerin.",
+      "Gefallen funktioniert umgekehrt: Das Buch gefällt dem Kind. Die Sache ist das Subjekt, die Person im Dativ.",
+      "Gehören zeigt Besitz: Das Auto gehört meinem Bruder. Weitere Dativverben: antworten, schmecken, passen."
+     ],
+     "q": "Wem hilfst du gern, und was in deiner Stadt gefällt dir? Erzähl es mit einem Dativverb.",
+     "c": "Bedank dich heute bei jemandem und schreib: Ich danke meiner Freundin / meinem Freund."
+    },
+    "es": {
+     "t": "Verbos con dativo",
+     "g": "Conoce verbos frecuentes cuyo complemento va en dativo: helfen, danken, gefallen, gehören.",
+     "p": [
+      "Con helfen y danken la persona va en dativo: Ich helfe dem Mann, ich danke der Lehrerin.",
+      "Gefallen funciona como gustar: Das Buch gefällt dem Kind, al niño le gusta el libro; la cosa es el sujeto.",
+      "Gehören indica posesión: Das Auto gehört meinem Bruder. Otros verbos con dativo: antworten, schmecken, passen."
+     ],
+     "q": "¿A quién te gusta ayudar y qué de tu ciudad te gusta? Cuéntamelo con un verbo de dativo.",
+     "c": "Da las gracias a alguien hoy en alemán y escribe: Ich danke meiner Freundin / meinem Freund."
+    },
+    "fr": {
+     "t": "Les verbes avec datif",
+     "g": "Découvrir des verbes courants dont le complément est au datif : helfen, danken, gefallen, gehören.",
+     "p": [
+      "Avec helfen et danken, la personne est au datif : Ich helfe dem Mann, ich danke der Lehrerin.",
+      "Gefallen fonctionne comme plaire : Das Buch gefällt dem Kind, le livre plaît à l'enfant ; la chose est le sujet.",
+      "Gehören exprime l'appartenance : Das Auto gehört meinem Bruder. Autres verbes : antworten, schmecken, passen."
+     ],
+     "q": "Qui aimes-tu aider et qu'est-ce qui te plaît dans ta ville ? Dis-le avec un verbe au datif.",
+     "c": "Remercie quelqu'un aujourd'hui en allemand, puis écris : Ich danke meiner Freundin / meinem Freund."
+    },
+    "it": {
+     "t": "Verbi con il dativo",
+     "g": "Conosci verbi frequenti con il complemento al dativo: helfen, danken, gefallen, gehören.",
+     "p": [
+      "Con helfen e danken la persona va al dativo: Ich helfe dem Mann, ich danke der Lehrerin.",
+      "Gefallen funziona come piacere: Das Buch gefällt dem Kind, il libro piace al bambino; la cosa è il soggetto.",
+      "Gehören indica possesso: Das Auto gehört meinem Bruder. Altri verbi col dativo: antworten, schmecken, passen."
+     ],
+     "q": "Chi ti piace aiutare e che cosa della tua città ti piace? Dimmelo con un verbo al dativo.",
+     "c": "Ringrazia qualcuno oggi in tedesco e poi scrivi: Ich danke meiner Freundin / meinem Freund."
+    },
+    "pt": {
+     "t": "Verbos com dativo",
+     "g": "Conhecer verbos frequentes cujo complemento vai no dativo: helfen, danken, gefallen, gehören.",
+     "p": [
+      "Com helfen e danken a pessoa vai no dativo: Ich helfe dem Mann, ich danke der Lehrerin.",
+      "Gefallen funciona como agradar: Das Buch gefällt dem Kind, o livro agrada à criança; a coisa é o sujeito.",
+      "Gehören indica posse: Das Auto gehört meinem Bruder. Outros verbos com dativo: antworten, schmecken, passen."
+     ],
+     "q": "A quem gostas de ajudar e o que te agrada na tua cidade? Diz-mo com um verbo de dativo.",
+     "c": "Agradece hoje a alguém em alemão e escreve: Ich danke meiner Freundin / meinem Freund."
+    },
+    "pt_BR": {
+     "t": "Verbos com dativo",
+     "g": "Conhecer verbos comuns cujo complemento vai no dativo: helfen, danken, gefallen, gehören.",
+     "p": [
+      "Com helfen e danken a pessoa vai no dativo: Ich helfe dem Mann, ich danke der Lehrerin.",
+      "Gefallen funciona como agradar: Das Buch gefällt dem Kind, o livro agrada a criança; a coisa é o sujeito.",
+      "Gehören indica posse: Das Auto gehört meinem Bruder. Outros verbos com dativo: antworten, schmecken, passen."
+     ],
+     "q": "Quem você gosta de ajudar e o que você curte na sua cidade? Me conte com um verbo de dativo.",
+     "c": "Agradeça a alguém hoje em alemão e escreva: Ich danke meiner Freundin / meinem Freund."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "helfen",
+      "ex": "Ich helfe meiner Mutter in der Küche."
+     },
+     {
+      "w": "danken",
+      "ex": "Wir danken dem Lehrer für die Hilfe."
+     },
+     {
+      "w": "gefallen",
+      "ex": "Die Stadt gefällt meinem Vater sehr."
+     },
+     {
+      "w": "gehören",
+      "ex": "Gehört die Tasche der Frau dort?"
+     },
+     {
+      "w": "antworten",
+      "ex": "Bitte antworte deiner Schwester!"
+     },
+     {
+      "w": "schmecken",
+      "ex": "Die Suppe schmeckt den Kindern."
+     }
+    ],
+    "gram": "Helfen, danken, gefallen, gehören, antworten, schmecken + Dativ: Ich helfe dem Kind. Das gefällt der Frau."
+   }
+  },
+  {
+   "d": 63,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Dative pronouns",
+     "g": "Use the dative pronouns mir, dir, ihm, ihr, uns, euch, ihnen and Ihnen in everyday phrases.",
+     "p": [
+      "Ich becomes mir, du becomes dir, er and es become ihm, sie (she) becomes ihr: Wie geht es dir? Mir geht es gut.",
+      "Plural: uns, euch, ihnen, and polite Ihnen: Wie geht es Ihnen? Das gefällt uns.",
+      "Use them after dative verbs and prepositions: Kannst du mir helfen? Ich komme mit dir."
+     ],
+     "q": "Wie geht es dir heute, and what gefällt dir at the moment? Answer with mir.",
+     "c": "Write three sentences: one with mir, one with dir and one with ihm or ihr."
+    },
+    "de": {
+     "t": "Personalpronomen im Dativ",
+     "g": "Du benutzt die Dativpronomen mir, dir, ihm, ihr, uns, euch, ihnen und Ihnen im Alltag.",
+     "p": [
+      "Ich wird mir, du wird dir, er und es werden ihm, sie wird ihr: Wie geht es dir? Mir geht es gut.",
+      "Im Plural: uns, euch, ihnen, höflich Ihnen: Wie geht es Ihnen? Das gefällt uns.",
+      "Du brauchst sie nach Dativverben und -präpositionen: Kannst du mir helfen? Ich komme mit dir."
+     ],
+     "q": "Wie geht es dir heute, und was gefällt dir im Moment? Antworte mit mir.",
+     "c": "Schreib drei Sätze: einen mit mir, einen mit dir und einen mit ihm oder ihr."
+    },
+    "es": {
+     "t": "Pronombres en dativo",
+     "g": "Usa los pronombres de dativo mir, dir, ihm, ihr, uns, euch, ihnen e Ihnen en frases cotidianas.",
+     "p": [
+      "Ich pasa a mir, du a dir, er y es a ihm, sie (ella) a ihr: Wie geht es dir? Mir geht es gut.",
+      "Plural: uns, euch, ihnen, y de cortesía Ihnen: Wie geht es Ihnen? Das gefällt uns.",
+      "Van tras verbos y preposiciones de dativo: Kannst du mir helfen? Ich komme mit dir."
+     ],
+     "q": "¿Wie geht es dir hoy y qué te gusta en este momento? Responde con mir.",
+     "c": "Escribe tres frases: una con mir, otra con dir y otra con ihm o ihr."
+    },
+    "fr": {
+     "t": "Les pronoms au datif",
+     "g": "Utiliser les pronoms au datif mir, dir, ihm, ihr, uns, euch, ihnen et Ihnen au quotidien.",
+     "p": [
+      "Ich devient mir, du dir, er et es ihm, sie (elle) ihr : Wie geht es dir? Mir geht es gut.",
+      "Au pluriel : uns, euch, ihnen, et de politesse Ihnen : Wie geht es Ihnen? Das gefällt uns.",
+      "On les emploie après les verbes et prépositions au datif : Kannst du mir helfen? Ich komme mit dir."
+     ],
+     "q": "Wie geht es dir aujourd'hui, et qu'est-ce qui te plaît en ce moment ? Réponds avec mir.",
+     "c": "Écris trois phrases : une avec mir, une avec dir et une avec ihm ou ihr."
+    },
+    "it": {
+     "t": "Pronomi al dativo",
+     "g": "Usi i pronomi al dativo mir, dir, ihm, ihr, uns, euch, ihnen e Ihnen nelle frasi di ogni giorno.",
+     "p": [
+      "Ich diventa mir, du dir, er ed es ihm, sie (lei) ihr: Wie geht es dir? Mir geht es gut.",
+      "Al plurale: uns, euch, ihnen, e di cortesia Ihnen: Wie geht es Ihnen? Das gefällt uns.",
+      "Si usano dopo verbi e preposizioni col dativo: Kannst du mir helfen? Ich komme mit dir."
+     ],
+     "q": "Wie geht es dir oggi, e che cosa ti piace in questo periodo? Rispondi con mir.",
+     "c": "Scrivi tre frasi: una con mir, una con dir e una con ihm o ihr."
+    },
+    "pt": {
+     "t": "Pronomes no dativo",
+     "g": "Usar os pronomes no dativo mir, dir, ihm, ihr, uns, euch, ihnen e Ihnen no dia a dia.",
+     "p": [
+      "Ich passa a mir, du a dir, er e es a ihm, sie (ela) a ihr: Wie geht es dir? Mir geht es gut.",
+      "No plural: uns, euch, ihnen, e de cortesia Ihnen: Wie geht es Ihnen? Das gefällt uns.",
+      "Usam-se depois de verbos e preposições de dativo: Kannst du mir helfen? Ich komme mit dir."
+     ],
+     "q": "Wie geht es dir hoje, e o que te agrada neste momento? Responde com mir.",
+     "c": "Escreve três frases: uma com mir, uma com dir e uma com ihm ou ihr."
+    },
+    "pt_BR": {
+     "t": "Pronomes no dativo",
+     "g": "Usar os pronomes no dativo mir, dir, ihm, ihr, uns, euch, ihnen e Ihnen no dia a dia.",
+     "p": [
+      "Ich vira mir, du vira dir, er e es viram ihm, sie (ela) vira ihr: Wie geht es dir? Mir geht es gut.",
+      "No plural: uns, euch, ihnen, e formal Ihnen: Wie geht es Ihnen? Das gefällt uns.",
+      "Eles vêm depois de verbos e preposições de dativo: Kannst du mir helfen? Ich komme mit dir."
+     ],
+     "q": "Wie geht es dir hoje, e o que você está curtindo agora? Responda com mir.",
+     "c": "Escreva três frases: uma com mir, uma com dir e uma com ihm ou ihr."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mir",
+      "ex": "Mir geht es heute sehr gut."
+     },
+     {
+      "w": "dir",
+      "ex": "Wie geht es dir?"
+     },
+     {
+      "w": "ihm",
+      "ex": "Ich schenke ihm ein Buch."
+     },
+     {
+      "w": "ihr",
+      "ex": "Die Jacke gefällt ihr."
+     },
+     {
+      "w": "uns",
+      "ex": "Kannst du uns helfen?"
+     },
+     {
+      "w": "Ihnen",
+      "ex": "Wie geht es Ihnen, Frau Weber?"
+     }
+    ],
+    "gram": "Dativ: ich - mir, du - dir, er/es - ihm, sie - ihr, wir - uns, ihr - euch, sie/Sie - ihnen/Ihnen. Das gefällt mir."
+   }
+  },
+  {
+   "d": 64,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The body",
+     "g": "Name the main parts of the body and say what hurts with mir tut ... weh.",
+     "p": [
+      "Learn nouns with their article: der Kopf, der Bauch, der Arm, das Bein, die Hand, der Fuß, das Auge, die Nase.",
+      "To say something hurts: Mir tut der Kopf weh. Plural: Mir tun die Füße weh. The person is in the dative.",
+      "Short forms with -schmerzen are common: Ich habe Kopfschmerzen, Bauchschmerzen, Rückenschmerzen."
+     ],
+     "q": "Point to five parts of your body and name them in German with the article. Which was the hardest?",
+     "c": "Draw a simple person and label ten body parts in German, each with der, die or das."
+    },
+    "de": {
+     "t": "Der Körper",
+     "g": "Du benennst die wichtigsten Körperteile und sagst mit mir tut ... weh, was schmerzt.",
+     "p": [
+      "Lern die Nomen mit Artikel: der Kopf, der Bauch, der Arm, das Bein, die Hand, der Fuß, das Auge, die Nase.",
+      "Für Schmerzen sagst du: Mir tut der Kopf weh. Im Plural: Mir tun die Füße weh. Die Person steht im Dativ.",
+      "Formen mit -schmerzen sind häufig: Ich habe Kopfschmerzen, Bauchschmerzen, Rückenschmerzen."
+     ],
+     "q": "Zeig auf fünf Körperteile und nenn sie mit Artikel. Welches Wort war am schwierigsten?",
+     "c": "Zeichne eine einfache Figur und beschrifte zehn Körperteile mit der, die oder das."
+    },
+    "es": {
+     "t": "El cuerpo",
+     "g": "Nombra las partes principales del cuerpo y di qué te duele con mir tut ... weh.",
+     "p": [
+      "Aprende los sustantivos con artículo: der Kopf, der Bauch, der Arm, das Bein, die Hand, der Fuß, das Auge, die Nase.",
+      "Para decir que algo duele: Mir tut der Kopf weh. En plural: Mir tun die Füße weh. La persona va en dativo.",
+      "Las formas con -schmerzen son muy comunes: Ich habe Kopfschmerzen, Bauchschmerzen, Rückenschmerzen."
+     ],
+     "q": "Señala cinco partes de tu cuerpo y nómbralas en alemán con su artículo. ¿Cuál fue la más difícil?",
+     "c": "Dibuja una figura sencilla y escribe diez partes del cuerpo en alemán, cada una con der, die o das."
+    },
+    "fr": {
+     "t": "Le corps",
+     "g": "Nommer les principales parties du corps et dire où on a mal avec mir tut ... weh.",
+     "p": [
+      "Apprends les noms avec leur article : der Kopf, der Bauch, der Arm, das Bein, die Hand, der Fuß, das Auge, die Nase.",
+      "Pour dire qu'on a mal : Mir tut der Kopf weh. Au pluriel : Mir tun die Füße weh. La personne est au datif.",
+      "Les formes en -schmerzen sont courantes : Ich habe Kopfschmerzen, Bauchschmerzen, Rückenschmerzen."
+     ],
+     "q": "Montre cinq parties de ton corps et nomme-les en allemand avec l'article. Laquelle était la plus difficile ?",
+     "c": "Dessine un personnage simple et note dix parties du corps en allemand, chacune avec der, die ou das."
+    },
+    "it": {
+     "t": "Il corpo",
+     "g": "Nomini le parti principali del corpo e dici che cosa fa male con mir tut ... weh.",
+     "p": [
+      "Impara i nomi con l'articolo: der Kopf, der Bauch, der Arm, das Bein, die Hand, der Fuß, das Auge, die Nase.",
+      "Per dire che qualcosa fa male: Mir tut der Kopf weh. Al plurale: Mir tun die Füße weh. La persona va al dativo.",
+      "Le forme con -schmerzen sono frequenti: Ich habe Kopfschmerzen, Bauchschmerzen, Rückenschmerzen."
+     ],
+     "q": "Indica cinque parti del corpo e nominale in tedesco con l'articolo. Qual è stata la più difficile?",
+     "c": "Disegna una figura semplice e scrivi dieci parti del corpo in tedesco, ognuna con der, die o das."
+    },
+    "pt": {
+     "t": "O corpo",
+     "g": "Dizer as principais partes do corpo e o que dói com mir tut ... weh.",
+     "p": [
+      "Aprende os nomes com o artigo: der Kopf, der Bauch, der Arm, das Bein, die Hand, der Fuß, das Auge, die Nase.",
+      "Para dizer que algo dói: Mir tut der Kopf weh. No plural: Mir tun die Füße weh. A pessoa vai no dativo.",
+      "As formas com -schmerzen são muito usadas: Ich habe Kopfschmerzen, Bauchschmerzen, Rückenschmerzen."
+     ],
+     "q": "Aponta para cinco partes do corpo e diz o nome em alemão com o artigo. Qual foi a mais difícil?",
+     "c": "Desenha uma figura simples e escreve dez partes do corpo em alemão, cada uma com der, die ou das."
+    },
+    "pt_BR": {
+     "t": "O corpo",
+     "g": "Dizer as principais partes do corpo e o que está doendo com mir tut ... weh.",
+     "p": [
+      "Aprenda os substantivos com o artigo: der Kopf, der Bauch, der Arm, das Bein, die Hand, der Fuß, das Auge, die Nase.",
+      "Para dizer que algo dói: Mir tut der Kopf weh. No plural: Mir tun die Füße weh. A pessoa fica no dativo.",
+      "As formas com -schmerzen são bem comuns: Ich habe Kopfschmerzen, Bauchschmerzen, Rückenschmerzen."
+     ],
+     "q": "Aponte para cinco partes do corpo e diga o nome em alemão com o artigo. Qual foi a mais difícil?",
+     "c": "Desenhe um bonequinho e escreva dez partes do corpo em alemão, cada uma com der, die ou das."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Kopf",
+      "ex": "Mir tut der Kopf weh."
+     },
+     {
+      "w": "der Bauch",
+      "ex": "Nach dem Essen ist mein Bauch voll."
+     },
+     {
+      "w": "das Bein",
+      "ex": "Mein Bein ist nach dem Sport müde."
+     },
+     {
+      "w": "die Hand",
+      "ex": "Gib mir bitte deine Hand."
+     },
+     {
+      "w": "die Füße",
+      "ex": "Mir tun die Füße weh."
+     },
+     {
+      "w": "die Kopfschmerzen",
+      "ex": "Ich habe heute leider Kopfschmerzen."
+     }
+    ],
+    "gram": "Mir tut der Arm weh. Mir tun die Beine weh. Wehtun: die Person steht im Dativ, der Körperteil ist das Subjekt."
+   }
+  },
+  {
+   "d": 65,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the doctor and pharmacy",
+     "g": "Describe simple symptoms and make an appointment at the doctor's or ask at a pharmacy.",
+     "p": [
+      "Symptoms: Ich habe Fieber, Husten, Schnupfen. Ich bin erkältet means I have a cold.",
+      "To book: Ich brauche einen Termin. Haben Sie morgen Zeit? At the pharmacy: Haben Sie etwas gegen Husten?",
+      "Die Arztpraxis is the doctor's office and die Apotheke the pharmacy. Gute Besserung means get well soon."
+     ],
+     "q": "Imagine you have a cold: what do you say on the phone to the doctor's office to get a Termin?",
+     "c": "Write a mini dialogue at the pharmacy with Haben Sie etwas gegen ...? and Gute Besserung!"
+    },
+    "de": {
+     "t": "Beim Arzt und in der Apotheke",
+     "g": "Du beschreibst einfache Beschwerden, machst einen Termin beim Arzt und fragst in der Apotheke.",
+     "p": [
+      "Beschwerden: Ich habe Fieber, Husten, Schnupfen. Ich bin erkältet heißt, ich habe eine Erkältung.",
+      "Termin machen: Ich brauche einen Termin. Haben Sie morgen Zeit? Apotheke: Haben Sie etwas gegen Husten?",
+      "Die Arztpraxis ist der Ort beim Arzt, die Apotheke verkauft Medikamente. Gute Besserung wünscht man Kranken."
+     ],
+     "q": "Stell dir vor, du bist erkältet: Was sagst du am Telefon in der Arztpraxis, um einen Termin zu bekommen?",
+     "c": "Schreib einen Minidialog in der Apotheke mit Haben Sie etwas gegen ...? und Gute Besserung!"
+    },
+    "es": {
+     "t": "En el médico y la farmacia",
+     "g": "Describe síntomas sencillos, pide cita en el médico y pregunta en la farmacia.",
+     "p": [
+      "Síntomas: Ich habe Fieber, Husten, Schnupfen. Ich bin erkältet significa estoy resfriado.",
+      "Para pedir cita: Ich brauche einen Termin. Haben Sie morgen Zeit? En la farmacia: Haben Sie etwas gegen Husten?",
+      "Die Arztpraxis es la consulta y die Apotheke, la farmacia. Gute Besserung significa que te mejores."
+     ],
+     "q": "Imagina que estás resfriado: ¿qué dices por teléfono en la consulta para conseguir un Termin?",
+     "c": "Escribe un minidiálogo en la farmacia con Haben Sie etwas gegen ...? y Gute Besserung!"
+    },
+    "fr": {
+     "t": "Chez le médecin et à la pharmacie",
+     "g": "Décrire des symptômes simples, prendre rendez-vous chez le médecin et demander à la pharmacie.",
+     "p": [
+      "Symptômes : Ich habe Fieber, Husten, Schnupfen. Ich bin erkältet veut dire je suis enrhumé.",
+      "Pour un rendez-vous : Ich brauche einen Termin. Haben Sie morgen Zeit? À la pharmacie : Haben Sie etwas gegen Husten?",
+      "Die Arztpraxis est le cabinet médical, die Apotheke la pharmacie. Gute Besserung veut dire bon rétablissement."
+     ],
+     "q": "Imagine que tu es enrhumé : que dis-tu au téléphone au cabinet pour obtenir un Termin ?",
+     "c": "Écris un mini-dialogue à la pharmacie avec Haben Sie etwas gegen ...? et Gute Besserung!"
+    },
+    "it": {
+     "t": "Dal medico e in farmacia",
+     "g": "Descrivi sintomi semplici, prendi un appuntamento dal medico e chiedi in farmacia.",
+     "p": [
+      "Sintomi: Ich habe Fieber, Husten, Schnupfen. Ich bin erkältet significa sono raffreddato.",
+      "Per l'appuntamento: Ich brauche einen Termin. Haben Sie morgen Zeit? In farmacia: Haben Sie etwas gegen Husten?",
+      "Die Arztpraxis è lo studio medico, die Apotheke la farmacia. Gute Besserung vuol dire guarisci presto."
+     ],
+     "q": "Immagina di essere raffreddato: che cosa dici al telefono allo studio medico per avere un Termin?",
+     "c": "Scrivi un minidialogo in farmacia con Haben Sie etwas gegen ...? e Gute Besserung!"
+    },
+    "pt": {
+     "t": "No médico e na farmácia",
+     "g": "Descrever sintomas simples, marcar consulta no médico e perguntar na farmácia.",
+     "p": [
+      "Sintomas: Ich habe Fieber, Husten, Schnupfen. Ich bin erkältet quer dizer estou constipado.",
+      "Para marcar: Ich brauche einen Termin. Haben Sie morgen Zeit? Na farmácia: Haben Sie etwas gegen Husten?",
+      "Die Arztpraxis é o consultório e die Apotheke a farmácia. Gute Besserung quer dizer as melhoras."
+     ],
+     "q": "Imagina que estás constipado: o que dizes ao telefone ao consultório para conseguir um Termin?",
+     "c": "Escreve um minidiálogo na farmácia com Haben Sie etwas gegen ...? e Gute Besserung!"
+    },
+    "pt_BR": {
+     "t": "No médico e na farmácia",
+     "g": "Descrever sintomas simples, marcar consulta no médico e perguntar na farmácia.",
+     "p": [
+      "Sintomas: Ich habe Fieber, Husten, Schnupfen. Ich bin erkältet quer dizer estou resfriado.",
+      "Para marcar: Ich brauche einen Termin. Haben Sie morgen Zeit? Na farmácia: Haben Sie etwas gegen Husten?",
+      "Die Arztpraxis é o consultório e die Apotheke a farmácia. Gute Besserung quer dizer melhoras."
+     ],
+     "q": "Imagine que você está resfriado: o que você diz ao telefone no consultório para conseguir um Termin?",
+     "c": "Escreva um minidiálogo na farmácia com Haben Sie etwas gegen ...? e Gute Besserung!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Fieber",
+      "ex": "Das Kind hat seit gestern Fieber."
+     },
+     {
+      "w": "erkältet",
+      "ex": "Ich bin erkältet und bleibe zu Hause."
+     },
+     {
+      "w": "der Termin",
+      "ex": "Ich brauche einen Termin beim Arzt."
+     },
+     {
+      "w": "die Apotheke",
+      "ex": "Die Apotheke ist neben der Bank."
+     },
+     {
+      "w": "der Husten",
+      "ex": "Haben Sie etwas gegen Husten?"
+     },
+     {
+      "w": "Gute Besserung!",
+      "ex": "Du bist krank? Gute Besserung!"
+     }
+    ],
+    "gram": "Ich habe Fieber / Husten / Schnupfen. Ich bin erkältet. Ich brauche einen Termin (Akkusativ). Haben Sie etwas gegen ...?"
+   }
+  },
+  {
+   "d": 66,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Jobs and professions",
+     "g": "Say what you and others do for a living and form the female job title with -in.",
+     "p": [
+      "With sein, jobs have no article: Ich bin Lehrerin, er ist Ingenieur. Not: Ich bin ein Lehrer.",
+      "Most female forms add -in: der Lehrer, die Lehrerin; der Arzt, die Ärztin (often with an umlaut).",
+      "Ask: Was bist du von Beruf? or Was machst du beruflich? Answer: Ich arbeite als Koch."
+     ],
+     "q": "Was bist du von Beruf, or what would you like to be? Tell me and also name a family member's job.",
+     "c": "Write the male and female forms of five jobs, for example der Koch, die Köchin."
+    },
+    "de": {
+     "t": "Berufe",
+     "g": "Du sagst, was du und andere beruflich machen, und bildest die weibliche Form mit -in.",
+     "p": [
+      "Mit sein steht der Beruf ohne Artikel: Ich bin Lehrerin, er ist Ingenieur. Nicht: Ich bin ein Lehrer.",
+      "Die weibliche Form endet meist auf -in: der Lehrer, die Lehrerin; der Arzt, die Ärztin (oft mit Umlaut).",
+      "Frag: Was bist du von Beruf? oder Was machst du beruflich? Antwort: Ich arbeite als Koch."
+     ],
+     "q": "Was bist du von Beruf, oder was möchtest du werden? Erzähl auch vom Beruf eines Familienmitglieds.",
+     "c": "Schreib die männliche und weibliche Form von fünf Berufen, zum Beispiel der Koch, die Köchin."
+    },
+    "es": {
+     "t": "Trabajos y profesiones",
+     "g": "Di a qué te dedicas tú y otras personas, y forma el femenino de las profesiones con -in.",
+     "p": [
+      "Con sein, la profesión va sin artículo: Ich bin Lehrerin, er ist Ingenieur. No: Ich bin ein Lehrer.",
+      "El femenino suele añadir -in: der Lehrer, die Lehrerin; der Arzt, die Ärztin (a menudo con diéresis).",
+      "Pregunta: Was bist du von Beruf? o Was machst du beruflich? Responde: Ich arbeite als Koch."
+     ],
+     "q": "¿Was bist du von Beruf o qué te gustaría ser? Cuéntame también la profesión de alguien de tu familia.",
+     "c": "Escribe la forma masculina y femenina de cinco profesiones, por ejemplo der Koch, die Köchin."
+    },
+    "fr": {
+     "t": "Métiers et professions",
+     "g": "Dire ce que toi et les autres faites comme métier et former le féminin avec -in.",
+     "p": [
+      "Avec sein, le métier s'emploie sans article : Ich bin Lehrerin, er ist Ingenieur. Pas : Ich bin ein Lehrer.",
+      "Le féminin ajoute souvent -in : der Lehrer, die Lehrerin ; der Arzt, die Ärztin (souvent avec Umlaut).",
+      "Demande : Was bist du von Beruf? ou Was machst du beruflich? Réponds : Ich arbeite als Koch."
+     ],
+     "q": "Was bist du von Beruf, ou que voudrais-tu faire ? Dis-moi aussi le métier d'un membre de ta famille.",
+     "c": "Écris le masculin et le féminin de cinq métiers, par exemple der Koch, die Köchin."
+    },
+    "it": {
+     "t": "Lavori e professioni",
+     "g": "Dici che lavoro fai tu e fanno gli altri e formi il femminile delle professioni con -in.",
+     "p": [
+      "Con sein la professione va senza articolo: Ich bin Lehrerin, er ist Ingenieur. Non: Ich bin ein Lehrer.",
+      "Il femminile aggiunge di solito -in: der Lehrer, die Lehrerin; der Arzt, die Ärztin (spesso con l'Umlaut).",
+      "Chiedi: Was bist du von Beruf? oppure Was machst du beruflich? Rispondi: Ich arbeite als Koch."
+     ],
+     "q": "Was bist du von Beruf, o che cosa ti piacerebbe fare? Dimmi anche il lavoro di un tuo familiare.",
+     "c": "Scrivi la forma maschile e femminile di cinque professioni, per esempio der Koch, die Köchin."
+    },
+    "pt": {
+     "t": "Profissões",
+     "g": "Dizer o que tu e os outros fazem profissionalmente e formar o feminino com -in.",
+     "p": [
+      "Com sein, a profissão vem sem artigo: Ich bin Lehrerin, er ist Ingenieur. Não: Ich bin ein Lehrer.",
+      "O feminino junta quase sempre -in: der Lehrer, die Lehrerin; der Arzt, die Ärztin (muitas vezes com trema).",
+      "Pergunta: Was bist du von Beruf? ou Was machst du beruflich? Resposta: Ich arbeite als Koch."
+     ],
+     "q": "Was bist du von Beruf, ou o que gostavas de ser? Diz-me também a profissão de alguém da tua família.",
+     "c": "Escreve a forma masculina e feminina de cinco profissões, por exemplo der Koch, die Köchin."
+    },
+    "pt_BR": {
+     "t": "Profissões",
+     "g": "Dizer o que você e outras pessoas fazem e formar o feminino das profissões com -in.",
+     "p": [
+      "Com sein, a profissão vem sem artigo: Ich bin Lehrerin, er ist Ingenieur. Não: Ich bin ein Lehrer.",
+      "O feminino quase sempre ganha -in: der Lehrer, die Lehrerin; der Arzt, die Ärztin (muitas vezes com trema).",
+      "Pergunte: Was bist du von Beruf? ou Was machst du beruflich? Resposta: Ich arbeite als Koch."
+     ],
+     "q": "Was bist du von Beruf, ou o que você gostaria de ser? Conte também a profissão de alguém da sua família.",
+     "c": "Escreva a forma masculina e feminina de cinco profissões, por exemplo der Koch, die Köchin."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Beruf",
+      "ex": "Was bist du von Beruf?"
+     },
+     {
+      "w": "die Lehrerin",
+      "ex": "Meine Mutter ist Lehrerin."
+     },
+     {
+      "w": "der Ingenieur",
+      "ex": "Mein Bruder ist Ingenieur bei einer Firma."
+     },
+     {
+      "w": "die Ärztin",
+      "ex": "Die Ärztin arbeitet im Krankenhaus."
+     },
+     {
+      "w": "der Koch / die Köchin",
+      "ex": "Sie arbeitet als Köchin in einem Hotel."
+     },
+     {
+      "w": "arbeiten als",
+      "ex": "Ich arbeite als Verkäufer."
+     }
+    ],
+    "gram": "Ich bin Lehrer / Lehrerin (ohne Artikel). Weibliche Form mit -in: der Arzt - die Ärztin. Ich arbeite als Koch."
+   }
+  },
+  {
+   "d": 67,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At work and school",
+     "g": "Talk about what you do every day at work or school and the people and places there.",
+     "p": [
+      "Workplace words: das Büro, die Firma, der Chef, die Chefin, die Kollegen, die Besprechung, der Computer.",
+      "School words: die Schule, die Uni, der Unterricht, die Hausaufgaben, die Pause, die Prüfung.",
+      "Daily actions: Ich schreibe E-Mails, ich habe eine Besprechung, der Unterricht beginnt um acht."
+     ],
+     "q": "What does a normal day at your work or school look like? Name two things you do and one person there.",
+     "c": "Write five sentences about your workday or school day with um ... Uhr and words like Pause or Kollegen."
+    },
+    "de": {
+     "t": "Bei der Arbeit und in der Schule",
+     "g": "Du sprichst darüber, was du täglich bei der Arbeit oder in der Schule machst und wer dort ist.",
+     "p": [
+      "Arbeit: das Büro, die Firma, der Chef, die Chefin, die Kollegen, die Besprechung, der Computer.",
+      "Schule: die Schule, die Uni, der Unterricht, die Hausaufgaben, die Pause, die Prüfung.",
+      "Tätigkeiten: Ich schreibe E-Mails, ich habe eine Besprechung, der Unterricht beginnt um acht."
+     ],
+     "q": "Wie sieht ein normaler Tag bei deiner Arbeit oder in deiner Schule aus? Nenn zwei Tätigkeiten und eine Person.",
+     "c": "Schreib fünf Sätze über deinen Arbeits- oder Schultag mit um ... Uhr und Wörtern wie Pause oder Kollegen."
+    },
+    "es": {
+     "t": "En el trabajo y en clase",
+     "g": "Habla de lo que haces cada día en el trabajo o en clase y de la gente y los lugares de allí.",
+     "p": [
+      "Trabajo: das Büro, die Firma, der Chef, die Chefin, die Kollegen, die Besprechung, der Computer.",
+      "Estudios: die Schule, die Uni, der Unterricht, die Hausaufgaben, die Pause, die Prüfung.",
+      "Acciones diarias: Ich schreibe E-Mails, ich habe eine Besprechung, der Unterricht beginnt um acht."
+     ],
+     "q": "¿Cómo es un día normal en tu trabajo o en tu escuela? Nombra dos cosas que haces y a una persona de allí.",
+     "c": "Escribe cinco frases sobre tu jornada de trabajo o de clase con um ... Uhr y palabras como Pause o Kollegen."
+    },
+    "fr": {
+     "t": "Au travail et à l'école",
+     "g": "Parler de ce que tu fais chaque jour au travail ou à l'école, et des gens et lieux qui s'y trouvent.",
+     "p": [
+      "Travail : das Büro, die Firma, der Chef, die Chefin, die Kollegen, die Besprechung, der Computer.",
+      "École : die Schule, die Uni, der Unterricht, die Hausaufgaben, die Pause, die Prüfung.",
+      "Actions quotidiennes : Ich schreibe E-Mails, ich habe eine Besprechung, der Unterricht beginnt um acht."
+     ],
+     "q": "À quoi ressemble une journée normale au travail ou à l'école ? Cite deux activités et une personne.",
+     "c": "Écris cinq phrases sur ta journée de travail ou d'école avec um ... Uhr et des mots comme Pause ou Kollegen."
+    },
+    "it": {
+     "t": "Al lavoro e a scuola",
+     "g": "Parli di che cosa fai ogni giorno al lavoro o a scuola e delle persone e dei luoghi.",
+     "p": [
+      "Lavoro: das Büro, die Firma, der Chef, die Chefin, die Kollegen, die Besprechung, der Computer.",
+      "Scuola: die Schule, die Uni, der Unterricht, die Hausaufgaben, die Pause, die Prüfung.",
+      "Azioni quotidiane: Ich schreibe E-Mails, ich habe eine Besprechung, der Unterricht beginnt um acht."
+     ],
+     "q": "Com'è una giornata normale al lavoro o a scuola? Indica due cose che fai e una persona che c'è.",
+     "c": "Scrivi cinque frasi sulla tua giornata di lavoro o di scuola con um ... Uhr e parole come Pause o Kollegen."
+    },
+    "pt": {
+     "t": "No trabalho e na escola",
+     "g": "Falar do que fazes todos os dias no trabalho ou na escola e das pessoas e lugares de lá.",
+     "p": [
+      "Trabalho: das Büro, die Firma, der Chef, die Chefin, die Kollegen, die Besprechung, der Computer.",
+      "Escola: die Schule, die Uni, der Unterricht, die Hausaufgaben, die Pause, die Prüfung.",
+      "Ações diárias: Ich schreibe E-Mails, ich habe eine Besprechung, der Unterricht beginnt um acht."
+     ],
+     "q": "Como é um dia normal no teu trabalho ou na tua escola? Diz duas coisas que fazes e uma pessoa de lá.",
+     "c": "Escreve cinco frases sobre o teu dia de trabalho ou de aulas com um ... Uhr e palavras como Pause ou Kollegen."
+    },
+    "pt_BR": {
+     "t": "No trabalho e na escola",
+     "g": "Falar do que você faz todo dia no trabalho ou na escola e das pessoas e lugares de lá.",
+     "p": [
+      "Trabalho: das Büro, die Firma, der Chef, die Chefin, die Kollegen, die Besprechung, der Computer.",
+      "Escola: die Schule, die Uni, der Unterricht, die Hausaufgaben, die Pause, die Prüfung.",
+      "Ações do dia: Ich schreibe E-Mails, ich habe eine Besprechung, der Unterricht beginnt um acht."
+     ],
+     "q": "Como é um dia normal no seu trabalho ou na sua escola? Diga duas coisas que você faz e uma pessoa de lá.",
+     "c": "Escreva cinco frases sobre seu dia de trabalho ou de aula com um ... Uhr e palavras como Pause ou Kollegen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Büro",
+      "ex": "Ich bin von neun bis fünf im Büro."
+     },
+     {
+      "w": "die Kollegen",
+      "ex": "Meine Kollegen sind sehr nett."
+     },
+     {
+      "w": "die Besprechung",
+      "ex": "Um zehn Uhr habe ich eine Besprechung."
+     },
+     {
+      "w": "der Unterricht",
+      "ex": "Der Unterricht beginnt um acht Uhr."
+     },
+     {
+      "w": "die Hausaufgaben",
+      "ex": "Nach der Schule mache ich die Hausaufgaben."
+     },
+     {
+      "w": "die Pause",
+      "ex": "In der Pause trinke ich einen Kaffee."
+     }
+    ],
+    "gram": "Orte: im Büro, in der Firma, in der Schule, an der Uni. Zeit: um acht Uhr, von neun bis fünf, in der Pause."
+   }
+  },
+  {
+   "d": 68,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Animals and pets",
+     "g": "Name common animals and describe your pet or a favourite animal in simple sentences.",
+     "p": [
+      "Pets: der Hund, die Katze, der Vogel, der Fisch, das Kaninchen. Farm and wild: das Pferd, die Kuh, der Bär.",
+      "Describe with haben and sein: Ich habe einen Hund. Er heißt Bello, er ist klein und sehr lustig.",
+      "Plurals vary, so learn them: die Hunde, die Katzen, die Pferde, die Vögel."
+     ],
+     "q": "Do you have a pet, or which animal would you like? Describe it: name, size, colour and character.",
+     "c": "Write four sentences about an animal you like with Er/Sie/Es heißt..., ist... and frisst gern..."
+    },
+    "de": {
+     "t": "Tiere und Haustiere",
+     "g": "Du benennst häufige Tiere und beschreibst dein Haustier oder dein Lieblingstier.",
+     "p": [
+      "Haustiere: der Hund, die Katze, der Vogel, der Fisch, das Kaninchen. Bauernhof und Natur: das Pferd, die Kuh, der Bär.",
+      "Beschreiben mit haben und sein: Ich habe einen Hund. Er heißt Bello, er ist klein und sehr lustig.",
+      "Die Pluralformen sind verschieden, lern sie mit: die Hunde, die Katzen, die Pferde, die Vögel."
+     ],
+     "q": "Hast du ein Haustier, oder welches Tier hättest du gern? Beschreib es: Name, Größe, Farbe und Charakter.",
+     "c": "Schreib vier Sätze über ein Tier, das du magst, mit Er/Sie/Es heißt..., ist... und frisst gern..."
+    },
+    "es": {
+     "t": "Animales y mascotas",
+     "g": "Nombra animales comunes y describe tu mascota o tu animal favorito con frases sencillas.",
+     "p": [
+      "Mascotas: der Hund, die Katze, der Vogel, der Fisch, das Kaninchen. Granja y campo: das Pferd, die Kuh, der Bär.",
+      "Describe con haben y sein: Ich habe einen Hund. Er heißt Bello, er ist klein und sehr lustig.",
+      "Los plurales varían, apréndelos: die Hunde, die Katzen, die Pferde, die Vögel."
+     ],
+     "q": "¿Tienes mascota o qué animal te gustaría tener? Descríbelo: nombre, tamaño, color y carácter.",
+     "c": "Escribe cuatro frases sobre un animal que te guste con Er/Sie/Es heißt..., ist... y frisst gern..."
+    },
+    "fr": {
+     "t": "Animaux et animaux de compagnie",
+     "g": "Nommer des animaux courants et décrire ton animal ou ton animal préféré en phrases simples.",
+     "p": [
+      "Animaux de compagnie : der Hund, die Katze, der Vogel, der Fisch, das Kaninchen. Ferme et nature : das Pferd, die Kuh, der Bär.",
+      "Décrire avec haben et sein : Ich habe einen Hund. Er heißt Bello, er ist klein und sehr lustig.",
+      "Les pluriels varient, apprends-les : die Hunde, die Katzen, die Pferde, die Vögel."
+     ],
+     "q": "As-tu un animal, ou lequel aimerais-tu avoir ? Décris-le : nom, taille, couleur et caractère.",
+     "c": "Écris quatre phrases sur un animal que tu aimes avec Er/Sie/Es heißt..., ist... et frisst gern..."
+    },
+    "it": {
+     "t": "Animali domestici e non",
+     "g": "Nomini animali comuni e descrivi il tuo animale o il tuo animale preferito con frasi semplici.",
+     "p": [
+      "Domestici: der Hund, die Katze, der Vogel, der Fisch, das Kaninchen. Fattoria e natura: das Pferd, die Kuh, der Bär.",
+      "Descrivi con haben e sein: Ich habe einen Hund. Er heißt Bello, er ist klein und sehr lustig.",
+      "I plurali cambiano, imparali: die Hunde, die Katzen, die Pferde, die Vögel."
+     ],
+     "q": "Hai un animale o quale ti piacerebbe avere? Descrivilo: nome, grandezza, colore e carattere.",
+     "c": "Scrivi quattro frasi su un animale che ti piace con Er/Sie/Es heißt..., ist... e frisst gern..."
+    },
+    "pt": {
+     "t": "Animais de estimação e outros",
+     "g": "Dizer animais comuns e descrever o teu animal de estimação ou o teu animal preferido.",
+     "p": [
+      "De estimação: der Hund, die Katze, der Vogel, der Fisch, das Kaninchen. Quinta e natureza: das Pferd, die Kuh, der Bär.",
+      "Descreve com haben e sein: Ich habe einen Hund. Er heißt Bello, er ist klein und sehr lustig.",
+      "Os plurais variam, aprende-os: die Hunde, die Katzen, die Pferde, die Vögel."
+     ],
+     "q": "Tens um animal ou qual gostarias de ter? Descreve-o: nome, tamanho, cor e personalidade.",
+     "c": "Escreve quatro frases sobre um animal de que gostas com Er/Sie/Es heißt..., ist... e frisst gern..."
+    },
+    "pt_BR": {
+     "t": "Animais e bichos de estimação",
+     "g": "Dizer animais comuns e descrever seu bicho de estimação ou seu animal favorito.",
+     "p": [
+      "Estimação: der Hund, die Katze, der Vogel, der Fisch, das Kaninchen. Fazenda e natureza: das Pferd, die Kuh, der Bär.",
+      "Descreva com haben e sein: Ich habe einen Hund. Er heißt Bello, er ist klein und sehr lustig.",
+      "Os plurais variam, aprenda junto: die Hunde, die Katzen, die Pferde, die Vögel."
+     ],
+     "q": "Você tem um bicho ou qual gostaria de ter? Descreva: nome, tamanho, cor e personalidade.",
+     "c": "Escreva quatro frases sobre um animal de que você gosta com Er/Sie/Es heißt..., ist... e frisst gern..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Hund",
+      "ex": "Unser Hund heißt Max und ist sehr lieb."
+     },
+     {
+      "w": "die Katze",
+      "ex": "Die Katze schläft gern auf dem Sofa."
+     },
+     {
+      "w": "das Pferd",
+      "ex": "Meine Freundin reitet jeden Samstag ein Pferd."
+     },
+     {
+      "w": "der Vogel",
+      "ex": "Der Vogel singt am Morgen."
+     },
+     {
+      "w": "das Haustier",
+      "ex": "Hast du ein Haustier?"
+     },
+     {
+      "w": "füttern",
+      "ex": "Ich füttere die Katze zweimal am Tag."
+     }
+    ],
+    "gram": "Ich habe einen Hund / eine Katze / ein Pferd (Akkusativ). Pronomen: der Hund - er, die Katze - sie, das Pferd - es."
+   }
+  },
+  {
+   "d": 69,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Nature and the outdoors",
+     "g": "Talk about nature and going outside: forests, mountains, lakes and the sea.",
+     "p": [
+      "Key nouns: der Wald, der Berg, der See, das Meer, der Fluss, die Wiese, der Strand.",
+      "Careful: der See is a lake, die See is the sea, but das Meer is the usual word for sea.",
+      "Going out: in den Wald gehen, in die Berge fahren, am See liegen, ans Meer fahren, wandern."
+     ],
+     "q": "Do you prefer the mountains or the sea? Tell me where you like to go in nature and what you do there.",
+     "c": "Go outside or look out of the window and name five things from nature in German with their article."
+    },
+    "de": {
+     "t": "Natur und draußen",
+     "g": "Du sprichst über die Natur und Aktivitäten draußen: Wald, Berge, Seen und das Meer.",
+     "p": [
+      "Wichtige Nomen: der Wald, der Berg, der See, das Meer, der Fluss, die Wiese, der Strand.",
+      "Achtung: der See ist ein Binnengewässer, die See ist das Meer, aber meist sagt man das Meer.",
+      "Rausgehen: in den Wald gehen, in die Berge fahren, am See liegen, ans Meer fahren, wandern."
+     ],
+     "q": "Bist du lieber in den Bergen oder am Meer? Erzähl, wohin du in der Natur gehst und was du dort machst.",
+     "c": "Geh nach draußen oder schau aus dem Fenster und nenn fünf Dinge aus der Natur mit Artikel."
+    },
+    "es": {
+     "t": "La naturaleza y el aire libre",
+     "g": "Habla de la naturaleza y de salir al aire libre: bosques, montañas, lagos y el mar.",
+     "p": [
+      "Sustantivos clave: der Wald, der Berg, der See, das Meer, der Fluss, die Wiese, der Strand.",
+      "Ojo: der See es un lago, die See es el mar, pero la palabra habitual para mar es das Meer.",
+      "Salir: in den Wald gehen, in die Berge fahren, am See liegen, ans Meer fahren, wandern."
+     ],
+     "q": "¿Prefieres la montaña o el mar? Cuéntame adónde te gusta ir en la naturaleza y qué haces allí.",
+     "c": "Sal fuera o mira por la ventana y nombra cinco cosas de la naturaleza en alemán con su artículo."
+    },
+    "fr": {
+     "t": "La nature et le plein air",
+     "g": "Parler de la nature et des sorties dehors : forêts, montagnes, lacs et mer.",
+     "p": [
+      "Noms clés : der Wald, der Berg, der See, das Meer, der Fluss, die Wiese, der Strand.",
+      "Attention : der See est un lac, die See la mer, mais le mot courant pour la mer est das Meer.",
+      "Sortir : in den Wald gehen, in die Berge fahren, am See liegen, ans Meer fahren, wandern."
+     ],
+     "q": "Tu préfères la montagne ou la mer ? Dis-moi où tu aimes aller dans la nature et ce que tu y fais.",
+     "c": "Sors ou regarde par la fenêtre et nomme cinq éléments de la nature en allemand avec leur article."
+    },
+    "it": {
+     "t": "La natura e la vita all'aperto",
+     "g": "Parli della natura e delle uscite all'aperto: boschi, montagne, laghi e mare.",
+     "p": [
+      "Nomi chiave: der Wald, der Berg, der See, das Meer, der Fluss, die Wiese, der Strand.",
+      "Attenzione: der See è il lago, die See è il mare, ma la parola comune per mare è das Meer.",
+      "Uscire: in den Wald gehen, in die Berge fahren, am See liegen, ans Meer fahren, wandern."
+     ],
+     "q": "Preferisci la montagna o il mare? Raccontami dove ti piace andare nella natura e che cosa fai.",
+     "c": "Esci o guarda dalla finestra e nomina cinque elementi della natura in tedesco con l'articolo."
+    },
+    "pt": {
+     "t": "A natureza e o ar livre",
+     "g": "Falar da natureza e de sair ao ar livre: florestas, montanhas, lagos e o mar.",
+     "p": [
+      "Nomes-chave: der Wald, der Berg, der See, das Meer, der Fluss, die Wiese, der Strand.",
+      "Atenção: der See é um lago, die See é o mar, mas a palavra habitual para mar é das Meer.",
+      "Sair: in den Wald gehen, in die Berge fahren, am See liegen, ans Meer fahren, wandern."
+     ],
+     "q": "Preferes a montanha ou o mar? Conta-me aonde gostas de ir na natureza e o que fazes lá.",
+     "c": "Sai à rua ou olha pela janela e diz cinco coisas da natureza em alemão com o artigo."
+    },
+    "pt_BR": {
+     "t": "A natureza e o ar livre",
+     "g": "Falar da natureza e de sair ao ar livre: florestas, montanhas, lagos e o mar.",
+     "p": [
+      "Substantivos-chave: der Wald, der Berg, der See, das Meer, der Fluss, die Wiese, der Strand.",
+      "Atenção: der See é um lago, die See é o mar, mas a palavra comum para mar é das Meer.",
+      "Sair: in den Wald gehen, in die Berge fahren, am See liegen, ans Meer fahren, wandern."
+     ],
+     "q": "Você prefere montanha ou praia? Me conte aonde gosta de ir na natureza e o que faz lá.",
+     "c": "Saia ou olhe pela janela e diga cinco coisas da natureza em alemão com o artigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Wald",
+      "ex": "Am Sonntag gehen wir im Wald spazieren."
+     },
+     {
+      "w": "der Berg",
+      "ex": "Der Berg ist sehr hoch."
+     },
+     {
+      "w": "der See",
+      "ex": "Im Sommer schwimme ich im See."
+     },
+     {
+      "w": "das Meer",
+      "ex": "Ich fahre im Urlaub gern ans Meer."
+     },
+     {
+      "w": "wandern",
+      "ex": "Wir wandern gern in den Bergen."
+     },
+     {
+      "w": "draußen",
+      "ex": "Heute ist es schön, wir essen draußen."
+     }
+    ],
+    "gram": "Wohin? in den Wald, in die Berge, ans Meer. Wo? im Wald, in den Bergen, am See, am Meer."
+   }
+  },
+  {
+   "d": 70,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ordinal numbers and dates",
+     "g": "Say dates and birthdays with ordinal numbers like der erste and am dritten Mai.",
+     "p": [
+      "Ordinals 1 to 19 add -te: der zweite, der vierte. Irregular: der erste, der dritte, der siebte, der achte.",
+      "From 20 add -ste: der zwanzigste, der einunddreißigste. Written as a number with a dot: der 3. Mai.",
+      "Which date? Der dritte Mai. On which date? Am dritten Mai. Wann hast du Geburtstag? Am zehnten Juni."
+     ],
+     "q": "Wann hast du Geburtstag? Tell me the date and one birthday of a friend or family member.",
+     "c": "Write three important dates in German words: your birthday, a holiday and a family birthday."
+    },
+    "de": {
+     "t": "Ordnungszahlen und Datum",
+     "g": "Du sagst Daten und Geburtstage mit Ordnungszahlen wie der erste und am dritten Mai.",
+     "p": [
+      "Von 1 bis 19 hängst du -te an: der zweite, der vierte. Unregelmäßig: der erste, der dritte, der siebte, der achte.",
+      "Ab 20 hängst du -ste an: der zwanzigste, der einunddreißigste. Geschrieben mit Punkt: der 3. Mai.",
+      "Welches Datum? Der dritte Mai. Wann? Am dritten Mai. Wann hast du Geburtstag? Am zehnten Juni."
+     ],
+     "q": "Wann hast du Geburtstag? Sag mir das Datum und den Geburtstag einer Person aus deiner Familie.",
+     "c": "Schreib drei wichtige Daten in Worten: deinen Geburtstag, einen Feiertag und einen Familiengeburtstag."
+    },
+    "es": {
+     "t": "Ordinales y fechas",
+     "g": "Di fechas y cumpleaños con números ordinales como der erste y am dritten Mai.",
+     "p": [
+      "Del 1 al 19 se añade -te: der zweite, der vierte. Irregulares: der erste, der dritte, der siebte, der achte.",
+      "Desde el 20 se añade -ste: der zwanzigste, der einunddreißigste. Por escrito, número y punto: der 3. Mai.",
+      "¿Qué fecha? Der dritte Mai. ¿Cuándo? Am dritten Mai. Wann hast du Geburtstag? Am zehnten Juni."
+     ],
+     "q": "¿Wann hast du Geburtstag? Dime la fecha y el cumpleaños de un amigo o familiar.",
+     "c": "Escribe en letras tres fechas importantes: tu cumpleaños, una fiesta y el cumpleaños de un familiar."
+    },
+    "fr": {
+     "t": "Ordinaux et dates",
+     "g": "Dire des dates et des anniversaires avec les ordinaux comme der erste et am dritten Mai.",
+     "p": [
+      "De 1 à 19 on ajoute -te : der zweite, der vierte. Irréguliers : der erste, der dritte, der siebte, der achte.",
+      "À partir de 20 on ajoute -ste : der zwanzigste, der einunddreißigste. À l'écrit, chiffre et point : der 3. Mai.",
+      "Quelle date ? Der dritte Mai. Quand ? Am dritten Mai. Wann hast du Geburtstag? Am zehnten Juni."
+     ],
+     "q": "Wann hast du Geburtstag? Dis-moi la date et l'anniversaire d'un ami ou d'un proche.",
+     "c": "Écris en toutes lettres trois dates importantes : ton anniversaire, une fête et l'anniversaire d'un proche."
+    },
+    "it": {
+     "t": "Numeri ordinali e date",
+     "g": "Dici date e compleanni con i numeri ordinali come der erste e am dritten Mai.",
+     "p": [
+      "Da 1 a 19 si aggiunge -te: der zweite, der vierte. Irregolari: der erste, der dritte, der siebte, der achte.",
+      "Da 20 in poi si aggiunge -ste: der zwanzigste, der einunddreißigste. Per iscritto numero e punto: der 3. Mai.",
+      "Che data? Der dritte Mai. Quando? Am dritten Mai. Wann hast du Geburtstag? Am zehnten Juni."
+     ],
+     "q": "Wann hast du Geburtstag? Dimmi la data e il compleanno di un amico o di un familiare.",
+     "c": "Scrivi in lettere tre date importanti: il tuo compleanno, una festa e il compleanno di un familiare."
+    },
+    "pt": {
+     "t": "Números ordinais e datas",
+     "g": "Dizer datas e aniversários com números ordinais como der erste e am dritten Mai.",
+     "p": [
+      "De 1 a 19 junta-se -te: der zweite, der vierte. Irregulares: der erste, der dritte, der siebte, der achte.",
+      "A partir de 20 junta-se -ste: der zwanzigste, der einunddreißigste. Por escrito, número e ponto: der 3. Mai.",
+      "Que data? Der dritte Mai. Quando? Am dritten Mai. Wann hast du Geburtstag? Am zehnten Juni."
+     ],
+     "q": "Wann hast du Geburtstag? Diz-me a data e o aniversário de um amigo ou familiar.",
+     "c": "Escreve por extenso três datas importantes: o teu aniversário, um feriado e o aniversário de um familiar."
+    },
+    "pt_BR": {
+     "t": "Números ordinais e datas",
+     "g": "Dizer datas e aniversários com números ordinais como der erste e am dritten Mai.",
+     "p": [
+      "De 1 a 19 se acrescenta -te: der zweite, der vierte. Irregulares: der erste, der dritte, der siebte, der achte.",
+      "A partir de 20 se acrescenta -ste: der zwanzigste, der einunddreißigste. Escrito com ponto: der 3. Mai.",
+      "Que data? Der dritte Mai. Quando? Am dritten Mai. Wann hast du Geburtstag? Am zehnten Juni."
+     ],
+     "q": "Wann hast du Geburtstag? Me diga a data e o aniversário de um amigo ou familiar.",
+     "c": "Escreva por extenso três datas importantes: seu aniversário, um feriado e o aniversário de um familiar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der erste",
+      "ex": "Heute ist der erste April."
+     },
+     {
+      "w": "der dritte",
+      "ex": "Der dritte Tag war am schönsten."
+     },
+     {
+      "w": "am zehnten Juni",
+      "ex": "Ich habe am zehnten Juni Geburtstag."
+     },
+     {
+      "w": "das Datum",
+      "ex": "Welches Datum ist heute?"
+     },
+     {
+      "w": "der Geburtstag",
+      "ex": "Wann hast du Geburtstag?"
+     },
+     {
+      "w": "der Feiertag",
+      "ex": "Der erste Mai ist ein Feiertag."
+     }
+    ],
+    "gram": "Ordnungszahlen: 1-19 + -te (zweite), ab 20 + -ste (zwanzigste). Heute ist der 3. Mai. Am 3. Mai (am dritten Mai)."
+   }
+  }
+ ]
+}

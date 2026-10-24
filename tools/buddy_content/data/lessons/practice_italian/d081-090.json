@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 81,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Fruit and vegetables",
+     "g": "Name seasonal produce and say which ones you prefer.",
+     "p": [
+      "Fruit: la mela, la pera, l'arancia, la fragola, la pesca, l'uva, il limone. Vegetables: il pomodoro, la zucchina, la carota, gli spinaci.",
+      "Seasons matter in Italy: d'estate pesche e pomodori, d'autunno uva e castagne, d'inverno arance.",
+      "Preferences: preferisco le pere alle mele, la mia frutta preferita è..., non mi piacciono i peperoni."
+     ],
+     "q": "What is your favourite fruit, and which vegetable do you not like at all?",
+     "c": "Name in Italian two fruits and two vegetables for each season of the year."
+    },
+    "de": {
+     "t": "Obst und Gemüse",
+     "g": "Du benennst Obst und Gemüse der Saison und sagst, was du lieber magst.",
+     "p": [
+      "Obst: la mela, la pera, l'arancia, la fragola, la pesca, l'uva, il limone. Gemüse: il pomodoro, la zucchina, la carota, gli spinaci.",
+      "In Italien zählt die Saison: d'estate pesche e pomodori, d'autunno uva e castagne, d'inverno arance.",
+      "Vorlieben: preferisco le pere alle mele, la mia frutta preferita è..., non mi piacciono i peperoni."
+     ],
+     "q": "Was ist dein Lieblingsobst, und welches Gemüse magst du gar nicht?",
+     "c": "Nenn auf Italienisch für jede Jahreszeit zwei Obst- und zwei Gemüsesorten."
+    },
+    "es": {
+     "t": "Frutas y verduras",
+     "g": "Nombrar productos de temporada y decir cuáles prefieres.",
+     "p": [
+      "Fruta: la mela, la pera, l'arancia, la fragola, la pesca, l'uva, il limone. Verdura: il pomodoro, la zucchina, la carota, gli spinaci.",
+      "En Italia importa la temporada: d'estate pesche e pomodori, d'autunno uva e castagne, d'inverno arance.",
+      "Preferencias: preferisco le pere alle mele, la mia frutta preferita è..., non mi piacciono i peperoni."
+     ],
+     "q": "¿Cuál es tu fruta favorita y qué verdura no te gusta nada?",
+     "c": "Nombra en italiano dos frutas y dos verduras para cada estación del año."
+    },
+    "fr": {
+     "t": "Fruits et légumes",
+     "g": "Nommer les produits de saison et dire lesquels tu préfères.",
+     "p": [
+      "Fruits : la mela, la pera, l'arancia, la fragola, la pesca, l'uva, il limone. Légumes : il pomodoro, la zucchina, la carota, gli spinaci.",
+      "En Italie la saison compte : d'estate pesche e pomodori, d'autunno uva e castagne, d'inverno arance.",
+      "Préférences : preferisco le pere alle mele, la mia frutta preferita è..., non mi piacciono i peperoni."
+     ],
+     "q": "Quel est ton fruit préféré, et quel légume n'aimes-tu pas du tout ?",
+     "c": "Nomme en italien deux fruits et deux légumes pour chaque saison."
+    },
+    "it": {
+     "t": "Frutta e verdura",
+     "g": "Nominare i prodotti di stagione e dire quali preferisci.",
+     "p": [
+      "Frutta: la mela, la pera, l'arancia, la fragola, la pesca, l'uva, il limone. Verdura: il pomodoro, la zucchina, la carota, gli spinaci.",
+      "In Italia conta la stagione: d'estate pesche e pomodori, d'autunno uva e castagne, d'inverno arance.",
+      "Preferenze: preferisco le pere alle mele, la mia frutta preferita è..., non mi piacciono i peperoni."
+     ],
+     "q": "Qual è la tua frutta preferita, e quale verdura non ti piace per niente?",
+     "c": "Nomina due frutti e due verdure per ogni stagione dell'anno."
+    },
+    "pt": {
+     "t": "Fruta e legumes",
+     "g": "Nomear produtos da época e dizer quais preferes.",
+     "p": [
+      "Fruta: la mela, la pera, l'arancia, la fragola, la pesca, l'uva, il limone. Legumes: il pomodoro, la zucchina, la carota, gli spinaci.",
+      "Em Itália a época conta: d'estate pesche e pomodori, d'autunno uva e castagne, d'inverno arance.",
+      "Preferências: preferisco le pere alle mele, la mia frutta preferita è..., non mi piacciono i peperoni."
+     ],
+     "q": "Qual é a tua fruta preferida, e que legume não suportas?",
+     "c": "Diz em italiano duas frutas e dois legumes para cada estação do ano."
+    },
+    "pt_BR": {
+     "t": "Frutas e verduras",
+     "g": "Nomear produtos da estação e dizer quais você prefere.",
+     "p": [
+      "Frutas: la mela, la pera, l'arancia, la fragola, la pesca, l'uva, il limone. Verduras: il pomodoro, la zucchina, la carota, gli spinaci.",
+      "Na Itália a estação importa: d'estate pesche e pomodori, d'autunno uva e castagne, d'inverno arance.",
+      "Preferências: preferisco le pere alle mele, la mia frutta preferita è..., non mi piacciono i peperoni."
+     ],
+     "q": "Qual é a sua fruta preferida, e que verdura você não gosta nem um pouco?",
+     "c": "Diga em italiano duas frutas e duas verduras para cada estação do ano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la fragola",
+      "ex": "In primavera le fragole sono dolcissime."
+     },
+     {
+      "w": "la pesca",
+      "ex": "D'estate mangio una pesca ogni giorno."
+     },
+     {
+      "w": "l'uva",
+      "ex": "In autunno arriva l'uva nuova."
+     },
+     {
+      "w": "la zucchina",
+      "ex": "Stasera faccio la pasta con le zucchine."
+     },
+     {
+      "w": "di stagione",
+      "ex": "Compro solo frutta di stagione."
+     },
+     {
+      "w": "preferisco... a...",
+      "ex": "Preferisco le pere alle mele."
+     }
+    ],
+    "gram": "Preferire qualcosa a qualcos'altro: preferisco il tè al caffè (a + articolo); la mia frutta preferita è..."
+   }
+  },
+  {
+   "d": 82,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Gestures and body language",
+     "g": "Recognise famous Italian hand gestures and use them politely.",
+     "p": [
+      "Fingertips pinched together and shaken gently: ma che dici? or ma cosa vuoi dire? It asks what someone means.",
+      "Index finger twisted on the cheek means buono!, delicious. A flat hand tilted side to side means così così.",
+      "Gestures go with words, never replace politeness. With strangers, smile and say scusi or grazie too."
+     ],
+     "q": "Which Italian gesture do you know already? What does it mean?",
+     "c": "Practise three gestures in the mirror and say the matching words aloud: buono!, così così, ma che dici?"
+    },
+    "de": {
+     "t": "Gesten und Körpersprache",
+     "g": "Du erkennst berühmte italienische Handgesten und benutzt sie höflich.",
+     "p": [
+      "Fingerspitzen zusammen, leicht geschüttelt: ma che dici? oder ma cosa vuoi dire? Man fragt, was gemeint ist.",
+      "Zeigefinger an der Wange drehen heißt buono!, lecker. Flache Hand hin und her heißt così così.",
+      "Gesten begleiten Worte, ersetzen aber keine Höflichkeit. Bei Fremden lächeln und scusi oder grazie sagen."
+     ],
+     "q": "Welche italienische Geste kennst du schon? Was bedeutet sie?",
+     "c": "Übe drei Gesten vor dem Spiegel und sag die Worte laut dazu: buono!, così così, ma che dici?"
+    },
+    "es": {
+     "t": "Gestos y lenguaje corporal",
+     "g": "Reconocer gestos italianos famosos y usarlos con educación.",
+     "p": [
+      "Yemas de los dedos juntas, moviendo la mano: ma che dici? o ma cosa vuoi dire? Pregunta qué quiere decir alguien.",
+      "El índice girando en la mejilla significa buono!, riquísimo. La mano plana de lado a lado es così così.",
+      "Los gestos acompañan las palabras, no sustituyen la cortesía. Con desconocidos, sonríe y di scusi o grazie."
+     ],
+     "q": "¿Qué gesto italiano conoces ya? ¿Qué significa?",
+     "c": "Practica tres gestos en el espejo diciendo las palabras: buono!, così così, ma che dici?"
+    },
+    "fr": {
+     "t": "Gestes et langage du corps",
+     "g": "Reconnaître des gestes italiens célèbres et les utiliser poliment.",
+     "p": [
+      "Le bout des doigts réunis, main secouée doucement : ma che dici ? ou ma cosa vuoi dire ? On demande ce que l'autre veut dire.",
+      "L'index qui tourne sur la joue veut dire buono !, délicieux. La main à plat qui bascule veut dire così così.",
+      "Les gestes accompagnent les mots, ils ne remplacent pas la politesse. Avec un inconnu, souris et dis scusi ou grazie."
+     ],
+     "q": "Quel geste italien connais-tu déjà ? Que veut-il dire ?",
+     "c": "Entraîne-toi devant le miroir avec trois gestes et dis les mots : buono !, così così, ma che dici ?"
+    },
+    "it": {
+     "t": "Gesti e linguaggio del corpo",
+     "g": "Riconoscere i gesti italiani famosi e usarli con garbo.",
+     "p": [
+      "Le dita unite a punta e la mano che oscilla: ma che dici? o ma cosa vuoi dire? Si chiede cosa intende l'altro.",
+      "L'indice che gira sulla guancia vuol dire buono!, squisito. La mano piatta che oscilla vuol dire così così.",
+      "I gesti accompagnano le parole, non sostituiscono la gentilezza. Con gli sconosciuti sorridi e di' scusi o grazie."
+     ],
+     "q": "Quale gesto italiano conosci già? Che cosa significa?",
+     "c": "Prova tre gesti allo specchio dicendo le parole: buono!, così così, ma che dici?"
+    },
+    "pt": {
+     "t": "Gestos e linguagem corporal",
+     "g": "Reconhecer gestos italianos famosos e usá-los com educação.",
+     "p": [
+      "Pontas dos dedos juntas, mão a abanar: ma che dici? ou ma cosa vuoi dire? Pergunta o que o outro quer dizer.",
+      "O indicador a rodar na bochecha quer dizer buono!, delicioso. A mão aberta a oscilar quer dizer così così.",
+      "Os gestos acompanham as palavras, não substituem a cortesia. Com desconhecidos, sorri e diz scusi ou grazie."
+     ],
+     "q": "Que gesto italiano já conheces? O que significa?",
+     "c": "Pratica três gestos ao espelho dizendo as palavras: buono!, così così, ma che dici?"
+    },
+    "pt_BR": {
+     "t": "Gestos e linguagem corporal",
+     "g": "Reconhecer gestos italianos famosos e usá-los com educação.",
+     "p": [
+      "Pontas dos dedos juntas, mão balançando: ma che dici? ou ma cosa vuoi dire? Pergunta o que o outro quer dizer.",
+      "O indicador girando na bochecha quer dizer buono!, delicioso. A mão aberta oscilando quer dizer così così.",
+      "Os gestos acompanham as palavras, não substituem a gentileza. Com desconhecidos, sorria e diga scusi ou grazie."
+     ],
+     "q": "Que gesto italiano você já conhece? O que ele significa?",
+     "c": "Pratique três gestos no espelho dizendo as palavras: buono!, così così, ma che dici?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il gesto",
+      "ex": "Questo gesto significa buono!"
+     },
+     {
+      "w": "ma che dici?",
+      "ex": "Ma che dici? Non è vero!"
+     },
+     {
+      "w": "così così",
+      "ex": "Come stai? Così così."
+     },
+     {
+      "w": "squisito",
+      "ex": "Il tiramisù è squisito!"
+     },
+     {
+      "w": "vuol dire",
+      "ex": "Che cosa vuol dire questo gesto?"
+     },
+     {
+      "w": "ci sentiamo",
+      "ex": "Ci sentiamo domani, ciao!"
+     }
+    ],
+    "gram": "Volere dire / vuol dire = significare: che cosa vuol dire?; i gesti si usano con le parole, non al loro posto."
+   }
+  },
+  {
+   "d": 83,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Small talk with strangers",
+     "g": "Chat lightly with someone new about the weather, the city and where you are from.",
+     "p": [
+      "Openers: che bella giornata!, fa caldo oggi, eh? è la prima volta qui? Use Lei with adults you do not know.",
+      "Where from: di dov'è? sono di Londra, ma abito a Milano. E Lei? Show interest: davvero? che bello!",
+      "Talk about the city: Le piace Roma? sì, moltissimo, è bellissima. Close kindly: piacere, buona giornata!"
+     ],
+     "q": "Imagine we meet on a train to Florence. How would you start the conversation?",
+     "c": "Write a five-line small talk dialogue with a stranger using Lei, weather and di dov'è?"
+    },
+    "de": {
+     "t": "Smalltalk mit Fremden",
+     "g": "Du plauderst locker mit jemand Neuem über Wetter, Stadt und Herkunft.",
+     "p": [
+      "Einstiege: che bella giornata!, fa caldo oggi, eh? è la prima volta qui? Mit fremden Erwachsenen Lei benutzen.",
+      "Herkunft: di dov'è? sono di Londra, ma abito a Milano. E Lei? Interesse zeigen: davvero? che bello!",
+      "Über die Stadt: Le piace Roma? sì, moltissimo, è bellissima. Freundlich enden: piacere, buona giornata!"
+     ],
+     "q": "Stell dir vor, wir treffen uns im Zug nach Florenz. Wie beginnst du das Gespräch?",
+     "c": "Schreib einen Smalltalk-Dialog in fünf Zeilen mit Lei, Wetter und di dov'è?"
+    },
+    "es": {
+     "t": "Charlar con desconocidos",
+     "g": "Charlar con alguien nuevo sobre el tiempo, la ciudad y de dónde sois.",
+     "p": [
+      "Para empezar: che bella giornata!, fa caldo oggi, eh? è la prima volta qui? Usa Lei con adultos desconocidos.",
+      "El origen: di dov'è? sono di Londra, ma abito a Milano. E Lei? Muestra interés: davvero? che bello!",
+      "Sobre la ciudad: Le piace Roma? sì, moltissimo, è bellissima. Despídete: piacere, buona giornata!"
+     ],
+     "q": "Imagina que nos conocemos en un tren a Florencia. ¿Cómo empezarías a hablar?",
+     "c": "Escribe un diálogo de cinco líneas con un desconocido usando Lei, el tiempo y di dov'è?"
+    },
+    "fr": {
+     "t": "Bavarder avec des inconnus",
+     "g": "Discuter légèrement avec quelqu'un de nouveau : météo, ville et origine.",
+     "p": [
+      "Pour commencer : che bella giornata !, fa caldo oggi, eh ? è la prima volta qui ? Vouvoie avec Lei les adultes inconnus.",
+      "L'origine : di dov'è ? sono di Londra, ma abito a Milano. E Lei ? Montre de l'intérêt : davvero ? che bello !",
+      "La ville : Le piace Roma ? sì, moltissimo, è bellissima. Pour finir : piacere, buona giornata !"
+     ],
+     "q": "Imagine qu'on se rencontre dans un train pour Florence. Comment lancerais-tu la conversation ?",
+     "c": "Écris un dialogue de cinq lignes avec un inconnu en utilisant Lei, la météo et di dov'è ?"
+    },
+    "it": {
+     "t": "Due chiacchiere con gli sconosciuti",
+     "g": "Chiacchierare con una persona nuova del tempo, della città e della provenienza.",
+     "p": [
+      "Per cominciare: che bella giornata!, fa caldo oggi, eh? è la prima volta qui? Con adulti sconosciuti si usa il Lei.",
+      "La provenienza: di dov'è? sono di Londra, ma abito a Milano. E Lei? Mostra interesse: davvero? che bello!",
+      "La città: Le piace Roma? sì, moltissimo, è bellissima. Per salutare: piacere, buona giornata!"
+     ],
+     "q": "Immagina di incontrarmi su un treno per Firenze. Come cominci la conversazione?",
+     "c": "Scrivi un dialogo di cinque righe con uno sconosciuto: Lei, il tempo e di dov'è?"
+    },
+    "pt": {
+     "t": "Conversa de circunstância",
+     "g": "Conversar com alguém novo sobre o tempo, a cidade e de onde são.",
+     "p": [
+      "Para começar: che bella giornata!, fa caldo oggi, eh? è la prima volta qui? Usa Lei com adultos desconhecidos.",
+      "A origem: di dov'è? sono di Londra, ma abito a Milano. E Lei? Mostra interesse: davvero? che bello!",
+      "A cidade: Le piace Roma? sì, moltissimo, è bellissima. Para terminar: piacere, buona giornata!"
+     ],
+     "q": "Imagina que nos conhecemos num comboio para Florença. Como começarias a conversa?",
+     "c": "Escreve um diálogo de cinco linhas com um desconhecido usando Lei, o tempo e di dov'è?"
+    },
+    "pt_BR": {
+     "t": "Papo com desconhecidos",
+     "g": "Bater papo com alguém novo sobre o tempo, a cidade e de onde vocês são.",
+     "p": [
+      "Para começar: che bella giornata!, fa caldo oggi, eh? è la prima volta qui? Use Lei com adultos desconhecidos.",
+      "A origem: di dov'è? sono di Londra, ma abito a Milano. E Lei? Mostre interesse: davvero? che bello!",
+      "A cidade: Le piace Roma? sì, moltissimo, è bellissima. Para encerrar: piacere, buona giornata!"
+     ],
+     "q": "Imagine que a gente se conhece num trem para Florença. Como você começaria a conversa?",
+     "c": "Escreva um diálogo de cinco linhas com um desconhecido usando Lei, o tempo e di dov'è?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che bella giornata!",
+      "ex": "Che bella giornata oggi, vero?"
+     },
+     {
+      "w": "di dov'è?",
+      "ex": "Scusi, di dov'è?"
+     },
+     {
+      "w": "è la prima volta?",
+      "ex": "È la prima volta a Napoli?"
+     },
+     {
+      "w": "davvero?",
+      "ex": "Davvero? Anch'io sono di Lione!"
+     },
+     {
+      "w": "Le piace...?",
+      "ex": "Le piace questa città?"
+     },
+     {
+      "w": "buona giornata",
+      "ex": "È stato un piacere, buona giornata!"
+     }
+    ],
+    "gram": "Con gli sconosciuti si usa il Lei: verbo alla terza persona (di dov'è? Le piace?); risposte brevi con davvero?, anch'io."
+   }
+  },
+  {
+   "d": 84,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Writing a short message",
+     "g": "Write a friendly text or postcard in Italian.",
+     "p": [
+      "Start with caro (to a man), cara (to a woman), cari (to a group). Ciao Marta! works for a quick text.",
+      "The middle: come stai? qui tutto bene, il tempo è bellissimo, mi diverto molto. Keep sentences short.",
+      "Close warmly: un abbraccio, baci, a presto, un saluto. Sign with your name."
+     ],
+     "q": "Who would you send an Italian postcard to, and what would the first line be?",
+     "c": "Write a postcard of four sentences from an Italian city, with greeting and closing."
+    },
+    "de": {
+     "t": "Eine kurze Nachricht schreiben",
+     "g": "Du schreibst eine freundliche Nachricht oder Postkarte auf Italienisch.",
+     "p": [
+      "Beginn mit caro (an einen Mann), cara (an eine Frau), cari (an eine Gruppe). Für SMS reicht Ciao Marta!",
+      "Der Mittelteil: come stai? qui tutto bene, il tempo è bellissimo, mi diverto molto. Kurze Sätze.",
+      "Herzlich enden: un abbraccio, baci, a presto, un saluto. Dann dein Name."
+     ],
+     "q": "Wem würdest du eine italienische Postkarte schicken, und wie wäre die erste Zeile?",
+     "c": "Schreib eine Postkarte mit vier Sätzen aus einer italienischen Stadt, mit Anrede und Gruß."
+    },
+    "es": {
+     "t": "Escribir un mensaje corto",
+     "g": "Escribir un mensaje o una postal amistosa en italiano.",
+     "p": [
+      "Empieza con caro (a un hombre), cara (a una mujer), cari (a un grupo). Para un mensaje vale Ciao Marta!",
+      "El centro: come stai? qui tutto bene, il tempo è bellissimo, mi diverto molto. Frases cortas.",
+      "Cierra con cariño: un abbraccio, baci, a presto, un saluto. Y firma con tu nombre."
+     ],
+     "q": "¿A quién enviarías una postal en italiano y cuál sería la primera línea?",
+     "c": "Escribe una postal de cuatro frases desde una ciudad italiana, con saludo y despedida."
+    },
+    "fr": {
+     "t": "Écrire un petit message",
+     "g": "Écrire un texto ou une carte postale amicale en italien.",
+     "p": [
+      "Commence par caro (à un homme), cara (à une femme), cari (à un groupe). Pour un texto, Ciao Marta ! suffit.",
+      "Le milieu : come stai ? qui tutto bene, il tempo è bellissimo, mi diverto molto. Des phrases courtes.",
+      "Termine chaleureusement : un abbraccio, baci, a presto, un saluto. Puis ton prénom."
+     ],
+     "q": "À qui enverrais-tu une carte postale en italien, et quelle serait la première ligne ?",
+     "c": "Écris une carte de quatre phrases depuis une ville italienne, avec salutation et formule finale."
+    },
+    "it": {
+     "t": "Scrivere un messaggio breve",
+     "g": "Scrivere un messaggio o una cartolina affettuosa.",
+     "p": [
+      "Si comincia con caro (a un uomo), cara (a una donna), cari (a un gruppo). Per un messaggio basta Ciao Marta!",
+      "Nel mezzo: come stai? qui tutto bene, il tempo è bellissimo, mi diverto molto. Frasi brevi.",
+      "Si chiude con calore: un abbraccio, baci, a presto, un saluto. Poi la firma."
+     ],
+     "q": "A chi manderesti una cartolina in italiano, e quale sarebbe la prima riga?",
+     "c": "Scrivi una cartolina di quattro frasi da una città italiana, con saluto iniziale e finale."
+    },
+    "pt": {
+     "t": "Escrever uma mensagem curta",
+     "g": "Escrever uma mensagem ou um postal simpático em italiano.",
+     "p": [
+      "Começa com caro (a um homem), cara (a uma mulher), cari (a um grupo). Numa mensagem basta Ciao Marta!",
+      "O meio: come stai? qui tutto bene, il tempo è bellissimo, mi diverto molto. Frases curtas.",
+      "Termina com carinho: un abbraccio, baci, a presto, un saluto. E assina com o teu nome."
+     ],
+     "q": "A quem mandarias um postal em italiano, e qual seria a primeira linha?",
+     "c": "Escreve um postal de quatro frases de uma cidade italiana, com saudação e despedida."
+    },
+    "pt_BR": {
+     "t": "Escrevendo uma mensagem curta",
+     "g": "Escrever uma mensagem ou um cartão-postal carinhoso em italiano.",
+     "p": [
+      "Comece com caro (para um homem), cara (para uma mulher), cari (para um grupo). Numa mensagem basta Ciao Marta!",
+      "O meio: come stai? qui tutto bene, il tempo è bellissimo, mi diverto molto. Frases curtas.",
+      "Feche com carinho: un abbraccio, baci, a presto, un saluto. E assine com seu nome."
+     ],
+     "q": "Para quem você mandaria um cartão-postal em italiano, e qual seria a primeira linha?",
+     "c": "Escreva um cartão-postal de quatro frases de uma cidade italiana, com saudação e despedida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "caro / cara",
+      "ex": "Cara Sofia, come stai?"
+     },
+     {
+      "w": "la cartolina",
+      "ex": "Ti mando una cartolina da Venezia."
+     },
+     {
+      "w": "qui tutto bene",
+      "ex": "Qui tutto bene, fa bel tempo."
+     },
+     {
+      "w": "mi diverto",
+      "ex": "Mi diverto tantissimo in vacanza."
+     },
+     {
+      "w": "un abbraccio",
+      "ex": "Un abbraccio forte, Paolo."
+     },
+     {
+      "w": "a presto",
+      "ex": "A presto e tanti saluti!"
+     }
+    ],
+    "gram": "Caro / cara / cari / care si accordano con chi riceve; chiusure fisse: un abbraccio, baci, a presto, cari saluti."
+   }
+  },
+  {
+   "d": 85,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Italian regions and cities",
+     "g": "Learn about the regions and say where a city is.",
+     "p": [
+      "Italy has 20 regions, for example la Lombardia (Milano), il Lazio (Roma), la Toscana (Firenze), la Campania (Napoli).",
+      "Say where a city is: Bologna è in Emilia-Romagna. Use in with regions and a with cities: vado in Sicilia, a Palermo.",
+      "Compass points: al nord, al centro, al sud. Torino è al nord, Bari è al sud, nelle isole: Sicilia e Sardegna."
+     ],
+     "q": "Which Italian region would you most like to visit, and which city is in it?",
+     "c": "Pick five Italian cities and write where each one is: è in..., al nord, al centro or al sud."
+    },
+    "de": {
+     "t": "Italienische Regionen und Städte",
+     "g": "Du lernst die Regionen kennen und sagst, wo eine Stadt liegt.",
+     "p": [
+      "Italien hat 20 Regionen, z. B. la Lombardia (Milano), il Lazio (Roma), la Toscana (Firenze), la Campania (Napoli).",
+      "Wo liegt eine Stadt: Bologna è in Emilia-Romagna. In bei Regionen, a bei Städten: vado in Sicilia, a Palermo.",
+      "Himmelsrichtungen: al nord, al centro, al sud. Torino è al nord, Bari è al sud, die Inseln: Sicilia e Sardegna."
+     ],
+     "q": "Welche italienische Region würdest du am liebsten besuchen, und welche Stadt liegt dort?",
+     "c": "Wähl fünf italienische Städte und schreib, wo sie liegen: è in..., al nord, al centro oder al sud."
+    },
+    "es": {
+     "t": "Regiones y ciudades italianas",
+     "g": "Conocer las regiones y decir dónde está una ciudad.",
+     "p": [
+      "Italia tiene 20 regiones, por ejemplo la Lombardia (Milano), il Lazio (Roma), la Toscana (Firenze), la Campania (Napoli).",
+      "Dónde está una ciudad: Bologna è in Emilia-Romagna. In con regiones y a con ciudades: vado in Sicilia, a Palermo.",
+      "Los puntos cardinales: al nord, al centro, al sud. Torino è al nord, Bari è al sud; las islas: Sicilia y Sardegna."
+     ],
+     "q": "¿Qué región italiana te gustaría más visitar y qué ciudad está allí?",
+     "c": "Elige cinco ciudades italianas y escribe dónde están: è in..., al nord, al centro o al sud."
+    },
+    "fr": {
+     "t": "Régions et villes d'Italie",
+     "g": "Découvrir les régions et dire où se trouve une ville.",
+     "p": [
+      "L'Italie a 20 régions, par exemple la Lombardia (Milano), il Lazio (Roma), la Toscana (Firenze), la Campania (Napoli).",
+      "Situer une ville : Bologna è in Emilia-Romagna. In pour les régions, a pour les villes : vado in Sicilia, a Palermo.",
+      "Les points cardinaux : al nord, al centro, al sud. Torino è al nord, Bari è al sud ; les îles : Sicilia e Sardegna."
+     ],
+     "q": "Quelle région italienne aimerais-tu le plus visiter, et quelle ville s'y trouve ?",
+     "c": "Choisis cinq villes italiennes et écris où elles sont : è in..., al nord, al centro ou al sud."
+    },
+    "it": {
+     "t": "Regioni e città italiane",
+     "g": "Conoscere le regioni e dire dove si trova una città.",
+     "p": [
+      "L'Italia ha 20 regioni, per esempio la Lombardia (Milano), il Lazio (Roma), la Toscana (Firenze), la Campania (Napoli).",
+      "Dove si trova una città: Bologna è in Emilia-Romagna. In con le regioni, a con le città: vado in Sicilia, a Palermo.",
+      "I punti cardinali: al nord, al centro, al sud. Torino è al nord, Bari è al sud; le isole: Sicilia e Sardegna."
+     ],
+     "q": "Quale regione italiana ti piacerebbe visitare di più, e quale città c'è?",
+     "c": "Scegli cinque città italiane e scrivi dove sono: è in..., al nord, al centro o al sud."
+    },
+    "pt": {
+     "t": "Regiões e cidades italianas",
+     "g": "Conhecer as regiões e dizer onde fica uma cidade.",
+     "p": [
+      "Itália tem 20 regiões, por exemplo la Lombardia (Milano), il Lazio (Roma), la Toscana (Firenze), la Campania (Napoli).",
+      "Onde fica uma cidade: Bologna è in Emilia-Romagna. In com regiões e a com cidades: vado in Sicilia, a Palermo.",
+      "Os pontos cardeais: al nord, al centro, al sud. Torino è al nord, Bari è al sud; as ilhas: Sicilia e Sardegna."
+     ],
+     "q": "Que região italiana gostavas mais de visitar, e que cidade fica lá?",
+     "c": "Escolhe cinco cidades italianas e escreve onde ficam: è in..., al nord, al centro ou al sud."
+    },
+    "pt_BR": {
+     "t": "Regiões e cidades italianas",
+     "g": "Conhecer as regiões e dizer onde fica uma cidade.",
+     "p": [
+      "A Itália tem 20 regiões, por exemplo la Lombardia (Milano), il Lazio (Roma), la Toscana (Firenze), la Campania (Napoli).",
+      "Onde fica uma cidade: Bologna è in Emilia-Romagna. In com regiões e a com cidades: vado in Sicilia, a Palermo.",
+      "Os pontos cardeais: al nord, al centro, al sud. Torino è al nord, Bari è al sud; as ilhas: Sicilia e Sardegna."
+     ],
+     "q": "Que região italiana você mais gostaria de visitar, e que cidade fica nela?",
+     "c": "Escolha cinco cidades italianas e escreva onde ficam: è in..., al nord, al centro ou al sud."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la regione",
+      "ex": "La Toscana è una regione del centro."
+     },
+     {
+      "w": "il capoluogo",
+      "ex": "Il capoluogo della Campania è Napoli."
+     },
+     {
+      "w": "si trova",
+      "ex": "Verona si trova in Veneto."
+     },
+     {
+      "w": "al nord / al sud",
+      "ex": "Bari è al sud, Trento è al nord."
+     },
+     {
+      "w": "l'isola",
+      "ex": "La Sardegna è un'isola bellissima."
+     },
+     {
+      "w": "in Sicilia, a Palermo",
+      "ex": "Quest'estate vado in Sicilia, a Palermo."
+     }
+    ],
+    "gram": "In + regione o paese (in Toscana, in Italia), a + città (a Firenze); si trova = è situato; al nord, al centro, al sud."
+   }
+  },
+  {
+   "d": 86,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking for and giving opinions simply",
+     "g": "Share simple impressions and ask others what they think.",
+     "p": [
+      "Ask: ti piace?, com'è?, che ne pensi? To a stranger: Le piace?, che ne pensa?",
+      "Answer simply: è buono, è bello, è interessante, non è male, è un po' noioso. Add molto or troppo for nuance.",
+      "Give a personal view: secondo me, per me, penso di sì, penso di no. Secondo me il film è bellissimo."
+     ],
+     "q": "Che ne pensi della cucina italiana? Give me your opinion in two sentences.",
+     "c": "Give your opinion in Italian on three things: a film, a food and a place, using secondo me."
+    },
+    "de": {
+     "t": "Einfach nach Meinungen fragen und sie sagen",
+     "g": "Du teilst einfache Eindrücke und fragst andere, was sie denken.",
+     "p": [
+      "Fragen: ti piace?, com'è?, che ne pensi? Bei Fremden: Le piace?, che ne pensa?",
+      "Einfach antworten: è buono, è bello, è interessante, non è male, è un po' noioso. Mit molto oder troppo abstufen.",
+      "Eigene Meinung: secondo me, per me, penso di sì, penso di no. Secondo me il film è bellissimo."
+     ],
+     "q": "Che ne pensi della cucina italiana? Sag mir deine Meinung in zwei Sätzen.",
+     "c": "Sag auf Italienisch deine Meinung zu drei Dingen: ein Film, ein Essen und ein Ort, mit secondo me."
+    },
+    "es": {
+     "t": "Pedir y dar opiniones sencillas",
+     "g": "Compartir impresiones sencillas y preguntar qué piensan los demás.",
+     "p": [
+      "Pregunta: ti piace?, com'è?, che ne pensi? A un desconocido: Le piace?, che ne pensa?",
+      "Responde sencillo: è buono, è bello, è interessante, non è male, è un po' noioso. Matiza con molto o troppo.",
+      "Tu opinión: secondo me, per me, penso di sì, penso di no. Secondo me il film è bellissimo."
+     ],
+     "q": "Che ne pensi della cucina italiana? Dame tu opinión en dos frases.",
+     "c": "Da tu opinión en italiano sobre tres cosas: una película, una comida y un lugar, con secondo me."
+    },
+    "fr": {
+     "t": "Demander et donner son avis simplement",
+     "g": "Partager des impressions simples et demander ce que pensent les autres.",
+     "p": [
+      "Demander : ti piace ?, com'è ?, che ne pensi ? À un inconnu : Le piace ?, che ne pensa ?",
+      "Répondre simplement : è buono, è bello, è interessante, non è male, è un po' noioso. Nuance avec molto ou troppo.",
+      "Ton avis : secondo me, per me, penso di sì, penso di no. Secondo me il film è bellissimo."
+     ],
+     "q": "Che ne pensi della cucina italiana ? Donne-moi ton avis en deux phrases.",
+     "c": "Donne ton avis en italien sur trois choses : un film, un plat et un lieu, avec secondo me."
+    },
+    "it": {
+     "t": "Chiedere e dare opinioni semplici",
+     "g": "Condividere impressioni semplici e chiedere cosa pensano gli altri.",
+     "p": [
+      "Per chiedere: ti piace?, com'è?, che ne pensi? A uno sconosciuto: Le piace?, che ne pensa?",
+      "Risposte semplici: è buono, è bello, è interessante, non è male, è un po' noioso. Sfumature con molto o troppo.",
+      "Il tuo parere: secondo me, per me, penso di sì, penso di no. Secondo me il film è bellissimo."
+     ],
+     "q": "Che ne pensi della cucina italiana? Dammi la tua opinione in due frasi.",
+     "c": "Di' la tua opinione su tre cose: un film, un cibo e un posto, con secondo me."
+    },
+    "pt": {
+     "t": "Pedir e dar opiniões simples",
+     "g": "Partilhar impressões simples e perguntar o que os outros pensam.",
+     "p": [
+      "Pergunta: ti piace?, com'è?, che ne pensi? A um desconhecido: Le piace?, che ne pensa?",
+      "Responde de forma simples: è buono, è bello, è interessante, non è male, è un po' noioso. Matiza com molto ou troppo.",
+      "A tua opinião: secondo me, per me, penso di sì, penso di no. Secondo me il film è bellissimo."
+     ],
+     "q": "Che ne pensi della cucina italiana? Dá-me a tua opinião em duas frases.",
+     "c": "Dá a tua opinião em italiano sobre três coisas: um filme, uma comida e um lugar, com secondo me."
+    },
+    "pt_BR": {
+     "t": "Pedir e dar opiniões simples",
+     "g": "Compartilhar impressões simples e perguntar o que os outros acham.",
+     "p": [
+      "Pergunte: ti piace?, com'è?, che ne pensi? A um desconhecido: Le piace?, che ne pensa?",
+      "Responda de forma simples: è buono, è bello, è interessante, non è male, è un po' noioso. Ajuste com molto ou troppo.",
+      "Sua opinião: secondo me, per me, penso di sì, penso di no. Secondo me il film è bellissimo."
+     ],
+     "q": "Che ne pensi della cucina italiana? Me dê sua opinião em duas frases.",
+     "c": "Dê sua opinião em italiano sobre três coisas: um filme, uma comida e um lugar, com secondo me."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che ne pensi?",
+      "ex": "Che ne pensi di questo ristorante?"
+     },
+     {
+      "w": "com'è?",
+      "ex": "Com'è il nuovo libro di Elena?"
+     },
+     {
+      "w": "secondo me",
+      "ex": "Secondo me questa piazza è la più bella."
+     },
+     {
+      "w": "non è male",
+      "ex": "Il vino non è male, anzi!"
+     },
+     {
+      "w": "penso di sì",
+      "ex": "Domani fa bel tempo? Penso di sì."
+     },
+     {
+      "w": "noioso",
+      "ex": "Il film è un po' noioso."
+     }
+    ],
+    "gram": "Secondo me / per me + opinione; che ne pensi? (tu), che ne pensa? (Lei); penso di sì / penso di no."
+   }
+  },
+  {
+   "d": 87,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Celebrations: buon compleanno!",
+     "g": "Wish people well for birthdays, holidays and good news.",
+     "p": [
+      "Auguri! works for almost every celebration. Tanti auguri! is extra warm. Buon compleanno! for birthdays.",
+      "Holidays: buon Natale, buon anno, buona Pasqua, buone feste, buone vacanze. Buono becomes buon before most masculine nouns.",
+      "Good news: congratulazioni! or complimenti! for a new job, an exam passed or a baby. Answer: grazie mille!"
+     ],
+     "q": "When is your birthday, and how do you like to celebrate it?",
+     "c": "Write three short Italian wishes: a birthday, a holiday and congratulations for an exam."
+    },
+    "de": {
+     "t": "Feste: buon compleanno!",
+     "g": "Du gratulierst zu Geburtstagen, Feiertagen und guten Nachrichten.",
+     "p": [
+      "Auguri! passt zu fast jedem Fest. Tanti auguri! ist besonders herzlich. Buon compleanno! zum Geburtstag.",
+      "Feiertage: buon Natale, buon anno, buona Pasqua, buone feste, buone vacanze. Buono wird vor den meisten männlichen Nomen zu buon.",
+      "Gute Nachrichten: congratulazioni! oder complimenti! für einen neuen Job, eine Prüfung, ein Baby. Antwort: grazie mille!"
+     ],
+     "q": "Wann hast du Geburtstag, und wie feierst du am liebsten?",
+     "c": "Schreib drei kurze Glückwünsche auf Italienisch: Geburtstag, Feiertag und bestandene Prüfung."
+    },
+    "es": {
+     "t": "Celebraciones: buon compleanno!",
+     "g": "Felicitar en cumpleaños, fiestas y buenas noticias.",
+     "p": [
+      "Auguri! sirve para casi cualquier celebración. Tanti auguri! es aún más cálido. Buon compleanno! para cumpleaños.",
+      "Fiestas: buon Natale, buon anno, buona Pasqua, buone feste, buone vacanze. Buono pasa a buon ante casi todos los masculinos.",
+      "Buenas noticias: congratulazioni! o complimenti! por un trabajo nuevo, un examen o un bebé. Respuesta: grazie mille!"
+     ],
+     "q": "¿Cuándo es tu cumpleaños y cómo te gusta celebrarlo?",
+     "c": "Escribe tres felicitaciones cortas en italiano: un cumpleaños, una fiesta y un examen aprobado."
+    },
+    "fr": {
+     "t": "Les fêtes : buon compleanno !",
+     "g": "Souhaiter un anniversaire, une fête ou féliciter pour une bonne nouvelle.",
+     "p": [
+      "Auguri ! va pour presque toutes les fêtes. Tanti auguri ! est encore plus chaleureux. Buon compleanno ! pour un anniversaire.",
+      "Fêtes : buon Natale, buon anno, buona Pasqua, buone feste, buone vacanze. Buono devient buon devant la plupart des masculins.",
+      "Bonnes nouvelles : congratulazioni ! ou complimenti ! pour un travail, un examen, un bébé. Réponse : grazie mille !"
+     ],
+     "q": "Quand est ton anniversaire, et comment aimes-tu le fêter ?",
+     "c": "Écris trois vœux courts en italien : un anniversaire, une fête et un examen réussi."
+    },
+    "it": {
+     "t": "Le feste: buon compleanno!",
+     "g": "Fare gli auguri per compleanni, feste e belle notizie.",
+     "p": [
+      "Auguri! va bene per quasi tutte le feste. Tanti auguri! è ancora più affettuoso. Buon compleanno! per il compleanno.",
+      "Le feste: buon Natale, buon anno, buona Pasqua, buone feste, buone vacanze. Buono diventa buon davanti a quasi tutti i maschili.",
+      "Belle notizie: congratulazioni! o complimenti! per un lavoro nuovo, un esame, un bebè. Risposta: grazie mille!"
+     ],
+     "q": "Quando è il tuo compleanno, e come ti piace festeggiarlo?",
+     "c": "Scrivi tre auguri brevi: un compleanno, una festa e un esame superato."
+    },
+    "pt": {
+     "t": "Celebrações: buon compleanno!",
+     "g": "Dar os parabéns em aniversários, festas e boas notícias.",
+     "p": [
+      "Auguri! serve para quase todas as celebrações. Tanti auguri! é ainda mais caloroso. Buon compleanno! para aniversários.",
+      "Festas: buon Natale, buon anno, buona Pasqua, buone feste, buone vacanze. Buono passa a buon antes da maioria dos masculinos.",
+      "Boas notícias: congratulazioni! ou complimenti! por um emprego novo, um exame, um bebé. Resposta: grazie mille!"
+     ],
+     "q": "Quando fazes anos, e como gostas de festejar?",
+     "c": "Escreve três votos curtos em italiano: um aniversário, uma festa e um exame aprovado."
+    },
+    "pt_BR": {
+     "t": "Comemorações: buon compleanno!",
+     "g": "Dar os parabéns em aniversários, festas e boas notícias.",
+     "p": [
+      "Auguri! serve para quase toda comemoração. Tanti auguri! é ainda mais caloroso. Buon compleanno! para aniversários.",
+      "Festas: buon Natale, buon anno, buona Pasqua, buone feste, buone vacanze. Buono vira buon antes da maioria dos masculinos.",
+      "Boas notícias: congratulazioni! ou complimenti! por um emprego novo, uma prova, um bebê. Resposta: grazie mille!"
+     ],
+     "q": "Quando é o seu aniversário, e como você gosta de comemorar?",
+     "c": "Escreva três votos curtos em italiano: um aniversário, uma festa e uma prova em que alguém passou."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tanti auguri!",
+      "ex": "Tanti auguri, Giulia!"
+     },
+     {
+      "w": "buon compleanno",
+      "ex": "Buon compleanno, amico mio!"
+     },
+     {
+      "w": "buone feste",
+      "ex": "Buone feste a tutta la famiglia!"
+     },
+     {
+      "w": "congratulazioni",
+      "ex": "Congratulazioni per il nuovo lavoro!"
+     },
+     {
+      "w": "festeggiare",
+      "ex": "Sabato festeggiamo in pizzeria."
+     },
+     {
+      "w": "la torta",
+      "ex": "Ecco la torta con le candeline!"
+     }
+    ],
+    "gram": "Buono davanti al nome si comporta come un: buon compleanno, buon anno, buona Pasqua, buone feste, buoni affari."
+   }
+  },
+  {
+   "d": 88,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Sounds of Italian: stress and rhythm",
+     "g": "Put the stress in the right place to sound more natural.",
+     "p": [
+      "Most Italian words stress the second-to-last syllable: amIco, parlAre, ragAzzo. Long vowels fall there.",
+      "A written accent on the last vowel means stress at the end: città, perché, caffè, università.",
+      "Some words stress the third-to-last: tAvolo, mAcchina, telEfono. Verbs in -ano too: pArlano, not parlAno."
+     ],
+     "q": "Can you say città, tavolo and parlano aloud with the stress in the right place?",
+     "c": "Read ten Italian words aloud and mark the stressed syllable of each one."
+    },
+    "de": {
+     "t": "Klang des Italienischen: Betonung und Rhythmus",
+     "g": "Du betonst richtig und klingst natürlicher.",
+     "p": [
+      "Die meisten Wörter betonen die vorletzte Silbe: amIco, parlAre, ragAzzo. Dort wird der Vokal lang.",
+      "Ein Akzent auf dem letzten Vokal heißt Betonung am Ende: città, perché, caffè, università.",
+      "Manche betonen die drittletzte: tAvolo, mAcchina, telEfono. Auch Verben auf -ano: pArlano, nicht parlAno."
+     ],
+     "q": "Kannst du città, tavolo und parlano laut mit der richtigen Betonung sagen?",
+     "c": "Lies zehn italienische Wörter laut und markiere jeweils die betonte Silbe."
+    },
+    "es": {
+     "t": "Los sonidos del italiano: acento y ritmo",
+     "g": "Poner el acento en su sitio para sonar más natural.",
+     "p": [
+      "La mayoría de palabras llevan el acento en la penúltima: amIco, parlAre, ragAzzo. Esa vocal se alarga.",
+      "Una tilde en la última vocal indica acento final: città, perché, caffè, università.",
+      "Algunas son esdrújulas: tAvolo, mAcchina, telEfono. También los verbos en -ano: pArlano, no parlAno."
+     ],
+     "q": "¿Puedes decir città, tavolo y parlano en voz alta con el acento bien puesto?",
+     "c": "Lee diez palabras italianas en voz alta y marca la sílaba tónica de cada una."
+    },
+    "fr": {
+     "t": "Les sons de l'italien : accent et rythme",
+     "g": "Placer l'accent tonique au bon endroit pour sonner plus naturel.",
+     "p": [
+      "La plupart des mots accentuent l'avant-dernière syllabe : amIco, parlAre, ragAzzo. La voyelle s'y allonge.",
+      "Un accent écrit sur la dernière voyelle met l'accent à la fin : città, perché, caffè, università.",
+      "Certains accentuent l'antépénultième : tAvolo, mAcchina, telEfono. Aussi les verbes en -ano : pArlano, pas parlAno."
+     ],
+     "q": "Peux-tu dire città, tavolo et parlano à voix haute avec le bon accent ?",
+     "c": "Lis dix mots italiens à voix haute et marque la syllabe accentuée de chacun."
+    },
+    "it": {
+     "t": "I suoni dell'italiano: accento e ritmo",
+     "g": "Mettere l'accento al posto giusto per suonare più naturale.",
+     "p": [
+      "Quasi tutte le parole hanno l'accento sulla penultima sillaba: amIco, parlAre, ragAzzo. Lì la vocale si allunga.",
+      "L'accento scritto sull'ultima vocale indica una parola tronca: città, perché, caffè, università.",
+      "Alcune sono sdrucciole: tAvolo, mAcchina, telEfono. Anche i verbi in -ano: pArlano, non parlAno."
+     ],
+     "q": "Riesci a dire città, tavolo e parlano ad alta voce con l'accento giusto?",
+     "c": "Leggi dieci parole ad alta voce e segna la sillaba accentata di ciascuna."
+    },
+    "pt": {
+     "t": "Os sons do italiano: acento e ritmo",
+     "g": "Pôr o acento no sítio certo para soar mais natural.",
+     "p": [
+      "A maioria das palavras é acentuada na penúltima sílaba: amIco, parlAre, ragAzzo. A vogal aí alonga-se.",
+      "Um acento gráfico na última vogal indica acento final: città, perché, caffè, università.",
+      "Algumas são esdrúxulas: tAvolo, mAcchina, telEfono. Também os verbos em -ano: pArlano, não parlAno."
+     ],
+     "q": "Consegues dizer città, tavolo e parlano em voz alta com o acento no sítio certo?",
+     "c": "Lê dez palavras italianas em voz alta e marca a sílaba tónica de cada uma."
+    },
+    "pt_BR": {
+     "t": "Os sons do italiano: acento e ritmo",
+     "g": "Colocar o acento no lugar certo para soar mais natural.",
+     "p": [
+      "A maioria das palavras é acentuada na penúltima sílaba: amIco, parlAre, ragAzzo. A vogal ali se alonga.",
+      "Um acento gráfico na última vogal indica acento final: città, perché, caffè, università.",
+      "Algumas são proparoxítonas: tAvolo, mAcchina, telEfono. Também os verbos em -ano: pArlano, não parlAno."
+     ],
+     "q": "Você consegue dizer città, tavolo e parlano em voz alta com o acento no lugar certo?",
+     "c": "Leia dez palavras italianas em voz alta e marque a sílaba tônica de cada uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la città",
+      "ex": "Firenze è una città d'arte."
+     },
+     {
+      "w": "il tavolo",
+      "ex": "Il tavolo è pronto, sedetevi!"
+     },
+     {
+      "w": "parlano",
+      "ex": "I miei amici parlano tre lingue."
+     },
+     {
+      "w": "la macchina",
+      "ex": "La macchina è in garage."
+     },
+     {
+      "w": "perché",
+      "ex": "Perché studi l'italiano?"
+     },
+     {
+      "w": "il telefono",
+      "ex": "Il telefono squilla in cucina."
+     }
+    ],
+    "gram": "Parole piane (amico), tronche con accento scritto (città), sdrucciole (tavolo); terza plurale: parlano, scrivono, dormono."
+   }
+  },
+  {
+   "d": 89,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My favourite Italian words",
+     "g": "Collect and use lovely everyday words from the whole A1 course.",
+     "p": [
+      "Warm words: allora (so, well), magari (if only, maybe), dai! (come on!), boh (no idea), figurati (no problem).",
+      "Food and life: la merenda (afternoon snack), la passeggiata, lo spuntino, il pisolino (nap), la chiacchierata.",
+      "Feelings: che bello!, meno male (thank goodness), in bocca al lupo (good luck), crepi! is the answer."
+     ],
+     "q": "Which Italian word do you love the most so far, and why?",
+     "c": "Choose five of today's words and use each one in a sentence about your life."
+    },
+    "de": {
+     "t": "Meine liebsten italienischen Wörter",
+     "g": "Du sammelst schöne Alltagswörter aus dem ganzen A1-Kurs und benutzt sie.",
+     "p": [
+      "Warme Wörter: allora (also), magari (schön wär's, vielleicht), dai! (komm schon!), boh (keine Ahnung), figurati (gern geschehen).",
+      "Essen und Leben: la merenda (Nachmittagssnack), la passeggiata, lo spuntino, il pisolino (Nickerchen), la chiacchierata.",
+      "Gefühle: che bello!, meno male (zum Glück), in bocca al lupo (viel Glück), Antwort: crepi!"
+     ],
+     "q": "Welches italienische Wort liebst du bisher am meisten, und warum?",
+     "c": "Wähl fünf Wörter von heute und benutze jedes in einem Satz über dein Leben."
+    },
+    "es": {
+     "t": "Mis palabras italianas favoritas",
+     "g": "Reunir y usar palabras bonitas del día a día de todo el curso A1.",
+     "p": [
+      "Palabras cálidas: allora (entonces), magari (ojalá, quizá), dai! (¡venga!), boh (ni idea), figurati (no hay de qué).",
+      "Comida y vida: la merenda, la passeggiata, lo spuntino, il pisolino (siesta corta), la chiacchierata (charla).",
+      "Sentimientos: che bello!, meno male (menos mal), in bocca al lupo (suerte), y se responde crepi!"
+     ],
+     "q": "¿Qué palabra italiana te gusta más hasta ahora y por qué?",
+     "c": "Elige cinco palabras de hoy y usa cada una en una frase sobre tu vida."
+    },
+    "fr": {
+     "t": "Mes mots italiens préférés",
+     "g": "Rassembler et utiliser de jolis mots du quotidien de tout le niveau A1.",
+     "p": [
+      "Mots chaleureux : allora (alors), magari (si seulement, peut-être), dai ! (allez !), boh (aucune idée), figurati (je t'en prie).",
+      "Nourriture et vie : la merenda (goûter), la passeggiata, lo spuntino, il pisolino (petite sieste), la chiacchierata.",
+      "Émotions : che bello !, meno male (heureusement), in bocca al lupo (bonne chance), on répond crepi !"
+     ],
+     "q": "Quel mot italien préfères-tu jusqu'ici, et pourquoi ?",
+     "c": "Choisis cinq mots du jour et utilise chacun dans une phrase sur ta vie."
+    },
+    "it": {
+     "t": "Le mie parole italiane preferite",
+     "g": "Raccogliere e usare belle parole di tutti i giorni da tutto il corso A1.",
+     "p": [
+      "Parole calde: allora, magari, dai!, boh (non lo so), figurati (ma di niente).",
+      "Cibo e vita: la merenda, la passeggiata, lo spuntino, il pisolino, la chiacchierata.",
+      "Emozioni: che bello!, meno male, in bocca al lupo per augurare fortuna, e si risponde crepi!"
+     ],
+     "q": "Qual è la parola italiana che ami di più finora, e perché?",
+     "c": "Scegli cinque parole di oggi e usale in cinque frasi sulla tua vita."
+    },
+    "pt": {
+     "t": "As minhas palavras italianas preferidas",
+     "g": "Juntar e usar palavras bonitas do dia a dia de todo o curso A1.",
+     "p": [
+      "Palavras calorosas: allora (então), magari (quem me dera, talvez), dai! (vá lá!), boh (sei lá), figurati (de nada).",
+      "Comida e vida: la merenda (lanche), la passeggiata, lo spuntino, il pisolino (sesta curta), la chiacchierata (conversa).",
+      "Sentimentos: che bello!, meno male (ainda bem), in bocca al lupo (boa sorte), e responde-se crepi!"
+     ],
+     "q": "Qual é a palavra italiana de que mais gostas até agora, e porquê?",
+     "c": "Escolhe cinco palavras de hoje e usa cada uma numa frase sobre a tua vida."
+    },
+    "pt_BR": {
+     "t": "Minhas palavras italianas favoritas",
+     "g": "Reunir e usar palavras bonitas do dia a dia de todo o curso A1.",
+     "p": [
+      "Palavras calorosas: allora (então), magari (tomara, talvez), dai! (vamos!), boh (sei lá), figurati (imagina, de nada).",
+      "Comida e vida: la merenda (lanche), la passeggiata, lo spuntino, il pisolino (cochilo), la chiacchierata (bate-papo).",
+      "Sentimentos: che bello!, meno male (ainda bem), in bocca al lupo (boa sorte), e se responde crepi!"
+     ],
+     "q": "Qual é a palavra italiana de que você mais gosta até agora, e por quê?",
+     "c": "Escolha cinco palavras de hoje e use cada uma numa frase sobre a sua vida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "allora",
+      "ex": "Allora, cosa facciamo stasera?"
+     },
+     {
+      "w": "magari",
+      "ex": "Vieni al mare? Magari!"
+     },
+     {
+      "w": "figurati",
+      "ex": "Grazie dell'aiuto! Figurati!"
+     },
+     {
+      "w": "meno male",
+      "ex": "Meno male che non piove!"
+     },
+     {
+      "w": "in bocca al lupo",
+      "ex": "Domani hai l'esame? In bocca al lupo!"
+     },
+     {
+      "w": "la merenda",
+      "ex": "Alle cinque facciamo merenda con pane e marmellata."
+     }
+    ],
+    "gram": "Parole e frasi fisse dell'italiano parlato: allora, magari, dai, boh, figurati, meno male; in bocca al lupo, crepi!"
+   }
+  },
+  {
+   "d": 90,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: A1 complete!",
+     "g": "Celebrate finishing A1 with a recap of the last month.",
+     "p": [
+      "Pronouns: lo, la, li, le for things and people, ci for places, ne for quantities: ne prendo due.",
+      "Compare and rank: più di, meno di, quanto, il più bello, bellissimo, migliore. Plans with the present: domani parto.",
+      "Everyday talk: on the phone, at the doctor, the hotel, the market, invitations, wishes and opinions."
+     ],
+     "q": "Complimenti! What are you proudest of after finishing A1 in Italian?",
+     "c": "Write a short paragraph about your next weekend plans with one pronoun, one comparison and one superlative."
+    },
+    "de": {
+     "t": "Rückblick: A1 geschafft!",
+     "g": "Du feierst den Abschluss von A1 mit einem Rückblick auf den letzten Monat.",
+     "p": [
+      "Pronomen: lo, la, li, le für Dinge und Personen, ci für Orte, ne für Mengen: ne prendo due.",
+      "Vergleichen: più di, meno di, quanto, il più bello, bellissimo, migliore. Pläne im Präsens: domani parto.",
+      "Alltag: Telefon, Arzt, Hotel, Markt, Einladungen, Glückwünsche und Meinungen."
+     ],
+     "q": "Complimenti! Worauf bist du nach A1 in Italienisch am meisten stolz?",
+     "c": "Schreib einen kurzen Absatz über dein nächstes Wochenende mit einem Pronomen, einem Vergleich und einem Superlativ."
+    },
+    "es": {
+     "t": "Repaso: ¡A1 completo!",
+     "g": "Celebrar el final del A1 con un repaso del último mes.",
+     "p": [
+      "Pronombres: lo, la, li, le para cosas y personas, ci para lugares, ne para cantidades: ne prendo due.",
+      "Comparar: più di, meno di, quanto, il più bello, bellissimo, migliore. Planes en presente: domani parto.",
+      "El día a día: teléfono, médico, hotel, mercado, invitaciones, felicitaciones y opiniones."
+     ],
+     "q": "Complimenti! ¿De qué estás más orgulloso tras terminar el A1 de italiano?",
+     "c": "Escribe un párrafo corto sobre tu próximo fin de semana con un pronombre, una comparación y un superlativo."
+    },
+    "fr": {
+     "t": "Révision : A1 terminé !",
+     "g": "Fêter la fin du A1 avec une révision du dernier mois.",
+     "p": [
+      "Pronoms : lo, la, li, le pour les choses et les personnes, ci pour les lieux, ne pour les quantités : ne prendo due.",
+      "Comparer : più di, meno di, quanto, il più bello, bellissimo, migliore. Projets au présent : domani parto.",
+      "Le quotidien : téléphone, médecin, hôtel, marché, invitations, vœux et opinions."
+     ],
+     "q": "Complimenti ! De quoi es-tu le plus fier après avoir terminé le A1 d'italien ?",
+     "c": "Écris un court paragraphe sur ton prochain week-end avec un pronom, une comparaison et un superlatif."
+    },
+    "it": {
+     "t": "Ripasso: A1 completato!",
+     "g": "Festeggiare la fine dell'A1 con un ripasso dell'ultimo mese.",
+     "p": [
+      "Pronomi: lo, la, li, le per cose e persone, ci per i luoghi, ne per le quantità: ne prendo due.",
+      "Confronti: più di, meno di, quanto, il più bello, bellissimo, migliore. Programmi al presente: domani parto.",
+      "La vita di ogni giorno: telefono, medico, albergo, mercato, inviti, auguri e opinioni."
+     ],
+     "q": "Complimenti! Di che cosa sei più orgoglioso dopo aver finito l'A1?",
+     "c": "Scrivi un breve paragrafo sul prossimo weekend con un pronome, un paragone e un superlativo."
+    },
+    "pt": {
+     "t": "Revisão: A1 concluído!",
+     "g": "Celebrar o fim do A1 com uma revisão do último mês.",
+     "p": [
+      "Pronomes: lo, la, li, le para coisas e pessoas, ci para lugares, ne para quantidades: ne prendo due.",
+      "Comparar: più di, meno di, quanto, il più bello, bellissimo, migliore. Planos no presente: domani parto.",
+      "O dia a dia: telefone, médico, hotel, mercado, convites, votos e opiniões."
+     ],
+     "q": "Complimenti! De que te orgulhas mais depois de acabar o A1 de italiano?",
+     "c": "Escreve um parágrafo curto sobre o teu próximo fim de semana com um pronome, uma comparação e um superlativo."
+    },
+    "pt_BR": {
+     "t": "Revisão: A1 concluído!",
+     "g": "Comemorar o fim do A1 com uma revisão do último mês.",
+     "p": [
+      "Pronomes: lo, la, li, le para coisas e pessoas, ci para lugares, ne para quantidades: ne prendo due.",
+      "Comparar: più di, meno di, quanto, il più bello, bellissimo, migliore. Planos no presente: domani parto.",
+      "O dia a dia: telefone, médico, hotel, feira, convites, votos e opiniões."
+     ],
+     "q": "Complimenti! Do que você mais se orgulha depois de terminar o A1 de italiano?",
+     "c": "Escreva um parágrafo curto sobre seu próximo fim de semana com um pronome, uma comparação e um superlativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "complimenti!",
+      "ex": "Hai finito l'A1? Complimenti!"
+     },
+     {
+      "w": "il livello",
+      "ex": "Adesso comincio il livello A2."
+     },
+     {
+      "w": "ripassare",
+      "ex": "Oggi ripasso i pronomi."
+     },
+     {
+      "w": "sono fiero / fiera",
+      "ex": "Sono fiera dei miei progressi."
+     },
+     {
+      "w": "ce l'ho fatta!",
+      "ex": "Ce l'ho fatta, ho finito il corso!"
+     },
+     {
+      "w": "andare avanti",
+      "ex": "Andiamo avanti insieme!"
+     }
+    ],
+    "gram": "Ripasso A1: pronomi lo/la/li/le, ci, ne; più/meno... di, tanto quanto, il più..., -issimo; presente per il futuro."
+   }
+  }
+ ]
+}

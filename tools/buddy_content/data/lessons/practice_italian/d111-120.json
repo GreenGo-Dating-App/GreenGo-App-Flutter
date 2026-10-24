@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 111,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Negative imperative",
+     "g": "Tell someone not to do something, kindly.",
+     "p": [
+      "For tu use non + infinitive: non mangiare!, non correre!, non preoccuparti! This is the infinitive trick.",
+      "For noi and voi just put non before the normal form: non andiamo!, non parlate tutti insieme!",
+      "Reflexive and pronouns attach to the infinitive or go before it: non preoccuparti or non ti preoccupare."
+     ],
+     "q": "What advice would you give a friend before their first trip to Italy? Use one negative imperative.",
+     "c": "Write five friendly don'ts for a guest in your home: non toccare..., non dimenticare..."
+    },
+    "de": {
+     "t": "Verneinter Imperativ",
+     "g": "Du sagst jemandem freundlich, etwas nicht zu tun.",
+     "p": [
+      "Für tu: non + Infinitiv: non mangiare!, non correre!, non preoccuparti! Das ist der Infinitiv-Trick.",
+      "Für noi und voi einfach non vor die normale Form: non andiamo!, non parlate tutti insieme!",
+      "Reflexiv- und andere Pronomen hängen am Infinitiv oder stehen davor: non preoccuparti oder non ti preoccupare."
+     ],
+     "q": "Welchen Rat gibst du einem Freund vor seiner ersten Italienreise? Mit einem verneinten Imperativ.",
+     "c": "Schreib fünf freundliche Verbote für einen Gast bei dir: non toccare..., non dimenticare..."
+    },
+    "es": {
+     "t": "Imperativo negativo",
+     "g": "Decirle a alguien con amabilidad que no haga algo.",
+     "p": [
+      "Para tu se usa non + infinitivo: non mangiare!, non correre!, non preoccuparti! Es el truco del infinitivo.",
+      "Para noi y voi basta poner non delante: non andiamo!, non parlate tutti insieme!",
+      "Los pronombres se unen al infinitivo o van delante: non preoccuparti o non ti preoccupare."
+     ],
+     "q": "¿Qué consejo darías a un amigo antes de su primer viaje a Italia? Usa un imperativo negativo.",
+     "c": "Escribe cinco prohibiciones amables para un invitado en tu casa: non toccare..., non dimenticare..."
+    },
+    "fr": {
+     "t": "L'impératif négatif",
+     "g": "Dire gentiment à quelqu'un de ne pas faire quelque chose.",
+     "p": [
+      "Pour tu : non + infinitif : non mangiare !, non correre !, non preoccuparti ! C'est l'astuce de l'infinitif.",
+      "Pour noi et voi, il suffit de mettre non devant : non andiamo !, non parlate tutti insieme !",
+      "Les pronoms s'accrochent à l'infinitif ou se placent avant : non preoccuparti ou non ti preoccupare."
+     ],
+     "q": "Quel conseil donnerais-tu à un ami avant son premier voyage en Italie ? Utilise un impératif négatif.",
+     "c": "Écris cinq interdits gentils pour un invité chez toi : non toccare..., non dimenticare..."
+    },
+    "it": {
+     "t": "L'imperativo negativo",
+     "g": "Dire a qualcuno, con gentilezza, di non fare qualcosa.",
+     "p": [
+      "Per il tu si usa non + infinito: non mangiare!, non correre!, non preoccuparti!",
+      "Per noi e voi basta mettere non davanti: non andiamo!, non parlate tutti insieme!",
+      "I pronomi si attaccano all'infinito o vanno prima: non preoccuparti o non ti preoccupare."
+     ],
+     "q": "Che consiglio daresti a un amico prima del suo primo viaggio in Italia? Usa un imperativo negativo.",
+     "c": "Scrivi cinque divieti gentili per un ospite a casa tua: non toccare..., non dimenticare..."
+    },
+    "pt": {
+     "t": "Imperativo negativo",
+     "g": "Dizer com simpatia a alguém para não fazer algo.",
+     "p": [
+      "Para tu usa-se non + infinitivo: non mangiare!, non correre!, non preoccuparti! É o truque do infinitivo.",
+      "Para noi e voi basta pôr non antes: non andiamo!, non parlate tutti insieme!",
+      "Os pronomes juntam-se ao infinitivo ou vêm antes: non preoccuparti ou non ti preoccupare."
+     ],
+     "q": "Que conselho darias a um amigo antes da primeira viagem a Itália? Usa um imperativo negativo.",
+     "c": "Escreve cinco proibições simpáticas para um convidado em tua casa: non toccare..., non dimenticare..."
+    },
+    "pt_BR": {
+     "t": "Imperativo negativo",
+     "g": "Dizer com gentileza a alguém para não fazer algo.",
+     "p": [
+      "Para tu usa-se non + infinitivo: non mangiare!, non correre!, non preoccuparti! É o truque do infinitivo.",
+      "Para noi e voi basta colocar non antes: non andiamo!, non parlate tutti insieme!",
+      "Os pronomes se juntam ao infinitivo ou vêm antes: non preoccuparti ou non ti preoccupare."
+     ],
+     "q": "Que conselho você daria a um amigo antes da primeira viagem à Itália? Use um imperativo negativo.",
+     "c": "Escreva cinco proibições gentis para um convidado na sua casa: non toccare..., non dimenticare..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "non mangiare!",
+      "ex": "Non mangiare troppo, stasera c'è la cena!"
+     },
+     {
+      "w": "non preoccuparti",
+      "ex": "Non preoccuparti, va tutto bene."
+     },
+     {
+      "w": "non dimenticare",
+      "ex": "Non dimenticare il passaporto!"
+     },
+     {
+      "w": "non correre",
+      "ex": "Non correre, abbiamo tempo."
+     },
+     {
+      "w": "non parlate",
+      "ex": "Non parlate durante il film, per favore."
+     },
+     {
+      "w": "non ti arrabbiare",
+      "ex": "Dai, non ti arrabbiare!"
+     }
+    ],
+    "gram": "Imperativo negativo: tu = non + infinito (non parlare); noi e voi = non + imperativo (non partite); pronomi prima o attaccati."
+   }
+  },
+  {
+   "d": 112,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Formal imperative: Lei",
+     "g": "Make polite requests and offers using Lei.",
+     "p": [
+      "For Lei, -are verbs end in -i and -ere / -ire verbs end in -a: scusi, guardi, prenda, senta, dorma.",
+      "Very common polite forms: mi dica (how can I help?), si accomodi (please sit / come in), prego, venga pure.",
+      "Irregulars come from the present stem: faccia, vada, venga, dica, abbia pazienza. Negative: non si preoccupi."
+     ],
+     "q": "How would a waiter invite you to sit down in Italian? And how would a shop assistant ask what you want?",
+     "c": "Write three polite instructions for a hotel guest using Lei: prenda..., vada..., si accomodi."
+    },
+    "de": {
+     "t": "Höflicher Imperativ: Lei",
+     "g": "Du formulierst höfliche Bitten und Angebote mit Lei.",
+     "p": [
+      "Für Lei enden -are-Verben auf -i, -ere- und -ire-Verben auf -a: scusi, guardi, prenda, senta, dorma.",
+      "Sehr häufige Höflichkeitsformen: mi dica (was darf es sein?), si accomodi (nehmen Sie Platz / treten Sie ein), prego, venga pure.",
+      "Unregelmäßige kommen vom Präsensstamm: faccia, vada, venga, dica, abbia pazienza. Verneint: non si preoccupi."
+     ],
+     "q": "Wie bittet dich ein Kellner auf Italienisch, Platz zu nehmen? Und wie fragt eine Verkäuferin, was du möchtest?",
+     "c": "Schreib drei höfliche Anweisungen für einen Hotelgast mit Lei: prenda..., vada..., si accomodi."
+    },
+    "es": {
+     "t": "Imperativo formal: Lei",
+     "g": "Hacer peticiones y ofrecimientos educados con Lei.",
+     "p": [
+      "Con Lei, los verbos en -are acaban en -i y los de -ere / -ire en -a: scusi, guardi, prenda, senta, dorma.",
+      "Formas educadas muy comunes: mi dica (¿qué desea?), si accomodi (siéntese / pase), prego, venga pure.",
+      "Los irregulares salen de la raíz del presente: faccia, vada, venga, dica, abbia pazienza. Negativo: non si preoccupi."
+     ],
+     "q": "¿Cómo te invita un camarero a sentarte en italiano? ¿Y cómo te pregunta un dependiente qué quieres?",
+     "c": "Escribe tres instrucciones educadas para un huésped de hotel con Lei: prenda..., vada..., si accomodi."
+    },
+    "fr": {
+     "t": "L'impératif de politesse : Lei",
+     "g": "Faire des demandes et des offres polies avec Lei.",
+     "p": [
+      "Avec Lei, les verbes en -are finissent en -i et ceux en -ere / -ire en -a : scusi, guardi, prenda, senta, dorma.",
+      "Formes polies très courantes : mi dica (je vous écoute), si accomodi (asseyez-vous / entrez), prego, venga pure.",
+      "Les irréguliers viennent du radical du présent : faccia, vada, venga, dica, abbia pazienza. Négatif : non si preoccupi."
+     ],
+     "q": "Comment un serveur t'invite-t-il à t'asseoir en italien ? Et comment un vendeur te demande-t-il ce que tu veux ?",
+     "c": "Écris trois consignes polies pour un client d'hôtel avec Lei : prenda..., vada..., si accomodi."
+    },
+    "it": {
+     "t": "L'imperativo formale: Lei",
+     "g": "Fare richieste e offerte cortesi con il Lei.",
+     "p": [
+      "Con il Lei i verbi in -are finiscono in -i e quelli in -ere / -ire in -a: scusi, guardi, prenda, senta, dorma.",
+      "Forme di cortesia frequentissime: mi dica, si accomodi, prego, venga pure.",
+      "Gli irregolari nascono dalla radice del presente: faccia, vada, venga, dica, abbia pazienza. Negativo: non si preoccupi."
+     ],
+     "q": "Come ti invita a sederti un cameriere? E come ti chiede un commesso che cosa desideri?",
+     "c": "Scrivi tre istruzioni cortesi per un ospite d'albergo con il Lei: prenda..., vada..., si accomodi."
+    },
+    "pt": {
+     "t": "Imperativo formal: Lei",
+     "g": "Fazer pedidos e ofertas com cortesia usando Lei.",
+     "p": [
+      "Com Lei, os verbos em -are acabam em -i e os de -ere / -ire em -a: scusi, guardi, prenda, senta, dorma.",
+      "Formas de cortesia muito comuns: mi dica (diga), si accomodi (sente-se / entre), prego, venga pure.",
+      "Os irregulares vêm da raiz do presente: faccia, vada, venga, dica, abbia pazienza. Negativo: non si preoccupi."
+     ],
+     "q": "Como é que um empregado de mesa te convida a sentar em italiano? E como pergunta um vendedor o que queres?",
+     "c": "Escreve três instruções corteses para um hóspede de hotel com Lei: prenda..., vada..., si accomodi."
+    },
+    "pt_BR": {
+     "t": "Imperativo formal: Lei",
+     "g": "Fazer pedidos e ofertas com cortesia usando Lei.",
+     "p": [
+      "Com Lei, os verbos em -are terminam em -i e os de -ere / -ire em -a: scusi, guardi, prenda, senta, dorma.",
+      "Formas de cortesia muito comuns: mi dica (pois não), si accomodi (sente-se / entre), prego, venga pure.",
+      "Os irregulares vêm da raiz do presente: faccia, vada, venga, dica, abbia pazienza. Negativo: non si preoccupi."
+     ],
+     "q": "Como um garçom convida você a sentar em italiano? E como um vendedor pergunta o que você quer?",
+     "c": "Escreva três instruções educadas para um hóspede de hotel com Lei: prenda..., vada..., si accomodi."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "scusi",
+      "ex": "Scusi, dov'è la fermata?"
+     },
+     {
+      "w": "mi dica",
+      "ex": "Buongiorno, mi dica!"
+     },
+     {
+      "w": "si accomodi",
+      "ex": "Prego, si accomodi."
+     },
+     {
+      "w": "prenda",
+      "ex": "Prenda la seconda a sinistra."
+     },
+     {
+      "w": "vada",
+      "ex": "Vada sempre dritto fino alla piazza."
+     },
+     {
+      "w": "non si preoccupi",
+      "ex": "Non si preoccupi, ci penso io."
+     }
+    ],
+    "gram": "Imperativo con Lei: -are → -i (guardi), -ere/-ire → -a (prenda, senta); irregolari dal presente: faccia, vada, venga, dica."
+   }
+  },
+  {
+   "d": 113,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Imperative with pronouns",
+     "g": "Attach pronouns to informal commands, and double the consonant in short forms.",
+     "p": [
+      "With tu, noi and voi the pronoun attaches to the end: fallo!, mangiala!, aiutami!, andiamoci!, ditemelo!",
+      "With the short forms da', di', fa', va', sta' the consonant doubles: dammi, dimmi, fallo, vacci, stammi bene.",
+      "Gli is the exception: dagli il libro. With Lei the pronoun goes before: mi dica, lo prenda, si accomodi."
+     ],
+     "q": "If you want a friend to tell you a secret, what do you say? Use dimmi...",
+     "c": "Write six commands with attached pronouns, including dimmi, fammi, dammelo and vacci."
+    },
+    "de": {
+     "t": "Imperativ mit Pronomen",
+     "g": "Du hängst Pronomen an informelle Befehle und verdoppelst den Konsonanten bei Kurzformen.",
+     "p": [
+      "Bei tu, noi und voi hängt das Pronomen hinten an: fallo!, mangiala!, aiutami!, andiamoci!, ditemelo!",
+      "Bei den Kurzformen da', di', fa', va', sta' verdoppelt sich der Konsonant: dammi, dimmi, fallo, vacci, stammi bene.",
+      "Ausnahme gli: dagli il libro. Mit Lei steht das Pronomen davor: mi dica, lo prenda, si accomodi."
+     ],
+     "q": "Wenn ein Freund dir ein Geheimnis erzählen soll, was sagst du? Benutze dimmi...",
+     "c": "Schreib sechs Befehle mit angehängten Pronomen, darunter dimmi, fammi, dammelo und vacci."
+    },
+    "es": {
+     "t": "Imperativo con pronombres",
+     "g": "Unir pronombres a las órdenes informales y doblar la consonante en las formas cortas.",
+     "p": [
+      "Con tu, noi y voi el pronombre se une al final: fallo!, mangiala!, aiutami!, andiamoci!, ditemelo!",
+      "Con las formas cortas da', di', fa', va', sta' la consonante se dobla: dammi, dimmi, fallo, vacci, stammi bene.",
+      "Gli es la excepción: dagli il libro. Con Lei el pronombre va delante: mi dica, lo prenda, si accomodi."
+     ],
+     "q": "Si quieres que un amigo te cuente un secreto, ¿qué le dices? Usa dimmi...",
+     "c": "Escribe seis órdenes con pronombres unidos, entre ellas dimmi, fammi, dammelo y vacci."
+    },
+    "fr": {
+     "t": "L'impératif avec pronoms",
+     "g": "Accrocher les pronoms aux ordres familiers et doubler la consonne des formes courtes.",
+     "p": [
+      "Avec tu, noi et voi, le pronom s'accroche à la fin : fallo !, mangiala !, aiutami !, andiamoci !, ditemelo !",
+      "Avec les formes courtes da', di', fa', va', sta', la consonne double : dammi, dimmi, fallo, vacci, stammi bene.",
+      "Gli fait exception : dagli il libro. Avec Lei, le pronom se place avant : mi dica, lo prenda, si accomodi."
+     ],
+     "q": "Si tu veux qu'un ami te raconte un secret, que lui dis-tu ? Utilise dimmi...",
+     "c": "Écris six ordres avec pronoms accrochés, dont dimmi, fammi, dammelo et vacci."
+    },
+    "it": {
+     "t": "L'imperativo con i pronomi",
+     "g": "Attaccare i pronomi all'imperativo informale e raddoppiare la consonante nelle forme brevi.",
+     "p": [
+      "Con tu, noi e voi il pronome si attacca alla fine: fallo!, mangiala!, aiutami!, andiamoci!, ditemelo!",
+      "Con le forme brevi da', di', fa', va', sta' la consonante raddoppia: dammi, dimmi, fallo, vacci, stammi bene.",
+      "Gli fa eccezione: dagli il libro. Con il Lei il pronome va prima: mi dica, lo prenda, si accomodi."
+     ],
+     "q": "Se vuoi che un amico ti racconti un segreto, che cosa gli dici? Usa dimmi...",
+     "c": "Scrivi sei ordini con i pronomi attaccati, tra cui dimmi, fammi, dammelo e vacci."
+    },
+    "pt": {
+     "t": "Imperativo com pronomes",
+     "g": "Juntar pronomes às ordens informais e dobrar a consoante nas formas curtas.",
+     "p": [
+      "Com tu, noi e voi o pronome junta-se ao fim: fallo!, mangiala!, aiutami!, andiamoci!, ditemelo!",
+      "Com as formas curtas da', di', fa', va', sta' a consoante dobra: dammi, dimmi, fallo, vacci, stammi bene.",
+      "Gli é a exceção: dagli il libro. Com Lei o pronome vem antes: mi dica, lo prenda, si accomodi."
+     ],
+     "q": "Se queres que um amigo te conte um segredo, o que lhe dizes? Usa dimmi...",
+     "c": "Escreve seis ordens com pronomes juntos, entre elas dimmi, fammi, dammelo e vacci."
+    },
+    "pt_BR": {
+     "t": "Imperativo com pronomes",
+     "g": "Juntar pronomes às ordens informais e dobrar a consoante nas formas curtas.",
+     "p": [
+      "Com tu, noi e voi o pronome se junta ao final: fallo!, mangiala!, aiutami!, andiamoci!, ditemelo!",
+      "Com as formas curtas da', di', fa', va', sta' a consoante dobra: dammi, dimmi, fallo, vacci, stammi bene.",
+      "Gli é a exceção: dagli il libro. Com Lei o pronome vem antes: mi dica, lo prenda, si accomodi."
+     ],
+     "q": "Se você quer que um amigo conte um segredo, o que você diz? Use dimmi...",
+     "c": "Escreva seis ordens com pronomes juntos, entre elas dimmi, fammi, dammelo e vacci."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dimmi",
+      "ex": "Dimmi la verità!"
+     },
+     {
+      "w": "fammi vedere",
+      "ex": "Fammi vedere le foto del viaggio."
+     },
+     {
+      "w": "dammelo",
+      "ex": "Il libro? Dammelo, per favore."
+     },
+     {
+      "w": "aiutami",
+      "ex": "Aiutami a portare le borse."
+     },
+     {
+      "w": "vacci",
+      "ex": "Il museo è bellissimo, vacci!"
+     },
+     {
+      "w": "stammi bene",
+      "ex": "Ciao, stammi bene!"
+     }
+    ],
+    "gram": "Imperativo + pronome attaccato (fallo, aiutami, ditemelo); con da', di', fa', va', sta' la consonante raddoppia: dimmi, fammi."
+   }
+  },
+  {
+   "d": 114,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Following a recipe",
+     "g": "Read and give recipe steps with the imperative.",
+     "p": [
+      "Recipes often use the tu imperative: taglia la cipolla, aggiungi il sale, mescola bene, cuoci per dieci minuti.",
+      "Or the voi form in cookbooks for groups: tagliate, aggiungete, mescolate. Both sound natural.",
+      "Kitchen phrases: a fuoco basso, un pizzico di sale, un filo d'olio, q.b. (quanto basta), servi caldo."
+     ],
+     "q": "What is your favourite simple recipe? Give me the first two steps with the imperative.",
+     "c": "Write a recipe of six steps for a dish you love using the tu imperative and two kitchen phrases."
+    },
+    "de": {
+     "t": "Einem Rezept folgen",
+     "g": "Du liest und gibst Rezeptschritte mit dem Imperativ.",
+     "p": [
+      "Rezepte nutzen oft den tu-Imperativ: taglia la cipolla, aggiungi il sale, mescola bene, cuoci per dieci minuti.",
+      "Oder in Kochbüchern die voi-Form: tagliate, aggiungete, mescolate. Beides klingt natürlich.",
+      "Küchenausdrücke: a fuoco basso, un pizzico di sale, un filo d'olio, q.b. (quanto basta), servi caldo."
+     ],
+     "q": "Was ist dein liebstes einfaches Rezept? Nenn mir die ersten zwei Schritte im Imperativ.",
+     "c": "Schreib ein Rezept in sechs Schritten für ein Gericht, das du liebst, mit tu-Imperativ und zwei Küchenausdrücken."
+    },
+    "es": {
+     "t": "Seguir una receta",
+     "g": "Leer y dar los pasos de una receta con el imperativo.",
+     "p": [
+      "Las recetas usan a menudo el imperativo de tu: taglia la cipolla, aggiungi il sale, mescola bene, cuoci per dieci minuti.",
+      "O la forma de voi en los recetarios: tagliate, aggiungete, mescolate. Las dos suenan naturales.",
+      "Frases de cocina: a fuoco basso, un pizzico di sale, un filo d'olio, q.b. (quanto basta), servi caldo."
+     ],
+     "q": "¿Cuál es tu receta sencilla favorita? Dime los dos primeros pasos en imperativo.",
+     "c": "Escribe una receta de seis pasos de un plato que te encante con el imperativo de tu y dos frases de cocina."
+    },
+    "fr": {
+     "t": "Suivre une recette",
+     "g": "Lire et donner les étapes d'une recette à l'impératif.",
+     "p": [
+      "Les recettes utilisent souvent l'impératif avec tu : taglia la cipolla, aggiungi il sale, mescola bene, cuoci per dieci minuti.",
+      "Ou la forme voi dans les livres de cuisine : tagliate, aggiungete, mescolate. Les deux sont naturelles.",
+      "Expressions de cuisine : a fuoco basso, un pizzico di sale, un filo d'olio, q.b. (quanto basta), servi caldo."
+     ],
+     "q": "Quelle est ta recette simple préférée ? Donne-moi les deux premières étapes à l'impératif.",
+     "c": "Écris une recette en six étapes d'un plat que tu adores, avec l'impératif tu et deux expressions de cuisine."
+    },
+    "it": {
+     "t": "Seguire una ricetta",
+     "g": "Leggere e dare i passaggi di una ricetta con l'imperativo.",
+     "p": [
+      "Le ricette usano spesso l'imperativo del tu: taglia la cipolla, aggiungi il sale, mescola bene, cuoci per dieci minuti.",
+      "Oppure il voi nei libri di cucina: tagliate, aggiungete, mescolate. Suonano naturali tutti e due.",
+      "Espressioni di cucina: a fuoco basso, un pizzico di sale, un filo d'olio, q.b. (quanto basta), servi caldo."
+     ],
+     "q": "Qual è la tua ricetta semplice preferita? Dimmi i primi due passaggi con l'imperativo.",
+     "c": "Scrivi una ricetta di sei passaggi per un piatto che ami, con l'imperativo del tu e due espressioni di cucina."
+    },
+    "pt": {
+     "t": "Seguir uma receita",
+     "g": "Ler e dar os passos de uma receita com o imperativo.",
+     "p": [
+      "As receitas usam muitas vezes o imperativo do tu: taglia la cipolla, aggiungi il sale, mescola bene, cuoci per dieci minuti.",
+      "Ou a forma voi nos livros de cozinha: tagliate, aggiungete, mescolate. As duas soam naturais.",
+      "Expressões de cozinha: a fuoco basso, un pizzico di sale, un filo d'olio, q.b. (quanto basta), servi caldo."
+     ],
+     "q": "Qual é a tua receita simples preferida? Diz-me os dois primeiros passos no imperativo.",
+     "c": "Escreve uma receita de seis passos de um prato que adoras, com o imperativo do tu e duas expressões de cozinha."
+    },
+    "pt_BR": {
+     "t": "Seguindo uma receita",
+     "g": "Ler e dar os passos de uma receita com o imperativo.",
+     "p": [
+      "As receitas muitas vezes usam o imperativo do tu: taglia la cipolla, aggiungi il sale, mescola bene, cuoci per dieci minuti.",
+      "Ou a forma voi nos livros de receitas: tagliate, aggiungete, mescolate. As duas soam naturais.",
+      "Expressões de cozinha: a fuoco basso, un pizzico di sale, un filo d'olio, q.b. (quanto basta), servi caldo."
+     ],
+     "q": "Qual é a sua receita simples favorita? Me diga os dois primeiros passos no imperativo.",
+     "c": "Escreva uma receita de seis passos de um prato que você adora, com o imperativo do tu e duas expressões de cozinha."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "taglia",
+      "ex": "Taglia i pomodori a cubetti."
+     },
+     {
+      "w": "aggiungi",
+      "ex": "Aggiungi un pizzico di sale."
+     },
+     {
+      "w": "cuoci",
+      "ex": "Cuoci a fuoco basso per venti minuti."
+     },
+     {
+      "w": "un filo d'olio",
+      "ex": "Alla fine metti un filo d'olio."
+     },
+     {
+      "w": "quanto basta",
+      "ex": "Pepe quanto basta."
+     },
+     {
+      "w": "servi caldo",
+      "ex": "Servi caldo con il basilico fresco."
+     }
+    ],
+    "gram": "Nelle ricette si usa l'imperativo (tu: taglia, aggiungi, cuoci; voi: tagliate, aggiungete) con quantità come un pizzico di."
+   }
+  },
+  {
+   "d": 115,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Giving directions like a local",
+     "g": "Explain a route clearly with imperatives and landmarks.",
+     "p": [
+      "Informal: gira a destra, prendi la seconda a sinistra, attraversa la piazza, va' sempre dritto.",
+      "Formal with Lei: giri, prenda, attraversi, vada sempre dritto. Use it with adults you do not know.",
+      "Landmarks and distance: al semaforo, all'incrocio, in fondo alla strada, dopo il ponte, è a cinque minuti a piedi."
+     ],
+     "q": "How do I get from your home to your favourite café? Explain it to me in Italian.",
+     "c": "Write directions from a station to a museum twice: once with tu and once with Lei."
+    },
+    "de": {
+     "t": "Wegbeschreibungen wie ein Einheimischer",
+     "g": "Du erklärst einen Weg klar mit Imperativen und Orientierungspunkten.",
+     "p": [
+      "Informell: gira a destra, prendi la seconda a sinistra, attraversa la piazza, va' sempre dritto.",
+      "Höflich mit Lei: giri, prenda, attraversi, vada sempre dritto. Für fremde Erwachsene.",
+      "Orientierung und Entfernung: al semaforo, all'incrocio, in fondo alla strada, dopo il ponte, è a cinque minuti a piedi."
+     ],
+     "q": "Wie komme ich von deiner Wohnung zu deinem Lieblingscafé? Erklär es mir auf Italienisch.",
+     "c": "Schreib den Weg vom Bahnhof zu einem Museum zweimal: einmal mit tu, einmal mit Lei."
+    },
+    "es": {
+     "t": "Dar indicaciones como un local",
+     "g": "Explicar un camino con claridad usando imperativos y puntos de referencia.",
+     "p": [
+      "Informal: gira a destra, prendi la seconda a sinistra, attraversa la piazza, va' sempre dritto.",
+      "Formal con Lei: giri, prenda, attraversi, vada sempre dritto. Para adultos desconocidos.",
+      "Referencias y distancia: al semaforo, all'incrocio, in fondo alla strada, dopo il ponte, è a cinque minuti a piedi."
+     ],
+     "q": "¿Cómo llego de tu casa a tu café favorito? Explícamelo en italiano.",
+     "c": "Escribe el camino de una estación a un museo dos veces: una con tu y otra con Lei."
+    },
+    "fr": {
+     "t": "Indiquer le chemin comme un local",
+     "g": "Expliquer un itinéraire clairement avec l'impératif et des repères.",
+     "p": [
+      "Familier : gira a destra, prendi la seconda a sinistra, attraversa la piazza, va' sempre dritto.",
+      "Poli avec Lei : giri, prenda, attraversi, vada sempre dritto. Pour les adultes inconnus.",
+      "Repères et distance : al semaforo, all'incrocio, in fondo alla strada, dopo il ponte, è a cinque minuti a piedi."
+     ],
+     "q": "Comment aller de chez toi à ton café préféré ? Explique-le-moi en italien.",
+     "c": "Écris le chemin d'une gare à un musée deux fois : une fois avec tu, une fois avec Lei."
+    },
+    "it": {
+     "t": "Dare indicazioni come un locale",
+     "g": "Spiegare un percorso con chiarezza usando l'imperativo e i punti di riferimento.",
+     "p": [
+      "Informale: gira a destra, prendi la seconda a sinistra, attraversa la piazza, va' sempre dritto.",
+      "Formale con il Lei: giri, prenda, attraversi, vada sempre dritto. Con gli adulti che non conosci.",
+      "Riferimenti e distanza: al semaforo, all'incrocio, in fondo alla strada, dopo il ponte, è a cinque minuti a piedi."
+     ],
+     "q": "Come arrivo da casa tua al tuo bar preferito? Spiegamelo in italiano.",
+     "c": "Scrivi il percorso da una stazione a un museo due volte: una con il tu e una con il Lei."
+    },
+    "pt": {
+     "t": "Dar indicações como um local",
+     "g": "Explicar um caminho com clareza usando o imperativo e pontos de referência.",
+     "p": [
+      "Informal: gira a destra, prendi la seconda a sinistra, attraversa la piazza, va' sempre dritto.",
+      "Formal com Lei: giri, prenda, attraversi, vada sempre dritto. Com adultos que não conheces.",
+      "Referências e distância: al semaforo, all'incrocio, in fondo alla strada, dopo il ponte, è a cinque minuti a piedi."
+     ],
+     "q": "Como chego da tua casa ao teu café preferido? Explica-me em italiano.",
+     "c": "Escreve o caminho de uma estação a um museu duas vezes: uma com tu e outra com Lei."
+    },
+    "pt_BR": {
+     "t": "Dando direções como um local",
+     "g": "Explicar um caminho com clareza usando o imperativo e pontos de referência.",
+     "p": [
+      "Informal: gira a destra, prendi la seconda a sinistra, attraversa la piazza, va' sempre dritto.",
+      "Formal com Lei: giri, prenda, attraversi, vada sempre dritto. Com adultos que você não conhece.",
+      "Referências e distância: al semaforo, all'incrocio, in fondo alla strada, dopo il ponte, è a cinque minuti a piedi."
+     ],
+     "q": "Como eu chego da sua casa ao seu café preferido? Me explique em italiano.",
+     "c": "Escreva o caminho de uma estação até um museu duas vezes: uma com tu e outra com Lei."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gira a destra",
+      "ex": "Al semaforo gira a destra."
+     },
+     {
+      "w": "attraversa",
+      "ex": "Attraversa la piazza e continua dritto."
+     },
+     {
+      "w": "all'incrocio",
+      "ex": "All'incrocio prendi la prima a sinistra."
+     },
+     {
+      "w": "in fondo alla strada",
+      "ex": "La farmacia è in fondo alla strada."
+     },
+     {
+      "w": "vada sempre dritto",
+      "ex": "Vada sempre dritto per duecento metri."
+     },
+     {
+      "w": "a cinque minuti a piedi",
+      "ex": "Il Duomo è a cinque minuti a piedi."
+     }
+    ],
+    "gram": "Indicazioni con l'imperativo: tu (gira, prendi, attraversa) o Lei (giri, prenda, attraversi); a + distanza: è a due minuti."
+   }
+  },
+  {
+   "d": 116,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Future tense: forms",
+     "g": "Conjugate the futuro semplice of regular verbs and essere, avere.",
+     "p": [
+      "Endings for all verbs: -rò, -rai, -rà, -remo, -rete, -ranno. -are verbs change a to e: parlerò, parlerai.",
+      "-ere and -ire keep their vowel: leggerò, leggerà; partirò, partiremo. Note the accent on io and lui: parlerò, parlerà.",
+      "Spelling: -care and -gare add h: cercherò, pagherò. Essere: sarò, sarai, sarà... Avere: avrò, avrai, avrà..."
+     ],
+     "q": "Where will you be this time next year? Answer with sarò...",
+     "c": "Conjugate parlare, leggere and partire in the future and write one sentence for each."
+    },
+    "de": {
+     "t": "Futur: Formen",
+     "g": "Du konjugierst das futuro semplice regelmäßiger Verben und von essere und avere.",
+     "p": [
+      "Endungen für alle Verben: -rò, -rai, -rà, -remo, -rete, -ranno. Bei -are wird a zu e: parlerò, parlerai.",
+      "-ere und -ire behalten ihren Vokal: leggerò, leggerà; partirò, partiremo. Akzent bei io und lui: parlerò, parlerà.",
+      "Schreibung: -care und -gare bekommen ein h: cercherò, pagherò. Essere: sarò, sarai, sarà... Avere: avrò, avrai, avrà..."
+     ],
+     "q": "Wo wirst du nächstes Jahr um diese Zeit sein? Antworte mit sarò...",
+     "c": "Konjugiere parlare, leggere und partire im Futur und schreib zu jedem einen Satz."
+    },
+    "es": {
+     "t": "El futuro: formas",
+     "g": "Conjugar el futuro simple de los verbos regulares y de essere y avere.",
+     "p": [
+      "Terminaciones para todos: -rò, -rai, -rà, -remo, -rete, -ranno. Los verbos en -are cambian a por e: parlerò, parlerai.",
+      "-ere e -ire mantienen su vocal: leggerò, leggerà; partirò, partiremo. Ojo al acento en io y lui: parlerò, parlerà.",
+      "Ortografía: -care y -gare añaden h: cercherò, pagherò. Essere: sarò, sarai, sarà... Avere: avrò, avrai, avrà..."
+     ],
+     "q": "¿Dónde estarás dentro de un año? Responde con sarò...",
+     "c": "Conjuga parlare, leggere y partire en futuro y escribe una frase con cada uno."
+    },
+    "fr": {
+     "t": "Le futur : les formes",
+     "g": "Conjuguer le futuro semplice des verbes réguliers et d'essere et avere.",
+     "p": [
+      "Terminaisons pour tous : -rò, -rai, -rà, -remo, -rete, -ranno. Les verbes en -are changent a en e : parlerò, parlerai.",
+      "-ere et -ire gardent leur voyelle : leggerò, leggerà ; partirò, partiremo. Attention à l'accent : parlerò, parlerà.",
+      "Orthographe : -care et -gare prennent un h : cercherò, pagherò. Essere : sarò, sarai, sarà... Avere : avrò, avrai, avrà..."
+     ],
+     "q": "Où seras-tu dans un an à la même époque ? Réponds avec sarò...",
+     "c": "Conjugue parlare, leggere et partire au futur et écris une phrase pour chacun."
+    },
+    "it": {
+     "t": "Il futuro semplice: le forme",
+     "g": "Coniugare il futuro semplice dei verbi regolari e di essere e avere.",
+     "p": [
+      "Desinenze per tutti: -rò, -rai, -rà, -remo, -rete, -ranno. I verbi in -are cambiano a in e: parlerò, parlerai.",
+      "-ere e -ire tengono la loro vocale: leggerò, leggerà; partirò, partiremo. Attenzione all'accento: parlerò, parlerà.",
+      "Ortografia: -care e -gare prendono la h: cercherò, pagherò. Essere: sarò, sarai, sarà... Avere: avrò, avrai, avrà..."
+     ],
+     "q": "Dove sarai fra un anno a quest'ora? Rispondi con sarò...",
+     "c": "Coniuga parlare, leggere e partire al futuro e scrivi una frase per ciascuno."
+    },
+    "pt": {
+     "t": "O futuro: formas",
+     "g": "Conjugar o futuro simples dos verbos regulares e de essere e avere.",
+     "p": [
+      "Terminações para todos: -rò, -rai, -rà, -remo, -rete, -ranno. Os verbos em -are mudam a para e: parlerò, parlerai.",
+      "-ere e -ire mantêm a vogal: leggerò, leggerà; partirò, partiremo. Atenção ao acento em io e lui: parlerò, parlerà.",
+      "Ortografia: -care e -gare ganham h: cercherò, pagherò. Essere: sarò, sarai, sarà... Avere: avrò, avrai, avrà..."
+     ],
+     "q": "Onde estarás daqui a um ano? Responde com sarò...",
+     "c": "Conjuga parlare, leggere e partire no futuro e escreve uma frase com cada um."
+    },
+    "pt_BR": {
+     "t": "O futuro: formas",
+     "g": "Conjugar o futuro simples dos verbos regulares e de essere e avere.",
+     "p": [
+      "Terminações para todos: -rò, -rai, -rà, -remo, -rete, -ranno. Os verbos em -are trocam a por e: parlerò, parlerai.",
+      "-ere e -ire mantêm a vogal: leggerò, leggerà; partirò, partiremo. Atenção ao acento em io e lui: parlerò, parlerà.",
+      "Ortografia: -care e -gare ganham h: cercherò, pagherò. Essere: sarò, sarai, sarà... Avere: avrò, avrai, avrà..."
+     ],
+     "q": "Onde você vai estar daqui a um ano? Responda com sarò...",
+     "c": "Conjugue parlare, leggere e partire no futuro e escreva uma frase com cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parlerò",
+      "ex": "Un giorno parlerò bene l'italiano."
+     },
+     {
+      "w": "leggeremo",
+      "ex": "In vacanza leggeremo tanti libri."
+     },
+     {
+      "w": "partiranno",
+      "ex": "I miei amici partiranno domani mattina."
+     },
+     {
+      "w": "sarò",
+      "ex": "Fra un anno sarò in Italia."
+     },
+     {
+      "w": "avrai",
+      "ex": "Avrai tempo sabato?"
+     },
+     {
+      "w": "cercherò",
+      "ex": "Cercherò un lavoro a Milano."
+     }
+    ],
+    "gram": "Futuro semplice: -rò, -rai, -rà, -remo, -rete, -ranno; -are → -erò (parlerò); -care/-gare → -cherò, -gherò; sarò, avrò."
+   }
+  },
+  {
+   "d": 117,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Future irregular stems",
+     "g": "Learn the short irregular future stems of common verbs.",
+     "p": [
+      "Some verbs drop a vowel: andare, andrò; potere, potrò; dovere, dovrò; vedere, vedrò; vivere, vivrò; sapere, saprò.",
+      "Some get a double r: venire, verrò; volere, vorrò; bere, berrò; rimanere, rimarrò; tenere, terrò.",
+      "Short verbs keep the a: fare, farò; dare, darò; stare, starò. The endings never change: -rò, -rai, -rà..."
+     ],
+     "q": "What will you do next summer? Use two irregular futures, like andrò and farò.",
+     "c": "Write a sentence with each of these: andrò, verrò, vorrò, potrò, dovrò, farò, berrò."
+    },
+    "de": {
+     "t": "Unregelmäßige Futurstämme",
+     "g": "Du lernst die kurzen unregelmäßigen Futurstämme häufiger Verben.",
+     "p": [
+      "Manche Verben verlieren einen Vokal: andare, andrò; potere, potrò; dovere, dovrò; vedere, vedrò; vivere, vivrò; sapere, saprò.",
+      "Manche bekommen ein Doppel-r: venire, verrò; volere, vorrò; bere, berrò; rimanere, rimarrò; tenere, terrò.",
+      "Kurze Verben behalten das a: fare, farò; dare, darò; stare, starò. Die Endungen bleiben gleich: -rò, -rai, -rà..."
+     ],
+     "q": "Was wirst du nächsten Sommer machen? Benutze zwei unregelmäßige Futurformen wie andrò und farò.",
+     "c": "Schreib je einen Satz mit: andrò, verrò, vorrò, potrò, dovrò, farò, berrò."
+    },
+    "es": {
+     "t": "Raíces irregulares del futuro",
+     "g": "Aprender las raíces cortas e irregulares del futuro de verbos comunes.",
+     "p": [
+      "Algunos pierden una vocal: andare, andrò; potere, potrò; dovere, dovrò; vedere, vedrò; vivere, vivrò; sapere, saprò.",
+      "Otros llevan doble r: venire, verrò; volere, vorrò; bere, berrò; rimanere, rimarrò; tenere, terrò.",
+      "Los verbos cortos conservan la a: fare, farò; dare, darò; stare, starò. Las terminaciones no cambian: -rò, -rai, -rà..."
+     ],
+     "q": "¿Qué harás el próximo verano? Usa dos futuros irregulares, como andrò y farò.",
+     "c": "Escribe una frase con cada uno: andrò, verrò, vorrò, potrò, dovrò, farò, berrò."
+    },
+    "fr": {
+     "t": "Les radicaux irréguliers du futur",
+     "g": "Apprendre les radicaux courts et irréguliers du futur des verbes courants.",
+     "p": [
+      "Certains perdent une voyelle : andare, andrò ; potere, potrò ; dovere, dovrò ; vedere, vedrò ; vivere, vivrò ; sapere, saprò.",
+      "D'autres prennent un double r : venire, verrò ; volere, vorrò ; bere, berrò ; rimanere, rimarrò ; tenere, terrò.",
+      "Les verbes courts gardent le a : fare, farò ; dare, darò ; stare, starò. Les terminaisons ne changent pas : -rò, -rai, -rà..."
+     ],
+     "q": "Que feras-tu l'été prochain ? Utilise deux futurs irréguliers, comme andrò et farò.",
+     "c": "Écris une phrase avec chacun : andrò, verrò, vorrò, potrò, dovrò, farò, berrò."
+    },
+    "it": {
+     "t": "Il futuro irregolare",
+     "g": "Imparare le radici brevi e irregolari del futuro dei verbi più comuni.",
+     "p": [
+      "Alcuni verbi perdono una vocale: andare, andrò; potere, potrò; dovere, dovrò; vedere, vedrò; vivere, vivrò; sapere, saprò.",
+      "Altri hanno la doppia r: venire, verrò; volere, vorrò; bere, berrò; rimanere, rimarrò; tenere, terrò.",
+      "I verbi brevi tengono la a: fare, farò; dare, darò; stare, starò. Le desinenze non cambiano: -rò, -rai, -rà..."
+     ],
+     "q": "Che cosa farai la prossima estate? Usa due futuri irregolari, come andrò e farò.",
+     "c": "Scrivi una frase con ognuno: andrò, verrò, vorrò, potrò, dovrò, farò, berrò."
+    },
+    "pt": {
+     "t": "Radicais irregulares do futuro",
+     "g": "Aprender os radicais curtos e irregulares do futuro de verbos comuns.",
+     "p": [
+      "Alguns perdem uma vogal: andare, andrò; potere, potrò; dovere, dovrò; vedere, vedrò; vivere, vivrò; sapere, saprò.",
+      "Outros ganham r duplo: venire, verrò; volere, vorrò; bere, berrò; rimanere, rimarrò; tenere, terrò.",
+      "Os verbos curtos mantêm o a: fare, farò; dare, darò; stare, starò. As terminações não mudam: -rò, -rai, -rà..."
+     ],
+     "q": "O que farás no próximo verão? Usa dois futuros irregulares, como andrò e farò.",
+     "c": "Escreve uma frase com cada um: andrò, verrò, vorrò, potrò, dovrò, farò, berrò."
+    },
+    "pt_BR": {
+     "t": "Radicais irregulares do futuro",
+     "g": "Aprender os radicais curtos e irregulares do futuro de verbos comuns.",
+     "p": [
+      "Alguns perdem uma vogal: andare, andrò; potere, potrò; dovere, dovrò; vedere, vedrò; vivere, vivrò; sapere, saprò.",
+      "Outros ganham r duplo: venire, verrò; volere, vorrò; bere, berrò; rimanere, rimarrò; tenere, terrò.",
+      "Os verbos curtos mantêm o a: fare, farò; dare, darò; stare, starò. As terminações não mudam: -rò, -rai, -rà..."
+     ],
+     "q": "O que você vai fazer no próximo verão? Use dois futuros irregulares, como andrò e farò.",
+     "c": "Escreva uma frase com cada um: andrò, verrò, vorrò, potrò, dovrò, farò, berrò."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "andrò",
+      "ex": "Ad agosto andrò in Calabria."
+     },
+     {
+      "w": "verrai?",
+      "ex": "Verrai alla mia festa sabato?"
+     },
+     {
+      "w": "potremo",
+      "ex": "Domani potremo dormire fino a tardi."
+     },
+     {
+      "w": "dovrò",
+      "ex": "Lunedì dovrò alzarmi presto."
+     },
+     {
+      "w": "farò",
+      "ex": "Stasera farò una torta al cioccolato."
+     },
+     {
+      "w": "berremo",
+      "ex": "A cena berremo un buon vino rosso."
+     }
+    ],
+    "gram": "Futuri irregolari: andrò, potrò, dovrò, vedrò, saprò; verrò, vorrò, berrò, rimarrò; farò, darò, starò. Desinenze regolari."
+   }
+  },
+  {
+   "d": 118,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Making predictions and plans",
+     "g": "Talk about the future with the futuro semplice.",
+     "p": [
+      "Predictions: domani pioverà, il treno arriverà in ritardo, sarà una bella giornata.",
+      "Longer-term plans and promises: l'anno prossimo studierò in Italia, ti chiamerò stasera, non lo farò più.",
+      "Time words: domani, dopodomani, fra un mese, l'anno prossimo, un giorno, presto. Present = near plan, future = further or less sure."
+     ],
+     "q": "What will your life be like in five years? Give me two predictions.",
+     "c": "Write five sentences about your next year: one prediction, two plans and two promises."
+    },
+    "de": {
+     "t": "Vorhersagen und Pläne",
+     "g": "Du sprichst mit dem futuro semplice über die Zukunft.",
+     "p": [
+      "Vorhersagen: domani pioverà, il treno arriverà in ritardo, sarà una bella giornata.",
+      "Längere Pläne und Versprechen: l'anno prossimo studierò in Italia, ti chiamerò stasera, non lo farò più.",
+      "Zeitwörter: domani, dopodomani, fra un mese, l'anno prossimo, un giorno, presto. Präsens = naher Plan, Futur = weiter oder unsicherer."
+     ],
+     "q": "Wie wird dein Leben in fünf Jahren aussehen? Nenn mir zwei Vorhersagen.",
+     "c": "Schreib fünf Sätze über dein nächstes Jahr: eine Vorhersage, zwei Pläne und zwei Versprechen."
+    },
+    "es": {
+     "t": "Predicciones y planes",
+     "g": "Hablar del futuro con el futuro simple.",
+     "p": [
+      "Predicciones: domani pioverà, il treno arriverà in ritardo, sarà una bella giornata.",
+      "Planes a más largo plazo y promesas: l'anno prossimo studierò in Italia, ti chiamerò stasera, non lo farò più.",
+      "Marcadores: domani, dopodomani, fra un mese, l'anno prossimo, un giorno. Presente = plan cercano, futuro = más lejano o menos seguro."
+     ],
+     "q": "¿Cómo será tu vida dentro de cinco años? Dame dos predicciones.",
+     "c": "Escribe cinco frases sobre tu próximo año: una predicción, dos planes y dos promesas."
+    },
+    "fr": {
+     "t": "Prédictions et projets",
+     "g": "Parler de l'avenir avec le futuro semplice.",
+     "p": [
+      "Prédictions : domani pioverà, il treno arriverà in ritardo, sarà una bella giornata.",
+      "Projets à plus long terme et promesses : l'anno prossimo studierò in Italia, ti chiamerò stasera, non lo farò più.",
+      "Repères : domani, dopodomani, fra un mese, l'anno prossimo, un giorno, presto. Présent = projet proche, futur = plus lointain ou moins sûr."
+     ],
+     "q": "À quoi ressemblera ta vie dans cinq ans ? Donne-moi deux prédictions.",
+     "c": "Écris cinq phrases sur ton année prochaine : une prédiction, deux projets et deux promesses."
+    },
+    "it": {
+     "t": "Previsioni e progetti",
+     "g": "Parlare del futuro con il futuro semplice.",
+     "p": [
+      "Previsioni: domani pioverà, il treno arriverà in ritardo, sarà una bella giornata.",
+      "Progetti a lungo termine e promesse: l'anno prossimo studierò in Italia, ti chiamerò stasera, non lo farò più.",
+      "Parole del tempo: domani, dopodomani, fra un mese, l'anno prossimo, un giorno. Presente = piano vicino, futuro = più lontano o incerto."
+     ],
+     "q": "Come sarà la tua vita fra cinque anni? Dammi due previsioni.",
+     "c": "Scrivi cinque frasi sul tuo prossimo anno: una previsione, due progetti e due promesse."
+    },
+    "pt": {
+     "t": "Previsões e planos",
+     "g": "Falar do futuro com o futuro simples.",
+     "p": [
+      "Previsões: domani pioverà, il treno arriverà in ritardo, sarà una bella giornata.",
+      "Planos a mais longo prazo e promessas: l'anno prossimo studierò in Italia, ti chiamerò stasera, non lo farò più.",
+      "Marcadores: domani, dopodomani, fra un mese, l'anno prossimo, un giorno. Presente = plano próximo, futuro = mais distante ou incerto."
+     ],
+     "q": "Como será a tua vida daqui a cinco anos? Dá-me duas previsões.",
+     "c": "Escreve cinco frases sobre o teu próximo ano: uma previsão, dois planos e duas promessas."
+    },
+    "pt_BR": {
+     "t": "Previsões e planos",
+     "g": "Falar do futuro com o futuro simples.",
+     "p": [
+      "Previsões: domani pioverà, il treno arriverà in ritardo, sarà una bella giornata.",
+      "Planos de longo prazo e promessas: l'anno prossimo studierò in Italia, ti chiamerò stasera, non lo farò più.",
+      "Marcadores: domani, dopodomani, fra un mese, l'anno prossimo, un giorno. Presente = plano próximo, futuro = mais distante ou incerto."
+     ],
+     "q": "Como vai ser a sua vida daqui a cinco anos? Me dê duas previsões.",
+     "c": "Escreva cinco frases sobre o seu próximo ano: uma previsão, dois planos e duas promessas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pioverà",
+      "ex": "Secondo il meteo, domani pioverà."
+     },
+     {
+      "w": "l'anno prossimo",
+      "ex": "L'anno prossimo studierò a Bologna."
+     },
+     {
+      "w": "dopodomani",
+      "ex": "Dopodomani arriveranno i miei genitori."
+     },
+     {
+      "w": "ti chiamerò",
+      "ex": "Ti chiamerò appena arrivo."
+     },
+     {
+      "w": "un giorno",
+      "ex": "Un giorno vivrò in una casa sul mare."
+     },
+     {
+      "w": "fra un mese",
+      "ex": "Fra un mese comincerò un nuovo lavoro."
+     }
+    ],
+    "gram": "Futuro semplice per previsioni (domani pioverà), progetti lontani e promesse (ti scriverò); il presente per piani vicini."
+   }
+  },
+  {
+   "d": 119,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Future of probability",
+     "g": "Use the future to make guesses about the present.",
+     "p": [
+      "Italians use the future for suppositions now: saranno le otto (it must be about eight), avrà trent'anni.",
+      "It answers questions you cannot be sure of: dov'è Marco? Sarà in ufficio. Chi è? Sarà il postino.",
+      "Compare: sono le otto (I know) and saranno le otto (I guess). Add forse or probabilmente for extra softness."
+     ],
+     "q": "Without looking at a clock, what time do you think it is? Answer with saranno le...",
+     "c": "Look at a photo of strangers and make four guesses: avrà..., sarà..., abiterà..., lavorerà..."
+    },
+    "de": {
+     "t": "Futur der Vermutung",
+     "g": "Du benutzt das Futur, um Vermutungen über die Gegenwart anzustellen.",
+     "p": [
+      "Italiener benutzen das Futur für Vermutungen jetzt: saranno le otto (es wird etwa acht sein), avrà trent'anni.",
+      "Es antwortet auf Fragen, bei denen du unsicher bist: dov'è Marco? Sarà in ufficio. Chi è? Sarà il postino.",
+      "Vergleich: sono le otto (ich weiß es) und saranno le otto (ich vermute). Mit forse oder probabilmente noch weicher."
+     ],
+     "q": "Wie spät ist es wohl, ohne auf die Uhr zu sehen? Antworte mit saranno le...",
+     "c": "Schau ein Foto mit Fremden an und stell vier Vermutungen an: avrà..., sarà..., abiterà..., lavorerà..."
+    },
+    "es": {
+     "t": "El futuro de probabilidad",
+     "g": "Usar el futuro para hacer suposiciones sobre el presente.",
+     "p": [
+      "En italiano el futuro sirve para suponer ahora: saranno le otto (serán las ocho), avrà trent'anni.",
+      "Responde preguntas sin certeza: dov'è Marco? Sarà in ufficio. Chi è? Sarà il postino.",
+      "Compara: sono le otto (lo sé) y saranno le otto (supongo). Añade forse o probabilmente para suavizar."
+     ],
+     "q": "Sin mirar el reloj, ¿qué hora crees que es? Responde con saranno le...",
+     "c": "Mira una foto de desconocidos y haz cuatro suposiciones: avrà..., sarà..., abiterà..., lavorerà..."
+    },
+    "fr": {
+     "t": "Le futur de probabilité",
+     "g": "Utiliser le futur pour faire des suppositions sur le présent.",
+     "p": [
+      "L'italien utilise le futur pour supposer maintenant : saranno le otto (il doit être huit heures), avrà trent'anni.",
+      "Il répond aux questions incertaines : dov'è Marco ? Sarà in ufficio. Chi è ? Sarà il postino.",
+      "Compare : sono le otto (je sais) et saranno le otto (je suppose). Ajoute forse ou probabilmente pour adoucir."
+     ],
+     "q": "Sans regarder l'heure, quelle heure penses-tu qu'il est ? Réponds avec saranno le...",
+     "c": "Regarde une photo d'inconnus et fais quatre suppositions : avrà..., sarà..., abiterà..., lavorerà..."
+    },
+    "it": {
+     "t": "Il futuro di probabilità",
+     "g": "Usare il futuro per fare ipotesi sul presente.",
+     "p": [
+      "In italiano il futuro serve anche per le supposizioni: saranno le otto, avrà trent'anni.",
+      "Risponde a domande di cui non sei sicuro: dov'è Marco? Sarà in ufficio. Chi è? Sarà il postino.",
+      "Confronta: sono le otto (lo so) e saranno le otto (suppongo). Con forse o probabilmente è ancora più morbido."
+     ],
+     "q": "Senza guardare l'orologio, che ore saranno? Rispondi con saranno le...",
+     "c": "Guarda la foto di persone sconosciute e fai quattro ipotesi: avrà..., sarà..., abiterà..., lavorerà..."
+    },
+    "pt": {
+     "t": "O futuro de probabilidade",
+     "g": "Usar o futuro para fazer suposições sobre o presente.",
+     "p": [
+      "Em italiano o futuro serve para supor agora: saranno le otto (devem ser oito), avrà trent'anni.",
+      "Responde a perguntas sem certeza: dov'è Marco? Sarà in ufficio. Chi è? Sarà il postino.",
+      "Compara: sono le otto (sei) e saranno le otto (suponho). Junta forse ou probabilmente para suavizar."
+     ],
+     "q": "Sem olhar para o relógio, que horas achas que são? Responde com saranno le...",
+     "c": "Olha para uma foto de desconhecidos e faz quatro suposições: avrà..., sarà..., abiterà..., lavorerà..."
+    },
+    "pt_BR": {
+     "t": "O futuro de probabilidade",
+     "g": "Usar o futuro para fazer suposições sobre o presente.",
+     "p": [
+      "Em italiano o futuro serve para supor agora: saranno le otto (devem ser oito horas), avrà trent'anni.",
+      "Responde a perguntas sem certeza: dov'è Marco? Sarà in ufficio. Chi è? Sarà il postino.",
+      "Compare: sono le otto (eu sei) e saranno le otto (eu acho). Acrescente forse ou probabilmente para suavizar."
+     ],
+     "q": "Sem olhar o relógio, que horas você acha que são? Responda com saranno le...",
+     "c": "Olhe uma foto de desconhecidos e faça quatro suposições: avrà..., sarà..., abiterà..., lavorerà..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "saranno le otto",
+      "ex": "Che ore sono? Saranno le otto."
+     },
+     {
+      "w": "avrà trent'anni",
+      "ex": "Il nuovo collega avrà trent'anni."
+     },
+     {
+      "w": "sarà in ufficio",
+      "ex": "Marco non risponde, sarà in ufficio."
+     },
+     {
+      "w": "sarà il postino",
+      "ex": "Suonano alla porta, sarà il postino."
+     },
+     {
+      "w": "probabilmente",
+      "ex": "Probabilmente sarà stanca dopo il viaggio."
+     },
+     {
+      "w": "forse",
+      "ex": "Forse avrà perso il treno."
+     }
+    ],
+    "gram": "Futuro per esprimere una supposizione sul presente: saranno le dieci = probabilmente sono le dieci; sarà a casa."
+   }
+  },
+  {
+   "d": 120,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Se + future: real conditions",
+     "g": "Talk about likely conditions and their results.",
+     "p": [
+      "For real future conditions Italian uses the future in both parts: se avrò tempo, verrò.",
+      "In everyday speech the present is also fine: se ho tempo, vengo. The future sounds more careful or further away.",
+      "Order is free: verrò se avrò tempo. Useful: se farà bel tempo, andremo al mare; se pioverà, resteremo a casa."
+     ],
+     "q": "What will you do this weekend if the weather is nice? And if it rains?",
+     "c": "Write four se sentences about your plans with the future in both parts, two for good and two for bad weather."
+    },
+    "de": {
+     "t": "Se + Futur: reale Bedingungen",
+     "g": "Du sprichst über wahrscheinliche Bedingungen und ihre Folgen.",
+     "p": [
+      "Für reale Bedingungen in der Zukunft steht im Italienischen in beiden Teilen das Futur: se avrò tempo, verrò.",
+      "Im Alltag geht auch das Präsens: se ho tempo, vengo. Das Futur klingt sorgfältiger oder weiter weg.",
+      "Die Reihenfolge ist frei: verrò se avrò tempo. Nützlich: se farà bel tempo, andremo al mare; se pioverà, resteremo a casa."
+     ],
+     "q": "Was machst du dieses Wochenende, wenn das Wetter schön ist? Und wenn es regnet?",
+     "c": "Schreib vier se-Sätze über deine Pläne mit Futur in beiden Teilen, zwei für gutes und zwei für schlechtes Wetter."
+    },
+    "es": {
+     "t": "Se + futuro: condiciones reales",
+     "g": "Hablar de condiciones probables y sus resultados.",
+     "p": [
+      "Para condiciones reales en el futuro el italiano usa futuro en las dos partes: se avrò tempo, verrò.",
+      "En la lengua diaria también vale el presente: se ho tempo, vengo. El futuro suena más cuidado o más lejano.",
+      "El orden es libre: verrò se avrò tempo. Útil: se farà bel tempo, andremo al mare; se pioverà, resteremo a casa."
+     ],
+     "q": "¿Qué harás este fin de semana si hace buen tiempo? ¿Y si llueve?",
+     "c": "Escribe cuatro frases con se sobre tus planes con futuro en las dos partes, dos con buen tiempo y dos con mal tiempo."
+    },
+    "fr": {
+     "t": "Se + futur : conditions réelles",
+     "g": "Parler de conditions probables et de leurs conséquences.",
+     "p": [
+      "Pour une condition réelle au futur, l'italien met le futur dans les deux parties : se avrò tempo, verrò.",
+      "À l'oral le présent marche aussi : se ho tempo, vengo. Le futur sonne plus soigné ou plus lointain.",
+      "L'ordre est libre : verrò se avrò tempo. Utile : se farà bel tempo, andremo al mare ; se pioverà, resteremo a casa."
+     ],
+     "q": "Que feras-tu ce week-end s'il fait beau ? Et s'il pleut ?",
+     "c": "Écris quatre phrases avec se sur tes projets, futur dans les deux parties, deux pour le beau temps et deux pour la pluie."
+    },
+    "it": {
+     "t": "Se + futuro: il periodo ipotetico della realtà",
+     "g": "Parlare di condizioni probabili e delle loro conseguenze.",
+     "p": [
+      "Per condizioni reali nel futuro l'italiano usa il futuro in tutte e due le parti: se avrò tempo, verrò.",
+      "Nel parlato va bene anche il presente: se ho tempo, vengo. Il futuro suona più curato o più lontano.",
+      "L'ordine è libero: verrò se avrò tempo. Utile: se farà bel tempo, andremo al mare; se pioverà, resteremo a casa."
+     ],
+     "q": "Che cosa farai questo fine settimana se farà bel tempo? E se pioverà?",
+     "c": "Scrivi quattro frasi con se sui tuoi programmi, con il futuro in tutte e due le parti: due col sole e due con la pioggia."
+    },
+    "pt": {
+     "t": "Se + futuro: condições reais",
+     "g": "Falar de condições prováveis e dos seus resultados.",
+     "p": [
+      "Para condições reais no futuro o italiano usa o futuro nas duas partes: se avrò tempo, verrò.",
+      "No dia a dia o presente também serve: se ho tempo, vengo. O futuro soa mais cuidado ou mais distante.",
+      "A ordem é livre: verrò se avrò tempo. Útil: se farà bel tempo, andremo al mare; se pioverà, resteremo a casa."
+     ],
+     "q": "O que farás este fim de semana se estiver bom tempo? E se chover?",
+     "c": "Escreve quatro frases com se sobre os teus planos, com futuro nas duas partes: duas com sol e duas com chuva."
+    },
+    "pt_BR": {
+     "t": "Se + futuro: condições reais",
+     "g": "Falar de condições prováveis e dos seus resultados.",
+     "p": [
+      "Para condições reais no futuro o italiano usa o futuro nas duas partes: se avrò tempo, verrò.",
+      "No dia a dia o presente também serve: se ho tempo, vengo. O futuro soa mais cuidadoso ou mais distante.",
+      "A ordem é livre: verrò se avrò tempo. Útil: se farà bel tempo, andremo al mare; se pioverà, resteremo a casa."
+     ],
+     "q": "O que você vai fazer neste fim de semana se o tempo estiver bom? E se chover?",
+     "c": "Escreva quatro frases com se sobre seus planos, com futuro nas duas partes: duas com sol e duas com chuva."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "se avrò tempo",
+      "ex": "Se avrò tempo, ti aiuterò volentieri."
+     },
+     {
+      "w": "se farà bel tempo",
+      "ex": "Se farà bel tempo, andremo in spiaggia."
+     },
+     {
+      "w": "se pioverà",
+      "ex": "Se pioverà, guarderemo un film a casa."
+     },
+     {
+      "w": "verrò",
+      "ex": "Verrò alla festa se finirò presto."
+     },
+     {
+      "w": "se potrò",
+      "ex": "Se potrò, partirò venerdì sera."
+     },
+     {
+      "w": "resteremo",
+      "ex": "Se nevicherà, resteremo in montagna un giorno in più."
+     }
+    ],
+    "gram": "Periodo ipotetico della realtà al futuro: se + futuro, futuro (se studierai, passerai l'esame); nel parlato anche se + presente."
+   }
+  }
+ ]
+}

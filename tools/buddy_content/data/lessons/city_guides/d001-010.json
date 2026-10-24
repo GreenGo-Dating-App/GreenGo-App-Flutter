@@ -1,0 +1,835 @@
+{
+ "topic": "city_guides",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Welcome to city exploring",
+     "g": "Discover why cities are wonderful to explore and how curiosity turns any street into an adventure.",
+     "p": [
+      "Every city is a story told in streets, buildings, food and the people who live there.",
+      "You don't need a famous sight: a corner bakery or a quiet square can be the highlight of a day.",
+      "Explorers look up, slow down and ask questions; that mindset works in your own town too."
+     ],
+     "q": "Which city, near or far, makes you most curious, and why?",
+     "c": "Walk a street you have never taken before and notice three details you would usually miss."
+    },
+    "de": {
+     "t": "Willkommen beim Städte-Entdecken",
+     "g": "Entdecke, warum Städte so spannend sind und wie Neugier jede Straße zum Abenteuer macht.",
+     "p": [
+      "Jede Stadt erzählt eine Geschichte: in Straßen, Gebäuden, Essen und den Menschen, die dort leben.",
+      "Es braucht keine berühmte Sehenswürdigkeit: Eine Eckbäckerei oder ein stiller Platz kann der Höhepunkt sein.",
+      "Entdecker schauen nach oben, gehen langsamer und stellen Fragen. Das klappt auch in der eigenen Stadt."
+     ],
+     "q": "Welche Stadt, nah oder fern, macht dich am neugierigsten und warum?",
+     "c": "Geh eine Straße, die du noch nie gegangen bist, und entdecke drei Details, die dir sonst entgehen."
+    },
+    "es": {
+     "t": "Bienvenido a explorar ciudades",
+     "g": "Descubre por qué las ciudades son fascinantes y cómo la curiosidad convierte cualquier calle en una aventura.",
+     "p": [
+      "Cada ciudad es una historia contada en sus calles, edificios, comida y en la gente que vive en ella.",
+      "No hace falta un monumento famoso: una panadería de barrio o una plaza tranquila pueden ser lo mejor del día.",
+      "Quien explora mira hacia arriba, va despacio y pregunta; esa actitud también funciona en tu propia ciudad."
+     ],
+     "q": "¿Qué ciudad, cercana o lejana, te despierta más curiosidad y por qué?",
+     "c": "Recorre una calle por la que nunca hayas pasado y fíjate en tres detalles que normalmente se te escapan."
+    },
+    "fr": {
+     "t": "Bienvenue dans l'exploration urbaine",
+     "g": "Découvre pourquoi les villes sont passionnantes et comment la curiosité transforme chaque rue en aventure.",
+     "p": [
+      "Chaque ville raconte une histoire à travers ses rues, ses bâtiments, sa cuisine et ses habitants.",
+      "Pas besoin d'un monument célèbre : une boulangerie de quartier ou une placette peut être le moment fort du jour.",
+      "L'explorateur lève les yeux, ralentit et pose des questions ; cet état d'esprit marche aussi chez soi."
+     ],
+     "q": "Quelle ville, proche ou lointaine, éveille le plus ta curiosité, et pourquoi ?",
+     "c": "Emprunte une rue où tu n'es jamais passé et repère trois détails que tu ne remarques jamais."
+    },
+    "it": {
+     "t": "Benvenuto nell'esplorazione urbana",
+     "g": "Scopri perché le città sono meravigliose da esplorare e come la curiosità trasforma ogni strada in un'avventura.",
+     "p": [
+      "Ogni città è una storia raccontata da strade, edifici, cibo e dalle persone che ci vivono.",
+      "Non serve un monumento famoso: un forno di quartiere o una piazzetta tranquilla possono essere il momento più bello.",
+      "Chi esplora alza lo sguardo, rallenta e fa domande: questo atteggiamento funziona anche nella tua città."
+     ],
+     "q": "Quale città, vicina o lontana, ti incuriosisce di più e perché?",
+     "c": "Percorri una strada mai fatta prima e nota tre dettagli che di solito ti sfuggono."
+    },
+    "pt": {
+     "t": "Bem-vindo à exploração de cidades",
+     "g": "Descobre porque as cidades são fascinantes e como a curiosidade transforma qualquer rua numa aventura.",
+     "p": [
+      "Cada cidade é uma história contada nas ruas, nos edifícios, na comida e nas pessoas que lá vivem.",
+      "Não precisas de um monumento famoso: uma pastelaria de bairro ou uma praça sossegada podem ser o ponto alto do dia.",
+      "Quem explora olha para cima, abranda e faz perguntas; esta atitude também funciona na tua cidade."
+     ],
+     "q": "Que cidade, perto ou longe, te desperta mais curiosidade, e porquê?",
+     "c": "Percorre uma rua onde nunca passaste e repara em três pormenores que normalmente te escapam."
+    },
+    "pt_BR": {
+     "t": "Boas-vindas à exploração de cidades",
+     "g": "Descubra por que as cidades são fascinantes e como a curiosidade transforma qualquer rua numa aventura.",
+     "p": [
+      "Cada cidade é uma história contada nas ruas, nos prédios, na comida e nas pessoas que vivem nela.",
+      "Você não precisa de um ponto turístico famoso: uma padaria de bairro ou uma praça tranquila podem ser o melhor do dia.",
+      "Quem explora olha para cima, desacelera e faz perguntas; essa atitude funciona também na sua cidade."
+     ],
+     "q": "Que cidade, perto ou longe, mais desperta sua curiosidade, e por quê?",
+     "c": "Caminhe por uma rua onde você nunca passou e repare em três detalhes que normalmente passam batido."
+    }
+   }
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Reading a city map",
+     "g": "Learn how neighbourhoods, landmarks and transport lines appear on a city map.",
+     "p": [
+      "Big roads are drawn thicker, parks are green and water is blue on almost every map.",
+      "Metro and train lines are coloured lines with dots for stations; a small icon marks key landmarks.",
+      "Check the scale bar: on many city maps, one centimetre covers a few hundred metres."
+     ],
+     "q": "When you look at a map of a new city, what do you search for first?",
+     "c": "Open a map of your town and find your home, the nearest park and the nearest station."
+    },
+    "de": {
+     "t": "Einen Stadtplan lesen",
+     "g": "Lerne, wie Viertel, Wahrzeichen und Verkehrslinien auf einem Stadtplan dargestellt werden.",
+     "p": [
+      "Große Straßen sind dicker gezeichnet, Parks grün und Wasser blau, das gilt auf fast jeder Karte.",
+      "U-Bahn- und Bahnlinien sind farbige Linien mit Punkten für Stationen; kleine Symbole zeigen Wahrzeichen.",
+      "Achte auf den Maßstab: Auf vielen Stadtplänen steht ein Zentimeter für einige hundert Meter."
+     ],
+     "q": "Wonach suchst du zuerst, wenn du den Plan einer neuen Stadt anschaust?",
+     "c": "Öffne einen Plan deiner Stadt und finde dein Zuhause, den nächsten Park und die nächste Station."
+    },
+    "es": {
+     "t": "Leer un plano de la ciudad",
+     "g": "Aprende cómo aparecen en un plano los barrios, los monumentos y las líneas de transporte.",
+     "p": [
+      "Las avenidas se dibujan más gruesas, los parques en verde y el agua en azul en casi todos los planos.",
+      "Las líneas de metro y tren son trazos de colores con puntos para las estaciones; los iconos marcan monumentos.",
+      "Mira la escala: en muchos planos urbanos, un centímetro equivale a unos cientos de metros."
+     ],
+     "q": "Cuando miras el plano de una ciudad nueva, ¿qué es lo primero que buscas?",
+     "c": "Abre un plano de tu ciudad y localiza tu casa, el parque más cercano y la estación más próxima."
+    },
+    "fr": {
+     "t": "Lire un plan de ville",
+     "g": "Apprends comment les quartiers, les monuments et les lignes de transport apparaissent sur un plan.",
+     "p": [
+      "Les grands axes sont plus épais, les parcs en vert et l'eau en bleu sur presque tous les plans.",
+      "Les lignes de métro et de train sont des traits colorés avec des points pour les stations.",
+      "Regarde l'échelle : sur beaucoup de plans de ville, un centimètre représente quelques centaines de mètres."
+     ],
+     "q": "Quand tu regardes le plan d'une nouvelle ville, que cherches-tu en premier ?",
+     "c": "Ouvre un plan de ta ville et trouve ton logement, le parc le plus proche et la station la plus proche."
+    },
+    "it": {
+     "t": "Leggere una mappa della città",
+     "g": "Impara come quartieri, monumenti e linee dei trasporti compaiono su una mappa cittadina.",
+     "p": [
+      "Le strade principali sono più spesse, i parchi verdi e l'acqua blu su quasi tutte le mappe.",
+      "Metro e treni sono linee colorate con pallini per le stazioni; piccole icone segnano i monumenti.",
+      "Guarda la scala: su molte mappe urbane un centimetro corrisponde a qualche centinaio di metri."
+     ],
+     "q": "Quando guardi la mappa di una città nuova, che cosa cerchi per prima cosa?",
+     "c": "Apri una mappa della tua città e trova casa tua, il parco più vicino e la stazione più vicina."
+    },
+    "pt": {
+     "t": "Ler uma planta da cidade",
+     "g": "Aprende como os bairros, os monumentos e as linhas de transporte aparecem numa planta da cidade.",
+     "p": [
+      "As avenidas são desenhadas mais grossas, os parques a verde e a água a azul em quase todas as plantas.",
+      "As linhas de metro e de comboio são traços coloridos com pontos para as estações; ícones marcam monumentos.",
+      "Repara na escala: em muitas plantas, um centímetro corresponde a algumas centenas de metros."
+     ],
+     "q": "Quando olhas para a planta de uma cidade nova, o que procuras primeiro?",
+     "c": "Abre uma planta da tua cidade e encontra a tua casa, o parque mais próximo e a estação mais próxima."
+    },
+    "pt_BR": {
+     "t": "Lendo o mapa de uma cidade",
+     "g": "Aprenda como bairros, pontos turísticos e linhas de transporte aparecem no mapa de uma cidade.",
+     "p": [
+      "Avenidas aparecem mais grossas, parques em verde e a água em azul em quase todos os mapas.",
+      "Linhas de metrô e trem são traços coloridos com pontinhos para as estações; ícones marcam atrações.",
+      "Olhe a escala: em muitos mapas urbanos, um centímetro equivale a algumas centenas de metros."
+     ],
+     "q": "Quando você olha o mapa de uma cidade nova, o que procura primeiro?",
+     "c": "Abra um mapa da sua cidade e encontre sua casa, o parque mais próximo e a estação mais próxima."
+    }
+   }
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "North, south and orientation",
+     "g": "Learn to find your bearings using the sun, a river, a hill or a tall landmark.",
+     "p": [
+      "The sun rises roughly in the east and sets roughly in the west, everywhere on Earth.",
+      "At midday the sun is to the south in the northern hemisphere and to the north in the southern one.",
+      "Rivers, coastlines and hills don't move: note which side they are on and you always have a reference."
+     ],
+     "q": "Do you usually know which way is north, or do you rely on your phone?",
+     "c": "Stand outside today and work out which direction is north without looking at a screen."
+    },
+    "de": {
+     "t": "Norden, Süden und Orientierung",
+     "g": "Lerne, dich mit Sonne, Fluss, Hügel oder einem hohen Wahrzeichen zu orientieren.",
+     "p": [
+      "Die Sonne geht überall auf der Erde ungefähr im Osten auf und ungefähr im Westen unter.",
+      "Mittags steht die Sonne auf der Nordhalbkugel im Süden, auf der Südhalbkugel im Norden.",
+      "Flüsse, Küsten und Hügel bewegen sich nicht: Merk dir ihre Seite, dann hast du immer einen Bezugspunkt."
+     ],
+     "q": "Weißt du meistens, wo Norden ist, oder verlässt du dich auf dein Handy?",
+     "c": "Geh heute nach draußen und finde heraus, wo Norden ist, ohne auf einen Bildschirm zu schauen."
+    },
+    "es": {
+     "t": "Norte, sur y orientación",
+     "g": "Aprende a orientarte con el sol, un río, una colina o un edificio alto.",
+     "p": [
+      "El sol sale aproximadamente por el este y se pone por el oeste en cualquier lugar de la Tierra.",
+      "A mediodía el sol está al sur en el hemisferio norte y al norte en el hemisferio sur.",
+      "Ríos, costas y colinas no se mueven: fíjate en qué lado quedan y siempre tendrás una referencia."
+     ],
+     "q": "¿Sueles saber dónde está el norte o dependes del móvil?",
+     "c": "Sal hoy a la calle y averigua dónde está el norte sin mirar ninguna pantalla."
+    },
+    "fr": {
+     "t": "Nord, sud et orientation",
+     "g": "Apprends à t'orienter grâce au soleil, à une rivière, à une colline ou à un monument élevé.",
+     "p": [
+      "Partout sur Terre, le soleil se lève à peu près à l'est et se couche à peu près à l'ouest.",
+      "À midi, le soleil est au sud dans l'hémisphère Nord et au nord dans l'hémisphère Sud.",
+      "Fleuves, côtes et collines ne bougent pas : note de quel côté ils sont et tu as toujours un repère."
+     ],
+     "q": "Sais-tu en général où est le nord, ou comptes-tu sur ton téléphone ?",
+     "c": "Sors aujourd'hui et trouve où est le nord sans regarder aucun écran."
+    },
+    "it": {
+     "t": "Nord, sud e orientamento",
+     "g": "Impara a orientarti con il sole, un fiume, una collina o un edificio alto.",
+     "p": [
+      "Ovunque sulla Terra il sole sorge più o meno a est e tramonta più o meno a ovest.",
+      "A mezzogiorno il sole è a sud nell'emisfero boreale e a nord in quello australe.",
+      "Fiumi, coste e colline non si spostano: nota da che lato si trovano e avrai sempre un riferimento."
+     ],
+     "q": "Di solito sai dov'è il nord o ti affidi al telefono?",
+     "c": "Esci oggi e scopri dov'è il nord senza guardare nessuno schermo."
+    },
+    "pt": {
+     "t": "Norte, sul e orientação",
+     "g": "Aprende a orientar-te com o sol, um rio, uma colina ou um edifício alto.",
+     "p": [
+      "Em qualquer ponto da Terra, o sol nasce mais ou menos a leste e põe-se mais ou menos a oeste.",
+      "Ao meio-dia, o sol está a sul no hemisfério norte e a norte no hemisfério sul.",
+      "Rios, costas e colinas não mudam de sítio: repara de que lado ficam e terás sempre uma referência."
+     ],
+     "q": "Costumas saber onde fica o norte ou dependes do telemóvel?",
+     "c": "Sai hoje à rua e descobre onde fica o norte sem olhar para nenhum ecrã."
+    },
+    "pt_BR": {
+     "t": "Norte, sul e orientação",
+     "g": "Aprenda a se orientar pelo sol, por um rio, um morro ou um prédio alto.",
+     "p": [
+      "Em qualquer lugar da Terra, o sol nasce mais ou menos no leste e se põe mais ou menos no oeste.",
+      "Ao meio-dia, o sol fica ao sul no hemisfério norte e ao norte no hemisfério sul.",
+      "Rios, litoral e morros não saem do lugar: repare de que lado estão e você sempre terá uma referência."
+     ],
+     "q": "Você costuma saber onde fica o norte ou depende do celular?",
+     "c": "Saia hoje e descubra onde fica o norte sem olhar para nenhuma tela."
+    }
+   }
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Landmarks as anchors",
+     "g": "Pick two or three landmarks so you stay oriented and never feel lost.",
+     "p": [
+      "A good anchor is big and visible from far away: a tower, a cathedral, a hill or a river.",
+      "Paris has the Eiffel Tower, Toronto the CN Tower, Rio Christ the Redeemer on Corcovado hill.",
+      "Also pick a small personal anchor near your base, like a fountain or a bright café sign."
+     ],
+     "q": "What landmark helps you find your way in your own city?",
+     "c": "Choose three landmarks in your area and say which direction each one is from your home."
+    },
+    "de": {
+     "t": "Wahrzeichen als Anker",
+     "g": "Wähle zwei oder drei Wahrzeichen, damit du dich immer orientieren kannst und dich nie verloren fühlst.",
+     "p": [
+      "Ein guter Anker ist groß und von weitem sichtbar: ein Turm, eine Kathedrale, ein Hügel oder ein Fluss.",
+      "Paris hat den Eiffelturm, Toronto den CN Tower, Rio die Christusstatue auf dem Corcovado.",
+      "Wähle auch einen kleinen Anker nahe deiner Unterkunft, etwa einen Brunnen oder ein auffälliges Café."
+     ],
+     "q": "Welches Wahrzeichen hilft dir, dich in deiner Stadt zurechtzufinden?",
+     "c": "Wähle drei Wahrzeichen in deiner Umgebung und sag, in welcher Richtung sie von deinem Zuhause liegen."
+    },
+    "es": {
+     "t": "Los monumentos como anclas",
+     "g": "Elige dos o tres puntos de referencia para orientarte siempre y no sentirte nunca perdido.",
+     "p": [
+      "Una buena ancla es grande y se ve de lejos: una torre, una catedral, una colina o un río.",
+      "París tiene la Torre Eiffel, Toronto la CN Tower y Río el Cristo Redentor en el cerro del Corcovado.",
+      "Elige también un ancla pequeña cerca de tu alojamiento, como una fuente o el letrero de un café."
+     ],
+     "q": "¿Qué punto de referencia te ayuda a orientarte en tu ciudad?",
+     "c": "Elige tres puntos de referencia de tu zona y di en qué dirección queda cada uno desde tu casa."
+    },
+    "fr": {
+     "t": "Les repères comme ancres",
+     "g": "Choisis deux ou trois repères pour rester orienté et ne jamais te sentir perdu.",
+     "p": [
+      "Un bon repère est grand et visible de loin : une tour, une cathédrale, une colline ou un fleuve.",
+      "Paris a la tour Eiffel, Toronto la tour CN, Rio le Christ Rédempteur sur le mont Corcovado.",
+      "Choisis aussi un petit repère près de ton logement, comme une fontaine ou l'enseigne d'un café."
+     ],
+     "q": "Quel repère t'aide à trouver ton chemin dans ta ville ?",
+     "c": "Choisis trois repères autour de chez toi et dis dans quelle direction se trouve chacun d'eux."
+    },
+    "it": {
+     "t": "I punti di riferimento come ancore",
+     "g": "Scegli due o tre punti di riferimento per restare orientato e non sentirti mai perso.",
+     "p": [
+      "Una buona ancora è grande e visibile da lontano: una torre, una cattedrale, una collina o un fiume.",
+      "Parigi ha la Torre Eiffel, Toronto la CN Tower, Rio il Cristo Redentore sul monte Corcovado.",
+      "Scegli anche un'ancora piccola vicino all'alloggio, come una fontana o l'insegna di un bar."
+     ],
+     "q": "Quale punto di riferimento ti aiuta a orientarti nella tua città?",
+     "c": "Scegli tre punti di riferimento della tua zona e indica in che direzione si trova ciascuno da casa tua."
+    },
+    "pt": {
+     "t": "Pontos de referência como âncoras",
+     "g": "Escolhe dois ou três pontos de referência para te manteres orientado e nunca te sentires perdido.",
+     "p": [
+      "Uma boa âncora é grande e vê-se de longe: uma torre, uma catedral, uma colina ou um rio.",
+      "Paris tem a Torre Eiffel, Toronto a CN Tower e o Rio o Cristo Redentor no morro do Corcovado.",
+      "Escolhe também uma âncora pequena perto do alojamento, como um chafariz ou o letreiro de um café."
+     ],
+     "q": "Que ponto de referência te ajuda a orientar-te na tua cidade?",
+     "c": "Escolhe três pontos de referência da tua zona e diz em que direção fica cada um a partir de casa."
+    },
+    "pt_BR": {
+     "t": "Pontos de referência como âncoras",
+     "g": "Escolha dois ou três pontos de referência para ficar sempre orientado e nunca se sentir perdido.",
+     "p": [
+      "Uma boa âncora é grande e visível de longe: uma torre, uma catedral, um morro ou um rio.",
+      "Paris tem a Torre Eiffel, Toronto a CN Tower e o Rio o Cristo Redentor no morro do Corcovado.",
+      "Escolha também uma âncora pequena perto da hospedagem, como um chafariz ou o letreiro de um café."
+     ],
+     "q": "Que ponto de referência ajuda você a se orientar na sua cidade?",
+     "c": "Escolha três pontos de referência do seu bairro e diga em que direção cada um fica a partir da sua casa."
+    }
+   }
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Paper map or phone map?",
+     "g": "Compare paper and digital maps and learn to use both wisely.",
+     "p": [
+      "Phone maps show your live position, search places and plan routes, but they need battery.",
+      "A paper map never runs out of power and shows the whole city at once, so the big picture sticks.",
+      "Many explorers plan on paper or a big screen, then use the phone only for the final steps."
+     ],
+     "q": "Do you enjoy unfolding a paper map, or are you a phone-only explorer?",
+     "c": "Plan a short route today with a map, then walk it while checking your phone as little as possible."
+    },
+    "de": {
+     "t": "Papierkarte oder Handykarte?",
+     "g": "Vergleiche Papier- und Digitalkarten und lerne, beide klug zu nutzen.",
+     "p": [
+      "Handykarten zeigen deinen Standort live, finden Orte und planen Routen, brauchen aber Akku.",
+      "Eine Papierkarte hat nie leeren Akku und zeigt die ganze Stadt auf einmal, so bleibt der Überblick hängen.",
+      "Viele Entdecker planen auf Papier oder großem Bildschirm und nutzen das Handy nur für die letzten Schritte."
+     ],
+     "q": "Faltest du gern eine Papierkarte auf, oder bist du ein reiner Handy-Entdecker?",
+     "c": "Plane heute eine kurze Route mit einer Karte und geh sie, während du so selten wie möglich aufs Handy schaust."
+    },
+    "es": {
+     "t": "¿Mapa de papel o del móvil?",
+     "g": "Compara los mapas de papel y los digitales y aprende a usar ambos con cabeza.",
+     "p": [
+      "El mapa del móvil muestra tu posición en directo, busca lugares y calcula rutas, pero gasta batería.",
+      "Un mapa de papel nunca se queda sin batería y enseña toda la ciudad de un vistazo, así la recuerdas mejor.",
+      "Muchos exploradores planifican en papel o en pantalla grande y usan el móvil solo para los últimos pasos."
+     ],
+     "q": "¿Te gusta desplegar un mapa de papel o eres de explorar solo con el móvil?",
+     "c": "Planifica hoy una ruta corta con un mapa y recórrela mirando el móvil lo menos posible."
+    },
+    "fr": {
+     "t": "Carte papier ou carte sur téléphone ?",
+     "g": "Compare cartes papier et cartes numériques, et apprends à bien utiliser les deux.",
+     "p": [
+      "Le téléphone montre ta position en direct, cherche des lieux et calcule des itinéraires, mais vide la batterie.",
+      "Une carte papier ne tombe jamais en panne et montre toute la ville d'un coup : la vue d'ensemble reste en tête.",
+      "Beaucoup d'explorateurs préparent sur papier ou grand écran, puis gardent le téléphone pour les derniers pas."
+     ],
+     "q": "Tu aimes déplier une carte papier, ou tu explores uniquement avec ton téléphone ?",
+     "c": "Prépare un petit trajet avec une carte, puis parcours-le en regardant ton téléphone le moins possible."
+    },
+    "it": {
+     "t": "Mappa di carta o sul telefono?",
+     "g": "Confronta mappe di carta e digitali e impara a usarle entrambe con intelligenza.",
+     "p": [
+      "La mappa sul telefono mostra la tua posizione, cerca luoghi e calcola percorsi, ma consuma batteria.",
+      "Una mappa di carta non si scarica mai e mostra tutta la città insieme, così la visione d'insieme resta in mente.",
+      "Molti esploratori pianificano su carta o su uno schermo grande e usano il telefono solo per gli ultimi passi."
+     ],
+     "q": "Ti piace aprire una mappa di carta o esplori solo con il telefono?",
+     "c": "Pianifica oggi un breve percorso su una mappa e fallo guardando il telefono il meno possibile."
+    },
+    "pt": {
+     "t": "Mapa em papel ou no telemóvel?",
+     "g": "Compara mapas em papel e digitais e aprende a usar ambos com inteligência.",
+     "p": [
+      "O mapa do telemóvel mostra a tua posição, procura locais e calcula percursos, mas gasta bateria.",
+      "Um mapa em papel nunca fica sem bateria e mostra a cidade inteira de uma vez, por isso fixas melhor o conjunto.",
+      "Muitos exploradores planeiam em papel ou num ecrã grande e usam o telemóvel só para os últimos passos."
+     ],
+     "q": "Gostas de abrir um mapa em papel ou exploras só com o telemóvel?",
+     "c": "Planeia hoje um percurso curto num mapa e faz o caminho olhando para o telemóvel o menos possível."
+    },
+    "pt_BR": {
+     "t": "Mapa de papel ou no celular?",
+     "g": "Compare mapas de papel e digitais e aprenda a usar os dois com inteligência.",
+     "p": [
+      "O mapa do celular mostra sua posição ao vivo, busca lugares e traça rotas, mas gasta bateria.",
+      "Um mapa de papel nunca descarrega e mostra a cidade inteira de uma vez, então você guarda melhor o todo.",
+      "Muitos exploradores planejam no papel ou numa tela grande e usam o celular só nos últimos passos."
+     ],
+     "q": "Você curte abrir um mapa de papel ou explora só com o celular?",
+     "c": "Planeje hoje um trajeto curto num mapa e faça o caminho olhando o celular o mínimo possível."
+    }
+   }
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Downloading offline maps",
+     "g": "Prepare offline maps before you go so you can navigate without mobile data.",
+     "p": [
+      "Most map apps let you save an area of a city on your phone while you are on Wi-Fi.",
+      "With an offline map, GPS still shows your position, even with no signal or in flight mode.",
+      "Save your favourite places in advance: your stay, the station and a few sights you want to see."
+     ],
+     "q": "Have you ever been somewhere with no signal and needed to find your way?",
+     "c": "Download the offline map of a city you would love to visit and mark three places on it."
+    },
+    "de": {
+     "t": "Offline-Karten herunterladen",
+     "g": "Bereite Offline-Karten vor der Reise vor, damit du ohne mobile Daten navigieren kannst.",
+     "p": [
+      "Die meisten Karten-Apps erlauben es, im WLAN einen Stadtbereich auf dem Handy zu speichern.",
+      "Mit einer Offline-Karte zeigt GPS deinen Standort trotzdem, auch ohne Netz oder im Flugmodus.",
+      "Speichere vorab deine Lieblingsorte: Unterkunft, Bahnhof und ein paar Sehenswürdigkeiten."
+     ],
+     "q": "Warst du schon mal irgendwo ohne Empfang und musstest den Weg finden?",
+     "c": "Lade die Offline-Karte einer Traumstadt herunter und markiere drei Orte darauf."
+    },
+    "es": {
+     "t": "Descargar mapas sin conexión",
+     "g": "Prepara mapas sin conexión antes de viajar para orientarte sin datos móviles.",
+     "p": [
+      "La mayoría de las apps de mapas te dejan guardar una zona de la ciudad en el móvil con wifi.",
+      "Con un mapa sin conexión, el GPS sigue mostrando tu posición, incluso sin cobertura o en modo avión.",
+      "Guarda antes tus lugares clave: el alojamiento, la estación y algunos sitios que quieras ver."
+     ],
+     "q": "¿Alguna vez has estado sin cobertura y has tenido que encontrar el camino?",
+     "c": "Descarga el mapa sin conexión de una ciudad que te encantaría visitar y marca tres lugares."
+    },
+    "fr": {
+     "t": "Télécharger des cartes hors ligne",
+     "g": "Prépare des cartes hors ligne avant de partir pour te repérer sans données mobiles.",
+     "p": [
+      "La plupart des applis de cartes permettent d'enregistrer une zone de la ville en Wi-Fi.",
+      "Avec une carte hors ligne, le GPS affiche toujours ta position, même sans réseau ou en mode avion.",
+      "Enregistre tes lieux clés à l'avance : ton logement, la gare et quelques sites à voir."
+     ],
+     "q": "T'es-tu déjà retrouvé sans réseau en devant trouver ton chemin ?",
+     "c": "Télécharge la carte hors ligne d'une ville qui te fait rêver et marque trois lieux dessus."
+    },
+    "it": {
+     "t": "Scaricare le mappe offline",
+     "g": "Prepara le mappe offline prima di partire per orientarti senza dati mobili.",
+     "p": [
+      "Quasi tutte le app di mappe permettono di salvare una zona della città sul telefono con il Wi-Fi.",
+      "Con una mappa offline il GPS mostra comunque la tua posizione, anche senza campo o in modalità aereo.",
+      "Salva prima i luoghi chiave: l'alloggio, la stazione e qualche attrazione da vedere."
+     ],
+     "q": "Ti è mai capitato di restare senza campo e dover trovare la strada?",
+     "c": "Scarica la mappa offline di una città che sogni di visitare e segna tre luoghi."
+    },
+    "pt": {
+     "t": "Descarregar mapas offline",
+     "g": "Prepara mapas offline antes de partir para te orientares sem dados móveis.",
+     "p": [
+      "A maioria das aplicações de mapas permite guardar uma zona da cidade no telemóvel com Wi-Fi.",
+      "Com um mapa offline, o GPS continua a mostrar a tua posição, mesmo sem rede ou em modo de voo.",
+      "Guarda antes os locais importantes: o alojamento, a estação e alguns sítios que queres ver."
+     ],
+     "q": "Já estiveste sem rede e precisaste de encontrar o caminho?",
+     "c": "Descarrega o mapa offline de uma cidade que adorarias visitar e marca três locais."
+    },
+    "pt_BR": {
+     "t": "Baixando mapas offline",
+     "g": "Prepare mapas offline antes de viajar para se orientar sem dados móveis.",
+     "p": [
+      "A maioria dos apps de mapas deixa salvar uma área da cidade no celular usando o Wi-Fi.",
+      "Com o mapa offline, o GPS continua mostrando sua posição, mesmo sem sinal ou no modo avião.",
+      "Salve antes os lugares importantes: a hospedagem, a estação e algumas atrações que quer ver."
+     ],
+     "q": "Você já ficou sem sinal e precisou encontrar o caminho?",
+     "c": "Baixe o mapa offline de uma cidade que você adoraria conhecer e marque três lugares nele."
+    }
+   }
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Understanding street addresses",
+     "g": "See how addresses, house numbers and postcodes work in different countries.",
+     "p": [
+      "In the UK and the US the number comes first; in Germany, Italy or Brazil it follows the street name.",
+      "In Japan most streets have no names: addresses use districts, blocks and building numbers instead.",
+      "Postcodes help a lot: type one into a map app and it takes you straight to the right area."
+     ],
+     "q": "How is an address written where you live, and is it easy for visitors?",
+     "c": "Write your own address the way someone from another country would need to read it."
+    },
+    "de": {
+     "t": "Adressen verstehen",
+     "g": "Erfahre, wie Adressen, Hausnummern und Postleitzahlen in verschiedenen Ländern funktionieren.",
+     "p": [
+      "In Großbritannien und den USA steht die Nummer vorn, in Deutschland, Italien oder Brasilien nach der Straße.",
+      "In Japan haben die meisten Straßen keinen Namen: Adressen nennen stattdessen Viertel, Block und Gebäude.",
+      "Postleitzahlen helfen sehr: In eine Karten-App getippt, führen sie dich direkt ins richtige Gebiet."
+     ],
+     "q": "Wie schreibt man bei dir eine Adresse, und ist das für Besucher leicht?",
+     "c": "Schreib deine Adresse so auf, wie jemand aus einem anderen Land sie verstehen würde."
+    },
+    "es": {
+     "t": "Entender las direcciones",
+     "g": "Descubre cómo funcionan las direcciones, los números y los códigos postales en distintos países.",
+     "p": [
+      "En Reino Unido y EE. UU. el número va antes; en España, Alemania o Brasil va después del nombre de la calle.",
+      "En Japón la mayoría de las calles no tiene nombre: la dirección indica distrito, manzana y número de edificio.",
+      "El código postal ayuda mucho: escríbelo en una app de mapas y te llevará directo a la zona correcta."
+     ],
+     "q": "¿Cómo se escribe una dirección donde vives? ¿Es fácil para los visitantes?",
+     "c": "Escribe tu dirección como la necesitaría leer alguien de otro país."
+    },
+    "fr": {
+     "t": "Comprendre les adresses",
+     "g": "Découvre comment fonctionnent adresses, numéros et codes postaux selon les pays.",
+     "p": [
+      "En France, au Royaume-Uni et aux États-Unis, le numéro précède la rue ; en Allemagne ou au Brésil, il la suit.",
+      "Au Japon, la plupart des rues n'ont pas de nom : l'adresse indique quartier, îlot et numéro d'immeuble.",
+      "Le code postal aide beaucoup : tape-le dans une appli de cartes et tu arrives dans le bon secteur."
+     ],
+     "q": "Comment écrit-on une adresse chez toi, et est-ce simple pour les visiteurs ?",
+     "c": "Écris ton adresse comme une personne d'un autre pays aurait besoin de la lire."
+    },
+    "it": {
+     "t": "Capire gli indirizzi",
+     "g": "Scopri come funzionano indirizzi, numeri civici e codici postali nei vari paesi.",
+     "p": [
+      "Nel Regno Unito e negli USA il numero va prima; in Italia, Germania o Brasile segue il nome della via.",
+      "In Giappone quasi tutte le strade non hanno nome: l'indirizzo indica quartiere, isolato e numero di edificio.",
+      "Il CAP aiuta molto: inseriscilo in un'app di mappe e ti porta subito nella zona giusta."
+     ],
+     "q": "Come si scrive un indirizzo dove vivi, ed è facile per chi viene da fuori?",
+     "c": "Scrivi il tuo indirizzo come dovrebbe leggerlo una persona di un altro paese."
+    },
+    "pt": {
+     "t": "Perceber as moradas",
+     "g": "Descobre como funcionam moradas, números de porta e códigos postais em vários países.",
+     "p": [
+      "No Reino Unido e nos EUA o número vem primeiro; em Portugal, na Alemanha ou em Itália vem depois da rua.",
+      "No Japão a maioria das ruas não tem nome: a morada indica bairro, quarteirão e número do edifício.",
+      "O código postal ajuda muito: escreve-o numa aplicação de mapas e vais direto à zona certa."
+     ],
+     "q": "Como se escreve uma morada onde vives, e é fácil para quem visita?",
+     "c": "Escreve a tua morada como alguém de outro país precisaria de a ler."
+    },
+    "pt_BR": {
+     "t": "Entendendo endereços",
+     "g": "Descubra como funcionam endereços, números e códigos postais em diferentes países.",
+     "p": [
+      "No Reino Unido e nos EUA o número vem antes; no Brasil, na Alemanha ou na Itália vem depois da rua.",
+      "No Japão a maioria das ruas não tem nome: o endereço indica bairro, quarteirão e número do prédio.",
+      "O CEP ajuda muito: digite no app de mapas e ele leva você direto à região certa."
+     ],
+     "q": "Como se escreve um endereço onde você mora, e é fácil para quem visita?",
+     "c": "Escreva seu endereço do jeito que alguém de outro país precisaria ler."
+    }
+   }
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "What is a neighbourhood?",
+     "g": "Understand how cities grow from districts, each with its own character and history.",
+     "p": [
+      "Many big cities grew by swallowing nearby villages, which often kept their own high street and feel.",
+      "London is often called a city of villages, with areas like Hampstead and Greenwich.",
+      "A neighbourhood's character comes from its age, its people, its shops and what it was built for."
+     ],
+     "q": "Which neighbourhood of your city has the strongest personality?",
+     "c": "Describe your own neighbourhood in three words, then find one fact about its history."
+    },
+    "de": {
+     "t": "Was ist ein Stadtviertel?",
+     "g": "Verstehe, wie Städte aus Vierteln wachsen, jedes mit eigenem Charakter und eigener Geschichte.",
+     "p": [
+      "Viele Großstädte wuchsen, indem sie Nachbardörfer eingemeindeten; diese behielten oft ihr eigenes Flair.",
+      "London gilt als Stadt der Dörfer, mit Gegenden wie Hampstead und Greenwich.",
+      "Der Charakter eines Viertels entsteht durch sein Alter, seine Bewohner, Läden und ursprüngliche Funktion."
+     ],
+     "q": "Welches Viertel deiner Stadt hat die stärkste Persönlichkeit?",
+     "c": "Beschreib dein Viertel in drei Wörtern und finde eine Tatsache über seine Geschichte."
+    },
+    "es": {
+     "t": "¿Qué es un barrio?",
+     "g": "Entiende cómo las ciudades crecen a partir de barrios, cada uno con su carácter y su historia.",
+     "p": [
+      "Muchas grandes ciudades crecieron absorbiendo pueblos vecinos, que a menudo conservaron su ambiente propio.",
+      "A Londres se la llama a menudo ciudad de pueblos, con zonas como Hampstead o Greenwich.",
+      "El carácter de un barrio nace de su antigüedad, su gente, sus tiendas y su función original."
+     ],
+     "q": "¿Qué barrio de tu ciudad tiene más personalidad?",
+     "c": "Describe tu barrio en tres palabras y busca un dato sobre su historia."
+    },
+    "fr": {
+     "t": "Qu'est-ce qu'un quartier ?",
+     "g": "Comprends comment les villes grandissent par quartiers, chacun avec son caractère et son histoire.",
+     "p": [
+      "Beaucoup de grandes villes ont absorbé des villages voisins, qui ont souvent gardé leur ambiance propre.",
+      "Londres est souvent appelée une ville de villages, avec des quartiers comme Hampstead et Greenwich.",
+      "Le caractère d'un quartier vient de son âge, de ses habitants, de ses commerces et de sa fonction d'origine."
+     ],
+     "q": "Quel quartier de ta ville a la plus forte personnalité ?",
+     "c": "Décris ton quartier en trois mots, puis trouve un fait sur son histoire."
+    },
+    "it": {
+     "t": "Che cos'è un quartiere?",
+     "g": "Capisci come le città crescono per quartieri, ognuno con il suo carattere e la sua storia.",
+     "p": [
+      "Molte grandi città sono cresciute inglobando i paesi vicini, che spesso hanno conservato un'atmosfera propria.",
+      "Londra è spesso chiamata città di villaggi, con zone come Hampstead e Greenwich.",
+      "Il carattere di un quartiere nasce dalla sua età, dagli abitanti, dai negozi e dalla funzione originaria."
+     ],
+     "q": "Quale quartiere della tua città ha più personalità?",
+     "c": "Descrivi il tuo quartiere con tre parole e trova un fatto sulla sua storia."
+    },
+    "pt": {
+     "t": "O que é um bairro?",
+     "g": "Percebe como as cidades crescem a partir de bairros, cada um com o seu carácter e a sua história.",
+     "p": [
+      "Muitas grandes cidades cresceram absorvendo aldeias vizinhas, que muitas vezes mantiveram o seu ambiente.",
+      "Londres é muitas vezes chamada cidade de aldeias, com zonas como Hampstead e Greenwich.",
+      "O carácter de um bairro vem da sua idade, das pessoas, das lojas e da função para que foi construído."
+     ],
+     "q": "Que bairro da tua cidade tem mais personalidade?",
+     "c": "Descreve o teu bairro em três palavras e descobre um facto sobre a sua história."
+    },
+    "pt_BR": {
+     "t": "O que é um bairro?",
+     "g": "Entenda como as cidades crescem a partir de bairros, cada um com seu jeito e sua história.",
+     "p": [
+      "Muitas metrópoles cresceram absorvendo vilas vizinhas, que muitas vezes mantiveram um clima próprio.",
+      "Londres é chamada de cidade de vilas, com regiões como Hampstead e Greenwich.",
+      "O jeito de um bairro vem da idade, dos moradores, do comércio e da função para que foi criado."
+     ],
+     "q": "Qual bairro da sua cidade tem mais personalidade?",
+     "c": "Descreva seu bairro em três palavras e descubra um fato sobre a história dele."
+    }
+   }
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The historic centre",
+     "g": "Discover why old towns are often compact, walkable and full of layered history.",
+     "p": [
+      "Old centres were built before cars, for people on foot, so you can often cross them in under an hour.",
+      "Many were once enclosed by walls; ring roads and boulevards often follow the line of those old walls.",
+      "Look for layers: a Roman column, a medieval church and a modern shop can share one street."
+     ],
+     "q": "What is the oldest place you have ever walked through?",
+     "c": "Find out the oldest building in your city and how many years it has been standing."
+    },
+    "de": {
+     "t": "Die Altstadt",
+     "g": "Entdecke, warum Altstädte oft kompakt, gut zu Fuß erkundbar und voller Geschichtsschichten sind.",
+     "p": [
+      "Altstädte entstanden vor dem Auto, für Fußgänger. Oft durchquerst du sie in weniger als einer Stunde.",
+      "Viele waren einst von Mauern umgeben; Ringstraßen folgen oft dem Verlauf dieser Mauern, wie in Wien.",
+      "Achte auf Schichten: Römische Säule, mittelalterliche Kirche und moderner Laden in einer Straße."
+     ],
+     "q": "Was ist der älteste Ort, durch den du je gegangen bist?",
+     "c": "Finde das älteste Gebäude deiner Stadt heraus und wie viele Jahre es schon steht."
+    },
+    "es": {
+     "t": "El casco histórico",
+     "g": "Descubre por qué los cascos antiguos suelen ser compactos, caminables y llenos de capas de historia.",
+     "p": [
+      "Se construyeron antes del coche, para ir a pie, por eso a menudo se cruzan en menos de una hora.",
+      "Muchos estaban amurallados; las rondas y bulevares suelen seguir el trazado de aquellas murallas.",
+      "Busca capas: una columna romana, una iglesia medieval y una tienda moderna pueden compartir calle."
+     ],
+     "q": "¿Cuál es el lugar más antiguo por el que has paseado?",
+     "c": "Averigua cuál es el edificio más antiguo de tu ciudad y cuántos años lleva en pie."
+    },
+    "fr": {
+     "t": "Le centre historique",
+     "g": "Découvre pourquoi les vieilles villes sont souvent compactes, piétonnes et riches en couches d'histoire.",
+     "p": [
+      "Bâtis avant la voiture, pour les piétons, les centres anciens se traversent souvent en moins d'une heure.",
+      "Beaucoup étaient entourés de remparts ; boulevards et périphériques suivent souvent leur ancien tracé.",
+      "Cherche les couches : colonne romaine, église médiévale et boutique moderne dans une même rue."
+     ],
+     "q": "Quel est le lieu le plus ancien où tu te sois promené ?",
+     "c": "Trouve le plus vieux bâtiment de ta ville et depuis combien d'années il est debout."
+    },
+    "it": {
+     "t": "Il centro storico",
+     "g": "Scopri perché i centri storici sono spesso compatti, percorribili a piedi e ricchi di strati di storia.",
+     "p": [
+      "Nati prima delle auto, per chi va a piedi, spesso si attraversano in meno di un'ora.",
+      "Molti erano cinti da mura; viali e circonvallazioni seguono spesso il tracciato di quelle mura.",
+      "Cerca gli strati: una colonna romana, una chiesa medievale e un negozio moderno nella stessa via."
+     ],
+     "q": "Qual è il luogo più antico in cui hai passeggiato?",
+     "c": "Scopri qual è l'edificio più antico della tua città e da quanti anni è in piedi."
+    },
+    "pt": {
+     "t": "O centro histórico",
+     "g": "Descobre porque os centros antigos são muitas vezes compactos, caminháveis e cheios de camadas de história.",
+     "p": [
+      "Foram construídos antes dos carros, para quem andava a pé, por isso atravessam-se muitas vezes em menos de uma hora.",
+      "Muitos eram muralhados; avenidas e circulares seguem muitas vezes o traçado dessas antigas muralhas.",
+      "Procura camadas: uma coluna romana, uma igreja medieval e uma loja moderna podem partilhar a mesma rua."
+     ],
+     "q": "Qual é o lugar mais antigo por onde já passeaste?",
+     "c": "Descobre qual é o edifício mais antigo da tua cidade e há quantos anos está de pé."
+    },
+    "pt_BR": {
+     "t": "O centro histórico",
+     "g": "Descubra por que os centros antigos costumam ser compactos, bons de caminhar e cheios de camadas de história.",
+     "p": [
+      "Foram feitos antes do carro, para quem andava a pé, então muitas vezes dá para cruzá-los em menos de uma hora.",
+      "Muitos eram cercados por muralhas; avenidas e anéis viários costumam seguir o traçado delas.",
+      "Procure as camadas: uma coluna romana, uma igreja medieval e uma loja moderna podem dividir a mesma rua."
+     ],
+     "q": "Qual é o lugar mais antigo por onde você já passeou?",
+     "c": "Descubra qual é o prédio mais antigo da sua cidade e há quantos anos ele está de pé."
+    }
+   }
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "The central business district",
+     "g": "Explore office towers and finance, and see how city centres change from day to night.",
+     "p": [
+      "The business district is where banks and big companies cluster, often with the tallest towers in town.",
+      "Famous examples: the City of London, La Défense in Paris and Lower Manhattan in New York.",
+      "It buzzes on weekday lunchtimes and can feel calm in the evening or at weekends, perfect for photos."
+     ],
+     "q": "Do you prefer busy business areas or quieter, older streets?",
+     "c": "Look at your city's skyline and find out the name and height of its tallest building."
+    },
+    "de": {
+     "t": "Das Geschäftsviertel",
+     "g": "Erkunde Bürotürme und Finanzwelt und sieh, wie sich Zentren zwischen Tag und Nacht verändern.",
+     "p": [
+      "Im Geschäftsviertel sitzen Banken und große Firmen, oft mit den höchsten Türmen der Stadt.",
+      "Bekannte Beispiele: die City of London, La Défense in Paris und Lower Manhattan in New York.",
+      "Mittags unter der Woche herrscht Trubel, abends und am Wochenende ist es oft ruhig, ideal für Fotos."
+     ],
+     "q": "Magst du lieber belebte Geschäftsviertel oder ruhigere, alte Straßen?",
+     "c": "Schau dir die Skyline deiner Stadt an und finde Namen und Höhe des höchsten Gebäudes heraus."
+    },
+    "es": {
+     "t": "El distrito financiero",
+     "g": "Explora torres de oficinas y finanzas, y descubre cómo cambia el centro del día a la noche.",
+     "p": [
+      "En el distrito financiero se concentran bancos y grandes empresas, a menudo con las torres más altas.",
+      "Ejemplos famosos: la City de Londres, La Défense en París y el Bajo Manhattan en Nueva York.",
+      "Bulle a mediodía entre semana y suele estar tranquilo por la noche o el fin de semana, ideal para fotos."
+     ],
+     "q": "¿Prefieres las zonas de negocios con ajetreo o las calles antiguas y tranquilas?",
+     "c": "Observa el perfil de tu ciudad y averigua el nombre y la altura de su edificio más alto."
+    },
+    "fr": {
+     "t": "Le quartier d'affaires",
+     "g": "Explore tours de bureaux et finance, et vois comment le centre change du jour à la nuit.",
+     "p": [
+      "Le quartier d'affaires réunit banques et grandes entreprises, souvent avec les plus hautes tours.",
+      "Exemples célèbres : la City de Londres, La Défense à Paris et Lower Manhattan à New York.",
+      "Très animé à midi en semaine, il devient souvent calme le soir et le week-end, idéal pour les photos."
+     ],
+     "q": "Tu préfères les quartiers d'affaires animés ou les rues anciennes et calmes ?",
+     "c": "Observe la ligne d'horizon de ta ville et trouve le nom et la hauteur de son plus haut bâtiment."
+    },
+    "it": {
+     "t": "Il quartiere degli affari",
+     "g": "Esplora grattacieli e finanza e scopri come il centro cambia dal giorno alla notte.",
+     "p": [
+      "Nel quartiere degli affari si concentrano banche e grandi aziende, spesso con le torri più alte.",
+      "Esempi famosi: la City di Londra, La Défense a Parigi e Lower Manhattan a New York.",
+      "È animatissimo a pranzo nei giorni feriali e spesso calmo la sera e nel weekend, perfetto per le foto."
+     ],
+     "q": "Preferisci i quartieri d'affari pieni di vita o le vie antiche e tranquille?",
+     "c": "Osserva lo skyline della tua città e scopri nome e altezza del suo edificio più alto."
+    },
+    "pt": {
+     "t": "A zona de negócios",
+     "g": "Explora torres de escritórios e finança, e vê como o centro muda do dia para a noite.",
+     "p": [
+      "Na zona de negócios concentram-se bancos e grandes empresas, muitas vezes com as torres mais altas.",
+      "Exemplos famosos: a City de Londres, La Défense em Paris e Lower Manhattan em Nova Iorque.",
+      "Ferve de gente ao almoço nos dias úteis e fica muitas vezes calma à noite e ao fim de semana."
+     ],
+     "q": "Preferes zonas de negócios movimentadas ou ruas antigas e sossegadas?",
+     "c": "Observa o horizonte da tua cidade e descobre o nome e a altura do seu edifício mais alto."
+    },
+    "pt_BR": {
+     "t": "O centro financeiro",
+     "g": "Explore torres de escritórios e finanças e veja como o centro muda do dia para a noite.",
+     "p": [
+      "No centro financeiro ficam bancos e grandes empresas, muitas vezes com os prédios mais altos da cidade.",
+      "Exemplos famosos: a City de Londres, La Défense em Paris e Lower Manhattan em Nova York.",
+      "Ferve na hora do almoço em dias úteis e costuma ficar calmo à noite e no fim de semana, ótimo para fotos."
+     ],
+     "q": "Você prefere áreas de negócios agitadas ou ruas antigas e tranquilas?",
+     "c": "Observe o horizonte da sua cidade e descubra o nome e a altura do prédio mais alto."
+    }
+   }
+  }
+ ]
+}

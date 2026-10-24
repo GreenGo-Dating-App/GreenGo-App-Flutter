@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 61,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers above 100",
+     "g": "Count past one hundred and say years and large amounts in Italian.",
+     "p": [
+      "Cento, duecento, trecento... are written as one word with the next number: centoventi, trecentoquindici.",
+      "Mille becomes -mila in the plural: duemila, diecimila. Un milione takes di before a noun: un milione di persone.",
+      "Years are said as one long number: nel millenovecentonovanta, nel duemilaventi."
+     ],
+     "q": "In what year were you born? Try to say it in Italian as one long number.",
+     "c": "Say three important years of your life out loud in Italian and write them in words."
+    },
+    "de": {
+     "t": "Zahlen über 100",
+     "g": "Du zählst über hundert hinaus und sagst Jahreszahlen und große Mengen auf Italienisch.",
+     "p": [
+      "Cento, duecento, trecento... werden mit der nächsten Zahl zusammengeschrieben: centoventi, trecentoquindici.",
+      "Mille wird im Plural zu -mila: duemila, diecimila. Un milione braucht di vor dem Nomen: un milione di persone.",
+      "Jahreszahlen sagt man als eine lange Zahl: nel millenovecentonovanta, nel duemilaventi."
+     ],
+     "q": "In welchem Jahr bist du geboren? Versuch, es auf Italienisch als eine lange Zahl zu sagen.",
+     "c": "Sag drei wichtige Jahre deines Lebens laut auf Italienisch und schreib sie in Worten auf."
+    },
+    "es": {
+     "t": "Números a partir de 100",
+     "g": "Contar más allá de cien y decir años y cantidades grandes en italiano.",
+     "p": [
+      "Cento, duecento, trecento... se escriben pegados al número siguiente: centoventi, trecentoquindici.",
+      "Mille se vuelve -mila en plural: duemila, diecimila. Un milione lleva di antes del nombre: un milione di persone.",
+      "Los años se dicen como un solo número largo: nel millenovecentonovanta, nel duemilaventi."
+     ],
+     "q": "¿En qué año naciste? Intenta decirlo en italiano como un solo número largo.",
+     "c": "Di en voz alta tres años importantes de tu vida en italiano y escríbelos en letras."
+    },
+    "fr": {
+     "t": "Les nombres au-delà de 100",
+     "g": "Compter au-delà de cent et dire les années et les grandes quantités en italien.",
+     "p": [
+      "Cento, duecento, trecento... s'écrivent collés au nombre suivant : centoventi, trecentoquindici.",
+      "Mille devient -mila au pluriel : duemila, diecimila. Un milione prend di devant un nom : un milione di persone.",
+      "Les années se disent comme un seul long nombre : nel millenovecentonovanta, nel duemilaventi."
+     ],
+     "q": "En quelle année es-tu né ? Essaie de le dire en italien comme un seul long nombre.",
+     "c": "Dis à voix haute trois années importantes de ta vie en italien et écris-les en lettres."
+    },
+    "it": {
+     "t": "I numeri oltre il cento",
+     "g": "Contare oltre cento e dire anni e grandi quantità in italiano.",
+     "p": [
+      "Cento, duecento, trecento... si scrivono attaccati al numero dopo: centoventi, trecentoquindici.",
+      "Mille al plurale diventa -mila: duemila, diecimila. Un milione vuole di davanti al nome: un milione di persone.",
+      "Gli anni si dicono come un unico numero lungo: nel millenovecentonovanta, nel duemilaventi."
+     ],
+     "q": "In che anno sei nato o nata? Prova a dirlo come un unico numero lungo.",
+     "c": "Di' ad alta voce tre anni importanti della tua vita e scrivili in lettere."
+    },
+    "pt": {
+     "t": "Números acima de 100",
+     "g": "Contar para lá de cem e dizer anos e grandes quantidades em italiano.",
+     "p": [
+      "Cento, duecento, trecento... escrevem-se juntos com o número seguinte: centoventi, trecentoquindici.",
+      "Mille passa a -mila no plural: duemila, diecimila. Un milione leva di antes do nome: un milione di persone.",
+      "Os anos dizem-se como um só número comprido: nel millenovecentonovanta, nel duemilaventi."
+     ],
+     "q": "Em que ano nasceste? Tenta dizê-lo em italiano como um só número comprido.",
+     "c": "Diz em voz alta três anos importantes da tua vida em italiano e escreve-os por extenso."
+    },
+    "pt_BR": {
+     "t": "Números acima de 100",
+     "g": "Contar além de cem e dizer anos e grandes quantidades em italiano.",
+     "p": [
+      "Cento, duecento, trecento... são escritos juntos com o número seguinte: centoventi, trecentoquindici.",
+      "Mille vira -mila no plural: duemila, diecimila. Un milione pede di antes do substantivo: un milione di persone.",
+      "Os anos são ditos como um único número longo: nel millenovecentonovanta, nel duemilaventi."
+     ],
+     "q": "Em que ano você nasceu? Tente dizer em italiano como um único número longo.",
+     "c": "Fale em voz alta três anos importantes da sua vida em italiano e escreva por extenso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cento",
+      "ex": "Nella sala ci sono cento sedie."
+     },
+     {
+      "w": "mille",
+      "ex": "Mille grazie per l'aiuto!"
+     },
+     {
+      "w": "duemila",
+      "ex": "Mia sorella è nata nel duemila."
+     },
+     {
+      "w": "un milione di",
+      "ex": "Milano ha più di un milione di abitanti."
+     },
+     {
+      "w": "le centinaia",
+      "ex": "A Roma ci sono centinaia di chiese."
+     },
+     {
+      "w": "in che anno?",
+      "ex": "In che anno sei arrivato in Italia?"
+     }
+    ],
+    "gram": "Cento è invariabile; mille al plurale diventa mila (tremila); un milione di + nome; gli anni con nel: nel millenovecentonovanta."
+   }
+  },
+  {
+   "d": 62,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ordinal numbers",
+     "g": "Use primo, secondo, terzo for order, floors and dates.",
+     "p": [
+      "The first ten are special: primo, secondo, terzo, quarto, quinto, sesto, settimo, ottavo, nono, decimo.",
+      "From 11 add -esimo to the number: undicesimo, ventesimo. Ordinals agree: la prima volta, i primi giorni.",
+      "Floors use ordinals: abito al terzo piano. For dates only the first is ordinal: il primo maggio, but il due maggio."
+     ],
+     "q": "Which floor do you live or work on? Answer with an Italian ordinal number.",
+     "c": "Write the order of your morning in Italian: prima cosa, seconda cosa, terza cosa."
+    },
+    "de": {
+     "t": "Ordnungszahlen",
+     "g": "Du nutzt primo, secondo, terzo für Reihenfolgen, Stockwerke und Daten.",
+     "p": [
+      "Die ersten zehn sind eigene Wörter: primo, secondo, terzo, quarto, quinto, sesto, settimo, ottavo, nono, decimo.",
+      "Ab 11 hängt man -esimo an: undicesimo, ventesimo. Sie richten sich nach dem Nomen: la prima volta, i primi giorni.",
+      "Stockwerke: abito al terzo piano. Beim Datum nur der Erste als Ordnungszahl: il primo maggio, aber il due maggio."
+     ],
+     "q": "In welchem Stock wohnst oder arbeitest du? Antworte mit einer italienischen Ordnungszahl.",
+     "c": "Schreib die Reihenfolge deines Morgens auf Italienisch: prima cosa, seconda cosa, terza cosa."
+    },
+    "es": {
+     "t": "Los números ordinales",
+     "g": "Usar primo, secondo, terzo para el orden, los pisos y las fechas.",
+     "p": [
+      "Los diez primeros son especiales: primo, secondo, terzo, quarto, quinto, sesto, settimo, ottavo, nono, decimo.",
+      "Desde el 11 se añade -esimo: undicesimo, ventesimo. Concuerdan: la prima volta, i primi giorni.",
+      "Los pisos van con ordinales: abito al terzo piano. En fechas solo el uno: il primo maggio, pero il due maggio."
+     ],
+     "q": "¿En qué piso vives o trabajas? Responde con un ordinal italiano.",
+     "c": "Escribe en italiano el orden de tu mañana: prima cosa, seconda cosa, terza cosa."
+    },
+    "fr": {
+     "t": "Les nombres ordinaux",
+     "g": "Utiliser primo, secondo, terzo pour l'ordre, les étages et les dates.",
+     "p": [
+      "Les dix premiers sont à part : primo, secondo, terzo, quarto, quinto, sesto, settimo, ottavo, nono, decimo.",
+      "Dès 11 on ajoute -esimo : undicesimo, ventesimo. Ils s'accordent : la prima volta, i primi giorni.",
+      "Étages : abito al terzo piano. Pour les dates, seul le premier est ordinal : il primo maggio, mais il due maggio."
+     ],
+     "q": "À quel étage habites-tu ou travailles-tu ? Réponds avec un ordinal italien.",
+     "c": "Écris en italien l'ordre de ta matinée : prima cosa, seconda cosa, terza cosa."
+    },
+    "it": {
+     "t": "I numeri ordinali",
+     "g": "Usare primo, secondo, terzo per l'ordine, i piani e le date.",
+     "p": [
+      "I primi dieci sono speciali: primo, secondo, terzo, quarto, quinto, sesto, settimo, ottavo, nono, decimo.",
+      "Dall'11 si aggiunge -esimo: undicesimo, ventesimo. Si accordano: la prima volta, i primi giorni.",
+      "Per i piani: abito al terzo piano. Nelle date solo il primo è ordinale: il primo maggio, ma il due maggio."
+     ],
+     "q": "A che piano abiti o lavori? Rispondi con un numero ordinale.",
+     "c": "Scrivi l'ordine della tua mattina: prima cosa, seconda cosa, terza cosa."
+    },
+    "pt": {
+     "t": "Os números ordinais",
+     "g": "Usar primo, secondo, terzo para a ordem, os andares e as datas.",
+     "p": [
+      "Os dez primeiros são especiais: primo, secondo, terzo, quarto, quinto, sesto, settimo, ottavo, nono, decimo.",
+      "A partir do 11 junta-se -esimo: undicesimo, ventesimo. Concordam: la prima volta, i primi giorni.",
+      "Andares: abito al terzo piano. Nas datas só o dia um é ordinal: il primo maggio, mas il due maggio."
+     ],
+     "q": "Em que andar moras ou trabalhas? Responde com um ordinal italiano.",
+     "c": "Escreve em italiano a ordem da tua manhã: prima cosa, seconda cosa, terza cosa."
+    },
+    "pt_BR": {
+     "t": "Os números ordinais",
+     "g": "Usar primo, secondo, terzo para a ordem, os andares e as datas.",
+     "p": [
+      "Os dez primeiros são especiais: primo, secondo, terzo, quarto, quinto, sesto, settimo, ottavo, nono, decimo.",
+      "A partir do 11 se acrescenta -esimo: undicesimo, ventesimo. Concordam: la prima volta, i primi giorni.",
+      "Andares: abito al terzo piano. Nas datas só o dia um é ordinal: il primo maggio, mas il due maggio."
+     ],
+     "q": "Em que andar você mora ou trabalha? Responda com um ordinal italiano.",
+     "c": "Escreva em italiano a ordem da sua manhã: prima cosa, seconda cosa, terza cosa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "primo / prima",
+      "ex": "È la prima volta che vengo a Firenze."
+     },
+     {
+      "w": "secondo",
+      "ex": "Prendi la seconda strada a destra."
+     },
+     {
+      "w": "terzo",
+      "ex": "Abito al terzo piano, senza ascensore."
+     },
+     {
+      "w": "il piano terra",
+      "ex": "Il bar è al piano terra."
+     },
+     {
+      "w": "il primo maggio",
+      "ex": "Il primo maggio i negozi sono chiusi."
+     },
+     {
+      "w": "ventesimo",
+      "ex": "Il ventesimo secolo è il Novecento."
+     }
+    ],
+    "gram": "Gli ordinali si accordano come aggettivi (il primo giorno, la prima volta); dall'11 si usa -esimo; nelle date solo il primo."
+   }
+  },
+  {
+   "d": 63,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Dates and appointments",
+     "g": "Say the date and make an appointment at a precise time.",
+     "p": [
+      "Dates use il plus the number plus the month, no capitals: oggi è il quindici marzo. Ask: che giorno è oggi?",
+      "Che ora è? or che ore sono? asks the time now. A che ora? asks when something happens: a che ora parte il treno?",
+      "To book: vorrei un appuntamento per lunedì. Answer: va bene alle dieci? Sì, perfetto."
+     ],
+     "q": "What is the date today, and at what time do you usually have lunch? Answer in Italian.",
+     "c": "Write two appointments for next week in Italian with day, date and time."
+    },
+    "de": {
+     "t": "Daten und Termine",
+     "g": "Du sagst das Datum und machst einen Termin zu einer genauen Uhrzeit.",
+     "p": [
+      "Datum: il + Zahl + Monat, klein geschrieben: oggi è il quindici marzo. Frage: che giorno è oggi?",
+      "Che ora è? oder che ore sono? fragt nach der Uhrzeit jetzt. A che ora? fragt, wann etwas passiert: a che ora parte il treno?",
+      "Termin machen: vorrei un appuntamento per lunedì. Antwort: va bene alle dieci? Sì, perfetto."
+     ],
+     "q": "Welches Datum ist heute, und um wie viel Uhr isst du meist zu Mittag? Antworte auf Italienisch.",
+     "c": "Schreib zwei Termine für nächste Woche auf Italienisch mit Tag, Datum und Uhrzeit."
+    },
+    "es": {
+     "t": "Fechas y citas",
+     "g": "Decir la fecha y pedir una cita a una hora concreta.",
+     "p": [
+      "La fecha: il + número + mes, en minúscula: oggi è il quindici marzo. Pregunta: che giorno è oggi?",
+      "Che ora è? o che ore sono? pregunta la hora ahora. A che ora? pregunta cuándo pasa algo: a che ora parte il treno?",
+      "Para pedir cita: vorrei un appuntamento per lunedì. Respuesta: va bene alle dieci? Sì, perfetto."
+     ],
+     "q": "¿Qué fecha es hoy y a qué hora sueles comer? Responde en italiano.",
+     "c": "Escribe en italiano dos citas para la semana que viene con día, fecha y hora."
+    },
+    "fr": {
+     "t": "Dates et rendez-vous",
+     "g": "Dire la date et prendre un rendez-vous à une heure précise.",
+     "p": [
+      "La date : il + nombre + mois, sans majuscule : oggi è il quindici marzo. Question : che giorno è oggi ?",
+      "Che ora è ? ou che ore sono ? demande l'heure. A che ora ? demande quand : a che ora parte il treno ?",
+      "Pour réserver : vorrei un appuntamento per lunedì. Réponse : va bene alle dieci ? Sì, perfetto."
+     ],
+     "q": "Quelle est la date aujourd'hui, et à quelle heure déjeunes-tu d'habitude ? Réponds en italien.",
+     "c": "Écris en italien deux rendez-vous pour la semaine prochaine avec jour, date et heure."
+    },
+    "it": {
+     "t": "Date e appuntamenti",
+     "g": "Dire la data e fissare un appuntamento a un'ora precisa.",
+     "p": [
+      "La data: il + numero + mese, con la minuscola: oggi è il quindici marzo. Domanda: che giorno è oggi?",
+      "Che ora è? o che ore sono? chiede l'ora adesso. A che ora? chiede quando succede: a che ora parte il treno?",
+      "Per prenotare: vorrei un appuntamento per lunedì. Risposta: va bene alle dieci? Sì, perfetto."
+     ],
+     "q": "Che giorno è oggi, e a che ora pranzi di solito?",
+     "c": "Scrivi due appuntamenti per la settimana prossima con giorno, data e ora."
+    },
+    "pt": {
+     "t": "Datas e marcações",
+     "g": "Dizer a data e marcar um encontro a uma hora certa.",
+     "p": [
+      "A data: il + número + mês, em minúscula: oggi è il quindici marzo. Pergunta: che giorno è oggi?",
+      "Che ora è? ou che ore sono? pergunta as horas agora. A che ora? pergunta quando: a che ora parte il treno?",
+      "Para marcar: vorrei un appuntamento per lunedì. Resposta: va bene alle dieci? Sì, perfetto."
+     ],
+     "q": "Que dia é hoje e a que horas costumas almoçar? Responde em italiano.",
+     "c": "Escreve em italiano duas marcações para a próxima semana com dia, data e hora."
+    },
+    "pt_BR": {
+     "t": "Datas e compromissos",
+     "g": "Dizer a data e marcar um horário em uma hora exata.",
+     "p": [
+      "A data: il + número + mês, em minúscula: oggi è il quindici marzo. Pergunta: che giorno è oggi?",
+      "Che ora è? ou che ore sono? pergunta as horas agora. A che ora? pergunta quando: a che ora parte il treno?",
+      "Para marcar: vorrei un appuntamento per lunedì. Resposta: va bene alle dieci? Sì, perfetto."
+     ],
+     "q": "Que dia é hoje e a que horas você costuma almoçar? Responda em italiano.",
+     "c": "Escreva em italiano dois compromissos para a semana que vem com dia, data e hora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che giorno è oggi?",
+      "ex": "Che giorno è oggi? È il dieci giugno."
+     },
+     {
+      "w": "l'appuntamento",
+      "ex": "Ho un appuntamento dal dentista giovedì."
+     },
+     {
+      "w": "a che ora?",
+      "ex": "A che ora apre il museo?"
+     },
+     {
+      "w": "alle nove e mezza",
+      "ex": "Ci vediamo alle nove e mezza."
+     },
+     {
+      "w": "va bene?",
+      "ex": "Domani alle tre, va bene?"
+     },
+     {
+      "w": "spostare",
+      "ex": "Posso spostare l'appuntamento a venerdì?"
+     }
+    ],
+    "gram": "Data: il + numero + mese (il tre aprile); ora: alle + ora (alle otto); a che ora? = quando; che ore sono? = l'ora di adesso."
+   }
+  },
+  {
+   "d": 64,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "On the phone",
+     "g": "Handle a simple phone call: answer, ask who it is and leave a message.",
+     "p": [
+      "Italians answer with Pronto! Ask chi parla? or con chi parlo? and introduce yourself with sono Anna.",
+      "If the person is out: vuole lasciare un messaggio? You can say: può dire che ha chiamato Marco?",
+      "Spell names with city names: A come Ancona, B come Bologna, C come Como, R come Roma."
+     ],
+     "q": "How would you spell your name on the phone using Italian city names?",
+     "c": "Practise a short phone call aloud: Pronto, sono..., vorrei parlare con..., grazie, arrivederci."
+    },
+    "de": {
+     "t": "Am Telefon",
+     "g": "Du führst ein einfaches Telefonat: abnehmen, fragen, wer dran ist, eine Nachricht hinterlassen.",
+     "p": [
+      "Italiener melden sich mit Pronto! Frag chi parla? oder con chi parlo? und stell dich vor: sono Anna.",
+      "Ist die Person nicht da: vuole lasciare un messaggio? Du sagst: può dire che ha chiamato Marco?",
+      "Buchstabiert wird mit Städten: A come Ancona, B come Bologna, C come Como, R come Roma."
+     ],
+     "q": "Wie würdest du deinen Namen am Telefon mit italienischen Städtenamen buchstabieren?",
+     "c": "Übe laut ein kurzes Telefonat: Pronto, sono..., vorrei parlare con..., grazie, arrivederci."
+    },
+    "es": {
+     "t": "Al teléfono",
+     "g": "Llevar una llamada sencilla: contestar, preguntar quién es y dejar un recado.",
+     "p": [
+      "Los italianos contestan con Pronto! Pregunta chi parla? o con chi parlo? y preséntate: sono Anna.",
+      "Si la persona no está: vuole lasciare un messaggio? Puedes decir: può dire che ha chiamato Marco?",
+      "Se deletrea con ciudades: A come Ancona, B come Bologna, C come Como, R come Roma."
+     ],
+     "q": "¿Cómo deletrearías tu nombre por teléfono con nombres de ciudades italianas?",
+     "c": "Practica en voz alta una llamada corta: Pronto, sono..., vorrei parlare con..., grazie, arrivederci."
+    },
+    "fr": {
+     "t": "Au téléphone",
+     "g": "Gérer un appel simple : répondre, demander qui parle et laisser un message.",
+     "p": [
+      "Les Italiens répondent Pronto ! Demande chi parla ? ou con chi parlo ? et présente-toi : sono Anna.",
+      "Si la personne est absente : vuole lasciare un messaggio ? Tu dis : può dire che ha chiamato Marco ?",
+      "On épelle avec des villes : A come Ancona, B come Bologna, C come Como, R come Roma."
+     ],
+     "q": "Comment épellerais-tu ton prénom au téléphone avec des noms de villes italiennes ?",
+     "c": "Entraîne-toi à voix haute : Pronto, sono..., vorrei parlare con..., grazie, arrivederci."
+    },
+    "it": {
+     "t": "Al telefono",
+     "g": "Gestire una telefonata semplice: rispondere, chiedere chi è e lasciare un messaggio.",
+     "p": [
+      "Si risponde con Pronto! Si chiede chi parla? o con chi parlo? e ci si presenta con sono Anna.",
+      "Se la persona non c'è: vuole lasciare un messaggio? Puoi dire: può dire che ha chiamato Marco?",
+      "Si fa lo spelling con le città: A come Ancona, B come Bologna, C come Como, R come Roma."
+     ],
+     "q": "Come faresti lo spelling del tuo nome al telefono con le città italiane?",
+     "c": "Prova ad alta voce una breve telefonata: Pronto, sono..., vorrei parlare con..., grazie, arrivederci."
+    },
+    "pt": {
+     "t": "Ao telefone",
+     "g": "Fazer uma chamada simples: atender, perguntar quem fala e deixar recado.",
+     "p": [
+      "Os italianos atendem com Pronto! Pergunta chi parla? ou con chi parlo? e apresenta-te: sono Anna.",
+      "Se a pessoa não está: vuole lasciare un messaggio? Podes dizer: può dire che ha chiamato Marco?",
+      "Soletra-se com cidades: A come Ancona, B come Bologna, C come Como, R come Roma."
+     ],
+     "q": "Como soletrarias o teu nome ao telefone com nomes de cidades italianas?",
+     "c": "Pratica em voz alta uma chamada curta: Pronto, sono..., vorrei parlare con..., grazie, arrivederci."
+    },
+    "pt_BR": {
+     "t": "No telefone",
+     "g": "Fazer uma ligação simples: atender, perguntar quem fala e deixar recado.",
+     "p": [
+      "Os italianos atendem com Pronto! Pergunte chi parla? ou con chi parlo? e se apresente: sono Anna.",
+      "Se a pessoa não está: vuole lasciare un messaggio? Você pode dizer: può dire che ha chiamato Marco?",
+      "Soletra-se com cidades: A come Ancona, B come Bologna, C come Como, R come Roma."
+     ],
+     "q": "Como você soletraria seu nome no telefone usando nomes de cidades italianas?",
+     "c": "Pratique em voz alta uma ligação curta: Pronto, sono..., vorrei parlare con..., grazie, arrivederci."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Pronto!",
+      "ex": "Pronto, chi parla?"
+     },
+     {
+      "w": "sono...",
+      "ex": "Ciao, sono Giulia, c'è Paolo?"
+     },
+     {
+      "w": "un attimo",
+      "ex": "Un attimo, te lo passo subito."
+     },
+     {
+      "w": "lasciare un messaggio",
+      "ex": "Posso lasciare un messaggio per la signora Rossi?"
+     },
+     {
+      "w": "richiamare",
+      "ex": "Ti richiamo più tardi, va bene?"
+     },
+     {
+      "w": "A come Ancona",
+      "ex": "Il mio cognome è Neri: N come Napoli, E come Empoli."
+     }
+    ],
+    "gram": "Al telefono ci si presenta con sono + nome (non mi chiamo); chi parla? per chiedere chi è; spelling: lettera + come + città."
+   }
+  },
+  {
+   "d": 65,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Making plans with friends",
+     "g": "Invite friends and accept or decline kindly.",
+     "p": [
+      "Invite with ti va di...? + infinitive: ti va di andare al cinema? With a group: vi va di...?",
+      "Accept warmly: volentieri!, certo!, che bella idea! Then fix the details: a che ora? dove ci vediamo?",
+      "Decline politely: mi dispiace, non posso, ho già un impegno. Offer another time: facciamo sabato?"
+     ],
+     "q": "If a friend says ti va di prendere un gelato?, how do you answer, yes or no?",
+     "c": "Write one invitation, one yes and one polite no in Italian."
+    },
+    "de": {
+     "t": "Pläne mit Freunden",
+     "g": "Du lädst Freunde ein und sagst freundlich zu oder ab.",
+     "p": [
+      "Einladen mit ti va di...? + Infinitiv: ti va di andare al cinema? Für eine Gruppe: vi va di...?",
+      "Herzlich zusagen: volentieri!, certo!, che bella idea! Dann Details: a che ora? dove ci vediamo?",
+      "Höflich absagen: mi dispiace, non posso, ho già un impegno. Neuer Vorschlag: facciamo sabato?"
+     ],
+     "q": "Wenn ein Freund fragt ti va di prendere un gelato?, was antwortest du, ja oder nein?",
+     "c": "Schreib eine Einladung, eine Zusage und eine höfliche Absage auf Italienisch."
+    },
+    "es": {
+     "t": "Hacer planes con amigos",
+     "g": "Invitar a amigos y aceptar o rechazar con amabilidad.",
+     "p": [
+      "Invita con ti va di...? + infinitivo: ti va di andare al cinema? A un grupo: vi va di...?",
+      "Acepta con ganas: volentieri!, certo!, che bella idea! Luego los detalles: a che ora? dove ci vediamo?",
+      "Rechaza con educación: mi dispiace, non posso, ho già un impegno. Propón otro día: facciamo sabato?"
+     ],
+     "q": "Si un amigo te dice ti va di prendere un gelato?, ¿qué contestas, sí o no?",
+     "c": "Escribe en italiano una invitación, un sí y un no amable."
+    },
+    "fr": {
+     "t": "Faire des projets entre amis",
+     "g": "Inviter des amis et accepter ou refuser gentiment.",
+     "p": [
+      "On invite avec ti va di...? + infinitif : ti va di andare al cinema ? À un groupe : vi va di...?",
+      "Accepter : volentieri !, certo !, che bella idea ! Puis les détails : a che ora ? dove ci vediamo ?",
+      "Refuser poliment : mi dispiace, non posso, ho già un impegno. Proposer : facciamo sabato ?"
+     ],
+     "q": "Si un ami te dit ti va di prendere un gelato ?, que réponds-tu, oui ou non ?",
+     "c": "Écris en italien une invitation, un oui et un non poli."
+    },
+    "it": {
+     "t": "Fare programmi con gli amici",
+     "g": "Invitare gli amici e accettare o rifiutare con gentilezza.",
+     "p": [
+      "Si invita con ti va di...? + infinito: ti va di andare al cinema? A un gruppo: vi va di...?",
+      "Si accetta con entusiasmo: volentieri!, certo!, che bella idea! Poi i dettagli: a che ora? dove ci vediamo?",
+      "Si rifiuta con garbo: mi dispiace, non posso, ho già un impegno. E si propone: facciamo sabato?"
+     ],
+     "q": "Se un amico ti dice ti va di prendere un gelato?, cosa rispondi?",
+     "c": "Scrivi un invito, un sì e un no gentile."
+    },
+    "pt": {
+     "t": "Combinar com amigos",
+     "g": "Convidar amigos e aceitar ou recusar com simpatia.",
+     "p": [
+      "Convida-se com ti va di...? + infinitivo: ti va di andare al cinema? A um grupo: vi va di...?",
+      "Aceitar com vontade: volentieri!, certo!, che bella idea! Depois os detalhes: a che ora? dove ci vediamo?",
+      "Recusar com educação: mi dispiace, non posso, ho già un impegno. Propor outro dia: facciamo sabato?"
+     ],
+     "q": "Se um amigo te disser ti va di prendere un gelato?, o que respondes, sim ou não?",
+     "c": "Escreve em italiano um convite, um sim e um não simpático."
+    },
+    "pt_BR": {
+     "t": "Combinando com os amigos",
+     "g": "Convidar amigos e aceitar ou recusar com gentileza.",
+     "p": [
+      "Convide com ti va di...? + infinitivo: ti va di andare al cinema? Para um grupo: vi va di...?",
+      "Aceite com vontade: volentieri!, certo!, che bella idea! Depois os detalhes: a che ora? dove ci vediamo?",
+      "Recuse com educação: mi dispiace, non posso, ho già un impegno. Proponha outro dia: facciamo sabato?"
+     ],
+     "q": "Se um amigo disser ti va di prendere un gelato?, o que você responde, sim ou não?",
+     "c": "Escreva em italiano um convite, um sim e um não gentil."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ti va di...?",
+      "ex": "Ti va di fare una passeggiata stasera?"
+     },
+     {
+      "w": "volentieri",
+      "ex": "Un caffè insieme? Volentieri!"
+     },
+     {
+      "w": "mi dispiace, non posso",
+      "ex": "Mi dispiace, non posso, devo lavorare."
+     },
+     {
+      "w": "l'impegno",
+      "ex": "Sabato ho già un impegno."
+     },
+     {
+      "w": "dove ci vediamo?",
+      "ex": "Dove ci vediamo, in piazza?"
+     },
+     {
+      "w": "facciamo...?",
+      "ex": "Facciamo domenica alle cinque?"
+     }
+    ],
+    "gram": "Ti va / vi va di + infinito per invitare; rispondere con volentieri o mi dispiace, non posso + motivo."
+   }
+  },
+  {
+   "d": 66,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The present for the near future",
+     "g": "Talk about your plans using the simple present tense.",
+     "p": [
+      "In everyday Italian the present often means the future: domani vado al mare, stasera mangio da Luca.",
+      "A time word makes it clear: stasera, domani, sabato, la settimana prossima, fra due giorni.",
+      "Ask about plans: cosa fai stasera? che programmi hai per il weekend? Answer with the present."
+     ],
+     "q": "Cosa fai questo fine settimana? Tell me two plans using the present tense.",
+     "c": "Write your plans for tomorrow in four short Italian sentences with the present tense."
+    },
+    "de": {
+     "t": "Präsens für die nahe Zukunft",
+     "g": "Du sprichst mit dem einfachen Präsens über deine Pläne.",
+     "p": [
+      "Im Alltag bedeutet das Präsens oft Zukunft: domani vado al mare, stasera mangio da Luca.",
+      "Ein Zeitwort macht es klar: stasera, domani, sabato, la settimana prossima, fra due giorni.",
+      "Nach Plänen fragen: cosa fai stasera? che programmi hai per il weekend? Antwort im Präsens."
+     ],
+     "q": "Cosa fai questo fine settimana? Nenn mir zwei Pläne im Präsens.",
+     "c": "Schreib deine Pläne für morgen in vier kurzen italienischen Sätzen im Präsens."
+    },
+    "es": {
+     "t": "El presente para el futuro cercano",
+     "g": "Hablar de tus planes con el presente simple.",
+     "p": [
+      "En el italiano diario el presente muchas veces es futuro: domani vado al mare, stasera mangio da Luca.",
+      "Una palabra de tiempo lo aclara: stasera, domani, sabato, la settimana prossima, fra due giorni.",
+      "Pregunta por planes: cosa fai stasera? che programmi hai per il weekend? Se responde en presente."
+     ],
+     "q": "Cosa fai questo fine settimana? Dime dos planes en presente.",
+     "c": "Escribe tus planes para mañana en cuatro frases cortas en presente."
+    },
+    "fr": {
+     "t": "Le présent pour le futur proche",
+     "g": "Parler de tes projets avec le présent simple.",
+     "p": [
+      "En italien courant, le présent sert souvent de futur : domani vado al mare, stasera mangio da Luca.",
+      "Un mot de temps l'indique : stasera, domani, sabato, la settimana prossima, fra due giorni.",
+      "Demander les projets : cosa fai stasera ? che programmi hai per il weekend ? On répond au présent."
+     ],
+     "q": "Cosa fai questo fine settimana ? Dis-moi deux projets au présent.",
+     "c": "Écris tes projets pour demain en quatre phrases courtes au présent."
+    },
+    "it": {
+     "t": "Il presente per il futuro vicino",
+     "g": "Parlare dei propri programmi con il presente.",
+     "p": [
+      "Nell'italiano di ogni giorno il presente indica spesso il futuro: domani vado al mare, stasera mangio da Luca.",
+      "Una parola di tempo chiarisce: stasera, domani, sabato, la settimana prossima, fra due giorni.",
+      "Per chiedere: cosa fai stasera? che programmi hai per il weekend? Si risponde al presente."
+     ],
+     "q": "Cosa fai questo fine settimana? Dimmi due programmi al presente.",
+     "c": "Scrivi i tuoi programmi per domani in quattro frasi brevi al presente."
+    },
+    "pt": {
+     "t": "O presente para o futuro próximo",
+     "g": "Falar dos teus planos com o presente simples.",
+     "p": [
+      "No italiano do dia a dia o presente indica muitas vezes o futuro: domani vado al mare, stasera mangio da Luca.",
+      "Uma palavra de tempo esclarece: stasera, domani, sabato, la settimana prossima, fra due giorni.",
+      "Perguntar planos: cosa fai stasera? che programmi hai per il weekend? Responde-se no presente."
+     ],
+     "q": "Cosa fai questo fine settimana? Diz-me dois planos no presente.",
+     "c": "Escreve os teus planos para amanhã em quatro frases curtas no presente."
+    },
+    "pt_BR": {
+     "t": "O presente para o futuro próximo",
+     "g": "Falar dos seus planos com o presente simples.",
+     "p": [
+      "No italiano do dia a dia o presente muitas vezes indica futuro: domani vado al mare, stasera mangio da Luca.",
+      "Uma palavra de tempo deixa claro: stasera, domani, sabato, la settimana prossima, fra due giorni.",
+      "Para perguntar planos: cosa fai stasera? che programmi hai per il weekend? Responde-se no presente."
+     ],
+     "q": "Cosa fai questo fine settimana? Me diga dois planos no presente.",
+     "c": "Escreva seus planos para amanhã em quatro frases curtas no presente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "domani",
+      "ex": "Domani vado al mare con mia sorella."
+     },
+     {
+      "w": "stasera",
+      "ex": "Stasera ceno a casa di Luca."
+     },
+     {
+      "w": "la settimana prossima",
+      "ex": "La settimana prossima parto per Napoli."
+     },
+     {
+      "w": "fra due giorni",
+      "ex": "Fra due giorni comincio il corso."
+     },
+     {
+      "w": "il programma",
+      "ex": "Che programmi hai per sabato?"
+     },
+     {
+      "w": "il weekend",
+      "ex": "Nel weekend facciamo una gita in montagna."
+     }
+    ],
+    "gram": "Il presente indicativo + un'espressione di tempo (domani, stasera, fra...) esprime un futuro vicino e già deciso."
+   }
+  },
+  {
+   "d": 67,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Adverbs ending in -mente",
+     "g": "Turn adjectives into adverbs to say how you do things.",
+     "p": [
+      "Take the feminine form and add -mente: lento, lenta, lentamente; tranquillo, tranquillamente.",
+      "Adjectives in -e just add -mente: veloce, velocemente. In -le or -re drop the e: facile, facilmente; regolare, regolarmente.",
+      "Watch the irregular ones: buono becomes bene, cattivo becomes male. Parla bene l'italiano!"
+     ],
+     "q": "What do you do lentamente and what do you do velocemente?",
+     "c": "Make five adverbs in -mente and use each one in a short sentence about your day."
+    },
+    "de": {
+     "t": "Adverbien auf -mente",
+     "g": "Du machst aus Adjektiven Adverbien und sagst, wie du etwas tust.",
+     "p": [
+      "Nimm die weibliche Form und häng -mente an: lento, lenta, lentamente; tranquillo, tranquillamente.",
+      "Auf -e einfach -mente: veloce, velocemente. Bei -le oder -re fällt das e weg: facile, facilmente; regolare, regolarmente.",
+      "Vorsicht, unregelmäßig: buono wird bene, cattivo wird male. Parla bene l'italiano!"
+     ],
+     "q": "Was machst du lentamente und was velocemente?",
+     "c": "Bilde fünf Adverbien auf -mente und benutze jedes in einem kurzen Satz über deinen Tag."
+    },
+    "es": {
+     "t": "Adverbios en -mente",
+     "g": "Convertir adjetivos en adverbios para decir cómo haces las cosas.",
+     "p": [
+      "Toma la forma femenina y añade -mente: lento, lenta, lentamente; tranquillo, tranquillamente.",
+      "Los acabados en -e solo añaden -mente: veloce, velocemente. En -le o -re cae la e: facile, facilmente; regolare, regolarmente.",
+      "Ojo con los irregulares: buono pasa a bene, cattivo a male. Parla bene l'italiano!"
+     ],
+     "q": "¿Qué haces lentamente y qué haces velocemente?",
+     "c": "Forma cinco adverbios en -mente y usa cada uno en una frase corta sobre tu día."
+    },
+    "fr": {
+     "t": "Les adverbes en -mente",
+     "g": "Transformer des adjectifs en adverbes pour dire comment tu fais les choses.",
+     "p": [
+      "On prend le féminin et on ajoute -mente : lento, lenta, lentamente ; tranquillo, tranquillamente.",
+      "En -e on ajoute -mente : veloce, velocemente. En -le ou -re le e tombe : facile, facilmente ; regolare, regolarmente.",
+      "Attention aux irréguliers : buono devient bene, cattivo devient male. Parla bene l'italiano !"
+     ],
+     "q": "Qu'est-ce que tu fais lentamente et qu'est-ce que tu fais velocemente ?",
+     "c": "Forme cinq adverbes en -mente et utilise chacun dans une petite phrase sur ta journée."
+    },
+    "it": {
+     "t": "Gli avverbi in -mente",
+     "g": "Trasformare gli aggettivi in avverbi per dire come si fanno le cose.",
+     "p": [
+      "Si prende il femminile e si aggiunge -mente: lento, lenta, lentamente; tranquillo, tranquillamente.",
+      "Gli aggettivi in -e aggiungono -mente: veloce, velocemente. In -le e -re cade la e: facile, facilmente; regolare, regolarmente.",
+      "Attenzione agli irregolari: buono diventa bene, cattivo diventa male. Parla bene l'italiano!"
+     ],
+     "q": "Che cosa fai lentamente e che cosa fai velocemente?",
+     "c": "Forma cinque avverbi in -mente e usali in cinque frasi brevi sulla tua giornata."
+    },
+    "pt": {
+     "t": "Advérbios em -mente",
+     "g": "Transformar adjetivos em advérbios para dizer como fazes as coisas.",
+     "p": [
+      "Pega-se no feminino e junta-se -mente: lento, lenta, lentamente; tranquillo, tranquillamente.",
+      "Os terminados em -e só juntam -mente: veloce, velocemente. Em -le ou -re cai o e: facile, facilmente; regolare, regolarmente.",
+      "Atenção aos irregulares: buono passa a bene, cattivo a male. Parla bene l'italiano!"
+     ],
+     "q": "O que fazes lentamente e o que fazes velocemente?",
+     "c": "Forma cinco advérbios em -mente e usa cada um numa frase curta sobre o teu dia."
+    },
+    "pt_BR": {
+     "t": "Advérbios em -mente",
+     "g": "Transformar adjetivos em advérbios para dizer como você faz as coisas.",
+     "p": [
+      "Pegue o feminino e acrescente -mente: lento, lenta, lentamente; tranquillo, tranquillamente.",
+      "Os terminados em -e só ganham -mente: veloce, velocemente. Em -le ou -re cai o e: facile, facilmente; regolare, regolarmente.",
+      "Cuidado com os irregulares: buono vira bene, cattivo vira male. Parla bene l'italiano!"
+     ],
+     "q": "O que você faz lentamente e o que faz velocemente?",
+     "c": "Forme cinco advérbios em -mente e use cada um em uma frase curta sobre o seu dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lentamente",
+      "ex": "Parla lentamente, per favore."
+     },
+     {
+      "w": "velocemente",
+      "ex": "Il treno va velocemente."
+     },
+     {
+      "w": "facilmente",
+      "ex": "Trovi facilmente la stazione."
+     },
+     {
+      "w": "tranquillamente",
+      "ex": "La domenica leggo tranquillamente in giardino."
+     },
+     {
+      "w": "regolarmente",
+      "ex": "Faccio sport regolarmente."
+     },
+     {
+      "w": "bene / male",
+      "ex": "Oggi sto bene, ieri stavo male."
+     }
+    ],
+    "gram": "Avverbio = aggettivo femminile + -mente (lenta → lentamente); -le/-re perdono la e (facilmente); buono → bene, cattivo → male."
+   }
+  },
+  {
+   "d": 68,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Molto, poco, troppo",
+     "g": "Use quantity words correctly as adjectives and as adverbs.",
+     "p": [
+      "Before a noun they are adjectives and agree: molta acqua, molti amici, poche persone, troppe domande.",
+      "With a verb or adjective they are adverbs and never change: lavoro molto, è troppo caro, mangia poco.",
+      "Tanto works the same way: tanti baci, ti voglio tanto bene. Add un po' di for a little: un po' di pane."
+     ],
+     "q": "What do you have molto of in your life, and what do you have troppo poco of?",
+     "c": "Write two sentences with molto as an adjective and two with molto as an adverb."
+    },
+    "de": {
+     "t": "Molto, poco, troppo",
+     "g": "Du benutzt Mengenwörter richtig als Adjektiv und als Adverb.",
+     "p": [
+      "Vor einem Nomen sind sie Adjektive und passen sich an: molta acqua, molti amici, poche persone, troppe domande.",
+      "Bei Verb oder Adjektiv sind sie Adverbien und bleiben gleich: lavoro molto, è troppo caro, mangia poco.",
+      "Tanto funktioniert genauso: tanti baci, ti voglio tanto bene. Ein bisschen: un po' di pane."
+     ],
+     "q": "Wovon hast du molto in deinem Leben, und wovon troppo poco?",
+     "c": "Schreib zwei Sätze mit molto als Adjektiv und zwei mit molto als Adverb."
+    },
+    "es": {
+     "t": "Molto, poco, troppo",
+     "g": "Usar bien las palabras de cantidad como adjetivos y como adverbios.",
+     "p": [
+      "Delante de un nombre son adjetivos y concuerdan: molta acqua, molti amici, poche persone, troppe domande.",
+      "Con un verbo o adjetivo son adverbios y no cambian: lavoro molto, è troppo caro, mangia poco.",
+      "Tanto funciona igual: tanti baci, ti voglio tanto bene. Para un poco: un po' di pane."
+     ],
+     "q": "¿De qué tienes molto en tu vida y de qué tienes troppo poco?",
+     "c": "Escribe dos frases con molto como adjetivo y dos con molto como adverbio."
+    },
+    "fr": {
+     "t": "Molto, poco, troppo",
+     "g": "Employer les mots de quantité comme adjectifs et comme adverbes.",
+     "p": [
+      "Devant un nom, ce sont des adjectifs qui s'accordent : molta acqua, molti amici, poche persone, troppe domande.",
+      "Avec un verbe ou un adjectif, ce sont des adverbes invariables : lavoro molto, è troppo caro, mangia poco.",
+      "Tanto marche pareil : tanti baci, ti voglio tanto bene. Un peu de : un po' di pane."
+     ],
+     "q": "De quoi as-tu molto dans ta vie, et de quoi as-tu troppo poco ?",
+     "c": "Écris deux phrases avec molto adjectif et deux avec molto adverbe."
+    },
+    "it": {
+     "t": "Molto, poco, troppo",
+     "g": "Usare bene le parole di quantità come aggettivi e come avverbi.",
+     "p": [
+      "Davanti a un nome sono aggettivi e si accordano: molta acqua, molti amici, poche persone, troppe domande.",
+      "Con un verbo o un aggettivo sono avverbi e non cambiano: lavoro molto, è troppo caro, mangia poco.",
+      "Tanto funziona allo stesso modo: tanti baci, ti voglio tanto bene. Per una piccola quantità: un po' di pane."
+     ],
+     "q": "Di che cosa hai molto nella tua vita, e di che cosa troppo poco?",
+     "c": "Scrivi due frasi con molto aggettivo e due con molto avverbio."
+    },
+    "pt": {
+     "t": "Molto, poco, troppo",
+     "g": "Usar bem as palavras de quantidade como adjetivos e advérbios.",
+     "p": [
+      "Antes de um nome são adjetivos e concordam: molta acqua, molti amici, poche persone, troppe domande.",
+      "Com um verbo ou adjetivo são advérbios e não mudam: lavoro molto, è troppo caro, mangia poco.",
+      "Tanto funciona igual: tanti baci, ti voglio tanto bene. Um pouco de: un po' di pane."
+     ],
+     "q": "De que tens molto na tua vida, e de que tens troppo poco?",
+     "c": "Escreve duas frases com molto adjetivo e duas com molto advérbio."
+    },
+    "pt_BR": {
+     "t": "Molto, poco, troppo",
+     "g": "Usar bem as palavras de quantidade como adjetivos e advérbios.",
+     "p": [
+      "Antes de um substantivo são adjetivos e concordam: molta acqua, molti amici, poche persone, troppe domande.",
+      "Com um verbo ou adjetivo são advérbios e não mudam: lavoro molto, è troppo caro, mangia poco.",
+      "Tanto funciona igual: tanti baci, ti voglio tanto bene. Um pouco de: un po' di pane."
+     ],
+     "q": "Do que você tem molto na sua vida, e do que tem troppo poco?",
+     "c": "Escreva duas frases com molto adjetivo e duas com molto advérbio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "molto / molta",
+      "ex": "Bevo molta acqua d'estate."
+     },
+     {
+      "w": "molti amici",
+      "ex": "A Bologna ho molti amici."
+     },
+     {
+      "w": "poco",
+      "ex": "Il sabato lavoro poco."
+     },
+     {
+      "w": "troppo",
+      "ex": "Questo caffè è troppo dolce."
+     },
+     {
+      "w": "tanti / tante",
+      "ex": "Tanti auguri per il tuo compleanno!"
+     },
+     {
+      "w": "un po' di",
+      "ex": "Vorrei un po' di formaggio, per favore."
+     }
+    ],
+    "gram": "Molto, poco, troppo, tanto: davanti al nome si accordano (molte case); con verbi e aggettivi sono invariabili (è molto bella)."
+   }
+  },
+  {
+   "d": 69,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Body parts: il corpo",
+     "g": "Name the main parts of the body, including the irregular plurals.",
+     "p": [
+      "Head to toe: la testa, gli occhi, il naso, la bocca, il collo, la schiena, la pancia, la gamba, il piede.",
+      "Some plurals are irregular: il braccio, le braccia; il dito, le dita; il ginocchio, le ginocchia; l'orecchio, le orecchie.",
+      "La mano is feminine even though it ends in -o, and its plural is le mani."
+     ],
+     "q": "Can you point to five parts of your body and name them in Italian?",
+     "c": "Play teacher: touch ten body parts and say each name aloud, including two irregular plurals."
+    },
+    "de": {
+     "t": "Körperteile: il corpo",
+     "g": "Du benennst die wichtigsten Körperteile, auch die unregelmäßigen Plurale.",
+     "p": [
+      "Von Kopf bis Fuß: la testa, gli occhi, il naso, la bocca, il collo, la schiena, la pancia, la gamba, il piede.",
+      "Manche Plurale sind unregelmäßig: il braccio, le braccia; il dito, le dita; il ginocchio, le ginocchia; l'orecchio, le orecchie.",
+      "La mano ist weiblich, obwohl es auf -o endet, und der Plural heißt le mani."
+     ],
+     "q": "Kannst du auf fünf Körperteile zeigen und sie auf Italienisch benennen?",
+     "c": "Spiel Lehrer: Berühr zehn Körperteile und sag jeden Namen laut, mit zwei unregelmäßigen Pluralen."
+    },
+    "es": {
+     "t": "Las partes del cuerpo: il corpo",
+     "g": "Nombrar las partes principales del cuerpo, con los plurales irregulares.",
+     "p": [
+      "De la cabeza a los pies: la testa, gli occhi, il naso, la bocca, il collo, la schiena, la pancia, la gamba, il piede.",
+      "Algunos plurales son irregulares: il braccio, le braccia; il dito, le dita; il ginocchio, le ginocchia; l'orecchio, le orecchie.",
+      "La mano es femenino aunque acabe en -o, y su plural es le mani."
+     ],
+     "q": "¿Puedes señalar cinco partes de tu cuerpo y decirlas en italiano?",
+     "c": "Haz de profe: toca diez partes del cuerpo y di cada nombre en voz alta, con dos plurales irregulares."
+    },
+    "fr": {
+     "t": "Les parties du corps : il corpo",
+     "g": "Nommer les principales parties du corps, avec les pluriels irréguliers.",
+     "p": [
+      "De la tête aux pieds : la testa, gli occhi, il naso, la bocca, il collo, la schiena, la pancia, la gamba, il piede.",
+      "Pluriels irréguliers : il braccio, le braccia ; il dito, le dita ; il ginocchio, le ginocchia ; l'orecchio, le orecchie.",
+      "La mano est féminin malgré le -o, et son pluriel est le mani."
+     ],
+     "q": "Peux-tu montrer cinq parties de ton corps et les nommer en italien ?",
+     "c": "Joue au prof : touche dix parties du corps et dis chaque nom à voix haute, dont deux pluriels irréguliers."
+    },
+    "it": {
+     "t": "Le parti del corpo",
+     "g": "Nominare le parti principali del corpo, compresi i plurali irregolari.",
+     "p": [
+      "Dalla testa ai piedi: la testa, gli occhi, il naso, la bocca, il collo, la schiena, la pancia, la gamba, il piede.",
+      "Alcuni plurali sono irregolari: il braccio, le braccia; il dito, le dita; il ginocchio, le ginocchia; l'orecchio, le orecchie.",
+      "La mano è femminile anche se finisce in -o, e il plurale è le mani."
+     ],
+     "q": "Riesci a indicare cinque parti del corpo e a dirle in italiano?",
+     "c": "Fai l'insegnante: tocca dieci parti del corpo e di' il nome ad alta voce, con due plurali irregolari."
+    },
+    "pt": {
+     "t": "As partes do corpo: il corpo",
+     "g": "Nomear as principais partes do corpo, com os plurais irregulares.",
+     "p": [
+      "Da cabeça aos pés: la testa, gli occhi, il naso, la bocca, il collo, la schiena, la pancia, la gamba, il piede.",
+      "Alguns plurais são irregulares: il braccio, le braccia; il dito, le dita; il ginocchio, le ginocchia; l'orecchio, le orecchie.",
+      "La mano é feminino apesar do -o, e o plural é le mani."
+     ],
+     "q": "Consegues apontar cinco partes do corpo e dizê-las em italiano?",
+     "c": "Faz de professor: toca em dez partes do corpo e diz cada nome em voz alta, com dois plurais irregulares."
+    },
+    "pt_BR": {
+     "t": "As partes do corpo: il corpo",
+     "g": "Nomear as principais partes do corpo, com os plurais irregulares.",
+     "p": [
+      "Da cabeça aos pés: la testa, gli occhi, il naso, la bocca, il collo, la schiena, la pancia, la gamba, il piede.",
+      "Alguns plurais são irregulares: il braccio, le braccia; il dito, le dita; il ginocchio, le ginocchia; l'orecchio, le orecchie.",
+      "La mano é feminino apesar do -o, e o plural é le mani."
+     ],
+     "q": "Você consegue apontar cinco partes do corpo e dizer em italiano?",
+     "c": "Brinque de professor: toque em dez partes do corpo e diga cada nome em voz alta, com dois plurais irregulares."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la testa",
+      "ex": "Gira la testa a destra."
+     },
+     {
+      "w": "il braccio / le braccia",
+      "ex": "Alza le braccia!"
+     },
+     {
+      "w": "la mano / le mani",
+      "ex": "Lavati le mani prima di mangiare."
+     },
+     {
+      "w": "la gamba",
+      "ex": "Ho le gambe stanche dopo la passeggiata."
+     },
+     {
+      "w": "il dito / le dita",
+      "ex": "Ho dieci dita e due mani."
+     },
+     {
+      "w": "gli occhi",
+      "ex": "Mia figlia ha gli occhi verdi."
+     }
+    ],
+    "gram": "Plurali irregolari in -a femminile: il braccio → le braccia, il dito → le dita, il ginocchio → le ginocchia; la mano → le mani."
+   }
+  },
+  {
+   "d": 70,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the doctor: basic phrases",
+     "g": "Describe simply how you feel when you see a doctor.",
+     "p": [
+      "Mi fa male + singular, mi fanno male + plural: mi fa male la gola, mi fanno male i piedi.",
+      "Ho mal di + body part for common aches: ho mal di testa, ho mal di pancia, ho mal di denti.",
+      "Other key phrases: ho la febbre, ho il raffreddore, ho la tosse, mi sento stanco. This is language practice, not medical advice."
+     ],
+     "q": "How do you say in Italian that your head hurts? And that your feet hurt?",
+     "c": "Write a short dialogue with a doctor: two symptoms and one question like da quando?"
+    },
+    "de": {
+     "t": "Beim Arzt: einfache Sätze",
+     "g": "Du beschreibst einfach, wie du dich beim Arztbesuch fühlst.",
+     "p": [
+      "Mi fa male + Singular, mi fanno male + Plural: mi fa male la gola, mi fanno male i piedi.",
+      "Ho mal di + Körperteil für häufige Schmerzen: ho mal di testa, ho mal di pancia, ho mal di denti.",
+      "Weitere Sätze: ho la febbre, ho il raffreddore, ho la tosse, mi sento stanco. Das ist Sprachübung, keine medizinische Beratung."
+     ],
+     "q": "Wie sagst du auf Italienisch, dass dir der Kopf wehtut? Und dass dir die Füße wehtun?",
+     "c": "Schreib einen kurzen Dialog beim Arzt: zwei Symptome und eine Frage wie da quando?"
+    },
+    "es": {
+     "t": "En el médico: frases básicas",
+     "g": "Describir de forma sencilla cómo te sientes en el médico.",
+     "p": [
+      "Mi fa male + singular, mi fanno male + plural: mi fa male la gola, mi fanno male i piedi.",
+      "Ho mal di + parte del cuerpo para dolores comunes: ho mal di testa, ho mal di pancia, ho mal di denti.",
+      "Otras frases: ho la febbre, ho il raffreddore, ho la tosse, mi sento stanco. Es práctica de idioma, no consejo médico."
+     ],
+     "q": "¿Cómo dices en italiano que te duele la cabeza? ¿Y que te duelen los pies?",
+     "c": "Escribe un diálogo corto con un médico: dos síntomas y una pregunta como da quando?"
+    },
+    "fr": {
+     "t": "Chez le médecin : phrases de base",
+     "g": "Décrire simplement comment tu te sens chez le médecin.",
+     "p": [
+      "Mi fa male + singulier, mi fanno male + pluriel : mi fa male la gola, mi fanno male i piedi.",
+      "Ho mal di + partie du corps pour les douleurs courantes : ho mal di testa, ho mal di pancia, ho mal di denti.",
+      "Autres phrases : ho la febbre, ho il raffreddore, ho la tosse, mi sento stanco. C'est de la pratique de langue, pas un avis médical."
+     ],
+     "q": "Comment dis-tu en italien que tu as mal à la tête ? Et aux pieds ?",
+     "c": "Écris un petit dialogue chez le médecin : deux symptômes et une question comme da quando ?"
+    },
+    "it": {
+     "t": "Dal medico: frasi di base",
+     "g": "Descrivere in modo semplice come ti senti dal medico.",
+     "p": [
+      "Mi fa male + singolare, mi fanno male + plurale: mi fa male la gola, mi fanno male i piedi.",
+      "Ho mal di + parte del corpo per i dolori comuni: ho mal di testa, ho mal di pancia, ho mal di denti.",
+      "Altre frasi utili: ho la febbre, ho il raffreddore, ho la tosse, mi sento stanco. È pratica di lingua, non un consiglio medico."
+     ],
+     "q": "Come dici che ti fa male la testa? E che ti fanno male i piedi?",
+     "c": "Scrivi un breve dialogo dal medico: due sintomi e una domanda come da quando?"
+    },
+    "pt": {
+     "t": "No médico: frases básicas",
+     "g": "Descrever de forma simples como te sentes no médico.",
+     "p": [
+      "Mi fa male + singular, mi fanno male + plural: mi fa male la gola, mi fanno male i piedi.",
+      "Ho mal di + parte do corpo para dores comuns: ho mal di testa, ho mal di pancia, ho mal di denti.",
+      "Outras frases: ho la febbre, ho il raffreddore, ho la tosse, mi sento stanco. É prática de língua, não conselho médico."
+     ],
+     "q": "Como dizes em italiano que te dói a cabeça? E que te doem os pés?",
+     "c": "Escreve um diálogo curto no médico: dois sintomas e uma pergunta como da quando?"
+    },
+    "pt_BR": {
+     "t": "No médico: frases básicas",
+     "g": "Descrever de forma simples como você se sente no médico.",
+     "p": [
+      "Mi fa male + singular, mi fanno male + plural: mi fa male la gola, mi fanno male i piedi.",
+      "Ho mal di + parte do corpo para dores comuns: ho mal di testa, ho mal di pancia, ho mal di denti.",
+      "Outras frases: ho la febbre, ho il raffreddore, ho la tosse, mi sento stanco. É prática de idioma, não conselho médico."
+     ],
+     "q": "Como você diz em italiano que está com dor de cabeça? E que os pés doem?",
+     "c": "Escreva um diálogo curto no médico: dois sintomas e uma pergunta como da quando?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi fa male",
+      "ex": "Mi fa male la gola da ieri."
+     },
+     {
+      "w": "ho mal di testa",
+      "ex": "Ho mal di testa, vado a riposare."
+     },
+     {
+      "w": "la febbre",
+      "ex": "Il bambino ha un po' di febbre."
+     },
+     {
+      "w": "il raffreddore",
+      "ex": "Ho il raffreddore e la tosse."
+     },
+     {
+      "w": "da quando?",
+      "ex": "Da quando ha questo dolore?"
+     },
+     {
+      "w": "mi sento",
+      "ex": "Oggi mi sento meglio, grazie."
+     }
+    ],
+    "gram": "Mi fa male + nome singolare, mi fanno male + plurale (come piacere); ho mal di + parte del corpo senza articolo."
+   }
+  }
+ ]
+}

@@ -1,0 +1,2195 @@
+{
+ "topic": "cycling",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Why people love cycling",
+   "f": "Freedom, fresh air, fitness and getting around: a friendly overview of life on two wheels"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "A short history of the bicycle",
+   "f": "From the 1817 running machine to the safety bicycle and today's lightweight bikes"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Types of bikes at a glance",
+   "f": "Road, mountain, gravel, hybrid, city, folding and e-bikes in one quick tour"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Road bikes",
+   "f": "Drop handlebars, narrow tyres and light frames built for speed on tarmac"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Mountain bikes",
+   "f": "Wide knobbly tyres, suspension and sturdy frames for trails"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "Gravel bikes",
+   "f": "Versatile drop-bar bikes for mixed surfaces and adventure"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Hybrid and city bikes",
+   "f": "Upright, comfortable bikes for commuting and errands"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Folding bikes",
+   "f": "Compact bikes that pair perfectly with trains and small flats"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "E-bikes basics",
+   "f": "How pedal assist works and who enjoys riding electric bikes"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Parts of a bike",
+   "f": "Frame, fork, wheels, drivetrain, brakes, saddle and handlebars explained simply"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Frame materials",
+   "f": "Steel, aluminium, carbon and titanium: how each one feels and lasts"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Wheels and tyres",
+   "f": "Rim size, tyre width and tread, and what they mean for your ride"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "How gears work",
+   "f": "Chainrings, cassette and derailleurs working together"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Brakes explained",
+   "f": "Rim brakes vs disc brakes, and mechanical vs hydraulic systems"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Finding the right frame size",
+   "f": "Using height, standover and reach to pick a bike that fits"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Saddle height",
+   "f": "A simple method to set your saddle so your legs extend comfortably"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Saddle position and tilt",
+   "f": "Fore-aft position and a level saddle for comfort"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Handlebar reach and height",
+   "f": "Finding a relaxed upper body position"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Choosing a helmet",
+   "f": "Fit, certification labels and when to replace a helmet"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Lights and reflectors",
+   "f": "Front and rear lights for being seen day and night"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Locks",
+   "f": "U-locks, chain locks and folding locks, and how to lock a bike well"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Cycling clothing basics",
+   "f": "Comfortable layers, padded shorts and why bright colours help"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Shoes and pedals",
+   "f": "Flat pedals vs clipless pedals and what suits beginners"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Gloves and glasses",
+   "f": "Protecting hands and eyes from sun, wind and grit"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Checking your bike before a ride",
+   "f": "The quick ABC check: air, brakes, chain"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Getting on and off smoothly",
+   "f": "Mounting, starting and stopping without wobbling"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Pedalling efficiently",
+   "f": "Smooth circles and a steady rhythm instead of stomping"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Shifting gears with confidence",
+   "f": "When and how to shift before hills and stops"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Braking well",
+   "f": "Using both brakes progressively and braking before corners"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: your first month",
+   "f": "A look back at bikes, fit, gear and first skills"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Riding in a straight line",
+   "f": "Looking ahead and relaxing the arms for a steady line"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Looking over your shoulder",
+   "f": "Checking behind without swerving"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Signalling with your hands",
+   "f": "Clear hand signals for turning and stopping"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Cornering basics",
+   "f": "Slowing before a turn, leaning the bike and looking through the bend"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Riding over bumps",
+   "f": "Standing slightly and letting the bike move beneath you"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Starting on a hill",
+   "f": "Choosing the right gear and pushing off smoothly"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Climbing for beginners",
+   "f": "Easy gears, steady breathing and patience on climbs"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Descending for beginners",
+   "f": "Controlling speed, hands on the brakes and weight back"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Riding in wind",
+   "f": "Lowering your position and adjusting effort in headwinds"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Riding in the rain",
+   "f": "Lights, grip, longer braking distances and staying visible"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Road rules for cyclists",
+   "f": "General traffic principles and why local rules vary by country"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Bike lanes and paths",
+   "f": "Types of cycling infrastructure and how to use them"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Riding with traffic",
+   "f": "Predictable riding, eye contact and a confident road position"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Junctions and roundabouts",
+   "f": "Approaching intersections calmly and clearly"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Being visible",
+   "f": "Lights, bright clothing and positioning to be seen"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Sharing paths with walkers",
+   "f": "Bells, slowing down and friendly passing"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Night riding",
+   "f": "Strong lights, reflective details and familiar routes"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Riding in a group",
+   "f": "Basic etiquette, communication and keeping a steady pace"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Cycling with children",
+   "f": "Child seats, trailers and teaching kids to ride"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Review: skills and safety",
+   "f": "A recap of handling skills and road awareness"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Planning a first route",
+   "f": "Choosing quiet roads and short distances for an enjoyable ride"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "Reading a cycling map",
+   "f": "Symbols for paths, elevation and surfaces"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Route planning apps",
+   "f": "How apps help find bike-friendly routes and estimate climbs"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Understanding elevation",
+   "f": "What climbing metres mean for effort and time"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Loop routes vs out-and-back",
+   "f": "Pros and cons of each route style"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Your first 10 km ride",
+   "f": "Pacing, breaks and enjoying the scenery"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Your first 20 km ride",
+   "f": "Building distance gradually with snacks and water"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Cycling in parks",
+   "f": "Finding traffic-free places to practise and relax"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Riverside and canal paths",
+   "f": "Flat, scenic routes popular in many countries"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Exploring your city by bike",
+   "f": "Discovering neighbourhoods, markets and viewpoints"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Commuting by bike",
+   "f": "Planning a commute route, timing and arriving fresh"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Carrying things on a bike",
+   "f": "Racks, panniers, baskets and backpacks compared"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Bike parking",
+   "f": "Finding safe parking and using bike stations"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Combining bike and train",
+   "f": "Bringing bikes on trains and using folding bikes"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Bike sharing",
+   "f": "How public bike-sharing schemes work in many cities"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Errands by bike",
+   "f": "Shopping, deliveries and daily trips on two wheels"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Riding in different weather",
+   "f": "Dressing for heat, cold and changing conditions"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Cycling in summer",
+   "f": "Sun protection, early rides and staying hydrated"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Cycling in winter",
+   "f": "Layers, lights and grip on cold days"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Review: routes and daily riding",
+   "f": "Looking back at route planning and commuting"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Basic bike cleaning",
+   "f": "Washing the frame, wheels and drivetrain gently"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Lubricating the chain",
+   "f": "When and how to apply chain lube correctly"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Tyre pressure",
+   "f": "Why pressure matters and how to check it with a pump gauge"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Fixing a flat, part 1",
+   "f": "Removing the wheel and the tyre with tyre levers"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Fixing a flat, part 2",
+   "f": "Finding the cause, patching or replacing the tube, and reinstalling"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Tools for the road",
+   "f": "A mini tool, spare tube, levers and pump in a saddle bag"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Checking brake pads",
+   "f": "Recognising worn pads and when to replace them"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Adjusting brakes",
+   "f": "Simple barrel adjuster tweaks for better braking"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Indexing gears",
+   "f": "Fine-tuning a derailleur that skips or rubs"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Checking bolts",
+   "f": "Using the right torque and checking key bolts regularly"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Wheel true check",
+   "f": "Spotting a wobbly wheel and when to visit a shop"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Headset and bearings",
+   "f": "Feeling for play and smoothness in moving parts"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Storing your bike",
+   "f": "Keeping a bike dry, secure and ready to ride"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Local bike shops",
+   "f": "How mechanics help and what to ask during a service"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Maintenance schedule",
+   "f": "Simple weekly, monthly and yearly checks"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Review: maintenance basics",
+   "f": "A recap of cleaning, lubing and fixing flats"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Fitness benefits of cycling",
+   "f": "General ways cycling supports an active lifestyle"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Easy riding",
+   "f": "Why most rides should feel relaxed and conversational"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Cadence",
+   "f": "Pedal revolutions per minute and finding a comfortable rhythm"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Heart rate basics",
+   "f": "Using heart rate as a general guide to effort"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Perceived effort",
+   "f": "Rating how hard a ride feels on a simple scale"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Warming up",
+   "f": "Starting easy for the first minutes of a ride"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Cooling down and stretching",
+   "f": "Ending rides gently and stretching tired legs"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Rest days",
+   "f": "Why recovery is part of getting stronger"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Eating before a ride",
+   "f": "General tips on light snacks and timing"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Snacks on the bike",
+   "f": "Easy foods to carry for longer rides"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Hydration",
+   "f": "Carrying bottles and drinking regularly"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Building a weekly routine",
+   "f": "Mixing short and longer rides in a sustainable week"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Setting a first goal",
+   "f": "Choosing a fun target like a local loop or a charity ride"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Tracking rides",
+   "f": "Bike computers, apps and simple ride logs"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Cycling clubs",
+   "f": "What clubs offer and how to join a beginner-friendly group ride"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Review: fitness basics",
+   "f": "Looking back at effort, food and routine"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Posture on the bike",
+   "f": "A relaxed back, soft elbows and loose shoulders for comfortable riding"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Avoiding saddle soreness",
+   "f": "Good shorts, correct saddle height and short rides to get used to the saddle"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Breathing while riding",
+   "f": "Deep, steady breaths and matching breathing to effort"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Riding a bit faster",
+   "f": "Small changes in gearing and cadence that add speed without strain"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Cycling and good sleep",
+   "f": "How regular riding and rest fit into a balanced daily rhythm"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Bike security at home",
+   "f": "Storing bikes safely indoors and recording your frame number"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Choosing your next bike",
+   "f": "Questions to ask yourself before buying or upgrading"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Test riding a bike",
+   "f": "What to feel for when you try a bike in a shop"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Famous bike races",
+   "f": "An introduction to the Grand Tours and classic one-day races"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "The Tour de France",
+   "f": "The history and format of cycling's most famous race since 1903"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "The Giro d'Italia",
+   "f": "Italy's Grand Tour and its famous pink jersey"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "The Vuelta a España",
+   "f": "Spain's Grand Tour and its red jersey"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Cycling legends",
+   "f": "Respectful portraits of icons like Eddy Merckx and Fausto Coppi"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Cycling cultures",
+   "f": "How the Netherlands, Denmark and other countries made cycling part of daily life"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Your first longer ride",
+   "f": "Planning a 40 km ride with breaks and a scenic goal"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Riding with friends",
+   "f": "Planning social rides with a café stop"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Bike-friendly cafés",
+   "f": "The café culture that grew around cycling"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Beginner path review",
+   "f": "Celebrating your progress and choosing what to explore next"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Welcome to intermediate",
+   "f": "Longer rides, smarter training and more hands-on maintenance ahead"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Professional bike fit",
+   "f": "What a fitter measures and when a fit is worth it"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Cleat position",
+   "f": "Setting cleats for comfortable knees and feet"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Saddle choice",
+   "f": "Shapes, widths and padding for long-ride comfort"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Handlebar types",
+   "f": "Drop, flat, riser and flared bars and how they change handling"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Contact points comfort",
+   "f": "Hands, feet and saddle: avoiding numbness and pressure"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Bike computers and sensors",
+   "f": "Speed, cadence and heart rate sensors explained"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Power meters",
+   "f": "What watts measure and why riders use them"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Tubeless tyres",
+   "f": "How tubeless works and its pros and cons"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Choosing tyre width",
+   "f": "Wider tyres, comfort and grip on different surfaces"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Wheel upgrades",
+   "f": "How wheels affect weight, aerodynamics and feel"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Groupsets",
+   "f": "Main component levels and what changes between them"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Electronic shifting",
+   "f": "How wireless and wired electronic shifting works"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Gear ratios",
+   "f": "Understanding chainring and cassette sizes for climbing and speed"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Bike weight vs comfort",
+   "f": "Why a lighter bike is not always the better bike"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Review: equipment month",
+   "f": "A recap of fit, components and upgrades"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Training zones",
+   "f": "Five simple effort zones from easy to very hard"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Base training",
+   "f": "Building endurance with longer easy rides"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Interval training basics",
+   "f": "Short, harder efforts with recovery in between"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Tempo rides",
+   "f": "Sustained, moderately hard efforts that build stamina"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Hill repeats",
+   "f": "Climbing the same hill several times to build strength"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "Sprint practice",
+   "f": "Short bursts of speed with good form"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Cadence drills",
+   "f": "High and low cadence exercises for pedalling skill"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Indoor trainers",
+   "f": "Smart trainers, rollers and riding indoors in bad weather"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Virtual riding platforms",
+   "f": "How online platforms make indoor training social"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Structured training plans",
+   "f": "Weekly plans that balance hard and easy days"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Periodisation",
+   "f": "Building, peaking and resting over weeks and months"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Overtraining signs",
+   "f": "Feeling flat, poor sleep and loss of motivation as signals to rest"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Strength training for cyclists",
+   "f": "Squats, lunges and core work off the bike"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Flexibility for cyclists",
+   "f": "Stretching hips, hamstrings and back after rides"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Review: training month",
+   "f": "Looking back at zones, intervals and recovery"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Climbing technique",
+   "f": "Seated vs standing climbing and pacing"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Descending technique",
+   "f": "Body position, line choice and braking on descents"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Cornering at speed",
+   "f": "Weighting the outside pedal and choosing a line"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Riding in a paceline",
+   "f": "Rotating turns at the front in a group"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Drafting",
+   "f": "How riding behind others saves energy, done safely"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Group ride signals",
+   "f": "Pointing out holes, slowing and stopping"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Echelons in crosswinds",
+   "f": "How riders stagger in crosswinds"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Bunny hop basics",
+   "f": "Lifting the front and rear wheels over small obstacles"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Track stand",
+   "f": "Balancing on the bike while stationary"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Riding one-handed",
+   "f": "Drinking and signalling safely"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Emergency braking",
+   "f": "Stopping quickly while keeping control"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Gravel handling",
+   "f": "Loose surfaces, momentum and relaxed steering"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Wet roads and leaves",
+   "f": "Riding carefully on slippery surfaces"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Cobbles",
+   "f": "How riders tackle cobblestones in races and cities"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Review: skills month",
+   "f": "A recap of climbing, descending and group riding"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Mountain biking basics",
+   "f": "Ready position, looking ahead and trail etiquette"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Mountain bike suspension",
+   "f": "Hardtail vs full suspension and setting sag"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Trail grades",
+   "f": "How trails are rated from easy to expert"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Riding roots and rocks",
+   "f": "Choosing lines and keeping momentum"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Climbing on trails",
+   "f": "Weight distribution and traction on steep climbs"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Descending on trails",
+   "f": "Dropping your heels and moving the bike under you"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Switchbacks",
+   "f": "Riding tight hairpin turns on trails"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Trail etiquette",
+   "f": "Sharing trails with hikers and other riders"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Bike parks",
+   "f": "Lift-served trails and skills areas"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Gravel riding culture",
+   "f": "Adventure rides, events and mixed-terrain routes"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Cyclocross",
+   "f": "A short, muddy racing discipline with obstacles"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Track cycling",
+   "f": "Velodromes, fixed gears and track events"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "BMX",
+   "f": "The world of BMX racing and freestyle"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review: off-road month",
+   "f": "Looking back at mountain biking, gravel and other disciplines"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Planning a 100 km ride",
+   "f": "Pacing, fuelling and route choice for a big day"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Fuelling long rides",
+   "f": "General guidance on eating little and often"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Electrolytes",
+   "f": "Why salt and fluids matter on hot, long rides"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Pacing long rides",
+   "f": "Starting easy and saving energy for later"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Mental tricks for long rides",
+   "f": "Breaking rides into segments and staying positive"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Sportives and gran fondos",
+   "f": "Organised mass-participation rides"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Charity rides",
+   "f": "Riding for a cause with a community of riders"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Bike touring basics",
+   "f": "Travelling long distances by bike with luggage"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Packing for a tour",
+   "f": "Essentials, layers and keeping weight low"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Bikepacking",
+   "f": "Frame bags, light setups and off-road adventures"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Camping by bike",
+   "f": "Choosing gear and campsites for overnight trips"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Hotels and hostels by bike",
+   "f": "Lighter touring with indoor stays"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Famous touring routes",
+   "f": "EuroVelo, the Danube path and other well-known routes"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Cycling abroad",
+   "f": "Bringing a bike on a plane or renting one"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Review: long-distance month",
+   "f": "A recap of long rides and touring skills"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Maintenance: chain wear",
+   "f": "Measuring chain stretch and when to replace a chain"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Maintenance: cassette and chainrings",
+   "f": "Recognising worn teeth"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Maintenance: cables and housing",
+   "f": "Replacing gear and brake cables"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Maintenance: bleeding hydraulic brakes",
+   "f": "What bleeding is and when it is needed"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Maintenance: brake rotors",
+   "f": "Checking disc rotors for wear and contamination"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Maintenance: bottom bracket",
+   "f": "Signs of a worn bottom bracket"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Maintenance: wheel bearings",
+   "f": "Checking hubs for smooth rotation"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Maintenance: tubeless sealant",
+   "f": "Topping up sealant and fixing small punctures"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Maintenance: handlebar tape",
+   "f": "Wrapping new bar tape neatly"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Maintenance: derailleur hanger",
+   "f": "Why a bent hanger causes shifting trouble"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Home workshop",
+   "f": "Building a basic toolkit and a work stand"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Torque wrenches",
+   "f": "Why correct torque protects carbon and alloy parts"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Cleaning the drivetrain deeply",
+   "f": "Degreasing chain, cassette and chainrings"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Seasonal service",
+   "f": "Preparing your bike for summer and winter"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Pre-ride checks for long rides",
+   "f": "A thorough check before a big day out"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Review: workshop month",
+   "f": "Looking back at intermediate maintenance"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Cycling photography",
+   "f": "Capturing beautiful ride moments safely"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Cycling and the environment",
+   "f": "How bikes contribute to cleaner, quieter cities"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Bike-friendly cities",
+   "f": "What makes cities like Copenhagen and Amsterdam great for cycling"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Cycling in Asia",
+   "f": "Cycling cultures in Japan, China and beyond"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Cycling in the Americas",
+   "f": "Bike paths and cycling scenes across the Americas"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Cycling in Africa",
+   "f": "Growing cycling communities and famous teams"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Cycling festivals",
+   "f": "Events that celebrate bikes and riders"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Women in cycling",
+   "f": "Pioneers and champions of women's cycling"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Paracycling",
+   "f": "Handcycles, tandems and adaptive cycling"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Cycling and community",
+   "f": "Clubs, group rides and volunteering"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Bike advocacy basics",
+   "f": "How communities campaign for safer streets in general terms"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Vintage bikes",
+   "f": "Classic steel frames and restoration"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Bike design and innovation",
+   "f": "How bikes have evolved in shape and materials"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Review: culture month",
+   "f": "A recap of cycling around the world"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Riding in hilly regions",
+   "f": "Planning routes with steady climbs and safe descents"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Gearing for mountains",
+   "f": "Choosing easier gears for long, steep climbs"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Climbing mindset",
+   "f": "Staying calm and patient on long ascents"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Riding with a power meter",
+   "f": "Pacing by watts on climbs and flat roads"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Riding with heart rate",
+   "f": "Pacing by heart rate zones during rides"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Cycling apps and segments",
+   "f": "Comparing efforts on popular road sections for fun"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Riding with music or without",
+   "f": "Staying aware of traffic while enjoying rides"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Weekend adventures",
+   "f": "Planning overnight mini tours close to home"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Riding with your partner or family",
+   "f": "Choosing routes and paces that suit everyone"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Tandem bikes",
+   "f": "How riding a bicycle built for two works"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Recumbent bikes",
+   "f": "Laid-back bikes and their unique riding style"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Fixed-gear bikes",
+   "f": "Simplicity, urban style and riding without coasting"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Single-speed bikes",
+   "f": "Low-maintenance bikes for flat cities"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Fat bikes",
+   "f": "Very wide tyres for snow and sand"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Kids' bikes and balance bikes",
+   "f": "How children learn to ride with balance bikes"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Bike accessories worth having",
+   "f": "Mudguards, bells, mirrors and bottle cages"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Riding with a camera",
+   "f": "Mounting action cameras and filming rides"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Smart helmets and lights",
+   "f": "Integrated lights, indicators and crash detection"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "GPS bike computers",
+   "f": "Navigation, data screens and battery tips"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Comfort on long rides",
+   "f": "Changing hand positions and standing briefly to relieve pressure"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Riding in a new country",
+   "f": "Learning local road habits before your first ride abroad"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Review: variety month",
+   "f": "A recap of special bikes, gadgets and adventure ideas"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Your intermediate training week",
+   "f": "Designing a week with endurance, intervals and rest"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Your intermediate goal ride",
+   "f": "Planning a challenge like a sportive or a scenic 100 km"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Intermediate final review",
+   "f": "Celebrating your progress and preparing for the advanced path"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Welcome to advanced",
+   "f": "Performance, expedition riding and expert mechanics on the final stretch"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Functional threshold power",
+   "f": "What FTP means and how riders estimate it"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Testing your fitness",
+   "f": "Field tests and how to repeat them consistently"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Power-to-weight ratio",
+   "f": "Why watts per kilo matter on climbs"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Training stress and load",
+   "f": "How riders balance training load and recovery"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Advanced intervals",
+   "f": "VO2 max, threshold and over-under sessions"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Polarised training",
+   "f": "Mostly easy riding with some very hard sessions"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Sweet spot training",
+   "f": "Efforts just below threshold for efficient gains"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Training camps",
+   "f": "Concentrated training blocks in scenic places"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Tapering",
+   "f": "Reducing load before an important event"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Peaking for an event",
+   "f": "Timing your best form for a target day"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Recovery techniques",
+   "f": "Sleep, easy spins and relaxation for recovery"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Heart rate variability",
+   "f": "A general look at HRV as a recovery indicator"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Training with a coach",
+   "f": "What a coach offers and how to work together"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Analysing ride data",
+   "f": "Reading graphs of power, heart rate and speed"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Review: performance month",
+   "f": "A recap of advanced training concepts"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Aerodynamics basics",
+   "f": "Why air resistance dominates at speed"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Aero position",
+   "f": "Lowering the torso and narrowing the arms"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Aero equipment",
+   "f": "Deep wheels, aero helmets and skinsuits"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Time trial basics",
+   "f": "Riding alone against the clock"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Time trial pacing",
+   "f": "Spreading effort evenly over the distance"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Climbing like a pro",
+   "f": "Pacing long climbs and using power targets"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Famous climbs",
+   "f": "Alpe d'Huez, Mont Ventoux, Stelvio and other legendary ascents"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Riding in the mountains",
+   "f": "Altitude, weather changes and long descents"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Heat and riding",
+   "f": "General precautions for hot-weather rides"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Cold and riding",
+   "f": "Layering strategies for very cold conditions"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Night and ultra rides",
+   "f": "Riding through the night on long events"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Ultra-distance cycling",
+   "f": "Events of 300 km and more, and how riders prepare"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Audax and brevets",
+   "f": "Self-supported long-distance rides with checkpoints"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Paris-Brest-Paris",
+   "f": "The famous 1,200 km randonnée and its traditions"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Review: speed and endurance",
+   "f": "Looking back at aero, climbing and ultra riding"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Racing basics",
+   "f": "Licences, categories and how amateur racing works"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Criteriums",
+   "f": "Short, fast circuit races with many laps"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Road race tactics",
+   "f": "Breakaways, attacks and conserving energy"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Team roles",
+   "f": "Leaders, domestiques, sprinters and climbers"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Reading a race",
+   "f": "Understanding what happens in a professional stage"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "The classics",
+   "f": "Monuments like Milan-San Remo, Tour of Flanders and Paris-Roubaix"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Jerseys and classifications",
+   "f": "Yellow, green, polka dot and white jerseys explained"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "World Championships",
+   "f": "The rainbow jersey and its tradition"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Olympic cycling",
+   "f": "Road, track, mountain bike and BMX events at the Olympics"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Hour record",
+   "f": "The history of riding as far as possible in one hour"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Gravel racing",
+   "f": "Long gravel events and their adventurous spirit"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Mountain bike racing",
+   "f": "Cross-country, enduro and downhill formats"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Cyclocross season",
+   "f": "Racing in mud during the colder months"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Watching races",
+   "f": "How fans follow races on the roadside and on screen"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Review: racing month",
+   "f": "A recap of racing formats and tactics"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Advanced bike fit",
+   "f": "Fine-tuning position for power and comfort"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Pedalling biomechanics",
+   "f": "How force is applied around the pedal stroke"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Crank length",
+   "f": "How crank length affects fit and pedalling"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Saddle setback and reach",
+   "f": "Balancing weight between saddle and bars"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Custom frames",
+   "f": "Why some riders choose made-to-measure bikes"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Frame geometry",
+   "f": "Stack, reach, head angle and how they affect handling"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Bike handling science",
+   "f": "How trail and wheelbase shape steering"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Tyre pressure science",
+   "f": "Rolling resistance, comfort and grip"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Wheel building basics",
+   "f": "Spokes, lacing patterns and tension"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Truing a wheel",
+   "f": "Small spoke adjustments to straighten a wheel"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Suspension tuning",
+   "f": "Rebound, compression and service intervals"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Dropper posts",
+   "f": "How dropper posts help on technical trails"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Electronic groupset setup",
+   "f": "Pairing, trimming and battery care"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "E-bike maintenance",
+   "f": "Battery care, motor checks and safe charging"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Review: advanced tech month",
+   "f": "A recap of geometry, wheels and suspension"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Expedition planning",
+   "f": "Planning a multi-week bike trip step by step"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Route research",
+   "f": "Finding water, food and shelter on remote routes"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Navigation devices",
+   "f": "GPS units, offline maps and backup plans"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Remote repairs",
+   "f": "Fixing problems far from a bike shop"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Spare parts for expeditions",
+   "f": "What to carry on long remote trips"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Riding solo safely",
+   "f": "Sharing plans, checking in and staying prepared"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Cycling across a country",
+   "f": "Famous coast-to-coast and border-to-border routes"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Silk Road by bike",
+   "f": "The appeal of long overland journeys across continents"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Cycling in deserts",
+   "f": "Water planning and heat management"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Cycling in high mountains",
+   "f": "Long climbs and high-altitude passes"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Island hopping by bike",
+   "f": "Combining ferries and cycling"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Cultural respect on tour",
+   "f": "Learning local customs and greetings while travelling"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Meeting locals by bike",
+   "f": "How bikes open doors to friendly encounters"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Documenting your journey",
+   "f": "Journals, photos and sharing your trip"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Review: expedition month",
+   "f": "A recap of planning and riding big adventures"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Leading group rides",
+   "f": "Planning routes, briefing riders and keeping the group together"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Teaching someone to ride",
+   "f": "Patient steps for adults and children"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Coaching basics",
+   "f": "Giving clear, positive feedback to fellow riders"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Organising a club ride",
+   "f": "Choosing pace groups and meeting points"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Volunteering at events",
+   "f": "Marshalling, feed stations and support roles"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Bike maintenance workshops",
+   "f": "Sharing skills with your community"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Cycling and accessibility",
+   "f": "Adaptive bikes and inclusive riding"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Cargo bikes",
+   "f": "Moving kids, groceries and goods by bike"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Bike commuting at scale",
+   "f": "How cities design networks for many riders"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Cycling and urban design",
+   "f": "Protected lanes, bike bridges and quiet streets"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Bike tourism",
+   "f": "How regions welcome cycling travellers"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Bike collecting",
+   "f": "Classic bikes, components and their stories"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Cycling literature and films",
+   "f": "Books and films that celebrate bikes"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Cycling vocabulary",
+   "f": "Rider slang like bonk, granny gear and KOM"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Review: community month",
+   "f": "A recap of leading, teaching and sharing cycling"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Your advanced training plan",
+   "f": "Designing a 12-week plan toward a goal"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Your season planner",
+   "f": "Planning events, rest and fun rides across a year"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Nutrition planning for events",
+   "f": "General fuelling strategies for event days"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Mental strength",
+   "f": "Focus, motivation and enjoying hard efforts"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Visualisation for riders",
+   "f": "Mentally rehearsing a ride or race"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Handling setbacks",
+   "f": "Coming back after time off with patience"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Long-term riding",
+   "f": "Staying active and joyful on the bike for decades"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Your dream route",
+   "f": "Planning the ride you have always wanted to do"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Final skills check",
+   "f": "Revisiting key handling skills from the year"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Final maintenance check",
+   "f": "Giving your bike a complete once-over"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Advanced group etiquette",
+   "f": "Smooth rotations, clear calls and a no-drop mindset"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Mass start skills",
+   "f": "Staying calm and safe in big event starts"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Feed zones and bottles",
+   "f": "Grabbing bottles and food on the move safely"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Riding on unfamiliar roads",
+   "f": "Reading the road ahead and adapting quickly"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Weather forecasting for riders",
+   "f": "Wind, rain and temperature in ride planning"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Choosing a goal event",
+   "f": "Picking an event that excites and motivates you"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Event day routine",
+   "f": "Preparing kit, breakfast and warm-up on the big day"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "After the event",
+   "f": "Recovery, reflection and celebrating your achievement"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Riding for joy",
+   "f": "Rediscovering playful rides without data or goals"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Mentoring a new rider",
+   "f": "Sharing tips and encouragement with a beginner"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Final review: advanced path",
+   "f": "A recap of performance, adventure and community"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Your cycling story",
+   "f": "Reflecting on how your riding has changed this year"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Year in review",
+   "f": "Looking back on 365 days of cycling"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "The road continues",
+   "f": "Ideas to keep exploring on two wheels"
+  }
+ ]
+}

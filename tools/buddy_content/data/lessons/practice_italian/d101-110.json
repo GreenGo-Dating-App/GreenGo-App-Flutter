@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 101,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Passato prossimo or imperfetto?",
+     "g": "Choose between a completed action and the background in the past.",
+     "p": [
+      "Passato prossimo: a finished event, often sudden or counted: è squillato il telefono, sono uscito tre volte.",
+      "Imperfetto: the background, what was going on, a description or a habit: leggevo, pioveva, ero stanco.",
+      "Together with mentre: mentre leggevo, è squillato il telefono. The long action is imperfetto, the interruption is passato prossimo."
+     ],
+     "q": "What were you doing yesterday when someone called or wrote to you?",
+     "c": "Write three sentences with mentre + imperfetto and an interruption in the passato prossimo."
+    },
+    "de": {
+     "t": "Passato prossimo oder imperfetto?",
+     "g": "Du wählst zwischen abgeschlossener Handlung und Hintergrund in der Vergangenheit.",
+     "p": [
+      "Passato prossimo: ein abgeschlossenes Ereignis, oft plötzlich oder gezählt: è squillato il telefono, sono uscito tre volte.",
+      "Imperfetto: der Hintergrund, was gerade lief, Beschreibung oder Gewohnheit: leggevo, pioveva, ero stanco.",
+      "Zusammen mit mentre: mentre leggevo, è squillato il telefono. Die lange Handlung im imperfetto, die Unterbrechung im passato prossimo."
+     ],
+     "q": "Was hast du gestern gerade gemacht, als dich jemand angerufen oder dir geschrieben hat?",
+     "c": "Schreib drei Sätze mit mentre + imperfetto und einer Unterbrechung im passato prossimo."
+    },
+    "es": {
+     "t": "¿Passato prossimo o imperfetto?",
+     "g": "Elegir entre una acción terminada y el fondo en el pasado.",
+     "p": [
+      "Passato prossimo: un hecho terminado, a menudo repentino o contado: è squillato il telefono, sono uscito tre volte.",
+      "Imperfetto: el fondo, lo que estaba pasando, una descripción o un hábito: leggevo, pioveva, ero stanco.",
+      "Juntos con mentre: mentre leggevo, è squillato il telefono. La acción larga en imperfetto, la interrupción en passato prossimo."
+     ],
+     "q": "¿Qué estabas haciendo ayer cuando alguien te llamó o te escribió?",
+     "c": "Escribe tres frases con mentre + imperfetto y una interrupción en passato prossimo."
+    },
+    "fr": {
+     "t": "Passato prossimo ou imperfetto ?",
+     "g": "Choisir entre une action terminée et l'arrière-plan au passé.",
+     "p": [
+      "Passato prossimo : un fait terminé, souvent soudain ou compté : è squillato il telefono, sono uscito tre volte.",
+      "Imperfetto : l'arrière-plan, ce qui se passait, une description ou une habitude : leggevo, pioveva, ero stanco.",
+      "Ensemble avec mentre : mentre leggevo, è squillato il telefono. L'action longue à l'imperfetto, l'interruption au passato prossimo."
+     ],
+     "q": "Que faisais-tu hier quand quelqu'un t'a appelé ou écrit ?",
+     "c": "Écris trois phrases avec mentre + imperfetto et une interruption au passato prossimo."
+    },
+    "it": {
+     "t": "Passato prossimo o imperfetto?",
+     "g": "Scegliere tra un'azione conclusa e lo sfondo nel passato.",
+     "p": [
+      "Passato prossimo: un fatto concluso, spesso improvviso o contato: è squillato il telefono, sono uscito tre volte.",
+      "Imperfetto: lo sfondo, ciò che succedeva, una descrizione o un'abitudine: leggevo, pioveva, ero stanco.",
+      "Insieme con mentre: mentre leggevo, è squillato il telefono. L'azione lunga all'imperfetto, l'interruzione al passato prossimo."
+     ],
+     "q": "Che cosa facevi ieri quando qualcuno ti ha chiamato o scritto?",
+     "c": "Scrivi tre frasi con mentre + imperfetto e un'interruzione al passato prossimo."
+    },
+    "pt": {
+     "t": "Passato prossimo ou imperfetto?",
+     "g": "Escolher entre uma ação terminada e o fundo no passado.",
+     "p": [
+      "Passato prossimo: um facto terminado, muitas vezes súbito ou contado: è squillato il telefono, sono uscito tre volte.",
+      "Imperfetto: o fundo, o que estava a acontecer, uma descrição ou um hábito: leggevo, pioveva, ero stanco.",
+      "Juntos com mentre: mentre leggevo, è squillato il telefono. A ação longa no imperfetto, a interrupção no passato prossimo."
+     ],
+     "q": "O que estavas a fazer ontem quando alguém te ligou ou escreveu?",
+     "c": "Escreve três frases com mentre + imperfetto e uma interrupção no passato prossimo."
+    },
+    "pt_BR": {
+     "t": "Passato prossimo ou imperfetto?",
+     "g": "Escolher entre uma ação concluída e o fundo no passado.",
+     "p": [
+      "Passato prossimo: um fato concluído, muitas vezes repentino ou contado: è squillato il telefono, sono uscito tre volte.",
+      "Imperfetto: o fundo, o que estava acontecendo, uma descrição ou um hábito: leggevo, pioveva, ero stanco.",
+      "Juntos com mentre: mentre leggevo, è squillato il telefono. A ação longa no imperfetto, a interrupção no passato prossimo."
+     ],
+     "q": "O que você estava fazendo ontem quando alguém ligou ou escreveu para você?",
+     "c": "Escreva três frases com mentre + imperfetto e uma interrupção no passato prossimo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mentre",
+      "ex": "Mentre cucinavo, è arrivata Paola."
+     },
+     {
+      "w": "all'improvviso",
+      "ex": "All'improvviso è andata via la luce."
+     },
+     {
+      "w": "è squillato",
+      "ex": "Mentre dormivo, è squillato il telefono."
+     },
+     {
+      "w": "pioveva",
+      "ex": "Pioveva, quindi siamo rimasti a casa."
+     },
+     {
+      "w": "una volta",
+      "ex": "Una volta ho visto un attore famoso in treno."
+     },
+     {
+      "w": "succedere",
+      "ex": "Che cosa è successo mentre ero fuori?"
+     }
+    ],
+    "gram": "Imperfetto per lo sfondo e le azioni in corso, passato prossimo per i fatti conclusi: mentre leggevo (sfondo), è arrivato (fatto)."
+   }
+  },
+  {
+   "d": 102,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Childhood memories",
+     "g": "Talk about where you lived and what you loved as a child.",
+     "p": [
+      "Set the scene: quando ero piccolo abitavo in una casa vicino al mare. Use the imperfetto for places and habits.",
+      "What you loved: mi piaceva il gelato, mi piacevano i cartoni animati, il mio gioco preferito era...",
+      "Add one special event in the passato prossimo: un'estate siamo andati in campeggio e ho imparato a nuotare."
+     ],
+     "q": "Where did you live as a child, and what was your favourite game?",
+     "c": "Write a short childhood memory: three imperfetto sentences and one special event in the passato prossimo."
+    },
+    "de": {
+     "t": "Kindheitserinnerungen",
+     "g": "Du erzählst, wo du als Kind gewohnt hast und was du geliebt hast.",
+     "p": [
+      "Szene: quando ero piccolo abitavo in una casa vicino al mare. Imperfetto für Orte und Gewohnheiten.",
+      "Was du mochtest: mi piaceva il gelato, mi piacevano i cartoni animati, il mio gioco preferito era...",
+      "Dazu ein besonderes Ereignis im passato prossimo: un'estate siamo andati in campeggio e ho imparato a nuotare."
+     ],
+     "q": "Wo hast du als Kind gewohnt, und was war dein Lieblingsspiel?",
+     "c": "Schreib eine kurze Kindheitserinnerung: drei Sätze im imperfetto und ein Ereignis im passato prossimo."
+    },
+    "es": {
+     "t": "Recuerdos de la infancia",
+     "g": "Hablar de dónde vivías y qué te encantaba de pequeño.",
+     "p": [
+      "La escena: quando ero piccolo abitavo in una casa vicino al mare. Imperfetto para lugares y costumbres.",
+      "Lo que te gustaba: mi piaceva il gelato, mi piacevano i cartoni animati, il mio gioco preferito era...",
+      "Un hecho especial en passato prossimo: un'estate siamo andati in campeggio e ho imparato a nuotare."
+     ],
+     "q": "¿Dónde vivías de pequeño y cuál era tu juego favorito?",
+     "c": "Escribe un recuerdo corto: tres frases en imperfetto y un hecho especial en passato prossimo."
+    },
+    "fr": {
+     "t": "Souvenirs d'enfance",
+     "g": "Raconter où tu habitais et ce que tu aimais enfant.",
+     "p": [
+      "Le décor : quando ero piccolo abitavo in una casa vicino al mare. L'imperfetto pour les lieux et les habitudes.",
+      "Ce que tu aimais : mi piaceva il gelato, mi piacevano i cartoni animati, il mio gioco preferito era...",
+      "Un moment spécial au passato prossimo : un'estate siamo andati in campeggio e ho imparato a nuotare."
+     ],
+     "q": "Où habitais-tu enfant, et quel était ton jeu préféré ?",
+     "c": "Écris un court souvenir : trois phrases à l'imperfetto et un moment spécial au passato prossimo."
+    },
+    "it": {
+     "t": "Ricordi d'infanzia",
+     "g": "Raccontare dove abitavi e che cosa amavi da piccolo.",
+     "p": [
+      "La scena: quando ero piccolo abitavo in una casa vicino al mare. Imperfetto per luoghi e abitudini.",
+      "Quello che amavi: mi piaceva il gelato, mi piacevano i cartoni animati, il mio gioco preferito era...",
+      "Un fatto speciale al passato prossimo: un'estate siamo andati in campeggio e ho imparato a nuotare."
+     ],
+     "q": "Dove abitavi da piccolo o piccola, e qual era il tuo gioco preferito?",
+     "c": "Scrivi un breve ricordo: tre frasi all'imperfetto e un fatto speciale al passato prossimo."
+    },
+    "pt": {
+     "t": "Memórias de infância",
+     "g": "Falar de onde vivias e do que adoravas em criança.",
+     "p": [
+      "O cenário: quando ero piccolo abitavo in una casa vicino al mare. Imperfetto para lugares e hábitos.",
+      "O que adoravas: mi piaceva il gelato, mi piacevano i cartoni animati, il mio gioco preferito era...",
+      "Um momento especial no passato prossimo: un'estate siamo andati in campeggio e ho imparato a nuotare."
+     ],
+     "q": "Onde vivias em criança, e qual era o teu jogo preferido?",
+     "c": "Escreve uma memória curta: três frases no imperfetto e um momento especial no passato prossimo."
+    },
+    "pt_BR": {
+     "t": "Lembranças de infância",
+     "g": "Falar de onde você morava e do que adorava quando criança.",
+     "p": [
+      "O cenário: quando ero piccolo abitavo in una casa vicino al mare. Imperfetto para lugares e hábitos.",
+      "O que você adorava: mi piaceva il gelato, mi piacevano i cartoni animati, il mio gioco preferito era...",
+      "Um momento especial no passato prossimo: un'estate siamo andati in campeggio e ho imparato a nuotare."
+     ],
+     "q": "Onde você morava quando criança, e qual era sua brincadeira preferida?",
+     "c": "Escreva uma lembrança curta: três frases no imperfetto e um momento especial no passato prossimo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quando ero piccolo",
+      "ex": "Quando ero piccolo abitavo in campagna."
+     },
+     {
+      "w": "abitavo",
+      "ex": "Abitavo in un paesino vicino a Lecce."
+     },
+     {
+      "w": "mi piaceva",
+      "ex": "Mi piaceva tanto disegnare."
+     },
+     {
+      "w": "i cartoni animati",
+      "ex": "La mattina guardavo i cartoni animati."
+     },
+     {
+      "w": "il gioco preferito",
+      "ex": "Il mio gioco preferito era nascondino."
+     },
+     {
+      "w": "ho imparato a",
+      "ex": "A sei anni ho imparato a nuotare."
+     }
+    ],
+    "gram": "Ricordi: imperfetto per luoghi, abitudini e gusti (abitavo, mi piaceva); passato prossimo per un fatto unico (ho imparato)."
+   }
+  },
+  {
+   "d": 103,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Stare + gerundio",
+     "g": "Describe actions happening right now or at a moment in the past.",
+     "p": [
+      "Form the gerund: -are becomes -ando (parlando), -ere and -ire become -endo (leggendo, dormendo). Fare gives facendo.",
+      "Present progressive: stare in the present + gerund: sto mangiando, stai lavorando?, stiamo arrivando!",
+      "Past progressive: stare in the imperfetto + gerund: stavo uscendo quando hai chiamato."
+     ],
+     "q": "Che cosa stai facendo in questo momento, oltre a parlare con me?",
+     "c": "Look around and describe five people or things with stare + gerundio: il gatto sta dormendo..."
+    },
+    "de": {
+     "t": "Stare + gerundio",
+     "g": "Du beschreibst Handlungen, die gerade jetzt oder in einem Moment der Vergangenheit ablaufen.",
+     "p": [
+      "Gerundium: -are wird -ando (parlando), -ere und -ire werden -endo (leggendo, dormendo). Fare ergibt facendo.",
+      "Verlaufsform Gegenwart: stare im Präsens + Gerundium: sto mangiando, stai lavorando?, stiamo arrivando!",
+      "Verlaufsform Vergangenheit: stare im imperfetto + Gerundium: stavo uscendo quando hai chiamato."
+     ],
+     "q": "Che cosa stai facendo in questo momento, außer mit mir zu sprechen?",
+     "c": "Schau dich um und beschreib fünf Personen oder Dinge mit stare + gerundio: il gatto sta dormendo..."
+    },
+    "es": {
+     "t": "Stare + gerundio",
+     "g": "Describir acciones en curso ahora o en un momento del pasado.",
+     "p": [
+      "El gerundio: -are pasa a -ando (parlando), -ere e -ire a -endo (leggendo, dormendo). Fare da facendo.",
+      "Presente continuo: stare en presente + gerundio: sto mangiando, stai lavorando?, stiamo arrivando!",
+      "Pasado continuo: stare en imperfetto + gerundio: stavo uscendo quando hai chiamato."
+     ],
+     "q": "Che cosa stai facendo in questo momento, además de hablar conmigo?",
+     "c": "Mira a tu alrededor y describe cinco personas o cosas con stare + gerundio: il gatto sta dormendo..."
+    },
+    "fr": {
+     "t": "Stare + gérondif",
+     "g": "Décrire des actions en cours maintenant ou à un moment du passé.",
+     "p": [
+      "Le gérondif : -are devient -ando (parlando), -ere et -ire deviennent -endo (leggendo, dormendo). Fare donne facendo.",
+      "En train de, au présent : stare au présent + gérondif : sto mangiando, stai lavorando ?, stiamo arrivando !",
+      "Au passé : stare à l'imperfetto + gérondif : stavo uscendo quando hai chiamato."
+     ],
+     "q": "Che cosa stai facendo in questo momento, à part parler avec moi ?",
+     "c": "Regarde autour de toi et décris cinq personnes ou choses avec stare + gérondif : il gatto sta dormendo..."
+    },
+    "it": {
+     "t": "Stare + gerundio",
+     "g": "Descrivere azioni in corso adesso o in un momento del passato.",
+     "p": [
+      "Il gerundio: -are diventa -ando (parlando), -ere e -ire diventano -endo (leggendo, dormendo). Fare fa facendo.",
+      "Azione in corso nel presente: stare al presente + gerundio: sto mangiando, stai lavorando?, stiamo arrivando!",
+      "Azione in corso nel passato: stare all'imperfetto + gerundio: stavo uscendo quando hai chiamato."
+     ],
+     "q": "Che cosa stai facendo in questo momento, oltre a parlare con me?",
+     "c": "Guardati intorno e descrivi cinque persone o cose con stare + gerundio: il gatto sta dormendo..."
+    },
+    "pt": {
+     "t": "Stare + gerundio",
+     "g": "Descrever ações a decorrer agora ou num momento do passado.",
+     "p": [
+      "O gerúndio: -are passa a -ando (parlando), -ere e -ire a -endo (leggendo, dormendo). Fare dá facendo.",
+      "Presente contínuo: stare no presente + gerúndio: sto mangiando, stai lavorando?, stiamo arrivando!",
+      "Passado contínuo: stare no imperfetto + gerúndio: stavo uscendo quando hai chiamato."
+     ],
+     "q": "Che cosa stai facendo in questo momento, além de falar comigo?",
+     "c": "Olha à tua volta e descreve cinco pessoas ou coisas com stare + gerúndio: il gatto sta dormendo..."
+    },
+    "pt_BR": {
+     "t": "Stare + gerundio",
+     "g": "Descrever ações acontecendo agora ou num momento do passado.",
+     "p": [
+      "O gerúndio: -are vira -ando (parlando), -ere e -ire viram -endo (leggendo, dormendo). Fare dá facendo.",
+      "Presente contínuo: stare no presente + gerúndio: sto mangiando, stai lavorando?, stiamo arrivando!",
+      "Passado contínuo: stare no imperfetto + gerúndio: stavo uscendo quando hai chiamato."
+     ],
+     "q": "Che cosa stai facendo in questo momento, além de conversar comigo?",
+     "c": "Olhe ao redor e descreva cinco pessoas ou coisas com stare + gerúndio: il gatto sta dormendo..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sto mangiando",
+      "ex": "Non posso parlare, sto mangiando."
+     },
+     {
+      "w": "stai lavorando?",
+      "ex": "Stai lavorando o sei libero?"
+     },
+     {
+      "w": "sta piovendo",
+      "ex": "Prendi l'ombrello, sta piovendo."
+     },
+     {
+      "w": "stiamo arrivando",
+      "ex": "Stiamo arrivando, cinque minuti!"
+     },
+     {
+      "w": "stavo uscendo",
+      "ex": "Stavo uscendo quando mi hai chiamato."
+     },
+     {
+      "w": "facendo",
+      "ex": "Che cosa stavi facendo alle nove?"
+     }
+    ],
+    "gram": "Stare + gerundio (-ando, -endo) per un'azione in corso: sto leggendo; nel passato stare all'imperfetto: stavo dormendo."
+   }
+  },
+  {
+   "d": 104,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Indirect object pronouns",
+     "g": "Replace a noun with to after verbs like telefonare, dare and scrivere.",
+     "p": [
+      "Indirect pronouns answer a chi? (to whom): mi, ti, gli (to him), le (to her), ci, vi, gli (to them).",
+      "Telefono a Marco becomes gli telefono. Scrivo a Laura becomes le scrivo. Le with a capital is formal: Le dico.",
+      "Common verbs: dare, dire, scrivere, telefonare, regalare, rispondere, chiedere. Mi dai il sale? Gli rispondo domani."
+     ],
+     "q": "What do you usually give to your best friend for their birthday? Answer with gli or le regalo...",
+     "c": "Rewrite five sentences replacing a + person with mi, ti, gli, le, ci or vi."
+    },
+    "de": {
+     "t": "Indirekte Objektpronomen",
+     "g": "Du ersetzt ein Nomen mit a nach Verben wie telefonare, dare und scrivere.",
+     "p": [
+      "Indirekte Pronomen antworten auf a chi? (wem): mi, ti, gli (ihm), le (ihr), ci, vi, gli (ihnen).",
+      "Telefono a Marco wird gli telefono. Scrivo a Laura wird le scrivo. Le groß geschrieben ist höflich: Le dico.",
+      "Häufige Verben: dare, dire, scrivere, telefonare, regalare, rispondere, chiedere. Mi dai il sale? Gli rispondo domani."
+     ],
+     "q": "Was schenkst du deinem besten Freund oder deiner besten Freundin zum Geburtstag? Antworte mit gli oder le regalo...",
+     "c": "Schreib fünf Sätze um und ersetze a + Person durch mi, ti, gli, le, ci oder vi."
+    },
+    "es": {
+     "t": "Pronombres de objeto indirecto",
+     "g": "Sustituir un nombre con a después de verbos como telefonare, dare y scrivere.",
+     "p": [
+      "Los indirectos responden a a chi? (a quién): mi, ti, gli (a él), le (a ella), ci, vi, gli (a ellos).",
+      "Telefono a Marco pasa a gli telefono. Scrivo a Laura pasa a le scrivo. Le en mayúscula es formal: Le dico.",
+      "Verbos frecuentes: dare, dire, scrivere, telefonare, regalare, rispondere, chiedere. Mi dai il sale? Gli rispondo domani."
+     ],
+     "q": "¿Qué le regalas normalmente a tu mejor amigo o amiga por su cumpleaños? Responde con gli o le regalo...",
+     "c": "Reescribe cinco frases cambiando a + persona por mi, ti, gli, le, ci o vi."
+    },
+    "fr": {
+     "t": "Les pronoms COI",
+     "g": "Remplacer un nom introduit par a après des verbes comme telefonare, dare et scrivere.",
+     "p": [
+      "Les COI répondent à a chi ? (à qui) : mi, ti, gli (lui, masculin), le (lui, féminin), ci, vi, gli (leur).",
+      "Telefono a Marco devient gli telefono. Scrivo a Laura devient le scrivo. Le avec majuscule est formel : Le dico.",
+      "Verbes courants : dare, dire, scrivere, telefonare, regalare, rispondere, chiedere. Mi dai il sale ? Gli rispondo domani."
+     ],
+     "q": "Qu'offres-tu d'habitude à ton meilleur ami ou ta meilleure amie pour son anniversaire ? Réponds avec gli ou le regalo...",
+     "c": "Réécris cinq phrases en remplaçant a + personne par mi, ti, gli, le, ci ou vi."
+    },
+    "it": {
+     "t": "I pronomi indiretti",
+     "g": "Sostituire a + persona dopo verbi come telefonare, dare e scrivere.",
+     "p": [
+      "I pronomi indiretti rispondono a a chi?: mi, ti, gli (a lui), le (a lei), ci, vi, gli (a loro).",
+      "Telefono a Marco diventa gli telefono. Scrivo a Laura diventa le scrivo. Le maiuscolo è formale: Le dico.",
+      "Verbi frequenti: dare, dire, scrivere, telefonare, regalare, rispondere, chiedere. Mi dai il sale? Gli rispondo domani."
+     ],
+     "q": "Che cosa regali di solito al tuo migliore amico o alla tua migliore amica? Rispondi con gli o le regalo...",
+     "c": "Riscrivi cinque frasi sostituendo a + persona con mi, ti, gli, le, ci o vi."
+    },
+    "pt": {
+     "t": "Pronomes de objeto indireto",
+     "g": "Substituir um nome com a depois de verbos como telefonare, dare e scrivere.",
+     "p": [
+      "Os indiretos respondem a a chi? (a quem): mi, ti, gli (a ele), le (a ela), ci, vi, gli (a eles).",
+      "Telefono a Marco passa a gli telefono. Scrivo a Laura passa a le scrivo. Le com maiúscula é formal: Le dico.",
+      "Verbos frequentes: dare, dire, scrivere, telefonare, regalare, rispondere, chiedere. Mi dai il sale? Gli rispondo domani."
+     ],
+     "q": "O que costumas oferecer ao teu melhor amigo ou amiga no aniversário? Responde com gli ou le regalo...",
+     "c": "Reescreve cinco frases trocando a + pessoa por mi, ti, gli, le, ci ou vi."
+    },
+    "pt_BR": {
+     "t": "Pronomes de objeto indireto",
+     "g": "Substituir um nome com a depois de verbos como telefonare, dare e scrivere.",
+     "p": [
+      "Os indiretos respondem a a chi? (para quem): mi, ti, gli (para ele), le (para ela), ci, vi, gli (para eles).",
+      "Telefono a Marco vira gli telefono. Scrivo a Laura vira le scrivo. Le com maiúscula é formal: Le dico.",
+      "Verbos frequentes: dare, dire, scrivere, telefonare, regalare, rispondere, chiedere. Mi dai il sale? Gli rispondo domani."
+     ],
+     "q": "O que você costuma dar de presente ao seu melhor amigo ou amiga no aniversário? Responda com gli ou le regalo...",
+     "c": "Reescreva cinco frases trocando a + pessoa por mi, ti, gli, le, ci ou vi."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gli telefono",
+      "ex": "Marco è malato, gli telefono stasera."
+     },
+     {
+      "w": "le scrivo",
+      "ex": "Laura è a Parigi, le scrivo una mail."
+     },
+     {
+      "w": "mi dai...?",
+      "ex": "Mi dai il tuo numero?"
+     },
+     {
+      "w": "ti dico",
+      "ex": "Ti dico un segreto."
+     },
+     {
+      "w": "ci regalano",
+      "ex": "I nonni ci regalano sempre dei libri."
+     },
+     {
+      "w": "Le chiedo scusa",
+      "ex": "Signora, Le chiedo scusa per il ritardo."
+     }
+    ],
+    "gram": "Pronomi indiretti (a chi?): mi, ti, gli, le, Le, ci, vi, gli; prima del verbo: gli telefono, le scrivo."
+   }
+  },
+  {
+   "d": 105,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Piacere in all tenses",
+     "g": "Use piacere correctly in the present, past and imperfetto.",
+     "p": [
+      "Remember: the thing liked is the subject. Mi piace il film, mi piacciono i film. Gli piace, le piace, ci piace.",
+      "Passato prossimo takes essere and agrees with the thing: mi è piaciuto il film, mi è piaciuta la pizza, mi sono piaciuti i musei.",
+      "Imperfetto for past tastes: da piccolo mi piaceva il latte, ti piacevano i cartoni animati?"
+     ],
+     "q": "Ti è piaciuto l'ultimo film che hai visto? Why or why not?",
+     "c": "Write six sentences with piacere: two in the present, two in the passato prossimo and two in the imperfetto."
+    },
+    "de": {
+     "t": "Piacere in allen Zeiten",
+     "g": "Du benutzt piacere richtig im Präsens, passato prossimo und imperfetto.",
+     "p": [
+      "Denk dran: Das, was gefällt, ist das Subjekt. Mi piace il film, mi piacciono i film. Gli piace, le piace, ci piace.",
+      "Passato prossimo mit essere, angepasst an die Sache: mi è piaciuto il film, mi è piaciuta la pizza, mi sono piaciuti i musei.",
+      "Imperfetto für frühere Vorlieben: da piccolo mi piaceva il latte, ti piacevano i cartoni animati?"
+     ],
+     "q": "Ti è piaciuto der letzte Film, den du gesehen hast? Warum oder warum nicht?",
+     "c": "Schreib sechs Sätze mit piacere: zwei im Präsens, zwei im passato prossimo, zwei im imperfetto."
+    },
+    "es": {
+     "t": "Piacere en todos los tiempos",
+     "g": "Usar bien piacere en presente, passato prossimo e imperfetto.",
+     "p": [
+      "Recuerda: lo que gusta es el sujeto. Mi piace il film, mi piacciono i film. Gli piace, le piace, ci piace.",
+      "El passato prossimo va con essere y concuerda con la cosa: mi è piaciuto il film, mi è piaciuta la pizza, mi sono piaciuti i musei.",
+      "Imperfetto para gustos del pasado: da piccolo mi piaceva il latte, ti piacevano i cartoni animati?"
+     ],
+     "q": "Ti è piaciuto la última película que viste? ¿Por qué sí o por qué no?",
+     "c": "Escribe seis frases con piacere: dos en presente, dos en passato prossimo y dos en imperfetto."
+    },
+    "fr": {
+     "t": "Piacere à tous les temps",
+     "g": "Employer piacere au présent, au passato prossimo et à l'imperfetto.",
+     "p": [
+      "Rappel : ce qui plaît est le sujet. Mi piace il film, mi piacciono i film. Gli piace, le piace, ci piace.",
+      "Le passato prossimo prend essere et s'accorde avec la chose : mi è piaciuto il film, mi è piaciuta la pizza, mi sono piaciuti i musei.",
+      "L'imperfetto pour les goûts d'avant : da piccolo mi piaceva il latte, ti piacevano i cartoni animati ?"
+     ],
+     "q": "Ti è piaciuto le dernier film que tu as vu ? Pourquoi ?",
+     "c": "Écris six phrases avec piacere : deux au présent, deux au passato prossimo et deux à l'imperfetto."
+    },
+    "it": {
+     "t": "Piacere in tutti i tempi",
+     "g": "Usare bene piacere al presente, al passato prossimo e all'imperfetto.",
+     "p": [
+      "Ricorda: la cosa che piace è il soggetto. Mi piace il film, mi piacciono i film. Gli piace, le piace, ci piace.",
+      "Il passato prossimo vuole essere e si accorda con la cosa: mi è piaciuto il film, mi è piaciuta la pizza, mi sono piaciuti i musei.",
+      "L'imperfetto per i gusti del passato: da piccolo mi piaceva il latte, ti piacevano i cartoni animati?"
+     ],
+     "q": "Ti è piaciuto l'ultimo film che hai visto? Perché sì o perché no?",
+     "c": "Scrivi sei frasi con piacere: due al presente, due al passato prossimo e due all'imperfetto."
+    },
+    "pt": {
+     "t": "Piacere em todos os tempos",
+     "g": "Usar bem piacere no presente, no passato prossimo e no imperfetto.",
+     "p": [
+      "Lembra-te: a coisa de que se gosta é o sujeito. Mi piace il film, mi piacciono i film. Gli piace, le piace, ci piace.",
+      "O passato prossimo leva essere e concorda com a coisa: mi è piaciuto il film, mi è piaciuta la pizza, mi sono piaciuti i musei.",
+      "Imperfetto para gostos do passado: da piccolo mi piaceva il latte, ti piacevano i cartoni animati?"
+     ],
+     "q": "Ti è piaciuto o último filme que viste? Porquê?",
+     "c": "Escreve seis frases com piacere: duas no presente, duas no passato prossimo e duas no imperfetto."
+    },
+    "pt_BR": {
+     "t": "Piacere em todos os tempos",
+     "g": "Usar bem piacere no presente, no passato prossimo e no imperfetto.",
+     "p": [
+      "Lembre: a coisa de que se gosta é o sujeito. Mi piace il film, mi piacciono i film. Gli piace, le piace, ci piace.",
+      "O passato prossimo pede essere e concorda com a coisa: mi è piaciuto il film, mi è piaciuta la pizza, mi sono piaciuti i musei.",
+      "Imperfetto para gostos do passado: da piccolo mi piaceva il latte, ti piacevano i cartoni animati?"
+     ],
+     "q": "Ti è piaciuto o último filme que você viu? Por quê?",
+     "c": "Escreva seis frases com piacere: duas no presente, duas no passato prossimo e duas no imperfetto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi è piaciuto",
+      "ex": "Il concerto mi è piaciuto moltissimo."
+     },
+     {
+      "w": "mi è piaciuta",
+      "ex": "La tua torta mi è piaciuta tanto."
+     },
+     {
+      "w": "ci sono piaciuti",
+      "ex": "I musei di Firenze ci sono piaciuti."
+     },
+     {
+      "w": "ti piaceva",
+      "ex": "Da piccolo ti piaceva la scuola?"
+     },
+     {
+      "w": "gli piacciono",
+      "ex": "A Paolo piacciono i gialli."
+     },
+     {
+      "w": "non mi è piaciuto",
+      "ex": "Il finale non mi è piaciuto per niente."
+     }
+    ],
+    "gram": "Piacere: la cosa è il soggetto; al passato prossimo con essere e accordo (mi è piaciuta la città); all'imperfetto mi piaceva/piacevano."
+   }
+  },
+  {
+   "d": 106,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Other verbs like piacere",
+     "g": "Use mancare, servire, sembrare and interessare the way you use piacere.",
+     "p": [
+      "The person goes in the indirect pronoun, the thing is the subject: mi manca casa, mi mancano i miei amici.",
+      "Servire means to need: mi serve aiuto, ti servono le chiavi? Sembrare means to seem: mi sembra una buona idea.",
+      "Interessare: mi interessa la storia, ci interessano le lingue. Past with essere: mi è mancata molto la mia famiglia."
+     ],
+     "q": "What do you miss most when you travel? Answer with mi manca or mi mancano...",
+     "c": "Write one sentence each with mancare, servire, sembrare and interessare about your life."
+    },
+    "de": {
+     "t": "Weitere Verben wie piacere",
+     "g": "Du benutzt mancare, servire, sembrare und interessare wie piacere.",
+     "p": [
+      "Die Person steht im indirekten Pronomen, die Sache ist Subjekt: mi manca casa, mi mancano i miei amici.",
+      "Servire heißt brauchen: mi serve aiuto, ti servono le chiavi? Sembrare heißt scheinen: mi sembra una buona idea.",
+      "Interessare: mi interessa la storia, ci interessano le lingue. Vergangenheit mit essere: mi è mancata molto la mia famiglia."
+     ],
+     "q": "Was vermisst du am meisten, wenn du reist? Antworte mit mi manca oder mi mancano...",
+     "c": "Schreib je einen Satz mit mancare, servire, sembrare und interessare über dein Leben."
+    },
+    "es": {
+     "t": "Otros verbos como piacere",
+     "g": "Usar mancare, servire, sembrare e interessare igual que piacere.",
+     "p": [
+      "La persona va en el pronombre indirecto y la cosa es el sujeto: mi manca casa, mi mancano i miei amici.",
+      "Servire significa necesitar: mi serve aiuto, ti servono le chiavi? Sembrare es parecer: mi sembra una buona idea.",
+      "Interessare: mi interessa la storia, ci interessano le lingue. Pasado con essere: mi è mancata molto la mia famiglia."
+     ],
+     "q": "¿Qué echas más de menos cuando viajas? Responde con mi manca o mi mancano...",
+     "c": "Escribe una frase con mancare, servire, sembrare e interessare sobre tu vida."
+    },
+    "fr": {
+     "t": "D'autres verbes comme piacere",
+     "g": "Utiliser mancare, servire, sembrare et interessare comme piacere.",
+     "p": [
+      "La personne est le pronom COI, la chose est le sujet : mi manca casa, mi mancano i miei amici.",
+      "Servire veut dire avoir besoin : mi serve aiuto, ti servono le chiavi ? Sembrare veut dire sembler : mi sembra una buona idea.",
+      "Interessare : mi interessa la storia, ci interessano le lingue. Au passé avec essere : mi è mancata molto la mia famiglia."
+     ],
+     "q": "Qu'est-ce qui te manque le plus en voyage ? Réponds avec mi manca ou mi mancano...",
+     "c": "Écris une phrase avec mancare, servire, sembrare et interessare sur ta vie."
+    },
+    "it": {
+     "t": "Altri verbi come piacere",
+     "g": "Usare mancare, servire, sembrare e interessare come piacere.",
+     "p": [
+      "La persona è il pronome indiretto, la cosa è il soggetto: mi manca casa, mi mancano i miei amici.",
+      "Servire = avere bisogno: mi serve aiuto, ti servono le chiavi? Sembrare: mi sembra una buona idea.",
+      "Interessare: mi interessa la storia, ci interessano le lingue. Al passato con essere: mi è mancata molto la mia famiglia."
+     ],
+     "q": "Che cosa ti manca di più quando viaggi? Rispondi con mi manca o mi mancano...",
+     "c": "Scrivi una frase con mancare, servire, sembrare e interessare sulla tua vita."
+    },
+    "pt": {
+     "t": "Outros verbos como piacere",
+     "g": "Usar mancare, servire, sembrare e interessare como piacere.",
+     "p": [
+      "A pessoa vai no pronome indireto e a coisa é o sujeito: mi manca casa, mi mancano i miei amici.",
+      "Servire quer dizer precisar: mi serve aiuto, ti servono le chiavi? Sembrare é parecer: mi sembra una buona idea.",
+      "Interessare: mi interessa la storia, ci interessano le lingue. Passado com essere: mi è mancata molto la mia famiglia."
+     ],
+     "q": "Do que tens mais saudades quando viajas? Responde com mi manca ou mi mancano...",
+     "c": "Escreve uma frase com mancare, servire, sembrare e interessare sobre a tua vida."
+    },
+    "pt_BR": {
+     "t": "Outros verbos como piacere",
+     "g": "Usar mancare, servire, sembrare e interessare como piacere.",
+     "p": [
+      "A pessoa vai no pronome indireto e a coisa é o sujeito: mi manca casa, mi mancano i miei amici.",
+      "Servire quer dizer precisar: mi serve aiuto, ti servono le chiavi? Sembrare é parecer: mi sembra una buona idea.",
+      "Interessare: mi interessa la storia, ci interessano le lingue. Passado com essere: mi è mancata molto la mia famiglia."
+     ],
+     "q": "Do que você mais sente falta quando viaja? Responda com mi manca ou mi mancano...",
+     "c": "Escreva uma frase com mancare, servire, sembrare e interessare sobre a sua vida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi manca",
+      "ex": "Mi manca il mare quando sono in città."
+     },
+     {
+      "w": "mi mancano",
+      "ex": "Mi mancano i miei amici di Roma."
+     },
+     {
+      "w": "mi serve",
+      "ex": "Mi serve una penna, ce l'hai?"
+     },
+     {
+      "w": "ti servono",
+      "ex": "Ti servono le chiavi della macchina?"
+     },
+     {
+      "w": "mi sembra",
+      "ex": "Mi sembra una buona idea."
+     },
+     {
+      "w": "mi interessa",
+      "ex": "Mi interessa molto l'arte moderna."
+     }
+    ],
+    "gram": "Mancare, servire, sembrare, interessare come piacere: pronome indiretto + verbo accordato con la cosa (mi mancano i libri)."
+   }
+  },
+  {
+   "d": 107,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: talking about the past",
+     "g": "Bring together everything you learned about the past.",
+     "p": [
+      "Passato prossimo with avere or essere for finished events; irregular participles like fatto, detto, preso.",
+      "Imperfetto for habits and descriptions; mentre + imperfetto when another action interrupts.",
+      "Stare + gerundio for actions in progress, and pronouns: lo, la, gli, le, mi piace, mi è piaciuto, mi manca."
+     ],
+     "q": "Tell me about a holiday you loved: where were you, what was it like and what did you do?",
+     "c": "Write a short story of eight sentences about a past holiday using both tenses and two pronouns."
+    },
+    "de": {
+     "t": "Rückblick: über die Vergangenheit sprechen",
+     "g": "Du verbindest alles, was du über die Vergangenheit gelernt hast.",
+     "p": [
+      "Passato prossimo mit avere oder essere für Abgeschlossenes; unregelmäßige Partizipien wie fatto, detto, preso.",
+      "Imperfetto für Gewohnheiten und Beschreibungen; mentre + imperfetto, wenn etwas dazwischenkommt.",
+      "Stare + gerundio für laufende Handlungen und Pronomen: lo, la, gli, le, mi piace, mi è piaciuto, mi manca."
+     ],
+     "q": "Erzähl mir von einem Urlaub, den du geliebt hast: Wo warst du, wie war es, was hast du gemacht?",
+     "c": "Schreib eine kurze Geschichte in acht Sätzen über einen Urlaub mit beiden Zeiten und zwei Pronomen."
+    },
+    "es": {
+     "t": "Repaso: hablar del pasado",
+     "g": "Juntar todo lo que has aprendido sobre el pasado.",
+     "p": [
+      "Passato prossimo con avere o essere para hechos terminados; participios irregulares como fatto, detto, preso.",
+      "Imperfetto para hábitos y descripciones; mentre + imperfetto cuando otra acción interrumpe.",
+      "Stare + gerundio para acciones en curso, y los pronombres: lo, la, gli, le, mi piace, mi è piaciuto, mi manca."
+     ],
+     "q": "Cuéntame unas vacaciones que te encantaron: ¿dónde estabas, cómo era y qué hiciste?",
+     "c": "Escribe una historia corta de ocho frases sobre unas vacaciones con los dos tiempos y dos pronombres."
+    },
+    "fr": {
+     "t": "Révision : parler du passé",
+     "g": "Rassembler tout ce que tu as appris sur le passé.",
+     "p": [
+      "Passato prossimo avec avere ou essere pour les faits terminés ; participes irréguliers comme fatto, detto, preso.",
+      "Imperfetto pour les habitudes et les descriptions ; mentre + imperfetto quand une autre action interrompt.",
+      "Stare + gérondif pour les actions en cours, et les pronoms : lo, la, gli, le, mi piace, mi è piaciuto, mi manca."
+     ],
+     "q": "Raconte-moi des vacances que tu as adorées : où étais-tu, comment c'était, qu'as-tu fait ?",
+     "c": "Écris une petite histoire de huit phrases sur des vacances avec les deux temps et deux pronoms."
+    },
+    "it": {
+     "t": "Ripasso: parlare del passato",
+     "g": "Mettere insieme tutto quello che hai imparato sul passato.",
+     "p": [
+      "Passato prossimo con avere o essere per i fatti conclusi; participi irregolari come fatto, detto, preso.",
+      "Imperfetto per abitudini e descrizioni; mentre + imperfetto quando un'altra azione interrompe.",
+      "Stare + gerundio per le azioni in corso, e i pronomi: lo, la, gli, le, mi piace, mi è piaciuto, mi manca."
+     ],
+     "q": "Raccontami una vacanza che hai amato: dov'eri, com'era e che cosa hai fatto?",
+     "c": "Scrivi una breve storia di otto frasi su una vacanza con i due tempi e due pronomi."
+    },
+    "pt": {
+     "t": "Revisão: falar do passado",
+     "g": "Juntar tudo o que aprendeste sobre o passado.",
+     "p": [
+      "Passato prossimo com avere ou essere para factos terminados; particípios irregulares como fatto, detto, preso.",
+      "Imperfetto para hábitos e descrições; mentre + imperfetto quando outra ação interrompe.",
+      "Stare + gerúndio para ações a decorrer, e os pronomes: lo, la, gli, le, mi piace, mi è piaciuto, mi manca."
+     ],
+     "q": "Conta-me umas férias que adoraste: onde estavas, como era e o que fizeste?",
+     "c": "Escreve uma história curta de oito frases sobre umas férias com os dois tempos e dois pronomes."
+    },
+    "pt_BR": {
+     "t": "Revisão: falar do passado",
+     "g": "Juntar tudo o que você aprendeu sobre o passado.",
+     "p": [
+      "Passato prossimo com avere ou essere para fatos concluídos; particípios irregulares como fatto, detto, preso.",
+      "Imperfetto para hábitos e descrições; mentre + imperfetto quando outra ação interrompe.",
+      "Stare + gerúndio para ações em andamento, e os pronomes: lo, la, gli, le, mi piace, mi è piaciuto, mi manca."
+     ],
+     "q": "Me conte umas férias que você adorou: onde estava, como era e o que fez?",
+     "c": "Escreva uma história curta de oito frases sobre umas férias com os dois tempos e dois pronomes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la vacanza",
+      "ex": "La vacanza in Sardegna è stata stupenda."
+     },
+     {
+      "w": "eravamo",
+      "ex": "Eravamo in un piccolo albergo sul mare."
+     },
+     {
+      "w": "abbiamo visitato",
+      "ex": "Abbiamo visitato tre paesi bellissimi."
+     },
+     {
+      "w": "stavamo cenando",
+      "ex": "Stavamo cenando quando è cominciato il temporale."
+     },
+     {
+      "w": "mi è piaciuto tutto",
+      "ex": "Mi è piaciuto tutto, soprattutto il cibo."
+     },
+     {
+      "w": "mi manca già",
+      "ex": "Mi manca già quel posto!"
+     }
+    ],
+    "gram": "Ripasso: passato prossimo (avere/essere), imperfetto, mentre, stare + gerundio, pronomi diretti e indiretti, piacere al passato."
+   }
+  },
+  {
+   "d": 108,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Double pronouns",
+     "g": "Combine an indirect and a direct pronoun in one go.",
+     "p": [
+      "The indirect pronoun comes first and changes its i to e: mi becomes me, ti becomes te, ci becomes ce, vi becomes ve.",
+      "So: me lo dai?, te la presto, ce li portano, ve le mando. Mi dai il libro? Sì, te lo do.",
+      "Gli and le both become glie- and join the next word: glielo, gliela, glieli, gliele, gliene. Glielo dico io."
+     ],
+     "q": "If a friend asks mi presti la tua bici?, how do you say yes with two pronouns?",
+     "c": "Answer five questions with double pronouns, for example: mi dai il sale? Sì, te lo do."
+    },
+    "de": {
+     "t": "Doppelte Pronomen",
+     "g": "Du kombinierst ein indirektes und ein direktes Pronomen.",
+     "p": [
+      "Das indirekte Pronomen steht vorn und i wird zu e: mi wird me, ti wird te, ci wird ce, vi wird ve.",
+      "Also: me lo dai?, te la presto, ce li portano, ve le mando. Mi dai il libro? Sì, te lo do.",
+      "Gli und le werden beide zu glie- und verschmelzen: glielo, gliela, glieli, gliele, gliene. Glielo dico io."
+     ],
+     "q": "Wenn ein Freund fragt mi presti la tua bici?, wie sagst du ja mit zwei Pronomen?",
+     "c": "Beantworte fünf Fragen mit doppelten Pronomen, zum Beispiel: mi dai il sale? Sì, te lo do."
+    },
+    "es": {
+     "t": "Pronombres dobles",
+     "g": "Combinar un pronombre indirecto y uno directo a la vez.",
+     "p": [
+      "El indirecto va primero y cambia la i por e: mi pasa a me, ti a te, ci a ce, vi a ve.",
+      "Así: me lo dai?, te la presto, ce li portano, ve le mando. Mi dai il libro? Sì, te lo do.",
+      "Gli y le pasan los dos a glie- y se unen: glielo, gliela, glieli, gliele, gliene. Glielo dico io."
+     ],
+     "q": "Si un amigo te pregunta mi presti la tua bici?, ¿cómo dices que sí con dos pronombres?",
+     "c": "Responde cinco preguntas con pronombres dobles, por ejemplo: mi dai il sale? Sì, te lo do."
+    },
+    "fr": {
+     "t": "Les pronoms groupés",
+     "g": "Combiner un pronom COI et un pronom COD en même temps.",
+     "p": [
+      "Le COI vient d'abord et son i devient e : mi devient me, ti devient te, ci devient ce, vi devient ve.",
+      "Donc : me lo dai ?, te la presto, ce li portano, ve le mando. Mi dai il libro ? Sì, te lo do.",
+      "Gli et le deviennent tous deux glie- et se soudent : glielo, gliela, glieli, gliele, gliene. Glielo dico io."
+     ],
+     "q": "Si un ami te demande mi presti la tua bici ?, comment dis-tu oui avec deux pronoms ?",
+     "c": "Réponds à cinq questions avec des pronoms groupés, par exemple : mi dai il sale ? Sì, te lo do."
+    },
+    "it": {
+     "t": "I pronomi combinati",
+     "g": "Unire un pronome indiretto e uno diretto.",
+     "p": [
+      "L'indiretto va prima e la i diventa e: mi diventa me, ti diventa te, ci diventa ce, vi diventa ve.",
+      "Quindi: me lo dai?, te la presto, ce li portano, ve le mando. Mi dai il libro? Sì, te lo do.",
+      "Gli e le diventano entrambi glie- e si uniscono: glielo, gliela, glieli, gliele, gliene. Glielo dico io."
+     ],
+     "q": "Se un amico ti chiede mi presti la tua bici?, come rispondi di sì con due pronomi?",
+     "c": "Rispondi a cinque domande con i pronomi combinati, per esempio: mi dai il sale? Sì, te lo do."
+    },
+    "pt": {
+     "t": "Pronomes duplos",
+     "g": "Combinar um pronome indireto e um direto ao mesmo tempo.",
+     "p": [
+      "O indireto vem primeiro e o i passa a e: mi passa a me, ti a te, ci a ce, vi a ve.",
+      "Assim: me lo dai?, te la presto, ce li portano, ve le mando. Mi dai il libro? Sì, te lo do.",
+      "Gli e le passam ambos a glie- e juntam-se: glielo, gliela, glieli, gliele, gliene. Glielo dico io."
+     ],
+     "q": "Se um amigo te perguntar mi presti la tua bici?, como dizes que sim com dois pronomes?",
+     "c": "Responde a cinco perguntas com pronomes duplos, por exemplo: mi dai il sale? Sì, te lo do."
+    },
+    "pt_BR": {
+     "t": "Pronomes duplos",
+     "g": "Combinar um pronome indireto e um direto ao mesmo tempo.",
+     "p": [
+      "O indireto vem primeiro e o i vira e: mi vira me, ti vira te, ci vira ce, vi vira ve.",
+      "Assim: me lo dai?, te la presto, ce li portano, ve le mando. Mi dai il libro? Sì, te lo do.",
+      "Gli e le viram os dois glie- e se juntam: glielo, gliela, glieli, gliele, gliene. Glielo dico io."
+     ],
+     "q": "Se um amigo perguntar mi presti la tua bici?, como você diz sim com dois pronomes?",
+     "c": "Responda a cinco perguntas com pronomes duplos, por exemplo: mi dai il sale? Sì, te lo do."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me lo dai?",
+      "ex": "È il mio libro, me lo dai?"
+     },
+     {
+      "w": "te la presto",
+      "ex": "La macchina? Te la presto volentieri."
+     },
+     {
+      "w": "glielo dico",
+      "ex": "Marco non lo sa, glielo dico io."
+     },
+     {
+      "w": "gliela porto",
+      "ex": "La torta per la nonna? Gliela porto domani."
+     },
+     {
+      "w": "ce le mandano",
+      "ex": "Le foto? Ce le mandano stasera."
+     },
+     {
+      "w": "te ne porto due",
+      "ex": "Vuoi dei biscotti? Te ne porto due."
+     }
+    ],
+    "gram": "Pronomi combinati: indiretto + diretto, con mi/ti/ci/vi → me/te/ce/ve (te lo do); gli/le → glie- (glielo, gliela, gliene)."
+   }
+  },
+  {
+   "d": 109,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Pronouns with modal verbs",
+     "g": "Place pronouns with volere, potere and dovere in either of two correct ways.",
+     "p": [
+      "With a modal verb + infinitive the pronoun can go before the modal: lo voglio vedere, ti posso aiutare.",
+      "Or it can attach to the end of the infinitive, which drops its final e: voglio vederlo, posso aiutarti.",
+      "Both are correct, also with ci, ne and double pronouns: ci devo andare or devo andarci; te lo posso dire or posso dirtelo."
+     ],
+     "q": "Is there a film you really want to see? Answer: lo voglio vedere or voglio vederlo.",
+     "c": "Write four sentences with a modal and a pronoun, each in both positions."
+    },
+    "de": {
+     "t": "Pronomen mit Modalverben",
+     "g": "Du stellst Pronomen bei volere, potere und dovere auf zwei richtige Arten.",
+     "p": [
+      "Bei Modalverb + Infinitiv kann das Pronomen vor dem Modalverb stehen: lo voglio vedere, ti posso aiutare.",
+      "Oder es hängt am Infinitiv, der sein e verliert: voglio vederlo, posso aiutarti.",
+      "Beides ist richtig, auch mit ci, ne und doppelten Pronomen: ci devo andare oder devo andarci; te lo posso dire oder posso dirtelo."
+     ],
+     "q": "Gibt es einen Film, den du unbedingt sehen willst? Antworte: lo voglio vedere oder voglio vederlo.",
+     "c": "Schreib vier Sätze mit Modalverb und Pronomen, jeweils in beiden Stellungen."
+    },
+    "es": {
+     "t": "Pronombres con verbos modales",
+     "g": "Colocar pronombres con volere, potere y dovere de dos formas correctas.",
+     "p": [
+      "Con modal + infinitivo el pronombre puede ir antes del modal: lo voglio vedere, ti posso aiutare.",
+      "O pegado al final del infinitivo, que pierde la e: voglio vederlo, posso aiutarti.",
+      "Las dos son correctas, también con ci, ne y pronombres dobles: ci devo andare o devo andarci; te lo posso dire o posso dirtelo."
+     ],
+     "q": "¿Hay una película que quieras ver de verdad? Responde: lo voglio vedere o voglio vederlo.",
+     "c": "Escribe cuatro frases con un modal y un pronombre, cada una en las dos posiciones."
+    },
+    "fr": {
+     "t": "Pronoms et verbes modaux",
+     "g": "Placer les pronoms avec volere, potere et dovere de deux façons correctes.",
+     "p": [
+      "Avec modal + infinitif, le pronom peut se placer avant le modal : lo voglio vedere, ti posso aiutare.",
+      "Ou s'accrocher à l'infinitif, qui perd son e final : voglio vederlo, posso aiutarti.",
+      "Les deux sont justes, aussi avec ci, ne et les pronoms groupés : ci devo andare ou devo andarci ; te lo posso dire ou posso dirtelo."
+     ],
+     "q": "Y a-t-il un film que tu veux vraiment voir ? Réponds : lo voglio vedere ou voglio vederlo.",
+     "c": "Écris quatre phrases avec un modal et un pronom, chacune dans les deux positions."
+    },
+    "it": {
+     "t": "I pronomi con i verbi modali",
+     "g": "Mettere i pronomi con volere, potere e dovere in due posizioni corrette.",
+     "p": [
+      "Con modale + infinito il pronome può stare prima del modale: lo voglio vedere, ti posso aiutare.",
+      "Oppure si attacca all'infinito, che perde la e finale: voglio vederlo, posso aiutarti.",
+      "Sono giuste tutte e due, anche con ci, ne e i pronomi combinati: ci devo andare o devo andarci; te lo posso dire o posso dirtelo."
+     ],
+     "q": "C'è un film che vuoi proprio vedere? Rispondi: lo voglio vedere o voglio vederlo.",
+     "c": "Scrivi quattro frasi con un modale e un pronome, ognuna nelle due posizioni."
+    },
+    "pt": {
+     "t": "Pronomes com verbos modais",
+     "g": "Colocar pronomes com volere, potere e dovere de duas formas corretas.",
+     "p": [
+      "Com modal + infinitivo o pronome pode ir antes do modal: lo voglio vedere, ti posso aiutare.",
+      "Ou junta-se ao fim do infinitivo, que perde o e: voglio vederlo, posso aiutarti.",
+      "As duas estão certas, também com ci, ne e pronomes duplos: ci devo andare ou devo andarci; te lo posso dire ou posso dirtelo."
+     ],
+     "q": "Há algum filme que queiras mesmo ver? Responde: lo voglio vedere ou voglio vederlo.",
+     "c": "Escreve quatro frases com um modal e um pronome, cada uma nas duas posições."
+    },
+    "pt_BR": {
+     "t": "Pronomes com verbos modais",
+     "g": "Colocar pronomes com volere, potere e dovere de duas formas corretas.",
+     "p": [
+      "Com modal + infinitivo o pronome pode vir antes do modal: lo voglio vedere, ti posso aiutare.",
+      "Ou se junta ao fim do infinitivo, que perde o e: voglio vederlo, posso aiutarti.",
+      "As duas estão certas, também com ci, ne e pronomes duplos: ci devo andare ou devo andarci; te lo posso dire ou posso dirtelo."
+     ],
+     "q": "Tem algum filme que você quer muito ver? Responda: lo voglio vedere ou voglio vederlo.",
+     "c": "Escreva quatro frases com um modal e um pronome, cada uma nas duas posições."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo voglio vedere",
+      "ex": "Il nuovo museo? Lo voglio vedere presto."
+     },
+     {
+      "w": "voglio vederlo",
+      "ex": "Voglio vederlo anch'io!"
+     },
+     {
+      "w": "posso aiutarti?",
+      "ex": "Hai bisogno? Posso aiutarti?"
+     },
+     {
+      "w": "ti posso chiamare",
+      "ex": "Ti posso chiamare stasera?"
+     },
+     {
+      "w": "devo andarci",
+      "ex": "Il medico? Devo andarci domani."
+     },
+     {
+      "w": "posso dirtelo",
+      "ex": "È un segreto, ma posso dirtelo."
+     }
+    ],
+    "gram": "Con dovere, potere, volere + infinito il pronome va prima del modale (lo devo fare) o attaccato all'infinito (devo farlo)."
+   }
+  },
+  {
+   "d": 110,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Informal imperative: tu, noi, voi",
+     "g": "Give friendly instructions and suggestions.",
+     "p": [
+      "Tu: -are verbs end in -a (mangia!, parla!), -ere and -ire verbs end in -i (prendi!, senti!, dormi!).",
+      "Noi and voi are the same as the present: andiamo!, mangiamo!, venite qui!, sentite!",
+      "Short irregular tu forms: va' or vai, fa' or fai, da' or dai, sta' or stai, di'. Plus: abbi pazienza, sii gentile."
+     ],
+     "q": "Give me three friendly tips for a good day, using the tu imperative.",
+     "c": "Write five instructions for a friend visiting your city: prendi..., visita..., mangia..."
+    },
+    "de": {
+     "t": "Informeller Imperativ: tu, noi, voi",
+     "g": "Du gibst freundliche Anweisungen und Vorschläge.",
+     "p": [
+      "Tu: Verben auf -are enden auf -a (mangia!, parla!), auf -ere und -ire auf -i (prendi!, senti!, dormi!).",
+      "Noi und voi sind wie das Präsens: andiamo!, mangiamo!, venite qui!, sentite!",
+      "Kurze unregelmäßige tu-Formen: va' oder vai, fa' oder fai, da' oder dai, sta' oder stai, di'. Dazu: abbi pazienza, sii gentile."
+     ],
+     "q": "Gib mir drei freundliche Tipps für einen guten Tag mit dem tu-Imperativ.",
+     "c": "Schreib fünf Tipps für einen Freund, der deine Stadt besucht: prendi..., visita..., mangia..."
+    },
+    "es": {
+     "t": "Imperativo informal: tu, noi, voi",
+     "g": "Dar instrucciones y sugerencias amistosas.",
+     "p": [
+      "Tu: los verbos en -are acaban en -a (mangia!, parla!), los de -ere e -ire en -i (prendi!, senti!, dormi!).",
+      "Noi y voi son iguales al presente: andiamo!, mangiamo!, venite qui!, sentite!",
+      "Formas cortas irregulares de tu: va' o vai, fa' o fai, da' o dai, sta' o stai, di'. Además: abbi pazienza, sii gentile."
+     ],
+     "q": "Dame tres consejos amistosos para un buen día, con el imperativo de tu.",
+     "c": "Escribe cinco consejos para un amigo que visita tu ciudad: prendi..., visita..., mangia..."
+    },
+    "fr": {
+     "t": "L'impératif familier : tu, noi, voi",
+     "g": "Donner des consignes et des suggestions amicales.",
+     "p": [
+      "Tu : les verbes en -are finissent en -a (mangia !, parla !), ceux en -ere et -ire en -i (prendi !, senti !, dormi !).",
+      "Noi et voi sont comme le présent : andiamo !, mangiamo !, venite qui !, sentite !",
+      "Formes courtes irrégulières : va' ou vai, fa' ou fai, da' ou dai, sta' ou stai, di'. Et : abbi pazienza, sii gentile."
+     ],
+     "q": "Donne-moi trois conseils amicaux pour une bonne journée, à l'impératif avec tu.",
+     "c": "Écris cinq conseils pour un ami qui visite ta ville : prendi..., visita..., mangia..."
+    },
+    "it": {
+     "t": "L'imperativo informale: tu, noi, voi",
+     "g": "Dare istruzioni e consigli in modo amichevole.",
+     "p": [
+      "Tu: i verbi in -are finiscono in -a (mangia!, parla!), quelli in -ere e -ire in -i (prendi!, senti!, dormi!).",
+      "Noi e voi sono uguali al presente: andiamo!, mangiamo!, venite qui!, sentite!",
+      "Forme brevi irregolari del tu: va' o vai, fa' o fai, da' o dai, sta' o stai, di'. E poi: abbi pazienza, sii gentile."
+     ],
+     "q": "Dammi tre consigli amichevoli per una bella giornata, con l'imperativo del tu.",
+     "c": "Scrivi cinque consigli per un amico che visita la tua città: prendi..., visita..., mangia..."
+    },
+    "pt": {
+     "t": "Imperativo informal: tu, noi, voi",
+     "g": "Dar instruções e sugestões de forma amigável.",
+     "p": [
+      "Tu: os verbos em -are acabam em -a (mangia!, parla!), os de -ere e -ire em -i (prendi!, senti!, dormi!).",
+      "Noi e voi são iguais ao presente: andiamo!, mangiamo!, venite qui!, sentite!",
+      "Formas curtas irregulares do tu: va' ou vai, fa' ou fai, da' ou dai, sta' ou stai, di'. E ainda: abbi pazienza, sii gentile."
+     ],
+     "q": "Dá-me três conselhos amigáveis para um bom dia, com o imperativo do tu.",
+     "c": "Escreve cinco conselhos para um amigo que visita a tua cidade: prendi..., visita..., mangia..."
+    },
+    "pt_BR": {
+     "t": "Imperativo informal: tu, noi, voi",
+     "g": "Dar instruções e sugestões de forma amigável.",
+     "p": [
+      "Tu: os verbos em -are terminam em -a (mangia!, parla!), os de -ere e -ire em -i (prendi!, senti!, dormi!).",
+      "Noi e voi são iguais ao presente: andiamo!, mangiamo!, venite qui!, sentite!",
+      "Formas curtas irregulares do tu: va' ou vai, fa' ou fai, da' ou dai, sta' ou stai, di'. E também: abbi pazienza, sii gentile."
+     ],
+     "q": "Me dê três conselhos amigáveis para um bom dia, com o imperativo do tu.",
+     "c": "Escreva cinco conselhos para um amigo que visita a sua cidade: prendi..., visita..., mangia..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mangia!",
+      "ex": "Mangia, la pasta si fredda!"
+     },
+     {
+      "w": "prendi",
+      "ex": "Prendi l'autobus numero tre."
+     },
+     {
+      "w": "andiamo!",
+      "ex": "Andiamo, è tardi!"
+     },
+     {
+      "w": "venite qui!",
+      "ex": "Ragazzi, venite qui un attimo!"
+     },
+     {
+      "w": "fa' attenzione",
+      "ex": "Fa' attenzione alla strada!"
+     },
+     {
+      "w": "abbi pazienza",
+      "ex": "Abbi pazienza, arrivo subito."
+     }
+    ],
+    "gram": "Imperativo tu: -are → -a (parla), -ere/-ire → -i (prendi, senti); noi e voi come il presente; forme brevi va', fa', da', sta', di'."
+   }
+  }
+ ]
+}

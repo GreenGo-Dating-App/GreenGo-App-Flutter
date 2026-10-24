@@ -1,0 +1,2195 @@
+{
+"topic": "road_trips",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to the open road",
+"f": "What makes a road trip special and how freedom, scenery and spontaneity shape the journey"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Dreaming up your first trip",
+"f": "Turn a vague wish into a destination, a rough length and a reason to go"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "How long should a road trip be?",
+"f": "Weekend escapes, one-week loops and longer journeys, and what each one suits"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Who comes along?",
+"f": "Solo, couple, friends or family: how your travel companions change the trip"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Picking the right season",
+"f": "How weather, daylight, crowds and road closures change from season to season"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Reading a road map",
+"f": "Road classes, colours, symbols and scale on paper and digital maps"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Sketching a simple route",
+"f": "Connect a start, an end and a few must-see places into a first rough line"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Loop or one-way?",
+"f": "Compare circular routes with one-way trips and their effect on time and costs"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Realistic daily distances",
+"f": "Why average speed is lower than you think and how many hours a day feel good"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "The rule of breathing room",
+"f": "Leave free time in every day for detours, rest and happy surprises"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Own car or rental?",
+"f": "Weigh comfort, cost, wear and flexibility before choosing your vehicle"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Renting a car: the basics",
+"f": "Booking, age rules, pick-up checks and what to ask at the rental desk"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Understanding car insurance terms",
+"f": "What common cover types mean in plain words so you can compare offers calmly"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Choosing the right vehicle size",
+"f": "Match seats, luggage space, fuel use and road types to your trip"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Manual or automatic?",
+"f": "How the gearbox affects comfort, rental options and driving in hills or traffic"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Your driving documents",
+"f": "Licence, vehicle papers, rental contract and when an international permit helps"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "The pre-trip tyre check",
+"f": "Tread, pressure and visible damage: a five-minute check before every trip"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Fluids and lights check",
+"f": "Oil, coolant, washer fluid and every light: simple checks anyone can learn"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Meet your spare tyre",
+"f": "Where it hides, types of spare wheels and the tools that come with it"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Fuel types explained",
+"f": "Petrol, diesel, hybrid and electric, and why the right pump matters"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Packing light for the car",
+"f": "Soft bags, smart layers and why less luggage makes every stop easier"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "The car essentials kit",
+"f": "Warning triangle, vest, torch, first-aid kit and other items to keep on board"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Snacks and water strategy",
+"f": "Healthy road snacks, a cool bag and enough water for long empty stretches"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Dressing for the drive",
+"f": "Comfortable clothes and shoes for driving plus layers for changing weather"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Chargers and gadgets",
+"f": "Car chargers, power banks, phone mounts and keeping devices ready"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Offline maps and apps",
+"f": "Download maps and key info so you can navigate without mobile data"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Building the perfect playlist",
+"f": "Music, podcasts and audiobooks that match the mood of each stretch"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Organising the car interior",
+"f": "Where to put maps, snacks, rubbish and valuables so the cabin stays calm"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Sharing your plan with someone",
+"f": "Why you tell a friend your route and check-in times before leaving"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: planning foundations",
+"f": "Look back at routes, vehicles, checks and packing, then plan a mini weekend trip"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Using GPS wisely",
+"f": "Set preferences, double-check routes and know when to trust your own eyes"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Road signs around the world",
+"f": "Shapes and colours of warning, priority and information signs in many countries"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Mastering roundabouts",
+"f": "Entering, giving way, choosing lanes and exiting calmly"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Motorways versus scenic roads",
+"f": "Fast highways or slow back roads: when each one makes the trip better"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Tolls, vignettes and road fees",
+"f": "The different ways countries charge for roads and how to prepare for them"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Planning fuel stops",
+"f": "Range, reserve and spotting areas where fuel stations are far apart"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "The two-hour break habit",
+"f": "Why regular stops keep you alert and how to make them pleasant"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Recognising tiredness",
+"f": "Early signs of fatigue and simple ways to stay fresh behind the wheel"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Sharing the driving",
+"f": "Rotating drivers, insurance rules and keeping everyone rested"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Driving in the rain",
+"f": "Speed, distance, lights and visibility when the road gets wet"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Fog, wind and glare",
+"f": "Handling low visibility, strong side winds and a low sun"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Night driving basics",
+"f": "Headlights, eye comfort, wildlife and why some stretches are better by day"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Speed limits differ everywhere",
+"f": "How limits change by country and road type, and how to spot them"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Driving on the other side",
+"f": "Tips for adapting when traffic flows on the opposite side of the road"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Lane etiquette and overtaking",
+"f": "Keeping to your lane, overtaking safely and being a courteous driver"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "City driving survival",
+"f": "One-way streets, busy junctions and restricted zones in town centres"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Parking like a local",
+"f": "Street parking rules, car parks, park-and-ride and parking discs"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Low emission zones",
+"f": "Why many cities limit cars and how to check before you drive in"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Narrow lanes and passing places",
+"f": "Driving country lanes, reversing politely and sharing tight roads"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "First steps on mountain roads",
+"f": "Hairpins, lower gears and enjoying the views safely"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Gravel roads for beginners",
+"f": "Speed, steering and dust on unpaved roads"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Level crossings and narrow bridges",
+"f": "Railway crossings, single-lane bridges and who goes first"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Sharing the road with cyclists",
+"f": "Giving space, being patient and passing cyclists and walkers safely"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Animals on the road",
+"f": "Livestock, deer and other animals: where they appear and how to react"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Traffic jams with a smile",
+"f": "Staying patient, using the time well and finding smart alternatives"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "What to do after a minor bump",
+"f": "Staying calm, exchanging details and taking photos after a small knock"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Calling for roadside help",
+"f": "Breakdown services, rental hotlines and the information they will need"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Driving with bikes or a trailer",
+"f": "Racks, extra length and how loads change braking and turning"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Eco-driving habits",
+"f": "Smooth speed, correct tyre pressure and light loads for lower fuel use"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: on-the-road skills",
+"f": "Revisit signs, breaks, weather and etiquette with a practice drive plan"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Where to sleep on a road trip",
+"f": "Hotels, motels, guesthouses and campsites, and how to choose each night"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Booking ahead or going with the flow",
+"f": "When to reserve and when spontaneity gives you the best stays"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Motels and roadside inns",
+"f": "Why they suit road trips and what to look for at check-in"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Your first night at a campsite",
+"f": "Pitches, facilities, quiet hours and campsite etiquette"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Guesthouses and farm stays",
+"f": "Sleeping at local hosts' places and learning about the region from them"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Hostels for drivers",
+"f": "Social stays, parking and private rooms in hostels"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Choosing a base for day trips",
+"f": "Staying several nights in one place and exploring around it"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Roadside diners and local cafés",
+"f": "Finding honest local food along the way"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "The art of the roadside picnic",
+"f": "Markets, simple ingredients and scenic spots for lunch outdoors"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Finding great viewpoints",
+"f": "Using maps and local tips to discover lookouts and pull-outs"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Small towns worth a stop",
+"f": "How to spot charming villages and spend a happy hour there"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "National parks by car",
+"f": "Scenic drives, visitor centres and respecting protected areas"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Short walks from the car",
+"f": "Easy trails that let you stretch your legs and see more"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Photo stops done right",
+"f": "Safe places to pull over and simple tips for better road photos"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Keeping a road trip journal",
+"f": "Notes, sketches and tickets that turn the trip into a story"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Games for long drives",
+"f": "Classic car games and conversation ideas for every age"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Road trips with children",
+"f": "Pacing, snacks, entertainment and breaks that keep kids happy"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Travelling with a dog",
+"f": "Pet-friendly stops, water, harnesses and finding welcoming places"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Tracking the budget",
+"f": "Simple ways to log fuel, food, beds and fun expenses"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Saving money on the road",
+"f": "Cooking some meals, cheaper fuel stations and free attractions"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Staying connected",
+"f": "SIM cards, roaming, Wi-Fi and staying reachable on the road"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Laundry and freshness on the go",
+"f": "Launderettes, quick washes and staying fresh on long trips"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Rainy day plans",
+"f": "Museums, cafés, covered markets and indoor ideas when the weather turns"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Talking to locals",
+"f": "Asking for directions and tips and making friendly connections"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Visitor centres and tourist offices",
+"f": "What they offer and how they reveal hidden gems"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Sunrise and sunset drives",
+"f": "Timing the golden hours and choosing roads that face the light"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Coastal roads",
+"f": "Cliffs, beaches and seaside towns along the shore"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Lakes and river valleys",
+"f": "Driving along water and finding peaceful places to stop"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Leaving places as you found them",
+"f": "Rubbish, quiet and respect for nature and neighbours"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: stops and stays",
+"f": "Plan a three-day trip with places to sleep, eat and explore"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Famous routes: why they matter",
+"f": "What turns a road into a legend and how to enjoy it beyond the hype"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Route 66, USA",
+"f": "The historic highway from Chicago towards Los Angeles and its retro roadside culture"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Pacific Coast Highway, USA",
+"f": "California's coastal drive past cliffs, beaches and Big Sur"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Great Ocean Road, Australia",
+"f": "Victoria's coastal route with the famous Twelve Apostles rock stacks"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Iceland's Ring Road",
+"f": "Route 1 around Iceland: waterfalls, glaciers and black sand beaches"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "North Coast 500, Scotland",
+"f": "A loop through the Scottish Highlands with castles and wild beaches"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "The Romantic Road, Germany",
+"f": "Medieval towns, castles and countryside in southern Germany"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "The Amalfi Coast, Italy",
+"f": "Cliffside villages, lemon groves and very tight bends"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "The Garden Route, South Africa",
+"f": "Forests, lagoons and coastal towns between Mossel Bay and Storms River"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Carretera Austral, Chile",
+"f": "A remote road through Patagonian forests, fjords and glaciers"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "The Cabot Trail, Canada",
+"f": "Cape Breton Island's loop of highlands, ocean views and Celtic culture"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Icefields Parkway, Canada",
+"f": "Glaciers, turquoise lakes and peaks between Lake Louise and Jasper"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Milford Road, New Zealand",
+"f": "A spectacular drive through Fiordland to Milford Sound"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Atlantic Ocean Road, Norway",
+"f": "A short road of bridges hopping across islets by the open sea"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Transfăgărășan, Romania",
+"f": "A dramatic mountain road full of hairpins across the Carpathians"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Ruta 40, Argentina",
+"f": "One of the world's longest roads, running along the Andes"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Estrada Real, Brazil",
+"f": "Historic routes linking the colonial towns of Minas Gerais to the coast"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "N2, Portugal",
+"f": "Portugal's longest road, from Chaves to Faro through the interior"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Wild Atlantic Way, Ireland",
+"f": "A long coastal route along Ireland's west with cliffs and villages"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Route des Grandes Alpes, France",
+"f": "High passes from Lake Geneva down towards the Mediterranean"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Great Dolomite Road, Italy",
+"f": "Mountain passes and jagged peaks between Bolzano and Cortina"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Causeway Coastal Route, Northern Ireland",
+"f": "Coastal scenery, castles and the Giant's Causeway"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Overseas Highway, USA",
+"f": "Island-hopping over long bridges through the Florida Keys"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Blue Ridge Parkway, USA",
+"f": "A slow, scenic road along the Appalachian ridges"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "The white villages of Andalusia, Spain",
+"f": "Whitewashed hill towns between Seville, Ronda and the coast"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "The Douro Valley, Portugal",
+"f": "Terraced vineyards and riverside roads in northern Portugal"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Going-to-the-Sun Road, USA",
+"f": "A mountain road crossing Glacier National Park in Montana"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "The Ring of Kerry, Ireland",
+"f": "A classic loop around the Iveragh Peninsula's coast and mountains"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Choosing your first famous route",
+"f": "Match a legendary road to your season, budget and travel style"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner road tripper",
+"f": "Celebrate what you learned and sketch your dream beginner trip"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Designing a multi-week itinerary",
+"f": "Break a long trip into legs, rest days and highlights"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Pacing a long journey",
+"f": "Alternate big driving days with slow days to avoid travel fatigue"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Researching a route in depth",
+"f": "Guidebooks, maps, forums and local sources for richer planning"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Seasonal road closures",
+"f": "Mountain passes and high roads that open only part of the year"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Crossing borders by car",
+"f": "Documents, insurance and what border checks usually involve"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Driving rules that surprise visitors",
+"f": "Daytime headlights, priority to the right and other local rules"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Taking the car on a ferry",
+"f": "Booking, boarding, height limits and enjoying the crossing"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Island hopping by car",
+"f": "Planning routes that combine ferries, bridges and islands"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Car trains and car shuttles",
+"f": "Using rail to carry your car through tunnels or over long distances"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "One-way rental fees",
+"f": "Why dropping a car elsewhere costs more and how to plan around it"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Introduction to campervans",
+"f": "Types of campervans and motorhomes and how life on board works"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Campervan power and water",
+"f": "Batteries, hook-ups, fresh water and grey water explained"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Cooking in a campervan",
+"f": "Simple meals, compact kitchens and smart food storage"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Driving a campervan",
+"f": "Height, width, wind and parking a larger vehicle"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Where campervans can stay",
+"f": "Campsites, aires, stopovers and respecting local rules"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Roof tents and car camping",
+"f": "Sleeping in or on top of your car comfortably"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Rules on wild camping",
+"f": "Why rules differ by country and how to camp responsibly where allowed"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Off-season road trips",
+"f": "Quiet roads, lower prices and what closes outside high season"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Winter driving essentials",
+"f": "Winter tyres, de-icing, slower speeds and carrying warm gear"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Using snow chains",
+"f": "When they are required and how to practise fitting them at home"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "High mountain passes",
+"f": "Engine braking, cool brakes and enjoying alpine passes"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Long gravel and dirt roads",
+"f": "Tyre pressure, corrugations and driving unpaved roads for hours"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Four-wheel drive basics",
+"f": "What 4x4 really helps with and where its limits are"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Fords and water crossings",
+"f": "Why shallow water can be tricky and when to turn back"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Driving in the desert",
+"f": "Heat, water, sand and planning long remote stretches"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Driving in tropical rain",
+"f": "Downpours, flooded roads and planning around the wet season"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Electric road trips",
+"f": "Range, charger types and planning an EV journey"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Planning charging stops",
+"f": "Mapping chargers, charging while sightseeing and backup options"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Hybrid and efficient cars",
+"f": "How hybrids save fuel and when they shine on long trips"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: long-trip planning",
+"f": "Combine borders, ferries, campervans and weather into one plan"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Changing a flat tyre",
+"f": "A step-by-step tyre change and when to call for help instead"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Jump-starting a battery",
+"f": "How jump leads and booster packs work, plus the safety steps"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Dashboard warning lights",
+"f": "What common warning lights mean and which ones need action now"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "When the engine overheats",
+"f": "Signs of overheating, what to do and how to prevent it"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Basic tools to carry",
+"f": "A small toolkit, tape, cable ties and other trip savers"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Finding a mechanic abroad",
+"f": "How to explain a problem and choose a trustworthy garage"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Rental car damage checks",
+"f": "Photographing the car and handling the return smoothly"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Fuel economy in practice",
+"f": "Measuring consumption and planning costs per kilometre"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Splitting costs fairly",
+"f": "Ways groups share fuel, rooms and food without friction"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Group dynamics on the road",
+"f": "Making decisions together and giving everyone space"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "The solo road trip",
+"f": "Freedom, smart habits and meeting people when travelling alone"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Trips for every generation",
+"f": "Planning trips that suit grandparents, teens and toddlers together"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Accessible road trips",
+"f": "Planning accessible stops, stays and attractions"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Themed trips: history",
+"f": "Following castles, ruins and historic towns along a route"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Themed trips: food and markets",
+"f": "Building a route around regional dishes, farms and markets"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Themed trips: film locations",
+"f": "Driving to places where famous films and series were shot"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Themed trips: lighthouses",
+"f": "Coastal routes linking lighthouses and maritime towns"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Themed trips: music roads",
+"f": "Routes linked to music history, like the American blues and country trails"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Themed trips: architecture",
+"f": "Bridges, modern buildings and unique villages as highlights"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Themed trips: stargazing",
+"f": "Dark sky areas, timing the moon and night-sky viewing"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Road trip photography",
+"f": "Composition, light and telling a story with your images"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Filming your journey",
+"f": "Short clips, time-lapses and safe ways to film from the car"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Drone rules in general",
+"f": "Why drone rules vary and how to check before flying anywhere"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Sustainable road tripping",
+"f": "Lower emissions, local spending and a lighter footprint"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Leave No Trace on the road",
+"f": "The seven Leave No Trace principles applied to a road trip"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Wildlife watching from the road",
+"f": "Best times, respectful distances and staying in the car"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Supporting local businesses",
+"f": "Choosing family-run stays, shops and guides"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Weather apps and forecasts",
+"f": "Reading forecasts and adapting plans day by day"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Plan B thinking",
+"f": "Building alternatives for closures, storms and fully booked towns"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: skills on the road",
+"f": "Practise repairs, group skills and theme ideas in a sample trip"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Scandinavia by car",
+"f": "Fjords, ferries and long summer days in Norway and Sweden"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "The Balkans by car",
+"f": "Coastlines, mountains and old towns across the western Balkans"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "The Alps by car",
+"f": "Linking Switzerland, Austria, Italy and France through high passes"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Tuscany and Umbria",
+"f": "Cypress-lined roads, hill towns and slow countryside driving"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Provence and the Riviera",
+"f": "Lavender fields, hilltop villages and the Mediterranean coast"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Scotland beyond the NC500",
+"f": "Islands, glens and lesser-known Scottish routes"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Ireland's back roads",
+"f": "Small lanes, peninsulas and friendly villages"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Spain's interior",
+"f": "Castile, Extremadura and the quiet heart of Spain"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "The Portuguese coast",
+"f": "From the Minho down to the Algarve along the Atlantic"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Greece by car",
+"f": "Mainland mountains, the Peloponnese and coastal towns"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Morocco by car",
+"f": "Atlas mountains, desert edges and ancient cities"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Namibia self-drive",
+"f": "Gravel roads, red dunes and wide open spaces"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Australia's outback",
+"f": "Vast distances, fuel planning and sharing the road with road trains"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Tasmania loop",
+"f": "Wild coasts, national parks and short distances"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "New Zealand's South Island",
+"f": "Lakes, mountains and coastal roads in a compact area"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Japan by car",
+"f": "Expressways, rural roads and staying in small inns"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "The US Southwest",
+"f": "Canyons, deserts and national parks in Utah and Arizona"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "New England in autumn",
+"f": "Autumn colours, covered bridges and coastal villages"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Canada's Maritimes",
+"f": "Nova Scotia, New Brunswick and Prince Edward Island"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Patagonia by car",
+"f": "Wind, gravel and huge landscapes in Chile and Argentina"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Brazil's northeast coast",
+"f": "Beaches, dunes and colourful colonial towns"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Costa Rica by car",
+"f": "Volcanoes, rainforests and coast-to-coast drives"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Mexico's Yucatán",
+"f": "Cenotes, colonial towns and ancient Maya sites"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Sri Lanka with a driver",
+"f": "Hiring a driver where self-driving is less common"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "South India by road",
+"f": "Hills, tea estates and temple towns with a local driver"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Turkey by car",
+"f": "Cappadocia, the coast and wide Anatolian landscapes"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Georgia by car",
+"f": "Mountain roads, wine valleys and warm hospitality"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Driving cultures worldwide",
+"f": "Horns, gestures and unwritten road rules in different countries"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Language for the road",
+"f": "Key phrases for fuel stations, parking and asking directions"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: regions of the world",
+"f": "Compare regions and pick one for a dream two-week trip"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Getting off the beaten path",
+"f": "Finding quiet alternatives to crowded routes"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Reading topographic maps",
+"f": "Contours, elevation and what they mean for driving"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Planning around daylight",
+"f": "Sunrise, sunset and long or short days at different latitudes"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Driving at altitude",
+"f": "How height affects engines, breathing and comfort"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Tidal roads and causeways",
+"f": "Roads that flood at high tide and how to read tide tables"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Famous bridges and tunnels",
+"f": "Record-breaking crossings worth including in a route"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Official scenic byways",
+"f": "Scenic road schemes in various countries and how to use them"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Long stretches without services",
+"f": "Recognising empty stretches and preparing fuel, food and water"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Smart luggage systems",
+"f": "Roof boxes, packing cubes and loading for easy access"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Comfort on long drives",
+"f": "Seat position, posture and simple stretching routines"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Staying healthy on the road",
+"f": "Sleep, food, water and movement while travelling"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Motion sickness tips",
+"f": "Seating, horizons, fresh air and pacing for sensitive travellers"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "A road trip cooking kit",
+"f": "A compact stove set-up and easy one-pot recipes"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Roadside markets and farm stands",
+"f": "Buying fresh produce and local specialities on the way"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Road trip traditions",
+"f": "Rituals that make trips memorable, from first stop to last song"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Meeting other travellers",
+"f": "Campsites, hostels and friendly connections on the road"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Volunteering stops",
+"f": "Short volunteering experiences along a route"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Working while road tripping",
+"f": "Working remotely on the road without losing the fun"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Digital planning tools",
+"f": "Route planners, spreadsheets and shared maps"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Making a day-by-day plan",
+"f": "Turning a route into practical daily schedules"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Budget levels for road trips",
+"f": "Shoestring, mid-range and comfort trips compared"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Booking platforms compared",
+"f": "Different ways to find stays and what to watch out for"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Reading reviews smartly",
+"f": "Spotting useful reviews and ignoring the noise"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Travel insurance basics",
+"f": "What travel insurance generally covers on a road trip"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Keeping documents safe",
+"f": "Copies, digital backups and secure storage in the car"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Everyday security habits",
+"f": "Parking in well-lit places and never leaving valuables on show"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Big cities abroad by car",
+"f": "When to drive in, and when to park outside and use public transport"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Motorcycle road trips",
+"f": "How touring on two wheels differs from a trip by car"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Cycling with a support car",
+"f": "Combining bikes and a vehicle on scenic routes"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: smart planning",
+"f": "Use tools, budgets and comfort habits to refine a trip"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Wine regions by car",
+"f": "Visiting vineyard regions responsibly with a designated driver"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Hot springs road trips",
+"f": "Linking natural thermal pools along a route"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Waterfall routes",
+"f": "Planning drives around great waterfalls and their best seasons"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Islands you can drive around",
+"f": "Loops around islands such as Skye, Madeira or Crete"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Volcanic landscapes by car",
+"f": "Driving routes through volcanic regions and lava fields"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Canyons and desert oases",
+"f": "Planning trips to dramatic dry landscapes"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Forest drives",
+"f": "Ancient forests, autumn foliage and shady roads"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Lake districts",
+"f": "Driving around famous lake regions in several countries"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your intermediate route plan",
+"f": "Draft a complete two-week route using everything so far"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate road tripper",
+"f": "Celebrate your progress and reflect on your travel style"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "What is overlanding?",
+"f": "Self-reliant long journeys and how they differ from classic road trips"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Preparing a vehicle for overlanding",
+"f": "Suspension, tyres, storage and protection basics"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Power systems for long trips",
+"f": "Solar panels, second batteries and managing energy on board"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Water logistics in remote areas",
+"f": "Carrying, filtering and rationing water"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Fuel logistics in remote areas",
+"f": "Jerry cans, range planning and fuel quality"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Satellite communication devices",
+"f": "Messengers and beacons for staying in touch beyond coverage"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Navigation without signal",
+"f": "Offline maps, GPS devices and paper backups"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Recovery gear basics",
+"f": "Recovery boards, straps and shovels explained"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Getting unstuck from sand and mud",
+"f": "Techniques and teamwork for a calm recovery"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Tyre repair kits",
+"f": "Plugs, compressors and fixing punctures on remote roads"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "First-aid preparation for remote trips",
+"f": "Kits and courses for travelling far from help, general guidance only"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Convoy driving",
+"f": "Travelling in a group of vehicles, using radios and keeping spacing"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Leading a group trip",
+"f": "Briefings, roles and keeping a group happy"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Temporary vehicle import",
+"f": "The general idea behind permits such as the carnet de passages"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Shipping a vehicle overseas",
+"f": "Container and roll-on roll-off shipping basics"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Long-term van life",
+"f": "Routines, budgets and keeping life on the road sustainable"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Planning a van conversion",
+"f": "Layout, insulation and furniture for a home-built camper"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Living small",
+"f": "Minimalism, storage and harmony in a tiny space"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Admin on the road",
+"f": "Mail, banking and paperwork while travelling for months"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: self-reliant travel",
+"f": "Revisit overlanding skills and plan a remote week"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "The Pan-American Highway",
+"f": "The road network from Alaska to Argentina and the Darién Gap"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "A grand tour of Europe",
+"f": "A multi-country journey through Europe's highlights"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Australia's Big Lap",
+"f": "Driving all the way around Australia"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "The Trans-Canada Highway",
+"f": "Crossing Canada from the Atlantic to the Pacific"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Driving to the North Cape",
+"f": "The long road to Nordkapp in northern Norway"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "The Silk Road by car",
+"f": "Historic trade routes through Central Asia"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Crossing Africa overland",
+"f": "How long journeys across the African continent are planned"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Iceland's Highlands",
+"f": "F-roads, river crossings and the rules for the interior"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Alaska and the Yukon",
+"f": "Long distances, wildlife and northern skies"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Mongolia's open steppe",
+"f": "Driving where roads turn into tracks"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Designing your own scenic route",
+"f": "Finding roads that string together beauty and surprise"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Storytelling with a route",
+"f": "Giving a trip a theme, a rhythm and a final highlight"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "The slow travel mindset",
+"f": "Fewer places, deeper experiences and lasting memories"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Mastering seasonal timing",
+"f": "Matching blooms, colours, festivals and weather windows"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Shoulder season secrets",
+"f": "Getting the best of quiet months with good weather"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Photography expeditions",
+"f": "Planning a trip around light, locations and weather"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Astrophotography trips",
+"f": "Dark skies, moon phases and roads for night photography"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Northern lights drives",
+"f": "Aurora seasons, forecasts and safe night stops"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Chasing autumn colours",
+"f": "Timing and routes for spectacular autumn foliage"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Spring bloom routes",
+"f": "Wildflowers, cherry blossom and landscapes in flower"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Road trips for food lovers",
+"f": "Planning a whole trip around one cuisine"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Cultural immersion on the road",
+"f": "Festivals, crafts and spending time with local communities"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Learning a language en route",
+"f": "Using a trip to practise a language every single day"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Writing a travel blog",
+"f": "Turning your notes into stories readers enjoy"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Making a travel film",
+"f": "Planning shots, editing and storytelling"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Sharing trips on social media",
+"f": "Helpful, respectful posts and protecting your privacy"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Creating a route guide for friends",
+"f": "Packaging your trip into a guide others can follow"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Measuring your trip's footprint",
+"f": "Estimating emissions and choosing lower-impact options"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Lower-impact choices",
+"f": "Rail segments, shared rides and efficient vehicles"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: creative travel",
+"f": "Plan a themed route with a story and a creative project"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Advanced EV road trips",
+"f": "Long remote stretches and charging networks across borders"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Battery care on long trips",
+"f": "Charging habits, temperature and range in cold weather"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Alternative fuels explained",
+"f": "A simple look at hydrogen and other alternative fuels"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Driver assistance features",
+"f": "Using cruise control and lane assist wisely"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Classic car road trips",
+"f": "Vintage cars, slow touring and the joy of old machines"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Touring events and rallies",
+"f": "Friendly navigation rallies and touring events for drivers"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Reading a roadbook",
+"f": "Tulip diagrams and roadbooks used in navigation rallies"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Advanced driving courses",
+"f": "Advanced driver training and why it helps on trips"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Ice and snow driving courses",
+"f": "Learning winter car control in safe environments"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Off-road driving courses",
+"f": "Training on 4x4 tracks with instructors"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Mountain driving mastery",
+"f": "Long descents, high passes and fast-changing weather"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Desert expedition planning",
+"f": "Permits, guides and remote desert crossings"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Jungle and rainforest routes",
+"f": "Mud seasons, river ferries and humidity"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Arctic road trips",
+"f": "Ice roads, deep cold and long nights"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "High-altitude routes",
+"f": "Some of the world's highest roads and acclimatisation"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Travelling with local guides",
+"f": "When a guide adds safety and deeper insight"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Hiring drivers fairly",
+"f": "Fair pay, clear agreements and good communication"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Cross-cultural etiquette on the road",
+"f": "Dress, greetings and respect in rural areas"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Being a gracious guest",
+"f": "Gifts and good manners when locals invite you in"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Handling bureaucracy calmly",
+"f": "Checkpoints, paperwork and patience"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Budgeting a year-long journey",
+"f": "Monthly budgets and handling big one-off costs"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Earning on the road",
+"f": "Remote work, seasonal work and freelance ideas"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Insurance for long journeys",
+"f": "General types of cover for extended trips abroad"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Vehicle maintenance schedules",
+"f": "Planning services across a long route"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "A spare parts strategy",
+"f": "Which spares to carry for your vehicle and why"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Health routines for long trips",
+"f": "Sleep, fitness and inner balance on the road"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Staying close to home",
+"f": "Calls, updates and handling homesickness"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Travel partners on long trips",
+"f": "Communication and personal space for people travelling together"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Families on long journeys",
+"f": "Schooling ideas and routines for children on the road"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: long-haul mastery",
+"f": "Revisit long-term logistics and plan a three-month trip"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Mapping your dream route",
+"f": "Gathering everything you know into one master map"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Researching entry rules",
+"f": "Where to find official visa and entry information for each country"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Building a contingency plan",
+"f": "Spotting challenges early and preparing calm responses"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Choosing the perfect vehicle",
+"f": "Matching the vehicle to your route, budget and style"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Packing list mastery",
+"f": "A refined packing list tested by experience"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "The pre-departure checklist",
+"f": "Final tasks for the vehicle, your home and your documents"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "The first day ritual",
+"f": "Starting a long trip with intention and excitement"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Adapting the plan on the go",
+"f": "Re-routing gracefully when things change"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Handling breakdowns abroad",
+"f": "Staying calm and organised when the car stops"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Learning from wrong turns",
+"f": "Turning mistakes into good stories and useful lessons"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Mindful driving",
+"f": "Being present and enjoying the drive itself"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "The joy of no plan",
+"f": "Free-roaming days guided only by curiosity"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Road trips with purpose",
+"f": "Trips for learning, giving back or reconnecting"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Reunion road trips",
+"f": "Visiting friends and family along a route"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Milestone journeys",
+"f": "Celebrating birthdays and big life moments with a trip"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Coming home well",
+"f": "Unpacking, sorting photos and reflecting on the journey"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Turning memories into keepsakes",
+"f": "Photo books, maps and souvenirs that last"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Sharing your expertise",
+"f": "Helping friends plan their own road trips"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Mentoring new road trippers",
+"f": "Passing on the practical skills you have learned"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Your road trip philosophy",
+"f": "Defining what a great trip means to you"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Capstone: choose a destination",
+"f": "Select the dream route for your final project"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Capstone: route and stages",
+"f": "Draw the route and split it into daily stages"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Capstone: vehicle and gear",
+"f": "Choose your vehicle, equipment and packing list"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Capstone: stays and stops",
+"f": "Pick places to sleep, eat and explore"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Capstone: budget",
+"f": "Estimate the costs and build a balanced budget"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Capstone: season and weather",
+"f": "Pick the best travel window and a weather plan B"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Capstone: safety and backups",
+"f": "Plan communication, spares and alternatives"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Capstone: culture and language",
+"f": "Prepare greetings, etiquette and local knowledge"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Capstone: the story of the trip",
+"f": "Give your journey a theme and a big highlight"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the full journey",
+"f": "Look back over the whole path and polish your plan"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Present your dream road trip",
+"f": "Describe your full plan as if you were guiding a friend"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Favourite lessons revisited",
+"f": "Pick the lessons that helped you most and say why"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Next adventures",
+"f": "Ideas for trips to dream about after this path"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Keeping the road trip spirit",
+"f": "Bringing curiosity and freedom into everyday life"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "The road goes on",
+"f": "Celebrate a year of learning and set your next travel goal"
+}
+]
+}

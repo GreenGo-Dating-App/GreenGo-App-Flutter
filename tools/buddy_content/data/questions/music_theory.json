@@ -1,0 +1,1305 @@
+{
+ "topic": "music_theory",
+ "questions": [
+  {
+   "id": "music_theory-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What made you curious about how music works?",
+    "de": "Was hat dich neugierig darauf gemacht, wie Musik funktioniert?",
+    "es": "¿Qué te despertó la curiosidad por cómo funciona la música?",
+    "fr": "Qu'est-ce qui t'a donné envie de comprendre comment fonctionne la musique ?",
+    "it": "Che cosa ti ha incuriosito su come funziona la musica?",
+    "pt": "O que te despertou a curiosidade sobre como funciona a música?",
+    "pt_BR": "O que te deixou curioso sobre como a música funciona?"
+   }
+  },
+  {
+   "id": "music_theory-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Which song have you listened to more than any other? What do you love about it?",
+    "de": "Welchen Song hast du öfter gehört als jeden anderen? Was liebst du daran?",
+    "es": "¿Qué canción has escuchado más que ninguna otra? ¿Qué te encanta de ella?",
+    "fr": "Quelle chanson as-tu écoutée plus que toutes les autres ? Qu'est-ce que tu aimes chez elle ?",
+    "it": "Quale canzone hai ascoltato più di qualsiasi altra? Che cosa ami di lei?",
+    "pt": "Que música ouviste mais vezes do que qualquer outra? O que adoras nela?",
+    "pt_BR": "Qual música você já ouviu mais do que qualquer outra? O que você ama nela?"
+   }
+  },
+  {
+   "id": "music_theory-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you play an instrument or sing? How did you start?",
+    "de": "Spielst du ein Instrument oder singst du? Wie hast du angefangen?",
+    "es": "¿Tocas algún instrumento o cantas? ¿Cómo empezaste?",
+    "fr": "Tu joues d'un instrument ou tu chantes ? Comment as-tu commencé ?",
+    "it": "Suoni uno strumento o canti? Come hai iniziato?",
+    "pt": "Tocas algum instrumento ou cantas? Como começaste?",
+    "pt_BR": "Você toca algum instrumento ou canta? Como começou?"
+   }
+  },
+  {
+   "id": "music_theory-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Which instrument would you love to learn, and why?",
+    "de": "Welches Instrument würdest du gern lernen und warum?",
+    "es": "¿Qué instrumento te encantaría aprender y por qué?",
+    "fr": "Quel instrument aimerais-tu apprendre, et pourquoi ?",
+    "it": "Quale strumento ti piacerebbe imparare e perché?",
+    "pt": "Que instrumento adorarias aprender, e porquê?",
+    "pt_BR": "Qual instrumento você adoraria aprender, e por quê?"
+   }
+  },
+  {
+   "id": "music_theory-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of music do you listen to when you want to relax?",
+    "de": "Welche Musik hörst du, wenn du entspannen möchtest?",
+    "es": "¿Qué música escuchas cuando quieres relajarte?",
+    "fr": "Quelle musique écoutes-tu quand tu veux te détendre ?",
+    "it": "Che musica ascolti quando vuoi rilassarti?",
+    "pt": "Que música ouves quando queres relaxar?",
+    "pt_BR": "Que tipo de música você ouve quando quer relaxar?"
+   }
+  },
+  {
+   "id": "music_theory-006",
+   "lv": "any",
+   "i18n": {
+    "en": "And what music gives you energy when you need it?",
+    "de": "Und welche Musik gibt dir Energie, wenn du sie brauchst?",
+    "es": "¿Y qué música te da energía cuando la necesitas?",
+    "fr": "Et quelle musique te donne de l'énergie quand tu en as besoin ?",
+    "it": "E quale musica ti dà energia quando ne hai bisogno?",
+    "pt": "E que música te dá energia quando precisas?",
+    "pt_BR": "E que música te dá energia quando você precisa?"
+   }
+  },
+  {
+   "id": "music_theory-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a song that always reminds you of a special moment?",
+    "de": "Gibt es einen Song, der dich immer an einen besonderen Moment erinnert?",
+    "es": "¿Hay alguna canción que siempre te recuerde un momento especial?",
+    "fr": "Y a-t-il une chanson qui te rappelle toujours un moment spécial ?",
+    "it": "C'è una canzone che ti ricorda sempre un momento speciale?",
+    "pt": "Há alguma música que te lembre sempre um momento especial?",
+    "pt_BR": "Tem alguma música que sempre te lembra um momento especial?"
+   }
+  },
+  {
+   "id": "music_theory-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What music did you grow up hearing at home?",
+    "de": "Mit welcher Musik bist du zu Hause aufgewachsen?",
+    "es": "¿Qué música escuchabas en casa de pequeño?",
+    "fr": "Quelle musique entendais-tu à la maison quand tu étais petit ou petite ?",
+    "it": "Che musica ascoltavi a casa da piccolo?",
+    "pt": "Que música ouvias em casa quando eras pequeno?",
+    "pt_BR": "Que música você ouvia em casa quando era criança?"
+   }
+  },
+  {
+   "id": "music_theory-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Which musical tradition from your country do you think everyone should hear?",
+    "de": "Welche Musiktradition aus deinem Land sollte jeder einmal hören?",
+    "es": "¿Qué tradición musical de tu país crees que todo el mundo debería escuchar?",
+    "fr": "Quelle tradition musicale de ton pays tout le monde devrait-il écouter, selon toi ?",
+    "it": "Quale tradizione musicale del tuo paese dovrebbero ascoltare tutti?",
+    "pt": "Que tradição musical do teu país achas que toda a gente devia ouvir?",
+    "pt_BR": "Qual tradição musical do seu país você acha que todo mundo deveria ouvir?"
+   }
+  },
+  {
+   "id": "music_theory-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you pay more attention to the lyrics or to the melody of a song?",
+    "de": "Achtest du bei einem Song mehr auf den Text oder auf die Melodie?",
+    "es": "¿Te fijas más en la letra o en la melodía de una canción?",
+    "fr": "Tu fais plus attention aux paroles ou à la mélodie d'une chanson ?",
+    "it": "Presti più attenzione al testo o alla melodia di una canzone?",
+    "pt": "Prestas mais atenção à letra ou à melodia de uma música?",
+    "pt_BR": "Você presta mais atenção na letra ou na melodia de uma música?"
+   }
+  },
+  {
+   "id": "music_theory-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which musician or band would you love to ask about how they write music?",
+    "de": "Welche Musikerin, welchen Musiker oder welche Band würdest du gern fragen, wie sie Musik schreiben?",
+    "es": "¿A qué músico o grupo te encantaría preguntar cómo compone su música?",
+    "fr": "À quel musicien ou quel groupe aimerais-tu demander comment il compose ?",
+    "it": "A quale musicista o band vorresti chiedere come scrive la sua musica?",
+    "pt": "A que músico ou banda adorarias perguntar como compõe a sua música?",
+    "pt_BR": "Pra qual músico ou banda você adoraria perguntar como eles compõem?"
+   }
+  },
+  {
+   "id": "music_theory-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you sometimes hum or whistle melodies during the day? Which ones?",
+    "de": "Summst oder pfeifst du tagsüber manchmal Melodien? Welche?",
+    "es": "¿Tarareas o silbas melodías a veces durante el día? ¿Cuáles?",
+    "fr": "Il t'arrive de fredonner ou de siffler des mélodies dans la journée ? Lesquelles ?",
+    "it": "Ti capita di canticchiare o fischiettare melodie durante il giorno? Quali?",
+    "pt": "Às vezes trauteias ou assobias melodias durante o dia? Quais?",
+    "pt_BR": "Você às vezes cantarola ou assobia melodias durante o dia? Quais?"
+   }
+  },
+  {
+   "id": "music_theory-013",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the best concert or live music moment you have experienced?",
+    "de": "Was war das beste Konzert oder der schönste Live-Musik-Moment, den du erlebt hast?",
+    "es": "¿Cuál es el mejor concierto o momento de música en directo que has vivido?",
+    "fr": "Quel est le meilleur concert ou moment de musique live que tu aies vécu ?",
+    "it": "Qual è il concerto o il momento di musica dal vivo più bello che hai vissuto?",
+    "pt": "Qual foi o melhor concerto ou momento de música ao vivo que já viveste?",
+    "pt_BR": "Qual foi o melhor show ou momento de música ao vivo que você já viveu?"
+   }
+  },
+  {
+   "id": "music_theory-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer happy-sounding songs or more melancholic ones?",
+    "de": "Magst du lieber fröhlich klingende Songs oder eher melancholische?",
+    "es": "¿Prefieres las canciones alegres o las más melancólicas?",
+    "fr": "Tu préfères les chansons joyeuses ou plutôt mélancoliques ?",
+    "it": "Preferisci le canzoni allegre o quelle più malinconiche?",
+    "pt": "Preferes músicas alegres ou mais melancólicas?",
+    "pt_BR": "Você prefere músicas alegres ou mais melancólicas?"
+   }
+  },
+  {
+   "id": "music_theory-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Which musical genre would you like to understand better?",
+    "de": "Welches Musikgenre würdest du gern besser verstehen?",
+    "es": "¿Qué género musical te gustaría entender mejor?",
+    "fr": "Quel genre musical aimerais-tu mieux comprendre ?",
+    "it": "Quale genere musicale ti piacerebbe capire meglio?",
+    "pt": "Que género musical gostarias de compreender melhor?",
+    "pt_BR": "Qual gênero musical você gostaria de entender melhor?"
+   }
+  },
+  {
+   "id": "music_theory-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever written a song, a melody or even a little jingle?",
+    "de": "Hast du schon einmal einen Song, eine Melodie oder einen kleinen Jingle geschrieben?",
+    "es": "¿Has escrito alguna vez una canción, una melodía o aunque sea una pequeña sintonía?",
+    "fr": "As-tu déjà écrit une chanson, une mélodie ou même un petit jingle ?",
+    "it": "Hai mai scritto una canzone, una melodia o anche solo un piccolo jingle?",
+    "pt": "Já escreveste uma música, uma melodia ou até um pequeno jingle?",
+    "pt_BR": "Você já compôs uma música, uma melodia ou até um jingle?"
+   }
+  },
+  {
+   "id": "music_theory-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think makes a melody catchy?",
+    "de": "Was macht eine Melodie deiner Meinung nach eingängig?",
+    "es": "¿Qué crees que hace que una melodía sea pegadiza?",
+    "fr": "À ton avis, qu'est-ce qui rend une mélodie entraînante et facile à retenir ?",
+    "it": "Secondo te, che cosa rende orecchiabile una melodia?",
+    "pt": "O que achas que torna uma melodia contagiante?",
+    "pt_BR": "O que você acha que deixa uma melodia chiclete?"
+   }
+  },
+  {
+   "id": "music_theory-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a song that gives you goosebumps? Which part does it?",
+    "de": "Gibt es einen Song, bei dem du Gänsehaut bekommst? An welcher Stelle?",
+    "es": "¿Hay alguna canción que te ponga la piel de gallina? ¿En qué parte?",
+    "fr": "Y a-t-il une chanson qui te donne la chair de poule ? À quel moment ?",
+    "it": "C'è una canzone che ti fa venire la pelle d'oca? In quale punto?",
+    "pt": "Há alguma música que te deixe arrepiado? Em que parte?",
+    "pt_BR": "Tem alguma música que te deixa arrepiado? Em qual parte?"
+   }
+  },
+  {
+   "id": "music_theory-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like dancing? Which rhythms make you want to move?",
+    "de": "Tanzt du gern? Bei welchen Rhythmen möchtest du dich bewegen?",
+    "es": "¿Te gusta bailar? ¿Qué ritmos te dan ganas de moverte?",
+    "fr": "Tu aimes danser ? Quels rythmes te donnent envie de bouger ?",
+    "it": "Ti piace ballare? Quali ritmi ti fanno venire voglia di muoverti?",
+    "pt": "Gostas de dançar? Que ritmos te dão vontade de mexer?",
+    "pt_BR": "Você gosta de dançar? Quais ritmos te dão vontade de se mexer?"
+   }
+  },
+  {
+   "id": "music_theory-020",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually discover new music?",
+    "de": "Wie entdeckst du normalerweise neue Musik?",
+    "es": "¿Cómo sueles descubrir música nueva?",
+    "fr": "Comment découvres-tu de nouvelles musiques, en général ?",
+    "it": "Come scopri di solito nuova musica?",
+    "pt": "Como costumas descobrir música nova?",
+    "pt_BR": "Como você costuma descobrir música nova?"
+   }
+  },
+  {
+   "id": "music_theory-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Which film or series soundtrack do you remember best?",
+    "de": "An welchen Soundtrack aus einem Film oder einer Serie erinnerst du dich am besten?",
+    "es": "¿Qué banda sonora de película o serie recuerdas mejor?",
+    "fr": "De quelle bande originale de film ou de série te souviens-tu le mieux ?",
+    "it": "Quale colonna sonora di un film o di una serie ricordi meglio?",
+    "pt": "De que banda sonora de filme ou série te lembras melhor?",
+    "pt_BR": "De qual trilha sonora de filme ou série você se lembra melhor?"
+   }
+  },
+  {
+   "id": "music_theory-022",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could hear one piece of music played live by an orchestra, what would it be?",
+    "de": "Welches Musikstück würdest du gern einmal live von einem Orchester hören?",
+    "es": "Si pudieras escuchar una obra tocada en directo por una orquesta, ¿cuál sería?",
+    "fr": "Si tu pouvais entendre une œuvre jouée en direct par un orchestre, laquelle choisirais-tu ?",
+    "it": "Se potessi ascoltare un brano suonato dal vivo da un'orchestra, quale sceglieresti?",
+    "pt": "Se pudesses ouvir uma peça tocada ao vivo por uma orquestra, qual seria?",
+    "pt_BR": "Se você pudesse ouvir uma música tocada ao vivo por uma orquestra, qual seria?"
+   }
+  },
+  {
+   "id": "music_theory-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer music with lots of instruments or something simple, like voice and guitar?",
+    "de": "Magst du lieber Musik mit vielen Instrumenten oder etwas Schlichtes wie Stimme und Gitarre?",
+    "es": "¿Prefieres la música con muchos instrumentos o algo sencillo, como voz y guitarra?",
+    "fr": "Tu préfères la musique avec beaucoup d'instruments ou quelque chose de simple, comme voix et guitare ?",
+    "it": "Preferisci la musica con tanti strumenti o qualcosa di semplice, come voce e chitarra?",
+    "pt": "Preferes música com muitos instrumentos ou algo simples, como voz e guitarra?",
+    "pt_BR": "Você prefere música com muitos instrumentos ou algo simples, tipo voz e violão?"
+   }
+  },
+  {
+   "id": "music_theory-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a song in another language that you love even without understanding every word?",
+    "de": "Welchen Song in einer anderen Sprache liebst du, auch ohne jedes Wort zu verstehen?",
+    "es": "¿Qué canción en otro idioma te encanta aunque no entiendas todas las palabras?",
+    "fr": "Quelle chanson dans une autre langue adores-tu même sans comprendre tous les mots ?",
+    "it": "Quale canzone in un'altra lingua ami anche senza capire ogni parola?",
+    "pt": "Que música noutra língua adoras mesmo sem perceber todas as palavras?",
+    "pt_BR": "Qual música em outra língua você ama mesmo sem entender todas as palavras?"
+   }
+  },
+  {
+   "id": "music_theory-025",
+   "lv": "any",
+   "i18n": {
+    "en": "How does music change your mood during the day?",
+    "de": "Wie verändert Musik deine Stimmung im Laufe des Tages?",
+    "es": "¿Cómo cambia la música tu estado de ánimo a lo largo del día?",
+    "fr": "Comment la musique change-t-elle ton humeur au fil de la journée ?",
+    "it": "In che modo la musica cambia il tuo umore durante la giornata?",
+    "pt": "Como é que a música muda o teu humor ao longo do dia?",
+    "pt_BR": "Como a música muda seu humor ao longo do dia?"
+   }
+  },
+  {
+   "id": "music_theory-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever noticed a song that seems to change key near the end?",
+    "de": "Ist dir schon einmal ein Song aufgefallen, der gegen Ende die Tonart zu wechseln scheint?",
+    "es": "¿Te has fijado alguna vez en una canción que parece cambiar de tono al final?",
+    "fr": "As-tu déjà remarqué une chanson qui semble changer de tonalité vers la fin ?",
+    "it": "Hai mai notato una canzone che sembra cambiare tonalità verso la fine?",
+    "pt": "Já reparaste numa música que parece mudar de tom perto do fim?",
+    "pt_BR": "Você já reparou numa música que parece mudar de tom perto do final?"
+   }
+  },
+  {
+   "id": "music_theory-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy singing with others, like in a choir or with friends?",
+    "de": "Singst du gern mit anderen, zum Beispiel im Chor oder mit Freunden?",
+    "es": "¿Te gusta cantar con otras personas, en un coro o con amigos?",
+    "fr": "Tu aimes chanter avec d'autres, dans une chorale ou entre amis ?",
+    "it": "Ti piace cantare con altre persone, in un coro o con gli amici?",
+    "pt": "Gostas de cantar com outras pessoas, num coro ou com amigos?",
+    "pt_BR": "Você gosta de cantar com outras pessoas, num coral ou com amigos?"
+   }
+  },
+  {
+   "id": "music_theory-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which sound do you love most: piano, guitar, strings, drums or voice?",
+    "de": "Welchen Klang liebst du am meisten: Klavier, Gitarre, Streicher, Schlagzeug oder Stimme?",
+    "es": "¿Qué sonido te gusta más: piano, guitarra, cuerdas, batería o voz?",
+    "fr": "Quel son préfères-tu : piano, guitare, cordes, batterie ou voix ?",
+    "it": "Quale suono ami di più: pianoforte, chitarra, archi, batteria o voce?",
+    "pt": "Que som adoras mais: piano, guitarra, cordas, bateria ou voz?",
+    "pt_BR": "Qual som você mais ama: piano, violão, cordas, bateria ou voz?"
+   }
+  },
+  {
+   "id": "music_theory-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a style of music you did not like at first but enjoy now?",
+    "de": "Gibt es eine Musikrichtung, die dir anfangs nicht gefiel, die du jetzt aber magst?",
+    "es": "¿Hay algún estilo de música que al principio no te gustaba y ahora disfrutas?",
+    "fr": "Y a-t-il un style de musique que tu n'aimais pas au début mais que tu apprécies maintenant ?",
+    "it": "C'è uno stile musicale che all'inizio non ti piaceva e che ora apprezzi?",
+    "pt": "Há algum estilo de música de que não gostavas no início, mas que agora aprecias?",
+    "pt_BR": "Tem algum estilo de música de que você não gostava no começo, mas agora curte?"
+   }
+  },
+  {
+   "id": "music_theory-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you like to be able to do after learning some music theory?",
+    "de": "Was möchtest du können, wenn du etwas Musiktheorie gelernt hast?",
+    "es": "¿Qué te gustaría ser capaz de hacer después de aprender algo de teoría musical?",
+    "fr": "Qu'aimerais-tu être capable de faire après avoir appris un peu de théorie musicale ?",
+    "it": "Che cosa vorresti saper fare dopo aver imparato un po' di teoria musicale?",
+    "pt": "O que gostarias de conseguir fazer depois de aprenderes alguma teoria musical?",
+    "pt_BR": "O que você gostaria de conseguir fazer depois de aprender um pouco de teoria musical?"
+   }
+  },
+  {
+   "id": "music_theory-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you listen to music while working or studying? What kind?",
+    "de": "Hörst du beim Arbeiten oder Lernen Musik? Welche?",
+    "es": "¿Escuchas música mientras trabajas o estudias? ¿De qué tipo?",
+    "fr": "Écoutes-tu de la musique en travaillant ou en étudiant ? Laquelle ?",
+    "it": "Ascolti musica mentre lavori o studi? Di che tipo?",
+    "pt": "Ouves música enquanto trabalhas ou estudas? Que tipo?",
+    "pt_BR": "Você ouve música enquanto trabalha ou estuda? De que tipo?"
+   }
+  },
+  {
+   "id": "music_theory-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Which classical composer or piece do you know and like, even a little?",
+    "de": "Welchen klassischen Komponisten oder welches Stück kennst und magst du, wenn auch nur ein bisschen?",
+    "es": "¿Qué compositor u obra clásica conoces y te gusta, aunque sea un poco?",
+    "fr": "Quel compositeur ou quelle œuvre classique connais-tu et aimes-tu, même un peu ?",
+    "it": "Quale compositore o brano classico conosci e ti piace, anche solo un po'?",
+    "pt": "Que compositor ou obra clássica conheces e de que gostas, nem que seja um pouco?",
+    "pt_BR": "Qual compositor ou peça clássica você conhece e curte, nem que seja um pouco?"
+   }
+  },
+  {
+   "id": "music_theory-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What instrument from another culture fascinates you?",
+    "de": "Welches Instrument aus einer anderen Kultur fasziniert dich?",
+    "es": "¿Qué instrumento de otra cultura te fascina?",
+    "fr": "Quel instrument d'une autre culture te fascine ?",
+    "it": "Quale strumento di un'altra cultura ti affascina?",
+    "pt": "Que instrumento de outra cultura te fascina?",
+    "pt_BR": "Qual instrumento de outra cultura te fascina?"
+   }
+  },
+  {
+   "id": "music_theory-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer listening to albums from start to finish or to playlists?",
+    "de": "Hörst du lieber Alben von Anfang bis Ende oder Playlists?",
+    "es": "¿Prefieres escuchar discos de principio a fin o listas de reproducción?",
+    "fr": "Tu préfères écouter des albums du début à la fin ou des playlists ?",
+    "it": "Preferisci ascoltare gli album dall'inizio alla fine o le playlist?",
+    "pt": "Preferes ouvir álbuns do início ao fim ou playlists?",
+    "pt_BR": "Você prefere ouvir álbuns do começo ao fim ou playlists?"
+   }
+  },
+  {
+   "id": "music_theory-035",
+   "lv": "any",
+   "i18n": {
+    "en": "What music do people play at celebrations where you come from?",
+    "de": "Welche Musik wird bei Feiern dort gespielt, wo du herkommst?",
+    "es": "¿Qué música se pone en las celebraciones de donde vienes?",
+    "fr": "Quelle musique passe-t-on pendant les fêtes là d'où tu viens ?",
+    "it": "Che musica si suona alle feste da dove vieni?",
+    "pt": "Que música se toca nas celebrações de onde vens?",
+    "pt_BR": "Que música costuma tocar nas comemorações de onde você vem?"
+   }
+  },
+  {
+   "id": "music_theory-036",
+   "lv": "any",
+   "i18n": {
+    "en": "Which singer's voice do you find the most beautiful?",
+    "de": "Welche Stimme findest du unter allen Sängerinnen und Sängern am schönsten?",
+    "es": "¿La voz de qué cantante te parece la más bonita?",
+    "fr": "Quelle voix de chanteur ou de chanteuse trouves-tu la plus belle ?",
+    "it": "Quale voce di cantante trovi la più bella?",
+    "pt": "Qual é, para ti, a voz de cantor mais bonita?",
+    "pt_BR": "Qual voz de cantor ou cantora você acha mais bonita?"
+   }
+  },
+  {
+   "id": "music_theory-037",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could create the soundtrack of your day, what would it sound like?",
+    "de": "Wenn du den Soundtrack deines Tages gestalten könntest, wie würde er klingen?",
+    "es": "Si pudieras crear la banda sonora de tu día, ¿cómo sonaría?",
+    "fr": "Si tu pouvais composer la bande-son de ta journée, à quoi ressemblerait-elle ?",
+    "it": "Se potessi creare la colonna sonora della tua giornata, come suonerebbe?",
+    "pt": "Se pudesses criar a banda sonora do teu dia, como soaria?",
+    "pt_BR": "Se você pudesse criar a trilha sonora do seu dia, como ela soaria?"
+   }
+  },
+  {
+   "id": "music_theory-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think music theory helps people enjoy music more? Why?",
+    "de": "Glaubst du, dass Musiktheorie hilft, Musik mehr zu genießen? Warum?",
+    "es": "¿Crees que la teoría musical ayuda a disfrutar más de la música? ¿Por qué?",
+    "fr": "Penses-tu que la théorie musicale aide à mieux apprécier la musique ? Pourquoi ?",
+    "it": "Pensi che la teoria musicale aiuti a godersi di più la musica? Perché?",
+    "pt": "Achas que a teoria musical ajuda as pessoas a apreciar mais a música? Porquê?",
+    "pt_BR": "Você acha que a teoria musical ajuda as pessoas a curtir mais a música? Por quê?"
+   }
+  },
+  {
+   "id": "music_theory-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you like to learn first on this music theory path?",
+    "de": "Was möchtest du auf diesem Weg durch die Musiktheorie als Erstes lernen?",
+    "es": "¿Qué te gustaría aprender primero en este camino de teoría musical?",
+    "fr": "Qu'aimerais-tu apprendre en premier sur ce parcours de théorie musicale ?",
+    "it": "Che cosa ti piacerebbe imparare per prima cosa in questo percorso di teoria musicale?",
+    "pt": "O que gostarias de aprender primeiro neste percurso de teoria musical?",
+    "pt_BR": "O que você gostaria de aprender primeiro nesta jornada de teoria musical?"
+   }
+  },
+  {
+   "id": "music_theory-040",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Can you clap along to the beat of your favourite song easily?",
+    "de": "Kannst du leicht im Takt deines Lieblingssongs mitklatschen?",
+    "es": "¿Te resulta fácil seguir con palmas el ritmo de tu canción favorita?",
+    "fr": "Arrives-tu facilement à taper des mains sur le temps de ta chanson préférée ?",
+    "it": "Riesci facilmente a battere le mani a tempo con la tua canzone preferita?",
+    "pt": "Consegues bater palmas facilmente ao ritmo da tua música favorita?",
+    "pt_BR": "Você consegue bater palmas no ritmo da sua música favorita com facilidade?"
+   }
+  },
+  {
+   "id": "music_theory-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried to read sheet music? How did it feel?",
+    "de": "Hast du schon einmal versucht, Noten zu lesen? Wie war das für dich?",
+    "es": "¿Has intentado alguna vez leer partituras? ¿Qué tal te fue?",
+    "fr": "As-tu déjà essayé de lire une partition ? Comment c'était ?",
+    "it": "Hai mai provato a leggere uno spartito? Com'è stato?",
+    "pt": "Já tentaste ler uma partitura? Como foi?",
+    "pt_BR": "Você já tentou ler partitura? Como foi?"
+   }
+  },
+  {
+   "id": "music_theory-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you know the names of the notes, like C D E or do re mi? Which system do you use?",
+    "de": "Kennst du die Notennamen, etwa C D E oder do re mi? Welches System nutzt du?",
+    "es": "¿Conoces los nombres de las notas, como do re mi o C D E? ¿Qué sistema usas?",
+    "fr": "Connais-tu le nom des notes, do ré mi ou C D E ? Quel système utilises-tu ?",
+    "it": "Conosci i nomi delle note, come do re mi o C D E? Quale sistema usi?",
+    "pt": "Conheces os nomes das notas, como dó ré mi ou C D E? Que sistema usas?",
+    "pt_BR": "Você conhece os nomes das notas, tipo dó ré mi ou C D E? Qual sistema você usa?"
+   }
+  },
+  {
+   "id": "music_theory-043",
+   "lv": "any",
+   "i18n": {
+    "en": "Which song would you choose to introduce someone to the music of your culture?",
+    "de": "Mit welchem Song würdest du jemandem die Musik deiner Kultur näherbringen?",
+    "es": "¿Qué canción elegirías para presentarle a alguien la música de tu cultura?",
+    "fr": "Quelle chanson choisirais-tu pour faire découvrir la musique de ta culture ?",
+    "it": "Quale canzone sceglieresti per far conoscere a qualcuno la musica della tua cultura?",
+    "pt": "Que música escolherias para apresentar a alguém a música da tua cultura?",
+    "pt_BR": "Qual música você escolheria pra apresentar a música da sua cultura a alguém?"
+   }
+  },
+  {
+   "id": "music_theory-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Can you tell when a song is fast or slow? What tempo do you enjoy most?",
+    "de": "Erkennst du, ob ein Song schnell oder langsam ist? Welches Tempo magst du am liebsten?",
+    "es": "¿Notas cuándo una canción es rápida o lenta? ¿Qué tempo te gusta más?",
+    "fr": "Sens-tu si une chanson est rapide ou lente ? Quel tempo préfères-tu ?",
+    "it": "Ti accorgi se una canzone è veloce o lenta? Quale tempo preferisci?",
+    "pt": "Consegues perceber se uma música é rápida ou lenta? Que andamento preferes?",
+    "pt_BR": "Você percebe quando uma música é rápida ou lenta? Qual andamento você prefere?"
+   }
+  },
+  {
+   "id": "music_theory-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever played a few notes on a piano or keyboard? What was it like?",
+    "de": "Hast du schon einmal ein paar Töne auf einem Klavier oder Keyboard gespielt? Wie war es?",
+    "es": "¿Has tocado alguna vez unas notas en un piano o teclado? ¿Qué tal fue?",
+    "fr": "As-tu déjà joué quelques notes sur un piano ou un clavier ? Comment c'était ?",
+    "it": "Hai mai suonato qualche nota su un pianoforte o una tastiera? Com'è stato?",
+    "pt": "Já tocaste algumas notas num piano ou teclado? Como foi?",
+    "pt_BR": "Você já tocou algumas notas num piano ou teclado? Como foi?"
+   }
+  },
+  {
+   "id": "music_theory-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you notice more in a song: the rhythm or the melody?",
+    "de": "Was fällt dir bei einem Song mehr auf: der Rhythmus oder die Melodie?",
+    "es": "¿En qué te fijas más en una canción: en el ritmo o en la melodía?",
+    "fr": "Qu'est-ce que tu remarques le plus dans une chanson : le rythme ou la mélodie ?",
+    "it": "Che cosa noti di più in una canzone: il ritmo o la melodia?",
+    "pt": "Em que reparas mais numa música: no ritmo ou na melodia?",
+    "pt_BR": "O que você nota mais numa música: o ritmo ou a melodia?"
+   }
+  },
+  {
+   "id": "music_theory-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Can you hear the difference between a high note and a low note easily?",
+    "de": "Hörst du den Unterschied zwischen einem hohen und einem tiefen Ton leicht heraus?",
+    "es": "¿Distingues con facilidad una nota aguda de una grave?",
+    "fr": "Entends-tu facilement la différence entre une note aiguë et une note grave ?",
+    "it": "Senti facilmente la differenza tra una nota acuta e una grave?",
+    "pt": "Ouves facilmente a diferença entre uma nota aguda e uma grave?",
+    "pt_BR": "Você ouve fácil a diferença entre uma nota aguda e uma grave?"
+   }
+  },
+  {
+   "id": "music_theory-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which songs do you know that feel like a waltz, counting one two three?",
+    "de": "Welche Songs kennst du, die sich wie ein Walzer anfühlen, mit eins zwei drei?",
+    "es": "¿Qué canciones conoces que suenen como un vals, contando uno dos tres?",
+    "fr": "Quelles chansons connais-tu qui ressemblent à une valse, en comptant un deux trois ?",
+    "it": "Quali canzoni conosci che sembrano un valzer, contando uno due tre?",
+    "pt": "Que músicas conheces que pareçam uma valsa, contando um dois três?",
+    "pt_BR": "Quais músicas você conhece que parecem uma valsa, contando um dois três?"
+   }
+  },
+  {
+   "id": "music_theory-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do some songs sound happy and others sad to you? What do you think causes that?",
+    "de": "Klingen manche Songs für dich fröhlich und andere traurig? Woran liegt das wohl?",
+    "es": "¿Te suenan unas canciones alegres y otras tristes? ¿A qué crees que se debe?",
+    "fr": "Certaines chansons te semblent-elles joyeuses et d'autres tristes ? D'où cela vient-il, selon toi ?",
+    "it": "Alcune canzoni ti sembrano allegre e altre tristi? Secondo te da che cosa dipende?",
+    "pt": "Algumas músicas parecem-te alegres e outras tristes? A que achas que se deve?",
+    "pt_BR": "Algumas músicas te parecem alegres e outras tristes? O que você acha que causa isso?"
+   }
+  },
+  {
+   "id": "music_theory-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever used a metronome or a click track? How did it feel?",
+    "de": "Hast du schon einmal mit Metronom oder Klick geübt? Wie war das?",
+    "es": "¿Has usado alguna vez un metrónomo o una pista de clic? ¿Qué tal te fue?",
+    "fr": "As-tu déjà utilisé un métronome ? Comment l'as-tu vécu ?",
+    "it": "Hai mai usato un metronomo o un click? Come ti sei trovato?",
+    "pt": "Já usaste um metrónomo ou uma faixa de clique? Como correu?",
+    "pt_BR": "Você já usou um metrônomo ou um clique? Como foi?"
+   }
+  },
+  {
+   "id": "music_theory-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Can you find the steady beat in a song with a complicated rhythm?",
+    "de": "Findest du den gleichmäßigen Grundschlag auch in einem Song mit komplizierterem Rhythmus?",
+    "es": "¿Eres capaz de encontrar el pulso en una canción con un ritmo complicado?",
+    "fr": "Arrives-tu à trouver la pulsation régulière dans une chanson au rythme compliqué ?",
+    "it": "Riesci a trovare il battito regolare in una canzone con un ritmo complicato?",
+    "pt": "Consegues encontrar a pulsação regular numa música com um ritmo complicado?",
+    "pt_BR": "Você consegue achar a pulsação numa música com um ritmo complicado?"
+   }
+  },
+  {
+   "id": "music_theory-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you enjoy more: soft, quiet music or loud, powerful music?",
+    "de": "Was magst du lieber: leise, sanfte Musik oder laute, kraftvolle Musik?",
+    "es": "¿Qué disfrutas más: la música suave y tranquila o la potente y fuerte?",
+    "fr": "Qu'est-ce que tu préfères : une musique douce et calme ou forte et puissante ?",
+    "it": "Che cosa ti piace di più: musica dolce e tranquilla o forte e potente?",
+    "pt": "O que preferes: música suave e calma ou forte e poderosa?",
+    "pt_BR": "O que você curte mais: música suave e calma ou alta e potente?"
+   }
+  },
+  {
+   "id": "music_theory-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried to sing a scale, like do re mi fa sol la si do?",
+    "de": "Hast du schon einmal versucht, eine Tonleiter zu singen, etwa do re mi fa sol la si do?",
+    "es": "¿Has intentado alguna vez cantar una escala, como do re mi fa sol la si do?",
+    "fr": "As-tu déjà essayé de chanter une gamme, do ré mi fa sol la si do ?",
+    "it": "Hai mai provato a cantare una scala, come do re mi fa sol la si do?",
+    "pt": "Já tentaste cantar uma escala, como dó ré mi fá sol lá si dó?",
+    "pt_BR": "Você já tentou cantar uma escala, tipo dó ré mi fá sol lá si dó?"
+   }
+  },
+  {
+   "id": "music_theory-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which part of a song do you like best: the verse, the chorus or the bridge?",
+    "de": "Welchen Teil eines Songs magst du am liebsten: Strophe, Refrain oder Bridge?",
+    "es": "¿Qué parte de una canción te gusta más: la estrofa, el estribillo o el puente?",
+    "fr": "Quelle partie d'une chanson préfères-tu : le couplet, le refrain ou le pont ?",
+    "it": "Quale parte di una canzone preferisci: la strofa, il ritornello o il bridge?",
+    "pt": "De que parte de uma música gostas mais: a estrofe, o refrão ou a ponte?",
+    "pt_BR": "De qual parte de uma música você mais gosta: a estrofe, o refrão ou a ponte?"
+   }
+  },
+  {
+   "id": "music_theory-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you know any songs that use only a few chords? Which ones?",
+    "de": "Kennst du Songs, die mit nur wenigen Akkorden auskommen? Welche?",
+    "es": "¿Conoces canciones que usen solo unos pocos acordes? ¿Cuáles?",
+    "fr": "Connais-tu des chansons qui n'utilisent que quelques accords ? Lesquelles ?",
+    "it": "Conosci canzoni che usano solo pochi accordi? Quali?",
+    "pt": "Conheces músicas que usem apenas alguns acordes? Quais?",
+    "pt_BR": "Você conhece músicas que usam só poucos acordes? Quais?"
+   }
+  },
+  {
+   "id": "music_theory-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "When you hear a chord, does it feel bright or dark to you? Can you describe it?",
+    "de": "Wirkt ein Akkord auf dich hell oder dunkel? Kannst du das beschreiben?",
+    "es": "Cuando oyes un acorde, ¿te parece luminoso u oscuro? ¿Puedes describirlo?",
+    "fr": "Quand tu entends un accord, te semble-t-il lumineux ou sombre ? Peux-tu le décrire ?",
+    "it": "Quando senti un accordo, ti sembra luminoso o scuro? Sapresti descriverlo?",
+    "pt": "Quando ouves um acorde, parece-te luminoso ou escuro? Consegues descrevê-lo?",
+    "pt_BR": "Quando você ouve um acorde, ele te parece claro ou escuro? Consegue descrever?"
+   }
+  },
+  {
+   "id": "music_theory-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the easiest way for you to remember a melody?",
+    "de": "Wie kannst du dir eine Melodie am leichtesten merken?",
+    "es": "¿Cuál es la forma más fácil para ti de recordar una melodía?",
+    "fr": "Quelle est pour toi la façon la plus simple de retenir une mélodie ?",
+    "it": "Qual è per te il modo più facile per ricordare una melodia?",
+    "pt": "Qual é para ti a maneira mais fácil de memorizar uma melodia?",
+    "pt_BR": "Qual é o jeito mais fácil pra você memorizar uma melodia?"
+   }
+  },
+  {
+   "id": "music_theory-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever made up a little rhythm by clapping or tapping on a table?",
+    "de": "Hast du dir schon einmal einen kleinen Rhythmus ausgedacht, klatschend oder auf dem Tisch trommelnd?",
+    "es": "¿Te has inventado alguna vez un pequeño ritmo con palmas o golpeando una mesa?",
+    "fr": "As-tu déjà inventé un petit rythme en tapant des mains ou sur une table ?",
+    "it": "Ti è mai capitato di inventare un piccolo ritmo battendo le mani o tamburellando sul tavolo?",
+    "pt": "Já inventaste um pequeno ritmo a bater palmas ou a tamborilar numa mesa?",
+    "pt_BR": "Você já inventou um ritminho batendo palmas ou batucando na mesa?"
+   }
+  },
+  {
+   "id": "music_theory-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which instrument in a band do you usually hear first?",
+    "de": "Welches Instrument einer Band hörst du meistens zuerst heraus?",
+    "es": "¿Qué instrumento de un grupo sueles oír primero?",
+    "fr": "Quel instrument d'un groupe entends-tu en premier, d'habitude ?",
+    "it": "Quale strumento di una band senti di solito per primo?",
+    "pt": "Que instrumento de uma banda costumas ouvir primeiro?",
+    "pt_BR": "Qual instrumento de uma banda você costuma ouvir primeiro?"
+   }
+  },
+  {
+   "id": "music_theory-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you find it easier to learn music by ear or by reading it?",
+    "de": "Lernst du Musik leichter nach Gehör oder nach Noten?",
+    "es": "¿Te resulta más fácil aprender música de oído o leyéndola?",
+    "fr": "Tu apprends plus facilement la musique d'oreille ou en lisant la partition ?",
+    "it": "Ti è più facile imparare la musica a orecchio o leggendola?",
+    "pt": "Achas mais fácil aprender música de ouvido ou a ler partitura?",
+    "pt_BR": "Você acha mais fácil aprender música de ouvido ou lendo partitura?"
+   }
+  },
+  {
+   "id": "music_theory-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What does silence or a pause in a song make you feel?",
+    "de": "Was löst Stille oder eine Pause in einem Song bei dir aus?",
+    "es": "¿Qué te hace sentir un silencio o una pausa en una canción?",
+    "fr": "Que ressens-tu face à un silence ou une pause dans une chanson ?",
+    "it": "Che cosa ti fa provare un silenzio o una pausa in una canzone?",
+    "pt": "O que te faz sentir um silêncio ou uma pausa numa música?",
+    "pt_BR": "O que um silêncio ou uma pausa numa música te faz sentir?"
+   }
+  },
+  {
+   "id": "music_theory-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which famous melody would you like to learn to play or sing first?",
+    "de": "Welche berühmte Melodie würdest du als Erstes gern spielen oder singen lernen?",
+    "es": "¿Qué melodía famosa te gustaría aprender a tocar o cantar primero?",
+    "fr": "Quelle mélodie célèbre aimerais-tu apprendre à jouer ou à chanter en premier ?",
+    "it": "Quale melodia famosa ti piacerebbe imparare a suonare o cantare per prima?",
+    "pt": "Que melodia famosa gostarias de aprender a tocar ou cantar primeiro?",
+    "pt_BR": "Qual melodia famosa você gostaria de aprender a tocar ou cantar primeiro?"
+   }
+  },
+  {
+   "id": "music_theory-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you noticed that some songs start before the first strong beat?",
+    "de": "Ist dir aufgefallen, dass manche Songs schon vor dem ersten betonten Schlag beginnen?",
+    "es": "¿Te has fijado en que algunas canciones empiezan antes del primer tiempo fuerte?",
+    "fr": "As-tu remarqué que certaines chansons commencent avant le premier temps fort ?",
+    "it": "Hai notato che alcune canzoni iniziano prima del primo tempo forte?",
+    "pt": "Já reparaste que algumas músicas começam antes do primeiro tempo forte?",
+    "pt_BR": "Você já reparou que algumas músicas começam antes do primeiro tempo forte?"
+   }
+  },
+  {
+   "id": "music_theory-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What questions about music have you always wanted to ask someone?",
+    "de": "Welche Fragen zur Musik wolltest du schon immer einmal jemandem stellen?",
+    "es": "¿Qué preguntas sobre música siempre has querido hacerle a alguien?",
+    "fr": "Quelles questions sur la musique as-tu toujours voulu poser à quelqu'un ?",
+    "it": "Quali domande sulla musica hai sempre voluto fare a qualcuno?",
+    "pt": "Que perguntas sobre música sempre quiseste fazer a alguém?",
+    "pt_BR": "Quais perguntas sobre música você sempre quis fazer a alguém?"
+   }
+  },
+  {
+   "id": "music_theory-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How would you explain the difference between rhythm and melody to a friend?",
+    "de": "Wie würdest du einem Freund den Unterschied zwischen Rhythmus und Melodie erklären?",
+    "es": "¿Cómo le explicarías a un amigo la diferencia entre ritmo y melodía?",
+    "fr": "Comment expliquerais-tu à un ami la différence entre rythme et mélodie ?",
+    "it": "Come spiegheresti a un amico la differenza tra ritmo e melodia?",
+    "pt": "Como explicarias a um amigo a diferença entre ritmo e melodia?",
+    "pt_BR": "Como você explicaria pra um amigo a diferença entre ritmo e melodia?"
+   }
+  },
+  {
+   "id": "music_theory-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do minor keys always sound sad to you, or can they feel different?",
+    "de": "Klingen Molltonarten für dich immer traurig, oder können sie auch anders wirken?",
+    "es": "¿Las tonalidades menores te suenan siempre tristes o pueden transmitir otras cosas?",
+    "fr": "Les tonalités mineures te semblent-elles toujours tristes, ou peuvent-elles exprimer autre chose ?",
+    "it": "Le tonalità minori ti sembrano sempre tristi o possono trasmettere altro?",
+    "pt": "As tonalidades menores parecem-te sempre tristes ou podem transmitir outras coisas?",
+    "pt_BR": "Os tons menores sempre te parecem tristes ou podem passar outras sensações?"
+   }
+  },
+  {
+   "id": "music_theory-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which chord progression do you hear everywhere in songs you know?",
+    "de": "Welche Akkordfolge hörst du in Songs, die du kennst, überall?",
+    "es": "¿Qué progresión de acordes oyes por todas partes en canciones que conoces?",
+    "fr": "Quelle grille d'accords entends-tu partout dans les chansons que tu connais ?",
+    "it": "Quale giro di accordi senti ovunque nelle canzoni che conosci?",
+    "pt": "Que progressão de acordes ouves em todo o lado nas músicas que conheces?",
+    "pt_BR": "Qual progressão de acordes você escuta em todo lugar nas músicas que conhece?"
+   }
+  },
+  {
+   "id": "music_theory-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried using the circle of fifths? Did it help you understand keys?",
+    "de": "Hast du schon mit dem Quintenzirkel gearbeitet? Hat er dir geholfen, Tonarten zu verstehen?",
+    "es": "¿Has probado a usar el círculo de quintas? ¿Te ayudó a entender las tonalidades?",
+    "fr": "As-tu déjà utilisé le cycle des quintes ? T'a-t-il aidé à comprendre les tonalités ?",
+    "it": "Hai provato a usare il circolo delle quinte? Ti ha aiutato a capire le tonalità?",
+    "pt": "Já experimentaste usar o ciclo de quintas? Ajudou-te a perceber as tonalidades?",
+    "pt_BR": "Você já tentou usar o ciclo das quintas? Ele te ajudou a entender as tonalidades?"
+   }
+  },
+  {
+   "id": "music_theory-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which seventh chord sound do you like most: major seventh, minor seventh or dominant?",
+    "de": "Welcher Septakkord gefällt dir am besten: großer Septakkord, Moll-Sept oder Dominantsept?",
+    "es": "¿Qué acorde de séptima te gusta más: séptima mayor, menor o de dominante?",
+    "fr": "Quel accord de septième préfères-tu : septième majeure, mineure ou de dominante ?",
+    "it": "Quale accordo di settima ti piace di più: settima maggiore, minore o di dominante?",
+    "pt": "Que acorde de sétima preferes: sétima maior, menor ou de dominante?",
+    "pt_BR": "Qual acorde com sétima você prefere: sétima maior, menor ou dominante?"
+   }
+  },
+  {
+   "id": "music_theory-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Can you recognise some intervals by ear now? Which ones are easiest for you?",
+    "de": "Erkennst du inzwischen einige Intervalle nach Gehör? Welche fallen dir am leichtesten?",
+    "es": "¿Ya reconoces algunos intervalos de oído? ¿Cuáles te resultan más fáciles?",
+    "fr": "Reconnais-tu maintenant certains intervalles à l'oreille ? Lesquels sont les plus faciles pour toi ?",
+    "it": "Riesci ora a riconoscere alcuni intervalli a orecchio? Quali ti vengono più facili?",
+    "pt": "Já reconheces alguns intervalos de ouvido? Quais são os mais fáceis para ti?",
+    "pt_BR": "Você já reconhece alguns intervalos de ouvido? Quais são os mais fáceis pra você?"
+   }
+  },
+  {
+   "id": "music_theory-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which song ending do you find most satisfying, and why?",
+    "de": "Welches Song-Ende findest du besonders befriedigend und warum?",
+    "es": "¿Qué final de canción te parece más satisfactorio y por qué?",
+    "fr": "Quelle fin de chanson trouves-tu la plus satisfaisante, et pourquoi ?",
+    "it": "Quale finale di canzone trovi più appagante e perché?",
+    "pt": "Que final de música achas mais satisfatório, e porquê?",
+    "pt_BR": "Qual final de música você acha mais satisfatório, e por quê?"
+   }
+  },
+  {
+   "id": "music_theory-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried writing a chord progression of your own? What mood did it have?",
+    "de": "Hast du schon eine eigene Akkordfolge geschrieben? Welche Stimmung hatte sie?",
+    "es": "¿Has probado a escribir tu propia progresión de acordes? ¿Qué ambiente tenía?",
+    "fr": "As-tu déjà écrit ta propre grille d'accords ? Quelle ambiance avait-elle ?",
+    "it": "Hai provato a scrivere un tuo giro di accordi? Che atmosfera aveva?",
+    "pt": "Já experimentaste escrever a tua própria progressão de acordes? Que ambiente tinha?",
+    "pt_BR": "Você já tentou criar sua própria progressão de acordes? Que clima ela tinha?"
+   }
+  },
+  {
+   "id": "music_theory-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you enjoy more: swing rhythms or straight rhythms?",
+    "de": "Was magst du lieber: geswingte oder gerade Rhythmen?",
+    "es": "¿Qué te gusta más: los ritmos con swing o los ritmos rectos?",
+    "fr": "Qu'est-ce que tu préfères : les rythmes swing ou les rythmes droits ?",
+    "it": "Che cosa ti piace di più: i ritmi swing o quelli dritti?",
+    "pt": "O que preferes: ritmos com swing ou ritmos direitos?",
+    "pt_BR": "O que você curte mais: ritmos com swing ou ritmos retos?"
+   }
+  },
+  {
+   "id": "music_theory-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever improvised a melody, even just humming over a song?",
+    "de": "Hast du schon einmal eine Melodie improvisiert, und sei es nur summend zu einem Song?",
+    "es": "¿Has improvisado alguna vez una melodía, aunque sea tarareando sobre una canción?",
+    "fr": "As-tu déjà improvisé une mélodie, même juste en fredonnant sur une chanson ?",
+    "it": "Hai mai improvvisato una melodia, anche solo canticchiando su una canzone?",
+    "pt": "Já improvisaste uma melodia, nem que fosse a trautear por cima de uma música?",
+    "pt_BR": "Você já improvisou uma melodia, nem que seja cantarolando por cima de uma música?"
+   }
+  },
+  {
+   "id": "music_theory-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which mode sounds most interesting to you: Dorian, Mixolydian or Lydian?",
+    "de": "Welcher Modus klingt für dich am spannendsten: Dorisch, Mixolydisch oder Lydisch?",
+    "es": "¿Qué modo te parece más interesante: dórico, mixolidio o lidio?",
+    "fr": "Quel mode te semble le plus intéressant : dorien, mixolydien ou lydien ?",
+    "it": "Quale modo ti sembra più interessante: dorico, misolidio o lidio?",
+    "pt": "Que modo te parece mais interessante: dórico, mixolídio ou lídio?",
+    "pt_BR": "Qual modo te parece mais interessante: dórico, mixolídio ou lídio?"
+   }
+  },
+  {
+   "id": "music_theory-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you know a blues song you love? What makes the blues feel special to you?",
+    "de": "Kennst du einen Blues, den du liebst? Was macht den Blues für dich besonders?",
+    "es": "¿Conoces algún blues que te encante? ¿Qué hace especial al blues para ti?",
+    "fr": "Connais-tu un blues que tu adores ? Qu'est-ce qui rend le blues spécial pour toi ?",
+    "it": "Conosci un blues che ami? Che cosa rende speciale il blues per te?",
+    "pt": "Conheces algum blues de que gostes muito? O que torna o blues especial para ti?",
+    "pt_BR": "Você conhece algum blues que ama? O que torna o blues especial pra você?"
+   }
+  },
+  {
+   "id": "music_theory-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think songwriters build excitement before a chorus?",
+    "de": "Wie bauen Songwriter deiner Meinung nach vor dem Refrain Spannung auf?",
+    "es": "¿Cómo crees que los compositores generan emoción antes del estribillo?",
+    "fr": "Comment, selon toi, les auteurs-compositeurs créent-ils de l'attente avant le refrain ?",
+    "it": "Secondo te, come fanno gli autori a creare attesa prima del ritornello?",
+    "pt": "Como achas que os compositores criam expectativa antes do refrão?",
+    "pt_BR": "Como você acha que os compositores criam expectativa antes do refrão?"
+   }
+  },
+  {
+   "id": "music_theory-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever tried to figure out the chords of a song by ear? How did it go?",
+    "de": "Hast du schon versucht, die Akkorde eines Songs nach Gehör herauszufinden? Wie lief es?",
+    "es": "¿Has intentado sacar de oído los acordes de una canción? ¿Qué tal te fue?",
+    "fr": "As-tu déjà essayé de trouver les accords d'une chanson à l'oreille ? Comment ça s'est passé ?",
+    "it": "Hai mai provato a tirare giù a orecchio gli accordi di una canzone? Com'è andata?",
+    "pt": "Já tentaste tirar de ouvido os acordes de uma música? Como correu?",
+    "pt_BR": "Você já tentou tirar de ouvido os acordes de uma música? Como foi?"
+   }
+  },
+  {
+   "id": "music_theory-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which song structure do you find most satisfying to listen to?",
+    "de": "Welche Songstruktur hörst du am liebsten?",
+    "es": "¿Qué estructura de canción te resulta más agradable de escuchar?",
+    "fr": "Quelle structure de chanson trouves-tu la plus agréable à écouter ?",
+    "it": "Quale struttura di canzone trovi più piacevole da ascoltare?",
+    "pt": "Que estrutura de música achas mais agradável de ouvir?",
+    "pt_BR": "Qual estrutura de música você acha mais gostosa de ouvir?"
+   }
+  },
+  {
+   "id": "music_theory-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you like music in six-eight time? Which pieces come to mind?",
+    "de": "Magst du Musik im Sechsachteltakt? Welche Stücke fallen dir ein?",
+    "es": "¿Te gusta la música en seis por ocho? ¿Qué piezas te vienen a la mente?",
+    "fr": "Aimes-tu la musique à six-huit ? Quels morceaux te viennent à l'esprit ?",
+    "it": "Ti piace la musica in sei ottavi? Quali brani ti vengono in mente?",
+    "pt": "Gostas de música em seis por oito? Que peças te vêm à cabeça?",
+    "pt_BR": "Você gosta de música em seis por oito? Quais músicas vêm à sua cabeça?"
+   }
+  },
+  {
+   "id": "music_theory-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which music theory idea surprised you the most so far?",
+    "de": "Welche Idee aus der Musiktheorie hat dich bisher am meisten überrascht?",
+    "es": "¿Qué idea de teoría musical te ha sorprendido más hasta ahora?",
+    "fr": "Quelle notion de théorie musicale t'a le plus surpris jusqu'ici ?",
+    "it": "Quale concetto di teoria musicale ti ha sorpreso di più finora?",
+    "pt": "Que ideia de teoria musical te surpreendeu mais até agora?",
+    "pt_BR": "Qual ideia de teoria musical mais te surpreendeu até agora?"
+   }
+  },
+  {
+   "id": "music_theory-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you harmonise a simple melody like a folk song from your country?",
+    "de": "Wie würdest du eine einfache Melodie harmonisieren, etwa ein Volkslied aus deinem Land?",
+    "es": "¿Cómo armonizarías una melodía sencilla, como una canción popular de tu país?",
+    "fr": "Comment harmoniserais-tu une mélodie simple, comme une chanson populaire de ton pays ?",
+    "it": "Come armonizzeresti una melodia semplice, come una canzone popolare del tuo paese?",
+    "pt": "Como harmonizarias uma melodia simples, como uma canção popular do teu país?",
+    "pt_BR": "Como você harmonizaria uma melodia simples, tipo uma música folclórica do seu país?"
+   }
+  },
+  {
+   "id": "music_theory-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which classical form would you like to hear more examples of: rondo, sonata or variations?",
+    "de": "Von welcher Form würdest du gern mehr Beispiele hören: Rondo, Sonate oder Variationen?",
+    "es": "¿De qué forma clásica te gustaría escuchar más ejemplos: rondó, sonata o variaciones?",
+    "fr": "De quelle forme classique aimerais-tu entendre plus d'exemples : rondo, sonate ou variations ?",
+    "it": "Di quale forma classica vorresti ascoltare più esempi: rondò, sonata o variazioni?",
+    "pt": "De que forma clássica gostarias de ouvir mais exemplos: rondó, sonata ou variações?",
+    "pt_BR": "De qual forma clássica você gostaria de ouvir mais exemplos: rondó, sonata ou variações?"
+   }
+  },
+  {
+   "id": "music_theory-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever transposed a song to fit your voice better?",
+    "de": "Hast du schon einmal einen Song transponiert, damit er besser zu deiner Stimme passt?",
+    "es": "¿Has transportado alguna vez una canción para que se ajuste mejor a tu voz?",
+    "fr": "As-tu déjà transposé une chanson pour qu'elle convienne mieux à ta voix ?",
+    "it": "Hai mai trasportato una canzone per adattarla meglio alla tua voce?",
+    "pt": "Já transpuseste uma música para se adaptar melhor à tua voz?",
+    "pt_BR": "Você já transpôs uma música pra ela combinar melhor com a sua voz?"
+   }
+  },
+  {
+   "id": "music_theory-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which suspended or added-note chord sound do you find most beautiful?",
+    "de": "Welcher Klang eines Sus- oder Add-Akkords gefällt dir am besten?",
+    "es": "¿Qué sonido de acorde suspendido o con nota añadida te parece más bonito?",
+    "fr": "Quel son d'accord suspendu ou avec note ajoutée trouves-tu le plus beau ?",
+    "it": "Quale suono di accordo sospeso o con nota aggiunta trovi più bello?",
+    "pt": "Que som de acorde suspenso ou com nota acrescentada achas mais bonito?",
+    "pt_BR": "Qual som de acorde suspenso ou com nota adicionada você acha mais bonito?"
+   }
+  },
+  {
+   "id": "music_theory-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which borrowed or surprising chord in a song has stuck with you?",
+    "de": "Welcher entliehene oder überraschende Akkord in einem Song ist dir im Kopf geblieben?",
+    "es": "¿Qué acorde prestado o sorprendente de una canción se te ha quedado grabado?",
+    "fr": "Quel accord emprunté ou surprenant dans une chanson t'a marqué ?",
+    "it": "Quale accordo preso in prestito o sorprendente in una canzone ti è rimasto in testa?",
+    "pt": "Que acorde emprestado ou surpreendente numa música te ficou na memória?",
+    "pt_BR": "Qual acorde emprestado ou surpreendente numa música ficou na sua cabeça?"
+   }
+  },
+  {
+   "id": "music_theory-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you feel about modulation in songs? Do you have a favourite key change?",
+    "de": "Was hältst du von Modulationen in Songs? Hast du einen Lieblings-Tonartwechsel?",
+    "es": "¿Qué opinas de las modulaciones en las canciones? ¿Tienes algún cambio de tono favorito?",
+    "fr": "Que penses-tu des modulations dans les chansons ? As-tu un changement de tonalité préféré ?",
+    "it": "Che cosa pensi delle modulazioni nelle canzoni? Hai un cambio di tonalità preferito?",
+    "pt": "O que achas das modulações nas músicas? Tens alguma mudança de tom favorita?",
+    "pt_BR": "O que você acha das modulações nas músicas? Tem alguma mudança de tom favorita?"
+   }
+  },
+  {
+   "id": "music_theory-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which jazz musician or album opened your ears to new harmony?",
+    "de": "Welcher Jazzmusiker oder welches Album hat dir die Ohren für neue Harmonien geöffnet?",
+    "es": "¿Qué músico o disco de jazz te abrió los oídos a nuevas armonías?",
+    "fr": "Quel musicien ou quel album de jazz t'a ouvert les oreilles à de nouvelles harmonies ?",
+    "it": "Quale musicista o album jazz ti ha aperto le orecchie a nuove armonie?",
+    "pt": "Que músico ou álbum de jazz te abriu os ouvidos a novas harmonias?",
+    "pt_BR": "Qual músico ou álbum de jazz abriu seus ouvidos pra novas harmonias?"
+   }
+  },
+  {
+   "id": "music_theory-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you tried playing or clapping in an odd meter like five or seven? How did it feel?",
+    "de": "Hast du schon in einem ungeraden Takt wie Fünf oder Sieben gespielt oder geklatscht? Wie war es?",
+    "es": "¿Has probado a tocar o dar palmas en un compás irregular de cinco o siete? ¿Qué tal?",
+    "fr": "As-tu déjà joué ou frappé dans une mesure impaire, à cinq ou sept temps ? C'était comment ?",
+    "it": "Hai mai provato a suonare o battere le mani in un tempo dispari, in cinque o sette? Com'è stato?",
+    "pt": "Já experimentaste tocar ou bater palmas num compasso irregular de cinco ou sete? Como foi?",
+    "pt_BR": "Você já tentou tocar ou bater palmas num compasso ímpar, de cinco ou sete? Como foi?"
+   }
+  },
+  {
+   "id": "music_theory-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which musical tradition beyond Western theory would you like to study more deeply?",
+    "de": "Welche Musiktradition jenseits der westlichen Theorie würdest du gern genauer studieren?",
+    "es": "¿Qué tradición musical más allá de la teoría occidental te gustaría estudiar a fondo?",
+    "fr": "Quelle tradition musicale au-delà de la théorie occidentale aimerais-tu étudier en profondeur ?",
+    "it": "Quale tradizione musicale oltre la teoria occidentale ti piacerebbe studiare a fondo?",
+    "pt": "Que tradição musical para além da teoria ocidental gostarias de estudar mais a fundo?",
+    "pt_BR": "Qual tradição musical além da teoria ocidental você gostaria de estudar mais a fundo?"
+   }
+  },
+  {
+   "id": "music_theory-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think film composers use harmony to create emotion?",
+    "de": "Wie nutzen Filmkomponisten deiner Meinung nach Harmonien, um Gefühle zu erzeugen?",
+    "es": "¿Cómo crees que los compositores de cine usan la armonía para crear emociones?",
+    "fr": "Comment, selon toi, les compositeurs de musique de film utilisent-ils l'harmonie pour émouvoir ?",
+    "it": "Secondo te, come usano l'armonia i compositori di colonne sonore per creare emozioni?",
+    "pt": "Como achas que os compositores de cinema usam a harmonia para criar emoção?",
+    "pt_BR": "Como você acha que os compositores de trilhas usam a harmonia pra criar emoção?"
+   }
+  },
+  {
+   "id": "music_theory-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you enjoy about counterpoint, where several melodies play at once?",
+    "de": "Was gefällt dir am Kontrapunkt, bei dem mehrere Melodien gleichzeitig erklingen?",
+    "es": "¿Qué disfrutas del contrapunto, cuando suenan varias melodías a la vez?",
+    "fr": "Qu'est-ce qui te plaît dans le contrepoint, quand plusieurs mélodies jouent en même temps ?",
+    "it": "Che cosa ti piace del contrappunto, quando più melodie suonano insieme?",
+    "pt": "O que te agrada no contraponto, quando várias melodias soam ao mesmo tempo?",
+    "pt_BR": "O que você curte no contraponto, quando várias melodias tocam ao mesmo tempo?"
+   }
+  },
+  {
+   "id": "music_theory-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which song would you love to reharmonise with richer chords?",
+    "de": "Welchen Song würdest du gern mit reicheren Akkorden neu harmonisieren?",
+    "es": "¿Qué canción te encantaría rearmonizar con acordes más ricos?",
+    "fr": "Quelle chanson aimerais-tu réharmoniser avec des accords plus riches ?",
+    "it": "Quale canzone ti piacerebbe riarmonizzare con accordi più ricchi?",
+    "pt": "Que música adorarias rearmonizar com acordes mais ricos?",
+    "pt_BR": "Qual música você adoraria rearmonizar com acordes mais ricos?"
+   }
+  },
+  {
+   "id": "music_theory-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has learning theory changed the way you listen to your favourite music?",
+    "de": "Wie hat das Lernen der Theorie verändert, wie du deine Lieblingsmusik hörst?",
+    "es": "¿Cómo ha cambiado aprender teoría tu forma de escuchar tu música favorita?",
+    "fr": "Comment l'apprentissage de la théorie a-t-il changé ta façon d'écouter ta musique préférée ?",
+    "it": "Come ha cambiato lo studio della teoria il tuo modo di ascoltare la musica che ami?",
+    "pt": "Como é que aprender teoria mudou a forma como ouves a tua música favorita?",
+    "pt_BR": "Como aprender teoria mudou seu jeito de ouvir suas músicas favoritas?"
+   }
+  },
+  {
+   "id": "music_theory-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you think of music without a clear key, like atonal or twelve-tone pieces?",
+    "de": "Was hältst du von Musik ohne klare Tonart, etwa atonalen oder Zwölftonstücken?",
+    "es": "¿Qué opinas de la música sin una tonalidad clara, como la atonal o la dodecafónica?",
+    "fr": "Que penses-tu de la musique sans tonalité claire, comme les pièces atonales ou dodécaphoniques ?",
+    "it": "Che cosa pensi della musica senza una tonalità chiara, come quella atonale o dodecafonica?",
+    "pt": "O que achas da música sem tonalidade clara, como a atonal ou a dodecafónica?",
+    "pt_BR": "O que você acha da música sem tonalidade clara, como a atonal ou a dodecafônica?"
+   }
+  },
+  {
+   "id": "music_theory-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you composed a short piece today, what form and mood would you choose?",
+    "de": "Wenn du heute ein kurzes Stück komponieren würdest, welche Form und Stimmung würdest du wählen?",
+    "es": "Si compusieras hoy una pieza corta, ¿qué forma y qué ambiente elegirías?",
+    "fr": "Si tu composais un court morceau aujourd'hui, quelle forme et quelle ambiance choisirais-tu ?",
+    "it": "Se oggi componessi un breve brano, quale forma e quale atmosfera sceglieresti?",
+    "pt": "Se compusesses hoje uma peça curta, que forma e que ambiente escolherias?",
+    "pt_BR": "Se você compusesse uma peça curta hoje, que forma e que clima escolheria?"
+   }
+  },
+  {
+   "id": "music_theory-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which instruments would you combine in your dream arrangement?",
+    "de": "Welche Instrumente würdest du in deinem Traum-Arrangement kombinieren?",
+    "es": "¿Qué instrumentos combinarías en tu arreglo soñado?",
+    "fr": "Quels instruments combinerais-tu dans ton arrangement idéal ?",
+    "it": "Quali strumenti combineresti nel tuo arrangiamento dei sogni?",
+    "pt": "Que instrumentos combinarias no teu arranjo de sonho?",
+    "pt_BR": "Quais instrumentos você combinaria no seu arranjo dos sonhos?"
+   }
+  },
+  {
+   "id": "music_theory-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you analysed a piece of music in depth? What did you discover?",
+    "de": "Hast du schon einmal ein Musikstück gründlich analysiert? Was hast du entdeckt?",
+    "es": "¿Has analizado a fondo alguna obra musical? ¿Qué descubriste?",
+    "fr": "As-tu déjà analysé un morceau en profondeur ? Qu'as-tu découvert ?",
+    "it": "Hai mai analizzato a fondo un brano musicale? Che cosa hai scoperto?",
+    "pt": "Já analisaste a fundo uma peça musical? O que descobriste?",
+    "pt_BR": "Você já analisou a fundo uma música? O que descobriu?"
+   }
+  },
+  {
+   "id": "music_theory-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance following theory rules and breaking them creatively?",
+    "de": "Wie findest du die Balance zwischen dem Befolgen von Theorieregeln und dem kreativen Brechen?",
+    "es": "¿Cómo equilibras seguir las reglas de la teoría y romperlas de forma creativa?",
+    "fr": "Comment trouves-tu l'équilibre entre suivre les règles de la théorie et les briser avec créativité ?",
+    "it": "Come trovi l'equilibrio tra seguire le regole della teoria e infrangerle in modo creativo?",
+    "pt": "Como equilibras seguir as regras da teoria e quebrá-las de forma criativa?",
+    "pt_BR": "Como você equilibra seguir as regras da teoria e quebrá-las de forma criativa?"
+   }
+  },
+  {
+   "id": "music_theory-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What music would you like to create or understand next year?",
+    "de": "Welche Musik möchtest du im nächsten Jahr erschaffen oder verstehen?",
+    "es": "¿Qué música te gustaría crear o entender el año que viene?",
+    "fr": "Quelle musique aimerais-tu créer ou comprendre l'année prochaine ?",
+    "it": "Che musica ti piacerebbe creare o capire il prossimo anno?",
+    "pt": "Que música gostarias de criar ou compreender no próximo ano?",
+    "pt_BR": "Que música você gostaria de criar ou entender no ano que vem?"
+   }
+  }
+ ]
+}

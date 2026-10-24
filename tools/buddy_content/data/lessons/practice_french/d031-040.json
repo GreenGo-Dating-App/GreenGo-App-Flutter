@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the café: un café, s'il vous plaît",
+     "g": "Order drinks and a snack in a French café and ask for the bill politely.",
+     "p": [
+      "Start with bonjour, then order: un café, s'il vous plaît; un café in France is a small espresso.",
+      "Other classics: un thé, un chocolat chaud, un jus d'orange, une eau minérale, un croissant.",
+      "To pay, say l'addition, s'il vous plaît; the waiter may ask sur place ou à emporter? (here or to go?)."
+     ],
+     "q": "You are at a café terrace. What do you order, and how do you ask for the bill?",
+     "c": "Role-play a café order out loud today: greet, order two things and ask for l'addition."
+    },
+    "de": {
+     "t": "Im Café: un café, s'il vous plaît",
+     "g": "Du bestellst in einem französischen Café Getränke und einen Snack und bittest höflich um die Rechnung.",
+     "p": [
+      "Erst bonjour, dann bestellen: un café, s'il vous plaît; un café ist in Frankreich ein kleiner Espresso.",
+      "Weitere Klassiker: un thé, un chocolat chaud, un jus d'orange, une eau minérale, un croissant.",
+      "Zum Zahlen: l'addition, s'il vous plaît; man fragt dich vielleicht sur place ou à emporter? (hier oder zum Mitnehmen?)."
+     ],
+     "q": "Du sitzt auf einer Café-Terrasse. Was bestellst du, und wie bittest du um die Rechnung?",
+     "c": "Spiel heute laut eine Bestellung im Café durch: grüßen, zwei Dinge bestellen, nach l'addition fragen."
+    },
+    "es": {
+     "t": "En el café: un café, s'il vous plaît",
+     "g": "Pide bebidas y algo de comer en un café francés y pide la cuenta con educación.",
+     "p": [
+      "Empieza con bonjour y pide: un café, s'il vous plaît; en Francia un café es un expreso pequeño.",
+      "Otros clásicos: un thé, un chocolat chaud, un jus d'orange, une eau minérale, un croissant.",
+      "Para pagar, di l'addition, s'il vous plaît; quizá te pregunten sur place ou à emporter? (¿para tomar aquí o para llevar?)."
+     ],
+     "q": "Estás en una terraza. ¿Qué pides y cómo pides la cuenta?",
+     "c": "Representa hoy en voz alta un pedido en un café: saluda, pide dos cosas y pide l'addition."
+    },
+    "fr": {
+     "t": "Au café : un café, s'il vous plaît",
+     "g": "Commander une boisson et un en-cas au café et demander l'addition poliment.",
+     "p": [
+      "On commence par bonjour, puis on commande : un café, s'il vous plaît ; c'est un petit expresso.",
+      "D'autres classiques : un thé, un chocolat chaud, un jus d'orange, une eau minérale, un croissant.",
+      "Pour payer : l'addition, s'il vous plaît. Au comptoir, on entend souvent sur place ou à emporter ?"
+     ],
+     "q": "Tu es en terrasse. Que commandes-tu et comment demandes-tu l'addition ?",
+     "c": "Joue une commande au café à voix haute : salue, commande deux choses et demande l'addition."
+    },
+    "it": {
+     "t": "Al bar: un café, s'il vous plaît",
+     "g": "Ordina da bere e uno spuntino in un caffè francese e chiedi il conto con gentilezza.",
+     "p": [
+      "Inizia con bonjour e ordina: un café, s'il vous plaît; in Francia un café è un espresso, come in Italia.",
+      "Altri classici: un thé, un chocolat chaud, un jus d'orange, une eau minérale, un croissant.",
+      "Per pagare di' l'addition, s'il vous plaît; magari ti chiedono sur place ou à emporter? (qui o da asporto?)."
+     ],
+     "q": "Sei seduto in un dehors. Cosa ordini e come chiedi il conto?",
+     "c": "Oggi recita ad alta voce un'ordinazione al bar: saluta, ordina due cose e chiedi l'addition."
+    },
+    "pt": {
+     "t": "No café: un café, s'il vous plaît",
+     "g": "Pedir bebidas e algo para comer num café francês e pedir a conta com educação.",
+     "p": [
+      "Começa por bonjour e pede: un café, s'il vous plaît; em França un café é um expresso, como uma bica.",
+      "Outros clássicos: un thé, un chocolat chaud, un jus d'orange, une eau minérale, un croissant.",
+      "Para pagar, diz l'addition, s'il vous plaît; podem perguntar sur place ou à emporter? (para cá ou para levar?)."
+     ],
+     "q": "Estás numa esplanada. O que pedes e como pedes a conta?",
+     "c": "Representa hoje em voz alta um pedido num café: cumprimenta, pede duas coisas e pede l'addition."
+    },
+    "pt_BR": {
+     "t": "No café: un café, s'il vous plaît",
+     "g": "Pedir bebidas e um lanche num café francês e pedir a conta com educação.",
+     "p": [
+      "Comece com bonjour e peça: un café, s'il vous plaît; na França un café é um expresso pequeno.",
+      "Outros clássicos: un thé, un chocolat chaud, un jus d'orange, une eau minérale, un croissant.",
+      "Para pagar, diga l'addition, s'il vous plaît; podem perguntar sur place ou à emporter? (para comer aqui ou levar?)."
+     ],
+     "q": "Você está numa mesa na calçada. O que pede e como pede a conta?",
+     "c": "Hoje encene em voz alta um pedido no café: cumprimente, peça duas coisas e peça l'addition."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un café",
+      "ex": "Un café et un croissant, s'il vous plaît."
+     },
+     {
+      "w": "un thé",
+      "ex": "Je voudrais un thé au citron."
+     },
+     {
+      "w": "un chocolat chaud",
+      "ex": "Un chocolat chaud pour mon fils."
+     },
+     {
+      "w": "une eau minérale",
+      "ex": "Une eau minérale, s'il vous plaît."
+     },
+     {
+      "w": "l'addition",
+      "ex": "L'addition, s'il vous plaît !"
+     },
+     {
+      "w": "sur place ou à emporter",
+      "ex": "Sur place ou à emporter ? Sur place."
+     }
+    ],
+    "gram": "Pour commander : bonjour + un/une + boisson + s'il vous plaît. Pour payer : l'addition, s'il vous plaît."
+   }
+  },
+  {
+   "d": 32,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Food and drinks",
+     "g": "Name everyday foods and drinks in French with their articles.",
+     "p": [
+      "Basics: le pain, le fromage, le beurre, la viande, le poisson, le poulet, le riz, les pâtes.",
+      "Fruit and vegetables: les fruits (une pomme, une banane) and les légumes (une carotte, une tomate).",
+      "Drinks: l'eau, le lait, le jus, le café, le thé; and remember the meals: le petit-déjeuner, le déjeuner, le dîner."
+     ],
+     "q": "What do you usually eat for petit-déjeuner? Tell me in French.",
+     "c": "Write your shopping list for this week in French, with le, la or les before each item."
+    },
+    "de": {
+     "t": "Essen und Trinken",
+     "g": "Du benennst alltägliche Lebensmittel und Getränke auf Französisch mit Artikel.",
+     "p": [
+      "Grundlagen: le pain, le fromage, le beurre, la viande, le poisson, le poulet, le riz, les pâtes.",
+      "Obst und Gemüse: les fruits (une pomme, une banane) und les légumes (une carotte, une tomate).",
+      "Getränke: l'eau, le lait, le jus, le café, le thé; und die Mahlzeiten: le petit-déjeuner, le déjeuner, le dîner."
+     ],
+     "q": "Was isst du normalerweise zum petit-déjeuner? Erzähl es mir auf Französisch.",
+     "c": "Schreib deine Einkaufsliste für diese Woche auf Französisch, mit le, la oder les vor jedem Wort."
+    },
+    "es": {
+     "t": "Comida y bebida",
+     "g": "Nombra comidas y bebidas cotidianas en francés con su artículo.",
+     "p": [
+      "Lo básico: le pain, le fromage, le beurre, la viande, le poisson, le poulet, le riz, les pâtes.",
+      "Frutas y verduras: les fruits (une pomme, une banane) y les légumes (une carotte, une tomate).",
+      "Bebidas: l'eau, le lait, le jus, le café, le thé; y las comidas: le petit-déjeuner, le déjeuner, le dîner."
+     ],
+     "q": "¿Qué sueles tomar en el petit-déjeuner? Cuéntamelo en francés.",
+     "c": "Escribe en francés tu lista de la compra de esta semana, con le, la o les delante de cada producto."
+    },
+    "fr": {
+     "t": "Les aliments et les boissons",
+     "g": "Nommer les aliments et les boissons du quotidien avec leur article.",
+     "p": [
+      "Les bases : le pain, le fromage, le beurre, la viande, le poisson, le poulet, le riz, les pâtes.",
+      "Les fruits (une pomme, une banane) et les légumes (une carotte, une tomate).",
+      "Les boissons : l'eau, le lait, le jus ; les repas : le petit-déjeuner, le déjeuner, le dîner."
+     ],
+     "q": "Qu'est-ce que tu manges d'habitude au petit-déjeuner ?",
+     "c": "Écris ta liste de courses de la semaine, avec le, la ou les devant chaque produit."
+    },
+    "it": {
+     "t": "Cibi e bevande",
+     "g": "Nomina cibi e bevande di tutti i giorni in francese con il loro articolo.",
+     "p": [
+      "Le basi: le pain, le fromage, le beurre, la viande, le poisson, le poulet, le riz, les pâtes.",
+      "Frutta e verdura: les fruits (une pomme, une banane) e les légumes (une carotte, une tomate).",
+      "Bevande: l'eau, le lait, le jus, le café, le thé; e i pasti: le petit-déjeuner, le déjeuner, le dîner."
+     ],
+     "q": "Cosa mangi di solito a colazione, al petit-déjeuner? Raccontamelo in francese.",
+     "c": "Scrivi in francese la lista della spesa di questa settimana, con le, la o les davanti a ogni prodotto."
+    },
+    "pt": {
+     "t": "Comida e bebida",
+     "g": "Dizer alimentos e bebidas do dia a dia em francês com o artigo.",
+     "p": [
+      "O básico: le pain, le fromage, le beurre, la viande, le poisson, le poulet, le riz, les pâtes.",
+      "Fruta e legumes: les fruits (une pomme, une banane) e les légumes (une carotte, une tomate).",
+      "Bebidas: l'eau, le lait, le jus, le café, le thé; e as refeições: le petit-déjeuner, le déjeuner, le dîner."
+     ],
+     "q": "O que costumas comer ao pequeno-almoço, le petit-déjeuner? Conta-me em francês.",
+     "c": "Escreve em francês a tua lista de compras desta semana, com le, la ou les antes de cada produto."
+    },
+    "pt_BR": {
+     "t": "Comida e bebida",
+     "g": "Dizer alimentos e bebidas do dia a dia em francês com o artigo.",
+     "p": [
+      "O básico: le pain, le fromage, le beurre, la viande, le poisson, le poulet, le riz, les pâtes.",
+      "Frutas e legumes: les fruits (une pomme, une banane) e les légumes (une carotte, une tomate).",
+      "Bebidas: l'eau, le lait, le jus, le café, le thé; e as refeições: le petit-déjeuner, le déjeuner, le dîner."
+     ],
+     "q": "O que você costuma comer no café da manhã, le petit-déjeuner? Me conte em francês.",
+     "c": "Escreva em francês sua lista de compras da semana, com le, la ou les antes de cada item."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le pain",
+      "ex": "Le pain est encore chaud."
+     },
+     {
+      "w": "le fromage",
+      "ex": "La France a beaucoup de fromages."
+     },
+     {
+      "w": "les légumes",
+      "ex": "J'aime les légumes verts."
+     },
+     {
+      "w": "une pomme",
+      "ex": "Je mange une pomme le matin."
+     },
+     {
+      "w": "le poisson",
+      "ex": "Le vendredi, on mange du poisson."
+     },
+     {
+      "w": "le petit-déjeuner",
+      "ex": "Le petit-déjeuner est prêt !"
+     }
+    ],
+    "gram": "On apprend chaque aliment avec son article : le pain, la viande, l'eau, les pâtes. Repas : petit-déjeuner, déjeuner, dîner."
+   }
+  },
+  {
+   "d": 33,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Partitive articles du, de la, des",
+     "g": "Talk about some of something in French with du, de la, de l' and des.",
+     "p": [
+      "For an unspecified amount, French uses du (masculine), de la (feminine), de l' (before a vowel): je mange du pain.",
+      "Compare: j'aime le fromage (in general) but je mange du fromage (some cheese, now).",
+      "After a negation they all become de: je bois de l'eau, but je ne bois pas d'eau."
+     ],
+     "q": "What do you eat and drink at lunch? Use du, de la or de l' in your answer.",
+     "c": "Describe today's meals in French with at least five partitive articles."
+    },
+    "de": {
+     "t": "Teilungsartikel du, de la, des",
+     "g": "Du sprichst auf Französisch über eine unbestimmte Menge mit du, de la, de l' und des.",
+     "p": [
+      "Für eine unbestimmte Menge nimmt man du (männlich), de la (weiblich), de l' (vor Vokal): je mange du pain.",
+      "Vergleich: j'aime le fromage (allgemein), aber je mange du fromage (etwas Käse, jetzt).",
+      "Nach Verneinung wird alles zu de: je bois de l'eau, aber je ne bois pas d'eau."
+     ],
+     "q": "Was isst und trinkst du mittags? Nutze du, de la oder de l' in deiner Antwort.",
+     "c": "Beschreib heute deine Mahlzeiten auf Französisch mit mindestens fünf Teilungsartikeln."
+    },
+    "es": {
+     "t": "Artículos partitivos du, de la, des",
+     "g": "Habla en francés de una cantidad indefinida con du, de la, de l' y des.",
+     "p": [
+      "Para una cantidad sin precisar se usa du (masculino), de la (femenino), de l' (ante vocal): je mange du pain, como pan.",
+      "Compara: j'aime le fromage (en general) pero je mange du fromage (algo de queso, ahora).",
+      "Tras una negación todos pasan a de: je bois de l'eau, pero je ne bois pas d'eau."
+     ],
+     "q": "¿Qué comes y bebes al mediodía? Usa du, de la o de l' en tu respuesta.",
+     "c": "Describe en francés las comidas de hoy con al menos cinco artículos partitivos."
+    },
+    "fr": {
+     "t": "Les partitifs du, de la, des",
+     "g": "Parler d'une quantité indéterminée avec du, de la, de l' et des.",
+     "p": [
+      "Pour une quantité non précisée : du (masculin), de la (féminin), de l' (devant voyelle) : je mange du pain.",
+      "Comparer : j'aime le fromage (en général) et je mange du fromage (une partie).",
+      "Après une négation, tout devient de : je bois de l'eau, mais je ne bois pas d'eau."
+     ],
+     "q": "Qu'est-ce que tu manges et bois à midi ? Utilise du, de la ou de l'.",
+     "c": "Décris tes repas d'aujourd'hui avec au moins cinq articles partitifs."
+    },
+    "it": {
+     "t": "Articoli partitivi du, de la, des",
+     "g": "Parla di una quantità indefinita in francese con du, de la, de l' e des.",
+     "p": [
+      "Per una quantità non precisata si usa du (maschile), de la (femminile), de l' (davanti a vocale): je mange du pain, mangio del pane.",
+      "Confronta: j'aime le fromage (in generale) ma je mange du fromage (del formaggio, ora).",
+      "Dopo una negazione diventano tutti de: je bois de l'eau, ma je ne bois pas d'eau."
+     ],
+     "q": "Cosa mangi e bevi a pranzo? Usa du, de la o de l' nella risposta.",
+     "c": "Descrivi in francese i pasti di oggi con almeno cinque articoli partitivi."
+    },
+    "pt": {
+     "t": "Artigos partitivos du, de la, des",
+     "g": "Falar de uma quantidade indefinida em francês com du, de la, de l' e des.",
+     "p": [
+      "Para uma quantidade não definida usa-se du (masculino), de la (feminino), de l' (antes de vogal): je mange du pain, como pão.",
+      "Compara: j'aime le fromage (em geral), mas je mange du fromage (algum queijo, agora).",
+      "Depois de uma negação passam todos a de: je bois de l'eau, mas je ne bois pas d'eau."
+     ],
+     "q": "O que comes e bebes ao almoço? Usa du, de la ou de l' na resposta.",
+     "c": "Descreve em francês as refeições de hoje com pelo menos cinco artigos partitivos."
+    },
+    "pt_BR": {
+     "t": "Artigos partitivos du, de la, des",
+     "g": "Falar de uma quantidade indefinida em francês com du, de la, de l' e des.",
+     "p": [
+      "Para quantidade não definida se usa du (masculino), de la (feminino), de l' (antes de vogal): je mange du pain, como pão.",
+      "Compare: j'aime le fromage (em geral), mas je mange du fromage (um pouco de queijo, agora).",
+      "Depois de negação todos viram de: je bois de l'eau, mas je ne bois pas d'eau."
+     ],
+     "q": "O que você come e bebe no almoço? Use du, de la ou de l' na resposta.",
+     "c": "Descreva em francês as refeições de hoje com pelo menos cinco artigos partitivos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "du pain",
+      "ex": "Je mange du pain avec du beurre."
+     },
+     {
+      "w": "de la confiture",
+      "ex": "Tu veux de la confiture ?"
+     },
+     {
+      "w": "de l'eau",
+      "ex": "Je bois de l'eau."
+     },
+     {
+      "w": "des fruits",
+      "ex": "Il achète des fruits au marché."
+     },
+     {
+      "w": "du lait",
+      "ex": "Elle met du lait dans son café."
+     },
+     {
+      "w": "pas de, pas d'",
+      "ex": "Je ne mange pas de viande."
+     }
+    ],
+    "gram": "Partitif : du (m.), de la (f.), de l' (voyelle), des (pl.). J'aime le thé / je bois du thé. Négation : pas de, pas d'."
+   }
+  },
+  {
+   "d": 34,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the bakery",
+     "g": "Buy bread and pastries at a French boulangerie with confidence.",
+     "p": [
+      "The stars: une baguette, un croissant, un pain au chocolat, une tarte aux pommes, un éclair.",
+      "Ask with je voudrais or simply une baguette, s'il vous plaît; you may hear et avec ceci? meaning anything else?",
+      "Answer c'est tout, merci when you are done; bien cuite means well-baked, pas trop cuite means lighter."
+     ],
+     "q": "What would you buy first in a French bakery, and how would you ask for it?",
+     "c": "Role-play a bakery visit out loud: bonjour, two items, c'est tout, merci, au revoir."
+    },
+    "de": {
+     "t": "In der Bäckerei",
+     "g": "Du kaufst selbstbewusst Brot und Gebäck in einer französischen boulangerie.",
+     "p": [
+      "Die Stars: une baguette, un croissant, un pain au chocolat, une tarte aux pommes, un éclair.",
+      "Bestell mit je voudrais oder einfach une baguette, s'il vous plaît; man fragt dich vielleicht et avec ceci? (sonst noch etwas?).",
+      "Antworte c'est tout, merci, wenn du fertig bist; bien cuite heißt gut durchgebacken."
+     ],
+     "q": "Was würdest du in einer französischen Bäckerei zuerst kaufen, und wie bestellst du es?",
+     "c": "Spiel laut einen Bäckereibesuch durch: bonjour, zwei Dinge, c'est tout, merci, au revoir."
+    },
+    "es": {
+     "t": "En la panadería",
+     "g": "Compra pan y bollería en una boulangerie francesa con seguridad.",
+     "p": [
+      "Las estrellas: une baguette, un croissant, un pain au chocolat, une tarte aux pommes, un éclair.",
+      "Pide con je voudrais o simplemente une baguette, s'il vous plaît; puede que oigas et avec ceci? (¿algo más?).",
+      "Responde c'est tout, merci cuando termines; bien cuite significa bien hecha, más tostada."
+     ],
+     "q": "¿Qué comprarías primero en una panadería francesa y cómo lo pedirías?",
+     "c": "Representa en voz alta una visita a la panadería: bonjour, dos productos, c'est tout, merci, au revoir."
+    },
+    "fr": {
+     "t": "À la boulangerie",
+     "g": "Acheter du pain et des viennoiseries à la boulangerie avec aisance.",
+     "p": [
+      "Les incontournables : une baguette, un croissant, un pain au chocolat, une tarte aux pommes, un éclair.",
+      "On demande je voudrais une baguette ou simplement une baguette, s'il vous plaît ; on entend souvent et avec ceci ?",
+      "On répond c'est tout, merci ; on peut préciser bien cuite ou pas trop cuite pour la baguette."
+     ],
+     "q": "Que prendrais-tu en premier dans une boulangerie, et comment le demanderais-tu ?",
+     "c": "Joue une visite à la boulangerie à voix haute : bonjour, deux produits, c'est tout, merci, au revoir."
+    },
+    "it": {
+     "t": "In panetteria",
+     "g": "Compra pane e dolci in una boulangerie francese con sicurezza.",
+     "p": [
+      "Le star: une baguette, un croissant, un pain au chocolat, une tarte aux pommes, un éclair.",
+      "Chiedi con je voudrais o semplicemente une baguette, s'il vous plaît; potresti sentire et avec ceci? (altro?).",
+      "Rispondi c'est tout, merci quando hai finito; bien cuite vuol dire ben cotta."
+     ],
+     "q": "Cosa compreresti per primo in una panetteria francese, e come lo chiederesti?",
+     "c": "Recita ad alta voce una visita in panetteria: bonjour, due prodotti, c'est tout, merci, au revoir."
+    },
+    "pt": {
+     "t": "Na padaria",
+     "g": "Comprar pão e bolos numa boulangerie francesa com à-vontade.",
+     "p": [
+      "As estrelas: une baguette, un croissant, un pain au chocolat, une tarte aux pommes, un éclair.",
+      "Pede com je voudrais ou só une baguette, s'il vous plaît; podes ouvir et avec ceci? (mais alguma coisa?).",
+      "Responde c'est tout, merci quando acabares; bien cuite quer dizer bem cozida, mais tostada."
+     ],
+     "q": "O que comprarias primeiro numa padaria francesa e como o pedirias?",
+     "c": "Representa em voz alta uma ida à padaria: bonjour, dois produtos, c'est tout, merci, au revoir."
+    },
+    "pt_BR": {
+     "t": "Na padaria",
+     "g": "Comprar pão e doces numa boulangerie francesa com confiança.",
+     "p": [
+      "As estrelas: une baguette, un croissant, un pain au chocolat, une tarte aux pommes, un éclair.",
+      "Peça com je voudrais ou só une baguette, s'il vous plaît; talvez você ouça et avec ceci? (mais alguma coisa?).",
+      "Responda c'est tout, merci quando terminar; bien cuite quer dizer bem assada, mais douradinha."
+     ],
+     "q": "O que você compraria primeiro numa padaria francesa, e como pediria?",
+     "c": "Encene em voz alta uma ida à padaria: bonjour, dois itens, c'est tout, merci, au revoir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "une baguette",
+      "ex": "Une baguette bien cuite, s'il vous plaît."
+     },
+     {
+      "w": "un pain au chocolat",
+      "ex": "Deux pains au chocolat, s'il vous plaît."
+     },
+     {
+      "w": "une tarte aux pommes",
+      "ex": "Cette tarte aux pommes est délicieuse."
+     },
+     {
+      "w": "la boulangerie",
+      "ex": "La boulangerie ouvre à sept heures."
+     },
+     {
+      "w": "Et avec ceci ?",
+      "ex": "Et avec ceci, madame ?"
+     },
+     {
+      "w": "C'est tout.",
+      "ex": "C'est tout, merci !"
+     }
+    ],
+    "gram": "À la boulangerie : je voudrais + un/une/deux... Au pluriel : deux croissants, trois pains au chocolat. Et avec ceci ? C'est tout."
+   }
+  },
+  {
+   "d": 35,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Quantities: beaucoup, un peu",
+     "g": "Talk about amounts in French and use de after words of quantity.",
+     "p": [
+      "Containers and weights: un kilo de, un litre de, une bouteille de, un paquet de, une boîte de.",
+      "Amounts: beaucoup de (a lot), un peu de (a little), trop de (too much), assez de (enough).",
+      "After a quantity, always use de or d', never du or des: beaucoup de fruits, un litre d'eau."
+     ],
+     "q": "How much water do you drink in a day? Answer with a quantity word.",
+     "c": "Write five sentences about your kitchen with five different quantity words and de."
+    },
+    "de": {
+     "t": "Mengen: beaucoup, un peu",
+     "g": "Du sprichst auf Französisch über Mengen und nutzt de nach Mengenangaben.",
+     "p": [
+      "Behälter und Gewichte: un kilo de, un litre de, une bouteille de, un paquet de, une boîte de.",
+      "Mengenwörter: beaucoup de (viel), un peu de (ein bisschen), trop de (zu viel), assez de (genug).",
+      "Nach einer Mengenangabe immer de oder d', nie du oder des: beaucoup de fruits, un litre d'eau."
+     ],
+     "q": "Wie viel Wasser trinkst du am Tag? Antworte mit einem Mengenwort.",
+     "c": "Schreib fünf Sätze über deine Küche mit fünf verschiedenen Mengenwörtern und de."
+    },
+    "es": {
+     "t": "Cantidades: beaucoup, un peu",
+     "g": "Habla de cantidades en francés y usa de después de las palabras de cantidad.",
+     "p": [
+      "Envases y pesos: un kilo de, un litre de, une bouteille de, un paquet de, une boîte de.",
+      "Cantidades: beaucoup de (mucho), un peu de (un poco), trop de (demasiado), assez de (bastante).",
+      "Tras una cantidad siempre de o d', nunca du ni des: beaucoup de fruits, un litre d'eau."
+     ],
+     "q": "¿Cuánta agua bebes al día? Responde con una palabra de cantidad.",
+     "c": "Escribe cinco frases sobre tu cocina con cinco palabras de cantidad distintas y de."
+    },
+    "fr": {
+     "t": "Les quantités : beaucoup, un peu",
+     "g": "Exprimer une quantité et employer de après les mots de quantité.",
+     "p": [
+      "Contenants et mesures : un kilo de, un litre de, une bouteille de, un paquet de, une boîte de.",
+      "Adverbes : beaucoup de, un peu de, trop de, assez de, pas mal de.",
+      "Après une quantité, on emploie de ou d', jamais du ou des : beaucoup de fruits, un litre d'eau."
+     ],
+     "q": "Combien d'eau bois-tu par jour ? Réponds avec un mot de quantité.",
+     "c": "Écris cinq phrases sur ta cuisine avec cinq mots de quantité différents suivis de de."
+    },
+    "it": {
+     "t": "Quantità: beaucoup, un peu",
+     "g": "Parla di quantità in francese e usa de dopo le parole di quantità.",
+     "p": [
+      "Contenitori e pesi: un kilo de, un litre de, une bouteille de, un paquet de, une boîte de.",
+      "Quantità: beaucoup de (molto), un peu de (un po' di), trop de (troppo), assez de (abbastanza).",
+      "Dopo una quantità sempre de o d', mai du o des: beaucoup de fruits, un litre d'eau."
+     ],
+     "q": "Quanta acqua bevi al giorno? Rispondi con una parola di quantità.",
+     "c": "Scrivi cinque frasi sulla tua cucina con cinque parole di quantità diverse e de."
+    },
+    "pt": {
+     "t": "Quantidades: beaucoup, un peu",
+     "g": "Falar de quantidades em francês e usar de depois das palavras de quantidade.",
+     "p": [
+      "Embalagens e pesos: un kilo de, un litre de, une bouteille de, un paquet de, une boîte de.",
+      "Quantidades: beaucoup de (muito), un peu de (um pouco de), trop de (demasiado), assez de (bastante).",
+      "Depois de uma quantidade usa-se sempre de ou d', nunca du nem des: beaucoup de fruits, un litre d'eau."
+     ],
+     "q": "Quanta água bebes por dia? Responde com uma palavra de quantidade.",
+     "c": "Escreve cinco frases sobre a tua cozinha com cinco palavras de quantidade diferentes e de."
+    },
+    "pt_BR": {
+     "t": "Quantidades: beaucoup, un peu",
+     "g": "Falar de quantidades em francês e usar de depois das palavras de quantidade.",
+     "p": [
+      "Embalagens e pesos: un kilo de, un litre de, une bouteille de, un paquet de, une boîte de.",
+      "Quantidades: beaucoup de (muito), un peu de (um pouco de), trop de (demais), assez de (o suficiente).",
+      "Depois de quantidade use sempre de ou d', nunca du nem des: beaucoup de fruits, un litre d'eau."
+     ],
+     "q": "Quanta água você bebe por dia? Responda com uma palavra de quantidade.",
+     "c": "Escreva cinco frases sobre sua cozinha com cinco palavras de quantidade diferentes e de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un kilo de",
+      "ex": "Un kilo de tomates, s'il vous plaît."
+     },
+     {
+      "w": "une bouteille de",
+      "ex": "J'achète une bouteille d'eau."
+     },
+     {
+      "w": "un paquet de",
+      "ex": "Il y a un paquet de pâtes."
+     },
+     {
+      "w": "beaucoup de",
+      "ex": "Il y a beaucoup de monde ici."
+     },
+     {
+      "w": "un peu de",
+      "ex": "Tu veux un peu de sucre ?"
+     },
+     {
+      "w": "trop de",
+      "ex": "Il y a trop de sel !"
+     }
+    ],
+    "gram": "Après une quantité : de/d' seulement. Un kilo de pommes, beaucoup de pain, un peu d'eau (et non du pain, de l'eau)."
+   }
+  },
+  {
+   "d": 36,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the restaurant",
+     "g": "Book a table, read a French menu and order a meal politely.",
+     "p": [
+      "Booking: je voudrais réserver une table pour deux personnes, ce soir à vingt heures.",
+      "The menu: l'entrée is the starter, le plat the main course and le dessert the dessert; la carte is the menu.",
+      "Ordering: je vais prendre le poisson, comme entrée la soupe; the waiter asks vous avez choisi?"
+     ],
+     "q": "You call a restaurant to book a table. What do you say?",
+     "c": "Read any menu today and translate the starter, main and dessert you would choose into French."
+    },
+    "de": {
+     "t": "Im Restaurant",
+     "g": "Du reservierst einen Tisch, liest eine französische Speisekarte und bestellst höflich.",
+     "p": [
+      "Reservieren: je voudrais réserver une table pour deux personnes, ce soir à vingt heures.",
+      "Die Karte: l'entrée ist die Vorspeise (nicht der Eingang), le plat das Hauptgericht, le dessert der Nachtisch.",
+      "Bestellen: je vais prendre le poisson, comme entrée la soupe; der Kellner fragt vous avez choisi?"
+     ],
+     "q": "Du rufst in einem Restaurant an, um einen Tisch zu reservieren. Was sagst du?",
+     "c": "Lies heute irgendeine Speisekarte und übersetze Vorspeise, Hauptgang und Dessert deiner Wahl ins Französische."
+    },
+    "es": {
+     "t": "En el restaurante",
+     "g": "Reserva mesa, lee una carta francesa y pide la comida con educación.",
+     "p": [
+      "Reservar: je voudrais réserver une table pour deux personnes, ce soir à vingt heures.",
+      "La carta: l'entrée es el primer plato, le plat el principal y le dessert el postre.",
+      "Pedir: je vais prendre le poisson, comme entrée la soupe; el camarero pregunta vous avez choisi?"
+     ],
+     "q": "Llamas a un restaurante para reservar mesa. ¿Qué dices?",
+     "c": "Lee hoy cualquier carta y traduce al francés el primero, el principal y el postre que elegirías."
+    },
+    "fr": {
+     "t": "Au restaurant",
+     "g": "Réserver une table, lire la carte et commander poliment.",
+     "p": [
+      "Pour réserver : je voudrais réserver une table pour deux personnes, ce soir à vingt heures.",
+      "La carte se lit dans l'ordre : l'entrée, le plat, le dessert ; un menu est une formule à prix fixe.",
+      "Pour commander : je vais prendre le poisson ; comme entrée, la soupe. Le serveur demande vous avez choisi ?"
+     ],
+     "q": "Tu appelles un restaurant pour réserver. Que dis-tu ?",
+     "c": "Lis une carte aujourd'hui et choisis une entrée, un plat et un dessert, en phrases complètes."
+    },
+    "it": {
+     "t": "Al ristorante",
+     "g": "Prenota un tavolo, leggi un menù francese e ordina con gentilezza.",
+     "p": [
+      "Prenotare: je voudrais réserver une table pour deux personnes, ce soir à vingt heures.",
+      "Il menù: l'entrée è l'antipasto o primo, le plat il piatto principale e le dessert il dolce.",
+      "Ordinare: je vais prendre le poisson, comme entrée la soupe; il cameriere chiede vous avez choisi?"
+     ],
+     "q": "Chiami un ristorante per prenotare un tavolo. Cosa dici?",
+     "c": "Oggi leggi un menù qualsiasi e traduci in francese l'entrée, il plat e il dessert che sceglieresti."
+    },
+    "pt": {
+     "t": "No restaurante",
+     "g": "Reservar mesa, ler uma carta francesa e pedir a refeição com educação.",
+     "p": [
+      "Reservar: je voudrais réserver une table pour deux personnes, ce soir à vingt heures.",
+      "A carta: l'entrée é a entrada, le plat o prato principal e le dessert a sobremesa.",
+      "Pedir: je vais prendre le poisson, comme entrée la soupe; o empregado pergunta vous avez choisi?"
+     ],
+     "q": "Ligas para um restaurante para reservar mesa. O que dizes?",
+     "c": "Lê hoje uma ementa qualquer e traduz para francês a entrada, o prato e a sobremesa que escolherias."
+    },
+    "pt_BR": {
+     "t": "No restaurante",
+     "g": "Reservar mesa, ler um cardápio francês e pedir a refeição com educação.",
+     "p": [
+      "Reservar: je voudrais réserver une table pour deux personnes, ce soir à vingt heures.",
+      "O cardápio: l'entrée é a entrada, le plat o prato principal e le dessert a sobremesa.",
+      "Pedir: je vais prendre le poisson, comme entrée la soupe; o garçom pergunta vous avez choisi?"
+     ],
+     "q": "Você liga para um restaurante para reservar mesa. O que diz?",
+     "c": "Hoje leia qualquer cardápio e traduza para o francês a entrada, o prato e a sobremesa que escolheria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "réserver une table",
+      "ex": "Je voudrais réserver une table pour quatre."
+     },
+     {
+      "w": "la carte",
+      "ex": "La carte, s'il vous plaît."
+     },
+     {
+      "w": "l'entrée",
+      "ex": "Comme entrée, je prends la salade."
+     },
+     {
+      "w": "le plat",
+      "ex": "Le plat du jour, c'est quoi ?"
+     },
+     {
+      "w": "le dessert",
+      "ex": "Pas de dessert pour moi, merci."
+     },
+     {
+      "w": "Vous avez choisi ?",
+      "ex": "Vous avez choisi ? Oui, merci."
+     }
+    ],
+    "gram": "Commander : je vais prendre + article + plat. Ordre du repas : l'entrée, le plat, le dessert. Réserver une table pour + nombre."
+   }
+  },
+  {
+   "d": 37,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Je voudrais: polite requests",
+     "g": "Ask for things nicely in French with je voudrais and j'aimerais.",
+     "p": [
+      "Je veux (I want) can sound blunt; je voudrais (I would like) is the polite, everyday choice.",
+      "J'aimerais means I would love to, great for wishes: j'aimerais visiter Paris.",
+      "Follow them with a noun or a verb: je voudrais un thé; je voudrais payer, s'il vous plaît."
+     ],
+     "q": "What would you like to do this weekend? Answer with je voudrais or j'aimerais.",
+     "c": "Make five polite requests in French today, real or imagined, all with je voudrais or j'aimerais."
+    },
+    "de": {
+     "t": "Je voudrais: höfliche Bitten",
+     "g": "Du bittest auf Französisch höflich um Dinge mit je voudrais und j'aimerais.",
+     "p": [
+      "Je veux (ich will) kann schroff klingen; je voudrais (ich möchte) ist die höfliche Alltagsform.",
+      "J'aimerais heißt ich würde gern, ideal für Wünsche: j'aimerais visiter Paris.",
+      "Danach folgt ein Nomen oder ein Verb: je voudrais un thé; je voudrais payer, s'il vous plaît."
+     ],
+     "q": "Was möchtest du am Wochenende machen? Antworte mit je voudrais oder j'aimerais.",
+     "c": "Formuliere heute fünf höfliche Bitten auf Französisch, echt oder ausgedacht, mit je voudrais oder j'aimerais."
+    },
+    "es": {
+     "t": "Je voudrais: peticiones educadas",
+     "g": "Pide cosas con amabilidad en francés con je voudrais y j'aimerais.",
+     "p": [
+      "Je veux (quiero) puede sonar brusco; je voudrais (quisiera, me gustaría) es la opción cortés de cada día.",
+      "J'aimerais significa me encantaría, ideal para deseos: j'aimerais visiter Paris.",
+      "Después va un sustantivo o un verbo: je voudrais un thé; je voudrais payer, s'il vous plaît."
+     ],
+     "q": "¿Qué te gustaría hacer este fin de semana? Responde con je voudrais o j'aimerais.",
+     "c": "Haz hoy cinco peticiones educadas en francés, reales o imaginadas, con je voudrais o j'aimerais."
+    },
+    "fr": {
+     "t": "Je voudrais : demander poliment",
+     "g": "Formuler des demandes polies avec je voudrais et j'aimerais.",
+     "p": [
+      "Je veux peut sembler direct ; je voudrais, au conditionnel, est la formule polie du quotidien.",
+      "J'aimerais exprime un souhait : j'aimerais visiter Paris un jour.",
+      "On ajoute un nom ou un infinitif : je voudrais un thé ; je voudrais payer, s'il vous plaît."
+     ],
+     "q": "Qu'est-ce que tu voudrais faire ce week-end ? Réponds avec je voudrais ou j'aimerais.",
+     "c": "Formule cinq demandes polies aujourd'hui, réelles ou imaginées, avec je voudrais ou j'aimerais."
+    },
+    "it": {
+     "t": "Je voudrais: richieste gentili",
+     "g": "Chiedi le cose con garbo in francese con je voudrais e j'aimerais.",
+     "p": [
+      "Je veux (voglio) può suonare brusco; je voudrais (vorrei) è la scelta gentile di tutti i giorni.",
+      "J'aimerais significa mi piacerebbe, perfetto per i desideri: j'aimerais visiter Paris.",
+      "Dopo va un nome o un verbo: je voudrais un thé; je voudrais payer, s'il vous plaît."
+     ],
+     "q": "Cosa ti piacerebbe fare questo fine settimana? Rispondi con je voudrais o j'aimerais.",
+     "c": "Oggi fai cinque richieste gentili in francese, vere o immaginarie, con je voudrais o j'aimerais."
+    },
+    "pt": {
+     "t": "Je voudrais: pedidos educados",
+     "g": "Pedir coisas com simpatia em francês com je voudrais e j'aimerais.",
+     "p": [
+      "Je veux (quero) pode soar brusco; je voudrais (queria) é a forma educada do dia a dia.",
+      "J'aimerais quer dizer gostava, ótimo para desejos: j'aimerais visiter Paris.",
+      "Depois vem um nome ou um verbo: je voudrais un thé; je voudrais payer, s'il vous plaît."
+     ],
+     "q": "O que gostavas de fazer este fim de semana? Responde com je voudrais ou j'aimerais.",
+     "c": "Faz hoje cinco pedidos educados em francês, reais ou imaginados, com je voudrais ou j'aimerais."
+    },
+    "pt_BR": {
+     "t": "Je voudrais: pedidos educados",
+     "g": "Pedir coisas com gentileza em francês com je voudrais e j'aimerais.",
+     "p": [
+      "Je veux (eu quero) pode soar seco; je voudrais (eu gostaria) é a forma educada do dia a dia.",
+      "J'aimerais quer dizer eu adoraria, ótimo para desejos: j'aimerais visiter Paris.",
+      "Depois vem um substantivo ou um verbo: je voudrais un thé; je voudrais payer, s'il vous plaît."
+     ],
+     "q": "O que você gostaria de fazer neste fim de semana? Responda com je voudrais ou j'aimerais.",
+     "c": "Hoje faça cinco pedidos educados em francês, reais ou imaginados, com je voudrais ou j'aimerais."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je voudrais",
+      "ex": "Je voudrais un croissant, s'il vous plaît."
+     },
+     {
+      "w": "j'aimerais",
+      "ex": "J'aimerais apprendre à cuisiner."
+     },
+     {
+      "w": "vous voudriez",
+      "ex": "Vous voudriez un café ?"
+     },
+     {
+      "w": "je veux",
+      "ex": "Je veux un chien, dit l'enfant."
+     },
+     {
+      "w": "payer",
+      "ex": "Je voudrais payer par carte."
+     },
+     {
+      "w": "un renseignement",
+      "ex": "Je voudrais un renseignement, s'il vous plaît."
+     }
+    ],
+    "gram": "Je voudrais / j'aimerais (conditionnel de politesse) + nom ou infinitif. Plus poli que je veux."
+   }
+  },
+  {
+   "d": 38,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prices and money",
+     "g": "Ask how much things cost in French and react to the price.",
+     "p": [
+      "Ask c'est combien? or ça coûte combien?; at the till you hear ça fait... for the total.",
+      "Money words: l'euro, le centime, la monnaie (change), la carte bancaire, en espèces (in cash).",
+      "React with c'est cher (expensive), c'est trop cher, or c'est bon marché and c'est pas cher (cheap)."
+     ],
+     "q": "How do you prefer to pay, par carte or en espèces? Tell me in French.",
+     "c": "Next time you see a price tag today, ask yourself c'est combien? and answer in French."
+    },
+    "de": {
+     "t": "Preise und Geld",
+     "g": "Du fragst auf Französisch nach Preisen und reagierst darauf.",
+     "p": [
+      "Frag c'est combien? oder ça coûte combien?; an der Kasse hörst du ça fait... für die Summe.",
+      "Geldwörter: l'euro, le centime, la monnaie (Wechselgeld), la carte bancaire, en espèces (bar).",
+      "Reagiere mit c'est cher (teuer), c'est trop cher oder c'est bon marché und c'est pas cher (günstig)."
+     ],
+     "q": "Wie zahlst du lieber, par carte oder en espèces? Sag es mir auf Französisch.",
+     "c": "Wenn du heute ein Preisschild siehst, frag dich c'est combien? und antworte auf Französisch."
+    },
+    "es": {
+     "t": "Precios y dinero",
+     "g": "Pregunta en francés cuánto cuestan las cosas y reacciona al precio.",
+     "p": [
+      "Pregunta c'est combien? o ça coûte combien?; en la caja oirás ça fait... para el total.",
+      "Palabras de dinero: l'euro, le centime, la monnaie (el cambio), la carte bancaire, en espèces (en efectivo).",
+      "Reacciona con c'est cher (caro), c'est trop cher, o c'est bon marché y c'est pas cher (barato)."
+     ],
+     "q": "¿Cómo prefieres pagar, par carte o en espèces? Dímelo en francés.",
+     "c": "Hoy, cuando veas una etiqueta de precio, pregúntate c'est combien? y responde en francés."
+    },
+    "fr": {
+     "t": "Les prix et l'argent",
+     "g": "Demander un prix et réagir.",
+     "p": [
+      "On demande c'est combien ? ou ça coûte combien ? ; à la caisse, on entend ça fait... pour le total.",
+      "Le vocabulaire : l'euro, le centime, la monnaie, la carte bancaire, payer en espèces.",
+      "Pour réagir : c'est cher, c'est trop cher, ou c'est bon marché, c'est pas cher."
+     ],
+     "q": "Tu préfères payer par carte ou en espèces ? Explique pourquoi.",
+     "c": "Quand tu vois une étiquette aujourd'hui, demande-toi c'est combien ? et réponds à voix haute."
+    },
+    "it": {
+     "t": "Prezzi e soldi",
+     "g": "Chiedi in francese quanto costano le cose e reagisci al prezzo.",
+     "p": [
+      "Chiedi c'est combien? o ça coûte combien?; alla cassa senti ça fait... per il totale.",
+      "Parole dei soldi: l'euro, le centime, la monnaie (il resto), la carte bancaire, en espèces (in contanti).",
+      "Reagisci con c'est cher (caro), c'est trop cher, oppure c'est bon marché e c'est pas cher (economico)."
+     ],
+     "q": "Come preferisci pagare, par carte o en espèces? Dimmelo in francese.",
+     "c": "Oggi, quando vedi un cartellino del prezzo, chiediti c'est combien? e rispondi in francese."
+    },
+    "pt": {
+     "t": "Preços e dinheiro",
+     "g": "Perguntar em francês quanto custam as coisas e reagir ao preço.",
+     "p": [
+      "Pergunta c'est combien? ou ça coûte combien?; na caixa ouves ça fait... para o total.",
+      "Palavras do dinheiro: l'euro, le centime, la monnaie (o troco), la carte bancaire, en espèces (em dinheiro).",
+      "Reage com c'est cher (caro), c'est trop cher, ou c'est bon marché e c'est pas cher (barato)."
+     ],
+     "q": "Como preferes pagar, par carte ou en espèces? Diz-me em francês.",
+     "c": "Hoje, quando vires uma etiqueta de preço, pergunta-te c'est combien? e responde em francês."
+    },
+    "pt_BR": {
+     "t": "Preços e dinheiro",
+     "g": "Perguntar em francês quanto custam as coisas e reagir ao preço.",
+     "p": [
+      "Pergunte c'est combien? ou ça coûte combien?; no caixa você ouve ça fait... para o total.",
+      "Palavras de dinheiro: l'euro, le centime, la monnaie (o troco), la carte bancaire, en espèces (em dinheiro).",
+      "Reaja com c'est cher (caro), c'est trop cher, ou c'est bon marché e c'est pas cher (barato)."
+     ],
+     "q": "Como você prefere pagar, par carte ou en espèces? Me diga em francês.",
+     "c": "Hoje, quando vir uma etiqueta de preço, pergunte a si mesmo c'est combien? e responda em francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "C'est combien ?",
+      "ex": "C'est combien, ce livre ?"
+     },
+     {
+      "w": "ça coûte",
+      "ex": "Ça coûte combien, ces fraises ?"
+     },
+     {
+      "w": "ça fait",
+      "ex": "Ça fait combien en tout ?"
+     },
+     {
+      "w": "cher",
+      "ex": "Ce restaurant est un peu cher."
+     },
+     {
+      "w": "la monnaie",
+      "ex": "Voici votre monnaie, madame."
+     },
+     {
+      "w": "en espèces",
+      "ex": "Je paie en espèces."
+     }
+    ],
+    "gram": "Demander un prix : c'est combien ? ça coûte combien ? Total : ça fait... Payer par carte ou en espèces."
+   }
+  },
+  {
+   "d": 39,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Aller: the verb to go",
+     "g": "Conjugate aller and combine it with à to say where you are going.",
+     "p": [
+      "Aller is irregular: je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+      "À merges with le and les: à + le = au, à + les = aux; à la and à l' stay as they are.",
+      "So: je vais au cinéma, tu vas à la plage, il va à l'école, nous allons aux toilettes."
+     ],
+     "q": "Où vas-tu ce week-end? Answer with aller and au, à la, à l' or aux.",
+     "c": "Write five places you go to every week, each with the right form of à."
+    },
+    "de": {
+     "t": "Aller: das Verb gehen",
+     "g": "Du konjugierst aller und kombinierst es mit à, um zu sagen, wohin du gehst.",
+     "p": [
+      "Aller ist unregelmäßig: je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+      "À verschmilzt mit le und les: à + le = au, à + les = aux; à la und à l' bleiben unverändert.",
+      "Also: je vais au cinéma, tu vas à la plage, il va à l'école, nous allons aux toilettes."
+     ],
+     "q": "Où vas-tu ce week-end? Antworte mit aller und au, à la, à l' oder aux.",
+     "c": "Schreib fünf Orte auf, an die du jede Woche gehst, jeweils mit der richtigen Form von à."
+    },
+    "es": {
+     "t": "Aller: el verbo ir",
+     "g": "Conjuga aller y combínalo con à para decir adónde vas.",
+     "p": [
+      "Aller es irregular: je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+      "À se contrae con le y les: à + le = au, à + les = aux; à la y à l' no cambian, como al en español.",
+      "Así: je vais au cinéma, tu vas à la plage, il va à l'école, nous allons aux toilettes."
+     ],
+     "q": "Où vas-tu ce week-end? Responde con aller y au, à la, à l' o aux.",
+     "c": "Escribe cinco lugares a los que vas cada semana, cada uno con la forma correcta de à."
+    },
+    "fr": {
+     "t": "Aller : le verbe aller",
+     "g": "Conjuguer aller et l'employer avec à pour indiquer une destination.",
+     "p": [
+      "Aller est irrégulier : je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+      "À se contracte avec le et les : à + le = au, à + les = aux ; à la et à l' ne changent pas.",
+      "Exemples : je vais au cinéma, tu vas à la plage, il va à l'école, on va aux toilettes."
+     ],
+     "q": "Où vas-tu ce week-end ? Réponds avec aller et au, à la, à l' ou aux.",
+     "c": "Écris cinq lieux où tu vas chaque semaine, avec la bonne forme de à."
+    },
+    "it": {
+     "t": "Aller: il verbo andare",
+     "g": "Coniuga aller e combinalo con à per dire dove vai.",
+     "p": [
+      "Aller è irregolare: je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+      "À si unisce a le e les: à + le = au, à + les = aux; à la e à l' restano uguali, come al e alla.",
+      "Quindi: je vais au cinéma, tu vas à la plage, il va à l'école, nous allons aux toilettes."
+     ],
+     "q": "Où vas-tu ce week-end? Rispondi con aller e au, à la, à l' o aux.",
+     "c": "Scrivi cinque posti dove vai ogni settimana, ognuno con la forma giusta di à."
+    },
+    "pt": {
+     "t": "Aller: o verbo ir",
+     "g": "Conjugar aller e combiná-lo com à para dizer aonde vais.",
+     "p": [
+      "Aller é irregular: je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+      "À contrai-se com le e les: à + le = au, à + les = aux; à la e à l' não mudam, como ao e à.",
+      "Assim: je vais au cinéma, tu vas à la plage, il va à l'école, nous allons aux toilettes."
+     ],
+     "q": "Où vas-tu ce week-end? Responde com aller e au, à la, à l' ou aux.",
+     "c": "Escreve cinco sítios aonde vais todas as semanas, cada um com a forma certa de à."
+    },
+    "pt_BR": {
+     "t": "Aller: o verbo ir",
+     "g": "Conjugar aller e combinar com à para dizer aonde você vai.",
+     "p": [
+      "Aller é irregular: je vais, tu vas, il va, nous allons, vous allez, ils vont.",
+      "À se contrai com le e les: à + le = au, à + les = aux; à la e à l' não mudam, como ao e à.",
+      "Assim: je vais au cinéma, tu vas à la plage, il va à l'école, nous allons aux toilettes."
+     ],
+     "q": "Où vas-tu ce week-end? Responda com aller e au, à la, à l' ou aux.",
+     "c": "Escreva cinco lugares aonde você vai toda semana, cada um com a forma certa de à."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je vais",
+      "ex": "Je vais au marché le samedi."
+     },
+     {
+      "w": "tu vas",
+      "ex": "Tu vas à la piscine ?"
+     },
+     {
+      "w": "nous allons",
+      "ex": "Nous allons à l'école à pied."
+     },
+     {
+      "w": "ils vont",
+      "ex": "Ils vont aux États-Unis en été."
+     },
+     {
+      "w": "au cinéma",
+      "ex": "On va au cinéma ce soir ?"
+     },
+     {
+      "w": "à la plage",
+      "ex": "Les enfants vont à la plage."
+     }
+    ],
+    "gram": "Aller : je vais, tu vas, il va, nous allons, vous allez, ils vont. À + le = au, à + les = aux ; à la, à l' ne changent pas."
+   }
+  },
+  {
+   "d": 40,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Places in town",
+     "g": "Name the main places in a French town and say where they are.",
+     "p": [
+      "Key places: la gare (station), la poste, la pharmacie, la mairie (town hall), la banque, le supermarché.",
+      "More: le marché, l'hôpital, le musée, la bibliothèque (library), le parc, l'office de tourisme.",
+      "Say where they are with c'est près d'ici (near), c'est loin (far), c'est en face (opposite), c'est dans la rue..."
+     ],
+     "q": "Which three places do you visit most in your town? Name them in French.",
+     "c": "Draw a simple map of your neighbourhood and label six places in French."
+    },
+    "de": {
+     "t": "Orte in der Stadt",
+     "g": "Du benennst die wichtigsten Orte einer französischen Stadt und sagst, wo sie liegen.",
+     "p": [
+      "Wichtige Orte: la gare (Bahnhof), la poste, la pharmacie, la mairie (Rathaus), la banque, le supermarché.",
+      "Dazu: le marché, l'hôpital, le musée, la bibliothèque (Bibliothek), le parc, l'office de tourisme.",
+      "Lage: c'est près d'ici (nah), c'est loin (weit), c'est en face (gegenüber), c'est dans la rue..."
+     ],
+     "q": "Welche drei Orte in deiner Stadt besuchst du am häufigsten? Nenn sie auf Französisch.",
+     "c": "Zeichne eine einfache Karte deines Viertels und beschrifte sechs Orte auf Französisch."
+    },
+    "es": {
+     "t": "Lugares de la ciudad",
+     "g": "Nombra los principales lugares de una ciudad francesa y di dónde están.",
+     "p": [
+      "Lugares clave: la gare (estación), la poste, la pharmacie, la mairie (ayuntamiento), la banque, le supermarché.",
+      "Más: le marché, l'hôpital, le musée, la bibliothèque (biblioteca), le parc, l'office de tourisme.",
+      "Ubícalos con c'est près d'ici (cerca), c'est loin (lejos), c'est en face (enfrente), c'est dans la rue..."
+     ],
+     "q": "¿Qué tres lugares de tu ciudad visitas más? Nómbralos en francés.",
+     "c": "Dibuja un mapa sencillo de tu barrio y rotula seis lugares en francés."
+    },
+    "fr": {
+     "t": "Les lieux de la ville",
+     "g": "Nommer les principaux lieux d'une ville et dire où ils se trouvent.",
+     "p": [
+      "Les lieux clés : la gare, la poste, la pharmacie, la mairie, la banque, le supermarché.",
+      "Et aussi : le marché, l'hôpital, le musée, la bibliothèque, le parc, l'office de tourisme.",
+      "Pour situer : c'est près d'ici, c'est loin, c'est en face, c'est dans la rue Victor-Hugo."
+     ],
+     "q": "Quels sont les trois lieux de ta ville où tu vas le plus souvent ?",
+     "c": "Dessine un plan simple de ton quartier et écris le nom de six lieux."
+    },
+    "it": {
+     "t": "I luoghi della città",
+     "g": "Nomina i luoghi principali di una città francese e di' dove si trovano.",
+     "p": [
+      "Luoghi chiave: la gare (stazione), la poste, la pharmacie, la mairie (municipio), la banque, le supermarché.",
+      "Altri: le marché, l'hôpital, le musée, la bibliothèque (biblioteca), le parc, l'office de tourisme.",
+      "Per situarli: c'est près d'ici (vicino), c'est loin (lontano), c'est en face (di fronte), c'est dans la rue..."
+     ],
+     "q": "Quali sono i tre posti della tua città che frequenti di più? Nominali in francese.",
+     "c": "Disegna una semplice mappa del tuo quartiere ed etichetta sei luoghi in francese."
+    },
+    "pt": {
+     "t": "Lugares da cidade",
+     "g": "Dizer os principais lugares de uma cidade francesa e onde ficam.",
+     "p": [
+      "Lugares-chave: la gare (estação), la poste, la pharmacie, la mairie (câmara municipal), la banque, le supermarché.",
+      "Mais: le marché, l'hôpital, le musée, la bibliothèque (biblioteca), le parc, l'office de tourisme.",
+      "Para situar: c'est près d'ici (perto), c'est loin (longe), c'est en face (em frente), c'est dans la rue..."
+     ],
+     "q": "Quais são os três sítios da tua cidade onde vais mais? Diz-os em francês.",
+     "c": "Desenha um mapa simples do teu bairro e legenda seis lugares em francês."
+    },
+    "pt_BR": {
+     "t": "Lugares da cidade",
+     "g": "Dizer os principais lugares de uma cidade francesa e onde eles ficam.",
+     "p": [
+      "Lugares-chave: la gare (estação), la poste, la pharmacie, la mairie (prefeitura), la banque, le supermarché.",
+      "Mais: le marché, l'hôpital, le musée, la bibliothèque (biblioteca), le parc, l'office de tourisme.",
+      "Para localizar: c'est près d'ici (perto), c'est loin (longe), c'est en face (em frente), c'est dans la rue..."
+     ],
+     "q": "Quais três lugares da sua cidade você mais frequenta? Diga em francês.",
+     "c": "Desenhe um mapa simples do seu bairro e escreva o nome de seis lugares em francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la gare",
+      "ex": "La gare est près d'ici ?"
+     },
+     {
+      "w": "la poste",
+      "ex": "Je vais à la poste."
+     },
+     {
+      "w": "la pharmacie",
+      "ex": "La pharmacie est en face de la banque."
+     },
+     {
+      "w": "la mairie",
+      "ex": "La mairie est sur la place."
+     },
+     {
+      "w": "la bibliothèque",
+      "ex": "J'étudie à la bibliothèque."
+     },
+     {
+      "w": "près d'ici",
+      "ex": "Il y a un supermarché près d'ici ?"
+     }
+    ],
+    "gram": "Situer un lieu : c'est près d'ici, c'est loin, c'est en face de... Il y a une pharmacie près d'ici ?"
+   }
+  }
+ ]
+}

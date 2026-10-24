@@ -1,0 +1,1305 @@
+{
+"topic": "etiquette",
+"questions": [
+{
+"id": "etiquette-001",
+"lv": "any",
+"i18n": {
+"en": "Which good manners matter most to you in everyday life?",
+"de": "Welche guten Manieren sind dir im Alltag am wichtigsten?",
+"es": "¿Qué buenos modales te importan más en el día a día?",
+"fr": "Quelles bonnes manières comptent le plus pour toi au quotidien ?",
+"it": "Quali buone maniere contano di più per te nella vita di tutti i giorni?",
+"pt": "Que boas maneiras são mais importantes para ti no dia a dia?",
+"pt_BR": "Quais boas maneiras são mais importantes para você no dia a dia?"
+}
+},
+{
+"id": "etiquette-002",
+"lv": "any",
+"i18n": {
+"en": "Who taught you your manners when you were growing up?",
+"de": "Wer hat dir als Kind gute Manieren beigebracht?",
+"es": "¿Quién te enseñó los modales cuando eras pequeño?",
+"fr": "Qui t'a appris les bonnes manières quand tu grandissais ?",
+"it": "Chi ti ha insegnato le buone maniere quando eri piccolo?",
+"pt": "Quem te ensinou as boas maneiras quando eras pequeno?",
+"pt_BR": "Quem te ensinou boas maneiras quando você era criança?"
+}
+},
+{
+"id": "etiquette-003",
+"lv": "any",
+"i18n": {
+"en": "What is a polite habit in your country that might surprise visitors?",
+"de": "Welche höfliche Gewohnheit in deinem Land könnte Besucher überraschen?",
+"es": "¿Qué costumbre educada de tu país podría sorprender a los visitantes?",
+"fr": "Quelle habitude polie de ton pays pourrait surprendre les visiteurs ?",
+"it": "Quale abitudine educata del tuo paese potrebbe sorprendere i visitatori?",
+"pt": "Que hábito de boa educação do teu país pode surpreender os visitantes?",
+"pt_BR": "Qual hábito educado do seu país pode surpreender os visitantes?"
+}
+},
+{
+"id": "etiquette-004",
+"lv": "any",
+"i18n": {
+"en": "How do you usually greet a person you meet for the first time?",
+"de": "Wie begrüßt du normalerweise jemanden, den du zum ersten Mal triffst?",
+"es": "¿Cómo sueles saludar a alguien que conoces por primera vez?",
+"fr": "Comment salues-tu d'habitude une personne que tu rencontres pour la première fois ?",
+"it": "Come saluti di solito una persona che incontri per la prima volta?",
+"pt": "Como costumas cumprimentar alguém que conheces pela primeira vez?",
+"pt_BR": "Como você costuma cumprimentar alguém que conhece pela primeira vez?"
+}
+},
+{
+"id": "etiquette-005",
+"lv": "any",
+"i18n": {
+"en": "Have you ever made a small etiquette mistake abroad? What happened?",
+"de": "Hast du im Ausland schon mal einen kleinen Fauxpas begangen? Was ist passiert?",
+"es": "¿Alguna vez cometiste un pequeño error de etiqueta en el extranjero? ¿Qué pasó?",
+"fr": "As-tu déjà commis une petite gaffe à l'étranger ? Que s'est-il passé ?",
+"it": "Ti è mai capitato di fare una piccola gaffe all'estero? Cos'è successo?",
+"pt": "Já cometeste uma pequena gafe no estrangeiro? O que aconteceu?",
+"pt_BR": "Você já cometeu uma pequena gafe no exterior? O que aconteceu?"
+}
+},
+{
+"id": "etiquette-006",
+"lv": "any",
+"i18n": {
+"en": "What do you think is the most universal sign of politeness?",
+"de": "Was ist deiner Meinung nach das universellste Zeichen von Höflichkeit?",
+"es": "¿Cuál crees que es la señal de cortesía más universal?",
+"fr": "Quel est, selon toi, le signe de politesse le plus universel ?",
+"it": "Qual è secondo te il segno di cortesia più universale?",
+"pt": "Qual achas que é o sinal de boa educação mais universal?",
+"pt_BR": "Qual você acha que é o sinal de educação mais universal?"
+}
+},
+{
+"id": "etiquette-007",
+"lv": "any",
+"i18n": {
+"en": "Which country's manners do you admire the most?",
+"de": "Die Umgangsformen welches Landes bewunderst du am meisten?",
+"es": "¿Los modales de qué país admiras más?",
+"fr": "Quel pays admires-tu le plus pour ses bonnes manières ?",
+"it": "Le buone maniere di quale paese ammiri di più?",
+"pt": "As boas maneiras de que país admiras mais?",
+"pt_BR": "As boas maneiras de qual país você mais admira?"
+}
+},
+{
+"id": "etiquette-008",
+"lv": "any",
+"i18n": {
+"en": "What do you usually bring as a gift when someone invites you home?",
+"de": "Was bringst du meistens als Geschenk mit, wenn dich jemand nach Hause einlädt?",
+"es": "¿Qué sueles llevar de regalo cuando alguien te invita a su casa?",
+"fr": "Qu'apportes-tu généralement en cadeau quand on t'invite chez soi ?",
+"it": "Cosa porti di solito come regalo quando qualcuno ti invita a casa?",
+"pt": "O que costumas levar de presente quando alguém te convida para sua casa?",
+"pt_BR": "O que você costuma levar de presente quando alguém te convida para a casa dele?"
+}
+},
+{
+"id": "etiquette-009",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about tipping, and how does it work where you live?",
+"de": "Was hältst du vom Trinkgeld, und wie funktioniert es bei dir?",
+"es": "¿Qué opinas de las propinas y cómo funcionan donde vives?",
+"fr": "Que penses-tu du pourboire, et comment ça marche chez toi ?",
+"it": "Cosa ne pensi delle mance, e come funzionano dove vivi?",
+"pt": "O que achas das gorjetas, e como funcionam onde vives?",
+"pt_BR": "O que você acha das gorjetas, e como funcionam onde você mora?"
+}
+},
+{
+"id": "etiquette-010",
+"lv": "any",
+"i18n": {
+"en": "Which table manner from your childhood do you still follow?",
+"de": "Welche Tischmanier aus deiner Kindheit befolgst du heute noch?",
+"es": "¿Qué norma de mesa de tu infancia sigues cumpliendo?",
+"fr": "Quelle règle de table de ton enfance suis-tu encore ?",
+"it": "Quale regola a tavola della tua infanzia segui ancora?",
+"pt": "Que regra à mesa da tua infância ainda segues?",
+"pt_BR": "Qual regra de mesa da sua infância você ainda segue?"
+}
+},
+{
+"id": "etiquette-011",
+"lv": "any",
+"i18n": {
+"en": "Is being on time important to you? Why or why not?",
+"de": "Ist dir Pünktlichkeit wichtig? Warum oder warum nicht?",
+"es": "¿Es importante para ti ser puntual? ¿Por qué?",
+"fr": "La ponctualité est-elle importante pour toi ? Pourquoi ?",
+"it": "Per te è importante essere puntuale? Perché?",
+"pt": "Ser pontual é importante para ti? Porquê?",
+"pt_BR": "Ser pontual é importante para você? Por quê?"
+}
+},
+{
+"id": "etiquette-012",
+"lv": "any",
+"i18n": {
+"en": "What is a rude behaviour that really bothers you?",
+"de": "Welches unhöfliche Verhalten stört dich besonders?",
+"es": "¿Qué comportamiento maleducado te molesta mucho?",
+"fr": "Quel comportement impoli te dérange vraiment ?",
+"it": "Quale comportamento maleducato ti dà davvero fastidio?",
+"pt": "Que comportamento mal-educado te incomoda mesmo?",
+"pt_BR": "Qual comportamento mal-educado te incomoda de verdade?"
+}
+},
+{
+"id": "etiquette-013",
+"lv": "any",
+"i18n": {
+"en": "How do people in your culture say thank you in a special way?",
+"de": "Wie bedankt man sich in deiner Kultur auf besondere Weise?",
+"es": "¿Cómo se dan las gracias de forma especial en tu cultura?",
+"fr": "Comment remercie-t-on de façon spéciale dans ta culture ?",
+"it": "Come si ringrazia in modo speciale nella tua cultura?",
+"pt": "Como se agradece de forma especial na tua cultura?",
+"pt_BR": "Como se agradece de um jeito especial na sua cultura?"
+}
+},
+{
+"id": "etiquette-014",
+"lv": "any",
+"i18n": {
+"en": "What makes someone a great host, in your opinion?",
+"de": "Was macht deiner Meinung nach einen tollen Gastgeber aus?",
+"es": "En tu opinión, ¿qué hace que alguien sea un gran anfitrión?",
+"fr": "Selon toi, qu'est-ce qui fait un excellent hôte ?",
+"it": "Secondo te, cosa rende qualcuno un ottimo padrone di casa?",
+"pt": "Na tua opinião, o que faz de alguém um ótimo anfitrião?",
+"pt_BR": "Na sua opinião, o que faz de alguém um ótimo anfitrião?"
+}
+},
+{
+"id": "etiquette-015",
+"lv": "any",
+"i18n": {
+"en": "What makes someone a great guest?",
+"de": "Was macht einen tollen Gast aus?",
+"es": "¿Qué hace que alguien sea un gran invitado?",
+"fr": "Qu'est-ce qui fait un excellent invité ?",
+"it": "Cosa rende qualcuno un ottimo ospite?",
+"pt": "O que faz de alguém um ótimo convidado?",
+"pt_BR": "O que faz de alguém um ótimo convidado?"
+}
+},
+{
+"id": "etiquette-016",
+"lv": "any",
+"i18n": {
+"en": "Which etiquette rule from another country do you find the most interesting?",
+"de": "Welche Benimmregel aus einem anderen Land findest du am interessantesten?",
+"es": "¿Qué norma de etiqueta de otro país te parece más interesante?",
+"fr": "Quelle règle de savoir-vivre d'un autre pays trouves-tu la plus intéressante ?",
+"it": "Quale regola di galateo di un altro paese trovi più interessante?",
+"pt": "Que regra de etiqueta de outro país achas mais interessante?",
+"pt_BR": "Qual regra de etiqueta de outro país você acha mais interessante?"
+}
+},
+{
+"id": "etiquette-017",
+"lv": "any",
+"i18n": {
+"en": "Do you use formal or informal language with people you have just met?",
+"de": "Sprichst du Menschen, die du gerade kennengelernt hast, eher förmlich oder locker an?",
+"es": "¿Usas un trato formal o informal con alguien que acabas de conocer?",
+"fr": "Utilises-tu le vouvoiement ou le tutoiement avec les gens que tu viens de rencontrer ?",
+"it": "Usi il lei o il tu con le persone che hai appena conosciuto?",
+"pt": "Usas linguagem formal ou informal com quem acabaste de conhecer?",
+"pt_BR": "Você usa linguagem formal ou informal com quem acabou de conhecer?"
+}
+},
+{
+"id": "etiquette-018",
+"lv": "any",
+"i18n": {
+"en": "How do you politely end a conversation that is going on too long?",
+"de": "Wie beendest du höflich ein Gespräch, das zu lange dauert?",
+"es": "¿Cómo terminas con educación una conversación que se alarga demasiado?",
+"fr": "Comment mets-tu poliment fin à une conversation qui s'éternise ?",
+"it": "Come chiudi con garbo una conversazione che dura troppo?",
+"pt": "Como terminas com educação uma conversa que se está a alongar demasiado?",
+"pt_BR": "Como você encerra com educação uma conversa que está se estendendo demais?"
+}
+},
+{
+"id": "etiquette-019",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to show kindness to strangers?",
+"de": "Wie zeigst du Fremden am liebsten deine Freundlichkeit?",
+"es": "¿Cuál es tu forma favorita de ser amable con desconocidos?",
+"fr": "Quelle est ta façon préférée de montrer de la gentillesse aux inconnus ?",
+"it": "Qual è il tuo modo preferito di essere gentile con gli sconosciuti?",
+"pt": "Qual é a tua forma preferida de ser gentil com desconhecidos?",
+"pt_BR": "Qual é o seu jeito favorito de ser gentil com desconhecidos?"
+}
+},
+{
+"id": "etiquette-020",
+"lv": "any",
+"i18n": {
+"en": "Which manners do you think children should learn first?",
+"de": "Welche Manieren sollten Kinder deiner Meinung nach zuerst lernen?",
+"es": "¿Qué modales crees que los niños deberían aprender primero?",
+"fr": "Quelles bonnes manières les enfants devraient-ils apprendre en premier, selon toi ?",
+"it": "Quali buone maniere dovrebbero imparare per prime i bambini, secondo te?",
+"pt": "Que boas maneiras achas que as crianças deviam aprender primeiro?",
+"pt_BR": "Quais boas maneiras você acha que as crianças deveriam aprender primeiro?"
+}
+},
+{
+"id": "etiquette-021",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about phones at the dinner table?",
+"de": "Was hältst du von Handys am Esstisch?",
+"es": "¿Qué opinas de los móviles en la mesa?",
+"fr": "Que penses-tu des téléphones à table ?",
+"it": "Cosa ne pensi dei telefoni a tavola?",
+"pt": "O que achas dos telemóveis à mesa?",
+"pt_BR": "O que você acha de celular na mesa?"
+}
+},
+{
+"id": "etiquette-022",
+"lv": "any",
+"i18n": {
+"en": "What is a gesture that means something different in your culture?",
+"de": "Welche Geste bedeutet in deiner Kultur etwas anderes?",
+"es": "¿Qué gesto significa algo distinto en tu cultura?",
+"fr": "Quel geste a un sens différent dans ta culture ?",
+"it": "Quale gesto ha un significato diverso nella tua cultura?",
+"pt": "Que gesto tem um significado diferente na tua cultura?",
+"pt_BR": "Qual gesto tem um significado diferente na sua cultura?"
+}
+},
+{
+"id": "etiquette-023",
+"lv": "any",
+"i18n": {
+"en": "How do people queue where you live: neatly or more freely?",
+"de": "Wie stellt man sich bei dir an: ordentlich oder eher locker?",
+"es": "¿Cómo se hace cola donde vives: en orden o de forma más libre?",
+"fr": "Comment fait-on la queue chez toi : sagement ou plus librement ?",
+"it": "Come si fa la fila dove vivi: in modo ordinato o più libero?",
+"pt": "Como se fazem as filas onde vives: com ordem ou de forma mais livre?",
+"pt_BR": "Como as pessoas fazem fila onde você mora: com ordem ou mais à vontade?"
+}
+},
+{
+"id": "etiquette-024",
+"lv": "any",
+"i18n": {
+"en": "What is the nicest compliment you have ever received from a host or guest?",
+"de": "Was war das schönste Kompliment, das du je von einem Gastgeber oder Gast bekommen hast?",
+"es": "¿Cuál es el cumplido más bonito que te ha hecho un anfitrión o invitado?",
+"fr": "Quel est le plus beau compliment qu'un hôte ou un invité t'ait fait ?",
+"it": "Qual è il complimento più bello che hai ricevuto da un ospite?",
+"pt": "Qual foi o elogio mais bonito que recebeste de um anfitrião ou convidado?",
+"pt_BR": "Qual foi o elogio mais bonito que você já recebeu de um anfitrião ou convidado?"
+}
+},
+{
+"id": "etiquette-025",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer handshakes, hugs or a simple wave when greeting friends?",
+"de": "Begrüßt du Freunde lieber mit Handschlag, Umarmung oder einfachem Winken?",
+"es": "¿Prefieres saludar a tus amigos con un apretón de manos, un abrazo o un simple gesto?",
+"fr": "Pour saluer tes amis, tu préfères la poignée de main, l'accolade ou un simple signe ?",
+"it": "Per salutare gli amici preferisci una stretta di mano, un abbraccio o un semplice cenno?",
+"pt": "Para cumprimentar amigos, preferes um aperto de mão, um abraço ou um simples aceno?",
+"pt_BR": "Para cumprimentar amigos, você prefere aperto de mão, abraço ou só um aceno?"
+}
+},
+{
+"id": "etiquette-026",
+"lv": "any",
+"i18n": {
+"en": "What is a polite phrase in your language that you use every day?",
+"de": "Welche Höflichkeitsfloskel deiner Sprache benutzt du jeden Tag?",
+"es": "¿Qué expresión de cortesía de tu idioma usas todos los días?",
+"fr": "Quelle formule de politesse de ta langue utilises-tu chaque jour ?",
+"it": "Quale formula di cortesia della tua lingua usi ogni giorno?",
+"pt": "Que expressão de cortesia da tua língua usas todos os dias?",
+"pt_BR": "Qual expressão de cortesia do seu idioma você usa todo dia?"
+}
+},
+{
+"id": "etiquette-027",
+"lv": "any",
+"i18n": {
+"en": "Which public place do you think needs better manners?",
+"de": "An welchem öffentlichen Ort bräuchte es deiner Meinung nach bessere Manieren?",
+"es": "¿Qué lugar público crees que necesita mejores modales?",
+"fr": "Selon toi, quel lieu public aurait besoin de meilleures manières ?",
+"it": "Quale luogo pubblico secondo te avrebbe bisogno di più educazione?",
+"pt": "Que lugar público achas que precisa de melhores maneiras?",
+"pt_BR": "Qual lugar público você acha que precisa de mais educação?"
+}
+},
+{
+"id": "etiquette-028",
+"lv": "any",
+"i18n": {
+"en": "How do you like to thank someone after a nice dinner?",
+"de": "Wie bedankst du dich gern nach einem schönen Abendessen?",
+"es": "¿Cómo te gusta dar las gracias después de una buena cena?",
+"fr": "Comment aimes-tu remercier quelqu'un après un bon dîner ?",
+"it": "Come ti piace ringraziare qualcuno dopo una bella cena?",
+"pt": "Como gostas de agradecer a alguém depois de um bom jantar?",
+"pt_BR": "Como você gosta de agradecer alguém depois de um jantar gostoso?"
+}
+},
+{
+"id": "etiquette-029",
+"lv": "any",
+"i18n": {
+"en": "Is there an etiquette rule you think is outdated?",
+"de": "Gibt es eine Benimmregel, die du für veraltet hältst?",
+"es": "¿Hay alguna norma de etiqueta que te parezca anticuada?",
+"fr": "Y a-t-il une règle de savoir-vivre que tu trouves dépassée ?",
+"it": "C'è una regola di galateo che ti sembra superata?",
+"pt": "Há alguma regra de etiqueta que aches ultrapassada?",
+"pt_BR": "Tem alguma regra de etiqueta que você acha ultrapassada?"
+}
+},
+{
+"id": "etiquette-030",
+"lv": "any",
+"i18n": {
+"en": "What is the best way to apologise when you make a mistake?",
+"de": "Wie entschuldigt man sich am besten, wenn man einen Fehler gemacht hat?",
+"es": "¿Cuál es la mejor manera de pedir perdón cuando te equivocas?",
+"fr": "Quelle est la meilleure façon de s'excuser quand on fait une erreur ?",
+"it": "Qual è il modo migliore di scusarsi quando si sbaglia?",
+"pt": "Qual é a melhor forma de pedir desculpa quando erras?",
+"pt_BR": "Qual é a melhor forma de pedir desculpas quando você erra?"
+}
+},
+{
+"id": "etiquette-031",
+"lv": "any",
+"i18n": {
+"en": "How do people in your culture show respect to older people?",
+"de": "Wie zeigt man in deiner Kultur älteren Menschen Respekt?",
+"es": "¿Cómo se muestra respeto a las personas mayores en tu cultura?",
+"fr": "Comment montre-t-on du respect aux personnes âgées dans ta culture ?",
+"it": "Come si mostra rispetto agli anziani nella tua cultura?",
+"pt": "Como se mostra respeito às pessoas mais velhas na tua cultura?",
+"pt_BR": "Como se demonstra respeito às pessoas mais velhas na sua cultura?"
+}
+},
+{
+"id": "etiquette-032",
+"lv": "any",
+"i18n": {
+"en": "Which online habits do you consider polite in chats and messages?",
+"de": "Welche Gewohnheiten findest du in Chats und Nachrichten höflich?",
+"es": "¿Qué hábitos consideras educados en chats y mensajes?",
+"fr": "Quelles habitudes trouves-tu polies dans les discussions et les messages ?",
+"it": "Quali abitudini consideri educate nelle chat e nei messaggi?",
+"pt": "Que hábitos consideras educados em chats e mensagens?",
+"pt_BR": "Quais hábitos você considera educados em chats e mensagens?"
+}
+},
+{
+"id": "etiquette-033",
+"lv": "any",
+"i18n": {
+"en": "What would you tell a visitor never to do in your country?",
+"de": "Was würdest du einem Besucher raten, in deinem Land auf keinen Fall zu tun?",
+"es": "¿Qué le dirías a un visitante que nunca haga en tu país?",
+"fr": "Que dirais-tu à un visiteur de ne jamais faire dans ton pays ?",
+"it": "Cosa diresti a un visitatore di non fare mai nel tuo paese?",
+"pt": "O que dirias a um visitante para nunca fazer no teu país?",
+"pt_BR": "O que você diria a um visitante para nunca fazer no seu país?"
+}
+},
+{
+"id": "etiquette-034",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when someone corrects your manners?",
+"de": "Wie fühlst du dich, wenn jemand deine Manieren korrigiert?",
+"es": "¿Cómo te sientes cuando alguien corrige tus modales?",
+"fr": "Comment te sens-tu quand quelqu'un corrige tes manières ?",
+"it": "Come ti senti quando qualcuno corregge le tue maniere?",
+"pt": "Como te sentes quando alguém corrige as tuas maneiras?",
+"pt_BR": "Como você se sente quando alguém corrige seus modos?"
+}
+},
+{
+"id": "etiquette-035",
+"lv": "any",
+"i18n": {
+"en": "Which gift would you never give in your culture, and why?",
+"de": "Welches Geschenk würdest du in deiner Kultur nie machen, und warum?",
+"es": "¿Qué regalo nunca harías en tu cultura y por qué?",
+"fr": "Quel cadeau ne ferais-tu jamais dans ta culture, et pourquoi ?",
+"it": "Quale regalo non faresti mai nella tua cultura, e perché?",
+"pt": "Que presente nunca darias na tua cultura, e porquê?",
+"pt_BR": "Qual presente você nunca daria na sua cultura, e por quê?"
+}
+},
+{
+"id": "etiquette-036",
+"lv": "any",
+"i18n": {
+"en": "What do you do to make guests feel welcome at your home?",
+"de": "Was tust du, damit sich Gäste bei dir willkommen fühlen?",
+"es": "¿Qué haces para que los invitados se sientan bienvenidos en tu casa?",
+"fr": "Que fais-tu pour que tes invités se sentent bienvenus chez toi ?",
+"it": "Cosa fai perché gli ospiti si sentano i benvenuti a casa tua?",
+"pt": "O que fazes para que os convidados se sintam bem-vindos em tua casa?",
+"pt_BR": "O que você faz para os convidados se sentirem bem-vindos na sua casa?"
+}
+},
+{
+"id": "etiquette-037",
+"lv": "any",
+"i18n": {
+"en": "Which small act of politeness can brighten your whole day?",
+"de": "Welche kleine Höflichkeit kann dir den ganzen Tag versüßen?",
+"es": "¿Qué pequeño gesto de cortesía puede alegrarte el día?",
+"fr": "Quel petit geste de politesse peut illuminer toute ta journée ?",
+"it": "Quale piccolo gesto di cortesia può illuminarti la giornata?",
+"pt": "Que pequeno gesto de cortesia pode alegrar-te o dia inteiro?",
+"pt_BR": "Qual pequeno gesto de educação pode alegrar o seu dia inteiro?"
+}
+},
+{
+"id": "etiquette-038",
+"lv": "any",
+"i18n": {
+"en": "Do you think good manners are becoming more or less common?",
+"de": "Glaubst du, dass gute Manieren häufiger oder seltener werden?",
+"es": "¿Crees que los buenos modales son cada vez más o menos comunes?",
+"fr": "Penses-tu que les bonnes manières deviennent plus ou moins courantes ?",
+"it": "Pensi che le buone maniere stiano diventando più o meno comuni?",
+"pt": "Achas que as boas maneiras estão a tornar-se mais ou menos comuns?",
+"pt_BR": "Você acha que as boas maneiras estão ficando mais ou menos comuns?"
+}
+},
+{
+"id": "etiquette-039",
+"lv": "any",
+"i18n": {
+"en": "Which country would you like to visit to learn its etiquette first-hand?",
+"de": "Welches Land würdest du gern besuchen, um seine Etikette hautnah kennenzulernen?",
+"es": "¿Qué país te gustaría visitar para conocer su etiqueta de primera mano?",
+"fr": "Quel pays aimerais-tu visiter pour découvrir son savoir-vivre sur place ?",
+"it": "Quale paese vorresti visitare per conoscerne il galateo dal vivo?",
+"pt": "Que país gostarias de visitar para conhecer a sua etiqueta de perto?",
+"pt_BR": "Qual país você gostaria de visitar para conhecer a etiqueta de perto?"
+}
+},
+{
+"id": "etiquette-040",
+"lv": "any",
+"i18n": {
+"en": "How do you politely say no to food you do not want?",
+"de": "Wie lehnst du höflich Essen ab, das du nicht möchtest?",
+"es": "¿Cómo rechazas con educación una comida que no quieres?",
+"fr": "Comment refuses-tu poliment un plat dont tu ne veux pas ?",
+"it": "Come rifiuti con garbo un cibo che non vuoi?",
+"pt": "Como recusas com educação uma comida que não queres?",
+"pt_BR": "Como você recusa com educação uma comida que não quer?"
+}
+},
+{
+"id": "etiquette-041",
+"lv": "beginner",
+"i18n": {
+"en": "Do people take off their shoes when entering homes where you live?",
+"de": "Zieht man bei dir die Schuhe aus, wenn man ein Haus betritt?",
+"es": "¿Donde vives, la gente se quita los zapatos al entrar en casa?",
+"fr": "Chez toi, enlève-t-on ses chaussures en entrant dans une maison ?",
+"it": "Dove vivi, ci si toglie le scarpe entrando in casa?",
+"pt": "Onde vives, as pessoas tiram os sapatos ao entrar em casa?",
+"pt_BR": "Onde você mora, as pessoas tiram os sapatos ao entrar em casa?"
+}
+},
+{
+"id": "etiquette-042",
+"lv": "beginner",
+"i18n": {
+"en": "How many cheek kisses are normal when greeting in your region, if any?",
+"de": "Wie viele Wangenküsse sind bei dir zur Begrüßung üblich, wenn überhaupt?",
+"es": "¿Cuántos besos se dan al saludar en tu región, si es que se dan?",
+"fr": "Combien de bises se fait-on pour se saluer dans ta région, s'il y en a ?",
+"it": "Quanti baci sulla guancia si danno per salutare nella tua regione, se si usano?",
+"pt": "Quantos beijinhos se dão ao cumprimentar na tua região, se é que se dão?",
+"pt_BR": "Quantos beijinhos são normais para cumprimentar na sua região, se tiver?"
+}
+},
+{
+"id": "etiquette-043",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried eating with chopsticks? How did it go?",
+"de": "Hast du schon mal mit Stäbchen gegessen? Wie war es?",
+"es": "¿Has probado a comer con palillos? ¿Qué tal te fue?",
+"fr": "As-tu déjà essayé de manger avec des baguettes ? Comment ça s'est passé ?",
+"it": "Hai mai provato a mangiare con le bacchette? Com'è andata?",
+"pt": "Já experimentaste comer com pauzinhos? Como correu?",
+"pt_BR": "Você já tentou comer de hashi? Como foi?"
+}
+},
+{
+"id": "etiquette-044",
+"lv": "beginner",
+"i18n": {
+"en": "What do you say before starting a meal in your language?",
+"de": "Was sagt man in deiner Sprache vor dem Essen?",
+"es": "¿Qué se dice antes de empezar a comer en tu idioma?",
+"fr": "Que dit-on avant de commencer un repas dans ta langue ?",
+"it": "Cosa si dice prima di iniziare a mangiare nella tua lingua?",
+"pt": "O que se diz antes de começar a comer na tua língua?",
+"pt_BR": "O que se diz antes de começar a comer no seu idioma?"
+}
+},
+{
+"id": "etiquette-045",
+"lv": "beginner",
+"i18n": {
+"en": "Is it polite to finish everything on your plate in your culture?",
+"de": "Ist es in deiner Kultur höflich, den Teller leer zu essen?",
+"es": "¿En tu cultura es de buena educación terminarse todo el plato?",
+"fr": "Dans ta culture, est-il poli de finir son assiette ?",
+"it": "Nella tua cultura è educato finire tutto quello che c'è nel piatto?",
+"pt": "Na tua cultura é educado comer tudo o que está no prato?",
+"pt_BR": "Na sua cultura é educado comer tudo o que está no prato?"
+}
+},
+{
+"id": "etiquette-046",
+"lv": "beginner",
+"i18n": {
+"en": "Who usually pays when friends eat out together where you live?",
+"de": "Wer zahlt bei dir normalerweise, wenn Freunde zusammen essen gehen?",
+"es": "¿Quién suele pagar cuando unos amigos comen fuera donde vives?",
+"fr": "Chez toi, qui paie d'habitude quand des amis vont au restaurant ensemble ?",
+"it": "Dove vivi, chi paga di solito quando si mangia fuori tra amici?",
+"pt": "Onde vives, quem costuma pagar quando os amigos comem fora juntos?",
+"pt_BR": "Onde você mora, quem costuma pagar quando os amigos saem para comer?"
+}
+},
+{
+"id": "etiquette-047",
+"lv": "beginner",
+"i18n": {
+"en": "Do you use first names or titles with your teachers or bosses?",
+"de": "Sprichst du Lehrer oder Vorgesetzte mit Vornamen oder mit Titel an?",
+"es": "¿Llamas a tus profesores o jefes por su nombre o por su título?",
+"fr": "Appelles-tu tes professeurs ou tes supérieurs par leur prénom ou par leur titre ?",
+"it": "Chiami insegnanti o capi per nome o con il titolo?",
+"pt": "Tratas os teus professores ou chefes pelo nome ou pelo título?",
+"pt_BR": "Você chama professores ou chefes pelo primeiro nome ou pelo título?"
+}
+},
+{
+"id": "etiquette-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which gesture should visitors avoid in your country?",
+"de": "Welche Geste sollten Besucher in deinem Land vermeiden?",
+"es": "¿Qué gesto deberían evitar los visitantes en tu país?",
+"fr": "Quel geste les visiteurs devraient-ils éviter dans ton pays ?",
+"it": "Quale gesto dovrebbero evitare i visitatori nel tuo paese?",
+"pt": "Que gesto devem os visitantes evitar no teu país?",
+"pt_BR": "Qual gesto os visitantes deveriam evitar no seu país?"
+}
+},
+{
+"id": "etiquette-049",
+"lv": "beginner",
+"i18n": {
+"en": "How early or late is it polite to arrive at a party in your culture?",
+"de": "Wie früh oder spät kommt man in deiner Kultur höflicherweise zu einer Party?",
+"es": "¿Con cuánta antelación o retraso es educado llegar a una fiesta en tu cultura?",
+"fr": "Dans ta culture, à quelle heure est-il poli d'arriver à une fête ?",
+"it": "Nella tua cultura, quanto presto o tardi è educato arrivare a una festa?",
+"pt": "Na tua cultura, a que horas é educado chegar a uma festa?",
+"pt_BR": "Na sua cultura, qual é o horário educado para chegar a uma festa?"
+}
+},
+{
+"id": "etiquette-050",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite polite phrase in a foreign language?",
+"de": "Was ist deine liebste Höflichkeitsformel in einer Fremdsprache?",
+"es": "¿Cuál es tu expresión de cortesía favorita en otro idioma?",
+"fr": "Quelle est ta formule de politesse préférée dans une langue étrangère ?",
+"it": "Qual è la tua formula di cortesia preferita in una lingua straniera?",
+"pt": "Qual é a tua expressão de cortesia preferida numa língua estrangeira?",
+"pt_BR": "Qual é a sua expressão de cortesia favorita em outro idioma?"
+}
+},
+{
+"id": "etiquette-051",
+"lv": "beginner",
+"i18n": {
+"en": "Do you offer your seat to others on public transport?",
+"de": "Bietest du anderen in öffentlichen Verkehrsmitteln deinen Platz an?",
+"es": "¿Cedes tu asiento a otras personas en el transporte público?",
+"fr": "Cèdes-tu ta place aux autres dans les transports en commun ?",
+"it": "Cedi il tuo posto agli altri sui mezzi pubblici?",
+"pt": "Dás o teu lugar a outras pessoas nos transportes públicos?",
+"pt_BR": "Você oferece seu lugar a outras pessoas no transporte público?"
+}
+},
+{
+"id": "etiquette-052",
+"lv": "beginner",
+"i18n": {
+"en": "What flowers are a good gift in your culture, and which are not?",
+"de": "Welche Blumen sind in deiner Kultur ein gutes Geschenk, und welche nicht?",
+"es": "¿Qué flores son un buen regalo en tu cultura y cuáles no?",
+"fr": "Quelles fleurs sont un bon cadeau dans ta culture, et lesquelles ne le sont pas ?",
+"it": "Quali fiori sono un buon regalo nella tua cultura, e quali no?",
+"pt": "Que flores são um bom presente na tua cultura, e quais não são?",
+"pt_BR": "Quais flores são um bom presente na sua cultura, e quais não são?"
+}
+},
+{
+"id": "etiquette-053",
+"lv": "beginner",
+"i18n": {
+"en": "Do you open gifts right away or later in your culture?",
+"de": "Öffnet man Geschenke in deiner Kultur sofort oder später?",
+"es": "¿En tu cultura los regalos se abren enseguida o más tarde?",
+"fr": "Dans ta culture, ouvre-t-on les cadeaux tout de suite ou plus tard ?",
+"it": "Nella tua cultura i regali si aprono subito o più tardi?",
+"pt": "Na tua cultura os presentes abrem-se logo ou mais tarde?",
+"pt_BR": "Na sua cultura os presentes são abertos na hora ou depois?"
+}
+},
+{
+"id": "etiquette-054",
+"lv": "beginner",
+"i18n": {
+"en": "How do you call a waiter politely in your country?",
+"de": "Wie ruft man in deinem Land höflich einen Kellner?",
+"es": "¿Cómo se llama con educación al camarero en tu país?",
+"fr": "Comment appelle-t-on poliment un serveur dans ton pays ?",
+"it": "Come si chiama con garbo un cameriere nel tuo paese?",
+"pt": "Como se chama educadamente um empregado de mesa no teu país?",
+"pt_BR": "Como se chama o garçom com educação no seu país?"
+}
+},
+{
+"id": "etiquette-055",
+"lv": "beginner",
+"i18n": {
+"en": "Is bargaining at markets normal where you live?",
+"de": "Ist Handeln auf Märkten bei dir normal?",
+"es": "¿Es normal regatear en los mercados donde vives?",
+"fr": "Est-il normal de marchander sur les marchés chez toi ?",
+"it": "Dove vivi è normale contrattare al mercato?",
+"pt": "Onde vives, é normal regatear nos mercados?",
+"pt_BR": "Onde você mora, é normal pechinchar nas feiras?"
+}
+},
+{
+"id": "etiquette-056",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do with your hands while eating at the table?",
+"de": "Wo sind deine Hände, während du am Tisch isst?",
+"es": "¿Dónde pones las manos mientras comes en la mesa?",
+"fr": "Où mets-tu tes mains quand tu manges à table ?",
+"it": "Dove tieni le mani mentre mangi a tavola?",
+"pt": "Onde pões as mãos enquanto comes à mesa?",
+"pt_BR": "Onde você coloca as mãos enquanto come à mesa?"
+}
+},
+{
+"id": "etiquette-057",
+"lv": "beginner",
+"i18n": {
+"en": "Do people greet shopkeepers when entering a shop in your country?",
+"de": "Grüßt man in deinem Land beim Betreten eines Ladens das Personal?",
+"es": "¿En tu país se saluda al dependiente al entrar en una tienda?",
+"fr": "Dans ton pays, salue-t-on le commerçant en entrant dans une boutique ?",
+"it": "Nel tuo paese si saluta il negoziante entrando in un negozio?",
+"pt": "No teu país cumprimenta-se o lojista ao entrar numa loja?",
+"pt_BR": "No seu país as pessoas cumprimentam o vendedor ao entrar numa loja?"
+}
+},
+{
+"id": "etiquette-058",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about loud phone calls on buses or trains?",
+"de": "Was hältst du von lauten Telefonaten in Bus oder Bahn?",
+"es": "¿Qué opinas de las llamadas en voz alta en el autobús o el tren?",
+"fr": "Que penses-tu des appels bruyants dans le bus ou le train ?",
+"it": "Cosa ne pensi delle telefonate ad alta voce in autobus o in treno?",
+"pt": "O que achas das chamadas em voz alta no autocarro ou no comboio?",
+"pt_BR": "O que você acha de ligações em voz alta no ônibus ou no trem?"
+}
+},
+{
+"id": "etiquette-059",
+"lv": "beginner",
+"i18n": {
+"en": "What is something you always do when visiting a friend's home?",
+"de": "Was machst du immer, wenn du bei Freunden zu Besuch bist?",
+"es": "¿Qué haces siempre cuando visitas la casa de un amigo?",
+"fr": "Que fais-tu toujours quand tu vas chez un ami ?",
+"it": "Cosa fai sempre quando vai a casa di un amico?",
+"pt": "O que fazes sempre quando visitas a casa de um amigo?",
+"pt_BR": "O que você sempre faz quando visita a casa de um amigo?"
+}
+},
+{
+"id": "etiquette-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which dress code do you find hardest to get right?",
+"de": "Welcher Dresscode fällt dir am schwersten?",
+"es": "¿Qué código de vestimenta te cuesta más acertar?",
+"fr": "Quel code vestimentaire trouves-tu le plus difficile à respecter ?",
+"it": "Quale dress code trovi più difficile da azzeccare?",
+"pt": "Que código de vestuário achas mais difícil de acertar?",
+"pt_BR": "Qual dress code você acha mais difícil de acertar?"
+}
+},
+{
+"id": "etiquette-061",
+"lv": "beginner",
+"i18n": {
+"en": "Do you ask before taking photos of people when you travel?",
+"de": "Fragst du um Erlaubnis, bevor du auf Reisen Menschen fotografierst?",
+"es": "¿Pides permiso antes de fotografiar a personas cuando viajas?",
+"fr": "Demandes-tu la permission avant de photographier des gens en voyage ?",
+"it": "Chiedi il permesso prima di fotografare le persone quando viaggi?",
+"pt": "Pedes autorização antes de fotografar pessoas quando viajas?",
+"pt_BR": "Você pede permissão antes de fotografar pessoas quando viaja?"
+}
+},
+{
+"id": "etiquette-062",
+"lv": "beginner",
+"i18n": {
+"en": "How do you remember people's names after meeting them?",
+"de": "Wie merkst du dir die Namen von Menschen, die du kennenlernst?",
+"es": "¿Cómo recuerdas los nombres de la gente que acabas de conocer?",
+"fr": "Comment retiens-tu le prénom des gens que tu rencontres ?",
+"it": "Come ricordi i nomi delle persone che hai appena conosciuto?",
+"pt": "Como é que te lembras dos nomes das pessoas que conheces?",
+"pt_BR": "Como você lembra o nome das pessoas que acabou de conhecer?"
+}
+},
+{
+"id": "etiquette-063",
+"lv": "beginner",
+"i18n": {
+"en": "What topics do you avoid when talking to someone new?",
+"de": "Welche Themen meidest du, wenn du mit jemand Neuem sprichst?",
+"es": "¿Qué temas evitas al hablar con alguien nuevo?",
+"fr": "Quels sujets évites-tu quand tu parles à quelqu'un de nouveau ?",
+"it": "Quali argomenti eviti quando parli con qualcuno di nuovo?",
+"pt": "Que temas evitas quando falas com alguém novo?",
+"pt_BR": "Quais assuntos você evita ao conversar com alguém novo?"
+}
+},
+{
+"id": "etiquette-064",
+"lv": "beginner",
+"i18n": {
+"en": "Which side of the escalator do people stand on in your city?",
+"de": "Auf welcher Seite der Rolltreppe steht man in deiner Stadt?",
+"es": "¿En qué lado de la escalera mecánica se queda la gente en tu ciudad?",
+"fr": "De quel côté de l'escalator se tient-on dans ta ville ?",
+"it": "Da che lato della scala mobile si sta nella tua città?",
+"pt": "De que lado das escadas rolantes as pessoas ficam na tua cidade?",
+"pt_BR": "De que lado da escada rolante as pessoas ficam na sua cidade?"
+}
+},
+{
+"id": "etiquette-065",
+"lv": "beginner",
+"i18n": {
+"en": "How do people in your country wrap gifts?",
+"de": "Wie werden Geschenke in deinem Land verpackt?",
+"es": "¿Cómo se envuelven los regalos en tu país?",
+"fr": "Comment emballe-t-on les cadeaux dans ton pays ?",
+"it": "Come si incartano i regali nel tuo paese?",
+"pt": "Como se embrulham os presentes no teu país?",
+"pt_BR": "Como as pessoas embrulham presentes no seu país?"
+}
+},
+{
+"id": "etiquette-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How quickly do you expect a reply to a message, and why?",
+"de": "Wie schnell erwartest du eine Antwort auf eine Nachricht, und warum?",
+"es": "¿Con qué rapidez esperas que te respondan un mensaje y por qué?",
+"fr": "En combien de temps attends-tu une réponse à un message, et pourquoi ?",
+"it": "Quanto velocemente ti aspetti una risposta a un messaggio, e perché?",
+"pt": "Quão depressa esperas uma resposta a uma mensagem, e porquê?",
+"pt_BR": "Em quanto tempo você espera a resposta de uma mensagem, e por quê?"
+}
+},
+{
+"id": "etiquette-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your opinion on voice notes versus written messages?",
+"de": "Was hältst du von Sprachnachrichten im Vergleich zu Textnachrichten?",
+"es": "¿Qué opinas de los audios frente a los mensajes escritos?",
+"fr": "Que penses-tu des messages vocaux par rapport aux messages écrits ?",
+"it": "Cosa pensi dei messaggi vocali rispetto a quelli scritti?",
+"pt": "O que achas das mensagens de voz em comparação com as escritas?",
+"pt_BR": "O que você acha dos áudios em comparação com as mensagens escritas?"
+}
+},
+{
+"id": "etiquette-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you start and end a formal email in your language?",
+"de": "Wie beginnst und beendest du eine förmliche E-Mail in deiner Sprache?",
+"es": "¿Cómo empiezas y terminas un correo formal en tu idioma?",
+"fr": "Comment commences-tu et termines-tu un e-mail formel dans ta langue ?",
+"it": "Come inizi e chiudi un'e-mail formale nella tua lingua?",
+"pt": "Como começas e terminas um e-mail formal na tua língua?",
+"pt_BR": "Como você começa e termina um e-mail formal no seu idioma?"
+}
+},
+{
+"id": "etiquette-069",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes a video call feel polite and professional to you?",
+"de": "Was macht einen Videoanruf für dich höflich und professionell?",
+"es": "¿Qué hace que una videollamada te parezca educada y profesional?",
+"fr": "Qu'est-ce qui rend un appel vidéo poli et professionnel, selon toi ?",
+"it": "Cosa rende per te una videochiamata educata e professionale?",
+"pt": "O que torna uma videochamada educada e profissional para ti?",
+"pt_BR": "O que torna uma videochamada educada e profissional para você?"
+}
+},
+{
+"id": "etiquette-070",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people disagree politely at work or school in your culture?",
+"de": "Wie widerspricht man in deiner Kultur höflich bei der Arbeit oder in der Schule?",
+"es": "¿Cómo se expresa un desacuerdo con educación en el trabajo o en clase en tu cultura?",
+"fr": "Comment exprime-t-on poliment un désaccord au travail ou à l'école dans ta culture ?",
+"it": "Come si esprime con garbo un disaccordo al lavoro o a scuola nella tua cultura?",
+"pt": "Como se discorda com educação no trabalho ou na escola na tua cultura?",
+"pt_BR": "Como as pessoas discordam com educação no trabalho ou na escola na sua cultura?"
+}
+},
+{
+"id": "etiquette-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you prefer to receive feedback: directly or gently?",
+"de": "Wie bekommst du Feedback lieber: direkt oder behutsam?",
+"es": "¿Cómo prefieres recibir comentarios sobre tu trabajo: de forma directa o suave?",
+"fr": "Comment préfères-tu recevoir des retours : directement ou avec douceur ?",
+"it": "Come preferisci ricevere un feedback: in modo diretto o delicato?",
+"pt": "Como preferes receber feedback: de forma direta ou suave?",
+"pt_BR": "Como você prefere receber feedback: de forma direta ou mais suave?"
+}
+},
+{
+"id": "etiquette-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What is business dress like in your country?",
+"de": "Wie kleidet man sich in deinem Land im Geschäftsleben?",
+"es": "¿Cómo es la vestimenta de trabajo formal en tu país?",
+"fr": "À quoi ressemble la tenue professionnelle dans ton pays ?",
+"it": "Com'è l'abbigliamento da lavoro nel tuo paese?",
+"pt": "Como é o vestuário profissional no teu país?",
+"pt_BR": "Como é a roupa de trabalho no seu país?"
+}
+},
+{
+"id": "etiquette-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you politely decline an invitation?",
+"de": "Wie lehnst du eine Einladung höflich ab?",
+"es": "¿Cómo rechazas una invitación con educación?",
+"fr": "Comment refuses-tu poliment une invitation ?",
+"it": "Come rifiuti con garbo un invito?",
+"pt": "Como recusas um convite com educação?",
+"pt_BR": "Como você recusa um convite com educação?"
+}
+},
+{
+"id": "etiquette-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people in your culture react to compliments: accept or downplay them?",
+"de": "Wie reagiert man in deiner Kultur auf Komplimente: annehmen oder herunterspielen?",
+"es": "¿Cómo se reacciona a los cumplidos en tu cultura: se aceptan o se les quita importancia?",
+"fr": "Dans ta culture, accepte-t-on les compliments ou les minimise-t-on ?",
+"it": "Nella tua cultura i complimenti si accettano o si minimizzano?",
+"pt": "Na tua cultura, os elogios aceitam-se ou desvalorizam-se?",
+"pt_BR": "Na sua cultura, as pessoas aceitam elogios ou disfarçam?"
+}
+},
+{
+"id": "etiquette-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which celebration have you attended as a guest in another culture?",
+"de": "An welcher Feier in einer anderen Kultur hast du schon als Gast teilgenommen?",
+"es": "¿A qué celebración de otra cultura has asistido como invitado?",
+"fr": "À quelle fête d'une autre culture as-tu assisté en tant qu'invité ?",
+"it": "A quale festa di un'altra cultura hai partecipato come ospite?",
+"pt": "A que celebração de outra cultura já foste como convidado?",
+"pt_BR": "De qual comemoração de outra cultura você já participou como convidado?"
+}
+},
+{
+"id": "etiquette-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you correct someone's language mistakes without hurting them?",
+"de": "Wie korrigierst du Sprachfehler anderer, ohne sie zu verletzen?",
+"es": "¿Cómo corriges los errores de idioma de alguien sin herirle?",
+"fr": "Comment corriges-tu les fautes de langue de quelqu'un sans le vexer ?",
+"it": "Come correggi gli errori di lingua di qualcuno senza ferirlo?",
+"pt": "Como corriges os erros de língua de alguém sem o magoar?",
+"pt_BR": "Como você corrige os erros de idioma de alguém sem magoar?"
+}
+},
+{
+"id": "etiquette-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a topic people in your culture prefer not to discuss with strangers?",
+"de": "Über welches Thema spricht man in deiner Kultur lieber nicht mit Fremden?",
+"es": "¿De qué tema se prefiere no hablar con desconocidos en tu cultura?",
+"fr": "De quel sujet préfère-t-on ne pas parler avec des inconnus dans ta culture ?",
+"it": "Di quale argomento si preferisce non parlare con gli sconosciuti nella tua cultura?",
+"pt": "De que tema se prefere não falar com desconhecidos na tua cultura?",
+"pt_BR": "Sobre qual assunto as pessoas da sua cultura preferem não falar com desconhecidos?"
+}
+},
+{
+"id": "etiquette-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you behave when invited to a business meal?",
+"de": "Wie verhältst du dich, wenn du zu einem Geschäftsessen eingeladen bist?",
+"es": "¿Cómo te comportas cuando te invitan a una comida de negocios?",
+"fr": "Comment te comportes-tu quand tu es invité à un repas d'affaires ?",
+"it": "Come ti comporti quando sei invitato a un pranzo di lavoro?",
+"pt": "Como te comportas quando és convidado para uma refeição de negócios?",
+"pt_BR": "Como você se comporta quando é convidado para um almoço de negócios?"
+}
+},
+{
+"id": "etiquette-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your approach to group chats so they stay friendly?",
+"de": "Wie sorgst du dafür, dass Gruppenchats freundlich bleiben?",
+"es": "¿Qué haces para que los chats de grupo sigan siendo agradables?",
+"fr": "Comment fais-tu pour que les discussions de groupe restent sympathiques ?",
+"it": "Cosa fai perché le chat di gruppo restino piacevoli?",
+"pt": "O que fazes para que os chats de grupo continuem simpáticos?",
+"pt_BR": "O que você faz para os grupos de conversa continuarem agradáveis?"
+}
+},
+{
+"id": "etiquette-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle silence in a conversation with someone new?",
+"de": "Wie gehst du mit Stille in einem Gespräch mit jemand Neuem um?",
+"es": "¿Cómo llevas los silencios en una conversación con alguien nuevo?",
+"fr": "Comment gères-tu les silences dans une conversation avec quelqu'un de nouveau ?",
+"it": "Come gestisci i silenzi in una conversazione con qualcuno di nuovo?",
+"pt": "Como lidas com o silêncio numa conversa com alguém novo?",
+"pt_BR": "Como você lida com o silêncio numa conversa com alguém novo?"
+}
+},
+{
+"id": "etiquette-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do when a host offers food you cannot eat?",
+"de": "Was tust du, wenn dir ein Gastgeber Essen anbietet, das du nicht essen kannst?",
+"es": "¿Qué haces cuando un anfitrión te ofrece algo que no puedes comer?",
+"fr": "Que fais-tu quand un hôte te propose un plat que tu ne peux pas manger ?",
+"it": "Cosa fai quando un padrone di casa ti offre un cibo che non puoi mangiare?",
+"pt": "O que fazes quando um anfitrião te oferece comida que não podes comer?",
+"pt_BR": "O que você faz quando um anfitrião oferece uma comida que você não pode comer?"
+}
+},
+{
+"id": "etiquette-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How long do goodbyes usually take in your culture?",
+"de": "Wie lange dauern Verabschiedungen in deiner Kultur normalerweise?",
+"es": "¿Cuánto suelen durar las despedidas en tu cultura?",
+"fr": "Combien de temps durent les au revoir dans ta culture, en général ?",
+"it": "Quanto durano di solito i saluti di commiato nella tua cultura?",
+"pt": "Quanto tempo costumam demorar as despedidas na tua cultura?",
+"pt_BR": "Quanto tempo as despedidas costumam durar na sua cultura?"
+}
+},
+{
+"id": "etiquette-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about splitting the bill exactly versus taking turns paying?",
+"de": "Was hältst du davon, die Rechnung genau zu teilen statt abwechselnd zu zahlen?",
+"es": "¿Qué opinas de dividir la cuenta exactamente frente a pagar por turnos?",
+"fr": "Que penses-tu de partager l'addition au centime près plutôt que de payer chacun son tour ?",
+"it": "Cosa pensi del dividere il conto esattamente rispetto a pagare a turno?",
+"pt": "O que achas de dividir a conta ao cêntimo em vez de pagar à vez?",
+"pt_BR": "O que você acha de dividir a conta certinho em vez de pagar cada vez um?"
+}
+},
+{
+"id": "etiquette-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you thank someone in writing so it feels sincere?",
+"de": "Wie bedankst du dich schriftlich so, dass es aufrichtig wirkt?",
+"es": "¿Cómo das las gracias por escrito para que suene sincero?",
+"fr": "Comment remercies-tu quelqu'un par écrit pour que ce soit sincère ?",
+"it": "Come ringrazi qualcuno per iscritto in modo che suoni sincero?",
+"pt": "Como agradeces a alguém por escrito para que soe sincero?",
+"pt_BR": "Como você agradece alguém por escrito de um jeito sincero?"
+}
+},
+{
+"id": "etiquette-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which country's business etiquette would you most like to learn?",
+"de": "Die Geschäftsetikette welches Landes würdest du am liebsten lernen?",
+"es": "¿La etiqueta empresarial de qué país te gustaría aprender más?",
+"fr": "Quelle étiquette des affaires aimerais-tu le plus apprendre ?",
+"it": "Il galateo d'affari di quale paese ti piacerebbe di più imparare?",
+"pt": "A etiqueta empresarial de que país mais gostarias de aprender?",
+"pt_BR": "A etiqueta de negócios de qual país você mais gostaria de aprender?"
+}
+},
+{
+"id": "etiquette-086",
+"lv": "advanced",
+"i18n": {
+"en": "How do you adapt your manners when you move between cultures?",
+"de": "Wie passt du deine Umgangsformen an, wenn du zwischen Kulturen wechselst?",
+"es": "¿Cómo adaptas tus modales cuando pasas de una cultura a otra?",
+"fr": "Comment adaptes-tu tes manières quand tu passes d'une culture à l'autre ?",
+"it": "Come adatti le tue maniere quando passi da una cultura all'altra?",
+"pt": "Como adaptas as tuas maneiras quando passas de uma cultura para outra?",
+"pt_BR": "Como você adapta seus modos quando passa de uma cultura para outra?"
+}
+},
+{
+"id": "etiquette-087",
+"lv": "advanced",
+"i18n": {
+"en": "What does saving face mean to you, and when have you seen it matter?",
+"de": "Was bedeutet für dich, das Gesicht zu wahren, und wann war es schon mal wichtig?",
+"es": "¿Qué significa para ti salvar las apariencias y cuándo has visto que importaba?",
+"fr": "Que signifie pour toi sauver la face, et quand as-tu vu que c'était important ?",
+"it": "Cosa significa per te salvare la faccia, e quando hai visto che contava?",
+"pt": "O que significa para ti salvar a face, e quando viste que isso importava?",
+"pt_BR": "O que significa para você preservar a imagem do outro, e quando viu que isso importava?"
+}
+},
+{
+"id": "etiquette-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you plan a dinner for guests from several different cultures?",
+"de": "Wie würdest du ein Abendessen für Gäste aus verschiedenen Kulturen planen?",
+"es": "¿Cómo planearías una cena para invitados de varias culturas distintas?",
+"fr": "Comment organiserais-tu un dîner pour des invités de plusieurs cultures ?",
+"it": "Come organizzeresti una cena per ospiti di culture diverse?",
+"pt": "Como planearias um jantar para convidados de várias culturas diferentes?",
+"pt_BR": "Como você planejaria um jantar para convidados de várias culturas diferentes?"
+}
+},
+{
+"id": "etiquette-089",
+"lv": "advanced",
+"i18n": {
+"en": "Where is the line between being polite and being insincere, for you?",
+"de": "Wo liegt für dich die Grenze zwischen Höflichkeit und Unaufrichtigkeit?",
+"es": "Para ti, ¿dónde está el límite entre ser educado y no ser sincero?",
+"fr": "Pour toi, où est la limite entre la politesse et le manque de sincérité ?",
+"it": "Per te, dov'è il confine tra essere educati ed essere poco sinceri?",
+"pt": "Para ti, onde fica a fronteira entre ser educado e não ser sincero?",
+"pt_BR": "Para você, onde fica o limite entre ser educado e não ser sincero?"
+}
+},
+{
+"id": "etiquette-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you recover gracefully after a cultural faux pas?",
+"de": "Wie rettest du dich elegant nach einem kulturellen Fauxpas?",
+"es": "¿Cómo te recuperas con elegancia tras una metedura de pata cultural?",
+"fr": "Comment te rattrapes-tu avec élégance après une gaffe culturelle ?",
+"it": "Come rimedi con eleganza dopo una gaffe culturale?",
+"pt": "Como recuperas com elegância depois de uma gafe cultural?",
+"pt_BR": "Como você contorna com elegância uma gafe cultural?"
+}
+},
+{
+"id": "etiquette-091",
+"lv": "advanced",
+"i18n": {
+"en": "How should leaders make meetings comfortable for people from every culture?",
+"de": "Wie sollten Führungskräfte Meetings für Menschen aus allen Kulturen angenehm gestalten?",
+"es": "¿Cómo deberían los líderes hacer que las reuniones sean cómodas para gente de toda cultura?",
+"fr": "Comment un responsable peut-il rendre les réunions agréables pour des personnes de toutes cultures ?",
+"it": "Come dovrebbe un leader rendere le riunioni piacevoli per persone di ogni cultura?",
+"pt": "Como devem os líderes tornar as reuniões confortáveis para pessoas de todas as culturas?",
+"pt_BR": "Como os líderes deveriam deixar as reuniões confortáveis para pessoas de todas as culturas?"
+}
+},
+{
+"id": "etiquette-092",
+"lv": "advanced",
+"i18n": {
+"en": "Which etiquette rule do you think is truly universal, and why?",
+"de": "Welche Benimmregel hältst du für wirklich universell, und warum?",
+"es": "¿Qué norma de etiqueta crees que es realmente universal y por qué?",
+"fr": "Quelle règle de savoir-vivre te semble vraiment universelle, et pourquoi ?",
+"it": "Quale regola di galateo pensi sia davvero universale, e perché?",
+"pt": "Que regra de etiqueta achas verdadeiramente universal, e porquê?",
+"pt_BR": "Qual regra de etiqueta você acha que é realmente universal, e por quê?"
+}
+},
+{
+"id": "etiquette-093",
+"lv": "advanced",
+"i18n": {
+"en": "How has technology changed etiquette in your lifetime?",
+"de": "Wie hat die Technik die Etikette in deinem Leben verändert?",
+"es": "¿Cómo ha cambiado la tecnología la etiqueta a lo largo de tu vida?",
+"fr": "Comment la technologie a-t-elle changé le savoir-vivre au cours de ta vie ?",
+"it": "Come ha cambiato la tecnologia il galateo nel corso della tua vita?",
+"pt": "Como é que a tecnologia mudou a etiqueta ao longo da tua vida?",
+"pt_BR": "Como a tecnologia mudou a etiqueta ao longo da sua vida?"
+}
+},
+{
+"id": "etiquette-094",
+"lv": "advanced",
+"i18n": {
+"en": "How would you explain your country's etiquette to a newcomer without lecturing?",
+"de": "Wie würdest du einem Neuankömmling die Etikette deines Landes erklären, ohne zu belehren?",
+"es": "¿Cómo explicarías la etiqueta de tu país a un recién llegado sin sermonear?",
+"fr": "Comment expliquerais-tu le savoir-vivre de ton pays à un nouvel arrivant sans faire la leçon ?",
+"it": "Come spiegheresti il galateo del tuo paese a un nuovo arrivato senza fare la predica?",
+"pt": "Como explicarias a etiqueta do teu país a um recém-chegado sem dar sermões?",
+"pt_BR": "Como você explicaria a etiqueta do seu país a um recém-chegado sem dar sermão?"
+}
+},
+{
+"id": "etiquette-095",
+"lv": "advanced",
+"i18n": {
+"en": "What is the difference between the golden rule and the platinum rule for you?",
+"de": "Was ist für dich der Unterschied zwischen der goldenen und der Platin-Regel?",
+"es": "¿Qué diferencia hay para ti entre la regla de oro y la regla de platino?",
+"fr": "Pour toi, quelle est la différence entre la règle d'or et la règle de platine ?",
+"it": "Per te, qual è la differenza tra la regola d'oro e la regola di platino?",
+"pt": "Para ti, qual é a diferença entre a regra de ouro e a regra de platina?",
+"pt_BR": "Para você, qual é a diferença entre a regra de ouro e a regra de platina?"
+}
+},
+{
+"id": "etiquette-096",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance honesty and tact when giving difficult news?",
+"de": "Wie findest du die Balance zwischen Ehrlichkeit und Takt bei schwierigen Nachrichten?",
+"es": "¿Cómo equilibras la sinceridad y el tacto al dar una noticia difícil?",
+"fr": "Comment trouves-tu l'équilibre entre franchise et tact pour annoncer une nouvelle difficile ?",
+"it": "Come bilanci sincerità e tatto quando devi dare una notizia difficile?",
+"pt": "Como equilibras a honestidade e o tato ao dar uma notícia difícil?",
+"pt_BR": "Como você equilibra sinceridade e tato ao dar uma notícia difícil?"
+}
+},
+{
+"id": "etiquette-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which formal event would you feel most confident attending, and why?",
+"de": "Bei welchem formellen Anlass würdest du dich am sichersten fühlen, und warum?",
+"es": "¿En qué evento formal te sentirías más seguro y por qué?",
+"fr": "À quel événement formel te sentirais-tu le plus à l'aise, et pourquoi ?",
+"it": "A quale evento formale ti sentiresti più sicuro di partecipare, e perché?",
+"pt": "Em que evento formal te sentirias mais confiante, e porquê?",
+"pt_BR": "Em qual evento formal você se sentiria mais confiante, e por quê?"
+}
+},
+{
+"id": "etiquette-098",
+"lv": "advanced",
+"i18n": {
+"en": "How can good manners help build trust between people from different cultures?",
+"de": "Wie können gute Manieren Vertrauen zwischen Menschen aus verschiedenen Kulturen schaffen?",
+"es": "¿Cómo pueden los buenos modales crear confianza entre personas de culturas distintas?",
+"fr": "Comment les bonnes manières peuvent-elles créer la confiance entre des personnes de cultures différentes ?",
+"it": "Come possono le buone maniere creare fiducia tra persone di culture diverse?",
+"pt": "Como podem as boas maneiras criar confiança entre pessoas de culturas diferentes?",
+"pt_BR": "Como as boas maneiras podem criar confiança entre pessoas de culturas diferentes?"
+}
+},
+{
+"id": "etiquette-099",
+"lv": "advanced",
+"i18n": {
+"en": "What would your personal code of etiquette include?",
+"de": "Was würde dein persönlicher Benimmkodex enthalten?",
+"es": "¿Qué incluiría tu código personal de etiqueta?",
+"fr": "Que contiendrait ton code personnel de savoir-vivre ?",
+"it": "Cosa includerebbe il tuo codice personale di galateo?",
+"pt": "O que incluiria o teu código pessoal de etiqueta?",
+"pt_BR": "O que o seu código pessoal de etiqueta incluiria?"
+}
+},
+{
+"id": "etiquette-100",
+"lv": "advanced",
+"i18n": {
+"en": "How do you show respect when you join a tradition you do not share?",
+"de": "Wie zeigst du Respekt, wenn du an einer Tradition teilnimmst, die nicht deine ist?",
+"es": "¿Cómo muestras respeto al participar en una tradición que no es la tuya?",
+"fr": "Comment montres-tu du respect quand tu participes à une tradition qui n'est pas la tienne ?",
+"it": "Come mostri rispetto quando partecipi a una tradizione che non è la tua?",
+"pt": "Como mostras respeito quando participas numa tradição que não é a tua?",
+"pt_BR": "Como você demonstra respeito ao participar de uma tradição que não é a sua?"
+}
+}
+]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 121,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Holidays and vacations",
+     "g": "Plan a trip in Italian, from booking to packing.",
+     "p": [
+      "Andare in vacanza means to go on holiday: quest'estate vado in vacanza in Sicilia. Le ferie are your days off work.",
+      "Prenotare is to book: ho prenotato un albergo, prenoto il volo online. La prenotazione is the booking.",
+      "Fare le valigie is to pack: stasera faccio le valigie. Partire is to leave, tornare to come back."
+     ],
+     "q": "Where would you love to go on your next vacanza, and how would you get there?",
+     "c": "Write three sentences about a trip: where you go, what you book and when you pack."
+    },
+    "de": {
+     "t": "Urlaub und Ferien",
+     "g": "Du planst eine Reise auf Italienisch, von der Buchung bis zum Packen.",
+     "p": [
+      "Andare in vacanza heißt in Urlaub fahren: quest'estate vado in vacanza in Sicilia. Le ferie sind deine freien Tage.",
+      "Prenotare heißt buchen: ho prenotato un albergo, prenoto il volo online. La prenotazione ist die Buchung.",
+      "Fare le valigie heißt Koffer packen: stasera faccio le valigie. Partire ist abreisen, tornare zurückkommen."
+     ],
+     "q": "Wohin würdest du in deiner nächsten vacanza gern fahren, und wie kommst du hin?",
+     "c": "Schreib drei Sätze über eine Reise: wohin, was du buchst und wann du packst."
+    },
+    "es": {
+     "t": "Vacaciones y viajes",
+     "g": "Planear un viaje en italiano, desde la reserva hasta la maleta.",
+     "p": [
+      "Andare in vacanza es irse de vacaciones: quest'estate vado in vacanza in Sicilia. Le ferie son tus días libres del trabajo.",
+      "Prenotare es reservar: ho prenotato un albergo, prenoto il volo online. La prenotazione es la reserva.",
+      "Fare le valigie es hacer las maletas: stasera faccio le valigie. Partire es salir de viaje, tornare volver."
+     ],
+     "q": "¿Adónde te encantaría ir en tu próxima vacanza y cómo llegarías?",
+     "c": "Escribe tres frases sobre un viaje: adónde vas, qué reservas y cuándo haces la maleta."
+    },
+    "fr": {
+     "t": "Vacances et voyages",
+     "g": "Organiser un voyage en italien, de la réservation à la valise.",
+     "p": [
+      "Andare in vacanza veut dire partir en vacances : quest'estate vado in vacanza in Sicilia. Le ferie sont tes congés.",
+      "Prenotare veut dire réserver : ho prenotato un albergo, prenoto il volo online. La prenotazione est la réservation.",
+      "Fare le valigie veut dire faire ses valises : stasera faccio le valigie. Partire est partir, tornare revenir."
+     ],
+     "q": "Où aimerais-tu aller pour ta prochaine vacanza, et comment y irais-tu ?",
+     "c": "Écris trois phrases sur un voyage : où tu vas, ce que tu réserves et quand tu fais ta valise."
+    },
+    "it": {
+     "t": "Vacanze e viaggi",
+     "g": "Organizzare un viaggio in italiano, dalla prenotazione alla valigia.",
+     "p": [
+      "Andare in vacanza: quest'estate vado in vacanza in Sicilia. Le ferie sono i giorni liberi dal lavoro.",
+      "Prenotare: ho prenotato un albergo, prenoto il volo online. La prenotazione è il documento o l'azione di prenotare.",
+      "Fare le valigie: stasera faccio le valigie. Partire per un posto, tornare a casa alla fine del viaggio."
+     ],
+     "q": "Dove ti piacerebbe andare nella tua prossima vacanza, e come ci arriveresti?",
+     "c": "Scrivi tre frasi su un viaggio: dove vai, che cosa prenoti e quando fai le valigie."
+    },
+    "pt": {
+     "t": "Férias e viagens",
+     "g": "Planear uma viagem em italiano, da reserva à mala.",
+     "p": [
+      "Andare in vacanza é ir de férias: quest'estate vado in vacanza in Sicilia. Le ferie são os teus dias livres do trabalho.",
+      "Prenotare é reservar: ho prenotato un albergo, prenoto il volo online. La prenotazione é a reserva.",
+      "Fare le valigie é fazer as malas: stasera faccio le valigie. Partire é partir, tornare é voltar."
+     ],
+     "q": "Para onde adorarias ir na tua próxima vacanza, e como chegarias lá?",
+     "c": "Escreve três frases sobre uma viagem: para onde vais, o que reservas e quando fazes as malas."
+    },
+    "pt_BR": {
+     "t": "Férias e viagens",
+     "g": "Planejar uma viagem em italiano, da reserva à mala.",
+     "p": [
+      "Andare in vacanza é sair de férias: quest'estate vado in vacanza in Sicilia. Le ferie são seus dias de folga do trabalho.",
+      "Prenotare é reservar: ho prenotato un albergo, prenoto il volo online. La prenotazione é a reserva.",
+      "Fare le valigie é fazer as malas: stasera faccio le valigie. Partire é viajar, partir; tornare é voltar."
+     ],
+     "q": "Para onde você adoraria ir na sua próxima vacanza, e como chegaria lá?",
+     "c": "Escreva três frases sobre uma viagem: para onde vai, o que reserva e quando faz as malas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "andare in vacanza",
+      "ex": "Ad agosto andiamo in vacanza al mare."
+     },
+     {
+      "w": "prenotare",
+      "ex": "Ho prenotato una camera doppia per tre notti."
+     },
+     {
+      "w": "fare le valigie",
+      "ex": "Domani parto, stasera devo fare le valigie."
+     },
+     {
+      "w": "le ferie",
+      "ex": "Quest'anno prendo le ferie a settembre."
+     },
+     {
+      "w": "il volo",
+      "ex": "Il volo per Palermo parte alle nove."
+     },
+     {
+      "w": "partire",
+      "ex": "Partiamo sabato mattina presto."
+     }
+    ],
+    "gram": "Andare in vacanza al mare, in montagna, in Sicilia; essere in ferie. Prenotare qualcosa: ho prenotato il volo."
+   }
+  },
+  {
+   "d": 122,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: commands and the future",
+     "g": "Recap imperatives, pronouns in commands and the futuro semplice.",
+     "p": [
+      "Imperative: tu guarda, prendi, senti; Lei guardi, prenda, senta. Negative tu: non + infinitive, non toccare!",
+      "Pronouns attach to tu commands: dimmi, fallo, portamelo. With Lei they go before: me lo dica, lo faccia.",
+      "Futuro semplice: parlerò, prenderai, partirà; irregular sarò, avrò, andrò, verrò, farò. Also for guesses: sarà vero."
+     ],
+     "q": "Can you give me three tips for visiting your city, using commands like visita, prova, non perdere?",
+     "c": "Write two commands with pronouns (dimmelo, lo prenda) and two sentences about next year with the future."
+    },
+    "de": {
+     "t": "Wiederholung: Imperativ und Futur",
+     "g": "Du wiederholst Imperativ, Pronomen beim Imperativ und das futuro semplice.",
+     "p": [
+      "Imperativ: tu guarda, prendi, senti; Lei guardi, prenda, senta. Verneint mit tu: non + Infinitiv, non toccare!",
+      "Pronomen hängen am tu-Imperativ: dimmi, fallo, portamelo. Bei Lei stehen sie davor: me lo dica, lo faccia.",
+      "Futuro semplice: parlerò, prenderai, partirà; unregelmäßig sarò, avrò, andrò, verrò, farò. Auch für Vermutungen."
+     ],
+     "q": "Gibst du mir drei Tipps für deine Stadt mit Befehlen wie visita, prova, non perdere?",
+     "c": "Schreib zwei Befehle mit Pronomen (dimmelo, lo prenda) und zwei Sätze über nächstes Jahr im Futur."
+    },
+    "es": {
+     "t": "Repaso: imperativo y futuro",
+     "g": "Repasar el imperativo, los pronombres con él y el futuro simple.",
+     "p": [
+      "Imperativo: tu guarda, prendi, senti; Lei guardi, prenda, senta. Negativo con tu: non + infinitivo, non toccare!",
+      "Con tu los pronombres van pegados: dimmi, fallo, portamelo. Con Lei van delante: me lo dica, lo faccia.",
+      "Futuro simple: parlerò, prenderai, partirà; irregulares sarò, avrò, andrò, verrò, farò. También para suponer."
+     ],
+     "q": "¿Me das tres consejos para visitar tu ciudad con órdenes como visita, prova, non perdere?",
+     "c": "Escribe dos órdenes con pronombres (dimmelo, lo prenda) y dos frases sobre el año que viene en futuro."
+    },
+    "fr": {
+     "t": "Révision : impératif et futur",
+     "g": "Revoir l'impératif, les pronoms à l'impératif et le futuro semplice.",
+     "p": [
+      "Impératif : tu guarda, prendi, senti ; Lei guardi, prenda, senta. Négatif avec tu : non + infinitif, non toccare !",
+      "Avec tu, les pronoms s'accrochent : dimmi, fallo, portamelo. Avec Lei, ils vont devant : me lo dica, lo faccia.",
+      "Futuro semplice : parlerò, prenderai, partirà ; irréguliers sarò, avrò, andrò, verrò, farò. Aussi pour supposer."
+     ],
+     "q": "Tu me donnes trois conseils pour visiter ta ville avec des ordres comme visita, prova, non perdere ?",
+     "c": "Écris deux ordres avec pronoms (dimmelo, lo prenda) et deux phrases sur l'an prochain au futur."
+    },
+    "it": {
+     "t": "Ripasso: imperativo e futuro",
+     "g": "Ripassare l'imperativo, i pronomi con l'imperativo e il futuro semplice.",
+     "p": [
+      "Imperativo: tu guarda, prendi, senti; Lei guardi, prenda, senta. Negativo con tu: non + infinito, non toccare!",
+      "Con tu i pronomi si attaccano: dimmi, fallo, portamelo. Con Lei vanno prima: me lo dica, lo faccia.",
+      "Futuro semplice: parlerò, prenderai, partirà; irregolari sarò, avrò, andrò, verrò, farò. Serve anche per ipotesi."
+     ],
+     "q": "Mi dai tre consigli per visitare la tua città con imperativi come visita, prova, non perdere?",
+     "c": "Scrivi due imperativi con pronomi (dimmelo, lo prenda) e due frasi sul prossimo anno al futuro."
+    },
+    "pt": {
+     "t": "Revisão: imperativo e futuro",
+     "g": "Rever o imperativo, os pronomes com ele e o futuro simples.",
+     "p": [
+      "Imperativo: tu guarda, prendi, senti; Lei guardi, prenda, senta. Negativo com tu: non + infinitivo, non toccare!",
+      "Com tu os pronomes colam-se: dimmi, fallo, portamelo. Com Lei vêm antes: me lo dica, lo faccia.",
+      "Futuro simples: parlerò, prenderai, partirà; irregulares sarò, avrò, andrò, verrò, farò. Também para suposições."
+     ],
+     "q": "Dás-me três conselhos para visitar a tua cidade com ordens como visita, prova, non perdere?",
+     "c": "Escreve duas ordens com pronomes (dimmelo, lo prenda) e duas frases sobre o próximo ano no futuro."
+    },
+    "pt_BR": {
+     "t": "Revisão: imperativo e futuro",
+     "g": "Revisar o imperativo, os pronomes com ele e o futuro simples.",
+     "p": [
+      "Imperativo: tu guarda, prendi, senti; Lei guardi, prenda, senta. Negativo com tu: non + infinitivo, non toccare!",
+      "Com tu os pronomes vão grudados: dimmi, fallo, portamelo. Com Lei vêm antes: me lo dica, lo faccia.",
+      "Futuro simples: parlerò, prenderai, partirà; irregulares sarò, avrò, andrò, verrò, farò. Serve também para suposições."
+     ],
+     "q": "Você me dá três dicas para visitar sua cidade com ordens como visita, prova, non perdere?",
+     "c": "Escreva duas ordens com pronomes (dimmelo, lo prenda) e duas frases sobre o ano que vem no futuro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dimmi",
+      "ex": "Dimmi la verità, ti piace il mio sugo?"
+     },
+     {
+      "w": "me lo dica",
+      "ex": "Se ha bisogno di qualcosa, me lo dica."
+     },
+     {
+      "w": "non toccare",
+      "ex": "Non toccare il forno, è ancora caldo!"
+     },
+     {
+      "w": "portamelo",
+      "ex": "Hai il mio libro? Portamelo domani."
+     },
+     {
+      "w": "andrò",
+      "ex": "L'anno prossimo andrò a studiare a Bologna."
+     },
+     {
+      "w": "verrai",
+      "ex": "Verrai anche tu alla cena di sabato?"
+     }
+    ],
+    "gram": "Imperativo con pronomi: tu fallo, dimmelo; Lei lo faccia. Futuro semplice: farò, sarò, avrò, andrò, verrò, vorrò."
+   }
+  },
+  {
+   "d": 123,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Conditional: forms",
+     "g": "Conjugate the condizionale presente and recognise its key forms.",
+     "p": [
+      "Take the future stem and add -ei, -esti, -ebbe, -emmo, -este, -ebbero: parlerei, prenderesti, partirebbe.",
+      "Irregular stems are the same as the future: sarei, avrei, andrei, potrei, vorrei, dovrei, verrei, farei.",
+      "It means would: vorrei un caffè (I would like), sarebbe bello (it would be nice), andrei volentieri (I'd gladly go)."
+     ],
+     "q": "What would you do with a free day tomorrow? Try to answer with three verbs in the conditional.",
+     "c": "Conjugate vorrei and potrei in all six persons out loud, then write one sentence with each."
+    },
+    "de": {
+     "t": "Konditional: die Formen",
+     "g": "Du konjugierst das condizionale presente und erkennst die wichtigsten Formen.",
+     "p": [
+      "Nimm den Futurstamm und hänge -ei, -esti, -ebbe, -emmo, -este, -ebbero an: parlerei, prenderesti, partirebbe.",
+      "Unregelmäßige Stämme wie im Futur: sarei, avrei, andrei, potrei, vorrei, dovrei, verrei, farei.",
+      "Es bedeutet würde: vorrei un caffè (ich hätte gern), sarebbe bello (es wäre schön), andrei volentieri."
+     ],
+     "q": "Was würdest du morgen an einem freien Tag machen? Antworte mit drei Verben im Konditional.",
+     "c": "Konjugiere vorrei und potrei laut in allen sechs Personen und schreib je einen Satz."
+    },
+    "es": {
+     "t": "Condicional: las formas",
+     "g": "Conjugar el condizionale presente y reconocer sus formas clave.",
+     "p": [
+      "Toma la raíz del futuro y añade -ei, -esti, -ebbe, -emmo, -este, -ebbero: parlerei, prenderesti, partirebbe.",
+      "Las raíces irregulares son las del futuro: sarei, avrei, andrei, potrei, vorrei, dovrei, verrei, farei.",
+      "Equivale a nuestro condicional: vorrei un caffè (querría), sarebbe bello (sería bonito), andrei volentieri."
+     ],
+     "q": "¿Qué harías mañana con un día libre? Intenta responder con tres verbos en condicional.",
+     "c": "Conjuga vorrei y potrei en voz alta en las seis personas y escribe una frase con cada uno."
+    },
+    "fr": {
+     "t": "Le conditionnel : les formes",
+     "g": "Conjuguer le condizionale presente et reconnaître ses formes clés.",
+     "p": [
+      "Prends le radical du futur et ajoute -ei, -esti, -ebbe, -emmo, -este, -ebbero : parlerei, prenderesti, partirebbe.",
+      "Les radicaux irréguliers sont ceux du futur : sarei, avrei, andrei, potrei, vorrei, dovrei, verrei, farei.",
+      "Il correspond à notre conditionnel : vorrei un caffè (je voudrais), sarebbe bello (ce serait beau), andrei volentieri."
+     ],
+     "q": "Que ferais-tu demain avec une journée libre ? Réponds avec trois verbes au conditionnel.",
+     "c": "Conjugue vorrei et potrei à voix haute aux six personnes, puis écris une phrase avec chacun."
+    },
+    "it": {
+     "t": "Il condizionale: le forme",
+     "g": "Coniugare il condizionale presente e riconoscere le forme principali.",
+     "p": [
+      "Si prende la radice del futuro e si aggiunge -ei, -esti, -ebbe, -emmo, -este, -ebbero: parlerei, prenderesti, partirebbe.",
+      "Le radici irregolari sono come nel futuro: sarei, avrei, andrei, potrei, vorrei, dovrei, verrei, farei.",
+      "Esprime desideri e ipotesi: vorrei un caffè, sarebbe bello, andrei volentieri al mare."
+     ],
+     "q": "Che cosa faresti domani con una giornata libera? Rispondi con tre verbi al condizionale.",
+     "c": "Coniuga ad alta voce vorrei e potrei in tutte le sei persone e scrivi una frase con ciascuno."
+    },
+    "pt": {
+     "t": "Condicional: as formas",
+     "g": "Conjugar o condizionale presente e reconhecer as formas principais.",
+     "p": [
+      "Pega na raiz do futuro e junta -ei, -esti, -ebbe, -emmo, -este, -ebbero: parlerei, prenderesti, partirebbe.",
+      "As raízes irregulares são as do futuro: sarei, avrei, andrei, potrei, vorrei, dovrei, verrei, farei.",
+      "Corresponde ao nosso condicional: vorrei un caffè (queria), sarebbe bello (seria bonito), andrei volentieri."
+     ],
+     "q": "O que farias amanhã com um dia livre? Tenta responder com três verbos no condicional.",
+     "c": "Conjuga vorrei e potrei em voz alta nas seis pessoas e escreve uma frase com cada um."
+    },
+    "pt_BR": {
+     "t": "Condicional: as formas",
+     "g": "Conjugar o condizionale presente e reconhecer as formas principais.",
+     "p": [
+      "Pegue a raiz do futuro e acrescente -ei, -esti, -ebbe, -emmo, -este, -ebbero: parlerei, prenderesti, partirebbe.",
+      "As raízes irregulares são as do futuro: sarei, avrei, andrei, potrei, vorrei, dovrei, verrei, farei.",
+      "Corresponde ao nosso futuro do pretérito: vorrei un caffè (eu queria), sarebbe bello (seria legal), andrei volentieri."
+     ],
+     "q": "O que você faria amanhã com um dia livre? Tente responder com três verbos no condicional.",
+     "c": "Conjugue vorrei e potrei em voz alta nas seis pessoas e escreva uma frase com cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vorrei",
+      "ex": "Vorrei un cappuccino e un cornetto, per favore."
+     },
+     {
+      "w": "potrei",
+      "ex": "Potrei venire anche io alla gita?"
+     },
+     {
+      "w": "sarebbe",
+      "ex": "Sarebbe bello vivere vicino al mare."
+     },
+     {
+      "w": "andrei",
+      "ex": "Andrei volentieri a Firenze per un weekend."
+     },
+     {
+      "w": "dovrei",
+      "ex": "Dovrei studiare, ma fa troppo caldo."
+     },
+     {
+      "w": "faremmo",
+      "ex": "Con più tempo faremmo un viaggio in Puglia."
+     }
+    ],
+    "gram": "Condizionale presente: radice del futuro + -ei, -esti, -ebbe, -emmo, -este, -ebbero. Irregolari: sarei, avrei, vorrei, potrei."
+   }
+  },
+  {
+   "d": 124,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Polite requests with the conditional",
+     "g": "Ask for things and favours politely using the conditional.",
+     "p": [
+      "The conditional softens requests: vorrei un'informazione sounds kinder than voglio. Use it in shops, offices and hotels.",
+      "With strangers use Lei: potrebbe aiutarmi?, mi potrebbe dire dov'è la stazione?, saprebbe dirmi l'ora?",
+      "For favours: mi faresti un favore? (friend), mi farebbe un favore? (formal). Add per cortesia or per favore."
+     ],
+     "q": "How would you politely ask a stranger in Italy for directions to the station?",
+     "c": "Write three polite requests: one at a ticket office, one to a friend, one to a hotel receptionist."
+    },
+    "de": {
+     "t": "Höfliche Bitten mit dem Konditional",
+     "g": "Du bittest mit dem Konditional höflich um Dinge und Gefallen.",
+     "p": [
+      "Der Konditional macht Bitten weicher: vorrei un'informazione klingt freundlicher als voglio. Ideal in Läden und Ämtern.",
+      "Bei Fremden mit Lei: potrebbe aiutarmi?, mi potrebbe dire dov'è la stazione?, saprebbe dirmi l'ora?",
+      "Für Gefallen: mi faresti un favore? (Freund), mi farebbe un favore? (förmlich). Dazu per cortesia oder per favore."
+     ],
+     "q": "Wie würdest du in Italien einen Fremden höflich nach dem Weg zum Bahnhof fragen?",
+     "c": "Schreib drei höfliche Bitten: am Fahrkartenschalter, an einen Freund, an die Hotelrezeption."
+    },
+    "es": {
+     "t": "Peticiones educadas con el condicional",
+     "g": "Pedir cosas y favores con cortesía usando el condicional.",
+     "p": [
+      "El condicional suaviza: vorrei un'informazione suena más amable que voglio. Úsalo en tiendas, oficinas y hoteles.",
+      "Con desconocidos usa Lei: potrebbe aiutarmi?, mi potrebbe dire dov'è la stazione?, saprebbe dirmi l'ora?",
+      "Para favores: mi faresti un favore? (amigo), mi farebbe un favore? (formal). Añade per cortesia o per favore."
+     ],
+     "q": "¿Cómo pedirías con educación a un desconocido en Italia el camino a la estación?",
+     "c": "Escribe tres peticiones educadas: en una taquilla, a un amigo y en la recepción de un hotel."
+    },
+    "fr": {
+     "t": "Demandes polies au conditionnel",
+     "g": "Demander des choses et des services poliment avec le conditionnel.",
+     "p": [
+      "Le conditionnel adoucit : vorrei un'informazione est plus aimable que voglio. Parfait en boutique, au guichet, à l'hôtel.",
+      "Avec un inconnu, Lei : potrebbe aiutarmi ?, mi potrebbe dire dov'è la stazione ?, saprebbe dirmi l'ora ?",
+      "Pour un service : mi faresti un favore ? (ami), mi farebbe un favore ? (formel). Ajoute per cortesia ou per favore."
+     ],
+     "q": "Comment demanderais-tu poliment à un inconnu en Italie le chemin de la gare ?",
+     "c": "Écris trois demandes polies : au guichet, à un ami et à la réception d'un hôtel."
+    },
+    "it": {
+     "t": "Richieste gentili con il condizionale",
+     "g": "Chiedere cose e favori con gentilezza usando il condizionale.",
+     "p": [
+      "Il condizionale ammorbidisce: vorrei un'informazione è più cortese di voglio. Si usa in negozi, uffici, alberghi.",
+      "Con gli sconosciuti si usa Lei: potrebbe aiutarmi?, mi potrebbe dire dov'è la stazione?, saprebbe dirmi l'ora?",
+      "Per i favori: mi faresti un favore? (amico), mi farebbe un favore? (formale). Aggiungi per cortesia o per favore."
+     ],
+     "q": "Come chiederesti gentilmente a uno sconosciuto la strada per la stazione?",
+     "c": "Scrivi tre richieste gentili: in biglietteria, a un amico e alla reception di un albergo."
+    },
+    "pt": {
+     "t": "Pedidos educados com o condicional",
+     "g": "Pedir coisas e favores com educação usando o condicional.",
+     "p": [
+      "O condicional suaviza: vorrei un'informazione soa mais simpático do que voglio. Usa-o em lojas, serviços e hotéis.",
+      "Com desconhecidos usa Lei: potrebbe aiutarmi?, mi potrebbe dire dov'è la stazione?, saprebbe dirmi l'ora?",
+      "Para favores: mi faresti un favore? (amigo), mi farebbe un favore? (formal). Junta per cortesia ou per favore."
+     ],
+     "q": "Como pedirias com educação a um desconhecido em Itália o caminho para a estação?",
+     "c": "Escreve três pedidos educados: numa bilheteira, a um amigo e na receção de um hotel."
+    },
+    "pt_BR": {
+     "t": "Pedidos educados com o condicional",
+     "g": "Pedir coisas e favores com educação usando o condicional.",
+     "p": [
+      "O condicional suaviza: vorrei un'informazione soa mais gentil que voglio. Use em lojas, repartições e hotéis.",
+      "Com desconhecidos use Lei: potrebbe aiutarmi?, mi potrebbe dire dov'è la stazione?, saprebbe dirmi l'ora?",
+      "Para favores: mi faresti un favore? (amigo), mi farebbe un favore? (formal). Acrescente per cortesia ou per favore."
+     ],
+     "q": "Como você pediria com educação a um desconhecido na Itália o caminho da estação?",
+     "c": "Escreva três pedidos educados: na bilheteria, para um amigo e na recepção de um hotel."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "potrebbe aiutarmi?",
+      "ex": "Scusi, potrebbe aiutarmi con la valigia?"
+     },
+     {
+      "w": "vorrei un'informazione",
+      "ex": "Buongiorno, vorrei un'informazione sui treni."
+     },
+     {
+      "w": "mi farebbe un favore?",
+      "ex": "Mi farebbe un favore? Mi tiene il posto?"
+     },
+     {
+      "w": "saprebbe dirmi",
+      "ex": "Saprebbe dirmi dov'è la fermata del bus?"
+     },
+     {
+      "w": "per cortesia",
+      "ex": "Mi passa il sale, per cortesia?"
+     },
+     {
+      "w": "le dispiacerebbe",
+      "ex": "Le dispiacerebbe chiudere il finestrino?"
+     }
+    ],
+    "gram": "Il condizionale rende cortese una richiesta: potrebbe + infinito, vorrei + nome, mi farebbe un favore?"
+   }
+  },
+  {
+   "d": 125,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Wishes and advice",
+     "g": "Express wishes and give friendly advice with the conditional.",
+     "p": [
+      "Wishes: mi piacerebbe + infinitive (mi piacerebbe imparare a cucinare), vorrei tanto vedere Venezia.",
+      "Advice: dovresti + infinitive (dovresti dormire di più), potresti provare..., faresti bene a riposare.",
+      "Al tuo posto io... means in your shoes I would: al tuo posto io parlerei con il capo. Formal: al Suo posto."
+     ],
+     "q": "A friend is always tired. What advice would you give with dovresti and al tuo posto io...?",
+     "c": "Write two wishes with mi piacerebbe and two pieces of advice with dovresti for a friend."
+    },
+    "de": {
+     "t": "Wünsche und Ratschläge",
+     "g": "Du drückst Wünsche aus und gibst freundliche Ratschläge mit dem Konditional.",
+     "p": [
+      "Wünsche: mi piacerebbe + Infinitiv (mi piacerebbe imparare a cucinare), vorrei tanto vedere Venezia.",
+      "Ratschläge: dovresti + Infinitiv (dovresti dormire di più), potresti provare..., faresti bene a riposare.",
+      "Al tuo posto io... heißt an deiner Stelle würde ich: al tuo posto io parlerei con il capo. Förmlich: al Suo posto."
+     ],
+     "q": "Ein Freund ist immer müde. Welchen Rat gibst du mit dovresti und al tuo posto io...?",
+     "c": "Schreib zwei Wünsche mit mi piacerebbe und zwei Ratschläge mit dovresti für einen Freund."
+    },
+    "es": {
+     "t": "Deseos y consejos",
+     "g": "Expresar deseos y dar consejos amables con el condicional.",
+     "p": [
+      "Deseos: mi piacerebbe + infinitivo (mi piacerebbe imparare a cucinare), vorrei tanto vedere Venezia.",
+      "Consejos: dovresti + infinitivo (dovresti dormire di più), potresti provare..., faresti bene a riposare.",
+      "Al tuo posto io... es yo que tú: al tuo posto io parlerei con il capo. Formal: al Suo posto."
+     ],
+     "q": "Un amigo siempre está cansado. ¿Qué consejo le darías con dovresti y al tuo posto io...?",
+     "c": "Escribe dos deseos con mi piacerebbe y dos consejos con dovresti para un amigo."
+    },
+    "fr": {
+     "t": "Souhaits et conseils",
+     "g": "Exprimer des souhaits et donner des conseils avec le conditionnel.",
+     "p": [
+      "Souhaits : mi piacerebbe + infinitif (mi piacerebbe imparare a cucinare), vorrei tanto vedere Venezia.",
+      "Conseils : dovresti + infinitif (dovresti dormire di più), potresti provare..., faresti bene a riposare.",
+      "Al tuo posto io... veut dire à ta place je... : al tuo posto io parlerei con il capo. Formel : al Suo posto."
+     ],
+     "q": "Un ami est toujours fatigué. Quel conseil lui donnerais-tu avec dovresti et al tuo posto io... ?",
+     "c": "Écris deux souhaits avec mi piacerebbe et deux conseils avec dovresti pour un ami."
+    },
+    "it": {
+     "t": "Desideri e consigli",
+     "g": "Esprimere desideri e dare consigli gentili con il condizionale.",
+     "p": [
+      "Desideri: mi piacerebbe + infinito (mi piacerebbe imparare a cucinare), vorrei tanto vedere Venezia.",
+      "Consigli: dovresti + infinito (dovresti dormire di più), potresti provare..., faresti bene a riposare.",
+      "Al tuo posto io... per mettersi nei panni dell'altro: al tuo posto io parlerei con il capo. Formale: al Suo posto."
+     ],
+     "q": "Un amico è sempre stanco. Che consiglio gli daresti con dovresti e al tuo posto io...?",
+     "c": "Scrivi due desideri con mi piacerebbe e due consigli con dovresti per un amico."
+    },
+    "pt": {
+     "t": "Desejos e conselhos",
+     "g": "Exprimir desejos e dar conselhos simpáticos com o condicional.",
+     "p": [
+      "Desejos: mi piacerebbe + infinitivo (mi piacerebbe imparare a cucinare), vorrei tanto vedere Venezia.",
+      "Conselhos: dovresti + infinitivo (dovresti dormire di più), potresti provare..., faresti bene a riposare.",
+      "Al tuo posto io... é no teu lugar eu...: al tuo posto io parlerei con il capo. Formal: al Suo posto."
+     ],
+     "q": "Um amigo anda sempre cansado. Que conselho lhe darias com dovresti e al tuo posto io...?",
+     "c": "Escreve dois desejos com mi piacerebbe e dois conselhos com dovresti para um amigo."
+    },
+    "pt_BR": {
+     "t": "Desejos e conselhos",
+     "g": "Expressar desejos e dar conselhos gentis com o condicional.",
+     "p": [
+      "Desejos: mi piacerebbe + infinitivo (mi piacerebbe imparare a cucinare), vorrei tanto vedere Venezia.",
+      "Conselhos: dovresti + infinitivo (dovresti dormire di più), potresti provare..., faresti bene a riposare.",
+      "Al tuo posto io... é no seu lugar eu...: al tuo posto io parlerei con il capo. Formal: al Suo posto."
+     ],
+     "q": "Um amigo vive cansado. Que conselho você daria com dovresti e al tuo posto io...?",
+     "c": "Escreva dois desejos com mi piacerebbe e dois conselhos com dovresti para um amigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi piacerebbe",
+      "ex": "Mi piacerebbe imparare a suonare la chitarra."
+     },
+     {
+      "w": "dovresti",
+      "ex": "Dovresti bere più acqua durante il giorno."
+     },
+     {
+      "w": "al tuo posto",
+      "ex": "Al tuo posto io accetterei quel lavoro."
+     },
+     {
+      "w": "potresti provare",
+      "ex": "Potresti provare a studiare la mattina."
+     },
+     {
+      "w": "faresti bene a",
+      "ex": "Faresti bene a portare l'ombrello."
+     },
+     {
+      "w": "vorrei tanto",
+      "ex": "Vorrei tanto vedere l'aurora boreale."
+     }
+    ],
+    "gram": "Desiderio: mi piacerebbe / vorrei + infinito. Consiglio: dovresti, potresti + infinito; al tuo posto io + condizionale."
+   }
+  },
+  {
+   "d": 126,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Talking about dream plans",
+     "g": "Describe your dream house, trip or job with the conditional.",
+     "p": [
+      "Start with nel mio mondo ideale or se potessi scegliere, then use the conditional: vivrei in campagna, lavorerei da casa.",
+      "Describe details: la mia casa ideale avrebbe un giardino grande e sarebbe vicino al mare.",
+      "Chain ideas: viaggerei in Giappone, poi andrei in Perù e alla fine tornerei in Italia per mangiare bene."
+     ],
+     "q": "Describe your dream house: where would it be and what would it have?",
+     "c": "Write five sentences about your dream job or trip, each with a different verb in the conditional."
+    },
+    "de": {
+     "t": "Über Traumpläne sprechen",
+     "g": "Du beschreibst dein Traumhaus, deine Traumreise oder deinen Traumjob im Konditional.",
+     "p": [
+      "Beginne mit nel mio mondo ideale oder se potessi scegliere, dann Konditional: vivrei in campagna, lavorerei da casa.",
+      "Beschreibe Details: la mia casa ideale avrebbe un giardino grande e sarebbe vicino al mare.",
+      "Verbinde Ideen: viaggerei in Giappone, poi andrei in Perù e alla fine tornerei in Italia per mangiare bene."
+     ],
+     "q": "Beschreib dein Traumhaus: Wo wäre es und was hätte es?",
+     "c": "Schreib fünf Sätze über deinen Traumjob oder deine Traumreise, jeder mit einem anderen Verb im Konditional."
+    },
+    "es": {
+     "t": "Hablar de planes soñados",
+     "g": "Describir tu casa, viaje o trabajo ideal con el condicional.",
+     "p": [
+      "Empieza con nel mio mondo ideale o se potessi scegliere y sigue en condicional: vivrei in campagna, lavorerei da casa.",
+      "Da detalles: la mia casa ideale avrebbe un giardino grande e sarebbe vicino al mare.",
+      "Encadena ideas: viaggerei in Giappone, poi andrei in Perù e alla fine tornerei in Italia per mangiare bene."
+     ],
+     "q": "Describe tu casa ideal: ¿dónde estaría y qué tendría?",
+     "c": "Escribe cinco frases sobre tu trabajo o viaje soñado, cada una con un verbo distinto en condicional."
+    },
+    "fr": {
+     "t": "Parler de ses projets de rêve",
+     "g": "Décrire ta maison, ton voyage ou ton métier de rêve au conditionnel.",
+     "p": [
+      "Commence par nel mio mondo ideale ou se potessi scegliere, puis le conditionnel : vivrei in campagna, lavorerei da casa.",
+      "Donne des détails : la mia casa ideale avrebbe un giardino grande e sarebbe vicino al mare.",
+      "Enchaîne : viaggerei in Giappone, poi andrei in Perù e alla fine tornerei in Italia per mangiare bene."
+     ],
+     "q": "Décris ta maison de rêve : où serait-elle et qu'aurait-elle ?",
+     "c": "Écris cinq phrases sur ton métier ou voyage de rêve, chacune avec un verbe différent au conditionnel."
+    },
+    "it": {
+     "t": "Parlare dei progetti da sogno",
+     "g": "Descrivere la casa, il viaggio o il lavoro dei sogni con il condizionale.",
+     "p": [
+      "Comincia con nel mio mondo ideale o se potessi scegliere, poi usa il condizionale: vivrei in campagna, lavorerei da casa.",
+      "Aggiungi dettagli: la mia casa ideale avrebbe un giardino grande e sarebbe vicino al mare.",
+      "Collega le idee: viaggerei in Giappone, poi andrei in Perù e alla fine tornerei in Italia per mangiare bene."
+     ],
+     "q": "Descrivi la casa dei tuoi sogni: dove sarebbe e che cosa avrebbe?",
+     "c": "Scrivi cinque frasi sul lavoro o sul viaggio dei sogni, ognuna con un verbo diverso al condizionale."
+    },
+    "pt": {
+     "t": "Falar de planos de sonho",
+     "g": "Descrever a casa, a viagem ou o emprego de sonho com o condicional.",
+     "p": [
+      "Começa com nel mio mondo ideale ou se potessi scegliere e segue no condicional: vivrei in campagna, lavorerei da casa.",
+      "Dá pormenores: la mia casa ideale avrebbe un giardino grande e sarebbe vicino al mare.",
+      "Encadeia ideias: viaggerei in Giappone, poi andrei in Perù e alla fine tornerei in Italia per mangiare bene."
+     ],
+     "q": "Descreve a casa dos teus sonhos: onde seria e o que teria?",
+     "c": "Escreve cinco frases sobre o emprego ou a viagem de sonho, cada uma com um verbo diferente no condicional."
+    },
+    "pt_BR": {
+     "t": "Falar de planos dos sonhos",
+     "g": "Descrever a casa, a viagem ou o trabalho dos sonhos com o condicional.",
+     "p": [
+      "Comece com nel mio mondo ideale ou se potessi scegliere e continue no condicional: vivrei in campagna, lavorerei da casa.",
+      "Dê detalhes: la mia casa ideale avrebbe un giardino grande e sarebbe vicino al mare.",
+      "Encadeie ideias: viaggerei in Giappone, poi andrei in Perù e alla fine tornerei in Italia per mangiare bene."
+     ],
+     "q": "Descreva a casa dos seus sonhos: onde ficaria e o que teria?",
+     "c": "Escreva cinco frases sobre o trabalho ou a viagem dos sonhos, cada uma com um verbo diferente no condicional."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "nel mio mondo ideale",
+      "ex": "Nel mio mondo ideale lavorerei solo quattro giorni."
+     },
+     {
+      "w": "vivrei",
+      "ex": "Vivrei in una casa piccola vicino a un lago."
+     },
+     {
+      "w": "avrebbe",
+      "ex": "La mia casa ideale avrebbe una grande cucina."
+     },
+     {
+      "w": "viaggerei",
+      "ex": "Viaggerei in treno attraverso tutta l'Europa."
+     },
+     {
+      "w": "il lavoro dei sogni",
+      "ex": "Il mio lavoro dei sogni sarebbe fare la guida turistica."
+     },
+     {
+      "w": "aprirei",
+      "ex": "Aprirei una piccola libreria con un caffè."
+     }
+    ],
+    "gram": "Per sogni e progetti ideali si usa il condizionale presente: vivrei, avrei, sarebbe, lavorerei, viaggerei."
+   }
+  },
+  {
+   "d": 127,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Si impersonale",
+     "g": "Make general statements about what people do with si.",
+     "p": [
+      "Si + verb in the third person singular means people, one or you in general: qui si mangia bene, in Italia si cena tardi.",
+      "Useful for customs and rules: non si fuma, come si dice...?, come si scrive?, si parla italiano.",
+      "With reflexive verbs it becomes ci si: ci si alza presto in campagna. With essere, adjectives go plural: si è contenti."
+     ],
+     "q": "How do people live in your country? Tell me with si: si cena alle..., si va in vacanza a...",
+     "c": "Write four sentences about customs in your country with si impersonale: si mangia, si lavora, si esce, si dorme."
+    },
+    "de": {
+     "t": "Das unpersönliche si",
+     "g": "Du machst allgemeine Aussagen darüber, was man tut, mit si.",
+     "p": [
+      "Si + Verb in der 3. Person Singular heißt man: qui si mangia bene, in Italia si cena tardi.",
+      "Praktisch für Bräuche und Regeln: non si fuma, come si dice...?, come si scrive?, si parla italiano.",
+      "Bei reflexiven Verben wird es ci si: ci si alza presto in campagna. Mit essere stehen Adjektive im Plural: si è contenti."
+     ],
+     "q": "Wie lebt man in deinem Land? Erzähl mit si: si cena alle..., si va in vacanza a...",
+     "c": "Schreib vier Sätze über Bräuche in deinem Land mit si: si mangia, si lavora, si esce, si dorme."
+    },
+    "es": {
+     "t": "El si impersonal",
+     "g": "Hacer afirmaciones generales con si.",
+     "p": [
+      "Si + verbo en tercera persona singular equivale a se: qui si mangia bene (aquí se come bien), in Italia si cena tardi.",
+      "Útil para costumbres y normas: non si fuma, come si dice...?, come si scrive?, si parla italiano.",
+      "Con verbos reflexivos se dice ci si: ci si alza presto in campagna. Con essere, adjetivo en plural: si è contenti."
+     ],
+     "q": "¿Cómo se vive en tu país? Cuéntamelo con si: si cena alle..., si va in vacanza a...",
+     "c": "Escribe cuatro frases sobre costumbres de tu país con si: si mangia, si lavora, si esce, si dorme."
+    },
+    "fr": {
+     "t": "Le si impersonnel",
+     "g": "Faire des affirmations générales avec si, comme notre on.",
+     "p": [
+      "Si + verbe à la 3e personne du singulier correspond à on : qui si mangia bene, in Italia si cena tardi.",
+      "Pratique pour les coutumes et règles : non si fuma, come si dice... ?, come si scrive ?, si parla italiano.",
+      "Avec un verbe pronominal, on dit ci si : ci si alza presto in campagna. Avec essere, adjectif au pluriel : si è contenti."
+     ],
+     "q": "Comment vit-on dans ton pays ? Raconte avec si : si cena alle..., si va in vacanza a...",
+     "c": "Écris quatre phrases sur les coutumes de ton pays avec si : si mangia, si lavora, si esce, si dorme."
+    },
+    "it": {
+     "t": "Il si impersonale",
+     "g": "Fare affermazioni generali su quello che fa la gente con si.",
+     "p": [
+      "Si + verbo alla terza persona singolare indica le persone in generale: qui si mangia bene, in Italia si cena tardi.",
+      "Utile per abitudini e regole: non si fuma, come si dice...?, come si scrive?, si parla italiano.",
+      "Con i verbi riflessivi diventa ci si: ci si alza presto in campagna. Con essere l'aggettivo è plurale: si è contenti."
+     ],
+     "q": "Come si vive nel tuo paese? Raccontalo con il si: si cena alle..., si va in vacanza a...",
+     "c": "Scrivi quattro frasi sulle abitudini del tuo paese con il si impersonale: si mangia, si lavora, si esce, si dorme."
+    },
+    "pt": {
+     "t": "O si impessoal",
+     "g": "Fazer afirmações gerais com si.",
+     "p": [
+      "Si + verbo na 3.ª pessoa do singular equivale ao nosso se: qui si mangia bene (aqui come-se bem), in Italia si cena tardi.",
+      "Útil para costumes e regras: non si fuma, come si dice...?, come si scrive?, si parla italiano.",
+      "Com verbos reflexos fica ci si: ci si alza presto in campagna. Com essere o adjetivo vai para o plural: si è contenti."
+     ],
+     "q": "Como se vive no teu país? Conta-me com si: si cena alle..., si va in vacanza a...",
+     "c": "Escreve quatro frases sobre costumes do teu país com si: si mangia, si lavora, si esce, si dorme."
+    },
+    "pt_BR": {
+     "t": "O si impessoal",
+     "g": "Fazer afirmações gerais com si.",
+     "p": [
+      "Si + verbo na 3ª pessoa do singular equivale ao nosso se: qui si mangia bene (aqui se come bem), in Italia si cena tardi.",
+      "Útil para costumes e regras: non si fuma, come si dice...?, come si scrive?, si parla italiano.",
+      "Com verbos reflexivos vira ci si: ci si alza presto in campagna. Com essere o adjetivo vai para o plural: si è contenti."
+     ],
+     "q": "Como se vive no seu país? Conte com si: si cena alle..., si va in vacanza a...",
+     "c": "Escreva quatro frases sobre costumes do seu país com si: si mangia, si lavora, si esce, si dorme."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si mangia bene",
+      "ex": "In questa trattoria si mangia bene e si spende poco."
+     },
+     {
+      "w": "si cena tardi",
+      "ex": "In Spagna e in Italia si cena tardi."
+     },
+     {
+      "w": "come si dice",
+      "ex": "Come si dice window in italiano?"
+     },
+     {
+      "w": "non si fuma",
+      "ex": "Nei ristoranti non si fuma."
+     },
+     {
+      "w": "ci si alza",
+      "ex": "In campagna ci si alza molto presto."
+     },
+     {
+      "w": "si è contenti",
+      "ex": "Quando si è in vacanza, si è sempre contenti."
+     }
+    ],
+    "gram": "Si impersonale: si + verbo alla 3ª persona singolare (si vive bene); con i riflessivi ci si (ci si diverte)."
+   }
+  },
+  {
+   "d": 128,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Si passivante",
+     "g": "Read signs and ads that use si with a plural or singular object.",
+     "p": [
+      "With an object, the verb agrees with it: si vende una casa, but si vendono biglietti. The thing sold is the subject.",
+      "You see it on signs and ads: si affitta appartamento, si cercano camerieri, si accettano carte di credito.",
+      "Compare: si parla italiano (singular) and si parlano tre lingue (plural). Read the noun first, then choose the verb."
+     ],
+     "q": "Have you seen signs like si affitta or vendesi? What do they offer near you?",
+     "c": "Write four signs for shop windows: two singular (si vende...) and two plural (si cercano...)."
+    },
+    "de": {
+     "t": "Das passivische si",
+     "g": "Du liest Schilder und Anzeigen, die si mit einem Objekt benutzen.",
+     "p": [
+      "Mit Objekt richtet sich das Verb danach: si vende una casa, aber si vendono biglietti. Die Sache ist das Subjekt.",
+      "Du siehst es auf Schildern: si affitta appartamento, si cercano camerieri, si accettano carte di credito.",
+      "Vergleich: si parla italiano (Singular) und si parlano tre lingue (Plural). Erst das Nomen lesen, dann das Verb wählen."
+     ],
+     "q": "Hast du Schilder wie si affitta oder vendesi gesehen? Was wird bei dir angeboten?",
+     "c": "Schreib vier Schaufensterschilder: zwei im Singular (si vende...) und zwei im Plural (si cercano...)."
+    },
+    "es": {
+     "t": "El si pasivo",
+     "g": "Leer carteles y anuncios con si y un objeto singular o plural.",
+     "p": [
+      "Con objeto, el verbo concuerda con él: si vende una casa, pero si vendono biglietti. Como en español: se venden entradas.",
+      "Aparece en carteles: si affitta appartamento, si cercano camerieri, si accettano carte di credito.",
+      "Compara: si parla italiano (singular) y si parlano tre lingue (plural). Mira el sustantivo y elige el verbo."
+     ],
+     "q": "¿Has visto carteles como si affitta o vendesi? ¿Qué ofrecen cerca de ti?",
+     "c": "Escribe cuatro carteles de escaparate: dos en singular (si vende...) y dos en plural (si cercano...)."
+    },
+    "fr": {
+     "t": "Le si passif",
+     "g": "Lire des panneaux et annonces avec si et un objet.",
+     "p": [
+      "Avec un objet, le verbe s'accorde avec lui : si vende una casa, mais si vendono biglietti. La chose est le sujet.",
+      "On le voit sur les panneaux : si affitta appartamento, si cercano camerieri, si accettano carte di credito.",
+      "Compare : si parla italiano (singulier) et si parlano tre lingue (pluriel). Lis le nom d'abord, puis choisis le verbe."
+     ],
+     "q": "As-tu vu des panneaux comme si affitta ou vendesi ? Qu'est-ce qu'on propose près de chez toi ?",
+     "c": "Écris quatre panneaux de vitrine : deux au singulier (si vende...) et deux au pluriel (si cercano...)."
+    },
+    "it": {
+     "t": "Il si passivante",
+     "g": "Leggere cartelli e annunci che usano si con un oggetto.",
+     "p": [
+      "Con un oggetto il verbo si accorda con esso: si vende una casa, ma si vendono biglietti. La cosa diventa il soggetto.",
+      "Lo vedi su cartelli e annunci: si affitta appartamento, si cercano camerieri, si accettano carte di credito.",
+      "Confronta: si parla italiano (singolare) e si parlano tre lingue (plurale). Guarda il nome e poi scegli il verbo."
+     ],
+     "q": "Hai visto cartelli come si affitta o vendesi? Che cosa offrono vicino a casa tua?",
+     "c": "Scrivi quattro cartelli per vetrine: due al singolare (si vende...) e due al plurale (si cercano...)."
+    },
+    "pt": {
+     "t": "O si passivo",
+     "g": "Ler placas e anúncios com si e um objeto.",
+     "p": [
+      "Com objeto, o verbo concorda com ele: si vende una casa, mas si vendono biglietti. Como em português: vendem-se bilhetes.",
+      "Aparece em placas: si affitta appartamento, si cercano camerieri, si accettano carte di credito.",
+      "Compara: si parla italiano (singular) e si parlano tre lingue (plural). Olha para o nome e escolhe o verbo."
+     ],
+     "q": "Já viste placas como si affitta ou vendesi? O que se oferece perto de ti?",
+     "c": "Escreve quatro placas de montra: duas no singular (si vende...) e duas no plural (si cercano...)."
+    },
+    "pt_BR": {
+     "t": "O si passivo",
+     "g": "Ler placas e anúncios com si e um objeto.",
+     "p": [
+      "Com objeto, o verbo concorda com ele: si vende una casa, mas si vendono biglietti. Como em vendem-se ingressos.",
+      "Aparece em placas: si affitta appartamento, si cercano camerieri, si accettano carte di credito.",
+      "Compare: si parla italiano (singular) e si parlano tre lingue (plural). Olhe o substantivo e escolha o verbo."
+     ],
+     "q": "Você já viu placas como si affitta ou vendesi? O que oferecem perto de você?",
+     "c": "Escreva quatro placas de vitrine: duas no singular (si vende...) e duas no plural (si cercano...)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "si affitta",
+      "ex": "Si affitta appartamento in centro, ottimo prezzo."
+     },
+     {
+      "w": "si vendono biglietti",
+      "ex": "Qui si vendono biglietti per l'autobus."
+     },
+     {
+      "w": "si cercano",
+      "ex": "Si cercano camerieri per la stagione estiva."
+     },
+     {
+      "w": "si accettano",
+      "ex": "Si accettano carte di credito e bancomat."
+     },
+     {
+      "w": "vendesi",
+      "ex": "Vendesi bicicletta usata, come nuova."
+     },
+     {
+      "w": "si parlano",
+      "ex": "In Svizzera si parlano quattro lingue."
+     }
+    ],
+    "gram": "Si passivante: il verbo concorda con il nome: si vende una casa, si vendono case. Nei cartelli anche vendesi, affittasi."
+   }
+  },
+  {
+   "d": 129,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Relative pronoun che",
+     "g": "Join two sentences with che, which means who, which or that.",
+     "p": [
+      "Che replaces a subject or object: la ragazza studia italiano + la ragazza è simpatica = la ragazza che studia italiano è simpatica.",
+      "It works for people and things and never changes: il libro che leggo, le amiche che vedo, il treno che parte.",
+      "Never leave it out as in English: the film I saw = il film che ho visto. Do not use it after prepositions (tomorrow: cui)."
+     ],
+     "q": "Tell me about una persona che ti ha aiutato. Who is it and what did they do?",
+     "c": "Join three pairs of sentences with che, e.g. Ho un amico. L'amico vive a Roma."
+    },
+    "de": {
+     "t": "Das Relativpronomen che",
+     "g": "Du verbindest zwei Sätze mit che, das der, die, das oder welche bedeutet.",
+     "p": [
+      "Che ersetzt Subjekt oder Objekt: la ragazza studia italiano + la ragazza è simpatica = la ragazza che studia italiano è simpatica.",
+      "Es gilt für Personen und Dinge und ändert sich nie: il libro che leggo, le amiche che vedo, il treno che parte.",
+      "Es darf nie fehlen: der Film, den ich sah = il film che ho visto. Nach Präpositionen kommt nicht che (morgen: cui)."
+     ],
+     "q": "Erzähl mir von una persona che ti ha aiutato. Wer ist das und was hat sie getan?",
+     "c": "Verbinde drei Satzpaare mit che, z. B. Ho un amico. L'amico vive a Roma."
+    },
+    "es": {
+     "t": "El pronombre relativo che",
+     "g": "Unir dos frases con che, que significa que.",
+     "p": [
+      "Che sustituye sujeto u objeto: la ragazza studia italiano + la ragazza è simpatica = la ragazza che studia italiano è simpatica.",
+      "Sirve para personas y cosas y no cambia nunca: il libro che leggo, le amiche che vedo, il treno che parte.",
+      "Igual que el que español, pero no va tras preposición: ahí se usa cui (mañana lo vemos)."
+     ],
+     "q": "Háblame de una persona che ti ha aiutato. ¿Quién es y qué hizo?",
+     "c": "Une tres pares de frases con che, por ejemplo Ho un amico. L'amico vive a Roma."
+    },
+    "fr": {
+     "t": "Le pronom relatif che",
+     "g": "Relier deux phrases avec che, qui veut dire qui ou que.",
+     "p": [
+      "Che remplace sujet ou objet : la ragazza studia italiano + la ragazza è simpatica = la ragazza che studia italiano è simpatica.",
+      "Il vaut pour les personnes et les choses, sans jamais changer : il libro che leggo, le amiche che vedo, il treno che parte.",
+      "Che couvre à la fois qui et que. Après une préposition, on n'emploie pas che mais cui (demain)."
+     ],
+     "q": "Parle-moi d'una persona che ti ha aiutato. Qui est-ce et qu'a-t-elle fait ?",
+     "c": "Relie trois paires de phrases avec che, par exemple Ho un amico. L'amico vive a Roma."
+    },
+    "it": {
+     "t": "Il pronome relativo che",
+     "g": "Unire due frasi con il pronome relativo che.",
+     "p": [
+      "Che sostituisce soggetto o oggetto: la ragazza studia italiano + la ragazza è simpatica = la ragazza che studia italiano è simpatica.",
+      "Vale per persone e cose e non cambia mai: il libro che leggo, le amiche che vedo, il treno che parte.",
+      "Non si può omettere: il film che ho visto. Dopo una preposizione non si usa che ma cui (lo vediamo domani)."
+     ],
+     "q": "Parlami di una persona che ti ha aiutato a imparare qualcosa. Chi è?",
+     "c": "Unisci tre coppie di frasi con che, per esempio Ho un amico. L'amico vive a Roma."
+    },
+    "pt": {
+     "t": "O pronome relativo che",
+     "g": "Juntar duas frases com che, que significa que.",
+     "p": [
+      "Che substitui sujeito ou objeto: la ragazza studia italiano + la ragazza è simpatica = la ragazza che studia italiano è simpatica.",
+      "Serve para pessoas e coisas e nunca muda: il libro che leggo, le amiche che vedo, il treno che parte.",
+      "É como o nosso que, mas não vem depois de preposição: aí usa-se cui (amanhã vemos)."
+     ],
+     "q": "Fala-me de una persona che ti ha aiutato. Quem é e o que fez?",
+     "c": "Junta três pares de frases com che, por exemplo Ho un amico. L'amico vive a Roma."
+    },
+    "pt_BR": {
+     "t": "O pronome relativo che",
+     "g": "Juntar duas frases com che, que significa que.",
+     "p": [
+      "Che substitui sujeito ou objeto: la ragazza studia italiano + la ragazza è simpatica = la ragazza che studia italiano è simpatica.",
+      "Serve para pessoas e coisas e nunca muda: il libro che leggo, le amiche che vedo, il treno che parte.",
+      "É como o nosso que, mas não vem depois de preposição: aí se usa cui (amanhã a gente vê)."
+     ],
+     "q": "Fale de una persona che ti ha aiutato. Quem é e o que ela fez?",
+     "c": "Junte três pares de frases com che, por exemplo Ho un amico. L'amico vive a Roma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la ragazza che",
+      "ex": "La ragazza che studia con me viene dal Brasile."
+     },
+     {
+      "w": "il libro che leggo",
+      "ex": "Il libro che leggo adesso è un giallo."
+     },
+     {
+      "w": "il film che ho visto",
+      "ex": "Il film che ho visto ieri era bellissimo."
+     },
+     {
+      "w": "il treno che parte",
+      "ex": "Il treno che parte alle otto va a Milano."
+     },
+     {
+      "w": "le persone che",
+      "ex": "Le persone che lavorano qui sono gentili."
+     },
+     {
+      "w": "la cosa che",
+      "ex": "La cosa che preferisco è la pizza."
+     }
+    ],
+    "gram": "Che è il pronome relativo per soggetto e oggetto, invariabile, per persone e cose: l'uomo che parla, la casa che compro."
+   }
+  },
+  {
+   "d": 130,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Relative pronoun cui",
+     "g": "Use cui after prepositions to join sentences.",
+     "p": [
+      "After a preposition use cui instead of che: la città in cui vivo, l'amico con cui parlo, il motivo per cui studio.",
+      "Cui never changes: la ragazza di cui ti ho parlato, i colleghi a cui scrivo. Only the preposition changes.",
+      "In cui can also be dove: la città in cui vivo = la città dove vivo. Il giorno in cui... means the day when..."
+     ],
+     "q": "Tell me about la città in cui vivi and una persona con cui parli spesso.",
+     "c": "Write four sentences with cui using in, con, per and di."
+    },
+    "de": {
+     "t": "Das Relativpronomen cui",
+     "g": "Du benutzt cui nach Präpositionen, um Sätze zu verbinden.",
+     "p": [
+      "Nach einer Präposition steht cui statt che: la città in cui vivo, l'amico con cui parlo, il motivo per cui studio.",
+      "Cui ändert sich nie: la ragazza di cui ti ho parlato, i colleghi a cui scrivo. Nur die Präposition wechselt.",
+      "In cui kann auch dove sein: la città in cui vivo = la città dove vivo. Il giorno in cui... heißt der Tag, an dem..."
+     ],
+     "q": "Erzähl mir von la città in cui vivi und una persona con cui parli spesso.",
+     "c": "Schreib vier Sätze mit cui und den Präpositionen in, con, per und di."
+    },
+    "es": {
+     "t": "El pronombre relativo cui",
+     "g": "Usar cui después de preposición para unir frases.",
+     "p": [
+      "Tras preposición se usa cui en vez de che: la città in cui vivo (en la que vivo), l'amico con cui parlo, il motivo per cui studio.",
+      "Cui no cambia: la ragazza di cui ti ho parlato, i colleghi a cui scrivo. Solo cambia la preposición.",
+      "In cui puede ser dove: la città in cui vivo = la città dove vivo. Il giorno in cui... es el día en que..."
+     ],
+     "q": "Háblame de la città in cui vivi y de una persona con cui parli spesso.",
+     "c": "Escribe cuatro frases con cui usando in, con, per y di."
+    },
+    "fr": {
+     "t": "Le pronom relatif cui",
+     "g": "Employer cui après une préposition pour relier des phrases.",
+     "p": [
+      "Après une préposition, cui remplace che : la città in cui vivo, l'amico con cui parlo, il motivo per cui studio.",
+      "Cui ne change jamais : la ragazza di cui ti ho parlato (dont), i colleghi a cui scrivo. Seule la préposition change.",
+      "In cui peut devenir dove : la città in cui vivo = la città dove vivo. Il giorno in cui... est le jour où..."
+     ],
+     "q": "Parle-moi de la città in cui vivi et d'una persona con cui parli spesso.",
+     "c": "Écris quatre phrases avec cui en utilisant in, con, per et di."
+    },
+    "it": {
+     "t": "Il pronome relativo cui",
+     "g": "Usare cui dopo le preposizioni per unire le frasi.",
+     "p": [
+      "Dopo una preposizione si usa cui invece di che: la città in cui vivo, l'amico con cui parlo, il motivo per cui studio.",
+      "Cui è invariabile: la ragazza di cui ti ho parlato, i colleghi a cui scrivo. Cambia solo la preposizione.",
+      "In cui può diventare dove: la città in cui vivo = la città dove vivo. Il giorno in cui... indica un momento."
+     ],
+     "q": "Parlami della città in cui vivi e di una persona con cui parli spesso.",
+     "c": "Scrivi quattro frasi con cui usando in, con, per e di."
+    },
+    "pt": {
+     "t": "O pronome relativo cui",
+     "g": "Usar cui depois de preposição para juntar frases.",
+     "p": [
+      "Depois de preposição usa-se cui em vez de che: la città in cui vivo (em que vivo), l'amico con cui parlo, il motivo per cui studio.",
+      "Cui nunca muda: la ragazza di cui ti ho parlato, i colleghi a cui scrivo. Só muda a preposição.",
+      "In cui pode ser dove: la città in cui vivo = la città dove vivo. Il giorno in cui... é o dia em que..."
+     ],
+     "q": "Fala-me della città in cui vivi e de una persona con cui parli spesso.",
+     "c": "Escreve quatro frases com cui usando in, con, per e di."
+    },
+    "pt_BR": {
+     "t": "O pronome relativo cui",
+     "g": "Usar cui depois de preposição para juntar frases.",
+     "p": [
+      "Depois de preposição se usa cui em vez de che: la città in cui vivo (em que eu moro), l'amico con cui parlo, il motivo per cui studio.",
+      "Cui nunca muda: la ragazza di cui ti ho parlato, i colleghi a cui scrivo. Só muda a preposição.",
+      "In cui pode ser dove: la città in cui vivo = la città dove vivo. Il giorno in cui... é o dia em que..."
+     ],
+     "q": "Fale da città in cui vivi e de una persona con cui parli spesso.",
+     "c": "Escreva quatro frases com cui usando in, con, per e di."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la città in cui vivo",
+      "ex": "La città in cui vivo è piccola ma vivace."
+     },
+     {
+      "w": "l'amico con cui parlo",
+      "ex": "L'amico con cui parlo di più è Luca."
+     },
+     {
+      "w": "il motivo per cui",
+      "ex": "Il motivo per cui studio italiano è la musica."
+     },
+     {
+      "w": "di cui ti ho parlato",
+      "ex": "Ecco il ristorante di cui ti ho parlato."
+     },
+     {
+      "w": "a cui scrivo",
+      "ex": "La collega a cui scrivo vive a Torino."
+     },
+     {
+      "w": "il giorno in cui",
+      "ex": "Ricordo il giorno in cui sono arrivato in Italia."
+     }
+    ],
+    "gram": "Dopo una preposizione si usa cui, invariabile: la casa in cui abito, la persona con cui esco, il libro di cui parlo."
+   }
+  }
+ ]
+}

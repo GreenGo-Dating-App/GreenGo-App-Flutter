@@ -1,0 +1,2195 @@
+{
+"topic": "baking",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to the home bakery",
+"f": "What baking really is: heat, chemistry and patience turning a few simple ingredients into something wonderful"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your essential baking toolkit",
+"f": "Bowls, whisk, spatula, scale, tins and a thermometer: the few tools that cover most recipes"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Why bakers weigh ingredients",
+"f": "Grams versus cups, and why a digital scale gives consistent results every time"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Getting to know your oven",
+"f": "Hot spots, preheating, rack positions and checking the real temperature with an oven thermometer"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Flour 101",
+"f": "All-purpose, bread and cake flour: how protein content changes the texture of a bake"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "What sugar really does",
+"f": "Sweetness, moisture, browning and tenderness: the many jobs of sugar in a recipe"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Butter, oil and other fats",
+"f": "How fats tenderise, carry flavour and create either flakiness or softness"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Eggs as builders",
+"f": "Structure, richness, lift and emulsifying: everything eggs bring to a bake"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Baking soda vs baking powder",
+"f": "How chemical leaveners work and why recipes use one, the other or both"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Salt in sweet baking",
+"f": "Why a pinch of salt makes cakes, cookies and bread taste fuller and better"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Reading a recipe like a baker",
+"f": "Mise en place, reading twice, and terms like fold, cream and room temperature"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Measuring without mistakes",
+"f": "Spooning flour, levelling, taring the scale and reading liquids at eye level"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "First bake: simple shortbread",
+"f": "Three ingredients, a gentle hand and a low oven for crumbly, buttery biscuits"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "The creaming method",
+"f": "Beating butter and sugar to trap tiny air bubbles for light cakes and cookies"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Classic chocolate chip cookies",
+"f": "Creaming, chilling the dough and timing the bake for crisp edges and chewy centres"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Why cookies spread",
+"f": "Butter temperature, sugar type and flour amount: how to control the shape of a cookie"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "The muffin method",
+"f": "Wet into dry, minimal mixing, and why a few lumps in the batter are your friend"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Blueberry muffins",
+"f": "Tall domed tops, juicy fruit and a simple trick to stop berries from sinking"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Quick breads: banana bread",
+"f": "Using very ripe bananas, testing doneness and keeping the loaf moist for days"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "How to tell when it is done",
+"f": "Skewer test, spring-back, colour and internal temperature for different bakes"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Preparing tins properly",
+"f": "Greasing, flouring and lining with baking paper, and why it saves your bake"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "The simple sponge cake",
+"f": "Whisking eggs and sugar to the ribbon stage for a light, airy crumb"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Victoria sponge",
+"f": "A British classic: a creamed butter cake sandwiched with jam and cream"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Cooling and unmoulding cakes",
+"f": "When to turn a cake out, using a rack and avoiding broken or soggy cakes"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Basic buttercream",
+"f": "Butter, icing sugar and flavourings whipped into a smooth, spreadable frosting"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Crumb coating a cake",
+"f": "A thin first layer of frosting that traps crumbs for a clean final finish"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Scones made easy",
+"f": "Rubbing fat into flour, a light touch and cutting straight down for a tall, even rise"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "The rubbing-in method",
+"f": "Working cold fat into flour with your fingertips for crumbles, scones and shortcrust"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Seasonal fruit crumble",
+"f": "A forgiving dessert: whatever fruit is in season under a buttery, crunchy topping"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month of bakes",
+"f": "Look back at the methods learned so far and choose one favourite bake to repeat and improve"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Meet yeast",
+"f": "What yeast is, how it feeds on sugars and why it makes dough rise"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Instant, active dry and fresh yeast",
+"f": "The differences between yeast types and how to swap one for another"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Water temperature for dough",
+"f": "Why lukewarm water wakes yeast up gently and very hot water can harm it"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "What gluten does",
+"f": "How mixing and kneading build a stretchy network that traps gas in bread"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Kneading by hand",
+"f": "Push, fold, turn: the basic technique and how to feel when the dough is ready"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "The windowpane test",
+"f": "Stretching a small piece of dough thin to check how well the gluten has developed"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "First rise and proofing",
+"f": "Where to let dough rise, for how long, and what doubled in size really means"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Shaping a simple loaf",
+"f": "Degassing gently and creating surface tension for a neat sandwich loaf"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Your first white sandwich bread",
+"f": "A soft tin loaf from start to finish, from mixing the dough to the first slice"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Overproofed or underproofed?",
+"f": "Using the finger poke test to judge when dough is ready for the oven"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Soft dinner rolls",
+"f": "Dividing dough evenly, shaping tight rounds and baking them snug together"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Flatbreads without an oven",
+"f": "Simple pan breads and how direct heat on a skillet makes them puff up"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Pizza dough basics",
+"f": "A soft dough, stretching by hand instead of rolling, and baking as hot as possible"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Focaccia",
+"f": "Olive oil, dimpling with your fingers and a slow rise for a crisp, airy Italian bread"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Steam and crust",
+"f": "Why steam in the first minutes of baking gives bread a shiny, crackly crust"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Cooling bread before slicing",
+"f": "Why bread keeps setting as it cools and slicing too early makes it gummy"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Storing bread well",
+"f": "Paper, cloth bags, freezing, and reviving a stale loaf in a hot oven"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Shortcrust pastry",
+"f": "Cold butter, a little water and minimal handling for tender, crisp pastry"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Rolling pastry evenly",
+"f": "Light flouring, turning the dough often and keeping an even thickness"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Blind baking",
+"f": "Baking a tart case empty with weights to prevent the dreaded soggy bottom"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "A simple fruit tart",
+"f": "A shortcrust case, a quick creamy filling and neatly arranged seasonal fruit"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Sweet pastry: pâte sucrée",
+"f": "A richer, sweeter dough for elegant French-style tarts"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Classic apple pie",
+"f": "A double crust, steam vents and balancing apples with sugar and spice"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Crimping and decorating pie edges",
+"f": "Fluted edges, fork patterns, braids and a first simple lattice"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Silky lemon curd",
+"f": "Cooking eggs, sugar, butter and lemon gently into a bright, glossy spread"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Brownies: fudgy or cakey",
+"f": "How the ratio of fat, chocolate and flour decides the texture of a brownie"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Melting chocolate safely",
+"f": "Bain-marie or microwave, and how to avoid seizing or burning chocolate"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Cocoa powder types",
+"f": "Natural versus Dutch-processed cocoa and how each reacts with leaveners"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Oatmeal cookies",
+"f": "Oats for chew, warm spices and fun ideas for add-ins"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: breads, pastry and chocolate",
+"f": "Revisit yeast, shortcrust and chocolate basics and bake one from each family"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Whipping cream",
+"f": "Soft peaks, stiff peaks and stopping before the cream turns into butter"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Meringue basics",
+"f": "Egg whites, sugar and a grease-free bowl: whipping to glossy stiff peaks"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Baked meringues",
+"f": "Low and slow baking for crisp shells and soft, marshmallowy centres"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Pavlova",
+"f": "A meringue base crowned with cream and fruit, named after the dancer Anna Pavlova"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Separating eggs cleanly",
+"f": "Simple techniques, and why one drop of yolk stops whites from whipping"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Folding without deflating",
+"f": "Using a spatula to combine light and heavy mixtures while keeping the air"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Pancakes and crêpes",
+"f": "Batters on the stovetop: resting time, heat control and the confident flip"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Carrot cake",
+"f": "An oil-based batter, freshly grated carrots and a tangy cream cheese frosting"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Cream cheese frosting",
+"f": "Getting a firm, pipeable frosting instead of a runny one"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Cupcakes",
+"f": "Filling cases evenly, baking flat tops and piping simple swirls"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Piping bag basics",
+"f": "Filling, holding and squeezing, plus the most useful nozzles for beginners"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Loaf cakes",
+"f": "Lemon drizzle and marble cake: easy cakes baked in a simple loaf tin"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Syrups and drizzles",
+"f": "Soaking warm cakes with flavoured syrup for extra moisture and taste"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Using spices in baking",
+"f": "Cinnamon, nutmeg, ginger and cardamom, and how to balance them"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Vanilla: pods, extract and paste",
+"f": "The different forms of vanilla and when each one is worth using"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Citrus zest and juice",
+"f": "Getting maximum flavour from lemons, limes and oranges without bitterness"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Nuts in baking",
+"f": "Toasting, chopping and grinding nuts to add flavour and crunch"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Dried fruit in bakes",
+"f": "Soaking, chopping and coating fruit so it stays juicy and does not sink"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Gingerbread biscuits",
+"f": "A spiced rolled dough that is perfect for cutting out shapes"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Royal icing",
+"f": "Mixing the right consistencies for outlining and flooding biscuits"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Decorating biscuits",
+"f": "Outlining, flooding and simple designs with royal icing"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Rolled sugar cookies",
+"f": "A dough that keeps sharp edges when cut out and baked"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Baking with kids and friends",
+"f": "Easy recipes and how to share the tasks so everyone has fun"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Cheese straws and savoury bites",
+"f": "Savoury biscuits and crackers for snacks and parties"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Cornbread",
+"f": "A quick bread made with cornmeal, much loved in the southern United States"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Irish soda bread",
+"f": "A bread leavened with baking soda and buttermilk, no yeast and no kneading"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Buttermilk and its substitutes",
+"f": "Why acidic dairy reacts with baking soda and how to replace it at home"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Swapping ingredients smartly",
+"f": "Which substitutions work well and which ones can ruin a bake"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Baking ratios at a glance",
+"f": "Simple ratios like 1-2-3 shortbread that help you understand any recipe"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: three months of baking",
+"f": "Reflect on your progress, list your best bakes and the problems you solved"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Common cake problems",
+"f": "Sinking, doming, cracking and dense crumb: the usual causes and their fixes"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Common bread problems",
+"f": "Dense loaves, big tunnels and pale crusts: working out what went wrong"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Common cookie problems",
+"f": "Flat, cakey or burnt on the bottom: how to diagnose a cookie"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Soggy bottoms and shrinking pastry",
+"f": "Why pastry misbehaves and how resting, chilling and blind baking help"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Altitude and humidity",
+"f": "How your climate changes baking and the simple adjustments to make"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Using a stand mixer",
+"f": "Attachments, speeds, and when a mixer helps compared with mixing by hand"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Baking in a small kitchen",
+"f": "Space-saving tools and planning bakes without a big setup"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Cinnamon rolls",
+"f": "Soft dough, a buttery cinnamon filling, rolling, cutting and glazing"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Enriched doughs",
+"f": "How butter, eggs, milk and sugar make soft, rich and tender breads"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Brioche basics",
+"f": "A buttery French bread: slow mixing, adding butter gradually and chilling the dough"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Braiding an egg loaf",
+"f": "Three- and four-strand braids for a beautiful, shiny egg bread"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Egg wash and finishes",
+"f": "Egg wash, milk, butter and seeds for colour, shine and crunch"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Whole wheat flour",
+"f": "How bran and germ change the dough, the water it needs and the flavour"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "A simple whole wheat loaf",
+"f": "Balancing whole wheat with white flour for a soft but hearty loaf"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Seeds and grains in bread",
+"f": "Soakers, toasted seeds and adding texture without making bread dense"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Rye flour basics",
+"f": "Why rye behaves so differently from wheat and how it tastes"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Bagels",
+"f": "Boiling before baking for that chewy crust and shiny surface"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Pretzels",
+"f": "Shaping the knot and the alkaline bath that creates a deep brown crust"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "English muffins",
+"f": "Griddle-cooked rolls with a soft interior full of nooks and crannies"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Hand pies and turnovers",
+"f": "Small portable pies, sealing the edges and fillings that do not leak"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Quiche",
+"f": "A savoury custard in pastry: the ratio for a silky, just-set filling"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Crème pâtissière",
+"f": "Pastry cream: tempering eggs and cooking until thick and smooth"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Introducing choux pastry",
+"f": "Cooking the paste in a pan, beating in eggs and piping your first puffs"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Éclairs",
+"f": "Piping long choux fingers, filling them and finishing with a glossy glaze"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Cheesecake basics",
+"f": "Baked cheesecake, a gentle water bath and how to avoid cracks"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "No-bake desserts",
+"f": "Biscuit bases, set creams and fridge cakes for hot days"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Baking for an occasion",
+"f": "Planning a birthday cake: timeline, make-ahead steps and safe transport"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Keeping a baking journal",
+"f": "Recording recipes, changes and results so you improve faster"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Photographing your bakes",
+"f": "Natural light, simple backgrounds and showing off texture"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: graduating from beginner",
+"f": "Bake a mini showcase of your favourite skills and set your next goals"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Baker's percentages",
+"f": "Expressing every ingredient as a percentage of the flour to scale and compare recipes"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Hydration explained",
+"f": "How the water percentage changes dough handling, crumb and crust"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Autolyse",
+"f": "Resting flour and water before adding the rest for better gluten with less work"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Stretch and folds",
+"f": "Building strength in wet doughs without traditional kneading"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "No-knead bread",
+"f": "Time does the work: a long, slow rise and baking in a covered pot"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Dutch oven baking",
+"f": "Trapping steam inside a heavy pot for bakery-style crusts at home"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Bulk fermentation",
+"f": "Reading dough during its main rise: volume, bubbles, dome and jiggle"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Pre-shaping and bench rest",
+"f": "Why a rough first shape and a short rest make the final shaping easier"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Shaping a boule",
+"f": "Building tension for a round loaf that holds its form in the oven"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Shaping a bâtard",
+"f": "An oval loaf: the folding and rolling technique step by step"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Proofing baskets and couches",
+"f": "Bannetons and linen cloths that support dough during the final rise"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Scoring bread",
+"f": "Why we slash loaves and how blade angle and depth create an ear"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Cold retarding dough",
+"f": "Proofing in the fridge for deeper flavour and a flexible timetable"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Preferments: poolish",
+"f": "A wet yeasted preferment made the day before for flavour and extensibility"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Preferments: biga",
+"f": "A stiff Italian preferment and the breads that traditionally use it"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Baguettes at home",
+"f": "Shaping, scoring and steaming the iconic French loaf in a home oven"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Ciabatta",
+"f": "A very wet dough, gentle handling and big irregular holes"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Sourdough: what it is",
+"f": "Wild yeasts and lactic acid bacteria working together in a starter"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Creating a starter",
+"f": "Daily feeds of flour and water and what to expect day by day"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Maintaining a starter",
+"f": "Feeding ratios, fridge storage and reviving a sleepy starter"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Levain and the starter peak",
+"f": "Building a levain and using it at the right moment of activity"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Your first sourdough loaf",
+"f": "A step-by-step schedule from levain to a crackling crust"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Sourdough schedules",
+"f": "Fitting a sourdough bake into a busy working week"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Reading a sourdough crumb",
+"f": "What a tight, open or gummy crumb tells you about fermentation"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Sourdough discard recipes",
+"f": "Crackers, pancakes and flatbreads made from leftover starter"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Flavour from fermentation",
+"f": "How time and temperature shift bread from mild and milky to tangy"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Dough temperature control",
+"f": "Desired dough temperature and adjusting the water to hit it"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Sandwich sourdough",
+"f": "A soft tin-baked sourdough that is perfect for everyday slicing"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Milk bread with tangzhong",
+"f": "A cooked flour paste that keeps Asian-style milk bread soft for days"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: the bread journey",
+"f": "Compare a yeasted loaf, a preferment loaf and a sourdough side by side"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Laminated dough explained",
+"f": "How layers of butter and dough folded together create flaky pastry"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Rough puff pastry",
+"f": "A quick laminated pastry for pies, tarts and savoury bakes"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Palmiers and cheese twists",
+"f": "Using rough puff for simple sweet and savoury bites"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Classic puff pastry",
+"f": "Full lamination with a butter block, turns and rests"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Butter temperature in lamination",
+"f": "Keeping butter and dough at the same pliability so layers stay intact"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Croissant dough",
+"f": "A yeasted laminated dough: mixing, chilling and preparing the butter block"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Laminating croissants",
+"f": "Folds, resting between turns and keeping every layer distinct"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Shaping and proofing croissants",
+"f": "Cutting triangles, rolling them up and proofing without melting the butter"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Baking croissants",
+"f": "Egg wash, oven temperature and reading a honeycomb interior"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Pain au chocolat",
+"f": "Using croissant dough wrapped around chocolate batons"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Danish pastries",
+"f": "Laminated dough with fruit, custard and classic shaping styles"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Kouign-amann",
+"f": "A Breton pastry with sugar laminated in for a caramelised crust"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Strudel dough",
+"f": "Stretching dough paper-thin over the backs of your hands"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Working with filo",
+"f": "Ultra-thin sheets, brushing with butter and keeping them from drying"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Layered filo and nut bakes",
+"f": "Layering filo, nuts and syrup in the style of baklava"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Choux mastery",
+"f": "Perfecting choux: paste consistency, drying it out and an even rise"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Craquelin on choux",
+"f": "A crisp cookie topping that helps puffs rise round and even"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Paris-Brest",
+"f": "A ring of choux filled with praline cream, created for a famous cycling race"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Profiteroles and croquembouche",
+"f": "Filling puffs and building a tower held together with caramel"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Making caramel",
+"f": "Dry and wet caramel, colour stages and handling hot sugar safely"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Praline and nut pastes",
+"f": "Caramelised nuts ground into crunchy praline or a smooth paste"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Tempering chocolate",
+"f": "Melting, cooling and rewarming for shiny chocolate with a clean snap"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Ganache",
+"f": "Ratios of chocolate to cream for glazes, fillings and truffles"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Mirror glaze",
+"f": "A shiny poured glaze for modern mousse cakes"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Swiss meringue buttercream",
+"f": "Heating whites with sugar for a silky, stable frosting"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Italian meringue",
+"f": "Hot sugar syrup whipped into egg whites for an extra-stable meringue"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "French macarons, part 1",
+"f": "Almond flour, egg whites and the art of macaronage"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "French macarons, part 2",
+"f": "Piping, resting, getting feet and avoiding hollow shells"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Macaron fillings",
+"f": "Ganache, buttercream and jam fillings, and why shells taste better after a day"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: six months of pastry",
+"f": "Reflect on lamination, choux and sugar work and choose a project to master"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "The science of cake structure",
+"f": "How flour, eggs, sugar and fat balance tenderness and strength"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Reverse creaming",
+"f": "Coating flour with butter first for a fine, velvety cake crumb"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Chiffon cake",
+"f": "Oil, whipped whites and a tube pan for a tall, airy cake"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Genoise",
+"f": "The whole-egg foam cake behind many classic European layer cakes"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Swiss roll",
+"f": "Rolling a thin sponge without cracks and choosing fillings"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Angel food cake",
+"f": "Only egg whites and no fat: a light, snowy crumb"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Pound cake",
+"f": "A dense, buttery classic built on equal weights, and its variations"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Bundt cakes",
+"f": "Greasing intricate pans and getting a clean, sharp release"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Planning a layer cake",
+"f": "Levelling, splitting and building even, straight layers"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Stacking and supporting cakes",
+"f": "Dowels, boards and keeping tall cakes stable"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Smooth frosting finishes",
+"f": "Bench scrapers, turntables and sharp, clean edges"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Piping techniques",
+"f": "Rosettes, shells, borders and simple buttercream flowers"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Drip cakes",
+"f": "Getting even ganache drips around a well-chilled cake"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Natural colours for frosting",
+"f": "Using fruit powders, spices and vegetables for colour"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Fondant basics",
+"f": "Rolling fondant and covering a cake smoothly"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Simple sugar decorations",
+"f": "Modelling paste figures and cut-out shapes"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Fruit and flowers on cakes",
+"f": "Fresh fruit, edible flowers and arranging them safely"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Cheesecakes of the world",
+"f": "New York, Basque burnt and Japanese cotton cheesecakes"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Tarte Tatin",
+"f": "An upside-down caramelised apple tart and the famous flip"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Frangipane",
+"f": "Almond cream for tarts such as the classic pear and almond tart"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Lemon meringue pie",
+"f": "Curd filling, a meringue topping and how to stop it weeping"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Custard tarts",
+"f": "Silky egg custard in pastry, from British tarts to pastéis de nata"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Galettes",
+"f": "Rustic free-form tarts, both sweet and savoury"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "The science of pie dough",
+"f": "Flaky versus mealy dough and why the size of butter pieces matters"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Savoury pies",
+"f": "Pot pies and vegetable pies with sturdy, golden crusts"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Empanadas and pasties",
+"f": "Hand pies across cultures: doughs, fillings and crimps"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Breads of the world: naan",
+"f": "Soft Indian flatbread traditionally baked on the wall of a tandoor"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Breads of the world: pita",
+"f": "How a blast of heat and steam makes the pocket puff"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Breads of the world: pão de queijo",
+"f": "Brazilian cheese bread made with tapioca starch, naturally chewy"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: cakes and tarts",
+"f": "Bake a showcase cake or tart combining at least three techniques"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Panettone and pandoro",
+"f": "Italian celebration breads and why their fermentation takes so long"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Stollen",
+"f": "German fruit bread with marzipan and a snowy sugar coat"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Spiced fruit buns",
+"f": "Soft spiced buns with dried fruit and a sticky glaze"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Babka",
+"f": "A twisted enriched loaf with chocolate or cinnamon swirls"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Japanese melon pan",
+"f": "A soft sweet bun with a crisp cookie crust on top"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Mexican conchas",
+"f": "Sweet bread rolls with a shell-patterned sugar topping"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Scandinavian cardamom buns",
+"f": "Twisted knotted buns and the Nordic love of cardamom"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Pastel de nata at home",
+"f": "Laminated pastry and a rich custard baked in a very hot oven"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Churros",
+"f": "Piping a choux-like dough, frying safely and finishing with cinnamon sugar"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Doughnuts",
+"f": "Yeasted versus cake doughnuts, oil temperature and glazes"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Gluten-free baking basics",
+"f": "Flour blends, binders and what to expect from the texture"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Gluten-free bread",
+"f": "Psyllium, hydration and building structure without gluten"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Egg-free baking",
+"f": "Aquafaba, flax and other ways to replace eggs"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Dairy-free baking",
+"f": "Plant-based butters and milks and how they behave in recipes"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Baking with less sugar",
+"f": "Reducing sugar while keeping good texture and browning"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Alternative flours",
+"f": "Spelt, buckwheat, oat and almond flour and how to use them"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Ancient grains",
+"f": "Einkorn, emmer and spelt: flavour, handling and history"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Fruit purées instead of fat",
+"f": "Applesauce and banana as partial fat replacements"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "A seasonal baking calendar",
+"f": "Baking with each fruit when it is at its best during the year"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Baking for a crowd",
+"f": "Scaling recipes, traybakes and timing several bakes at once"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Freezing and make-ahead baking",
+"f": "What freezes well: doughs, cookies, cakes and pastry"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Bakes that travel well",
+"f": "Choosing bakes for gifts or trips and how to pack them"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Troubleshooting sourdough",
+"f": "Flat loaves, dense crumb and bread that is too sour"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Troubleshooting lamination",
+"f": "Leaking butter, broken layers and bready croissants"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Troubleshooting macarons",
+"f": "Cracked tops, missing feet and hollow shells"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Oven types",
+"f": "Conventional, fan, steam and wood-fired ovens and how they bake"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Baking stones and steels",
+"f": "How heavy surfaces store heat and improve pizza and bread"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Thermometers and timers",
+"f": "Using probe and infrared thermometers and smart timing"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Sugar science",
+"f": "How brown sugar, caster sugar, icing sugar and honey behave differently"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Maillard reaction and caramelisation",
+"f": "The two browning reactions behind colour and deep flavour"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Starch gelatinisation",
+"f": "What happens to starch as it heats, sets and later goes stale"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Emulsions in baking",
+"f": "Why batters split and how to bring them back together"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Acidity and leavening",
+"f": "Balancing acid and base for the right rise and taste"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Salt and fermentation",
+"f": "How salt slows yeast and strengthens gluten"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Butter and fat crystals",
+"f": "Why the temperature of butter changes everything in a bake"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Developing your own recipe",
+"f": "Changing one variable at a time and testing like a scientist"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Flavour pairing in baking",
+"f": "Classic and surprising combinations to try"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Texture contrast",
+"f": "Combining crisp, creamy and soft elements in one dessert"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Plating a dessert",
+"f": "Arranging slices and components for a restaurant-style look"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate graduation",
+"f": "Create your own recipe and bake it twice, taking notes each time"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "High-hydration doughs",
+"f": "Handling doughs with 80 percent water and more with confidence"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Open-crumb sourdough",
+"f": "Fermentation, shaping and baking choices for a lacy crumb"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Whole grain sourdough",
+"f": "Fermenting whole wheat and rye doughs for depth of flavour"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "German rye breads",
+"f": "Dense sourdough rye loaves and the traditions behind them"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Danish rugbrød",
+"f": "A dark, seed-packed rye bread baked in a tin"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Fruit and nut sourdough",
+"f": "When to add inclusions and how to adjust hydration"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Sourdough sweet doughs",
+"f": "Using levain in brioche and other enriched breads"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Lievito madre",
+"f": "The Italian stiff sweet starter and how bakers care for it"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Panettone, part 1",
+"f": "The first dough: strength, timing and a very active starter"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Panettone, part 2",
+"f": "The second dough, shaping, baking and cooling upside down"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Pain de mie",
+"f": "A lidded tin bread with a fine, square crumb"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Pain de campagne",
+"f": "French country bread with a touch of rye or whole wheat"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Regional breads of Italy",
+"f": "Saltless Tuscan bread and other regional loaves"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Grissini and crackers",
+"f": "Thin crisp breads, rolling techniques and seasonings"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Neapolitan-style pizza",
+"f": "Simple dough, long fermentation and very high heat"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Pan pizzas",
+"f": "Thick pan-baked pizzas with crispy, caramelised cheese edges"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "The art of scoring",
+"f": "Decorative scoring patterns and choosing a blade"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Stencils and flour designs",
+"f": "Decorating crusts with flour, stencils and contrasting doughs"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Decorative breads",
+"f": "Wheat sheaf breads, plaited wreaths and showpiece loaves"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: master bread baker",
+"f": "Plan and bake a bread board that shows three different styles"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Refining viennoiserie",
+"f": "Lamination ratios, dough strength and consistent results"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Bi-colour croissants",
+"f": "Laminating a coloured dough layer for striking stripes"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Croissant variations",
+"f": "Almond croissants, savoury fillings and creative shapes"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Brioche feuilletée",
+"f": "Laminated brioche for buttery, flaky loaves"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Mille-feuille",
+"f": "Puff pastry and pastry cream assembled in clean, crisp layers"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Pithivier",
+"f": "A puff pastry dome filled with frangipane and scored in a spiral"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Vol-au-vents",
+"f": "Tall puff pastry cases and how to make them rise straight"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Introducing entremets",
+"f": "Modern layered French cakes: base, insert and mousse"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Mousses",
+"f": "Fruit and chocolate mousses stabilised with cream and gelatin"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Gelatin and setting agents",
+"f": "Gelatin, agar and pectin: their strengths and best uses"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Inserts and crémeux",
+"f": "Making creamy inserts that hold their shape inside a cake"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Dacquoise and joconde",
+"f": "A nutty meringue base and a thin almond sponge"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Assembling an entremet",
+"f": "Moulds, acetate strips, freezing and unmoulding cleanly"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Glazes for entremets",
+"f": "Mirror, chocolate and velvet finishes for a modern cake"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Petits fours",
+"f": "Tiny cakes and biscuits with precise finishing"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Financiers and madeleines",
+"f": "Brown butter cakes and the classic madeleine hump"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Canelés",
+"f": "Fluted moulds, a long-rested batter and a caramelised crust"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Opera cake",
+"f": "Almond sponge, coffee syrup, ganache and buttercream in thin layers"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Sachertorte",
+"f": "The Viennese chocolate cake with apricot jam and a dark glaze"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Review: the patisserie path",
+"f": "Evaluate your own entremet and plan the next improvements"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Sugar work basics",
+"f": "Cooked sugar stages and making simple isomalt decorations"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Pulled and blown sugar",
+"f": "An introduction to the artistic sugar techniques of pastry chefs"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Chocolate decorations",
+"f": "Curls, shards, transfer sheets and moulded pieces"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Filled chocolate bonbons",
+"f": "Moulded chocolate shells with a ganache filling"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Gâteau Saint-Honoré",
+"f": "A pastry base, choux puffs, caramel and light cream"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Composing plated desserts",
+"f": "Building a plate with sauce, crunch, cream and garnish"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Dessert sauces",
+"f": "Fruit coulis, crème anglaise and caramel sauce"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Bakes with frozen partners",
+"f": "Pairing warm baked desserts with ice cream and sorbet"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Bread and butter pudding",
+"f": "Turning leftover bread or brioche into a comforting baked custard"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: advanced pastry",
+"f": "Design a plated dessert with three contrasting elements"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Black Forest cake",
+"f": "The German classic of chocolate sponge, cherries and cream"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Tres leches cake",
+"f": "A Latin American sponge soaked in three kinds of milk"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Japanese cotton sponge",
+"f": "Light, wobbly cakes baked gently in a water bath"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Gâteau basque",
+"f": "A buttery pastry cake filled with pastry cream or cherry jam"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Portuguese egg sweets",
+"f": "The egg-yolk sweets of Portugal and the story behind them"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Semolina syrup cakes",
+"f": "Basbousa and other syrup-soaked semolina cakes"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Mooncake techniques",
+"f": "Moulding thin crusts around sweet fillings"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Indian baked biscuits",
+"f": "Nankhatai and other cardamom-scented biscuits"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Brazilian bolo de rolo",
+"f": "A paper-thin layered roll cake from Pernambuco"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Danish kringle",
+"f": "A buttery pastry ring with a sweet filling"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Lebkuchen and spice biscuits",
+"f": "German honey cakes and the craft of spice blends"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Alfajores",
+"f": "South American sandwich cookies with dulce de leche"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Biscotti",
+"f": "Twice-baked Italian biscuits for dunking"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Stroopwafels",
+"f": "Thin Dutch waffles pressed on an iron and filled with caramel syrup"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Recipe development lab",
+"f": "Writing a recipe clear enough for anyone to follow"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Scaling recipes up and down",
+"f": "Adjusting quantities, times and temperatures accurately"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Pan size conversions",
+"f": "The simple maths of switching between tin sizes and shapes"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Testing and tasting",
+"f": "Running side-by-side tests and blind tastings with friends"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Food safety for bakers",
+"f": "Allergens, cross-contact, storage and cooling bakes safely"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Baking for guests with allergies",
+"f": "Planning a menu that everyone at the table can enjoy"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Batching and efficiency",
+"f": "Planning bake days, batching tasks and reducing waste"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Creative use of leftovers",
+"f": "Cake pops, crumbs, trifles and other second lives for bakes"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Selling bakes: first thoughts",
+"f": "What home bakers usually consider before sharing bakes beyond friends"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Multi-day bake schedules",
+"f": "Production timelines for bakes that span two or three days"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Pro techniques at home",
+"f": "Bench scrapers, proofing boxes and other pro tricks for a home kitchen"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Herbs in sweet baking",
+"f": "Rosemary, thyme, lavender and basil in cakes and biscuits"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Savoury baking mastery",
+"f": "Gougères, savoury tarts and cheese breads"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Deep flavours",
+"f": "Brown butter, toasted flour and cultured cream in desserts"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Baking with live fire",
+"f": "Wood-fired ovens, grills and baking outdoors"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: global baking",
+"f": "Bake a small menu inspired by three different countries"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Pastry chefs who shaped baking",
+"f": "Marie-Antoine Carême, Auguste Escoffier and their influence on pastry"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "A short history of bread",
+"f": "From ancient flatbreads to the modern neighbourhood bakery"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "A short history of cake",
+"f": "How cakes changed with sugar, ovens and modern leaveners"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Bakery cultures",
+"f": "The French boulangerie, German Konditorei, Portuguese padaria and more"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Breakfast bakes worldwide",
+"f": "Morning breads and pastries from different countries"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Festive bakes worldwide",
+"f": "Celebration breads and cakes from many cultures"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Designing a celebration cake",
+"f": "Sketching, flavour planning and structure"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Tiered celebration cakes",
+"f": "Multi-tier construction, internal support and transport"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Sugar flowers",
+"f": "Shaping gum paste petals and wiring them into flowers"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Painting on cakes",
+"f": "Edible paints, lustre dusts and hand-painted designs"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Palette knife cake art",
+"f": "Textured buttercream finishes and painted-look cakes"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "A small chocolate showpiece",
+"f": "Planning and building a small chocolate sculpture"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "A bread showpiece",
+"f": "Using decorative dough to create a display piece"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Advanced food styling",
+"f": "Styling and photographing bakes like a professional"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Teaching someone to bake",
+"f": "Explaining techniques clearly and patiently to a friend"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Hosting a bake-off",
+"f": "Organising a friendly baking competition with themes and judging"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Building your signature bake",
+"f": "Finding a bake that truly represents you"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Refining your signature bake",
+"f": "Testing, tasting and improving it through feedback"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Baking by feel",
+"f": "Adjusting by touch, sight and smell instead of only the recipe"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Tasting like a judge",
+"f": "Evaluating crumb, crust, flavour and finish like a competition judge"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Bread and cheese pairing",
+"f": "Matching different breads with cheeses and spreads"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Bakes and drinks",
+"f": "Pairing bakes with tea, coffee, chocolate and fruit drinks"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Sustainable baking",
+"f": "Local flour, seasonal produce and reducing waste in the kitchen"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Heritage grains and local mills",
+"f": "Exploring regional flours and the people who mill them"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Advanced troubleshooting clinic",
+"f": "Diagnosing problems from crumb, crust and notes"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Your first loaf revisited",
+"f": "Bake the bread you started with and compare it with today"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Your first cake revisited",
+"f": "Re-bake an early cake using all your new skills"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Your first tart revisited",
+"f": "Re-make an early tart with the precision you have gained"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Planning a dream menu",
+"f": "Designing a full afternoon tea or brunch menu"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the year in bakes",
+"f": "Look back across the whole path and celebrate how far you have come"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Afternoon tea showcase",
+"f": "Scones, small cakes and tarts arranged for a classic afternoon tea"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Brunch showcase",
+"f": "Viennoiserie, quick breads and fruit bakes for a weekend brunch"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Sharing your bakes",
+"f": "Gifting, sharing recipes and inspiring others to bake"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "What comes next for you",
+"f": "Setting baking goals and new challenges for the year ahead"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Your celebration bake",
+"f": "Bake something special to celebrate 365 days of baking"
+}
+]
+}

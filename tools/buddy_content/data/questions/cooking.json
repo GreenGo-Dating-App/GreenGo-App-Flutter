@@ -1,0 +1,1305 @@
+{
+ "topic": "cooking",
+ "questions": [
+  {
+   "id": "cooking-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the first dish you remember cooking yourself?",
+    "de": "Welches Gericht hast du, soweit du dich erinnerst, als Erstes selbst gekocht?",
+    "es": "¿Cuál es el primer plato que recuerdas haber cocinado tú mismo?",
+    "fr": "Quel est le premier plat dont tu te souviens avoir cuisiné toi-même ?",
+    "it": "Qual è il primo piatto che ricordi di aver cucinato da solo?",
+    "pt": "Qual é o primeiro prato de que te lembras de ter cozinhado sozinho?",
+    "pt_BR": "Qual é o primeiro prato que você lembra de ter cozinhado sozinho?"
+   }
+  },
+  {
+   "id": "cooking-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Which dish reminds you most of home or your childhood?",
+    "de": "Welches Gericht erinnert dich am meisten an dein Zuhause oder deine Kindheit?",
+    "es": "¿Qué plato te recuerda más a tu casa o a tu infancia?",
+    "fr": "Quel plat te rappelle le plus ta maison ou ton enfance ?",
+    "it": "Quale piatto ti ricorda di più casa o la tua infanzia?",
+    "pt": "Que prato te faz lembrar mais a tua casa ou a tua infância?",
+    "pt_BR": "Qual prato mais te lembra sua casa ou sua infância?"
+   }
+  },
+  {
+   "id": "cooking-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Who taught you the most about cooking, and what did they teach you?",
+    "de": "Wer hat dir am meisten übers Kochen beigebracht, und was genau?",
+    "es": "¿Quién te ha enseñado más sobre cocina y qué te enseñó?",
+    "fr": "Qui t'a le plus appris à cuisiner, et qu'est-ce que tu as appris ?",
+    "it": "Chi ti ha insegnato di più in cucina, e che cosa ti ha insegnato?",
+    "pt": "Quem te ensinou mais sobre cozinha, e o que te ensinou?",
+    "pt_BR": "Quem te ensinou mais sobre cozinha, e o que ensinou?"
+   }
+  },
+  {
+   "id": "cooking-004",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a typical dish from your country that you would love a foreign friend to try?",
+    "de": "Welches typische Gericht aus deinem Land sollte ein Freund aus dem Ausland unbedingt probieren?",
+    "es": "¿Qué plato típico de tu país te encantaría que probara un amigo extranjero?",
+    "fr": "Quel plat typique de ton pays aimerais-tu faire goûter à un ami étranger ?",
+    "it": "Quale piatto tipico del tuo paese ti piacerebbe far assaggiare a un amico straniero?",
+    "pt": "Que prato típico do teu país adorarias que um amigo estrangeiro provasse?",
+    "pt_BR": "Qual prato típico do seu país você adoraria que um amigo estrangeiro provasse?"
+   }
+  },
+  {
+   "id": "cooking-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy cooking, or is it more of a daily task for you?",
+    "de": "Kochst du gern, oder ist es für dich eher eine tägliche Pflicht?",
+    "es": "¿Disfrutas cocinando o para ti es más bien una tarea diaria?",
+    "fr": "Aimes-tu cuisiner, ou est-ce plutôt une corvée quotidienne pour toi ?",
+    "it": "Ti piace cucinare o per te è più un compito quotidiano?",
+    "pt": "Gostas de cozinhar ou para ti é mais uma tarefa do dia a dia?",
+    "pt_BR": "Você gosta de cozinhar ou pra você é mais uma tarefa do dia a dia?"
+   }
+  },
+  {
+   "id": "cooking-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Which cuisine from another country do you love the most?",
+    "de": "Welche Küche aus einem anderen Land magst du am liebsten?",
+    "es": "¿Qué cocina de otro país te gusta más?",
+    "fr": "Quelle cuisine d'un autre pays préfères-tu ?",
+    "it": "Quale cucina di un altro paese ami di più?",
+    "pt": "Que cozinha de outro país mais adoras?",
+    "pt_BR": "Qual culinária de outro país você mais ama?"
+   }
+  },
+  {
+   "id": "cooking-007",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a perfect breakfast look like for you?",
+    "de": "Wie sieht für dich das perfekte Frühstück aus?",
+    "es": "¿Cómo es para ti un desayuno perfecto?",
+    "fr": "À quoi ressemble ton petit-déjeuner idéal ?",
+    "it": "Com'è per te la colazione perfetta?",
+    "pt": "Como é para ti o pequeno-almoço perfeito?",
+    "pt_BR": "Como é pra você o café da manhã perfeito?"
+   }
+  },
+  {
+   "id": "cooking-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer sweet or savoury food? What is your favourite of each?",
+    "de": "Magst du lieber Süßes oder Herzhaftes? Was ist jeweils dein Favorit?",
+    "es": "¿Prefieres lo dulce o lo salado? ¿Cuál es tu favorito de cada uno?",
+    "fr": "Tu préfères le sucré ou le salé ? Quel est ton préféré dans chaque catégorie ?",
+    "it": "Preferisci il dolce o il salato? Qual è il tuo preferito per ciascuno?",
+    "pt": "Preferes doce ou salgado? Qual é o teu favorito de cada um?",
+    "pt_BR": "Você prefere doce ou salgado? Qual é seu favorito de cada um?"
+   }
+  },
+  {
+   "id": "cooking-009",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a food you disliked as a child but enjoy now?",
+    "de": "Welches Essen mochtest du als Kind nicht, magst es heute aber?",
+    "es": "¿Qué comida no te gustaba de pequeño pero ahora disfrutas?",
+    "fr": "Quel aliment n'aimais-tu pas enfant mais apprécies-tu maintenant ?",
+    "it": "Quale cibo non ti piaceva da bambino ma adesso apprezzi?",
+    "pt": "Que comida não gostavas em criança mas agora aprecias?",
+    "pt_BR": "Qual comida você não gostava quando criança mas agora curte?"
+   }
+  },
+  {
+   "id": "cooking-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Which meal of the day do you enjoy preparing the most?",
+    "de": "Welche Mahlzeit des Tages bereitest du am liebsten zu?",
+    "es": "¿Qué comida del día te gusta más preparar?",
+    "fr": "Quel repas de la journée préfères-tu préparer ?",
+    "it": "Quale pasto della giornata ti piace di più preparare?",
+    "pt": "Que refeição do dia mais gostas de preparar?",
+    "pt_BR": "Qual refeição do dia você mais gosta de preparar?"
+   }
+  },
+  {
+   "id": "cooking-011",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most memorable meal you have eaten while travelling?",
+    "de": "Was war das unvergesslichste Essen, das du auf Reisen gegessen hast?",
+    "es": "¿Cuál es la comida más memorable que has probado viajando?",
+    "fr": "Quel est le repas le plus mémorable que tu as mangé en voyage ?",
+    "it": "Qual è il pasto più memorabile che hai mangiato in viaggio?",
+    "pt": "Qual foi a refeição mais memorável que comeste numa viagem?",
+    "pt_BR": "Qual foi a refeição mais marcante que você comeu numa viagem?"
+   }
+  },
+  {
+   "id": "cooking-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like to cook with music, a podcast or in silence?",
+    "de": "Kochst du gern mit Musik, mit einem Podcast oder in Ruhe?",
+    "es": "¿Te gusta cocinar con música, con un pódcast o en silencio?",
+    "fr": "Tu aimes cuisiner en musique, avec un podcast ou dans le calme ?",
+    "it": "Ti piace cucinare con la musica, con un podcast o in silenzio?",
+    "pt": "Gostas de cozinhar com música, com um podcast ou em silêncio?",
+    "pt_BR": "Você gosta de cozinhar com música, com um podcast ou em silêncio?"
+   }
+  },
+  {
+   "id": "cooking-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Which ingredient could you never live without in your kitchen?",
+    "de": "Ohne welche Zutat könntest du in deiner Küche niemals leben?",
+    "es": "¿Sin qué ingrediente no podrías vivir en tu cocina?",
+    "fr": "De quel ingrédient ne pourrais-tu jamais te passer dans ta cuisine ?",
+    "it": "Senza quale ingrediente non potresti mai stare nella tua cucina?",
+    "pt": "Sem que ingrediente nunca conseguirias viver na tua cozinha?",
+    "pt_BR": "Sem qual ingrediente você nunca conseguiria viver na sua cozinha?"
+   }
+  },
+  {
+   "id": "cooking-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite food to share with friends?",
+    "de": "Welches Essen teilst du am liebsten mit Freunden?",
+    "es": "¿Cuál es tu comida favorita para compartir con amigos?",
+    "fr": "Quel est ton plat préféré à partager entre amis ?",
+    "it": "Qual è il tuo cibo preferito da condividere con gli amici?",
+    "pt": "Qual é a tua comida favorita para partilhar com amigos?",
+    "pt_BR": "Qual é sua comida favorita pra dividir com os amigos?"
+   }
+  },
+  {
+   "id": "cooking-015",
+   "lv": "any",
+   "i18n": {
+    "en": "How spicy do you like your food?",
+    "de": "Wie scharf magst du dein Essen?",
+    "es": "¿Qué tan picante te gusta la comida?",
+    "fr": "À quel point aimes-tu les plats épicés ?",
+    "it": "Quanto ti piace piccante il cibo?",
+    "pt": "Quão picante gostas da comida?",
+    "pt_BR": "Quão apimentada você gosta da comida?"
+   }
+  },
+  {
+   "id": "cooking-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a family recipe you would love to learn or keep alive?",
+    "de": "Gibt es ein Familienrezept, das du gern lernen oder bewahren würdest?",
+    "es": "¿Hay alguna receta familiar que te gustaría aprender o conservar?",
+    "fr": "Y a-t-il une recette de famille que tu aimerais apprendre ou faire perdurer ?",
+    "it": "C'è una ricetta di famiglia che ti piacerebbe imparare o tramandare?",
+    "pt": "Há alguma receita de família que gostavas de aprender ou manter viva?",
+    "pt_BR": "Tem alguma receita de família que você gostaria de aprender ou manter viva?"
+   }
+  },
+  {
+   "id": "cooking-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What food smell instantly makes you happy?",
+    "de": "Welcher Essensduft macht dich sofort glücklich?",
+    "es": "¿Qué olor de comida te hace feliz al instante?",
+    "fr": "Quelle odeur de cuisine te rend immédiatement heureux ?",
+    "it": "Quale profumo di cibo ti rende subito felice?",
+    "pt": "Que cheiro de comida te deixa logo feliz?",
+    "pt_BR": "Qual cheiro de comida te deixa feliz na hora?"
+   }
+  },
+  {
+   "id": "cooking-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like trying new recipes, or do you stick to your favourites?",
+    "de": "Probierst du gern neue Rezepte aus, oder bleibst du lieber bei deinen Lieblingsgerichten?",
+    "es": "¿Te gusta probar recetas nuevas o prefieres quedarte con tus favoritas?",
+    "fr": "Tu aimes essayer de nouvelles recettes ou tu restes fidèle à tes classiques ?",
+    "it": "Ti piace provare ricette nuove o resti fedele alle tue preferite?",
+    "pt": "Gostas de experimentar receitas novas ou ficas pelas tuas favoritas?",
+    "pt_BR": "Você gosta de testar receitas novas ou fica nas suas favoritas?"
+   }
+  },
+  {
+   "id": "cooking-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Which street food from anywhere in the world would you love to taste?",
+    "de": "Welches Streetfood von irgendwo auf der Welt würdest du gern probieren?",
+    "es": "¿Qué comida callejera de cualquier parte del mundo te encantaría probar?",
+    "fr": "Quelle street food de n'importe où dans le monde aimerais-tu goûter ?",
+    "it": "Quale cibo di strada di qualsiasi parte del mondo ti piacerebbe assaggiare?",
+    "pt": "Que comida de rua de qualquer parte do mundo adorarias provar?",
+    "pt_BR": "Qual comida de rua de qualquer lugar do mundo você adoraria provar?"
+   }
+  },
+  {
+   "id": "cooking-020",
+   "lv": "any",
+   "i18n": {
+    "en": "What dish do people always ask you to make?",
+    "de": "Welches Gericht wünschen sich die Leute immer wieder von dir?",
+    "es": "¿Qué plato te piden siempre que prepares?",
+    "fr": "Quel plat te demande-t-on toujours de préparer ?",
+    "it": "Quale piatto ti chiedono sempre di preparare?",
+    "pt": "Que prato te pedem sempre para fazer?",
+    "pt_BR": "Qual prato as pessoas sempre pedem pra você fazer?"
+   }
+  },
+  {
+   "id": "cooking-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a food tradition in your family for special days?",
+    "de": "Gibt es in deiner Familie eine Essenstradition für besondere Tage?",
+    "es": "¿Hay alguna tradición culinaria en tu familia para los días especiales?",
+    "fr": "Y a-t-il une tradition culinaire dans ta famille pour les jours spéciaux ?",
+    "it": "C'è una tradizione culinaria nella tua famiglia per i giorni speciali?",
+    "pt": "Há alguma tradição de comida na tua família para os dias especiais?",
+    "pt_BR": "Tem alguma tradição de comida na sua família pros dias especiais?"
+   }
+  },
+  {
+   "id": "cooking-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather cook at home or eat out? Why?",
+    "de": "Kochst du lieber zu Hause oder gehst du lieber essen? Warum?",
+    "es": "¿Prefieres cocinar en casa o comer fuera? ¿Por qué?",
+    "fr": "Tu préfères cuisiner chez toi ou manger au restaurant ? Pourquoi ?",
+    "it": "Preferisci cucinare a casa o mangiare fuori? Perché?",
+    "pt": "Preferes cozinhar em casa ou comer fora? Porquê?",
+    "pt_BR": "Você prefere cozinhar em casa ou comer fora? Por quê?"
+   }
+  },
+  {
+   "id": "cooking-023",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your go-to comfort food after a long day?",
+    "de": "Was ist dein Seelenfutter nach einem langen Tag?",
+    "es": "¿Cuál es tu comida reconfortante después de un día largo?",
+    "fr": "Quel est ton plat réconfortant après une longue journée ?",
+    "it": "Qual è il tuo piatto consolatorio dopo una lunga giornata?",
+    "pt": "Qual é a tua comida de conforto depois de um dia longo?",
+    "pt_BR": "Qual é sua comida afetiva depois de um dia longo?"
+   }
+  },
+  {
+   "id": "cooking-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Which fruit or vegetable do you look forward to most each season?",
+    "de": "Auf welches Obst oder Gemüse freust du dich jede Saison am meisten?",
+    "es": "¿Qué fruta o verdura esperas con más ganas en cada temporada?",
+    "fr": "Quel fruit ou légume attends-tu le plus à chaque saison ?",
+    "it": "Quale frutta o verdura aspetti di più in ogni stagione?",
+    "pt": "Que fruta ou legume mais esperas em cada estação?",
+    "pt_BR": "Qual fruta ou legume você mais espera em cada estação?"
+   }
+  },
+  {
+   "id": "cooking-025",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could have dinner cooked by any famous chef, who would it be?",
+    "de": "Wenn ein berühmter Koch dir ein Abendessen kochen könnte, wer wäre es?",
+    "es": "Si pudieras cenar algo cocinado por cualquier chef famoso, ¿quién sería?",
+    "fr": "Si un grand chef pouvait te cuisiner un dîner, lequel choisirais-tu ?",
+    "it": "Se potessi cenare con un piatto cucinato da uno chef famoso, chi sceglieresti?",
+    "pt": "Se pudesses jantar algo cozinhado por um chef famoso, quem seria?",
+    "pt_BR": "Se você pudesse jantar algo feito por qualquer chef famoso, quem seria?"
+   }
+  },
+  {
+   "id": "cooking-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What kitchen tool do you use the most, and which one do you never use?",
+    "de": "Welches Küchengerät benutzt du am meisten, und welches nie?",
+    "es": "¿Qué utensilio de cocina usas más y cuál no usas nunca?",
+    "fr": "Quel ustensile de cuisine utilises-tu le plus, et lequel jamais ?",
+    "it": "Quale utensile da cucina usi di più, e quale non usi mai?",
+    "pt": "Que utensílio de cozinha usas mais, e qual nunca usas?",
+    "pt_BR": "Qual utensílio de cozinha você mais usa, e qual nunca usa?"
+   }
+  },
+  {
+   "id": "cooking-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like cooking alone or with other people in the kitchen?",
+    "de": "Kochst du lieber allein oder mit anderen zusammen in der Küche?",
+    "es": "¿Te gusta cocinar solo o con otras personas en la cocina?",
+    "fr": "Tu aimes cuisiner seul ou avec d'autres personnes dans la cuisine ?",
+    "it": "Ti piace cucinare da solo o con altre persone in cucina?",
+    "pt": "Gostas de cozinhar sozinho ou com outras pessoas na cozinha?",
+    "pt_BR": "Você gosta de cozinhar sozinho ou com outras pessoas na cozinha?"
+   }
+  },
+  {
+   "id": "cooking-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which dessert could you eat any day of the year?",
+    "de": "Welchen Nachtisch könntest du an jedem Tag des Jahres essen?",
+    "es": "¿Qué postre podrías comer cualquier día del año?",
+    "fr": "Quel dessert pourrais-tu manger n'importe quel jour de l'année ?",
+    "it": "Quale dolce potresti mangiare in qualsiasi giorno dell'anno?",
+    "pt": "Que sobremesa conseguirias comer em qualquer dia do ano?",
+    "pt_BR": "Qual sobremesa você comeria em qualquer dia do ano?"
+   }
+  },
+  {
+   "id": "cooking-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever visited a food market abroad? What surprised you there?",
+    "de": "Warst du schon einmal auf einem Lebensmittelmarkt im Ausland? Was hat dich dort überrascht?",
+    "es": "¿Has visitado alguna vez un mercado de comida en el extranjero? ¿Qué te sorprendió?",
+    "fr": "As-tu déjà visité un marché alimentaire à l'étranger ? Qu'est-ce qui t'a surpris ?",
+    "it": "Hai mai visitato un mercato alimentare all'estero? Che cosa ti ha sorpreso?",
+    "pt": "Já visitaste algum mercado de comida no estrangeiro? O que te surpreendeu?",
+    "pt_BR": "Você já visitou algum mercado de comida no exterior? O que te surpreendeu?"
+   }
+  },
+  {
+   "id": "cooking-030",
+   "lv": "any",
+   "i18n": {
+    "en": "How do meals usually look in your home on a weekday evening?",
+    "de": "Wie sieht bei dir zu Hause ein typisches Abendessen unter der Woche aus?",
+    "es": "¿Cómo suele ser la cena en tu casa un día entre semana?",
+    "fr": "À quoi ressemble d'habitude le dîner chez toi un soir de semaine ?",
+    "it": "Com'è di solito la cena a casa tua in un giorno feriale?",
+    "pt": "Como costuma ser o jantar em tua casa durante a semana?",
+    "pt_BR": "Como costuma ser o jantar na sua casa durante a semana?"
+   }
+  },
+  {
+   "id": "cooking-031",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one dish you think everyone should learn to cook?",
+    "de": "Welches Gericht sollte deiner Meinung nach jeder kochen können?",
+    "es": "¿Qué plato crees que todo el mundo debería aprender a cocinar?",
+    "fr": "Quel plat, selon toi, tout le monde devrait savoir cuisiner ?",
+    "it": "Quale piatto pensi che tutti dovrebbero imparare a cucinare?",
+    "pt": "Que prato achas que toda a gente devia aprender a cozinhar?",
+    "pt_BR": "Qual prato você acha que todo mundo deveria aprender a cozinhar?"
+   }
+  },
+  {
+   "id": "cooking-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a favourite herb or spice? How do you use it?",
+    "de": "Hast du ein Lieblingskraut oder -gewürz? Wie verwendest du es?",
+    "es": "¿Tienes una hierba o especia favorita? ¿Cómo la usas?",
+    "fr": "As-tu une herbe ou une épice préférée ? Comment l'utilises-tu ?",
+    "it": "Hai un'erba aromatica o una spezia preferita? Come la usi?",
+    "pt": "Tens alguma erva ou especiaria favorita? Como a usas?",
+    "pt_BR": "Você tem alguma erva ou especiaria favorita? Como usa?"
+   }
+  },
+  {
+   "id": "cooking-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the best thing you have ever cooked for someone else?",
+    "de": "Was ist das Beste, das du je für jemand anderen gekocht hast?",
+    "es": "¿Qué es lo mejor que has cocinado para otra persona?",
+    "fr": "Quelle est la meilleure chose que tu aies cuisinée pour quelqu'un ?",
+    "it": "Qual è la cosa migliore che tu abbia mai cucinato per qualcun altro?",
+    "pt": "Qual foi a melhor coisa que já cozinhaste para outra pessoa?",
+    "pt_BR": "Qual foi a melhor coisa que você já cozinhou pra outra pessoa?"
+   }
+  },
+  {
+   "id": "cooking-034",
+   "lv": "any",
+   "i18n": {
+    "en": "How important is it for you to eat meals together at a table?",
+    "de": "Wie wichtig ist es dir, gemeinsam am Tisch zu essen?",
+    "es": "¿Qué importancia tiene para ti comer juntos en la mesa?",
+    "fr": "À quel point est-ce important pour toi de manger ensemble à table ?",
+    "it": "Quanto è importante per te mangiare insieme a tavola?",
+    "pt": "Que importância tem para ti comer em conjunto à mesa?",
+    "pt_BR": "Qual a importância pra você de comer junto à mesa?"
+   }
+  },
+  {
+   "id": "cooking-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a dish from another culture you have learned to cook at home?",
+    "de": "Gibt es ein Gericht aus einer anderen Kultur, das du zu Hause kochen gelernt hast?",
+    "es": "¿Hay algún plato de otra cultura que hayas aprendido a cocinar en casa?",
+    "fr": "Y a-t-il un plat d'une autre culture que tu as appris à cuisiner chez toi ?",
+    "it": "C'è un piatto di un'altra cultura che hai imparato a cucinare a casa?",
+    "pt": "Há algum prato de outra cultura que tenhas aprendido a cozinhar em casa?",
+    "pt_BR": "Tem algum prato de outra cultura que você aprendeu a cozinhar em casa?"
+   }
+  },
+  {
+   "id": "cooking-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What food do you always buy when you visit a new place?",
+    "de": "Welches Essen kaufst du immer, wenn du einen neuen Ort besuchst?",
+    "es": "¿Qué comida compras siempre cuando visitas un lugar nuevo?",
+    "fr": "Quel aliment achètes-tu toujours quand tu visites un nouvel endroit ?",
+    "it": "Quale cibo compri sempre quando visiti un posto nuovo?",
+    "pt": "Que comida compras sempre quando visitas um sítio novo?",
+    "pt_BR": "Qual comida você sempre compra quando visita um lugar novo?"
+   }
+  },
+  {
+   "id": "cooking-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer cooking quick meals or slow dishes that simmer for hours?",
+    "de": "Kochst du lieber schnelle Gerichte oder solche, die stundenlang schmoren?",
+    "es": "¿Prefieres cocinar platos rápidos o guisos que se cuecen durante horas?",
+    "fr": "Tu préfères cuisiner des plats rapides ou des plats qui mijotent des heures ?",
+    "it": "Preferisci cucinare piatti veloci o piatti che cuociono per ore?",
+    "pt": "Preferes cozinhar refeições rápidas ou pratos que cozinham durante horas?",
+    "pt_BR": "Você prefere cozinhar pratos rápidos ou pratos que cozinham por horas?"
+   }
+  },
+  {
+   "id": "cooking-038",
+   "lv": "any",
+   "i18n": {
+    "en": "What would your dream kitchen look like?",
+    "de": "Wie sähe deine Traumküche aus?",
+    "es": "¿Cómo sería la cocina de tus sueños?",
+    "fr": "À quoi ressemblerait la cuisine de tes rêves ?",
+    "it": "Come sarebbe la cucina dei tuoi sogni?",
+    "pt": "Como seria a cozinha dos teus sonhos?",
+    "pt_BR": "Como seria a cozinha dos seus sonhos?"
+   }
+  },
+  {
+   "id": "cooking-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Which food from your region do visitors find surprising?",
+    "de": "Welches Essen aus deiner Region finden Besucher überraschend?",
+    "es": "¿Qué comida de tu región les sorprende a los visitantes?",
+    "fr": "Quel plat de ta région surprend les visiteurs ?",
+    "it": "Quale cibo della tua regione sorprende i visitatori?",
+    "pt": "Que comida da tua região surpreende os visitantes?",
+    "pt_BR": "Qual comida da sua região surpreende os visitantes?"
+   }
+  },
+  {
+   "id": "cooking-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What does cooking mean to you: relaxation, creativity, care or something else?",
+    "de": "Was bedeutet Kochen für dich: Entspannung, Kreativität, Fürsorge oder etwas anderes?",
+    "es": "¿Qué significa cocinar para ti: relajación, creatividad, cuidado u otra cosa?",
+    "fr": "Que représente la cuisine pour toi : détente, créativité, attention aux autres ou autre chose ?",
+    "it": "Che cosa significa cucinare per te: relax, creatività, cura o altro?",
+    "pt": "O que significa cozinhar para ti: relaxamento, criatividade, cuidado ou outra coisa?",
+    "pt_BR": "O que cozinhar significa pra você: relaxamento, criatividade, cuidado ou outra coisa?"
+   }
+  },
+  {
+   "id": "cooking-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What can you already cook with confidence, even if it is simple?",
+    "de": "Was kannst du schon sicher kochen, auch wenn es einfach ist?",
+    "es": "¿Qué sabes cocinar ya con seguridad, aunque sea algo sencillo?",
+    "fr": "Que sais-tu déjà cuisiner avec assurance, même si c'est simple ?",
+    "it": "Che cosa sai già cucinare con sicurezza, anche se è semplice?",
+    "pt": "O que já sabes cozinhar com confiança, mesmo que seja simples?",
+    "pt_BR": "O que você já sabe cozinhar com confiança, mesmo que seja simples?"
+   }
+  },
+  {
+   "id": "cooking-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which dish would you most like to learn to cook first?",
+    "de": "Welches Gericht möchtest du als Erstes kochen lernen?",
+    "es": "¿Qué plato te gustaría aprender a cocinar primero?",
+    "fr": "Quel plat aimerais-tu apprendre à cuisiner en premier ?",
+    "it": "Quale piatto vorresti imparare a cucinare per primo?",
+    "pt": "Que prato mais gostavas de aprender a cozinhar primeiro?",
+    "pt_BR": "Qual prato você mais gostaria de aprender a cozinhar primeiro?"
+   }
+  },
+  {
+   "id": "cooking-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel when you use a sharp knife: confident or a bit nervous?",
+    "de": "Wie fühlst du dich mit einem scharfen Messer: sicher oder etwas nervös?",
+    "es": "¿Cómo te sientes al usar un cuchillo afilado: seguro o un poco nervioso?",
+    "fr": "Comment te sens-tu avec un couteau bien aiguisé : sûr de toi ou un peu nerveux ?",
+    "it": "Come ti senti quando usi un coltello affilato: sicuro o un po' nervoso?",
+    "pt": "Como te sentes quando usas uma faca afiada: confiante ou um pouco nervoso?",
+    "pt_BR": "Como você se sente usando uma faca afiada: confiante ou meio nervoso?"
+   }
+  },
+  {
+   "id": "cooking-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you like your eggs cooked?",
+    "de": "Wie magst du deine Eier am liebsten?",
+    "es": "¿Cómo te gustan los huevos?",
+    "fr": "Comment aimes-tu tes œufs ?",
+    "it": "Come ti piacciono le uova?",
+    "pt": "Como gostas dos ovos?",
+    "pt_BR": "Como você gosta dos ovos?"
+   }
+  },
+  {
+   "id": "cooking-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What does your kitchen have now, and what tool would you add first?",
+    "de": "Was hast du in deiner Küche, und welches Werkzeug würdest du zuerst ergänzen?",
+    "es": "¿Qué tienes ahora en tu cocina y qué utensilio añadirías primero?",
+    "fr": "Qu'as-tu dans ta cuisine maintenant, et quel ustensile ajouterais-tu en premier ?",
+    "it": "Che cosa c'è ora nella tua cucina, e quale utensile aggiungeresti per primo?",
+    "pt": "O que tens agora na tua cozinha, e que utensílio acrescentarias primeiro?",
+    "pt_BR": "O que você tem hoje na sua cozinha, e qual utensílio adicionaria primeiro?"
+   }
+  },
+  {
+   "id": "cooking-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever had a cooking disaster? What happened?",
+    "de": "Hattest du schon einmal ein Küchendesaster? Was ist passiert?",
+    "es": "¿Has tenido alguna vez un desastre en la cocina? ¿Qué pasó?",
+    "fr": "As-tu déjà vécu une catastrophe en cuisine ? Que s'est-il passé ?",
+    "it": "Ti è mai capitato un disastro in cucina? Che cosa è successo?",
+    "pt": "Já tiveste algum desastre na cozinha? O que aconteceu?",
+    "pt_BR": "Você já teve algum desastre na cozinha? O que aconteceu?"
+   }
+  },
+  {
+   "id": "cooking-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you usually follow recipes exactly, or do you change things?",
+    "de": "Hältst du dich meistens genau ans Rezept, oder änderst du etwas?",
+    "es": "¿Sueles seguir las recetas al pie de la letra o cambias cosas?",
+    "fr": "Suis-tu les recettes à la lettre, ou changes-tu des choses ?",
+    "it": "Di solito segui le ricette alla lettera o cambi qualcosa?",
+    "pt": "Costumas seguir as receitas à risca ou mudas coisas?",
+    "pt_BR": "Você costuma seguir as receitas à risca ou muda as coisas?"
+   }
+  },
+  {
+   "id": "cooking-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you usually decide what to cook for dinner?",
+    "de": "Wie entscheidest du normalerweise, was es zum Abendessen gibt?",
+    "es": "¿Cómo sueles decidir qué cocinar para cenar?",
+    "fr": "Comment décides-tu d'habitude ce que tu vas cuisiner pour le dîner ?",
+    "it": "Come decidi di solito che cosa cucinare per cena?",
+    "pt": "Como costumas decidir o que cozinhar para o jantar?",
+    "pt_BR": "Como você costuma decidir o que cozinhar pro jantar?"
+   }
+  },
+  {
+   "id": "cooking-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is your favourite way to eat potatoes?",
+    "de": "Wie isst du Kartoffeln am liebsten?",
+    "es": "¿Cuál es tu forma favorita de comer patatas?",
+    "fr": "Quelle est ta façon préférée de manger les pommes de terre ?",
+    "it": "Qual è il tuo modo preferito di mangiare le patate?",
+    "pt": "Qual é a tua forma preferida de comer batatas?",
+    "pt_BR": "Qual é seu jeito favorito de comer batata?"
+   }
+  },
+  {
+   "id": "cooking-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you like pasta? Which shape and sauce are your favourites?",
+    "de": "Magst du Nudeln? Welche Form und welche Soße sind deine Favoriten?",
+    "es": "¿Te gusta la pasta? ¿Qué forma y qué salsa son tus favoritas?",
+    "fr": "Tu aimes les pâtes ? Quelle forme et quelle sauce préfères-tu ?",
+    "it": "Ti piace la pasta? Quale formato e quale sugo preferisci?",
+    "pt": "Gostas de massa? Que formato e que molho são os teus favoritos?",
+    "pt_BR": "Você gosta de macarrão? Qual formato e qual molho são seus favoritos?"
+   }
+  },
+  {
+   "id": "cooking-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which vegetables do you enjoy most, and how do you usually cook them?",
+    "de": "Welches Gemüse magst du am liebsten, und wie bereitest du es meistens zu?",
+    "es": "¿Qué verduras te gustan más y cómo sueles cocinarlas?",
+    "fr": "Quels légumes préfères-tu, et comment les cuisines-tu d'habitude ?",
+    "it": "Quali verdure ti piacciono di più, e come le cucini di solito?",
+    "pt": "Que legumes preferes, e como costumas cozinhá-los?",
+    "pt_BR": "Quais legumes você mais gosta, e como costuma prepará-los?"
+   }
+  },
+  {
+   "id": "cooking-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever baked something from scratch? How did it turn out?",
+    "de": "Hast du schon einmal etwas komplett selbst gebacken? Wie ist es geworden?",
+    "es": "¿Has horneado algo desde cero alguna vez? ¿Cómo te salió?",
+    "fr": "As-tu déjà fait une pâtisserie entièrement maison ? Comment était le résultat ?",
+    "it": "Hai mai preparato un dolce o un pane da zero? Com'è venuto?",
+    "pt": "Já fizeste algum bolo ou pão de raiz? Como ficou?",
+    "pt_BR": "Você já assou algo do zero? Como ficou?"
+   }
+  },
+  {
+   "id": "cooking-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you usually eat for lunch on a busy day?",
+    "de": "Was isst du an einem vollen Tag normalerweise zu Mittag?",
+    "es": "¿Qué sueles comer a mediodía en un día ajetreado?",
+    "fr": "Que manges-tu d'habitude le midi quand tu es très occupé ?",
+    "it": "Che cosa mangi di solito a pranzo in una giornata piena?",
+    "pt": "O que costumas almoçar num dia muito ocupado?",
+    "pt_BR": "O que você costuma almoçar num dia corrido?"
+   }
+  },
+  {
+   "id": "cooking-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which simple dish would you cook to impress a friend?",
+    "de": "Mit welchem einfachen Gericht würdest du einen Freund beeindrucken?",
+    "es": "¿Qué plato sencillo cocinarías para impresionar a un amigo?",
+    "fr": "Quel plat simple cuisinerais-tu pour impressionner un ami ?",
+    "it": "Quale piatto semplice cucineresti per fare colpo su un amico?",
+    "pt": "Que prato simples cozinharias para impressionar um amigo?",
+    "pt_BR": "Qual prato simples você cozinharia pra impressionar um amigo?"
+   }
+  },
+  {
+   "id": "cooking-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you enjoy salads? What do you like to put in yours?",
+    "de": "Magst du Salat? Was kommt bei dir gern hinein?",
+    "es": "¿Te gustan las ensaladas? ¿Qué te gusta ponerles?",
+    "fr": "Tu aimes les salades ? Qu'aimes-tu mettre dans la tienne ?",
+    "it": "Ti piacciono le insalate? Che cosa ti piace metterci?",
+    "pt": "Gostas de saladas? O que gostas de lhes pôr?",
+    "pt_BR": "Você gosta de salada? O que gosta de colocar na sua?"
+   }
+  },
+  {
+   "id": "cooking-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about cooking rice: easy, or always a little tricky?",
+    "de": "Wie findest du es, Reis zu kochen: leicht oder immer ein bisschen knifflig?",
+    "es": "¿Qué tal se te da cocinar arroz: fácil o siempre un poco complicado?",
+    "fr": "Que penses-tu de la cuisson du riz : facile ou toujours un peu délicate ?",
+    "it": "Come ti trovi a cucinare il riso: facile o sempre un po' complicato?",
+    "pt": "Como te dás com o arroz: fácil ou sempre um bocado complicado?",
+    "pt_BR": "Como você se dá com o arroz: fácil ou sempre meio complicado?"
+   }
+  },
+  {
+   "id": "cooking-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is your favourite soup, and have you ever made it yourself?",
+    "de": "Was ist deine Lieblingssuppe, und hast du sie schon einmal selbst gekocht?",
+    "es": "¿Cuál es tu sopa favorita y la has preparado alguna vez tú mismo?",
+    "fr": "Quelle est ta soupe préférée, et l'as-tu déjà préparée toi-même ?",
+    "it": "Qual è la tua zuppa preferita, e l'hai mai preparata da solo?",
+    "pt": "Qual é a tua sopa favorita, e já a fizeste alguma vez?",
+    "pt_BR": "Qual é sua sopa favorita, e você já fez ela alguma vez?"
+   }
+  },
+  {
+   "id": "cooking-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which snack do you love to make when friends come over?",
+    "de": "Welchen Snack machst du gern, wenn Freunde zu Besuch kommen?",
+    "es": "¿Qué aperitivo te encanta preparar cuando vienen amigos?",
+    "fr": "Quel en-cas aimes-tu préparer quand des amis passent ?",
+    "it": "Quale stuzzichino ti piace preparare quando vengono gli amici?",
+    "pt": "Que petisco adoras fazer quando os amigos vêm cá a casa?",
+    "pt_BR": "Qual petisco você adora fazer quando os amigos vêm na sua casa?"
+   }
+  },
+  {
+   "id": "cooking-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you plan your meals for the week, or decide day by day?",
+    "de": "Planst du deine Mahlzeiten für die Woche, oder entscheidest du von Tag zu Tag?",
+    "es": "¿Planificas tus comidas de la semana o decides día a día?",
+    "fr": "Planifies-tu tes repas de la semaine, ou décides-tu au jour le jour ?",
+    "it": "Pianifichi i pasti della settimana o decidi giorno per giorno?",
+    "pt": "Planeias as refeições da semana ou decides dia a dia?",
+    "pt_BR": "Você planeja as refeições da semana ou decide dia a dia?"
+   }
+  },
+  {
+   "id": "cooking-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you do with leftovers in your home?",
+    "de": "Was machst du bei dir zu Hause mit Resten?",
+    "es": "¿Qué haces con las sobras en tu casa?",
+    "fr": "Que fais-tu des restes chez toi ?",
+    "it": "Che cosa fai con gli avanzi a casa tua?",
+    "pt": "O que fazes com as sobras em tua casa?",
+    "pt_BR": "O que você faz com as sobras na sua casa?"
+   }
+  },
+  {
+   "id": "cooking-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which sweet treat would you like to learn to bake?",
+    "de": "Welche süße Leckerei würdest du gern backen lernen?",
+    "es": "¿Qué dulce te gustaría aprender a hornear?",
+    "fr": "Quelle douceur aimerais-tu apprendre à préparer au four ?",
+    "it": "Quale dolcetto ti piacerebbe imparare a preparare?",
+    "pt": "Que doce gostavas de aprender a fazer no forno?",
+    "pt_BR": "Qual docinho você gostaria de aprender a assar?"
+   }
+  },
+  {
+   "id": "cooking-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What part of cooking do you find hardest right now?",
+    "de": "Was findest du beim Kochen im Moment am schwierigsten?",
+    "es": "¿Qué parte de la cocina te resulta más difícil ahora mismo?",
+    "fr": "Qu'est-ce qui te semble le plus difficile en cuisine en ce moment ?",
+    "it": "Quale parte del cucinare trovi più difficile in questo momento?",
+    "pt": "Que parte de cozinhar achas mais difícil neste momento?",
+    "pt_BR": "Qual parte de cozinhar você acha mais difícil no momento?"
+   }
+  },
+  {
+   "id": "cooking-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you like cooking with beans and lentils? Which dish do you know?",
+    "de": "Kochst du gern mit Bohnen und Linsen? Welches Gericht kennst du?",
+    "es": "¿Te gusta cocinar con legumbres como alubias y lentejas? ¿Qué plato conoces?",
+    "fr": "Tu aimes cuisiner les haricots et les lentilles ? Quel plat connais-tu ?",
+    "it": "Ti piace cucinare fagioli e lenticchie? Quale piatto conosci?",
+    "pt": "Gostas de cozinhar com feijão e lentilhas? Que prato conheces?",
+    "pt_BR": "Você gosta de cozinhar com feijão e lentilha? Qual prato você conhece?"
+   }
+  },
+  {
+   "id": "cooking-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you like to cook better by the end of this year?",
+    "de": "Was möchtest du bis Ende dieses Jahres besser kochen können?",
+    "es": "¿Qué te gustaría cocinar mejor al final de este año de aprendizaje?",
+    "fr": "Qu'aimerais-tu mieux savoir cuisiner à la fin de cette année d'apprentissage ?",
+    "it": "Che cosa vorresti saper cucinare meglio alla fine di quest'anno di percorso?",
+    "pt": "O que gostavas de cozinhar melhor no fim deste ano de aprendizagem?",
+    "pt_BR": "O que você gostaria de cozinhar melhor no fim deste ano de aprendizado?"
+   }
+  },
+  {
+   "id": "cooking-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever cooked for a group of people? How did it go?",
+    "de": "Hast du schon einmal für eine Gruppe gekocht? Wie lief es?",
+    "es": "¿Has cocinado alguna vez para un grupo de personas? ¿Cómo te fue?",
+    "fr": "As-tu déjà cuisiné pour un groupe de personnes ? Comment ça s'est passé ?",
+    "it": "Hai mai cucinato per un gruppo di persone? Com'è andata?",
+    "pt": "Já cozinhaste para um grupo de pessoas? Como correu?",
+    "pt_BR": "Você já cozinhou pra um grupo de pessoas? Como foi?"
+   }
+  },
+  {
+   "id": "cooking-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which cooking technique have you improved the most recently?",
+    "de": "Welche Kochtechnik hast du zuletzt am meisten verbessert?",
+    "es": "¿Qué técnica de cocina has mejorado más últimamente?",
+    "fr": "Quelle technique de cuisine as-tu le plus améliorée récemment ?",
+    "it": "Quale tecnica di cucina hai migliorato di più ultimamente?",
+    "pt": "Que técnica de cozinha melhoraste mais nos últimos tempos?",
+    "pt_BR": "Qual técnica de cozinha você mais melhorou nos últimos tempos?"
+   }
+  },
+  {
+   "id": "cooking-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which world cuisine would you like to explore more deeply?",
+    "de": "Welche Küche der Welt möchtest du genauer kennenlernen?",
+    "es": "¿Qué cocina del mundo te gustaría explorar más a fondo?",
+    "fr": "Quelle cuisine du monde aimerais-tu explorer plus en profondeur ?",
+    "it": "Quale cucina del mondo vorresti esplorare più a fondo?",
+    "pt": "Que cozinha do mundo gostavas de explorar mais a fundo?",
+    "pt_BR": "Qual culinária do mundo você gostaria de explorar mais a fundo?"
+   }
+  },
+  {
+   "id": "cooking-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever made bread or fresh pasta by hand? How did it feel?",
+    "de": "Hast du schon einmal Brot oder frische Pasta von Hand gemacht? Wie war das?",
+    "es": "¿Has hecho alguna vez pan o pasta fresca a mano? ¿Qué tal fue?",
+    "fr": "As-tu déjà fait du pain ou des pâtes fraîches à la main ? Qu'as-tu ressenti ?",
+    "it": "Hai mai fatto il pane o la pasta fresca a mano? Com'è stato?",
+    "pt": "Já fizeste pão ou massa fresca à mão? Como foi?",
+    "pt_BR": "Você já fez pão ou massa fresca à mão? Como foi?"
+   }
+  },
+  {
+   "id": "cooking-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you know when a dish needs more salt, acid or sweetness?",
+    "de": "Woran merkst du, ob ein Gericht mehr Salz, Säure oder Süße braucht?",
+    "es": "¿Cómo sabes si un plato necesita más sal, acidez o dulzor?",
+    "fr": "Comment sais-tu qu'un plat a besoin de plus de sel, d'acidité ou de douceur ?",
+    "it": "Come capisci se un piatto ha bisogno di più sale, acidità o dolcezza?",
+    "pt": "Como sabes se um prato precisa de mais sal, acidez ou doçura?",
+    "pt_BR": "Como você sabe se um prato precisa de mais sal, acidez ou doçura?"
+   }
+  },
+  {
+   "id": "cooking-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your favourite sauce to make from scratch?",
+    "de": "Welche Soße machst du am liebsten selbst?",
+    "es": "¿Cuál es tu salsa favorita para hacer desde cero?",
+    "fr": "Quelle est ta sauce préférée à faire maison ?",
+    "it": "Qual è la tua salsa preferita da preparare da zero?",
+    "pt": "Qual é o teu molho favorito para fazer do zero?",
+    "pt_BR": "Qual é seu molho favorito pra fazer do zero?"
+   }
+  },
+  {
+   "id": "cooking-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which dish from your travels have you tried to recreate at home?",
+    "de": "Welches Gericht von deinen Reisen hast du versucht, zu Hause nachzukochen?",
+    "es": "¿Qué plato de tus viajes has intentado recrear en casa?",
+    "fr": "Quel plat découvert en voyage as-tu essayé de refaire chez toi ?",
+    "it": "Quale piatto dei tuoi viaggi hai provato a rifare a casa?",
+    "pt": "Que prato das tuas viagens tentaste recriar em casa?",
+    "pt_BR": "Qual prato das suas viagens você tentou recriar em casa?"
+   }
+  },
+  {
+   "id": "cooking-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you enjoy using spices in layers, like whole spices first and ground later?",
+    "de": "Arbeitest du gern mit Gewürzen in Schichten, erst ganze und später gemahlene?",
+    "es": "¿Te gusta usar las especias por capas, primero enteras y luego molidas?",
+    "fr": "Aimes-tu utiliser les épices par étapes, d'abord entières puis moulues ?",
+    "it": "Ti piace usare le spezie a strati, prima intere e poi macinate?",
+    "pt": "Gostas de usar as especiarias por camadas, primeiro inteiras e depois moídas?",
+    "pt_BR": "Você gosta de usar especiarias em camadas, primeiro inteiras e depois moídas?"
+   }
+  },
+  {
+   "id": "cooking-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried fermenting anything at home, like yogurt or sauerkraut?",
+    "de": "Hast du schon einmal etwas zu Hause fermentiert, etwa Joghurt oder Sauerkraut?",
+    "es": "¿Has probado a fermentar algo en casa, como yogur o chucrut?",
+    "fr": "As-tu déjà fait fermenter quelque chose chez toi, comme du yaourt ou de la choucroute ?",
+    "it": "Hai mai provato a fermentare qualcosa a casa, come yogurt o crauti?",
+    "pt": "Já experimentaste fermentar alguma coisa em casa, como iogurte ou chucrute?",
+    "pt_BR": "Você já tentou fermentar algo em casa, como iogurte ou chucrute?"
+   }
+  },
+  {
+   "id": "cooking-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you plan the timing when several dishes must be ready together?",
+    "de": "Wie planst du das Timing, wenn mehrere Gerichte gleichzeitig fertig sein müssen?",
+    "es": "¿Cómo organizas los tiempos cuando varios platos tienen que estar listos a la vez?",
+    "fr": "Comment organises-tu le timing quand plusieurs plats doivent être prêts en même temps ?",
+    "it": "Come gestisci i tempi quando più piatti devono essere pronti insieme?",
+    "pt": "Como organizas os tempos quando vários pratos têm de ficar prontos ao mesmo tempo?",
+    "pt_BR": "Como você organiza o tempo quando vários pratos precisam ficar prontos juntos?"
+   }
+  },
+  {
+   "id": "cooking-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which knife cut or prep task do you now do faster than when you started?",
+    "de": "Welche Schnitttechnik oder Vorbereitung erledigst du heute schneller als am Anfang?",
+    "es": "¿Qué corte o tarea de preparación haces ahora más rápido que al principio?",
+    "fr": "Quelle découpe ou quelle préparation fais-tu plus vite aujourd'hui qu'à tes débuts ?",
+    "it": "Quale taglio o preparazione fai adesso più velocemente rispetto all'inizio?",
+    "pt": "Que corte ou tarefa de preparação fazes agora mais depressa do que no início?",
+    "pt_BR": "Qual corte ou preparo você faz hoje mais rápido do que no começo?"
+   }
+  },
+  {
+   "id": "cooking-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which seasonal ingredient inspires you most in the kitchen?",
+    "de": "Welche saisonale Zutat inspiriert dich in der Küche am meisten?",
+    "es": "¿Qué ingrediente de temporada te inspira más en la cocina?",
+    "fr": "Quel ingrédient de saison t'inspire le plus en cuisine ?",
+    "it": "Quale ingrediente di stagione ti ispira di più in cucina?",
+    "pt": "Que ingrediente da época mais te inspira na cozinha?",
+    "pt_BR": "Qual ingrediente da estação mais te inspira na cozinha?"
+   }
+  },
+  {
+   "id": "cooking-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever hosted a dinner? What menu did you choose?",
+    "de": "Hast du schon einmal ein Abendessen für Gäste gegeben? Welches Menü hast du gewählt?",
+    "es": "¿Has organizado alguna vez una cena? ¿Qué menú elegiste?",
+    "fr": "As-tu déjà organisé un dîner ? Quel menu as-tu choisi ?",
+    "it": "Hai mai organizzato una cena? Che menù hai scelto?",
+    "pt": "Já organizaste algum jantar? Que menu escolheste?",
+    "pt_BR": "Você já organizou um jantar? Qual cardápio escolheu?"
+   }
+  },
+  {
+   "id": "cooking-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which kitchen gadget has made your cooking easier?",
+    "de": "Welches Küchengerät hat dir das Kochen erleichtert?",
+    "es": "¿Qué aparato de cocina te ha facilitado cocinar?",
+    "fr": "Quel appareil de cuisine t'a simplifié la vie ?",
+    "it": "Quale elettrodomestico o accessorio ti ha reso più facile cucinare?",
+    "pt": "Que aparelho de cozinha te facilitou a vida?",
+    "pt_BR": "Qual aparelho de cozinha facilitou sua vida?"
+   }
+  },
+  {
+   "id": "cooking-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you adapt recipes for friends with different diets?",
+    "de": "Wie passt du Rezepte für Freunde mit unterschiedlichen Ernährungsweisen an?",
+    "es": "¿Cómo adaptas las recetas para amigos con dietas diferentes?",
+    "fr": "Comment adaptes-tu les recettes pour des amis qui ont des régimes différents ?",
+    "it": "Come adatti le ricette per amici con diete diverse?",
+    "pt": "Como adaptas as receitas para amigos com dietas diferentes?",
+    "pt_BR": "Como você adapta as receitas pra amigos com dietas diferentes?"
+   }
+  },
+  {
+   "id": "cooking-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which dish have you cooked so many times that it is now truly yours?",
+    "de": "Welches Gericht hast du so oft gekocht, dass es inzwischen wirklich deins ist?",
+    "es": "¿Qué plato has cocinado tantas veces que ya es realmente tuyo?",
+    "fr": "Quel plat as-tu cuisiné tant de fois qu'il est devenu vraiment le tien ?",
+    "it": "Quale piatto hai cucinato così tante volte che ormai è davvero tuo?",
+    "pt": "Que prato já cozinhaste tantas vezes que agora é mesmo teu?",
+    "pt_BR": "Qual prato você já cozinhou tantas vezes que agora é realmente seu?"
+   }
+  },
+  {
+   "id": "cooking-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you enjoy cooking without a recipe? What do you improvise most often?",
+    "de": "Kochst du gern ohne Rezept? Was improvisierst du am häufigsten?",
+    "es": "¿Disfrutas cocinando sin receta? ¿Qué improvisas más a menudo?",
+    "fr": "Aimes-tu cuisiner sans recette ? Qu'improvises-tu le plus souvent ?",
+    "it": "Ti piace cucinare senza ricetta? Che cosa improvvisi più spesso?",
+    "pt": "Gostas de cozinhar sem receita? O que improvisas mais vezes?",
+    "pt_BR": "Você gosta de cozinhar sem receita? O que improvisa com mais frequência?"
+   }
+  },
+  {
+   "id": "cooking-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which pastry or cake would you love to master?",
+    "de": "Welches Gebäck oder welchen Kuchen würdest du gern perfekt beherrschen?",
+    "es": "¿Qué masa o pastel te encantaría dominar?",
+    "fr": "Quelle pâtisserie ou quel gâteau aimerais-tu maîtriser ?",
+    "it": "Quale dolce o torta ti piacerebbe padroneggiare?",
+    "pt": "Que bolo ou pastelaria adorarias dominar?",
+    "pt_BR": "Qual bolo ou doce de confeitaria você adoraria dominar?"
+   }
+  },
+  {
+   "id": "cooking-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you reduce food waste in your kitchen?",
+    "de": "Wie vermeidest du Lebensmittelverschwendung in deiner Küche?",
+    "es": "¿Cómo reduces el desperdicio de comida en tu cocina?",
+    "fr": "Comment réduis-tu le gaspillage alimentaire dans ta cuisine ?",
+    "it": "Come riduci lo spreco alimentare nella tua cucina?",
+    "pt": "Como reduzes o desperdício de comida na tua cozinha?",
+    "pt_BR": "Como você reduz o desperdício de comida na sua cozinha?"
+   }
+  },
+  {
+   "id": "cooking-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which food from another culture changed the way you cook?",
+    "de": "Welches Essen aus einer anderen Kultur hat deine Art zu kochen verändert?",
+    "es": "¿Qué comida de otra cultura cambió tu forma de cocinar?",
+    "fr": "Quelle cuisine d'une autre culture a changé ta façon de cuisiner ?",
+    "it": "Quale cibo di un'altra cultura ha cambiato il tuo modo di cucinare?",
+    "pt": "Que comida de outra cultura mudou a tua forma de cozinhar?",
+    "pt_BR": "Qual comida de outra cultura mudou seu jeito de cozinhar?"
+   }
+  },
+  {
+   "id": "cooking-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your secret trick for making a dish taste better?",
+    "de": "Was ist dein geheimer Trick, damit ein Gericht besser schmeckt?",
+    "es": "¿Cuál es tu truco secreto para que un plato sepa mejor?",
+    "fr": "Quelle est ton astuce secrète pour rendre un plat meilleur ?",
+    "it": "Qual è il tuo trucco segreto per rendere un piatto più buono?",
+    "pt": "Qual é o teu truque secreto para um prato ficar mais saboroso?",
+    "pt_BR": "Qual é seu truque secreto pra deixar um prato mais gostoso?"
+   }
+  },
+  {
+   "id": "cooking-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which advanced technique are you most excited to try, like laminated dough or tempering chocolate?",
+    "de": "Auf welche fortgeschrittene Technik freust du dich am meisten, etwa Blätterteig oder Schokolade temperieren?",
+    "es": "¿Qué técnica avanzada te ilusiona más probar, como el hojaldre o el templado de chocolate?",
+    "fr": "Quelle technique avancée as-tu le plus hâte d'essayer, comme la pâte feuilletée ou le tempérage du chocolat ?",
+    "it": "Quale tecnica avanzata sei più curioso di provare, come la sfoglia o il temperaggio del cioccolato?",
+    "pt": "Que técnica avançada estás mais entusiasmado por experimentar, como massa folhada ou temperar chocolate?",
+    "pt_BR": "Qual técnica avançada você está mais animado pra testar, como massa folhada ou temperagem de chocolate?"
+   }
+  },
+  {
+   "id": "cooking-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you describe your personal cooking style?",
+    "de": "Wie würdest du deinen persönlichen Kochstil beschreiben?",
+    "es": "¿Cómo describirías tu estilo personal de cocina?",
+    "fr": "Comment décrirais-tu ton style de cuisine personnel ?",
+    "it": "Come descriveresti il tuo stile personale in cucina?",
+    "pt": "Como descreverias o teu estilo pessoal de cozinha?",
+    "pt_BR": "Como você descreveria seu estilo pessoal de cozinhar?"
+   }
+  },
+  {
+   "id": "cooking-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you designed a five-course menu, what would it tell people about you?",
+    "de": "Wenn du ein Fünf-Gänge-Menü entwerfen würdest, was würde es über dich verraten?",
+    "es": "Si diseñaras un menú de cinco platos, ¿qué contaría de ti?",
+    "fr": "Si tu créais un menu en cinq plats, que dirait-il de toi ?",
+    "it": "Se creassi un menù di cinque portate, che cosa racconterebbe di te?",
+    "pt": "Se criasses um menu de cinco pratos, o que diria sobre ti?",
+    "pt_BR": "Se você criasse um menu de cinco pratos, o que ele contaria sobre você?"
+   }
+  },
+  {
+   "id": "cooking-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you ever created your own recipe from scratch? What was it?",
+    "de": "Hast du schon einmal ein eigenes Rezept von Grund auf entwickelt? Was war es?",
+    "es": "¿Has creado alguna vez tu propia receta desde cero? ¿Cuál fue?",
+    "fr": "As-tu déjà inventé ta propre recette de A à Z ? Laquelle ?",
+    "it": "Hai mai creato una tua ricetta da zero? Che cos'era?",
+    "pt": "Já criaste alguma receita tua do zero? Qual foi?",
+    "pt_BR": "Você já criou uma receita sua do zero? Qual foi?"
+   }
+  },
+  {
+   "id": "cooking-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which classic dish do you think is the hardest to cook perfectly?",
+    "de": "Welches klassische Gericht ist deiner Meinung nach am schwersten perfekt zuzubereiten?",
+    "es": "¿Qué plato clásico crees que es el más difícil de cocinar a la perfección?",
+    "fr": "Selon toi, quel plat classique est le plus difficile à réussir parfaitement ?",
+    "it": "Quale piatto classico pensi sia il più difficile da cucinare alla perfezione?",
+    "pt": "Que prato clássico achas que é o mais difícil de cozinhar na perfeição?",
+    "pt_BR": "Qual prato clássico você acha mais difícil de fazer com perfeição?"
+   }
+  },
+  {
+   "id": "cooking-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you balance tradition and creativity when you cook a classic recipe?",
+    "de": "Wie bringst du Tradition und Kreativität in Einklang, wenn du ein klassisches Rezept kochst?",
+    "es": "¿Cómo equilibras tradición y creatividad cuando cocinas una receta clásica?",
+    "fr": "Comment équilibres-tu tradition et créativité quand tu cuisines une recette classique ?",
+    "it": "Come bilanci tradizione e creatività quando cucini una ricetta classica?",
+    "pt": "Como equilibras tradição e criatividade quando cozinhas uma receita clássica?",
+    "pt_BR": "Como você equilibra tradição e criatividade quando cozinha uma receita clássica?"
+   }
+  },
+  {
+   "id": "cooking-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which chef or food writer has influenced your cooking the most?",
+    "de": "Welcher Koch oder Food-Autor hat deine Küche am meisten beeinflusst?",
+    "es": "¿Qué chef o escritor gastronómico ha influido más en tu cocina?",
+    "fr": "Quel chef ou auteur culinaire a le plus influencé ta cuisine ?",
+    "it": "Quale chef o scrittore di cucina ha influenzato di più il tuo modo di cucinare?",
+    "pt": "Que chef ou escritor de culinária mais influenciou a tua cozinha?",
+    "pt_BR": "Qual chef ou escritor de culinária mais influenciou sua cozinha?"
+   }
+  },
+  {
+   "id": "cooking-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you teach first if a friend asked you for a cooking lesson?",
+    "de": "Was würdest du zuerst zeigen, wenn ein Freund dich um eine Kochstunde bitten würde?",
+    "es": "¿Qué enseñarías primero si un amigo te pidiera una clase de cocina?",
+    "fr": "Que montrerais-tu en premier si un ami te demandait un cours de cuisine ?",
+    "it": "Che cosa insegneresti per prima cosa se un amico ti chiedesse una lezione di cucina?",
+    "pt": "O que ensinarias primeiro se um amigo te pedisse uma aula de cozinha?",
+    "pt_BR": "O que você ensinaria primeiro se um amigo pedisse uma aula de culinária?"
+   }
+  },
+  {
+   "id": "cooking-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think about plating and presentation when you cook for others?",
+    "de": "Wie wichtig ist dir das Anrichten und die Präsentation, wenn du für andere kochst?",
+    "es": "¿Qué importancia le das al emplatado y la presentación cuando cocinas para otros?",
+    "fr": "Quelle place accordes-tu au dressage et à la présentation quand tu cuisines pour d'autres ?",
+    "it": "Quanta attenzione dai all'impiattamento e alla presentazione quando cucini per gli altri?",
+    "pt": "Que importância dás ao empratamento e à apresentação quando cozinhas para outros?",
+    "pt_BR": "Que importância você dá à montagem e à apresentação quando cozinha pra outras pessoas?"
+   }
+  },
+  {
+   "id": "cooking-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which cuisine would you love to study with a local cook in its home country?",
+    "de": "Welche Küche würdest du gern bei einem einheimischen Koch in ihrem Heimatland lernen?",
+    "es": "¿Qué cocina te encantaría estudiar con un cocinero local en su país de origen?",
+    "fr": "Quelle cuisine aimerais-tu étudier auprès d'un cuisinier local dans son pays d'origine ?",
+    "it": "Quale cucina ti piacerebbe studiare con un cuoco del posto nel suo paese d'origine?",
+    "pt": "Que cozinha adorarias estudar com um cozinheiro local no país de origem?",
+    "pt_BR": "Qual culinária você adoraria estudar com um cozinheiro local no país de origem?"
+   }
+  },
+  {
+   "id": "cooking-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would your dream celebration meal look like if you cooked everything yourself?",
+    "de": "Wie sähe dein Traum-Festessen aus, wenn du alles selbst kochen würdest?",
+    "es": "¿Cómo sería tu comida de celebración soñada si lo cocinaras todo tú?",
+    "fr": "À quoi ressemblerait ton repas de fête idéal si tu cuisinais tout toi-même ?",
+    "it": "Come sarebbe il tuo pranzo di festa ideale se cucinassi tutto tu?",
+    "pt": "Como seria a tua refeição de festa de sonho se cozinhasses tudo tu?",
+    "pt_BR": "Como seria sua refeição de festa dos sonhos se você cozinhasse tudo?"
+   }
+  },
+  {
+   "id": "cooking-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has your way of tasting food changed since you started this path?",
+    "de": "Wie hat sich deine Art zu schmecken verändert, seit du diesen Weg begonnen hast?",
+    "es": "¿Cómo ha cambiado tu forma de saborear la comida desde que empezaste este camino?",
+    "fr": "Comment ta façon de goûter les plats a-t-elle changé depuis le début de ce parcours ?",
+    "it": "Come è cambiato il tuo modo di assaggiare il cibo da quando hai iniziato questo percorso?",
+    "pt": "Como mudou a tua forma de provar a comida desde que começaste este percurso?",
+    "pt_BR": "Como mudou seu jeito de provar a comida desde que você começou essa jornada?"
+   }
+  },
+  {
+   "id": "cooking-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you ever like to share your recipes in a small cookbook or a class?",
+    "de": "Würdest du deine Rezepte gern einmal in einem kleinen Kochbuch oder Kurs teilen?",
+    "es": "¿Te gustaría compartir tus recetas algún día en un pequeño recetario o en una clase?",
+    "fr": "Aimerais-tu un jour partager tes recettes dans un petit livre ou un atelier ?",
+    "it": "Ti piacerebbe un giorno condividere le tue ricette in un piccolo ricettario o in un corso?",
+    "pt": "Gostavas de partilhar um dia as tuas receitas num pequeno livro ou numa aula?",
+    "pt_BR": "Você gostaria de compartilhar suas receitas um dia num pequeno livro ou numa aula?"
+   }
+  },
+  {
+   "id": "cooking-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which dish from your early days would you like to cook again now?",
+    "de": "Welches Gericht aus deinen Anfangstagen würdest du jetzt gern noch einmal kochen?",
+    "es": "¿Qué plato de tus primeros días te gustaría volver a cocinar ahora?",
+    "fr": "Quel plat de tes débuts aimerais-tu recuisiner maintenant ?",
+    "it": "Quale piatto dei tuoi primi giorni ti piacerebbe ricucinare adesso?",
+    "pt": "Que prato dos teus primeiros dias gostavas de voltar a cozinhar agora?",
+    "pt_BR": "Qual prato dos seus primeiros dias você gostaria de cozinhar de novo agora?"
+   }
+  },
+  {
+   "id": "cooking-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does cooking mean to you now, after so many days in the kitchen?",
+    "de": "Was bedeutet dir Kochen jetzt, nach so vielen Tagen in der Küche?",
+    "es": "¿Qué significa cocinar para ti ahora, después de tantos días en la cocina?",
+    "fr": "Que représente la cuisine pour toi maintenant, après tant de jours aux fourneaux ?",
+    "it": "Che cosa significa cucinare per te adesso, dopo tanti giorni in cucina?",
+    "pt": "O que significa cozinhar para ti agora, depois de tantos dias na cozinha?",
+    "pt_BR": "O que cozinhar significa pra você agora, depois de tantos dias na cozinha?"
+   }
+  }
+ ]
+}

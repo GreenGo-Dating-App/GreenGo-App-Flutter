@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 81,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Feelings and moods",
+     "g": "Say how you feel with adjectives like glücklich, traurig, müde and with ich habe Hunger.",
+     "p": [
+      "With sein: Ich bin glücklich, traurig, müde, nervös, froh, gestresst, entspannt.",
+      "With haben: Ich habe Hunger, Durst, Angst, keine Lust. No article: Ich habe Hunger, not einen Hunger.",
+      "Ask others: Wie fühlst du dich? Was ist los? Bist du müde? Answer with gerade or heute."
+     ],
+     "q": "Wie fühlst du dich heute, and why? Use one adjective with sein and one expression with haben.",
+     "c": "Write a mini mood diary: three sentences about how you felt this morning, at midday and now."
+    },
+    "de": {
+     "t": "Gefühle und Stimmungen",
+     "g": "Du sagst, wie du dich fühlst, mit Adjektiven wie glücklich, traurig, müde und mit ich habe Hunger.",
+     "p": [
+      "Mit sein: Ich bin glücklich, traurig, müde, nervös, froh, gestresst, entspannt.",
+      "Mit haben: Ich habe Hunger, Durst, Angst, keine Lust. Ohne Artikel: Ich habe Hunger, nicht einen Hunger.",
+      "Andere fragen: Wie fühlst du dich? Was ist los? Bist du müde? Antworte mit gerade oder heute."
+     ],
+     "q": "Wie fühlst du dich heute, und warum? Benutze ein Adjektiv mit sein und einen Ausdruck mit haben.",
+     "c": "Schreib ein Mini-Stimmungstagebuch: drei Sätze, wie du dich heute Morgen, mittags und jetzt fühlst."
+    },
+    "es": {
+     "t": "Sentimientos y estados de ánimo",
+     "g": "Di cómo te sientes con adjetivos como glücklich, traurig, müde y con ich habe Hunger.",
+     "p": [
+      "Con sein: Ich bin glücklich, traurig, müde, nervös, froh, gestresst, entspannt.",
+      "Con haben: Ich habe Hunger, Durst, Angst, keine Lust. Sin artículo: Ich habe Hunger, no einen Hunger.",
+      "Pregunta a otros: Wie fühlst du dich? Was ist los? Bist du müde? Responde con gerade o heute."
+     ],
+     "q": "¿Wie fühlst du dich hoy y por qué? Usa un adjetivo con sein y una expresión con haben.",
+     "c": "Escribe un minidiario de ánimo: tres frases sobre cómo te sentías esta mañana, a mediodía y ahora."
+    },
+    "fr": {
+     "t": "Sentiments et humeurs",
+     "g": "Dire comment tu te sens avec des adjectifs comme glücklich, traurig, müde et avec ich habe Hunger.",
+     "p": [
+      "Avec sein : Ich bin glücklich, traurig, müde, nervös, froh, gestresst, entspannt.",
+      "Avec haben : Ich habe Hunger, Durst, Angst, keine Lust. Sans article : Ich habe Hunger, pas einen Hunger.",
+      "Demande aux autres : Wie fühlst du dich? Was ist los? Bist du müde? Réponds avec gerade ou heute."
+     ],
+     "q": "Wie fühlst du dich aujourd'hui, et pourquoi ? Utilise un adjectif avec sein et une expression avec haben.",
+     "c": "Écris un mini-journal d'humeur : trois phrases sur ton état ce matin, à midi et maintenant."
+    },
+    "it": {
+     "t": "Sentimenti e stati d'animo",
+     "g": "Dici come ti senti con aggettivi come glücklich, traurig, müde e con ich habe Hunger.",
+     "p": [
+      "Con sein: Ich bin glücklich, traurig, müde, nervös, froh, gestresst, entspannt.",
+      "Con haben: Ich habe Hunger, Durst, Angst, keine Lust. Senza articolo: Ich habe Hunger, non einen Hunger.",
+      "Chiedi agli altri: Wie fühlst du dich? Was ist los? Bist du müde? Rispondi con gerade o heute."
+     ],
+     "q": "Wie fühlst du dich oggi e perché? Usa un aggettivo con sein e un'espressione con haben.",
+     "c": "Scrivi un mini diario dell'umore: tre frasi su come stavi stamattina, a mezzogiorno e adesso."
+    },
+    "pt": {
+     "t": "Sentimentos e estados de espírito",
+     "g": "Dizer como te sentes com adjetivos como glücklich, traurig, müde e com ich habe Hunger.",
+     "p": [
+      "Com sein: Ich bin glücklich, traurig, müde, nervös, froh, gestresst, entspannt.",
+      "Com haben: Ich habe Hunger, Durst, Angst, keine Lust. Sem artigo: Ich habe Hunger, e não einen Hunger.",
+      "Pergunta aos outros: Wie fühlst du dich? Was ist los? Bist du müde? Responde com gerade ou heute."
+     ],
+     "q": "Wie fühlst du dich hoje, e porquê? Usa um adjetivo com sein e uma expressão com haben.",
+     "c": "Escreve um minidiário de humor: três frases sobre como te sentias esta manhã, ao meio-dia e agora."
+    },
+    "pt_BR": {
+     "t": "Sentimentos e humor",
+     "g": "Dizer como você se sente com adjetivos como glücklich, traurig, müde e com ich habe Hunger.",
+     "p": [
+      "Com sein: Ich bin glücklich, traurig, müde, nervös, froh, gestresst, entspannt.",
+      "Com haben: Ich habe Hunger, Durst, Angst, keine Lust. Sem artigo: Ich habe Hunger, e não einen Hunger.",
+      "Pergunte aos outros: Wie fühlst du dich? Was ist los? Bist du müde? Responda com gerade ou heute."
+     ],
+     "q": "Wie fühlst du dich hoje, e por quê? Use um adjetivo com sein e uma expressão com haben.",
+     "c": "Escreva um minidiário de humor: três frases sobre como você se sentia de manhã, ao meio-dia e agora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "glücklich",
+      "ex": "Ich bin heute sehr glücklich."
+     },
+     {
+      "w": "müde",
+      "ex": "Nach der Arbeit bin ich oft müde."
+     },
+     {
+      "w": "nervös",
+      "ex": "Vor der Prüfung bin ich nervös."
+     },
+     {
+      "w": "der Hunger",
+      "ex": "Ich habe Hunger, gehen wir essen?"
+     },
+     {
+      "w": "der Durst",
+      "ex": "Hast du Durst? Hier ist Wasser."
+     },
+     {
+      "w": "keine Lust",
+      "ex": "Ich habe heute keine Lust zu kochen."
+     }
+    ],
+    "gram": "Ich bin + Adjektiv: Ich bin müde, froh, nervös. Ich habe + Nomen ohne Artikel: Ich habe Hunger, Durst, Angst."
+   }
+  },
+  {
+   "d": 82,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Es gibt: there is",
+     "g": "Say what exists in a place with es gibt, which always takes the accusative.",
+     "p": [
+      "Es gibt + accusative: Es gibt einen Park, eine Bäckerei, ein Kino. Masculine changes to einen.",
+      "Negative with kein: Es gibt keinen Supermarkt hier. Plural: Es gibt viele Cafés.",
+      "Ask: Gibt es hier eine Apotheke? Was gibt es heute zum Essen? Es gibt never changes: always gibt."
+     ],
+     "q": "What is there in your street or neighbourhood? Name three things with es gibt and one with es gibt kein.",
+     "c": "Write five sentences about your town with es gibt: two masculine nouns, one feminine, one neuter, one plural."
+    },
+    "de": {
+     "t": "Es gibt",
+     "g": "Du sagst mit es gibt, was es an einem Ort gibt. Es gibt hat immer den Akkusativ.",
+     "p": [
+      "Es gibt + Akkusativ: Es gibt einen Park, eine Bäckerei, ein Kino. Das Maskulinum wird zu einen.",
+      "Verneint mit kein: Es gibt keinen Supermarkt hier. Plural: Es gibt viele Cafés.",
+      "Frag: Gibt es hier eine Apotheke? Was gibt es heute zum Essen? Es gibt bleibt immer gleich: gibt."
+     ],
+     "q": "Was gibt es in deiner Straße oder deinem Viertel? Nenn drei Dinge mit es gibt und eins mit es gibt kein.",
+     "c": "Schreib fünf Sätze über deine Stadt mit es gibt: zwei maskuline Nomen, ein feminines, ein neutrales, ein Plural."
+    },
+    "es": {
+     "t": "Es gibt: hay",
+     "g": "Di qué hay en un lugar con es gibt, que siempre lleva acusativo.",
+     "p": [
+      "Es gibt + acusativo: Es gibt einen Park, eine Bäckerei, ein Kino. El masculino pasa a einen.",
+      "En negativo con kein: Es gibt keinen Supermarkt hier. Plural: Es gibt viele Cafés.",
+      "Pregunta: Gibt es hier eine Apotheke? Was gibt es heute zum Essen? Es gibt no cambia nunca: siempre gibt."
+     ],
+     "q": "¿Qué hay en tu calle o en tu barrio? Nombra tres cosas con es gibt y una con es gibt kein.",
+     "c": "Escribe cinco frases sobre tu ciudad con es gibt: dos masculinos, un femenino, un neutro y un plural."
+    },
+    "fr": {
+     "t": "Es gibt : il y a",
+     "g": "Dire ce qu'il y a dans un lieu avec es gibt, toujours suivi de l'accusatif.",
+     "p": [
+      "Es gibt + accusatif : Es gibt einen Park, eine Bäckerei, ein Kino. Le masculin devient einen.",
+      "Négation avec kein : Es gibt keinen Supermarkt hier. Pluriel : Es gibt viele Cafés.",
+      "Demande : Gibt es hier eine Apotheke? Was gibt es heute zum Essen? Es gibt ne change jamais : toujours gibt."
+     ],
+     "q": "Qu'y a-t-il dans ta rue ou ton quartier ? Cite trois choses avec es gibt et une avec es gibt kein.",
+     "c": "Écris cinq phrases sur ta ville avec es gibt : deux masculins, un féminin, un neutre et un pluriel."
+    },
+    "it": {
+     "t": "Es gibt: c'è, ci sono",
+     "g": "Dici che cosa c'è in un luogo con es gibt, che vuole sempre l'accusativo.",
+     "p": [
+      "Es gibt + accusativo: Es gibt einen Park, eine Bäckerei, ein Kino. Il maschile diventa einen.",
+      "Al negativo con kein: Es gibt keinen Supermarkt hier. Plurale: Es gibt viele Cafés.",
+      "Chiedi: Gibt es hier eine Apotheke? Was gibt es heute zum Essen? Es gibt non cambia mai: sempre gibt."
+     ],
+     "q": "Che cosa c'è nella tua via o nel tuo quartiere? Nomina tre cose con es gibt e una con es gibt kein.",
+     "c": "Scrivi cinque frasi sulla tua città con es gibt: due maschili, un femminile, un neutro e un plurale."
+    },
+    "pt": {
+     "t": "Es gibt: há",
+     "g": "Dizer o que há num lugar com es gibt, que pede sempre acusativo.",
+     "p": [
+      "Es gibt + acusativo: Es gibt einen Park, eine Bäckerei, ein Kino. O masculino passa a einen.",
+      "Na negativa com kein: Es gibt keinen Supermarkt hier. Plural: Es gibt viele Cafés.",
+      "Pergunta: Gibt es hier eine Apotheke? Was gibt es heute zum Essen? Es gibt nunca muda: é sempre gibt."
+     ],
+     "q": "O que há na tua rua ou no teu bairro? Diz três coisas com es gibt e uma com es gibt kein.",
+     "c": "Escreve cinco frases sobre a tua cidade com es gibt: dois masculinos, um feminino, um neutro e um plural."
+    },
+    "pt_BR": {
+     "t": "Es gibt: tem, há",
+     "g": "Dizer o que tem num lugar com es gibt, que sempre pede acusativo.",
+     "p": [
+      "Es gibt + acusativo: Es gibt einen Park, eine Bäckerei, ein Kino. O masculino vira einen.",
+      "Na negativa com kein: Es gibt keinen Supermarkt hier. Plural: Es gibt viele Cafés.",
+      "Pergunte: Gibt es hier eine Apotheke? Was gibt es heute zum Essen? Es gibt nunca muda: é sempre gibt."
+     ],
+     "q": "O que tem na sua rua ou no seu bairro? Diga três coisas com es gibt e uma com es gibt kein.",
+     "c": "Escreva cinco frases sobre sua cidade com es gibt: dois masculinos, um feminino, um neutro e um plural."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "es gibt",
+      "ex": "In meiner Straße gibt es einen Bäcker."
+     },
+     {
+      "w": "Gibt es ...?",
+      "ex": "Gibt es hier in der Nähe eine Bank?"
+     },
+     {
+      "w": "es gibt keinen",
+      "ex": "Hier gibt es keinen Bahnhof."
+     },
+     {
+      "w": "der Spielplatz",
+      "ex": "Im Park gibt es einen Spielplatz."
+     },
+     {
+      "w": "viele",
+      "ex": "In der Altstadt gibt es viele Cafés."
+     },
+     {
+      "w": "zum Essen",
+      "ex": "Was gibt es heute zum Essen?"
+     }
+    ],
+    "gram": "Es gibt + Akkusativ: Es gibt einen Park / eine Post / ein Kino / viele Läden. Verneint: Es gibt keinen Park."
+   }
+  },
+  {
+   "d": 83,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Small talk",
+     "g": "Keep a friendly chat going with easy topics: the weather, the weekend and plans.",
+     "p": [
+      "Weather openers: Schönes Wetter heute, oder? Es ist ganz schön kalt! The little word oder? invites agreement.",
+      "Weekend and plans: Was machst du am Wochenende? Hast du schon Pläne? Und du?",
+      "Show interest: Echt? Wie schön! Das klingt gut! Ask a follow-up question to keep talking."
+     ],
+     "q": "Let's do small talk: what are you doing this weekend, and how is the weather where you are?",
+     "c": "Start a mini small talk with someone today, or write a five-line chat using oder?, Und du? and Das klingt gut!"
+    },
+    "de": {
+     "t": "Smalltalk",
+     "g": "Du hältst ein freundliches Gespräch mit einfachen Themen am Laufen: Wetter, Wochenende, Pläne.",
+     "p": [
+      "Wetter zum Einstieg: Schönes Wetter heute, oder? Es ist ganz schön kalt! Das kleine oder? lädt zur Zustimmung ein.",
+      "Wochenende und Pläne: Was machst du am Wochenende? Hast du schon Pläne? Und du?",
+      "Zeig Interesse: Echt? Wie schön! Das klingt gut! Stell eine Rückfrage, dann geht das Gespräch weiter."
+     ],
+     "q": "Machen wir Smalltalk: Was machst du am Wochenende, und wie ist das Wetter bei dir?",
+     "c": "Mach heute mit jemandem kurz Smalltalk oder schreib einen Chat mit fünf Zeilen mit oder?, Und du? und Das klingt gut!"
+    },
+    "es": {
+     "t": "Charla informal",
+     "g": "Mantén una charla amable con temas fáciles: el tiempo, el fin de semana y los planes.",
+     "p": [
+      "Para empezar con el tiempo: Schönes Wetter heute, oder? Es ist ganz schön kalt! La palabrita oder? busca que el otro asienta.",
+      "Fin de semana y planes: Was machst du am Wochenende? Hast du schon Pläne? Und du?",
+      "Muestra interés: Echt? Wie schön! Das klingt gut! Haz otra pregunta para seguir hablando."
+     ],
+     "q": "Hagamos small talk: ¿qué haces este fin de semana y qué tiempo hace donde estás?",
+     "c": "Charla hoy un momento con alguien, o escribe un chat de cinco líneas con oder?, Und du? y Das klingt gut!"
+    },
+    "fr": {
+     "t": "Small talk",
+     "g": "Entretenir une conversation amicale avec des sujets faciles : la météo, le week-end et les projets.",
+     "p": [
+      "Pour lancer avec la météo : Schönes Wetter heute, oder? Es ist ganz schön kalt! Le petit oder? invite l'autre à approuver.",
+      "Week-end et projets : Was machst du am Wochenende? Hast du schon Pläne? Und du?",
+      "Montre ton intérêt : Echt? Wie schön! Das klingt gut! Pose une autre question pour continuer."
+     ],
+     "q": "Faisons du small talk : que fais-tu ce week-end, et quel temps fait-il chez toi ?",
+     "c": "Fais un petit small talk avec quelqu'un aujourd'hui, ou écris un chat de cinq lignes avec oder?, Und du? et Das klingt gut!"
+    },
+    "it": {
+     "t": "Due chiacchiere",
+     "g": "Mandi avanti una conversazione cordiale con temi facili: il tempo, il fine settimana e i progetti.",
+     "p": [
+      "Per iniziare col tempo: Schönes Wetter heute, oder? Es ist ganz schön kalt! Il piccolo oder? invita l'altro ad annuire.",
+      "Fine settimana e progetti: Was machst du am Wochenende? Hast du schon Pläne? Und du?",
+      "Mostra interesse: Echt? Wie schön! Das klingt gut! Fai un'altra domanda per continuare."
+     ],
+     "q": "Facciamo due chiacchiere: che cosa fai questo fine settimana e che tempo fa da te?",
+     "c": "Fai due chiacchiere con qualcuno oggi, o scrivi una chat di cinque righe con oder?, Und du? e Das klingt gut!"
+    },
+    "pt": {
+     "t": "Conversa de circunstância",
+     "g": "Manter uma conversa simpática com temas fáceis: o tempo, o fim de semana e os planos.",
+     "p": [
+      "Para começar com o tempo: Schönes Wetter heute, oder? Es ist ganz schön kalt! O pequeno oder? convida o outro a concordar.",
+      "Fim de semana e planos: Was machst du am Wochenende? Hast du schon Pläne? Und du?",
+      "Mostra interesse: Echt? Wie schön! Das klingt gut! Faz outra pergunta para continuar."
+     ],
+     "q": "Vamos conversar: o que fazes este fim de semana e como está o tempo aí?",
+     "c": "Conversa hoje um pouco com alguém, ou escreve um chat de cinco linhas com oder?, Und du? e Das klingt gut!"
+    },
+    "pt_BR": {
+     "t": "Papo leve",
+     "g": "Manter um papo simpático com temas fáceis: o tempo, o fim de semana e os planos.",
+     "p": [
+      "Para puxar papo com o tempo: Schönes Wetter heute, oder? Es ist ganz schön kalt! O oder? convida o outro a concordar.",
+      "Fim de semana e planos: Was machst du am Wochenende? Hast du schon Pläne? Und du?",
+      "Mostre interesse: Echt? Wie schön! Das klingt gut! Faça outra pergunta para continuar."
+     ],
+     "q": "Vamos bater papo: o que você vai fazer neste fim de semana e como está o tempo aí?",
+     "c": "Bata um papinho com alguém hoje, ou escreva um chat de cinco linhas com oder?, Und du? e Das klingt gut!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "oder?",
+      "ex": "Schönes Wetter heute, oder?"
+     },
+     {
+      "w": "das Wochenende",
+      "ex": "Was machst du am Wochenende?"
+     },
+     {
+      "w": "die Pläne",
+      "ex": "Hast du schon Pläne für Samstag?"
+     },
+     {
+      "w": "Und du?",
+      "ex": "Mir geht es gut. Und du?"
+     },
+     {
+      "w": "Echt?",
+      "ex": "Echt? Du warst in Wien? Wie schön!"
+     },
+     {
+      "w": "Das klingt gut!",
+      "ex": "Wir grillen am Sonntag. Das klingt gut!"
+     }
+    ],
+    "gram": "Smalltalk: Aussage + oder? (Schön heute, oder?). Rückfragen: Und du? Und Sie? Reaktion: Das klingt gut! Wie schön!"
+   }
+  },
+  {
+   "d": 84,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Very common expressions",
+     "g": "Use the little everyday words that make German sound natural: alles klar, genau, kein Problem.",
+     "p": [
+      "Agreeing: Alles klar (OK, understood), genau (exactly), super, gerne (with pleasure), kein Problem.",
+      "Hesitating and regret: Na ja (well...), mal sehen (we will see), schade (what a pity), egal (it does not matter).",
+      "Use them as short reactions in chat: Wir treffen uns um acht. - Alles klar, bis dann!"
+     ],
+     "q": "Which of today's expressions sounds most fun to you, and in which situation would you use it?",
+     "c": "Reply to five imaginary messages using five different expressions from today, for example schade or kein Problem."
+    },
+    "de": {
+     "t": "Sehr häufige Ausdrücke",
+     "g": "Du benutzt die kleinen Alltagswörter, die natürlich klingen: alles klar, genau, kein Problem.",
+     "p": [
+      "Zustimmen: Alles klar, genau, super, gerne, kein Problem.",
+      "Zögern und Bedauern: Na ja, mal sehen, schade, egal.",
+      "Als kurze Reaktion im Chat: Wir treffen uns um acht. - Alles klar, bis dann!"
+     ],
+     "q": "Welcher Ausdruck von heute gefällt dir am besten, und in welcher Situation würdest du ihn benutzen?",
+     "c": "Antworte auf fünf ausgedachte Nachrichten mit fünf verschiedenen Ausdrücken von heute, zum Beispiel schade oder kein Problem."
+    },
+    "es": {
+     "t": "Expresiones muy comunes",
+     "g": "Usa las palabritas cotidianas que hacen que el alemán suene natural: alles klar, genau, kein Problem.",
+     "p": [
+      "Para asentir: Alles klar (vale, entendido), genau (exacto), super, gerne (con gusto), kein Problem.",
+      "Duda y pena: Na ja (bueno...), mal sehen (ya veremos), schade (qué pena), egal (da igual).",
+      "Úsalas como reacciones cortas en el chat: Wir treffen uns um acht. - Alles klar, bis dann!"
+     ],
+     "q": "¿Qué expresión de hoy te parece más divertida y en qué situación la usarías?",
+     "c": "Responde a cinco mensajes imaginarios con cinco expresiones distintas de hoy, por ejemplo schade o kein Problem."
+    },
+    "fr": {
+     "t": "Expressions très courantes",
+     "g": "Utiliser les petits mots du quotidien qui rendent l'allemand naturel : alles klar, genau, kein Problem.",
+     "p": [
+      "Pour approuver : Alles klar (d'accord, compris), genau (exactement), super, gerne (avec plaisir), kein Problem.",
+      "Hésiter et regretter : Na ja (bof...), mal sehen (on verra), schade (dommage), egal (peu importe).",
+      "Utilise-les comme réactions courtes : Wir treffen uns um acht. - Alles klar, bis dann!"
+     ],
+     "q": "Quelle expression d'aujourd'hui te plaît le plus, et dans quelle situation l'utiliserais-tu ?",
+     "c": "Réponds à cinq messages imaginaires avec cinq expressions différentes du jour, par exemple schade ou kein Problem."
+    },
+    "it": {
+     "t": "Espressioni comunissime",
+     "g": "Usi le paroline quotidiane che fanno suonare naturale il tedesco: alles klar, genau, kein Problem.",
+     "p": [
+      "Per essere d'accordo: Alles klar (ok, capito), genau (esatto), super, gerne (volentieri), kein Problem.",
+      "Esitare e dispiacersi: Na ja (mah...), mal sehen (vedremo), schade (peccato), egal (non importa).",
+      "Usale come brevi reazioni in chat: Wir treffen uns um acht. - Alles klar, bis dann!"
+     ],
+     "q": "Quale espressione di oggi ti piace di più e in quale situazione la useresti?",
+     "c": "Rispondi a cinque messaggi immaginari con cinque espressioni diverse di oggi, per esempio schade o kein Problem."
+    },
+    "pt": {
+     "t": "Expressões muito comuns",
+     "g": "Usar as palavrinhas do dia a dia que tornam o alemão natural: alles klar, genau, kein Problem.",
+     "p": [
+      "Para concordar: Alles klar (está bem, percebido), genau (exatamente), super, gerne (com gosto), kein Problem.",
+      "Hesitar e lamentar: Na ja (enfim...), mal sehen (logo se vê), schade (que pena), egal (tanto faz).",
+      "Usa-as como reações curtas no chat: Wir treffen uns um acht. - Alles klar, bis dann!"
+     ],
+     "q": "Que expressão de hoje achas mais engraçada e em que situação a usarias?",
+     "c": "Responde a cinco mensagens imaginárias com cinco expressões diferentes de hoje, por exemplo schade ou kein Problem."
+    },
+    "pt_BR": {
+     "t": "Expressões muito comuns",
+     "g": "Usar as palavrinhas do dia a dia que deixam o alemão natural: alles klar, genau, kein Problem.",
+     "p": [
+      "Para concordar: Alles klar (beleza, entendi), genau (exatamente), super, gerne (com prazer), kein Problem.",
+      "Hesitar e lamentar: Na ja (bom...), mal sehen (vamos ver), schade (que pena), egal (tanto faz).",
+      "Use como reações curtas no chat: Wir treffen uns um acht. - Alles klar, bis dann!"
+     ],
+     "q": "Qual expressão de hoje você achou mais legal e em que situação você usaria?",
+     "c": "Responda a cinco mensagens imaginárias com cinco expressões diferentes de hoje, por exemplo schade ou kein Problem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Alles klar!",
+      "ex": "Um acht am Bahnhof? Alles klar!"
+     },
+     {
+      "w": "genau",
+      "ex": "Du kommst aus Italien? - Genau!"
+     },
+     {
+      "w": "kein Problem",
+      "ex": "Danke für die Hilfe! - Kein Problem."
+     },
+     {
+      "w": "na ja",
+      "ex": "Wie war der Film? - Na ja, es geht."
+     },
+     {
+      "w": "schade",
+      "ex": "Du kannst nicht kommen? Schade!"
+     },
+     {
+      "w": "mal sehen",
+      "ex": "Gehst du morgen schwimmen? - Mal sehen."
+     }
+    ],
+    "gram": "Kurze Reaktionen: Alles klar. Genau. Gerne. Kein Problem. Na ja. Mal sehen. Schade. Egal. Sie stehen oft allein."
+   }
+  },
+  {
+   "d": 85,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Linking words: und, aber, oder, denn",
+     "g": "Connect two sentences with und, aber, oder and denn without changing the word order.",
+     "p": [
+      "These four words sit in position 0: the next sentence keeps its normal order, verb in second place.",
+      "Und adds, aber contrasts, oder offers a choice: Ich lerne Deutsch, aber ich spreche noch langsam.",
+      "Denn gives a reason: Ich bleibe zu Hause, denn ich bin müde. Put a comma before aber and denn."
+     ],
+     "q": "Why are you learning German? Answer with denn, then add something with aber.",
+     "c": "Write four sentences about your week, one each with und, aber, oder and denn."
+    },
+    "de": {
+     "t": "Konnektoren: und, aber, oder, denn",
+     "g": "Du verbindest zwei Sätze mit und, aber, oder und denn, ohne die Wortstellung zu ändern.",
+     "p": [
+      "Diese vier Wörter stehen auf Position 0: Der zweite Satz behält die normale Stellung, das Verb auf Platz zwei.",
+      "Und ergänzt, aber zeigt einen Gegensatz, oder eine Wahl: Ich lerne Deutsch, aber ich spreche noch langsam.",
+      "Denn nennt einen Grund: Ich bleibe zu Hause, denn ich bin müde. Vor aber und denn steht ein Komma."
+     ],
+     "q": "Warum lernst du Deutsch? Antworte mit denn und ergänze dann etwas mit aber.",
+     "c": "Schreib vier Sätze über deine Woche, je einen mit und, aber, oder und denn."
+    },
+    "es": {
+     "t": "Conectores: und, aber, oder, denn",
+     "g": "Une dos oraciones con und, aber, oder y denn sin cambiar el orden de las palabras.",
+     "p": [
+      "Estas cuatro palabras ocupan la posición 0: la segunda oración mantiene su orden normal, el verbo en segundo lugar.",
+      "Und suma, aber contrasta, oder da a elegir: Ich lerne Deutsch, aber ich spreche noch langsam.",
+      "Denn da una razón: Ich bleibe zu Hause, denn ich bin müde. Va coma antes de aber y denn."
+     ],
+     "q": "¿Por qué aprendes alemán? Responde con denn y luego añade algo con aber.",
+     "c": "Escribe cuatro frases sobre tu semana, una con und, una con aber, una con oder y una con denn."
+    },
+    "fr": {
+     "t": "Connecteurs : und, aber, oder, denn",
+     "g": "Relier deux phrases avec und, aber, oder et denn sans changer l'ordre des mots.",
+     "p": [
+      "Ces quatre mots sont en position 0 : la phrase suivante garde son ordre normal, verbe en deuxième place.",
+      "Und ajoute, aber oppose, oder propose un choix : Ich lerne Deutsch, aber ich spreche noch langsam.",
+      "Denn donne une raison : Ich bleibe zu Hause, denn ich bin müde. Mets une virgule avant aber et denn."
+     ],
+     "q": "Pourquoi apprends-tu l'allemand ? Réponds avec denn, puis ajoute quelque chose avec aber.",
+     "c": "Écris quatre phrases sur ta semaine, une avec und, une avec aber, une avec oder et une avec denn."
+    },
+    "it": {
+     "t": "Connettivi: und, aber, oder, denn",
+     "g": "Colleghi due frasi con und, aber, oder e denn senza cambiare l'ordine delle parole.",
+     "p": [
+      "Queste quattro parole stanno in posizione 0: la frase seguente resta normale, con il verbo al secondo posto.",
+      "Und aggiunge, aber contrappone, oder offre una scelta: Ich lerne Deutsch, aber ich spreche noch langsam.",
+      "Denn dà un motivo: Ich bleibe zu Hause, denn ich bin müde. Prima di aber e denn ci vuole la virgola."
+     ],
+     "q": "Perché impari il tedesco? Rispondi con denn e poi aggiungi qualcosa con aber.",
+     "c": "Scrivi quattro frasi sulla tua settimana, una con und, una con aber, una con oder e una con denn."
+    },
+    "pt": {
+     "t": "Conectores: und, aber, oder, denn",
+     "g": "Ligar duas frases com und, aber, oder e denn sem mudar a ordem das palavras.",
+     "p": [
+      "Estas quatro palavras ficam na posição 0: a frase seguinte mantém a ordem normal, com o verbo em segundo lugar.",
+      "Und junta, aber contrasta, oder dá uma escolha: Ich lerne Deutsch, aber ich spreche noch langsam.",
+      "Denn dá uma razão: Ich bleibe zu Hause, denn ich bin müde. Antes de aber e denn põe-se vírgula."
+     ],
+     "q": "Porque estás a aprender alemão? Responde com denn e depois acrescenta algo com aber.",
+     "c": "Escreve quatro frases sobre a tua semana, uma com und, uma com aber, uma com oder e uma com denn."
+    },
+    "pt_BR": {
+     "t": "Conectores: und, aber, oder, denn",
+     "g": "Ligar duas frases com und, aber, oder e denn sem mudar a ordem das palavras.",
+     "p": [
+      "Essas quatro palavras ficam na posição 0: a frase seguinte mantém a ordem normal, com o verbo em segundo lugar.",
+      "Und soma, aber contrasta, oder dá uma escolha: Ich lerne Deutsch, aber ich spreche noch langsam.",
+      "Denn dá um motivo: Ich bleibe zu Hause, denn ich bin müde. Antes de aber e denn vai vírgula."
+     ],
+     "q": "Por que você está aprendendo alemão? Responda com denn e depois acrescente algo com aber.",
+     "c": "Escreva quatro frases sobre sua semana, uma com und, uma com aber, uma com oder e uma com denn."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "und",
+      "ex": "Ich koche und mein Mann deckt den Tisch."
+     },
+     {
+      "w": "aber",
+      "ex": "Das Hotel ist klein, aber es ist sehr schön."
+     },
+     {
+      "w": "oder",
+      "ex": "Trinkst du Tee oder möchtest du Kaffee?"
+     },
+     {
+      "w": "denn",
+      "ex": "Ich lerne Deutsch, denn ich arbeite in Wien."
+     },
+     {
+      "w": "leider",
+      "ex": "Ich möchte kommen, aber ich habe leider keine Zeit."
+     },
+     {
+      "w": "trotzdem",
+      "ex": "Es regnet, aber wir gehen trotzdem spazieren."
+     }
+    ],
+    "gram": "Und, aber, oder, denn: Position 0, danach normale Wortstellung. Ich bleibe hier, denn ich bin krank."
+   }
+  },
+  {
+   "d": 86,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing your town",
+     "g": "Describe your town or city with Meine Stadt ist..., es gibt... and man kann...",
+     "p": [
+      "Start with adjectives: Meine Stadt ist klein, ruhig und grün, or groß, laut und modern.",
+      "Add what exists with es gibt + accusative: Es gibt einen Fluss, eine alte Kirche, viele Cafés.",
+      "Say what people can do with man kann + infinitive at the end: Man kann gut einkaufen und spazieren gehen."
+     ],
+     "q": "Tell me about your town: what is it like, what is there and what can you do there?",
+     "c": "Write a short tourist text about your town with one sentence each for ist, es gibt and man kann."
+    },
+    "de": {
+     "t": "Deine Stadt beschreiben",
+     "g": "Du beschreibst deine Stadt mit Meine Stadt ist..., es gibt... und man kann...",
+     "p": [
+      "Beginn mit Adjektiven: Meine Stadt ist klein, ruhig und grün oder groß, laut und modern.",
+      "Ergänze mit es gibt + Akkusativ: Es gibt einen Fluss, eine alte Kirche, viele Cafés.",
+      "Sag mit man kann + Infinitiv am Ende, was man dort machen kann: Man kann gut einkaufen und spazieren gehen."
+     ],
+     "q": "Erzähl mir von deiner Stadt: Wie ist sie, was gibt es dort, und was kann man machen?",
+     "c": "Schreib einen kurzen Tourismustext über deine Stadt mit je einem Satz mit ist, es gibt und man kann."
+    },
+    "es": {
+     "t": "Describir tu ciudad",
+     "g": "Describe tu ciudad o pueblo con Meine Stadt ist..., es gibt... y man kann...",
+     "p": [
+      "Empieza con adjetivos: Meine Stadt ist klein, ruhig und grün, o groß, laut und modern.",
+      "Añade lo que hay con es gibt + acusativo: Es gibt einen Fluss, eine alte Kirche, viele Cafés.",
+      "Di qué se puede hacer con man kann + infinitivo al final: Man kann gut einkaufen und spazieren gehen."
+     ],
+     "q": "Háblame de tu ciudad: ¿cómo es, qué hay y qué se puede hacer allí?",
+     "c": "Escribe un breve texto turístico sobre tu ciudad con una frase con ist, otra con es gibt y otra con man kann."
+    },
+    "fr": {
+     "t": "Décrire ta ville",
+     "g": "Décrire ta ville avec Meine Stadt ist..., es gibt... et man kann...",
+     "p": [
+      "Commence par des adjectifs : Meine Stadt ist klein, ruhig und grün, ou groß, laut und modern.",
+      "Ajoute ce qu'il y a avec es gibt + accusatif : Es gibt einen Fluss, eine alte Kirche, viele Cafés.",
+      "Dis ce qu'on peut faire avec man kann + infinitif à la fin : Man kann gut einkaufen und spazieren gehen."
+     ],
+     "q": "Parle-moi de ta ville : comment est-elle, qu'y a-t-il et que peut-on y faire ?",
+     "c": "Écris un petit texte touristique sur ta ville avec une phrase avec ist, une avec es gibt et une avec man kann."
+    },
+    "it": {
+     "t": "Descrivere la tua città",
+     "g": "Descrivi la tua città con Meine Stadt ist..., es gibt... e man kann...",
+     "p": [
+      "Comincia con gli aggettivi: Meine Stadt ist klein, ruhig und grün, oppure groß, laut und modern.",
+      "Aggiungi che cosa c'è con es gibt + accusativo: Es gibt einen Fluss, eine alte Kirche, viele Cafés.",
+      "Di' che cosa si può fare con man kann + infinito alla fine: Man kann gut einkaufen und spazieren gehen."
+     ],
+     "q": "Parlami della tua città: com'è, che cosa c'è e che cosa si può fare?",
+     "c": "Scrivi un breve testo turistico sulla tua città con una frase con ist, una con es gibt e una con man kann."
+    },
+    "pt": {
+     "t": "Descrever a tua cidade",
+     "g": "Descrever a tua cidade com Meine Stadt ist..., es gibt... e man kann...",
+     "p": [
+      "Começa com adjetivos: Meine Stadt ist klein, ruhig und grün, ou groß, laut und modern.",
+      "Acrescenta o que há com es gibt + acusativo: Es gibt einen Fluss, eine alte Kirche, viele Cafés.",
+      "Diz o que se pode fazer com man kann + infinitivo no fim: Man kann gut einkaufen und spazieren gehen."
+     ],
+     "q": "Fala-me da tua cidade: como é, o que há e o que se pode fazer lá?",
+     "c": "Escreve um pequeno texto turístico sobre a tua cidade com uma frase com ist, outra com es gibt e outra com man kann."
+    },
+    "pt_BR": {
+     "t": "Descrever sua cidade",
+     "g": "Descrever sua cidade com Meine Stadt ist..., es gibt... e man kann...",
+     "p": [
+      "Comece com adjetivos: Meine Stadt ist klein, ruhig und grün, ou groß, laut und modern.",
+      "Acrescente o que tem com es gibt + acusativo: Es gibt einen Fluss, eine alte Kirche, viele Cafés.",
+      "Diga o que dá para fazer com man kann + infinitivo no fim: Man kann gut einkaufen und spazieren gehen."
+     ],
+     "q": "Me fale da sua cidade: como ela é, o que tem e o que dá para fazer lá?",
+     "c": "Escreva um pequeno texto turístico sobre sua cidade com uma frase com ist, uma com es gibt e uma com man kann."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ruhig",
+      "ex": "Mein Dorf ist klein und ruhig."
+     },
+     {
+      "w": "die Altstadt",
+      "ex": "Die Altstadt ist sehr schön."
+     },
+     {
+      "w": "der Fluss",
+      "ex": "Durch die Stadt fließt ein Fluss."
+     },
+     {
+      "w": "man kann",
+      "ex": "Hier kann man gut Fahrrad fahren."
+     },
+     {
+      "w": "die Sehenswürdigkeit",
+      "ex": "Die Burg ist die wichtigste Sehenswürdigkeit."
+     },
+     {
+      "w": "die Einwohner",
+      "ex": "Die Stadt hat fünfzigtausend Einwohner."
+     }
+    ],
+    "gram": "Meine Stadt ist + Adjektiv. Es gibt + Akkusativ. Man kann + Infinitiv am Ende: Man kann dort gut essen."
+   }
+  },
+  {
+   "d": 87,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Booking a hotel room",
+     "g": "Book a hotel room in German: room type, number of nights and what is included.",
+     "p": [
+      "Ask: Haben Sie ein Zimmer frei? Ich möchte ein Doppelzimmer für zwei Nächte, vom 3. bis 5. Mai.",
+      "Room words: das Einzelzimmer, das Doppelzimmer, mit Dusche, mit Balkon, die Nacht, plural die Nächte.",
+      "Questions: Ist das Frühstück inklusive? Wann ist der Check-out? Gibt es WLAN? Was kostet das Zimmer?"
+     ],
+     "q": "You arrive at a small hotel: what do you say to book a room, and what do you want to know?",
+     "c": "Write a short booking email: greeting, room type, dates, one question about breakfast and Mit freundlichen Grüßen."
+    },
+    "de": {
+     "t": "Ein Hotelzimmer buchen",
+     "g": "Du buchst ein Hotelzimmer: Zimmerart, Anzahl der Nächte und was inklusive ist.",
+     "p": [
+      "Frag: Haben Sie ein Zimmer frei? Ich möchte ein Doppelzimmer für zwei Nächte, vom 3. bis 5. Mai.",
+      "Wörter: das Einzelzimmer, das Doppelzimmer, mit Dusche, mit Balkon, die Nacht, Plural die Nächte.",
+      "Fragen: Ist das Frühstück inklusive? Wann ist der Check-out? Gibt es WLAN? Was kostet das Zimmer?"
+     ],
+     "q": "Du kommst in ein kleines Hotel: Was sagst du, um ein Zimmer zu buchen, und was möchtest du wissen?",
+     "c": "Schreib eine kurze Buchungsmail: Anrede, Zimmerart, Daten, eine Frage zum Frühstück und Mit freundlichen Grüßen."
+    },
+    "es": {
+     "t": "Reservar una habitación de hotel",
+     "g": "Reserva una habitación en alemán: tipo de habitación, número de noches y qué está incluido.",
+     "p": [
+      "Pregunta: Haben Sie ein Zimmer frei? Ich möchte ein Doppelzimmer für zwei Nächte, vom 3. bis 5. Mai.",
+      "Palabras: das Einzelzimmer, das Doppelzimmer, mit Dusche, mit Balkon, die Nacht, plural die Nächte.",
+      "Preguntas: Ist das Frühstück inklusive? Wann ist der Check-out? Gibt es WLAN? Was kostet das Zimmer?"
+     ],
+     "q": "Llegas a un hotel pequeño: ¿qué dices para reservar una habitación y qué quieres saber?",
+     "c": "Escribe un correo de reserva corto: saludo, tipo de habitación, fechas, una pregunta sobre el desayuno y Mit freundlichen Grüßen."
+    },
+    "fr": {
+     "t": "Réserver une chambre d'hôtel",
+     "g": "Réserver une chambre en allemand : type de chambre, nombre de nuits et ce qui est compris.",
+     "p": [
+      "Demande : Haben Sie ein Zimmer frei? Ich möchte ein Doppelzimmer für zwei Nächte, vom 3. bis 5. Mai.",
+      "Vocabulaire : das Einzelzimmer, das Doppelzimmer, mit Dusche, mit Balkon, die Nacht, pluriel die Nächte.",
+      "Questions : Ist das Frühstück inklusive? Wann ist der Check-out? Gibt es WLAN? Was kostet das Zimmer?"
+     ],
+     "q": "Tu arrives dans un petit hôtel : que dis-tu pour réserver une chambre, et que veux-tu savoir ?",
+     "c": "Écris un court e-mail de réservation : formule d'appel, chambre, dates, une question sur le petit-déjeuner et Mit freundlichen Grüßen."
+    },
+    "it": {
+     "t": "Prenotare una camera d'albergo",
+     "g": "Prenoti una camera in tedesco: tipo di camera, numero di notti e che cosa è incluso.",
+     "p": [
+      "Chiedi: Haben Sie ein Zimmer frei? Ich möchte ein Doppelzimmer für zwei Nächte, vom 3. bis 5. Mai.",
+      "Parole: das Einzelzimmer, das Doppelzimmer, mit Dusche, mit Balkon, die Nacht, plurale die Nächte.",
+      "Domande: Ist das Frühstück inklusive? Wann ist der Check-out? Gibt es WLAN? Was kostet das Zimmer?"
+     ],
+     "q": "Arrivi in un piccolo albergo: che cosa dici per prenotare una camera e che cosa vuoi sapere?",
+     "c": "Scrivi una breve e-mail di prenotazione: saluto, camera, date, una domanda sulla colazione e Mit freundlichen Grüßen."
+    },
+    "pt": {
+     "t": "Reservar um quarto de hotel",
+     "g": "Reservar um quarto em alemão: tipo de quarto, número de noites e o que está incluído.",
+     "p": [
+      "Pergunta: Haben Sie ein Zimmer frei? Ich möchte ein Doppelzimmer für zwei Nächte, vom 3. bis 5. Mai.",
+      "Palavras: das Einzelzimmer, das Doppelzimmer, mit Dusche, mit Balkon, die Nacht, plural die Nächte.",
+      "Perguntas: Ist das Frühstück inklusive? Wann ist der Check-out? Gibt es WLAN? Was kostet das Zimmer?"
+     ],
+     "q": "Chegas a um pequeno hotel: o que dizes para reservar um quarto e o que queres saber?",
+     "c": "Escreve um e-mail de reserva curto: saudação, tipo de quarto, datas, uma pergunta sobre o pequeno-almoço e Mit freundlichen Grüßen."
+    },
+    "pt_BR": {
+     "t": "Reservar um quarto de hotel",
+     "g": "Reservar um quarto em alemão: tipo de quarto, número de noites e o que está incluído.",
+     "p": [
+      "Pergunte: Haben Sie ein Zimmer frei? Ich möchte ein Doppelzimmer für zwei Nächte, vom 3. bis 5. Mai.",
+      "Palavras: das Einzelzimmer, das Doppelzimmer, mit Dusche, mit Balkon, die Nacht, plural die Nächte.",
+      "Perguntas: Ist das Frühstück inklusive? Wann ist der Check-out? Gibt es WLAN? Was kostet das Zimmer?"
+     ],
+     "q": "Você chega a um hotel pequeno: o que diz para reservar um quarto e o que quer saber?",
+     "c": "Escreva um e-mail curto de reserva: saudação, tipo de quarto, datas, uma pergunta sobre o café da manhã e Mit freundlichen Grüßen."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Doppelzimmer",
+      "ex": "Ich möchte ein Doppelzimmer mit Balkon."
+     },
+     {
+      "w": "das Einzelzimmer",
+      "ex": "Haben Sie noch ein Einzelzimmer frei?"
+     },
+     {
+      "w": "die Nacht",
+      "ex": "Wir bleiben drei Nächte."
+     },
+     {
+      "w": "inklusive",
+      "ex": "Ist das Frühstück inklusive?"
+     },
+     {
+      "w": "buchen",
+      "ex": "Ich möchte ein Zimmer für Freitag buchen."
+     },
+     {
+      "w": "der Schlüssel",
+      "ex": "Hier ist Ihr Schlüssel, Zimmer 12."
+     }
+    ],
+    "gram": "Ich möchte ein Zimmer für zwei Nächte (für + Akkusativ). Vom 3. bis (zum) 5. Mai. Ist das Frühstück inklusive?"
+   }
+  },
+  {
+   "d": 88,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "A simple recipe",
+     "g": "Follow and give a simple recipe with cooking verbs like schneiden, mischen, kochen and backen.",
+     "p": [
+      "Cooking verbs: schneiden (cut), schälen (peel), mischen (mix), kochen (boil, cook), braten (fry), backen (bake).",
+      "Recipes often use the infinitive at the end: Die Zwiebeln schneiden. Das Wasser kochen.",
+      "To a friend use the du-imperative: Schneide die Tomaten, misch alles und back den Kuchen 30 Minuten."
+     ],
+     "q": "What is a simple dish you can cook? Tell me the steps in German with zuerst, dann and danach.",
+     "c": "Write a recipe for your favourite simple dish in five steps, using five different cooking verbs."
+    },
+    "de": {
+     "t": "Ein einfaches Rezept",
+     "g": "Du verstehst und gibst ein einfaches Rezept mit Verben wie schneiden, mischen, kochen und backen.",
+     "p": [
+      "Kochverben: schneiden, schälen, mischen, kochen, braten, backen.",
+      "In Rezepten steht oft der Infinitiv am Ende: Die Zwiebeln schneiden. Das Wasser kochen.",
+      "Zu Freunden sagst du den Imperativ: Schneide die Tomaten, misch alles und back den Kuchen 30 Minuten."
+     ],
+     "q": "Welches einfache Gericht kannst du kochen? Erklär die Schritte mit zuerst, dann und danach.",
+     "c": "Schreib ein Rezept für dein einfaches Lieblingsgericht in fünf Schritten mit fünf verschiedenen Kochverben."
+    },
+    "es": {
+     "t": "Una receta sencilla",
+     "g": "Sigue y da una receta sencilla con verbos de cocina como schneiden, mischen, kochen y backen.",
+     "p": [
+      "Verbos de cocina: schneiden (cortar), schälen (pelar), mischen (mezclar), kochen (hervir, cocinar), braten (freír), backen (hornear).",
+      "Las recetas suelen usar el infinitivo al final: Die Zwiebeln schneiden. Das Wasser kochen.",
+      "A un amigo, imperativo con du: Schneide die Tomaten, misch alles und back den Kuchen 30 Minuten."
+     ],
+     "q": "¿Qué plato sencillo sabes cocinar? Cuéntame los pasos en alemán con zuerst, dann y danach.",
+     "c": "Escribe la receta de tu plato sencillo favorito en cinco pasos, con cinco verbos de cocina distintos."
+    },
+    "fr": {
+     "t": "Une recette simple",
+     "g": "Suivre et donner une recette simple avec des verbes comme schneiden, mischen, kochen et backen.",
+     "p": [
+      "Verbes de cuisine : schneiden (couper), schälen (éplucher), mischen (mélanger), kochen (cuire), braten (poêler), backen (cuire au four).",
+      "Les recettes utilisent souvent l'infinitif à la fin : Die Zwiebeln schneiden. Das Wasser kochen.",
+      "À un ami, on utilise l'impératif : Schneide die Tomaten, misch alles und back den Kuchen 30 Minuten."
+     ],
+     "q": "Quel plat simple sais-tu cuisiner ? Explique-moi les étapes en allemand avec zuerst, dann et danach.",
+     "c": "Écris la recette de ton plat simple préféré en cinq étapes, avec cinq verbes de cuisine différents."
+    },
+    "it": {
+     "t": "Una ricetta semplice",
+     "g": "Segui e dai una ricetta semplice con verbi di cucina come schneiden, mischen, kochen e backen.",
+     "p": [
+      "Verbi di cucina: schneiden (tagliare), schälen (sbucciare), mischen (mescolare), kochen (cuocere), braten (friggere), backen (infornare).",
+      "Le ricette usano spesso l'infinito alla fine: Die Zwiebeln schneiden. Das Wasser kochen.",
+      "A un amico si usa l'imperativo: Schneide die Tomaten, misch alles und back den Kuchen 30 Minuten."
+     ],
+     "q": "Quale piatto semplice sai cucinare? Raccontami i passaggi in tedesco con zuerst, dann e danach.",
+     "c": "Scrivi la ricetta del tuo piatto semplice preferito in cinque passaggi, con cinque verbi di cucina diversi."
+    },
+    "pt": {
+     "t": "Uma receita simples",
+     "g": "Seguir e dar uma receita simples com verbos como schneiden, mischen, kochen e backen.",
+     "p": [
+      "Verbos de cozinha: schneiden (cortar), schälen (descascar), mischen (misturar), kochen (cozer), braten (fritar), backen (assar no forno).",
+      "As receitas usam muitas vezes o infinitivo no fim: Die Zwiebeln schneiden. Das Wasser kochen.",
+      "A um amigo usa-se o imperativo: Schneide die Tomaten, misch alles und back den Kuchen 30 Minuten."
+     ],
+     "q": "Que prato simples sabes cozinhar? Explica-me os passos em alemão com zuerst, dann e danach.",
+     "c": "Escreve a receita do teu prato simples preferido em cinco passos, com cinco verbos de cozinha diferentes."
+    },
+    "pt_BR": {
+     "t": "Uma receita simples",
+     "g": "Seguir e passar uma receita simples com verbos como schneiden, mischen, kochen e backen.",
+     "p": [
+      "Verbos de cozinha: schneiden (cortar), schälen (descascar), mischen (misturar), kochen (cozinhar), braten (fritar), backen (assar).",
+      "Receitas usam muito o infinitivo no fim: Die Zwiebeln schneiden. Das Wasser kochen.",
+      "Para um amigo, use o imperativo: Schneide die Tomaten, misch alles und back den Kuchen 30 Minuten."
+     ],
+     "q": "Que prato simples você sabe fazer? Me explique os passos em alemão com zuerst, dann e danach.",
+     "c": "Escreva a receita do seu prato simples favorito em cinco passos, com cinco verbos de cozinha diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "schneiden",
+      "ex": "Schneide die Zwiebeln in kleine Stücke."
+     },
+     {
+      "w": "mischen",
+      "ex": "Misch das Mehl mit den Eiern."
+     },
+     {
+      "w": "kochen",
+      "ex": "Die Nudeln zehn Minuten kochen."
+     },
+     {
+      "w": "backen",
+      "ex": "Wir backen am Sonntag einen Kuchen."
+     },
+     {
+      "w": "braten",
+      "ex": "Ich brate das Gemüse in der Pfanne."
+     },
+     {
+      "w": "das Rezept",
+      "ex": "Hast du ein Rezept für Apfelkuchen?"
+     }
+    ],
+    "gram": "Rezept: Infinitiv am Ende (Die Kartoffeln schälen.) oder Imperativ: Schneide / Schneid die Tomaten! Misch alles!"
+   }
+  },
+  {
+   "d": 89,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling about your week",
+     "g": "Combine routine, plans and opinions to talk about your week in a short, connected talk.",
+     "p": [
+      "Routine with time words: Am Montag arbeite ich, am Dienstag habe ich Deutschkurs, abends koche ich.",
+      "Plans and duties with modal verbs: Am Freitag möchte ich ins Kino gehen. Am Samstag muss ich putzen.",
+      "Opinions and links: Das finde ich toll. Der Mittwoch ist anstrengend, aber der Sonntag ist schön, denn ich schlafe lange."
+     ],
+     "q": "Tell me about your week: what do you do on two days, what must you do and what do you want to do?",
+     "c": "Record or write a one-minute talk about your week with at least one modal verb, one opinion and denn."
+    },
+    "de": {
+     "t": "Von deiner Woche erzählen",
+     "g": "Du verbindest Tagesablauf, Pläne und Meinungen und erzählst kurz und zusammenhängend von deiner Woche.",
+     "p": [
+      "Routine mit Zeitangaben: Am Montag arbeite ich, am Dienstag habe ich Deutschkurs, abends koche ich.",
+      "Pläne und Pflichten mit Modalverben: Am Freitag möchte ich ins Kino gehen. Am Samstag muss ich putzen.",
+      "Meinung und Konnektoren: Das finde ich toll. Der Mittwoch ist anstrengend, aber der Sonntag ist schön, denn ich schlafe lange."
+     ],
+     "q": "Erzähl von deiner Woche: Was machst du an zwei Tagen, was musst du und was willst du machen?",
+     "c": "Nimm einen einminütigen Text über deine Woche auf oder schreib ihn, mit Modalverb, Meinung und denn."
+    },
+    "es": {
+     "t": "Contar tu semana",
+     "g": "Combina rutina, planes y opiniones para hablar de tu semana en una charla corta y bien unida.",
+     "p": [
+      "Rutina con expresiones de tiempo: Am Montag arbeite ich, am Dienstag habe ich Deutschkurs, abends koche ich.",
+      "Planes y obligaciones con modales: Am Freitag möchte ich ins Kino gehen. Am Samstag muss ich putzen.",
+      "Opiniones y conectores: Das finde ich toll. Der Mittwoch ist anstrengend, aber der Sonntag ist schön, denn ich schlafe lange."
+     ],
+     "q": "Cuéntame tu semana: ¿qué haces dos de los días, qué tienes que hacer y qué quieres hacer?",
+     "c": "Graba o escribe un minuto sobre tu semana con al menos un modal, una opinión y denn."
+    },
+    "fr": {
+     "t": "Raconter ta semaine",
+     "g": "Combiner routine, projets et opinions pour parler de ta semaine en un petit exposé bien relié.",
+     "p": [
+      "Routine avec les repères de temps : Am Montag arbeite ich, am Dienstag habe ich Deutschkurs, abends koche ich.",
+      "Projets et obligations avec les modaux : Am Freitag möchte ich ins Kino gehen. Am Samstag muss ich putzen.",
+      "Opinions et connecteurs : Das finde ich toll. Der Mittwoch ist anstrengend, aber der Sonntag ist schön, denn ich schlafe lange."
+     ],
+     "q": "Raconte-moi ta semaine : que fais-tu deux des jours, que dois-tu faire et que veux-tu faire ?",
+     "c": "Enregistre ou écris une minute sur ta semaine avec au moins un modal, une opinion et denn."
+    },
+    "it": {
+     "t": "Raccontare la tua settimana",
+     "g": "Unisci routine, progetti e opinioni per parlare della tua settimana in un breve discorso ben collegato.",
+     "p": [
+      "Routine con le espressioni di tempo: Am Montag arbeite ich, am Dienstag habe ich Deutschkurs, abends koche ich.",
+      "Progetti e doveri con i modali: Am Freitag möchte ich ins Kino gehen. Am Samstag muss ich putzen.",
+      "Opinioni e connettivi: Das finde ich toll. Der Mittwoch ist anstrengend, aber der Sonntag ist schön, denn ich schlafe lange."
+     ],
+     "q": "Raccontami la tua settimana: che cosa fai in due giorni, che cosa devi fare e che cosa vuoi fare?",
+     "c": "Registra o scrivi un minuto sulla tua settimana con almeno un modale, un'opinione e denn."
+    },
+    "pt": {
+     "t": "Contar a tua semana",
+     "g": "Juntar rotina, planos e opiniões para falar da tua semana numa pequena fala bem ligada.",
+     "p": [
+      "Rotina com expressões de tempo: Am Montag arbeite ich, am Dienstag habe ich Deutschkurs, abends koche ich.",
+      "Planos e obrigações com modais: Am Freitag möchte ich ins Kino gehen. Am Samstag muss ich putzen.",
+      "Opiniões e conectores: Das finde ich toll. Der Mittwoch ist anstrengend, aber der Sonntag ist schön, denn ich schlafe lange."
+     ],
+     "q": "Conta-me a tua semana: o que fazes em dois dos dias, o que tens de fazer e o que queres fazer?",
+     "c": "Grava ou escreve um minuto sobre a tua semana com pelo menos um modal, uma opinião e denn."
+    },
+    "pt_BR": {
+     "t": "Contar sua semana",
+     "g": "Juntar rotina, planos e opiniões para falar da sua semana numa fala curta e bem ligada.",
+     "p": [
+      "Rotina com expressões de tempo: Am Montag arbeite ich, am Dienstag habe ich Deutschkurs, abends koche ich.",
+      "Planos e obrigações com modais: Am Freitag möchte ich ins Kino gehen. Am Samstag muss ich putzen.",
+      "Opiniões e conectores: Das finde ich toll. Der Mittwoch ist anstrengend, aber der Sonntag ist schön, denn ich schlafe lange."
+     ],
+     "q": "Me conte sua semana: o que você faz em dois dos dias, o que precisa fazer e o que quer fazer?",
+     "c": "Grave ou escreva um minuto sobre sua semana com pelo menos um modal, uma opinião e denn."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Woche",
+      "ex": "Meine Woche ist sehr voll."
+     },
+     {
+      "w": "abends",
+      "ex": "Abends lese ich ein Buch."
+     },
+     {
+      "w": "anstrengend",
+      "ex": "Der Montag ist immer anstrengend."
+     },
+     {
+      "w": "ich finde ...",
+      "ex": "Ich finde den Deutschkurs super."
+     },
+     {
+      "w": "frei haben",
+      "ex": "Am Mittwoch habe ich frei."
+     },
+     {
+      "w": "am Ende der Woche",
+      "ex": "Am Ende der Woche bin ich müde, aber zufrieden."
+     }
+    ],
+    "gram": "Zeitangabe auf Position 1, Verb auf Position 2: Am Montag arbeite ich. Modalverb + Infinitiv am Ende: Ich muss putzen."
+   }
+  },
+  {
+   "d": 90,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: A1 checkpoint",
+     "g": "Bring all of A1 together in a full conversation about yourself, your life and your plans.",
+     "p": [
+      "You can introduce yourself, talk about family, home, work, food, hobbies, your town and your week.",
+      "You use present tense, modal verbs, separable verbs, accusative and dative, prepositions and comparisons.",
+      "You can phone, write a message, book a room and keep a small talk going. Herzlichen Glückwunsch, A1 is done!"
+     ],
+     "q": "Introduce yourself fully: name, origin, family, job, home, hobbies, your town and one plan. Take your time!",
+     "c": "Write a short self-portrait of eight to ten sentences using as many A1 structures as you can. Then read it aloud."
+    },
+    "de": {
+     "t": "Wiederholung: Abschluss A1",
+     "g": "Du bringst alles aus A1 in einem ganzen Gespräch über dich, dein Leben und deine Pläne zusammen.",
+     "p": [
+      "Du kannst dich vorstellen und über Familie, Wohnung, Arbeit, Essen, Hobbys, deine Stadt und deine Woche sprechen.",
+      "Du benutzt Präsens, Modalverben, trennbare Verben, Akkusativ und Dativ, Präpositionen und Vergleiche.",
+      "Du kannst telefonieren, Nachrichten schreiben, ein Zimmer buchen und Smalltalk machen. Herzlichen Glückwunsch, A1 ist geschafft!"
+     ],
+     "q": "Stell dich ausführlich vor: Name, Herkunft, Familie, Beruf, Wohnung, Hobbys, deine Stadt und ein Plan. Nimm dir Zeit!",
+     "c": "Schreib ein kurzes Selbstporträt mit acht bis zehn Sätzen und möglichst vielen A1-Strukturen. Lies es dann laut vor."
+    },
+    "es": {
+     "t": "Repaso: control del A1",
+     "g": "Reúne todo el A1 en una conversación completa sobre ti, tu vida y tus planes.",
+     "p": [
+      "Sabes presentarte y hablar de familia, casa, trabajo, comida, aficiones, tu ciudad y tu semana.",
+      "Usas el presente, modales, verbos separables, acusativo y dativo, preposiciones y comparaciones.",
+      "Sabes llamar por teléfono, escribir mensajes, reservar habitación y charlar. ¡Herzlichen Glückwunsch, A1 superado!"
+     ],
+     "q": "Preséntate a fondo: nombre, origen, familia, trabajo, casa, aficiones, tu ciudad y un plan. ¡Tómate tu tiempo!",
+     "c": "Escribe un autorretrato breve de ocho a diez frases con todas las estructuras de A1 que puedas. Luego léelo en voz alta."
+    },
+    "fr": {
+     "t": "Révision : bilan A1",
+     "g": "Rassembler tout le niveau A1 dans une vraie conversation sur toi, ta vie et tes projets.",
+     "p": [
+      "Tu sais te présenter et parler de ta famille, ton logement, ton travail, la cuisine, tes loisirs, ta ville et ta semaine.",
+      "Tu utilises le présent, les modaux, les verbes séparables, l'accusatif et le datif, les prépositions et les comparaisons.",
+      "Tu sais téléphoner, écrire un message, réserver une chambre et faire du small talk. Herzlichen Glückwunsch, A1 réussi !"
+     ],
+     "q": "Présente-toi en détail : nom, origine, famille, métier, logement, loisirs, ta ville et un projet. Prends ton temps !",
+     "c": "Écris un petit autoportrait de huit à dix phrases avec un maximum de structures A1. Puis lis-le à voix haute."
+    },
+    "it": {
+     "t": "Ripasso: traguardo A1",
+     "g": "Metti insieme tutto l'A1 in una conversazione completa su di te, la tua vita e i tuoi progetti.",
+     "p": [
+      "Sai presentarti e parlare di famiglia, casa, lavoro, cibo, hobby, la tua città e la tua settimana.",
+      "Usi il presente, i modali, i verbi separabili, accusativo e dativo, le preposizioni e i comparativi.",
+      "Sai telefonare, scrivere un messaggio, prenotare una camera e fare due chiacchiere. Herzlichen Glückwunsch, A1 superato!"
+     ],
+     "q": "Presentati per bene: nome, provenienza, famiglia, lavoro, casa, hobby, la tua città e un progetto. Prenditi il tuo tempo!",
+     "c": "Scrivi un breve autoritratto di otto-dieci frasi con quante più strutture dell'A1 possibile. Poi leggilo ad alta voce."
+    },
+    "pt": {
+     "t": "Revisão: balanço do A1",
+     "g": "Juntar todo o A1 numa conversa completa sobre ti, a tua vida e os teus planos.",
+     "p": [
+      "Sabes apresentar-te e falar da família, casa, trabalho, comida, passatempos, da tua cidade e da tua semana.",
+      "Usas o presente, modais, verbos separáveis, acusativo e dativo, preposições e comparações.",
+      "Sabes telefonar, escrever mensagens, reservar um quarto e conversar. Herzlichen Glückwunsch, A1 concluído!"
+     ],
+     "q": "Apresenta-te a fundo: nome, origem, família, profissão, casa, passatempos, a tua cidade e um plano. Com calma!",
+     "c": "Escreve um pequeno autorretrato de oito a dez frases com o máximo de estruturas do A1. Depois lê-o em voz alta."
+    },
+    "pt_BR": {
+     "t": "Revisão: fechamento do A1",
+     "g": "Juntar todo o A1 numa conversa completa sobre você, sua vida e seus planos.",
+     "p": [
+      "Você sabe se apresentar e falar de família, casa, trabalho, comida, hobbies, sua cidade e sua semana.",
+      "Você usa presente, modais, verbos separáveis, acusativo e dativo, preposições e comparações.",
+      "Você sabe telefonar, escrever mensagens, reservar um quarto e bater papo. Herzlichen Glückwunsch, A1 concluído!"
+     ],
+     "q": "Apresente-se com detalhes: nome, origem, família, profissão, casa, hobbies, sua cidade e um plano. Sem pressa!",
+     "c": "Escreva um pequeno autorretrato de oito a dez frases com o máximo de estruturas do A1. Depois leia em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sich vorstellen",
+      "ex": "Darf ich mich kurz vorstellen?"
+     },
+     {
+      "w": "wohnen",
+      "ex": "Ich wohne seit drei Jahren in Hamburg."
+     },
+     {
+      "w": "in meiner Freizeit",
+      "ex": "In meiner Freizeit spiele ich Gitarre."
+     },
+     {
+      "w": "der Plan",
+      "ex": "Mein Plan ist, im Sommer nach Wien zu fahren."
+     },
+     {
+      "w": "geschafft",
+      "ex": "A1 ist geschafft, super!"
+     },
+     {
+      "w": "Herzlichen Glückwunsch!",
+      "ex": "Herzlichen Glückwunsch zum Abschluss!"
+     }
+    ],
+    "gram": "A1-Wiederholung: Ich heiße..., ich komme aus..., ich wohne in... Ich kann gut kochen. Am Wochenende fahre ich mit dem Zug zu meiner Oma."
+   }
+  }
+ ]
+}

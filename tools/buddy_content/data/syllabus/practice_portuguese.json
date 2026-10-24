@@ -1,0 +1,2195 @@
+{
+"topic": "practice_portuguese",
+"days": [
+{
+"d": 1,
+"lv": "A1",
+"t": "Olá! First Portuguese greetings",
+"f": "Say olá, bom dia, boa tarde, boa noite, adeus and tchau and know when each one fits"
+},
+{
+"d": 2,
+"lv": "A1",
+"t": "The Portuguese alphabet",
+"f": "The 26 letters, how to say them and how to spell your name aloud"
+},
+{
+"d": 3,
+"lv": "A1",
+"t": "Vowels: open, closed and nasal",
+"f": "Hear the difference between open é, closed ê and the nasal ã and õ"
+},
+{
+"d": 4,
+"lv": "A1",
+"t": "Nasal sounds: ão, ãe, õe",
+"f": "Practise pão, mãe and limões, the famous Portuguese nasal diphthongs"
+},
+{
+"d": 5,
+"lv": "A1",
+"t": "Chamo-me... introducing yourself",
+"f": "Use chamo-me, sou and muito prazer, and ask como te chamas?"
+},
+{
+"d": 6,
+"lv": "A1",
+"t": "Tu, você or o senhor?",
+"f": "Informal tu, polite você and o senhor / a senhora, plus how Portugal and Brazil differ"
+},
+{
+"d": 7,
+"lv": "A1",
+"t": "Como estás? How are you",
+"f": "Ask and answer como estás / como está with bem, muito bem, mais ou menos"
+},
+{
+"d": 8,
+"lv": "A1",
+"t": "Numbers 0 to 20",
+"f": "Count from zero to twenty and use the numbers for ages and phone numbers"
+},
+{
+"d": 9,
+"lv": "A1",
+"t": "De onde és? Where are you from",
+"f": "Say sou de Lisboa, sou brasileira and learn common nationality words"
+},
+{
+"d": 10,
+"lv": "A1",
+"t": "Ser: the verb to be",
+"f": "Present tense of ser for identity, origin, profession and character"
+},
+{
+"d": 11,
+"lv": "A1",
+"t": "Estar: the other to be",
+"f": "Present tense of estar for location, states and feelings: estou cansado"
+},
+{
+"d": 12,
+"lv": "A1",
+"t": "Ser or estar?",
+"f": "Choose between ser and estar with clear everyday examples"
+},
+{
+"d": 13,
+"lv": "A1",
+"t": "Nouns: masculine and feminine",
+"f": "Typical endings -o and -a, and tricky ones like o dia and a mão"
+},
+{
+"d": 14,
+"lv": "A1",
+"t": "Plurals made easy",
+"f": "Add -s or -es, and meet the -ão trio: -ões, -ães and -ãos"
+},
+{
+"d": 15,
+"lv": "A1",
+"t": "Articles: o, a, um, uma",
+"f": "Definite and indefinite articles in singular and plural"
+},
+{
+"d": 16,
+"lv": "A1",
+"t": "My family",
+"f": "Pai, mãe, irmão, avó, filhos and how to describe your family"
+},
+{
+"d": 17,
+"lv": "A1",
+"t": "Ter: to have",
+"f": "Present tense of ter for things, age and family: tenho dois irmãos"
+},
+{
+"d": 18,
+"lv": "A1",
+"t": "Possessives: meu, teu, seu",
+"f": "Meu/minha, teu/tua, seu/sua, nosso/nossa and agreement with the thing owned"
+},
+{
+"d": 19,
+"lv": "A1",
+"t": "Numbers 21 to 100",
+"f": "Tens, vinte e um, cinquenta e cinco and saying your age"
+},
+{
+"d": 20,
+"lv": "A1",
+"t": "Colours",
+"f": "Basic colours and agreement: o carro vermelho, as casas brancas"
+},
+{
+"d": 21,
+"lv": "A1",
+"t": "Adjectives and agreement",
+"f": "Place adjectives after the noun and match gender and number"
+},
+{
+"d": 22,
+"lv": "A1",
+"t": "Describing people",
+"f": "Alto, baixo, simpático, cabelo castanho, olhos azuis"
+},
+{
+"d": 23,
+"lv": "A1",
+"t": "Days of the week",
+"f": "Segunda-feira to domingo and why Portuguese weekdays are numbered"
+},
+{
+"d": 24,
+"lv": "A1",
+"t": "Months and seasons",
+"f": "The twelve months, the four seasons and how to say dates"
+},
+{
+"d": 25,
+"lv": "A1",
+"t": "What time is it?",
+"f": "Que horas são? São três e meia, é meio-dia, é uma hora"
+},
+{
+"d": 26,
+"lv": "A1",
+"t": "Regular -ar verbs",
+"f": "Present tense of falar, morar, trabalhar with the endings -o, -as, -a, -amos, -am"
+},
+{
+"d": 27,
+"lv": "A1",
+"t": "Regular -er verbs",
+"f": "Present tense of comer, beber and viver with their endings"
+},
+{
+"d": 28,
+"lv": "A1",
+"t": "Regular -ir verbs",
+"f": "Present tense of partir, abrir and decidir with their endings"
+},
+{
+"d": 29,
+"lv": "A1",
+"t": "Asking questions",
+"f": "Question words: o quê, quem, onde, quando, como, porquê"
+},
+{
+"d": 30,
+"lv": "A1",
+"t": "Review: your first month",
+"f": "Light review: greet, introduce yourself, describe your family and tell the time"
+},
+{
+"d": 31,
+"lv": "A1",
+"t": "At the café",
+"f": "Order um café, uma bica, um galão, um pastel de nata and ask for the bill"
+},
+{
+"d": 32,
+"lv": "A1",
+"t": "Queria... polite requests",
+"f": "Use queria, pode dar-me and se faz favor to ask politely"
+},
+{
+"d": 33,
+"lv": "A1",
+"t": "Food and drinks",
+"f": "Basic food words: pão, queijo, fruta, água, sumo, leite"
+},
+{
+"d": 34,
+"lv": "A1",
+"t": "Gostar de: likes and dislikes",
+"f": "Gosto de café, não gosto de chá: gostar always takes de"
+},
+{
+"d": 35,
+"lv": "A1",
+"t": "Negation",
+"f": "Make sentences negative with não, nada, nunca and ninguém"
+},
+{
+"d": 36,
+"lv": "A1",
+"t": "My home",
+"f": "Rooms and furniture: sala, cozinha, quarto, casa de banho"
+},
+{
+"d": 37,
+"lv": "A1",
+"t": "Há: there is, there are",
+"f": "Use há to describe places: há um parque perto de casa"
+},
+{
+"d": 38,
+"lv": "A1",
+"t": "Prepositions of place",
+"f": "Em, em cima de, debaixo de, ao lado de, entre, atrás de"
+},
+{
+"d": 39,
+"lv": "A1",
+"t": "Contractions: no, na, do, da",
+"f": "How em and de merge with articles: no café, da praia"
+},
+{
+"d": 40,
+"lv": "A1",
+"t": "Ir: to go",
+"f": "Present tense of ir with a and para: vou a Lisboa, vou para casa"
+},
+{
+"d": 41,
+"lv": "A1",
+"t": "Getting around town",
+"f": "Ask for directions: onde fica, vire à esquerda, siga em frente"
+},
+{
+"d": 42,
+"lv": "A1",
+"t": "Transport",
+"f": "Autocarro, comboio, metro, elétrico, plus Brazilian ônibus and trem"
+},
+{
+"d": 43,
+"lv": "A1",
+"t": "Fazer: to do and make",
+"f": "Present tense of fazer and expressions like fazer anos and faz frio"
+},
+{
+"d": 44,
+"lv": "A1",
+"t": "Daily routine",
+"f": "Describe your day: acordo, tomo o pequeno-almoço, trabalho, janto"
+},
+{
+"d": 45,
+"lv": "A1",
+"t": "Reflexive verbs",
+"f": "Levantar-se, deitar-se, chamar-se and pronoun position in Portugal and Brazil"
+},
+{
+"d": 46,
+"lv": "A1",
+"t": "Frequency words",
+"f": "Sempre, normalmente, às vezes, raramente, nunca"
+},
+{
+"d": 47,
+"lv": "A1",
+"t": "Jobs and professions",
+"f": "Professor, médica, engenheiro, empregado de mesa and saying what you do"
+},
+{
+"d": 48,
+"lv": "A1",
+"t": "At work and at school",
+"f": "Workplace and classroom words and the phrases trabalho em and estudo em"
+},
+{
+"d": 49,
+"lv": "A1",
+"t": "Weather",
+"f": "Está sol, está a chover, faz calor, está frio, está vento"
+},
+{
+"d": 50,
+"lv": "A1",
+"t": "Clothes",
+"f": "Camisola, calças, sapatos, casaco and what you wear in each season"
+},
+{
+"d": 51,
+"lv": "A1",
+"t": "Shopping basics",
+"f": "Quanto custa? Tem outro tamanho? Posso experimentar?"
+},
+{
+"d": 52,
+"lv": "A1",
+"t": "Numbers above 100",
+"f": "Cem, cento e um, duzentos, mil and reading prices in euros"
+},
+{
+"d": 53,
+"lv": "A1",
+"t": "Demonstratives",
+"f": "Este, esse, aquele and isto, isso, aquilo by distance"
+},
+{
+"d": 54,
+"lv": "A1",
+"t": "Poder, querer, saber",
+"f": "Present tense of three key irregular verbs and how to use them"
+},
+{
+"d": 55,
+"lv": "A1",
+"t": "Estar a + infinitive",
+"f": "The European present continuous estou a ler, and Brazilian estou lendo"
+},
+{
+"d": 56,
+"lv": "A1",
+"t": "Hobbies and free time",
+"f": "Talk about sport, music, reading and what you do at the weekend"
+},
+{
+"d": 57,
+"lv": "A1",
+"t": "Jogar or tocar?",
+"f": "Jogar futebol, tocar guitarra: the right verb for games and instruments"
+},
+{
+"d": 58,
+"lv": "A1",
+"t": "The body",
+"f": "Parts of the body and dói-me a cabeça to say what hurts"
+},
+{
+"d": 59,
+"lv": "A1",
+"t": "At the pharmacy",
+"f": "Simple phrases for a pharmacy visit: preciso de alguma coisa para a garganta"
+},
+{
+"d": 60,
+"lv": "A1",
+"t": "Review: everyday life",
+"f": "Light review: café, home, directions, routine, weather and shopping"
+},
+{
+"d": 61,
+"lv": "A1",
+"t": "Vir: to come",
+"f": "Present tense of vir and the difference between ir and vir"
+},
+{
+"d": 62,
+"lv": "A1",
+"t": "Ir + infinitive: the near future",
+"f": "Vou viajar amanhã: talk about plans with ir plus a verb"
+},
+{
+"d": 63,
+"lv": "A1",
+"t": "Future time expressions",
+"f": "Amanhã, depois de amanhã, na próxima semana, no fim de semana"
+},
+{
+"d": 64,
+"lv": "A1",
+"t": "Making plans with friends",
+"f": "Invite and reply: queres ir ao cinema? Combinado! Hoje não posso"
+},
+{
+"d": 65,
+"lv": "A1",
+"t": "Telephone Portuguese",
+"f": "Answer the phone: está?, sim, quem fala?, pode repetir, por favor?"
+},
+{
+"d": 66,
+"lv": "A1",
+"t": "Animals and pets",
+"f": "Common animals and how to talk about your pets"
+},
+{
+"d": 67,
+"lv": "A1",
+"t": "Nature and landscapes",
+"f": "Praia, montanha, rio, campo, mar and describing places you love"
+},
+{
+"d": 68,
+"lv": "A1",
+"t": "Comparisons",
+"f": "Mais ... do que, menos ... do que, tão ... como"
+},
+{
+"d": 69,
+"lv": "A1",
+"t": "Irregular comparatives",
+"f": "Melhor, pior, maior, menor and when to use them"
+},
+{
+"d": 70,
+"lv": "A1",
+"t": "Superlatives",
+"f": "O mais bonito, o menor, and the -íssimo ending: lindíssimo"
+},
+{
+"d": 71,
+"lv": "A1",
+"t": "Object pronouns: o, a, os, as",
+"f": "Replace objects: vejo-o, conheço-a, and Brazilian eu o vejo"
+},
+{
+"d": 72,
+"lv": "A1",
+"t": "Indirect pronouns: me, te, lhe",
+"f": "Dá-me o livro, escrevo-lhe uma mensagem and where they go"
+},
+{
+"d": 73,
+"lv": "A1",
+"t": "At the restaurant",
+"f": "Book a table, read the menu, order a starter, main course and dessert"
+},
+{
+"d": 74,
+"lv": "A1",
+"t": "Typical dishes",
+"f": "Bacalhau, caldo verde, francesinha, feijoada and what is in them"
+},
+{
+"d": 75,
+"lv": "A1",
+"t": "Dar, dizer, trazer",
+"f": "Present tense of three common irregular verbs"
+},
+{
+"d": 76,
+"lv": "A1",
+"t": "Feelings and moods",
+"f": "Contente, triste, nervoso, com fome, com sono, com saudades"
+},
+{
+"d": 77,
+"lv": "A1",
+"t": "Saudade",
+"f": "The famous word saudade and how people use it in daily life"
+},
+{
+"d": 78,
+"lv": "A1",
+"t": "Ter de and precisar de",
+"f": "Obligation and need: tenho de estudar, preciso de ajuda"
+},
+{
+"d": 79,
+"lv": "A1",
+"t": "Hotels and accommodation",
+"f": "Book a room, check in, ask about breakfast and wi-fi"
+},
+{
+"d": 80,
+"lv": "A1",
+"t": "Dates and birthdays",
+"f": "Say dates, ask quando fazes anos? and wish parabéns"
+},
+{
+"d": 81,
+"lv": "A1",
+"t": "Ordinal numbers",
+"f": "Primeiro, segundo, terceiro up to décimo and floors of a building"
+},
+{
+"d": 82,
+"lv": "A1",
+"t": "Connectors: e, mas, ou, porque",
+"f": "Join short sentences into longer, natural ones"
+},
+{
+"d": 83,
+"lv": "A1",
+"t": "Adverbs in -mente",
+"f": "Rapidamente, felizmente, and adverbs like bem, mal, muito, pouco"
+},
+{
+"d": 84,
+"lv": "A1",
+"t": "Muito, pouco, todo, cada",
+"f": "Quantifiers and their agreement: muitas pessoas, toda a gente"
+},
+{
+"d": 85,
+"lv": "A1",
+"t": "Portugal and Brazil: key differences",
+"f": "Comboio vs trem, pequeno-almoço vs café da manhã and how they sound"
+},
+{
+"d": 86,
+"lv": "A1",
+"t": "Where Portuguese is spoken",
+"f": "The Lusophone world: Angola, Mozambique, Cape Verde, Timor-Leste and more"
+},
+{
+"d": 87,
+"lv": "A1",
+"t": "Dialogue: meeting someone new",
+"f": "Put it all together in a first-meeting conversation"
+},
+{
+"d": 88,
+"lv": "A1",
+"t": "Writing a short message",
+"f": "Write a simple message or postcard: Olá Ana, tudo bem? Beijinhos"
+},
+{
+"d": 89,
+"lv": "A1",
+"t": "Listening tips",
+"f": "How to catch the reduced vowels of European Portuguese speech"
+},
+{
+"d": 90,
+"lv": "A1",
+"t": "Review: A1 complete",
+"f": "Celebrate A1: recap verbs, numbers, questions and key phrases"
+},
+{
+"d": 91,
+"lv": "A2",
+"t": "Welcome to A2",
+"f": "What changes at A2 and a quick check of your A1 basics"
+},
+{
+"d": 92,
+"lv": "A2",
+"t": "Pretérito perfeito: regular verbs",
+"f": "The simple past falei, comi, parti for finished actions"
+},
+{
+"d": 93,
+"lv": "A2",
+"t": "Past of ser and ir",
+"f": "Fui, foste, foi: the same past forms for ser and ir"
+},
+{
+"d": 94,
+"lv": "A2",
+"t": "Past of ter, estar, fazer",
+"f": "Tive, estive, fiz and other very common irregular past forms"
+},
+{
+"d": 95,
+"lv": "A2",
+"t": "Time words for the past",
+"f": "Ontem, anteontem, na semana passada, há dois dias"
+},
+{
+"d": 96,
+"lv": "A2",
+"t": "Telling about your weekend",
+"f": "Describe what you did: fui à praia, jantei com amigos"
+},
+{
+"d": 97,
+"lv": "A2",
+"t": "Past of poder, querer, saber",
+"f": "Pude, quis, soube and their special meanings in the past"
+},
+{
+"d": 98,
+"lv": "A2",
+"t": "Past of dar, dizer, trazer, vir",
+"f": "Dei, disse, trouxe, vim and putting them in sentences"
+},
+{
+"d": 99,
+"lv": "A2",
+"t": "Pretérito imperfeito: introduction",
+"f": "Falava, comia, partia for habits and descriptions in the past"
+},
+{
+"d": 100,
+"lv": "A2",
+"t": "When I was a child",
+"f": "Quando era criança, brincava na rua: talk about your childhood"
+},
+{
+"d": 101,
+"lv": "A2",
+"t": "Perfeito or imperfeito?",
+"f": "Finished actions versus background: estava a chover quando cheguei"
+},
+{
+"d": 102,
+"lv": "A2",
+"t": "Irregular imperfect: ser, ter, vir, pôr",
+"f": "Era, tinha, vinha, punha: the four irregular imperfects"
+},
+{
+"d": 103,
+"lv": "A2",
+"t": "Travel stories",
+"f": "Tell a trip in the past: places, transport, food and a funny moment"
+},
+{
+"d": 104,
+"lv": "A2",
+"t": "At the airport",
+"f": "Check-in, porta de embarque, bagagem, voo atrasado"
+},
+{
+"d": 105,
+"lv": "A2",
+"t": "At the train station",
+"f": "Buy a ticket, ida e volta, which platform, delays"
+},
+{
+"d": 106,
+"lv": "A2",
+"t": "Renting a place to stay",
+"f": "Talk about flats, renting a room and house rules"
+},
+{
+"d": 107,
+"lv": "A2",
+"t": "Directions in detail",
+"f": "Give longer directions with landmarks and distances"
+},
+{
+"d": 108,
+"lv": "A2",
+"t": "The imperative: tu forms",
+"f": "Give instructions to friends: fala, come, abre, vem cá"
+},
+{
+"d": 109,
+"lv": "A2",
+"t": "The imperative: você forms",
+"f": "Polite commands: fale, coma, abra, siga em frente"
+},
+{
+"d": 110,
+"lv": "A2",
+"t": "Recipes and cooking",
+"f": "Cooking verbs and the imperative in recipes: corte, junte, mexa"
+},
+{
+"d": 111,
+"lv": "A2",
+"t": "Health and the doctor",
+"f": "Describe simple symptoms: tenho febre, doem-me as costas"
+},
+{
+"d": 112,
+"lv": "A2",
+"t": "Healthy habits",
+"f": "Talk about sleep, exercise and food with dever and costumar"
+},
+{
+"d": 113,
+"lv": "A2",
+"t": "Por and para",
+"f": "Two little words with many uses: por causa de, para mim"
+},
+{
+"d": 114,
+"lv": "A2",
+"t": "Prepositions of time",
+"f": "Em, a, de... a, desde, até, durante"
+},
+{
+"d": 115,
+"lv": "A2",
+"t": "Relative pronouns: que and onde",
+"f": "Join sentences: o livro que li, a cidade onde nasci"
+},
+{
+"d": 116,
+"lv": "A2",
+"t": "Quem and o que as relatives",
+"f": "A pessoa com quem falei, o que eu quero é..."
+},
+{
+"d": 117,
+"lv": "A2",
+"t": "Review: past stories",
+"f": "Light review: tell a story using perfeito and imperfeito"
+},
+{
+"d": 118,
+"lv": "A2",
+"t": "Shopping for clothes",
+"f": "Sizes, fitting rooms, returns and giving opinions on clothes"
+},
+{
+"d": 119,
+"lv": "A2",
+"t": "At the market",
+"f": "Buy fruit and vegetables: um quilo de, meia dúzia, está maduro?"
+},
+{
+"d": 120,
+"lv": "A2",
+"t": "Money and banks",
+"f": "Withdraw money, pay by card, the Multibanco and basic bank words"
+},
+{
+"d": 121,
+"lv": "A2",
+"t": "Emails and formal messages",
+"f": "Start and end emails: Caro, Exmo. Senhor, Com os melhores cumprimentos"
+},
+{
+"d": 122,
+"lv": "A2",
+"t": "Technology words",
+"f": "Telemóvel, computador, carregar, descarregar, ecrã and Brazilian celular"
+},
+{
+"d": 123,
+"lv": "A2",
+"t": "Chatting on social media",
+"f": "Common abbreviations and informal written Portuguese"
+},
+{
+"d": 124,
+"lv": "A2",
+"t": "Pronoun placement",
+"f": "When pronouns go before the verb: não o vejo, já me disse, quem te contou"
+},
+{
+"d": 125,
+"lv": "A2",
+"t": "Já, ainda, ainda não",
+"f": "Talk about experiences and pending things: já comi, ainda não fui"
+},
+{
+"d": 126,
+"lv": "A2",
+"t": "Pretérito perfeito composto",
+"f": "Tenho estudado muito: repeated actions up to now, unlike the English perfect"
+},
+{
+"d": 127,
+"lv": "A2",
+"t": "Acabar de: just did",
+"f": "Acabei de chegar: talk about very recent actions"
+},
+{
+"d": 128,
+"lv": "A2",
+"t": "Começar a, deixar de, voltar a",
+"f": "Verbs that start, stop and repeat actions"
+},
+{
+"d": 129,
+"lv": "A2",
+"t": "Describing your town",
+"f": "Talk about your town: what there is, what is missing, what you like"
+},
+{
+"d": 130,
+"lv": "A2",
+"t": "Housework and chores",
+"f": "Lavar a loiça, arrumar o quarto, aspirar and who does what"
+},
+{
+"d": 131,
+"lv": "A2",
+"t": "Sports and teams",
+"f": "Football culture, other sports and talking about matches"
+},
+{
+"d": 132,
+"lv": "A2",
+"t": "Music in Portuguese",
+"f": "Fado, samba, bossa nova, morna and words to describe music"
+},
+{
+"d": 133,
+"lv": "A2",
+"t": "Films and series",
+"f": "Talk about what you watch: gostei do final, é uma série de comédia"
+},
+{
+"d": 134,
+"lv": "A2",
+"t": "Books and reading",
+"f": "Genres, authors and saying what a book is about"
+},
+{
+"d": 135,
+"lv": "A2",
+"t": "Giving opinions",
+"f": "Acho que, na minha opinião, parece-me que, concordo"
+},
+{
+"d": 136,
+"lv": "A2",
+"t": "Agreeing and disagreeing",
+"f": "Pois, tens razão, não concordo nada, depende"
+},
+{
+"d": 137,
+"lv": "A2",
+"t": "Making suggestions",
+"f": "Que tal irmos? Porque não? E se fizéssemos? Vamos!"
+},
+{
+"d": 138,
+"lv": "A2",
+"t": "Future simple",
+"f": "Falarei, comerei: the future tense and why it sounds formal"
+},
+{
+"d": 139,
+"lv": "A2",
+"t": "Weather forecasts",
+"f": "Amanhã vai chover, aguaceiros, temperaturas and forecast vocabulary"
+},
+{
+"d": 140,
+"lv": "A2",
+"t": "Holidays and festivals",
+"f": "Santos Populares, Carnaval, Natal and Festa Junina traditions"
+},
+{
+"d": 141,
+"lv": "A2",
+"t": "Invitations and parties",
+"f": "Invite, accept, decline politely and offer to bring something"
+},
+{
+"d": 142,
+"lv": "A2",
+"t": "Gifts and celebrations",
+"f": "Choose and give gifts, congratulate and say thank you"
+},
+{
+"d": 143,
+"lv": "A2",
+"t": "Conditional: polite requests",
+"f": "Poderia, gostaria, seria possível: soften your requests"
+},
+{
+"d": 144,
+"lv": "A2",
+"t": "Wishes with gostava de",
+"f": "Gostava de viajar mais: the European imperfect used as conditional"
+},
+{
+"d": 145,
+"lv": "A2",
+"t": "Indefinite words",
+"f": "Alguém, ninguém, algo, nada, algum, nenhum"
+},
+{
+"d": 146,
+"lv": "A2",
+"t": "Review: daily communication",
+"f": "Light review: opinions, plans, invitations and polite requests"
+},
+{
+"d": 147,
+"lv": "A2",
+"t": "Diminutives: -inho, -inha",
+"f": "Cafezinho, obrigadinho, devagarinho: affection and size"
+},
+{
+"d": 148,
+"lv": "A2",
+"t": "Augmentatives: -ão, -ona",
+"f": "Carrão, casarão, amigão and the tone they carry"
+},
+{
+"d": 149,
+"lv": "A2",
+"t": "Word families",
+"f": "Build vocabulary from roots: trabalhar, trabalho, trabalhador"
+},
+{
+"d": 150,
+"lv": "A2",
+"t": "False friends",
+"f": "Puxar, constipado, esquisito, pretender and other traps for learners"
+},
+{
+"d": 151,
+"lv": "A2",
+"t": "Ser and estar with adjectives",
+"f": "É aborrecido versus está aborrecido: meanings that change"
+},
+{
+"d": 152,
+"lv": "A2",
+"t": "Gestures and body language",
+"f": "Common gestures in Portugal and Brazil and what they mean"
+},
+{
+"d": 153,
+"lv": "A2",
+"t": "Personality adjectives",
+"f": "Teimoso, generoso, preguiçoso, trabalhador and describing friends"
+},
+{
+"d": 154,
+"lv": "A2",
+"t": "Friendship words",
+"f": "Conhecer, dar-se bem com, fazer amigos, combinar"
+},
+{
+"d": 155,
+"lv": "A2",
+"t": "Childhood memories",
+"f": "Use the imperfect to describe places and people from the past"
+},
+{
+"d": 156,
+"lv": "A2",
+"t": "Before and now",
+"f": "Antes eu..., agora...: compare past habits with the present"
+},
+{
+"d": 157,
+"lv": "A2",
+"t": "The environment",
+"f": "Reciclar, poupar água, poluição and green habits"
+},
+{
+"d": 158,
+"lv": "A2",
+"t": "City or countryside?",
+"f": "Compare life in the city and in the countryside"
+},
+{
+"d": 159,
+"lv": "A2",
+"t": "Job interview basics",
+"f": "Talk about experience, strengths and availability"
+},
+{
+"d": 160,
+"lv": "A2",
+"t": "Work routines",
+"f": "Horário, reuniões, férias and talking about your job"
+},
+{
+"d": 161,
+"lv": "A2",
+"t": "Studying and courses",
+"f": "Universities, courses, exams and learning goals"
+},
+{
+"d": 162,
+"lv": "A2",
+"t": "Learning languages",
+"f": "Talk about how you learn and what helps you most"
+},
+{
+"d": 163,
+"lv": "A2",
+"t": "Appointments by phone",
+"f": "Make an appointment, reschedule and confirm"
+},
+{
+"d": 164,
+"lv": "A2",
+"t": "Polite complaints",
+"f": "Report a problem in a shop or hotel calmly and clearly"
+},
+{
+"d": 165,
+"lv": "A2",
+"t": "Problems and solutions",
+"f": "Perdi a carteira, o comboio atrasou-se: explain and fix problems"
+},
+{
+"d": 166,
+"lv": "A2",
+"t": "Tão and tanto",
+"f": "Tão bonito, tanto trabalho, tantas pessoas: intensity and quantity"
+},
+{
+"d": 167,
+"lv": "A2",
+"t": "Exclamations",
+"f": "Que bom! Que pena! Que giro! and Brazilian Que legal!"
+},
+{
+"d": 168,
+"lv": "A2",
+"t": "Fillers and natural speech",
+"f": "Pois, então, olha, sabes, tipo, né and how to sound natural"
+},
+{
+"d": 169,
+"lv": "A2",
+"t": "Telling a story in order",
+"f": "Order events: primeiro, depois, entretanto, finalmente"
+},
+{
+"d": 170,
+"lv": "A2",
+"t": "Review: stories and feelings",
+"f": "Light review: tell a past story with feelings and connectors"
+},
+{
+"d": 171,
+"lv": "A2",
+"t": "Lisbon in Portuguese",
+"f": "Neighbourhoods, trams and famous spots of Lisbon"
+},
+{
+"d": 172,
+"lv": "A2",
+"t": "Porto and the north",
+"f": "The Ribeira, the Douro valley and northern food and words"
+},
+{
+"d": 173,
+"lv": "A2",
+"t": "Brazilian cities",
+"f": "São Paulo, Rio de Janeiro, Salvador and what makes each special"
+},
+{
+"d": 174,
+"lv": "A2",
+"t": "Lusophone Africa",
+"f": "Culture and Portuguese in Angola, Mozambique and Cape Verde"
+},
+{
+"d": 175,
+"lv": "A2",
+"t": "Sweets and pastries",
+"f": "Pastel de nata, ovos moles, brigadeiro and baking words"
+},
+{
+"d": 176,
+"lv": "A2",
+"t": "Coffee culture",
+"f": "Bica, galão, cimbalino, cafezinho: ordering coffee across the Lusophone world"
+},
+{
+"d": 177,
+"lv": "A2",
+"t": "Writing a short story",
+"f": "Write five sentences about a memorable day"
+},
+{
+"d": 178,
+"lv": "A2",
+"t": "A2 role-play: a weekend away",
+"f": "A longer role-play from booking a trip to coming home"
+},
+{
+"d": 179,
+"lv": "A2",
+"t": "Common A2 mistakes",
+"f": "Fix typical errors: gostar without de, ser vs estar, wrong past forms"
+},
+{
+"d": 180,
+"lv": "A2",
+"t": "Review: A2 complete",
+"f": "Celebrate A2: recap the past tenses, the imperative and key topics"
+},
+{
+"d": 181,
+"lv": "B1",
+"t": "Welcome to B1",
+"f": "What being an independent user means and your goals for this stage"
+},
+{
+"d": 182,
+"lv": "B1",
+"t": "Present subjunctive: forms",
+"f": "Form the present subjunctive: fale, coma, parta"
+},
+{
+"d": 183,
+"lv": "B1",
+"t": "Subjunctive after wishes",
+"f": "Quero que venhas, espero que corra bem"
+},
+{
+"d": 184,
+"lv": "B1",
+"t": "Subjunctive after doubt",
+"f": "Duvido que, não acho que, talvez + subjunctive"
+},
+{
+"d": 185,
+"lv": "B1",
+"t": "Subjunctive after emotions",
+"f": "Fico contente que, é pena que, tenho medo que"
+},
+{
+"d": 186,
+"lv": "B1",
+"t": "Irregular subjunctive forms",
+"f": "Seja, esteja, tenha, vá, faça, saiba, queira"
+},
+{
+"d": 187,
+"lv": "B1",
+"t": "Impersonal expressions",
+"f": "É importante que, é preciso que, é possível que"
+},
+{
+"d": 188,
+"lv": "B1",
+"t": "Conjunctions with the subjunctive",
+"f": "Para que, embora, antes que, a não ser que"
+},
+{
+"d": 189,
+"lv": "B1",
+"t": "Negative commands",
+"f": "Não fales, não faça isso: the subjunctive inside the imperative"
+},
+{
+"d": 190,
+"lv": "B1",
+"t": "Giving advice",
+"f": "Aconselho-te a, devias, se fosse a ti, é melhor que"
+},
+{
+"d": 191,
+"lv": "B1",
+"t": "Future subjunctive: introduction",
+"f": "Quando puderes, se quiseres: a special feature of Portuguese"
+},
+{
+"d": 192,
+"lv": "B1",
+"t": "Future subjunctive in practice",
+"f": "Se tiveres tempo, liga-me; quando chegares, avisa"
+},
+{
+"d": 193,
+"lv": "B1",
+"t": "Planning a trip in detail",
+"f": "Make detailed plans with the future and the future subjunctive"
+},
+{
+"d": 194,
+"lv": "B1",
+"t": "The conditional tense",
+"f": "Faria, diria, gostaria: hypotheses and polite speech"
+},
+{
+"d": 195,
+"lv": "B1",
+"t": "Imperfect subjunctive: forms",
+"f": "Falasse, comesse, partisse and the irregular fosse, tivesse"
+},
+{
+"d": 196,
+"lv": "B1",
+"t": "Se eu fosse... hypotheses",
+"f": "Se eu tivesse tempo, viajaria mais: imagining other situations"
+},
+{
+"d": 197,
+"lv": "B1",
+"t": "Dream scenarios",
+"f": "If you won a trip around the world: practise hypotheses"
+},
+{
+"d": 198,
+"lv": "B1",
+"t": "Personal infinitive",
+"f": "Para nós irmos, antes de saíres: the inflected infinitive"
+},
+{
+"d": 199,
+"lv": "B1",
+"t": "Personal infinitive in use",
+"f": "É melhor fazermos, depois de chegarem: everyday uses"
+},
+{
+"d": 200,
+"lv": "B1",
+"t": "Review: subjunctive and hypotheses",
+"f": "Light review of the subjunctive moods and the conditional"
+},
+{
+"d": 201,
+"lv": "B1",
+"t": "Pluperfect: tinha feito",
+"f": "Quando cheguei, ele já tinha saído: one past before another"
+},
+{
+"d": 202,
+"lv": "B1",
+"t": "Telling complex stories",
+"f": "Mix perfeito, imperfeito and pluperfect in one narrative"
+},
+{
+"d": 203,
+"lv": "B1",
+"t": "Reported speech: statements",
+"f": "Ele disse que estava cansado: how tenses shift"
+},
+{
+"d": 204,
+"lv": "B1",
+"t": "Reported speech: questions",
+"f": "Perguntou-me se eu vinha e onde eu morava"
+},
+{
+"d": 205,
+"lv": "B1",
+"t": "Reported commands",
+"f": "Disse-me para esperar, pediu que eu ligasse"
+},
+{
+"d": 206,
+"lv": "B1",
+"t": "News in simple Portuguese",
+"f": "Headline vocabulary: segundo, de acordo com, anunciou"
+},
+{
+"d": 207,
+"lv": "B1",
+"t": "Passive voice",
+"f": "Foi construído em, é feito de: ser + past participle"
+},
+{
+"d": 208,
+"lv": "B1",
+"t": "Passive se and impersonal se",
+"f": "Vende-se casa, fala-se português, aluga-se quarto"
+},
+{
+"d": 209,
+"lv": "B1",
+"t": "Double participles",
+"f": "Aceitado or aceite, ganhado or ganho: which to use when"
+},
+{
+"d": 210,
+"lv": "B1",
+"t": "Mesoclisis in formal writing",
+"f": "Dir-te-ei, far-se-á: recognise these forms in formal texts"
+},
+{
+"d": 211,
+"lv": "B1",
+"t": "Talking about work in depth",
+"f": "Responsibilities, colleagues, projects and career goals"
+},
+{
+"d": 212,
+"lv": "B1",
+"t": "Writing a CV in Portuguese",
+"f": "Sections, verbs and phrases for a Portuguese CV"
+},
+{
+"d": 213,
+"lv": "B1",
+"t": "Formal letters",
+"f": "Structure and polite formulas for requests and applications"
+},
+{
+"d": 214,
+"lv": "B1",
+"t": "Giving a short presentation",
+"f": "Open, organise and close a talk: em primeiro lugar, para concluir"
+},
+{
+"d": 215,
+"lv": "B1",
+"t": "Meetings and teamwork",
+"f": "Propor, adiar, prazo, ordem de trabalhos and meeting phrases"
+},
+{
+"d": 216,
+"lv": "B1",
+"t": "Negotiating politely",
+"f": "Make offers and counteroffers in a friendly, polite way"
+},
+{
+"d": 217,
+"lv": "B1",
+"t": "Customer service",
+"f": "Handle a call as a client or an employee, clearly and politely"
+},
+{
+"d": 218,
+"lv": "B1",
+"t": "Digital life",
+"f": "Passwords, apps, privacy and online habits vocabulary"
+},
+{
+"d": 219,
+"lv": "B1",
+"t": "Science and curiosities",
+"f": "Explain simple facts and discoveries in Portuguese"
+},
+{
+"d": 220,
+"lv": "B1",
+"t": "Review: work and formal language",
+"f": "Light review: CV, letters, meetings and presentations"
+},
+{
+"d": 221,
+"lv": "B1",
+"t": "Certainty and doubt",
+"f": "Tenho a certeza, é provável, se calhar, duvido"
+},
+{
+"d": 222,
+"lv": "B1",
+"t": "Purpose and cause",
+"f": "Para, a fim de, porque, visto que, como"
+},
+{
+"d": 223,
+"lv": "B1",
+"t": "Contrast",
+"f": "Mas, porém, no entanto, embora, apesar de"
+},
+{
+"d": 224,
+"lv": "B1",
+"t": "Consequence",
+"f": "Por isso, portanto, de modo que, logo"
+},
+{
+"d": 225,
+"lv": "B1",
+"t": "Linking ideas in writing",
+"f": "Connectors that make paragraphs flow naturally"
+},
+{
+"d": 226,
+"lv": "B1",
+"t": "Describing processes",
+"f": "Primeiro, em seguida, por fim and the passive se in instructions"
+},
+{
+"d": 227,
+"lv": "B1",
+"t": "Describing pictures",
+"f": "Na imagem vê-se, ao fundo, à esquerda, parece que"
+},
+{
+"d": 228,
+"lv": "B1",
+"t": "Comparing cultures",
+"f": "Talk about similarities and differences without stereotypes"
+},
+{
+"d": 229,
+"lv": "B1",
+"t": "Customs in Portugal",
+"f": "Meals, greeting with two kisses, punctuality and everyday habits"
+},
+{
+"d": 230,
+"lv": "B1",
+"t": "Customs in Brazil",
+"f": "Warmth, informality, the famous jeitinho and everyday habits"
+},
+{
+"d": 231,
+"lv": "B1",
+"t": "Fado and saudade",
+"f": "The story of fado, Amália Rodrigues and words of longing"
+},
+{
+"d": 232,
+"lv": "B1",
+"t": "Bossa nova and MPB",
+"f": "Tom Jobim, João Gilberto and the vocabulary of Brazilian song"
+},
+{
+"d": 233,
+"lv": "B1",
+"t": "Fernando Pessoa",
+"f": "Portugal's great poet and his heteronyms, with a short simple quote"
+},
+{
+"d": 234,
+"lv": "B1",
+"t": "Machado de Assis",
+"f": "The classic Brazilian novelist and his ironic style"
+},
+{
+"d": 235,
+"lv": "B1",
+"t": "Camões and the sea",
+"f": "Os Lusíadas, the Age of Discoveries and sea vocabulary"
+},
+{
+"d": 236,
+"lv": "B1",
+"t": "Azulejos and Portuguese art",
+"f": "Painted tiles, the Manueline style and words to describe art"
+},
+{
+"d": 237,
+"lv": "B1",
+"t": "Regional food in depth",
+"f": "Regional dishes, ingredients and food-related idioms"
+},
+{
+"d": 238,
+"lv": "B1",
+"t": "Describing flavours",
+"f": "Seco, doce, salgado, amargo, suave, picante and tasting words"
+},
+{
+"d": 239,
+"lv": "B1",
+"t": "Football passion",
+"f": "Clubs, matches and football expressions in everyday speech"
+},
+{
+"d": 240,
+"lv": "B1",
+"t": "Review: culture",
+"f": "Light review: music, literature, customs and food"
+},
+{
+"d": 241,
+"lv": "B1",
+"t": "Common idioms I",
+"f": "Custar os olhos da cara, estar com a pulga atrás da orelha, meter água"
+},
+{
+"d": 242,
+"lv": "B1",
+"t": "Common idioms II",
+"f": "Chover a potes, fazer ouvidos de mercador, pôr-se a andar"
+},
+{
+"d": 243,
+"lv": "B1",
+"t": "Animal expressions",
+"f": "Memória de elefante, lágrimas de crocodilo, olho de lince and more"
+},
+{
+"d": 244,
+"lv": "B1",
+"t": "Body expressions",
+"f": "Dar com a língua nos dentes, ter lata, pôr as mãos no fogo"
+},
+{
+"d": 245,
+"lv": "B1",
+"t": "Brazilian everyday expressions",
+"f": "Tudo bem, beleza, valeu, falou and casual Brazilian speech"
+},
+{
+"d": 246,
+"lv": "B1",
+"t": "Portuguese everyday expressions",
+"f": "Fixe, giro, bué, pá and casual European speech"
+},
+{
+"d": 247,
+"lv": "B1",
+"t": "Formal and informal registers",
+"f": "Switch between tu, você and o senhor and adjust your tone"
+},
+{
+"d": 248,
+"lv": "B1",
+"t": "Polite softeners",
+"f": "Será que podia, se não for incómodo, importa-se de...?"
+},
+{
+"d": 249,
+"lv": "B1",
+"t": "Humour and wordplay",
+"f": "Simple jokes, puns and how humour works in Portuguese"
+},
+{
+"d": 250,
+"lv": "B1",
+"t": "Review: idioms and registers",
+"f": "Light review of idioms and switching registers"
+},
+{
+"d": 251,
+"lv": "B1",
+"t": "Health services and wellbeing",
+"f": "Appointments, centro de saúde and healthy living, in general terms"
+},
+{
+"d": 252,
+"lv": "B1",
+"t": "Fitness goals",
+"f": "Training, goals and motivation in Portuguese"
+},
+{
+"d": 253,
+"lv": "B1",
+"t": "Travel problems",
+"f": "Lost luggage, cancelled flights and polite requests for help"
+},
+{
+"d": 254,
+"lv": "B1",
+"t": "Housing in depth",
+"f": "Rental contracts, neighbours, repairs and moving house"
+},
+{
+"d": 255,
+"lv": "B1",
+"t": "Paperwork basics",
+"f": "Forms, documents, queues and asking for information at offices"
+},
+{
+"d": 256,
+"lv": "B1",
+"t": "Consumer habits",
+"f": "Online shopping, returns and comparing products"
+},
+{
+"d": 257,
+"lv": "B1",
+"t": "Volunteering and community",
+"f": "Talk about helping others and local projects"
+},
+{
+"d": 258,
+"lv": "B1",
+"t": "Education systems",
+"f": "Schools and universities in Portugal and Brazil"
+},
+{
+"d": 259,
+"lv": "B1",
+"t": "Family traditions",
+"f": "Sunday lunches, godparents and family celebrations"
+},
+{
+"d": 260,
+"lv": "B1",
+"t": "Review: society and daily life",
+"f": "Light review of services, housing and community vocabulary"
+},
+{
+"d": 261,
+"lv": "B1",
+"t": "Debating politely",
+"f": "State a view, support it and respond to other views"
+},
+{
+"d": 262,
+"lv": "B1",
+"t": "Hypotheses about the past",
+"f": "Se tivesse sabido, teria vindo: imagining a different past"
+},
+{
+"d": 263,
+"lv": "B1",
+"t": "Regrets and wishes",
+"f": "Quem me dera, oxalá, devia ter feito"
+},
+{
+"d": 264,
+"lv": "B1",
+"t": "Future perfect",
+"f": "Terei acabado; quando chegares, já terei saído"
+},
+{
+"d": 265,
+"lv": "B1",
+"t": "Conditional perfect",
+"f": "Teria gostado, teria sido melhor"
+},
+{
+"d": 266,
+"lv": "B1",
+"t": "Probability and guesses",
+"f": "Serão umas cinco horas, deve estar em casa, terá esquecido"
+},
+{
+"d": 267,
+"lv": "B1",
+"t": "Nominalisation",
+"f": "Turn verbs into nouns: decidir to decisão, chegar to chegada"
+},
+{
+"d": 268,
+"lv": "B1",
+"t": "Prefixes and suffixes",
+"f": "Des-, re-, in-, -ção, -dade, -mente to grow your vocabulary"
+},
+{
+"d": 269,
+"lv": "B1",
+"t": "Synonyms and precision",
+"f": "Choose stronger words: bom, ótimo, excelente, razoável"
+},
+{
+"d": 270,
+"lv": "B1",
+"t": "Paraphrasing",
+"f": "Say it in other words when you do not know the exact word"
+},
+{
+"d": 271,
+"lv": "B1",
+"t": "Listening to podcasts",
+"f": "Strategies for native speed: key words, context and repetition"
+},
+{
+"d": 272,
+"lv": "B1",
+"t": "Accents of Portugal",
+"f": "Northern, Lisbon, Alentejo, Azores and Madeira speech"
+},
+{
+"d": 273,
+"lv": "B1",
+"t": "Accents of Brazil",
+"f": "Carioca, paulista, nordestino and gaúcho accents and their features"
+},
+{
+"d": 274,
+"lv": "B1",
+"t": "Portuguese in Africa and Asia",
+"f": "Features of Angolan, Mozambican and Timorese Portuguese"
+},
+{
+"d": 275,
+"lv": "B1",
+"t": "Written accents",
+"f": "Acute, circumflex, tilde and grave accents and when to write them"
+},
+{
+"d": 276,
+"lv": "B1",
+"t": "Punctuation and style",
+"f": "Commas, quotation marks and clear paragraphs"
+},
+{
+"d": 277,
+"lv": "B1",
+"t": "Writing an opinion paragraph",
+"f": "A clear view, two arguments and a conclusion"
+},
+{
+"d": 278,
+"lv": "B1",
+"t": "Writing a review",
+"f": "Review a restaurant, film or book in Portuguese"
+},
+{
+"d": 279,
+"lv": "B1",
+"t": "B1 conversation challenge",
+"f": "A long conversation that mixes all the B1 structures"
+},
+{
+"d": 280,
+"lv": "B1",
+"t": "Review: B1 complete",
+"f": "Celebrate B1: recap the subjunctive, conditionals and connectors"
+},
+{
+"d": 281,
+"lv": "B2",
+"t": "Welcome to B2",
+"f": "What fluency at B2 looks like and how we will get there together"
+},
+{
+"d": 282,
+"lv": "B2",
+"t": "Subjunctive in relative clauses",
+"f": "Procuro alguém que fale inglês: describing what you look for"
+},
+{
+"d": 283,
+"lv": "B2",
+"t": "Subjunctive with indefinites",
+"f": "Quem quer que seja, onde quer que vás, o que quer que aconteça"
+},
+{
+"d": 284,
+"lv": "B2",
+"t": "Sequence of tenses",
+"f": "Match tenses: queria que viesses, espero que tenhas gostado"
+},
+{
+"d": 285,
+"lv": "B2",
+"t": "Perfect subjunctive",
+"f": "Espero que tenhas dormido bem, talvez já tenham chegado"
+},
+{
+"d": 286,
+"lv": "B2",
+"t": "Pluperfect subjunctive",
+"f": "Se tivesses dito, embora tivesse chovido"
+},
+{
+"d": 287,
+"lv": "B2",
+"t": "Mixed conditionals",
+"f": "Se tivesse estudado mais, agora falaria melhor"
+},
+{
+"d": 288,
+"lv": "B2",
+"t": "Concessive structures",
+"f": "Por mais que, por muito que, mesmo que, ainda que"
+},
+{
+"d": 289,
+"lv": "B2",
+"t": "Conditional conjunctions",
+"f": "Caso, desde que, contanto que, a menos que"
+},
+{
+"d": 290,
+"lv": "B2",
+"t": "Review: complex grammar",
+"f": "Light review of advanced subjunctive and conditional patterns"
+},
+{
+"d": 291,
+"lv": "B2",
+"t": "Verbal periphrases",
+"f": "Ir + gerúndio, andar a, vir a, chegar a: nuances of time and process"
+},
+{
+"d": 292,
+"lv": "B2",
+"t": "Gerund: Portugal vs Brazil",
+"f": "Estou a fazer vs estou fazendo, and the gerund in narratives"
+},
+{
+"d": 293,
+"lv": "B2",
+"t": "Passive or impersonal?",
+"f": "Choose the passive, se or the third person plural for each kind of text"
+},
+{
+"d": 294,
+"lv": "B2",
+"t": "Formal writing style",
+"f": "Avoid repetition, use precise verbs and formal connectors"
+},
+{
+"d": 295,
+"lv": "B2",
+"t": "Academic Portuguese",
+"f": "Phrases for essays: cabe referir, importa salientar, em suma"
+},
+{
+"d": 296,
+"lv": "B2",
+"t": "Summarising a text",
+"f": "Pick out the key ideas and rephrase them concisely"
+},
+{
+"d": 297,
+"lv": "B2",
+"t": "Argumentative essays",
+"f": "Structure an essay with introduction, development and conclusion"
+},
+{
+"d": 298,
+"lv": "B2",
+"t": "Reading the press",
+"f": "Opinion pieces, editorials and journalistic vocabulary"
+},
+{
+"d": 299,
+"lv": "B2",
+"t": "Economy vocabulary",
+"f": "Emprego, empresa, crescimento, inflação: general terms"
+},
+{
+"d": 300,
+"lv": "B2",
+"t": "Review: writing and the press",
+"f": "Light review of formal writing and summaries"
+},
+{
+"d": 301,
+"lv": "B2",
+"t": "Technology and the future",
+"f": "Artificial intelligence, automation and talking about change"
+},
+{
+"d": 302,
+"lv": "B2",
+"t": "The environment in depth",
+"f": "Climate, energy, sustainability and discussing solutions"
+},
+{
+"d": 303,
+"lv": "B2",
+"t": "Urban life and mobility",
+"f": "Traffic, public transport, cycling and city planning"
+},
+{
+"d": 304,
+"lv": "B2",
+"t": "Tourism and its effects",
+"f": "Benefits and challenges of tourism for cities"
+},
+{
+"d": 305,
+"lv": "B2",
+"t": "Work-life balance",
+"f": "Remote work, working hours, rest and wellbeing"
+},
+{
+"d": 306,
+"lv": "B2",
+"t": "Lifelong learning",
+"f": "Online courses, new skills and learning at every age"
+},
+{
+"d": 307,
+"lv": "B2",
+"t": "Living abroad",
+"f": "Moving countries, belonging and multicultural identity from a personal angle"
+},
+{
+"d": 308,
+"lv": "B2",
+"t": "Science news",
+"f": "Explain a discovery clearly and in general terms"
+},
+{
+"d": 309,
+"lv": "B2",
+"t": "Art and creativity",
+"f": "Talk about creative processes and different art forms"
+},
+{
+"d": 310,
+"lv": "B2",
+"t": "Review: modern society",
+"f": "Light review of society and future topics"
+},
+{
+"d": 311,
+"lv": "B2",
+"t": "Advanced idioms I",
+"f": "Ter o rei na barriga, fazer uma vaquinha, dar o braço a torcer"
+},
+{
+"d": 312,
+"lv": "B2",
+"t": "Advanced idioms II",
+"f": "Cortar o mal pela raiz, tirar o cavalinho da chuva, à grande e à francesa"
+},
+{
+"d": 313,
+"lv": "B2",
+"t": "Proverbs",
+"f": "Devagar se vai ao longe, quem não arrisca não petisca, mais vale tarde do que nunca"
+},
+{
+"d": 314,
+"lv": "B2",
+"t": "Colloquial Portugal",
+"f": "Bué, fixe, giro, cena, curtir and when they fit"
+},
+{
+"d": 315,
+"lv": "B2",
+"t": "Colloquial Brazil",
+"f": "Cara, mano, massa, legal, show de bola and when they fit"
+},
+{
+"d": 316,
+"lv": "B2",
+"t": "Dar and its many uses",
+"f": "Dar com, dar para, dar-se com, dar jeito: one verb, many meanings"
+},
+{
+"d": 317,
+"lv": "B2",
+"t": "Verbs with prepositions",
+"f": "Gostar de, pensar em, contar com, depender de, sonhar com"
+},
+{
+"d": 318,
+"lv": "B2",
+"t": "Saber or conhecer?",
+"f": "Fine distinctions and fixed expressions with both verbs"
+},
+{
+"d": 319,
+"lv": "B2",
+"t": "The many faces of ficar",
+"f": "Ficar contente, ficar em casa, ficar bem, ficar com"
+},
+{
+"d": 320,
+"lv": "B2",
+"t": "Review: idiomatic language",
+"f": "Light review of idioms, proverbs and verb nuances"
+},
+{
+"d": 321,
+"lv": "B2",
+"t": "Persuading with style",
+"f": "Convince politely with arguments, examples and questions"
+},
+{
+"d": 322,
+"lv": "B2",
+"t": "Diplomatic language",
+"f": "Soften criticism: talvez fosse melhor, não estou totalmente convencido"
+},
+{
+"d": 323,
+"lv": "B2",
+"t": "Handling misunderstandings",
+"f": "Clarify, rephrase and check that you understood each other"
+},
+{
+"d": 324,
+"lv": "B2",
+"t": "Storytelling with style",
+"f": "Suspense, dialogue and vivid description"
+},
+{
+"d": 325,
+"lv": "B2",
+"t": "Describing emotions precisely",
+"f": "Desiludido, aliviado, orgulhoso, comovido and their nuances"
+},
+{
+"d": 326,
+"lv": "B2",
+"t": "Memories and nostalgia",
+"f": "Lembrar-se de, recordar, ter saudades de and nostalgic stories"
+},
+{
+"d": 327,
+"lv": "B2",
+"t": "Interviews and Q&A",
+"f": "Ask follow-up questions and give thoughtful answers"
+},
+{
+"d": 328,
+"lv": "B2",
+"t": "Public speaking",
+"f": "Rhetorical questions, pauses and memorable endings"
+},
+{
+"d": 329,
+"lv": "B2",
+"t": "A friendly debate",
+"f": "A structured debate with arguments and polite rebuttals"
+},
+{
+"d": 330,
+"lv": "B2",
+"t": "Review: communication skills",
+"f": "Light review of persuasion, diplomacy and storytelling"
+},
+{
+"d": 331,
+"lv": "B2",
+"t": "José Saramago",
+"f": "The Nobel Prize winner, his unique style and a tip for reading him"
+},
+{
+"d": 332,
+"lv": "B2",
+"t": "Clarice Lispector",
+"f": "Brazil's introspective writer and her inner, poetic prose"
+},
+{
+"d": 333,
+"lv": "B2",
+"t": "Mia Couto",
+"f": "Mozambique's storyteller and his creative, playful Portuguese"
+},
+{
+"d": 334,
+"lv": "B2",
+"t": "Poetry in Portuguese",
+"f": "Read short poems and notice rhythm and imagery"
+},
+{
+"d": 335,
+"lv": "B2",
+"t": "Cinema in Portuguese",
+"f": "Portuguese and Brazilian films and how to describe a plot"
+},
+{
+"d": 336,
+"lv": "B2",
+"t": "The Age of Discoveries",
+"f": "Navigators, sea routes and exploration vocabulary, told factually"
+},
+{
+"d": 337,
+"lv": "B2",
+"t": "Brazil's independence",
+"f": "How Brazil became independent in 1822: the key facts"
+},
+{
+"d": 338,
+"lv": "B2",
+"t": "History of the language",
+"f": "From Latin and Galician-Portuguese to a global language"
+},
+{
+"d": 339,
+"lv": "B2",
+"t": "The Spelling Agreement",
+"f": "The 1990 Orthographic Agreement and remaining spelling differences"
+},
+{
+"d": 340,
+"lv": "B2",
+"t": "Review: culture and history",
+"f": "Light review of literature, film and history topics"
+},
+{
+"d": 341,
+"lv": "B2",
+"t": "Same word, different meaning",
+"f": "Apelido, propina, camisola, banheiro: words that change across the Atlantic"
+},
+{
+"d": 342,
+"lv": "B2",
+"t": "Pronunciation fine-tuning",
+"f": "Reduced vowels, the European dark l and the Brazilian soft t and d"
+},
+{
+"d": 343,
+"lv": "B2",
+"t": "Intonation and rhythm",
+"f": "Questions, emphasis and sounding natural"
+},
+{
+"d": 344,
+"lv": "B2",
+"t": "Speed listening",
+"f": "Follow fast conversations and fill gaps from context"
+},
+{
+"d": 345,
+"lv": "B2",
+"t": "Taking notes in Portuguese",
+"f": "Abbreviations and quick notes during talks and calls"
+},
+{
+"d": 346,
+"lv": "B2",
+"t": "Translating meaning, not words",
+"f": "Avoid literal translation traps between languages"
+},
+{
+"d": 347,
+"lv": "B2",
+"t": "Professional vocabulary",
+"f": "Implementar, gerir, otimizar, prazo and other work verbs"
+},
+{
+"d": 348,
+"lv": "B2",
+"t": "Advanced emails",
+"f": "Tone, follow-ups and polite insistence"
+},
+{
+"d": 349,
+"lv": "B2",
+"t": "Mastering small talk",
+"f": "Keep conversations going with natural questions and reactions"
+},
+{
+"d": 350,
+"lv": "B2",
+"t": "Review: precision and fluency",
+"f": "Light review of pronunciation, listening and precise vocabulary"
+},
+{
+"d": 351,
+"lv": "B2",
+"t": "Self-correction strategies",
+"f": "Notice and fix your own mistakes while speaking"
+},
+{
+"d": 352,
+"lv": "B2",
+"t": "Gaining time naturally",
+"f": "Pois é, quer dizer, ou seja, digamos: fillers that buy you time"
+},
+{
+"d": 353,
+"lv": "B2",
+"t": "Switching registers",
+"f": "The same message for a friend, a manager and an official letter"
+},
+{
+"d": 354,
+"lv": "B2",
+"t": "Abstract ideas",
+"f": "Freedom, happiness, success: discussing concepts"
+},
+{
+"d": 355,
+"lv": "B2",
+"t": "Irony and humour",
+"f": "Recognise irony and gentle sarcasm in Portuguese"
+},
+{
+"d": 356,
+"lv": "B2",
+"t": "Describing trends and data",
+"f": "Aumentar, diminuir, manter-se, a maioria, um terço"
+},
+{
+"d": 357,
+"lv": "B2",
+"t": "Your learning future",
+"f": "Set goals after B2: C1 skills, reading and media in Portuguese"
+},
+{
+"d": 358,
+"lv": "B2",
+"t": "Free conversation: travel",
+"f": "A free conversation about travel using everything you know"
+},
+{
+"d": 359,
+"lv": "B2",
+"t": "Free conversation: life goals",
+"f": "Talk about dreams and plans with rich language"
+},
+{
+"d": 360,
+"lv": "B2",
+"t": "Free conversation: culture",
+"f": "Discuss Lusophone culture in depth"
+},
+{
+"d": 361,
+"lv": "B2",
+"t": "Your favourite lesson",
+"f": "Revisit what you enjoyed most and use it again"
+},
+{
+"d": 362,
+"lv": "B2",
+"t": "Final grammar check",
+"f": "A quick check of the trickiest B2 structures"
+},
+{
+"d": 363,
+"lv": "B2",
+"t": "Final vocabulary check",
+"f": "Review the most useful words of the year"
+},
+{
+"d": 364,
+"lv": "B2",
+"t": "Your Portuguese story",
+"f": "Tell the story of your year learning Portuguese"
+},
+{
+"d": 365,
+"lv": "B2",
+"t": "Parabéns! B2 complete",
+"f": "Celebrate 365 days and plan your next steps in Portuguese"
+}
+]
+}

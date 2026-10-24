@@ -1,0 +1,2195 @@
+{
+"topic": "nature_trips",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why nature trips matter",
+"f": "How time outdoors refreshes the mind and body and sparks curiosity about the world"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Kinds of nature trips",
+"f": "Beaches, mountains, forests, deserts, lakes and parks: finding your own style"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "What is a national park?",
+"f": "How protected areas work and why so many countries create them"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "The first national parks",
+"f": "Yellowstone in 1872 and how the idea of national parks spread worldwide"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Choosing your first trip",
+"f": "Matching distance, difficulty and season to your energy and free time"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Day trips vs overnight trips",
+"f": "What changes when you stay a night outdoors instead of going home"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Reading a park map",
+"f": "Trails, viewpoints, visitor centres and the symbols used on park maps"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Visitor centres",
+"f": "Why a first stop at the visitor centre makes the whole trip better"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Checking the weather",
+"f": "Reading forecasts for mountains and coasts, where conditions change fast"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Dressing in layers",
+"f": "Base, mid and outer layers to stay comfortable outdoors"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Good walking shoes",
+"f": "Choosing footwear for trails, beaches and rocky paths"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "A simple daypack",
+"f": "What to carry for a few hours outdoors"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Water and snacks",
+"f": "How much to drink and easy energy foods for the trail"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Sun protection",
+"f": "Hats, sunscreen, sunglasses and shade in open landscapes"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Leave No Trace basics",
+"f": "The seven principles for enjoying nature without harming it"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Trail etiquette",
+"f": "Who gives way, staying on paths and sharing trails kindly"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Easy first walks",
+"f": "Short loops, boardwalks and flat lakeside paths for beginners"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Following trail markers",
+"f": "Reading waymarks, blazes and signposts so you stay on route"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Telling someone your plan",
+"f": "Why sharing your route and return time is a key safety habit"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Phone tips outdoors",
+"f": "Offline maps, saving battery and what to do when there is no signal"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Review: ready for the trail",
+"f": "A light recap of planning, gear, safety and trail manners"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Beaches of the world",
+"f": "Sandy, rocky, pebble, black sand and pink sand beaches"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "How beaches form",
+"f": "Waves, rivers and rocks: where beach sand comes from"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Tides made simple",
+"f": "Why the sea rises and falls and how to use tide tables"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Safe swimming",
+"f": "Flags, lifeguards and checking local conditions before swimming"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Rip currents",
+"f": "How to spot them and how to swim out of one calmly"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Beach etiquette",
+"f": "Space, noise, litter and respecting nesting areas"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Rock pools",
+"f": "Discovering small sea creatures gently at low tide"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Snorkelling first steps",
+"f": "Mask, snorkel and fins: enjoying the underwater world safely"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Coral reefs",
+"f": "Why reefs matter and how to visit them without causing damage"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Review: by the sea",
+"f": "Recap beaches, tides, swimming safety and reefs"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Mountains for beginners",
+"f": "Hills, ranges and peaks: what makes a mountain"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Altitude basics",
+"f": "Why the air feels thinner higher up and why going up slowly helps"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Mountain weather",
+"f": "Fast changes, afternoon storms and strong wind on ridges"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Cable cars and scenic railways",
+"f": "Easy ways to enjoy high views without a long climb"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Mountain huts",
+"f": "What huts offer and simple hut manners"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Famous mountain ranges",
+"f": "The Alps, Andes, Himalayas, Rockies and more at a glance"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Lakes and reflections",
+"f": "Glacial, volcanic and alpine lakes and why they shine"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Waterfalls",
+"f": "How waterfalls form and some famous ones to dream about"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Caves and caverns",
+"f": "Limestone caves, stalactites and guided cave visits"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Forests of the world",
+"f": "Rainforests, temperate forests and northern boreal forests"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Rainforest wonders",
+"f": "The layers of the rainforest and its amazing biodiversity"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Review: peaks and forests",
+"f": "Recap mountains, lakes, waterfalls, caves and forests"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Deserts are alive",
+"f": "Plants and animals adapted to life in dry places"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Desert trip safety",
+"f": "Heat, water, sun and the best times of day to explore"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Sand dunes",
+"f": "How dunes move and fun ways to enjoy them"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Night skies",
+"f": "Why remote places have such bright, starry skies"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Stargazing basics",
+"f": "Finding the Moon, planets and bright constellations"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Dark sky places",
+"f": "Protected areas for stargazing and how they limit light pollution"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Rivers and canyons",
+"f": "How rivers carve canyons over very long periods of time"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Wetlands and marshes",
+"f": "Why wetlands are bird paradises and natural water filters"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Islands",
+"f": "Volcanic, coral and continental islands and their unique life"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Volcanoes",
+"f": "Active and dormant volcanoes and visiting volcanic landscapes safely"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Glaciers",
+"f": "How glaciers move and shape valleys"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Review: wild landscapes",
+"f": "Recap deserts, skies, rivers, islands, volcanoes and glaciers"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Wildlife watching basics",
+"f": "Patience, quiet and the best times of day to see animals"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Keeping a safe distance",
+"f": "Why distance protects you and wildlife, and why we never feed animals"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Birdwatching starter",
+"f": "Binoculars, field guides and your very first bird list"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Animal tracks and signs",
+"f": "Footprints, feathers and other clues animals leave behind"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Marine life spotting",
+"f": "Seals, dolphins, turtles and whales seen from shore and boat"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Responsible wildlife tours",
+"f": "Choosing ethical operators that put animals first"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Insects and small creatures",
+"f": "The tiny life that keeps ecosystems working"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Plants and flowers",
+"f": "Learning to recognise a few local plants on every walk"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Trees you can recognise",
+"f": "Leaves, bark and shapes of common trees"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Seasons in nature",
+"f": "Spring blooms, summer green, autumn colours and winter quiet"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Review: living nature",
+"f": "Recap wildlife, plants and seasonal changes"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Yellowstone",
+"f": "Geysers, hot springs and wildlife in the world's first national park"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Yosemite",
+"f": "Granite cliffs, giant sequoias and famous waterfalls in California"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Grand Canyon",
+"f": "Layers of rock and how the Colorado River carved the canyon"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Banff and the Rockies",
+"f": "Turquoise lakes and mountain scenery in Canada"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Torres del Paine",
+"f": "Granite towers, glaciers and strong winds in Chilean Patagonia"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Iguazu Falls",
+"f": "Hundreds of waterfalls on the border of Argentina and Brazil"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "The Amazon",
+"f": "The largest tropical rainforest and how to visit it responsibly"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Galápagos Islands",
+"f": "Unique wildlife that helped inspire Charles Darwin's ideas"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Review: parks of the Americas",
+"f": "Recap the famous parks of North and South America"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Swiss Alps",
+"f": "Trains, peaks and alpine meadows in Switzerland"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "The Dolomites",
+"f": "Pale rock towers and mountain paths in northern Italy"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Plitvice Lakes",
+"f": "Terraced lakes, waterfalls and wooden walkways in Croatia"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Scottish Highlands",
+"f": "Lochs, glens and wide open moorland"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Norwegian fjords",
+"f": "Deep sea inlets carved by ancient glaciers"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Iceland's nature",
+"f": "Waterfalls, geysers, lava fields and glaciers"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Portugal's Algarve coast",
+"f": "Golden cliffs, sea caves and coastal walks"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Review: European nature",
+"f": "Recap mountains, lakes, fjords and coasts of Europe"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Serengeti",
+"f": "Wide plains and the great wildebeest migration in Tanzania"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Kruger National Park",
+"f": "One of Africa's best-known safari parks, in South Africa"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Sahara Desert",
+"f": "Dunes, oases and starry nights in the world's largest hot desert"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Madagascar",
+"f": "An island of lemurs, baobabs and wildlife found nowhere else"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Mount Kilimanjaro",
+"f": "Africa's highest mountain and its different climate zones"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Victoria Falls",
+"f": "The roaring falls between Zambia and Zimbabwe"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: African nature",
+"f": "Recap safaris, deserts, islands and great falls"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Mount Fuji",
+"f": "Japan's iconic volcano and how people enjoy it"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Ha Long Bay",
+"f": "Limestone islands rising from the sea in Vietnam"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "The Himalayas",
+"f": "The world's highest mountains and gentle ways to enjoy them"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Zhangjiajie",
+"f": "Tall sandstone pillars rising from forests in China"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Bali's rice terraces",
+"f": "Green terraces and the traditional subak water system"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Komodo National Park",
+"f": "Komodo dragons and colourful reefs in Indonesia"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Review: Asian nature",
+"f": "Recap volcanoes, bays, mountains and islands in Asia"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Great Barrier Reef",
+"f": "The world's largest coral reef system, off Australia"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Uluru",
+"f": "The great red rock and its deep meaning for the Anangu people"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Milford Sound",
+"f": "Waterfalls and steep cliffs in New Zealand's wild southwest"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Tasmania",
+"f": "Wild forests, rugged coasts and unique animals"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Pacific islands",
+"f": "Lagoons, reefs and island life in the Pacific Ocean"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Review: Oceania",
+"f": "Recap reefs, rocks, fiords and islands of Oceania"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Planning a weekend in nature",
+"f": "A simple plan: where to go, how to get there and where to sleep"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Getting there green",
+"f": "Trains, buses and shared rides to reach nature spots"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Park fees and permits",
+"f": "Why some parks need tickets or permits and how to plan ahead"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Choosing a season",
+"f": "Crowds, weather and wildlife timing for each season"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Nature trips with kids",
+"f": "Short trails, games and keeping little ones happy outdoors"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Nature trips with friends",
+"f": "Planning together and sharing gear and tasks"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Solo nature trips",
+"f": "Enjoying nature alone with smart safety habits"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Nature with a dog",
+"f": "Pet-friendly trails, leashes and wildlife rules"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Accessible nature",
+"f": "Paved trails, viewpoints and parks designed for everyone"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Picnics outdoors",
+"f": "Packing a picnic and leaving the place cleaner than you found it"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Nature photography basics",
+"f": "Light, composition and photographing landscapes with a phone"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Nature journaling",
+"f": "Sketching and writing down what you see on each trip"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Mindful walks",
+"f": "Slowing down and using all your senses outdoors"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Forest bathing",
+"f": "The Japanese idea of shinrin-yoku and how to try it"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Outdoor first aid kit",
+"f": "What to carry for blisters, scrapes and other small problems"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Blister prevention",
+"f": "Socks, shoes and early care to keep your feet happy"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner explorer",
+"f": "Celebrate 120 days and plan your next simple nature trip"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Hiking grades explained",
+"f": "How trails are graded for distance, elevation and terrain"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Elevation gain",
+"f": "Why going up matters more than distance for effort"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Pacing on the trail",
+"f": "Finding a steady rhythm and taking smart breaks"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Trekking poles",
+"f": "When poles help and how to use them well"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Uphill and downhill technique",
+"f": "Ways to save energy going up and protect your knees going down"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Topographic maps",
+"f": "Reading contour lines to picture the shape of the land"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Using a compass",
+"f": "Taking a bearing and orienting a map"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "GPS and apps",
+"f": "Using navigation apps wisely, always with a backup"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Route planning",
+"f": "Estimating walking time and setting a sensible turnaround time"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Hiking in a group",
+"f": "Staying together, pacing for the slowest and sharing roles"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Review: hiking skills",
+"f": "Recap grades, pacing, maps and route planning"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Camping styles",
+"f": "Campsites, wild camping, glamping and huts compared"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Choosing a tent",
+"f": "Size, weight, seasons and pitching it well"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Sleeping warm",
+"f": "Sleeping bags, mats and staying warm at night"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Picking a pitch",
+"f": "Flat ground, shelter, distance from water and safety"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Camp cooking",
+"f": "Simple stoves and easy one-pot meals"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Water treatment",
+"f": "Filtering, boiling and purifying water outdoors"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Campfire rules",
+"f": "When fires are allowed and how to keep them safe"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Camp hygiene",
+"f": "Washing, toilets and keeping camp clean"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Food storage and animals",
+"f": "Keeping food away from curious wildlife"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Packing a backpack",
+"f": "Weight distribution and what goes where"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Review: camping skills",
+"f": "Recap tents, sleep, cooking, water and camp care"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Reading the sky",
+"f": "Clouds, wind and signs that the weather is changing"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Lightning safety",
+"f": "What to do when storms roll in over the mountains"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Heat on the trail",
+"f": "Staying cool and spotting early signs of heat exhaustion"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Cold and wind",
+"f": "Wind chill, warm layers and staying dry"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Hiking in the rain",
+"f": "Rain gear, slippery trails and keeping spirits high"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "River crossings",
+"f": "When to cross, when to wait and safer techniques"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Hiking in fog",
+"f": "Staying on route when visibility drops"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Getting lost calmly",
+"f": "The STOP method: stop, think, observe, plan"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Emergency signals",
+"f": "Whistles, lights and how to call for help"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Review: outdoor safety",
+"f": "Recap weather, water crossings and emergencies"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Coastal walks",
+"f": "Cliff paths, tide timing and sea views"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Famous coastal trails",
+"f": "Coastal paths in Cornwall, Portugal, Australia and beyond"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Kayaking basics",
+"f": "Paddling, safety and first trips on calm water"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Stand-up paddleboarding",
+"f": "Balance, safety and the best conditions to start"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Surfing culture",
+"f": "Waves, beginner beaches and surf etiquette"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Sailing day trips",
+"f": "What to expect on a sailing trip and how to help on board"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Whale watching",
+"f": "Seasons, responsible boats and what you might see"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Turtle nesting beaches",
+"f": "How to watch turtles respectfully at night"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Sea caves and arches",
+"f": "Exploring coastal caves and arches carefully by kayak or boat"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Review: water adventures",
+"f": "Recap coastal walks, paddling, surfing and marine trips"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Lake trips",
+"f": "Swimming, canoeing and lakeside walks"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "River trips",
+"f": "Canoeing, rafting grades and river safety"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Wild swimming",
+"f": "Safe spots, cold water care and respecting nature"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Hot springs",
+"f": "Natural hot springs and their etiquette around the world"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Geysers",
+"f": "How geysers work and where to see them"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Waterfall hikes",
+"f": "Planning trails that lead to waterfalls"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Fishing respectfully",
+"f": "Rules, licences and catch-and-release ideas"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Review: lakes and rivers",
+"f": "Recap lakes, rivers, springs and waterfall hikes"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Mountain hiking skills",
+"f": "Scrambles, ridges and steady footing on rock"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Hut-to-hut hiking",
+"f": "Planning days of walking between mountain huts"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Via ferrata",
+"f": "Iron paths with cables and ladders, and the safety gear they need"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Snowshoeing",
+"f": "Walking on snow and winter trail basics"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Cross-country skiing",
+"f": "A calm way to explore snowy landscapes"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Winter mountain safety",
+"f": "Short days, cold and avalanche awareness"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Alpine flowers",
+"f": "Edelweiss, gentians and other mountain blooms"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Mountain animals",
+"f": "Ibex, marmots, eagles and other high-altitude life"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Sunrise from a summit",
+"f": "Planning an early start for magical morning light"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: mountain life",
+"f": "Recap mountain skills, winter trips and wildlife"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Rainforest trips",
+"f": "Guided walks, humidity and rainforest etiquette"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Canopy walkways",
+"f": "Seeing the forest from above"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Jungle wildlife",
+"f": "Monkeys, birds and frogs and how to spot them"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Cloud forests",
+"f": "Misty mountain forests full of mosses and orchids"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Mangroves",
+"f": "Coastal forests that protect shores and shelter young fish"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Autumn foliage trips",
+"f": "Where and when leaves turn bright colours"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Ancient trees",
+"f": "Sequoias, baobabs, olive trees and other old giants"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Mushrooms to admire",
+"f": "Enjoying fungi with your eyes and camera, not on your plate"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Review: forests deep dive",
+"f": "Recap rainforests, mangroves, autumn colours and ancient trees"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Safari basics",
+"f": "Game drives, guides and what to pack"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "The Big Five",
+"f": "Five famous safari animals and the story behind the name"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Walking safaris",
+"f": "Exploring on foot with a trained guide"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Birding hotspots",
+"f": "Famous places for watching birds and migrations"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Migration wonders",
+"f": "Birds, butterflies, whales and wildebeest on the move"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Nocturnal animals",
+"f": "Night walks and animals that wake up at dusk"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Polar wildlife",
+"f": "Penguins, polar bears and seals of the cold regions"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Wildlife photography",
+"f": "Long lenses, patience and respecting animals"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Review: wildlife adventures",
+"f": "Recap safaris, migrations and wildlife photography"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Desert treks",
+"f": "Planning walks in dry places with care"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Oases",
+"f": "Water in the desert and the life it supports"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Canyon country",
+"f": "Slot canyons, arches and safety in flash flood areas"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Salt flats",
+"f": "Mirror-like landscapes such as Salar de Uyuni in Bolivia"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Volcanic hikes",
+"f": "Craters, lava fields and staying on marked paths"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Caving adventures",
+"f": "Guided caving with helmets and lights"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Northern lights",
+"f": "What causes auroras and where to see them"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Midnight sun",
+"f": "Long summer days near the poles"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Review: extreme landscapes",
+"f": "Recap deserts, canyons, volcanoes and polar light"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Island hopping in nature",
+"f": "Planning nature visits across several islands"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Marine protected areas",
+"f": "How protected seas help fish and reefs recover"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Reef-safe habits",
+"f": "Never touching coral and choosing reef-friendly sunscreen"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Diving introduction",
+"f": "Try dives, courses and what divers get to see"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Kelp forests",
+"f": "Underwater forests along cool coasts"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Seabird colonies",
+"f": "Puffins, gannets and cliffs full of life"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Review: sea and islands",
+"f": "Recap islands, protected seas and underwater life"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Long-distance trails",
+"f": "What makes a famous long trail special"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Camino de Santiago",
+"f": "The network of routes leading to Santiago de Compostela"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Appalachian Trail",
+"f": "A long footpath through the eastern United States"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Tour du Mont Blanc",
+"f": "A classic loop through France, Italy and Switzerland"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "West Highland Way",
+"f": "A popular long walk through Scotland"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Inca Trail",
+"f": "A historic path to Machu Picchu in Peru"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Kumano Kodo",
+"f": "Ancient forest paths on Japan's Kii Peninsula"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Overland Track",
+"f": "A famous walk through the wild heart of Tasmania"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Review: famous trails",
+"f": "Recap long-distance trails around the world"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Ecotourism explained",
+"f": "What makes a trip truly eco-friendly"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Choosing green lodges",
+"f": "Signs of a lodge that cares for nature and local people"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Supporting local communities",
+"f": "Local guides, crafts and food on nature trips"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Overtourism in nature",
+"f": "Spreading visits out and choosing quieter places"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Lighter travel footprints",
+"f": "Simple choices that reduce the environmental impact of trips"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Citizen science",
+"f": "Counting birds or plants to help researchers"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Volunteering in nature",
+"f": "Trail work, beach cleanups and conservation trips"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Review: travelling responsibly",
+"f": "Recap ecotourism, communities and helping nature"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Fitness for hiking",
+"f": "Simple training to enjoy longer walks"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Stretching after hikes",
+"f": "Gentle stretches for legs and back"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Hydration outdoors",
+"f": "How heat, altitude and effort change how much you need to drink"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Trail nutrition",
+"f": "Balancing energy, salt and tasty food on long days"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Sleeping well outdoors",
+"f": "Comfort tips for better nights in tents and huts"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Gear care",
+"f": "Cleaning and storing boots, tents and jackets"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Budget nature trips",
+"f": "Free parks, camping and smart savings"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Renting gear",
+"f": "When renting is smarter than buying"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: body and gear",
+"f": "Recap fitness, nutrition, sleep and gear care"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Nature in the city",
+"f": "Urban parks, rivers and green corridors"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Botanical gardens",
+"f": "Gardens that bring the world's plants together"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Nature reserves near you",
+"f": "Finding local reserves and trails close to home"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Seasonal calendars",
+"f": "Planning a whole year of nature trips"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Rainy day nature",
+"f": "Enjoying nature when the weather is grey"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Nature and creativity",
+"f": "Writing, painting and music inspired by landscapes"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Nature myths and stories",
+"f": "Legends people tell about mountains, lakes and forests"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Famous naturalists",
+"f": "Humboldt, Darwin, Muir and their love for wild places"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Nature documentaries",
+"f": "Learning from films and choosing your next destination"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate milestone",
+"f": "Celebrate day 250 and plan a bigger nature adventure"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Planning a multi-day trek",
+"f": "Routes, resupply points, permits and rest days"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Lightweight packing",
+"f": "Cutting weight safely without losing comfort"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Food planning for treks",
+"f": "Energy, variety and packing meals for many days"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Off-trail navigation",
+"f": "Map and compass skills for unmarked terrain"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Wild camping ethics",
+"f": "Where it is allowed and how to leave zero trace"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Altitude acclimatisation",
+"f": "Climb high, sleep low and listen to your body"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "High-altitude trekking",
+"f": "Planning treks in high mountains with care"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Glacier travel basics",
+"f": "Why glaciers need guides, ropes and crampons"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Mountaineering first steps",
+"f": "Courses, guides and easy summits to begin with"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Review: expedition planning",
+"f": "Recap multi-day treks, altitude and glacier basics"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Everest region treks",
+"f": "Trekking to Everest Base Camp in Nepal"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Annapurna region",
+"f": "Classic trekking routes in central Nepal"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Patagonia treks",
+"f": "Wind, glaciers and the famous W Trek in Torres del Paine"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Kilimanjaro routes",
+"f": "Different routes up the mountain and why acclimatisation matters"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Alpine classics",
+"f": "Famous multi-day walks in the Alps"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Iceland's Laugavegur",
+"f": "Colourful mountains and lava fields on a classic trek"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Norway's Lofoten",
+"f": "Sharp peaks rising straight from the sea"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Dolomites Alta Via",
+"f": "High routes linking mountain huts in the Dolomites"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Review: legendary treks",
+"f": "Recap the world's famous multi-day treks"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Remote national parks",
+"f": "Wild places with few visitors and how to plan a visit"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Arctic adventures",
+"f": "Svalbard, Greenland and the far north"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Antarctica",
+"f": "The icy continent, expedition cruises and visitor guidelines"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Australian Outback",
+"f": "Red deserts, gorges and very long distances"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Namib Desert",
+"f": "Tall red dunes and coastal fog in Namibia"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Atacama Desert",
+"f": "One of the driest places on Earth and its famous starry skies"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Lake Baikal and the taiga",
+"f": "The world's deepest lake and the vast Siberian forests around it"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Mongolian steppe",
+"f": "Open grasslands and nomadic hospitality"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Review: remote wilderness",
+"f": "Recap polar, desert and steppe adventures"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Ecology basics",
+"f": "Food webs, habitats and how ecosystems connect"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Biodiversity hotspots",
+"f": "Regions with many species found nowhere else"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Keystone species",
+"f": "Animals like wolves and beavers that shape whole ecosystems"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Rewilding",
+"f": "Bringing back natural processes and missing species to landscapes"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Invasive species",
+"f": "How travellers can avoid spreading seeds and pests"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Changing landscapes",
+"f": "How a changing climate affects glaciers, reefs and forests"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Protecting wild places",
+"f": "How parks, rangers and communities protect nature"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "UNESCO natural sites",
+"f": "What makes a natural World Heritage Site"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Indigenous land knowledge",
+"f": "Respecting the peoples who have cared for lands for generations"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Review: understanding ecosystems",
+"f": "Recap ecology, conservation and protected areas"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Geology for travellers",
+"f": "Reading rocks: volcanic, sedimentary and metamorphic"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Plate tectonics",
+"f": "How moving plates build mountains and islands"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Erosion and landscapes",
+"f": "Wind, water and ice shaping the land"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Fossils and deep time",
+"f": "Fossil sites and the long history of life on Earth"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Weather systems",
+"f": "Fronts, monsoons and trade winds explained simply"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Ocean currents",
+"f": "How currents shape coasts, climate and marine life"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Astronomy outdoors",
+"f": "Meteor showers, the Milky Way and night sky events"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Review: earth sciences",
+"f": "Recap geology, weather, oceans and skies"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Advanced landscape photography",
+"f": "Golden hour, long exposures and strong composition"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Astrophotography",
+"f": "Photographing stars and the Milky Way"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Drone rules in parks",
+"f": "Why many parks restrict drones and how to respect the rules"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Wildlife ethics in photos",
+"f": "Never baiting, crowding or disturbing animals for a shot"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Storytelling with nature photos",
+"f": "Building a photo story of a trip"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Video diaries outdoors",
+"f": "Filming nature trips simply and respectfully"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Review: capturing nature",
+"f": "Recap photography, video and ethics"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Trail running",
+"f": "Running on trails, safety and etiquette"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Bikepacking",
+"f": "Multi-day cycling trips through nature"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Mountain biking",
+"f": "Trails, skills and sharing paths with hikers"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Rock climbing basics",
+"f": "From indoor walls to outdoor rock, climbing with guides"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Canyoning",
+"f": "Descending canyons with ropes and qualified guides"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Paragliding views",
+"f": "Flying with a tandem pilot over landscapes"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Freediving and reefs",
+"f": "Breath-hold diving basics and safety"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Ski touring",
+"f": "Climbing on skis and winter backcountry awareness"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Review: active adventures",
+"f": "Recap sports that take you deep into nature"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Slow travel in nature",
+"f": "Staying longer in one place and going deeper"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Cabin life",
+"f": "Simple living in remote cabins and huts"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Farm stays",
+"f": "Learning about rural life and seasonal work"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Nature retreats",
+"f": "Quiet retreats, yoga and wellbeing in nature"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Seasonal living",
+"f": "Following the seasons for food, light and activity"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Digital detox",
+"f": "Switching off and reconnecting with your surroundings"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Review: deeper connection",
+"f": "Recap slow travel, retreats and detox ideas"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Leading a group hike",
+"f": "Planning, briefing and caring for a group"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Wilderness first aid",
+"f": "Why courses matter and the most common outdoor injuries"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Risk assessment",
+"f": "Thinking ahead about weather, terrain and the group"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Decision making outdoors",
+"f": "Knowing when to turn back and why that is a win"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Group dynamics",
+"f": "Keeping morale high and solving small conflicts"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Teaching kids about nature",
+"f": "Games and activities that build a love for nature"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Review: outdoor leadership",
+"f": "Recap leading, safety and decisions"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Nature in literature",
+"f": "Books and writers inspired by wild places"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Nature in art",
+"f": "Painters and artists who captured landscapes"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Music of nature",
+"f": "Birdsong, natural sounds and music inspired by nature"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Nature traditions worldwide",
+"f": "Festivals and customs connected to seasons and nature"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Treasured natural sites",
+"f": "Mountains, rivers and forests honoured by local communities"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Food from the wild",
+"f": "Local foraging traditions and the safety rules behind them"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Review: nature and culture",
+"f": "Recap literature, art, music and traditions"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Planning a dream expedition",
+"f": "Turning a dream nature trip into a real plan"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Saving for big trips",
+"f": "Planning and saving for long nature trips in a calm, realistic way"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Permits and logistics",
+"f": "Lotteries, guides and booking windows for popular parks"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Insurance for adventures",
+"f": "Checking cover for hiking, diving and remote trips"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Training plan for a trek",
+"f": "Building fitness week by week"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Gear checklist mastery",
+"f": "Building your personal checklists for every trip type"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Contingency planning",
+"f": "Backup routes, spare days and plan B ideas"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Review: dream trip ready",
+"f": "Recap planning, permits, training and contingencies"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Spring nature trips",
+"f": "Wildflowers, full waterfalls and bird migration"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Summer nature trips",
+"f": "High trails, lakes and long days"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Autumn nature trips",
+"f": "Foliage, harvests and quieter parks"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Winter nature trips",
+"f": "Snow, auroras and warm-weather escapes"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Southern Hemisphere seasons",
+"f": "Planning trips when the seasons are reversed"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Review: a year outdoors",
+"f": "Recap seasonal trip ideas around the world"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Sharing nature online",
+"f": "Geotagging wisely and protecting fragile places"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Inspiring others",
+"f": "Inviting friends to try nature trips"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Your nature story",
+"f": "Telling the story of your favourite outdoor moment"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Comparing parks you know",
+"f": "Reflecting on what makes a park special to you"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Hidden gems",
+"f": "How to find lesser-known nature spots"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Local nature support",
+"f": "Simple ways to support parks and nature near you"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Nature and wellbeing",
+"f": "What research and experience say about time outdoors"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Lifelong outdoor habits",
+"f": "Making nature part of every week"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Your bucket list",
+"f": "Building a list of dream nature places"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Quiz: landscapes",
+"f": "A fun quiz on beaches, mountains and forests"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Quiz: parks of the world",
+"f": "A fun quiz on famous national parks"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Quiz: wildlife",
+"f": "A fun quiz on animals and where to see them"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Quiz: outdoor skills",
+"f": "A fun quiz on safety, navigation and camping"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Planning your next trip",
+"f": "Choosing your next nature trip with everything you have learned"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Gratitude for wild places",
+"f": "Reflecting on the places that shaped you"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Passing it on",
+"f": "Sharing skills and a love of nature with others"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "The year in review",
+"f": "Looking back at the biggest lessons of the path"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating 365 days",
+"f": "A joyful finale and a toast to future adventures"
+}
+]
+}

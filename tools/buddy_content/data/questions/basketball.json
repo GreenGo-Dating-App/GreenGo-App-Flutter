@@ -1,0 +1,1305 @@
+{
+ "topic": "basketball",
+ "questions": [
+  {
+   "id": "basketball-001",
+   "lv": "any",
+   "i18n": {
+    "en": "How did you first discover basketball?",
+    "de": "Wie hast du Basketball zum ersten Mal entdeckt?",
+    "es": "¿Cómo descubriste el baloncesto por primera vez?",
+    "fr": "Comment as-tu découvert le basket pour la première fois ?",
+    "it": "Come hai scoperto il basket per la prima volta?",
+    "pt": "Como é que descobriste o basquetebol pela primeira vez?",
+    "pt_BR": "Como você conheceu o basquete pela primeira vez?"
+   }
+  },
+  {
+   "id": "basketball-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer playing basketball or watching it, and why?",
+    "de": "Spielst du lieber Basketball oder schaust du lieber zu, und warum?",
+    "es": "¿Prefieres jugar al baloncesto o verlo, y por qué?",
+    "fr": "Tu préfères jouer au basket ou le regarder, et pourquoi ?",
+    "it": "Preferisci giocare a basket o guardarlo, e perché?",
+    "pt": "Preferes jogar basquetebol ou ver jogos, e porquê?",
+    "pt_BR": "Você prefere jogar basquete ou assistir, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Which basketball team do you support, or which one would you like to follow?",
+    "de": "Welches Basketballteam unterstützt du, oder welchem würdest du gern folgen?",
+    "es": "¿De qué equipo de baloncesto eres, o a cuál te gustaría seguir?",
+    "fr": "Quelle équipe de basket soutiens-tu, ou laquelle aimerais-tu suivre ?",
+    "it": "Per quale squadra di basket tifi, o quale ti piacerebbe seguire?",
+    "pt": "Que equipa de basquetebol apoias, ou qual gostarias de acompanhar?",
+    "pt_BR": "Para qual time de basquete você torce, ou qual gostaria de acompanhar?"
+   }
+  },
+  {
+   "id": "basketball-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Who is your favorite basketball player of all time, and what makes them special?",
+    "de": "Wer ist dein liebster Basketballspieler aller Zeiten, und was macht ihn besonders?",
+    "es": "¿Quién es tu jugador o jugadora de baloncesto favorito de todos los tiempos, y qué lo hace especial?",
+    "fr": "Qui est ton joueur ou ta joueuse de basket préféré de tous les temps, et pourquoi ?",
+    "it": "Chi è il tuo giocatore o la tua giocatrice di basket preferita di sempre, e perché?",
+    "pt": "Quem é o teu jogador ou jogadora de basquetebol preferido de sempre, e porquê?",
+    "pt_BR": "Quem é seu jogador ou jogadora de basquete favorito de todos os tempos, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-005",
+   "lv": "any",
+   "i18n": {
+    "en": "How popular is basketball where you live?",
+    "de": "Wie beliebt ist Basketball dort, wo du lebst?",
+    "es": "¿Qué tan popular es el baloncesto donde vives?",
+    "fr": "Le basket est-il populaire là où tu vis ?",
+    "it": "Quanto è popolare il basket dove vivi?",
+    "pt": "O basquetebol é popular onde vives?",
+    "pt_BR": "O basquete é popular onde você mora?"
+   }
+  },
+  {
+   "id": "basketball-006",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you enjoy most about basketball: the speed, the teamwork or the big moments?",
+    "de": "Was gefällt dir am Basketball am meisten: das Tempo, das Teamspiel oder die großen Momente?",
+    "es": "¿Qué es lo que más te gusta del baloncesto: la velocidad, el trabajo en equipo o los grandes momentos?",
+    "fr": "Qu'est-ce que tu aimes le plus dans le basket : la vitesse, le jeu collectif ou les grands moments ?",
+    "it": "Cosa ti piace di più del basket: la velocità, il gioco di squadra o i grandi momenti?",
+    "pt": "O que mais gostas no basquetebol: a velocidade, o jogo de equipa ou os grandes momentos?",
+    "pt_BR": "O que você mais curte no basquete: a velocidade, o trabalho em equipe ou os grandes momentos?"
+   }
+  },
+  {
+   "id": "basketball-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever watched a basketball game live in an arena? How was it?",
+    "de": "Hast du schon einmal ein Basketballspiel live in der Halle gesehen? Wie war es?",
+    "es": "¿Alguna vez has visto un partido de baloncesto en directo en un pabellón? ¿Qué tal fue?",
+    "fr": "As-tu déjà vu un match de basket en direct dans une salle ? C'était comment ?",
+    "it": "Hai mai visto una partita di basket dal vivo in un palazzetto? Com'è stato?",
+    "pt": "Já alguma vez viste um jogo de basquetebol ao vivo num pavilhão? Como foi?",
+    "pt_BR": "Você já assistiu a um jogo de basquete ao vivo num ginásio ou arena? Como foi?"
+   }
+  },
+  {
+   "id": "basketball-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most memorable basketball moment you have ever seen?",
+    "de": "Was ist der denkwürdigste Basketballmoment, den du je gesehen hast?",
+    "es": "¿Cuál es el momento de baloncesto más memorable que has visto?",
+    "fr": "Quel est le moment de basket le plus marquant que tu aies jamais vu ?",
+    "it": "Qual è il momento di basket più memorabile che tu abbia mai visto?",
+    "pt": "Qual é o momento de basquetebol mais marcante que já viste?",
+    "pt_BR": "Qual é o momento de basquete mais marcante que você já viu?"
+   }
+  },
+  {
+   "id": "basketball-009",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could play one-on-one against any player, who would you choose?",
+    "de": "Wenn du gegen einen beliebigen Spieler eins gegen eins spielen könntest, wen würdest du wählen?",
+    "es": "Si pudieras jugar un uno contra uno contra cualquier jugador, ¿a quién elegirías?",
+    "fr": "Si tu pouvais jouer un un-contre-un contre n'importe quel joueur, qui choisirais-tu ?",
+    "it": "Se potessi giocare un uno contro uno contro qualsiasi giocatore, chi sceglieresti?",
+    "pt": "Se pudesses jogar um contra um com qualquer jogador, quem escolherias?",
+    "pt_BR": "Se você pudesse jogar um contra um com qualquer jogador, quem escolheria?"
+   }
+  },
+  {
+   "id": "basketball-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you follow women's basketball? Which players or teams do you like?",
+    "de": "Verfolgst du Frauenbasketball? Welche Spielerinnen oder Teams magst du?",
+    "es": "¿Sigues el baloncesto femenino? ¿Qué jugadoras o equipos te gustan?",
+    "fr": "Suis-tu le basket féminin ? Quelles joueuses ou équipes aimes-tu ?",
+    "it": "Segui il basket femminile? Quali giocatrici o squadre ti piacciono?",
+    "pt": "Acompanhas o basquetebol feminino? De que jogadoras ou equipas gostas?",
+    "pt_BR": "Você acompanha o basquete feminino? De quais jogadoras ou times você gosta?"
+   }
+  },
+  {
+   "id": "basketball-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which sport would you compare basketball to, and why?",
+    "de": "Mit welcher Sportart würdest du Basketball vergleichen, und warum?",
+    "es": "¿Con qué deporte compararías el baloncesto, y por qué?",
+    "fr": "À quel sport comparerais-tu le basket, et pourquoi ?",
+    "it": "A quale sport paragoneresti il basket, e perché?",
+    "pt": "Com que desporto compararias o basquetebol, e porquê?",
+    "pt_BR": "Com qual esporte você compararia o basquete, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Who taught you the most about sports when you were growing up?",
+    "de": "Wer hat dir in deiner Kindheit am meisten über Sport beigebracht?",
+    "es": "¿Quién te enseñó más sobre deporte cuando eras pequeño?",
+    "fr": "Qui t'a le plus appris sur le sport quand tu étais petit ?",
+    "it": "Chi ti ha insegnato di più sullo sport quando eri piccolo?",
+    "pt": "Quem te ensinou mais sobre desporto quando eras pequeno?",
+    "pt_BR": "Quem mais te ensinou sobre esporte quando você era criança?"
+   }
+  },
+  {
+   "id": "basketball-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you have a favorite basketball jersey or sneaker? Tell me about it.",
+    "de": "Hast du ein Lieblingstrikot oder einen Lieblingsschuh im Basketball? Erzähl mir davon.",
+    "es": "¿Tienes una camiseta o unas zapatillas de baloncesto favoritas? Cuéntame.",
+    "fr": "As-tu un maillot ou une paire de baskets préférés ? Parle-m'en.",
+    "it": "Hai una canotta o delle scarpe da basket preferite? Raccontami.",
+    "pt": "Tens uma camisola ou umas sapatilhas de basquetebol preferidas? Conta-me.",
+    "pt_BR": "Você tem uma camisa ou um tênis de basquete favorito? Me conta."
+   }
+  },
+  {
+   "id": "basketball-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What would your perfect basketball weekend look like?",
+    "de": "Wie sähe dein perfektes Basketball-Wochenende aus?",
+    "es": "¿Cómo sería tu fin de semana perfecto de baloncesto?",
+    "fr": "À quoi ressemblerait ton week-end basket idéal ?",
+    "it": "Come sarebbe il tuo weekend perfetto all'insegna del basket?",
+    "pt": "Como seria o teu fim de semana perfeito de basquetebol?",
+    "pt_BR": "Como seria seu fim de semana perfeito de basquete?"
+   }
+  },
+  {
+   "id": "basketball-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer the NBA style or the European style of basketball?",
+    "de": "Gefällt dir der NBA-Stil oder der europäische Basketballstil besser?",
+    "es": "¿Prefieres el estilo de la NBA o el baloncesto europeo?",
+    "fr": "Tu préfères le style NBA ou le basket européen ?",
+    "it": "Preferisci lo stile NBA o il basket europeo?",
+    "pt": "Preferes o estilo da NBA ou o basquetebol europeu?",
+    "pt_BR": "Você prefere o estilo da NBA ou o basquete europeu?"
+   }
+  },
+  {
+   "id": "basketball-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Which basketball arena or famous court would you love to visit one day?",
+    "de": "Welche Basketballhalle oder welchen berühmten Platz würdest du gern einmal besuchen?",
+    "es": "¿Qué pabellón o cancha famosa de baloncesto te encantaría visitar algún día?",
+    "fr": "Quelle salle ou quel terrain de basket célèbre aimerais-tu visiter un jour ?",
+    "it": "Quale palazzetto o campetto famoso ti piacerebbe visitare un giorno?",
+    "pt": "Que pavilhão ou campo famoso de basquetebol gostavas de visitar um dia?",
+    "pt_BR": "Qual ginásio ou quadra famosa de basquete você adoraria conhecer um dia?"
+   }
+  },
+  {
+   "id": "basketball-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever played a pickup game with strangers? How did it go?",
+    "de": "Hast du schon mal spontan mit Fremden auf einem Freiplatz gespielt? Wie lief es?",
+    "es": "¿Alguna vez has jugado una pachanga con desconocidos? ¿Qué tal te fue?",
+    "fr": "As-tu déjà joué une partie improvisée avec des inconnus ? Comment ça s'est passé ?",
+    "it": "Hai mai giocato una partitella con degli sconosciuti? Com'è andata?",
+    "pt": "Já alguma vez jogaste uma peladinha com desconhecidos? Como correu?",
+    "pt_BR": "Você já jogou uma pelada de basquete com desconhecidos? Como foi?"
+   }
+  },
+  {
+   "id": "basketball-018",
+   "lv": "any",
+   "i18n": {
+    "en": "What basketball skill would you most like to learn or improve?",
+    "de": "Welche Basketballfähigkeit würdest du am liebsten lernen oder verbessern?",
+    "es": "¿Qué habilidad de baloncesto te gustaría más aprender o mejorar?",
+    "fr": "Quelle compétence au basket aimerais-tu le plus apprendre ou améliorer ?",
+    "it": "Quale abilità del basket ti piacerebbe di più imparare o migliorare?",
+    "pt": "Que habilidade de basquetebol mais gostavas de aprender ou melhorar?",
+    "pt_BR": "Qual habilidade do basquete você mais gostaria de aprender ou melhorar?"
+   }
+  },
+  {
+   "id": "basketball-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy dunk contests and highlight plays, or do you prefer smart team basketball?",
+    "de": "Magst du Dunk-Contests und Highlights, oder eher cleveres Teamspiel?",
+    "es": "¿Disfrutas de los concursos de mates y las jugadas espectaculares, o prefieres el baloncesto de equipo inteligente?",
+    "fr": "Tu aimes les concours de dunks et les actions spectaculaires, ou plutôt le jeu collectif intelligent ?",
+    "it": "Ti piacciono le gare di schiacciate e le giocate spettacolari, o preferisci il gioco di squadra intelligente?",
+    "pt": "Gostas de concursos de afundanços e jogadas espetaculares, ou preferes o jogo de equipa inteligente?",
+    "pt_BR": "Você curte campeonatos de enterradas e jogadas de efeito, ou prefere o basquete coletivo inteligente?"
+   }
+  },
+  {
+   "id": "basketball-020",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually watch basketball: on TV, online, in person or through highlights?",
+    "de": "Wie schaust du meistens Basketball: im Fernsehen, online, live oder als Highlights?",
+    "es": "¿Cómo sueles ver el baloncesto: en la tele, por internet, en directo o en resúmenes?",
+    "fr": "Comment regardes-tu le basket d'habitude : à la télé, en ligne, sur place ou en résumés ?",
+    "it": "Come guardi di solito il basket: in TV, online, dal vivo o negli highlights?",
+    "pt": "Como costumas ver basquetebol: na televisão, online, ao vivo ou em resumos?",
+    "pt_BR": "Como você costuma assistir basquete: na TV, online, ao vivo ou pelos melhores momentos?"
+   }
+  },
+  {
+   "id": "basketball-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What basketball movie, documentary or book would you recommend to a friend?",
+    "de": "Welchen Basketballfilm, welche Doku oder welches Buch würdest du einem Freund empfehlen?",
+    "es": "¿Qué película, documental o libro de baloncesto le recomendarías a un amigo?",
+    "fr": "Quel film, documentaire ou livre sur le basket recommanderais-tu à un ami ?",
+    "it": "Quale film, documentario o libro sul basket consiglieresti a un amico?",
+    "pt": "Que filme, documentário ou livro de basquetebol recomendarias a um amigo?",
+    "pt_BR": "Qual filme, documentário ou livro de basquete você recomendaria a um amigo?"
+   }
+  },
+  {
+   "id": "basketball-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Which country's national team do you enjoy watching most in international tournaments?",
+    "de": "Welche Nationalmannschaft schaust du bei internationalen Turnieren am liebsten?",
+    "es": "¿Qué selección nacional te gusta más ver en los torneos internacionales?",
+    "fr": "Quelle équipe nationale aimes-tu le plus regarder lors des tournois internationaux ?",
+    "it": "Quale nazionale ti piace di più guardare nei tornei internazionali?",
+    "pt": "Que seleção nacional mais gostas de ver nos torneios internacionais?",
+    "pt_BR": "Qual seleção você mais gosta de assistir nos torneios internacionais?"
+   }
+  },
+  {
+   "id": "basketball-023",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could ask a famous coach one question, what would it be?",
+    "de": "Wenn du einem berühmten Trainer eine Frage stellen könntest, welche wäre das?",
+    "es": "Si pudieras hacerle una pregunta a un entrenador famoso, ¿cuál sería?",
+    "fr": "Si tu pouvais poser une question à un entraîneur célèbre, laquelle serait-ce ?",
+    "it": "Se potessi fare una domanda a un allenatore famoso, quale sarebbe?",
+    "pt": "Se pudesses fazer uma pergunta a um treinador famoso, qual seria?",
+    "pt_BR": "Se você pudesse fazer uma pergunta a um técnico famoso, qual seria?"
+   }
+  },
+  {
+   "id": "basketball-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think makes someone a great teammate?",
+    "de": "Was macht deiner Meinung nach einen großartigen Mitspieler aus?",
+    "es": "¿Qué crees que hace a alguien un gran compañero de equipo?",
+    "fr": "Selon toi, qu'est-ce qui fait un excellent coéquipier ?",
+    "it": "Secondo te, cosa rende qualcuno un ottimo compagno di squadra?",
+    "pt": "Na tua opinião, o que faz de alguém um grande colega de equipa?",
+    "pt_BR": "Na sua opinião, o que faz de alguém um ótimo companheiro de time?"
+   }
+  },
+  {
+   "id": "basketball-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather be the star scorer or the player who makes everyone better?",
+    "de": "Wärst du lieber der Topscorer oder der Spieler, der alle anderen besser macht?",
+    "es": "¿Preferirías ser el máximo anotador o el jugador que hace mejores a todos?",
+    "fr": "Tu préférerais être le meilleur marqueur ou le joueur qui fait briller les autres ?",
+    "it": "Preferiresti essere il miglior marcatore o il giocatore che rende migliori tutti?",
+    "pt": "Preferias ser o melhor marcador ou o jogador que torna todos melhores?",
+    "pt_BR": "Você preferiria ser o cestinha ou o jogador que faz todo mundo jogar melhor?"
+   }
+  },
+  {
+   "id": "basketball-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a basketball rivalry that you find especially exciting?",
+    "de": "Gibt es eine Basketball-Rivalität, die du besonders spannend findest?",
+    "es": "¿Hay alguna rivalidad de baloncesto que te parezca especialmente emocionante?",
+    "fr": "Y a-t-il une rivalité au basket que tu trouves particulièrement passionnante ?",
+    "it": "C'è una rivalità nel basket che trovi particolarmente emozionante?",
+    "pt": "Há alguma rivalidade no basquetebol que te pareça especialmente emocionante?",
+    "pt_BR": "Tem alguma rivalidade no basquete que você acha especialmente emocionante?"
+   }
+  },
+  {
+   "id": "basketball-027",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your earliest memory of a ball, a hoop or a basketball court?",
+    "de": "Was ist deine früheste Erinnerung an einen Ball, einen Korb oder einen Basketballplatz?",
+    "es": "¿Cuál es tu primer recuerdo de un balón, una canasta o una cancha de baloncesto?",
+    "fr": "Quel est ton plus ancien souvenir d'un ballon, d'un panier ou d'un terrain de basket ?",
+    "it": "Qual è il tuo primo ricordo di un pallone, un canestro o un campo da basket?",
+    "pt": "Qual é a tua memória mais antiga de uma bola, um cesto ou um campo de basquetebol?",
+    "pt_BR": "Qual é sua lembrança mais antiga de uma bola, uma cesta ou uma quadra de basquete?"
+   }
+  },
+  {
+   "id": "basketball-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you play any other team sports? How do they compare to basketball?",
+    "de": "Spielst du noch andere Mannschaftssportarten? Wie sind sie im Vergleich zu Basketball?",
+    "es": "¿Practicas otros deportes de equipo? ¿Cómo se comparan con el baloncesto?",
+    "fr": "Pratiques-tu d'autres sports collectifs ? Comment se comparent-ils au basket ?",
+    "it": "Pratichi altri sport di squadra? Come li paragoni al basket?",
+    "pt": "Praticas outros desportos de equipa? Como se comparam com o basquetebol?",
+    "pt_BR": "Você pratica outros esportes coletivos? Como eles se comparam ao basquete?"
+   }
+  },
+  {
+   "id": "basketball-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Which basketball words or expressions do you use in everyday life?",
+    "de": "Welche Basketballbegriffe oder Redewendungen benutzt du im Alltag?",
+    "es": "¿Qué palabras o expresiones del baloncesto usas en tu día a día?",
+    "fr": "Quels mots ou expressions du basket utilises-tu au quotidien ?",
+    "it": "Quali parole o espressioni del basket usi nella vita di tutti i giorni?",
+    "pt": "Que palavras ou expressões do basquetebol usas no dia a dia?",
+    "pt_BR": "Quais palavras ou expressões do basquete você usa no dia a dia?"
+   }
+  },
+  {
+   "id": "basketball-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you name your own basketball team, and what would its logo be?",
+    "de": "Wie würdest du dein eigenes Basketballteam nennen, und wie sähe das Logo aus?",
+    "es": "¿Cómo llamarías a tu propio equipo de baloncesto y cuál sería su logo?",
+    "fr": "Comment appellerais-tu ta propre équipe de basket, et quel serait son logo ?",
+    "it": "Come chiameresti la tua squadra di basket, e quale sarebbe il logo?",
+    "pt": "Que nome darias à tua própria equipa de basquetebol, e qual seria o logótipo?",
+    "pt_BR": "Que nome você daria ao seu próprio time de basquete, e qual seria o escudo?"
+   }
+  },
+  {
+   "id": "basketball-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like watching games with friends, or alone where you can focus?",
+    "de": "Schaust du Spiele lieber mit Freunden oder allein, um dich zu konzentrieren?",
+    "es": "¿Te gusta ver los partidos con amigos o solo, para concentrarte?",
+    "fr": "Tu aimes regarder les matchs entre amis, ou seul pour bien te concentrer ?",
+    "it": "Ti piace guardare le partite con gli amici o da solo, per concentrarti?",
+    "pt": "Gostas de ver os jogos com amigos, ou sozinho para te concentrares?",
+    "pt_BR": "Você gosta de assistir aos jogos com amigos ou sozinho, pra se concentrar?"
+   }
+  },
+  {
+   "id": "basketball-032",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a perfect basketball play look like to you?",
+    "de": "Wie sieht für dich ein perfekter Basketballspielzug aus?",
+    "es": "¿Cómo es para ti una jugada de baloncesto perfecta?",
+    "fr": "À quoi ressemble pour toi une action de basket parfaite ?",
+    "it": "Com'è per te un'azione di basket perfetta?",
+    "pt": "Como é para ti uma jogada de basquetebol perfeita?",
+    "pt_BR": "Como é, pra você, uma jogada de basquete perfeita?"
+   }
+  },
+  {
+   "id": "basketball-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Which basketball player do you admire for their attitude off the court?",
+    "de": "Welchen Basketballspieler bewunderst du für seine Haltung abseits des Spielfelds?",
+    "es": "¿Qué jugador de baloncesto admiras por su actitud fuera de la cancha?",
+    "fr": "Quel joueur de basket admires-tu pour son attitude en dehors du terrain ?",
+    "it": "Quale giocatore di basket ammiri per il suo atteggiamento fuori dal campo?",
+    "pt": "Que jogador de basquetebol admiras pela atitude fora do campo?",
+    "pt_BR": "Qual jogador de basquete você admira pela atitude fora da quadra?"
+   }
+  },
+  {
+   "id": "basketball-034",
+   "lv": "any",
+   "i18n": {
+    "en": "How does basketball help people from different cultures connect, in your experience?",
+    "de": "Wie hilft Basketball deiner Erfahrung nach Menschen aus verschiedenen Kulturen, sich zu verbinden?",
+    "es": "Según tu experiencia, ¿cómo ayuda el baloncesto a conectar a personas de culturas distintas?",
+    "fr": "D'après ton expérience, comment le basket aide-t-il des gens de cultures différentes à se rapprocher ?",
+    "it": "Secondo la tua esperienza, come aiuta il basket a unire persone di culture diverse?",
+    "pt": "Pela tua experiência, como é que o basquetebol ajuda pessoas de culturas diferentes a aproximarem-se?",
+    "pt_BR": "Pela sua experiência, como o basquete ajuda pessoas de culturas diferentes a se conectarem?"
+   }
+  },
+  {
+   "id": "basketball-035",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could relive any basketball game as a spectator, which one would it be?",
+    "de": "Wenn du ein Basketballspiel noch einmal als Zuschauer erleben könntest, welches wäre es?",
+    "es": "Si pudieras revivir cualquier partido de baloncesto como espectador, ¿cuál sería?",
+    "fr": "Si tu pouvais revivre un match de basket comme spectateur, lequel choisirais-tu ?",
+    "it": "Se potessi rivivere una partita di basket da spettatore, quale sarebbe?",
+    "pt": "Se pudesses reviver um jogo de basquetebol como espectador, qual seria?",
+    "pt_BR": "Se você pudesse reviver qualquer jogo de basquete como espectador, qual seria?"
+   }
+  },
+  {
+   "id": "basketball-036",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something about basketball that surprised you when you learned it?",
+    "de": "Was hat dich am Basketball überrascht, als du es gelernt hast?",
+    "es": "¿Qué cosa del baloncesto te sorprendió cuando la aprendiste?",
+    "fr": "Qu'est-ce qui t'a surpris dans le basket quand tu l'as découvert ?",
+    "it": "Cosa ti ha sorpreso del basket quando l'hai scoperto?",
+    "pt": "O que é que te surpreendeu no basquetebol quando o descobriste?",
+    "pt_BR": "O que te surpreendeu no basquete quando você aprendeu sobre ele?"
+   }
+  },
+  {
+   "id": "basketball-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Which do you find more exciting: a fast break or a perfect buzzer-beater?",
+    "de": "Was findest du spannender: einen Schnellangriff oder einen perfekten Buzzer-Beater?",
+    "es": "¿Qué te emociona más: un contraataque o un tiro ganador sobre la bocina?",
+    "fr": "Qu'est-ce qui t'enthousiasme le plus : une contre-attaque ou un panier au buzzer ?",
+    "it": "Cosa ti emoziona di più: un contropiede o un canestro sulla sirena?",
+    "pt": "O que te entusiasma mais: um contra-ataque ou um cesto em cima da buzina?",
+    "pt_BR": "O que te empolga mais: um contra-ataque ou uma cesta no estouro do cronômetro?"
+   }
+  },
+  {
+   "id": "basketball-038",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you explain basketball to someone who has never seen it?",
+    "de": "Wie würdest du Basketball jemandem erklären, der es noch nie gesehen hat?",
+    "es": "¿Cómo le explicarías el baloncesto a alguien que nunca lo ha visto?",
+    "fr": "Comment expliquerais-tu le basket à quelqu'un qui n'en a jamais vu ?",
+    "it": "Come spiegheresti il basket a qualcuno che non l'ha mai visto?",
+    "pt": "Como explicarias o basquetebol a alguém que nunca o viu?",
+    "pt_BR": "Como você explicaria o basquete para alguém que nunca viu um jogo?"
+   }
+  },
+  {
+   "id": "basketball-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What basketball goal would you like to reach in the coming months, big or small?",
+    "de": "Welches Basketballziel möchtest du in den nächsten Monaten erreichen, ob groß oder klein?",
+    "es": "¿Qué meta de baloncesto te gustaría alcanzar en los próximos meses, grande o pequeña?",
+    "fr": "Quel objectif de basket aimerais-tu atteindre dans les prochains mois, petit ou grand ?",
+    "it": "Quale obiettivo di basket ti piacerebbe raggiungere nei prossimi mesi, grande o piccolo?",
+    "pt": "Que objetivo de basquetebol gostavas de alcançar nos próximos meses, grande ou pequeno?",
+    "pt_BR": "Qual meta de basquete você gostaria de alcançar nos próximos meses, grande ou pequena?"
+   }
+  },
+  {
+   "id": "basketball-040",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which basketball rule did you find the most confusing at first?",
+    "de": "Welche Basketballregel fandest du am Anfang am verwirrendsten?",
+    "es": "¿Qué regla del baloncesto te pareció más confusa al principio?",
+    "fr": "Quelle règle du basket t'a semblé la plus déroutante au début ?",
+    "it": "Quale regola del basket ti è sembrata più confusa all'inizio?",
+    "pt": "Que regra do basquetebol te pareceu mais confusa no início?",
+    "pt_BR": "Qual regra do basquete te pareceu mais confusa no começo?"
+   }
+  },
+  {
+   "id": "basketball-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Can you dribble with both hands, or is one hand much stronger?",
+    "de": "Kannst du mit beiden Händen dribbeln, oder ist eine Hand viel stärker?",
+    "es": "¿Sabes botar con las dos manos, o una es mucho más fuerte?",
+    "fr": "Tu sais dribbler des deux mains, ou une main est beaucoup plus forte ?",
+    "it": "Sai palleggiare con entrambe le mani, o una è molto più forte?",
+    "pt": "Consegues driblar com as duas mãos, ou uma é muito mais forte?",
+    "pt_BR": "Você consegue quicar a bola com as duas mãos, ou uma é bem mais forte?"
+   }
+  },
+  {
+   "id": "basketball-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which position do you think would suit you best, and why?",
+    "de": "Welche Position würde deiner Meinung nach am besten zu dir passen, und warum?",
+    "es": "¿Qué posición crees que te iría mejor, y por qué?",
+    "fr": "Quel poste te conviendrait le mieux selon toi, et pourquoi ?",
+    "it": "Quale ruolo pensi che ti si addica di più, e perché?",
+    "pt": "Que posição achas que te assentaria melhor, e porquê?",
+    "pt_BR": "Qual posição você acha que combinaria mais com você, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried shooting free throws? How many do you think you could make out of ten?",
+    "de": "Hast du schon mal Freiwürfe probiert? Wie viele von zehn würdest du treffen?",
+    "es": "¿Has probado a tirar tiros libres? ¿Cuántos crees que meterías de diez?",
+    "fr": "As-tu déjà essayé les lancers francs ? Combien en réussirais-tu sur dix ?",
+    "it": "Hai mai provato i tiri liberi? Quanti pensi di segnarne su dieci?",
+    "pt": "Já experimentaste lançamentos livres? Quantos achas que acertarias em dez?",
+    "pt_BR": "Você já tentou arremessar lances livres? Quantos acha que acertaria de dez?"
+   }
+  },
+  {
+   "id": "basketball-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is easier for you: passing, dribbling or shooting?",
+    "de": "Was fällt dir leichter: Passen, Dribbeln oder Werfen?",
+    "es": "¿Qué te resulta más fácil: pasar, botar o tirar?",
+    "fr": "Qu'est-ce qui est le plus facile pour toi : passer, dribbler ou tirer ?",
+    "it": "Cosa ti riesce più facile: passare, palleggiare o tirare?",
+    "pt": "O que te é mais fácil: passar, driblar ou lançar?",
+    "pt_BR": "O que é mais fácil pra você: passar, driblar ou arremessar?"
+   }
+  },
+  {
+   "id": "basketball-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Is there a basketball court near your home? What is it like?",
+    "de": "Gibt es in deiner Nähe einen Basketballplatz? Wie sieht er aus?",
+    "es": "¿Hay una cancha de baloncesto cerca de tu casa? ¿Cómo es?",
+    "fr": "Y a-t-il un terrain de basket près de chez toi ? Il est comment ?",
+    "it": "C'è un campo da basket vicino a casa tua? Com'è?",
+    "pt": "Há algum campo de basquetebol perto de tua casa? Como é?",
+    "pt_BR": "Tem alguma quadra de basquete perto da sua casa? Como ela é?"
+   }
+  },
+  {
+   "id": "basketball-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What surprised you most when you watched your first full game?",
+    "de": "Was hat dich am meisten überrascht, als du dein erstes ganzes Spiel gesehen hast?",
+    "es": "¿Qué fue lo que más te sorprendió al ver tu primer partido completo?",
+    "fr": "Qu'est-ce qui t'a le plus surpris en regardant ton premier match en entier ?",
+    "it": "Cosa ti ha sorpreso di più guardando la tua prima partita intera?",
+    "pt": "O que mais te surpreendeu quando viste o teu primeiro jogo completo?",
+    "pt_BR": "O que mais te surpreendeu quando você assistiu ao seu primeiro jogo inteiro?"
+   }
+  },
+  {
+   "id": "basketball-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather learn a cool dribble move or a perfect layup first?",
+    "de": "Würdest du lieber zuerst einen coolen Dribbling-Trick oder einen perfekten Korbleger lernen?",
+    "es": "¿Qué preferirías aprender primero: un regate vistoso o una bandeja perfecta?",
+    "fr": "Tu préférerais apprendre d'abord un dribble stylé ou un double pas parfait ?",
+    "it": "Preferiresti imparare prima un palleggio spettacolare o un terzo tempo perfetto?",
+    "pt": "Preferias aprender primeiro um drible vistoso ou um lançamento na passada perfeito?",
+    "pt_BR": "Você preferiria aprender primeiro um drible bonito ou uma bandeja perfeita?"
+   }
+  },
+  {
+   "id": "basketball-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever played basketball at school? What do you remember about it?",
+    "de": "Hast du in der Schule Basketball gespielt? Woran erinnerst du dich?",
+    "es": "¿Jugaste al baloncesto en el colegio? ¿Qué recuerdas de aquello?",
+    "fr": "As-tu joué au basket à l'école ? Qu'est-ce que tu en retiens ?",
+    "it": "Hai mai giocato a basket a scuola? Cosa ricordi?",
+    "pt": "Jogaste basquetebol na escola? De que te lembras?",
+    "pt_BR": "Você jogou basquete na escola? Do que você se lembra?"
+   }
+  },
+  {
+   "id": "basketball-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which basketball term did you learn recently, and do you like it?",
+    "de": "Welchen Basketballbegriff hast du kürzlich gelernt, und gefällt er dir?",
+    "es": "¿Qué término de baloncesto has aprendido hace poco, y te gusta?",
+    "fr": "Quel terme de basket as-tu appris récemment, et il te plaît ?",
+    "it": "Quale termine del basket hai imparato di recente, e ti piace?",
+    "pt": "Que termo de basquetebol aprendeste recentemente, e gostas dele?",
+    "pt_BR": "Qual termo de basquete você aprendeu recentemente, e gostou dele?"
+   }
+  },
+  {
+   "id": "basketball-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you think three-pointers or layups are more exciting to watch?",
+    "de": "Findest du Dreier oder Korbleger spannender anzusehen?",
+    "es": "¿Te parecen más emocionantes los triples o las bandejas?",
+    "fr": "Tu trouves les tirs à trois points ou les doubles pas plus spectaculaires ?",
+    "it": "Trovi più emozionanti da guardare le triple o i terzi tempi?",
+    "pt": "Achas mais emocionante ver triplos ou lançamentos na passada?",
+    "pt_BR": "Você acha mais emocionante ver bolas de três ou bandejas?"
+   }
+  },
+  {
+   "id": "basketball-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you like to understand better when you watch a game?",
+    "de": "Was würdest du beim Zuschauen gern besser verstehen?",
+    "es": "¿Qué te gustaría entender mejor cuando ves un partido?",
+    "fr": "Qu'aimerais-tu mieux comprendre quand tu regardes un match ?",
+    "it": "Cosa ti piacerebbe capire meglio quando guardi una partita?",
+    "pt": "O que gostavas de perceber melhor quando vês um jogo?",
+    "pt_BR": "O que você gostaria de entender melhor quando assiste a um jogo?"
+   }
+  },
+  {
+   "id": "basketball-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer playing offense or defense, or haven't you tried yet?",
+    "de": "Spielst du lieber Angriff oder Verteidigung, oder hast du es noch nicht ausprobiert?",
+    "es": "¿Prefieres atacar o defender, o todavía no lo has probado?",
+    "fr": "Tu préfères attaquer ou défendre, ou tu n'as pas encore essayé ?",
+    "it": "Preferisci attaccare o difendere, o non hai ancora provato?",
+    "pt": "Preferes atacar ou defender, ou ainda não experimentaste?",
+    "pt_BR": "Você prefere atacar ou defender, ou ainda não experimentou?"
+   }
+  },
+  {
+   "id": "basketball-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How tall is the hoop compared to things in your home? Can you picture it?",
+    "de": "Wie hoch ist der Korb im Vergleich zu Dingen bei dir zu Hause? Kannst du es dir vorstellen?",
+    "es": "¿Qué altura tiene la canasta comparada con cosas de tu casa? ¿Te la imaginas?",
+    "fr": "À quelle hauteur est le panier par rapport aux objets chez toi ? Tu arrives à l'imaginer ?",
+    "it": "Quanto è alto il canestro rispetto agli oggetti di casa tua? Riesci a immaginarlo?",
+    "pt": "Que altura tem o cesto comparado com coisas da tua casa? Consegues imaginá-lo?",
+    "pt_BR": "Qual é a altura da cesta comparada com coisas da sua casa? Você consegue imaginar?"
+   }
+  },
+  {
+   "id": "basketball-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What kind of shoes or clothes do you wear when you play sports?",
+    "de": "Welche Schuhe oder Kleidung trägst du, wenn du Sport machst?",
+    "es": "¿Qué tipo de zapatillas o ropa usas cuando haces deporte?",
+    "fr": "Quel genre de chaussures ou de vêtements portes-tu pour faire du sport ?",
+    "it": "Che tipo di scarpe o vestiti indossi quando fai sport?",
+    "pt": "Que tipo de sapatilhas ou roupa usas quando fazes desporto?",
+    "pt_BR": "Que tipo de tênis ou roupa você usa quando pratica esporte?"
+   }
+  },
+  {
+   "id": "basketball-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you like to join a local basketball group or team? Why or why not?",
+    "de": "Würdest du gern einer Basketballgruppe oder einem Team in deiner Nähe beitreten? Warum?",
+    "es": "¿Te gustaría unirte a un grupo o equipo de baloncesto de tu zona? ¿Por qué?",
+    "fr": "Aimerais-tu rejoindre un groupe ou une équipe de basket près de chez toi ? Pourquoi ?",
+    "it": "Ti piacerebbe entrare in un gruppo o una squadra di basket della tua zona? Perché?",
+    "pt": "Gostavas de entrar num grupo ou numa equipa de basquetebol da tua zona? Porquê?",
+    "pt_BR": "Você gostaria de entrar num grupo ou time de basquete da sua região? Por quê?"
+   }
+  },
+  {
+   "id": "basketball-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which basketball game would you enjoy most with friends: HORSE, Knockout or a 3-on-3?",
+    "de": "Welches Basketballspiel würde dir mit Freunden am meisten Spaß machen: HORSE, Knockout oder 3 gegen 3?",
+    "es": "¿Qué juego de baloncesto disfrutarías más con amigos: HORSE, Knockout o un 3 contra 3?",
+    "fr": "Quel jeu de basket préférerais-tu entre amis : HORSE, Knockout ou un 3 contre 3 ?",
+    "it": "Quale gioco di basket ti divertirebbe di più con gli amici: HORSE, Knockout o un 3 contro 3?",
+    "pt": "Que jogo de basquetebol gostavas mais de jogar com amigos: HORSE, Knockout ou um 3 contra 3?",
+    "pt_BR": "Qual brincadeira de basquete você curtiria mais com amigos: HORSE, Knockout ou um 3 contra 3?"
+   }
+  },
+  {
+   "id": "basketball-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you find harder: running a lot or staying focused for a whole game?",
+    "de": "Was findest du schwerer: viel zu laufen oder ein ganzes Spiel konzentriert zu bleiben?",
+    "es": "¿Qué te cuesta más: correr mucho o mantener la concentración todo el partido?",
+    "fr": "Qu'est-ce qui est le plus dur pour toi : beaucoup courir ou rester concentré tout le match ?",
+    "it": "Cosa trovi più difficile: correre tanto o restare concentrato per tutta la partita?",
+    "pt": "O que achas mais difícil: correr muito ou manter a concentração o jogo inteiro?",
+    "pt_BR": "O que você acha mais difícil: correr muito ou ficar concentrado o jogo inteiro?"
+   }
+  },
+  {
+   "id": "basketball-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which famous player did you hear about first, even before you followed basketball?",
+    "de": "Von welchem berühmten Spieler hast du als Erstes gehört, noch bevor du Basketball verfolgt hast?",
+    "es": "¿De qué jugador famoso oíste hablar primero, incluso antes de seguir el baloncesto?",
+    "fr": "De quel joueur célèbre as-tu entendu parler en premier, avant même de suivre le basket ?",
+    "it": "Di quale giocatore famoso hai sentito parlare per primo, ancora prima di seguire il basket?",
+    "pt": "De que jogador famoso ouviste falar primeiro, ainda antes de acompanhares basquetebol?",
+    "pt_BR": "De qual jogador famoso você ouviu falar primeiro, antes mesmo de acompanhar basquete?"
+   }
+  },
+  {
+   "id": "basketball-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about the noise and energy of a basketball crowd?",
+    "de": "Wie findest du den Lärm und die Energie des Publikums bei einem Basketballspiel?",
+    "es": "¿Qué te parecen el ruido y la energía del público en el baloncesto?",
+    "fr": "Que penses-tu du bruit et de l'énergie du public au basket ?",
+    "it": "Cosa pensi del rumore e dell'energia del pubblico nel basket?",
+    "pt": "O que achas do barulho e da energia do público no basquetebol?",
+    "pt_BR": "O que você acha do barulho e da energia da torcida no basquete?"
+   }
+  },
+  {
+   "id": "basketball-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you find more fun to watch: quick guards or powerful centers?",
+    "de": "Was schaust du lieber: schnelle Aufbauspieler oder kraftvolle Center?",
+    "es": "¿Qué te divierte más ver: bases rápidos o pívots potentes?",
+    "fr": "Qu'est-ce que tu préfères regarder : des meneurs rapides ou des pivots puissants ?",
+    "it": "Cosa ti diverte di più guardare: playmaker veloci o centri potenti?",
+    "pt": "O que achas mais divertido ver: bases rápidos ou postes poderosos?",
+    "pt_BR": "O que você acha mais divertido assistir: armadores rápidos ou pivôs fortes?"
+   }
+  },
+  {
+   "id": "basketball-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "If you practiced basketball for ten minutes a day, what would you work on?",
+    "de": "Wenn du zehn Minuten am Tag Basketball üben würdest, woran würdest du arbeiten?",
+    "es": "Si practicaras baloncesto diez minutos al día, ¿en qué trabajarías?",
+    "fr": "Si tu t'entraînais dix minutes par jour, sur quoi travaillerais-tu ?",
+    "it": "Se ti allenassi a basket dieci minuti al giorno, su cosa lavoreresti?",
+    "pt": "Se treinasses basquetebol dez minutos por dia, em que trabalharias?",
+    "pt_BR": "Se você treinasse basquete dez minutos por dia, no que trabalharia?"
+   }
+  },
+  {
+   "id": "basketball-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried to spin a basketball on your finger? How did it go?",
+    "de": "Hast du schon mal versucht, einen Basketball auf dem Finger zu drehen? Wie lief es?",
+    "es": "¿Alguna vez has intentado girar un balón en el dedo? ¿Qué tal salió?",
+    "fr": "As-tu déjà essayé de faire tourner un ballon sur ton doigt ? Ça a marché ?",
+    "it": "Hai mai provato a far girare un pallone sul dito? Com'è andata?",
+    "pt": "Já alguma vez tentaste fazer girar uma bola no dedo? Como correu?",
+    "pt_BR": "Você já tentou girar uma bola de basquete no dedo? Como foi?"
+   }
+  },
+  {
+   "id": "basketball-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you think is the hardest part of being a referee?",
+    "de": "Was ist deiner Meinung nach das Schwierigste daran, Schiedsrichter zu sein?",
+    "es": "¿Qué crees que es lo más difícil de ser árbitro?",
+    "fr": "Selon toi, qu'est-ce qui est le plus difficile quand on est arbitre ?",
+    "it": "Secondo te, qual è la parte più difficile del fare l'arbitro?",
+    "pt": "Na tua opinião, qual é a parte mais difícil de ser árbitro?",
+    "pt_BR": "Na sua opinião, qual é a parte mais difícil de ser árbitro?"
+   }
+  },
+  {
+   "id": "basketball-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which part of the basketball court do you feel most comfortable in?",
+    "de": "In welchem Bereich des Spielfelds fühlst du dich am wohlsten?",
+    "es": "¿En qué zona de la cancha te sientes más cómodo?",
+    "fr": "Dans quelle zone du terrain te sens-tu le plus à l'aise ?",
+    "it": "In quale zona del campo ti senti più a tuo agio?",
+    "pt": "Em que zona do campo te sentes mais à vontade?",
+    "pt_BR": "Em qual parte da quadra você se sente mais à vontade?"
+   }
+  },
+  {
+   "id": "basketball-065",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you prefer man-to-man or zone defense, and why?",
+    "de": "Magst du lieber Mann-Mann- oder Zonenverteidigung, und warum?",
+    "es": "¿Prefieres la defensa individual o la zonal, y por qué?",
+    "fr": "Tu préfères la défense individuelle ou la défense de zone, et pourquoi ?",
+    "it": "Preferisci la difesa a uomo o a zona, e perché?",
+    "pt": "Preferes a defesa individual ou à zona, e porquê?",
+    "pt_BR": "Você prefere a defesa individual ou por zona, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you read a pick-and-roll when you watch or play?",
+    "de": "Wie liest du ein Pick-and-Roll, wenn du zuschaust oder spielst?",
+    "es": "¿Cómo lees un pick and roll cuando lo ves o lo juegas?",
+    "fr": "Comment lis-tu un pick-and-roll quand tu regardes ou que tu joues ?",
+    "it": "Come leggi un pick and roll quando guardi o giochi?",
+    "pt": "Como lês um pick and roll quando vês ou jogas?",
+    "pt_BR": "Como você lê um pick and roll quando assiste ou joga?"
+   }
+  },
+  {
+   "id": "basketball-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which team play style do you enjoy most: fast pace or slow and patient?",
+    "de": "Welchen Spielstil magst du am meisten: hohes Tempo oder langsam und geduldig?",
+    "es": "¿Qué estilo de juego te gusta más: ritmo rápido o lento y paciente?",
+    "fr": "Quel style de jeu préfères-tu : un rythme rapide ou lent et patient ?",
+    "it": "Quale stile di gioco ti piace di più: ritmo alto o lento e paziente?",
+    "pt": "Que estilo de jogo preferes: ritmo rápido ou lento e paciente?",
+    "pt_BR": "Qual estilo de jogo você curte mais: ritmo rápido ou lento e paciente?"
+   }
+  },
+  {
+   "id": "basketball-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which stat do you look at first in a box score, and why?",
+    "de": "Auf welche Statistik schaust du im Boxscore zuerst, und warum?",
+    "es": "¿Qué estadística miras primero en una ficha de partido, y por qué?",
+    "fr": "Quelle statistique regardes-tu en premier dans une feuille de match, et pourquoi ?",
+    "it": "Quale statistica guardi per prima nel tabellino, e perché?",
+    "pt": "Que estatística olhas primeiro na ficha de jogo, e porquê?",
+    "pt_BR": "Qual estatística você olha primeiro no box score, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your go-to move when you need to score?",
+    "de": "Was ist dein Lieblingsmove, wenn du punkten musst?",
+    "es": "¿Cuál es tu movimiento de confianza cuando necesitas anotar?",
+    "fr": "Quel est ton geste fétiche quand tu dois marquer ?",
+    "it": "Qual è il tuo movimento preferito quando devi segnare?",
+    "pt": "Qual é o teu movimento de confiança quando precisas de marcar?",
+    "pt_BR": "Qual é seu movimento de confiança quando precisa pontuar?"
+   }
+  },
+  {
+   "id": "basketball-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you stay confident after missing several shots in a row?",
+    "de": "Wie bleibst du selbstbewusst, nachdem du mehrere Würfe hintereinander verfehlt hast?",
+    "es": "¿Cómo mantienes la confianza después de fallar varios tiros seguidos?",
+    "fr": "Comment restes-tu confiant après avoir raté plusieurs tirs d'affilée ?",
+    "it": "Come resti sicuro di te dopo aver sbagliato diversi tiri di fila?",
+    "pt": "Como manténs a confiança depois de falhar vários lançamentos seguidos?",
+    "pt_BR": "Como você mantém a confiança depois de errar vários arremessos seguidos?"
+   }
+  },
+  {
+   "id": "basketball-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which coach's philosophy do you find most interesting, and why?",
+    "de": "Welche Trainerphilosophie findest du am interessantesten, und warum?",
+    "es": "¿Qué filosofía de entrenador te parece más interesante, y por qué?",
+    "fr": "Quelle philosophie d'entraîneur trouves-tu la plus intéressante, et pourquoi ?",
+    "it": "Quale filosofia di allenatore trovi più interessante, e perché?",
+    "pt": "Que filosofia de treinador achas mais interessante, e porquê?",
+    "pt_BR": "Qual filosofia de técnico você acha mais interessante, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think about the rise of the three-point shot in modern basketball?",
+    "de": "Was hältst du vom Aufstieg des Dreipunktwurfs im modernen Basketball?",
+    "es": "¿Qué opinas del auge del triple en el baloncesto moderno?",
+    "fr": "Que penses-tu de l'essor du tir à trois points dans le basket moderne ?",
+    "it": "Cosa pensi dell'ascesa del tiro da tre nel basket moderno?",
+    "pt": "O que achas da ascensão do lançamento de três no basquetebol moderno?",
+    "pt_BR": "O que você acha da ascensão da bola de três no basquete moderno?"
+   }
+  },
+  {
+   "id": "basketball-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How would you describe the role of a good bench player?",
+    "de": "Wie würdest du die Rolle eines guten Bankspielers beschreiben?",
+    "es": "¿Cómo describirías el papel de un buen jugador de banquillo?",
+    "fr": "Comment décrirais-tu le rôle d'un bon remplaçant ?",
+    "it": "Come descriveresti il ruolo di un buon giocatore dalla panchina?",
+    "pt": "Como descreverias o papel de um bom jogador do banco?",
+    "pt_BR": "Como você descreveria o papel de um bom reserva?"
+   }
+  },
+  {
+   "id": "basketball-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which rule difference between the NBA and FIBA do you find most important?",
+    "de": "Welchen Regelunterschied zwischen NBA und FIBA findest du am wichtigsten?",
+    "es": "¿Qué diferencia de reglas entre la NBA y la FIBA te parece más importante?",
+    "fr": "Quelle différence de règles entre la NBA et la FIBA te semble la plus importante ?",
+    "it": "Quale differenza di regole tra NBA e FIBA ti sembra più importante?",
+    "pt": "Que diferença de regras entre a NBA e a FIBA te parece mais importante?",
+    "pt_BR": "Qual diferença de regras entre a NBA e a FIBA você acha mais importante?"
+   }
+  },
+  {
+   "id": "basketball-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you look for when you watch one player for a whole game?",
+    "de": "Worauf achtest du, wenn du einen Spieler ein ganzes Spiel lang beobachtest?",
+    "es": "¿En qué te fijas cuando sigues a un solo jugador durante todo un partido?",
+    "fr": "À quoi fais-tu attention quand tu observes un seul joueur pendant tout un match ?",
+    "it": "A cosa fai attenzione quando segui un solo giocatore per tutta la partita?",
+    "pt": "Em que reparas quando observas um único jogador durante um jogo inteiro?",
+    "pt_BR": "No que você presta atenção quando observa um único jogador durante o jogo inteiro?"
+   }
+  },
+  {
+   "id": "basketball-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think great teams build chemistry between players?",
+    "de": "Wie bauen großartige Teams deiner Meinung nach Chemie zwischen den Spielern auf?",
+    "es": "¿Cómo crees que los grandes equipos crean química entre sus jugadores?",
+    "fr": "Selon toi, comment les grandes équipes créent-elles une alchimie entre les joueurs ?",
+    "it": "Secondo te, come creano intesa tra i giocatori le grandi squadre?",
+    "pt": "Na tua opinião, como é que as grandes equipas criam química entre os jogadores?",
+    "pt_BR": "Na sua opinião, como os grandes times criam entrosamento entre os jogadores?"
+   }
+  },
+  {
+   "id": "basketball-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which late-game decision by a coach have you strongly agreed or disagreed with?",
+    "de": "Welcher Entscheidung eines Trainers in der Schlussphase hast du stark zugestimmt oder widersprochen?",
+    "es": "¿Con qué decisión de un entrenador en un final apretado estuviste muy de acuerdo o en desacuerdo?",
+    "fr": "Quelle décision d'entraîneur en fin de match t'a fait vraiment approuver ou protester ?",
+    "it": "Con quale scelta di un allenatore nel finale sei stato molto d'accordo o in disaccordo?",
+    "pt": "Com que decisão de um treinador no final de um jogo concordaste ou discordaste muito?",
+    "pt_BR": "Com qual decisão de um técnico no fim de jogo você concordou ou discordou muito?"
+   }
+  },
+  {
+   "id": "basketball-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What makes the playoffs feel different from the regular season to you?",
+    "de": "Was macht die Playoffs für dich anders als die reguläre Saison?",
+    "es": "¿Qué hace que los playoffs se sientan distintos a la temporada regular para ti?",
+    "fr": "Qu'est-ce qui rend les playoffs différents de la saison régulière pour toi ?",
+    "it": "Cosa rende i playoff diversi dalla stagione regolare per te?",
+    "pt": "O que torna os playoffs diferentes da época regular para ti?",
+    "pt_BR": "O que torna os playoffs diferentes da temporada regular pra você?"
+   }
+  },
+  {
+   "id": "basketball-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which offensive set or play would you love to try with your own team?",
+    "de": "Welches Angriffssystem oder welchen Spielzug würdest du gern mit deinem eigenen Team ausprobieren?",
+    "es": "¿Qué sistema o jugada ofensiva te encantaría probar con tu propio equipo?",
+    "fr": "Quel système ou quelle combinaison offensive aimerais-tu essayer avec ta propre équipe ?",
+    "it": "Quale schema offensivo ti piacerebbe provare con la tua squadra?",
+    "pt": "Que sistema ou jogada ofensiva gostavas de experimentar com a tua própria equipa?",
+    "pt_BR": "Qual jogada ensaiada de ataque você adoraria testar com seu próprio time?"
+   }
+  },
+  {
+   "id": "basketball-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think international players have changed the style of the NBA?",
+    "de": "Wie haben internationale Spieler deiner Meinung nach den Stil der NBA verändert?",
+    "es": "¿Cómo crees que los jugadores internacionales han cambiado el estilo de la NBA?",
+    "fr": "Selon toi, comment les joueurs internationaux ont-ils changé le style de la NBA ?",
+    "it": "Secondo te, come hanno cambiato lo stile della NBA i giocatori internazionali?",
+    "pt": "Na tua opinião, como é que os jogadores internacionais mudaram o estilo da NBA?",
+    "pt_BR": "Na sua opinião, como os jogadores estrangeiros mudaram o estilo da NBA?"
+   }
+  },
+  {
+   "id": "basketball-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which defensive skill do you think is most underrated?",
+    "de": "Welche Verteidigungsfähigkeit wird deiner Meinung nach am meisten unterschätzt?",
+    "es": "¿Qué habilidad defensiva crees que está más infravalorada?",
+    "fr": "Quelle qualité défensive te semble la plus sous-estimée ?",
+    "it": "Quale abilità difensiva pensi sia la più sottovalutata?",
+    "pt": "Que capacidade defensiva achas que é a mais subvalorizada?",
+    "pt_BR": "Qual habilidade defensiva você acha a mais subestimada?"
+   }
+  },
+  {
+   "id": "basketball-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever kept stats or scouted a game yourself? What did you notice?",
+    "de": "Hast du schon einmal selbst Statistiken geführt oder ein Spiel analysiert? Was ist dir aufgefallen?",
+    "es": "¿Alguna vez has llevado estadísticas o analizado un partido tú mismo? ¿Qué notaste?",
+    "fr": "As-tu déjà tenu des statistiques ou analysé un match toi-même ? Qu'as-tu remarqué ?",
+    "it": "Hai mai tenuto le statistiche o analizzato una partita da solo? Cosa hai notato?",
+    "pt": "Já alguma vez registaste estatísticas ou analisaste um jogo? O que notaste?",
+    "pt_BR": "Você já anotou estatísticas ou analisou um jogo por conta própria? O que percebeu?"
+   }
+  },
+  {
+   "id": "basketball-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your opinion on positionless basketball, where roles are more flexible?",
+    "de": "Was hältst du von positionslosem Basketball, bei dem die Rollen flexibler sind?",
+    "es": "¿Qué opinas del baloncesto sin posiciones fijas, con roles más flexibles?",
+    "fr": "Que penses-tu du basket sans postes fixes, où les rôles sont plus flexibles ?",
+    "it": "Cosa pensi del basket senza ruoli fissi, dove tutto è più flessibile?",
+    "pt": "O que pensas do basquetebol sem posições fixas, com papéis mais flexíveis?",
+    "pt_BR": "O que você acha do basquete sem posições fixas, com funções mais flexíveis?"
+   }
+  },
+  {
+   "id": "basketball-084",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which advanced stat do you trust most to judge a player, and what are its limits?",
+    "de": "Welcher erweiterten Statistik vertraust du am meisten, um einen Spieler zu bewerten, und wo liegen ihre Grenzen?",
+    "es": "¿En qué estadística avanzada confías más para valorar a un jugador, y cuáles son sus límites?",
+    "fr": "Quelle statistique avancée juges-tu la plus fiable pour évaluer un joueur, et quelles sont ses limites ?",
+    "it": "Di quale statistica avanzata ti fidi di più per valutare un giocatore, e quali sono i suoi limiti?",
+    "pt": "Em que estatística avançada mais confias para avaliar um jogador, e quais são os seus limites?",
+    "pt_BR": "Em qual estatística avançada você mais confia para avaliar um jogador, e quais são os limites dela?"
+   }
+  },
+  {
+   "id": "basketball-085",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you build a defensive game plan against an elite pick-and-roll guard?",
+    "de": "Wie würdest du einen Defensivplan gegen einen Top-Pick-and-Roll-Guard aufstellen?",
+    "es": "¿Cómo diseñarías un plan defensivo contra un base de élite en el pick and roll?",
+    "fr": "Comment construirais-tu un plan défensif contre un meneur d'élite sur pick-and-roll ?",
+    "it": "Come costruiresti un piano difensivo contro un playmaker d'élite nel pick and roll?",
+    "pt": "Como montarias um plano defensivo contra um base de elite no pick and roll?",
+    "pt_BR": "Como você montaria um plano defensivo contra um armador de elite no pick and roll?"
+   }
+  },
+  {
+   "id": "basketball-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "In your view, how should we compare players from different eras fairly?",
+    "de": "Wie sollte man deiner Meinung nach Spieler aus verschiedenen Epochen fair vergleichen?",
+    "es": "En tu opinión, ¿cómo deberíamos comparar de forma justa a jugadores de épocas distintas?",
+    "fr": "Selon toi, comment comparer équitablement des joueurs d'époques différentes ?",
+    "it": "Secondo te, come si dovrebbero confrontare in modo equo giocatori di epoche diverse?",
+    "pt": "Na tua opinião, como devemos comparar de forma justa jogadores de épocas diferentes?",
+    "pt_BR": "Na sua opinião, como dá para comparar de forma justa jogadores de épocas diferentes?"
+   }
+  },
+  {
+   "id": "basketball-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which offensive system would you choose for a team without a superstar, and why?",
+    "de": "Welches Angriffssystem würdest du für ein Team ohne Superstar wählen, und warum?",
+    "es": "¿Qué sistema ofensivo elegirías para un equipo sin superestrella, y por qué?",
+    "fr": "Quel système offensif choisirais-tu pour une équipe sans superstar, et pourquoi ?",
+    "it": "Quale sistema offensivo sceglieresti per una squadra senza una superstar, e perché?",
+    "pt": "Que sistema ofensivo escolherias para uma equipa sem uma superestrela, e porquê?",
+    "pt_BR": "Qual sistema ofensivo você escolheria para um time sem um astro, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you think is the next big tactical trend in basketball?",
+    "de": "Was ist deiner Meinung nach der nächste große taktische Trend im Basketball?",
+    "es": "¿Cuál crees que será la próxima gran tendencia táctica del baloncesto?",
+    "fr": "Selon toi, quelle sera la prochaine grande tendance tactique du basket ?",
+    "it": "Secondo te, quale sarà la prossima grande tendenza tattica del basket?",
+    "pt": "Na tua opinião, qual será a próxima grande tendência tática do basquetebol?",
+    "pt_BR": "Na sua opinião, qual será a próxima grande tendência tática do basquete?"
+   }
+  },
+  {
+   "id": "basketball-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you balance analytics and intuition if you were a head coach?",
+    "de": "Wie würdest du als Cheftrainer Analysen und Bauchgefühl in Balance halten?",
+    "es": "Si fueras entrenador principal, ¿cómo equilibrarías la analítica y la intuición?",
+    "fr": "Si tu étais entraîneur principal, comment équilibrerais-tu les données et l'intuition ?",
+    "it": "Se fossi capo allenatore, come bilanceresti analisi dei dati e intuito?",
+    "pt": "Se fosses treinador principal, como equilibrarias a análise de dados e a intuição?",
+    "pt_BR": "Se você fosse técnico principal, como equilibraria a análise de dados e a intuição?"
+   }
+  },
+  {
+   "id": "basketball-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which playoff series adjustment impressed you the most, and why did it work?",
+    "de": "Welche Anpassung in einer Playoff-Serie hat dich am meisten beeindruckt, und warum hat sie funktioniert?",
+    "es": "¿Qué ajuste en una serie de playoffs te impresionó más, y por qué funcionó?",
+    "fr": "Quel ajustement dans une série de playoffs t'a le plus impressionné, et pourquoi a-t-il marché ?",
+    "it": "Quale aggiustamento in una serie di playoff ti ha colpito di più, e perché ha funzionato?",
+    "pt": "Que ajuste numa série de playoffs mais te impressionou, e porque é que resultou?",
+    "pt_BR": "Qual ajuste numa série de playoffs mais te impressionou, e por que deu certo?"
+   }
+  },
+  {
+   "id": "basketball-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you design a roster that can win with both size and shooting?",
+    "de": "Wie würdest du einen Kader zusammenstellen, der sowohl mit Größe als auch mit Wurfstärke gewinnen kann?",
+    "es": "¿Cómo diseñarías una plantilla capaz de ganar con tamaño y con tiro a la vez?",
+    "fr": "Comment construirais-tu un effectif capable de gagner à la fois avec la taille et l'adresse ?",
+    "it": "Come costruiresti un roster capace di vincere sia con la stazza sia con il tiro?",
+    "pt": "Como construirias um plantel capaz de ganhar tanto com altura como com lançamento?",
+    "pt_BR": "Como você montaria um elenco capaz de vencer tanto com tamanho quanto com arremesso?"
+   }
+  },
+  {
+   "id": "basketball-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does the idea of shooting gravity mean to you, and who shows it best?",
+    "de": "Was bedeutet das Konzept der Wurf-Gravity für dich, und wer zeigt es am besten?",
+    "es": "¿Qué significa para ti la idea de la gravedad de un tirador, y quién la muestra mejor?",
+    "fr": "Que signifie pour toi l'idée de gravité d'un shooteur, et qui l'illustre le mieux ?",
+    "it": "Cosa significa per te il concetto di gravità di un tiratore, e chi lo mostra meglio?",
+    "pt": "O que significa para ti a ideia de gravidade de um lançador, e quem a mostra melhor?",
+    "pt_BR": "O que significa pra você a ideia de gravidade de um arremessador, e quem mostra isso melhor?"
+   }
+  },
+  {
+   "id": "basketball-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you coach a young player to make better decisions under pressure?",
+    "de": "Wie würdest du einem jungen Spieler beibringen, unter Druck bessere Entscheidungen zu treffen?",
+    "es": "¿Cómo enseñarías a un joven jugador a tomar mejores decisiones bajo presión?",
+    "fr": "Comment apprendrais-tu à un jeune joueur à mieux décider sous pression ?",
+    "it": "Come insegneresti a un giovane giocatore a prendere decisioni migliori sotto pressione?",
+    "pt": "Como ensinarias um jovem jogador a tomar melhores decisões sob pressão?",
+    "pt_BR": "Como você ensinaria um jovem jogador a tomar decisões melhores sob pressão?"
+   }
+  },
+  {
+   "id": "basketball-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which defensive scheme do you find the most elegant, and why?",
+    "de": "Welches Verteidigungssystem findest du am elegantesten, und warum?",
+    "es": "¿Qué esquema defensivo te parece más elegante, y por qué?",
+    "fr": "Quel schéma défensif trouves-tu le plus élégant, et pourquoi ?",
+    "it": "Quale schema difensivo trovi più elegante, e perché?",
+    "pt": "Que esquema defensivo achas mais elegante, e porquê?",
+    "pt_BR": "Qual esquema defensivo você acha mais elegante, e por quê?"
+   }
+  },
+  {
+   "id": "basketball-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What makes a great basketball dynasty, in your opinion: talent, culture or coaching?",
+    "de": "Was macht deiner Meinung nach eine große Basketball-Dynastie aus: Talent, Kultur oder Coaching?",
+    "es": "En tu opinión, ¿qué hace una gran dinastía del baloncesto: el talento, la cultura o el entrenador?",
+    "fr": "Selon toi, qu'est-ce qui fait une grande dynastie du basket : le talent, la culture ou le coaching ?",
+    "it": "Secondo te, cosa crea una grande dinastia del basket: talento, cultura o allenatore?",
+    "pt": "Na tua opinião, o que faz uma grande dinastia do basquetebol: talento, cultura ou treinador?",
+    "pt_BR": "Na sua opinião, o que faz uma grande dinastia do basquete: talento, cultura ou técnico?"
+   }
+  },
+  {
+   "id": "basketball-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you wrote a scouting report on your own game, what would it say?",
+    "de": "Wenn du einen Scouting-Bericht über dein eigenes Spiel schreiben würdest, was stünde darin?",
+    "es": "Si escribieras un informe de scouting sobre tu propio juego, ¿qué diría?",
+    "fr": "Si tu rédigeais un rapport de scouting sur ton propre jeu, que dirait-il ?",
+    "it": "Se scrivessi un report di scouting sul tuo gioco, cosa direbbe?",
+    "pt": "Se escrevesses um relatório de observação sobre o teu próprio jogo, o que diria?",
+    "pt_BR": "Se você escrevesse um relatório de scout sobre seu próprio jogo, o que ele diria?"
+   }
+  },
+  {
+   "id": "basketball-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think rule changes over the decades have shaped the way basketball looks today?",
+    "de": "Wie haben Regeländerungen über die Jahrzehnte deiner Meinung nach das heutige Basketball geprägt?",
+    "es": "¿Cómo crees que los cambios de reglas a lo largo de las décadas han dado forma al baloncesto actual?",
+    "fr": "Selon toi, comment les changements de règles au fil des décennies ont-ils façonné le basket actuel ?",
+    "it": "Secondo te, come hanno plasmato il basket di oggi i cambiamenti di regole nei decenni?",
+    "pt": "Na tua opinião, como é que as mudanças de regras ao longo das décadas moldaram o basquetebol atual?",
+    "pt_BR": "Na sua opinião, como as mudanças de regras ao longo das décadas moldaram o basquete de hoje?"
+   }
+  },
+  {
+   "id": "basketball-098",
+   "lv": "any",
+   "i18n": {
+    "en": "What song or kind of music would you play to get pumped up before a game?",
+    "de": "Welchen Song oder welche Musik würdest du hören, um dich vor einem Spiel zu pushen?",
+    "es": "¿Qué canción o tipo de música pondrías para motivarte antes de un partido?",
+    "fr": "Quelle chanson ou quel style de musique écouterais-tu pour te motiver avant un match ?",
+    "it": "Quale canzone o genere musicale ascolteresti per caricarti prima di una partita?",
+    "pt": "Que música ou estilo musical ouvirias para te motivares antes de um jogo?",
+    "pt_BR": "Que música ou estilo musical você ouviria pra se animar antes de um jogo?"
+   }
+  },
+  {
+   "id": "basketball-099",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "When do you think a team should take a timeout to stop the other team's run?",
+    "de": "Wann sollte ein Team deiner Meinung nach eine Auszeit nehmen, um einen Lauf des Gegners zu stoppen?",
+    "es": "¿Cuándo crees que un equipo debería pedir tiempo muerto para cortar la racha del rival?",
+    "fr": "Selon toi, quand une équipe doit-elle prendre un temps mort pour stopper la série adverse ?",
+    "it": "Secondo te, quando una squadra dovrebbe chiamare un timeout per fermare il parziale avversario?",
+    "pt": "Na tua opinião, quando é que uma equipa deve pedir um desconto de tempo para travar a série do adversário?",
+    "pt_BR": "Na sua opinião, quando um time deve pedir tempo para frear a sequência do adversário?"
+   }
+  },
+  {
+   "id": "basketball-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which great European club or national team style would you like to see more of in the NBA?",
+    "de": "Welchen Stil eines großen europäischen Klubs oder Nationalteams würdest du gern öfter in der NBA sehen?",
+    "es": "¿Qué estilo de un gran club o selección europea te gustaría ver más en la NBA?",
+    "fr": "Quel style d'un grand club ou d'une grande sélection européenne aimerais-tu voir davantage en NBA ?",
+    "it": "Quale stile di un grande club o nazionale europea ti piacerebbe vedere di più in NBA?",
+    "pt": "Que estilo de um grande clube ou seleção europeia gostavas de ver mais na NBA?",
+    "pt_BR": "Qual estilo de um grande clube ou seleção europeia você gostaria de ver mais na NBA?"
+   }
+  }
+ ]
+}

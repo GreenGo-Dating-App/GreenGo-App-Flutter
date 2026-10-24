@@ -1,0 +1,1305 @@
+{
+ "topic": "photography",
+ "questions": [
+  {
+   "id": "photography-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What first made you want to take photos?",
+    "de": "Was hat dich ursprünglich dazu gebracht, Fotos zu machen?",
+    "es": "¿Qué fue lo primero que te dio ganas de hacer fotos?",
+    "fr": "Qu'est-ce qui t'a donné envie de prendre des photos au départ ?",
+    "it": "Che cosa ti ha fatto venire voglia di scattare foto la prima volta?",
+    "pt": "O que te fez querer tirar fotografias pela primeira vez?",
+    "pt_BR": "O que fez você querer tirar fotos pela primeira vez?"
+   }
+  },
+  {
+   "id": "photography-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Which photo that you have taken are you most proud of, and why?",
+    "de": "Auf welches deiner eigenen Fotos bist du am meisten stolz und warum?",
+    "es": "¿De qué foto tuya te sientes más orgulloso o orgullosa, y por qué?",
+    "fr": "De quelle photo que tu as prise es-tu le plus fier ou la plus fière, et pourquoi ?",
+    "it": "Di quale foto scattata da te vai più fiero o fiera, e perché?",
+    "pt": "De que fotografia tua te orgulhas mais, e porquê?",
+    "pt_BR": "De qual foto sua você mais se orgulha, e por quê?"
+   }
+  },
+  {
+   "id": "photography-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you usually take photos with a phone or a camera? What do you like about it?",
+    "de": "Fotografierst du meistens mit dem Handy oder mit einer Kamera? Was gefällt dir daran?",
+    "es": "¿Sueles hacer fotos con el móvil o con una cámara? ¿Qué te gusta de ello?",
+    "fr": "Tu prends plutôt tes photos avec ton téléphone ou avec un appareil ? Qu'est-ce que tu aimes chez lui ?",
+    "it": "Di solito fotografi con lo smartphone o con una fotocamera? Che cosa ti piace di più?",
+    "pt": "Costumas fotografar com o telemóvel ou com uma câmara? O que gostas nisso?",
+    "pt_BR": "Você costuma fotografar com o celular ou com uma câmera? O que você curte nisso?"
+   }
+  },
+  {
+   "id": "photography-004",
+   "lv": "any",
+   "i18n": {
+    "en": "What subject could you photograph again and again without getting bored?",
+    "de": "Welches Motiv könntest du immer wieder fotografieren, ohne dass es langweilig wird?",
+    "es": "¿Qué tema podrías fotografiar una y otra vez sin aburrirte?",
+    "fr": "Quel sujet pourrais-tu photographier encore et encore sans jamais t'en lasser ?",
+    "it": "Quale soggetto potresti fotografare all'infinito senza mai annoiarti?",
+    "pt": "Que tema conseguirias fotografar vezes sem conta sem te aborreceres?",
+    "pt_BR": "Que assunto você conseguiria fotografar várias e várias vezes sem enjoar?"
+   }
+  },
+  {
+   "id": "photography-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a photo, by anyone, that you have never forgotten? What is in it?",
+    "de": "Gibt es ein Foto, egal von wem, das du nie vergessen hast? Was ist darauf zu sehen?",
+    "es": "¿Hay alguna foto, de quien sea, que nunca hayas olvidado? ¿Qué aparece en ella?",
+    "fr": "Y a-t-il une photo, de n'importe qui, que tu n'as jamais oubliée ? Que montre-t-elle ?",
+    "it": "C'è una foto, di chiunque, che non hai mai dimenticato? Che cosa mostra?",
+    "pt": "Há alguma fotografia, de quem quer que seja, que nunca esqueceste? O que mostra?",
+    "pt_BR": "Tem alguma foto, de quem for, que você nunca esqueceu? O que aparece nela?"
+   }
+  },
+  {
+   "id": "photography-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Where in your town would you take a visitor to get great photos?",
+    "de": "Wohin in deiner Stadt würdest du Besuch mitnehmen, um tolle Fotos zu machen?",
+    "es": "¿A qué lugar de tu ciudad llevarías a alguien de visita para hacer fotos geniales?",
+    "fr": "Où emmènerais-tu quelqu'un de passage dans ta ville pour faire de superbes photos ?",
+    "it": "Dove porteresti un ospite nella tua città per fare foto bellissime?",
+    "pt": "Onde levarias uma visita na tua cidade para tirar fotografias fantásticas?",
+    "pt_BR": "Pra onde você levaria uma visita na sua cidade pra tirar fotos incríveis?"
+   }
+  },
+  {
+   "id": "photography-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer photographing people, places, animals or objects? Why?",
+    "de": "Fotografierst du lieber Menschen, Orte, Tiere oder Gegenstände? Warum?",
+    "es": "¿Prefieres fotografiar personas, lugares, animales u objetos? ¿Por qué?",
+    "fr": "Tu préfères photographier des gens, des lieux, des animaux ou des objets ? Pourquoi ?",
+    "it": "Preferisci fotografare persone, luoghi, animali o oggetti? Perché?",
+    "pt": "Preferes fotografar pessoas, lugares, animais ou objetos? Porquê?",
+    "pt_BR": "Você prefere fotografar pessoas, lugares, animais ou objetos? Por quê?"
+   }
+  },
+  {
+   "id": "photography-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What time of day do you find the most beautiful for taking pictures?",
+    "de": "Welche Tageszeit findest du zum Fotografieren am schönsten?",
+    "es": "¿Qué momento del día te parece el más bonito para hacer fotos?",
+    "fr": "Quel moment de la journée trouves-tu le plus beau pour photographier ?",
+    "it": "Qual è secondo te il momento della giornata più bello per fotografare?",
+    "pt": "Qual é, para ti, a hora do dia mais bonita para fotografar?",
+    "pt_BR": "Qual hora do dia você acha mais bonita pra fotografar?"
+   }
+  },
+  {
+   "id": "photography-009",
+   "lv": "any",
+   "i18n": {
+    "en": "How many photos do you think you take in a normal week?",
+    "de": "Wie viele Fotos machst du ungefähr in einer normalen Woche?",
+    "es": "¿Cuántas fotos crees que haces en una semana normal?",
+    "fr": "Combien de photos penses-tu prendre pendant une semaine normale ?",
+    "it": "Quante foto pensi di scattare in una settimana normale?",
+    "pt": "Quantas fotografias achas que tiras numa semana normal?",
+    "pt_BR": "Quantas fotos você acha que tira numa semana normal?"
+   }
+  },
+  {
+   "id": "photography-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you usually do with your photos after you take them?",
+    "de": "Was machst du normalerweise mit deinen Fotos, nachdem du sie aufgenommen hast?",
+    "es": "¿Qué sueles hacer con tus fotos después de sacarlas?",
+    "fr": "Que fais-tu d'habitude de tes photos une fois prises ?",
+    "it": "Che cosa fai di solito con le tue foto dopo averle scattate?",
+    "pt": "O que costumas fazer com as tuas fotografias depois de as tirares?",
+    "pt_BR": "O que você costuma fazer com suas fotos depois de tirá-las?"
+   }
+  },
+  {
+   "id": "photography-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which place in the world would you most love to photograph?",
+    "de": "Welchen Ort auf der Welt würdest du am liebsten fotografieren?",
+    "es": "¿Qué lugar del mundo te encantaría fotografiar?",
+    "fr": "Quel endroit du monde aimerais-tu le plus photographier ?",
+    "it": "Quale luogo del mondo ti piacerebbe di più fotografare?",
+    "pt": "Que lugar do mundo mais gostarias de fotografar?",
+    "pt_BR": "Qual lugar do mundo você mais adoraria fotografar?"
+   }
+  },
+  {
+   "id": "photography-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy being in photos, or do you prefer staying behind the camera?",
+    "de": "Bist du gern auf Fotos, oder bleibst du lieber hinter der Kamera?",
+    "es": "¿Te gusta salir en las fotos o prefieres quedarte detrás de la cámara?",
+    "fr": "Tu aimes être sur les photos, ou tu préfères rester derrière l'objectif ?",
+    "it": "Ti piace essere fotografato o preferisci stare dietro l'obiettivo?",
+    "pt": "Gostas de aparecer nas fotografias ou preferes ficar atrás da câmara?",
+    "pt_BR": "Você gosta de sair nas fotos ou prefere ficar atrás da câmera?"
+   }
+  },
+  {
+   "id": "photography-013",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a good photo need, in your opinion?",
+    "de": "Was braucht ein gutes Foto deiner Meinung nach?",
+    "es": "En tu opinión, ¿qué necesita una buena foto?",
+    "fr": "Selon toi, de quoi une bonne photo a-t-elle besoin ?",
+    "it": "Secondo te, di che cosa ha bisogno una buona foto?",
+    "pt": "Na tua opinião, o que é que uma boa fotografia precisa de ter?",
+    "pt_BR": "Na sua opinião, do que uma boa foto precisa?"
+   }
+  },
+  {
+   "id": "photography-014",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a family photo that is special to you? What story does it tell?",
+    "de": "Gibt es ein Familienfoto, das dir besonders viel bedeutet? Welche Geschichte erzählt es?",
+    "es": "¿Hay alguna foto familiar especial para ti? ¿Qué historia cuenta?",
+    "fr": "Y a-t-il une photo de famille qui compte beaucoup pour toi ? Quelle histoire raconte-t-elle ?",
+    "it": "C'è una foto di famiglia speciale per te? Che storia racconta?",
+    "pt": "Há alguma fotografia de família especial para ti? Que história conta?",
+    "pt_BR": "Tem alguma foto de família especial pra você? Que história ela conta?"
+   }
+  },
+  {
+   "id": "photography-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you follow any photographers or photo accounts you enjoy? What do you like about them?",
+    "de": "Folgst du Fotografinnen, Fotografen oder Foto-Accounts, die dir gefallen? Was magst du an ihnen?",
+    "es": "¿Sigues a algún fotógrafo o cuenta de fotos que te guste? ¿Qué te gusta de ellos?",
+    "fr": "Suis-tu des photographes ou des comptes photo que tu aimes ? Qu'est-ce qui te plaît chez eux ?",
+    "it": "Segui qualche fotografo o account di foto che ti piace? Che cosa ti colpisce?",
+    "pt": "Segues algum fotógrafo ou conta de fotografia de que gostes? O que te agrada neles?",
+    "pt_BR": "Você segue algum fotógrafo ou perfil de fotos de que gosta? O que te agrada neles?"
+   }
+  },
+  {
+   "id": "photography-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer colour photos or black and white? Why?",
+    "de": "Magst du lieber Farbfotos oder Schwarzweißbilder? Warum?",
+    "es": "¿Prefieres las fotos en color o en blanco y negro? ¿Por qué?",
+    "fr": "Tu préfères les photos en couleur ou en noir et blanc ? Pourquoi ?",
+    "it": "Preferisci le foto a colori o in bianco e nero? Perché?",
+    "pt": "Preferes fotografias a cores ou a preto e branco? Porquê?",
+    "pt_BR": "Você prefere fotos coloridas ou em preto e branco? Por quê?"
+   }
+  },
+  {
+   "id": "photography-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you notice first when you look at someone else's photo?",
+    "de": "Was fällt dir zuerst auf, wenn du dir das Foto einer anderen Person ansiehst?",
+    "es": "¿Qué es lo primero en lo que te fijas cuando miras la foto de otra persona?",
+    "fr": "Qu'est-ce que tu remarques en premier quand tu regardes la photo de quelqu'un d'autre ?",
+    "it": "Che cosa noti per prima cosa quando guardi la foto di qualcun altro?",
+    "pt": "O que reparas primeiro quando olhas para a fotografia de outra pessoa?",
+    "pt_BR": "O que você repara primeiro quando olha a foto de outra pessoa?"
+   }
+  },
+  {
+   "id": "photography-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Which season do you think is the most photogenic where you live?",
+    "de": "Welche Jahreszeit ist bei dir in der Gegend am fotogensten?",
+    "es": "¿Qué estación del año te parece más fotogénica donde vives?",
+    "fr": "Quelle saison est la plus photogénique là où tu vis, selon toi ?",
+    "it": "Quale stagione è la più fotogenica dove vivi?",
+    "pt": "Qual é a estação do ano mais fotogénica onde vives?",
+    "pt_BR": "Qual estação do ano é mais fotogênica onde você mora?"
+   }
+  },
+  {
+   "id": "photography-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you take more photos when you travel or in your everyday life?",
+    "de": "Fotografierst du mehr auf Reisen oder im Alltag?",
+    "es": "¿Haces más fotos cuando viajas o en tu día a día?",
+    "fr": "Tu prends plus de photos en voyage ou dans ta vie de tous les jours ?",
+    "it": "Scatti più foto in viaggio o nella vita di tutti i giorni?",
+    "pt": "Tiras mais fotografias quando viajas ou no dia a dia?",
+    "pt_BR": "Você tira mais fotos viajando ou no dia a dia?"
+   }
+  },
+  {
+   "id": "photography-020",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could only keep ten of your photos, which kinds would you choose?",
+    "de": "Wenn du nur zehn deiner Fotos behalten dürftest, welche Art von Bildern wären das?",
+    "es": "Si solo pudieras guardar diez de tus fotos, ¿qué tipo de fotos elegirías?",
+    "fr": "Si tu ne pouvais garder que dix de tes photos, lesquelles choisirais-tu ?",
+    "it": "Se potessi tenere solo dieci delle tue foto, quali sceglieresti?",
+    "pt": "Se só pudesses guardar dez fotografias tuas, que tipo de fotografias escolherias?",
+    "pt_BR": "Se você só pudesse guardar dez fotos suas, que tipo de foto escolheria?"
+   }
+  },
+  {
+   "id": "photography-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What is something ordinary that you think looks beautiful in a photo?",
+    "de": "Was ist etwas ganz Alltägliches, das auf Fotos deiner Meinung nach wunderschön aussieht?",
+    "es": "¿Qué cosa cotidiana crees que queda preciosa en una foto?",
+    "fr": "Quelle chose banale trouves-tu particulièrement belle en photo ?",
+    "it": "Quale cosa ordinaria secondo te diventa bellissima in una foto?",
+    "pt": "Que coisa banal achas que fica linda numa fotografia?",
+    "pt_BR": "Que coisa comum você acha que fica linda numa foto?"
+   }
+  },
+  {
+   "id": "photography-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like printing photos, or do you keep them all digital?",
+    "de": "Druckst du gern Fotos aus, oder bleibt bei dir alles digital?",
+    "es": "¿Te gusta imprimir fotos o lo guardas todo en digital?",
+    "fr": "Tu aimes imprimer tes photos, ou tu gardes tout en numérique ?",
+    "it": "Ti piace stampare le foto o le tieni tutte in digitale?",
+    "pt": "Gostas de imprimir fotografias ou guardas tudo em digital?",
+    "pt_BR": "Você gosta de imprimir fotos ou guarda tudo no digital?"
+   }
+  },
+  {
+   "id": "photography-023",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of photos would you love to be able to take one day?",
+    "de": "Welche Art von Fotos würdest du gern eines Tages machen können?",
+    "es": "¿Qué tipo de fotos te encantaría ser capaz de hacer algún día?",
+    "fr": "Quel genre de photos aimerais-tu être capable de faire un jour ?",
+    "it": "Che tipo di foto ti piacerebbe saper scattare un giorno?",
+    "pt": "Que tipo de fotografias adorarias conseguir tirar um dia?",
+    "pt_BR": "Que tipo de foto você adoraria conseguir tirar um dia?"
+   }
+  },
+  {
+   "id": "photography-024",
+   "lv": "any",
+   "i18n": {
+    "en": "How do photos help you remember your trips or special days?",
+    "de": "Wie helfen dir Fotos, dich an Reisen oder besondere Tage zu erinnern?",
+    "es": "¿Cómo te ayudan las fotos a recordar tus viajes o días especiales?",
+    "fr": "Comment les photos t'aident-elles à te souvenir de tes voyages ou de jours particuliers ?",
+    "it": "In che modo le foto ti aiutano a ricordare viaggi o giornate speciali?",
+    "pt": "Como é que as fotografias te ajudam a lembrar viagens ou dias especiais?",
+    "pt_BR": "Como as fotos te ajudam a lembrar das viagens ou de dias especiais?"
+   }
+  },
+  {
+   "id": "photography-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a picture you missed and still think about? What happened?",
+    "de": "Gibt es ein Foto, das du verpasst hast und an das du noch denkst? Was ist passiert?",
+    "es": "¿Hay alguna foto que se te escapó y en la que todavía piensas? ¿Qué pasó?",
+    "fr": "Y a-t-il une photo que tu as ratée et à laquelle tu penses encore ? Que s'est-il passé ?",
+    "it": "C'è una foto che ti sei perso e a cui pensi ancora? Che cosa è successo?",
+    "pt": "Há alguma fotografia que perdeste e em que ainda pensas? O que aconteceu?",
+    "pt_BR": "Tem alguma foto que você perdeu e na qual ainda pensa? O que aconteceu?"
+   }
+  },
+  {
+   "id": "photography-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer calm, quiet photos or busy, colourful ones?",
+    "de": "Magst du lieber ruhige, stille Fotos oder lebendige, bunte Bilder?",
+    "es": "¿Prefieres las fotos tranquilas y serenas o las animadas y llenas de color?",
+    "fr": "Tu préfères les photos calmes et paisibles ou celles qui sont vivantes et colorées ?",
+    "it": "Preferisci le foto calme e silenziose o quelle vivaci e colorate?",
+    "pt": "Preferes fotografias calmas e serenas ou movimentadas e coloridas?",
+    "pt_BR": "Você prefere fotos calmas e tranquilas ou agitadas e coloridas?"
+   }
+  },
+  {
+   "id": "photography-027",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel when someone takes a really good photo of you?",
+    "de": "Wie fühlst du dich, wenn jemand ein richtig gutes Foto von dir macht?",
+    "es": "¿Cómo te sientes cuando alguien te hace una foto realmente buena?",
+    "fr": "Qu'est-ce que tu ressens quand quelqu'un fait une très belle photo de toi ?",
+    "it": "Come ti senti quando qualcuno ti fa una foto davvero bella?",
+    "pt": "Como te sentes quando alguém te tira uma fotografia mesmo boa?",
+    "pt_BR": "Como você se sente quando alguém tira uma foto muito boa sua?"
+   }
+  },
+  {
+   "id": "photography-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which app or tool do you use most for your photos?",
+    "de": "Welche App oder welches Programm nutzt du am meisten für deine Fotos?",
+    "es": "¿Qué aplicación o herramienta usas más para tus fotos?",
+    "fr": "Quelle application ou quel outil utilises-tu le plus pour tes photos ?",
+    "it": "Quale app o strumento usi di più per le tue foto?",
+    "pt": "Que aplicação ou ferramenta usas mais para as tuas fotografias?",
+    "pt_BR": "Qual aplicativo ou ferramenta você mais usa para suas fotos?"
+   }
+  },
+  {
+   "id": "photography-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you like to photograph this weekend?",
+    "de": "Was würdest du dieses Wochenende gern fotografieren?",
+    "es": "¿Qué te gustaría fotografiar este fin de semana?",
+    "fr": "Qu'aimerais-tu photographier ce week-end ?",
+    "it": "Che cosa ti piacerebbe fotografare questo fine settimana?",
+    "pt": "O que gostarias de fotografar este fim de semana?",
+    "pt_BR": "O que você gostaria de fotografar neste fim de semana?"
+   }
+  },
+  {
+   "id": "photography-030",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think photography has changed the way you see the world? How?",
+    "de": "Hat die Fotografie verändert, wie du die Welt siehst? Inwiefern?",
+    "es": "¿Crees que la fotografía ha cambiado tu forma de ver el mundo? ¿Cómo?",
+    "fr": "Penses-tu que la photo a changé ta façon de voir le monde ? Comment ?",
+    "it": "Pensi che la fotografia abbia cambiato il tuo modo di vedere il mondo? Come?",
+    "pt": "Achas que a fotografia mudou a tua maneira de ver o mundo? Como?",
+    "pt_BR": "Você acha que a fotografia mudou seu jeito de ver o mundo? Como?"
+   }
+  },
+  {
+   "id": "photography-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which animal would you love to photograph in the wild?",
+    "de": "Welches Tier würdest du gern einmal in freier Natur fotografieren?",
+    "es": "¿Qué animal te encantaría fotografiar en libertad?",
+    "fr": "Quel animal aimerais-tu photographier dans la nature ?",
+    "it": "Quale animale ti piacerebbe fotografare in natura?",
+    "pt": "Que animal adorarias fotografar na natureza?",
+    "pt_BR": "Qual animal você adoraria fotografar na natureza?"
+   }
+  },
+  {
+   "id": "photography-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer photos that look natural or photos with a strong artistic style?",
+    "de": "Magst du lieber natürlich wirkende Fotos oder Bilder mit starkem künstlerischem Stil?",
+    "es": "¿Prefieres las fotos de aspecto natural o las que tienen un estilo artístico marcado?",
+    "fr": "Tu préfères les photos naturelles ou celles qui ont un style artistique très marqué ?",
+    "it": "Preferisci le foto dall'aspetto naturale o quelle con uno stile artistico forte?",
+    "pt": "Preferes fotografias com ar natural ou com um estilo artístico marcado?",
+    "pt_BR": "Você prefere fotos com cara natural ou com um estilo artístico marcante?"
+   }
+  },
+  {
+   "id": "photography-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most unusual thing you have ever photographed?",
+    "de": "Was ist das Ungewöhnlichste, das du je fotografiert hast?",
+    "es": "¿Qué es lo más curioso que has fotografiado nunca?",
+    "fr": "Quelle est la chose la plus insolite que tu aies jamais photographiée ?",
+    "it": "Qual è la cosa più insolita che tu abbia mai fotografato?",
+    "pt": "Qual é a coisa mais invulgar que já fotografaste?",
+    "pt_BR": "Qual é a coisa mais inusitada que você já fotografou?"
+   }
+  },
+  {
+   "id": "photography-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather explore a city or nature with your camera for a day?",
+    "de": "Würdest du einen Tag lang lieber eine Stadt oder die Natur mit der Kamera erkunden?",
+    "es": "¿Preferirías pasar un día explorando una ciudad o la naturaleza con tu cámara?",
+    "fr": "Tu préférerais explorer une ville ou la nature avec ton appareil pendant une journée ?",
+    "it": "Preferiresti esplorare per un giorno una città o la natura con la tua fotocamera?",
+    "pt": "Preferias explorar uma cidade ou a natureza com a tua câmara durante um dia?",
+    "pt_BR": "Você preferiria passar um dia explorando uma cidade ou a natureza com sua câmera?"
+   }
+  },
+  {
+   "id": "photography-035",
+   "lv": "any",
+   "i18n": {
+    "en": "What photo would you love to hang on your wall at home?",
+    "de": "Welches Foto würdest du dir gern zu Hause an die Wand hängen?",
+    "es": "¿Qué foto te encantaría colgar en una pared de tu casa?",
+    "fr": "Quelle photo aimerais-tu accrocher sur un mur chez toi ?",
+    "it": "Quale foto ti piacerebbe appendere a una parete di casa?",
+    "pt": "Que fotografia adorarias pendurar numa parede da tua casa?",
+    "pt_BR": "Que foto você adoraria pendurar na parede de casa?"
+   }
+  },
+  {
+   "id": "photography-036",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like taking photos alone or with friends?",
+    "de": "Fotografierst du lieber allein oder mit Freunden?",
+    "es": "¿Te gusta hacer fotos a solas o con amigos?",
+    "fr": "Tu aimes photographier seul ou seule, ou plutôt avec des amis ?",
+    "it": "Ti piace fotografare da solo o in compagnia di amici?",
+    "pt": "Gostas de fotografar sozinho ou com amigos?",
+    "pt_BR": "Você gosta de fotografar sozinho ou com amigos?"
+   }
+  },
+  {
+   "id": "photography-037",
+   "lv": "any",
+   "i18n": {
+    "en": "What colours do you notice most often in your favourite photos?",
+    "de": "Welche Farben tauchen in deinen Lieblingsfotos am häufigsten auf?",
+    "es": "¿Qué colores aparecen más a menudo en tus fotos favoritas?",
+    "fr": "Quelles couleurs reviennent le plus souvent dans tes photos préférées ?",
+    "it": "Quali colori noti più spesso nelle tue foto preferite?",
+    "pt": "Que cores aparecem com mais frequência nas tuas fotografias favoritas?",
+    "pt_BR": "Que cores aparecem com mais frequência nas suas fotos favoritas?"
+   }
+  },
+  {
+   "id": "photography-038",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you describe your photography in three words?",
+    "de": "Wie würdest du deine Fotografie in drei Worten beschreiben?",
+    "es": "¿Cómo describirías tu fotografía en tres palabras?",
+    "fr": "Comment décrirais-tu ta photographie en trois mots ?",
+    "it": "Come descriveresti la tua fotografia in tre parole?",
+    "pt": "Como descreverias a tua fotografia em três palavras?",
+    "pt_BR": "Como você descreveria sua fotografia em três palavras?"
+   }
+  },
+  {
+   "id": "photography-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a festival or celebration from your culture that is wonderful to photograph?",
+    "de": "Gibt es ein Fest aus deiner Kultur, das wunderbar zu fotografieren ist?",
+    "es": "¿Hay alguna fiesta o celebración de tu cultura que sea maravillosa para fotografiar?",
+    "fr": "Y a-t-il une fête ou une célébration de ta culture qui est merveilleuse à photographier ?",
+    "it": "C'è una festa o una celebrazione della tua cultura che è meravigliosa da fotografare?",
+    "pt": "Há alguma festa ou celebração da tua cultura que seja maravilhosa para fotografar?",
+    "pt_BR": "Tem alguma festa ou celebração da sua cultura que seja maravilhosa de fotografar?"
+   }
+  },
+  {
+   "id": "photography-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you like to learn first on this photography path?",
+    "de": "Was möchtest du auf diesem Fotografie-Weg als Erstes lernen?",
+    "es": "¿Qué te gustaría aprender primero en este camino de fotografía?",
+    "fr": "Qu'aimerais-tu apprendre en premier sur ce parcours photo ?",
+    "it": "Che cosa ti piacerebbe imparare per prima cosa in questo percorso di fotografia?",
+    "pt": "O que gostarias de aprender primeiro neste percurso de fotografia?",
+    "pt_BR": "O que você gostaria de aprender primeiro nesta jornada de fotografia?"
+   }
+  },
+  {
+   "id": "photography-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried changing a setting on your camera or phone? What happened?",
+    "de": "Hast du schon einmal eine Einstellung an Kamera oder Handy verändert? Was ist passiert?",
+    "es": "¿Alguna vez has probado a cambiar un ajuste de tu cámara o móvil? ¿Qué pasó?",
+    "fr": "As-tu déjà essayé de changer un réglage de ton appareil ou de ton téléphone ? Qu'est-ce que ça a donné ?",
+    "it": "Hai mai provato a cambiare un'impostazione della fotocamera o del telefono? Che cosa è successo?",
+    "pt": "Já experimentaste mudar alguma definição da câmara ou do telemóvel? O que aconteceu?",
+    "pt_BR": "Você já tentou mudar alguma configuração da câmera ou do celular? O que aconteceu?"
+   }
+  },
+  {
+   "id": "photography-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do your photos sometimes come out blurry? When does it usually happen?",
+    "de": "Werden deine Fotos manchmal unscharf? Wann passiert das meistens?",
+    "es": "¿Te salen a veces las fotos borrosas? ¿Cuándo suele pasar?",
+    "fr": "Tes photos sont-elles parfois floues ? Quand est-ce que ça arrive le plus souvent ?",
+    "it": "Ti capita che le foto vengano mosse? Quando succede di solito?",
+    "pt": "As tuas fotografias às vezes ficam tremidas? Quando costuma acontecer?",
+    "pt_BR": "Suas fotos às vezes saem borradas? Quando isso costuma acontecer?"
+   }
+  },
+  {
+   "id": "photography-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where do you usually put your subject in the frame: in the centre or to the side?",
+    "de": "Wo platzierst du dein Motiv meistens im Bild: in der Mitte oder seitlich?",
+    "es": "¿Dónde sueles colocar al sujeto en el encuadre: en el centro o a un lado?",
+    "fr": "Où places-tu ton sujet en général dans le cadre : au centre ou sur le côté ?",
+    "it": "Dove metti di solito il soggetto nell'inquadratura: al centro o di lato?",
+    "pt": "Onde costumas pôr o motivo no enquadramento: ao centro ou de lado?",
+    "pt_BR": "Onde você costuma colocar o assunto no enquadramento: no centro ou de lado?"
+   }
+  },
+  {
+   "id": "photography-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever used the grid on your camera or phone screen?",
+    "de": "Hast du schon einmal das Gitternetz auf dem Display von Kamera oder Handy benutzt?",
+    "es": "¿Has usado alguna vez la cuadrícula en la pantalla de tu cámara o móvil?",
+    "fr": "As-tu déjà utilisé la grille sur l'écran de ton appareil ou de ton téléphone ?",
+    "it": "Hai mai usato la griglia sullo schermo della fotocamera o del telefono?",
+    "pt": "Já usaste a grelha no ecrã da câmara ou do telemóvel?",
+    "pt_BR": "Você já usou a grade na tela da câmera ou do celular?"
+   }
+  },
+  {
+   "id": "photography-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which room in your home has the best light for photos?",
+    "de": "Welcher Raum in deiner Wohnung hat das beste Licht für Fotos?",
+    "es": "¿Qué habitación de tu casa tiene la mejor luz para hacer fotos?",
+    "fr": "Quelle pièce de chez toi a la meilleure lumière pour les photos ?",
+    "it": "Quale stanza di casa tua ha la luce migliore per le foto?",
+    "pt": "Que divisão da tua casa tem a melhor luz para fotografias?",
+    "pt_BR": "Qual cômodo da sua casa tem a melhor luz pra fotos?"
+   }
+  },
+  {
+   "id": "photography-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever photographed a sunset or sunrise? How did it turn out?",
+    "de": "Hast du schon einmal einen Sonnenuntergang oder -aufgang fotografiert? Wie ist es geworden?",
+    "es": "¿Has fotografiado alguna vez una puesta o una salida de sol? ¿Cómo quedó?",
+    "fr": "As-tu déjà photographié un coucher ou un lever de soleil ? Comment c'était ?",
+    "it": "Hai mai fotografato un tramonto o un'alba? Come è venuta la foto?",
+    "pt": "Já fotografaste um pôr do sol ou um nascer do sol? Como ficou?",
+    "pt_BR": "Você já fotografou um pôr do sol ou um nascer do sol? Como ficou?"
+   }
+  },
+  {
+   "id": "photography-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is the hardest part of taking photos for you right now?",
+    "de": "Was ist für dich im Moment das Schwierigste beim Fotografieren?",
+    "es": "¿Qué es lo que más te cuesta ahora mismo al hacer fotos?",
+    "fr": "Qu'est-ce qui est le plus difficile pour toi en photo en ce moment ?",
+    "it": "Qual è per te la parte più difficile del fotografare in questo momento?",
+    "pt": "Neste momento, qual é para ti a parte mais difícil de fotografar?",
+    "pt_BR": "Qual é a parte mais difícil de fotografar pra você agora?"
+   }
+  },
+  {
+   "id": "photography-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer shooting indoors or outdoors? Why?",
+    "de": "Fotografierst du lieber drinnen oder draußen? Warum?",
+    "es": "¿Prefieres hacer fotos en interiores o al aire libre? ¿Por qué?",
+    "fr": "Tu préfères photographier en intérieur ou en extérieur ? Pourquoi ?",
+    "it": "Preferisci fotografare al chiuso o all'aperto? Perché?",
+    "pt": "Preferes fotografar em espaços interiores ou ao ar livre? Porquê?",
+    "pt_BR": "Você prefere fotografar em ambientes internos ou ao ar livre? Por quê?"
+   }
+  },
+  {
+   "id": "photography-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever photographed food? What made the photo look tasty or not?",
+    "de": "Hast du schon einmal Essen fotografiert? Was hat das Foto lecker wirken lassen oder nicht?",
+    "es": "¿Has fotografiado comida alguna vez? ¿Qué hizo que la foto pareciera apetitosa o no?",
+    "fr": "As-tu déjà photographié de la nourriture ? Qu'est-ce qui rendait la photo appétissante ou pas ?",
+    "it": "Hai mai fotografato del cibo? Che cosa rendeva la foto invitante oppure no?",
+    "pt": "Já fotografaste comida? O que fez a fotografia parecer apetitosa ou não?",
+    "pt_BR": "Você já fotografou comida? O que deixou a foto apetitosa ou não?"
+   }
+  },
+  {
+   "id": "photography-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "When you take a portrait, do you ask people to pose or wait for natural moments?",
+    "de": "Bittest du Leute bei Porträts zu posieren, oder wartest du auf natürliche Momente?",
+    "es": "Cuando haces un retrato, ¿pides a la gente que pose o esperas momentos naturales?",
+    "fr": "Quand tu fais un portrait, tu demandes aux gens de poser ou tu attends des moments naturels ?",
+    "it": "Quando fai un ritratto, chiedi alle persone di mettersi in posa o aspetti momenti spontanei?",
+    "pt": "Quando fazes um retrato, pedes às pessoas para posar ou esperas por momentos naturais?",
+    "pt_BR": "Quando você faz um retrato, pede para as pessoas posarem ou espera momentos naturais?"
+   }
+  },
+  {
+   "id": "photography-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever taken a photo of your pet or a friend's pet? How did it go?",
+    "de": "Hast du schon einmal dein Haustier oder das von Freunden fotografiert? Wie lief es?",
+    "es": "¿Has fotografiado alguna vez a tu mascota o a la de un amigo? ¿Qué tal salió?",
+    "fr": "As-tu déjà photographié ton animal ou celui d'un ami ? Comment ça s'est passé ?",
+    "it": "Hai mai fotografato il tuo animale o quello di un amico? Com'è andata?",
+    "pt": "Já fotografaste o teu animal de estimação ou o de um amigo? Como correu?",
+    "pt_BR": "Você já fotografou seu bichinho ou o de um amigo? Como foi?"
+   }
+  },
+  {
+   "id": "photography-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you usually zoom in or walk closer to your subject?",
+    "de": "Zoomst du meistens heran oder gehst du lieber näher an dein Motiv?",
+    "es": "¿Sueles hacer zoom o acercarte caminando al sujeto?",
+    "fr": "Tu as plutôt tendance à zoomer ou à t'approcher de ton sujet ?",
+    "it": "Di solito usi lo zoom o ti avvicini a piedi al soggetto?",
+    "pt": "Costumas fazer zoom ou aproximar-te a pé do motivo?",
+    "pt_BR": "Você costuma dar zoom ou chegar mais perto do assunto?"
+   }
+  },
+  {
+   "id": "photography-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you find easier to photograph: things that move or things that stay still?",
+    "de": "Was findest du leichter zu fotografieren: Dinge, die sich bewegen, oder Dinge, die stillhalten?",
+    "es": "¿Qué te resulta más fácil fotografiar: cosas que se mueven o cosas quietas?",
+    "fr": "Qu'est-ce qui est le plus facile à photographier pour toi : ce qui bouge ou ce qui reste immobile ?",
+    "it": "Che cosa trovi più facile da fotografare: soggetti in movimento o soggetti fermi?",
+    "pt": "O que achas mais fácil fotografar: coisas em movimento ou coisas paradas?",
+    "pt_BR": "O que você acha mais fácil de fotografar: coisas em movimento ou paradas?"
+   }
+  },
+  {
+   "id": "photography-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever edited a photo? What did you change?",
+    "de": "Hast du schon einmal ein Foto bearbeitet? Was hast du verändert?",
+    "es": "¿Has editado alguna vez una foto? ¿Qué cambiaste?",
+    "fr": "As-tu déjà retouché une photo ? Qu'as-tu modifié ?",
+    "it": "Hai mai modificato una foto? Che cosa hai cambiato?",
+    "pt": "Já editaste alguma fotografia? O que mudaste?",
+    "pt_BR": "Você já editou alguma foto? O que você mudou?"
+   }
+  },
+  {
+   "id": "photography-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you like using filters on your photos? Which ones and why?",
+    "de": "Benutzt du gern Filter für deine Fotos? Welche und warum?",
+    "es": "¿Te gusta usar filtros en tus fotos? ¿Cuáles y por qué?",
+    "fr": "Tu aimes utiliser des filtres sur tes photos ? Lesquels et pourquoi ?",
+    "it": "Ti piace usare i filtri sulle tue foto? Quali e perché?",
+    "pt": "Gostas de usar filtros nas tuas fotografias? Quais e porquê?",
+    "pt_BR": "Você gosta de usar filtros nas suas fotos? Quais e por quê?"
+   }
+  },
+  {
+   "id": "photography-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would you like to photograph on a rainy day?",
+    "de": "Was würdest du an einem Regentag gern fotografieren?",
+    "es": "¿Qué te gustaría fotografiar en un día de lluvia?",
+    "fr": "Qu'aimerais-tu photographier un jour de pluie ?",
+    "it": "Che cosa ti piacerebbe fotografare in una giornata di pioggia?",
+    "pt": "O que gostarias de fotografar num dia de chuva?",
+    "pt_BR": "O que você gostaria de fotografar num dia de chuva?"
+   }
+  },
+  {
+   "id": "photography-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tried taking photos at night? What was tricky?",
+    "de": "Hast du schon einmal nachts fotografiert? Was war schwierig?",
+    "es": "¿Has probado a hacer fotos de noche? ¿Qué te resultó complicado?",
+    "fr": "As-tu déjà essayé de faire des photos de nuit ? Qu'est-ce qui était compliqué ?",
+    "it": "Hai mai provato a fotografare di notte? Che cosa è stato difficile?",
+    "pt": "Já experimentaste fotografar à noite? O que foi complicado?",
+    "pt_BR": "Você já tentou tirar fotos à noite? O que foi complicado?"
+   }
+  },
+  {
+   "id": "photography-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you like taking selfies? What makes a selfie good for you?",
+    "de": "Machst du gern Selfies? Was macht für dich ein gutes Selfie aus?",
+    "es": "¿Te gusta hacerte selfis? ¿Qué hace que un selfi sea bueno para ti?",
+    "fr": "Tu aimes faire des selfies ? Qu'est-ce qui fait un bon selfie selon toi ?",
+    "it": "Ti piace fare selfie? Che cosa rende un selfie riuscito per te?",
+    "pt": "Gostas de tirar selfies? O que faz uma boa selfie para ti?",
+    "pt_BR": "Você gosta de tirar selfies? O que faz uma selfie ser boa pra você?"
+   }
+  },
+  {
+   "id": "photography-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you choose which photos to keep and which to delete?",
+    "de": "Wie entscheidest du, welche Fotos du behältst und welche du löschst?",
+    "es": "¿Cómo eliges qué fotos guardar y cuáles borrar?",
+    "fr": "Comment choisis-tu les photos à garder et celles à supprimer ?",
+    "it": "Come scegli quali foto tenere e quali cancellare?",
+    "pt": "Como escolhes que fotografias guardar e quais apagar?",
+    "pt_BR": "Como você escolhe quais fotos guardar e quais apagar?"
+   }
+  },
+  {
+   "id": "photography-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever photographed a landscape that looked better in real life? Why do you think so?",
+    "de": "Hast du eine Landschaft fotografiert, die in echt schöner aussah? Woran lag das wohl?",
+    "es": "¿Has fotografiado algún paisaje que se veía mejor en persona? ¿Por qué crees que pasó?",
+    "fr": "As-tu déjà photographié un paysage plus beau en vrai ? À ton avis, pourquoi ?",
+    "it": "Hai mai fotografato un paesaggio che dal vivo era più bello? Secondo te perché?",
+    "pt": "Já fotografaste uma paisagem que era mais bonita ao vivo? Porque achas que aconteceu?",
+    "pt_BR": "Você já fotografou uma paisagem que era mais bonita ao vivo? Por que acha que isso aconteceu?"
+   }
+  },
+  {
+   "id": "photography-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which do you prefer for your photos: horizontal or vertical? When do you use each?",
+    "de": "Was magst du bei deinen Fotos lieber, Quer- oder Hochformat? Wann nutzt du welches?",
+    "es": "¿Qué prefieres para tus fotos: horizontal o vertical? ¿Cuándo usas cada uno?",
+    "fr": "Tu préfères le format horizontal ou vertical pour tes photos ? Quand utilises-tu chacun ?",
+    "it": "Per le tue foto preferisci il formato orizzontale o verticale? Quando usi l'uno o l'altro?",
+    "pt": "O que preferes nas tuas fotografias: horizontal ou vertical? Quando usas cada um?",
+    "pt_BR": "O que você prefere nas suas fotos: horizontal ou vertical? Quando usa cada um?"
+   }
+  },
+  {
+   "id": "photography-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever asked a stranger if you could take their photo? How did it feel?",
+    "de": "Hast du schon einmal eine fremde Person gefragt, ob du sie fotografieren darfst? Wie war das?",
+    "es": "¿Has pedido alguna vez a un desconocido permiso para fotografiarlo? ¿Cómo te sentiste?",
+    "fr": "As-tu déjà demandé à un inconnu si tu pouvais le photographier ? Qu'as-tu ressenti ?",
+    "it": "Hai mai chiesto a uno sconosciuto se potevi fotografarlo? Come ti sei sentito?",
+    "pt": "Já pediste a um desconhecido para lhe tirares uma fotografia? Como te sentiste?",
+    "pt_BR": "Você já pediu a um desconhecido pra tirar uma foto dele? Como se sentiu?"
+   }
+  },
+  {
+   "id": "photography-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you think makes a group photo look good?",
+    "de": "Was macht deiner Meinung nach ein gelungenes Gruppenfoto aus?",
+    "es": "¿Qué crees que hace que una foto de grupo quede bien?",
+    "fr": "Selon toi, qu'est-ce qui fait une belle photo de groupe ?",
+    "it": "Secondo te, che cosa rende bella una foto di gruppo?",
+    "pt": "O que achas que faz uma fotografia de grupo ficar bem?",
+    "pt_BR": "O que você acha que faz uma foto de grupo ficar boa?"
+   }
+  },
+  {
+   "id": "photography-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you noticed how light looks different in the morning and in the evening?",
+    "de": "Ist dir aufgefallen, dass das Licht morgens anders aussieht als abends?",
+    "es": "¿Te has fijado en que la luz es distinta por la mañana y por la tarde?",
+    "fr": "As-tu remarqué que la lumière est différente le matin et le soir ?",
+    "it": "Hai notato come la luce sia diversa al mattino e alla sera?",
+    "pt": "Já reparaste como a luz é diferente de manhã e ao fim da tarde?",
+    "pt_BR": "Você já reparou como a luz é diferente de manhã e no fim da tarde?"
+   }
+  },
+  {
+   "id": "photography-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which small photo habit would you like to start this month?",
+    "de": "Welche kleine Fotogewohnheit möchtest du diesen Monat beginnen?",
+    "es": "¿Qué pequeño hábito fotográfico te gustaría empezar este mes?",
+    "fr": "Quelle petite habitude photo aimerais-tu prendre ce mois-ci ?",
+    "it": "Quale piccola abitudine fotografica ti piacerebbe iniziare questo mese?",
+    "pt": "Que pequeno hábito fotográfico gostarias de começar este mês?",
+    "pt_BR": "Que pequeno hábito de fotografia você gostaria de começar este mês?"
+   }
+  },
+  {
+   "id": "photography-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried shooting in manual mode? How did it change your photos?",
+    "de": "Hast du schon im manuellen Modus fotografiert? Wie hat das deine Fotos verändert?",
+    "es": "¿Has probado a disparar en modo manual? ¿Cómo cambió tus fotos?",
+    "fr": "As-tu essayé le mode manuel ? Comment a-t-il changé tes photos ?",
+    "it": "Hai provato a scattare in modalità manuale? Come sono cambiate le tue foto?",
+    "pt": "Já experimentaste fotografar em modo manual? Como mudou as tuas fotografias?",
+    "pt_BR": "Você já tentou fotografar no modo manual? Como isso mudou suas fotos?"
+   }
+  },
+  {
+   "id": "photography-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which setting do you think about first: aperture, shutter speed or ISO? Why?",
+    "de": "An welche Einstellung denkst du zuerst: Blende, Verschlusszeit oder ISO? Warum?",
+    "es": "¿En qué ajuste piensas primero: apertura, velocidad de obturación o ISO? ¿Por qué?",
+    "fr": "À quel réglage penses-tu en premier : ouverture, vitesse ou ISO ? Pourquoi ?",
+    "it": "A quale impostazione pensi per prima: diaframma, tempo di scatto o ISO? Perché?",
+    "pt": "Em que definição pensas primeiro: abertura, velocidade ou ISO? Porquê?",
+    "pt_BR": "Em qual configuração você pensa primeiro: abertura, velocidade ou ISO? Por quê?"
+   }
+  },
+  {
+   "id": "photography-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you shoot in RAW or JPEG? What made you choose it?",
+    "de": "Fotografierst du in RAW oder JPEG? Warum hast du dich dafür entschieden?",
+    "es": "¿Disparas en RAW o en JPEG? ¿Por qué lo elegiste?",
+    "fr": "Tu photographies en RAW ou en JPEG ? Qu'est-ce qui t'a fait choisir ?",
+    "it": "Scatti in RAW o in JPEG? Perché hai fatto questa scelta?",
+    "pt": "Fotografas em RAW ou em JPEG? O que te levou a escolher?",
+    "pt_BR": "Você fotografa em RAW ou em JPEG? O que te fez escolher?"
+   }
+  },
+  {
+   "id": "photography-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which focal length do you enjoy most, and how does it change the way you see?",
+    "de": "Welche Brennweite magst du am liebsten, und wie verändert sie deinen Blick?",
+    "es": "¿Qué distancia focal disfrutas más y cómo cambia tu manera de ver?",
+    "fr": "Quelle focale préfères-tu, et comment change-t-elle ta façon de voir ?",
+    "it": "Quale lunghezza focale preferisci e come cambia il tuo modo di vedere?",
+    "pt": "Que distância focal preferes e como muda a tua maneira de ver?",
+    "pt_BR": "Qual distância focal você mais curte e como ela muda seu jeito de ver?"
+   }
+  },
+  {
+   "id": "photography-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried a long exposure? What did you photograph?",
+    "de": "Hast du schon einmal eine Langzeitbelichtung ausprobiert? Was hast du fotografiert?",
+    "es": "¿Has probado una larga exposición? ¿Qué fotografiaste?",
+    "fr": "As-tu déjà essayé une pose longue ? Qu'as-tu photographié ?",
+    "it": "Hai mai provato una lunga esposizione? Che cosa hai fotografato?",
+    "pt": "Já experimentaste uma longa exposição? O que fotografaste?",
+    "pt_BR": "Você já testou uma longa exposição? O que fotografou?"
+   }
+  },
+  {
+   "id": "photography-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you decide between a blurry background and keeping everything sharp?",
+    "de": "Wie entscheidest du dich zwischen unscharfem Hintergrund und durchgehender Schärfe?",
+    "es": "¿Cómo decides entre un fondo desenfocado y tenerlo todo nítido?",
+    "fr": "Comment choisis-tu entre un arrière-plan flou et une image nette partout ?",
+    "it": "Come decidi tra uno sfondo sfocato e avere tutto a fuoco?",
+    "pt": "Como decides entre um fundo desfocado e ter tudo nítido?",
+    "pt_BR": "Como você decide entre um fundo desfocado e deixar tudo nítido?"
+   }
+  },
+  {
+   "id": "photography-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which editing step makes the biggest difference to your photos?",
+    "de": "Welcher Bearbeitungsschritt macht bei deinen Fotos den größten Unterschied?",
+    "es": "¿Qué paso de edición marca más la diferencia en tus fotos?",
+    "fr": "Quelle étape de retouche fait la plus grande différence sur tes photos ?",
+    "it": "Quale passaggio dell'editing fa più differenza nelle tue foto?",
+    "pt": "Que passo da edição faz mais diferença nas tuas fotografias?",
+    "pt_BR": "Qual etapa da edição faz mais diferença nas suas fotos?"
+   }
+  },
+  {
+   "id": "photography-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever used a tripod? What did it let you do?",
+    "de": "Hast du schon einmal ein Stativ benutzt? Was konntest du damit machen?",
+    "es": "¿Has usado alguna vez un trípode? ¿Qué te permitió hacer?",
+    "fr": "As-tu déjà utilisé un trépied ? Qu'est-ce qu'il t'a permis de faire ?",
+    "it": "Hai mai usato un treppiede? Che cosa ti ha permesso di fare?",
+    "pt": "Já usaste um tripé? O que te permitiu fazer?",
+    "pt_BR": "Você já usou um tripé? O que ele te permitiu fazer?"
+   }
+  },
+  {
+   "id": "photography-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which photo genre would you like to explore more deeply, and why?",
+    "de": "Welches Fotogenre möchtest du gern genauer erkunden und warum?",
+    "es": "¿Qué género fotográfico te gustaría explorar más a fondo y por qué?",
+    "fr": "Quel genre photographique aimerais-tu explorer davantage, et pourquoi ?",
+    "it": "Quale genere fotografico ti piacerebbe approfondire e perché?",
+    "pt": "Que género fotográfico gostarias de explorar mais a fundo, e porquê?",
+    "pt_BR": "Qual gênero fotográfico você gostaria de explorar mais a fundo, e por quê?"
+   }
+  },
+  {
+   "id": "photography-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you make people feel relaxed when you photograph them?",
+    "de": "Wie sorgst du dafür, dass sich Menschen entspannt fühlen, wenn du sie fotografierst?",
+    "es": "¿Cómo consigues que la gente se sienta relajada cuando la fotografías?",
+    "fr": "Comment aides-tu les gens à se détendre quand tu les photographies ?",
+    "it": "Come fai sentire le persone a proprio agio quando le fotografi?",
+    "pt": "Como é que pões as pessoas à vontade quando as fotografas?",
+    "pt_BR": "Como você deixa as pessoas à vontade quando as fotografa?"
+   }
+  },
+  {
+   "id": "photography-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you edit your photos to look realistic or to create a mood? Tell me about it.",
+    "de": "Bearbeitest du deine Fotos eher realistisch oder stimmungsvoll? Erzähl mal.",
+    "es": "¿Editas tus fotos para que parezcan realistas o para crear un ambiente? Cuéntame.",
+    "fr": "Tu retouches tes photos pour qu'elles restent réalistes ou pour créer une ambiance ? Raconte.",
+    "it": "Modifichi le foto per renderle realistiche o per creare un'atmosfera? Raccontami.",
+    "pt": "Editas as tuas fotografias para parecerem realistas ou para criar um ambiente? Conta-me.",
+    "pt_BR": "Você edita suas fotos pra parecerem realistas ou pra criar um clima? Me conta."
+   }
+  },
+  {
+   "id": "photography-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever planned a photo around the weather or the position of the sun?",
+    "de": "Hast du schon einmal ein Foto nach Wetter oder Sonnenstand geplant?",
+    "es": "¿Has planificado alguna vez una foto según el tiempo o la posición del sol?",
+    "fr": "As-tu déjà prévu une photo en fonction de la météo ou de la position du soleil ?",
+    "it": "Hai mai pianificato una foto in base al meteo o alla posizione del sole?",
+    "pt": "Já planeaste uma fotografia em função do tempo ou da posição do sol?",
+    "pt_BR": "Você já planejou uma foto de acordo com o tempo ou com a posição do sol?"
+   }
+  },
+  {
+   "id": "photography-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you look for in a background before taking a portrait?",
+    "de": "Worauf achtest du beim Hintergrund, bevor du ein Porträt machst?",
+    "es": "¿En qué te fijas del fondo antes de hacer un retrato?",
+    "fr": "Que regardes-tu dans l'arrière-plan avant de faire un portrait ?",
+    "it": "A che cosa fai attenzione nello sfondo prima di scattare un ritratto?",
+    "pt": "Em que reparas no fundo antes de fazeres um retrato?",
+    "pt_BR": "No que você presta atenção no fundo antes de fazer um retrato?"
+   }
+  },
+  {
+   "id": "photography-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which kind of light do you enjoy most: soft, hard, warm or cool?",
+    "de": "Welches Licht magst du am liebsten: weich, hart, warm oder kühl?",
+    "es": "¿Qué tipo de luz te gusta más: suave, dura, cálida o fría?",
+    "fr": "Quel type de lumière préfères-tu : douce, dure, chaude ou froide ?",
+    "it": "Che tipo di luce preferisci: morbida, dura, calda o fredda?",
+    "pt": "Que tipo de luz preferes: suave, dura, quente ou fria?",
+    "pt_BR": "Que tipo de luz você mais curte: suave, dura, quente ou fria?"
+   }
+  },
+  {
+   "id": "photography-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried photographing motion with panning or blur? How did it feel?",
+    "de": "Hast du Bewegung schon mal mit Mitziehen oder Unschärfe fotografiert? Wie war das?",
+    "es": "¿Has probado a fotografiar el movimiento con barrido o desenfoque? ¿Qué tal fue?",
+    "fr": "As-tu déjà photographié le mouvement avec un filé ou du flou ? Comment c'était ?",
+    "it": "Hai mai provato a fotografare il movimento con il panning o il mosso? Com'è andata?",
+    "pt": "Já experimentaste fotografar o movimento com arrastamento ou desfoque? Como foi?",
+    "pt_BR": "Você já tentou fotografar movimento com panning ou borrado? Como foi?"
+   }
+  },
+  {
+   "id": "photography-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you feel about black and white photography for your own work?",
+    "de": "Was hältst du von Schwarzweiß für deine eigenen Fotos?",
+    "es": "¿Qué te parece la fotografía en blanco y negro para tu propio trabajo?",
+    "fr": "Que penses-tu du noir et blanc pour tes propres photos ?",
+    "it": "Che cosa pensi del bianco e nero per le tue foto?",
+    "pt": "O que achas da fotografia a preto e branco para o teu próprio trabalho?",
+    "pt_BR": "O que você acha da fotografia em preto e branco para o seu próprio trabalho?"
+   }
+  },
+  {
+   "id": "photography-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is a small photo series you would like to make?",
+    "de": "Welche kleine Fotoserie würdest du gern machen?",
+    "es": "¿Qué pequeña serie de fotos te gustaría hacer?",
+    "fr": "Quelle petite série de photos aimerais-tu réaliser ?",
+    "it": "Quale piccola serie fotografica ti piacerebbe realizzare?",
+    "pt": "Que pequena série de fotografias gostarias de fazer?",
+    "pt_BR": "Que pequena série de fotos você gostaria de fazer?"
+   }
+  },
+  {
+   "id": "photography-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you react when someone gives you feedback on your photos?",
+    "de": "Wie reagierst du, wenn jemand dir Feedback zu deinen Fotos gibt?",
+    "es": "¿Cómo reaccionas cuando alguien te da su opinión sobre tus fotos?",
+    "fr": "Comment réagis-tu quand quelqu'un te fait un retour sur tes photos ?",
+    "it": "Come reagisci quando qualcuno ti dà un parere sulle tue foto?",
+    "pt": "Como reages quando alguém te dá feedback sobre as tuas fotografias?",
+    "pt_BR": "Como você reage quando alguém dá um feedback sobre suas fotos?"
+   }
+  },
+  {
+   "id": "photography-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which piece of photo gear has helped you the most so far?",
+    "de": "Welches Fotozubehör hat dir bisher am meisten geholfen?",
+    "es": "¿Qué accesorio fotográfico te ha ayudado más hasta ahora?",
+    "fr": "Quel équipement photo t'a le plus aidé jusqu'à présent ?",
+    "it": "Quale accessorio fotografico ti ha aiutato di più finora?",
+    "pt": "Que equipamento fotográfico te ajudou mais até agora?",
+    "pt_BR": "Qual equipamento de fotografia mais te ajudou até agora?"
+   }
+  },
+  {
+   "id": "photography-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you check on the histogram or screen before you move on from a scene?",
+    "de": "Was prüfst du im Histogramm oder auf dem Display, bevor du weiterziehst?",
+    "es": "¿Qué compruebas en el histograma o en la pantalla antes de pasar a otra escena?",
+    "fr": "Que vérifies-tu sur l'histogramme ou l'écran avant de passer à autre chose ?",
+    "it": "Che cosa controlli sull'istogramma o sullo schermo prima di passare a un'altra scena?",
+    "pt": "O que verificas no histograma ou no ecrã antes de passares a outra cena?",
+    "pt_BR": "O que você confere no histograma ou na tela antes de partir pra outra cena?"
+   }
+  },
+  {
+   "id": "photography-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you describe your personal style as a photographer?",
+    "de": "Wie würdest du deinen persönlichen Stil als Fotograf oder Fotografin beschreiben?",
+    "es": "¿Cómo describirías tu estilo personal como fotógrafo o fotógrafa?",
+    "fr": "Comment décrirais-tu ton style personnel de photographe ?",
+    "it": "Come descriveresti il tuo stile personale di fotografo?",
+    "pt": "Como descreverias o teu estilo pessoal como fotógrafo?",
+    "pt_BR": "Como você descreveria seu estilo pessoal como fotógrafo?"
+   }
+  },
+  {
+   "id": "photography-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you worked with off-camera flash or studio lights? What did you learn?",
+    "de": "Hast du schon mit entfesseltem Blitz oder Studiolicht gearbeitet? Was hast du gelernt?",
+    "es": "¿Has trabajado con flash fuera de cámara o luces de estudio? ¿Qué aprendiste?",
+    "fr": "As-tu déjà travaillé avec un flash déporté ou un éclairage de studio ? Qu'as-tu appris ?",
+    "it": "Hai lavorato con flash esterni o luci da studio? Che cosa hai imparato?",
+    "pt": "Já trabalhaste com flash fora da câmara ou luz de estúdio? O que aprendeste?",
+    "pt_BR": "Você já trabalhou com flash fora da câmera ou luz de estúdio? O que aprendeu?"
+   }
+  },
+  {
+   "id": "photography-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which photographer from history inspires you most, and what do you take from their work?",
+    "de": "Welcher Fotograf oder welche Fotografin der Geschichte inspiriert dich am meisten und warum?",
+    "es": "¿Qué fotógrafo de la historia te inspira más y qué tomas de su obra?",
+    "fr": "Quel photographe de l'histoire t'inspire le plus, et que retiens-tu de son travail ?",
+    "it": "Quale fotografo della storia ti ispira di più e che cosa prendi dal suo lavoro?",
+    "pt": "Que fotógrafo da história mais te inspira e o que retiras do seu trabalho?",
+    "pt_BR": "Qual fotógrafo da história mais te inspira, e o que você tira do trabalho dele?"
+   }
+  },
+  {
+   "id": "photography-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What long-term photo project would you love to work on?",
+    "de": "An welchem langfristigen Fotoprojekt würdest du gern arbeiten?",
+    "es": "¿En qué proyecto fotográfico a largo plazo te encantaría trabajar?",
+    "fr": "Sur quel projet photo au long cours aimerais-tu travailler ?",
+    "it": "A quale progetto fotografico a lungo termine ti piacerebbe lavorare?",
+    "pt": "Em que projeto fotográfico de longo prazo adorarias trabalhar?",
+    "pt_BR": "Em qual projeto fotográfico de longo prazo você adoraria trabalhar?"
+   }
+  },
+  {
+   "id": "photography-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Where do you draw the line between editing and changing the truth of a photo?",
+    "de": "Wo ziehst du die Grenze zwischen Bearbeitung und dem Verfälschen eines Fotos?",
+    "es": "¿Dónde pones el límite entre editar y cambiar la verdad de una foto?",
+    "fr": "Où places-tu la limite entre retoucher une photo et en changer la vérité ?",
+    "it": "Dove metti il confine tra modificare una foto e alterarne la verità?",
+    "pt": "Onde traças a linha entre editar e alterar a verdade de uma fotografia?",
+    "pt_BR": "Onde você coloca o limite entre editar e mudar a verdade de uma foto?"
+   }
+  },
+  {
+   "id": "photography-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you choose and order photos when you build a portfolio or a series?",
+    "de": "Wie wählst und ordnest du Fotos, wenn du ein Portfolio oder eine Serie zusammenstellst?",
+    "es": "¿Cómo eliges y ordenas las fotos cuando montas un portafolio o una serie?",
+    "fr": "Comment choisis-tu et ordonnes-tu tes photos pour un portfolio ou une série ?",
+    "it": "Come scegli e ordini le foto quando costruisci un portfolio o una serie?",
+    "pt": "Como escolhes e ordenas as fotografias quando montas um portefólio ou uma série?",
+    "pt_BR": "Como você escolhe e ordena as fotos quando monta um portfólio ou uma série?"
+   }
+  },
+  {
+   "id": "photography-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you ever tried astrophotography or night landscapes? What was the experience like?",
+    "de": "Hast du schon Astrofotografie oder Nachtlandschaften ausprobiert? Wie war das?",
+    "es": "¿Has probado la astrofotografía o los paisajes nocturnos? ¿Cómo fue la experiencia?",
+    "fr": "As-tu déjà essayé l'astrophotographie ou les paysages de nuit ? Comment c'était ?",
+    "it": "Hai mai provato l'astrofotografia o i paesaggi notturni? Com'è stata l'esperienza?",
+    "pt": "Já experimentaste astrofotografia ou paisagens noturnas? Como foi a experiência?",
+    "pt_BR": "Você já tentou astrofotografia ou paisagens noturnas? Como foi a experiência?"
+   }
+  },
+  {
+   "id": "photography-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What story would you like your photos to tell about the place where you live?",
+    "de": "Welche Geschichte sollen deine Fotos über den Ort erzählen, an dem du lebst?",
+    "es": "¿Qué historia te gustaría que tus fotos contaran sobre el lugar donde vives?",
+    "fr": "Quelle histoire aimerais-tu que tes photos racontent sur l'endroit où tu vis ?",
+    "it": "Che storia vorresti che le tue foto raccontassero sul luogo in cui vivi?",
+    "pt": "Que história gostarias que as tuas fotografias contassem sobre o sítio onde vives?",
+    "pt_BR": "Que história você gostaria que suas fotos contassem sobre o lugar onde você mora?"
+   }
+  },
+  {
+   "id": "photography-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you photograph other cultures with respect when you travel?",
+    "de": "Wie fotografierst du auf Reisen andere Kulturen mit Respekt?",
+    "es": "¿Cómo fotografías otras culturas con respeto cuando viajas?",
+    "fr": "Comment photographies-tu d'autres cultures avec respect quand tu voyages ?",
+    "it": "Come fotografi le altre culture con rispetto quando viaggi?",
+    "pt": "Como fotografas outras culturas com respeito quando viajas?",
+    "pt_BR": "Como você fotografa outras culturas com respeito quando viaja?"
+   }
+  },
+  {
+   "id": "photography-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you ever printed and displayed your work? How did seeing it on paper feel?",
+    "de": "Hast du deine Arbeiten schon gedruckt und ausgestellt? Wie war es, sie auf Papier zu sehen?",
+    "es": "¿Has impreso y expuesto alguna vez tu trabajo? ¿Qué sentiste al verlo en papel?",
+    "fr": "As-tu déjà imprimé et exposé ton travail ? Qu'as-tu ressenti en le voyant sur papier ?",
+    "it": "Hai mai stampato ed esposto il tuo lavoro? Che effetto ti ha fatto vederlo su carta?",
+    "pt": "Já imprimiste e expuseste o teu trabalho? Como foi vê-lo em papel?",
+    "pt_BR": "Você já imprimiu e expôs seu trabalho? Como foi ver tudo no papel?"
+   }
+  },
+  {
+   "id": "photography-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which technique would you like to master next, like focus stacking or light painting?",
+    "de": "Welche Technik möchtest du als Nächstes meistern, etwa Focus Stacking oder Lightpainting?",
+    "es": "¿Qué técnica te gustaría dominar después, como el apilado de enfoque o el light painting?",
+    "fr": "Quelle technique aimerais-tu maîtriser ensuite, comme le focus stacking ou le light painting ?",
+    "it": "Quale tecnica vorresti padroneggiare ora, come il focus stacking o il light painting?",
+    "pt": "Que técnica gostarias de dominar a seguir, como o empilhamento de foco ou o light painting?",
+    "pt_BR": "Qual técnica você quer dominar agora, tipo empilhamento de foco ou light painting?"
+   }
+  },
+  {
+   "id": "photography-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you keep your photography fresh when you feel stuck creatively?",
+    "de": "Wie hältst du deine Fotografie lebendig, wenn du kreativ feststeckst?",
+    "es": "¿Cómo mantienes fresca tu fotografía cuando te sientes bloqueado creativamente?",
+    "fr": "Comment gardes-tu ta photo vivante quand tu te sens bloqué créativement ?",
+    "it": "Come mantieni viva la tua fotografia quando ti senti bloccato creativamente?",
+    "pt": "Como manténs a tua fotografia fresca quando te sentes criativamente bloqueado?",
+    "pt_BR": "Como você mantém sua fotografia criativa quando se sente travado?"
+   }
+  },
+  {
+   "id": "photography-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you could exhibit your photos anywhere, what would the show be about?",
+    "de": "Wenn du deine Fotos überall ausstellen könntest, worum ginge es in der Ausstellung?",
+    "es": "Si pudieras exponer tus fotos en cualquier lugar, ¿de qué trataría la exposición?",
+    "fr": "Si tu pouvais exposer tes photos n'importe où, de quoi parlerait l'exposition ?",
+    "it": "Se potessi esporre le tue foto ovunque, di che cosa parlerebbe la mostra?",
+    "pt": "Se pudesses expor as tuas fotografias em qualquer lado, sobre o que seria a exposição?",
+    "pt_BR": "Se você pudesse expor suas fotos em qualquer lugar, sobre o que seria a exposição?"
+   }
+  },
+  {
+   "id": "photography-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Looking back, what is the biggest change in how you take photos today?",
+    "de": "Wenn du zurückblickst: Was hat sich an deiner Art zu fotografieren am stärksten verändert?",
+    "es": "Mirando atrás, ¿cuál es el mayor cambio en tu forma de hacer fotos hoy?",
+    "fr": "Avec le recul, quel est le plus grand changement dans ta façon de photographier aujourd'hui ?",
+    "it": "Guardando indietro, qual è il cambiamento più grande nel tuo modo di fotografare oggi?",
+    "pt": "Olhando para trás, qual é a maior mudança na tua maneira de fotografar hoje?",
+    "pt_BR": "Olhando pra trás, qual é a maior mudança no seu jeito de fotografar hoje?"
+   }
+  },
+  {
+   "id": "photography-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which photo book or exhibition has influenced the way you work?",
+    "de": "Welcher Fotoband oder welche Ausstellung hat deine Arbeitsweise beeinflusst?",
+    "es": "¿Qué libro de fotografía o exposición ha influido en tu forma de trabajar?",
+    "fr": "Quel livre photo ou quelle exposition a influencé ta façon de travailler ?",
+    "it": "Quale libro fotografico o mostra ha influenzato il tuo modo di lavorare?",
+    "pt": "Que livro de fotografia ou exposição influenciou a tua maneira de trabalhar?",
+    "pt_BR": "Qual livro de fotografia ou exposição influenciou seu jeito de trabalhar?"
+   }
+  }
+ ]
+}

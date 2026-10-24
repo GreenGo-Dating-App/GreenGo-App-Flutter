@@ -1,0 +1,2195 @@
+{
+"topic": "city_guides",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to city exploring",
+"f": "Why cities are wonderful to discover and how a curious mindset turns any street into an adventure"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Reading a city map",
+"f": "How neighbourhoods, landmarks and transport lines appear on a map"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "North, south and orientation",
+"f": "Find your bearings with the sun, a river, a hill or a tall landmark"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Landmarks as anchors",
+"f": "Pick two or three landmarks to stay oriented and never feel lost"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Paper map or phone map?",
+"f": "Pros and cons of paper maps and digital maps, and using both wisely"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Downloading offline maps",
+"f": "Prepare offline maps before you go so you can navigate without data"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Understanding street addresses",
+"f": "How addresses, house numbers and postcodes work in different countries"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "What is a neighbourhood?",
+"f": "How cities grow from districts, each with its own character and history"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "The historic centre",
+"f": "Why old towns are often compact, walkable and full of layered history"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "The central business district",
+"f": "Office towers, finance and how city centres change from day to night"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Residential districts",
+"f": "Where locals live, shop and relax, and why they are worth a visit"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Waterfronts and riversides",
+"f": "Harbours, rivers and promenades as the social heart of many cities"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Review: maps and neighbourhoods",
+"f": "Recap orientation, maps and the main types of city districts"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Walking: the best way to see a city",
+"f": "Why walking reveals details, sounds and smells you miss on wheels"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Planning a first walk",
+"f": "Choose a loop of two to three hours with a start, a highlight and a break"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Public transport basics",
+"f": "Buses, trams, metros and trains: what each is best for"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Reading a metro map",
+"f": "Lines, colours, interchanges and directions named after the final stop"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Tickets, passes and cards",
+"f": "Single tickets, day passes and contactless cards: how fare systems work"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Validating and travel etiquette",
+"f": "Validate your ticket, stand aside at doors and give seats to those in need"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Buses and trams",
+"f": "Read route numbers, request stops and enjoy the view from above ground"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Taxis and ride apps",
+"f": "When a taxi is worth it and how to agree on a route politely"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Cycling in the city",
+"f": "Bike lanes, shared bikes and safety tips for riding in traffic"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Rush hour and timing",
+"f": "Avoid crowded hours and use quiet times for a calmer ride"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Getting from the airport to the centre",
+"f": "Compare trains, buses and taxis from airport to city centre"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Arriving at a big train station",
+"f": "Find exits, lockers, information desks and local transport links"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Choosing where to stay",
+"f": "Central, trendy or quiet: how your base shapes your experience"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Hotels, hostels and apartments",
+"f": "Strengths of each type of stay for different travellers"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Review: getting around",
+"f": "Recap transport options, tickets and choosing a base"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Squares and plazas",
+"f": "Piazzas, plazas and places as outdoor living rooms of a city"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Main streets and boulevards",
+"f": "Grand avenues, shopping streets and how they were planned"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Alleys and hidden lanes",
+"f": "The charm of small passages, courtyards and secret corners"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Parks and green spaces",
+"f": "City parks as places to picnic, people-watch and rest"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Viewpoints and rooftops",
+"f": "Find hills, towers and rooftops for the best panorama"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "City markets: an introduction",
+"f": "Why markets are the best place to taste local life"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Food markets",
+"f": "Fresh produce, street snacks and how to shop at a food market"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Flea markets and antiques",
+"f": "Browse second-hand treasures and enjoy friendly bargaining"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Night markets",
+"f": "Evening markets with food stalls, lights and lively crowds"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Street food basics",
+"f": "How to choose a busy, clean stall and try local snacks"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Cafés and café culture",
+"f": "How cafés work in different cultures, from espresso bars to tea houses"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Eating like a local",
+"f": "Local meal times, set lunches and finding places away from tourist strips"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Review: streets, parks and markets",
+"f": "Recap public spaces, markets and food discoveries"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Museums: how to choose",
+"f": "Art, history, science or quirky museums: pick the right one for you"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Visiting a museum well",
+"f": "Plan a short route, pick five highlights and take breaks"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Galleries and street art",
+"f": "Contemporary galleries and murals that turn walls into canvases"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Churches, temples and sacred sites",
+"f": "Visit places of worship respectfully: dress, silence and photos"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Castles and fortresses",
+"f": "How city walls and fortresses shaped where towns grew"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Bridges with stories",
+"f": "Famous bridges and why they became symbols of their cities"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Monuments and statues",
+"f": "Read a monument: who it honours and what it tells about the city"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Libraries and bookshops",
+"f": "Beautiful libraries and independent bookshops worth a visit"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Local festivals",
+"f": "Seasonal festivals, parades and fairs that show a city's soul"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Free things to do",
+"f": "Free walking tours, parks, markets and free museum days"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Review: culture and sights",
+"f": "Recap museums, monuments, sacred sites and festivals"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Architecture basics",
+"f": "Why buildings look the way they do: climate, materials and history"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Roofs, windows and doors",
+"f": "Small details that tell you which region and era you are in"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Building materials",
+"f": "Stone, brick, wood, concrete and glass, and what they reveal"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Ancient Greek and Roman styles",
+"f": "Columns, arches and domes, and where to spot them today"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Romanesque style",
+"f": "Thick walls, round arches and solid medieval churches"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Gothic style",
+"f": "Pointed arches, flying buttresses and tall stained-glass windows"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Renaissance style",
+"f": "Symmetry, proportion and classical forms reborn in the 15th and 16th centuries"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Baroque style",
+"f": "Drama, curves, gold and grand squares made to impress"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Neoclassical style",
+"f": "Clean columns and temple fronts in museums, banks and capitols"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Art Nouveau",
+"f": "Flowing lines, flowers and ironwork from around 1900"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Art Deco",
+"f": "Geometric shapes, glamour and the skyscrapers of the 1920s and 1930s"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Modernism",
+"f": "Form follows function: concrete, glass and open plans"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Contemporary landmarks",
+"f": "Bold modern buildings that became new city icons"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Review: architecture styles",
+"f": "Recap the main styles and practise spotting them on a walk"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Paris: an introduction",
+"f": "The Seine, the arrondissements spiralling out and the Paris rhythm"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Paris: Le Marais and the Latin Quarter",
+"f": "Medieval lanes, squares, bookshops and student life"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Paris: Montmartre and its hill",
+"f": "Sacré-Cœur, artists' squares and views over the city"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "London: an introduction",
+"f": "The Thames, the City, Westminster and the many villages of London"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "London: Westminster and the South Bank",
+"f": "Parliament, Big Ben, riverside walks and theatres"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "London: Camden, Soho and Shoreditch",
+"f": "Markets, music, street art and creative districts"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Rome: an introduction",
+"f": "Seven hills, ancient ruins and the layered Eternal City"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Rome: Trastevere and the centro storico",
+"f": "Cobbled lanes, piazzas and the Pantheon area"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "New York: an introduction",
+"f": "The five boroughs and the grid of Manhattan"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "New York: Manhattan neighbourhoods",
+"f": "Greenwich Village, SoHo, Midtown and Harlem in one overview"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "New York: Brooklyn and beyond",
+"f": "Brooklyn Bridge, DUMBO and the variety of the outer boroughs"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Tokyo: an introduction",
+"f": "A city of many centres: Shinjuku, Shibuya, Asakusa and more"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Tokyo: tradition and neon",
+"f": "Temples in Asakusa versus the lights of Shibuya and Shinjuku"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Review: five great cities",
+"f": "Recap Paris, London, Rome, New York and Tokyo and their districts"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Barcelona: Gothic Quarter and Eixample",
+"f": "Medieval lanes versus the grid with chamfered corners"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Barcelona: Gaudí's city",
+"f": "Sagrada Família, Park Güell and Modernisme"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Lisbon: hills and trams",
+"f": "Alfama, Baixa, Bairro Alto and the famous yellow trams"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Amsterdam: canals and bikes",
+"f": "The canal ring, the Jordaan and cycling culture"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Berlin: districts with stories",
+"f": "Mitte, Kreuzberg, Prenzlauer Berg and their creative energy"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Vienna: coffee houses and the Ring",
+"f": "The Ringstrasse, palaces and coffee house tradition"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Prague: Old Town and the castle",
+"f": "Charles Bridge, the Old Town Square and the castle district"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Istanbul: two continents",
+"f": "The Bosphorus, the historic peninsula and lively bazaars"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Rio de Janeiro: beaches and hills",
+"f": "Copacabana, Ipanema, Santa Teresa and the city between sea and mountains"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Buenos Aires: barrios",
+"f": "San Telmo, La Boca, Palermo and the café life of Buenos Aires"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Mexico City: a giant capital",
+"f": "The Centro Histórico, Coyoacán, Roma and Condesa"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Review: Europe and the Americas",
+"f": "Recap the cities of the last two weeks and their signature districts"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Local greetings and politeness",
+"f": "How greetings, thank-yous and small courtesies differ by culture"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Tipping customs",
+"f": "How tipping works in different countries, simply and respectfully"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Dress codes",
+"f": "What to wear in sacred places, restaurants and different climates"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Photography etiquette",
+"f": "Ask before photographing people and respect no-photo signs"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Queuing and personal space",
+"f": "How lines, crowds and personal space vary around the world"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Table manners abroad",
+"f": "Chopsticks, sharing plates and meal-time customs"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Quiet hours and neighbours",
+"f": "Respect local rhythms like siestas and quiet evenings"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Learning ten local words",
+"f": "Hello, thank you, please, sorry: the power of a few words"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Safety basics in cities",
+"f": "Keep belongings close, use main streets at night and stay aware"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Asking locals for tips",
+"f": "How to start a friendly chat and get the best local recommendations"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Responsible tourism",
+"f": "Support local businesses, respect residents and leave no trace"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Review: city etiquette",
+"f": "Recap politeness, tipping, photos, safety and responsible travel"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "One day in a new city",
+"f": "Plan a perfect first day: one big sight, one walk, one great meal"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Making a simple itinerary",
+"f": "List must-sees, group them by area and leave free time"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Grouping sights by area",
+"f": "Save time by exploring one district at a time"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Morning, afternoon, evening",
+"f": "Match places to the best time of day for light and crowds"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Building in breaks",
+"f": "Cafés, parks and benches: pacing yourself to enjoy more"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Rainy day plans",
+"f": "Covered markets, museums, cafés and arcades for wet days"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "City in the evening",
+"f": "Sunset spots, night walks and how cities change after dark"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Weekend city break",
+"f": "Plan two days that mix famous sights and local life"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Travelling with friends",
+"f": "Agree on priorities and split up for a few hours when needed"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Travelling solo in cities",
+"f": "Enjoy your own pace, meet people and stay confident"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "City trips with family",
+"f": "Kid-friendly parks, museums and easy transport tips"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Keeping a travel journal",
+"f": "Notes, sketches and tickets to remember each city"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Your city dream list",
+"f": "Choose the cities you would love to explore and why"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Using guidebooks well",
+"f": "Get the most out of a guidebook: maps, walks and insider boxes"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Souvenir shopping basics",
+"f": "Find local crafts and markets rather than generic souvenirs"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner path complete!",
+"f": "Celebrate the beginner path: maps, transport, sights, etiquette and plans"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "How cities are born",
+"f": "Rivers, crossroads, ports and defensive hills: why cities grow where they do"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Reading a city's layers",
+"f": "Spot ancient, medieval and modern layers in one walk"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Old city walls and gates",
+"f": "Trace old walls through ring roads, gates and street names"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Street names as history",
+"f": "Names of streets reveal trades, saints, heroes and old landscapes"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Grid cities versus organic cities",
+"f": "Planned grids like Manhattan versus winding medieval centres"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Garden cities and suburbs",
+"f": "How green suburbs and garden-city ideas shaped modern living"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Ports and trading cities",
+"f": "How trade made cities like Venice, Hamburg and Singapore rich and diverse"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Capital cities",
+"f": "Planned capitals like Washington, Canberra and Brasília"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "University towns",
+"f": "Oxford, Bologna, Salamanca: how universities shape a city"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Industrial heritage",
+"f": "Old factories turned into museums, lofts and cultural centres"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Neighbourhood change",
+"f": "How districts evolve, from workshops to cafés and galleries"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Reading a neighbourhood's vibe",
+"f": "Shops, signs, sounds and people that reveal a district's character"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Review: how cities work",
+"f": "Recap city origins, layouts and how neighbourhoods change"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Advanced metro skills",
+"f": "Interchanges, express lines and planning the fastest route"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Regional trains and day trips",
+"f": "Escape to nearby towns and nature by regional train"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Night transport",
+"f": "Night buses and late trains: getting home safely after dark"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Ferries and water transport",
+"f": "Cities seen from the water: Venice, Istanbul, Hong Kong, Sydney"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Cable cars and funiculars",
+"f": "Hill cities with unique lifts, from Lisbon to Valparaíso"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Accessibility in cities",
+"f": "Step-free routes, accessible transport and planning for everyone"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Walking tours: guided or self-guided",
+"f": "Choose a guided tour or create your own themed walk"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Themed walks",
+"f": "Plan walks around a theme: architecture, food, film, literature"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Getting lost on purpose",
+"f": "Wander without a plan in a safe area and discover surprises"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Local transport apps",
+"f": "Use journey planners, live times and route options wisely"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Review: moving like a local",
+"f": "Recap advanced transport, day trips and walking tours"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Food districts",
+"f": "Chinatowns, little Italies and markets where cuisines meet"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Coffee capitals",
+"f": "Vienna, Rome, Melbourne, Istanbul: coffee rituals compared"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Tea cultures in cities",
+"f": "Tea houses in Kyoto, Istanbul, London and beyond"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Bakeries and breakfast traditions",
+"f": "What locals eat for breakfast in different cities"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Food tours",
+"f": "How a food tour works and how to design your own"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Cooking classes abroad",
+"f": "Learn a local dish and meet people in a city cooking class"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Covered markets of the world",
+"f": "La Boqueria, Borough Market, the Grand Bazaar and more"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Supermarkets as cultural windows",
+"f": "What local supermarkets reveal about daily life"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Picnic spots",
+"f": "Assemble a market picnic and find the best park to enjoy it"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Dining hours around the world",
+"f": "Late dinners in Spain, early dinners elsewhere: plan around them"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Review: city food culture",
+"f": "Recap food districts, coffee, markets and dining customs"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Music cities",
+"f": "Vienna's classical heritage, Nashville, Liverpool and Rio's samba"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Theatres and opera houses",
+"f": "Famous stages and how to enjoy a night at the theatre"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Cinema cities",
+"f": "Film locations and cities that starred in famous movies"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Literary cities",
+"f": "Dublin, Paris, Lisbon: walking in writers' footsteps"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Design cities",
+"f": "Milan, Copenhagen, Helsinki: design shops, museums and streets"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Fashion districts",
+"f": "Shopping streets and fashion quarters in great cities"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Sports cities",
+"f": "Iconic stadiums and sporting traditions of world cities"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Science and technology museums",
+"f": "Interactive museums for curious minds of all ages"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Festivals of light and colour",
+"f": "Lantern festivals, light shows and colourful celebrations"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Carnival cities",
+"f": "Venice, Rio, Cologne and Nice: masks, parades and carnival traditions"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Christmas markets",
+"f": "The tradition of winter markets in German and Central European cities"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Review: city culture",
+"f": "Recap music, theatre, literature, design and festivals"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Asian cities: an overview",
+"f": "Big, fast and fascinating: understanding Asian megacities"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Seoul: palaces and neighbourhoods",
+"f": "Gyeongbokgung, Bukchon, Myeongdong and Hongdae"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Bangkok: river and temples",
+"f": "The Chao Phraya, temples and street food districts"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Singapore: a garden city",
+"f": "Hawker centres, Marina Bay and multicultural districts"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Hong Kong: harbour and hills",
+"f": "Victoria Harbour, the Peak, trams and ferries"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Kyoto: temples and machiya",
+"f": "Gion, Higashiyama and the old wooden townhouses"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Hanoi: the Old Quarter",
+"f": "Streets named after trades, lakes and café culture"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Mumbai: a city by the sea",
+"f": "Colaba, Marine Drive and the energy of a megacity"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Dubai: modern skyline",
+"f": "Old Dubai creek and souks versus the new towers"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Review: Asian cities",
+"f": "Recap the Asian cities and what makes each unique"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "African cities: an overview",
+"f": "Diverse, young and creative: discovering African urban life"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Marrakech: medina and souks",
+"f": "Jemaa el-Fnaa, the souks and riads hidden behind walls"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Cairo: a city on the Nile",
+"f": "Islamic Cairo, the Nile corniche and the nearby Giza plateau"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Cape Town: mountain and sea",
+"f": "Table Mountain, the V&A Waterfront and colourful Bo-Kaap"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Nairobi: a green capital",
+"f": "Parks, markets and the national park on the city's edge"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Lagos and Dakar: coastal energy",
+"f": "Music, markets and beaches of two lively West African cities"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Sydney: harbour city",
+"f": "The Opera House, the Harbour Bridge, ferries and beaches"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Melbourne: laneways and cafés",
+"f": "Hidden laneways, street art and a famous coffee scene"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Review: Africa and Oceania",
+"f": "Recap the cities of Africa and Australia and their highlights"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "San Francisco: hills and cable cars",
+"f": "Cable cars, Victorian houses and distinct neighbourhoods"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Chicago: architecture capital",
+"f": "The river walk, early skyscrapers and the lakefront"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "New Orleans: music and squares",
+"f": "The French Quarter, jazz and Creole cooking"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Montreal and Quebec City",
+"f": "French-speaking cities with old quarters and lively festivals"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Havana: colours and classic cars",
+"f": "Old Havana, the Malecón and colonial squares"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Cartagena and Bogotá",
+"f": "Colourful walled city by the sea and a creative mountain capital"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Lima and Cusco",
+"f": "Coastal food capital and the Inca and colonial heritage of Cusco"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Santiago and Valparaíso",
+"f": "Capital under the Andes and a hillside port of murals and lifts"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Review: more of the Americas",
+"f": "Recap North, Central and South American cities"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Edinburgh: Old and New Town",
+"f": "A medieval spine and an elegant Georgian grid side by side"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Dublin: Georgian squares and pubs",
+"f": "Literary heritage, doors, squares and music culture"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Copenhagen and Stockholm",
+"f": "Waterfronts, design and bike-friendly Nordic capitals"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Florence: Renaissance cradle",
+"f": "The Duomo, the Uffizi and Ponte Vecchio across the Arno"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Venice: a city on water",
+"f": "Sestieri, canals, vaporetti and how to escape the crowds"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Seville and Granada",
+"f": "Andalusian patios, the Alcázar, the Alhambra and flamenco"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Porto: river and tiles",
+"f": "The Ribeira, azulejos and the Douro bridges"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Budapest: Buda and Pest",
+"f": "Two sides of the Danube, thermal baths and grand boulevards"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Athens: ancient and modern",
+"f": "The Acropolis, Plaka and lively modern neighbourhoods"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Kraków: Main Square and Kazimierz",
+"f": "One of Europe's largest medieval squares, Wawel Hill and the Kazimierz district"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Review: Europe deep dive",
+"f": "Recap the European cities explored in depth"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Researching a city before you go",
+"f": "Guidebooks, blogs, maps and local voices: research smartly"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Reading reviews critically",
+"f": "Spot helpful reviews and avoid tourist traps"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Seasons and the best time to visit",
+"f": "Weather, festivals and crowds through the year"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Packing for city trips",
+"f": "Comfortable shoes, layers and a small day bag"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Budgeting a city trip",
+"f": "Plan spending on transport, food and sights without stress"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "City passes: worth it?",
+"f": "When combined museum and transport passes save time and money"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Booking popular sights",
+"f": "Timed tickets and early slots for famous museums and towers"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Avoiding crowds",
+"f": "Go early, go late, go local: smart timing for busy places"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Hidden gems",
+"f": "How to find lesser-known spots that locals love"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Slow travel in cities",
+"f": "Stay longer, explore one district deeply, live like a resident"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Multi-city trips",
+"f": "Link two or three cities by train and plan the rhythm"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Review: smarter trip planning",
+"f": "Recap research, timing, budgets and multi-city plans"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Photography in the city",
+"f": "Composition, golden hour and capturing street life respectfully"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Night photography",
+"f": "Lights, reflections and long exposures after dark"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Sketching and urban sketching",
+"f": "Draw what you see to remember places more deeply"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Writing about a city",
+"f": "Describe a place with senses, details and stories"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Sharing travel tips online",
+"f": "Write helpful, honest tips for other travellers"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Making a city playlist",
+"f": "Music that captures the mood of a city"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "City souvenirs that matter",
+"f": "Local crafts, food and small items with a story"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Review: capturing cities",
+"f": "Recap photography, sketching, writing and souvenirs"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Living in a new city",
+"f": "First weeks after moving: finding your favourite places"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Finding community",
+"f": "Clubs, classes, language exchanges and meetups in a new city"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Neighbourhood life",
+"f": "Local shops, the bakery, the park: becoming a regular"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Sports and activity in the city",
+"f": "Running routes, swimming spots and city sports clubs"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Volunteering locally",
+"f": "Give back and meet people through local projects"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Seasonal city life",
+"f": "How a city changes from summer to winter"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Language and the city",
+"f": "Learning the local language through signs, menus and chats"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Expat versus traveller view",
+"f": "Different perspectives on the same city"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Your hometown as a tourist",
+"f": "Rediscover your own city with fresh eyes"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Hosting visitors in your city",
+"f": "Plan a perfect day for friends visiting your town"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Mapping your favourite places",
+"f": "Create a personal map of your best spots"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Being a local guide",
+"f": "Share stories and tips about your city with confidence"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Review: city life",
+"f": "Recap living in a city, community and seeing home with new eyes"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Island and coastal cities",
+"f": "Valletta, Dubrovnik, Honolulu: cities shaped by the sea"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Mountain cities",
+"f": "La Paz, Quito, Innsbruck: life at altitude"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Desert cities",
+"f": "Cities that thrive in dry climates through clever design"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Cities of canals",
+"f": "Amsterdam, Venice, Bruges, Suzhou: life along canals"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Cities of bridges",
+"f": "Budapest, Pittsburgh, St Petersburg and their many bridges"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Cities of stairs and hills",
+"f": "Lisbon, Valparaíso, Genoa: climbing with a view"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Twin cities",
+"f": "Pairs like Buda and Pest or Minneapolis and St Paul"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Small cities with big charm",
+"f": "Why smaller cities can be the most rewarding"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Lakeside cities",
+"f": "Geneva, Zurich, Chicago and Hanoi: life along lakes"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Cities of gardens",
+"f": "Kyoto, Singapore and Kew: cities famous for their gardens"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate path complete!",
+"f": "Celebrate the intermediate path: world cities, planning and city life"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Urban planning basics",
+"f": "Zoning, density and mixed use: how planners shape cities"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Famous city plans",
+"f": "Haussmann's Paris, Cerdà's Barcelona and L'Enfant's Washington"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Public space design",
+"f": "What makes a square or a street pleasant to spend time in"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Walkable cities",
+"f": "What makes a city easy and enjoyable to explore on foot"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Car-free zones",
+"f": "Pedestrian centres and how they changed city life"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "The 15-minute city idea",
+"f": "Living with daily needs within a short walk or ride"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Green cities",
+"f": "Parks, green roofs and urban forests for healthier cities"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Waterfront regeneration",
+"f": "Old docks reborn as parks, homes and cultural districts"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Elevated parks and reused rail lines",
+"f": "From the High Line to the Promenade Plantée"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Bike-friendly cities",
+"f": "What Copenhagen and Amsterdam teach about cycling cities"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Smart cities",
+"f": "Technology for transport, energy and services in modern cities"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Review: designing cities",
+"f": "Recap planning, public space, walkability and green design"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Skylines and skyscrapers",
+"f": "How skyscrapers began and what makes an iconic skyline"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Famous towers",
+"f": "Eiffel Tower, CN Tower, Burj Khalifa and their stories"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Great domes",
+"f": "Pantheon, Florence Cathedral, St Peter's and Hagia Sophia"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Great train stations",
+"f": "Grand stations as palaces of travel around the world"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Iconic museums as architecture",
+"f": "Buildings like the Guggenheim Bilbao that transformed cities"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Opera houses as landmarks",
+"f": "Sydney, Paris and Vienna: stages that define cities"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Vernacular architecture",
+"f": "Traditional local buildings made from local materials"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Colourful cities",
+"f": "Why some towns paint houses in bright colours"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Courtyards and patios",
+"f": "Inner courtyards from Seville to Beijing's hutongs"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Arcades and porticoes",
+"f": "Covered walkways like Bologna's porticoes and Paris passages"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Review: architectural icons",
+"f": "Recap towers, domes, stations and traditional buildings"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Ancient cities today",
+"f": "Rome, Athens, Istanbul, Xi'an: living with ancient heritage"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Medieval towns",
+"f": "Walled towns like Carcassonne, Rothenburg and Siena"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Colonial-era old towns",
+"f": "Historic centres in the Americas and their mixed heritage"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "World Heritage cities",
+"f": "What makes an old town a World Heritage site"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Archaeology in the city",
+"f": "Ruins found under metro lines and car parks"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Reading city museums",
+"f": "City history museums as the best first stop"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Town halls and clock towers",
+"f": "Civic buildings, clock towers and the pride of historic town centres"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Living heritage",
+"f": "Crafts, festivals and trades that keep traditions alive"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Review: cities and history",
+"f": "Recap ancient, medieval and heritage cities"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Megacities",
+"f": "What life is like in cities of more than ten million people"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "How megacities move",
+"f": "Mass transit in Tokyo, Seoul, São Paulo and Mexico City"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Neighbourhoods within megacities",
+"f": "Finding village-like districts inside giant cities"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Street life around the world",
+"f": "Vendors, markets and sidewalks as social spaces"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Urban nature and wildlife",
+"f": "Birds, foxes and gardens: nature thriving in cities"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Rivers that shaped cities",
+"f": "The Thames, Seine, Danube, Nile and Chao Phraya"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "City climates",
+"f": "How weather and geography shape city life and design"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Islands of calm",
+"f": "Gardens, cloisters and libraries for quiet moments"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Review: big cities, deep look",
+"f": "Recap megacities, street life and urban nature"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Planning a long city itinerary",
+"f": "Design a one-week stay with variety and rest days"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Thematic itineraries",
+"f": "Build trips around art, food, architecture or music"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Itineraries for different travellers",
+"f": "Adapt plans for families, seniors, students and solo travellers"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Balancing icons and local life",
+"f": "Mix famous sights with everyday experiences"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Day trips from big cities",
+"f": "Classic escapes like Versailles, Nara or Sintra"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Creating a walking tour for others",
+"f": "Plan a route, write stories and guide friends"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Seasonal itineraries",
+"f": "Spring blossoms, summer evenings, autumn colours, winter lights"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Plan B thinking",
+"f": "Flexible plans for closures, weather and tired legs"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: master itinerary planning",
+"f": "Recap long itineraries, themes and flexible planning"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Comparing two great cities",
+"f": "Compare Paris and London, or Rome and Athens, side by side"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "What makes a city unique?",
+"f": "Identity, character and the details that make a place unforgettable"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "City nicknames and their origins",
+"f": "The Big Apple, the Eternal City, the City of Light"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Famous city symbols",
+"f": "Logos, colours and emblems that represent cities"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "City rivalries, friendly ones",
+"f": "Madrid and Barcelona, Sydney and Melbourne: playful rivalries"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Sister cities",
+"f": "How twin and sister city partnerships connect the world"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Review: city identity",
+"f": "Recap what makes each city special and how cities connect"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Becoming a city expert",
+"f": "Train your eye to read any city in your first hour"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "First hour in a new city",
+"f": "A routine to orient yourself: viewpoint, map, café, walk"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Reading a city from above",
+"f": "What aerial views and rooftops reveal about urban layout"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Reading a city at street level",
+"f": "Shopfronts, signs, pavements and doorways as clues"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Listening to a city",
+"f": "Bells, markets, trams and voices: the soundscape of places"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Tasting a city",
+"f": "Signature dishes as a way to understand local history"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "The rhythm of a city's day",
+"f": "How cities wake up, work, rest and celebrate"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Weekdays versus weekends",
+"f": "How the same district changes through the week"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Cities after midnight",
+"f": "Night markets, bakeries and the quiet beauty of late hours"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Review: reading cities like an expert",
+"f": "Recap the observation skills that unlock any city"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Cultural nuances in cities",
+"f": "Subtle customs that help you blend in respectfully"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Conversation starters with locals",
+"f": "Topics locals love to talk about: food, football, neighbourhoods"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Understanding local humour",
+"f": "Light humour and pride in local quirks"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Reading signs and symbols",
+"f": "Pictograms, colour codes and local signage systems"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Navigating without the language",
+"f": "Gestures, pictures and translation tools used gracefully"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Staying calm when plans change",
+"f": "Strikes, closures and detours handled with a smile"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Helping other travellers",
+"f": "Share directions and tips and pass on the kindness"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Review: travelling with grace",
+"f": "Recap etiquette, communication and flexible thinking"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "City guides for food lovers",
+"f": "Plan a gourmet trip around markets, bakeries and classics"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "City guides for art lovers",
+"f": "Plan a trip around galleries, studios and public art"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "City guides for history lovers",
+"f": "Routes through ancient, medieval and modern history"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "City guides for nature lovers",
+"f": "Parks, gardens, rivers and hills inside cities"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "City guides for night owls",
+"f": "Evening walks, music venues and late-night food"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "City guides for architecture fans",
+"f": "Design a route through a city's best buildings"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "City guides for families",
+"f": "Playgrounds, museums and easy logistics"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "City guides on a budget",
+"f": "Free sights, cheap eats and smart transport choices"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Review: guides for every traveller",
+"f": "Recap tailoring a city guide to different interests"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Writing your own city guide",
+"f": "Structure: intro, districts, sights, food, tips"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Describing a neighbourhood vividly",
+"f": "Capture atmosphere with senses and stories"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Writing practical tips",
+"f": "Clear, useful advice on transport, timing and etiquette"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Creating a themed map",
+"f": "Mark favourite places by theme with simple symbols"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Recommending without overselling",
+"f": "Honest, balanced recommendations"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Updating a guide over time",
+"f": "Keep guides useful as cities change"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Review: the guide writer's craft",
+"f": "Recap writing, mapping and recommending"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Future of cities",
+"f": "Trends in transport, housing and green design"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Cities and climate adaptation",
+"f": "Shade, water and greenery for hotter summers"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "New ways to get around",
+"f": "E-bikes, scooters and on-demand transport in cities"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Rethinking tourism",
+"f": "Spreading visitors across districts and seasons"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Cities that reinvented themselves",
+"f": "Bilbao, Medellín and Glasgow: culture-led renewal"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Cities and festivals of the future",
+"f": "New events that bring communities together"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Review: future cities",
+"f": "Recap trends shaping the cities of tomorrow"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "World tour: Europe recap",
+"f": "A whirlwind recap of Europe's cities and districts"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "World tour: the Americas recap",
+"f": "A whirlwind recap of North and South American cities"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "World tour: Asia recap",
+"f": "A whirlwind recap of Asian cities and their districts"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "World tour: Africa and Oceania recap",
+"f": "A whirlwind recap of African and Oceanian cities"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "City quiz challenge",
+"f": "Test your knowledge of world cities, landmarks and districts"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Your personal city ranking",
+"f": "Rank your favourite cities by food, beauty, transport and vibe"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Plan your next dream trip",
+"f": "Design a full itinerary for the city you want to visit next"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Your city story",
+"f": "Reflect on the places that shaped you and what cities mean to you"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Lifelong city explorer",
+"f": "Habits that keep curiosity alive in every place you go"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Reading a city through its doors",
+"f": "Doorways, knockers and colours as a portrait of local style"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Cities in literature and film, revisited",
+"f": "How books and films shape the way we imagine a city"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Markets as a city mirror",
+"f": "What a market reveals about a city's history, trade and taste"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Light and the city",
+"f": "How the light of Lisbon, Venice or Paris inspired painters"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Cities by the season, an expert view",
+"f": "Choose the perfect season for each style of city"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Personal travel style",
+"f": "Discover your own way of exploring: planner, wanderer or foodie"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Teaching others to explore",
+"f": "Share your method to help friends discover cities with confidence"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Review: advanced path complete!",
+"f": "Celebrate a full year of exploring cities and plan what comes next"
+}
+]
+}

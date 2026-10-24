@@ -1,0 +1,2195 @@
+{
+"topic": "local_food_travel",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why eat like a local?",
+"f": "How local food opens doors to culture, history and friendly conversations"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Food as a window into culture",
+"f": "What dishes reveal about climate, geography and traditions"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Your food travel personality",
+"f": "Adventurous, cautious or curious: knowing how you like to explore food"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Researching food before a trip",
+"f": "Finding the signature dishes and specialities of a destination"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Regional versus national dishes",
+"f": "Why one country can have dozens of distinct food regions"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Meal times around the world",
+"f": "Early dinners, late lunches and how daily rhythms differ"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Breakfast across cultures",
+"f": "Sweet, savoury, rice-based or bread-based ways to start the day"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Reading a foreign menu",
+"f": "Common menu structures and clues that help you decode dishes"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Ordering with confidence",
+"f": "Polite phrases, pointing and asking what the house recommends"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Communicating allergies and diets",
+"f": "Allergy cards, key words and making your needs clear politely"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Vegetarian travel",
+"f": "Finding plant-based dishes in different cuisines"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Tipping customs in general",
+"f": "How tipping expectations vary from country to country"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Paying the bill",
+"f": "Asking for the bill, splitting it and table service habits"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Table manners around the world",
+"f": "Small habits that show respect at the table"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Eating with chopsticks",
+"f": "Basic technique and good manners with chopsticks"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Eating with your hands",
+"f": "Cultures where hands are the main utensil and how to do it well"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Sharing plates and family style",
+"f": "Tables where everything is shared and how to join in"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Street food basics",
+"f": "Why street food is a highlight and how to choose good stalls"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Food hygiene for travellers",
+"f": "Simple habits for enjoying food and water safely"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Finding where locals eat",
+"f": "Signs of a good local spot and how to avoid tourist traps"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Visiting a food market",
+"f": "How markets work, when to go and how to explore them"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Market etiquette",
+"f": "Asking before touching, tasting and buying small amounts"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Bargaining with a smile",
+"f": "Where haggling is normal and how to do it respectfully"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Seasonal eating while travelling",
+"f": "Why local food changes with the seasons and how to follow it"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Bread around the world",
+"f": "Baguette, naan, injera, pão de queijo and other daily breads"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Rice cultures",
+"f": "Rice dishes from paella and risotto to biryani and sushi"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Noodles of the world",
+"f": "Ramen, pho, pasta, udon and other noodle traditions"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Dumplings everywhere",
+"f": "Gyoza, pierogi, momos, empanadas and other stuffed doughs"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Soups that define places",
+"f": "Gazpacho, borscht, miso soup and other iconic soups"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: food travel basics",
+"f": "Recap ordering, etiquette and markets with an imaginary market visit"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Coffee cultures",
+"f": "Espresso bars, Turkish coffee, Vietnamese coffee and café rituals"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Tea traditions",
+"f": "Chinese tea, Japanese matcha, British tea and Moroccan mint tea"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Cheese around the world",
+"f": "Famous cheeses and how regions shape them"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Spices and their stories",
+"f": "Key spices, where they come from and how they travelled"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Sweet treats and pastries",
+"f": "Pastéis de nata, baklava, churros and other famous sweets"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Fruit you only find locally",
+"f": "Tropical and regional fruits worth seeking out"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Fresh juices and local drinks",
+"f": "From agua fresca to lassi and caldo de cana"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Picnic culture",
+"f": "Buying local ingredients and eating outdoors the local way"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Food words to learn",
+"f": "Key words for cooking methods and ingredients in many languages"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Keeping a food diary",
+"f": "Recording dishes, flavours and places you loved"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Italy beyond pizza and pasta",
+"f": "Regional differences from the Alps down to Sicily"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Naples and its pizza",
+"f": "The story of Neapolitan pizza and how locals enjoy it"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Bologna and Emilia-Romagna",
+"f": "Fresh pasta, aged cheese and cured meats"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Sicily's flavours",
+"f": "Arancini, cannoli and Arab-Norman influences"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "France's regional cuisine",
+"f": "From Normandy butter to Provençal herbs"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "The French bakery",
+"f": "Croissants, baguettes and boulangerie habits"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Lyon, a food capital",
+"f": "Bouchons, local specialities and covered market halls"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Spain's tapas culture",
+"f": "Bar hopping, sharing small plates and regional tapas"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Spain's paella and rice dishes",
+"f": "Valencian paella and its many cousins"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Portugal: comfort and the sea",
+"f": "Bacalhau, grilled sardines and custard tarts"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Portugal's petiscos and tascas",
+"f": "Small plates and simple neighbourhood taverns"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Greece: meze and tavernas",
+"f": "Sharing small dishes and the taverna experience"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Turkey: kebabs and beyond",
+"f": "Meze, pide, simit and regional Turkish food"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Lebanon and the Levant",
+"f": "Hummus, tabbouleh, manakish and generous meze"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Morocco: tagines and souks",
+"f": "Tagines, couscous and market food"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Egypt's everyday dishes",
+"f": "Koshari, ful medames and street breakfasts"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Ethiopia: injera and sharing",
+"f": "Eating from one shared platter with injera bread"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "West Africa: jollof and more",
+"f": "Jollof rice, suya and the flavours of the region"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "South Africa: braai and bobotie",
+"f": "Barbecue culture and Cape Malay dishes"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: Europe, Middle East, Africa",
+"f": "Compare favourite dishes and plan an imaginary tasting day"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "India, a continent of flavours",
+"f": "North and south, spices, breads and rice"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Indian street food",
+"f": "Chaat, dosa, vada pav and eating safely from stalls"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Thailand's balance of flavours",
+"f": "Sweet, sour, salty and spicy in harmony"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Bangkok street food",
+"f": "Night markets, noodle stalls and ordering tips"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Vietnam: fresh and herbal",
+"f": "Pho, banh mi and fresh herbs at every meal"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Japan and the art of simplicity",
+"f": "Seasonality, presentation and washoku"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Sushi etiquette",
+"f": "Ordering, soy sauce and good manners at the counter"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Ramen culture",
+"f": "Broth styles and how to enjoy a ramen shop"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Korea: banchan and barbecue",
+"f": "Side dishes, grilling at the table and kimchi"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "China's regional cuisines",
+"f": "Sichuan, Cantonese, Shandong and more"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Dim sum mornings",
+"f": "How dim sum works and which dishes to try"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Taiwan's night markets",
+"f": "Snacks, bubble tea and night market culture"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Hawker food in Malaysia and Singapore",
+"f": "Hawker centres and multicultural dishes"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Indonesia: rice and sambal",
+"f": "Nasi goreng, rendang and the warung experience"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "The Philippines: fiesta flavours",
+"f": "Adobo, sinigang and festive feasts"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Mexico: more than tacos",
+"f": "Regional Mexican cuisine and corn traditions"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Taquerías and street stalls",
+"f": "Ordering tacos and choosing salsas"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Peru, a food powerhouse",
+"f": "Ceviche, potatoes and Nikkei cuisine"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Brazil: from feijoada to açaí",
+"f": "Regional Brazilian dishes and the comida por quilo"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Argentina's asado culture",
+"f": "Grilled meats, empanadas and sharing the asado"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Arepas of Colombia and Venezuela",
+"f": "Corn cakes and their many fillings"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "The Caribbean's island flavours",
+"f": "Jerk, rice and peas and tropical produce"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Regional food in the USA",
+"f": "Barbecue styles, seafood shacks and classic diners"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Canada's regional dishes",
+"f": "Poutine, maple and coastal seafood"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "The Nordic kitchen",
+"f": "Smørrebrød, fika and foraged ingredients"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Germany and Austria",
+"f": "Bread, sausages, cakes and coffee house culture"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "The British Isles",
+"f": "Pub food, Sunday roasts and afternoon tea"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Central and Eastern Europe",
+"f": "Pierogi, goulash and hearty comfort food"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Georgia's feasting traditions",
+"f": "Khachapuri, khinkali and the supra feast"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: Asia and the Americas",
+"f": "Pick your top dishes and plan a food route"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "How to pick a restaurant abroad",
+"f": "Reading the room, the menu and other signs of quality"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Set menus and lunch deals",
+"f": "Menú del día, prix fixe and lunch specials"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Food halls and covered markets",
+"f": "Exploring famous market halls"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Night markets of the world",
+"f": "Evening food scenes in different countries"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Food trucks and pop-ups",
+"f": "Finding mobile and temporary food spots"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Bakeries as cultural spots",
+"f": "What bakeries reveal about a country"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Sweet shops and dessert cafés",
+"f": "Mochi, brigadeiros, halva and sweet traditions"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Ice cream around the world",
+"f": "Gelato, kulfi, dondurma and more"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Eating well on a budget",
+"f": "Markets, lunch menus and street food for great value"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Splurge meals worth it",
+"f": "Choosing one special meal and making the most of it"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Food souvenirs",
+"f": "Spices, sweets and specialities to bring home, after checking import rules"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Food photography basics",
+"f": "Light, angles and respecting other diners"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Talking about flavour",
+"f": "Words for taste, texture and aroma"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Trying new things bravely",
+"f": "Small steps towards tasting unfamiliar foods"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Saying no politely",
+"f": "Declining food kindly without offending your host"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Being a guest in a local home",
+"f": "Small gifts, compliments and table customs"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Food and festivals",
+"f": "How celebrations bring special dishes to the table"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Hotel breakfast or local café?",
+"f": "Why stepping out for a local breakfast often beats the buffet"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Snacks on the go",
+"f": "Local snacks for trains, walks and road trips"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Food at stations and airports",
+"f": "Finding decent local food while in transit"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Water and drinks safety",
+"f": "Bottled water, ice and refilling bottles wisely"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Spicy cuisines",
+"f": "Enjoying chilli-rich food comfortably"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Mild and comforting cuisines",
+"f": "Gentle flavours for sensitive palates"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Kids and local food",
+"f": "Helping children enjoy new dishes"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Food apps and maps",
+"f": "Using reviews and maps without missing hidden gems"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Asking locals for food tips",
+"f": "Questions that bring the best recommendations"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Gluten-free travel",
+"f": "Navigating cuisines with gluten-free needs"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Halal and kosher options abroad",
+"f": "Finding meals that meet these dietary practices while travelling"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your first food travel plan",
+"f": "Plan a food-focused weekend in a city you love"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner food traveller",
+"f": "Celebrate your progress and list dishes you want to try"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Choosing a food tour",
+"f": "Walking tours, small groups and what makes a good guide"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Taking a cooking class abroad",
+"f": "Learning dishes directly from local cooks"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Market-to-table classes",
+"f": "Shopping with a chef, then cooking together"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Farm visits and agritourism",
+"f": "Seeing where your food grows"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Fishing villages and seafood",
+"f": "Fresh catch, harbour restaurants and seasons"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Olive oil tasting",
+"f": "How olive oil is made and how to taste it"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Cheese makers and dairies",
+"f": "Visiting creameries and cheese cellars"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Honey and beekeeping visits",
+"f": "Local honeys and their floral flavours"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Chocolate from bean to bar",
+"f": "Cacao farms and chocolate makers"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Coffee farm visits",
+"f": "From cherry to cup on coffee plantations"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Tea plantation visits",
+"f": "Tea estates in India, Sri Lanka, China and Japan"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Wine regions for food lovers",
+"f": "Visiting wineries with food pairings, always in moderation"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Breweries and cider houses",
+"f": "Regional brewing traditions and tastings, enjoyed responsibly"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Traditional soft drinks",
+"f": "Kombucha, kvass, horchata and other traditional drinks"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Fermentation around the world",
+"f": "Kimchi, sauerkraut, miso and yogurt"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Pickles and preserves",
+"f": "How cultures preserve food for the winter months"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Cured meats and sausages",
+"f": "Jamón, prosciutto, chorizo and charcuterie traditions"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Smoked foods",
+"f": "Smokehouses and smoked fish traditions"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Grilling traditions",
+"f": "Asado, braai, yakitori, churrasco and barbecue"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Clay ovens and tandoors",
+"f": "Wood-fired and clay oven cooking worldwide"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Flatbreads of the world",
+"f": "Tortillas, pita, roti and lavash"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Stuffed vegetables",
+"f": "Dolma, chiles rellenos and stuffed peppers"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Stews and slow cooking",
+"f": "Cassoulet, feijoada, tagine and other slow dishes"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Curries across Asia",
+"f": "Indian, Thai, Japanese and Malaysian curries compared"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Sauces that define cuisines",
+"f": "Mole, pesto, béchamel and nuoc cham"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Salsas, chutneys and condiments",
+"f": "Table condiments and how locals use them"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Herbs in world cuisines",
+"f": "Coriander, basil, dill, mint and their homelands"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Chillies of the world",
+"f": "Varieties, heat levels and regional uses"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Umami around the world",
+"f": "Savoury depth from parmesan to fish sauce"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: food experiences",
+"f": "Choose three food experiences for a future trip"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Palermo street food",
+"f": "Panelle, sfincione and lively markets"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Istanbul's food scene",
+"f": "Simit, balık ekmek and meyhanes"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Marrakech's evening square",
+"f": "Jemaa el-Fnaa food stalls and tasting tips"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Mexico City food walks",
+"f": "Tacos, tamales and market lunches"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Penang's hawker heritage",
+"f": "George Town's famous hawker dishes"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Osaka, Japan's kitchen",
+"f": "Takoyaki, okonomiyaki and the kuidaore spirit"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Hanoi's street corners",
+"f": "Bun cha, pho and tiny sidewalk stools"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Lima's cevicherías",
+"f": "Ceviche culture and lunchtime traditions"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "São Paulo's food diversity",
+"f": "Japanese, Italian and Lebanese influences"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Salvador and Bahian food",
+"f": "Acarajé, moqueca and Afro-Brazilian cuisine"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Lisbon's food culture",
+"f": "Bifanas, seafood and pastry shops"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Porto's hearty dishes",
+"f": "Francesinha, tripas and riverside tascas"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "San Sebastián pintxos",
+"f": "Pintxo bars and how to hop between them"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Paris markets and bistros",
+"f": "Open-air markets and classic bistro dishes"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Brussels and Belgian food",
+"f": "Waffles, fries and chocolate shops"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Vienna's coffee houses",
+"f": "Coffee, cakes and unhurried café culture"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Copenhagen's food scene",
+"f": "Smørrebrød, bakeries and New Nordic cuisine"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "London's global food",
+"f": "Markets and dishes from all over the world"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "New York's food icons",
+"f": "Bagels, pizza slices and neighbourhood flavours"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "New Orleans cuisine",
+"f": "Gumbo, beignets and Creole and Cajun traditions"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Tokyo's depachika",
+"f": "Department store food halls and their treasures"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Seoul's markets",
+"f": "Gwangjang Market and Korean street snacks"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Taipei beyond night markets",
+"f": "Beef noodle soup and breakfast shops"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Hong Kong's cha chaan teng",
+"f": "Tea restaurants and Hong Kong-style dishes"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Singapore's hawker centres",
+"f": "Chicken rice, laksa and hawker centre etiquette"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Bangkok's floating markets",
+"f": "Visiting markets by boat on canals"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Old Delhi's food lanes",
+"f": "Parathas, chaat and historic lanes"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Mumbai street food",
+"f": "Vada pav, pav bhaji and seaside snacks"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Cape Town's food mix",
+"f": "Cape Malay cooking, seafood and markets"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: great food cities",
+"f": "Compare food cities and choose your next one"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Etiquette deep dive: Japan",
+"f": "Slurping, chopsticks and what to avoid"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Etiquette deep dive: China",
+"f": "Toasting, sharing dishes and banquets"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Etiquette deep dive: India",
+"f": "The right hand, thalis and hospitality"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Etiquette deep dive: Middle East",
+"f": "Hospitality, coffee rituals and accepting second helpings"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Etiquette deep dive: Europe",
+"f": "Bread, cutlery and meal timing in European countries"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Etiquette deep dive: Latin America",
+"f": "Sharing, sobremesa and family meals"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "The art of the long lunch",
+"f": "Sobremesa and slow meals as a way of life"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Toasts around the world",
+"f": "Raising a glass politely in different countries"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Coffee etiquette in Italy",
+"f": "Ordering at the bar and Italian coffee timing habits"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Tea ceremonies",
+"f": "Japanese and Chinese tea ceremonies explained"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Food on public holidays",
+"f": "How holidays change opening hours and bring special dishes"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Harvest celebrations",
+"f": "Grape harvests, rice harvests and seasonal feasts"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Winter market treats",
+"f": "Gingerbread, roasted chestnuts and seasonal food at winter markets"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Lunar New Year dishes",
+"f": "Dumplings, noodles and symbolic foods for luck"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Street food festivals",
+"f": "Food fairs and festivals worth planning a trip around"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Food in rural villages",
+"f": "Simple home cooking and village hospitality"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Mountain cuisines",
+"f": "Hearty food from the Alps, the Andes and the Himalayas"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Island cuisines",
+"f": "How islands shape food, from Sardinia to Hawaii"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Desert cuisines",
+"f": "Dates, flatbreads and cooking with few ingredients"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Coastal cuisines",
+"f": "Seafood traditions along the world's coasts"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Foraging traditions",
+"f": "Mushrooms, berries and wild herbs with local experts"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Nose-to-tail traditions",
+"f": "Using the whole animal in traditional cooking"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Plant-forward cuisines",
+"f": "Cuisines naturally rich in vegetables and legumes"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Vegan finds around the world",
+"f": "Traditional dishes that happen to be vegan"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Fusion and migration food",
+"f": "How migration creates new dishes"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Trade and colonial influences",
+"f": "How trade routes mixed ingredients and dishes"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Street food versus restaurants",
+"f": "Comparing experiences, atmosphere and value"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Fine dining abroad",
+"f": "What restaurant guides mean and when fine dining is worth it"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Hole-in-the-wall gems",
+"f": "Finding small family places with big flavour"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: culture at the table",
+"f": "Revisit etiquette, celebrations and food landscapes"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Building a food itinerary",
+"f": "Planning a day of meals without overeating"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Pacing your appetite",
+"f": "Sharing, tasting portions and walking between meals"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Food-focused road trips",
+"f": "Driving routes through great food regions"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Train journeys for food lovers",
+"f": "Station snacks, dining cars and food stops"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Food and hiking",
+"f": "Mountain huts, trail snacks and refuges"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Coastal seafood trails",
+"f": "Planning a route around fishing ports"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Cheese and wine routes",
+"f": "Classic regional routes in Europe, enjoyed in moderation"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Spice routes today",
+"f": "Visiting spice markets and plantations"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Rice terraces and paddies",
+"f": "Visiting the rice regions of Asia"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Olive and citrus groves",
+"f": "Mediterranean groves and their products"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Hosting a dinner of travel recipes",
+"f": "Recreating travel dishes for friends"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Recreating dishes at home",
+"f": "Finding ingredients and adapting recipes"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Learning from street vendors",
+"f": "Watching technique and asking respectful questions"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Food phrases for travellers",
+"f": "Useful phrases for markets and restaurants"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Describing dishes you love",
+"f": "Talking about food with rich vocabulary"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Food blogs and guides",
+"f": "Finding trustworthy food writing"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Food documentaries for inspiration",
+"f": "Using films and series to plan food travel"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Supper clubs and home dining",
+"f": "Eating in locals' homes at hosted dinners"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Communal tables",
+"f": "Dining with strangers and making new friends"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Solo dining abroad",
+"f": "Enjoying meals alone with confidence"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Food travel with friends",
+"f": "Sharing more dishes and planning together"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Family food trips",
+"f": "Making food travel fun for all ages"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Food allergies in depth",
+"f": "Planning ahead and communicating clearly, general information only"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Healthy eating while travelling",
+"f": "Balance, vegetables and listening to your body"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Eating late and eating early",
+"f": "Adjusting to local meal schedules"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Jet lag and meals",
+"f": "Using meal timing to adapt to a new time zone"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Budget food travel strategies",
+"f": "Getting the most flavour for little money"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Luxury food experiences",
+"f": "Special tastings and unforgettable meals"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Sustainable food choices",
+"f": "Local, seasonal and low-waste eating"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: planning food trips",
+"f": "Build a three-day food itinerary"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Protected origin labels",
+"f": "What PDO and similar labels mean for traditional foods"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Parmigiano Reggiano and Parma ham",
+"f": "Visiting producers in Emilia-Romagna"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Roquefort and cheese caves",
+"f": "How natural caves shape famous cheeses"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Saffron, vanilla and precious spices",
+"f": "Where precious spices grow and why they are so valued"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Matcha from Uji",
+"f": "Japan's famous green tea region near Kyoto"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Basmati and jasmine rice",
+"f": "Fragrant rices and the regions they come from"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Cacao in Latin America",
+"f": "Cacao traditions from Mexico to Ecuador"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Coffee origins",
+"f": "Ethiopia, Colombia, Brazil and their coffee flavours"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your intermediate food plan",
+"f": "Plan a week-long food trip in a region you love"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate food traveller",
+"f": "Celebrate your progress and reflect on your food style"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Ancient kitchens",
+"f": "How early civilisations cooked and ate"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "The spice trade",
+"f": "How spices shaped trade routes and cuisines"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "The Columbian exchange",
+"f": "Tomatoes, potatoes, chillies and corn crossing the oceans"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Silk Road flavours",
+"f": "Noodles, breads and spices along the Silk Road"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Ottoman culinary heritage",
+"f": "Its influence on Balkan and Middle Eastern food"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Portuguese influence on world food",
+"f": "Tempura, chillies in Asia and custard tarts abroad"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Chinese diaspora cuisines",
+"f": "Chinese food adapted all around the world"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Indian influence abroad",
+"f": "Curries in Britain, the Caribbean and East Africa"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Nikkei cuisine",
+"f": "A Japanese-Peruvian fusion born from migration"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "African roots in American food",
+"f": "Okra, rice traditions and Southern cooking"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Understanding terroir",
+"f": "How soil, climate and tradition shape flavour"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Seasonality in depth",
+"f": "Seasonal food calendars in different regions"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "The slow food movement",
+"f": "Origins and values of slow food"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Heritage grains and breeds",
+"f": "Old varieties and local biodiversity"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Indigenous food traditions",
+"f": "Learning respectfully from indigenous cuisines"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Food and climate",
+"f": "How climate shapes what grows and what we eat"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Ethical food tourism",
+"f": "Respecting communities, paying fairly and valuing authenticity"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Avoiding crowded food hotspots",
+"f": "Spreading visits and supporting lesser-known places"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Reducing food waste while travelling",
+"f": "Ordering wisely and sharing"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: food history and ethics",
+"f": "Connect history and ethics to one destination"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Training your palate",
+"f": "Exercises to taste more precisely"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "The five basic tastes",
+"f": "Sweet, salty, sour, bitter and umami in depth"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Aroma and smell",
+"f": "How smell drives flavour and how to train it"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Texture and mouthfeel",
+"f": "Crunchy, creamy, chewy and why texture matters"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Tasting like a professional",
+"f": "Writing structured tasting notes"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Comparative tastings",
+"f": "Tasting side by side to learn the differences"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Food and drink pairing basics",
+"f": "Matching flavours and intensities"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Pairing with tea and coffee",
+"f": "Non-alcoholic pairing ideas"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Cheese tasting in depth",
+"f": "Rinds, ageing and tasting order"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Olive oil tasting in depth",
+"f": "Fruity, bitter and peppery notes"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Chocolate tasting in depth",
+"f": "Origins, percentages and flavour notes"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Coffee cupping",
+"f": "How professionals taste coffee"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Tea tasting",
+"f": "Comparing green, black, oolong and white teas"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Honey tasting",
+"f": "Floral sources and textures"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Bread tasting",
+"f": "Crust, crumb and fermentation flavours"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Writing tasting notes",
+"f": "Describing flavours vividly and precisely"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Food writing techniques",
+"f": "Bringing a meal to life in words"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Advanced food photography",
+"f": "Storytelling, light and styling"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Filming food stories",
+"f": "Short films about cooks and their dishes"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Interviewing cooks and producers",
+"f": "Respectful questions and good listening"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Learning family recipes abroad",
+"f": "Asking about recipes and recording them"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Building a recipe journal",
+"f": "Organising recipes collected on your trips"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Mastering a signature travel dish",
+"f": "Perfecting one dish you learned abroad"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Cooking with local ingredients",
+"f": "Shopping and cooking in a holiday rental"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Market shopping like a chef",
+"f": "Choosing produce, fish and meat with confidence"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Knife skills basics",
+"f": "Simple techniques learned in cooking classes"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Spice blending",
+"f": "Garam masala, ras el hanout and za'atar"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Making fresh pasta",
+"f": "Lessons from Italian kitchens"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Making dumplings",
+"f": "Folding techniques from several cuisines"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: taste and craft",
+"f": "Revisit your tasting and cooking skills"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Planning a culinary journey",
+"f": "Designing a trip with food as the main theme"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Choosing a food region",
+"f": "Comparing regions for a food-focused trip"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Timing food trips with seasons",
+"f": "Harvests, catches and food festivals"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Booking special experiences",
+"f": "Cooking classes, farm stays and tastings"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Balancing famous and hidden spots",
+"f": "Mixing icons with local secrets"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Food trips on any budget",
+"f": "Planning a great food trip for every budget"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Food and language learning",
+"f": "Learning a language through food"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Food as a conversation starter",
+"f": "Connecting with people through food"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Cultural sensitivity at the table",
+"f": "Avoiding stereotypes and showing respect"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "What does authentic mean?",
+"f": "Exploring what authenticity really means for food"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Modern versus traditional cooking",
+"f": "How cuisines evolve over time"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Chef-led food movements",
+"f": "New Nordic, modern Peruvian and other movements"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Street food as heritage",
+"f": "How hawker culture became recognised as cultural heritage"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Culinary heritage on UNESCO lists",
+"f": "Cuisines and food practices recognised as heritage"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Food museums worth visiting",
+"f": "Museums dedicated to food and drink"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Famous food markets of the world",
+"f": "La Boqueria, Borough Market, Tsukiji outer market and more"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Legendary bakeries and cafés",
+"f": "Historic shops worth a special visit"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Historic restaurants",
+"f": "Some of the oldest restaurants still serving today"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Food and architecture",
+"f": "Market halls and food spaces as great design"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Friendly food rivalries",
+"f": "Playful debates over pizza styles, pastries and more"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Deep dive: Italian regions",
+"f": "Comparing northern, central and southern Italy"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Deep dive: Mexican regions",
+"f": "Oaxaca, Yucatán, Puebla and more"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Deep dive: Chinese regions",
+"f": "The eight great culinary traditions"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Deep dive: Indian regions",
+"f": "Kerala, Punjab, Bengal and Goa"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Deep dive: Japanese regions",
+"f": "Hokkaido, Kyoto, Osaka and Okinawa"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Deep dive: French regions",
+"f": "Brittany, Alsace, Burgundy and Provence"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Deep dive: Brazilian regions",
+"f": "North, Northeast, Minas Gerais, the South and more"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Deep dive: Spanish regions",
+"f": "Galicia, the Basque Country, Andalusia and Catalonia"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Deep dive: Southeast Asia",
+"f": "Comparing Thai, Vietnamese, Malaysian and Indonesian food"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: regional mastery",
+"f": "Pick a region and explain its food identity"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Deep dive: Portuguese regions",
+"f": "Minho, Alentejo, the Azores and Madeira"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Deep dive: Middle Eastern cuisines",
+"f": "The Levant, the Gulf, Iran and Turkey compared"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Deep dive: African cuisines",
+"f": "North, West, East and Southern Africa"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Deep dive: Andean cuisines",
+"f": "Peru, Bolivia and Ecuador"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Deep dive: Nordic cuisines",
+"f": "Traditional and modern Nordic food"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Deep dive: Caribbean cuisines",
+"f": "Island-by-island flavours"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Deep dive: Korean regional food",
+"f": "Jeonju, Busan and Jeju"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Deep dive: Greek islands",
+"f": "Food traditions of Crete, the Cyclades and Corfu"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Deep dive: Balkan cuisines",
+"f": "Burek, ćevapi and shared roots"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Deep dive: Central Asian food",
+"f": "Plov, laghman and nomadic traditions"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Becoming a food guide for friends",
+"f": "Showing visitors the food of your own city"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Building a food map of your city",
+"f": "Mapping your favourite local spots"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Sharing food travel stories",
+"f": "Telling stories that inspire others"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Creating a food travel guide",
+"f": "Writing a guide to a place you love"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Hosting a world food night",
+"f": "Bringing travel dishes to your table"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Edible gifts and traditions",
+"f": "Edible gifts from different cultures"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Food and memory",
+"f": "How dishes connect us to places and people"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Your food travel philosophy",
+"f": "What food travel means to you"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Lifelong learning in food",
+"f": "Courses, books and communities"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Becoming a food travel mentor",
+"f": "Helping others start their own food journeys"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Capstone: choose a destination",
+"f": "Pick the destination for your dream food trip"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Capstone: research the cuisine",
+"f": "Gather the dishes and specialities you want to try"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Capstone: markets and street food",
+"f": "Plan your markets and street food stops"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Capstone: experiences",
+"f": "Choose classes, farm visits and tastings"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Capstone: restaurants",
+"f": "Select special meals and local favourites"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Capstone: seasonal timing",
+"f": "Pick the best season for your food trip"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Capstone: dietary planning",
+"f": "Prepare phrases and plans for your needs"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Capstone: budget",
+"f": "Estimate food costs for the whole trip"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Capstone: the story",
+"f": "Shape your trip into a food story"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: the whole journey",
+"f": "Look back across the path and refine your plan"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Present your dream food trip",
+"f": "Describe your full plan as if guiding a friend"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Favourite dishes revisited",
+"f": "Recall the dishes that stayed with you"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Next food adventures",
+"f": "Dream destinations for future food trips"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Everyday food curiosity",
+"f": "Bringing the food travel spirit into daily life"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "A year of flavours",
+"f": "Celebrate the path and set your next food goal"
+}
+]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "¡Hola! First Spanish greetings",
+     "g": "Greet people in Spanish and choose the right greeting for the time of day.",
+     "p": [
+      "Hola works at any time and with anyone, from friends to shop staff.",
+      "Buenos días is for the morning, buenas tardes for the afternoon, buenas noches for the evening and night.",
+      "Adiós is goodbye; hasta luego (see you later) is very common even if you will not meet again soon."
+     ],
+     "q": "It is 8 p.m. and you enter a small restaurant in Seville. What do you say to the waiter?",
+     "c": "Greet three people today in Spanish, even just in your head, choosing the right greeting for the hour."
+    },
+    "de": {
+     "t": "¡Hola! Erste spanische Grüße",
+     "g": "Du lernst, auf Spanisch zu grüßen und den passenden Gruß für die Tageszeit zu wählen.",
+     "p": [
+      "Hola passt immer und bei allen, von Freunden bis zur Verkäuferin.",
+      "Buenos días sagt man morgens, buenas tardes nachmittags, buenas noches abends und nachts.",
+      "Adiós heißt Tschüss; hasta luego (bis später) hört man ständig, auch ohne baldiges Wiedersehen."
+     ],
+     "q": "Es ist 20 Uhr und du betrittst ein kleines Restaurant in Sevilla. Was sagst du zum Kellner?",
+     "c": "Grüße heute drei Menschen auf Spanisch, notfalls im Kopf, mit dem richtigen Gruß für die Uhrzeit."
+    },
+    "es": {
+     "t": "¡Hola! Los primeros saludos",
+     "g": "Repasa los saludos básicos y elige el adecuado según la hora del día.",
+     "p": [
+      "Hola sirve a cualquier hora y con cualquier persona, de amigos a dependientes.",
+      "Buenos días por la mañana, buenas tardes por la tarde y buenas noches al anochecer y de noche.",
+      "Adiós es la despedida clásica; hasta luego se usa muchísimo aunque no vayas a ver pronto a esa persona."
+     ],
+     "q": "Son las ocho de la noche y entras en un restaurante pequeño de Sevilla. ¿Qué le dices al camarero?",
+     "c": "Saluda hoy a tres personas eligiendo con cuidado el saludo según la hora."
+    },
+    "fr": {
+     "t": "¡Hola! Premières salutations en espagnol",
+     "g": "Saluer en espagnol et choisir la bonne formule selon le moment de la journée.",
+     "p": [
+      "Hola marche à toute heure et avec tout le monde, des amis aux commerçants.",
+      "Buenos días le matin, buenas tardes l'après-midi, buenas noches le soir et la nuit.",
+      "Adiós veut dire au revoir ; hasta luego (à plus tard) s'utilise partout, même sans se revoir bientôt."
+     ],
+     "q": "Il est 20 h et tu entres dans un petit restaurant à Séville. Que dis-tu au serveur ?",
+     "c": "Salue trois personnes en espagnol aujourd'hui, même dans ta tête, avec la formule qui convient à l'heure."
+    },
+    "it": {
+     "t": "¡Hola! I primi saluti in spagnolo",
+     "g": "Impari a salutare in spagnolo e a scegliere il saluto giusto per l'ora del giorno.",
+     "p": [
+      "Hola va bene a qualsiasi ora e con chiunque, dagli amici ai commessi.",
+      "Buenos días si dice la mattina, buenas tardes il pomeriggio, buenas noches la sera e la notte.",
+      "Adiós è l'arrivederci; hasta luego (a dopo) si usa sempre, anche se non ci si rivede presto."
+     ],
+     "q": "Sono le 20 ed entri in un piccolo ristorante a Siviglia. Cosa dici al cameriere?",
+     "c": "Saluta oggi tre persone in spagnolo, anche solo nella tua testa, scegliendo il saluto adatto all'ora."
+    },
+    "pt": {
+     "t": "¡Hola! Primeiros cumprimentos em espanhol",
+     "g": "Aprende a cumprimentar em espanhol e a escolher a saudação certa para cada hora do dia.",
+     "p": [
+      "Hola serve a qualquer hora e com qualquer pessoa, de amigos a empregados de loja.",
+      "Buenos días de manhã, buenas tardes à tarde, buenas noches ao fim do dia e à noite.",
+      "Adiós é adeus; hasta luego (até logo) usa-se imenso, mesmo sem voltar a ver a pessoa em breve."
+     ],
+     "q": "São oito da noite e entras num pequeno restaurante em Sevilha. O que dizes ao empregado?",
+     "c": "Cumprimenta hoje três pessoas em espanhol, nem que seja mentalmente, com a saudação certa para a hora."
+    },
+    "pt_BR": {
+     "t": "¡Hola! Primeiros cumprimentos em espanhol",
+     "g": "Aprenda a cumprimentar em espanhol e a escolher a saudação certa para cada hora do dia.",
+     "p": [
+      "Hola serve a qualquer hora e com qualquer pessoa, de amigos a atendentes de loja.",
+      "Buenos días de manhã, buenas tardes à tarde, buenas noches no fim do dia e à noite.",
+      "Adiós é tchau; hasta luego (até logo) é usado o tempo todo, mesmo sem ver a pessoa de novo logo."
+     ],
+     "q": "São oito da noite e você entra num restaurante pequeno em Sevilha. O que você diz ao garçom?",
+     "c": "Cumprimente hoje três pessoas em espanhol, nem que seja de cabeça, com a saudação certa para a hora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hola",
+      "ex": "¡Hola! ¿Qué tal?"
+     },
+     {
+      "w": "buenos días",
+      "ex": "Buenos días, señora García."
+     },
+     {
+      "w": "buenas tardes",
+      "ex": "Buenas tardes, ¿tiene pan?"
+     },
+     {
+      "w": "buenas noches",
+      "ex": "Buenas noches y hasta mañana."
+     },
+     {
+      "w": "adiós",
+      "ex": "Adiós, ¡que tengas un buen día!"
+     },
+     {
+      "w": "hasta luego",
+      "ex": "Me voy ya, ¡hasta luego!"
+     }
+    ],
+    "gram": "Buenos días hasta el mediodía, buenas tardes hasta que anochece y buenas noches al llegar o al despedirse de noche."
+   }
+  },
+  {
+   "d": 2,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The Spanish alphabet",
+     "g": "Learn the 27 letters of the Spanish alphabet and spell your name aloud.",
+     "p": [
+      "Spanish has one extra letter, ñ (eñe), as in España and niño.",
+      "The letter h is always silent: hola sounds like ola.",
+      "Letter names are feminine: la a, la be, la ce; ask ¿Cómo se escribe? to check spelling."
+     ],
+     "q": "How would you spell your first name aloud in Spanish, letter by letter?",
+     "c": "Spell your name and the name of your street in Spanish, saying each letter out loud."
+    },
+    "de": {
+     "t": "Das spanische Alphabet",
+     "g": "Du lernst die 27 Buchstaben des spanischen Alphabets und buchstabierst deinen Namen.",
+     "p": [
+      "Spanisch hat einen Extra-Buchstaben: ñ (eñe), wie in España und niño.",
+      "Das h ist immer stumm: hola klingt wie ola.",
+      "Buchstaben sind weiblich: la a, la be, la ce; mit ¿Cómo se escribe? fragst du nach der Schreibweise."
+     ],
+     "q": "Wie buchstabierst du deinen Vornamen auf Spanisch, Buchstabe für Buchstabe?",
+     "c": "Buchstabiere heute laut deinen Namen und deine Straße auf Spanisch."
+    },
+    "es": {
+     "t": "El abecedario español",
+     "g": "Repasa las 27 letras del abecedario y practica deletrear tu nombre en voz alta.",
+     "p": [
+      "El español tiene una letra propia, la ñ (eñe), como en España o niño.",
+      "La hache siempre es muda: hola suena igual que ola.",
+      "Las letras son femeninas: la a, la be, la ce; para comprobar algo se pregunta ¿Cómo se escribe?"
+     ],
+     "q": "¿Cómo deletrearías tu nombre letra por letra, por ejemplo al teléfono?",
+     "c": "Deletrea en voz alta tu nombre y el de tu calle, letra por letra."
+    },
+    "fr": {
+     "t": "L'alphabet espagnol",
+     "g": "Apprendre les 27 lettres de l'alphabet espagnol et épeler ton prénom à voix haute.",
+     "p": [
+      "L'espagnol a une lettre en plus, le ñ (eñe), comme dans España et niño.",
+      "Le h est toujours muet : hola se prononce comme ola.",
+      "Les noms des lettres sont féminins : la a, la be, la ce ; demande ¿Cómo se escribe? pour l'orthographe."
+     ],
+     "q": "Comment épellerais-tu ton prénom en espagnol, lettre par lettre ?",
+     "c": "Épelle à voix haute ton prénom et le nom de ta rue en espagnol."
+    },
+    "it": {
+     "t": "L'alfabeto spagnolo",
+     "g": "Impari le 27 lettere dell'alfabeto spagnolo e a fare lo spelling del tuo nome.",
+     "p": [
+      "Lo spagnolo ha una lettera in più, la ñ (eñe), come in España e niño.",
+      "La h è sempre muta: hola si pronuncia come ola.",
+      "I nomi delle lettere sono femminili: la a, la be, la ce; chiedi ¿Cómo se escribe? per la grafia."
+     ],
+     "q": "Come faresti lo spelling del tuo nome in spagnolo, lettera per lettera?",
+     "c": "Fai lo spelling ad alta voce del tuo nome e della tua via in spagnolo."
+    },
+    "pt": {
+     "t": "O alfabeto espanhol",
+     "g": "Aprende as 27 letras do alfabeto espanhol e soletra o teu nome em voz alta.",
+     "p": [
+      "O espanhol tem uma letra a mais, o ñ (eñe), como em España e niño.",
+      "O h é sempre mudo: hola soa como ola.",
+      "Os nomes das letras são femininos: la a, la be, la ce; pergunta ¿Cómo se escribe? para confirmar."
+     ],
+     "q": "Como soletrarias o teu nome em espanhol, letra a letra?",
+     "c": "Soletra em voz alta o teu nome e o nome da tua rua em espanhol."
+    },
+    "pt_BR": {
+     "t": "O alfabeto espanhol",
+     "g": "Aprenda as 27 letras do alfabeto espanhol e soletre seu nome em voz alta.",
+     "p": [
+      "O espanhol tem uma letra a mais, o ñ (eñe), como em España e niño.",
+      "O h é sempre mudo: hola soa como ola.",
+      "Os nomes das letras são femininos: la a, la be, la ce; pergunte ¿Cómo se escribe? para confirmar."
+     ],
+     "q": "Como você soletraria seu nome em espanhol, letra por letra?",
+     "c": "Soletre em voz alta seu nome e o nome da sua rua em espanhol."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el abecedario",
+      "ex": "El abecedario español tiene veintisiete letras."
+     },
+     {
+      "w": "la letra eñe",
+      "ex": "La eñe está en la palabra España."
+     },
+     {
+      "w": "¿Cómo se escribe?",
+      "ex": "¿Cómo se escribe tu apellido?"
+     },
+     {
+      "w": "deletrear",
+      "ex": "¿Puedes deletrear tu nombre, por favor?"
+     },
+     {
+      "w": "la hache",
+      "ex": "La hache no suena: hola, hoy, hotel."
+     },
+     {
+      "w": "la uve y la be",
+      "ex": "Vaso se escribe con uve; barco, con be."
+     }
+    ],
+    "gram": "Las letras son femeninas: la a, la be, la eñe. Para deletrear: «Se escribe con...» y «¿Cómo se escribe...?»."
+   }
+  },
+  {
+   "d": 3,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Vowels: clear and short",
+     "g": "Pronounce the five Spanish vowels cleanly and read words just as they are written.",
+     "p": [
+      "Spanish has only five vowel sounds: a, e, i, o, u, always short and crisp.",
+      "A vowel never changes with its position: the a in casa sounds the same twice.",
+      "No silent vowels: every letter you see is pronounced, so you can read any new word aloud."
+     ],
+     "q": "Can you say casa, mesa, pelo and uva slowly, keeping each vowel short and clear?",
+     "c": "Read five Spanish words aloud today, stressing nothing extra and keeping every vowel pure."
+    },
+    "de": {
+     "t": "Vokale: klar und kurz",
+     "g": "Du sprichst die fünf spanischen Vokale sauber aus und liest Wörter so, wie sie geschrieben werden.",
+     "p": [
+      "Spanisch hat nur fünf Vokallaute: a, e, i, o, u, immer kurz und klar.",
+      "Ein Vokal klingt überall gleich: Beide a in casa klingen identisch.",
+      "Es gibt keine stummen Vokale: Was du siehst, sprichst du aus, also kannst du jedes neue Wort lesen."
+     ],
+     "q": "Kannst du casa, mesa, pelo und uva langsam sagen und jeden Vokal kurz und klar halten?",
+     "c": "Lies heute fünf spanische Wörter laut und halte jeden Vokal rein und kurz."
+    },
+    "es": {
+     "t": "Vocales claras y cortas",
+     "g": "Pronuncia las cinco vocales con claridad y lee cada palabra tal como se escribe.",
+     "p": [
+      "El español solo tiene cinco sonidos vocálicos: a, e, i, o, u, siempre breves y nítidos.",
+      "Una vocal suena igual en cualquier posición: las dos a de casa son idénticas.",
+      "No hay vocales mudas: todo lo que ves se pronuncia, así que puedes leer cualquier palabra nueva."
+     ],
+     "q": "¿Puedes decir despacio casa, mesa, pelo y uva cuidando que cada vocal sea limpia?",
+     "c": "Lee hoy cinco palabras en voz alta exagerando un poco la claridad de cada vocal."
+    },
+    "fr": {
+     "t": "Voyelles : claires et brèves",
+     "g": "Prononcer les cinq voyelles espagnoles nettement et lire les mots comme ils s'écrivent.",
+     "p": [
+      "L'espagnol n'a que cinq sons de voyelles : a, e, i, o, u, toujours brefs et nets.",
+      "Une voyelle sonne pareil partout : les deux a de casa sont identiques.",
+      "Pas de voyelles muettes : tout se prononce, donc tu peux lire n'importe quel mot nouveau. Le u se dit « ou »."
+     ],
+     "q": "Peux-tu dire lentement casa, mesa, pelo et uva en gardant chaque voyelle courte et claire ?",
+     "c": "Lis cinq mots espagnols à voix haute aujourd'hui en gardant chaque voyelle bien pure."
+    },
+    "it": {
+     "t": "Vocali chiare e brevi",
+     "g": "Pronunci le cinque vocali spagnole in modo netto e leggi le parole come sono scritte.",
+     "p": [
+      "Lo spagnolo ha solo cinque suoni vocalici: a, e, i, o, u, sempre brevi e chiari.",
+      "Una vocale suona uguale ovunque: le due a di casa sono identiche.",
+      "Niente vocali mute: si pronuncia tutto ciò che vedi, proprio come in italiano."
+     ],
+     "q": "Riesci a dire piano casa, mesa, pelo e uva, tenendo ogni vocale breve e chiara?",
+     "c": "Leggi oggi cinque parole spagnole ad alta voce, con vocali pulite e senza allungarle."
+    },
+    "pt": {
+     "t": "Vogais claras e curtas",
+     "g": "Pronuncia as cinco vogais espanholas com clareza e lê as palavras como se escrevem.",
+     "p": [
+      "O espanhol só tem cinco sons de vogal: a, e, i, o, u, sempre curtos e nítidos.",
+      "A vogal não muda com a posição: o e final de mesa não se fecha nem desaparece como em português.",
+      "Não há vogais mudas nem nasais: tudo o que vês pronuncia-se de forma clara."
+     ],
+     "q": "Consegues dizer devagar casa, mesa, pelo e uva, com cada vogal aberta e clara?",
+     "c": "Lê hoje cinco palavras espanholas em voz alta, sem engolir nenhuma vogal final."
+    },
+    "pt_BR": {
+     "t": "Vogais claras e curtas",
+     "g": "Pronuncie as cinco vogais espanholas com clareza e leia as palavras como se escrevem.",
+     "p": [
+      "O espanhol só tem cinco sons de vogal: a, e, i, o, u, sempre curtos e nítidos.",
+      "A vogal não muda com a posição: o e final de mesa soa e, não i, e o o final de pelo soa o, não u.",
+      "Não há vogais nasais nem mudas: tudo o que você vê é pronunciado com clareza."
+     ],
+     "q": "Você consegue dizer devagar casa, mesa, pelo e uva, com cada vogal limpa?",
+     "c": "Leia hoje cinco palavras espanholas em voz alta, sem transformar o e final em i."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la casa",
+      "ex": "Mi casa es pequeña."
+     },
+     {
+      "w": "el ojo",
+      "ex": "Tengo un ojo azul y otro verde."
+     },
+     {
+      "w": "el mapa",
+      "ex": "Mira el mapa de la ciudad."
+     },
+     {
+      "w": "la uva",
+      "ex": "Me gusta la uva blanca."
+     },
+     {
+      "w": "el pelo",
+      "ex": "Ella tiene el pelo largo."
+     },
+     {
+      "w": "la mesa",
+      "ex": "La mesa está limpia."
+     }
+    ],
+    "gram": "Las cinco vocales son siempre cortas y claras: a, e, i, o, u. Se lee como se escribe y no hay vocales mudas."
+   }
+  },
+  {
+   "d": 4,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Tricky consonants: j, g, ll, ñ",
+     "g": "Pronounce the consonants that give Spanish its typical sound: j, g, ll and ñ.",
+     "p": [
+      "J is a strong breathy sound from the throat, like a rough h: jamón, José.",
+      "G before e or i sounds the same as j (gente); before a, o, u it is a hard g (gato).",
+      "Ll sounds like the y in yes in most countries (llave), and ñ sounds like ny in canyon (niño)."
+     ],
+     "q": "Can you say jamón, gente, llave and niño, and which one feels hardest for you?",
+     "c": "Find three Spanish words with j, ll or ñ on a menu, a sign or a song, and say them aloud."
+    },
+    "de": {
+     "t": "Knifflige Konsonanten: j, g, ll, ñ",
+     "g": "Du sprichst die Konsonanten aus, die typisch spanisch klingen: j, g, ll und ñ.",
+     "p": [
+      "Das j ist ein kräftiger Rachenlaut wie das ch in Bach: jamón, José.",
+      "G vor e oder i klingt wie j (gente); vor a, o, u ist es ein hartes g (gato).",
+      "Ll klingt in den meisten Ländern wie j in ja (llave), ñ wie gn in Kognak (niño)."
+     ],
+     "q": "Kannst du jamón, gente, llave und niño sagen? Welches Wort fällt dir am schwersten?",
+     "c": "Finde drei spanische Wörter mit j, ll oder ñ auf einer Karte, einem Schild oder in einem Lied und sprich sie laut."
+    },
+    "es": {
+     "t": "Consonantes con carácter: j, g, ll, ñ",
+     "g": "Practica los sonidos que dan al español su carácter: j, g, ll y ñ.",
+     "p": [
+      "La j es un sonido fuerte de garganta: jamón, José, ajo.",
+      "La g ante e, i suena como la j (gente, girar); ante a, o, u es suave (gato, gota).",
+      "La ll suena como y en casi todo el mundo hispano (yeísmo), y la ñ es la letra de niño y España."
+     ],
+     "q": "¿Sabes un trabalenguas con j o con ñ? Intenta decirlo rápido.",
+     "c": "Busca tres palabras con j, ll o ñ en un menú, un cartel o una canción y dilas en voz alta."
+    },
+    "fr": {
+     "t": "Consonnes délicates : j, g, ll, ñ",
+     "g": "Prononcer les consonnes qui font sonner l'espagnol : j, g, ll et ñ.",
+     "p": [
+      "Le j est un son fort et soufflé venu de la gorge, comme la jota de José : jamón.",
+      "G devant e ou i se prononce comme le j (gente) ; devant a, o, u c'est un g dur (gato).",
+      "Ll se dit comme le y de yoga dans la plupart des pays (llave), et ñ comme gn dans montagne (niño)."
+     ],
+     "q": "Peux-tu dire jamón, gente, llave et niño ? Lequel te semble le plus difficile ?",
+     "c": "Trouve trois mots avec j, ll ou ñ sur un menu, un panneau ou dans une chanson et dis-les à voix haute."
+    },
+    "it": {
+     "t": "Consonanti difficili: j, g, ll, ñ",
+     "g": "Pronunci le consonanti che danno allo spagnolo il suo suono: j, g, ll e ñ.",
+     "p": [
+      "La j è un suono forte e aspirato di gola, simile a una h ruvida: jamón, José.",
+      "La g davanti a e, i suona come la j (gente); davanti ad a, o, u è dura (gato).",
+      "La ll in quasi tutti i paesi si dice come la i di ieri (llave), e la ñ come gn di gnocchi (niño)."
+     ],
+     "q": "Riesci a dire jamón, gente, llave e niño? Quale ti sembra più difficile?",
+     "c": "Trova tre parole con j, ll o ñ in un menù, un cartello o una canzone e dille ad alta voce."
+    },
+    "pt": {
+     "t": "Consoantes difíceis: j, g, ll, ñ",
+     "g": "Pronuncia as consoantes que dão ao espanhol o seu som típico: j, g, ll e ñ.",
+     "p": [
+      "O j espanhol é um som forte de garganta, como um r carregado: jamón, José.",
+      "O g antes de e ou i soa como o j (gente); antes de a, o, u é um g duro (gato).",
+      "O ll soa como i em quase todo o lado (llave), e o ñ soa como nh em vinho (niño)."
+     ],
+     "q": "Consegues dizer jamón, gente, llave e niño? Qual te parece mais difícil?",
+     "c": "Encontra três palavras com j, ll ou ñ num menu, num cartaz ou numa canção e diz em voz alta."
+    },
+    "pt_BR": {
+     "t": "Consoantes difíceis: j, g, ll, ñ",
+     "g": "Pronuncie as consoantes que dão ao espanhol seu som típico: j, g, ll e ñ.",
+     "p": [
+      "O j espanhol é um som forte de garganta, parecido com o r de rato: jamón, José.",
+      "O g antes de e ou i soa como o j (gente); antes de a, o, u é um g duro (gato).",
+      "O ll soa como i na maioria dos países (llave), e o ñ soa como nh em ninho (niño)."
+     ],
+     "q": "Você consegue dizer jamón, gente, llave e niño? Qual parece mais difícil?",
+     "c": "Encontre três palavras com j, ll ou ñ num cardápio, numa placa ou numa música e diga em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el jamón",
+      "ex": "Un bocadillo de jamón, por favor."
+     },
+     {
+      "w": "la gente",
+      "ex": "La gente aquí es muy amable."
+     },
+     {
+      "w": "la llave",
+      "ex": "No encuentro la llave de casa."
+     },
+     {
+      "w": "el niño",
+      "ex": "El niño juega en el parque."
+     },
+     {
+      "w": "la calle",
+      "ex": "Vivo en una calle tranquila."
+     },
+     {
+      "w": "mañana",
+      "ex": "Mañana voy a la playa."
+     }
+    ],
+    "gram": "La j y la g ante e, i suenan fuertes (jamón, gente). La ll suena como y en casi todo el mundo hispano. La ñ suena como ni."
+   }
+  },
+  {
+   "d": 5,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Me llamo... introducing yourself",
+     "g": "Introduce yourself in Spanish and ask someone their name.",
+     "p": [
+      "Me llamo Ana literally means I call myself Ana; soy Ana (I am Ana) works just as well.",
+      "Ask ¿Cómo te llamas? and react with mucho gusto (nice to meet you).",
+      "Encantado is said by men, encantada by women; reply igualmente (likewise)."
+     ],
+     "q": "¿Cómo te llamas? Answer me in Spanish with a full sentence.",
+     "c": "Introduce yourself in Spanish in front of a mirror: name, mucho gusto and a smile."
+    },
+    "de": {
+     "t": "Me llamo... sich vorstellen",
+     "g": "Du stellst dich auf Spanisch vor und fragst andere nach ihrem Namen.",
+     "p": [
+      "Me llamo Ana heißt wörtlich Ich nenne mich Ana; soy Ana (ich bin Ana) passt genauso.",
+      "Frag ¿Cómo te llamas? und antworte mit mucho gusto (freut mich).",
+      "Männer sagen encantado, Frauen encantada; die Antwort ist igualmente (gleichfalls)."
+     ],
+     "q": "¿Cómo te llamas? Antworte mir auf Spanisch mit einem ganzen Satz.",
+     "c": "Stell dich heute vor dem Spiegel auf Spanisch vor: Name, mucho gusto und ein Lächeln."
+    },
+    "es": {
+     "t": "Me llamo... presentarse",
+     "g": "Preséntate con naturalidad y pregunta el nombre a otra persona.",
+     "p": [
+      "Me llamo Ana y soy Ana significan lo mismo; las dos son muy naturales.",
+      "Pregunta ¿Cómo te llamas? y responde con mucho gusto al conocer a alguien.",
+      "Él dice encantado y ella encantada; la respuesta típica es igualmente."
+     ],
+     "q": "¿Cómo te presentarías en una reunión con gente nueva? Escríbelo en dos frases.",
+     "c": "Preséntate hoy ante el espejo como si conocieras a alguien: nombre, mucho gusto y una sonrisa."
+    },
+    "fr": {
+     "t": "Me llamo... se présenter",
+     "g": "Te présenter en espagnol et demander son prénom à quelqu'un.",
+     "p": [
+      "Me llamo Ana signifie littéralement je m'appelle Ana ; soy Ana (je suis Ana) marche aussi.",
+      "Demande ¿Cómo te llamas? et réagis avec mucho gusto (enchanté).",
+      "Un homme dit encantado, une femme encantada ; on répond igualmente (de même)."
+     ],
+     "q": "¿Cómo te llamas? Réponds-moi en espagnol avec une phrase complète.",
+     "c": "Présente-toi en espagnol devant le miroir : prénom, mucho gusto et un sourire."
+    },
+    "it": {
+     "t": "Me llamo... presentarsi",
+     "g": "Ti presenti in spagnolo e chiedi a qualcuno come si chiama.",
+     "p": [
+      "Me llamo Ana vuol dire mi chiamo Ana; anche soy Ana (sono Ana) va benissimo.",
+      "Chiedi ¿Cómo te llamas? e rispondi con mucho gusto (piacere).",
+      "Un uomo dice encantado, una donna encantada; si risponde igualmente (altrettanto)."
+     ],
+     "q": "¿Cómo te llamas? Rispondimi in spagnolo con una frase completa.",
+     "c": "Presentati in spagnolo davanti allo specchio: nome, mucho gusto e un sorriso."
+    },
+    "pt": {
+     "t": "Me llamo... apresentar-se",
+     "g": "Apresenta-te em espanhol e pergunta o nome a alguém.",
+     "p": [
+      "Me llamo Ana quer dizer chamo-me Ana; soy Ana (sou a Ana) também funciona.",
+      "Pergunta ¿Cómo te llamas? e reage com mucho gusto (muito prazer).",
+      "Os homens dizem encantado e as mulheres encantada; responde-se igualmente."
+     ],
+     "q": "¿Cómo te llamas? Responde-me em espanhol com uma frase completa.",
+     "c": "Apresenta-te em espanhol ao espelho: nome, mucho gusto e um sorriso."
+    },
+    "pt_BR": {
+     "t": "Me llamo... se apresentando",
+     "g": "Apresente-se em espanhol e pergunte o nome de alguém.",
+     "p": [
+      "Me llamo Ana quer dizer me chamo Ana; soy Ana (sou Ana) também funciona.",
+      "Pergunte ¿Cómo te llamas? e responda com mucho gusto (muito prazer).",
+      "Homens dizem encantado e mulheres encantada; a resposta é igualmente."
+     ],
+     "q": "¿Cómo te llamas? Responda em espanhol com uma frase completa.",
+     "c": "Apresente-se em espanhol na frente do espelho: nome, mucho gusto e um sorriso."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me llamo",
+      "ex": "Me llamo Lucía, ¿y tú?"
+     },
+     {
+      "w": "soy",
+      "ex": "Soy Pablo, el amigo de Ana."
+     },
+     {
+      "w": "mucho gusto",
+      "ex": "Mucho gusto, Pablo."
+     },
+     {
+      "w": "encantado, encantada",
+      "ex": "Encantada de conocerte."
+     },
+     {
+      "w": "¿Cómo te llamas?",
+      "ex": "Hola, ¿cómo te llamas?"
+     },
+     {
+      "w": "igualmente",
+      "ex": "Mucho gusto. Igualmente."
+     }
+    ],
+    "gram": "Para presentarse: me llamo + nombre o soy + nombre. Encantado si eres hombre, encantada si eres mujer."
+   }
+  },
+  {
+   "d": 6,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Tú or usted? Formal and informal",
+     "g": "Know when to say tú and when to say usted, and adapt your verbs.",
+     "p": [
+      "Use tú with friends, family, children and people your age in relaxed settings.",
+      "Use usted with strangers, older people, officials and in formal situations; it takes the verb form of él/ella.",
+      "When unsure, start with usted; people will often say ¿nos tuteamos? to switch to tú."
+     ],
+     "q": "Would you use tú or usted with a bank clerk, your cousin and your new neighbour aged 80?",
+     "c": "Think of five people in your life and decide for each one: tú or usted?"
+    },
+    "de": {
+     "t": "Tú oder usted? Du und Sie",
+     "g": "Du weißt, wann du tú und wann usted sagst, und passt das Verb an.",
+     "p": [
+      "Tú benutzt du mit Freunden, Familie, Kindern und Gleichaltrigen in lockeren Situationen.",
+      "Usted gilt für Fremde, ältere Menschen, Behörden und formelle Lagen; das Verb steht wie bei él/ella.",
+      "Im Zweifel beginnst du mit usted; oft hörst du dann ¿nos tuteamos? und wechselst zu tú."
+     ],
+     "q": "Tú oder usted: mit der Bankangestellten, deinem Cousin und dem 80-jährigen Nachbarn?",
+     "c": "Denk an fünf Menschen in deinem Leben und entscheide für jeden: tú oder usted?"
+    },
+    "es": {
+     "t": "¿Tú o usted? Formal e informal",
+     "g": "Elige bien entre tú y usted y adapta el verbo a cada caso.",
+     "p": [
+      "Tú se usa con amigos, familia, niños y gente de tu edad en un ambiente relajado.",
+      "Usted se usa con desconocidos, mayores y en contextos formales; el verbo va como con él o ella.",
+      "El uso cambia según el país: en algunos lugares se tutea muchísimo y en otros se habla más de usted."
+     ],
+     "q": "¿Con quién hablas de usted en tu día a día y con quién te tuteas?",
+     "c": "Fíjate hoy en tres conversaciones y anota si la gente se trata de tú o de usted."
+    },
+    "fr": {
+     "t": "Tú ou usted ? Tutoyer ou vouvoyer",
+     "g": "Savoir quand dire tú ou usted et adapter le verbe.",
+     "p": [
+      "Tú s'emploie avec les amis, la famille, les enfants et les gens de ton âge dans un cadre détendu.",
+      "Usted s'emploie avec les inconnus, les aînés et dans les situations formelles ; le verbe se conjugue comme avec él/ella.",
+      "Dans le doute, commence par usted ; on te proposera souvent ¿nos tuteamos? pour passer au tú."
+     ],
+     "q": "Tú ou usted avec une employée de banque, ton cousin et ton voisin de 80 ans ?",
+     "c": "Pense à cinq personnes de ta vie et décide pour chacune : tú ou usted ?"
+    },
+    "it": {
+     "t": "Tú o usted? Formale e informale",
+     "g": "Sai quando usare tú e quando usted, e adatti il verbo.",
+     "p": [
+      "Tú si usa con amici, famiglia, bambini e coetanei in situazioni rilassate.",
+      "Usted si usa con sconosciuti, persone anziane e in contesti formali; il verbo va come con él/ella, come il Lei.",
+      "Nel dubbio comincia con usted; spesso ti diranno ¿nos tuteamos? per passare al tú."
+     ],
+     "q": "Tú o usted con un impiegato di banca, tuo cugino e il vicino di 80 anni?",
+     "c": "Pensa a cinque persone della tua vita e decidi per ognuna: tú o usted?"
+    },
+    "pt": {
+     "t": "Tú ou usted? Formal e informal",
+     "g": "Sabe quando dizer tú e quando usted, e adapta o verbo.",
+     "p": [
+      "Tú usa-se com amigos, família, crianças e pessoas da tua idade em ambiente descontraído.",
+      "Usted usa-se com desconhecidos, pessoas mais velhas e situações formais; o verbo vai como com o senhor.",
+      "Na dúvida, começa por usted; muitas vezes vão propor ¿nos tuteamos? para passar ao tú."
+     ],
+     "q": "Tú ou usted com uma funcionária do banco, o teu primo e o vizinho de 80 anos?",
+     "c": "Pensa em cinco pessoas da tua vida e decide para cada uma: tú ou usted?"
+    },
+    "pt_BR": {
+     "t": "Tú ou usted? Formal e informal",
+     "g": "Saiba quando dizer tú e quando usted, e adapte o verbo.",
+     "p": [
+      "Tú é usado com amigos, família, crianças e pessoas da sua idade em situações descontraídas.",
+      "Usted é para desconhecidos, pessoas mais velhas e situações formais; o verbo vai como com o senhor.",
+      "Na dúvida, comece com usted; muitas vezes vão propor ¿nos tuteamos? para passar ao tú."
+     ],
+     "q": "Tú ou usted com a atendente do banco, seu primo e o vizinho de 80 anos?",
+     "c": "Pense em cinco pessoas da sua vida e decida para cada uma: tú ou usted?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tú",
+      "ex": "¿Tú eres de aquí?"
+     },
+     {
+      "w": "usted",
+      "ex": "¿Usted es el señor López?"
+     },
+     {
+      "w": "señor, señora",
+      "ex": "Buenos días, señora."
+     },
+     {
+      "w": "¿Cómo se llama?",
+      "ex": "Perdone, ¿cómo se llama usted?"
+     },
+     {
+      "w": "tutear",
+      "ex": "¿Nos tuteamos? Claro."
+     },
+     {
+      "w": "ustedes",
+      "ex": "¿Ustedes son de Chile?"
+     }
+    ],
+    "gram": "Tú con amigos, familia y gente joven; usted con desconocidos, mayores y en situaciones formales. Usted usa el verbo como él o ella."
+   }
+  },
+  {
+   "d": 7,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "How are you? ¿Qué tal?",
+     "g": "Ask how someone is and answer naturally in Spanish.",
+     "p": [
+      "¿Qué tal? is the quick, friendly how are you; ¿Cómo estás? is the same with tú, ¿Cómo está? with usted.",
+      "Answers go from muy bien (very well) to bien, regular (so-so) and más o menos (more or less).",
+      "Always bounce the question back: bien, gracias, ¿y tú?"
+     ],
+     "q": "Hola, ¿qué tal? ¿Cómo estás hoy? Answer me in Spanish and ask me back.",
+     "c": "Ask someone ¿qué tal? today, even a pet or a plant, and answer with a full phrase yourself."
+    },
+    "de": {
+     "t": "Wie geht's? ¿Qué tal?",
+     "g": "Du fragst auf Spanisch, wie es jemandem geht, und antwortest natürlich.",
+     "p": [
+      "¿Qué tal? ist das schnelle, freundliche Wie geht's; ¿Cómo estás? mit tú, ¿Cómo está? mit usted.",
+      "Antworten reichen von muy bien (sehr gut) über bien und regular (geht so) bis más o menos (einigermaßen).",
+      "Gib die Frage immer zurück: bien, gracias, ¿y tú?"
+     ],
+     "q": "Hola, ¿qué tal? ¿Cómo estás hoy? Antworte mir auf Spanisch und frag zurück.",
+     "c": "Frag heute jemanden ¿qué tal?, notfalls dein Haustier, und antworte selbst mit einem ganzen Satz."
+    },
+    "es": {
+     "t": "¿Qué tal? ¿Cómo estás?",
+     "g": "Pregunta cómo está alguien y responde con naturalidad y variedad.",
+     "p": [
+      "¿Qué tal? es la forma rápida y cercana; ¿Cómo estás? va con tú y ¿Cómo está? con usted.",
+      "Las respuestas van de muy bien a bien, regular y más o menos, según el día.",
+      "Devuelve siempre la pregunta: bien, gracias, ¿y tú? Es parte de la cortesía."
+     ],
+     "q": "Hola, ¿qué tal? ¿Cómo estás hoy de verdad? Cuéntamelo en una o dos frases.",
+     "c": "Hoy, cuando te pregunten qué tal, responde con algo más que bien: añade un detalle."
+    },
+    "fr": {
+     "t": "Comment ça va ? ¿Qué tal?",
+     "g": "Demander à quelqu'un comment il va et répondre naturellement.",
+     "p": [
+      "¿Qué tal? est le ça va rapide et amical ; ¿Cómo estás? avec tú, ¿Cómo está? avec usted.",
+      "Les réponses vont de muy bien (très bien) à bien, regular (bof) et más o menos (couci-couça).",
+      "Renvoie toujours la question : bien, gracias, ¿y tú?"
+     ],
+     "q": "Hola, ¿qué tal? ¿Cómo estás hoy ? Réponds-moi en espagnol et pose-moi la question.",
+     "c": "Demande ¿qué tal? à quelqu'un aujourd'hui, même à ton chat, et réponds-toi par une phrase complète."
+    },
+    "it": {
+     "t": "Come stai? ¿Qué tal?",
+     "g": "Chiedi come sta qualcuno e rispondi in modo naturale.",
+     "p": [
+      "¿Qué tal? è il come va veloce e amichevole; ¿Cómo estás? va con tú, ¿Cómo está? con usted.",
+      "Le risposte vanno da muy bien (benissimo) a bien, regular (così così) e más o menos (più o meno).",
+      "Ricambia sempre la domanda: bien, gracias, ¿y tú?"
+     ],
+     "q": "Hola, ¿qué tal? ¿Cómo estás hoy? Rispondimi in spagnolo e chiedimelo a tua volta.",
+     "c": "Chiedi oggi ¿qué tal? a qualcuno, anche al tuo gatto, e rispondi con una frase completa."
+    },
+    "pt": {
+     "t": "Como estás? ¿Qué tal?",
+     "g": "Pergunta como alguém está e responde de forma natural.",
+     "p": [
+      "¿Qué tal? é o tudo bem rápido e simpático; ¿Cómo estás? com tú, ¿Cómo está? com usted.",
+      "As respostas vão de muy bien (muito bem) a bien, regular (assim assim) e más o menos (mais ou menos).",
+      "Devolve sempre a pergunta: bien, gracias, ¿y tú?"
+     ],
+     "q": "Hola, ¿qué tal? ¿Cómo estás hoy? Responde-me em espanhol e pergunta-me também.",
+     "c": "Pergunta hoje ¿qué tal? a alguém, nem que seja ao teu gato, e responde com uma frase completa."
+    },
+    "pt_BR": {
+     "t": "Tudo bem? ¿Qué tal?",
+     "g": "Pergunte como alguém está e responda de forma natural.",
+     "p": [
+      "¿Qué tal? é o tudo bem rápido e simpático; ¿Cómo estás? com tú, ¿Cómo está? com usted.",
+      "As respostas vão de muy bien (muito bem) a bien, regular (mais ou menos) e más o menos.",
+      "Sempre devolva a pergunta: bien, gracias, ¿y tú?"
+     ],
+     "q": "Hola, ¿qué tal? ¿Cómo estás hoy? Responda em espanhol e me pergunte também.",
+     "c": "Pergunte ¿qué tal? a alguém hoje, nem que seja ao seu cachorro, e responda com uma frase completa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Qué tal?",
+      "ex": "Hola, Marta, ¿qué tal?"
+     },
+     {
+      "w": "¿Cómo estás?",
+      "ex": "¿Cómo estás hoy?"
+     },
+     {
+      "w": "bien, gracias",
+      "ex": "Bien, gracias, ¿y tú?"
+     },
+     {
+      "w": "muy bien",
+      "ex": "Estoy muy bien, la verdad."
+     },
+     {
+      "w": "regular",
+      "ex": "Hoy estoy regular."
+     },
+     {
+      "w": "más o menos",
+      "ex": "¿Qué tal el día? Más o menos."
+     }
+    ],
+    "gram": "¿Qué tal? es informal y muy común. ¿Cómo estás? con tú, ¿cómo está? con usted. Se devuelve la pregunta con ¿y tú? o ¿y usted?"
+   }
+  },
+  {
+   "d": 8,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 0 to 20",
+     "g": "Count from cero to veinte and use numbers for ages and phone numbers.",
+     "p": [
+      "Cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez: the base of everything.",
+      "Once to quince are single words; 16 to 19 join diez y: dieciséis, diecisiete, dieciocho, diecinueve.",
+      "Phone numbers are often read in pairs or one by one: seis, cero, dos..."
+     ],
+     "q": "How many people live in your home, and how old is the youngest one? Answer with Spanish numbers.",
+     "c": "Read your phone number aloud in Spanish, digit by digit, three times without looking."
+    },
+    "de": {
+     "t": "Zahlen von 0 bis 20",
+     "g": "Du zählst von cero bis veinte und nutzt Zahlen für Alter und Telefonnummern.",
+     "p": [
+      "Cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez: die Basis für alles.",
+      "Once bis quince sind eigene Wörter; 16 bis 19 verbinden diez y: dieciséis, diecisiete, dieciocho, diecinueve.",
+      "Telefonnummern liest man oft in Paaren oder Ziffer für Ziffer: seis, cero, dos..."
+     ],
+     "q": "Wie viele Personen leben bei dir, und wie alt ist die jüngste? Antworte mit spanischen Zahlen.",
+     "c": "Lies deine Telefonnummer dreimal laut auf Spanisch vor, Ziffer für Ziffer, ohne hinzusehen."
+    },
+    "es": {
+     "t": "Los números del 0 al 20",
+     "g": "Repasa los números del cero al veinte y úsalos para edades y teléfonos.",
+     "p": [
+      "Del cero al quince cada número tiene su propia palabra: once, doce, trece, catorce, quince.",
+      "Del dieciséis al diecinueve se escriben en una sola palabra y dieciséis lleva tilde.",
+      "Los teléfonos se leen de uno en uno o en parejas, según el país y la costumbre."
+     ],
+     "q": "¿Cuántas personas viven en tu casa y qué edad tiene la más joven?",
+     "c": "Di tu número de teléfono en voz alta de dos maneras: cifra a cifra y en parejas."
+    },
+    "fr": {
+     "t": "Les nombres de 0 à 20",
+     "g": "Compter de cero à veinte et utiliser les nombres pour l'âge et le téléphone.",
+     "p": [
+      "Cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez : la base de tout.",
+      "Once à quince sont des mots uniques ; 16 à 19 s'écrivent en un mot : dieciséis, diecisiete, dieciocho, diecinueve.",
+      "Les numéros de téléphone se lisent souvent par paires ou chiffre par chiffre : seis, cero, dos..."
+     ],
+     "q": "Combien de personnes vivent chez toi, et quel âge a la plus jeune ? Réponds en espagnol.",
+     "c": "Lis ton numéro de téléphone en espagnol trois fois à voix haute, chiffre par chiffre, sans regarder."
+    },
+    "it": {
+     "t": "I numeri da 0 a 20",
+     "g": "Conti da cero a veinte e usi i numeri per età e numeri di telefono.",
+     "p": [
+      "Cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez: la base di tutto.",
+      "Da once a quince sono parole singole; da 16 a 19 si uniscono: dieciséis, diecisiete, dieciocho, diecinueve.",
+      "I numeri di telefono si leggono spesso a coppie o cifra per cifra: seis, cero, dos..."
+     ],
+     "q": "Quante persone vivono a casa tua e quanti anni ha la più giovane? Rispondi in spagnolo.",
+     "c": "Leggi il tuo numero di telefono in spagnolo tre volte ad alta voce, cifra per cifra, senza guardare."
+    },
+    "pt": {
+     "t": "Números de 0 a 20",
+     "g": "Conta de cero a veinte e usa os números para idades e telefones.",
+     "p": [
+      "Cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez: a base de tudo.",
+      "De once a quince são palavras únicas; de 16 a 19 escrevem-se juntas: dieciséis, diecisiete, dieciocho, diecinueve.",
+      "Os números de telefone leem-se muitas vezes aos pares ou algarismo a algarismo: seis, cero, dos..."
+     ],
+     "q": "Quantas pessoas vivem na tua casa e que idade tem a mais nova? Responde em espanhol.",
+     "c": "Lê o teu número de telefone em espanhol três vezes em voz alta, algarismo a algarismo, sem olhar."
+    },
+    "pt_BR": {
+     "t": "Números de 0 a 20",
+     "g": "Conte de cero a veinte e use os números para idades e telefones.",
+     "p": [
+      "Cero, uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez: a base de tudo.",
+      "De once a quince são palavras únicas; de 16 a 19 são escritos juntos: dieciséis, diecisiete, dieciocho, diecinueve.",
+      "Números de telefone costumam ser lidos em pares ou dígito por dígito: seis, cero, dos..."
+     ],
+     "q": "Quantas pessoas moram na sua casa e quantos anos tem a mais nova? Responda em espanhol.",
+     "c": "Leia seu número de telefone em espanhol três vezes em voz alta, dígito por dígito, sem olhar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cero",
+      "ex": "Mi número empieza por cero."
+     },
+     {
+      "w": "cinco",
+      "ex": "Tengo cinco primos."
+     },
+     {
+      "w": "diez",
+      "ex": "El autobús tarda diez minutos."
+     },
+     {
+      "w": "quince",
+      "ex": "Mi hermana tiene quince años."
+     },
+     {
+      "w": "dieciséis",
+      "ex": "Vivo en el número dieciséis."
+     },
+     {
+      "w": "veinte",
+      "ex": "Hay veinte personas en la clase."
+     }
+    ],
+    "gram": "Del 0 al 15 cada número es una palabra propia; del 16 al 19 se escriben juntos: dieciséis, diecisiete, dieciocho, diecinueve."
+   }
+  },
+  {
+   "d": 9,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Where are you from? ¿De dónde eres?",
+     "g": "Say where you are from and where you live, and use some nationalities.",
+     "p": [
+      "Ask ¿De dónde eres? (tú) or ¿De dónde es usted? and answer soy de + country or city.",
+      "Vivo en + place tells where you live now: soy de Brasil, pero vivo en Madrid.",
+      "Nationalities agree with you: él es mexicano, ella es mexicana; and they are written in lowercase."
+     ],
+     "q": "¿De dónde eres y dónde vives ahora? Answer me in Spanish with soy de and vivo en.",
+     "c": "Write one sentence in Spanish about where you are from and one about where you live today."
+    },
+    "de": {
+     "t": "Woher kommst du? ¿De dónde eres?",
+     "g": "Du sagst, woher du kommst und wo du lebst, und lernst einige Nationalitäten.",
+     "p": [
+      "Frag ¿De dónde eres? (tú) oder ¿De dónde es usted? und antworte mit soy de + Land oder Stadt.",
+      "Vivo en + Ort sagt, wo du jetzt wohnst: soy de Alemania, pero vivo en Madrid.",
+      "Nationalitäten passen sich an: él es alemán, ella es alemana; sie werden kleingeschrieben."
+     ],
+     "q": "¿De dónde eres y dónde vives ahora? Antworte auf Spanisch mit soy de und vivo en.",
+     "c": "Schreib einen spanischen Satz darüber, woher du kommst, und einen darüber, wo du heute lebst."
+    },
+    "es": {
+     "t": "¿De dónde eres? Origen y nacionalidad",
+     "g": "Habla de tu origen y de dónde vives usando bien las nacionalidades.",
+     "p": [
+      "Se pregunta ¿De dónde eres? o ¿De dónde es usted? y se responde soy de más el país o la ciudad.",
+      "Vivo en indica dónde resides ahora: soy de Perú, pero vivo en Barcelona.",
+      "Las nacionalidades concuerdan y van en minúscula: mexicano, mexicana; alemán, alemana."
+     ],
+     "q": "¿De dónde eres y dónde vives ahora? ¿Has vivido en otros lugares?",
+     "c": "Escribe tres nacionalidades de personas que conoces, en masculino y en femenino."
+    },
+    "fr": {
+     "t": "D'où viens-tu ? ¿De dónde eres?",
+     "g": "Dire d'où tu viens et où tu habites, avec quelques nationalités.",
+     "p": [
+      "Demande ¿De dónde eres? (tú) ou ¿De dónde es usted? et réponds soy de + pays ou ville.",
+      "Vivo en + lieu indique où tu vis : soy de Francia, pero vivo en Madrid.",
+      "Les nationalités s'accordent : él es francés, ella es francesa ; elles s'écrivent en minuscule."
+     ],
+     "q": "¿De dónde eres y dónde vives ahora? Réponds en espagnol avec soy de et vivo en.",
+     "c": "Écris une phrase en espagnol sur ton origine et une sur l'endroit où tu vis aujourd'hui."
+    },
+    "it": {
+     "t": "Di dove sei? ¿De dónde eres?",
+     "g": "Dici di dove sei e dove vivi, e impari alcune nazionalità.",
+     "p": [
+      "Chiedi ¿De dónde eres? (tú) o ¿De dónde es usted? e rispondi soy de + paese o città.",
+      "Vivo en + luogo dice dove abiti ora: soy de Italia, pero vivo en Madrid.",
+      "Le nazionalità si accordano: él es italiano, ella es italiana; si scrivono con la minuscola."
+     ],
+     "q": "¿De dónde eres y dónde vives ahora? Rispondi in spagnolo con soy de e vivo en.",
+     "c": "Scrivi una frase in spagnolo su da dove vieni e una su dove vivi oggi."
+    },
+    "pt": {
+     "t": "De onde és? ¿De dónde eres?",
+     "g": "Diz de onde és e onde vives, e aprende algumas nacionalidades.",
+     "p": [
+      "Pergunta ¿De dónde eres? (tú) ou ¿De dónde es usted? e responde soy de + país ou cidade.",
+      "Vivo en + lugar diz onde moras agora: soy de Portugal, pero vivo en Madrid.",
+      "As nacionalidades concordam: él es portugués, ella es portuguesa; escrevem-se com minúscula."
+     ],
+     "q": "¿De dónde eres y dónde vives ahora? Responde em espanhol com soy de e vivo en.",
+     "c": "Escreve uma frase em espanhol sobre de onde és e outra sobre onde vives hoje."
+    },
+    "pt_BR": {
+     "t": "De onde você é? ¿De dónde eres?",
+     "g": "Diga de onde você é e onde mora, e aprenda algumas nacionalidades.",
+     "p": [
+      "Pergunte ¿De dónde eres? (tú) ou ¿De dónde es usted? e responda soy de + país ou cidade.",
+      "Vivo en + lugar diz onde você mora agora: soy de Brasil, pero vivo en Madrid.",
+      "As nacionalidades concordam: él es brasileño, ella es brasileña; são escritas com minúscula."
+     ],
+     "q": "¿De dónde eres y dónde vives ahora? Responda em espanhol com soy de e vivo en.",
+     "c": "Escreva uma frase em espanhol sobre de onde você é e outra sobre onde mora hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿De dónde eres?",
+      "ex": "¿De dónde eres, Carlos?"
+     },
+     {
+      "w": "soy de",
+      "ex": "Soy de México."
+     },
+     {
+      "w": "vivo en",
+      "ex": "Vivo en Madrid desde hace dos años."
+     },
+     {
+      "w": "mexicano, mexicana",
+      "ex": "Mi amiga es mexicana."
+     },
+     {
+      "w": "argentino, argentina",
+      "ex": "Él es argentino, de Córdoba."
+     },
+     {
+      "w": "alemán, alemana",
+      "ex": "Mi profesor es alemán."
+     }
+    ],
+    "gram": "Soy de + lugar para el origen; vivo en + lugar para la residencia. Las nacionalidades cambian a femenino: español, española."
+   }
+  },
+  {
+   "d": 10,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ser: the verb to be (identity)",
+     "g": "Conjugate ser in the present and use it for names, origin, jobs and descriptions.",
+     "p": [
+      "Ser: yo soy, tú eres, él/ella/usted es, nosotros somos, vosotros sois, ellos/ustedes son.",
+      "Use it for who or what someone is: soy Ana, es de Lima, somos profesores, es alto.",
+      "Spanish usually drops the pronoun because the verb shows the person: soy de Roma is enough."
+     ],
+     "q": "Tell me three things about you with ser: your name, where you are from and your job or studies.",
+     "c": "Write five sentences with five different forms of ser about people you know."
+    },
+    "de": {
+     "t": "Ser: das Verb sein (Identität)",
+     "g": "Du konjugierst ser im Präsens und nutzt es für Namen, Herkunft, Beruf und Beschreibung.",
+     "p": [
+      "Ser: yo soy, tú eres, él/ella/usted es, nosotros somos, vosotros sois, ellos/ustedes son.",
+      "Es sagt, wer oder was jemand ist: soy Ana, es de Lima, somos profesores, es alto.",
+      "Das Pronomen fällt meist weg, weil das Verb die Person zeigt: soy de Berlín reicht."
+     ],
+     "q": "Erzähl mir drei Dinge mit ser: deinen Namen, deine Herkunft und deinen Beruf oder dein Studium.",
+     "c": "Schreib fünf Sätze mit fünf verschiedenen Formen von ser über Menschen, die du kennst."
+    },
+    "es": {
+     "t": "Ser: identidad y descripción",
+     "g": "Conjuga ser en presente y úsalo para nombre, origen, profesión y descripción.",
+     "p": [
+      "Ser: yo soy, tú eres, él/ella/usted es, nosotros somos, vosotros sois, ellos/ustedes son.",
+      "Sirve para decir quién o cómo es alguien: soy Ana, es de Lima, somos profesores, es alto.",
+      "El pronombre suele omitirse porque el verbo ya indica la persona: soy de Quito basta."
+     ],
+     "q": "Dime tres cosas sobre ti con ser: nombre, origen y profesión o estudios.",
+     "c": "Escribe cinco frases con cinco formas distintas de ser sobre personas que conoces."
+    },
+    "fr": {
+     "t": "Ser : le verbe être (identité)",
+     "g": "Conjuguer ser au présent et l'utiliser pour le nom, l'origine, le métier et la description.",
+     "p": [
+      "Ser : yo soy, tú eres, él/ella/usted es, nosotros somos, vosotros sois, ellos/ustedes son.",
+      "Il dit qui ou ce qu'est quelqu'un : soy Ana, es de Lima, somos profesores, es alto.",
+      "Le pronom disparaît souvent car le verbe indique la personne : soy de Lyon suffit."
+     ],
+     "q": "Dis-moi trois choses sur toi avec ser : ton prénom, ton origine et ton métier ou tes études.",
+     "c": "Écris cinq phrases avec cinq formes différentes de ser sur des personnes que tu connais."
+    },
+    "it": {
+     "t": "Ser: il verbo essere (identità)",
+     "g": "Coniughi ser al presente e lo usi per nome, origine, lavoro e descrizione.",
+     "p": [
+      "Ser: yo soy, tú eres, él/ella/usted es, nosotros somos, vosotros sois, ellos/ustedes son.",
+      "Indica chi o cosa è qualcuno: soy Ana, es de Lima, somos profesores, es alto.",
+      "Come in italiano il pronome di solito si omette: soy de Milán basta."
+     ],
+     "q": "Dimmi tre cose su di te con ser: il nome, la provenienza e il lavoro o gli studi.",
+     "c": "Scrivi cinque frasi con cinque forme diverse di ser su persone che conosci."
+    },
+    "pt": {
+     "t": "Ser: o verbo ser (identidade)",
+     "g": "Conjuga ser no presente e usa-o para nome, origem, profissão e descrição.",
+     "p": [
+      "Ser: yo soy, tú eres, él/ella/usted es, nosotros somos, vosotros sois, ellos/ustedes son.",
+      "Diz quem ou como é alguém: soy Ana, es de Lima, somos profesores, es alto.",
+      "O pronome costuma cair porque o verbo já mostra a pessoa: soy de Oporto chega."
+     ],
+     "q": "Diz-me três coisas sobre ti com ser: o teu nome, a tua origem e a tua profissão ou estudos.",
+     "c": "Escreve cinco frases com cinco formas diferentes de ser sobre pessoas que conheces."
+    },
+    "pt_BR": {
+     "t": "Ser: o verbo ser (identidade)",
+     "g": "Conjugue ser no presente e use para nome, origem, profissão e descrição.",
+     "p": [
+      "Ser: yo soy, tú eres, él/ella/usted es, nosotros somos, vosotros sois, ellos/ustedes son.",
+      "Diz quem ou como alguém é: soy Ana, es de Lima, somos profesores, es alto.",
+      "O pronome costuma cair porque o verbo já mostra a pessoa: soy de Recife basta."
+     ],
+     "q": "Me conte três coisas sobre você com ser: seu nome, sua origem e sua profissão ou estudos.",
+     "c": "Escreva cinco frases com cinco formas diferentes de ser sobre pessoas que você conhece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "yo soy",
+      "ex": "Yo soy estudiante."
+     },
+     {
+      "w": "tú eres",
+      "ex": "Tú eres muy simpático."
+     },
+     {
+      "w": "él es, ella es",
+      "ex": "Ella es médica."
+     },
+     {
+      "w": "nosotros somos",
+      "ex": "Nosotros somos de Colombia."
+     },
+     {
+      "w": "vosotros sois",
+      "ex": "¿Vosotros sois hermanos?"
+     },
+     {
+      "w": "ellos son",
+      "ex": "Ellos son mis amigos."
+     }
+    ],
+    "gram": "Ser en presente: soy, eres, es, somos, sois, son. Se usa para nombre, origen, profesión y descripción. El pronombre suele omitirse."
+   }
+  }
+ ]
+}

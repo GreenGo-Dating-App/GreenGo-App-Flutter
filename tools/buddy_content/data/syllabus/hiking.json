@@ -1,0 +1,2195 @@
+{
+"topic": "hiking",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to the hiking path",
+"f": "What a year of curious, safe and joyful hiking can look like for anyone"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Why people love to hike",
+"f": "Fresh air, movement, views, calm and good company on the trail"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Walking vs hiking vs trekking",
+"f": "How a stroll, a day hike and a multi-day trek differ in effort and planning"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Types of trails",
+"f": "Forest paths, coastal walks, mountain routes, loops and point-to-point trails"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Choosing your first trail",
+"f": "Short distance, little climbing, clear paths and an easy way back"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Reading a trail description",
+"f": "Distance, elevation gain, estimated time and difficulty grades explained"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Understanding elevation gain",
+"f": "Why 500 metres of climbing changes a hike more than extra kilometres"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Estimating hiking time",
+"f": "Simple rules of thumb that combine distance and climbing into hours"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Finding your natural pace",
+"f": "Walking at a speed where you can still chat comfortably"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Footwear basics",
+"f": "Trail shoes, hiking boots and approach shoes: what each one is good for"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Getting a good boot fit",
+"f": "Trying shoes in the afternoon, with hiking socks and room for the toes"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Socks matter more than you think",
+"f": "Wool and synthetic socks, cushioning and why cotton holds moisture"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Breaking in new footwear",
+"f": "Short walks at home and in town before a long day on the trail"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Dressing in layers",
+"f": "Base layer, warm mid layer and protective outer shell working together"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Why cotton is not your friend",
+"f": "How wet cotton stays cold and what fabrics dry faster"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "The waterproof jacket",
+"f": "Waterproof vs water-resistant and why a hood matters"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Hats, gloves and buffs",
+"f": "Small items that make a big difference in sun, wind and cold"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Choosing a daypack",
+"f": "Size in litres, a hip belt, comfortable straps and easy pockets"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Packing a daypack well",
+"f": "Heavy items close to your back, essentials easy to reach"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The ten essentials idea",
+"f": "A classic checklist of navigation, light, sun, warmth, food, water and more"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Water: how much to carry",
+"f": "General guidance on water for a day hike and how heat changes it"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Bottles vs hydration bladders",
+"f": "Pros and cons of each way of carrying water"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Trail snacks",
+"f": "Easy energy: nuts, fruit, bars, sandwiches and a little treat"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Planning a simple trail lunch",
+"f": "A tasty, light lunch that survives a few hours in a pack"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Checking the weather forecast",
+"f": "Temperature, wind, rain and storms before you set off"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Sunrise, sunset and daylight",
+"f": "Planning so you finish well before it gets dark"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Telling someone your plan",
+"f": "Sharing route, start time and expected return with a friend"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Trail markers and blazes",
+"f": "Paint marks, cairns, signposts and how different countries mark paths"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Hiking etiquette basics",
+"f": "Greeting others, staying on the path and sharing narrow trails"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first hiking toolkit",
+"f": "Looking back at gear, planning and safety basics from month one"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Who has right of way",
+"f": "Uphill hikers, cyclists, horses and how to step aside politely"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Leave No Trace principles",
+"f": "Seven simple ideas for keeping nature as beautiful as you found it"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Packing out what you pack in",
+"f": "Carrying all litter home, including fruit peels"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Toilet breaks outdoors",
+"f": "Using facilities when available and discreet, clean habits when not"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Walking uphill efficiently",
+"f": "Short steps, steady rhythm and using your whole foot"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Walking downhill safely",
+"f": "Soft knees, small steps and controlling your speed"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "The rest step",
+"f": "A mountaineering trick for steep climbs that saves energy"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Breathing on the climb",
+"f": "Matching breath to steps and slowing down instead of stopping"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Taking good breaks",
+"f": "Short regular pauses, a snack, a layer on and enjoying the view"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Preventing blisters",
+"f": "Good socks, dry feet and dealing with hot spots early"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Caring for your feet on the trail",
+"f": "Airing feet at breaks, trimming nails and changing socks"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Sun protection",
+"f": "Sunscreen, sunglasses, a hat and why altitude makes the sun stronger"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Staying warm when you stop",
+"f": "Putting on a layer before you get cold at a break"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Hiking in the rain",
+"f": "Enjoying wet days with the right shell, pack cover and mindset"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Hiking in hot weather",
+"f": "Early starts, shade, water and slowing the pace"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Introduction to maps",
+"f": "What a hiking map shows and why paper still matters"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Map scale explained",
+"f": "How 1:25,000 and 1:50,000 maps differ in detail"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Map symbols and legends",
+"f": "Paths, huts, water, forests, viewpoints and boundaries"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Contour lines basics",
+"f": "How lines on a map show hills, valleys and steepness"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Orienting the map",
+"f": "Turning the map so it matches the land around you"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Introduction to the compass",
+"f": "Needle, baseplate, bezel and direction of travel arrow"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Finding north",
+"f": "Using a compass and noticing the sun as a rough guide"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Hiking apps in general terms",
+"f": "How digital maps and GPS help and why batteries run out"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Keeping your phone charged",
+"f": "Airplane mode, a power bank and a warm pocket in the cold"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Handrails and landmarks",
+"f": "Following rivers, ridges and walls to stay on track"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "What to do if you feel lost",
+"f": "Stop, think, observe and plan before moving on"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Hiking with friends",
+"f": "Choosing a pace for the group and keeping everyone together"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Hiking with children",
+"f": "Short routes, games, snacks and lots of small goals"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Hiking with dogs",
+"f": "Leads, water for your dog, local rules and respecting wildlife"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: moving well on the trail",
+"f": "Looking back at technique, navigation and care from month two"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Your first loop hike plan",
+"f": "Putting everything together to plan a short circular route"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Trailhead preparation",
+"f": "Parking, last checks, boots laced and a photo of the map board"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Using public transport to trails",
+"f": "Buses and trains to trailheads and point-to-point hikes"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Hiking alone in general terms",
+"f": "Picking popular trails, sharing plans and staying within limits"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Forest hiking",
+"f": "Shade, roots, mushrooms, birdsong and staying on the path"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Coastal walks",
+"f": "Tides, cliffs, sea breeze and beautiful seaside paths"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Lakeside and riverside trails",
+"f": "Gentle paths, picnic spots and slippery banks"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Meadows and wildflowers",
+"f": "Enjoying flowers without picking them and spotting pollinators"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Trail surfaces",
+"f": "Gravel, rock, mud, sand and roots and how to walk on each"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Walking on mud and wet rock",
+"f": "Shorter steps, flat feet and testing your footing"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Crossing small streams",
+"f": "Stepping stones, balance and when to look for another way"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Bridges, stiles and gates",
+"f": "Countryside features and the habit of closing gates"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Hiking in spring",
+"f": "Fresh green, flowing water, mud and changeable weather"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Hiking in summer",
+"f": "Long days, heat, storms and early starts"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Hiking in autumn",
+"f": "Colours, crisp air, shorter days and wet leaves"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Hiking in winter in general terms",
+"f": "Short low routes, warm layers and extra daylight planning"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Thunderstorm awareness",
+"f": "Watching clouds and heading down early when storms build"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Wind and how it feels",
+"f": "Wind chill, exposed ridges and choosing sheltered routes"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Fog and low visibility",
+"f": "Staying on clear paths and turning back when unsure"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Basic first-aid kit",
+"f": "Plasters, blister care, bandage, wipes and a small foil blanket"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Recognising tiredness",
+"f": "Signs to slow down, eat, drink and shorten the route"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Turning back is a skill",
+"f": "Why the best hikers are happy to change plans"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Insects and ticks in general terms",
+"f": "Long trousers, checking skin after hikes and local advice"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Wildlife watching basics",
+"f": "Keeping distance, being quiet and never feeding animals"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Birds on the trail",
+"f": "Simple ways to notice and enjoy birds while walking"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Trees you can recognise",
+"f": "Leaves, bark and shapes of a few common trees"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Reading the landscape",
+"f": "Valleys, ridges, saddles, peaks and how they formed"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Taking trail photos",
+"f": "Simple tips for landscapes, people and light"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "A hiking journal",
+"f": "Recording routes, feelings and favourite moments"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: seasons and nature",
+"f": "Looking back at terrain, weather and nature from month three"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Building hiking fitness",
+"f": "Regular walks, stairs and gentle strength for the legs"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Stretching after a hike",
+"f": "Calves, thighs and hips: easy ways to cool down"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Recovery after a long day",
+"f": "Rest, food, water and a short walk the next day"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Choosing a slightly harder trail",
+"f": "Adding distance or climbing one step at a time"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Half-day hikes",
+"f": "Planning a hike of three to four hours with a proper lunch stop"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Your first summit",
+"f": "Choosing a small peak with a clear path and a great view"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Ridge walking basics",
+"f": "Enjoying views while watching wind and exposure"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Viewpoints and panoramas",
+"f": "Finding and naming the peaks and places you can see"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Trekking poles introduction",
+"f": "How poles help on climbs and descents"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Adjusting and using poles",
+"f": "Pole length, straps and rhythm with your steps"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Gaiters and when they help",
+"f": "Keeping mud, snow and stones out of your boots"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Sunglasses and eye care",
+"f": "Lens categories and why eyes need protection on bright days"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Caring for your gear",
+"f": "Cleaning boots, drying jackets and storing your pack"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Repairing small gear issues",
+"f": "Tape, a needle and thread and a spare lace"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Hiking budget-friendly",
+"f": "Starting with what you have and adding gear over time"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Renting and borrowing gear",
+"f": "Trying equipment before you buy it"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Hiking clubs and groups",
+"f": "Meeting people who share the love of walking"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Guided walks",
+"f": "What a guide adds: local knowledge, safety and stories"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Hiking abroad: first thoughts",
+"f": "Different trail cultures, signs and seasons around the world"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Trail words in other languages",
+"f": "Words for path, peak, hut and spring in a few languages"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Mountain huts and refuges",
+"f": "How huts work in places like the Alps and simple hut manners"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Picnic spots and trail cafes",
+"f": "Enjoying local food at the end of a walk"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Sharing the trail with cyclists",
+"f": "Bells, listening and friendly communication"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Photography without disturbing others",
+"f": "Being mindful at busy viewpoints"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Night sky after a hike",
+"f": "Spotting stars and planets on clear evenings"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Simple knots for hikers",
+"f": "Tying laces that stay put and a quick knot for securing gear"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Lacing techniques for comfort",
+"f": "Heel-lock lacing and easing pressure on the top of the foot"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Morning routine before a hike",
+"f": "Breakfast, checking the bag and leaving on time without stress"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Packing for changing weather",
+"f": "A small checklist for days when sun, wind and showers all appear"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: ready for the next level",
+"f": "Looking back at the beginner journey and choosing new goals"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Planning a full-day hike",
+"f": "Six to eight hours: timing, food, water and turnaround time"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "The turnaround time",
+"f": "Setting a fixed time to head back no matter what"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Route cards",
+"f": "Writing legs, distances, bearings and escape routes on paper"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Escape routes",
+"f": "Planning shorter ways down if weather or energy changes"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Contours in depth",
+"f": "Reading spurs, re-entrants, saddles and steep ground"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Taking a bearing",
+"f": "Using a compass to find the direction from the map"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Walking on a bearing",
+"f": "Picking targets and staying on course in open country"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Pacing distance",
+"f": "Counting steps to estimate how far you have walked"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Timing distance",
+"f": "Using your speed to know where you should be"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Resection basics",
+"f": "Finding your position from two or three landmarks"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Aiming off",
+"f": "Deliberately aiming to one side to find a target easily"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Catching features",
+"f": "Using a river or wall as a backstop so you do not overshoot"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "GPS and digital maps in depth",
+"f": "Waypoints, tracks and offline maps as helpers, not masters"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Altimeters as navigation aids",
+"f": "How altitude readings help confirm your position"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Navigation in poor visibility",
+"f": "Short legs, careful bearings and patience"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Night navigation basics",
+"f": "Headlamp use, slower pace and familiar routes first"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "The headlamp",
+"f": "Brightness, battery types and keeping a spare"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Weather patterns in mountains",
+"f": "Morning calm, afternoon clouds and valley winds"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Reading clouds",
+"f": "Cumulus, cumulonimbus, lenticular clouds and what they suggest"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Temperature and altitude",
+"f": "Roughly how air gets cooler as you climb"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Wind chill in depth",
+"f": "Why a windy ridge feels much colder than the number says"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Mountain forecasts",
+"f": "Freezing level, wind at height and cloud base"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Hydration on long days",
+"f": "Sipping often, electrolytes and noticing your needs"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Fuel for long hikes",
+"f": "Steady snacks, real meals and energy that lasts"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Trail food from around the world",
+"f": "Onigiri, empanadas, bread and cheese and other classic trail foods"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Water sources on the trail",
+"f": "Springs, streams and fountains and how to check maps for them"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Treating water in general terms",
+"f": "Filters, tablets and boiling as common methods"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Footwear for rough terrain",
+"f": "Stiffer soles, ankle support and grip for rocky trails"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Navigation practice day",
+"f": "A local walk to practise bearings, pacing and map reading together"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: navigation and weather",
+"f": "Looking back at map, compass and forecast skills"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Scree and loose ground",
+"f": "Moving carefully on small loose stones up and down"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Boulder fields",
+"f": "Hopping and balancing on large rocks with care"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Easy scrambling introduction",
+"f": "Using hands for balance on simple rocky steps"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Exposure and confidence",
+"f": "Understanding exposed paths and choosing routes within your comfort"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Snow patches in summer",
+"f": "Why old snow can be slippery and when to avoid it"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "River crossings in depth",
+"f": "Choosing a spot, unbuckling the hip belt and turning back if fast"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Steep descents",
+"f": "Zigzags, poles and keeping weight over your feet"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Hiking in the heat in depth",
+"f": "Shade timing, wet scarves and recognising overheating early"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Hiking in the cold in depth",
+"f": "Warm layers, insulated drinks and keeping hands and feet warm"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Introduction to altitude",
+"f": "Why breathing feels harder high up and the idea of acclimatisation"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Feeling good at altitude",
+"f": "Climbing slowly, resting and heading lower if you feel unwell"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Group hiking dynamics",
+"f": "Walking at the pace of the slowest and checking in often"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Leading a small group walk",
+"f": "Briefings, regroup points and a back marker"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Communication on the trail",
+"f": "Simple signals, whistles and agreeing on plans"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "The whistle signal",
+"f": "The common pattern of six blasts for help in many mountain areas"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "First aid knowledge in general terms",
+"f": "Why a recognised first-aid course is worth taking"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Common small trail injuries",
+"f": "Scrapes, blisters and minor sprains and general care ideas"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Emergency numbers abroad",
+"f": "Knowing local emergency numbers like 112 in Europe"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Introduction to multi-day hiking",
+"f": "What changes when you walk several days in a row"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Hut-to-hut trekking",
+"f": "Walking light between mountain huts with meals included"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Booking huts and hostels",
+"f": "Planning stages and reserving beds in busy seasons"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Packing for a hut trek",
+"f": "Sleeping liner, hut shoes, layers and light toiletries"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Hiking stages and rest days",
+"f": "Splitting a long route and planning a lazy day"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Introduction to wild camping",
+"f": "Local rules and choosing places where camping is allowed"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Choosing a campsite",
+"f": "Flat ground, shelter from wind and distance from water"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Hut culture around the world",
+"f": "Alpine huts, Nordic cabins and New Zealand backcountry huts compared"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Planning a two-day hike",
+"f": "A first overnight route with a night in a hut or guesthouse"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Getting enough sleep on trek",
+"f": "Earplugs, an eye mask and an early night for strong days"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Multi-day food planning",
+"f": "Breakfasts, lunches, snacks and dinners for several days"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: terrain and teamwork",
+"f": "Looking back at rough ground, groups and safety skills"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Tents in general terms",
+"f": "Freestanding, tunnel and trekking pole tents"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Sleeping bags and ratings",
+"f": "Comfort ratings, down vs synthetic and staying warm"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Sleeping mats",
+"f": "Foam, inflatable and insulation values"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Camp kitchen basics",
+"f": "Stoves, a pot, a spoon and simple warm meals"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Easy camp meals",
+"f": "Couscous, noodles, soups and treats that weigh little"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Keeping food safe from animals",
+"f": "Hanging bags, containers and local guidance"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Camp etiquette",
+"f": "Quiet evenings, small footprint and leaving the spot pristine"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Packing a backpack for multi-day",
+"f": "Weight distribution, compression and a tidy system"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Fitting a larger backpack",
+"f": "Torso length, hip belt and load lifters"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Base weight explained",
+"f": "Weight of gear without food and water and why it matters"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Lightening your load",
+"f": "Simple swaps that save weight without losing safety"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Rain on a multi-day hike",
+"f": "Dry bags, a dry set of clothes and morale"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Laundry and hygiene on trek",
+"f": "Simple routines that keep you fresh with little water"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Trail communities",
+"f": "Meeting hikers on long routes and sharing stories"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Hiking culture in Japan",
+"f": "Mountain huts, sacred peaks and a deep love of walking in nature"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Hiking culture in the Alps",
+"f": "Huts, marked trails, cable cars and alpine traditions"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Hiking culture in the UK",
+"f": "Rights of way, fells, moors and the love of rambling"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Hiking culture in Scandinavia",
+"f": "The right to roam and walking through wide open nature"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Hiking culture in South America",
+"f": "Andean trails, Patagonia and local guides"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Hiking culture in New Zealand",
+"f": "Great Walks, tramping and the hut network"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Hiking in North America",
+"f": "National parks, long trails and diverse landscapes"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Hiking in Africa",
+"f": "Table Mountain, the Drakensberg and Kilimanjaro routes"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Hiking in Asia",
+"f": "Himalayan teahouses, Southeast Asian jungles and volcano hikes"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Hiking in Brazil and Portugal",
+"f": "Chapada Diamantina, Rota Vicentina and coastal trails"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Hiking culture in the Mediterranean",
+"f": "Olive groves, coastal paths and village-to-village walks"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Hiking in Australia",
+"f": "Coastal walks, outback trails and early starts to beat the heat"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Hiking in Central Europe",
+"f": "Forests, castles, sandstone rocks and dense marked trail networks"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Trail greetings around the world",
+"f": "Hallo, hola, bonjour: how hikers say hello in different places"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Walking festivals",
+"f": "Organised walking weeks that celebrate trails, landscapes and local food"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: camping and world cultures",
+"f": "Looking back at camp skills and hiking around the world"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "National parks",
+"f": "Why parks exist and how to enjoy them responsibly"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Permits and regulations",
+"f": "Why some trails limit numbers and how permits work in general"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Crowded trails",
+"f": "Starting early, going midweek and choosing quieter alternatives"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Responsible trail photography",
+"f": "Staying on the path and respecting nature for the picture"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Volcano hikes",
+"f": "Craters, ash slopes and following local guidance"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Desert hiking",
+"f": "Heat, sun, water planning and beautiful empty spaces"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Canyon hikes",
+"f": "Going down first, climbing up later and watching for weather"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Jungle and rainforest trails",
+"f": "Humidity, mud, insects and amazing biodiversity"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Island hiking",
+"f": "Coastal paths, changing weather and ferry timing"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Urban hiking",
+"f": "Long walks through cities, hills and parks"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Heritage walking routes",
+"f": "Old trade and pilgrim routes that pass through villages and towns"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Hiking photography in depth",
+"f": "Golden hour, composition and telling a story"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Plants to know on the trail",
+"f": "Common irritating plants and why not to taste wild berries"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Geology on foot",
+"f": "Granite, limestone, volcanic rock and what shapes landscapes"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Glaciers seen from the trail",
+"f": "How glaciers shape valleys and why to admire them from a distance"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Waterfalls and gorges",
+"f": "Enjoying spray and viewpoints safely"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Fitness for longer treks",
+"f": "Back-to-back training days and carrying a loaded pack"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Strength for hikers",
+"f": "Squats, lunges, step-ups and core work in general terms"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Balance training for trails",
+"f": "Simple exercises for steadier steps"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Mental side of long hikes",
+"f": "Patience, small goals and enjoying the moment"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Dealing with bad weather mentally",
+"f": "Staying cheerful and flexible when plans change"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Trail running introduction",
+"f": "How running on trails differs from hiking"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Fastpacking introduction",
+"f": "Moving light and fast over several days"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Hiking and mindfulness",
+"f": "Walking slowly, noticing sounds and breathing deeply"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Trail volunteering",
+"f": "Helping maintain paths and caring for the places you love"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Coastal cliffs and sea stacks",
+"f": "Enjoying dramatic coasts while keeping well back from the edge"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Hiking for the senses",
+"f": "Smells, sounds and textures that make a walk memorable"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Snacks and meals at altitude",
+"f": "Why appetite changes high up and easy foods to enjoy"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Setting personal hiking goals",
+"f": "Distance, summits, skills or simply more time outdoors"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: landscapes and the hiker's mind",
+"f": "Looking back at environments, fitness and mindset"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Choosing a dream trek",
+"f": "Matching a long route to your time, fitness and interests"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Planning a long-distance hike",
+"f": "Stages, logistics, resupply and a realistic schedule"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Resupply strategies",
+"f": "Shops in villages, posted boxes and carrying extra days of food"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Budgeting a trek in general terms",
+"f": "Transport, sleeping, food and gear as planning categories"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Travel logistics to trailheads",
+"f": "Flights, trains, buses and getting home from the finish"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Training plan for a big trek",
+"f": "Building up distance and climbing over weeks"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Testing your gear on a shakedown hike",
+"f": "A short overnight to find what works"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "The Camino de Santiago",
+"f": "A historic network of routes leading to Santiago de Compostela in Spain"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Walking the Camino day to day",
+"f": "Albergues, yellow arrows, scallop shells and meeting fellow walkers"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Tour du Mont Blanc",
+"f": "A classic loop around Mont Blanc through France, Italy and Switzerland"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "The West Highland Way",
+"f": "A popular Scottish route from near Glasgow to Fort William"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "The Appalachian Trail",
+"f": "A famous long trail through the eastern USA from Georgia to Maine"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "The Pacific Crest Trail",
+"f": "A long route from Mexico to Canada through deserts and mountains"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "The Inca Trail",
+"f": "A historic path through the Andes to Machu Picchu in Peru"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Torres del Paine W Trek",
+"f": "A famous Patagonian route in Chile among granite towers"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "The Milford Track",
+"f": "One of New Zealand's Great Walks through fiordland scenery"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Kumano Kodo",
+"f": "Ancient pilgrimage paths through forested mountains of Japan"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "The Annapurna Circuit",
+"f": "A classic Nepal trek with villages, teahouses and a high pass"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Laugavegur Trail",
+"f": "Iceland's colourful route of hot springs, lava fields and glaciers"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Kungsleden",
+"f": "The King's Trail through Swedish Lapland and wide open fells"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "The Lycian Way",
+"f": "A coastal route in Turkey with ancient ruins and sea views"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "The GR20 in Corsica",
+"f": "A famously rugged mountain route across the island"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Cinque Terre paths",
+"f": "Coastal trails linking colourful villages in Italy"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "The Rota Vicentina",
+"f": "Cliff-top Fishermen's Trail on Portugal's southwest coast"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Hadrian's Wall Path",
+"f": "A walk across northern England following the old Roman frontier"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "The Great Wall on foot",
+"f": "Hiking restored and quieter sections of China's famous wall"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "The Overland Track",
+"f": "Tasmania's famous route through alpine plains and rainforest"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "The Drakensberg escarpment",
+"f": "Hiking South Africa's dramatic basalt walls and high plateaus"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Choosing between famous trails",
+"f": "Comparing difficulty, season, crowds and culture"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: legendary trails",
+"f": "Looking back at famous routes and choosing a favourite"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "High altitude trekking",
+"f": "Acclimatisation days and the idea of climbing high and sleeping low"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Teahouse trekking",
+"f": "How lodges along Himalayan routes work and local customs"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Kilimanjaro in general terms",
+"f": "Routes, zones of vegetation and why going slowly matters"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Winter hiking in depth",
+"f": "Short days, snow, ice and planning carefully"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Microspikes and crampons",
+"f": "Traction devices for icy trails and when each is used"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Snowshoeing introduction",
+"f": "Floating on snow and enjoying quiet winter landscapes"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Avalanche awareness in general terms",
+"f": "Why winter terrain needs training and local information"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Via ferrata introduction",
+"f": "Protected climbing routes with cables and ladders"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Via ferrata gear and grades",
+"f": "Harness, lanyard, helmet and route difficulty ratings"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Scrambling in depth",
+"f": "Grades, route finding and moving with three points of contact"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Helmets on rocky trails",
+"f": "When a helmet makes sense on scrambles and via ferratas"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Glacier travel awareness",
+"f": "Why glaciers need ropes, skills and guides"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Hiring a mountain guide",
+"f": "When professional guiding makes a trip safer and richer"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Advanced navigation practice",
+"f": "Micro-navigation, contour following and relocation"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Navigation without GPS",
+"f": "Trusting map, compass and terrain reading"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Planning for emergencies",
+"f": "Personal locator beacons, satellite messengers and clear plans"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Emergency shelter",
+"f": "Bivy bags, group shelters and staying warm while waiting"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Weather decisions in the mountains",
+"f": "Go, wait or turn back: making calm choices"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Hiking at dawn",
+"f": "Alpine starts, sunrise views and cooler air"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Ultralight philosophy",
+"f": "Carrying less, skills over gear and staying safe"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Ultralight gear choices",
+"f": "Light shelters, quilts and smart multi-use items"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Hammock camping",
+"f": "Hanging between trees and caring for bark"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Cooking without a stove",
+"f": "Cold soaking and no-cook trail meals"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Long trail mindset",
+"f": "Daily rhythms, patience and finding joy in routine"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Sleeping well at altitude",
+"f": "Why nights can feel restless high up and simple comfort tips"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Ice axe awareness",
+"f": "What an ice axe is for and why it needs proper training"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Winter clothing systems",
+"f": "Layering, insulated jackets and keeping dry from sweat"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Winter daylight and pacing",
+"f": "Planning short winter days with a generous time buffer"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Night hiking in depth",
+"f": "Full moon walks, red light and the calm of the dark trail"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: advanced skills",
+"f": "Looking back at winter, scrambling and ultralight skills"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Leading a group trek",
+"f": "Planning, briefing, pacing and caring for everyone"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Hiking with mixed abilities",
+"f": "Including everyone and adapting routes"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Teaching a friend to hike",
+"f": "Sharing skills with patience and fun"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Planning a hiking trip abroad",
+"f": "Seasons, culture, language and local customs"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Respecting local communities",
+"f": "Greetings, dress, photos and supporting local businesses"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Hiking and sustainability",
+"f": "Travelling lighter, local transport and caring for trails"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Erosion and trail care",
+"f": "Why switchbacks matter and cutting corners hurts trails"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Citizen science on the trail",
+"f": "Recording wildlife, flowers and trail conditions"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Seasonal planning for treks",
+"f": "Monsoons, snow seasons and best months for regions"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Multi-sport adventures",
+"f": "Combining hiking with kayaking, cycling or swimming"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Peak bagging",
+"f": "Collecting summits on lists and enjoying the challenge"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Famous mountain ranges",
+"f": "Alps, Andes, Himalayas, Rockies and their character"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Hiking history",
+"f": "From early mountaineers to modern trail networks"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Literature and art of walking",
+"f": "Famous writers and artists inspired by long walks"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Wild swimming after a hike",
+"f": "Cool lakes, calm entry and respecting cold water"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Hiking photography projects",
+"f": "Making a photo series of one trail through the seasons"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Writing about your hikes",
+"f": "Trip reports and stories that inspire others"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Creating your own route",
+"f": "Linking paths on a map into a new adventure"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Hiking with a theme",
+"f": "Waterfalls, castles, food villages or wildflower routes"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Thru-hiking life",
+"f": "Months on a trail, trail names and community"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Coming home after a big trek",
+"f": "Rest, reflection and planning the next adventure"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Trail first aid refresher",
+"f": "Checking your kit and why a course keeps skills fresh"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Fitness check before big trips",
+"f": "Testing yourself on a long training day before the trek"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Packing lists that evolve",
+"f": "Keeping a personal list and improving it after every trip"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Hiking with a camera kit",
+"f": "Lenses, protection and keeping photo gear light"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Mapping your hikes",
+"f": "Keeping a map of every trail you have walked"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Walking the Nakasendo",
+"f": "Japan's old road between Kyoto and Tokyo and its post towns"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Historic routes of Europe",
+"f": "Via Francigena, St Olav's Way and other centuries-old paths"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "The people who run huts",
+"f": "Hut keepers, their work and how hikers can support them"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: leadership and creativity",
+"f": "Looking back at leading, planning and creative hiking"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Your personal hiking style",
+"f": "Fast, slow, social, solo, scenic or summit focused"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Gear upgrades with purpose",
+"f": "Replacing gear thoughtfully and keeping old gear useful"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Long-term foot care",
+"f": "Keeping feet happy over many years of hiking"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Joint-friendly hiking",
+"f": "Poles, pace and descents that are kind to knees"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Staying motivated all year",
+"f": "Seasonal goals, clubs and small adventures"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Microadventures",
+"f": "Short local overnight trips that feel like big journeys"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "A hiking plan for every season",
+"f": "A year calendar of hikes matched to the seasons"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Hiking and language learning",
+"f": "Joining walks abroad to practise new languages"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Making friends on the trail",
+"f": "Conversation starters and sharing the path"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Hiking traditions worldwide",
+"f": "Festivals, pilgrimages and mountain celebrations"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Food culture on long trails",
+"f": "Regional dishes hikers look forward to"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Trail mentoring",
+"f": "Helping newer hikers grow in skill and confidence"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Everyday eating for active weekends",
+"f": "Simple general habits that support regular hiking"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Music or trail sounds",
+"f": "When a playlist helps and when birds and wind are better"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Hiking etiquette online",
+"f": "Sharing trail tips kindly and protecting fragile places"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Revisiting a favourite trail",
+"f": "Seeing how a familiar path and you have changed"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Trail challenges for fun",
+"f": "Sunrise hikes, all-day loops and friendly personal challenges"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Sunrise and sunset hikes",
+"f": "Timing, headlamps and enjoying the golden light"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Hiking in the shoulder seasons",
+"f": "Quieter trails in spring and autumn and changing conditions"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Rainy day skill sessions",
+"f": "Practising map skills and gear care at home"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "A notebook packing system",
+"f": "A simple paper checklist that never runs out of battery"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Exploring your own region",
+"f": "Finding hidden trails close to home"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "A weekend journey from home",
+"f": "Linking local paths into a two-day adventure"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Weekend hut adventure plan",
+"f": "A detailed plan for a two-night hut trip"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Your dream trek step by step",
+"f": "Turning your bucket list route into a concrete plan"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Hiking with older family members",
+"f": "Gentle routes, rest stops and sharing stories"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Accessible trails",
+"f": "Paths designed for wheelchairs and buggies and why they matter"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Seasonal trail picnics",
+"f": "Fruit and treats from each season packed for the trail"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Trail art and land art",
+"f": "Sculpture trails and creative art in nature to discover"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Moments of gratitude outdoors",
+"f": "Pausing on a summit to enjoy how far you have come"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your hiking story",
+"f": "Telling the story of your year on the trail"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Review: a year of skills",
+"f": "A light quiz-style recap of navigation, weather, gear and safety"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Planning your next year",
+"f": "Choosing three hiking goals for the coming year"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your bucket list trails",
+"f": "Dreaming big and making a realistic first step"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating your hiking year",
+"f": "Looking back at a year of trails, skills and stories"
+}
+]
+}

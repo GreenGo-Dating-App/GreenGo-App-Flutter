@@ -1,0 +1,2195 @@
+{
+"topic": "world_cultures",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to world cultures",
+"f": "What culture means: the shared habits, foods, stories and values that shape how people live"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Culture is everywhere",
+"f": "Spot culture in daily life: how you greet, eat, dress and spend your weekend"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "The iceberg of culture",
+"f": "Visible things like food and dress sit on top of hidden values like time and respect"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Your own culture first",
+"f": "Notice your own customs, since we often only see them when we meet someone different"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Curiosity over judgement",
+"f": "Why asking ‘why do they do that?’ beats deciding ‘that is strange’"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Saying hello around the world",
+"f": "Handshakes, bows, cheek kisses and nods: the many ways people greet each other"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "The Japanese bow",
+"f": "How bowing shows respect in Japan and how the depth of a bow carries meaning"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Cheek kisses in Europe and Latin America",
+"f": "How many kisses, which side first, and where a handshake is the safer choice"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "The Thai wai",
+"f": "Palms pressed together with a slight bow: Thailand's graceful greeting"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Names and how we use them",
+"f": "Family name first or last, nicknames and titles in different cultures"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Spanish and Portuguese surnames",
+"f": "Why many people in Spain, Portugal and Latin America carry two surnames"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Icelandic patronymics",
+"f": "How Icelanders build surnames from a parent's first name"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Breakfast around the world",
+"f": "From Japanese rice and miso to English fry-ups and Brazilian pão de queijo"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Lunch as the main meal",
+"f": "Cultures where lunch is long, warm and shared, like Spain and Mexico"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Dinner times compared",
+"f": "Why dinner might be early evening in Norway and after nine in Spain"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Hands, chopsticks or cutlery",
+"f": "Three great eating traditions and where each one is used"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Bread around the world",
+"f": "Baguette, naan, tortilla, injera and pita: bread as a cultural symbol"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Rice cultures",
+"f": "How rice shapes meals, language and farming across Asia"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Tea traditions",
+"f": "British afternoon tea, Moroccan mint tea, Chinese gongfu tea and Russian samovars"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Coffee cultures",
+"f": "Italian espresso, Turkish coffee, the Ethiopian coffee ceremony and Brazilian cafezinho"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Street food stories",
+"f": "Why street food tells you so much about a city's daily life"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Family structures",
+"f": "Nuclear families, extended families and multigenerational homes"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "The role of grandparents",
+"f": "How grandparents raise, teach and are honoured in different societies"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Homes around the world",
+"f": "From Japanese tatami rooms to Mongolian gers and Scandinavian cabins"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Shoes off at the door",
+"f": "Where and why people remove their shoes before entering a home"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Traditional clothing",
+"f": "Kimono, sari, kilt, dirndl and more: what traditional dress expresses"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Colours and their meanings",
+"f": "Why white, red or yellow can mean very different things across cultures"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Lucky and unlucky numbers",
+"f": "Why 4 is avoided in parts of East Asia while 7 or 8 bring luck elsewhere"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Gestures that change meaning",
+"f": "Thumbs up, the OK sign and beckoning: gestures that travel badly"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: first steps in culture",
+"f": "Look back at greetings, names, food and home life from the first month"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Festivals of light",
+"f": "Diwali, Hanukkah, Loy Krathong and other celebrations that shine with light"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "New Year around the world",
+"f": "Lunar New Year, Nowruz, Hogmanay and other ways to welcome a new year"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Lunar New Year customs",
+"f": "Red envelopes, family reunions, dumplings and spring cleaning"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Nowruz, the Persian New Year",
+"f": "A spring festival with the haft-sin table, celebrated across many countries"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Carnival traditions",
+"f": "Rio, Venice, Notting Hill and Cologne: music, masks and parades"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Harvest festivals",
+"f": "Thanksgiving, Chuseok and other celebrations of the harvest and gratitude"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Holi, the festival of colours",
+"f": "How India and Nepal welcome spring with coloured powder and music"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Midsummer in the Nordic countries",
+"f": "Maypoles, flower crowns and the brightest night of the year"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Music as identity",
+"f": "How rhythms like samba, flamenco and reggae carry a nation's story"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Traditional instruments",
+"f": "Sitar, djembe, bagpipes, koto and charango: the sounds of cultures"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Dance traditions",
+"f": "Tango, Bollywood dance, flamenco and folk dances and their roots"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "The Māori haka",
+"f": "What the haka means in New Zealand and when it is performed"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Storytelling and folk tales",
+"f": "Anansi, Baba Yaga and other folk heroes and what they teach"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Proverbs as windows",
+"f": "What popular sayings reveal about a culture's values"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Games people play",
+"f": "Mahjong, cricket, sepak takraw and other popular pastimes"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Football as a global culture",
+"f": "How the world's most popular sport shapes rituals and friendships"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Markets and bazaars",
+"f": "Souks, floating markets and farmers' markets as social hubs"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Haggling cultures",
+"f": "Where bargaining is expected and how to do it with a smile"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Weekends and rest days",
+"f": "Why the weekend falls on different days in different countries"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "The siesta and midday rest",
+"f": "Where the afternoon break exists and how it is changing"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Personal space",
+"f": "How close people stand when talking in different cultures"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Eye contact",
+"f": "When direct eye contact shows honesty and when it feels too strong"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Smiling across cultures",
+"f": "Why smiles signal friendliness in some places and politeness in others"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Punctuality basics",
+"f": "Clock time versus event time: when ‘on time’ really means on time"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Gift giving basics",
+"f": "What makes a good gift and what to avoid in different cultures"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Hospitality traditions",
+"f": "How hosts welcome guests, from Bedouin coffee to the Georgian supra"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Bathing cultures",
+"f": "Japanese onsen, Finnish sauna, Turkish hammam and Korean jjimjilbang"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "The Finnish sauna",
+"f": "Why the sauna is a cornerstone of Finnish life and friendship"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Pets and animals in daily life",
+"f": "How attitudes to pets and animals differ around the world"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: celebrations and daily life",
+"f": "Revisit festivals, music, markets and everyday customs"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "A tour of East Asia",
+"f": "China, Japan, Korea and Mongolia: shared roots and distinct identities"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Everyday life in Japan",
+"f": "Trains on time, convenience stores, seasonal foods and quiet courtesy"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Everyday life in South Korea",
+"f": "Fast internet, hearty side dishes, respect for elders and K-culture"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Everyday life in China",
+"f": "Regional cuisines, family meals, parks full of dancers and tea houses"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "A tour of Southeast Asia",
+"f": "Thailand, Vietnam, Indonesia, the Philippines and their vibrant cultures"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Everyday life in Vietnam",
+"f": "Scooters, pho for breakfast and coffee with condensed milk"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Everyday life in the Philippines",
+"f": "Fiestas, karaoke, close families and a rich mix of influences"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Indonesia's many islands",
+"f": "More than 17,000 islands with hundreds of languages and traditions"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "A tour of South Asia",
+"f": "India, Pakistan, Bangladesh, Sri Lanka and Nepal: diversity in one region"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Everyday life in India",
+"f": "Chai stalls, regional languages, cricket and colourful festivals"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "India's regional foods",
+"f": "From dosa in the south to rich, creamy dishes in the north"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "A tour of the Middle East",
+"f": "Hospitality, coffee, family and ancient cities across the region"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Everyday life in Turkey",
+"f": "Tea everywhere, breakfast feasts and a bridge between two continents"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "A tour of North Africa",
+"f": "Morocco, Egypt, Tunisia and Algeria: markets, mint tea and couscous"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "A tour of West Africa",
+"f": "Ghana, Nigeria and Senegal: music, textiles and lively markets"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Kente and African textiles",
+"f": "What the patterns of kente, mud cloth and wax prints express"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "A tour of East Africa",
+"f": "Kenya, Tanzania and Ethiopia: Swahili culture, coffee and running"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Ethiopia's unique traditions",
+"f": "Its own calendar, injera and the famous coffee ceremony"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "A tour of Southern Africa",
+"f": "South Africa, Botswana and Namibia: many languages and the idea of ubuntu"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Ubuntu: I am because we are",
+"f": "The Southern African philosophy of shared humanity and community"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "A tour of Western Europe",
+"f": "France, Germany, Benelux, the UK and Ireland: neighbours with different habits"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Everyday life in France",
+"f": "Bakeries, long lunches, lively debate at the table and the art of living"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Everyday life in Germany",
+"f": "Order, recycling, quiet Sundays and a love of nature"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Everyday life in the UK",
+"f": "Queues, tea, pubs and a famously dry sense of humour"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "A tour of Southern Europe",
+"f": "Italy, Spain, Portugal and Greece: sun, family and food culture"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Everyday life in Italy",
+"f": "Espresso at the bar, regional pride and the evening passeggiata"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Everyday life in Spain",
+"f": "Late dinners, tapas, fiestas and life in the plaza"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Everyday life in Portugal",
+"f": "Saudade, fado, pastries and a relaxed coastal rhythm"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Everyday life in Greece",
+"f": "Philoxenia, long meals, name days and island life"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: Asia, Africa and Europe",
+"f": "Recap the first half of our world tour with a light quiz"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "A tour of Northern Europe",
+"f": "The Nordic countries and the Baltics: nature, design and equality"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Hygge, lagom and sisu",
+"f": "Danish coziness, Swedish balance and Finnish grit"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "A tour of Eastern Europe",
+"f": "Poland, Czechia, Romania and Ukraine and their rich folk traditions"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Everyday life in Poland",
+"f": "Pierogi, name days, strong family ties and lively cities"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "A tour of North America",
+"f": "The USA, Canada and Mexico: one continent, distinct cultures"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Everyday life in the USA",
+"f": "Big spaces, friendliness with strangers, road trips and diversity"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Everyday life in Canada",
+"f": "Politeness, two official languages, hockey and multicultural cities"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Everyday life in Mexico",
+"f": "Markets, family gatherings, tacos and bright celebrations"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Central America and the Caribbean",
+"f": "Rhythms, flavours and island cultures from Guatemala to Jamaica"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "A tour of South America",
+"f": "Andes, Amazon and coast: a continent of contrasts"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Everyday life in Brazil",
+"f": "Warmth, beaches, football, samba and churrasco"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Everyday life in Argentina",
+"f": "Mate, asado, tango and late nights out with friends"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Andean cultures",
+"f": "Quechua and Aymara traditions, textiles and life at high altitude"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Everyday life in Colombia",
+"f": "Coffee country, vallenato, arepas and warm hospitality"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "A tour of Oceania",
+"f": "Australia, New Zealand and the Pacific Islands"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Everyday life in Australia",
+"f": "Outdoor living, barbecues, beaches and laid-back friendliness"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Pacific Island cultures",
+"f": "Samoa, Fiji and Tonga: community, ocean and the art of navigation"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Indigenous cultures worldwide",
+"f": "The diversity and living traditions of Indigenous peoples"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Aboriginal Australian cultures",
+"f": "One of the world's oldest continuous cultures and its Dreaming stories"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Arctic cultures",
+"f": "Inuit and Sámi life: adaptation to the cold, reindeer and the northern lights"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Island and mountain cultures",
+"f": "How geography shapes customs in remote places"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "City life versus village life",
+"f": "How customs differ between big cities and rural communities"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Languages and cultures",
+"f": "How the language people speak shapes what they notice"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Untranslatable words",
+"f": "Words like hygge, saudade and ikigai that capture a culture"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Writing systems of the world",
+"f": "Alphabets, syllabaries and characters and how they work"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "School life around the world",
+"f": "School days, uniforms, lunches and holidays compared"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Childhood traditions",
+"f": "Coming-of-age days, first school day customs and children's festivals"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Birthdays around the world",
+"f": "Noodles for long life, pulled ears and other birthday customs"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Kindness customs",
+"f": "Small daily kindnesses that different cultures value"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: the world tour so far",
+"f": "A light quiz on regions, daily life and traditions"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Culture beneath the surface",
+"f": "Moving from visible customs to the values that drive them"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Individualism and collectivism",
+"f": "‘I’ cultures versus ‘we’ cultures and how they shape everyday choices"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Harmony in collectivist cultures",
+"f": "Why keeping group harmony can matter more than being right"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Direct and indirect communication",
+"f": "Saying exactly what you mean versus reading between the lines"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "High-context and low-context cultures",
+"f": "Edward T. Hall's idea of meaning carried by words versus by context"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "The art of saying no politely",
+"f": "How different cultures decline without giving offence"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Silence in conversation",
+"f": "When silence feels comfortable, thoughtful or awkward"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Humour across cultures",
+"f": "Irony, wordplay and slapstick: what makes people laugh and where"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Hierarchy and equality",
+"f": "How respect for rank shows up at home, at school and at work"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Respect for elders",
+"f": "Forms of address, seating and serving that honour age"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Linear and flexible time",
+"f": "Schedules and deadlines versus relationships and flow"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Planning for the future",
+"f": "Long-term and short-term thinking in different cultures"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Face and reputation",
+"f": "The idea of face in East Asia and beyond"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Pride, modesty and good behaviour",
+"f": "How cultures encourage good behaviour in different ways"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Task-based or relationship trust",
+"f": "Whether trust comes from results or from time spent together"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Small talk around the world",
+"f": "Safe topics, sensitive topics and how long small talk lasts"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Compliments and modesty",
+"f": "Accepting praise gracefully in modest and expressive cultures"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Emotions in public",
+"f": "Where people show feelings openly and where they stay reserved"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Uncertainty and rules",
+"f": "Comfort with ambiguity versus a love of clear rules"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Optimism and realism",
+"f": "How cultures talk about hopes, plans and the future"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Friendship across cultures",
+"f": "Quick friendliness versus slow, deep friendships"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Making friends in a new country",
+"f": "How friendships form in different places and how to start one"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Hosting a meal at home",
+"f": "Who cooks, who serves and how guests are expected to behave"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Sharing food",
+"f": "Shared dishes, family style and individual plates"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "The Georgian supra",
+"f": "A feast led by a toastmaster, full of toasts, food and song"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Toasting traditions",
+"f": "Cheers, salud, kanpai and the rituals of raising a glass"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Japanese food culture",
+"f": "Washoku, seasonality and the beauty of a simple meal"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Korean food culture",
+"f": "Banchan, kimchi-making and the joy of eating together"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Mexican food culture",
+"f": "Corn, chilli and a traditional cuisine recognised by UNESCO"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: values and communication",
+"f": "Revisit context, time, hierarchy and food culture"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Mediterranean food culture",
+"f": "Olive oil, bread, vegetables and long shared meals"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Middle Eastern mezze",
+"f": "Small plates, sharing and generous hosts"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "West African food culture",
+"f": "Jollof rice, fufu and the joy of shared bowls"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Food and the seasons",
+"f": "How seasonal eating shapes menus around the world"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Vegetarian traditions",
+"f": "Cultures with long histories of plant-based eating"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Spices and the spice routes",
+"f": "How spices travelled the world and shaped cuisines"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Fermented foods",
+"f": "Kimchi, sauerkraut, miso and yoghurt across cultures"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Sweets and desserts",
+"f": "Baklava, mochi, brigadeiro and pastéis de nata"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Café culture",
+"f": "Vienna coffee houses, Parisian terraces and Turkish tea gardens"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Food markets as heritage",
+"f": "Famous markets and the communities that keep them alive"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Architecture as culture",
+"f": "What buildings tell us about climate, beliefs and history"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Courtyard houses",
+"f": "From Chinese siheyuan to Moroccan riads and Andalusian patios"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Gardens around the world",
+"f": "Japanese zen gardens, Persian gardens and English cottage gardens"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Public squares",
+"f": "The plaza, the piazza and the town square as stages of social life"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Craft traditions",
+"f": "Pottery, weaving, woodcarving and the people who make them"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Japanese crafts and wabi-sabi",
+"f": "Finding beauty in imperfection and simplicity"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Mexican folk art",
+"f": "Alebrijes, talavera pottery and colourful papel picado"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Persian carpets",
+"f": "Patterns, regions and the patience behind each rug"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Calligraphy traditions",
+"f": "Chinese, Arabic and Western calligraphy as an art form"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Masks around the world",
+"f": "Venetian, African, Noh and carnival masks and their purposes"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Visual arts and identity",
+"f": "How painting styles reflect a culture's way of seeing"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Cinema around the world",
+"f": "Bollywood, Nollywood, Korean and French cinema"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Bollywood and Indian cinema",
+"f": "Song, dance and family stories on the big screen"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Nollywood",
+"f": "Nigeria's booming film industry and its storytelling style"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Popular music worldwide",
+"f": "K-pop, Afrobeats, reggaeton and bossa nova going global"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Fado and saudade",
+"f": "Portugal's soulful song and the feeling it expresses"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Flamenco",
+"f": "Andalusian song, guitar and dance with deep roots"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Samba and Brazilian music",
+"f": "From samba schools to bossa nova and forró"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Reggae and Caribbean sounds",
+"f": "Jamaica's music and its worldwide influence"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: arts, crafts and music",
+"f": "A recap of creative traditions around the world"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Sports and national identity",
+"f": "Cricket, baseball, sumo and how sport brings people together"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Sumo",
+"f": "Japan's traditional wrestling and its ancient rituals"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Cricket cultures",
+"f": "Why cricket is beloved in India, England, Australia and the Caribbean"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Martial arts traditions",
+"f": "Karate, taekwondo, kung fu and the philosophies behind them"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Capoeira",
+"f": "Brazil's blend of dance, music and martial art"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Outdoor culture",
+"f": "Hiking, camping and the Nordic right to roam"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Beach cultures",
+"f": "How Brazilians, Australians and Mediterraneans enjoy the shore"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Winter cultures",
+"f": "Skiing, ice festivals and cozy traditions in cold countries"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Gardening and farming traditions",
+"f": "Allotments, rice terraces and community gardens"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Work cultures compared",
+"f": "Hours, breaks, hierarchy and work-life balance"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Meetings across cultures",
+"f": "Decisions by consensus, by the boss or by vote"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Work-life balance",
+"f": "Long holidays, short holidays and the meaning of rest"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Japanese work culture",
+"f": "Teamwork, consensus and the art of the business card"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "German and Nordic work culture",
+"f": "Clear schedules, flat hierarchies and switching off after work"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "American work culture",
+"f": "Optimism, initiative and fast decisions"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Business in Latin America",
+"f": "Relationships first, warmth and flexible timing"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Business in the Gulf",
+"f": "Hospitality, patience and relationship building"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Business in China",
+"f": "Guanxi, banquets and long-term relationships"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Negotiation styles",
+"f": "Fast and direct versus slow and relational"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Feedback across cultures",
+"f": "Direct critique, softened feedback and subtle hints"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Education values",
+"f": "Memorising, discussion and the role of teachers"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Exams and school pressure",
+"f": "The gaokao, the Abitur and how cultures view exams"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "University life around the world",
+"f": "Campus traditions, living at home and student life"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Coming-of-age ceremonies",
+"f": "Japan's Coming of Age Day and other milestones of growing up"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "The quinceañera",
+"f": "A fifteenth-birthday celebration in Latin America"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Henna traditions",
+"f": "Mehndi art for festivals and celebrations in South Asia, the Middle East and North Africa"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Naming ceremonies",
+"f": "How babies receive their names in different cultures"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Family celebrations",
+"f": "Reunions, anniversaries and big family gatherings"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Name days",
+"f": "Celebrating the day of your name in Greece, Poland and beyond"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: life stages and work",
+"f": "Recap sport, work, education and family milestones"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Migration and culture",
+"f": "How people moving across the world carry and share culture"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Diasporas",
+"f": "Indian, Chinese, Lebanese, Irish and other communities worldwide"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Chinatowns and Little Italys",
+"f": "Neighbourhoods that keep culture alive far from home"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Fusion food",
+"f": "Tex-Mex, Peruvian Nikkei and other delicious blends"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Peru's fusion cuisine",
+"f": "How Japanese, Chinese and Andean influences meet in Peru"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Creole cultures",
+"f": "Louisiana, the Caribbean and Cape Verde: cultures born from mixing"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Third culture kids",
+"f": "Growing up between cultures and belonging to many places"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Culture shock",
+"f": "The honeymoon, frustration, adjustment and adaptation stages"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Reverse culture shock",
+"f": "Why returning home after a long time abroad can feel strange"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Adapting without losing yourself",
+"f": "Balancing new habits with your own identity"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Bilingual families",
+"f": "How families pass on languages and traditions"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Global cities",
+"f": "London, Toronto, Singapore, São Paulo: many cultures in one place"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Singapore's multicultural life",
+"f": "Chinese, Malay, Indian and Eurasian cultures side by side"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Switzerland's four languages",
+"f": "How one country lives happily with four national languages"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Canada's multiculturalism",
+"f": "A mosaic approach to diversity"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Brazil's cultural mix",
+"f": "Indigenous, African, European and Asian roots in one nation"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "South Africa's many cultures",
+"f": "Many official languages and a rainbow of traditions"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "India's unity in diversity",
+"f": "Hundreds of languages and countless traditions"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Cultural stereotypes",
+"f": "Why stereotypes are tempting and how to look beyond them"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Generalisations versus stereotypes",
+"f": "Useful patterns versus fixed labels about people"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Regional cultures within countries",
+"f": "North and south Italy, Bavaria and Berlin, and more"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Dialects and regional identity",
+"f": "How accents and dialects carry local pride"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Urban subcultures",
+"f": "Street art, skateboarding and music scenes worldwide"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Youth culture around the world",
+"f": "How young people blend global trends with local roots"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Fashion and culture",
+"f": "Street style in Tokyo, Lagos, Paris and Seoul"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Technology and daily life",
+"f": "Super apps, cash or cards and how tech habits differ"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Social media cultures",
+"f": "Different platforms, styles and habits by country"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Gaming cultures",
+"f": "Esports in Korea, mobile gaming and gaming cafés"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Cultural attitudes to money",
+"f": "Saving, spending, sharing and talking about money"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: identity and mixing",
+"f": "Recap migration, diversity and modern culture"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Hobbies around the world",
+"f": "Popular pastimes from origami to crochet and birdwatching"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Reading cultures",
+"f": "Book fairs, libraries and reading habits worldwide"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Iceland's Christmas book flood",
+"f": "The Jólabókaflóð tradition of giving books and reading together"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "The Japanese tea ceremony",
+"f": "Chanoyu: hospitality, mindfulness and ritual"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Chinese tea houses",
+"f": "Teahouse culture, dim sum and conversation"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Moroccan hospitality",
+"f": "Mint tea, tagines and welcoming guests"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Brazilian warmth",
+"f": "Hugs, nicknames and the art of making people feel welcome"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Nordic quiet",
+"f": "Why calm and personal space feel like respect in the north"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Mediterranean openness",
+"f": "Lively conversation, gestures and life outdoors"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Comparing two cultures",
+"f": "A practice session comparing your culture with another one"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Thinking like an intercultural expert",
+"f": "The skills behind real intercultural competence"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Hofstede's cultural dimensions",
+"f": "A famous model comparing cultures on six dimensions"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Power distance",
+"f": "How societies handle differences in status and authority"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Achievement and care",
+"f": "Hofstede's dimension on competition versus quality of life"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Indulgence and restraint",
+"f": "How freely cultures enjoy life and leisure"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Trompenaars' dilemmas",
+"f": "Universal rules versus special relationships and other choices"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "The Lewis model",
+"f": "Linear-active, multi-active and reactive communication styles"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Erin Meyer's culture map",
+"f": "Eight scales for working across cultures"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Limits of cultural models",
+"f": "Why individuals never fit neatly into national averages"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Cultural intelligence",
+"f": "The four parts of CQ: drive, knowledge, strategy and action"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Mindful observation",
+"f": "Describe, interpret, evaluate: a method to avoid quick judgements"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Asking good cultural questions",
+"f": "Respectful ways to learn about someone's culture"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Active listening across cultures",
+"f": "Hearing what is meant, not just what is said"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Empathy and perspective taking",
+"f": "Seeing a situation through another culture's eyes"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Handling misunderstandings",
+"f": "Turning an awkward cross-cultural moment into a real connection"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Code-switching",
+"f": "How people shift language and behaviour between settings"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Language and politeness",
+"f": "Formal and informal you: tu, vous, Sie and keigo"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Japanese keigo",
+"f": "The levels of respectful language in Japanese"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Korean speech levels",
+"f": "How Korean grammar reflects respect and closeness"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: models and skills",
+"f": "Recap cultural dimensions and intercultural skills"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Culture and the senses",
+"f": "How cultures differ in the tastes, smells and sounds they prefer"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Colour language",
+"f": "How languages name and divide colours differently"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Calendars of the world",
+"f": "Lunar, solar and lunisolar calendars still used today"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Counting and numbers",
+"f": "Finger counting, number words and lucky digits"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Space and direction",
+"f": "Languages that use north and south instead of left and right"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Metaphors we live by",
+"f": "How everyday metaphors reveal cultural thinking"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Body language deep dive",
+"f": "Head nods, shrugs and how yes and no can look different"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "The Indian head wobble",
+"f": "A versatile gesture with several friendly meanings"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Touch cultures",
+"f": "Contact cultures versus non-contact cultures"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Voice and volume",
+"f": "Loudness, tone and pauses as cultural signals"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Cultural heritage",
+"f": "What heritage is and why communities protect it"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "UNESCO World Heritage",
+"f": "How sites are chosen and what the list protects"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Intangible heritage",
+"f": "Songs, crafts and rituals recognised as living heritage"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Endangered languages",
+"f": "Why languages fade and how communities keep them alive"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Language revival stories",
+"f": "Welsh, Hebrew, Māori and Hawaiian revival efforts"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Museums and culture",
+"f": "How museums tell stories and whose stories they tell"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Oral traditions",
+"f": "Epics, songs and knowledge passed on by voice"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "West African griots",
+"f": "Storytellers, historians and musicians of the Sahel"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Epic stories of the world",
+"f": "Gilgamesh, the Mahabharata, Sundiata and the Odyssey"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Myths and legends",
+"f": "Common themes in myths across continents"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Food as heritage",
+"f": "French gastronomy, washoku and other cuisines on UNESCO lists"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Ancient civilisations' legacy",
+"f": "What Egypt, Mesopotamia, the Indus Valley and China left us"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "The Silk Road",
+"f": "Trade routes that carried goods, ideas and inventions"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Ancient Greece and Rome today",
+"f": "Words, theatre, architecture and ideas we still use"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "The Maya, Aztec and Inca",
+"f": "Achievements of great civilisations of the Americas"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Great African kingdoms",
+"f": "Mali, Great Zimbabwe, Aksum and Benin and their legacies"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Islamic Golden Age science",
+"f": "Contributions to mathematics, astronomy and medicine"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "The Age of Exploration",
+"f": "How long sea voyages connected continents and exchanged foods"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "The Columbian exchange",
+"f": "How tomatoes, potatoes, chocolate and maize travelled the world"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: heritage and history",
+"f": "Recap heritage, oral traditions and historical exchange"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Globalisation and culture",
+"f": "How global trade and media spread and blend cultures"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Glocalisation",
+"f": "How global brands adapt their products to local tastes"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Cultural soft power",
+"f": "How music, film and food make countries admired"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "The Korean Wave",
+"f": "How K-pop, dramas and Korean food became global favourites"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Japan's pop culture",
+"f": "Anime, manga and gaming as cultural exports"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Appreciation, not appropriation",
+"f": "Enjoying other cultures with respect and credit"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Respectful travel",
+"f": "Being a good guest: learning, listening and leaving a good impression"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Responsible tourism",
+"f": "Supporting local communities and their traditions"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Volunteering and exchange programmes",
+"f": "Learning a culture by living it"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Living abroad successfully",
+"f": "Practical habits for settling into a new culture"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Working in multicultural teams",
+"f": "Building trust across cultural differences"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Leading across cultures",
+"f": "Adapting leadership style for diverse teams"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Virtual teams across time zones",
+"f": "Communication habits for global remote work"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Decision making across cultures",
+"f": "Top-down, consensus and the Japanese ringi system"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Conflict styles",
+"f": "Avoiding, confronting and mediating across cultures"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Mediation traditions",
+"f": "Community elders, talking circles and shared problem solving"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Persuasion across cultures",
+"f": "Principles first or examples first"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Presenting to international audiences",
+"f": "Structure, humour and visuals that travel well"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Writing emails across cultures",
+"f": "Formality, greetings and directness in writing"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Translating culture, not just words",
+"f": "Why good translation adapts meaning and tone"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Cultural nuances in marketing",
+"f": "Famous brand slip-ups and what they teach us"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Product design for different cultures",
+"f": "Colours, icons and layouts for global users"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Hospitality for international guests",
+"f": "Making visitors from anywhere feel at home"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Hosting an international dinner",
+"f": "Planning menus and seating that respect all guests"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Dietary customs",
+"f": "Halal, kosher, vegetarian and other food practices, respectfully"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Festivals as bridges",
+"f": "How shared celebrations connect neighbours"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Cultural calendars at work",
+"f": "Planning around holidays from many cultures"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Inclusive language",
+"f": "Words that welcome people of all backgrounds"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Raising globally minded children",
+"f": "Books, food and friends that open young minds"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: culture in action",
+"f": "Recap teams, travel, hosting and inclusion"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Happiness across cultures",
+"f": "How different cultures define a good life"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Ikigai and purpose",
+"f": "The Japanese idea of a reason for being"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Philosophies of togetherness",
+"f": "Ubuntu, hygge and other ideas of belonging compared"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Wellbeing traditions",
+"f": "Forest bathing, yoga, tai chi and the sauna"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Hospitality philosophies",
+"f": "Omotenashi, philoxenia and Arab hospitality"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Community spirit",
+"f": "Mutual help traditions that keep neighbourhoods strong"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Gotong royong",
+"f": "Indonesia's tradition of working together for the community"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Minga in the Andes",
+"f": "Community work days that build roads and friendships"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Generosity customs",
+"f": "Sharing, potlucks and pay-it-forward traditions"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Gratitude across cultures",
+"f": "How people say and show thanks"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Elders as knowledge keepers",
+"f": "Learning from elders' stories and skills"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Nature and culture",
+"f": "How landscapes shape values and celebrations"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Seasons in culture",
+"f": "Cherry blossoms, autumn leaves and seasonal rituals"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Hanami",
+"f": "Japan's cherry blossom viewing and what it means"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "The sea in culture",
+"f": "Fishing villages, sea songs and ocean festivals"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Desert cultures",
+"f": "Nomadic life, tents and hospitality in the desert"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Mountain cultures",
+"f": "Sherpa, Andean and Alpine communities"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "River cultures",
+"f": "The Nile, Ganges, Mekong and Amazon as lifelines"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Cities of the future",
+"f": "How cultures imagine and build tomorrow's cities"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Culture and creativity",
+"f": "How mixing cultures sparks new ideas"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Your cultural identity map",
+"f": "Mapping the cultures that shaped who you are"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Telling your culture's story",
+"f": "Explaining your customs to a curious friend"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Discussing differences gracefully",
+"f": "Talking about cultural differences with respect"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Learning from mistakes",
+"f": "Everyday cultural blunders and the lessons they teach"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Building cross-cultural friendships",
+"f": "Keeping friendships strong across distance and difference"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Cultural mentoring",
+"f": "Helping newcomers feel at home"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "A culture you want to explore",
+"f": "Planning a deep dive into one culture"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Creating a cultural exchange",
+"f": "Swap recipes, songs and stories with a friend"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Cultural events in your city",
+"f": "Finding festivals and communities near you"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Writing a cultural profile",
+"f": "Describe a culture in depth while avoiding stereotypes"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "The big picture",
+"f": "What all cultures share: family, food, stories and hope"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Culture in a changing world",
+"f": "How traditions adapt and stay alive"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Your intercultural toolkit",
+"f": "The habits and questions you take forward"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Celebrating your journey",
+"f": "Looking back at a year of discovery"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Final review: a citizen of the world",
+"f": "A joyful recap of 365 days exploring the world's cultures"
+}
+]
+}

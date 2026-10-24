@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 141,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Technology vocabulary",
+     "g": "Use everyday tech words in Italian.",
+     "p": [
+      "Many words are English: il computer, il mouse, il Wi-Fi, la password, il file. They are usually masculine.",
+      "Italian verbs: scaricare (download), caricare (upload, also charge), salvare, cancellare, accendere, spegnere.",
+      "Useful phrases: il telefono è scarico (battery dead), devo caricare il telefono, non c'è campo (no signal)."
+     ],
+     "q": "What tech device could you not live without? Tell me what you do with it every day.",
+     "c": "Write four sentences about your phone routine with scaricare, caricare, accendere and spegnere."
+    },
+    "de": {
+     "t": "Technikwortschatz",
+     "g": "Du benutzt alltägliche Technikwörter auf Italienisch.",
+     "p": [
+      "Viele Wörter sind englisch: il computer, il mouse, il Wi-Fi, la password, il file. Meist sind sie maskulin.",
+      "Italienische Verben: scaricare (herunterladen), caricare (hochladen, auch aufladen), salvare, cancellare, accendere, spegnere.",
+      "Nützlich: il telefono è scarico (Akku leer), devo caricare il telefono, non c'è campo (kein Empfang)."
+     ],
+     "q": "Auf welches Gerät könntest du nicht verzichten? Erzähl, was du jeden Tag damit machst.",
+     "c": "Schreib vier Sätze über deine Handyroutine mit scaricare, caricare, accendere und spegnere."
+    },
+    "es": {
+     "t": "Vocabulario de tecnología",
+     "g": "Usar palabras tecnológicas cotidianas en italiano.",
+     "p": [
+      "Muchas palabras son inglesas: il computer, il mouse, il Wi-Fi, la password, il file. Suelen ser masculinas.",
+      "Verbos italianos: scaricare (descargar), caricare (subir, también cargar), salvare, cancellare, accendere, spegnere.",
+      "Frases útiles: il telefono è scarico (sin batería), devo caricare il telefono, non c'è campo (no hay cobertura)."
+     ],
+     "q": "¿Sin qué aparato no podrías vivir? Cuéntame qué haces con él cada día.",
+     "c": "Escribe cuatro frases sobre tu rutina con el móvil con scaricare, caricare, accendere y spegnere."
+    },
+    "fr": {
+     "t": "Vocabulaire de la technologie",
+     "g": "Utiliser les mots tech du quotidien en italien.",
+     "p": [
+      "Beaucoup de mots sont anglais : il computer, il mouse, il Wi-Fi, la password, il file. Ils sont souvent masculins.",
+      "Verbes italiens : scaricare (télécharger), caricare (mettre en ligne, aussi charger), salvare, cancellare, accendere, spegnere.",
+      "Phrases utiles : il telefono è scarico (plus de batterie), devo caricare il telefono, non c'è campo (pas de réseau)."
+     ],
+     "q": "Sans quel appareil ne pourrais-tu pas vivre ? Raconte ce que tu en fais chaque jour.",
+     "c": "Écris quatre phrases sur ta routine téléphone avec scaricare, caricare, accendere et spegnere."
+    },
+    "it": {
+     "t": "Il lessico della tecnologia",
+     "g": "Usare le parole tecnologiche di tutti i giorni.",
+     "p": [
+      "Molte parole sono inglesi: il computer, il mouse, il Wi-Fi, la password, il file. Di solito sono maschili.",
+      "Verbi italiani: scaricare un'app, caricare una foto o la batteria, salvare, cancellare, accendere, spegnere.",
+      "Frasi utili: il telefono è scarico, devo caricare il telefono, non c'è campo, si è bloccato il computer."
+     ],
+     "q": "Senza quale dispositivo non potresti vivere? Raccontami che cosa ci fai ogni giorno.",
+     "c": "Scrivi quattro frasi sulla tua routine con il telefono usando scaricare, caricare, accendere e spegnere."
+    },
+    "pt": {
+     "t": "Vocabulário de tecnologia",
+     "g": "Usar palavras de tecnologia do dia a dia em italiano.",
+     "p": [
+      "Muitas palavras são inglesas: il computer, il mouse, il Wi-Fi, la password, il file. Costumam ser masculinas.",
+      "Verbos italianos: scaricare (descarregar), caricare (carregar online e a bateria), salvare, cancellare, accendere, spegnere.",
+      "Frases úteis: il telefono è scarico (sem bateria), devo caricare il telefono, non c'è campo (sem rede)."
+     ],
+     "q": "Sem que aparelho não conseguirias viver? Conta-me o que fazes com ele todos os dias.",
+     "c": "Escreve quatro frases sobre a tua rotina com o telemóvel usando scaricare, caricare, accendere e spegnere."
+    },
+    "pt_BR": {
+     "t": "Vocabulário de tecnologia",
+     "g": "Usar palavras de tecnologia do dia a dia em italiano.",
+     "p": [
+      "Muitas palavras são inglesas: il computer, il mouse, il Wi-Fi, la password, il file. Costumam ser masculinas.",
+      "Verbos italianos: scaricare (baixar), caricare (subir arquivo e carregar bateria), salvare, cancellare, accendere, spegnere.",
+      "Frases úteis: il telefono è scarico (sem bateria), devo caricare il telefono, non c'è campo (sem sinal)."
+     ],
+     "q": "Sem que aparelho você não conseguiria viver? Conte o que faz com ele todo dia.",
+     "c": "Escreva quatro frases sobre sua rotina com o celular usando scaricare, caricare, accendere e spegnere."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "scaricare",
+      "ex": "Ho scaricato una nuova app per imparare le lingue."
+     },
+     {
+      "w": "caricare",
+      "ex": "Devo caricare il telefono, è quasi scarico."
+     },
+     {
+      "w": "la password",
+      "ex": "Ho dimenticato la password del Wi-Fi."
+     },
+     {
+      "w": "accendere",
+      "ex": "Accendi il computer, per favore."
+     },
+     {
+      "w": "spegnere",
+      "ex": "Spegni il telefono durante il film."
+     },
+     {
+      "w": "non c'è campo",
+      "ex": "In montagna non c'è campo."
+     }
+    ],
+    "gram": "Le parole straniere della tecnologia sono di solito maschili e invariabili: il computer, i computer; il file, i file."
+   }
+  },
+  {
+   "d": 142,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Social media and messaging",
+     "g": "Talk about your online life in Italian.",
+     "p": [
+      "Mandare un messaggio (send a message), scrivere su WhatsApp, fare una videochiamata, rispondere (reply).",
+      "On social media: mettere mi piace (like), commentare, condividere (share), pubblicare una foto, seguire (follow).",
+      "Italians often say: ti scrivo dopo, mandami un vocale (voice note), ti ho taggato, sono offline."
+     ],
+     "q": "Which apps do you use most to chattare with friends, and do you prefer messaggi or vocali?",
+     "c": "Write three sentences about yesterday online with the passato prossimo: ho mandato, ho pubblicato, ho messo mi piace."
+    },
+    "de": {
+     "t": "Soziale Medien und Nachrichten",
+     "g": "Du sprichst auf Italienisch über dein Online-Leben.",
+     "p": [
+      "Mandare un messaggio (Nachricht schicken), scrivere su WhatsApp, fare una videochiamata, rispondere (antworten).",
+      "In sozialen Medien: mettere mi piace (liken), commentare, condividere (teilen), pubblicare una foto, seguire (folgen).",
+      "Italiener sagen oft: ti scrivo dopo, mandami un vocale (Sprachnachricht), ti ho taggato, sono offline."
+     ],
+     "q": "Welche Apps benutzt du am meisten zum chattare, und magst du lieber messaggi oder vocali?",
+     "c": "Schreib drei Sätze über gestern online im passato prossimo: ho mandato, ho pubblicato, ho messo mi piace."
+    },
+    "es": {
+     "t": "Redes sociales y mensajes",
+     "g": "Hablar de tu vida en internet en italiano.",
+     "p": [
+      "Mandare un messaggio (enviar un mensaje), scrivere su WhatsApp, fare una videochiamata, rispondere (contestar).",
+      "En redes: mettere mi piace (dar me gusta), commentare, condividere (compartir), pubblicare una foto, seguire.",
+      "Los italianos dicen a menudo: ti scrivo dopo, mandami un vocale (audio), ti ho taggato, sono offline."
+     ],
+     "q": "¿Qué apps usas más para chattare con amigos? ¿Prefieres messaggi o vocali?",
+     "c": "Escribe tres frases sobre ayer en internet en passato prossimo: ho mandato, ho pubblicato, ho messo mi piace."
+    },
+    "fr": {
+     "t": "Réseaux sociaux et messagerie",
+     "g": "Parler de ta vie en ligne en italien.",
+     "p": [
+      "Mandare un messaggio (envoyer un message), scrivere su WhatsApp, fare una videochiamata, rispondere (répondre).",
+      "Sur les réseaux : mettere mi piace (liker), commentare, condividere (partager), pubblicare una foto, seguire (suivre).",
+      "Les Italiens disent souvent : ti scrivo dopo, mandami un vocale (message vocal), ti ho taggato, sono offline."
+     ],
+     "q": "Quelles applis utilises-tu le plus pour chattare avec tes amis, et tu préfères messaggi ou vocali ?",
+     "c": "Écris trois phrases sur hier en ligne au passato prossimo : ho mandato, ho pubblicato, ho messo mi piace."
+    },
+    "it": {
+     "t": "Social e messaggi",
+     "g": "Parlare della propria vita online.",
+     "p": [
+      "Mandare un messaggio, scrivere su WhatsApp, fare una videochiamata, rispondere a un messaggio.",
+      "Sui social: mettere mi piace, commentare, condividere un post, pubblicare una foto, seguire qualcuno.",
+      "Frasi frequenti: ti scrivo dopo, mandami un vocale, ti ho taggato, sono offline, ho visualizzato il messaggio."
+     ],
+     "q": "Quali app usi di più per chattare con gli amici? Preferisci i messaggi scritti o i vocali?",
+     "c": "Scrivi tre frasi su ieri online al passato prossimo: ho mandato, ho pubblicato, ho messo mi piace."
+    },
+    "pt": {
+     "t": "Redes sociais e mensagens",
+     "g": "Falar da tua vida online em italiano.",
+     "p": [
+      "Mandare un messaggio (enviar uma mensagem), scrivere su WhatsApp, fare una videochiamata, rispondere (responder).",
+      "Nas redes: mettere mi piace (pôr gosto), commentare, condividere (partilhar), pubblicare una foto, seguire.",
+      "Os italianos dizem muito: ti scrivo dopo, mandami un vocale (áudio), ti ho taggato, sono offline."
+     ],
+     "q": "Que apps usas mais para chattare com amigos? Preferes messaggi ou vocali?",
+     "c": "Escreve três frases sobre ontem online no passato prossimo: ho mandato, ho pubblicato, ho messo mi piace."
+    },
+    "pt_BR": {
+     "t": "Redes sociais e mensagens",
+     "g": "Falar da sua vida online em italiano.",
+     "p": [
+      "Mandare un messaggio (mandar mensagem), scrivere su WhatsApp, fare una videochiamata, rispondere (responder).",
+      "Nas redes: mettere mi piace (curtir), commentare, condividere (compartilhar), pubblicare una foto, seguire.",
+      "Os italianos dizem muito: ti scrivo dopo, mandami un vocale (áudio), ti ho taggato, sono offline."
+     ],
+     "q": "Que apps você mais usa para chattare com amigos? Prefere messaggi ou vocali?",
+     "c": "Escreva três frases sobre ontem online no passato prossimo: ho mandato, ho pubblicato, ho messo mi piace."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mandare un messaggio",
+      "ex": "Ti mando un messaggio quando arrivo."
+     },
+     {
+      "w": "mettere mi piace",
+      "ex": "Ho messo mi piace alla tua foto del mare."
+     },
+     {
+      "w": "condividere",
+      "ex": "Puoi condividere il link nel gruppo?"
+     },
+     {
+      "w": "un vocale",
+      "ex": "Mi ha mandato un vocale di cinque minuti!"
+     },
+     {
+      "w": "una videochiamata",
+      "ex": "La domenica facciamo una videochiamata con la nonna."
+     },
+     {
+      "w": "ti scrivo dopo",
+      "ex": "Adesso sono in riunione, ti scrivo dopo."
+     }
+    ],
+    "gram": "Mandare / scrivere qualcosa a qualcuno: mando un messaggio a Luca, gli scrivo. Mettere mi piace a un post."
+   }
+  },
+  {
+   "d": 143,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Email in Italian",
+     "g": "Open and close formal and informal emails correctly.",
+     "p": [
+      "Formal openings: Gentile signora Rossi, Gentile dottore, Egregio direttore (very formal). Informal: Ciao Marco, Cara Anna.",
+      "Useful lines: Le scrivo per..., in allegato trova..., resto in attesa di una Sua risposta. Use Lei with capital L.",
+      "Closings: Cordiali saluti, Distinti saluti (formal); un abbraccio, a presto, un caro saluto (informal)."
+     ],
+     "q": "How would you start an email to a hotel in Italy to ask about a room?",
+     "c": "Write a five-line formal email asking a language school for information, from Gentile to Cordiali saluti."
+    },
+    "de": {
+     "t": "E-Mails auf Italienisch",
+     "g": "Du beginnst und beendest förmliche und informelle E-Mails richtig.",
+     "p": [
+      "Förmlich: Gentile signora Rossi, Gentile dottore, Egregio direttore (sehr förmlich). Informell: Ciao Marco, Cara Anna.",
+      "Nützliche Sätze: Le scrivo per..., in allegato trova..., resto in attesa di una Sua risposta. Lei mit großem L.",
+      "Schlussformeln: Cordiali saluti, Distinti saluti (förmlich); un abbraccio, a presto, un caro saluto (informell)."
+     ],
+     "q": "Wie würdest du eine E-Mail an ein Hotel in Italien beginnen, um nach einem Zimmer zu fragen?",
+     "c": "Schreib eine förmliche E-Mail in fünf Zeilen an eine Sprachschule, von Gentile bis Cordiali saluti."
+    },
+    "es": {
+     "t": "El correo electrónico en italiano",
+     "g": "Abrir y cerrar correos formales e informales correctamente.",
+     "p": [
+      "Saludos formales: Gentile signora Rossi, Gentile dottore, Egregio direttore (muy formal). Informales: Ciao Marco, Cara Anna.",
+      "Frases útiles: Le scrivo per..., in allegato trova..., resto in attesa di una Sua risposta. Lei con mayúscula.",
+      "Despedidas: Cordiali saluti, Distinti saluti (formales); un abbraccio, a presto, un caro saluto (informales)."
+     ],
+     "q": "¿Cómo empezarías un correo a un hotel en Italia para preguntar por una habitación?",
+     "c": "Escribe un correo formal de cinco líneas a una escuela de idiomas pidiendo información, de Gentile a Cordiali saluti."
+    },
+    "fr": {
+     "t": "L'e-mail en italien",
+     "g": "Commencer et finir correctement un e-mail formel ou informel.",
+     "p": [
+      "Formules formelles : Gentile signora Rossi, Gentile dottore, Egregio direttore (très formel). Informel : Ciao Marco, Cara Anna.",
+      "Phrases utiles : Le scrivo per..., in allegato trova..., resto in attesa di una Sua risposta. Lei avec une majuscule.",
+      "Formules finales : Cordiali saluti, Distinti saluti (formel) ; un abbraccio, a presto, un caro saluto (informel)."
+     ],
+     "q": "Comment commencerais-tu un e-mail à un hôtel en Italie pour demander une chambre ?",
+     "c": "Écris un e-mail formel de cinq lignes à une école de langues pour demander des infos, de Gentile à Cordiali saluti."
+    },
+    "it": {
+     "t": "Scrivere un'email",
+     "g": "Aprire e chiudere correttamente email formali e informali.",
+     "p": [
+      "Apertura formale: Gentile signora Rossi, Gentile dottore, Egregio direttore (molto formale). Informale: Ciao Marco, Cara Anna.",
+      "Frasi utili: Le scrivo per..., in allegato trova..., resto in attesa di una Sua risposta. Lei spesso con la maiuscola.",
+      "Chiusura: Cordiali saluti, Distinti saluti (formale); un abbraccio, a presto, un caro saluto (informale)."
+     ],
+     "q": "Come cominceresti un'email a un albergo italiano per chiedere una camera?",
+     "c": "Scrivi un'email formale di cinque righe a una scuola di lingue per chiedere informazioni, da Gentile a Cordiali saluti."
+    },
+    "pt": {
+     "t": "O email em italiano",
+     "g": "Abrir e fechar emails formais e informais corretamente.",
+     "p": [
+      "Aberturas formais: Gentile signora Rossi, Gentile dottore, Egregio direttore (muito formal). Informais: Ciao Marco, Cara Anna.",
+      "Frases úteis: Le scrivo per..., in allegato trova..., resto in attesa di una Sua risposta. Lei com maiúscula.",
+      "Despedidas: Cordiali saluti, Distinti saluti (formais); un abbraccio, a presto, un caro saluto (informais)."
+     ],
+     "q": "Como começarias um email a um hotel em Itália para perguntar por um quarto?",
+     "c": "Escreve um email formal de cinco linhas a uma escola de línguas a pedir informações, de Gentile a Cordiali saluti."
+    },
+    "pt_BR": {
+     "t": "E-mail em italiano",
+     "g": "Abrir e fechar e-mails formais e informais corretamente.",
+     "p": [
+      "Aberturas formais: Gentile signora Rossi, Gentile dottore, Egregio direttore (muito formal). Informais: Ciao Marco, Cara Anna.",
+      "Frases úteis: Le scrivo per..., in allegato trova..., resto in attesa di una Sua risposta. Lei com maiúscula.",
+      "Despedidas: Cordiali saluti, Distinti saluti (formais); un abbraccio, a presto, un caro saluto (informais)."
+     ],
+     "q": "Como você começaria um e-mail para um hotel na Itália perguntando por um quarto?",
+     "c": "Escreva um e-mail formal de cinco linhas para uma escola de idiomas pedindo informações, de Gentile a Cordiali saluti."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Gentile signora",
+      "ex": "Gentile signora Bianchi, La ringrazio per la risposta."
+     },
+     {
+      "w": "Le scrivo per",
+      "ex": "Le scrivo per chiedere informazioni sul corso."
+     },
+     {
+      "w": "in allegato",
+      "ex": "In allegato trova il mio curriculum."
+     },
+     {
+      "w": "resto in attesa",
+      "ex": "Resto in attesa di una Sua gentile risposta."
+     },
+     {
+      "w": "Cordiali saluti",
+      "ex": "Cordiali saluti, Paolo Verdi"
+     },
+     {
+      "w": "un abbraccio",
+      "ex": "Ci vediamo presto, un abbraccio!"
+     }
+    ],
+    "gram": "Email formale: Gentile + titolo/nome, Lei (Le scrivo, La ringrazio), chiusura Cordiali saluti. Informale: Caro/Cara, tu."
+   }
+  },
+  {
+   "d": 144,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Italian festivals and traditions",
+     "g": "Learn how Italians celebrate key festivals through the year.",
+     "p": [
+      "Carnevale (February or March): masks in Venice, parades in Viareggio, sweets like chiacchiere. Ci si maschera.",
+      "Ferragosto, 15 August: the heart of summer holidays. Many shops close and people go to the beach or mountains.",
+      "La Befana, 6 January: a kind old woman on a broom brings sweets to good children, and coal (carbone) to naughty ones."
+     ],
+     "q": "Which festival in your country is like Carnevale or Ferragosto? How do people celebrate it?",
+     "c": "Describe in three Italian sentences how you celebrate your favourite festival, using si impersonale."
+    },
+    "de": {
+     "t": "Italienische Feste und Traditionen",
+     "g": "Du lernst, wie Italiener die wichtigsten Feste im Jahr feiern.",
+     "p": [
+      "Carnevale (Februar oder März): Masken in Venedig, Umzüge in Viareggio, Süßes wie chiacchiere. Ci si maschera.",
+      "Ferragosto, 15. August: Höhepunkt der Sommerferien. Viele Läden schließen, man fährt ans Meer oder in die Berge.",
+      "La Befana, 6. Januar: Eine freundliche alte Frau auf einem Besen bringt braven Kindern Süßes, frechen carbone (Kohle)."
+     ],
+     "q": "Welches Fest in deinem Land ähnelt Carnevale oder Ferragosto? Wie wird es gefeiert?",
+     "c": "Beschreib in drei italienischen Sätzen mit si, wie du dein Lieblingsfest feierst."
+    },
+    "es": {
+     "t": "Fiestas y tradiciones italianas",
+     "g": "Conocer cómo celebran los italianos sus fiestas principales.",
+     "p": [
+      "Carnevale (febrero o marzo): máscaras en Venecia, desfiles en Viareggio, dulces como las chiacchiere. Ci si maschera.",
+      "Ferragosto, 15 de agosto: el corazón de las vacaciones. Muchas tiendas cierran y la gente va a la playa o a la montaña.",
+      "La Befana, 6 de enero: una anciana simpática en escoba trae dulces a los niños buenos y carbone a los traviesos."
+     ],
+     "q": "¿Qué fiesta de tu país se parece a Carnevale o Ferragosto? ¿Cómo se celebra?",
+     "c": "Describe en tres frases en italiano, con si impersonal, cómo celebras tu fiesta favorita."
+    },
+    "fr": {
+     "t": "Fêtes et traditions italiennes",
+     "g": "Découvrir comment les Italiens célèbrent les grandes fêtes de l'année.",
+     "p": [
+      "Carnevale (février ou mars) : masques à Venise, défilés à Viareggio, douceurs comme les chiacchiere. Ci si maschera.",
+      "Ferragosto, le 15 août : le cœur des vacances d'été. Beaucoup de magasins ferment, on part à la mer ou à la montagne.",
+      "La Befana, le 6 janvier : une gentille vieille femme sur un balai apporte des bonbons aux enfants sages, du carbone aux autres."
+     ],
+     "q": "Quelle fête de ton pays ressemble à Carnevale ou Ferragosto ? Comment la fête-t-on ?",
+     "c": "Décris en trois phrases italiennes, avec le si impersonnel, comment tu fêtes ta fête préférée."
+    },
+    "it": {
+     "t": "Feste e tradizioni italiane",
+     "g": "Scoprire come gli italiani festeggiano le feste principali dell'anno.",
+     "p": [
+      "Carnevale (febbraio o marzo): maschere a Venezia, carri a Viareggio, dolci come le chiacchiere. Ci si maschera.",
+      "Ferragosto, il 15 agosto: il cuore delle vacanze estive. Molti negozi chiudono e si va al mare o in montagna.",
+      "La Befana, il 6 gennaio: una vecchietta gentile sulla scopa porta dolci ai bambini buoni e carbone ai più monelli."
+     ],
+     "q": "Quale festa del tuo paese assomiglia al Carnevale o a Ferragosto? Come si festeggia?",
+     "c": "Descrivi in tre frasi, con il si impersonale, come si festeggia la tua festa preferita."
+    },
+    "pt": {
+     "t": "Festas e tradições italianas",
+     "g": "Conhecer como os italianos celebram as principais festas do ano.",
+     "p": [
+      "Carnevale (fevereiro ou março): máscaras em Veneza, desfiles em Viareggio, doces como as chiacchiere. Ci si maschera.",
+      "Ferragosto, 15 de agosto: o coração das férias de verão. Muitas lojas fecham e vai-se para a praia ou para a serra.",
+      "La Befana, 6 de janeiro: uma velhinha simpática numa vassoura traz doces às crianças boas e carbone às traquinas."
+     ],
+     "q": "Que festa do teu país se parece com o Carnevale ou o Ferragosto? Como se festeja?",
+     "c": "Descreve em três frases em italiano, com o si impessoal, como festejas a tua festa preferida."
+    },
+    "pt_BR": {
+     "t": "Festas e tradições italianas",
+     "g": "Conhecer como os italianos comemoram as principais festas do ano.",
+     "p": [
+      "Carnevale (fevereiro ou março): máscaras em Veneza, desfiles em Viareggio, doces como as chiacchiere. Ci si maschera.",
+      "Ferragosto, 15 de agosto: o auge das férias de verão. Muitas lojas fecham e o pessoal vai para a praia ou a montanha.",
+      "La Befana, 6 de janeiro: uma velhinha simpática numa vassoura traz doces para as crianças boazinhas e carbone para as levadas."
+     ],
+     "q": "Que festa do seu país lembra o Carnevale ou o Ferragosto? Como se comemora?",
+     "c": "Descreva em três frases em italiano, com o si impessoal, como você comemora sua festa favorita."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il Carnevale",
+      "ex": "A Carnevale i bambini si mascherano da supereroi."
+     },
+     {
+      "w": "la maschera",
+      "ex": "A Venezia ho comprato una maschera bellissima."
+     },
+     {
+      "w": "Ferragosto",
+      "ex": "A Ferragosto la città è vuota, tutti sono al mare."
+     },
+     {
+      "w": "la Befana",
+      "ex": "La Befana porta dolci e caramelle nella calza."
+     },
+     {
+      "w": "festeggiare",
+      "ex": "Come festeggiate il compleanno nel tuo paese?"
+     },
+     {
+      "w": "la tradizione",
+      "ex": "È una tradizione molto antica della mia regione."
+     }
+    ],
+    "gram": "Feste con l'articolo: il Carnevale, la Befana; ma a Ferragosto, a Natale, a Pasqua. Festeggiare qualcosa: festeggio Ferragosto."
+   }
+  },
+  {
+   "d": 145,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Christmas and New Year in Italy",
+     "g": "Learn festive words and greetings for the holiday season.",
+     "p": [
+      "Natale: il presepe (nativity scene), l'albero, i regali, il panettone from Milan and il pandoro from Verona.",
+      "La Vigilia (24 December) and il cenone, the big dinner of Christmas Eve or New Year's Eve (Capodanno).",
+      "Greetings: Buon Natale!, Buone feste!, Buon anno! / Felice anno nuovo! At midnight: tanti auguri! and a toast (brindisi)."
+     ],
+     "q": "Do you prefer panettone or pandoro? How do you spend the holiday season?",
+     "c": "Write a short holiday message to an Italian friend with two greetings and one wish for the new year."
+    },
+    "de": {
+     "t": "Weihnachten und Neujahr in Italien",
+     "g": "Du lernst festliche Wörter und Grüße für die Feiertage.",
+     "p": [
+      "Natale: il presepe (Krippe), l'albero, i regali, il panettone aus Mailand und il pandoro aus Verona.",
+      "La Vigilia (24. Dezember) und il cenone, das große Abendessen an Heiligabend oder Silvester (Capodanno).",
+      "Grüße: Buon Natale!, Buone feste!, Buon anno! / Felice anno nuovo! Um Mitternacht: tanti auguri! und ein brindisi (Toast)."
+     ],
+     "q": "Magst du lieber panettone oder pandoro? Wie verbringst du die Feiertage?",
+     "c": "Schreib einem italienischen Freund eine kurze Feiertagsnachricht mit zwei Grüßen und einem Wunsch fürs neue Jahr."
+    },
+    "es": {
+     "t": "Navidad y Año Nuevo en Italia",
+     "g": "Aprender palabras y felicitaciones de las fiestas.",
+     "p": [
+      "Natale: il presepe (belén), l'albero, i regali, il panettone de Milán y il pandoro de Verona.",
+      "La Vigilia (24 de diciembre) e il cenone, la gran cena de Nochebuena o de Nochevieja (Capodanno).",
+      "Felicitaciones: Buon Natale!, Buone feste!, Buon anno! / Felice anno nuovo! A medianoche: tanti auguri! y un brindisi."
+     ],
+     "q": "¿Prefieres panettone o pandoro? ¿Cómo pasas las fiestas?",
+     "c": "Escribe un mensaje corto de fiestas a un amigo italiano con dos felicitaciones y un deseo para el año nuevo."
+    },
+    "fr": {
+     "t": "Noël et Nouvel An en Italie",
+     "g": "Apprendre les mots et vœux des fêtes de fin d'année.",
+     "p": [
+      "Natale : il presepe (la crèche), l'albero, i regali, il panettone de Milan et il pandoro de Vérone.",
+      "La Vigilia (24 décembre) et il cenone, le grand repas du réveillon de Noël ou du Nouvel An (Capodanno).",
+      "Vœux : Buon Natale !, Buone feste !, Buon anno ! / Felice anno nuovo ! À minuit : tanti auguri ! et un brindisi (toast)."
+     ],
+     "q": "Tu préfères le panettone ou le pandoro ? Comment passes-tu les fêtes ?",
+     "c": "Écris un court message de fêtes à un ami italien avec deux vœux et un souhait pour la nouvelle année."
+    },
+    "it": {
+     "t": "Natale e Capodanno in Italia",
+     "g": "Imparare parole e auguri delle feste di fine anno.",
+     "p": [
+      "Natale: il presepe, l'albero, i regali, il panettone di Milano e il pandoro di Verona.",
+      "La Vigilia (24 dicembre) e il cenone, la grande cena della Vigilia o di San Silvestro, prima di Capodanno.",
+      "Auguri: Buon Natale!, Buone feste!, Buon anno! / Felice anno nuovo! A mezzanotte: tanti auguri! e un brindisi."
+     ],
+     "q": "Preferisci il panettone o il pandoro? Come passi le feste di fine anno?",
+     "c": "Scrivi un breve messaggio di auguri a un amico italiano con due auguri e un desiderio per l'anno nuovo."
+    },
+    "pt": {
+     "t": "Natal e Ano Novo em Itália",
+     "g": "Aprender palavras e votos das festas de fim de ano.",
+     "p": [
+      "Natale: il presepe (presépio), l'albero, i regali, il panettone de Milão e il pandoro de Verona.",
+      "La Vigilia (24 de dezembro) e il cenone, o grande jantar da consoada ou da passagem de ano (Capodanno).",
+      "Votos: Buon Natale!, Buone feste!, Buon anno! / Felice anno nuovo! À meia-noite: tanti auguri! e um brindisi."
+     ],
+     "q": "Preferes panettone ou pandoro? Como passas as festas?",
+     "c": "Escreve uma mensagem curta de festas a um amigo italiano com dois votos e um desejo para o novo ano."
+    },
+    "pt_BR": {
+     "t": "Natal e Ano-Novo na Itália",
+     "g": "Aprender palavras e votos das festas de fim de ano.",
+     "p": [
+      "Natale: il presepe (presépio), l'albero, i regali, il panettone de Milão e il pandoro de Verona.",
+      "La Vigilia (24 de dezembro) e il cenone, a grande ceia de Natal ou de Réveillon (Capodanno).",
+      "Votos: Buon Natale!, Buone feste!, Buon anno! / Felice anno nuovo! À meia-noite: tanti auguri! e um brindisi."
+     ],
+     "q": "Você prefere panettone ou pandoro? Como passa as festas?",
+     "c": "Escreva uma mensagem curta de festas para um amigo italiano com dois votos e um desejo para o ano novo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il presepe",
+      "ex": "Ogni anno facciamo il presepe in salotto."
+     },
+     {
+      "w": "il panettone",
+      "ex": "A Natale mangiamo il panettone con la crema."
+     },
+     {
+      "w": "il cenone",
+      "ex": "Il cenone della Vigilia dura fino a mezzanotte."
+     },
+     {
+      "w": "Buone feste!",
+      "ex": "Buone feste a te e a tutta la famiglia!"
+     },
+     {
+      "w": "Capodanno",
+      "ex": "A Capodanno guardiamo i fuochi d'artificio."
+     },
+     {
+      "w": "fare un brindisi",
+      "ex": "Facciamo un brindisi al nuovo anno!"
+     }
+    ],
+    "gram": "Auguri con buono: Buon Natale, Buon anno, Buone feste. A Natale, a Capodanno; la notte di San Silvestro."
+   }
+  },
+  {
+   "d": 146,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Italian coffee culture",
+     "g": "Order coffee like an Italian and know the rules of the bar.",
+     "p": [
+      "Un caffè is an espresso. Variants: macchiato (a drop of milk), ristretto (shorter, stronger), lungo, corretto (with a dash of liqueur).",
+      "Cappuccino is mostly a breakfast drink. Many Italians drink caffè standing at the counter (al banco), quickly.",
+      "In many bars you pay first at the cassa, then show the receipt (scontrino) at the counter. Ask for un caffè, per favore."
+     ],
+     "q": "How do you take your coffee? Which Italian coffee would you order?",
+     "c": "Practise ordering two different coffees in Italian at an imaginary bar, including paying at the cassa."
+    },
+    "de": {
+     "t": "Italienische Kaffeekultur",
+     "g": "Du bestellst Kaffee wie ein Italiener und kennst die Regeln der Bar.",
+     "p": [
+      "Un caffè ist ein Espresso. Varianten: macchiato (ein Tropfen Milch), ristretto (kürzer, stärker), lungo, corretto (mit Likör).",
+      "Cappuccino ist meist ein Frühstücksgetränk. Viele trinken den caffè im Stehen an der Theke (al banco), schnell.",
+      "In vielen Bars zahlst du zuerst an der cassa und zeigst den Bon (scontrino) an der Theke. Bestell un caffè, per favore."
+     ],
+     "q": "Wie trinkst du deinen Kaffee? Welchen italienischen Kaffee würdest du bestellen?",
+     "c": "Übe, in einer gedachten Bar zwei verschiedene Kaffees auf Italienisch zu bestellen, inklusive Zahlen an der cassa."
+    },
+    "es": {
+     "t": "La cultura del café italiano",
+     "g": "Pedir café como un italiano y conocer las reglas del bar.",
+     "p": [
+      "Un caffè es un espresso. Variantes: macchiato (con una gota de leche), ristretto (más corto y fuerte), lungo, corretto (con licor).",
+      "El cappuccino es sobre todo para el desayuno. Muchos italianos toman el caffè de pie en la barra (al banco), rápido.",
+      "En muchos bares pagas primero en la cassa y enseñas el ticket (scontrino) en la barra. Pide un caffè, per favore."
+     ],
+     "q": "¿Cómo tomas el café? ¿Qué café italiano pedirías?",
+     "c": "Practica pedir dos cafés distintos en italiano en un bar imaginario, incluido pagar en la cassa."
+    },
+    "fr": {
+     "t": "La culture du café italien",
+     "g": "Commander un café comme un Italien et connaître les règles du bar.",
+     "p": [
+      "Un caffè est un expresso. Variantes : macchiato (une goutte de lait), ristretto (plus court, plus fort), lungo, corretto (avec liqueur).",
+      "Le cappuccino se boit surtout au petit-déjeuner. Beaucoup boivent le caffè debout au comptoir (al banco), vite.",
+      "Dans beaucoup de bars, on paie d'abord à la cassa puis on montre le ticket (scontrino) au comptoir. Demande un caffè, per favore."
+     ],
+     "q": "Comment prends-tu ton café ? Quel café italien commanderais-tu ?",
+     "c": "Entraîne-toi à commander deux cafés différents en italien dans un bar imaginaire, paiement à la cassa compris."
+    },
+    "it": {
+     "t": "La cultura del caffè",
+     "g": "Ordinare il caffè come un italiano e conoscere le regole del bar.",
+     "p": [
+      "Un caffè è un espresso. Varianti: macchiato (con una goccia di latte), ristretto, lungo, corretto (con un goccio di liquore).",
+      "Il cappuccino si beve soprattutto a colazione. Molti bevono il caffè in piedi al banco, in pochi minuti.",
+      "In molti bar si paga prima alla cassa e poi si mostra lo scontrino al banco. Basta dire: un caffè, per favore."
+     ],
+     "q": "Come prendi il caffè? Quale caffè italiano ordineresti?",
+     "c": "Esercitati a ordinare due caffè diversi in un bar immaginario, compreso il pagamento alla cassa."
+    },
+    "pt": {
+     "t": "A cultura do café italiano",
+     "g": "Pedir café como um italiano e conhecer as regras do bar.",
+     "p": [
+      "Un caffè é um expresso (bica). Variantes: macchiato (pingo de leite), ristretto (mais curto), lungo, corretto (com licor).",
+      "O cappuccino é sobretudo para o pequeno-almoço. Muitos italianos bebem o caffè de pé ao balcão (al banco), depressa.",
+      "Em muitos bares paga-se primeiro na cassa e mostra-se o talão (scontrino) ao balcão. Pede un caffè, per favore."
+     ],
+     "q": "Como tomas o café? Que café italiano pedirias?",
+     "c": "Pratica pedir dois cafés diferentes em italiano num bar imaginário, incluindo pagar na cassa."
+    },
+    "pt_BR": {
+     "t": "A cultura do café italiano",
+     "g": "Pedir café como um italiano e conhecer as regras do bar.",
+     "p": [
+      "Un caffè é um expresso. Variantes: macchiato (pingado), ristretto (mais curto e forte), lungo, corretto (com licor).",
+      "O cappuccino é coisa do café da manhã. Muitos italianos tomam o caffè em pé no balcão (al banco), rapidinho.",
+      "Em muitos bares você paga primeiro na cassa e mostra o recibo (scontrino) no balcão. Peça un caffè, per favore."
+     ],
+     "q": "Como você toma seu café? Que café italiano pediria?",
+     "c": "Pratique pedir dois cafés diferentes em italiano num bar imaginário, incluindo pagar na cassa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un caffè macchiato",
+      "ex": "Per me un caffè macchiato caldo, grazie."
+     },
+     {
+      "w": "un ristretto",
+      "ex": "Prendo un ristretto, ho bisogno di energia."
+     },
+     {
+      "w": "al banco",
+      "ex": "Beviamo il caffè al banco, è più veloce."
+     },
+     {
+      "w": "lo scontrino",
+      "ex": "Prima paghi alla cassa, poi dai lo scontrino."
+     },
+     {
+      "w": "un cornetto",
+      "ex": "Un cappuccino e un cornetto alla marmellata."
+     },
+     {
+      "w": "prendere un caffè",
+      "ex": "Andiamo a prendere un caffè dopo la lezione?"
+     }
+    ],
+    "gram": "Ordinare al bar: un caffè, per favore; prendo un cappuccino; per me un macchiato. Prendere = ordinare/bere."
+   }
+  },
+  {
+   "d": 147,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Pizza and regional dishes",
+     "g": "Match famous Italian dishes with their regions.",
+     "p": [
+      "Pizza napoletana comes from Naples (Campania): soft, thick crust; margherita has tomato, mozzarella and basil.",
+      "Risotto alla milanese (Lombardy) is yellow from saffron. Pesto genovese (Liguria) is basil, pine nuts, garlic, cheese and oil.",
+      "More classics: la carbonara and l'amatriciana from Lazio, i tortellini from Emilia-Romagna, gli arancini from Sicily."
+     ],
+     "q": "Which Italian regional dish would you most like to taste, and where does it come from?",
+     "c": "Choose three dishes and write where each comes from: il pesto è tipico della Liguria..."
+    },
+    "de": {
+     "t": "Pizza und regionale Gerichte",
+     "g": "Du ordnest berühmte italienische Gerichte ihren Regionen zu.",
+     "p": [
+      "Pizza napoletana stammt aus Neapel (Kampanien): weicher, hoher Rand; Margherita hat Tomate, Mozzarella und Basilikum.",
+      "Risotto alla milanese (Lombardei) ist durch Safran gelb. Pesto genovese (Ligurien): Basilikum, Pinienkerne, Knoblauch, Käse, Öl.",
+      "Weitere Klassiker: la carbonara und l'amatriciana aus Latium, i tortellini aus der Emilia-Romagna, gli arancini aus Sizilien."
+     ],
+     "q": "Welches regionale italienische Gericht würdest du am liebsten probieren, und woher kommt es?",
+     "c": "Wähle drei Gerichte und schreib, woher sie kommen: il pesto è tipico della Liguria..."
+    },
+    "es": {
+     "t": "Pizza y platos regionales",
+     "g": "Relacionar platos italianos famosos con sus regiones.",
+     "p": [
+      "La pizza napoletana es de Nápoles (Campania): borde blando y alto; la margherita lleva tomate, mozzarella y albahaca.",
+      "El risotto alla milanese (Lombardía) es amarillo por el azafrán. El pesto genovese (Liguria): albahaca, piñones, ajo, queso y aceite.",
+      "Más clásicos: la carbonara y l'amatriciana del Lacio, i tortellini de Emilia-Romaña, gli arancini de Sicilia."
+     ],
+     "q": "¿Qué plato regional italiano te gustaría probar más y de dónde es?",
+     "c": "Elige tres platos y escribe de dónde es cada uno: il pesto è tipico della Liguria..."
+    },
+    "fr": {
+     "t": "Pizza et plats régionaux",
+     "g": "Associer des plats italiens célèbres à leur région.",
+     "p": [
+      "La pizza napoletana vient de Naples (Campanie) : bord moelleux et épais ; la margherita a tomate, mozzarella et basilic.",
+      "Le risotto alla milanese (Lombardie) est jaune grâce au safran. Le pesto genovese (Ligurie) : basilic, pignons, ail, fromage, huile.",
+      "Autres classiques : la carbonara et l'amatriciana du Latium, i tortellini d'Émilie-Romagne, gli arancini de Sicile."
+     ],
+     "q": "Quel plat régional italien aimerais-tu le plus goûter, et d'où vient-il ?",
+     "c": "Choisis trois plats et écris d'où vient chacun : il pesto è tipico della Liguria..."
+    },
+    "it": {
+     "t": "Pizza e piatti regionali",
+     "g": "Collegare i piatti italiani famosi alle loro regioni.",
+     "p": [
+      "La pizza napoletana è di Napoli (Campania): cornicione morbido e alto; la margherita ha pomodoro, mozzarella e basilico.",
+      "Il risotto alla milanese (Lombardia) è giallo per lo zafferano. Il pesto genovese (Liguria): basilico, pinoli, aglio, formaggio, olio.",
+      "Altri classici: la carbonara e l'amatriciana del Lazio, i tortellini dell'Emilia-Romagna, gli arancini della Sicilia."
+     ],
+     "q": "Quale piatto regionale italiano ti piacerebbe di più assaggiare, e da dove viene?",
+     "c": "Scegli tre piatti e scrivi da dove viene ognuno: il pesto è tipico della Liguria..."
+    },
+    "pt": {
+     "t": "Pizza e pratos regionais",
+     "g": "Ligar pratos italianos famosos às suas regiões.",
+     "p": [
+      "A pizza napoletana é de Nápoles (Campânia): rebordo mole e alto; a margherita leva tomate, mozzarella e manjericão.",
+      "O risotto alla milanese (Lombardia) é amarelo por causa do açafrão. O pesto genovese (Ligúria): manjericão, pinhões, alho, queijo e azeite.",
+      "Mais clássicos: la carbonara e l'amatriciana do Lácio, i tortellini da Emília-Romanha, gli arancini da Sicília."
+     ],
+     "q": "Que prato regional italiano gostarias mais de provar, e de onde é?",
+     "c": "Escolhe três pratos e escreve de onde é cada um: il pesto è tipico della Liguria..."
+    },
+    "pt_BR": {
+     "t": "Pizza e pratos regionais",
+     "g": "Ligar pratos italianos famosos às suas regiões.",
+     "p": [
+      "A pizza napoletana é de Nápoles (Campânia): borda macia e alta; a margherita leva tomate, mozzarella e manjericão.",
+      "O risotto alla milanese (Lombardia) é amarelo por causa do açafrão. O pesto genovese (Ligúria): manjericão, pinoli, alho, queijo e azeite.",
+      "Mais clássicos: la carbonara e l'amatriciana do Lácio, i tortellini da Emília-Romanha, gli arancini da Sicília."
+     ],
+     "q": "Que prato regional italiano você mais gostaria de provar, e de onde ele é?",
+     "c": "Escolha três pratos e escreva de onde é cada um: il pesto è tipico della Liguria..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la pizza napoletana",
+      "ex": "La vera pizza napoletana ha il cornicione alto."
+     },
+     {
+      "w": "il risotto alla milanese",
+      "ex": "Il risotto alla milanese si fa con lo zafferano."
+     },
+     {
+      "w": "il pesto genovese",
+      "ex": "Il pesto genovese si prepara con il basilico."
+     },
+     {
+      "w": "è tipico di",
+      "ex": "Questo formaggio è tipico della Sardegna."
+     },
+     {
+      "w": "assaggiare",
+      "ex": "Vorrei assaggiare gli arancini siciliani."
+     },
+     {
+      "w": "il piatto regionale",
+      "ex": "Ogni regione ha il suo piatto tipico."
+     }
+    ],
+    "gram": "Alla + aggettivo indica lo stile: risotto alla milanese, pasta alla norma. Tipico di + regione: tipico della Liguria."
+   }
+  },
+  {
+   "d": 148,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Pasta shapes and sauces",
+     "g": "Understand why each pasta shape goes with a certain sauce.",
+     "p": [
+      "Long thin pasta (spaghetti, linguine) suits oil, tomato or seafood sauces that coat it lightly: spaghetti alle vongole.",
+      "Tubes and ridges (penne, rigatoni) catch chunky sauces: penne all'arrabbiata. Orecchiette from Puglia hold cime di rapa.",
+      "Flat egg pasta (tagliatelle) loves rich sauces like ragù alla bolognese. Cook it al dente: firm to the bite."
+     ],
+     "q": "What is your favourite pasta shape, and which sauce do you put on it?",
+     "c": "Plan a three-dish pasta menu, pairing each shape with a sauce and explaining why in one Italian sentence."
+    },
+    "de": {
+     "t": "Nudelformen und Soßen",
+     "g": "Du verstehst, warum jede Nudelform zu einer bestimmten Soße passt.",
+     "p": [
+      "Lange, dünne Nudeln (spaghetti, linguine) passen zu Öl, Tomate oder Meeresfrüchten, die sie leicht umhüllen: spaghetti alle vongole.",
+      "Röhren und Rillen (penne, rigatoni) halten stückige Soßen: penne all'arrabbiata. Orecchiette aus Apulien halten cime di rapa.",
+      "Breite Eiernudeln (tagliatelle) lieben kräftige Soßen wie ragù alla bolognese. Koch sie al dente: bissfest."
+     ],
+     "q": "Was ist deine Lieblingsnudelform, und welche Soße isst du dazu?",
+     "c": "Plane ein Nudelmenü mit drei Gerichten, ordne jeder Form eine Soße zu und begründe es in einem italienischen Satz."
+    },
+    "es": {
+     "t": "Formas de pasta y salsas",
+     "g": "Entender por qué cada forma de pasta va con una salsa.",
+     "p": [
+      "La pasta larga y fina (spaghetti, linguine) va con aceite, tomate o marisco, que la cubren ligeramente: spaghetti alle vongole.",
+      "Tubos y estrías (penne, rigatoni) atrapan salsas con tropezones: penne all'arrabbiata. Las orecchiette de Apulia, con cime di rapa.",
+      "La pasta plana al huevo (tagliatelle) adora salsas ricas como el ragù alla bolognese. Cuécela al dente."
+     ],
+     "q": "¿Cuál es tu forma de pasta favorita y con qué salsa la comes?",
+     "c": "Planea un menú de tres pastas, une cada forma con una salsa y explica el porqué en una frase en italiano."
+    },
+    "fr": {
+     "t": "Formes de pâtes et sauces",
+     "g": "Comprendre pourquoi chaque forme de pâtes va avec une sauce.",
+     "p": [
+      "Les pâtes longues et fines (spaghetti, linguine) vont avec huile, tomate ou fruits de mer qui les enrobent : spaghetti alle vongole.",
+      "Tubes et stries (penne, rigatoni) retiennent les sauces à morceaux : penne all'arrabbiata. Les orecchiette des Pouilles, avec cime di rapa.",
+      "Les pâtes plates aux œufs (tagliatelle) aiment les sauces riches comme le ragù alla bolognese. Cuisson al dente."
+     ],
+     "q": "Quelle est ta forme de pâtes préférée, et avec quelle sauce la manges-tu ?",
+     "c": "Prépare un menu de trois pâtes, associe chaque forme à une sauce et explique pourquoi en une phrase italienne."
+    },
+    "it": {
+     "t": "Formati di pasta e sughi",
+     "g": "Capire perché ogni formato di pasta va con un certo sugo.",
+     "p": [
+      "La pasta lunga e sottile (spaghetti, linguine) va con olio, pomodoro o pesce, che la avvolgono: spaghetti alle vongole.",
+      "Formati rigati e a tubo (penne, rigatoni) trattengono i sughi corposi: penne all'arrabbiata. Le orecchiette pugliesi con le cime di rapa.",
+      "La pasta all'uovo larga (tagliatelle) ama i sughi ricchi come il ragù alla bolognese. Si cuoce al dente."
+     ],
+     "q": "Qual è il tuo formato di pasta preferito e con quale sugo lo mangi?",
+     "c": "Prepara un menu con tre primi: abbina ogni formato a un sugo e spiega perché in una frase."
+    },
+    "pt": {
+     "t": "Formatos de massa e molhos",
+     "g": "Perceber porque cada formato de massa combina com um molho.",
+     "p": [
+      "A massa longa e fina (spaghetti, linguine) vai com azeite, tomate ou marisco, que a envolvem: spaghetti alle vongole.",
+      "Tubos e estrias (penne, rigatoni) seguram molhos com pedaços: penne all'arrabbiata. As orecchiette da Apúlia, com cime di rapa.",
+      "A massa larga de ovo (tagliatelle) adora molhos ricos como o ragù alla bolognese. Coze-se al dente."
+     ],
+     "q": "Qual é o teu formato de massa preferido e com que molho o comes?",
+     "c": "Planeia um menu com três massas, junta cada formato a um molho e explica porquê numa frase em italiano."
+    },
+    "pt_BR": {
+     "t": "Formatos de massa e molhos",
+     "g": "Entender por que cada formato de massa combina com um molho.",
+     "p": [
+      "A massa longa e fina (spaghetti, linguine) vai com azeite, tomate ou frutos do mar, que a envolvem: spaghetti alle vongole.",
+      "Tubos e estrias (penne, rigatoni) seguram molhos encorpados: penne all'arrabbiata. As orecchiette da Apúlia, com cime di rapa.",
+      "A massa larga de ovo (tagliatelle) adora molhos ricos como o ragù alla bolognese. Cozinhe al dente."
+     ],
+     "q": "Qual é o seu formato de massa favorito e com que molho você come?",
+     "c": "Monte um cardápio com três massas, combine cada formato com um molho e explique por quê numa frase em italiano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gli spaghetti",
+      "ex": "Stasera cucino gli spaghetti al pomodoro."
+     },
+     {
+      "w": "le penne",
+      "ex": "Le penne all'arrabbiata sono un po' piccanti."
+     },
+     {
+      "w": "le orecchiette",
+      "ex": "Le orecchiette sono tipiche della Puglia."
+     },
+     {
+      "w": "le tagliatelle",
+      "ex": "Le tagliatelle al ragù sono il mio piatto preferito."
+     },
+     {
+      "w": "al dente",
+      "ex": "La pasta deve essere cotta al dente."
+     },
+     {
+      "w": "il sugo",
+      "ex": "Il sugo della nonna cuoce per tre ore."
+     }
+    ],
+    "gram": "I formati di pasta sono quasi sempre plurali: gli spaghetti, le penne, le tagliatelle. Pasta al / alla / alle + condimento."
+   }
+  },
+  {
+   "d": 149,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Wine regions and aperitivo",
+     "g": "Discover the aperitivo tradition and Italy's famous wine regions.",
+     "p": [
+      "L'aperitivo is an early evening drink with snacks (stuzzichini) before dinner, a time to relax with friends.",
+      "Popular drinks: lo spritz (born in the Veneto area), un analcolico (alcohol-free), un succo. Cin cin! is the toast.",
+      "Famous wine areas: Piemonte (Barolo), Toscana (Chianti), Veneto (Prosecco), Sicilia. Un bicchiere di vino rosso / bianco."
+     ],
+     "q": "Is there something like the aperitivo where you live? What would you order?",
+     "c": "Invite a friend to an aperitivo in Italian: when, where, and what you will order, in three sentences."
+    },
+    "de": {
+     "t": "Weinregionen und Aperitivo",
+     "g": "Du entdeckst die Aperitivo-Tradition und Italiens berühmte Weinregionen.",
+     "p": [
+      "L'aperitivo ist ein Getränk mit Häppchen (stuzzichini) am frühen Abend vor dem Essen, Zeit zum Entspannen mit Freunden.",
+      "Beliebt: lo spritz (aus der Region Venetien), un analcolico (alkoholfrei), un succo. Angestoßen wird mit Cin cin!",
+      "Bekannte Weingebiete: Piemont (Barolo), Toskana (Chianti), Venetien (Prosecco), Sizilien. Un bicchiere di vino rosso / bianco."
+     ],
+     "q": "Gibt es bei dir so etwas wie den Aperitivo? Was würdest du bestellen?",
+     "c": "Lade einen Freund auf Italienisch zum Aperitivo ein: wann, wo und was du bestellst, in drei Sätzen."
+    },
+    "es": {
+     "t": "Regiones del vino y aperitivo",
+     "g": "Descubrir la tradición del aperitivo y las regiones vinícolas de Italia.",
+     "p": [
+      "L'aperitivo es una bebida a primera hora de la tarde con picoteo (stuzzichini) antes de cenar, para relajarse con amigos.",
+      "Bebidas populares: lo spritz (nacido en la zona del Véneto), un analcolico (sin alcohol), un succo. Se brinda con Cin cin!",
+      "Zonas famosas: Piamonte (Barolo), Toscana (Chianti), Véneto (Prosecco), Sicilia. Un bicchiere di vino rosso / bianco."
+     ],
+     "q": "¿Hay algo parecido al aperitivo donde vives? ¿Qué pedirías?",
+     "c": "Invita a un amigo a un aperitivo en italiano: cuándo, dónde y qué pedirás, en tres frases."
+    },
+    "fr": {
+     "t": "Régions viticoles et aperitivo",
+     "g": "Découvrir la tradition de l'aperitivo et les célèbres régions viticoles d'Italie.",
+     "p": [
+      "L'aperitivo est un verre en début de soirée avec des amuse-bouches (stuzzichini) avant le dîner, pour se détendre entre amis.",
+      "Boissons populaires : lo spritz (né dans la région de Vénétie), un analcolico (sans alcool), un succo. On trinque : Cin cin !",
+      "Régions célèbres : Piémont (Barolo), Toscane (Chianti), Vénétie (Prosecco), Sicile. Un bicchiere di vino rosso / bianco."
+     ],
+     "q": "Existe-t-il quelque chose comme l'aperitivo chez toi ? Que commanderais-tu ?",
+     "c": "Invite un ami à un aperitivo en italien : quand, où et ce que tu commanderas, en trois phrases."
+    },
+    "it": {
+     "t": "Regioni del vino e aperitivo",
+     "g": "Scoprire la tradizione dell'aperitivo e le regioni del vino più famose.",
+     "p": [
+      "L'aperitivo è un drink nel tardo pomeriggio con stuzzichini prima di cena, un momento per rilassarsi con gli amici.",
+      "Bevande amate: lo spritz (nato nell'area veneta), un analcolico, un succo di frutta. Per brindare si dice Cin cin!",
+      "Zone del vino famose: Piemonte (Barolo), Toscana (Chianti), Veneto (Prosecco), Sicilia. Un bicchiere di vino rosso o bianco."
+     ],
+     "q": "Dove vivi esiste qualcosa di simile all'aperitivo? Che cosa ordineresti?",
+     "c": "Invita un amico a fare l'aperitivo: quando, dove e che cosa ordinerete, in tre frasi."
+    },
+    "pt": {
+     "t": "Regiões do vinho e aperitivo",
+     "g": "Descobrir a tradição do aperitivo e as famosas regiões vinícolas de Itália.",
+     "p": [
+      "L'aperitivo é uma bebida ao fim da tarde com petiscos (stuzzichini) antes do jantar, para descontrair com amigos.",
+      "Bebidas populares: lo spritz (nascido na zona do Véneto), un analcolico (sem álcool), un succo. Brinda-se com Cin cin!",
+      "Zonas famosas: Piemonte (Barolo), Toscana (Chianti), Véneto (Prosecco), Sicília. Un bicchiere di vino rosso / bianco."
+     ],
+     "q": "Há alguma coisa parecida com o aperitivo onde vives? O que pedirias?",
+     "c": "Convida um amigo para um aperitivo em italiano: quando, onde e o que vais pedir, em três frases."
+    },
+    "pt_BR": {
+     "t": "Regiões do vinho e aperitivo",
+     "g": "Descobrir a tradição do aperitivo e as famosas regiões de vinho da Itália.",
+     "p": [
+      "L'aperitivo é uma bebida no fim da tarde com petiscos (stuzzichini) antes do jantar, para relaxar com amigos.",
+      "Bebidas populares: lo spritz (nascido na região do Vêneto), un analcolico (sem álcool), un succo. O brinde é Cin cin!",
+      "Regiões famosas: Piemonte (Barolo), Toscana (Chianti), Vêneto (Prosecco), Sicília. Un bicchiere di vino rosso / bianco."
+     ],
+     "q": "Existe algo parecido com o aperitivo onde você mora? O que pediria?",
+     "c": "Convide um amigo para um aperitivo em italiano: quando, onde e o que vai pedir, em três frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fare l'aperitivo",
+      "ex": "Dopo il lavoro facciamo l'aperitivo in piazza?"
+     },
+     {
+      "w": "gli stuzzichini",
+      "ex": "Con lo spritz portano sempre degli stuzzichini."
+     },
+     {
+      "w": "un analcolico",
+      "ex": "Io non bevo alcol, prendo un analcolico."
+     },
+     {
+      "w": "un bicchiere di vino",
+      "ex": "Vorrei un bicchiere di vino bianco fresco."
+     },
+     {
+      "w": "Cin cin!",
+      "ex": "Alla salute di tutti, cin cin!"
+     },
+     {
+      "w": "la regione del vino",
+      "ex": "Il Piemonte è una famosa regione del vino."
+     }
+    ],
+    "gram": "Fare l'aperitivo, fare un brindisi; un bicchiere di + bevanda (un bicchiere d'acqua, di vino rosso)."
+   }
+  },
+  {
+   "d": 150,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Gelato and desserts",
+     "g": "Order gelato and talk about classic Italian desserts.",
+     "p": [
+      "At the gelateria: cono (cone) or coppetta (cup)? Piccolo, medio o grande? Quanti gusti? (How many flavours?)",
+      "Classic gusti: cioccolato, fragola, pistacchio, nocciola, stracciatella, limone. Con panna? means with whipped cream.",
+      "Famous desserts: il tiramisù, la panna cotta, i cannoli siciliani, la sfogliatella from Naples. Dolce means sweet and dessert."
+     ],
+     "q": "Cono o coppetta? Which two gusti would you choose today?",
+     "c": "Role-play ordering a gelato: size, cono or coppetta, two flavours and panna, all in Italian."
+    },
+    "de": {
+     "t": "Gelato und Desserts",
+     "g": "Du bestellst Eis und sprichst über klassische italienische Desserts.",
+     "p": [
+      "In der Gelateria: cono (Waffel) oder coppetta (Becher)? Piccolo, medio o grande? Quanti gusti? (Wie viele Sorten?)",
+      "Klassische gusti: cioccolato, fragola, pistacchio, nocciola, stracciatella, limone. Con panna? heißt mit Sahne.",
+      "Berühmte Desserts: il tiramisù, la panna cotta, i cannoli siciliani, la sfogliatella aus Neapel. Dolce heißt süß und Nachtisch."
+     ],
+     "q": "Cono o coppetta? Welche zwei gusti würdest du heute nehmen?",
+     "c": "Spiel eine Eisbestellung durch: Größe, cono oder coppetta, zwei Sorten und panna, alles auf Italienisch."
+    },
+    "es": {
+     "t": "Helado y postres",
+     "g": "Pedir helado y hablar de los postres italianos clásicos.",
+     "p": [
+      "En la gelateria: ¿cono (cucurucho) o coppetta (tarrina)? ¿Piccolo, medio o grande? ¿Quanti gusti? (¿Cuántos sabores?)",
+      "Gusti clásicos: cioccolato, fragola, pistacchio, nocciola, stracciatella, limone. Con panna? es con nata.",
+      "Postres famosos: il tiramisù, la panna cotta, i cannoli siciliani, la sfogliatella de Nápoles. Dolce es dulce y postre."
+     ],
+     "q": "¿Cono o coppetta? ¿Qué dos gusti elegirías hoy?",
+     "c": "Representa un pedido de helado: tamaño, cono o coppetta, dos sabores y panna, todo en italiano."
+    },
+    "fr": {
+     "t": "Gelato et desserts",
+     "g": "Commander une glace et parler des desserts italiens classiques.",
+     "p": [
+      "À la gelateria : cono (cornet) ou coppetta (pot) ? Piccolo, medio o grande ? Quanti gusti ? (Combien de parfums ?)",
+      "Gusti classiques : cioccolato, fragola, pistacchio, nocciola, stracciatella, limone. Con panna ? veut dire avec chantilly.",
+      "Desserts célèbres : il tiramisù, la panna cotta, i cannoli siciliani, la sfogliatella de Naples. Dolce veut dire sucré et dessert."
+     ],
+     "q": "Cono o coppetta ? Quels deux gusti choisirais-tu aujourd'hui ?",
+     "c": "Joue une commande de glace : taille, cono ou coppetta, deux parfums et panna, tout en italien."
+    },
+    "it": {
+     "t": "Gelato e dolci",
+     "g": "Ordinare un gelato e parlare dei dolci italiani classici.",
+     "p": [
+      "In gelateria: cono o coppetta? Piccolo, medio o grande? Quanti gusti? Si possono scegliere due o tre gusti.",
+      "Gusti classici: cioccolato, fragola, pistacchio, nocciola, stracciatella, limone. Con panna? Sì, grazie!",
+      "Dolci famosi: il tiramisù, la panna cotta, i cannoli siciliani, la sfogliatella napoletana. Il dolce chiude il pranzo."
+     ],
+     "q": "Cono o coppetta? Quali due gusti sceglieresti oggi?",
+     "c": "Simula un ordine in gelateria: misura, cono o coppetta, due gusti e panna."
+    },
+    "pt": {
+     "t": "Gelado e sobremesas",
+     "g": "Pedir um gelado e falar das sobremesas italianas clássicas.",
+     "p": [
+      "Na gelateria: cono (cone) ou coppetta (copo)? Piccolo, medio o grande? Quanti gusti? (Quantos sabores?)",
+      "Gusti clássicos: cioccolato, fragola, pistacchio, nocciola, stracciatella, limone. Con panna? é com natas.",
+      "Sobremesas famosas: il tiramisù, la panna cotta, i cannoli siciliani, la sfogliatella de Nápoles. Dolce é doce e sobremesa."
+     ],
+     "q": "Cono o coppetta? Que dois gusti escolherias hoje?",
+     "c": "Simula o pedido de um gelado: tamanho, cono ou coppetta, dois sabores e panna, tudo em italiano."
+    },
+    "pt_BR": {
+     "t": "Sorvete e sobremesas",
+     "g": "Pedir um gelato e falar das sobremesas italianas clássicas.",
+     "p": [
+      "Na gelateria: cono (casquinha) ou coppetta (copinho)? Piccolo, medio o grande? Quanti gusti? (Quantos sabores?)",
+      "Gusti clássicos: cioccolato, fragola, pistacchio, nocciola, stracciatella, limone. Con panna? é com chantili.",
+      "Sobremesas famosas: il tiramisù, la panna cotta, i cannoli siciliani, la sfogliatella de Nápoles. Dolce é doce e sobremesa."
+     ],
+     "q": "Cono o coppetta? Quais dois gusti você escolheria hoje?",
+     "c": "Simule o pedido de um gelato: tamanho, cono ou coppetta, dois sabores e panna, tudo em italiano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il cono",
+      "ex": "Un cono piccolo con due gusti, per favore."
+     },
+     {
+      "w": "la coppetta",
+      "ex": "Preferisco la coppetta, è meno disordinata."
+     },
+     {
+      "w": "i gusti",
+      "ex": "Che gusti avete oggi?"
+     },
+     {
+      "w": "con panna",
+      "ex": "Pistacchio e nocciola, con panna."
+     },
+     {
+      "w": "il tiramisù",
+      "ex": "Il tiramisù della mamma è il migliore."
+     },
+     {
+      "w": "i cannoli",
+      "ex": "In Sicilia ho mangiato dei cannoli buonissimi."
+     }
+    ],
+    "gram": "In gelateria: vorrei un cono piccolo / una coppetta media + con + gusti (con fragola e limone); con o senza panna."
+   }
+  }
+ ]
+}

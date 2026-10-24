@@ -1,0 +1,2195 @@
+{
+"topic": "photography",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to photography",
+"f": "What makes a photo memorable: a clear subject, good light and a simple composition"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Getting to know your camera",
+"f": "Main parts of a camera or phone camera: lens, sensor, shutter button, screen and viewfinder"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Holding the camera steady",
+"f": "Stable grip, elbows tucked, a gentle shutter press and calm breathing to avoid blurry shots"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Phone or camera: both work",
+"f": "Strengths of phone cameras and dedicated cameras, and why the photographer matters most"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Cleaning your lens",
+"f": "Why a smudged lens ruins sharpness and how to clean it safely with a soft cloth"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Auto mode and its limits",
+"f": "What the camera decides for you in auto mode and when those choices go wrong"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Tap to focus",
+"f": "Choosing where the camera focuses and checking that the subject is really sharp"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Finding your subject",
+"f": "Deciding what the photo is about before pressing the shutter"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Get closer",
+"f": "Filling the frame with your subject to remove distractions and add impact"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Horizontal or vertical",
+"f": "When landscape or portrait orientation suits a scene better"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "What is exposure",
+"f": "How the light reaching the sensor makes a photo bright or dark"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "The exposure triangle",
+"f": "How aperture, shutter speed and ISO work together to control exposure"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Aperture explained",
+"f": "The opening in the lens, f-numbers, and why a small number means a wide opening"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Shutter speed explained",
+"f": "How long the shutter stays open, from tiny fractions of a second to several seconds"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "ISO explained",
+"f": "Sensor sensitivity, brighter images in low light and the trade-off with digital noise"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Exposure compensation",
+"f": "Using the plus and minus control to make auto exposure brighter or darker"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Freezing motion",
+"f": "Fast shutter speeds to capture sharp action, splashes and jumping pets"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "A first look at blur",
+"f": "Slow shutter speeds that turn movement into soft, creative streaks"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Background blur basics",
+"f": "How a wide aperture and a closer subject create a soft background"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Everything sharp",
+"f": "Using a narrower aperture to keep near and far parts of a scene in focus"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Focus modes",
+"f": "Single focus for still subjects and continuous focus for moving ones"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Focus points",
+"f": "Picking a single focus point instead of letting the camera guess"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Focus on the eyes",
+"f": "Why sharp eyes make portraits of people and animals feel alive"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Metering basics",
+"f": "How the camera measures light and why very bright or dark scenes fool it"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Bright scenes: snow and beach",
+"f": "Why snow turns grey in auto mode and how to correct it"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Dark scenes and moody light",
+"f": "Why dark scenes come out too bright and how to keep their mood"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Reading your screen honestly",
+"f": "Zooming in to check sharpness and not trusting screen brightness too much"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "File formats: JPEG first",
+"f": "What a JPEG is, quality settings and why it is a good starting format"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Organising your photos",
+"f": "Simple folders, dates and backups so your pictures stay safe"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "Recap of camera basics and exposure, with a relaxed shoot of your favourite subject"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Why composition matters",
+"f": "How arranging elements in the frame guides the viewer's eye"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "The rule of thirds",
+"f": "Placing subjects on grid lines and intersections for balanced images"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Turning on the grid",
+"f": "Using the camera or phone grid to compose and keep things level"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Straight horizons",
+"f": "Why tilted horizons distract and how to keep them level"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Leading lines",
+"f": "Roads, rivers and fences that lead the eye into the picture"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Framing within the frame",
+"f": "Using doorways, windows and branches to frame your subject"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Symmetry",
+"f": "Reflections, buildings and patterns that create calm, balanced images"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Breaking symmetry on purpose",
+"f": "Adding one off-centre element to make a symmetric scene more interesting"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Patterns and repetition",
+"f": "Spotting repeating shapes and colours in everyday places"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Negative space",
+"f": "Leaving empty areas around a subject to create calm and focus"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Simplify the background",
+"f": "Moving your feet to remove poles, signs and clutter behind the subject"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Foreground interest",
+"f": "Adding something close to the lens to give depth to wide scenes"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Changing your angle",
+"f": "Shooting from low down or high up to see familiar things in a new way"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Eye-level shots",
+"f": "When shooting at the subject's eye level creates a real connection"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Odd numbers",
+"f": "Why groups of three or five often look more natural than pairs"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Diagonals",
+"f": "Using diagonal lines to add energy and movement to a photo"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Curves and S-shapes",
+"f": "Winding paths and rivers that give a gentle flow to the image"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Balance and visual weight",
+"f": "How size, colour and brightness make elements feel heavy or light"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Edges of the frame",
+"f": "Checking corners and edges for distractions before you shoot"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Cropping in camera",
+"f": "Deciding what to leave out while you shoot instead of later"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Point of view and story",
+"f": "How camera height and distance change what a photo says"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Scale and size",
+"f": "Including a person or object to show how big something really is"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Texture",
+"f": "Bringing out rough, smooth and soft surfaces with side light"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Shapes and forms",
+"f": "Seeing circles, triangles and squares hidden in everyday scenes"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Colour as the subject",
+"f": "Building a photo around one strong colour"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Complementary colours",
+"f": "Pairs like blue and orange that make each other stand out"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Minimalism",
+"f": "Photos with very few elements and lots of simplicity"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Layers in a scene",
+"f": "Composing with a foreground, a middle ground and a background"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Rules can bend",
+"f": "When breaking a composition rule makes a stronger picture"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: composition toolbox",
+"f": "Recap of composition with a ten-photo walk using a different technique each time"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Light is everything",
+"f": "Why photography literally means drawing with light"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Hard and soft light",
+"f": "Sharp shadows from direct sun versus gentle shadows from clouds or shade"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Direction of light",
+"f": "Front, side and back light and how each one shapes a subject"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Side light for depth",
+"f": "Using side light to reveal shape, texture and volume"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Backlight and glow",
+"f": "Shooting towards the light for rim light and glowing hair"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Golden hour",
+"f": "The warm, soft light shortly after sunrise and before sunset"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Blue hour",
+"f": "The calm, blue light just before sunrise and just after sunset"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Midday sun survival",
+"f": "Finding shade and bold graphic shots when the sun is high"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Cloudy days are gifts",
+"f": "Why overcast light is perfect for portraits and flowers"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Window light",
+"f": "Using a simple window as a beautiful, soft light source"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Shadows as subjects",
+"f": "Making shadows the main character of the photo"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Reflections",
+"f": "Puddles, glass and water that double a scene"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Colour temperature",
+"f": "Warm and cool light, from candlelight to blue shade"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "White balance presets",
+"f": "Daylight, cloudy, shade and tungsten settings for natural colours"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Indoor light challenges",
+"f": "Mixed lamps, low light and how to keep indoor photos natural"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Using a reflector",
+"f": "Bouncing light into shadows with a white card or a foil reflector"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Switching off the auto flash",
+"f": "Why the built-in flash often looks flat and when to turn it off"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Silhouettes on purpose",
+"f": "Exposing for a bright sky to turn subjects into dark shapes"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Lens flare",
+"f": "When flare adds atmosphere and when to block it with your hand"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "City lights after dark",
+"f": "Shop windows, street lamps and neon signs as light sources"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Watching the light change",
+"f": "Returning to one place at different times to see the light change"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Light and mood",
+"f": "How bright, airy light and dark, low light create different feelings"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "High-key photos",
+"f": "Bright, light-toned images with very few shadows"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Low-key photos",
+"f": "Dark, dramatic images where light reveals only part of the subject"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Light on faces",
+"f": "Simple ways to flatter faces with natural light"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Catchlights",
+"f": "The small reflections in eyes that bring portraits to life"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Light through things",
+"f": "Leaves, curtains and coloured glass that filter and colour the light"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Weather and light",
+"f": "Fog, rain and dramatic clouds as moody photo opportunities"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Seasonal light",
+"f": "How light changes from summer to winter and what that means for photos"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: reading light",
+"f": "Recap of light quality, direction and colour with a one-subject light diary"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Everyday photography",
+"f": "Finding photo ideas at home, at work and on your daily route"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Photographing food",
+"f": "Window light, angles and simple styling for tasty food photos"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Photographing pets",
+"f": "Patience, eye level and treats for great pet portraits"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Flowers and plants",
+"f": "Soft light, clean backgrounds and getting close to petals"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "First landscapes",
+"f": "Choosing a focal point and a strong foreground for landscape shots"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Skies and clouds",
+"f": "Making the sky part of the story and giving it the right amount of space"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Water basics",
+"f": "Lakes, rivers and the sea, from calm reflections to splashing waves"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Buildings and architecture",
+"f": "Lines, symmetry and looking up at structures"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Travel snapshots",
+"f": "Capturing the feel of a place beyond the famous postcard view"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Details tell stories",
+"f": "Close-ups of hands, textures and objects that reveal a place or a person"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Photographing friends",
+"f": "Relaxed portraits of people you know, with natural expressions"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Candid moments",
+"f": "Capturing real moments rather than posed smiles"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Group photos",
+"f": "Arranging groups so everyone is visible and looks good"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Selfies with style",
+"f": "Better selfies through light, angle and background"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Children at play",
+"f": "Shooting at their height, being quick and keeping it fun, with parents' consent"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Sports and action basics",
+"f": "Burst mode, fast shutter speeds and anticipating the moment"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Events and celebrations",
+"f": "Telling the story of a party, a wedding or a festival in photos"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Markets and street life",
+"f": "Colours, faces and atmosphere in busy public places, shot respectfully"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Asking permission kindly",
+"f": "How to ask strangers for a portrait and respect their answer"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Museums and indoor spaces",
+"f": "Low light, photo rules and finding interesting angles indoors"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Photographing art and objects",
+"f": "Even light and straight angles for paintings and objects"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Photo walks",
+"f": "Exploring a neighbourhood slowly with your camera"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "One focal length day",
+"f": "Using only one zoom setting for a whole day to train your eye"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "The 30-photo challenge",
+"f": "Shooting one small area from many angles to see more"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Choosing your best shots",
+"f": "How to pick the strongest photos and let the weaker ones go"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Basic phone editing",
+"f": "Brightness, contrast, crop and straighten in a simple editing app"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Easy on the filters",
+"f": "Keeping edits natural and consistent"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Sharing your photos",
+"f": "Choosing a small set, writing captions and receiving feedback"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Learning from feedback",
+"f": "Asking good questions about your photos and staying motivated"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner portfolio",
+"f": "Pick your ten best beginner photos and describe what you learned from each"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to intermediate",
+"f": "What changes now: taking control of settings and shooting with intention"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Aperture priority mode",
+"f": "Choosing the aperture while the camera sets the shutter speed"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Shutter priority mode",
+"f": "Choosing the shutter speed for motion while the camera sets the aperture"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Full manual mode",
+"f": "Setting aperture, shutter speed and ISO yourself, step by step"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Auto ISO in manual mode",
+"f": "Combining manual control with automatic ISO for changing light"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Stops of light",
+"f": "Understanding stops: doubling or halving the light with each change"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "The histogram",
+"f": "Reading the graph of tones to judge exposure accurately"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Highlight warnings",
+"f": "Using the blinking highlight alert to spot blown-out areas"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Protecting the highlights",
+"f": "Why lost highlights are hard to recover and how to avoid losing them"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Dynamic range",
+"f": "How wide a range from dark to bright a sensor can record"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Shooting RAW",
+"f": "What RAW files are and why they give more editing flexibility"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Custom white balance",
+"f": "Setting white balance with a grey card for accurate colours"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Metering modes",
+"f": "Evaluative, centre-weighted and spot metering and when to use each"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Exposure lock",
+"f": "Locking exposure on one area and then recomposing"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Back-button focus",
+"f": "Separating focus from the shutter button for more control"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Focus and recompose",
+"f": "Focusing on the subject, then reframing, and its limits at wide apertures"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Tracking moving subjects",
+"f": "Continuous autofocus and tracking areas for action"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Manual focus",
+"f": "When manual focus beats autofocus, with focus peaking and magnification"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Depth of field in depth",
+"f": "How aperture, distance and focal length control what is sharp"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Hyperfocal distance basics",
+"f": "Focusing to keep landscapes sharp from near to far"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Sharpness killers",
+"f": "Camera shake, missed focus and motion blur, and how to tell them apart"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "The reciprocal rule",
+"f": "A handy shutter speed guide to avoid shake when shooting handheld"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Image stabilisation",
+"f": "How stabilisation helps, and when it cannot help"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Using a tripod",
+"f": "Setting up a tripod and the creative doors it opens"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Self-timer and remote",
+"f": "Avoiding shake on a tripod with a timer or a remote release"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Noise and ISO in practice",
+"f": "Testing your camera's ISO limits and learning to accept some grain"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Bracketing",
+"f": "Taking several exposures of one scene for safety or later blending"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Camera menu tour",
+"f": "Useful settings to customise your camera for faster shooting"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Creating a shooting routine",
+"f": "A quick checklist to run before every shoot"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: total control",
+"f": "Recap of modes, metering and focus with a manual-only practice shoot"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Focal length explained",
+"f": "What millimetres mean and how they change the field of view"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Wide-angle lenses",
+"f": "Showing more of a scene and exaggerating depth"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Wide-angle pitfalls",
+"f": "Distortion, tilted verticals and stretched faces near the edges"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Standard lenses",
+"f": "Why focal lengths around 50mm feel natural to the eye"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Telephoto lenses",
+"f": "Bringing distant subjects closer and simplifying backgrounds"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "The compression effect",
+"f": "How shooting from far with a telephoto makes backgrounds look closer"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Prime versus zoom",
+"f": "Fixed focal lengths and zoom lenses: the strengths of each"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Crop factor",
+"f": "How sensor size changes the field of view of a lens"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Sensor sizes",
+"f": "Phone, crop and full-frame sensors and what they mean for your images"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Macro photography basics",
+"f": "Getting very close to small subjects with macro lenses or modes"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Macro light and focus",
+"f": "Tiny depth of field, steady support and soft light for close-ups"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Bokeh",
+"f": "The quality of out-of-focus areas and how to create pleasing bokeh"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Lens filters overview",
+"f": "UV, polarising and neutral density filters and what each one does"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Polarising filters",
+"f": "Reducing reflections and deepening blue skies"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Lens care and storage",
+"f": "Keeping lenses clean, dry and protected"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Phone lenses and modes",
+"f": "Using the wide, main and tele cameras and portrait mode wisely"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Choosing your next lens",
+"f": "Matching a lens to the subjects you love most"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Creative motion choices",
+"f": "Choosing between freezing and blurring movement to tell a story"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Panning",
+"f": "Following a moving subject with a slow shutter for a sharp subject and streaky background"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Intentional camera movement",
+"f": "Moving the camera during the exposure for painterly abstracts"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Long exposure in daylight",
+"f": "Using ND filters to smooth water and clouds"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Silky waterfalls",
+"f": "Shutter speeds and setup for smooth, flowing water"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Light trails",
+"f": "Capturing car lights at night as glowing lines"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Night city photography",
+"f": "Exposure, tripod and white balance for urban night scenes"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Photographing the moon",
+"f": "Exposing for the bright moon and showing its surface detail"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Fireworks",
+"f": "Tripod, bulb mode and timing for colourful bursts"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Low light without flash",
+"f": "Wide apertures, higher ISO and steady hands indoors"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Concerts and stage light",
+"f": "Fast lenses, changing colours and respecting venue rules"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Rainy day photography",
+"f": "Reflections, umbrellas and protecting your gear from water"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: lenses and motion",
+"f": "Recap of focal lengths and shutter effects with a motion photo challenge"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Portrait foundations",
+"f": "What makes a portrait more than a picture of a face"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Directing people gently",
+"f": "Simple prompts that relax people and create natural poses"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Posing basics",
+"f": "Angles, posture and hands for flattering portraits"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Portrait focal lengths",
+"f": "Why slightly longer lenses often flatter faces"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Backgrounds for portraits",
+"f": "Choosing simple, complementary backgrounds"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Open shade portraits",
+"f": "Soft, even light for faces on sunny days"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Backlit portraits",
+"f": "Glowing rim light and how to expose the face correctly"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Environmental portraits",
+"f": "Showing people in places that tell their story"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Self-portraits",
+"f": "Using a timer or remote to tell your own story"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Street photography basics",
+"f": "Observing everyday life in public spaces with respect"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Street: waiting for the moment",
+"f": "Finding a good background and waiting for someone to complete the scene"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Street: light and shadow",
+"f": "Using strong light and deep shadows in city streets"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Street ethics and kindness",
+"f": "Respecting privacy, local customs and people's wishes"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Planning a travel shoot",
+"f": "Researching places, light and local culture before a trip"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Telling a travel story",
+"f": "Mixing wide scenes, portraits and details to show a place"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Respecting local cultures",
+"f": "Learning customs and asking before photographing people or sacred places"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Landscape planning",
+"f": "Using weather, sun position and maps to plan a shot"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Landscape composition deeper",
+"f": "Foregrounds, layers and leading lines in big scenes"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Mountains and hills",
+"f": "Scale, haze and side light in mountain scenes"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Seascapes",
+"f": "Waves, tides and long exposures by the sea, always staying safe"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Forests",
+"f": "Finding order in busy woods with fog, light rays and patterns"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Deserts and open spaces",
+"f": "Shapes, dunes and minimalism in wide landscapes"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Wildlife basics",
+"f": "Patience, distance and respect for animals in nature"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Birds",
+"f": "Fast shutter speeds, long lenses and learning bird behaviour"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Animal welfare first",
+"f": "Never disturbing animals or their habitats for a photo"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Architecture deeper",
+"f": "Correcting verticals and finding abstract details in buildings"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Interiors",
+"f": "Wide lenses, balanced light and straight lines indoors"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Product photos at home",
+"f": "Simple setups for objects with paper backdrops and window light"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Food styling tips",
+"f": "Props, colour and storytelling on the table"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: genres tour",
+"f": "Recap of photo genres and choosing the one that excites you most"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Introduction to editing software",
+"f": "Overview of editing apps and the idea of non-destructive editing"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "The editing workflow",
+"f": "Import, select, edit and export in a clear order"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Exposure and contrast edits",
+"f": "Global adjustments that set the foundation of an edit"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Highlights and shadows",
+"f": "Recovering detail at both ends of the tonal range"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Whites and blacks",
+"f": "Setting the end points of the tonal range for extra punch"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "White balance in editing",
+"f": "Correcting or creatively shifting colour temperature"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Vibrance and saturation",
+"f": "The difference between the two and how to avoid overdone colour"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Tone curves",
+"f": "Shaping contrast precisely with the curve tool"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Cropping and straightening",
+"f": "Improving composition after the shot without losing too much quality"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Local adjustments",
+"f": "Brushes, gradients and masks to edit specific areas"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Sharpening and noise reduction",
+"f": "Balancing fine detail and smoothness"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Removing distractions",
+"f": "Healing and clone tools for small, honest fixes"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Black and white conversion",
+"f": "Seeing in tones and converting colour to monochrome"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Black and white contrast",
+"f": "Using colour channels to shape monochrome images"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "A consistent editing style",
+"f": "Presets and keeping a series visually coherent"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Editing ethics",
+"f": "Where enhancement ends and misleading manipulation begins"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Exporting for web and print",
+"f": "Sizes, formats and colour spaces for different uses"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Calibrating your screen",
+"f": "Why screen brightness and colour affect your edits"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Advanced phone editing",
+"f": "Using advanced mobile editors and RAW on your phone"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Review: editing workflow",
+"f": "Recap of editing steps with a before-and-after challenge"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Introduction to flash",
+"f": "How flash works and why it can look natural"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Flash power and range",
+"f": "Manual flash power, guide numbers and distance"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Bounce flash",
+"f": "Bouncing flash off ceilings and walls for soft light"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Fill flash outdoors",
+"f": "Lighting shadows on faces in bright sun"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Flash sync speed",
+"f": "The shutter speed limit with flash and why it matters"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Dragging the shutter",
+"f": "Mixing flash with ambient light by using slower shutter speeds"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Colour theory for photographers",
+"f": "The colour wheel and harmonious colour combinations"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Colour moods",
+"f": "How warm, cool and muted palettes change the emotion of a photo"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Monochromatic colour",
+"f": "Photos built from shades of a single colour"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Visual storytelling basics",
+"f": "Beginning, middle and end in a single image or a series"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Photo series",
+"f": "Planning a small series of photos around one idea"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Sequencing photos",
+"f": "Ordering images so they flow and tell a story"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Writing captions",
+"f": "Adding context without explaining everything"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Seeing like a photographer",
+"f": "Training your attention to light, shapes and moments every day"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Shooting with a theme",
+"f": "Weekly themes that spark creativity"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Beating creative blocks",
+"f": "Simple constraints and games to get unstuck"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Learning from photo books",
+"f": "Studying how great photographers sequence their work"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Critiquing photos",
+"f": "A kind, structured way to discuss strengths and improvements"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Your intermediate portfolio",
+"f": "Choosing a coherent set of your best intermediate work"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate journey",
+"f": "Recap of control, lenses, genres and editing with a reflection on your growth"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to advanced",
+"f": "Moving from good technique to a personal vision"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Off-camera flash",
+"f": "Moving the flash away from the camera for shape and drama"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Triggers and wireless flash",
+"f": "Radio triggers and optical systems to fire remote flashes"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Light modifiers",
+"f": "Umbrellas, softboxes and grids and how they shape light"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "The inverse square law",
+"f": "Why light falls off quickly with distance and how to use it"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "One-light portraits",
+"f": "Creating beautiful portraits with a single light"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Classic lighting patterns",
+"f": "Rembrandt, loop, butterfly and split lighting"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Two-light setups",
+"f": "Adding a rim light or a fill light to a key light"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Lighting backgrounds",
+"f": "Separating subject and background with light"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Gels and coloured light",
+"f": "Using coloured filters on flashes to create mood"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "High-speed sync",
+"f": "Using flash above sync speed for wide apertures in sunlight"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Continuous LED light",
+"f": "LED panels for photo and video work"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Home studio setup",
+"f": "Building a small studio in a spare corner"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Advanced product lighting",
+"f": "Controlling reflections on glass and shiny objects"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Flash at sunset",
+"f": "Balancing a dramatic sky with a well-lit subject"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Freezing action with flash",
+"f": "Using very short flash durations for splashes"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Light painting",
+"f": "Drawing with torches during long exposures"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "A full lighting session",
+"f": "A complete portrait session using everything you learned"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Precise flash exposure",
+"f": "Testing and fine-tuning flash exposure step by step"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: artificial light",
+"f": "Recap of flash and studio light with a three-setup challenge"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Astrophotography basics",
+"f": "Dark skies, wide lenses and planning for stars"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "The Milky Way",
+"f": "Seasons, locations and settings to capture our galaxy"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Star trails",
+"f": "Stacking many exposures to show the Earth's rotation"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Planning with moon phases",
+"f": "Using sun, moon and star planning tools"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Night landscape foregrounds",
+"f": "Lighting or blending the foreground in night scenes"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Focus stacking",
+"f": "Combining images focused at different distances for full sharpness"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "HDR blending",
+"f": "Merging bracketed exposures for scenes with extreme contrast"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Panoramas",
+"f": "Shooting and stitching several frames for wide views"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Time-lapse",
+"f": "Shooting at intervals and turning the frames into a moving sequence"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Drone photography basics",
+"f": "Aerial perspectives, local rules and responsible flying"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Underwater photography",
+"f": "Housings, light underwater and staying safe in the water"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Infrared photography",
+"f": "Recording invisible light and its dreamy look"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Film photography",
+"f": "How film works and why many photographers still love it"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Developing and scanning film",
+"f": "An overview of processing and digitising negatives"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Instant photography",
+"f": "The charm and the limits of instant cameras"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Alternative processes",
+"f": "Cyanotypes and other historic printing methods"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Mirrorless versus DSLR",
+"f": "How the two camera types differ in practice"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Video basics for photographers",
+"f": "Frame rates, shutter speed for video and stable footage"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Computational photography",
+"f": "How phones combine many frames for night and portrait modes"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Review: special techniques",
+"f": "Recap of special techniques with one experiment of your choice"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Advanced editing workflow",
+"f": "Catalogues, keywords and efficient batch editing"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Colour grading",
+"f": "Shaping colour moods with split toning and colour wheels"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Luminosity masks",
+"f": "Precise edits based on brightness levels"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Dodge and burn",
+"f": "Guiding the eye by lightening and darkening areas"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Skin retouching basics",
+"f": "Careful portrait retouching that keeps real skin texture"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Natural retouching",
+"f": "Respectful edits that keep people looking like themselves"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Compositing basics",
+"f": "Combining images, and labelling composites honestly"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Advanced black and white",
+"f": "Tonal separation, toning and the idea of the zone system"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Colour management",
+"f": "Colour profiles, sRGB and Adobe RGB, and consistent output"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Printing your photos",
+"f": "Paper types, print sizes and soft proofing"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Making a photo book",
+"f": "Selecting, sequencing and designing a printed book"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Framing and displaying",
+"f": "Mats, frames and hanging prints at home"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Archiving and backups",
+"f": "The 3-2-1 backup rule and long-term storage"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Metadata and copyright basics",
+"f": "Adding your details to files and understanding image rights in general"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Review: from file to print",
+"f": "Recap of advanced editing and output by printing one favourite photo"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "History: the first photographs",
+"f": "Niépce, Daguerre and the birth of photography in the 1820s and 1830s"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "History: Talbot and the negative",
+"f": "How Fox Talbot's negative-positive process made copies possible"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "History: cameras for everyone",
+"f": "Kodak's 1888 camera and the slogan 'You press the button, we do the rest'"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "History: colour arrives",
+"f": "The Autochrome plates of the Lumière brothers and the long road to colour"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Ansel Adams and the landscape",
+"f": "Adams's black and white landscapes and the zone system"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Henri Cartier-Bresson",
+"f": "The decisive moment and the art of street photography"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Dorothea Lange",
+"f": "Documentary photography and deep empathy in portraits"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Vivian Maier",
+"f": "A nanny whose remarkable street photos were discovered decades later"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Sebastião Salgado",
+"f": "Grand black and white projects about people and nature"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Women pioneers of photography",
+"f": "Julia Margaret Cameron, Berenice Abbott and other pioneers"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Portrait icons",
+"f": "Richard Avedon, Annie Leibovitz and the power of the portrait"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Colour photography pioneers",
+"f": "William Eggleston, Saul Leiter and the art of colour"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Photography around the world",
+"f": "Celebrated photographers from Japan, Africa, Latin America and beyond"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Photography and painting",
+"f": "How the two arts influenced each other"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Review: learning from masters",
+"f": "Recap of photo history with a picture inspired by your favourite master"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Finding your voice",
+"f": "What personal style means and how it grows over time"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Your visual signature",
+"f": "Recurring subjects, colours and compositions in your work"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Long-term projects",
+"f": "Choosing a subject you can explore for months"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Writing an artist statement",
+"f": "Explaining your project clearly and simply"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Conceptual photography",
+"f": "Expressing ideas and feelings rather than recording scenes"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Abstract photography",
+"f": "Shapes, colour and texture without an obvious subject"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Fine art photography",
+"f": "Creating images meant to be displayed and contemplated"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "The documentary approach",
+"f": "Telling true stories with patience and honesty"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Photo essays",
+"f": "Combining images and text into a complete story"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Collaborating with others",
+"f": "Working with models, stylists and other creatives"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Photographing your community",
+"f": "Projects about the people and places near you"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Cross-cultural photography",
+"f": "Showing other cultures with curiosity, respect and context"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "A seasonal project",
+"f": "Photographing one place through the whole year"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Photography and memory",
+"f": "Family photos, archives and preserving stories"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Review: personal vision",
+"f": "Recap and a written plan for your own long-term project"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Building a portfolio",
+"f": "Selecting a tight, consistent body of work"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Your online presence",
+"f": "Sharing work on websites and social platforms with intention"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Photography communities",
+"f": "Clubs, photo walks and online groups that help you grow"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Photo competitions",
+"f": "How competitions work and how to choose good ones"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Exhibiting your work",
+"f": "Small shows in cafes, libraries and community spaces"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Selling prints: the basics",
+"f": "Editions, presentation and general approaches to pricing"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Working with clients",
+"f": "Listening, planning and delivering on expectations"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Event photography workflow",
+"f": "Shot lists, backups and delivering on time"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Model releases and consent",
+"f": "When written consent is usually needed, as general information only"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Teaching others",
+"f": "Sharing what you know to deepen your own skills"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Mentors and feedback",
+"f": "Finding people whose critique helps you grow"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Upgrading gear wisely",
+"f": "When new gear helps and when skill matters more"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Travel kit planning",
+"f": "Packing light and protecting gear on the road"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Photography and wellbeing",
+"f": "Using photography to slow down and notice beauty"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Review: sharing your work",
+"f": "Recap of portfolio and community with one public share of your work"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Final project planning",
+"f": "Choosing the theme of your 15-day final project"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Final project: research",
+"f": "Studying references and planning your shots"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Final project: first shoot",
+"f": "Starting with your strongest idea"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Final project: light study",
+"f": "Revisiting your subject in different light"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Final project: close and human",
+"f": "Adding portraits or close-up details to your story"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Final project: wide context",
+"f": "Showing the setting that frames your story"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Final project: experiment",
+"f": "Trying one technique you have never used before"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Final project: selection",
+"f": "Choosing the strongest images from all your shoots"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Final project: sequencing",
+"f": "Ordering the final selection into a story"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Final project: editing",
+"f": "Applying a consistent, careful edit to the series"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Final project: title and text",
+"f": "Naming the project and writing a short statement"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Final project: presentation",
+"f": "Sharing it as a book, print set, slideshow or online gallery"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Looking back at your year",
+"f": "Comparing your first photos with recent ones to see your growth"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your photography roadmap",
+"f": "Setting goals and choosing the next skills for the coming year"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating 365 days",
+"f": "Reflecting on the journey and choosing your favourite photo of the year"
+}
+]
+}

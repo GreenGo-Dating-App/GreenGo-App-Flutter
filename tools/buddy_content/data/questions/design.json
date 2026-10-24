@@ -1,0 +1,1305 @@
+{
+"topic": "design",
+"questions": [
+{
+"id": "design-001",
+"lv": "any",
+"i18n": {
+"en": "What everyday object do you think is designed brilliantly, and why?",
+"de": "Welcher Alltagsgegenstand ist für dich genial gestaltet, und warum?",
+"es": "¿Qué objeto cotidiano crees que está brillantemente diseñado, y por qué?",
+"fr": "Quel objet du quotidien trouves-tu brillamment conçu, et pourquoi ?",
+"it": "Quale oggetto di tutti i giorni secondo te è progettato in modo geniale, e perché?",
+"pt": "Que objeto do dia a dia achas que está brilhantemente desenhado, e porquê?",
+"pt_BR": "Qual objeto do dia a dia você acha que tem um design brilhante, e por quê?"
+}
+},
+{
+"id": "design-002",
+"lv": "any",
+"i18n": {
+"en": "Which logo do you find the most memorable?",
+"de": "Welches Logo findest du am einprägsamsten?",
+"es": "¿Qué logotipo te parece más memorable?",
+"fr": "Quel logo trouves-tu le plus mémorable ?",
+"it": "Quale logo trovi più memorabile?",
+"pt": "Que logótipo achas mais memorável?",
+"pt_BR": "Qual logo você acha mais marcante?"
+}
+},
+{
+"id": "design-003",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite colour combination, and where did you first notice it?",
+"de": "Was ist deine Lieblingsfarbkombination, und wo ist sie dir zuerst aufgefallen?",
+"es": "¿Cuál es tu combinación de colores favorita y dónde la notaste por primera vez?",
+"fr": "Quelle est ta combinaison de couleurs préférée, et où l'as-tu remarquée pour la première fois ?",
+"it": "Qual è la tua combinazione di colori preferita, e dove l'hai notata la prima volta?",
+"pt": "Qual é a tua combinação de cores preferida, e onde a reparaste pela primeira vez?",
+"pt_BR": "Qual é sua combinação de cores favorita, e onde você a notou pela primeira vez?"
+}
+},
+{
+"id": "design-004",
+"lv": "any",
+"i18n": {
+"en": "Is there a product that frustrates you every time you use it?",
+"de": "Gibt es ein Produkt, das dich bei jeder Benutzung nervt?",
+"es": "¿Hay algún producto que te frustre cada vez que lo usas?",
+"fr": "Y a-t-il un produit qui t'agace chaque fois que tu l'utilises ?",
+"it": "C'è un prodotto che ti fa arrabbiare ogni volta che lo usi?",
+"pt": "Há algum produto que te irrita sempre que o usas?",
+"pt_BR": "Tem algum produto que te irrita toda vez que você usa?"
+}
+},
+{
+"id": "design-005",
+"lv": "any",
+"i18n": {
+"en": "Which app do you enjoy using most because of its design?",
+"de": "Welche App benutzt du wegen ihres Designs am liebsten?",
+"es": "¿Qué app disfrutas más usando por su diseño?",
+"fr": "Quelle appli aimes-tu le plus utiliser grâce à son design ?",
+"it": "Quale app ti piace usare di più per il suo design?",
+"pt": "Que app gostas mais de usar por causa do design?",
+"pt_BR": "Qual app você mais gosta de usar por causa do design?"
+}
+},
+{
+"id": "design-006",
+"lv": "any",
+"i18n": {
+"en": "What kind of design interests you most: graphics, products, interiors or apps?",
+"de": "Welche Art von Design interessiert dich am meisten: Grafik, Produkte, Räume oder Apps?",
+"es": "¿Qué tipo de diseño te interesa más: gráfico, de producto, de interiores o de apps?",
+"fr": "Quel type de design t'intéresse le plus : graphisme, produits, intérieurs ou applis ?",
+"it": "Quale tipo di design ti interessa di più: grafica, prodotti, interni o app?",
+"pt": "Que tipo de design te interessa mais: gráfico, de produto, de interiores ou de apps?",
+"pt_BR": "Que tipo de design mais te interessa: gráfico, de produto, de interiores ou de apps?"
+}
+},
+{
+"id": "design-007",
+"lv": "any",
+"i18n": {
+"en": "Is there a poster or book cover you still remember years later?",
+"de": "Gibt es ein Plakat oder ein Buchcover, an das du dich noch nach Jahren erinnerst?",
+"es": "¿Hay algún cartel o portada de libro que todavía recuerdes años después?",
+"fr": "Y a-t-il une affiche ou une couverture de livre dont tu te souviens encore des années après ?",
+"it": "C'è un manifesto o una copertina di libro che ricordi ancora dopo anni?",
+"pt": "Há algum cartaz ou capa de livro de que ainda te lembras anos depois?",
+"pt_BR": "Tem algum cartaz ou capa de livro de que você ainda se lembra anos depois?"
+}
+},
+{
+"id": "design-008",
+"lv": "any",
+"i18n": {
+"en": "What does good design mean to you in one sentence?",
+"de": "Was bedeutet gutes Design für dich, in einem Satz?",
+"es": "¿Qué significa para ti el buen diseño en una frase?",
+"fr": "Que signifie le bon design pour toi, en une phrase ?",
+"it": "Che cosa significa per te un buon design, in una frase?",
+"pt": "O que significa para ti o bom design, numa frase?",
+"pt_BR": "O que é um bom design pra você, em uma frase?"
+}
+},
+{
+"id": "design-009",
+"lv": "any",
+"i18n": {
+"en": "Which city have you visited that felt especially well designed?",
+"de": "Welche Stadt, die du besucht hast, wirkte besonders gut gestaltet?",
+"es": "¿Qué ciudad que has visitado te pareció especialmente bien diseñada?",
+"fr": "Quelle ville visitée t'a semblé particulièrement bien conçue ?",
+"it": "Quale città che hai visitato ti è sembrata particolarmente ben progettata?",
+"pt": "Que cidade que visitaste te pareceu especialmente bem desenhada?",
+"pt_BR": "Qual cidade que você visitou pareceu especialmente bem planejada?"
+}
+},
+{
+"id": "design-010",
+"lv": "any",
+"i18n": {
+"en": "What design style feels most like you: minimal, colourful, vintage or bold?",
+"de": "Welcher Designstil passt am besten zu dir: minimalistisch, bunt, vintage oder auffällig?",
+"es": "¿Qué estilo de diseño va más contigo: minimalista, colorido, vintage o atrevido?",
+"fr": "Quel style de design te ressemble le plus : minimaliste, coloré, vintage ou audacieux ?",
+"it": "Quale stile di design ti rappresenta di più: minimal, colorato, vintage o audace?",
+"pt": "Que estilo de design tem mais a ver contigo: minimalista, colorido, vintage ou arrojado?",
+"pt_BR": "Qual estilo de design tem mais a ver com você: minimalista, colorido, vintage ou ousado?"
+}
+},
+{
+"id": "design-011",
+"lv": "any",
+"i18n": {
+"en": "What is an object from your culture that you think is beautifully made?",
+"de": "Welcher Gegenstand aus deiner Kultur ist für dich besonders schön gemacht?",
+"es": "¿Qué objeto de tu cultura crees que está bellamente hecho?",
+"fr": "Quel objet de ta culture trouves-tu magnifiquement fabriqué ?",
+"it": "Quale oggetto della tua cultura trovi realizzato in modo splendido?",
+"pt": "Que objeto da tua cultura achas que é lindamente feito?",
+"pt_BR": "Qual objeto da sua cultura você acha lindamente feito?"
+}
+},
+{
+"id": "design-012",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite font? What do you like about it?",
+"de": "Hast du eine Lieblingsschrift? Was gefällt dir an ihr?",
+"es": "¿Tienes una tipografía favorita? ¿Qué te gusta de ella?",
+"fr": "As-tu une police préférée ? Qu'est-ce qui te plaît chez elle ?",
+"it": "Hai un carattere tipografico preferito? Che cosa ti piace?",
+"pt": "Tens um tipo de letra preferido? O que gostas nele?",
+"pt_BR": "Você tem uma fonte favorita? O que você gosta nela?"
+}
+},
+{
+"id": "design-013",
+"lv": "any",
+"i18n": {
+"en": "Which packaging made you want to buy a product just by looking at it?",
+"de": "Welche Verpackung hat dich allein durch ihren Anblick zum Kauf verleitet?",
+"es": "¿Qué envase te dio ganas de comprar un producto solo con verlo?",
+"fr": "Quel emballage t'a donné envie d'acheter un produit rien qu'en le regardant ?",
+"it": "Quale confezione ti ha fatto venire voglia di comprare un prodotto solo guardandola?",
+"pt": "Que embalagem te fez querer comprar um produto só de olhar para ela?",
+"pt_BR": "Qual embalagem te fez querer comprar um produto só de olhar pra ela?"
+}
+},
+{
+"id": "design-014",
+"lv": "any",
+"i18n": {
+"en": "What room in your home do you think is designed best, and why?",
+"de": "Welcher Raum bei dir zu Hause ist am besten gestaltet, und warum?",
+"es": "¿Qué espacio de tu casa crees que está mejor diseñado, y por qué?",
+"fr": "Quelle pièce de ta maison est la mieux conçue selon toi, et pourquoi ?",
+"it": "Quale stanza di casa tua secondo te è progettata meglio, e perché?",
+"pt": "Que divisão da tua casa achas que está mais bem pensada, e porquê?",
+"pt_BR": "Qual cômodo da sua casa você acha que tem o melhor design, e por quê?"
+}
+},
+{
+"id": "design-015",
+"lv": "any",
+"i18n": {
+"en": "Which famous designer or design movement would you like to know more about?",
+"de": "Über welche bekannte Designerin, welchen Designer oder welche Bewegung möchtest du mehr wissen?",
+"es": "¿Sobre qué diseñador famoso o movimiento de diseño te gustaría saber más?",
+"fr": "Sur quel designer célèbre ou quel mouvement aimerais-tu en savoir plus ?",
+"it": "Di quale designer famoso o movimento vorresti sapere di più?",
+"pt": "Sobre que designer famoso ou movimento de design gostavas de saber mais?",
+"pt_BR": "Sobre qual designer famoso ou movimento de design você gostaria de saber mais?"
+}
+},
+{
+"id": "design-016",
+"lv": "any",
+"i18n": {
+"en": "What colour makes you feel calm, and which one gives you energy?",
+"de": "Welche Farbe beruhigt dich, und welche gibt dir Energie?",
+"es": "¿Qué color te transmite calma y cuál te da energía?",
+"fr": "Quelle couleur te calme, et laquelle te donne de l'énergie ?",
+"it": "Quale colore ti dà calma e quale ti dà energia?",
+"pt": "Que cor te transmite calma, e qual te dá energia?",
+"pt_BR": "Qual cor te acalma e qual te dá energia?"
+}
+},
+{
+"id": "design-017",
+"lv": "any",
+"i18n": {
+"en": "If you could redesign one thing in your city, what would it be?",
+"de": "Wenn du in deiner Stadt eine Sache neu gestalten könntest, was wäre das?",
+"es": "Si pudieras rediseñar una cosa de tu ciudad, ¿qué sería?",
+"fr": "Si tu pouvais redessiner une chose dans ta ville, laquelle serait-ce ?",
+"it": "Se potessi riprogettare una cosa della tua città, quale sarebbe?",
+"pt": "Se pudesses redesenhar uma coisa na tua cidade, o que seria?",
+"pt_BR": "Se você pudesse redesenhar uma coisa na sua cidade, o que seria?"
+}
+},
+{
+"id": "design-018",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer handmade objects or sleek factory-made ones?",
+"de": "Magst du lieber handgemachte Dinge oder elegante Industrieprodukte?",
+"es": "¿Prefieres los objetos hechos a mano o los fabricados en serie con acabado pulido?",
+"fr": "Préfères-tu les objets faits main ou les objets industriels épurés ?",
+"it": "Preferisci gli oggetti fatti a mano o quelli industriali dal design pulito?",
+"pt": "Preferes objetos feitos à mão ou os industriais de linhas elegantes?",
+"pt_BR": "Você prefere objetos feitos à mão ou os industriais de linhas elegantes?"
+}
+},
+{
+"id": "design-019",
+"lv": "any",
+"i18n": {
+"en": "What is the most beautiful sign or piece of street graphics you have seen?",
+"de": "Was ist das schönste Schild oder die schönste Straßengrafik, die du je gesehen hast?",
+"es": "¿Cuál es el cartel o gráfico callejero más bonito que has visto?",
+"fr": "Quelle est la plus belle enseigne ou le plus beau graphisme de rue que tu aies vu ?",
+"it": "Qual è l'insegna o la grafica di strada più bella che tu abbia mai visto?",
+"pt": "Qual é a placa ou grafismo de rua mais bonito que já viste?",
+"pt_BR": "Qual é a placa ou arte gráfica de rua mais bonita que você já viu?"
+}
+},
+{
+"id": "design-020",
+"lv": "any",
+"i18n": {
+"en": "Do you ever sketch or doodle ideas? What do you usually draw?",
+"de": "Skizzierst oder kritzelst du manchmal Ideen? Was zeichnest du meistens?",
+"es": "¿Alguna vez dibujas o garabateas ideas? ¿Qué sueles dibujar?",
+"fr": "T'arrive-t-il de dessiner ou griffonner des idées ? Que dessines-tu d'habitude ?",
+"it": "Ti capita di schizzare o scarabocchiare idee? Che cosa disegni di solito?",
+"pt": "Costumas esboçar ou rabiscar ideias? O que desenhas normalmente?",
+"pt_BR": "Você costuma esboçar ou rabiscar ideias? O que você mais desenha?"
+}
+},
+{
+"id": "design-021",
+"lv": "any",
+"i18n": {
+"en": "What chair have you sat in that felt perfectly designed?",
+"de": "Auf welchem Stuhl hast du schon gesessen, der perfekt gestaltet wirkte?",
+"es": "¿En qué silla te has sentado que te pareció perfectamente diseñada?",
+"fr": "Sur quelle chaise t'es-tu assis qui t'a semblé parfaitement conçue ?",
+"it": "Su quale sedia ti sei seduto che ti è sembrata progettata alla perfezione?",
+"pt": "Em que cadeira já te sentaste que te pareceu perfeitamente desenhada?",
+"pt_BR": "Em qual cadeira você já sentou que pareceu ter um design perfeito?"
+}
+},
+{
+"id": "design-022",
+"lv": "any",
+"i18n": {
+"en": "How do colours carry different meanings in your culture?",
+"de": "Welche Bedeutungen haben Farben in deiner Kultur?",
+"es": "¿Qué significados tienen los colores en tu cultura?",
+"fr": "Quelles significations les couleurs ont-elles dans ta culture ?",
+"it": "Che significati hanno i colori nella tua cultura?",
+"pt": "Que significados têm as cores na tua cultura?",
+"pt_BR": "Que significados as cores têm na sua cultura?"
+}
+},
+{
+"id": "design-023",
+"lv": "any",
+"i18n": {
+"en": "Which website or app would you love to redesign, and how?",
+"de": "Welche Website oder App würdest du gern neu gestalten, und wie?",
+"es": "¿Qué web o app te encantaría rediseñar, y cómo?",
+"fr": "Quel site ou quelle appli aimerais-tu redessiner, et comment ?",
+"it": "Quale sito o app ti piacerebbe riprogettare, e come?",
+"pt": "Que site ou app gostavas de redesenhar, e como?",
+"pt_BR": "Qual site ou app você adoraria redesenhar, e como?"
+}
+},
+{
+"id": "design-024",
+"lv": "any",
+"i18n": {
+"en": "What makes a design feel friendly to you?",
+"de": "Was lässt ein Design für dich freundlich wirken?",
+"es": "¿Qué hace que un diseño te parezca amable?",
+"fr": "Qu'est-ce qui rend un design chaleureux à tes yeux ?",
+"it": "Che cosa rende un design amichevole ai tuoi occhi?",
+"pt": "O que faz um design parecer acolhedor para ti?",
+"pt_BR": "O que faz um design parecer acolhedor pra você?"
+}
+},
+{
+"id": "design-025",
+"lv": "any",
+"i18n": {
+"en": "Do you notice fonts and layouts in menus, signs and magazines?",
+"de": "Achtest du auf Schriften und Layouts in Speisekarten, Schildern und Zeitschriften?",
+"es": "¿Te fijas en las tipografías y maquetaciones de menús, carteles y revistas?",
+"fr": "Remarques-tu les polices et les mises en page des menus, panneaux et magazines ?",
+"it": "Noti i caratteri e l'impaginazione di menu, insegne e riviste?",
+"pt": "Reparas nos tipos de letra e paginações de menus, placas e revistas?",
+"pt_BR": "Você repara nas fontes e diagramações de cardápios, placas e revistas?"
+}
+},
+{
+"id": "design-026",
+"lv": "any",
+"i18n": {
+"en": "Which design museum or exhibition would you love to visit?",
+"de": "Welches Designmuseum oder welche Ausstellung würdest du gern besuchen?",
+"es": "¿Qué museo o exposición de diseño te encantaría visitar?",
+"fr": "Quel musée ou quelle exposition de design aimerais-tu visiter ?",
+"it": "Quale museo o mostra di design ti piacerebbe visitare?",
+"pt": "Que museu ou exposição de design gostavas de visitar?",
+"pt_BR": "Qual museu ou exposição de design você adoraria visitar?"
+}
+},
+{
+"id": "design-027",
+"lv": "any",
+"i18n": {
+"en": "What object have you owned for years because it is so well made?",
+"de": "Welchen Gegenstand besitzt du seit Jahren, weil er so gut gemacht ist?",
+"es": "¿Qué objeto tienes desde hace años porque está muy bien hecho?",
+"fr": "Quel objet possèdes-tu depuis des années parce qu'il est si bien fait ?",
+"it": "Quale oggetto possiedi da anni perché è fatto così bene?",
+"pt": "Que objeto tens há anos por ser tão bem feito?",
+"pt_BR": "Qual objeto você tem há anos por ser tão bem feito?"
+}
+},
+{
+"id": "design-028",
+"lv": "any",
+"i18n": {
+"en": "Do you think simple designs are better than detailed ones? Why?",
+"de": "Findest du schlichte Designs besser als detailreiche? Warum?",
+"es": "¿Crees que los diseños sencillos son mejores que los detallados? ¿Por qué?",
+"fr": "Penses-tu que les designs simples sont meilleurs que les designs détaillés ? Pourquoi ?",
+"it": "Pensi che i design semplici siano migliori di quelli ricchi di dettagli? Perché?",
+"pt": "Achas que os designs simples são melhores do que os detalhados? Porquê?",
+"pt_BR": "Você acha que designs simples são melhores que os detalhados? Por quê?"
+}
+},
+{
+"id": "design-029",
+"lv": "any",
+"i18n": {
+"en": "Which brand do you recognise instantly just from its colours?",
+"de": "Welche Marke erkennst du sofort nur an ihren Farben?",
+"es": "¿Qué marca reconoces al instante solo por sus colores?",
+"fr": "Quelle marque reconnais-tu instantanément rien qu'à ses couleurs ?",
+"it": "Quale marchio riconosci subito solo dai suoi colori?",
+"pt": "Que marca reconheces logo só pelas cores?",
+"pt_BR": "Qual marca você reconhece na hora só pelas cores?"
+}
+},
+{
+"id": "design-030",
+"lv": "any",
+"i18n": {
+"en": "What is a design tradition from your country that you are proud of?",
+"de": "Auf welche Designtradition deines Landes bist du stolz?",
+"es": "¿De qué tradición de diseño de tu país te sientes orgulloso?",
+"fr": "De quelle tradition de design de ton pays es-tu fier ?",
+"it": "Di quale tradizione di design del tuo paese sei orgoglioso?",
+"pt": "De que tradição de design do teu país tens orgulho?",
+"pt_BR": "De qual tradição de design do seu país você se orgulha?"
+}
+},
+{
+"id": "design-031",
+"lv": "any",
+"i18n": {
+"en": "How would you design your perfect workspace?",
+"de": "Wie würdest du deinen perfekten Arbeitsplatz gestalten?",
+"es": "¿Cómo diseñarías tu espacio de trabajo perfecto?",
+"fr": "Comment concevrais-tu ton espace de travail idéal ?",
+"it": "Come progetteresti il tuo spazio di lavoro perfetto?",
+"pt": "Como desenharias o teu espaço de trabalho perfeito?",
+"pt_BR": "Como você planejaria seu espaço de trabalho perfeito?"
+}
+},
+{
+"id": "design-032",
+"lv": "any",
+"i18n": {
+"en": "Which gadget feels best in your hand, and why?",
+"de": "Welches Gerät liegt dir am besten in der Hand, und warum?",
+"es": "¿Qué aparato te resulta más agradable en la mano, y por qué?",
+"fr": "Quel appareil tient le mieux dans ta main, et pourquoi ?",
+"it": "Quale dispositivo ti sta meglio in mano, e perché?",
+"pt": "Que aparelho te assenta melhor na mão, e porquê?",
+"pt_BR": "Qual aparelho fica melhor na sua mão, e por quê?"
+}
+},
+{
+"id": "design-033",
+"lv": "any",
+"i18n": {
+"en": "What would you design if you had unlimited time and materials?",
+"de": "Was würdest du gestalten, wenn du unbegrenzt Zeit und Material hättest?",
+"es": "¿Qué diseñarías si tuvieras tiempo y materiales ilimitados?",
+"fr": "Que concevrais-tu si tu avais un temps et des matériaux illimités ?",
+"it": "Che cosa progetteresti se avessi tempo e materiali illimitati?",
+"pt": "O que desenharias se tivesses tempo e materiais ilimitados?",
+"pt_BR": "O que você criaria se tivesse tempo e materiais ilimitados?"
+}
+},
+{
+"id": "design-034",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer bright, colourful spaces or calm, neutral ones?",
+"de": "Magst du lieber helle, bunte Räume oder ruhige, neutrale?",
+"es": "¿Prefieres espacios luminosos y coloridos o tranquilos y neutros?",
+"fr": "Préfères-tu les espaces vifs et colorés ou calmes et neutres ?",
+"it": "Preferisci spazi vivaci e colorati o calmi e neutri?",
+"pt": "Preferes espaços vivos e coloridos ou calmos e neutros?",
+"pt_BR": "Você prefere ambientes vibrantes e coloridos ou calmos e neutros?"
+}
+},
+{
+"id": "design-035",
+"lv": "any",
+"i18n": {
+"en": "What sign or icon confused you while travelling abroad?",
+"de": "Welches Schild oder Symbol hat dich auf Reisen im Ausland verwirrt?",
+"es": "¿Qué señal o icono te confundió viajando por el extranjero?",
+"fr": "Quel panneau ou pictogramme t'a dérouté en voyage à l'étranger ?",
+"it": "Quale cartello o icona ti ha confuso durante un viaggio all'estero?",
+"pt": "Que sinal ou ícone te confundiu numa viagem ao estrangeiro?",
+"pt_BR": "Qual placa ou ícone te confundiu numa viagem ao exterior?"
+}
+},
+{
+"id": "design-036",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about products designed to be repaired instead of replaced?",
+"de": "Was hältst du von Produkten, die repariert statt ersetzt werden sollen?",
+"es": "¿Qué opinas de los productos diseñados para repararse en lugar de sustituirse?",
+"fr": "Que penses-tu des produits conçus pour être réparés plutôt que remplacés ?",
+"it": "Che ne pensi dei prodotti progettati per essere riparati invece che sostituiti?",
+"pt": "O que achas dos produtos pensados para serem reparados em vez de substituídos?",
+"pt_BR": "O que você acha de produtos pensados para serem consertados em vez de trocados?"
+}
+},
+{
+"id": "design-037",
+"lv": "any",
+"i18n": {
+"en": "Which shop or café impressed you with its design and atmosphere?",
+"de": "Welcher Laden oder welches Café hat dich mit Design und Atmosphäre beeindruckt?",
+"es": "¿Qué tienda o cafetería te impresionó por su diseño y ambiente?",
+"fr": "Quelle boutique ou quel café t'a impressionné par son design et son ambiance ?",
+"it": "Quale negozio o caffè ti ha colpito per il design e l'atmosfera?",
+"pt": "Que loja ou café te impressionou pelo design e pelo ambiente?",
+"pt_BR": "Qual loja ou café te impressionou pelo design e pelo clima?"
+}
+},
+{
+"id": "design-038",
+"lv": "any",
+"i18n": {
+"en": "Would you rather design a logo, a chair or an app? Why?",
+"de": "Würdest du lieber ein Logo, einen Stuhl oder eine App gestalten? Warum?",
+"es": "¿Preferirías diseñar un logotipo, una silla o una app? ¿Por qué?",
+"fr": "Préférerais-tu concevoir un logo, une chaise ou une appli ? Pourquoi ?",
+"it": "Preferiresti progettare un logo, una sedia o un'app? Perché?",
+"pt": "Preferias desenhar um logótipo, uma cadeira ou uma app? Porquê?",
+"pt_BR": "Você preferiria criar um logo, uma cadeira ou um app? Por quê?"
+}
+},
+{
+"id": "design-039",
+"lv": "any",
+"i18n": {
+"en": "What trend in design do you love, and which one do you hope disappears?",
+"de": "Welchen Designtrend liebst du, und welcher sollte deiner Meinung nach verschwinden?",
+"es": "¿Qué tendencia de diseño te encanta y cuál esperas que desaparezca?",
+"fr": "Quelle tendance du design adores-tu, et laquelle espères-tu voir disparaître ?",
+"it": "Quale tendenza del design ami e quale speri che sparisca?",
+"pt": "Que tendência de design adoras, e qual esperas que desapareça?",
+"pt_BR": "Qual tendência de design você adora e qual espera que desapareça?"
+}
+},
+{
+"id": "design-040",
+"lv": "any",
+"i18n": {
+"en": "What is one thing you would love to learn about design?",
+"de": "Was würdest du über Design unbedingt gern lernen?",
+"es": "¿Qué te encantaría aprender sobre diseño?",
+"fr": "Qu'aimerais-tu vraiment apprendre sur le design ?",
+"it": "Che cosa ti piacerebbe imparare sul design?",
+"pt": "O que gostavas muito de aprender sobre design?",
+"pt_BR": "O que você adoraria aprender sobre design?"
+}
+},
+{
+"id": "design-041",
+"lv": "beginner",
+"i18n": {
+"en": "When you look at a poster, what catches your eye first?",
+"de": "Was fällt dir bei einem Plakat als Erstes ins Auge?",
+"es": "Cuando miras un cartel, ¿qué te llama la atención primero?",
+"fr": "Quand tu regardes une affiche, qu'est-ce qui attire ton regard en premier ?",
+"it": "Quando guardi un manifesto, che cosa ti colpisce per primo?",
+"pt": "Quando olhas para um cartaz, o que te chama a atenção primeiro?",
+"pt_BR": "Quando você olha um cartaz, o que chama sua atenção primeiro?"
+}
+},
+{
+"id": "design-042",
+"lv": "beginner",
+"i18n": {
+"en": "Have you started a sketchbook? What did you put in it first?",
+"de": "Hast du ein Skizzenbuch angefangen? Was hast du als Erstes hineingezeichnet?",
+"es": "¿Has empezado un cuaderno de bocetos? ¿Qué pusiste primero?",
+"fr": "As-tu commencé un carnet de croquis ? Qu'y as-tu mis en premier ?",
+"it": "Hai iniziato un quaderno di schizzi? Che cosa ci hai messo per primo?",
+"pt": "Já começaste um caderno de esboços? O que puseste primeiro?",
+"pt_BR": "Você já começou um caderno de esboços? O que colocou nele primeiro?"
+}
+},
+{
+"id": "design-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which design principle do you notice most around you: contrast, alignment or balance?",
+"de": "Welches Gestaltungsprinzip bemerkst du um dich herum am meisten: Kontrast, Ausrichtung oder Balance?",
+"es": "¿Qué principio de diseño notas más a tu alrededor: contraste, alineación o equilibrio?",
+"fr": "Quel principe de design remarques-tu le plus autour de toi : contraste, alignement ou équilibre ?",
+"it": "Quale principio di design noti di più intorno a te: contrasto, allineamento o equilibrio?",
+"pt": "Que princípio de design notas mais à tua volta: contraste, alinhamento ou equilíbrio?",
+"pt_BR": "Qual princípio de design você mais nota ao seu redor: contraste, alinhamento ou equilíbrio?"
+}
+},
+{
+"id": "design-044",
+"lv": "beginner",
+"i18n": {
+"en": "What colour palette would you choose for your own room or website?",
+"de": "Welche Farbpalette würdest du für dein Zimmer oder deine Website wählen?",
+"es": "¿Qué paleta de colores elegirías para tu habitación o tu web?",
+"fr": "Quelle palette de couleurs choisirais-tu pour ta chambre ou ton site ?",
+"it": "Quale palette di colori sceglieresti per la tua stanza o il tuo sito?",
+"pt": "Que paleta de cores escolherias para o teu quarto ou site?",
+"pt_BR": "Qual paleta de cores você escolheria para o seu quarto ou site?"
+}
+},
+{
+"id": "design-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which fonts do you think look serious, and which look playful?",
+"de": "Welche Schriften wirken für dich seriös, und welche verspielt?",
+"es": "¿Qué tipografías te parecen serias y cuáles divertidas?",
+"fr": "Quelles polices te semblent sérieuses, et lesquelles ludiques ?",
+"it": "Quali caratteri ti sembrano seri e quali giocosi?",
+"pt": "Que tipos de letra te parecem sérios, e quais divertidos?",
+"pt_BR": "Quais fontes parecem sérias pra você, e quais parecem divertidas?"
+}
+},
+{
+"id": "design-046",
+"lv": "beginner",
+"i18n": {
+"en": "What messy flyer or menu would you love to tidy up with better layout?",
+"de": "Welchen chaotischen Flyer oder welche Speisekarte würdest du gern übersichtlicher gestalten?",
+"es": "¿Qué folleto o menú desordenado te encantaría ordenar con una mejor maquetación?",
+"fr": "Quel flyer ou menu désordonné aimerais-tu remettre en ordre avec une meilleure mise en page ?",
+"it": "Quale volantino o menu disordinato ti piacerebbe sistemare con un'impaginazione migliore?",
+"pt": "Que folheto ou menu desarrumado gostavas de arrumar com uma paginação melhor?",
+"pt_BR": "Qual folheto ou cardápio bagunçado você adoraria organizar com uma diagramação melhor?"
+}
+},
+{
+"id": "design-047",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about empty space in a design: calm or boring?",
+"de": "Wie wirkt leerer Raum in einem Design auf dich: ruhig oder langweilig?",
+"es": "¿Cómo percibes el espacio vacío en un diseño: tranquilo o aburrido?",
+"fr": "Comment perçois-tu l'espace vide dans un design : apaisant ou ennuyeux ?",
+"it": "Come vedi lo spazio vuoto in un design: rilassante o noioso?",
+"pt": "Como vês o espaço vazio num design: tranquilo ou aborrecido?",
+"pt_BR": "Como você vê o espaço vazio num design: tranquilo ou chato?"
+}
+},
+{
+"id": "design-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which logo do you think you could draw from memory?",
+"de": "Welches Logo könntest du wohl aus dem Gedächtnis zeichnen?",
+"es": "¿Qué logotipo crees que podrías dibujar de memoria?",
+"fr": "Quel logo penses-tu pouvoir dessiner de mémoire ?",
+"it": "Quale logo pensi di poter disegnare a memoria?",
+"pt": "Que logótipo achas que conseguias desenhar de memória?",
+"pt_BR": "Qual logo você acha que conseguiria desenhar de memória?"
+}
+},
+{
+"id": "design-049",
+"lv": "beginner",
+"i18n": {
+"en": "What would your personal logo look like?",
+"de": "Wie würde dein persönliches Logo aussehen?",
+"es": "¿Cómo sería tu logotipo personal?",
+"fr": "À quoi ressemblerait ton logo personnel ?",
+"it": "Come sarebbe il tuo logo personale?",
+"pt": "Como seria o teu logótipo pessoal?",
+"pt_BR": "Como seria o seu logo pessoal?"
+}
+},
+{
+"id": "design-050",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever noticed a door that made you push when you should pull?",
+"de": "Hattest du schon mal eine Tür, bei der du gedrückt hast, obwohl du ziehen musstest?",
+"es": "¿Te has encontrado alguna vez una puerta que te hacía empujar cuando había que tirar?",
+"fr": "As-tu déjà croisé une porte qui te faisait pousser alors qu'il fallait tirer ?",
+"it": "Ti è mai capitata una porta che ti faceva spingere quando bisognava tirare?",
+"pt": "Já te aconteceu empurrar uma porta que era para puxar?",
+"pt_BR": "Você já empurrou uma porta que era pra puxar?"
+}
+},
+{
+"id": "design-051",
+"lv": "beginner",
+"i18n": {
+"en": "Which colours do you think work well together in nature?",
+"de": "Welche Farben passen in der Natur deiner Meinung nach gut zusammen?",
+"es": "¿Qué colores crees que combinan bien en la naturaleza?",
+"fr": "Quelles couleurs vont bien ensemble dans la nature, selon toi ?",
+"it": "Quali colori pensi che stiano bene insieme in natura?",
+"pt": "Que cores achas que combinam bem na natureza?",
+"pt_BR": "Quais cores você acha que combinam bem na natureza?"
+}
+},
+{
+"id": "design-052",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of poster would you like to design first?",
+"de": "Was für ein Plakat würdest du gern als Erstes gestalten?",
+"es": "¿Qué tipo de cartel te gustaría diseñar primero?",
+"fr": "Quel genre d'affiche aimerais-tu concevoir en premier ?",
+"it": "Che tipo di manifesto ti piacerebbe progettare per primo?",
+"pt": "Que tipo de cartaz gostavas de desenhar primeiro?",
+"pt_BR": "Que tipo de cartaz você gostaria de criar primeiro?"
+}
+},
+{
+"id": "design-053",
+"lv": "beginner",
+"i18n": {
+"en": "Which household object would you redesign to make it easier to use?",
+"de": "Welchen Haushaltsgegenstand würdest du neu gestalten, damit er einfacher zu benutzen ist?",
+"es": "¿Qué objeto de casa rediseñarías para que fuera más fácil de usar?",
+"fr": "Quel objet de la maison redessinerais-tu pour qu'il soit plus facile à utiliser ?",
+"it": "Quale oggetto di casa riprogetteresti per renderlo più facile da usare?",
+"pt": "Que objeto da casa redesenharias para ser mais fácil de usar?",
+"pt_BR": "Qual objeto da casa você redesenharia para ficar mais fácil de usar?"
+}
+},
+{
+"id": "design-054",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer sketching on paper or designing on a screen?",
+"de": "Skizzierst du lieber auf Papier oder gestaltest du lieber am Bildschirm?",
+"es": "¿Prefieres bocetar en papel o diseñar en pantalla?",
+"fr": "Préfères-tu esquisser sur papier ou concevoir sur écran ?",
+"it": "Preferisci fare schizzi su carta o progettare sullo schermo?",
+"pt": "Preferes esboçar em papel ou desenhar no ecrã?",
+"pt_BR": "Você prefere rabiscar no papel ou criar na tela?"
+}
+},
+{
+"id": "design-055",
+"lv": "beginner",
+"i18n": {
+"en": "What do you think makes text easy or hard to read?",
+"de": "Was macht einen Text deiner Meinung nach leicht oder schwer lesbar?",
+"es": "¿Qué crees que hace que un texto sea fácil o difícil de leer?",
+"fr": "Qu'est-ce qui rend un texte facile ou difficile à lire, selon toi ?",
+"it": "Che cosa rende un testo facile o difficile da leggere, secondo te?",
+"pt": "O que achas que torna um texto fácil ou difícil de ler?",
+"pt_BR": "O que você acha que deixa um texto fácil ou difícil de ler?"
+}
+},
+{
+"id": "design-056",
+"lv": "beginner",
+"i18n": {
+"en": "Which design tool or app have you tried, or would like to try?",
+"de": "Welches Designtool oder welche App hast du schon ausprobiert oder möchtest du testen?",
+"es": "¿Qué herramienta o app de diseño has probado o te gustaría probar?",
+"fr": "Quel outil ou quelle appli de design as-tu essayé, ou aimerais-tu essayer ?",
+"it": "Quale strumento o app di design hai provato o vorresti provare?",
+"pt": "Que ferramenta ou app de design já experimentaste ou gostavas de experimentar?",
+"pt_BR": "Qual ferramenta ou app de design você já testou ou gostaria de testar?"
+}
+},
+{
+"id": "design-057",
+"lv": "beginner",
+"i18n": {
+"en": "What feeling would you want people to have when they see your designs?",
+"de": "Welches Gefühl sollen Menschen haben, wenn sie deine Designs sehen?",
+"es": "¿Qué sensación te gustaría que la gente tuviera al ver tus diseños?",
+"fr": "Quelle émotion aimerais-tu que les gens ressentent devant tes créations ?",
+"it": "Quale sensazione vorresti che provassero le persone vedendo i tuoi progetti?",
+"pt": "Que sensação gostavas que as pessoas tivessem ao ver os teus designs?",
+"pt_BR": "Que sensação você gostaria que as pessoas tivessem ao ver seus designs?"
+}
+},
+{
+"id": "design-058",
+"lv": "beginner",
+"i18n": {
+"en": "How do you react when someone gives you feedback on something you made?",
+"de": "Wie reagierst du, wenn dir jemand Feedback zu etwas gibt, das du gemacht hast?",
+"es": "¿Cómo reaccionas cuando alguien opina sobre algo que has hecho?",
+"fr": "Comment réagis-tu quand quelqu'un te donne un avis sur ce que tu as créé ?",
+"it": "Come reagisci quando qualcuno ti dà un parere su qualcosa che hai fatto?",
+"pt": "Como reages quando alguém te dá feedback sobre algo que fizeste?",
+"pt_BR": "Como você reage quando alguém dá um feedback sobre algo que você fez?"
+}
+},
+{
+"id": "design-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which material do you love to touch: wood, metal, glass, fabric or ceramic?",
+"de": "Welches Material fasst du am liebsten an: Holz, Metall, Glas, Stoff oder Keramik?",
+"es": "¿Qué material te encanta tocar: madera, metal, vidrio, tela o cerámica?",
+"fr": "Quelle matière aimes-tu toucher : bois, métal, verre, tissu ou céramique ?",
+"it": "Quale materiale ami toccare: legno, metallo, vetro, tessuto o ceramica?",
+"pt": "Que material adoras tocar: madeira, metal, vidro, tecido ou cerâmica?",
+"pt_BR": "Qual material você adora tocar: madeira, metal, vidro, tecido ou cerâmica?"
+}
+},
+{
+"id": "design-060",
+"lv": "beginner",
+"i18n": {
+"en": "What icon on your phone do you find clearest, and which is confusing?",
+"de": "Welches Symbol auf deinem Handy findest du am klarsten, und welches verwirrend?",
+"es": "¿Qué icono de tu móvil te parece más claro y cuál confuso?",
+"fr": "Quelle icône de ton téléphone trouves-tu la plus claire, et laquelle prête à confusion ?",
+"it": "Quale icona del tuo telefono trovi più chiara e quale confusa?",
+"pt": "Que ícone do teu telemóvel achas mais claro, e qual achas confuso?",
+"pt_BR": "Qual ícone do seu celular você acha mais claro, e qual acha confuso?"
+}
+},
+{
+"id": "design-061",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever made a birthday card or invitation? How did you design it?",
+"de": "Hast du schon mal eine Geburtstagskarte oder Einladung gemacht? Wie hast du sie gestaltet?",
+"es": "¿Alguna vez has hecho una tarjeta de cumpleaños o una invitación? ¿Cómo la diseñaste?",
+"fr": "As-tu déjà fait une carte d'anniversaire ou une invitation ? Comment l'as-tu conçue ?",
+"it": "Hai mai fatto un biglietto d'auguri o un invito? Come l'hai progettato?",
+"pt": "Já fizeste um postal de aniversário ou um convite? Como o desenhaste?",
+"pt_BR": "Você já fez um cartão de aniversário ou um convite? Como você criou?"
+}
+},
+{
+"id": "design-062",
+"lv": "beginner",
+"i18n": {
+"en": "What small design project could you finish this week?",
+"de": "Welches kleine Designprojekt könntest du diese Woche abschließen?",
+"es": "¿Qué pequeño proyecto de diseño podrías terminar esta semana?",
+"fr": "Quel petit projet de design pourrais-tu terminer cette semaine ?",
+"it": "Quale piccolo progetto di design potresti finire questa settimana?",
+"pt": "Que pequeno projeto de design conseguias terminar esta semana?",
+"pt_BR": "Qual pequeno projeto de design você conseguiria terminar esta semana?"
+}
+},
+{
+"id": "design-063",
+"lv": "beginner",
+"i18n": {
+"en": "Which product do you think is designed well for children or older people?",
+"de": "Welches Produkt ist deiner Meinung nach gut für Kinder oder ältere Menschen gestaltet?",
+"es": "¿Qué producto crees que está bien diseñado para niños o personas mayores?",
+"fr": "Quel produit te semble bien conçu pour les enfants ou les personnes âgées ?",
+"it": "Quale prodotto pensi sia ben progettato per bambini o persone anziane?",
+"pt": "Que produto achas que está bem pensado para crianças ou pessoas mais velhas?",
+"pt_BR": "Qual produto você acha bem pensado para crianças ou pessoas idosas?"
+}
+},
+{
+"id": "design-064",
+"lv": "beginner",
+"i18n": {
+"en": "What do you enjoy more: generating many ideas or polishing one?",
+"de": "Was macht dir mehr Spaß: viele Ideen sammeln oder eine Idee perfektionieren?",
+"es": "¿Qué disfrutas más: generar muchas ideas o pulir una sola?",
+"fr": "Qu'est-ce que tu préfères : trouver plein d'idées ou en peaufiner une seule ?",
+"it": "Che cosa ti piace di più: generare tante idee o perfezionarne una?",
+"pt": "O que gostas mais: gerar muitas ideias ou aperfeiçoar uma só?",
+"pt_BR": "O que você curte mais: gerar muitas ideias ou lapidar uma só?"
+}
+},
+{
+"id": "design-065",
+"lv": "beginner",
+"i18n": {
+"en": "Which designs do you collect for inspiration, like photos, labels or tickets?",
+"de": "Welche Designs sammelst du als Inspiration, etwa Fotos, Etiketten oder Tickets?",
+"es": "¿Qué diseños coleccionas como inspiración, como fotos, etiquetas o entradas?",
+"fr": "Quels designs collectionnes-tu pour t'inspirer, comme des photos, étiquettes ou billets ?",
+"it": "Quali design raccogli come ispirazione, come foto, etichette o biglietti?",
+"pt": "Que designs colecionas como inspiração, como fotos, rótulos ou bilhetes?",
+"pt_BR": "Quais designs você coleciona como inspiração, como fotos, rótulos ou ingressos?"
+}
+},
+{
+"id": "design-066",
+"lv": "intermediate",
+"i18n": {
+"en": "If you created a brand for a small café, what personality would it have?",
+"de": "Wenn du eine Marke für ein kleines Café entwickeln würdest, welche Persönlichkeit hätte sie?",
+"es": "Si crearas una marca para una pequeña cafetería, ¿qué personalidad tendría?",
+"fr": "Si tu créais une marque pour un petit café, quelle personnalité aurait-elle ?",
+"it": "Se creassi un marchio per un piccolo caffè, che personalità avrebbe?",
+"pt": "Se criasses uma marca para um pequeno café, que personalidade teria?",
+"pt_BR": "Se você criasse uma marca para um pequeno café, que personalidade ela teria?"
+}
+},
+{
+"id": "design-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which packaging do you think balances beauty and sustainability well?",
+"de": "Welche Verpackung verbindet deiner Meinung nach Schönheit und Nachhaltigkeit gut?",
+"es": "¿Qué envase crees que equilibra bien belleza y sostenibilidad?",
+"fr": "Quel emballage concilie bien beauté et durabilité, selon toi ?",
+"it": "Quale confezione pensi che unisca bene bellezza e sostenibilità?",
+"pt": "Que embalagem achas que equilibra bem beleza e sustentabilidade?",
+"pt_BR": "Qual embalagem você acha que equilibra bem beleza e sustentabilidade?"
+}
+},
+{
+"id": "design-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What makes an app easy to use from the very first minute?",
+"de": "Was macht eine App schon ab der ersten Minute leicht bedienbar?",
+"es": "¿Qué hace que una app sea fácil de usar desde el primer minuto?",
+"fr": "Qu'est-ce qui rend une appli facile à utiliser dès la première minute ?",
+"it": "Che cosa rende un'app facile da usare fin dal primo minuto?",
+"pt": "O que torna uma app fácil de usar desde o primeiro minuto?",
+"pt_BR": "O que torna um app fácil de usar desde o primeiro minuto?"
+}
+},
+{
+"id": "design-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you make one of your designs more accessible to everyone?",
+"de": "Wie würdest du eines deiner Designs für alle zugänglicher machen?",
+"es": "¿Cómo harías uno de tus diseños más accesible para todos?",
+"fr": "Comment rendrais-tu l'une de tes créations plus accessible à tous ?",
+"it": "Come renderesti uno dei tuoi progetti più accessibile a tutti?",
+"pt": "Como tornarias um dos teus designs mais acessível a todos?",
+"pt_BR": "Como você tornaria um dos seus designs mais acessível para todos?"
+}
+},
+{
+"id": "design-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which design movement from history inspires you the most?",
+"de": "Welche Designbewegung aus der Geschichte inspiriert dich am meisten?",
+"es": "¿Qué movimiento de diseño de la historia te inspira más?",
+"fr": "Quel mouvement de l'histoire du design t'inspire le plus ?",
+"it": "Quale movimento storico del design ti ispira di più?",
+"pt": "Que movimento histórico do design te inspira mais?",
+"pt_BR": "Qual movimento da história do design mais te inspira?"
+}
+},
+{
+"id": "design-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What questions would you ask people before designing something for them?",
+"de": "Welche Fragen würdest du Menschen stellen, bevor du etwas für sie gestaltest?",
+"es": "¿Qué preguntas harías a las personas antes de diseñar algo para ellas?",
+"fr": "Quelles questions poserais-tu aux gens avant de concevoir quelque chose pour eux ?",
+"it": "Quali domande faresti alle persone prima di progettare qualcosa per loro?",
+"pt": "Que perguntas farias às pessoas antes de desenhar algo para elas?",
+"pt_BR": "Que perguntas você faria às pessoas antes de criar algo para elas?"
+}
+},
+{
+"id": "design-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide which fonts to pair in a project?",
+"de": "Wie entscheidest du, welche Schriften du in einem Projekt kombinierst?",
+"es": "¿Cómo decides qué tipografías combinar en un proyecto?",
+"fr": "Comment choisis-tu les polices à associer dans un projet ?",
+"it": "Come decidi quali caratteri abbinare in un progetto?",
+"pt": "Como decides que tipos de letra combinar num projeto?",
+"pt_BR": "Como você decide quais fontes combinar num projeto?"
+}
+},
+{
+"id": "design-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which infographic or map helped you understand something complex?",
+"de": "Welche Infografik oder Karte hat dir geholfen, etwas Kompliziertes zu verstehen?",
+"es": "¿Qué infografía o mapa te ayudó a entender algo complejo?",
+"fr": "Quelle infographie ou quelle carte t'a aidé à comprendre quelque chose de complexe ?",
+"it": "Quale infografica o mappa ti ha aiutato a capire qualcosa di complesso?",
+"pt": "Que infografia ou mapa te ajudou a perceber algo complexo?",
+"pt_BR": "Qual infográfico ou mapa te ajudou a entender algo complexo?"
+}
+},
+{
+"id": "design-074",
+"lv": "intermediate",
+"i18n": {
+"en": "What material would you choose for a product you design, and why?",
+"de": "Welches Material würdest du für ein von dir gestaltetes Produkt wählen, und warum?",
+"es": "¿Qué material elegirías para un producto que diseñes, y por qué?",
+"fr": "Quel matériau choisirais-tu pour un produit que tu conçois, et pourquoi ?",
+"it": "Quale materiale sceglieresti per un prodotto progettato da te, e perché?",
+"pt": "Que material escolherias para um produto desenhado por ti, e porquê?",
+"pt_BR": "Qual material você escolheria para um produto criado por você, e por quê?"
+}
+},
+{
+"id": "design-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you adapt a design for people in another country?",
+"de": "Wie würdest du ein Design für Menschen in einem anderen Land anpassen?",
+"es": "¿Cómo adaptarías un diseño para personas de otro país?",
+"fr": "Comment adapterais-tu un design pour les habitants d'un autre pays ?",
+"it": "Come adatteresti un design per le persone di un altro paese?",
+"pt": "Como adaptarias um design para pessoas de outro país?",
+"pt_BR": "Como você adaptaria um design para pessoas de outro país?"
+}
+},
+{
+"id": "design-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What did you learn from testing an idea with a real person?",
+"de": "Was hast du gelernt, als du eine Idee mit einer echten Person getestet hast?",
+"es": "¿Qué aprendiste al probar una idea con una persona real?",
+"fr": "Qu'as-tu appris en testant une idée avec une vraie personne ?",
+"it": "Che cosa hai imparato testando un'idea con una persona reale?",
+"pt": "O que aprendeste ao testar uma ideia com uma pessoa real?",
+"pt_BR": "O que você aprendeu ao testar uma ideia com uma pessoa de verdade?"
+}
+},
+{
+"id": "design-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which famous designer's work would you love to see in person?",
+"de": "Die Arbeiten welcher bekannten Designerin oder welches Designers würdest du gern live sehen?",
+"es": "¿El trabajo de qué diseñador famoso te encantaría ver en persona?",
+"fr": "Les créations de quel designer célèbre aimerais-tu voir en vrai ?",
+"it": "Le opere di quale designer famoso ti piacerebbe vedere dal vivo?",
+"pt": "O trabalho de que designer famoso gostavas de ver ao vivo?",
+"pt_BR": "O trabalho de qual designer famoso você adoraria ver pessoalmente?"
+}
+},
+{
+"id": "design-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think makes a brand feel trustworthy?",
+"de": "Was lässt eine Marke deiner Meinung nach vertrauenswürdig wirken?",
+"es": "¿Qué crees que hace que una marca parezca fiable?",
+"fr": "Qu'est-ce qui rend une marque digne de confiance, selon toi ?",
+"it": "Che cosa rende un marchio affidabile, secondo te?",
+"pt": "O que achas que faz uma marca parecer confiável?",
+"pt_BR": "O que você acha que faz uma marca parecer confiável?"
+}
+},
+{
+"id": "design-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you get unstuck when you have a creative block?",
+"de": "Wie kommst du aus einer kreativen Blockade wieder heraus?",
+"es": "¿Cómo te desbloqueas cuando tienes un bloqueo creativo?",
+"fr": "Comment te débloques-tu quand tu manques d'inspiration ?",
+"it": "Come ti sblocchi quando hai un blocco creativo?",
+"pt": "Como te desbloqueias quando tens um bloqueio criativo?",
+"pt_BR": "Como você se desbloqueia quando tem um bloqueio criativo?"
+}
+},
+{
+"id": "design-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which unboxing experience have you enjoyed the most?",
+"de": "Welches Auspackerlebnis hat dir am meisten Spaß gemacht?",
+"es": "¿Qué experiencia de desempaquetado has disfrutado más?",
+"fr": "Quel déballage de produit t'a le plus marqué ?",
+"it": "Quale esperienza di unboxing ti è piaciuta di più?",
+"pt": "Que experiência de abrir uma embalagem gostaste mais?",
+"pt_BR": "Qual experiência de unboxing você mais curtiu?"
+}
+},
+{
+"id": "design-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you take inspiration from others without copying them?",
+"de": "Wie lässt du dich von anderen inspirieren, ohne sie zu kopieren?",
+"es": "¿Cómo te inspiras en otros sin copiarlos?",
+"fr": "Comment t'inspires-tu des autres sans les copier ?",
+"it": "Come ti ispiri agli altri senza copiarli?",
+"pt": "Como te inspiras nos outros sem os copiar?",
+"pt_BR": "Como você se inspira nos outros sem copiar?"
+}
+},
+{
+"id": "design-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you include in the brand guidelines for your own project?",
+"de": "Was würdest du in die Markenrichtlinien deines eigenen Projekts aufnehmen?",
+"es": "¿Qué incluirías en la guía de marca de tu propio proyecto?",
+"fr": "Que mettrais-tu dans la charte graphique de ton propre projet ?",
+"it": "Che cosa includeresti nelle linee guida del marchio del tuo progetto?",
+"pt": "O que incluías no manual de marca do teu próprio projeto?",
+"pt_BR": "O que você incluiria no manual de marca do seu próprio projeto?"
+}
+},
+{
+"id": "design-083",
+"lv": "intermediate",
+"i18n": {
+"en": "Which screen in an app you use would you redesign first, and why?",
+"de": "Welchen Bildschirm einer App, die du nutzt, würdest du zuerst neu gestalten, und warum?",
+"es": "¿Qué pantalla de una app que usas rediseñarías primero, y por qué?",
+"fr": "Quel écran d'une appli que tu utilises redessinerais-tu en premier, et pourquoi ?",
+"it": "Quale schermata di un'app che usi riprogetteresti per prima, e perché?",
+"pt": "Que ecrã de uma app que usas redesenharias primeiro, e porquê?",
+"pt_BR": "Qual tela de um app que você usa você redesenharia primeiro, e por quê?"
+}
+},
+{
+"id": "design-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you explain your design choices to people who are not designers?",
+"de": "Wie erklärst du deine Designentscheidungen Menschen, die keine Designer sind?",
+"es": "¿Cómo explicas tus decisiones de diseño a personas que no son diseñadoras?",
+"fr": "Comment expliques-tu tes choix de design à des personnes qui ne sont pas designers ?",
+"it": "Come spieghi le tue scelte di design a chi non è designer?",
+"pt": "Como explicas as tuas escolhas de design a quem não é designer?",
+"pt_BR": "Como você explica suas escolhas de design para quem não é designer?"
+}
+},
+{
+"id": "design-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which design project are you most proud of so far?",
+"de": "Auf welches Designprojekt bist du bisher am stolzesten?",
+"es": "¿De qué proyecto de diseño estás más orgulloso hasta ahora?",
+"fr": "De quel projet de design es-tu le plus fier jusqu'ici ?",
+"it": "Di quale progetto di design sei più orgoglioso finora?",
+"pt": "De que projeto de design tens mais orgulho até agora?",
+"pt_BR": "De qual projeto de design você mais se orgulha até agora?"
+}
+},
+{
+"id": "design-086",
+"lv": "advanced",
+"i18n": {
+"en": "How would you describe your personal design voice today?",
+"de": "Wie würdest du heute deine persönliche Handschrift als Designer beschreiben?",
+"es": "¿Cómo describirías hoy tu voz personal como diseñador?",
+"fr": "Comment décrirais-tu aujourd'hui ta signature personnelle en design ?",
+"it": "Come descriveresti oggi la tua voce personale nel design?",
+"pt": "Como descreverias hoje a tua voz pessoal no design?",
+"pt_BR": "Como você descreveria hoje sua identidade pessoal no design?"
+}
+},
+{
+"id": "design-087",
+"lv": "advanced",
+"i18n": {
+"en": "What would be the first three principles in your design manifesto?",
+"de": "Was wären die ersten drei Grundsätze in deinem Designmanifest?",
+"es": "¿Cuáles serían los tres primeros principios de tu manifiesto de diseño?",
+"fr": "Quels seraient les trois premiers principes de ton manifeste de design ?",
+"it": "Quali sarebbero i primi tre principi del tuo manifesto di design?",
+"pt": "Quais seriam os três primeiros princípios do teu manifesto de design?",
+"pt_BR": "Quais seriam os três primeiros princípios do seu manifesto de design?"
+}
+},
+{
+"id": "design-088",
+"lv": "advanced",
+"i18n": {
+"en": "How would you design a product so it lasts and can be repaired?",
+"de": "Wie würdest du ein Produkt gestalten, damit es lange hält und reparierbar ist?",
+"es": "¿Cómo diseñarías un producto para que dure y pueda repararse?",
+"fr": "Comment concevrais-tu un produit pour qu'il dure et puisse être réparé ?",
+"it": "Come progetteresti un prodotto perché duri e si possa riparare?",
+"pt": "Como desenharias um produto para durar e poder ser reparado?",
+"pt_BR": "Como você projetaria um produto para durar e poder ser consertado?"
+}
+},
+{
+"id": "design-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which parts would you include in a design system for a small app?",
+"de": "Welche Bausteine würdest du in ein Designsystem für eine kleine App aufnehmen?",
+"es": "¿Qué piezas incluirías en un sistema de diseño para una app pequeña?",
+"fr": "Quels éléments mettrais-tu dans un design system pour une petite appli ?",
+"it": "Quali elementi includeresti in un design system per una piccola app?",
+"pt": "Que componentes incluías num sistema de design para uma pequena app?",
+"pt_BR": "Quais componentes você incluiria num design system para um app pequeno?"
+}
+},
+{
+"id": "design-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you recognise and avoid manipulative design in products?",
+"de": "Wie erkennst und vermeidest du manipulatives Design in Produkten?",
+"es": "¿Cómo reconoces y evitas el diseño manipulador en los productos?",
+"fr": "Comment repères-tu et évites-tu le design manipulateur dans les produits ?",
+"it": "Come riconosci ed eviti il design manipolatorio nei prodotti?",
+"pt": "Como reconheces e evitas o design manipulador nos produtos?",
+"pt_BR": "Como você reconhece e evita o design manipulador nos produtos?"
+}
+},
+{
+"id": "design-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which projects would you put in your portfolio, and in what order?",
+"de": "Welche Projekte würdest du in dein Portfolio aufnehmen, und in welcher Reihenfolge?",
+"es": "¿Qué proyectos pondrías en tu portafolio, y en qué orden?",
+"fr": "Quels projets mettrais-tu dans ton portfolio, et dans quel ordre ?",
+"it": "Quali progetti inseriresti nel tuo portfolio, e in che ordine?",
+"pt": "Que projetos punhas no teu portefólio, e por que ordem?",
+"pt_BR": "Quais projetos você colocaria no seu portfólio, e em que ordem?"
+}
+},
+{
+"id": "design-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you run a workshop to help a team find new ideas?",
+"de": "Wie würdest du einen Workshop leiten, damit ein Team neue Ideen findet?",
+"es": "¿Cómo dirigirías un taller para ayudar a un equipo a encontrar nuevas ideas?",
+"fr": "Comment animerais-tu un atelier pour aider une équipe à trouver de nouvelles idées ?",
+"it": "Come condurresti un workshop per aiutare un team a trovare nuove idee?",
+"pt": "Como conduzirias um workshop para ajudar uma equipa a encontrar novas ideias?",
+"pt_BR": "Como você conduziria um workshop para ajudar uma equipe a encontrar novas ideias?"
+}
+},
+{
+"id": "design-093",
+"lv": "advanced",
+"i18n": {
+"en": "What service in your daily life would you redesign from start to finish?",
+"de": "Welchen Service aus deinem Alltag würdest du von Anfang bis Ende neu gestalten?",
+"es": "¿Qué servicio de tu día a día rediseñarías de principio a fin?",
+"fr": "Quel service de ton quotidien redessinerais-tu du début à la fin ?",
+"it": "Quale servizio della tua vita quotidiana riprogetteresti dall'inizio alla fine?",
+"pt": "Que serviço do teu dia a dia redesenharias do início ao fim?",
+"pt_BR": "Qual serviço do seu dia a dia você redesenharia do começo ao fim?"
+}
+},
+{
+"id": "design-094",
+"lv": "advanced",
+"i18n": {
+"en": "How do you see new digital tools changing the role of designers?",
+"de": "Wie verändern neue digitale Werkzeuge deiner Meinung nach die Rolle von Designern?",
+"es": "¿Cómo crees que las nuevas herramientas digitales cambian el papel de los diseñadores?",
+"fr": "Comment les nouveaux outils numériques changent-ils le rôle des designers, selon toi ?",
+"it": "Come pensi che i nuovi strumenti digitali stiano cambiando il ruolo dei designer?",
+"pt": "Como achas que as novas ferramentas digitais mudam o papel dos designers?",
+"pt_BR": "Como você acha que as novas ferramentas digitais mudam o papel dos designers?"
+}
+},
+{
+"id": "design-095",
+"lv": "advanced",
+"i18n": {
+"en": "How would you include a community in designing something for them?",
+"de": "Wie würdest du eine Gemeinschaft in die Gestaltung von etwas für sie einbeziehen?",
+"es": "¿Cómo involucrarías a una comunidad en el diseño de algo pensado para ella?",
+"fr": "Comment impliquerais-tu une communauté dans la conception d'un projet qui lui est destiné ?",
+"it": "Come coinvolgeresti una comunità nella progettazione di qualcosa pensato per lei?",
+"pt": "Como envolverias uma comunidade no design de algo pensado para ela?",
+"pt_BR": "Como você envolveria uma comunidade no design de algo pensado para ela?"
+}
+},
+{
+"id": "design-096",
+"lv": "advanced",
+"i18n": {
+"en": "What would your capstone project be if you started it tomorrow?",
+"de": "Was wäre dein Abschlussprojekt, wenn du morgen damit anfangen würdest?",
+"es": "¿Cuál sería tu proyecto final si lo empezaras mañana?",
+"fr": "Quel serait ton projet de fin de parcours si tu le commençais demain ?",
+"it": "Quale sarebbe il tuo progetto finale se lo iniziassi domani?",
+"pt": "Qual seria o teu projeto final se o começasses amanhã?",
+"pt_BR": "Qual seria seu projeto final se você começasse amanhã?"
+}
+},
+{
+"id": "design-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you defend a design decision when someone disagrees?",
+"de": "Wie verteidigst du eine Designentscheidung, wenn jemand anderer Meinung ist?",
+"es": "¿Cómo defiendes una decisión de diseño cuando alguien no está de acuerdo?",
+"fr": "Comment défends-tu un choix de design quand quelqu'un n'est pas d'accord ?",
+"it": "Come difendi una scelta di design quando qualcuno non è d'accordo?",
+"pt": "Como defendes uma decisão de design quando alguém discorda?",
+"pt_BR": "Como você defende uma decisão de design quando alguém discorda?"
+}
+},
+{
+"id": "design-098",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give someone starting to learn design today?",
+"de": "Welchen Rat würdest du jemandem geben, der heute anfängt, Design zu lernen?",
+"es": "¿Qué consejo darías a alguien que empieza hoy a aprender diseño?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui commence à apprendre le design aujourd'hui ?",
+"it": "Che consiglio daresti a chi inizia oggi a studiare design?",
+"pt": "Que conselho darias a alguém que começa hoje a aprender design?",
+"pt_BR": "Que conselho você daria a alguém que está começando a aprender design hoje?"
+}
+},
+{
+"id": "design-099",
+"lv": "advanced",
+"i18n": {
+"en": "Where would you like your design journey to take you in a few years?",
+"de": "Wohin soll dich dein Weg im Design in ein paar Jahren führen?",
+"es": "¿A dónde te gustaría que te llevara tu camino en el diseño dentro de unos años?",
+"fr": "Où aimerais-tu que ton parcours en design te mène dans quelques années ?",
+"it": "Dove vorresti che ti portasse il tuo percorso nel design tra qualche anno?",
+"pt": "Onde gostavas que o teu percurso no design te levasse daqui a alguns anos?",
+"pt_BR": "Aonde você gostaria que sua jornada no design te levasse daqui a alguns anos?"
+}
+},
+{
+"id": "design-100",
+"lv": "advanced",
+"i18n": {
+"en": "Which future technology would you love to design a product for?",
+"de": "Für welche Zukunftstechnologie würdest du gern ein Produkt gestalten?",
+"es": "¿Para qué tecnología del futuro te encantaría diseñar un producto?",
+"fr": "Pour quelle technologie du futur aimerais-tu concevoir un produit ?",
+"it": "Per quale tecnologia del futuro ti piacerebbe progettare un prodotto?",
+"pt": "Para que tecnologia do futuro gostavas de desenhar um produto?",
+"pt_BR": "Para qual tecnologia do futuro você adoraria criar um produto?"
+}
+}
+]
+}

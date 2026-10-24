@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 71,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Comparisons: plus, moins, aussi",
+     "g": "Compare people and things with plus, moins and aussi + adjective + que.",
+     "p": [
+      "Plus grand que = bigger than; moins cher que = less expensive than; aussi beau que = as beautiful as.",
+      "The adjective still agrees: ma sœur est plus grande que moi, ces chaussures sont moins chères.",
+      "After que, use stressed pronouns: plus âgé que moi, aussi rapide que lui."
+     ],
+     "q": "Compare two cities you know in French, with plus, moins or aussi.",
+     "c": "Write three comparisons about you and a friend or family member."
+    },
+    "de": {
+     "t": "Vergleiche: plus, moins, aussi",
+     "g": "Du vergleichst Personen und Dinge mit plus, moins und aussi + Adjektiv + que.",
+     "p": [
+      "Plus grand que = größer als; moins cher que = weniger teuer als; aussi beau que = so schön wie.",
+      "Das Adjektiv wird angeglichen: ma sœur est plus grande que moi, ces chaussures sont moins chères.",
+      "Nach que folgen betonte Pronomen: plus âgé que moi, aussi rapide que lui."
+     ],
+     "q": "Vergleiche zwei Städte, die du kennst, auf Französisch mit plus, moins oder aussi.",
+     "c": "Schreib drei Vergleiche über dich und einen Freund oder ein Familienmitglied."
+    },
+    "es": {
+     "t": "Comparativos: plus, moins, aussi",
+     "g": "Compara personas y cosas con plus, moins y aussi + adjetivo + que.",
+     "p": [
+      "Plus grand que = más grande que; moins cher que = menos caro que; aussi beau que = tan bonito como.",
+      "El adjetivo concuerda: ma sœur est plus grande que moi, ces chaussures sont moins chères.",
+      "Tras que van los pronombres tónicos: plus âgé que moi, aussi rapide que lui."
+     ],
+     "q": "Compara en francés dos ciudades que conoces con plus, moins o aussi.",
+     "c": "Escribe tres comparaciones entre tú y un amigo o un familiar."
+    },
+    "fr": {
+     "t": "Comparer : plus, moins, aussi",
+     "g": "Comparer des personnes et des choses avec plus, moins, aussi + adjectif + que.",
+     "p": [
+      "Plus grand que, moins cher que, aussi beau que : trois façons de comparer.",
+      "L'adjectif s'accorde : ma sœur est plus grande que moi, ces chaussures sont moins chères.",
+      "Après que, on utilise moi, toi, lui, elle : plus âgé que moi, aussi rapide que lui."
+     ],
+     "q": "Compare deux villes que tu connais avec plus, moins ou aussi.",
+     "c": "Écris trois comparaisons entre toi et un ami ou un membre de ta famille."
+    },
+    "it": {
+     "t": "Comparativi: plus, moins, aussi",
+     "g": "Confronta persone e cose con plus, moins e aussi + aggettivo + que.",
+     "p": [
+      "Plus grand que = più grande di; moins cher que = meno caro di; aussi beau que = bello come.",
+      "L'aggettivo si accorda: ma sœur est plus grande que moi, ces chaussures sont moins chères.",
+      "Dopo que usa i pronomi tonici: plus âgé que moi, aussi rapide que lui."
+     ],
+     "q": "Confronta in francese due città che conosci con plus, moins o aussi.",
+     "c": "Scrivi tre paragoni tra te e un amico o un familiare."
+    },
+    "pt": {
+     "t": "Comparações: plus, moins, aussi",
+     "g": "Comparar pessoas e coisas com plus, moins e aussi + adjetivo + que.",
+     "p": [
+      "Plus grand que = maior do que; moins cher que = menos caro do que; aussi beau que = tão bonito como.",
+      "O adjetivo concorda: ma sœur est plus grande que moi, ces chaussures sont moins chères.",
+      "Depois de que usam-se os pronomes tónicos: plus âgé que moi, aussi rapide que lui."
+     ],
+     "q": "Compara em francês duas cidades que conheces com plus, moins ou aussi.",
+     "c": "Escreve três comparações entre ti e um amigo ou um familiar."
+    },
+    "pt_BR": {
+     "t": "Comparações: plus, moins, aussi",
+     "g": "Comparar pessoas e coisas com plus, moins e aussi + adjetivo + que.",
+     "p": [
+      "Plus grand que = maior que; moins cher que = menos caro que; aussi beau que = tão bonito quanto.",
+      "O adjetivo concorda: ma sœur est plus grande que moi, ces chaussures sont moins chères.",
+      "Depois de que vêm os pronomes tônicos: plus âgé que moi, aussi rapide que lui."
+     ],
+     "q": "Compare em francês duas cidades que você conhece com plus, moins ou aussi.",
+     "c": "Escreva três comparações entre você e um amigo ou um parente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "plus... que",
+      "ex": "Paris est plus grand que Lyon."
+     },
+     {
+      "w": "moins... que",
+      "ex": "Le bus est moins cher que le taxi."
+     },
+     {
+      "w": "aussi... que",
+      "ex": "Mon frère est aussi grand que moi."
+     },
+     {
+      "w": "âgé, âgée",
+      "ex": "Ma sœur est plus âgée que moi."
+     },
+     {
+      "w": "rapide",
+      "ex": "Le train est plus rapide que la voiture."
+     },
+     {
+      "w": "cher, chère",
+      "ex": "Cette robe est moins chère que l'autre."
+     }
+    ],
+    "gram": "Plus / moins / aussi + adjectif + que : elle est plus grande que moi. L'adjectif s'accorde avec le sujet."
+   }
+  },
+  {
+   "d": 72,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Bon or bien, meilleur or mieux",
+     "g": "Stop mixing up good and well in French, and their comparatives.",
+     "p": [
+      "Bon is an adjective that describes a noun: un bon film, une bonne idée. Its comparative is meilleur.",
+      "Bien is an adverb that describes a verb: il chante bien. Its comparative is mieux.",
+      "Never say plus bon or plus bien: say ce gâteau est meilleur and elle danse mieux que moi."
+     ],
+     "q": "What is something you do well, and something you do better than before? Answer in French.",
+     "c": "Make two sentences with meilleur and two with mieux about food and hobbies."
+    },
+    "de": {
+     "t": "Bon oder bien, meilleur oder mieux",
+     "g": "Du verwechselst gut und gut nicht mehr: bon, bien und ihre Steigerungen.",
+     "p": [
+      "Bon ist ein Adjektiv beim Nomen: un bon film, une bonne idée. Steigerung: meilleur.",
+      "Bien ist ein Adverb beim Verb: il chante bien. Steigerung: mieux.",
+      "Sag nie plus bon oder plus bien: ce gâteau est meilleur, elle danse mieux que moi."
+     ],
+     "q": "Was kannst du gut, und was kannst du besser als früher? Antworte auf Französisch.",
+     "c": "Bilde zwei Sätze mit meilleur und zwei mit mieux über Essen und Hobbys."
+    },
+    "es": {
+     "t": "Bon o bien, meilleur o mieux",
+     "g": "Deja de confundir bueno y bien en francés, y sus comparativos.",
+     "p": [
+      "Bon es adjetivo y acompaña al sustantivo: un bon film, une bonne idée. Comparativo: meilleur.",
+      "Bien es adverbio y acompaña al verbo: il chante bien. Comparativo: mieux.",
+      "Nunca digas plus bon ni plus bien: ce gâteau est meilleur, elle danse mieux que moi."
+     ],
+     "q": "¿Qué haces bien y qué haces mejor que antes? Responde en francés.",
+     "c": "Haz dos frases con meilleur y dos con mieux sobre comida y aficiones."
+    },
+    "fr": {
+     "t": "Bon ou bien, meilleur ou mieux",
+     "g": "Ne plus confondre bon et bien, ni meilleur et mieux.",
+     "p": [
+      "Bon est un adjectif, il va avec un nom : un bon film, une bonne idée. Comparatif : meilleur.",
+      "Bien est un adverbe, il va avec un verbe : il chante bien. Comparatif : mieux.",
+      "On ne dit pas plus bon : ce gâteau est meilleur, elle danse mieux que moi."
+     ],
+     "q": "Qu'est-ce que tu fais bien, et mieux qu'avant ?",
+     "c": "Fais deux phrases avec meilleur et deux avec mieux sur la cuisine et les loisirs."
+    },
+    "it": {
+     "t": "Bon o bien, meilleur o mieux",
+     "g": "Smetti di confondere buono e bene in francese, e i loro comparativi.",
+     "p": [
+      "Bon è un aggettivo e va con il nome: un bon film, une bonne idée. Comparativo: meilleur.",
+      "Bien è un avverbio e va con il verbo: il chante bien. Comparativo: mieux.",
+      "Mai dire plus bon o plus bien: ce gâteau est meilleur, elle danse mieux que moi."
+     ],
+     "q": "Cosa fai bene e cosa fai meglio di prima? Rispondi in francese.",
+     "c": "Fai due frasi con meilleur e due con mieux su cibo e hobby."
+    },
+    "pt": {
+     "t": "Bon ou bien, meilleur ou mieux",
+     "g": "Deixar de confundir bom e bem em francês, e os seus comparativos.",
+     "p": [
+      "Bon é adjetivo e acompanha o nome: un bon film, une bonne idée. Comparativo: meilleur.",
+      "Bien é advérbio e acompanha o verbo: il chante bien. Comparativo: mieux.",
+      "Nunca digas plus bon nem plus bien: ce gâteau est meilleur, elle danse mieux que moi."
+     ],
+     "q": "O que fazes bem e o que fazes melhor do que antes? Responde em francês.",
+     "c": "Faz duas frases com meilleur e duas com mieux sobre comida e passatempos."
+    },
+    "pt_BR": {
+     "t": "Bon ou bien, meilleur ou mieux",
+     "g": "Parar de confundir bom e bem em francês, e seus comparativos.",
+     "p": [
+      "Bon é adjetivo e acompanha o substantivo: un bon film, une bonne idée. Comparativo: meilleur.",
+      "Bien é advérbio e acompanha o verbo: il chante bien. Comparativo: mieux.",
+      "Nunca diga plus bon nem plus bien: ce gâteau est meilleur, elle danse mieux que moi."
+     ],
+     "q": "O que você faz bem e o que faz melhor do que antes? Responda em francês.",
+     "c": "Faça duas frases com meilleur e duas com mieux sobre comida e hobbies."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bon, bonne",
+      "ex": "C'est une très bonne idée."
+     },
+     {
+      "w": "bien",
+      "ex": "Tu parles bien français !"
+     },
+     {
+      "w": "meilleur, meilleure",
+      "ex": "Ce café est meilleur que l'autre."
+     },
+     {
+      "w": "mieux",
+      "ex": "Je dors mieux à la campagne."
+     },
+     {
+      "w": "de mieux en mieux",
+      "ex": "Ton français va de mieux en mieux."
+     },
+     {
+      "w": "ça va mieux",
+      "ex": "Merci, ça va mieux aujourd'hui."
+     }
+    ],
+    "gram": "Bon (adjectif) → meilleur : un meilleur film. Bien (adverbe) → mieux : il chante mieux. Jamais plus bon."
+   }
+  },
+  {
+   "d": 73,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Superlatives",
+     "g": "Say the best, the most and the least in French with le plus and le moins.",
+     "p": [
+      "Le, la or les + plus or moins + adjective: le plus grand, la moins chère, les plus beaux.",
+      "Use de for the group: c'est la plus belle ville du pays, le plus jeune de la classe.",
+      "Irregulars: le meilleur, la meilleure (the best), and le mieux for verbs: c'est elle qui chante le mieux."
+     ],
+     "q": "What is the most beautiful place you know? Tell me in French.",
+     "c": "Write three superlatives about your town: the best café, the oldest street, the most beautiful park."
+    },
+    "de": {
+     "t": "Der Superlativ",
+     "g": "Du sagst auf Französisch der beste, der meiste und der wenigste mit le plus und le moins.",
+     "p": [
+      "Le, la oder les + plus oder moins + Adjektiv: le plus grand, la moins chère, les plus beaux.",
+      "De steht für die Gruppe: c'est la plus belle ville du pays, le plus jeune de la classe.",
+      "Unregelmäßig: le meilleur, la meilleure (der, die beste) und le mieux bei Verben."
+     ],
+     "q": "Welcher ist der schönste Ort, den du kennst? Sag es mir auf Französisch.",
+     "c": "Schreib drei Superlative über deine Stadt: das beste Café, die älteste Straße, der schönste Park."
+    },
+    "es": {
+     "t": "Superlativos",
+     "g": "Di el mejor, el más y el menos en francés con le plus y le moins.",
+     "p": [
+      "Le, la o les + plus o moins + adjetivo: le plus grand, la moins chère, les plus beaux.",
+      "Usa de para el grupo: c'est la plus belle ville du pays, le plus jeune de la classe.",
+      "Irregulares: le meilleur, la meilleure (el, la mejor) y le mieux con verbos."
+     ],
+     "q": "¿Cuál es el lugar más bonito que conoces? Dímelo en francés.",
+     "c": "Escribe tres superlativos sobre tu ciudad: el mejor café, la calle más antigua, el parque más bonito."
+    },
+    "fr": {
+     "t": "Le superlatif",
+     "g": "Dire le meilleur, le plus et le moins.",
+     "p": [
+      "Le, la, les + plus ou moins + adjectif : le plus grand, la moins chère, les plus beaux.",
+      "Le groupe avec de : c'est la plus belle ville du pays, le plus jeune de la classe.",
+      "Irréguliers : le meilleur, la meilleure, et le mieux avec un verbe : c'est elle qui chante le mieux."
+     ],
+     "q": "Quel est le plus bel endroit que tu connais ?",
+     "c": "Écris trois superlatifs sur ta ville : le meilleur café, la rue la plus ancienne, le plus beau parc."
+    },
+    "it": {
+     "t": "Superlativi",
+     "g": "Di' il migliore, il più e il meno in francese con le plus e le moins.",
+     "p": [
+      "Le, la o les + plus o moins + aggettivo: le plus grand, la moins chère, les plus beaux.",
+      "Usa de per il gruppo: c'est la plus belle ville du pays, le plus jeune de la classe.",
+      "Irregolari: le meilleur, la meilleure (il, la migliore) e le mieux con i verbi."
+     ],
+     "q": "Qual è il posto più bello che conosci? Dimmelo in francese.",
+     "c": "Scrivi tre superlativi sulla tua città: il miglior caffè, la via più antica, il parco più bello."
+    },
+    "pt": {
+     "t": "Superlativos",
+     "g": "Dizer o melhor, o mais e o menos em francês com le plus e le moins.",
+     "p": [
+      "Le, la ou les + plus ou moins + adjetivo: le plus grand, la moins chère, les plus beaux.",
+      "Usa de para o grupo: c'est la plus belle ville du pays, le plus jeune de la classe.",
+      "Irregulares: le meilleur, la meilleure (o, a melhor) e le mieux com verbos."
+     ],
+     "q": "Qual é o lugar mais bonito que conheces? Diz-me em francês.",
+     "c": "Escreve três superlativos sobre a tua cidade: o melhor café, a rua mais antiga, o parque mais bonito."
+    },
+    "pt_BR": {
+     "t": "Superlativos",
+     "g": "Dizer o melhor, o mais e o menos em francês com le plus e le moins.",
+     "p": [
+      "Le, la ou les + plus ou moins + adjetivo: le plus grand, la moins chère, les plus beaux.",
+      "Use de para o grupo: c'est la plus belle ville du pays, le plus jeune de la classe.",
+      "Irregulares: le meilleur, la meilleure (o, a melhor) e le mieux com verbos."
+     ],
+     "q": "Qual é o lugar mais bonito que você conhece? Me diga em francês.",
+     "c": "Escreva três superlativos sobre sua cidade: o melhor café, a rua mais antiga, o parque mais bonito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le plus grand",
+      "ex": "C'est le plus grand musée de la ville."
+     },
+     {
+      "w": "la moins chère",
+      "ex": "C'est la chambre la moins chère."
+     },
+     {
+      "w": "le meilleur",
+      "ex": "C'est le meilleur restaurant du quartier."
+     },
+     {
+      "w": "le mieux",
+      "ex": "C'est Paul qui cuisine le mieux."
+     },
+     {
+      "w": "le plus beau",
+      "ex": "C'est le plus beau jour de l'année."
+     },
+     {
+      "w": "du monde",
+      "ex": "C'est la plus haute tour du monde ?"
+     }
+    ],
+    "gram": "Le / la / les + plus / moins + adjectif + de : la plus belle ville du pays. Bon → le meilleur, bien → le mieux."
+   }
+  },
+  {
+   "d": 74,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Il faut: what is necessary",
+     "g": "Use il faut + infinitive to talk about rules, needs and advice.",
+     "p": [
+      "Il faut never changes: il faut partir = we have to leave, someone must leave.",
+      "Il ne faut pas means you must not: il ne faut pas fumer ici.",
+      "Il faut + noun means you need: il faut du sucre pour ce gâteau, il faut deux heures."
+     ],
+     "q": "What is needed to learn a language well? Answer with il faut in French.",
+     "c": "Give three pieces of advice for a visitor to your city, starting with il faut or il ne faut pas."
+    },
+    "de": {
+     "t": "Il faut: was nötig ist",
+     "g": "Du nutzt il faut + Infinitiv für Regeln, Bedürfnisse und Ratschläge.",
+     "p": [
+      "Il faut bleibt immer gleich: il faut partir = man muss gehen, wir müssen gehen.",
+      "Il ne faut pas heißt man darf nicht: il ne faut pas fumer ici.",
+      "Il faut + Nomen heißt man braucht: il faut du sucre pour ce gâteau, il faut deux heures."
+     ],
+     "q": "Was braucht man, um eine Sprache gut zu lernen? Antworte mit il faut.",
+     "c": "Gib einem Besucher deiner Stadt drei Tipps mit il faut oder il ne faut pas."
+    },
+    "es": {
+     "t": "Il faut: lo necesario",
+     "g": "Usa il faut + infinitivo para hablar de normas, necesidades y consejos.",
+     "p": [
+      "Il faut no cambia nunca: il faut partir = hay que irse.",
+      "Il ne faut pas significa no se debe: il ne faut pas fumer ici.",
+      "Il faut + sustantivo es se necesita: il faut du sucre pour ce gâteau, il faut deux heures."
+     ],
+     "q": "¿Qué hace falta para aprender bien un idioma? Responde con il faut.",
+     "c": "Da tres consejos a un visitante de tu ciudad, empezando con il faut o il ne faut pas."
+    },
+    "fr": {
+     "t": "Il faut : ce qui est nécessaire",
+     "g": "Utiliser il faut + infinitif pour les règles, les besoins et les conseils.",
+     "p": [
+      "Il faut ne change jamais : il faut partir, il faut réserver.",
+      "Il ne faut pas = c'est interdit ou déconseillé : il ne faut pas fumer ici.",
+      "Il faut + nom = on a besoin de : il faut du sucre pour ce gâteau, il faut deux heures."
+     ],
+     "q": "Qu'est-ce qu'il faut pour bien apprendre une langue ?",
+     "c": "Donne trois conseils à un visiteur de ta ville avec il faut ou il ne faut pas."
+    },
+    "it": {
+     "t": "Il faut: ciò che serve",
+     "g": "Usa il faut + infinito per regole, bisogni e consigli.",
+     "p": [
+      "Il faut non cambia mai: il faut partir = bisogna partire.",
+      "Il ne faut pas significa non si deve: il ne faut pas fumer ici.",
+      "Il faut + nome significa ci vuole: il faut du sucre pour ce gâteau, il faut deux heures."
+     ],
+     "q": "Cosa serve per imparare bene una lingua? Rispondi con il faut.",
+     "c": "Dai tre consigli a chi visita la tua città, iniziando con il faut o il ne faut pas."
+    },
+    "pt": {
+     "t": "Il faut: o que é preciso",
+     "g": "Usar il faut + infinitivo para regras, necessidades e conselhos.",
+     "p": [
+      "Il faut nunca muda: il faut partir = é preciso partir.",
+      "Il ne faut pas quer dizer não se deve: il ne faut pas fumer ici.",
+      "Il faut + nome é é preciso ter: il faut du sucre pour ce gâteau, il faut deux heures."
+     ],
+     "q": "O que é preciso para aprender bem uma língua? Responde com il faut.",
+     "c": "Dá três conselhos a quem visita a tua cidade, começando com il faut ou il ne faut pas."
+    },
+    "pt_BR": {
+     "t": "Il faut: o que é preciso",
+     "g": "Usar il faut + infinitivo para regras, necessidades e conselhos.",
+     "p": [
+      "Il faut nunca muda: il faut partir = é preciso ir embora.",
+      "Il ne faut pas quer dizer não se deve: il ne faut pas fumer ici.",
+      "Il faut + substantivo é precisa de: il faut du sucre pour ce gâteau, il faut deux heures."
+     ],
+     "q": "O que é preciso para aprender bem uma língua? Responda com il faut.",
+     "c": "Dê três conselhos a quem visita sua cidade, começando com il faut ou il ne faut pas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il faut",
+      "ex": "Il faut réserver une table."
+     },
+     {
+      "w": "il ne faut pas",
+      "ex": "Il ne faut pas oublier ton passeport."
+     },
+     {
+      "w": "un conseil",
+      "ex": "Je te donne un conseil : il faut dormir."
+     },
+     {
+      "w": "réserver",
+      "ex": "Il faut réserver le musée à l'avance."
+     },
+     {
+      "w": "oublier",
+      "ex": "N'oublie pas tes clés !"
+     },
+     {
+      "w": "il faut + temps",
+      "ex": "Il faut une heure pour aller à Rouen."
+     }
+    ],
+    "gram": "Il faut + infinitif (obligation) ; il ne faut pas + infinitif (interdiction) ; il faut + nom (besoin). Forme impersonnelle."
+   }
+  },
+  {
+   "d": 75,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Imperative: giving instructions",
+     "g": "Give commands and directions in French with the imperative.",
+     "p": [
+      "Use the present without the subject: tu viens becomes viens!, vous prenez becomes prenez!, nous allons becomes allons-y!",
+      "-er verbs drop the s for tu: tu regardes becomes regarde! but keep it before y: vas-y!",
+      "Directions: prenez la deuxième rue à gauche, continuez tout droit, tournez à droite."
+     ],
+     "q": "How do I get from your home to the nearest bakery? Explain with the imperative.",
+     "c": "Write simple directions in French from your door to a place you like, using three commands."
+    },
+    "de": {
+     "t": "Imperativ: Anweisungen geben",
+     "g": "Du gibst auf Französisch Befehle und Wegbeschreibungen mit dem Imperativ.",
+     "p": [
+      "Präsens ohne Subjekt: tu viens wird viens!, vous prenez wird prenez!, nous allons wird allons-y!",
+      "Verben auf -er verlieren bei tu das s: regarde! aber vor y bleibt es: vas-y!",
+      "Wege: prenez la deuxième rue à gauche, continuez tout droit, tournez à droite."
+     ],
+     "q": "Wie komme ich von dir zur nächsten Bäckerei? Erklär es mit dem Imperativ.",
+     "c": "Schreib eine kurze Wegbeschreibung von deiner Tür zu einem Lieblingsort mit drei Befehlen."
+    },
+    "es": {
+     "t": "Imperativo: dar instrucciones",
+     "g": "Da órdenes e indicaciones en francés con el imperativo.",
+     "p": [
+      "Usa el presente sin sujeto: tu viens da viens!, vous prenez da prenez!, nous allons da allons-y!",
+      "Los verbos en -er pierden la s con tu: regarde! pero la mantienen ante y: vas-y!",
+      "Indicaciones: prenez la deuxième rue à gauche, continuez tout droit, tournez à droite."
+     ],
+     "q": "¿Cómo voy de tu casa a la panadería más cercana? Explícalo con el imperativo.",
+     "c": "Escribe en francés cómo llegar desde tu puerta a un lugar que te gusta, con tres órdenes."
+    },
+    "fr": {
+     "t": "L'impératif : donner des consignes",
+     "g": "Donner des ordres et des indications avec l'impératif.",
+     "p": [
+      "Présent sans sujet : tu viens → viens !, vous prenez → prenez !, nous allons → allons-y !",
+      "Les verbes en -er perdent le s avec tu : regarde ! Mais on garde le s devant y : vas-y !",
+      "Itinéraire : prenez la deuxième rue à gauche, continuez tout droit, tournez à droite."
+     ],
+     "q": "Comment on va de chez toi à la boulangerie la plus proche ?",
+     "c": "Écris un petit itinéraire de ta porte à un lieu que tu aimes, avec trois verbes à l'impératif."
+    },
+    "it": {
+     "t": "Imperativo: dare istruzioni",
+     "g": "Dai ordini e indicazioni in francese con l'imperativo.",
+     "p": [
+      "Usa il presente senza soggetto: tu viens dà viens!, vous prenez dà prenez!, nous allons dà allons-y!",
+      "I verbi in -er perdono la s con tu: regarde! ma la tengono davanti a y: vas-y!",
+      "Indicazioni: prenez la deuxième rue à gauche, continuez tout droit, tournez à droite."
+     ],
+     "q": "Come vado da casa tua alla panetteria più vicina? Spiegalo con l'imperativo.",
+     "c": "Scrivi in francese come arrivare dalla tua porta a un posto che ami, con tre ordini."
+    },
+    "pt": {
+     "t": "Imperativo: dar instruções",
+     "g": "Dar ordens e indicações em francês com o imperativo.",
+     "p": [
+      "Usa o presente sem sujeito: tu viens dá viens!, vous prenez dá prenez!, nous allons dá allons-y!",
+      "Os verbos em -er perdem o s com tu: regarde! mas mantêm-no antes de y: vas-y!",
+      "Indicações: prenez la deuxième rue à gauche, continuez tout droit, tournez à droite."
+     ],
+     "q": "Como vou da tua casa à padaria mais próxima? Explica com o imperativo.",
+     "c": "Escreve em francês o caminho da tua porta até um lugar de que gostas, com três ordens."
+    },
+    "pt_BR": {
+     "t": "Imperativo: dar instruções",
+     "g": "Dar ordens e indicações em francês com o imperativo.",
+     "p": [
+      "Use o presente sem sujeito: tu viens vira viens!, vous prenez vira prenez!, nous allons vira allons-y!",
+      "Os verbos em -er perdem o s com tu: regarde! mas mantêm antes de y: vas-y!",
+      "Indicações: prenez la deuxième rue à gauche, continuez tout droit, tournez à droite."
+     ],
+     "q": "Como eu vou da sua casa até a padaria mais próxima? Explique com o imperativo.",
+     "c": "Escreva em francês o caminho da sua porta até um lugar de que gosta, com três ordens."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "viens !",
+      "ex": "Viens ici, s'il te plaît !"
+     },
+     {
+      "w": "allez-y !",
+      "ex": "Allez-y, c'est à vous !"
+     },
+     {
+      "w": "prenez",
+      "ex": "Prenez la deuxième rue à gauche."
+     },
+     {
+      "w": "tournez à droite",
+      "ex": "Au feu, tournez à droite."
+     },
+     {
+      "w": "continuez tout droit",
+      "ex": "Continuez tout droit jusqu'à la place."
+     },
+     {
+      "w": "attends !",
+      "ex": "Attends, j'arrive !"
+     }
+    ],
+    "gram": "Impératif : présent sans sujet (prends, prenons, prenez). Verbes en -er : pas de s avec tu (parle !), sauf vas-y."
+   }
+  },
+  {
+   "d": 76,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "A simple recipe",
+     "g": "Follow and explain a classic crêpe recipe with French cooking verbs.",
+     "p": [
+      "Cooking verbs: couper, mélanger, ajouter, verser, faire cuire, retourner.",
+      "Recipes often use the imperative or the infinitive: mélangez la farine et les œufs, or mélanger la farine.",
+      "Ingredients for crêpes: de la farine, des œufs, du lait, du sucre, une pincée de sel, du beurre."
+     ],
+     "q": "What dish can you cook? Explain the first steps in French.",
+     "c": "Write a mini recipe in French with four steps, using ajouter, mélanger and faire cuire."
+    },
+    "de": {
+     "t": "Ein einfaches Rezept",
+     "g": "Du folgst einem klassischen Crêpe-Rezept und erklärst es mit französischen Kochverben.",
+     "p": [
+      "Kochverben: couper, mélanger, ajouter, verser, faire cuire, retourner.",
+      "Rezepte nutzen Imperativ oder Infinitiv: mélangez la farine et les œufs oder mélanger la farine.",
+      "Zutaten für Crêpes: de la farine, des œufs, du lait, du sucre, une pincée de sel, du beurre."
+     ],
+     "q": "Welches Gericht kannst du kochen? Erklär die ersten Schritte auf Französisch.",
+     "c": "Schreib ein Minirezept mit vier Schritten mit ajouter, mélanger und faire cuire."
+    },
+    "es": {
+     "t": "Una receta sencilla",
+     "g": "Sigue y explica una receta clásica de crepes con verbos de cocina franceses.",
+     "p": [
+      "Verbos de cocina: couper, mélanger, ajouter, verser, faire cuire, retourner.",
+      "Las recetas usan el imperativo o el infinitivo: mélangez la farine et les œufs o mélanger la farine.",
+      "Ingredientes: de la farine, des œufs, du lait, du sucre, une pincée de sel, du beurre."
+     ],
+     "q": "¿Qué plato sabes cocinar? Explica los primeros pasos en francés.",
+     "c": "Escribe una minirreceta en francés de cuatro pasos con ajouter, mélanger y faire cuire."
+    },
+    "fr": {
+     "t": "Une recette simple",
+     "g": "Suivre et expliquer une recette de crêpes avec les verbes de cuisine.",
+     "p": [
+      "Verbes de cuisine : couper, mélanger, ajouter, verser, faire cuire, retourner.",
+      "Une recette utilise l'impératif ou l'infinitif : mélangez la farine et les œufs, ou mélanger la farine.",
+      "Ingrédients : de la farine, des œufs, du lait, du sucre, une pincée de sel, du beurre."
+     ],
+     "q": "Quel plat tu sais cuisiner ? Explique les premières étapes.",
+     "c": "Écris une mini-recette en quatre étapes avec ajouter, mélanger et faire cuire."
+    },
+    "it": {
+     "t": "Una ricetta semplice",
+     "g": "Segui e spiega una classica ricetta delle crêpes con i verbi di cucina francesi.",
+     "p": [
+      "Verbi di cucina: couper, mélanger, ajouter, verser, faire cuire, retourner.",
+      "Le ricette usano l'imperativo o l'infinito: mélangez la farine et les œufs o mélanger la farine.",
+      "Ingredienti: de la farine, des œufs, du lait, du sucre, une pincée de sel, du beurre."
+     ],
+     "q": "Che piatto sai cucinare? Spiega i primi passaggi in francese.",
+     "c": "Scrivi una mini ricetta in francese in quattro passaggi con ajouter, mélanger e faire cuire."
+    },
+    "pt": {
+     "t": "Uma receita simples",
+     "g": "Seguir e explicar uma receita clássica de crepes com verbos de cozinha franceses.",
+     "p": [
+      "Verbos de cozinha: couper, mélanger, ajouter, verser, faire cuire, retourner.",
+      "As receitas usam o imperativo ou o infinitivo: mélangez la farine et les œufs ou mélanger la farine.",
+      "Ingredientes: de la farine, des œufs, du lait, du sucre, une pincée de sel, du beurre."
+     ],
+     "q": "Que prato sabes cozinhar? Explica os primeiros passos em francês.",
+     "c": "Escreve uma mini receita em francês com quatro passos, usando ajouter, mélanger e faire cuire."
+    },
+    "pt_BR": {
+     "t": "Uma receita simples",
+     "g": "Seguir e explicar uma receita clássica de crepe com verbos de cozinha franceses.",
+     "p": [
+      "Verbos de cozinha: couper, mélanger, ajouter, verser, faire cuire, retourner.",
+      "As receitas usam o imperativo ou o infinitivo: mélangez la farine et les œufs ou mélanger la farine.",
+      "Ingredientes: de la farine, des œufs, du lait, du sucre, une pincée de sel, du beurre."
+     ],
+     "q": "Que prato você sabe cozinhar? Explique os primeiros passos em francês.",
+     "c": "Escreva uma minirreceita em francês com quatro passos, usando ajouter, mélanger e faire cuire."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "couper",
+      "ex": "Coupez les pommes en morceaux."
+     },
+     {
+      "w": "mélanger",
+      "ex": "Mélangez la farine et les œufs."
+     },
+     {
+      "w": "ajouter",
+      "ex": "Ajoutez le lait petit à petit."
+     },
+     {
+      "w": "verser",
+      "ex": "Versez un peu de pâte dans la poêle."
+     },
+     {
+      "w": "faire cuire",
+      "ex": "Faites cuire la crêpe une minute."
+     },
+     {
+      "w": "la poêle",
+      "ex": "Mets un peu de beurre dans la poêle."
+     }
+    ],
+    "gram": "Dans une recette : impératif (mélangez, ajoutez) ou infinitif (mélanger). Faire cuire = cuisiner à la chaleur."
+   }
+  },
+  {
+   "d": 77,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Direct object pronouns",
+     "g": "Replace a direct object with le, la or les to avoid repeating it.",
+     "p": [
+      "Le replaces a masculine noun, la a feminine one, les a plural: tu vois Paul? Oui, je le vois.",
+      "The pronoun goes before the verb: je la connais, je les aime; le and la become l' before a vowel: je l'aime.",
+      "In negatives it stays before the verb: je ne le vois pas."
+     ],
+     "q": "Do you watch the news? Answer in French with a pronoun: oui, je les regarde...",
+     "c": "Answer three French questions about your things with le, la or les, like tu prends le bus?"
+    },
+    "de": {
+     "t": "Direkte Objektpronomen",
+     "g": "Du ersetzt ein direktes Objekt durch le, la oder les, um Wiederholungen zu vermeiden.",
+     "p": [
+      "Le ersetzt ein männliches Nomen, la ein weibliches, les den Plural: tu vois Paul? Oui, je le vois.",
+      "Das Pronomen steht vor dem Verb: je la connais, je les aime; vor Vokal wird le, la zu l': je l'aime.",
+      "In der Verneinung bleibt es vor dem Verb: je ne le vois pas."
+     ],
+     "q": "Schaust du die Nachrichten? Antworte mit einem Pronomen: oui, je les regarde...",
+     "c": "Beantworte drei Fragen über deine Sachen mit le, la oder les, z. B. tu prends le bus?"
+    },
+    "es": {
+     "t": "Pronombres de objeto directo",
+     "g": "Sustituye un objeto directo por le, la o les para no repetirlo.",
+     "p": [
+      "Le sustituye un masculino, la un femenino, les un plural: tu vois Paul? Oui, je le vois.",
+      "El pronombre va antes del verbo: je la connais, je les aime; ante vocal le, la son l': je l'aime.",
+      "En negativa sigue antes del verbo: je ne le vois pas."
+     ],
+     "q": "¿Ves las noticias? Responde en francés con un pronombre: oui, je les regarde...",
+     "c": "Responde tres preguntas sobre tus cosas con le, la o les, como tu prends le bus?"
+    },
+    "fr": {
+     "t": "Les pronoms COD",
+     "g": "Remplacer un complément direct par le, la ou les.",
+     "p": [
+      "Le remplace un nom masculin, la un nom féminin, les un pluriel : tu vois Paul ? Oui, je le vois.",
+      "Le pronom se place avant le verbe : je la connais, je les aime ; devant une voyelle : je l'aime.",
+      "À la forme négative, il reste avant le verbe : je ne le vois pas."
+     ],
+     "q": "Tu regardes les informations ? Réponds avec un pronom.",
+     "c": "Réponds à trois questions sur tes affaires avec le, la ou les, comme tu prends le bus ?"
+    },
+    "it": {
+     "t": "Pronomi diretti",
+     "g": "Sostituisci un complemento oggetto con le, la o les per non ripeterlo.",
+     "p": [
+      "Le sostituisce un maschile, la un femminile, les un plurale: tu vois Paul? Oui, je le vois.",
+      "Il pronome va prima del verbo: je la connais, je les aime; davanti a vocale: je l'aime.",
+      "Nella negazione resta prima del verbo: je ne le vois pas."
+     ],
+     "q": "Guardi il telegiornale? Rispondi in francese con un pronome: oui, je le regarde...",
+     "c": "Rispondi a tre domande sulle tue cose con le, la o les, come tu prends le bus?"
+    },
+    "pt": {
+     "t": "Pronomes de complemento direto",
+     "g": "Substituir um complemento direto por le, la ou les para não repetir.",
+     "p": [
+      "Le substitui um nome masculino, la um feminino, les um plural: tu vois Paul? Oui, je le vois.",
+      "O pronome vem antes do verbo: je la connais, je les aime; antes de vogal: je l'aime.",
+      "Na negativa fica antes do verbo: je ne le vois pas."
+     ],
+     "q": "Vês as notícias? Responde em francês com um pronome: oui, je les regarde...",
+     "c": "Responde a três perguntas sobre as tuas coisas com le, la ou les, como tu prends le bus?"
+    },
+    "pt_BR": {
+     "t": "Pronomes de objeto direto",
+     "g": "Substituir um objeto direto por le, la ou les para não repetir.",
+     "p": [
+      "Le substitui um masculino, la um feminino, les um plural: tu vois Paul? Oui, je le vois.",
+      "O pronome vem antes do verbo: je la connais, je les aime; antes de vogal: je l'aime.",
+      "Na negativa ele fica antes do verbo: je ne le vois pas."
+     ],
+     "q": "Você vê o jornal? Responda em francês com um pronome: oui, je le regarde...",
+     "c": "Responda três perguntas sobre suas coisas com le, la ou les, como tu prends le bus?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je le vois",
+      "ex": "Paul ? Oui, je le vois demain."
+     },
+     {
+      "w": "je la connais",
+      "ex": "Ta voisine ? Je la connais bien."
+     },
+     {
+      "w": "je les aime",
+      "ex": "Ces chansons ? Je les aime beaucoup."
+     },
+     {
+      "w": "je l'achète",
+      "ex": "Ce livre ? Je l'achète aujourd'hui."
+     },
+     {
+      "w": "je ne la trouve pas",
+      "ex": "Ma clé ? Je ne la trouve pas."
+     },
+     {
+      "w": "regarder",
+      "ex": "Le film ? On le regarde ce soir."
+     }
+    ],
+    "gram": "COD : le, la, l', les avant le verbe : je le vois, je ne la connais pas. Ils remplacent un nom sans préposition."
+   }
+  },
+  {
+   "d": 78,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Indirect object pronouns",
+     "g": "Use lui and leur to replace à + a person.",
+     "p": [
+      "Parler à, téléphoner à, écrire à, donner à take an indirect object: je parle à Marie.",
+      "Lui replaces à + one person, him or her: je lui parle. Leur replaces à + several people: je leur écris.",
+      "Like le and la, they go before the verb: je ne lui téléphone pas ce soir."
+     ],
+     "q": "When did you last write to your friends? Answer in French with leur or lui.",
+     "c": "Make three sentences about family or friends with je lui and je leur, like je lui téléphone le dimanche."
+    },
+    "de": {
+     "t": "Indirekte Objektpronomen",
+     "g": "Du benutzt lui und leur, um à + Person zu ersetzen.",
+     "p": [
+      "Parler à, téléphoner à, écrire à, donner à haben ein indirektes Objekt: je parle à Marie.",
+      "Lui ersetzt à + eine Person (ihm oder ihr): je lui parle. Leur ersetzt à + mehrere: je leur écris.",
+      "Wie le und la stehen sie vor dem Verb: je ne lui téléphone pas ce soir."
+     ],
+     "q": "Wann hast du deinen Freunden zuletzt geschrieben? Antworte mit leur oder lui.",
+     "c": "Bilde drei Sätze über Familie oder Freunde mit je lui und je leur, z. B. je lui téléphone le dimanche."
+    },
+    "es": {
+     "t": "Pronombres de objeto indirecto",
+     "g": "Usa lui y leur para sustituir à + persona.",
+     "p": [
+      "Parler à, téléphoner à, écrire à, donner à llevan objeto indirecto: je parle à Marie.",
+      "Lui sustituye à + una persona (le): je lui parle. Leur sustituye à + varias (les): je leur écris.",
+      "Como le y la, van antes del verbo: je ne lui téléphone pas ce soir."
+     ],
+     "q": "¿Cuándo escribiste a tus amigos por última vez? Responde con leur o lui.",
+     "c": "Haz tres frases sobre tu familia o amigos con je lui y je leur, como je lui téléphone le dimanche."
+    },
+    "fr": {
+     "t": "Les pronoms COI",
+     "g": "Utiliser lui et leur pour remplacer à + une personne.",
+     "p": [
+      "Parler à, téléphoner à, écrire à, donner à : je parle à Marie.",
+      "Lui remplace à + une personne : je lui parle. Leur remplace à + plusieurs personnes : je leur écris.",
+      "Comme le et la, ils se placent avant le verbe : je ne lui téléphone pas ce soir."
+     ],
+     "q": "Tu écris souvent à tes amis ? Réponds avec leur.",
+     "c": "Fais trois phrases sur ta famille ou tes amis avec je lui et je leur."
+    },
+    "it": {
+     "t": "Pronomi indiretti",
+     "g": "Usa lui e leur per sostituire à + persona.",
+     "p": [
+      "Parler à, téléphoner à, écrire à, donner à hanno un complemento indiretto: je parle à Marie.",
+      "Lui sostituisce à + una persona (gli, le): je lui parle. Leur sostituisce à + più persone: je leur écris.",
+      "Come le e la, vanno prima del verbo: je ne lui téléphone pas ce soir."
+     ],
+     "q": "Quando hai scritto l'ultima volta ai tuoi amici? Rispondi con leur o lui.",
+     "c": "Fai tre frasi su famiglia o amici con je lui e je leur, come je lui téléphone le dimanche."
+    },
+    "pt": {
+     "t": "Pronomes de complemento indireto",
+     "g": "Usar lui e leur para substituir à + pessoa.",
+     "p": [
+      "Parler à, téléphoner à, écrire à, donner à levam complemento indireto: je parle à Marie.",
+      "Lui substitui à + uma pessoa (lhe): je lui parle. Leur substitui à + várias (lhes): je leur écris.",
+      "Como le e la, vêm antes do verbo: je ne lui téléphone pas ce soir."
+     ],
+     "q": "Quando escreveste aos teus amigos pela última vez? Responde com leur ou lui.",
+     "c": "Faz três frases sobre a família ou amigos com je lui e je leur, como je lui téléphone le dimanche."
+    },
+    "pt_BR": {
+     "t": "Pronomes de objeto indireto",
+     "g": "Usar lui e leur para substituir à + pessoa.",
+     "p": [
+      "Parler à, téléphoner à, écrire à, donner à levam objeto indireto: je parle à Marie.",
+      "Lui substitui à + uma pessoa (lhe): je lui parle. Leur substitui à + várias (lhes): je leur écris.",
+      "Como le e la, vêm antes do verbo: je ne lui téléphone pas ce soir."
+     ],
+     "q": "Quando você escreveu para seus amigos pela última vez? Responda com leur ou lui.",
+     "c": "Faça três frases sobre família ou amigos com je lui e je leur, como je lui téléphone le dimanche."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parler à",
+      "ex": "Je parle à ma mère. Je lui parle."
+     },
+     {
+      "w": "téléphoner à",
+      "ex": "Je téléphone à mes parents. Je leur téléphone."
+     },
+     {
+      "w": "écrire à",
+      "ex": "Tu lui écris une carte ?"
+     },
+     {
+      "w": "donner à",
+      "ex": "Je leur donne un cadeau."
+     },
+     {
+      "w": "offrir à",
+      "ex": "Je lui offre des fleurs."
+     },
+     {
+      "w": "répondre à",
+      "ex": "Il ne leur répond pas."
+     }
+    ],
+    "gram": "COI : lui (à + une personne), leur (à + plusieurs) avant le verbe : je lui parle, je ne leur écris pas."
+   }
+  },
+  {
+   "d": 79,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "On the phone",
+     "g": "Handle a simple phone call in French and spell your name.",
+     "p": [
+      "Start with allô? and introduce yourself: bonjour, c'est Anna, je voudrais parler à M. Martin.",
+      "Useful lines: c'est de la part de qui? (who is calling?), ne quittez pas (hold on), je rappelle plus tard.",
+      "Spell your name with the French alphabet: A comme Anna, B comme Bernard; e sounds like euh, i like ee."
+     ],
+     "q": "How do you spell your first name in French? Try it letter by letter.",
+     "c": "Practise a short phone call: greet, ask for someone, and leave a simple message."
+    },
+    "de": {
+     "t": "Am Telefon",
+     "g": "Du führst ein einfaches Telefonat auf Französisch und buchstabierst deinen Namen.",
+     "p": [
+      "Beginne mit allô? und stell dich vor: bonjour, c'est Anna, je voudrais parler à M. Martin.",
+      "Nützlich: c'est de la part de qui? (wer spricht?), ne quittez pas (bleiben Sie dran), je rappelle plus tard.",
+      "Buchstabieren: A comme Anna, B comme Bernard; e klingt wie ö, i wie i."
+     ],
+     "q": "Wie buchstabierst du deinen Vornamen auf Französisch? Versuch es.",
+     "c": "Übe ein kurzes Telefonat: grüßen, nach jemandem fragen, eine Nachricht hinterlassen."
+    },
+    "es": {
+     "t": "Al teléfono",
+     "g": "Mantén una llamada sencilla en francés y deletrea tu nombre.",
+     "p": [
+      "Empieza con allô? y preséntate: bonjour, c'est Anna, je voudrais parler à M. Martin.",
+      "Frases útiles: c'est de la part de qui? (¿de parte de quién?), ne quittez pas (no cuelgue), je rappelle plus tard.",
+      "Deletrea con el alfabeto francés: A comme Anna, B comme Bernard; la e suena eu, la i suena i."
+     ],
+     "q": "¿Cómo deletreas tu nombre en francés? Inténtalo letra por letra.",
+     "c": "Practica una llamada corta: saluda, pregunta por alguien y deja un mensaje sencillo."
+    },
+    "fr": {
+     "t": "Au téléphone",
+     "g": "Passer un appel simple et épeler ton nom.",
+     "p": [
+      "Commence par allô ? et présente-toi : bonjour, c'est Anna, je voudrais parler à M. Martin.",
+      "Phrases utiles : c'est de la part de qui ?, ne quittez pas, je rappelle plus tard.",
+      "Épeler : A comme Anna, B comme Bernard ; attention au e, au i et au u."
+     ],
+     "q": "Comment tu épelles ton prénom ? Essaie lettre par lettre.",
+     "c": "Entraîne-toi : salue, demande quelqu'un et laisse un petit message."
+    },
+    "it": {
+     "t": "Al telefono",
+     "g": "Gestisci una telefonata semplice in francese e fai lo spelling del tuo nome.",
+     "p": [
+      "Inizia con allô? e presentati: bonjour, c'est Anna, je voudrais parler à M. Martin.",
+      "Frasi utili: c'est de la part de qui? (chi parla?), ne quittez pas (resti in linea), je rappelle plus tard.",
+      "Fai lo spelling: A comme Anna, B comme Bernard; la e suona eu, la i suona i."
+     ],
+     "q": "Come si scrive il tuo nome in francese? Prova lettera per lettera.",
+     "c": "Prova una breve telefonata: saluta, chiedi di qualcuno e lascia un messaggio semplice."
+    },
+    "pt": {
+     "t": "Ao telefone",
+     "g": "Fazer uma chamada simples em francês e soletrar o teu nome.",
+     "p": [
+      "Começa com allô? e apresenta-te: bonjour, c'est Anna, je voudrais parler à M. Martin.",
+      "Frases úteis: c'est de la part de qui? (quem fala?), ne quittez pas (não desligue), je rappelle plus tard.",
+      "Soletra com o alfabeto francês: A comme Anna, B comme Bernard; o e soa eu, o i soa i."
+     ],
+     "q": "Como soletras o teu nome em francês? Tenta letra a letra.",
+     "c": "Treina uma chamada curta: cumprimenta, pede para falar com alguém e deixa uma mensagem."
+    },
+    "pt_BR": {
+     "t": "Ao telefone",
+     "g": "Fazer uma ligação simples em francês e soletrar seu nome.",
+     "p": [
+      "Comece com allô? e se apresente: bonjour, c'est Anna, je voudrais parler à M. Martin.",
+      "Frases úteis: c'est de la part de qui? (quem fala?), ne quittez pas (aguarde), je rappelle plus tard.",
+      "Soletre com o alfabeto francês: A comme Anna, B comme Bernard; o e soa eu, o i soa i."
+     ],
+     "q": "Como você soletra seu nome em francês? Tente letra por letra.",
+     "c": "Pratique uma ligação curta: cumprimente, peça para falar com alguém e deixe um recado."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "allô ?",
+      "ex": "Allô ? Bonjour, c'est Julie."
+     },
+     {
+      "w": "c'est de la part de qui ?",
+      "ex": "C'est de la part de qui, s'il vous plaît ?"
+     },
+     {
+      "w": "ne quittez pas",
+      "ex": "Ne quittez pas, je vous le passe."
+     },
+     {
+      "w": "rappeler",
+      "ex": "Je vous rappelle dans une heure."
+     },
+     {
+      "w": "épeler",
+      "ex": "Vous pouvez épeler votre nom ?"
+     },
+     {
+      "w": "un message",
+      "ex": "Vous voulez laisser un message ?"
+     }
+    ],
+    "gram": "Au téléphone : je voudrais parler à..., c'est de la part de qui ?, ne quittez pas. Épeler : A comme Anna."
+   }
+  },
+  {
+   "d": 80,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Writing a short message",
+     "g": "Write texts and simple emails in French with the right openings and endings.",
+     "p": [
+      "To friends: salut, coucou; end with bisous, à bientôt, à plus (often written A+).",
+      "Formal emails: Madame, Monsieur, or Bonjour Madame; end with cordialement or bien cordialement.",
+      "Keep it simple: je t'écris pour..., tu es libre samedi?, merci pour ta réponse."
+     ],
+     "q": "Who do you write to most often, and how do you usually end your messages? Answer in French.",
+     "c": "Write a short French text to a friend to suggest a coffee this weekend, with an opening and an ending."
+    },
+    "de": {
+     "t": "Eine kurze Nachricht schreiben",
+     "g": "Du schreibst SMS und einfache E-Mails auf Französisch mit passender Anrede und Gruß.",
+     "p": [
+      "An Freunde: salut, coucou; Schluss mit bisous, à bientôt, à plus (oft A+).",
+      "Formell: Madame, Monsieur, oder Bonjour Madame; Schluss mit cordialement oder bien cordialement.",
+      "Bleib einfach: je t'écris pour..., tu es libre samedi?, merci pour ta réponse."
+     ],
+     "q": "Wem schreibst du am häufigsten, und wie beendest du deine Nachrichten? Antworte auf Französisch.",
+     "c": "Schreib einem Freund eine kurze SMS auf Französisch und schlag einen Kaffee am Wochenende vor."
+    },
+    "es": {
+     "t": "Escribir un mensaje corto",
+     "g": "Escribe mensajes y correos sencillos en francés con el saludo y la despedida adecuados.",
+     "p": [
+      "A amigos: salut, coucou; despide con bisous, à bientôt, à plus (a menudo A+).",
+      "Correos formales: Madame, Monsieur, o Bonjour Madame; termina con cordialement o bien cordialement.",
+      "Hazlo simple: je t'écris pour..., tu es libre samedi?, merci pour ta réponse."
+     ],
+     "q": "¿A quién escribes más a menudo y cómo terminas tus mensajes? Responde en francés.",
+     "c": "Escribe un mensaje corto a un amigo para proponerle un café este fin de semana, con saludo y despedida."
+    },
+    "fr": {
+     "t": "Écrire un petit message",
+     "g": "Écrire des SMS et des e-mails simples avec la bonne formule.",
+     "p": [
+      "Entre amis : salut, coucou ; pour finir : bisous, à bientôt, à plus (souvent écrit A+).",
+      "E-mail formel : Madame, Monsieur, ou Bonjour Madame ; pour finir : cordialement, bien cordialement.",
+      "Reste simple : je t'écris pour..., tu es libre samedi ?, merci pour ta réponse."
+     ],
+     "q": "À qui tu écris le plus souvent, et comment tu termines tes messages ?",
+     "c": "Écris un SMS à un ami pour proposer un café ce week-end, avec une formule au début et à la fin."
+    },
+    "it": {
+     "t": "Scrivere un breve messaggio",
+     "g": "Scrivi messaggi ed e-mail semplici in francese con i saluti giusti.",
+     "p": [
+      "Agli amici: salut, coucou; per chiudere bisous, à bientôt, à plus (spesso A+).",
+      "E-mail formali: Madame, Monsieur, o Bonjour Madame; chiudi con cordialement o bien cordialement.",
+      "Resta semplice: je t'écris pour..., tu es libre samedi?, merci pour ta réponse."
+     ],
+     "q": "A chi scrivi più spesso e come chiudi i tuoi messaggi? Rispondi in francese.",
+     "c": "Scrivi un breve messaggio a un amico per proporre un caffè nel fine settimana, con saluto iniziale e finale."
+    },
+    "pt": {
+     "t": "Escrever uma mensagem curta",
+     "g": "Escrever mensagens e e-mails simples em francês com a abertura e o fecho certos.",
+     "p": [
+      "A amigos: salut, coucou; termina com bisous, à bientôt, à plus (muitas vezes A+).",
+      "E-mails formais: Madame, Monsieur, ou Bonjour Madame; termina com cordialement ou bien cordialement.",
+      "Mantém simples: je t'écris pour..., tu es libre samedi?, merci pour ta réponse."
+     ],
+     "q": "A quem escreves mais vezes e como acabas as tuas mensagens? Responde em francês.",
+     "c": "Escreve uma mensagem curta a um amigo a propor um café no fim de semana, com abertura e fecho."
+    },
+    "pt_BR": {
+     "t": "Escrever uma mensagem curta",
+     "g": "Escrever mensagens e e-mails simples em francês com a abertura e a despedida certas.",
+     "p": [
+      "Para amigos: salut, coucou; termine com bisous, à bientôt, à plus (muitas vezes A+).",
+      "E-mails formais: Madame, Monsieur, ou Bonjour Madame; termine com cordialement ou bien cordialement.",
+      "Seja simples: je t'écris pour..., tu es libre samedi?, merci pour ta réponse."
+     ],
+     "q": "Para quem você escreve mais e como termina suas mensagens? Responda em francês.",
+     "c": "Escreva uma mensagem curta para um amigo propondo um café no fim de semana, com abertura e despedida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "coucou",
+      "ex": "Coucou ! Tu vas bien ?"
+     },
+     {
+      "w": "bisous",
+      "ex": "À demain, bisous !"
+     },
+     {
+      "w": "à bientôt",
+      "ex": "Merci pour tout, à bientôt !"
+     },
+     {
+      "w": "cordialement",
+      "ex": "Merci de votre réponse. Cordialement, Anna."
+     },
+     {
+      "w": "je t'écris pour",
+      "ex": "Je t'écris pour t'inviter samedi."
+     },
+     {
+      "w": "tu es libre ?",
+      "ex": "Tu es libre dimanche après-midi ?"
+     }
+    ],
+    "gram": "Message amical : salut / coucou... bisous, à plus. E-mail formel : Madame, Monsieur... cordialement."
+   }
+  }
+ ]
+}

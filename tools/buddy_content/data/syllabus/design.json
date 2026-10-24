@@ -1,0 +1,2195 @@
+{
+"topic": "design",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What design really is",
+"f": "Design as solving problems for people: making things useful, clear and pleasant, not only pretty"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Graphic design and product design",
+"f": "How visual communication and the design of physical objects differ and overlap"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Design is everywhere",
+"f": "Spotting deliberate design choices in signs, packaging, apps, chairs and kitchen tools"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Seeing like a designer",
+"f": "Training your eye to notice spacing, colour, shape and purpose in daily objects"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Your designer's sketchbook",
+"f": "Why designers sketch daily and how to start a simple idea notebook"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Form follows function",
+"f": "The famous principle that an object's shape should grow from its purpose"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Good design versus decoration",
+"f": "Telling the difference between design that helps and design that only adorns"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Dieter Rams' ideas in brief",
+"f": "The well-known principles of good design: useful, honest, understandable, as little as possible"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Points, lines and shapes",
+"f": "The basic building blocks of every visual composition and what each can express"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Geometric and organic shapes",
+"f": "How precise geometric forms and natural organic forms create different moods"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Positive and negative space",
+"f": "Seeing the shapes between objects and using empty space as part of the design"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "The power of white space",
+"f": "Why breathing room makes designs calmer, clearer and more elegant"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Balance in a composition",
+"f": "Symmetrical and asymmetrical balance and how visual weight works"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Contrast creates interest",
+"f": "Using differences in size, colour, shape and texture to grab attention"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Alignment keeps things tidy",
+"f": "Lining elements up along invisible edges so a layout feels organised"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Proximity groups ideas",
+"f": "Placing related items close together so viewers understand what belongs together"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Repetition builds unity",
+"f": "Repeating colours, shapes and styles to make a design feel consistent"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Visual hierarchy",
+"f": "Guiding the eye from the most important element to the least important"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Emphasis and focal points",
+"f": "Creating one clear point of focus so a design is not fighting itself"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Scale and proportion",
+"f": "How the relative size of elements creates drama, calm or a sense of order"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Rhythm and movement",
+"f": "Leading the eye through a design with repeated or progressing elements"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Gestalt principles intro",
+"f": "How our brains group shapes: closure, similarity, continuity and figure-ground"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Unity and variety",
+"f": "Balancing consistency with enough variety to keep a design interesting"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Simplicity as a skill",
+"f": "Removing the unnecessary until only what matters remains"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Analysing a poster",
+"f": "Applying the principles you learned to break down a poster you admire"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Redesigning a simple flyer",
+"f": "Improving a messy flyer using alignment, hierarchy and white space"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Thumbnail sketches",
+"f": "Small, quick sketches to explore many layout ideas before choosing one"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Quantity before quality",
+"f": "Why generating many ideas first leads to better final designs"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Giving and receiving critique",
+"f": "Kind, specific and useful feedback on design work"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: principles of design",
+"f": "A recap of balance, contrast, alignment, proximity, repetition and hierarchy"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Colour basics",
+"f": "Hue, saturation and value: the three properties that describe every colour"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "The colour wheel",
+"f": "Primary, secondary and tertiary colours and how they relate to each other"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Complementary colours",
+"f": "Opposite colours on the wheel that create strong, energetic contrast"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Analogous colours",
+"f": "Neighbouring colours that create calm, harmonious palettes"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Triadic and split palettes",
+"f": "Balanced three-colour schemes that are lively but still harmonious"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Warm and cool colours",
+"f": "How warm and cool hues affect mood, depth and attention"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Tints, shades and tones",
+"f": "Adding white, black or grey to a colour to build a richer palette"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Colour and contrast for reading",
+"f": "Choosing text and background colours that are easy to read for everyone"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Colour meanings across cultures",
+"f": "How the same colour can mean different things in different countries"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Building a colour palette",
+"f": "Choosing a main colour, supporting colours and accents for a project"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "The 60-30-10 rule",
+"f": "A simple guide for balancing dominant, secondary and accent colours"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Colour in nature",
+"f": "Collecting palettes from landscapes, flowers and food for inspiration"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "RGB and CMYK",
+"f": "Why screens and print use different colour systems and what that means for designers"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Colour and emotion",
+"f": "How colours can evoke calm, energy, trust or playfulness"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Monochrome designs",
+"f": "Creating strong work with only one hue and its variations"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Review: working with colour",
+"f": "Building and testing a palette for a small poster project"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Typography basics",
+"f": "Why type choice and arrangement shape how a message feels and reads"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Anatomy of a letter",
+"f": "Baseline, x-height, ascenders, descenders and other parts of type"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Serif and sans serif",
+"f": "The two big type families and the personality each one brings"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Script and display fonts",
+"f": "When decorative typefaces work and when they get in the way"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Font pairing",
+"f": "Combining two typefaces that contrast well while still feeling related"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Type hierarchy",
+"f": "Using size, weight and style to show headings, subheadings and body text"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Line length and readability",
+"f": "Comfortable line lengths that make long texts easy to read"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Line spacing (leading)",
+"f": "How the space between lines affects comfort and density"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Letter spacing and kerning",
+"f": "Adjusting the space between letters for balanced, professional type"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Alignment of text",
+"f": "Left, centred, right and justified text and when to use each"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Type as image",
+"f": "Using letters as visual shapes in posters and logos"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Legibility versus readability",
+"f": "Clear individual letters versus comfortable reading of whole texts"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Famous typefaces and their stories",
+"f": "The background of classics like Helvetica, Garamond and Futura"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Lettering by hand",
+"f": "Drawing letters yourself to understand form, rhythm and spacing"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Review: typography toolkit",
+"f": "Designing a quote card with good type choices and hierarchy"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Grids and layout",
+"f": "Why invisible grids help designers place content with order and flexibility"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Column grids",
+"f": "Using two, three or more columns to organise text and images"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Modular grids",
+"f": "Rows and columns that form modules for flexible magazine-style layouts"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Margins and gutters",
+"f": "The spaces around and between content that let a layout breathe"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "The rule of thirds",
+"f": "Dividing a space into thirds to place key elements in strong positions"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Reading patterns: Z and F",
+"f": "How people scan pages and screens and how to place content accordingly"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Layout for a poster",
+"f": "Combining headline, image and details into an eye-catching poster"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Layout for a social post",
+"f": "Designing for a small square or vertical format that stops the scroll"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Working with images",
+"f": "Choosing, cropping and placing photos to strengthen a layout"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Image and text together",
+"f": "Making photos and words support each other instead of competing"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Icons and pictograms",
+"f": "Simple symbols that communicate quickly across languages"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Designing a simple icon set",
+"f": "Keeping line weight, size and style consistent across several icons"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Illustration in design",
+"f": "When illustration adds warmth, explanation or character to a design"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Texture and pattern",
+"f": "Adding surface interest with patterns, grain and repeated motifs"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Review: layout skills",
+"f": "Laying out a small event poster using a grid and strong hierarchy"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "What is a logo",
+"f": "The role of logos as recognisable signs for organisations and products"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Types of logos",
+"f": "Wordmarks, lettermarks, symbols, emblems and combination marks"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Qualities of a strong logo",
+"f": "Simple, memorable, timeless, versatile and appropriate"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Sketching logo ideas",
+"f": "Exploring dozens of quick logo concepts from one brief"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Logo in black and white",
+"f": "Why a logo should work without colour before adding any"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Logo at different sizes",
+"f": "Testing whether a logo works as large as a sign and as small as an app icon"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Famous logos explained",
+"f": "What makes well-known logos effective, studied respectfully and factually"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Design thinking intro",
+"f": "Empathise, define, ideate, prototype and test: a human-centred process"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Empathy in design",
+"f": "Understanding the needs, feelings and context of the people you design for"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Defining the problem",
+"f": "Writing a clear problem statement before jumping to solutions"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Brainstorming techniques",
+"f": "Mind maps, 'how might we' questions and other ways to generate ideas"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Simple prototypes",
+"f": "Paper, cardboard and quick mock-ups to test ideas early"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Testing with real people",
+"f": "Watching someone use your idea and learning from what happens"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Iteration",
+"f": "Improving a design through repeated cycles of feedback and change"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Review: logos and design thinking",
+"f": "Designing a small logo for a friend using the design thinking steps"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Product design basics",
+"f": "What product designers do: shaping objects people hold, use and live with"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Ergonomics",
+"f": "Designing for the human body: grip, reach, comfort and posture"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Everyday object study",
+"f": "Analysing a mug, a chair or a pen for function, form and comfort"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Affordances",
+"f": "Visual clues that show how an object should be used, like a handle that invites pulling"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Signifiers and feedback",
+"f": "Labels, sounds and lights that tell users what is happening"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Usability in daily life",
+"f": "Why some doors, switches and remotes confuse people and how to fix them"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Materials overview",
+"f": "Wood, metal, plastic, glass, textile and ceramic and their design qualities"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Shape and structure",
+"f": "How form adds strength, stability and balance to physical products"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Colour and finish in products",
+"f": "How surface, texture and colour change the feel of an object"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Sketching products",
+"f": "Simple perspective sketches to show an object from several angles"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Drawing in perspective",
+"f": "One-point and two-point perspective for convincing product sketches"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Cardboard modelling",
+"f": "Building quick physical models to test size and proportion"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Designing for safety",
+"f": "Rounded edges, stable bases and clear warnings in everyday products"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Designing for children",
+"f": "Size, durability, colour and playfulness in products for kids"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Designing for older people",
+"f": "Clear labels, easy grips and simple controls for everyone"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Review: product design basics",
+"f": "Redesigning a small household object after observing how it is used"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Digital tools overview",
+"f": "Vector, raster and layout tools and what each kind of software is for"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Vector versus raster images",
+"f": "Why logos are made as vectors and photos are made of pixels"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "File formats for designers",
+"f": "Common formats for print, web and sharing and when to use each"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Resolution and image size",
+"f": "Pixels, print resolution and keeping images sharp"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Organising design files",
+"f": "Naming, layers and folders that save time and frustration"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Mood boards",
+"f": "Collecting images, colours and textures to define a visual direction"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Writing a design brief",
+"f": "Defining goal, audience, message, constraints and deadline"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Designing a business card",
+"f": "Fitting name, role and contact details into a tiny, well-balanced layout"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Designing a cafe menu",
+"f": "Organising dishes, prices and sections so a menu is easy to scan"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Design and the planet",
+"f": "Simple ways designers reduce waste: less material, reusable parts and recycled paper"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Beginner project: event poster",
+"f": "Designing a full poster from brief to final layout"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Beginner project: personal logo",
+"f": "Creating a simple personal mark and testing it in use"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: your beginner journey",
+"f": "Reflecting on principles, colour, type, layout and product basics"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to intermediate design",
+"f": "Moving from principles to real projects: brands, packaging, screens and products"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "What a brand is",
+"f": "A brand as the whole feeling people have about an organisation, not only its logo"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Brand identity systems",
+"f": "Logo, colours, type, imagery and voice working together as one system"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Brand personality",
+"f": "Defining a brand as playful, serious, warm or bold and expressing it visually"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Researching a brand's audience",
+"f": "Understanding who a brand speaks to before designing anything"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Brand colour strategy",
+"f": "Choosing colours that are distinctive, meaningful and practical in use"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Brand typography",
+"f": "Selecting typefaces that express personality and work across media"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Brand imagery style",
+"f": "Defining photo and illustration styles that feel consistent"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Tone of voice and visuals",
+"f": "How words and visuals should speak with the same personality"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Brand guidelines",
+"f": "Creating a simple guide so others can apply a brand correctly"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Applying a brand to items",
+"f": "Using an identity on cards, signs, bags, websites and social media"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Rebranding thoughtfully",
+"f": "Why organisations refresh their identity and how to respect what people love"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Brand mascots",
+"f": "Characters that make a brand friendly, memorable and easy to talk about"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Review: brand identity",
+"f": "Building a mini identity for an imaginary cafe or shop"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Poster design in depth",
+"f": "Bold concepts, strong hierarchy and memorable imagery for posters"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Concept before style",
+"f": "Finding a clear idea first and only then choosing visual style"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Visual metaphors",
+"f": "Combining images to communicate an idea quickly and cleverly"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Editorial design",
+"f": "Designing magazines, books and reports with readable, elegant layouts"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Book cover design",
+"f": "Capturing a story's mood and attracting readers with one image and title"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Magazine spreads",
+"f": "Balancing headlines, images, pull quotes and body text across two pages"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Information design",
+"f": "Turning complex information into clear, understandable visuals"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Infographics",
+"f": "Combining data, icons and text to tell a story at a glance"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Charts that communicate",
+"f": "Choosing the right chart and keeping it honest, clear and simple"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Maps and diagrams",
+"f": "Designing wayfinding maps and process diagrams people can follow"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Wayfinding and signage",
+"f": "Helping people navigate airports, hospitals and cities with clear signs"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Pictograms across languages",
+"f": "Designing symbols understood by visitors from many countries"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Typesetting long texts",
+"f": "Hyphenation, widows, orphans and an even rhythm in books and reports"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Review: editorial and information",
+"f": "Designing an infographic about a topic you enjoy"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Packaging design basics",
+"f": "How packaging protects, informs and attracts on a crowded shelf"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Packaging structure",
+"f": "Boxes, folds, dielines and how flat sheets become 3D forms"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Labels and information",
+"f": "Organising product name, details and required information clearly"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Shelf impact",
+"f": "Standing out among competitors with colour, shape and clarity"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Unboxing experience",
+"f": "Designing the moment of opening as part of the product story"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Sustainable packaging",
+"f": "Reducing material, choosing recyclable options and designing for reuse"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Packaging across cultures",
+"f": "Adapting colours, languages and symbols for different markets"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Labels for bottles and jars",
+"f": "Designing for curved surfaces, small sizes and clear front-of-pack information"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Review: packaging project",
+"f": "Designing a package for an imaginary tea or snack brand"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Introduction to UI design",
+"f": "Designing screens: buttons, menus, forms and how people interact with them"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "UX versus UI",
+"f": "User experience as the whole journey and user interface as what people see and touch"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Mobile-first thinking",
+"f": "Designing for small screens first and scaling up to larger ones"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Buttons and calls to action",
+"f": "Making the main action obvious, inviting and easy to tap"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Forms that people complete",
+"f": "Clear labels, helpful errors and fewer fields for friendlier forms"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Navigation patterns",
+"f": "Tabs, menus and breadcrumbs that help people find their way"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Consistency in interfaces",
+"f": "Reusing patterns so users learn an interface once"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Icons in interfaces",
+"f": "Choosing clear, recognisable icons and adding labels when needed"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Feedback in digital products",
+"f": "Loading states, confirmations and messages that keep users informed"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Microinteractions",
+"f": "Small animated details like a switch toggle that add clarity and delight"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Wireframes",
+"f": "Simple grey-box layouts to plan structure before visual style"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Clickable prototypes",
+"f": "Linking screens together to test a flow before building it"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Responsive layouts",
+"f": "Adapting one design gracefully across phone, tablet and desktop screens"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Dark mode design",
+"f": "Adjusting colours, contrast and shadows so dark interfaces stay readable and calm"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Review: UI foundations",
+"f": "Designing three screens of a simple app from wireframe to visual"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Accessibility in design",
+"f": "Designing so people with different abilities can use and enjoy your work"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Colour contrast and accessibility",
+"f": "Checking text contrast and never relying on colour alone"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Readable type for everyone",
+"f": "Size, spacing and simple typefaces that help all readers"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Inclusive imagery",
+"f": "Showing diverse people and situations respectfully in visuals"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Designing for screen readers",
+"f": "Logical order, labels and text alternatives for images"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Inclusive product design",
+"f": "Products that work for left-handed people, small hands or limited grip"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Universal design principles",
+"f": "Designing for the widest range of people from the start"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: accessibility check",
+"f": "Auditing one of your designs for contrast, readability and clarity"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "User research basics",
+"f": "Interviews, observation and surveys to understand real needs"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Asking good questions",
+"f": "Open, neutral questions that reveal behaviour rather than opinions"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Personas",
+"f": "Building realistic profiles of users based on research"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "User journey maps",
+"f": "Mapping each step a person takes and how they feel along the way"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Finding pain points",
+"f": "Spotting frustrations in a journey that design can improve"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "How might we questions",
+"f": "Turning problems into opportunities for creative solutions"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Idea selection",
+"f": "Choosing which ideas to develop using simple criteria and voting"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Usability testing",
+"f": "Watching people try tasks and noting where they get stuck"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Learning from test results",
+"f": "Turning observations into clear, prioritised improvements"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Review: research to ideas",
+"f": "Running a mini research project on a daily problem you notice"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Product design process",
+"f": "From brief to research, concepts, prototypes, testing and production"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Concept sketching for products",
+"f": "Exploring many product forms quickly with loose sketches"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Rendering with markers",
+"f": "Adding shading and colour to sketches to show form and material"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Foam and clay models",
+"f": "Shaping quick physical models to feel size, weight and grip"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Introduction to 3D modelling",
+"f": "How designers build digital 3D models of products"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Materials in depth: plastics",
+"f": "Common plastic types, how they are shaped and their impact"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Materials in depth: wood",
+"f": "Grain, joinery and the warmth of wooden products"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Materials in depth: metal",
+"f": "Strength, finishes and uses of aluminium, steel and brass"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Materials in depth: textiles",
+"f": "Fabrics in bags, furniture and wearables and how they behave"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Manufacturing basics",
+"f": "Moulding, cutting, bending and assembly in simple terms"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Design for manufacturing",
+"f": "Shaping products so they are easier and cleaner to produce"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Colour, material and finish",
+"f": "How CMF choices define the look and feel of a product"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Prototyping with 3D printing",
+"f": "Printing quick physical parts to test fit, size and feel"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Furniture design basics",
+"f": "Seat height, stability, joints and comfort in chairs and tables"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Lamp and lighting design",
+"f": "Shaping light, glare control and atmosphere in lamps for the home"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Review: making products",
+"f": "Developing a product concept from sketch to simple model"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Design history: Arts and Crafts",
+"f": "The movement that valued handmade quality and honest materials"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Design history: Art Nouveau",
+"f": "Flowing organic lines inspired by nature in posters and objects"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Design history: Art Deco",
+"f": "Geometric glamour, bold lines and luxury in architecture and graphics"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Design history: Bauhaus",
+"f": "The influential school that joined art, craft and industry"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Design history: Swiss Style",
+"f": "Grids, sans serif type and clarity in international graphic design"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Design history: mid-century modern",
+"f": "Organic shapes and new materials in furniture and graphics"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Charles and Ray Eames",
+"f": "The famous designers known for playful, practical furniture and films"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Design history: Memphis",
+"f": "The colourful, playful and bold movement that broke the rules"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Scandinavian design",
+"f": "Simplicity, function and natural materials from the Nordic countries"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Japanese design aesthetics",
+"f": "Ideas like simplicity, natural materials and beauty in imperfection"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Design history: digital era",
+"f": "How computers transformed graphic and product design"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Famous graphic designers",
+"f": "Work of figures like Saul Bass, Paula Scher and Massimo Vignelli"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Learning from design museums",
+"f": "Studying collections, books and archives to understand design history"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Review: design history",
+"f": "Creating a small piece inspired by your favourite movement"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Motion design basics",
+"f": "How movement adds meaning, personality and guidance to design"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Principles of animation",
+"f": "Timing, easing and anticipation for natural-looking movement"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Animated logos",
+"f": "Bringing a logo to life with short, simple motion"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Kinetic typography",
+"f": "Words in motion that emphasise rhythm and meaning"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Motion in interfaces",
+"f": "Transitions that help users understand where they are"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Photography for designers",
+"f": "Light, composition and styling to create images for projects"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Product photography basics",
+"f": "Clean backgrounds, soft light and angles that show an object well"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Art direction",
+"f": "Guiding photographers and illustrators to match a visual concept"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Storyboards",
+"f": "Planning a motion piece frame by frame before animating"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Review: motion and images",
+"f": "Planning a short animated social post with photography"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Creativity techniques",
+"f": "SCAMPER, forced connections and constraints to spark fresh ideas"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Overcoming creative block",
+"f": "Small habits and exercises to get ideas flowing again"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Inspiration without copying",
+"f": "Learning from others and transforming influences into your own work"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Design trends and timelessness",
+"f": "Understanding trends while aiming for designs that last"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Cultural sensitivity in design",
+"f": "Researching symbols, colours and imagery to respect other cultures"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Localisation of designs",
+"f": "Adapting layouts for other languages, text lengths and reading directions"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Designing with text in many languages",
+"f": "Choosing fonts with wide character support and flexible layouts"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Review: creativity and culture",
+"f": "Adapting one of your designs for another culture and language"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Preparing files for print",
+"f": "Bleed, trim, colour proofs and checks before sending work to a printer"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Paper and special finishes",
+"f": "Coated, uncoated and textured papers plus embossing, foil and varnish"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Presenting your design",
+"f": "Explaining your idea, process and decisions with confidence"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Telling a design story",
+"f": "Structuring a presentation from problem to solution"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Handling feedback from clients",
+"f": "Listening, asking questions and responding professionally"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Working in a team",
+"f": "Collaborating with writers, developers, engineers and other designers"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Design and business goals",
+"f": "Connecting design choices to goals like clarity, sales or loyalty"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Measuring design success",
+"f": "Simple ways to check if a design works, from tests to feedback"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Intermediate project: brand kit",
+"f": "Designing a complete small brand kit from research to guidelines"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Intermediate project: app screens",
+"f": "Designing and testing a small app flow end to end"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Intermediate project: product concept",
+"f": "Developing a product idea with research, sketches and a model"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: your intermediate journey",
+"f": "Reflecting on projects and setting goals for advanced design"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to advanced design",
+"f": "Thinking in systems, leading projects and shaping a personal design voice"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Design systems explained",
+"f": "Reusable components, tokens and rules that keep large products consistent"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Design tokens",
+"f": "Naming colours, spacing and type values so they can be shared everywhere"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Component libraries",
+"f": "Building buttons, cards and inputs once and reusing them across a product"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Documenting a design system",
+"f": "Writing clear guidance so teams use components correctly"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Scaling a visual identity",
+"f": "Keeping a brand consistent across hundreds of touchpoints and countries"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Flexible identities",
+"f": "Brands with logos and visuals that change while staying recognisable"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Generative and dynamic branding",
+"f": "Identities built from rules and patterns that create endless variations"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Advanced typography: type systems",
+"f": "Building type scales and families that work on every screen and page"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Variable fonts",
+"f": "One font file with adjustable weight and width and what it allows designers"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Designing your own typeface",
+"f": "The first steps of sketching and refining a set of letters"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Advanced grids",
+"f": "Complex grids for multi-format publications and responsive products"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Review: systems thinking",
+"f": "Designing a mini design system for a small product"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Advanced colour: perception",
+"f": "Why colours look different next to each other and in different light"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Colour systems at scale",
+"f": "Building accessible colour ramps for interfaces and brands"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Advanced layout: tension and surprise",
+"f": "Breaking the grid deliberately to create energy"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Experimental typography",
+"f": "Pushing letterforms and layouts while keeping a message readable"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Designing with constraints",
+"f": "How limits of budget, size or colour can spark better ideas"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Visual storytelling sequences",
+"f": "Designing series of images or pages that build a narrative"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Data visualisation in depth",
+"f": "Showing complex data honestly and clearly for decision making"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Interactive infographics",
+"f": "Letting people explore information by tapping, hovering or filtering"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Illustration systems for brands",
+"f": "Building a consistent illustration style that many artists can follow"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Review: advanced visual craft",
+"f": "Creating an experimental poster series with a clear concept"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Service design",
+"f": "Designing whole services across people, places, screens and moments"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Service blueprints",
+"f": "Mapping what users see and what happens behind the scenes"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Experience design for spaces",
+"f": "Shaping exhibitions, shops and events as complete experiences"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Designing for public spaces",
+"f": "Benches, bus stops and signs that serve many different people"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Exhibition design",
+"f": "Guiding visitors through a story with space, light, graphics and objects"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Retail and environmental graphics",
+"f": "Murals, window displays and graphics that transform spaces"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: experiences and services",
+"f": "Mapping and improving a service you use often"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Advanced UX: information architecture",
+"f": "Organising content so people find what they need effortlessly"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Card sorting",
+"f": "A research method to learn how people group information"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Advanced prototyping",
+"f": "High-fidelity prototypes with realistic content and interactions"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Designing complex flows",
+"f": "Breaking long tasks like booking or onboarding into clear steps"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Onboarding experiences",
+"f": "Welcoming new users and helping them succeed in the first minutes"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Empty states and errors",
+"f": "Turning blank screens and mistakes into helpful moments"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Writing for interfaces",
+"f": "Clear, friendly microcopy that guides users"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Designing for voice and conversation",
+"f": "Principles for chat and voice interfaces that feel natural"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Designing for wearables",
+"f": "Tiny screens, glanceable information and quick interactions"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Review: advanced UX",
+"f": "Redesigning a complex flow in an app you know well"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Advanced product design: ergonomics",
+"f": "Anthropometric data and designing for a wide range of bodies"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Product semantics",
+"f": "How shape, colour and detail communicate what a product is and does"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Emotional design",
+"f": "Designing products that people love, keep and care for"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Designing products as families",
+"f": "Creating a product range with a shared visual language"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Smart products",
+"f": "Combining physical objects with sensors, apps and connectivity"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Designing sound and touch",
+"f": "Clicks, textures and haptic feedback in product experiences"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Packaging and product together",
+"f": "Designing the object and its packaging as one experience"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Review: advanced products",
+"f": "Concepting a small family of related products"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Circular design",
+"f": "Designing products to be repaired, reused, remanufactured or recycled"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Design for repair",
+"f": "Screws instead of glue, replaceable parts and repair guides"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Design for disassembly",
+"f": "Making it easy to separate materials at the end of a product's life"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Life cycle thinking",
+"f": "Considering a product's journey from material to reuse"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Choosing responsible materials",
+"f": "Recycled, renewable and low-impact materials and their trade-offs"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Biomimicry",
+"f": "Learning from nature's solutions to design better products"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Designing for durability",
+"f": "Timeless form and quality that make products last longer"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Sustainable graphic design",
+"f": "Smaller print runs, efficient layouts and lighter digital files"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Review: sustainable design",
+"f": "Rethinking an everyday product for repair and reuse"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Inclusive design at scale",
+"f": "Building inclusion into processes, not only into final products"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Co-design with communities",
+"f": "Designing with people rather than for them"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Designing for different cultures",
+"f": "Researching habits, symbols and needs in other cultures"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Global brands, local touches",
+"f": "Balancing global consistency with local relevance"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Designing for low bandwidth",
+"f": "Light, fast digital products that work well everywhere"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Ethics in design",
+"f": "Honest design, respecting attention and avoiding manipulative patterns"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Dark patterns to avoid",
+"f": "Recognising tricks that pressure users and choosing honest alternatives"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Privacy by design",
+"f": "Designing products that collect only what they need and explain it clearly"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Designing for trust",
+"f": "Clarity, honesty and consistency that make people feel safe using a product"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Review: ethics and inclusion",
+"f": "Auditing a product for honesty, inclusion and respect"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Building a design portfolio",
+"f": "Choosing projects that show your thinking, skills and personality"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Writing case studies",
+"f": "Telling the story of a project from problem to outcome"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Presenting process, not only results",
+"f": "Showing sketches, research and iterations in your portfolio"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Portfolio layout and pacing",
+"f": "Designing your portfolio with clear hierarchy and rhythm"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Personal branding for designers",
+"f": "Creating a consistent identity across portfolio and profiles"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Online presence for designers",
+"f": "Sharing work, writing and joining design communities"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Review: portfolio foundations",
+"f": "Drafting two case studies for your portfolio"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Working with clients",
+"f": "Understanding needs, setting expectations and building trust"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Writing proposals",
+"f": "Outlining scope, process and timeline for a design project"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Running a kickoff meeting",
+"f": "Aligning goals, audience and success measures at the start"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Running workshops",
+"f": "Facilitating sessions that bring teams together to solve problems"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Presenting to stakeholders",
+"f": "Adapting your presentation for different decision makers"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Defending design decisions",
+"f": "Explaining choices with research and principles instead of taste"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Managing design projects",
+"f": "Planning phases, milestones and feedback rounds"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Review: client work",
+"f": "Writing a proposal and kickoff agenda for an imaginary client"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Design leadership",
+"f": "Guiding teams, setting vision and growing other designers"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Design critique at a high level",
+"f": "Leading critiques that improve work and build confidence"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Mentoring other designers",
+"f": "Sharing knowledge, giving feedback and supporting growth"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Design strategy",
+"f": "Connecting design to long-term goals and direction"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Design research at scale",
+"f": "Combining studies and data to guide big product decisions"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Design and engineering collaboration",
+"f": "Working closely with developers and engineers from the start"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Design operations",
+"f": "Tools, processes and rituals that help design teams work well"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Review: leading design",
+"f": "Planning how you would lead a small design team"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Future of design: new tools",
+"f": "How new digital tools change the designer's workflow and role"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Designing with AI responsibly",
+"f": "Using generative tools as helpers while keeping human judgement"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Augmented and virtual reality",
+"f": "Designing for immersive spaces and mixed reality"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Designing for the future city",
+"f": "Mobility, public spaces and services in growing cities"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Speculative design",
+"f": "Imagining possible futures to spark discussion and new ideas"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Design and science",
+"f": "How designers collaborate with scientists to communicate discoveries"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Review: future of design",
+"f": "Imagining a product or service for twenty years from now"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Finding your design voice",
+"f": "Recognising the themes and styles that make your work yours"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Personal design manifesto",
+"f": "Writing the principles that guide your design decisions"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Self-initiated projects",
+"f": "Starting your own projects to explore ideas and grow skills"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Design competitions and challenges",
+"f": "Using briefs and challenges to stretch your creativity"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Collaborating across borders",
+"f": "Working with designers from other cultures and learning together"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Design for social good",
+"f": "Using design skills for education, public information and community projects"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Teaching design to others",
+"f": "Explaining principles simply, which deepens your own understanding"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Writing about design",
+"f": "Reviewing and reflecting on design in writing to sharpen your thinking"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Review: your design voice",
+"f": "Gathering your manifesto, self-initiated work and writing into one reflection"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Capstone project: brief",
+"f": "Writing a brief for a final project that combines your skills"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Capstone project: research",
+"f": "Researching users, context and inspiration for your capstone"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Capstone project: concepts",
+"f": "Developing and selecting strong concepts for your capstone"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Capstone project: prototype",
+"f": "Building and testing a prototype of your chosen concept"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Capstone project: refinement",
+"f": "Polishing details, consistency and presentation"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Capstone project: presentation",
+"f": "Presenting your capstone as a compelling case study"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Celebrating your design journey",
+"f": "Looking back at your first sketches and your capstone work"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Lifelong design learning",
+"f": "Habits, communities and resources to keep growing as a designer"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Year in review: your design eye",
+"f": "Reviewing a full year of principles, projects and discoveries"
+}
+]
+}

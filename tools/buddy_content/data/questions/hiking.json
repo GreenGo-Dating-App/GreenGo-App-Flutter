@@ -1,0 +1,1305 @@
+{
+"topic": "hiking",
+"questions": [
+{
+"id": "hiking-001",
+"lv": "any",
+"i18n": {
+"en": "What first made you curious about hiking?",
+"de": "Was hat dich zuerst neugierig aufs Wandern gemacht?",
+"es": "¿Qué fue lo primero que te despertó la curiosidad por el senderismo?",
+"fr": "Qu'est-ce qui t'a donné envie de découvrir la randonnée ?",
+"it": "Che cosa ti ha incuriosito per la prima volta dell'escursionismo?",
+"pt": "O que te despertou primeiro a curiosidade pelas caminhadas?",
+"pt_BR": "O que despertou sua curiosidade pelas trilhas pela primeira vez?"
+}
+},
+{
+"id": "hiking-002",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer mountains, forests, coasts or deserts for a walk? Why?",
+"de": "Wanderst du lieber in den Bergen, im Wald, an der Küste oder in der Wüste? Warum?",
+"es": "¿Prefieres caminar por montañas, bosques, costas o desiertos? ¿Por qué?",
+"fr": "Tu préfères marcher en montagne, en forêt, sur la côte ou dans le désert ? Pourquoi ?",
+"it": "Preferisci camminare in montagna, nei boschi, sulla costa o nel deserto? Perché?",
+"pt": "Preferes caminhar na montanha, na floresta, na costa ou no deserto? Porquê?",
+"pt_BR": "Você prefere caminhar na montanha, na floresta, no litoral ou no deserto? Por quê?"
+}
+},
+{
+"id": "hiking-003",
+"lv": "any",
+"i18n": {
+"en": "What is the most beautiful view you have ever reached on foot?",
+"de": "Was ist die schönste Aussicht, die du je zu Fuß erreicht hast?",
+"es": "¿Cuál es la vista más bonita que has alcanzado caminando?",
+"fr": "Quelle est la plus belle vue que tu aies atteinte à pied ?",
+"it": "Qual è il panorama più bello che hai raggiunto a piedi?",
+"pt": "Qual é a vista mais bonita a que já chegaste a pé?",
+"pt_BR": "Qual é a vista mais bonita que você já alcançou a pé?"
+}
+},
+{
+"id": "hiking-004",
+"lv": "any",
+"i18n": {
+"en": "Do you like hiking alone, with a friend or in a big group?",
+"de": "Wanderst du lieber allein, mit einer Freundin oder einem Freund oder in einer großen Gruppe?",
+"es": "¿Te gusta más caminar solo, con un amigo o en un grupo grande?",
+"fr": "Tu aimes mieux randonner seul, avec un ami ou en grand groupe ?",
+"it": "Ti piace di più camminare da solo, con un amico o in un gruppo numeroso?",
+"pt": "Gostas mais de caminhar sozinho, com um amigo ou num grupo grande?",
+"pt_BR": "Você gosta mais de fazer trilha sozinho, com um amigo ou em grupo grande?"
+}
+},
+{
+"id": "hiking-005",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect day on the trail look like for you?",
+"de": "Wie sieht für dich ein perfekter Tag auf dem Wanderweg aus?",
+"es": "¿Cómo sería para ti un día perfecto en el sendero?",
+"fr": "À quoi ressemble pour toi une journée parfaite sur le sentier ?",
+"it": "Com'è per te una giornata perfetta sul sentiero?",
+"pt": "Como seria para ti um dia perfeito no trilho?",
+"pt_BR": "Como seria pra você um dia perfeito na trilha?"
+}
+},
+{
+"id": "hiking-006",
+"lv": "any",
+"i18n": {
+"en": "Which snack always makes a hike better for you?",
+"de": "Welcher Snack macht eine Wanderung für dich immer besser?",
+"es": "¿Qué tentempié hace que una caminata siempre sea mejor para ti?",
+"fr": "Quel en-cas rend toujours une rando meilleure pour toi ?",
+"it": "Quale spuntino rende sempre migliore un'escursione per te?",
+"pt": "Que lanche torna sempre uma caminhada melhor para ti?",
+"pt_BR": "Qual lanche sempre deixa uma trilha melhor pra você?"
+}
+},
+{
+"id": "hiking-007",
+"lv": "any",
+"i18n": {
+"en": "Is there a trail near your home that you love? What makes it special?",
+"de": "Gibt es in deiner Nähe einen Weg, den du liebst? Was macht ihn besonders?",
+"es": "¿Hay algún sendero cerca de tu casa que te encante? ¿Qué lo hace especial?",
+"fr": "Y a-t-il un sentier près de chez toi que tu adores ? Qu'est-ce qui le rend spécial ?",
+"it": "C'è un sentiero vicino a casa tua che ami? Cosa lo rende speciale?",
+"pt": "Há algum trilho perto de tua casa de que gostes muito? O que o torna especial?",
+"pt_BR": "Tem alguma trilha perto da sua casa que você adora? O que ela tem de especial?"
+}
+},
+{
+"id": "hiking-008",
+"lv": "any",
+"i18n": {
+"en": "Which country would you most like to explore on foot?",
+"de": "Welches Land würdest du am liebsten zu Fuß erkunden?",
+"es": "¿Qué país te gustaría más explorar a pie?",
+"fr": "Quel pays aimerais-tu le plus explorer à pied ?",
+"it": "Quale paese ti piacerebbe di più esplorare a piedi?",
+"pt": "Que país gostarias mais de explorar a pé?",
+"pt_BR": "Qual país você mais gostaria de explorar a pé?"
+}
+},
+{
+"id": "hiking-009",
+"lv": "any",
+"i18n": {
+"en": "How does walking in nature change your mood?",
+"de": "Wie verändert ein Spaziergang in der Natur deine Stimmung?",
+"es": "¿Cómo cambia tu estado de ánimo cuando caminas en la naturaleza?",
+"fr": "Comment la marche dans la nature change-t-elle ton humeur ?",
+"it": "Come cambia il tuo umore quando cammini nella natura?",
+"pt": "Como é que caminhar na natureza muda o teu humor?",
+"pt_BR": "Como caminhar na natureza muda o seu humor?"
+}
+},
+{
+"id": "hiking-010",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer sunrise hikes or relaxed afternoon walks?",
+"de": "Bist du eher für Wanderungen zum Sonnenaufgang oder für entspannte Nachmittagstouren?",
+"es": "¿Prefieres caminatas al amanecer o paseos tranquilos por la tarde?",
+"fr": "Tu préfères les randos au lever du soleil ou les balades tranquilles l'après-midi ?",
+"it": "Preferisci le escursioni all'alba o le passeggiate tranquille del pomeriggio?",
+"pt": "Preferes caminhadas ao nascer do sol ou passeios calmos à tarde?",
+"pt_BR": "Você prefere trilhas ao nascer do sol ou caminhadas tranquilas à tarde?"
+}
+},
+{
+"id": "hiking-011",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite season for hiking and why?",
+"de": "Was ist deine liebste Jahreszeit zum Wandern und warum?",
+"es": "¿Cuál es tu estación favorita para hacer senderismo y por qué?",
+"fr": "Quelle est ta saison préférée pour randonner, et pourquoi ?",
+"it": "Qual è la tua stagione preferita per le escursioni e perché?",
+"pt": "Qual é a tua estação preferida para caminhar e porquê?",
+"pt_BR": "Qual é a sua estação favorita pra fazer trilha e por quê?"
+}
+},
+{
+"id": "hiking-012",
+"lv": "any",
+"i18n": {
+"en": "Who taught you to love the outdoors, if anyone?",
+"de": "Wer hat dir die Liebe zur Natur beigebracht, falls es jemanden gab?",
+"es": "¿Quién te enseñó a amar la vida al aire libre, si es que alguien lo hizo?",
+"fr": "Qui t'a transmis l'amour du plein air, s'il y a quelqu'un ?",
+"it": "Chi ti ha insegnato ad amare la natura, se c'è stato qualcuno?",
+"pt": "Quem te ensinou a gostar da natureza, se é que houve alguém?",
+"pt_BR": "Quem te ensinou a amar a natureza, se é que alguém ensinou?"
+}
+},
+{
+"id": "hiking-013",
+"lv": "any",
+"i18n": {
+"en": "What sounds do you enjoy most when you walk in nature?",
+"de": "Welche Geräusche genießt du am meisten, wenn du in der Natur unterwegs bist?",
+"es": "¿Qué sonidos disfrutas más cuando caminas por la naturaleza?",
+"fr": "Quels sons apprécies-tu le plus quand tu marches dans la nature ?",
+"it": "Quali suoni ti piacciono di più quando cammini nella natura?",
+"pt": "Que sons mais aprecias quando caminhas na natureza?",
+"pt_BR": "Quais sons você mais curte quando caminha na natureza?"
+}
+},
+{
+"id": "hiking-014",
+"lv": "any",
+"i18n": {
+"en": "Do you take photos on your hikes or prefer to just enjoy the moment?",
+"de": "Fotografierst du beim Wandern oder genießt du lieber einfach den Moment?",
+"es": "¿Haces fotos en tus caminatas o prefieres simplemente disfrutar del momento?",
+"fr": "Tu prends des photos en rando ou tu préfères juste profiter du moment ?",
+"it": "Fai foto durante le escursioni o preferisci goderti il momento?",
+"pt": "Tiras fotografias nas caminhadas ou preferes simplesmente aproveitar o momento?",
+"pt_BR": "Você tira fotos nas trilhas ou prefere só curtir o momento?"
+}
+},
+{
+"id": "hiking-015",
+"lv": "any",
+"i18n": {
+"en": "What is one hiking memory that still makes you smile?",
+"de": "Welche Wandererinnerung bringt dich heute noch zum Lächeln?",
+"es": "¿Qué recuerdo de una caminata todavía te hace sonreír?",
+"fr": "Quel souvenir de randonnée te fait encore sourire ?",
+"it": "Quale ricordo di un'escursione ti fa ancora sorridere?",
+"pt": "Que memória de uma caminhada ainda te faz sorrir?",
+"pt_BR": "Qual lembrança de trilha ainda te faz sorrir?"
+}
+},
+{
+"id": "hiking-016",
+"lv": "any",
+"i18n": {
+"en": "How do hiking traditions differ in your country compared to others you know?",
+"de": "Wie unterscheidet sich die Wanderkultur in deinem Land von anderen, die du kennst?",
+"es": "¿En qué se diferencia la cultura del senderismo en tu país de otras que conoces?",
+"fr": "En quoi la culture de la randonnée dans ton pays diffère-t-elle d'autres que tu connais ?",
+"it": "In cosa è diversa la cultura dell'escursionismo nel tuo paese rispetto ad altre che conosci?",
+"pt": "Em que é que a cultura das caminhadas no teu país difere de outras que conheces?",
+"pt_BR": "Como a cultura de trilhas no seu país é diferente de outras que você conhece?"
+}
+},
+{
+"id": "hiking-017",
+"lv": "any",
+"i18n": {
+"en": "Would you rather walk to a waterfall, a lake or a mountain top?",
+"de": "Würdest du lieber zu einem Wasserfall, einem See oder einem Gipfel wandern?",
+"es": "¿Preferirías caminar hasta una cascada, un lago o una cumbre?",
+"fr": "Tu préférerais marcher jusqu'à une cascade, un lac ou un sommet ?",
+"it": "Preferiresti camminare fino a una cascata, un lago o una vetta?",
+"pt": "Preferias caminhar até uma cascata, um lago ou o cimo de uma montanha?",
+"pt_BR": "Você preferiria caminhar até uma cachoeira, um lago ou o topo de uma montanha?"
+}
+},
+{
+"id": "hiking-018",
+"lv": "any",
+"i18n": {
+"en": "What do you usually think about while you walk?",
+"de": "Woran denkst du normalerweise, während du wanderst?",
+"es": "¿En qué sueles pensar mientras caminas?",
+"fr": "À quoi penses-tu généralement quand tu marches ?",
+"it": "A cosa pensi di solito mentre cammini?",
+"pt": "Em que costumas pensar enquanto caminhas?",
+"pt_BR": "No que você costuma pensar enquanto caminha?"
+}
+},
+{
+"id": "hiking-019",
+"lv": "any",
+"i18n": {
+"en": "Which animal would you love to spot on a trail one day?",
+"de": "Welches Tier würdest du gern einmal unterwegs beobachten?",
+"es": "¿Qué animal te encantaría ver algún día en un sendero?",
+"fr": "Quel animal aimerais-tu apercevoir un jour sur un sentier ?",
+"it": "Quale animale ti piacerebbe avvistare un giorno su un sentiero?",
+"pt": "Que animal adorarias avistar um dia num trilho?",
+"pt_BR": "Qual animal você adoraria avistar um dia numa trilha?"
+}
+},
+{
+"id": "hiking-020",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy walking in the rain, or do you wait for sunshine?",
+"de": "Wanderst du gern im Regen oder wartest du lieber auf Sonnenschein?",
+"es": "¿Te gusta caminar bajo la lluvia o prefieres esperar al sol?",
+"fr": "Tu aimes marcher sous la pluie ou tu attends plutôt le soleil ?",
+"it": "Ti piace camminare sotto la pioggia o aspetti il sole?",
+"pt": "Gostas de caminhar à chuva ou preferes esperar pelo sol?",
+"pt_BR": "Você gosta de caminhar na chuva ou prefere esperar o sol?"
+}
+},
+{
+"id": "hiking-021",
+"lv": "any",
+"i18n": {
+"en": "What piece of gear do you never leave home without?",
+"de": "Welches Ausrüstungsteil lässt du nie zu Hause?",
+"es": "¿Qué parte de tu equipo nunca dejas en casa?",
+"fr": "Quel équipement ne laisses-tu jamais à la maison ?",
+"it": "Quale pezzo di attrezzatura non lasci mai a casa?",
+"pt": "Que peça de equipamento nunca deixas em casa?",
+"pt_BR": "Qual item do seu equipamento você nunca deixa em casa?"
+}
+},
+{
+"id": "hiking-022",
+"lv": "any",
+"i18n": {
+"en": "How do you like to celebrate after a good hike?",
+"de": "Wie feierst du am liebsten nach einer schönen Wanderung?",
+"es": "¿Cómo te gusta celebrar después de una buena caminata?",
+"fr": "Comment aimes-tu fêter une belle randonnée ?",
+"it": "Come ti piace festeggiare dopo una bella escursione?",
+"pt": "Como gostas de celebrar depois de uma boa caminhada?",
+"pt_BR": "Como você gosta de comemorar depois de uma boa trilha?"
+}
+},
+{
+"id": "hiking-023",
+"lv": "any",
+"i18n": {
+"en": "Is there a famous trail you dream of walking one day?",
+"de": "Gibt es einen berühmten Weg, von dem du träumst, ihn eines Tages zu gehen?",
+"es": "¿Hay algún sendero famoso que sueñes con recorrer algún día?",
+"fr": "Y a-t-il un sentier célèbre que tu rêves de parcourir un jour ?",
+"it": "C'è un sentiero famoso che sogni di percorrere un giorno?",
+"pt": "Há algum trilho famoso que sonhes percorrer um dia?",
+"pt_BR": "Existe alguma trilha famosa que você sonha em fazer um dia?"
+}
+},
+{
+"id": "hiking-024",
+"lv": "any",
+"i18n": {
+"en": "Do you like to listen to music on the trail or enjoy the silence?",
+"de": "Hörst du unterwegs gern Musik oder genießt du lieber die Stille?",
+"es": "¿Te gusta escuchar música en el sendero o prefieres el silencio?",
+"fr": "Tu aimes écouter de la musique sur le sentier ou profiter du silence ?",
+"it": "Ti piace ascoltare musica sul sentiero o goderti il silenzio?",
+"pt": "Gostas de ouvir música no trilho ou preferes o silêncio?",
+"pt_BR": "Você gosta de ouvir música na trilha ou prefere o silêncio?"
+}
+},
+{
+"id": "hiking-025",
+"lv": "any",
+"i18n": {
+"en": "What is the best thing someone ever shared with you on a hike?",
+"de": "Was ist das Schönste, das jemand beim Wandern mit dir geteilt hat?",
+"es": "¿Qué es lo mejor que alguien ha compartido contigo en una caminata?",
+"fr": "Quelle est la plus belle chose que quelqu'un ait partagée avec toi en rando ?",
+"it": "Qual è la cosa più bella che qualcuno ha condiviso con te durante un'escursione?",
+"pt": "Qual foi a melhor coisa que alguém partilhou contigo numa caminhada?",
+"pt_BR": "Qual foi a melhor coisa que alguém já compartilhou com você numa trilha?"
+}
+},
+{
+"id": "hiking-026",
+"lv": "any",
+"i18n": {
+"en": "Which do you enjoy more: the climb up or the view at the top?",
+"de": "Was genießt du mehr: den Aufstieg oder die Aussicht oben?",
+"es": "¿Qué disfrutas más: la subida o la vista desde arriba?",
+"fr": "Qu'est-ce que tu apprécies le plus : la montée ou la vue au sommet ?",
+"it": "Cosa ti piace di più: la salita o il panorama in cima?",
+"pt": "O que aprecias mais: a subida ou a vista lá de cima?",
+"pt_BR": "O que você curte mais: a subida ou a vista lá de cima?"
+}
+},
+{
+"id": "hiking-027",
+"lv": "any",
+"i18n": {
+"en": "How often would you like to go hiking in an ideal month?",
+"de": "Wie oft würdest du in einem idealen Monat gern wandern gehen?",
+"es": "¿Con qué frecuencia te gustaría hacer senderismo en un mes ideal?",
+"fr": "À quelle fréquence aimerais-tu randonner dans un mois idéal ?",
+"it": "Quante volte vorresti fare escursioni in un mese ideale?",
+"pt": "Quantas vezes gostarias de ir caminhar num mês ideal?",
+"pt_BR": "Quantas vezes você gostaria de fazer trilha num mês ideal?"
+}
+},
+{
+"id": "hiking-028",
+"lv": "any",
+"i18n": {
+"en": "What do you love most about being outdoors?",
+"de": "Was liebst du am meisten daran, draußen zu sein?",
+"es": "¿Qué es lo que más te gusta de estar al aire libre?",
+"fr": "Qu'est-ce que tu aimes le plus dans le fait d'être dehors ?",
+"it": "Cosa ami di più dello stare all'aria aperta?",
+"pt": "O que mais gostas em estar ao ar livre?",
+"pt_BR": "O que você mais ama em estar ao ar livre?"
+}
+},
+{
+"id": "hiking-029",
+"lv": "any",
+"i18n": {
+"en": "Have you ever met interesting people on a trail? Tell me about it.",
+"de": "Hast du schon interessante Menschen auf einem Wanderweg getroffen? Erzähl mal.",
+"es": "¿Has conocido a gente interesante en algún sendero? Cuéntame.",
+"fr": "As-tu déjà rencontré des gens intéressants sur un sentier ? Raconte-moi.",
+"it": "Hai mai conosciuto persone interessanti su un sentiero? Raccontami.",
+"pt": "Já conheceste pessoas interessantes num trilho? Conta-me.",
+"pt_BR": "Você já conheceu pessoas interessantes numa trilha? Me conta."
+}
+},
+{
+"id": "hiking-030",
+"lv": "any",
+"i18n": {
+"en": "What would your ideal hiking trip abroad include?",
+"de": "Was würde deine ideale Wanderreise ins Ausland beinhalten?",
+"es": "¿Qué incluiría tu viaje ideal de senderismo en el extranjero?",
+"fr": "Que comprendrait ton voyage de randonnée idéal à l'étranger ?",
+"it": "Cosa includerebbe il tuo viaggio ideale di trekking all'estero?",
+"pt": "O que incluiria a tua viagem ideal de caminhadas no estrangeiro?",
+"pt_BR": "O que incluiria a sua viagem ideal de trilhas no exterior?"
+}
+},
+{
+"id": "hiking-031",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer well-known trails or quiet hidden paths?",
+"de": "Magst du lieber bekannte Wege oder ruhige, versteckte Pfade?",
+"es": "¿Prefieres senderos conocidos o caminos tranquilos y escondidos?",
+"fr": "Tu préfères les sentiers connus ou les chemins calmes et cachés ?",
+"it": "Preferisci i sentieri famosi o quelli tranquilli e nascosti?",
+"pt": "Preferes trilhos conhecidos ou caminhos tranquilos e escondidos?",
+"pt_BR": "Você prefere trilhas conhecidas ou caminhos tranquilos e escondidos?"
+}
+},
+{
+"id": "hiking-032",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite thing to eat at a mountain hut or trail café?",
+"de": "Was isst du am liebsten auf einer Hütte oder in einem Café am Weg?",
+"es": "¿Qué es lo que más te gusta comer en un refugio o en un café junto al sendero?",
+"fr": "Qu'est-ce que tu préfères manger dans un refuge ou un café au bord du sentier ?",
+"it": "Qual è la cosa che preferisci mangiare in un rifugio o in un bar lungo il sentiero?",
+"pt": "Qual é a tua comida preferida num refúgio de montanha ou num café junto ao trilho?",
+"pt_BR": "Qual é sua comida favorita num refúgio de montanha ou num café na trilha?"
+}
+},
+{
+"id": "hiking-033",
+"lv": "any",
+"i18n": {
+"en": "How would your friends describe you as a hiking partner?",
+"de": "Wie würden deine Freunde dich als Wanderpartner beschreiben?",
+"es": "¿Cómo te describirían tus amigos como compañero de caminata?",
+"fr": "Comment tes amis te décriraient-ils comme partenaire de rando ?",
+"it": "Come ti descriverebbero i tuoi amici come compagno di escursioni?",
+"pt": "Como é que os teus amigos te descreveriam como companheiro de caminhada?",
+"pt_BR": "Como seus amigos te descreveriam como parceiro de trilha?"
+}
+},
+{
+"id": "hiking-034",
+"lv": "any",
+"i18n": {
+"en": "What helps you keep going when a hike gets tough?",
+"de": "Was hilft dir weiterzugehen, wenn eine Wanderung anstrengend wird?",
+"es": "¿Qué te ayuda a seguir cuando una caminata se pone difícil?",
+"fr": "Qu'est-ce qui t'aide à continuer quand une rando devient difficile ?",
+"it": "Cosa ti aiuta ad andare avanti quando un'escursione diventa dura?",
+"pt": "O que te ajuda a continuar quando uma caminhada fica difícil?",
+"pt_BR": "O que te ajuda a seguir em frente quando a trilha fica difícil?"
+}
+},
+{
+"id": "hiking-035",
+"lv": "any",
+"i18n": {
+"en": "Which plant or flower do you love spotting outdoors?",
+"de": "Welche Pflanze oder Blume entdeckst du draußen besonders gern?",
+"es": "¿Qué planta o flor te encanta descubrir al aire libre?",
+"fr": "Quelle plante ou fleur aimes-tu repérer dehors ?",
+"it": "Quale pianta o fiore ti piace scoprire all'aperto?",
+"pt": "Que planta ou flor adoras encontrar ao ar livre?",
+"pt_BR": "Qual planta ou flor você adora encontrar ao ar livre?"
+}
+},
+{
+"id": "hiking-036",
+"lv": "any",
+"i18n": {
+"en": "Would you like to try a hike at night under the stars? Why or why not?",
+"de": "Würdest du gern eine Nachtwanderung unter den Sternen machen? Warum oder warum nicht?",
+"es": "¿Te gustaría probar una caminata nocturna bajo las estrellas? ¿Por qué sí o por qué no?",
+"fr": "Aimerais-tu essayer une rando de nuit sous les étoiles ? Pourquoi ?",
+"it": "Ti piacerebbe provare un'escursione notturna sotto le stelle? Perché sì o perché no?",
+"pt": "Gostavas de experimentar uma caminhada noturna sob as estrelas? Porquê?",
+"pt_BR": "Você gostaria de fazer uma trilha noturna sob as estrelas? Por quê?"
+}
+},
+{
+"id": "hiking-037",
+"lv": "any",
+"i18n": {
+"en": "What is one thing about nature you learned while walking?",
+"de": "Was hast du beim Wandern über die Natur gelernt?",
+"es": "¿Qué has aprendido sobre la naturaleza mientras caminabas?",
+"fr": "Qu'as-tu appris sur la nature en marchant ?",
+"it": "Cosa hai imparato sulla natura camminando?",
+"pt": "O que aprendeste sobre a natureza enquanto caminhavas?",
+"pt_BR": "O que você aprendeu sobre a natureza enquanto caminhava?"
+}
+},
+{
+"id": "hiking-038",
+"lv": "any",
+"i18n": {
+"en": "If you could hike anywhere tomorrow, where would you go?",
+"de": "Wenn du morgen überall wandern könntest, wohin würdest du gehen?",
+"es": "Si mañana pudieras caminar en cualquier lugar, ¿adónde irías?",
+"fr": "Si tu pouvais randonner n'importe où demain, où irais-tu ?",
+"it": "Se domani potessi camminare ovunque, dove andresti?",
+"pt": "Se amanhã pudesses caminhar em qualquer lugar, para onde irias?",
+"pt_BR": "Se amanhã você pudesse fazer trilha em qualquer lugar, para onde iria?"
+}
+},
+{
+"id": "hiking-039",
+"lv": "any",
+"i18n": {
+"en": "How do you like to share your hikes with others afterwards?",
+"de": "Wie teilst du deine Wanderungen später gern mit anderen?",
+"es": "¿Cómo te gusta compartir tus caminatas con otros después?",
+"fr": "Comment aimes-tu partager tes randos avec les autres ensuite ?",
+"it": "Come ti piace condividere le tue escursioni con gli altri dopo?",
+"pt": "Como gostas de partilhar as tuas caminhadas com os outros depois?",
+"pt_BR": "Como você gosta de compartilhar suas trilhas com os outros depois?"
+}
+},
+{
+"id": "hiking-040",
+"lv": "beginner",
+"i18n": {
+"en": "How long is the longest walk you have done so far?",
+"de": "Wie lang war die längste Wanderung, die du bisher gemacht hast?",
+"es": "¿Cuál ha sido la caminata más larga que has hecho hasta ahora?",
+"fr": "Quelle est la plus longue marche que tu aies faite jusqu'ici ?",
+"it": "Qual è la camminata più lunga che hai fatto finora?",
+"pt": "Qual foi a caminhada mais longa que fizeste até agora?",
+"pt_BR": "Qual foi a caminhada mais longa que você já fez até agora?"
+}
+},
+{
+"id": "hiking-041",
+"lv": "beginner",
+"i18n": {
+"en": "What shoes do you usually wear for walking outdoors?",
+"de": "Welche Schuhe trägst du normalerweise beim Wandern?",
+"es": "¿Qué calzado sueles llevar para caminar al aire libre?",
+"fr": "Quelles chaussures portes-tu d'habitude pour marcher dehors ?",
+"it": "Che scarpe indossi di solito per camminare all'aperto?",
+"pt": "Que calçado costumas usar para caminhar ao ar livre?",
+"pt_BR": "Que calçado você costuma usar pra caminhar ao ar livre?"
+}
+},
+{
+"id": "hiking-042",
+"lv": "beginner",
+"i18n": {
+"en": "What would you pack in your bag for a first easy hike?",
+"de": "Was würdest du für eine erste leichte Wanderung in deinen Rucksack packen?",
+"es": "¿Qué meterías en la mochila para una primera caminata fácil?",
+"fr": "Que mettrais-tu dans ton sac pour une première rando facile ?",
+"it": "Cosa metteresti nello zaino per una prima escursione facile?",
+"pt": "O que levarias na mochila para uma primeira caminhada fácil?",
+"pt_BR": "O que você levaria na mochila pra uma primeira trilha fácil?"
+}
+},
+{
+"id": "hiking-043",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of first trail would make you feel comfortable?",
+"de": "Was für ein erster Weg würde dir ein gutes Gefühl geben?",
+"es": "¿Qué tipo de primer sendero te haría sentir cómodo?",
+"fr": "Quel genre de premier sentier te mettrait à l'aise ?",
+"it": "Che tipo di primo sentiero ti farebbe sentire a tuo agio?",
+"pt": "Que tipo de primeiro trilho te faria sentir confortável?",
+"pt_BR": "Que tipo de primeira trilha faria você se sentir à vontade?"
+}
+},
+{
+"id": "hiking-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you usually check the weather before going out? How?",
+"de": "Schaust du normalerweise vorher aufs Wetter? Wie?",
+"es": "¿Sueles mirar el tiempo antes de salir? ¿Cómo lo haces?",
+"fr": "Est-ce que tu regardes la météo avant de sortir ? Comment ?",
+"it": "Di solito controlli il meteo prima di uscire? Come?",
+"pt": "Costumas ver a previsão do tempo antes de sair? Como?",
+"pt_BR": "Você costuma olhar a previsão do tempo antes de sair? Como?"
+}
+},
+{
+"id": "hiking-045",
+"lv": "beginner",
+"i18n": {
+"en": "Who would you invite on your first proper hike?",
+"de": "Wen würdest du zu deiner ersten richtigen Wanderung einladen?",
+"es": "¿A quién invitarías a tu primera caminata de verdad?",
+"fr": "Qui inviterais-tu pour ta première vraie randonnée ?",
+"it": "Chi inviteresti alla tua prima vera escursione?",
+"pt": "Quem convidarias para a tua primeira caminhada a sério?",
+"pt_BR": "Quem você convidaria pra sua primeira trilha de verdade?"
+}
+},
+{
+"id": "hiking-046",
+"lv": "beginner",
+"i18n": {
+"en": "What worries you a little about starting to hike, if anything?",
+"de": "Was macht dich beim Einstieg ins Wandern ein bisschen unsicher, falls überhaupt etwas?",
+"es": "¿Hay algo que te preocupe un poco al empezar a hacer senderismo?",
+"fr": "Y a-t-il quelque chose qui t'inquiète un peu pour débuter la randonnée ?",
+"it": "C'è qualcosa che ti preoccupa un po' all'idea di iniziare con le escursioni?",
+"pt": "Há alguma coisa que te deixe um pouco inseguro ao começar a caminhar?",
+"pt_BR": "Tem alguma coisa que te deixa um pouco inseguro pra começar a fazer trilha?"
+}
+},
+{
+"id": "hiking-047",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about walking uphill for a long time?",
+"de": "Wie fühlst du dich, wenn es lange bergauf geht?",
+"es": "¿Cómo te sientes cuando tienes que subir cuesta arriba durante mucho rato?",
+"fr": "Comment te sens-tu quand il faut monter longtemps ?",
+"it": "Come ti senti quando devi camminare in salita a lungo?",
+"pt": "Como te sentes quando tens de subir durante muito tempo?",
+"pt_BR": "Como você se sente quando precisa subir por muito tempo?"
+}
+},
+{
+"id": "hiking-048",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite park or green space for a short walk?",
+"de": "Was ist dein Lieblingspark oder -grünfläche für einen kurzen Spaziergang?",
+"es": "¿Cuál es tu parque o zona verde favorita para un paseo corto?",
+"fr": "Quel est ton parc ou espace vert préféré pour une petite balade ?",
+"it": "Qual è il tuo parco o spazio verde preferito per una breve passeggiata?",
+"pt": "Qual é o teu parque ou espaço verde preferido para um passeio curto?",
+"pt_BR": "Qual é o seu parque ou área verde favorita pra uma caminhada curta?"
+}
+},
+{
+"id": "hiking-049",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever used a paper map? How did it go?",
+"de": "Hast du schon mal eine Papierkarte benutzt? Wie lief es?",
+"es": "¿Alguna vez has usado un mapa de papel? ¿Qué tal te fue?",
+"fr": "As-tu déjà utilisé une carte papier ? Comment ça s'est passé ?",
+"it": "Hai mai usato una cartina di carta? Com'è andata?",
+"pt": "Já alguma vez usaste um mapa em papel? Como correu?",
+"pt_BR": "Você já usou um mapa de papel? Como foi?"
+}
+},
+{
+"id": "hiking-050",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of snacks would you bring on a two-hour walk?",
+"de": "Welche Snacks würdest du auf eine zweistündige Wanderung mitnehmen?",
+"es": "¿Qué tentempiés llevarías para una caminata de dos horas?",
+"fr": "Quels en-cas emporterais-tu pour une marche de deux heures ?",
+"it": "Che spuntini porteresti per una camminata di due ore?",
+"pt": "Que lanches levarias para uma caminhada de duas horas?",
+"pt_BR": "Que lanches você levaria pra uma caminhada de duas horas?"
+}
+},
+{
+"id": "hiking-051",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer a loop trail or walking from one place to another?",
+"de": "Magst du lieber Rundwege oder Strecken von einem Ort zum anderen?",
+"es": "¿Prefieres una ruta circular o caminar de un lugar a otro?",
+"fr": "Tu préfères une boucle ou marcher d'un endroit à un autre ?",
+"it": "Preferisci un percorso ad anello o camminare da un posto all'altro?",
+"pt": "Preferes um percurso circular ou caminhar de um sítio para outro?",
+"pt_BR": "Você prefere trilha circular ou caminhar de um lugar a outro?"
+}
+},
+{
+"id": "hiking-052",
+"lv": "beginner",
+"i18n": {
+"en": "What would make a short local walk feel like an adventure to you?",
+"de": "Was würde einen kurzen Spaziergang in der Nähe für dich zum Abenteuer machen?",
+"es": "¿Qué haría que un paseo corto cerca de casa te pareciera una aventura?",
+"fr": "Qu'est-ce qui ferait d'une petite balade près de chez toi une aventure ?",
+"it": "Cosa renderebbe un'avventura una breve passeggiata vicino a casa?",
+"pt": "O que faria uma pequena caminhada perto de casa parecer uma aventura?",
+"pt_BR": "O que faria uma caminhada curta perto de casa parecer uma aventura pra você?"
+}
+},
+{
+"id": "hiking-053",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually get to the countryside or nature where you live?",
+"de": "Wie kommst du normalerweise ins Grüne, dort wo du wohnst?",
+"es": "¿Cómo sueles llegar al campo o a la naturaleza desde donde vives?",
+"fr": "Comment vas-tu d'habitude à la campagne ou dans la nature là où tu vis ?",
+"it": "Come raggiungi di solito la campagna o la natura dove vivi?",
+"pt": "Como costumas chegar ao campo ou à natureza onde vives?",
+"pt_BR": "Como você costuma chegar ao campo ou à natureza onde mora?"
+}
+},
+{
+"id": "hiking-054",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of jacket do you wear when the weather changes?",
+"de": "Welche Jacke trägst du, wenn das Wetter umschlägt?",
+"es": "¿Qué chaqueta llevas cuando cambia el tiempo?",
+"fr": "Quelle veste portes-tu quand le temps change ?",
+"it": "Che giacca indossi quando il tempo cambia?",
+"pt": "Que casaco usas quando o tempo muda?",
+"pt_BR": "Que jaqueta você usa quando o tempo muda?"
+}
+},
+{
+"id": "hiking-055",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever had blisters on a walk? What did you learn?",
+"de": "Hattest du beim Wandern schon mal Blasen? Was hast du daraus gelernt?",
+"es": "¿Te han salido ampollas alguna vez caminando? ¿Qué aprendiste?",
+"fr": "As-tu déjà eu des ampoules en marchant ? Qu'en as-tu appris ?",
+"it": "Ti sono mai venute le vesciche camminando? Cosa hai imparato?",
+"pt": "Já te apareceram bolhas numa caminhada? O que aprendeste?",
+"pt_BR": "Você já teve bolhas numa caminhada? O que aprendeu?"
+}
+},
+{
+"id": "hiking-056",
+"lv": "beginner",
+"i18n": {
+"en": "How fast do you like to walk: slow and steady or quick?",
+"de": "Wie schnell gehst du gern: langsam und gleichmäßig oder flott?",
+"es": "¿A qué ritmo te gusta caminar: lento y constante o rápido?",
+"fr": "À quel rythme aimes-tu marcher : lent et régulier ou rapide ?",
+"it": "A che ritmo ti piace camminare: lento e costante o veloce?",
+"pt": "A que ritmo gostas de caminhar: devagar e constante ou rápido?",
+"pt_BR": "Em que ritmo você gosta de caminhar: devagar e constante ou rápido?"
+}
+},
+{
+"id": "hiking-057",
+"lv": "beginner",
+"i18n": {
+"en": "What would you like to learn first about hiking?",
+"de": "Was würdest du beim Wandern als Erstes lernen wollen?",
+"es": "¿Qué te gustaría aprender primero sobre senderismo?",
+"fr": "Qu'aimerais-tu apprendre en premier sur la randonnée ?",
+"it": "Cosa ti piacerebbe imparare per prima cosa sull'escursionismo?",
+"pt": "O que gostarias de aprender primeiro sobre caminhadas?",
+"pt_BR": "O que você gostaria de aprender primeiro sobre trilhas?"
+}
+},
+{
+"id": "hiking-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy walking with kids or pets? How is it different?",
+"de": "Wanderst du gern mit Kindern oder Haustieren? Was ist dann anders?",
+"es": "¿Te gusta caminar con niños o mascotas? ¿Qué cambia?",
+"fr": "Tu aimes marcher avec des enfants ou des animaux ? Qu'est-ce qui change ?",
+"it": "Ti piace camminare con bambini o animali? Cosa cambia?",
+"pt": "Gostas de caminhar com crianças ou animais? O que muda?",
+"pt_BR": "Você gosta de caminhar com crianças ou bichos de estimação? O que muda?"
+}
+},
+{
+"id": "hiking-059",
+"lv": "beginner",
+"i18n": {
+"en": "What signs or markers do trails have where you live?",
+"de": "Welche Wegzeichen oder Markierungen gibt es bei dir?",
+"es": "¿Qué señales o marcas tienen los senderos donde vives?",
+"fr": "Quels panneaux ou balisages trouve-t-on sur les sentiers chez toi ?",
+"it": "Che segnali o segnavia hanno i sentieri dove vivi?",
+"pt": "Que sinais ou marcas têm os trilhos onde vives?",
+"pt_BR": "Que placas ou marcações as trilhas têm onde você mora?"
+}
+},
+{
+"id": "hiking-060",
+"lv": "beginner",
+"i18n": {
+"en": "How do you like to take breaks on a walk?",
+"de": "Wie machst du unterwegs am liebsten Pause?",
+"es": "¿Cómo te gusta hacer las pausas durante una caminata?",
+"fr": "Comment aimes-tu faire tes pauses en marchant ?",
+"it": "Come ti piace fare le pause durante una camminata?",
+"pt": "Como gostas de fazer as pausas numa caminhada?",
+"pt_BR": "Como você gosta de fazer as pausas numa caminhada?"
+}
+},
+{
+"id": "hiking-061",
+"lv": "beginner",
+"i18n": {
+"en": "What small goal could you set for your next walk?",
+"de": "Welches kleine Ziel könntest du dir für deine nächste Wanderung setzen?",
+"es": "¿Qué pequeño objetivo podrías ponerte para tu próxima caminata?",
+"fr": "Quel petit objectif pourrais-tu te fixer pour ta prochaine marche ?",
+"it": "Quale piccolo obiettivo potresti darti per la prossima camminata?",
+"pt": "Que pequeno objetivo podias definir para a tua próxima caminhada?",
+"pt_BR": "Que pequena meta você poderia definir pra sua próxima caminhada?"
+}
+},
+{
+"id": "hiking-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer flat paths or a bit of up and down?",
+"de": "Magst du lieber flache Wege oder ein bisschen Auf und Ab?",
+"es": "¿Prefieres caminos llanos o con algo de subida y bajada?",
+"fr": "Tu préfères les chemins plats ou un peu de dénivelé ?",
+"it": "Preferisci i percorsi pianeggianti o un po' di saliscendi?",
+"pt": "Preferes caminhos planos ou com algumas subidas e descidas?",
+"pt_BR": "Você prefere caminhos planos ou com um pouco de sobe e desce?"
+}
+},
+{
+"id": "hiking-063",
+"lv": "beginner",
+"i18n": {
+"en": "What would you like to see on your first summit?",
+"de": "Was würdest du auf deinem ersten Gipfel gern sehen?",
+"es": "¿Qué te gustaría ver en tu primera cumbre?",
+"fr": "Qu'aimerais-tu voir depuis ton premier sommet ?",
+"it": "Cosa ti piacerebbe vedere dalla tua prima vetta?",
+"pt": "O que gostarias de ver no teu primeiro cume?",
+"pt_BR": "O que você gostaria de ver no seu primeiro cume?"
+}
+},
+{
+"id": "hiking-064",
+"lv": "beginner",
+"i18n": {
+"en": "How do you keep nature clean when you are outdoors?",
+"de": "Wie hältst du die Natur sauber, wenn du draußen bist?",
+"es": "¿Cómo mantienes limpia la naturaleza cuando estás al aire libre?",
+"fr": "Comment gardes-tu la nature propre quand tu es dehors ?",
+"it": "Come mantieni pulita la natura quando sei all'aperto?",
+"pt": "Como manténs a natureza limpa quando estás ao ar livre?",
+"pt_BR": "Como você mantém a natureza limpa quando está ao ar livre?"
+}
+},
+{
+"id": "hiking-065",
+"lv": "intermediate",
+"i18n": {
+"en": "What is the toughest hike you have done, and how did you feel at the end?",
+"de": "Was war deine härteste Wanderung, und wie hast du dich am Ende gefühlt?",
+"es": "¿Cuál ha sido tu caminata más dura y cómo te sentiste al final?",
+"fr": "Quelle est la rando la plus dure que tu aies faite, et comment te sentais-tu à la fin ?",
+"it": "Qual è l'escursione più dura che hai fatto e come ti sentivi alla fine?",
+"pt": "Qual foi a caminhada mais dura que fizeste e como te sentiste no fim?",
+"pt_BR": "Qual foi a trilha mais difícil que você já fez e como se sentiu no final?"
+}
+},
+{
+"id": "hiking-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How confident do you feel with a map and compass?",
+"de": "Wie sicher fühlst du dich mit Karte und Kompass?",
+"es": "¿Qué tan seguro te sientes con un mapa y una brújula?",
+"fr": "À quel point te sens-tu à l'aise avec une carte et une boussole ?",
+"it": "Quanto ti senti sicuro con mappa e bussola?",
+"pt": "Quão confiante te sentes com um mapa e uma bússola?",
+"pt_BR": "Quão confiante você se sente com mapa e bússola?"
+}
+},
+{
+"id": "hiking-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever changed plans on a hike because of the weather? What happened?",
+"de": "Hast du schon mal wegen des Wetters deine Wanderpläne geändert? Was ist passiert?",
+"es": "¿Alguna vez cambiaste de planes en una caminata por el tiempo? ¿Qué pasó?",
+"fr": "As-tu déjà changé de plan en rando à cause de la météo ? Que s'est-il passé ?",
+"it": "Ti è mai capitato di cambiare programma per il meteo durante un'escursione? Cos'è successo?",
+"pt": "Já mudaste de planos numa caminhada por causa do tempo? O que aconteceu?",
+"pt_BR": "Você já mudou os planos numa trilha por causa do tempo? O que aconteceu?"
+}
+},
+{
+"id": "hiking-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you use trekking poles? What do you think of them?",
+"de": "Benutzt du Wanderstöcke? Was hältst du davon?",
+"es": "¿Usas bastones de trekking? ¿Qué opinas de ellos?",
+"fr": "Utilises-tu des bâtons de marche ? Qu'en penses-tu ?",
+"it": "Usi i bastoncini da trekking? Cosa ne pensi?",
+"pt": "Usas bastões de caminhada? O que achas deles?",
+"pt_BR": "Você usa bastões de caminhada? O que acha deles?"
+}
+},
+{
+"id": "hiking-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan the timing of a full-day hike?",
+"de": "Wie planst du den Zeitablauf einer ganztägigen Wanderung?",
+"es": "¿Cómo planificas los tiempos de una caminata de un día entero?",
+"fr": "Comment organises-tu le timing d'une rando à la journée ?",
+"it": "Come pianifichi i tempi di un'escursione di un'intera giornata?",
+"pt": "Como planeias os horários de uma caminhada de um dia inteiro?",
+"pt_BR": "Como você planeja os horários de uma trilha de dia inteiro?"
+}
+},
+{
+"id": "hiking-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you like to sleep in a mountain hut? What appeals to you about it?",
+"de": "Würdest du gern auf einer Berghütte übernachten? Was reizt dich daran?",
+"es": "¿Te gustaría dormir en un refugio de montaña? ¿Qué te atrae de la idea?",
+"fr": "Aimerais-tu dormir dans un refuge de montagne ? Qu'est-ce qui t'attire ?",
+"it": "Ti piacerebbe dormire in un rifugio di montagna? Cosa ti attira?",
+"pt": "Gostavas de dormir num refúgio de montanha? O que te atrai nisso?",
+"pt_BR": "Você gostaria de dormir num refúgio de montanha? O que te atrai nisso?"
+}
+},
+{
+"id": "hiking-071",
+"lv": "intermediate",
+"i18n": {
+"en": "What is your system for staying warm and dry on changeable days?",
+"de": "Wie bleibst du an wechselhaften Tagen warm und trocken?",
+"es": "¿Cuál es tu sistema para mantenerte abrigado y seco en días cambiantes?",
+"fr": "Quel est ton système pour rester au chaud et au sec par temps changeant ?",
+"it": "Qual è il tuo sistema per restare caldo e asciutto nelle giornate variabili?",
+"pt": "Qual é o teu sistema para te manteres quente e seco em dias de tempo instável?",
+"pt_BR": "Qual é o seu esquema pra ficar aquecido e seco em dias de tempo instável?"
+}
+},
+{
+"id": "hiking-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you tried hiking on rocky or rough terrain? How did it feel?",
+"de": "Bist du schon auf felsigem oder rauem Gelände gewandert? Wie war das?",
+"es": "¿Has probado a caminar por terreno rocoso o irregular? ¿Qué tal fue?",
+"fr": "As-tu déjà randonné sur un terrain rocheux ou accidenté ? C'était comment ?",
+"it": "Hai mai camminato su terreno roccioso o accidentato? Com'è stato?",
+"pt": "Já experimentaste caminhar em terreno rochoso ou irregular? Como foi?",
+"pt_BR": "Você já fez trilha em terreno rochoso ou irregular? Como foi?"
+}
+},
+{
+"id": "hiking-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you eat to keep your energy up on a long hike?",
+"de": "Was isst du, um bei einer langen Wanderung bei Kräften zu bleiben?",
+"es": "¿Qué comes para mantener la energía en una caminata larga?",
+"fr": "Que manges-tu pour garder de l'énergie pendant une longue rando ?",
+"it": "Cosa mangi per mantenere l'energia durante una lunga escursione?",
+"pt": "O que comes para manter a energia numa caminhada longa?",
+"pt_BR": "O que você come pra manter a energia numa trilha longa?"
+}
+},
+{
+"id": "hiking-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide when it is time to turn back?",
+"de": "Wie entscheidest du, wann es Zeit ist umzukehren?",
+"es": "¿Cómo decides cuándo es momento de dar la vuelta?",
+"fr": "Comment décides-tu qu'il est temps de faire demi-tour ?",
+"it": "Come decidi quando è il momento di tornare indietro?",
+"pt": "Como decides quando é altura de voltar para trás?",
+"pt_BR": "Como você decide que é hora de voltar?"
+}
+},
+{
+"id": "hiking-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever hiked with a group you did not know? How was it?",
+"de": "Bist du schon mit einer Gruppe gewandert, die du nicht kanntest? Wie war es?",
+"es": "¿Has caminado alguna vez con un grupo que no conocías? ¿Qué tal fue?",
+"fr": "As-tu déjà randonné avec un groupe d'inconnus ? C'était comment ?",
+"it": "Hai mai fatto un'escursione con un gruppo che non conoscevi? Com'è stata?",
+"pt": "Já fizeste uma caminhada com um grupo que não conhecias? Como foi?",
+"pt_BR": "Você já fez trilha com um grupo que não conhecia? Como foi?"
+}
+},
+{
+"id": "hiking-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think about using phone apps for navigation outdoors?",
+"de": "Was hältst du davon, draußen mit Handy-Apps zu navigieren?",
+"es": "¿Qué opinas de usar aplicaciones del móvil para orientarte al aire libre?",
+"fr": "Que penses-tu des applis sur téléphone pour s'orienter en plein air ?",
+"it": "Cosa pensi delle app sul telefono per orientarsi all'aperto?",
+"pt": "O que achas de usar aplicações no telemóvel para te orientares ao ar livre?",
+"pt_BR": "O que você acha de usar aplicativos no celular pra se orientar ao ar livre?"
+}
+},
+{
+"id": "hiking-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which hiking skill are you working on right now?",
+"de": "An welcher Wanderfähigkeit arbeitest du gerade?",
+"es": "¿En qué habilidad de senderismo estás trabajando ahora?",
+"fr": "Sur quelle compétence de randonnée travailles-tu en ce moment ?",
+"it": "Su quale abilità escursionistica stai lavorando in questo periodo?",
+"pt": "Em que competência de caminhada estás a trabalhar neste momento?",
+"pt_BR": "Em qual habilidade de trilha você está trabalhando agora?"
+}
+},
+{
+"id": "hiking-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you prepare your body for a bigger hiking day?",
+"de": "Wie bereitest du deinen Körper auf einen größeren Wandertag vor?",
+"es": "¿Cómo preparas tu cuerpo para un día de senderismo más exigente?",
+"fr": "Comment prépares-tu ton corps pour une grosse journée de rando ?",
+"it": "Come prepari il corpo per una giornata di escursione più impegnativa?",
+"pt": "Como preparas o teu corpo para um dia de caminhada mais exigente?",
+"pt_BR": "Como você prepara o corpo pra um dia de trilha mais puxado?"
+}
+},
+{
+"id": "hiking-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you enjoy about hiking in another country's culture?",
+"de": "Was genießt du daran, in einem anderen Land und seiner Kultur zu wandern?",
+"es": "¿Qué disfrutas de hacer senderismo en la cultura de otro país?",
+"fr": "Qu'est-ce que tu apprécies dans la randonnée au cœur d'une autre culture ?",
+"it": "Cosa ti piace del fare escursioni nella cultura di un altro paese?",
+"pt": "O que aprecias em caminhar no meio da cultura de outro país?",
+"pt_BR": "O que você curte em fazer trilha dentro da cultura de outro país?"
+}
+},
+{
+"id": "hiking-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you like to try camping on a hike? What would you look forward to?",
+"de": "Würdest du gern mal beim Wandern zelten? Worauf würdest du dich freuen?",
+"es": "¿Te gustaría acampar durante una ruta? ¿Qué es lo que más te ilusionaría?",
+"fr": "Aimerais-tu essayer le camping en rando ? Qu'est-ce qui te réjouirait ?",
+"it": "Ti piacerebbe provare il campeggio durante un trekking? Cosa ti entusiasmerebbe?",
+"pt": "Gostavas de experimentar acampar numa caminhada? O que te entusiasmaria?",
+"pt_BR": "Você gostaria de acampar numa trilha? O que te deixaria mais animado?"
+}
+},
+{
+"id": "hiking-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep a group motivated when the trail gets hard?",
+"de": "Wie hältst du eine Gruppe bei Laune, wenn der Weg schwierig wird?",
+"es": "¿Cómo mantienes motivado a un grupo cuando el sendero se complica?",
+"fr": "Comment gardes-tu un groupe motivé quand le sentier devient difficile ?",
+"it": "Come mantieni motivato un gruppo quando il sentiero si fa duro?",
+"pt": "Como manténs um grupo motivado quando o trilho fica difícil?",
+"pt_BR": "Como você mantém um grupo motivado quando a trilha fica difícil?"
+}
+},
+{
+"id": "hiking-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What have you learned from a hike that did not go as planned?",
+"de": "Was hast du aus einer Wanderung gelernt, die nicht nach Plan lief?",
+"es": "¿Qué aprendiste de una caminata que no salió como esperabas?",
+"fr": "Qu'as-tu appris d'une rando qui ne s'est pas passée comme prévu ?",
+"it": "Cosa hai imparato da un'escursione che non è andata come previsto?",
+"pt": "O que aprendeste com uma caminhada que não correu como planeado?",
+"pt_BR": "O que você aprendeu com uma trilha que não saiu como planejado?"
+}
+},
+{
+"id": "hiking-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you read the sky to guess what the weather will do?",
+"de": "Wie liest du den Himmel, um das Wetter einzuschätzen?",
+"es": "¿Cómo lees el cielo para adivinar qué tiempo va a hacer?",
+"fr": "Comment lis-tu le ciel pour deviner le temps qu'il va faire ?",
+"it": "Come leggi il cielo per capire che tempo farà?",
+"pt": "Como lês o céu para adivinhar que tempo vai fazer?",
+"pt_BR": "Como você lê o céu pra adivinhar como vai ficar o tempo?"
+}
+},
+{
+"id": "hiking-084",
+"lv": "advanced",
+"i18n": {
+"en": "Which multi-day trek would you love to do, and why that one?",
+"de": "Welche Mehrtagestour würdest du gern machen, und warum gerade die?",
+"es": "¿Qué trekking de varios días te encantaría hacer y por qué ese?",
+"fr": "Quel trek de plusieurs jours aimerais-tu faire, et pourquoi celui-là ?",
+"it": "Quale trekking di più giorni ti piacerebbe fare e perché proprio quello?",
+"pt": "Que travessia de vários dias adorarias fazer e porquê essa?",
+"pt_BR": "Qual travessia de vários dias você adoraria fazer e por que essa?"
+}
+},
+{
+"id": "hiking-085",
+"lv": "advanced",
+"i18n": {
+"en": "How do you plan food and resupply for several days on a trail?",
+"de": "Wie planst du Essen und Nachschub für mehrere Tage auf dem Weg?",
+"es": "¿Cómo planificas la comida y el reabastecimiento para varios días de ruta?",
+"fr": "Comment prévois-tu la nourriture et le ravitaillement pour plusieurs jours de marche ?",
+"it": "Come pianifichi cibo e rifornimenti per più giorni di cammino?",
+"pt": "Como planeias a comida e o reabastecimento para vários dias de trilho?",
+"pt_BR": "Como você planeja comida e reabastecimento pra vários dias de trilha?"
+}
+},
+{
+"id": "hiking-086",
+"lv": "advanced",
+"i18n": {
+"en": "What does your ideal lightweight pack setup look like?",
+"de": "Wie sieht deine ideale leichte Rucksackausrüstung aus?",
+"es": "¿Cómo sería tu equipo ligero ideal en la mochila?",
+"fr": "À quoi ressemble ton sac léger idéal ?",
+"it": "Com'è la tua configurazione ideale di zaino leggero?",
+"pt": "Como seria o teu equipamento leve ideal na mochila?",
+"pt_BR": "Como seria seu equipamento leve ideal na mochila?"
+}
+},
+{
+"id": "hiking-087",
+"lv": "advanced",
+"i18n": {
+"en": "How do you make good decisions about weather high in the mountains?",
+"de": "Wie triffst du hoch in den Bergen gute Entscheidungen zum Wetter?",
+"es": "¿Cómo tomas buenas decisiones sobre el tiempo en la alta montaña?",
+"fr": "Comment prends-tu de bonnes décisions face à la météo en haute montagne ?",
+"it": "Come prendi buone decisioni sul meteo in alta montagna?",
+"pt": "Como tomas boas decisões sobre o tempo na alta montanha?",
+"pt_BR": "Como você toma boas decisões sobre o tempo no alto da montanha?"
+}
+},
+{
+"id": "hiking-088",
+"lv": "advanced",
+"i18n": {
+"en": "Would you try a via ferrata or scrambling route? What attracts or worries you?",
+"de": "Würdest du einen Klettersteig oder eine Kraxelroute probieren? Was reizt oder bremst dich?",
+"es": "¿Probarías una vía ferrata o una trepada? ¿Qué te atrae o te frena?",
+"fr": "Essaierais-tu une via ferrata ou un itinéraire d'escalade facile ? Qu'est-ce qui t'attire ou te freine ?",
+"it": "Proveresti una via ferrata o un percorso di arrampicata facile? Cosa ti attira o ti frena?",
+"pt": "Experimentarias uma via ferrata ou uma escalada fácil? O que te atrai ou te trava?",
+"pt_BR": "Você toparia uma via ferrata ou uma escalaminhada? O que te atrai ou te segura?"
+}
+},
+{
+"id": "hiking-089",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think about safety and communication on remote trails?",
+"de": "Wie gehst du auf abgelegenen Wegen mit Sicherheit und Kommunikation um?",
+"es": "¿Cómo piensas la seguridad y la comunicación en senderos remotos?",
+"fr": "Comment gères-tu la sécurité et la communication sur des sentiers isolés ?",
+"it": "Come gestisci sicurezza e comunicazione sui sentieri isolati?",
+"pt": "Como pensas a segurança e a comunicação em trilhos remotos?",
+"pt_BR": "Como você pensa a segurança e a comunicação em trilhas remotas?"
+}
+},
+{
+"id": "hiking-090",
+"lv": "advanced",
+"i18n": {
+"en": "What has hiking at altitude taught you, or what would you like to know about it?",
+"de": "Was hat dich das Wandern in der Höhe gelehrt, oder was möchtest du darüber wissen?",
+"es": "¿Qué te ha enseñado caminar en altura, o qué te gustaría saber sobre ello?",
+"fr": "Qu'est-ce que la marche en altitude t'a appris, ou que voudrais-tu en savoir ?",
+"it": "Cosa ti ha insegnato camminare in quota, o cosa vorresti sapere al riguardo?",
+"pt": "O que te ensinou caminhar em altitude, ou o que gostarias de saber sobre isso?",
+"pt_BR": "O que fazer trilha em altitude te ensinou, ou o que você gostaria de saber sobre isso?"
+}
+},
+{
+"id": "hiking-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you lead a group of mixed abilities on a challenging route?",
+"de": "Wie würdest du eine Gruppe mit unterschiedlichem Niveau auf einer anspruchsvollen Route führen?",
+"es": "¿Cómo guiarías a un grupo de distintos niveles por una ruta exigente?",
+"fr": "Comment guiderais-tu un groupe de niveaux différents sur un itinéraire exigeant ?",
+"it": "Come guideresti un gruppo di livelli diversi su un percorso impegnativo?",
+"pt": "Como guiarias um grupo de níveis diferentes num percurso exigente?",
+"pt_BR": "Como você guiaria um grupo de níveis diferentes numa rota puxada?"
+}
+},
+{
+"id": "hiking-092",
+"lv": "advanced",
+"i18n": {
+"en": "What is your view on ultralight hiking versus carrying more comfort?",
+"de": "Was hältst du von Ultraleicht-Wandern im Vergleich zu mehr Komfort im Gepäck?",
+"es": "¿Qué opinas del senderismo ultraligero frente a llevar más comodidades?",
+"fr": "Que penses-tu de la rando ultralégère par rapport au fait d'emporter plus de confort ?",
+"it": "Cosa pensi del trekking ultraleggero rispetto a portare più comodità?",
+"pt": "Qual é a tua opinião sobre caminhar ultraleve em vez de levar mais conforto?",
+"pt_BR": "Qual a sua opinião sobre trilha ultraleve em vez de levar mais conforto?"
+}
+},
+{
+"id": "hiking-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you prepare mentally for many days in a row on a long trail?",
+"de": "Wie bereitest du dich mental auf viele Tage am Stück auf einem langen Weg vor?",
+"es": "¿Cómo te preparas mentalmente para muchos días seguidos en un sendero largo?",
+"fr": "Comment te prépares-tu mentalement à de nombreux jours d'affilée sur un long sentier ?",
+"it": "Come ti prepari mentalmente a tanti giorni di fila su un lungo sentiero?",
+"pt": "Como te preparas mentalmente para muitos dias seguidos num trilho longo?",
+"pt_BR": "Como você se prepara mentalmente pra muitos dias seguidos numa trilha longa?"
+}
+},
+{
+"id": "hiking-094",
+"lv": "advanced",
+"i18n": {
+"en": "What would you change in how you plan big trips after your experiences?",
+"de": "Was würdest du nach deinen Erfahrungen an der Planung großer Touren ändern?",
+"es": "¿Qué cambiarías en tu forma de planificar grandes viajes después de tus experiencias?",
+"fr": "Que changerais-tu dans ta façon de préparer de grands voyages après tes expériences ?",
+"it": "Cosa cambieresti nel modo di pianificare i grandi viaggi dopo le tue esperienze?",
+"pt": "O que mudarias na forma de planear grandes viagens depois das tuas experiências?",
+"pt_BR": "O que você mudaria no jeito de planejar grandes viagens depois das suas experiências?"
+}
+},
+{
+"id": "hiking-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do you give back to the trails and places you love?",
+"de": "Wie gibst du den Wegen und Orten, die du liebst, etwas zurück?",
+"es": "¿Cómo devuelves algo a los senderos y lugares que amas?",
+"fr": "Comment rends-tu la pareille aux sentiers et aux lieux que tu aimes ?",
+"it": "Come restituisci qualcosa ai sentieri e ai luoghi che ami?",
+"pt": "Como retribuis aos trilhos e lugares que adoras?",
+"pt_BR": "Como você retribui às trilhas e aos lugares que ama?"
+}
+},
+{
+"id": "hiking-096",
+"lv": "advanced",
+"i18n": {
+"en": "Would you hike in winter conditions? What skills would you want first?",
+"de": "Würdest du bei Winterbedingungen wandern? Welche Fähigkeiten würdest du zuerst lernen wollen?",
+"es": "¿Caminarías en condiciones invernales? ¿Qué habilidades querrías aprender primero?",
+"fr": "Randonnerais-tu en conditions hivernales ? Quelles compétences voudrais-tu acquérir d'abord ?",
+"it": "Faresti escursioni in condizioni invernali? Quali abilità vorresti imparare prima?",
+"pt": "Caminharias em condições de inverno? Que competências quererias aprender primeiro?",
+"pt_BR": "Você faria trilha em condições de inverno? Que habilidades gostaria de aprender primeiro?"
+}
+},
+{
+"id": "hiking-097",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give someone just starting their first hike?",
+"de": "Welchen Rat würdest du jemandem geben, der gerade seine erste Wanderung beginnt?",
+"es": "¿Qué consejo le darías a alguien que empieza su primera caminata?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui commence sa toute première rando ?",
+"it": "Che consiglio daresti a chi sta per fare la sua prima escursione?",
+"pt": "Que conselho darias a alguém que vai fazer a sua primeira caminhada?",
+"pt_BR": "Que conselho você daria pra alguém que vai fazer a primeira trilha?"
+}
+},
+{
+"id": "hiking-098",
+"lv": "advanced",
+"i18n": {
+"en": "Which hiking achievement are you most proud of so far?",
+"de": "Auf welche Wanderleistung bist du bisher am stolzesten?",
+"es": "¿De qué logro de senderismo estás más orgulloso hasta ahora?",
+"fr": "De quel exploit de randonnée es-tu le plus fier jusqu'à présent ?",
+"it": "Di quale traguardo escursionistico sei più orgoglioso finora?",
+"pt": "De que conquista nas caminhadas te orgulhas mais até agora?",
+"pt_BR": "De qual conquista nas trilhas você mais se orgulha até agora?"
+}
+},
+{
+"id": "hiking-099",
+"lv": "any",
+"i18n": {
+"en": "Which smell reminds you most of being outdoors?",
+"de": "Welcher Geruch erinnert dich am meisten ans Draußensein?",
+"es": "¿Qué olor te recuerda más a estar al aire libre?",
+"fr": "Quelle odeur te rappelle le plus le plein air ?",
+"it": "Quale profumo ti ricorda di più lo stare all'aria aperta?",
+"pt": "Que cheiro mais te lembra estar ao ar livre?",
+"pt_BR": "Qual cheiro mais te lembra estar ao ar livre?"
+}
+},
+{
+"id": "hiking-100",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you choose a new trail that is a step up from your usual walks?",
+"de": "Wie suchst du einen neuen Weg aus, der eine Stufe anspruchsvoller ist als sonst?",
+"es": "¿Cómo eliges un sendero nuevo que suponga un paso más que tus rutas habituales?",
+"fr": "Comment choisis-tu un nouveau sentier un peu plus exigeant que d'habitude ?",
+"it": "Come scegli un nuovo sentiero un po' più impegnativo dei soliti?",
+"pt": "Como escolhes um trilho novo um pouco mais exigente do que os habituais?",
+"pt_BR": "Como você escolhe uma trilha nova um pouco mais puxada que as de costume?"
+}
+}
+]
+}

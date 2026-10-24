@@ -1,0 +1,2195 @@
+{
+"topic": "music_theory",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to music theory",
+"f": "Music theory as a friendly language that explains why music sounds the way it does"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What is sound",
+"f": "Vibrations, sound waves and how our ears turn them into music"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Pitch: high and low",
+"f": "How fast vibrations make high notes and slow vibrations make low notes"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Rhythm: the heartbeat of music",
+"f": "Sounds and silences arranged in time"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Finding the beat",
+"f": "Feeling the steady pulse of a song by tapping along"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Tempo",
+"f": "How fast or slow the beat goes, from slow ballads to fast dance tracks"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Dynamics: loud and soft",
+"f": "Volume as expression, from a gentle pianissimo to a powerful fortissimo"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Timbre: the colour of sound",
+"f": "Why a flute and a violin sound different when playing the same note"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Melody, harmony and rhythm",
+"f": "The three main ingredients of most music"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Active listening",
+"f": "Listening to a song and noticing its melody, rhythm and instruments"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "The musical alphabet",
+"f": "The seven note names A B C D E F G that repeat in cycles"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Octaves",
+"f": "Why notes with the same name sound alike at different heights"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Do re mi",
+"f": "Solfège syllables and how singers use them around the world"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "The piano keyboard map",
+"f": "White and black keys, and finding C next to the group of two black keys"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Sharps and flats",
+"f": "Raising or lowering a note with sharp and flat signs"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Half steps and whole steps",
+"f": "The smallest distances between notes on the keyboard"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Enharmonic notes",
+"f": "Why C sharp and D flat are the same key on a piano"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "The staff",
+"f": "Five lines and four spaces where notes are written"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "The treble clef",
+"f": "Reading higher notes with the G clef"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The bass clef",
+"f": "Reading lower notes with the F clef"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Middle C",
+"f": "The note that connects the treble and bass clefs"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Ledger lines",
+"f": "Short extra lines for notes above or below the staff"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Memory tricks for notes",
+"f": "Easy phrases to remember the lines and spaces"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Notes on a guitar",
+"f": "How frets and strings map to note names"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Your voice as an instrument",
+"f": "Finding comfortable notes to sing and matching a pitch"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Note-reading practice",
+"f": "Naming notes quickly on both clefs"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Letters or syllables",
+"f": "Why some countries say C D E while others say do re mi"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Fixed do and movable do",
+"f": "Two ways to use solfège: fixed to C or moving with the key"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Hearing high and low",
+"f": "Ear games to tell which of two notes is higher"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: notes and pitch",
+"f": "Recap of note names, the staff and the keyboard with a fun naming quiz"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Note values",
+"f": "Whole, half, quarter and eighth notes and how long they last"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Counting quarter notes",
+"f": "Counting 1 2 3 4 and clapping steady beats"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Half and whole notes",
+"f": "Holding notes for two and four beats"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Eighth notes",
+"f": "Splitting the beat in two and counting 1 and 2 and"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Sixteenth notes",
+"f": "Splitting the beat in four with 1 e and a"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Rests",
+"f": "Silent symbols that match each note value"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Dotted notes",
+"f": "How a dot adds half of the note's value"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Ties",
+"f": "Joining notes of the same pitch to hold them longer"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Bars and bar lines",
+"f": "How music is divided into measures"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Time signatures",
+"f": "What the two numbers at the start of a piece mean"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Four-four time",
+"f": "The most common time signature in pop and rock"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Three-four time",
+"f": "The waltz feel with three beats per bar"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Two-four time",
+"f": "The march feel with two strong beats"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Strong and weak beats",
+"f": "Why some beats feel heavier than others"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Pickup notes",
+"f": "Notes that start before the first full bar"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Syncopation basics",
+"f": "Accents off the beat that make music groove"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Triplets",
+"f": "Fitting three notes into the space of two"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Rhythm dictation",
+"f": "Listening to a rhythm and writing it down"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Body percussion",
+"f": "Clapping, stomping and snapping rhythms"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Rhythms of the world",
+"f": "Simple patterns from samba, reggae and flamenco"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Tempo markings",
+"f": "Italian words like adagio, andante and allegro"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Beats per minute",
+"f": "Measuring tempo in BPM with a metronome"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Practising with a metronome",
+"f": "Using a click to build steady timing"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Slowing down and speeding up",
+"f": "Ritardando and accelerando for expression"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Dynamic markings",
+"f": "p, mf, f and other symbols for volume"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Crescendo and diminuendo",
+"f": "Gradually getting louder or softer"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Articulation",
+"f": "Staccato, legato and accents"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Repeat signs",
+"f": "Repeat bars, first endings and second endings"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Musical road map symbols",
+"f": "D.C., D.S., Coda and Fine explained simply"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: rhythm and expression",
+"f": "Recap of note values, time and dynamics with a rhythm reading challenge"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "What is a scale",
+"f": "A series of notes in order that gives music its flavour"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "The C major scale",
+"f": "Playing all the white keys from C to C"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "The major scale pattern",
+"f": "Whole, whole, half, whole, whole, whole, half"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Scale degrees",
+"f": "Numbering the notes of a scale from 1 to 7"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "The tonic",
+"f": "The home note that music wants to return to"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "G major scale",
+"f": "Building a major scale that needs one sharp"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "F major scale",
+"f": "Building a major scale that needs one flat"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "D major and B-flat major",
+"f": "Practising the major scale pattern from new starting notes"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Singing a major scale",
+"f": "Using do re mi to feel each scale degree"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "What is a key",
+"f": "How a key centres a piece around one tonic"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Key signatures intro",
+"f": "Sharps or flats written at the start of the staff"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Accidentals",
+"f": "Sharps, flats and naturals added inside the music"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "The natural sign",
+"f": "Cancelling a sharp or a flat"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "What is an interval",
+"f": "The distance between two notes"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Counting intervals",
+"f": "Counting letter names from the lower note to the upper one"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Seconds and thirds",
+"f": "Small steps and the building blocks of chords"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Fourths and fifths",
+"f": "Strong, open intervals used in many songs"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Sixths, sevenths and octaves",
+"f": "Wider intervals and their character"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Major and minor thirds",
+"f": "The small difference that makes music sound bright or sad"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Intervals through songs",
+"f": "Famous melodies that start with each interval"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Consonance and dissonance",
+"f": "Stable and tense sounds, and why music needs both"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Melodic and harmonic intervals",
+"f": "Notes played one after another or at the same time"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Steps and leaps",
+"f": "How melodies move by step or by jump"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Melodic contour",
+"f": "The shape of a melody going up and down"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Phrases",
+"f": "Musical sentences that breathe and come to an end"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Question and answer phrases",
+"f": "Melodies that seem to ask and then reply"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Motifs",
+"f": "Short musical ideas that repeat and develop"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Repetition and variation",
+"f": "Why we love hearing ideas again with a twist"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Writing your first melody",
+"f": "Creating a short tune with the notes of the C major scale"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: scales and intervals",
+"f": "Recap of major scales and intervals with an ear quiz"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "What is a chord",
+"f": "Three or more notes sounding together"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Triads",
+"f": "Stacking two thirds to build a basic chord"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Root, third and fifth",
+"f": "The names of the notes in a triad"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Major triads",
+"f": "Bright chords with a major third and a perfect fifth"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Minor triads",
+"f": "Softer, darker chords with a minor third"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Hearing major and minor chords",
+"f": "Ear training to tell bright chords from dark ones"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Diminished triads",
+"f": "Tense chords built from two minor thirds"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Augmented triads",
+"f": "Dreamy, unstable chords built from two major thirds"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Chord symbols",
+"f": "Reading C, Cm, Cdim and C+ in lead sheets"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Chords on the piano",
+"f": "Simple hand shapes for triads"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Chords on the guitar",
+"f": "Open chord shapes and the notes inside them"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Chords in C major",
+"f": "The seven triads built on each note of the scale"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "The I, IV and V chords",
+"f": "The three primary chords of a key"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Three-chord songs",
+"f": "How countless songs use only I, IV and V"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Chord progressions",
+"f": "Sequences of chords that move music forward"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Tension and release",
+"f": "How the V chord pulls back to I"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "The vi chord",
+"f": "Adding the relative minor chord for emotion"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "The famous four-chord loop",
+"f": "I V vi IV and why it fits so many pop songs"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Strumming and comping",
+"f": "Playing chords in rhythm to accompany songs"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Bass notes and roots",
+"f": "How the bass often plays the root of each chord"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Arpeggios",
+"f": "Playing the notes of a chord one at a time"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Melody over chords",
+"f": "Why melody notes often match chord notes on strong beats"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Passing notes",
+"f": "Notes that connect chord tones smoothly"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Song structure basics",
+"f": "Verse, chorus and bridge"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Intros and outros",
+"f": "How songs begin and how they end"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Lead sheets",
+"f": "Reading a melody with chord symbols written above it"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Writing a chord progression",
+"f": "Creating your own progression with I, IV, V and vi"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Writing a simple song",
+"f": "Combining your melody with your chord progression"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Listening for chords",
+"f": "Guessing I, IV and V in well-known songs"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: chords and songs",
+"f": "Recap of triads and progressions with a mini songwriting task"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Welcome to intermediate theory",
+"f": "Building on chords and scales to understand richer music"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "The natural minor scale",
+"f": "The minor scale pattern and its darker mood"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Relative major and minor",
+"f": "Keys that share the same notes, like C major and A minor"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Parallel major and minor",
+"f": "Keys with the same tonic, like C major and C minor"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "The harmonic minor scale",
+"f": "Raising the seventh note for a stronger pull home"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "The melodic minor scale",
+"f": "Raising the sixth and seventh notes for smooth melodies"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Chords in minor keys",
+"f": "The triads built on the natural and harmonic minor scales"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Minor key progressions",
+"f": "Common progressions like i iv V and i VI VII"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "The circle of fifths",
+"f": "A map of all keys and how they relate"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Sharp key signatures",
+"f": "The order of sharps and how to find the key"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Flat key signatures",
+"f": "The order of flats and how to find the key"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Using the circle in practice",
+"f": "Finding related keys and chords quickly"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Perfect intervals",
+"f": "Unisons, fourths, fifths and octaves"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Major and minor intervals",
+"f": "Seconds, thirds, sixths and sevenths in both forms"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Augmented and diminished intervals",
+"f": "Stretched and squeezed intervals"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "The tritone",
+"f": "The interval of three whole steps and its tense sound"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Inverting intervals",
+"f": "Flipping intervals upside down and the rule of nine"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Compound intervals",
+"f": "Intervals larger than an octave, like ninths"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Ear training: intervals",
+"f": "Daily practice to recognise intervals by ear"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Ear training: chord qualities",
+"f": "Hearing major, minor, diminished and augmented chords"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Chord inversions",
+"f": "Putting the third or the fifth in the bass"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Slash chords",
+"f": "Reading chord symbols like C/E and G/B"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Smooth bass lines",
+"f": "Using inversions to make the bass move smoothly"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Seventh chords",
+"f": "Adding a fourth note a seventh above the root"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Major seventh chords",
+"f": "The soft, dreamy sound of maj7"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Dominant seventh chords",
+"f": "The bluesy, tense sound of the V7 chord"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Minor seventh chords",
+"f": "The mellow sound of m7"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Half-diminished and diminished",
+"f": "Tense, colourful seventh chords and how they are used"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Seventh chords in a key",
+"f": "Which seventh chord belongs on each scale degree"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: minor keys and sevenths",
+"f": "Recap of minor scales, the circle of fifths and seventh chords"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Roman numeral analysis",
+"f": "Labelling chords by their place and role in a key"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Chord functions",
+"f": "Tonic, subdominant and dominant roles"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "The ii-V-I progression",
+"f": "The most important progression in jazz"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Circle progressions",
+"f": "Chords moving by fifths, as in vi ii V I"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Cadences",
+"f": "Musical punctuation at the end of phrases"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "The authentic cadence",
+"f": "The strong V to I ending"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "The plagal cadence",
+"f": "The gentle IV to I, often called the Amen cadence"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "The half cadence",
+"f": "Phrases that pause on V like a question"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "The deceptive cadence",
+"f": "When V surprises us by moving to vi"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Harmonic rhythm",
+"f": "How often the chords change"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Pedal points",
+"f": "A held bass note under changing chords"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Common pop progressions",
+"f": "Analysing well-known pop chord loops"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "The fifties progression",
+"f": "I vi IV V and its nostalgic doo-wop sound"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "The Pachelbel progression",
+"f": "The famous Canon pattern heard in many songs"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Analysing a song by ear",
+"f": "Finding the key and chords of a song you love"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Melodies from chord tones",
+"f": "Building melodies around the harmony"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Non-chord tones",
+"f": "Neighbour notes, suspensions and appoggiaturas"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Suspended chords",
+"f": "Sus2 and sus4 chords and their open sound"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Add chords",
+"f": "Add9 and other colourful additions"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Power chords",
+"f": "Root and fifth chords in rock music"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Phrase structure",
+"f": "Four-bar and eight-bar phrases"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Sentence and period",
+"f": "Two classic ways to build a musical theme"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Hooks",
+"f": "Short memorable ideas that make songs stick"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Lyrics and rhythm",
+"f": "Matching word stress to musical accents"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Range and singability",
+"f": "Writing melodies people can sing comfortably"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Contrast between sections",
+"f": "How verses and choruses differ in melody and energy"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Pre-chorus and build-ups",
+"f": "Creating anticipation before the chorus"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "The bridge",
+"f": "Adding contrast and surprise late in a song"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Arranging basics",
+"f": "Choosing which instruments play what"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: harmony in action",
+"f": "Recap of functions, cadences and song form with an analysis task"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Compound meter",
+"f": "Six-eight, nine-eight and twelve-eight time"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Feeling six-eight",
+"f": "Two big beats, each divided into three"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Swing rhythm",
+"f": "The long-short feel of jazz and blues"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "The shuffle feel",
+"f": "Swung rhythms in rock and blues grooves"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Advanced syncopation",
+"f": "Anticipations and off-beat accents in pop and funk"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Groove and the backbeat",
+"f": "Why a snare on beats two and four makes us move"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Drum patterns",
+"f": "Basic rock, pop and dance drum patterns"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Rhythm in Latin music",
+"f": "The clave pattern and its central role"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Rhythm in African music",
+"f": "Interlocking patterns and call and response"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Hemiola",
+"f": "Shifting between groups of three and two"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "The pentatonic scale",
+"f": "Five-note scales used all over the world"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Major pentatonic",
+"f": "Bright, open melodies with five notes"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Minor pentatonic",
+"f": "The go-to scale for rock and blues solos"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "The blues scale",
+"f": "Adding the blue note to the minor pentatonic"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "The 12-bar blues",
+"f": "The classic blues chord form"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Blues variations",
+"f": "Quick change, turnarounds and the minor blues"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Call and response",
+"f": "A musical conversation between voices and instruments"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Improvisation basics",
+"f": "Making up melodies over chords with just a few notes"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Improvising with pentatonics",
+"f": "Simple soloing ideas that always fit"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Introduction to modes",
+"f": "Scales made by starting the major scale on different notes"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Ionian and Aeolian",
+"f": "The major and natural minor scales seen as modes"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "The Dorian mode",
+"f": "The minor mode with a bright sixth"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "The Mixolydian mode",
+"f": "The major mode with a flat seventh"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "The Lydian mode",
+"f": "The dreamy major mode with a raised fourth"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "The Phrygian mode",
+"f": "The minor mode with a dark flat second"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "The Locrian mode",
+"f": "The rare, unstable mode with a diminished fifth"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Modes in popular music",
+"f": "Hearing Dorian, Mixolydian and Lydian in songs"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "All modes on one tonic",
+"f": "Playing every mode from C to hear their colours"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Writing a modal melody",
+"f": "Composing a short tune in the mode of your choice"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: rhythm, blues and modes",
+"f": "Recap of meters, blues and modes with a jam exercise"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Voice leading basics",
+"f": "Moving each note of a chord smoothly to the next chord"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Common tones",
+"f": "Keeping shared notes between chords"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Contrary motion",
+"f": "Voices moving in opposite directions"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Avoiding parallel fifths",
+"f": "A classic rule and why it exists"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Four-part harmony",
+"f": "Soprano, alto, tenor and bass"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Bach chorales",
+"f": "Learning harmony from the four-part chorales of J. S. Bach"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Spacing chords well",
+"f": "Keeping upper voices close and the bass further away"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Doubling notes",
+"f": "Which chord note to double when writing for four voices"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Harmonising a melody",
+"f": "Choosing chords to fit a given tune"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Writing bass lines",
+"f": "Creating strong, independent bass lines"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Walking bass",
+"f": "Steady quarter-note bass lines in jazz"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Counterpoint introduction",
+"f": "The art of combining independent melodies"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Species counterpoint",
+"f": "Step-by-step training in writing note against note"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Canons and rounds",
+"f": "Melodies that imitate themselves, like Frère Jacques"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Imitation",
+"f": "Musical ideas passed from one voice to another"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Monophony and homophony",
+"f": "One melody alone versus a melody with chords"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Polyphony",
+"f": "Several independent melodies at once"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Orchestration basics",
+"f": "Instrument families and their ranges"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Transposing instruments",
+"f": "Why some instruments read different notes from those they sound"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Review: voices and texture",
+"f": "Recap of voice leading and counterpoint with a four-part exercise"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Musical form overview",
+"f": "How pieces are organised over time"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Binary form",
+"f": "Two-part AB structures"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Ternary form",
+"f": "ABA and the joy of return"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Rondo form",
+"f": "A returning theme with contrasting episodes"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Theme and variations",
+"f": "One melody transformed in many ways"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Strophic and verse-chorus forms",
+"f": "How songs repeat the same music with new words"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "AABA song form",
+"f": "The 32-bar form of many classic standards"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Sonata form basics",
+"f": "Exposition, development and recapitulation"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "The symphony",
+"f": "Movements and their typical characters"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "The concerto",
+"f": "Soloist and orchestra in dialogue"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Opera and musical theatre",
+"f": "Arias, recitatives and show tunes"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Dance forms",
+"f": "Minuet, waltz, tango and their rhythms"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Electronic music structure",
+"f": "Builds, drops and loops in dance music"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Hip-hop and loops",
+"f": "Samples, beats and repetition as structure"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Listening for form",
+"f": "Mapping the sections of a piece as you listen"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Reading a full score",
+"f": "How orchestral scores are laid out"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Composing in a form",
+"f": "Writing a short piece in ternary form"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Transposition",
+"f": "Moving a melody or song into a new key"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Transposing for singers",
+"f": "Finding the best key for a voice"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: form and structure",
+"f": "Recap of musical forms with a listening map of a favourite piece"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to advanced theory",
+"f": "Exploring colourful harmony, world systems and composition"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Secondary dominants",
+"f": "Borrowing a V chord to point towards other chords"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "V of V",
+"f": "The dominant of the dominant and its bright pull"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Secondary leading-tone chords",
+"f": "Diminished chords that lead to new targets"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Tonicisation",
+"f": "Briefly making a new chord feel like home"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Modulation",
+"f": "Changing key within a piece"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Pivot chord modulation",
+"f": "Using a chord shared by two keys to move smoothly"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Direct modulation",
+"f": "Jumping into a new key without preparation"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "The final chorus key change",
+"f": "The step up in the last chorus of many pop songs"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Modal interchange",
+"f": "Borrowing chords from the parallel minor or major key"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "The flat VI and flat VII chords",
+"f": "Borrowed chords common in rock and film music"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "The minor iv chord",
+"f": "A borrowed chord with a bittersweet sound"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "The Picardy third",
+"f": "Ending a minor piece on a major chord"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "The Neapolitan chord",
+"f": "The colourful flat II chord"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Augmented sixth chords",
+"f": "Italian, French and German sixths explained simply"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Chromatic mediants",
+"f": "Chords a third apart with surprising colours"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Chromatic melody",
+"f": "Using notes outside the key for expression"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Line clichés",
+"f": "A moving inner line over a held chord"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Reharmonisation",
+"f": "Giving a familiar melody new chords"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: chromatic harmony",
+"f": "Recap of borrowed and secondary chords with a reharmonisation task"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Extended chords",
+"f": "Ninths, elevenths and thirteenths"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Ninth chords",
+"f": "Adding warmth and colour with the ninth"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Eleventh and thirteenth chords",
+"f": "Rich, layered sounds used in jazz and soul"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Altered dominants",
+"f": "Sharp and flat ninths and fifths, and their tension"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Tritone substitution",
+"f": "Replacing a V7 with the dominant chord a tritone away"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Chord-scale theory",
+"f": "Matching scales to chords in jazz improvisation"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Jazz voicings",
+"f": "Shell voicings and rootless voicings"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Quartal harmony",
+"f": "Chords built in fourths for a modern sound"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Upper structure triads",
+"f": "Triads placed over chords to create extensions"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Analysing a jazz standard",
+"f": "Studying the harmony of a classic standard"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Rhythm changes",
+"f": "The famous progression behind many jazz tunes"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Coltrane changes",
+"f": "John Coltrane's cycle of major thirds in Giant Steps"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Modal jazz",
+"f": "Few chords and long modal sections, as on Kind of Blue"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Bebop scales",
+"f": "Adding a passing note to keep lines on the beat"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Guide tone lines",
+"f": "Thirds and sevenths that outline the chord changes"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Neo-soul harmony",
+"f": "Lush extended chords and smooth movement"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Gospel harmony",
+"f": "Passing chords and rich voicings in gospel music"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Bossa nova harmony",
+"f": "The smooth, colourful chords of Brazilian bossa nova"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Film music harmony",
+"f": "Techniques composers use to create wonder and suspense"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Review: extended and jazz harmony",
+"f": "Recap of extended chords and jazz ideas with an analysis challenge"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Odd time signatures",
+"f": "Five-four, seven-eight and other asymmetric meters"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Grouping odd meters",
+"f": "Feeling seven as 2+2+3 and other groupings"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Polyrhythms",
+"f": "Three against two, four against three and how to feel them"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Polymeter",
+"f": "Different meters running at the same time"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Metric modulation",
+"f": "Changing tempo through a shared note value"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Rhythm in Indian music",
+"f": "Tala cycles and spoken rhythmic syllables"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Rhythm in Balkan music",
+"f": "Asymmetric dance rhythms from southeastern Europe"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Groove in Brazilian music",
+"f": "Samba, baião and their rhythmic patterns"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Rhythm in electronic music",
+"f": "Quantising, swing and humanising beats"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: advanced rhythm",
+"f": "Recap of odd meters and polyrhythms with a clapping challenge"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Music beyond the West",
+"f": "Different ways cultures organise pitch and rhythm"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Indian raga",
+"f": "Melodic frameworks with typical phrases, moods and times of day"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Arabic maqam",
+"f": "Melodic modes that can include intervals smaller than a half step"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Indonesian gamelan",
+"f": "Bronze ensembles, cyclic structures and the slendro and pelog tunings"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Chinese pentatonic traditions",
+"f": "Five-note scales in traditional Chinese music"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Japanese scales",
+"f": "The in and yo scales of traditional Japanese music"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "West African music",
+"f": "Polyrhythmic drumming and the storytelling griot tradition"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Flamenco harmony",
+"f": "The Andalusian cadence and the Phrygian sound"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Celtic music",
+"f": "Modes, drones and lively dance tunes"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Microtones",
+"f": "Intervals smaller than a half step"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Tuning systems",
+"f": "Pythagorean tuning, just intonation and equal temperament"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "The harmonic series",
+"f": "The natural overtones that shape harmony"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Why equal temperament won",
+"f": "The compromise that lets us play in every key"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Folk music around the world",
+"f": "Shared ideas in songs passed down through generations"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Review: world music theory",
+"f": "Recap of global music systems with a listening journey"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Impressionist harmony",
+"f": "Debussy, Ravel and chords used for pure colour"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "The whole-tone scale",
+"f": "A dreamy scale made only of whole steps"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "The octatonic scale",
+"f": "Alternating half steps and whole steps"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Atonality basics",
+"f": "Music without a key centre"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Twelve-tone technique",
+"f": "Schoenberg's method of ordering all twelve notes in a row"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Minimalism",
+"f": "Repetition and gradual change in the music of Reich and Glass"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Polytonality",
+"f": "Two keys at the same time"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Extended techniques",
+"f": "New sounds from traditional instruments"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Synthesis basics",
+"f": "Waveforms, filters and envelopes in sound design"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Theory in music production",
+"f": "Using theory inside a digital audio workstation"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Frequencies and mixing",
+"f": "How instruments share the frequency spectrum"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Theory for songwriters",
+"f": "Practical shortcuts for writing better songs"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Melody writing masterclass",
+"f": "Shape, rhythm and climax in memorable tunes"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Harmony that fits the lyrics",
+"f": "Chord choices that match the emotion of the words"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: modern sounds",
+"f": "Recap of 20th-century and production ideas with a creative sketch"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Analysis: a Baroque piece",
+"f": "Exploring harmony and counterpoint in Bach"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Analysis: a Classical piece",
+"f": "Phrases and form in Mozart or Haydn"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Analysis: a Romantic piece",
+"f": "Expressive harmony in Chopin or Schumann"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Analysis: a jazz classic",
+"f": "Chords, form and melody in a well-loved tune"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Analysis: a Beatles song",
+"f": "Surprising chords and forms in the Beatles' songwriting"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Analysis: a modern pop hit",
+"f": "Hooks, production and simple but effective harmony"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Analysis: a film theme",
+"f": "Leitmotifs and orchestration in a famous score"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Analysis: a song from afar",
+"f": "Applying theory to music from another tradition"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Comparing two versions",
+"f": "How covers change harmony, rhythm and feel"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Review: analysis skills",
+"f": "Recap of analysis methods with a song of your choice"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Composing: getting started",
+"f": "Beating the blank page with small ideas"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Composing from a motif",
+"f": "Developing a short idea into a full section"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Composing from chords",
+"f": "Building melody and form on a chord progression"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Composing from a rhythm",
+"f": "Starting with a groove and adding pitches"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Writing for voices",
+"f": "Range, text setting and harmony for singers"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Writing for strings",
+"f": "Basic writing for violin, viola, cello and double bass"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Writing for a band",
+"f": "Parts for drums, bass, guitar and keys"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Arranging a cover",
+"f": "Reimagining a song in a new style"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Notation software and DAWs",
+"f": "Tools for writing, recording and sharing your music"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Review: composition toolkit",
+"f": "Recap of composition approaches with a 16-bar sketch"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Final project planning",
+"f": "Choosing the style and form of your final piece"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Final project: motif and key",
+"f": "Writing your main idea and choosing a key"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Final project: harmony",
+"f": "Creating the chord progression"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Final project: melody",
+"f": "Writing the full melody"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Final project: groove",
+"f": "Shaping the rhythmic feel"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Final project: form",
+"f": "Organising the sections into a complete structure"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Final project: colour chords",
+"f": "Adding borrowed or extended chords"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Final project: arrangement",
+"f": "Assigning parts and textures"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Final project: expression",
+"f": "Adding dynamics and markings that bring it to life"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Final project: write or record",
+"f": "Notating your piece or recording a demo"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Final project: self-analysis",
+"f": "Analysing your own piece with Roman numerals"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Final project: sharing",
+"f": "Presenting your piece and explaining your choices"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Looking back at your year",
+"f": "Revisiting early lessons and seeing how far you have come"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your music roadmap",
+"f": "Planning the next steps in theory, playing and composing"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating 365 days",
+"f": "Reflecting on the journey and your favourite discovery of the year"
+}
+]
+}

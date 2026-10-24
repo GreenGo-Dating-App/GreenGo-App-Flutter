@@ -1,0 +1,1305 @@
+{
+"topic": "travel_stories",
+"questions": [
+{
+"id": "travel_stories-001",
+"lv": "any",
+"i18n": {
+"en": "What is the trip you still talk about the most, and why?",
+"de": "Von welcher Reise erzählst du bis heute am meisten, und warum?",
+"es": "¿De qué viaje sigues hablando más que de ningún otro, y por qué?",
+"fr": "De quel voyage parles-tu encore le plus, et pourquoi ?",
+"it": "Di quale viaggio parli ancora più spesso, e perché?",
+"pt": "De que viagem ainda falas mais, e porquê?",
+"pt_BR": "De qual viagem você ainda fala mais, e por quê?"
+}
+},
+{
+"id": "travel_stories-002",
+"lv": "any",
+"i18n": {
+"en": "What is your earliest memory of travelling somewhere?",
+"de": "Was ist deine früheste Erinnerung an eine Reise?",
+"es": "¿Cuál es tu primer recuerdo de un viaje?",
+"fr": "Quel est ton tout premier souvenir de voyage ?",
+"it": "Qual è il tuo primo ricordo di un viaggio?",
+"pt": "Qual é a tua memória mais antiga de uma viagem?",
+"pt_BR": "Qual é a sua lembrança mais antiga de uma viagem?"
+}
+},
+{
+"id": "travel_stories-003",
+"lv": "any",
+"i18n": {
+"en": "Which place surprised you the most when you got there?",
+"de": "Welcher Ort hat dich bei deiner Ankunft am meisten überrascht?",
+"es": "¿Qué lugar te sorprendió más al llegar?",
+"fr": "Quel endroit t'a le plus surpris à ton arrivée ?",
+"it": "Quale posto ti ha sorpreso di più appena arrivato?",
+"pt": "Que sítio te surpreendeu mais quando lá chegaste?",
+"pt_BR": "Qual lugar mais te surpreendeu quando você chegou?"
+}
+},
+{
+"id": "travel_stories-004",
+"lv": "any",
+"i18n": {
+"en": "Have you ever met someone on a trip who you still remember today?",
+"de": "Hast du auf einer Reise mal jemanden getroffen, an den du dich heute noch erinnerst?",
+"es": "¿Has conocido en un viaje a alguien a quien todavía recuerdas?",
+"fr": "As-tu déjà rencontré en voyage quelqu'un dont tu te souviens encore ?",
+"it": "Hai mai conosciuto in viaggio qualcuno che ricordi ancora oggi?",
+"pt": "Já conheceste numa viagem alguém de quem ainda te lembras?",
+"pt_BR": "Você já conheceu alguém numa viagem de quem ainda se lembra hoje?"
+}
+},
+{
+"id": "travel_stories-005",
+"lv": "any",
+"i18n": {
+"en": "What is the most delicious thing you have eaten while travelling?",
+"de": "Was ist das Leckerste, das du je auf Reisen gegessen hast?",
+"es": "¿Qué es lo más rico que has comido viajando?",
+"fr": "Quelle est la chose la plus délicieuse que tu aies mangée en voyage ?",
+"it": "Qual è la cosa più buona che hai mangiato in viaggio?",
+"pt": "Qual foi a coisa mais deliciosa que comeste em viagem?",
+"pt_BR": "Qual foi a coisa mais gostosa que você já comeu viajando?"
+}
+},
+{
+"id": "travel_stories-006",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer trips to cities, to nature or a mix of both?",
+"de": "Reist du lieber in Städte, in die Natur oder magst du beides gemischt?",
+"es": "¿Prefieres viajar a ciudades, a la naturaleza o una mezcla de ambas?",
+"fr": "Tu préfères les voyages en ville, dans la nature ou un mélange des deux ?",
+"it": "Preferisci viaggi in città, nella natura o un mix di entrambi?",
+"pt": "Preferes viagens a cidades, à natureza ou uma mistura das duas?",
+"pt_BR": "Você prefere viajar para cidades, para a natureza ou um pouco de cada?"
+}
+},
+{
+"id": "travel_stories-007",
+"lv": "any",
+"i18n": {
+"en": "Which souvenir at home has the best story behind it?",
+"de": "Welches Souvenir bei dir zu Hause hat die beste Geschichte?",
+"es": "¿Qué recuerdo que tienes en casa esconde la mejor historia?",
+"fr": "Quel souvenir chez toi cache la meilleure histoire ?",
+"it": "Quale souvenir a casa tua ha la storia più bella?",
+"pt": "Que recordação tens em casa com a melhor história por trás?",
+"pt_BR": "Qual lembrancinha na sua casa tem a melhor história por trás?"
+}
+},
+{
+"id": "travel_stories-008",
+"lv": "any",
+"i18n": {
+"en": "What was the funniest thing that ever happened to you on a trip?",
+"de": "Was war das Lustigste, das dir je auf einer Reise passiert ist?",
+"es": "¿Qué es lo más gracioso que te ha pasado en un viaje?",
+"fr": "Quelle est la chose la plus drôle qui te soit arrivée en voyage ?",
+"it": "Qual è la cosa più divertente che ti sia capitata in viaggio?",
+"pt": "Qual foi a coisa mais engraçada que te aconteceu numa viagem?",
+"pt_BR": "Qual foi a coisa mais engraçada que já aconteceu com você numa viagem?"
+}
+},
+{
+"id": "travel_stories-009",
+"lv": "any",
+"i18n": {
+"en": "Where would you go tomorrow if you could travel anywhere?",
+"de": "Wohin würdest du morgen reisen, wenn du überallhin könntest?",
+"es": "Si pudieras viajar a cualquier sitio mañana, ¿adónde irías?",
+"fr": "Si tu pouvais partir n'importe où demain, où irais-tu ?",
+"it": "Se domani potessi andare ovunque, dove andresti?",
+"pt": "Se pudesses viajar amanhã para qualquer lado, para onde irias?",
+"pt_BR": "Se você pudesse viajar amanhã para qualquer lugar, para onde iria?"
+}
+},
+{
+"id": "travel_stories-010",
+"lv": "any",
+"i18n": {
+"en": "Who is your favourite travel companion, and what makes them great?",
+"de": "Wer ist deine liebste Reisebegleitung, und was macht sie so toll?",
+"es": "¿Quién es tu compañero de viaje favorito y qué lo hace tan especial?",
+"fr": "Qui est ton compagnon de voyage préféré, et qu'est-ce qui le rend génial ?",
+"it": "Chi è il tuo compagno di viaggio preferito, e cosa lo rende speciale?",
+"pt": "Quem é o teu companheiro de viagem preferido, e o que o torna especial?",
+"pt_BR": "Quem é seu companheiro de viagem favorito, e o que faz dele alguém tão bom?"
+}
+},
+{
+"id": "travel_stories-011",
+"lv": "any",
+"i18n": {
+"en": "What is the most beautiful view you have ever seen on a trip?",
+"de": "Was ist die schönste Aussicht, die du je auf einer Reise gesehen hast?",
+"es": "¿Cuál es la vista más bonita que has visto en un viaje?",
+"fr": "Quelle est la plus belle vue que tu aies vue en voyage ?",
+"it": "Qual è il panorama più bello che hai visto in viaggio?",
+"pt": "Qual foi a vista mais bonita que já viste numa viagem?",
+"pt_BR": "Qual foi a vista mais bonita que você já viu numa viagem?"
+}
+},
+{
+"id": "travel_stories-012",
+"lv": "any",
+"i18n": {
+"en": "Do you like planning every detail or deciding as you go?",
+"de": "Planst du gern jedes Detail, oder entscheidest du lieber spontan?",
+"es": "¿Te gusta planearlo todo al detalle o decidir sobre la marcha?",
+"fr": "Tu aimes tout planifier ou plutôt décider au fil du voyage ?",
+"it": "Ti piace pianificare ogni dettaglio o decidere strada facendo?",
+"pt": "Gostas de planear cada pormenor ou de decidir pelo caminho?",
+"pt_BR": "Você gosta de planejar cada detalhe ou de decidir no caminho?"
+}
+},
+{
+"id": "travel_stories-013",
+"lv": "any",
+"i18n": {
+"en": "What is a small moment from a trip that made you really happy?",
+"de": "Welcher kleine Moment auf einer Reise hat dich richtig glücklich gemacht?",
+"es": "¿Qué pequeño momento de un viaje te hizo realmente feliz?",
+"fr": "Quel petit moment de voyage t'a rendu vraiment heureux ?",
+"it": "Quale piccolo momento di un viaggio ti ha reso davvero felice?",
+"pt": "Que pequeno momento de uma viagem te deixou mesmo feliz?",
+"pt_BR": "Que pequeno momento de uma viagem te deixou muito feliz?"
+}
+},
+{
+"id": "travel_stories-014",
+"lv": "any",
+"i18n": {
+"en": "Which trip from your childhood do you remember best?",
+"de": "An welche Reise aus deiner Kindheit erinnerst du dich am besten?",
+"es": "¿Qué viaje de tu infancia recuerdas mejor?",
+"fr": "De quel voyage de ton enfance te souviens-tu le mieux ?",
+"it": "Quale viaggio della tua infanzia ricordi meglio?",
+"pt": "De que viagem da tua infância te lembras melhor?",
+"pt_BR": "De qual viagem da sua infância você se lembra melhor?"
+}
+},
+{
+"id": "travel_stories-015",
+"lv": "any",
+"i18n": {
+"en": "What do you usually tell people first when they ask about your last trip?",
+"de": "Was erzählst du meist zuerst, wenn dich jemand nach deiner letzten Reise fragt?",
+"es": "¿Qué sueles contar primero cuando te preguntan por tu último viaje?",
+"fr": "Que racontes-tu d'abord quand on te demande comment était ton dernier voyage ?",
+"it": "Cosa racconti per prima cosa quando ti chiedono del tuo ultimo viaggio?",
+"pt": "O que costumas contar primeiro quando te perguntam pela tua última viagem?",
+"pt_BR": "O que você costuma contar primeiro quando perguntam da sua última viagem?"
+}
+},
+{
+"id": "travel_stories-016",
+"lv": "any",
+"i18n": {
+"en": "Is there a place you visited that felt like home right away?",
+"de": "Gibt es einen Ort, an dem du dich sofort wie zu Hause gefühlt hast?",
+"es": "¿Hay algún lugar que visitaste donde te sentiste en casa enseguida?",
+"fr": "Y a-t-il un endroit où tu t'es tout de suite senti chez toi ?",
+"it": "C'è un posto che hai visitato dove ti sei sentito subito a casa?",
+"pt": "Há algum sítio que visitaste onde te sentiste logo em casa?",
+"pt_BR": "Tem algum lugar que você visitou onde se sentiu em casa logo de cara?"
+}
+},
+{
+"id": "travel_stories-017",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite way to get around: train, car, plane, bike or on foot?",
+"de": "Wie reist du am liebsten: mit Zug, Auto, Flugzeug, Fahrrad oder zu Fuß?",
+"es": "¿Cómo prefieres moverte: en tren, coche, avión, bici o a pie?",
+"fr": "Ton moyen préféré pour te déplacer : train, voiture, avion, vélo ou à pied ?",
+"it": "Come preferisci spostarti: treno, auto, aereo, bici o a piedi?",
+"pt": "Qual é a tua forma preferida de viajar: comboio, carro, avião, bicicleta ou a pé?",
+"pt_BR": "Qual seu jeito favorito de se deslocar: trem, carro, avião, bicicleta ou a pé?"
+}
+},
+{
+"id": "travel_stories-018",
+"lv": "any",
+"i18n": {
+"en": "Which local custom from a trip did you find the most interesting?",
+"de": "Welcher Brauch, den du auf Reisen kennengelernt hast, fandest du am spannendsten?",
+"es": "¿Qué costumbre local de un viaje te pareció más interesante?",
+"fr": "Quelle coutume locale découverte en voyage t'a le plus intéressé ?",
+"it": "Quale usanza locale scoperta in viaggio ti è sembrata più interessante?",
+"pt": "Que costume local descoberto numa viagem achaste mais interessante?",
+"pt_BR": "Qual costume local que você conheceu numa viagem achou mais interessante?"
+}
+},
+{
+"id": "travel_stories-019",
+"lv": "any",
+"i18n": {
+"en": "Have you ever got a little lost on a trip? What did you find?",
+"de": "Hast du dich auf einer Reise schon mal ein bisschen verlaufen? Was hast du entdeckt?",
+"es": "¿Te has perdido alguna vez un poco en un viaje? ¿Qué descubriste?",
+"fr": "T'es-tu déjà un peu perdu en voyage ? Qu'as-tu découvert ?",
+"it": "Ti sei mai perso un po' durante un viaggio? Cosa hai scoperto?",
+"pt": "Já te perdeste um bocadinho numa viagem? O que descobriste?",
+"pt_BR": "Você já se perdeu um pouco numa viagem? O que acabou descobrindo?"
+}
+},
+{
+"id": "travel_stories-020",
+"lv": "any",
+"i18n": {
+"en": "What is the best trip you have taken close to home?",
+"de": "Was war die schönste Reise, die du ganz in der Nähe gemacht hast?",
+"es": "¿Cuál es la mejor escapada que has hecho cerca de casa?",
+"fr": "Quel est le meilleur voyage que tu aies fait près de chez toi ?",
+"it": "Qual è il viaggio più bello che hai fatto vicino a casa?",
+"pt": "Qual foi a melhor viagem que fizeste perto de casa?",
+"pt_BR": "Qual foi a melhor viagem que você fez perto de casa?"
+}
+},
+{
+"id": "travel_stories-021",
+"lv": "any",
+"i18n": {
+"en": "Which song or smell instantly takes you back to a trip?",
+"de": "Welches Lied oder welcher Duft bringt dich sofort zurück auf eine Reise?",
+"es": "¿Qué canción u olor te transporta al instante a un viaje?",
+"fr": "Quelle chanson ou quelle odeur te ramène tout de suite à un voyage ?",
+"it": "Quale canzone o profumo ti riporta subito a un viaggio?",
+"pt": "Que música ou cheiro te leva logo de volta a uma viagem?",
+"pt_BR": "Qual música ou cheiro te leva na hora de volta para uma viagem?"
+}
+},
+{
+"id": "travel_stories-022",
+"lv": "any",
+"i18n": {
+"en": "What did a trip teach you about yourself?",
+"de": "Was hat dir eine Reise über dich selbst beigebracht?",
+"es": "¿Qué te enseñó un viaje sobre ti mismo?",
+"fr": "Qu'est-ce qu'un voyage t'a appris sur toi-même ?",
+"it": "Cosa ti ha insegnato un viaggio su te stesso?",
+"pt": "O que é que uma viagem te ensinou sobre ti próprio?",
+"pt_BR": "O que uma viagem te ensinou sobre você mesmo?"
+}
+},
+{
+"id": "travel_stories-023",
+"lv": "any",
+"i18n": {
+"en": "Which place would you love to show a friend one day?",
+"de": "Welchen Ort würdest du gern eines Tages einem Freund zeigen?",
+"es": "¿Qué lugar te encantaría enseñarle algún día a un amigo?",
+"fr": "Quel endroit aimerais-tu faire découvrir à un ami un jour ?",
+"it": "Quale posto ti piacerebbe mostrare un giorno a un amico?",
+"pt": "Que sítio adorarias mostrar um dia a um amigo?",
+"pt_BR": "Qual lugar você adoraria mostrar um dia para um amigo?"
+}
+},
+{
+"id": "travel_stories-024",
+"lv": "any",
+"i18n": {
+"en": "What do visitors usually find surprising about where you live?",
+"de": "Was finden Besucher an deinem Wohnort meistens überraschend?",
+"es": "¿Qué suele sorprender a los visitantes del lugar donde vives?",
+"fr": "Qu'est-ce qui surprend souvent les visiteurs là où tu habites ?",
+"it": "Cosa sorprende di solito chi visita il posto dove vivi?",
+"pt": "O que costuma surpreender quem visita o sítio onde vives?",
+"pt_BR": "O que costuma surpreender quem visita o lugar onde você mora?"
+}
+},
+{
+"id": "travel_stories-025",
+"lv": "any",
+"i18n": {
+"en": "Do you take lots of photos on trips, or just a few special ones?",
+"de": "Machst du auf Reisen viele Fotos oder nur ein paar besondere?",
+"es": "¿Haces muchas fotos en los viajes o solo unas pocas especiales?",
+"fr": "Tu prends beaucoup de photos en voyage ou seulement quelques-unes bien choisies ?",
+"it": "In viaggio fai tantissime foto o solo poche e speciali?",
+"pt": "Tiras muitas fotografias em viagem ou só algumas especiais?",
+"pt_BR": "Você tira muitas fotos nas viagens ou só algumas especiais?"
+}
+},
+{
+"id": "travel_stories-026",
+"lv": "any",
+"i18n": {
+"en": "What is a trip that did not go to plan but turned out great?",
+"de": "Welche Reise lief ganz anders als geplant und wurde trotzdem großartig?",
+"es": "¿Qué viaje no salió como lo planeaste pero terminó siendo genial?",
+"fr": "Quel voyage ne s'est pas passé comme prévu mais s'est révélé génial ?",
+"it": "Quale viaggio non è andato come previsto ma si è rivelato fantastico?",
+"pt": "Que viagem não correu como planeado mas acabou por ser ótima?",
+"pt_BR": "Qual viagem não saiu como o planejado, mas acabou sendo ótima?"
+}
+},
+{
+"id": "travel_stories-027",
+"lv": "any",
+"i18n": {
+"en": "Which country or city is at the top of your dream list?",
+"de": "Welches Land oder welche Stadt steht ganz oben auf deiner Wunschliste?",
+"es": "¿Qué país o ciudad está en lo más alto de tu lista de sueños?",
+"fr": "Quel pays ou quelle ville est tout en haut de ta liste de rêves ?",
+"it": "Quale paese o città è in cima alla tua lista dei sogni?",
+"pt": "Que país ou cidade está no topo da tua lista de sonho?",
+"pt_BR": "Qual país ou cidade está no topo da sua lista de sonhos?"
+}
+},
+{
+"id": "travel_stories-028",
+"lv": "any",
+"i18n": {
+"en": "What is the kindest thing a stranger has done for you while travelling?",
+"de": "Was ist das Netteste, das ein Fremder auf Reisen für dich getan hat?",
+"es": "¿Qué es lo más amable que ha hecho por ti un desconocido en un viaje?",
+"fr": "Quelle est la chose la plus gentille qu'un inconnu ait faite pour toi en voyage ?",
+"it": "Qual è il gesto più gentile che uno sconosciuto ha fatto per te in viaggio?",
+"pt": "Qual foi a coisa mais simpática que um desconhecido fez por ti numa viagem?",
+"pt_BR": "Qual foi a coisa mais gentil que um desconhecido já fez por você numa viagem?"
+}
+},
+{
+"id": "travel_stories-029",
+"lv": "any",
+"i18n": {
+"en": "Have you ever had a funny language mix-up abroad?",
+"de": "Hattest du im Ausland schon mal ein lustiges sprachliches Missverständnis?",
+"es": "¿Has tenido alguna confusión divertida con el idioma en el extranjero?",
+"fr": "As-tu déjà vécu un quiproquo de langue amusant à l'étranger ?",
+"it": "Ti è mai capitato un buffo equivoco linguistico all'estero?",
+"pt": "Já tiveste alguma confusão engraçada com a língua no estrangeiro?",
+"pt_BR": "Você já teve alguma confusão engraçada com o idioma no exterior?"
+}
+},
+{
+"id": "travel_stories-030",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect travel day look like for you?",
+"de": "Wie sieht für dich ein perfekter Reisetag aus?",
+"es": "¿Cómo sería para ti un día de viaje perfecto?",
+"fr": "À quoi ressemble pour toi une journée de voyage parfaite ?",
+"it": "Com'è per te una giornata di viaggio perfetta?",
+"pt": "Como é para ti um dia de viagem perfeito?",
+"pt_BR": "Como é um dia de viagem perfeito para você?"
+}
+},
+{
+"id": "travel_stories-031",
+"lv": "any",
+"i18n": {
+"en": "Which market, café or street from a trip would you love to revisit?",
+"de": "Welchen Markt, welches Café oder welche Straße von einer Reise würdest du gern wiedersehen?",
+"es": "¿Qué mercado, café o calle de un viaje te encantaría volver a visitar?",
+"fr": "Quel marché, café ou rue d'un voyage aimerais-tu revoir ?",
+"it": "Quale mercato, caffè o strada di un viaggio ti piacerebbe rivedere?",
+"pt": "Que mercado, café ou rua de uma viagem adorarias voltar a visitar?",
+"pt_BR": "Qual mercado, café ou rua de uma viagem você adoraria visitar de novo?"
+}
+},
+{
+"id": "travel_stories-032",
+"lv": "any",
+"i18n": {
+"en": "Do you have a travel ritual, like a first coffee or a first walk?",
+"de": "Hast du ein Reiseritual, zum Beispiel einen ersten Kaffee oder einen ersten Spaziergang?",
+"es": "¿Tienes algún ritual de viaje, como un primer café o un primer paseo?",
+"fr": "As-tu un rituel de voyage, comme un premier café ou une première balade ?",
+"it": "Hai un rituale di viaggio, come il primo caffè o la prima passeggiata?",
+"pt": "Tens algum ritual de viagem, como um primeiro café ou um primeiro passeio?",
+"pt_BR": "Você tem algum ritual de viagem, como um primeiro café ou uma primeira caminhada?"
+}
+},
+{
+"id": "travel_stories-033",
+"lv": "any",
+"i18n": {
+"en": "Which local word or phrase from a trip do you still use?",
+"de": "Welches Wort oder welchen Ausdruck von einer Reise benutzt du heute noch?",
+"es": "¿Qué palabra o expresión de un viaje sigues usando?",
+"fr": "Quel mot ou quelle expression rapportés d'un voyage utilises-tu encore ?",
+"it": "Quale parola o espressione imparata in viaggio usi ancora?",
+"pt": "Que palavra ou expressão de uma viagem ainda usas?",
+"pt_BR": "Qual palavra ou expressão de uma viagem você ainda usa?"
+}
+},
+{
+"id": "travel_stories-034",
+"lv": "any",
+"i18n": {
+"en": "What is the best travel story a friend or relative ever told you?",
+"de": "Was ist die beste Reisegeschichte, die dir ein Freund oder Verwandter je erzählt hat?",
+"es": "¿Cuál es la mejor historia de viaje que te ha contado un amigo o familiar?",
+"fr": "Quelle est la meilleure histoire de voyage qu'un ami ou un proche t'ait racontée ?",
+"it": "Qual è la storia di viaggio più bella che ti ha raccontato un amico o un parente?",
+"pt": "Qual é a melhor história de viagem que um amigo ou familiar te contou?",
+"pt_BR": "Qual é a melhor história de viagem que um amigo ou parente já te contou?"
+}
+},
+{
+"id": "travel_stories-035",
+"lv": "any",
+"i18n": {
+"en": "Have you ever stumbled into a festival or celebration by chance?",
+"de": "Bist du schon mal zufällig in ein Fest oder eine Feier geraten?",
+"es": "¿Te has topado alguna vez por casualidad con una fiesta o celebración?",
+"fr": "Es-tu déjà tombé par hasard sur une fête ou une célébration ?",
+"it": "Ti è mai capitato di trovarti per caso in mezzo a una festa locale?",
+"pt": "Já foste parar por acaso a uma festa ou celebração?",
+"pt_BR": "Você já caiu por acaso no meio de uma festa ou celebração?"
+}
+},
+{
+"id": "travel_stories-036",
+"lv": "any",
+"i18n": {
+"en": "What is the most unusual place you have ever slept on a trip?",
+"de": "Was ist der ungewöhnlichste Ort, an dem du auf einer Reise geschlafen hast?",
+"es": "¿Cuál es el sitio más curioso donde has dormido en un viaje?",
+"fr": "Quel est l'endroit le plus insolite où tu aies dormi en voyage ?",
+"it": "Qual è il posto più insolito in cui hai dormito durante un viaggio?",
+"pt": "Qual foi o sítio mais invulgar onde já dormiste numa viagem?",
+"pt_BR": "Qual foi o lugar mais inusitado onde você já dormiu numa viagem?"
+}
+},
+{
+"id": "travel_stories-037",
+"lv": "any",
+"i18n": {
+"en": "Which trip would you happily repeat exactly the same way?",
+"de": "Welche Reise würdest du genau so noch einmal machen?",
+"es": "¿Qué viaje repetirías exactamente igual con gusto?",
+"fr": "Quel voyage referais-tu volontiers exactement de la même façon ?",
+"it": "Quale viaggio rifaresti volentieri esattamente allo stesso modo?",
+"pt": "Que viagem repetirias exatamente da mesma maneira?",
+"pt_BR": "Qual viagem você repetiria do mesmíssimo jeito?"
+}
+},
+{
+"id": "travel_stories-038",
+"lv": "any",
+"i18n": {
+"en": "What is the longest journey you have ever made, and how did it feel?",
+"de": "Was war die längste Reise deines Lebens, und wie hat sie sich angefühlt?",
+"es": "¿Cuál es el trayecto más largo que has hecho y cómo lo viviste?",
+"fr": "Quel est le plus long trajet que tu aies fait, et comment l'as-tu vécu ?",
+"it": "Qual è il tragitto più lungo che hai mai fatto, e come l'hai vissuto?",
+"pt": "Qual foi a viagem mais longa que já fizeste, e como a viveste?",
+"pt_BR": "Qual foi o trajeto mais longo que você já fez, e como foi?"
+}
+},
+{
+"id": "travel_stories-039",
+"lv": "any",
+"i18n": {
+"en": "How do you like to share your trips: photos, messages, or stories in person?",
+"de": "Wie teilst du deine Reisen am liebsten: mit Fotos, Nachrichten oder persönlich erzählt?",
+"es": "¿Cómo te gusta compartir tus viajes: con fotos, mensajes o contándolos en persona?",
+"fr": "Comment aimes-tu partager tes voyages : photos, messages ou récits de vive voix ?",
+"it": "Come ti piace condividere i tuoi viaggi: foto, messaggi o racconti di persona?",
+"pt": "Como gostas de partilhar as tuas viagens: fotos, mensagens ou ao vivo?",
+"pt_BR": "Como você gosta de compartilhar suas viagens: fotos, mensagens ou contando ao vivo?"
+}
+},
+{
+"id": "travel_stories-040",
+"lv": "any",
+"i18n": {
+"en": "What would your ideal travel story evening with friends look like?",
+"de": "Wie sähe für dich ein idealer Abend mit Freunden und Reisegeschichten aus?",
+"es": "¿Cómo sería tu noche ideal de historias de viaje con amigos?",
+"fr": "À quoi ressemblerait ta soirée idéale de récits de voyage entre amis ?",
+"it": "Come sarebbe la tua serata ideale di racconti di viaggio con gli amici?",
+"pt": "Como seria a tua noite ideal de histórias de viagem com amigos?",
+"pt_BR": "Como seria sua noite ideal de histórias de viagem com os amigos?"
+}
+},
+{
+"id": "travel_stories-041",
+"lv": "beginner",
+"i18n": {
+"en": "What is one trip you could describe in just three words?",
+"de": "Welche Reise könntest du mit nur drei Wörtern beschreiben?",
+"es": "¿Qué viaje podrías describir con solo tres palabras?",
+"fr": "Quel voyage pourrais-tu décrire en trois mots seulement ?",
+"it": "Quale viaggio potresti descrivere con solo tre parole?",
+"pt": "Que viagem conseguirias descrever com apenas três palavras?",
+"pt_BR": "Qual viagem você conseguiria descrever em apenas três palavras?"
+}
+},
+{
+"id": "travel_stories-042",
+"lv": "beginner",
+"i18n": {
+"en": "Where did you go on your most recent trip, even a short one?",
+"de": "Wohin ging deine letzte Reise, auch wenn sie nur kurz war?",
+"es": "¿Adónde fuiste en tu último viaje, aunque fuera corto?",
+"fr": "Où es-tu allé lors de ton dernier voyage, même court ?",
+"it": "Dove sei andato nel tuo ultimo viaggio, anche se breve?",
+"pt": "Para onde foste na tua última viagem, mesmo que curta?",
+"pt_BR": "Para onde você foi na sua última viagem, mesmo que curta?"
+}
+},
+{
+"id": "travel_stories-043",
+"lv": "beginner",
+"i18n": {
+"en": "Who did you travel with on your last trip?",
+"de": "Mit wem warst du auf deiner letzten Reise unterwegs?",
+"es": "¿Con quién viajaste la última vez?",
+"fr": "Avec qui as-tu voyagé la dernière fois ?",
+"it": "Con chi hai viaggiato l'ultima volta?",
+"pt": "Com quem viajaste da última vez?",
+"pt_BR": "Com quem você viajou da última vez?"
+}
+},
+{
+"id": "travel_stories-044",
+"lv": "beginner",
+"i18n": {
+"en": "What was the first thing you noticed when you arrived somewhere new?",
+"de": "Was ist dir als Erstes aufgefallen, als du an einem neuen Ort angekommen bist?",
+"es": "¿Qué fue lo primero que notaste al llegar a un lugar nuevo?",
+"fr": "Quelle est la première chose que tu as remarquée en arrivant dans un nouvel endroit ?",
+"it": "Qual è la prima cosa che hai notato arrivando in un posto nuovo?",
+"pt": "Qual foi a primeira coisa que reparaste ao chegar a um sítio novo?",
+"pt_BR": "Qual foi a primeira coisa que você notou ao chegar num lugar novo?"
+}
+},
+{
+"id": "travel_stories-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which dish did you try for the first time on a trip?",
+"de": "Welches Gericht hast du auf einer Reise zum ersten Mal probiert?",
+"es": "¿Qué plato probaste por primera vez en un viaje?",
+"fr": "Quel plat as-tu goûté pour la première fois en voyage ?",
+"it": "Quale piatto hai assaggiato per la prima volta in viaggio?",
+"pt": "Que prato provaste pela primeira vez numa viagem?",
+"pt_BR": "Qual prato você provou pela primeira vez numa viagem?"
+}
+},
+{
+"id": "travel_stories-046",
+"lv": "beginner",
+"i18n": {
+"en": "Can you describe a place you visited using sounds and smells?",
+"de": "Kannst du einen Ort, den du besucht hast, mit Geräuschen und Gerüchen beschreiben?",
+"es": "¿Puedes describir un lugar que visitaste con sus sonidos y olores?",
+"fr": "Peux-tu décrire un endroit visité à travers ses sons et ses odeurs ?",
+"it": "Sai descrivere un posto che hai visitato attraverso suoni e profumi?",
+"pt": "Consegues descrever um sítio que visitaste através dos sons e cheiros?",
+"pt_BR": "Você consegue descrever um lugar que visitou pelos sons e cheiros?"
+}
+},
+{
+"id": "travel_stories-047",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite photo from a trip, and what was happening?",
+"de": "Was ist dein Lieblingsfoto von einer Reise, und was passierte gerade?",
+"es": "¿Cuál es tu foto favorita de un viaje y qué estaba pasando en ese momento?",
+"fr": "Quelle est ta photo de voyage préférée, et que se passait-il à ce moment-là ?",
+"it": "Qual è la tua foto di viaggio preferita, e cosa stava succedendo?",
+"pt": "Qual é a tua fotografia de viagem preferida, e o que estava a acontecer?",
+"pt_BR": "Qual é sua foto de viagem favorita, e o que estava acontecendo naquele momento?"
+}
+},
+{
+"id": "travel_stories-048",
+"lv": "beginner",
+"i18n": {
+"en": "What did you forget to pack once, and what did you do?",
+"de": "Was hast du mal vergessen einzupacken, und wie hast du dir geholfen?",
+"es": "¿Qué se te olvidó meter en la maleta alguna vez y qué hiciste?",
+"fr": "Qu'as-tu un jour oublié de mettre dans ta valise, et comment as-tu fait ?",
+"it": "Cosa ti sei dimenticato di mettere in valigia una volta, e come hai fatto?",
+"pt": "O que é que já te esqueceste de levar na mala, e o que fizeste?",
+"pt_BR": "O que você já esqueceu de levar na mala, e como se virou?"
+}
+},
+{
+"id": "travel_stories-049",
+"lv": "beginner",
+"i18n": {
+"en": "What was the weather like on your favourite trip?",
+"de": "Wie war das Wetter auf deiner Lieblingsreise?",
+"es": "¿Qué tiempo hizo en tu viaje favorito?",
+"fr": "Quel temps faisait-il pendant ton voyage préféré ?",
+"it": "Che tempo faceva durante il tuo viaggio preferito?",
+"pt": "Como estava o tempo na tua viagem preferida?",
+"pt_BR": "Como estava o tempo na sua viagem favorita?"
+}
+},
+{
+"id": "travel_stories-050",
+"lv": "beginner",
+"i18n": {
+"en": "Where did you stay on a trip you loved: hotel, hostel, friends or camping?",
+"de": "Wo hast du auf einer Lieblingsreise übernachtet: Hotel, Hostel, bei Freunden oder im Zelt?",
+"es": "¿Dónde te alojaste en un viaje que te encantó: hotel, albergue, amigos o camping?",
+"fr": "Où as-tu dormi lors d'un voyage adoré : hôtel, auberge, chez des amis ou en camping ?",
+"it": "Dove hai dormito in un viaggio che hai adorato: hotel, ostello, amici o campeggio?",
+"pt": "Onde ficaste numa viagem de que gostaste muito: hotel, hostel, amigos ou campismo?",
+"pt_BR": "Onde você ficou numa viagem que amou: hotel, hostel, casa de amigos ou camping?"
+}
+},
+{
+"id": "travel_stories-051",
+"lv": "beginner",
+"i18n": {
+"en": "What was your very first trip without your parents?",
+"de": "Wie war deine allererste Reise ohne deine Eltern?",
+"es": "¿Cómo fue tu primer viaje sin tus padres?",
+"fr": "Comment s'est passé ton tout premier voyage sans tes parents ?",
+"it": "Com'è stato il tuo primo viaggio senza i tuoi genitori?",
+"pt": "Como foi a tua primeira viagem sem os teus pais?",
+"pt_BR": "Como foi sua primeira viagem sem os seus pais?"
+}
+},
+{
+"id": "travel_stories-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which train, bus or plane ride do you remember best?",
+"de": "An welche Zug-, Bus- oder Flugreise erinnerst du dich am besten?",
+"es": "¿Qué trayecto en tren, autobús o avión recuerdas mejor?",
+"fr": "De quel trajet en train, en bus ou en avion te souviens-tu le mieux ?",
+"it": "Quale viaggio in treno, autobus o aereo ricordi meglio?",
+"pt": "De que viagem de comboio, autocarro ou avião te lembras melhor?",
+"pt_BR": "De qual viagem de trem, ônibus ou avião você se lembra melhor?"
+}
+},
+{
+"id": "travel_stories-053",
+"lv": "beginner",
+"i18n": {
+"en": "What did you bring home from your last trip?",
+"de": "Was hast du von deiner letzten Reise mit nach Hause gebracht?",
+"es": "¿Qué te trajiste a casa de tu último viaje?",
+"fr": "Qu'as-tu rapporté de ton dernier voyage ?",
+"it": "Cosa hai portato a casa dal tuo ultimo viaggio?",
+"pt": "O que trouxeste para casa da tua última viagem?",
+"pt_BR": "O que você trouxe para casa da sua última viagem?"
+}
+},
+{
+"id": "travel_stories-054",
+"lv": "beginner",
+"i18n": {
+"en": "What is the best day trip you have ever taken?",
+"de": "Was war der schönste Tagesausflug, den du je gemacht hast?",
+"es": "¿Cuál es la mejor excursión de un día que has hecho?",
+"fr": "Quelle est la meilleure excursion d'une journée que tu aies faite ?",
+"it": "Qual è la gita di un giorno più bella che tu abbia mai fatto?",
+"pt": "Qual foi o melhor passeio de um dia que já fizeste?",
+"pt_BR": "Qual foi o melhor bate e volta que você já fez?"
+}
+},
+{
+"id": "travel_stories-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which beach, lake or mountain do you love visiting?",
+"de": "Welchen Strand, See oder Berg besuchst du besonders gern?",
+"es": "¿Qué playa, lago o montaña te encanta visitar?",
+"fr": "Quelle plage, quel lac ou quelle montagne adores-tu visiter ?",
+"it": "Quale spiaggia, lago o montagna ami visitare?",
+"pt": "Que praia, lago ou montanha adoras visitar?",
+"pt_BR": "Qual praia, lago ou montanha você adora visitar?"
+}
+},
+{
+"id": "travel_stories-056",
+"lv": "beginner",
+"i18n": {
+"en": "What local words did you learn on a trip?",
+"de": "Welche Wörter der Landessprache hast du auf einer Reise gelernt?",
+"es": "¿Qué palabras del idioma local aprendiste en un viaje?",
+"fr": "Quels mots de la langue locale as-tu appris en voyage ?",
+"it": "Quali parole della lingua locale hai imparato in viaggio?",
+"pt": "Que palavras da língua local aprendeste numa viagem?",
+"pt_BR": "Quais palavras do idioma local você aprendeu numa viagem?"
+}
+},
+{
+"id": "travel_stories-057",
+"lv": "beginner",
+"i18n": {
+"en": "What did you like most about the last city you visited?",
+"de": "Was hat dir an der letzten Stadt, die du besucht hast, am besten gefallen?",
+"es": "¿Qué es lo que más te gustó de la última ciudad que visitaste?",
+"fr": "Qu'as-tu le plus aimé dans la dernière ville que tu as visitée ?",
+"it": "Cosa ti è piaciuto di più dell'ultima città che hai visitato?",
+"pt": "O que mais gostaste na última cidade que visitaste?",
+"pt_BR": "O que você mais gostou na última cidade que visitou?"
+}
+},
+{
+"id": "travel_stories-058",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever been on a school trip you still remember?",
+"de": "Gab es eine Klassenfahrt, an die du dich noch gut erinnerst?",
+"es": "¿Hiciste alguna excursión escolar que todavía recuerdes?",
+"fr": "As-tu fait un voyage scolaire dont tu te souviens encore ?",
+"it": "C'è una gita scolastica che ricordi ancora?",
+"pt": "Fizeste alguma visita de estudo de que ainda te lembras?",
+"pt_BR": "Você fez alguma excursão da escola de que ainda se lembra?"
+}
+},
+{
+"id": "travel_stories-059",
+"lv": "beginner",
+"i18n": {
+"en": "What do you like to do on the first evening in a new place?",
+"de": "Was machst du gern am ersten Abend an einem neuen Ort?",
+"es": "¿Qué te gusta hacer la primera noche en un lugar nuevo?",
+"fr": "Qu'aimes-tu faire le premier soir dans un nouvel endroit ?",
+"it": "Cosa ti piace fare la prima sera in un posto nuovo?",
+"pt": "O que gostas de fazer na primeira noite num sítio novo?",
+"pt_BR": "O que você gosta de fazer na primeira noite num lugar novo?"
+}
+},
+{
+"id": "travel_stories-060",
+"lv": "beginner",
+"i18n": {
+"en": "Which museum or monument on a trip impressed you?",
+"de": "Welches Museum oder Bauwerk hat dich auf einer Reise beeindruckt?",
+"es": "¿Qué museo o monumento te impresionó en un viaje?",
+"fr": "Quel musée ou monument t'a impressionné en voyage ?",
+"it": "Quale museo o monumento ti ha colpito in viaggio?",
+"pt": "Que museu ou monumento te impressionou numa viagem?",
+"pt_BR": "Qual museu ou monumento te impressionou numa viagem?"
+}
+},
+{
+"id": "travel_stories-061",
+"lv": "beginner",
+"i18n": {
+"en": "What is a friendly animal you met on a trip?",
+"de": "Welchem freundlichen Tier bist du auf einer Reise begegnet?",
+"es": "¿Qué animal simpático te encontraste en un viaje?",
+"fr": "Quel animal sympathique as-tu croisé en voyage ?",
+"it": "Quale animale simpatico hai incontrato in viaggio?",
+"pt": "Que animal simpático encontraste numa viagem?",
+"pt_BR": "Qual bichinho simpático você encontrou numa viagem?"
+}
+},
+{
+"id": "travel_stories-062",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy breakfast in new places? What was the best one?",
+"de": "Frühstückst du gern an neuen Orten? Welches war das beste Frühstück?",
+"es": "¿Disfrutas desayunando en lugares nuevos? ¿Cuál fue el mejor desayuno?",
+"fr": "Tu aimes prendre le petit-déjeuner dans des endroits nouveaux ? Quel était le meilleur ?",
+"it": "Ti piace fare colazione in posti nuovi? Qual è stata la migliore?",
+"pt": "Gostas de tomar o pequeno-almoço em sítios novos? Qual foi o melhor?",
+"pt_BR": "Você curte tomar café da manhã em lugares novos? Qual foi o melhor?"
+}
+},
+{
+"id": "travel_stories-063",
+"lv": "beginner",
+"i18n": {
+"en": "What is one tip you would give a friend visiting your favourite place?",
+"de": "Welchen Tipp würdest du einem Freund für deinen Lieblingsort geben?",
+"es": "¿Qué consejo le darías a un amigo que visita tu lugar favorito?",
+"fr": "Quel conseil donnerais-tu à un ami qui visite ton endroit préféré ?",
+"it": "Che consiglio daresti a un amico che visita il tuo posto preferito?",
+"pt": "Que dica darias a um amigo que fosse visitar o teu sítio preferido?",
+"pt_BR": "Que dica você daria a um amigo que fosse visitar seu lugar favorito?"
+}
+},
+{
+"id": "travel_stories-064",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel on the journey home after a great trip?",
+"de": "Wie fühlst du dich auf der Heimreise nach einer tollen Reise?",
+"es": "¿Cómo te sientes en el viaje de vuelta después de un gran viaje?",
+"fr": "Comment te sens-tu sur le chemin du retour après un super voyage ?",
+"it": "Come ti senti durante il ritorno dopo un bel viaggio?",
+"pt": "Como te sentes na viagem de regresso depois de uma ótima viagem?",
+"pt_BR": "Como você se sente na volta para casa depois de uma viagem incrível?"
+}
+},
+{
+"id": "travel_stories-065",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever explored your own city like a tourist?",
+"de": "Hast du schon mal deine eigene Stadt wie ein Tourist erkundet?",
+"es": "¿Has explorado alguna vez tu propia ciudad como un turista?",
+"fr": "As-tu déjà exploré ta propre ville comme un touriste ?",
+"it": "Hai mai esplorato la tua città come un turista?",
+"pt": "Já exploraste a tua própria cidade como um turista?",
+"pt_BR": "Você já explorou sua própria cidade como turista?"
+}
+},
+{
+"id": "travel_stories-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How would you start the story of your best trip to grab attention?",
+"de": "Wie würdest du die Geschichte deiner besten Reise beginnen, um sofort zu fesseln?",
+"es": "¿Cómo empezarías la historia de tu mejor viaje para captar la atención?",
+"fr": "Comment commencerais-tu le récit de ton plus beau voyage pour captiver tout de suite ?",
+"it": "Come inizieresti il racconto del tuo viaggio migliore per catturare l'attenzione?",
+"pt": "Como começarias a história da tua melhor viagem para prender logo a atenção?",
+"pt_BR": "Como você começaria a história da sua melhor viagem para prender a atenção?"
+}
+},
+{
+"id": "travel_stories-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What was the turning point in your most memorable trip?",
+"de": "Was war der Wendepunkt auf deiner unvergesslichsten Reise?",
+"es": "¿Cuál fue el momento clave de tu viaje más memorable?",
+"fr": "Quel a été le tournant de ton voyage le plus mémorable ?",
+"it": "Qual è stato il momento di svolta del tuo viaggio più memorabile?",
+"pt": "Qual foi o momento decisivo da tua viagem mais memorável?",
+"pt_BR": "Qual foi a grande virada da sua viagem mais marcante?"
+}
+},
+{
+"id": "travel_stories-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Which person from a trip would make a great character in a story?",
+"de": "Welche Person von einer Reise wäre eine tolle Figur in einer Geschichte?",
+"es": "¿Qué persona de un viaje sería un gran personaje para una historia?",
+"fr": "Quelle personne rencontrée en voyage ferait un super personnage de récit ?",
+"it": "Quale persona incontrata in viaggio sarebbe un ottimo personaggio di una storia?",
+"pt": "Que pessoa de uma viagem daria uma ótima personagem numa história?",
+"pt_BR": "Qual pessoa de uma viagem daria um ótimo personagem numa história?"
+}
+},
+{
+"id": "travel_stories-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How has a place changed when you visited it a second time?",
+"de": "Wie hatte sich ein Ort verändert, als du ihn ein zweites Mal besucht hast?",
+"es": "¿Cómo había cambiado un lugar cuando lo visitaste por segunda vez?",
+"fr": "Comment un lieu avait-il changé quand tu y es retourné ?",
+"it": "Com'era cambiato un posto quando l'hai visitato una seconda volta?",
+"pt": "Como tinha mudado um sítio quando o visitaste pela segunda vez?",
+"pt_BR": "Como um lugar tinha mudado quando você o visitou pela segunda vez?"
+}
+},
+{
+"id": "travel_stories-070",
+"lv": "intermediate",
+"i18n": {
+"en": "Which travel book, film or song made you want to pack your bags?",
+"de": "Welches Reisebuch, welcher Film oder welches Lied hat dir Lust aufs Kofferpacken gemacht?",
+"es": "¿Qué libro, película o canción de viajes te dio ganas de hacer la maleta?",
+"fr": "Quel livre, film ou chanson de voyage t'a donné envie de faire tes valises ?",
+"it": "Quale libro, film o canzone di viaggio ti ha fatto venire voglia di partire?",
+"pt": "Que livro, filme ou música de viagem te deu vontade de fazer as malas?",
+"pt_BR": "Qual livro, filme ou música de viagem te deu vontade de arrumar as malas?"
+}
+},
+{
+"id": "travel_stories-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you keep a story short when there is so much to tell?",
+"de": "Wie hältst du eine Geschichte kurz, wenn es so viel zu erzählen gibt?",
+"es": "¿Cómo consigues que una historia sea breve cuando hay tanto que contar?",
+"fr": "Comment gardes-tu une histoire courte quand il y a tant à raconter ?",
+"it": "Come riesci a tenere breve una storia quando c'è tanto da raccontare?",
+"pt": "Como consegues manter uma história curta quando há tanto para contar?",
+"pt_BR": "Como você faz para manter uma história curta quando há tanto para contar?"
+}
+},
+{
+"id": "travel_stories-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What question do you love asking people about their travels?",
+"de": "Welche Frage stellst du anderen besonders gern über ihre Reisen?",
+"es": "¿Qué pregunta te encanta hacer a la gente sobre sus viajes?",
+"fr": "Quelle question adores-tu poser aux gens sur leurs voyages ?",
+"it": "Quale domanda ami fare alle persone sui loro viaggi?",
+"pt": "Que pergunta adoras fazer às pessoas sobre as suas viagens?",
+"pt_BR": "Qual pergunta você adora fazer às pessoas sobre as viagens delas?"
+}
+},
+{
+"id": "travel_stories-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever had a cultural slip-up abroad that you can laugh about now?",
+"de": "Ist dir im Ausland schon mal ein kultureller Fauxpas passiert, über den du heute lachst?",
+"es": "¿Has metido la pata culturalmente en el extranjero y ahora te ríes de ello?",
+"fr": "As-tu déjà commis une gaffe culturelle à l'étranger dont tu ris aujourd'hui ?",
+"it": "Hai mai fatto una gaffe culturale all'estero di cui ora ridi?",
+"pt": "Já cometeste alguma gafe cultural no estrangeiro de que agora te ris?",
+"pt_BR": "Você já cometeu alguma gafe cultural no exterior da qual hoje dá risada?"
+}
+},
+{
+"id": "travel_stories-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you remember the small details of a trip: notes, photos or memory?",
+"de": "Wie merkst du dir die kleinen Details einer Reise: Notizen, Fotos oder Gedächtnis?",
+"es": "¿Cómo recuerdas los pequeños detalles de un viaje: notas, fotos o memoria?",
+"fr": "Comment retiens-tu les petits détails d'un voyage : notes, photos ou mémoire ?",
+"it": "Come ricordi i piccoli dettagli di un viaggio: appunti, foto o memoria?",
+"pt": "Como guardas os pequenos pormenores de uma viagem: notas, fotos ou memória?",
+"pt_BR": "Como você guarda os pequenos detalhes de uma viagem: anotações, fotos ou memória?"
+}
+},
+{
+"id": "travel_stories-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which travel story do you tell differently to friends than to family?",
+"de": "Welche Reisegeschichte erzählst du Freunden anders als deiner Familie?",
+"es": "¿Qué historia de viaje cuentas de forma distinta a tus amigos que a tu familia?",
+"fr": "Quelle histoire de voyage racontes-tu différemment à tes amis et à ta famille ?",
+"it": "Quale storia di viaggio racconti in modo diverso agli amici e alla famiglia?",
+"pt": "Que história de viagem contas de forma diferente aos amigos e à família?",
+"pt_BR": "Qual história de viagem você conta de um jeito para os amigos e de outro para a família?"
+}
+},
+{
+"id": "travel_stories-076",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a travel moment you would tell in slow motion, detail by detail?",
+"de": "Welchen Reisemoment würdest du in Zeitlupe erzählen, Detail für Detail?",
+"es": "¿Qué momento de viaje contarías a cámara lenta, detalle a detalle?",
+"fr": "Quel moment de voyage raconterais-tu au ralenti, détail par détail ?",
+"it": "Quale momento di viaggio racconteresti al rallentatore, dettaglio per dettaglio?",
+"pt": "Que momento de viagem contarias em câmara lenta, pormenor a pormenor?",
+"pt_BR": "Qual momento de viagem você contaria em câmera lenta, detalhe por detalhe?"
+}
+},
+{
+"id": "travel_stories-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which trip changed one of your habits or opinions?",
+"de": "Welche Reise hat eine deiner Gewohnheiten oder Ansichten verändert?",
+"es": "¿Qué viaje cambió alguno de tus hábitos u opiniones?",
+"fr": "Quel voyage a changé une de tes habitudes ou de tes opinions ?",
+"it": "Quale viaggio ha cambiato una tua abitudine o opinione?",
+"pt": "Que viagem mudou algum dos teus hábitos ou opiniões?",
+"pt_BR": "Qual viagem mudou algum hábito ou opinião seu?"
+}
+},
+{
+"id": "travel_stories-078",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you react when someone tells you a travel story you love?",
+"de": "Wie reagierst du, wenn dir jemand eine Reisegeschichte erzählt, die dich begeistert?",
+"es": "¿Cómo reaccionas cuando alguien te cuenta una historia de viaje que te encanta?",
+"fr": "Comment réagis-tu quand quelqu'un te raconte une histoire de voyage qui te plaît ?",
+"it": "Come reagisci quando qualcuno ti racconta una storia di viaggio che ti piace tanto?",
+"pt": "Como reages quando alguém te conta uma história de viagem de que gostas muito?",
+"pt_BR": "Como você reage quando alguém te conta uma história de viagem que você ama?"
+}
+},
+{
+"id": "travel_stories-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which food on a trip came with a story about where it comes from?",
+"de": "Zu welchem Essen auf einer Reise hast du die Geschichte seiner Herkunft gehört?",
+"es": "¿Qué comida de un viaje venía con una historia sobre su origen?",
+"fr": "Quel plat découvert en voyage t'a été présenté avec l'histoire de ses origines ?",
+"it": "Quale cibo assaggiato in viaggio ti è stato raccontato insieme alla sua storia?",
+"pt": "Que comida de uma viagem veio acompanhada da história da sua origem?",
+"pt_BR": "Qual comida de uma viagem veio acompanhada da história de onde ela vem?"
+}
+},
+{
+"id": "travel_stories-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever bumped into someone you know far from home?",
+"de": "Bist du schon mal weit weg von zu Hause zufällig einem Bekannten begegnet?",
+"es": "¿Te has encontrado alguna vez por casualidad con un conocido lejos de casa?",
+"fr": "As-tu déjà croisé par hasard une connaissance loin de chez toi ?",
+"it": "Ti è mai capitato di incontrare per caso un conoscente lontano da casa?",
+"pt": "Já te cruzaste por acaso com um conhecido longe de casa?",
+"pt_BR": "Você já esbarrou por acaso com um conhecido longe de casa?"
+}
+},
+{
+"id": "travel_stories-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think makes a travel story funny rather than just strange?",
+"de": "Was macht deiner Meinung nach eine Reisegeschichte witzig statt nur seltsam?",
+"es": "¿Qué crees que hace que una historia de viaje sea graciosa y no solo rara?",
+"fr": "Selon toi, qu'est-ce qui rend une histoire de voyage drôle plutôt que juste bizarre ?",
+"it": "Secondo te, cosa rende una storia di viaggio divertente e non solo strana?",
+"pt": "Na tua opinião, o que torna uma história de viagem engraçada e não só estranha?",
+"pt_BR": "Na sua opinião, o que faz uma história de viagem ser engraçada e não só estranha?"
+}
+},
+{
+"id": "travel_stories-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which older relative has a travel story you would love to record?",
+"de": "Welcher ältere Verwandte hat eine Reisegeschichte, die du gern festhalten würdest?",
+"es": "¿Qué familiar mayor tiene una historia de viaje que te encantaría grabar?",
+"fr": "Quel proche plus âgé a une histoire de voyage que tu aimerais enregistrer ?",
+"it": "Quale parente più anziano ha una storia di viaggio che ti piacerebbe registrare?",
+"pt": "Que familiar mais velho tem uma história de viagem que adorarias gravar?",
+"pt_BR": "Qual parente mais velho tem uma história de viagem que você adoraria gravar?"
+}
+},
+{
+"id": "travel_stories-083",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you talk about another culture so that it feels respectful and fair?",
+"de": "Wie sprichst du über eine andere Kultur, damit es respektvoll und fair klingt?",
+"es": "¿Cómo hablas de otra cultura para que suene respetuoso y justo?",
+"fr": "Comment parles-tu d'une autre culture pour que ce soit respectueux et juste ?",
+"it": "Come parli di un'altra cultura in modo rispettoso e corretto?",
+"pt": "Como falas de outra cultura para que soe respeitoso e justo?",
+"pt_BR": "Como você fala de outra cultura de um jeito respeitoso e justo?"
+}
+},
+{
+"id": "travel_stories-084",
+"lv": "intermediate",
+"i18n": {
+"en": "If one of your trips were a film, what genre would it be?",
+"de": "Wenn eine deiner Reisen ein Film wäre, welches Genre hätte er?",
+"es": "Si uno de tus viajes fuera una película, ¿de qué género sería?",
+"fr": "Si un de tes voyages était un film, de quel genre serait-il ?",
+"it": "Se uno dei tuoi viaggi fosse un film, di che genere sarebbe?",
+"pt": "Se uma das tuas viagens fosse um filme, de que género seria?",
+"pt_BR": "Se uma das suas viagens fosse um filme, de que gênero seria?"
+}
+},
+{
+"id": "travel_stories-085",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you enjoy more: telling your travel stories or hearing others?",
+"de": "Was magst du lieber: deine Reisegeschichten erzählen oder die von anderen hören?",
+"es": "¿Qué disfrutas más: contar tus historias de viaje o escuchar las de otros?",
+"fr": "Qu'est-ce que tu préfères : raconter tes voyages ou écouter ceux des autres ?",
+"it": "Cosa ti piace di più: raccontare i tuoi viaggi o ascoltare quelli degli altri?",
+"pt": "O que gostas mais: contar as tuas histórias de viagem ou ouvir as dos outros?",
+"pt_BR": "O que você curte mais: contar suas histórias de viagem ou ouvir as dos outros?"
+}
+},
+{
+"id": "travel_stories-086",
+"lv": "advanced",
+"i18n": {
+"en": "What is your signature travel story, and why does it work so well?",
+"de": "Was ist deine Paradegeschichte vom Reisen, und warum kommt sie so gut an?",
+"es": "¿Cuál es tu historia de viaje estrella y por qué funciona tan bien?",
+"fr": "Quelle est ton histoire de voyage fétiche, et pourquoi fonctionne-t-elle si bien ?",
+"it": "Qual è la tua storia di viaggio per eccellenza, e perché funziona così bene?",
+"pt": "Qual é a tua história de viagem de eleição, e porque resulta tão bem?",
+"pt_BR": "Qual é a sua história de viagem campeã, e por que ela funciona tão bem?"
+}
+},
+{
+"id": "travel_stories-087",
+"lv": "advanced",
+"i18n": {
+"en": "What theme connects most of your journeys when you look back?",
+"de": "Welches Thema verbindet die meisten deiner Reisen, wenn du zurückblickst?",
+"es": "Mirando atrás, ¿qué tema une la mayoría de tus viajes?",
+"fr": "Avec le recul, quel thème relie la plupart de tes voyages ?",
+"it": "Guardando indietro, quale tema unisce la maggior parte dei tuoi viaggi?",
+"pt": "Olhando para trás, que tema liga a maioria das tuas viagens?",
+"pt_BR": "Olhando para trás, que tema conecta a maioria das suas viagens?"
+}
+},
+{
+"id": "travel_stories-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep a travel story honest while still making it entertaining?",
+"de": "Wie bleibst du beim Erzählen ehrlich und machst die Geschichte trotzdem unterhaltsam?",
+"es": "¿Cómo mantienes una historia de viaje honesta sin que deje de ser entretenida?",
+"fr": "Comment restes-tu honnête dans un récit de voyage tout en le rendant divertissant ?",
+"it": "Come mantieni onesta una storia di viaggio rendendola comunque divertente?",
+"pt": "Como manténs uma história de viagem honesta sem deixar de ser divertida?",
+"pt_BR": "Como você mantém uma história de viagem honesta sem perder a graça?"
+}
+},
+{
+"id": "travel_stories-089",
+"lv": "advanced",
+"i18n": {
+"en": "How does a trip look different when you remember it years later?",
+"de": "Wie wirkt eine Reise anders, wenn du dich Jahre später an sie erinnerst?",
+"es": "¿Cómo cambia un viaje cuando lo recuerdas años después?",
+"fr": "En quoi un voyage paraît-il différent quand tu t'en souviens des années plus tard ?",
+"it": "Come cambia un viaggio quando lo ricordi anni dopo?",
+"pt": "Como é que uma viagem parece diferente quando a recordas anos depois?",
+"pt_BR": "Como uma viagem parece diferente quando você se lembra dela anos depois?"
+}
+},
+{
+"id": "travel_stories-090",
+"lv": "advanced",
+"i18n": {
+"en": "If you wrote a travel essay, which place and which question would it explore?",
+"de": "Wenn du einen Reiseessay schreiben würdest, über welchen Ort und welche Frage?",
+"es": "Si escribieras un ensayo de viaje, ¿sobre qué lugar y qué pregunta tratarías?",
+"fr": "Si tu écrivais un essai de voyage, quel lieu et quelle question explorerait-il ?",
+"it": "Se scrivessi un saggio di viaggio, quale luogo e quale domanda esploreresti?",
+"pt": "Se escrevesses um ensaio de viagem, que lugar e que pergunta explorarias?",
+"pt_BR": "Se você escrevesse um ensaio de viagem, que lugar e que pergunta exploraria?"
+}
+},
+{
+"id": "travel_stories-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which famous traveller or travel writer would you love to swap stories with?",
+"de": "Mit welchem berühmten Reisenden oder Reiseschriftsteller würdest du gern Geschichten tauschen?",
+"es": "¿Con qué viajero o escritor de viajes famoso te encantaría intercambiar historias?",
+"fr": "Avec quel voyageur ou écrivain-voyageur célèbre aimerais-tu échanger des histoires ?",
+"it": "Con quale viaggiatore o scrittore di viaggi famoso ti piacerebbe scambiare storie?",
+"pt": "Com que viajante ou escritor de viagens famoso adorarias trocar histórias?",
+"pt_BR": "Com qual viajante ou escritor de viagens famoso você adoraria trocar histórias?"
+}
+},
+{
+"id": "travel_stories-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you tell your best trip as a five-minute story on stage?",
+"de": "Wie würdest du deine beste Reise als Fünf-Minuten-Geschichte auf einer Bühne erzählen?",
+"es": "¿Cómo contarías tu mejor viaje en un escenario en cinco minutos?",
+"fr": "Comment raconterais-tu ton plus beau voyage sur scène en cinq minutes ?",
+"it": "Come racconteresti il tuo viaggio migliore in cinque minuti su un palco?",
+"pt": "Como contarias a tua melhor viagem num palco em cinco minutos?",
+"pt_BR": "Como você contaria sua melhor viagem num palco em cinco minutos?"
+}
+},
+{
+"id": "travel_stories-093",
+"lv": "advanced",
+"i18n": {
+"en": "What do you leave out of your travel stories, and why?",
+"de": "Was lässt du in deinen Reisegeschichten bewusst weg, und warum?",
+"es": "¿Qué dejas fuera de tus historias de viaje y por qué?",
+"fr": "Qu'est-ce que tu laisses de côté dans tes récits de voyage, et pourquoi ?",
+"it": "Cosa lasci fuori dai tuoi racconti di viaggio, e perché?",
+"pt": "O que deixas de fora das tuas histórias de viagem, e porquê?",
+"pt_BR": "O que você deixa de fora das suas histórias de viagem, e por quê?"
+}
+},
+{
+"id": "travel_stories-094",
+"lv": "advanced",
+"i18n": {
+"en": "How do you share stories about places without encouraging overcrowding?",
+"de": "Wie erzählst du von Orten, ohne zu ihrer Überfüllung beizutragen?",
+"es": "¿Cómo compartes historias de lugares sin fomentar que se masifiquen?",
+"fr": "Comment partages-tu des récits sur des lieux sans encourager leur surfréquentation ?",
+"it": "Come racconti dei luoghi senza contribuire al loro sovraffollamento?",
+"pt": "Como partilhas histórias sobre lugares sem incentivar a sua massificação?",
+"pt_BR": "Como você compartilha histórias de lugares sem incentivar a superlotação deles?"
+}
+},
+{
+"id": "travel_stories-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which story of yours could help someone from another culture understand yours?",
+"de": "Welche deiner Geschichten könnte jemandem aus einer anderen Kultur deine Kultur näherbringen?",
+"es": "¿Qué historia tuya podría ayudar a alguien de otra cultura a entender la tuya?",
+"fr": "Quelle histoire à toi pourrait aider quelqu'un d'une autre culture à comprendre la tienne ?",
+"it": "Quale tua storia potrebbe aiutare qualcuno di un'altra cultura a capire la tua?",
+"pt": "Que história tua poderia ajudar alguém de outra cultura a compreender a tua?",
+"pt_BR": "Qual história sua poderia ajudar alguém de outra cultura a entender a sua?"
+}
+},
+{
+"id": "travel_stories-096",
+"lv": "advanced",
+"i18n": {
+"en": "If your travels were a book, what would the chapter titles be?",
+"de": "Wenn deine Reisen ein Buch wären, wie würden die Kapitel heißen?",
+"es": "Si tus viajes fueran un libro, ¿cuáles serían los títulos de los capítulos?",
+"fr": "Si tes voyages étaient un livre, quels seraient les titres des chapitres ?",
+"it": "Se i tuoi viaggi fossero un libro, quali sarebbero i titoli dei capitoli?",
+"pt": "Se as tuas viagens fossem um livro, quais seriam os títulos dos capítulos?",
+"pt_BR": "Se suas viagens fossem um livro, quais seriam os títulos dos capítulos?"
+}
+},
+{
+"id": "travel_stories-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do you adapt a story when your listener speaks a different language?",
+"de": "Wie passt du eine Geschichte an, wenn dein Zuhörer eine andere Sprache spricht?",
+"es": "¿Cómo adaptas una historia cuando quien escucha habla otro idioma?",
+"fr": "Comment adaptes-tu une histoire quand ton interlocuteur parle une autre langue ?",
+"it": "Come adatti una storia quando chi ascolta parla un'altra lingua?",
+"pt": "Como adaptas uma história quando quem te ouve fala outra língua?",
+"pt_BR": "Como você adapta uma história quando quem ouve fala outro idioma?"
+}
+},
+{
+"id": "travel_stories-098",
+"lv": "advanced",
+"i18n": {
+"en": "Which of your journeys would you want future generations of your family to hear?",
+"de": "Von welcher deiner Reisen sollen künftige Generationen deiner Familie einmal hören?",
+"es": "¿Qué viaje tuyo te gustaría que escucharan las futuras generaciones de tu familia?",
+"fr": "Quel voyage aimerais-tu que les futures générations de ta famille entendent raconter ?",
+"it": "Quale tuo viaggio vorresti che ascoltassero le future generazioni della tua famiglia?",
+"pt": "Que viagem tua gostarias que as futuras gerações da tua família ouvissem?",
+"pt_BR": "Qual viagem sua você gostaria que as futuras gerações da sua família ouvissem?"
+}
+},
+{
+"id": "travel_stories-099",
+"lv": "advanced",
+"i18n": {
+"en": "What is a quiet image from a trip that says more than a long story?",
+"de": "Welches stille Bild von einer Reise sagt mehr als eine lange Geschichte?",
+"es": "¿Qué imagen tranquila de un viaje dice más que una larga historia?",
+"fr": "Quelle image paisible d'un voyage en dit plus qu'un long récit ?",
+"it": "Quale immagine silenziosa di un viaggio dice più di una lunga storia?",
+"pt": "Que imagem tranquila de uma viagem diz mais do que uma longa história?",
+"pt_BR": "Qual imagem tranquila de uma viagem diz mais do que uma longa história?"
+}
+},
+{
+"id": "travel_stories-100",
+"lv": "advanced",
+"i18n": {
+"en": "What trip are you dreaming of next, and what story do you hope it gives you?",
+"de": "Von welcher nächsten Reise träumst du, und welche Geschichte soll sie dir schenken?",
+"es": "¿Con qué próximo viaje sueñas y qué historia esperas que te regale?",
+"fr": "De quel prochain voyage rêves-tu, et quelle histoire espères-tu en rapporter ?",
+"it": "Quale prossimo viaggio sogni, e quale storia speri che ti regali?",
+"pt": "Com que próxima viagem sonhas, e que história esperas que te traga?",
+"pt_BR": "Com qual próxima viagem você sonha, e que história espera que ela te traga?"
+}
+}
+]
+}

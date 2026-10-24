@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Countries and nationalities",
+     "g": "Say your nationality in French and make it agree with men and women.",
+     "p": [
+      "Nationalities change with gender: il est français, elle est française; il est brésilien, elle est brésilienne.",
+      "Most feminine forms add -e, -ienne or -aise; words already ending in -e stay the same: belge, suisse.",
+      "Nationalities take no capital letter (je suis italien), but the people do: les Italiens."
+     ],
+     "q": "Quelle est ta nationalité? Tell me in French, then name a friend's nationality too.",
+     "c": "Write the masculine and feminine form of five nationalities, starting with your own."
+    },
+    "de": {
+     "t": "Länder und Nationalitäten",
+     "g": "Du nennst deine Nationalität auf Französisch und passt sie an Männer und Frauen an.",
+     "p": [
+      "Nationalitäten ändern sich nach Geschlecht: il est français, elle est française; il est allemand, elle est allemande.",
+      "Die weibliche Form endet meist auf -e, -ienne oder -aise; Wörter auf -e bleiben gleich: belge, suisse.",
+      "Als Adjektiv schreibt man sie klein (je suis italien), die Menschen aber groß: les Italiens."
+     ],
+     "q": "Quelle est ta nationalité? Sag es mir auf Französisch und nenn auch die Nationalität eines Freundes.",
+     "c": "Schreib die männliche und weibliche Form von fünf Nationalitäten auf, angefangen mit deiner."
+    },
+    "es": {
+     "t": "Países y nacionalidades",
+     "g": "Di tu nacionalidad en francés y hazla concordar con hombres y mujeres.",
+     "p": [
+      "Las nacionalidades cambian con el género: il est français, elle est française; il est espagnol, elle est espagnole.",
+      "El femenino suele añadir -e, -ienne o -aise; las que ya terminan en -e no cambian: belge, suisse.",
+      "Como adjetivo van en minúscula (je suis italien), pero las personas en mayúscula: les Italiens."
+     ],
+     "q": "Quelle est ta nationalité? Dímela en francés y añade la de un amigo.",
+     "c": "Escribe el masculino y el femenino de cinco nacionalidades, empezando por la tuya."
+    },
+    "fr": {
+     "t": "Pays et nationalités",
+     "g": "Dire sa nationalité et l'accorder au masculin et au féminin.",
+     "p": [
+      "La nationalité s'accorde : il est français, elle est française ; il est brésilien, elle est brésilienne.",
+      "Le féminin ajoute souvent -e, -ienne ou -aise ; les mots en -e ne changent pas : belge, suisse.",
+      "L'adjectif prend une minuscule (je suis italien), le nom de peuple une majuscule : les Italiens."
+     ],
+     "q": "Quelle est ta nationalité ? Dis-le-moi, puis donne celle d'un ami.",
+     "c": "Écris le masculin et le féminin de cinq nationalités, en commençant par la tienne."
+    },
+    "it": {
+     "t": "Paesi e nazionalità",
+     "g": "Di' la tua nazionalità in francese e accordala al maschile e al femminile.",
+     "p": [
+      "Le nazionalità cambiano con il genere: il est français, elle est française; il est italien, elle est italienne.",
+      "Il femminile aggiunge spesso -e, -ienne o -aise; le parole già in -e non cambiano: belge, suisse.",
+      "Come aggettivo si scrivono minuscole (je suis italien), ma i popoli maiuscoli: les Italiens."
+     ],
+     "q": "Quelle est ta nationalité? Dimmelo in francese e aggiungi quella di un amico.",
+     "c": "Scrivi il maschile e il femminile di cinque nazionalità, partendo dalla tua."
+    },
+    "pt": {
+     "t": "Países e nacionalidades",
+     "g": "Dizer a tua nacionalidade em francês e concordá-la no masculino e no feminino.",
+     "p": [
+      "As nacionalidades mudam com o género: il est français, elle est française; il est portugais, elle est portugaise.",
+      "O feminino junta muitas vezes -e, -ienne ou -aise; as que já acabam em -e não mudam: belge, suisse.",
+      "Como adjetivo escrevem-se com minúscula (je suis italien), mas os povos com maiúscula: les Italiens."
+     ],
+     "q": "Quelle est ta nationalité? Diz-ma em francês e acrescenta a de um amigo.",
+     "c": "Escreve o masculino e o feminino de cinco nacionalidades, a começar pela tua."
+    },
+    "pt_BR": {
+     "t": "Países e nacionalidades",
+     "g": "Dizer sua nacionalidade em francês e fazer a concordância no masculino e no feminino.",
+     "p": [
+      "As nacionalidades mudam com o gênero: il est brésilien, elle est brésilienne; il est français, elle est française.",
+      "O feminino costuma ganhar -e, -ienne ou -aise; as que já terminam em -e não mudam: belge, suisse.",
+      "Como adjetivo vão com minúscula (je suis brésilien), mas os povos com maiúscula: les Brésiliens."
+     ],
+     "q": "Quelle est ta nationalité? Me diga em francês e conte também a de um amigo.",
+     "c": "Escreva o masculino e o feminino de cinco nacionalidades, começando pela sua."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la nationalité",
+      "ex": "Quelle est ta nationalité ?"
+     },
+     {
+      "w": "français, française",
+      "ex": "Elle est française, de Lyon."
+     },
+     {
+      "w": "brésilien, brésilienne",
+      "ex": "Mon amie est brésilienne."
+     },
+     {
+      "w": "allemand, allemande",
+      "ex": "Il est allemand."
+     },
+     {
+      "w": "espagnol, espagnole",
+      "ex": "Nous sommes espagnols."
+     },
+     {
+      "w": "un pays",
+      "ex": "La France est un beau pays."
+     }
+    ],
+    "gram": "L'adjectif de nationalité s'accorde : français/française, italien/italienne. Minuscule pour l'adjectif, majuscule pour le peuple."
+   }
+  },
+  {
+   "d": 12,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Where are you from? Je viens de",
+     "g": "Say where you come from and where you live, with the right little word before each place.",
+     "p": [
+      "Je viens de means I come from: je viens de Rome; before a vowel it becomes d': je viens d'Espagne.",
+      "Habiter à goes with cities: j'habite à Lisbonne. For countries use en for feminine ones and au for masculine ones.",
+      "Most countries ending in -e are feminine (en France, en Italie); others are masculine (au Brésil, au Canada); plural takes aux."
+     ],
+     "q": "Tu viens d'où et tu habites où? Answer with two full French sentences.",
+     "c": "Say where five friends or relatives live, using à for cities and en, au or aux for countries."
+    },
+    "de": {
+     "t": "Woher kommst du? Je viens de",
+     "g": "Du sagst, woher du kommst und wo du wohnst, mit dem richtigen kleinen Wort vor jedem Ort.",
+     "p": [
+      "Je viens de heißt ich komme aus: je viens de Berlin; vor Vokal wird es zu d': je viens d'Autriche.",
+      "Habiter à steht bei Städten: j'habite à Munich. Bei Ländern nimmt man en für weibliche und au für männliche.",
+      "Länder auf -e sind meist weiblich (en France, en Allemagne), andere männlich (au Brésil); Plural: aux."
+     ],
+     "q": "Tu viens d'où et tu habites où? Antworte in zwei ganzen französischen Sätzen.",
+     "c": "Sag, wo fünf Freunde oder Verwandte wohnen, mit à für Städte und en, au oder aux für Länder."
+    },
+    "es": {
+     "t": "¿De dónde eres? Je viens de",
+     "g": "Di de dónde vienes y dónde vives, con la palabrita correcta delante de cada lugar.",
+     "p": [
+      "Je viens de significa vengo de: je viens de Madrid; ante vocal se vuelve d': je viens d'Espagne.",
+      "Habiter à va con ciudades: j'habite à Sevilla. Con países se usa en si son femeninos y au si son masculinos.",
+      "Casi todos los países en -e son femeninos (en France, en Espagne); los demás masculinos (au Mexique); plural: aux."
+     ],
+     "q": "Tu viens d'où et tu habites où? Responde con dos frases completas en francés.",
+     "c": "Di dónde viven cinco amigos o familiares, con à para ciudades y en, au o aux para países."
+    },
+    "fr": {
+     "t": "D'où viens-tu ? Je viens de",
+     "g": "Dire d'où l'on vient et où l'on habite, avec la bonne préposition devant chaque lieu.",
+     "p": [
+      "Je viens de indique l'origine : je viens de Rome ; devant une voyelle, d' : je viens d'Espagne.",
+      "On habite à + ville : j'habite à Lille. Pour les pays : en + pays féminin, au + pays masculin.",
+      "Les pays en -e sont souvent féminins (en France), les autres masculins (au Brésil) ; au pluriel : aux États-Unis."
+     ],
+     "q": "Tu viens d'où et tu habites où ? Réponds avec deux phrases complètes.",
+     "c": "Dis où habitent cinq amis ou proches, avec à pour les villes et en, au ou aux pour les pays."
+    },
+    "it": {
+     "t": "Di dove sei? Je viens de",
+     "g": "Di' da dove vieni e dove abiti, con la preposizione giusta davanti a ogni luogo.",
+     "p": [
+      "Je viens de significa vengo da: je viens de Rome; davanti a vocale diventa d': je viens d'Italie.",
+      "Habiter à si usa con le città: j'habite à Milan. Con i paesi si usa en per i femminili e au per i maschili.",
+      "I paesi in -e sono quasi sempre femminili (en France, en Italie), gli altri maschili (au Brésil); plurale: aux."
+     ],
+     "q": "Tu viens d'où et tu habites où? Rispondi con due frasi complete in francese.",
+     "c": "Di' dove abitano cinque amici o parenti, con à per le città e en, au o aux per i paesi."
+    },
+    "pt": {
+     "t": "De onde és? Je viens de",
+     "g": "Dizer de onde vens e onde moras, com a palavrinha certa antes de cada lugar.",
+     "p": [
+      "Je viens de quer dizer venho de: je viens de Porto; antes de vogal passa a d': je viens d'Espagne.",
+      "Habiter à usa-se com cidades: j'habite à Lisbonne. Com países, en para os femininos e au para os masculinos.",
+      "Os países em -e são quase sempre femininos (en France); os outros masculinos (au Portugal, au Brésil); plural: aux."
+     ],
+     "q": "Tu viens d'où et tu habites où? Responde com duas frases completas em francês.",
+     "c": "Diz onde moram cinco amigos ou familiares, com à para cidades e en, au ou aux para países."
+    },
+    "pt_BR": {
+     "t": "De onde você é? Je viens de",
+     "g": "Dizer de onde você vem e onde mora, com a palavrinha certa antes de cada lugar.",
+     "p": [
+      "Je viens de quer dizer venho de: je viens de Recife; antes de vogal vira d': je viens d'Italie.",
+      "Habiter à vai com cidades: j'habite à São Paulo. Com países, en para os femininos e au para os masculinos.",
+      "Países em -e quase sempre são femininos (en France); os outros masculinos (au Brésil, au Canada); plural: aux."
+     ],
+     "q": "Tu viens d'où et tu habites où? Responda com duas frases completas em francês.",
+     "c": "Diga onde moram cinco amigos ou parentes, com à para cidades e en, au ou aux para países."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je viens de",
+      "ex": "Je viens de Montréal."
+     },
+     {
+      "w": "Tu viens d'où ?",
+      "ex": "Tu viens d'où, Sarah ?"
+     },
+     {
+      "w": "habiter à",
+      "ex": "J'habite à Marseille."
+     },
+     {
+      "w": "en France",
+      "ex": "Mes parents habitent en France."
+     },
+     {
+      "w": "au Brésil",
+      "ex": "Mon ami vit au Brésil."
+     },
+     {
+      "w": "aux États-Unis",
+      "ex": "Elle travaille aux États-Unis."
+     }
+    ],
+    "gram": "Venir de + lieu : je viens de Rome, d'Italie. Habiter à + ville ; en + pays féminin ; au + pays masculin ; aux + pluriel."
+   }
+  },
+  {
+   "d": 13,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Gender: le, la, l', les",
+     "g": "Learn that every French noun is masculine or feminine and pick the right word for the.",
+     "p": [
+      "Le goes with masculine nouns (le livre), la with feminine ones (la table), and les with all plurals.",
+      "Le and la become l' before a vowel or silent h: l'ami, l'école, l'hôtel.",
+      "Gender often has to be learned with the word, so always memorise nouns with their article."
+     ],
+     "q": "Pick three things around you right now. Can you name them in French with le, la or l'?",
+     "c": "Label five objects at home today with sticky notes showing the French word and its article."
+    },
+    "de": {
+     "t": "Genus: le, la, l', les",
+     "g": "Du lernst, dass jedes französische Nomen männlich oder weiblich ist, und wählst den richtigen Artikel.",
+     "p": [
+      "Le steht bei männlichen Nomen (le livre), la bei weiblichen (la table), les bei allen Pluralformen.",
+      "Le und la werden vor Vokal oder stummem h zu l': l'ami, l'école, l'hôtel.",
+      "Das Genus stimmt oft nicht mit dem Deutschen überein: das Buch ist le livre. Lerne Nomen immer mit Artikel."
+     ],
+     "q": "Nimm drei Dinge um dich herum. Kannst du sie mit le, la oder l' auf Französisch benennen?",
+     "c": "Beschrifte heute fünf Gegenstände zu Hause mit Zetteln: französisches Wort plus Artikel."
+    },
+    "es": {
+     "t": "Género: le, la, l', les",
+     "g": "Descubre que todo sustantivo francés es masculino o femenino y elige bien el artículo.",
+     "p": [
+      "Le va con los masculinos (le livre), la con los femeninos (la table) y les con todos los plurales.",
+      "Le y la se convierten en l' ante vocal o h muda: l'ami, l'école, l'hôtel.",
+      "El género no siempre coincide con el español: la leche es le lait. Aprende cada sustantivo con su artículo."
+     ],
+     "q": "Elige tres cosas a tu alrededor. ¿Puedes nombrarlas en francés con le, la o l'?",
+     "c": "Pega hoy notas en cinco objetos de tu casa con la palabra francesa y su artículo."
+    },
+    "fr": {
+     "t": "Le genre : le, la, l', les",
+     "g": "Comprendre que chaque nom est masculin ou féminin et choisir le bon article défini.",
+     "p": [
+      "Le va avec un nom masculin (le livre), la avec un nom féminin (la table), les avec tous les pluriels.",
+      "Le et la deviennent l' devant une voyelle ou un h muet : l'ami, l'école, l'hôtel.",
+      "Le genre ne se devine pas toujours : on apprend chaque nom avec son article."
+     ],
+     "q": "Choisis trois objets autour de toi. Peux-tu les nommer avec le, la ou l' ?",
+     "c": "Colle des étiquettes sur cinq objets chez toi aujourd'hui, avec le mot et son article."
+    },
+    "it": {
+     "t": "Il genere: le, la, l', les",
+     "g": "Scopri che ogni nome francese è maschile o femminile e scegli l'articolo giusto.",
+     "p": [
+      "Le va con i nomi maschili (le livre), la con i femminili (la table), les con tutti i plurali.",
+      "Le e la diventano l' davanti a vocale o h muta: l'ami, l'école, l'hôtel.",
+      "Il genere non sempre coincide con l'italiano: il fiore è la fleur. Impara ogni nome con il suo articolo."
+     ],
+     "q": "Scegli tre cose intorno a te. Sai nominarle in francese con le, la o l'?",
+     "c": "Oggi metti dei bigliettini su cinque oggetti di casa con la parola francese e il suo articolo."
+    },
+    "pt": {
+     "t": "Género: le, la, l', les",
+     "g": "Perceber que todo o nome francês é masculino ou feminino e escolher bem o artigo.",
+     "p": [
+      "Le vai com os masculinos (le livre), la com os femininos (la table) e les com todos os plurais.",
+      "Le e la passam a l' antes de vogal ou h mudo: l'ami, l'école, l'hôtel.",
+      "O género nem sempre coincide com o português: o leite é le lait, mas a flor é la fleur. Aprende cada nome com o artigo."
+     ],
+     "q": "Escolhe três coisas à tua volta. Consegues dizê-las em francês com le, la ou l'?",
+     "c": "Cola hoje papelinhos em cinco objetos de casa com a palavra francesa e o seu artigo."
+    },
+    "pt_BR": {
+     "t": "Gênero: le, la, l', les",
+     "g": "Entender que todo substantivo francês é masculino ou feminino e escolher o artigo certo.",
+     "p": [
+      "Le vai com os masculinos (le livre), la com os femininos (la table) e les com todos os plurais.",
+      "Le e la viram l' antes de vogal ou h mudo: l'ami, l'école, l'hôtel.",
+      "O gênero nem sempre bate com o português: o carro é la voiture. Aprenda cada palavra junto com o artigo."
+     ],
+     "q": "Escolha três coisas ao seu redor. Você consegue nomeá-las em francês com le, la ou l'?",
+     "c": "Hoje cole bilhetinhos em cinco objetos da sua casa com a palavra francesa e o artigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le livre",
+      "ex": "Le livre est sur la table."
+     },
+     {
+      "w": "la table",
+      "ex": "La table est grande."
+     },
+     {
+      "w": "l'école",
+      "ex": "L'école est près de chez moi."
+     },
+     {
+      "w": "l'ami",
+      "ex": "L'ami de Paul est sympa."
+     },
+     {
+      "w": "les clés",
+      "ex": "Où sont les clés ?"
+     },
+     {
+      "w": "la voiture",
+      "ex": "La voiture est rouge."
+     }
+    ],
+    "gram": "Le + masculin, la + féminin, l' devant voyelle ou h muet, les au pluriel. On apprend toujours le nom avec son article."
+   }
+  },
+  {
+   "d": 14,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Un, une, des and il y a",
+     "g": "Use the French words for a, an and some, and say there is or there are.",
+     "p": [
+      "Un goes with masculine nouns (un livre), une with feminine ones (une table), des with any plural.",
+      "English often drops some, but French needs des: j'ai des amis means I have friends.",
+      "Il y a means both there is and there are and never changes: il y a un parc, il y a des cafés."
+     ],
+     "q": "Qu'est-ce qu'il y a dans ta rue? Name three things with il y a.",
+     "c": "Describe your room today in five sentences that all start with il y a."
+    },
+    "de": {
+     "t": "Un, une, des und il y a",
+     "g": "Du nutzt die französischen Wörter für ein, eine und einige und sagst es gibt.",
+     "p": [
+      "Un steht bei männlichen Nomen (un livre), une bei weiblichen (une table), des bei jedem Plural.",
+      "Im Deutschen fällt der Plural-Artikel weg, im Französischen braucht man des: j'ai des amis, ich habe Freunde.",
+      "Il y a heißt es gibt, für Einzahl und Mehrzahl, und ändert sich nie: il y a un parc, il y a des cafés."
+     ],
+     "q": "Qu'est-ce qu'il y a dans ta rue? Nenn drei Dinge mit il y a.",
+     "c": "Beschreib heute dein Zimmer in fünf Sätzen, die alle mit il y a beginnen."
+    },
+    "es": {
+     "t": "Un, une, des e il y a",
+     "g": "Usa los artículos franceses para un, una y unos, y di hay.",
+     "p": [
+      "Un va con masculinos (un livre), une con femeninos (une table), des con cualquier plural.",
+      "En español a menudo no ponemos artículo, pero el francés necesita des: j'ai des amis, tengo amigos.",
+      "Il y a significa hay, en singular y en plural, y nunca cambia: il y a un parc, il y a des cafés."
+     ],
+     "q": "Qu'est-ce qu'il y a dans ta rue? Nombra tres cosas con il y a.",
+     "c": "Describe hoy tu habitación con cinco frases que empiecen por il y a."
+    },
+    "fr": {
+     "t": "Un, une, des et il y a",
+     "g": "Employer les articles indéfinis et dire ce qu'il y a quelque part.",
+     "p": [
+      "Un va avec un nom masculin (un livre), une avec un nom féminin (une table), des avec un pluriel.",
+      "Au pluriel, l'article est obligatoire : j'ai des amis, et non j'ai amis.",
+      "Il y a présente ce qui existe dans un lieu, au singulier comme au pluriel : il y a un parc, il y a des cafés."
+     ],
+     "q": "Qu'est-ce qu'il y a dans ta rue ? Cite trois choses avec il y a.",
+     "c": "Décris ta chambre aujourd'hui en cinq phrases qui commencent toutes par il y a."
+    },
+    "it": {
+     "t": "Un, une, des e il y a",
+     "g": "Usa gli articoli francesi per un, una e dei, e di' c'è o ci sono.",
+     "p": [
+      "Un va con i maschili (un livre), une con i femminili (une table), des con qualsiasi plurale.",
+      "In italiano spesso l'articolo si omette, ma il francese vuole des: j'ai des amis, ho degli amici.",
+      "Il y a significa c'è e ci sono e non cambia mai: il y a un parc, il y a des cafés."
+     ],
+     "q": "Qu'est-ce qu'il y a dans ta rue? Nomina tre cose con il y a.",
+     "c": "Oggi descrivi la tua stanza con cinque frasi che iniziano tutte con il y a."
+    },
+    "pt": {
+     "t": "Un, une, des e il y a",
+     "g": "Usar os artigos franceses para um, uma e uns, e dizer há.",
+     "p": [
+      "Un vai com os masculinos (un livre), une com os femininos (une table), des com qualquer plural.",
+      "Em português muitas vezes não se põe artigo, mas o francês exige des: j'ai des amis, tenho amigos.",
+      "Il y a quer dizer há, no singular e no plural, e nunca muda: il y a un parc, il y a des cafés."
+     ],
+     "q": "Qu'est-ce qu'il y a dans ta rue? Diz três coisas com il y a.",
+     "c": "Descreve hoje o teu quarto em cinco frases que comecem todas por il y a."
+    },
+    "pt_BR": {
+     "t": "Un, une, des e il y a",
+     "g": "Usar os artigos franceses para um, uma e uns, e dizer tem ou há.",
+     "p": [
+      "Un vai com os masculinos (un livre), une com os femininos (une table), des com qualquer plural.",
+      "Em português a gente muitas vezes tira o artigo, mas o francês exige des: j'ai des amis, tenho amigos.",
+      "Il y a é o nosso tem ou há, no singular e no plural, e nunca muda: il y a un parc, il y a des cafés."
+     ],
+     "q": "Qu'est-ce qu'il y a dans ta rue? Diga três coisas com il y a.",
+     "c": "Hoje descreva seu quarto em cinco frases que comecem todas com il y a."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un parc",
+      "ex": "Il y a un parc près d'ici."
+     },
+     {
+      "w": "une boulangerie",
+      "ex": "Il y a une boulangerie dans ma rue."
+     },
+     {
+      "w": "des amis",
+      "ex": "J'ai des amis à Nice."
+     },
+     {
+      "w": "il y a",
+      "ex": "Il y a deux lits dans la chambre."
+     },
+     {
+      "w": "une fenêtre",
+      "ex": "Il y a une grande fenêtre."
+     },
+     {
+      "w": "Qu'est-ce qu'il y a ?",
+      "ex": "Qu'est-ce qu'il y a dans le sac ?"
+     }
+    ],
+    "gram": "Un (masculin), une (féminin), des (pluriel) : des est obligatoire. Il y a = il existe, invariable au singulier et au pluriel."
+   }
+  },
+  {
+   "d": 15,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Avoir: the verb to have",
+     "g": "Conjugate avoir in the present and use it to say your age the French way.",
+     "p": [
+      "Avoir is irregular: j'ai, tu as, il or elle a, nous avons, vous avez, ils or elles ont.",
+      "French uses avoir for age: j'ai vingt ans, literally I have twenty years. Never say je suis vingt.",
+      "Avoir also appears in handy phrases: j'ai faim (I am hungry), j'ai soif (thirsty), j'ai froid (cold)."
+     ],
+     "q": "Tu as quel âge? And do you have a brother, a sister or a pet? Tell me with avoir.",
+     "c": "Write five sentences today with five different forms of avoir, including one about someone's age."
+    },
+    "de": {
+     "t": "Avoir: das Verb haben",
+     "g": "Du konjugierst avoir im Präsens und sagst dein Alter auf Französisch.",
+     "p": [
+      "Avoir ist unregelmäßig: j'ai, tu as, il oder elle a, nous avons, vous avez, ils oder elles ont.",
+      "Fürs Alter nimmt man avoir: j'ai vingt ans, wörtlich ich habe zwanzig Jahre. Nie je suis vingt.",
+      "Avoir steckt auch in praktischen Wendungen: j'ai faim (Hunger), j'ai soif (Durst), j'ai froid (mir ist kalt)."
+     ],
+     "q": "Tu as quel âge? Und hast du einen Bruder, eine Schwester oder ein Haustier? Sag es mit avoir.",
+     "c": "Schreib heute fünf Sätze mit fünf Formen von avoir, darunter einen über das Alter von jemandem."
+    },
+    "es": {
+     "t": "Avoir: el verbo tener",
+     "g": "Conjuga avoir en presente y úsalo para decir tu edad como un francés.",
+     "p": [
+      "Avoir es irregular: j'ai, tu as, il o elle a, nous avons, vous avez, ils o elles ont.",
+      "Como en español, la edad va con avoir: j'ai vingt ans, tengo veinte años.",
+      "También aparece en frases útiles igual que tener: j'ai faim (hambre), j'ai soif (sed), j'ai froid (frío)."
+     ],
+     "q": "Tu as quel âge? ¿Y tienes hermano, hermana o mascota? Dímelo con avoir.",
+     "c": "Escribe hoy cinco frases con cinco formas distintas de avoir, una sobre la edad de alguien."
+    },
+    "fr": {
+     "t": "Avoir : le verbe avoir",
+     "g": "Conjuguer avoir au présent et dire son âge correctement.",
+     "p": [
+      "Avoir est irrégulier : j'ai, tu as, il ou elle a, nous avons, vous avez, ils ou elles ont.",
+      "L'âge se dit avec avoir : j'ai vingt ans. Attention à ne pas oublier le mot ans.",
+      "Avoir sert aussi pour les sensations : j'ai faim, j'ai soif, j'ai froid, j'ai chaud."
+     ],
+     "q": "Tu as quel âge ? Et tu as un frère, une sœur ou un animal ? Réponds avec avoir.",
+     "c": "Écris cinq phrases avec cinq formes d'avoir, dont une sur l'âge de quelqu'un."
+    },
+    "it": {
+     "t": "Avoir: il verbo avere",
+     "g": "Coniuga avoir al presente e usalo per dire l'età alla francese.",
+     "p": [
+      "Avoir è irregolare: j'ai, tu as, il o elle a, nous avons, vous avez, ils o elles ont.",
+      "Come in italiano, l'età si dice con avoir: j'ai vingt ans, ho vent'anni.",
+      "Ricorre in frasi utili come avere: j'ai faim (fame), j'ai soif (sete), j'ai froid (freddo)."
+     ],
+     "q": "Tu as quel âge? E hai un fratello, una sorella o un animale? Dimmelo con avoir.",
+     "c": "Oggi scrivi cinque frasi con cinque forme diverse di avoir, una sull'età di qualcuno."
+    },
+    "pt": {
+     "t": "Avoir: o verbo ter",
+     "g": "Conjugar avoir no presente e usá-lo para dizer a idade à francesa.",
+     "p": [
+      "Avoir é irregular: j'ai, tu as, il ou elle a, nous avons, vous avez, ils ou elles ont.",
+      "Tal como em português, a idade diz-se com avoir: j'ai vingt ans, tenho vinte anos.",
+      "Aparece em expressões úteis como ter: j'ai faim (fome), j'ai soif (sede), j'ai froid (frio)."
+     ],
+     "q": "Tu as quel âge? E tens irmão, irmã ou um animal? Diz-me com avoir.",
+     "c": "Escreve hoje cinco frases com cinco formas de avoir, uma delas sobre a idade de alguém."
+    },
+    "pt_BR": {
+     "t": "Avoir: o verbo ter",
+     "g": "Conjugar avoir no presente e usá-lo para dizer a idade em francês.",
+     "p": [
+      "Avoir é irregular: j'ai, tu as, il ou elle a, nous avons, vous avez, ils ou elles ont.",
+      "Igual ao português, idade se diz com avoir: j'ai vingt ans, tenho vinte anos.",
+      "Aparece em expressões úteis como ter: j'ai faim (fome), j'ai soif (sede), j'ai froid (frio)."
+     ],
+     "q": "Tu as quel âge? E você tem irmão, irmã ou bicho de estimação? Me conte com avoir.",
+     "c": "Hoje escreva cinco frases com cinco formas de avoir, uma delas sobre a idade de alguém."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "j'ai",
+      "ex": "J'ai vingt-cinq ans."
+     },
+     {
+      "w": "tu as",
+      "ex": "Tu as un chien ?"
+     },
+     {
+      "w": "il a",
+      "ex": "Il a deux sœurs."
+     },
+     {
+      "w": "nous avons",
+      "ex": "Nous avons une petite maison."
+     },
+     {
+      "w": "ils ont",
+      "ex": "Ils ont faim."
+     },
+     {
+      "w": "Tu as quel âge ?",
+      "ex": "Tu as quel âge, Lucas ?"
+     }
+    ],
+    "gram": "Avoir au présent : j'ai, tu as, il a, nous avons, vous avez, ils ont. L'âge : j'ai vingt ans. Sensations : j'ai faim, soif, froid."
+   }
+  },
+  {
+   "d": 16,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Polite words: s'il vous plaît",
+     "g": "Use the key French courtesy words that make every exchange smoother.",
+     "p": [
+      "Merci means thank you and merci beaucoup thanks a lot; reply de rien or je vous en prie.",
+      "Please is s'il te plaît with tu and s'il vous plaît with vous, often written stp and svp in messages.",
+      "Pardon is a quick sorry when you bump into someone; excusez-moi gets someone's attention politely."
+     ],
+     "q": "You need to ask a stranger in Paris for help. Which polite words would you use?",
+     "c": "Use merci, s'il vous plaît or excusez-moi in French at least five times today, even just in your head."
+    },
+    "de": {
+     "t": "Höflichkeit: s'il vous plaît",
+     "g": "Du nutzt die wichtigsten französischen Höflichkeitswörter, die jedes Gespräch leichter machen.",
+     "p": [
+      "Merci heißt danke, merci beaucoup vielen Dank; die Antwort ist de rien oder je vous en prie.",
+      "Bitte heißt s'il te plaît beim Duzen und s'il vous plaît beim Siezen, in Nachrichten oft stp und svp.",
+      "Pardon ist ein schnelles Entschuldigung beim Anrempeln; excusez-moi spricht jemanden höflich an."
+     ],
+     "q": "Du musst in Paris einen Fremden um Hilfe bitten. Welche Höflichkeitswörter nutzt du?",
+     "c": "Benutze heute mindestens fünfmal merci, s'il vous plaît oder excusez-moi, notfalls im Kopf."
+    },
+    "es": {
+     "t": "Palabras de cortesía: s'il vous plaît",
+     "g": "Usa las palabras de cortesía francesas clave que facilitan cualquier conversación.",
+     "p": [
+      "Merci es gracias y merci beaucoup muchas gracias; se responde de rien o je vous en prie.",
+      "Por favor es s'il te plaît con tu y s'il vous plaît con vous; en mensajes, stp y svp.",
+      "Pardon es un perdón rápido si chocas con alguien; excusez-moi sirve para llamar la atención con educación."
+     ],
+     "q": "Tienes que pedir ayuda a un desconocido en París. ¿Qué palabras de cortesía usarías?",
+     "c": "Usa hoy merci, s'il vous plaît o excusez-moi al menos cinco veces, aunque sea mentalmente."
+    },
+    "fr": {
+     "t": "La politesse : s'il vous plaît",
+     "g": "Employer les mots de politesse essentiels qui facilitent tous les échanges.",
+     "p": [
+      "Merci et merci beaucoup pour remercier ; on répond de rien, ou je vous en prie quand on vouvoie.",
+      "S'il te plaît avec tu, s'il vous plaît avec vous ; dans les messages on écrit stp et svp.",
+      "Pardon s'excuse vite quand on bouscule quelqu'un ; excusez-moi sert aussi à interpeller poliment."
+     ],
+     "q": "Tu dois demander de l'aide à un inconnu à Paris. Quels mots de politesse utilises-tu ?",
+     "c": "Utilise merci, s'il vous plaît ou excusez-moi au moins cinq fois aujourd'hui."
+    },
+    "it": {
+     "t": "Parole gentili: s'il vous plaît",
+     "g": "Usa le parole di cortesia francesi che rendono più facile ogni scambio.",
+     "p": [
+      "Merci vuol dire grazie e merci beaucoup grazie mille; si risponde de rien o je vous en prie.",
+      "Per favore è s'il te plaît con il tu e s'il vous plaît con il vous; nei messaggi stp e svp.",
+      "Pardon è un rapido scusa se urti qualcuno; excusez-moi serve per attirare l'attenzione con garbo."
+     ],
+     "q": "Devi chiedere aiuto a uno sconosciuto a Parigi. Quali parole gentili useresti?",
+     "c": "Oggi usa merci, s'il vous plaît o excusez-moi almeno cinque volte, anche solo nella tua testa."
+    },
+    "pt": {
+     "t": "Palavras de cortesia: s'il vous plaît",
+     "g": "Usar as palavras de cortesia francesas que tornam qualquer conversa mais fácil.",
+     "p": [
+      "Merci quer dizer obrigado e merci beaucoup muito obrigado; responde-se de rien ou je vous en prie.",
+      "Por favor é s'il te plaît com tu e s'il vous plaît com vous; nas mensagens escreve-se stp e svp.",
+      "Pardon é um desculpe rápido quando esbarras em alguém; excusez-moi chama a atenção com educação."
+     ],
+     "q": "Tens de pedir ajuda a um desconhecido em Paris. Que palavras de cortesia usarias?",
+     "c": "Usa hoje merci, s'il vous plaît ou excusez-moi pelo menos cinco vezes, nem que seja mentalmente."
+    },
+    "pt_BR": {
+     "t": "Palavras de cortesia: s'il vous plaît",
+     "g": "Usar as palavras de cortesia francesas que deixam qualquer conversa mais leve.",
+     "p": [
+      "Merci é obrigado e merci beaucoup é muito obrigado; a resposta é de rien ou je vous en prie.",
+      "Por favor é s'il te plaît com tu e s'il vous plaît com vous; em mensagens, stp e svp.",
+      "Pardon é um desculpa rápido quando você esbarra em alguém; excusez-moi chama a atenção com educação."
+     ],
+     "q": "Você precisa pedir ajuda a um desconhecido em Paris. Que palavras de cortesia usaria?",
+     "c": "Hoje use merci, s'il vous plaît ou excusez-moi pelo menos cinco vezes, mesmo que só na cabeça."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "merci beaucoup",
+      "ex": "Merci beaucoup, madame !"
+     },
+     {
+      "w": "de rien",
+      "ex": "Merci ! De rien."
+     },
+     {
+      "w": "s'il vous plaît",
+      "ex": "Un thé, s'il vous plaît."
+     },
+     {
+      "w": "s'il te plaît",
+      "ex": "Passe-moi le sel, s'il te plaît."
+     },
+     {
+      "w": "pardon",
+      "ex": "Oh, pardon, monsieur !"
+     },
+     {
+      "w": "excusez-moi",
+      "ex": "Excusez-moi, où est la gare ?"
+     }
+    ],
+    "gram": "S'il te plaît (tu) / s'il vous plaît (vous). Merci → de rien ou je vous en prie. Pardon pour s'excuser, excusez-moi pour interpeller."
+   }
+  },
+  {
+   "d": 17,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 21 to 100",
+     "g": "Count from 21 to 100 in French, including the famous 70, 80 and 90.",
+     "p": [
+      "Tens up to 60 are regular: vingt, trente, quarante, cinquante, soixante; add et un for 21, 31, 41: vingt et un.",
+      "Seventy is soixante-dix (sixty-ten), so 71 is soixante et onze and 75 soixante-quinze.",
+      "Eighty is quatre-vingts (four twenties) and ninety quatre-vingt-dix; Belgians and the Swiss say septante and nonante."
+     ],
+     "q": "Which number from 70 to 99 do you find hardest? Say it out loud for me.",
+     "c": "Read ten random numbers between 21 and 100 aloud today, like prices or house numbers you see."
+    },
+    "de": {
+     "t": "Zahlen von 21 bis 100",
+     "g": "Du zählst von 21 bis 100 auf Französisch, inklusive der berühmten 70, 80 und 90.",
+     "p": [
+      "Die Zehner bis 60 sind regelmäßig: vingt, trente, quarante, cinquante, soixante; für 21, 31, 41 sagt man et un.",
+      "Siebzig ist soixante-dix (sechzig-zehn), also 71 soixante et onze und 75 soixante-quinze.",
+      "Achtzig ist quatre-vingts (vier Zwanziger), neunzig quatre-vingt-dix; in Belgien und der Schweiz septante und nonante."
+     ],
+     "q": "Welche Zahl zwischen 70 und 99 findest du am schwersten? Sag sie laut.",
+     "c": "Lies heute zehn Zahlen zwischen 21 und 100 laut, etwa Preise oder Hausnummern, die du siehst."
+    },
+    "es": {
+     "t": "Números del 21 al 100",
+     "g": "Cuenta del 21 al 100 en francés, con los famosos 70, 80 y 90.",
+     "p": [
+      "Las decenas hasta 60 son regulares: vingt, trente, quarante, cinquante, soixante; para 21, 31, 41 se dice et un.",
+      "Setenta es soixante-dix (sesenta-diez), así que 71 es soixante et onze y 75 soixante-quinze.",
+      "Ochenta es quatre-vingts (cuatro veintes) y noventa quatre-vingt-dix; en Bélgica y Suiza dicen septante y nonante."
+     ],
+     "q": "¿Qué número entre 70 y 99 te parece más difícil? Dilo en voz alta.",
+     "c": "Lee hoy en voz alta diez números entre 21 y 100, como precios o números de portal que veas."
+    },
+    "fr": {
+     "t": "Les nombres de 21 à 100",
+     "g": "Compter de 21 à 100, y compris les fameux 70, 80 et 90.",
+     "p": [
+      "Les dizaines jusqu'à 60 sont régulières : vingt, trente, quarante, cinquante, soixante ; on dit vingt et un, trente et un.",
+      "Soixante-dix vient de soixante plus dix : 71 se dit soixante et onze, 75 soixante-quinze.",
+      "Quatre-vingts prend un s, mais pas quatre-vingt-un ; en Belgique et en Suisse on dit septante et nonante."
+     ],
+     "q": "Quel nombre entre 70 et 99 trouves-tu le plus difficile ? Dis-le à voix haute.",
+     "c": "Lis dix nombres entre 21 et 100 à voix haute aujourd'hui, comme des prix ou des numéros de rue."
+    },
+    "it": {
+     "t": "I numeri da 21 a 100",
+     "g": "Conta da 21 a 100 in francese, compresi i famosi 70, 80 e 90.",
+     "p": [
+      "Le decine fino a 60 sono regolari: vingt, trente, quarante, cinquante, soixante; per 21, 31, 41 si dice et un.",
+      "Settanta è soixante-dix (sessanta-dieci), quindi 71 è soixante et onze e 75 soixante-quinze.",
+      "Ottanta è quatre-vingts (quattro venti), novanta quatre-vingt-dix; in Belgio e Svizzera septante e nonante."
+     ],
+     "q": "Quale numero tra 70 e 99 trovi più difficile? Dillo ad alta voce.",
+     "c": "Oggi leggi ad alta voce dieci numeri tra 21 e 100, come prezzi o numeri civici che vedi."
+    },
+    "pt": {
+     "t": "Números de 21 a 100",
+     "g": "Contar de 21 a 100 em francês, incluindo os famosos 70, 80 e 90.",
+     "p": [
+      "As dezenas até 60 são regulares: vingt, trente, quarante, cinquante, soixante; para 21, 31, 41 diz-se et un.",
+      "Setenta é soixante-dix (sessenta-dez), por isso 71 é soixante et onze e 75 soixante-quinze.",
+      "Oitenta é quatre-vingts (quatro vintes) e noventa quatre-vingt-dix; na Bélgica e na Suíça dizem septante e nonante."
+     ],
+     "q": "Que número entre 70 e 99 achas mais difícil? Diz-o em voz alta.",
+     "c": "Lê hoje em voz alta dez números entre 21 e 100, como preços ou números de porta que vejas."
+    },
+    "pt_BR": {
+     "t": "Números de 21 a 100",
+     "g": "Contar de 21 a 100 em francês, incluindo os famosos 70, 80 e 90.",
+     "p": [
+      "As dezenas até 60 são regulares: vingt, trente, quarante, cinquante, soixante; para 21, 31, 41 se diz et un.",
+      "Setenta é soixante-dix (sessenta-dez), então 71 é soixante et onze e 75 soixante-quinze.",
+      "Oitenta é quatre-vingts (quatro vintes) e noventa quatre-vingt-dix; na Bélgica e na Suíça dizem septante e nonante."
+     ],
+     "q": "Qual número entre 70 e 99 você acha mais difícil? Diga em voz alta.",
+     "c": "Hoje leia em voz alta dez números entre 21 e 100, como preços ou números de casas que você vir."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vingt et un",
+      "ex": "Il a vingt et un ans."
+     },
+     {
+      "w": "trente",
+      "ex": "Le mois a trente jours."
+     },
+     {
+      "w": "cinquante",
+      "ex": "Ma mère a cinquante ans."
+     },
+     {
+      "w": "soixante-dix",
+      "ex": "Mon grand-père a soixante-dix ans."
+     },
+     {
+      "w": "quatre-vingts",
+      "ex": "Il y a quatre-vingts personnes."
+     },
+     {
+      "w": "quatre-vingt-dix",
+      "ex": "C'est la page quatre-vingt-dix."
+     }
+    ],
+    "gram": "70 = soixante-dix, 71 = soixante et onze, 80 = quatre-vingts, 81 = quatre-vingt-un, 90 = quatre-vingt-dix, 100 = cent."
+   }
+  },
+  {
+   "d": 18,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Family members",
+     "g": "Talk about your family in French using mon, ma and mes.",
+     "p": [
+      "Key words: le père, la mère, les parents, le frère, la sœur, les grands-parents, l'oncle, la tante.",
+      "My has three forms: mon with masculine nouns (mon frère), ma with feminine (ma sœur), mes with plurals (mes parents).",
+      "Before a feminine noun starting with a vowel, use mon to keep it smooth: mon amie, mon école."
+     ],
+     "q": "Tell me about your family: who is in it? Use mon, ma and mes at least once each.",
+     "c": "Draw a mini family tree and label it in French with mon, ma or mes before each person."
+    },
+    "de": {
+     "t": "Familienmitglieder",
+     "g": "Du sprichst über deine Familie auf Französisch mit mon, ma und mes.",
+     "p": [
+      "Wichtige Wörter: le père, la mère, les parents, le frère, la sœur, les grands-parents, l'oncle, la tante.",
+      "Mein hat drei Formen: mon bei männlichen Nomen (mon frère), ma bei weiblichen (ma sœur), mes im Plural (mes parents).",
+      "Vor weiblichen Nomen mit Vokal nimmt man mon, damit es flüssig klingt: mon amie, mon école."
+     ],
+     "q": "Erzähl mir von deiner Familie: Wer gehört dazu? Nutze mon, ma und mes je mindestens einmal.",
+     "c": "Zeichne einen kleinen Stammbaum und beschrifte ihn auf Französisch mit mon, ma oder mes."
+    },
+    "es": {
+     "t": "Miembros de la familia",
+     "g": "Habla de tu familia en francés usando mon, ma y mes.",
+     "p": [
+      "Palabras clave: le père, la mère, les parents, le frère, la sœur, les grands-parents, l'oncle, la tante.",
+      "Mi tiene tres formas: mon con masculinos (mon frère), ma con femeninos (ma sœur), mes con plurales (mes parents).",
+      "Ante un femenino que empieza por vocal se usa mon para que suene fluido: mon amie, mon école."
+     ],
+     "q": "Háblame de tu familia: ¿quién la forma? Usa mon, ma y mes al menos una vez cada uno.",
+     "c": "Dibuja un pequeño árbol genealógico y rotúlalo en francés con mon, ma o mes."
+    },
+    "fr": {
+     "t": "Les membres de la famille",
+     "g": "Parler de sa famille avec mon, ma et mes.",
+     "p": [
+      "Les mots clés : le père, la mère, les parents, le frère, la sœur, les grands-parents, l'oncle, la tante.",
+      "Le possessif s'accorde : mon frère (masculin), ma sœur (féminin), mes parents (pluriel).",
+      "Devant un nom féminin qui commence par une voyelle, on dit mon : mon amie, mon école."
+     ],
+     "q": "Parle-moi de ta famille : qui en fait partie ? Utilise mon, ma et mes au moins une fois.",
+     "c": "Dessine un petit arbre généalogique et légende-le avec mon, ma ou mes devant chaque personne."
+    },
+    "it": {
+     "t": "I membri della famiglia",
+     "g": "Parla della tua famiglia in francese usando mon, ma e mes.",
+     "p": [
+      "Parole chiave: le père, la mère, les parents, le frère, la sœur, les grands-parents, l'oncle, la tante.",
+      "Mio ha tre forme: mon con i maschili (mon frère), ma con i femminili (ma sœur), mes con i plurali (mes parents).",
+      "Davanti a un femminile che inizia per vocale si usa mon, per scorrevolezza: mon amie, mon école."
+     ],
+     "q": "Parlami della tua famiglia: chi ne fa parte? Usa mon, ma e mes almeno una volta ciascuno.",
+     "c": "Disegna un piccolo albero genealogico ed etichettalo in francese con mon, ma o mes."
+    },
+    "pt": {
+     "t": "Membros da família",
+     "g": "Falar da tua família em francês usando mon, ma e mes.",
+     "p": [
+      "Palavras-chave: le père, la mère, les parents, le frère, la sœur, les grands-parents, l'oncle, la tante.",
+      "Meu tem três formas: mon com masculinos (mon frère), ma com femininos (ma sœur), mes com plurais (mes parents).",
+      "Antes de um feminino começado por vogal usa-se mon, para soar fluido: mon amie, mon école."
+     ],
+     "q": "Fala-me da tua família: quem faz parte dela? Usa mon, ma e mes pelo menos uma vez cada.",
+     "c": "Desenha uma pequena árvore genealógica e legenda-a em francês com mon, ma ou mes."
+    },
+    "pt_BR": {
+     "t": "Membros da família",
+     "g": "Falar da sua família em francês usando mon, ma e mes.",
+     "p": [
+      "Palavras-chave: le père, la mère, les parents, le frère, la sœur, les grands-parents, l'oncle, la tante.",
+      "Meu tem três formas: mon com masculinos (mon frère), ma com femininos (ma sœur), mes com plurais (mes parents).",
+      "Antes de feminino que começa com vogal se usa mon, para soar fluido: mon amie, mon école."
+     ],
+     "q": "Me conte sobre sua família: quem faz parte dela? Use mon, ma e mes pelo menos uma vez cada.",
+     "c": "Desenhe uma pequena árvore genealógica e escreva em francês mon, ma ou mes antes de cada pessoa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la mère",
+      "ex": "Ma mère s'appelle Claire."
+     },
+     {
+      "w": "le père",
+      "ex": "Mon père est cuisinier."
+     },
+     {
+      "w": "le frère",
+      "ex": "Mon frère a dix ans."
+     },
+     {
+      "w": "la sœur",
+      "ex": "Ma sœur habite à Bordeaux."
+     },
+     {
+      "w": "les grands-parents",
+      "ex": "Mes grands-parents sont très gentils."
+     },
+     {
+      "w": "la tante",
+      "ex": "Ma tante a deux enfants."
+     }
+    ],
+    "gram": "Mon + masculin (mon frère), ma + féminin (ma sœur), mes + pluriel (mes parents). Mon devant voyelle : mon amie."
+   }
+  },
+  {
+   "d": 19,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Days of the week",
+     "g": "Name the days of the week in French and talk about today, tomorrow and habits.",
+     "p": [
+      "The days are lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche, with no capital letter; the week starts on Monday.",
+      "Aujourd'hui is today, demain tomorrow and hier yesterday: aujourd'hui, c'est mardi.",
+      "Lundi alone means on Monday this week; le lundi means every Monday: le samedi, je fais du sport."
+     ],
+     "q": "Quel jour est-ce aujourd'hui? And what do you usually do le dimanche?",
+     "c": "Write your week plan in French today, one activity next to each day."
+    },
+    "de": {
+     "t": "Die Wochentage",
+     "g": "Du nennst die Wochentage auf Französisch und sprichst über heute, morgen und Gewohnheiten.",
+     "p": [
+      "Die Tage heißen lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche, klein geschrieben.",
+      "Aujourd'hui heißt heute, demain morgen und hier gestern: aujourd'hui, c'est mardi.",
+      "Lundi allein heißt an diesem Montag, le lundi heißt jeden Montag, montags: le samedi, je fais du sport."
+     ],
+     "q": "Quel jour est-ce aujourd'hui? Und was machst du normalerweise le dimanche?",
+     "c": "Schreib heute deinen Wochenplan auf Französisch, mit einer Aktivität neben jedem Tag."
+    },
+    "es": {
+     "t": "Los días de la semana",
+     "g": "Nombra los días de la semana en francés y habla de hoy, mañana y tus costumbres.",
+     "p": [
+      "Los días son lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche, en minúscula como en español.",
+      "Aujourd'hui es hoy, demain mañana y hier ayer: aujourd'hui, c'est mardi.",
+      "Lundi a secas es este lunes; le lundi es todos los lunes, como los lunes: le samedi, je fais du sport."
+     ],
+     "q": "Quel jour est-ce aujourd'hui? ¿Y qué sueles hacer le dimanche?",
+     "c": "Escribe hoy tu plan semanal en francés, con una actividad junto a cada día."
+    },
+    "fr": {
+     "t": "Les jours de la semaine",
+     "g": "Nommer les jours de la semaine et parler d'aujourd'hui, de demain et des habitudes.",
+     "p": [
+      "Les jours s'écrivent sans majuscule : lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche.",
+      "Aujourd'hui, demain et hier situent dans le temps : aujourd'hui, c'est mardi.",
+      "Lundi seul désigne un lundi précis ; le lundi exprime l'habitude : le samedi, je fais du sport."
+     ],
+     "q": "Quel jour sommes-nous aujourd'hui ? Et que fais-tu d'habitude le dimanche ?",
+     "c": "Écris ton planning de la semaine aujourd'hui, avec une activité à côté de chaque jour."
+    },
+    "it": {
+     "t": "I giorni della settimana",
+     "g": "Nomina i giorni della settimana in francese e parla di oggi, domani e abitudini.",
+     "p": [
+      "I giorni sono lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche, con la minuscola come in italiano.",
+      "Aujourd'hui è oggi, demain domani e hier ieri: aujourd'hui, c'est mardi.",
+      "Lundi da solo è questo lunedì; le lundi è ogni lunedì, il lunedì: le samedi, je fais du sport."
+     ],
+     "q": "Quel jour est-ce aujourd'hui? E cosa fai di solito le dimanche?",
+     "c": "Oggi scrivi il tuo programma settimanale in francese, con un'attività accanto a ogni giorno."
+    },
+    "pt": {
+     "t": "Os dias da semana",
+     "g": "Dizer os dias da semana em francês e falar de hoje, amanhã e hábitos.",
+     "p": [
+      "Os dias são lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche, com minúscula.",
+      "Aujourd'hui é hoje, demain amanhã e hier ontem: aujourd'hui, c'est mardi.",
+      "Lundi sozinho é esta segunda-feira; le lundi é todas as segundas, às segundas: le samedi, je fais du sport."
+     ],
+     "q": "Quel jour est-ce aujourd'hui? E o que costumas fazer le dimanche?",
+     "c": "Escreve hoje o teu plano da semana em francês, com uma atividade ao lado de cada dia."
+    },
+    "pt_BR": {
+     "t": "Os dias da semana",
+     "g": "Dizer os dias da semana em francês e falar de hoje, amanhã e hábitos.",
+     "p": [
+      "Os dias são lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche, com minúscula; lundi é segunda.",
+      "Aujourd'hui é hoje, demain amanhã e hier ontem: aujourd'hui, c'est mardi.",
+      "Lundi sozinho é esta segunda; le lundi é toda segunda, às segundas: le samedi, je fais du sport."
+     ],
+     "q": "Quel jour est-ce aujourd'hui? E o que você costuma fazer le dimanche?",
+     "c": "Hoje escreva seu plano da semana em francês, com uma atividade ao lado de cada dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lundi",
+      "ex": "Lundi, je travaille."
+     },
+     {
+      "w": "mercredi",
+      "ex": "Mercredi, j'ai un cours de français."
+     },
+     {
+      "w": "le samedi",
+      "ex": "Le samedi, je vais au marché."
+     },
+     {
+      "w": "aujourd'hui",
+      "ex": "Aujourd'hui, c'est jeudi."
+     },
+     {
+      "w": "demain",
+      "ex": "À demain, Sophie !"
+     },
+     {
+      "w": "hier",
+      "ex": "Hier, c'était dimanche."
+     }
+    ],
+    "gram": "Jours sans majuscule. Lundi = ce lundi-là ; le lundi = chaque lundi (habitude). Aujourd'hui, demain, hier."
+   }
+  },
+  {
+   "d": 20,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Months and seasons",
+     "g": "Name the months and seasons in French and say when your birthday is.",
+     "p": [
+      "The months are janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
+      "Use en for months (en mai) and for three seasons (en été, en automne, en hiver), but au printemps.",
+      "Dates use le plus the number: le 14 juillet; only the first day is le premier: le premier mai."
+     ],
+     "q": "C'est quand, ton anniversaire? Answer with le, the day and the month.",
+     "c": "Say the birthdays of three people you love in French, like mon anniversaire, c'est le 3 avril."
+    },
+    "de": {
+     "t": "Monate und Jahreszeiten",
+     "g": "Du nennst Monate und Jahreszeiten auf Französisch und sagst, wann du Geburtstag hast.",
+     "p": [
+      "Die Monate: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
+      "Bei Monaten sagt man en (en mai), ebenso en été, en automne, en hiver, aber au printemps.",
+      "Daten bildet man mit le und Zahl: le 14 juillet; nur der Erste heißt le premier: le premier mai."
+     ],
+     "q": "C'est quand, ton anniversaire? Antworte mit le, dem Tag und dem Monat.",
+     "c": "Sag auf Französisch die Geburtstage von drei lieben Menschen, etwa mon anniversaire, c'est le 3 avril."
+    },
+    "es": {
+     "t": "Meses y estaciones",
+     "g": "Nombra los meses y las estaciones en francés y di cuándo es tu cumpleaños.",
+     "p": [
+      "Los meses: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
+      "Se usa en con los meses (en mai) y tres estaciones (en été, en automne, en hiver), pero au printemps.",
+      "Las fechas llevan le y el número: le 14 juillet; solo el día uno es le premier: le premier mai."
+     ],
+     "q": "C'est quand, ton anniversaire? Responde con le, el día y el mes.",
+     "c": "Di en francés el cumpleaños de tres personas queridas, como mon anniversaire, c'est le 3 avril."
+    },
+    "fr": {
+     "t": "Les mois et les saisons",
+     "g": "Nommer les mois et les saisons et dire la date de son anniversaire.",
+     "p": [
+      "Les mois : janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
+      "On dit en mai, en été, en automne, en hiver, mais au printemps.",
+      "La date se dit avec le : le 14 juillet ; pour le premier jour du mois, on dit le premier mai."
+     ],
+     "q": "C'est quand, ton anniversaire ? Réponds avec le, le jour et le mois.",
+     "c": "Dis l'anniversaire de trois personnes que tu aimes, par exemple : son anniversaire, c'est le 3 avril."
+    },
+    "it": {
+     "t": "Mesi e stagioni",
+     "g": "Nomina mesi e stagioni in francese e di' quando è il tuo compleanno.",
+     "p": [
+      "I mesi: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
+      "Con i mesi si usa en (en mai) e con tre stagioni (en été, en automne, en hiver), ma au printemps.",
+      "Le date usano le e il numero: le 14 juillet; solo il primo del mese è le premier: le premier mai."
+     ],
+     "q": "C'est quand, ton anniversaire? Rispondi con le, il giorno e il mese.",
+     "c": "Di' in francese il compleanno di tre persone care, ad esempio mon anniversaire, c'est le 3 avril."
+    },
+    "pt": {
+     "t": "Meses e estações",
+     "g": "Dizer os meses e as estações em francês e quando fazes anos.",
+     "p": [
+      "Os meses: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
+      "Usa-se en com os meses (en mai) e com três estações (en été, en automne, en hiver), mas au printemps.",
+      "As datas levam le e o número: le 14 juillet; só o dia um é le premier: le premier mai."
+     ],
+     "q": "C'est quand, ton anniversaire? Responde com le, o dia e o mês.",
+     "c": "Diz em francês os aniversários de três pessoas de quem gostas, como mon anniversaire, c'est le 3 avril."
+    },
+    "pt_BR": {
+     "t": "Meses e estações",
+     "g": "Dizer os meses e as estações em francês e quando é seu aniversário.",
+     "p": [
+      "Os meses: janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre.",
+      "Usa-se en com os meses (en mai) e com três estações (en été, en automne, en hiver), mas au printemps.",
+      "As datas levam le e o número: le 14 juillet; só o dia primeiro é le premier: le premier mai."
+     ],
+     "q": "C'est quand, ton anniversaire? Responda com le, o dia e o mês.",
+     "c": "Diga em francês o aniversário de três pessoas queridas, como mon anniversaire, c'est le 3 avril."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "janvier",
+      "ex": "Il fait froid en janvier."
+     },
+     {
+      "w": "août",
+      "ex": "En août, je suis en vacances."
+     },
+     {
+      "w": "l'été",
+      "ex": "En été, on va à la plage."
+     },
+     {
+      "w": "le printemps",
+      "ex": "Au printemps, les fleurs sont belles."
+     },
+     {
+      "w": "l'hiver",
+      "ex": "En hiver, il neige à la montagne."
+     },
+     {
+      "w": "l'anniversaire",
+      "ex": "Mon anniversaire, c'est le 3 avril."
+     }
+    ],
+    "gram": "En + mois (en mai) ; en été, en automne, en hiver, mais au printemps. Date : le 14 juillet, le premier mai."
+   }
+  }
+ ]
+}

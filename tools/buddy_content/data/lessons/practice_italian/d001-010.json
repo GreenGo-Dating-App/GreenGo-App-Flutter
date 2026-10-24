@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ciao! First Italian greetings",
+     "g": "Greet people in Italian and pick the right greeting for the time and the person.",
+     "p": [
+      "Ciao means both hi and bye, but use it only with friends and family.",
+      "Buongiorno works in the morning and early afternoon, buonasera from late afternoon on.",
+      "Arrivederci is the polite goodbye; buonanotte is only for bedtime or the very end of the night."
+     ],
+     "q": "Imagine it is 7 p.m. and you walk into a small shop. How do you greet the shopkeeper?",
+     "c": "Greet three people today in Italian, even just in your head, choosing the right word each time."
+    },
+    "de": {
+     "t": "Ciao! Erste italienische Grüße",
+     "g": "Du lernst, auf Italienisch zu grüßen und den passenden Gruß für Tageszeit und Person zu wählen.",
+     "p": [
+      "Ciao heißt Hallo und Tschüss, passt aber nur bei Freunden und Familie.",
+      "Buongiorno sagt man morgens und am frühen Nachmittag, buonasera ab dem späten Nachmittag.",
+      "Arrivederci ist der höfliche Abschied; buonanotte sagt man nur vor dem Schlafengehen."
+     ],
+     "q": "Stell dir vor, es ist 19 Uhr und du betrittst einen kleinen Laden. Wie grüßt du?",
+     "c": "Grüße heute drei Menschen auf Italienisch, notfalls im Kopf, und wähle jedes Mal das richtige Wort."
+    },
+    "es": {
+     "t": "¡Ciao! Primeros saludos en italiano",
+     "g": "Aprende a saludar en italiano y a elegir el saludo correcto según la hora y la persona.",
+     "p": [
+      "Ciao sirve para hola y para adiós, pero úsalo solo con amigos y familia.",
+      "Buongiorno se usa por la mañana y a primera hora de la tarde; buonasera, desde media tarde.",
+      "Arrivederci es la despedida cortés; buonanotte solo se dice antes de dormir."
+     ],
+     "q": "Imagina que son las 7 de la tarde y entras en una tienda pequeña. ¿Cómo saludas?",
+     "c": "Saluda hoy a tres personas en italiano, aunque sea mentalmente, eligiendo bien la palabra."
+    },
+    "fr": {
+     "t": "Ciao ! Premières salutations italiennes",
+     "g": "Saluer en italien et choisir la bonne formule selon l'heure et la personne.",
+     "p": [
+      "Ciao veut dire salut et au revoir, mais réserve-le aux amis et à la famille.",
+      "Buongiorno s'utilise le matin et en début d'après-midi, buonasera à partir de la fin d'après-midi.",
+      "Arrivederci est l'au revoir poli ; buonanotte se dit seulement avant d'aller dormir."
+     ],
+     "q": "Imagine : il est 19 h et tu entres dans une petite boutique. Comment salues-tu ?",
+     "c": "Salue trois personnes en italien aujourd'hui, même dans ta tête, en choisissant le bon mot."
+    },
+    "it": {
+     "t": "Ciao! I primi saluti in italiano",
+     "g": "Impari a salutare in italiano e a scegliere il saluto giusto per l'ora e la persona.",
+     "p": [
+      "Ciao vuol dire sia ciao che arrivederci, ma si usa solo con amici e famiglia.",
+      "Buongiorno si dice di mattina e nel primo pomeriggio, buonasera dal tardo pomeriggio.",
+      "Arrivederci è il congedo cortese; buonanotte si dice solo prima di andare a dormire."
+     ],
+     "q": "Immagina: sono le 19 ed entri in un piccolo negozio. Come saluti il negoziante?",
+     "c": "Oggi saluta tre persone in italiano, anche solo nella tua testa, scegliendo la parola giusta."
+    },
+    "pt": {
+     "t": "Ciao! Primeiras saudações em italiano",
+     "g": "Aprender a cumprimentar em italiano e escolher a saudação certa para a hora e a pessoa.",
+     "p": [
+      "Ciao significa olá e adeus, mas usa-o só com amigos e família.",
+      "Buongiorno usa-se de manhã e no início da tarde; buonasera a partir do fim da tarde.",
+      "Arrivederci é a despedida educada; buonanotte diz-se apenas antes de ir dormir."
+     ],
+     "q": "Imagina que são 19 horas e entras numa pequena loja. Como cumprimentas o lojista?",
+     "c": "Hoje cumprimenta três pessoas em italiano, nem que seja mentalmente, escolhendo a palavra certa."
+    },
+    "pt_BR": {
+     "t": "Ciao! Primeiros cumprimentos em italiano",
+     "g": "Aprender a cumprimentar em italiano e escolher a saudação certa para a hora e a pessoa.",
+     "p": [
+      "Ciao quer dizer oi e tchau, mas use só com amigos e família.",
+      "Buongiorno se usa de manhã e no começo da tarde; buonasera a partir do fim da tarde.",
+      "Arrivederci é a despedida educada; buonanotte se diz só na hora de dormir."
+     ],
+     "q": "Imagine que são 19h e você entra numa lojinha. Como você cumprimenta o vendedor?",
+     "c": "Hoje cumprimente três pessoas em italiano, mesmo que só na cabeça, escolhendo a palavra certa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ciao",
+      "ex": "Ciao, Marco! Come va?"
+     },
+     {
+      "w": "buongiorno",
+      "ex": "Buongiorno, signora Rossi!"
+     },
+     {
+      "w": "buonasera",
+      "ex": "Buonasera a tutti!"
+     },
+     {
+      "w": "arrivederci",
+      "ex": "Grazie e arrivederci!"
+     },
+     {
+      "w": "buonanotte",
+      "ex": "Buonanotte, a domani!"
+     },
+     {
+      "w": "a presto",
+      "ex": "Ciao Giulia, a presto!"
+     }
+    ],
+    "gram": "Ciao è informale (amici). Buongiorno fino al pomeriggio, buonasera dal tardo pomeriggio; arrivederci è più cortese di ciao."
+   }
+  },
+  {
+   "d": 2,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The Italian alphabet",
+     "g": "Learn the 21 letters of the Italian alphabet and spell your name aloud.",
+     "p": [
+      "Italian uses 21 letters; j, k, w, x and y appear only in foreign words like jeans or taxi.",
+      "Letter names sound different: h is acca, z is zeta, r is erre, so practise them aloud.",
+      "To spell, Italians often say A come Ancona, B come Bologna, using city names."
+     ],
+     "q": "How do you spell your first name in Italian, letter by letter?",
+     "c": "Spell your name and your city aloud in Italian three times without looking."
+    },
+    "de": {
+     "t": "Das italienische Alphabet",
+     "g": "Du lernst die 21 Buchstaben des italienischen Alphabets und buchstabierst deinen Namen.",
+     "p": [
+      "Italienisch nutzt 21 Buchstaben; j, k, w, x und y kommen nur in Fremdwörtern wie jeans oder taxi vor.",
+      "Die Namen klingen anders: h heißt acca, z heißt zeta, r heißt erre. Sprich sie laut.",
+      "Beim Buchstabieren sagen Italiener oft A come Ancona, B come Bologna, also mit Städtenamen."
+     ],
+     "q": "Wie buchstabierst du deinen Vornamen auf Italienisch, Buchstabe für Buchstabe?",
+     "c": "Buchstabiere heute deinen Namen und deine Stadt dreimal laut auf Italienisch, ohne nachzusehen."
+    },
+    "es": {
+     "t": "El alfabeto italiano",
+     "g": "Aprende las 21 letras del alfabeto italiano y deletrea tu nombre en voz alta.",
+     "p": [
+      "El italiano usa 21 letras; j, k, w, x e y solo aparecen en palabras extranjeras como jeans o taxi.",
+      "Los nombres cambian: la h es acca, la z es zeta, la r es erre. Practícalos en voz alta.",
+      "Para deletrear, los italianos dicen A come Ancona, B come Bologna, con nombres de ciudades."
+     ],
+     "q": "¿Cómo deletreas tu nombre en italiano, letra por letra?",
+     "c": "Deletrea tu nombre y tu ciudad en italiano tres veces en voz alta, sin mirar."
+    },
+    "fr": {
+     "t": "L'alphabet italien",
+     "g": "Apprendre les 21 lettres de l'alphabet italien et épeler ton prénom à voix haute.",
+     "p": [
+      "L'italien utilise 21 lettres ; j, k, w, x et y n'apparaissent que dans des mots étrangers comme jeans ou taxi.",
+      "Les noms changent : h se dit acca, z se dit zeta, r se dit erre. Entraîne-toi à voix haute.",
+      "Pour épeler, les Italiens disent souvent A come Ancona, B come Bologna, avec des noms de villes."
+     ],
+     "q": "Comment épelles-tu ton prénom en italien, lettre par lettre ?",
+     "c": "Épelle ton prénom et ta ville en italien trois fois à voix haute, sans regarder."
+    },
+    "it": {
+     "t": "L'alfabeto italiano",
+     "g": "Impari le 21 lettere dell'alfabeto italiano e a fare lo spelling del tuo nome.",
+     "p": [
+      "L'italiano usa 21 lettere; j, k, w, x e y compaiono solo in parole straniere come jeans o taxi.",
+      "I nomi delle lettere: la h è acca, la z è zeta, la r è erre. Ripetili ad alta voce.",
+      "Per fare lo spelling si dice spesso A come Ancona, B come Bologna, con i nomi delle città."
+     ],
+     "q": "Come si scrive il tuo nome in italiano, lettera per lettera?",
+     "c": "Fai lo spelling del tuo nome e della tua città tre volte ad alta voce, senza guardare."
+    },
+    "pt": {
+     "t": "O alfabeto italiano",
+     "g": "Aprender as 21 letras do alfabeto italiano e soletrar o teu nome em voz alta.",
+     "p": [
+      "O italiano usa 21 letras; j, k, w, x e y só aparecem em palavras estrangeiras como jeans ou taxi.",
+      "Os nomes mudam: o h diz-se acca, o z diz-se zeta, o r diz-se erre. Pratica em voz alta.",
+      "Para soletrar, os italianos dizem A come Ancona, B come Bologna, com nomes de cidades."
+     ],
+     "q": "Como soletras o teu nome próprio em italiano, letra a letra?",
+     "c": "Soletra o teu nome e a tua cidade em italiano três vezes em voz alta, sem olhar."
+    },
+    "pt_BR": {
+     "t": "O alfabeto italiano",
+     "g": "Aprender as 21 letras do alfabeto italiano e soletrar seu nome em voz alta.",
+     "p": [
+      "O italiano usa 21 letras; j, k, w, x e y só aparecem em palavras estrangeiras como jeans ou taxi.",
+      "Os nomes mudam: o h se diz acca, o z se diz zeta, o r se diz erre. Pratique em voz alta.",
+      "Para soletrar, os italianos dizem A come Ancona, B come Bologna, com nomes de cidades."
+     ],
+     "q": "Como você soletra seu primeiro nome em italiano, letra por letra?",
+     "c": "Soletre seu nome e sua cidade em italiano três vezes em voz alta, sem olhar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'alfabeto",
+      "ex": "L'alfabeto italiano ha ventuno lettere."
+     },
+     {
+      "w": "la lettera",
+      "ex": "La lettera h non si pronuncia."
+     },
+     {
+      "w": "come si scrive?",
+      "ex": "Come si scrive il tuo nome?"
+     },
+     {
+      "w": "si scrive",
+      "ex": "Si scrive con due elle."
+     },
+     {
+      "w": "doppia",
+      "ex": "Pizza si scrive con la zeta doppia."
+     },
+     {
+      "w": "il nome",
+      "ex": "Il mio nome è Anna: a, enne, enne, a."
+     }
+    ],
+    "gram": "L'alfabeto italiano ha 21 lettere. J, k, w, x, y (i lunga, cappa, doppia vu, ics, ipsilon) si usano per parole straniere."
+   }
+  },
+  {
+   "d": 3,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Vowels and sweet sounds",
+     "g": "Pronounce the five Italian vowels clearly, the key to sounding natural.",
+     "p": [
+      "A, e, i, o, u always keep a clear, full sound; they never fade into a weak uh.",
+      "Almost every Italian word ends in a vowel, which gives the language its musical flow.",
+      "Say every vowel, even in a row: in aiuola you hear a-i-u-o-l-a."
+     ],
+     "q": "Which Italian word do you already know and love the sound of?",
+     "c": "Say amore, gelato, uno and musica slowly five times, opening your mouth on every vowel."
+    },
+    "de": {
+     "t": "Vokale und schöne Klänge",
+     "g": "Du sprichst die fünf italienischen Vokale klar aus, der Schlüssel zu einem natürlichen Klang.",
+     "p": [
+      "A, e, i, o, u klingen immer klar und voll, nie verschluckt oder abgeschwächt.",
+      "Fast jedes italienische Wort endet auf einen Vokal; das macht die Sprache so melodisch.",
+      "Sprich jeden Vokal aus, auch hintereinander: In aiuola hörst du a-i-u-o-l-a."
+     ],
+     "q": "Welches italienische Wort kennst du schon und magst du besonders wegen seines Klangs?",
+     "c": "Sag amore, gelato, uno und musica fünfmal langsam und öffne bei jedem Vokal den Mund."
+    },
+    "es": {
+     "t": "Vocales y sonidos dulces",
+     "g": "Pronuncia con claridad las cinco vocales italianas, la clave para sonar natural.",
+     "p": [
+      "A, e, i, o, u suenan siempre claras y plenas, como en español, nunca débiles.",
+      "Casi todas las palabras italianas terminan en vocal, y eso da su ritmo musical.",
+      "Pronuncia cada vocal, aunque vayan seguidas: en aiuola se oye a-i-u-o-l-a."
+     ],
+     "q": "¿Qué palabra italiana ya conoces y te encanta cómo suena?",
+     "c": "Di amore, gelato, uno y musica despacio cinco veces, abriendo bien la boca en cada vocal."
+    },
+    "fr": {
+     "t": "Voyelles et sons mélodieux",
+     "g": "Prononcer clairement les cinq voyelles italiennes, la clé d'un accent naturel.",
+     "p": [
+      "A, e, i, o, u gardent toujours un son clair et plein ; attention, u se dit ou.",
+      "Presque tous les mots italiens finissent par une voyelle, d'où la musicalité de la langue.",
+      "Prononce chaque voyelle, même à la suite : dans aiuola on entend a-i-ou-o-l-a."
+     ],
+     "q": "Quel mot italien connais-tu déjà et aimes-tu pour sa sonorité ?",
+     "c": "Dis amore, gelato, uno et musica lentement cinq fois, en ouvrant bien la bouche sur chaque voyelle."
+    },
+    "it": {
+     "t": "Le vocali e i suoni dolci",
+     "g": "Pronunci in modo chiaro le cinque vocali italiane, la chiave per un suono naturale.",
+     "p": [
+      "A, e, i, o, u hanno sempre un suono chiaro e pieno, mai debole o mangiato.",
+      "Quasi tutte le parole italiane finiscono con una vocale: ecco la musicalità della lingua.",
+      "Pronuncia ogni vocale, anche quando sono vicine: in aiuola senti a-i-u-o-l-a."
+     ],
+     "q": "Quale parola italiana conosci già e ti piace per il suo suono?",
+     "c": "Ripeti amore, gelato, uno e musica lentamente cinque volte, aprendo bene la bocca su ogni vocale."
+    },
+    "pt": {
+     "t": "Vogais e sons doces",
+     "g": "Pronunciar com clareza as cinco vogais italianas, a chave para soar natural.",
+     "p": [
+      "A, e, i, o, u têm sempre um som claro e cheio; nunca se fecham nem desaparecem como em português.",
+      "Quase todas as palavras italianas terminam em vogal, o que dá à língua a sua música.",
+      "Pronuncia cada vogal, mesmo seguidas: em aiuola ouve-se a-i-u-o-l-a."
+     ],
+     "q": "Que palavra italiana já conheces e adoras pelo som?",
+     "c": "Diz amore, gelato, uno e musica devagar cinco vezes, abrindo bem a boca em cada vogal."
+    },
+    "pt_BR": {
+     "t": "Vogais e sons doces",
+     "g": "Pronunciar com clareza as cinco vogais italianas, a chave para soar natural.",
+     "p": [
+      "A, e, i, o, u soam sempre claras e cheias; o final de gelato é o mesmo, não vira u.",
+      "Quase todas as palavras italianas terminam em vogal, e isso dá à língua sua música.",
+      "Pronuncie cada vogal, mesmo seguidas: em aiuola se ouve a-i-u-o-l-a."
+     ],
+     "q": "Qual palavra italiana você já conhece e adora pelo som?",
+     "c": "Diga amore, gelato, uno e musica devagar cinco vezes, abrindo bem a boca em cada vogal."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la vocale",
+      "ex": "L'italiano ha cinque vocali."
+     },
+     {
+      "w": "amore",
+      "ex": "Amore finisce con una vocale."
+     },
+     {
+      "w": "il gelato",
+      "ex": "Un gelato al limone, per favore."
+     },
+     {
+      "w": "uno",
+      "ex": "Uno, due, tre!"
+     },
+     {
+      "w": "la musica",
+      "ex": "La musica italiana è molto bella."
+     },
+     {
+      "w": "il caffè",
+      "ex": "Prendo un caffè al bar."
+     }
+    ],
+    "gram": "Le cinque vocali (a, e, i, o, u) hanno sempre un suono chiaro e pieno. Quasi tutte le parole finiscono con una vocale."
+   }
+  },
+  {
+   "d": 4,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "C and G: hard or soft?",
+     "g": "Know when c and g sound hard or soft, and how the h changes them.",
+     "p": [
+      "Before a, o, u, c and g are hard: casa (k), gatto (g as in go).",
+      "Before e and i they turn soft: cena sounds like chena, gelato like jelato.",
+      "Add an h to keep them hard: che (ke), chi (ki), spaghetti (ghe)."
+     ],
+     "q": "How would you pronounce Chianti and ciao? Which one has the hard sound?",
+     "c": "Find five Italian food words and sort them into hard or soft c and g."
+    },
+    "de": {
+     "t": "C und G: hart oder weich?",
+     "g": "Du lernst, wann c und g hart oder weich klingen und wie das h sie verändert.",
+     "p": [
+      "Vor a, o, u sind c und g hart: casa (k), gatto (g wie in gut).",
+      "Vor e und i werden sie weich: cena klingt wie tschena, gelato wie dschelato.",
+      "Ein h hält sie hart: che (ke), chi (ki), spaghetti (ge)."
+     ],
+     "q": "Wie sprichst du Chianti und ciao aus? Welches Wort hat den harten Laut?",
+     "c": "Such fünf italienische Essenswörter und sortiere sie nach hartem oder weichem c und g."
+    },
+    "es": {
+     "t": "C y G: ¿duras o suaves?",
+     "g": "Aprende cuándo c y g suenan duras o suaves y cómo las cambia la h.",
+     "p": [
+      "Ante a, o, u, c y g son duras: casa (k), gatto (g de gato).",
+      "Ante e, i se suavizan: cena suena chena y gelato suena yelato, con una y fuerte.",
+      "La h las mantiene duras: che (que), chi (qui), spaghetti (gue)."
+     ],
+     "q": "¿Cómo pronunciarías Chianti y ciao? ¿Cuál tiene el sonido duro?",
+     "c": "Busca cinco palabras italianas de comida y clasifícalas según la c o g dura o suave."
+    },
+    "fr": {
+     "t": "C et G : durs ou doux ?",
+     "g": "Savoir quand c et g sont durs ou doux, et comment le h les transforme.",
+     "p": [
+      "Devant a, o, u, c et g sont durs : casa (k), gatto (g de gare).",
+      "Devant e et i ils deviennent doux : cena se dit tchéna, gelato djélato.",
+      "Le h les garde durs : che (ké), chi (ki), spaghetti (gué)."
+     ],
+     "q": "Comment prononces-tu Chianti et ciao ? Lequel a le son dur ?",
+     "c": "Trouve cinq mots italiens de cuisine et classe-les selon le c ou g dur ou doux."
+    },
+    "it": {
+     "t": "C e G: dure o dolci?",
+     "g": "Capisci quando c e g hanno un suono duro o dolce e come le cambia la h.",
+     "p": [
+      "Davanti ad a, o, u la c e la g sono dure: casa, gatto.",
+      "Davanti a e, i diventano dolci: cena, gelato.",
+      "La h le fa restare dure: che, chi, spaghetti."
+     ],
+     "q": "Come pronunci Chianti e ciao? Quale delle due ha il suono duro?",
+     "c": "Trova cinque parole italiane di cibo e dividile tra c e g dure o dolci."
+    },
+    "pt": {
+     "t": "C e G: duros ou suaves?",
+     "g": "Saber quando o c e o g soam duros ou suaves e como o h os muda.",
+     "p": [
+      "Antes de a, o, u, c e g são duros: casa (k), gatto (g de gato).",
+      "Antes de e, i ficam suaves: cena soa tchena, gelato soa djelato.",
+      "O h mantém-nos duros: che (que), chi (qui), spaghetti (gue)."
+     ],
+     "q": "Como pronuncias Chianti e ciao? Qual tem o som duro?",
+     "c": "Encontra cinco palavras italianas de comida e separa-as por c ou g duro ou suave."
+    },
+    "pt_BR": {
+     "t": "C e G: duros ou suaves?",
+     "g": "Saber quando o c e o g soam duros ou suaves e como o h muda tudo.",
+     "p": [
+      "Antes de a, o, u, c e g são duros: casa (k), gatto (g de gato).",
+      "Antes de e, i ficam suaves: cena soa tchena, gelato soa djelato.",
+      "O h deixa os sons duros: che (que), chi (qui), spaghetti (gue)."
+     ],
+     "q": "Como você pronuncia Chianti e ciao? Qual tem o som duro?",
+     "c": "Encontre cinco palavras italianas de comida e separe por c ou g duro ou suave."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la casa",
+      "ex": "La casa è grande."
+     },
+     {
+      "w": "la cena",
+      "ex": "La cena è alle otto."
+     },
+     {
+      "w": "il gatto",
+      "ex": "Il gatto dorme sul divano."
+     },
+     {
+      "w": "il gelato",
+      "ex": "Il gelato è buonissimo."
+     },
+     {
+      "w": "che",
+      "ex": "Che bello!"
+     },
+     {
+      "w": "gli spaghetti",
+      "ex": "Mangio gli spaghetti con il pomodoro."
+     }
+    ],
+    "gram": "C e g sono dure davanti ad a, o, u (casa, gatto) e dolci davanti a e, i (cena, gelato). Con la h tornano dure: che, ghi."
+   }
+  },
+  {
+   "d": 5,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Mi chiamo... introducing yourself",
+     "g": "Introduce yourself in Italian and ask someone else their name.",
+     "p": [
+      "Say Mi chiamo Anna (my name is) or simply Sono Anna (I am Anna).",
+      "Ask a new friend Come ti chiami? and answer back with E tu?",
+      "Say Piacere when you meet someone; it means nice to meet you."
+     ],
+     "q": "Come ti chiami? Answer in Italian, then ask me back!",
+     "c": "Write a three-line introduction in Italian: greeting, your name and piacere."
+    },
+    "de": {
+     "t": "Mi chiamo... sich vorstellen",
+     "g": "Du stellst dich auf Italienisch vor und fragst andere nach ihrem Namen.",
+     "p": [
+      "Sag Mi chiamo Anna (ich heiße) oder einfach Sono Anna (ich bin Anna).",
+      "Frag neue Bekannte Come ti chiami? und gib die Frage mit E tu? zurück.",
+      "Sag Piacere, wenn du jemanden kennenlernst; es heißt freut mich."
+     ],
+     "q": "Come ti chiami? Antworte auf Italienisch und frag mich dann zurück!",
+     "c": "Schreib eine Vorstellung in drei Zeilen auf Italienisch: Gruß, Name und piacere."
+    },
+    "es": {
+     "t": "Mi chiamo... presentarte",
+     "g": "Preséntate en italiano y pregunta a otra persona cómo se llama.",
+     "p": [
+      "Di Mi chiamo Anna (me llamo) o simplemente Sono Anna (soy Anna).",
+      "Pregunta Come ti chiami? y devuelve la pregunta con E tu?",
+      "Di Piacere al conocer a alguien; significa encantado o encantada."
+     ],
+     "q": "Come ti chiami? Responde en italiano y luego pregúntame tú.",
+     "c": "Escribe una presentación de tres líneas en italiano: saludo, tu nombre y piacere."
+    },
+    "fr": {
+     "t": "Mi chiamo... se présenter",
+     "g": "Te présenter en italien et demander son prénom à quelqu'un.",
+     "p": [
+      "Dis Mi chiamo Anna (je m'appelle) ou simplement Sono Anna (je suis Anna).",
+      "Demande Come ti chiami? et renvoie la question avec E tu ?",
+      "Dis Piacere quand tu rencontres quelqu'un : c'est enchanté."
+     ],
+     "q": "Come ti chiami ? Réponds en italien, puis pose-moi la question !",
+     "c": "Écris une présentation de trois lignes en italien : salutation, prénom et piacere."
+    },
+    "it": {
+     "t": "Mi chiamo... presentarsi",
+     "g": "Impari a presentarti in italiano e a chiedere il nome a qualcuno.",
+     "p": [
+      "Di' Mi chiamo Anna oppure semplicemente Sono Anna.",
+      "Chiedi Come ti chiami? e rilancia la domanda con E tu?",
+      "Quando conosci qualcuno di' Piacere: è il modo più naturale per salutarlo."
+     ],
+     "q": "Come ti chiami? Rispondi in italiano e poi fammi la stessa domanda!",
+     "c": "Scrivi una presentazione di tre righe in italiano: saluto, nome e piacere."
+    },
+    "pt": {
+     "t": "Mi chiamo... apresentar-se",
+     "g": "Apresentar-te em italiano e perguntar o nome a alguém.",
+     "p": [
+      "Diz Mi chiamo Anna (chamo-me) ou simplesmente Sono Anna (sou a Anna).",
+      "Pergunta Come ti chiami? e devolve a pergunta com E tu?",
+      "Diz Piacere quando conheces alguém; significa muito prazer."
+     ],
+     "q": "Come ti chiami? Responde em italiano e depois pergunta-me também!",
+     "c": "Escreve uma apresentação de três linhas em italiano: cumprimento, nome e piacere."
+    },
+    "pt_BR": {
+     "t": "Mi chiamo... se apresentando",
+     "g": "Se apresentar em italiano e perguntar o nome de alguém.",
+     "p": [
+      "Diga Mi chiamo Anna (meu nome é) ou simplesmente Sono Anna (sou a Anna).",
+      "Pergunte Come ti chiami? e devolva a pergunta com E tu?",
+      "Diga Piacere quando conhecer alguém; quer dizer muito prazer."
+     ],
+     "q": "Come ti chiami? Responda em italiano e depois me pergunte também!",
+     "c": "Escreva uma apresentação de três linhas em italiano: cumprimento, nome e piacere."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi chiamo",
+      "ex": "Mi chiamo Luca."
+     },
+     {
+      "w": "sono",
+      "ex": "Sono Maria, piacere!"
+     },
+     {
+      "w": "piacere",
+      "ex": "Piacere, io sono Paolo."
+     },
+     {
+      "w": "come ti chiami?",
+      "ex": "Ciao! Come ti chiami?"
+     },
+     {
+      "w": "e tu?",
+      "ex": "Io mi chiamo Sara. E tu?"
+     },
+     {
+      "w": "molto lieto",
+      "ex": "Molto lieto, signor Bianchi."
+     }
+    ],
+    "gram": "Mi chiamo + nome per presentarsi; come ti chiami? per chiedere il nome. Piacere si dice quando si conosce qualcuno."
+   }
+  },
+  {
+   "d": 6,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Tu or Lei? Formal and informal",
+     "g": "Choose between informal tu and formal Lei so you always sound respectful.",
+     "p": [
+      "Use tu with friends, family, children and people your age in relaxed settings.",
+      "Use Lei with strangers, older people, shop staff and in offices; the verb takes the she form.",
+      "If unsure, start with Lei; an Italian may smile and say Diamoci del tu!"
+     ],
+     "q": "Would you use tu or Lei with a waiter in a restaurant? Why?",
+     "c": "Ask come stai? and come sta? aloud, imagining a friend and then your new boss."
+    },
+    "de": {
+     "t": "Tu oder Lei? Du und Sie",
+     "g": "Du wählst zwischen dem lockeren tu und dem höflichen Lei und klingst immer respektvoll.",
+     "p": [
+      "Tu nimmst du bei Freunden, Familie, Kindern und Gleichaltrigen in lockerer Runde.",
+      "Lei nimmst du bei Fremden, Älteren, Verkaufspersonal und im Büro; das Verb steht in der sie-Form.",
+      "Im Zweifel beginne mit Lei; oft sagt man dir dann lächelnd Diamoci del tu!"
+     ],
+     "q": "Würdest du einen Kellner im Restaurant mit tu oder Lei ansprechen? Warum?",
+     "c": "Sag laut come stai? und come sta?, einmal zu einem Freund, einmal zur neuen Chefin."
+    },
+    "es": {
+     "t": "¿Tu o Lei? Formal e informal",
+     "g": "Elige entre el tu informal y el Lei formal para sonar siempre respetuoso.",
+     "p": [
+      "Usa tu con amigos, familia, niños y gente de tu edad en ambientes relajados.",
+      "Usa Lei con desconocidos, mayores, dependientes y en oficinas; el verbo va en tercera persona, como usted.",
+      "Si dudas, empieza con Lei; un italiano quizá sonría y diga Diamoci del tu!"
+     ],
+     "q": "¿Usarías tu o Lei con un camarero en un restaurante? ¿Por qué?",
+     "c": "Di en voz alta come stai? y come sta?, imaginando a un amigo y luego a tu nueva jefa."
+    },
+    "fr": {
+     "t": "Tu ou Lei ? Formel et informel",
+     "g": "Choisir entre le tu familier et le Lei poli pour toujours rester respectueux.",
+     "p": [
+      "Utilise tu avec les amis, la famille, les enfants et les gens de ton âge dans un cadre détendu.",
+      "Utilise Lei avec les inconnus, les aînés, les vendeurs et au bureau ; le verbe se met à la 3e personne.",
+      "En cas de doute, commence par Lei ; un Italien dira peut-être en souriant Diamoci del tu !"
+     ],
+     "q": "Utiliserais-tu tu ou Lei avec un serveur au restaurant ? Pourquoi ?",
+     "c": "Dis à voix haute come stai ? et come sta ?, à un ami puis à ta nouvelle cheffe."
+    },
+    "it": {
+     "t": "Tu o Lei? Formale e informale",
+     "g": "Impari a scegliere tra il tu informale e il Lei formale per essere sempre rispettoso.",
+     "p": [
+      "Usa il tu con amici, famiglia, bambini e coetanei in situazioni rilassate.",
+      "Usa il Lei con sconosciuti, persone anziane, commessi e in ufficio; il verbo va alla terza persona.",
+      "Nel dubbio comincia con il Lei: spesso l'altro ti dirà sorridendo Diamoci del tu!"
+     ],
+     "q": "Useresti il tu o il Lei con un cameriere al ristorante? Perché?",
+     "c": "Di' ad alta voce come stai? e come sta?, pensando prima a un amico e poi alla nuova capa."
+    },
+    "pt": {
+     "t": "Tu ou Lei? Formal e informal",
+     "g": "Escolher entre o tu informal e o Lei formal para soares sempre respeitoso.",
+     "p": [
+      "Usa tu com amigos, família, crianças e pessoas da tua idade em ambientes descontraídos.",
+      "Usa Lei com desconhecidos, pessoas mais velhas, empregados de loja e no escritório; o verbo vai na 3.ª pessoa.",
+      "Na dúvida, começa com Lei; um italiano pode sorrir e dizer Diamoci del tu!"
+     ],
+     "q": "Usarias tu ou Lei com um empregado de mesa num restaurante? Porquê?",
+     "c": "Diz em voz alta come stai? e come sta?, a pensar num amigo e depois na tua nova chefe."
+    },
+    "pt_BR": {
+     "t": "Tu ou Lei? Formal e informal",
+     "g": "Escolher entre o tu informal e o Lei formal para soar sempre respeitoso.",
+     "p": [
+      "Use tu com amigos, família, crianças e gente da sua idade em clima descontraído.",
+      "Use Lei com desconhecidos, pessoas mais velhas, vendedores e no escritório; o verbo vai na 3ª pessoa, como o senhor.",
+      "Na dúvida, comece com Lei; o italiano pode sorrir e dizer Diamoci del tu!"
+     ],
+     "q": "Você usaria tu ou Lei com um garçom no restaurante? Por quê?",
+     "c": "Diga em voz alta come stai? e come sta?, pensando num amigo e depois na sua nova chefe."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tu",
+      "ex": "Tu sei molto gentile."
+     },
+     {
+      "w": "Lei",
+      "ex": "Lei è il signor Verdi?"
+     },
+     {
+      "w": "signore",
+      "ex": "Buongiorno, signore!"
+     },
+     {
+      "w": "signora",
+      "ex": "Scusi, signora, è libero?"
+     },
+     {
+      "w": "dottore",
+      "ex": "Buonasera, dottore, come sta?"
+     },
+     {
+      "w": "dare del tu",
+      "ex": "Possiamo darci del tu?"
+     }
+    ],
+    "gram": "Tu si usa con amici, bambini e famiglia. Lei (con la L maiuscola nello scritto) è formale e usa il verbo alla terza persona."
+   }
+  },
+  {
+   "d": 7,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "How are you? Come stai?",
+     "g": "Ask how someone is and answer naturally in Italian.",
+     "p": [
+      "Ask a friend Come stai? and someone formal Come sta?",
+      "Answer with bene (well), benissimo (great), così così (so-so) or non c'è male (not bad).",
+      "Always add grazie and return the question: E tu? or E Lei?"
+     ],
+     "q": "Come stai oggi? Answer me in Italian with one of today's phrases.",
+     "c": "Ask three people how they are in Italian today, or practise both versions in front of a mirror."
+    },
+    "de": {
+     "t": "Wie geht's? Come stai?",
+     "g": "Du fragst, wie es jemandem geht, und antwortest natürlich auf Italienisch.",
+     "p": [
+      "Frag Freunde Come stai? und förmlich Come sta?",
+      "Antworte mit bene (gut), benissimo (sehr gut), così così (so lala) oder non c'è male (nicht schlecht).",
+      "Sag immer grazie dazu und frag zurück: E tu? oder E Lei?"
+     ],
+     "q": "Come stai oggi? Antworte mir auf Italienisch mit einem der neuen Ausdrücke.",
+     "c": "Frag heute drei Leute auf Italienisch, wie es ihnen geht, oder übe beide Formen vor dem Spiegel."
+    },
+    "es": {
+     "t": "¿Cómo estás? Come stai?",
+     "g": "Pregunta cómo está alguien y responde con naturalidad en italiano.",
+     "p": [
+      "Pregunta a un amigo Come stai? y a alguien de usted Come sta?",
+      "Responde bene (bien), benissimo (muy bien), così così (más o menos) o non c'è male (no está mal).",
+      "Añade siempre grazie y devuelve la pregunta: E tu? o E Lei?"
+     ],
+     "q": "Come stai oggi? Respóndeme en italiano con una de las frases de hoy.",
+     "c": "Pregunta hoy a tres personas cómo están en italiano, o practica ambas formas frente al espejo."
+    },
+    "fr": {
+     "t": "Comment ça va ? Come stai ?",
+     "g": "Demander comment va quelqu'un et répondre naturellement en italien.",
+     "p": [
+      "Demande Come stai ? à un ami et Come sta ? quand tu vouvoies.",
+      "Réponds bene (bien), benissimo (très bien), così così (comme ci comme ça) ou non c'è male (pas mal).",
+      "Ajoute toujours grazie et renvoie la question : E tu ? ou E Lei ?"
+     ],
+     "q": "Come stai oggi ? Réponds-moi en italien avec une expression du jour.",
+     "c": "Demande à trois personnes comment elles vont en italien, ou entraîne-toi devant le miroir."
+    },
+    "it": {
+     "t": "Come stai? Chiedere come va",
+     "g": "Impari a chiedere come sta qualcuno e a rispondere in modo naturale.",
+     "p": [
+      "Chiedi Come stai? a un amico e Come sta? a una persona a cui dai del Lei.",
+      "Rispondi bene, benissimo, così così o non c'è male, secondo il tuo umore.",
+      "Aggiungi sempre grazie e restituisci la domanda: E tu? oppure E Lei?"
+     ],
+     "q": "Come stai oggi? Rispondimi con una delle espressioni di oggi.",
+     "c": "Oggi chiedi a tre persone come stanno, o allenati con le due forme davanti allo specchio."
+    },
+    "pt": {
+     "t": "Como estás? Come stai?",
+     "g": "Perguntar como alguém está e responder com naturalidade em italiano.",
+     "p": [
+      "Pergunta a um amigo Come stai? e a alguém formal Come sta?",
+      "Responde bene (bem), benissimo (muito bem), così così (mais ou menos) ou non c'è male (nada mal).",
+      "Junta sempre grazie e devolve a pergunta: E tu? ou E Lei?"
+     ],
+     "q": "Come stai oggi? Responde-me em italiano com uma das expressões de hoje.",
+     "c": "Pergunta hoje a três pessoas como estão em italiano, ou pratica as duas formas ao espelho."
+    },
+    "pt_BR": {
+     "t": "Tudo bem? Come stai?",
+     "g": "Perguntar como alguém está e responder com naturalidade em italiano.",
+     "p": [
+      "Pergunte a um amigo Come stai? e a alguém formal Come sta?",
+      "Responda bene (bem), benissimo (ótimo), così così (mais ou menos) ou non c'è male (nada mal).",
+      "Sempre acrescente grazie e devolva a pergunta: E tu? ou E Lei?"
+     ],
+     "q": "Come stai oggi? Me responda em italiano com uma das expressões de hoje.",
+     "c": "Pergunte hoje a três pessoas como estão em italiano, ou pratique as duas formas no espelho."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "come stai?",
+      "ex": "Ciao Marta, come stai?"
+     },
+     {
+      "w": "come sta?",
+      "ex": "Buongiorno, signor Neri, come sta?"
+     },
+     {
+      "w": "bene, grazie",
+      "ex": "Bene, grazie, e tu?"
+     },
+     {
+      "w": "benissimo",
+      "ex": "Oggi sto benissimo!"
+     },
+     {
+      "w": "così così",
+      "ex": "Sto così così, sono stanco."
+     },
+     {
+      "w": "non c'è male",
+      "ex": "Non c'è male, grazie."
+     }
+    ],
+    "gram": "Stare indica come ci si sente: sto, stai, sta. Come stai? è informale, come sta? è formale."
+   }
+  },
+  {
+   "d": 8,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 0 to 20",
+     "g": "Count from zero to twenty and use numbers for ages and phone numbers.",
+     "p": [
+      "Learn 0 to 10 first: zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci.",
+      "From 11 to 16 the ending is -dici (undici, sedici); from 17 to 19 dici comes first (diciassette).",
+      "For age, Italians use avere: Ho dieci anni literally means I have ten years."
+     ],
+     "q": "Can you say your phone number in Italian, digit by digit?",
+     "c": "Count from 0 to 20 and back in Italian while you brush your teeth."
+    },
+    "de": {
+     "t": "Zahlen von 0 bis 20",
+     "g": "Du zählst von null bis zwanzig und nutzt Zahlen für Alter und Telefonnummern.",
+     "p": [
+      "Lerne zuerst 0 bis 10: zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci.",
+      "Von 11 bis 16 endet es auf -dici (undici, sedici); ab 17 steht dici vorne (diciassette).",
+      "Fürs Alter nutzt man avere: Ho dieci anni heißt wörtlich ich habe zehn Jahre."
+     ],
+     "q": "Kannst du deine Telefonnummer auf Italienisch sagen, Ziffer für Ziffer?",
+     "c": "Zähl beim Zähneputzen auf Italienisch von 0 bis 20 und wieder zurück."
+    },
+    "es": {
+     "t": "Números del 0 al 20",
+     "g": "Cuenta de cero a veinte y usa los números para la edad y el teléfono.",
+     "p": [
+      "Aprende primero del 0 al 10: zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci.",
+      "Del 11 al 16 terminan en -dici (undici, sedici); del 17 al 19 dici va delante (diciassette).",
+      "Para la edad se usa avere, como en español: Ho dieci anni, tengo diez años."
+     ],
+     "q": "¿Puedes decir tu número de teléfono en italiano, cifra por cifra?",
+     "c": "Cuenta del 0 al 20 y al revés en italiano mientras te cepillas los dientes."
+    },
+    "fr": {
+     "t": "Les nombres de 0 à 20",
+     "g": "Compter de zéro à vingt et utiliser les nombres pour l'âge et le téléphone.",
+     "p": [
+      "Apprends d'abord 0 à 10 : zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci.",
+      "De 11 à 16 la fin est -dici (undici, sedici) ; de 17 à 19, dici vient devant (diciassette).",
+      "Pour l'âge, on utilise avere comme en français : Ho dieci anni, j'ai dix ans."
+     ],
+     "q": "Peux-tu dire ton numéro de téléphone en italien, chiffre par chiffre ?",
+     "c": "Compte de 0 à 20 et à l'envers en italien en te brossant les dents."
+    },
+    "it": {
+     "t": "I numeri da 0 a 20",
+     "g": "Impari a contare da zero a venti e a usare i numeri per età e telefono.",
+     "p": [
+      "Impara prima da 0 a 10: zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci.",
+      "Da 11 a 16 finiscono in -dici (undici, sedici); da 17 a 19 dici va davanti (diciassette).",
+      "Per l'età si usa avere: Ho dieci anni."
+     ],
+     "q": "Sai dire il tuo numero di telefono in italiano, cifra per cifra?",
+     "c": "Conta da 0 a 20 e poi all'indietro mentre ti lavi i denti."
+    },
+    "pt": {
+     "t": "Números de 0 a 20",
+     "g": "Contar de zero a vinte e usar os números para a idade e o telefone.",
+     "p": [
+      "Aprende primeiro de 0 a 10: zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci.",
+      "De 11 a 16 terminam em -dici (undici, sedici); de 17 a 19 o dici vem à frente (diciassette).",
+      "Para a idade usa-se avere, como em português: Ho dieci anni, tenho dez anos."
+     ],
+     "q": "Consegues dizer o teu número de telefone em italiano, algarismo a algarismo?",
+     "c": "Conta de 0 a 20 e de volta em italiano enquanto lavas os dentes."
+    },
+    "pt_BR": {
+     "t": "Números de 0 a 20",
+     "g": "Contar de zero a vinte e usar os números para idade e telefone.",
+     "p": [
+      "Aprenda primeiro de 0 a 10: zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci.",
+      "De 11 a 16 terminam em -dici (undici, sedici); de 17 a 19 o dici vem antes (diciassette).",
+      "Para a idade se usa avere, como em português: Ho dieci anni, tenho dez anos."
+     ],
+     "q": "Você consegue dizer seu número de telefone em italiano, dígito por dígito?",
+     "c": "Conte de 0 a 20 e de volta em italiano enquanto escova os dentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "zero",
+      "ex": "Il mio numero comincia con zero."
+     },
+     {
+      "w": "tre",
+      "ex": "Ho tre fratelli."
+     },
+     {
+      "w": "sette",
+      "ex": "La lezione è alle sette."
+     },
+     {
+      "w": "dieci",
+      "ex": "Mia figlia ha dieci anni."
+     },
+     {
+      "w": "quindici",
+      "ex": "Siamo in quindici in classe."
+     },
+     {
+      "w": "venti",
+      "ex": "Ho venti euro."
+     }
+    ],
+    "gram": "Da 0 a 20: zero, uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci, undici... sedici, diciassette, diciotto, diciannove, venti."
+   }
+  },
+  {
+   "d": 9,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Where are you from? Di dove sei?",
+     "g": "Say where you come from and name common nationalities in Italian.",
+     "p": [
+      "Ask Di dove sei? (informal) or Di dov'è? (formal).",
+      "With a city use sono di: Sono di Londra. With a country use vengo da: Vengo dal Canada.",
+      "Nationalities change ending: italiano for a man, italiana for a woman; inglese stays the same."
+     ],
+     "q": "Di dove sei? Tell me your city and your nationality in Italian.",
+     "c": "Write the nationality of five friends or famous people in Italian, male or female form."
+    },
+    "de": {
+     "t": "Woher kommst du? Di dove sei?",
+     "g": "Du sagst, woher du kommst, und nennst gängige Nationalitäten auf Italienisch.",
+     "p": [
+      "Frag Di dove sei? (Du) oder Di dov'è? (Sie).",
+      "Mit Städten sagst du sono di: Sono di Berlino. Mit Ländern vengo da: Vengo dalla Germania.",
+      "Nationalitäten ändern die Endung: tedesco für Männer, tedesca für Frauen; svizzero/svizzera auch."
+     ],
+     "q": "Di dove sei? Nenn mir deine Stadt und deine Nationalität auf Italienisch.",
+     "c": "Schreib die Nationalität von fünf Freunden oder Promis auf Italienisch, männlich oder weiblich."
+    },
+    "es": {
+     "t": "¿De dónde eres? Di dove sei?",
+     "g": "Di de dónde eres y nombra nacionalidades comunes en italiano.",
+     "p": [
+      "Pregunta Di dove sei? (tú) o Di dov'è? (usted).",
+      "Con ciudad usa sono di: Sono di Madrid. Con país usa vengo da: Vengo dalla Spagna.",
+      "Las nacionalidades cambian: spagnolo para él, spagnola para ella; inglese no cambia."
+     ],
+     "q": "Di dove sei? Dime tu ciudad y tu nacionalidad en italiano.",
+     "c": "Escribe en italiano la nacionalidad de cinco amigos o famosos, en masculino o femenino."
+    },
+    "fr": {
+     "t": "Tu viens d'où ? Di dove sei ?",
+     "g": "Dire d'où tu viens et nommer des nationalités courantes en italien.",
+     "p": [
+      "Demande Di dove sei ? (tu) ou Di dov'è ? (vous).",
+      "Avec une ville : sono di, Sono di Parigi. Avec un pays : vengo da, Vengo dalla Francia.",
+      "Les nationalités s'accordent : francese ne change pas, mais italiano devient italiana au féminin."
+     ],
+     "q": "Di dove sei ? Dis-moi ta ville et ta nationalité en italien.",
+     "c": "Écris la nationalité de cinq amis ou célébrités en italien, au masculin ou au féminin."
+    },
+    "it": {
+     "t": "Di dove sei? Provenienza",
+     "g": "Impari a dire da dove vieni e a usare le nazionalità più comuni.",
+     "p": [
+      "Chiedi Di dove sei? a un amico o Di dov'è? con il Lei.",
+      "Con la città usa sono di: Sono di Torino. Con il paese usa vengo da: Vengo dal Giappone.",
+      "Le nazionalità cambiano: italiano e italiana; quelle in -ese come francese restano uguali."
+     ],
+     "q": "Di dove sei? Dimmi la tua città e la tua nazionalità.",
+     "c": "Scrivi la nazionalità di cinque amici o personaggi famosi, al maschile o al femminile."
+    },
+    "pt": {
+     "t": "De onde és? Di dove sei?",
+     "g": "Dizer de onde vens e nomear nacionalidades comuns em italiano.",
+     "p": [
+      "Pergunta Di dove sei? (tu) ou Di dov'è? (formal).",
+      "Com cidade usa sono di: Sono di Lisbona. Com país usa vengo da: Vengo dal Portogallo.",
+      "As nacionalidades mudam: portoghese não muda, mas italiano passa a italiana no feminino."
+     ],
+     "q": "Di dove sei? Diz-me a tua cidade e a tua nacionalidade em italiano.",
+     "c": "Escreve em italiano a nacionalidade de cinco amigos ou famosos, no masculino ou feminino."
+    },
+    "pt_BR": {
+     "t": "De onde você é? Di dove sei?",
+     "g": "Dizer de onde você vem e nomear nacionalidades comuns em italiano.",
+     "p": [
+      "Pergunte Di dove sei? (informal) ou Di dov'è? (formal).",
+      "Com cidade use sono di: Sono di San Paolo. Com país use vengo da: Vengo dal Brasile.",
+      "As nacionalidades mudam: brasiliano para ele, brasiliana para ela; inglese não muda."
+     ],
+     "q": "Di dove sei? Me diga sua cidade e sua nacionalidade em italiano.",
+     "c": "Escreva em italiano a nacionalidade de cinco amigos ou famosos, no masculino ou feminino."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "di dove sei?",
+      "ex": "Ciao Paolo, di dove sei?"
+     },
+     {
+      "w": "sono di",
+      "ex": "Sono di Napoli."
+     },
+     {
+      "w": "vengo da",
+      "ex": "Vengo dal Brasile."
+     },
+     {
+      "w": "italiano / italiana",
+      "ex": "Lei è italiana, di Firenze."
+     },
+     {
+      "w": "tedesco / tedesca",
+      "ex": "Klaus è tedesco."
+     },
+     {
+      "w": "spagnolo / spagnola",
+      "ex": "La mia amica è spagnola."
+     }
+    ],
+    "gram": "Sono di + città (sono di Roma). Vengo da + paese con articolo: vengo dalla Francia, dal Brasile, dagli Stati Uniti."
+   }
+  },
+  {
+   "d": 10,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Essere: the verb to be",
+     "g": "Conjugate essere in the present and use it to describe people and places.",
+     "p": [
+      "The forms: sono, sei, è, siamo, siete, sono. Note that io sono and loro sono look the same.",
+      "Italians usually drop the pronoun: Sono stanco is enough, the verb shows who.",
+      "Use essere for who and what: Sono Marco, È italiana, Roma è bellissima."
+     ],
+     "q": "How would you describe your city with essere in one short sentence?",
+     "c": "Write five sentences with five different forms of essere about people you know."
+    },
+    "de": {
+     "t": "Essere: das Verb sein",
+     "g": "Du konjugierst essere im Präsens und beschreibst damit Menschen und Orte.",
+     "p": [
+      "Die Formen: sono, sei, è, siamo, siete, sono. Achtung: io sono und loro sono sind gleich.",
+      "Das Pronomen fällt meist weg: Sono stanco reicht, das Verb zeigt die Person.",
+      "Mit essere sagst du, wer und wie: Sono Marco, È italiana, Roma è bellissima."
+     ],
+     "q": "Wie beschreibst du deine Stadt mit essere in einem kurzen Satz?",
+     "c": "Schreib fünf Sätze mit fünf verschiedenen Formen von essere über Menschen, die du kennst."
+    },
+    "es": {
+     "t": "Essere: el verbo ser",
+     "g": "Conjuga essere en presente y úsalo para describir personas y lugares.",
+     "p": [
+      "Las formas: sono, sei, è, siamo, siete, sono. Ojo: io sono y loro sono son iguales.",
+      "Como en español, el pronombre suele omitirse: Sono stanco, estoy cansado.",
+      "Essere sirve para ser y a menudo para estar: Sono Marco, Roma è bellissima, Sono a casa."
+     ],
+     "q": "¿Cómo describirías tu ciudad con essere en una frase corta?",
+     "c": "Escribe cinco frases con cinco formas distintas de essere sobre gente que conoces."
+    },
+    "fr": {
+     "t": "Essere : le verbe être",
+     "g": "Conjuguer essere au présent et l'utiliser pour décrire personnes et lieux.",
+     "p": [
+      "Les formes : sono, sei, è, siamo, siete, sono. Attention, io sono et loro sono sont identiques.",
+      "On omet souvent le pronom : Sono stanco suffit, le verbe indique la personne.",
+      "Essere dit qui et comment : Sono Marco, È italiana, Roma è bellissima."
+     ],
+     "q": "Comment décrirais-tu ta ville avec essere en une phrase courte ?",
+     "c": "Écris cinq phrases avec cinq formes différentes d'essere sur des gens que tu connais."
+    },
+    "it": {
+     "t": "Essere: il verbo più importante",
+     "g": "Impari il presente di essere e lo usi per descrivere persone e luoghi.",
+     "p": [
+      "Le forme: sono, sei, è, siamo, siete, sono. Attenzione: io sono e loro sono sono uguali.",
+      "Di solito il pronome non si dice: Sono stanco basta, il verbo indica la persona.",
+      "Con essere dici chi e come: Sono Marco, È italiana, Roma è bellissima."
+     ],
+     "q": "Come descriveresti la tua città con essere in una frase breve?",
+     "c": "Scrivi cinque frasi con cinque forme diverse di essere su persone che conosci."
+    },
+    "pt": {
+     "t": "Essere: o verbo ser",
+     "g": "Conjugar essere no presente e usá-lo para descrever pessoas e lugares.",
+     "p": [
+      "As formas: sono, sei, è, siamo, siete, sono. Atenção: io sono e loro sono são iguais.",
+      "Como em português, o pronome costuma cair: Sono stanco, estou cansado.",
+      "Essere traduz ser e muitas vezes estar: Sono Marco, Roma è bellissima, Sono a casa."
+     ],
+     "q": "Como descreverias a tua cidade com essere numa frase curta?",
+     "c": "Escreve cinco frases com cinco formas diferentes de essere sobre pessoas que conheces."
+    },
+    "pt_BR": {
+     "t": "Essere: o verbo ser",
+     "g": "Conjugar essere no presente e usar para descrever pessoas e lugares.",
+     "p": [
+      "As formas: sono, sei, è, siamo, siete, sono. Atenção: io sono e loro sono são iguais.",
+      "Como em português, o pronome costuma sumir: Sono stanco, estou cansado.",
+      "Essere vale para ser e muitas vezes estar: Sono Marco, Roma è bellissima, Sono a casa."
+     ],
+     "q": "Como você descreveria sua cidade com essere numa frase curta?",
+     "c": "Escreva cinco frases com cinco formas diferentes de essere sobre pessoas que você conhece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "io sono",
+      "ex": "Io sono studente."
+     },
+     {
+      "w": "tu sei",
+      "ex": "Tu sei molto simpatico."
+     },
+     {
+      "w": "lui / lei è",
+      "ex": "Lei è una brava cuoca."
+     },
+     {
+      "w": "noi siamo",
+      "ex": "Noi siamo amici."
+     },
+     {
+      "w": "voi siete",
+      "ex": "Voi siete di Milano?"
+     },
+     {
+      "w": "loro sono",
+      "ex": "Loro sono in vacanza."
+     }
+    ],
+    "gram": "Essere al presente: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono. Il pronome spesso si omette: sono stanco."
+   }
+  }
+ ]
+}

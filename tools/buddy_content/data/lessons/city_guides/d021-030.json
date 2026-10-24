@@ -1,0 +1,835 @@
+{
+ "topic": "city_guides",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Taxis and ride apps",
+     "g": "Learn when a taxi is worth it and how to agree on a route politely.",
+     "p": [
+      "Taxis shine late at night, with heavy luggage, in a group or when public transport doesn't reach.",
+      "Use official taxi ranks or a known app, and check the meter is on or the price is agreed before you go.",
+      "Show the address written down or on a map; it avoids confusion with tricky names and accents."
+     ],
+     "q": "When do you think a taxi is really worth it?",
+     "c": "Save your stay's address in the local language and script, ready to show a driver."
+    },
+    "de": {
+     "t": "Taxis und Fahrdienst-Apps",
+     "g": "Lerne, wann sich ein Taxi lohnt und wie du die Route höflich absprichst.",
+     "p": [
+      "Taxis lohnen sich spät nachts, mit schwerem Gepäck, in der Gruppe oder wo kein Nahverkehr fährt.",
+      "Nutze offizielle Taxistände oder eine bekannte App und prüfe, ob das Taxameter läuft oder der Preis feststeht.",
+      "Zeig die Adresse schriftlich oder auf der Karte; das vermeidet Verwechslungen bei schwierigen Namen."
+     ],
+     "q": "Wann lohnt sich deiner Meinung nach ein Taxi wirklich?",
+     "c": "Speichere die Adresse deiner Unterkunft in Landessprache und -schrift, bereit für den Fahrer."
+    },
+    "es": {
+     "t": "Taxis y apps de transporte",
+     "g": "Aprende cuándo compensa un taxi y cómo acordar la ruta con amabilidad.",
+     "p": [
+      "El taxi brilla de madrugada, con maletas pesadas, en grupo o donde no llega el transporte público.",
+      "Usa paradas oficiales o una app conocida y comprueba que el taxímetro va encendido o que el precio está pactado.",
+      "Enseña la dirección por escrito o en un mapa; evita confusiones con nombres y acentos difíciles."
+     ],
+     "q": "¿Cuándo crees que de verdad merece la pena un taxi?",
+     "c": "Guarda la dirección de tu alojamiento en el idioma y la escritura locales, lista para enseñarla al taxista."
+    },
+    "fr": {
+     "t": "Taxis et applis de VTC",
+     "g": "Apprends quand un taxi vaut le coup et comment convenir poliment de l'itinéraire.",
+     "p": [
+      "Le taxi est idéal tard le soir, avec de gros bagages, en groupe ou là où les transports ne vont pas.",
+      "Prends un taxi à une station officielle ou via une appli connue, et vérifie le compteur ou le prix convenu.",
+      "Montre l'adresse écrite ou sur une carte : cela évite les malentendus avec les noms difficiles."
+     ],
+     "q": "Selon toi, quand un taxi vaut-il vraiment le coup ?",
+     "c": "Enregistre l'adresse de ton logement dans la langue et l'écriture locales, prête à montrer au chauffeur."
+    },
+    "it": {
+     "t": "Taxi e app di trasporto",
+     "g": "Impara quando conviene un taxi e come concordare il percorso con gentilezza.",
+     "p": [
+      "Il taxi è ideale a tarda notte, con valigie pesanti, in gruppo o dove i mezzi pubblici non arrivano.",
+      "Usa i posteggi ufficiali o un'app conosciuta e controlla che il tassametro sia acceso o il prezzo concordato.",
+      "Mostra l'indirizzo scritto o sulla mappa: eviti equivoci con nomi e pronunce difficili."
+     ],
+     "q": "Secondo te, quando vale davvero la pena prendere un taxi?",
+     "c": "Salva l'indirizzo del tuo alloggio nella lingua e nella scrittura locali, pronto da mostrare al tassista."
+    },
+    "pt": {
+     "t": "Táxis e aplicações de transporte",
+     "g": "Aprende quando compensa um táxi e como combinar o percurso com simpatia.",
+     "p": [
+      "O táxi é ideal tarde da noite, com malas pesadas, em grupo ou onde os transportes públicos não chegam.",
+      "Usa praças de táxis oficiais ou uma aplicação conhecida e confirma o taxímetro ligado ou o preço combinado.",
+      "Mostra a morada escrita ou num mapa; evita confusões com nomes e pronúncias difíceis."
+     ],
+     "q": "Quando achas que um táxi compensa mesmo?",
+     "c": "Guarda a morada do teu alojamento na língua e na escrita locais, pronta para mostrar ao motorista."
+    },
+    "pt_BR": {
+     "t": "Táxis e apps de transporte",
+     "g": "Aprenda quando vale a pena um táxi e como combinar o trajeto com educação.",
+     "p": [
+      "O táxi é ideal tarde da noite, com malas pesadas, em grupo ou onde o transporte público não chega.",
+      "Use pontos de táxi oficiais ou um app conhecido e confira o taxímetro ligado ou o preço combinado.",
+      "Mostre o endereço escrito ou no mapa; isso evita confusão com nomes e pronúncias difíceis."
+     ],
+     "q": "Quando você acha que um táxi vale mesmo a pena?",
+     "c": "Salve o endereço da sua hospedagem no idioma e na escrita locais, pronto para mostrar ao motorista."
+    }
+   }
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Cycling in the city",
+     "g": "Discover bike lanes, shared bikes and safety tips for riding in traffic.",
+     "p": [
+      "Amsterdam and Copenhagen are famous for cycling, with wide lanes and their own traffic lights for bikes.",
+      "Shared bikes let you unlock a bike with an app or card and leave it at another station.",
+      "Ride in bike lanes, signal turns with your arm, use lights at night, and a helmet is a smart choice."
+     ],
+     "q": "Would you dare to cycle in a big city you didn't know?",
+     "c": "Find the nearest bike lane or bike-share station to you and check where it could take you."
+    },
+    "de": {
+     "t": "Radfahren in der Stadt",
+     "g": "Entdecke Radwege, Leihräder und Sicherheitstipps fürs Fahren im Verkehr.",
+     "p": [
+      "Amsterdam und Kopenhagen sind fürs Radfahren berühmt, mit breiten Radwegen und eigenen Fahrradampeln.",
+      "Mit Leihrädern entsperrst du ein Rad per App oder Karte und stellst es an einer anderen Station ab.",
+      "Fahr auf Radwegen, zeig Abbiegen mit dem Arm an, nutze nachts Licht; ein Helm ist eine kluge Wahl."
+     ],
+     "q": "Würdest du dich trauen, in einer fremden Großstadt Rad zu fahren?",
+     "c": "Finde den nächsten Radweg oder die nächste Leihradstation und schau, wohin sie dich bringen könnten."
+    },
+    "es": {
+     "t": "Ir en bici por la ciudad",
+     "g": "Descubre los carriles bici, las bicis compartidas y consejos para circular entre el tráfico.",
+     "p": [
+      "Ámsterdam y Copenhague son famosas por la bici, con carriles anchos y semáforos propios para ciclistas.",
+      "Las bicis compartidas se desbloquean con una app o tarjeta y se dejan en otra estación.",
+      "Circula por el carril bici, señaliza los giros con el brazo, lleva luces de noche; el casco es buena idea."
+     ],
+     "q": "¿Te atreverías a ir en bici por una gran ciudad que no conoces?",
+     "c": "Busca el carril bici o la estación de bici compartida más cercana y mira a dónde podría llevarte."
+    },
+    "fr": {
+     "t": "Le vélo en ville",
+     "g": "Découvre pistes cyclables, vélos en libre-service et conseils pour rouler dans la circulation.",
+     "p": [
+      "Amsterdam et Copenhague sont célèbres pour le vélo, avec de larges pistes et des feux dédiés aux cyclistes.",
+      "Les vélos en libre-service se déverrouillent avec une appli ou une carte et se déposent à une autre station.",
+      "Roule sur les pistes, signale tes virages avec le bras, allume tes feux la nuit ; un casque est un bon choix."
+     ],
+     "q": "Oserais-tu faire du vélo dans une grande ville que tu ne connais pas ?",
+     "c": "Trouve la piste cyclable ou la station de vélos partagés la plus proche et regarde où elle peut te mener."
+    },
+    "it": {
+     "t": "In bici per la città",
+     "g": "Scopri piste ciclabili, bici condivise e consigli di sicurezza per pedalare nel traffico.",
+     "p": [
+      "Amsterdam e Copenaghen sono famose per la bici, con piste larghe e semafori dedicati ai ciclisti.",
+      "Le bici in condivisione si sbloccano con un'app o una tessera e si lasciano in un'altra stazione.",
+      "Usa le piste, segnala le svolte con il braccio, accendi le luci di notte; il casco è una scelta saggia."
+     ],
+     "q": "Avresti il coraggio di andare in bici in una grande città che non conosci?",
+     "c": "Trova la pista ciclabile o la stazione di bike sharing più vicina e guarda dove potrebbe portarti."
+    },
+    "pt": {
+     "t": "Andar de bicicleta na cidade",
+     "g": "Descobre ciclovias, bicicletas partilhadas e dicas para pedalar no meio do trânsito.",
+     "p": [
+      "Amesterdão e Copenhaga são famosas pela bicicleta, com ciclovias largas e semáforos próprios.",
+      "As bicicletas partilhadas desbloqueiam-se com uma aplicação ou cartão e deixam-se noutra estação.",
+      "Usa as ciclovias, sinaliza as mudanças de direção com o braço, liga as luzes à noite; o capacete é boa ideia."
+     ],
+     "q": "Terias coragem de andar de bicicleta numa grande cidade que não conheces?",
+     "c": "Descobre a ciclovia ou estação de bicicletas partilhadas mais próxima e vê até onde te pode levar."
+    },
+    "pt_BR": {
+     "t": "Pedalando na cidade",
+     "g": "Descubra ciclovias, bikes compartilhadas e dicas de segurança para pedalar no trânsito.",
+     "p": [
+      "Amsterdã e Copenhague são famosas pela bicicleta, com ciclovias largas e semáforos só para ciclistas.",
+      "As bikes compartilhadas são liberadas por app ou cartão e devolvidas em outra estação.",
+      "Use a ciclovia, sinalize as conversões com o braço, acenda as luzes à noite; capacete é uma boa escolha."
+     ],
+     "q": "Você teria coragem de pedalar numa cidade grande que não conhece?",
+     "c": "Encontre a ciclovia ou estação de bike compartilhada mais perto e veja até onde ela pode levar você."
+    }
+   }
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Rush hour and timing",
+     "g": "Avoid the most crowded hours and use quiet times for a calmer ride.",
+     "p": [
+      "In most cities rush hour is roughly 7 to 9 in the morning and 5 to 7 in the evening on weekdays.",
+      "Mid-morning and early afternoon are calmer: easier to get a seat, a view and some space for your bag.",
+      "Popular sights are quieter early in the morning or late in the day, so plan visits around the crowds."
+     ],
+     "q": "Are you an early bird or do you like to start your day later?",
+     "c": "Check your city's busiest transport times and plan tomorrow's trip just outside them."
+    },
+    "de": {
+     "t": "Stoßzeiten und Timing",
+     "g": "Meide die vollsten Stunden und nutze ruhige Zeiten für entspanntere Fahrten.",
+     "p": [
+      "In den meisten Städten ist Berufsverkehr werktags etwa von 7 bis 9 und von 17 bis 19 Uhr.",
+      "Vormittags und am frühen Nachmittag ist es ruhiger: leichter Sitzplatz, Aussicht und Platz für die Tasche.",
+      "Beliebte Sehenswürdigkeiten sind früh morgens oder spät am Tag ruhiger, plane also um den Andrang herum."
+     ],
+     "q": "Bist du Frühaufsteher, oder startest du lieber später in den Tag?",
+     "c": "Finde die vollsten Fahrzeiten deiner Stadt heraus und plane die Fahrt morgen knapp außerhalb davon."
+    },
+    "es": {
+     "t": "La hora punta y el momento ideal",
+     "g": "Evita las horas de más gente y aprovecha los momentos tranquilos para viajar más a gusto.",
+     "p": [
+      "En casi todas las ciudades la hora punta va más o menos de 7 a 9 y de 17 a 19 en días laborables.",
+      "A media mañana y primera hora de la tarde hay más calma: más fácil sentarse, ver algo y colocar la bolsa.",
+      "Los lugares famosos están más tranquilos temprano o al final del día: planifica tus visitas evitando el gentío."
+     ],
+     "q": "¿Eres de madrugar o prefieres empezar el día más tarde?",
+     "c": "Mira las horas de más afluencia en tu ciudad y planifica el trayecto de mañana justo fuera de ellas."
+    },
+    "fr": {
+     "t": "Heures de pointe et bon timing",
+     "g": "Évite les heures les plus chargées et profite des moments calmes pour voyager tranquille.",
+     "p": [
+      "Dans la plupart des villes, l'heure de pointe va d'environ 7 h à 9 h et de 17 h à 19 h en semaine.",
+      "En milieu de matinée et en début d'après-midi, c'est plus calme : une place assise, une vue, de l'espace.",
+      "Les sites célèbres sont plus calmes tôt le matin ou en fin de journée : organise tes visites hors affluence."
+     ],
+     "q": "Es-tu du matin ou préfères-tu commencer ta journée plus tard ?",
+     "c": "Regarde les heures les plus chargées des transports de ta ville et prévois ton trajet de demain juste en dehors."
+    },
+    "it": {
+     "t": "L'ora di punta e il momento giusto",
+     "g": "Evita le ore più affollate e sfrutta i momenti tranquilli per viaggiare più rilassato.",
+     "p": [
+      "In quasi tutte le città l'ora di punta va più o meno dalle 7 alle 9 e dalle 17 alle 19 nei giorni feriali.",
+      "A metà mattina e nel primo pomeriggio c'è più calma: più facile sedersi, guardare fuori e sistemare la borsa.",
+      "Le attrazioni famose sono più tranquille la mattina presto o a fine giornata: organizza le visite evitando la folla."
+     ],
+     "q": "Sei un tipo mattiniero o preferisci iniziare la giornata più tardi?",
+     "c": "Controlla le ore più affollate dei mezzi della tua città e programma il viaggio di domani appena fuori."
+    },
+    "pt": {
+     "t": "Hora de ponta e o momento certo",
+     "g": "Evita as horas mais cheias e aproveita os períodos calmos para viajar com tranquilidade.",
+     "p": [
+      "Na maioria das cidades, a hora de ponta vai mais ou menos das 7 às 9 e das 17 às 19 nos dias úteis.",
+      "A meio da manhã e no início da tarde há mais calma: é mais fácil sentar, ver a paisagem e arrumar o saco.",
+      "Os locais famosos estão mais calmos cedo de manhã ou ao fim do dia: planeia as visitas fugindo às multidões."
+     ],
+     "q": "És madrugador ou preferes começar o dia mais tarde?",
+     "c": "Vê as horas mais cheias dos transportes da tua cidade e planeia a viagem de amanhã fora delas."
+    },
+    "pt_BR": {
+     "t": "Horário de pico e o momento certo",
+     "g": "Fuja das horas mais lotadas e aproveite os horários tranquilos para viajar com calma.",
+     "p": [
+      "Na maioria das cidades, o horário de pico vai mais ou menos das 7 às 9 e das 17 às 19 em dias úteis.",
+      "No meio da manhã e no começo da tarde é mais calmo: dá para sentar, olhar a paisagem e acomodar a bolsa.",
+      "Atrações famosas ficam mais tranquilas cedo ou no fim do dia: planeje as visitas fugindo da multidão."
+     ],
+     "q": "Você é do tipo que acorda cedo ou prefere começar o dia mais tarde?",
+     "c": "Veja os horários mais lotados do transporte da sua cidade e planeje a viagem de amanhã fora deles."
+    }
+   }
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Getting from the airport to the centre",
+     "g": "Compare trains, buses and taxis from the airport to the city centre.",
+     "p": [
+      "Many big airports have an express train or metro link: usually the fastest choice at busy times.",
+      "Airport buses are often cheaper and stop near central hotels, but traffic can slow them down.",
+      "Taxis are door to door and easy with luggage or late arrivals; check the official rank or fixed fares."
+     ],
+     "q": "What is your usual way to get from an airport to the city?",
+     "c": "Look up how to get from your nearest airport to the centre and note the fastest and cheapest options."
+    },
+    "de": {
+     "t": "Vom Flughafen ins Zentrum",
+     "g": "Vergleiche Zug, Bus und Taxi vom Flughafen ins Stadtzentrum.",
+     "p": [
+      "Viele große Flughäfen haben einen Expresszug oder U-Bahn-Anschluss, meist die schnellste Wahl im Berufsverkehr.",
+      "Flughafenbusse sind oft günstiger und halten nahe zentraler Hotels, können aber im Stau stehen.",
+      "Taxis fahren bis vor die Tür, praktisch mit Gepäck oder spät nachts; nutz den offiziellen Stand oder Festpreise."
+     ],
+     "q": "Wie kommst du normalerweise vom Flughafen in die Stadt?",
+     "c": "Finde heraus, wie du vom nächsten Flughafen ins Zentrum kommst, und notiere die schnellste und günstigste Option."
+    },
+    "es": {
+     "t": "Del aeropuerto al centro",
+     "g": "Compara trenes, autobuses y taxis para ir del aeropuerto al centro de la ciudad.",
+     "p": [
+      "Muchos grandes aeropuertos tienen tren exprés o metro: suele ser lo más rápido en horas de mucho tráfico.",
+      "Los autobuses del aeropuerto suelen ser más baratos y paran cerca de hoteles céntricos, pero el tráfico los frena.",
+      "El taxi te deja en la puerta y es cómodo con maletas o de noche; usa la parada oficial o las tarifas fijas."
+     ],
+     "q": "¿Cómo sueles ir del aeropuerto a la ciudad?",
+     "c": "Averigua cómo ir del aeropuerto más cercano al centro y apunta la opción más rápida y la más barata."
+    },
+    "fr": {
+     "t": "De l'aéroport au centre-ville",
+     "g": "Compare trains, bus et taxis pour aller de l'aéroport au centre-ville.",
+     "p": [
+      "Beaucoup de grands aéroports ont un train express ou un métro : souvent le plus rapide aux heures chargées.",
+      "Les navettes en bus sont souvent moins chères et s'arrêtent près des hôtels du centre, mais subissent les bouchons.",
+      "Le taxi va de porte à porte, pratique avec des bagages ou tard le soir ; prends la file officielle ou un forfait."
+     ],
+     "q": "Comment vas-tu en général de l'aéroport à la ville ?",
+     "c": "Cherche comment aller de l'aéroport le plus proche au centre et note l'option la plus rapide et la moins chère."
+    },
+    "it": {
+     "t": "Dall'aeroporto al centro",
+     "g": "Confronta treni, autobus e taxi per andare dall'aeroporto al centro città.",
+     "p": [
+      "Molti grandi aeroporti hanno un treno espresso o la metro: di solito la scelta più veloce nelle ore di punta.",
+      "Le navette in autobus costano spesso meno e fermano vicino agli hotel centrali, ma il traffico le rallenta.",
+      "Il taxi ti porta fino alla porta, comodo con valigie o arrivi tardi; usa il posteggio ufficiale o le tariffe fisse."
+     ],
+     "q": "Come vai di solito dall'aeroporto alla città?",
+     "c": "Scopri come arrivare dall'aeroporto più vicino al centro e annota l'opzione più veloce e quella più economica."
+    },
+    "pt": {
+     "t": "Do aeroporto ao centro",
+     "g": "Compara comboios, autocarros e táxis para ir do aeroporto ao centro da cidade.",
+     "p": [
+      "Muitos grandes aeroportos têm comboio expresso ou metro: costuma ser a opção mais rápida nas horas de ponta.",
+      "Os autocarros do aeroporto são muitas vezes mais baratos e param perto de hotéis centrais, mas o trânsito atrasa-os.",
+      "O táxi leva-te à porta e dá jeito com malas ou à noite; usa a praça oficial ou as tarifas fixas."
+     ],
+     "q": "Como costumas ir do aeroporto para a cidade?",
+     "c": "Descobre como ir do aeroporto mais próximo até ao centro e aponta a opção mais rápida e a mais barata."
+    },
+    "pt_BR": {
+     "t": "Do aeroporto ao centro",
+     "g": "Compare trem, ônibus e táxi para ir do aeroporto ao centro da cidade.",
+     "p": [
+      "Muitos aeroportos grandes têm trem expresso ou metrô: costuma ser o mais rápido em horário de pico.",
+      "Os ônibus do aeroporto costumam ser mais baratos e param perto de hotéis centrais, mas o trânsito atrasa.",
+      "O táxi leva você até a porta e ajuda com malas ou chegadas tarde; use o ponto oficial ou tarifas fixas."
+     ],
+     "q": "Como você costuma ir do aeroporto para a cidade?",
+     "c": "Descubra como ir do aeroporto mais próximo até o centro e anote a opção mais rápida e a mais barata."
+    }
+   }
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Arriving at a big train station",
+     "g": "Find exits, lockers, information desks and local transport links in a big station.",
+     "p": [
+      "Big stations often have several exits named after streets or directions, so pick the one nearest your goal.",
+      "Departure boards list time, destination and platform; the platform can change, so check again.",
+      "Look for the information desk, luggage lockers and signs to metro, bus and taxi before leaving."
+     ],
+     "q": "Which train station have you found most impressive or confusing?",
+     "c": "Look at the map of a big station you know and find its main exits and metro connection."
+    },
+    "de": {
+     "t": "Ankunft in einem großen Bahnhof",
+     "g": "Finde Ausgänge, Schließfächer, Infoschalter und Anschlüsse in einem großen Bahnhof.",
+     "p": [
+      "Große Bahnhöfe haben oft mehrere Ausgänge, benannt nach Straßen oder Richtungen. Nimm den nächsten zum Ziel.",
+      "Abfahrtstafeln zeigen Zeit, Ziel und Gleis; das Gleis kann sich ändern, also schau noch einmal nach.",
+      "Such vor dem Verlassen Infoschalter, Gepäckschließfächer und Schilder zu U-Bahn, Bus und Taxi."
+     ],
+     "q": "Welcher Bahnhof hat dich am meisten beeindruckt oder verwirrt?",
+     "c": "Schau dir den Plan eines großen Bahnhofs an, den du kennst, und finde Hauptausgänge und U-Bahn-Anschluss."
+    },
+    "es": {
+     "t": "Llegar a una gran estación de tren",
+     "g": "Encuentra salidas, consignas, puntos de información y conexiones en una gran estación.",
+     "p": [
+      "Las grandes estaciones suelen tener varias salidas con nombres de calles o direcciones: elige la más cercana a tu destino.",
+      "Los paneles de salidas indican hora, destino y andén; el andén puede cambiar, así que vuelve a mirarlo.",
+      "Antes de salir, localiza el punto de información, las consignas y las señales de metro, autobús y taxi."
+     ],
+     "q": "¿Qué estación de tren te ha impresionado o liado más?",
+     "c": "Mira el plano de una gran estación que conozcas y busca sus salidas principales y la conexión con el metro."
+    },
+    "fr": {
+     "t": "Arriver dans une grande gare",
+     "g": "Repère sorties, consignes, accueil et correspondances dans une grande gare.",
+     "p": [
+      "Les grandes gares ont souvent plusieurs sorties nommées d'après des rues ou des directions : prends la plus proche de ton but.",
+      "Les tableaux de départ indiquent heure, destination et quai ; le quai peut changer, alors revérifie.",
+      "Avant de sortir, repère l'accueil, les consignes à bagages et les panneaux vers métro, bus et taxi."
+     ],
+     "q": "Quelle gare t'a le plus impressionné ou le plus perdu ?",
+     "c": "Regarde le plan d'une grande gare que tu connais et trouve ses sorties principales et l'accès au métro."
+    },
+    "it": {
+     "t": "Arrivare in una grande stazione",
+     "g": "Trova uscite, deposito bagagli, punto informazioni e collegamenti in una grande stazione.",
+     "p": [
+      "Le grandi stazioni hanno spesso più uscite con nomi di vie o direzioni: scegli quella più vicina alla tua meta.",
+      "I tabelloni delle partenze indicano orario, destinazione e binario; il binario può cambiare, quindi ricontrolla.",
+      "Prima di uscire, cerca il punto informazioni, il deposito bagagli e i cartelli per metro, autobus e taxi."
+     ],
+     "q": "Quale stazione ti ha colpito o confuso di più?",
+     "c": "Guarda la piantina di una grande stazione che conosci e trova le uscite principali e il collegamento con la metro."
+    },
+    "pt": {
+     "t": "Chegar a uma grande estação de comboios",
+     "g": "Encontra saídas, cacifos, balcões de informação e ligações numa grande estação.",
+     "p": [
+      "As grandes estações têm muitas vezes várias saídas com nomes de ruas ou direções: escolhe a mais perto do teu destino.",
+      "Os painéis de partidas mostram hora, destino e linha; a linha pode mudar, por isso confirma de novo.",
+      "Antes de sair, procura o balcão de informações, os cacifos e as indicações para metro, autocarro e táxi."
+     ],
+     "q": "Que estação de comboios te impressionou ou confundiu mais?",
+     "c": "Vê a planta de uma grande estação que conheças e encontra as saídas principais e a ligação ao metro."
+    },
+    "pt_BR": {
+     "t": "Chegando a uma grande estação de trem",
+     "g": "Encontre saídas, guarda-volumes, balcões de informação e conexões numa estação grande.",
+     "p": [
+      "Estações grandes costumam ter várias saídas com nomes de ruas ou direções: escolha a mais perto do seu destino.",
+      "Os painéis de partida mostram horário, destino e plataforma; a plataforma pode mudar, então confira de novo.",
+      "Antes de sair, procure o balcão de informações, os guarda-volumes e as placas para metrô, ônibus e táxi."
+     ],
+     "q": "Que estação de trem mais impressionou ou confundiu você?",
+     "c": "Veja a planta de uma estação grande que você conhece e encontre as saídas principais e a conexão com o metrô."
+    }
+   }
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Choosing where to stay",
+     "g": "See how a central, trendy or quiet base shapes your city experience.",
+     "p": [
+      "A central base saves travel time and lets you pop back to rest, though it can be busier and noisier.",
+      "A trendy district puts cafés, bars and nightlife on your doorstep and shows how young locals live.",
+      "A quiet area near a metro line can be calmer and better value, with a short ride to the sights."
+     ],
+     "q": "What matters most to you in a place to stay: location, quiet or atmosphere?",
+     "c": "Pick a city you dream of and choose one neighbourhood to stay in, with two reasons why."
+    },
+    "de": {
+     "t": "Die richtige Unterkunftsgegend",
+     "g": "Sieh, wie eine zentrale, angesagte oder ruhige Basis dein Stadterlebnis prägt.",
+     "p": [
+      "Zentral wohnen spart Wege und erlaubt kurze Pausen in der Unterkunft, kann aber voller und lauter sein.",
+      "Ein angesagtes Viertel bietet Cafés, Bars und Nachtleben vor der Tür und zeigt, wie junge Einheimische leben.",
+      "Eine ruhige Gegend nahe einer U-Bahn-Linie ist oft entspannter und günstiger, mit kurzer Fahrt zu den Sehenswürdigkeiten."
+     ],
+     "q": "Was ist dir bei einer Unterkunft am wichtigsten: Lage, Ruhe oder Atmosphäre?",
+     "c": "Wähle eine Traumstadt und ein Viertel zum Übernachten, mit zwei Gründen dafür."
+    },
+    "es": {
+     "t": "Elegir dónde alojarse",
+     "g": "Descubre cómo una base céntrica, de moda o tranquila cambia tu experiencia en la ciudad.",
+     "p": [
+      "Una base céntrica ahorra trayectos y permite volver a descansar, aunque puede ser más concurrida y ruidosa.",
+      "Un barrio de moda te deja cafés, bares y vida nocturna en la puerta y muestra cómo viven los jóvenes locales.",
+      "Una zona tranquila cerca del metro puede ser más relajada y mejor precio, a un trayecto corto de todo."
+     ],
+     "q": "¿Qué es lo más importante para ti al alojarte: ubicación, tranquilidad o ambiente?",
+     "c": "Elige una ciudad soñada y un barrio donde alojarte, con dos razones para tu elección."
+    },
+    "fr": {
+     "t": "Choisir où loger",
+     "g": "Vois comment une base centrale, branchée ou calme façonne ton expérience de la ville.",
+     "p": [
+      "Loger au centre fait gagner du temps et permet de rentrer se reposer, mais c'est parfois plus animé et bruyant.",
+      "Un quartier branché offre cafés, bars et vie nocturne au pied de la porte et montre comment vivent les jeunes.",
+      "Un quartier calme près d'une ligne de métro est souvent plus reposant et avantageux, à quelques arrêts des sites."
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi dans un logement : l'emplacement, le calme ou l'ambiance ?",
+     "c": "Choisis une ville de rêve et un quartier où loger, avec deux raisons de ce choix."
+    },
+    "it": {
+     "t": "Scegliere dove alloggiare",
+     "g": "Scopri come una base centrale, alla moda o tranquilla cambia la tua esperienza della città.",
+     "p": [
+      "Stare in centro fa risparmiare spostamenti e permette di rientrare a riposare, ma può essere più affollato e rumoroso.",
+      "Un quartiere alla moda ti offre bar, locali e vita notturna sotto casa e mostra come vivono i giovani del posto.",
+      "Una zona tranquilla vicino alla metro può essere più rilassante e conveniente, a pochi minuti dalle attrazioni."
+     ],
+     "q": "Che cosa conta di più per te in un alloggio: posizione, tranquillità o atmosfera?",
+     "c": "Scegli una città dei sogni e un quartiere dove alloggiare, con due motivi per la tua scelta."
+    },
+    "pt": {
+     "t": "Escolher onde ficar",
+     "g": "Vê como uma base central, na moda ou sossegada molda a tua experiência da cidade.",
+     "p": [
+      "Ficar no centro poupa deslocações e permite voltar para descansar, embora possa ser mais movimentado e barulhento.",
+      "Um bairro na moda põe cafés, bares e vida noturna à porta e mostra como vivem os jovens locais.",
+      "Uma zona sossegada perto do metro pode ser mais tranquila e compensar no preço, a uma viagem curta de tudo."
+     ],
+     "q": "O que é mais importante para ti num alojamento: localização, sossego ou ambiente?",
+     "c": "Escolhe uma cidade de sonho e um bairro onde ficar, com duas razões para a escolha."
+    },
+    "pt_BR": {
+     "t": "Escolhendo onde se hospedar",
+     "g": "Veja como uma base central, descolada ou tranquila muda sua experiência na cidade.",
+     "p": [
+      "Ficar no centro economiza deslocamentos e permite voltar para descansar, mas pode ser mais movimentado e barulhento.",
+      "Um bairro descolado deixa cafés, bares e vida noturna na porta e mostra como vivem os jovens locais.",
+      "Uma região tranquila perto do metrô pode ser mais calma e mais em conta, a uma viagem curta das atrações."
+     ],
+     "q": "O que é mais importante para você numa hospedagem: localização, sossego ou clima do lugar?",
+     "c": "Escolha uma cidade dos sonhos e um bairro para se hospedar, com dois motivos para a escolha."
+    }
+   }
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Hotels, hostels and apartments",
+     "g": "Learn the strengths of each type of stay for different travellers.",
+     "p": [
+      "Hotels offer daily cleaning, a front desk that can help, and often breakfast: easy and comfortable.",
+      "Hostels have shared rooms and kitchens, great for meeting other travellers; many offer private rooms too.",
+      "Apartments give you space and a kitchen, so you can shop at local markets and live like a resident."
+     ],
+     "q": "Which type of stay suits you best, and why?",
+     "c": "Imagine a weekend trip with friends and decide which type of stay would fit the group best."
+    },
+    "de": {
+     "t": "Hotels, Hostels und Apartments",
+     "g": "Lerne die Stärken jeder Unterkunftsart für verschiedene Reisende kennen.",
+     "p": [
+      "Hotels bieten tägliche Reinigung, eine hilfsbereite Rezeption und oft Frühstück: einfach und bequem.",
+      "Hostels haben Gemeinschaftszimmer und Küchen, toll zum Kennenlernen; viele bieten auch Einzelzimmer.",
+      "Apartments bieten Platz und Küche, so kaufst du auf lokalen Märkten ein und lebst wie ein Einheimischer."
+     ],
+     "q": "Welche Unterkunftsart passt am besten zu dir und warum?",
+     "c": "Stell dir ein Wochenende mit Freunden vor und entscheide, welche Unterkunft am besten zur Gruppe passt."
+    },
+    "es": {
+     "t": "Hoteles, albergues y apartamentos",
+     "g": "Conoce los puntos fuertes de cada tipo de alojamiento según el viajero.",
+     "p": [
+      "Los hoteles ofrecen limpieza diaria, una recepción que ayuda y a menudo desayuno: fácil y cómodo.",
+      "Los albergues tienen habitaciones y cocinas compartidas, ideales para conocer gente; muchos tienen habitaciones privadas.",
+      "Los apartamentos dan espacio y cocina, así puedes comprar en mercados locales y vivir como un vecino más."
+     ],
+     "q": "¿Qué tipo de alojamiento va mejor contigo y por qué?",
+     "c": "Imagina un fin de semana con amigos y decide qué tipo de alojamiento encajaría mejor con el grupo."
+    },
+    "fr": {
+     "t": "Hôtels, auberges et appartements",
+     "g": "Découvre les atouts de chaque type d'hébergement selon le voyageur.",
+     "p": [
+      "L'hôtel offre ménage quotidien, une réception pour t'aider et souvent le petit-déjeuner : simple et confortable.",
+      "Les auberges de jeunesse ont dortoirs et cuisines partagés, parfaits pour rencontrer du monde ; beaucoup ont des chambres privées.",
+      "L'appartement donne de l'espace et une cuisine : tu fais tes courses au marché et vis comme un habitant."
+     ],
+     "q": "Quel type d'hébergement te correspond le mieux, et pourquoi ?",
+     "c": "Imagine un week-end entre amis et choisis le type d'hébergement qui conviendrait le mieux au groupe."
+    },
+    "it": {
+     "t": "Hotel, ostelli e appartamenti",
+     "g": "Scopri i punti di forza di ogni tipo di alloggio per viaggiatori diversi.",
+     "p": [
+      "Gli hotel offrono pulizia quotidiana, una reception che aiuta e spesso la colazione: facile e comodo.",
+      "Gli ostelli hanno camerate e cucine in comune, ottimi per conoscere gente; molti hanno anche camere private.",
+      "Gli appartamenti danno spazio e cucina, così fai la spesa ai mercati locali e vivi come un residente."
+     ],
+     "q": "Quale tipo di alloggio fa più per te e perché?",
+     "c": "Immagina un weekend con gli amici e decidi quale tipo di alloggio sarebbe più adatto al gruppo."
+    },
+    "pt": {
+     "t": "Hotéis, hostels e apartamentos",
+     "g": "Conhece os pontos fortes de cada tipo de alojamento para diferentes viajantes.",
+     "p": [
+      "Os hotéis oferecem limpeza diária, uma receção que ajuda e muitas vezes pequeno-almoço: simples e confortável.",
+      "Os hostels têm quartos e cozinhas partilhados, ótimos para conhecer gente; muitos têm também quartos privados.",
+      "Os apartamentos dão espaço e cozinha, por isso podes fazer compras nos mercados e viver como um morador."
+     ],
+     "q": "Que tipo de alojamento combina mais contigo, e porquê?",
+     "c": "Imagina um fim de semana com amigos e decide que tipo de alojamento serviria melhor o grupo."
+    },
+    "pt_BR": {
+     "t": "Hotéis, hostels e apartamentos",
+     "g": "Conheça os pontos fortes de cada tipo de hospedagem para diferentes viajantes.",
+     "p": [
+      "Hotéis oferecem limpeza diária, uma recepção que ajuda e muitas vezes café da manhã: fácil e confortável.",
+      "Hostels têm quartos e cozinhas compartilhados, ótimos para conhecer gente; muitos têm também quartos privativos.",
+      "Apartamentos dão espaço e cozinha, então você pode fazer compras na feira e viver como morador."
+     ],
+     "q": "Que tipo de hospedagem combina mais com você, e por quê?",
+     "c": "Imagine um fim de semana com amigos e decida que tipo de hospedagem seria melhor para o grupo."
+    }
+   }
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Review: getting around",
+     "g": "Recap transport options, tickets and choosing a base.",
+     "p": [
+      "Walk for details, take the metro for distance, and ride buses or trams for the views.",
+      "Read metro lines by colour and final stop, validate tickets, and compare single tickets with passes.",
+      "Plan arrivals from airport or station, avoid rush hour, and pick a base that fits your style."
+     ],
+     "q": "Which tip about getting around has been most useful to you so far?",
+     "c": "Plan a full imaginary day in a city: how you arrive, two rides, one walk and where you sleep."
+    },
+    "de": {
+     "t": "Wiederholung: Unterwegs in der Stadt",
+     "g": "Wiederhole Verkehrsmittel, Tickets und die Wahl der Unterkunft.",
+     "p": [
+      "Geh zu Fuß für Details, nimm die U-Bahn für Strecke und Bus oder Tram für die Aussicht.",
+      "Lies U-Bahn-Linien nach Farbe und Endstation, entwerte Tickets und vergleiche Einzelticket und Pass.",
+      "Plane die Ankunft am Flughafen oder Bahnhof, meide Stoßzeiten und wähle eine Basis, die zu dir passt."
+     ],
+     "q": "Welcher Tipp zum Unterwegssein war für dich bisher am nützlichsten?",
+     "c": "Plane einen ganzen Fantasietag in einer Stadt: Ankunft, zwei Fahrten, ein Spaziergang und Übernachtung."
+    },
+    "es": {
+     "t": "Repaso: moverse por la ciudad",
+     "g": "Repasa los medios de transporte, los billetes y la elección del alojamiento.",
+     "p": [
+      "Camina para ver detalles, usa el metro para distancias largas y el bus o el tranvía para las vistas.",
+      "Lee las líneas de metro por color y parada final, valida el billete y compara billete sencillo y abono.",
+      "Planifica la llegada desde aeropuerto o estación, evita la hora punta y elige una base a tu estilo."
+     ],
+     "q": "¿Qué consejo para moverte te ha resultado más útil hasta ahora?",
+     "c": "Planifica un día imaginario en una ciudad: cómo llegas, dos trayectos, un paseo y dónde duermes."
+    },
+    "fr": {
+     "t": "Révision : se déplacer",
+     "g": "Révise les modes de transport, les titres de transport et le choix du logement.",
+     "p": [
+      "Marche pour les détails, prends le métro pour la distance, et le bus ou le tram pour la vue.",
+      "Lis les lignes de métro par couleur et terminus, valide ton titre et compare ticket à l'unité et forfait.",
+      "Prépare ton arrivée depuis l'aéroport ou la gare, évite l'heure de pointe et choisis une base à ton goût."
+     ],
+     "q": "Quel conseil pour te déplacer t'a été le plus utile jusqu'ici ?",
+     "c": "Prépare une journée imaginaire en ville : ton arrivée, deux trajets, une balade et où tu dors."
+    },
+    "it": {
+     "t": "Ripasso: muoversi in città",
+     "g": "Ripassa mezzi di trasporto, biglietti e scelta dell'alloggio.",
+     "p": [
+      "Cammina per i dettagli, prendi la metro per le distanze e l'autobus o il tram per il panorama.",
+      "Leggi le linee della metro per colore e capolinea, convalida il biglietto e confronta corsa singola e abbonamento.",
+      "Organizza l'arrivo da aeroporto o stazione, evita l'ora di punta e scegli una base adatta a te."
+     ],
+     "q": "Quale consiglio per muoverti ti è stato più utile finora?",
+     "c": "Pianifica una giornata immaginaria in una città: come arrivi, due tragitti, una passeggiata e dove dormi."
+    },
+    "pt": {
+     "t": "Revisão: deslocar-se na cidade",
+     "g": "Revê os meios de transporte, os bilhetes e a escolha do alojamento.",
+     "p": [
+      "Caminha para ver pormenores, apanha o metro para distâncias e o autocarro ou elétrico pelas vistas.",
+      "Lê as linhas de metro pela cor e estação terminal, valida o bilhete e compara bilhete simples e passe.",
+      "Planeia a chegada do aeroporto ou da estação, evita a hora de ponta e escolhe uma base ao teu gosto."
+     ],
+     "q": "Que dica sobre deslocações te foi mais útil até agora?",
+     "c": "Planeia um dia imaginário numa cidade: como chegas, duas viagens, um passeio e onde dormes."
+    },
+    "pt_BR": {
+     "t": "Revisão: circulando pela cidade",
+     "g": "Revise os meios de transporte, as passagens e a escolha da hospedagem.",
+     "p": [
+      "Caminhe para ver detalhes, pegue o metrô para distâncias e o ônibus ou bonde pela vista.",
+      "Leia as linhas de metrô pela cor e estação final, valide a passagem e compare avulsa e passe.",
+      "Planeje a chegada do aeroporto ou estação, fuja do horário de pico e escolha uma base do seu jeito."
+     ],
+     "q": "Que dica sobre locomoção foi mais útil para você até agora?",
+     "c": "Planeje um dia imaginário numa cidade: como você chega, dois trajetos, uma caminhada e onde dorme."
+    }
+   }
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Squares and plazas",
+     "g": "Discover piazzas, plazas and squares as the outdoor living rooms of a city.",
+     "p": [
+      "Squares are where people meet, chat, eat and celebrate, often around a fountain, church or town hall.",
+      "Rome's Piazza Navona keeps the long oval shape of the ancient Stadium of Domitian it was built on.",
+      "Madrid's Plaza Mayor is fully enclosed by arcaded buildings, a classic of Spanish squares."
+     ],
+     "q": "What is your favourite square, and what do people do there?",
+     "c": "Spend ten minutes in a square today and watch how people use it: meeting, playing, resting or passing."
+    },
+    "de": {
+     "t": "Plätze und Piazzas",
+     "g": "Entdecke Piazzas, Plazas und Plätze als Wohnzimmer einer Stadt unter freiem Himmel.",
+     "p": [
+      "Auf Plätzen trifft man sich, plaudert, isst und feiert, oft rund um einen Brunnen, eine Kirche oder ein Rathaus.",
+      "Roms Piazza Navona hat noch die lange ovale Form des antiken Domitian-Stadions, auf dem sie entstand.",
+      "Die Plaza Mayor in Madrid ist ringsum von Gebäuden mit Arkaden umschlossen, ein Klassiker spanischer Plätze."
+     ],
+     "q": "Was ist dein Lieblingsplatz, und was machen die Leute dort?",
+     "c": "Verbring heute zehn Minuten auf einem Platz und beobachte, wie ihn die Leute nutzen."
+    },
+    "es": {
+     "t": "Plazas",
+     "g": "Descubre las plazas como el salón al aire libre de una ciudad.",
+     "p": [
+      "En las plazas la gente queda, charla, come y celebra, a menudo alrededor de una fuente, iglesia o ayuntamiento.",
+      "La Piazza Navona de Roma conserva la forma ovalada y alargada del antiguo Estadio de Domiciano sobre el que se construyó.",
+      "La Plaza Mayor de Madrid está totalmente rodeada de edificios con soportales, un clásico de las plazas españolas."
+     ],
+     "q": "¿Cuál es tu plaza favorita y qué hace allí la gente?",
+     "c": "Pasa diez minutos en una plaza y observa cómo la usa la gente: quedar, jugar, descansar o pasar."
+    },
+    "fr": {
+     "t": "Places et piazzas",
+     "g": "Découvre piazzas, plazas et places comme les salons à ciel ouvert d'une ville.",
+     "p": [
+      "Sur les places, on se retrouve, on bavarde, on mange et on fait la fête, souvent autour d'une fontaine ou d'une mairie.",
+      "La Piazza Navona à Rome garde la forme ovale allongée de l'antique stade de Domitien sur lequel elle a été bâtie.",
+      "La Plaza Mayor de Madrid est entièrement fermée par des bâtiments à arcades, un classique des places espagnoles."
+     ],
+     "q": "Quelle est ta place préférée, et qu'y font les gens ?",
+     "c": "Passe dix minutes sur une place et observe comment les gens l'utilisent : se retrouver, jouer, se reposer."
+    },
+    "it": {
+     "t": "Piazze",
+     "g": "Scopri le piazze come il salotto all'aperto di una città.",
+     "p": [
+      "In piazza ci si incontra, si chiacchiera, si mangia e si festeggia, spesso intorno a una fontana, una chiesa o un municipio.",
+      "Piazza Navona a Roma conserva la forma ovale allungata dell'antico Stadio di Domiziano su cui è sorta.",
+      "La Plaza Mayor di Madrid è interamente chiusa da edifici con portici, un classico delle piazze spagnole."
+     ],
+     "q": "Qual è la tua piazza preferita e che cosa ci fa la gente?",
+     "c": "Passa dieci minuti in una piazza e osserva come la usano le persone: incontrarsi, giocare, riposare o passare."
+    },
+    "pt": {
+     "t": "Praças e largos",
+     "g": "Descobre as praças como as salas de estar ao ar livre de uma cidade.",
+     "p": [
+      "Nas praças as pessoas encontram-se, conversam, comem e festejam, muitas vezes à volta de um chafariz ou igreja.",
+      "A Piazza Navona, em Roma, mantém a forma oval alongada do antigo Estádio de Domiciano sobre o qual foi construída.",
+      "A Plaza Mayor de Madrid é totalmente rodeada por edifícios com arcadas, um clássico das praças espanholas."
+     ],
+     "q": "Qual é a tua praça preferida, e o que fazem lá as pessoas?",
+     "c": "Passa dez minutos numa praça e observa como as pessoas a usam: encontrar-se, brincar, descansar ou passar."
+    },
+    "pt_BR": {
+     "t": "Praças",
+     "g": "Descubra as praças como a sala de estar ao ar livre de uma cidade.",
+     "p": [
+      "Nas praças as pessoas se encontram, conversam, comem e comemoram, muitas vezes em volta de um chafariz ou igreja.",
+      "A Piazza Navona, em Roma, mantém o formato oval alongado do antigo Estádio de Domiciano, sobre o qual foi construída.",
+      "A Plaza Mayor de Madri é toda cercada por prédios com arcadas, um clássico das praças espanholas."
+     ],
+     "q": "Qual é a sua praça favorita, e o que as pessoas fazem lá?",
+     "c": "Passe dez minutos numa praça e observe como as pessoas a usam: encontro, brincadeira, descanso ou passagem."
+    }
+   }
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "i18n": {
+    "en": {
+     "t": "Main streets and boulevards",
+     "g": "Explore grand avenues and shopping streets, and learn how they were planned.",
+     "p": [
+      "In the 19th century Baron Haussmann rebuilt much of Paris with wide, tree-lined boulevards.",
+      "Barcelona's Eixample district, planned by Ildefons Cerdà, has a grid of blocks with cut-off corners.",
+      "Main streets often follow old roads into town, which is why many are named after the city they lead to."
+     ],
+     "q": "What is the most famous street in your city, and what is it known for?",
+     "c": "Walk the main street of your town end to end and spot its oldest and newest buildings."
+    },
+    "de": {
+     "t": "Hauptstraßen und Boulevards",
+     "g": "Erkunde Prachtstraßen und Einkaufsmeilen und erfahre, wie sie geplant wurden.",
+     "p": [
+      "Im 19. Jahrhundert baute Baron Haussmann große Teile von Paris mit breiten, baumgesäumten Boulevards um.",
+      "Barcelonas Viertel Eixample, geplant von Ildefons Cerdà, hat ein Raster aus Blöcken mit abgeschrägten Ecken.",
+      "Hauptstraßen folgen oft alten Landstraßen und tragen daher häufig den Namen der Stadt, zu der sie führen."
+     ],
+     "q": "Was ist die berühmteste Straße deiner Stadt, und wofür ist sie bekannt?",
+     "c": "Geh die Hauptstraße deines Ortes von Anfang bis Ende und finde ihr ältestes und neuestes Gebäude."
+    },
+    "es": {
+     "t": "Calles principales y bulevares",
+     "g": "Explora grandes avenidas y calles comerciales, y descubre cómo se planificaron.",
+     "p": [
+      "En el siglo XIX el barón Haussmann rehízo gran parte de París con bulevares anchos y arbolados.",
+      "El Eixample de Barcelona, diseñado por Ildefons Cerdà, es una cuadrícula de manzanas con las esquinas achaflanadas.",
+      "Las calles principales suelen seguir antiguos caminos de entrada, por eso muchas llevan el nombre de la ciudad a la que van."
+     ],
+     "q": "¿Cuál es la calle más famosa de tu ciudad y por qué es conocida?",
+     "c": "Recorre la calle principal de tu localidad de punta a punta y busca su edificio más antiguo y el más nuevo."
+    },
+    "fr": {
+     "t": "Grandes rues et boulevards",
+     "g": "Explore grandes avenues et rues commerçantes, et découvre comment elles ont été conçues.",
+     "p": [
+      "Au XIXe siècle, le baron Haussmann a transformé une grande partie de Paris avec de larges boulevards arborés.",
+      "L'Eixample de Barcelone, conçu par Ildefons Cerdà, forme un quadrillage d'îlots aux angles coupés.",
+      "Les grandes rues suivent souvent d'anciennes routes, d'où leur nom tiré de la ville vers laquelle elles mènent."
+     ],
+     "q": "Quelle est la rue la plus célèbre de ta ville, et pourquoi est-elle connue ?",
+     "c": "Parcours la rue principale de ta ville d'un bout à l'autre et repère son bâtiment le plus ancien et le plus récent."
+    },
+    "it": {
+     "t": "Vie principali e viali",
+     "g": "Esplora grandi viali e vie dello shopping e scopri come sono stati progettati.",
+     "p": [
+      "Nell'Ottocento il barone Haussmann ridisegnò gran parte di Parigi con ampi boulevard alberati.",
+      "L'Eixample di Barcellona, progettato da Ildefons Cerdà, è una griglia di isolati con gli angoli smussati.",
+      "Le vie principali seguono spesso antiche strade d'accesso, per questo molte portano il nome della città verso cui vanno."
+     ],
+     "q": "Qual è la via più famosa della tua città e per che cosa è nota?",
+     "c": "Percorri la via principale del tuo paese da un capo all'altro e trova l'edificio più antico e quello più nuovo."
+    },
+    "pt": {
+     "t": "Ruas principais e avenidas",
+     "g": "Explora grandes avenidas e ruas comerciais, e descobre como foram planeadas.",
+     "p": [
+      "No século XIX, o barão Haussmann reconstruiu grande parte de Paris com avenidas largas e arborizadas.",
+      "O Eixample de Barcelona, planeado por Ildefons Cerdà, é uma grelha de quarteirões com as esquinas cortadas.",
+      "As ruas principais seguem muitas vezes antigas estradas de entrada, por isso muitas têm o nome da cidade para onde vão."
+     ],
+     "q": "Qual é a rua mais famosa da tua cidade, e porque é conhecida?",
+     "c": "Percorre a rua principal da tua terra de uma ponta à outra e encontra o edifício mais antigo e o mais recente."
+    },
+    "pt_BR": {
+     "t": "Ruas principais e bulevares",
+     "g": "Explore grandes avenidas e ruas de comércio e descubra como foram planejadas.",
+     "p": [
+      "No século XIX, o barão Haussmann reconstruiu boa parte de Paris com bulevares largos e arborizados.",
+      "O Eixample de Barcelona, planejado por Ildefons Cerdà, é uma grade de quarteirões com as esquinas chanfradas.",
+      "Ruas principais muitas vezes seguem antigas estradas de entrada, por isso muitas levam o nome da cidade para onde vão."
+     ],
+     "q": "Qual é a rua mais famosa da sua cidade, e por que ela é conhecida?",
+     "c": "Percorra a rua principal da sua cidade de ponta a ponta e encontre o prédio mais antigo e o mais novo."
+    }
+   }
+  }
+ ]
+}

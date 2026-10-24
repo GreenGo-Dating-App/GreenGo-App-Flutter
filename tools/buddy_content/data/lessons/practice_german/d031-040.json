@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the café: einen Kaffee, bitte",
+     "g": "Order drinks and cake at a café and ask for the bill.",
+     "p": [
+      "Order simply: Einen Kaffee, bitte. Ein Stück Kuchen, bitte. Ich nehme einen Tee.",
+      "The waiter may ask Was darf es sein? or Noch etwas? Answer Nein, danke, das ist alles.",
+      "To pay, say Zahlen, bitte! or Die Rechnung, bitte. You may hear zusammen oder getrennt? (together or separately?)."
+     ],
+     "q": "You sit down in a Viennese café. What do you order? Tell me in German.",
+     "c": "Act out a café scene aloud: greet, order a drink and a cake, then ask for the bill."
+    },
+    "de": {
+     "t": "Im Café: einen Kaffee, bitte",
+     "g": "Du bestellst im Café Getränke und Kuchen und bittest um die Rechnung.",
+     "p": [
+      "Bestell einfach: Einen Kaffee, bitte. Ein Stück Kuchen, bitte. Ich nehme einen Tee.",
+      "Die Bedienung fragt vielleicht: Was darf es sein? oder Noch etwas? Antwort: Nein, danke, das ist alles.",
+      "Zum Bezahlen sagst du: Zahlen, bitte! oder Die Rechnung, bitte. Oft hörst du: Zusammen oder getrennt?"
+     ],
+     "q": "Du sitzt in einem Wiener Café. Was bestellst du? Sag es mir auf Deutsch.",
+     "c": "Spiel laut eine Café-Szene: grüßen, ein Getränk und Kuchen bestellen, dann um die Rechnung bitten."
+    },
+    "es": {
+     "t": "En el café: einen Kaffee, bitte",
+     "g": "Pide bebidas y tarta en una cafetería y pide la cuenta.",
+     "p": [
+      "Pide de forma sencilla: Einen Kaffee, bitte. Ein Stück Kuchen, bitte. Ich nehme einen Tee.",
+      "El camarero puede preguntar Was darf es sein? o Noch etwas? Responde Nein, danke, das ist alles.",
+      "Para pagar di Zahlen, bitte! o Die Rechnung, bitte. Puede que oigas zusammen oder getrennt? (¿junto o por separado?)."
+     ],
+     "q": "Te sientas en un café de Viena. ¿Qué pides? Dímelo en alemán.",
+     "c": "Representa en voz alta una escena de café: saluda, pide una bebida y una tarta y luego la cuenta."
+    },
+    "fr": {
+     "t": "Au café : einen Kaffee, bitte",
+     "g": "Commander une boisson et un gâteau au café et demander l'addition.",
+     "p": [
+      "Commande simplement : Einen Kaffee, bitte. Ein Stück Kuchen, bitte. Ich nehme einen Tee.",
+      "Le serveur peut demander Was darf es sein ? ou Noch etwas ? Réponds Nein, danke, das ist alles.",
+      "Pour payer : Zahlen, bitte ! ou Die Rechnung, bitte. On te demandera peut-être zusammen oder getrennt ? (ensemble ou séparément ?)."
+     ],
+     "q": "Tu t'assieds dans un café viennois. Que commandes-tu ? Dis-le-moi en allemand.",
+     "c": "Joue une scène de café à voix haute : salue, commande une boisson et un gâteau, puis demande l'addition."
+    },
+    "it": {
+     "t": "Al bar: einen Kaffee, bitte",
+     "g": "Ordini bevande e torte in un caffè e chiedi il conto.",
+     "p": [
+      "Ordina in modo semplice: Einen Kaffee, bitte. Ein Stück Kuchen, bitte. Ich nehme einen Tee.",
+      "Il cameriere può chiedere Was darf es sein? o Noch etwas? Rispondi Nein, danke, das ist alles.",
+      "Per pagare di' Zahlen, bitte! o Die Rechnung, bitte. Potresti sentire zusammen oder getrennt? (insieme o separati?)."
+     ],
+     "q": "Ti siedi in un caffè viennese. Che cosa ordini? Dimmelo in tedesco.",
+     "c": "Recita ad alta voce una scena al bar: saluta, ordina una bevanda e una torta, poi chiedi il conto."
+    },
+    "pt": {
+     "t": "No café: einen Kaffee, bitte",
+     "g": "Pedir bebidas e bolo num café e pedir a conta.",
+     "p": [
+      "Pede de forma simples: Einen Kaffee, bitte. Ein Stück Kuchen, bitte. Ich nehme einen Tee.",
+      "O empregado pode perguntar Was darf es sein? ou Noch etwas? Responde Nein, danke, das ist alles.",
+      "Para pagar diz Zahlen, bitte! ou Die Rechnung, bitte. Podes ouvir zusammen oder getrennt? (junto ou separado?)."
+     ],
+     "q": "Sentas-te num café de Viena. O que pedes? Diz-me em alemão.",
+     "c": "Representa em voz alta uma cena de café: cumprimenta, pede uma bebida e um bolo e depois a conta."
+    },
+    "pt_BR": {
+     "t": "No café: einen Kaffee, bitte",
+     "g": "Pedir bebidas e bolo num café e pedir a conta.",
+     "p": [
+      "Peça de forma simples: Einen Kaffee, bitte. Ein Stück Kuchen, bitte. Ich nehme einen Tee.",
+      "O garçom pode perguntar Was darf es sein? ou Noch etwas? Responda Nein, danke, das ist alles.",
+      "Para pagar diga Zahlen, bitte! ou Die Rechnung, bitte. Você pode ouvir zusammen oder getrennt? (junto ou separado?)."
+     ],
+     "q": "Você se senta num café em Viena. O que você pede? Me diga em alemão.",
+     "c": "Encene em voz alta uma cena de café: cumprimente, peça uma bebida e um bolo e depois a conta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Kaffee",
+      "ex": "Einen Kaffee mit Milch, bitte."
+     },
+     {
+      "w": "der Tee",
+      "ex": "Ich nehme einen Tee."
+     },
+     {
+      "w": "der Kuchen",
+      "ex": "Ein Stück Kuchen, bitte."
+     },
+     {
+      "w": "Zahlen, bitte!",
+      "ex": "Entschuldigung, zahlen, bitte!"
+     },
+     {
+      "w": "die Rechnung",
+      "ex": "Die Rechnung, bitte."
+     },
+     {
+      "w": "zusammen oder getrennt",
+      "ex": "Zusammen oder getrennt? – Getrennt, bitte."
+     }
+    ],
+    "gram": "Bestellen: Einen Kaffee, bitte. / Ich nehme einen Tee. der Kaffee → einen Kaffee (Akkusativ). Bezahlen: Zahlen, bitte!"
+   }
+  },
+  {
+   "d": 32,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Food and drinks",
+     "g": "Learn everyday food and drink words with their articles.",
+     "p": [
+      "Basics: das Brot, der Käse, die Wurst, die Butter, das Ei, das Obst (fruit) and das Gemüse (vegetables).",
+      "Drinks: das Wasser, der Saft (juice), die Milch, der Tee, der Kaffee, das Bier and der Wein.",
+      "Food you cannot count goes without an article: Ich esse Brot. Ich trinke Wasser. Ich kaufe Obst."
+     ],
+     "q": "What do you usually eat for breakfast? Tell me with ich esse... und ich trinke...",
+     "c": "Open your fridge or cupboard and name at least eight items in German with der, die or das."
+    },
+    "de": {
+     "t": "Essen und Getränke",
+     "g": "Du lernst alltägliche Wörter für Essen und Trinken mit Artikel.",
+     "p": [
+      "Grundwörter: das Brot, der Käse, die Wurst, die Butter, das Ei, das Obst und das Gemüse.",
+      "Getränke: das Wasser, der Saft, die Milch, der Tee, der Kaffee, das Bier und der Wein.",
+      "Nicht zählbare Lebensmittel stehen ohne Artikel: Ich esse Brot. Ich trinke Wasser. Ich kaufe Obst."
+     ],
+     "q": "Was isst du normalerweise zum Frühstück? Sag es mit ich esse... und ich trinke...",
+     "c": "Öffne Kühlschrank oder Schrank und nenne mindestens acht Lebensmittel auf Deutsch mit der, die oder das."
+    },
+    "es": {
+     "t": "Comida y bebida",
+     "g": "Aprende palabras cotidianas de comida y bebida con su artículo.",
+     "p": [
+      "Básicos: das Brot (pan), der Käse (queso), die Wurst (embutido), die Butter, das Ei (huevo), das Obst (fruta), das Gemüse (verdura).",
+      "Bebidas: das Wasser, der Saft (zumo), die Milch, der Tee, der Kaffee, das Bier y der Wein.",
+      "Lo que no se cuenta va sin artículo: Ich esse Brot. Ich trinke Wasser. Ich kaufe Obst."
+     ],
+     "q": "¿Qué sueles desayunar? Dímelo con ich esse... und ich trinke...",
+     "c": "Abre la nevera o el armario y nombra al menos ocho alimentos en alemán con der, die o das."
+    },
+    "fr": {
+     "t": "La nourriture et les boissons",
+     "g": "Apprendre les mots courants de la nourriture et des boissons avec leur article.",
+     "p": [
+      "Les bases : das Brot (pain), der Käse (fromage), die Wurst (saucisse), die Butter, das Ei (œuf), das Obst (fruits), das Gemüse (légumes).",
+      "Boissons : das Wasser, der Saft (jus), die Milch, der Tee, der Kaffee, das Bier et der Wein.",
+      "Ce qui ne se compte pas s'utilise sans article : Ich esse Brot. Ich trinke Wasser. Ich kaufe Obst."
+     ],
+     "q": "Que manges-tu d'habitude au petit-déjeuner ? Dis-le avec ich esse... und ich trinke...",
+     "c": "Ouvre ton frigo ou ton placard et nomme au moins huit aliments en allemand avec der, die ou das."
+    },
+    "it": {
+     "t": "Cibo e bevande",
+     "g": "Impari le parole quotidiane di cibo e bevande con l'articolo.",
+     "p": [
+      "Le basi: das Brot (pane), der Käse (formaggio), die Wurst (salume), die Butter, das Ei (uovo), das Obst (frutta), das Gemüse (verdura).",
+      "Bevande: das Wasser, der Saft (succo), die Milch, der Tee, der Kaffee, das Bier e der Wein.",
+      "Ciò che non si conta va senza articolo: Ich esse Brot. Ich trinke Wasser. Ich kaufe Obst."
+     ],
+     "q": "Che cosa mangi di solito a colazione? Dimmelo con ich esse... und ich trinke...",
+     "c": "Apri il frigo o la dispensa e nomina almeno otto alimenti in tedesco con der, die o das."
+    },
+    "pt": {
+     "t": "Comida e bebida",
+     "g": "Aprender palavras do dia a dia de comida e bebida com o artigo.",
+     "p": [
+      "O básico: das Brot (pão), der Käse (queijo), die Wurst (salsicha), die Butter, das Ei (ovo), das Obst (fruta), das Gemüse (legumes).",
+      "Bebidas: das Wasser, der Saft (sumo), die Milch, der Tee, der Kaffee, das Bier e der Wein.",
+      "O que não se conta usa-se sem artigo: Ich esse Brot. Ich trinke Wasser. Ich kaufe Obst."
+     ],
+     "q": "O que costumas comer ao pequeno-almoço? Diz-me com ich esse... und ich trinke...",
+     "c": "Abre o frigorífico ou o armário e nomeia pelo menos oito alimentos em alemão com der, die ou das."
+    },
+    "pt_BR": {
+     "t": "Comida e bebida",
+     "g": "Aprender palavras do dia a dia de comida e bebida com o artigo.",
+     "p": [
+      "O básico: das Brot (pão), der Käse (queijo), die Wurst (linguiça), die Butter, das Ei (ovo), das Obst (fruta), das Gemüse (verdura).",
+      "Bebidas: das Wasser, der Saft (suco), die Milch, der Tee, der Kaffee, das Bier e der Wein.",
+      "O que não se conta vai sem artigo: Ich esse Brot. Ich trinke Wasser. Ich kaufe Obst."
+     ],
+     "q": "O que você costuma comer no café da manhã? Me conte com ich esse... und ich trinke...",
+     "c": "Abra a geladeira ou o armário e nomeie pelo menos oito alimentos em alemão com der, die ou das."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Brot",
+      "ex": "Das Brot ist frisch."
+     },
+     {
+      "w": "der Käse",
+      "ex": "Ich esse gern Käse."
+     },
+     {
+      "w": "die Wurst",
+      "ex": "Die Wurst ist aus Bayern."
+     },
+     {
+      "w": "das Obst",
+      "ex": "Obst ist gesund."
+     },
+     {
+      "w": "das Gemüse",
+      "ex": "Wir kaufen Gemüse auf dem Markt."
+     },
+     {
+      "w": "der Saft",
+      "ex": "Ich trinke einen Apfelsaft."
+     }
+    ],
+    "gram": "Nicht zählbar ohne Artikel: Ich esse Käse. Ich trinke Milch. Zum Frühstück esse ich Brot mit Butter."
+   }
+  },
+  {
+   "d": 33,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The accusative case",
+     "g": "Use the accusative for the direct object, especially with masculine nouns.",
+     "p": [
+      "The direct object is what you have, see, buy or want: Ich habe einen Bruder. Ich sehe den Hund.",
+      "Only masculine changes: der → den, ein → einen, kein → keinen. Die, das and the plural stay the same.",
+      "Haben, kaufen, sehen, nehmen, brauchen and möchten all take the accusative. Es gibt also takes it: Es gibt einen Park."
+     ],
+     "q": "What do you need today? Answer with ich brauche einen..., eine... or ein...",
+     "c": "Write six sentences with haben, kaufen and brauchen, using at least three masculine nouns with einen or den."
+    },
+    "de": {
+     "t": "Der Akkusativ",
+     "g": "Du benutzt den Akkusativ für das direkte Objekt, besonders bei maskulinen Nomen.",
+     "p": [
+      "Das direkte Objekt ist das, was du hast, siehst, kaufst oder willst: Ich habe einen Bruder. Ich sehe den Hund.",
+      "Nur das Maskulinum ändert sich: der → den, ein → einen, kein → keinen. Die, das und der Plural bleiben gleich.",
+      "Haben, kaufen, sehen, nehmen, brauchen und möchten brauchen den Akkusativ, auch es gibt: Es gibt einen Park."
+     ],
+     "q": "Was brauchst du heute? Antworte mit ich brauche einen..., eine... oder ein...",
+     "c": "Schreib sechs Sätze mit haben, kaufen und brauchen und benutze mindestens drei maskuline Nomen mit einen oder den."
+    },
+    "es": {
+     "t": "El acusativo",
+     "g": "Usa el acusativo para el complemento directo, sobre todo con sustantivos masculinos.",
+     "p": [
+      "El complemento directo es lo que tienes, ves, compras o quieres: Ich habe einen Bruder. Ich sehe den Hund.",
+      "Solo cambia el masculino: der → den, ein → einen, kein → keinen. Die, das y el plural no cambian.",
+      "Haben, kaufen, sehen, nehmen, brauchen y möchten llevan acusativo, igual que es gibt: Es gibt einen Park."
+     ],
+     "q": "¿Qué necesitas hoy? Responde con ich brauche einen..., eine... o ein...",
+     "c": "Escribe seis frases con haben, kaufen y brauchen, usando al menos tres sustantivos masculinos con einen o den."
+    },
+    "fr": {
+     "t": "L'accusatif",
+     "g": "Utiliser l'accusatif pour le complément d'objet direct, surtout au masculin.",
+     "p": [
+      "Le COD, c'est ce qu'on a, voit, achète ou veut : Ich habe einen Bruder. Ich sehe den Hund.",
+      "Seul le masculin change : der → den, ein → einen, kein → keinen. Die, das et le pluriel ne bougent pas.",
+      "Haben, kaufen, sehen, nehmen, brauchen et möchten demandent l'accusatif, comme es gibt : Es gibt einen Park."
+     ],
+     "q": "De quoi as-tu besoin aujourd'hui ? Réponds avec ich brauche einen..., eine... ou ein...",
+     "c": "Écris six phrases avec haben, kaufen et brauchen, avec au moins trois noms masculins avec einen ou den."
+    },
+    "it": {
+     "t": "L'accusativo",
+     "g": "Usi l'accusativo per il complemento oggetto, soprattutto con i nomi maschili.",
+     "p": [
+      "Il complemento oggetto è ciò che hai, vedi, compri o vuoi: Ich habe einen Bruder. Ich sehe den Hund.",
+      "Cambia solo il maschile: der → den, ein → einen, kein → keinen. Die, das e il plurale restano uguali.",
+      "Haben, kaufen, sehen, nehmen, brauchen e möchten vogliono l'accusativo, come es gibt: Es gibt einen Park."
+     ],
+     "q": "Di che cosa hai bisogno oggi? Rispondi con ich brauche einen..., eine... o ein...",
+     "c": "Scrivi sei frasi con haben, kaufen e brauchen, usando almeno tre nomi maschili con einen o den."
+    },
+    "pt": {
+     "t": "O acusativo",
+     "g": "Usar o acusativo para o complemento direto, sobretudo com nomes masculinos.",
+     "p": [
+      "O complemento direto é o que tens, vês, compras ou queres: Ich habe einen Bruder. Ich sehe den Hund.",
+      "Só o masculino muda: der → den, ein → einen, kein → keinen. Die, das e o plural ficam iguais.",
+      "Haben, kaufen, sehen, nehmen, brauchen e möchten pedem acusativo, tal como es gibt: Es gibt einen Park."
+     ],
+     "q": "De que precisas hoje? Responde com ich brauche einen..., eine... ou ein...",
+     "c": "Escreve seis frases com haben, kaufen e brauchen, com pelo menos três nomes masculinos com einen ou den."
+    },
+    "pt_BR": {
+     "t": "O acusativo",
+     "g": "Usar o acusativo para o objeto direto, principalmente com nomes masculinos.",
+     "p": [
+      "O objeto direto é o que você tem, vê, compra ou quer: Ich habe einen Bruder. Ich sehe den Hund.",
+      "Só o masculino muda: der → den, ein → einen, kein → keinen. Die, das e o plural ficam iguais.",
+      "Haben, kaufen, sehen, nehmen, brauchen e möchten pedem acusativo, assim como es gibt: Es gibt einen Park."
+     ],
+     "q": "Do que você precisa hoje? Responda com ich brauche einen..., eine... ou ein...",
+     "c": "Escreva seis frases com haben, kaufen e brauchen, com pelo menos três nomes masculinos com einen ou den."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "einen Bruder",
+      "ex": "Ich habe einen Bruder."
+     },
+     {
+      "w": "den Hund",
+      "ex": "Siehst du den Hund?"
+     },
+     {
+      "w": "keinen",
+      "ex": "Ich habe keinen Hunger."
+     },
+     {
+      "w": "brauchen",
+      "ex": "Ich brauche einen Stift."
+     },
+     {
+      "w": "kaufen",
+      "ex": "Wir kaufen einen Tisch."
+     },
+     {
+      "w": "es gibt",
+      "ex": "Hier gibt es einen Supermarkt."
+     }
+    ],
+    "gram": "Akkusativ maskulin: der → den, ein → einen, kein → keinen. Feminin, neutral, Plural bleiben: Ich kaufe die Lampe, das Buch."
+   }
+  },
+  {
+   "d": 34,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the bakery",
+     "g": "Buy bread and pastries at a German Bäckerei.",
+     "p": [
+      "Classics: das Brötchen (roll), die Brezel (pretzel), das Vollkornbrot (wholegrain bread), das Croissant.",
+      "Order with numbers: zwei Brötchen, eine Brezel und zwei Stück Kuchen, bitte. Stück stays singular after numbers.",
+      "The baker asks Sonst noch etwas? (anything else?). Say Das ist alles, danke, or Noch ein Brötchen, bitte."
+     ],
+     "q": "What would you buy for a Sunday breakfast at a German bakery? Tell me with quantities.",
+     "c": "Write a shopping list for the Bäckerei in German with numbers, and read it aloud like an order."
+    },
+    "de": {
+     "t": "In der Bäckerei",
+     "g": "Du kaufst Brot und Gebäck in einer deutschen Bäckerei.",
+     "p": [
+      "Klassiker: das Brötchen, die Brezel, das Vollkornbrot, das Croissant. In Süddeutschland sagt man auch Semmel.",
+      "Bestell mit Zahlen: zwei Brötchen, eine Brezel und zwei Stück Kuchen, bitte. Stück bleibt nach Zahlen im Singular.",
+      "Die Verkäuferin fragt: Sonst noch etwas? Du sagst: Das ist alles, danke. Oder: Noch ein Brötchen, bitte."
+     ],
+     "q": "Was kaufst du in einer deutschen Bäckerei für ein Sonntagsfrühstück? Sag es mit Mengen.",
+     "c": "Schreib eine Einkaufsliste für die Bäckerei mit Zahlen und lies sie laut wie eine Bestellung vor."
+    },
+    "es": {
+     "t": "En la panadería",
+     "g": "Compra pan y bollería en una Bäckerei alemana.",
+     "p": [
+      "Clásicos: das Brötchen (panecillo), die Brezel (pretzel), das Vollkornbrot (pan integral), das Croissant.",
+      "Pide con números: zwei Brötchen, eine Brezel und zwei Stück Kuchen, bitte. Stück queda en singular tras un número.",
+      "El panadero pregunta Sonst noch etwas? (¿algo más?). Di Das ist alles, danke, o Noch ein Brötchen, bitte."
+     ],
+     "q": "¿Qué comprarías en una panadería alemana para un desayuno de domingo? Dímelo con cantidades.",
+     "c": "Escribe en alemán una lista para la Bäckerei con números y léela en voz alta como un pedido."
+    },
+    "fr": {
+     "t": "À la boulangerie",
+     "g": "Acheter du pain et des viennoiseries dans une Bäckerei allemande.",
+     "p": [
+      "Les classiques : das Brötchen (petit pain), die Brezel (bretzel), das Vollkornbrot (pain complet), das Croissant.",
+      "Commande avec des nombres : zwei Brötchen, eine Brezel und zwei Stück Kuchen, bitte. Stück reste au singulier.",
+      "Le boulanger demande Sonst noch etwas ? (autre chose ?). Réponds Das ist alles, danke, ou Noch ein Brötchen, bitte."
+     ],
+     "q": "Qu'achèterais-tu dans une boulangerie allemande pour un petit-déjeuner du dimanche ? Dis-le avec des quantités.",
+     "c": "Écris une liste pour la Bäckerei en allemand avec des nombres, et lis-la à voix haute comme une commande."
+    },
+    "it": {
+     "t": "In panetteria",
+     "g": "Compri pane e dolci in una Bäckerei tedesca.",
+     "p": [
+      "I classici: das Brötchen (panino), die Brezel (bretzel), das Vollkornbrot (pane integrale), das Croissant.",
+      "Ordina con i numeri: zwei Brötchen, eine Brezel und zwei Stück Kuchen, bitte. Stück resta singolare dopo i numeri.",
+      "Il fornaio chiede Sonst noch etwas? (altro?). Rispondi Das ist alles, danke, oppure Noch ein Brötchen, bitte."
+     ],
+     "q": "Che cosa compreresti in una panetteria tedesca per una colazione della domenica? Dimmelo con le quantità.",
+     "c": "Scrivi una lista per la Bäckerei in tedesco con i numeri e leggila ad alta voce come un'ordinazione."
+    },
+    "pt": {
+     "t": "Na padaria",
+     "g": "Comprar pão e bolos numa Bäckerei alemã.",
+     "p": [
+      "Clássicos: das Brötchen (pãozinho), die Brezel (pretzel), das Vollkornbrot (pão integral), das Croissant.",
+      "Pede com números: zwei Brötchen, eine Brezel und zwei Stück Kuchen, bitte. Stück fica no singular depois de números.",
+      "O padeiro pergunta Sonst noch etwas? (mais alguma coisa?). Diz Das ist alles, danke, ou Noch ein Brötchen, bitte."
+     ],
+     "q": "O que comprarias numa padaria alemã para um pequeno-almoço de domingo? Diz-me com quantidades.",
+     "c": "Escreve uma lista para a Bäckerei em alemão com números e lê-a em voz alta como um pedido."
+    },
+    "pt_BR": {
+     "t": "Na padaria",
+     "g": "Comprar pão e doces numa Bäckerei alemã.",
+     "p": [
+      "Clássicos: das Brötchen (pãozinho), die Brezel (pretzel), das Vollkornbrot (pão integral), das Croissant.",
+      "Peça com números: zwei Brötchen, eine Brezel und zwei Stück Kuchen, bitte. Stück fica no singular depois de números.",
+      "O padeiro pergunta Sonst noch etwas? (mais alguma coisa?). Diga Das ist alles, danke, ou Noch ein Brötchen, bitte."
+     ],
+     "q": "O que você compraria numa padaria alemã para um café da manhã de domingo? Me diga com quantidades.",
+     "c": "Escreva uma lista para a Bäckerei em alemão com números e leia em voz alta como um pedido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Bäckerei",
+      "ex": "Die Bäckerei öffnet um sieben Uhr."
+     },
+     {
+      "w": "das Brötchen",
+      "ex": "Vier Brötchen, bitte."
+     },
+     {
+      "w": "die Brezel",
+      "ex": "Eine Brezel mit Butter, bitte."
+     },
+     {
+      "w": "das Stück",
+      "ex": "Zwei Stück Apfelkuchen, bitte."
+     },
+     {
+      "w": "Sonst noch etwas?",
+      "ex": "Sonst noch etwas? – Nein, danke."
+     },
+     {
+      "w": "Das ist alles.",
+      "ex": "Das ist alles, danke."
+     }
+    ],
+    "gram": "Mengen: zwei Brötchen, drei Brezeln, aber zwei Stück Kuchen (Stück bleibt Singular). Ich hätte gern... / ..., bitte."
+   }
+  },
+  {
+   "d": 35,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Möchten: polite wishes",
+     "g": "Express wishes politely with ich möchte and ich hätte gern.",
+     "p": [
+      "Möchte means would like: ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.",
+      "The thing you want is in the accusative: Ich möchte einen Tee. With a second verb, it goes to the end: Ich möchte bezahlen.",
+      "Ich hätte gern... sounds very polite in shops and restaurants: Ich hätte gern ein Glas Wasser."
+     ],
+     "q": "What would you like to do this weekend? Answer with ich möchte... and a verb at the end.",
+     "c": "Turn five direct orders into polite wishes: Ich will Kaffee becomes Ich möchte einen Kaffee, bitte."
+    },
+    "de": {
+     "t": "Möchten: höfliche Wünsche",
+     "g": "Du drückst Wünsche höflich mit ich möchte und ich hätte gern aus.",
+     "p": [
+      "Möchten: ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.",
+      "Das Gewünschte steht im Akkusativ: Ich möchte einen Tee. Ein zweites Verb geht ans Ende: Ich möchte bezahlen.",
+      "Ich hätte gern... klingt im Geschäft und Restaurant sehr höflich: Ich hätte gern ein Glas Wasser."
+     ],
+     "q": "Was möchtest du am Wochenende machen? Antworte mit ich möchte... und einem Verb am Ende.",
+     "c": "Mach aus fünf direkten Sätzen höfliche Wünsche: Ich will Kaffee wird zu Ich möchte einen Kaffee, bitte."
+    },
+    "es": {
+     "t": "Möchten: deseos corteses",
+     "g": "Expresa deseos con cortesía con ich möchte e ich hätte gern.",
+     "p": [
+      "Möchte significa me gustaría: ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.",
+      "Lo que quieres va en acusativo: Ich möchte einen Tee. Si hay otro verbo, va al final: Ich möchte bezahlen.",
+      "Ich hätte gern... suena muy cortés en tiendas y restaurantes: Ich hätte gern ein Glas Wasser."
+     ],
+     "q": "¿Qué te gustaría hacer este fin de semana? Responde con ich möchte... y un verbo al final.",
+     "c": "Convierte cinco órdenes directas en deseos corteses: Ich will Kaffee pasa a Ich möchte einen Kaffee, bitte."
+    },
+    "fr": {
+     "t": "Möchten : les souhaits polis",
+     "g": "Exprimer poliment un souhait avec ich möchte et ich hätte gern.",
+     "p": [
+      "Möchte veut dire je voudrais : ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.",
+      "L'objet souhaité est à l'accusatif : Ich möchte einen Tee. Un deuxième verbe va à la fin : Ich möchte bezahlen.",
+      "Ich hätte gern... est très poli au magasin et au restaurant : Ich hätte gern ein Glas Wasser."
+     ],
+     "q": "Qu'aimerais-tu faire ce week-end ? Réponds avec ich möchte... et un verbe à la fin.",
+     "c": "Transforme cinq demandes directes en souhaits polis : Ich will Kaffee devient Ich möchte einen Kaffee, bitte."
+    },
+    "it": {
+     "t": "Möchten: desideri cortesi",
+     "g": "Esprimi desideri con cortesia usando ich möchte e ich hätte gern.",
+     "p": [
+      "Möchte vuol dire vorrei: ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.",
+      "Ciò che vuoi va all'accusativo: Ich möchte einen Tee. Un secondo verbo va alla fine: Ich möchte bezahlen.",
+      "Ich hätte gern... è molto cortese nei negozi e al ristorante: Ich hätte gern ein Glas Wasser."
+     ],
+     "q": "Che cosa vorresti fare questo fine settimana? Rispondi con ich möchte... e un verbo alla fine.",
+     "c": "Trasforma cinque richieste dirette in desideri cortesi: Ich will Kaffee diventa Ich möchte einen Kaffee, bitte."
+    },
+    "pt": {
+     "t": "Möchten: desejos educados",
+     "g": "Exprimir desejos com educação com ich möchte e ich hätte gern.",
+     "p": [
+      "Möchte quer dizer gostaria: ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.",
+      "O que queres vai no acusativo: Ich möchte einen Tee. Um segundo verbo vai para o fim: Ich möchte bezahlen.",
+      "Ich hätte gern... soa muito educado em lojas e restaurantes: Ich hätte gern ein Glas Wasser."
+     ],
+     "q": "O que gostarias de fazer este fim de semana? Responde com ich möchte... e um verbo no fim.",
+     "c": "Transforma cinco pedidos diretos em desejos educados: Ich will Kaffee passa a Ich möchte einen Kaffee, bitte."
+    },
+    "pt_BR": {
+     "t": "Möchten: desejos educados",
+     "g": "Expressar desejos com educação usando ich möchte e ich hätte gern.",
+     "p": [
+      "Möchte quer dizer gostaria: ich möchte, du möchtest, er möchte, wir möchten, ihr möchtet, sie/Sie möchten.",
+      "O que você quer vai no acusativo: Ich möchte einen Tee. Um segundo verbo vai para o fim: Ich möchte bezahlen.",
+      "Ich hätte gern... soa bem educado em lojas e restaurantes: Ich hätte gern ein Glas Wasser."
+     ],
+     "q": "O que você gostaria de fazer neste fim de semana? Responda com ich möchte... e um verbo no fim.",
+     "c": "Transforme cinco pedidos diretos em desejos educados: Ich will Kaffee vira Ich möchte einen Kaffee, bitte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ich möchte",
+      "ex": "Ich möchte einen Tee, bitte."
+     },
+     {
+      "w": "möchtest du",
+      "ex": "Möchtest du etwas trinken?"
+     },
+     {
+      "w": "ich hätte gern",
+      "ex": "Ich hätte gern ein Glas Wasser."
+     },
+     {
+      "w": "bezahlen",
+      "ex": "Wir möchten bezahlen, bitte."
+     },
+     {
+      "w": "das Glas",
+      "ex": "Ein Glas Orangensaft, bitte."
+     },
+     {
+      "w": "etwas",
+      "ex": "Möchten Sie noch etwas?"
+     }
+    ],
+    "gram": "möchten + Akkusativ: Ich möchte einen Kaffee. möchten + Infinitiv am Ende: Ich möchte heute schwimmen. Höflich: Ich hätte gern..."
+   }
+  },
+  {
+   "d": 36,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the restaurant",
+     "g": "Book a table and read a German menu.",
+     "p": [
+      "To book: Ich möchte einen Tisch für zwei Personen reservieren, um acht Uhr. At the door: Haben Sie einen Tisch frei?",
+      "Die Speisekarte has die Vorspeise (starter), das Hauptgericht (main course) and der Nachtisch (dessert).",
+      "Order with Ich nehme... or Für mich bitte..., and say Es schmeckt sehr gut! when you like the food."
+     ],
+     "q": "Look at an imaginary menu: what do you choose as Vorspeise, Hauptgericht and Nachtisch?",
+     "c": "Write a three-course order in German for yourself and a friend, using ich nehme and für mich."
+    },
+    "de": {
+     "t": "Im Restaurant",
+     "g": "Du reservierst einen Tisch und liest eine deutsche Speisekarte.",
+     "p": [
+      "Reservieren: Ich möchte einen Tisch für zwei Personen reservieren, um acht Uhr. Vor Ort: Haben Sie einen Tisch frei?",
+      "Die Speisekarte hat die Vorspeise, das Hauptgericht und den Nachtisch.",
+      "Bestell mit Ich nehme... oder Für mich bitte... und sag Es schmeckt sehr gut!, wenn es dir schmeckt."
+     ],
+     "q": "Schau auf eine gedachte Speisekarte: Was nimmst du als Vorspeise, Hauptgericht und Nachtisch?",
+     "c": "Schreib eine Bestellung mit drei Gängen für dich und eine Freundin, mit ich nehme und für mich."
+    },
+    "es": {
+     "t": "En el restaurante",
+     "g": "Reserva una mesa y lee una carta en alemán.",
+     "p": [
+      "Para reservar: Ich möchte einen Tisch für zwei Personen reservieren, um acht Uhr. En la puerta: Haben Sie einen Tisch frei?",
+      "Die Speisekarte tiene die Vorspeise (entrante), das Hauptgericht (plato principal) y der Nachtisch (postre).",
+      "Pide con Ich nehme... o Für mich bitte..., y di Es schmeckt sehr gut! cuando te guste la comida."
+     ],
+     "q": "Mira una carta imaginaria: ¿qué eliges de Vorspeise, Hauptgericht y Nachtisch?",
+     "c": "Escribe en alemán un pedido de tres platos para ti y un amigo, con ich nehme y für mich."
+    },
+    "fr": {
+     "t": "Au restaurant",
+     "g": "Réserver une table et lire une carte en allemand.",
+     "p": [
+      "Pour réserver : Ich möchte einen Tisch für zwei Personen reservieren, um acht Uhr. Sur place : Haben Sie einen Tisch frei ?",
+      "Die Speisekarte propose die Vorspeise (entrée), das Hauptgericht (plat principal) et der Nachtisch (dessert).",
+      "Commande avec Ich nehme... ou Für mich bitte..., et dis Es schmeckt sehr gut ! quand c'est bon."
+     ],
+     "q": "Regarde une carte imaginaire : que choisis-tu comme Vorspeise, Hauptgericht et Nachtisch ?",
+     "c": "Écris en allemand une commande en trois plats pour toi et un ami, avec ich nehme et für mich."
+    },
+    "it": {
+     "t": "Al ristorante",
+     "g": "Prenoti un tavolo e leggi un menù in tedesco.",
+     "p": [
+      "Per prenotare: Ich möchte einen Tisch für zwei Personen reservieren, um acht Uhr. Sul posto: Haben Sie einen Tisch frei?",
+      "Die Speisekarte ha die Vorspeise (antipasto), das Hauptgericht (piatto principale) e der Nachtisch (dolce).",
+      "Ordina con Ich nehme... o Für mich bitte..., e di' Es schmeckt sehr gut! quando il cibo ti piace."
+     ],
+     "q": "Guarda un menù immaginario: che cosa scegli come Vorspeise, Hauptgericht e Nachtisch?",
+     "c": "Scrivi in tedesco un'ordinazione di tre portate per te e un amico, con ich nehme e für mich."
+    },
+    "pt": {
+     "t": "No restaurante",
+     "g": "Reservar uma mesa e ler uma ementa em alemão.",
+     "p": [
+      "Para reservar: Ich möchte einen Tisch für zwei Personen reservieren, um acht Uhr. À porta: Haben Sie einen Tisch frei?",
+      "Die Speisekarte tem die Vorspeise (entrada), das Hauptgericht (prato principal) e der Nachtisch (sobremesa).",
+      "Pede com Ich nehme... ou Für mich bitte..., e diz Es schmeckt sehr gut! quando gostares da comida."
+     ],
+     "q": "Olha para uma ementa imaginária: o que escolhes como Vorspeise, Hauptgericht e Nachtisch?",
+     "c": "Escreve em alemão um pedido de três pratos para ti e um amigo, com ich nehme e für mich."
+    },
+    "pt_BR": {
+     "t": "No restaurante",
+     "g": "Reservar uma mesa e ler um cardápio em alemão.",
+     "p": [
+      "Para reservar: Ich möchte einen Tisch für zwei Personen reservieren, um acht Uhr. Na porta: Haben Sie einen Tisch frei?",
+      "Die Speisekarte tem die Vorspeise (entrada), das Hauptgericht (prato principal) e der Nachtisch (sobremesa).",
+      "Peça com Ich nehme... ou Für mich bitte..., e diga Es schmeckt sehr gut! quando gostar da comida."
+     ],
+     "q": "Olhe um cardápio imaginário: o que você escolhe como Vorspeise, Hauptgericht e Nachtisch?",
+     "c": "Escreva em alemão um pedido de três pratos para você e um amigo, com ich nehme e für mich."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "reservieren",
+      "ex": "Ich möchte einen Tisch reservieren."
+     },
+     {
+      "w": "die Speisekarte",
+      "ex": "Die Speisekarte, bitte."
+     },
+     {
+      "w": "die Vorspeise",
+      "ex": "Als Vorspeise nehme ich die Suppe."
+     },
+     {
+      "w": "das Hauptgericht",
+      "ex": "Das Hauptgericht ist sehr lecker."
+     },
+     {
+      "w": "der Nachtisch",
+      "ex": "Zum Nachtisch nehme ich Eis."
+     },
+     {
+      "w": "Es schmeckt gut.",
+      "ex": "Danke, es schmeckt sehr gut!"
+     }
+    ],
+    "gram": "Ich nehme + Akkusativ: Ich nehme den Fisch. Als Vorspeise / zum Nachtisch nehme ich... Es schmeckt (mir) gut."
+   }
+  },
+  {
+   "d": 37,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prices and money",
+     "g": "Ask for prices, understand them and choose how to pay.",
+     "p": [
+      "Ask Was kostet das? or Wie viel kostet der Pullover? For plurals: Was kosten die Äpfel?",
+      "Prices: 2,50 € is zwei Euro fünfzig; Germans write a comma for the decimals. Cent and Euro stay singular.",
+      "React with Das ist günstig (good price) or Das ist zu teuer. At the till: Bar oder mit Karte?"
+     ],
+     "q": "How do you usually pay for small things, bar oder mit Karte? Answer in German.",
+     "c": "Read five prices from a receipt or a shop online aloud in German, the way a cashier would say them."
+    },
+    "de": {
+     "t": "Preise und Geld",
+     "g": "Du fragst nach Preisen, verstehst sie und wählst die Zahlungsart.",
+     "p": [
+      "Frag: Was kostet das? oder Wie viel kostet der Pullover? Im Plural: Was kosten die Äpfel?",
+      "Preise: 2,50 € spricht man zwei Euro fünfzig. Euro und Cent bleiben nach Zahlen im Singular.",
+      "Reagiere mit Das ist günstig oder Das ist zu teuer. An der Kasse: Bar oder mit Karte?"
+     ],
+     "q": "Wie bezahlst du kleine Dinge meistens, bar oder mit Karte? Antworte auf Deutsch.",
+     "c": "Lies fünf Preise von einem Kassenbon oder aus einem Onlineshop laut auf Deutsch vor, wie an der Kasse."
+    },
+    "es": {
+     "t": "Precios y dinero",
+     "g": "Pregunta precios, entiéndelos y elige cómo pagar.",
+     "p": [
+      "Pregunta Was kostet das? o Wie viel kostet der Pullover? En plural: Was kosten die Äpfel?",
+      "Precios: 2,50 € se dice zwei Euro fünfzig. Euro y Cent quedan en singular tras un número.",
+      "Reacciona con Das ist günstig (buen precio) o Das ist zu teuer. En la caja: Bar oder mit Karte? (¿efectivo o tarjeta?)"
+     ],
+     "q": "¿Cómo pagas normalmente las cosas pequeñas, bar oder mit Karte? Responde en alemán.",
+     "c": "Lee en voz alta en alemán cinco precios de un tique o una tienda online, como lo diría un cajero."
+    },
+    "fr": {
+     "t": "Les prix et l'argent",
+     "g": "Demander un prix, le comprendre et choisir comment payer.",
+     "p": [
+      "Demande Was kostet das ? ou Wie viel kostet der Pullover ? Au pluriel : Was kosten die Äpfel ?",
+      "Les prix : 2,50 € se dit zwei Euro fünfzig. Euro et Cent restent au singulier après un nombre.",
+      "Réagis avec Das ist günstig (bon prix) ou Das ist zu teuer. À la caisse : Bar oder mit Karte ? (espèces ou carte ?)"
+     ],
+     "q": "Comment paies-tu d'habitude les petites choses, bar oder mit Karte ? Réponds en allemand.",
+     "c": "Lis à voix haute en allemand cinq prix d'un ticket de caisse ou d'une boutique en ligne, comme un caissier."
+    },
+    "it": {
+     "t": "Prezzi e soldi",
+     "g": "Chiedi i prezzi, li capisci e scegli come pagare.",
+     "p": [
+      "Chiedi Was kostet das? o Wie viel kostet der Pullover? Al plurale: Was kosten die Äpfel?",
+      "I prezzi: 2,50 € si dice zwei Euro fünfzig. Euro e Cent restano al singolare dopo un numero.",
+      "Reagisci con Das ist günstig (conveniente) o Das ist zu teuer. Alla cassa: Bar oder mit Karte? (contanti o carta?)"
+     ],
+     "q": "Come paghi di solito le piccole cose, bar oder mit Karte? Rispondi in tedesco.",
+     "c": "Leggi ad alta voce in tedesco cinque prezzi da uno scontrino o da un negozio online, come farebbe un cassiere."
+    },
+    "pt": {
+     "t": "Preços e dinheiro",
+     "g": "Perguntar preços, compreendê-los e escolher como pagar.",
+     "p": [
+      "Pergunta Was kostet das? ou Wie viel kostet der Pullover? No plural: Was kosten die Äpfel?",
+      "Preços: 2,50 € diz-se zwei Euro fünfzig. Euro e Cent ficam no singular depois de números.",
+      "Reage com Das ist günstig (bom preço) ou Das ist zu teuer. Na caixa: Bar oder mit Karte? (dinheiro ou cartão?)"
+     ],
+     "q": "Como pagas normalmente as coisas pequenas, bar oder mit Karte? Responde em alemão.",
+     "c": "Lê em voz alta em alemão cinco preços de um talão ou de uma loja online, como diria um operador de caixa."
+    },
+    "pt_BR": {
+     "t": "Preços e dinheiro",
+     "g": "Perguntar preços, entender e escolher como pagar.",
+     "p": [
+      "Pergunte Was kostet das? ou Wie viel kostet der Pullover? No plural: Was kosten die Äpfel?",
+      "Preços: 2,50 € se diz zwei Euro fünfzig. Euro e Cent ficam no singular depois de números.",
+      "Reaja com Das ist günstig (bom preço) ou Das ist zu teuer. No caixa: Bar oder mit Karte? (dinheiro ou cartão?)"
+     ],
+     "q": "Como você costuma pagar coisas pequenas, bar oder mit Karte? Responda em alemão.",
+     "c": "Leia em voz alta em alemão cinco preços de uma nota fiscal ou loja online, como um caixa diria."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Was kostet das?",
+      "ex": "Entschuldigung, was kostet das?"
+     },
+     {
+      "w": "kosten",
+      "ex": "Die Äpfel kosten drei Euro."
+     },
+     {
+      "w": "der Euro",
+      "ex": "Das macht zwölf Euro fünfzig."
+     },
+     {
+      "w": "teuer",
+      "ex": "Die Jacke ist zu teuer."
+     },
+     {
+      "w": "günstig",
+      "ex": "Das Hotel ist sehr günstig."
+     },
+     {
+      "w": "bar oder mit Karte",
+      "ex": "Zahlen Sie bar oder mit Karte?"
+     }
+    ],
+    "gram": "Was kostet der Rock? – Er kostet 30 Euro. Plural: Was kosten die Schuhe? 4,99 € = vier Euro neunundneunzig."
+   }
+  },
+  {
+   "d": 38,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Irregular verbs: essen, lesen, sehen",
+     "g": "Conjugate verbs whose stem vowel changes from e to i or ie.",
+     "p": [
+      "Some verbs change e to i or ie, but only with du and er/sie/es: du isst, er isst; du liest, sie liest; du siehst, er sieht.",
+      "The other forms stay regular: ich esse, wir lesen, ihr seht. Others like this: sprechen (du sprichst), nehmen (du nimmst).",
+      "Essen has a twist: du isst and er isst are the same. Learn these verbs in pairs: ich lese, du liest."
+     ],
+     "q": "What are you reading at the moment, and what does a friend of yours like to read? Use liest.",
+     "c": "Write six sentences, two each with essen, lesen and sehen, using the du or er/sie form."
+    },
+    "de": {
+     "t": "Unregelmäßige Verben: essen, lesen, sehen",
+     "g": "Du konjugierst Verben, deren Stammvokal von e zu i oder ie wechselt.",
+     "p": [
+      "Manche Verben wechseln e zu i oder ie, aber nur bei du und er/sie/es: du isst, er isst; du liest, sie liest; du siehst, er sieht.",
+      "Die anderen Formen bleiben regelmäßig: ich esse, wir lesen, ihr seht. Ähnlich: sprechen (du sprichst), nehmen (du nimmst).",
+      "Bei essen sind du isst und er isst gleich. Lern diese Verben paarweise: ich lese, du liest."
+     ],
+     "q": "Was liest du gerade, und was liest eine Freundin oder ein Freund von dir gern?",
+     "c": "Schreib sechs Sätze, je zwei mit essen, lesen und sehen, in der du- oder er/sie-Form."
+    },
+    "es": {
+     "t": "Verbos irregulares: essen, lesen, sehen",
+     "g": "Conjuga verbos cuya vocal cambia de e a i o ie.",
+     "p": [
+      "Algunos verbos cambian e por i o ie, pero solo con du y er/sie/es: du isst, er isst; du liest, sie liest; du siehst, er sieht.",
+      "Las demás formas son regulares: ich esse, wir lesen, ihr seht. Iguales: sprechen (du sprichst), nehmen (du nimmst).",
+      "Essen tiene un truco: du isst y er isst son iguales. Aprende estos verbos en pareja: ich lese, du liest."
+     ],
+     "q": "¿Qué estás leyendo ahora, y qué le gusta leer a un amigo tuyo? Usa liest.",
+     "c": "Escribe seis frases, dos con essen, dos con lesen y dos con sehen, en la forma du o er/sie."
+    },
+    "fr": {
+     "t": "Verbes irréguliers : essen, lesen, sehen",
+     "g": "Conjuguer les verbes dont la voyelle passe de e à i ou ie.",
+     "p": [
+      "Certains verbes changent e en i ou ie, mais seulement avec du et er/sie/es : du isst, er isst ; du liest, sie liest ; du siehst, er sieht.",
+      "Les autres formes restent régulières : ich esse, wir lesen, ihr seht. Pareil : sprechen (du sprichst), nehmen (du nimmst).",
+      "Avec essen, du isst et er isst sont identiques. Apprends ces verbes par paires : ich lese, du liest."
+     ],
+     "q": "Que lis-tu en ce moment, et qu'aime lire un de tes amis ? Utilise liest.",
+     "c": "Écris six phrases, deux avec essen, deux avec lesen et deux avec sehen, à la forme du ou er/sie."
+    },
+    "it": {
+     "t": "Verbi irregolari: essen, lesen, sehen",
+     "g": "Coniughi i verbi la cui vocale cambia da e a i o ie.",
+     "p": [
+      "Alcuni verbi cambiano e in i o ie, ma solo con du ed er/sie/es: du isst, er isst; du liest, sie liest; du siehst, er sieht.",
+      "Le altre forme restano regolari: ich esse, wir lesen, ihr seht. Simili: sprechen (du sprichst), nehmen (du nimmst).",
+      "Con essen, du isst ed er isst sono uguali. Impara questi verbi a coppie: ich lese, du liest."
+     ],
+     "q": "Che cosa stai leggendo ora, e che cosa ama leggere un tuo amico? Usa liest.",
+     "c": "Scrivi sei frasi, due con essen, due con lesen e due con sehen, nella forma du o er/sie."
+    },
+    "pt": {
+     "t": "Verbos irregulares: essen, lesen, sehen",
+     "g": "Conjugar verbos cuja vogal muda de e para i ou ie.",
+     "p": [
+      "Alguns verbos mudam e para i ou ie, mas só com du e er/sie/es: du isst, er isst; du liest, sie liest; du siehst, er sieht.",
+      "As outras formas são regulares: ich esse, wir lesen, ihr seht. Iguais: sprechen (du sprichst), nehmen (du nimmst).",
+      "Com essen, du isst e er isst são iguais. Aprende estes verbos aos pares: ich lese, du liest."
+     ],
+     "q": "O que estás a ler agora, e o que gosta de ler um amigo teu? Usa liest.",
+     "c": "Escreve seis frases, duas com essen, duas com lesen e duas com sehen, na forma du ou er/sie."
+    },
+    "pt_BR": {
+     "t": "Verbos irregulares: essen, lesen, sehen",
+     "g": "Conjugar verbos cuja vogal muda de e para i ou ie.",
+     "p": [
+      "Alguns verbos mudam e para i ou ie, mas só com du e er/sie/es: du isst, er isst; du liest, sie liest; du siehst, er sieht.",
+      "As outras formas são regulares: ich esse, wir lesen, ihr seht. Iguais: sprechen (du sprichst), nehmen (du nimmst).",
+      "Com essen, du isst e er isst são iguais. Aprenda esses verbos em pares: ich lese, du liest."
+     ],
+     "q": "O que você está lendo agora, e o que um amigo seu gosta de ler? Use liest.",
+     "c": "Escreva seis frases, duas com essen, duas com lesen e duas com sehen, na forma du ou er/sie."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "essen",
+      "ex": "Was isst du gern?"
+     },
+     {
+      "w": "lesen",
+      "ex": "Sie liest jeden Abend."
+     },
+     {
+      "w": "sehen",
+      "ex": "Siehst du den Turm?"
+     },
+     {
+      "w": "sprechen",
+      "ex": "Er spricht drei Sprachen."
+     },
+     {
+      "w": "nehmen",
+      "ex": "Du nimmst den Bus."
+     },
+     {
+      "w": "geben",
+      "ex": "Es gibt heute Pizza."
+     }
+    ],
+    "gram": "e → i/ie nur bei du und er/sie/es: essen – du isst, er isst; lesen – du liest; sehen – er sieht; sprechen – er spricht."
+   }
+  },
+  {
+   "d": 39,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Irregular verbs: fahren, schlafen",
+     "g": "Conjugate verbs whose a changes to ä with du and er/sie/es.",
+     "p": [
+      "Fahren (to go by vehicle, to drive): ich fahre, du fährst, er fährt, wir fahren. Schlafen: du schläfst, sie schläft.",
+      "Others in this group: laufen (du läufst), tragen (du trägst), waschen (du wäschst), einladen (er lädt ein).",
+      "Fahren is for travelling by car, bus, train or bike; gehen is going on foot. Ich fahre nach Berlin."
+     ],
+     "q": "How long do you usually sleep, and how does a family member travel to work? Use schläft or fährt.",
+     "c": "Write four sentences about a friend: what he or she schläft, fährt, läuft and trägt."
+    },
+    "de": {
+     "t": "Unregelmäßige Verben: fahren, schlafen",
+     "g": "Du konjugierst Verben, bei denen a zu ä wird, bei du und er/sie/es.",
+     "p": [
+      "Fahren: ich fahre, du fährst, er fährt, wir fahren. Schlafen: du schläfst, sie schläft.",
+      "Weitere Verben dieser Gruppe: laufen (du läufst), tragen (du trägst), waschen (du wäschst).",
+      "Fahren benutzt du mit Auto, Bus, Zug oder Fahrrad; gehen heißt zu Fuß. Ich fahre nach Berlin."
+     ],
+     "q": "Wie lange schläfst du normalerweise, und wie fährt jemand aus deiner Familie zur Arbeit?",
+     "c": "Schreib vier Sätze über eine Freundin oder einen Freund: was sie oder er schläft, fährt, läuft und trägt."
+    },
+    "es": {
+     "t": "Verbos irregulares: fahren, schlafen",
+     "g": "Conjuga verbos cuya a cambia a ä con du y er/sie/es.",
+     "p": [
+      "Fahren (ir en vehículo, conducir): ich fahre, du fährst, er fährt, wir fahren. Schlafen (dormir): du schläfst, sie schläft.",
+      "Otros del grupo: laufen (du läufst), tragen (du trägst), waschen (du wäschst).",
+      "Fahren es para viajar en coche, bus, tren o bici; gehen es ir a pie. Ich fahre nach Berlin."
+     ],
+     "q": "¿Cuánto duermes normalmente, y cómo va al trabajo alguien de tu familia? Usa schläft o fährt.",
+     "c": "Escribe cuatro frases sobre un amigo: cuánto schläft, adónde fährt, cuánto läuft y qué trägt."
+    },
+    "fr": {
+     "t": "Verbes irréguliers : fahren, schlafen",
+     "g": "Conjuguer les verbes dont le a devient ä avec du et er/sie/es.",
+     "p": [
+      "Fahren (aller en véhicule, conduire) : ich fahre, du fährst, er fährt, wir fahren. Schlafen (dormir) : du schläfst, sie schläft.",
+      "Dans ce groupe aussi : laufen (du läufst), tragen (du trägst), waschen (du wäschst).",
+      "Fahren, c'est voyager en voiture, bus, train ou vélo ; gehen, c'est aller à pied. Ich fahre nach Berlin."
+     ],
+     "q": "Combien de temps dors-tu en général, et comment un membre de ta famille va-t-il au travail ? Utilise schläft ou fährt.",
+     "c": "Écris quatre phrases sur un ami : combien il schläft, où il fährt, combien il läuft et ce qu'il trägt."
+    },
+    "it": {
+     "t": "Verbi irregolari: fahren, schlafen",
+     "g": "Coniughi i verbi in cui la a diventa ä con du ed er/sie/es.",
+     "p": [
+      "Fahren (andare con un mezzo, guidare): ich fahre, du fährst, er fährt, wir fahren. Schlafen (dormire): du schläfst, sie schläft.",
+      "Altri del gruppo: laufen (du läufst), tragen (du trägst), waschen (du wäschst).",
+      "Fahren si usa per auto, bus, treno o bici; gehen vuol dire andare a piedi. Ich fahre nach Berlin."
+     ],
+     "q": "Quanto dormi di solito, e come va al lavoro qualcuno della tua famiglia? Usa schläft o fährt.",
+     "c": "Scrivi quattro frasi su un amico: quanto schläft, dove fährt, quanto läuft e che cosa trägt."
+    },
+    "pt": {
+     "t": "Verbos irregulares: fahren, schlafen",
+     "g": "Conjugar verbos em que o a passa a ä com du e er/sie/es.",
+     "p": [
+      "Fahren (ir de veículo, conduzir): ich fahre, du fährst, er fährt, wir fahren. Schlafen (dormir): du schläfst, sie schläft.",
+      "Outros do grupo: laufen (du läufst), tragen (du trägst), waschen (du wäschst).",
+      "Fahren usa-se para carro, autocarro, comboio ou bicicleta; gehen é ir a pé. Ich fahre nach Berlin."
+     ],
+     "q": "Quanto tempo dormes normalmente, e como vai para o trabalho alguém da tua família? Usa schläft ou fährt.",
+     "c": "Escreve quatro frases sobre um amigo: quanto schläft, para onde fährt, quanto läuft e o que trägt."
+    },
+    "pt_BR": {
+     "t": "Verbos irregulares: fahren, schlafen",
+     "g": "Conjugar verbos em que o a vira ä com du e er/sie/es.",
+     "p": [
+      "Fahren (ir de veículo, dirigir): ich fahre, du fährst, er fährt, wir fahren. Schlafen (dormir): du schläfst, sie schläft.",
+      "Outros do grupo: laufen (du läufst), tragen (du trägst), waschen (du wäschst).",
+      "Fahren é para carro, ônibus, trem ou bicicleta; gehen é ir a pé. Ich fahre nach Berlin."
+     ],
+     "q": "Quanto tempo você costuma dormir, e como alguém da sua família vai para o trabalho? Use schläft ou fährt.",
+     "c": "Escreva quatro frases sobre um amigo: quanto ele schläft, para onde fährt, quanto läuft e o que trägt."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fahren",
+      "ex": "Fährst du morgen nach Hamburg?"
+     },
+     {
+      "w": "schlafen",
+      "ex": "Das Baby schläft schon."
+     },
+     {
+      "w": "laufen",
+      "ex": "Er läuft jeden Morgen fünf Kilometer."
+     },
+     {
+      "w": "tragen",
+      "ex": "Sie trägt eine rote Jacke."
+     },
+     {
+      "w": "waschen",
+      "ex": "Du wäschst das Auto."
+     },
+     {
+      "w": "der Zug",
+      "ex": "Wir fahren mit dem Zug."
+     }
+    ],
+    "gram": "a → ä nur bei du und er/sie/es: fahren – du fährst, er fährt; schlafen – sie schläft; laufen – er läuft (au → äu)."
+   }
+  },
+  {
+   "d": 40,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Places in town",
+     "g": "Name the important places in a German town.",
+     "p": [
+      "Der Bahnhof (station), die Post, die Apotheke (pharmacy), das Rathaus (town hall), die Bank and der Supermarkt.",
+      "Also useful: das Krankenhaus (hospital), die Schule, der Park, das Kino, das Museum and die Kirche.",
+      "Es gibt + accusative says what exists: In meiner Stadt gibt es einen Bahnhof und ein Kino."
+     ],
+     "q": "What is near your home? Tell me with es gibt einen..., eine... or ein...",
+     "c": "Draw a quick map of your street or town and label six places in German with der, die or das."
+    },
+    "de": {
+     "t": "Orte in der Stadt",
+     "g": "Du nennst die wichtigen Orte einer deutschen Stadt.",
+     "p": [
+      "Der Bahnhof, die Post, die Apotheke, das Rathaus, die Bank und der Supermarkt.",
+      "Auch nützlich: das Krankenhaus, die Schule, der Park, das Kino, das Museum und die Kirche.",
+      "Es gibt + Akkusativ sagt, was es gibt: In meiner Stadt gibt es einen Bahnhof und ein Kino."
+     ],
+     "q": "Was gibt es in der Nähe deiner Wohnung? Sag es mit es gibt einen..., eine... oder ein...",
+     "c": "Zeichne eine kleine Karte deiner Straße oder Stadt und beschrifte sechs Orte auf Deutsch mit Artikel."
+    },
+    "es": {
+     "t": "Lugares de la ciudad",
+     "g": "Nombra los lugares importantes de una ciudad alemana.",
+     "p": [
+      "Der Bahnhof (estación), die Post (correos), die Apotheke (farmacia), das Rathaus (ayuntamiento), die Bank y der Supermarkt.",
+      "También útiles: das Krankenhaus (hospital), die Schule, der Park, das Kino, das Museum y die Kirche (iglesia).",
+      "Es gibt + acusativo dice lo que hay: In meiner Stadt gibt es einen Bahnhof und ein Kino."
+     ],
+     "q": "¿Qué hay cerca de tu casa? Dímelo con es gibt einen..., eine... o ein...",
+     "c": "Dibuja un mapa rápido de tu calle o ciudad y marca seis lugares en alemán con der, die o das."
+    },
+    "fr": {
+     "t": "Les lieux en ville",
+     "g": "Nommer les lieux importants d'une ville allemande.",
+     "p": [
+      "Der Bahnhof (gare), die Post (poste), die Apotheke (pharmacie), das Rathaus (mairie), die Bank et der Supermarkt.",
+      "Aussi utiles : das Krankenhaus (hôpital), die Schule, der Park, das Kino, das Museum et die Kirche (église).",
+      "Es gibt + accusatif dit ce qui existe : In meiner Stadt gibt es einen Bahnhof und ein Kino."
+     ],
+     "q": "Qu'y a-t-il près de chez toi ? Dis-le avec es gibt einen..., eine... ou ein...",
+     "c": "Dessine un petit plan de ta rue ou ta ville et nomme six lieux en allemand avec der, die ou das."
+    },
+    "it": {
+     "t": "I luoghi in città",
+     "g": "Nomini i luoghi importanti di una città tedesca.",
+     "p": [
+      "Der Bahnhof (stazione), die Post (posta), die Apotheke (farmacia), das Rathaus (municipio), die Bank e der Supermarkt.",
+      "Utili anche: das Krankenhaus (ospedale), die Schule, der Park, das Kino, das Museum e die Kirche (chiesa).",
+      "Es gibt + accusativo dice che cosa c'è: In meiner Stadt gibt es einen Bahnhof und ein Kino."
+     ],
+     "q": "Che cosa c'è vicino a casa tua? Dimmelo con es gibt einen..., eine... o ein...",
+     "c": "Disegna una piccola mappa della tua via o città e scrivi sei luoghi in tedesco con der, die o das."
+    },
+    "pt": {
+     "t": "Lugares na cidade",
+     "g": "Nomear os lugares importantes de uma cidade alemã.",
+     "p": [
+      "Der Bahnhof (estação), die Post (correios), die Apotheke (farmácia), das Rathaus (câmara municipal), die Bank e der Supermarkt.",
+      "Também úteis: das Krankenhaus (hospital), die Schule, der Park, das Kino, das Museum e die Kirche (igreja).",
+      "Es gibt + acusativo diz o que existe: In meiner Stadt gibt es einen Bahnhof und ein Kino."
+     ],
+     "q": "O que há perto da tua casa? Diz-me com es gibt einen..., eine... ou ein...",
+     "c": "Desenha um pequeno mapa da tua rua ou cidade e marca seis lugares em alemão com der, die ou das."
+    },
+    "pt_BR": {
+     "t": "Lugares na cidade",
+     "g": "Nomear os lugares importantes de uma cidade alemã.",
+     "p": [
+      "Der Bahnhof (estação), die Post (correio), die Apotheke (farmácia), das Rathaus (prefeitura), die Bank e der Supermarkt.",
+      "Também úteis: das Krankenhaus (hospital), die Schule, der Park, das Kino, das Museum e die Kirche (igreja).",
+      "Es gibt + acusativo diz o que existe: In meiner Stadt gibt es einen Bahnhof und ein Kino."
+     ],
+     "q": "O que tem perto da sua casa? Me diga com es gibt einen..., eine... ou ein...",
+     "c": "Desenhe um mapinha da sua rua ou cidade e marque seis lugares em alemão com der, die ou das."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Bahnhof",
+      "ex": "Der Bahnhof ist im Zentrum."
+     },
+     {
+      "w": "die Post",
+      "ex": "Die Post ist heute geschlossen."
+     },
+     {
+      "w": "die Apotheke",
+      "ex": "Gibt es hier eine Apotheke?"
+     },
+     {
+      "w": "das Rathaus",
+      "ex": "Das Rathaus ist sehr alt."
+     },
+     {
+      "w": "der Supermarkt",
+      "ex": "Der Supermarkt ist gleich hier."
+     },
+     {
+      "w": "das Kino",
+      "ex": "Am Abend gehen wir ins Kino."
+     }
+    ],
+    "gram": "Es gibt + Akkusativ: Hier gibt es einen Park, eine Bank und ein Museum. Frage: Gibt es hier eine Apotheke?"
+   }
+  }
+ ]
+}

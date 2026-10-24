@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hallo! First German greetings",
+     "g": "Greet people in German and pick the right greeting for the time of day.",
+     "p": [
+      "Hallo is a friendly hi; guten Morgen works in the morning, guten Tag during the day and guten Abend in the evening.",
+      "Tschüss is the casual bye; auf Wiedersehen is the polite goodbye for shops and offices.",
+      "In the south you will also hear Grüß Gott and servus, but hallo and guten Tag work everywhere."
+     ],
+     "q": "It is 7 p.m. and you meet your neighbour on the stairs. Which German greeting do you use?",
+     "c": "Greet three people today in German, even just in your head, choosing the greeting that fits the time."
+    },
+    "de": {
+     "t": "Hallo! Die ersten Grüße",
+     "g": "Du begrüßt Menschen auf Deutsch und wählst den passenden Gruß für die Tageszeit.",
+     "p": [
+      "Hallo ist locker; guten Morgen sagt man morgens, guten Tag tagsüber und guten Abend am Abend.",
+      "Tschüss ist der lockere Abschied, auf Wiedersehen der höfliche für Geschäfte und Ämter.",
+      "Im Süden hört man auch Grüß Gott und servus, aber hallo und guten Tag passen überall."
+     ],
+     "q": "Es ist 19 Uhr und du triffst deine Nachbarin im Treppenhaus. Welchen Gruß benutzt du?",
+     "c": "Begrüße heute drei Menschen auf Deutsch, notfalls im Kopf, und wähle den Gruß passend zur Uhrzeit."
+    },
+    "es": {
+     "t": "¡Hallo! Primeros saludos en alemán",
+     "g": "Aprende a saludar en alemán y a elegir el saludo adecuado según la hora del día.",
+     "p": [
+      "Hallo es un hola informal; guten Morgen se usa por la mañana, guten Tag durante el día y guten Abend por la noche.",
+      "Tschüss es el adiós informal; auf Wiedersehen es la despedida cortés para tiendas y oficinas.",
+      "En el sur también oirás Grüß Gott y servus, pero hallo y guten Tag sirven en todas partes."
+     ],
+     "q": "Son las 19 h y te cruzas con tu vecina en la escalera. ¿Qué saludo alemán usas?",
+     "c": "Saluda hoy a tres personas en alemán, aunque sea mentalmente, eligiendo el saludo según la hora."
+    },
+    "fr": {
+     "t": "Hallo ! Les premières salutations",
+     "g": "Saluer en allemand et choisir la bonne formule selon le moment de la journée.",
+     "p": [
+      "Hallo est un salut familier ; guten Morgen le matin, guten Tag dans la journée et guten Abend le soir.",
+      "Tschüss est l'au revoir familier ; auf Wiedersehen est la formule polie dans les magasins et les bureaux.",
+      "Dans le sud, on entend aussi Grüß Gott et servus, mais hallo et guten Tag marchent partout."
+     ],
+     "q": "Il est 19 h et tu croises ta voisine dans l'escalier. Quelle salutation allemande utilises-tu ?",
+     "c": "Salue trois personnes en allemand aujourd'hui, même dans ta tête, avec la formule qui convient à l'heure."
+    },
+    "it": {
+     "t": "Hallo! I primi saluti in tedesco",
+     "g": "Impari a salutare in tedesco e a scegliere il saluto giusto per l'ora del giorno.",
+     "p": [
+      "Hallo è un ciao informale; guten Morgen si usa al mattino, guten Tag durante il giorno e guten Abend la sera.",
+      "Tschüss è il ciao di congedo informale; auf Wiedersehen è l'arrivederci cortese per negozi e uffici.",
+      "Al sud senti anche Grüß Gott e servus, ma hallo e guten Tag vanno bene ovunque."
+     ],
+     "q": "Sono le 19 e incontri la tua vicina sulle scale. Quale saluto tedesco usi?",
+     "c": "Oggi saluta tre persone in tedesco, anche solo nella tua testa, scegliendo il saluto adatto all'ora."
+    },
+    "pt": {
+     "t": "Hallo! Primeiras saudações em alemão",
+     "g": "Aprender a cumprimentar em alemão e escolher a saudação certa para a hora do dia.",
+     "p": [
+      "Hallo é um olá informal; guten Morgen usa-se de manhã, guten Tag durante o dia e guten Abend à noite.",
+      "Tschüss é o adeus informal; auf Wiedersehen é a despedida educada para lojas e serviços.",
+      "No sul também ouves Grüß Gott e servus, mas hallo e guten Tag funcionam em todo o lado."
+     ],
+     "q": "São 19 h e encontras a tua vizinha nas escadas. Que saudação alemã usas?",
+     "c": "Hoje cumprimenta três pessoas em alemão, nem que seja mentalmente, escolhendo a saudação certa para a hora."
+    },
+    "pt_BR": {
+     "t": "Hallo! Primeiros cumprimentos em alemão",
+     "g": "Aprender a cumprimentar em alemão e escolher a saudação certa para a hora do dia.",
+     "p": [
+      "Hallo é um oi informal; guten Morgen vale de manhã, guten Tag durante o dia e guten Abend à noite.",
+      "Tschüss é o tchau informal; auf Wiedersehen é a despedida educada para lojas e repartições.",
+      "No sul você também ouve Grüß Gott e servus, mas hallo e guten Tag funcionam em qualquer lugar."
+     ],
+     "q": "São 19h e você encontra sua vizinha na escada. Qual cumprimento alemão você usa?",
+     "c": "Hoje cumprimente três pessoas em alemão, mesmo que só na cabeça, escolhendo a saudação certa para a hora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hallo",
+      "ex": "Hallo, Anna!"
+     },
+     {
+      "w": "guten Morgen",
+      "ex": "Guten Morgen, Herr Weber!"
+     },
+     {
+      "w": "guten Tag",
+      "ex": "Guten Tag, Frau Schmidt."
+     },
+     {
+      "w": "guten Abend",
+      "ex": "Guten Abend und willkommen!"
+     },
+     {
+      "w": "tschüss",
+      "ex": "Tschüss, Tom, bis morgen!"
+     },
+     {
+      "w": "auf Wiedersehen",
+      "ex": "Danke und auf Wiedersehen!"
+     }
+    ],
+    "gram": "Guten Morgen (morgens), guten Tag (tagsüber), guten Abend (abends). Hallo und tschüss sind locker, auf Wiedersehen ist höflich."
+   }
+  },
+  {
+   "d": 2,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The German alphabet",
+     "g": "Say the German alphabet, spell your name and meet the special letters ä, ö, ü and ß.",
+     "p": [
+      "Many letters sound different from English: J is said yot, V is fau, W is weh and Z is tset.",
+      "Umlauts change the vowel: ä sounds close to the e in bed, ö and ü are said with rounded lips.",
+      "ß, called Eszett, is a sharp double s, as in Straße; it never starts a word."
+     ],
+     "q": "How do you spell your first name in German, letter by letter?",
+     "c": "Spell your full name aloud in German three times, slowly, then once quickly."
+    },
+    "de": {
+     "t": "Das deutsche Alphabet",
+     "g": "Du sagst das Alphabet auf, buchstabierst deinen Namen und lernst ä, ö, ü und ß kennen.",
+     "p": [
+      "Einige Buchstaben klingen anders als im Englischen: J heißt Jott, V heißt Vau, W heißt We und Z heißt Zett.",
+      "Umlaute verändern den Vokal: ä klingt fast wie e, ö und ü spricht man mit runden Lippen.",
+      "Das ß heißt Eszett, ist ein scharfes s wie in Straße und steht nie am Wortanfang."
+     ],
+     "q": "Wie buchstabierst du deinen Vornamen auf Deutsch, Buchstabe für Buchstabe?",
+     "c": "Buchstabiere deinen ganzen Namen dreimal langsam laut auf Deutsch und einmal schnell."
+    },
+    "es": {
+     "t": "El alfabeto alemán",
+     "g": "Recita el alfabeto alemán, deletrea tu nombre y conoce las letras especiales ä, ö, ü y ß.",
+     "p": [
+      "Algunas letras suenan distinto: la J se dice yot, la V fau, la W ve y la Z tset.",
+      "Las diéresis cambian la vocal: ä suena casi como e, y ö y ü se dicen con los labios redondeados.",
+      "La ß, llamada Eszett, es una s fuerte, como en Straße, y nunca empieza una palabra."
+     ],
+     "q": "¿Cómo deletreas tu nombre en alemán, letra por letra?",
+     "c": "Deletrea tu nombre completo en voz alta en alemán tres veces despacio y una vez rápido."
+    },
+    "fr": {
+     "t": "L'alphabet allemand",
+     "g": "Réciter l'alphabet allemand, épeler ton nom et découvrir les lettres ä, ö, ü et ß.",
+     "p": [
+      "Certaines lettres sonnent autrement : J se dit yott, V faou, W vé et Z tsètt.",
+      "Le tréma change la voyelle : ä ressemble à è, ö se rapproche de eu et ü du u français.",
+      "Le ß, appelé Eszett, est un s dur comme dans Straße et ne commence jamais un mot."
+     ],
+     "q": "Comment épelles-tu ton prénom en allemand, lettre par lettre ?",
+     "c": "Épelle ton nom complet à voix haute en allemand trois fois lentement, puis une fois vite."
+    },
+    "it": {
+     "t": "L'alfabeto tedesco",
+     "g": "Reciti l'alfabeto tedesco, fai lo spelling del tuo nome e scopri le lettere ä, ö, ü e ß.",
+     "p": [
+      "Alcune lettere suonano diverse: la J si dice iott, la V fau, la W ve e la Z zett.",
+      "L'Umlaut cambia la vocale: ä suona quasi come una e aperta, ö e ü si dicono con le labbra arrotondate.",
+      "La ß, chiamata Eszett, è una s forte come in Straße e non inizia mai una parola."
+     ],
+     "q": "Come fai lo spelling del tuo nome in tedesco, lettera per lettera?",
+     "c": "Fai lo spelling del tuo nome completo ad alta voce in tedesco tre volte piano e una volta veloce."
+    },
+    "pt": {
+     "t": "O alfabeto alemão",
+     "g": "Dizer o alfabeto alemão, soletrar o teu nome e conhecer as letras especiais ä, ö, ü e ß.",
+     "p": [
+      "Algumas letras soam diferente: o J diz-se iót, o V fau, o W vê e o Z tsét.",
+      "O trema muda a vogal: ä soa quase como é, e ö e ü dizem-se com os lábios arredondados.",
+      "O ß, chamado Eszett, é um s forte, como em Straße, e nunca começa uma palavra."
+     ],
+     "q": "Como soletras o teu primeiro nome em alemão, letra a letra?",
+     "c": "Soletra o teu nome completo em voz alta em alemão três vezes devagar e uma vez depressa."
+    },
+    "pt_BR": {
+     "t": "O alfabeto alemão",
+     "g": "Falar o alfabeto alemão, soletrar seu nome e conhecer as letras especiais ä, ö, ü e ß.",
+     "p": [
+      "Algumas letras soam diferente: o J se diz iót, o V fau, o W vê e o Z tsét.",
+      "O trema muda a vogal: ä soa quase como é, e ö e ü se falam com os lábios arredondados.",
+      "O ß, chamado Eszett, é um s forte, como em Straße, e nunca começa uma palavra."
+     ],
+     "q": "Como você soletra seu primeiro nome em alemão, letra por letra?",
+     "c": "Soletre seu nome completo em voz alta em alemão três vezes devagar e uma vez rápido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "das Alphabet",
+      "ex": "Ich lerne das Alphabet."
+     },
+     {
+      "w": "der Buchstabe",
+      "ex": "Das ist ein schwerer Buchstabe."
+     },
+     {
+      "w": "buchstabieren",
+      "ex": "Können Sie das bitte buchstabieren?"
+     },
+     {
+      "w": "der Name",
+      "ex": "Mein Name ist Lena."
+     },
+     {
+      "w": "die Straße",
+      "ex": "Die Straße heißt Gartenstraße."
+     },
+     {
+      "w": "Wie bitte?",
+      "ex": "Wie bitte? Noch einmal, bitte."
+     }
+    ],
+    "gram": "Buchstabieren: A wie Anton, B wie Berta. Umlaute: ä, ö, ü. Das ß (Eszett) steht nie am Wortanfang: die Straße."
+   }
+  },
+  {
+   "d": 3,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "German sounds",
+     "g": "Pronounce the key German sounds that trip up beginners.",
+     "p": [
+      "Ei sounds like eye (mein, drei), while ie sounds like ee (die, vier): just say the second letter.",
+      "Ch is soft after e and i (ich) and throaty after a, o, u (Bach); sch sounds like sh (Schule).",
+      "W sounds like v (Wasser), v often like f (Vater), z like ts (Zeit), and final -er is a soft uh (Vater)."
+     ],
+     "q": "Can you say mein, die, ich and Wasser aloud? Which one feels hardest?",
+     "c": "Read these words aloud five times: drei, vier, ich, Buch, Schule, Zeit. Record yourself if you can."
+    },
+    "de": {
+     "t": "Deutsche Laute",
+     "g": "Du sprichst die wichtigsten deutschen Laute aus, die Anfängern schwerfallen.",
+     "p": [
+      "Ei klingt wie ai (mein, drei), ie wie ein langes i (die, vier): Sprich einfach den zweiten Buchstaben.",
+      "Ch ist weich nach e und i (ich) und rau nach a, o, u (Bach); sch klingt wie in Schule.",
+      "W klingt wie englisches v (Wasser), v oft wie f (Vater), z wie ts (Zeit) und -er am Ende fast wie a."
+     ],
+     "q": "Kannst du mein, die, ich und Wasser laut sagen? Welches Wort ist am schwersten?",
+     "c": "Lies diese Wörter fünfmal laut: drei, vier, ich, Buch, Schule, Zeit. Nimm dich auf, wenn möglich."
+    },
+    "es": {
+     "t": "Los sonidos del alemán",
+     "g": "Pronuncia los sonidos alemanes que más cuestan al principio.",
+     "p": [
+      "Ei suena ai (mein, drei) e ie suena i larga (die, vier): pronuncia siempre la segunda letra.",
+      "Ch es suave tras e e i (ich) y gutural tras a, o, u (Bach); sch suena como sh inglesa (Schule).",
+      "W suena como v inglesa (Wasser), v a menudo como f (Vater), z como ts (Zeit) y la -er final como una a suave."
+     ],
+     "q": "¿Puedes decir en voz alta mein, die, ich y Wasser? ¿Cuál te cuesta más?",
+     "c": "Lee en voz alta cinco veces: drei, vier, ich, Buch, Schule, Zeit. Grábate si puedes."
+    },
+    "fr": {
+     "t": "Les sons de l'allemand",
+     "g": "Prononcer les sons allemands qui piègent les débutants.",
+     "p": [
+      "Ei se dit aï (mein, drei) et ie se dit i long (die, vier) : on prononce la deuxième lettre.",
+      "Ch est doux après e et i (ich) et raclé après a, o, u (Bach) ; sch se dit ch comme dans chat (Schule).",
+      "W se dit v (Wasser), v souvent f (Vater), z se dit ts (Zeit) et le -er final ressemble à un a léger."
+     ],
+     "q": "Peux-tu dire à voix haute mein, die, ich et Wasser ? Lequel est le plus difficile ?",
+     "c": "Lis cinq fois à voix haute : drei, vier, ich, Buch, Schule, Zeit. Enregistre-toi si tu peux."
+    },
+    "it": {
+     "t": "I suoni del tedesco",
+     "g": "Pronunci i suoni tedeschi che mettono in difficoltà i principianti.",
+     "p": [
+      "Ei si legge ai (mein, drei) e ie si legge i lunga (die, vier): pronuncia sempre la seconda lettera.",
+      "Ch è dolce dopo e e i (ich) e gutturale dopo a, o, u (Bach); sch si legge come sc in scena (Schule).",
+      "W si legge v (Wasser), v spesso f (Vater), z come ts (Zeit) e la -er finale come una a leggera."
+     ],
+     "q": "Riesci a dire ad alta voce mein, die, ich e Wasser? Quale ti sembra più difficile?",
+     "c": "Leggi ad alta voce cinque volte: drei, vier, ich, Buch, Schule, Zeit. Registrati se puoi."
+    },
+    "pt": {
+     "t": "Os sons do alemão",
+     "g": "Pronunciar os sons alemães que mais custam a quem começa.",
+     "p": [
+      "Ei soa ai (mein, drei) e ie soa i longo (die, vier): diz-se sempre a segunda letra.",
+      "Ch é suave depois de e e i (ich) e gutural depois de a, o, u (Bach); sch soa como ch em chave (Schule).",
+      "W soa v (Wasser), v muitas vezes f (Vater), z soa ts (Zeit) e o -er final é um a leve."
+     ],
+     "q": "Consegues dizer em voz alta mein, die, ich e Wasser? Qual é o mais difícil?",
+     "c": "Lê em voz alta cinco vezes: drei, vier, ich, Buch, Schule, Zeit. Grava-te se puderes."
+    },
+    "pt_BR": {
+     "t": "Os sons do alemão",
+     "g": "Pronunciar os sons alemães que mais pegam quem está começando.",
+     "p": [
+      "Ei soa ai (mein, drei) e ie soa i longo (die, vier): fale sempre a segunda letra.",
+      "Ch é suave depois de e e i (ich) e gutural depois de a, o, u (Bach); sch soa como ch em chave (Schule).",
+      "W soa v (Wasser), v muitas vezes f (Vater), z soa ts (Zeit) e o -er final é um a leve."
+     ],
+     "q": "Você consegue falar em voz alta mein, die, ich e Wasser? Qual é o mais difícil?",
+     "c": "Leia em voz alta cinco vezes: drei, vier, ich, Buch, Schule, Zeit. Grave sua voz se puder."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "drei",
+      "ex": "Ich habe drei Bücher."
+     },
+     {
+      "w": "vier",
+      "ex": "Wir sind vier Freunde."
+     },
+     {
+      "w": "ich",
+      "ex": "Ich bin müde."
+     },
+     {
+      "w": "das Buch",
+      "ex": "Das Buch ist gut."
+     },
+     {
+      "w": "die Schule",
+      "ex": "Die Schule ist groß."
+     },
+     {
+      "w": "das Wasser",
+      "ex": "Das Wasser ist kalt."
+     }
+    ],
+    "gram": "ei = ai (mein), ie = langes i (die). sch = sch (Schule), w wie v (Wasser), z wie ts (Zeit). -er am Ende klingt wie a (Vater)."
+   }
+  },
+  {
+   "d": 4,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ich heiße: introducing yourself",
+     "g": "Say your name in German and ask other people for theirs.",
+     "p": [
+      "Ich heiße Anna and ich bin Anna both mean I am Anna; mein Name ist Anna sounds a bit more formal.",
+      "Ask a friend with wie heißt du? and a stranger or older person with wie heißen Sie?",
+      "Answer kindly with freut mich (nice to meet you) and ask back: und du? or und Sie?"
+     ],
+     "q": "Imagine you meet me at a café. How do you introduce yourself in German?",
+     "c": "Introduce yourself aloud in German three ways: ich heiße, ich bin and mein Name ist."
+    },
+    "de": {
+     "t": "Ich heiße: sich vorstellen",
+     "g": "Du sagst deinen Namen auf Deutsch und fragst andere nach ihrem Namen.",
+     "p": [
+      "Ich heiße Anna und ich bin Anna bedeuten dasselbe; mein Name ist Anna klingt etwas förmlicher.",
+      "Freunde fragst du: Wie heißt du? Fremde oder ältere Menschen fragst du: Wie heißen Sie?",
+      "Antworte freundlich mit freut mich und frag zurück: und du? oder und Sie?"
+     ],
+     "q": "Stell dir vor, wir treffen uns im Café. Wie stellst du dich auf Deutsch vor?",
+     "c": "Stell dich laut auf Deutsch auf drei Arten vor: ich heiße, ich bin und mein Name ist."
+    },
+    "es": {
+     "t": "Ich heiße: presentarte",
+     "g": "Di tu nombre en alemán y pregunta el nombre a los demás.",
+     "p": [
+      "Ich heiße Anna e ich bin Anna significan lo mismo; mein Name ist Anna suena algo más formal.",
+      "A un amigo le preguntas wie heißt du?, y a un desconocido o a alguien mayor wie heißen Sie?",
+      "Responde con freut mich (encantado/a) y devuelve la pregunta: und du? o und Sie?"
+     ],
+     "q": "Imagina que nos conocemos en un café. ¿Cómo te presentas en alemán?",
+     "c": "Preséntate en voz alta en alemán de tres formas: ich heiße, ich bin y mein Name ist."
+    },
+    "fr": {
+     "t": "Ich heiße : se présenter",
+     "g": "Dire ton nom en allemand et demander le leur aux autres.",
+     "p": [
+      "Ich heiße Anna et ich bin Anna veulent dire la même chose ; mein Name ist Anna est un peu plus formel.",
+      "À un ami, on demande wie heißt du ? ; à un inconnu ou une personne plus âgée, wie heißen Sie ?",
+      "Réponds avec freut mich (enchanté) et renvoie la question : und du ? ou und Sie ?"
+     ],
+     "q": "Imagine qu'on se rencontre dans un café. Comment te présentes-tu en allemand ?",
+     "c": "Présente-toi à voix haute en allemand de trois façons : ich heiße, ich bin et mein Name ist."
+    },
+    "it": {
+     "t": "Ich heiße: presentarsi",
+     "g": "Dici il tuo nome in tedesco e chiedi agli altri il loro.",
+     "p": [
+      "Ich heiße Anna e ich bin Anna vogliono dire la stessa cosa; mein Name ist Anna è un po' più formale.",
+      "A un amico chiedi wie heißt du?, a uno sconosciuto o a una persona più grande wie heißen Sie?",
+      "Rispondi con freut mich (piacere) e ricambia la domanda: und du? oppure und Sie?"
+     ],
+     "q": "Immagina di conoscermi in un bar. Come ti presenti in tedesco?",
+     "c": "Presentati ad alta voce in tedesco in tre modi: ich heiße, ich bin e mein Name ist."
+    },
+    "pt": {
+     "t": "Ich heiße: apresentar-se",
+     "g": "Dizer o teu nome em alemão e perguntar o nome aos outros.",
+     "p": [
+      "Ich heiße Anna e ich bin Anna querem dizer o mesmo; mein Name ist Anna soa um pouco mais formal.",
+      "A um amigo perguntas wie heißt du?; a um desconhecido ou a alguém mais velho, wie heißen Sie?",
+      "Responde com freut mich (muito prazer) e devolve a pergunta: und du? ou und Sie?"
+     ],
+     "q": "Imagina que nos conhecemos num café. Como te apresentas em alemão?",
+     "c": "Apresenta-te em voz alta em alemão de três maneiras: ich heiße, ich bin e mein Name ist."
+    },
+    "pt_BR": {
+     "t": "Ich heiße: se apresentando",
+     "g": "Dizer seu nome em alemão e perguntar o nome das outras pessoas.",
+     "p": [
+      "Ich heiße Anna e ich bin Anna querem dizer o mesmo; mein Name ist Anna soa um pouco mais formal.",
+      "Para um amigo, pergunte wie heißt du?; para um desconhecido ou alguém mais velho, wie heißen Sie?",
+      "Responda com freut mich (prazer) e devolva a pergunta: und du? ou und Sie?"
+     ],
+     "q": "Imagine que a gente se conhece num café. Como você se apresenta em alemão?",
+     "c": "Apresente-se em voz alta em alemão de três jeitos: ich heiße, ich bin e mein Name ist."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "heißen",
+      "ex": "Ich heiße Paul."
+     },
+     {
+      "w": "Wie heißt du?",
+      "ex": "Hallo! Wie heißt du?"
+     },
+     {
+      "w": "Wie heißen Sie?",
+      "ex": "Guten Tag! Wie heißen Sie?"
+     },
+     {
+      "w": "mein Name ist",
+      "ex": "Mein Name ist Maria Keller."
+     },
+     {
+      "w": "freut mich",
+      "ex": "Freut mich, Paul!"
+     },
+     {
+      "w": "und du?",
+      "ex": "Ich heiße Lisa, und du?"
+     }
+    ],
+    "gram": "heißen: ich heiße, du heißt, Sie heißen. Frage: Wie heißt du? (Freunde) – Wie heißen Sie? (höflich)."
+   }
+  },
+  {
+   "d": 5,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Du or Sie?",
+     "g": "Know when to use informal du and polite Sie, and how people move to du.",
+     "p": [
+      "Use du with friends, family, children and usually among young people, classmates and many colleagues.",
+      "Use Sie, always with a capital S, with strangers, older people, in shops, offices and formal situations.",
+      "Switching to du is offered, often by the older person: Wollen wir uns duzen? When in doubt, start with Sie."
+     ],
+     "q": "Would you say du or Sie to a shop assistant in Berlin? And to a new classmate?",
+     "c": "Write one question twice, once with du and once with Sie, for example: Woher kommst du? Woher kommen Sie?"
+    },
+    "de": {
+     "t": "Du oder Sie?",
+     "g": "Du weißt, wann man du und wann man Sie sagt und wie man zum Du wechselt.",
+     "p": [
+      "Du sagt man zu Freunden, Familie, Kindern und meist unter jungen Leuten, Mitschülern und vielen Kollegen.",
+      "Sie, immer groß geschrieben, sagt man zu Fremden, älteren Menschen, im Geschäft, im Büro und in formellen Situationen.",
+      "Das Du wird angeboten, oft von der älteren Person: Wollen wir uns duzen? Im Zweifel beginnst du mit Sie."
+     ],
+     "q": "Sagst du zu einer Verkäuferin in Berlin du oder Sie? Und zu einem neuen Mitschüler?",
+     "c": "Schreib eine Frage zweimal, mit du und mit Sie, zum Beispiel: Woher kommst du? Woher kommen Sie?"
+    },
+    "es": {
+     "t": "¿Du o Sie?",
+     "g": "Aprende cuándo usar el du informal y el Sie de cortesía, y cómo se pasa al du.",
+     "p": [
+      "Du se usa con amigos, familia, niños y en general entre jóvenes, compañeros de clase y muchos colegas.",
+      "Sie, siempre con mayúscula, se usa con desconocidos, personas mayores, en tiendas, oficinas y situaciones formales.",
+      "El paso al du se ofrece, a menudo la persona mayor: Wollen wir uns duzen? Si dudas, empieza con Sie."
+     ],
+     "q": "¿Dirías du o Sie a una dependienta en Berlín? ¿Y a un compañero nuevo de clase?",
+     "c": "Escribe una pregunta dos veces, con du y con Sie, por ejemplo: Woher kommst du? Woher kommen Sie?"
+    },
+    "fr": {
+     "t": "Du ou Sie ?",
+     "g": "Savoir quand dire du (tu) ou Sie (vous) et comment on passe au du.",
+     "p": [
+      "Du s'utilise avec les amis, la famille, les enfants et souvent entre jeunes, camarades de classe et beaucoup de collègues.",
+      "Sie, toujours avec une majuscule, s'utilise avec les inconnus, les personnes âgées, en magasin, au bureau et en situation formelle.",
+      "Le du se propose, souvent par la personne plus âgée : Wollen wir uns duzen ? Dans le doute, commence par Sie."
+     ],
+     "q": "Dirais-tu du ou Sie à une vendeuse à Berlin ? Et à un nouveau camarade de classe ?",
+     "c": "Écris une question deux fois, avec du et avec Sie, par exemple : Woher kommst du ? Woher kommen Sie ?"
+    },
+    "it": {
+     "t": "Du o Sie?",
+     "g": "Capisci quando usare il du informale e il Sie di cortesia, e come si passa al du.",
+     "p": [
+      "Il du si usa con amici, famiglia, bambini e di solito tra giovani, compagni di classe e molti colleghi.",
+      "Il Sie, sempre maiuscolo, si usa con sconosciuti, persone anziane, nei negozi, negli uffici e in situazioni formali.",
+      "Il du viene offerto, spesso dalla persona più grande: Wollen wir uns duzen? Nel dubbio, comincia con Sie."
+     ],
+     "q": "Diresti du o Sie a una commessa a Berlino? E a un nuovo compagno di corso?",
+     "c": "Scrivi una domanda due volte, con du e con Sie, per esempio: Woher kommst du? Woher kommen Sie?"
+    },
+    "pt": {
+     "t": "Du ou Sie?",
+     "g": "Saber quando usar o du informal e o Sie de cortesia, e como se passa ao du.",
+     "p": [
+      "Usa-se du com amigos, família, crianças e normalmente entre jovens, colegas de turma e muitos colegas de trabalho.",
+      "Usa-se Sie, sempre com maiúscula, com desconhecidos, pessoas mais velhas, em lojas, serviços e situações formais.",
+      "O du oferece-se, muitas vezes pela pessoa mais velha: Wollen wir uns duzen? Na dúvida, começa com Sie."
+     ],
+     "q": "Dirias du ou Sie a uma empregada de loja em Berlim? E a um novo colega de turma?",
+     "c": "Escreve uma pergunta duas vezes, com du e com Sie, por exemplo: Woher kommst du? Woher kommen Sie?"
+    },
+    "pt_BR": {
+     "t": "Du ou Sie?",
+     "g": "Saber quando usar o du informal e o Sie formal, e como se passa para o du.",
+     "p": [
+      "Use du com amigos, família, crianças e geralmente entre jovens, colegas de classe e muitos colegas de trabalho.",
+      "Use Sie, sempre com maiúscula, com desconhecidos, pessoas mais velhas, em lojas, escritórios e situações formais.",
+      "O du é oferecido, muitas vezes pela pessoa mais velha: Wollen wir uns duzen? Na dúvida, comece com Sie."
+     ],
+     "q": "Você diria du ou Sie para uma vendedora em Berlim? E para um colega novo de classe?",
+     "c": "Escreva uma pergunta duas vezes, com du e com Sie, por exemplo: Woher kommst du? Woher kommen Sie?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "du",
+      "ex": "Du bist sehr nett."
+     },
+     {
+      "w": "Sie",
+      "ex": "Sind Sie Frau Berger?"
+     },
+     {
+      "w": "duzen",
+      "ex": "Wollen wir uns duzen?"
+     },
+     {
+      "w": "siezen",
+      "ex": "Im Büro siezen wir uns."
+     },
+     {
+      "w": "Herr",
+      "ex": "Guten Tag, Herr Fischer!"
+     },
+     {
+      "w": "Frau",
+      "ex": "Danke, Frau Wagner."
+     }
+    ],
+    "gram": "du = informell (Freunde, Familie). Sie = höflich, immer groß: Kommen Sie aus Wien? Das Verb hat bei Sie die Endung -en."
+   }
+  },
+  {
+   "d": 6,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Wie geht's?",
+     "g": "Ask how someone is and answer naturally in German.",
+     "p": [
+      "Wie geht's? is casual; wie geht es dir? is for friends and wie geht es Ihnen? is the polite version.",
+      "Answers range from sehr gut and gut to es geht (so-so) and nicht so gut. Germans often answer honestly!",
+      "Add danke and bounce the question back: Danke, gut. Und dir? or Und Ihnen?"
+     ],
+     "q": "Wie geht's dir heute? Answer me in German with one of today's phrases.",
+     "c": "Ask two people today how they are in German, or ask yourself in the mirror and answer."
+    },
+    "de": {
+     "t": "Wie geht's?",
+     "g": "Du fragst, wie es jemandem geht, und antwortest natürlich auf Deutsch.",
+     "p": [
+      "Wie geht's? ist locker, wie geht es dir? sagt man zu Freunden und wie geht es Ihnen? ist höflich.",
+      "Antworten reichen von sehr gut und gut über es geht bis nicht so gut. Deutsche antworten oft ehrlich!",
+      "Sag danke und frag zurück: Danke, gut. Und dir? oder Und Ihnen?"
+     ],
+     "q": "Wie geht's dir heute? Antworte mir auf Deutsch mit einem Ausdruck von heute.",
+     "c": "Frag heute zwei Menschen auf Deutsch, wie es ihnen geht, oder frag dich selbst vor dem Spiegel."
+    },
+    "es": {
+     "t": "¿Wie geht's?",
+     "g": "Pregunta a alguien cómo está y responde con naturalidad en alemán.",
+     "p": [
+      "Wie geht's? es informal; wie geht es dir? es para amigos y wie geht es Ihnen? es la forma cortés.",
+      "Las respuestas van de sehr gut y gut a es geht (regular) y nicht so gut. ¡En Alemania se suele responder con sinceridad!",
+      "Añade danke y devuelve la pregunta: Danke, gut. Und dir? o Und Ihnen?"
+     ],
+     "q": "Wie geht's dir heute? Respóndeme en alemán con una expresión de hoy.",
+     "c": "Pregunta hoy a dos personas cómo están en alemán, o pregúntate a ti mismo frente al espejo."
+    },
+    "fr": {
+     "t": "Wie geht's ?",
+     "g": "Demander comment ça va et répondre naturellement en allemand.",
+     "p": [
+      "Wie geht's ? est familier ; wie geht es dir ? s'emploie entre amis et wie geht es Ihnen ? est la forme polie.",
+      "Les réponses vont de sehr gut et gut à es geht (couci-couça) et nicht so gut. Les Allemands répondent souvent franchement !",
+      "Ajoute danke et renvoie la question : Danke, gut. Und dir ? ou Und Ihnen ?"
+     ],
+     "q": "Wie geht's dir heute ? Réponds-moi en allemand avec une expression du jour.",
+     "c": "Demande à deux personnes comment elles vont en allemand, ou demande-le-toi devant le miroir."
+    },
+    "it": {
+     "t": "Wie geht's?",
+     "g": "Chiedi a qualcuno come sta e rispondi in modo naturale in tedesco.",
+     "p": [
+      "Wie geht's? è informale; wie geht es dir? si usa con gli amici e wie geht es Ihnen? è la forma di cortesia.",
+      "Le risposte vanno da sehr gut e gut a es geht (così così) e nicht so gut. I tedeschi rispondono spesso con sincerità!",
+      "Aggiungi danke e ricambia: Danke, gut. Und dir? oppure Und Ihnen?"
+     ],
+     "q": "Wie geht's dir heute? Rispondimi in tedesco con un'espressione di oggi.",
+     "c": "Chiedi oggi a due persone come stanno in tedesco, oppure chiedilo a te stesso allo specchio."
+    },
+    "pt": {
+     "t": "Wie geht's?",
+     "g": "Perguntar a alguém como está e responder com naturalidade em alemão.",
+     "p": [
+      "Wie geht's? é informal; wie geht es dir? é para amigos e wie geht es Ihnen? é a forma educada.",
+      "As respostas vão de sehr gut e gut a es geht (mais ou menos) e nicht so gut. Os alemães costumam responder com franqueza!",
+      "Junta danke e devolve a pergunta: Danke, gut. Und dir? ou Und Ihnen?"
+     ],
+     "q": "Wie geht's dir heute? Responde-me em alemão com uma expressão de hoje.",
+     "c": "Pergunta hoje a duas pessoas como estão em alemão, ou pergunta a ti próprio ao espelho."
+    },
+    "pt_BR": {
+     "t": "Wie geht's?",
+     "g": "Perguntar como alguém está e responder com naturalidade em alemão.",
+     "p": [
+      "Wie geht's? é informal; wie geht es dir? é para amigos e wie geht es Ihnen? é a forma educada.",
+      "As respostas vão de sehr gut e gut até es geht (mais ou menos) e nicht so gut. Os alemães costumam responder com sinceridade!",
+      "Acrescente danke e devolva a pergunta: Danke, gut. Und dir? ou Und Ihnen?"
+     ],
+     "q": "Wie geht's dir heute? Me responda em alemão com uma expressão de hoje.",
+     "c": "Pergunte hoje a duas pessoas como elas estão em alemão, ou pergunte para você mesmo no espelho."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Wie geht's?",
+      "ex": "Hallo Tim, wie geht's?"
+     },
+     {
+      "w": "Wie geht es Ihnen?",
+      "ex": "Guten Tag, Frau Kurz, wie geht es Ihnen?"
+     },
+     {
+      "w": "sehr gut",
+      "ex": "Mir geht es sehr gut."
+     },
+     {
+      "w": "es geht",
+      "ex": "Na ja, es geht."
+     },
+     {
+      "w": "nicht so gut",
+      "ex": "Heute geht es mir nicht so gut."
+     },
+     {
+      "w": "Und dir?",
+      "ex": "Danke, gut. Und dir?"
+     }
+    ],
+    "gram": "Wie geht es dir? (du) – Wie geht es Ihnen? (Sie). Antwort: Mir geht es gut. Kurz: Gut, danke. Und dir?"
+   }
+  },
+  {
+   "d": 7,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 0 to 20",
+     "g": "Count from null to zwanzig and say your phone number in German.",
+     "p": [
+      "Learn null to zwölf by heart: null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf.",
+      "From 13 to 19 you add -zehn: dreizehn, vierzehn; note sechzehn and siebzehn lose letters.",
+      "Phone numbers are said digit by digit or in pairs; on the phone, zwo often replaces zwei to avoid confusion with drei."
+     ],
+     "q": "What is your favourite number between 0 and 20, and can you say it in German?",
+     "c": "Say your phone number in German, digit by digit, three times without looking."
+    },
+    "de": {
+     "t": "Zahlen von 0 bis 20",
+     "g": "Du zählst von null bis zwanzig und sagst deine Telefonnummer auf Deutsch.",
+     "p": [
+      "Lern null bis zwölf auswendig: null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf.",
+      "Von 13 bis 19 hängst du -zehn an: dreizehn, vierzehn; sechzehn und siebzehn verlieren Buchstaben.",
+      "Telefonnummern sagt man Ziffer für Ziffer oder paarweise; am Telefon sagt man oft zwo statt zwei."
+     ],
+     "q": "Was ist deine Lieblingszahl zwischen 0 und 20, und kannst du sie auf Deutsch sagen?",
+     "c": "Sag deine Telefonnummer dreimal auf Deutsch, Ziffer für Ziffer, ohne hinzuschauen."
+    },
+    "es": {
+     "t": "Números del 0 al 20",
+     "g": "Cuenta de null a zwanzig y di tu número de teléfono en alemán.",
+     "p": [
+      "Aprende de memoria del 0 al 12: null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf.",
+      "Del 13 al 19 se añade -zehn: dreizehn, vierzehn; ojo: sechzehn y siebzehn pierden letras.",
+      "Los teléfonos se dicen cifra a cifra o de dos en dos; al teléfono se dice zwo en vez de zwei para no confundirlo con drei."
+     ],
+     "q": "¿Cuál es tu número favorito entre 0 y 20? ¿Sabes decirlo en alemán?",
+     "c": "Di tu número de teléfono en alemán, cifra a cifra, tres veces sin mirarlo."
+    },
+    "fr": {
+     "t": "Les nombres de 0 à 20",
+     "g": "Compter de null à zwanzig et donner ton numéro de téléphone en allemand.",
+     "p": [
+      "Apprends 0 à 12 par cœur : null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf.",
+      "De 13 à 19, on ajoute -zehn : dreizehn, vierzehn ; attention, sechzehn et siebzehn perdent des lettres.",
+      "Les numéros se disent chiffre par chiffre ou par deux ; au téléphone, on dit zwo au lieu de zwei pour ne pas confondre avec drei."
+     ],
+     "q": "Quel est ton nombre préféré entre 0 et 20, et sais-tu le dire en allemand ?",
+     "c": "Dis ton numéro de téléphone en allemand, chiffre par chiffre, trois fois sans regarder."
+    },
+    "it": {
+     "t": "I numeri da 0 a 20",
+     "g": "Conti da null a zwanzig e dici il tuo numero di telefono in tedesco.",
+     "p": [
+      "Impara a memoria da 0 a 12: null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf.",
+      "Da 13 a 19 si aggiunge -zehn: dreizehn, vierzehn; attenzione, sechzehn e siebzehn perdono lettere.",
+      "I numeri di telefono si dicono cifra per cifra o a coppie; al telefono si dice zwo invece di zwei per non confonderlo con drei."
+     ],
+     "q": "Qual è il tuo numero preferito tra 0 e 20? Sai dirlo in tedesco?",
+     "c": "Di' il tuo numero di telefono in tedesco, cifra per cifra, tre volte senza guardare."
+    },
+    "pt": {
+     "t": "Números de 0 a 20",
+     "g": "Contar de null a zwanzig e dizer o teu número de telefone em alemão.",
+     "p": [
+      "Decora de 0 a 12: null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf.",
+      "De 13 a 19 junta-se -zehn: dreizehn, vierzehn; atenção, sechzehn e siebzehn perdem letras.",
+      "Os números de telefone dizem-se algarismo a algarismo ou aos pares; ao telefone diz-se zwo em vez de zwei para não confundir com drei."
+     ],
+     "q": "Qual é o teu número preferido entre 0 e 20? Sabes dizê-lo em alemão?",
+     "c": "Diz o teu número de telefone em alemão, algarismo a algarismo, três vezes sem olhar."
+    },
+    "pt_BR": {
+     "t": "Números de 0 a 20",
+     "g": "Contar de null a zwanzig e falar seu número de telefone em alemão.",
+     "p": [
+      "Decore de 0 a 12: null, eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn, elf, zwölf.",
+      "De 13 a 19 você acrescenta -zehn: dreizehn, vierzehn; atenção, sechzehn e siebzehn perdem letras.",
+      "Telefones se falam dígito por dígito ou em pares; no telefone se diz zwo em vez de zwei para não confundir com drei."
+     ],
+     "q": "Qual é seu número favorito entre 0 e 20? Você sabe dizer em alemão?",
+     "c": "Fale seu número de telefone em alemão, dígito por dígito, três vezes sem olhar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "null",
+      "ex": "Die Vorwahl beginnt mit null."
+     },
+     {
+      "w": "zwölf",
+      "ex": "Ich bin um zwölf Uhr da."
+     },
+     {
+      "w": "sechzehn",
+      "ex": "Mein Bruder ist sechzehn."
+     },
+     {
+      "w": "zwanzig",
+      "ex": "Der Kurs hat zwanzig Leute."
+     },
+     {
+      "w": "die Telefonnummer",
+      "ex": "Wie ist deine Telefonnummer?"
+     },
+     {
+      "w": "die Zahl",
+      "ex": "Sieben ist meine Lieblingszahl."
+     }
+    ],
+    "gram": "13–19: Zahl + -zehn (dreizehn). Achtung: sechzehn, siebzehn. Frage: Wie ist deine Telefonnummer? – Sie ist 0 1 7 2..."
+   }
+  },
+  {
+   "d": 8,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Sein: the verb to be",
+     "g": "Conjugate sein in the present and use it to describe yourself.",
+     "p": [
+      "Sein is irregular, so learn it as a chant: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.",
+      "Use it for names, origin, jobs and adjectives: Ich bin Lehrerin. Du bist nett. Wir sind müde.",
+      "With jobs Germans drop the article: Ich bin Student, not ich bin ein Student."
+     ],
+     "q": "Tell me three things about yourself with ich bin, for example your job or a quality you have.",
+     "c": "Write five sentences with five different forms of sein about people you know."
+    },
+    "de": {
+     "t": "Sein: das Verb sein",
+     "g": "Du konjugierst sein im Präsens und beschreibst dich damit.",
+     "p": [
+      "Sein ist unregelmäßig, also lern es wie ein Lied: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.",
+      "Du brauchst es für Namen, Herkunft, Berufe und Adjektive: Ich bin Lehrerin. Du bist nett. Wir sind müde.",
+      "Bei Berufen fällt der Artikel weg: Ich bin Student, nicht ich bin ein Student."
+     ],
+     "q": "Sag mir drei Dinge über dich mit ich bin, zum Beispiel deinen Beruf oder eine Eigenschaft.",
+     "c": "Schreib fünf Sätze mit fünf verschiedenen Formen von sein über Menschen, die du kennst."
+    },
+    "es": {
+     "t": "Sein: el verbo ser/estar",
+     "g": "Conjuga sein en presente y úsalo para describirte.",
+     "p": [
+      "Sein es irregular, apréndelo como una canción: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.",
+      "Sirve para nombres, origen, profesiones y adjetivos: Ich bin Lehrerin. Du bist nett. Wir sind müde.",
+      "Con profesiones no se pone artículo: Ich bin Student, no ich bin ein Student."
+     ],
+     "q": "Dime tres cosas sobre ti con ich bin, por ejemplo tu profesión o una cualidad tuya.",
+     "c": "Escribe cinco frases con cinco formas distintas de sein sobre personas que conoces."
+    },
+    "fr": {
+     "t": "Sein : le verbe être",
+     "g": "Conjuguer sein au présent et l'utiliser pour te décrire.",
+     "p": [
+      "Sein est irrégulier, apprends-le comme une comptine : ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.",
+      "Il sert pour le nom, l'origine, le métier et les adjectifs : Ich bin Lehrerin. Du bist nett. Wir sind müde.",
+      "Avec un métier, pas d'article : Ich bin Student, et non ich bin ein Student."
+     ],
+     "q": "Dis-moi trois choses sur toi avec ich bin, par exemple ton métier ou une qualité.",
+     "c": "Écris cinq phrases avec cinq formes différentes de sein sur des personnes que tu connais."
+    },
+    "it": {
+     "t": "Sein: il verbo essere",
+     "g": "Coniughi sein al presente e lo usi per descriverti.",
+     "p": [
+      "Sein è irregolare, imparalo come una filastrocca: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.",
+      "Serve per nome, provenienza, professione e aggettivi: Ich bin Lehrerin. Du bist nett. Wir sind müde.",
+      "Con le professioni niente articolo: Ich bin Student, non ich bin ein Student."
+     ],
+     "q": "Dimmi tre cose su di te con ich bin, per esempio il tuo lavoro o una tua qualità.",
+     "c": "Scrivi cinque frasi con cinque forme diverse di sein su persone che conosci."
+    },
+    "pt": {
+     "t": "Sein: o verbo ser/estar",
+     "g": "Conjugar sein no presente e usá-lo para te descreveres.",
+     "p": [
+      "Sein é irregular, aprende-o como uma lengalenga: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.",
+      "Serve para nome, origem, profissão e adjetivos: Ich bin Lehrerin. Du bist nett. Wir sind müde.",
+      "Com profissões não se usa artigo: Ich bin Student, e não ich bin ein Student."
+     ],
+     "q": "Diz-me três coisas sobre ti com ich bin, por exemplo a tua profissão ou uma qualidade.",
+     "c": "Escreve cinco frases com cinco formas diferentes de sein sobre pessoas que conheces."
+    },
+    "pt_BR": {
+     "t": "Sein: o verbo ser/estar",
+     "g": "Conjugar sein no presente e usar para se descrever.",
+     "p": [
+      "Sein é irregular, aprenda como uma musiquinha: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind.",
+      "Ele serve para nome, origem, profissão e adjetivos: Ich bin Lehrerin. Du bist nett. Wir sind müde.",
+      "Com profissões não se usa artigo: Ich bin Student, e não ich bin ein Student."
+     ],
+     "q": "Me conte três coisas sobre você com ich bin, por exemplo sua profissão ou uma qualidade.",
+     "c": "Escreva cinco frases com cinco formas diferentes de sein sobre pessoas que você conhece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sein",
+      "ex": "Wir wollen glücklich sein."
+     },
+     {
+      "w": "ich bin",
+      "ex": "Ich bin Lehrerin."
+     },
+     {
+      "w": "du bist",
+      "ex": "Du bist sehr nett."
+     },
+     {
+      "w": "er ist",
+      "ex": "Er ist heute müde."
+     },
+     {
+      "w": "wir sind",
+      "ex": "Wir sind Freunde."
+     },
+     {
+      "w": "ihr seid",
+      "ex": "Ihr seid super!"
+     }
+    ],
+    "gram": "sein: ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Beruf ohne Artikel: Ich bin Arzt."
+   }
+  },
+  {
+   "d": 9,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Personal pronouns",
+     "g": "Use the German subject pronouns correctly, including the three meanings of sie.",
+     "p": [
+      "Ich, du, er, sie, es, wir, ihr, sie, Sie: one pronoun for each person, and the verb ending follows it.",
+      "Small sie means she or they; capital Sie is polite you. The verb tells you which: sie ist (she), sie sind (they).",
+      "Er, sie and es also replace things according to their gender: der Tisch → er, die Lampe → sie, das Buch → es."
+     ],
+     "q": "Who are three people in your life? Tell me about them using er, sie or sie (plural).",
+     "c": "Write one sentence each with er, sie (she), sie (they) and Sie, using the verb sein."
+    },
+    "de": {
+     "t": "Personalpronomen",
+     "g": "Du benutzt die Personalpronomen richtig, auch die drei Bedeutungen von sie.",
+     "p": [
+      "Ich, du, er, sie, es, wir, ihr, sie, Sie: Für jede Person gibt es ein Pronomen, und die Verbendung passt sich an.",
+      "Kleines sie heißt eine Frau oder mehrere Personen, großes Sie ist die höfliche Anrede. Das Verb hilft: sie ist, sie sind.",
+      "Er, sie und es ersetzen auch Dinge nach ihrem Genus: der Tisch → er, die Lampe → sie, das Buch → es."
+     ],
+     "q": "Wer sind drei Menschen in deinem Leben? Erzähl mir von ihnen mit er, sie oder sie (Plural).",
+     "c": "Schreib je einen Satz mit er, sie (Singular), sie (Plural) und Sie, mit dem Verb sein."
+    },
+    "es": {
+     "t": "Los pronombres personales",
+     "g": "Usa bien los pronombres personales alemanes, incluidos los tres sentidos de sie.",
+     "p": [
+      "Ich, du, er, sie, es, wir, ihr, sie, Sie: un pronombre para cada persona, y la terminación del verbo lo sigue.",
+      "Sie en minúscula es ella o ellos; Sie en mayúscula es usted. El verbo lo aclara: sie ist (ella), sie sind (ellos).",
+      "Er, sie y es también sustituyen cosas según su género: der Tisch → er, die Lampe → sie, das Buch → es."
+     ],
+     "q": "¿Quiénes son tres personas de tu vida? Háblame de ellas con er, sie o sie (plural).",
+     "c": "Escribe una frase con er, sie (ella), sie (ellos) y Sie usando el verbo sein."
+    },
+    "fr": {
+     "t": "Les pronoms personnels",
+     "g": "Utiliser les pronoms sujets allemands, y compris les trois sens de sie.",
+     "p": [
+      "Ich, du, er, sie, es, wir, ihr, sie, Sie : un pronom par personne, et la terminaison du verbe suit.",
+      "Sie minuscule veut dire elle ou ils/elles ; Sie majuscule veut dire vous de politesse. Le verbe aide : sie ist, sie sind.",
+      "Er, sie et es remplacent aussi les choses selon leur genre : der Tisch → er, die Lampe → sie, das Buch → es."
+     ],
+     "q": "Qui sont trois personnes de ta vie ? Parle-moi d'elles avec er, sie ou sie (pluriel).",
+     "c": "Écris une phrase avec er, sie (elle), sie (ils) et Sie en utilisant le verbe sein."
+    },
+    "it": {
+     "t": "I pronomi personali",
+     "g": "Usi correttamente i pronomi soggetto tedeschi, compresi i tre significati di sie.",
+     "p": [
+      "Ich, du, er, sie, es, wir, ihr, sie, Sie: un pronome per ogni persona, e la desinenza del verbo lo segue.",
+      "Sie minuscolo vuol dire lei o loro; Sie maiuscolo è il Lei di cortesia. Il verbo aiuta: sie ist (lei), sie sind (loro).",
+      "Er, sie ed es sostituiscono anche le cose secondo il genere: der Tisch → er, die Lampe → sie, das Buch → es."
+     ],
+     "q": "Chi sono tre persone della tua vita? Parlamene usando er, sie o sie (plurale).",
+     "c": "Scrivi una frase con er, sie (lei), sie (loro) e Sie usando il verbo sein."
+    },
+    "pt": {
+     "t": "Os pronomes pessoais",
+     "g": "Usar bem os pronomes pessoais alemães, incluindo os três sentidos de sie.",
+     "p": [
+      "Ich, du, er, sie, es, wir, ihr, sie, Sie: um pronome para cada pessoa, e a terminação do verbo acompanha-o.",
+      "Sie minúsculo é ela ou eles; Sie maiúsculo é o senhor/a senhora. O verbo ajuda: sie ist (ela), sie sind (eles).",
+      "Er, sie e es também substituem coisas conforme o género: der Tisch → er, die Lampe → sie, das Buch → es."
+     ],
+     "q": "Quem são três pessoas da tua vida? Fala-me delas com er, sie ou sie (plural).",
+     "c": "Escreve uma frase com er, sie (ela), sie (eles) e Sie, usando o verbo sein."
+    },
+    "pt_BR": {
+     "t": "Os pronomes pessoais",
+     "g": "Usar bem os pronomes pessoais alemães, incluindo os três sentidos de sie.",
+     "p": [
+      "Ich, du, er, sie, es, wir, ihr, sie, Sie: um pronome para cada pessoa, e a terminação do verbo acompanha.",
+      "Sie minúsculo é ela ou eles; Sie maiúsculo é o senhor/a senhora. O verbo ajuda: sie ist (ela), sie sind (eles).",
+      "Er, sie e es também substituem coisas conforme o gênero: der Tisch → er, die Lampe → sie, das Buch → es."
+     ],
+     "q": "Quem são três pessoas da sua vida? Me fale delas com er, sie ou sie (plural).",
+     "c": "Escreva uma frase com er, sie (ela), sie (eles) e Sie, usando o verbo sein."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "er",
+      "ex": "Das ist Max. Er ist nett."
+     },
+     {
+      "w": "sie (Singular)",
+      "ex": "Das ist Mia. Sie ist Ärztin."
+     },
+     {
+      "w": "es",
+      "ex": "Das Kind ist klein. Es ist drei."
+     },
+     {
+      "w": "wir",
+      "ex": "Wir sind aus Köln."
+     },
+     {
+      "w": "ihr",
+      "ex": "Seid ihr heute zu Hause?"
+     },
+     {
+      "w": "sie (Plural)",
+      "ex": "Tom und Lea? Sie sind im Kino."
+     }
+    ],
+    "gram": "ich, du, er, sie, es, wir, ihr, sie, Sie. sie ist = sie (eine Frau), sie sind = sie (Plural) oder Sie (höflich)."
+   }
+  },
+  {
+   "d": 10,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Countries and languages",
+     "g": "Say where you come from and which languages you speak.",
+     "p": [
+      "Ask woher kommst du? and answer ich komme aus Brasilien, aus Spanien, aus Italien.",
+      "A few countries take an article: aus der Schweiz, aus der Türkei, aus den USA.",
+      "Languages mostly end in -isch and are written with a capital: ich spreche Deutsch, Englisch und ein bisschen Französisch."
+     ],
+     "q": "Woher kommst du, und welche Sprachen sprichst du? Answer me in German!",
+     "c": "Make a mini profile in German: Ich heiße..., ich komme aus..., ich spreche..."
+    },
+    "de": {
+     "t": "Länder und Sprachen",
+     "g": "Du sagst, woher du kommst und welche Sprachen du sprichst.",
+     "p": [
+      "Frag woher kommst du? und antworte: Ich komme aus Brasilien, aus Spanien, aus Italien.",
+      "Einige Länder haben einen Artikel: aus der Schweiz, aus der Türkei, aus den USA.",
+      "Sprachen enden meist auf -isch und werden groß geschrieben: Ich spreche Deutsch, Englisch und ein bisschen Französisch."
+     ],
+     "q": "Woher kommst du, und welche Sprachen sprichst du? Antworte mir auf Deutsch!",
+     "c": "Schreib ein Mini-Profil auf Deutsch: Ich heiße..., ich komme aus..., ich spreche..."
+    },
+    "es": {
+     "t": "Países e idiomas",
+     "g": "Di de dónde eres y qué idiomas hablas.",
+     "p": [
+      "Pregunta woher kommst du? y responde ich komme aus Brasilien, aus Spanien, aus Italien.",
+      "Algunos países llevan artículo: aus der Schweiz, aus der Türkei, aus den USA.",
+      "Los idiomas suelen acabar en -isch y van con mayúscula: ich spreche Deutsch, Englisch und ein bisschen Französisch."
+     ],
+     "q": "¿Woher kommst du, y qué idiomas hablas? ¡Respóndeme en alemán!",
+     "c": "Escribe un miniperfil en alemán: Ich heiße..., ich komme aus..., ich spreche..."
+    },
+    "fr": {
+     "t": "Pays et langues",
+     "g": "Dire d'où tu viens et quelles langues tu parles.",
+     "p": [
+      "Demande woher kommst du ? et réponds ich komme aus Frankreich, aus Belgien, aus Kanada.",
+      "Quelques pays ont un article : aus der Schweiz, aus der Türkei, aus den USA.",
+      "Les langues finissent souvent en -isch et prennent une majuscule : ich spreche Deutsch, Französisch und ein bisschen Englisch."
+     ],
+     "q": "Woher kommst du, et quelles langues parles-tu ? Réponds-moi en allemand !",
+     "c": "Écris un mini-profil en allemand : Ich heiße..., ich komme aus..., ich spreche..."
+    },
+    "it": {
+     "t": "Paesi e lingue",
+     "g": "Dici da dove vieni e quali lingue parli.",
+     "p": [
+      "Chiedi woher kommst du? e rispondi ich komme aus Italien, aus Spanien, aus Brasilien.",
+      "Alcuni paesi hanno l'articolo: aus der Schweiz, aus der Türkei, aus den USA.",
+      "Le lingue finiscono spesso in -isch e si scrivono maiuscole: ich spreche Italienisch, Englisch und ein bisschen Deutsch."
+     ],
+     "q": "Woher kommst du, e quali lingue parli? Rispondimi in tedesco!",
+     "c": "Scrivi un mini profilo in tedesco: Ich heiße..., ich komme aus..., ich spreche..."
+    },
+    "pt": {
+     "t": "Países e línguas",
+     "g": "Dizer de onde és e que línguas falas.",
+     "p": [
+      "Pergunta woher kommst du? e responde ich komme aus Portugal, aus Spanien, aus Brasilien.",
+      "Alguns países levam artigo: aus der Schweiz, aus der Türkei, aus den USA.",
+      "As línguas acabam muitas vezes em -isch e escrevem-se com maiúscula: ich spreche Portugiesisch, Englisch und ein bisschen Deutsch."
+     ],
+     "q": "Woher kommst du, e que línguas falas? Responde-me em alemão!",
+     "c": "Escreve um miniperfil em alemão: Ich heiße..., ich komme aus..., ich spreche..."
+    },
+    "pt_BR": {
+     "t": "Países e idiomas",
+     "g": "Dizer de onde você é e que idiomas você fala.",
+     "p": [
+      "Pergunte woher kommst du? e responda ich komme aus Brasilien, aus Portugal, aus Spanien.",
+      "Alguns países levam artigo: aus der Schweiz, aus der Türkei, aus den USA.",
+      "Os idiomas costumam terminar em -isch e têm maiúscula: ich spreche Portugiesisch, Englisch und ein bisschen Deutsch."
+     ],
+     "q": "Woher kommst du, e que idiomas você fala? Me responda em alemão!",
+     "c": "Escreva um miniperfil em alemão: Ich heiße..., ich komme aus..., ich spreche..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Woher kommst du?",
+      "ex": "Woher kommst du, Elena?"
+     },
+     {
+      "w": "kommen aus",
+      "ex": "Ich komme aus Spanien."
+     },
+     {
+      "w": "aus der Schweiz",
+      "ex": "Lukas kommt aus der Schweiz."
+     },
+     {
+      "w": "sprechen",
+      "ex": "Ich spreche Deutsch und Englisch."
+     },
+     {
+      "w": "ein bisschen",
+      "ex": "Ich spreche ein bisschen Italienisch."
+     },
+     {
+      "w": "die Sprache",
+      "ex": "Deutsch ist eine schöne Sprache."
+     }
+    ],
+    "gram": "Woher? – aus + Land: Ich komme aus Polen. Mit Artikel: aus der Schweiz, aus den USA. Sprachen groß: Ich spreche Deutsch."
+   }
+  }
+ ]
+}

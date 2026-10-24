@@ -1,0 +1,2195 @@
+{
+"topic": "practice_french",
+"days": [
+{
+"d": 1,
+"lv": "A1",
+"t": "Bonjour! First French greetings",
+"f": "Say bonjour, bonsoir, salut and au revoir and know when each one fits"
+},
+{
+"d": 2,
+"lv": "A1",
+"t": "The French alphabet",
+"f": "Spell your name letter by letter and master tricky letters like e, u, g, j and r"
+},
+{
+"d": 3,
+"lv": "A1",
+"t": "French sounds: silent letters",
+"f": "Why final consonants are often silent, and the CaReFuL rule for c, r, f and l"
+},
+{
+"d": 4,
+"lv": "A1",
+"t": "Accents: é, è, ê, à, ç",
+"f": "What each accent changes in sound and meaning, from café to garçon"
+},
+{
+"d": 5,
+"lv": "A1",
+"t": "Je m'appelle: introducing yourself",
+"f": "Say your name, ask comment tu t'appelles? and reply enchanté or enchantée"
+},
+{
+"d": 6,
+"lv": "A1",
+"t": "Tu or vous?",
+"f": "When to be informal with tu, polite with vous, and how to switch between them"
+},
+{
+"d": 7,
+"lv": "A1",
+"t": "Comment ça va?",
+"f": "Ask and answer with ça va, très bien, pas mal, comme ci comme ça, et toi?"
+},
+{
+"d": 8,
+"lv": "A1",
+"t": "Numbers 0 to 20",
+"f": "Count from zéro to vingt and use numbers for age and phone numbers"
+},
+{
+"d": 9,
+"lv": "A1",
+"t": "Être: the verb to be",
+"f": "Conjugate être in the present tense and describe yourself and others"
+},
+{
+"d": 10,
+"lv": "A1",
+"t": "Subject pronouns",
+"f": "Je, tu, il, elle, on, nous, vous, ils, elles and the everyday use of on"
+},
+{
+"d": 11,
+"lv": "A1",
+"t": "Countries and nationalities",
+"f": "Je suis brésilien, elle est allemande: nationalities in masculine and feminine"
+},
+{
+"d": 12,
+"lv": "A1",
+"t": "Where are you from? Je viens de",
+"f": "Say where you come from and live with venir de, habiter à, en and au"
+},
+{
+"d": 13,
+"lv": "A1",
+"t": "Gender: le, la, l', les",
+"f": "Masculine and feminine nouns and the definite articles"
+},
+{
+"d": 14,
+"lv": "A1",
+"t": "Un, une, des and il y a",
+"f": "Indefinite articles and how to say there is or there are"
+},
+{
+"d": 15,
+"lv": "A1",
+"t": "Avoir: the verb to have",
+"f": "Conjugate avoir and use it for age: j'ai vingt ans"
+},
+{
+"d": 16,
+"lv": "A1",
+"t": "Polite words: s'il vous plaît",
+"f": "Merci, de rien, pardon, excusez-moi, s'il te plaît and s'il vous plaît"
+},
+{
+"d": 17,
+"lv": "A1",
+"t": "Numbers 21 to 100",
+"f": "From vingt et un to cent, including the famous soixante-dix and quatre-vingts"
+},
+{
+"d": 18,
+"lv": "A1",
+"t": "Family members",
+"f": "Parents, frère, sœur, grands-parents and the possessives mon, ma, mes"
+},
+{
+"d": 19,
+"lv": "A1",
+"t": "Days of the week",
+"f": "Lundi to dimanche, aujourd'hui, demain, hier and le lundi for habits"
+},
+{
+"d": 20,
+"lv": "A1",
+"t": "Months and seasons",
+"f": "The twelve months, the four seasons and how to say your birthday"
+},
+{
+"d": 21,
+"lv": "A1",
+"t": "Regular -er verbs",
+"f": "Parler, aimer, habiter: the biggest verb family in the present tense"
+},
+{
+"d": 22,
+"lv": "A1",
+"t": "J'aime, je n'aime pas",
+"f": "Likes and dislikes with aimer, adorer, détester and préférer"
+},
+{
+"d": 23,
+"lv": "A1",
+"t": "Saying no: ne... pas",
+"f": "Negation with ne... pas, plus ne... jamais and ne... rien"
+},
+{
+"d": 24,
+"lv": "A1",
+"t": "Asking questions",
+"f": "Three ways to ask: rising intonation, est-ce que and inversion"
+},
+{
+"d": 25,
+"lv": "A1",
+"t": "Question words",
+"f": "Qui, quoi, où, quand, comment, pourquoi and combien in everyday questions"
+},
+{
+"d": 26,
+"lv": "A1",
+"t": "Colours and agreement",
+"f": "Learn the colours and how adjectives agree in gender and number"
+},
+{
+"d": 27,
+"lv": "A1",
+"t": "Describing people",
+"f": "Grand, petit, jeune, sympa: physical looks and personality"
+},
+{
+"d": 28,
+"lv": "A1",
+"t": "Adjective position",
+"f": "Most adjectives follow the noun, but beau, bon, petit and grand come before"
+},
+{
+"d": 29,
+"lv": "A1",
+"t": "Telling the time",
+"f": "Quelle heure est-il? Et quart, et demie, moins le quart, midi and minuit"
+},
+{
+"d": 30,
+"lv": "A1",
+"t": "Review: first month of French",
+"f": "Recap greetings, être, avoir, articles, -er verbs and numbers in a chat"
+},
+{
+"d": 31,
+"lv": "A1",
+"t": "At the café: un café, s'il vous plaît",
+"f": "Order coffee, a croissant and drinks, and ask for l'addition"
+},
+{
+"d": 32,
+"lv": "A1",
+"t": "Food and drinks",
+"f": "Le pain, le fromage, les fruits, les légumes: everyday food vocabulary"
+},
+{
+"d": 33,
+"lv": "A1",
+"t": "Partitive articles du, de la, des",
+"f": "Je mange du pain, je bois de l'eau: talking about some of something"
+},
+{
+"d": 34,
+"lv": "A1",
+"t": "At the bakery",
+"f": "Une baguette, deux croissants, un pain au chocolat at la boulangerie"
+},
+{
+"d": 35,
+"lv": "A1",
+"t": "Quantities: beaucoup, un peu",
+"f": "Un kilo de, une bouteille de, beaucoup de, trop de and the de after quantities"
+},
+{
+"d": 36,
+"lv": "A1",
+"t": "At the restaurant",
+"f": "Book a table, read the menu with entrée, plat and dessert, and order politely"
+},
+{
+"d": 37,
+"lv": "A1",
+"t": "Je voudrais: polite requests",
+"f": "Use je voudrais and j'aimerais to ask for things nicely"
+},
+{
+"d": 38,
+"lv": "A1",
+"t": "Prices and money",
+"f": "C'est combien? Euros, centimes and saying c'est trop cher"
+},
+{
+"d": 39,
+"lv": "A1",
+"t": "Aller: the verb to go",
+"f": "Conjugate aller and use it with à: au, à la, à l', aux"
+},
+{
+"d": 40,
+"lv": "A1",
+"t": "Places in town",
+"f": "La gare, la poste, la pharmacie, la mairie and where they are"
+},
+{
+"d": 41,
+"lv": "A1",
+"t": "Asking for directions",
+"f": "Où est...? Tout droit, à gauche, à droite and simple prepositions of place"
+},
+{
+"d": 42,
+"lv": "A1",
+"t": "Getting around: transport",
+"f": "Le métro, le bus, le train, à pied, en voiture and buying a ticket"
+},
+{
+"d": 43,
+"lv": "A1",
+"t": "Faire: to do and to make",
+"f": "Conjugate faire and use it for sports, chores and plans"
+},
+{
+"d": 44,
+"lv": "A1",
+"t": "The weather",
+"f": "Il fait beau, il pleut, il neige, il fait chaud, il fait froid"
+},
+{
+"d": 45,
+"lv": "A1",
+"t": "Hobbies and free time",
+"f": "Jouer à, jouer de, faire du: talking about sports and music"
+},
+{
+"d": 46,
+"lv": "A1",
+"t": "Regular -ir verbs",
+"f": "Finir, choisir, réussir: the second verb group in the present tense"
+},
+{
+"d": 47,
+"lv": "A1",
+"t": "My daily routine",
+"f": "Se lever, se laver, s'habiller: a first look at reflexive verbs"
+},
+{
+"d": 48,
+"lv": "A1",
+"t": "Reflexive verbs in practice",
+"f": "Conjugate reflexive verbs and describe your morning step by step"
+},
+{
+"d": 49,
+"lv": "A1",
+"t": "Clothes",
+"f": "Un pantalon, une robe, une veste, des chaussures and what you wear today"
+},
+{
+"d": 50,
+"lv": "A1",
+"t": "Shopping for clothes",
+"f": "Sizes, colours, trying things on and asking je peux essayer?"
+},
+{
+"d": 51,
+"lv": "A1",
+"t": "The home",
+"f": "Rooms and furniture: la cuisine, la chambre, le salon, le canapé"
+},
+{
+"d": 52,
+"lv": "A1",
+"t": "Prepositions of place",
+"f": "Sur, sous, devant, derrière, à côté de, entre: where things are"
+},
+{
+"d": 53,
+"lv": "A1",
+"t": "Possessive adjectives",
+"f": "Mon, ton, son, notre, votre, leur and all their forms"
+},
+{
+"d": 54,
+"lv": "A1",
+"t": "Demonstratives ce, cet, cette, ces",
+"f": "Point at things: ce livre, cet ami, cette ville, ces gens"
+},
+{
+"d": 55,
+"lv": "A1",
+"t": "Pouvoir, vouloir, devoir",
+"f": "Can, want and must: three essential verbs followed by an infinitive"
+},
+{
+"d": 56,
+"lv": "A1",
+"t": "Near future: aller + infinitive",
+"f": "Je vais voyager: talk about plans with the futur proche"
+},
+{
+"d": 57,
+"lv": "A1",
+"t": "Making plans with friends",
+"f": "Tu es libre samedi? Propose, accept and decline invitations"
+},
+{
+"d": 58,
+"lv": "A1",
+"t": "Prendre and its family",
+"f": "Prendre, apprendre and comprendre in the present tense"
+},
+{
+"d": 59,
+"lv": "A1",
+"t": "Verbs in -re",
+"f": "Vendre, attendre, entendre, répondre and their endings"
+},
+{
+"d": 60,
+"lv": "A1",
+"t": "Review: daily life in French",
+"f": "Recap food, town, transport, routine and the near future"
+},
+{
+"d": 61,
+"lv": "A1",
+"t": "The body",
+"f": "La tête, le bras, la jambe and j'ai mal à for aches"
+},
+{
+"d": 62,
+"lv": "A1",
+"t": "At the pharmacy",
+"f": "Explain simple symptoms and ask for something for a cold"
+},
+{
+"d": 63,
+"lv": "A1",
+"t": "Jobs and professions",
+"f": "Je suis professeur, il est ingénieur: no article after être"
+},
+{
+"d": 64,
+"lv": "A1",
+"t": "At work and school",
+"f": "Le bureau, les collègues, les cours: talking about what you do"
+},
+{
+"d": 65,
+"lv": "A1",
+"t": "Animals and pets",
+"f": "Le chien, le chat, le cheval and describing your pet"
+},
+{
+"d": 66,
+"lv": "A1",
+"t": "Nature and the outdoors",
+"f": "La mer, la montagne, la forêt, la plage and outdoor activities"
+},
+{
+"d": 67,
+"lv": "A1",
+"t": "Venir and venir de",
+"f": "Conjugate venir and use je viens de for something just done"
+},
+{
+"d": 68,
+"lv": "A1",
+"t": "Savoir or connaître?",
+"f": "Knowing facts and skills versus knowing people and places"
+},
+{
+"d": 69,
+"lv": "A1",
+"t": "Ordinal numbers and dates",
+"f": "Premier, deuxième, le 14 juillet: saying dates in French"
+},
+{
+"d": 70,
+"lv": "A1",
+"t": "Big numbers and years",
+"f": "Mille, un million and saying years like deux mille dix"
+},
+{
+"d": 71,
+"lv": "A1",
+"t": "Comparisons: plus, moins, aussi",
+"f": "Plus grand que, moins cher que, aussi beau que"
+},
+{
+"d": 72,
+"lv": "A1",
+"t": "Bon or bien, meilleur or mieux",
+"f": "Avoid a classic mistake with good and well and their comparatives"
+},
+{
+"d": 73,
+"lv": "A1",
+"t": "Superlatives",
+"f": "Le plus beau, la moins chère, le meilleur: the best and the most"
+},
+{
+"d": 74,
+"lv": "A1",
+"t": "Il faut: what is necessary",
+"f": "Il faut + infinitive for rules, needs and advice"
+},
+{
+"d": 75,
+"lv": "A1",
+"t": "Imperative: giving instructions",
+"f": "Viens! Allez-y! Prenez la deuxième rue: commands and directions"
+},
+{
+"d": 76,
+"lv": "A1",
+"t": "A simple recipe",
+"f": "Cooking verbs couper, mélanger, ajouter and a classic crêpe recipe"
+},
+{
+"d": 77,
+"lv": "A1",
+"t": "Direct object pronouns",
+"f": "Le, la, les: je le vois, je la connais, je les aime"
+},
+{
+"d": 78,
+"lv": "A1",
+"t": "Indirect object pronouns",
+"f": "Lui and leur: je lui parle, je leur écris"
+},
+{
+"d": 79,
+"lv": "A1",
+"t": "On the phone",
+"f": "Allô? C'est de la part de qui? Phone phrases and spelling names"
+},
+{
+"d": 80,
+"lv": "A1",
+"t": "Writing a short message",
+"f": "Texts and simple emails: salut, bisous, à bientôt, cordialement"
+},
+{
+"d": 81,
+"lv": "A1",
+"t": "The French-speaking world",
+"f": "France, Belgium, Switzerland, Québec, Senegal: la francophonie"
+},
+{
+"d": 82,
+"lv": "A1",
+"t": "Feelings and moods",
+"f": "Content, triste, fatigué, stressé and j'ai faim, j'ai soif"
+},
+{
+"d": 83,
+"lv": "A1",
+"t": "C'est or il est?",
+"f": "When to use c'est and when to use il est or elle est"
+},
+{
+"d": 84,
+"lv": "A1",
+"t": "Small talk",
+"f": "Talk about the weather, the weekend and plans to keep a chat going"
+},
+{
+"d": 85,
+"lv": "A1",
+"t": "Very common expressions",
+"f": "D'accord, bien sûr, pas de problème, ça marche, bon courage"
+},
+{
+"d": 86,
+"lv": "A1",
+"t": "Linking words: et, mais, ou, parce que",
+"f": "Connect ideas to build longer sentences"
+},
+{
+"d": 87,
+"lv": "A1",
+"t": "Describing your town",
+"f": "Il y a, il n'y a pas de: talking about where you live"
+},
+{
+"d": 88,
+"lv": "A1",
+"t": "Booking a hotel room",
+"f": "Une chambre pour deux nuits, le petit-déjeuner est compris?"
+},
+{
+"d": 89,
+"lv": "A1",
+"t": "Telling about your week",
+"f": "Combine routine, plans and opinions in a short talk"
+},
+{
+"d": 90,
+"lv": "A1",
+"t": "Review: A1 checkpoint",
+"f": "Recap all of A1 with a full conversation about yourself"
+},
+{
+"d": 91,
+"lv": "A2",
+"t": "Passé composé with avoir",
+"f": "J'ai mangé, tu as parlé: talking about finished actions"
+},
+{
+"d": 92,
+"lv": "A2",
+"t": "Past participles",
+"f": "Regular participles in -é, -i, -u and irregular ones like fait, pris, eu"
+},
+{
+"d": 93,
+"lv": "A2",
+"t": "Passé composé with être",
+"f": "The house of être: aller, venir, partir, arriver and agreement"
+},
+{
+"d": 94,
+"lv": "A2",
+"t": "What did you do last weekend?",
+"f": "Tell a short story with d'abord, ensuite, puis and enfin"
+},
+{
+"d": 95,
+"lv": "A2",
+"t": "Time markers for the past",
+"f": "Hier, la semaine dernière, il y a deux ans, déjà, pas encore"
+},
+{
+"d": 96,
+"lv": "A2",
+"t": "Negation in the past",
+"f": "Je n'ai pas vu, je ne suis jamais allé: where ne... pas goes"
+},
+{
+"d": 97,
+"lv": "A2",
+"t": "Reflexive verbs in the past",
+"f": "Je me suis levé tôt: reflexives with être and agreement"
+},
+{
+"d": 98,
+"lv": "A2",
+"t": "Holidays and travel",
+"f": "Les vacances, partir en voyage, faire ses valises"
+},
+{
+"d": 99,
+"lv": "A2",
+"t": "At the airport and train station",
+"f": "Check-in, boarding and delays: l'embarquement, le quai, en retard"
+},
+{
+"d": 100,
+"lv": "A2",
+"t": "Imparfait: forming it",
+"f": "Nous stem plus -ais, -ais, -ait, -ions, -iez, -aient"
+},
+{
+"d": 101,
+"lv": "A2",
+"t": "Imparfait for descriptions",
+"f": "Quand j'étais petit...: childhood, habits and scenes in the past"
+},
+{
+"d": 102,
+"lv": "A2",
+"t": "Passé composé or imparfait?",
+"f": "Background versus events: il pleuvait quand je suis sorti"
+},
+{
+"d": 103,
+"lv": "A2",
+"t": "Telling a childhood memory",
+"f": "Combine imparfait and passé composé in a personal story"
+},
+{
+"d": 104,
+"lv": "A2",
+"t": "The pronoun y",
+"f": "J'y vais, j'y pense: replacing places and à + thing"
+},
+{
+"d": 105,
+"lv": "A2",
+"t": "The pronoun en",
+"f": "J'en veux, j'en ai trois: replacing de + thing and quantities"
+},
+{
+"d": 106,
+"lv": "A2",
+"t": "Pronoun order",
+"f": "Je le lui donne, il y en a: putting two pronouns together"
+},
+{
+"d": 107,
+"lv": "A2",
+"t": "Relative pronouns qui and que",
+"f": "L'homme qui parle, le livre que je lis"
+},
+{
+"d": 108,
+"lv": "A2",
+"t": "Relative pronoun où",
+"f": "La ville où je suis né, le jour où on s'est rencontrés"
+},
+{
+"d": 109,
+"lv": "A2",
+"t": "Health and the doctor",
+"f": "Prendre rendez-vous, avoir de la fièvre, une ordonnance"
+},
+{
+"d": 110,
+"lv": "A2",
+"t": "Healthy habits",
+"f": "Faire du sport, bien dormir, manger équilibré and giving advice"
+},
+{
+"d": 111,
+"lv": "A2",
+"t": "Review: past tenses and pronouns",
+"f": "Recap passé composé, imparfait, y, en and relative pronouns"
+},
+{
+"d": 112,
+"lv": "A2",
+"t": "Simple future: forming it",
+"f": "Infinitive plus -ai, -as, -a: je parlerai, tu finiras"
+},
+{
+"d": 113,
+"lv": "A2",
+"t": "Irregular futures",
+"f": "Je serai, j'aurai, j'irai, je ferai, je pourrai, je verrai"
+},
+{
+"d": 114,
+"lv": "A2",
+"t": "Plans and predictions",
+"f": "Talk about your future with demain, l'année prochaine, un jour"
+},
+{
+"d": 115,
+"lv": "A2",
+"t": "Si + present, future",
+"f": "Si j'ai le temps, je viendrai: real conditions"
+},
+{
+"d": 116,
+"lv": "A2",
+"t": "The weather forecast",
+"f": "La météo: il y aura du soleil, des nuages, des averses"
+},
+{
+"d": 117,
+"lv": "A2",
+"t": "Media and screens",
+"f": "La télé, les séries, les réseaux sociaux, regarder en streaming"
+},
+{
+"d": 118,
+"lv": "A2",
+"t": "Cinema and films",
+"f": "Une comédie, un film d'action, les sous-titres, la version originale"
+},
+{
+"d": 119,
+"lv": "A2",
+"t": "Music and concerts",
+"f": "Genres, instruments and talking about your favourite artists"
+},
+{
+"d": 120,
+"lv": "A2",
+"t": "Reading and books",
+"f": "Un roman, une BD: the French love of bandes dessinées"
+},
+{
+"d": 121,
+"lv": "A2",
+"t": "Giving opinions",
+"f": "À mon avis, je pense que, je trouve que, selon moi"
+},
+{
+"d": 122,
+"lv": "A2",
+"t": "Agreeing and disagreeing",
+"f": "Je suis d'accord, pas du tout, tu as raison, ça dépend"
+},
+{
+"d": 123,
+"lv": "A2",
+"t": "Stressed pronouns moi, toi, lui",
+"f": "Moi aussi, chez toi, avec eux: emphatic pronouns"
+},
+{
+"d": 124,
+"lv": "A2",
+"t": "Housing: renting a flat",
+"f": "Un appartement, le loyer, les charges, meublé, le propriétaire"
+},
+{
+"d": 125,
+"lv": "A2",
+"t": "Household chores",
+"f": "Faire la vaisselle, passer l'aspirateur, ranger sa chambre"
+},
+{
+"d": 126,
+"lv": "A2",
+"t": "Shopping at the market",
+"f": "Fresh produce, c'est de saison? and chatting with vendors"
+},
+{
+"d": 127,
+"lv": "A2",
+"t": "At the supermarket",
+"f": "Les rayons, le chariot, la caisse, payer par carte"
+},
+{
+"d": 128,
+"lv": "A2",
+"t": "Complaining politely",
+"f": "Il y a un problème avec..., je voudrais échanger ou être remboursé"
+},
+{
+"d": 129,
+"lv": "A2",
+"t": "Expressions with avoir",
+"f": "Avoir besoin de, avoir envie de, avoir raison, avoir de la chance"
+},
+{
+"d": 130,
+"lv": "A2",
+"t": "Expressions with faire",
+"f": "Faire attention, faire la queue, faire la grasse matinée"
+},
+{
+"d": 131,
+"lv": "A2",
+"t": "Adverbs in -ment",
+"f": "Lentement, rapidement, vraiment: forming adverbs from adjectives"
+},
+{
+"d": 132,
+"lv": "A2",
+"t": "Frequency adverbs",
+"f": "Toujours, souvent, parfois, rarement, jamais and where they go"
+},
+{
+"d": 133,
+"lv": "A2",
+"t": "Ne... plus, ne... personne",
+"f": "More negations: no longer, nobody and nothing at all"
+},
+{
+"d": 134,
+"lv": "A2",
+"t": "Quelqu'un, quelque chose, chaque",
+"f": "Someone, something, everywhere, each one: chaque and chacun"
+},
+{
+"d": 135,
+"lv": "A2",
+"t": "Tout, toute, tous, toutes",
+"f": "All the forms of tout and phrases like tout le monde"
+},
+{
+"d": 136,
+"lv": "A2",
+"t": "Friends and relationships",
+"f": "Un copain, une amie, s'entendre bien avec, se disputer"
+},
+{
+"d": 137,
+"lv": "A2",
+"t": "Describing character",
+"f": "Généreux, timide, drôle, têtu: personality in depth"
+},
+{
+"d": 138,
+"lv": "A2",
+"t": "Making an appointment by phone",
+"f": "Booking the hairdresser, the dentist or a restaurant table"
+},
+{
+"d": 139,
+"lv": "A2",
+"t": "Emails: formal and informal",
+"f": "Madame, Monsieur, bien cordialement: email formulas for every case"
+},
+{
+"d": 140,
+"lv": "A2",
+"t": "Celebrations in France",
+"f": "Le 14 juillet, la galette des rois, la Chandeleur and Noël"
+},
+{
+"d": 141,
+"lv": "A2",
+"t": "Review: future, opinions, daily life",
+"f": "Recap the future tense, si clauses and giving opinions"
+},
+{
+"d": 142,
+"lv": "A2",
+"t": "Conditional present: forming it",
+"f": "Future stem plus imperfect endings: je voudrais, j'aimerais"
+},
+{
+"d": 143,
+"lv": "A2",
+"t": "The polite conditional",
+"f": "Pourriez-vous...? Ce serait possible de...? Softening requests"
+},
+{
+"d": 144,
+"lv": "A2",
+"t": "Giving advice: tu devrais",
+"f": "À ta place, je..., tu devrais, il vaudrait mieux"
+},
+{
+"d": 145,
+"lv": "A2",
+"t": "Si + imparfait, conditional",
+"f": "Si j'étais riche, je voyagerais: dreams and hypotheses"
+},
+{
+"d": 146,
+"lv": "A2",
+"t": "Dream holidays",
+"f": "Où irais-tu si tu pouvais? Talking about wishes"
+},
+{
+"d": 147,
+"lv": "A2",
+"t": "Sports in depth",
+"f": "Le foot, le vélo, le Tour de France and talking about matches"
+},
+{
+"d": 148,
+"lv": "A2",
+"t": "Environment basics",
+"f": "Recycler, trier les déchets, économiser l'eau, la pollution"
+},
+{
+"d": 149,
+"lv": "A2",
+"t": "City life vs country life",
+"f": "Comparing the advantages and drawbacks of where to live"
+},
+{
+"d": 150,
+"lv": "A2",
+"t": "Technology in daily life",
+"f": "Le portable, l'ordinateur, télécharger, se connecter, un mot de passe"
+},
+{
+"d": 151,
+"lv": "A2",
+"t": "Job hunting",
+"f": "Le CV, la lettre de motivation, une offre d'emploi"
+},
+{
+"d": 152,
+"lv": "A2",
+"t": "Job interview basics",
+"f": "Present your experience, strengths and goals politely"
+},
+{
+"d": 153,
+"lv": "A2",
+"t": "Talking about studies",
+"f": "La fac, le lycée, passer un examen, réussir, le diplôme"
+},
+{
+"d": 154,
+"lv": "A2",
+"t": "Depuis, pendant, il y a",
+"f": "For, during and ago: three ways to talk about time"
+},
+{
+"d": 155,
+"lv": "A2",
+"t": "Venir de, être en train de",
+"f": "Just did, doing right now and about to: être sur le point de"
+},
+{
+"d": 156,
+"lv": "A2",
+"t": "Verbs with à or de",
+"f": "Commencer à, essayer de, arrêter de, aider à"
+},
+{
+"d": 157,
+"lv": "A2",
+"t": "Comparing quantities",
+"f": "Plus de, moins de, autant de: comparing amounts"
+},
+{
+"d": 158,
+"lv": "A2",
+"t": "French food culture",
+"f": "Regional dishes, l'apéro, cheese and French meal times"
+},
+{
+"d": 159,
+"lv": "A2",
+"t": "Table manners and invitations",
+"f": "Bringing a gift, bon appétit, à la vôtre and being a good guest"
+},
+{
+"d": 160,
+"lv": "A2",
+"t": "Lost and found",
+"f": "J'ai perdu mon portefeuille: describing objects and reporting a loss"
+},
+{
+"d": 161,
+"lv": "A2",
+"t": "Car and road",
+"f": "Conduire, le permis, faire le plein, un bouchon, se garer"
+},
+{
+"d": 162,
+"lv": "A2",
+"t": "Asking for help",
+"f": "Pourriez-vous m'aider? Vous pouvez répéter, s'il vous plaît?"
+},
+{
+"d": 163,
+"lv": "A2",
+"t": "Fillers and spoken French",
+"f": "Euh, ben, bah, du coup, en fait, quoi: sounding natural"
+},
+{
+"d": 164,
+"lv": "A2",
+"t": "Informal spoken French",
+"f": "Dropping ne, on for nous, t'as and y a in casual speech"
+},
+{
+"d": 165,
+"lv": "A2",
+"t": "Common French slang",
+"f": "Sympa, bouffer, un truc, un mec, c'est nul, c'est génial"
+},
+{
+"d": 166,
+"lv": "A2",
+"t": "Paris and its neighbourhoods",
+"f": "Montmartre, le Marais, the arrondissements and the Left Bank"
+},
+{
+"d": 167,
+"lv": "A2",
+"t": "Regions of France",
+"f": "Bretagne, Provence, Alsace, Normandie and their specialities"
+},
+{
+"d": 168,
+"lv": "A2",
+"t": "Possessive pronouns",
+"f": "Le mien, la tienne, les leurs: whose is it?"
+},
+{
+"d": 169,
+"lv": "A2",
+"t": "Interrogative lequel",
+"f": "Lequel, laquelle, lesquels: which one?"
+},
+{
+"d": 170,
+"lv": "A2",
+"t": "Demonstrative pronouns",
+"f": "Celui, celle, ceux, celles and celui-ci, celui-là"
+},
+{
+"d": 171,
+"lv": "A2",
+"t": "Describing a photo",
+"f": "Au premier plan, à l'arrière-plan, on voit, on dirait que"
+},
+{
+"d": 172,
+"lv": "A2",
+"t": "Narrating a trip",
+"f": "A full travel story with past tenses and linking words"
+},
+{
+"d": 173,
+"lv": "A2",
+"t": "Plus-que-parfait",
+"f": "J'avais déjà mangé: the past before the past"
+},
+{
+"d": 174,
+"lv": "A2",
+"t": "Neighbourhood and services",
+"f": "La boulangerie du coin, la mairie, la poste: describe your area"
+},
+{
+"d": 175,
+"lv": "A2",
+"t": "Listening tips for real French",
+"f": "Strategies for fast speech, liaisons and dropped sounds"
+},
+{
+"d": 176,
+"lv": "A2",
+"t": "Liaison and enchaînement",
+"f": "Les amis, vous avez: linking words smoothly when speaking"
+},
+{
+"d": 177,
+"lv": "A2",
+"t": "French false friends",
+"f": "Librairie, actuellement, sensible, rester: words that trick learners"
+},
+{
+"d": 178,
+"lv": "A2",
+"t": "Writing a short story",
+"f": "Use time markers and past tenses to write ten sentences"
+},
+{
+"d": 179,
+"lv": "A2",
+"t": "Talking about your goals",
+"f": "What you want to achieve in French and how you will practise"
+},
+{
+"d": 180,
+"lv": "A2",
+"t": "Review: A2 checkpoint",
+"f": "Recap all of A2 with a long conversation about past and future"
+},
+{
+"d": 181,
+"lv": "B1",
+"t": "Present subjunctive: forming it",
+"f": "Ils stem plus -e, -es, -e, -ions, -iez, -ent"
+},
+{
+"d": 182,
+"lv": "B1",
+"t": "Il faut que + subjonctif",
+"f": "Il faut que tu viennes: necessity with the subjunctive"
+},
+{
+"d": 183,
+"lv": "B1",
+"t": "Irregular subjunctives",
+"f": "Que je sois, que j'aie, que j'aille, que je fasse, que je puisse"
+},
+{
+"d": 184,
+"lv": "B1",
+"t": "Wishes: je veux que, j'aimerais que",
+"f": "Wanting someone else to do something"
+},
+{
+"d": 185,
+"lv": "B1",
+"t": "Emotions + subjonctif",
+"f": "Je suis content que, j'ai peur que, c'est dommage que"
+},
+{
+"d": 186,
+"lv": "B1",
+"t": "Doubt vs certainty",
+"f": "Je doute que + subjunctive, je suis sûr que + indicative"
+},
+{
+"d": 187,
+"lv": "B1",
+"t": "Penser que, ne pas penser que",
+"f": "Indicative in positive opinions, subjunctive in negative ones"
+},
+{
+"d": 188,
+"lv": "B1",
+"t": "Conjunctions with subjunctive",
+"f": "Pour que, bien que, avant que, à moins que, sans que"
+},
+{
+"d": 189,
+"lv": "B1",
+"t": "Subjunctive or infinitive?",
+"f": "Je veux partir vs je veux que tu partes: same or different subject"
+},
+{
+"d": 190,
+"lv": "B1",
+"t": "Conditional past",
+"f": "J'aurais dû, tu aurais pu: regrets and gentle reproaches"
+},
+{
+"d": 191,
+"lv": "B1",
+"t": "Si + plus-que-parfait",
+"f": "Si j'avais su, je serais venu: imagining a different past"
+},
+{
+"d": 192,
+"lv": "B1",
+"t": "Talking about regrets",
+"f": "Saying kindly what you would have done differently"
+},
+{
+"d": 193,
+"lv": "B1",
+"t": "Polite criticism and suggestions",
+"f": "Tu aurais pu..., ce serait mieux si...: soft feedback"
+},
+{
+"d": 194,
+"lv": "B1",
+"t": "Futur antérieur",
+"f": "Quand j'aurai fini, je t'appellerai: completed future actions"
+},
+{
+"d": 195,
+"lv": "B1",
+"t": "Review: subjunctive and conditionals",
+"f": "Recap the subjunctive, past conditional and si clauses"
+},
+{
+"d": 196,
+"lv": "B1",
+"t": "Relative pronoun dont",
+"f": "Le livre dont je parle, l'amie dont le frère habite à Lyon"
+},
+{
+"d": 197,
+"lv": "B1",
+"t": "Ce qui, ce que, ce dont",
+"f": "Ce qui me plaît, ce que je veux, ce dont j'ai besoin"
+},
+{
+"d": 198,
+"lv": "B1",
+"t": "Lequel with prepositions",
+"f": "Auquel, duquel, avec lequel, pour laquelle"
+},
+{
+"d": 199,
+"lv": "B1",
+"t": "Passive voice",
+"f": "Le livre a été écrit par...: forming and using the passive"
+},
+{
+"d": 200,
+"lv": "B1",
+"t": "Alternatives to the passive",
+"f": "On and se faire: on m'a aidé, il s'est fait couper les cheveux"
+},
+{
+"d": 201,
+"lv": "B1",
+"t": "Reported speech: present",
+"f": "Il dit que..., elle demande si...: reporting what people say"
+},
+{
+"d": 202,
+"lv": "B1",
+"t": "Reported speech: past",
+"f": "Il a dit qu'il viendrait: tense changes in reported speech"
+},
+{
+"d": 203,
+"lv": "B1",
+"t": "Reported questions and orders",
+"f": "Il m'a demandé où..., elle m'a dit de..."
+},
+{
+"d": 204,
+"lv": "B1",
+"t": "Gérondif: en + -ant",
+"f": "En marchant, en lisant: doing two things at once and how"
+},
+{
+"d": 205,
+"lv": "B1",
+"t": "Present participle",
+"f": "Ayant, étant, les élèves parlant français: written style"
+},
+{
+"d": 206,
+"lv": "B1",
+"t": "Expressing cause",
+"f": "Parce que, car, puisque, comme, grâce à, à cause de"
+},
+{
+"d": 207,
+"lv": "B1",
+"t": "Expressing consequence",
+"f": "Donc, alors, c'est pourquoi, si bien que, du coup"
+},
+{
+"d": 208,
+"lv": "B1",
+"t": "Expressing purpose",
+"f": "Pour, afin de, pour que, afin que: saying why you do something"
+},
+{
+"d": 209,
+"lv": "B1",
+"t": "Expressing opposition",
+"f": "Mais, pourtant, cependant, alors que, tandis que"
+},
+{
+"d": 210,
+"lv": "B1",
+"t": "Concession",
+"f": "Bien que, même si, malgré, quand même"
+},
+{
+"d": 211,
+"lv": "B1",
+"t": "Structuring an argument",
+"f": "D'abord, ensuite, de plus, en revanche, enfin, bref"
+},
+{
+"d": 212,
+"lv": "B1",
+"t": "News vocabulary",
+"f": "Un article, un journal, les informations, un titre, une source"
+},
+{
+"d": 213,
+"lv": "B1",
+"t": "Summarising an article",
+"f": "Il s'agit de, l'auteur explique, en résumé"
+},
+{
+"d": 214,
+"lv": "B1",
+"t": "Work life in France",
+"f": "Les 35 heures, les congés payés, la pause déjeuner"
+},
+{
+"d": 215,
+"lv": "B1",
+"t": "Meetings at work",
+"f": "L'ordre du jour, prendre la parole, proposer, conclure"
+},
+{
+"d": 216,
+"lv": "B1",
+"t": "Professional emails",
+"f": "Je me permets de, suite à notre échange, dans l'attente de"
+},
+{
+"d": 217,
+"lv": "B1",
+"t": "Telephone at work",
+"f": "Transférer un appel, laisser un message, rappeler plus tard"
+},
+{
+"d": 218,
+"lv": "B1",
+"t": "Presenting a project",
+"f": "Introduce it, explain the stages, results and next steps"
+},
+{
+"d": 219,
+"lv": "B1",
+"t": "Review: complex sentences",
+"f": "Recap dont, the passive, reported speech and connectors"
+},
+{
+"d": 220,
+"lv": "B1",
+"t": "Education systems",
+"f": "L'école maternelle, le collège, le lycée, le bac, les grandes écoles"
+},
+{
+"d": 221,
+"lv": "B1",
+"t": "Learning languages",
+"f": "Talking about methods, motivation and progress"
+},
+{
+"d": 222,
+"lv": "B1",
+"t": "Health and well-being",
+"f": "Le stress, le sommeil, la détente, prendre soin de soi"
+},
+{
+"d": 223,
+"lv": "B1",
+"t": "At the doctor in detail",
+"f": "Describe symptoms precisely and understand general advice"
+},
+{
+"d": 224,
+"lv": "B1",
+"t": "Sustainable living",
+"f": "Consommer local, réduire ses déchets, le vélo en ville"
+},
+{
+"d": 225,
+"lv": "B1",
+"t": "Climate and nature",
+"f": "Le réchauffement climatique, la biodiversité, protéger la nature"
+},
+{
+"d": 226,
+"lv": "B1",
+"t": "Volunteering and solidarity",
+"f": "Faire du bénévolat, une association, aider les autres"
+},
+{
+"d": 227,
+"lv": "B1",
+"t": "Cities of the francophonie",
+"f": "Montréal, Bruxelles, Genève, Dakar and Marseille compared"
+},
+{
+"d": 228,
+"lv": "B1",
+"t": "Québec French",
+"f": "Magasiner, la fin de semaine, un char: words from Québec"
+},
+{
+"d": 229,
+"lv": "B1",
+"t": "Belgian and Swiss French",
+"f": "Septante, nonante, déjeuner and dîner: regional differences"
+},
+{
+"d": 230,
+"lv": "B1",
+"t": "French history highlights",
+"f": "Key moments from Charlemagne to the Revolution and the Belle Époque"
+},
+{
+"d": 231,
+"lv": "B1",
+"t": "French art and museums",
+"f": "Le Louvre, the Impressionists, Monet and Rodin"
+},
+{
+"d": 232,
+"lv": "B1",
+"t": "French literature classics",
+"f": "Victor Hugo, Molière, Saint-Exupéry and Le Petit Prince"
+},
+{
+"d": 233,
+"lv": "B1",
+"t": "French cinema",
+"f": "La Nouvelle Vague, Amélie, Intouchables and talking about films"
+},
+{
+"d": 234,
+"lv": "B1",
+"t": "French songs",
+"f": "Édith Piaf, Jacques Brel, Stromae: music and lyrics"
+},
+{
+"d": 235,
+"lv": "B1",
+"t": "Describing a film or book",
+"f": "Plot, characters, ça raconte l'histoire de, je le recommande"
+},
+{
+"d": 236,
+"lv": "B1",
+"t": "Writing a review",
+"f": "Positive and negative critique: un chef-d'œuvre, décevant"
+},
+{
+"d": 237,
+"lv": "B1",
+"t": "Idioms with food",
+"f": "Avoir la pêche, raconter des salades, ce n'est pas ma tasse de thé"
+},
+{
+"d": 238,
+"lv": "B1",
+"t": "Idioms with animals",
+"f": "Avoir un chat dans la gorge, poser un lapin, avoir une faim de loup"
+},
+{
+"d": 239,
+"lv": "B1",
+"t": "Idioms with body parts",
+"f": "Coûter les yeux de la tête, avoir le bras long, casser les pieds"
+},
+{
+"d": 240,
+"lv": "B1",
+"t": "Expressing surprise",
+"f": "Ça alors! Sans blague? Je n'en reviens pas!"
+},
+{
+"d": 241,
+"lv": "B1",
+"t": "Enthusiasm and disappointment",
+"f": "C'est génial! Quel dommage! Je suis un peu déçu"
+},
+{
+"d": 242,
+"lv": "B1",
+"t": "Expressing annoyance politely",
+"f": "Ça m'agace, j'en ai marre, ça me dérange un peu"
+},
+{
+"d": 243,
+"lv": "B1",
+"t": "Encouraging and reassuring",
+"f": "Ne t'inquiète pas, ça va aller, bon courage, tu vas y arriver"
+},
+{
+"d": 244,
+"lv": "B1",
+"t": "Review: culture and expressions",
+"f": "Recap idioms, emotions and cultural topics in a chat"
+},
+{
+"d": 245,
+"lv": "B1",
+"t": "Prefixes and suffixes",
+"f": "Re-, dé-, in-, -able, -ment, -tion: guessing new words"
+},
+{
+"d": 246,
+"lv": "B1",
+"t": "Word families",
+"f": "Travailler, le travail, un travailleur: building vocabulary"
+},
+{
+"d": 247,
+"lv": "B1",
+"t": "Nominalisation",
+"f": "Arriver becomes l'arrivée, décider becomes la décision"
+},
+{
+"d": 248,
+"lv": "B1",
+"t": "Synonyms to enrich speech",
+"f": "Replace dire, faire, avoir and chose with precise words"
+},
+{
+"d": 249,
+"lv": "B1",
+"t": "Verbs of saying",
+"f": "Affirmer, expliquer, préciser, ajouter, répondre, avouer"
+},
+{
+"d": 250,
+"lv": "B1",
+"t": "Verbs of movement with avoir",
+"f": "Monter, descendre, sortir, rentrer with avoir or être"
+},
+{
+"d": 251,
+"lv": "B1",
+"t": "Faire + infinitive",
+"f": "Faire réparer, faire faire: having something done"
+},
+{
+"d": 252,
+"lv": "B1",
+"t": "Laisser, voir, entendre + infinitive",
+"f": "Je le laisse partir, je l'entends chanter"
+},
+{
+"d": 253,
+"lv": "B1",
+"t": "Pronominal verbs: meanings",
+"f": "Reflexive, reciprocal and idiomatic: s'en aller, se rendre compte"
+},
+{
+"d": 254,
+"lv": "B1",
+"t": "Participle agreement with avoir",
+"f": "Les fleurs que j'ai achetées: when the participle agrees"
+},
+{
+"d": 255,
+"lv": "B1",
+"t": "Negations in depth",
+"f": "Ne... que, ne... ni... ni, ne... aucun, ne... nulle part"
+},
+{
+"d": 256,
+"lv": "B1",
+"t": "Indefinite adjectives and pronouns",
+"f": "Certains, plusieurs, quelques, n'importe qui, n'importe quoi"
+},
+{
+"d": 257,
+"lv": "B1",
+"t": "Expressing hypothesis",
+"f": "Au cas où, à condition que, en supposant que"
+},
+{
+"d": 258,
+"lv": "B1",
+"t": "Telling an anecdote",
+"f": "A hook, vivid details, a climax and a funny ending"
+},
+{
+"d": 259,
+"lv": "B1",
+"t": "Debating: making a point",
+"f": "Je soutiens que, il est évident que, on ne peut pas nier que"
+},
+{
+"d": 260,
+"lv": "B1",
+"t": "Debating: responding",
+"f": "Certes... mais, je comprends ton point de vue, au contraire"
+},
+{
+"d": 261,
+"lv": "B1",
+"t": "Social media and society",
+"f": "Les influenceurs, le temps d'écran, les fausses informations"
+},
+{
+"d": 262,
+"lv": "B1",
+"t": "Technology and the future",
+"f": "L'intelligence artificielle, les robots, le télétravail"
+},
+{
+"d": 263,
+"lv": "B1",
+"t": "Travel planning in depth",
+"f": "Itinéraire, hébergement, budget and the unexpected"
+},
+{
+"d": 264,
+"lv": "B1",
+"t": "Solving a travel problem",
+"f": "Vol annulé, bagage perdu and making a polite claim"
+},
+{
+"d": 265,
+"lv": "B1",
+"t": "Renting and contracts",
+"f": "Le bail, l'état des lieux, la caution, résilier"
+},
+{
+"d": 266,
+"lv": "B1",
+"t": "Banking basics",
+"f": "Ouvrir un compte, un virement, une carte bancaire, un RIB"
+},
+{
+"d": 267,
+"lv": "B1",
+"t": "Paperwork in France",
+"f": "Les démarches, un formulaire, une pièce d'identité, un rendez-vous"
+},
+{
+"d": 268,
+"lv": "B1",
+"t": "Formal letters",
+"f": "Objet, formules d'appel and complete formules de politesse"
+},
+{
+"d": 269,
+"lv": "B1",
+"t": "Writing an opinion paragraph",
+"f": "A thesis, two arguments, an example and a conclusion"
+},
+{
+"d": 270,
+"lv": "B1",
+"t": "Sports and the Olympics",
+"f": "Les Jeux olympiques, un champion, une compétition, s'entraîner"
+},
+{
+"d": 271,
+"lv": "B1",
+"t": "Gastronomy and wine regions",
+"f": "French gastronomy, AOC, terroir, Bordeaux and Bourgogne"
+},
+{
+"d": 272,
+"lv": "B1",
+"t": "Cooking conversation",
+"f": "Mijoter, faire revenir, assaisonner: talking like a cook"
+},
+{
+"d": 273,
+"lv": "B1",
+"t": "Fashion and style",
+"f": "La haute couture, s'habiller, être à la mode, avoir du style"
+},
+{
+"d": 274,
+"lv": "B1",
+"t": "Describing feelings in depth",
+"f": "Ému, soulagé, gêné, fier, nostalgique, reconnaissant"
+},
+{
+"d": 275,
+"lv": "B1",
+"t": "Friendship and conflict",
+"f": "Se réconcilier, s'excuser, garder le contact"
+},
+{
+"d": 276,
+"lv": "B1",
+"t": "Futur proche vs futur simple",
+"f": "The nuance between near plans and longer-term predictions"
+},
+{
+"d": 277,
+"lv": "B1",
+"t": "Advanced time expressions",
+"f": "Dès que, aussitôt que, tant que, au fur et à mesure"
+},
+{
+"d": 278,
+"lv": "B1",
+"t": "Spoken vs written French",
+"f": "Registers familier, courant and soutenu with examples"
+},
+{
+"d": 279,
+"lv": "B1",
+"t": "Preparing a B1 style talk",
+"f": "Monologue structure and handling follow-up questions"
+},
+{
+"d": 280,
+"lv": "B1",
+"t": "Review: B1 checkpoint",
+"f": "Recap all of B1 with a debate and a personal story"
+},
+{
+"d": 281,
+"lv": "B2",
+"t": "Passé simple: recognising it",
+"f": "Il fut, elle alla, ils firent: the literary past in books"
+},
+{
+"d": 282,
+"lv": "B2",
+"t": "Reading literary French",
+"f": "Passé simple and imparfait together in stories and fairy tales"
+},
+{
+"d": 283,
+"lv": "B2",
+"t": "Subjonctif passé",
+"f": "Je suis content que tu sois venu: completed actions in the subjunctive"
+},
+{
+"d": 284,
+"lv": "B2",
+"t": "Subjunctive in relative clauses",
+"f": "Je cherche quelqu'un qui puisse m'aider: expressing uncertainty"
+},
+{
+"d": 285,
+"lv": "B2",
+"t": "Subjunctive after superlatives",
+"f": "C'est le meilleur film que j'aie jamais vu"
+},
+{
+"d": 286,
+"lv": "B2",
+"t": "Conditional for unconfirmed news",
+"f": "Le train serait en retard: the journalistic conditional"
+},
+{
+"d": 287,
+"lv": "B2",
+"t": "Mixed conditionals",
+"f": "Si j'avais étudié, je parlerais mieux aujourd'hui"
+},
+{
+"d": 288,
+"lv": "B2",
+"t": "Infinitif passé",
+"f": "Après avoir mangé, après être parti: sequencing actions"
+},
+{
+"d": 289,
+"lv": "B2",
+"t": "Compound participle",
+"f": "Ayant terminé, étant arrivé: formal written style"
+},
+{
+"d": 290,
+"lv": "B2",
+"t": "Sequence of tenses",
+"f": "Matching tenses correctly in complex sentences"
+},
+{
+"d": 291,
+"lv": "B2",
+"t": "Inversion in formal French",
+"f": "Peut-être viendra-t-il, aussi, ainsi: formal word order"
+},
+{
+"d": 292,
+"lv": "B2",
+"t": "Emphasis: c'est... qui, c'est... que",
+"f": "C'est lui qui a gagné: highlighting information"
+},
+{
+"d": 293,
+"lv": "B2",
+"t": "Dislocation in speech",
+"f": "Moi, le café, je l'adore: emphasis in spoken French"
+},
+{
+"d": 294,
+"lv": "B2",
+"t": "Advanced connectors",
+"f": "Néanmoins, en outre, par ailleurs, dès lors, en effet"
+},
+{
+"d": 295,
+"lv": "B2",
+"t": "Review: advanced grammar",
+"f": "Recap literary tenses, subjunctive nuances and emphasis"
+},
+{
+"d": 296,
+"lv": "B2",
+"t": "Formal register",
+"f": "Vocabulary and structures of le français soutenu"
+},
+{
+"d": 297,
+"lv": "B2",
+"t": "Nuancing your opinion",
+"f": "Il me semble que, dans une certaine mesure, plutôt"
+},
+{
+"d": 298,
+"lv": "B2",
+"t": "Hedging and politeness",
+"f": "Je me demandais si, auriez-vous l'amabilité de"
+},
+{
+"d": 299,
+"lv": "B2",
+"t": "Persuasion techniques",
+"f": "Rhetorical questions, examples and appeals to shared values"
+},
+{
+"d": 300,
+"lv": "B2",
+"t": "Writing an essay: introduction",
+"f": "Accroche, problématique and annonce du plan"
+},
+{
+"d": 301,
+"lv": "B2",
+"t": "Writing an essay: body",
+"f": "Arguments, examples and transitions between parts"
+},
+{
+"d": 302,
+"lv": "B2",
+"t": "Writing an essay: conclusion",
+"f": "Synthèse and ouverture: ending with a broader view"
+},
+{
+"d": 303,
+"lv": "B2",
+"t": "Formal letter of complaint",
+"f": "Structure, tone and firm but polite language"
+},
+{
+"d": 304,
+"lv": "B2",
+"t": "Cover letter in French",
+"f": "La lettre de motivation: the vous, moi, nous structure"
+},
+{
+"d": 305,
+"lv": "B2",
+"t": "Job interview advanced",
+"f": "Parlez-moi de vous, vos points faibles, vos ambitions"
+},
+{
+"d": 306,
+"lv": "B2",
+"t": "Negotiating",
+"f": "Faire une offre, trouver un compromis, conclure un accord"
+},
+{
+"d": 307,
+"lv": "B2",
+"t": "Leading a meeting",
+"f": "Animer, donner la parole, recadrer, faire le point"
+},
+{
+"d": 308,
+"lv": "B2",
+"t": "Giving a presentation",
+"f": "Captivate the audience, illustrate and answer questions"
+},
+{
+"d": 309,
+"lv": "B2",
+"t": "Economy vocabulary",
+"f": "La croissance, l'emploi, le pouvoir d'achat, une entreprise"
+},
+{
+"d": 310,
+"lv": "B2",
+"t": "Science and research",
+"f": "Une étude, une hypothèse, une découverte, prouver"
+},
+{
+"d": 311,
+"lv": "B2",
+"t": "Health and society",
+"f": "Le système de santé, la prévention, la Sécurité sociale"
+},
+{
+"d": 312,
+"lv": "B2",
+"t": "Cities and urban planning",
+"f": "L'aménagement, les transports en commun, les espaces verts"
+},
+{
+"d": 313,
+"lv": "B2",
+"t": "Media literacy",
+"f": "Vérifier une source, l'objectivité, le parti pris"
+},
+{
+"d": 314,
+"lv": "B2",
+"t": "Ethics of technology",
+"f": "Données personnelles, vie privée, algorithmes"
+},
+{
+"d": 315,
+"lv": "B2",
+"t": "Review: argumentation and work",
+"f": "Recap essays, formal letters and professional talk"
+},
+{
+"d": 316,
+"lv": "B2",
+"t": "Idioms: everyday life",
+"f": "Mettre son grain de sel, tomber dans les pommes, avoir le cafard"
+},
+{
+"d": 317,
+"lv": "B2",
+"t": "Idioms: work and effort",
+"f": "Mettre la main à la pâte, avoir du pain sur la planche"
+},
+{
+"d": 318,
+"lv": "B2",
+"t": "Idioms: talking and thinking",
+"f": "Tourner autour du pot, avoir la tête dans les nuages"
+},
+{
+"d": 319,
+"lv": "B2",
+"t": "Proverbs",
+"f": "Petit à petit, l'oiseau fait son nid; qui vivra verra"
+},
+{
+"d": 320,
+"lv": "B2",
+"t": "Verlan and youth slang",
+"f": "Ouf, chelou, relou, meuf: how verlan works"
+},
+{
+"d": 321,
+"lv": "B2",
+"t": "Familiar words",
+"f": "Le boulot, la bagnole, les fringues, le fric"
+},
+{
+"d": 322,
+"lv": "B2",
+"t": "Humour and wordplay",
+"f": "Jeux de mots, calembours and what makes the French laugh"
+},
+{
+"d": 323,
+"lv": "B2",
+"t": "Regional accents",
+"f": "Accents of Marseille, Québec, Belgium and West Africa"
+},
+{
+"d": 324,
+"lv": "B2",
+"t": "French in Africa",
+"f": "Dakar, Abidjan, Kinshasa: a rich and growing French"
+},
+{
+"d": 325,
+"lv": "B2",
+"t": "French overseas",
+"f": "Martinique, Guadeloupe, La Réunion and Nouvelle-Calédonie"
+},
+{
+"d": 326,
+"lv": "B2",
+"t": "Gender-inclusive French",
+"f": "Feminine job titles like autrice and écriture inclusive"
+},
+{
+"d": 327,
+"lv": "B2",
+"t": "Anglicisms in French",
+"f": "Le week-end, le parking, faire du shopping and French alternatives"
+},
+{
+"d": 328,
+"lv": "B2",
+"t": "Homophones",
+"f": "Ver, verre, vert, vers: words that sound the same"
+},
+{
+"d": 329,
+"lv": "B2",
+"t": "Common spelling traps",
+"f": "A or à, ou or où, ses or ces, -é or -er"
+},
+{
+"d": 330,
+"lv": "B2",
+"t": "Review: language variety",
+"f": "Recap idioms, slang, regional French and spelling"
+},
+{
+"d": 331,
+"lv": "B2",
+"t": "Philosophy café",
+"f": "Descartes, Rousseau, Simone de Beauvoir and big questions"
+},
+{
+"d": 332,
+"lv": "B2",
+"t": "Discussing art",
+"f": "Une œuvre, un mouvement, la technique, ce qui m'émeut"
+},
+{
+"d": 333,
+"lv": "B2",
+"t": "Architecture and heritage",
+"f": "Cathedrals, châteaux, Haussmann and le patrimoine"
+},
+{
+"d": 334,
+"lv": "B2",
+"t": "Poetry",
+"f": "Baudelaire, Verlaine, Prévert: reading a short poem"
+},
+{
+"d": 335,
+"lv": "B2",
+"t": "Theatre",
+"f": "Molière, Racine, la scène, la mise en scène, les répliques"
+},
+{
+"d": 336,
+"lv": "B2",
+"t": "Comics: la bande dessinée",
+"f": "Tintin, Astérix and the ninth art"
+},
+{
+"d": 337,
+"lv": "B2",
+"t": "Gastronomy as heritage",
+"f": "The French gastronomic meal on the UNESCO list and savoir-vivre"
+},
+{
+"d": 338,
+"lv": "B2",
+"t": "Everyday French customs",
+"f": "The obligatory bonjour, politeness codes and la bise"
+},
+{
+"d": 339,
+"lv": "B2",
+"t": "Cultural differences",
+"f": "Workplace customs, greetings and directness compared"
+},
+{
+"d": 340,
+"lv": "B2",
+"t": "Living in a French-speaking country",
+"f": "Settling in, making friends and adapting to habits"
+},
+{
+"d": 341,
+"lv": "B2",
+"t": "Interpreting statistics",
+"f": "La moitié, un tiers, augmenter de, une baisse de"
+},
+{
+"d": 342,
+"lv": "B2",
+"t": "Describing trends",
+"f": "Une hausse, se stabiliser, chuter, progresser"
+},
+{
+"d": 343,
+"lv": "B2",
+"t": "Cause and effect in depth",
+"f": "Entraîner, provoquer, découler de, être dû à"
+},
+{
+"d": 344,
+"lv": "B2",
+"t": "Precise vocabulary",
+"f": "Replacing vague words with nuanced verbs and adjectives"
+},
+{
+"d": 345,
+"lv": "B2",
+"t": "Review: culture and analysis",
+"f": "Recap art, culture and data vocabulary"
+},
+{
+"d": 346,
+"lv": "B2",
+"t": "Listening: radio and podcasts",
+"f": "Strategies for long, fast audio and note-taking"
+},
+{
+"d": 347,
+"lv": "B2",
+"t": "Reading the press",
+"f": "Headlines, editorials and journalistic style"
+},
+{
+"d": 348,
+"lv": "B2",
+"t": "Debate: work and leisure",
+"f": "Should we work less? Arguments and counter-arguments"
+},
+{
+"d": 349,
+"lv": "B2",
+"t": "Debate: city and environment",
+"f": "Cars in city centres, green spaces, public transport"
+},
+{
+"d": 350,
+"lv": "B2",
+"t": "Debate: education",
+"f": "School, homework and online learning: argue both sides"
+},
+{
+"d": 351,
+"lv": "B2",
+"t": "Debate: technology",
+"f": "Screens, AI and privacy: arguing with nuance"
+},
+{
+"d": 352,
+"lv": "B2",
+"t": "Storytelling with style",
+"f": "Rhythm, suspense and dialogue in a vivid personal story"
+},
+{
+"d": 353,
+"lv": "B2",
+"t": "Paraphrasing",
+"f": "Autrement dit, c'est-à-dire: saying things another way"
+},
+{
+"d": 354,
+"lv": "B2",
+"t": "Summarising long texts",
+"f": "Keep the essentials, reformulate and connect ideas"
+},
+{
+"d": 355,
+"lv": "B2",
+"t": "Synthesis of documents",
+"f": "Combining several sources into one clear text"
+},
+{
+"d": 356,
+"lv": "B2",
+"t": "Spontaneous speaking",
+"f": "Reacting fast, gaining time and filling gaps with style"
+},
+{
+"d": 357,
+"lv": "B2",
+"t": "Phone and video calls pro",
+"f": "Handling glitches, interrupting and clarifying politely"
+},
+{
+"d": 358,
+"lv": "B2",
+"t": "Mediation",
+"f": "Explaining a text to someone else in simple words"
+},
+{
+"d": 359,
+"lv": "B2",
+"t": "Error clinic: common B2 mistakes",
+"f": "Fixing the most frequent mistakes of advanced learners"
+},
+{
+"d": 360,
+"lv": "B2",
+"t": "Pronunciation polish",
+"f": "Nasal vowels, the French r, u versus ou and intonation"
+},
+{
+"d": 361,
+"lv": "B2",
+"t": "Preparing a B2 style exam",
+"f": "Formats for listening, reading, writing and speaking"
+},
+{
+"d": 362,
+"lv": "B2",
+"t": "Mock oral exam",
+"f": "Present and defend a point of view for ten minutes"
+},
+{
+"d": 363,
+"lv": "B2",
+"t": "Your French journey",
+"f": "Reflect on your progress using past, present and future"
+},
+{
+"d": 364,
+"lv": "B2",
+"t": "Keeping French alive",
+"f": "Habits, books, series and friends to keep improving"
+},
+{
+"d": 365,
+"lv": "B2",
+"t": "Final review: B2 celebration",
+"f": "Celebrate the year with a full conversation on any topic"
+}
+]
+}

@@ -1,0 +1,1305 @@
+{
+"topic": "nature_trips",
+"questions": [
+{
+"id": "nature_trips-001",
+"lv": "any",
+"i18n": {
+"en": "What's the most beautiful place in nature you've ever seen?",
+"de": "Was ist der schönste Ort in der Natur, den du je gesehen hast?",
+"es": "¿Cuál es el lugar natural más bonito que has visto?",
+"fr": "Quel est le plus bel endroit naturel que tu aies jamais vu ?",
+"it": "Qual è il posto più bello nella natura che tu abbia mai visto?",
+"pt": "Qual é o lugar mais bonito na natureza que já viste?",
+"pt_BR": "Qual é o lugar mais bonito na natureza que você já viu?"
+}
+},
+{
+"id": "nature_trips-002",
+"lv": "any",
+"i18n": {
+"en": "Are you more of a beach person or a mountain person?",
+"de": "Bist du eher ein Strand- oder ein Bergmensch?",
+"es": "¿Eres más de playa o de montaña?",
+"fr": "Tu es plutôt plage ou montagne ?",
+"it": "Sei più tipo da mare o da montagna?",
+"pt": "És mais de praia ou de montanha?",
+"pt_BR": "Você é mais de praia ou de montanha?"
+}
+},
+{
+"id": "nature_trips-003",
+"lv": "any",
+"i18n": {
+"en": "Which national park would you love to visit one day?",
+"de": "Welchen Nationalpark würdest du gern eines Tages besuchen?",
+"es": "¿Qué parque nacional te encantaría visitar algún día?",
+"fr": "Quel parc national aimerais-tu visiter un jour ?",
+"it": "Quale parco nazionale ti piacerebbe visitare un giorno?",
+"pt": "Que parque nacional gostavas de visitar um dia?",
+"pt_BR": "Qual parque nacional você adoraria visitar um dia?"
+}
+},
+{
+"id": "nature_trips-004",
+"lv": "any",
+"i18n": {
+"en": "What did nature trips look like in your childhood?",
+"de": "Wie sahen Ausflüge in die Natur in deiner Kindheit aus?",
+"es": "¿Cómo eran las excursiones a la naturaleza en tu infancia?",
+"fr": "À quoi ressemblaient les sorties nature de ton enfance ?",
+"it": "Com'erano le gite nella natura quando eri piccolo?",
+"pt": "Como eram os passeios na natureza na tua infância?",
+"pt_BR": "Como eram os passeios na natureza na sua infância?"
+}
+},
+{
+"id": "nature_trips-005",
+"lv": "any",
+"i18n": {
+"en": "How does spending time outdoors make you feel?",
+"de": "Wie fühlst du dich, wenn du Zeit draußen verbringst?",
+"es": "¿Cómo te sientes cuando pasas tiempo al aire libre?",
+"fr": "Comment te sens-tu quand tu passes du temps dehors ?",
+"it": "Come ti senti quando passi del tempo all'aria aperta?",
+"pt": "Como te sentes quando passas tempo ao ar livre?",
+"pt_BR": "Como você se sente quando passa um tempo ao ar livre?"
+}
+},
+{
+"id": "nature_trips-006",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite season for being in nature, and why?",
+"de": "Was ist deine liebste Jahreszeit für die Natur, und warum?",
+"es": "¿Cuál es tu estación favorita para estar en la naturaleza y por qué?",
+"fr": "Quelle est ta saison préférée pour profiter de la nature, et pourquoi ?",
+"it": "Qual è la tua stagione preferita per stare nella natura, e perché?",
+"pt": "Qual é a tua estação preferida para estar na natureza e porquê?",
+"pt_BR": "Qual é sua estação favorita para curtir a natureza, e por quê?"
+}
+},
+{
+"id": "nature_trips-007",
+"lv": "any",
+"i18n": {
+"en": "Which animal would you most love to see in the wild?",
+"de": "Welches Tier würdest du am liebsten in freier Wildbahn sehen?",
+"es": "¿Qué animal te encantaría ver en libertad?",
+"fr": "Quel animal rêverais-tu de voir à l'état sauvage ?",
+"it": "Quale animale ti piacerebbe di più vedere in natura?",
+"pt": "Que animal mais gostavas de ver em liberdade?",
+"pt_BR": "Qual animal você mais adoraria ver na natureza?"
+}
+},
+{
+"id": "nature_trips-008",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer quiet trails or popular viewpoints?",
+"de": "Magst du lieber ruhige Wege oder beliebte Aussichtspunkte?",
+"es": "¿Prefieres senderos tranquilos o miradores populares?",
+"fr": "Préfères-tu les sentiers tranquilles ou les points de vue populaires ?",
+"it": "Preferisci sentieri tranquilli o punti panoramici famosi?",
+"pt": "Preferes trilhos sossegados ou miradouros populares?",
+"pt_BR": "Você prefere trilhas tranquilas ou mirantes famosos?"
+}
+},
+{
+"id": "nature_trips-009",
+"lv": "any",
+"i18n": {
+"en": "What's the best sunrise or sunset you've ever watched outdoors?",
+"de": "Was war der schönste Sonnenaufgang oder -untergang, den du draußen erlebt hast?",
+"es": "¿Cuál es el mejor amanecer o atardecer que has visto al aire libre?",
+"fr": "Quel est le plus beau lever ou coucher de soleil que tu aies vu dehors ?",
+"it": "Qual è l'alba o il tramonto più bello che hai visto all'aperto?",
+"pt": "Qual foi o nascer ou pôr do sol mais bonito que viste ao ar livre?",
+"pt_BR": "Qual foi o nascer ou pôr do sol mais bonito que você já viu ao ar livre?"
+}
+},
+{
+"id": "nature_trips-010",
+"lv": "any",
+"i18n": {
+"en": "Who do you usually go on nature trips with?",
+"de": "Mit wem machst du normalerweise Ausflüge in die Natur?",
+"es": "¿Con quién sueles ir de excursión a la naturaleza?",
+"fr": "Avec qui pars-tu d'habitude en balade dans la nature ?",
+"it": "Con chi vai di solito nelle gite in natura?",
+"pt": "Com quem costumas fazer passeios na natureza?",
+"pt_BR": "Com quem você costuma fazer passeios na natureza?"
+}
+},
+{
+"id": "nature_trips-011",
+"lv": "any",
+"i18n": {
+"en": "Is there a nature spot near your home that you love?",
+"de": "Gibt es in der Nähe deines Zuhauses einen Naturort, den du liebst?",
+"es": "¿Hay algún rincón natural cerca de tu casa que te encante?",
+"fr": "Y a-t-il un coin de nature près de chez toi que tu adores ?",
+"it": "C'è un angolo di natura vicino a casa tua che ami?",
+"pt": "Há algum recanto natural perto de casa de que gostes muito?",
+"pt_BR": "Tem algum cantinho de natureza perto da sua casa que você ama?"
+}
+},
+{
+"id": "nature_trips-012",
+"lv": "any",
+"i18n": {
+"en": "Lakes, rivers or the sea: which water do you love most?",
+"de": "See, Fluss oder Meer: Welches Wasser liebst du am meisten?",
+"es": "Lagos, ríos o mar: ¿qué agua te gusta más?",
+"fr": "Lacs, rivières ou mer : quelle eau préfères-tu ?",
+"it": "Laghi, fiumi o mare: quale acqua ami di più?",
+"pt": "Lagos, rios ou mar: de que água gostas mais?",
+"pt_BR": "Lagos, rios ou mar: de qual água você mais gosta?"
+}
+},
+{
+"id": "nature_trips-013",
+"lv": "any",
+"i18n": {
+"en": "What's the longest walk you've ever done in nature?",
+"de": "Was war die längste Wanderung, die du je in der Natur gemacht hast?",
+"es": "¿Cuál es la caminata más larga que has hecho en la naturaleza?",
+"fr": "Quelle est la plus longue marche que tu aies faite en pleine nature ?",
+"it": "Qual è la camminata più lunga che hai mai fatto nella natura?",
+"pt": "Qual foi a caminhada mais longa que já fizeste na natureza?",
+"pt_BR": "Qual foi a caminhada mais longa que você já fez na natureza?"
+}
+},
+{
+"id": "nature_trips-014",
+"lv": "any",
+"i18n": {
+"en": "Would you rather explore a rainforest, a desert or a glacier?",
+"de": "Würdest du lieber einen Regenwald, eine Wüste oder einen Gletscher erkunden?",
+"es": "¿Preferirías explorar una selva, un desierto o un glaciar?",
+"fr": "Tu préférerais explorer une forêt tropicale, un désert ou un glacier ?",
+"it": "Preferiresti esplorare una foresta pluviale, un deserto o un ghiacciaio?",
+"pt": "Preferias explorar uma floresta tropical, um deserto ou um glaciar?",
+"pt_BR": "Você preferiria explorar uma floresta tropical, um deserto ou uma geleira?"
+}
+},
+{
+"id": "nature_trips-015",
+"lv": "any",
+"i18n": {
+"en": "What's one thing you always bring on a nature trip?",
+"de": "Was nimmst du auf jeden Naturausflug mit?",
+"es": "¿Qué es lo que nunca falta en tu mochila en una excursión?",
+"fr": "Quel objet emportes-tu toujours en sortie nature ?",
+"it": "Qual è una cosa che porti sempre in una gita nella natura?",
+"pt": "Que coisa levas sempre num passeio pela natureza?",
+"pt_BR": "O que você sempre leva num passeio na natureza?"
+}
+},
+{
+"id": "nature_trips-016",
+"lv": "any",
+"i18n": {
+"en": "Have you ever seen a wild animal up close by surprise? What happened?",
+"de": "Hast du schon mal überraschend ein wildes Tier aus der Nähe gesehen? Was ist passiert?",
+"es": "¿Alguna vez has visto un animal salvaje de cerca por sorpresa? ¿Qué pasó?",
+"fr": "As-tu déjà croisé un animal sauvage de près par surprise ? Que s'est-il passé ?",
+"it": "Ti è mai capitato di vedere da vicino un animale selvatico all'improvviso? Cos'è successo?",
+"pt": "Já viste um animal selvagem de perto por surpresa? O que aconteceu?",
+"pt_BR": "Você já viu um animal selvagem de perto de surpresa? O que aconteceu?"
+}
+},
+{
+"id": "nature_trips-017",
+"lv": "any",
+"i18n": {
+"en": "Do you take lots of photos in nature or prefer to just enjoy the moment?",
+"de": "Machst du in der Natur viele Fotos oder genießt du lieber einfach den Moment?",
+"es": "¿Haces muchas fotos en la naturaleza o prefieres disfrutar del momento?",
+"fr": "Prends-tu beaucoup de photos dans la nature ou préfères-tu profiter du moment ?",
+"it": "Fai tante foto nella natura o preferisci goderti il momento?",
+"pt": "Tiras muitas fotografias na natureza ou preferes aproveitar o momento?",
+"pt_BR": "Você tira muitas fotos na natureza ou prefere só curtir o momento?"
+}
+},
+{
+"id": "nature_trips-018",
+"lv": "any",
+"i18n": {
+"en": "What's your dream beach like?",
+"de": "Wie sieht dein Traumstrand aus?",
+"es": "¿Cómo es tu playa soñada?",
+"fr": "À quoi ressemble ta plage de rêve ?",
+"it": "Com'è la tua spiaggia dei sogni?",
+"pt": "Como é a tua praia de sonho?",
+"pt_BR": "Como é a sua praia dos sonhos?"
+}
+},
+{
+"id": "nature_trips-019",
+"lv": "any",
+"i18n": {
+"en": "Which mountain range would you love to explore?",
+"de": "Welches Gebirge würdest du gern erkunden?",
+"es": "¿Qué cordillera te encantaría explorar?",
+"fr": "Quelle chaîne de montagnes aimerais-tu explorer ?",
+"it": "Quale catena montuosa ti piacerebbe esplorare?",
+"pt": "Que cordilheira gostavas de explorar?",
+"pt_BR": "Qual cordilheira você adoraria explorar?"
+}
+},
+{
+"id": "nature_trips-020",
+"lv": "any",
+"i18n": {
+"en": "What sound of nature do you love most?",
+"de": "Welches Geräusch der Natur liebst du am meisten?",
+"es": "¿Qué sonido de la naturaleza te gusta más?",
+"fr": "Quel son de la nature préfères-tu ?",
+"it": "Qual è il suono della natura che ami di più?",
+"pt": "Qual é o som da natureza de que mais gostas?",
+"pt_BR": "Qual som da natureza você mais ama?"
+}
+},
+{
+"id": "nature_trips-021",
+"lv": "any",
+"i18n": {
+"en": "Have you ever slept under the stars? How was it?",
+"de": "Hast du schon mal unter freiem Himmel geschlafen? Wie war es?",
+"es": "¿Alguna vez has dormido bajo las estrellas? ¿Qué tal fue?",
+"fr": "As-tu déjà dormi à la belle étoile ? C'était comment ?",
+"it": "Hai mai dormito sotto le stelle? Com'è stato?",
+"pt": "Já dormiste debaixo das estrelas? Como foi?",
+"pt_BR": "Você já dormiu sob as estrelas? Como foi?"
+}
+},
+{
+"id": "nature_trips-022",
+"lv": "any",
+"i18n": {
+"en": "What's a nature place in your country that visitors often miss?",
+"de": "Welchen Naturort in deinem Land übersehen Besucher oft?",
+"es": "¿Qué lugar natural de tu país suelen pasar por alto los visitantes?",
+"fr": "Quel site naturel de ton pays les visiteurs ratent-ils souvent ?",
+"it": "Quale luogo naturale del tuo paese i visitatori spesso non conoscono?",
+"pt": "Que lugar natural do teu país os visitantes costumam perder?",
+"pt_BR": "Qual lugar natural do seu país os visitantes costumam deixar passar?"
+}
+},
+{
+"id": "nature_trips-023",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy swimming in the sea, in lakes or not at all?",
+"de": "Schwimmst du gern im Meer, im See oder gar nicht?",
+"es": "¿Te gusta nadar en el mar, en lagos o nada de nada?",
+"fr": "Aimes-tu nager dans la mer, dans les lacs ou pas du tout ?",
+"it": "Ti piace nuotare al mare, nei laghi o per niente?",
+"pt": "Gostas de nadar no mar, em lagos ou nada disso?",
+"pt_BR": "Você gosta de nadar no mar, em lagos ou nem curte?"
+}
+},
+{
+"id": "nature_trips-024",
+"lv": "any",
+"i18n": {
+"en": "Which waterfall, real or dreamed, would you love to stand under?",
+"de": "Unter welchem Wasserfall, echt oder erträumt, würdest du gern stehen?",
+"es": "¿Bajo qué cascada, real o soñada, te encantaría estar?",
+"fr": "Sous quelle cascade, réelle ou rêvée, aimerais-tu te tenir ?",
+"it": "Sotto quale cascata, reale o sognata, ti piacerebbe stare?",
+"pt": "Debaixo de que cascata, real ou sonhada, gostavas de estar?",
+"pt_BR": "Debaixo de qual cachoeira, real ou sonhada, você adoraria ficar?"
+}
+},
+{
+"id": "nature_trips-025",
+"lv": "any",
+"i18n": {
+"en": "How do you relax after a long day outdoors?",
+"de": "Wie entspannst du dich nach einem langen Tag draußen?",
+"es": "¿Cómo te relajas después de un largo día al aire libre?",
+"fr": "Comment te détends-tu après une longue journée dehors ?",
+"it": "Come ti rilassi dopo una lunga giornata all'aperto?",
+"pt": "Como relaxas depois de um longo dia ao ar livre?",
+"pt_BR": "Como você relaxa depois de um longo dia ao ar livre?"
+}
+},
+{
+"id": "nature_trips-026",
+"lv": "any",
+"i18n": {
+"en": "What's the most unusual landscape you've ever seen?",
+"de": "Was ist die ungewöhnlichste Landschaft, die du je gesehen hast?",
+"es": "¿Cuál es el paisaje más curioso que has visto?",
+"fr": "Quel est le paysage le plus étonnant que tu aies vu ?",
+"it": "Qual è il paesaggio più insolito che hai mai visto?",
+"pt": "Qual foi a paisagem mais invulgar que já viste?",
+"pt_BR": "Qual foi a paisagem mais diferente que você já viu?"
+}
+},
+{
+"id": "nature_trips-027",
+"lv": "any",
+"i18n": {
+"en": "Do you like stargazing? Where did you see the best night sky?",
+"de": "Schaust du gern Sterne? Wo hast du den schönsten Nachthimmel gesehen?",
+"es": "¿Te gusta mirar las estrellas? ¿Dónde has visto el mejor cielo nocturno?",
+"fr": "Aimes-tu observer les étoiles ? Où as-tu vu le plus beau ciel nocturne ?",
+"it": "Ti piace guardare le stelle? Dove hai visto il cielo notturno più bello?",
+"pt": "Gostas de observar as estrelas? Onde viste o céu noturno mais bonito?",
+"pt_BR": "Você gosta de observar estrelas? Onde viu o céu noturno mais bonito?"
+}
+},
+{
+"id": "nature_trips-028",
+"lv": "any",
+"i18n": {
+"en": "Which nature trip is at the top of your wish list?",
+"de": "Welche Naturreise steht ganz oben auf deiner Wunschliste?",
+"es": "¿Qué viaje a la naturaleza está en lo más alto de tu lista de deseos?",
+"fr": "Quel voyage nature est en tête de ta liste d'envies ?",
+"it": "Quale viaggio nella natura è in cima alla tua lista dei desideri?",
+"pt": "Que viagem na natureza está no topo da tua lista de desejos?",
+"pt_BR": "Qual viagem na natureza está no topo da sua lista de desejos?"
+}
+},
+{
+"id": "nature_trips-029",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer planning every detail or exploring nature spontaneously?",
+"de": "Planst du lieber jedes Detail oder erkundest du die Natur spontan?",
+"es": "¿Prefieres planear cada detalle o explorar la naturaleza sobre la marcha?",
+"fr": "Préfères-tu tout planifier ou explorer la nature au feeling ?",
+"it": "Preferisci pianificare ogni dettaglio o esplorare la natura in modo spontaneo?",
+"pt": "Preferes planear cada pormenor ou explorar a natureza de forma espontânea?",
+"pt_BR": "Você prefere planejar cada detalhe ou explorar a natureza de forma espontânea?"
+}
+},
+{
+"id": "nature_trips-030",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite snack to bring on a hike?",
+"de": "Was ist dein Lieblingssnack für eine Wanderung?",
+"es": "¿Cuál es tu tentempié favorito para llevar de excursión?",
+"fr": "Quel est ton en-cas préféré pour une randonnée ?",
+"it": "Qual è il tuo snack preferito da portare in escursione?",
+"pt": "Qual é o teu lanche preferido para levar numa caminhada?",
+"pt_BR": "Qual é seu lanche favorito pra levar numa trilha?"
+}
+},
+{
+"id": "nature_trips-031",
+"lv": "any",
+"i18n": {
+"en": "Have you ever visited a famous natural wonder? Did it live up to the hype?",
+"de": "Hast du schon mal ein berühmtes Naturwunder besucht? Hat es deine Erwartungen erfüllt?",
+"es": "¿Has visitado alguna maravilla natural famosa? ¿Estuvo a la altura?",
+"fr": "As-tu déjà visité une merveille naturelle célèbre ? Était-elle à la hauteur ?",
+"it": "Hai mai visitato una famosa meraviglia naturale? È stata all'altezza delle aspettative?",
+"pt": "Já visitaste alguma maravilha natural famosa? Esteve à altura das expectativas?",
+"pt_BR": "Você já visitou alguma maravilha natural famosa? Correspondeu às expectativas?"
+}
+},
+{
+"id": "nature_trips-032",
+"lv": "any",
+"i18n": {
+"en": "Forests, fields or coastlines: where do you feel most at peace?",
+"de": "Wald, Wiesen oder Küste: Wo fühlst du dich am friedlichsten?",
+"es": "Bosques, campos o costas: ¿dónde sientes más paz?",
+"fr": "Forêts, prairies ou littoral : où te sens-tu le plus serein ?",
+"it": "Boschi, campi o coste: dove ti senti più in pace?",
+"pt": "Florestas, campos ou litoral: onde te sentes mais em paz?",
+"pt_BR": "Florestas, campos ou litoral: onde você se sente mais em paz?"
+}
+},
+{
+"id": "nature_trips-033",
+"lv": "any",
+"i18n": {
+"en": "What's something nature has taught you?",
+"de": "Was hat dich die Natur gelehrt?",
+"es": "¿Qué te ha enseñado la naturaleza?",
+"fr": "Qu'est-ce que la nature t'a appris ?",
+"it": "Cosa ti ha insegnato la natura?",
+"pt": "O que te ensinou a natureza?",
+"pt_BR": "O que a natureza te ensinou?"
+}
+},
+{
+"id": "nature_trips-034",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy rainy days outdoors, or do you wait for the sun?",
+"de": "Magst du Regentage draußen oder wartest du auf die Sonne?",
+"es": "¿Disfrutas de los días de lluvia al aire libre o esperas al sol?",
+"fr": "Aimes-tu les journées de pluie dehors, ou attends-tu le soleil ?",
+"it": "Ti piacciono le giornate di pioggia all'aperto o aspetti il sole?",
+"pt": "Gostas de dias de chuva ao ar livre ou esperas pelo sol?",
+"pt_BR": "Você curte dias de chuva ao ar livre ou espera o sol?"
+}
+},
+{
+"id": "nature_trips-035",
+"lv": "any",
+"i18n": {
+"en": "Which island would you love to explore for its nature?",
+"de": "Welche Insel würdest du gern wegen ihrer Natur erkunden?",
+"es": "¿Qué isla te encantaría explorar por su naturaleza?",
+"fr": "Quelle île aimerais-tu explorer pour sa nature ?",
+"it": "Quale isola ti piacerebbe esplorare per la sua natura?",
+"pt": "Que ilha gostavas de explorar pela natureza?",
+"pt_BR": "Qual ilha você adoraria explorar pela natureza?"
+}
+},
+{
+"id": "nature_trips-036",
+"lv": "any",
+"i18n": {
+"en": "Do you like learning the names of plants, birds or trees?",
+"de": "Lernst du gern die Namen von Pflanzen, Vögeln oder Bäumen?",
+"es": "¿Te gusta aprender los nombres de plantas, aves o árboles?",
+"fr": "Aimes-tu apprendre le nom des plantes, des oiseaux ou des arbres ?",
+"it": "Ti piace imparare i nomi di piante, uccelli o alberi?",
+"pt": "Gostas de aprender os nomes de plantas, aves ou árvores?",
+"pt_BR": "Você gosta de aprender os nomes de plantas, aves ou árvores?"
+}
+},
+{
+"id": "nature_trips-037",
+"lv": "any",
+"i18n": {
+"en": "What's your perfect day outdoors, from morning to night?",
+"de": "Wie sieht dein perfekter Tag draußen aus, von morgens bis abends?",
+"es": "¿Cómo sería tu día perfecto al aire libre, de la mañana a la noche?",
+"fr": "À quoi ressemble ta journée idéale dehors, du matin au soir ?",
+"it": "Com'è la tua giornata perfetta all'aperto, dalla mattina alla sera?",
+"pt": "Como é o teu dia perfeito ao ar livre, de manhã à noite?",
+"pt_BR": "Como seria seu dia perfeito ao ar livre, de manhã à noite?"
+}
+},
+{
+"id": "nature_trips-038",
+"lv": "any",
+"i18n": {
+"en": "Have you ever had a nature trip that didn't go as planned but turned out great?",
+"de": "Hattest du schon mal einen Naturausflug, der anders lief als geplant, aber toll wurde?",
+"es": "¿Has tenido alguna excursión que no salió como esperabas pero acabó genial?",
+"fr": "As-tu déjà vécu une sortie nature imprévue qui s'est finalement très bien passée ?",
+"it": "Ti è mai capitata una gita nella natura andata diversamente dal previsto ma finita benissimo?",
+"pt": "Já tiveste um passeio na natureza que não correu como planeado mas acabou por ser ótimo?",
+"pt_BR": "Você já teve um passeio na natureza que não saiu como planejado, mas acabou sendo ótimo?"
+}
+},
+{
+"id": "nature_trips-039",
+"lv": "any",
+"i18n": {
+"en": "What helps you disconnect from screens when you're in nature?",
+"de": "Was hilft dir, in der Natur vom Bildschirm abzuschalten?",
+"es": "¿Qué te ayuda a desconectar de las pantallas en la naturaleza?",
+"fr": "Qu'est-ce qui t'aide à décrocher des écrans dans la nature ?",
+"it": "Cosa ti aiuta a staccare dagli schermi quando sei nella natura?",
+"pt": "O que te ajuda a desligar dos ecrãs quando estás na natureza?",
+"pt_BR": "O que te ajuda a se desligar das telas quando está na natureza?"
+}
+},
+{
+"id": "nature_trips-040",
+"lv": "any",
+"i18n": {
+"en": "Which nature documentary or book has inspired you most?",
+"de": "Welche Naturdoku oder welches Buch hat dich am meisten inspiriert?",
+"es": "¿Qué documental o libro de naturaleza te ha inspirado más?",
+"fr": "Quel documentaire ou livre sur la nature t'a le plus inspiré ?",
+"it": "Quale documentario o libro sulla natura ti ha ispirato di più?",
+"pt": "Que documentário ou livro sobre a natureza mais te inspirou?",
+"pt_BR": "Qual documentário ou livro sobre a natureza mais te inspirou?"
+}
+},
+{
+"id": "nature_trips-041",
+"lv": "beginner",
+"i18n": {
+"en": "How long is your ideal walk: one hour, half a day or a full day?",
+"de": "Wie lang ist deine ideale Wanderung: eine Stunde, ein halber Tag oder ein ganzer Tag?",
+"es": "¿Cuánto dura tu caminata ideal: una hora, media jornada o un día entero?",
+"fr": "Quelle est la durée idéale d'une balade pour toi : une heure, une demi-journée ou une journée ?",
+"it": "Quanto dura la tua camminata ideale: un'ora, mezza giornata o un giorno intero?",
+"pt": "Quanto tempo dura a tua caminhada ideal: uma hora, meio dia ou um dia inteiro?",
+"pt_BR": "Quanto dura sua caminhada ideal: uma hora, meio dia ou um dia inteiro?"
+}
+},
+{
+"id": "nature_trips-042",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually pack in your bag for a day outdoors?",
+"de": "Was packst du normalerweise für einen Tag draußen in deinen Rucksack?",
+"es": "¿Qué sueles meter en la mochila para un día al aire libre?",
+"fr": "Que mets-tu d'habitude dans ton sac pour une journée dehors ?",
+"it": "Cosa metti di solito nello zaino per una giornata all'aperto?",
+"pt": "O que costumas pôr na mochila para um dia ao ar livre?",
+"pt_BR": "O que você costuma colocar na mochila para um dia ao ar livre?"
+}
+},
+{
+"id": "nature_trips-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which shoes do you wear for walks in nature?",
+"de": "Welche Schuhe trägst du bei Spaziergängen in der Natur?",
+"es": "¿Qué calzado usas para caminar por la naturaleza?",
+"fr": "Quelles chaussures portes-tu pour marcher dans la nature ?",
+"it": "Che scarpe metti per camminare nella natura?",
+"pt": "Que calçado usas para caminhar na natureza?",
+"pt_BR": "Que calçado você usa pra caminhar na natureza?"
+}
+},
+{
+"id": "nature_trips-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you check the weather before a trip? Which app or method do you trust?",
+"de": "Prüfst du vor einem Ausflug das Wetter? Welcher App oder Methode vertraust du?",
+"es": "¿Miras el tiempo antes de una excursión? ¿Qué app o método te parece fiable?",
+"fr": "Regardes-tu la météo avant une sortie ? À quelle appli ou méthode fais-tu confiance ?",
+"it": "Controlli il meteo prima di una gita? Di quale app o metodo ti fidi?",
+"pt": "Vês a previsão do tempo antes de um passeio? Em que app ou método confias?",
+"pt_BR": "Você confere a previsão do tempo antes de um passeio? Em qual app ou método confia?"
+}
+},
+{
+"id": "nature_trips-045",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever been to a visitor centre in a park? What did you learn?",
+"de": "Warst du schon mal in einem Besucherzentrum eines Parks? Was hast du gelernt?",
+"es": "¿Has estado en el centro de visitantes de algún parque? ¿Qué aprendiste?",
+"fr": "Es-tu déjà allé au centre d'accueil d'un parc ? Qu'y as-tu appris ?",
+"it": "Sei mai stato nel centro visite di un parco? Cosa hai imparato?",
+"pt": "Já foste ao centro de visitantes de um parque? O que aprendeste?",
+"pt_BR": "Você já foi ao centro de visitantes de um parque? O que aprendeu?"
+}
+},
+{
+"id": "nature_trips-046",
+"lv": "beginner",
+"i18n": {
+"en": "How do you protect yourself from the sun on a beach day?",
+"de": "Wie schützt du dich an einem Strandtag vor der Sonne?",
+"es": "¿Cómo te proteges del sol en un día de playa?",
+"fr": "Comment te protèges-tu du soleil lors d'une journée à la plage ?",
+"it": "Come ti proteggi dal sole in una giornata al mare?",
+"pt": "Como te proteges do sol num dia de praia?",
+"pt_BR": "Como você se protege do sol num dia de praia?"
+}
+},
+{
+"id": "nature_trips-047",
+"lv": "beginner",
+"i18n": {
+"en": "Which Leave No Trace habit do you find easiest to follow?",
+"de": "Welche Leave-No-Trace-Gewohnheit fällt dir am leichtesten?",
+"es": "¿Qué hábito de No Dejar Rastro te resulta más fácil de seguir?",
+"fr": "Quel geste du « Sans laisser de trace » trouves-tu le plus facile à suivre ?",
+"it": "Quale abitudine del « Non lasciare traccia » trovi più facile da seguire?",
+"pt": "Que hábito do « Não Deixar Rasto » achas mais fácil de seguir?",
+"pt_BR": "Qual hábito do « Não Deixe Rastros » você acha mais fácil de seguir?"
+}
+},
+{
+"id": "nature_trips-048",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like reading trail maps, or do you follow the signs?",
+"de": "Liest du gern Wanderkarten oder folgst du lieber den Schildern?",
+"es": "¿Te gusta leer mapas de senderos o prefieres seguir las señales?",
+"fr": "Aimes-tu lire les cartes de randonnée ou suis-tu plutôt le balisage ?",
+"it": "Ti piace leggere le mappe dei sentieri o segui i cartelli?",
+"pt": "Gostas de ler mapas de trilhos ou segues as placas?",
+"pt_BR": "Você gosta de ler mapas de trilha ou prefere seguir as placas?"
+}
+},
+{
+"id": "nature_trips-049",
+"lv": "beginner",
+"i18n": {
+"en": "What's the easiest nature walk near you that you'd recommend to a friend?",
+"de": "Welchen leichten Naturspaziergang in deiner Nähe würdest du einem Freund empfehlen?",
+"es": "¿Qué paseo fácil por la naturaleza cerca de ti le recomendarías a un amigo?",
+"fr": "Quelle balade nature facile près de chez toi conseillerais-tu à un ami ?",
+"it": "Quale passeggiata facile nella natura vicino a te consiglieresti a un amico?",
+"pt": "Que caminhada fácil na natureza perto de ti recomendavas a um amigo?",
+"pt_BR": "Qual caminhada fácil na natureza perto de você indicaria a um amigo?"
+}
+},
+{
+"id": "nature_trips-050",
+"lv": "beginner",
+"i18n": {
+"en": "Do you tell someone your plans before heading outdoors?",
+"de": "Sagst du jemandem Bescheid, bevor du in die Natur aufbrichst?",
+"es": "¿Avisas a alguien de tus planes antes de salir a la naturaleza?",
+"fr": "Préviens-tu quelqu'un de tes projets avant de partir en nature ?",
+"it": "Avvisi qualcuno dei tuoi piani prima di partire per un'escursione?",
+"pt": "Avisas alguém dos teus planos antes de ires para a natureza?",
+"pt_BR": "Você avisa alguém dos seus planos antes de sair para a natureza?"
+}
+},
+{
+"id": "nature_trips-051",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite thing to do on a beach day?",
+"de": "Was machst du an einem Strandtag am liebsten?",
+"es": "¿Qué es lo que más te gusta hacer en un día de playa?",
+"fr": "Qu'aimes-tu le plus faire lors d'une journée à la plage ?",
+"it": "Qual è la cosa che preferisci fare in una giornata al mare?",
+"pt": "O que mais gostas de fazer num dia de praia?",
+"pt_BR": "O que você mais gosta de fazer num dia de praia?"
+}
+},
+{
+"id": "nature_trips-052",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever explored rock pools at low tide? What did you find?",
+"de": "Hast du schon mal bei Ebbe Felsenpools erkundet? Was hast du entdeckt?",
+"es": "¿Has explorado alguna vez las pozas de roca con la marea baja? ¿Qué encontraste?",
+"fr": "As-tu déjà exploré les flaques rocheuses à marée basse ? Qu'y as-tu trouvé ?",
+"it": "Hai mai esplorato le pozze tra gli scogli con la bassa marea? Cosa hai trovato?",
+"pt": "Já exploraste as poças de maré na maré baixa? O que encontraste?",
+"pt_BR": "Você já explorou as piscinas naturais nas pedras na maré baixa? O que encontrou?"
+}
+},
+{
+"id": "nature_trips-053",
+"lv": "beginner",
+"i18n": {
+"en": "Have you tried snorkelling? What would you love to see underwater?",
+"de": "Hast du schon geschnorchelt? Was würdest du gern unter Wasser sehen?",
+"es": "¿Has probado el esnórquel? ¿Qué te gustaría ver bajo el agua?",
+"fr": "As-tu déjà fait du snorkeling ? Qu'aimerais-tu voir sous l'eau ?",
+"it": "Hai mai fatto snorkeling? Cosa ti piacerebbe vedere sott'acqua?",
+"pt": "Já experimentaste fazer snorkel? O que gostavas de ver debaixo de água?",
+"pt_BR": "Você já fez snorkel? O que adoraria ver debaixo d'água?"
+}
+},
+{
+"id": "nature_trips-054",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever taken a cable car or mountain train for the views?",
+"de": "Bist du schon mal wegen der Aussicht mit einer Seilbahn oder Bergbahn gefahren?",
+"es": "¿Has subido alguna vez en teleférico o tren de montaña por las vistas?",
+"fr": "As-tu déjà pris un téléphérique ou un train de montagne pour la vue ?",
+"it": "Hai mai preso una funivia o un trenino di montagna per il panorama?",
+"pt": "Já andaste de teleférico ou comboio de montanha só pela vista?",
+"pt_BR": "Você já andou de teleférico ou trem de montanha só pela vista?"
+}
+},
+{
+"id": "nature_trips-055",
+"lv": "beginner",
+"i18n": {
+"en": "Which do you find more magical: caves, waterfalls or lakes?",
+"de": "Was findest du magischer: Höhlen, Wasserfälle oder Seen?",
+"es": "¿Qué te parece más mágico: cuevas, cascadas o lagos?",
+"fr": "Qu'est-ce qui te semble le plus magique : les grottes, les cascades ou les lacs ?",
+"it": "Cosa trovi più magico: grotte, cascate o laghi?",
+"pt": "O que achas mais mágico: grutas, cascatas ou lagos?",
+"pt_BR": "O que você acha mais mágico: cavernas, cachoeiras ou lagos?"
+}
+},
+{
+"id": "nature_trips-056",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of weather do you enjoy most for a hike?",
+"de": "Bei welchem Wetter wanderst du am liebsten?",
+"es": "¿Qué tiempo prefieres para salir de excursión?",
+"fr": "Quel temps préfères-tu pour une randonnée ?",
+"it": "Con che tempo preferisci fare un'escursione?",
+"pt": "Com que tempo gostas mais de fazer uma caminhada?",
+"pt_BR": "Com que clima você mais curte fazer uma trilha?"
+}
+},
+{
+"id": "nature_trips-057",
+"lv": "beginner",
+"i18n": {
+"en": "Do you enjoy watching birds? Which one have you spotted recently?",
+"de": "Beobachtest du gern Vögel? Welchen hast du zuletzt entdeckt?",
+"es": "¿Te gusta observar aves? ¿Cuál has visto últimamente?",
+"fr": "Aimes-tu observer les oiseaux ? Lequel as-tu repéré récemment ?",
+"it": "Ti piace osservare gli uccelli? Quale hai avvistato di recente?",
+"pt": "Gostas de observar aves? Qual viste ultimamente?",
+"pt_BR": "Você gosta de observar aves? Qual viu recentemente?"
+}
+},
+{
+"id": "nature_trips-058",
+"lv": "beginner",
+"i18n": {
+"en": "What's a tree or flower you can always recognise?",
+"de": "Welchen Baum oder welche Blume erkennst du immer?",
+"es": "¿Qué árbol o flor sabes reconocer siempre?",
+"fr": "Quel arbre ou quelle fleur reconnais-tu toujours ?",
+"it": "Quale albero o fiore riconosci sempre?",
+"pt": "Que árvore ou flor reconheces sempre?",
+"pt_BR": "Qual árvore ou flor você sempre reconhece?"
+}
+},
+{
+"id": "nature_trips-059",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever had a picnic in a beautiful spot? Where was it?",
+"de": "Hast du schon mal an einem wunderschönen Ort gepicknickt? Wo war das?",
+"es": "¿Has hecho algún pícnic en un lugar precioso? ¿Dónde fue?",
+"fr": "As-tu déjà pique-niqué dans un endroit magnifique ? C'était où ?",
+"it": "Hai mai fatto un picnic in un posto bellissimo? Dov'era?",
+"pt": "Já fizeste um piquenique num sítio lindo? Onde foi?",
+"pt_BR": "Você já fez um piquenique num lugar lindo? Onde foi?"
+}
+},
+{
+"id": "nature_trips-060",
+"lv": "beginner",
+"i18n": {
+"en": "How do you get to nature spots: car, train, bus or bike?",
+"de": "Wie kommst du zu Naturorten: mit Auto, Zug, Bus oder Fahrrad?",
+"es": "¿Cómo llegas a los lugares naturales: en coche, tren, autobús o bici?",
+"fr": "Comment te rends-tu dans la nature : voiture, train, bus ou vélo ?",
+"it": "Come raggiungi i luoghi naturali: auto, treno, autobus o bici?",
+"pt": "Como chegas aos sítios na natureza: carro, comboio, autocarro ou bicicleta?",
+"pt_BR": "Como você chega aos lugares na natureza: carro, trem, ônibus ou bike?"
+}
+},
+{
+"id": "nature_trips-061",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever taken a pet on a nature walk? How did it go?",
+"de": "Hast du schon mal ein Haustier mit auf eine Naturwanderung genommen? Wie lief es?",
+"es": "¿Has llevado alguna vez a tu mascota de paseo por la naturaleza? ¿Qué tal fue?",
+"fr": "As-tu déjà emmené un animal de compagnie en balade nature ? Comment ça s'est passé ?",
+"it": "Hai mai portato un animale domestico in una passeggiata nella natura? Com'è andata?",
+"pt": "Já levaste um animal de estimação a passear na natureza? Como correu?",
+"pt_BR": "Você já levou um bichinho de estimação para passear na natureza? Como foi?"
+}
+},
+{
+"id": "nature_trips-062",
+"lv": "beginner",
+"i18n": {
+"en": "What's a simple nature habit you'd like to start this month?",
+"de": "Welche einfache Naturgewohnheit würdest du diesen Monat gern beginnen?",
+"es": "¿Qué hábito sencillo relacionado con la naturaleza te gustaría empezar este mes?",
+"fr": "Quelle petite habitude nature aimerais-tu commencer ce mois-ci ?",
+"it": "Quale semplice abitudine legata alla natura vorresti iniziare questo mese?",
+"pt": "Que hábito simples ligado à natureza gostavas de começar este mês?",
+"pt_BR": "Qual hábito simples ligado à natureza você gostaria de começar este mês?"
+}
+},
+{
+"id": "nature_trips-063",
+"lv": "beginner",
+"i18n": {
+"en": "Do you like walking slowly and noticing details, or walking fast for exercise?",
+"de": "Gehst du lieber langsam und achtest auf Details oder schnell zum Training?",
+"es": "¿Prefieres caminar despacio fijándote en los detalles o rápido para hacer ejercicio?",
+"fr": "Préfères-tu marcher lentement en observant les détails, ou vite pour faire du sport ?",
+"it": "Preferisci camminare piano notando i dettagli o veloce per fare esercizio?",
+"pt": "Preferes caminhar devagar a reparar nos pormenores ou depressa para fazer exercício?",
+"pt_BR": "Você prefere caminhar devagar reparando nos detalhes ou rápido pra se exercitar?"
+}
+},
+{
+"id": "nature_trips-064",
+"lv": "beginner",
+"i18n": {
+"en": "What's the most interesting thing you've learned at a park or reserve?",
+"de": "Was ist das Interessanteste, das du in einem Park oder Naturschutzgebiet gelernt hast?",
+"es": "¿Qué es lo más interesante que has aprendido en un parque o reserva?",
+"fr": "Quelle est la chose la plus intéressante apprise dans un parc ou une réserve ?",
+"it": "Qual è la cosa più interessante che hai imparato in un parco o in una riserva?",
+"pt": "Qual foi a coisa mais interessante que aprendeste num parque ou reserva?",
+"pt_BR": "Qual foi a coisa mais interessante que você aprendeu num parque ou reserva?"
+}
+},
+{
+"id": "nature_trips-065",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever kept a nature journal or sketchbook? Would you like to?",
+"de": "Hast du schon mal ein Naturtagebuch oder Skizzenbuch geführt? Hättest du Lust darauf?",
+"es": "¿Has llevado alguna vez un diario o cuaderno de dibujo de naturaleza? ¿Te gustaría?",
+"fr": "As-tu déjà tenu un carnet nature ou de croquis ? Ça te tenterait ?",
+"it": "Hai mai tenuto un diario o un quaderno di schizzi sulla natura? Ti piacerebbe?",
+"pt": "Já tiveste um diário ou caderno de esboços da natureza? Gostavas de ter?",
+"pt_BR": "Você já teve um diário ou caderno de desenhos da natureza? Gostaria de ter?"
+}
+},
+{
+"id": "nature_trips-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever gone camping? What kind of camping suits you best?",
+"de": "Warst du schon mal zelten? Welche Art von Camping passt am besten zu dir?",
+"es": "¿Has ido alguna vez de acampada? ¿Qué tipo de camping va más contigo?",
+"fr": "As-tu déjà fait du camping ? Quel style de camping te convient le mieux ?",
+"it": "Sei mai andato in campeggio? Che tipo di campeggio fa più per te?",
+"pt": "Já foste acampar? Que tipo de campismo combina mais contigo?",
+"pt_BR": "Você já acampou? Que tipo de camping combina mais com você?"
+}
+},
+{
+"id": "nature_trips-067",
+"lv": "intermediate",
+"i18n": {
+"en": "What's your favourite meal to cook outdoors?",
+"de": "Was kochst du draußen am liebsten?",
+"es": "¿Cuál es tu comida favorita para cocinar al aire libre?",
+"fr": "Quel est ton plat préféré à cuisiner en plein air ?",
+"it": "Qual è il tuo piatto preferito da cucinare all'aperto?",
+"pt": "Qual é a tua refeição preferida para cozinhar ao ar livre?",
+"pt_BR": "Qual é sua comida favorita pra cozinhar ao ar livre?"
+}
+},
+{
+"id": "nature_trips-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan the pace and breaks on a longer hike?",
+"de": "Wie planst du Tempo und Pausen bei einer längeren Wanderung?",
+"es": "¿Cómo planificas el ritmo y los descansos en una caminata larga?",
+"fr": "Comment prévois-tu le rythme et les pauses lors d'une longue randonnée ?",
+"it": "Come pianifichi ritmo e pause in un'escursione lunga?",
+"pt": "Como planeias o ritmo e as pausas numa caminhada longa?",
+"pt_BR": "Como você planeja o ritmo e as pausas numa trilha longa?"
+}
+},
+{
+"id": "nature_trips-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Can you read a topographic map or use a compass? How did you learn?",
+"de": "Kannst du eine topografische Karte lesen oder einen Kompass benutzen? Wie hast du es gelernt?",
+"es": "¿Sabes leer un mapa topográfico o usar una brújula? ¿Cómo aprendiste?",
+"fr": "Sais-tu lire une carte topographique ou utiliser une boussole ? Comment as-tu appris ?",
+"it": "Sai leggere una carta topografica o usare la bussola? Come hai imparato?",
+"pt": "Sabes ler um mapa topográfico ou usar uma bússola? Como aprendeste?",
+"pt_BR": "Você sabe ler um mapa topográfico ou usar uma bússola? Como aprendeu?"
+}
+},
+{
+"id": "nature_trips-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What has the weather taught you on a trip outdoors?",
+"de": "Was hat dich das Wetter auf einem Ausflug in der Natur gelehrt?",
+"es": "¿Qué te ha enseñado el tiempo en alguna excursión?",
+"fr": "Qu'est-ce que la météo t'a appris lors d'une sortie en nature ?",
+"it": "Cosa ti ha insegnato il meteo durante una gita all'aperto?",
+"pt": "O que te ensinou o tempo num passeio ao ar livre?",
+"pt_BR": "O que o clima já te ensinou num passeio ao ar livre?"
+}
+},
+{
+"id": "nature_trips-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you tried kayaking or paddleboarding? Where would you love to paddle?",
+"de": "Hast du schon Kajak oder Stand-up-Paddling ausprobiert? Wo würdest du gern paddeln?",
+"es": "¿Has probado el kayak o el paddle surf? ¿Dónde te encantaría remar?",
+"fr": "As-tu déjà essayé le kayak ou le paddle ? Où aimerais-tu pagayer ?",
+"it": "Hai mai provato il kayak o il SUP? Dove ti piacerebbe pagaiare?",
+"pt": "Já experimentaste caiaque ou stand-up paddle? Onde gostavas de remar?",
+"pt_BR": "Você já experimentou caiaque ou stand-up paddle? Onde adoraria remar?"
+}
+},
+{
+"id": "nature_trips-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever gone whale or dolphin watching? What was it like?",
+"de": "Warst du schon mal Wale oder Delfine beobachten? Wie war es?",
+"es": "¿Has ido alguna vez a ver ballenas o delfines? ¿Cómo fue?",
+"fr": "As-tu déjà observé des baleines ou des dauphins ? C'était comment ?",
+"it": "Sei mai andato a vedere balene o delfini? Com'è stato?",
+"pt": "Já foste observar baleias ou golfinhos? Como foi?",
+"pt_BR": "Você já foi observar baleias ou golfinhos? Como foi?"
+}
+},
+{
+"id": "nature_trips-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Natural hot springs or a cool mountain lake: which would you choose?",
+"de": "Natürliche heiße Quellen oder ein kühler Bergsee: Was würdest du wählen?",
+"es": "Aguas termales naturales o un lago de montaña fresco: ¿qué elegirías?",
+"fr": "Sources chaudes naturelles ou lac de montagne frais : que choisirais-tu ?",
+"it": "Sorgenti termali naturali o un fresco lago di montagna: cosa sceglieresti?",
+"pt": "Termas naturais ou um lago de montanha fresco: o que escolhias?",
+"pt_BR": "Fontes termais naturais ou um lago de montanha geladinho: o que você escolheria?"
+}
+},
+{
+"id": "nature_trips-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which mountain hut or cabin experience would you love to have?",
+"de": "Welches Hütten-Erlebnis in den Bergen würdest du gern haben?",
+"es": "¿Qué experiencia en un refugio o cabaña de montaña te encantaría vivir?",
+"fr": "Quelle expérience en refuge ou en chalet de montagne aimerais-tu vivre ?",
+"it": "Quale esperienza in un rifugio o baita di montagna ti piacerebbe vivere?",
+"pt": "Que experiência num refúgio ou cabana de montanha gostavas de viver?",
+"pt_BR": "Que experiência num refúgio ou cabana na montanha você adoraria viver?"
+}
+},
+{
+"id": "nature_trips-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Snowshoeing, skiing or winter walks: how do you enjoy snowy nature?",
+"de": "Schneeschuhwandern, Skifahren oder Winterspaziergänge: Wie genießt du die verschneite Natur?",
+"es": "Raquetas de nieve, esquí o paseos invernales: ¿cómo disfrutas de la naturaleza nevada?",
+"fr": "Raquettes, ski ou balades d'hiver : comment profites-tu de la nature enneigée ?",
+"it": "Ciaspole, sci o passeggiate invernali: come ti godi la natura innevata?",
+"pt": "Raquetes de neve, esqui ou caminhadas de inverno: como aproveitas a natureza com neve?",
+"pt_BR": "Raquetes de neve, esqui ou caminhadas de inverno: como você curte a natureza com neve?"
+}
+},
+{
+"id": "nature_trips-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever walked in a rainforest or cloud forest? What surprised you?",
+"de": "Bist du schon mal durch einen Regenwald oder Nebelwald gewandert? Was hat dich überrascht?",
+"es": "¿Has caminado alguna vez por una selva tropical o un bosque nuboso? ¿Qué te sorprendió?",
+"fr": "As-tu déjà marché dans une forêt tropicale ou une forêt de nuages ? Qu'est-ce qui t'a surpris ?",
+"it": "Hai mai camminato in una foresta pluviale o in una foresta nebulosa? Cosa ti ha sorpreso?",
+"pt": "Já caminhaste numa floresta tropical ou numa floresta nublada? O que te surpreendeu?",
+"pt_BR": "Você já caminhou numa floresta tropical ou numa mata de neblina? O que te surpreendeu?"
+}
+},
+{
+"id": "nature_trips-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Where would you go to see the best autumn colours?",
+"de": "Wohin würdest du fahren, um die schönsten Herbstfarben zu sehen?",
+"es": "¿Adónde irías para ver los colores de otoño más bonitos?",
+"fr": "Où irais-tu pour voir les plus belles couleurs d'automne ?",
+"it": "Dove andresti per vedere i colori autunnali più belli?",
+"pt": "Onde irias para ver as cores de outono mais bonitas?",
+"pt_BR": "Aonde você iria pra ver as cores de outono mais bonitas?"
+}
+},
+{
+"id": "nature_trips-078",
+"lv": "intermediate",
+"i18n": {
+"en": "A safari, a birding trip or a whale tour: which wildlife trip calls you most?",
+"de": "Safari, Vogelreise oder Waltour: Welche Tierreise reizt dich am meisten?",
+"es": "Un safari, un viaje de observación de aves o un tour de ballenas: ¿cuál te llama más?",
+"fr": "Un safari, un voyage ornitho ou une sortie baleines : lequel t'attire le plus ?",
+"it": "Un safari, un viaggio di birdwatching o un tour per le balene: quale ti attira di più?",
+"pt": "Um safari, uma viagem para ver aves ou um passeio para ver baleias: qual te chama mais?",
+"pt_BR": "Um safári, uma viagem pra ver aves ou um passeio pra ver baleias: qual mais te chama?"
+}
+},
+{
+"id": "nature_trips-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you like to see the northern lights? Where would you go?",
+"de": "Möchtest du die Polarlichter sehen? Wohin würdest du reisen?",
+"es": "¿Te gustaría ver la aurora boreal? ¿Adónde irías?",
+"fr": "Aimerais-tu voir des aurores boréales ? Où irais-tu ?",
+"it": "Ti piacerebbe vedere l'aurora boreale? Dove andresti?",
+"pt": "Gostavas de ver a aurora boreal? Para onde irias?",
+"pt_BR": "Você gostaria de ver a aurora boreal? Pra onde iria?"
+}
+},
+{
+"id": "nature_trips-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which famous long-distance trail would you love to walk, even in part?",
+"de": "Welchen berühmten Fernwanderweg würdest du gern gehen, auch nur ein Stück?",
+"es": "¿Qué famosa ruta de largo recorrido te encantaría hacer, aunque sea un tramo?",
+"fr": "Quel grand sentier célèbre aimerais-tu parcourir, même en partie ?",
+"it": "Quale famoso cammino a lunga percorrenza ti piacerebbe percorrere, anche solo in parte?",
+"pt": "Que famoso trilho de longa distância gostavas de percorrer, nem que fosse uma parte?",
+"pt_BR": "Qual trilha famosa de longa distância você adoraria percorrer, nem que fosse um trecho?"
+}
+},
+{
+"id": "nature_trips-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you choose eco-friendly places to stay on nature trips?",
+"de": "Wie wählst du auf Naturreisen umweltfreundliche Unterkünfte aus?",
+"es": "¿Cómo eliges alojamientos respetuosos con el medio ambiente en tus viajes a la naturaleza?",
+"fr": "Comment choisis-tu des hébergements écoresponsables pour tes voyages nature ?",
+"it": "Come scegli alloggi ecosostenibili nei tuoi viaggi nella natura?",
+"pt": "Como escolhes alojamentos amigos do ambiente nas viagens pela natureza?",
+"pt_BR": "Como você escolhe hospedagens sustentáveis nas viagens pela natureza?"
+}
+},
+{
+"id": "nature_trips-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever joined a beach cleanup or trail work day?",
+"de": "Hast du schon mal bei einer Strandreinigung oder einem Wegepflege-Tag mitgemacht?",
+"es": "¿Has participado alguna vez en una limpieza de playa o en el cuidado de senderos?",
+"fr": "As-tu déjà participé à un nettoyage de plage ou à l'entretien d'un sentier ?",
+"it": "Hai mai partecipato alla pulizia di una spiaggia o alla manutenzione di un sentiero?",
+"pt": "Já participaste numa limpeza de praia ou na manutenção de trilhos?",
+"pt_BR": "Você já participou de um mutirão de limpeza de praia ou de manutenção de trilha?"
+}
+},
+{
+"id": "nature_trips-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you do to keep your energy up on a long day outdoors?",
+"de": "Was tust du, um an einem langen Tag draußen fit zu bleiben?",
+"es": "¿Qué haces para mantener la energía en un largo día al aire libre?",
+"fr": "Que fais-tu pour garder ton énergie lors d'une longue journée dehors ?",
+"it": "Cosa fai per mantenere l'energia in una lunga giornata all'aperto?",
+"pt": "O que fazes para manter a energia num longo dia ao ar livre?",
+"pt_BR": "O que você faz pra manter a energia num dia longo ao ar livre?"
+}
+},
+{
+"id": "nature_trips-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which green space in a city has surprised you with its nature?",
+"de": "Welche Grünfläche in einer Stadt hat dich mit ihrer Natur überrascht?",
+"es": "¿Qué espacio verde de una ciudad te sorprendió por su naturaleza?",
+"fr": "Quel espace vert en ville t'a surpris par sa nature ?",
+"it": "Quale spazio verde in una città ti ha sorpreso per la sua natura?",
+"pt": "Que espaço verde numa cidade te surpreendeu pela natureza?",
+"pt_BR": "Qual área verde numa cidade te surpreendeu pela natureza?"
+}
+},
+{
+"id": "nature_trips-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Do you prefer sleeping in a tent, a mountain hut or a cosy lodge on nature trips?",
+"de": "Schläfst du auf Naturreisen lieber im Zelt, in einer Berghütte oder in einer gemütlichen Lodge?",
+"es": "En tus viajes a la naturaleza, ¿prefieres dormir en tienda, en un refugio o en un albergue acogedor?",
+"fr": "En voyage nature, préfères-tu dormir sous la tente, en refuge ou dans un lodge douillet ?",
+"it": "Nei viaggi nella natura preferisci dormire in tenda, in rifugio o in un lodge accogliente?",
+"pt": "Nas viagens na natureza preferes dormir numa tenda, num refúgio ou num alojamento acolhedor?",
+"pt_BR": "Nas viagens pela natureza, você prefere dormir em barraca, num refúgio ou numa pousada aconchegante?"
+}
+},
+{
+"id": "nature_trips-086",
+"lv": "advanced",
+"i18n": {
+"en": "Which geological wonder would you love to understand better, like volcanoes or glaciers?",
+"de": "Welches geologische Wunder würdest du gern besser verstehen, etwa Vulkane oder Gletscher?",
+"es": "¿Qué maravilla geológica te gustaría entender mejor, como los volcanes o los glaciares?",
+"fr": "Quelle merveille géologique aimerais-tu mieux comprendre, comme les volcans ou les glaciers ?",
+"it": "Quale meraviglia geologica vorresti capire meglio, come i vulcani o i ghiacciai?",
+"pt": "Que maravilha geológica gostavas de compreender melhor, como os vulcões ou os glaciares?",
+"pt_BR": "Qual maravilha geológica você gostaria de entender melhor, como vulcões ou geleiras?"
+}
+},
+{
+"id": "nature_trips-087",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever done a multi-day trek? What was the hardest part?",
+"de": "Hast du schon mal eine mehrtägige Trekkingtour gemacht? Was war am schwierigsten?",
+"es": "¿Has hecho alguna travesía de varios días? ¿Qué fue lo más difícil?",
+"fr": "As-tu déjà fait un trek de plusieurs jours ? Quel a été le plus dur ?",
+"it": "Hai mai fatto un trekking di più giorni? Qual è stata la parte più difficile?",
+"pt": "Já fizeste um trekking de vários dias? Qual foi a parte mais difícil?",
+"pt_BR": "Você já fez um trekking de vários dias? Qual foi a parte mais difícil?"
+}
+},
+{
+"id": "nature_trips-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you decide when it's time to turn back on a trail?",
+"de": "Wie entscheidest du, wann es Zeit ist, auf einer Tour umzukehren?",
+"es": "¿Cómo decides cuándo es momento de dar la vuelta en una ruta?",
+"fr": "Comment décides-tu qu'il est temps de faire demi-tour sur un sentier ?",
+"it": "Come decidi quando è il momento di tornare indietro su un sentiero?",
+"pt": "Como decides quando é altura de voltar para trás num trilho?",
+"pt_BR": "Como você decide quando é hora de voltar numa trilha?"
+}
+},
+{
+"id": "nature_trips-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which legendary trek, like Patagonia or the Himalayas, is on your dream list?",
+"de": "Welcher legendäre Trek, etwa in Patagonien oder im Himalaya, steht auf deiner Traumliste?",
+"es": "¿Qué trekking legendario, como Patagonia o el Himalaya, está en tu lista de sueños?",
+"fr": "Quel trek mythique, comme la Patagonie ou l'Himalaya, figure sur ta liste de rêves ?",
+"it": "Quale trekking leggendario, come la Patagonia o l'Himalaya, è nella tua lista dei sogni?",
+"pt": "Que trekking lendário, como a Patagónia ou os Himalaias, está na tua lista de sonhos?",
+"pt_BR": "Qual trekking lendário, como a Patagônia ou o Himalaia, está na sua lista de sonhos?"
+}
+},
+{
+"id": "nature_trips-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you prepare your body for a big hiking trip?",
+"de": "Wie bereitest du deinen Körper auf eine große Wandertour vor?",
+"es": "¿Cómo preparas tu cuerpo para un gran viaje de senderismo?",
+"fr": "Comment prépares-tu ton corps pour un grand voyage de randonnée ?",
+"it": "Come prepari il tuo corpo per un grande viaggio di trekking?",
+"pt": "Como preparas o corpo para uma grande viagem de caminhada?",
+"pt_BR": "Como você prepara o corpo para uma grande viagem de trilhas?"
+}
+},
+{
+"id": "nature_trips-091",
+"lv": "advanced",
+"i18n": {
+"en": "What does responsible wildlife watching mean to you?",
+"de": "Was bedeutet verantwortungsvolle Tierbeobachtung für dich?",
+"es": "¿Qué significa para ti observar la fauna de forma responsable?",
+"fr": "Que signifie pour toi observer la faune de façon responsable ?",
+"it": "Cosa significa per te osservare la fauna in modo responsabile?",
+"pt": "O que significa para ti observar a vida selvagem de forma responsável?",
+"pt_BR": "O que significa pra você observar a vida selvagem de forma responsável?"
+}
+},
+{
+"id": "nature_trips-092",
+"lv": "advanced",
+"i18n": {
+"en": "Which remote wilderness, like the Arctic or a great desert, fascinates you?",
+"de": "Welche abgelegene Wildnis, etwa die Arktis oder eine große Wüste, fasziniert dich?",
+"es": "¿Qué naturaleza remota, como el Ártico o un gran desierto, te fascina?",
+"fr": "Quelle contrée sauvage et isolée, comme l'Arctique ou un grand désert, te fascine ?",
+"it": "Quale natura remota, come l'Artico o un grande deserto, ti affascina?",
+"pt": "Que natureza remota, como o Ártico ou um grande deserto, te fascina?",
+"pt_BR": "Qual região selvagem remota, como o Ártico ou um grande deserto, te fascina?"
+}
+},
+{
+"id": "nature_trips-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance sharing nature photos online with protecting fragile places?",
+"de": "Wie vereinbarst du das Teilen von Naturfotos online mit dem Schutz empfindlicher Orte?",
+"es": "¿Cómo equilibras compartir fotos de naturaleza en redes con proteger lugares frágiles?",
+"fr": "Comment concilies-tu le partage de photos nature en ligne et la protection des lieux fragiles ?",
+"it": "Come concili la condivisione online di foto della natura con la tutela dei luoghi fragili?",
+"pt": "Como equilibras partilhar fotos da natureza online com proteger locais frágeis?",
+"pt_BR": "Como você equilibra compartilhar fotos da natureza nas redes com proteger lugares frágeis?"
+}
+},
+{
+"id": "nature_trips-094",
+"lv": "advanced",
+"i18n": {
+"en": "What have you learned about how ecosystems work from your trips?",
+"de": "Was hast du auf deinen Reisen darüber gelernt, wie Ökosysteme funktionieren?",
+"es": "¿Qué has aprendido en tus viajes sobre cómo funcionan los ecosistemas?",
+"fr": "Qu'as-tu appris en voyage sur le fonctionnement des écosystèmes ?",
+"it": "Cosa hai imparato nei tuoi viaggi su come funzionano gli ecosistemi?",
+"pt": "O que aprendeste nas tuas viagens sobre o funcionamento dos ecossistemas?",
+"pt_BR": "O que você aprendeu nas suas viagens sobre como os ecossistemas funcionam?"
+}
+},
+{
+"id": "nature_trips-095",
+"lv": "advanced",
+"i18n": {
+"en": "Which outdoor sport would take you deeper into nature: climbing, biking or diving?",
+"de": "Welcher Outdoorsport würde dich tiefer in die Natur bringen: Klettern, Biken oder Tauchen?",
+"es": "¿Qué deporte te llevaría más adentro de la naturaleza: escalada, bici o buceo?",
+"fr": "Quel sport te ferait entrer plus loin dans la nature : escalade, vélo ou plongée ?",
+"it": "Quale sport ti porterebbe più a fondo nella natura: arrampicata, bici o immersioni?",
+"pt": "Que desporto te levaria mais fundo na natureza: escalada, bicicleta ou mergulho?",
+"pt_BR": "Qual esporte te levaria mais fundo na natureza: escalada, bike ou mergulho?"
+}
+},
+{
+"id": "nature_trips-096",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever led a group outdoors? What did you learn about leadership?",
+"de": "Hast du schon mal eine Gruppe draußen geführt? Was hast du über Führung gelernt?",
+"es": "¿Has guiado alguna vez a un grupo en la naturaleza? ¿Qué aprendiste sobre liderar?",
+"fr": "As-tu déjà guidé un groupe en pleine nature ? Qu'as-tu appris sur le leadership ?",
+"it": "Hai mai guidato un gruppo all'aperto? Cosa hai imparato sulla leadership?",
+"pt": "Já lideraste um grupo ao ar livre? O que aprendeste sobre liderança?",
+"pt_BR": "Você já liderou um grupo ao ar livre? O que aprendeu sobre liderança?"
+}
+},
+{
+"id": "nature_trips-097",
+"lv": "advanced",
+"i18n": {
+"en": "How would you plan a dream expedition from first idea to departure?",
+"de": "Wie würdest du eine Traumexpedition planen, von der ersten Idee bis zum Aufbruch?",
+"es": "¿Cómo planearías una expedición soñada, desde la primera idea hasta la salida?",
+"fr": "Comment planifierais-tu une expédition de rêve, de l'idée au départ ?",
+"it": "Come pianificheresti una spedizione dei sogni, dalla prima idea alla partenza?",
+"pt": "Como planeavas uma expedição de sonho, da primeira ideia até à partida?",
+"pt_BR": "Como você planejaria uma expedição dos sonhos, da primeira ideia até a partida?"
+}
+},
+{
+"id": "nature_trips-098",
+"lv": "advanced",
+"i18n": {
+"en": "How has time in nature changed the way you live day to day?",
+"de": "Wie hat die Zeit in der Natur deinen Alltag verändert?",
+"es": "¿Cómo ha cambiado el tiempo en la naturaleza tu vida diaria?",
+"fr": "Comment le temps passé dans la nature a-t-il changé ton quotidien ?",
+"it": "Come ha cambiato la tua vita quotidiana il tempo passato nella natura?",
+"pt": "Como é que o tempo na natureza mudou o teu dia a dia?",
+"pt_BR": "Como o tempo na natureza mudou o seu dia a dia?"
+}
+},
+{
+"id": "nature_trips-099",
+"lv": "advanced",
+"i18n": {
+"en": "What would you teach a beginner who wants to fall in love with nature trips?",
+"de": "Was würdest du einem Anfänger beibringen, der sich in Naturreisen verlieben möchte?",
+"es": "¿Qué le enseñarías a un principiante que quiere enamorarse de los viajes a la naturaleza?",
+"fr": "Qu'apprendrais-tu à un débutant qui veut tomber amoureux des voyages nature ?",
+"it": "Cosa insegneresti a un principiante che vuole innamorarsi dei viaggi nella natura?",
+"pt": "O que ensinavas a um principiante que quer apaixonar-se por viagens na natureza?",
+"pt_BR": "O que você ensinaria a um iniciante que quer se apaixonar por viagens na natureza?"
+}
+},
+{
+"id": "nature_trips-100",
+"lv": "advanced",
+"i18n": {
+"en": "Which places would you love to help protect for future generations?",
+"de": "Welche Orte würdest du gern für künftige Generationen schützen helfen?",
+"es": "¿Qué lugares te gustaría ayudar a proteger para las generaciones futuras?",
+"fr": "Quels lieux aimerais-tu aider à protéger pour les générations futures ?",
+"it": "Quali luoghi ti piacerebbe aiutare a proteggere per le generazioni future?",
+"pt": "Que lugares gostavas de ajudar a proteger para as gerações futuras?",
+"pt_BR": "Quais lugares você gostaria de ajudar a proteger para as próximas gerações?"
+}
+}
+]
+}

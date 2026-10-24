@@ -1,0 +1,1305 @@
+{
+ "topic": "festivals",
+ "questions": [
+  {
+   "id": "festivals-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite festival or holiday of the year, and why?",
+    "de": "Was ist dein liebstes Fest oder dein liebster Feiertag im Jahr, und warum?",
+    "es": "¿Cuál es tu fiesta o día festivo favorito del año, y por qué?",
+    "fr": "Quelle est ta fête préférée de l'année, et pourquoi ?",
+    "it": "Qual è la tua festa preferita dell'anno, e perché?",
+    "pt": "Qual é a tua festa ou feriado preferido do ano, e porquê?",
+    "pt_BR": "Qual é a sua festa ou feriado favorito do ano, e por quê?"
+   }
+  },
+  {
+   "id": "festivals-002",
+   "lv": "any",
+   "i18n": {
+    "en": "How does your family usually celebrate the New Year?",
+    "de": "Wie feiert deine Familie normalerweise Neujahr?",
+    "es": "¿Cómo suele celebrar tu familia el Año Nuevo?",
+    "fr": "Comment ta famille fête-t-elle habituellement le Nouvel An ?",
+    "it": "Come festeggia di solito il Capodanno la tua famiglia?",
+    "pt": "Como é que a tua família costuma celebrar o Ano Novo?",
+    "pt_BR": "Como sua família costuma comemorar o Ano-Novo?"
+   }
+  },
+  {
+   "id": "festivals-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festival from another country would you love to experience in person?",
+    "de": "Welches Fest aus einem anderen Land würdest du gern einmal live erleben?",
+    "es": "¿Qué fiesta de otro país te encantaría vivir en persona?",
+    "fr": "Quelle fête d'un autre pays aimerais-tu vivre en vrai ?",
+    "it": "Quale festa di un altro paese ti piacerebbe vivere di persona?",
+    "pt": "Que festa de outro país adorarias viver ao vivo?",
+    "pt_BR": "Qual festa de outro país você adoraria viver pessoalmente?"
+   }
+  },
+  {
+   "id": "festivals-004",
+   "lv": "any",
+   "i18n": {
+    "en": "What festive food do you look forward to most every year?",
+    "de": "Auf welches festliche Essen freust du dich jedes Jahr am meisten?",
+    "es": "¿Qué comida festiva esperas con más ganas cada año?",
+    "fr": "Quel plat de fête attends-tu avec le plus d'impatience chaque année ?",
+    "it": "Quale piatto delle feste aspetti di più ogni anno?",
+    "pt": "Que comida de festa esperas com mais vontade todos os anos?",
+    "pt_BR": "Qual comida de festa você mais espera todo ano?"
+   }
+  },
+  {
+   "id": "festivals-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer big public celebrations or quiet ones at home with family?",
+    "de": "Magst du lieber große öffentliche Feiern oder ruhige Feste zu Hause mit der Familie?",
+    "es": "¿Prefieres las grandes celebraciones públicas o las tranquilas en casa con la familia?",
+    "fr": "Tu préfères les grandes fêtes publiques ou les fêtes tranquilles en famille à la maison ?",
+    "it": "Preferisci le grandi feste in piazza o quelle tranquille a casa con la famiglia?",
+    "pt": "Preferes as grandes celebrações públicas ou as mais calmas em casa com a família?",
+    "pt_BR": "Você prefere grandes festas públicas ou comemorações tranquilas em casa com a família?"
+   }
+  },
+  {
+   "id": "festivals-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festive song or music always puts you in a good mood?",
+    "de": "Welches Festlied oder welche Musik bringt dich immer in gute Stimmung?",
+    "es": "¿Qué canción o música festiva siempre te pone de buen humor?",
+    "fr": "Quelle chanson ou musique de fête te met toujours de bonne humeur ?",
+    "it": "Quale canzone o musica delle feste ti mette sempre di buon umore?",
+    "pt": "Que canção ou música de festa te põe sempre bem-disposto?",
+    "pt_BR": "Qual música de festa sempre te deixa de bom humor?"
+   }
+  },
+  {
+   "id": "festivals-007",
+   "lv": "any",
+   "i18n": {
+    "en": "What is a tradition in your family that might surprise people from other countries?",
+    "de": "Welche Tradition in deiner Familie könnte Menschen aus anderen Ländern überraschen?",
+    "es": "¿Qué tradición de tu familia podría sorprender a gente de otros países?",
+    "fr": "Quelle tradition de ta famille pourrait surprendre des gens d'autres pays ?",
+    "it": "Quale tradizione della tua famiglia potrebbe sorprendere chi viene da altri paesi?",
+    "pt": "Que tradição da tua família poderia surpreender pessoas de outros países?",
+    "pt_BR": "Que tradição da sua família poderia surpreender pessoas de outros países?"
+   }
+  },
+  {
+   "id": "festivals-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever dressed up in a costume for a festival? What did you wear?",
+    "de": "Hast du dich schon mal für ein Fest verkleidet? Was hast du getragen?",
+    "es": "¿Alguna vez te has disfrazado para una fiesta? ¿De qué ibas?",
+    "fr": "T'es-tu déjà déguisé pour une fête ? Quel costume portais-tu ?",
+    "it": "Ti sei mai travestito per una festa? Che costume avevi?",
+    "pt": "Já te mascaraste para alguma festa? De que ias vestido?",
+    "pt_BR": "Você já se fantasiou para alguma festa? Qual era a fantasia?"
+   }
+  },
+  {
+   "id": "festivals-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Which season has the best celebrations where you live?",
+    "de": "In welcher Jahreszeit gibt es bei dir die schönsten Feste?",
+    "es": "¿En qué estación hay las mejores fiestas donde vives?",
+    "fr": "Quelle saison offre les plus belles fêtes là où tu vis ?",
+    "it": "In quale stagione ci sono le feste più belle dove vivi?",
+    "pt": "Em que estação do ano há as melhores festas onde vives?",
+    "pt_BR": "Em qual estação do ano rolam as melhores festas onde você mora?"
+   }
+  },
+  {
+   "id": "festivals-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the most beautiful festival decoration you have ever seen?",
+    "de": "Was ist die schönste Festdekoration, die du je gesehen hast?",
+    "es": "¿Cuál es la decoración festiva más bonita que has visto nunca?",
+    "fr": "Quelle est la plus belle décoration de fête que tu aies jamais vue ?",
+    "it": "Qual è la decorazione di festa più bella che tu abbia mai visto?",
+    "pt": "Qual é a decoração de festa mais bonita que já viste?",
+    "pt_BR": "Qual é a decoração de festa mais bonita que você já viu?"
+   }
+  },
+  {
+   "id": "festivals-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Who do you most like to celebrate special days with?",
+    "de": "Mit wem feierst du besondere Tage am liebsten?",
+    "es": "¿Con quién te gusta más celebrar los días especiales?",
+    "fr": "Avec qui aimes-tu le plus fêter les jours spéciaux ?",
+    "it": "Con chi ti piace di più festeggiare i giorni speciali?",
+    "pt": "Com quem gostas mais de celebrar os dias especiais?",
+    "pt_BR": "Com quem você mais gosta de comemorar os dias especiais?"
+   }
+  },
+  {
+   "id": "festivals-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festival from your country would you love to show a friend from abroad?",
+    "de": "Welches Fest aus deinem Land würdest du gern einem Freund aus dem Ausland zeigen?",
+    "es": "¿Qué fiesta de tu país te encantaría mostrarle a un amigo extranjero?",
+    "fr": "Quelle fête de ton pays aimerais-tu faire découvrir à un ami étranger ?",
+    "it": "Quale festa del tuo paese ti piacerebbe mostrare a un amico straniero?",
+    "pt": "Que festa do teu país adorarias mostrar a um amigo estrangeiro?",
+    "pt_BR": "Qual festa do seu país você adoraria mostrar a um amigo estrangeiro?"
+   }
+  },
+  {
+   "id": "festivals-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy fireworks, or do you prefer quieter ways to celebrate?",
+    "de": "Magst du Feuerwerk, oder feierst du lieber auf ruhigere Art?",
+    "es": "¿Te gustan los fuegos artificiales o prefieres formas más tranquilas de celebrar?",
+    "fr": "Tu aimes les feux d'artifice, ou tu préfères fêter plus calmement ?",
+    "it": "Ti piacciono i fuochi d'artificio o preferisci festeggiare in modo più tranquillo?",
+    "pt": "Gostas de fogo de artifício ou preferes formas mais calmas de celebrar?",
+    "pt_BR": "Você curte fogos de artifício ou prefere jeitos mais tranquilos de comemorar?"
+   }
+  },
+  {
+   "id": "festivals-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your happiest festival memory?",
+    "de": "Was ist deine schönste Erinnerung an ein Fest?",
+    "es": "¿Cuál es tu recuerdo más feliz de una fiesta?",
+    "fr": "Quel est ton plus beau souvenir de fête ?",
+    "it": "Qual è il tuo ricordo più felice legato a una festa?",
+    "pt": "Qual é a tua memória mais feliz de uma festa?",
+    "pt_BR": "Qual é a sua lembrança mais feliz de uma festa?"
+   }
+  },
+  {
+   "id": "festivals-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festive sweet or dessert could you eat all year round?",
+    "de": "Welche festliche Süßigkeit oder welchen Nachtisch könntest du das ganze Jahr essen?",
+    "es": "¿Qué dulce o postre festivo podrías comer todo el año?",
+    "fr": "Quelle douceur ou quel dessert de fête pourrais-tu manger toute l'année ?",
+    "it": "Quale dolce delle feste potresti mangiare tutto l'anno?",
+    "pt": "Que doce ou sobremesa de festa podias comer o ano inteiro?",
+    "pt_BR": "Qual doce ou sobremesa de festa você comeria o ano todo?"
+   }
+  },
+  {
+   "id": "festivals-016",
+   "lv": "any",
+   "i18n": {
+    "en": "How do people greet each other on the most important holiday in your country?",
+    "de": "Wie begrüßen sich die Leute am wichtigsten Feiertag in deinem Land?",
+    "es": "¿Cómo se saluda la gente en la fiesta más importante de tu país?",
+    "fr": "Comment les gens se saluent-ils lors de la fête la plus importante de ton pays ?",
+    "it": "Come si salutano le persone nella festa più importante del tuo paese?",
+    "pt": "Como é que as pessoas se cumprimentam na festa mais importante do teu país?",
+    "pt_BR": "Como as pessoas se cumprimentam na festa mais importante do seu país?"
+   }
+  },
+  {
+   "id": "festivals-017",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you usually do on a public holiday when you have the day off?",
+    "de": "Was machst du normalerweise an einem freien Feiertag?",
+    "es": "¿Qué sueles hacer en un día festivo cuando no trabajas?",
+    "fr": "Que fais-tu d'habitude un jour férié quand tu ne travailles pas ?",
+    "it": "Che cosa fai di solito in un giorno festivo quando sei libero?",
+    "pt": "O que costumas fazer num feriado quando tens o dia livre?",
+    "pt_BR": "O que você costuma fazer num feriado de folga?"
+   }
+  },
+  {
+   "id": "festivals-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever celebrated a festival abroad? What was it like?",
+    "de": "Hast du schon mal im Ausland ein Fest gefeiert? Wie war es?",
+    "es": "¿Alguna vez has celebrado una fiesta en el extranjero? ¿Cómo fue?",
+    "fr": "As-tu déjà fêté quelque chose à l'étranger ? C'était comment ?",
+    "it": "Hai mai festeggiato una festa all'estero? Com'è stato?",
+    "pt": "Já celebraste alguma festa no estrangeiro? Como foi?",
+    "pt_BR": "Você já comemorou alguma festa no exterior? Como foi?"
+   }
+  },
+  {
+   "id": "festivals-019",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could celebrate only one festival for the rest of your life, which would it be?",
+    "de": "Wenn du für immer nur ein einziges Fest feiern dürftest, welches wäre es?",
+    "es": "Si solo pudieras celebrar una fiesta el resto de tu vida, ¿cuál sería?",
+    "fr": "Si tu ne pouvais fêter qu'une seule fête pour le reste de ta vie, laquelle choisirais-tu ?",
+    "it": "Se potessi festeggiare una sola festa per il resto della vita, quale sceglieresti?",
+    "pt": "Se só pudesses celebrar uma festa para o resto da vida, qual seria?",
+    "pt_BR": "Se você só pudesse comemorar uma festa pelo resto da vida, qual seria?"
+   }
+  },
+  {
+   "id": "festivals-020",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of gifts do you enjoy giving at celebrations?",
+    "de": "Was für Geschenke machst du bei Festen am liebsten?",
+    "es": "¿Qué tipo de regalos te gusta hacer en las celebraciones?",
+    "fr": "Quel genre de cadeaux aimes-tu offrir lors des fêtes ?",
+    "it": "Che tipo di regali ti piace fare durante le feste?",
+    "pt": "Que tipo de presentes gostas de oferecer nas festas?",
+    "pt_BR": "Que tipo de presente você gosta de dar nas festas?"
+   }
+  },
+  {
+   "id": "festivals-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like dancing at festivals, or do you prefer to watch?",
+    "de": "Tanzt du gern auf Festen, oder schaust du lieber zu?",
+    "es": "¿Te gusta bailar en las fiestas o prefieres mirar?",
+    "fr": "Tu aimes danser pendant les fêtes, ou tu préfères regarder ?",
+    "it": "Ti piace ballare alle feste o preferisci guardare?",
+    "pt": "Gostas de dançar nas festas ou preferes ver?",
+    "pt_BR": "Você gosta de dançar nas festas ou prefere assistir?"
+   }
+  },
+  {
+   "id": "festivals-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a local festival in your town or region that few outsiders know about?",
+    "de": "Gibt es in deiner Stadt oder Region ein Fest, das Auswärtige kaum kennen?",
+    "es": "¿Hay alguna fiesta local en tu ciudad o región que poca gente de fuera conozca?",
+    "fr": "Y a-t-il une fête locale dans ta ville ou ta région que peu de gens connaissent ?",
+    "it": "C'è una festa locale nella tua città o regione che pochi conoscono fuori?",
+    "pt": "Há alguma festa local na tua terra ou região que pouca gente de fora conheça?",
+    "pt_BR": "Tem alguma festa local na sua cidade ou região que pouca gente de fora conhece?"
+   }
+  },
+  {
+   "id": "festivals-023",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a perfect celebration day look like for you?",
+    "de": "Wie sieht für dich ein perfekter Festtag aus?",
+    "es": "¿Cómo sería para ti un día de celebración perfecto?",
+    "fr": "À quoi ressemble pour toi une journée de fête parfaite ?",
+    "it": "Com'è per te una giornata di festa perfetta?",
+    "pt": "Como seria para ti um dia de festa perfeito?",
+    "pt_BR": "Como seria para você um dia de festa perfeito?"
+   }
+  },
+  {
+   "id": "festivals-024",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festival tradition would you like to start in your own life?",
+    "de": "Welche Festtradition würdest du gern in deinem eigenen Leben einführen?",
+    "es": "¿Qué tradición festiva te gustaría empezar en tu propia vida?",
+    "fr": "Quelle tradition de fête aimerais-tu adopter dans ta propre vie ?",
+    "it": "Quale tradizione di festa ti piacerebbe iniziare nella tua vita?",
+    "pt": "Que tradição festiva gostarias de começar na tua própria vida?",
+    "pt_BR": "Qual tradição de festa você gostaria de começar na sua vida?"
+   }
+  },
+  {
+   "id": "festivals-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer winter festivals or summer festivals, and why?",
+    "de": "Magst du lieber Winterfeste oder Sommerfeste, und warum?",
+    "es": "¿Prefieres las fiestas de invierno o las de verano, y por qué?",
+    "fr": "Tu préfères les fêtes d'hiver ou les fêtes d'été, et pourquoi ?",
+    "it": "Preferisci le feste invernali o quelle estive, e perché?",
+    "pt": "Preferes as festas de inverno ou as de verão, e porquê?",
+    "pt_BR": "Você prefere as festas de inverno ou as de verão, e por quê?"
+   }
+  },
+  {
+   "id": "festivals-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite way to celebrate your birthday?",
+    "de": "Wie feierst du deinen Geburtstag am liebsten?",
+    "es": "¿Cuál es tu forma favorita de celebrar tu cumpleaños?",
+    "fr": "Comment préfères-tu fêter ton anniversaire ?",
+    "it": "Qual è il tuo modo preferito di festeggiare il compleanno?",
+    "pt": "Qual é a tua maneira preferida de festejar o teu aniversário?",
+    "pt_BR": "Qual é o seu jeito favorito de comemorar o aniversário?"
+   }
+  },
+  {
+   "id": "festivals-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever helped prepare a festival, by cooking, decorating or organising?",
+    "de": "Hast du schon mal bei der Vorbereitung eines Festes geholfen, beim Kochen, Schmücken oder Organisieren?",
+    "es": "¿Alguna vez has ayudado a preparar una fiesta cocinando, decorando u organizando?",
+    "fr": "As-tu déjà aidé à préparer une fête, en cuisinant, en décorant ou en organisant ?",
+    "it": "Hai mai aiutato a preparare una festa, cucinando, decorando od organizzando?",
+    "pt": "Já ajudaste a preparar uma festa, a cozinhar, a decorar ou a organizar?",
+    "pt_BR": "Você já ajudou a preparar uma festa, cozinhando, decorando ou organizando?"
+   }
+  },
+  {
+   "id": "festivals-028",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festive smell instantly reminds you of a special time of year?",
+    "de": "Welcher festliche Duft erinnert dich sofort an eine besondere Zeit im Jahr?",
+    "es": "¿Qué olor festivo te recuerda al instante una época especial del año?",
+    "fr": "Quelle odeur de fête te rappelle aussitôt un moment spécial de l'année ?",
+    "it": "Quale profumo di festa ti ricorda subito un momento speciale dell'anno?",
+    "pt": "Que cheiro de festa te lembra logo uma época especial do ano?",
+    "pt_BR": "Qual cheiro de festa te lembra na hora uma época especial do ano?"
+   }
+  },
+  {
+   "id": "festivals-029",
+   "lv": "any",
+   "i18n": {
+    "en": "What colours do you associate with your favourite holiday?",
+    "de": "Welche Farben verbindest du mit deinem liebsten Feiertag?",
+    "es": "¿Qué colores asocias con tu fiesta favorita?",
+    "fr": "Quelles couleurs associes-tu à ta fête préférée ?",
+    "it": "Quali colori associ alla tua festa preferita?",
+    "pt": "Que cores associas à tua festa preferida?",
+    "pt_BR": "Quais cores você associa à sua festa favorita?"
+   }
+  },
+  {
+   "id": "festivals-030",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you make New Year's resolutions? Which one are you proudest of keeping?",
+    "de": "Fasst du Neujahrsvorsätze? Auf welchen gehaltenen Vorsatz bist du am stolzesten?",
+    "es": "¿Haces propósitos de Año Nuevo? ¿De cuál cumplido estás más orgulloso?",
+    "fr": "Prends-tu de bonnes résolutions ? Laquelle es-tu le plus fier d'avoir tenue ?",
+    "it": "Fai buoni propositi per l'anno nuovo? Di quale mantenuto vai più fiero?",
+    "pt": "Fazes resoluções de Ano Novo? De qual estás mais orgulhoso de ter cumprido?",
+    "pt_BR": "Você faz promessas de Ano-Novo? De qual cumprida você mais se orgulha?"
+   }
+  },
+  {
+   "id": "festivals-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festival photos do you treasure most?",
+    "de": "Welche Fotos von Festen sind dir am wichtigsten?",
+    "es": "¿Qué fotos de fiestas guardas con más cariño?",
+    "fr": "Quelles photos de fête te sont les plus précieuses ?",
+    "it": "Quali foto di feste custodisci con più affetto?",
+    "pt": "Que fotografias de festas guardas com mais carinho?",
+    "pt_BR": "Quais fotos de festas você guarda com mais carinho?"
+   }
+  },
+  {
+   "id": "festivals-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festival have you always been curious about but know little about?",
+    "de": "Auf welches Fest warst du schon immer neugierig, weißt aber wenig darüber?",
+    "es": "¿Qué fiesta siempre te ha dado curiosidad aunque sabes poco de ella?",
+    "fr": "Quelle fête t'a toujours intrigué, même si tu la connais peu ?",
+    "it": "Quale festa ti ha sempre incuriosito anche se ne sai poco?",
+    "pt": "Que festa sempre te deixou curioso, mas sobre a qual sabes pouco?",
+    "pt_BR": "Qual festa sempre te deixou curioso, mas você sabe pouco sobre ela?"
+   }
+  },
+  {
+   "id": "festivals-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like festive markets and fairs? What do you usually look for there?",
+    "de": "Magst du Festmärkte und Jahrmärkte? Wonach suchst du dort meistens?",
+    "es": "¿Te gustan los mercados y ferias festivas? ¿Qué sueles buscar allí?",
+    "fr": "Tu aimes les marchés et les foires de fête ? Qu'y cherches-tu d'habitude ?",
+    "it": "Ti piacciono i mercatini e le fiere? Che cosa cerchi di solito?",
+    "pt": "Gostas de mercados e feiras de festa? O que costumas procurar lá?",
+    "pt_BR": "Você gosta de feiras e mercados de festa? O que costuma procurar por lá?"
+   }
+  },
+  {
+   "id": "festivals-034",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you include in a festival celebrating your own city?",
+    "de": "Was würdest du in ein Fest zu Ehren deiner eigenen Stadt aufnehmen?",
+    "es": "¿Qué incluirías en una fiesta dedicada a tu propia ciudad?",
+    "fr": "Que mettrais-tu dans une fête qui célèbre ta propre ville ?",
+    "it": "Che cosa metteresti in una festa dedicata alla tua città?",
+    "pt": "O que incluirias numa festa dedicada à tua cidade?",
+    "pt_BR": "O que você incluiria numa festa em homenagem à sua cidade?"
+   }
+  },
+  {
+   "id": "festivals-035",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festive game or activity did you love as a child?",
+    "de": "Welches Festspiel oder welche Aktivität hast du als Kind geliebt?",
+    "es": "¿Qué juego o actividad festiva te encantaba de pequeño?",
+    "fr": "Quel jeu ou quelle activité de fête adorais-tu quand tu étais petit ?",
+    "it": "Quale gioco o attività delle feste adoravi da bambino?",
+    "pt": "Que jogo ou atividade de festa adoravas quando eras criança?",
+    "pt_BR": "Qual brincadeira ou atividade de festa você adorava quando criança?"
+   }
+  },
+  {
+   "id": "festivals-036",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel the day after a big celebration?",
+    "de": "Wie fühlst du dich am Tag nach einem großen Fest?",
+    "es": "¿Cómo te sientes el día después de una gran celebración?",
+    "fr": "Comment te sens-tu le lendemain d'une grande fête ?",
+    "it": "Come ti senti il giorno dopo una grande festa?",
+    "pt": "Como te sentes no dia a seguir a uma grande festa?",
+    "pt_BR": "Como você se sente no dia seguinte a uma grande festa?"
+   }
+  },
+  {
+   "id": "festivals-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Which festival would you like to explore together in our next chats?",
+    "de": "Welches Fest möchtest du in unseren nächsten Gesprächen gemeinsam entdecken?",
+    "es": "¿Qué fiesta te gustaría que exploráramos juntos en nuestras próximas charlas?",
+    "fr": "Quelle fête aimerais-tu qu'on explore ensemble dans nos prochaines discussions ?",
+    "it": "Quale festa ti piacerebbe esplorare insieme nelle nostre prossime chiacchierate?",
+    "pt": "Que festa gostavas de explorar comigo nas nossas próximas conversas?",
+    "pt_BR": "Qual festa você gostaria de explorar comigo nas nossas próximas conversas?"
+   }
+  },
+  {
+   "id": "festivals-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Which traditional outfit from any culture do you find most beautiful?",
+    "de": "Welche traditionelle Kleidung aus irgendeiner Kultur findest du am schönsten?",
+    "es": "¿Qué traje tradicional de cualquier cultura te parece el más bonito?",
+    "fr": "Quel costume traditionnel, de n'importe quelle culture, trouves-tu le plus beau ?",
+    "it": "Quale abito tradizionale, di qualsiasi cultura, trovi più bello?",
+    "pt": "Que traje tradicional, de qualquer cultura, achas mais bonito?",
+    "pt_BR": "Qual roupa tradicional, de qualquer cultura, você acha mais bonita?"
+   }
+  },
+  {
+   "id": "festivals-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Who in your family keeps the traditions alive, and how?",
+    "de": "Wer in deiner Familie hält die Traditionen lebendig, und wie?",
+    "es": "¿Quién mantiene vivas las tradiciones en tu familia, y cómo?",
+    "fr": "Qui fait vivre les traditions dans ta famille, et comment ?",
+    "it": "Chi tiene vive le tradizioni nella tua famiglia, e in che modo?",
+    "pt": "Quem mantém as tradições vivas na tua família, e como?",
+    "pt_BR": "Quem mantém as tradições vivas na sua família, e como?"
+   }
+  },
+  {
+   "id": "festivals-040",
+   "lv": "any",
+   "i18n": {
+    "en": "If you could invent a new holiday, what would it celebrate?",
+    "de": "Wenn du einen neuen Feiertag erfinden könntest, was würde er feiern?",
+    "es": "Si pudieras inventar un nuevo día festivo, ¿qué celebraría?",
+    "fr": "Si tu pouvais inventer une nouvelle fête, que célébrerait-elle ?",
+    "it": "Se potessi inventare una nuova festa, che cosa celebrerebbe?",
+    "pt": "Se pudesses inventar um novo feriado, o que é que ele celebraria?",
+    "pt_BR": "Se você pudesse inventar um feriado novo, o que ele comemoraria?"
+   }
+  },
+  {
+   "id": "festivals-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you say Happy New Year in your language?",
+    "de": "Wie sagt man in deiner Sprache „Frohes neues Jahr“?",
+    "es": "¿Cómo se dice «Feliz Año Nuevo» en tu idioma?",
+    "fr": "Comment dit-on « Bonne année » dans ta langue ?",
+    "it": "Come si dice «Buon anno» nella tua lingua?",
+    "pt": "Como se diz «Feliz Ano Novo» na tua língua?",
+    "pt_BR": "Como se diz “Feliz Ano-Novo” no seu idioma?"
+   }
+  },
+  {
+   "id": "festivals-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you usually eat on the last night of the year?",
+    "de": "Was isst du normalerweise in der letzten Nacht des Jahres?",
+    "es": "¿Qué sueles comer la última noche del año?",
+    "fr": "Que manges-tu d'habitude le dernier soir de l'année ?",
+    "it": "Che cosa mangi di solito l'ultima sera dell'anno?",
+    "pt": "O que costumas comer na última noite do ano?",
+    "pt_BR": "O que você costuma comer na última noite do ano?"
+   }
+  },
+  {
+   "id": "festivals-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a lucky custom for the New Year? What is it?",
+    "de": "Hast du einen Glücksbrauch für Neujahr? Welchen?",
+    "es": "¿Tienes alguna costumbre de buena suerte para Año Nuevo? ¿Cuál?",
+    "fr": "As-tu une coutume porte-bonheur pour le Nouvel An ? Laquelle ?",
+    "it": "Hai un'usanza portafortuna per Capodanno? Quale?",
+    "pt": "Tens algum costume de sorte para o Ano Novo? Qual?",
+    "pt_BR": "Você tem alguma simpatia de Ano-Novo para dar sorte? Qual?"
+   }
+  },
+  {
+   "id": "festivals-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever seen a lion or dragon dance? What did you think?",
+    "de": "Hast du schon mal einen Löwen- oder Drachentanz gesehen? Wie fandest du ihn?",
+    "es": "¿Alguna vez has visto una danza del león o del dragón? ¿Qué te pareció?",
+    "fr": "As-tu déjà vu une danse du lion ou du dragon ? Qu'en as-tu pensé ?",
+    "it": "Hai mai visto una danza del leone o del drago? Che ne pensi?",
+    "pt": "Já viste uma dança do leão ou do dragão? O que achaste?",
+    "pt_BR": "Você já viu uma dança do leão ou do dragão? O que achou?"
+   }
+  },
+  {
+   "id": "festivals-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which festival of light would you most like to see: Diwali, Hanukkah or Loy Krathong?",
+    "de": "Welches Lichterfest würdest du am liebsten sehen: Diwali, Chanukka oder Loy Krathong?",
+    "es": "¿Qué fiesta de la luz te gustaría más ver: Diwali, Janucá o Loy Krathong?",
+    "fr": "Quelle fête des lumières aimerais-tu le plus voir : Diwali, Hanoukka ou Loy Krathong ?",
+    "it": "Quale festa delle luci vorresti vedere di più: Diwali, Hanukkah o Loy Krathong?",
+    "pt": "Que festa das luzes gostavas mais de ver: Diwali, Hanukkah ou Loy Krathong?",
+    "pt_BR": "Qual festa das luzes você mais gostaria de ver: Diwali, Hanukkah ou Loy Krathong?"
+   }
+  },
+  {
+   "id": "festivals-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you decorate your home for any celebration? How?",
+    "de": "Schmückst du deine Wohnung zu irgendeinem Fest? Wie?",
+    "es": "¿Decoras tu casa para alguna celebración? ¿Cómo?",
+    "fr": "Décores-tu ton logement pour une fête ? Comment ?",
+    "it": "Decori la casa per qualche festa? Come?",
+    "pt": "Decoras a tua casa para alguma festa? Como?",
+    "pt_BR": "Você decora sua casa para alguma festa? Como?"
+   }
+  },
+  {
+   "id": "festivals-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is your favourite winter holiday tradition, if you have one?",
+    "de": "Was ist deine liebste Wintertradition, falls du eine hast?",
+    "es": "¿Cuál es tu tradición de invierno favorita, si tienes alguna?",
+    "fr": "Quelle est ta tradition d'hiver préférée, si tu en as une ?",
+    "it": "Qual è la tua tradizione invernale preferita, se ne hai una?",
+    "pt": "Qual é a tua tradição de inverno preferida, se tiveres alguma?",
+    "pt_BR": "Qual é a sua tradição de fim de ano favorita, se tiver alguma?"
+   }
+  },
+  {
+   "id": "festivals-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Who brings gifts to children in your country, and when?",
+    "de": "Wer bringt in deinem Land den Kindern Geschenke, und wann?",
+    "es": "¿Quién trae regalos a los niños en tu país, y cuándo?",
+    "fr": "Qui apporte des cadeaux aux enfants dans ton pays, et quand ?",
+    "it": "Chi porta i regali ai bambini nel tuo paese, e quando?",
+    "pt": "Quem traz presentes às crianças no teu país, e quando?",
+    "pt_BR": "Quem traz presentes para as crianças no seu país, e quando?"
+   }
+  },
+  {
+   "id": "festivals-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever been to a carnival? What did you enjoy most?",
+    "de": "Warst du schon mal beim Karneval? Was hat dir am besten gefallen?",
+    "es": "¿Has estado alguna vez en un carnaval? ¿Qué es lo que más disfrutaste?",
+    "fr": "Es-tu déjà allé à un carnaval ? Qu'as-tu le plus aimé ?",
+    "it": "Sei mai stato a un carnevale? Che cosa ti è piaciuto di più?",
+    "pt": "Já foste a algum carnaval? Do que gostaste mais?",
+    "pt_BR": "Você já foi a algum carnaval? Do que mais gostou?"
+   }
+  },
+  {
+   "id": "festivals-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you rather throw colours at Holi or splash water at Songkran?",
+    "de": "Würdest du lieber an Holi mit Farben werfen oder an Songkran mit Wasser spritzen?",
+    "es": "¿Preferirías lanzar colores en Holi o mojarte con agua en Songkran?",
+    "fr": "Tu préférerais lancer des couleurs à Holi ou t'arroser d'eau à Songkran ?",
+    "it": "Preferiresti lanciare colori a Holi o schizzare acqua a Songkran?",
+    "pt": "Preferias atirar cores no Holi ou molhar toda a gente no Songkran?",
+    "pt_BR": "Você preferiria jogar cores no Holi ou molhar todo mundo no Songkran?"
+   }
+  },
+  {
+   "id": "festivals-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever had a picnic under blossoming trees? Where would you like to have one?",
+    "de": "Hast du schon mal unter blühenden Bäumen gepicknickt? Wo würdest du das gern tun?",
+    "es": "¿Has hecho alguna vez un pícnic bajo árboles en flor? ¿Dónde te gustaría hacerlo?",
+    "fr": "As-tu déjà pique-niqué sous des arbres en fleurs ? Où aimerais-tu le faire ?",
+    "it": "Hai mai fatto un picnic sotto gli alberi in fiore? Dove ti piacerebbe farlo?",
+    "pt": "Já fizeste um piquenique debaixo de árvores em flor? Onde gostavas de fazer um?",
+    "pt_BR": "Você já fez um piquenique debaixo de árvores floridas? Onde gostaria de fazer um?"
+   }
+  },
+  {
+   "id": "festivals-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you celebrate a harvest festival or a day of thanks of any kind?",
+    "de": "Feierst du irgendein Erntefest oder einen Tag des Dankes?",
+    "es": "¿Celebras alguna fiesta de la cosecha o algún día de acción de gracias?",
+    "fr": "Fêtes-tu une fête des moissons ou une journée de remerciement ?",
+    "it": "Festeggi qualche festa del raccolto o una giornata di ringraziamento?",
+    "pt": "Celebras alguma festa das colheitas ou algum dia de agradecimento?",
+    "pt_BR": "Você comemora alguma festa da colheita ou algum dia de agradecimento?"
+   }
+  },
+  {
+   "id": "festivals-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever tasted a mooncake or another festive treat from Asia?",
+    "de": "Hast du schon mal einen Mondkuchen oder eine andere festliche Leckerei aus Asien probiert?",
+    "es": "¿Has probado alguna vez un pastel de luna u otro dulce festivo de Asia?",
+    "fr": "As-tu déjà goûté un gâteau de lune ou une autre douceur de fête asiatique ?",
+    "it": "Hai mai assaggiato una torta della luna o un altro dolce delle feste asiatico?",
+    "pt": "Já provaste um bolo da lua ou outro doce de festa asiático?",
+    "pt_BR": "Você já provou um bolo da lua ou outro doce de festa da Ásia?"
+   }
+  },
+  {
+   "id": "festivals-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever flown a kite at a festival or on a windy day?",
+    "de": "Hast du schon mal auf einem Fest oder an einem windigen Tag einen Drachen steigen lassen?",
+    "es": "¿Alguna vez has volado una cometa en una fiesta o un día de viento?",
+    "fr": "As-tu déjà fait voler un cerf-volant lors d'une fête ou un jour de vent ?",
+    "it": "Hai mai fatto volare un aquilone a una festa o in una giornata ventosa?",
+    "pt": "Já lançaste um papagaio de papel numa festa ou num dia de vento?",
+    "pt_BR": "Você já soltou pipa numa festa ou num dia de vento?"
+   }
+  },
+  {
+   "id": "festivals-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do people in your country celebrate the national day?",
+    "de": "Wie feiern die Menschen in deinem Land den Nationalfeiertag?",
+    "es": "¿Cómo celebra la gente de tu país el día nacional?",
+    "fr": "Comment les gens de ton pays fêtent-ils la fête nationale ?",
+    "it": "Come si festeggia la festa nazionale nel tuo paese?",
+    "pt": "Como é que as pessoas do teu país celebram o dia nacional?",
+    "pt_BR": "Como as pessoas do seu país comemoram a data nacional?"
+   }
+  },
+  {
+   "id": "festivals-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you celebrate your name day, or do you know someone who does?",
+    "de": "Feierst du deinen Namenstag, oder kennst du jemanden, der das tut?",
+    "es": "¿Celebras tu santo, o conoces a alguien que lo haga?",
+    "fr": "Fêtes-tu ta fête du prénom, ou connais-tu quelqu'un qui le fait ?",
+    "it": "Festeggi il tuo onomastico, o conosci qualcuno che lo fa?",
+    "pt": "Celebras o dia do teu nome, ou conheces alguém que o faça?",
+    "pt_BR": "Você comemora o dia do seu nome, ou conhece alguém que comemora?"
+   }
+  },
+  {
+   "id": "festivals-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What was your favourite celebration at school when you were younger?",
+    "de": "Was war früher in der Schule dein liebstes Fest?",
+    "es": "¿Cuál era tu celebración favorita en el colegio cuando eras pequeño?",
+    "fr": "Quelle était ta fête préférée à l'école quand tu étais plus jeune ?",
+    "it": "Qual era la tua festa preferita a scuola quando eri più piccolo?",
+    "pt": "Qual era a tua festa preferida na escola quando eras mais novo?",
+    "pt_BR": "Qual era sua festa favorita na escola quando você era mais novo?"
+   }
+  },
+  {
+   "id": "festivals-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you thank your teachers or parents on their special days?",
+    "de": "Wie bedankst du dich bei deinen Lehrern oder Eltern an ihren besonderen Tagen?",
+    "es": "¿Cómo das las gracias a tus profesores o a tus padres en sus días especiales?",
+    "fr": "Comment remercies-tu tes professeurs ou tes parents lors de leurs journées spéciales ?",
+    "it": "Come ringrazi i tuoi insegnanti o i tuoi genitori nei loro giorni speciali?",
+    "pt": "Como agradeces aos teus professores ou aos teus pais nos dias especiais deles?",
+    "pt_BR": "Como você agradece aos seus professores ou pais nos dias especiais deles?"
+   }
+  },
+  {
+   "id": "festivals-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever been to a midsummer or June festival? What happened there?",
+    "de": "Warst du schon mal auf einem Mittsommer- oder Johannisfest? Was war da los?",
+    "es": "¿Has ido alguna vez a una fiesta de San Juan o de verano? ¿Qué pasó allí?",
+    "fr": "Es-tu déjà allé à une fête de la Saint-Jean ou du solstice ? Comment c'était ?",
+    "it": "Sei mai stato a una festa di San Giovanni o di mezza estate? Com'era?",
+    "pt": "Já foste a uns Santos Populares ou a uma festa de São João? Como foi?",
+    "pt_BR": "Você já foi a uma festa junina ou de São João? Como foi?"
+   }
+  },
+  {
+   "id": "festivals-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which festive street food do you always buy at a fair?",
+    "de": "Welches Streetfood kaufst du auf einem Fest immer?",
+    "es": "¿Qué comida callejera compras siempre en una feria?",
+    "fr": "Quelle spécialité de rue achètes-tu toujours à une fête foraine ?",
+    "it": "Quale cibo di strada compri sempre a una fiera?",
+    "pt": "Que comida de rua compras sempre numa feira?",
+    "pt_BR": "Qual comida de rua você sempre compra numa feira ou festa?"
+   }
+  },
+  {
+   "id": "festivals-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you enjoy Christmas markets or night markets? What do you like there?",
+    "de": "Magst du Weihnachtsmärkte oder Nachtmärkte? Was gefällt dir dort?",
+    "es": "¿Te gustan los mercadillos navideños o los mercados nocturnos? ¿Qué te gusta de ellos?",
+    "fr": "Tu aimes les marchés de Noël ou les marchés de nuit ? Qu'est-ce qui te plaît ?",
+    "it": "Ti piacciono i mercatini di Natale o i mercati notturni? Che cosa ti piace?",
+    "pt": "Gostas de mercados de Natal ou mercados noturnos? Do que gostas lá?",
+    "pt_BR": "Você curte feirinhas de Natal ou mercados noturnos? Do que mais gosta?"
+   }
+  },
+  {
+   "id": "festivals-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which traditional clothing have you worn for a special occasion?",
+    "de": "Welche traditionelle Kleidung hast du schon zu einem besonderen Anlass getragen?",
+    "es": "¿Qué ropa tradicional te has puesto para una ocasión especial?",
+    "fr": "Quel vêtement traditionnel as-tu déjà porté pour une occasion spéciale ?",
+    "it": "Quale abito tradizionale hai indossato per un'occasione speciale?",
+    "pt": "Que roupa tradicional já vestiste numa ocasião especial?",
+    "pt_BR": "Qual roupa tradicional você já usou numa ocasião especial?"
+   }
+  },
+  {
+   "id": "festivals-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you usually wish people on their birthday in your language?",
+    "de": "Was wünschst du Menschen in deiner Sprache normalerweise zum Geburtstag?",
+    "es": "¿Qué le deseas normalmente a alguien en su cumpleaños en tu idioma?",
+    "fr": "Que souhaites-tu d'habitude aux gens pour leur anniversaire dans ta langue ?",
+    "it": "Che cosa auguri di solito alle persone per il compleanno nella tua lingua?",
+    "pt": "O que costumas desejar às pessoas no aniversário, na tua língua?",
+    "pt_BR": "O que você costuma desejar às pessoas no aniversário, no seu idioma?"
+   }
+  },
+  {
+   "id": "festivals-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you politely accept an invitation to a celebration in your culture?",
+    "de": "Wie nimmt man in deiner Kultur eine Einladung zu einem Fest höflich an?",
+    "es": "¿Cómo se acepta con educación una invitación a una celebración en tu cultura?",
+    "fr": "Comment accepte-t-on poliment une invitation à une fête dans ta culture ?",
+    "it": "Come si accetta con garbo un invito a una festa nella tua cultura?",
+    "pt": "Como se aceita educadamente um convite para uma festa na tua cultura?",
+    "pt_BR": "Como se aceita com educação um convite para uma festa na sua cultura?"
+   }
+  },
+  {
+   "id": "festivals-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do people say when they raise a glass where you live?",
+    "de": "Was sagen die Leute bei dir, wenn sie anstoßen?",
+    "es": "¿Qué dice la gente donde vives cuando brinda?",
+    "fr": "Que disent les gens chez toi quand ils trinquent ?",
+    "it": "Che cosa si dice dalle tue parti quando si fa un brindisi?",
+    "pt": "O que é que as pessoas dizem na tua terra quando fazem um brinde?",
+    "pt_BR": "O que as pessoas dizem onde você mora na hora de brindar?"
+   }
+  },
+  {
+   "id": "festivals-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How has the way your family celebrates changed over the years?",
+    "de": "Wie hat sich die Art, wie deine Familie feiert, im Lauf der Jahre verändert?",
+    "es": "¿Cómo ha cambiado con los años la forma de celebrar de tu familia?",
+    "fr": "Comment la façon de faire la fête dans ta famille a-t-elle changé au fil des ans ?",
+    "it": "Com'è cambiato negli anni il modo di festeggiare della tua famiglia?",
+    "pt": "Como mudou ao longo dos anos a forma como a tua família celebra?",
+    "pt_BR": "Como mudou ao longo dos anos o jeito como sua família comemora?"
+   }
+  },
+  {
+   "id": "festivals-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which festival do you think has the most interesting origin story?",
+    "de": "Welches Fest hat deiner Meinung nach die spannendste Entstehungsgeschichte?",
+    "es": "¿Qué fiesta crees que tiene la historia de origen más interesante?",
+    "fr": "Selon toi, quelle fête a l'histoire d'origine la plus intéressante ?",
+    "it": "Secondo te, quale festa ha la storia delle origini più interessante?",
+    "pt": "Na tua opinião, que festa tem a história de origem mais interessante?",
+    "pt_BR": "Na sua opinião, qual festa tem a história de origem mais interessante?"
+   }
+  },
+  {
+   "id": "festivals-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you seen a festival from another country celebrated in your city?",
+    "de": "Hast du schon erlebt, dass in deiner Stadt ein Fest aus einem anderen Land gefeiert wurde?",
+    "es": "¿Has visto celebrar en tu ciudad una fiesta de otro país?",
+    "fr": "As-tu déjà vu une fête d'un autre pays célébrée dans ta ville ?",
+    "it": "Hai mai visto festeggiare nella tua città una festa di un altro paese?",
+    "pt": "Já viste uma festa de outro país ser celebrada na tua cidade?",
+    "pt_BR": "Você já viu uma festa de outro país sendo comemorada na sua cidade?"
+   }
+  },
+  {
+   "id": "festivals-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do people from your culture keep their traditions alive when living abroad?",
+    "de": "Wie halten Menschen aus deiner Kultur im Ausland ihre Traditionen lebendig?",
+    "es": "¿Cómo mantiene vivas sus tradiciones la gente de tu cultura cuando vive fuera?",
+    "fr": "Comment les gens de ta culture font-ils vivre leurs traditions quand ils vivent à l'étranger ?",
+    "it": "Come mantengono vive le tradizioni le persone della tua cultura che vivono all'estero?",
+    "pt": "Como é que as pessoas da tua cultura mantêm as tradições vivas quando vivem no estrangeiro?",
+    "pt_BR": "Como as pessoas da sua cultura mantêm as tradições vivas quando moram no exterior?"
+   }
+  },
+  {
+   "id": "festivals-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which carnival would you choose: Rio, Venice, Cologne or Trinidad? Why?",
+    "de": "Welchen Karneval würdest du wählen: Rio, Venedig, Köln oder Trinidad? Warum?",
+    "es": "¿Qué carnaval elegirías: Río, Venecia, Colonia o Trinidad? ¿Por qué?",
+    "fr": "Quel carnaval choisirais-tu : Rio, Venise, Cologne ou Trinidad ? Pourquoi ?",
+    "it": "Quale carnevale sceglieresti: Rio, Venezia, Colonia o Trinidad? Perché?",
+    "pt": "Que carnaval escolherias: Rio, Veneza, Colónia ou Trindade? Porquê?",
+    "pt_BR": "Qual carnaval você escolheria: Rio, Veneza, Colônia ou Trinidad? Por quê?"
+   }
+  },
+  {
+   "id": "festivals-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What do you think makes a parade truly memorable?",
+    "de": "Was macht deiner Meinung nach einen Umzug wirklich unvergesslich?",
+    "es": "¿Qué crees que hace que un desfile sea realmente inolvidable?",
+    "fr": "Selon toi, qu'est-ce qui rend un défilé vraiment inoubliable ?",
+    "it": "Secondo te, che cosa rende una sfilata davvero memorabile?",
+    "pt": "Na tua opinião, o que torna um desfile realmente memorável?",
+    "pt_BR": "Na sua opinião, o que torna um desfile realmente inesquecível?"
+   }
+  },
+  {
+   "id": "festivals-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which Latin American festival would you most like to attend?",
+    "de": "Welches lateinamerikanische Fest würdest du am liebsten besuchen?",
+    "es": "¿A qué fiesta latinoamericana te gustaría más ir?",
+    "fr": "À quelle fête d'Amérique latine aimerais-tu le plus participer ?",
+    "it": "A quale festa latinoamericana ti piacerebbe di più partecipare?",
+    "pt": "A que festa da América Latina mais gostavas de ir?",
+    "pt_BR": "Qual festa latino-americana você mais gostaria de conhecer?"
+   }
+  },
+  {
+   "id": "festivals-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which European festival do you find the most unusual or fun?",
+    "de": "Welches europäische Fest findest du am ungewöhnlichsten oder lustigsten?",
+    "es": "¿Qué fiesta europea te parece la más curiosa o divertida?",
+    "fr": "Quelle fête européenne trouves-tu la plus insolite ou la plus amusante ?",
+    "it": "Quale festa europea trovi più insolita o divertente?",
+    "pt": "Que festa europeia achas mais invulgar ou divertida?",
+    "pt_BR": "Qual festa europeia você acha mais diferente ou divertida?"
+   }
+  },
+  {
+   "id": "festivals-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which Asian festival would you love to experience, and what would you do first?",
+    "de": "Welches asiatische Fest würdest du gern erleben, und was würdest du zuerst machen?",
+    "es": "¿Qué fiesta asiática te encantaría vivir y qué harías primero?",
+    "fr": "Quelle fête asiatique aimerais-tu vivre, et que ferais-tu en premier ?",
+    "it": "Quale festa asiatica ti piacerebbe vivere, e che cosa faresti per prima cosa?",
+    "pt": "Que festa asiática adorarias viver, e o que farias primeiro?",
+    "pt_BR": "Qual festa asiática você adoraria viver, e o que faria primeiro?"
+   }
+  },
+  {
+   "id": "festivals-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you ever volunteered at an event or festival? How was it?",
+    "de": "Hast du schon mal ehrenamtlich bei einer Veranstaltung oder einem Fest geholfen? Wie war das?",
+    "es": "¿Has sido voluntario alguna vez en un evento o una fiesta? ¿Qué tal fue?",
+    "fr": "As-tu déjà été bénévole lors d'un événement ou d'un festival ? C'était comment ?",
+    "it": "Hai mai fatto il volontario a un evento o a una festa? Com'è andata?",
+    "pt": "Já foste voluntário num evento ou numa festa? Como correu?",
+    "pt_BR": "Você já foi voluntário em algum evento ou festa? Como foi?"
+   }
+  },
+  {
+   "id": "festivals-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which festive dish from another culture would you like to learn to cook?",
+    "de": "Welches Festgericht aus einer anderen Kultur würdest du gern kochen lernen?",
+    "es": "¿Qué plato festivo de otra cultura te gustaría aprender a cocinar?",
+    "fr": "Quel plat de fête d'une autre culture aimerais-tu apprendre à cuisiner ?",
+    "it": "Quale piatto delle feste di un'altra cultura vorresti imparare a cucinare?",
+    "pt": "Que prato de festa de outra cultura gostavas de aprender a cozinhar?",
+    "pt_BR": "Qual prato de festa de outra cultura você gostaria de aprender a cozinhar?"
+   }
+  },
+  {
+   "id": "festivals-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you behave as a guest at a celebration from a culture you don't know well?",
+    "de": "Wie verhältst du dich als Gast bei einem Fest aus einer Kultur, die du kaum kennst?",
+    "es": "¿Cómo te comportas como invitado en una celebración de una cultura que no conoces bien?",
+    "fr": "Comment te comportes-tu comme invité à une fête d'une culture que tu connais mal ?",
+    "it": "Come ti comporti da ospite a una festa di una cultura che non conosci bene?",
+    "pt": "Como te comportas como convidado numa festa de uma cultura que não conheces bem?",
+    "pt_BR": "Como você se comporta como convidado numa festa de uma cultura que não conhece bem?"
+   }
+  },
+  {
+   "id": "festivals-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you prefer festivals in the countryside or in big cities? Why?",
+    "de": "Magst du lieber Feste auf dem Land oder in Großstädten? Warum?",
+    "es": "¿Prefieres las fiestas de pueblo o las de las grandes ciudades? ¿Por qué?",
+    "fr": "Tu préfères les fêtes à la campagne ou dans les grandes villes ? Pourquoi ?",
+    "it": "Preferisci le feste di paese o quelle delle grandi città? Perché?",
+    "pt": "Preferes as festas no campo ou nas grandes cidades? Porquê?",
+    "pt_BR": "Você prefere festas do interior ou das grandes cidades? Por quê?"
+   }
+  },
+  {
+   "id": "festivals-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which festive music or dance style would you like to learn?",
+    "de": "Welche Festmusik oder welchen Tanzstil würdest du gern lernen?",
+    "es": "¿Qué música o baile festivo te gustaría aprender?",
+    "fr": "Quelle musique ou quelle danse de fête aimerais-tu apprendre ?",
+    "it": "Quale musica o ballo delle feste ti piacerebbe imparare?",
+    "pt": "Que música ou dança de festa gostavas de aprender?",
+    "pt_BR": "Qual música ou dança de festa você gostaria de aprender?"
+   }
+  },
+  {
+   "id": "festivals-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What are the polite dos and don'ts at celebrations in your culture?",
+    "de": "Was gehört sich bei Festen in deiner Kultur, und was eher nicht?",
+    "es": "¿Qué se debe y qué no se debe hacer en las celebraciones de tu cultura?",
+    "fr": "Que faut-il faire ou éviter lors des fêtes dans ta culture ?",
+    "it": "Che cosa si fa e che cosa non si fa alle feste nella tua cultura?",
+    "pt": "O que se deve e não se deve fazer nas festas da tua cultura?",
+    "pt_BR": "O que se deve e o que não se deve fazer nas festas da sua cultura?"
+   }
+  },
+  {
+   "id": "festivals-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which festival from Africa or the Middle East would you like to know more about?",
+    "de": "Über welches Fest aus Afrika oder dem Nahen Osten möchtest du mehr erfahren?",
+    "es": "¿Sobre qué fiesta de África o de Oriente Medio te gustaría saber más?",
+    "fr": "Sur quelle fête d'Afrique ou du Moyen-Orient aimerais-tu en savoir plus ?",
+    "it": "Di quale festa dell'Africa o del Medio Oriente vorresti sapere di più?",
+    "pt": "Sobre que festa de África ou do Médio Oriente gostavas de saber mais?",
+    "pt_BR": "Sobre qual festa da África ou do Oriente Médio você gostaria de saber mais?"
+   }
+  },
+  {
+   "id": "festivals-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you think festivals help people feel connected to their community?",
+    "de": "Wie helfen Feste deiner Meinung nach, sich mit der Gemeinschaft verbunden zu fühlen?",
+    "es": "¿Cómo crees que las fiestas ayudan a la gente a sentirse unida a su comunidad?",
+    "fr": "Comment les fêtes aident-elles, selon toi, à se sentir lié à sa communauté ?",
+    "it": "Secondo te, in che modo le feste aiutano a sentirsi parte di una comunità?",
+    "pt": "Na tua opinião, como é que as festas ajudam as pessoas a sentir-se ligadas à comunidade?",
+    "pt_BR": "Na sua opinião, como as festas ajudam as pessoas a se sentirem ligadas à comunidade?"
+   }
+  },
+  {
+   "id": "festivals-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which music, film or book festival would you love to attend?",
+    "de": "Welches Musik-, Film- oder Literaturfestival würdest du gern besuchen?",
+    "es": "¿A qué festival de música, cine o libros te encantaría ir?",
+    "fr": "À quel festival de musique, de cinéma ou de livres aimerais-tu aller ?",
+    "it": "A quale festival di musica, cinema o libri ti piacerebbe andare?",
+    "pt": "A que festival de música, cinema ou livros adorarias ir?",
+    "pt_BR": "Qual festival de música, cinema ou livros você adoraria visitar?"
+   }
+  },
+  {
+   "id": "festivals-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you like to share your traditions with friends from other countries?",
+    "de": "Wie teilst du deine Traditionen am liebsten mit Freunden aus anderen Ländern?",
+    "es": "¿Cómo te gusta compartir tus tradiciones con amigos de otros países?",
+    "fr": "Comment aimes-tu partager tes traditions avec des amis d'autres pays ?",
+    "it": "Come ti piace condividere le tue tradizioni con amici di altri paesi?",
+    "pt": "Como gostas de partilhar as tuas tradições com amigos de outros países?",
+    "pt_BR": "Como você gosta de compartilhar suas tradições com amigos de outros países?"
+   }
+  },
+  {
+   "id": "festivals-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which tradition from your culture is the hardest to explain to visitors?",
+    "de": "Welche Tradition deiner Kultur ist für Besucher am schwersten zu erklären?",
+    "es": "¿Qué tradición de tu cultura es la más difícil de explicar a los visitantes?",
+    "fr": "Quelle tradition de ta culture est la plus difficile à expliquer aux visiteurs ?",
+    "it": "Quale tradizione della tua cultura è la più difficile da spiegare ai visitatori?",
+    "pt": "Que tradição da tua cultura é a mais difícil de explicar a quem vem de fora?",
+    "pt_BR": "Qual tradição da sua cultura é a mais difícil de explicar para quem vem de fora?"
+   }
+  },
+  {
+   "id": "festivals-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Do you think traditions should stay the same or evolve with time? Why?",
+    "de": "Sollten Traditionen deiner Meinung nach gleich bleiben oder sich mit der Zeit wandeln? Warum?",
+    "es": "¿Crees que las tradiciones deben mantenerse igual o evolucionar con el tiempo? ¿Por qué?",
+    "fr": "Penses-tu que les traditions doivent rester les mêmes ou évoluer avec le temps ? Pourquoi ?",
+    "it": "Pensi che le tradizioni debbano restare uguali o evolversi col tempo? Perché?",
+    "pt": "Achas que as tradições devem ficar iguais ou evoluir com o tempo? Porquê?",
+    "pt_BR": "Você acha que as tradições devem continuar iguais ou evoluir com o tempo? Por quê?"
+   }
+  },
+  {
+   "id": "festivals-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How can people join another culture's festival respectfully and joyfully?",
+    "de": "Wie kann man respektvoll und mit Freude am Fest einer anderen Kultur teilnehmen?",
+    "es": "¿Cómo se puede participar en la fiesta de otra cultura con respeto y alegría?",
+    "fr": "Comment participer à la fête d'une autre culture avec respect et avec joie ?",
+    "it": "Come si può partecipare alla festa di un'altra cultura con rispetto e allegria?",
+    "pt": "Como se pode participar na festa de outra cultura com respeito e alegria?",
+    "pt_BR": "Como dá para participar da festa de outra cultura com respeito e alegria?"
+   }
+  },
+  {
+   "id": "festivals-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What could make big festivals more sustainable and eco-friendly?",
+    "de": "Was könnte große Feste nachhaltiger und umweltfreundlicher machen?",
+    "es": "¿Qué podría hacer que los grandes festivales fueran más sostenibles y ecológicos?",
+    "fr": "Qu'est-ce qui pourrait rendre les grandes fêtes plus durables et plus écologiques ?",
+    "it": "Che cosa potrebbe rendere i grandi festival più sostenibili ed ecologici?",
+    "pt": "O que poderia tornar as grandes festas mais sustentáveis e amigas do ambiente?",
+    "pt_BR": "O que poderia tornar as grandes festas mais sustentáveis e ecológicas?"
+   }
+  },
+  {
+   "id": "festivals-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think tourism changes a local festival, for better or worse?",
+    "de": "Wie verändert der Tourismus deiner Meinung nach ein lokales Fest, im Guten wie im Schlechten?",
+    "es": "¿Cómo crees que el turismo cambia una fiesta local, para bien o para mal?",
+    "fr": "Comment le tourisme transforme-t-il une fête locale, en bien comme en mal ?",
+    "it": "Secondo te, come cambia il turismo una festa locale, nel bene e nel male?",
+    "pt": "Como achas que o turismo muda uma festa local, para o bem e para o mal?",
+    "pt_BR": "Como você acha que o turismo muda uma festa local, para o bem e para o mal?"
+   }
+  },
+  {
+   "id": "festivals-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which festival deserves to be known worldwide, in your opinion, and why?",
+    "de": "Welches Fest verdient es deiner Meinung nach, weltweit bekannt zu sein, und warum?",
+    "es": "En tu opinión, ¿qué fiesta merece ser conocida en todo el mundo, y por qué?",
+    "fr": "Selon toi, quelle fête mérite d'être connue dans le monde entier, et pourquoi ?",
+    "it": "Secondo te, quale festa meriterebbe di essere conosciuta in tutto il mondo, e perché?",
+    "pt": "Na tua opinião, que festa merece ser conhecida no mundo inteiro, e porquê?",
+    "pt_BR": "Na sua opinião, qual festa merece ser conhecida no mundo todo, e por quê?"
+   }
+  },
+  {
+   "id": "festivals-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you organise a festival that welcomes people from every culture?",
+    "de": "Wie würdest du ein Fest organisieren, das Menschen aller Kulturen willkommen heißt?",
+    "es": "¿Cómo organizarías una fiesta que acoja a personas de todas las culturas?",
+    "fr": "Comment organiserais-tu une fête qui accueille des gens de toutes les cultures ?",
+    "it": "Come organizzeresti una festa che accolga persone di ogni cultura?",
+    "pt": "Como organizarias uma festa que acolhesse pessoas de todas as culturas?",
+    "pt_BR": "Como você organizaria uma festa que acolhesse pessoas de todas as culturas?"
+   }
+  },
+  {
+   "id": "festivals-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What role do festivals play in keeping languages and heritage alive?",
+    "de": "Welche Rolle spielen Feste dabei, Sprachen und kulturelles Erbe lebendig zu halten?",
+    "es": "¿Qué papel tienen las fiestas para mantener vivas las lenguas y el patrimonio?",
+    "fr": "Quel rôle jouent les fêtes pour faire vivre les langues et le patrimoine ?",
+    "it": "Che ruolo hanno le feste nel mantenere vive le lingue e il patrimonio culturale?",
+    "pt": "Que papel têm as festas em manter vivas as línguas e o património?",
+    "pt_BR": "Que papel as festas têm em manter vivos os idiomas e o patrimônio cultural?"
+   }
+  },
+  {
+   "id": "festivals-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you planned a festival trip for next year, which would you choose and how would you prepare?",
+    "de": "Wenn du eine Festreise fürs nächste Jahr planen würdest: Welches Fest und wie würdest du dich vorbereiten?",
+    "es": "Si planearas un viaje a una fiesta para el próximo año, ¿cuál elegirías y cómo te prepararías?",
+    "fr": "Si tu prévoyais un voyage festif l'an prochain, quelle fête choisirais-tu et comment te préparerais-tu ?",
+    "it": "Se programmassi un viaggio per una festa l'anno prossimo, quale sceglieresti e come ti prepareresti?",
+    "pt": "Se planeasses uma viagem a uma festa no próximo ano, qual escolherias e como te prepararias?",
+    "pt_BR": "Se você planejasse uma viagem para uma festa no ano que vem, qual escolheria e como se prepararia?"
+   }
+  },
+  {
+   "id": "festivals-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you think technology will change the way we celebrate in the future?",
+    "de": "Wie wird die Technik deiner Meinung nach unsere Art zu feiern in Zukunft verändern?",
+    "es": "¿Cómo crees que la tecnología cambiará nuestra forma de celebrar en el futuro?",
+    "fr": "Comment la technologie va-t-elle changer, selon toi, notre façon de faire la fête ?",
+    "it": "Secondo te, come cambierà la tecnologia il nostro modo di festeggiare in futuro?",
+    "pt": "Como achas que a tecnologia vai mudar a nossa forma de celebrar no futuro?",
+    "pt_BR": "Como você acha que a tecnologia vai mudar nosso jeito de comemorar no futuro?"
+   }
+  },
+  {
+   "id": "festivals-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which festive symbol or ritual do you find most meaningful, and why?",
+    "de": "Welches Festsymbol oder welches Ritual findest du am bedeutungsvollsten, und warum?",
+    "es": "¿Qué símbolo o ritual festivo te parece más significativo, y por qué?",
+    "fr": "Quel symbole ou rituel de fête trouves-tu le plus porteur de sens, et pourquoi ?",
+    "it": "Quale simbolo o rito delle feste trovi più significativo, e perché?",
+    "pt": "Que símbolo ou ritual de festa achas mais significativo, e porquê?",
+    "pt_BR": "Qual símbolo ou ritual de festa você acha mais significativo, e por quê?"
+   }
+  },
+  {
+   "id": "festivals-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you celebrate when your friends come from many different traditions?",
+    "de": "Wie feierst du, wenn deine Freunde aus vielen verschiedenen Traditionen kommen?",
+    "es": "¿Cómo celebras cuando tus amigos vienen de tradiciones muy distintas?",
+    "fr": "Comment fais-tu la fête quand tes amis viennent de traditions très différentes ?",
+    "it": "Come festeggi quando i tuoi amici vengono da tradizioni molto diverse?",
+    "pt": "Como celebras quando os teus amigos vêm de tradições muito diferentes?",
+    "pt_BR": "Como você comemora quando seus amigos vêm de tradições bem diferentes?"
+   }
+  },
+  {
+   "id": "festivals-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What would you say to someone who thinks festivals are only about partying?",
+    "de": "Was würdest du jemandem sagen, der meint, bei Festen gehe es nur ums Feiern?",
+    "es": "¿Qué le dirías a alguien que piensa que las fiestas solo sirven para divertirse?",
+    "fr": "Que dirais-tu à quelqu'un qui pense que les fêtes servent juste à faire la fête ?",
+    "it": "Che cosa diresti a chi pensa che le feste servano solo a divertirsi?",
+    "pt": "O que dirias a alguém que acha que as festas servem só para a farra?",
+    "pt_BR": "O que você diria para alguém que acha que festa é só curtição?"
+   }
+  },
+  {
+   "id": "festivals-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which tradition would you most like to pass on to the next generation?",
+    "de": "Welche Tradition würdest du am liebsten an die nächste Generation weitergeben?",
+    "es": "¿Qué tradición te gustaría más transmitir a la próxima generación?",
+    "fr": "Quelle tradition aimerais-tu le plus transmettre à la génération suivante ?",
+    "it": "Quale tradizione ti piacerebbe di più trasmettere alla prossima generazione?",
+    "pt": "Que tradição mais gostavas de passar à próxima geração?",
+    "pt_BR": "Qual tradição você mais gostaria de passar para a próxima geração?"
+   }
+  },
+  {
+   "id": "festivals-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What has learning about world festivals taught you about other cultures?",
+    "de": "Was hat dich das Kennenlernen der Feste der Welt über andere Kulturen gelehrt?",
+    "es": "¿Qué te ha enseñado sobre otras culturas conocer las fiestas del mundo?",
+    "fr": "Qu'as-tu appris sur les autres cultures en découvrant les fêtes du monde ?",
+    "it": "Che cosa ti ha insegnato sulle altre culture scoprire le feste del mondo?",
+    "pt": "O que te ensinou sobre outras culturas conhecer as festas do mundo?",
+    "pt_BR": "O que conhecer as festas do mundo te ensinou sobre outras culturas?"
+   }
+  },
+  {
+   "id": "festivals-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What new tradition would you create to bring your community together?",
+    "de": "Welche neue Tradition würdest du schaffen, um deine Gemeinschaft zusammenzubringen?",
+    "es": "¿Qué nueva tradición crearías para unir a tu comunidad?",
+    "fr": "Quelle nouvelle tradition créerais-tu pour rassembler ta communauté ?",
+    "it": "Quale nuova tradizione creeresti per unire la tua comunità?",
+    "pt": "Que nova tradição criarias para unir a tua comunidade?",
+    "pt_BR": "Que nova tradição você criaria para unir sua comunidade?"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The home",
+     "g": "Name the rooms and furniture of a home in French.",
+     "p": [
+      "Rooms: la cuisine (kitchen), le salon (living room), la chambre (bedroom), la salle de bains, les toilettes.",
+      "Furniture: le canapé (sofa), la table, la chaise, le lit (bed), l'armoire (wardrobe), le frigo.",
+      "Describe your place with il y a and avoir: chez moi, il y a deux chambres; j'ai un petit balcon."
+     ],
+     "q": "Describe your home to me: how many rooms, and what is your favourite one?",
+     "c": "Walk through your home today and name every room and three pieces of furniture in French."
+    },
+    "de": {
+     "t": "Das Zuhause",
+     "g": "Du benennst Zimmer und Möbel einer Wohnung auf Französisch.",
+     "p": [
+      "Zimmer: la cuisine (Küche), le salon (Wohnzimmer), la chambre (Schlafzimmer), la salle de bains, les toilettes.",
+      "Möbel: le canapé (Sofa), la table, la chaise, le lit (Bett), l'armoire (Schrank), le frigo.",
+      "Beschreib deine Wohnung mit il y a und avoir: chez moi, il y a deux chambres; j'ai un petit balcon."
+     ],
+     "q": "Beschreib mir dein Zuhause: wie viele Zimmer, und welches ist dein Lieblingszimmer?",
+     "c": "Geh heute durch deine Wohnung und benenne jedes Zimmer und drei Möbelstücke auf Französisch."
+    },
+    "es": {
+     "t": "La casa",
+     "g": "Nombra las habitaciones y los muebles de una casa en francés.",
+     "p": [
+      "Habitaciones: la cuisine (cocina), le salon (salón), la chambre (dormitorio), la salle de bains, les toilettes.",
+      "Muebles: le canapé (sofá), la table, la chaise, le lit (cama), l'armoire (armario), le frigo.",
+      "Describe tu casa con il y a y avoir: chez moi, il y a deux chambres; j'ai un petit balcon."
+     ],
+     "q": "Descríbeme tu casa: ¿cuántas habitaciones tiene y cuál es tu favorita?",
+     "c": "Recorre hoy tu casa y nombra en francés cada habitación y tres muebles."
+    },
+    "fr": {
+     "t": "Le logement",
+     "g": "Nommer les pièces et les meubles d'un logement.",
+     "p": [
+      "Les pièces : la cuisine, le salon, la chambre, la salle de bains, les toilettes, l'entrée.",
+      "Les meubles : le canapé, la table, la chaise, le lit, l'armoire, le frigo, l'étagère.",
+      "Pour décrire : chez moi, il y a deux chambres ; j'ai un petit balcon ; c'est un appartement lumineux."
+     ],
+     "q": "Décris-moi ton logement : combien de pièces, et quelle est ta pièce préférée ?",
+     "c": "Fais le tour de chez toi aujourd'hui et nomme chaque pièce et trois meubles."
+    },
+    "it": {
+     "t": "La casa",
+     "g": "Nomina le stanze e i mobili di una casa in francese.",
+     "p": [
+      "Stanze: la cuisine (cucina), le salon (soggiorno), la chambre (camera da letto), la salle de bains, les toilettes.",
+      "Mobili: le canapé (divano), la table, la chaise, le lit (letto), l'armoire (armadio), le frigo.",
+      "Descrivi casa tua con il y a e avoir: chez moi, il y a deux chambres; j'ai un petit balcon."
+     ],
+     "q": "Descrivimi casa tua: quante stanze ha e qual è la tua preferita?",
+     "c": "Oggi fai il giro di casa e nomina in francese ogni stanza e tre mobili."
+    },
+    "pt": {
+     "t": "A casa",
+     "g": "Dizer as divisões e os móveis de uma casa em francês.",
+     "p": [
+      "Divisões: la cuisine (cozinha), le salon (sala), la chambre (quarto), la salle de bains (casa de banho), les toilettes.",
+      "Móveis: le canapé (sofá), la table, la chaise, le lit (cama), l'armoire (roupeiro), le frigo.",
+      "Descreve a tua casa com il y a e avoir: chez moi, il y a deux chambres; j'ai un petit balcon."
+     ],
+     "q": "Descreve-me a tua casa: quantas divisões tem e qual é a tua preferida?",
+     "c": "Percorre hoje a tua casa e diz em francês cada divisão e três móveis."
+    },
+    "pt_BR": {
+     "t": "A casa",
+     "g": "Dizer os cômodos e os móveis de uma casa em francês.",
+     "p": [
+      "Cômodos: la cuisine (cozinha), le salon (sala), la chambre (quarto), la salle de bains (banheiro), les toilettes.",
+      "Móveis: le canapé (sofá), la table, la chaise, le lit (cama), l'armoire (guarda-roupa), le frigo (geladeira).",
+      "Descreva sua casa com il y a e avoir: chez moi, il y a deux chambres; j'ai un petit balcon."
+     ],
+     "q": "Descreva sua casa para mim: quantos cômodos tem e qual é o seu favorito?",
+     "c": "Hoje percorra sua casa e diga em francês cada cômodo e três móveis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la cuisine",
+      "ex": "La cuisine est petite mais pratique."
+     },
+     {
+      "w": "le salon",
+      "ex": "On regarde la télé dans le salon."
+     },
+     {
+      "w": "la chambre",
+      "ex": "Ma chambre donne sur le jardin."
+     },
+     {
+      "w": "la salle de bains",
+      "ex": "La salle de bains est à côté."
+     },
+     {
+      "w": "le canapé",
+      "ex": "Le chat dort sur le canapé."
+     },
+     {
+      "w": "le lit",
+      "ex": "Mon lit est très confortable."
+     }
+    ],
+    "gram": "Décrire un logement : chez moi, il y a + pièces ; j'ai un balcon. Chez moi = à la maison. Une pièce = une salle de la maison."
+   }
+  },
+  {
+   "d": 52,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prepositions of place",
+     "g": "Say exactly where things are in French with small words of place.",
+     "p": [
+      "Basics: sur (on), sous (under), dans (in), devant (in front of), derrière (behind), entre (between).",
+      "Some end in de: à côté de (next to), en face de (opposite), près de (near), loin de (far from).",
+      "Remember de + le = du and de + les = des: à côté du lit, près des fenêtres."
+     ],
+     "q": "Where is your phone right now? Describe its position with a preposition.",
+     "c": "Hide an object at home and describe its position in French in two sentences."
+    },
+    "de": {
+     "t": "Präpositionen des Ortes",
+     "g": "Du sagst auf Französisch genau, wo sich Dinge befinden.",
+     "p": [
+      "Grundlagen: sur (auf), sous (unter), dans (in), devant (vor), derrière (hinter), entre (zwischen).",
+      "Manche enden auf de: à côté de (neben), en face de (gegenüber), près de (nahe bei), loin de (weit von).",
+      "Denk dran: de + le = du und de + les = des: à côté du lit, près des fenêtres."
+     ],
+     "q": "Wo ist dein Handy gerade? Beschreib seine Lage mit einer Präposition.",
+     "c": "Versteck zu Hause einen Gegenstand und beschreib seine Lage in zwei französischen Sätzen."
+    },
+    "es": {
+     "t": "Preposiciones de lugar",
+     "g": "Di exactamente dónde están las cosas en francés con pequeñas palabras de lugar.",
+     "p": [
+      "Lo básico: sur (sobre), sous (debajo de), dans (en, dentro de), devant (delante de), derrière (detrás de), entre (entre).",
+      "Algunas terminan en de: à côté de (al lado de), en face de (enfrente de), près de (cerca de), loin de (lejos de).",
+      "Recuerda de + le = du y de + les = des: à côté du lit, près des fenêtres, como del en español."
+     ],
+     "q": "¿Dónde está tu móvil ahora? Describe su posición con una preposición.",
+     "c": "Esconde un objeto en casa y describe su posición en francés con dos frases."
+    },
+    "fr": {
+     "t": "Les prépositions de lieu",
+     "g": "Situer précisément les objets avec les prépositions de lieu.",
+     "p": [
+      "Les bases : sur, sous, dans, devant, derrière, entre.",
+      "Certaines se construisent avec de : à côté de, en face de, près de, loin de, au-dessus de.",
+      "Attention aux contractions : à côté du lit (de + le), près des fenêtres (de + les)."
+     ],
+     "q": "Où est ton téléphone en ce moment ? Décris sa position avec une préposition.",
+     "c": "Cache un objet chez toi et décris sa position en deux phrases."
+    },
+    "it": {
+     "t": "Preposizioni di luogo",
+     "g": "Di' esattamente dove sono le cose in francese con le preposizioni di luogo.",
+     "p": [
+      "Le basi: sur (su), sous (sotto), dans (in, dentro), devant (davanti a), derrière (dietro), entre (tra).",
+      "Alcune finiscono con de: à côté de (accanto a), en face de (di fronte a), près de (vicino a), loin de (lontano da).",
+      "Ricorda de + le = du e de + les = des: à côté du lit, près des fenêtres, come del e dei."
+     ],
+     "q": "Dov'è il tuo telefono adesso? Descrivi la sua posizione con una preposizione.",
+     "c": "Nascondi un oggetto in casa e descrivi la sua posizione in francese con due frasi."
+    },
+    "pt": {
+     "t": "Preposições de lugar",
+     "g": "Dizer exatamente onde estão as coisas em francês com pequenas palavras de lugar.",
+     "p": [
+      "O básico: sur (em cima de), sous (debaixo de), dans (dentro de), devant (à frente de), derrière (atrás de), entre (entre).",
+      "Algumas acabam em de: à côté de (ao lado de), en face de (em frente de), près de (perto de), loin de (longe de).",
+      "Lembra-te: de + le = du e de + les = des: à côté du lit, près des fenêtres, como do e dos."
+     ],
+     "q": "Onde está o teu telemóvel agora? Descreve a posição dele com uma preposição.",
+     "c": "Esconde um objeto em casa e descreve a posição dele em francês com duas frases."
+    },
+    "pt_BR": {
+     "t": "Preposições de lugar",
+     "g": "Dizer exatamente onde as coisas estão em francês com palavrinhas de lugar.",
+     "p": [
+      "O básico: sur (em cima de), sous (embaixo de), dans (dentro de), devant (na frente de), derrière (atrás de), entre (entre).",
+      "Algumas terminam em de: à côté de (ao lado de), en face de (em frente a), près de (perto de), loin de (longe de).",
+      "Lembre: de + le = du e de + les = des: à côté du lit, près des fenêtres, como do e dos."
+     ],
+     "q": "Onde está seu celular agora? Descreva a posição dele com uma preposição.",
+     "c": "Esconda um objeto em casa e descreva a posição dele em francês com duas frases."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sur",
+      "ex": "Les clés sont sur la table."
+     },
+     {
+      "w": "sous",
+      "ex": "Le chat est sous le lit."
+     },
+     {
+      "w": "dans",
+      "ex": "Le lait est dans le frigo."
+     },
+     {
+      "w": "derrière",
+      "ex": "Le jardin est derrière la maison."
+     },
+     {
+      "w": "à côté de",
+      "ex": "La lampe est à côté du canapé."
+     },
+     {
+      "w": "entre",
+      "ex": "La banque est entre la poste et le café."
+     }
+    ],
+    "gram": "Sur, sous, dans, devant, derrière, entre. À côté de, en face de, près de, loin de : de + le = du, de + les = des."
+   }
+  },
+  {
+   "d": 53,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessive adjectives",
+     "g": "Use all French words for my, your, his, her, our and their.",
+     "p": [
+      "One owner: mon, ma, mes (my); ton, ta, tes (your, with tu); son, sa, ses (his or her).",
+      "Several owners: notre, nos (our); votre, vos (your, with vous); leur, leurs (their).",
+      "The form agrees with the thing owned, not the owner: son vélo can be his bike or her bike; sa maison too."
+     ],
+     "q": "Tell me about a friend: his or her name, city and family, using son, sa and ses.",
+     "c": "Write five sentences about your friends' or family's things using five different possessives."
+    },
+    "de": {
+     "t": "Possessivbegleiter",
+     "g": "Du nutzt alle französischen Wörter für mein, dein, sein, ihr, unser und euer.",
+     "p": [
+      "Ein Besitzer: mon, ma, mes (mein); ton, ta, tes (dein); son, sa, ses (sein oder ihr).",
+      "Mehrere Besitzer: notre, nos (unser); votre, vos (euer, Ihr); leur, leurs (ihr, von mehreren).",
+      "Die Form richtet sich nach dem Besitz, nicht nach dem Besitzer: son vélo heißt sein oder ihr Fahrrad."
+     ],
+     "q": "Erzähl mir von einem Freund oder einer Freundin: Name, Stadt und Familie, mit son, sa und ses.",
+     "c": "Schreib fünf Sätze über Dinge von Freunden oder Familie mit fünf verschiedenen Possessivbegleitern."
+    },
+    "es": {
+     "t": "Adjetivos posesivos",
+     "g": "Usa todas las formas francesas de mi, tu, su, nuestro, vuestro y su.",
+     "p": [
+      "Un dueño: mon, ma, mes (mi); ton, ta, tes (tu); son, sa, ses (su, de él o de ella).",
+      "Varios dueños: notre, nos (nuestro); votre, vos (vuestro o su de usted); leur, leurs (su, de ellos).",
+      "La forma concuerda con lo poseído, no con el dueño: son vélo puede ser la bici de él o de ella."
+     ],
+     "q": "Háblame de un amigo: su nombre, su ciudad y su familia, con son, sa y ses.",
+     "c": "Escribe cinco frases sobre cosas de tus amigos o familia con cinco posesivos distintos."
+    },
+    "fr": {
+     "t": "Les adjectifs possessifs",
+     "g": "Employer tous les adjectifs possessifs et leurs formes.",
+     "p": [
+      "Un possesseur : mon, ma, mes ; ton, ta, tes ; son, sa, ses.",
+      "Plusieurs possesseurs : notre, nos ; votre, vos ; leur, leurs.",
+      "Le possessif s'accorde avec l'objet possédé : son vélo peut être celui d'un homme ou d'une femme."
+     ],
+     "q": "Parle-moi d'un ami : son prénom, sa ville et sa famille, avec son, sa et ses.",
+     "c": "Écris cinq phrases sur les affaires de tes proches avec cinq possessifs différents."
+    },
+    "it": {
+     "t": "Aggettivi possessivi",
+     "g": "Usa tutte le forme francesi di mio, tuo, suo, nostro, vostro e loro.",
+     "p": [
+      "Un possessore: mon, ma, mes (mio); ton, ta, tes (tuo); son, sa, ses (suo, di lui o di lei).",
+      "Più possessori: notre, nos (nostro); votre, vos (vostro, suo di cortesia); leur, leurs (loro).",
+      "Come in italiano, la forma si accorda con la cosa posseduta: son vélo è la bici di lui o di lei. Niente articolo!"
+     ],
+     "q": "Parlami di un amico: il suo nome, la sua città e la sua famiglia, con son, sa e ses.",
+     "c": "Scrivi cinque frasi sulle cose di amici o parenti con cinque possessivi diversi."
+    },
+    "pt": {
+     "t": "Adjetivos possessivos",
+     "g": "Usar todas as formas francesas de meu, teu, seu, nosso, vosso e deles.",
+     "p": [
+      "Um dono: mon, ma, mes (meu); ton, ta, tes (teu); son, sa, ses (dele ou dela).",
+      "Vários donos: notre, nos (nosso); votre, vos (vosso ou seu, formal); leur, leurs (deles).",
+      "A forma concorda com a coisa possuída, não com o dono: son vélo pode ser a bicicleta dele ou dela."
+     ],
+     "q": "Fala-me de um amigo: o nome, a cidade e a família dele, com son, sa e ses.",
+     "c": "Escreve cinco frases sobre coisas de amigos ou família com cinco possessivos diferentes."
+    },
+    "pt_BR": {
+     "t": "Adjetivos possessivos",
+     "g": "Usar todas as formas francesas de meu, teu, seu, nosso, de vocês e deles.",
+     "p": [
+      "Um dono: mon, ma, mes (meu); ton, ta, tes (teu); son, sa, ses (dele ou dela).",
+      "Vários donos: notre, nos (nosso); votre, vos (de vocês ou do senhor); leur, leurs (deles).",
+      "A forma concorda com a coisa possuída, não com o dono: son vélo pode ser a bicicleta dele ou dela."
+     ],
+     "q": "Me fale de um amigo: o nome, a cidade e a família dele, com son, sa e ses.",
+     "c": "Escreva cinco frases sobre coisas de amigos ou família com cinco possessivos diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ton, ta, tes",
+      "ex": "C'est ta voiture ou ton vélo ?"
+     },
+     {
+      "w": "son, sa, ses",
+      "ex": "Marie adore son chien et ses chats."
+     },
+     {
+      "w": "notre",
+      "ex": "Notre appartement est au troisième étage."
+     },
+     {
+      "w": "votre",
+      "ex": "Votre passeport, s'il vous plaît."
+     },
+     {
+      "w": "leur",
+      "ex": "Ils vendent leur maison."
+     },
+     {
+      "w": "leurs",
+      "ex": "Les enfants rangent leurs jouets."
+     }
+    ],
+    "gram": "Mon/ma/mes, ton/ta/tes, son/sa/ses, notre/nos, votre/vos, leur/leurs. Accord avec l'objet : sa maison (de Paul ou de Léa)."
+   }
+  },
+  {
+   "d": 54,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Demonstratives ce, cet, cette, ces",
+     "g": "Point at things in French with ce, cet, cette and ces.",
+     "p": [
+      "Ce goes with masculine nouns (ce livre), cette with feminine ones (cette ville), ces with plurals (ces gens).",
+      "Cet replaces ce before a masculine noun starting with a vowel or silent h: cet ami, cet hôtel.",
+      "Add -ci (here) or -là (there) to contrast: ce pull-ci ou ce pull-là? This one or that one?"
+     ],
+     "q": "Look around you. Point at two things with ce, cet, cette or ces and describe them.",
+     "c": "Compare two items in a shop or at home today with -ci and -là, like cette tasse-ci est plus jolie."
+    },
+    "de": {
+     "t": "Demonstrativa ce, cet, cette, ces",
+     "g": "Du zeigst auf Französisch auf Dinge mit ce, cet, cette und ces.",
+     "p": [
+      "Ce steht bei männlichen Nomen (ce livre), cette bei weiblichen (cette ville), ces im Plural (ces gens).",
+      "Cet ersetzt ce vor männlichen Nomen mit Vokal oder stummem h: cet ami, cet hôtel.",
+      "Mit -ci (hier) oder -là (dort) unterscheidet man: ce pull-ci ou ce pull-là? Dieser oder der da?"
+     ],
+     "q": "Schau dich um. Zeig auf zwei Dinge mit ce, cet, cette oder ces und beschreib sie.",
+     "c": "Vergleiche heute zwei Dinge im Laden oder zu Hause mit -ci und -là, etwa cette tasse-ci est plus jolie."
+    },
+    "es": {
+     "t": "Demostrativos ce, cet, cette, ces",
+     "g": "Señala cosas en francés con ce, cet, cette y ces.",
+     "p": [
+      "Ce va con masculinos (ce livre), cette con femeninos (cette ville), ces con plurales (ces gens).",
+      "Cet sustituye a ce ante un masculino que empieza por vocal o h muda: cet ami, cet hôtel.",
+      "Añade -ci (aquí) o -là (allí) para contrastar: ce pull-ci ou ce pull-là? ¿Este o ese?"
+     ],
+     "q": "Mira a tu alrededor. Señala dos cosas con ce, cet, cette o ces y descríbelas.",
+     "c": "Compara hoy dos objetos en una tienda o en casa con -ci y -là, como cette tasse-ci est plus jolie."
+    },
+    "fr": {
+     "t": "Les démonstratifs ce, cet, cette, ces",
+     "g": "Désigner des objets avec ce, cet, cette et ces.",
+     "p": [
+      "Ce avec un nom masculin (ce livre), cette avec un nom féminin (cette ville), ces au pluriel (ces gens).",
+      "Cet remplace ce devant un nom masculin qui commence par une voyelle ou un h muet : cet ami, cet hôtel.",
+      "On ajoute -ci ou -là pour opposer deux objets : ce pull-ci ou ce pull-là ?"
+     ],
+     "q": "Regarde autour de toi. Désigne deux objets avec ce, cet, cette ou ces et décris-les.",
+     "c": "Compare deux objets aujourd'hui avec -ci et -là, par exemple : cette tasse-ci est plus jolie."
+    },
+    "it": {
+     "t": "Dimostrativi ce, cet, cette, ces",
+     "g": "Indica le cose in francese con ce, cet, cette e ces.",
+     "p": [
+      "Ce va con i maschili (ce livre), cette con i femminili (cette ville), ces con i plurali (ces gens).",
+      "Cet sostituisce ce davanti a un maschile che inizia per vocale o h muta: cet ami, cet hôtel.",
+      "Aggiungi -ci (qui) o -là (lì) per distinguere: ce pull-ci ou ce pull-là? Questo o quello?"
+     ],
+     "q": "Guardati intorno. Indica due cose con ce, cet, cette o ces e descrivile.",
+     "c": "Oggi confronta due oggetti in un negozio o a casa con -ci e -là, come cette tasse-ci est plus jolie."
+    },
+    "pt": {
+     "t": "Demonstrativos ce, cet, cette, ces",
+     "g": "Apontar para coisas em francês com ce, cet, cette e ces.",
+     "p": [
+      "Ce vai com masculinos (ce livre), cette com femininos (cette ville), ces com plurais (ces gens).",
+      "Cet substitui ce antes de um masculino começado por vogal ou h mudo: cet ami, cet hôtel.",
+      "Junta -ci (aqui) ou -là (ali) para contrastar: ce pull-ci ou ce pull-là? Este ou aquele?"
+     ],
+     "q": "Olha à tua volta. Aponta para duas coisas com ce, cet, cette ou ces e descreve-as.",
+     "c": "Compara hoje dois objetos numa loja ou em casa com -ci e -là, como cette tasse-ci est plus jolie."
+    },
+    "pt_BR": {
+     "t": "Demonstrativos ce, cet, cette, ces",
+     "g": "Apontar para coisas em francês com ce, cet, cette e ces.",
+     "p": [
+      "Ce vai com masculinos (ce livre), cette com femininos (cette ville), ces com plurais (ces gens).",
+      "Cet substitui ce antes de masculino que começa com vogal ou h mudo: cet ami, cet hôtel.",
+      "Acrescente -ci (aqui) ou -là (lá) para comparar: ce pull-ci ou ce pull-là? Este ou aquele?"
+     ],
+     "q": "Olhe ao seu redor. Aponte para duas coisas com ce, cet, cette ou ces e descreva-as.",
+     "c": "Hoje compare dois objetos numa loja ou em casa com -ci e -là, como cette tasse-ci est plus jolie."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ce livre",
+      "ex": "Ce livre est passionnant."
+     },
+     {
+      "w": "cet ami",
+      "ex": "Cet ami habite à Genève."
+     },
+     {
+      "w": "cet hôtel",
+      "ex": "Cet hôtel est très calme."
+     },
+     {
+      "w": "cette ville",
+      "ex": "J'adore cette ville !"
+     },
+     {
+      "w": "ces gens",
+      "ex": "Ces gens sont très accueillants."
+     },
+     {
+      "w": "celui-ci, -ci, -là",
+      "ex": "Je préfère cette robe-ci, pas celle-là."
+     }
+    ],
+    "gram": "Ce + masculin, cet + masculin devant voyelle ou h muet, cette + féminin, ces + pluriel. -ci (proche) / -là (loin)."
+   }
+  },
+  {
+   "d": 55,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Pouvoir, vouloir, devoir",
+     "g": "Use can, want and must in French, each followed by an infinitive.",
+     "p": [
+      "Pouvoir (can): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent.",
+      "Vouloir (want): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent.",
+      "Devoir (must): je dois, tu dois, il doit, nous devons, vous devez, ils doivent; then an infinitive: je dois partir."
+     ],
+     "q": "What do you want to do this week, and what must you do? Use je veux and je dois.",
+     "c": "Write three sentences about your day: one with je peux, one with je veux and one with je dois."
+    },
+    "de": {
+     "t": "Pouvoir, vouloir, devoir",
+     "g": "Du nutzt können, wollen und müssen auf Französisch, jeweils mit Infinitiv.",
+     "p": [
+      "Pouvoir (können): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent.",
+      "Vouloir (wollen): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent.",
+      "Devoir (müssen): je dois, tu dois, il doit, nous devons, vous devez, ils doivent; dann Infinitiv: je dois partir."
+     ],
+     "q": "Was willst du diese Woche machen, und was musst du machen? Nutze je veux und je dois.",
+     "c": "Schreib drei Sätze über deinen Tag: einen mit je peux, einen mit je veux und einen mit je dois."
+    },
+    "es": {
+     "t": "Pouvoir, vouloir, devoir",
+     "g": "Usa poder, querer y deber en francés, siempre seguidos de infinitivo.",
+     "p": [
+      "Pouvoir (poder): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent.",
+      "Vouloir (querer): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent.",
+      "Devoir (deber, tener que): je dois, tu dois, il doit, nous devons, vous devez, ils doivent; luego infinitivo: je dois partir."
+     ],
+     "q": "¿Qué quieres hacer esta semana y qué tienes que hacer? Usa je veux y je dois.",
+     "c": "Escribe tres frases sobre tu día: una con je peux, otra con je veux y otra con je dois."
+    },
+    "fr": {
+     "t": "Pouvoir, vouloir, devoir",
+     "g": "Employer pouvoir, vouloir et devoir suivis d'un infinitif.",
+     "p": [
+      "Pouvoir : je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent.",
+      "Vouloir : je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent.",
+      "Devoir : je dois, tu dois, il doit, nous devons, vous devez, ils doivent ; puis l'infinitif : je dois partir."
+     ],
+     "q": "Qu'est-ce que tu veux faire cette semaine, et qu'est-ce que tu dois faire ?",
+     "c": "Écris trois phrases sur ta journée : une avec je peux, une avec je veux et une avec je dois."
+    },
+    "it": {
+     "t": "Pouvoir, vouloir, devoir",
+     "g": "Usa potere, volere e dovere in francese, seguiti da un infinito.",
+     "p": [
+      "Pouvoir (potere): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent.",
+      "Vouloir (volere): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent.",
+      "Devoir (dovere): je dois, tu dois, il doit, nous devons, vous devez, ils doivent; poi l'infinito: je dois partir."
+     ],
+     "q": "Cosa vuoi fare questa settimana e cosa devi fare? Usa je veux e je dois.",
+     "c": "Scrivi tre frasi sulla tua giornata: una con je peux, una con je veux e una con je dois."
+    },
+    "pt": {
+     "t": "Pouvoir, vouloir, devoir",
+     "g": "Usar poder, querer e dever em francês, sempre seguidos de infinitivo.",
+     "p": [
+      "Pouvoir (poder): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent.",
+      "Vouloir (querer): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent.",
+      "Devoir (dever, ter de): je dois, tu dois, il doit, nous devons, vous devez, ils doivent; depois infinitivo: je dois partir."
+     ],
+     "q": "O que queres fazer esta semana e o que tens de fazer? Usa je veux e je dois.",
+     "c": "Escreve três frases sobre o teu dia: uma com je peux, outra com je veux e outra com je dois."
+    },
+    "pt_BR": {
+     "t": "Pouvoir, vouloir, devoir",
+     "g": "Usar poder, querer e dever em francês, sempre seguidos de infinitivo.",
+     "p": [
+      "Pouvoir (poder): je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent.",
+      "Vouloir (querer): je veux, tu veux, il veut, nous voulons, vous voulez, ils veulent.",
+      "Devoir (dever, ter que): je dois, tu dois, il doit, nous devons, vous devez, ils doivent; depois infinitivo: je dois partir."
+     ],
+     "q": "O que você quer fazer esta semana e o que precisa fazer? Use je veux e je dois.",
+     "c": "Escreva três frases sobre o seu dia: uma com je peux, outra com je veux e outra com je dois."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je peux",
+      "ex": "Je peux ouvrir la fenêtre ?"
+     },
+     {
+      "w": "vous pouvez",
+      "ex": "Vous pouvez répéter, s'il vous plaît ?"
+     },
+     {
+      "w": "je veux",
+      "ex": "Je veux apprendre le piano."
+     },
+     {
+      "w": "ils veulent",
+      "ex": "Ils veulent visiter Paris."
+     },
+     {
+      "w": "je dois",
+      "ex": "Je dois travailler demain."
+     },
+     {
+      "w": "nous devons",
+      "ex": "Nous devons partir à huit heures."
+     }
+    ],
+    "gram": "Pouvoir, vouloir, devoir + infinitif : je peux venir, je veux partir, je dois travailler. Négation : je ne peux pas venir."
+   }
+  },
+  {
+   "d": 56,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Near future: aller + infinitive",
+     "g": "Talk about your plans in French with the futur proche.",
+     "p": [
+      "Take aller in the present and add an infinitive: je vais voyager, tu vas manger, nous allons sortir.",
+      "It is the most common way to talk about the near future in everyday French: ce soir, je vais lire.",
+      "For the negative, wrap aller: je ne vais pas travailler demain. Time words: ce soir, demain, ce week-end."
+     ],
+     "q": "Qu'est-ce que tu vas faire ce week-end? Tell me three plans with je vais.",
+     "c": "Write your plans for tomorrow in five sentences, all in the futur proche."
+    },
+    "de": {
+     "t": "Nahe Zukunft: aller + Infinitiv",
+     "g": "Du sprichst auf Französisch über deine Pläne mit dem futur proche.",
+     "p": [
+      "Nimm aller im Präsens und füge einen Infinitiv hinzu: je vais voyager, tu vas manger, nous allons sortir.",
+      "So spricht man im Alltag am häufigsten über die nahe Zukunft: ce soir, je vais lire.",
+      "Bei Verneinung wird aller eingerahmt: je ne vais pas travailler demain. Zeitwörter: ce soir, demain, ce week-end."
+     ],
+     "q": "Qu'est-ce que tu vas faire ce week-end? Nenn mir drei Pläne mit je vais.",
+     "c": "Schreib deine Pläne für morgen in fünf Sätzen, alle im futur proche."
+    },
+    "es": {
+     "t": "Futuro próximo: aller + infinitivo",
+     "g": "Habla de tus planes en francés con el futur proche.",
+     "p": [
+      "Usa aller en presente más un infinitivo, como ir a en español: je vais voyager, voy a viajar.",
+      "Es la forma más común de hablar del futuro cercano en el francés diario: ce soir, je vais lire.",
+      "En negativa, aller queda en medio: je ne vais pas travailler demain. Palabras de tiempo: ce soir, demain, ce week-end."
+     ],
+     "q": "Qu'est-ce que tu vas faire ce week-end? Dime tres planes con je vais.",
+     "c": "Escribe tus planes para mañana en cinco frases, todas en futur proche."
+    },
+    "fr": {
+     "t": "Le futur proche : aller + infinitif",
+     "g": "Parler de ses projets avec le futur proche.",
+     "p": [
+      "On conjugue aller au présent et on ajoute l'infinitif : je vais voyager, nous allons sortir.",
+      "C'est la façon la plus courante d'évoquer un avenir proche à l'oral : ce soir, je vais lire.",
+      "À la forme négative, la négation encadre aller : je ne vais pas travailler demain."
+     ],
+     "q": "Qu'est-ce que tu vas faire ce week-end ? Cite trois projets avec je vais.",
+     "c": "Écris tes projets pour demain en cinq phrases, toutes au futur proche."
+    },
+    "it": {
+     "t": "Futuro prossimo: aller + infinito",
+     "g": "Parla dei tuoi programmi in francese con il futur proche.",
+     "p": [
+      "Prendi aller al presente e aggiungi un infinito: je vais voyager (sto per viaggiare, viaggerò).",
+      "È il modo più comune di parlare del futuro vicino nel francese di tutti i giorni: ce soir, je vais lire.",
+      "Nella negazione aller sta in mezzo: je ne vais pas travailler demain. Parole di tempo: ce soir, demain, ce week-end."
+     ],
+     "q": "Qu'est-ce que tu vas faire ce week-end? Dimmi tre programmi con je vais.",
+     "c": "Scrivi i tuoi programmi per domani in cinque frasi, tutte al futur proche."
+    },
+    "pt": {
+     "t": "Futuro próximo: aller + infinitivo",
+     "g": "Falar dos teus planos em francês com o futur proche.",
+     "p": [
+      "Usa aller no presente mais um infinitivo, como ir + verbo em português: je vais voyager, vou viajar.",
+      "É a forma mais comum de falar do futuro próximo no francês do dia a dia: ce soir, je vais lire.",
+      "Na negativa, aller fica no meio: je ne vais pas travailler demain. Palavras de tempo: ce soir, demain, ce week-end."
+     ],
+     "q": "Qu'est-ce que tu vas faire ce week-end? Diz-me três planos com je vais.",
+     "c": "Escreve os teus planos para amanhã em cinco frases, todas no futur proche."
+    },
+    "pt_BR": {
+     "t": "Futuro próximo: aller + infinitivo",
+     "g": "Falar dos seus planos em francês com o futur proche.",
+     "p": [
+      "Use aller no presente mais um infinitivo, igual ao ir + verbo do português: je vais voyager, vou viajar.",
+      "É o jeito mais comum de falar do futuro próximo no francês do dia a dia: ce soir, je vais lire.",
+      "Na negativa, aller fica no meio: je ne vais pas travailler demain. Palavras de tempo: ce soir, demain, ce week-end."
+     ],
+     "q": "Qu'est-ce que tu vas faire ce week-end? Me conte três planos com je vais.",
+     "c": "Escreva seus planos para amanhã em cinco frases, todas no futur proche."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je vais voyager",
+      "ex": "Cet été, je vais voyager en Italie."
+     },
+     {
+      "w": "tu vas venir",
+      "ex": "Tu vas venir à la fête ?"
+     },
+     {
+      "w": "on va manger",
+      "ex": "Ce soir, on va manger au restaurant."
+     },
+     {
+      "w": "ce week-end",
+      "ex": "Ce week-end, nous allons nous reposer."
+     },
+     {
+      "w": "demain",
+      "ex": "Demain, il va pleuvoir."
+     },
+     {
+      "w": "je ne vais pas",
+      "ex": "Je ne vais pas sortir ce soir."
+     }
+    ],
+    "gram": "Futur proche : aller au présent + infinitif. Je vais partir. Négation : je ne vais pas partir."
+   }
+  },
+  {
+   "d": 57,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Making plans with friends",
+     "g": "Invite friends in French, and accept or decline kindly.",
+     "p": [
+      "Invite with tu es libre samedi? (are you free on Saturday?), ça te dit de...? or on va au cinéma?",
+      "Accept with avec plaisir!, d'accord!, bonne idée! or carrément! (absolutely, casual).",
+      "Decline kindly: désolé, je ne peux pas, je suis pris (busy); then suggest another time: une autre fois?"
+     ],
+     "q": "Invite me to do something this weekend in French. I will answer you!",
+     "c": "Send or imagine a French message inviting a friend out, and write both a yes and a no reply."
+    },
+    "de": {
+     "t": "Pläne mit Freunden",
+     "g": "Du lädst Freunde auf Französisch ein und sagst freundlich zu oder ab.",
+     "p": [
+      "Einladen: tu es libre samedi? (hast du Samstag Zeit?), ça te dit de...? oder on va au cinéma?",
+      "Zusagen: avec plaisir!, d'accord!, bonne idée! oder carrément! (auf jeden Fall, locker).",
+      "Freundlich absagen: désolé, je ne peux pas, je suis pris (ich habe schon was vor); dann: une autre fois?"
+     ],
+     "q": "Lade mich auf Französisch zu etwas am Wochenende ein. Ich antworte dir!",
+     "c": "Schreib oder stell dir eine französische Einladung an einen Freund vor, mit einer Zusage und einer Absage."
+    },
+    "es": {
+     "t": "Hacer planes con amigos",
+     "g": "Invita a amigos en francés y acepta o rechaza con amabilidad.",
+     "p": [
+      "Invita con tu es libre samedi? (¿estás libre el sábado?), ça te dit de...? o on va au cinéma?",
+      "Acepta con avec plaisir!, d'accord!, bonne idée! o carrément! (claro que sí, coloquial).",
+      "Rechaza con amabilidad: désolé, je ne peux pas, je suis pris (estoy ocupado); y propón: une autre fois?"
+     ],
+     "q": "Invítame a hacer algo este fin de semana en francés. ¡Te respondo!",
+     "c": "Envía o imagina un mensaje en francés invitando a un amigo y escribe una respuesta con sí y otra con no."
+    },
+    "fr": {
+     "t": "Faire des projets entre amis",
+     "g": "Inviter des amis, accepter ou refuser gentiment.",
+     "p": [
+      "Pour inviter : tu es libre samedi ? ça te dit d'aller au ciné ? on va boire un verre ?",
+      "Pour accepter : avec plaisir !, d'accord !, bonne idée !, carrément ! (familier).",
+      "Pour refuser : désolé, je ne peux pas, je suis pris ; puis on propose : une autre fois ?"
+     ],
+     "q": "Invite-moi à faire quelque chose ce week-end. Je te réponds !",
+     "c": "Écris un message pour inviter un ami, puis une réponse positive et une réponse négative."
+    },
+    "it": {
+     "t": "Fare programmi con gli amici",
+     "g": "Invita gli amici in francese e accetta o rifiuta con gentilezza.",
+     "p": [
+      "Invita con tu es libre samedi? (sei libero sabato?), ça te dit de...? oppure on va au cinéma?",
+      "Accetta con avec plaisir!, d'accord!, bonne idée! o carrément! (assolutamente, colloquiale).",
+      "Rifiuta con garbo: désolé, je ne peux pas, je suis pris (sono impegnato); poi proponi: une autre fois?"
+     ],
+     "q": "Invitami a fare qualcosa questo fine settimana in francese. Ti rispondo!",
+     "c": "Manda o immagina un messaggio in francese per invitare un amico e scrivi una risposta sì e una no."
+    },
+    "pt": {
+     "t": "Fazer planos com amigos",
+     "g": "Convidar amigos em francês e aceitar ou recusar com simpatia.",
+     "p": [
+      "Convida com tu es libre samedi? (estás livre no sábado?), ça te dit de...? ou on va au cinéma?",
+      "Aceita com avec plaisir!, d'accord!, bonne idée! ou carrément! (claro, informal).",
+      "Recusa com simpatia: désolé, je ne peux pas, je suis pris (estou ocupado); depois propõe: une autre fois?"
+     ],
+     "q": "Convida-me para fazer alguma coisa este fim de semana em francês. Eu respondo!",
+     "c": "Envia ou imagina uma mensagem em francês a convidar um amigo e escreve uma resposta sim e outra não."
+    },
+    "pt_BR": {
+     "t": "Fazendo planos com amigos",
+     "g": "Convidar amigos em francês e aceitar ou recusar com gentileza.",
+     "p": [
+      "Convide com tu es libre samedi? (você está livre no sábado?), ça te dit de...? ou on va au cinéma?",
+      "Aceite com avec plaisir!, d'accord!, bonne idée! ou carrément! (com certeza, informal).",
+      "Recuse com jeitinho: désolé, je ne peux pas, je suis pris (estou ocupado); depois proponha: une autre fois?"
+     ],
+     "q": "Me convide para fazer algo neste fim de semana em francês. Eu respondo!",
+     "c": "Mande ou imagine uma mensagem em francês convidando um amigo e escreva uma resposta sim e outra não."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Tu es libre samedi ?",
+      "ex": "Tu es libre samedi après-midi ?"
+     },
+     {
+      "w": "Ça te dit de... ?",
+      "ex": "Ça te dit de faire une balade ?"
+     },
+     {
+      "w": "avec plaisir",
+      "ex": "Un pique-nique ? Avec plaisir !"
+     },
+     {
+      "w": "d'accord",
+      "ex": "D'accord, à samedi !"
+     },
+     {
+      "w": "je suis pris",
+      "ex": "Désolé, je suis pris ce soir."
+     },
+     {
+      "w": "une autre fois",
+      "ex": "On peut se voir une autre fois ?"
+     }
+    ],
+    "gram": "Inviter : tu es libre... ? ça te dit de + infinitif ? Accepter : avec plaisir, d'accord. Refuser : désolé, je ne peux pas."
+   }
+  },
+  {
+   "d": 58,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prendre and its family",
+     "g": "Conjugate prendre, apprendre and comprendre in the present tense.",
+     "p": [
+      "Prendre (take): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent.",
+      "Apprendre (learn) and comprendre (understand) follow the same pattern: j'apprends, nous comprenons, ils comprennent.",
+      "Prendre is everywhere: prendre le bus, prendre un café, prendre le petit-déjeuner, prendre une photo."
+     ],
+     "q": "What are you learning at the moment, besides French? Use j'apprends.",
+     "c": "Write three sentences, one each with prendre, apprendre and comprendre, using a plural form at least once."
+    },
+    "de": {
+     "t": "Prendre und seine Familie",
+     "g": "Du konjugierst prendre, apprendre und comprendre im Präsens.",
+     "p": [
+      "Prendre (nehmen): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent.",
+      "Apprendre (lernen) und comprendre (verstehen) gehen genauso: j'apprends, nous comprenons, ils comprennent.",
+      "Prendre ist überall: prendre le bus, prendre un café, prendre le petit-déjeuner, prendre une photo."
+     ],
+     "q": "Was lernst du gerade außer Französisch? Nutze j'apprends.",
+     "c": "Schreib drei Sätze, je einen mit prendre, apprendre und comprendre, mindestens einmal im Plural."
+    },
+    "es": {
+     "t": "Prendre y su familia",
+     "g": "Conjuga prendre, apprendre y comprendre en presente.",
+     "p": [
+      "Prendre (tomar, coger): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent.",
+      "Apprendre (aprender) y comprendre (entender) siguen el mismo modelo: j'apprends, nous comprenons, ils comprennent.",
+      "Prendre está en todas partes: prendre le bus, prendre un café, prendre le petit-déjeuner, prendre une photo."
+     ],
+     "q": "¿Qué estás aprendiendo ahora, además de francés? Usa j'apprends.",
+     "c": "Escribe tres frases, una con prendre, otra con apprendre y otra con comprendre, con al menos un plural."
+    },
+    "fr": {
+     "t": "Prendre et sa famille",
+     "g": "Conjuguer prendre, apprendre et comprendre au présent.",
+     "p": [
+      "Prendre : je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent.",
+      "Apprendre et comprendre suivent le même modèle : j'apprends, nous comprenons, ils comprennent.",
+      "Prendre est partout : prendre le bus, prendre un café, prendre le petit-déjeuner, prendre une photo."
+     ],
+     "q": "Qu'est-ce que tu apprends en ce moment, à part le français ? Utilise j'apprends.",
+     "c": "Écris trois phrases avec prendre, apprendre et comprendre, dont au moins une au pluriel."
+    },
+    "it": {
+     "t": "Prendre e la sua famiglia",
+     "g": "Coniuga prendre, apprendre e comprendre al presente.",
+     "p": [
+      "Prendre (prendere): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent.",
+      "Apprendre (imparare) e comprendre (capire) seguono lo stesso modello: j'apprends, nous comprenons, ils comprennent.",
+      "Prendre è ovunque: prendre le bus, prendre un café, prendre le petit-déjeuner, prendre une photo."
+     ],
+     "q": "Cosa stai imparando in questo periodo, oltre al francese? Usa j'apprends.",
+     "c": "Scrivi tre frasi, una con prendre, una con apprendre e una con comprendre, con almeno un plurale."
+    },
+    "pt": {
+     "t": "Prendre e a sua família",
+     "g": "Conjugar prendre, apprendre e comprendre no presente.",
+     "p": [
+      "Prendre (apanhar, tomar): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent.",
+      "Apprendre (aprender) e comprendre (compreender) seguem o mesmo modelo: j'apprends, nous comprenons, ils comprennent.",
+      "Prendre está em todo o lado: prendre le bus, prendre un café, prendre le petit-déjeuner, prendre une photo."
+     ],
+     "q": "O que estás a aprender neste momento, além do francês? Usa j'apprends.",
+     "c": "Escreve três frases, uma com prendre, outra com apprendre e outra com comprendre, com pelo menos um plural."
+    },
+    "pt_BR": {
+     "t": "Prendre e sua família",
+     "g": "Conjugar prendre, apprendre e comprendre no presente.",
+     "p": [
+      "Prendre (pegar, tomar): je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent.",
+      "Apprendre (aprender) e comprendre (entender) seguem o mesmo modelo: j'apprends, nous comprenons, ils comprennent.",
+      "Prendre está em todo lugar: prendre le bus, prendre un café, prendre le petit-déjeuner, prendre une photo."
+     ],
+     "q": "O que você está aprendendo agora, além de francês? Use j'apprends.",
+     "c": "Escreva três frases, uma com prendre, outra com apprendre e outra com comprendre, com pelo menos um plural."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je prends",
+      "ex": "Je prends le train à huit heures."
+     },
+     {
+      "w": "nous prenons",
+      "ex": "Nous prenons un café ensemble ?"
+     },
+     {
+      "w": "ils prennent",
+      "ex": "Ils prennent beaucoup de photos."
+     },
+     {
+      "w": "apprendre",
+      "ex": "J'apprends le français depuis deux mois."
+     },
+     {
+      "w": "comprendre",
+      "ex": "Vous comprenez la question ?"
+     },
+     {
+      "w": "Je ne comprends pas.",
+      "ex": "Pardon, je ne comprends pas."
+     }
+    ],
+    "gram": "Prendre : je prends, tu prends, il prend, nous prenons, vous prenez, ils prennent (nn). Apprendre, comprendre : même modèle."
+   }
+  },
+  {
+   "d": 59,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Verbs in -re",
+     "g": "Conjugate regular -re verbs like vendre, attendre and répondre in the present.",
+     "p": [
+      "Drop -re and add -s, -s, nothing, -ons, -ez, -ent: je vends, tu vends, il vend, nous vendons, vous vendez, ils vendent.",
+      "The d of il vend is silent, but you hear it in the plural: ils vendent.",
+      "Common verbs: vendre (sell), attendre (wait for), entendre (hear), répondre (answer), perdre (lose), descendre (go down)."
+     ],
+     "q": "Who or what are you waiting for today? Answer with attendre, no extra word needed for for.",
+     "c": "Write four sentences with four different -re verbs, one of them about something you lost and found."
+    },
+    "de": {
+     "t": "Verben auf -re",
+     "g": "Du konjugierst regelmäßige -re-Verben wie vendre, attendre und répondre im Präsens.",
+     "p": [
+      "Streiche -re und hänge -s, -s, nichts, -ons, -ez, -ent an: je vends, il vend, nous vendons, ils vendent.",
+      "Das d in il vend ist stumm, im Plural hört man es: ils vendent.",
+      "Häufige Verben: vendre (verkaufen), attendre (warten auf), entendre (hören), répondre (antworten), perdre (verlieren)."
+     ],
+     "q": "Auf wen oder was wartest du heute? Antworte mit attendre, ganz ohne Wort für auf.",
+     "c": "Schreib vier Sätze mit vier verschiedenen -re-Verben, einer davon über etwas Verlorenes und Wiedergefundenes."
+    },
+    "es": {
+     "t": "Verbos en -re",
+     "g": "Conjuga verbos regulares en -re como vendre, attendre y répondre en presente.",
+     "p": [
+      "Quita -re y añade -s, -s, nada, -ons, -ez, -ent: je vends, il vend, nous vendons, vous vendez, ils vendent.",
+      "La d de il vend no suena, pero en plural sí se oye: ils vendent.",
+      "Verbos comunes: vendre (vender), attendre (esperar), entendre (oír), répondre (responder), perdre (perder), descendre (bajar)."
+     ],
+     "q": "¿A quién o qué esperas hoy? Responde con attendre, sin preposición: j'attends le bus.",
+     "c": "Escribe cuatro frases con cuatro verbos en -re distintos, una sobre algo que perdiste y encontraste."
+    },
+    "fr": {
+     "t": "Les verbes en -re",
+     "g": "Conjuguer au présent les verbes en -re comme vendre, attendre et répondre.",
+     "p": [
+      "On enlève -re et on ajoute -s, -s, rien, -ons, -ez, -ent : je vends, il vend, nous vendons, ils vendent.",
+      "Le d de il vend ne se prononce pas, mais on l'entend au pluriel : ils vendent.",
+      "Verbes courants : vendre, attendre, entendre, répondre, perdre, descendre."
+     ],
+     "q": "Qui ou qu'est-ce que tu attends aujourd'hui ? Réponds avec attendre.",
+     "c": "Écris quatre phrases avec quatre verbes en -re, dont une sur un objet perdu puis retrouvé."
+    },
+    "it": {
+     "t": "Verbi in -re",
+     "g": "Coniuga al presente i verbi regolari in -re come vendre, attendre e répondre.",
+     "p": [
+      "Togli -re e aggiungi -s, -s, niente, -ons, -ez, -ent: je vends, il vend, nous vendons, vous vendez, ils vendent.",
+      "La d di il vend è muta, ma al plurale si sente: ils vendent.",
+      "Verbi comuni: vendre (vendere), attendre (aspettare), entendre (sentire), répondre (rispondere), perdre (perdere), descendre (scendere)."
+     ],
+     "q": "Chi o cosa aspetti oggi? Rispondi con attendre, senza preposizione: j'attends le bus.",
+     "c": "Scrivi quattro frasi con quattro verbi in -re diversi, una su qualcosa che hai perso e ritrovato."
+    },
+    "pt": {
+     "t": "Verbos em -re",
+     "g": "Conjugar no presente verbos regulares em -re como vendre, attendre e répondre.",
+     "p": [
+      "Tira -re e junta -s, -s, nada, -ons, -ez, -ent: je vends, il vend, nous vendons, vous vendez, ils vendent.",
+      "O d de il vend não se lê, mas no plural ouve-se: ils vendent.",
+      "Verbos comuns: vendre (vender), attendre (esperar), entendre (ouvir), répondre (responder), perdre (perder), descendre (descer)."
+     ],
+     "q": "De quem ou de que estás à espera hoje? Responde com attendre, sem preposição: j'attends le bus.",
+     "c": "Escreve quatro frases com quatro verbos em -re diferentes, uma sobre algo que perdeste e encontraste."
+    },
+    "pt_BR": {
+     "t": "Verbos em -re",
+     "g": "Conjugar no presente verbos regulares em -re como vendre, attendre e répondre.",
+     "p": [
+      "Tire o -re e coloque -s, -s, nada, -ons, -ez, -ent: je vends, il vend, nous vendons, vous vendez, ils vendent.",
+      "O d de il vend não se pronuncia, mas no plural aparece: ils vendent.",
+      "Verbos comuns: vendre (vender), attendre (esperar), entendre (ouvir), répondre (responder), perdre (perder), descendre (descer)."
+     ],
+     "q": "Quem ou o que você está esperando hoje? Responda com attendre, sem preposição: j'attends le bus.",
+     "c": "Escreva quatro frases com quatro verbos em -re diferentes, uma sobre algo que você perdeu e achou."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vendre",
+      "ex": "Ils vendent des légumes au marché."
+     },
+     {
+      "w": "attendre",
+      "ex": "J'attends le bus depuis dix minutes."
+     },
+     {
+      "w": "entendre",
+      "ex": "Tu entends la musique ?"
+     },
+     {
+      "w": "répondre",
+      "ex": "Elle répond toujours vite."
+     },
+     {
+      "w": "perdre",
+      "ex": "Je perds souvent mes clés !"
+     },
+     {
+      "w": "descendre",
+      "ex": "Nous descendons à la prochaine station."
+     }
+    ],
+    "gram": "Verbes en -re : je vends, tu vends, il vend (d muet), nous vendons, vous vendez, ils vendent. Attendre quelqu'un, sans préposition."
+   }
+  },
+  {
+   "d": 60,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: daily life in French",
+     "g": "Bring together food, town, transport, routine and the near future in one French chat.",
+     "p": [
+      "You can order in a café, bakery or restaurant, use du, de la and quantities, and ask c'est combien?",
+      "You can find your way in town with aller, à and directions, talk about transport, weather and hobbies.",
+      "You can describe your routine with reflexive verbs and your plans with je vais plus an infinitive."
+     ],
+     "q": "Tell me about a typical day in your life, from morning to evening, and one plan for tomorrow.",
+     "c": "Write or record a short French text about your day today and your plans for this weekend."
+    },
+    "de": {
+     "t": "Rückblick: Alltag auf Französisch",
+     "g": "Du verbindest Essen, Stadt, Verkehr, Tagesablauf und nahe Zukunft in einem Gespräch.",
+     "p": [
+      "Du kannst im Café, in der Bäckerei und im Restaurant bestellen, du, de la und Mengen nutzen und c'est combien? fragen.",
+      "Du findest dich mit aller, à und Richtungen in der Stadt zurecht und sprichst über Verkehr, Wetter und Hobbys.",
+      "Du beschreibst deinen Tagesablauf mit reflexiven Verben und deine Pläne mit je vais plus Infinitiv."
+     ],
+     "q": "Erzähl mir von einem typischen Tag in deinem Leben, von morgens bis abends, und einem Plan für morgen.",
+     "c": "Schreib oder sprich einen kurzen französischen Text über deinen heutigen Tag und deine Wochenendpläne."
+    },
+    "es": {
+     "t": "Repaso: la vida diaria en francés",
+     "g": "Reúne comida, ciudad, transporte, rutina y futuro próximo en una charla en francés.",
+     "p": [
+      "Sabes pedir en un café, una panadería o un restaurante, usar du, de la y cantidades, y preguntar c'est combien?",
+      "Te orientas en la ciudad con aller, à y direcciones, y hablas de transporte, tiempo y aficiones.",
+      "Describes tu rutina con verbos reflexivos y tus planes con je vais más infinitivo."
+     ],
+     "q": "Cuéntame un día típico de tu vida, de la mañana a la noche, y un plan para mañana.",
+     "c": "Escribe o graba un texto corto en francés sobre tu día de hoy y tus planes para el fin de semana."
+    },
+    "fr": {
+     "t": "Bilan : la vie quotidienne",
+     "g": "Réunir alimentation, ville, transports, routine et futur proche dans une conversation.",
+     "p": [
+      "Tu sais commander au café, à la boulangerie et au restaurant, utiliser du, de la et les quantités.",
+      "Tu te repères en ville avec aller, à et les directions, et tu parles des transports, de la météo et des loisirs.",
+      "Tu racontes ta routine avec les verbes pronominaux et tes projets avec je vais + infinitif."
+     ],
+     "q": "Raconte-moi une journée typique, du matin au soir, et un projet pour demain.",
+     "c": "Écris ou enregistre un petit texte sur ta journée d'aujourd'hui et tes projets du week-end."
+    },
+    "it": {
+     "t": "Ripasso: la vita quotidiana in francese",
+     "g": "Metti insieme cibo, città, trasporti, routine e futuro prossimo in una chiacchierata.",
+     "p": [
+      "Sai ordinare al bar, in panetteria e al ristorante, usare du, de la e le quantità, e chiedere c'est combien?",
+      "Ti orienti in città con aller, à e le indicazioni, e parli di trasporti, meteo e hobby.",
+      "Descrivi la tua routine con i verbi riflessivi e i tuoi programmi con je vais più infinito."
+     ],
+     "q": "Raccontami una giornata tipo della tua vita, dalla mattina alla sera, e un programma per domani.",
+     "c": "Scrivi o registra un breve testo in francese sulla tua giornata di oggi e i programmi del fine settimana."
+    },
+    "pt": {
+     "t": "Revisão: o dia a dia em francês",
+     "g": "Juntar comida, cidade, transportes, rotina e futuro próximo numa conversa em francês.",
+     "p": [
+      "Sabes pedir num café, numa padaria ou num restaurante, usar du, de la e quantidades, e perguntar c'est combien?",
+      "Orientas-te na cidade com aller, à e direções, e falas de transportes, tempo e passatempos.",
+      "Descreves a tua rotina com verbos reflexos e os teus planos com je vais mais infinitivo."
+     ],
+     "q": "Conta-me um dia típico da tua vida, de manhã à noite, e um plano para amanhã.",
+     "c": "Escreve ou grava um texto curto em francês sobre o teu dia de hoje e os planos para o fim de semana."
+    },
+    "pt_BR": {
+     "t": "Revisão: o dia a dia em francês",
+     "g": "Juntar comida, cidade, transporte, rotina e futuro próximo numa conversa em francês.",
+     "p": [
+      "Você sabe pedir num café, numa padaria ou num restaurante, usar du, de la e quantidades, e perguntar c'est combien?",
+      "Você se orienta na cidade com aller, à e direções, e fala de transporte, tempo e hobbies.",
+      "Você descreve sua rotina com verbos reflexivos e seus planos com je vais mais infinitivo."
+     ],
+     "q": "Me conte um dia típico da sua vida, da manhã à noite, e um plano para amanhã.",
+     "c": "Escreva ou grave um texto curto em francês sobre o seu dia de hoje e os planos para o fim de semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le matin",
+      "ex": "Le matin, je me lève tôt."
+     },
+     {
+      "w": "l'après-midi",
+      "ex": "L'après-midi, je travaille au bureau."
+     },
+     {
+      "w": "le soir",
+      "ex": "Le soir, je fais la cuisine."
+     },
+     {
+      "w": "d'habitude",
+      "ex": "D'habitude, je prends le bus."
+     },
+     {
+      "w": "je vais + infinitif",
+      "ex": "Demain, je vais faire du vélo."
+     },
+     {
+      "w": "une journée typique",
+      "ex": "Voici une journée typique pour moi."
+     }
+    ],
+    "gram": "Bilan : présent (je prends), pronominaux (je me lève), partitifs (du pain), aller à (au marché), futur proche (je vais partir)."
+   }
+  }
+ ]
+}

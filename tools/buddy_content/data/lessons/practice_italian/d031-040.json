@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 31,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the bar: un caffè, per favore",
+     "g": "Order coffee and breakfast in an Italian bar like a local.",
+     "p": [
+      "Un caffè is an espresso. Add per favore: Un caffè, per favore.",
+      "Cappuccino and cornetto are a classic breakfast, usually drunk standing at the counter.",
+      "In many bars you pay first at the cassa, then show the receipt at the counter."
+     ],
+     "q": "What do you like to order for breakfast? Tell me in Italian.",
+     "c": "Practise ordering out loud: Buongiorno, un cappuccino e un cornetto, per favore."
+    },
+    "de": {
+     "t": "In der Bar: un caffè, per favore",
+     "g": "Du bestellst Kaffee und Frühstück in einer italienischen Bar wie die Einheimischen.",
+     "p": [
+      "Un caffè ist ein Espresso. Dazu per favore: Un caffè, per favore.",
+      "Cappuccino und Cornetto sind das klassische Frühstück, oft im Stehen am Tresen.",
+      "In vielen Bars zahlt man zuerst an der cassa und zeigt dann den Bon am Tresen."
+     ],
+     "q": "Was bestellst du gern zum Frühstück? Sag es mir auf Italienisch.",
+     "c": "Übe laut: Buongiorno, un cappuccino e un cornetto, per favore."
+    },
+    "es": {
+     "t": "En el bar: un caffè, per favore",
+     "g": "Pide café y desayuno en un bar italiano como un local.",
+     "p": [
+      "Un caffè es un espresso. Añade per favore: Un caffè, per favore.",
+      "Cappuccino y cornetto son el desayuno clásico, muchas veces de pie en la barra.",
+      "En muchos bares se paga primero en la cassa y luego se enseña el tique en la barra."
+     ],
+     "q": "¿Qué te gusta pedir para desayunar? Dímelo en italiano.",
+     "c": "Practica en voz alta: Buongiorno, un cappuccino e un cornetto, per favore."
+    },
+    "fr": {
+     "t": "Au bar : un caffè, per favore",
+     "g": "Commander un café et un petit-déjeuner dans un bar italien comme un habitant.",
+     "p": [
+      "Un caffè, c'est un espresso. Ajoute per favore : Un caffè, per favore.",
+      "Cappuccino et cornetto forment le petit-déjeuner classique, souvent debout au comptoir.",
+      "Dans beaucoup de bars, on paie d'abord à la cassa puis on montre le ticket au comptoir."
+     ],
+     "q": "Qu'aimes-tu commander au petit-déjeuner ? Dis-le-moi en italien.",
+     "c": "Entraîne-toi à voix haute : Buongiorno, un cappuccino e un cornetto, per favore."
+    },
+    "it": {
+     "t": "Al bar: un caffè, per favore",
+     "g": "Impari a ordinare caffè e colazione al bar come un italiano.",
+     "p": [
+      "Un caffè è un espresso. Aggiungi sempre per favore: Un caffè, per favore.",
+      "Cappuccino e cornetto sono la colazione classica, spesso in piedi al bancone.",
+      "In molti bar si paga prima alla cassa e poi si mostra lo scontrino al bancone."
+     ],
+     "q": "Che cosa ti piace ordinare a colazione? Dimmelo in italiano.",
+     "c": "Esercitati ad alta voce: Buongiorno, un cappuccino e un cornetto, per favore."
+    },
+    "pt": {
+     "t": "No bar: un caffè, per favore",
+     "g": "Pedir café e pequeno-almoço num bar italiano como um local.",
+     "p": [
+      "Un caffè é um expresso. Junta per favore: Un caffè, per favore.",
+      "Cappuccino e cornetto são o pequeno-almoço clássico, muitas vezes de pé ao balcão.",
+      "Em muitos bares paga-se primeiro na cassa e depois mostra-se o talão ao balcão."
+     ],
+     "q": "O que gostas de pedir ao pequeno-almoço? Diz-me em italiano.",
+     "c": "Treina em voz alta: Buongiorno, un cappuccino e un cornetto, per favore."
+    },
+    "pt_BR": {
+     "t": "No bar: un caffè, per favore",
+     "g": "Pedir café e café da manhã num bar italiano como um local.",
+     "p": [
+      "Un caffè é um expresso. Acrescente per favore: Un caffè, per favore.",
+      "Cappuccino e cornetto são o café da manhã clássico, muitas vezes em pé no balcão.",
+      "Em muitos bares você paga primeiro na cassa e depois mostra o recibo no balcão."
+     ],
+     "q": "O que você gosta de pedir no café da manhã? Me conte em italiano.",
+     "c": "Treine em voz alta: Buongiorno, un cappuccino e un cornetto, per favore."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il caffè",
+      "ex": "Un caffè, per favore."
+     },
+     {
+      "w": "il cappuccino",
+      "ex": "La mattina prendo un cappuccino."
+     },
+     {
+      "w": "il cornetto",
+      "ex": "Vorrei un cornetto alla crema."
+     },
+     {
+      "w": "il bancone",
+      "ex": "Beviamo il caffè al bancone."
+     },
+     {
+      "w": "la cassa",
+      "ex": "Si paga prima alla cassa."
+     },
+     {
+      "w": "lo scontrino",
+      "ex": "Ecco lo scontrino, grazie."
+     }
+    ],
+    "gram": "Per ordinare: un/una + nome + per favore (un caffè, per favore). Il cappuccino si beve di solito solo la mattina."
+   }
+  },
+  {
+   "d": 32,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Food basics: il cibo",
+     "g": "Learn the names of everyday foods and say what you eat.",
+     "p": [
+      "Staples: il pane, la pasta, il riso, il formaggio, la carne, il pesce.",
+      "La frutta and la verdura are usually singular in Italian, as a whole category.",
+      "Use mangiare to say what you eat: Mangio la pasta, Non mangio la carne."
+     ],
+     "q": "What do you usually eat for lunch? Answer with mangio.",
+     "c": "Open your fridge and name five foods in Italian, with their articles."
+    },
+    "de": {
+     "t": "Essen: il cibo",
+     "g": "Du lernst die Namen alltäglicher Lebensmittel und sagst, was du isst.",
+     "p": [
+      "Grundlagen: il pane, la pasta, il riso, il formaggio, la carne, il pesce.",
+      "La frutta und la verdura stehen meist im Singular, als ganze Gruppe.",
+      "Mit mangiare sagst du, was du isst: Mangio la pasta, Non mangio la carne."
+     ],
+     "q": "Was isst du normalerweise zu Mittag? Antworte mit mangio.",
+     "c": "Öffne deinen Kühlschrank und nenne fünf Lebensmittel auf Italienisch, mit Artikel."
+    },
+    "es": {
+     "t": "La comida: il cibo",
+     "g": "Aprende los nombres de los alimentos diarios y di qué comes.",
+     "p": [
+      "Lo básico: il pane, la pasta, il riso, il formaggio, la carne, il pesce.",
+      "La frutta y la verdura suelen ir en singular, como categoría completa.",
+      "Usa mangiare para decir qué comes: Mangio la pasta, Non mangio la carne."
+     ],
+     "q": "¿Qué sueles comer al mediodía? Responde con mangio.",
+     "c": "Abre la nevera y nombra cinco alimentos en italiano, con su artículo."
+    },
+    "fr": {
+     "t": "La nourriture : il cibo",
+     "g": "Apprendre les aliments du quotidien et dire ce que tu manges.",
+     "p": [
+      "Les bases : il pane, la pasta, il riso, il formaggio, la carne, il pesce.",
+      "La frutta et la verdura s'emploient surtout au singulier, comme catégorie.",
+      "Avec mangiare, dis ce que tu manges : Mangio la pasta, Non mangio la carne."
+     ],
+     "q": "Que manges-tu d'habitude le midi ? Réponds avec mangio.",
+     "c": "Ouvre ton frigo et nomme cinq aliments en italien, avec leur article."
+    },
+    "it": {
+     "t": "Il cibo: le basi",
+     "g": "Impari i nomi dei cibi di tutti i giorni e dici che cosa mangi.",
+     "p": [
+      "Le basi: il pane, la pasta, il riso, il formaggio, la carne, il pesce.",
+      "La frutta e la verdura si usano quasi sempre al singolare, come categoria.",
+      "Con mangiare dici che cosa mangi: Mangio la pasta, Non mangio la carne."
+     ],
+     "q": "Che cosa mangi di solito a pranzo? Rispondi con mangio.",
+     "c": "Apri il frigorifero e nomina cinque cibi in italiano, con l'articolo."
+    },
+    "pt": {
+     "t": "A comida: il cibo",
+     "g": "Aprender os nomes dos alimentos do dia a dia e dizer o que comes.",
+     "p": [
+      "O básico: il pane, la pasta, il riso, il formaggio, la carne, il pesce.",
+      "La frutta e la verdura usam-se quase sempre no singular, como categoria.",
+      "Usa mangiare para dizer o que comes: Mangio la pasta, Non mangio la carne."
+     ],
+     "q": "O que costumas comer ao almoço? Responde com mangio.",
+     "c": "Abre o frigorífico e diz cinco alimentos em italiano, com o artigo."
+    },
+    "pt_BR": {
+     "t": "A comida: il cibo",
+     "g": "Aprender os nomes dos alimentos do dia a dia e dizer o que você come.",
+     "p": [
+      "O básico: il pane, la pasta, il riso, il formaggio, la carne, il pesce.",
+      "La frutta e la verdura quase sempre ficam no singular, como categoria.",
+      "Use mangiare para dizer o que come: Mangio la pasta, Non mangio la carne."
+     ],
+     "q": "O que você costuma comer no almoço? Responda com mangio.",
+     "c": "Abra a geladeira e diga cinco alimentos em italiano, com o artigo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il pane",
+      "ex": "Compro il pane ogni mattina."
+     },
+     {
+      "w": "la pasta",
+      "ex": "Stasera mangiamo la pasta al pomodoro."
+     },
+     {
+      "w": "il formaggio",
+      "ex": "Il parmigiano è un formaggio famoso."
+     },
+     {
+      "w": "la frutta",
+      "ex": "Mangio molta frutta d'estate."
+     },
+     {
+      "w": "la verdura",
+      "ex": "La verdura fa bene."
+     },
+     {
+      "w": "il pesce",
+      "ex": "Il venerdì mangio il pesce."
+     }
+    ],
+    "gram": "Frutta e verdura sono nomi collettivi singolari: la frutta è buona. Mangiare: mangio, mangi, mangia, mangiamo, mangiate, mangiano."
+   }
+  },
+  {
+   "d": 33,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Mi piace: likes and dislikes",
+     "g": "Say what you like and dislike with piacere.",
+     "p": [
+      "Mi piace + one thing or a verb: Mi piace la pizza, Mi piace cucinare.",
+      "Mi piacciono + plural things: Mi piacciono gli spaghetti.",
+      "Put non in front for dislikes: Non mi piace il caffè. Ask: Ti piace?"
+     ],
+     "q": "Ti piace la cucina italiana? Tell me one thing you like and one you don't.",
+     "c": "Write three sentences: one with mi piace, one with mi piacciono, one with non mi piace."
+    },
+    "de": {
+     "t": "Mi piace: Vorlieben und Abneigungen",
+     "g": "Du sagst mit piacere, was dir gefällt und was nicht.",
+     "p": [
+      "Mi piace + eine Sache oder ein Verb: Mi piace la pizza, Mi piace cucinare.",
+      "Mi piacciono + mehrere Dinge: Mi piacciono gli spaghetti.",
+      "Mit non davor wird es negativ: Non mi piace il caffè. Frage: Ti piace?"
+     ],
+     "q": "Ti piace la cucina italiana? Nenne mir etwas, das du magst, und etwas, das du nicht magst.",
+     "c": "Schreib drei Sätze: mit mi piace, mit mi piacciono und mit non mi piace."
+    },
+    "es": {
+     "t": "Mi piace: gustos",
+     "g": "Di lo que te gusta y lo que no con piacere.",
+     "p": [
+      "Mi piace + una cosa o un verbo: Mi piace la pizza, Mi piace cucinare.",
+      "Mi piacciono + varias cosas: Mi piacciono gli spaghetti.",
+      "Pon non delante para lo que no te gusta: Non mi piace il caffè. Pregunta: Ti piace?"
+     ],
+     "q": "Ti piace la cucina italiana? Dime algo que te gusta y algo que no.",
+     "c": "Escribe tres frases: con mi piace, con mi piacciono y con non mi piace."
+    },
+    "fr": {
+     "t": "Mi piace : goûts et dégoûts",
+     "g": "Dire ce que tu aimes ou non avec piacere.",
+     "p": [
+      "Mi piace + une chose ou un verbe : Mi piace la pizza, Mi piace cucinare.",
+      "Mi piacciono + plusieurs choses : Mi piacciono gli spaghetti.",
+      "Ajoute non devant pour dire non : Non mi piace il caffè. Question : Ti piace ?"
+     ],
+     "q": "Ti piace la cucina italiana ? Dis-moi une chose que tu aimes et une que tu n'aimes pas.",
+     "c": "Écris trois phrases : avec mi piace, avec mi piacciono et avec non mi piace."
+    },
+    "it": {
+     "t": "Mi piace: gusti e preferenze",
+     "g": "Impari a dire che cosa ti piace e che cosa no con il verbo piacere.",
+     "p": [
+      "Mi piace + una cosa o un verbo: Mi piace la pizza, Mi piace cucinare.",
+      "Mi piacciono + più cose: Mi piacciono gli spaghetti.",
+      "Con non davanti dici il contrario: Non mi piace il caffè. Domanda: Ti piace?"
+     ],
+     "q": "Ti piace la cucina italiana? Dimmi una cosa che ti piace e una che non ti piace.",
+     "c": "Scrivi tre frasi: con mi piace, con mi piacciono e con non mi piace."
+    },
+    "pt": {
+     "t": "Mi piace: gostos",
+     "g": "Dizer do que gostas e do que não gostas com piacere.",
+     "p": [
+      "Mi piace + uma coisa ou um verbo: Mi piace la pizza, Mi piace cucinare.",
+      "Mi piacciono + várias coisas: Mi piacciono gli spaghetti.",
+      "Põe non à frente para o que não gostas: Non mi piace il caffè. Pergunta: Ti piace?"
+     ],
+     "q": "Ti piace la cucina italiana? Diz-me uma coisa de que gostas e uma de que não gostas.",
+     "c": "Escreve três frases: com mi piace, com mi piacciono e com non mi piace."
+    },
+    "pt_BR": {
+     "t": "Mi piace: gostos",
+     "g": "Dizer do que você gosta e do que não gosta com piacere.",
+     "p": [
+      "Mi piace + uma coisa ou um verbo: Mi piace la pizza, Mi piace cucinare.",
+      "Mi piacciono + várias coisas: Mi piacciono gli spaghetti.",
+      "Coloque non na frente para o que não gosta: Non mi piace il caffè. Pergunta: Ti piace?"
+     ],
+     "q": "Ti piace la cucina italiana? Me diga uma coisa de que gosta e uma de que não gosta.",
+     "c": "Escreva três frases: com mi piace, com mi piacciono e com non mi piace."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "mi piace",
+      "ex": "Mi piace molto il gelato."
+     },
+     {
+      "w": "mi piacciono",
+      "ex": "Mi piacciono le olive."
+     },
+     {
+      "w": "non mi piace",
+      "ex": "Non mi piace il latte caldo."
+     },
+     {
+      "w": "ti piace?",
+      "ex": "Ti piace la cucina italiana?"
+     },
+     {
+      "w": "preferire",
+      "ex": "Preferisco il tè al caffè."
+     },
+     {
+      "w": "buonissimo",
+      "ex": "Questa pizza è buonissima!"
+     }
+    ],
+    "gram": "Piacere concorda con la cosa che piace: mi piace la pasta, mi piacciono le pesche. Con un verbo: mi piace leggere."
+   }
+  },
+  {
+   "d": 34,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the restaurant",
+     "g": "Book a table and understand how an Italian menu is organised.",
+     "p": [
+      "Booking: Vorrei prenotare un tavolo per due, per stasera alle otto.",
+      "The menu runs antipasto, primo (pasta, risotto), secondo (meat or fish), contorno, dolce.",
+      "You don't have to order every course: many people choose only a primo or a secondo."
+     ],
+     "q": "Imagine an Italian menu: what would you choose as primo and as dolce?",
+     "c": "Say out loud a full booking: day, time and number of people, in Italian."
+    },
+    "de": {
+     "t": "Im Restaurant",
+     "g": "Du reservierst einen Tisch und verstehst den Aufbau einer italienischen Speisekarte.",
+     "p": [
+      "Reservieren: Vorrei prenotare un tavolo per due, per stasera alle otto.",
+      "Die Karte: antipasto, primo (Pasta, Risotto), secondo (Fleisch, Fisch), contorno, dolce.",
+      "Man muss nicht jeden Gang bestellen: viele wählen nur einen primo oder einen secondo."
+     ],
+     "q": "Stell dir eine italienische Karte vor: Was wählst du als primo und als dolce?",
+     "c": "Sprich eine ganze Reservierung laut: Tag, Uhrzeit und Personenzahl auf Italienisch."
+    },
+    "es": {
+     "t": "En el restaurante",
+     "g": "Reserva mesa y entiende cómo se organiza una carta italiana.",
+     "p": [
+      "Reservar: Vorrei prenotare un tavolo per due, per stasera alle otto.",
+      "La carta: antipasto, primo (pasta, risotto), secondo (carne o pescado), contorno, dolce.",
+      "No hace falta pedir todos los platos: muchos eligen solo un primo o un secondo."
+     ],
+     "q": "Imagina una carta italiana: ¿qué eliges de primo y de dolce?",
+     "c": "Di en voz alta una reserva completa: día, hora y número de personas, en italiano."
+    },
+    "fr": {
+     "t": "Au restaurant",
+     "g": "Réserver une table et comprendre comment est organisée une carte italienne.",
+     "p": [
+      "Réserver : Vorrei prenotare un tavolo per due, per stasera alle otto.",
+      "La carte : antipasto, primo (pâtes, risotto), secondo (viande ou poisson), contorno, dolce.",
+      "Inutile de tout commander : beaucoup choisissent seulement un primo ou un secondo."
+     ],
+     "q": "Imagine une carte italienne : que prends-tu en primo et en dolce ?",
+     "c": "Dis à voix haute une réservation complète : jour, heure et nombre de personnes, en italien."
+    },
+    "it": {
+     "t": "Al ristorante",
+     "g": "Impari a prenotare un tavolo e a leggere un menù italiano.",
+     "p": [
+      "Per prenotare: Vorrei prenotare un tavolo per due, per stasera alle otto.",
+      "Il menù: antipasto, primo (pasta, risotto), secondo (carne o pesce), contorno, dolce.",
+      "Non serve ordinare tutto: molte persone prendono solo un primo o un secondo."
+     ],
+     "q": "Immagina un menù italiano: che cosa scegli come primo e come dolce?",
+     "c": "Di' ad alta voce una prenotazione completa: giorno, ora e numero di persone."
+    },
+    "pt": {
+     "t": "No restaurante",
+     "g": "Reservar mesa e perceber como está organizada uma ementa italiana.",
+     "p": [
+      "Reservar: Vorrei prenotare un tavolo per due, per stasera alle otto.",
+      "A ementa: antipasto, primo (massa, risotto), secondo (carne ou peixe), contorno, dolce.",
+      "Não é preciso pedir tudo: muita gente escolhe só um primo ou um secondo."
+     ],
+     "q": "Imagina uma ementa italiana: o que escolhes como primo e como dolce?",
+     "c": "Diz em voz alta uma reserva completa: dia, hora e número de pessoas, em italiano."
+    },
+    "pt_BR": {
+     "t": "No restaurante",
+     "g": "Reservar uma mesa e entender como é organizado um cardápio italiano.",
+     "p": [
+      "Reservar: Vorrei prenotare un tavolo per due, per stasera alle otto.",
+      "O cardápio: antipasto, primo (massa, risoto), secondo (carne ou peixe), contorno, dolce.",
+      "Não precisa pedir tudo: muita gente escolhe só um primo ou um secondo."
+     ],
+     "q": "Imagine um cardápio italiano: o que você escolhe como primo e como dolce?",
+     "c": "Diga em voz alta uma reserva completa: dia, hora e número de pessoas, em italiano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "prenotare",
+      "ex": "Vorrei prenotare un tavolo per quattro."
+     },
+     {
+      "w": "il tavolo",
+      "ex": "C'è un tavolo libero vicino alla finestra?"
+     },
+     {
+      "w": "il menù",
+      "ex": "Posso vedere il menù, per favore?"
+     },
+     {
+      "w": "l'antipasto",
+      "ex": "Come antipasto prendiamo la bruschetta."
+     },
+     {
+      "w": "il primo / il secondo",
+      "ex": "Per primo le lasagne, per secondo il pollo."
+     },
+     {
+      "w": "il dolce",
+      "ex": "Come dolce c'è il tiramisù."
+     }
+    ],
+    "gram": "Ordine del pasto: antipasto, primo, secondo con contorno, dolce. Si dice: come primo prendo..., per secondo vorrei..."
+   }
+  },
+  {
+   "d": 35,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ordering and paying",
+     "g": "Order your meal politely and ask for the bill.",
+     "p": [
+      "Vorrei is the polite I would like: Vorrei un'acqua frizzante. Prendo means I'll have.",
+      "To pay, catch the waiter's eye and say: Il conto, per favore.",
+      "Many bills include a coperto, a fixed charge per person for bread and service."
+     ],
+     "q": "You are at a trattoria: what do you say to order a primo and a drink?",
+     "c": "Role-play a full dinner alone: greet, order with vorrei, ask for il conto."
+    },
+    "de": {
+     "t": "Bestellen und bezahlen",
+     "g": "Du bestellst höflich dein Essen und fragst nach der Rechnung.",
+     "p": [
+      "Vorrei ist das höfliche Ich hätte gern: Vorrei un'acqua frizzante. Prendo heißt Ich nehme.",
+      "Zum Zahlen suchst du den Blick des Kellners: Il conto, per favore.",
+      "Viele Rechnungen enthalten den coperto, einen festen Betrag pro Person für Brot und Gedeck."
+     ],
+     "q": "Du bist in einer Trattoria: Wie bestellst du einen primo und ein Getränk?",
+     "c": "Spiel ein ganzes Abendessen durch: grüßen, mit vorrei bestellen, nach il conto fragen."
+    },
+    "es": {
+     "t": "Pedir y pagar",
+     "g": "Pide la comida con educación y pide la cuenta.",
+     "p": [
+      "Vorrei es el educado querría: Vorrei un'acqua frizzante. Prendo significa tomo.",
+      "Para pagar, busca la mirada del camarero y di: Il conto, per favore.",
+      "Muchas cuentas incluyen el coperto, un importe fijo por persona por pan y servicio."
+     ],
+     "q": "Estás en una trattoria: ¿cómo pides un primo y una bebida?",
+     "c": "Representa una cena entera: saluda, pide con vorrei y pide il conto."
+    },
+    "fr": {
+     "t": "Commander et payer",
+     "g": "Commander poliment ton repas et demander l'addition.",
+     "p": [
+      "Vorrei est le poli je voudrais : Vorrei un'acqua frizzante. Prendo veut dire je prends.",
+      "Pour payer, attire le regard du serveur : Il conto, per favore.",
+      "Beaucoup d'additions comptent un coperto, un montant fixe par personne pour pain et couvert."
+     ],
+     "q": "Tu es dans une trattoria : comment commandes-tu un primo et une boisson ?",
+     "c": "Joue un dîner entier : salue, commande avec vorrei, demande il conto."
+    },
+    "it": {
+     "t": "Ordinare e pagare",
+     "g": "Impari a ordinare con gentilezza e a chiedere il conto.",
+     "p": [
+      "Vorrei è la forma gentile: Vorrei un'acqua frizzante. Prendo è più diretto.",
+      "Per pagare, cerca lo sguardo del cameriere e di': Il conto, per favore.",
+      "Spesso nel conto c'è il coperto, una cifra fissa a persona per pane e servizio."
+     ],
+     "q": "Sei in trattoria: come ordini un primo e qualcosa da bere?",
+     "c": "Fai da solo una cena intera: saluta, ordina con vorrei, chiedi il conto."
+    },
+    "pt": {
+     "t": "Pedir e pagar",
+     "g": "Pedir a refeição com educação e pedir a conta.",
+     "p": [
+      "Vorrei é o educado queria: Vorrei un'acqua frizzante. Prendo quer dizer vou querer.",
+      "Para pagar, procura o olhar do empregado e diz: Il conto, per favore.",
+      "Muitas contas incluem o coperto, um valor fixo por pessoa pelo pão e serviço."
+     ],
+     "q": "Estás numa trattoria: como pedes um primo e uma bebida?",
+     "c": "Encena um jantar inteiro: cumprimenta, pede com vorrei e pede il conto."
+    },
+    "pt_BR": {
+     "t": "Pedindo e pagando",
+     "g": "Fazer o pedido com educação e pedir a conta.",
+     "p": [
+      "Vorrei é o educado eu gostaria: Vorrei un'acqua frizzante. Prendo quer dizer vou querer.",
+      "Para pagar, chame o garçom com o olhar e diga: Il conto, per favore.",
+      "Muitas contas incluem o coperto, um valor fixo por pessoa pelo pão e serviço."
+     ],
+     "q": "Você está numa trattoria: como pede um primo e uma bebida?",
+     "c": "Encene um jantar inteiro: cumprimente, peça com vorrei e peça il conto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "vorrei",
+      "ex": "Vorrei un piatto di spaghetti."
+     },
+     {
+      "w": "prendo",
+      "ex": "Io prendo il risotto ai funghi."
+     },
+     {
+      "w": "il conto",
+      "ex": "Il conto, per favore."
+     },
+     {
+      "w": "il coperto",
+      "ex": "Il coperto è incluso nel conto."
+     },
+     {
+      "w": "il cameriere",
+      "ex": "Il cameriere è molto gentile."
+     },
+     {
+      "w": "l'acqua naturale / frizzante",
+      "ex": "Una bottiglia d'acqua frizzante, grazie."
+     }
+    ],
+    "gram": "Vorrei (condizionale di volere) è più cortese di voglio: vorrei un caffè. Per chiedere il conto: il conto, per favore."
+   }
+  },
+  {
+   "d": 36,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Going shopping: i negozi",
+     "g": "Name the typical Italian shops and say what each one sells.",
+     "p": [
+      "Many shop names end in -eria: panetteria (bread), macelleria (meat), pasticceria (cakes).",
+      "La farmacia sells medicines; l'edicola sells newspapers and magazines.",
+      "Say where you are going with in: Vado in panetteria, Vado in farmacia."
+     ],
+     "q": "Which shops do you visit most often? Name them in Italian.",
+     "c": "Make a list of four errands with the right shop: Vado in panetteria per il pane."
+    },
+    "de": {
+     "t": "Einkaufen: i negozi",
+     "g": "Du benennst typische italienische Geschäfte und sagst, was sie verkaufen.",
+     "p": [
+      "Viele Ladennamen enden auf -eria: panetteria (Brot), macelleria (Fleisch), pasticceria (Kuchen).",
+      "La farmacia verkauft Medikamente, l'edicola Zeitungen und Zeitschriften.",
+      "Wohin du gehst, sagst du mit in: Vado in panetteria, Vado in farmacia."
+     ],
+     "q": "In welche Geschäfte gehst du am häufigsten? Nenne sie auf Italienisch.",
+     "c": "Schreib vier Besorgungen mit dem richtigen Laden: Vado in panetteria per il pane."
+    },
+    "es": {
+     "t": "De compras: i negozi",
+     "g": "Nombra las tiendas típicas italianas y di qué vende cada una.",
+     "p": [
+      "Muchas tiendas terminan en -eria: panetteria (pan), macelleria (carne), pasticceria (pasteles).",
+      "La farmacia vende medicinas; l'edicola, periódicos y revistas.",
+      "Di adónde vas con in: Vado in panetteria, Vado in farmacia."
+     ],
+     "q": "¿A qué tiendas vas más a menudo? Nómbralas en italiano.",
+     "c": "Haz una lista de cuatro recados con su tienda: Vado in panetteria per il pane."
+    },
+    "fr": {
+     "t": "Faire les courses : i negozi",
+     "g": "Nommer les commerces italiens typiques et ce que chacun vend.",
+     "p": [
+      "Beaucoup de noms finissent en -eria : panetteria (pain), macelleria (viande), pasticceria (gâteaux).",
+      "La farmacia vend des médicaments ; l'edicola des journaux et magazines.",
+      "Pour dire où tu vas, utilise in : Vado in panetteria, Vado in farmacia."
+     ],
+     "q": "Dans quels commerces vas-tu le plus souvent ? Nomme-les en italien.",
+     "c": "Fais une liste de quatre courses avec le bon commerce : Vado in panetteria per il pane."
+    },
+    "it": {
+     "t": "Fare spese: i negozi",
+     "g": "Impari i nomi dei negozi tipici e che cosa vende ognuno.",
+     "p": [
+      "Molti negozi finiscono in -eria: panetteria (pane), macelleria (carne), pasticceria (dolci).",
+      "In farmacia si comprano le medicine, in edicola giornali e riviste.",
+      "Per dire dove vai usi in: Vado in panetteria, Vado in farmacia."
+     ],
+     "q": "In quali negozi vai più spesso? Dimmeli in italiano.",
+     "c": "Scrivi quattro commissioni con il negozio giusto: Vado in panetteria per il pane."
+    },
+    "pt": {
+     "t": "Ir às compras: i negozi",
+     "g": "Nomear as lojas típicas italianas e o que cada uma vende.",
+     "p": [
+      "Muitas lojas acabam em -eria: panetteria (pão), macelleria (carne), pasticceria (bolos).",
+      "La farmacia vende medicamentos; l'edicola vende jornais e revistas.",
+      "Diz aonde vais com in: Vado in panetteria, Vado in farmacia."
+     ],
+     "q": "A que lojas vais mais vezes? Diz os nomes em italiano.",
+     "c": "Faz uma lista de quatro recados com a loja certa: Vado in panetteria per il pane."
+    },
+    "pt_BR": {
+     "t": "Fazendo compras: i negozi",
+     "g": "Nomear as lojas típicas italianas e o que cada uma vende.",
+     "p": [
+      "Muitas lojas terminam em -eria: panetteria (pão), macelleria (carne), pasticceria (doces).",
+      "La farmacia vende remédios; l'edicola vende jornais e revistas.",
+      "Diga aonde vai com in: Vado in panetteria, Vado in farmacia."
+     ],
+     "q": "Em quais lojas você vai com mais frequência? Diga os nomes em italiano.",
+     "c": "Faça uma lista de quatro tarefas com a loja certa: Vado in panetteria per il pane."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il negozio",
+      "ex": "Il negozio apre alle nove."
+     },
+     {
+      "w": "la panetteria",
+      "ex": "In panetteria compro il pane fresco."
+     },
+     {
+      "w": "la macelleria",
+      "ex": "La macelleria è vicino alla piazza."
+     },
+     {
+      "w": "la pasticceria",
+      "ex": "La domenica andiamo in pasticceria."
+     },
+     {
+      "w": "la farmacia",
+      "ex": "Scusi, c'è una farmacia qui vicino?"
+     },
+     {
+      "w": "l'edicola",
+      "ex": "Compro il giornale all'edicola."
+     }
+    ],
+    "gram": "Con i negozi in -eria si usa in senza articolo: vado in panetteria, in farmacia. Ma: vado al supermercato."
+   }
+  },
+  {
+   "d": 37,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Quanto costa? Prices and money",
+     "g": "Ask how much things cost and understand prices in euro.",
+     "p": [
+      "Quanto costa? for one item, Quanto costano? for several.",
+      "Prices are said as euro e centesimi: 3,50 is tre euro e cinquanta. Euro never changes in plural.",
+      "Too expensive? È troppo caro. A bargain? È economico."
+     ],
+     "q": "How would you ask the price of two coffees and react if it seems high?",
+     "c": "Look at three prices around you and say them out loud in Italian euro."
+    },
+    "de": {
+     "t": "Quanto costa? Preise und Geld",
+     "g": "Du fragst nach Preisen und verstehst Beträge in Euro.",
+     "p": [
+      "Quanto costa? für eine Sache, Quanto costano? für mehrere.",
+      "Preise: euro e centesimi, 3,50 ist tre euro e cinquanta. Euro bleibt im Plural gleich.",
+      "Zu teuer? È troppo caro. Günstig? È economico."
+     ],
+     "q": "Wie fragst du nach dem Preis von zwei Kaffees und reagierst, wenn er hoch ist?",
+     "c": "Nimm drei Preise um dich herum und sag sie laut in italienischen Euro."
+    },
+    "es": {
+     "t": "Quanto costa? Precios y dinero",
+     "g": "Pregunta cuánto cuestan las cosas y entiende los precios en euros.",
+     "p": [
+      "Quanto costa? para una cosa, Quanto costano? para varias.",
+      "Precios: euro e centesimi, 3,50 es tre euro e cinquanta. Euro no cambia en plural.",
+      "¿Demasiado caro? È troppo caro. ¿Barato? È economico."
+     ],
+     "q": "¿Cómo preguntas el precio de dos cafés y reaccionas si te parece alto?",
+     "c": "Mira tres precios a tu alrededor y dilos en voz alta en euros, en italiano."
+    },
+    "fr": {
+     "t": "Quanto costa ? Les prix et l'argent",
+     "g": "Demander le prix des choses et comprendre les prix en euros.",
+     "p": [
+      "Quanto costa ? pour un article, Quanto costano ? pour plusieurs.",
+      "Les prix : euro e centesimi, 3,50 se dit tre euro e cinquanta. Euro est invariable.",
+      "Trop cher ? È troppo caro. Bon marché ? È economico."
+     ],
+     "q": "Comment demandes-tu le prix de deux cafés et réagis-tu s'il te semble élevé ?",
+     "c": "Prends trois prix autour de toi et dis-les à voix haute en euros, en italien."
+    },
+    "it": {
+     "t": "Quanto costa? Prezzi e soldi",
+     "g": "Impari a chiedere i prezzi e a capire gli importi in euro.",
+     "p": [
+      "Quanto costa? per una cosa, Quanto costano? per più cose.",
+      "I prezzi: euro e centesimi, 3,50 si dice tre euro e cinquanta. Euro è invariabile.",
+      "Troppo? È troppo caro. Conveniente? È economico."
+     ],
+     "q": "Come chiedi il prezzo di due caffè e come reagisci se ti sembra alto?",
+     "c": "Guarda tre prezzi intorno a te e dilli ad alta voce in euro."
+    },
+    "pt": {
+     "t": "Quanto costa? Preços e dinheiro",
+     "g": "Perguntar quanto custam as coisas e perceber preços em euros.",
+     "p": [
+      "Quanto costa? para uma coisa, Quanto costano? para várias.",
+      "Preços: euro e centesimi, 3,50 diz-se tre euro e cinquanta. Euro não muda no plural.",
+      "Muito caro? È troppo caro. Barato? È economico."
+     ],
+     "q": "Como perguntas o preço de dois cafés e reages se te parecer alto?",
+     "c": "Olha para três preços à tua volta e diz-os em voz alta em euros, em italiano."
+    },
+    "pt_BR": {
+     "t": "Quanto costa? Preços e dinheiro",
+     "g": "Perguntar quanto custam as coisas e entender preços em euros.",
+     "p": [
+      "Quanto costa? para uma coisa, Quanto costano? para várias.",
+      "Preços: euro e centesimi, 3,50 se diz tre euro e cinquanta. Euro não muda no plural.",
+      "Caro demais? È troppo caro. Barato? È economico."
+     ],
+     "q": "Como você pergunta o preço de dois cafés e reage se achar alto?",
+     "c": "Olhe três preços ao seu redor e diga em voz alta em euros, em italiano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quanto costa?",
+      "ex": "Scusi, quanto costa questo libro?"
+     },
+     {
+      "w": "quanto costano?",
+      "ex": "Quanto costano le mele?"
+     },
+     {
+      "w": "l'euro",
+      "ex": "Sono dieci euro, grazie."
+     },
+     {
+      "w": "il centesimo",
+      "ex": "Mancano cinquanta centesimi."
+     },
+     {
+      "w": "caro",
+      "ex": "Questa borsa è troppo cara."
+     },
+     {
+      "w": "economico",
+      "ex": "Questo ristorante è economico."
+     }
+    ],
+    "gram": "Costare concorda con il soggetto: quanto costa il pane? quanto costano i biscotti? Euro è invariabile: un euro, due euro."
+   }
+  },
+  {
+   "d": 38,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Clothes and sizes",
+     "g": "Name everyday clothes, ask for your size and try things on.",
+     "p": [
+      "Basics: la maglia, la camicia, i pantaloni, la gonna, il vestito, le scarpe.",
+      "Ask for your size: Che taglia porta? Porto la M. For shoes: Che numero? Il 40.",
+      "To try something on: Posso provarlo? The fitting room is il camerino."
+     ],
+     "q": "What are you wearing today? Describe it in Italian with a colour.",
+     "c": "Describe your outfit today in Italian: three clothes and their colours."
+    },
+    "de": {
+     "t": "Kleidung und Größen",
+     "g": "Du benennst Kleidung, fragst nach deiner Größe und probierst an.",
+     "p": [
+      "Grundlagen: la maglia, la camicia, i pantaloni, la gonna, il vestito, le scarpe.",
+      "Größe: Che taglia porta? Porto la M. Bei Schuhen: Che numero? Il 40.",
+      "Anprobieren: Posso provarlo? Die Umkleide heißt il camerino."
+     ],
+     "q": "Was trägst du heute? Beschreib es auf Italienisch mit einer Farbe.",
+     "c": "Beschreib dein heutiges Outfit auf Italienisch: drei Kleidungsstücke mit Farben."
+    },
+    "es": {
+     "t": "Ropa y tallas",
+     "g": "Nombra la ropa diaria, pide tu talla y pruébate cosas.",
+     "p": [
+      "Lo básico: la maglia, la camicia, i pantaloni, la gonna, il vestito, le scarpe.",
+      "Pide tu talla: Che taglia porta? Porto la M. Zapatos: Che numero? Il 40.",
+      "Para probarte algo: Posso provarlo? El probador es il camerino."
+     ],
+     "q": "¿Qué llevas puesto hoy? Descríbelo en italiano con un color.",
+     "c": "Describe tu ropa de hoy en italiano: tres prendas y sus colores."
+    },
+    "fr": {
+     "t": "Vêtements et tailles",
+     "g": "Nommer les vêtements, demander sa taille et essayer.",
+     "p": [
+      "Les bases : la maglia, la camicia, i pantaloni, la gonna, il vestito, le scarpe.",
+      "Ta taille : Che taglia porta ? Porto la M. Chaussures : Che numero ? Il 40.",
+      "Pour essayer : Posso provarlo ? La cabine d'essayage, c'est il camerino."
+     ],
+     "q": "Que portes-tu aujourd'hui ? Décris-le en italien avec une couleur.",
+     "c": "Décris ta tenue du jour en italien : trois vêtements et leurs couleurs."
+    },
+    "it": {
+     "t": "Vestiti e taglie",
+     "g": "Impari i nomi dei vestiti, a chiedere la taglia e a provare i capi.",
+     "p": [
+      "Le basi: la maglia, la camicia, i pantaloni, la gonna, il vestito, le scarpe.",
+      "La taglia: Che taglia porta? Porto la M. Per le scarpe: Che numero? Il 40.",
+      "Per provare: Posso provarlo? Ci si cambia nel camerino."
+     ],
+     "q": "Che cosa indossi oggi? Descrivilo in italiano con un colore.",
+     "c": "Descrivi come sei vestito oggi: tre capi e i loro colori."
+    },
+    "pt": {
+     "t": "Roupa e tamanhos",
+     "g": "Nomear a roupa do dia a dia, pedir o teu tamanho e experimentar.",
+     "p": [
+      "O básico: la maglia, la camicia, i pantaloni, la gonna, il vestito, le scarpe.",
+      "Tamanho: Che taglia porta? Porto la M. Sapatos: Che numero? Il 40.",
+      "Para experimentar: Posso provarlo? O provador é il camerino."
+     ],
+     "q": "O que tens vestido hoje? Descreve em italiano com uma cor.",
+     "c": "Descreve a tua roupa de hoje em italiano: três peças e as suas cores."
+    },
+    "pt_BR": {
+     "t": "Roupas e tamanhos",
+     "g": "Nomear as roupas do dia a dia, pedir seu tamanho e experimentar.",
+     "p": [
+      "O básico: la maglia, la camicia, i pantaloni, la gonna, il vestito, le scarpe.",
+      "Tamanho: Che taglia porta? Porto la M. Sapatos: Che numero? Il 40.",
+      "Para experimentar: Posso provarlo? O provador é il camerino."
+     ],
+     "q": "O que você está vestindo hoje? Descreva em italiano com uma cor.",
+     "c": "Descreva sua roupa de hoje em italiano: três peças e suas cores."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la maglia",
+      "ex": "Questa maglia rossa è bellissima."
+     },
+     {
+      "w": "i pantaloni",
+      "ex": "Cerco un paio di pantaloni neri."
+     },
+     {
+      "w": "le scarpe",
+      "ex": "Che numero di scarpe porta?"
+     },
+     {
+      "w": "la taglia",
+      "ex": "Avete questa camicia in taglia L?"
+     },
+     {
+      "w": "provare",
+      "ex": "Posso provare questo vestito?"
+     },
+     {
+      "w": "il camerino",
+      "ex": "Il camerino è in fondo a destra."
+     }
+    ],
+    "gram": "Pantaloni e scarpe sono plurali: i pantaloni sono lunghi. Con i vestiti si usa portare: porto la taglia M, porto il 39."
+   }
+  },
+  {
+   "d": 39,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Demonstratives: questo and quello",
+     "g": "Point to things near you and far from you.",
+     "p": [
+      "Questo means this: questo libro, questa borsa, questi libri, queste borse.",
+      "Quello means that and changes like the article: quel libro, quello zaino, quell'albero.",
+      "Plural: quei libri, quegli zaini, quelle case. In shops: Quanto costa quella?"
+     ],
+     "q": "Look around: what is near you (questo) and what is far (quello)? Name two things.",
+     "c": "Point at four objects and say questo or quello with the right form."
+    },
+    "de": {
+     "t": "Demonstrativa: questo und quello",
+     "g": "Du zeigst auf Dinge in deiner Nähe und weiter weg.",
+     "p": [
+      "Questo heißt dies: questo libro, questa borsa, questi libri, queste borse.",
+      "Quello heißt jenes und folgt dem Artikel: quel libro, quello zaino, quell'albero.",
+      "Plural: quei libri, quegli zaini, quelle case. Im Laden: Quanto costa quella?"
+     ],
+     "q": "Schau dich um: Was ist nah (questo), was weit weg (quello)? Nenne zwei Dinge.",
+     "c": "Zeig auf vier Gegenstände und sag questo oder quello in der richtigen Form."
+    },
+    "es": {
+     "t": "Demostrativos: questo y quello",
+     "g": "Señala cosas cerca y lejos de ti.",
+     "p": [
+      "Questo significa este: questo libro, questa borsa, questi libri, queste borse.",
+      "Quello significa aquel y cambia como el artículo: quel libro, quello zaino, quell'albero.",
+      "Plural: quei libri, quegli zaini, quelle case. En la tienda: Quanto costa quella?"
+     ],
+     "q": "Mira a tu alrededor: ¿qué está cerca (questo) y qué lejos (quello)? Nombra dos cosas.",
+     "c": "Señala cuatro objetos y di questo o quello con la forma correcta."
+    },
+    "fr": {
+     "t": "Les démonstratifs : questo et quello",
+     "g": "Désigner des choses proches et éloignées.",
+     "p": [
+      "Questo veut dire ce...ci : questo libro, questa borsa, questi libri, queste borse.",
+      "Quello veut dire ce...là et suit l'article : quel libro, quello zaino, quell'albero.",
+      "Pluriel : quei libri, quegli zaini, quelle case. En boutique : Quanto costa quella ?"
+     ],
+     "q": "Regarde autour de toi : qu'est-ce qui est proche (questo) ou loin (quello) ? Nomme deux choses.",
+     "c": "Montre quatre objets et dis questo ou quello à la bonne forme."
+    },
+    "it": {
+     "t": "I dimostrativi: questo e quello",
+     "g": "Impari a indicare le cose vicine e quelle lontane.",
+     "p": [
+      "Questo indica cose vicine: questo libro, questa borsa, questi libri, queste borse.",
+      "Quello indica cose lontane e cambia come l'articolo: quel libro, quello zaino, quell'albero.",
+      "Plurale: quei libri, quegli zaini, quelle case. In negozio: Quanto costa quella?"
+     ],
+     "q": "Guardati intorno: che cosa è vicino (questo) e che cosa è lontano (quello)?",
+     "c": "Indica quattro oggetti e di' questo o quello nella forma giusta."
+    },
+    "pt": {
+     "t": "Demonstrativos: questo e quello",
+     "g": "Apontar para coisas perto e longe de ti.",
+     "p": [
+      "Questo quer dizer este: questo libro, questa borsa, questi libri, queste borse.",
+      "Quello quer dizer aquele e muda como o artigo: quel libro, quello zaino, quell'albero.",
+      "Plural: quei libri, quegli zaini, quelle case. Na loja: Quanto costa quella?"
+     ],
+     "q": "Olha à tua volta: o que está perto (questo) e o que está longe (quello)? Diz duas coisas.",
+     "c": "Aponta para quatro objetos e diz questo ou quello na forma certa."
+    },
+    "pt_BR": {
+     "t": "Demonstrativos: questo e quello",
+     "g": "Apontar para coisas perto e longe de você.",
+     "p": [
+      "Questo quer dizer este: questo libro, questa borsa, questi libri, queste borse.",
+      "Quello quer dizer aquele e muda como o artigo: quel libro, quello zaino, quell'albero.",
+      "Plural: quei libri, quegli zaini, quelle case. Na loja: Quanto costa quella?"
+     ],
+     "q": "Olhe ao redor: o que está perto (questo) e o que está longe (quello)? Diga duas coisas.",
+     "c": "Aponte para quatro objetos e diga questo ou quello na forma certa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "questo / questa",
+      "ex": "Questa giacca è molto comoda."
+     },
+     {
+      "w": "questi / queste",
+      "ex": "Queste scarpe sono nuove."
+     },
+     {
+      "w": "quel / quello",
+      "ex": "Quel ragazzo è mio cugino."
+     },
+     {
+      "w": "quell'",
+      "ex": "Ti piace quell'albergo?"
+     },
+     {
+      "w": "quei / quegli",
+      "ex": "Quegli studenti sono spagnoli."
+     },
+     {
+      "w": "quella / quelle",
+      "ex": "Quanto costano quelle borse?"
+     }
+    ],
+    "gram": "Questo: questo, questa, questi, queste. Quello segue l'articolo: quel/il, quello/lo, quell'/l', quei/i, quegli/gli, quella, quelle."
+   }
+  },
+  {
+   "d": 40,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Irregular verbs: andare and venire",
+     "g": "Say where you go and where you come from with two key irregular verbs.",
+     "p": [
+      "Andare: vado, vai, va, andiamo, andate, vanno. Venire: vengo, vieni, viene, veniamo, venite, vengono.",
+      "Cities take a: Vado a Roma. Countries and many places take in: Vado in Italia, in banca.",
+      "People and homes take da: Vado da Marco. Origin: Vengo da Milano. Vieni con me?"
+     ],
+     "q": "Where are you going this weekend, and where do you come from? Answer with vado and vengo.",
+     "c": "Write three sentences with andare a, andare in and andare da."
+    },
+    "de": {
+     "t": "Unregelmäßige Verben: andare und venire",
+     "g": "Du sagst mit zwei wichtigen Verben, wohin du gehst und woher du kommst.",
+     "p": [
+      "Andare: vado, vai, va, andiamo, andate, vanno. Venire: vengo, vieni, viene, veniamo, venite, vengono.",
+      "Städte mit a: Vado a Roma. Länder und viele Orte mit in: Vado in Italia, in banca.",
+      "Personen mit da: Vado da Marco. Herkunft: Vengo da Milano. Vieni con me?"
+     ],
+     "q": "Wohin gehst du am Wochenende und woher kommst du? Antworte mit vado und vengo.",
+     "c": "Schreib drei Sätze mit andare a, andare in und andare da."
+    },
+    "es": {
+     "t": "Verbos irregulares: andare y venire",
+     "g": "Di adónde vas y de dónde vienes con dos verbos irregulares clave.",
+     "p": [
+      "Andare: vado, vai, va, andiamo, andate, vanno. Venire: vengo, vieni, viene, veniamo, venite, vengono.",
+      "Ciudades con a: Vado a Roma. Países y muchos lugares con in: Vado in Italia, in banca.",
+      "Personas con da: Vado da Marco. Origen: Vengo da Milano. Vieni con me?"
+     ],
+     "q": "¿Adónde vas este fin de semana y de dónde vienes? Responde con vado y vengo.",
+     "c": "Escribe tres frases con andare a, andare in y andare da."
+    },
+    "fr": {
+     "t": "Verbes irréguliers : andare et venire",
+     "g": "Dire où tu vas et d'où tu viens avec deux verbes irréguliers essentiels.",
+     "p": [
+      "Andare : vado, vai, va, andiamo, andate, vanno. Venire : vengo, vieni, viene, veniamo, venite, vengono.",
+      "Villes avec a : Vado a Roma. Pays et beaucoup de lieux avec in : Vado in Italia, in banca.",
+      "Personnes avec da : Vado da Marco. Origine : Vengo da Milano. Vieni con me ?"
+     ],
+     "q": "Où vas-tu ce week-end et d'où viens-tu ? Réponds avec vado et vengo.",
+     "c": "Écris trois phrases avec andare a, andare in et andare da."
+    },
+    "it": {
+     "t": "Verbi irregolari: andare e venire",
+     "g": "Impari a dire dove vai e da dove vieni con due verbi irregolari importanti.",
+     "p": [
+      "Andare: vado, vai, va, andiamo, andate, vanno. Venire: vengo, vieni, viene, veniamo, venite, vengono.",
+      "Con le città si usa a: Vado a Roma. Con paesi e molti luoghi in: Vado in Italia, in banca.",
+      "Con le persone da: Vado da Marco. Provenienza: Vengo da Milano. Vieni con me?"
+     ],
+     "q": "Dove vai questo fine settimana e da dove vieni? Rispondi con vado e vengo.",
+     "c": "Scrivi tre frasi con andare a, andare in e andare da."
+    },
+    "pt": {
+     "t": "Verbos irregulares: andare e venire",
+     "g": "Dizer aonde vais e de onde vens com dois verbos irregulares essenciais.",
+     "p": [
+      "Andare: vado, vai, va, andiamo, andate, vanno. Venire: vengo, vieni, viene, veniamo, venite, vengono.",
+      "Cidades com a: Vado a Roma. Países e muitos lugares com in: Vado in Italia, in banca.",
+      "Pessoas com da: Vado da Marco. Origem: Vengo da Milano. Vieni con me?"
+     ],
+     "q": "Aonde vais este fim de semana e de onde vens? Responde com vado e vengo.",
+     "c": "Escreve três frases com andare a, andare in e andare da."
+    },
+    "pt_BR": {
+     "t": "Verbos irregulares: andare e venire",
+     "g": "Dizer aonde você vai e de onde vem com dois verbos irregulares essenciais.",
+     "p": [
+      "Andare: vado, vai, va, andiamo, andate, vanno. Venire: vengo, vieni, viene, veniamo, venite, vengono.",
+      "Cidades com a: Vado a Roma. Países e muitos lugares com in: Vado in Italia, in banca.",
+      "Pessoas com da: Vado da Marco. Origem: Vengo da Milano. Vieni con me?"
+     ],
+     "q": "Aonde você vai neste fim de semana e de onde vem? Responda com vado e vengo.",
+     "c": "Escreva três frases com andare a, andare in e andare da."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "andare",
+      "ex": "Domani vado a Firenze."
+     },
+     {
+      "w": "venire",
+      "ex": "Vieni al cinema stasera?"
+     },
+     {
+      "w": "vado in",
+      "ex": "Il lunedì vado in palestra."
+     },
+     {
+      "w": "vado da",
+      "ex": "Oggi vado dal medico."
+     },
+     {
+      "w": "vengo da",
+      "ex": "Vengo da Napoli, e tu?"
+     },
+     {
+      "w": "insieme",
+      "ex": "Andiamo insieme al mercato?"
+     }
+    ],
+    "gram": "Andare: vado, vai, va, andiamo, andate, vanno. Venire: vengo, vieni, viene, veniamo, venite, vengono. A Roma, in Italia, da Luca."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Days of the week",
+     "g": "Name the days of the week and talk about when you do things.",
+     "p": [
+      "Lunes, martes, miércoles, jueves, viernes, sábado, domingo: all lowercase and all masculine.",
+      "El lunes means on Monday (this one); los lunes means on Mondays (every week).",
+      "No article after es: hoy es martes, mañana es miércoles."
+     ],
+     "q": "What is your favourite day of the week, and what do you usually do on that day?",
+     "c": "Say your plan for each day of next week in Spanish, one short phrase per day."
+    },
+    "de": {
+     "t": "Die Wochentage",
+     "g": "Du nennst die Wochentage und sagst, wann du etwas machst.",
+     "p": [
+      "Lunes, martes, miércoles, jueves, viernes, sábado, domingo: alle klein und männlich.",
+      "El lunes heißt am Montag (diesen); los lunes heißt montags (jede Woche).",
+      "Nach es kein Artikel: hoy es martes, mañana es miércoles."
+     ],
+     "q": "Was ist dein Lieblingstag der Woche, und was machst du an diesem Tag meistens?",
+     "c": "Sag für jeden Tag nächster Woche auf Spanisch kurz, was du vorhast."
+    },
+    "es": {
+     "t": "Los días de la semana",
+     "g": "Usa los días de la semana para hablar de tus rutinas y planes.",
+     "p": [
+      "Lunes, martes, miércoles, jueves, viernes, sábado y domingo: en minúscula y masculinos.",
+      "El lunes es un lunes concreto; los lunes indica costumbre: los lunes voy a nadar.",
+      "Tras es no hay artículo: hoy es martes, mañana es miércoles."
+     ],
+     "q": "¿Cuál es tu día favorito de la semana y qué sueles hacer ese día?",
+     "c": "Escribe una frase para cada día de la próxima semana con lo que vas a hacer."
+    },
+    "fr": {
+     "t": "Les jours de la semaine",
+     "g": "Nommer les jours de la semaine et dire quand tu fais les choses.",
+     "p": [
+      "Lunes, martes, miércoles, jueves, viernes, sábado, domingo : tous en minuscule et masculins.",
+      "El lunes veut dire lundi (ce lundi-là) ; los lunes veut dire le lundi (chaque semaine).",
+      "Pas d'article après es : hoy es martes, mañana es miércoles."
+     ],
+     "q": "Quel est ton jour préféré de la semaine, et que fais-tu d'habitude ce jour-là ?",
+     "c": "Dis en espagnol ton programme pour chaque jour de la semaine prochaine, une courte phrase par jour."
+    },
+    "it": {
+     "t": "I giorni della settimana",
+     "g": "Nomini i giorni della settimana e dici quando fai le cose.",
+     "p": [
+      "Lunes, martes, miércoles, jueves, viernes, sábado, domingo: tutti minuscoli e maschili.",
+      "El lunes vuol dire lunedì (questo); los lunes vuol dire il lunedì (ogni settimana).",
+      "Dopo es niente articolo: hoy es martes, mañana es miércoles."
+     ],
+     "q": "Qual è il tuo giorno preferito della settimana e cosa fai di solito quel giorno?",
+     "c": "Di' in spagnolo il tuo programma per ogni giorno della prossima settimana, una frase breve al giorno."
+    },
+    "pt": {
+     "t": "Os dias da semana",
+     "g": "Nomeia os dias da semana e diz quando fazes as coisas.",
+     "p": [
+      "Lunes, martes, miércoles, jueves, viernes, sábado, domingo: em espanhol os dias têm nome próprio, não segunda ou terça.",
+      "El lunes é na segunda-feira (esta); los lunes é às segundas (todas as semanas).",
+      "Depois de es não há artigo: hoy es martes, mañana es miércoles."
+     ],
+     "q": "Qual é o teu dia preferido da semana e o que costumas fazer nesse dia?",
+     "c": "Diz em espanhol o teu plano para cada dia da próxima semana, uma frase curta por dia."
+    },
+    "pt_BR": {
+     "t": "Os dias da semana",
+     "g": "Nomeie os dias da semana e diga quando você faz as coisas.",
+     "p": [
+      "Lunes, martes, miércoles, jueves, viernes, sábado, domingo: em espanhol os dias têm nome próprio, não segunda ou terça.",
+      "El lunes é na segunda-feira (esta); los lunes é às segundas (toda semana).",
+      "Depois de es não tem artigo: hoy es martes, mañana es miércoles."
+     ],
+     "q": "Qual é o seu dia favorito da semana e o que você costuma fazer nesse dia?",
+     "c": "Diga em espanhol seu plano para cada dia da próxima semana, uma frase curta por dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el lunes",
+      "ex": "El lunes empiezo un curso nuevo."
+     },
+     {
+      "w": "el martes",
+      "ex": "Los martes voy al gimnasio."
+     },
+     {
+      "w": "el miércoles",
+      "ex": "Nos vemos el miércoles."
+     },
+     {
+      "w": "el jueves",
+      "ex": "El jueves ceno con mis padres."
+     },
+     {
+      "w": "el viernes",
+      "ex": "¡Por fin es viernes!"
+     },
+     {
+      "w": "el fin de semana",
+      "ex": "¿Qué haces el fin de semana?"
+     }
+    ],
+    "gram": "Los días van en minúscula y con artículo: el lunes (este lunes), los lunes (todos los lunes). Hoy es lunes, sin artículo."
+   }
+  },
+  {
+   "d": 22,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Months and dates",
+     "g": "Name the months and say dates in Spanish.",
+     "p": [
+      "Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre: all lowercase.",
+      "Dates follow el + number + de + month: el cinco de mayo, el veinte de octubre.",
+      "Ask ¿Qué fecha es hoy? or ¿Cuándo es tu cumpleaños? and answer with en + month or the full date."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Answer with the full date in Spanish.",
+     "c": "Write the birthdays of three people you love in Spanish, with el and de."
+    },
+    "de": {
+     "t": "Monate und Datum",
+     "g": "Du nennst die Monate und sagst das Datum auf Spanisch.",
+     "p": [
+      "Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre: alle klein.",
+      "Datum: el + Zahl + de + Monat: el cinco de mayo, el veinte de octubre; ohne Ordnungszahl.",
+      "Frag ¿Qué fecha es hoy? oder ¿Cuándo es tu cumpleaños? und antworte mit en + Monat oder dem Datum."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Antworte mit dem vollständigen Datum auf Spanisch.",
+     "c": "Schreib die Geburtstage von drei lieben Menschen auf Spanisch, mit el und de."
+    },
+    "es": {
+     "t": "Meses y fechas",
+     "g": "Nombra los meses y di fechas completas con soltura.",
+     "p": [
+      "Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre y diciembre, en minúscula.",
+      "Las fechas siguen el + número + de + mes: el cinco de mayo; el primer día puede ser el uno o el primero.",
+      "Pregunta ¿Qué fecha es hoy? o ¿Cuándo es tu cumpleaños? y responde en + mes o con la fecha."
+     ],
+     "q": "¿Cuándo es tu cumpleaños y cómo te gusta celebrarlo?",
+     "c": "Escribe con letras los cumpleaños de tres personas queridas."
+    },
+    "fr": {
+     "t": "Les mois et les dates",
+     "g": "Nommer les mois et dire les dates en espagnol.",
+     "p": [
+      "Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre : tous en minuscule.",
+      "Les dates suivent el + nombre + de + mois : el cinco de mayo, el veinte de octubre.",
+      "Demande ¿Qué fecha es hoy? ou ¿Cuándo es tu cumpleaños? et réponds en + mois ou par la date."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Réponds avec la date complète en espagnol.",
+     "c": "Écris en espagnol les anniversaires de trois personnes que tu aimes, avec el et de."
+    },
+    "it": {
+     "t": "Mesi e date",
+     "g": "Nomini i mesi e dici le date in spagnolo.",
+     "p": [
+      "Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre: tutti minuscoli.",
+      "Le date seguono el + numero + de + mese: el cinco de mayo, el veinte de octubre.",
+      "Chiedi ¿Qué fecha es hoy? o ¿Cuándo es tu cumpleaños? e rispondi con en + mese o con la data."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Rispondi con la data completa in spagnolo.",
+     "c": "Scrivi in spagnolo i compleanni di tre persone care, con el e de."
+    },
+    "pt": {
+     "t": "Meses e datas",
+     "g": "Nomeia os meses e diz datas em espanhol.",
+     "p": [
+      "Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre: todos com minúscula.",
+      "As datas seguem el + número + de + mês: el cinco de mayo, el veinte de octubre.",
+      "Pergunta ¿Qué fecha es hoy? ou ¿Cuándo es tu cumpleaños? e responde com en + mês ou com a data."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Responde com a data completa em espanhol.",
+     "c": "Escreve em espanhol os aniversários de três pessoas de quem gostas, com el e de."
+    },
+    "pt_BR": {
+     "t": "Meses e datas",
+     "g": "Nomeie os meses e diga datas em espanhol.",
+     "p": [
+      "Enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre: todos com minúscula.",
+      "As datas seguem el + número + de + mês: el cinco de mayo, el veinte de octubre.",
+      "Pergunte ¿Qué fecha es hoy? ou ¿Cuándo es tu cumpleaños? e responda com en + mês ou com a data."
+     ],
+     "q": "¿Cuándo es tu cumpleaños? Responda com a data completa em espanhol.",
+     "c": "Escreva em espanhol os aniversários de três pessoas queridas, com el e de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "enero",
+      "ex": "Mi cumpleaños es en enero."
+     },
+     {
+      "w": "abril",
+      "ex": "En abril llueve mucho."
+     },
+     {
+      "w": "agosto",
+      "ex": "En agosto muchas tiendas cierran."
+     },
+     {
+      "w": "diciembre",
+      "ex": "Diciembre es un mes muy alegre."
+     },
+     {
+      "w": "el cumpleaños",
+      "ex": "¿Cuándo es tu cumpleaños?"
+     },
+     {
+      "w": "la fecha",
+      "ex": "¿Qué fecha es hoy?"
+     }
+    ],
+    "gram": "Fechas: el + número + de + mes: el cinco de mayo. El primer día puede ser el uno o el primero. Los meses van en minúscula."
+   }
+  },
+  {
+   "d": 23,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling the time",
+     "g": "Ask and tell the time and say at what time things happen.",
+     "p": [
+      "Es la una for one o'clock, but son las dos, son las tres for all other hours.",
+      "Add minutes with y (past) and menos (to): son las tres y media, son las ocho menos cuarto.",
+      "¿A qué hora...? asks at what time; answer a las + hour: a las nueve."
+     ],
+     "q": "¿Qué hora es ahora mismo? And at what time do you usually have dinner?",
+     "c": "Say the time aloud in Spanish every time you look at a clock today."
+    },
+    "de": {
+     "t": "Die Uhrzeit",
+     "g": "Du fragst nach der Uhrzeit, nennst sie und sagst, wann etwas passiert.",
+     "p": [
+      "Es la una für ein Uhr, aber son las dos, son las tres für alle anderen Stunden.",
+      "Minuten mit y (nach) und menos (vor): son las tres y media (halb vier), son las ocho menos cuarto.",
+      "¿A qué hora...? fragt nach dem Zeitpunkt; Antwort: a las + Stunde: a las nueve."
+     ],
+     "q": "¿Qué hora es ahora mismo? Und um wie viel Uhr isst du normalerweise zu Abend?",
+     "c": "Sag heute jedes Mal die Uhrzeit laut auf Spanisch, wenn du auf die Uhr schaust."
+    },
+    "es": {
+     "t": "La hora",
+     "g": "Pregunta y di la hora y cuándo ocurren las cosas.",
+     "p": [
+      "Es la una, pero son las dos, son las tres: el verbo va en plural a partir de las dos.",
+      "Los minutos se suman con y y se restan con menos: las tres y media, las ocho menos cuarto.",
+      "¿A qué hora...? pregunta por el momento; se responde a las + hora: a las nueve."
+     ],
+     "q": "¿A qué hora te levantas, comes y cenas normalmente?",
+     "c": "Hoy, cada vez que mires el reloj, di la hora en voz alta con y o menos."
+    },
+    "fr": {
+     "t": "Dire l'heure",
+     "g": "Demander et dire l'heure, et à quelle heure les choses se passent.",
+     "p": [
+      "Es la una pour une heure, mais son las dos, son las tres pour toutes les autres heures.",
+      "Les minutes avec y (et) et menos (moins) : son las tres y media, son las ocho menos cuarto.",
+      "¿A qué hora...? demande à quelle heure ; réponds a las + heure : a las nueve."
+     ],
+     "q": "¿Qué hora es ahora mismo? Et à quelle heure dînes-tu d'habitude ?",
+     "c": "Dis l'heure à voix haute en espagnol chaque fois que tu regardes une horloge aujourd'hui."
+    },
+    "it": {
+     "t": "Dire l'ora",
+     "g": "Chiedi e dici l'ora e a che ora succedono le cose.",
+     "p": [
+      "Es la una per l'una, ma son las dos, son las tres per tutte le altre ore, come in italiano.",
+      "Minuti con y (e) e menos (meno): son las tres y media, son las ocho menos cuarto.",
+      "¿A qué hora...? chiede a che ora; rispondi a las + ora: a las nueve."
+     ],
+     "q": "¿Qué hora es ahora mismo? E a che ora ceni di solito?",
+     "c": "Di' l'ora ad alta voce in spagnolo ogni volta che guardi un orologio oggi."
+    },
+    "pt": {
+     "t": "As horas",
+     "g": "Pergunta e diz as horas e a que horas as coisas acontecem.",
+     "p": [
+      "Es la una para a uma, mas son las dos, son las tres para todas as outras horas.",
+      "Os minutos com y (e) e menos: son las tres y media, son las ocho menos cuarto (um quarto para as oito).",
+      "¿A qué hora...? pergunta a que horas; responde a las + hora: a las nueve."
+     ],
+     "q": "¿Qué hora es ahora mismo? E a que horas costumas jantar?",
+     "c": "Diz as horas em voz alta em espanhol sempre que olhares para um relógio hoje."
+    },
+    "pt_BR": {
+     "t": "As horas",
+     "g": "Pergunte e diga as horas e a que horas as coisas acontecem.",
+     "p": [
+      "Es la una para uma hora, mas son las dos, son las tres para todas as outras horas.",
+      "Os minutos com y (e) e menos: son las tres y media, son las ocho menos cuarto (quinze para as oito).",
+      "¿A qué hora...? pergunta a que horas; responda a las + hora: a las nueve."
+     ],
+     "q": "¿Qué hora es ahora mismo? E a que horas você costuma jantar?",
+     "c": "Diga as horas em voz alta em espanhol toda vez que olhar para um relógio hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Qué hora es?",
+      "ex": "Perdona, ¿qué hora es?"
+     },
+     {
+      "w": "es la una",
+      "ex": "Es la una y diez."
+     },
+     {
+      "w": "son las tres",
+      "ex": "Son las tres en punto."
+     },
+     {
+      "w": "y media",
+      "ex": "Son las seis y media."
+     },
+     {
+      "w": "menos cuarto",
+      "ex": "Son las ocho menos cuarto."
+     },
+     {
+      "w": "¿A qué hora...?",
+      "ex": "¿A qué hora empieza la película?"
+     }
+    ],
+    "gram": "Es la una, pero son las dos, las tres... Minutos: y cuarto, y media, menos cuarto. ¿A qué hora...? A las nueve."
+   }
+  },
+  {
+   "d": 24,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Present tense: -ar verbs",
+     "g": "Conjugate regular -ar verbs in the present and talk about what you do.",
+     "p": [
+      "Drop -ar and add -o, -as, -a, -amos, -áis, -an: hablo, hablas, habla, hablamos, habláis, hablan.",
+      "Most Spanish verbs are -ar verbs, so this one pattern unlocks hundreds of actions.",
+      "The present covers habits and now: trabajo en un banco, estudio español cada día."
+     ],
+     "q": "What do you do on a typical weekday? Tell me with three -ar verbs.",
+     "c": "Write five sentences about your week with five different -ar verbs."
+    },
+    "de": {
+     "t": "Präsens: Verben auf -ar",
+     "g": "Du konjugierst regelmäßige -ar-Verben im Präsens und sagst, was du machst.",
+     "p": [
+      "-ar weg, dann -o, -as, -a, -amos, -áis, -an: hablo, hablas, habla, hablamos, habláis, hablan.",
+      "Die meisten spanischen Verben enden auf -ar, also öffnet dir dieses Muster Hunderte Tätigkeiten.",
+      "Das Präsens deckt Gewohnheiten ab: trabajo en un banco, estudio español cada día."
+     ],
+     "q": "Was machst du an einem normalen Wochentag? Erzähl es mit drei -ar-Verben.",
+     "c": "Schreib fünf Sätze über deine Woche mit fünf verschiedenen -ar-Verben."
+    },
+    "es": {
+     "t": "Presente: verbos en -ar",
+     "g": "Conjuga los verbos regulares en -ar y habla de lo que haces.",
+     "p": [
+      "Quita -ar y añade -o, -as, -a, -amos, -áis, -an: hablo, hablas, habla, hablamos, habláis, hablan.",
+      "Es el grupo más grande del español: con este modelo puedes conjugar cientos de verbos.",
+      "El presente sirve para hábitos y para ahora: trabajo en un banco, estudio cada día."
+     ],
+     "q": "¿Qué haces en un día normal entre semana? Cuéntamelo con tres verbos en -ar.",
+     "c": "Escribe cinco frases sobre tu semana con cinco verbos distintos en -ar."
+    },
+    "fr": {
+     "t": "Présent : verbes en -ar",
+     "g": "Conjuguer les verbes réguliers en -ar au présent et dire ce que tu fais.",
+     "p": [
+      "On enlève -ar et on ajoute -o, -as, -a, -amos, -áis, -an : hablo, hablas, habla, hablamos, habláis, hablan.",
+      "La plupart des verbes espagnols sont en -ar : ce modèle ouvre des centaines d'actions.",
+      "Le présent exprime les habitudes : trabajo en un banco, estudio español cada día."
+     ],
+     "q": "Que fais-tu un jour de semaine typique ? Raconte avec trois verbes en -ar.",
+     "c": "Écris cinq phrases sur ta semaine avec cinq verbes en -ar différents."
+    },
+    "it": {
+     "t": "Presente: verbi in -ar",
+     "g": "Coniughi i verbi regolari in -ar al presente e dici cosa fai.",
+     "p": [
+      "Togli -ar e aggiungi -o, -as, -a, -amos, -áis, -an: hablo, hablas, habla, hablamos, habláis, hablan.",
+      "La maggior parte dei verbi spagnoli è in -ar, come i nostri in -are: un modello per centinaia di azioni.",
+      "Il presente indica abitudini: trabajo en un banco, estudio español cada día."
+     ],
+     "q": "Cosa fai in una giornata feriale tipica? Raccontamelo con tre verbi in -ar.",
+     "c": "Scrivi cinque frasi sulla tua settimana con cinque verbi in -ar diversi."
+    },
+    "pt": {
+     "t": "Presente: verbos em -ar",
+     "g": "Conjuga os verbos regulares em -ar no presente e diz o que fazes.",
+     "p": [
+      "Tira -ar e junta -o, -as, -a, -amos, -áis, -an: hablo, hablas, habla, hablamos, habláis, hablan.",
+      "A maioria dos verbos espanhóis termina em -ar, como em português: um modelo para centenas de ações.",
+      "O presente serve para hábitos: trabajo en un banco, estudio español cada día."
+     ],
+     "q": "O que fazes num dia de semana normal? Conta-me com três verbos em -ar.",
+     "c": "Escreve cinco frases sobre a tua semana com cinco verbos em -ar diferentes."
+    },
+    "pt_BR": {
+     "t": "Presente: verbos em -ar",
+     "g": "Conjugue os verbos regulares em -ar no presente e diga o que você faz.",
+     "p": [
+      "Tire -ar e acrescente -o, -as, -a, -amos, -áis, -an: hablo, hablas, habla, hablamos, habláis, hablan.",
+      "A maioria dos verbos espanhóis termina em -ar, como em português: um modelo para centenas de ações.",
+      "O presente serve para hábitos: trabajo en un banco, estudio español cada día."
+     ],
+     "q": "O que você faz num dia de semana normal? Me conte com três verbos em -ar.",
+     "c": "Escreva cinco frases sobre sua semana com cinco verbos em -ar diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hablar",
+      "ex": "Hablo español un poco."
+     },
+     {
+      "w": "trabajar",
+      "ex": "Trabajamos en el centro."
+     },
+     {
+      "w": "estudiar",
+      "ex": "¿Estudias por la mañana?"
+     },
+     {
+      "w": "escuchar",
+      "ex": "Escucho música en el tren."
+     },
+     {
+      "w": "cocinar",
+      "ex": "Mi pareja cocina muy bien."
+     },
+     {
+      "w": "comprar",
+      "ex": "Compran pan todos los días."
+     }
+    ],
+    "gram": "Verbos en -ar: se quita -ar y se añade -o, -as, -a, -amos, -áis, -an. Hablar: hablo, hablas, habla, hablamos, habláis, hablan."
+   }
+  },
+  {
+   "d": 25,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Present tense: -er and -ir verbs",
+     "g": "Conjugate regular -er and -ir verbs in the present.",
+     "p": [
+      "-er verbs: como, comes, come, comemos, coméis, comen.",
+      "-ir verbs are almost the same: vivo, vives, vive, vivimos, vivís, viven; only nosotros and vosotros differ.",
+      "With -ar, -er and -ir you can now conjugate most regular verbs in the present."
+     ],
+     "q": "What do you usually eat and drink for breakfast? Answer with comer and beber.",
+     "c": "Write three sentences with -er verbs and three with -ir verbs about your life."
+    },
+    "de": {
+     "t": "Präsens: Verben auf -er und -ir",
+     "g": "Du konjugierst regelmäßige -er- und -ir-Verben im Präsens.",
+     "p": [
+      "-er-Verben: como, comes, come, comemos, coméis, comen.",
+      "-ir-Verben sind fast gleich: vivo, vives, vive, vivimos, vivís, viven; nur nosotros und vosotros weichen ab.",
+      "Mit -ar, -er und -ir kannst du jetzt die meisten regelmäßigen Verben im Präsens bilden."
+     ],
+     "q": "Was isst und trinkst du normalerweise zum Frühstück? Antworte mit comer und beber.",
+     "c": "Schreib drei Sätze mit -er-Verben und drei mit -ir-Verben über dein Leben."
+    },
+    "es": {
+     "t": "Presente: verbos en -er e -ir",
+     "g": "Conjuga los verbos regulares en -er e -ir en presente.",
+     "p": [
+      "Verbos en -er: como, comes, come, comemos, coméis, comen.",
+      "Los verbos en -ir son casi iguales: vivo, vives, vive, vivimos, vivís, viven; solo cambian nosotros y vosotros.",
+      "Con -ar, -er e -ir ya puedes conjugar la mayoría de verbos regulares en presente."
+     ],
+     "q": "¿Qué sueles comer y beber en el desayuno? ¿Y qué lees últimamente?",
+     "c": "Escribe tres frases con verbos en -er y tres con verbos en -ir sobre tu vida."
+    },
+    "fr": {
+     "t": "Présent : verbes en -er et -ir",
+     "g": "Conjuguer les verbes réguliers en -er et -ir au présent.",
+     "p": [
+      "Verbes en -er : como, comes, come, comemos, coméis, comen.",
+      "Les verbes en -ir sont presque pareils : vivo, vives, vive, vivimos, vivís, viven ; seuls nosotros et vosotros changent.",
+      "Avec -ar, -er et -ir, tu peux conjuguer la plupart des verbes réguliers au présent."
+     ],
+     "q": "Que manges-tu et que bois-tu d'habitude au petit-déjeuner ? Réponds avec comer et beber.",
+     "c": "Écris trois phrases avec des verbes en -er et trois avec des verbes en -ir sur ta vie."
+    },
+    "it": {
+     "t": "Presente: verbi in -er e -ir",
+     "g": "Coniughi i verbi regolari in -er e -ir al presente.",
+     "p": [
+      "Verbi in -er: como, comes, come, comemos, coméis, comen.",
+      "I verbi in -ir sono quasi uguali: vivo, vives, vive, vivimos, vivís, viven; cambiano solo nosotros e vosotros.",
+      "Con -ar, -er e -ir ora puoi coniugare quasi tutti i verbi regolari al presente."
+     ],
+     "q": "Cosa mangi e bevi di solito a colazione? Rispondi con comer e beber.",
+     "c": "Scrivi tre frasi con verbi in -er e tre con verbi in -ir sulla tua vita."
+    },
+    "pt": {
+     "t": "Presente: verbos em -er e -ir",
+     "g": "Conjuga os verbos regulares em -er e -ir no presente.",
+     "p": [
+      "Verbos em -er: como, comes, come, comemos, coméis, comen.",
+      "Os verbos em -ir são quase iguais: vivo, vives, vive, vivimos, vivís, viven; só mudam nosotros e vosotros.",
+      "Com -ar, -er e -ir já consegues conjugar a maioria dos verbos regulares no presente."
+     ],
+     "q": "O que costumas comer e beber ao pequeno-almoço? Responde com comer e beber.",
+     "c": "Escreve três frases com verbos em -er e três com verbos em -ir sobre a tua vida."
+    },
+    "pt_BR": {
+     "t": "Presente: verbos em -er e -ir",
+     "g": "Conjugue os verbos regulares em -er e -ir no presente.",
+     "p": [
+      "Verbos em -er: como, comes, come, comemos, coméis, comen.",
+      "Os verbos em -ir são quase iguais: vivo, vives, vive, vivimos, vivís, viven; só mudam nosotros e vosotros.",
+      "Com -ar, -er e -ir você já conjuga a maioria dos verbos regulares no presente."
+     ],
+     "q": "O que você costuma comer e beber no café da manhã? Responda com comer e beber.",
+     "c": "Escreva três frases com verbos em -er e três com verbos em -ir sobre sua vida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "comer",
+      "ex": "Comemos a las dos."
+     },
+     {
+      "w": "beber",
+      "ex": "¿Bebes café o té?"
+     },
+     {
+      "w": "leer",
+      "ex": "Leo el periódico por la mañana."
+     },
+     {
+      "w": "aprender",
+      "ex": "Aprendo algo nuevo cada día."
+     },
+     {
+      "w": "vivir",
+      "ex": "Vivimos cerca del mar."
+     },
+     {
+      "w": "escribir",
+      "ex": "Escribo mensajes a mi familia."
+     }
+    ],
+    "gram": "-er: -o, -es, -e, -emos, -éis, -en (como). -ir: -o, -es, -e, -imos, -ís, -en (vivo). Solo cambian nosotros y vosotros."
+   }
+  },
+  {
+   "d": 26,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Daily routine and reflexive verbs",
+     "g": "Describe your daily routine with reflexive verbs.",
+     "p": [
+      "Reflexive verbs carry a little pronoun: me levanto (I get up), te duchas, se acuesta.",
+      "The pronouns are me, te, se, nos, os, se and go before the conjugated verb.",
+      "Link your day with primero, luego, después and por la noche."
+     ],
+     "q": "What does a normal morning look like for you? Use at least two reflexive verbs.",
+     "c": "Describe your morning routine in five steps in Spanish, from waking up to leaving home."
+    },
+    "de": {
+     "t": "Tagesablauf und reflexive Verben",
+     "g": "Du beschreibst deinen Tagesablauf mit reflexiven Verben.",
+     "p": [
+      "Reflexive Verben haben ein kleines Pronomen: me levanto (ich stehe auf), te duchas, se acuesta.",
+      "Die Pronomen me, te, se, nos, os, se stehen vor dem konjugierten Verb.",
+      "Verbinde deinen Tag mit primero, luego, después und por la noche."
+     ],
+     "q": "Wie sieht ein normaler Morgen bei dir aus? Nutze mindestens zwei reflexive Verben.",
+     "c": "Beschreib deine Morgenroutine in fünf Schritten auf Spanisch, vom Aufwachen bis zum Losgehen."
+    },
+    "es": {
+     "t": "La rutina y los verbos reflexivos",
+     "g": "Describe tu rutina diaria con verbos reflexivos y conectores de tiempo.",
+     "p": [
+      "Los reflexivos llevan pronombre: me levanto, te duchas, se acuesta.",
+      "Los pronombres me, te, se, nos, os, se van antes del verbo conjugado; en infinitivo, al final: levantarse.",
+      "Ordena tu día con primero, luego, después y por la noche."
+     ],
+     "q": "¿Cómo es una mañana normal para ti? ¿Eres de levantarte temprano?",
+     "c": "Describe tu rutina de la mañana en cinco pasos, desde que te despiertas hasta que sales."
+    },
+    "fr": {
+     "t": "La routine et les verbes pronominaux",
+     "g": "Décrire ta routine quotidienne avec des verbes pronominaux.",
+     "p": [
+      "Comme en français, ces verbes ont un pronom : me levanto (je me lève), te duchas, se acuesta.",
+      "Les pronoms me, te, se, nos, os, se se placent avant le verbe conjugué.",
+      "Enchaîne ta journée avec primero, luego, después et por la noche."
+     ],
+     "q": "À quoi ressemble une matinée normale pour toi ? Utilise au moins deux verbes pronominaux.",
+     "c": "Décris ta routine du matin en cinq étapes en espagnol, du réveil au départ."
+    },
+    "it": {
+     "t": "La routine e i verbi riflessivi",
+     "g": "Descrivi la tua giornata con i verbi riflessivi.",
+     "p": [
+      "Come in italiano, questi verbi hanno un pronome: me levanto (mi alzo), te duchas, se acuesta.",
+      "I pronomi me, te, se, nos, os, se vanno prima del verbo coniugato.",
+      "Collega la giornata con primero, luego, después e por la noche."
+     ],
+     "q": "Com'è una mattina normale per te? Usa almeno due verbi riflessivi.",
+     "c": "Descrivi la tua routine del mattino in cinque passi in spagnolo, dal risveglio all'uscita."
+    },
+    "pt": {
+     "t": "A rotina e os verbos reflexos",
+     "g": "Descreve a tua rotina diária com verbos reflexos.",
+     "p": [
+      "Os reflexos levam pronome: me levanto (levanto-me), te duchas, se acuesta.",
+      "Os pronomes me, te, se, nos, os, se vão antes do verbo conjugado, ao contrário do português europeu.",
+      "Liga o teu dia com primero, luego, después e por la noche."
+     ],
+     "q": "Como é uma manhã normal para ti? Usa pelo menos dois verbos reflexos.",
+     "c": "Descreve a tua rotina da manhã em cinco passos em espanhol, do acordar até sair de casa."
+    },
+    "pt_BR": {
+     "t": "A rotina e os verbos reflexivos",
+     "g": "Descreva sua rotina diária com verbos reflexivos.",
+     "p": [
+      "Os reflexivos levam pronome: me levanto (eu me levanto), te duchas, se acuesta.",
+      "Os pronomes me, te, se, nos, os, se vão antes do verbo conjugado, como no português do Brasil.",
+      "Organize seu dia com primero, luego, después e por la noche."
+     ],
+     "q": "Como é uma manhã normal para você? Use pelo menos dois verbos reflexivos.",
+     "c": "Descreva sua rotina da manhã em cinco passos em espanhol, do acordar até sair de casa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "levantarse",
+      "ex": "Me levanto a las siete."
+     },
+     {
+      "w": "ducharse",
+      "ex": "Me ducho por la mañana."
+     },
+     {
+      "w": "vestirse",
+      "ex": "Me visto rápido."
+     },
+     {
+      "w": "desayunar",
+      "ex": "Desayuno café con tostadas."
+     },
+     {
+      "w": "acostarse",
+      "ex": "Me acuesto a las once."
+     },
+     {
+      "w": "primero, luego, después",
+      "ex": "Primero me ducho, luego desayuno."
+     }
+    ],
+    "gram": "Verbos reflexivos con me, te, se, nos, os, se antes del verbo: me levanto, te duchas, se acuesta. En infinitivo, -se va al final."
+   }
+  },
+  {
+   "d": 27,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking questions",
+     "g": "Ask questions in Spanish with the right question words and punctuation.",
+     "p": [
+      "Spanish questions open with ¿ and close with ?; exclamations do the same with ¡ and !.",
+      "Key words, all with an accent: qué, quién, dónde, cuándo, cómo, cuánto, por qué.",
+      "Por qué (why) is two words with an accent; the answer porque (because) is one word without."
+     ],
+     "q": "Ask me three questions in Spanish with three different question words.",
+     "c": "Write five questions you would ask a new Spanish-speaking friend, with ¿ at the start."
+    },
+    "de": {
+     "t": "Fragen stellen",
+     "g": "Du stellst Fragen auf Spanisch mit den richtigen Fragewörtern und Zeichen.",
+     "p": [
+      "Spanische Fragen beginnen mit ¿ und enden mit ?; Ausrufe genauso mit ¡ und !.",
+      "Wichtige Fragewörter, alle mit Akzent: qué, quién, dónde, cuándo, cómo, cuánto, por qué.",
+      "Por qué (warum) sind zwei Wörter mit Akzent; die Antwort porque (weil) ist ein Wort ohne."
+     ],
+     "q": "Stell mir drei Fragen auf Spanisch mit drei verschiedenen Fragewörtern.",
+     "c": "Schreib fünf Fragen an eine neue spanischsprachige Freundin, jeweils mit ¿ am Anfang."
+    },
+    "es": {
+     "t": "Hacer preguntas",
+     "g": "Formula preguntas con los interrogativos correctos y la puntuación española.",
+     "p": [
+      "Las preguntas abren con ¿ y cierran con ?; las exclamaciones, con ¡ y !. Es una seña de identidad del español.",
+      "Los interrogativos llevan tilde: qué, quién, dónde, cuándo, cómo, cuánto, por qué.",
+      "Por qué pregunta y va separado con tilde; porque responde y va junto sin tilde."
+     ],
+     "q": "Hazme tres preguntas con tres interrogativos distintos: siento curiosidad por ver qué me preguntas.",
+     "c": "Escribe cinco preguntas para conocer mejor a alguien, con todas sus tildes."
+    },
+    "fr": {
+     "t": "Poser des questions",
+     "g": "Poser des questions en espagnol avec les bons mots et la bonne ponctuation.",
+     "p": [
+      "Les questions s'ouvrent par ¿ et se ferment par ? ; les exclamations font pareil avec ¡ et !.",
+      "Mots clés, tous accentués : qué, quién, dónde, cuándo, cómo, cuánto, por qué.",
+      "Por qué (pourquoi) s'écrit en deux mots avec accent ; la réponse porque (parce que) en un seul, sans accent."
+     ],
+     "q": "Pose-moi trois questions en espagnol avec trois mots interrogatifs différents.",
+     "c": "Écris cinq questions pour un nouvel ami hispanophone, avec ¿ au début."
+    },
+    "it": {
+     "t": "Fare domande",
+     "g": "Fai domande in spagnolo con le parole giuste e la punteggiatura corretta.",
+     "p": [
+      "Le domande si aprono con ¿ e si chiudono con ?; le esclamazioni con ¡ e !.",
+      "Parole chiave, tutte accentate: qué, quién, dónde, cuándo, cómo, cuánto, por qué.",
+      "Por qué (perché, domanda) va staccato con accento; porque (perché, risposta) è unito e senza accento."
+     ],
+     "q": "Fammi tre domande in spagnolo con tre parole interrogative diverse.",
+     "c": "Scrivi cinque domande per un nuovo amico ispanofono, con ¿ all'inizio."
+    },
+    "pt": {
+     "t": "Fazer perguntas",
+     "g": "Faz perguntas em espanhol com as palavras certas e a pontuação espanhola.",
+     "p": [
+      "As perguntas abrem com ¿ e fecham com ?; as exclamações fazem o mesmo com ¡ e !.",
+      "Palavras-chave, todas com acento: qué, quién, dónde, cuándo, cómo, cuánto, por qué.",
+      "Por qué (porquê) é separado com acento; a resposta porque é uma palavra sem acento."
+     ],
+     "q": "Faz-me três perguntas em espanhol com três palavras interrogativas diferentes.",
+     "c": "Escreve cinco perguntas para um novo amigo hispanófono, com ¿ no início."
+    },
+    "pt_BR": {
+     "t": "Fazendo perguntas",
+     "g": "Faça perguntas em espanhol com as palavras certas e a pontuação espanhola.",
+     "p": [
+      "As perguntas abrem com ¿ e fecham com ?; as exclamações fazem o mesmo com ¡ e !.",
+      "Palavras-chave, todas com acento: qué, quién, dónde, cuándo, cómo, cuánto, por qué.",
+      "Por qué (por que) é separado com acento; a resposta porque é uma palavra só, sem acento."
+     ],
+     "q": "Me faça três perguntas em espanhol com três palavras interrogativas diferentes.",
+     "c": "Escreva cinco perguntas para um novo amigo hispanófono, com ¿ no início."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Qué?",
+      "ex": "¿Qué haces esta tarde?"
+     },
+     {
+      "w": "¿Quién?",
+      "ex": "¿Quién es ese chico?"
+     },
+     {
+      "w": "¿Dónde?",
+      "ex": "¿Dónde vives?"
+     },
+     {
+      "w": "¿Cuándo?",
+      "ex": "¿Cuándo empieza la clase?"
+     },
+     {
+      "w": "¿Cómo?",
+      "ex": "¿Cómo vas al trabajo?"
+     },
+     {
+      "w": "¿Por qué?",
+      "ex": "¿Por qué estudias español?"
+     }
+    ],
+    "gram": "Las preguntas abren con ¿ y cierran con ?. Los interrogativos llevan tilde: qué, quién, dónde, cuándo, cómo, por qué. Respuesta: porque."
+   }
+  },
+  {
+   "d": 28,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Saying no: negative sentences",
+     "g": "Make negative sentences by putting no before the verb.",
+     "p": [
+      "Just place no before the verb: no hablo francés, no tengo coche.",
+      "Double negatives are correct in Spanish: no quiero nada, no hay nadie.",
+      "Tampoco means neither: no tengo hermanos. Yo tampoco."
+     ],
+     "q": "Tell me three things you do not do, using no, nunca or nada.",
+     "c": "Write three true sentences about yourself with no and two with nunca."
+    },
+    "de": {
+     "t": "Nein sagen: verneinte Sätze",
+     "g": "Du verneinst Sätze, indem du no vor das Verb setzt.",
+     "p": [
+      "Setz einfach no vor das Verb: no hablo francés, no tengo coche.",
+      "Doppelte Verneinung ist im Spanischen richtig: no quiero nada, no hay nadie.",
+      "Tampoco heißt auch nicht: no tengo hermanos. Yo tampoco."
+     ],
+     "q": "Erzähl mir drei Dinge, die du nicht machst, mit no, nunca oder nada.",
+     "c": "Schreib drei wahre Sätze über dich mit no und zwei mit nunca."
+    },
+    "es": {
+     "t": "La negación",
+     "g": "Construye frases negativas con no y otras palabras negativas.",
+     "p": [
+      "No va siempre delante del verbo: no hablo francés, no tengo coche.",
+      "La doble negación es correcta: no quiero nada, no hay nadie, no voy nunca.",
+      "Tampoco responde a otra negación: No tengo hermanos. Yo tampoco."
+     ],
+     "q": "Dime tres cosas que no haces nunca y que mucha gente sí hace.",
+     "c": "Escribe tres frases verdaderas sobre ti con no y dos con nunca."
+    },
+    "fr": {
+     "t": "Dire non : la négation",
+     "g": "Faire des phrases négatives en plaçant no devant le verbe.",
+     "p": [
+      "Place simplement no devant le verbe : no hablo francés, no tengo coche. Pas de pas !",
+      "La double négation est correcte : no quiero nada, no hay nadie.",
+      "Tampoco veut dire non plus : no tengo hermanos. Yo tampoco."
+     ],
+     "q": "Dis-moi trois choses que tu ne fais pas, avec no, nunca ou nada.",
+     "c": "Écris trois phrases vraies sur toi avec no et deux avec nunca."
+    },
+    "it": {
+     "t": "Dire di no: la negazione",
+     "g": "Fai frasi negative mettendo no davanti al verbo.",
+     "p": [
+      "Basta mettere no davanti al verbo: no hablo francés, no tengo coche.",
+      "La doppia negazione è corretta, come in italiano: no quiero nada, no hay nadie.",
+      "Tampoco vuol dire neanche: no tengo hermanos. Yo tampoco."
+     ],
+     "q": "Dimmi tre cose che non fai, con no, nunca o nada.",
+     "c": "Scrivi tre frasi vere su di te con no e due con nunca."
+    },
+    "pt": {
+     "t": "Dizer não: frases negativas",
+     "g": "Faz frases negativas pondo no antes do verbo.",
+     "p": [
+      "Basta pôr no antes do verbo: no hablo francés, no tengo coche.",
+      "A dupla negação é correta, como em português: no quiero nada, no hay nadie.",
+      "Tampoco quer dizer também não: no tengo hermanos. Yo tampoco."
+     ],
+     "q": "Diz-me três coisas que não fazes, com no, nunca ou nada.",
+     "c": "Escreve três frases verdadeiras sobre ti com no e duas com nunca."
+    },
+    "pt_BR": {
+     "t": "Dizendo não: frases negativas",
+     "g": "Faça frases negativas colocando no antes do verbo.",
+     "p": [
+      "Basta colocar no antes do verbo: no hablo francés, no tengo coche.",
+      "A dupla negação é correta, como em português: no quiero nada, no hay nadie.",
+      "Tampoco quer dizer também não: no tengo hermanos. Yo tampoco."
+     ],
+     "q": "Me diga três coisas que você não faz, com no, nunca ou nada.",
+     "c": "Escreva três frases verdadeiras sobre você com no e duas com nunca."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "no",
+      "ex": "No hablo francés."
+     },
+     {
+      "w": "nunca",
+      "ex": "Nunca bebo café por la noche."
+     },
+     {
+      "w": "nada",
+      "ex": "No quiero nada, gracias."
+     },
+     {
+      "w": "nadie",
+      "ex": "No hay nadie en casa."
+     },
+     {
+      "w": "tampoco",
+      "ex": "Yo tampoco tengo coche."
+     },
+     {
+      "w": "todavía no",
+      "ex": "Todavía no tengo trabajo."
+     }
+    ],
+    "gram": "La negación va antes del verbo: no hablo. Doble negación correcta: no hay nadie, no quiero nada, no como nunca."
+   }
+  },
+  {
+   "d": 29,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Jobs and workplaces",
+     "g": "Say what you do and where you work in Spanish.",
+     "p": [
+      "Use ser without an article for jobs: soy profesor, es enfermera (not soy un profesor).",
+      "Trabajo en + place tells where: trabajo en una oficina, en un hospital, en casa.",
+      "Ask ¿A qué te dedicas? or ¿En qué trabajas?; many jobs change for gender: cocinero, cocinera."
+     ],
+     "q": "¿A qué te dedicas? Tell me your job or studies and where you do them.",
+     "c": "Name the jobs of five people you know in Spanish, in the right gender."
+    },
+    "de": {
+     "t": "Berufe und Arbeitsorte",
+     "g": "Du sagst auf Spanisch, was du beruflich machst und wo du arbeitest.",
+     "p": [
+      "Beruf mit ser ohne Artikel: soy profesor, es enfermera.",
+      "Trabajo en + Ort sagt wo: trabajo en una oficina, en un hospital, en casa.",
+      "Frag ¿A qué te dedicas? oder ¿En qué trabajas?; viele Berufe ändern das Geschlecht: cocinero, cocinera."
+     ],
+     "q": "¿A qué te dedicas? Erzähl mir von deinem Beruf oder Studium und wo du es machst.",
+     "c": "Nenne die Berufe von fünf Menschen, die du kennst, auf Spanisch und in der richtigen Form."
+    },
+    "es": {
+     "t": "Profesiones y lugares de trabajo",
+     "g": "Di a qué te dedicas y dónde trabajas.",
+     "p": [
+      "La profesión va con ser y sin artículo: soy profesor, es enfermera.",
+      "Trabajo en + lugar indica dónde: trabajo en una oficina, en un hospital, desde casa.",
+      "Se pregunta ¿A qué te dedicas? o ¿En qué trabajas?; muchas profesiones cambian de género: cocinero, cocinera."
+     ],
+     "q": "¿A qué te dedicas y qué es lo que más te gusta de tu trabajo o estudios?",
+     "c": "Escribe la profesión de cinco personas que conoces en el género correcto."
+    },
+    "fr": {
+     "t": "Métiers et lieux de travail",
+     "g": "Dire ce que tu fais et où tu travailles.",
+     "p": [
+      "Le métier avec ser et sans article, comme en français : soy profesor, es enfermera.",
+      "Trabajo en + lieu dit où : trabajo en una oficina, en un hospital, en casa.",
+      "On demande ¿A qué te dedicas? ou ¿En qué trabajas? ; beaucoup de métiers changent de genre : cocinero, cocinera."
+     ],
+     "q": "¿A qué te dedicas? Parle-moi de ton métier ou tes études et de l'endroit où tu les fais.",
+     "c": "Nomme en espagnol le métier de cinq personnes que tu connais, au bon genre."
+    },
+    "it": {
+     "t": "Professioni e luoghi di lavoro",
+     "g": "Dici che lavoro fai e dove lavori.",
+     "p": [
+      "La professione va con ser senza articolo: soy profesor, es enfermera.",
+      "Trabajo en + luogo dice dove: trabajo en una oficina, en un hospital, en casa.",
+      "Si chiede ¿A qué te dedicas? o ¿En qué trabajas?; molti mestieri cambiano genere: cocinero, cocinera."
+     ],
+     "q": "¿A qué te dedicas? Parlami del tuo lavoro o dei tuoi studi e di dove li fai.",
+     "c": "Nomina in spagnolo il lavoro di cinque persone che conosci, nel genere giusto."
+    },
+    "pt": {
+     "t": "Profissões e locais de trabalho",
+     "g": "Diz o que fazes e onde trabalhas.",
+     "p": [
+      "A profissão vai com ser sem artigo: soy profesor, es enfermera.",
+      "Trabajo en + lugar diz onde: trabajo en una oficina, en un hospital, en casa.",
+      "Pergunta-se ¿A qué te dedicas? ou ¿En qué trabajas?; muitas profissões mudam de género: cocinero, cocinera."
+     ],
+     "q": "¿A qué te dedicas? Fala-me da tua profissão ou estudos e de onde os fazes.",
+     "c": "Diz em espanhol a profissão de cinco pessoas que conheces, no género certo."
+    },
+    "pt_BR": {
+     "t": "Profissões e locais de trabalho",
+     "g": "Diga o que você faz e onde trabalha.",
+     "p": [
+      "A profissão vai com ser sem artigo: soy profesor, es enfermera.",
+      "Trabajo en + lugar diz onde: trabajo en una oficina, en un hospital, en casa.",
+      "Pergunta-se ¿A qué te dedicas? ou ¿En qué trabajas?; muitas profissões mudam de gênero: cocinero, cocinera."
+     ],
+     "q": "¿A qué te dedicas? Me conte sobre sua profissão ou estudos e onde você faz isso.",
+     "c": "Diga em espanhol a profissão de cinco pessoas que você conhece, no gênero certo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el profesor, la profesora",
+      "ex": "Mi hermana es profesora de inglés."
+     },
+     {
+      "w": "el enfermero, la enfermera",
+      "ex": "Trabaja de enfermera en un hospital."
+     },
+     {
+      "w": "el ingeniero, la ingeniera",
+      "ex": "Soy ingeniero informático."
+     },
+     {
+      "w": "el cocinero, la cocinera",
+      "ex": "El cocinero prepara una paella."
+     },
+     {
+      "w": "la oficina",
+      "ex": "Trabajo en una oficina pequeña."
+     },
+     {
+      "w": "el estudiante",
+      "ex": "Soy estudiante de medicina."
+     }
+    ],
+    "gram": "Profesión con ser y sin artículo: soy médico, es abogada. Lugar con trabajar en: trabajo en un hospital. ¿A qué te dedicas?"
+   }
+  },
+  {
+   "d": 30,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: your first month in Spanish",
+     "g": "Put greetings, ser, tener, numbers, time and the present tense together in one chat.",
+     "p": [
+      "Introduce yourself fully: hola, me llamo..., soy de..., vivo en..., tengo... años.",
+      "Add your routine: me levanto a las..., trabajo en..., los fines de semana...",
+      "Ask questions back: ¿y tú?, ¿de dónde eres?, ¿a qué te dedicas? You already have a lot of Spanish!"
+     ],
+     "q": "Introduce yourself to me in Spanish in five sentences, then ask me one question.",
+     "c": "Record a one-minute voice note introducing yourself in Spanish and listen to it."
+    },
+    "de": {
+     "t": "Rückblick: dein erster Monat Spanisch",
+     "g": "Du verbindest Grüße, ser, tener, Zahlen, Uhrzeit und Präsens in einem Gespräch.",
+     "p": [
+      "Stell dich komplett vor: hola, me llamo..., soy de..., vivo en..., tengo... años.",
+      "Füge deinen Alltag hinzu: me levanto a las..., trabajo en..., los fines de semana...",
+      "Frag zurück: ¿y tú?, ¿de dónde eres?, ¿a qué te dedicas? Du kannst schon richtig viel!"
+     ],
+     "q": "Stell dich mir in fünf Sätzen auf Spanisch vor und stell mir dann eine Frage.",
+     "c": "Nimm eine einminütige Sprachnachricht auf, in der du dich auf Spanisch vorstellst, und hör sie an."
+    },
+    "es": {
+     "t": "Repaso: tu primer mes",
+     "g": "Combina saludos, ser, tener, números, la hora y el presente en una conversación.",
+     "p": [
+      "Preséntate por completo: me llamo..., soy de..., vivo en..., tengo... años.",
+      "Añade tu rutina: me levanto a las..., trabajo en..., los fines de semana...",
+      "Devuelve preguntas: ¿y tú?, ¿de dónde eres?, ¿a qué te dedicas? Así la charla fluye."
+     ],
+     "q": "Preséntate en cinco frases como si fuera la primera vez que hablamos y hazme una pregunta.",
+     "c": "Graba un audio de un minuto presentándote y escúchalo buscando algo que mejorar."
+    },
+    "fr": {
+     "t": "Révision : ton premier mois d'espagnol",
+     "g": "Combiner salutations, ser, tener, nombres, heure et présent dans une discussion.",
+     "p": [
+      "Présente-toi en entier : hola, me llamo..., soy de..., vivo en..., tengo... años.",
+      "Ajoute ta routine : me levanto a las..., trabajo en..., los fines de semana...",
+      "Pose des questions en retour : ¿y tú?, ¿de dónde eres?, ¿a qué te dedicas? Tu sais déjà beaucoup !"
+     ],
+     "q": "Présente-toi en espagnol en cinq phrases, puis pose-moi une question.",
+     "c": "Enregistre un message vocal d'une minute pour te présenter en espagnol et réécoute-le."
+    },
+    "it": {
+     "t": "Ripasso: il tuo primo mese di spagnolo",
+     "g": "Metti insieme saluti, ser, tener, numeri, ore e presente in una chiacchierata.",
+     "p": [
+      "Presentati per intero: hola, me llamo..., soy de..., vivo en..., tengo... años.",
+      "Aggiungi la tua routine: me levanto a las..., trabajo en..., los fines de semana...",
+      "Fai domande a tua volta: ¿y tú?, ¿de dónde eres?, ¿a qué te dedicas? Sai già tantissimo!"
+     ],
+     "q": "Presentati in spagnolo in cinque frasi e poi fammi una domanda.",
+     "c": "Registra un vocale di un minuto in cui ti presenti in spagnolo e riascoltalo."
+    },
+    "pt": {
+     "t": "Revisão: o teu primeiro mês de espanhol",
+     "g": "Junta cumprimentos, ser, tener, números, horas e presente numa conversa.",
+     "p": [
+      "Apresenta-te por completo: hola, me llamo..., soy de..., vivo en..., tengo... años.",
+      "Junta a tua rotina: me levanto a las..., trabajo en..., los fines de semana...",
+      "Faz perguntas de volta: ¿y tú?, ¿de dónde eres?, ¿a qué te dedicas? Já sabes imenso!"
+     ],
+     "q": "Apresenta-te em espanhol em cinco frases e depois faz-me uma pergunta.",
+     "c": "Grava uma mensagem de voz de um minuto a apresentares-te em espanhol e ouve-a."
+    },
+    "pt_BR": {
+     "t": "Revisão: seu primeiro mês de espanhol",
+     "g": "Junte cumprimentos, ser, tener, números, horas e presente numa conversa.",
+     "p": [
+      "Apresente-se por completo: hola, me llamo..., soy de..., vivo en..., tengo... años.",
+      "Acrescente sua rotina: me levanto a las..., trabajo en..., los fines de semana...",
+      "Faça perguntas de volta: ¿y tú?, ¿de dónde eres?, ¿a qué te dedicas? Você já sabe muito!"
+     ],
+     "q": "Apresente-se em espanhol em cinco frases e depois me faça uma pergunta.",
+     "c": "Grave um áudio de um minuto se apresentando em espanhol e escute."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "encantado de conocerte",
+      "ex": "Hola, soy Marta. Encantada de conocerte."
+     },
+     {
+      "w": "tengo... años",
+      "ex": "Tengo veinticinco años."
+     },
+     {
+      "w": "soy de...",
+      "ex": "Soy de Portugal, pero vivo en Sevilla."
+     },
+     {
+      "w": "trabajo en...",
+      "ex": "Trabajo en una tienda de ropa."
+     },
+     {
+      "w": "a las ocho",
+      "ex": "Me levanto a las ocho."
+     },
+     {
+      "w": "los fines de semana",
+      "ex": "Los fines de semana leo y cocino."
+     }
+    ],
+    "gram": "Repaso: ser (soy de, soy profesora), tener (tengo 30 años), la hora (a las ocho) y el presente regular (hablo, como, vivo)."
+   }
+  }
+ ]
+}

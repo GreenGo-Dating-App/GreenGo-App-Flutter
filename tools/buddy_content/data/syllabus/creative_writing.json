@@ -1,0 +1,2195 @@
+{
+"topic": "creative_writing",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Why we tell stories",
+"f": "How stories help people share experiences, imagine other lives and make sense of the world"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Your writing toolkit",
+"f": "Choosing a notebook or app, a regular time and a cosy place that makes writing easy to start"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "The ten-minute freewrite",
+"f": "Writing without stopping or judging for ten minutes to warm up and find surprising ideas"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Where ideas come from",
+"f": "Collecting sparks from daily life, overheard words, memories, dreams and 'what if' questions"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Keeping an idea journal",
+"f": "A simple system for capturing ideas, images and phrases before they slip away"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Writing with sight",
+"f": "Describing what a place or object looks like with precise colours, shapes and light"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Writing with sound",
+"f": "Using noises, voices and silence to make a scene feel alive and present"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Writing with smell and taste",
+"f": "How scent and flavour trigger memory and make descriptions vivid and personal"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Writing with touch",
+"f": "Textures, temperature and weight as tools to bring readers physically into a moment"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Choosing the specific detail",
+"f": "Why one exact detail, like a chipped blue mug, beats a list of general ones"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Strong verbs, fewer adverbs",
+"f": "Replacing 'walked slowly' with 'shuffled' or 'strolled' for energy and precision"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Concrete nouns",
+"f": "Swapping vague words like 'thing' or 'stuff' for nouns readers can picture"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Show, don't tell: the basics",
+"f": "Turning 'she was nervous' into actions, gestures and details that reveal the feeling"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Similes that surprise",
+"f": "Writing comparisons with 'like' or 'as' that feel fresh instead of worn out"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Metaphors in prose",
+"f": "Using metaphor to give readers a new way of seeing something familiar"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Avoiding clichés",
+"f": "Spotting overused phrases and replacing them with your own observations"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Writing a vivid memory",
+"f": "Turning a small personal memory into a short scene full of sensory detail"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Describing a room",
+"f": "Using a room's objects to hint at who lives there without saying it directly"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Describing a person",
+"f": "Capturing someone through posture, habits and one memorable feature"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Observation walk",
+"f": "Collecting ten real details on a short walk and turning them into a paragraph"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Microfiction in 50 words",
+"f": "Telling a complete tiny story with a beginning, a turn and an ending in 50 words"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "The six-word story",
+"f": "Exploring how much story can fit in just six carefully chosen words"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Writing from a photo",
+"f": "Using an image as a prompt to invent who, where and what happened next"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Writing from a single word",
+"f": "Building a short piece from one random word and every association it brings"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "What-if questions",
+"f": "Turning ordinary situations into story ideas by asking 'what if' again and again"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Combining two ideas",
+"f": "Mixing two unrelated sparks, like a lighthouse and a bakery, into one fresh story"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Writing every day",
+"f": "Small daily writing habits that keep creativity flowing without pressure"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Beating the blank page",
+"f": "Simple tricks like starting mid-sentence or with dialogue to get words moving"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Kind self-talk for writers",
+"f": "Quieting the inner critic during drafting and saving judgement for later"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: senses and details",
+"f": "A light review of sensory writing, specific detail and strong word choice"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "What makes a character",
+"f": "Wants, habits, quirks and contradictions that make a character feel real"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Character wants",
+"f": "Giving every character a clear desire that pushes the story forward"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Character obstacles",
+"f": "What stands in the way of a character's goal and why that creates interest"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Building a character profile",
+"f": "A short profile with name, age, history, goals, fears and favourite things"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Names that fit",
+"f": "Choosing character names that suit their age, culture, era and personality"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Characters from your culture",
+"f": "Drawing on traditions, food and everyday life you know to build authentic characters"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Characters from other cultures",
+"f": "Writing respectfully about people from other places through research and empathy"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Revealing character through action",
+"f": "Letting what characters do show who they are more than any description"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Revealing character through choices",
+"f": "How a decision under pressure shows a character's true values"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Inner thoughts",
+"f": "Sharing a character's private thoughts to create closeness with the reader"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Flaws make heroes human",
+"f": "Why imperfect characters are easier to love and more interesting to follow"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "The supporting cast",
+"f": "Friends, mentors and rivals who help or challenge the main character"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Writing an animal character",
+"f": "Creating memorable animal characters, realistic or talking, with clear personalities"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Character interview",
+"f": "Asking your character twenty questions to discover their voice and secrets"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Dialogue basics",
+"f": "How characters speak, why dialogue moves stories and how to punctuate it simply"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Said is your friend",
+"f": "Why simple tags like 'said' keep readers focused on the words, not the tag"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Action beats in dialogue",
+"f": "Mixing small actions with speech to show emotion and keep scenes moving"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Giving each voice its own sound",
+"f": "Word choice, rhythm and habits that make characters sound different"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Dialogue that reveals",
+"f": "Using conversation to show relationships, hidden feelings and information"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Cutting small talk",
+"f": "Trimming hellos and filler so dialogue gets to the interesting part fast"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Writing a two-person scene",
+"f": "Creating a short scene where two characters want different things"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Review: characters and dialogue",
+"f": "A light review of building characters and writing natural dialogue"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "What is setting",
+"f": "Time, place and atmosphere, and how they shape the story and its characters"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Setting as mood",
+"f": "Using weather, light and surroundings to create a cosy, tense or joyful feeling"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Real places as inspiration",
+"f": "Turning cities, villages and landscapes you know into story settings"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "A sense of time",
+"f": "Showing season, time of day and era through details rather than dates"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Setting through a character's eyes",
+"f": "How the same place feels different to a tourist, a local or a child"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Small worlds: a single location",
+"f": "Stories set in one place, like a train carriage or a kitchen"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "The story spark",
+"f": "Identifying the moment of change that turns an idea into a real story"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Beginning, middle and end",
+"f": "The simplest story shape and what each part needs to do"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Conflict made simple",
+"f": "Why every story needs a problem, and the many gentle forms conflict can take"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Stakes",
+"f": "What a character could win or lose and why it makes readers care"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Cause and effect",
+"f": "Linking events so each one leads naturally to the next"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Writing a strong opening line",
+"f": "First sentences that raise a question, set a voice or drop us into action"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Hooks in the first paragraph",
+"f": "Giving readers a reason to keep reading within the opening lines"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Satisfying endings",
+"f": "Endings that feel earned, whether happy, open or quietly surprising"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Writing a 300-word story",
+"f": "Putting beginning, middle and end together in one complete short piece"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Titles that invite",
+"f": "Choosing a title that hints at the story and makes readers curious"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Review: setting and plot basics",
+"f": "A light review of setting, conflict, stakes, openings and endings"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Point of view: an introduction",
+"f": "First, second and third person, and what each one offers the reader"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Writing in first person",
+"f": "The closeness and limits of telling a story through 'I'"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Writing in third person",
+"f": "Following a character as 'she' or 'he' with closeness or distance"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Past or present tense",
+"f": "How tense changes the pace and feeling of a story"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Keeping tense consistent",
+"f": "Spotting and fixing accidental tense shifts in your drafts"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Paragraphing for readers",
+"f": "Using paragraph breaks for rhythm, emphasis and easy reading"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Sentence variety",
+"f": "Mixing short and long sentences to create rhythm and keep attention"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Punctuation for storytellers",
+"f": "Commas, dashes and ellipses as tools for pace and voice"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Reading like a writer",
+"f": "Noticing how authors you love create effects you can try yourself"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Copying a style to learn",
+"f": "Imitating a favourite paragraph's style to understand how it works"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Fairy tales and folk tales",
+"f": "Classic patterns from tales around the world and why they still work"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Retelling a folk tale",
+"f": "Giving a traditional story a new setting, era or point of view"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Fables and their lessons",
+"f": "Short animal tales with a gentle lesson, from Aesop to many other cultures"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Writing a modern fable",
+"f": "Creating your own short fable about a modern habit or situation"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Myths of many cultures",
+"f": "How myths explain nature and origins, and what writers borrow from them"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Stories for children",
+"f": "Simple language, repetition and warmth in writing for young readers"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Writing a bedtime story",
+"f": "Crafting a calm, cosy story with a gentle rhythm and a comforting ending"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Funny writing basics",
+"f": "Surprise, exaggeration and timing as the building blocks of humour"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Writing a funny scene",
+"f": "Putting a character in a comic situation and letting it escalate kindly"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Review: forms and styles",
+"f": "A light review of point of view, tense, rhythm and classic story forms"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "The first draft mindset",
+"f": "Accepting messy first drafts as a normal and necessary part of writing"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Setting word goals",
+"f": "Small, realistic word counts that build confidence and steady progress"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Writing sprints",
+"f": "Timed bursts of focused writing to beat procrastination"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "What revision really means",
+"f": "Re-seeing a story's big picture before polishing sentences"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Reading your work aloud",
+"f": "Hearing clumsy rhythms, repeated words and unclear lines by reading aloud"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Cutting what isn't needed",
+"f": "Removing extra words, scenes and explanations to make writing stronger"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Spotting repeated words",
+"f": "Finding words you overuse and choosing livelier alternatives"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Checking clarity",
+"f": "Making sure readers always know who is speaking, where and when"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Giving kind feedback",
+"f": "How to share praise and suggestions that help another writer grow"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Receiving feedback gracefully",
+"f": "Listening openly to feedback and deciding what to use"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Letters as stories",
+"f": "Writing a story told through a letter or a series of letters"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Diary-style stories",
+"f": "Using diary entries to share a character's private voice day by day"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Writing a postcard story",
+"f": "Telling a tiny travel story in the space of a postcard"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Writing about food",
+"f": "Using a dish, a recipe or a meal to tell a story about people and places"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Writing about travel",
+"f": "Turning a journey, real or imagined, into a story with discovery at its heart"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Writing about friendship",
+"f": "Stories about meeting, losing touch and reconnecting with friends"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Writing about home",
+"f": "What home means to different characters and how to capture it in words"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Writing about a hobby",
+"f": "Turning a passion like music, sport or gardening into a story"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Writing about nature",
+"f": "Bringing landscapes, plants and animals to life on the page"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Writing about seasons",
+"f": "Capturing the moods and rituals of each season in short pieces"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Writing about a celebration",
+"f": "Festivals, birthdays and family traditions as rich settings for stories"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "A character who changes",
+"f": "A character who learns something new by the end of a short story"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "But and so, not and then",
+"f": "Linking events with 'but' and 'so' instead of 'and then' for stronger plots"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Writing from an object's view",
+"f": "Telling a story from the point of view of an everyday object"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Writing a mini mystery",
+"f": "A tiny puzzle story with a clue, a suspect and a clever reveal"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Writing a kind surprise",
+"f": "Building a story toward a happy twist the reader didn't see coming"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Writing a short monologue",
+"f": "A single character speaking their mind, revealing a wish or a worry in their own voice"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "A story told only in dialogue",
+"f": "Telling a whole short story through conversation, with no narration at all"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Building a writing routine",
+"f": "Designing a weekly routine that fits your life and keeps you writing"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Celebrating your progress",
+"f": "Looking back at your first months of writing and choosing your favourite piece"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Beginner review and showcase",
+"f": "Reviewing beginner skills and polishing one story to share"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Close third person",
+"f": "Staying tightly inside one character's perceptions while writing in third person"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "The omniscient narrator",
+"f": "A narrator who knows everything, and how to move between minds smoothly"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Second person stories",
+"f": "The unusual intimacy of 'you' and when it works best"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Choosing the right viewpoint",
+"f": "Testing a scene in different points of view to find the strongest one"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Switching viewpoints between chapters",
+"f": "Alternating narrators clearly so readers never feel lost"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Psychic distance",
+"f": "Zooming the narrative lens in and out, from wide view to inner thoughts"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Finding your voice",
+"f": "What makes your writing sound like you, and how to let it grow naturally"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Narrative voice versus character voice",
+"f": "The difference between how the narrator speaks and how characters speak"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Tone and attitude",
+"f": "How word choice creates playful, serious, warm or ironic tones"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Formal and informal styles",
+"f": "Adjusting language register to fit characters, settings and genres"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Writing a scene with purpose",
+"f": "Making sure every scene changes something for the characters"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Scene and summary",
+"f": "When to dramatise moments fully and when to summarise time quickly"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Entering late, leaving early",
+"f": "Starting scenes close to the action and ending before they fade"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Scene goals and setbacks",
+"f": "Building scenes where a character tries, struggles and faces a new situation"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Sequels: reaction and decision",
+"f": "The quieter beats after a big scene where characters process and choose"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Transitions between scenes",
+"f": "Moving smoothly through time and place without confusing readers"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Pacing: speeding up",
+"f": "Short sentences, quick dialogue and action to make scenes race"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Pacing: slowing down",
+"f": "Detail, reflection and longer sentences to linger on important moments"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Building tension gently",
+"f": "Raising questions, delays and small worries that keep readers turning pages"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Suspense versus surprise",
+"f": "Letting readers know more than characters, or less, and the effect of each"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Review: viewpoint, voice and scenes",
+"f": "A light review of point of view, voice, scene craft and pacing"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Subtext in dialogue",
+"f": "What characters mean but don't say, and how readers sense it"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Dialogue and dialect",
+"f": "Suggesting accents and regional speech respectfully without heavy spelling"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Writing multilingual characters",
+"f": "Including words from other languages naturally and clearly for readers"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Arguments on the page",
+"f": "Writing disagreements that feel real and reveal character without cruelty"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Group conversations",
+"f": "Handling scenes with three or more speakers clearly and naturally"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Phone, text and message dialogue",
+"f": "Writing modern conversations through messages and calls in fiction"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Silence as dialogue",
+"f": "Using pauses, unanswered questions and gestures to say more than words"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Internal conflict",
+"f": "A character torn between two wants, values or loyalties"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "External conflict",
+"f": "Obstacles from other people, nature, society or circumstances"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Layering conflicts",
+"f": "Combining inner and outer conflict for richer, more satisfying stories"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "The three-act structure",
+"f": "Setup, confrontation and resolution as a flexible map for stories"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "The inciting incident",
+"f": "The event that disrupts ordinary life and starts the story moving"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Rising action",
+"f": "Escalating challenges that build momentum toward the climax"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "The midpoint shift",
+"f": "A turning point halfway through that changes the story's direction"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "The climax",
+"f": "The moment of highest tension where the main conflict comes to a head"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Resolution and denouement",
+"f": "Tying threads together and showing the new normal after the climax"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "The hero's journey",
+"f": "A classic pattern of departure, trials and return found in many cultures"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Kishotenketsu structure",
+"f": "A four-part East Asian story shape built on a twist rather than conflict"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Circular stories",
+"f": "Stories that end where they began, with the character changed"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Review: conflict and structure",
+"f": "A light review of conflict types and classic story structures"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Character arcs",
+"f": "How characters grow, change or stay firm across a story"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Backstory without info dumps",
+"f": "Weaving a character's past in small, well-timed pieces"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Motivation that makes sense",
+"f": "Making sure every action has a believable reason behind it"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Writing relatable villains",
+"f": "Antagonists with understandable goals rather than pure wickedness"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Mentor characters",
+"f": "Guides who teach, challenge and eventually step aside for the hero"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Ensemble casts",
+"f": "Balancing several main characters so each one matters"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Character relationships",
+"f": "Showing how bonds between characters shift through a story"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Writing characters older or younger than you",
+"f": "Researching and imagining voices across different ages"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Planning versus discovering",
+"f": "Plotters, pantsers and the many writers who mix both approaches"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Outlining a short story",
+"f": "A simple outline that keeps a story on track while leaving room to play"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Index cards and story maps",
+"f": "Visual tools for arranging scenes and spotting gaps in a plot"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Writing a synopsis for yourself",
+"f": "Summarising your story in one page to test its shape"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Writing the flash fiction piece",
+"f": "Complete stories under 1,000 words with a strong single effect"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Writing the short story",
+"f": "Shaping a 2,000 to 5,000 word story with one central change"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Short story collections",
+"f": "How linked stories can build a bigger picture together"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Genre: an overview",
+"f": "What readers expect from different genres and how to play with them"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Writing mystery",
+"f": "Clues, red herrings and fair-play puzzles for curious readers"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Writing cosy mysteries",
+"f": "Gentle mysteries with charming settings, likeable sleuths and no gore"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Writing fantasy",
+"f": "Imaginative worlds, wonder and rules that make magic believable"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Review: characters, planning and genre",
+"f": "A light review of arcs, outlining and genre basics"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Worldbuilding basics",
+"f": "Geography, culture and daily life that make an invented world feel real"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Magic systems with rules",
+"f": "Why limits and costs make magic more interesting"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Writing science fiction",
+"f": "Exploring ideas about technology, space and the future through story"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Near-future stories",
+"f": "Imagining how everyday life might change in the next few decades"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Writing adventure",
+"f": "Quests, journeys and exciting challenges with a strong sense of momentum"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Writing comedy",
+"f": "Comic characters, running jokes and situations that build to laughter"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Writing romance-free friendship stories",
+"f": "Warm stories centred on loyalty, teamwork and found family"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Writing for middle grade",
+"f": "Stories for readers around eight to twelve, full of curiosity and courage"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Writing for young adults",
+"f": "Voice, identity and big first experiences in stories for teen readers"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Writing picture book texts",
+"f": "Short, rhythmic texts that leave space for illustrations"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Historical fiction",
+"f": "Bringing past eras to life through research and vivid daily detail"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Researching a setting",
+"f": "Finding reliable details about places, eras and customs for your stories"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Magical realism",
+"f": "Ordinary worlds where one wondrous element is treated as normal"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Slice-of-life stories",
+"f": "Quiet stories about everyday moments that reveal something meaningful"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Writing travel fiction",
+"f": "Stories where a journey and a new culture transform a character"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Review: genres and worlds",
+"f": "A light review of worldbuilding and the main genres explored"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Creative nonfiction",
+"f": "Telling true stories with the tools of fiction, honestly and vividly"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Writing personal essays",
+"f": "Exploring an idea through your own experience and reflection"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Writing memoir scenes",
+"f": "Turning real memories into scenes with dialogue and detail"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Writing about family traditions",
+"f": "Capturing the customs, recipes and stories passed down in your family"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Writing about places you love",
+"f": "Personal essays that show why a place matters to you"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Travel writing",
+"f": "Sharing a journey's sights, people and lessons in engaging prose"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Food writing",
+"f": "Describing flavours, kitchens and meals with warmth and precision"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Writing profiles of people",
+"f": "Portraying a real person you admire through interview and observation"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Writing humour essays",
+"f": "Funny true stories about everyday mishaps and discoveries"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Blending fact and imagination",
+"f": "When it is fine to invent and how to be honest with readers about it"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Writing a scene from a song",
+"f": "Using the mood and story of a favourite song as inspiration"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Writing from a painting",
+"f": "Imagining the story behind a famous artwork"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Ekphrastic prose",
+"f": "Writing in response to visual art, music or film"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Writing a story in a list",
+"f": "Using numbered lists, menus or instructions as a story form"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Stories told through objects",
+"f": "Building a story from a box of found items or a shopping receipt"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Review: nonfiction and inspired forms",
+"f": "A light review of true stories and art-inspired writing"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Opening chapters",
+"f": "What a first chapter must establish about character, world and question"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Prologues: yes or no",
+"f": "When a prologue helps a story and when it slows the start"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Chapter endings",
+"f": "Ending chapters with a question, a reveal or an emotional turn"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Writing flashbacks",
+"f": "Moving into the past smoothly and returning without confusion"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Foreshadowing",
+"f": "Planting small hints early so later events feel inevitable"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Chekhov's gun",
+"f": "Making details pay off and removing promises the story never keeps"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Motifs and repetition",
+"f": "Repeated images or phrases that tie a story together"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Symbols in fiction",
+"f": "Using objects or images to carry deeper meaning without forcing it"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Setting as character",
+"f": "Places that shape events and change alongside the characters"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Weather and atmosphere",
+"f": "Using climate and weather for mood without falling into clichés"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Writing emotion without melodrama",
+"f": "Showing strong feelings with restraint and specific detail"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Writing joy",
+"f": "Capturing happiness, delight and celebration in fresh, believable ways"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Writing kindness",
+"f": "Moments of generosity that move readers without feeling sugary"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Writing courage",
+"f": "Showing small and large acts of bravery in everyday life"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Writing hope",
+"f": "Stories that leave readers uplifted while staying honest"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Writing humour in serious stories",
+"f": "Light moments that give relief and make characters more human"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Writing the second draft",
+"f": "Revising structure, scenes and characters after the first draft rests"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Self-editing checklist",
+"f": "A personal list of things to check in every draft"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Line editing",
+"f": "Polishing sentences for rhythm, clarity and precision"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Trimming your word count",
+"f": "Strategies for cutting a story to fit a length limit"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Critique groups",
+"f": "How writing groups work and how to get the most from them"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Beta readers",
+"f": "Choosing test readers and asking them useful questions"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Writing a story collaboratively",
+"f": "Co-writing with a friend through turns, prompts and shared plans"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Writing prompts game",
+"f": "Creating prompts for others and swapping them to spark new stories"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Writing across cultures",
+"f": "Sharing stories with readers from different backgrounds and learning from them"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Frame stories",
+"f": "A story wrapped inside another story, like travellers sharing tales on a journey"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "The quest for a lost object",
+"f": "Building a plot around searching for something precious that has gone missing"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Caper stories",
+"f": "Clever, light-hearted plans with a team, gadgets and a fun twist"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Fan fiction as practice",
+"f": "Borrowing beloved characters to practise plot and voice for your own growth"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Writing for audio",
+"f": "Stories meant to be heard, with sound cues, clear voices and spoken rhythm"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Writing a short script scene",
+"f": "Formatting a scene for stage or screen with action lines and dialogue"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Choose-your-path stories",
+"f": "Interactive stories where readers decide what happens next"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Writing a serial story",
+"f": "Episodes that each satisfy while leaving readers eager for the next one"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Writing the quiet climax",
+"f": "Climaxes built on a decision or realisation rather than a big event"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Reflection journal for writers",
+"f": "Tracking what you learned from each story to improve the next one"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Sharing work with confidence",
+"f": "Reading your work aloud to others and presenting it with pride"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Intermediate review and showcase",
+"f": "Reviewing intermediate skills and polishing a complete short story"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Thinking like a novelist",
+"f": "How a long project differs from short fiction in scope, pace and planning"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Finding a novel-sized idea",
+"f": "Testing whether an idea has enough conflict, characters and change for a novel"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "The premise in one sentence",
+"f": "Capturing your book's character, goal, obstacle and stakes in a single line"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Theme: what your story is about",
+"f": "Discovering the deeper idea beneath the plot without preaching"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Theme through character choices",
+"f": "Letting characters' decisions express the theme naturally"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Building a story bible",
+"f": "Keeping track of characters, places, timelines and rules in one document"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Subplots that support",
+"f": "Secondary storylines that echo, contrast or complicate the main plot"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Weaving multiple storylines",
+"f": "Braiding plots together so they meet at the right moments"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Managing a large cast",
+"f": "Introducing many characters clearly and giving each a distinct role"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Planning chapters",
+"f": "Deciding what each chapter must achieve and where it should end"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Novel structure models",
+"f": "Comparing seven-point, save-the-cat style and four-act approaches as tools"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "The sagging middle",
+"f": "Keeping the long middle section lively with complications and reversals"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Timelines and calendars",
+"f": "Tracking dates and durations so events stay consistent"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Writing a novella",
+"f": "The focused middle length between short story and novel"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Sustaining motivation on long projects",
+"f": "Milestones, rewards and routines for finishing a long draft"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Review: planning the long project",
+"f": "A light review of premise, theme, subplots and structure"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "The unreliable narrator",
+"f": "Narrators whose account readers learn to question, and how to play fair"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Multiple narrators",
+"f": "Telling one story through several voices that see events differently"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Nonlinear storytelling",
+"f": "Arranging events out of order for mystery, contrast and meaning"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Reverse chronology",
+"f": "Telling a story backwards so the question becomes how, not what"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Parallel timelines",
+"f": "Two eras or storylines that mirror each other and finally connect"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Stories within stories",
+"f": "Nesting tales inside tales to layer meaning and perspective"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Epistolary novels",
+"f": "Building a long story through letters, emails, logs and documents"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Fragmented narratives",
+"f": "Using short pieces, gaps and white space as part of the story"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Present-tense immediacy",
+"f": "Using present tense deliberately for urgency and intimacy"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Free indirect style",
+"f": "Blending narrator and character voice for subtle closeness"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Experimenting with form",
+"f": "Footnotes, lists, maps and unusual layouts as storytelling tools"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Flash fiction mastery",
+"f": "Compression, implication and resonance in the very short form"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "The prose poem",
+"f": "Writing that sits between poetry and prose with rich, rhythmic language"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Hybrid forms",
+"f": "Mixing fiction, essay, poetry and image in a single creative work"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Review: advanced techniques",
+"f": "A light review of narrators, nonlinear time and experimental forms"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Deep characterisation",
+"f": "Layers of desire, belief, memory and contradiction in a complex character"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "The lie the character believes",
+"f": "A false belief that the story challenges and the character outgrows"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Flat arcs and steady heroes",
+"f": "Characters who stay true while changing the world around them"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Writing moral complexity",
+"f": "Characters facing choices with no perfect answer"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Antagonists with depth",
+"f": "Opponents whose goals and history make the conflict richer"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Writing groups and communities",
+"f": "Showing how families, teams and towns behave as a whole"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Character voice in long works",
+"f": "Keeping each character's voice consistent across hundreds of pages"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Writing growth across years",
+"f": "Showing characters mature believably over long spans of time"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Dialogue mastery",
+"f": "Combining subtext, rhythm, conflict and character in every exchange"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Writing restraint",
+"f": "Trusting readers by leaving out explanations and letting gaps speak"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Ambiguity and open endings",
+"f": "Endings that invite readers to think rather than giving every answer"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Irony in fiction",
+"f": "Dramatic, situational and verbal irony as sources of meaning and humour"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Unforgettable images",
+"f": "Crafting a central image that readers carry long after the story"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Imagery systems",
+"f": "Linking related images across a work to build meaning"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Review: character and subtlety",
+"f": "A light review of deep character, restraint and irony"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Style and sentence craft",
+"f": "Studying how rhythm, syntax and sound shape a distinctive style"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Long sentences done well",
+"f": "Writing flowing sentences that build momentum without confusion"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "The power of the short sentence",
+"f": "Using brevity for impact, emphasis and surprise"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Sound in prose",
+"f": "Alliteration, assonance and cadence in sentences that read beautifully"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Precision and economy",
+"f": "Making every word earn its place in your best work"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Avoiding purple prose",
+"f": "Recognising overwritten passages and finding a cleaner way to say them"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Writing description that moves",
+"f": "Description that carries emotion and story, not just scenery"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Humour at an advanced level",
+"f": "Wit, understatement and comic voice sustained across a long work"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Writing satire gently",
+"f": "Playful exaggeration of everyday habits and trends without cruelty"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Allegory and fable at length",
+"f": "Longer stories where characters and events stand for bigger ideas"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Retelling classics",
+"f": "Reimagining a classic novel or play from a new angle or setting"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Writing speculative what-ifs",
+"f": "Building whole stories from a single speculative change to reality"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Writing awe and wonder",
+"f": "Capturing vast landscapes, discoveries and moments of amazement"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Writing place with authority",
+"f": "Making a setting feel lived-in through layers of sensory and cultural detail"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Writing time compression",
+"f": "Covering years in a paragraph and a single minute in a page with control"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "The braided essay",
+"f": "Weaving several threads of memory, observation and research into one essay"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Review: style and voice",
+"f": "A light review of sentence craft, sound, humour and retellings"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Revision at scale",
+"f": "Planning a full revision of a long draft in clear stages"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "The reverse outline",
+"f": "Outlining a finished draft to see what it really contains"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Structural revision",
+"f": "Moving, merging and cutting scenes to strengthen the overall shape"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Character revision passes",
+"f": "Checking each character's arc, voice and motivation through the draft"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Continuity checks",
+"f": "Catching mistakes in names, dates, eye colours and timelines"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Revising openings and endings",
+"f": "Making first and last pages echo each other with purpose"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Cutting your darlings",
+"f": "Letting go of beloved passages that no longer serve the story"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Polishing dialogue",
+"f": "Final passes to sharpen speech, cut tags and add subtext"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Proofreading techniques",
+"f": "Methods for catching typos, from printing out to reading backwards"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Working with an editor",
+"f": "What different kinds of editors do and how to collaborate well"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Responding to deep feedback",
+"f": "Weighing big-picture notes and deciding what to change"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Knowing when a piece is finished",
+"f": "Signs that a story is ready, and why perfection is not the goal"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Translation and your writing",
+"f": "How stories travel between languages and what translators preserve"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Self-translating your work",
+"f": "Rewriting your own piece in another language you know and what you learn"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Writing for a global audience",
+"f": "Making stories clear and welcoming for readers from many cultures"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Review: revision and polish",
+"f": "A light review of large-scale revision, editing and finishing"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Sharing your writing",
+"f": "Options for sharing work, from friends and clubs to magazines and online spaces"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Writing a cover letter for submissions",
+"f": "A short, professional note to accompany a story you submit"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Understanding submission guidelines",
+"f": "Reading and following guidelines carefully to give your work its best chance"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Handling rejection with resilience",
+"f": "Seeing rejection as a normal step and continuing with confidence"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Writing contests and anthologies",
+"f": "How competitions and collections can motivate and showcase your work"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Traditional and independent publishing",
+"f": "A general, timeless overview of the main publishing paths"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Writing a query letter",
+"f": "Presenting a book project clearly and appealingly in one page"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Writing a book synopsis",
+"f": "Summarising a whole novel's plot, characters and ending in brief"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Your author bio",
+"f": "Writing a short, friendly bio that introduces you as a writer"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Reading in public",
+"f": "Preparing and performing a reading of your work with confidence"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Building a writing community",
+"f": "Finding fellow writers to share encouragement, feedback and ideas"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Mentoring other writers",
+"f": "Supporting beginners and how teaching deepens your own craft"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Writing across media",
+"f": "Adapting a story for comics, games, audio or screen"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Writing for games",
+"f": "Branching narratives, character dialogue and player choice in game writing"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Writing comics and graphic stories",
+"f": "Panels, captions and pacing in stories told with pictures"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Review: sharing and the writing life",
+"f": "A light review of submissions, publishing paths and community"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Ensemble endings",
+"f": "Resolving several characters' arcs in one satisfying finale"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Linked story cycles",
+"f": "Stories connected by a place or character that form a larger whole"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Creative habits for life",
+"f": "Sustaining curiosity, reading and writing practice over many years"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Refilling the creative well",
+"f": "Travel, art, music and nature as fuel for new ideas"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Writing through busy seasons",
+"f": "Keeping a small writing practice alive when life is full"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Reading widely across cultures",
+"f": "Discovering stories from many countries to broaden your craft"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Learning from great openings",
+"f": "Studying celebrated first lines and what makes them unforgettable"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Learning from great endings",
+"f": "Studying memorable final pages and the feelings they leave"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Building a personal canon",
+"f": "Choosing the books that shaped you and explaining why"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Writing your craft manifesto",
+"f": "Putting your beliefs about good writing into your own words"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Capstone: choosing your project",
+"f": "Selecting a final project that stretches your new skills"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Capstone: planning",
+"f": "Outlining the capstone story with premise, characters and structure"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Capstone: drafting the opening",
+"f": "Writing a strong opening that sets voice, character and question"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Capstone: drafting the middle",
+"f": "Building complications and deepening characters in the middle section"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Capstone: drafting the ending",
+"f": "Bringing the capstone to a resonant, earned conclusion"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Capstone: revision",
+"f": "Revising the capstone with everything learned this year"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Capstone: final polish",
+"f": "Line editing and proofreading the capstone until it shines"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Capstone: sharing the work",
+"f": "Presenting the finished piece and reflecting on feedback"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Looking back on the year",
+"f": "Reviewing your growth from first freewrite to finished project"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Your next writing chapter",
+"f": "Setting goals and dreams for the next stage of your writing life"
+}
+]
+}

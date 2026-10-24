@@ -1,0 +1,1305 @@
+{
+"topic": "local_food_travel",
+"questions": [
+{
+"id": "local_food_travel-001",
+"lv": "any",
+"i18n": {
+"en": "What's the most delicious dish you've ever eaten while travelling?",
+"de": "Was war das leckerste Gericht, das du je auf Reisen gegessen hast?",
+"es": "¿Cuál es el plato más rico que has comido viajando?",
+"fr": "Quel est le plat le plus délicieux que tu aies mangé en voyage ?",
+"it": "Qual è il piatto più buono che hai mangiato in viaggio?",
+"pt": "Qual foi o prato mais delicioso que já comeste em viagem?",
+"pt_BR": "Qual foi o prato mais gostoso que você já comeu viajando?"
+}
+},
+{
+"id": "local_food_travel-002",
+"lv": "any",
+"i18n": {
+"en": "Which country's cuisine would you love to explore on its home soil?",
+"de": "Die Küche welches Landes würdest du gern direkt vor Ort entdecken?",
+"es": "¿La cocina de qué país te encantaría descubrir en su propia tierra?",
+"fr": "Quelle cuisine aimerais-tu découvrir directement dans son pays d'origine ?",
+"it": "La cucina di quale paese ti piacerebbe scoprire direttamente sul posto?",
+"pt": "A cozinha de que país adorarias descobrir no próprio país?",
+"pt_BR": "A culinária de qual país você adoraria descobrir lá mesmo?"
+}
+},
+{
+"id": "local_food_travel-003",
+"lv": "any",
+"i18n": {
+"en": "Are you an adventurous eater, or do you prefer familiar flavours?",
+"de": "Isst du gern abenteuerlich oder bleibst du lieber bei vertrauten Geschmäckern?",
+"es": "¿Eres aventurero con la comida o prefieres sabores conocidos?",
+"fr": "Es-tu aventureux à table, ou préfères-tu les saveurs familières ?",
+"it": "A tavola sei avventuroso o preferisci i sapori conosciuti?",
+"pt": "És aventureiro à mesa ou preferes sabores conhecidos?",
+"pt_BR": "Você é aventureiro na comida ou prefere sabores conhecidos?"
+}
+},
+{
+"id": "local_food_travel-004",
+"lv": "any",
+"i18n": {
+"en": "What dish from your own region would you recommend to a visitor?",
+"de": "Welches Gericht aus deiner Region würdest du einem Besucher empfehlen?",
+"es": "¿Qué plato de tu región recomendarías a un visitante?",
+"fr": "Quel plat de ta région recommanderais-tu à un visiteur ?",
+"it": "Quale piatto della tua regione consiglieresti a un visitatore?",
+"pt": "Que prato da tua região recomendarias a um visitante?",
+"pt_BR": "Qual prato da sua região você recomendaria a um visitante?"
+}
+},
+{
+"id": "local_food_travel-005",
+"lv": "any",
+"i18n": {
+"en": "Do you love visiting food markets when you travel?",
+"de": "Besuchst du auf Reisen gern Lebensmittelmärkte?",
+"es": "¿Te encanta visitar mercados de comida cuando viajas?",
+"fr": "Adores-tu visiter les marchés alimentaires en voyage ?",
+"it": "Ti piace visitare i mercati alimentari quando viaggi?",
+"pt": "Adoras visitar mercados de comida quando viajas?",
+"pt_BR": "Você adora visitar mercados de comida quando viaja?"
+}
+},
+{
+"id": "local_food_travel-006",
+"lv": "any",
+"i18n": {
+"en": "Street food or sit-down restaurant: which do you enjoy more abroad?",
+"de": "Streetfood oder Restaurant: Was genießt du im Ausland mehr?",
+"es": "Comida callejera o restaurante: ¿qué disfrutas más en el extranjero?",
+"fr": "Street food ou restaurant : que préfères-tu à l'étranger ?",
+"it": "Street food o ristorante: cosa preferisci all'estero?",
+"pt": "Comida de rua ou restaurante: o que preferes no estrangeiro?",
+"pt_BR": "Comida de rua ou restaurante: o que você curte mais no exterior?"
+}
+},
+{
+"id": "local_food_travel-007",
+"lv": "any",
+"i18n": {
+"en": "What's a food you tried abroad that surprised you in a good way?",
+"de": "Welches Essen hast du im Ausland probiert, das dich positiv überrascht hat?",
+"es": "¿Qué comida probaste en el extranjero que te sorprendió para bien?",
+"fr": "Quel aliment goûté à l'étranger t'a agréablement surpris ?",
+"it": "Quale cibo assaggiato all'estero ti ha sorpreso in positivo?",
+"pt": "Que comida provaste no estrangeiro que te surpreendeu pela positiva?",
+"pt_BR": "Que comida você provou no exterior que te surpreendeu positivamente?"
+}
+},
+{
+"id": "local_food_travel-008",
+"lv": "any",
+"i18n": {
+"en": "Is there a dish you dream about recreating at home?",
+"de": "Gibt es ein Gericht, das du unbedingt zu Hause nachkochen möchtest?",
+"es": "¿Hay algún plato que sueñas con preparar en casa?",
+"fr": "Y a-t-il un plat que tu rêves de refaire chez toi ?",
+"it": "C'è un piatto che sogni di rifare a casa?",
+"pt": "Há algum prato que sonhas recriar em casa?",
+"pt_BR": "Tem algum prato que você sonha em fazer em casa?"
+}
+},
+{
+"id": "local_food_travel-009",
+"lv": "any",
+"i18n": {
+"en": "How do you usually find good places to eat when you travel?",
+"de": "Wie findest du auf Reisen normalerweise gute Lokale?",
+"es": "¿Cómo sueles encontrar buenos sitios para comer cuando viajas?",
+"fr": "Comment trouves-tu d'habitude de bonnes adresses en voyage ?",
+"it": "Come trovi di solito dei buoni posti dove mangiare in viaggio?",
+"pt": "Como costumas encontrar bons sítios para comer quando viajas?",
+"pt_BR": "Como você costuma achar bons lugares pra comer quando viaja?"
+}
+},
+{
+"id": "local_food_travel-010",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite breakfast when you're on holiday?",
+"de": "Was ist dein liebstes Frühstück im Urlaub?",
+"es": "¿Cuál es tu desayuno favorito cuando estás de vacaciones?",
+"fr": "Quel est ton petit-déjeuner préféré en vacances ?",
+"it": "Qual è la tua colazione preferita quando sei in vacanza?",
+"pt": "Qual é o teu pequeno-almoço preferido nas férias?",
+"pt_BR": "Qual é seu café da manhã favorito nas férias?"
+}
+},
+{
+"id": "local_food_travel-011",
+"lv": "any",
+"i18n": {
+"en": "Coffee or tea: which drink culture would you love to explore?",
+"de": "Kaffee oder Tee: Welche Trinkkultur würdest du gern entdecken?",
+"es": "Café o té: ¿qué cultura te gustaría explorar?",
+"fr": "Café ou thé : quelle culture de boisson aimerais-tu explorer ?",
+"it": "Caffè o tè: quale cultura ti piacerebbe esplorare?",
+"pt": "Café ou chá: que cultura gostarias de explorar?",
+"pt_BR": "Café ou chá: qual cultura você adoraria explorar?"
+}
+},
+{
+"id": "local_food_travel-012",
+"lv": "any",
+"i18n": {
+"en": "What's one dish you'd travel across the world just to taste?",
+"de": "Für welches Gericht würdest du um die halbe Welt reisen?",
+"es": "¿Por qué plato cruzarías el mundo solo para probarlo?",
+"fr": "Pour quel plat traverserais-tu le monde rien que pour le goûter ?",
+"it": "Per quale piatto attraverseresti il mondo solo per assaggiarlo?",
+"pt": "Por que prato atravessarias o mundo só para o provar?",
+"pt_BR": "Por qual prato você cruzaria o mundo só pra provar?"
+}
+},
+{
+"id": "local_food_travel-013",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy spicy food, or do you keep things mild?",
+"de": "Magst du scharfes Essen oder lieber milde Gerichte?",
+"es": "¿Te gusta la comida picante o la prefieres suave?",
+"fr": "Aimes-tu la nourriture épicée, ou préfères-tu la douceur ?",
+"it": "Ti piace il cibo piccante o preferisci sapori delicati?",
+"pt": "Gostas de comida picante ou preferes sabores suaves?",
+"pt_BR": "Você gosta de comida apimentada ou prefere sabores suaves?"
+}
+},
+{
+"id": "local_food_travel-014",
+"lv": "any",
+"i18n": {
+"en": "What sweet treat from another country do you love?",
+"de": "Welche Süßigkeit aus einem anderen Land liebst du?",
+"es": "¿Qué dulce de otro país te encanta?",
+"fr": "Quelle douceur d'un autre pays adores-tu ?",
+"it": "Quale dolce di un altro paese ami?",
+"pt": "Que doce de outro país adoras?",
+"pt_BR": "Qual doce de outro país você ama?"
+}
+},
+{
+"id": "local_food_travel-015",
+"lv": "any",
+"i18n": {
+"en": "Have you ever taken a cooking class while travelling, or would you like to?",
+"de": "Hast du auf Reisen schon mal einen Kochkurs gemacht, oder würdest du gern?",
+"es": "¿Has tomado alguna clase de cocina viajando o te gustaría hacerlo?",
+"fr": "As-tu déjà suivi un cours de cuisine en voyage, ou aimerais-tu le faire ?",
+"it": "Hai mai fatto un corso di cucina in viaggio, o ti piacerebbe?",
+"pt": "Já fizeste uma aula de cozinha em viagem, ou gostavas de fazer?",
+"pt_BR": "Você já fez uma aula de culinária viajando, ou gostaria de fazer?"
+}
+},
+{
+"id": "local_food_travel-016",
+"lv": "any",
+"i18n": {
+"en": "What food memory from a trip still makes you smile?",
+"de": "Welche Essenserinnerung von einer Reise bringt dich noch heute zum Lächeln?",
+"es": "¿Qué recuerdo gastronómico de un viaje todavía te hace sonreír?",
+"fr": "Quel souvenir culinaire de voyage te fait encore sourire ?",
+"it": "Quale ricordo gastronomico di un viaggio ti fa ancora sorridere?",
+"pt": "Que memória gastronómica de uma viagem ainda te faz sorrir?",
+"pt_BR": "Qual lembrança de comida de uma viagem ainda te faz sorrir?"
+}
+},
+{
+"id": "local_food_travel-017",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer eating with locals or discovering food on your own?",
+"de": "Isst du lieber mit Einheimischen oder entdeckst du Essen lieber allein?",
+"es": "¿Prefieres comer con gente local o descubrir la comida por tu cuenta?",
+"fr": "Tu préfères manger avec des habitants ou découvrir la cuisine par toi-même ?",
+"it": "Preferisci mangiare con la gente del posto o scoprire il cibo da solo?",
+"pt": "Preferes comer com pessoas locais ou descobrir a comida sozinho?",
+"pt_BR": "Você prefere comer com moradores ou descobrir a comida por conta própria?"
+}
+},
+{
+"id": "local_food_travel-018",
+"lv": "any",
+"i18n": {
+"en": "What's a fruit you've tasted abroad that you can't find at home?",
+"de": "Welche Frucht hast du im Ausland probiert, die es bei dir nicht gibt?",
+"es": "¿Qué fruta probaste fuera que no encuentras en casa?",
+"fr": "Quel fruit as-tu goûté à l'étranger que tu ne trouves pas chez toi ?",
+"it": "Quale frutto hai assaggiato all'estero che non trovi a casa?",
+"pt": "Que fruta provaste lá fora que não encontras em casa?",
+"pt_BR": "Qual fruta você provou fora que não encontra onde mora?"
+}
+},
+{
+"id": "local_food_travel-019",
+"lv": "any",
+"i18n": {
+"en": "Which food city is at the top of your wish list?",
+"de": "Welche Food-Stadt steht ganz oben auf deiner Wunschliste?",
+"es": "¿Qué ciudad gastronómica está en lo más alto de tu lista de deseos?",
+"fr": "Quelle ville gourmande est en tête de ta liste d'envies ?",
+"it": "Quale città del gusto è in cima alla tua lista dei desideri?",
+"pt": "Que cidade gastronómica está no topo da tua lista de desejos?",
+"pt_BR": "Qual cidade gastronômica está no topo da sua lista de desejos?"
+}
+},
+{
+"id": "local_food_travel-020",
+"lv": "any",
+"i18n": {
+"en": "Do you take photos of your food when you travel?",
+"de": "Fotografierst du dein Essen auf Reisen?",
+"es": "¿Le haces fotos a la comida cuando viajas?",
+"fr": "Prends-tu ta nourriture en photo quand tu voyages ?",
+"it": "Fotografi il cibo quando viaggi?",
+"pt": "Tiras fotografias à comida quando viajas?",
+"pt_BR": "Você tira foto da comida quando viaja?"
+}
+},
+{
+"id": "local_food_travel-021",
+"lv": "any",
+"i18n": {
+"en": "What's a food souvenir you love bringing home?",
+"de": "Welches kulinarische Souvenir bringst du am liebsten mit nach Hause?",
+"es": "¿Qué recuerdo gastronómico te encanta llevarte a casa?",
+"fr": "Quel souvenir gourmand aimes-tu rapporter chez toi ?",
+"it": "Quale souvenir gastronomico ami portare a casa?",
+"pt": "Que lembrança gastronómica adoras trazer para casa?",
+"pt_BR": "Qual lembrancinha de comida você adora trazer pra casa?"
+}
+},
+{
+"id": "local_food_travel-022",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about sharing plates with everyone at the table?",
+"de": "Wie findest du es, am Tisch alle Teller mit allen zu teilen?",
+"es": "¿Qué te parece compartir los platos con todos en la mesa?",
+"fr": "Que penses-tu du partage des plats avec toute la tablée ?",
+"it": "Cosa ne pensi di condividere i piatti con tutti al tavolo?",
+"pt": "O que achas de partilhar os pratos com toda a mesa?",
+"pt_BR": "O que você acha de dividir os pratos com todo mundo na mesa?"
+}
+},
+{
+"id": "local_food_travel-023",
+"lv": "any",
+"i18n": {
+"en": "What's your favourite type of bread from anywhere in the world?",
+"de": "Was ist dein Lieblingsbrot, egal aus welchem Land?",
+"es": "¿Cuál es tu pan favorito de cualquier parte del mundo?",
+"fr": "Quel est ton pain préféré, d'où qu'il vienne ?",
+"it": "Qual è il tuo pane preferito, da qualunque parte del mondo?",
+"pt": "Qual é o teu pão preferido, de qualquer parte do mundo?",
+"pt_BR": "Qual é seu pão favorito, de qualquer lugar do mundo?"
+}
+},
+{
+"id": "local_food_travel-024",
+"lv": "any",
+"i18n": {
+"en": "Would you rather explore a night market or a morning farmers' market?",
+"de": "Würdest du lieber einen Nachtmarkt oder einen Bauernmarkt am Morgen erkunden?",
+"es": "¿Preferirías recorrer un mercado nocturno o un mercado de productores por la mañana?",
+"fr": "Tu préfèrerais explorer un marché de nuit ou un marché fermier du matin ?",
+"it": "Preferiresti esplorare un mercato notturno o un mercato contadino al mattino?",
+"pt": "Preferias explorar um mercado noturno ou um mercado de produtores de manhã?",
+"pt_BR": "Você prefere explorar uma feira noturna ou uma feira de produtores de manhã?"
+}
+},
+{
+"id": "local_food_travel-025",
+"lv": "any",
+"i18n": {
+"en": "What does a perfect food day on holiday look like for you?",
+"de": "Wie sieht für dich ein perfekter Genusstag im Urlaub aus?",
+"es": "¿Cómo es para ti un día perfecto de comida en vacaciones?",
+"fr": "À quoi ressemble pour toi une journée gourmande parfaite en vacances ?",
+"it": "Com'è per te una giornata perfetta di cibo in vacanza?",
+"pt": "Como é para ti um dia perfeito de comida nas férias?",
+"pt_BR": "Como é pra você um dia perfeito de comida nas férias?"
+}
+},
+{
+"id": "local_food_travel-026",
+"lv": "any",
+"i18n": {
+"en": "Is there a dish you didn't like at first but grew to love?",
+"de": "Gibt es ein Gericht, das du anfangs nicht mochtest, aber jetzt liebst?",
+"es": "¿Hay algún plato que al principio no te gustaba y ahora te encanta?",
+"fr": "Y a-t-il un plat que tu n'aimais pas au début et que tu adores maintenant ?",
+"it": "C'è un piatto che all'inizio non ti piaceva e ora ami?",
+"pt": "Há algum prato de que não gostavas no início e agora adoras?",
+"pt_BR": "Tem algum prato que você não gostava no começo e agora ama?"
+}
+},
+{
+"id": "local_food_travel-027",
+"lv": "any",
+"i18n": {
+"en": "Which cuisine do you think is the most underrated?",
+"de": "Welche Küche hältst du für die am meisten unterschätzte?",
+"es": "¿Qué cocina crees que es la más infravalorada?",
+"fr": "Quelle cuisine trouves-tu la plus sous-estimée ?",
+"it": "Quale cucina pensi sia la più sottovalutata?",
+"pt": "Que cozinha achas que é a mais subvalorizada?",
+"pt_BR": "Qual culinária você acha mais subestimada?"
+}
+},
+{
+"id": "local_food_travel-028",
+"lv": "any",
+"i18n": {
+"en": "Do you like to eat where the locals eat, even without an English menu?",
+"de": "Isst du gern dort, wo Einheimische essen, auch ohne englische Speisekarte?",
+"es": "¿Te gusta comer donde come la gente local, aunque no haya carta en inglés?",
+"fr": "Aimes-tu manger là où mangent les habitants, même sans menu en anglais ?",
+"it": "Ti piace mangiare dove mangiano i locali, anche senza menù in inglese?",
+"pt": "Gostas de comer onde comem os locais, mesmo sem ementa em inglês?",
+"pt_BR": "Você gosta de comer onde os moradores comem, mesmo sem cardápio em inglês?"
+}
+},
+{
+"id": "local_food_travel-029",
+"lv": "any",
+"i18n": {
+"en": "What's a dish that reminds you of a special person or place?",
+"de": "Welches Gericht erinnert dich an einen besonderen Menschen oder Ort?",
+"es": "¿Qué plato te recuerda a una persona o un lugar especial?",
+"fr": "Quel plat te rappelle une personne ou un lieu particulier ?",
+"it": "Quale piatto ti ricorda una persona o un luogo speciale?",
+"pt": "Que prato te lembra uma pessoa ou um lugar especial?",
+"pt_BR": "Qual prato te lembra uma pessoa ou um lugar especial?"
+}
+},
+{
+"id": "local_food_travel-030",
+"lv": "any",
+"i18n": {
+"en": "Soup, noodles or dumplings: which would you choose on a cold day abroad?",
+"de": "Suppe, Nudeln oder Teigtaschen: Was nimmst du an einem kalten Tag im Ausland?",
+"es": "Sopa, fideos o empanadillas: ¿qué elegirías en un día frío fuera de casa?",
+"fr": "Soupe, nouilles ou raviolis : que choisirais-tu un jour de froid en voyage ?",
+"it": "Zuppa, noodles o ravioli: cosa sceglieresti in una giornata fredda all'estero?",
+"pt": "Sopa, massa ou pastéis: o que escolherias num dia frio no estrangeiro?",
+"pt_BR": "Sopa, macarrão ou bolinhos recheados: o que você escolheria num dia frio fora?"
+}
+},
+{
+"id": "local_food_travel-031",
+"lv": "any",
+"i18n": {
+"en": "What food would you most like to learn to cook from a local chef?",
+"de": "Welches Gericht würdest du am liebsten von einem einheimischen Koch lernen?",
+"es": "¿Qué plato te gustaría más aprender a cocinar con un chef local?",
+"fr": "Quel plat aimerais-tu le plus apprendre à cuisiner avec un chef local ?",
+"it": "Quale piatto ti piacerebbe di più imparare da uno chef locale?",
+"pt": "Que prato gostarias mais de aprender a cozinhar com um chef local?",
+"pt_BR": "Qual prato você mais gostaria de aprender a cozinhar com um chef local?"
+}
+},
+{
+"id": "local_food_travel-032",
+"lv": "any",
+"i18n": {
+"en": "Do you plan trips around food, or is food a happy bonus?",
+"de": "Planst du Reisen rund ums Essen oder ist Essen ein schöner Bonus?",
+"es": "¿Planeas tus viajes en torno a la comida o es un agradable extra?",
+"fr": "Organises-tu tes voyages autour de la cuisine, ou est-ce un joli bonus ?",
+"it": "Organizzi i viaggi attorno al cibo o è un piacevole extra?",
+"pt": "Planeias viagens à volta da comida ou é um bónus feliz?",
+"pt_BR": "Você planeja viagens em torno da comida ou ela é um bônus feliz?"
+}
+},
+{
+"id": "local_food_travel-033",
+"lv": "any",
+"i18n": {
+"en": "What's the best meal you've had for very little money?",
+"de": "Was war das beste Essen, das du für sehr wenig Geld bekommen hast?",
+"es": "¿Cuál es la mejor comida que has tomado por muy poco dinero?",
+"fr": "Quel est le meilleur repas que tu aies pris pour presque rien ?",
+"it": "Qual è il pasto migliore che hai fatto spendendo pochissimo?",
+"pt": "Qual foi a melhor refeição que tiveste por muito pouco dinheiro?",
+"pt_BR": "Qual foi a melhor refeição que você comeu gastando bem pouco?"
+}
+},
+{
+"id": "local_food_travel-034",
+"lv": "any",
+"i18n": {
+"en": "How do you feel about eating with your hands where it's the custom?",
+"de": "Wie findest du es, mit den Händen zu essen, wo es Brauch ist?",
+"es": "¿Qué te parece comer con las manos donde es la costumbre?",
+"fr": "Que penses-tu de manger avec les mains là où c'est la coutume ?",
+"it": "Cosa ne pensi di mangiare con le mani dove è usanza?",
+"pt": "O que achas de comer com as mãos onde é costume?",
+"pt_BR": "O que você acha de comer com as mãos onde isso é costume?"
+}
+},
+{
+"id": "local_food_travel-035",
+"lv": "any",
+"i18n": {
+"en": "What ice cream or dessert flavour would you love to find on a trip?",
+"de": "Welche Eis- oder Dessertsorte würdest du gern auf einer Reise entdecken?",
+"es": "¿Qué sabor de helado o postre te encantaría encontrar en un viaje?",
+"fr": "Quel parfum de glace ou de dessert aimerais-tu découvrir en voyage ?",
+"it": "Quale gusto di gelato o dessert ti piacerebbe trovare in viaggio?",
+"pt": "Que sabor de gelado ou sobremesa adorarias encontrar numa viagem?",
+"pt_BR": "Qual sabor de sorvete ou sobremesa você adoraria encontrar numa viagem?"
+}
+},
+{
+"id": "local_food_travel-036",
+"lv": "any",
+"i18n": {
+"en": "Which local drink would you most like to try in its home country?",
+"de": "Welches lokale Getränk würdest du am liebsten in seinem Herkunftsland probieren?",
+"es": "¿Qué bebida local te gustaría probar en su país de origen?",
+"fr": "Quelle boisson locale aimerais-tu goûter dans son pays d'origine ?",
+"it": "Quale bevanda locale ti piacerebbe provare nel suo paese d'origine?",
+"pt": "Que bebida local gostarias de provar no seu país de origem?",
+"pt_BR": "Qual bebida típica você gostaria de provar no país de origem?"
+}
+},
+{
+"id": "local_food_travel-037",
+"lv": "any",
+"i18n": {
+"en": "What's one food tradition from another culture you really admire?",
+"de": "Welche Esstradition einer anderen Kultur bewunderst du wirklich?",
+"es": "¿Qué tradición gastronómica de otra cultura admiras de verdad?",
+"fr": "Quelle tradition culinaire d'une autre culture admires-tu vraiment ?",
+"it": "Quale tradizione gastronomica di un'altra cultura ammiri davvero?",
+"pt": "Que tradição gastronómica de outra cultura admiras mesmo?",
+"pt_BR": "Qual tradição de comida de outra cultura você realmente admira?"
+}
+},
+{
+"id": "local_food_travel-038",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy long, slow meals or quick bites on the go?",
+"de": "Magst du lange, gemütliche Mahlzeiten oder schnelle Snacks unterwegs?",
+"es": "¿Disfrutas más de las comidas largas y tranquilas o de un bocado rápido?",
+"fr": "Tu aimes les longs repas tranquilles ou les en-cas rapides sur le pouce ?",
+"it": "Ti piacciono i pasti lunghi e lenti o gli spuntini veloci?",
+"pt": "Gostas de refeições longas e calmas ou de petiscos rápidos?",
+"pt_BR": "Você curte refeições longas e tranquilas ou um lanche rápido?"
+}
+},
+{
+"id": "local_food_travel-039",
+"lv": "any",
+"i18n": {
+"en": "If you could have dinner anywhere in the world tonight, where would it be?",
+"de": "Wenn du heute Abend überall auf der Welt essen könntest, wo wäre das?",
+"es": "Si esta noche pudieras cenar en cualquier lugar del mundo, ¿dónde sería?",
+"fr": "Si tu pouvais dîner n'importe où dans le monde ce soir, où serait-ce ?",
+"it": "Se stasera potessi cenare ovunque nel mondo, dove sarebbe?",
+"pt": "Se hoje à noite pudesses jantar em qualquer lugar do mundo, onde seria?",
+"pt_BR": "Se hoje à noite você pudesse jantar em qualquer lugar do mundo, onde seria?"
+}
+},
+{
+"id": "local_food_travel-040",
+"lv": "beginner",
+"i18n": {
+"en": "What's the first thing you do to learn about the food of a new place?",
+"de": "Was tust du als Erstes, um die Küche eines neuen Ortes kennenzulernen?",
+"es": "¿Qué es lo primero que haces para conocer la comida de un lugar nuevo?",
+"fr": "Que fais-tu en premier pour découvrir la cuisine d'un nouvel endroit ?",
+"it": "Qual è la prima cosa che fai per conoscere la cucina di un posto nuovo?",
+"pt": "Qual é a primeira coisa que fazes para conhecer a comida de um sítio novo?",
+"pt_BR": "Qual é a primeira coisa que você faz pra conhecer a comida de um lugar novo?"
+}
+},
+{
+"id": "local_food_travel-041",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel when you read a menu in a language you don't know?",
+"de": "Wie fühlst du dich, wenn du eine Speisekarte in einer fremden Sprache liest?",
+"es": "¿Cómo te sientes al leer una carta en un idioma que no conoces?",
+"fr": "Que ressens-tu quand tu lis un menu dans une langue inconnue ?",
+"it": "Come ti senti quando leggi un menù in una lingua che non conosci?",
+"pt": "Como te sentes ao ler uma ementa numa língua que não conheces?",
+"pt_BR": "Como você se sente lendo um cardápio num idioma que não conhece?"
+}
+},
+{
+"id": "local_food_travel-042",
+"lv": "beginner",
+"i18n": {
+"en": "Do you have any food preferences or needs you share when ordering?",
+"de": "Hast du Essensvorlieben oder Bedürfnisse, die du beim Bestellen erwähnst?",
+"es": "¿Tienes preferencias o necesidades alimentarias que comentas al pedir?",
+"fr": "As-tu des préférences ou besoins alimentaires que tu précises en commandant ?",
+"it": "Hai preferenze o esigenze alimentari che comunichi quando ordini?",
+"pt": "Tens preferências ou necessidades alimentares que referes ao pedir?",
+"pt_BR": "Você tem preferências ou restrições que comenta na hora de pedir?"
+}
+},
+{
+"id": "local_food_travel-043",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer to point at the menu or try ordering in the local language?",
+"de": "Zeigst du lieber auf die Karte oder versuchst du, in der Landessprache zu bestellen?",
+"es": "¿Prefieres señalar la carta o intentar pedir en el idioma local?",
+"fr": "Tu préfères montrer du doigt sur le menu ou commander dans la langue locale ?",
+"it": "Preferisci indicare il menù o provare a ordinare nella lingua locale?",
+"pt": "Preferes apontar para a ementa ou tentar pedir na língua local?",
+"pt_BR": "Você prefere apontar no cardápio ou tentar pedir no idioma local?"
+}
+},
+{
+"id": "local_food_travel-044",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever used chopsticks? How did it go?",
+"de": "Hast du schon mal mit Stäbchen gegessen? Wie lief es?",
+"es": "¿Has usado palillos alguna vez? ¿Qué tal te fue?",
+"fr": "As-tu déjà utilisé des baguettes ? Comment ça s'est passé ?",
+"it": "Hai mai usato le bacchette? Com'è andata?",
+"pt": "Já usaste pauzinhos? Como correu?",
+"pt_BR": "Você já usou hashi? Como foi?"
+}
+},
+{
+"id": "local_food_travel-045",
+"lv": "beginner",
+"i18n": {
+"en": "What time do you usually like to have dinner, and how is it abroad?",
+"de": "Wann isst du normalerweise zu Abend, und wie ist es im Ausland?",
+"es": "¿A qué hora sueles cenar y cómo es en otros países?",
+"fr": "À quelle heure dînes-tu d'habitude, et comment est-ce à l'étranger ?",
+"it": "A che ora ceni di solito, e com'è all'estero?",
+"pt": "A que horas costumas jantar, e como é no estrangeiro?",
+"pt_BR": "Que horas você costuma jantar, e como é em outros países?"
+}
+},
+{
+"id": "local_food_travel-046",
+"lv": "beginner",
+"i18n": {
+"en": "What makes you trust a street food stall?",
+"de": "Was bringt dich dazu, einem Streetfood-Stand zu vertrauen?",
+"es": "¿Qué te hace confiar en un puesto de comida callejera?",
+"fr": "Qu'est-ce qui te donne confiance dans un stand de street food ?",
+"it": "Cosa ti fa fidare di un banchetto di street food?",
+"pt": "O que te faz confiar numa banca de comida de rua?",
+"pt_BR": "O que faz você confiar numa barraca de comida de rua?"
+}
+},
+{
+"id": "local_food_travel-047",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever bargained at a market? How did you feel?",
+"de": "Hast du schon mal auf einem Markt gehandelt? Wie hast du dich gefühlt?",
+"es": "¿Has regateado alguna vez en un mercado? ¿Cómo te sentiste?",
+"fr": "As-tu déjà marchandé sur un marché ? Comment t'es-tu senti ?",
+"it": "Hai mai contrattato in un mercato? Come ti sei sentito?",
+"pt": "Já regateaste num mercado? Como te sentiste?",
+"pt_BR": "Você já pechinchou numa feira? Como se sentiu?"
+}
+},
+{
+"id": "local_food_travel-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which bread, rice or noodle dish would you like to try first?",
+"de": "Welches Brot-, Reis- oder Nudelgericht möchtest du als Erstes probieren?",
+"es": "¿Qué plato de pan, arroz o fideos te gustaría probar primero?",
+"fr": "Quel plat de pain, de riz ou de nouilles aimerais-tu goûter en premier ?",
+"it": "Quale piatto di pane, riso o noodles vorresti provare per primo?",
+"pt": "Que prato de pão, arroz ou massa gostarias de provar primeiro?",
+"pt_BR": "Qual prato de pão, arroz ou macarrão você gostaria de provar primeiro?"
+}
+},
+{
+"id": "local_food_travel-049",
+"lv": "beginner",
+"i18n": {
+"en": "How do you know a restaurant is popular with locals, not just tourists?",
+"de": "Woran erkennst du, dass ein Restaurant bei Einheimischen beliebt ist und nicht nur bei Touristen?",
+"es": "¿Cómo sabes que un restaurante gusta a la gente local y no solo a los turistas?",
+"fr": "Comment sais-tu qu'un restaurant plaît aux habitants et pas seulement aux touristes ?",
+"it": "Come capisci che un ristorante piace ai locali e non solo ai turisti?",
+"pt": "Como sabes que um restaurante é popular entre locais e não só turistas?",
+"pt_BR": "Como você sabe que um restaurante é querido pelos moradores, não só pelos turistas?"
+}
+},
+{
+"id": "local_food_travel-050",
+"lv": "any",
+"i18n": {
+"en": "Who taught you to love food, and what did they cook?",
+"de": "Wer hat dir die Liebe zum Essen beigebracht, und was hat diese Person gekocht?",
+"es": "¿Quién te enseñó a amar la comida y qué cocinaba?",
+"fr": "Qui t'a transmis l'amour de la cuisine, et que cuisinait cette personne ?",
+"it": "Chi ti ha insegnato ad amare il cibo, e cosa cucinava?",
+"pt": "Quem te ensinou a gostar de comida, e o que cozinhava?",
+"pt_BR": "Quem te ensinou a amar comida, e o que essa pessoa cozinhava?"
+}
+},
+{
+"id": "local_food_travel-051",
+"lv": "beginner",
+"i18n": {
+"en": "What would you buy first at a busy food market abroad?",
+"de": "Was würdest du auf einem belebten Markt im Ausland als Erstes kaufen?",
+"es": "¿Qué comprarías primero en un mercado concurrido del extranjero?",
+"fr": "Qu'achèterais-tu en premier sur un marché animé à l'étranger ?",
+"it": "Cosa compreresti per primo in un mercato affollato all'estero?",
+"pt": "O que comprarias primeiro num mercado movimentado no estrangeiro?",
+"pt_BR": "O que você compraria primeiro numa feira movimentada no exterior?"
+}
+},
+{
+"id": "local_food_travel-052",
+"lv": "beginner",
+"i18n": {
+"en": "How do you politely say no when someone offers you more food?",
+"de": "Wie lehnst du höflich ab, wenn dir jemand noch mehr Essen anbietet?",
+"es": "¿Cómo dices que no con educación cuando te ofrecen más comida?",
+"fr": "Comment refuses-tu poliment quand on te propose encore à manger ?",
+"it": "Come dici di no con gentilezza quando ti offrono altro cibo?",
+"pt": "Como recusas com educação quando te oferecem mais comida?",
+"pt_BR": "Como você recusa com educação quando oferecem mais comida?"
+}
+},
+{
+"id": "local_food_travel-053",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever been invited to eat in a local family's home?",
+"de": "Wurdest du schon mal zum Essen bei einer einheimischen Familie eingeladen?",
+"es": "¿Alguna vez te invitaron a comer en casa de una familia local?",
+"fr": "As-tu déjà été invité à manger chez une famille locale ?",
+"it": "Sei mai stato invitato a mangiare a casa di una famiglia del posto?",
+"pt": "Já foste convidado para comer em casa de uma família local?",
+"pt_BR": "Você já foi convidado pra comer na casa de uma família local?"
+}
+},
+{
+"id": "local_food_travel-054",
+"lv": "beginner",
+"i18n": {
+"en": "What's your favourite snack for a long train or bus ride?",
+"de": "Was ist dein liebster Snack für eine lange Zug- oder Busfahrt?",
+"es": "¿Cuál es tu tentempié favorito para un viaje largo en tren o autobús?",
+"fr": "Quel est ton en-cas préféré pour un long trajet en train ou en bus ?",
+"it": "Qual è il tuo snack preferito per un lungo viaggio in treno o autobus?",
+"pt": "Qual é o teu petisco preferido para uma longa viagem de comboio ou autocarro?",
+"pt_BR": "Qual é seu lanche favorito pra uma viagem longa de trem ou ônibus?"
+}
+},
+{
+"id": "local_food_travel-055",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer the hotel breakfast or a local café in the morning?",
+"de": "Magst du morgens lieber das Hotelfrühstück oder ein lokales Café?",
+"es": "¿Prefieres el desayuno del hotel o un café local por la mañana?",
+"fr": "Tu préfères le petit-déjeuner de l'hôtel ou un café du coin le matin ?",
+"it": "Al mattino preferisci la colazione in hotel o un bar del posto?",
+"pt": "De manhã preferes o pequeno-almoço do hotel ou um café local?",
+"pt_BR": "De manhã você prefere o café do hotel ou uma padaria local?"
+}
+},
+{
+"id": "local_food_travel-056",
+"lv": "beginner",
+"i18n": {
+"en": "What food words have you learned in another language?",
+"de": "Welche Wörter rund ums Essen hast du in einer anderen Sprache gelernt?",
+"es": "¿Qué palabras de comida has aprendido en otro idioma?",
+"fr": "Quels mots liés à la nourriture as-tu appris dans une autre langue ?",
+"it": "Quali parole legate al cibo hai imparato in un'altra lingua?",
+"pt": "Que palavras sobre comida aprendeste noutra língua?",
+"pt_BR": "Quais palavras de comida você aprendeu em outro idioma?"
+}
+},
+{
+"id": "local_food_travel-057",
+"lv": "beginner",
+"i18n": {
+"en": "How do you like to describe a dish you really enjoyed?",
+"de": "Wie beschreibst du gern ein Gericht, das dir richtig geschmeckt hat?",
+"es": "¿Cómo te gusta describir un plato que te ha encantado?",
+"fr": "Comment aimes-tu décrire un plat que tu as vraiment apprécié ?",
+"it": "Come ti piace descrivere un piatto che ti è piaciuto davvero?",
+"pt": "Como gostas de descrever um prato de que gostaste muito?",
+"pt_BR": "Como você gosta de descrever um prato que curtiu muito?"
+}
+},
+{
+"id": "local_food_travel-058",
+"lv": "beginner",
+"i18n": {
+"en": "Do you keep a list of dishes you want to try one day?",
+"de": "Führst du eine Liste mit Gerichten, die du eines Tages probieren willst?",
+"es": "¿Tienes una lista de platos que quieres probar algún día?",
+"fr": "As-tu une liste de plats que tu veux goûter un jour ?",
+"it": "Hai una lista di piatti che vuoi assaggiare un giorno?",
+"pt": "Tens uma lista de pratos que queres provar um dia?",
+"pt_BR": "Você tem uma lista de pratos que quer provar um dia?"
+}
+},
+{
+"id": "local_food_travel-059",
+"lv": "beginner",
+"i18n": {
+"en": "What's a simple local dish you think every traveller should try?",
+"de": "Welches einfache lokale Gericht sollte deiner Meinung nach jeder Reisende probieren?",
+"es": "¿Qué plato local sencillo crees que todo viajero debería probar?",
+"fr": "Quel plat local simple chaque voyageur devrait-il goûter selon toi ?",
+"it": "Quale piatto locale semplice dovrebbe provare ogni viaggiatore secondo te?",
+"pt": "Que prato local simples achas que todos os viajantes deviam provar?",
+"pt_BR": "Qual prato local simples você acha que todo viajante deveria provar?"
+}
+},
+{
+"id": "local_food_travel-060",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about tipping in countries with different customs?",
+"de": "Wie gehst du mit Trinkgeld in Ländern mit anderen Bräuchen um?",
+"es": "¿Cómo llevas lo de la propina en países con costumbres distintas?",
+"fr": "Comment vis-tu le pourboire dans les pays aux coutumes différentes ?",
+"it": "Come ti regoli con la mancia nei paesi con usanze diverse?",
+"pt": "Como lidas com as gorjetas em países com costumes diferentes?",
+"pt_BR": "Como você lida com gorjeta em países com costumes diferentes?"
+}
+},
+{
+"id": "local_food_travel-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which cheese, spice or sauce from abroad would you love to taste?",
+"de": "Welchen Käse, welches Gewürz oder welche Soße aus dem Ausland würdest du gern probieren?",
+"es": "¿Qué queso, especia o salsa de otro país te encantaría probar?",
+"fr": "Quel fromage, épice ou sauce d'ailleurs aimerais-tu goûter ?",
+"it": "Quale formaggio, spezia o salsa straniera ti piacerebbe assaggiare?",
+"pt": "Que queijo, especiaria ou molho estrangeiro adorarias provar?",
+"pt_BR": "Qual queijo, tempero ou molho estrangeiro você adoraria provar?"
+}
+},
+{
+"id": "local_food_travel-062",
+"lv": "beginner",
+"i18n": {
+"en": "What's a picnic spot you remember fondly from a trip?",
+"de": "An welchen Picknickplatz von einer Reise erinnerst du dich gern?",
+"es": "¿Qué lugar de picnic de un viaje recuerdas con cariño?",
+"fr": "De quel coin de pique-nique en voyage te souviens-tu avec tendresse ?",
+"it": "Quale posto per un picnic in viaggio ricordi con affetto?",
+"pt": "De que sítio de piquenique numa viagem te lembras com carinho?",
+"pt_BR": "De qual lugar de piquenique numa viagem você lembra com carinho?"
+}
+},
+{
+"id": "local_food_travel-063",
+"lv": "beginner",
+"i18n": {
+"en": "Would you rather try one big meal or many small tastes in a day?",
+"de": "Würdest du lieber ein großes Essen oder viele kleine Häppchen an einem Tag probieren?",
+"es": "¿Preferirías una gran comida o muchas pequeñas degustaciones en un día?",
+"fr": "Tu préfèrerais un gros repas ou plein de petites dégustations dans la journée ?",
+"it": "Preferiresti un pasto abbondante o tanti piccoli assaggi in un giorno?",
+"pt": "Preferias uma grande refeição ou muitas pequenas provas num dia?",
+"pt_BR": "Você prefere uma refeição grande ou várias provinhas ao longo do dia?"
+}
+},
+{
+"id": "local_food_travel-064",
+"lv": "beginner",
+"i18n": {
+"en": "What's your go-to dish when you feel homesick abroad?",
+"de": "Was ist dein Lieblingsgericht, wenn du im Ausland Heimweh hast?",
+"es": "¿Cuál es tu plato de confianza cuando echas de menos tu casa estando fuera?",
+"fr": "Quel est ton plat réconfort quand ta maison te manque à l'étranger ?",
+"it": "Qual è il tuo piatto di conforto quando hai nostalgia di casa all'estero?",
+"pt": "Qual é o teu prato de conforto quando tens saudades de casa no estrangeiro?",
+"pt_BR": "Qual é seu prato de conforto quando bate saudade de casa no exterior?"
+}
+},
+{
+"id": "local_food_travel-065",
+"lv": "beginner",
+"i18n": {
+"en": "Would you join a food tour on your next trip? What would you hope to taste?",
+"de": "Würdest du auf deiner nächsten Reise eine Food-Tour mitmachen? Was möchtest du probieren?",
+"es": "¿Te apuntarías a un tour gastronómico en tu próximo viaje? ¿Qué te gustaría probar?",
+"fr": "Ferais-tu une visite gourmande lors de ton prochain voyage ? Que voudrais-tu goûter ?",
+"it": "Faresti un food tour nel tuo prossimo viaggio? Cosa vorresti assaggiare?",
+"pt": "Farias um tour gastronómico na próxima viagem? O que gostarias de provar?",
+"pt_BR": "Você faria um tour gastronômico na próxima viagem? O que gostaria de provar?"
+}
+},
+{
+"id": "local_food_travel-066",
+"lv": "intermediate",
+"i18n": {
+"en": "What food experience would you choose: a farm visit, a cooking class or a market tour?",
+"de": "Welches Erlebnis würdest du wählen: Hofbesuch, Kochkurs oder Marktführung?",
+"es": "¿Qué experiencia elegirías: visitar una granja, una clase de cocina o un tour por el mercado?",
+"fr": "Quelle expérience choisirais-tu : visite de ferme, cours de cuisine ou tour du marché ?",
+"it": "Quale esperienza sceglieresti: visita in fattoria, corso di cucina o giro al mercato?",
+"pt": "Que experiência escolherias: visita a uma quinta, aula de cozinha ou visita ao mercado?",
+"pt_BR": "Qual experiência você escolheria: visita a uma fazenda, aula de culinária ou tour na feira?"
+}
+},
+{
+"id": "local_food_travel-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which fermented food from another culture are you curious about?",
+"de": "Auf welches fermentierte Lebensmittel aus einer anderen Kultur bist du neugierig?",
+"es": "¿Qué alimento fermentado de otra cultura te despierta curiosidad?",
+"fr": "Quel aliment fermenté d'une autre culture t'intrigue ?",
+"it": "Quale cibo fermentato di un'altra cultura ti incuriosisce?",
+"pt": "Que alimento fermentado de outra cultura te desperta curiosidade?",
+"pt_BR": "Qual alimento fermentado de outra cultura te deixa curioso?"
+}
+},
+{
+"id": "local_food_travel-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you balance trying famous dishes with finding hidden gems?",
+"de": "Wie findest du die Balance zwischen berühmten Gerichten und versteckten Perlen?",
+"es": "¿Cómo equilibras probar los platos famosos y encontrar joyas escondidas?",
+"fr": "Comment équilibres-tu plats célèbres et pépites cachées ?",
+"it": "Come bilanci i piatti famosi con la scoperta di chicche nascoste?",
+"pt": "Como equilibras provar pratos famosos e descobrir pérolas escondidas?",
+"pt_BR": "Como você equilibra provar pratos famosos e achar joias escondidas?"
+}
+},
+{
+"id": "local_food_travel-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which food city would you visit for a whole weekend of eating?",
+"de": "Welche Food-Stadt würdest du für ein ganzes Genuss-Wochenende besuchen?",
+"es": "¿Qué ciudad visitarías para pasar un fin de semana entero comiendo?",
+"fr": "Quelle ville visiterais-tu pour tout un week-end gourmand ?",
+"it": "Quale città visiteresti per un intero weekend di cibo?",
+"pt": "Que cidade visitarias para um fim de semana inteiro a comer?",
+"pt_BR": "Qual cidade você visitaria pra um fim de semana inteiro comendo?"
+}
+},
+{
+"id": "local_food_travel-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What table manners from another culture did you find interesting?",
+"de": "Welche Tischsitten einer anderen Kultur fandest du interessant?",
+"es": "¿Qué modales en la mesa de otra cultura te parecieron interesantes?",
+"fr": "Quelles manières de table d'une autre culture as-tu trouvées intéressantes ?",
+"it": "Quali usanze a tavola di un'altra cultura hai trovato interessanti?",
+"pt": "Que maneiras à mesa de outra cultura achaste interessantes?",
+"pt_BR": "Qual etiqueta à mesa de outra cultura você achou interessante?"
+}
+},
+{
+"id": "local_food_travel-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever enjoyed a meal at a communal table with strangers?",
+"de": "Hast du schon mal an einem Gemeinschaftstisch mit Fremden gegessen?",
+"es": "¿Has disfrutado alguna vez de una comida en una mesa compartida con desconocidos?",
+"fr": "As-tu déjà partagé un repas à une table commune avec des inconnus ?",
+"it": "Hai mai mangiato a un tavolo comune con degli sconosciuti?",
+"pt": "Já fizeste uma refeição numa mesa partilhada com desconhecidos?",
+"pt_BR": "Você já comeu numa mesa compartilhada com desconhecidos?"
+}
+},
+{
+"id": "local_food_travel-072",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan a day of eating without getting too full?",
+"de": "Wie planst du einen Genusstag, ohne zu satt zu werden?",
+"es": "¿Cómo planeas un día de comida sin acabar demasiado lleno?",
+"fr": "Comment organises-tu une journée gourmande sans trop te remplir ?",
+"it": "Come organizzi una giornata di cibo senza sentirti troppo pieno?",
+"pt": "Como planeias um dia de comida sem ficares demasiado cheio?",
+"pt_BR": "Como você planeja um dia de comida sem ficar cheio demais?"
+}
+},
+{
+"id": "local_food_travel-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What food festival or harvest celebration would you love to attend?",
+"de": "Welches Food-Festival oder Erntefest würdest du gern besuchen?",
+"es": "¿A qué festival gastronómico o fiesta de la cosecha te encantaría ir?",
+"fr": "À quel festival gourmand ou fête des récoltes aimerais-tu assister ?",
+"it": "A quale festa del cibo o della vendemmia ti piacerebbe partecipare?",
+"pt": "A que festival gastronómico ou festa das colheitas adorarias ir?",
+"pt_BR": "Qual festival gastronômico ou festa da colheita você adoraria conhecer?"
+}
+},
+{
+"id": "local_food_travel-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you tried recreating a travel dish at home? How close did you get?",
+"de": "Hast du schon versucht, ein Reisegericht zu Hause nachzukochen? Wie nah kamst du dran?",
+"es": "¿Has intentado recrear en casa un plato de viaje? ¿Cuánto te acercaste?",
+"fr": "As-tu essayé de refaire chez toi un plat de voyage ? Étais-tu proche de l'original ?",
+"it": "Hai provato a rifare a casa un piatto di viaggio? Quanto ti sei avvicinato?",
+"pt": "Já tentaste recriar em casa um prato de viagem? Ficou parecido?",
+"pt_BR": "Você já tentou fazer em casa um prato de viagem? Ficou parecido?"
+}
+},
+{
+"id": "local_food_travel-075",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think makes a market hall worth visiting?",
+"de": "Was macht eine Markthalle deiner Meinung nach sehenswert?",
+"es": "¿Qué crees que hace que un mercado cubierto merezca una visita?",
+"fr": "Qu'est-ce qui rend une halle de marché intéressante à visiter selon toi ?",
+"it": "Cosa rende un mercato coperto degno di una visita secondo te?",
+"pt": "O que achas que torna um mercado coberto digno de visita?",
+"pt_BR": "O que você acha que faz um mercado municipal valer a visita?"
+}
+},
+{
+"id": "local_food_travel-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about dining alone in a restaurant abroad?",
+"de": "Wie fühlst du dich, wenn du im Ausland allein im Restaurant isst?",
+"es": "¿Cómo te sientes al comer solo en un restaurante en el extranjero?",
+"fr": "Comment vis-tu le fait de dîner seul au restaurant à l'étranger ?",
+"it": "Come ti senti a cenare da solo in un ristorante all'estero?",
+"pt": "Como te sentes a jantar sozinho num restaurante no estrangeiro?",
+"pt_BR": "Como você se sente jantando sozinho num restaurante no exterior?"
+}
+},
+{
+"id": "local_food_travel-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which region's mountain, island or coastal cooking attracts you most?",
+"de": "Welche Berg-, Insel- oder Küstenküche reizt dich am meisten?",
+"es": "¿Qué cocina de montaña, de isla o de costa te atrae más?",
+"fr": "Quelle cuisine de montagne, d'île ou de bord de mer t'attire le plus ?",
+"it": "Quale cucina di montagna, d'isola o di costa ti attira di più?",
+"pt": "Que cozinha de montanha, de ilha ou costeira te atrai mais?",
+"pt_BR": "Qual culinária de montanha, de ilha ou do litoral mais te atrai?"
+}
+},
+{
+"id": "local_food_travel-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What's your opinion on fusion food created by migration?",
+"de": "Was hältst du von Fusionsküche, die durch Migration entstanden ist?",
+"es": "¿Qué opinas de la cocina fusión nacida de la migración?",
+"fr": "Que penses-tu de la cuisine fusion née des migrations ?",
+"it": "Cosa pensi della cucina fusion nata dalle migrazioni?",
+"pt": "O que pensas da cozinha de fusão nascida das migrações?",
+"pt_BR": "O que você acha da culinária de fusão que nasceu das migrações?"
+}
+},
+{
+"id": "local_food_travel-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you visit a coffee, tea or cacao farm? What would you hope to learn?",
+"de": "Würdest du eine Kaffee-, Tee- oder Kakaoplantage besuchen? Was würdest du lernen wollen?",
+"es": "¿Visitarías una finca de café, té o cacao? ¿Qué te gustaría aprender?",
+"fr": "Visiterais-tu une plantation de café, de thé ou de cacao ? Qu'aimerais-tu apprendre ?",
+"it": "Visiteresti una piantagione di caffè, tè o cacao? Cosa vorresti imparare?",
+"pt": "Visitarias uma plantação de café, chá ou cacau? O que gostarias de aprender?",
+"pt_BR": "Você visitaria uma fazenda de café, chá ou cacau? O que gostaria de aprender?"
+}
+},
+{
+"id": "local_food_travel-080",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you adjust when local meal times are very different from yours?",
+"de": "Wie passt du dich an, wenn die Essenszeiten vor Ort ganz anders sind als bei dir?",
+"es": "¿Cómo te adaptas cuando los horarios de comida locales son muy distintos a los tuyos?",
+"fr": "Comment t'adaptes-tu quand les horaires des repas sont très différents des tiens ?",
+"it": "Come ti adatti quando gli orari dei pasti sono molto diversi dai tuoi?",
+"pt": "Como te adaptas quando os horários das refeições são muito diferentes dos teus?",
+"pt_BR": "Como você se adapta quando os horários das refeições são bem diferentes dos seus?"
+}
+},
+{
+"id": "local_food_travel-081",
+"lv": "intermediate",
+"i18n": {
+"en": "What's the best thing you've learned from watching a street vendor cook?",
+"de": "Was ist das Beste, was du beim Zuschauen eines Straßenkochs gelernt hast?",
+"es": "¿Qué es lo mejor que has aprendido viendo cocinar a un vendedor ambulante?",
+"fr": "Quelle est la meilleure chose apprise en regardant cuisiner un vendeur de rue ?",
+"it": "Qual è la cosa migliore che hai imparato guardando cucinare un venditore di strada?",
+"pt": "Qual foi a melhor coisa que aprendeste ao ver um vendedor de rua a cozinhar?",
+"pt_BR": "Qual foi a melhor coisa que você aprendeu vendo um vendedor de rua cozinhar?"
+}
+},
+{
+"id": "local_food_travel-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you choose one special splurge meal on a trip?",
+"de": "Wie wählst du auf einer Reise das eine besondere Festessen aus?",
+"es": "¿Cómo eliges esa comida especial en la que te das un capricho durante un viaje?",
+"fr": "Comment choisis-tu le repas d'exception que tu t'offres en voyage ?",
+"it": "Come scegli il pasto speciale in cui concederti uno strappo durante un viaggio?",
+"pt": "Como escolhes aquela refeição especial em que te dás um mimo numa viagem?",
+"pt_BR": "Como você escolhe aquela refeição especial pra se dar um mimo na viagem?"
+}
+},
+{
+"id": "local_food_travel-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What would a food-focused road trip look like for you?",
+"de": "Wie sähe für dich ein Roadtrip rund ums Essen aus?",
+"es": "¿Cómo sería para ti un viaje en coche centrado en la comida?",
+"fr": "À quoi ressemblerait pour toi un road trip gourmand ?",
+"it": "Come sarebbe per te un viaggio in auto dedicato al cibo?",
+"pt": "Como seria para ti uma viagem de carro dedicada à comida?",
+"pt_BR": "Como seria pra você uma viagem de carro focada em comida?"
+}
+},
+{
+"id": "local_food_travel-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which world cuisine's curries, stews or sauces would you most like to master?",
+"de": "Welche Currys, Eintöpfe oder Soßen einer Weltküche würdest du am liebsten beherrschen?",
+"es": "¿Qué curris, guisos o salsas de alguna cocina del mundo te gustaría dominar?",
+"fr": "Quels currys, ragoûts ou sauces d'une cuisine du monde aimerais-tu maîtriser ?",
+"it": "Quali curry, stufati o salse di una cucina del mondo vorresti saper preparare?",
+"pt": "Que caris, guisados ou molhos de uma cozinha do mundo gostarias de dominar?",
+"pt_BR": "Quais curries, ensopados ou molhos de alguma culinária do mundo você gostaria de dominar?"
+}
+},
+{
+"id": "local_food_travel-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever tasted olive oil, cheese or honey straight from the producer?",
+"de": "Hast du schon mal Olivenöl, Käse oder Honig direkt beim Erzeuger probiert?",
+"es": "¿Has probado alguna vez aceite de oliva, queso o miel directamente del productor?",
+"fr": "As-tu déjà goûté de l'huile d'olive, du fromage ou du miel directement chez le producteur ?",
+"it": "Hai mai assaggiato olio, formaggio o miele direttamente dal produttore?",
+"pt": "Já provaste azeite, queijo ou mel diretamente do produtor?",
+"pt_BR": "Você já provou azeite, queijo ou mel direto do produtor?"
+}
+},
+{
+"id": "local_food_travel-086",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think history and trade have shaped the food you love most?",
+"de": "Wie haben Geschichte und Handel deiner Meinung nach dein Lieblingsessen geprägt?",
+"es": "¿Cómo crees que la historia y el comercio han moldeado tu comida favorita?",
+"fr": "Comment l'histoire et le commerce ont-ils façonné la cuisine que tu préfères ?",
+"it": "Come pensi che storia e commercio abbiano plasmato il cibo che ami di più?",
+"pt": "Como achas que a história e o comércio moldaram a comida de que mais gostas?",
+"pt_BR": "Como você acha que a história e o comércio moldaram a comida que você mais ama?"
+}
+},
+{
+"id": "local_food_travel-087",
+"lv": "advanced",
+"i18n": {
+"en": "What does authentic food mean to you?",
+"de": "Was bedeutet authentisches Essen für dich?",
+"es": "¿Qué significa para ti la comida auténtica?",
+"fr": "Que signifie pour toi une cuisine authentique ?",
+"it": "Che cosa significa per te cibo autentico?",
+"pt": "O que significa para ti comida autêntica?",
+"pt_BR": "O que comida autêntica significa pra você?"
+}
+},
+{
+"id": "local_food_travel-088",
+"lv": "advanced",
+"i18n": {
+"en": "How do you try to be a respectful and responsible food traveller?",
+"de": "Wie versuchst du, als Genussreisender respektvoll und verantwortungsvoll zu sein?",
+"es": "¿Cómo intentas ser un viajero gastronómico respetuoso y responsable?",
+"fr": "Comment essaies-tu d'être un voyageur gourmand respectueux et responsable ?",
+"it": "Come cerchi di essere un viaggiatore gastronomico rispettoso e responsabile?",
+"pt": "Como tentas ser um viajante gastronómico respeitador e responsável?",
+"pt_BR": "Como você tenta ser um viajante gastronômico respeitoso e responsável?"
+}
+},
+{
+"id": "local_food_travel-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which taste do you find hardest to describe in words, and why?",
+"de": "Welchen Geschmack findest du am schwersten in Worte zu fassen, und warum?",
+"es": "¿Qué sabor te cuesta más describir con palabras y por qué?",
+"fr": "Quelle saveur trouves-tu la plus difficile à décrire, et pourquoi ?",
+"it": "Quale sapore trovi più difficile da descrivere a parole, e perché?",
+"pt": "Que sabor achas mais difícil de descrever por palavras, e porquê?",
+"pt_BR": "Qual sabor você acha mais difícil de descrever em palavras, e por quê?"
+}
+},
+{
+"id": "local_food_travel-090",
+"lv": "advanced",
+"i18n": {
+"en": "If you could spend a week learning from one cook anywhere, who and where?",
+"de": "Wenn du eine Woche bei einem Koch irgendwo lernen könntest, bei wem und wo?",
+"es": "Si pudieras pasar una semana aprendiendo con un cocinero en cualquier lugar, ¿con quién y dónde?",
+"fr": "Si tu pouvais passer une semaine à apprendre auprès d'un cuisinier, qui et où ?",
+"it": "Se potessi passare una settimana a imparare da un cuoco ovunque, chi e dove?",
+"pt": "Se pudesses passar uma semana a aprender com um cozinheiro em qualquer lado, quem e onde?",
+"pt_BR": "Se você pudesse passar uma semana aprendendo com um cozinheiro em qualquer lugar, quem e onde?"
+}
+},
+{
+"id": "local_food_travel-091",
+"lv": "advanced",
+"i18n": {
+"en": "How would you design a week-long trip built entirely around food?",
+"de": "Wie würdest du eine einwöchige Reise ganz rund ums Essen gestalten?",
+"es": "¿Cómo diseñarías un viaje de una semana centrado por completo en la comida?",
+"fr": "Comment concevrais-tu un voyage d'une semaine entièrement autour de la cuisine ?",
+"it": "Come progetteresti un viaggio di una settimana tutto dedicato al cibo?",
+"pt": "Como desenharias uma viagem de uma semana toda à volta da comida?",
+"pt_BR": "Como você montaria uma viagem de uma semana inteirinha em torno da comida?"
+}
+},
+{
+"id": "local_food_travel-092",
+"lv": "advanced",
+"i18n": {
+"en": "What do you think about chefs reinventing traditional dishes?",
+"de": "Was hältst du davon, wenn Köche traditionelle Gerichte neu erfinden?",
+"es": "¿Qué opinas de los chefs que reinventan platos tradicionales?",
+"fr": "Que penses-tu des chefs qui réinventent les plats traditionnels ?",
+"it": "Cosa pensi degli chef che reinventano i piatti tradizionali?",
+"pt": "O que achas dos chefs que reinventam pratos tradicionais?",
+"pt_BR": "O que você acha dos chefs que reinventam pratos tradicionais?"
+}
+},
+{
+"id": "local_food_travel-093",
+"lv": "advanced",
+"i18n": {
+"en": "How does terroir, the land and climate, show up in food you've tasted?",
+"de": "Wie zeigt sich das Terroir, also Boden und Klima, in Speisen, die du probiert hast?",
+"es": "¿Cómo se nota el terroir, la tierra y el clima, en lo que has probado?",
+"fr": "Comment le terroir, la terre et le climat, se ressent-il dans ce que tu as goûté ?",
+"it": "Come si sente il terroir, cioè terra e clima, nei cibi che hai assaggiato?",
+"pt": "Como se nota o terroir, a terra e o clima, na comida que já provaste?",
+"pt_BR": "Como o terroir, a terra e o clima, aparece nas comidas que você já provou?"
+}
+},
+{
+"id": "local_food_travel-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which regional cuisine would you like to understand in real depth?",
+"de": "Welche Regionalküche möchtest du wirklich tiefgehend verstehen?",
+"es": "¿Qué cocina regional te gustaría entender a fondo?",
+"fr": "Quelle cuisine régionale aimerais-tu comprendre en profondeur ?",
+"it": "Quale cucina regionale ti piacerebbe capire davvero a fondo?",
+"pt": "Que cozinha regional gostarias de compreender a fundo?",
+"pt_BR": "Qual culinária regional você gostaria de entender a fundo?"
+}
+},
+{
+"id": "local_food_travel-095",
+"lv": "advanced",
+"i18n": {
+"en": "How could food help you connect with people when you don't share a language?",
+"de": "Wie kann dir Essen helfen, Menschen näherzukommen, wenn ihr keine gemeinsame Sprache habt?",
+"es": "¿Cómo puede la comida ayudarte a conectar con gente con la que no compartes idioma?",
+"fr": "Comment la cuisine peut-elle t'aider à créer des liens sans langue commune ?",
+"it": "Come può il cibo aiutarti a entrare in contatto con chi non parla la tua lingua?",
+"pt": "Como pode a comida ajudar-te a ligar-te a pessoas com quem não partilhas uma língua?",
+"pt_BR": "Como a comida pode te ajudar a se conectar com pessoas que não falam sua língua?"
+}
+},
+{
+"id": "local_food_travel-096",
+"lv": "advanced",
+"i18n": {
+"en": "What food story from your travels would you tell in a short film or article?",
+"de": "Welche Essensgeschichte von deinen Reisen würdest du in einem Kurzfilm oder Artikel erzählen?",
+"es": "¿Qué historia gastronómica de tus viajes contarías en un corto o un artículo?",
+"fr": "Quelle histoire culinaire de tes voyages raconterais-tu dans un court métrage ou un article ?",
+"it": "Quale storia di cibo dei tuoi viaggi racconteresti in un cortometraggio o un articolo?",
+"pt": "Que história gastronómica das tuas viagens contarias numa curta-metragem ou num artigo?",
+"pt_BR": "Qual história de comida das suas viagens você contaria num curta ou num artigo?"
+}
+},
+{
+"id": "local_food_travel-097",
+"lv": "advanced",
+"i18n": {
+"en": "How do seasons change the way you would plan a food trip?",
+"de": "Wie verändern die Jahreszeiten die Art, wie du eine Genussreise planen würdest?",
+"es": "¿Cómo cambian las estaciones tu forma de planear un viaje gastronómico?",
+"fr": "Comment les saisons changent-elles ta façon de préparer un voyage gourmand ?",
+"it": "Come cambiano le stagioni il tuo modo di organizzare un viaggio gastronomico?",
+"pt": "Como é que as estações mudam a forma como planearias uma viagem gastronómica?",
+"pt_BR": "Como as estações mudam o jeito que você planejaria uma viagem gastronômica?"
+}
+},
+{
+"id": "local_food_travel-098",
+"lv": "advanced",
+"i18n": {
+"en": "If you guided a visitor through your city's food, where would you take them?",
+"de": "Wenn du einen Gast kulinarisch durch deine Stadt führen würdest, wohin ginge es?",
+"es": "Si guiaras a un visitante por la gastronomía de tu ciudad, ¿adónde lo llevarías?",
+"fr": "Si tu guidais un visiteur dans la cuisine de ta ville, où l'emmènerais-tu ?",
+"it": "Se guidassi un visitatore alla scoperta del cibo della tua città, dove lo porteresti?",
+"pt": "Se guiasses um visitante pela comida da tua cidade, onde o levarias?",
+"pt_BR": "Se você guiasse um visitante pela comida da sua cidade, aonde o levaria?"
+}
+},
+{
+"id": "local_food_travel-099",
+"lv": "advanced",
+"i18n": {
+"en": "How has food travel changed the way you cook and eat at home?",
+"de": "Wie hat das Reisen fürs Essen deine Art zu kochen und zu essen verändert?",
+"es": "¿Cómo ha cambiado viajar por la comida tu forma de cocinar y comer en casa?",
+"fr": "Comment les voyages gourmands ont-ils changé ta façon de cuisiner et de manger ?",
+"it": "Come hanno cambiato i viaggi gastronomici il tuo modo di cucinare e mangiare a casa?",
+"pt": "Como é que viajar pela comida mudou a tua forma de cozinhar e comer em casa?",
+"pt_BR": "Como viajar pela comida mudou seu jeito de cozinhar e comer em casa?"
+}
+},
+{
+"id": "local_food_travel-100",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give someone starting to travel for food?",
+"de": "Welchen Rat würdest du jemandem geben, der anfängt, fürs Essen zu reisen?",
+"es": "¿Qué consejo darías a alguien que empieza a viajar por la comida?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui commence à voyager pour la cuisine ?",
+"it": "Che consiglio daresti a chi comincia a viaggiare per il cibo?",
+"pt": "Que conselho darias a alguém que começa a viajar pela comida?",
+"pt_BR": "Que conselho você daria pra quem está começando a viajar pela comida?"
+}
+}
+]
+}

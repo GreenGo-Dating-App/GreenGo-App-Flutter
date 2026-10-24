@@ -1,0 +1,2195 @@
+{
+"topic": "gym",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to the gym path",
+"f": "What a year of steady, safe training can look like for anyone"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Why strength training matters",
+"f": "General benefits of resistance training for everyday life"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Setting a realistic goal",
+"f": "Choosing a clear, friendly goal like consistency or learning the basics"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Gym etiquette basics",
+"f": "Sharing equipment, wiping benches and putting weights back"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "A tour of the gym floor",
+"f": "Free weights, machines, the cardio area and stretching zones"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "What to wear and bring",
+"f": "Comfortable clothes, suitable shoes, a towel and a water bottle"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Hydration in general terms",
+"f": "Why drinking water around training is a simple good habit"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Why the warm-up matters",
+"f": "Raising body temperature and preparing joints before training"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "A simple general warm-up",
+"f": "Light cardio and dynamic movements to start every session"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Cooling down",
+"f": "Easing off with light movement and gentle stretching"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Listening to your body",
+"f": "Telling normal effort apart from pain, and knowing when to stop"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Checking in with a professional",
+"f": "When it is wise to ask a doctor or qualified trainer first"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Understanding reps and sets",
+"f": "The basic language of a workout plan"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Rest between sets",
+"f": "Why short breaks help you keep good form"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Choosing a starting weight",
+"f": "Starting light to learn movements before adding load"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "The idea of good form",
+"f": "Control, range of motion and posture as the foundation"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Neutral spine basics",
+"f": "What a neutral back position means in general terms"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Bracing your core",
+"f": "The general idea of creating stability before you lift"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Breathing while lifting",
+"f": "Common breathing patterns that help keep movements smooth"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "The bodyweight squat",
+"f": "Learning the squat pattern without any extra weight"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "The goblet squat",
+"f": "Holding a light weight in front of you to practise squatting"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "The hip hinge pattern",
+"f": "Bending at the hips, the basis of deadlifts and swings"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Glute bridges",
+"f": "A simple floor move to feel your hip muscles working"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Push-ups and their variations",
+"f": "Incline, knee and full push-ups for all levels"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "The plank",
+"f": "Holding a steady line to build core endurance"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Machine chest press",
+"f": "Learning a guided pressing movement"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Lat pulldown",
+"f": "Pulling a bar down to work your upper back"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Seated cable row",
+"f": "A guided rowing movement for your posture muscles"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Leg press basics",
+"f": "Using a machine to train your legs with back support"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first month",
+"f": "Light review of etiquette, warm-ups and your first movements"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Full-body workouts explained",
+"f": "Why training the whole body works well for beginners"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Building your first routine",
+"f": "A simple two or three day full-body structure"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "How often to train as a beginner",
+"f": "General ideas about training frequency and recovery days"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Tracking your workouts",
+"f": "Using a notebook or an app to record exercises and weights"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Progressive overload explained",
+"f": "The idea of gradually doing a little more over time"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Ways to progress",
+"f": "More reps, more sets, more weight or better form"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Dumbbell basics",
+"f": "Picking up, lifting and putting down dumbbells safely"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Dumbbell bench press",
+"f": "Pressing two dumbbells on a flat bench"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Dumbbell row",
+"f": "One-arm rowing with support on a bench"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Dumbbell shoulder press",
+"f": "Pressing overhead while staying stable"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Dumbbell Romanian deadlift",
+"f": "Practising the hip hinge with light weights"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Lunges",
+"f": "Stepping forward or backward for balance and leg strength"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Step-ups",
+"f": "Stepping onto a box or bench with control"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Biceps curls",
+"f": "A classic arm exercise done with control"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Triceps pushdowns",
+"f": "A cable exercise for the back of the arms"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Lateral raises",
+"f": "Lifting light weights out to the side for the shoulders"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Calf raises",
+"f": "Simple ankle movements for lower-leg strength"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "The dead bug",
+"f": "A floor core exercise that teaches control"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "The bird dog",
+"f": "Reaching with the opposite arm and leg for stability"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Side plank",
+"f": "Working the sides of your core"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Cardio machines overview",
+"f": "Treadmill, bike, rower and elliptical compared"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Steady-state cardio",
+"f": "Moderate, comfortable cardio and why many people enjoy it"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Rowing machine technique",
+"f": "Legs, body, arms: the basic rowing sequence"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Using the stationary bike",
+"f": "Seat height and comfortable pedalling"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Walking on an incline",
+"f": "A low-impact way to raise your heart rate"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Combining cardio and weights",
+"f": "Simple ways to fit both into one week"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Flexibility vs mobility",
+"f": "Two related ideas explained simply"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Simple stretches after training",
+"f": "Gentle stretches for the major muscle groups"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Mobility for the hips",
+"f": "General movements to help your hips feel looser"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: building routines",
+"f": "Light review of routines, progression and cardio"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Rest days matter",
+"f": "Why recovery is part of training"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Sleep and training",
+"f": "General reasons why good sleep supports progress"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Eating around workouts",
+"f": "Common general ideas about meals and training, no prescriptions"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Protein in general terms",
+"f": "What protein does in the body, without specific diet advice"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Muscle soreness explained",
+"f": "Why you might feel sore a day or two after training"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Pain vs discomfort",
+"f": "Recognising when something feels wrong and stopping"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Staying motivated early on",
+"f": "Small wins that build a habit"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Training with a friend",
+"f": "Accountability and fun with a gym buddy"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Gym nerves",
+"f": "Common worries for newcomers and gentle ways to ease them"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Quiet times at the gym",
+"f": "Choosing hours that feel comfortable for you"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Asking staff for help",
+"f": "Getting machine demos and tips from qualified staff"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Learning from mirrors and video",
+"f": "Checking your form visually"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Common beginner mistakes",
+"f": "Lifting too heavy, skipping warm-ups and rushing reps"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Range of motion",
+"f": "Moving through a comfortable, controlled range"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Tempo: slow and controlled reps",
+"f": "Controlling the lowering part of each rep"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "The mind-muscle connection",
+"f": "Focusing on the muscle you are training"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Grip basics",
+"f": "Overhand, underhand and neutral grips"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Foot position basics",
+"f": "How your stance affects squats, lunges and presses"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Using a bench safely",
+"f": "Adjusting angles and getting on and off with control"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Using cable machines",
+"f": "Pulleys, handles and adjusting the height"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Introducing the barbell",
+"f": "Parts of a barbell, weight plates and collars"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Loading and unloading plates",
+"f": "Doing it evenly and safely"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Using a squat rack",
+"f": "Setting the safety bars and the hook height"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "What a spotter does",
+"f": "How and when to ask someone to spot you"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Barbell back squat basics",
+"f": "Bar position, stance and depth in general terms"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Barbell bench press basics",
+"f": "Setup, grip and control on the bench"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Deadlift basics",
+"f": "Lifting a bar from the floor with a neutral back"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Overhead press basics",
+"f": "Pressing a barbell overhead while standing tall"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Barbell row basics",
+"f": "Hinging and rowing a bar toward your body"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: barbell basics",
+"f": "Light review of the main barbell lifts and safety habits"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "The big compound lifts",
+"f": "Why multi-joint exercises are central to many programmes"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Isolation exercises",
+"f": "When single-joint movements are useful"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Push, pull and legs",
+"f": "Understanding the main movement categories"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Balancing push and pull",
+"f": "Why balance helps posture and joints"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Upper body vs lower body days",
+"f": "Another simple way to split your training"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Planning a weekly schedule",
+"f": "Fitting workouts into real life"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Short workouts that work",
+"f": "Getting a good session done in limited time"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Home and hotel workouts",
+"f": "Training with little or no equipment"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Resistance bands",
+"f": "A portable tool for many exercises"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Celebrating 100 days",
+"f": "Looking back at the habits and skills you have built"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Introducing the kettlebell",
+"f": "The shape of a kettlebell and basic handling"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Kettlebell deadlift",
+"f": "Learning the hinge with a kettlebell"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Kettlebell swing basics",
+"f": "A hip-powered swing explained in general terms"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Farmer's carry",
+"f": "Walking with weights for grip and posture"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Pull-up progressions",
+"f": "Assisted and slow-lowering pull-ups for beginners"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Inverted rows",
+"f": "A bodyweight row using a bar or rings"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Dips and their variations",
+"f": "Bench dips and assisted dips for the arms"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Core beyond crunches",
+"f": "Anti-rotation and stability exercises"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "The Pallof press",
+"f": "A cable exercise that resists twisting"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Hip thrusts",
+"f": "Training the glutes with your back on a bench"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Hamstring curls",
+"f": "Machine work for the back of the thighs"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Leg extensions",
+"f": "Machine work for the front of the thighs"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Face pulls",
+"f": "A cable exercise for the upper back and shoulders"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Chest flyes",
+"f": "Dumbbell or cable flyes with light weights"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Rear delt flyes",
+"f": "Training the back of the shoulders"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Shrugs",
+"f": "A simple movement for the upper trapezius"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Ab wheel basics",
+"f": "A challenging core move, started gently"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Balance and stability work",
+"f": "Single-leg movements for coordination"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Your first self-check",
+"f": "Noticing what feels easier now than on day one"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner foundations",
+"f": "Light review of four months of gym basics"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Moving to intermediate training",
+"f": "What changes when beginner progress starts to slow down"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Training splits explained",
+"f": "Full body, upper-lower and push-pull-legs compared"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Choosing a split for your week",
+"f": "Matching a split to your schedule and goals"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Training volume",
+"f": "Sets and reps per muscle group in general terms"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Training intensity",
+"f": "How heavy a set is compared with your maximum"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Rate of perceived exertion",
+"f": "Rating your effort on a simple scale"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Reps in reserve",
+"f": "Ending a set with a few good reps still left"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Rep ranges and their uses",
+"f": "Lower, moderate and higher reps compared"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Strength vs muscle size goals",
+"f": "How training generally differs for each goal"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Endurance goals in the gym",
+"f": "Higher-rep work and circuits"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Periodisation basics",
+"f": "Organising training into phases"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Deload weeks",
+"f": "Lighter weeks that help recovery"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Planning a four-week block",
+"f": "A simple month of structured training"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Exercise order",
+"f": "Why big lifts usually come first in a session"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Supersets",
+"f": "Pairing two exercises back to back"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Circuits",
+"f": "Moving through several exercises with little rest"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Drop sets in general terms",
+"f": "Reducing the weight to continue a set"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Pyramids and ramping sets",
+"f": "Building up the weight across sets"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Warm-up sets for heavier lifts",
+"f": "Gradually working up to your working weight"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Squat technique deep dive",
+"f": "Depth, knee tracking and bar path"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Front squat basics",
+"f": "Holding the bar in front and staying upright"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Bench press technique deep dive",
+"f": "Shoulder blades, leg drive and bar path"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Incline pressing",
+"f": "Changing the bench angle to vary the press"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Deadlift technique deep dive",
+"f": "Setup, pull and lockout in detail"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Sumo vs conventional deadlift",
+"f": "Two stances and their general differences"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Overhead press deep dive",
+"f": "Bar path, ribcage position and lockout"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Pull-up technique deep dive",
+"f": "Full range, control and grip options"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Row variations",
+"f": "Chest-supported, cable and machine rows"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Split squats",
+"f": "Rear-foot elevated split squats in general terms"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: intermediate structure",
+"f": "Light review of splits, volume and technique"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Programming the upper body",
+"f": "Balancing chest, back, shoulders and arms"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Programming the lower body",
+"f": "Quads, hamstrings, glutes and calves"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Programming the core",
+"f": "Building a well-rounded core routine"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Training arms effectively",
+"f": "Volume and variety for biceps and triceps"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Training shoulders with care",
+"f": "Variety and moderate loads for happy shoulders"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Training the back",
+"f": "Vertical and horizontal pulling movements"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Training the chest",
+"f": "Presses and flyes at different angles"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Training the legs",
+"f": "Squats, hinges, lunges and machines"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Training the glutes",
+"f": "Hinges, thrusts and single-leg work"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Training the calves",
+"f": "Straight-knee and bent-knee variations"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Unilateral training",
+"f": "Single-arm and single-leg work for balance"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Grip strength",
+"f": "Carries, hangs and thick handles"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Conditioning in the gym",
+"f": "Sled pushes, bikes and intervals"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Interval training basics",
+"f": "Alternating harder and easier efforts"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Strength plus conditioning",
+"f": "Scheduling your week to support both"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Mobility routines for lifters",
+"f": "Short routines for hips, ankles and shoulders"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Upper-back mobility",
+"f": "Thoracic spine movement for better posture"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Ankle mobility",
+"f": "Helping squat depth with ankle work"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Shoulder mobility",
+"f": "Gentle work for overhead positions"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Foam rolling in general terms",
+"f": "A popular tool and what people commonly use it for"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Recovery habits",
+"f": "Sleep, rest days and managing stress"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Nutrition basics for active people",
+"f": "General balanced-eating ideas, no prescriptions"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Hydration on training days",
+"f": "General habits around water and sweat"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Supplements: a cautious overview",
+"f": "Why to research carefully and ask a professional"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Progress beyond the scale",
+"f": "Strength, energy, measurements and photos"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Training logs and data",
+"f": "Reading your log to spot patterns"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Plateaus explained",
+"f": "Why progress can stall for a while"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Breaking a plateau",
+"f": "Changing variables like volume, exercises or rest"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Small plates and microloading",
+"f": "Tiny increases for steady progress"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: the whole athlete",
+"f": "Light review of programming, mobility and recovery"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Machines vs free weights",
+"f": "The benefits of each for different goals"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Smith machine uses",
+"f": "When a guided bar can be useful"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Cable training variety",
+"f": "Angles and attachments for more options"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Chains and bands on the bar",
+"f": "Accommodating resistance in general terms"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Paused reps",
+"f": "Pausing at one point of the movement for control"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Tempo training",
+"f": "Planned timing for each phase of a rep"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Partial reps",
+"f": "When shortened ranges are used and why"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Isometric holds",
+"f": "Holding a position to build strength"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Eccentric focus",
+"f": "Slow lowering for more control"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Explosive movements",
+"f": "Moving light weights quickly with good form"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Box jumps in general terms",
+"f": "Jumping onto a stable box with care"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Medicine ball throws",
+"f": "Powerful, simple throws for athleticism"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Sled work",
+"f": "Pushing and pulling a weighted sled"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Battle ropes",
+"f": "Wave patterns for conditioning"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Training for everyday strength",
+"f": "Carrying, lifting and bending in daily life"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Posture and training",
+"f": "How balanced training supports good posture"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Training on a busy schedule",
+"f": "Flexible plans for hectic weeks"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Training while travelling",
+"f": "Hotel gyms and bodyweight routines on the road"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Seasonal training changes",
+"f": "Adapting your routine through the year"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Celebrating 200 days",
+"f": "Reflecting on the strength and habits you have gained"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Setting intermediate goals",
+"f": "SMART goals for the next phase"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Testing your progress safely",
+"f": "Rep tests and estimated maximums"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Estimating a one-rep max",
+"f": "Using formulas instead of all-out max attempts"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Reading your own recovery",
+"f": "Energy, sleep and mood as signals"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Auto-regulation",
+"f": "Adjusting the day's training to how you feel"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Choosing exercise variations",
+"f": "Picking what suits your body and goals"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Exercise substitutions",
+"f": "Alternatives when equipment is busy"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Busy-hour etiquette",
+"f": "Sharing stations and taking turns between sets"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Training in a group class",
+"f": "What classes can offer lifters"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: smarter training",
+"f": "Light review of intensity techniques and auto-regulation"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Upper-lower split in practice",
+"f": "An example week structure explained"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Push-pull-legs in practice",
+"f": "An example week structure explained"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Full body for intermediates",
+"f": "Making full-body training more advanced"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "The classic body-part split",
+"f": "One muscle group per day: pros and cons"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Hybrid training",
+"f": "Mixing strength, cardio and mobility"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Training for a sport",
+"f": "Gym work that supports other sports"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Training for hiking and travel",
+"f": "Legs, core and endurance for adventures"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Gym work for runners",
+"f": "Strength exercises runners commonly add"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Gym work for cyclists",
+"f": "Gym movements that support cycling"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Gym work for swimmers",
+"f": "Shoulders, back and core for swimming"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Strength training at any age",
+"f": "General ideas for different stages of life"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Training with a partner",
+"f": "Sharing sessions and spotting each other"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Coaching cues",
+"f": "Short phrases that help movements click"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Filming your lifts",
+"f": "Camera angles and tips for checking form"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Common form faults",
+"f": "Typical errors and general corrections"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Knee position in squats",
+"f": "Keeping knees in line with your toes"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Back position in hinges",
+"f": "Keeping a neutral spine in deadlifts"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Elbow position in presses",
+"f": "Angles that keep pressing comfortable"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Head and neck position",
+"f": "Where to look during your lifts"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Foot pressure and balance",
+"f": "Staying grounded through the whole foot"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Bar path basics",
+"f": "Why the bar's line of travel matters"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Lifting belts in general terms",
+"f": "What belts are and how people use them"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Lifting shoes in general terms",
+"f": "Why some lifters wear flat or raised-heel shoes"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Straps and chalk",
+"f": "Tools for grip in heavy pulling"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Wrist wraps and knee sleeves",
+"f": "Common accessories explained"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Gym bag essentials",
+"f": "What experienced lifters keep in their bag"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Building a home gym",
+"f": "Basic equipment for training at home"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Minimal equipment programmes",
+"f": "Solid training with dumbbells only"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Training outdoors",
+"f": "Parks, bars and benches as your gym"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Calisthenics basics",
+"f": "Bodyweight skills that build strength"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Pistol squat progressions",
+"f": "Working toward the single-leg squat"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Handstand basics",
+"f": "Wall-supported holds as a starting point"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "The muscle-up explained",
+"f": "What this advanced bodyweight skill involves"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "L-sit progressions",
+"f": "Building core and arm strength for the hold"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Calisthenics plus weights",
+"f": "Getting the best of both worlds"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Mental focus while training",
+"f": "Concentration and routines before a set"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Visualisation for lifting",
+"f": "Picturing a good rep before doing it"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Staying consistent for months",
+"f": "Habits that outlast motivation"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Enjoying the process",
+"f": "Finding fun in the training itself"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate mastery",
+"f": "Light review of splits, form and equipment"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Welcome to advanced training",
+"f": "What advanced really means and why patience matters"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Advanced periodisation models",
+"f": "Linear, undulating and block models explained"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Daily undulating periodisation",
+"f": "Varying reps and intensity within the week"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Block periodisation",
+"f": "Accumulation, intensification and peaking phases"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "The conjugate method",
+"f": "Rotating exercises and training qualities"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Managing fatigue",
+"f": "Balancing training stress and recovery over time"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "The fitness-fatigue model",
+"f": "Why performance shows up after recovery"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Tapering in general terms",
+"f": "Reducing training load before a test or event"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Planning a training year",
+"f": "Macrocycles, mesocycles and microcycles"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Annual goals and checkpoints",
+"f": "Testing and adjusting through the year"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Advanced squat variations",
+"f": "Pause, tempo and box squats"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Advanced bench variations",
+"f": "Close-grip, paused and board presses"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Advanced deadlift variations",
+"f": "Deficit, block and paused pulls"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Advanced overhead variations",
+"f": "Push press and seated press"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Olympic lifting introduction",
+"f": "The snatch and the clean and jerk explained"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Power clean basics",
+"f": "A simplified explosive pull from the floor"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Hang positions",
+"f": "Learning explosive lifts from the hang"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Learning complex lifts",
+"f": "Why qualified coaching matters for technical lifts"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Weak point training",
+"f": "Finding and addressing sticking points"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: advanced methods",
+"f": "Light review of periodisation and lift variations"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Specialisation phases",
+"f": "Focusing on one lift or muscle group for a while"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Maintenance volume",
+"f": "Keeping your gains while focusing elsewhere"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Strength sports overview",
+"f": "Powerlifting, weightlifting and strongman"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Physique sports overview",
+"f": "How bodybuilding-style training is structured"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Functional fitness competitions",
+"f": "Mixed-modal training explained"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Strongman implements",
+"f": "Stones, yokes and logs in general terms"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Powerlifting meet basics",
+"f": "How a competition day works"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Weightlifting meet basics",
+"f": "Attempts, timing and the main rules"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Choosing competition attempts",
+"f": "General strategy for openers and later attempts"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Competing for fun",
+"f": "Local events as a source of motivation"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Advanced hypertrophy concepts",
+"f": "Tension, volume and proximity to failure"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Training close to failure",
+"f": "Benefits and costs in general terms"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Myo-reps and rest-pause",
+"f": "Time-efficient techniques explained"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Lengthened partials",
+"f": "Training in stretched positions"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Exercise selection for growth",
+"f": "Stable, effective movements for building muscle"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Volume landmarks",
+"f": "Minimum, maintenance and maximum volume ideas"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Frequency for advanced lifters",
+"f": "Training each muscle more than once a week"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Rest periods revisited",
+"f": "Longer rests for heavy, high-quality sets"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Advanced conditioning methods",
+"f": "Heart rate zones and intervals in general terms"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Concurrent training",
+"f": "Managing strength and endurance goals together"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Advanced mobility work",
+"f": "Loaded stretching and end-range strength"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Joint-friendly training",
+"f": "Adjusting exercises for long-term comfort"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Training around minor niggles",
+"f": "When to adapt an exercise and when to see a professional"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Returning after a break",
+"f": "Easing back in safely after time off"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Detraining and retraining",
+"f": "How strength comes back after a pause"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Sleep habits for athletes",
+"f": "General habits for better rest"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Stress and performance",
+"f": "How everyday stress affects training"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Nutrition phases in general terms",
+"f": "Building and leaning phases explained broadly, no diet plans"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Body composition, not just weight",
+"f": "Why the scale tells only part of the story"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: performance and recovery",
+"f": "Light review of hypertrophy, conditioning and recovery"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Data-driven training",
+"f": "Using logs and trends to make decisions"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Velocity-based training",
+"f": "Bar speed as a guide, in general terms"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Heart rate in the gym",
+"f": "Using heart rate zones for conditioning"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Wearables and their limits",
+"f": "Useful data and its blind spots"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Building your own programme",
+"f": "Turning principles into a plan"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Reviewing a programme critically",
+"f": "Questions to ask about any training plan"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Adapting a programme template",
+"f": "Personalising a plan written by someone else"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Programme length and variation",
+"f": "When to change things and when to stay the course"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Coaching yourself",
+"f": "Honest feedback and objective review"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Working with a coach",
+"f": "What a good coach can provide"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Teaching a friend a lift",
+"f": "Explaining movements clearly and safely"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Spotting heavy lifts properly",
+"f": "Communication and positioning"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Gym culture and leadership",
+"f": "Making the gym welcoming for everyone"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Gyms in different countries",
+"f": "Gym cultures around the world"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Gym vocabulary across languages",
+"f": "Common gym terms in other languages"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Pioneers of strength",
+"f": "Early figures like Eugen Sandow and their influence"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "History of the barbell",
+"f": "How training equipment evolved over time"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "History of physical culture",
+"f": "Early gyms and training traditions"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Training traditions worldwide",
+"f": "Indian clubs, kettlebells and other heritage tools"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Strength and science",
+"f": "How research has shaped modern training"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Myths about lifting",
+"f": "Common misconceptions explained"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "The spot reduction myth",
+"f": "Why targeted fat loss from one area is a common misconception"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Toning vs building",
+"f": "What people usually mean by 'toning'"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Cardio myths",
+"f": "Separating facts from gym folklore"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Stretching myths",
+"f": "What general research suggests about stretching"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Strength training myths for women",
+"f": "Clearing up common misconceptions in general terms"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Strength for the long run",
+"f": "Staying strong through the years"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Balance and stability for life",
+"f": "General strength and balance work for everyday confidence"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Minimal routines for the long term",
+"f": "Sustainable training when time is short"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: knowledge and culture",
+"f": "Light review of programming, history and myths"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Long-term athletic development",
+"f": "Thinking in years, not weeks"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "A five-year training vision",
+"f": "Big-picture goals for lifelong training"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Identity as a lifter",
+"f": "Training as part of who you are"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Balancing gym and life",
+"f": "Work, family and training in harmony"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Training through busy seasons",
+"f": "Minimum effective doses for hectic periods"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Motivation vs discipline",
+"f": "Systems that keep you going"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Celebrating personal records",
+"f": "Recognising your milestones"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Handling setbacks",
+"f": "Responding calmly to bad days"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Mental toughness in training",
+"f": "Staying composed under heavy loads"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Mindfulness in the gym",
+"f": "Present-moment focus during your sets"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Breathing techniques for calm",
+"f": "Simple breathing before and after training"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Music and training",
+"f": "How music can affect effort and mood"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Your training environment",
+"f": "Making your space motivating"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Community and belonging",
+"f": "Finding your people at the gym"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Inclusive training spaces",
+"f": "Welcoming all bodies and abilities"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Adaptive training ideas",
+"f": "How gyms support people with different needs"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Training at every age",
+"f": "Age-appropriate ideas in broad terms"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Mentoring beginners",
+"f": "Helping newcomers feel at home"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Sharing your journey",
+"f": "Inspiring others without pressure"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Advanced self-assessment",
+"f": "Reviewing strength, mobility and conditioning"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Your year in numbers",
+"f": "Looking at your logs to see your progress"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Designing your next block",
+"f": "Using this year's lessons for the next phase"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "A balanced weekly template",
+"f": "Strength, conditioning and mobility combined"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "A test week",
+"f": "Safely checking progress across your lifts"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Refining technique once more",
+"f": "Revisiting the basics with experienced eyes"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "The basics always matter",
+"f": "Why fundamentals drive long-term results"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Training for joy",
+"f": "Activities that keep training fun"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Trying a new discipline",
+"f": "Exploring climbing, rowing or a strength sport"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Planning a training trip",
+"f": "Visiting gyms or events in another city"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: a year of training",
+"f": "Light review of the whole journey"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Your personal gym philosophy",
+"f": "Summing up what training means to you"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Your favourite lessons",
+"f": "Revisiting the ideas that helped you most"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Advice for your day-one self",
+"f": "What you would tell a beginner now"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Goals for year two",
+"f": "A fresh path with new challenges"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebration: 365 days strong",
+"f": "Celebrating consistency and looking ahead"
+}
+]
+}

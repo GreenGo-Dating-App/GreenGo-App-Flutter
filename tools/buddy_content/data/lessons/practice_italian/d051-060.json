@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the train station",
+     "g": "Read the departures board and buy the right train ticket.",
+     "p": [
+      "The board shows partenze (departures) and arrivi (arrivals), with orario, destinazione and binario.",
+      "Buy: Un biglietto per Firenze, solo andata o andata e ritorno? Prima o seconda classe?",
+      "Listen for: Il treno è in ritardo (late) or in orario (on time). Check your binario!"
+     ],
+     "q": "Which Italian city would you like to reach by train, and what ticket do you ask for?",
+     "c": "Say out loud a full ticket request: destination, one-way or return, class and time."
+    },
+    "de": {
+     "t": "Am Bahnhof",
+     "g": "Du liest die Abfahrtstafel und kaufst die richtige Fahrkarte.",
+     "p": [
+      "Die Tafel zeigt partenze (Abfahrten) und arrivi (Ankünfte) mit orario, destinazione und binario.",
+      "Kaufen: Un biglietto per Firenze, solo andata o andata e ritorno? Prima o seconda classe?",
+      "Achte auf: Il treno è in ritardo (verspätet) oder in orario (pünktlich). Prüf dein binario!"
+     ],
+     "q": "Welche italienische Stadt möchtest du mit dem Zug erreichen, und welche Fahrkarte verlangst du?",
+     "c": "Sag laut eine ganze Fahrkartenbitte: Ziel, einfach oder hin und zurück, Klasse und Uhrzeit."
+    },
+    "es": {
+     "t": "En la estación de tren",
+     "g": "Lee el panel de salidas y compra el billete de tren adecuado.",
+     "p": [
+      "El panel muestra partenze (salidas) y arrivi (llegadas), con orario, destinazione y binario.",
+      "Comprar: Un biglietto per Firenze, solo andata o andata e ritorno? Prima o seconda classe?",
+      "Atento a: Il treno è in ritardo (con retraso) o in orario (puntual). ¡Mira tu binario!"
+     ],
+     "q": "¿A qué ciudad italiana te gustaría ir en tren y qué billete pides?",
+     "c": "Di en voz alta una compra completa: destino, ida o ida y vuelta, clase y hora."
+    },
+    "fr": {
+     "t": "À la gare",
+     "g": "Lire le tableau des départs et acheter le bon billet de train.",
+     "p": [
+      "Le tableau affiche partenze (départs) et arrivi (arrivées), avec orario, destinazione et binario.",
+      "Acheter : Un biglietto per Firenze, solo andata o andata e ritorno ? Prima o seconda classe ?",
+      "Écoute : Il treno è in ritardo (en retard) ou in orario (à l'heure). Vérifie ton binario !"
+     ],
+     "q": "Quelle ville italienne aimerais-tu rejoindre en train, et quel billet demandes-tu ?",
+     "c": "Dis à voix haute une demande complète : destination, aller simple ou retour, classe et heure."
+    },
+    "it": {
+     "t": "Alla stazione",
+     "g": "Impari a leggere il tabellone e a comprare il biglietto giusto.",
+     "p": [
+      "Il tabellone mostra partenze e arrivi, con orario, destinazione e binario.",
+      "Per comprare: Un biglietto per Firenze, solo andata o andata e ritorno? Prima o seconda classe?",
+      "Ascolta bene: Il treno è in ritardo oppure in orario. Controlla sempre il binario!"
+     ],
+     "q": "In quale città italiana vorresti andare in treno e che biglietto chiedi?",
+     "c": "Di' ad alta voce una richiesta completa: destinazione, andata o ritorno, classe e orario."
+    },
+    "pt": {
+     "t": "Na estação de comboios",
+     "g": "Ler o painel de partidas e comprar o bilhete de comboio certo.",
+     "p": [
+      "O painel mostra partenze (partidas) e arrivi (chegadas), com orario, destinazione e binario.",
+      "Comprar: Un biglietto per Firenze, solo andata o andata e ritorno? Prima o seconda classe?",
+      "Atenção a: Il treno è in ritardo (atrasado) ou in orario (a horas). Confirma o teu binario!"
+     ],
+     "q": "A que cidade italiana gostavas de ir de comboio e que bilhete pedes?",
+     "c": "Diz em voz alta um pedido completo: destino, ida ou ida e volta, classe e hora."
+    },
+    "pt_BR": {
+     "t": "Na estação de trem",
+     "g": "Ler o painel de partidas e comprar a passagem de trem certa.",
+     "p": [
+      "O painel mostra partenze (partidas) e arrivi (chegadas), com orario, destinazione e binario.",
+      "Comprar: Un biglietto per Firenze, solo andata o andata e ritorno? Prima o seconda classe?",
+      "Atenção a: Il treno è in ritardo (atrasado) ou in orario (no horário). Confira sua plataforma!"
+     ],
+     "q": "Para qual cidade italiana você gostaria de ir de trem e que passagem pede?",
+     "c": "Diga em voz alta um pedido completo: destino, ida ou ida e volta, classe e horário."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il binario",
+      "ex": "Il treno per Roma parte dal binario 5."
+     },
+     {
+      "w": "andata e ritorno",
+      "ex": "Un biglietto di andata e ritorno, per favore."
+     },
+     {
+      "w": "solo andata",
+      "ex": "Per Bologna, solo andata."
+     },
+     {
+      "w": "le partenze",
+      "ex": "Guarda il tabellone delle partenze."
+     },
+     {
+      "w": "in ritardo",
+      "ex": "Il treno è in ritardo di dieci minuti."
+     },
+     {
+      "w": "in orario",
+      "ex": "Per fortuna il treno è in orario."
+     }
+    ],
+    "gram": "Il treno parte da / arriva a: il treno per Napoli parte alle 9.15 dal binario 3. Andata e ritorno, prima o seconda classe."
+   }
+  },
+  {
+   "d": 52,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My home: la casa",
+     "g": "Name the rooms and furniture and describe where you live.",
+     "p": [
+      "Rooms: la cucina, il soggiorno, la camera da letto, il bagno, il balcone.",
+      "Furniture: il letto, il divano, il tavolo, la sedia, l'armadio.",
+      "Abito in un appartamento means I live in a flat; casa also means home: Sono a casa."
+     ],
+     "q": "Describe your home: how many rooms are there, and which is your favourite?",
+     "c": "Write a short description of your home with c'è, ci sono and three pieces of furniture."
+    },
+    "de": {
+     "t": "Mein Zuhause: la casa",
+     "g": "Du benennst Zimmer und Möbel und beschreibst, wo du wohnst.",
+     "p": [
+      "Zimmer: la cucina, il soggiorno, la camera da letto, il bagno, il balcone.",
+      "Möbel: il letto, il divano, il tavolo, la sedia, l'armadio.",
+      "Abito in un appartamento heißt Ich wohne in einer Wohnung; casa heißt auch Zuhause: Sono a casa."
+     ],
+     "q": "Beschreib dein Zuhause: Wie viele Zimmer gibt es und welches magst du am liebsten?",
+     "c": "Schreib eine kurze Beschreibung deiner Wohnung mit c'è, ci sono und drei Möbelstücken."
+    },
+    "es": {
+     "t": "Mi casa: la casa",
+     "g": "Nombra las habitaciones y los muebles y describe dónde vives.",
+     "p": [
+      "Habitaciones: la cucina, il soggiorno, la camera da letto, il bagno, il balcone.",
+      "Muebles: il letto, il divano, il tavolo, la sedia, l'armadio.",
+      "Abito in un appartamento significa vivo en un piso; casa también es hogar: Sono a casa."
+     ],
+     "q": "Describe tu casa: ¿cuántas habitaciones tiene y cuál es tu favorita?",
+     "c": "Escribe una breve descripción de tu casa con c'è, ci sono y tres muebles."
+    },
+    "fr": {
+     "t": "Mon logement : la casa",
+     "g": "Nommer les pièces et les meubles et décrire où tu habites.",
+     "p": [
+      "Pièces : la cucina, il soggiorno, la camera da letto, il bagno, il balcone.",
+      "Meubles : il letto, il divano, il tavolo, la sedia, l'armadio.",
+      "Abito in un appartamento veut dire j'habite un appartement ; casa veut aussi dire chez soi : Sono a casa."
+     ],
+     "q": "Décris ton logement : combien de pièces y a-t-il et laquelle préfères-tu ?",
+     "c": "Écris une courte description de ton logement avec c'è, ci sono et trois meubles."
+    },
+    "it": {
+     "t": "La mia casa",
+     "g": "Impari i nomi delle stanze e dei mobili e descrivi dove abiti.",
+     "p": [
+      "Le stanze: la cucina, il soggiorno, la camera da letto, il bagno, il balcone.",
+      "I mobili: il letto, il divano, il tavolo, la sedia, l'armadio.",
+      "Abito in un appartamento; e casa vuol dire anche il luogo dove vivi: Sono a casa."
+     ],
+     "q": "Descrivi la tua casa: quante stanze ci sono e qual è la tua preferita?",
+     "c": "Scrivi una breve descrizione della tua casa con c'è, ci sono e tre mobili."
+    },
+    "pt": {
+     "t": "A minha casa: la casa",
+     "g": "Nomear as divisões e os móveis e descrever onde vives.",
+     "p": [
+      "Divisões: la cucina, il soggiorno, la camera da letto, il bagno, il balcone.",
+      "Móveis: il letto, il divano, il tavolo, la sedia, l'armadio.",
+      "Abito in un appartamento quer dizer vivo num apartamento; casa também é lar: Sono a casa."
+     ],
+     "q": "Descreve a tua casa: quantas divisões tem e qual é a tua preferida?",
+     "c": "Escreve uma descrição curta da tua casa com c'è, ci sono e três móveis."
+    },
+    "pt_BR": {
+     "t": "Minha casa: la casa",
+     "g": "Nomear os cômodos e os móveis e descrever onde você mora.",
+     "p": [
+      "Cômodos: la cucina, il soggiorno, la camera da letto, il bagno, il balcone.",
+      "Móveis: il letto, il divano, il tavolo, la sedia, l'armadio.",
+      "Abito in un appartamento quer dizer moro num apartamento; casa também é lar: Sono a casa."
+     ],
+     "q": "Descreva sua casa: quantos cômodos tem e qual é o seu favorito?",
+     "c": "Escreva uma descrição curta da sua casa com c'è, ci sono e três móveis."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la cucina",
+      "ex": "La cucina è piccola ma luminosa."
+     },
+     {
+      "w": "il soggiorno",
+      "ex": "La sera guardiamo la TV in soggiorno."
+     },
+     {
+      "w": "la camera da letto",
+      "ex": "La mia camera da letto ha un balcone."
+     },
+     {
+      "w": "il bagno",
+      "ex": "In casa ci sono due bagni."
+     },
+     {
+      "w": "il divano",
+      "ex": "Il gatto dorme sul divano."
+     },
+     {
+      "w": "l'armadio",
+      "ex": "I vestiti sono nell'armadio."
+     }
+    ],
+    "gram": "Abitare in: abito in un appartamento, in via Dante. Essere a casa (senza articolo): stasera sono a casa."
+   }
+  },
+  {
+   "d": 53,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Daily routine verbs",
+     "g": "Meet reflexive verbs, the key to describing your daily routine.",
+     "p": [
+      "Reflexive verbs end in -si: svegliarsi (wake up), alzarsi (get up), lavarsi (wash), vestirsi (dress).",
+      "The pronoun goes before the verb: mi sveglio, mi alzo, mi lavo, mi vesto.",
+      "Mi chiamo, which you know from day one, is also a reflexive verb!"
+     ],
+     "q": "What time do you wake up and get up? Answer with mi sveglio and mi alzo.",
+     "c": "Say four things you do every morning, each with mi: mi sveglio, mi alzo..."
+    },
+    "de": {
+     "t": "Verben für den Tagesablauf",
+     "g": "Du lernst reflexive Verben kennen, den Schlüssel zu deinem Tagesablauf.",
+     "p": [
+      "Reflexive Verben enden auf -si: svegliarsi (aufwachen), alzarsi (aufstehen), lavarsi (sich waschen), vestirsi.",
+      "Das Pronomen steht vor dem Verb: mi sveglio, mi alzo, mi lavo, mi vesto.",
+      "Mi chiamo, das du seit Tag eins kennst, ist auch ein reflexives Verb!"
+     ],
+     "q": "Wann wachst du auf und wann stehst du auf? Antworte mit mi sveglio und mi alzo.",
+     "c": "Sag vier Dinge, die du jeden Morgen tust, jedes mit mi: mi sveglio, mi alzo..."
+    },
+    "es": {
+     "t": "Verbos de la rutina diaria",
+     "g": "Conoce los verbos reflexivos, la clave para contar tu rutina.",
+     "p": [
+      "Los reflexivos terminan en -si: svegliarsi (despertarse), alzarsi (levantarse), lavarsi (lavarse), vestirsi.",
+      "El pronombre va delante del verbo: mi sveglio, mi alzo, mi lavo, mi vesto.",
+      "Mi chiamo, que conoces desde el primer día, ¡también es reflexivo!"
+     ],
+     "q": "¿A qué hora te despiertas y te levantas? Responde con mi sveglio y mi alzo.",
+     "c": "Di cuatro cosas que haces cada mañana, cada una con mi: mi sveglio, mi alzo..."
+    },
+    "fr": {
+     "t": "Les verbes de la routine",
+     "g": "Découvrir les verbes pronominaux, la clé pour raconter ta routine.",
+     "p": [
+      "Ils finissent en -si : svegliarsi (se réveiller), alzarsi (se lever), lavarsi (se laver), vestirsi (s'habiller).",
+      "Le pronom se place avant le verbe : mi sveglio, mi alzo, mi lavo, mi vesto.",
+      "Mi chiamo, que tu connais depuis le premier jour, est aussi un verbe pronominal !"
+     ],
+     "q": "À quelle heure te réveilles-tu et te lèves-tu ? Réponds avec mi sveglio et mi alzo.",
+     "c": "Dis quatre choses que tu fais chaque matin, chacune avec mi : mi sveglio, mi alzo..."
+    },
+    "it": {
+     "t": "I verbi della routine",
+     "g": "Scopri i verbi riflessivi, la chiave per raccontare la tua giornata.",
+     "p": [
+      "I verbi riflessivi finiscono in -si: svegliarsi, alzarsi, lavarsi, vestirsi.",
+      "Il pronome va prima del verbo: mi sveglio, mi alzo, mi lavo, mi vesto.",
+      "Anche mi chiamo, che conosci dal primo giorno, è un verbo riflessivo!"
+     ],
+     "q": "A che ora ti svegli e a che ora ti alzi? Rispondi con mi sveglio e mi alzo.",
+     "c": "Di' quattro cose che fai ogni mattina, tutte con mi: mi sveglio, mi alzo..."
+    },
+    "pt": {
+     "t": "Verbos da rotina diária",
+     "g": "Conhecer os verbos reflexos, a chave para descrever a tua rotina.",
+     "p": [
+      "Os reflexos acabam em -si: svegliarsi (acordar), alzarsi (levantar-se), lavarsi (lavar-se), vestirsi (vestir-se).",
+      "O pronome vem antes do verbo: mi sveglio, mi alzo, mi lavo, mi vesto.",
+      "Mi chiamo, que conheces desde o primeiro dia, também é reflexo!"
+     ],
+     "q": "A que horas acordas e te levantas? Responde com mi sveglio e mi alzo.",
+     "c": "Diz quatro coisas que fazes todas as manhãs, cada uma com mi: mi sveglio, mi alzo..."
+    },
+    "pt_BR": {
+     "t": "Verbos da rotina diária",
+     "g": "Conhecer os verbos reflexivos, a chave para descrever sua rotina.",
+     "p": [
+      "Os reflexivos terminam em -si: svegliarsi (acordar), alzarsi (levantar-se), lavarsi (lavar-se), vestirsi (vestir-se).",
+      "O pronome vem antes do verbo: mi sveglio, mi alzo, mi lavo, mi vesto.",
+      "Mi chiamo, que você conhece desde o primeiro dia, também é reflexivo!"
+     ],
+     "q": "A que horas você acorda e se levanta? Responda com mi sveglio e mi alzo.",
+     "c": "Diga quatro coisas que você faz toda manhã, cada uma com mi: mi sveglio, mi alzo..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "svegliarsi",
+      "ex": "Mi sveglio alle sette."
+     },
+     {
+      "w": "alzarsi",
+      "ex": "Mi alzo subito dal letto."
+     },
+     {
+      "w": "lavarsi",
+      "ex": "Mi lavo la faccia con l'acqua fredda."
+     },
+     {
+      "w": "vestirsi",
+      "ex": "Mi vesto in cinque minuti."
+     },
+     {
+      "w": "pettinarsi",
+      "ex": "Mi pettino davanti allo specchio."
+     },
+     {
+      "w": "la mattina",
+      "ex": "La mattina bevo un caffè."
+     }
+    ],
+    "gram": "I verbi riflessivi finiscono in -si (alzarsi) e usano un pronome prima del verbo: mi alzo, mi lavo, mi vesto."
+   }
+  },
+  {
+   "d": 54,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Reflexive verbs in action",
+     "g": "Conjugate reflexive verbs in all persons and tell your morning step by step.",
+     "p": [
+      "Pronouns: mi, ti, si, ci, vi, si. Alzarsi: mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano.",
+      "Link the steps with prima (first), poi (then), dopo (after) and alla fine (finally).",
+      "Some verbs are reflexive in Italian but not in English: sedersi, divertirsi, riposarsi."
+     ],
+     "q": "Tell me your morning in four steps with prima, poi, dopo and alla fine.",
+     "c": "Describe someone else's morning with si: Mia sorella si sveglia alle sei..."
+    },
+    "de": {
+     "t": "Reflexive Verben in Aktion",
+     "g": "Du konjugierst reflexive Verben in allen Personen und erzählst deinen Morgen Schritt für Schritt.",
+     "p": [
+      "Pronomen: mi, ti, si, ci, vi, si. Alzarsi: mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano.",
+      "Verbinde die Schritte mit prima (zuerst), poi (dann), dopo (danach), alla fine (zum Schluss).",
+      "Manche Verben sind auf Italienisch reflexiv wie im Deutschen: sedersi, divertirsi, riposarsi."
+     ],
+     "q": "Erzähl mir deinen Morgen in vier Schritten mit prima, poi, dopo und alla fine.",
+     "c": "Beschreib den Morgen einer anderen Person mit si: Mia sorella si sveglia alle sei..."
+    },
+    "es": {
+     "t": "Verbos reflexivos en acción",
+     "g": "Conjuga los reflexivos en todas las personas y cuenta tu mañana paso a paso.",
+     "p": [
+      "Pronombres: mi, ti, si, ci, vi, si. Alzarsi: mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano.",
+      "Une los pasos con prima (primero), poi (luego), dopo (después) y alla fine (al final).",
+      "Muchos se parecen al español: sedersi (sentarse), divertirsi (divertirse), riposarsi (descansar)."
+     ],
+     "q": "Cuéntame tu mañana en cuatro pasos con prima, poi, dopo y alla fine.",
+     "c": "Describe la mañana de otra persona con si: Mia sorella si sveglia alle sei..."
+    },
+    "fr": {
+     "t": "Les verbes pronominaux en action",
+     "g": "Conjuguer les verbes pronominaux à toutes les personnes et raconter ta matinée.",
+     "p": [
+      "Pronoms : mi, ti, si, ci, vi, si. Alzarsi : mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano.",
+      "Relie les étapes avec prima (d'abord), poi (puis), dopo (après) et alla fine (enfin).",
+      "Beaucoup ressemblent au français : sedersi (s'asseoir), divertirsi (s'amuser), riposarsi (se reposer)."
+     ],
+     "q": "Raconte-moi ta matinée en quatre étapes avec prima, poi, dopo et alla fine.",
+     "c": "Décris la matinée de quelqu'un d'autre avec si : Mia sorella si sveglia alle sei..."
+    },
+    "it": {
+     "t": "I verbi riflessivi in azione",
+     "g": "Impari a coniugare i riflessivi in tutte le persone e racconti la tua mattina.",
+     "p": [
+      "Pronomi: mi, ti, si, ci, vi, si. Alzarsi: mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano.",
+      "Collega i momenti con prima, poi, dopo e alla fine.",
+      "Altri riflessivi utili: sedersi, divertirsi, riposarsi, prepararsi."
+     ],
+     "q": "Raccontami la tua mattina in quattro momenti con prima, poi, dopo e alla fine.",
+     "c": "Descrivi la mattina di un'altra persona con si: Mia sorella si sveglia alle sei..."
+    },
+    "pt": {
+     "t": "Verbos reflexos em ação",
+     "g": "Conjugar os verbos reflexos em todas as pessoas e contar a tua manhã passo a passo.",
+     "p": [
+      "Pronomes: mi, ti, si, ci, vi, si. Alzarsi: mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano.",
+      "Liga os passos com prima (primeiro), poi (depois), dopo (a seguir) e alla fine (no fim).",
+      "Muitos são parecidos: sedersi (sentar-se), divertirsi (divertir-se), riposarsi (descansar)."
+     ],
+     "q": "Conta-me a tua manhã em quatro passos com prima, poi, dopo e alla fine.",
+     "c": "Descreve a manhã de outra pessoa com si: Mia sorella si sveglia alle sei..."
+    },
+    "pt_BR": {
+     "t": "Verbos reflexivos em ação",
+     "g": "Conjugar os verbos reflexivos em todas as pessoas e contar sua manhã passo a passo.",
+     "p": [
+      "Pronomes: mi, ti, si, ci, vi, si. Alzarsi: mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano.",
+      "Ligue os passos com prima (primeiro), poi (depois), dopo (em seguida) e alla fine (no final).",
+      "Muitos são parecidos: sedersi (sentar-se), divertirsi (divertir-se), riposarsi (descansar)."
+     ],
+     "q": "Me conte sua manhã em quatro passos com prima, poi, dopo e alla fine.",
+     "c": "Descreva a manhã de outra pessoa com si: Mia sorella si sveglia alle sei..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ci alziamo",
+      "ex": "La domenica ci alziamo tardi."
+     },
+     {
+      "w": "si prepara",
+      "ex": "Marco si prepara per uscire."
+     },
+     {
+      "w": "divertirsi",
+      "ex": "Ci divertiamo molto in vacanza."
+     },
+     {
+      "w": "riposarsi",
+      "ex": "Dopo pranzo mi riposo un po'."
+     },
+     {
+      "w": "prima... poi",
+      "ex": "Prima mi lavo, poi faccio colazione."
+     },
+     {
+      "w": "alla fine",
+      "ex": "Alla fine esco di casa alle otto."
+     }
+    ],
+    "gram": "Riflessivi: mi, ti, si, ci, vi, si + verbo. Mi alzo, ti alzi, si alza, ci alziamo, vi alzate, si alzano."
+   }
+  },
+  {
+   "d": 55,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Frequency: sempre, spesso, mai",
+     "g": "Say how often you do things with adverbs of frequency.",
+     "p": [
+      "From most to least: sempre, di solito, spesso, a volte, raramente, mai.",
+      "Mai needs non before the verb: Non bevo mai il caffè. Sempre usually follows the verb: Studio sempre.",
+      "Ask: Quante volte? Answer: una volta alla settimana, due volte al giorno, ogni giorno."
+     ],
+     "q": "What do you always do in the morning, and what do you never do?",
+     "c": "Write five sentences about your habits, each with a different frequency word."
+    },
+    "de": {
+     "t": "Häufigkeit: sempre, spesso, mai",
+     "g": "Du sagst mit Häufigkeitsadverbien, wie oft du etwas tust.",
+     "p": [
+      "Von oft nach selten: sempre, di solito, spesso, a volte, raramente, mai.",
+      "Mai braucht non vor dem Verb: Non bevo mai il caffè. Sempre steht meist nach dem Verb: Studio sempre.",
+      "Frage: Quante volte? Antwort: una volta alla settimana, due volte al giorno, ogni giorno."
+     ],
+     "q": "Was machst du morgens immer, und was machst du nie?",
+     "c": "Schreib fünf Sätze über deine Gewohnheiten, jeden mit einem anderen Häufigkeitswort."
+    },
+    "es": {
+     "t": "Frecuencia: sempre, spesso, mai",
+     "g": "Di con qué frecuencia haces las cosas con adverbios de frecuencia.",
+     "p": [
+      "De más a menos: sempre, di solito, spesso, a volte, raramente, mai.",
+      "Mai necesita non delante del verbo: Non bevo mai il caffè. Sempre suele ir detrás: Studio sempre.",
+      "Pregunta: Quante volte? Respuesta: una volta alla settimana, due volte al giorno, ogni giorno."
+     ],
+     "q": "¿Qué haces siempre por la mañana y qué no haces nunca?",
+     "c": "Escribe cinco frases sobre tus hábitos, cada una con una palabra de frecuencia distinta."
+    },
+    "fr": {
+     "t": "La fréquence : sempre, spesso, mai",
+     "g": "Dire à quelle fréquence tu fais les choses avec des adverbes de fréquence.",
+     "p": [
+      "Du plus au moins : sempre, di solito, spesso, a volte, raramente, mai.",
+      "Mai demande non avant le verbe : Non bevo mai il caffè. Sempre se met après : Studio sempre.",
+      "Question : Quante volte ? Réponse : una volta alla settimana, due volte al giorno, ogni giorno."
+     ],
+     "q": "Que fais-tu toujours le matin, et que ne fais-tu jamais ?",
+     "c": "Écris cinq phrases sur tes habitudes, chacune avec un mot de fréquence différent."
+    },
+    "it": {
+     "t": "La frequenza: sempre, spesso, mai",
+     "g": "Impari a dire quanto spesso fai le cose con gli avverbi di frequenza.",
+     "p": [
+      "Dal più al meno: sempre, di solito, spesso, a volte, raramente, mai.",
+      "Mai vuole non prima del verbo: Non bevo mai il caffè. Sempre va dopo il verbo: Studio sempre.",
+      "Domanda: Quante volte? Risposta: una volta alla settimana, due volte al giorno, ogni giorno."
+     ],
+     "q": "Che cosa fai sempre la mattina e che cosa non fai mai?",
+     "c": "Scrivi cinque frasi sulle tue abitudini, ognuna con una parola di frequenza diversa."
+    },
+    "pt": {
+     "t": "Frequência: sempre, spesso, mai",
+     "g": "Dizer com que frequência fazes as coisas com advérbios de frequência.",
+     "p": [
+      "Do mais ao menos: sempre, di solito, spesso, a volte, raramente, mai.",
+      "Mai pede non antes do verbo: Non bevo mai il caffè. Sempre vem depois do verbo: Studio sempre.",
+      "Pergunta: Quante volte? Resposta: una volta alla settimana, due volte al giorno, ogni giorno."
+     ],
+     "q": "O que fazes sempre de manhã e o que nunca fazes?",
+     "c": "Escreve cinco frases sobre os teus hábitos, cada uma com uma palavra de frequência diferente."
+    },
+    "pt_BR": {
+     "t": "Frequência: sempre, spesso, mai",
+     "g": "Dizer com que frequência você faz as coisas com advérbios de frequência.",
+     "p": [
+      "Do mais ao menos: sempre, di solito, spesso, a volte, raramente, mai.",
+      "Mai pede non antes do verbo: Non bevo mai il caffè. Sempre vem depois do verbo: Studio sempre.",
+      "Pergunta: Quante volte? Resposta: una volta alla settimana, due volte al giorno, ogni giorno."
+     ],
+     "q": "O que você sempre faz de manhã e o que nunca faz?",
+     "c": "Escreva cinco frases sobre seus hábitos, cada uma com uma palavra de frequência diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sempre",
+      "ex": "Faccio sempre colazione a casa."
+     },
+     {
+      "w": "di solito",
+      "ex": "Di solito ceno alle otto."
+     },
+     {
+      "w": "spesso",
+      "ex": "Andiamo spesso al cinema."
+     },
+     {
+      "w": "a volte",
+      "ex": "A volte lavoro anche il sabato."
+     },
+     {
+      "w": "non... mai",
+      "ex": "Non mangio mai la carne."
+     },
+     {
+      "w": "ogni giorno",
+      "ex": "Leggo un po' ogni giorno."
+     }
+    ],
+    "gram": "Con mai serve la doppia negazione: non guardo mai la TV. Sempre e spesso vanno dopo il verbo: studio sempre, esco spesso."
+   }
+  },
+  {
+   "d": 56,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Work and jobs: il lavoro",
+     "g": "Name professions and say what you do and where you work.",
+     "p": [
+      "Ask: Che lavoro fai? or Che lavoro fa? (formal). Answer: Sono insegnante, Faccio l'ingegnere.",
+      "With sono, no article: Sono medico. With faccio, use the article: Faccio il cuoco.",
+      "Where you work: Lavoro in un ufficio, in un ospedale, a scuola, da casa."
+     ],
+     "q": "Che lavoro fai? Tell me your job, or the job you dream of, in Italian.",
+     "c": "Name five jobs of people you know in Italian, with masculine and feminine forms."
+    },
+    "de": {
+     "t": "Arbeit und Berufe: il lavoro",
+     "g": "Du benennst Berufe und sagst, was du machst und wo du arbeitest.",
+     "p": [
+      "Frage: Che lavoro fai? oder Che lavoro fa? (formell). Antwort: Sono insegnante, Faccio l'ingegnere.",
+      "Mit sono ohne Artikel: Sono medico. Mit faccio mit Artikel: Faccio il cuoco.",
+      "Arbeitsort: Lavoro in un ufficio, in un ospedale, a scuola, da casa."
+     ],
+     "q": "Che lavoro fai? Nenn mir deinen Beruf oder deinen Traumberuf auf Italienisch.",
+     "c": "Nenne fünf Berufe von Menschen, die du kennst, in männlicher und weiblicher Form."
+    },
+    "es": {
+     "t": "Trabajo y profesiones: il lavoro",
+     "g": "Nombra profesiones y di a qué te dedicas y dónde trabajas.",
+     "p": [
+      "Pregunta: Che lavoro fai? o Che lavoro fa? (formal). Respuesta: Sono insegnante, Faccio l'ingegnere.",
+      "Con sono, sin artículo: Sono medico. Con faccio, con artículo: Faccio il cuoco.",
+      "Dónde trabajas: Lavoro in un ufficio, in un ospedale, a scuola, da casa."
+     ],
+     "q": "Che lavoro fai? Dime tu trabajo, o el trabajo de tus sueños, en italiano.",
+     "c": "Nombra cinco profesiones de gente que conoces, en masculino y femenino."
+    },
+    "fr": {
+     "t": "Le travail et les métiers : il lavoro",
+     "g": "Nommer les métiers et dire ce que tu fais et où tu travailles.",
+     "p": [
+      "Question : Che lavoro fai ? ou Che lavoro fa ? (formel). Réponse : Sono insegnante, Faccio l'ingegnere.",
+      "Avec sono, pas d'article : Sono medico. Avec faccio, l'article : Faccio il cuoco.",
+      "Le lieu : Lavoro in un ufficio, in un ospedale, a scuola, da casa."
+     ],
+     "q": "Che lavoro fai ? Dis-moi ton métier, ou le métier de tes rêves, en italien.",
+     "c": "Nomme cinq métiers de personnes que tu connais, au masculin et au féminin."
+    },
+    "it": {
+     "t": "Il lavoro e le professioni",
+     "g": "Impari i nomi delle professioni e a dire che lavoro fai e dove lavori.",
+     "p": [
+      "Domanda: Che lavoro fai? o Che lavoro fa? Risposta: Sono insegnante, Faccio l'ingegnere.",
+      "Con sono senza articolo: Sono medico. Con faccio con l'articolo: Faccio il cuoco.",
+      "Il luogo: Lavoro in un ufficio, in un ospedale, a scuola, da casa."
+     ],
+     "q": "Che lavoro fai? Dimmi il tuo lavoro, o il lavoro dei tuoi sogni.",
+     "c": "Nomina cinque lavori di persone che conosci, al maschile e al femminile."
+    },
+    "pt": {
+     "t": "Trabalho e profissões: il lavoro",
+     "g": "Nomear profissões e dizer o que fazes e onde trabalhas.",
+     "p": [
+      "Pergunta: Che lavoro fai? ou Che lavoro fa? (formal). Resposta: Sono insegnante, Faccio l'ingegnere.",
+      "Com sono, sem artigo: Sono medico. Com faccio, com artigo: Faccio il cuoco.",
+      "Onde trabalhas: Lavoro in un ufficio, in un ospedale, a scuola, da casa."
+     ],
+     "q": "Che lavoro fai? Diz-me a tua profissão, ou a dos teus sonhos, em italiano.",
+     "c": "Diz cinco profissões de pessoas que conheces, no masculino e no feminino."
+    },
+    "pt_BR": {
+     "t": "Trabalho e profissões: il lavoro",
+     "g": "Nomear profissões e dizer o que você faz e onde trabalha.",
+     "p": [
+      "Pergunta: Che lavoro fai? ou Che lavoro fa? (formal). Resposta: Sono insegnante, Faccio l'ingegnere.",
+      "Com sono, sem artigo: Sono medico. Com faccio, com artigo: Faccio il cuoco.",
+      "Onde trabalha: Lavoro in un ufficio, in un ospedale, a scuola, da casa."
+     ],
+     "q": "Che lavoro fai? Me diga sua profissão, ou a dos seus sonhos, em italiano.",
+     "c": "Diga cinco profissões de pessoas que você conhece, no masculino e no feminino."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che lavoro fai?",
+      "ex": "Che lavoro fai, Sara?"
+     },
+     {
+      "w": "l'insegnante",
+      "ex": "Mia madre è insegnante di inglese."
+     },
+     {
+      "w": "il medico",
+      "ex": "Il medico lavora in ospedale."
+     },
+     {
+      "w": "il cuoco / la cuoca",
+      "ex": "Mio zio fa il cuoco in un ristorante."
+     },
+     {
+      "w": "l'ufficio",
+      "ex": "Lavoro in un ufficio in centro."
+     },
+     {
+      "w": "il commesso / la commessa",
+      "ex": "La commessa è molto gentile."
+     }
+    ],
+    "gram": "Sono + professione senza articolo (sono architetto), faccio + articolo (faccio l'architetto). Lavoro in ufficio, a scuola."
+   }
+  },
+  {
+   "d": 57,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The weather: che tempo fa?",
+     "g": "Talk about the weather and the seasons in Italian.",
+     "p": [
+      "Ask: Che tempo fa? Answer with fare: Fa caldo, Fa freddo, Fa bel tempo, Fa brutto tempo.",
+      "Verbs and c'è: Piove (it rains), Nevica (it snows), C'è il sole, C'è vento, C'è nebbia.",
+      "Seasons: la primavera, l'estate, l'autunno, l'inverno. In estate fa caldo."
+     ],
+     "q": "Che tempo fa oggi da te? And which season do you like best?",
+     "c": "Give a short weather report for your city in Italian: today and tomorrow."
+    },
+    "de": {
+     "t": "Das Wetter: che tempo fa?",
+     "g": "Du sprichst auf Italienisch über Wetter und Jahreszeiten.",
+     "p": [
+      "Frage: Che tempo fa? Antwort mit fare: Fa caldo, Fa freddo, Fa bel tempo, Fa brutto tempo.",
+      "Verben und c'è: Piove (es regnet), Nevica (es schneit), C'è il sole, C'è vento, C'è nebbia.",
+      "Jahreszeiten: la primavera, l'estate, l'autunno, l'inverno. In estate fa caldo."
+     ],
+     "q": "Che tempo fa oggi bei dir? Und welche Jahreszeit magst du am liebsten?",
+     "c": "Mach einen kurzen Wetterbericht für deine Stadt auf Italienisch: heute und morgen."
+    },
+    "es": {
+     "t": "El tiempo: che tempo fa?",
+     "g": "Habla del tiempo y de las estaciones en italiano.",
+     "p": [
+      "Pregunta: Che tempo fa? Responde con fare: Fa caldo, Fa freddo, Fa bel tempo, Fa brutto tempo.",
+      "Verbos y c'è: Piove (llueve), Nevica (nieva), C'è il sole, C'è vento, C'è nebbia.",
+      "Estaciones: la primavera, l'estate, l'autunno, l'inverno. In estate fa caldo."
+     ],
+     "q": "Che tempo fa oggi donde estás? ¿Y qué estación te gusta más?",
+     "c": "Haz un breve parte del tiempo de tu ciudad en italiano: hoy y mañana."
+    },
+    "fr": {
+     "t": "La météo : che tempo fa ?",
+     "g": "Parler du temps qu'il fait et des saisons en italien.",
+     "p": [
+      "Question : Che tempo fa ? Réponds avec fare : Fa caldo, Fa freddo, Fa bel tempo, Fa brutto tempo.",
+      "Verbes et c'è : Piove (il pleut), Nevica (il neige), C'è il sole, C'è vento, C'è nebbia.",
+      "Saisons : la primavera, l'estate, l'autunno, l'inverno. In estate fa caldo."
+     ],
+     "q": "Che tempo fa oggi chez toi ? Et quelle saison préfères-tu ?",
+     "c": "Fais un petit bulletin météo de ta ville en italien : aujourd'hui et demain."
+    },
+    "it": {
+     "t": "Il tempo: che tempo fa?",
+     "g": "Impari a parlare del tempo e delle stagioni.",
+     "p": [
+      "Domanda: Che tempo fa? Risposte con fare: Fa caldo, Fa freddo, Fa bel tempo, Fa brutto tempo.",
+      "Verbi e c'è: Piove, Nevica, C'è il sole, C'è vento, C'è nebbia.",
+      "Le stagioni: la primavera, l'estate, l'autunno, l'inverno. In estate fa caldo."
+     ],
+     "q": "Che tempo fa oggi dove sei tu? E qual è la tua stagione preferita?",
+     "c": "Fai un breve meteo della tua città in italiano: oggi e domani."
+    },
+    "pt": {
+     "t": "O tempo: che tempo fa?",
+     "g": "Falar do tempo e das estações do ano em italiano.",
+     "p": [
+      "Pergunta: Che tempo fa? Responde com fare: Fa caldo, Fa freddo, Fa bel tempo, Fa brutto tempo.",
+      "Verbos e c'è: Piove (chove), Nevica (neva), C'è il sole, C'è vento, C'è nebbia.",
+      "Estações: la primavera, l'estate, l'autunno, l'inverno. In estate fa caldo."
+     ],
+     "q": "Che tempo fa oggi onde estás? E qual é a tua estação preferida?",
+     "c": "Faz uma pequena previsão do tempo da tua cidade em italiano: hoje e amanhã."
+    },
+    "pt_BR": {
+     "t": "O clima: che tempo fa?",
+     "g": "Falar do tempo e das estações do ano em italiano.",
+     "p": [
+      "Pergunta: Che tempo fa? Responda com fare: Fa caldo, Fa freddo, Fa bel tempo, Fa brutto tempo.",
+      "Verbos e c'è: Piove (chove), Nevica (neva), C'è il sole, C'è vento, C'è nebbia.",
+      "Estações: la primavera, l'estate, l'autunno, l'inverno. In estate fa caldo."
+     ],
+     "q": "Che tempo fa oggi onde você está? E qual é sua estação favorita?",
+     "c": "Faça uma pequena previsão do tempo da sua cidade em italiano: hoje e amanhã."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che tempo fa?",
+      "ex": "Che tempo fa a Milano oggi?"
+     },
+     {
+      "w": "fa freddo",
+      "ex": "In inverno fa freddo in montagna."
+     },
+     {
+      "w": "piove",
+      "ex": "Prendi l'ombrello, piove!"
+     },
+     {
+      "w": "nevica",
+      "ex": "A gennaio nevica spesso."
+     },
+     {
+      "w": "c'è il sole",
+      "ex": "Oggi c'è il sole, andiamo al mare."
+     },
+     {
+      "w": "l'estate",
+      "ex": "In estate le giornate sono lunghe."
+     }
+    ],
+    "gram": "Il tempo: fa caldo/freddo/bel tempo; piove, nevica (senza soggetto); c'è il sole, c'è vento. In primavera, in estate."
+   }
+  },
+  {
+   "d": 58,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hobbies and free time",
+     "g": "Talk about sports, music, reading and your weekend.",
+     "p": [
+      "Giocare for games and team sports: gioco a calcio, a tennis. Fare for others: faccio yoga, faccio nuoto.",
+      "Other hobbies: leggere, ascoltare musica, suonare la chitarra, andare in bici, cucinare.",
+      "Ask: Che cosa fai nel tempo libero? Answer with mi piace + infinitive: Mi piace dipingere."
+     ],
+     "q": "Che cosa fai nel tempo libero? Tell me two hobbies and how often you do them.",
+     "c": "Plan your ideal weekend in Italian with three activities and a frequency word."
+    },
+    "de": {
+     "t": "Hobbys und Freizeit",
+     "g": "Du sprichst über Sport, Musik, Lesen und dein Wochenende.",
+     "p": [
+      "Giocare für Spiele und Teamsport: gioco a calcio, a tennis. Fare für anderes: faccio yoga, faccio nuoto.",
+      "Weitere Hobbys: leggere, ascoltare musica, suonare la chitarra, andare in bici, cucinare.",
+      "Frage: Che cosa fai nel tempo libero? Antwort mit mi piace + Infinitiv: Mi piace dipingere."
+     ],
+     "q": "Che cosa fai nel tempo libero? Nenn mir zwei Hobbys und wie oft du sie machst.",
+     "c": "Plan dein ideales Wochenende auf Italienisch mit drei Aktivitäten und einem Häufigkeitswort."
+    },
+    "es": {
+     "t": "Aficiones y tiempo libre",
+     "g": "Habla de deporte, música, lectura y de tu fin de semana.",
+     "p": [
+      "Giocare para juegos y deportes de equipo: gioco a calcio, a tennis. Fare para otros: faccio yoga, faccio nuoto.",
+      "Otras aficiones: leggere, ascoltare musica, suonare la chitarra, andare in bici, cucinare.",
+      "Pregunta: Che cosa fai nel tempo libero? Responde con mi piace + infinitivo: Mi piace dipingere."
+     ],
+     "q": "Che cosa fai nel tempo libero? Dime dos aficiones y con qué frecuencia las practicas.",
+     "c": "Planea tu fin de semana ideal en italiano con tres actividades y una palabra de frecuencia."
+    },
+    "fr": {
+     "t": "Loisirs et temps libre",
+     "g": "Parler de sport, de musique, de lecture et de ton week-end.",
+     "p": [
+      "Giocare pour les jeux et sports d'équipe : gioco a calcio, a tennis. Fare pour d'autres : faccio yoga, faccio nuoto.",
+      "Autres loisirs : leggere, ascoltare musica, suonare la chitarra, andare in bici, cucinare.",
+      "Question : Che cosa fai nel tempo libero ? Réponds avec mi piace + infinitif : Mi piace dipingere."
+     ],
+     "q": "Che cosa fai nel tempo libero ? Dis-moi deux loisirs et à quelle fréquence tu les pratiques.",
+     "c": "Planifie ton week-end idéal en italien avec trois activités et un mot de fréquence."
+    },
+    "it": {
+     "t": "Hobby e tempo libero",
+     "g": "Impari a parlare di sport, musica, lettura e del tuo fine settimana.",
+     "p": [
+      "Giocare per giochi e sport di squadra: gioco a calcio, a tennis. Fare per altri: faccio yoga, faccio nuoto.",
+      "Altri hobby: leggere, ascoltare musica, suonare la chitarra, andare in bici, cucinare.",
+      "Domanda: Che cosa fai nel tempo libero? Rispondi con mi piace + infinito: Mi piace dipingere."
+     ],
+     "q": "Che cosa fai nel tempo libero? Dimmi due hobby e quanto spesso li fai.",
+     "c": "Organizza il tuo fine settimana ideale con tre attività e una parola di frequenza."
+    },
+    "pt": {
+     "t": "Passatempos e tempos livres",
+     "g": "Falar de desporto, música, leitura e do teu fim de semana.",
+     "p": [
+      "Giocare para jogos e desportos de equipa: gioco a calcio, a tennis. Fare para outros: faccio yoga, faccio nuoto.",
+      "Outros passatempos: leggere, ascoltare musica, suonare la chitarra, andare in bici, cucinare.",
+      "Pergunta: Che cosa fai nel tempo libero? Responde com mi piace + infinitivo: Mi piace dipingere."
+     ],
+     "q": "Che cosa fai nel tempo libero? Diz-me dois passatempos e com que frequência os fazes.",
+     "c": "Planeia o teu fim de semana ideal em italiano com três atividades e uma palavra de frequência."
+    },
+    "pt_BR": {
+     "t": "Hobbies e tempo livre",
+     "g": "Falar de esporte, música, leitura e do seu fim de semana.",
+     "p": [
+      "Giocare para jogos e esportes de equipe: gioco a calcio, a tennis. Fare para outros: faccio yoga, faccio nuoto.",
+      "Outros hobbies: leggere, ascoltare musica, suonare la chitarra, andare in bici, cucinare.",
+      "Pergunta: Che cosa fai nel tempo libero? Responda com mi piace + infinitivo: Mi piace dipingere."
+     ],
+     "q": "Che cosa fai nel tempo libero? Me diga dois hobbies e com que frequência você os pratica.",
+     "c": "Planeje seu fim de semana ideal em italiano com três atividades e uma palavra de frequência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il tempo libero",
+      "ex": "Nel tempo libero leggo romanzi."
+     },
+     {
+      "w": "giocare a calcio",
+      "ex": "Il giovedì gioco a calcio con gli amici."
+     },
+     {
+      "w": "fare nuoto",
+      "ex": "Faccio nuoto due volte alla settimana."
+     },
+     {
+      "w": "suonare la chitarra",
+      "ex": "Mio fratello suona la chitarra."
+     },
+     {
+      "w": "andare in bici",
+      "ex": "La domenica andiamo in bici al lago."
+     },
+     {
+      "w": "il fine settimana",
+      "ex": "Che cosa fai il fine settimana?"
+     }
+    ],
+    "gram": "Giocare a + sport o gioco (gioco a tennis, a carte); suonare + strumento (suono il piano); fare + attività (faccio yoga)."
+   }
+  },
+  {
+   "d": 59,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Sapere or conoscere?",
+     "g": "Choose between the two verbs for to know.",
+     "p": [
+      "Sapere for facts and information: So dove abita, Non so che ore sono.",
+      "Sapere + infinitive means to know how to: So nuotare, Sai cucinare? Conoscere for people and places: Conosco Roma.",
+      "Sapere is irregular: so, sai, sa, sappiamo, sapete, sanno. Conoscere is regular."
+     ],
+     "q": "Do you know how to cook an Italian dish, and do you know an Italian city? Use so and conosco.",
+     "c": "Write two sentences with sapere and two with conoscere about yourself."
+    },
+    "de": {
+     "t": "Sapere oder conoscere?",
+     "g": "Du wählst zwischen den beiden Verben für wissen und kennen.",
+     "p": [
+      "Sapere für Fakten und Informationen (wissen): So dove abita, Non so che ore sono.",
+      "Sapere + Infinitiv heißt können: So nuotare, Sai cucinare? Conoscere für Menschen und Orte (kennen): Conosco Roma.",
+      "Sapere ist unregelmäßig: so, sai, sa, sappiamo, sapete, sanno. Conoscere ist regelmäßig."
+     ],
+     "q": "Kannst du ein italienisches Gericht kochen, und kennst du eine italienische Stadt? Verwende so und conosco.",
+     "c": "Schreib zwei Sätze mit sapere und zwei mit conoscere über dich."
+    },
+    "es": {
+     "t": "¿Sapere o conoscere?",
+     "g": "Elige entre los dos verbos para saber y conocer.",
+     "p": [
+      "Sapere para datos e información (saber): So dove abita, Non so che ore sono.",
+      "Sapere + infinitivo es saber hacer: So nuotare, Sai cucinare? Conoscere para personas y lugares: Conosco Roma.",
+      "Sapere es irregular: so, sai, sa, sappiamo, sapete, sanno. Conoscere es regular."
+     ],
+     "q": "¿Sabes cocinar un plato italiano y conoces alguna ciudad italiana? Usa so y conosco.",
+     "c": "Escribe dos frases con sapere y dos con conoscere sobre ti."
+    },
+    "fr": {
+     "t": "Sapere ou conoscere ?",
+     "g": "Choisir entre les deux verbes pour savoir et connaître.",
+     "p": [
+      "Sapere pour les faits et informations (savoir) : So dove abita, Non so che ore sono.",
+      "Sapere + infinitif, c'est savoir faire : So nuotare, Sai cucinare ? Conoscere pour personnes et lieux : Conosco Roma.",
+      "Sapere est irrégulier : so, sai, sa, sappiamo, sapete, sanno. Conoscere est régulier."
+     ],
+     "q": "Sais-tu cuisiner un plat italien, et connais-tu une ville italienne ? Utilise so et conosco.",
+     "c": "Écris deux phrases avec sapere et deux avec conoscere sur toi."
+    },
+    "it": {
+     "t": "Sapere o conoscere?",
+     "g": "Impari a scegliere tra sapere e conoscere.",
+     "p": [
+      "Sapere per fatti e informazioni: So dove abita, Non so che ore sono.",
+      "Sapere + infinito indica una capacità: So nuotare, Sai cucinare? Conoscere per persone e luoghi: Conosco Roma.",
+      "Sapere è irregolare: so, sai, sa, sappiamo, sapete, sanno. Conoscere è regolare."
+     ],
+     "q": "Sai cucinare un piatto italiano? E conosci una città italiana? Usa so e conosco.",
+     "c": "Scrivi due frasi con sapere e due con conoscere su di te."
+    },
+    "pt": {
+     "t": "Sapere ou conoscere?",
+     "g": "Escolher entre os dois verbos para saber e conhecer.",
+     "p": [
+      "Sapere para factos e informações (saber): So dove abita, Non so che ore sono.",
+      "Sapere + infinitivo é saber fazer: So nuotare, Sai cucinare? Conoscere para pessoas e lugares: Conosco Roma.",
+      "Sapere é irregular: so, sai, sa, sappiamo, sapete, sanno. Conoscere é regular."
+     ],
+     "q": "Sabes cozinhar um prato italiano e conheces alguma cidade italiana? Usa so e conosco.",
+     "c": "Escreve duas frases com sapere e duas com conoscere sobre ti."
+    },
+    "pt_BR": {
+     "t": "Sapere ou conoscere?",
+     "g": "Escolher entre os dois verbos para saber e conhecer.",
+     "p": [
+      "Sapere para fatos e informações (saber): So dove abita, Non so che ore sono.",
+      "Sapere + infinitivo é saber fazer: So nuotare, Sai cucinare? Conoscere para pessoas e lugares: Conosco Roma.",
+      "Sapere é irregular: so, sai, sa, sappiamo, sapete, sanno. Conoscere é regular."
+     ],
+     "q": "Você sabe cozinhar um prato italiano e conhece alguma cidade italiana? Use so e conosco.",
+     "c": "Escreva duas frases com sapere e duas com conoscere sobre você."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "sapere",
+      "ex": "Sai a che ora apre il museo?"
+     },
+     {
+      "w": "non lo so",
+      "ex": "Mi dispiace, non lo so."
+     },
+     {
+      "w": "so + infinito",
+      "ex": "So suonare il pianoforte."
+     },
+     {
+      "w": "conoscere",
+      "ex": "Conosci mia sorella Laura?"
+     },
+     {
+      "w": "conosco",
+      "ex": "Conosco bene Venezia."
+     },
+     {
+      "w": "sappiamo",
+      "ex": "Non sappiamo ancora la risposta."
+     }
+    ],
+    "gram": "Sapere: informazioni e capacità (so dov'è, so nuotare). Conoscere: persone e luoghi (conosco Marco, conosco Napoli)."
+   }
+  },
+  {
+   "d": 60,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: daily life in Italian",
+     "g": "Bring together everything from your second month for real everyday situations.",
+     "p": [
+      "Food and shops: un caffè per favore, mi piace, vorrei, il conto, quanto costa?",
+      "Getting around: dov'è?, c'è, a destra, a sinistra, il biglietto, il binario.",
+      "Verbs: andare, venire, fare, stare, dare, volere, potere, dovere, sapere and reflexive routines."
+     ],
+     "q": "Tell me about a typical day for you in Italian: morning, work or study, food and evening.",
+     "c": "Write six sentences about your day using six different irregular verbs from this month."
+    },
+    "de": {
+     "t": "Rückblick: Alltag auf Italienisch",
+     "g": "Du verbindest alles aus deinem zweiten Monat für echte Alltagssituationen.",
+     "p": [
+      "Essen und Läden: un caffè per favore, mi piace, vorrei, il conto, quanto costa?",
+      "Unterwegs: dov'è?, c'è, a destra, a sinistra, il biglietto, il binario.",
+      "Verben: andare, venire, fare, stare, dare, volere, potere, dovere, sapere und reflexive Abläufe."
+     ],
+     "q": "Erzähl mir auf Italienisch von einem typischen Tag: Morgen, Arbeit oder Studium, Essen, Abend.",
+     "c": "Schreib sechs Sätze über deinen Tag mit sechs verschiedenen unregelmäßigen Verben aus diesem Monat."
+    },
+    "es": {
+     "t": "Repaso: la vida diaria en italiano",
+     "g": "Junta todo lo de tu segundo mes para situaciones reales del día a día.",
+     "p": [
+      "Comida y tiendas: un caffè per favore, mi piace, vorrei, il conto, quanto costa?",
+      "Moverse: dov'è?, c'è, a destra, a sinistra, il biglietto, il binario.",
+      "Verbos: andare, venire, fare, stare, dare, volere, potere, dovere, sapere y los reflexivos."
+     ],
+     "q": "Cuéntame en italiano un día típico tuyo: mañana, trabajo o estudio, comida y noche.",
+     "c": "Escribe seis frases sobre tu día con seis verbos irregulares distintos de este mes."
+    },
+    "fr": {
+     "t": "Révision : la vie quotidienne en italien",
+     "g": "Rassembler tout ton deuxième mois pour de vraies situations du quotidien.",
+     "p": [
+      "Repas et commerces : un caffè per favore, mi piace, vorrei, il conto, quanto costa ?",
+      "Se déplacer : dov'è ?, c'è, a destra, a sinistra, il biglietto, il binario.",
+      "Verbes : andare, venire, fare, stare, dare, volere, potere, dovere, sapere et les pronominaux."
+     ],
+     "q": "Raconte-moi en italien une journée typique : matin, travail ou études, repas et soirée.",
+     "c": "Écris six phrases sur ta journée avec six verbes irréguliers différents de ce mois."
+    },
+    "it": {
+     "t": "Ripasso: la vita quotidiana in italiano",
+     "g": "Metti insieme tutto il secondo mese per situazioni reali di ogni giorno.",
+     "p": [
+      "Cibo e negozi: un caffè per favore, mi piace, vorrei, il conto, quanto costa?",
+      "In giro: dov'è?, c'è, a destra, a sinistra, il biglietto, il binario.",
+      "Verbi: andare, venire, fare, stare, dare, volere, potere, dovere, sapere e i riflessivi."
+     ],
+     "q": "Raccontami una tua giornata tipica: mattina, lavoro o studio, pasti e sera.",
+     "c": "Scrivi sei frasi sulla tua giornata con sei verbi irregolari diversi di questo mese."
+    },
+    "pt": {
+     "t": "Revisão: o dia a dia em italiano",
+     "g": "Juntar tudo do teu segundo mês para situações reais do dia a dia.",
+     "p": [
+      "Comida e lojas: un caffè per favore, mi piace, vorrei, il conto, quanto costa?",
+      "Deslocar-se: dov'è?, c'è, a destra, a sinistra, il biglietto, il binario.",
+      "Verbos: andare, venire, fare, stare, dare, volere, potere, dovere, sapere e os reflexos."
+     ],
+     "q": "Conta-me em italiano um dia típico teu: manhã, trabalho ou estudo, refeições e noite.",
+     "c": "Escreve seis frases sobre o teu dia com seis verbos irregulares diferentes deste mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: o dia a dia em italiano",
+     "g": "Juntar tudo do seu segundo mês para situações reais do dia a dia.",
+     "p": [
+      "Comida e lojas: un caffè per favore, mi piace, vorrei, il conto, quanto costa?",
+      "Se locomover: dov'è?, c'è, a destra, a sinistra, il biglietto, il binario.",
+      "Verbos: andare, venire, fare, stare, dare, volere, potere, dovere, sapere e os reflexivos."
+     ],
+     "q": "Me conte em italiano um dia típico seu: manhã, trabalho ou estudo, refeições e noite.",
+     "c": "Escreva seis frases sobre o seu dia com seis verbos irregulares diferentes deste mês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la giornata",
+      "ex": "Com'è la tua giornata tipica?"
+     },
+     {
+      "w": "di solito",
+      "ex": "Di solito mi sveglio alle sette."
+     },
+     {
+      "w": "poi",
+      "ex": "Poi vado al lavoro in autobus."
+     },
+     {
+      "w": "a pranzo",
+      "ex": "A pranzo mangio un primo leggero."
+     },
+     {
+      "w": "la sera",
+      "ex": "La sera faccio una passeggiata."
+     },
+     {
+      "w": "finalmente",
+      "ex": "Finalmente parlo un po' di italiano!"
+     }
+    ],
+    "gram": "Ripasso: andare, venire, fare, stare, volere, potere, dovere, sapere; riflessivi (mi alzo); c'è / ci sono; mi piace."
+   }
+  }
+ ]
+}

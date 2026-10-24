@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Seasons and clothes",
+     "g": "Talk about the seasons and what you wear in each one.",
+     "p": [
+      "The seasons: la primavera, el verano, el otoño, el invierno; use en: en verano hace calor.",
+      "Llevar means to wear: llevo vaqueros; ponerse means to put on: me pongo el abrigo.",
+      "Basic clothes: el abrigo, la chaqueta, la bufanda, la camiseta, los pantalones cortos, las sandalias."
+     ],
+     "q": "What is your favourite season, what is the weather like and what do you wear then?",
+     "c": "Describe what you are wearing today in Spanish and what you would wear in winter."
+    },
+    "de": {
+     "t": "Jahreszeiten und Kleidung",
+     "g": "Du sprichst über die Jahreszeiten und was du darin trägst.",
+     "p": [
+      "Die Jahreszeiten: la primavera, el verano, el otoño, el invierno; mit en: en verano hace calor.",
+      "Llevar heißt tragen: llevo vaqueros; ponerse heißt anziehen: me pongo el abrigo.",
+      "Grundkleidung: el abrigo, la chaqueta, la bufanda, la camiseta, los pantalones cortos, las sandalias."
+     ],
+     "q": "Was ist deine Lieblingsjahreszeit, wie ist dann das Wetter und was trägst du?",
+     "c": "Beschreib auf Spanisch, was du heute trägst und was du im Winter tragen würdest."
+    },
+    "es": {
+     "t": "Las estaciones y la ropa",
+     "g": "Habla de las estaciones del año y de lo que llevas en cada una.",
+     "p": [
+      "Las estaciones: la primavera, el verano, el otoño y el invierno; con en: en verano hace calor.",
+      "Llevar es tener la ropa puesta: llevo vaqueros; ponerse es vestirse con algo: me pongo el abrigo.",
+      "Ojo: en el hemisferio sur las estaciones van al revés; en diciembre es verano en Argentina."
+     ],
+     "q": "¿Cuál es tu estación favorita, qué tiempo hace y qué ropa llevas entonces?",
+     "c": "Describe lo que llevas hoy y lo que te pondrías en un día de invierno."
+    },
+    "fr": {
+     "t": "Saisons et vêtements",
+     "g": "Parler des saisons et de ce que tu portes à chacune.",
+     "p": [
+      "Les saisons : la primavera, el verano, el otoño, el invierno ; avec en : en verano hace calor.",
+      "Llevar veut dire porter : llevo vaqueros ; ponerse veut dire mettre : me pongo el abrigo.",
+      "Vêtements de base : el abrigo, la chaqueta, la bufanda, la camiseta, los pantalones cortos, las sandalias."
+     ],
+     "q": "Quelle est ta saison préférée, quel temps fait-il alors et que portes-tu ?",
+     "c": "Décris en espagnol ce que tu portes aujourd'hui et ce que tu porterais en hiver."
+    },
+    "it": {
+     "t": "Stagioni e vestiti",
+     "g": "Parli delle stagioni e di cosa indossi in ognuna.",
+     "p": [
+      "Le stagioni: la primavera, el verano, el otoño, el invierno; con en: en verano hace calor.",
+      "Llevar vuol dire indossare: llevo vaqueros; ponerse vuol dire mettersi: me pongo el abrigo.",
+      "Vestiti di base: el abrigo, la chaqueta, la bufanda, la camiseta, los pantalones cortos, las sandalias."
+     ],
+     "q": "Qual è la tua stagione preferita, che tempo fa e cosa indossi?",
+     "c": "Descrivi in spagnolo cosa indossi oggi e cosa indosseresti in inverno."
+    },
+    "pt": {
+     "t": "Estações e roupa",
+     "g": "Fala das estações do ano e do que vestes em cada uma.",
+     "p": [
+      "As estações: la primavera, el verano, el otoño, el invierno; com en: en verano hace calor.",
+      "Llevar quer dizer trazer vestido: llevo vaqueros; ponerse quer dizer vestir: me pongo el abrigo.",
+      "Roupa básica: el abrigo, la chaqueta, la bufanda, la camiseta, los pantalones cortos, las sandalias."
+     ],
+     "q": "Qual é a tua estação preferida, que tempo faz e o que vestes?",
+     "c": "Descreve em espanhol o que tens vestido hoje e o que vestirias no inverno."
+    },
+    "pt_BR": {
+     "t": "Estações e roupas",
+     "g": "Fale das estações do ano e do que você usa em cada uma.",
+     "p": [
+      "As estações: la primavera, el verano, el otoño, el invierno; com en: en verano hace calor.",
+      "Llevar quer dizer estar usando: llevo vaqueros; ponerse quer dizer vestir: me pongo el abrigo.",
+      "Roupas básicas: el abrigo, la chaqueta, la bufanda, la camiseta, los pantalones cortos, las sandalias."
+     ],
+     "q": "Qual é sua estação favorita, como é o tempo e que roupa você usa?",
+     "c": "Descreva em espanhol o que você está usando hoje e o que usaria no inverno."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la primavera",
+      "ex": "En primavera hay flores por todas partes."
+     },
+     {
+      "w": "el verano",
+      "ex": "En verano llevo pantalones cortos."
+     },
+     {
+      "w": "el otoño",
+      "ex": "En otoño me pongo una chaqueta."
+     },
+     {
+      "w": "el invierno",
+      "ex": "En invierno llevo abrigo y bufanda."
+     },
+     {
+      "w": "llevar",
+      "ex": "Hoy llevo una camiseta azul."
+     },
+     {
+      "w": "ponerse",
+      "ex": "Me pongo el abrigo porque hace frío."
+     }
+    ],
+    "gram": "En + estación: en verano, en invierno. Llevar = tener puesta la ropa; ponerse = el momento de vestirse: me pongo el abrigo."
+   }
+  },
+  {
+   "d": 52,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Shopping for clothes",
+     "g": "Shop for clothes in Spanish and ask for sizes and fitting rooms.",
+     "p": [
+      "Key items: la camisa, la camiseta, los pantalones, la falda, el vestido, los zapatos, el jersey.",
+      "Ask ¿Puedo probármelo? (Can I try it on?) and ¿Dónde está el probador?",
+      "Talk about fit with quedar: me queda bien, me queda grande, ¿tiene una talla más pequeña?"
+     ],
+     "q": "You like a jacket in a shop in Barcelona. What do you ask the shop assistant?",
+     "c": "Write a mini dialogue in a clothes shop: item, size, try it on and how it fits."
+    },
+    "de": {
+     "t": "Kleidung einkaufen",
+     "g": "Du kaufst auf Spanisch Kleidung und fragst nach Größe und Umkleide.",
+     "p": [
+      "Wichtige Teile: la camisa, la camiseta, los pantalones, la falda, el vestido, los zapatos, el jersey.",
+      "Frag ¿Puedo probármelo? (Kann ich es anprobieren?) und ¿Dónde está el probador?",
+      "Passform mit quedar: me queda bien, me queda grande, ¿tiene una talla más pequeña?"
+     ],
+     "q": "Dir gefällt eine Jacke in einem Laden in Barcelona. Was fragst du die Verkäuferin?",
+     "c": "Schreib einen Mini-Dialog im Kleidergeschäft: Teil, Größe, Anprobe und Passform."
+    },
+    "es": {
+     "t": "Comprar ropa",
+     "g": "Compra ropa con soltura: tallas, probador y cómo te queda.",
+     "p": [
+      "Prendas clave: la camisa, la camiseta, los pantalones, la falda, el vestido, los zapatos, el jersey.",
+      "Pregunta ¿Puedo probármelo? y ¿Dónde está el probador? Hay variantes: suéter, pulóver, chompa.",
+      "Para la talla se usa quedar: me queda bien, me queda grande, ¿tiene una talla más pequeña?"
+     ],
+     "q": "¿Disfrutas comprando ropa o prefieres hacerlo rápido? ¿Dónde sueles comprar?",
+     "c": "Escribe un minidiálogo en una tienda de ropa: prenda, talla, probador y cómo te queda."
+    },
+    "fr": {
+     "t": "Acheter des vêtements",
+     "g": "Acheter des vêtements en espagnol : taille et cabine d'essayage.",
+     "p": [
+      "Pièces clés : la camisa, la camiseta, los pantalones, la falda, el vestido, los zapatos, el jersey.",
+      "Demande ¿Puedo probármelo? (Je peux l'essayer ?) et ¿Dónde está el probador?",
+      "Pour dire si ça va, quedar : me queda bien, me queda grande, ¿tiene una talla más pequeña?"
+     ],
+     "q": "Une veste te plaît dans une boutique à Barcelone. Que demandes-tu au vendeur ?",
+     "c": "Écris un mini-dialogue dans une boutique : vêtement, taille, essayage et résultat."
+    },
+    "it": {
+     "t": "Comprare vestiti",
+     "g": "Compri vestiti in spagnolo e chiedi taglia e camerino.",
+     "p": [
+      "Capi chiave: la camisa, la camiseta, los pantalones, la falda, el vestido, los zapatos, el jersey.",
+      "Chiedi ¿Puedo probármelo? (Posso provarlo?) e ¿Dónde está el probador?",
+      "Per la vestibilità usi quedar: me queda bien, me queda grande, ¿tiene una talla más pequeña?"
+     ],
+     "q": "Ti piace una giacca in un negozio a Barcellona. Cosa chiedi al commesso?",
+     "c": "Scrivi un mini dialogo in un negozio: capo, taglia, prova e come ti sta."
+    },
+    "pt": {
+     "t": "Comprar roupa",
+     "g": "Compra roupa em espanhol e pede o tamanho e o provador.",
+     "p": [
+      "Peças-chave: la camisa, la camiseta, los pantalones, la falda, el vestido, los zapatos, el jersey.",
+      "Pergunta ¿Puedo probármelo? (Posso experimentar?) e ¿Dónde está el probador?",
+      "Para o caimento usa quedar: me queda bien, me queda grande, ¿tiene una talla más pequeña?"
+     ],
+     "q": "Gostas de um casaco numa loja em Barcelona. O que perguntas ao empregado?",
+     "c": "Escreve um minidiálogo numa loja de roupa: peça, tamanho, provador e como fica."
+    },
+    "pt_BR": {
+     "t": "Comprando roupas",
+     "g": "Compre roupas em espanhol e peça o tamanho e o provador.",
+     "p": [
+      "Peças-chave: la camisa, la camiseta, los pantalones, la falda, el vestido, los zapatos, el jersey.",
+      "Pergunte ¿Puedo probármelo? (Posso provar?) e ¿Dónde está el probador?",
+      "Para o caimento use quedar: me queda bien, me queda grande, ¿tiene una talla más pequeña?"
+     ],
+     "q": "Você gostou de uma jaqueta numa loja em Barcelona. O que pergunta ao vendedor?",
+     "c": "Escreva um minidiálogo numa loja de roupas: peça, tamanho, provador e como ficou."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la camisa",
+      "ex": "Busco una camisa blanca."
+     },
+     {
+      "w": "los pantalones",
+      "ex": "Estos pantalones me quedan grandes."
+     },
+     {
+      "w": "los zapatos",
+      "ex": "¿Tienen estos zapatos en negro?"
+     },
+     {
+      "w": "¿Puedo probármelo?",
+      "ex": "Me gusta este jersey. ¿Puedo probármelo?"
+     },
+     {
+      "w": "la talla",
+      "ex": "¿Qué talla usa? Uso la M."
+     },
+     {
+      "w": "el probador",
+      "ex": "El probador está al fondo."
+     }
+    ],
+    "gram": "En la tienda: ¿qué talla usa?, ¿tiene otra talla?, ¿puedo probármelo / probármela? Me queda bien, grande o pequeño."
+   }
+  },
+  {
+   "d": 53,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "How much is it? Paying",
+     "g": "Ask prices and pay in a shop in Spanish.",
+     "p": [
+      "¿Cuánto cuesta? for one item, ¿Cuánto cuestan? for several, ¿Cuánto es? for the total.",
+      "Pay con tarjeta (by card) or en efectivo (in cash); ask ¿Puedo pagar con tarjeta?",
+      "At the end: aquí tiene (here you are), el cambio (change), el recibo or el tique (receipt)."
+     ],
+     "q": "You are buying two T-shirts at a market. How do you ask the price and pay?",
+     "c": "Role-play a purchase aloud: ask the price, choose how to pay and ask for the receipt."
+    },
+    "de": {
+     "t": "Was kostet das? Bezahlen",
+     "g": "Du fragst nach Preisen und bezahlst auf Spanisch.",
+     "p": [
+      "¿Cuánto cuesta? für ein Teil, ¿Cuánto cuestan? für mehrere, ¿Cuánto es? für die Summe.",
+      "Bezahl con tarjeta (mit Karte) oder en efectivo (bar); frag ¿Puedo pagar con tarjeta?",
+      "Am Ende: aquí tiene (bitte schön), el cambio (Wechselgeld), el recibo oder el tique (Beleg)."
+     ],
+     "q": "Du kaufst zwei T-Shirts auf einem Markt. Wie fragst du nach dem Preis und bezahlst?",
+     "c": "Spiel laut einen Einkauf durch: Preis fragen, Zahlungsart wählen, Beleg verlangen."
+    },
+    "es": {
+     "t": "¿Cuánto cuesta? Pagar",
+     "g": "Pregunta precios y paga con naturalidad en una tienda.",
+     "p": [
+      "¿Cuánto cuesta? para una cosa, ¿Cuánto cuestan? para varias y ¿Cuánto es? para el total.",
+      "Se paga con tarjeta o en efectivo; pregunta ¿Puedo pagar con tarjeta? si no lo ves claro.",
+      "Al final: aquí tiene, el cambio (o el vuelto en muchos países) y el recibo o el tique."
+     ],
+     "q": "¿Prefieres pagar con tarjeta o en efectivo? ¿Por qué?",
+     "c": "Representa en voz alta una compra: pregunta el precio, elige cómo pagar y pide el recibo."
+    },
+    "fr": {
+     "t": "Combien ça coûte ? Payer",
+     "g": "Demander les prix et payer dans un magasin en espagnol.",
+     "p": [
+      "¿Cuánto cuesta? pour un article, ¿Cuánto cuestan? pour plusieurs, ¿Cuánto es? pour le total.",
+      "On paie con tarjeta (par carte) ou en efectivo (en espèces) ; demande ¿Puedo pagar con tarjeta?",
+      "À la fin : aquí tiene (voilà), el cambio (la monnaie), el recibo ou el tique (le ticket)."
+     ],
+     "q": "Tu achètes deux t-shirts au marché. Comment demandes-tu le prix et paies-tu ?",
+     "c": "Joue un achat à voix haute : demande le prix, choisis le paiement et demande le ticket."
+    },
+    "it": {
+     "t": "Quanto costa? Pagare",
+     "g": "Chiedi i prezzi e paghi in un negozio in spagnolo.",
+     "p": [
+      "¿Cuánto cuesta? per un articolo, ¿Cuánto cuestan? per più articoli, ¿Cuánto es? per il totale.",
+      "Si paga con tarjeta (con carta) o en efectivo (in contanti); chiedi ¿Puedo pagar con tarjeta?",
+      "Alla fine: aquí tiene (ecco a lei), el cambio (il resto), el recibo o el tique (lo scontrino)."
+     ],
+     "q": "Compri due magliette al mercato. Come chiedi il prezzo e paghi?",
+     "c": "Recita ad alta voce un acquisto: chiedi il prezzo, scegli come pagare e chiedi lo scontrino."
+    },
+    "pt": {
+     "t": "Quanto custa? Pagar",
+     "g": "Pergunta preços e paga numa loja em espanhol.",
+     "p": [
+      "¿Cuánto cuesta? para uma coisa, ¿Cuánto cuestan? para várias, ¿Cuánto es? para o total.",
+      "Paga-se con tarjeta (com cartão) ou en efectivo (em dinheiro); pergunta ¿Puedo pagar con tarjeta?",
+      "No fim: aquí tiene (aqui tem), el cambio (o troco), el recibo ou el tique (o talão)."
+     ],
+     "q": "Estás a comprar duas t-shirts num mercado. Como perguntas o preço e pagas?",
+     "c": "Representa uma compra em voz alta: pergunta o preço, escolhe como pagar e pede o talão."
+    },
+    "pt_BR": {
+     "t": "Quanto custa? Pagando",
+     "g": "Pergunte preços e pague numa loja em espanhol.",
+     "p": [
+      "¿Cuánto cuesta? para uma coisa, ¿Cuánto cuestan? para várias, ¿Cuánto es? para o total.",
+      "Paga-se con tarjeta (no cartão) ou en efectivo (em dinheiro); pergunte ¿Puedo pagar con tarjeta?",
+      "No fim: aquí tiene (aqui está), el cambio (o troco), el recibo ou el tique (o comprovante)."
+     ],
+     "q": "Você está comprando duas camisetas numa feira. Como pergunta o preço e paga?",
+     "c": "Encene uma compra em voz alta: pergunte o preço, escolha como pagar e peça o comprovante."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Cuánto cuesta?",
+      "ex": "¿Cuánto cuesta esta camisa?"
+     },
+     {
+      "w": "¿Cuánto es?",
+      "ex": "¿Cuánto es todo?"
+     },
+     {
+      "w": "pagar con tarjeta",
+      "ex": "¿Puedo pagar con tarjeta?"
+     },
+     {
+      "w": "en efectivo",
+      "ex": "Pago en efectivo."
+     },
+     {
+      "w": "el cambio",
+      "ex": "Aquí tiene el cambio."
+     },
+     {
+      "w": "el recibo",
+      "ex": "¿Me da el recibo, por favor?"
+     }
+    ],
+    "gram": "¿Cuánto cuesta? (una cosa), ¿cuánto cuestan? (varias), ¿cuánto es? (el total). Pagar con tarjeta, pagar en efectivo."
+   }
+  },
+  {
+   "d": 54,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hobbies and free time",
+     "g": "Talk about what you do in your free time and how often.",
+     "p": [
+      "Ask ¿Qué haces en tu tiempo libre? and answer with verbs: leo, cocino, bailo, paseo, veo series.",
+      "Combine with gustar: me gusta leer, me encanta cocinar.",
+      "Say how often: siempre, a menudo, a veces, casi nunca, nunca."
+     ],
+     "q": "¿Qué haces en tu tiempo libre? Tell me about two hobbies and how often you do them.",
+     "c": "Write five sentences about your hobbies in Spanish, each with a frequency word."
+    },
+    "de": {
+     "t": "Hobbys und Freizeit",
+     "g": "Du sprichst darüber, was du in deiner Freizeit machst und wie oft.",
+     "p": [
+      "Frag ¿Qué haces en tu tiempo libre? und antworte mit Verben: leo, cocino, bailo, paseo, veo series.",
+      "Kombiniere mit gustar: me gusta leer, me encanta cocinar.",
+      "Sag, wie oft: siempre, a menudo, a veces, casi nunca, nunca."
+     ],
+     "q": "¿Qué haces en tu tiempo libre? Erzähl mir von zwei Hobbys und wie oft du sie machst.",
+     "c": "Schreib fünf Sätze über deine Hobbys auf Spanisch, jeden mit einem Häufigkeitswort."
+    },
+    "es": {
+     "t": "Aficiones y tiempo libre",
+     "g": "Habla de lo que haces en tu tiempo libre y con qué frecuencia.",
+     "p": [
+      "Se pregunta ¿Qué haces en tu tiempo libre? y se responde: leo, cocino, bailo, paseo, veo series.",
+      "Combínalo con gustar y encantar: me gusta leer, me encanta cocinar.",
+      "Indica la frecuencia: siempre, a menudo, a veces, casi nunca, nunca."
+     ],
+     "q": "¿Qué afición te gustaría empezar y qué te lo impide de momento?",
+     "c": "Escribe cinco frases sobre tus aficiones, cada una con un marcador de frecuencia."
+    },
+    "fr": {
+     "t": "Loisirs et temps libre",
+     "g": "Parler de ce que tu fais pendant ton temps libre et à quelle fréquence.",
+     "p": [
+      "Demande ¿Qué haces en tu tiempo libre? et réponds avec des verbes : leo, cocino, bailo, paseo, veo series.",
+      "Combine avec gustar : me gusta leer, me encanta cocinar.",
+      "Dis la fréquence : siempre, a menudo, a veces, casi nunca, nunca."
+     ],
+     "q": "¿Qué haces en tu tiempo libre? Parle-moi de deux loisirs et de leur fréquence.",
+     "c": "Écris cinq phrases sur tes loisirs en espagnol, chacune avec un mot de fréquence."
+    },
+    "it": {
+     "t": "Hobby e tempo libero",
+     "g": "Parli di cosa fai nel tempo libero e con che frequenza.",
+     "p": [
+      "Chiedi ¿Qué haces en tu tiempo libre? e rispondi con verbi: leo, cocino, bailo, paseo, veo series.",
+      "Combina con gustar: me gusta leer, me encanta cocinar.",
+      "Di' la frequenza: siempre, a menudo, a veces, casi nunca, nunca."
+     ],
+     "q": "¿Qué haces en tu tiempo libre? Parlami di due hobby e di quanto spesso li fai.",
+     "c": "Scrivi cinque frasi sui tuoi hobby in spagnolo, ognuna con una parola di frequenza."
+    },
+    "pt": {
+     "t": "Passatempos e tempo livre",
+     "g": "Fala do que fazes no teu tempo livre e com que frequência.",
+     "p": [
+      "Pergunta ¿Qué haces en tu tiempo libre? e responde com verbos: leo, cocino, bailo, paseo, veo series.",
+      "Combina com gustar: me gusta leer, me encanta cocinar.",
+      "Diz a frequência: siempre, a menudo, a veces, casi nunca, nunca."
+     ],
+     "q": "¿Qué haces en tu tiempo libre? Fala-me de dois passatempos e da frequência.",
+     "c": "Escreve cinco frases sobre os teus passatempos em espanhol, cada uma com uma palavra de frequência."
+    },
+    "pt_BR": {
+     "t": "Hobbies e tempo livre",
+     "g": "Fale do que você faz no tempo livre e com que frequência.",
+     "p": [
+      "Pergunte ¿Qué haces en tu tiempo libre? e responda com verbos: leo, cocino, bailo, paseo, veo series.",
+      "Combine com gustar: me gusta leer, me encanta cocinar.",
+      "Diga a frequência: siempre, a menudo, a veces, casi nunca, nunca."
+     ],
+     "q": "¿Qué haces en tu tiempo libre? Me conte sobre dois hobbies e com que frequência você os pratica.",
+     "c": "Escreva cinco frases sobre seus hobbies em espanhol, cada uma com uma palavra de frequência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "leer",
+      "ex": "Me encanta leer novelas."
+     },
+     {
+      "w": "cocinar",
+      "ex": "Los domingos cocino para mi familia."
+     },
+     {
+      "w": "bailar",
+      "ex": "Bailamos salsa los viernes."
+     },
+     {
+      "w": "pasear",
+      "ex": "Me gusta pasear por el parque."
+     },
+     {
+      "w": "ver series",
+      "ex": "Por la noche veo series."
+     },
+     {
+      "w": "el tiempo libre",
+      "ex": "¿Qué haces en tu tiempo libre?"
+     }
+    ],
+    "gram": "Para hablar de aficiones: me gusta + infinitivo, en mi tiempo libre + presente. Frecuencia: siempre, a menudo, a veces, nunca."
+   }
+  },
+  {
+   "d": 55,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Sports and games",
+     "g": "Use the right verb for each sport and activity.",
+     "p": [
+      "Jugar a for games and ball sports: juego al fútbol, jugamos a las cartas (a + el = al).",
+      "Hacer for many activities: hago yoga, hago deporte, hago senderismo.",
+      "Some have their own verb: nadar, correr, esquiar; and montar en bici (to ride a bike)."
+     ],
+     "q": "Which sport or game do you enjoy, and do you prefer playing or watching?",
+     "c": "Name five sports or games in Spanish with the right verb: jugar, hacer or montar."
+    },
+    "de": {
+     "t": "Sport und Spiele",
+     "g": "Du benutzt für jede Sportart und Aktivität das richtige Verb.",
+     "p": [
+      "Jugar a für Spiele und Ballsport: juego al fútbol, jugamos a las cartas (a + el = al).",
+      "Hacer für viele Aktivitäten: hago yoga, hago deporte, hago senderismo.",
+      "Manche haben ein eigenes Verb: nadar, correr, esquiar; und montar en bici (Rad fahren)."
+     ],
+     "q": "Welchen Sport oder welches Spiel magst du, und spielst du lieber oder schaust du zu?",
+     "c": "Nenne fünf Sportarten oder Spiele auf Spanisch mit dem richtigen Verb: jugar, hacer oder montar."
+    },
+    "es": {
+     "t": "Deportes y juegos",
+     "g": "Usa el verbo adecuado para cada deporte y actividad.",
+     "p": [
+      "Jugar a para juegos y deportes de pelota: juego al fútbol, jugamos a las cartas.",
+      "Hacer para muchas actividades: hago yoga, hago deporte, hago senderismo.",
+      "Algunos tienen verbo propio: nadar, correr, esquiar; y montar en bici (o andar en bici en América)."
+     ],
+     "q": "¿Qué deporte o juego te divierte más? ¿Prefieres practicarlo o verlo?",
+     "c": "Escribe cinco deportes o juegos con su verbo correcto: jugar, hacer o montar."
+    },
+    "fr": {
+     "t": "Sports et jeux",
+     "g": "Utiliser le bon verbe pour chaque sport et activité.",
+     "p": [
+      "Jugar a pour les jeux et sports de ballon : juego al fútbol, jugamos a las cartas (a + el = al).",
+      "Hacer pour beaucoup d'activités : hago yoga, hago deporte, hago senderismo, comme faire du yoga.",
+      "Certains ont leur verbe : nadar, correr, esquiar ; et montar en bici (faire du vélo)."
+     ],
+     "q": "Quel sport ou jeu aimes-tu, et préfères-tu jouer ou regarder ?",
+     "c": "Nomme cinq sports ou jeux en espagnol avec le bon verbe : jugar, hacer ou montar."
+    },
+    "it": {
+     "t": "Sport e giochi",
+     "g": "Usi il verbo giusto per ogni sport e attività.",
+     "p": [
+      "Jugar a per giochi e sport con la palla: juego al fútbol, jugamos a las cartas (a + el = al).",
+      "Hacer per molte attività: hago yoga, hago deporte, hago senderismo, come fare yoga.",
+      "Alcuni hanno un verbo proprio: nadar, correr, esquiar; e montar en bici (andare in bici)."
+     ],
+     "q": "Quale sport o gioco ti piace, e preferisci giocare o guardare?",
+     "c": "Nomina cinque sport o giochi in spagnolo con il verbo giusto: jugar, hacer o montar."
+    },
+    "pt": {
+     "t": "Desportos e jogos",
+     "g": "Usa o verbo certo para cada desporto e atividade.",
+     "p": [
+      "Jugar a para jogos e desportos com bola: juego al fútbol, jugamos a las cartas (a + el = al).",
+      "Hacer para muitas atividades: hago yoga, hago deporte, hago senderismo, como fazer ioga.",
+      "Alguns têm verbo próprio: nadar, correr, esquiar; e montar en bici (andar de bicicleta)."
+     ],
+     "q": "Que desporto ou jogo te diverte mais, e preferes jogar ou ver?",
+     "c": "Diz cinco desportos ou jogos em espanhol com o verbo certo: jugar, hacer ou montar."
+    },
+    "pt_BR": {
+     "t": "Esportes e jogos",
+     "g": "Use o verbo certo para cada esporte e atividade.",
+     "p": [
+      "Jugar a para jogos e esportes com bola: juego al fútbol, jugamos a las cartas (a + el = al).",
+      "Hacer para muitas atividades: hago yoga, hago deporte, hago senderismo, como fazer ioga.",
+      "Alguns têm verbo próprio: nadar, correr, esquiar; e montar en bici (andar de bicicleta)."
+     ],
+     "q": "Que esporte ou jogo você mais curte, e prefere jogar ou assistir?",
+     "c": "Diga cinco esportes ou jogos em espanhol com o verbo certo: jugar, hacer ou montar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "jugar al tenis",
+      "ex": "Juego al tenis con mi hermano."
+     },
+     {
+      "w": "jugar al fútbol",
+      "ex": "Los niños juegan al fútbol en el patio."
+     },
+     {
+      "w": "hacer yoga",
+      "ex": "Hago yoga por las mañanas."
+     },
+     {
+      "w": "hacer deporte",
+      "ex": "Hago deporte tres veces por semana."
+     },
+     {
+      "w": "montar en bici",
+      "ex": "Me encanta montar en bici por el campo."
+     },
+     {
+      "w": "nadar",
+      "ex": "Nado en la piscina los martes."
+     }
+    ],
+    "gram": "Jugar a + juegos y deportes de equipo (juego al fútbol); hacer + actividades (hago yoga, hago senderismo); montar en bici / a caballo."
+   }
+  },
+  {
+   "d": 56,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Estar + gerund: right now",
+     "g": "Describe actions happening at this moment with estar + gerund.",
+     "p": [
+      "Form: estar + gerund: estoy hablando, estás comiendo, está escribiendo.",
+      "Gerunds: -ar verbs take -ando (hablando), -er and -ir verbs take -iendo (comiendo, viviendo).",
+      "Watch a few irregular ones: leer becomes leyendo, dormir becomes durmiendo, pedir becomes pidiendo."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo? And what are the people around you doing?",
+     "c": "Three times today, stop and say in Spanish what you are doing at that moment."
+    },
+    "de": {
+     "t": "Estar + Gerundium: gerade jetzt",
+     "g": "Du beschreibst mit estar + Gerundium, was gerade passiert.",
+     "p": [
+      "Bildung: estar + Gerundium: estoy hablando, estás comiendo, está escribiendo.",
+      "Gerundium: -ar-Verben bekommen -ando (hablando), -er und -ir bekommen -iendo (comiendo, viviendo).",
+      "Achte auf Unregelmäßige: leer wird leyendo, dormir wird durmiendo, pedir wird pidiendo."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo? Und was machen die Menschen um dich herum?",
+     "c": "Halte heute dreimal inne und sag auf Spanisch, was du gerade tust."
+    },
+    "es": {
+     "t": "Estar + gerundio: ahora mismo",
+     "g": "Describe acciones que ocurren en este momento con estar + gerundio.",
+     "p": [
+      "Estructura: estar + gerundio: estoy hablando, estás comiendo, está escribiendo.",
+      "El gerundio se forma con -ando en -ar (hablando) y con -iendo en -er e -ir (comiendo, viviendo).",
+      "Algunos irregulares: leyendo, durmiendo, pidiendo, oyendo."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo y qué está haciendo la gente a tu alrededor?",
+     "c": "Tres veces hoy, detente y di qué estás haciendo en ese momento."
+    },
+    "fr": {
+     "t": "Estar + gérondif : en ce moment",
+     "g": "Décrire une action en cours avec estar + gérondif.",
+     "p": [
+      "Forme : estar + gérondif : estoy hablando (je suis en train de parler), estás comiendo, está escribiendo.",
+      "Le gérondif : -ando pour les verbes en -ar (hablando), -iendo pour -er et -ir (comiendo, viviendo).",
+      "Quelques irréguliers : leer donne leyendo, dormir donne durmiendo, pedir donne pidiendo."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo? Et que font les gens autour de toi ?",
+     "c": "Trois fois aujourd'hui, arrête-toi et dis en espagnol ce que tu es en train de faire."
+    },
+    "it": {
+     "t": "Estar + gerundio: proprio ora",
+     "g": "Descrivi azioni in corso con estar + gerundio, come stare + gerundio.",
+     "p": [
+      "Forma: estar + gerundio: estoy hablando (sto parlando), estás comiendo, está escribiendo.",
+      "Il gerundio: -ando per i verbi in -ar (hablando), -iendo per -er e -ir (comiendo, viviendo).",
+      "Qualche irregolare: leer diventa leyendo, dormir diventa durmiendo, pedir diventa pidiendo."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo? E cosa fanno le persone intorno a te?",
+     "c": "Tre volte oggi, fermati e di' in spagnolo cosa stai facendo in quel momento."
+    },
+    "pt": {
+     "t": "Estar + gerúndio: agora mesmo",
+     "g": "Descreve ações em curso com estar + gerúndio.",
+     "p": [
+      "Forma: estar + gerúndio: estoy hablando (estou a falar), estás comiendo, está escribiendo.",
+      "O gerúndio: -ando nos verbos em -ar (hablando), -iendo em -er e -ir (comiendo, viviendo).",
+      "Alguns irregulares: leer dá leyendo, dormir dá durmiendo, pedir dá pidiendo."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo? E o que estão a fazer as pessoas à tua volta?",
+     "c": "Três vezes hoje, para e diz em espanhol o que estás a fazer nesse momento."
+    },
+    "pt_BR": {
+     "t": "Estar + gerúndio: agora mesmo",
+     "g": "Descreva ações em andamento com estar + gerúndio.",
+     "p": [
+      "Forma: estar + gerúndio: estoy hablando (estou falando), estás comiendo, está escribiendo.",
+      "O gerúndio: -ando nos verbos em -ar (hablando), -iendo em -er e -ir (comiendo, viviendo); atenção ao i.",
+      "Alguns irregulares: leer vira leyendo, dormir vira durmiendo, pedir vira pidiendo."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo? E o que as pessoas ao seu redor estão fazendo?",
+     "c": "Três vezes hoje, pare e diga em espanhol o que você está fazendo naquele momento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estoy comiendo",
+      "ex": "Ahora no puedo, estoy comiendo."
+     },
+     {
+      "w": "está lloviendo",
+      "ex": "Coge el paraguas, está lloviendo."
+     },
+     {
+      "w": "estamos trabajando",
+      "ex": "Estamos trabajando en un proyecto nuevo."
+     },
+     {
+      "w": "¿Qué estás haciendo?",
+      "ex": "¿Qué estás haciendo? Estoy leyendo."
+     },
+     {
+      "w": "escribiendo",
+      "ex": "Mi hermana está escribiendo un correo."
+     },
+     {
+      "w": "ahora mismo",
+      "ex": "Ahora mismo estoy en el tren."
+     }
+    ],
+    "gram": "Estar + gerundio para acciones en curso: -ar > -ando (hablando), -er/-ir > -iendo (comiendo, viviendo). Irregulares: leyendo, durmiendo."
+   }
+  },
+  {
+   "d": 57,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Demonstratives: este, ese, aquel",
+     "g": "Point at things at three distances with Spanish demonstratives.",
+     "p": [
+      "Este / esta for things near me (aquí): este libro, esta mesa.",
+      "Ese / esa for things near you (ahí): esa taza; aquel / aquella for things far from both (allí): aquella montaña.",
+      "They agree in gender and number: estos, estas, esos, esas, aquellos, aquellas."
+     ],
+     "q": "Look around: name one thing near you, one a bit further and one far away with este, ese and aquel.",
+     "c": "In a shop or at home, point at three objects and name them aloud with este, ese and aquel."
+    },
+    "de": {
+     "t": "Demonstrativa: este, ese, aquel",
+     "g": "Du zeigst mit spanischen Demonstrativa auf Dinge in drei Entfernungen.",
+     "p": [
+      "Este / esta für Dinge bei mir (aquí): este libro, esta mesa.",
+      "Ese / esa für Dinge bei dir (ahí): esa taza; aquel / aquella für Dinge weit weg (allí): aquella montaña.",
+      "Sie passen sich an: estos, estas, esos, esas, aquellos, aquellas."
+     ],
+     "q": "Schau dich um: Nenne etwas Nahes, etwas weiter Entferntes und etwas Fernes mit este, ese und aquel.",
+     "c": "Zeig im Laden oder zu Hause auf drei Dinge und benenne sie laut mit este, ese und aquel."
+    },
+    "es": {
+     "t": "Demostrativos: este, ese, aquel",
+     "g": "Señala cosas a tres distancias con los demostrativos.",
+     "p": [
+      "Este, esta: cerca de quien habla (aquí): este libro, esta mesa.",
+      "Ese, esa: cerca de quien escucha (ahí): esa taza; aquel, aquella: lejos de los dos (allí): aquella montaña.",
+      "Concuerdan en género y número: estos, estas, esos, esas, aquellos, aquellas."
+     ],
+     "q": "Mira a tu alrededor: nombra algo cercano, algo a media distancia y algo lejano con este, ese y aquel.",
+     "c": "En una tienda o en casa, señala tres objetos y nómbralos en voz alta con este, ese y aquel."
+    },
+    "fr": {
+     "t": "Les démonstratifs : este, ese, aquel",
+     "g": "Désigner des choses à trois distances avec les démonstratifs.",
+     "p": [
+      "Este / esta pour ce qui est près de moi (aquí) : este libro, esta mesa.",
+      "Ese / esa pour ce qui est près de toi (ahí) : esa taza ; aquel / aquella pour ce qui est loin (allí) : aquella montaña.",
+      "Ils s'accordent : estos, estas, esos, esas, aquellos, aquellas."
+     ],
+     "q": "Regarde autour de toi : nomme une chose proche, une un peu plus loin et une lointaine avec este, ese et aquel.",
+     "c": "Au magasin ou chez toi, montre trois objets et nomme-les à voix haute avec este, ese et aquel."
+    },
+    "it": {
+     "t": "Dimostrativi: este, ese, aquel",
+     "g": "Indichi cose a tre distanze con i dimostrativi spagnoli.",
+     "p": [
+      "Este / esta per ciò che è vicino a me (aquí): este libro, esta mesa.",
+      "Ese / esa per ciò che è vicino a te (ahí): esa taza; aquel / aquella per ciò che è lontano (allí): aquella montaña.",
+      "Concordano: estos, estas, esos, esas, aquellos, aquellas."
+     ],
+     "q": "Guardati intorno: nomina una cosa vicina, una più lontana e una lontanissima con este, ese e aquel.",
+     "c": "In un negozio o a casa, indica tre oggetti e nominali ad alta voce con este, ese e aquel."
+    },
+    "pt": {
+     "t": "Demonstrativos: este, ese, aquel",
+     "g": "Aponta coisas a três distâncias com os demonstrativos.",
+     "p": [
+      "Este / esta para o que está perto de mim (aquí): este libro, esta mesa.",
+      "Ese / esa (com um só s) para o que está perto de ti (ahí): esa taza; aquel / aquella para o que está longe: aquella montaña.",
+      "Concordam: estos, estas, esos, esas, aquellos, aquellas. Funciona como este, esse e aquele."
+     ],
+     "q": "Olha à tua volta: nomeia uma coisa perto, outra mais longe e outra distante com este, ese e aquel.",
+     "c": "Numa loja ou em casa, aponta três objetos e nomeia-os em voz alta com este, ese e aquel."
+    },
+    "pt_BR": {
+     "t": "Demonstrativos: este, ese, aquel",
+     "g": "Aponte coisas a três distâncias com os demonstrativos.",
+     "p": [
+      "Este / esta para o que está perto de mim (aquí): este libro, esta mesa.",
+      "Ese / esa (com um s só) para o que está perto de você (ahí): esa taza; aquel / aquella para o que está longe: aquella montaña.",
+      "Concordam: estos, estas, esos, esas, aquellos, aquellas. Em espanhol a diferença entre este e ese é bem respeitada."
+     ],
+     "q": "Olhe ao redor: nomeie algo perto, algo mais longe e algo distante com este, ese e aquel.",
+     "c": "Numa loja ou em casa, aponte três objetos e diga em voz alta com este, ese e aquel."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "este, esta",
+      "ex": "Este libro es muy interesante."
+     },
+     {
+      "w": "estos, estas",
+      "ex": "Estas galletas están buenísimas."
+     },
+     {
+      "w": "ese, esa",
+      "ex": "¿Me das esa taza, por favor?"
+     },
+     {
+      "w": "esos, esas",
+      "ex": "Esos zapatos son de mi hermano."
+     },
+     {
+      "w": "aquel, aquella",
+      "ex": "Aquella montaña es altísima."
+     },
+     {
+      "w": "aquellos, aquellas",
+      "ex": "¿Ves aquellas casas blancas?"
+     }
+    ],
+    "gram": "Este (aquí, cerca de mí), ese (ahí, cerca de ti), aquel (allí, lejos de los dos). Concuerdan: esta mesa, esos libros."
+   }
+  },
+  {
+   "d": 58,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Direct object pronouns: lo, la",
+     "g": "Replace nouns with lo, la, los, las to avoid repeating them.",
+     "p": [
+      "Lo (him, it m.), la (her, it f.), los and las for plurals: ¿Tienes el libro? Sí, lo tengo.",
+      "The pronoun goes before the conjugated verb: la veo, no los compro.",
+      "With an infinitive it can also attach to the end: voy a comprarlo = lo voy a comprar."
+     ],
+     "q": "¿Tienes tu móvil cerca? ¿Usas mucho tus gafas? Answer with lo, la, los or las.",
+     "c": "Write four question-and-answer pairs where the answer uses lo, la, los or las."
+    },
+    "de": {
+     "t": "Direkte Objektpronomen: lo, la",
+     "g": "Du ersetzt Nomen durch lo, la, los, las, um Wiederholungen zu vermeiden.",
+     "p": [
+      "Lo (ihn, es), la (sie, f.), los und las im Plural: ¿Tienes el libro? Sí, lo tengo.",
+      "Das Pronomen steht vor dem konjugierten Verb: la veo, no los compro.",
+      "Beim Infinitiv kann es auch hinten anhängen: voy a comprarlo = lo voy a comprar."
+     ],
+     "q": "¿Tienes tu móvil cerca? ¿Usas mucho tus gafas? Antworte mit lo, la, los oder las.",
+     "c": "Schreib vier Frage-Antwort-Paare, in denen die Antwort lo, la, los oder las nutzt."
+    },
+    "es": {
+     "t": "Pronombres de objeto directo",
+     "g": "Sustituye sustantivos por lo, la, los, las para no repetir.",
+     "p": [
+      "Lo, la, los, las sustituyen a personas o cosas: ¿Tienes el libro? Sí, lo tengo.",
+      "El pronombre va antes del verbo conjugado: la veo, no los compro.",
+      "Con infinitivo también puede ir detrás y unido: voy a comprarlo = lo voy a comprar."
+     ],
+     "q": "¿Dónde compras la fruta y el pan? Responde sin repetir los nombres, con pronombres.",
+     "c": "Escribe cuatro parejas de pregunta y respuesta en las que la respuesta use lo, la, los o las."
+    },
+    "fr": {
+     "t": "Pronoms COD : lo, la",
+     "g": "Remplacer les noms par lo, la, los, las pour éviter les répétitions.",
+     "p": [
+      "Lo (le), la (la), los et las au pluriel : ¿Tienes el libro? Sí, lo tengo.",
+      "Le pronom se place avant le verbe conjugué : la veo, no los compro.",
+      "Avec un infinitif, il peut aussi se coller à la fin : voy a comprarlo = lo voy a comprar."
+     ],
+     "q": "¿Tienes tu móvil cerca? ¿Usas mucho tus gafas? Réponds avec lo, la, los ou las.",
+     "c": "Écris quatre paires question-réponse où la réponse utilise lo, la, los ou las."
+    },
+    "it": {
+     "t": "Pronomi diretti: lo, la",
+     "g": "Sostituisci i nomi con lo, la, los, las per non ripeterli.",
+     "p": [
+      "Lo (lo), la (la), los e las al plurale: ¿Tienes el libro? Sí, lo tengo. Attenzione: los, non li.",
+      "Il pronome va prima del verbo coniugato: la veo, no los compro.",
+      "Con l'infinito può anche attaccarsi alla fine: voy a comprarlo = lo voy a comprar."
+     ],
+     "q": "¿Tienes tu móvil cerca? ¿Usas mucho tus gafas? Rispondi con lo, la, los o las.",
+     "c": "Scrivi quattro coppie domanda-risposta in cui la risposta usa lo, la, los o las."
+    },
+    "pt": {
+     "t": "Pronomes de objeto direto: lo, la",
+     "g": "Substitui nomes por lo, la, los, las para não repetir.",
+     "p": [
+      "Lo (o), la (a), los e las no plural: ¿Tienes el libro? Sí, lo tengo.",
+      "O pronome vai antes do verbo conjugado: la veo, no los compro (e não veo-la).",
+      "Com infinitivo pode juntar-se ao fim: voy a comprarlo = lo voy a comprar."
+     ],
+     "q": "¿Tienes tu móvil cerca? ¿Usas mucho tus gafas? Responde com lo, la, los ou las.",
+     "c": "Escreve quatro pares de pergunta e resposta em que a resposta usa lo, la, los ou las."
+    },
+    "pt_BR": {
+     "t": "Pronomes de objeto direto: lo, la",
+     "g": "Substitua substantivos por lo, la, los, las para não repetir.",
+     "p": [
+      "Lo (o), la (a), los e las no plural: ¿Tienes el libro? Sí, lo tengo. Em espanhol não se diz tengo ele.",
+      "O pronome vai antes do verbo conjugado: la veo, no los compro.",
+      "Com infinitivo pode ir no fim, junto: voy a comprarlo = lo voy a comprar."
+     ],
+     "q": "¿Tienes tu móvil cerca? ¿Usas mucho tus gafas? Responda com lo, la, los ou las.",
+     "c": "Escreva quatro pares de pergunta e resposta em que a resposta usa lo, la, los ou las."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lo tengo",
+      "ex": "¿Tienes el libro? Sí, lo tengo."
+     },
+     {
+      "w": "la veo",
+      "ex": "¿Ves a Marta? Sí, la veo."
+     },
+     {
+      "w": "los compro",
+      "ex": "Los tomates, los compro en el mercado."
+     },
+     {
+      "w": "las llamo",
+      "ex": "Llamo a mis abuelas y las visito."
+     },
+     {
+      "w": "no lo sé",
+      "ex": "¿Dónde está? No lo sé."
+     },
+     {
+      "w": "te quiero ayudar",
+      "ex": "Te quiero ayudar con la mudanza."
+     }
+    ],
+    "gram": "Pronombres de objeto directo: lo, la, los, las (también me, te, nos, os). Van antes del verbo conjugado: lo tengo, no la veo."
+   }
+  },
+  {
+   "d": 59,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The body and feeling unwell",
+     "g": "Name parts of the body and say what hurts.",
+     "p": [
+      "Body words: la cabeza, el brazo, la mano, la pierna, el pie, la espalda, el estómago, la garganta.",
+      "Doler works like gustar: me duele la cabeza, me duelen los pies.",
+      "Use the article, not mi: me duele la espalda. Also: estoy resfriado, tengo fiebre, tengo tos."
+     ],
+     "q": "How would you tell a pharmacist in Spanish that you have a sore throat?",
+     "c": "Point to ten parts of your body and name them in Spanish, then say one sentence with me duele."
+    },
+    "de": {
+     "t": "Der Körper und Unwohlsein",
+     "g": "Du benennst Körperteile und sagst, was wehtut.",
+     "p": [
+      "Körperwörter: la cabeza, el brazo, la mano, la pierna, el pie, la espalda, el estómago, la garganta.",
+      "Doler funktioniert wie gustar: me duele la cabeza, me duelen los pies.",
+      "Mit Artikel statt mi: me duele la espalda. Außerdem: estoy resfriado, tengo fiebre, tengo tos."
+     ],
+     "q": "Wie sagst du einer Apothekerin auf Spanisch, dass du Halsschmerzen hast?",
+     "c": "Zeig auf zehn Körperteile und nenne sie auf Spanisch, dann sag einen Satz mit me duele."
+    },
+    "es": {
+     "t": "El cuerpo y sentirse mal",
+     "g": "Nombra las partes del cuerpo y di qué te duele.",
+     "p": [
+      "Partes del cuerpo: la cabeza, el brazo, la mano, la pierna, el pie, la espalda, el estómago, la garganta.",
+      "Doler funciona como gustar: me duele la cabeza, me duelen los pies.",
+      "Con el cuerpo va el artículo, no el posesivo: me duele la espalda. Y además: estoy resfriado, tengo tos."
+     ],
+     "q": "¿Cómo le explicarías a un farmacéutico que te duele la garganta?",
+     "c": "Señala diez partes de tu cuerpo, nómbralas y di una frase con me duele."
+    },
+    "fr": {
+     "t": "Le corps et se sentir mal",
+     "g": "Nommer les parties du corps et dire où tu as mal.",
+     "p": [
+      "Le corps : la cabeza, el brazo, la mano, la pierna, el pie, la espalda, el estómago, la garganta.",
+      "Doler fonctionne comme gustar : me duele la cabeza (j'ai mal à la tête), me duelen los pies.",
+      "On utilise l'article, pas mi : me duele la espalda. Aussi : estoy resfriado, tengo fiebre, tengo tos."
+     ],
+     "q": "Comment dirais-tu à un pharmacien en espagnol que tu as mal à la gorge ?",
+     "c": "Montre dix parties de ton corps et nomme-les en espagnol, puis dis une phrase avec me duele."
+    },
+    "it": {
+     "t": "Il corpo e stare male",
+     "g": "Nomini le parti del corpo e dici cosa ti fa male.",
+     "p": [
+      "Il corpo: la cabeza, el brazo, la mano, la pierna, el pie, la espalda, el estómago, la garganta.",
+      "Doler funziona come gustar: me duele la cabeza (mi fa male la testa), me duelen los pies.",
+      "Si usa l'articolo, non mi: me duele la espalda. Anche: estoy resfriado, tengo fiebre, tengo tos."
+     ],
+     "q": "Come diresti a un farmacista in spagnolo che hai mal di gola?",
+     "c": "Indica dieci parti del corpo e nominale in spagnolo, poi di' una frase con me duele."
+    },
+    "pt": {
+     "t": "O corpo e sentir-se mal",
+     "g": "Nomeia partes do corpo e diz o que te dói.",
+     "p": [
+      "O corpo: la cabeza, el brazo, la mano, la pierna, el pie, la espalda, el estómago, la garganta.",
+      "Doler funciona como gustar: me duele la cabeza (dói-me a cabeça), me duelen los pies.",
+      "Usa-se o artigo, não mi: me duele la espalda. E também: estoy resfriado, tengo fiebre, tengo tos."
+     ],
+     "q": "Como dirias a um farmacêutico em espanhol que te dói a garganta?",
+     "c": "Aponta dez partes do corpo e diz o nome em espanhol, depois uma frase com me duele."
+    },
+    "pt_BR": {
+     "t": "O corpo e sentir-se mal",
+     "g": "Nomeie partes do corpo e diga o que está doendo.",
+     "p": [
+      "O corpo: la cabeza, el brazo, la mano, la pierna, el pie, la espalda, el estómago, la garganta.",
+      "Doler funciona como gustar: me duele la cabeza (minha cabeça dói), me duelen los pies.",
+      "Use o artigo, não mi: me duele la espalda. E também: estoy resfriado, tengo fiebre, tengo tos."
+     ],
+     "q": "Como você diria a um farmacêutico em espanhol que está com dor de garganta?",
+     "c": "Aponte dez partes do corpo e diga o nome em espanhol, depois uma frase com me duele."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la cabeza",
+      "ex": "Me duele la cabeza."
+     },
+     {
+      "w": "el brazo",
+      "ex": "Me duele el brazo derecho."
+     },
+     {
+      "w": "el estómago",
+      "ex": "Me duele el estómago."
+     },
+     {
+      "w": "la garganta",
+      "ex": "Me duele la garganta."
+     },
+     {
+      "w": "los pies",
+      "ex": "Me duelen los pies de tanto caminar."
+     },
+     {
+      "w": "estar resfriado",
+      "ex": "Estoy resfriado y tengo tos."
+     }
+    ],
+    "gram": "Doler funciona como gustar: me duele la cabeza, me duelen los pies. Con el cuerpo se usa el artículo, no el posesivo: me duele la mano."
+   }
+  },
+  {
+   "d": 60,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: everyday life in Spanish",
+     "g": "Bring together food, gustar, ser and estar, the city, plans and the weather in one chat.",
+     "p": [
+      "Tastes and food: me gusta, me encanta, ¿me pone...?, la cuenta, por favor.",
+      "Places and states: hay un parque, el museo está en el centro, estoy cansado, es simpática.",
+      "Plans and now: voy a + infinitive, hace sol, estoy leyendo. Two months in, you can hold a real everyday chat!"
+     ],
+     "q": "Tell me about your perfect Saturday in Spanish: weather, food, places and plans.",
+     "c": "Write a short message to a Spanish-speaking friend about your week and your plans for the weekend."
+    },
+    "de": {
+     "t": "Rückblick: Alltag auf Spanisch",
+     "g": "Du verbindest Essen, gustar, ser und estar, Stadt, Pläne und Wetter in einem Gespräch.",
+     "p": [
+      "Vorlieben und Essen: me gusta, me encanta, ¿me pone...?, la cuenta, por favor.",
+      "Orte und Zustände: hay un parque, el museo está en el centro, estoy cansado, es simpática.",
+      "Pläne und Jetzt: voy a + Infinitiv, hace sol, estoy leyendo. Nach zwei Monaten führst du echte Alltagsgespräche!"
+     ],
+     "q": "Erzähl mir auf Spanisch von deinem perfekten Samstag: Wetter, Essen, Orte und Pläne.",
+     "c": "Schreib einer spanischsprachigen Freundin eine kurze Nachricht über deine Woche und deine Wochenendpläne."
+    },
+    "es": {
+     "t": "Repaso: la vida diaria",
+     "g": "Combina comida, gustar, ser y estar, la ciudad, los planes y el tiempo en una charla.",
+     "p": [
+      "Gustos y comida: me gusta, me encanta, ¿me pone...?, la cuenta, por favor.",
+      "Lugares y estados: hay un parque, el museo está en el centro, estoy cansado, es simpática.",
+      "Planes y presente: voy a + infinitivo, hace sol, estoy leyendo. ¡Dos meses de práctica dan para mucho!"
+     ],
+     "q": "Cuéntame cómo sería tu sábado perfecto: el tiempo, la comida, los lugares y los planes.",
+     "c": "Escribe un mensaje breve a un amigo sobre tu semana y tus planes para el fin de semana."
+    },
+    "fr": {
+     "t": "Révision : la vie quotidienne en espagnol",
+     "g": "Réunir nourriture, gustar, ser et estar, la ville, les projets et la météo dans une discussion.",
+     "p": [
+      "Goûts et repas : me gusta, me encanta, ¿me pone...?, la cuenta, por favor.",
+      "Lieux et états : hay un parque, el museo está en el centro, estoy cansado, es simpática.",
+      "Projets et présent : voy a + infinitif, hace sol, estoy leyendo. Après deux mois, tu tiens une vraie conversation !"
+     ],
+     "q": "Raconte-moi en espagnol ton samedi idéal : météo, repas, lieux et projets.",
+     "c": "Écris un court message à un ami hispanophone sur ta semaine et tes projets du week-end."
+    },
+    "it": {
+     "t": "Ripasso: la vita di tutti i giorni",
+     "g": "Metti insieme cibo, gustar, ser ed estar, la città, i progetti e il tempo in una chiacchierata.",
+     "p": [
+      "Gusti e cibo: me gusta, me encanta, ¿me pone...?, la cuenta, por favor.",
+      "Luoghi e stati: hay un parque, el museo está en el centro, estoy cansado, es simpática.",
+      "Progetti e presente: voy a + infinito, hace sol, estoy leyendo. Dopo due mesi sai già conversare davvero!"
+     ],
+     "q": "Raccontami in spagnolo il tuo sabato perfetto: tempo, cibo, luoghi e progetti.",
+     "c": "Scrivi un breve messaggio a un amico ispanofono sulla tua settimana e sui piani per il weekend."
+    },
+    "pt": {
+     "t": "Revisão: o dia a dia em espanhol",
+     "g": "Junta comida, gustar, ser e estar, a cidade, os planos e o tempo numa conversa.",
+     "p": [
+      "Gostos e comida: me gusta, me encanta, ¿me pone...?, la cuenta, por favor.",
+      "Lugares e estados: hay un parque, el museo está en el centro, estoy cansado, es simpática.",
+      "Planos e agora: voy a + infinitivo, hace sol, estoy leyendo. Ao fim de dois meses já tens conversas reais!"
+     ],
+     "q": "Conta-me em espanhol como seria o teu sábado perfeito: tempo, comida, lugares e planos.",
+     "c": "Escreve uma mensagem curta a um amigo hispanófono sobre a tua semana e os planos para o fim de semana."
+    },
+    "pt_BR": {
+     "t": "Revisão: o dia a dia em espanhol",
+     "g": "Junte comida, gustar, ser e estar, a cidade, os planos e o tempo numa conversa.",
+     "p": [
+      "Gostos e comida: me gusta, me encanta, ¿me pone...?, la cuenta, por favor.",
+      "Lugares e estados: hay un parque, el museo está en el centro, estoy cansado, es simpática.",
+      "Planos e agora: voy a + infinitivo, hace sol, estoy leyendo. Depois de dois meses você já conversa de verdade!"
+     ],
+     "q": "Me conte em espanhol como seria seu sábado perfeito: tempo, comida, lugares e planos.",
+     "c": "Escreva uma mensagem curta para um amigo hispanófono sobre sua semana e seus planos para o fim de semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me encanta",
+      "ex": "Me encanta el pescado a la plancha."
+     },
+     {
+      "w": "está en",
+      "ex": "Mi casa está en el centro."
+     },
+     {
+      "w": "voy a",
+      "ex": "El sábado voy a ir a la playa."
+     },
+     {
+      "w": "hace buen tiempo",
+      "ex": "Hoy hace buen tiempo."
+     },
+     {
+      "w": "estoy cocinando",
+      "ex": "Ahora estoy cocinando para mis amigos."
+     },
+     {
+      "w": "¿Y tú qué tal?",
+      "ex": "Yo estoy bien. ¿Y tú qué tal?"
+     }
+    ],
+    "gram": "Repaso: gustar y encantar, ser y estar, hay, ir a + infinitivo, el tiempo con hace y estar + gerundio."
+   }
+  }
+ ]
+}

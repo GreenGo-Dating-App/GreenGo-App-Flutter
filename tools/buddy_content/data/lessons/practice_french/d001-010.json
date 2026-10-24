@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Bonjour! First French greetings",
+     "g": "Greet people in French and choose the right greeting for the time of day and the person.",
+     "p": [
+      "Bonjour is the safe hello all day long; bonsoir takes over in the evening, roughly from 6 p.m.",
+      "Salut means hi or bye, but keep it for friends, family and people your age.",
+      "Au revoir is the polite goodbye; bonne journée and bonne soirée wish someone a nice day or evening."
+     ],
+     "q": "You walk into a bakery at 8 in the morning. What is the first word you say to the baker?",
+     "c": "Greet three people today in French, even just in your head, picking bonjour, bonsoir or salut each time."
+    },
+    "de": {
+     "t": "Bonjour! Erste französische Grüße",
+     "g": "Du lernst, auf Französisch zu grüßen und den passenden Gruß für Tageszeit und Person zu wählen.",
+     "p": [
+      "Bonjour ist das sichere Hallo für den ganzen Tag; bonsoir sagt man am Abend, etwa ab 18 Uhr.",
+      "Salut heißt Hallo oder Tschüss, passt aber nur bei Freunden, Familie und Gleichaltrigen.",
+      "Au revoir ist der höfliche Abschied; bonne journée und bonne soirée wünschen einen schönen Tag oder Abend."
+     ],
+     "q": "Du betrittst um 8 Uhr morgens eine Bäckerei. Was ist dein erstes Wort an den Bäcker?",
+     "c": "Grüße heute drei Menschen auf Französisch, notfalls im Kopf, und wähle jedes Mal bonjour, bonsoir oder salut."
+    },
+    "es": {
+     "t": "¡Bonjour! Primeros saludos en francés",
+     "g": "Aprende a saludar en francés y a elegir el saludo adecuado según la hora y la persona.",
+     "p": [
+      "Bonjour es el hola seguro durante todo el día; bonsoir se usa por la tarde-noche, desde las 18 h más o menos.",
+      "Salut significa hola o chao, pero resérvalo para amigos, familia y gente de tu edad.",
+      "Au revoir es la despedida cortés; bonne journée y bonne soirée desean un buen día o una buena tarde."
+     ],
+     "q": "Entras en una panadería a las 8 de la mañana. ¿Cuál es la primera palabra que le dices al panadero?",
+     "c": "Saluda hoy a tres personas en francés, aunque sea mentalmente, eligiendo bonjour, bonsoir o salut."
+    },
+    "fr": {
+     "t": "Bonjour ! Les premières salutations",
+     "g": "Saluer en français et choisir la bonne formule selon le moment de la journée et la personne.",
+     "p": [
+      "Bonjour est le salut sûr toute la journée ; bonsoir prend le relais le soir, vers 18 h.",
+      "Salut veut dire bonjour ou au revoir, mais on le garde pour les amis, la famille et les gens de son âge.",
+      "Au revoir est la formule polie ; bonne journée et bonne soirée souhaitent une belle journée ou soirée."
+     ],
+     "q": "Tu entres dans une boulangerie à 8 h du matin. Quel est le premier mot que tu dis au boulanger ?",
+     "c": "Salue trois personnes en français aujourd'hui, même dans ta tête, en choisissant bonjour, bonsoir ou salut."
+    },
+    "it": {
+     "t": "Bonjour! I primi saluti in francese",
+     "g": "Impari a salutare in francese e a scegliere il saluto giusto per l'ora e la persona.",
+     "p": [
+      "Bonjour è il saluto sicuro per tutto il giorno; bonsoir si usa la sera, più o meno dalle 18.",
+      "Salut vuol dire ciao, sia arrivando sia andando via, ma si usa con amici, famiglia e coetanei.",
+      "Au revoir è il congedo cortese; bonne journée e bonne soirée augurano una buona giornata o serata."
+     ],
+     "q": "Entri in un panificio alle 8 del mattino. Qual è la prima parola che dici al fornaio?",
+     "c": "Oggi saluta tre persone in francese, anche solo nella tua testa, scegliendo tra bonjour, bonsoir e salut."
+    },
+    "pt": {
+     "t": "Bonjour! Primeiras saudações em francês",
+     "g": "Aprender a cumprimentar em francês e escolher a saudação certa para a hora e a pessoa.",
+     "p": [
+      "Bonjour é o olá seguro durante todo o dia; bonsoir usa-se à noite, mais ou menos a partir das 18 h.",
+      "Salut quer dizer olá ou adeus, mas guarda-o para amigos, família e pessoas da tua idade.",
+      "Au revoir é a despedida educada; bonne journée e bonne soirée desejam um bom dia ou uma boa noite."
+     ],
+     "q": "Entras numa padaria às 8 da manhã. Qual é a primeira palavra que dizes ao padeiro?",
+     "c": "Hoje cumprimenta três pessoas em francês, nem que seja mentalmente, escolhendo bonjour, bonsoir ou salut."
+    },
+    "pt_BR": {
+     "t": "Bonjour! Primeiros cumprimentos em francês",
+     "g": "Aprender a cumprimentar em francês e escolher a saudação certa para a hora e a pessoa.",
+     "p": [
+      "Bonjour é o oi seguro o dia inteiro; bonsoir entra à noite, mais ou menos a partir das 18h.",
+      "Salut quer dizer oi ou tchau, mas use só com amigos, família e gente da sua idade.",
+      "Au revoir é a despedida educada; bonne journée e bonne soirée desejam um bom dia ou uma boa noite."
+     ],
+     "q": "Você entra numa padaria às 8 da manhã. Qual é a primeira palavra que você diz ao padeiro?",
+     "c": "Hoje cumprimente três pessoas em francês, mesmo que só na cabeça, escolhendo bonjour, bonsoir ou salut."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bonjour",
+      "ex": "Bonjour, madame !"
+     },
+     {
+      "w": "bonsoir",
+      "ex": "Bonsoir, monsieur Martin."
+     },
+     {
+      "w": "salut",
+      "ex": "Salut, Léa ! Ça va ?"
+     },
+     {
+      "w": "au revoir",
+      "ex": "Merci et au revoir !"
+     },
+     {
+      "w": "bonne journée",
+      "ex": "Au revoir et bonne journée !"
+     },
+     {
+      "w": "à bientôt",
+      "ex": "Salut Paul, à bientôt !"
+     }
+    ],
+    "gram": "Bonjour toute la journée, bonsoir le soir. Salut est familier (amis). Au revoir est poli ; on ajoute souvent madame ou monsieur."
+   }
+  },
+  {
+   "d": 2,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The French alphabet",
+     "g": "Spell your name in French and get to know the letters that sound different from English.",
+     "p": [
+      "Most letters look familiar, but e sounds like the e in the, and u has no English twin: round your lips and say ee.",
+      "G is said zhay and j is zhee, the opposite of what many learners expect, so practise them in pairs.",
+      "The French r comes from the back of the throat, a soft gargle; double letters are spelled deux l, deux s."
+     ],
+     "q": "How do you spell your first name letter by letter in French?",
+     "c": "Spell your full name and your city out loud in French twice today."
+    },
+    "de": {
+     "t": "Das französische Alphabet",
+     "g": "Du buchstabierst deinen Namen auf Französisch und lernst die Buchstaben, die anders klingen.",
+     "p": [
+      "Viele Buchstaben klingen fast wie im Deutschen; das e ist ein dumpfes ö-artiges e, das u klingt wie ü.",
+      "G spricht man wie schee mit weichem sch, j wie schi, also anders herum, als viele erwarten.",
+      "Das französische r entsteht hinten im Rachen; Doppelbuchstaben buchstabiert man deux l, deux s."
+     ],
+     "q": "Wie buchstabierst du deinen Vornamen auf Französisch?",
+     "c": "Buchstabiere heute zweimal laut deinen vollen Namen und deine Stadt auf Französisch."
+    },
+    "es": {
+     "t": "El alfabeto francés",
+     "g": "Deletrea tu nombre en francés y conoce las letras que suenan distinto que en español.",
+     "p": [
+      "La e francesa es un sonido neutro, entre e y o, y la u se dice con los labios redondos como para silbar y diciendo i.",
+      "La g se dice ye suave, como la ll argentina, y la j se dice yi: al revés de lo que muchos esperan.",
+      "La r francesa nace en la garganta, como una j muy suave; las letras dobles se deletrean deux l, deux s."
+     ],
+     "q": "¿Cómo deletreas tu nombre letra por letra en francés?",
+     "c": "Deletrea hoy dos veces en voz alta tu nombre completo y tu ciudad en francés."
+    },
+    "fr": {
+     "t": "L'alphabet français",
+     "g": "Épeler son nom en français et soigner les lettres que les apprenants confondent souvent.",
+     "p": [
+      "Le e se prononce comme dans le, et le u se fait avec les lèvres arrondies, comme pour siffler.",
+      "On dit gé pour g et ji pour j : beaucoup d'apprenants les inversent, alors on les travaille ensemble.",
+      "Le r vient du fond de la gorge ; pour les lettres doubles on dit deux l, deux s, deux t."
+     ],
+     "q": "Comment épelles-tu ton prénom, lettre par lettre ?",
+     "c": "Épelle à voix haute ton nom complet et ta ville deux fois aujourd'hui."
+    },
+    "it": {
+     "t": "L'alfabeto francese",
+     "g": "Fai lo spelling del tuo nome in francese e impari le lettere che suonano diverse dall'italiano.",
+     "p": [
+      "La e francese è un suono neutro tra e e o; la u si dice con le labbra arrotondate pronunciando i.",
+      "La g si dice ge con la g dolce di garage, la j si dice ji: il contrario di quanto molti si aspettano.",
+      "La r francese nasce in gola, morbida; le lettere doppie si dicono deux l, deux s."
+     ],
+     "q": "Come fai lo spelling del tuo nome lettera per lettera in francese?",
+     "c": "Oggi fai due volte ad alta voce lo spelling del tuo nome completo e della tua città in francese."
+    },
+    "pt": {
+     "t": "O alfabeto francês",
+     "g": "Soletrar o teu nome em francês e conhecer as letras que soam diferente do português.",
+     "p": [
+      "O e francês é um som neutro, parecido com o e de que; o u diz-se com os lábios em bico a dizer i.",
+      "O g diz-se jê e o j diz-se ji: precisamente o contrário do que muitos alunos esperam.",
+      "O r francês nasce na garganta, suave; as letras duplas soletram-se deux l, deux s."
+     ],
+     "q": "Como soletras o teu nome próprio, letra a letra, em francês?",
+     "c": "Soletra hoje duas vezes em voz alta o teu nome completo e a tua cidade em francês."
+    },
+    "pt_BR": {
+     "t": "O alfabeto francês",
+     "g": "Soletrar seu nome em francês e conhecer as letras que soam diferente do português.",
+     "p": [
+      "O e francês é um som neutro, parecido com um ê bem fechado; o u se faz com a boca em bico dizendo i.",
+      "O g se diz jê e o j se diz ji: exatamente o contrário do que muita gente espera.",
+      "O r francês vem do fundo da garganta, suave; letras dobradas se soletram deux l, deux s."
+     ],
+     "q": "Como você soletra seu primeiro nome, letra por letra, em francês?",
+     "c": "Hoje soletre duas vezes em voz alta seu nome completo e sua cidade em francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'alphabet",
+      "ex": "J'apprends l'alphabet français."
+     },
+     {
+      "w": "une lettre",
+      "ex": "Mon prénom a cinq lettres."
+     },
+     {
+      "w": "épeler",
+      "ex": "Vous pouvez épeler votre nom ?"
+     },
+     {
+      "w": "Ça s'écrit comment ?",
+      "ex": "Pardon, ça s'écrit comment ?"
+     },
+     {
+      "w": "deux l",
+      "ex": "Isabelle, avec deux l."
+     },
+     {
+      "w": "un nom de famille",
+      "ex": "Mon nom de famille est Dupont."
+     }
+    ],
+    "gram": "Pour épeler : Ça s'écrit comment ? On dit gé pour g, ji pour j, et deux s, deux l pour les lettres doubles."
+   }
+  },
+  {
+   "d": 3,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "French sounds: silent letters",
+     "g": "Learn why many final letters stay silent and when a final consonant is actually pronounced.",
+     "p": [
+      "Final e, s, t, d, x and z are usually silent: petit sounds like puh-tee and Paris like pa-ree.",
+      "The CaReFuL rule: final c, r, f and l are often pronounced, as in avec, bonjour, neuf and avril.",
+      "The h is always silent: hôtel sounds like otel, and the -ent ending of verbs like ils parlent is silent too."
+     ],
+     "q": "Which word from today surprised you most with its silent letters?",
+     "c": "Read five French words aloud today and cross out every letter you do not pronounce."
+    },
+    "de": {
+     "t": "Französische Laute: stumme Buchstaben",
+     "g": "Du lernst, warum viele Endbuchstaben stumm bleiben und wann ein Endkonsonant doch gesprochen wird.",
+     "p": [
+      "E, s, t, d, x und z am Wortende sind meist stumm: petit klingt wie pti, Paris wie pari.",
+      "Die CaReFuL-Regel: c, r, f und l am Ende spricht man oft, etwa in avec, bonjour, neuf und avril.",
+      "Das h ist immer stumm, hôtel klingt wie otel; auch die Verbendung -ent in ils parlent ist stumm."
+     ],
+     "q": "Welches Wort von heute hat dich mit seinen stummen Buchstaben am meisten überrascht?",
+     "c": "Lies heute fünf französische Wörter laut und streiche jeden Buchstaben durch, den du nicht sprichst."
+    },
+    "es": {
+     "t": "Sonidos del francés: letras mudas",
+     "g": "Descubre por qué muchas letras finales no suenan y cuándo sí se pronuncia la consonante final.",
+     "p": [
+      "La e, s, t, d, x y z finales suelen ser mudas: petit suena pti y Paris suena parí.",
+      "La regla CaReFuL: la c, r, f y l finales a menudo sí suenan, como en avec, bonjour, neuf y avril.",
+      "La h siempre es muda, hôtel suena otel, y la terminación -ent de ils parlent tampoco se pronuncia."
+     ],
+     "q": "¿Qué palabra de hoy te sorprendió más por sus letras mudas?",
+     "c": "Lee hoy cinco palabras francesas en voz alta y tacha cada letra que no pronuncias."
+    },
+    "fr": {
+     "t": "Les sons du français : les lettres muettes",
+     "g": "Comprendre pourquoi tant de lettres finales sont muettes et quand la consonne finale se prononce.",
+     "p": [
+      "Le e, s, t, d, x et z en fin de mot sont souvent muets : petit, Paris, grand, deux, nez.",
+      "La règle CaReFuL : c, r, f et l finaux se prononcent souvent, comme dans avec, bonjour, neuf, avril.",
+      "Le h ne se prononce jamais, comme dans hôtel, et la terminaison -ent de ils parlent est muette."
+     ],
+     "q": "Quel mot t'a le plus surpris aujourd'hui avec ses lettres muettes ?",
+     "c": "Lis cinq mots à voix haute aujourd'hui et barre chaque lettre que tu ne prononces pas."
+    },
+    "it": {
+     "t": "Suoni del francese: le lettere mute",
+     "g": "Scopri perché molte lettere finali sono mute e quando la consonante finale invece si pronuncia.",
+     "p": [
+      "E, s, t, d, x e z finali di solito sono mute: petit si legge pti e Paris parì.",
+      "La regola CaReFuL: c, r, f e l finali spesso si pronunciano, come in avec, bonjour, neuf e avril.",
+      "La h è sempre muta, hôtel si legge otel, e anche la desinenza -ent di ils parlent è muta."
+     ],
+     "q": "Quale parola di oggi ti ha sorpreso di più per le sue lettere mute?",
+     "c": "Oggi leggi ad alta voce cinque parole francesi e cancella ogni lettera che non pronunci."
+    },
+    "pt": {
+     "t": "Sons do francês: letras mudas",
+     "g": "Perceber porque muitas letras finais não se leem e quando a consoante final se pronuncia.",
+     "p": [
+      "O e, s, t, d, x e z finais costumam ser mudos: petit lê-se pti e Paris lê-se pari.",
+      "A regra CaReFuL: c, r, f e l finais costumam ouvir-se, como em avec, bonjour, neuf e avril.",
+      "O h é sempre mudo, hôtel lê-se otel, e a terminação -ent de ils parlent também não se lê."
+     ],
+     "q": "Que palavra de hoje te surpreendeu mais com as suas letras mudas?",
+     "c": "Lê hoje cinco palavras francesas em voz alta e risca todas as letras que não pronuncias."
+    },
+    "pt_BR": {
+     "t": "Sons do francês: letras mudas",
+     "g": "Entender por que tantas letras finais não são lidas e quando a consoante final é pronunciada.",
+     "p": [
+      "O e, s, t, d, x e z finais costumam ser mudos: petit se lê pti e Paris se lê parí.",
+      "A regra CaReFuL: c, r, f e l finais costumam ser pronunciados, como em avec, bonjour, neuf e avril.",
+      "O h é sempre mudo, hôtel se lê otel, e a terminação -ent de ils parlent também não se lê."
+     ],
+     "q": "Qual palavra de hoje mais te surpreendeu com suas letras mudas?",
+     "c": "Hoje leia em voz alta cinco palavras francesas e risque toda letra que você não pronuncia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "petit",
+      "ex": "Le chat est petit."
+     },
+     {
+      "w": "Paris",
+      "ex": "J'habite à Paris."
+     },
+     {
+      "w": "avec",
+      "ex": "Je suis avec Marie."
+     },
+     {
+      "w": "neuf",
+      "ex": "Il est neuf heures."
+     },
+     {
+      "w": "l'hôtel",
+      "ex": "L'hôtel est près d'ici."
+     },
+     {
+      "w": "ils parlent",
+      "ex": "Ils parlent très vite."
+     }
+    ],
+    "gram": "En fin de mot, e, s, t, d, x, z sont souvent muets. Mais c, r, f, l se prononcent souvent : avec, bonjour, neuf, avril. Le h est muet."
+   }
+  },
+  {
+   "d": 4,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Accents: é, è, ê, à, ç",
+     "g": "See what each French accent does to sound and meaning, from café to garçon.",
+     "p": [
+      "É sounds like the ay in say, cut short; è and ê sound like the e in bed: café, père, fête.",
+      "À and où carry a grave accent only to change meaning: a means has, à means to or at; ou is or, où is where.",
+      "The cedilla makes c soft like an s before a, o, u: garçon, ça, français."
+     ],
+     "q": "Can you name one French word with é and one with ç?",
+     "c": "Write five French words with accents today and read each one aloud with the right sound."
+    },
+    "de": {
+     "t": "Akzente: é, è, ê, à, ç",
+     "g": "Du lernst, was jeder französische Akzent mit Klang und Bedeutung macht, von café bis garçon.",
+     "p": [
+      "É klingt wie ein kurzes geschlossenes e wie in See; è und ê klingen offen wie in Bett: café, père, fête.",
+      "À und où haben den Gravis nur zur Unterscheidung: a heißt hat, à heißt nach oder bei; ou ist oder, où ist wo.",
+      "Die Cedille macht das c vor a, o, u zu einem weichen s: garçon, ça, français."
+     ],
+     "q": "Kannst du ein französisches Wort mit é und eins mit ç nennen?",
+     "c": "Schreib heute fünf französische Wörter mit Akzent auf und lies jedes mit dem richtigen Klang."
+    },
+    "es": {
+     "t": "Acentos: é, è, ê, à, ç",
+     "g": "Descubre qué cambia cada acento francés en el sonido y el significado, de café a garçon.",
+     "p": [
+      "La é suena como una e cerrada y corta; la è y la ê suenan más abiertas: café, père, fête.",
+      "À y où llevan acento grave solo para distinguir: a es tiene, à es a o en; ou es o, où es dónde.",
+      "La cedilla hace que la c suene como s ante a, o, u: garçon, ça, français."
+     ],
+     "q": "¿Puedes decir una palabra francesa con é y otra con ç?",
+     "c": "Escribe hoy cinco palabras francesas con acento y léelas en voz alta con el sonido correcto."
+    },
+    "fr": {
+     "t": "Les accents : é, è, ê, à, ç",
+     "g": "Voir ce que chaque accent change au son et au sens, de café à garçon.",
+     "p": [
+      "É se prononce fermé, comme dans café ; è et ê s'ouvrent, comme dans père et fête.",
+      "À et où portent un accent grave pour changer le sens : a (avoir) et à, ou (choix) et où (lieu).",
+      "La cédille rend le c doux devant a, o, u : garçon, ça, français."
+     ],
+     "q": "Peux-tu citer un mot avec é et un mot avec ç ?",
+     "c": "Écris cinq mots avec accents aujourd'hui et lis-les à voix haute avec le bon son."
+    },
+    "it": {
+     "t": "Accenti: é, è, ê, à, ç",
+     "g": "Scopri cosa cambia ogni accento francese nel suono e nel significato, da café a garçon.",
+     "p": [
+      "É suona come la e chiusa di perché; è ed ê suonano aperte come in bello: café, père, fête.",
+      "À e où hanno l'accento grave solo per distinguere: a significa ha, à significa a; ou è o, où è dove.",
+      "La cediglia rende la c dolce come una s davanti ad a, o, u: garçon, ça, français."
+     ],
+     "q": "Sai dire una parola francese con é e una con ç?",
+     "c": "Oggi scrivi cinque parole francesi con accento e leggile ad alta voce con il suono giusto."
+    },
+    "pt": {
+     "t": "Acentos: é, è, ê, à, ç",
+     "g": "Ver o que cada acento francês muda no som e no sentido, de café a garçon.",
+     "p": [
+      "O é soa fechado, como o ê de você; o è e o ê soam abertos, como o é de pé: café, père, fête.",
+      "À e où têm acento grave só para distinguir: a quer dizer tem, à quer dizer a; ou é ou, où é onde.",
+      "A cedilha torna o c suave como um s antes de a, o, u, tal como em português: garçon, ça, français."
+     ],
+     "q": "Consegues dizer uma palavra francesa com é e outra com ç?",
+     "c": "Escreve hoje cinco palavras francesas com acento e lê-as em voz alta com o som certo."
+    },
+    "pt_BR": {
+     "t": "Acentos: é, è, ê, à, ç",
+     "g": "Ver o que cada acento francês muda no som e no sentido, de café a garçon.",
+     "p": [
+      "Cuidado: o é francês soa fechado, como o ê de você; já o è e o ê soam abertos, como em pé: café, père, fête.",
+      "À e où têm acento grave só para diferenciar: a quer dizer tem, à quer dizer a; ou é ou, où é onde.",
+      "A cedilha deixa o c com som de s antes de a, o, u, igual ao português: garçon, ça, français."
+     ],
+     "q": "Você consegue dizer uma palavra francesa com é e outra com ç?",
+     "c": "Hoje escreva cinco palavras francesas com acento e leia cada uma em voz alta com o som certo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un café",
+      "ex": "Un café, s'il vous plaît."
+     },
+     {
+      "w": "le père",
+      "ex": "Mon père est à la maison."
+     },
+     {
+      "w": "la fête",
+      "ex": "La fête est ce soir."
+     },
+     {
+      "w": "où",
+      "ex": "Où est la gare ?"
+     },
+     {
+      "w": "un garçon",
+      "ex": "Le garçon s'appelle Hugo."
+     },
+     {
+      "w": "français",
+      "ex": "Je parle un peu français."
+     }
+    ],
+    "gram": "é = son fermé (café) ; è, ê = son ouvert (père, fête). à et où changent le sens. ç = son s devant a, o, u (garçon)."
+   }
+  },
+  {
+   "d": 5,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Je m'appelle: introducing yourself",
+     "g": "Introduce yourself in French, ask someone's name and react politely when you meet them.",
+     "p": [
+      "Je m'appelle Ana means my name is Ana; you can also say simply je suis Ana, I am Ana.",
+      "Ask comment tu t'appelles? with a friend, or comment vous appelez-vous? with a stranger.",
+      "Answer a new person with enchanté if you are a man and enchantée if you are a woman: same sound, nice to meet you."
+     ],
+     "q": "Comment tu t'appelles? Tell me your name in a full French sentence.",
+     "c": "Introduce yourself out loud three times today: bonjour, je m'appelle..., enchanté or enchantée."
+    },
+    "de": {
+     "t": "Je m'appelle: sich vorstellen",
+     "g": "Du stellst dich auf Französisch vor, fragst nach dem Namen und reagierst höflich beim Kennenlernen.",
+     "p": [
+      "Je m'appelle Ana heißt ich heiße Ana; du kannst auch einfach je suis Ana sagen, ich bin Ana.",
+      "Frag Freunde comment tu t'appelles? und Fremde comment vous appelez-vous?",
+      "Antworte mit enchanté als Mann und enchantée als Frau, gleich ausgesprochen: freut mich."
+     ],
+     "q": "Comment tu t'appelles? Sag mir deinen Namen in einem ganzen französischen Satz.",
+     "c": "Stell dich heute dreimal laut vor: bonjour, je m'appelle..., enchanté oder enchantée."
+    },
+    "es": {
+     "t": "Je m'appelle: presentarte",
+     "g": "Preséntate en francés, pregunta el nombre y responde con cortesía al conocer a alguien.",
+     "p": [
+      "Je m'appelle Ana significa me llamo Ana; también puedes decir je suis Ana, soy Ana.",
+      "Pregunta comment tu t'appelles? a un amigo y comment vous appelez-vous? a un desconocido.",
+      "Responde enchanté si eres hombre y enchantée si eres mujer: suenan igual y significan encantado."
+     ],
+     "q": "Comment tu t'appelles? Dime tu nombre con una frase completa en francés.",
+     "c": "Preséntate hoy tres veces en voz alta: bonjour, je m'appelle..., enchanté o enchantée."
+    },
+    "fr": {
+     "t": "Je m'appelle : se présenter",
+     "g": "Se présenter, demander le prénom de quelqu'un et réagir poliment lors d'une rencontre.",
+     "p": [
+      "Je m'appelle Ana sert à dire son prénom ; on peut aussi dire simplement je suis Ana.",
+      "On demande comment tu t'appelles ? à un ami et comment vous appelez-vous ? à un inconnu.",
+      "On répond enchanté pour un homme, enchantée pour une femme : même prononciation."
+     ],
+     "q": "Comment tu t'appelles ? Dis-moi ton prénom avec une phrase complète.",
+     "c": "Présente-toi trois fois à voix haute aujourd'hui : bonjour, je m'appelle..., enchanté ou enchantée."
+    },
+    "it": {
+     "t": "Je m'appelle: presentarsi",
+     "g": "Ti presenti in francese, chiedi il nome e rispondi con gentilezza quando conosci qualcuno.",
+     "p": [
+      "Je m'appelle Ana significa mi chiamo Ana; puoi anche dire semplicemente je suis Ana, sono Ana.",
+      "Chiedi comment tu t'appelles? a un amico e comment vous appelez-vous? a uno sconosciuto.",
+      "Rispondi enchanté se sei un uomo ed enchantée se sei una donna: si pronunciano uguali, piacere."
+     ],
+     "q": "Comment tu t'appelles? Dimmi il tuo nome con una frase completa in francese.",
+     "c": "Oggi presentati tre volte ad alta voce: bonjour, je m'appelle..., enchanté o enchantée."
+    },
+    "pt": {
+     "t": "Je m'appelle: apresentar-se",
+     "g": "Apresentar-te em francês, perguntar o nome e responder com simpatia ao conhecer alguém.",
+     "p": [
+      "Je m'appelle Ana quer dizer chamo-me Ana; também podes dizer só je suis Ana, sou a Ana.",
+      "Pergunta comment tu t'appelles? a um amigo e comment vous appelez-vous? a um desconhecido.",
+      "Responde enchanté se fores homem e enchantée se fores mulher: soam igual e querem dizer muito prazer."
+     ],
+     "q": "Comment tu t'appelles? Diz-me o teu nome numa frase completa em francês.",
+     "c": "Apresenta-te hoje três vezes em voz alta: bonjour, je m'appelle..., enchanté ou enchantée."
+    },
+    "pt_BR": {
+     "t": "Je m'appelle: se apresentando",
+     "g": "Se apresentar em francês, perguntar o nome de alguém e responder com educação ao conhecer a pessoa.",
+     "p": [
+      "Je m'appelle Ana quer dizer meu nome é Ana; você também pode dizer só je suis Ana, sou a Ana.",
+      "Pergunte comment tu t'appelles? a um amigo e comment vous appelez-vous? a um desconhecido.",
+      "Responda enchanté se você for homem e enchantée se for mulher: o som é igual e quer dizer muito prazer."
+     ],
+     "q": "Comment tu t'appelles? Me diga seu nome numa frase completa em francês.",
+     "c": "Hoje se apresente três vezes em voz alta: bonjour, je m'appelle..., enchanté ou enchantée."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je m'appelle",
+      "ex": "Bonjour, je m'appelle Sofia."
+     },
+     {
+      "w": "Comment tu t'appelles ?",
+      "ex": "Salut ! Comment tu t'appelles ?"
+     },
+     {
+      "w": "Comment vous appelez-vous ?",
+      "ex": "Bonjour, madame. Comment vous appelez-vous ?"
+     },
+     {
+      "w": "enchanté",
+      "ex": "Je m'appelle Marc. Enchanté !"
+     },
+     {
+      "w": "enchantée",
+      "ex": "Enchantée, moi c'est Julie."
+     },
+     {
+      "w": "moi, c'est...",
+      "ex": "Moi, c'est Thomas."
+     }
+    ],
+    "gram": "S'appeler : je m'appelle, tu t'appelles, vous vous appelez. Enchanté (homme), enchantée (femme) : même son."
+   }
+  },
+  {
+   "d": 6,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Tu or vous?",
+     "g": "Know when to say tu and when to say vous, and how French speakers move from one to the other.",
+     "p": [
+      "Tu is for friends, family, children and pets; young people and online chats also use it a lot.",
+      "Vous is for strangers, shop staff, older people and work, and it is also the plural you for any group.",
+      "If unsure, start with vous; when someone says on se tutoie? or tu peux me tutoyer, switch to tu."
+     ],
+     "q": "Who would you call tu and who would you call vous in your own life? Give me one example of each.",
+     "c": "Today, think of five people you know and decide whether you would use tu or vous with each one."
+    },
+    "de": {
+     "t": "Tu oder vous?",
+     "g": "Du lernst, wann man tu und wann vous sagt und wie man vom einen zum anderen wechselt.",
+     "p": [
+      "Tu ist für Freunde, Familie, Kinder und Haustiere, ähnlich wie das deutsche du.",
+      "Vous ist für Fremde, Verkaufspersonal, ältere Menschen und den Beruf, wie Sie, und zugleich das Plural-ihr.",
+      "Im Zweifel nimm vous; fragt jemand on se tutoie? oder sagt tu peux me tutoyer, wechselst du zu tu."
+     ],
+     "q": "Wen würdest du in deinem Leben mit tu und wen mit vous ansprechen? Nenn je ein Beispiel.",
+     "c": "Denk heute an fünf Menschen, die du kennst, und entscheide jeweils: tu oder vous?"
+    },
+    "es": {
+     "t": "¿Tu o vous?",
+     "g": "Aprende cuándo decir tu y cuándo vous, y cómo se pasa de uno a otro en francés.",
+     "p": [
+      "Tu es para amigos, familia, niños y mascotas, como el tú español.",
+      "Vous es para desconocidos, dependientes, personas mayores y el trabajo, como usted, y también es el plural vosotros o ustedes.",
+      "En caso de duda, usa vous; si alguien dice on se tutoie? o tu peux me tutoyer, pasa a tu."
+     ],
+     "q": "¿A quién tratarías de tu y a quién de vous en tu vida? Dame un ejemplo de cada uno.",
+     "c": "Piensa hoy en cinco personas que conoces y decide si usarías tu o vous con cada una."
+    },
+    "fr": {
+     "t": "Tu ou vous ?",
+     "g": "Savoir quand dire tu, quand dire vous, et comment on passe de l'un à l'autre.",
+     "p": [
+      "Tu s'emploie avec les amis, la famille, les enfants et les animaux, et beaucoup entre jeunes ou en ligne.",
+      "Vous marque le respect avec les inconnus, les commerçants, les aînés et au travail, et sert aussi de pluriel.",
+      "Dans le doute, on vouvoie ; si quelqu'un propose on se tutoie ?, on passe au tu avec plaisir."
+     ],
+     "q": "Qui tutoies-tu et qui vouvoies-tu dans ta vie ? Donne un exemple de chaque.",
+     "c": "Pense aujourd'hui à cinq personnes que tu connais et décide : tu ou vous ?"
+    },
+    "it": {
+     "t": "Tu o vous?",
+     "g": "Impari quando dire tu e quando vous, e come si passa dall'uno all'altro in francese.",
+     "p": [
+      "Tu si usa con amici, famiglia, bambini e animali, proprio come il tu italiano.",
+      "Vous si usa con sconosciuti, commessi, persone anziane e al lavoro, come il Lei, ed è anche il plurale voi.",
+      "Nel dubbio usa vous; se qualcuno dice on se tutoie? o tu peux me tutoyer, passa al tu."
+     ],
+     "q": "Chi chiameresti tu e chi vous nella tua vita? Dammi un esempio per ciascuno.",
+     "c": "Oggi pensa a cinque persone che conosci e decidi se useresti tu o vous con ognuna."
+    },
+    "pt": {
+     "t": "Tu ou vous?",
+     "g": "Saber quando dizer tu e quando dizer vous, e como se passa de um para o outro.",
+     "p": [
+      "Tu usa-se com amigos, família, crianças e animais, tal como o tu em Portugal.",
+      "Vous usa-se com desconhecidos, lojistas, pessoas mais velhas e no trabalho, como o senhor, e é também o plural vocês.",
+      "Na dúvida, usa vous; se alguém disser on se tutoie? ou tu peux me tutoyer, passa para tu."
+     ],
+     "q": "Quem tratarias por tu e quem tratarias por vous na tua vida? Dá um exemplo de cada.",
+     "c": "Pensa hoje em cinco pessoas que conheces e decide se usarias tu ou vous com cada uma."
+    },
+    "pt_BR": {
+     "t": "Tu ou vous?",
+     "g": "Saber quando usar tu e quando usar vous, e como se passa de um para o outro em francês.",
+     "p": [
+      "Tu é para amigos, família, crianças e bichos de estimação, como o você do dia a dia.",
+      "Vous é para desconhecidos, vendedores, pessoas mais velhas e o trabalho, como o senhor ou a senhora, e também é o plural vocês.",
+      "Na dúvida, use vous; se alguém disser on se tutoie? ou tu peux me tutoyer, passe para o tu."
+     ],
+     "q": "Quem você trataria por tu e quem por vous na sua vida? Dê um exemplo de cada.",
+     "c": "Hoje pense em cinco pessoas que você conhece e decida se usaria tu ou vous com cada uma."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tu",
+      "ex": "Tu es mon ami."
+     },
+     {
+      "w": "vous",
+      "ex": "Vous êtes madame Petit ?"
+     },
+     {
+      "w": "tutoyer",
+      "ex": "On peut se tutoyer ?"
+     },
+     {
+      "w": "vouvoyer",
+      "ex": "Je vouvoie mon professeur."
+     },
+     {
+      "w": "monsieur",
+      "ex": "Merci, monsieur."
+     },
+     {
+      "w": "madame",
+      "ex": "Bonjour, madame, vous allez bien ?"
+     }
+    ],
+    "gram": "Tu = familier (amis, famille). Vous = poli (inconnus, travail) ou pluriel. Dans le doute, on vouvoie. On se tutoie ? = passons au tu."
+   }
+  },
+  {
+   "d": 7,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Comment ça va?",
+     "g": "Ask how someone is in French and answer with the right level of enthusiasm.",
+     "p": [
+      "Ça va? is the everyday how are you, and the answer can be the same words: ça va, I am fine.",
+      "Grade your answer: très bien, bien, pas mal, comme ci comme ça, or bof when it is just so-so.",
+      "Always bounce the question back with et toi? to a friend or et vous? to someone you say vous to."
+     ],
+     "q": "Comment ça va aujourd'hui? Answer me in French and ask me back.",
+     "c": "Ask three people how they are today in French, choosing ça va? or comment allez-vous? for each."
+    },
+    "de": {
+     "t": "Comment ça va?",
+     "g": "Du fragst auf Französisch, wie es jemandem geht, und antwortest passend begeistert.",
+     "p": [
+      "Ça va? ist das alltägliche Wie geht's, und die Antwort kann gleich lauten: ça va, mir geht's gut.",
+      "Stufe deine Antwort ab: très bien, bien, pas mal, comme ci comme ça oder bof, wenn es nur so lala ist.",
+      "Gib die Frage immer zurück: et toi? bei Freunden, et vous? bei Menschen, die du siezt."
+     ],
+     "q": "Comment ça va aujourd'hui? Antworte mir auf Französisch und frag zurück.",
+     "c": "Frag heute drei Menschen auf Französisch, wie es ihnen geht, mit ça va? oder comment allez-vous?"
+    },
+    "es": {
+     "t": "¿Comment ça va?",
+     "g": "Pregunta en francés cómo está alguien y responde con el entusiasmo adecuado.",
+     "p": [
+      "Ça va? es el qué tal de cada día, y la respuesta puede ser la misma: ça va, estoy bien.",
+      "Gradúa tu respuesta: très bien, bien, pas mal, comme ci comme ça, o bof si es un regular.",
+      "Devuelve siempre la pregunta: et toi? a un amigo, et vous? a quien tratas de vous."
+     ],
+     "q": "Comment ça va aujourd'hui? Respóndeme en francés y pregúntame a mí.",
+     "c": "Pregunta hoy en francés a tres personas cómo están, con ça va? o comment allez-vous?"
+    },
+    "fr": {
+     "t": "Comment ça va ?",
+     "g": "Demander des nouvelles et répondre avec le bon niveau d'enthousiasme.",
+     "p": [
+      "Ça va ? est la question de tous les jours, et la réponse peut être la même : ça va.",
+      "On nuance la réponse : très bien, bien, pas mal, comme ci comme ça, ou bof quand c'est moyen.",
+      "On renvoie toujours la question : et toi ? à un ami, et vous ? quand on vouvoie."
+     ],
+     "q": "Comment ça va aujourd'hui ? Réponds-moi et pose-moi la question à ton tour.",
+     "c": "Demande à trois personnes comment elles vont aujourd'hui, avec ça va ? ou comment allez-vous ?"
+    },
+    "it": {
+     "t": "Comment ça va?",
+     "g": "Chiedi in francese come sta qualcuno e rispondi con il giusto entusiasmo.",
+     "p": [
+      "Ça va? è il come va di tutti i giorni, e la risposta può essere identica: ça va, sto bene.",
+      "Gradua la risposta: très bien, bien, pas mal, comme ci comme ça, o bof quando è così così.",
+      "Rilancia sempre la domanda: et toi? a un amico, et vous? a chi dai del vous."
+     ],
+     "q": "Comment ça va aujourd'hui? Rispondimi in francese e chiedimelo a tua volta.",
+     "c": "Oggi chiedi in francese a tre persone come stanno, con ça va? o comment allez-vous?"
+    },
+    "pt": {
+     "t": "Comment ça va?",
+     "g": "Perguntar em francês como alguém está e responder com o entusiasmo certo.",
+     "p": [
+      "Ça va? é o tudo bem do dia a dia, e a resposta pode ser igual: ça va, estou bem.",
+      "Gradua a resposta: très bien, bien, pas mal, comme ci comme ça, ou bof quando é mais ou menos.",
+      "Devolve sempre a pergunta: et toi? a um amigo, et vous? a quem tratas por vous."
+     ],
+     "q": "Comment ça va aujourd'hui? Responde-me em francês e pergunta-me também.",
+     "c": "Pergunta hoje em francês a três pessoas como estão, com ça va? ou comment allez-vous?"
+    },
+    "pt_BR": {
+     "t": "Comment ça va?",
+     "g": "Perguntar em francês como alguém está e responder com o entusiasmo certo.",
+     "p": [
+      "Ça va? é o tudo bem? do dia a dia, e a resposta pode ser igual: ça va, tudo bem.",
+      "Gradue a resposta: très bien, bien, pas mal, comme ci comme ça, ou bof quando está mais ou menos.",
+      "Sempre devolva a pergunta: et toi? para um amigo, et vous? para quem você trata por vous."
+     ],
+     "q": "Comment ça va aujourd'hui? Me responda em francês e me pergunte também.",
+     "c": "Hoje pergunte em francês a três pessoas como elas estão, com ça va? ou comment allez-vous?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Ça va ?",
+      "ex": "Salut Nico, ça va ?"
+     },
+     {
+      "w": "très bien",
+      "ex": "Ça va très bien, merci !"
+     },
+     {
+      "w": "pas mal",
+      "ex": "Pas mal, et toi ?"
+     },
+     {
+      "w": "comme ci comme ça",
+      "ex": "Aujourd'hui, comme ci comme ça."
+     },
+     {
+      "w": "Et toi ?",
+      "ex": "Moi, ça va bien. Et toi ?"
+     },
+     {
+      "w": "Comment allez-vous ?",
+      "ex": "Bonjour, madame. Comment allez-vous ?"
+     }
+    ],
+    "gram": "Ça va ? (familier) / Comment allez-vous ? (poli). Réponses : très bien, bien, pas mal, bof. On renvoie : et toi ? / et vous ?"
+   }
+  },
+  {
+   "d": 8,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 0 to 20",
+     "g": "Count from zéro to vingt in French and use numbers for your age and phone number.",
+     "p": [
+      "Learn them in small groups: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.",
+      "Onze to seize are their own words; from dix-sept, dix-huit, dix-neuf you just add ten plus the number.",
+      "Watch the sounds: six and dix lose their final x before a consonant, and vingt sounds like van with a nasal n."
+     ],
+     "q": "What is your favourite number between zéro and vingt, and why?",
+     "c": "Count from zéro to vingt and back again out loud today, then say your phone number in French."
+    },
+    "de": {
+     "t": "Zahlen von 0 bis 20",
+     "g": "Du zählst von zéro bis vingt und nutzt Zahlen für dein Alter und deine Telefonnummer.",
+     "p": [
+      "Lerne sie in kleinen Gruppen: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.",
+      "Onze bis seize sind eigene Wörter; ab dix-sept, dix-huit, dix-neuf heißt es zehn plus Zahl.",
+      "Achte auf den Klang: six und dix verlieren vor Konsonanten das x, vingt klingt nasal wie wän."
+     ],
+     "q": "Was ist deine Lieblingszahl zwischen zéro und vingt und warum?",
+     "c": "Zähl heute laut von zéro bis vingt und zurück, dann sag deine Telefonnummer auf Französisch."
+    },
+    "es": {
+     "t": "Números del 0 al 20",
+     "g": "Cuenta de zéro a vingt en francés y usa los números para la edad y el teléfono.",
+     "p": [
+      "Apréndelos en grupos pequeños: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.",
+      "De onze a seize son palabras propias; desde dix-sept, dix-huit, dix-neuf es diez más el número.",
+      "Cuidado con los sonidos: six y dix pierden la x ante consonante, y vingt suena van con n nasal."
+     ],
+     "q": "¿Cuál es tu número favorito entre zéro y vingt, y por qué?",
+     "c": "Cuenta hoy en voz alta de zéro a vingt y al revés, y luego di tu número de teléfono en francés."
+    },
+    "fr": {
+     "t": "Les nombres de 0 à 20",
+     "g": "Compter de zéro à vingt et utiliser les nombres pour l'âge et le téléphone.",
+     "p": [
+      "On les apprend par petits groupes : un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.",
+      "De onze à seize, chaque nombre a son mot ; ensuite dix-sept, dix-huit, dix-neuf : dix plus le chiffre.",
+      "Attention au son : six et dix perdent leur x devant une consonne, et le t de vingt est muet."
+     ],
+     "q": "Quel est ton nombre préféré entre zéro et vingt, et pourquoi ?",
+     "c": "Compte de zéro à vingt et à l'envers à voix haute aujourd'hui, puis dis ton numéro de téléphone."
+    },
+    "it": {
+     "t": "I numeri da 0 a 20",
+     "g": "Conta da zéro a vingt in francese e usa i numeri per l'età e il numero di telefono.",
+     "p": [
+      "Imparali a piccoli gruppi: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.",
+      "Da onze a seize sono parole proprie; da dix-sept, dix-huit, dix-neuf è dieci più il numero.",
+      "Attento ai suoni: six e dix perdono la x davanti a consonante, e vingt suona van con la n nasale."
+     ],
+     "q": "Qual è il tuo numero preferito tra zéro e vingt, e perché?",
+     "c": "Oggi conta ad alta voce da zéro a vingt e all'indietro, poi di' il tuo numero di telefono in francese."
+    },
+    "pt": {
+     "t": "Números de 0 a 20",
+     "g": "Contar de zéro a vingt em francês e usar os números para a idade e o telefone.",
+     "p": [
+      "Aprende-os em pequenos grupos: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.",
+      "De onze a seize são palavras próprias; a partir de dix-sept, dix-huit, dix-neuf é dez mais o número.",
+      "Atenção aos sons: six e dix perdem o x antes de consoante, e vingt soa como vã, com som nasal."
+     ],
+     "q": "Qual é o teu número preferido entre zéro e vingt, e porquê?",
+     "c": "Conta hoje em voz alta de zéro a vingt e ao contrário, depois diz o teu número de telefone em francês."
+    },
+    "pt_BR": {
+     "t": "Números de 0 a 20",
+     "g": "Contar de zéro a vingt em francês e usar números para idade e telefone.",
+     "p": [
+      "Aprenda em grupinhos: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.",
+      "De onze a seize são palavras próprias; a partir de dix-sept, dix-huit, dix-neuf é dez mais o número.",
+      "Atenção aos sons: six e dix perdem o x antes de consoante, e vingt soa como vã, nasal."
+     ],
+     "q": "Qual é seu número favorito entre zéro e vingt, e por quê?",
+     "c": "Hoje conte em voz alta de zéro a vingt e de volta, depois diga seu número de telefone em francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "zéro",
+      "ex": "Mon numéro commence par zéro six."
+     },
+     {
+      "w": "cinq",
+      "ex": "J'ai cinq amis à Lyon."
+     },
+     {
+      "w": "dix",
+      "ex": "Il y a dix chaises."
+     },
+     {
+      "w": "douze",
+      "ex": "Douze croissants, s'il vous plaît."
+     },
+     {
+      "w": "seize",
+      "ex": "Ma sœur a seize ans."
+     },
+     {
+      "w": "vingt",
+      "ex": "Le bus numéro vingt arrive."
+     }
+    ],
+    "gram": "1-10 : un à dix. 11-16 : onze, douze, treize, quatorze, quinze, seize. 17-19 : dix-sept, dix-huit, dix-neuf. 20 : vingt."
+   }
+  },
+  {
+   "d": 9,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Être: the verb to be",
+     "g": "Conjugate être in the present tense and use it to describe yourself and others.",
+     "p": [
+      "Être is irregular: je suis, tu es, il or elle est, nous sommes, vous êtes, ils or elles sont.",
+      "Use it for identity, jobs and descriptions: je suis étudiant, elle est sympa, nous sommes contents.",
+      "With jobs, French drops the article: il est médecin means he is a doctor, with no un."
+     ],
+     "q": "Tell me three things about yourself with je suis. Who are you?",
+     "c": "Write five sentences with five different forms of être about people you know."
+    },
+    "de": {
+     "t": "Être: das Verb sein",
+     "g": "Du konjugierst être im Präsens und beschreibst damit dich und andere.",
+     "p": [
+      "Être ist unregelmäßig: je suis, tu es, il oder elle est, nous sommes, vous êtes, ils oder elles sont.",
+      "Man nutzt es für Identität, Beruf und Beschreibungen: je suis étudiant, elle est sympa.",
+      "Bei Berufen fällt der Artikel weg, wie im Deutschen: il est médecin heißt er ist Arzt."
+     ],
+     "q": "Erzähl mir drei Dinge über dich mit je suis. Wer bist du?",
+     "c": "Schreib heute fünf Sätze mit fünf verschiedenen Formen von être über Menschen, die du kennst."
+    },
+    "es": {
+     "t": "Être: el verbo ser y estar",
+     "g": "Conjuga être en presente y úsalo para describirte a ti y a los demás.",
+     "p": [
+      "Être es irregular: je suis, tu es, il o elle est, nous sommes, vous êtes, ils o elles sont.",
+      "Equivale a ser y a estar a la vez: je suis étudiant, soy estudiante; je suis fatigué, estoy cansado.",
+      "Con profesiones no se pone artículo: il est médecin significa él es médico, sin un."
+     ],
+     "q": "Dime tres cosas sobre ti con je suis. ¿Quién eres?",
+     "c": "Escribe hoy cinco frases con cinco formas distintas de être sobre personas que conoces."
+    },
+    "fr": {
+     "t": "Être : le verbe être",
+     "g": "Conjuguer être au présent et s'en servir pour se décrire et décrire les autres.",
+     "p": [
+      "Être est irrégulier : je suis, tu es, il ou elle est, nous sommes, vous êtes, ils ou elles sont.",
+      "On l'utilise pour l'identité, le métier et la description : je suis étudiant, elle est sympa.",
+      "Avec un métier, on ne met pas d'article : il est médecin, et non il est un médecin."
+     ],
+     "q": "Dis-moi trois choses sur toi avec je suis. Qui es-tu ?",
+     "c": "Écris cinq phrases avec cinq formes différentes d'être sur des personnes que tu connais."
+    },
+    "it": {
+     "t": "Être: il verbo essere",
+     "g": "Coniuga être al presente e usalo per descrivere te stesso e gli altri.",
+     "p": [
+      "Être è irregolare: je suis, tu es, il o elle est, nous sommes, vous êtes, ils o elles sont.",
+      "Si usa per identità, professioni e descrizioni: je suis étudiant, elle est sympa.",
+      "Con le professioni si omette l'articolo, come in italiano: il est médecin, è medico."
+     ],
+     "q": "Dimmi tre cose su di te con je suis. Chi sei?",
+     "c": "Oggi scrivi cinque frasi con cinque forme diverse di être su persone che conosci."
+    },
+    "pt": {
+     "t": "Être: o verbo ser e estar",
+     "g": "Conjugar être no presente e usá-lo para te descreveres a ti e aos outros.",
+     "p": [
+      "Être é irregular: je suis, tu es, il ou elle est, nous sommes, vous êtes, ils ou elles sont.",
+      "Vale por ser e estar: je suis étudiant, sou estudante; je suis fatigué, estou cansado.",
+      "Com profissões não se usa artigo: il est médecin quer dizer ele é médico, sem un."
+     ],
+     "q": "Diz-me três coisas sobre ti com je suis. Quem és tu?",
+     "c": "Escreve hoje cinco frases com cinco formas diferentes de être sobre pessoas que conheces."
+    },
+    "pt_BR": {
+     "t": "Être: o verbo ser e estar",
+     "g": "Conjugar être no presente e usá-lo para descrever você e os outros.",
+     "p": [
+      "Être é irregular: je suis, tu es, il ou elle est, nous sommes, vous êtes, ils ou elles sont.",
+      "Ele vale por ser e estar: je suis étudiant, sou estudante; je suis fatigué, estou cansado.",
+      "Com profissões não tem artigo: il est médecin quer dizer ele é médico, sem un."
+     ],
+     "q": "Me conte três coisas sobre você com je suis. Quem é você?",
+     "c": "Hoje escreva cinco frases com cinco formas diferentes de être sobre pessoas que você conhece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je suis",
+      "ex": "Je suis étudiante."
+     },
+     {
+      "w": "tu es",
+      "ex": "Tu es français ?"
+     },
+     {
+      "w": "il est",
+      "ex": "Il est professeur."
+     },
+     {
+      "w": "nous sommes",
+      "ex": "Nous sommes contents."
+     },
+     {
+      "w": "vous êtes",
+      "ex": "Vous êtes très gentil."
+     },
+     {
+      "w": "elles sont",
+      "ex": "Elles sont à la maison."
+     }
+    ],
+    "gram": "Être au présent : je suis, tu es, il/elle est, nous sommes, vous êtes, ils/elles sont. Métier sans article : il est médecin."
+   }
+  },
+  {
+   "d": 10,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Subject pronouns",
+     "g": "Know all the French subject pronouns, including the very common on.",
+     "p": [
+      "Singular: je, tu, il for he, elle for she; je becomes j' before a vowel, as in j'aime.",
+      "Plural: nous, vous, ils and elles; a mixed group of men and women is always ils.",
+      "On means one or people, but in daily speech it mostly means we: on va au café? means shall we go to the café?"
+     ],
+     "q": "Can you say one sentence with on meaning we, about something you do with friends?",
+     "c": "Today, replace nous with on in three sentences you say or write in French."
+    },
+    "de": {
+     "t": "Subjektpronomen",
+     "g": "Du lernst alle französischen Subjektpronomen, auch das sehr häufige on.",
+     "p": [
+      "Singular: je, tu, il für er, elle für sie; vor Vokal wird je zu j', wie in j'aime.",
+      "Plural: nous, vous, ils und elles; eine gemischte Gruppe aus Männern und Frauen ist immer ils.",
+      "On heißt man, bedeutet im Alltag aber meist wir: on va au café? heißt gehen wir ins Café?"
+     ],
+     "q": "Kannst du einen Satz mit on im Sinne von wir sagen, über etwas, das du mit Freunden machst?",
+     "c": "Ersetze heute in drei französischen Sätzen nous durch on."
+    },
+    "es": {
+     "t": "Pronombres personales sujeto",
+     "g": "Conoce todos los pronombres sujeto del francés, incluido el frecuentísimo on.",
+     "p": [
+      "Singular: je, tu, il para él, elle para ella; je se vuelve j' ante vocal, como en j'aime.",
+      "Plural: nous, vous, ils y elles; un grupo mixto de hombres y mujeres siempre es ils.",
+      "On significa uno o la gente, pero en el habla diaria casi siempre es nosotros: on va au café? es ¿vamos al café?"
+     ],
+     "q": "¿Puedes decir una frase con on en el sentido de nosotros, sobre algo que haces con amigos?",
+     "c": "Hoy sustituye nous por on en tres frases que digas o escribas en francés."
+    },
+    "fr": {
+     "t": "Les pronoms sujets",
+     "g": "Maîtriser tous les pronoms sujets, y compris le très courant on.",
+     "p": [
+      "Au singulier : je, tu, il, elle ; je devient j' devant une voyelle, comme dans j'aime.",
+      "Au pluriel : nous, vous, ils et elles ; un groupe mixte se dit toujours ils.",
+      "On peut vouloir dire les gens, mais à l'oral il remplace surtout nous : on va au café ?"
+     ],
+     "q": "Peux-tu dire une phrase avec on au sens de nous, sur une activité entre amis ?",
+     "c": "Aujourd'hui, remplace nous par on dans trois phrases que tu dis ou écris."
+    },
+    "it": {
+     "t": "I pronomi soggetto",
+     "g": "Conosci tutti i pronomi soggetto francesi, compreso il frequentissimo on.",
+     "p": [
+      "Singolare: je, tu, il per lui, elle per lei; davanti a vocale je diventa j', come in j'aime.",
+      "Plurale: nous, vous, ils ed elles; un gruppo misto di uomini e donne è sempre ils.",
+      "On significa si impersonale, ma nel parlato quotidiano vuol dire quasi sempre noi: on va au café? è andiamo al bar?"
+     ],
+     "q": "Sai dire una frase con on nel senso di noi, su qualcosa che fai con gli amici?",
+     "c": "Oggi sostituisci nous con on in tre frasi che dici o scrivi in francese."
+    },
+    "pt": {
+     "t": "Pronomes pessoais sujeito",
+     "g": "Conhecer todos os pronomes sujeito do francês, incluindo o frequentíssimo on.",
+     "p": [
+      "Singular: je, tu, il para ele, elle para ela; je passa a j' antes de vogal, como em j'aime.",
+      "Plural: nous, vous, ils e elles; um grupo misto de homens e mulheres é sempre ils.",
+      "On quer dizer as pessoas, mas no dia a dia significa sobretudo nós, como a gente: on va au café? é vamos ao café?"
+     ],
+     "q": "Consegues dizer uma frase com on no sentido de nós, sobre algo que fazes com amigos?",
+     "c": "Hoje troca nous por on em três frases que digas ou escrevas em francês."
+    },
+    "pt_BR": {
+     "t": "Pronomes pessoais sujeito",
+     "g": "Conhecer todos os pronomes sujeito do francês, incluindo o super comum on.",
+     "p": [
+      "Singular: je, tu, il para ele, elle para ela; je vira j' antes de vogal, como em j'aime.",
+      "Plural: nous, vous, ils e elles; um grupo misto de homens e mulheres é sempre ils.",
+      "On funciona como a gente em português: on va au café? quer dizer a gente vai ao café?"
+     ],
+     "q": "Você consegue dizer uma frase com on no sentido de a gente, sobre algo que faz com amigos?",
+     "c": "Hoje troque nous por on em três frases que você disser ou escrever em francês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je, j'",
+      "ex": "J'habite ici et je suis content."
+     },
+     {
+      "w": "il, elle",
+      "ex": "Il est grand et elle est petite."
+     },
+     {
+      "w": "on",
+      "ex": "On va au cinéma ce soir ?"
+     },
+     {
+      "w": "nous",
+      "ex": "Nous sommes amis."
+     },
+     {
+      "w": "ils",
+      "ex": "Paul et Marie ? Ils sont là."
+     },
+     {
+      "w": "elles",
+      "ex": "Anna et Lucie ? Elles sont en classe."
+     }
+    ],
+    "gram": "Pronoms : je, tu, il, elle, on, nous, vous, ils, elles. Groupe mixte = ils. À l'oral, on = nous, avec le verbe au singulier : on est."
+   }
+  }
+ ]
+}

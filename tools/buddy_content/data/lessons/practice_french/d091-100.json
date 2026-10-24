@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 91,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Passé composé with avoir",
+     "g": "Talk about finished actions in the past with avoir + past participle.",
+     "p": [
+      "The passé composé has two parts: avoir in the present + past participle: j'ai mangé, tu as parlé, nous avons fini.",
+      "For -er verbs the participle ends in -é: parler, parlé; regarder, regardé; acheter, acheté.",
+      "It translates both I ate and I have eaten: hier, j'ai regardé un film."
+     ],
+     "q": "What did you eat yesterday? Answer in French with j'ai mangé...",
+     "c": "Write four French sentences about yesterday with avoir + a participle in -é."
+    },
+    "de": {
+     "t": "Passé composé mit avoir",
+     "g": "Du sprichst über abgeschlossene Handlungen mit avoir + Partizip.",
+     "p": [
+      "Das Passé composé hat zwei Teile: avoir im Präsens + Partizip: j'ai mangé, tu as parlé, nous avons fini.",
+      "Bei Verben auf -er endet das Partizip auf -é: parler, parlé; regarder, regardé; acheter, acheté.",
+      "Es entspricht ich aß und ich habe gegessen: hier, j'ai regardé un film."
+     ],
+     "q": "Was hast du gestern gegessen? Antworte mit j'ai mangé...",
+     "c": "Schreib vier Sätze über gestern mit avoir und einem Partizip auf -é."
+    },
+    "es": {
+     "t": "Passé composé con avoir",
+     "g": "Habla de acciones terminadas en pasado con avoir + participio.",
+     "p": [
+      "El passé composé tiene dos partes: avoir en presente + participio: j'ai mangé, tu as parlé, nous avons fini.",
+      "En los verbos en -er el participio termina en -é: parler, parlé; regarder, regardé; acheter, acheté.",
+      "Equivale a comí y he comido: hier, j'ai regardé un film."
+     ],
+     "q": "¿Qué comiste ayer? Responde en francés con j'ai mangé...",
+     "c": "Escribe cuatro frases sobre ayer con avoir y un participio en -é."
+    },
+    "fr": {
+     "t": "Le passé composé avec avoir",
+     "g": "Raconter des actions terminées avec avoir + participe passé.",
+     "p": [
+      "Le passé composé a deux parties : avoir au présent + participe passé : j'ai mangé, tu as parlé.",
+      "Pour les verbes en -er, le participe finit en -é : parler, parlé ; regarder, regardé ; acheter, acheté.",
+      "On l'utilise pour une action finie : hier, j'ai regardé un film."
+     ],
+     "q": "Qu'est-ce que tu as mangé hier ?",
+     "c": "Écris quatre phrases sur hier avec avoir et un participe en -é."
+    },
+    "it": {
+     "t": "Passé composé con avoir",
+     "g": "Parla di azioni concluse nel passato con avoir + participio passato.",
+     "p": [
+      "Il passé composé ha due parti: avoir al presente + participio: j'ai mangé, tu as parlé, nous avons fini.",
+      "Nei verbi in -er il participio finisce in -é: parler, parlé; regarder, regardé; acheter, acheté.",
+      "Corrisponde al passato prossimo: hier, j'ai regardé un film = ieri ho guardato un film."
+     ],
+     "q": "Cosa hai mangiato ieri? Rispondi in francese con j'ai mangé...",
+     "c": "Scrivi quattro frasi su ieri con avoir e un participio in -é."
+    },
+    "pt": {
+     "t": "Passé composé com avoir",
+     "g": "Falar de ações terminadas no passado com avoir + particípio passado.",
+     "p": [
+      "O passé composé tem duas partes: avoir no presente + particípio: j'ai mangé, tu as parlé, nous avons fini.",
+      "Nos verbos em -er o particípio acaba em -é: parler, parlé; regarder, regardé; acheter, acheté.",
+      "Corresponde ao pretérito perfeito: hier, j'ai regardé un film = ontem vi um filme."
+     ],
+     "q": "O que comeste ontem? Responde em francês com j'ai mangé...",
+     "c": "Escreve quatro frases sobre ontem com avoir e um particípio em -é."
+    },
+    "pt_BR": {
+     "t": "Passé composé com avoir",
+     "g": "Falar de ações terminadas no passado com avoir + particípio passado.",
+     "p": [
+      "O passé composé tem duas partes: avoir no presente + particípio: j'ai mangé, tu as parlé, nous avons fini.",
+      "Nos verbos em -er o particípio termina em -é: parler, parlé; regarder, regardé; acheter, acheté.",
+      "Corresponde ao pretérito perfeito: hier, j'ai regardé un film = ontem eu vi um filme."
+     ],
+     "q": "O que você comeu ontem? Responda em francês com j'ai mangé...",
+     "c": "Escreva quatro frases sobre ontem com avoir e um particípio em -é."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "j'ai mangé",
+      "ex": "Hier soir, j'ai mangé une pizza."
+     },
+     {
+      "w": "tu as parlé",
+      "ex": "Tu as parlé avec ton professeur ?"
+     },
+     {
+      "w": "nous avons acheté",
+      "ex": "Nous avons acheté du pain frais."
+     },
+     {
+      "w": "ils ont regardé",
+      "ex": "Ils ont regardé le match à la télé."
+     },
+     {
+      "w": "hier",
+      "ex": "Hier, j'ai travaillé jusqu'à vingt heures."
+     },
+     {
+      "w": "j'ai fini",
+      "ex": "J'ai fini mes devoirs."
+     }
+    ],
+    "gram": "Passé composé : avoir au présent + participe passé (j'ai parlé, vous avez mangé). Verbes en -er → -é."
+   }
+  },
+  {
+   "d": 92,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Past participles",
+     "g": "Form regular past participles and learn the most common irregular ones.",
+     "p": [
+      "Regular endings: -er verbs give -é (parlé), -ir verbs give -i (fini, choisi), many -re verbs give -u (vendu, attendu).",
+      "Key irregulars: faire, fait; prendre, pris; avoir, eu; être, été; voir, vu; boire, bu; lire, lu.",
+      "More: mettre, mis; dire, dit; écrire, écrit; pouvoir, pu; vouloir, voulu; devoir, dû."
+     ],
+     "q": "What did you do this morning? Use two irregular participles in your French answer.",
+     "c": "Make one French sentence each with fait, pris, vu and bu about your week."
+    },
+    "de": {
+     "t": "Partizipien",
+     "g": "Du bildest regelmäßige Partizipien und lernst die häufigsten unregelmäßigen.",
+     "p": [
+      "Regelmäßig: -er wird -é (parlé), -ir wird -i (fini, choisi), viele -re werden -u (vendu, attendu).",
+      "Wichtige unregelmäßige: faire, fait; prendre, pris; avoir, eu; être, été; voir, vu; boire, bu; lire, lu.",
+      "Weitere: mettre, mis; dire, dit; écrire, écrit; pouvoir, pu; vouloir, voulu; devoir, dû."
+     ],
+     "q": "Was hast du heute Morgen gemacht? Nutze zwei unregelmäßige Partizipien.",
+     "c": "Bilde je einen Satz mit fait, pris, vu und bu über deine Woche."
+    },
+    "es": {
+     "t": "Participios pasados",
+     "g": "Forma los participios regulares y aprende los irregulares más comunes.",
+     "p": [
+      "Regulares: -er da -é (parlé), -ir da -i (fini, choisi), muchos en -re dan -u (vendu, attendu).",
+      "Irregulares clave: faire, fait; prendre, pris; avoir, eu; être, été; voir, vu; boire, bu; lire, lu.",
+      "Más: mettre, mis; dire, dit; écrire, écrit; pouvoir, pu; vouloir, voulu; devoir, dû."
+     ],
+     "q": "¿Qué hiciste esta mañana? Usa dos participios irregulares en tu respuesta.",
+     "c": "Haz una frase con fait, pris, vu y bu sobre tu semana."
+    },
+    "fr": {
+     "t": "Les participes passés",
+     "g": "Former les participes réguliers et apprendre les irréguliers fréquents.",
+     "p": [
+      "Réguliers : -er → -é (parlé), -ir → -i (fini, choisi), beaucoup de verbes en -re → -u (vendu, attendu).",
+      "Irréguliers : faire, fait ; prendre, pris ; avoir, eu ; être, été ; voir, vu ; boire, bu ; lire, lu.",
+      "Encore : mettre, mis ; dire, dit ; écrire, écrit ; pouvoir, pu ; vouloir, voulu ; devoir, dû."
+     ],
+     "q": "Qu'est-ce que tu as fait ce matin ? Utilise deux participes irréguliers.",
+     "c": "Fais une phrase avec fait, pris, vu et bu sur ta semaine."
+    },
+    "it": {
+     "t": "Participi passati",
+     "g": "Forma i participi regolari e impara gli irregolari più comuni.",
+     "p": [
+      "Regolari: -er dà -é (parlé), -ir dà -i (fini, choisi), molti verbi in -re danno -u (vendu, attendu).",
+      "Irregolari chiave: faire, fait; prendre, pris; avoir, eu; être, été; voir, vu; boire, bu; lire, lu.",
+      "Altri: mettre, mis; dire, dit; écrire, écrit; pouvoir, pu; vouloir, voulu; devoir, dû."
+     ],
+     "q": "Cosa hai fatto stamattina? Usa due participi irregolari nella risposta.",
+     "c": "Fai una frase ciascuno con fait, pris, vu e bu sulla tua settimana."
+    },
+    "pt": {
+     "t": "Particípios passados",
+     "g": "Formar os particípios regulares e aprender os irregulares mais comuns.",
+     "p": [
+      "Regulares: -er dá -é (parlé), -ir dá -i (fini, choisi), muitos verbos em -re dão -u (vendu, attendu).",
+      "Irregulares-chave: faire, fait; prendre, pris; avoir, eu; être, été; voir, vu; boire, bu; lire, lu.",
+      "Mais: mettre, mis; dire, dit; écrire, écrit; pouvoir, pu; vouloir, voulu; devoir, dû."
+     ],
+     "q": "O que fizeste esta manhã? Usa dois particípios irregulares na resposta.",
+     "c": "Faz uma frase com fait, pris, vu e bu sobre a tua semana."
+    },
+    "pt_BR": {
+     "t": "Particípios passados",
+     "g": "Formar os particípios regulares e aprender os irregulares mais comuns.",
+     "p": [
+      "Regulares: -er dá -é (parlé), -ir dá -i (fini, choisi), muitos verbos em -re dão -u (vendu, attendu).",
+      "Irregulares-chave: faire, fait; prendre, pris; avoir, eu; être, été; voir, vu; boire, bu; lire, lu.",
+      "Mais: mettre, mis; dire, dit; écrire, écrit; pouvoir, pu; vouloir, voulu; devoir, dû."
+     ],
+     "q": "O que você fez hoje de manhã? Use dois particípios irregulares na resposta.",
+     "c": "Faça uma frase com fait, pris, vu e bu sobre sua semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fait (faire)",
+      "ex": "J'ai fait une longue promenade."
+     },
+     {
+      "w": "pris (prendre)",
+      "ex": "Nous avons pris le train de huit heures."
+     },
+     {
+      "w": "vu (voir)",
+      "ex": "Tu as vu ce film ?"
+     },
+     {
+      "w": "bu (boire)",
+      "ex": "Elle a bu un grand café."
+     },
+     {
+      "w": "eu (avoir)",
+      "ex": "J'ai eu une bonne note."
+     },
+     {
+      "w": "lu (lire)",
+      "ex": "Il a lu tout le livre en un jour."
+     }
+    ],
+    "gram": "Participes : -er → -é, -ir → -i, -re → -u. Irréguliers : fait, pris, mis, dit, écrit, eu, été, vu, bu, lu, pu."
+   }
+  },
+  {
+   "d": 93,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Passé composé with être",
+     "g": "Use être in the passé composé with movement verbs and make the participle agree.",
+     "p": [
+      "About 15 verbs use être, the house of être: aller, venir, partir, arriver, entrer, sortir, monter, descendre, naître, rester, tomber...",
+      "The participle agrees with the subject: il est allé, elle est allée, ils sont allés, elles sont allées.",
+      "Je suis arrivé (a man) and je suis arrivée (a woman) sound the same but are written differently."
+     ],
+     "q": "Where did you go last weekend? Answer in French with je suis allé or allée.",
+     "c": "Write four French sentences about a trip with aller, arriver, partir and rester."
+    },
+    "de": {
+     "t": "Passé composé mit être",
+     "g": "Du nutzt être im Passé composé bei Bewegungsverben und gleichst das Partizip an.",
+     "p": [
+      "Rund 15 Verben nehmen être, das Haus von être: aller, venir, partir, arriver, entrer, sortir, monter, naître, rester, tomber...",
+      "Das Partizip richtet sich nach dem Subjekt: il est allé, elle est allée, ils sont allés, elles sont allées.",
+      "Je suis arrivé (Mann) und je suis arrivée (Frau) klingen gleich, werden aber anders geschrieben."
+     ],
+     "q": "Wohin bist du letztes Wochenende gegangen? Antworte mit je suis allé oder allée.",
+     "c": "Schreib vier Sätze über eine Reise mit aller, arriver, partir und rester."
+    },
+    "es": {
+     "t": "Passé composé con être",
+     "g": "Usa être en el passé composé con verbos de movimiento y haz concordar el participio.",
+     "p": [
+      "Unos 15 verbos usan être, la casa de être: aller, venir, partir, arriver, entrer, sortir, monter, naître, rester, tomber...",
+      "El participio concuerda con el sujeto: il est allé, elle est allée, ils sont allés, elles sont allées.",
+      "Je suis arrivé (hombre) y je suis arrivée (mujer) suenan igual pero se escriben distinto."
+     ],
+     "q": "¿Adónde fuiste el fin de semana pasado? Responde con je suis allé o allée.",
+     "c": "Escribe cuatro frases sobre un viaje con aller, arriver, partir y rester."
+    },
+    "fr": {
+     "t": "Le passé composé avec être",
+     "g": "Utiliser être avec les verbes de mouvement et accorder le participe.",
+     "p": [
+      "Une quinzaine de verbes : aller, venir, partir, arriver, entrer, sortir, monter, descendre, naître, rester, tomber...",
+      "Le participe s'accorde avec le sujet : il est allé, elle est allée, ils sont allés, elles sont allées.",
+      "Je suis arrivé et je suis arrivée se prononcent pareil, mais s'écrivent différemment."
+     ],
+     "q": "Où tu es allé le week-end dernier ?",
+     "c": "Écris quatre phrases sur un voyage avec aller, arriver, partir et rester."
+    },
+    "it": {
+     "t": "Passé composé con être",
+     "g": "Usa être nel passé composé con i verbi di movimento e accorda il participio.",
+     "p": [
+      "Circa 15 verbi usano être, la casa di être: aller, venir, partir, arriver, entrer, sortir, monter, naître, rester, tomber...",
+      "Il participio si accorda col soggetto: il est allé, elle est allée, ils sont allés, elles sont allées.",
+      "Come in italiano: sono andato, sono andata. Je suis arrivé e je suis arrivée suonano uguali."
+     ],
+     "q": "Dove sei andato lo scorso fine settimana? Rispondi con je suis allé o allée.",
+     "c": "Scrivi quattro frasi su un viaggio con aller, arriver, partir e rester."
+    },
+    "pt": {
+     "t": "Passé composé com être",
+     "g": "Usar être no passé composé com verbos de movimento e fazer a concordância do particípio.",
+     "p": [
+      "Uns 15 verbos usam être, a casa de être: aller, venir, partir, arriver, entrer, sortir, monter, naître, rester, tomber...",
+      "O particípio concorda com o sujeito: il est allé, elle est allée, ils sont allés, elles sont allées.",
+      "Je suis arrivé (homem) e je suis arrivée (mulher) soam igual mas escrevem-se de forma diferente."
+     ],
+     "q": "Aonde foste no fim de semana passado? Responde com je suis allé ou allée.",
+     "c": "Escreve quatro frases sobre uma viagem com aller, arriver, partir e rester."
+    },
+    "pt_BR": {
+     "t": "Passé composé com être",
+     "g": "Usar être no passé composé com verbos de movimento e fazer a concordância do particípio.",
+     "p": [
+      "Uns 15 verbos usam être, a casa de être: aller, venir, partir, arriver, entrer, sortir, monter, naître, rester, tomber...",
+      "O particípio concorda com o sujeito: il est allé, elle est allée, ils sont allés, elles sont allées.",
+      "Je suis arrivé (homem) e je suis arrivée (mulher) soam igual, mas se escrevem diferente."
+     ],
+     "q": "Aonde você foi no fim de semana passado? Responda com je suis allé ou allée.",
+     "c": "Escreva quatro frases sobre uma viagem com aller, arriver, partir e rester."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je suis allé(e)",
+      "ex": "Je suis allée au marché ce matin."
+     },
+     {
+      "w": "il est arrivé",
+      "ex": "Le train est arrivé à l'heure."
+     },
+     {
+      "w": "nous sommes partis",
+      "ex": "Nous sommes partis tôt dimanche."
+     },
+     {
+      "w": "elle est restée",
+      "ex": "Elle est restée trois jours à Nice."
+     },
+     {
+      "w": "ils sont venus",
+      "ex": "Mes amis sont venus dîner hier."
+     },
+     {
+      "w": "je suis né(e)",
+      "ex": "Je suis né à Toulouse."
+     }
+    ],
+    "gram": "Être + participe accordé avec le sujet : elle est partie, ils sont venus. Verbes de mouvement et naître, rester, tomber."
+   }
+  },
+  {
+   "d": 94,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "What did you do last weekend?",
+     "g": "Tell a short story about your weekend in the past with sequence words.",
+     "p": [
+      "Order your story: d'abord (first), ensuite and puis (then), après (after), enfin (finally).",
+      "Mix avoir and être verbs: samedi, je suis allé au marché, puis j'ai fait la cuisine.",
+      "Add a short opinion at the end: c'était super, c'était sympa, c'était un peu long."
+     ],
+     "q": "What did you do last weekend? Tell me in French with d'abord, ensuite and enfin.",
+     "c": "Write a five-sentence French story of your last Saturday using four sequence words."
+    },
+    "de": {
+     "t": "Was hast du am Wochenende gemacht?",
+     "g": "Du erzählst mit Zeitwörtern eine kurze Geschichte über dein Wochenende in der Vergangenheit.",
+     "p": [
+      "Ordne deine Geschichte: d'abord (zuerst), ensuite und puis (dann), après (danach), enfin (schließlich).",
+      "Mische avoir- und être-Verben: samedi, je suis allé au marché, puis j'ai fait la cuisine.",
+      "Füg am Ende eine Meinung hinzu: c'était super, c'était sympa, c'était un peu long."
+     ],
+     "q": "Was hast du letztes Wochenende gemacht? Erzähl mit d'abord, ensuite und enfin.",
+     "c": "Schreib fünf Sätze über deinen letzten Samstag mit vier Zeitwörtern."
+    },
+    "es": {
+     "t": "¿Qué hiciste el fin de semana?",
+     "g": "Cuenta una historia corta de tu fin de semana en pasado con palabras de orden.",
+     "p": [
+      "Ordena tu historia: d'abord (primero), ensuite y puis (luego), après (después), enfin (por fin).",
+      "Mezcla verbos con avoir y être: samedi, je suis allé au marché, puis j'ai fait la cuisine.",
+      "Añade una opinión al final: c'était super, c'était sympa, c'était un peu long."
+     ],
+     "q": "¿Qué hiciste el fin de semana pasado? Cuéntamelo con d'abord, ensuite y enfin.",
+     "c": "Escribe una historia de cinco frases sobre tu último sábado con cuatro palabras de orden."
+    },
+    "fr": {
+     "t": "Ton week-end dernier",
+     "g": "Raconter ton week-end au passé avec des mots pour organiser le récit.",
+     "p": [
+      "Organise ton récit : d'abord, ensuite, puis, après, enfin.",
+      "Mélange avoir et être : samedi, je suis allé au marché, puis j'ai fait la cuisine.",
+      "Termine par une opinion : c'était super, c'était sympa, c'était un peu long."
+     ],
+     "q": "Qu'est-ce que tu as fait le week-end dernier ? Raconte avec d'abord, ensuite et enfin.",
+     "c": "Écris cinq phrases sur ton dernier samedi avec quatre mots d'enchaînement."
+    },
+    "it": {
+     "t": "Cosa hai fatto nel weekend?",
+     "g": "Racconta una breve storia del tuo fine settimana al passato con le parole di sequenza.",
+     "p": [
+      "Ordina la storia: d'abord (prima), ensuite e puis (poi), après (dopo), enfin (infine).",
+      "Mescola verbi con avoir ed être: samedi, je suis allé au marché, puis j'ai fait la cuisine.",
+      "Aggiungi un'opinione alla fine: c'était super, c'était sympa, c'était un peu long."
+     ],
+     "q": "Cosa hai fatto lo scorso fine settimana? Raccontalo con d'abord, ensuite ed enfin.",
+     "c": "Scrivi una storia di cinque frasi sul tuo ultimo sabato con quattro parole di sequenza."
+    },
+    "pt": {
+     "t": "O que fizeste no fim de semana?",
+     "g": "Contar uma pequena história do teu fim de semana no passado com palavras de sequência.",
+     "p": [
+      "Organiza a história: d'abord (primeiro), ensuite e puis (depois), après (a seguir), enfin (por fim).",
+      "Mistura verbos com avoir e être: samedi, je suis allé au marché, puis j'ai fait la cuisine.",
+      "Junta uma opinião no fim: c'était super, c'était sympa, c'était un peu long."
+     ],
+     "q": "O que fizeste no fim de semana passado? Conta com d'abord, ensuite e enfin.",
+     "c": "Escreve uma história de cinco frases sobre o teu último sábado com quatro palavras de sequência."
+    },
+    "pt_BR": {
+     "t": "O que você fez no fim de semana?",
+     "g": "Contar uma pequena história do seu fim de semana no passado com palavras de sequência.",
+     "p": [
+      "Organize a história: d'abord (primeiro), ensuite e puis (depois), après (em seguida), enfin (por fim).",
+      "Misture verbos com avoir e être: samedi, je suis allé au marché, puis j'ai fait la cuisine.",
+      "Acrescente uma opinião no fim: c'était super, c'était sympa, c'était un peu long."
+     ],
+     "q": "O que você fez no fim de semana passado? Conte com d'abord, ensuite e enfin.",
+     "c": "Escreva uma história de cinco frases sobre seu último sábado com quatro palavras de sequência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "d'abord",
+      "ex": "D'abord, j'ai pris un bon petit-déjeuner."
+     },
+     {
+      "w": "ensuite",
+      "ex": "Ensuite, je suis allé au parc."
+     },
+     {
+      "w": "puis",
+      "ex": "Puis, j'ai retrouvé des amis."
+     },
+     {
+      "w": "après",
+      "ex": "Après, nous avons mangé au restaurant."
+     },
+     {
+      "w": "enfin",
+      "ex": "Enfin, je suis rentré à la maison."
+     },
+     {
+      "w": "c'était super",
+      "ex": "Le concert ? C'était super !"
+     }
+    ],
+    "gram": "Récit au passé composé organisé par d'abord, ensuite, puis, après, enfin. Opinion : c'était + adjectif."
+   }
+  },
+  {
+   "d": 95,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Time markers for the past",
+     "g": "Place past events in time with hier, la semaine dernière, il y a and déjà.",
+     "p": [
+      "Points in time: hier, avant-hier, hier soir, la semaine dernière, le mois dernier, l'année dernière.",
+      "Il y a + duration means ago: il y a deux ans, j'ai visité Rome; it goes before or after the event.",
+      "Déjà (already) and pas encore (not yet) go between avoir or être and the participle: j'ai déjà mangé, je n'ai pas encore fini."
+     ],
+     "q": "What did you do the day before yesterday, and what have you not done yet this week?",
+     "c": "Write four French sentences with hier, il y a, déjà and pas encore."
+    },
+    "de": {
+     "t": "Zeitangaben für die Vergangenheit",
+     "g": "Du ordnest Ereignisse mit hier, la semaine dernière, il y a und déjà zeitlich ein.",
+     "p": [
+      "Zeitpunkte: hier, avant-hier, hier soir, la semaine dernière, le mois dernier, l'année dernière.",
+      "Il y a + Dauer heißt vor: il y a deux ans, j'ai visité Rome.",
+      "Déjà (schon) und pas encore (noch nicht) stehen zwischen Hilfsverb und Partizip: j'ai déjà mangé, je n'ai pas encore fini."
+     ],
+     "q": "Was hast du vorgestern gemacht, und was hast du diese Woche noch nicht gemacht?",
+     "c": "Schreib vier Sätze mit hier, il y a, déjà und pas encore."
+    },
+    "es": {
+     "t": "Marcadores de tiempo pasado",
+     "g": "Sitúa hechos pasados con hier, la semaine dernière, il y a y déjà.",
+     "p": [
+      "Momentos: hier, avant-hier, hier soir, la semaine dernière, le mois dernier, l'année dernière.",
+      "Il y a + duración significa hace: il y a deux ans, j'ai visité Rome.",
+      "Déjà (ya) y pas encore (todavía no) van entre el auxiliar y el participio: j'ai déjà mangé, je n'ai pas encore fini."
+     ],
+     "q": "¿Qué hiciste anteayer y qué no has hecho todavía esta semana?",
+     "c": "Escribe cuatro frases con hier, il y a, déjà y pas encore."
+    },
+    "fr": {
+     "t": "Les indicateurs de temps du passé",
+     "g": "Situer une action passée avec hier, la semaine dernière, il y a et déjà.",
+     "p": [
+      "Moments : hier, avant-hier, hier soir, la semaine dernière, le mois dernier, l'année dernière.",
+      "Il y a + durée : il y a deux ans, j'ai visité Rome.",
+      "Déjà et pas encore se placent entre l'auxiliaire et le participe : j'ai déjà mangé, je n'ai pas encore fini."
+     ],
+     "q": "Qu'est-ce que tu as fait avant-hier, et qu'est-ce que tu n'as pas encore fait cette semaine ?",
+     "c": "Écris quatre phrases avec hier, il y a, déjà et pas encore."
+    },
+    "it": {
+     "t": "Indicatori di tempo passato",
+     "g": "Colloca i fatti passati con hier, la semaine dernière, il y a e déjà.",
+     "p": [
+      "Momenti: hier, avant-hier, hier soir, la semaine dernière, le mois dernier, l'année dernière.",
+      "Il y a + durata significa fa: il y a deux ans, j'ai visité Rome = due anni fa ho visitato Roma.",
+      "Déjà (già) e pas encore (non ancora) vanno tra ausiliare e participio: j'ai déjà mangé, je n'ai pas encore fini."
+     ],
+     "q": "Cosa hai fatto l'altro ieri e cosa non hai ancora fatto questa settimana?",
+     "c": "Scrivi quattro frasi con hier, il y a, déjà e pas encore."
+    },
+    "pt": {
+     "t": "Marcadores de tempo passado",
+     "g": "Situar factos passados com hier, la semaine dernière, il y a e déjà.",
+     "p": [
+      "Momentos: hier, avant-hier, hier soir, la semaine dernière, le mois dernier, l'année dernière.",
+      "Il y a + duração quer dizer há: il y a deux ans, j'ai visité Rome = há dois anos visitei Roma.",
+      "Déjà (já) e pas encore (ainda não) ficam entre o auxiliar e o particípio: j'ai déjà mangé, je n'ai pas encore fini."
+     ],
+     "q": "O que fizeste anteontem e o que ainda não fizeste esta semana?",
+     "c": "Escreve quatro frases com hier, il y a, déjà e pas encore."
+    },
+    "pt_BR": {
+     "t": "Marcadores de tempo passado",
+     "g": "Situar fatos passados com hier, la semaine dernière, il y a e déjà.",
+     "p": [
+      "Momentos: hier, avant-hier, hier soir, la semaine dernière, le mois dernier, l'année dernière.",
+      "Il y a + duração quer dizer há ou atrás: il y a deux ans, j'ai visité Rome.",
+      "Déjà (já) e pas encore (ainda não) ficam entre o auxiliar e o particípio: j'ai déjà mangé, je n'ai pas encore fini."
+     ],
+     "q": "O que você fez anteontem e o que ainda não fez nesta semana?",
+     "c": "Escreva quatro frases com hier, il y a, déjà e pas encore."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "avant-hier",
+      "ex": "Avant-hier, j'ai vu ma grand-mère."
+     },
+     {
+      "w": "la semaine dernière",
+      "ex": "La semaine dernière, il a beaucoup plu."
+     },
+     {
+      "w": "il y a deux ans",
+      "ex": "Il y a deux ans, j'ai déménagé."
+     },
+     {
+      "w": "l'année dernière",
+      "ex": "L'année dernière, nous sommes allés en Grèce."
+     },
+     {
+      "w": "déjà",
+      "ex": "Tu as déjà visité Paris ?"
+     },
+     {
+      "w": "pas encore",
+      "ex": "Je n'ai pas encore lu ce livre."
+     }
+    ],
+    "gram": "Il y a + durée (il y a trois jours). Déjà / pas encore entre l'auxiliaire et le participe : j'ai déjà vu."
+   }
+  },
+  {
+   "d": 96,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Negation in the past",
+     "g": "Put ne... pas and ne... jamais in the right place in the passé composé.",
+     "p": [
+      "Ne and pas surround the auxiliary, not the participle: je n'ai pas vu, elle n'est pas venue.",
+      "Same for jamais, rien and plus: je ne suis jamais allé au Japon, il n'a rien mangé, je n'ai plus pris la voiture.",
+      "In spoken French ne often disappears: j'ai pas vu; write it with ne."
+     ],
+     "q": "Name a country where you have never been, in French: je ne suis jamais allé...",
+     "c": "Write three French sentences about things you did not do last week, using pas, jamais and rien."
+    },
+    "de": {
+     "t": "Verneinung in der Vergangenheit",
+     "g": "Du setzt ne... pas und ne... jamais im Passé composé an die richtige Stelle.",
+     "p": [
+      "Ne und pas umschließen das Hilfsverb, nicht das Partizip: je n'ai pas vu, elle n'est pas venue.",
+      "Genauso mit jamais, rien und plus: je ne suis jamais allé au Japon, il n'a rien mangé.",
+      "Gesprochen fällt ne oft weg: j'ai pas vu; schriftlich behältst du es."
+     ],
+     "q": "Nenne auf Französisch ein Land, in dem du nie warst: je ne suis jamais allé...",
+     "c": "Schreib drei Sätze über Dinge, die du letzte Woche nicht gemacht hast, mit pas, jamais und rien."
+    },
+    "es": {
+     "t": "La negación en pasado",
+     "g": "Coloca bien ne... pas y ne... jamais en el passé composé.",
+     "p": [
+      "Ne y pas rodean al auxiliar, no al participio: je n'ai pas vu, elle n'est pas venue.",
+      "Igual con jamais, rien y plus: je ne suis jamais allé au Japon, il n'a rien mangé.",
+      "Al hablar, ne a menudo desaparece: j'ai pas vu; por escrito se mantiene."
+     ],
+     "q": "Di en francés un país donde nunca has estado: je ne suis jamais allé...",
+     "c": "Escribe tres frases sobre cosas que no hiciste la semana pasada con pas, jamais y rien."
+    },
+    "fr": {
+     "t": "La négation au passé",
+     "g": "Placer ne... pas et ne... jamais au passé composé.",
+     "p": [
+      "Ne et pas entourent l'auxiliaire : je n'ai pas vu, elle n'est pas venue.",
+      "Pareil avec jamais, rien et plus : je ne suis jamais allé au Japon, il n'a rien mangé.",
+      "À l'oral, le ne disparaît souvent : j'ai pas vu ; à l'écrit, on le garde."
+     ],
+     "q": "Cite un pays où tu n'es jamais allé.",
+     "c": "Écris trois phrases sur ce que tu n'as pas fait la semaine dernière avec pas, jamais et rien."
+    },
+    "it": {
+     "t": "La negazione al passato",
+     "g": "Metti ne... pas e ne... jamais al posto giusto nel passé composé.",
+     "p": [
+      "Ne e pas circondano l'ausiliare, non il participio: je n'ai pas vu, elle n'est pas venue.",
+      "Lo stesso con jamais, rien e plus: je ne suis jamais allé au Japon, il n'a rien mangé.",
+      "Nel parlato ne spesso sparisce: j'ai pas vu; per iscritto si mantiene."
+     ],
+     "q": "Di' in francese un paese dove non sei mai stato: je ne suis jamais allé...",
+     "c": "Scrivi tre frasi su cose che non hai fatto la settimana scorsa con pas, jamais e rien."
+    },
+    "pt": {
+     "t": "A negação no passado",
+     "g": "Colocar bem ne... pas e ne... jamais no passé composé.",
+     "p": [
+      "Ne e pas rodeiam o auxiliar, não o particípio: je n'ai pas vu, elle n'est pas venue.",
+      "O mesmo com jamais, rien e plus: je ne suis jamais allé au Japon, il n'a rien mangé.",
+      "Na fala, o ne desaparece muitas vezes: j'ai pas vu; por escrito mantém-se."
+     ],
+     "q": "Diz em francês um país onde nunca estiveste: je ne suis jamais allé...",
+     "c": "Escreve três frases sobre coisas que não fizeste na semana passada com pas, jamais e rien."
+    },
+    "pt_BR": {
+     "t": "A negação no passado",
+     "g": "Colocar bem ne... pas e ne... jamais no passé composé.",
+     "p": [
+      "Ne e pas ficam em volta do auxiliar, não do particípio: je n'ai pas vu, elle n'est pas venue.",
+      "O mesmo com jamais, rien e plus: je ne suis jamais allé au Japon, il n'a rien mangé.",
+      "Na fala, o ne muitas vezes some: j'ai pas vu; por escrito ele fica."
+     ],
+     "q": "Diga em francês um país onde você nunca esteve: je ne suis jamais allé...",
+     "c": "Escreva três frases sobre coisas que você não fez na semana passada com pas, jamais e rien."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je n'ai pas vu",
+      "ex": "Je n'ai pas vu tes messages, désolé."
+     },
+     {
+      "w": "elle n'est pas venue",
+      "ex": "Elle n'est pas venue à la fête."
+     },
+     {
+      "w": "ne... jamais",
+      "ex": "Je ne suis jamais allé en Afrique."
+     },
+     {
+      "w": "ne... rien",
+      "ex": "Il n'a rien acheté au marché."
+     },
+     {
+      "w": "ne... plus",
+      "ex": "Après ce jour, je n'ai plus pris la voiture."
+     },
+     {
+      "w": "ne... personne",
+      "ex": "Je n'ai vu personne au bureau."
+     }
+    ],
+    "gram": "Ne + auxiliaire + pas / jamais / rien / plus + participe : je n'ai rien vu. Mais : je n'ai vu personne."
+   }
+  },
+  {
+   "d": 97,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Reflexive verbs in the past",
+     "g": "Use reflexive verbs in the passé composé with être and agreement.",
+     "p": [
+      "All reflexive verbs take être: je me suis levé, tu t'es habillé, il s'est reposé.",
+      "The participle usually agrees with the subject: elle s'est levée tôt, nous nous sommes amusés.",
+      "Negative: ne goes before the pronoun and pas after être: je ne me suis pas réveillé."
+     ],
+     "q": "What time did you get up this morning? Answer in French with je me suis levé or levée.",
+     "c": "Tell your morning in four French sentences with se réveiller, se lever, se doucher and s'habiller."
+    },
+    "de": {
+     "t": "Reflexive Verben in der Vergangenheit",
+     "g": "Du nutzt reflexive Verben im Passé composé mit être und Angleichung.",
+     "p": [
+      "Alle reflexiven Verben nehmen être: je me suis levé, tu t'es habillé, il s'est reposé.",
+      "Das Partizip richtet sich meist nach dem Subjekt: elle s'est levée tôt, nous nous sommes amusés.",
+      "Verneinung: ne vor dem Pronomen, pas nach être: je ne me suis pas réveillé."
+     ],
+     "q": "Um wie viel Uhr bist du heute aufgestanden? Antworte mit je me suis levé oder levée.",
+     "c": "Erzähl deinen Morgen in vier Sätzen mit se réveiller, se lever, se doucher und s'habiller."
+    },
+    "es": {
+     "t": "Verbos reflexivos en pasado",
+     "g": "Usa los verbos reflexivos en passé composé con être y concordancia.",
+     "p": [
+      "Todos los reflexivos usan être: je me suis levé, tu t'es habillé, il s'est reposé.",
+      "El participio suele concordar con el sujeto: elle s'est levée tôt, nous nous sommes amusés.",
+      "En negativa, ne va antes del pronombre y pas después de être: je ne me suis pas réveillé."
+     ],
+     "q": "¿A qué hora te levantaste esta mañana? Responde con je me suis levé o levée.",
+     "c": "Cuenta tu mañana en cuatro frases con se réveiller, se lever, se doucher y s'habiller."
+    },
+    "fr": {
+     "t": "Les verbes pronominaux au passé",
+     "g": "Conjuguer les verbes pronominaux au passé composé avec être et l'accord.",
+     "p": [
+      "Tous les verbes pronominaux prennent être : je me suis levé, tu t'es habillé, il s'est reposé.",
+      "En général, le participe s'accorde avec le sujet : elle s'est levée tôt, nous nous sommes amusés.",
+      "Négation : ne avant le pronom, pas après être : je ne me suis pas réveillé."
+     ],
+     "q": "À quelle heure tu t'es levé ce matin ?",
+     "c": "Raconte ton matin en quatre phrases avec se réveiller, se lever, se doucher et s'habiller."
+    },
+    "it": {
+     "t": "Verbi riflessivi al passato",
+     "g": "Usa i verbi riflessivi nel passé composé con être e l'accordo.",
+     "p": [
+      "Tutti i riflessivi usano être: je me suis levé, tu t'es habillé, il s'est reposé.",
+      "Il participio di solito si accorda col soggetto: elle s'est levée tôt, nous nous sommes amusés.",
+      "Negazione: ne prima del pronome, pas dopo être: je ne me suis pas réveillé."
+     ],
+     "q": "A che ora ti sei alzato stamattina? Rispondi con je me suis levé o levée.",
+     "c": "Racconta la tua mattina in quattro frasi con se réveiller, se lever, se doucher e s'habiller."
+    },
+    "pt": {
+     "t": "Verbos reflexos no passado",
+     "g": "Usar os verbos reflexos no passé composé com être e concordância.",
+     "p": [
+      "Todos os reflexos usam être: je me suis levé, tu t'es habillé, il s'est reposé.",
+      "O particípio costuma concordar com o sujeito: elle s'est levée tôt, nous nous sommes amusés.",
+      "Na negativa, ne vem antes do pronome e pas depois de être: je ne me suis pas réveillé."
+     ],
+     "q": "A que horas te levantaste esta manhã? Responde com je me suis levé ou levée.",
+     "c": "Conta a tua manhã em quatro frases com se réveiller, se lever, se doucher e s'habiller."
+    },
+    "pt_BR": {
+     "t": "Verbos reflexivos no passado",
+     "g": "Usar os verbos reflexivos no passé composé com être e concordância.",
+     "p": [
+      "Todos os reflexivos usam être: je me suis levé, tu t'es habillé, il s'est reposé.",
+      "O particípio costuma concordar com o sujeito: elle s'est levée tôt, nous nous sommes amusés.",
+      "Na negativa, ne vem antes do pronome e pas depois de être: je ne me suis pas réveillé."
+     ],
+     "q": "Que horas você se levantou hoje de manhã? Responda com je me suis levé ou levée.",
+     "c": "Conte sua manhã em quatro frases com se réveiller, se lever, se doucher e s'habiller."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je me suis levé(e)",
+      "ex": "Je me suis levée à six heures."
+     },
+     {
+      "w": "il s'est réveillé",
+      "ex": "Il s'est réveillé très tard."
+     },
+     {
+      "w": "elle s'est habillée",
+      "ex": "Elle s'est habillée en vitesse."
+     },
+     {
+      "w": "nous nous sommes amusés",
+      "ex": "Nous nous sommes bien amusés hier."
+     },
+     {
+      "w": "se reposer",
+      "ex": "Dimanche, je me suis reposé."
+     },
+     {
+      "w": "se dépêcher",
+      "ex": "Ils se sont dépêchés pour le train."
+     }
+    ],
+    "gram": "Pronominaux au passé composé : être + accord (elle s'est levée). Négation : je ne me suis pas levé."
+   }
+  },
+  {
+   "d": 98,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Holidays and travel",
+     "g": "Talk about holidays and travel in French, past and future.",
+     "p": [
+      "Key phrases: les vacances (always plural), partir en vacances, partir en voyage, faire ses valises.",
+      "Places and transport: aller à l'étranger, voyager en train, en avion, à vélo; loger à l'hôtel, chez des amis.",
+      "Talk about past trips with the passé composé and plans with aller + infinitive."
+     ],
+     "q": "Tell me about a holiday you enjoyed: where did you go and what did you do?",
+     "c": "Write four French sentences about your dream trip: where, how, with whom and for how long."
+    },
+    "de": {
+     "t": "Urlaub und Reisen",
+     "g": "Du sprichst auf Französisch über Urlaub und Reisen, vergangene und geplante.",
+     "p": [
+      "Wichtig: les vacances (immer Plural), partir en vacances, partir en voyage, faire ses valises.",
+      "Orte und Verkehr: aller à l'étranger, voyager en train, en avion, à vélo; loger à l'hôtel, chez des amis.",
+      "Vergangene Reisen im Passé composé, Pläne mit aller + Infinitiv."
+     ],
+     "q": "Erzähl mir von einem schönen Urlaub: wohin bist du gefahren und was hast du gemacht?",
+     "c": "Schreib vier Sätze über deine Traumreise: wohin, wie, mit wem und wie lange."
+    },
+    "es": {
+     "t": "Vacaciones y viajes",
+     "g": "Habla en francés de vacaciones y viajes, pasados y futuros.",
+     "p": [
+      "Frases clave: les vacances (siempre plural), partir en vacances, partir en voyage, faire ses valises.",
+      "Lugares y transporte: aller à l'étranger, voyager en train, en avion, à vélo; loger à l'hôtel, chez des amis.",
+      "Viajes pasados con el passé composé y planes con aller + infinitivo."
+     ],
+     "q": "Háblame de unas vacaciones que te gustaron: ¿adónde fuiste y qué hiciste?",
+     "c": "Escribe cuatro frases sobre tu viaje soñado: adónde, cómo, con quién y cuánto tiempo."
+    },
+    "fr": {
+     "t": "Vacances et voyages",
+     "g": "Parler des vacances et des voyages, passés et à venir.",
+     "p": [
+      "Expressions : les vacances (toujours au pluriel), partir en vacances, partir en voyage, faire ses valises.",
+      "Lieux et transports : aller à l'étranger, voyager en train, en avion, à vélo ; loger à l'hôtel, chez des amis.",
+      "Les voyages passés au passé composé, les projets avec aller + infinitif."
+     ],
+     "q": "Parle-moi de vacances que tu as aimées : où es-tu allé et qu'est-ce que tu as fait ?",
+     "c": "Écris quatre phrases sur ton voyage de rêve : où, comment, avec qui et combien de temps."
+    },
+    "it": {
+     "t": "Vacanze e viaggi",
+     "g": "Parla in francese di vacanze e viaggi, passati e futuri.",
+     "p": [
+      "Frasi chiave: les vacances (sempre plurale), partir en vacances, partir en voyage, faire ses valises.",
+      "Luoghi e trasporti: aller à l'étranger, voyager en train, en avion, à vélo; loger à l'hôtel, chez des amis.",
+      "Viaggi passati col passé composé e programmi con aller + infinito."
+     ],
+     "q": "Raccontami una vacanza che ti è piaciuta: dove sei andato e cosa hai fatto?",
+     "c": "Scrivi quattro frasi sul viaggio dei tuoi sogni: dove, come, con chi e per quanto tempo."
+    },
+    "pt": {
+     "t": "Férias e viagens",
+     "g": "Falar em francês de férias e viagens, passadas e futuras.",
+     "p": [
+      "Frases-chave: les vacances (sempre plural), partir en vacances, partir en voyage, faire ses valises.",
+      "Lugares e transportes: aller à l'étranger, voyager en train, en avion, à vélo; loger à l'hôtel, chez des amis.",
+      "Viagens passadas com o passé composé e planos com aller + infinitivo."
+     ],
+     "q": "Fala-me de umas férias de que gostaste: aonde foste e o que fizeste?",
+     "c": "Escreve quatro frases sobre a viagem dos teus sonhos: aonde, como, com quem e por quanto tempo."
+    },
+    "pt_BR": {
+     "t": "Férias e viagens",
+     "g": "Falar em francês de férias e viagens, passadas e futuras.",
+     "p": [
+      "Frases-chave: les vacances (sempre plural), partir en vacances, partir en voyage, faire ses valises.",
+      "Lugares e transporte: aller à l'étranger, voyager en train, en avion, à vélo; loger à l'hôtel, chez des amis.",
+      "Viagens passadas com o passé composé e planos com aller + infinitivo."
+     ],
+     "q": "Me fale de umas férias de que você gostou: aonde foi e o que fez?",
+     "c": "Escreva quatro frases sobre a viagem dos seus sonhos: aonde, como, com quem e por quanto tempo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "les vacances",
+      "ex": "Les vacances commencent samedi !"
+     },
+     {
+      "w": "partir en voyage",
+      "ex": "Nous partons en voyage au Maroc."
+     },
+     {
+      "w": "faire ses valises",
+      "ex": "Je fais mes valises ce soir."
+     },
+     {
+      "w": "à l'étranger",
+      "ex": "Elle a travaillé un an à l'étranger."
+     },
+     {
+      "w": "loger chez",
+      "ex": "Nous avons logé chez des amis."
+     },
+     {
+      "w": "un séjour",
+      "ex": "Bon séjour à Montréal !"
+     }
+    ],
+    "gram": "Partir en vacances / en voyage ; voyager en train, en avion, mais à pied, à vélo. Les vacances : toujours au pluriel."
+   }
+  },
+  {
+   "d": 99,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "At the airport and train station",
+     "g": "Understand check-in, boarding and delays in French at the airport and station.",
+     "p": [
+      "At the airport: l'enregistrement (check-in), la carte d'embarquement, la porte, l'embarquement immédiat.",
+      "At the station: le quai (platform), la voie, composter or valider son billet, la correspondance.",
+      "Delays and changes: le train est en retard, le vol est annulé, à l'heure, retardé de vingt minutes."
+     ],
+     "q": "You hear: le train pour Lyon partira voie 7 avec 10 minutes de retard. What does it mean?",
+     "c": "Write three French announcements you might hear at a station or airport."
+    },
+    "de": {
+     "t": "Am Flughafen und Bahnhof",
+     "g": "Du verstehst Check-in, Einsteigen und Verspätungen am Flughafen und Bahnhof.",
+     "p": [
+      "Flughafen: l'enregistrement (Check-in), la carte d'embarquement, la porte, l'embarquement immédiat.",
+      "Bahnhof: le quai (Bahnsteig), la voie (Gleis), valider son billet, la correspondance (Anschluss).",
+      "Verspätungen: le train est en retard, le vol est annulé, à l'heure, retardé de vingt minutes."
+     ],
+     "q": "Du hörst: le train pour Lyon partira voie 7 avec 10 minutes de retard. Was bedeutet das?",
+     "c": "Schreib drei Durchsagen, die du am Bahnhof oder Flughafen hören könntest."
+    },
+    "es": {
+     "t": "En el aeropuerto y la estación",
+     "g": "Entiende la facturación, el embarque y los retrasos en francés.",
+     "p": [
+      "En el aeropuerto: l'enregistrement (facturación), la carte d'embarquement, la porte, l'embarquement immédiat.",
+      "En la estación: le quai (andén), la voie (vía), valider son billet, la correspondance (transbordo).",
+      "Retrasos: le train est en retard, le vol est annulé, à l'heure, retardé de vingt minutes."
+     ],
+     "q": "Oyes: le train pour Lyon partira voie 7 avec 10 minutes de retard. ¿Qué significa?",
+     "c": "Escribe tres avisos en francés que podrías oír en una estación o un aeropuerto."
+    },
+    "fr": {
+     "t": "À l'aéroport et à la gare",
+     "g": "Comprendre l'enregistrement, l'embarquement et les retards.",
+     "p": [
+      "À l'aéroport : l'enregistrement, la carte d'embarquement, la porte, l'embarquement immédiat.",
+      "À la gare : le quai, la voie, valider son billet, la correspondance.",
+      "Retards et changements : le train est en retard, le vol est annulé, à l'heure, retardé de vingt minutes."
+     ],
+     "q": "Tu entends : le train pour Lyon partira voie 7 avec 10 minutes de retard. Qu'est-ce que ça veut dire ?",
+     "c": "Écris trois annonces qu'on peut entendre à la gare ou à l'aéroport."
+    },
+    "it": {
+     "t": "In aeroporto e in stazione",
+     "g": "Capisci check-in, imbarco e ritardi in francese.",
+     "p": [
+      "In aeroporto: l'enregistrement (check-in), la carte d'embarquement, la porte, l'embarquement immédiat.",
+      "In stazione: le quai (banchina), la voie (binario), valider son billet, la correspondance (coincidenza).",
+      "Ritardi: le train est en retard, le vol est annulé, à l'heure, retardé de vingt minutes."
+     ],
+     "q": "Senti: le train pour Lyon partira voie 7 avec 10 minutes de retard. Cosa significa?",
+     "c": "Scrivi tre annunci in francese che potresti sentire in stazione o in aeroporto."
+    },
+    "pt": {
+     "t": "No aeroporto e na estação",
+     "g": "Perceber o check-in, o embarque e os atrasos em francês.",
+     "p": [
+      "No aeroporto: l'enregistrement (check-in), la carte d'embarquement, la porte, l'embarquement immédiat.",
+      "Na estação: le quai (cais), la voie (linha), valider son billet, la correspondance (ligação).",
+      "Atrasos: le train est en retard, le vol est annulé, à l'heure, retardé de vingt minutes."
+     ],
+     "q": "Ouves: le train pour Lyon partira voie 7 avec 10 minutes de retard. O que significa?",
+     "c": "Escreve três avisos em francês que podes ouvir numa estação ou num aeroporto."
+    },
+    "pt_BR": {
+     "t": "No aeroporto e na estação",
+     "g": "Entender o check-in, o embarque e os atrasos em francês.",
+     "p": [
+      "No aeroporto: l'enregistrement (check-in), la carte d'embarquement, la porte, l'embarquement immédiat.",
+      "Na estação: le quai (plataforma), la voie (linha), valider son billet, la correspondance (conexão).",
+      "Atrasos: le train est en retard, le vol est annulé, à l'heure, retardé de vingt minutes."
+     ],
+     "q": "Você ouve: le train pour Lyon partira voie 7 avec 10 minutes de retard. O que significa?",
+     "c": "Escreva três avisos em francês que você pode ouvir numa estação ou num aeroporto."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "l'embarquement",
+      "ex": "L'embarquement commence à quinze heures."
+     },
+     {
+      "w": "la carte d'embarquement",
+      "ex": "Votre carte d'embarquement, s'il vous plaît."
+     },
+     {
+      "w": "le quai",
+      "ex": "Le train part du quai numéro 3."
+     },
+     {
+      "w": "en retard",
+      "ex": "Mon vol est en retard d'une heure."
+     },
+     {
+      "w": "annulé, annulée",
+      "ex": "Le train de 18 h est annulé."
+     },
+     {
+      "w": "la correspondance",
+      "ex": "J'ai une correspondance à Lyon."
+     }
+    ],
+    "gram": "Être en retard / à l'heure ; retardé de + durée ; le train partira voie 7 (futur simple dans les annonces)."
+   }
+  },
+  {
+   "d": 100,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Imparfait: forming it",
+     "g": "Form the imparfait, the past tense for descriptions and habits.",
+     "p": [
+      "Take the nous form of the present, drop -ons: nous parlons gives parl-, nous finissons gives finiss-.",
+      "Add the endings -ais, -ais, -ait, -ions, -iez, -aient: je parlais, nous finissions, ils prenaient.",
+      "Only être is irregular: j'étais, tu étais, il était, nous étions; -ais, -ait, -aient all sound the same."
+     ],
+     "q": "Can you form the imparfait of avoir, faire and aller? Tell me je... for each one.",
+     "c": "Write the imparfait of five verbs you use every day, with je and nous."
+    },
+    "de": {
+     "t": "Imparfait: Bildung",
+     "g": "Du bildest das Imparfait, die Vergangenheitsform für Beschreibungen und Gewohnheiten.",
+     "p": [
+      "Nimm die nous-Form im Präsens und streiche -ons: nous parlons → parl-, nous finissons → finiss-.",
+      "Endungen -ais, -ais, -ait, -ions, -iez, -aient: je parlais, nous finissions, ils prenaient.",
+      "Nur être ist unregelmäßig: j'étais, tu étais, il était, nous étions; -ais, -ait, -aient klingen gleich."
+     ],
+     "q": "Kannst du das Imparfait von avoir, faire und aller bilden? Sag mir jeweils die je-Form.",
+     "c": "Schreib das Imparfait von fünf Alltagsverben mit je und nous."
+    },
+    "es": {
+     "t": "Imparfait: cómo se forma",
+     "g": "Forma el imparfait, el pasado de las descripciones y los hábitos.",
+     "p": [
+      "Toma la forma nous del presente y quita -ons: nous parlons da parl-, nous finissons da finiss-.",
+      "Añade -ais, -ais, -ait, -ions, -iez, -aient: je parlais, nous finissions, ils prenaient.",
+      "Solo être es irregular: j'étais, tu étais, il était, nous étions; -ais, -ait, -aient suenan igual."
+     ],
+     "q": "¿Sabes formar el imparfait de avoir, faire y aller? Dime la forma con je de cada uno.",
+     "c": "Escribe el imparfait de cinco verbos que usas a diario, con je y nous."
+    },
+    "fr": {
+     "t": "L'imparfait : la formation",
+     "g": "Former l'imparfait, le temps des descriptions et des habitudes.",
+     "p": [
+      "On prend nous au présent et on enlève -ons : nous parlons → parl-, nous finissons → finiss-.",
+      "Terminaisons : -ais, -ais, -ait, -ions, -iez, -aient : je parlais, nous finissions, ils prenaient.",
+      "Seul être est irrégulier : j'étais, nous étions. -ais, -ait, -aient se prononcent pareil."
+     ],
+     "q": "Tu peux former l'imparfait de avoir, faire et aller ? Dis-moi la forme avec je.",
+     "c": "Écris l'imparfait de cinq verbes de tous les jours, avec je et nous."
+    },
+    "it": {
+     "t": "Imparfait: la formazione",
+     "g": "Forma l'imparfait, il passato delle descrizioni e delle abitudini.",
+     "p": [
+      "Prendi la forma nous del presente e togli -ons: nous parlons dà parl-, nous finissons dà finiss-.",
+      "Aggiungi -ais, -ais, -ait, -ions, -iez, -aient: je parlais, nous finissions, ils prenaient.",
+      "Solo être è irregolare: j'étais, tu étais, il était, nous étions; -ais, -ait, -aient suonano uguali."
+     ],
+     "q": "Sai formare l'imparfait di avoir, faire e aller? Dimmi la forma con je di ognuno.",
+     "c": "Scrivi l'imparfait di cinque verbi che usi ogni giorno, con je e nous."
+    },
+    "pt": {
+     "t": "Imparfait: a formação",
+     "g": "Formar o imparfait, o passado das descrições e dos hábitos.",
+     "p": [
+      "Pega na forma nous do presente e tira -ons: nous parlons dá parl-, nous finissons dá finiss-.",
+      "Junta -ais, -ais, -ait, -ions, -iez, -aient: je parlais, nous finissions, ils prenaient.",
+      "Só être é irregular: j'étais, tu étais, il était, nous étions; -ais, -ait, -aient soam igual."
+     ],
+     "q": "Sabes formar o imparfait de avoir, faire e aller? Diz-me a forma com je de cada um.",
+     "c": "Escreve o imparfait de cinco verbos que usas todos os dias, com je e nous."
+    },
+    "pt_BR": {
+     "t": "Imparfait: a formação",
+     "g": "Formar o imparfait, o passado das descrições e dos hábitos.",
+     "p": [
+      "Pegue a forma nous do presente e tire -ons: nous parlons dá parl-, nous finissons dá finiss-.",
+      "Acrescente -ais, -ais, -ait, -ions, -iez, -aient: je parlais, nous finissions, ils prenaient.",
+      "Só être é irregular: j'étais, tu étais, il était, nous étions; -ais, -ait, -aient soam igual."
+     ],
+     "q": "Você sabe formar o imparfait de avoir, faire e aller? Me diga a forma com je de cada um.",
+     "c": "Escreva o imparfait de cinco verbos que você usa todo dia, com je e nous."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je parlais",
+      "ex": "Je parlais avec ma voisine."
+     },
+     {
+      "w": "j'avais",
+      "ex": "J'avais un petit vélo rouge."
+     },
+     {
+      "w": "j'étais",
+      "ex": "J'étais très content ce jour-là."
+     },
+     {
+      "w": "il faisait",
+      "ex": "Il faisait chaud et beau."
+     },
+     {
+      "w": "nous allions",
+      "ex": "Nous allions souvent à la plage."
+     },
+     {
+      "w": "ils prenaient",
+      "ex": "Ils prenaient le bus tous les jours."
+     }
+    ],
+    "gram": "Imparfait : radical de nous au présent (nous finiss-ons) + -ais, -ais, -ait, -ions, -iez, -aient. Être : j'étais."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1305 @@
+{
+"topic": "poetry",
+"questions": [
+{
+"id": "poetry-001",
+"lv": "any",
+"i18n": {
+"en": "What is the first poem you remember hearing or reading?",
+"de": "Was ist das erste Gedicht, an das du dich erinnerst?",
+"es": "¿Cuál es el primer poema que recuerdas haber oído o leído?",
+"fr": "Quel est le premier poème dont tu te souviens ?",
+"it": "Qual è la prima poesia che ricordi di aver sentito o letto?",
+"pt": "Qual é o primeiro poema de que te lembras de ter ouvido ou lido?",
+"pt_BR": "Qual é o primeiro poema que você se lembra de ter ouvido ou lido?"
+}
+},
+{
+"id": "poetry-002",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite poet? What draws you to their poems?",
+"de": "Hast du eine Lieblingsdichterin oder einen Lieblingsdichter? Was zieht dich an?",
+"es": "¿Tienes un poeta favorito? ¿Qué te atrae de sus poemas?",
+"fr": "As-tu un poète préféré ? Qu'est-ce qui t'attire dans ses poèmes ?",
+"it": "Hai un poeta preferito? Cosa ti attira delle sue poesie?",
+"pt": "Tens um poeta preferido? O que te atrai nos seus poemas?",
+"pt_BR": "Você tem um poeta favorito? O que te atrai nos poemas dele?"
+}
+},
+{
+"id": "poetry-003",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer poems that rhyme or poems in free verse?",
+"de": "Magst du lieber gereimte Gedichte oder freie Verse?",
+"es": "¿Prefieres los poemas con rima o en verso libre?",
+"fr": "Tu préfères les poèmes rimés ou en vers libres ?",
+"it": "Preferisci le poesie in rima o in versi liberi?",
+"pt": "Preferes poemas com rima ou em verso livre?",
+"pt_BR": "Você prefere poemas com rima ou em verso livre?"
+}
+},
+{
+"id": "poetry-004",
+"lv": "any",
+"i18n": {
+"en": "Is there a line of poetry you know by heart?",
+"de": "Gibt es eine Gedichtzeile, die du auswendig kennst?",
+"es": "¿Hay algún verso que te sepas de memoria?",
+"fr": "Y a-t-il un vers que tu connais par cœur ?",
+"it": "C'è un verso che conosci a memoria?",
+"pt": "Há algum verso que saibas de cor?",
+"pt_BR": "Tem algum verso que você sabe de cor?"
+}
+},
+{
+"id": "poetry-005",
+"lv": "any",
+"i18n": {
+"en": "What song lyrics feel like poetry to you?",
+"de": "Welche Liedtexte fühlen sich für dich wie Poesie an?",
+"es": "¿Qué letras de canciones te parecen poesía?",
+"fr": "Quelles paroles de chanson ressemblent pour toi à de la poésie ?",
+"it": "Quali testi di canzoni ti sembrano poesia?",
+"pt": "Que letras de canções te parecem poesia?",
+"pt_BR": "Que letras de música parecem poesia para você?"
+}
+},
+{
+"id": "poetry-006",
+"lv": "any",
+"i18n": {
+"en": "Where do you like to read poetry?",
+"de": "Wo liest du gern Gedichte?",
+"es": "¿Dónde te gusta leer poesía?",
+"fr": "Où aimes-tu lire de la poésie ?",
+"it": "Dove ti piace leggere poesia?",
+"pt": "Onde gostas de ler poesia?",
+"pt_BR": "Onde você gosta de ler poesia?"
+}
+},
+{
+"id": "poetry-007",
+"lv": "any",
+"i18n": {
+"en": "Which poems did you learn at school, and how did you feel about them?",
+"de": "Welche Gedichte hast du in der Schule gelernt, und wie fandest du sie?",
+"es": "¿Qué poemas aprendiste en el colegio y qué te parecían?",
+"fr": "Quels poèmes as-tu appris à l'école, et qu'en pensais-tu ?",
+"it": "Quali poesie hai imparato a scuola, e cosa ne pensavi?",
+"pt": "Que poemas aprendeste na escola, e o que achavas deles?",
+"pt_BR": "Que poemas você aprendeu na escola, e o que achava deles?"
+}
+},
+{
+"id": "poetry-008",
+"lv": "any",
+"i18n": {
+"en": "What is a word you love just for its sound?",
+"de": "Welches Wort liebst du allein wegen seines Klangs?",
+"es": "¿Qué palabra te encanta solo por cómo suena?",
+"fr": "Quel mot aimes-tu juste pour sa sonorité ?",
+"it": "Qual è una parola che ami solo per il suo suono?",
+"pt": "Que palavra adoras só pelo som que tem?",
+"pt_BR": "Que palavra você adora só pelo som dela?"
+}
+},
+{
+"id": "poetry-009",
+"lv": "any",
+"i18n": {
+"en": "Which poet from your country do you think everyone should read?",
+"de": "Welche Dichterin oder welchen Dichter aus deinem Land sollte jeder lesen?",
+"es": "¿Qué poeta de tu país crees que todo el mundo debería leer?",
+"fr": "Quel poète de ton pays tout le monde devrait-il lire selon toi ?",
+"it": "Quale poeta del tuo paese dovrebbero leggere tutti?",
+"pt": "Que poeta do teu país achas que toda a gente devia ler?",
+"pt_BR": "Que poeta do seu país você acha que todo mundo deveria ler?"
+}
+},
+{
+"id": "poetry-010",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer reading poems silently or hearing them aloud?",
+"de": "Liest du Gedichte lieber still oder hörst du sie lieber laut?",
+"es": "¿Prefieres leer poemas en silencio o escucharlos en voz alta?",
+"fr": "Tu préfères lire les poèmes en silence ou les entendre à voix haute ?",
+"it": "Preferisci leggere le poesie in silenzio o ascoltarle ad alta voce?",
+"pt": "Preferes ler poemas em silêncio ou ouvi-los em voz alta?",
+"pt_BR": "Você prefere ler poemas em silêncio ou ouvi-los em voz alta?"
+}
+},
+{
+"id": "poetry-011",
+"lv": "any",
+"i18n": {
+"en": "What subject would you most like to write a poem about?",
+"de": "Über welches Thema würdest du am liebsten ein Gedicht schreiben?",
+"es": "¿Sobre qué tema te gustaría más escribir un poema?",
+"fr": "Sur quel sujet aimerais-tu le plus écrire un poème ?",
+"it": "Su quale argomento ti piacerebbe di più scrivere una poesia?",
+"pt": "Sobre que tema mais gostarias de escrever um poema?",
+"pt_BR": "Sobre que tema você mais gostaria de escrever um poema?"
+}
+},
+{
+"id": "poetry-012",
+"lv": "any",
+"i18n": {
+"en": "Have you ever written a poem for someone as a gift?",
+"de": "Hast du schon einmal ein Gedicht als Geschenk für jemanden geschrieben?",
+"es": "¿Alguna vez has escrito un poema para regalárselo a alguien?",
+"fr": "As-tu déjà écrit un poème pour l'offrir à quelqu'un ?",
+"it": "Hai mai scritto una poesia da regalare a qualcuno?",
+"pt": "Já alguma vez escreveste um poema para oferecer a alguém?",
+"pt_BR": "Você já escreveu um poema para dar de presente a alguém?"
+}
+},
+{
+"id": "poetry-013",
+"lv": "any",
+"i18n": {
+"en": "Which season feels the most poetic to you?",
+"de": "Welche Jahreszeit wirkt auf dich am poetischsten?",
+"es": "¿Qué estación del año te parece más poética?",
+"fr": "Quelle saison te semble la plus poétique ?",
+"it": "Quale stagione ti sembra la più poetica?",
+"pt": "Que estação do ano te parece mais poética?",
+"pt_BR": "Qual estação do ano parece mais poética para você?"
+}
+},
+{
+"id": "poetry-014",
+"lv": "any",
+"i18n": {
+"en": "What does poetry give you that other writing does not?",
+"de": "Was gibt dir Poesie, was andere Texte nicht geben?",
+"es": "¿Qué te da la poesía que no te dan otros textos?",
+"fr": "Qu'est-ce que la poésie t'apporte que les autres écrits ne t'apportent pas ?",
+"it": "Cosa ti dà la poesia che altri testi non ti danno?",
+"pt": "O que te dá a poesia que outros textos não dão?",
+"pt_BR": "O que a poesia te dá que outros textos não dão?"
+}
+},
+{
+"id": "poetry-015",
+"lv": "any",
+"i18n": {
+"en": "Is there a poem that helped you see something in a new way?",
+"de": "Gibt es ein Gedicht, das dich etwas ganz neu sehen ließ?",
+"es": "¿Hay algún poema que te haya hecho ver algo de otra manera?",
+"fr": "Y a-t-il un poème qui t'a fait voir quelque chose autrement ?",
+"it": "C'è una poesia che ti ha fatto vedere qualcosa in modo nuovo?",
+"pt": "Há algum poema que te tenha feito ver algo de outra forma?",
+"pt_BR": "Tem algum poema que fez você enxergar algo de um jeito novo?"
+}
+},
+{
+"id": "poetry-016",
+"lv": "any",
+"i18n": {
+"en": "What place makes you feel like writing poetry?",
+"de": "An welchem Ort bekommst du Lust, Gedichte zu schreiben?",
+"es": "¿Qué lugar te despierta las ganas de escribir poesía?",
+"fr": "Quel lieu te donne envie d'écrire de la poésie ?",
+"it": "Quale luogo ti fa venire voglia di scrivere poesie?",
+"pt": "Que lugar te dá vontade de escrever poesia?",
+"pt_BR": "Que lugar te dá vontade de escrever poesia?"
+}
+},
+{
+"id": "poetry-017",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy poems that are funny, calm or full of energy?",
+"de": "Magst du Gedichte, die lustig, ruhig oder voller Energie sind?",
+"es": "¿Te gustan los poemas divertidos, tranquilos o llenos de energía?",
+"fr": "Tu aimes les poèmes drôles, calmes ou pleins d'énergie ?",
+"it": "Ti piacciono le poesie divertenti, calme o piene di energia?",
+"pt": "Gostas de poemas engraçados, calmos ou cheios de energia?",
+"pt_BR": "Você gosta de poemas engraçados, calmos ou cheios de energia?"
+}
+},
+{
+"id": "poetry-018",
+"lv": "any",
+"i18n": {
+"en": "Have you ever read a poem in translation that moved you?",
+"de": "Hast du schon einmal ein übersetztes Gedicht gelesen, das dich berührt hat?",
+"es": "¿Has leído alguna vez un poema traducido que te emocionara?",
+"fr": "As-tu déjà lu un poème traduit qui t'a ému ?",
+"it": "Hai mai letto una poesia tradotta che ti ha emozionato?",
+"pt": "Já leste algum poema traduzido que te tenha emocionado?",
+"pt_BR": "Você já leu um poema traduzido que te emocionou?"
+}
+},
+{
+"id": "poetry-019",
+"lv": "any",
+"i18n": {
+"en": "What small everyday thing do you think deserves a poem?",
+"de": "Welche kleine Alltagssache verdient deiner Meinung nach ein Gedicht?",
+"es": "¿Qué pequeña cosa cotidiana crees que merece un poema?",
+"fr": "Quelle petite chose du quotidien mériterait selon toi un poème ?",
+"it": "Quale piccola cosa quotidiana secondo te merita una poesia?",
+"pt": "Que pequena coisa do dia a dia achas que merece um poema?",
+"pt_BR": "Que pequena coisa do dia a dia você acha que merece um poema?"
+}
+},
+{
+"id": "poetry-020",
+"lv": "any",
+"i18n": {
+"en": "Which time of day would you choose to write a poem?",
+"de": "Zu welcher Tageszeit würdest du am liebsten ein Gedicht schreiben?",
+"es": "¿En qué momento del día elegirías escribir un poema?",
+"fr": "À quel moment de la journée choisirais-tu d'écrire un poème ?",
+"it": "In quale momento della giornata sceglieresti di scrivere una poesia?",
+"pt": "Em que altura do dia escolherias escrever um poema?",
+"pt_BR": "Em que hora do dia você escolheria escrever um poema?"
+}
+},
+{
+"id": "poetry-021",
+"lv": "any",
+"i18n": {
+"en": "Is there a proverb or saying from your culture that sounds like poetry?",
+"de": "Gibt es ein Sprichwort aus deiner Kultur, das wie Poesie klingt?",
+"es": "¿Hay algún refrán de tu cultura que suene a poesía?",
+"fr": "Y a-t-il un proverbe de ta culture qui sonne comme de la poésie ?",
+"it": "C'è un proverbio della tua cultura che suona come poesia?",
+"pt": "Há algum provérbio da tua cultura que soe a poesia?",
+"pt_BR": "Tem algum provérbio da sua cultura que soa como poesia?"
+}
+},
+{
+"id": "poetry-022",
+"lv": "any",
+"i18n": {
+"en": "How would you describe poetry to someone who thinks it is difficult?",
+"de": "Wie würdest du Poesie jemandem beschreiben, der sie für schwierig hält?",
+"es": "¿Cómo le describirías la poesía a alguien que cree que es difícil?",
+"fr": "Comment décrirais-tu la poésie à quelqu'un qui la trouve difficile ?",
+"it": "Come descriveresti la poesia a chi pensa che sia difficile?",
+"pt": "Como descreverias a poesia a alguém que acha que é difícil?",
+"pt_BR": "Como você descreveria a poesia para alguém que acha que ela é difícil?"
+}
+},
+{
+"id": "poetry-023",
+"lv": "any",
+"i18n": {
+"en": "Which colour would you choose as the colour of poetry, and why?",
+"de": "Welche Farbe würdest du der Poesie geben, und warum?",
+"es": "¿Qué color elegirías como el color de la poesía y por qué?",
+"fr": "Quelle couleur choisirais-tu pour représenter la poésie, et pourquoi ?",
+"it": "Quale colore sceglieresti come colore della poesia, e perché?",
+"pt": "Que cor escolherias como a cor da poesia, e porquê?",
+"pt_BR": "Que cor você escolheria como a cor da poesia, e por quê?"
+}
+},
+{
+"id": "poetry-024",
+"lv": "any",
+"i18n": {
+"en": "Have you ever been to a poetry reading or open mic? How was it?",
+"de": "Warst du schon einmal bei einer Lesung oder einem Open Mic? Wie war es?",
+"es": "¿Has ido alguna vez a un recital de poesía o a un micro abierto? ¿Qué tal?",
+"fr": "Es-tu déjà allé à une lecture de poésie ou à une scène ouverte ? C'était comment ?",
+"it": "Sei mai stato a un reading di poesia o a un open mic? Com'è stato?",
+"pt": "Já foste a algum recital de poesia ou microfone aberto? Como foi?",
+"pt_BR": "Você já foi a um sarau ou microfone aberto de poesia? Como foi?"
+}
+},
+{
+"id": "poetry-025",
+"lv": "any",
+"i18n": {
+"en": "What feeling do you find easiest to put into a poem?",
+"de": "Welches Gefühl lässt sich für dich am leichtesten in ein Gedicht fassen?",
+"es": "¿Qué sentimiento te resulta más fácil plasmar en un poema?",
+"fr": "Quel sentiment trouves-tu le plus facile à mettre dans un poème ?",
+"it": "Quale sentimento ti viene più facile mettere in una poesia?",
+"pt": "Que sentimento achas mais fácil pôr num poema?",
+"pt_BR": "Que sentimento você acha mais fácil colocar num poema?"
+}
+},
+{
+"id": "poetry-026",
+"lv": "any",
+"i18n": {
+"en": "Which poem would you like to hear read aloud at a celebration?",
+"de": "Welches Gedicht würdest du gern bei einer Feier vorgelesen hören?",
+"es": "¿Qué poema te gustaría oír recitado en una celebración?",
+"fr": "Quel poème aimerais-tu entendre lu à voix haute lors d'une fête ?",
+"it": "Quale poesia ti piacerebbe sentire letta durante una festa?",
+"pt": "Que poema gostarias de ouvir lido em voz alta numa celebração?",
+"pt_BR": "Que poema você gostaria de ouvir declamado numa comemoração?"
+}
+},
+{
+"id": "poetry-027",
+"lv": "any",
+"i18n": {
+"en": "Do you keep a notebook for lines, images or ideas?",
+"de": "Hast du ein Notizbuch für Zeilen, Bilder oder Ideen?",
+"es": "¿Llevas un cuaderno para versos, imágenes o ideas?",
+"fr": "As-tu un carnet pour noter des vers, des images ou des idées ?",
+"it": "Tieni un quaderno per versi, immagini o idee?",
+"pt": "Tens um caderno para versos, imagens ou ideias?",
+"pt_BR": "Você tem um caderno para versos, imagens ou ideias?"
+}
+},
+{
+"id": "poetry-028",
+"lv": "any",
+"i18n": {
+"en": "Which natural landscape would you most like to capture in a poem?",
+"de": "Welche Landschaft würdest du am liebsten in einem Gedicht einfangen?",
+"es": "¿Qué paisaje natural te gustaría más captar en un poema?",
+"fr": "Quel paysage naturel aimerais-tu le plus saisir dans un poème ?",
+"it": "Quale paesaggio naturale ti piacerebbe di più catturare in una poesia?",
+"pt": "Que paisagem natural mais gostarias de captar num poema?",
+"pt_BR": "Que paisagem natural você mais gostaria de captar num poema?"
+}
+},
+{
+"id": "poetry-029",
+"lv": "any",
+"i18n": {
+"en": "What kind of music do you think sounds most like poetry?",
+"de": "Welche Art von Musik klingt für dich am meisten nach Poesie?",
+"es": "¿Qué tipo de música te parece que suena más a poesía?",
+"fr": "Quel genre de musique ressemble le plus à de la poésie selon toi ?",
+"it": "Che tipo di musica secondo te somiglia di più alla poesia?",
+"pt": "Que tipo de música achas que soa mais a poesia?",
+"pt_BR": "Que tipo de música você acha que mais soa como poesia?"
+}
+},
+{
+"id": "poetry-030",
+"lv": "any",
+"i18n": {
+"en": "If you could have coffee with any poet, who would it be?",
+"de": "Wenn du mit einer Dichterin oder einem Dichter Kaffee trinken könntest, wer wäre es?",
+"es": "Si pudieras tomar un café con cualquier poeta, ¿con quién sería?",
+"fr": "Si tu pouvais prendre un café avec un poète, qui choisirais-tu ?",
+"it": "Se potessi prendere un caffè con un poeta, chi sceglieresti?",
+"pt": "Se pudesses tomar um café com qualquer poeta, quem seria?",
+"pt_BR": "Se você pudesse tomar um café com qualquer poeta, quem seria?"
+}
+},
+{
+"id": "poetry-031",
+"lv": "any",
+"i18n": {
+"en": "What makes a poem stay in your memory?",
+"de": "Was sorgt dafür, dass ein Gedicht in deinem Gedächtnis bleibt?",
+"es": "¿Qué hace que un poema se te quede en la memoria?",
+"fr": "Qu'est-ce qui fait qu'un poème reste dans ta mémoire ?",
+"it": "Cosa fa sì che una poesia ti resti in mente?",
+"pt": "O que faz um poema ficar na tua memória?",
+"pt_BR": "O que faz um poema ficar na sua memória?"
+}
+},
+{
+"id": "poetry-032",
+"lv": "any",
+"i18n": {
+"en": "Is there a children's rhyme from your childhood that you still remember?",
+"de": "Gibt es einen Kinderreim aus deiner Kindheit, den du noch kennst?",
+"es": "¿Hay alguna rima infantil de tu niñez que todavía recuerdes?",
+"fr": "Y a-t-il une comptine de ton enfance dont tu te souviens encore ?",
+"it": "C'è una filastrocca della tua infanzia che ricordi ancora?",
+"pt": "Há alguma lengalenga da tua infância de que ainda te lembres?",
+"pt_BR": "Tem alguma cantiga ou parlenda da sua infância que você ainda lembra?"
+}
+},
+{
+"id": "poetry-033",
+"lv": "any",
+"i18n": {
+"en": "Would you rather write a haiku, a sonnet or a free verse poem today?",
+"de": "Würdest du heute lieber ein Haiku, ein Sonett oder ein Gedicht in freien Versen schreiben?",
+"es": "¿Hoy preferirías escribir un haiku, un soneto o un poema en verso libre?",
+"fr": "Aujourd'hui, tu préférerais écrire un haïku, un sonnet ou un poème en vers libres ?",
+"it": "Oggi preferiresti scrivere un haiku, un sonetto o una poesia in versi liberi?",
+"pt": "Hoje preferias escrever um haiku, um soneto ou um poema em verso livre?",
+"pt_BR": "Hoje você preferiria escrever um haicai, um soneto ou um poema em verso livre?"
+}
+},
+{
+"id": "poetry-034",
+"lv": "any",
+"i18n": {
+"en": "Which city do you find the most poetic, and why?",
+"de": "Welche Stadt findest du am poetischsten, und warum?",
+"es": "¿Qué ciudad te parece la más poética y por qué?",
+"fr": "Quelle ville trouves-tu la plus poétique, et pourquoi ?",
+"it": "Quale città trovi più poetica, e perché?",
+"pt": "Que cidade achas mais poética, e porquê?",
+"pt_BR": "Qual cidade você acha mais poética, e por quê?"
+}
+},
+{
+"id": "poetry-035",
+"lv": "any",
+"i18n": {
+"en": "How do you feel when you read a poem you do not fully understand?",
+"de": "Wie fühlst du dich, wenn du ein Gedicht liest, das du nicht ganz verstehst?",
+"es": "¿Cómo te sientes cuando lees un poema que no entiendes del todo?",
+"fr": "Que ressens-tu quand tu lis un poème que tu ne comprends pas entièrement ?",
+"it": "Come ti senti quando leggi una poesia che non capisci del tutto?",
+"pt": "Como te sentes quando lês um poema que não entendes totalmente?",
+"pt_BR": "Como você se sente quando lê um poema que não entende totalmente?"
+}
+},
+{
+"id": "poetry-036",
+"lv": "any",
+"i18n": {
+"en": "What is a sound from nature you would love to put into words?",
+"de": "Welches Naturgeräusch würdest du gern in Worte fassen?",
+"es": "¿Qué sonido de la naturaleza te encantaría poner en palabras?",
+"fr": "Quel son de la nature aimerais-tu mettre en mots ?",
+"it": "Quale suono della natura ti piacerebbe mettere in parole?",
+"pt": "Que som da natureza adorarias pôr em palavras?",
+"pt_BR": "Que som da natureza você adoraria colocar em palavras?"
+}
+},
+{
+"id": "poetry-037",
+"lv": "any",
+"i18n": {
+"en": "Do you enjoy poems about big ideas or about small moments?",
+"de": "Magst du Gedichte über große Ideen oder über kleine Momente?",
+"es": "¿Te gustan más los poemas sobre grandes ideas o sobre pequeños momentos?",
+"fr": "Tu préfères les poèmes sur de grandes idées ou sur de petits moments ?",
+"it": "Preferisci le poesie su grandi idee o su piccoli momenti?",
+"pt": "Gostas mais de poemas sobre grandes ideias ou sobre pequenos momentos?",
+"pt_BR": "Você prefere poemas sobre grandes ideias ou sobre pequenos momentos?"
+}
+},
+{
+"id": "poetry-038",
+"lv": "any",
+"i18n": {
+"en": "Which poem would you share with a friend from another country?",
+"de": "Welches Gedicht würdest du mit einem Freund aus einem anderen Land teilen?",
+"es": "¿Qué poema compartirías con un amigo de otro país?",
+"fr": "Quel poème partagerais-tu avec un ami d'un autre pays ?",
+"it": "Quale poesia condivideresti con un amico di un altro paese?",
+"pt": "Que poema partilharias com um amigo de outro país?",
+"pt_BR": "Que poema você compartilharia com um amigo de outro país?"
+}
+},
+{
+"id": "poetry-039",
+"lv": "any",
+"i18n": {
+"en": "What does your perfect poetry afternoon look like?",
+"de": "Wie sieht dein perfekter Poesie-Nachmittag aus?",
+"es": "¿Cómo sería tu tarde perfecta de poesía?",
+"fr": "À quoi ressemble ton après-midi poésie idéal ?",
+"it": "Com'è il tuo pomeriggio perfetto all'insegna della poesia?",
+"pt": "Como seria a tua tarde perfeita de poesia?",
+"pt_BR": "Como seria a sua tarde perfeita de poesia?"
+}
+},
+{
+"id": "poetry-040",
+"lv": "any",
+"i18n": {
+"en": "What would you like to learn first on this poetry journey?",
+"de": "Was möchtest du auf dieser Poesie-Reise als Erstes lernen?",
+"es": "¿Qué te gustaría aprender primero en este viaje poético?",
+"fr": "Qu'aimerais-tu apprendre en premier dans ce voyage poétique ?",
+"it": "Cosa ti piacerebbe imparare per primo in questo viaggio poetico?",
+"pt": "O que gostarias de aprender primeiro nesta viagem pela poesia?",
+"pt_BR": "O que você gostaria de aprender primeiro nesta jornada pela poesia?"
+}
+},
+{
+"id": "poetry-041",
+"lv": "beginner",
+"i18n": {
+"en": "Can you describe the view from your window in three short lines?",
+"de": "Kannst du den Blick aus deinem Fenster in drei kurzen Zeilen beschreiben?",
+"es": "¿Puedes describir la vista desde tu ventana en tres versos cortos?",
+"fr": "Peux-tu décrire la vue de ta fenêtre en trois vers courts ?",
+"it": "Riesci a descrivere la vista dalla tua finestra in tre versi brevi?",
+"pt": "Consegues descrever a vista da tua janela em três versos curtos?",
+"pt_BR": "Você consegue descrever a vista da sua janela em três versos curtos?"
+}
+},
+{
+"id": "poetry-042",
+"lv": "beginner",
+"i18n": {
+"en": "What simile would you use to describe today's weather?",
+"de": "Mit welchem Vergleich würdest du das heutige Wetter beschreiben?",
+"es": "¿Qué comparación usarías para describir el tiempo de hoy?",
+"fr": "Quelle comparaison utiliserais-tu pour décrire le temps qu'il fait aujourd'hui ?",
+"it": "Quale similitudine useresti per descrivere il tempo di oggi?",
+"pt": "Que comparação usarias para descrever o tempo de hoje?",
+"pt_BR": "Que comparação você usaria para descrever o tempo de hoje?"
+}
+},
+{
+"id": "poetry-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which word would you choose for an acrostic poem, and why?",
+"de": "Welches Wort würdest du für ein Akrostichon wählen, und warum?",
+"es": "¿Qué palabra elegirías para un acróstico y por qué?",
+"fr": "Quel mot choisirais-tu pour un acrostiche, et pourquoi ?",
+"it": "Quale parola sceglieresti per un acrostico, e perché?",
+"pt": "Que palavra escolherias para um acróstico, e porquê?",
+"pt_BR": "Que palavra você escolheria para um acróstico, e por quê?"
+}
+},
+{
+"id": "poetry-044",
+"lv": "beginner",
+"i18n": {
+"en": "What is a sound word, like buzz or splash, that you enjoy?",
+"de": "Welches lautmalerische Wort, wie summen oder platschen, magst du?",
+"es": "¿Qué palabra que imite un sonido, como zumbido o chapoteo, te gusta?",
+"fr": "Quelle onomatopée, comme bzz ou plouf, aimes-tu ?",
+"it": "Quale parola onomatopeica, come ronzio o splash, ti piace?",
+"pt": "Que onomatopeia, como zumbido ou chape, te agrada?",
+"pt_BR": "Que onomatopeia, como zum ou tchibum, você curte?"
+}
+},
+{
+"id": "poetry-045",
+"lv": "beginner",
+"i18n": {
+"en": "What would you put in a list poem about things that make you smile?",
+"de": "Was würdest du in ein Listengedicht über Dinge schreiben, die dich zum Lächeln bringen?",
+"es": "¿Qué pondrías en un poema-lista sobre cosas que te hacen sonreír?",
+"fr": "Que mettrais-tu dans un poème-liste sur ce qui te fait sourire ?",
+"it": "Cosa metteresti in una poesia-elenco sulle cose che ti fanno sorridere?",
+"pt": "O que porias num poema-lista sobre coisas que te fazem sorrir?",
+"pt_BR": "O que você colocaria num poema-lista sobre coisas que te fazem sorrir?"
+}
+},
+{
+"id": "poetry-046",
+"lv": "beginner",
+"i18n": {
+"en": "Which animal would you like to write a poem about?",
+"de": "Über welches Tier würdest du gern ein Gedicht schreiben?",
+"es": "¿Sobre qué animal te gustaría escribir un poema?",
+"fr": "Sur quel animal aimerais-tu écrire un poème ?",
+"it": "Su quale animale ti piacerebbe scrivere una poesia?",
+"pt": "Sobre que animal gostarias de escrever um poema?",
+"pt_BR": "Sobre qual animal você gostaria de escrever um poema?"
+}
+},
+{
+"id": "poetry-047",
+"lv": "beginner",
+"i18n": {
+"en": "What would you describe in a haiku about this moment?",
+"de": "Was würdest du in einem Haiku über diesen Moment beschreiben?",
+"es": "¿Qué describirías en un haiku sobre este momento?",
+"fr": "Que décrirais-tu dans un haïku sur cet instant ?",
+"it": "Cosa descriveresti in un haiku su questo momento?",
+"pt": "O que descreverias num haiku sobre este momento?",
+"pt_BR": "O que você descreveria num haicai sobre este momento?"
+}
+},
+{
+"id": "poetry-048",
+"lv": "beginner",
+"i18n": {
+"en": "Which everyday object would you praise in an ode?",
+"de": "Welchen Alltagsgegenstand würdest du in einer Ode loben?",
+"es": "¿Qué objeto cotidiano elogiarías en una oda?",
+"fr": "Quel objet du quotidien célébrerais-tu dans une ode ?",
+"it": "Quale oggetto quotidiano celebreresti in un'ode?",
+"pt": "Que objeto do dia a dia elogiarias numa ode?",
+"pt_BR": "Que objeto do dia a dia você exaltaria numa ode?"
+}
+},
+{
+"id": "poetry-049",
+"lv": "beginner",
+"i18n": {
+"en": "Do you find rhyming easy or tricky? What helps you?",
+"de": "Fällt dir das Reimen leicht oder schwer? Was hilft dir?",
+"es": "¿Te resulta fácil o difícil rimar? ¿Qué te ayuda?",
+"fr": "Trouves-tu la rime facile ou difficile ? Qu'est-ce qui t'aide ?",
+"it": "Ti viene facile o difficile fare rime? Cosa ti aiuta?",
+"pt": "Achas fácil ou difícil rimar? O que te ajuda?",
+"pt_BR": "Você acha fácil ou difícil rimar? O que te ajuda?"
+}
+},
+{
+"id": "poetry-050",
+"lv": "beginner",
+"i18n": {
+"en": "What funny character would star in your limerick?",
+"de": "Welche lustige Figur wäre die Hauptperson in deinem Limerick?",
+"es": "¿Qué personaje divertido protagonizaría tu limerick?",
+"fr": "Quel personnage amusant serait la vedette de ton limerick ?",
+"it": "Quale personaggio buffo sarebbe il protagonista del tuo limerick?",
+"pt": "Que personagem engraçada seria a estrela do teu limerick?",
+"pt_BR": "Que personagem engraçado seria a estrela do seu limerick?"
+}
+},
+{
+"id": "poetry-051",
+"lv": "beginner",
+"i18n": {
+"en": "What would your 'where I'm from' poem begin with?",
+"de": "Womit würde dein Gedicht darüber, woher du kommst, beginnen?",
+"es": "¿Con qué empezaría tu poema sobre de dónde vienes?",
+"fr": "Par quoi commencerait ton poème sur l'endroit d'où tu viens ?",
+"it": "Con cosa comincerebbe la tua poesia su da dove vieni?",
+"pt": "Com o que começaria o teu poema sobre o lugar de onde vens?",
+"pt_BR": "Com o que começaria o seu poema sobre o lugar de onde você vem?"
+}
+},
+{
+"id": "poetry-052",
+"lv": "beginner",
+"i18n": {
+"en": "Which food smell would you put in a poem about home?",
+"de": "Welchen Essensduft würdest du in ein Gedicht über Zuhause packen?",
+"es": "¿Qué olor de comida pondrías en un poema sobre tu hogar?",
+"fr": "Quelle odeur de cuisine mettrais-tu dans un poème sur la maison ?",
+"it": "Quale profumo di cibo metteresti in una poesia sulla casa?",
+"pt": "Que cheiro de comida porias num poema sobre a tua casa?",
+"pt_BR": "Que cheiro de comida você colocaria num poema sobre a sua casa?"
+}
+},
+{
+"id": "poetry-053",
+"lv": "beginner",
+"i18n": {
+"en": "Where would you break the line in a sentence you love, and why?",
+"de": "Wo würdest du in einem Satz, den du liebst, die Zeile umbrechen, und warum?",
+"es": "¿Dónde cortarías el verso en una frase que te encanta y por qué?",
+"fr": "Où couperais-tu le vers dans une phrase que tu aimes, et pourquoi ?",
+"it": "Dove andresti a capo in una frase che ami, e perché?",
+"pt": "Onde quebrarias o verso numa frase de que gostas, e porquê?",
+"pt_BR": "Onde você quebraria o verso numa frase de que gosta, e por quê?"
+}
+},
+{
+"id": "poetry-054",
+"lv": "beginner",
+"i18n": {
+"en": "What would you say in a poem written to the moon?",
+"de": "Was würdest du in einem Gedicht an den Mond sagen?",
+"es": "¿Qué le dirías a la luna en un poema?",
+"fr": "Que dirais-tu à la lune dans un poème ?",
+"it": "Cosa diresti alla luna in una poesia?",
+"pt": "O que dirias à lua num poema?",
+"pt_BR": "O que você diria à lua num poema?"
+}
+},
+{
+"id": "poetry-055",
+"lv": "beginner",
+"i18n": {
+"en": "What metaphor would describe your week so far?",
+"de": "Welche Metapher würde deine bisherige Woche beschreiben?",
+"es": "¿Qué metáfora describiría tu semana hasta ahora?",
+"fr": "Quelle métaphore décrirait ta semaine jusqu'ici ?",
+"it": "Quale metafora descriverebbe la tua settimana finora?",
+"pt": "Que metáfora descreveria a tua semana até agora?",
+"pt_BR": "Que metáfora descreveria a sua semana até agora?"
+}
+},
+{
+"id": "poetry-056",
+"lv": "beginner",
+"i18n": {
+"en": "Which object in your room would speak in a persona poem, and what would it say?",
+"de": "Welcher Gegenstand in deinem Zimmer würde in einem Rollengedicht sprechen, und was würde er sagen?",
+"es": "¿Qué objeto de tu cuarto hablaría en un poema y qué diría?",
+"fr": "Quel objet de ta chambre prendrait la parole dans un poème, et que dirait-il ?",
+"it": "Quale oggetto della tua stanza parlerebbe in una poesia, e cosa direbbe?",
+"pt": "Que objeto do teu quarto falaria num poema, e o que diria?",
+"pt_BR": "Que objeto do seu quarto falaria num poema, e o que diria?"
+}
+},
+{
+"id": "poetry-057",
+"lv": "beginner",
+"i18n": {
+"en": "What riddle poem could you write about something in your kitchen?",
+"de": "Welches Rätselgedicht könntest du über etwas in deiner Küche schreiben?",
+"es": "¿Qué poema-adivinanza podrías escribir sobre algo de tu cocina?",
+"fr": "Quel poème-devinette pourrais-tu écrire sur un objet de ta cuisine ?",
+"it": "Quale poesia-indovinello potresti scrivere su qualcosa della tua cucina?",
+"pt": "Que poema-adivinha poderias escrever sobre algo da tua cozinha?",
+"pt_BR": "Que poema-adivinha você poderia escrever sobre algo da sua cozinha?"
+}
+},
+{
+"id": "poetry-058",
+"lv": "beginner",
+"i18n": {
+"en": "What colour would you write a whole poem about?",
+"de": "Über welche Farbe würdest du ein ganzes Gedicht schreiben?",
+"es": "¿Sobre qué color escribirías un poema entero?",
+"fr": "Sur quelle couleur écrirais-tu un poème entier ?",
+"it": "Su quale colore scriveresti un'intera poesia?",
+"pt": "Sobre que cor escreverias um poema inteiro?",
+"pt_BR": "Sobre qual cor você escreveria um poema inteiro?"
+}
+},
+{
+"id": "poetry-059",
+"lv": "beginner",
+"i18n": {
+"en": "Which poem would you like to learn by heart next?",
+"de": "Welches Gedicht würdest du als Nächstes gern auswendig lernen?",
+"es": "¿Qué poema te gustaría aprenderte de memoria ahora?",
+"fr": "Quel poème aimerais-tu apprendre par cœur maintenant ?",
+"it": "Quale poesia ti piacerebbe imparare a memoria adesso?",
+"pt": "Que poema gostarias de decorar a seguir?",
+"pt_BR": "Que poema você gostaria de decorar em seguida?"
+}
+},
+{
+"id": "poetry-060",
+"lv": "beginner",
+"i18n": {
+"en": "What are you grateful for today that could become a short poem?",
+"de": "Wofür bist du heute dankbar, das ein kurzes Gedicht werden könnte?",
+"es": "¿Por qué estás agradecido hoy que podría convertirse en un poema corto?",
+"fr": "Pour quoi es-tu reconnaissant aujourd'hui qui pourrait devenir un petit poème ?",
+"it": "Per cosa sei grato oggi che potrebbe diventare una breve poesia?",
+"pt": "Pelo que estás grato hoje que poderia virar um pequeno poema?",
+"pt_BR": "Pelo que você é grato hoje que poderia virar um pequeno poema?"
+}
+},
+{
+"id": "poetry-061",
+"lv": "beginner",
+"i18n": {
+"en": "What invented word would you use in a nonsense poem?",
+"de": "Welches erfundene Wort würdest du in einem Unsinnsgedicht verwenden?",
+"es": "¿Qué palabra inventada usarías en un poema disparatado?",
+"fr": "Quel mot inventé utiliserais-tu dans un poème absurde ?",
+"it": "Quale parola inventata useresti in una poesia nonsense?",
+"pt": "Que palavra inventada usarias num poema disparatado?",
+"pt_BR": "Que palavra inventada você usaria num poema nonsense?"
+}
+},
+{
+"id": "poetry-062",
+"lv": "beginner",
+"i18n": {
+"en": "Which title would you give a poem about your favourite street?",
+"de": "Welchen Titel würdest du einem Gedicht über deine Lieblingsstraße geben?",
+"es": "¿Qué título le pondrías a un poema sobre tu calle favorita?",
+"fr": "Quel titre donnerais-tu à un poème sur ta rue préférée ?",
+"it": "Che titolo daresti a una poesia sulla tua via preferita?",
+"pt": "Que título darias a um poema sobre a tua rua preferida?",
+"pt_BR": "Que título você daria a um poema sobre a sua rua favorita?"
+}
+},
+{
+"id": "poetry-063",
+"lv": "beginner",
+"i18n": {
+"en": "What did you notice today that felt like a little poem?",
+"de": "Was hast du heute bemerkt, das sich wie ein kleines Gedicht anfühlte?",
+"es": "¿Qué viste hoy que te pareció un pequeño poema?",
+"fr": "Qu'as-tu remarqué aujourd'hui qui ressemblait à un petit poème ?",
+"it": "Cosa hai notato oggi che ti è sembrato una piccola poesia?",
+"pt": "O que reparaste hoje que te pareceu um pequeno poema?",
+"pt_BR": "O que você notou hoje que pareceu um pequeno poema?"
+}
+},
+{
+"id": "poetry-064",
+"lv": "beginner",
+"i18n": {
+"en": "Which sense would you start with in a poem about the sea?",
+"de": "Mit welchem Sinn würdest du ein Gedicht über das Meer beginnen?",
+"es": "¿Con qué sentido empezarías un poema sobre el mar?",
+"fr": "Par quel sens commencerais-tu un poème sur la mer ?",
+"it": "Da quale senso partiresti per una poesia sul mare?",
+"pt": "Por que sentido começarias um poema sobre o mar?",
+"pt_BR": "Por qual sentido você começaria um poema sobre o mar?"
+}
+},
+{
+"id": "poetry-065",
+"lv": "beginner",
+"i18n": {
+"en": "How would you like to share your first poems: aloud, written or not yet?",
+"de": "Wie möchtest du deine ersten Gedichte teilen: laut, schriftlich oder noch gar nicht?",
+"es": "¿Cómo te gustaría compartir tus primeros poemas: en voz alta, por escrito o aún no?",
+"fr": "Comment aimerais-tu partager tes premiers poèmes : à voix haute, par écrit ou pas encore ?",
+"it": "Come vorresti condividere le tue prime poesie: ad alta voce, per iscritto o non ancora?",
+"pt": "Como gostarias de partilhar os teus primeiros poemas: em voz alta, por escrito ou ainda não?",
+"pt_BR": "Como você gostaria de compartilhar seus primeiros poemas: em voz alta, por escrito ou ainda não?"
+}
+},
+{
+"id": "poetry-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Which traditional form, like the sonnet or villanelle, would you like to master?",
+"de": "Welche traditionelle Form, etwa Sonett oder Villanelle, möchtest du beherrschen?",
+"es": "¿Qué forma tradicional, como el soneto o la villanela, te gustaría dominar?",
+"fr": "Quelle forme traditionnelle, comme le sonnet ou la villanelle, aimerais-tu maîtriser ?",
+"it": "Quale forma tradizionale, come il sonetto o la villanella, vorresti padroneggiare?",
+"pt": "Que forma tradicional, como o soneto ou a vilanela, gostarias de dominar?",
+"pt_BR": "Que forma tradicional, como o soneto ou a vilanela, você gostaria de dominar?"
+}
+},
+{
+"id": "poetry-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you feel about meter: freeing or limiting?",
+"de": "Wie empfindest du das Versmaß: befreiend oder einengend?",
+"es": "¿Cómo vives la métrica: te libera o te limita?",
+"fr": "Comment vis-tu la métrique : libératrice ou contraignante ?",
+"it": "Come vivi la metrica: ti libera o ti limita?",
+"pt": "Como vês a métrica: liberta-te ou limita-te?",
+"pt_BR": "Como você sente a métrica: ela liberta ou limita?"
+}
+},
+{
+"id": "poetry-068",
+"lv": "intermediate",
+"i18n": {
+"en": "What turn, or volta, would you put in a sonnet about your city?",
+"de": "Welche Wendung, die Volta, würdest du in ein Sonett über deine Stadt einbauen?",
+"es": "¿Qué giro, o volta, pondrías en un soneto sobre tu ciudad?",
+"fr": "Quel retournement, ou volta, mettrais-tu dans un sonnet sur ta ville ?",
+"it": "Quale svolta, o volta, metteresti in un sonetto sulla tua città?",
+"pt": "Que viragem, ou volta, porias num soneto sobre a tua cidade?",
+"pt_BR": "Que virada, ou volta, você colocaria num soneto sobre a sua cidade?"
+}
+},
+{
+"id": "poetry-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Which two lines would make good refrains for a villanelle of yours?",
+"de": "Welche zwei Zeilen wären gute Refrains für deine Villanelle?",
+"es": "¿Qué dos versos serían buenos estribillos para una villanela tuya?",
+"fr": "Quels deux vers feraient de bons refrains pour ta villanelle ?",
+"it": "Quali due versi sarebbero buoni ritornelli per una tua villanella?",
+"pt": "Que dois versos seriam bons refrões para uma vilanela tua?",
+"pt_BR": "Quais dois versos seriam bons refrões para uma vilanela sua?"
+}
+},
+{
+"id": "poetry-070",
+"lv": "intermediate",
+"i18n": {
+"en": "If you wrote as an invented poet, like Pessoa's heteronyms, who would they be?",
+"de": "Wenn du als erfundener Dichter schreiben würdest, wie Pessoas Heteronyme, wer wäre das?",
+"es": "Si escribieras como un poeta inventado, como los heterónimos de Pessoa, ¿quién sería?",
+"fr": "Si tu écrivais sous la peau d'un poète inventé, comme les hétéronymes de Pessoa, qui serait-il ?",
+"it": "Se scrivessi come un poeta inventato, come gli eteronimi di Pessoa, chi sarebbe?",
+"pt": "Se escrevesses como um poeta inventado, como os heterónimos de Pessoa, quem seria?",
+"pt_BR": "Se você escrevesse como um poeta inventado, como os heterônimos de Pessoa, quem seria?"
+}
+},
+{
+"id": "poetry-071",
+"lv": "intermediate",
+"i18n": {
+"en": "Which painting or photo would you like to answer with an ekphrastic poem?",
+"de": "Auf welches Gemälde oder Foto würdest du gern mit einem Gedicht antworten?",
+"es": "¿A qué cuadro o fotografía te gustaría responder con un poema ecfrástico?",
+"fr": "À quel tableau ou quelle photo aimerais-tu répondre par un poème ekphrastique ?",
+"it": "A quale quadro o foto vorresti rispondere con una poesia ecfrastica?",
+"pt": "A que quadro ou fotografia gostarias de responder com um poema ecfrástico?",
+"pt_BR": "A que quadro ou foto você gostaria de responder com um poema ecfrástico?"
+}
+},
+{
+"id": "poetry-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever tried translating a poem? What was hardest to keep?",
+"de": "Hast du schon einmal ein Gedicht übersetzt? Was war am schwersten zu bewahren?",
+"es": "¿Has intentado traducir un poema alguna vez? ¿Qué fue lo más difícil de conservar?",
+"fr": "As-tu déjà essayé de traduire un poème ? Qu'est-ce qui était le plus dur à garder ?",
+"it": "Hai mai provato a tradurre una poesia? Cosa è stato più difficile da conservare?",
+"pt": "Já tentaste traduzir um poema? O que foi mais difícil de manter?",
+"pt_BR": "Você já tentou traduzir um poema? O que foi mais difícil de manter?"
+}
+},
+{
+"id": "poetry-073",
+"lv": "intermediate",
+"i18n": {
+"en": "Which poet from another language would you like to read in the original?",
+"de": "Welchen Dichter aus einer anderen Sprache würdest du gern im Original lesen?",
+"es": "¿Qué poeta de otro idioma te gustaría leer en versión original?",
+"fr": "Quel poète d'une autre langue aimerais-tu lire dans le texte original ?",
+"it": "Quale poeta di un'altra lingua vorresti leggere in originale?",
+"pt": "Que poeta de outra língua gostarias de ler no original?",
+"pt_BR": "Que poeta de outro idioma você gostaria de ler no original?"
+}
+},
+{
+"id": "poetry-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you enjoy performing a poem on stage? What would you choose?",
+"de": "Würdest du gern ein Gedicht auf der Bühne vortragen? Welches würdest du wählen?",
+"es": "¿Te gustaría recitar un poema en un escenario? ¿Cuál elegirías?",
+"fr": "Aimerais-tu dire un poème sur scène ? Lequel choisirais-tu ?",
+"it": "Ti piacerebbe recitare una poesia su un palco? Quale sceglieresti?",
+"pt": "Gostarias de declamar um poema num palco? Qual escolherias?",
+"pt_BR": "Você gostaria de declamar um poema num palco? Qual escolheria?"
+}
+},
+{
+"id": "poetry-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which repeated word would you build a ghazal around?",
+"de": "Um welches wiederkehrende Wort würdest du ein Ghasel aufbauen?",
+"es": "¿En torno a qué palabra repetida construirías un gazal?",
+"fr": "Autour de quel mot répété construirais-tu un ghazal ?",
+"it": "Attorno a quale parola ripetuta costruiresti un ghazal?",
+"pt": "À volta de que palavra repetida construirias um gazel?",
+"pt_BR": "Em torno de qual palavra repetida você construiria um gazal?"
+}
+},
+{
+"id": "poetry-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide whether a poem should rhyme?",
+"de": "Wie entscheidest du, ob sich ein Gedicht reimen soll?",
+"es": "¿Cómo decides si un poema debe rimar?",
+"fr": "Comment décides-tu si un poème doit rimer ?",
+"it": "Come decidi se una poesia deve avere la rima?",
+"pt": "Como decides se um poema deve rimar?",
+"pt_BR": "Como você decide se um poema deve rimar?"
+}
+},
+{
+"id": "poetry-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What extended metaphor could carry a whole poem about learning something new?",
+"de": "Welche ausgedehnte Metapher könnte ein ganzes Gedicht übers Lernen tragen?",
+"es": "¿Qué metáfora extendida podría sostener todo un poema sobre aprender algo nuevo?",
+"fr": "Quelle métaphore filée pourrait porter tout un poème sur l'apprentissage ?",
+"it": "Quale metafora estesa potrebbe reggere un'intera poesia sull'imparare qualcosa?",
+"pt": "Que metáfora prolongada poderia sustentar um poema inteiro sobre aprender algo novo?",
+"pt_BR": "Que metáfora estendida poderia sustentar um poema inteiro sobre aprender algo novo?"
+}
+},
+{
+"id": "poetry-078",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you change first when you revise a poem?",
+"de": "Was änderst du zuerst, wenn du ein Gedicht überarbeitest?",
+"es": "¿Qué es lo primero que cambias cuando revisas un poema?",
+"fr": "Que modifies-tu en premier quand tu retravailles un poème ?",
+"it": "Cosa cambi per prima cosa quando rivedi una poesia?",
+"pt": "O que mudas primeiro quando revês um poema?",
+"pt_BR": "O que você muda primeiro quando revisa um poema?"
+}
+},
+{
+"id": "poetry-079",
+"lv": "intermediate",
+"i18n": {
+"en": "Which constraint, like avoiding a letter, would you enjoy trying?",
+"de": "Welche Einschränkung, etwa auf einen Buchstaben zu verzichten, würdest du gern ausprobieren?",
+"es": "¿Qué restricción, como evitar una letra, te divertiría probar?",
+"fr": "Quelle contrainte, comme éviter une lettre, aimerais-tu essayer ?",
+"it": "Quale vincolo, come evitare una lettera, ti divertirebbe provare?",
+"pt": "Que restrição, como evitar uma letra, gostarias de experimentar?",
+"pt_BR": "Que restrição, como evitar uma letra, você gostaria de experimentar?"
+}
+},
+{
+"id": "poetry-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which page of a magazine or book would you turn into a blackout poem?",
+"de": "Welche Seite einer Zeitschrift oder eines Buches würdest du in ein Schwärzungsgedicht verwandeln?",
+"es": "¿Qué página de una revista o libro convertirías en un poema de tachado?",
+"fr": "Quelle page de magazine ou de livre transformerais-tu en poème caviardé ?",
+"it": "Quale pagina di una rivista o di un libro trasformeresti in una poesia di cancellazione?",
+"pt": "Que página de uma revista ou livro transformarias num poema de rasura?",
+"pt_BR": "Que página de revista ou livro você transformaria num poema de rasura?"
+}
+},
+{
+"id": "poetry-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you give a poem a strong ending?",
+"de": "Wie gibst du einem Gedicht ein starkes Ende?",
+"es": "¿Cómo le das a un poema un final con fuerza?",
+"fr": "Comment donnes-tu une fin forte à un poème ?",
+"it": "Come dai a una poesia un finale forte?",
+"pt": "Como dás a um poema um final forte?",
+"pt_BR": "Como você dá a um poema um final forte?"
+}
+},
+{
+"id": "poetry-082",
+"lv": "intermediate",
+"i18n": {
+"en": "Which untranslatable word from any language would you build a poem on?",
+"de": "Auf welchem unübersetzbaren Wort aus irgendeiner Sprache würdest du ein Gedicht aufbauen?",
+"es": "¿Sobre qué palabra intraducible de cualquier idioma construirías un poema?",
+"fr": "Sur quel mot intraduisible, dans n'importe quelle langue, bâtirais-tu un poème ?",
+"it": "Su quale parola intraducibile di qualsiasi lingua costruiresti una poesia?",
+"pt": "Sobre que palavra intraduzível de qualquer língua construirias um poema?",
+"pt_BR": "Sobre qual palavra intraduzível de qualquer idioma você construiria um poema?"
+}
+},
+{
+"id": "poetry-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What kind of feedback on your poems helps you grow the most?",
+"de": "Welche Art von Feedback zu deinen Gedichten bringt dich am meisten weiter?",
+"es": "¿Qué tipo de comentarios sobre tus poemas te hacen crecer más?",
+"fr": "Quel genre de retour sur tes poèmes t'aide le plus à progresser ?",
+"it": "Che tipo di feedback sulle tue poesie ti fa crescere di più?",
+"pt": "Que tipo de feedback sobre os teus poemas mais te faz crescer?",
+"pt_BR": "Que tipo de feedback sobre seus poemas mais faz você evoluir?"
+}
+},
+{
+"id": "poetry-084",
+"lv": "intermediate",
+"i18n": {
+"en": "What theme would you choose for a sequence of five short poems?",
+"de": "Welches Thema würdest du für eine Folge von fünf kurzen Gedichten wählen?",
+"es": "¿Qué tema elegirías para una serie de cinco poemas breves?",
+"fr": "Quel thème choisirais-tu pour une suite de cinq courts poèmes ?",
+"it": "Quale tema sceglieresti per una sequenza di cinque brevi poesie?",
+"pt": "Que tema escolherias para uma sequência de cinco poemas curtos?",
+"pt_BR": "Que tema você escolheria para uma sequência de cinco poemas curtos?"
+}
+},
+{
+"id": "poetry-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which poem by someone else would you love to answer with a poem of your own?",
+"de": "Auf welches Gedicht von jemand anderem würdest du gern mit einem eigenen antworten?",
+"es": "¿A qué poema de otra persona te gustaría responder con uno tuyo?",
+"fr": "À quel poème d'un autre aimerais-tu répondre par un poème à toi ?",
+"it": "A quale poesia di qualcun altro vorresti rispondere con una tua?",
+"pt": "A que poema de outra pessoa gostarias de responder com um teu?",
+"pt_BR": "A que poema de outra pessoa você gostaria de responder com um seu?"
+}
+},
+{
+"id": "poetry-086",
+"lv": "advanced",
+"i18n": {
+"en": "Which demanding form, like the sestina, would you dare to try?",
+"de": "Welche anspruchsvolle Form, etwa die Sestine, würdest du dich trauen auszuprobieren?",
+"es": "¿Qué forma exigente, como la sextina, te atreverías a probar?",
+"fr": "Quelle forme exigeante, comme la sextine, oserais-tu essayer ?",
+"it": "Quale forma impegnativa, come la sestina, oseresti provare?",
+"pt": "Que forma exigente, como a sextina, terias coragem de experimentar?",
+"pt_BR": "Que forma exigente, como a sextina, você teria coragem de experimentar?"
+}
+},
+{
+"id": "poetry-087",
+"lv": "advanced",
+"i18n": {
+"en": "How would you describe your poetic voice today compared with when you started?",
+"de": "Wie würdest du deine poetische Stimme heute im Vergleich zu deinen Anfängen beschreiben?",
+"es": "¿Cómo describirías tu voz poética hoy comparada con cuando empezaste?",
+"fr": "Comment décrirais-tu ta voix poétique aujourd'hui par rapport à tes débuts ?",
+"it": "Come descriveresti la tua voce poetica oggi rispetto a quando hai iniziato?",
+"pt": "Como descreverias a tua voz poética hoje em comparação com o início?",
+"pt_BR": "Como você descreveria sua voz poética hoje em comparação com quando começou?"
+}
+},
+{
+"id": "poetry-088",
+"lv": "advanced",
+"i18n": {
+"en": "What would you say in your own ars poetica, a poem about why you write?",
+"de": "Was würdest du in deiner eigenen Ars poetica sagen, einem Gedicht darüber, warum du schreibst?",
+"es": "¿Qué dirías en tu propia arte poética, un poema sobre por qué escribes?",
+"fr": "Que dirais-tu dans ton propre art poétique, un poème sur tes raisons d'écrire ?",
+"it": "Cosa diresti nella tua ars poetica, una poesia sul perché scrivi?",
+"pt": "O que dirias na tua própria arte poética, um poema sobre porque escreves?",
+"pt_BR": "O que você diria na sua própria arte poética, um poema sobre por que escreve?"
+}
+},
+{
+"id": "poetry-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which poetic movement do you feel closest to, and why?",
+"de": "Welcher literarischen Bewegung in der Lyrik fühlst du dich am nächsten, und warum?",
+"es": "¿Con qué movimiento poético te sientes más identificado y por qué?",
+"fr": "De quel mouvement poétique te sens-tu le plus proche, et pourquoi ?",
+"it": "A quale movimento poetico ti senti più vicino, e perché?",
+"pt": "De que movimento poético te sentes mais próximo, e porquê?",
+"pt_BR": "De qual movimento poético você se sente mais próximo, e por quê?"
+}
+},
+{
+"id": "poetry-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance mystery and clarity in your poems?",
+"de": "Wie hältst du in deinen Gedichten die Balance zwischen Geheimnis und Klarheit?",
+"es": "¿Cómo equilibras el misterio y la claridad en tus poemas?",
+"fr": "Comment équilibres-tu mystère et clarté dans tes poèmes ?",
+"it": "Come bilanci mistero e chiarezza nelle tue poesie?",
+"pt": "Como equilibras mistério e clareza nos teus poemas?",
+"pt_BR": "Como você equilibra mistério e clareza nos seus poemas?"
+}
+},
+{
+"id": "poetry-091",
+"lv": "advanced",
+"i18n": {
+"en": "Have you ever written a poem in a language that is not your first? How did it feel?",
+"de": "Hast du schon einmal ein Gedicht in einer Sprache geschrieben, die nicht deine Muttersprache ist?",
+"es": "¿Has escrito alguna vez un poema en un idioma que no es el tuyo materno? ¿Qué tal fue?",
+"fr": "As-tu déjà écrit un poème dans une langue qui n'est pas ta langue maternelle ? Qu'as-tu ressenti ?",
+"it": "Hai mai scritto una poesia in una lingua che non è la tua madrelingua? Com'è stato?",
+"pt": "Já alguma vez escreveste um poema numa língua que não é a tua materna? Como foi?",
+"pt_BR": "Você já escreveu um poema num idioma que não é sua língua materna? Como foi?"
+}
+},
+{
+"id": "poetry-092",
+"lv": "advanced",
+"i18n": {
+"en": "What would the title and theme of your first chapbook be?",
+"de": "Wie würden Titel und Thema deines ersten kleinen Gedichtbands lauten?",
+"es": "¿Cuál sería el título y el tema de tu primer cuadernillo de poemas?",
+"fr": "Quels seraient le titre et le thème de ton premier recueil de poche ?",
+"it": "Quali sarebbero il titolo e il tema della tua prima plaquette di poesie?",
+"pt": "Qual seria o título e o tema da tua primeira plaquete de poemas?",
+"pt_BR": "Qual seria o título e o tema da sua primeira plaquete de poemas?"
+}
+},
+{
+"id": "poetry-093",
+"lv": "advanced",
+"i18n": {
+"en": "How do you know when a poem is finished and revising would only harm it?",
+"de": "Woran erkennst du, dass ein Gedicht fertig ist und weiteres Überarbeiten schaden würde?",
+"es": "¿Cómo sabes que un poema está terminado y que revisarlo más lo estropearía?",
+"fr": "Comment sais-tu qu'un poème est fini et que le retoucher l'abîmerait ?",
+"it": "Come capisci che una poesia è finita e che rivederla ancora la rovinerebbe?",
+"pt": "Como sabes que um poema está acabado e que revê-lo mais só o estragaria?",
+"pt_BR": "Como você sabe que um poema está pronto e que revisar mais só iria estragá-lo?"
+}
+},
+{
+"id": "poetry-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which long poem or poem sequence has impressed you, and why?",
+"de": "Welches lange Gedicht oder welcher Gedichtzyklus hat dich beeindruckt, und warum?",
+"es": "¿Qué poema largo o ciclo de poemas te ha impresionado y por qué?",
+"fr": "Quel long poème ou quelle suite poétique t'a impressionné, et pourquoi ?",
+"it": "Quale poemetto o ciclo di poesie ti ha colpito, e perché?",
+"pt": "Que poema longo ou ciclo de poemas te impressionou, e porquê?",
+"pt_BR": "Que poema longo ou ciclo de poemas impressionou você, e por quê?"
+}
+},
+{
+"id": "poetry-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do you use silence and white space in your poems?",
+"de": "Wie nutzt du Stille und Weißraum in deinen Gedichten?",
+"es": "¿Cómo usas el silencio y el espacio en blanco en tus poemas?",
+"fr": "Comment utilises-tu le silence et les blancs dans tes poèmes ?",
+"it": "Come usi il silenzio e lo spazio bianco nelle tue poesie?",
+"pt": "Como usas o silêncio e o espaço em branco nos teus poemas?",
+"pt_BR": "Como você usa o silêncio e o espaço em branco nos seus poemas?"
+}
+},
+{
+"id": "poetry-096",
+"lv": "advanced",
+"i18n": {
+"en": "Where would you love to see one of your poems: a journal, a wall or a stage?",
+"de": "Wo würdest du gern eines deiner Gedichte sehen: in einer Zeitschrift, an einer Wand oder auf einer Bühne?",
+"es": "¿Dónde te encantaría ver uno de tus poemas: en una revista, en una pared o en un escenario?",
+"fr": "Où aimerais-tu voir un de tes poèmes : dans une revue, sur un mur ou sur scène ?",
+"it": "Dove ti piacerebbe vedere una tua poesia: in una rivista, su un muro o su un palco?",
+"pt": "Onde adorarias ver um poema teu: numa revista, numa parede ou num palco?",
+"pt_BR": "Onde você adoraria ver um poema seu: numa revista, num muro ou num palco?"
+}
+},
+{
+"id": "poetry-097",
+"lv": "advanced",
+"i18n": {
+"en": "Which translation of a famous poem do you think captures it best?",
+"de": "Welche Übersetzung eines berühmten Gedichts trifft es deiner Meinung nach am besten?",
+"es": "¿Qué traducción de un poema famoso crees que lo capta mejor?",
+"fr": "Quelle traduction d'un poème célèbre le rend le mieux selon toi ?",
+"it": "Quale traduzione di una poesia famosa secondo te la rende meglio?",
+"pt": "Que tradução de um poema famoso achas que o capta melhor?",
+"pt_BR": "Que tradução de um poema famoso você acha que o capta melhor?"
+}
+},
+{
+"id": "poetry-098",
+"lv": "advanced",
+"i18n": {
+"en": "How would you lead a small poetry workshop for friends?",
+"de": "Wie würdest du einen kleinen Lyrik-Workshop für Freunde leiten?",
+"es": "¿Cómo dirigirías un pequeño taller de poesía para amigos?",
+"fr": "Comment animerais-tu un petit atelier de poésie entre amis ?",
+"it": "Come condurresti un piccolo laboratorio di poesia per amici?",
+"pt": "Como orientarias uma pequena oficina de poesia para amigos?",
+"pt_BR": "Como você conduziria uma pequena oficina de poesia para amigos?"
+}
+},
+{
+"id": "poetry-099",
+"lv": "advanced",
+"i18n": {
+"en": "What form would you invent if you could create your own rules?",
+"de": "Welche Form würdest du erfinden, wenn du deine eigenen Regeln aufstellen könntest?",
+"es": "¿Qué forma poética inventarías si pudieras crear tus propias reglas?",
+"fr": "Quelle forme inventerais-tu si tu pouvais créer tes propres règles ?",
+"it": "Quale forma inventeresti se potessi creare le tue regole?",
+"pt": "Que forma inventarias se pudesses criar as tuas próprias regras?",
+"pt_BR": "Que forma você inventaria se pudesse criar suas próprias regras?"
+}
+},
+{
+"id": "poetry-100",
+"lv": "advanced",
+"i18n": {
+"en": "What do you hope your poems will give to the people who read them?",
+"de": "Was sollen deine Gedichte den Menschen geben, die sie lesen?",
+"es": "¿Qué esperas que tus poemas den a quienes los lean?",
+"fr": "Qu'espères-tu que tes poèmes apportent à ceux qui les lisent ?",
+"it": "Cosa speri che le tue poesie diano a chi le legge?",
+"pt": "O que esperas que os teus poemas deem a quem os lê?",
+"pt_BR": "O que você espera que seus poemas deem a quem os lê?"
+}
+}
+]
+}

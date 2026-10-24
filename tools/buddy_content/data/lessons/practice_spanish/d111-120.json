@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 111,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Affirmative commands (tú)",
+     "g": "Tell a friend what to do with tú commands.",
+     "p": [
+      "Regular tú commands look like the él form of the present: habla, come, escribe, abre.",
+      "Eight short irregulars: ven, pon, haz, di, sal, ten, ve (go), sé (be).",
+      "Commands are often friendly, not rude: ven a cenar, prueba esto, pasa, pasa."
+     ],
+     "q": "Give me three tips in tú commands for my first day in your city.",
+     "c": "Write a recipe or instructions for a game with six tú commands."
+    },
+    "de": {
+     "t": "Imperativ mit tú",
+     "g": "Du sagst einer Freundin mit dem Imperativ, was sie tun soll.",
+     "p": [
+      "Regelmäßige tú-Befehle sehen aus wie die él-Form im Präsens: habla, come, escribe, abre.",
+      "Acht kurze unregelmäßige: ven, pon, haz, di, sal, ten, ve (geh), sé (sei).",
+      "Imperative sind oft freundlich, nicht unhöflich: ven a cenar, prueba esto, pasa, pasa."
+     ],
+     "q": "Gib mir drei Tipps mit tú-Imperativ für meinen ersten Tag in deiner Stadt.",
+     "c": "Schreib ein Rezept oder eine Spielanleitung mit sechs tú-Imperativen."
+    },
+    "es": {
+     "t": "Imperativo afirmativo (tú)",
+     "g": "Di a un amigo lo que tiene que hacer con el imperativo de tú.",
+     "p": [
+      "El imperativo regular de tú coincide con la forma él del presente: habla, come, escribe, abre.",
+      "Ocho irregulares cortos: ven, pon, haz, di, sal, ten, ve, sé. En Argentina, con vos: hablá, vení.",
+      "El imperativo suele ser amable, no brusco: ven a cenar, prueba esto, pasa, pasa."
+     ],
+     "q": "Dame tres consejos con imperativo para mi primer día en tu ciudad.",
+     "c": "Escribe una receta o las instrucciones de un juego con seis imperativos de tú."
+    },
+    "fr": {
+     "t": "L'impératif affirmatif (tú)",
+     "g": "Dire à un ami quoi faire avec l'impératif de tú.",
+     "p": [
+      "L'impératif régulier de tú ressemble à la forme él du présent : habla, come, escribe, abre.",
+      "Huit irréguliers courts : ven, pon, haz, di, sal, ten, ve (va), sé (sois).",
+      "L'impératif est souvent chaleureux, pas impoli : ven a cenar, prueba esto, pasa, pasa."
+     ],
+     "q": "Donne-moi trois conseils à l'impératif pour mon premier jour dans ta ville.",
+     "c": "Écris une recette ou les règles d'un jeu avec six impératifs de tú."
+    },
+    "it": {
+     "t": "Imperativo affermativo (tú)",
+     "g": "Dici a un amico cosa fare con l'imperativo di tú.",
+     "p": [
+      "L'imperativo regolare di tú è uguale alla forma él del presente: habla, come, escribe, abre.",
+      "Otto irregolari brevi: ven, pon, haz, di, sal, ten, ve (vai), sé (sii).",
+      "L'imperativo è spesso gentile, non brusco: ven a cenar, prueba esto, pasa, pasa."
+     ],
+     "q": "Dammi tre consigli all'imperativo per il mio primo giorno nella tua città.",
+     "c": "Scrivi una ricetta o le regole di un gioco con sei imperativi di tú."
+    },
+    "pt": {
+     "t": "Imperativo afirmativo (tú)",
+     "g": "Diz a um amigo o que fazer com o imperativo de tú.",
+     "p": [
+      "O imperativo regular de tú é igual à forma él do presente: habla, come, escribe, abre.",
+      "Oito irregulares curtos: ven, pon, haz, di, sal, ten, ve (vai), sé (sê).",
+      "O imperativo é muitas vezes simpático, não rude: ven a cenar, prueba esto, pasa, pasa."
+     ],
+     "q": "Dá-me três conselhos no imperativo para o meu primeiro dia na tua cidade.",
+     "c": "Escreve uma receita ou as regras de um jogo com seis imperativos de tú."
+    },
+    "pt_BR": {
+     "t": "Imperativo afirmativo (tú)",
+     "g": "Diga a um amigo o que fazer com o imperativo de tú.",
+     "p": [
+      "O imperativo regular de tú é igual à forma él do presente: habla, come, escribe, abre.",
+      "Oito irregulares curtos: ven, pon, haz, di, sal, ten, ve (vai), sé (seja).",
+      "O imperativo costuma ser simpático, não grosseiro: ven a cenar, prueba esto, pasa, pasa."
+     ],
+     "q": "Me dê três dicas no imperativo para o meu primeiro dia na sua cidade.",
+     "c": "Escreva uma receita ou as regras de um jogo com seis imperativos de tú."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "habla",
+      "ex": "Habla más alto, por favor."
+     },
+     {
+      "w": "come",
+      "ex": "Come algo, que tienes hambre."
+     },
+     {
+      "w": "escribe",
+      "ex": "Escríbeme cuando llegues."
+     },
+     {
+      "w": "ven",
+      "ex": "Ven aquí un momento."
+     },
+     {
+      "w": "pon / haz",
+      "ex": "Pon la mesa y haz la ensalada."
+     },
+     {
+      "w": "di / sal / ten",
+      "ex": "Di la verdad. Sal ya. Ten cuidado."
+     }
+    ],
+    "gram": "Imperativo tú afirmativo = 3.ª persona del presente: habla, come, escribe. Irregulares: ven, pon, haz, di, sal, ten, ve, sé."
+   }
+  },
+  {
+   "d": 112,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Negative commands",
+     "g": "Tell someone what not to do.",
+     "p": [
+      "Swap the vowel: -ar verbs take -es (no hables), -er and -ir verbs take -as (no comas, no abras).",
+      "Start from the yo form: tengo > no tengas, hago > no hagas, vengo > no vengas, digo > no digas.",
+      "These are subjunctive forms: a sneak preview of a big topic coming later."
+     ],
+     "q": "What advice with no... would you give a tourist in your country?",
+     "c": "Write five don'ts for a new flatmate using negative tú commands."
+    },
+    "de": {
+     "t": "Verneinter Imperativ",
+     "g": "Du sagst jemandem, was er nicht tun soll.",
+     "p": [
+      "Vokal tauschen: -ar-Verben bekommen -es (no hables), -er/-ir bekommen -as (no comas, no abras).",
+      "Von der Ich-Form ausgehen: tengo > no tengas, hago > no hagas, vengo > no vengas, digo > no digas.",
+      "Das sind Subjunktivformen: ein kleiner Vorgeschmack auf ein großes Thema."
+     ],
+     "q": "Welchen Rat mit no... würdest du einem Touristen in deinem Land geben?",
+     "c": "Schreib fünf Verbote für einen neuen Mitbewohner mit verneintem tú-Imperativ."
+    },
+    "es": {
+     "t": "Imperativo negativo",
+     "g": "Di a alguien lo que no debe hacer.",
+     "p": [
+      "Se cambia la vocal: -ar toma -es (no hables) y -er/-ir toman -as (no comas, no abras).",
+      "Se parte de la forma yo: tengo > no tengas, hago > no hagas, vengo > no vengas, digo > no digas.",
+      "Son formas del presente de subjuntivo: un primer contacto con un tema que verás a fondo más adelante."
+     ],
+     "q": "¿Qué consejos con no... le darías a un turista en tu país?",
+     "c": "Escribe cinco prohibiciones para un nuevo compañero de piso con imperativos negativos."
+    },
+    "fr": {
+     "t": "L'impératif négatif",
+     "g": "Dire à quelqu'un ce qu'il ne doit pas faire.",
+     "p": [
+      "On change la voyelle : -ar prend -es (no hables), -er et -ir prennent -as (no comas, no abras).",
+      "On part de la forme yo : tengo > no tengas, hago > no hagas, vengo > no vengas, digo > no digas.",
+      "Ce sont des formes du subjonctif : un avant-goût d'un grand sujet à venir."
+     ],
+     "q": "Quels conseils avec no... donnerais-tu à un touriste dans ton pays ?",
+     "c": "Écris cinq interdictions pour un nouveau colocataire avec l'impératif négatif."
+    },
+    "it": {
+     "t": "Imperativo negativo",
+     "g": "Dici a qualcuno cosa non fare.",
+     "p": [
+      "Si scambia la vocale: -ar prende -es (no hables), -er e -ir prendono -as (no comas, no abras).",
+      "Si parte dalla forma yo: tengo > no tengas, hago > no hagas, vengo > no vengas, digo > no digas.",
+      "Attenzione: non si usa l'infinito come in italiano (non parlare)! Sono forme del congiuntivo."
+     ],
+     "q": "Quali consigli con no... daresti a un turista nel tuo paese?",
+     "c": "Scrivi cinque divieti per un nuovo coinquilino con l'imperativo negativo."
+    },
+    "pt": {
+     "t": "Imperativo negativo",
+     "g": "Diz a alguém o que não deve fazer.",
+     "p": [
+      "Troca-se a vogal: -ar leva -es (no hables), -er e -ir levam -as (no comas, no abras).",
+      "Parte-se da forma yo: tengo > no tengas, hago > no hagas, vengo > no vengas, digo > no digas.",
+      "É como em português: não fales, não comas. São formas do conjuntivo."
+     ],
+     "q": "Que conselhos com no... darias a um turista no teu país?",
+     "c": "Escreve cinco proibições para um novo colega de casa com o imperativo negativo."
+    },
+    "pt_BR": {
+     "t": "Imperativo negativo",
+     "g": "Diga a alguém o que não fazer.",
+     "p": [
+      "Troca-se a vogal: -ar leva -es (no hables), -er e -ir levam -as (no comas, no abras).",
+      "Parta da forma yo: tengo > no tengas, hago > no hagas, vengo > no vengas, digo > no digas.",
+      "São formas do subjuntivo, como em não fales, não comas do português formal."
+     ],
+     "q": "Que conselhos com no... você daria a um turista no seu país?",
+     "c": "Escreva cinco proibições para um novo colega de apartamento com o imperativo negativo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "no hables",
+      "ex": "No hables tan rápido, por favor."
+     },
+     {
+      "w": "no comas",
+      "ex": "No comas tanto chocolate."
+     },
+     {
+      "w": "no escribas",
+      "ex": "No escribas en el libro."
+     },
+     {
+      "w": "no vengas",
+      "ex": "No vengas tarde esta noche."
+     },
+     {
+      "w": "no hagas",
+      "ex": "No hagas ruido, el bebé duerme."
+     },
+     {
+      "w": "no te preocupes",
+      "ex": "No te preocupes, todo va bien."
+     }
+    ],
+    "gram": "Imperativo negativo tú: no + subjuntivo: -ar > -es (no hables), -er/-ir > -as (no comas, no escribas). Raíz de yo: tengo > no tengas."
+   }
+  },
+  {
+   "d": 113,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Commands with usted",
+     "g": "Use polite commands for formal situations.",
+     "p": [
+      "Usted commands swap the vowel: -ar > -e (pase, espere), -er and -ir > -a (coma, suba).",
+      "Plural ustedes adds -n: pasen, siéntense. Negative is the same with no: no se preocupe.",
+      "You hear them everywhere: in shops, hotels, offices and from waiters: tome, firme aquí."
+     ],
+     "q": "A guest arrives at your home. What do you say with usted commands?",
+     "c": "Write five polite instructions a receptionist might give to a hotel guest."
+    },
+    "de": {
+     "t": "Imperativ mit usted",
+     "g": "Du benutzt höfliche Befehle in formellen Situationen.",
+     "p": [
+      "Usted-Befehle tauschen den Vokal: -ar > -e (pase, espere), -er/-ir > -a (coma, suba).",
+      "Plural ustedes mit -n: pasen, siéntense. Verneint genauso mit no: no se preocupe.",
+      "Du hörst sie überall: in Läden, Hotels, Ämtern und vom Kellner: tome, firme aquí."
+     ],
+     "q": "Ein Gast kommt zu dir nach Hause. Was sagst du mit usted-Befehlen?",
+     "c": "Schreib fünf höfliche Anweisungen, die eine Rezeptionistin einem Hotelgast gibt."
+    },
+    "es": {
+     "t": "Imperativo con usted",
+     "g": "Usa el imperativo formal en situaciones de respeto.",
+     "p": [
+      "Con usted se cambia la vocal: -ar > -e (pase, espere), -er/-ir > -a (coma, suba).",
+      "Ustedes añade -n: pasen, siéntense. En negativo es igual con no: no se preocupe.",
+      "Se oye en tiendas, hoteles, oficinas y restaurantes: tome, firme aquí. En América, ustedes vale para todos."
+     ],
+     "q": "Llega un invitado a tu casa. ¿Qué le dices con imperativos de usted?",
+     "c": "Escribe cinco instrucciones amables que una recepcionista da a un cliente del hotel."
+    },
+    "fr": {
+     "t": "L'impératif avec usted",
+     "g": "Utiliser l'impératif de politesse dans les situations formelles.",
+     "p": [
+      "Avec usted, on change la voyelle : -ar > -e (pase, espere), -er et -ir > -a (coma, suba).",
+      "Au pluriel ustedes, on ajoute -n : pasen, siéntense. Négatif identique : no se preocupe.",
+      "On les entend partout : magasins, hôtels, bureaux et serveurs : tome, firme aquí."
+     ],
+     "q": "Un invité arrive chez toi. Que lui dis-tu avec l'impératif de usted ?",
+     "c": "Écris cinq consignes polies qu'une réceptionniste donne à un client d'hôtel."
+    },
+    "it": {
+     "t": "Imperativo con usted",
+     "g": "Usi l'imperativo di cortesia nelle situazioni formali.",
+     "p": [
+      "Con usted si scambia la vocale: -ar > -e (pase, espere), -er e -ir > -a (coma, suba).",
+      "Come il Lei italiano: si accomodi = siéntese. Ustedes aggiunge -n: pasen, siéntense.",
+      "Li senti ovunque: negozi, alberghi, uffici e camerieri: tome, firme aquí, no se preocupe."
+     ],
+     "q": "Arriva un ospite a casa tua. Cosa dici con l'imperativo di usted?",
+     "c": "Scrivi cinque istruzioni cortesi che una receptionist dà a un cliente dell'albergo."
+    },
+    "pt": {
+     "t": "Imperativo com usted",
+     "g": "Usa o imperativo formal em situações de cortesia.",
+     "p": [
+      "Com usted troca-se a vogal: -ar > -e (pase, espere), -er e -ir > -a (coma, suba).",
+      "Como o nosso entre, sente-se: siéntese. Ustedes junta -n: pasen, siéntense.",
+      "Ouve-se em lojas, hotéis, escritórios e restaurantes: tome, firme aquí, no se preocupe."
+     ],
+     "q": "Chega um convidado a tua casa. O que lhe dizes com imperativos de usted?",
+     "c": "Escreve cinco instruções educadas que uma rececionista dá a um hóspede."
+    },
+    "pt_BR": {
+     "t": "Imperativo com usted",
+     "g": "Use o imperativo formal em situações de cortesia.",
+     "p": [
+      "Com usted troca-se a vogal: -ar > -e (pase, espere), -er e -ir > -a (coma, suba).",
+      "Como o nosso entre, sente-se: siéntese. Ustedes acrescenta -n: pasen, siéntense.",
+      "Você ouve em lojas, hotéis, escritórios e restaurantes: tome, firme aquí, no se preocupe."
+     ],
+     "q": "Um convidado chega à sua casa. O que você diz com imperativos de usted?",
+     "c": "Escreva cinco instruções educadas que uma recepcionista dá a um hóspede."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pase",
+      "ex": "Pase, pase, por favor."
+     },
+     {
+      "w": "siéntese",
+      "ex": "Siéntese aquí, señora."
+     },
+     {
+      "w": "tome",
+      "ex": "Tome, aquí tiene su cambio."
+     },
+     {
+      "w": "espere",
+      "ex": "Espere un momento, por favor."
+     },
+     {
+      "w": "perdone",
+      "ex": "Perdone, ¿la calle Mayor?"
+     },
+     {
+      "w": "no se preocupe",
+      "ex": "No se preocupe, no pasa nada."
+     }
+    ],
+    "gram": "Imperativo usted/ustedes = subjuntivo: -ar > -e/-en (pase, pasen), -er/-ir > -a/-an (coma, escriban). Igual en afirmativo y negativo."
+   }
+  },
+  {
+   "d": 114,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Commands with pronouns",
+     "g": "Learn where pronouns go in commands.",
+     "p": [
+      "Affirmative: pronouns attach to the end: dímelo (tell it to me), siéntate, cómpralo.",
+      "An accent is often added to keep the stress: compra > cómpralo, di > dímelo.",
+      "Negative: pronouns go before the verb: no me lo digas, no te preocupes, no lo toques."
+     ],
+     "q": "A friend is nervous before an exam. What do you say with no te preocupes and other commands?",
+     "c": "Turn five affirmative commands into negative ones: cómpralo > no lo compres."
+    },
+    "de": {
+     "t": "Imperativ mit Pronomen",
+     "g": "Du lernst, wo die Pronomen beim Imperativ stehen.",
+     "p": [
+      "Bejaht: Pronomen hängen hinten dran: dímelo (sag es mir), siéntate, cómpralo.",
+      "Oft kommt ein Akzent dazu, damit die Betonung bleibt: compra > cómpralo, di > dímelo.",
+      "Verneint: Pronomen stehen davor: no me lo digas, no te preocupes, no lo toques."
+     ],
+     "q": "Ein Freund ist vor einer Prüfung nervös. Was sagst du mit no te preocupes und anderen Befehlen?",
+     "c": "Mach aus fünf bejahten Befehlen verneinte: cómpralo > no lo compres."
+    },
+    "es": {
+     "t": "Imperativo con pronombres",
+     "g": "Aprende dónde van los pronombres en el imperativo.",
+     "p": [
+      "En afirmativo, los pronombres van pegados al final: dímelo, siéntate, cómpralo.",
+      "Suele añadirse una tilde para mantener el acento: compra > cómpralo, da > dámelo.",
+      "En negativo van delante del verbo: no me lo digas, no te preocupes, no lo toques."
+     ],
+     "q": "Un amigo está nervioso antes de un examen. ¿Qué le dices con no te preocupes y otros imperativos?",
+     "c": "Pasa cinco imperativos afirmativos a negativo: cómpralo > no lo compres."
+    },
+    "fr": {
+     "t": "L'impératif avec pronoms",
+     "g": "Apprendre où se placent les pronoms à l'impératif.",
+     "p": [
+      "À l'affirmatif, les pronoms s'attachent à la fin : dímelo (dis-le-moi), siéntate, cómpralo.",
+      "On ajoute souvent un accent pour garder l'accent tonique : compra > cómpralo, di > dímelo.",
+      "Au négatif, ils passent devant le verbe : no me lo digas, no te preocupes, no lo toques."
+     ],
+     "q": "Un ami est stressé avant un examen. Que lui dis-tu avec no te preocupes et d'autres impératifs ?",
+     "c": "Transforme cinq impératifs affirmatifs en négatifs : cómpralo > no lo compres."
+    },
+    "it": {
+     "t": "Imperativo con pronomi",
+     "g": "Impari dove vanno i pronomi all'imperativo.",
+     "p": [
+      "All'affermativo i pronomi si attaccano alla fine, come in italiano: dímelo (dimmelo), siéntate.",
+      "Spesso si aggiunge un accento per mantenere la tonica: compra > cómpralo, di > dímelo.",
+      "Al negativo vanno davanti al verbo: no me lo digas, no te preocupes, no lo toques."
+     ],
+     "q": "Un amico è nervoso prima di un esame. Cosa gli dici con no te preocupes e altri imperativi?",
+     "c": "Trasforma cinque imperativi affermativi in negativi: cómpralo > no lo compres."
+    },
+    "pt": {
+     "t": "Imperativo com pronomes",
+     "g": "Aprende onde ficam os pronomes no imperativo.",
+     "p": [
+      "No afirmativo, os pronomes vão colados ao fim: dímelo (diz-mo), siéntate (senta-te), cómpralo.",
+      "Junta-se muitas vezes um acento para manter a tónica: compra > cómpralo, di > dímelo.",
+      "No negativo vão antes do verbo: no me lo digas, no te preocupes, no lo toques."
+     ],
+     "q": "Um amigo está nervoso antes de um exame. O que lhe dizes com no te preocupes e outros imperativos?",
+     "c": "Passa cinco imperativos afirmativos para o negativo: cómpralo > no lo compres."
+    },
+    "pt_BR": {
+     "t": "Imperativo com pronomes",
+     "g": "Aprenda onde ficam os pronomes no imperativo.",
+     "p": [
+      "No afirmativo, os pronomes vão grudados no fim: dímelo (me diga), siéntate (sente-se), cómpralo.",
+      "Muitas vezes entra um acento para manter a tônica: compra > cómpralo, di > dímelo.",
+      "No negativo, vão antes do verbo: no me lo digas, no te preocupes, no lo toques."
+     ],
+     "q": "Um amigo está nervoso antes de uma prova. O que você diz com no te preocupes e outros imperativos?",
+     "c": "Passe cinco imperativos afirmativos para o negativo: cómpralo > no lo compres."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dímelo",
+      "ex": "Si sabes la respuesta, dímelo."
+     },
+     {
+      "w": "siéntate",
+      "ex": "Siéntate, por favor."
+     },
+     {
+      "w": "no te preocupes",
+      "ex": "No te preocupes por mí."
+     },
+     {
+      "w": "cómpralo",
+      "ex": "Si te gusta, cómpralo."
+     },
+     {
+      "w": "no lo toques",
+      "ex": "No lo toques, está caliente."
+     },
+     {
+      "w": "levántate",
+      "ex": "Levántate, que es tarde."
+     }
+    ],
+    "gram": "Imperativo afirmativo: pronombres pegados al final (dímelo, siéntate), a menudo con tilde. Negativo: pronombres delante (no me lo digas)."
+   }
+  },
+  {
+   "d": 115,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Giving advice: deberías",
+     "g": "Give friendly advice in different ways.",
+     "p": [
+      "Deberías + infinitive = you should: deberías dormir más. It sounds softer than debes.",
+      "Te aconsejo + infinitive (I advise you to) and ¿Por qué no...? + present: ¿por qué no descansas?",
+      "Also: lo mejor es salir pronto; yo que tú... (if I were you...) + a verb ending in -ía."
+     ],
+     "q": "I want to learn Spanish faster. What advice do you give me?",
+     "c": "A friend is always tired. Write four pieces of advice using four different structures."
+    },
+    "de": {
+     "t": "Ratschläge geben: deberías",
+     "g": "Du gibst freundliche Ratschläge auf verschiedene Arten.",
+     "p": [
+      "Deberías + Infinitiv = du solltest: deberías dormir más. Klingt weicher als debes.",
+      "Te aconsejo + Infinitiv (ich rate dir) und ¿Por qué no...? + Präsens: ¿por qué no descansas?",
+      "Außerdem: lo mejor es salir pronto; yo que tú... (an deiner Stelle...) + Verb auf -ía."
+     ],
+     "q": "Ich will schneller Spanisch lernen. Welchen Rat gibst du mir?",
+     "c": "Ein Freund ist immer müde. Schreib vier Ratschläge mit vier verschiedenen Strukturen."
+    },
+    "es": {
+     "t": "Dar consejos: deberías",
+     "g": "Da consejos amables de distintas maneras.",
+     "p": [
+      "Deberías + infinitivo suena más suave que debes: deberías dormir más.",
+      "Te aconsejo + infinitivo y ¿Por qué no + presente?: te aconsejo caminar, ¿por qué no descansas?",
+      "También: lo mejor es salir pronto; yo que tú, cogería un taxi (en América se dice tomaría)."
+     ],
+     "q": "Quiero aprender español más rápido. ¿Qué consejos me das?",
+     "c": "Un amigo está siempre cansado. Escribe cuatro consejos con cuatro estructuras distintas."
+    },
+    "fr": {
+     "t": "Donner des conseils : deberías",
+     "g": "Donner des conseils amicaux de différentes façons.",
+     "p": [
+      "Deberías + infinitif = tu devrais : deberías dormir más. Plus doux que debes.",
+      "Te aconsejo + infinitif (je te conseille de) et ¿Por qué no...? + présent : ¿por qué no descansas?",
+      "Aussi : lo mejor es salir pronto ; yo que tú... (à ta place...) + verbe en -ía."
+     ],
+     "q": "Je veux apprendre l'espagnol plus vite. Quels conseils me donnes-tu ?",
+     "c": "Un ami est toujours fatigué. Écris quatre conseils avec quatre structures différentes."
+    },
+    "it": {
+     "t": "Dare consigli: deberías",
+     "g": "Dai consigli amichevoli in modi diversi.",
+     "p": [
+      "Deberías + infinito = dovresti: deberías dormir más. Più gentile di debes.",
+      "Te aconsejo + infinito (ti consiglio di) e ¿Por qué no...? + presente: ¿por qué no descansas?",
+      "Anche: lo mejor es salir pronto; yo que tú... (se fossi in te...) + verbo in -ía."
+     ],
+     "q": "Voglio imparare lo spagnolo più in fretta. Che consigli mi dai?",
+     "c": "Un amico è sempre stanco. Scrivi quattro consigli con quattro strutture diverse."
+    },
+    "pt": {
+     "t": "Dar conselhos: deberías",
+     "g": "Dá conselhos amigáveis de várias maneiras.",
+     "p": [
+      "Deberías + infinitivo = devias ou deverias: deberías dormir más. Mais suave que debes.",
+      "Te aconsejo + infinitivo e ¿Por qué no...? + presente: ¿por qué no descansas?",
+      "Também: lo mejor es salir pronto; yo que tú... (se fosse a ti...) + verbo em -ía."
+     ],
+     "q": "Quero aprender espanhol mais depressa. Que conselhos me dás?",
+     "c": "Um amigo está sempre cansado. Escreve quatro conselhos com quatro estruturas diferentes."
+    },
+    "pt_BR": {
+     "t": "Dando conselhos: deberías",
+     "g": "Dê conselhos amigáveis de várias maneiras.",
+     "p": [
+      "Deberías + infinitivo = você deveria: deberías dormir más. Mais suave que debes.",
+      "Te aconsejo + infinitivo e ¿Por qué no...? + presente: ¿por qué no descansas?",
+      "Também: lo mejor es salir pronto; yo que tú... (se eu fosse você...) + verbo em -ía."
+     ],
+     "q": "Quero aprender espanhol mais rápido. Que conselhos você me dá?",
+     "c": "Um amigo está sempre cansado. Escreva quatro conselhos com quatro estruturas diferentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "deberías",
+      "ex": "Deberías descansar un poco."
+     },
+     {
+      "w": "te aconsejo",
+      "ex": "Te aconsejo probar el gazpacho."
+     },
+     {
+      "w": "¿Por qué no...?",
+      "ex": "¿Por qué no llamas a tu hermana?"
+     },
+     {
+      "w": "lo mejor es",
+      "ex": "Lo mejor es salir temprano."
+     },
+     {
+      "w": "yo que tú",
+      "ex": "Yo que tú, cogería un taxi."
+     },
+     {
+      "w": "tener razón",
+      "ex": "Tienes razón, voy a descansar."
+     }
+    ],
+    "gram": "Consejos: deberías + infinitivo (condicional de deber), te aconsejo + infinitivo, ¿por qué no + presente?, lo mejor es + infinitivo."
+   }
+  },
+  {
+   "d": 116,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Obligation and prohibition",
+     "g": "Understand and explain rules in Spanish.",
+     "p": [
+      "Obligation: tengo que, debes, hay que, es obligatorio + infinitive: es obligatorio llevar casco.",
+      "Prohibition: no se puede fumar, está prohibido aparcar. You will see these on signs!",
+      "Permission: ¿Se puede pagar con tarjeta? ¿Está permitido hacer fotos? Sí, se puede."
+     ],
+     "q": "What are the rules at your work, school or home?",
+     "c": "Write six rules for a library or a swimming pool with three different structures."
+    },
+    "de": {
+     "t": "Pflicht und Verbot",
+     "g": "Du verstehst und erklärst Regeln auf Spanisch.",
+     "p": [
+      "Pflicht: tengo que, debes, hay que, es obligatorio + Infinitiv: es obligatorio llevar casco.",
+      "Verbot: no se puede fumar, está prohibido aparcar. Das siehst du auf Schildern!",
+      "Erlaubnis: ¿Se puede pagar con tarjeta? ¿Está permitido hacer fotos? Sí, se puede."
+     ],
+     "q": "Welche Regeln gibt es bei deiner Arbeit, in deiner Schule oder zu Hause?",
+     "c": "Schreib sechs Regeln für eine Bibliothek oder ein Schwimmbad mit drei Strukturen."
+    },
+    "es": {
+     "t": "Obligación y prohibición",
+     "g": "Entiende y explica normas en español.",
+     "p": [
+      "Obligación: tengo que, debes, hay que, es obligatorio + infinitivo: es obligatorio llevar casco.",
+      "Prohibición: no se puede fumar, está prohibido aparcar (en América, estacionar). ¡Lo verás en carteles!",
+      "Permiso: ¿Se puede pagar con tarjeta? ¿Está permitido hacer fotos? Sí, claro, se puede."
+     ],
+     "q": "¿Qué normas hay en tu trabajo, en tu escuela o en tu casa?",
+     "c": "Escribe seis normas para una biblioteca o una piscina con tres estructuras distintas."
+    },
+    "fr": {
+     "t": "Obligation et interdiction",
+     "g": "Comprendre et expliquer des règles en espagnol.",
+     "p": [
+      "Obligation : tengo que, debes, hay que, es obligatorio + infinitif : es obligatorio llevar casco.",
+      "Interdiction : no se puede fumar, está prohibido aparcar. Tu le verras sur les panneaux !",
+      "Permission : ¿Se puede pagar con tarjeta? ¿Está permitido hacer fotos? Sí, se puede."
+     ],
+     "q": "Quelles sont les règles à ton travail, à l'école ou à la maison ?",
+     "c": "Écris six règles pour une bibliothèque ou une piscine avec trois structures."
+    },
+    "it": {
+     "t": "Obbligo e divieto",
+     "g": "Capisci e spieghi regole in spagnolo.",
+     "p": [
+      "Obbligo: tengo que, debes, hay que, es obligatorio + infinito: es obligatorio llevar casco.",
+      "Divieto: no se puede fumar, está prohibido aparcar. Lo vedrai sui cartelli!",
+      "Permesso: ¿Se puede pagar con tarjeta? ¿Está permitido hacer fotos? Sí, se puede."
+     ],
+     "q": "Quali regole ci sono al tuo lavoro, a scuola o a casa?",
+     "c": "Scrivi sei regole per una biblioteca o una piscina con tre strutture diverse."
+    },
+    "pt": {
+     "t": "Obrigação e proibição",
+     "g": "Percebe e explica regras em espanhol.",
+     "p": [
+      "Obrigação: tengo que, debes, hay que, es obligatorio + infinitivo: es obligatorio llevar casco.",
+      "Proibição: no se puede fumar, está prohibido aparcar. Vais ver isto em placas!",
+      "Permissão: ¿Se puede pagar con tarjeta? ¿Está permitido hacer fotos? Sí, se puede."
+     ],
+     "q": "Que regras há no teu trabalho, na escola ou em casa?",
+     "c": "Escreve seis regras para uma biblioteca ou uma piscina com três estruturas."
+    },
+    "pt_BR": {
+     "t": "Obrigação e proibição",
+     "g": "Entenda e explique regras em espanhol.",
+     "p": [
+      "Obrigação: tengo que, debes, hay que, es obligatorio + infinitivo: es obligatorio llevar casco.",
+      "Proibição: no se puede fumar, está prohibido aparcar. Você vai ver isso em placas!",
+      "Permissão: ¿Se puede pagar con tarjeta? ¿Está permitido hacer fotos? Sí, se puede."
+     ],
+     "q": "Que regras existem no seu trabalho, na escola ou em casa?",
+     "c": "Escreva seis regras para uma biblioteca ou uma piscina com três estruturas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "deber",
+      "ex": "Debes llevar el pasaporte."
+     },
+     {
+      "w": "no se puede",
+      "ex": "Aquí no se puede fumar."
+     },
+     {
+      "w": "está prohibido",
+      "ex": "Está prohibido aparcar en esta calle."
+     },
+     {
+      "w": "está permitido",
+      "ex": "¿Está permitido hacer fotos?"
+     },
+     {
+      "w": "es obligatorio",
+      "ex": "Es obligatorio llevar casco."
+     },
+     {
+      "w": "se puede",
+      "ex": "¿Se puede pagar con tarjeta?"
+     }
+    ],
+    "gram": "Obligación: tener que, deber, hay que + infinitivo. Prohibición: no se puede, está prohibido + infinitivo. Permiso: ¿Se puede + infinitivo?"
+   }
+  },
+  {
+   "d": 117,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Por or para? First steps",
+     "g": "Take your first steps with the two Spanish words for for.",
+     "p": [
+      "Para = purpose and destination: estudio para aprender, salgo para Madrid, es para ti.",
+      "Por = cause, through and exchange: gracias por todo, paseo por el parque, lo compré por diez euros.",
+      "A simple trick: para looks ahead to a goal; por looks back to a cause or a route."
+     ],
+     "q": "Why are you learning Spanish? Answer with para, then thank someone with por.",
+     "c": "Write three sentences with para and three with por about your week."
+    },
+    "de": {
+     "t": "Por oder para? Erste Schritte",
+     "g": "Du machst erste Schritte mit den zwei spanischen Wörtern für für.",
+     "p": [
+      "Para = Zweck und Ziel: estudio para aprender, salgo para Madrid, es para ti.",
+      "Por = Grund, durch und Tausch: gracias por todo, paseo por el parque, lo compré por diez euros.",
+      "Ein Trick: para schaut nach vorn zum Ziel; por schaut zurück auf Grund oder Weg."
+     ],
+     "q": "Warum lernst du Spanisch? Antworte mit para und bedank dich bei jemandem mit por.",
+     "c": "Schreib drei Sätze mit para und drei mit por über deine Woche."
+    },
+    "es": {
+     "t": "¿Por o para? Primeros pasos",
+     "g": "Da los primeros pasos con por y para, un clásico del español.",
+     "p": [
+      "Para indica finalidad, destino y destinatario: estudio para aprender, salgo para Madrid, es para ti.",
+      "Por indica causa, lugar de paso e intercambio: gracias por todo, paseo por el parque, por diez euros.",
+      "Un truco: para mira hacia delante, hacia un objetivo; por mira hacia atrás, a una causa o un camino."
+     ],
+     "q": "¿Para qué aprendes español? Responde con para y luego da las gracias a alguien con por.",
+     "c": "Escribe tres frases con para y tres con por sobre tu semana."
+    },
+    "fr": {
+     "t": "Por ou para ? Premiers pas",
+     "g": "Faire tes premiers pas avec les deux mots espagnols pour pour.",
+     "p": [
+      "Para = but et destination : estudio para aprender, salgo para Madrid, es para ti.",
+      "Por = cause, à travers et échange : gracias por todo, paseo por el parque, por diez euros.",
+      "Astuce : para regarde vers un but ; por regarde vers une cause ou un chemin."
+     ],
+     "q": "Pourquoi apprends-tu l'espagnol ? Réponds avec para, puis remercie quelqu'un avec por.",
+     "c": "Écris trois phrases avec para et trois avec por sur ta semaine."
+    },
+    "it": {
+     "t": "Por o para? Primi passi",
+     "g": "Fai i primi passi con le due parole spagnole per per.",
+     "p": [
+      "Para = scopo e destinazione: estudio para aprender, salgo para Madrid, es para ti.",
+      "Por = causa, attraverso e scambio: gracias por todo, paseo por el parque, por diez euros.",
+      "Un trucco: para guarda avanti verso un obiettivo; por guarda indietro a una causa o un percorso."
+     ],
+     "q": "Perché studi spagnolo? Rispondi con para, poi ringrazia qualcuno con por.",
+     "c": "Scrivi tre frasi con para e tre con por sulla tua settimana."
+    },
+    "pt": {
+     "t": "Por ou para? Primeiros passos",
+     "g": "Dá os primeiros passos com por e para em espanhol.",
+     "p": [
+      "Para = finalidade e destino: estudio para aprender, salgo para Madrid, es para ti.",
+      "Por = causa, através e troca: gracias por todo, paseo por el parque, lo compré por diez euros.",
+      "Parece o português, mas atenção: obrigado pelo = gracias por el; pelo parque = por el parque."
+     ],
+     "q": "Para que aprendes espanhol? Responde com para e depois agradece a alguém com por.",
+     "c": "Escreve três frases com para e três com por sobre a tua semana."
+    },
+    "pt_BR": {
+     "t": "Por ou para? Primeiros passos",
+     "g": "Dê os primeiros passos com por e para em espanhol.",
+     "p": [
+      "Para = finalidade e destino: estudio para aprender, salgo para Madrid, es para ti.",
+      "Por = causa, através e troca: gracias por todo, paseo por el parque, lo compré por diez euros.",
+      "Parece o português, mas atenção: obrigado pelo = gracias por el; pelo parque = por el parque."
+     ],
+     "q": "Para que você aprende espanhol? Responda com para e depois agradeça a alguém com por.",
+     "c": "Escreva três frases com para e três com por sobre sua semana."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "para + infinitivo",
+      "ex": "Estudio español para viajar."
+     },
+     {
+      "w": "para + lugar",
+      "ex": "Mañana salgo para Madrid."
+     },
+     {
+      "w": "para + persona",
+      "ex": "Este regalo es para ti."
+     },
+     {
+      "w": "por + causa",
+      "ex": "Gracias por tu ayuda."
+     },
+     {
+      "w": "por + lugar",
+      "ex": "Paseamos por el centro."
+     },
+     {
+      "w": "por + intercambio",
+      "ex": "Compré el libro por diez euros."
+     }
+    ],
+    "gram": "Para: finalidad (para aprender), destino (para Madrid), destinatario (para ti). Por: causa (por ti), lugar de paso, intercambio, medio."
+   }
+  },
+  {
+   "d": 118,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Healthy habits",
+     "g": "Talk about healthy routines and what you do to feel good.",
+     "p": [
+      "Key phrases: hacer ejercicio, dormir bien, comer sano, beber agua, caminar, relajarse.",
+      "Talk about habits with suelo + infinitive (I usually) and intento (I try): suelo caminar mucho.",
+      "Give opinions: es importante dormir bien, es bueno comer fruta. General wellbeing only, not medical advice."
+     ],
+     "q": "What do you do to stay healthy and relaxed during the week?",
+     "c": "Write your ideal healthy day in six sentences with suelo, intento and es importante."
+    },
+    "de": {
+     "t": "Gesunde Gewohnheiten",
+     "g": "Du sprichst über gesunde Routinen und was dir guttut.",
+     "p": [
+      "Wichtige Ausdrücke: hacer ejercicio, dormir bien, comer sano, beber agua, caminar, relajarse.",
+      "Gewohnheiten mit suelo + Infinitiv (normalerweise) und intento (ich versuche): suelo caminar.",
+      "Meinungen: es importante dormir bien, es bueno comer fruta. Nur Allgemeines, kein medizinischer Rat."
+     ],
+     "q": "Was machst du unter der Woche, um gesund und entspannt zu bleiben?",
+     "c": "Schreib deinen idealen gesunden Tag in sechs Sätzen mit suelo, intento und es importante."
+    },
+    "es": {
+     "t": "Hábitos saludables",
+     "g": "Habla de rutinas sanas y de lo que haces para sentirte bien.",
+     "p": [
+      "Expresiones clave: hacer ejercicio, dormir bien, comer sano, beber agua, caminar, relajarse.",
+      "Para hábitos, soler + infinitivo e intentar: suelo caminar mucho, intento acostarme pronto.",
+      "Opiniones: es importante dormir bien, es bueno comer fruta. Hablamos de bienestar general, no de consejos médicos."
+     ],
+     "q": "¿Qué haces durante la semana para mantenerte sano y relajado?",
+     "c": "Escribe tu día saludable ideal en seis frases con suelo, intento y es importante."
+    },
+    "fr": {
+     "t": "Habitudes saines",
+     "g": "Parler de routines saines et de ce que tu fais pour te sentir bien.",
+     "p": [
+      "Expressions clés : hacer ejercicio, dormir bien, comer sano, beber agua, caminar, relajarse.",
+      "Les habitudes avec suelo + infinitif (d'habitude) et intento (j'essaie) : suelo caminar mucho.",
+      "Opinions : es importante dormir bien, es bueno comer fruta. Bien-être général, pas de conseil médical."
+     ],
+     "q": "Que fais-tu dans la semaine pour rester en forme et détendu ?",
+     "c": "Écris ta journée saine idéale en six phrases avec suelo, intento et es importante."
+    },
+    "it": {
+     "t": "Abitudini sane",
+     "g": "Parli di routine sane e di cosa fai per stare bene.",
+     "p": [
+      "Espressioni chiave: hacer ejercicio, dormir bien, comer sano, beber agua, caminar, relajarse.",
+      "Abitudini con suelo + infinito (di solito) e intento (cerco di): suelo caminar mucho.",
+      "Opinioni: es importante dormir bien, es bueno comer fruta. Solo benessere generale, nessun consiglio medico."
+     ],
+     "q": "Cosa fai durante la settimana per restare in forma e rilassato?",
+     "c": "Scrivi la tua giornata sana ideale in sei frasi con suelo, intento ed es importante."
+    },
+    "pt": {
+     "t": "Hábitos saudáveis",
+     "g": "Fala de rotinas saudáveis e do que fazes para te sentires bem.",
+     "p": [
+      "Expressões-chave: hacer ejercicio, dormir bien, comer sano, beber agua, caminar, relajarse.",
+      "Hábitos com suelo + infinitivo (costumo) e intento (tento): suelo caminar mucho.",
+      "Opiniões: es importante dormir bien, es bueno comer fruta. Só bem-estar geral, não conselhos médicos."
+     ],
+     "q": "O que fazes durante a semana para te manteres saudável e descontraído?",
+     "c": "Escreve o teu dia saudável ideal em seis frases com suelo, intento e es importante."
+    },
+    "pt_BR": {
+     "t": "Hábitos saudáveis",
+     "g": "Fale de rotinas saudáveis e do que você faz para se sentir bem.",
+     "p": [
+      "Expressões-chave: hacer ejercicio, dormir bien, comer sano, beber agua, caminar, relajarse.",
+      "Hábitos com suelo + infinitivo (costumo) e intento (tento): suelo caminar mucho.",
+      "Opiniões: es importante dormir bien, es bueno comer fruta. Só bem-estar geral, não conselho médico."
+     ],
+     "q": "O que você faz durante a semana para se manter saudável e tranquilo?",
+     "c": "Escreva seu dia saudável ideal em seis frases com suelo, intento e es importante."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hacer ejercicio",
+      "ex": "Hago ejercicio tres veces por semana."
+     },
+     {
+      "w": "dormir bien",
+      "ex": "Es importante dormir bien."
+     },
+     {
+      "w": "comer sano",
+      "ex": "Intento comer sano entre semana."
+     },
+     {
+      "w": "beber agua",
+      "ex": "Bebo dos litros de agua al día."
+     },
+     {
+      "w": "caminar",
+      "ex": "Camino al trabajo todos los días."
+     },
+     {
+      "w": "relajarse",
+      "ex": "Me relajo leyendo un libro."
+     }
+    ],
+    "gram": "Hábitos: intento / suelo + infinitivo: suelo caminar. Es importante / es bueno + infinitivo: es bueno dormir ocho horas."
+   }
+  },
+  {
+   "d": 119,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Feelings and emotions",
+     "g": "Express a wide range of emotions with estar.",
+     "p": [
+      "Emotions: contento, nervioso, orgulloso (proud), aburrido (bored), preocupado (worried).",
+      "Add the reason: estoy nervioso por el examen, orgullosa de ti, contento con mi trabajo.",
+      "Careful: estar aburrido = to be bored; ser aburrido = to be boring. Ilusionado = excited, looking forward."
+     ],
+     "q": "What makes you proud, and what makes you a little nervous?",
+     "c": "Write about a recent week: three emotions you felt and why, using estar and por, con or de."
+    },
+    "de": {
+     "t": "Gefühle und Emotionen",
+     "g": "Du drückst viele Gefühle mit estar aus.",
+     "p": [
+      "Gefühle: contento, nervioso, orgulloso (stolz), aburrido (gelangweilt), preocupado (besorgt).",
+      "Mit Grund: estoy nervioso por el examen, orgullosa de ti, contento con mi trabajo.",
+      "Achtung: estar aburrido = sich langweilen; ser aburrido = langweilig sein. Ilusionado = voller Vorfreude."
+     ],
+     "q": "Worauf bist du stolz, und was macht dich ein bisschen nervös?",
+     "c": "Schreib über eine Woche: drei Gefühle und warum, mit estar und por, con oder de."
+    },
+    "es": {
+     "t": "Sentimientos y emociones",
+     "g": "Expresa todo tipo de emociones con estar.",
+     "p": [
+      "Emociones: contento, nervioso, orgulloso, aburrido, preocupado, ilusionado, agradecido.",
+      "Añade la causa con por, con o de: estoy nervioso por el examen, orgullosa de ti, contento con mi trabajo.",
+      "Ojo: estar aburrido es sentir aburrimiento; ser aburrido es no tener interés. Ilusionado expresa alegría por algo futuro."
+     ],
+     "q": "¿Qué te hace sentir orgulloso u orgullosa y qué te pone un poco nervioso?",
+     "c": "Escribe sobre una semana reciente: tres emociones que sentiste y por qué, con estar y por, con o de."
+    },
+    "fr": {
+     "t": "Sentiments et émotions",
+     "g": "Exprimer toute une gamme d'émotions avec estar.",
+     "p": [
+      "Émotions : contento, nervioso, orgulloso (fier), aburrido (qui s'ennuie), preocupado (inquiet).",
+      "Ajoute la cause : estoy nervioso por el examen, orgullosa de ti, contento con mi trabajo.",
+      "Attention : estar aburrido = s'ennuyer ; ser aburrido = être ennuyeux. Ilusionado = impatient, ravi d'avance."
+     ],
+     "q": "Qu'est-ce qui te rend fier, et qu'est-ce qui te rend un peu nerveux ?",
+     "c": "Écris sur une semaine récente : trois émotions et pourquoi, avec estar et por, con ou de."
+    },
+    "it": {
+     "t": "Sentimenti ed emozioni",
+     "g": "Esprimi tante emozioni con estar.",
+     "p": [
+      "Emozioni: contento, nervioso, orgulloso (orgoglioso), aburrido (annoiato), preocupado.",
+      "Aggiungi la causa: estoy nervioso por el examen, orgullosa de ti, contento con mi trabajo.",
+      "Attenzione: estar aburrido = annoiarsi; ser aburrido = essere noioso. Ilusionado = entusiasta, non illuso!"
+     ],
+     "q": "Cosa ti rende orgoglioso e cosa ti mette un po' di agitazione?",
+     "c": "Scrivi di una settimana recente: tre emozioni e perché, con estar e por, con o de."
+    },
+    "pt": {
+     "t": "Sentimentos e emoções",
+     "g": "Exprime muitas emoções com estar.",
+     "p": [
+      "Emoções: contento, nervioso, orgulloso, aburrido (aborrecido), preocupado, ilusionado.",
+      "Junta a causa: estoy nervioso por el examen, orgullosa de ti, contento con mi trabajo.",
+      "Atenção: estar aburrido = estar aborrecido; ser aburrido = ser chato. Ilusionado = entusiasmado, não iludido!"
+     ],
+     "q": "O que te deixa orgulhoso e o que te deixa um pouco nervoso?",
+     "c": "Escreve sobre uma semana recente: três emoções e porquê, com estar e por, con ou de."
+    },
+    "pt_BR": {
+     "t": "Sentimentos e emoções",
+     "g": "Expresse muitas emoções com estar.",
+     "p": [
+      "Emoções: contento, nervioso, orgulloso, aburrido (entediado), preocupado, ilusionado.",
+      "Acrescente a causa: estoy nervioso por el examen, orgullosa de ti, contento con mi trabajo.",
+      "Atenção: estar aburrido = estar entediado; ser aburrido = ser chato. Ilusionado = animado, não iludido!"
+     ],
+     "q": "O que deixa você orgulhoso e o que deixa você um pouco nervoso?",
+     "c": "Escreva sobre uma semana recente: três emoções e por quê, com estar e por, con ou de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "contento/a",
+      "ex": "Estoy muy contenta con el resultado."
+     },
+     {
+      "w": "nervioso/a",
+      "ex": "Estoy nervioso por la entrevista."
+     },
+     {
+      "w": "orgulloso/a",
+      "ex": "Estoy orgullosa de mi hijo."
+     },
+     {
+      "w": "aburrido/a",
+      "ex": "Estoy aburrido, no hay nada que hacer."
+     },
+     {
+      "w": "preocupado/a",
+      "ex": "Mi madre está preocupada por el viaje."
+     },
+     {
+      "w": "ilusionado/a",
+      "ex": "Estamos ilusionados con el nuevo piso."
+     }
+    ],
+    "gram": "Estar + emoción + por/con/de: estoy nervioso por el examen, orgullosa de ti. Estar aburrido = aburrirse; ser aburrido = no ser divertido."
+   }
+  },
+  {
+   "d": 120,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Verbs like gustar",
+     "g": "Use verbs that work like gustar to talk about interests and feelings.",
+     "p": [
+      "Same pattern as gustar: me interesa la historia, me molesta el ruido, me preocupa el examen.",
+      "The verb agrees with the thing: me interesa el arte / me interesan los idiomas.",
+      "More: me queda bien (it suits me), me duele (it hurts), me parece interesante (I find it...)."
+     ],
+     "q": "What interests you a lot, and what bothers you in daily life?",
+     "c": "Write six sentences with interesar, molestar, preocupar, quedar, doler and parecer."
+    },
+    "de": {
+     "t": "Verben wie gustar",
+     "g": "Du benutzt Verben wie gustar für Interessen und Gefühle.",
+     "p": [
+      "Gleiches Muster wie gustar: me interesa la historia, me molesta el ruido, me preocupa el examen.",
+      "Das Verb richtet sich nach der Sache: me interesa el arte / me interesan los idiomas.",
+      "Mehr: me queda bien (steht mir), me duele (tut weh), me parece interesante (finde ich...)."
+     ],
+     "q": "Was interessiert dich sehr, und was stört dich im Alltag?",
+     "c": "Schreib sechs Sätze mit interesar, molestar, preocupar, quedar, doler und parecer."
+    },
+    "es": {
+     "t": "Verbos como gustar",
+     "g": "Usa verbos que funcionan como gustar para hablar de intereses y sentimientos.",
+     "p": [
+      "Mismo esquema que gustar: me interesa la historia, me molesta el ruido, me preocupa el examen.",
+      "El verbo concuerda con la cosa, no con la persona: me interesa el arte, me interesan los idiomas.",
+      "Más verbos: me queda bien, me duele, me parece interesante, me apetece, me hace falta."
+     ],
+     "q": "¿Qué te interesa mucho y qué te molesta en el día a día?",
+     "c": "Escribe seis frases con interesar, molestar, preocupar, quedar, doler y parecer."
+    },
+    "fr": {
+     "t": "Verbes comme gustar",
+     "g": "Utiliser des verbes qui fonctionnent comme gustar pour les intérêts et les sentiments.",
+     "p": [
+      "Même schéma que gustar : me interesa la historia, me molesta el ruido, me preocupa el examen.",
+      "Le verbe s'accorde avec la chose : me interesa el arte / me interesan los idiomas.",
+      "Autres : me queda bien (ça me va), me duele (j'ai mal), me parece interesante (je trouve...)."
+     ],
+     "q": "Qu'est-ce qui t'intéresse beaucoup, et qu'est-ce qui te dérange au quotidien ?",
+     "c": "Écris six phrases avec interesar, molestar, preocupar, quedar, doler et parecer."
+    },
+    "it": {
+     "t": "Verbi come gustar",
+     "g": "Usi verbi che funzionano come gustar per interessi e sentimenti.",
+     "p": [
+      "Stesso schema di gustar, come piacere: me interesa la historia, me molesta el ruido.",
+      "Il verbo si accorda con la cosa: me interesa el arte / me interesan los idiomas.",
+      "Altri: me queda bien (mi sta bene), me duele (mi fa male), me parece interesante (mi sembra...)."
+     ],
+     "q": "Cosa ti interessa molto e cosa ti dà fastidio nella vita di tutti i giorni?",
+     "c": "Scrivi sei frasi con interesar, molestar, preocupar, quedar, doler e parecer."
+    },
+    "pt": {
+     "t": "Verbos como gustar",
+     "g": "Usa verbos que funcionam como gustar para falar de interesses e sentimentos.",
+     "p": [
+      "O mesmo esquema de gustar: me interesa la historia, me molesta el ruido, me preocupa el examen.",
+      "O verbo concorda com a coisa: me interesa el arte / me interesan los idiomas.",
+      "Mais: me queda bien (fica-me bem), me duele (dói-me), me parece interesante (parece-me...)."
+     ],
+     "q": "O que te interessa muito e o que te incomoda no dia a dia?",
+     "c": "Escreve seis frases com interesar, molestar, preocupar, quedar, doler e parecer."
+    },
+    "pt_BR": {
+     "t": "Verbos como gustar",
+     "g": "Use verbos que funcionam como gustar para falar de interesses e sentimentos.",
+     "p": [
+      "O mesmo esquema de gustar: me interesa la historia, me molesta el ruido, me preocupa el examen.",
+      "O verbo concorda com a coisa: me interesa el arte / me interesan los idiomas.",
+      "Mais: me queda bien (fica bem em mim), me duele (dói), me parece interesante (acho...)."
+     ],
+     "q": "O que interessa muito a você e o que incomoda no dia a dia?",
+     "c": "Escreva seis frases com interesar, molestar, preocupar, quedar, doler e parecer."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me interesa",
+      "ex": "Me interesa mucho la historia."
+     },
+     {
+      "w": "me molesta",
+      "ex": "Me molesta el ruido por la noche."
+     },
+     {
+      "w": "me preocupa",
+      "ex": "Me preocupa el examen de mañana."
+     },
+     {
+      "w": "me queda bien",
+      "ex": "Esa camisa te queda muy bien."
+     },
+     {
+      "w": "me duele",
+      "ex": "Me duelen los pies de tanto caminar."
+     },
+     {
+      "w": "me parece",
+      "ex": "Me parece una idea genial."
+     }
+    ],
+    "gram": "Como gustar: me + verbo + sujeto: me interesa el arte, me interesan los idiomas. También molestar, preocupar, quedar, doler, parecer."
+   }
+  }
+ ]
+}

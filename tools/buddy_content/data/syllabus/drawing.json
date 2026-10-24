@@ -1,0 +1,2195 @@
+{
+ "topic": "drawing",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Welcome to drawing",
+   "f": "Why drawing is a learnable skill, what this 365-day path covers and how small daily practice adds up"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "Drawing is seeing",
+   "f": "How learning to draw is mostly learning to look carefully at shapes, edges and light"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Pencil grades",
+   "f": "From hard H pencils to soft B pencils: what the letters mean and which ones to start with"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Erasers as drawing tools",
+   "f": "Plastic, kneaded and pen erasers and how to use them to draw light, not only fix mistakes"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Paper for drawing",
+   "f": "Smooth, medium and textured papers and how tooth affects pencil and charcoal"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "Your first sketchbook",
+   "f": "Choosing a size you will carry, and why a sketchbook is a practice space, not a gallery"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Sharpening pencils",
+   "f": "Knife or sharpener, long or short points and what each tip is good for"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Holding the pencil",
+   "f": "Writing grip for detail and overhand grip for loose lines and shading"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Posture and setup",
+   "f": "Sitting comfortably, tilting the paper and keeping your whole drawing in view"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Warm-up lines",
+   "f": "Straight lines, curves and circles drawn from the shoulder to loosen up"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Drawing straight lines",
+   "f": "Ghosting the movement first and drawing confident lines in one stroke"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "Drawing curves and circles",
+   "f": "Smooth arcs, ovals and circles through repetition and rhythm"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Line weight",
+   "f": "Thick and thin lines to show importance, depth and light"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Mark-making exploration",
+   "f": "Dots, dashes, scribbles and textures: a page of every mark your pencil can make"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "The basic shapes",
+   "f": "Seeing objects as circles, squares and triangles to start any drawing simply"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "From shapes to forms",
+   "f": "Turning circles, squares and triangles into spheres, cubes and cones"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Drawing a cube",
+   "f": "Showing three faces and parallel edges to create a solid box"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Drawing a cylinder",
+   "f": "Two ellipses connected by straight sides, the base of cups, cans and trees"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Drawing ellipses",
+   "f": "How circles look in perspective and tips for smooth, symmetrical ellipses"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Drawing cones and pyramids",
+   "f": "Pointed forms and how they appear in objects all around you"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Combining forms",
+   "f": "Building everyday objects from simple forms stacked and joined together"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Contour drawing",
+   "f": "Following the edges of an object slowly with one continuous line"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Blind contour drawing",
+   "f": "Drawing without looking at the paper to train hand-eye coordination"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Cross-contour lines",
+   "f": "Lines that wrap around a form to show its volume and direction"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Negative space drawing",
+   "f": "Drawing the shapes between and around objects to see them more accurately"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Upside-down drawing",
+   "f": "Copying an image upside down to stop the brain from guessing and see pure shapes"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "Drawing everyday objects",
+   "f": "A mug, a key or a spoon: practising observation with things on your table"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Drawing at different speeds",
+   "f": "Thirty-second, two-minute and ten-minute drawings of the same object"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "A drawing a day habit",
+   "f": "Small daily drawings, fixed times and keeping your sketchbook always ready"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: lines, shapes and seeing",
+   "f": "A relaxed recap of materials, lines and basic forms with a small object study"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "Measuring with your pencil",
+   "f": "Using the pencil at arm's length to compare heights, widths and angles"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Proportions by comparison",
+   "f": "Checking how many times one part fits into another for accurate drawings"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Angles and alignments",
+   "f": "Finding vertical and horizontal relationships to place parts correctly"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Light first, dark later",
+   "f": "Starting with light construction lines and only pressing harder once shapes are right"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Fixing a drawing calmly",
+   "f": "Checking a drawing with fresh eyes, in a mirror or from a distance to spot errors"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "What is value in drawing",
+   "f": "Light and dark as the key to making flat lines look three-dimensional"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Making a value scale",
+   "f": "Drawing even steps from white paper to the darkest dark your pencil can make"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Hatching",
+   "f": "Parallel lines placed close or far apart to build tone"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Cross-hatching",
+   "f": "Layers of hatching in different directions for richer, darker tones"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Stippling",
+   "f": "Building tone from dots, slow but beautiful and very controlled"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Scribble shading",
+   "f": "Loose circular or random marks that create lively textures and tones"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Smooth blending",
+   "f": "Even layers of graphite and when to use a blending stump or tissue, or none at all"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "Light on a sphere",
+   "f": "Highlight, halftone, core shadow, reflected light and cast shadow explained"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Shading a cube and cylinder",
+   "f": "Flat planes versus curved surfaces and how light changes on each"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Cast shadows",
+   "f": "Direction, shape and softness of shadows depending on the light source"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Contrast and focus",
+   "f": "Using the strongest darks and lights where you want the viewer to look"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Drawing textures: wood",
+   "f": "Grain lines, knots and the rough surface of wood"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Drawing textures: metal and glass",
+   "f": "High contrast, sharp reflections and clean highlights"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Drawing textures: fabric",
+   "f": "Soft folds, patterns and the difference between thick and thin fabrics"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "Drawing textures: fur and hair",
+   "f": "Directional strokes, clumps and leaving light areas for shine"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Drawing textures: stone and brick",
+   "f": "Rough surfaces, cracks and repeating patterns without drawing every detail"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "A simple still life",
+   "f": "Arranging three objects, finding the big shapes and adding value step by step"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Drawing with charcoal",
+   "f": "Vine and compressed charcoal, bold darks and working big and loose"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Drawing with ink pens",
+   "f": "Fineliners, brush pens and committing to lines without erasing"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Drawing with coloured pencils",
+   "f": "Layering, light pressure and building colour slowly"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Toned paper drawing",
+   "f": "Drawing on grey or tan paper with dark pencil and white highlights"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "Drawing from photographs",
+   "f": "Choosing good references and not copying blurry or flattened details"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Drawing from life",
+   "f": "Why real objects teach depth and light better than photos"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Doodling with purpose",
+   "f": "Turning playful doodles into patterns, characters and creative warm-ups"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: measuring and shading",
+   "f": "A recap of proportions, value and textures with a shaded still life"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Introduction to perspective",
+   "f": "Horizon line, eye level and why things look smaller as they get farther away"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "One-point perspective",
+   "f": "A single vanishing point for roads, hallways and rooms seen straight on"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Drawing a room in one-point",
+   "f": "Walls, floor, ceiling and furniture lined up toward one point"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Two-point perspective",
+   "f": "Two vanishing points for corners of buildings and boxes seen at an angle"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Drawing boxes in two-point",
+   "f": "Practising boxes above, below and on the horizon line"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Drawing a simple house",
+   "f": "Walls, roof, doors and windows using two-point perspective"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Overlapping and depth",
+   "f": "How objects in front hide objects behind to create space"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Size and placement for depth",
+   "f": "Making far objects smaller and higher on the page"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Atmospheric perspective in drawing",
+   "f": "Lighter, softer and less detailed lines for distant objects"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Drawing trees",
+   "f": "Trunk, branches and foliage masses drawn as big simple shapes first"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Drawing leaves and plants",
+   "f": "Leaf shapes, veins and how leaves twist and overlap"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Drawing flowers",
+   "f": "Petal shapes, centres and drawing a flower from different angles"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Drawing clouds and skies",
+   "f": "Soft shading and erasing to create fluffy, airy clouds"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Drawing rocks and mountains",
+   "f": "Planes, cracks and shadows to give stones weight"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Drawing water",
+   "f": "Reflections, ripples and using horizontal strokes for calm water"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "A simple landscape drawing",
+   "f": "Foreground, middle ground and background in a small scene"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Thumbnail sketches",
+   "f": "Tiny quick sketches to plan composition before a bigger drawing"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Composition basics",
+   "f": "Placing the subject, balance and the rule of thirds in drawing"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Framing and cropping",
+   "f": "Choosing what to leave out and where the edges of the drawing cut"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "Drawing outdoors",
+   "f": "Simple kit, finding a spot and drawing quickly as people and light move"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Drawing a garden corner",
+   "f": "Plants, pots and a path combined in a small outdoor scene"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Review: perspective and nature",
+   "f": "A recap of perspective, depth and natural subjects with a small landscape"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Introduction to drawing animals",
+   "f": "Simple shapes, gesture and capturing an animal's character"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Drawing cats",
+   "f": "Round heads, flexible bodies and the many poses of a cat"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Drawing dogs",
+   "f": "Different breeds, snout shapes and friendly expressions"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Drawing birds",
+   "f": "Egg-shaped bodies, wings and feathers simplified"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Drawing fish and sea creatures",
+   "f": "Streamlined shapes, fins and scale patterns"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Drawing insects and butterflies",
+   "f": "Symmetry, segments and delicate wings"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Introduction to drawing faces",
+   "f": "The egg shape and the basic placement of eyes, nose and mouth"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Drawing eyes",
+   "f": "Eye shape, eyelids, iris and the small highlight that brings life"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Drawing noses",
+   "f": "Simple planes and shadows of the nose from the front and the side"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Drawing mouths and lips",
+   "f": "Upper and lower lip shapes and the soft corners of the mouth"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Drawing ears",
+   "f": "Simple shapes and where ears sit on the side of the head"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Drawing hair",
+   "f": "Big shapes, flow and a few strands instead of every hair"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Face in profile",
+   "f": "Proportions and features seen from the side"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Simple expressions",
+   "f": "Happy, surprised, thoughtful: how eyebrows and mouths change a face"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Drawing a self-portrait",
+   "f": "Using a mirror to practise faces with a model who never gets tired"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Introduction to figure drawing",
+   "f": "The body as simple shapes and the head as a unit of measure"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Stick figures with purpose",
+   "f": "Using lines and joints to plan poses before adding volume"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Gesture drawing",
+   "f": "Quick drawings that capture movement and attitude in seconds"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Simple hands",
+   "f": "Hands as a mitten shape first, then fingers as simple cylinders"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Simple feet and shoes",
+   "f": "Wedge shapes for feet and how shoes follow the foot"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "Review: animals, faces and figures",
+   "f": "A recap of creatures, faces and quick figures with a mixed sketch page"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Drawing everyday scenes",
+   "f": "Your kitchen, desk or street corner as a small story on paper"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Drawing in cafés",
+   "f": "Quick sketches of cups, tables and people in public places, politely and discreetly"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Drawing shoes and bags",
+   "f": "Everyday objects with folds, laces and stitching to sharpen observation"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Drawing vehicles simply",
+   "f": "Cars, bikes and buses from boxes, cylinders and wheels as ellipses"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Drawing food",
+   "f": "Fruit, bread and dishes with textures that make them look tasty"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Drawing patterns",
+   "f": "Repeating shapes, zentangle-style designs and decorative borders"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "Lettering basics",
+   "f": "Hand-drawn letters, spacing and simple decorative titles"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "Cartoon basics",
+   "f": "Simplified shapes, big heads and exaggeration for fun characters"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Drawing a simple character",
+   "f": "Designing a friendly character from basic shapes"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Drawing from memory",
+   "f": "Observing something for a minute, then drawing it without looking"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Drawing from imagination",
+   "f": "Combining shapes and ideas you know to invent something new"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Visual journaling",
+   "f": "Mixing quick drawings and short notes to record your day"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Drawing with friends",
+   "f": "Sharing prompts, swapping sketchbooks and enjoying drawing together"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Tracking your progress",
+   "f": "Dating pages and comparing old and new drawings to see growth"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Your hand as a model",
+   "f": "Your own hand as an always-available model in endless poses"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Your favourite subject so far",
+   "f": "Picking the subject you enjoyed most and drawing it again with fresh skill"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: the beginner journey",
+   "f": "Celebrating 120 days with a drawing that shows lines, values and perspective together"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Construction drawing",
+   "f": "Building complex subjects from simple overlapping forms before any detail"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Drawing through",
+   "f": "Drawing hidden edges of forms to understand how they sit in space"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Sighting angles accurately",
+   "f": "Using the pencil as an angle guide and transferring angles to the paper"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Envelope method",
+   "f": "Enclosing a subject in straight lines first and then refining its shape"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "Grid method",
+   "f": "Using a grid to enlarge or copy an image accurately and when it helps learning"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Plumb lines and proportional dividers",
+   "f": "A hanging line and classic tools to check vertical alignments and proportions"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Three-point perspective",
+   "f": "A third vanishing point for tall buildings seen from above or below"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Perspective of circles",
+   "f": "Cylinders, wheels and round tables drawn correctly in perspective"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Perspective of inclined planes",
+   "f": "Roofs, ramps and stairs that slope up or down"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Drawing stairs",
+   "f": "Steps in one and two-point perspective, going up and down"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Drawing architecture",
+   "f": "Windows, doors, arches and the rhythm of a building facade"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Urban sketching",
+   "f": "Drawing city scenes on location quickly with pen and a few lines"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Drawing streets and alleys",
+   "f": "Perspective, people and details that give a street its character"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Drawing bridges",
+   "f": "Arches, cables and reflections in water"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Drawing interiors",
+   "f": "Rooms, furniture and light coming through windows"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Drawing furniture",
+   "f": "Chairs, tables and sofas built from boxes in perspective"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Review: construction and perspective",
+   "f": "A recap of construction, advanced perspective and buildings with a street sketch"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Figure proportions",
+   "f": "The figure as about seven to eight heads tall and key landmarks"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "The mannequin figure",
+   "f": "Simple boxes and cylinders for the torso, pelvis and limbs"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Balance and weight",
+   "f": "Centre of gravity and how a standing figure carries its weight"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Contrapposto",
+   "f": "The relaxed standing pose with shifted hips and shoulders"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "The line of action",
+   "f": "One flowing curve that gives a pose energy and direction"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Gesture drawing in depth",
+   "f": "Longer gesture sessions and timed poses from one to five minutes"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Simplified anatomy: the torso",
+   "f": "Ribcage and pelvis as two key masses connected by the spine"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Simplified anatomy: the arms",
+   "f": "Shoulder, upper arm and forearm shapes and how they twist"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Simplified anatomy: the legs",
+   "f": "Thigh, knee and calf shapes and the rhythm of the leg"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Drawing hands in depth",
+   "f": "Palm, knuckles and fingers in different gestures"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Drawing feet in depth",
+   "f": "Arches, toes and feet from different angles"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Drawing the head from any angle",
+   "f": "Using a sphere and planes to turn the head in space"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Planes of the face",
+   "f": "Simplified flat planes that make lighting the face easier"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Drawing portraits",
+   "f": "Measuring features, finding a likeness and drawing with patience"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Drawing different ages",
+   "f": "How faces change from childhood to older age"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Drawing diverse faces",
+   "f": "Observing the wide variety of features, face shapes and hairstyles respectfully"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Drawing clothing and folds",
+   "f": "Types of folds and how fabric hangs from shoulders, elbows and knees"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Drawing people in motion",
+   "f": "Walking, running and jumping poses captured quickly"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Drawing dancers and athletes",
+   "f": "Stretch, balance and speed in figures doing sports and dance"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Drawing seated figures",
+   "f": "Chairs, overlapping limbs and foreshortened thighs"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Figures in scenes",
+   "f": "Placing people at the right size in a scene using the horizon line"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Review: figure drawing",
+   "f": "A recap of proportions, gesture and anatomy with a figure study page"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Charcoal in depth",
+   "f": "Subtractive drawing, lifting light with an eraser and rich darks"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Ink techniques in depth",
+   "f": "Hatching, stippling and line variety with dip pens and fineliners"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Ink wash",
+   "f": "Diluted ink applied with a brush for soft grey tones"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Brush pen drawing",
+   "f": "Expressive thick-to-thin lines and confident strokes"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Coloured pencils in depth",
+   "f": "Burnishing, layering complements and creating rich colour"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Soft pastels",
+   "f": "Blending, layering and vibrant colour on textured paper"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Oil pastels",
+   "f": "Bold colour, sgraffito and layering with creamy sticks"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Markers",
+   "f": "Alcohol markers, layering and smooth gradients for illustration"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Watercolour pencils",
+   "f": "Drawing with pencil, then adding water for soft painted effects"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Mixed media drawing",
+   "f": "Combining pencil, ink, pastel and watercolour in one drawing"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "White on black",
+   "f": "Drawing with white pencil or pastel on dark paper to think in light"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Colour basics for drawing",
+   "f": "Warm and cool colours, complements and simple harmonies"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Silverpoint and historic tools",
+   "f": "Drawing with metal styluses, quills and red chalk like the old masters"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Review: materials and media",
+   "f": "A recap of charcoal, ink, pastels and colour with a mixed media sketch"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Drawing animals in depth",
+   "f": "Animal skeletons simplified and how legs bend differently from ours"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Drawing horses",
+   "f": "Body proportions, legs and the elegant curves of a horse"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Drawing big cats",
+   "f": "Lions, tigers and their powerful forms and patterns"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "Drawing farm animals",
+   "f": "Cows, sheep, goats and chickens and their characteristic shapes"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "Drawing animals in motion",
+   "f": "Running, flying and swimming animals captured with gestures"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Drawing animals at the zoo or park",
+   "f": "Quick sketches of living animals that keep moving"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Drawing pets from life",
+   "f": "Sketching sleeping and playing pets at home"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Botanical drawing",
+   "f": "Accurate observation of plants, with careful line and detail"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Drawing succulents and cacti",
+   "f": "Geometric patterns, spines and plump leaves"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Drawing trees in depth",
+   "f": "Different species, bark textures and seasonal changes"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Drawing landscapes in depth",
+   "f": "Leading lines, depth and simplifying nature into shapes"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Drawing skies and weather",
+   "f": "Storm clouds, sunsets and rain in pencil and charcoal"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Drawing water in depth",
+   "f": "Waves, waterfalls and reflections with strong value contrasts"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Nature journaling",
+   "f": "Drawing and noting plants, birds and weather on walks"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Review: animals and nature",
+   "f": "A recap of animal and nature drawing with a nature journal page"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Composition in depth",
+   "f": "Visual weight, balance and guiding the eye through a drawing"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Value composition",
+   "f": "Planning big light and dark shapes before details"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Notan studies",
+   "f": "Two-value designs that reveal the strength of a composition"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Focal points and hierarchy",
+   "f": "Making one area the clear centre of interest"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Rhythm and movement",
+   "f": "Repeated shapes and directional lines that create flow"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Storytelling in a single drawing",
+   "f": "Choosing a moment, gesture and details that tell a story"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Drawing still life in depth",
+   "f": "Complex arrangements, reflective objects and strong lighting"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Drawing glass and transparent objects",
+   "f": "Distorted shapes, reflections and sharp highlights"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Drawing metal and shiny objects",
+   "f": "High contrast patterns and reflected surroundings"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Drawing shells and natural objects",
+   "f": "Spirals, ridges and delicate textures of shells, feathers and pine cones"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Drawing drapery in depth",
+   "f": "Classic drapery studies with folds, light and shadow"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Drawing in monochrome series",
+   "f": "Several drawings of one subject in different lights"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Review: composition and still life",
+   "f": "A recap of composition tools with a complex still life drawing"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Cartooning in depth",
+   "f": "Exaggeration, simplification and appealing shapes"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Character expressions",
+   "f": "A sheet of expressions for one character from joy to surprise"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Character poses",
+   "f": "Showing personality through posture and gesture"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Turnaround sheets",
+   "f": "Drawing a character from front, side and back consistently"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Drawing simple props",
+   "f": "Hats, bags and tools that tell us about a character"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Introduction to comics",
+   "f": "Panels, gutters and how images in sequence tell a story"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Speech bubbles and lettering",
+   "f": "Placing text clearly and keeping it readable"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Comic page layout",
+   "f": "Arranging panels for rhythm, pacing and clarity"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "A four-panel comic strip",
+   "f": "Setup, development, twist and punchline in four panels"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Manga style basics",
+   "f": "Typical proportions, eyes and expressive symbols in manga"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Webcomic formats",
+   "f": "Vertical scrolling and simple panel layouts for reading on phones"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "Chibi and cute styles",
+   "f": "Big heads, small bodies and very simplified features"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Picture book illustration",
+   "f": "Drawings that work with text and appeal to children"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Review: cartoons and comics",
+   "f": "A recap of characters and comics with a short strip of your own"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Drawing from imagination in depth",
+   "f": "Using your visual library of observed forms to invent convincingly"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Building a visual library",
+   "f": "Studying many references so your memory has shapes to draw from"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Creature design basics",
+   "f": "Combining real animal parts into a believable imaginary creature"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Drawing fantasy landscapes",
+   "f": "Invented worlds using real perspective and light"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Drawing imaginary buildings",
+   "f": "Designing castles, houses or towers with a clear style"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Drawing machines and gadgets",
+   "f": "Gears, robots and vehicles invented from basic forms"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Drawing a map",
+   "f": "Illustrated maps of real or imaginary places"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Drawing vehicles in depth",
+   "f": "Cars, trains and planes in perspective with correct ellipses for wheels"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Drawing light sources",
+   "f": "Lamps, candles and windows and how they change shading"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Night drawing",
+   "f": "Dark backgrounds, glows and silhouettes in pencil or charcoal"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "Drawing reflections",
+   "f": "Mirrors, puddles and shop windows and their perspective rules"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Review: imagination and light",
+   "f": "A recap of invented subjects and lighting with an imaginary scene"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Travel sketching",
+   "f": "Small kits, fast sketches and capturing a place's atmosphere on a trip"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Drawing markets and crowds",
+   "f": "Simplifying many people into shapes with a few clear figures"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "Drawing people on the go",
+   "f": "Quick sketches in stations, parks and squares"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Drawing landmarks",
+   "f": "Famous buildings simplified into big shapes and key details"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Drawing traditional houses",
+   "f": "Homes from different cultures and climates and their typical shapes"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Drawing cultural details",
+   "f": "Patterns, textiles and objects that show local traditions respectfully"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Sketchbook storytelling",
+   "f": "Turning a trip or a day into a sequence of drawings and notes"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Drawing your neighbourhood",
+   "f": "Familiar streets and places drawn with fresh eyes"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Speed sketching challenges",
+   "f": "Timed drawings to train decisiveness and simplicity"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Drawing with a limited time",
+   "f": "Ten-minute, five-minute and one-minute versions of one scene"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Drawing with a limited line",
+   "f": "Using as few lines as possible to describe a subject"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Review: travel and speed",
+   "f": "A recap of on-location drawing with a sketchbook spread of your area"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Master drawing copies",
+   "f": "Learning by copying drawings by great artists line by line"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Leonardo da Vinci's drawings",
+   "f": "Studies of anatomy, machines and nature from his notebooks"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Albrecht Dürer",
+   "f": "Precise engravings, studies of hands and animals like the famous hare"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Rembrandt's drawings",
+   "f": "Quick ink sketches full of life and economy of line"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Hokusai's sketches",
+   "f": "The Hokusai Manga and his playful, endless observation of life"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Ingres and the pure line",
+   "f": "Elegant pencil portraits and the beauty of a clean contour"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Daily warm-up routines",
+   "f": "A ten-minute routine of lines, ellipses and gestures to start every session"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Drawing critique",
+   "f": "Looking at your drawings for proportion, value and composition"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Fixing common mistakes",
+   "f": "Stiff lines, flat values and crowded compositions and how to solve them"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Building a drawing routine",
+   "f": "Mixing warm-ups, studies and fun drawings in a balanced week"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Review: the intermediate journey",
+   "f": "Celebrating 250 days with a drawing that shows figures, perspective and composition"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "Foreshortening",
+   "f": "Drawing forms that point toward or away from the viewer convincingly"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Foreshortened limbs",
+   "f": "Arms and legs reaching toward you, using overlapping and size change"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Dynamic poses",
+   "f": "Twisting, stretching and action poses full of energy"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Advanced gesture",
+   "f": "Rhythm, curves and straights that make a figure feel alive"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Anatomy: the skeleton",
+   "f": "Key bones as landmarks that show through the surface of the body"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Anatomy: major muscles",
+   "f": "Main muscle groups simplified for drawing, not memorising"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Anatomy of the neck and shoulders",
+   "f": "How the head connects to the body and how shoulders move"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Anatomy of the back",
+   "f": "The spine, shoulder blades and the shapes of the back in motion"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Advanced hands",
+   "f": "Hands holding objects, gesturing and seen in perspective"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "Advanced faces",
+   "f": "Subtle expressions, asymmetry and capturing personality"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Drawing smiles and laughter",
+   "f": "How the whole face changes when someone smiles or laughs"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Drawing likeness",
+   "f": "Small differences in proportion that make a portrait recognisable"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Portraits in dramatic light",
+   "f": "Strong side light, backlight and deep shadow on faces"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Figures in complex light",
+   "f": "Multiple light sources and reflected light on the body"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Clothing in motion",
+   "f": "Fabric pulled by wind or movement and dynamic folds"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Drawing hair in motion",
+   "f": "Hair blown by the wind or swinging with movement"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Review: advanced figure",
+   "f": "A recap of foreshortening, anatomy and dynamic poses with a figure sheet"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Advanced perspective",
+   "f": "Multiple vanishing points, curvilinear perspective and complex scenes"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Fisheye and wide-angle views",
+   "f": "Curved perspective for dramatic and playful images"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Shadows in perspective",
+   "f": "Constructing cast shadows from sun and lamps in a perspective drawing"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Reflections in perspective",
+   "f": "Mirrors and water reflections drawn with correct geometry"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Complex architecture",
+   "f": "Domes, spiral stairs and detailed facades simplified and constructed"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Cityscapes from above",
+   "f": "Bird's-eye views of streets and rooftops"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Worm's-eye views",
+   "f": "Looking up at towers and trees from the ground for drama"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Environment drawing",
+   "f": "Designing places with mood, scale and a clear focal point"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Drawing ruins and old places",
+   "f": "Weathered stone, broken shapes and a sense of history"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Interior scenes with figures",
+   "f": "People living in a space, scale and storytelling"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Atmosphere in black and white",
+   "f": "Fog, dust and light rays drawn with value and edges"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Review: advanced perspective and places",
+   "f": "A recap with a detailed environment drawing"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Character design in depth",
+   "f": "Shape language, silhouettes and personality in design"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Shape language",
+   "f": "Circles feel friendly, squares feel steady and triangles feel dynamic"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Silhouette readability",
+   "f": "Designs that are recognisable even as solid black shapes"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Costume design",
+   "f": "Clothing that reveals a character's culture, job and personality"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Designing accessories",
+   "f": "Jewellery, bags and gadgets that complete a character"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Designing a cast of characters",
+   "f": "Creating several characters who look different but belong together"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Storyboarding basics",
+   "f": "Planning scenes for films or animation in quick panels"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Camera angles in drawing",
+   "f": "Close-ups, wide shots, low and high angles for storytelling"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Visual storytelling in sequences",
+   "f": "Continuity, pacing and clear action across several images"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Drawing for animation basics",
+   "f": "Key poses, in-betweens and the illusion of movement"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Flip book project",
+   "f": "Drawing a short animation in the corner of a notebook"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Concept art basics",
+   "f": "Quick explorations to develop ideas for games, films and books"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Prop design",
+   "f": "Designing objects for stories, from magic lamps to spaceships"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Review: characters and stories",
+   "f": "A recap of character design and storytelling with a short storyboard"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Egon Schiele's line",
+   "f": "Expressive, angular contours and the power of a nervous line"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Käthe Kollwitz",
+   "f": "Strong charcoal and printmaking with deep human feeling"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Picasso's line drawings",
+   "f": "Simple single-line drawings that capture a whole subject"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Matisse's drawings",
+   "f": "Fluid contours and the joy of simplicity"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Michelangelo's studies",
+   "f": "Red chalk figure studies and sculptural forms"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Comic and illustration masters",
+   "f": "Influential illustrators and cartoonists and what we can learn from their clarity"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Children's book illustrators",
+   "f": "Beloved picture-book artists and their warm, readable styles"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "East Asian brush drawing",
+   "f": "Ink, brush and the expressive line in Chinese and Japanese traditions"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Islamic geometric patterns",
+   "f": "Compass and straightedge patterns with astonishing symmetry"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Celtic knotwork",
+   "f": "Interlaced patterns and how to construct a simple knot"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Mandalas",
+   "f": "Radial symmetry and building a calm, balanced design from the centre"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Indigenous pattern traditions",
+   "f": "Patterns from many cultures and appreciating them with respect"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Review: masters and traditions",
+   "f": "A recap of great draughtsmen and pattern traditions with a study page"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Advanced value control",
+   "f": "Compressing values, full value range and subtle halftones"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Edges in drawing",
+   "f": "Hard, soft and lost edges to lead the eye and suggest form"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Realism in pencil",
+   "f": "Long, patient drawings with smooth gradients and precise detail"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Hyperrealism techniques",
+   "f": "Layering graphite, controlling texture and working in sections"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Expressive drawing",
+   "f": "Loose, energetic marks that put feeling before accuracy"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Abstract drawing",
+   "f": "Line, shape and texture as the subject of the drawing"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Drawing to music",
+   "f": "Letting rhythm guide the marks on the page"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Minimalist drawing",
+   "f": "Saying a lot with very few lines"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Negative space advanced",
+   "f": "Dark backgrounds that carve out light subjects"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Continuous line art",
+   "f": "One unbroken line from start to finish"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Experimental tools",
+   "f": "Drawing with sticks, ink and twigs, string or your other hand"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Large-scale drawing",
+   "f": "Drawing standing up, using the whole arm and big paper"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "Miniature drawing",
+   "f": "Tiny detailed drawings and keeping them readable"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Your texture library",
+   "f": "A reference page of advanced textures you can reuse in any drawing"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Review: styles and experiments",
+   "f": "A recap of realism, expression and experiments with a style sampler page"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Digital drawing basics",
+   "f": "Tablets, apps, layers and brushes for drawing on screen"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Digital line art",
+   "f": "Stabilisers, clean lines and inking digitally"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Digital shading and colour",
+   "f": "Layers, blending modes and simple digital colouring"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Traditional versus digital",
+   "f": "What each way of drawing offers and how skills transfer"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Scanning and photographing drawings",
+   "f": "Capturing your drawings with clean light and true contrast"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Printmaking basics",
+   "f": "Linocut and relief printing as drawing turned into prints"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Drawing for design",
+   "f": "Sketching products, logos and layouts quickly"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Infographic and diagram drawing",
+   "f": "Clear visual explanations with simple drawings and icons"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Architectural sketching",
+   "f": "How architects sketch ideas quickly in plan, elevation and perspective"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Sketchnoting",
+   "f": "Taking visual notes with drawings, arrows and lettering"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Drawing for science and nature",
+   "f": "Accurate drawings of specimens, as natural history artists do"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Fashion drawing basics",
+   "f": "Stylised proportions and drawing garments with movement"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Advanced botanical illustration",
+   "f": "Precise, scientific plant plates with details, sections and colour notes"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Speed portraits from life",
+   "f": "Capturing people quickly and respectfully from observation in a few minutes"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Review: drawing in the wider world",
+   "f": "A recap of digital tools, printmaking and practical drawing uses"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Finding your drawing voice",
+   "f": "What subjects, tools and marks feel most like you"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Developing a personal style",
+   "f": "Style as a result of choices repeated over time"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Learning from influences",
+   "f": "Studying artists you admire and combining their lessons into your own way"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Themed sketchbook",
+   "f": "Filling a sketchbook around one theme to go deeper"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Thirty-day drawing challenge",
+   "f": "Planning daily prompts to stay motivated"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Drawing with others",
+   "f": "Life drawing groups, urban sketching meetups and drawing clubs"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Sharing drawings online",
+   "f": "Presenting your work and telling the story behind it"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Giving and receiving feedback",
+   "f": "Helpful critique and staying open to other views"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Overcoming art block",
+   "f": "Simple prompts, copying, changing tools and taking breaks"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Drawing for relaxation",
+   "f": "Slow, mindful drawing to unwind and enjoy the process"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Perfectionism and progress",
+   "f": "Why messy drawings are an important part of learning"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Building a portfolio",
+   "f": "Choosing coherent, strong drawings that show your best skills"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Exhibiting drawings",
+   "f": "Framing, hanging and showing drawings in a small exhibition"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Drawing commissions basics",
+   "f": "Listening to a client's wishes and agreeing clearly on size and timing"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Review: the artist's journey",
+   "f": "A recap of style, community and sharing with a portfolio selection"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Planning a final project",
+   "f": "Choosing an ambitious drawing project that uses many skills from this year"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Final project: research and references",
+   "f": "Gathering references and doing small observational studies"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Final project: thumbnails",
+   "f": "Exploring several compositions in small, fast sketches"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Final project: value plan",
+   "f": "Deciding the main light and dark pattern before drawing large"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Final project: construction",
+   "f": "Laying in the drawing with light lines and checking proportions"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Final project: rendering",
+   "f": "Building values and textures carefully across the drawing"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Final project: focal details",
+   "f": "Refining the centre of interest and keeping other areas simpler"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Final project: finishing",
+   "f": "Final accents, signature and stepping back to judge the whole"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Reflecting on your project",
+   "f": "What went well, what you learned and what to try next time"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Then and now",
+   "f": "Redrawing a subject from your first weeks to see your growth"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Your drawing toolkit for life",
+   "f": "The habits, tools and exercises you want to keep forever"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Drawing every day after day 365",
+   "f": "Ideas to keep drawing with joy for years to come"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Review: the advanced journey",
+   "f": "A recap of the advanced stage from anatomy to your final project"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Celebrating 365 days of drawing",
+   "f": "Looking back at a full year of drawings, choosing favourites and sharing your story"
+  }
+ ]
+}

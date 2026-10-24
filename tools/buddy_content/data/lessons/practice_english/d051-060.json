@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 51,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Seasons and clothes for the weather",
+     "g": "Name the four seasons and say what you wear in each one.",
+     "p": [
+      "Seasons: spring, summer, autumn (US: fall), winter; use in: in winter.",
+      "Summer clothes: shorts, T-shirt, sandals. Winter clothes: coat, scarf, gloves, boots.",
+      "Use wear for clothes: In winter I wear a warm coat."
+     ],
+     "q": "What is your favourite season, and what do you like wearing then?",
+     "c": "Describe what you wear today and why, linking it to the weather."
+    },
+    "de": {
+     "t": "Jahreszeiten und passende Kleidung",
+     "g": "Du lernst die vier Jahreszeiten und sagst, was du in jeder trägst.",
+     "p": [
+      "Jahreszeiten: spring, summer, autumn (amerikanisch fall), winter; mit in: in winter.",
+      "Sommer: shorts, T-shirt, sandals. Winter: coat, scarf, gloves, boots.",
+      "Für Kleidung nimmt man wear: In winter I wear a warm coat."
+     ],
+     "q": "Was ist deine Lieblingsjahreszeit, und was trägst du dann gern?",
+     "c": "Beschreib, was du heute trägst und warum, passend zum Wetter."
+    },
+    "es": {
+     "t": "Estaciones y ropa para el tiempo",
+     "g": "Aprende las cuatro estaciones y a decir qué ropa llevas en cada una.",
+     "p": [
+      "Estaciones: spring, summer, autumn (en EE. UU. fall), winter; con in: in winter.",
+      "Ropa de verano: shorts, T-shirt, sandals. De invierno: coat, scarf, gloves, boots.",
+      "Para la ropa se usa wear: In winter I wear a warm coat."
+     ],
+     "q": "¿Cuál es tu estación favorita y qué te gusta ponerte entonces?",
+     "c": "Describe qué llevas hoy y por qué, relacionándolo con el tiempo."
+    },
+    "fr": {
+     "t": "Saisons et vêtements selon la météo",
+     "g": "Nommer les quatre saisons et dire ce que tu portes à chacune.",
+     "p": [
+      "Saisons : spring, summer, autumn (américain fall), winter ; avec in : in winter.",
+      "Été : shorts, T-shirt, sandals. Hiver : coat, scarf, gloves, boots.",
+      "Pour les vêtements, on dit wear : In winter I wear a warm coat."
+     ],
+     "q": "Quelle est ta saison préférée, et qu'aimes-tu porter à ce moment-là ?",
+     "c": "Décris ce que tu portes aujourd'hui et pourquoi, en lien avec la météo."
+    },
+    "it": {
+     "t": "Stagioni e vestiti per il tempo",
+     "g": "Impari le quattro stagioni e a dire cosa indossi in ognuna.",
+     "p": [
+      "Stagioni: spring, summer, autumn (in americano fall), winter; con in: in winter.",
+      "Estate: shorts, T-shirt, sandals. Inverno: coat, scarf, gloves, boots.",
+      "Per i vestiti si usa wear: In winter I wear a warm coat."
+     ],
+     "q": "Qual è la tua stagione preferita, e cosa ti piace indossare allora?",
+     "c": "Descrivi cosa indossi oggi e perché, collegandolo al tempo."
+    },
+    "pt": {
+     "t": "Estações e roupa para o tempo",
+     "g": "Aprende as quatro estações e a dizer que roupa usas em cada uma.",
+     "p": [
+      "Estações: spring, summer, autumn (nos EUA fall), winter; com in: in winter.",
+      "Roupa de verão: shorts, T-shirt, sandals. De inverno: coat, scarf, gloves, boots.",
+      "Para a roupa usa-se wear: In winter I wear a warm coat."
+     ],
+     "q": "Qual é a tua estação preferida, e o que gostas de vestir nessa altura?",
+     "c": "Descreve o que tens vestido hoje e porquê, ligando ao tempo."
+    },
+    "pt_BR": {
+     "t": "Estações e roupas para o clima",
+     "g": "Aprenda as quatro estações e a dizer que roupa você usa em cada uma.",
+     "p": [
+      "Estações: spring, summer, fall (no Reino Unido autumn), winter; com in: in winter.",
+      "Roupa de verão: shorts, T-shirt, sandals. De inverno: coat, scarf, gloves, boots.",
+      "Para roupa se usa wear: In winter I wear a warm coat."
+     ],
+     "q": "Qual é a sua estação favorita, e o que você gosta de vestir nela?",
+     "c": "Descreva o que você está vestindo hoje e por quê, ligando ao clima."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "spring",
+      "ex": "The park is beautiful in spring."
+     },
+     {
+      "w": "summer",
+      "ex": "We go to the beach in summer."
+     },
+     {
+      "w": "autumn",
+      "ex": "The leaves are red in autumn."
+     },
+     {
+      "w": "winter",
+      "ex": "It snows here in winter."
+     },
+     {
+      "w": "coat",
+      "ex": "Wear a coat, it's freezing."
+     },
+     {
+      "w": "scarf",
+      "ex": "I always wear a scarf in winter."
+     }
+    ],
+    "gram": "In + season (in summer). Wear for clothes: She wears boots in winter. Autumn (UK) = fall (US)."
+   }
+  },
+  {
+   "d": 52,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Present continuous: I am working",
+     "g": "Use the present continuous for actions happening right now.",
+     "p": [
+      "Form it with am, is or are plus verb-ing: I'm working, she's reading.",
+      "Use it with now, right now and at the moment: They're playing at the moment.",
+      "Spelling: make becomes making, sit becomes sitting."
+     ],
+     "q": "What are you doing right now, apart from talking to me?",
+     "c": "Five times today, stop and say what you are doing at that moment in English."
+    },
+    "de": {
+     "t": "Present continuous: I am working",
+     "g": "Du lernst das present continuous für Handlungen, die gerade passieren.",
+     "p": [
+      "Bildung: am, is oder are plus Verb-ing: I'm working, she's reading.",
+      "Mit now, right now und at the moment: They're playing at the moment.",
+      "Schreibung: make wird making, sit wird sitting."
+     ],
+     "q": "Was machst du gerade, außer mit mir zu reden?",
+     "c": "Halte heute fünfmal inne und sag auf Englisch, was du in dem Moment tust."
+    },
+    "es": {
+     "t": "Present continuous: I am working",
+     "g": "Aprende el present continuous para acciones que pasan ahora mismo.",
+     "p": [
+      "Se forma con am, is o are más verbo-ing: I'm working, she's reading.",
+      "Va con now, right now y at the moment: They're playing at the moment.",
+      "Ortografía: make pasa a making, sit a sitting."
+     ],
+     "q": "¿Qué estás haciendo ahora mismo, además de hablar conmigo?",
+     "c": "Cinco veces hoy, para y di en inglés qué estás haciendo en ese momento."
+    },
+    "fr": {
+     "t": "Present continuous : I am working",
+     "g": "Utiliser le present continuous pour une action en cours.",
+     "p": [
+      "On le forme avec am, is ou are plus verbe-ing : I'm working, she's reading.",
+      "On l'emploie avec now, right now, at the moment : They're playing at the moment.",
+      "Orthographe : make donne making, sit donne sitting."
+     ],
+     "q": "Que fais-tu en ce moment, à part me parler ?",
+     "c": "Cinq fois aujourd'hui, arrête-toi et dis en anglais ce que tu es en train de faire."
+    },
+    "it": {
+     "t": "Present continuous: I am working",
+     "g": "Impari il present continuous per azioni che stanno succedendo adesso.",
+     "p": [
+      "Si forma con am, is o are più verbo-ing: I'm working, she's reading.",
+      "Si usa con now, right now e at the moment: They're playing at the moment.",
+      "Ortografia: make diventa making, sit diventa sitting."
+     ],
+     "q": "Cosa stai facendo adesso, oltre a parlare con me?",
+     "c": "Cinque volte oggi, fermati e di' in inglese cosa stai facendo in quel momento."
+    },
+    "pt": {
+     "t": "Present continuous: I am working",
+     "g": "Aprende o present continuous para ações que estão a acontecer agora.",
+     "p": [
+      "Forma-se com am, is ou are mais verbo-ing: I'm working, she's reading.",
+      "Usa-se com now, right now e at the moment: They're playing at the moment.",
+      "Ortografia: make passa a making, sit a sitting."
+     ],
+     "q": "O que estás a fazer agora, além de falar comigo?",
+     "c": "Cinco vezes hoje, para e diz em inglês o que estás a fazer nesse momento."
+    },
+    "pt_BR": {
+     "t": "Present continuous: I am working",
+     "g": "Aprenda o present continuous para ações que estão acontecendo agora.",
+     "p": [
+      "Forma-se com am, is ou are mais verbo-ing: I'm working, she's reading.",
+      "Usa-se com now, right now e at the moment: They're playing at the moment.",
+      "Ortografia: make vira making, sit vira sitting."
+     ],
+     "q": "O que você está fazendo agora, além de falar comigo?",
+     "c": "Cinco vezes hoje, pare e diga em inglês o que você está fazendo naquele momento."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'm working",
+      "ex": "I'm working from home today."
+     },
+     {
+      "w": "she's reading",
+      "ex": "She's reading a great book."
+     },
+     {
+      "w": "they're playing",
+      "ex": "The kids are playing in the garden."
+     },
+     {
+      "w": "right now",
+      "ex": "I'm cooking right now."
+     },
+     {
+      "w": "at the moment",
+      "ex": "He's sleeping at the moment."
+     },
+     {
+      "w": "What are you doing?",
+      "ex": "Hi! What are you doing?"
+     }
+    ],
+    "gram": "Present continuous: am/is/are + verb-ing for actions now. Question: Are you listening? Negative: I'm not."
+   }
+  },
+  {
+   "d": 53,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Present simple or continuous?",
+     "g": "Choose between habits and actions happening now.",
+     "p": [
+      "Present simple for habits and facts: I usually walk to work.",
+      "Present continuous for now or temporary actions: Today I'm taking the bus.",
+      "Some verbs like like, know, want and need are rarely continuous: I want tea, not I'm wanting."
+     ],
+     "q": "Tell me one thing you usually do and one thing you are doing differently this week.",
+     "c": "Write three pairs of sentences: a habit with usually and something different today."
+    },
+    "de": {
+     "t": "Present simple oder continuous?",
+     "g": "Du lernst, zwischen Gewohnheiten und gerade laufenden Handlungen zu wählen.",
+     "p": [
+      "Present simple für Gewohnheiten und Fakten: I usually walk to work.",
+      "Present continuous für jetzt oder Vorübergehendes: Today I'm taking the bus.",
+      "Verben wie like, know, want und need stehen selten in der -ing-Form: I want tea."
+     ],
+     "q": "Nenn mir etwas, das du normalerweise tust, und etwas, das du diese Woche anders machst.",
+     "c": "Schreib drei Satzpaare: eine Gewohnheit mit usually und etwas Anderes heute."
+    },
+    "es": {
+     "t": "¿Present simple o continuous?",
+     "g": "Aprende a elegir entre hábitos y acciones que pasan ahora.",
+     "p": [
+      "Present simple para hábitos y hechos: I usually walk to work.",
+      "Present continuous para ahora o algo temporal: Today I'm taking the bus.",
+      "Verbos como like, know, want y need casi nunca van en -ing: I want tea, no I'm wanting."
+     ],
+     "q": "Dime algo que sueles hacer y algo que estás haciendo distinto esta semana.",
+     "c": "Escribe tres parejas de frases: un hábito con usually y algo distinto hoy."
+    },
+    "fr": {
+     "t": "Present simple ou continuous ?",
+     "g": "Choisir entre les habitudes et les actions en cours.",
+     "p": [
+      "Present simple pour habitudes et faits : I usually walk to work.",
+      "Present continuous pour maintenant ou le temporaire : Today I'm taking the bus.",
+      "Des verbes comme like, know, want, need se mettent rarement en -ing : I want tea."
+     ],
+     "q": "Dis-moi une chose que tu fais d'habitude et une que tu fais autrement cette semaine.",
+     "c": "Écris trois paires de phrases : une habitude avec usually et quelque chose de différent aujourd'hui."
+    },
+    "it": {
+     "t": "Present simple o continuous?",
+     "g": "Impari a scegliere tra abitudini e azioni in corso.",
+     "p": [
+      "Present simple per abitudini e fatti: I usually walk to work.",
+      "Present continuous per adesso o cose temporanee: Today I'm taking the bus.",
+      "Verbi come like, know, want e need raramente vanno in -ing: I want tea, non I'm wanting."
+     ],
+     "q": "Dimmi una cosa che fai di solito e una che stai facendo diversamente questa settimana.",
+     "c": "Scrivi tre coppie di frasi: un'abitudine con usually e qualcosa di diverso oggi."
+    },
+    "pt": {
+     "t": "Present simple ou continuous?",
+     "g": "Aprende a escolher entre hábitos e ações que estão a acontecer agora.",
+     "p": [
+      "Present simple para hábitos e factos: I usually walk to work.",
+      "Present continuous para agora ou algo temporário: Today I'm taking the bus.",
+      "Verbos como like, know, want e need raramente vão para -ing: I want tea, e não I'm wanting."
+     ],
+     "q": "Diz-me algo que costumas fazer e algo que estás a fazer de outra forma esta semana.",
+     "c": "Escreve três pares de frases: um hábito com usually e algo diferente hoje."
+    },
+    "pt_BR": {
+     "t": "Present simple ou continuous?",
+     "g": "Aprenda a escolher entre hábitos e ações que estão acontecendo agora.",
+     "p": [
+      "Present simple para hábitos e fatos: I usually walk to work.",
+      "Present continuous para agora ou algo temporário: Today I'm taking the bus.",
+      "Verbos como like, know, want e need raramente vão para -ing: I want tea, e não I'm wanting."
+     ],
+     "q": "Me diga algo que você costuma fazer e algo que está fazendo diferente esta semana.",
+     "c": "Escreva três pares de frases: um hábito com usually e algo diferente hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "usually",
+      "ex": "I usually drink tea."
+     },
+     {
+      "w": "today",
+      "ex": "Today I'm drinking coffee."
+     },
+     {
+      "w": "this week",
+      "ex": "This week I'm working late."
+     },
+     {
+      "w": "every morning",
+      "ex": "She runs every morning."
+     },
+     {
+      "w": "want",
+      "ex": "I want a new phone."
+     },
+     {
+      "w": "know",
+      "ex": "I know the answer."
+     }
+    ],
+    "gram": "Habit: I usually work from home. Now: I'm working in the office today. Know, want, like: simple only."
+   }
+  },
+  {
+   "d": 54,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "On the phone: simple calls",
+     "g": "Make and answer a short phone call in English.",
+     "p": [
+      "Start with Hello, this is Ana or Hi, it's Ana.",
+      "Ask Can I speak to Mr Brown, please? and hear Just a moment or Hold on.",
+      "If you can't hear: Sorry, the line is bad. Can you say that again?"
+     ],
+     "q": "Imagine you call a hotel to ask about a room. How do you start the call?",
+     "c": "Write and say aloud a five-line phone call to a friend or a shop."
+    },
+    "de": {
+     "t": "Am Telefon: einfache Anrufe",
+     "g": "Du lernst, auf Englisch einen kurzen Anruf zu führen und anzunehmen.",
+     "p": [
+      "Beginne mit Hello, this is Ana oder Hi, it's Ana.",
+      "Frag Can I speak to Mr Brown, please? und hör Just a moment oder Hold on.",
+      "Wenn du nichts verstehst: Sorry, the line is bad. Can you say that again?"
+     ],
+     "q": "Stell dir vor, du rufst ein Hotel wegen eines Zimmers an. Wie beginnst du?",
+     "c": "Schreib einen Anruf mit fünf Zeilen an einen Freund oder ein Geschäft und sprich ihn laut."
+    },
+    "es": {
+     "t": "Al teléfono: llamadas sencillas",
+     "g": "Aprende a hacer y contestar una llamada corta en inglés.",
+     "p": [
+      "Empieza con Hello, this is Ana o Hi, it's Ana.",
+      "Pregunta Can I speak to Mr Brown, please? y oirás Just a moment o Hold on.",
+      "Si no oyes bien: Sorry, the line is bad. Can you say that again?"
+     ],
+     "q": "Imagina que llamas a un hotel por una habitación. ¿Cómo empiezas la llamada?",
+     "c": "Escribe y di en voz alta una llamada de cinco líneas a un amigo o a una tienda."
+    },
+    "fr": {
+     "t": "Au téléphone : appels simples",
+     "g": "Passer et recevoir un court appel téléphonique en anglais.",
+     "p": [
+      "Commence par Hello, this is Ana ou Hi, it's Ana.",
+      "Demande Can I speak to Mr Brown, please? et tu entendras Just a moment ou Hold on.",
+      "Si tu entends mal : Sorry, the line is bad. Can you say that again?"
+     ],
+     "q": "Imagine que tu appelles un hôtel pour une chambre. Comment commences-tu ?",
+     "c": "Écris et dis à voix haute un appel de cinq répliques à un ami ou un magasin."
+    },
+    "it": {
+     "t": "Al telefono: chiamate semplici",
+     "g": "Impari a fare e ricevere una breve telefonata in inglese.",
+     "p": [
+      "Inizia con Hello, this is Ana o Hi, it's Ana.",
+      "Chiedi Can I speak to Mr Brown, please? e sentirai Just a moment o Hold on.",
+      "Se non senti bene: Sorry, the line is bad. Can you say that again?"
+     ],
+     "q": "Immagina di chiamare un hotel per una camera. Come inizi la telefonata?",
+     "c": "Scrivi e di' ad alta voce una telefonata di cinque battute a un amico o a un negozio."
+    },
+    "pt": {
+     "t": "Ao telefone: chamadas simples",
+     "g": "Aprende a fazer e atender uma chamada curta em inglês.",
+     "p": [
+      "Começa com Hello, this is Ana ou Hi, it's Ana.",
+      "Pergunta Can I speak to Mr Brown, please? e vais ouvir Just a moment ou Hold on.",
+      "Se não ouvires bem: Sorry, the line is bad. Can you say that again?"
+     ],
+     "q": "Imagina que ligas para um hotel por causa de um quarto. Como começas a chamada?",
+     "c": "Escreve e diz em voz alta uma chamada de cinco falas para um amigo ou uma loja."
+    },
+    "pt_BR": {
+     "t": "No telefone: ligações simples",
+     "g": "Aprenda a fazer e atender uma ligação curta em inglês.",
+     "p": [
+      "Comece com Hello, this is Ana ou Hi, it's Ana.",
+      "Pergunte Can I speak to Mr Brown, please? e você vai ouvir Just a moment ou Hold on.",
+      "Se não ouvir bem: Sorry, the line is bad. Can you say that again?"
+     ],
+     "q": "Imagine que você liga para um hotel por causa de um quarto. Como começa a ligação?",
+     "c": "Escreva e fale em voz alta uma ligação de cinco falas para um amigo ou uma loja."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "This is...",
+      "ex": "Hello, this is Maria from Lisbon."
+     },
+     {
+      "w": "Can I speak to...?",
+      "ex": "Can I speak to Mr Brown, please?"
+     },
+     {
+      "w": "Just a moment.",
+      "ex": "Just a moment, please."
+     },
+     {
+      "w": "Hold on.",
+      "ex": "Hold on, I'll get her."
+     },
+     {
+      "w": "call back",
+      "ex": "Can you call back later?"
+     },
+     {
+      "w": "message",
+      "ex": "Can I leave a message?"
+     }
+    ],
+    "gram": "On the phone say This is Ana (not I am Ana). Polite requests: Can I speak to...? Can I leave a message?"
+   }
+  },
+  {
+   "d": 55,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Object pronouns: me, him, us",
+     "g": "Use object pronouns after verbs and prepositions.",
+     "p": [
+      "Subject to object: I-me, you-you, he-him, she-her, it-it, we-us, they-them.",
+      "After verbs: Call me. I love them. Help us.",
+      "After prepositions: with him, for her, to them, between us."
+     ],
+     "q": "Who do you call most often, and what do you talk to them about?",
+     "c": "Rewrite five sentences today replacing names with object pronouns."
+    },
+    "de": {
+     "t": "Objektpronomen: me, him, us",
+     "g": "Du lernst, Objektpronomen nach Verben und Präpositionen zu benutzen.",
+     "p": [
+      "Subjekt zu Objekt: I-me, you-you, he-him, she-her, it-it, we-us, they-them.",
+      "Nach Verben: Call me. I love them. Help us.",
+      "Nach Präpositionen: with him, for her, to them, between us."
+     ],
+     "q": "Wen rufst du am häufigsten an, und worüber sprichst du mit ihm oder ihr?",
+     "c": "Schreib heute fünf Sätze um und ersetze Namen durch Objektpronomen."
+    },
+    "es": {
+     "t": "Pronombres de objeto: me, him, us",
+     "g": "Aprende a usar los pronombres de objeto tras verbos y preposiciones.",
+     "p": [
+      "De sujeto a objeto: I-me, you-you, he-him, she-her, it-it, we-us, they-them.",
+      "Tras verbos: Call me. I love them. Help us.",
+      "Tras preposiciones: with him, for her, to them, between us."
+     ],
+     "q": "¿A quién llamas más a menudo y de qué habláis?",
+     "c": "Reescribe hoy cinco frases cambiando nombres por pronombres de objeto."
+    },
+    "fr": {
+     "t": "Pronoms compléments : me, him, us",
+     "g": "Utiliser les pronoms compléments après les verbes et les prépositions.",
+     "p": [
+      "Sujet vers complément : I-me, you-you, he-him, she-her, it-it, we-us, they-them.",
+      "Après un verbe : Call me. I love them. Help us.",
+      "Après une préposition : with him, for her, to them, between us."
+     ],
+     "q": "Qui appelles-tu le plus souvent, et de quoi parlez-vous ?",
+     "c": "Réécris cinq phrases aujourd'hui en remplaçant les noms par des pronoms compléments."
+    },
+    "it": {
+     "t": "Pronomi complemento: me, him, us",
+     "g": "Impari a usare i pronomi complemento dopo verbi e preposizioni.",
+     "p": [
+      "Da soggetto a complemento: I-me, you-you, he-him, she-her, it-it, we-us, they-them.",
+      "Dopo i verbi: Call me. I love them. Help us.",
+      "Dopo le preposizioni: with him, for her, to them, between us."
+     ],
+     "q": "Chi chiami più spesso, e di cosa parlate?",
+     "c": "Riscrivi oggi cinque frasi sostituendo i nomi con i pronomi complemento."
+    },
+    "pt": {
+     "t": "Pronomes de complemento: me, him, us",
+     "g": "Aprende a usar pronomes de complemento depois de verbos e preposições.",
+     "p": [
+      "De sujeito a complemento: I-me, you-you, he-him, she-her, it-it, we-us, they-them.",
+      "Depois de verbos: Call me. I love them. Help us.",
+      "Depois de preposições: with him, for her, to them, between us."
+     ],
+     "q": "A quem telefonas mais vezes, e de que falam?",
+     "c": "Reescreve hoje cinco frases trocando nomes por pronomes de complemento."
+    },
+    "pt_BR": {
+     "t": "Pronomes oblíquos: me, him, us",
+     "g": "Aprenda a usar os pronomes oblíquos depois de verbos e preposições.",
+     "p": [
+      "De sujeito a objeto: I-me, you-you, he-him, she-her, it-it, we-us, they-them.",
+      "Depois de verbos: Call me. I love them. Help us.",
+      "Depois de preposições: with him, for her, to them, between us."
+     ],
+     "q": "Para quem você liga com mais frequência, e sobre o que vocês conversam?",
+     "c": "Reescreva hoje cinco frases trocando nomes por pronomes oblíquos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me",
+      "ex": "Can you help me?"
+     },
+     {
+      "w": "him",
+      "ex": "I see him every day."
+     },
+     {
+      "w": "her",
+      "ex": "This gift is for her."
+     },
+     {
+      "w": "us",
+      "ex": "Come with us!"
+     },
+     {
+      "w": "them",
+      "ex": "I love them very much."
+     },
+     {
+      "w": "it",
+      "ex": "I like this song. I listen to it a lot."
+     }
+    ],
+    "gram": "Object pronouns after verbs and prepositions: Call him. Sit with me. Not: Call he / with I."
+   }
+  },
+  {
+   "d": 56,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessive 's: Anna's book",
+     "g": "Show who owns something with 's and s'.",
+     "p": [
+      "Add 's to a person: Anna's book, my sister's car.",
+      "For regular plurals add only the apostrophe: my parents' house.",
+      "Irregular plurals take 's: the children's toys, people's ideas."
+     ],
+     "q": "Tell me about something that belongs to a family member, using 's.",
+     "c": "Label five things at home in English with the owner's name: Dad's chair."
+    },
+    "de": {
+     "t": "Genitiv-'s: Anna's book",
+     "g": "Du lernst, mit 's und s' Besitz auszudrücken.",
+     "p": [
+      "Häng 's an eine Person: Anna's book, my sister's car.",
+      "Bei regelmäßigen Pluralen nur den Apostroph: my parents' house.",
+      "Unregelmäßige Plurale bekommen 's: the children's toys, people's ideas."
+     ],
+     "q": "Erzähl mir von etwas, das einem Familienmitglied gehört, mit 's.",
+     "c": "Benenne fünf Dinge zu Hause auf Englisch mit dem Namen des Besitzers: Dad's chair."
+    },
+    "es": {
+     "t": "El posesivo 's: Anna's book",
+     "g": "Aprende a indicar de quién es algo con 's y s'.",
+     "p": [
+      "Añade 's a la persona: Anna's book, my sister's car.",
+      "Con plurales regulares, solo el apóstrofo: my parents' house.",
+      "Los plurales irregulares llevan 's: the children's toys, people's ideas."
+     ],
+     "q": "Háblame de algo que pertenece a alguien de tu familia, usando 's.",
+     "c": "Nombra cinco cosas de casa en inglés con el nombre del dueño: Dad's chair."
+    },
+    "fr": {
+     "t": "Le possessif 's : Anna's book",
+     "g": "Indiquer à qui appartient quelque chose avec 's et s'.",
+     "p": [
+      "Ajoute 's à la personne : Anna's book, my sister's car.",
+      "Pour un pluriel régulier, juste l'apostrophe : my parents' house.",
+      "Les pluriels irréguliers prennent 's : the children's toys, people's ideas."
+     ],
+     "q": "Parle-moi d'une chose qui appartient à un membre de ta famille, avec 's.",
+     "c": "Nomme cinq objets chez toi en anglais avec le nom du propriétaire : Dad's chair."
+    },
+    "it": {
+     "t": "Il possessivo 's: Anna's book",
+     "g": "Impari a indicare di chi è qualcosa con 's e s'.",
+     "p": [
+      "Aggiungi 's alla persona: Anna's book, my sister's car.",
+      "Con i plurali regolari solo l'apostrofo: my parents' house.",
+      "I plurali irregolari prendono 's: the children's toys, people's ideas."
+     ],
+     "q": "Parlami di qualcosa che appartiene a un tuo familiare, usando 's.",
+     "c": "Nomina cinque cose di casa in inglese con il nome del proprietario: Dad's chair."
+    },
+    "pt": {
+     "t": "O possessivo 's: Anna's book",
+     "g": "Aprende a indicar de quem é uma coisa com 's e s'.",
+     "p": [
+      "Junta 's à pessoa: Anna's book, my sister's car.",
+      "Nos plurais regulares, só o apóstrofo: my parents' house.",
+      "Os plurais irregulares levam 's: the children's toys, people's ideas."
+     ],
+     "q": "Fala-me de algo que pertence a alguém da tua família, usando 's.",
+     "c": "Diz em inglês o nome de cinco coisas em casa com o nome do dono: Dad's chair."
+    },
+    "pt_BR": {
+     "t": "O possessivo 's: Anna's book",
+     "g": "Aprenda a indicar de quem é uma coisa com 's e s'.",
+     "p": [
+      "Coloque 's na pessoa: Anna's book, my sister's car.",
+      "Nos plurais regulares, só o apóstrofo: my parents' house.",
+      "Plurais irregulares levam 's: the children's toys, people's ideas."
+     ],
+     "q": "Me conte sobre algo que pertence a alguém da sua família, usando 's.",
+     "c": "Diga em inglês o nome de cinco coisas em casa com o nome do dono: Dad's chair."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Anna's book",
+      "ex": "This is Anna's book."
+     },
+     {
+      "w": "my sister's car",
+      "ex": "My sister's car is red."
+     },
+     {
+      "w": "my parents' house",
+      "ex": "We meet at my parents' house."
+     },
+     {
+      "w": "the children's room",
+      "ex": "The children's room is upstairs."
+     },
+     {
+      "w": "my friend's dog",
+      "ex": "My friend's dog is very friendly."
+     },
+     {
+      "w": "Tom's birthday",
+      "ex": "Tom's birthday is on Friday."
+     }
+    ],
+    "gram": "Owner + 's + thing: Maria's phone. Plural in -s: just ': the students' books. Children's, people's."
+   }
+  },
+  {
+   "d": 57,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Whose is it? Mine, yours",
+     "g": "Ask who owns something and answer with possessive pronouns.",
+     "p": [
+      "Ask Whose bag is this? or Whose are these keys?",
+      "Answer with mine, yours, his, hers, ours, theirs: It's mine.",
+      "Possessive pronouns replace a noun: This is my pen, not yours."
+     ],
+     "q": "Point at something near you: whose is it? Answer with a possessive pronoun.",
+     "c": "Ask Whose is this? about three objects today and answer with mine, yours or hers."
+    },
+    "de": {
+     "t": "Whose is it? Mine, yours",
+     "g": "Du lernst, nach dem Besitzer zu fragen und mit Possessivpronomen zu antworten.",
+     "p": [
+      "Frag Whose bag is this? oder Whose are these keys?",
+      "Antworte mit mine, yours, his, hers, ours, theirs: It's mine.",
+      "Possessivpronomen ersetzen ein Nomen: This is my pen, not yours."
+     ],
+     "q": "Zeig auf etwas in deiner Nähe: Wem gehört es? Antworte mit einem Possessivpronomen.",
+     "c": "Frag heute bei drei Gegenständen Whose is this? und antworte mit mine, yours oder hers."
+    },
+    "es": {
+     "t": "¿Whose is it? Mine, yours",
+     "g": "Aprende a preguntar de quién es algo y a responder con pronombres posesivos.",
+     "p": [
+      "Pregunta Whose bag is this? o Whose are these keys?",
+      "Responde con mine, yours, his, hers, ours, theirs: It's mine.",
+      "Los pronombres posesivos sustituyen al sustantivo: This is my pen, not yours."
+     ],
+     "q": "Señala algo cerca de ti: ¿de quién es? Responde con un pronombre posesivo.",
+     "c": "Pregunta hoy Whose is this? sobre tres objetos y responde con mine, yours o hers."
+    },
+    "fr": {
+     "t": "Whose is it? Mine, yours",
+     "g": "Demander à qui est quelque chose et répondre avec les pronoms possessifs.",
+     "p": [
+      "Demande Whose bag is this? ou Whose are these keys?",
+      "Réponds avec mine, yours, his, hers, ours, theirs : It's mine.",
+      "Le pronom possessif remplace un nom : This is my pen, not yours."
+     ],
+     "q": "Montre un objet près de toi : à qui est-il ? Réponds avec un pronom possessif.",
+     "c": "Demande Whose is this? pour trois objets aujourd'hui et réponds avec mine, yours ou hers."
+    },
+    "it": {
+     "t": "Whose is it? Mine, yours",
+     "g": "Impari a chiedere di chi è qualcosa e a rispondere con i pronomi possessivi.",
+     "p": [
+      "Chiedi Whose bag is this? o Whose are these keys?",
+      "Rispondi con mine, yours, his, hers, ours, theirs: It's mine.",
+      "I pronomi possessivi sostituiscono il nome: This is my pen, not yours."
+     ],
+     "q": "Indica qualcosa vicino a te: di chi è? Rispondi con un pronome possessivo.",
+     "c": "Chiedi oggi Whose is this? su tre oggetti e rispondi con mine, yours o hers."
+    },
+    "pt": {
+     "t": "Whose is it? Mine, yours",
+     "g": "Aprende a perguntar de quem é algo e a responder com pronomes possessivos.",
+     "p": [
+      "Pergunta Whose bag is this? ou Whose are these keys?",
+      "Responde com mine, yours, his, hers, ours, theirs: It's mine.",
+      "Os pronomes possessivos substituem o nome: This is my pen, not yours."
+     ],
+     "q": "Aponta para algo perto de ti: de quem é? Responde com um pronome possessivo.",
+     "c": "Pergunta hoje Whose is this? sobre três objetos e responde com mine, yours ou hers."
+    },
+    "pt_BR": {
+     "t": "Whose is it? Mine, yours",
+     "g": "Aprenda a perguntar de quem é algo e a responder com pronomes possessivos.",
+     "p": [
+      "Pergunte Whose bag is this? ou Whose are these keys?",
+      "Responda com mine, yours, his, hers, ours, theirs: It's mine.",
+      "Os pronomes possessivos substituem o substantivo: This is my pen, not yours."
+     ],
+     "q": "Aponte para algo perto de você: de quem é? Responda com um pronome possessivo.",
+     "c": "Pergunte hoje Whose is this? sobre três objetos e responda com mine, yours ou hers."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Whose...?",
+      "ex": "Whose jacket is this?"
+     },
+     {
+      "w": "mine",
+      "ex": "That coffee is mine."
+     },
+     {
+      "w": "yours",
+      "ex": "Is this umbrella yours?"
+     },
+     {
+      "w": "hers",
+      "ex": "The red bag is hers."
+     },
+     {
+      "w": "ours",
+      "ex": "This table is ours."
+     },
+     {
+      "w": "theirs",
+      "ex": "The big house is theirs."
+     }
+    ],
+    "gram": "Possessive pronouns stand alone: It's mine (not It's my). Mine, yours, his, hers, ours, theirs."
+   }
+  },
+  {
+   "d": 58,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The body and feeling unwell",
+     "g": "Name parts of the body and say simply how you feel when you are unwell.",
+     "p": [
+      "Body: head, eyes, ears, arm, hand, leg, back, stomach.",
+      "Say I have a headache, a stomachache, a sore throat or a cold.",
+      "Use I feel plus an adjective: I feel sick, I feel tired, I feel better."
+     ],
+     "q": "How do you say in English that your back hurts after a long day?",
+     "c": "Touch and name ten body parts in English today, like a little game."
+    },
+    "de": {
+     "t": "Der Körper und sich unwohl fühlen",
+     "g": "Du lernst Körperteile und sagst einfach, wie es dir geht, wenn du krank bist.",
+     "p": [
+      "Körper: head, eyes, ears, arm, hand, leg, back, stomach.",
+      "Sag I have a headache, a stomachache, a sore throat oder a cold.",
+      "Benutze I feel plus Adjektiv: I feel sick, I feel tired, I feel better."
+     ],
+     "q": "Wie sagst du auf Englisch, dass dir nach einem langen Tag der Rücken wehtut?",
+     "c": "Berühre und benenne heute zehn Körperteile auf Englisch, wie ein kleines Spiel."
+    },
+    "es": {
+     "t": "El cuerpo y sentirse mal",
+     "g": "Aprende las partes del cuerpo y a decir de forma sencilla cómo te sientes si no estás bien.",
+     "p": [
+      "Cuerpo: head, eyes, ears, arm, hand, leg, back, stomach.",
+      "Di I have a headache, a stomachache, a sore throat o a cold.",
+      "Usa I feel con un adjetivo: I feel sick, I feel tired, I feel better."
+     ],
+     "q": "¿Cómo dices en inglés que te duele la espalda tras un día largo?",
+     "c": "Toca y nombra hoy diez partes del cuerpo en inglés, como un pequeño juego."
+    },
+    "fr": {
+     "t": "Le corps et ne pas se sentir bien",
+     "g": "Nommer les parties du corps et dire simplement comment tu te sens quand ça ne va pas.",
+     "p": [
+      "Corps : head, eyes, ears, arm, hand, leg, back, stomach.",
+      "Dis I have a headache, a stomachache, a sore throat ou a cold.",
+      "Utilise I feel plus un adjectif : I feel sick, I feel tired, I feel better."
+     ],
+     "q": "Comment dis-tu en anglais que tu as mal au dos après une longue journée ?",
+     "c": "Touche et nomme dix parties du corps en anglais aujourd'hui, comme un petit jeu."
+    },
+    "it": {
+     "t": "Il corpo e sentirsi poco bene",
+     "g": "Impari le parti del corpo e a dire in modo semplice come ti senti quando non stai bene.",
+     "p": [
+      "Corpo: head, eyes, ears, arm, hand, leg, back, stomach.",
+      "Di' I have a headache, a stomachache, a sore throat o a cold.",
+      "Usa I feel più un aggettivo: I feel sick, I feel tired, I feel better."
+     ],
+     "q": "Come dici in inglese che ti fa male la schiena dopo una lunga giornata?",
+     "c": "Tocca e nomina oggi dieci parti del corpo in inglese, come un piccolo gioco."
+    },
+    "pt": {
+     "t": "O corpo e sentir-se mal",
+     "g": "Aprende as partes do corpo e a dizer de forma simples como te sentes quando não estás bem.",
+     "p": [
+      "Corpo: head, eyes, ears, arm, hand, leg, back, stomach.",
+      "Diz I have a headache, a stomachache, a sore throat ou a cold.",
+      "Usa I feel com um adjetivo: I feel sick, I feel tired, I feel better."
+     ],
+     "q": "Como dizes em inglês que te doem as costas depois de um dia longo?",
+     "c": "Toca e diz em inglês o nome de dez partes do corpo hoje, como um pequeno jogo."
+    },
+    "pt_BR": {
+     "t": "O corpo e se sentindo mal",
+     "g": "Aprenda as partes do corpo e a dizer de forma simples como você se sente quando não está bem.",
+     "p": [
+      "Corpo: head, eyes, ears, arm, hand, leg, back, stomach.",
+      "Diga I have a headache, a stomachache, a sore throat ou a cold.",
+      "Use I feel com um adjetivo: I feel sick, I feel tired, I feel better."
+     ],
+     "q": "Como você diz em inglês que suas costas doem depois de um dia longo?",
+     "c": "Toque e diga em inglês o nome de dez partes do corpo hoje, como um joguinho."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "head",
+      "ex": "My head hurts."
+     },
+     {
+      "w": "back",
+      "ex": "My back hurts after work."
+     },
+     {
+      "w": "stomach",
+      "ex": "I have a pain in my stomach."
+     },
+     {
+      "w": "a headache",
+      "ex": "I have a headache today."
+     },
+     {
+      "w": "a sore throat",
+      "ex": "She has a sore throat."
+     },
+     {
+      "w": "I feel sick.",
+      "ex": "I feel sick. I need to sit down."
+     }
+    ],
+    "gram": "I have a + ache/cold (I have a headache). Body part + hurts: My arm hurts. I feel + adjective."
+   }
+  },
+  {
+   "d": 59,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "At the pharmacy: simple phrases",
+     "g": "Ask for simple help at a pharmacy in English.",
+     "p": [
+      "Say I need something for a cold or Do you have anything for a headache?",
+      "Ask How often do I take it? and How many tablets?",
+      "For real health questions, the pharmacist or a doctor is the right person to ask."
+     ],
+     "q": "Imagine you have a cold while travelling. What do you say at the pharmacy?",
+     "c": "Write a short four-line pharmacy dialogue in English and read it aloud."
+    },
+    "de": {
+     "t": "In der Apotheke: einfache Sätze",
+     "g": "Du lernst, in einer Apotheke auf Englisch um einfache Hilfe zu bitten.",
+     "p": [
+      "Sag I need something for a cold oder Do you have anything for a headache?",
+      "Frag How often do I take it? und How many tablets?",
+      "Bei echten Gesundheitsfragen sind Apotheker oder Ärztin die richtigen Ansprechpersonen."
+     ],
+     "q": "Stell dir vor, du bist auf Reisen erkältet. Was sagst du in der Apotheke?",
+     "c": "Schreib einen kurzen Apothekendialog mit vier Zeilen auf Englisch und lies ihn laut."
+    },
+    "es": {
+     "t": "En la farmacia: frases sencillas",
+     "g": "Aprende a pedir ayuda sencilla en una farmacia en inglés.",
+     "p": [
+      "Di I need something for a cold o Do you have anything for a headache?",
+      "Pregunta How often do I take it? y How many tablets?",
+      "Para dudas de salud reales, pregunta siempre al farmacéutico o a un médico."
+     ],
+     "q": "Imagina que estás resfriado de viaje. ¿Qué dices en la farmacia?",
+     "c": "Escribe un breve diálogo de farmacia de cuatro líneas en inglés y léelo en voz alta."
+    },
+    "fr": {
+     "t": "À la pharmacie : phrases simples",
+     "g": "Demander une aide simple à la pharmacie en anglais.",
+     "p": [
+      "Dis I need something for a cold ou Do you have anything for a headache?",
+      "Demande How often do I take it? et How many tablets?",
+      "Pour une vraie question de santé, c'est le pharmacien ou un médecin qu'il faut consulter."
+     ],
+     "q": "Imagine que tu as un rhume en voyage. Que dis-tu à la pharmacie ?",
+     "c": "Écris un court dialogue de pharmacie de quatre répliques en anglais et lis-le à voix haute."
+    },
+    "it": {
+     "t": "In farmacia: frasi semplici",
+     "g": "Impari a chiedere un aiuto semplice in farmacia in inglese.",
+     "p": [
+      "Di' I need something for a cold o Do you have anything for a headache?",
+      "Chiedi How often do I take it? e How many tablets?",
+      "Per vere domande di salute, rivolgiti sempre al farmacista o a un medico."
+     ],
+     "q": "Immagina di avere il raffreddore in viaggio. Cosa dici in farmacia?",
+     "c": "Scrivi un breve dialogo in farmacia di quattro battute in inglese e leggilo ad alta voce."
+    },
+    "pt": {
+     "t": "Na farmácia: frases simples",
+     "g": "Aprende a pedir ajuda simples numa farmácia em inglês.",
+     "p": [
+      "Diz I need something for a cold ou Do you have anything for a headache?",
+      "Pergunta How often do I take it? e How many tablets?",
+      "Para dúvidas de saúde a sério, pergunta sempre ao farmacêutico ou a um médico."
+     ],
+     "q": "Imagina que estás constipado em viagem. O que dizes na farmácia?",
+     "c": "Escreve um pequeno diálogo de farmácia com quatro falas em inglês e lê-o em voz alta."
+    },
+    "pt_BR": {
+     "t": "Na farmácia: frases simples",
+     "g": "Aprenda a pedir ajuda simples numa farmácia em inglês.",
+     "p": [
+      "Diga I need something for a cold ou Do you have anything for a headache?",
+      "Pergunte How often do I take it? e How many tablets?",
+      "Para dúvidas de saúde de verdade, pergunte sempre ao farmacêutico ou a um médico."
+     ],
+     "q": "Imagine que você está resfriado numa viagem. O que diz na farmácia?",
+     "c": "Escreva um pequeno diálogo de farmácia com quatro falas em inglês e leia em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "pharmacy",
+      "ex": "Is there a pharmacy near here?"
+     },
+     {
+      "w": "I need something for...",
+      "ex": "I need something for a cough."
+     },
+     {
+      "w": "tablets",
+      "ex": "Take two tablets with water."
+     },
+     {
+      "w": "How often...?",
+      "ex": "How often do I take it?"
+     },
+     {
+      "w": "a cold",
+      "ex": "I think I have a cold."
+     },
+     {
+      "w": "pharmacist",
+      "ex": "Ask the pharmacist for advice."
+     }
+    ],
+    "gram": "Ask for help with I need something for + problem, or Do you have anything for + problem?"
+   }
+  },
+  {
+   "d": 60,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: everyday life in English",
+     "g": "Bring together food, shopping, the city, hobbies, weather and present tenses.",
+     "p": [
+      "You can order in a café, shop for clothes, pay, and use some, any, much and many.",
+      "You can find your way, buy tickets, and talk about hobbies, sports and the weather.",
+      "You can mix present simple and continuous: I usually cook, but today I'm eating out."
+     ],
+     "q": "Tell me about your weekend plans: where you go, what you do and what you usually wear.",
+     "c": "Describe a typical Saturday in eight English sentences using both present tenses."
+    },
+    "de": {
+     "t": "Rückblick: Alltag auf Englisch",
+     "g": "Du verbindest Essen, Einkaufen, Stadt, Hobbys, Wetter und die Präsenszeiten.",
+     "p": [
+      "Du kannst im Café bestellen, Kleidung kaufen, bezahlen und some, any, much, many benutzen.",
+      "Du findest deinen Weg, kaufst Fahrkarten und sprichst über Hobbys, Sport und Wetter.",
+      "Du mischst present simple und continuous: I usually cook, but today I'm eating out."
+     ],
+     "q": "Erzähl mir von deinem Wochenende: wohin du gehst, was du machst und was du meist trägst.",
+     "c": "Beschreib einen typischen Samstag in acht englischen Sätzen mit beiden Präsenszeiten."
+    },
+    "es": {
+     "t": "Repaso: la vida diaria en inglés",
+     "g": "Junta comida, compras, ciudad, aficiones, tiempo y los dos presentes.",
+     "p": [
+      "Sabes pedir en un café, comprar ropa, pagar y usar some, any, much y many.",
+      "Sabes orientarte, comprar billetes y hablar de aficiones, deporte y tiempo.",
+      "Combinas present simple y continuous: I usually cook, but today I'm eating out."
+     ],
+     "q": "Háblame de tu fin de semana: adónde vas, qué haces y qué sueles ponerte.",
+     "c": "Describe un sábado típico en ocho frases en inglés usando los dos presentes."
+    },
+    "fr": {
+     "t": "Révision : la vie quotidienne en anglais",
+     "g": "Réunir nourriture, achats, ville, loisirs, météo et les deux présents.",
+     "p": [
+      "Tu sais commander au café, acheter des vêtements, payer et utiliser some, any, much, many.",
+      "Tu sais trouver ton chemin, acheter un billet et parler loisirs, sport et météo.",
+      "Tu mélanges present simple et continuous : I usually cook, but today I'm eating out."
+     ],
+     "q": "Parle-moi de ton week-end : où tu vas, ce que tu fais et ce que tu portes d'habitude.",
+     "c": "Décris un samedi typique en huit phrases en anglais avec les deux présents."
+    },
+    "it": {
+     "t": "Ripasso: la vita quotidiana in inglese",
+     "g": "Metti insieme cibo, acquisti, città, hobby, tempo e i due presenti.",
+     "p": [
+      "Sai ordinare al bar, comprare vestiti, pagare e usare some, any, much e many.",
+      "Sai orientarti, comprare biglietti e parlare di hobby, sport e tempo.",
+      "Alterni present simple e continuous: I usually cook, but today I'm eating out."
+     ],
+     "q": "Raccontami il tuo weekend: dove vai, cosa fai e cosa indossi di solito.",
+     "c": "Descrivi un sabato tipico in otto frasi in inglese usando entrambi i presenti."
+    },
+    "pt": {
+     "t": "Revisão: o dia a dia em inglês",
+     "g": "Junta comida, compras, cidade, passatempos, tempo e os dois presentes.",
+     "p": [
+      "Já sabes pedir num café, comprar roupa, pagar e usar some, any, much e many.",
+      "Já sabes orientar-te, comprar bilhetes e falar de passatempos, desporto e tempo.",
+      "Misturas present simple e continuous: I usually cook, but today I'm eating out."
+     ],
+     "q": "Fala-me do teu fim de semana: aonde vais, o que fazes e o que costumas vestir.",
+     "c": "Descreve um sábado típico em oito frases em inglês usando os dois presentes."
+    },
+    "pt_BR": {
+     "t": "Revisão: o dia a dia em inglês",
+     "g": "Junte comida, compras, cidade, hobbies, clima e os dois presentes.",
+     "p": [
+      "Você já sabe pedir numa cafeteria, comprar roupa, pagar e usar some, any, much e many.",
+      "Você já sabe se orientar, comprar passagens e falar de hobbies, esportes e clima.",
+      "Você mistura present simple e continuous: I usually cook, but today I'm eating out."
+     ],
+     "q": "Me conte sobre seu fim de semana: aonde você vai, o que faz e o que costuma vestir.",
+     "c": "Descreva um sábado típico em oito frases em inglês usando os dois presentes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I'd like...",
+      "ex": "I'd like a coffee and a muffin, please."
+     },
+     {
+      "w": "How much is it?",
+      "ex": "How much is this jacket?"
+     },
+     {
+      "w": "turn left",
+      "ex": "Turn left at the bank."
+     },
+     {
+      "w": "I love -ing",
+      "ex": "I love going to the cinema."
+     },
+     {
+      "w": "It's sunny.",
+      "ex": "It's sunny, so I'm wearing shorts."
+     },
+     {
+      "w": "today",
+      "ex": "I usually take the bus, but today I'm walking."
+     }
+    ],
+    "gram": "Review: present simple for habits (I usually cook), present continuous for now (I'm cooking now)."
+   }
+  }
+ ]
+}

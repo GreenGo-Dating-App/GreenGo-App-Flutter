@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 131,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Relative pronouns: que, donde",
+     "g": "Join two short sentences into one with que and donde.",
+     "p": [
+      "Que works for people and things: la chica que vive aquí, el libro que leo.",
+      "Donde is for places: el bar donde nos conocimos, la ciudad donde nací.",
+      "Two sentences become one: Tengo un amigo. Mi amigo es chef. Tengo un amigo que es chef."
+     ],
+     "q": "Can you describe the place where you grew up using donde?",
+     "c": "Join four pairs of short sentences of your own with que or donde."
+    },
+    "de": {
+     "t": "Relativpronomen: que, donde",
+     "g": "Du verbindest zwei kurze Sätze mit que und donde zu einem.",
+     "p": [
+      "Que gilt für Personen und Dinge: la chica que vive aquí, el libro que leo.",
+      "Donde steht für Orte: el bar donde nos conocimos, la ciudad donde nací.",
+      "Aus zwei Sätzen wird einer: Tengo un amigo. Es chef. Tengo un amigo que es chef."
+     ],
+     "q": "Kannst du den Ort, an dem du aufgewachsen bist, mit donde beschreiben?",
+     "c": "Verbinde vier eigene Satzpaare mit que oder donde."
+    },
+    "es": {
+     "t": "Pronombres relativos: que, donde",
+     "g": "Une dos frases cortas en una con que y donde.",
+     "p": [
+      "Que sirve para personas y cosas: la chica que vive aquí, el libro que leo.",
+      "Donde es para lugares: el bar donde nos conocimos, la ciudad donde nací.",
+      "Dos frases se convierten en una: Tengo un amigo. Es chef. Tengo un amigo que es chef."
+     ],
+     "q": "¿Puedes describir el lugar donde creciste usando donde?",
+     "c": "Une cuatro parejas de frases cortas tuyas con que o donde."
+    },
+    "fr": {
+     "t": "Pronoms relatifs : que, donde",
+     "g": "Relier deux phrases courtes en une seule avec que et donde.",
+     "p": [
+      "Que sert pour les personnes et les choses (qui et que) : la chica que vive aquí, el libro que leo.",
+      "Donde s'emploie pour les lieux (où) : el bar donde nos conocimos, la ciudad donde nací.",
+      "Deux phrases deviennent une : Tengo un amigo. Es chef. Tengo un amigo que es chef."
+     ],
+     "q": "Peux-tu décrire l'endroit où tu as grandi avec donde ?",
+     "c": "Relie quatre paires de phrases courtes à toi avec que ou donde."
+    },
+    "it": {
+     "t": "Pronomi relativi: que, donde",
+     "g": "Unisci due frasi brevi in una con que e donde.",
+     "p": [
+      "Que vale per persone e cose, come che: la chica que vive aquí, el libro que leo.",
+      "Donde si usa per i luoghi (dove): el bar donde nos conocimos, la ciudad donde nací.",
+      "Due frasi diventano una: Tengo un amigo. Es chef. Tengo un amigo que es chef."
+     ],
+     "q": "Puoi descrivere il posto dove sei cresciuto usando donde?",
+     "c": "Unisci quattro coppie di frasi brevi tue con que o donde."
+    },
+    "pt": {
+     "t": "Pronomes relativos: que, donde",
+     "g": "Juntas duas frases curtas numa só com que e donde.",
+     "p": [
+      "Que serve para pessoas e coisas: la chica que vive aquí, el libro que leo.",
+      "Donde é para lugares (onde): el bar donde nos conocimos, la ciudad donde nací.",
+      "Duas frases passam a uma: Tengo un amigo. Es chef. Tengo un amigo que es chef."
+     ],
+     "q": "Consegues descrever o lugar onde cresceste usando donde?",
+     "c": "Junta quatro pares de frases curtas tuas com que ou donde."
+    },
+    "pt_BR": {
+     "t": "Pronomes relativos: que, donde",
+     "g": "Junte duas frases curtas em uma só com que e donde.",
+     "p": [
+      "Que serve para pessoas e coisas: la chica que vive aquí, el libro que leo.",
+      "Donde é para lugares (onde): el bar donde nos conocimos, la ciudad donde nací.",
+      "Duas frases viram uma: Tengo un amigo. Es chef. Tengo un amigo que es chef."
+     ],
+     "q": "Você consegue descrever o lugar onde cresceu usando donde?",
+     "c": "Junte quatro pares de frases curtas suas com que ou donde."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "que",
+      "ex": "La chica que vive aquí es mi prima."
+     },
+     {
+      "w": "donde",
+      "ex": "Este es el bar donde nos conocimos."
+     },
+     {
+      "w": "el libro que",
+      "ex": "El libro que me regalaste es buenísimo."
+     },
+     {
+      "w": "la ciudad donde",
+      "ex": "Sevilla es la ciudad donde nací."
+     },
+     {
+      "w": "el amigo que",
+      "ex": "Tengo un amigo que habla cinco idiomas."
+     },
+     {
+      "w": "el lugar donde",
+      "ex": "Es el lugar donde paso los veranos."
+     }
+    ],
+    "gram": "Que une frases y sirve para personas y cosas: el hombre que trabaja aquí. Donde se usa para lugares: la casa donde vivo."
+   }
+  },
+  {
+   "d": 132,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Describing objects you can't name",
+     "g": "Talk around a word you don't know so people still understand you.",
+     "p": [
+      "Function: es una cosa que sirve para cortar, se usa para limpiar.",
+      "Material and shape: es de metal, de plástico, de madera; es redondo, cuadrado, alargado.",
+      "Compare: se parece a una cuchara, es como una caja pero más pequeña."
+     ],
+     "q": "Can you describe a strange kitchen gadget so I can guess what it is?",
+     "c": "Pick three objects at home and describe each one without saying its name."
+    },
+    "de": {
+     "t": "Dinge beschreiben, deren Namen du nicht kennst",
+     "g": "Du umschreibst ein unbekanntes Wort, sodass man dich trotzdem versteht.",
+     "p": [
+      "Funktion: es una cosa que sirve para cortar, se usa para limpiar.",
+      "Material und Form: es de metal, de plástico, de madera; es redondo, cuadrado, alargado.",
+      "Vergleichen: se parece a una cuchara, es como una caja pero más pequeña."
+     ],
+     "q": "Kannst du ein seltsames Küchengerät beschreiben, damit ich rate, was es ist?",
+     "c": "Wähle drei Gegenstände zu Hause und beschreib jeden, ohne den Namen zu sagen."
+    },
+    "es": {
+     "t": "Describir objetos sin saber su nombre",
+     "g": "Explica una palabra que no conoces con otras palabras para que te entiendan.",
+     "p": [
+      "Función: es una cosa que sirve para cortar, se usa para limpiar.",
+      "Material y forma: es de metal, de plástico, de madera; es redondo, cuadrado, alargado.",
+      "Compara: se parece a una cuchara, es como una caja pero más pequeña."
+     ],
+     "q": "¿Puedes describir un aparato raro de cocina para que yo adivine qué es?",
+     "c": "Elige tres objetos de casa y describe cada uno sin decir su nombre."
+    },
+    "fr": {
+     "t": "Décrire un objet sans connaître son nom",
+     "g": "Contourner un mot inconnu pour te faire comprendre quand même.",
+     "p": [
+      "Fonction : es una cosa que sirve para cortar, se usa para limpiar.",
+      "Matière et forme : es de metal, de plástico, de madera ; es redondo, cuadrado, alargado.",
+      "Comparer : se parece a una cuchara, es como una caja pero más pequeña."
+     ],
+     "q": "Peux-tu décrire un ustensile de cuisine bizarre pour que je devine ce que c'est ?",
+     "c": "Choisis trois objets chez toi et décris chacun sans dire son nom."
+    },
+    "it": {
+     "t": "Descrivere oggetti senza sapere il nome",
+     "g": "Giri intorno a una parola che non sai, così ti capiscono lo stesso.",
+     "p": [
+      "Funzione: es una cosa que sirve para cortar, se usa para limpiar.",
+      "Materiale e forma: es de metal, de plástico, de madera; es redondo, cuadrado, alargado.",
+      "Paragonare: se parece a una cuchara, es como una caja pero más pequeña."
+     ],
+     "q": "Puoi descrivere un attrezzo strano da cucina così indovino cos'è?",
+     "c": "Scegli tre oggetti di casa e descrivili senza dire il loro nome."
+    },
+    "pt": {
+     "t": "Descrever objetos sem saber o nome",
+     "g": "Contornas uma palavra que não sabes para te fazeres entender.",
+     "p": [
+      "Função: es una cosa que sirve para cortar, se usa para limpiar.",
+      "Material e forma: es de metal, de plástico, de madera; es redondo, cuadrado, alargado.",
+      "Comparar: se parece a una cuchara, es como una caja pero más pequeña."
+     ],
+     "q": "Consegues descrever um utensílio de cozinha estranho para eu adivinhar o que é?",
+     "c": "Escolhe três objetos de casa e descreve cada um sem dizer o nome."
+    },
+    "pt_BR": {
+     "t": "Descrever objetos sem saber o nome",
+     "g": "Contorne uma palavra que você não sabe para se fazer entender.",
+     "p": [
+      "Função: es una cosa que sirve para cortar, se usa para limpiar.",
+      "Material e forma: es de metal, de plástico, de madera; es redondo, cuadrado, alargado.",
+      "Comparar: se parece a una cuchara, es como una caja pero más pequeña."
+     ],
+     "q": "Você consegue descrever um utensílio de cozinha estranho para eu adivinhar o que é?",
+     "c": "Escolha três objetos de casa e descreva cada um sem dizer o nome."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "es una cosa que sirve para",
+      "ex": "Es una cosa que sirve para abrir botellas."
+     },
+     {
+      "w": "es de metal",
+      "ex": "Es pequeño y es de metal."
+     },
+     {
+      "w": "se parece a",
+      "ex": "Se parece a una cuchara, pero más grande."
+     },
+     {
+      "w": "se usa para",
+      "ex": "Se usa para colgar la ropa."
+     },
+     {
+      "w": "es redondo, redonda",
+      "ex": "Es redondo y bastante pesado."
+     },
+     {
+      "w": "¿cómo se llama...?",
+      "ex": "¿Cómo se llama eso que se pone en la puerta?"
+     }
+    ],
+    "gram": "Para describir algo sin saber su nombre: es una cosa que sirve para + infinitivo, es de + material, se parece a + nombre."
+   }
+  },
+  {
+   "d": 133,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Soler: usual habits",
+     "g": "Say what you usually do with soler + infinitive.",
+     "p": [
+      "Soler changes o to ue: suelo, sueles, suele, solemos, soléis, suelen.",
+      "Always followed by an infinitive: suelo leer antes de dormir, ¿sueles cocinar?",
+      "Mix with frequency words: normalmente, a menudo, de vez en cuando, casi nunca."
+     ],
+     "q": "What do you usually do on Sunday mornings? Use suelo.",
+     "c": "Write five sentences about your habits, three with soler and two with frequency words."
+    },
+    "de": {
+     "t": "Soler: Gewohnheiten",
+     "g": "Du sagst mit soler + Infinitiv, was du normalerweise tust.",
+     "p": [
+      "Soler wechselt o zu ue: suelo, sueles, suele, solemos, soléis, suelen.",
+      "Immer mit Infinitiv: suelo leer antes de dormir, ¿sueles cocinar?",
+      "Kombiniere mit Häufigkeitswörtern: normalmente, a menudo, de vez en cuando, casi nunca."
+     ],
+     "q": "Was machst du normalerweise am Sonntagmorgen? Benutze suelo.",
+     "c": "Schreib fünf Sätze über deine Gewohnheiten, drei mit soler und zwei mit Häufigkeitswörtern."
+    },
+    "es": {
+     "t": "Soler: hábitos",
+     "g": "Di lo que haces normalmente con soler + infinitivo.",
+     "p": [
+      "Soler cambia o por ue: suelo, sueles, suele, solemos, soléis, suelen.",
+      "Siempre va con infinitivo: suelo leer antes de dormir, ¿sueles cocinar?",
+      "Combínalo con frecuencia: normalmente, a menudo, de vez en cuando, casi nunca."
+     ],
+     "q": "¿Qué sueles hacer los domingos por la mañana?",
+     "c": "Escribe cinco frases sobre tus hábitos, tres con soler y dos con expresiones de frecuencia."
+    },
+    "fr": {
+     "t": "Soler : les habitudes",
+     "g": "Dire ce que tu fais d'habitude avec soler + infinitif.",
+     "p": [
+      "Soler change o en ue : suelo, sueles, suele, solemos, soléis, suelen.",
+      "Toujours suivi d'un infinitif : suelo leer antes de dormir, ¿sueles cocinar?",
+      "Avec des mots de fréquence : normalmente, a menudo, de vez en cuando, casi nunca."
+     ],
+     "q": "Que fais-tu d'habitude le dimanche matin ? Utilise suelo.",
+     "c": "Écris cinq phrases sur tes habitudes, trois avec soler et deux avec des mots de fréquence."
+    },
+    "it": {
+     "t": "Soler: le abitudini",
+     "g": "Dici cosa fai di solito con soler + infinito.",
+     "p": [
+      "Soler cambia o in ue: suelo, sueles, suele, solemos, soléis, suelen.",
+      "Sempre con l'infinito, come solere: suelo leer antes de dormir, ¿sueles cocinar?",
+      "Con le parole di frequenza: normalmente, a menudo, de vez en cuando, casi nunca."
+     ],
+     "q": "Cosa fai di solito la domenica mattina? Usa suelo.",
+     "c": "Scrivi cinque frasi sulle tue abitudini, tre con soler e due con parole di frequenza."
+    },
+    "pt": {
+     "t": "Soler: hábitos",
+     "g": "Dizes o que costumas fazer com soler + infinitivo.",
+     "p": [
+      "Soler muda o para ue: suelo, sueles, suele, solemos, soléis, suelen.",
+      "Vem sempre com infinitivo, como costumar: suelo leer antes de dormir, ¿sueles cocinar?",
+      "Junta palavras de frequência: normalmente, a menudo, de vez en cuando, casi nunca."
+     ],
+     "q": "O que costumas fazer ao domingo de manhã? Usa suelo.",
+     "c": "Escreve cinco frases sobre os teus hábitos, três com soler e duas com palavras de frequência."
+    },
+    "pt_BR": {
+     "t": "Soler: hábitos",
+     "g": "Diga o que você costuma fazer com soler + infinitivo.",
+     "p": [
+      "Soler muda o para ue: suelo, sueles, suele, solemos, soléis, suelen.",
+      "Vem sempre com infinitivo, como costumar: suelo leer antes de dormir, ¿sueles cocinar?",
+      "Junte palavras de frequência: normalmente, a menudo, de vez en cuando, casi nunca."
+     ],
+     "q": "O que você costuma fazer no domingo de manhã? Use suelo.",
+     "c": "Escreva cinco frases sobre seus hábitos, três com soler e duas com palavras de frequência."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "soler",
+      "ex": "Suelo levantarme temprano."
+     },
+     {
+      "w": "suelo + infinitivo",
+      "ex": "Suelo comer en casa los lunes."
+     },
+     {
+      "w": "¿sueles...?",
+      "ex": "¿Sueles ir al gimnasio?"
+     },
+     {
+      "w": "normalmente",
+      "ex": "Normalmente ceno a las nueve."
+     },
+     {
+      "w": "a menudo",
+      "ex": "Vamos al cine a menudo."
+     },
+     {
+      "w": "de vez en cuando",
+      "ex": "De vez en cuando como sushi."
+     }
+    ],
+    "gram": "Soler (o-ue) + infinitivo para hábitos: suelo, sueles, suele, solemos, soléis, suelen. En pasado: solía ir a la playa."
+   }
+  },
+  {
+   "d": 134,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Acabar de, volver a, dejar de",
+     "g": "Use three handy verb phrases for recent actions, repetition and stopping.",
+     "p": [
+      "Acabar de = just did: acabo de comer (I have just eaten).",
+      "Volver a = again: vuelvo a llamar (I call again). Dejar de = stop: dejé de fumar.",
+      "Related: empezar a (start), seguir + gerund (still): sigo trabajando aquí."
+     ],
+     "q": "What is something you stopped doing, and something you want to do again?",
+     "c": "Write one true sentence each with acabar de, volver a, dejar de and empezar a."
+    },
+    "de": {
+     "t": "Acabar de, volver a, dejar de",
+     "g": "Du nutzt drei praktische Verbformen für gerade Geschehenes, Wiederholung und Aufhören.",
+     "p": [
+      "Acabar de = gerade: acabo de comer (ich habe gerade gegessen).",
+      "Volver a = wieder: vuelvo a llamar. Dejar de = aufhören: dejé de fumar.",
+      "Dazu: empezar a (anfangen), seguir + Gerundium (immer noch): sigo trabajando aquí."
+     ],
+     "q": "Womit hast du aufgehört, und was möchtest du wieder machen?",
+     "c": "Schreib je einen wahren Satz mit acabar de, volver a, dejar de und empezar a."
+    },
+    "es": {
+     "t": "Acabar de, volver a, dejar de",
+     "g": "Usa tres perífrasis muy útiles: lo reciente, la repetición y el abandono.",
+     "p": [
+      "Acabar de indica algo muy reciente: acabo de comer, acaba de salir.",
+      "Volver a es hacer otra vez: vuelvo a llamar. Dejar de es parar: dejé de fumar.",
+      "Relacionadas: empezar a, seguir + gerundio: sigo trabajando aquí."
+     ],
+     "q": "¿Qué has dejado de hacer y qué te gustaría volver a hacer?",
+     "c": "Escribe una frase verdadera con acabar de, volver a, dejar de y empezar a."
+    },
+    "fr": {
+     "t": "Acabar de, volver a, dejar de",
+     "g": "Utiliser trois tournures pratiques : action récente, répétition et arrêt.",
+     "p": [
+      "Acabar de = venir de : acabo de comer (je viens de manger).",
+      "Volver a = à nouveau : vuelvo a llamar. Dejar de = arrêter de : dejé de fumar.",
+      "Aussi : empezar a (commencer à), seguir + gérondif (toujours) : sigo trabajando aquí."
+     ],
+     "q": "Qu'as-tu arrêté de faire, et que voudrais-tu refaire ?",
+     "c": "Écris une phrase vraie avec acabar de, volver a, dejar de et empezar a."
+    },
+    "it": {
+     "t": "Acabar de, volver a, dejar de",
+     "g": "Usi tre perifrasi utili: azione appena fatta, ripetizione e smettere.",
+     "p": [
+      "Acabar de = aver appena: acabo de comer (ho appena mangiato).",
+      "Volver a = di nuovo: vuelvo a llamar. Dejar de = smettere di: dejé de fumar.",
+      "Anche: empezar a (cominciare a), seguir + gerundio (ancora): sigo trabajando aquí."
+     ],
+     "q": "Cosa hai smesso di fare e cosa vorresti tornare a fare?",
+     "c": "Scrivi una frase vera con acabar de, volver a, dejar de ed empezar a."
+    },
+    "pt": {
+     "t": "Acabar de, volver a, dejar de",
+     "g": "Usas três perífrases úteis: ação recente, repetição e deixar de fazer.",
+     "p": [
+      "Acabar de = acabar de: acabo de comer (acabei de comer).",
+      "Volver a = voltar a: vuelvo a llamar. Dejar de = deixar de: dejé de fumar.",
+      "Também: empezar a (começar a), seguir + gerúndio (continuar a): sigo trabajando aquí."
+     ],
+     "q": "O que deixaste de fazer e o que gostavas de voltar a fazer?",
+     "c": "Escreve uma frase verdadeira com acabar de, volver a, dejar de e empezar a."
+    },
+    "pt_BR": {
+     "t": "Acabar de, volver a, dejar de",
+     "g": "Use três perífrases úteis: ação recente, repetição e parar de fazer.",
+     "p": [
+      "Acabar de = acabar de: acabo de comer (acabei de comer).",
+      "Volver a = voltar a: vuelvo a llamar. Dejar de = parar de: dejé de fumar.",
+      "Também: empezar a (começar a), seguir + gerúndio (continuar): sigo trabajando aquí."
+     ],
+     "q": "O que você parou de fazer e o que gostaria de voltar a fazer?",
+     "c": "Escreva uma frase verdadeira com acabar de, volver a, dejar de e empezar a."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "acabar de",
+      "ex": "Acabo de llegar a casa."
+     },
+     {
+      "w": "volver a",
+      "ex": "Vuelvo a intentarlo mañana."
+     },
+     {
+      "w": "dejar de",
+      "ex": "Dejé de ver la tele por las noches."
+     },
+     {
+      "w": "empezar a",
+      "ex": "Empecé a estudiar español el año pasado."
+     },
+     {
+      "w": "seguir + gerundio",
+      "ex": "Sigo viviendo en el mismo barrio."
+     },
+     {
+      "w": "tener que",
+      "ex": "Tengo que dejar de comer tanto azúcar."
+     }
+    ],
+    "gram": "Perífrasis: acabar de + infinitivo (algo muy reciente), volver a + infinitivo (otra vez), dejar de + infinitivo (ya no)."
+   }
+  },
+  {
+   "d": 135,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Llevar + gerund",
+     "g": "Say how long you have been doing something that is still going on.",
+     "p": [
+      "Llevar + time + gerund: llevo dos años estudiando español (I have been studying for two years).",
+      "Ask: ¿Cuánto tiempo llevas viviendo aquí? Other ways: desde hace tres años, hace un mes que...",
+      "Negative with sin: llevo una semana sin ver la tele."
+     ],
+     "q": "How long have you been learning Spanish, and how long have you lived where you live?",
+     "c": "Write four sentences with llevar + gerund about your life, and one with llevar sin."
+    },
+    "de": {
+     "t": "Llevar + Gerundium",
+     "g": "Du sagst, wie lange du etwas schon machst, das noch andauert.",
+     "p": [
+      "Llevar + Zeit + Gerundium: llevo dos años estudiando español (ich lerne seit zwei Jahren).",
+      "Fragen: ¿Cuánto tiempo llevas viviendo aquí? Alternativen: desde hace tres años, hace un mes que...",
+      "Verneint mit sin: llevo una semana sin ver la tele."
+     ],
+     "q": "Wie lange lernst du schon Spanisch, und wie lange wohnst du schon dort?",
+     "c": "Schreib vier Sätze mit llevar + Gerundium über dein Leben und einen mit llevar sin."
+    },
+    "es": {
+     "t": "Llevar + gerundio",
+     "g": "Di cuánto tiempo llevas haciendo algo que todavía continúa.",
+     "p": [
+      "Llevar + tiempo + gerundio: llevo dos años estudiando español.",
+      "Pregunta: ¿Cuánto tiempo llevas viviendo aquí? Otras formas: desde hace tres años, hace un mes que...",
+      "En negativo con sin: llevo una semana sin ver la tele."
+     ],
+     "q": "¿Cuánto tiempo llevas estudiando español y viviendo donde vives?",
+     "c": "Escribe cuatro frases con llevar + gerundio sobre tu vida y una con llevar sin."
+    },
+    "fr": {
+     "t": "Llevar + gérondif",
+     "g": "Dire depuis combien de temps tu fais quelque chose qui continue.",
+     "p": [
+      "Llevar + durée + gérondif : llevo dos años estudiando español (j'étudie depuis deux ans).",
+      "Demander : ¿Cuánto tiempo llevas viviendo aquí? Aussi : desde hace tres años, hace un mes que...",
+      "Au négatif avec sin : llevo una semana sin ver la tele."
+     ],
+     "q": "Depuis combien de temps apprends-tu l'espagnol, et habites-tu là où tu vis ?",
+     "c": "Écris quatre phrases avec llevar + gérondif sur ta vie et une avec llevar sin."
+    },
+    "it": {
+     "t": "Llevar + gerundio",
+     "g": "Dici da quanto tempo fai qualcosa che continua ancora.",
+     "p": [
+      "Llevar + tempo + gerundio: llevo dos años estudiando español (studio da due anni).",
+      "Chiedere: ¿Cuánto tiempo llevas viviendo aquí? Anche: desde hace tres años, hace un mes que...",
+      "Al negativo con sin: llevo una semana sin ver la tele."
+     ],
+     "q": "Da quanto tempo studi spagnolo e da quanto vivi dove vivi?",
+     "c": "Scrivi quattro frasi con llevar + gerundio sulla tua vita e una con llevar sin."
+    },
+    "pt": {
+     "t": "Llevar + gerúndio",
+     "g": "Dizes há quanto tempo fazes algo que ainda continua.",
+     "p": [
+      "Llevar + tempo + gerúndio: llevo dos años estudiando español (estudo há dois anos).",
+      "Perguntar: ¿Cuánto tiempo llevas viviendo aquí? Também: desde hace tres años, hace un mes que...",
+      "Na negativa com sin: llevo una semana sin ver la tele."
+     ],
+     "q": "Há quanto tempo estudas espanhol e vives onde vives?",
+     "c": "Escreve quatro frases com llevar + gerúndio sobre a tua vida e uma com llevar sin."
+    },
+    "pt_BR": {
+     "t": "Llevar + gerúndio",
+     "g": "Diga há quanto tempo você faz algo que ainda continua.",
+     "p": [
+      "Llevar + tempo + gerúndio: llevo dos años estudiando español (estudo há dois anos).",
+      "Perguntar: ¿Cuánto tiempo llevas viviendo aquí? Também: desde hace tres años, hace un mes que...",
+      "Na negativa com sin: llevo una semana sin ver la tele."
+     ],
+     "q": "Há quanto tempo você estuda espanhol e mora onde mora?",
+     "c": "Escreva quatro frases com llevar + gerúndio sobre a sua vida e uma com llevar sin."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "llevar + tiempo + gerundio",
+      "ex": "Llevo dos años estudiando español."
+     },
+     {
+      "w": "¿cuánto tiempo llevas...?",
+      "ex": "¿Cuánto tiempo llevas viviendo aquí?"
+     },
+     {
+      "w": "desde hace",
+      "ex": "Vivo en Madrid desde hace tres años."
+     },
+     {
+      "w": "hace + tiempo + que",
+      "ex": "Hace un mes que trabajo aquí."
+     },
+     {
+      "w": "llevar sin + infinitivo",
+      "ex": "Llevo una semana sin ver a mis padres."
+     },
+     {
+      "w": "todavía",
+      "ex": "Todavía estoy aprendiendo."
+     }
+    ],
+    "gram": "Llevar + tiempo + gerundio expresa la duración de algo que continúa: llevo tres meses trabajando aquí. Negativo: llevo un mes sin fumar."
+   }
+  },
+  {
+   "d": 136,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Estar + participle",
+     "g": "Describe states and the results of actions with estar + participle.",
+     "p": [
+      "The participle works like an adjective and agrees: la puerta está abierta, las tiendas están cerradas.",
+      "It shows the result of an action: he roto el vaso, now el vaso está roto.",
+      "Irregular participles: abierto, roto, hecho, escrito, puesto, muerto."
+     ],
+     "q": "Look around you: what is open, closed, broken or turned on right now?",
+     "c": "Describe your room in five sentences using estar + participle."
+    },
+    "de": {
+     "t": "Estar + Partizip",
+     "g": "Du beschreibst Zustände und Ergebnisse mit estar + Partizip.",
+     "p": [
+      "Das Partizip wirkt wie ein Adjektiv und wird angeglichen: la puerta está abierta, las tiendas están cerradas.",
+      "Es zeigt das Ergebnis: he roto el vaso, jetzt el vaso está roto.",
+      "Unregelmäßige Partizipien: abierto, roto, hecho, escrito, puesto, muerto."
+     ],
+     "q": "Schau dich um: Was ist gerade offen, geschlossen, kaputt oder an?",
+     "c": "Beschreib dein Zimmer in fünf Sätzen mit estar + Partizip."
+    },
+    "es": {
+     "t": "Estar + participio",
+     "g": "Describe estados y resultados de acciones con estar + participio.",
+     "p": [
+      "El participio funciona como un adjetivo y concuerda: la puerta está abierta, las tiendas están cerradas.",
+      "Muestra el resultado de una acción: he roto el vaso y ahora el vaso está roto.",
+      "Participios irregulares: abierto, roto, hecho, escrito, puesto, muerto."
+     ],
+     "q": "Mira a tu alrededor: ¿qué está abierto, cerrado, roto o encendido ahora?",
+     "c": "Describe tu habitación en cinco frases con estar + participio."
+    },
+    "fr": {
+     "t": "Estar + participe",
+     "g": "Décrire des états et des résultats avec estar + participe passé.",
+     "p": [
+      "Le participe agit comme un adjectif et s'accorde : la puerta está abierta, las tiendas están cerradas.",
+      "Il montre le résultat : he roto el vaso, donc el vaso está roto.",
+      "Participes irréguliers : abierto, roto, hecho, escrito, puesto, muerto."
+     ],
+     "q": "Regarde autour de toi : qu'est-ce qui est ouvert, fermé, cassé ou allumé ?",
+     "c": "Décris ta chambre en cinq phrases avec estar + participe."
+    },
+    "it": {
+     "t": "Estar + participio",
+     "g": "Descrivi stati e risultati di azioni con estar + participio.",
+     "p": [
+      "Il participio funziona come un aggettivo e concorda: la puerta está abierta, las tiendas están cerradas.",
+      "Mostra il risultato: he roto el vaso, quindi el vaso está roto.",
+      "Participi irregolari: abierto, roto, hecho, escrito, puesto, muerto."
+     ],
+     "q": "Guardati intorno: cosa è aperto, chiuso, rotto o acceso adesso?",
+     "c": "Descrivi la tua stanza in cinque frasi con estar + participio."
+    },
+    "pt": {
+     "t": "Estar + particípio",
+     "g": "Descreves estados e resultados de ações com estar + particípio.",
+     "p": [
+      "O particípio funciona como adjetivo e concorda: la puerta está abierta, las tiendas están cerradas.",
+      "Mostra o resultado: he roto el vaso, por isso el vaso está roto.",
+      "Particípios irregulares: abierto, roto, hecho, escrito, puesto, muerto."
+     ],
+     "q": "Olha à tua volta: o que está aberto, fechado, partido ou ligado agora?",
+     "c": "Descreve o teu quarto em cinco frases com estar + particípio."
+    },
+    "pt_BR": {
+     "t": "Estar + particípio",
+     "g": "Descreva estados e resultados de ações com estar + particípio.",
+     "p": [
+      "O particípio funciona como adjetivo e concorda: la puerta está abierta, las tiendas están cerradas.",
+      "Mostra o resultado: he roto el vaso, então el vaso está roto.",
+      "Particípios irregulares: abierto, roto, hecho, escrito, puesto, muerto."
+     ],
+     "q": "Olhe ao seu redor: o que está aberto, fechado, quebrado ou ligado agora?",
+     "c": "Descreva o seu quarto em cinco frases com estar + particípio."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "estar abierto, abierta",
+      "ex": "La farmacia está abierta hasta las diez."
+     },
+     {
+      "w": "estar cerrado, cerrada",
+      "ex": "El museo está cerrado los lunes."
+     },
+     {
+      "w": "estar cansado, cansada",
+      "ex": "Hoy estoy muy cansada."
+     },
+     {
+      "w": "estar roto, rota",
+      "ex": "La lavadora está rota."
+     },
+     {
+      "w": "estar sentado, sentada",
+      "ex": "Mi abuelo está sentado en el sofá."
+     },
+     {
+      "w": "estar hecho, hecha",
+      "ex": "La cama ya está hecha."
+     }
+    ],
+    "gram": "Estar + participio para estados y resultados. Concuerda: la puerta está abierta, los platos están lavados. Irregulares: roto, hecho."
+   }
+  },
+  {
+   "d": 137,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Weather forecasts",
+     "g": "Understand and give a simple weather forecast in Spanish.",
+     "p": [
+      "Forecasts use the simple future: lloverá, estará nublado, habrá tormenta, hará calor.",
+      "Key words: nublado, despejado, chubascos, niebla, viento, grados, máxima, mínima.",
+      "Changes: subirán las temperaturas, bajarán, se esperan lluvias en el norte."
+     ],
+     "q": "What will the weather be like tomorrow where you live?",
+     "c": "Write tomorrow's forecast for your city in four sentences using the future."
+    },
+    "de": {
+     "t": "Wettervorhersage",
+     "g": "Du verstehst eine einfache Wettervorhersage und gibst selbst eine.",
+     "p": [
+      "Vorhersagen nutzen das Futur: lloverá, estará nublado, habrá tormenta, hará calor.",
+      "Wichtige Wörter: nublado, despejado, chubascos, niebla, viento, grados, máxima, mínima.",
+      "Veränderungen: subirán las temperaturas, bajarán, se esperan lluvias en el norte."
+     ],
+     "q": "Wie wird das Wetter morgen bei dir?",
+     "c": "Schreib die Vorhersage für morgen in deiner Stadt in vier Sätzen mit dem Futur."
+    },
+    "es": {
+     "t": "El pronóstico del tiempo",
+     "g": "Entiende y da un pronóstico del tiempo sencillo.",
+     "p": [
+      "El pronóstico usa el futuro: lloverá, estará nublado, habrá tormenta, hará calor.",
+      "Palabras clave: nublado, despejado, chubascos, niebla, viento, grados, máxima, mínima.",
+      "Cambios: subirán las temperaturas, bajarán, se esperan lluvias en el norte."
+     ],
+     "q": "¿Qué tiempo hará mañana donde vives?",
+     "c": "Escribe el pronóstico de mañana para tu ciudad en cuatro frases con el futuro."
+    },
+    "fr": {
+     "t": "La météo",
+     "g": "Comprendre et donner une prévision météo simple en espagnol.",
+     "p": [
+      "La météo utilise le futur : lloverá, estará nublado, habrá tormenta, hará calor.",
+      "Mots clés : nublado, despejado, chubascos, niebla, viento, grados, máxima, mínima.",
+      "Changements : subirán las temperaturas, bajarán, se esperan lluvias en el norte."
+     ],
+     "q": "Quel temps fera-t-il demain chez toi ?",
+     "c": "Écris la météo de demain pour ta ville en quatre phrases au futur."
+    },
+    "it": {
+     "t": "Le previsioni del tempo",
+     "g": "Capisci e dai previsioni del tempo semplici in spagnolo.",
+     "p": [
+      "Le previsioni usano il futuro: lloverá, estará nublado, habrá tormenta, hará calor.",
+      "Parole chiave: nublado, despejado, chubascos, niebla, viento, grados, máxima, mínima.",
+      "Cambiamenti: subirán las temperaturas, bajarán, se esperan lluvias en el norte."
+     ],
+     "q": "Che tempo farà domani dove vivi?",
+     "c": "Scrivi le previsioni di domani per la tua città in quattro frasi al futuro."
+    },
+    "pt": {
+     "t": "A previsão do tempo",
+     "g": "Percebes e dás uma previsão do tempo simples em espanhol.",
+     "p": [
+      "A previsão usa o futuro: lloverá, estará nublado, habrá tormenta, hará calor.",
+      "Palavras-chave: nublado, despejado, chubascos, niebla, viento, grados, máxima, mínima.",
+      "Mudanças: subirán las temperaturas, bajarán, se esperan lluvias en el norte."
+     ],
+     "q": "Como vai estar o tempo amanhã onde vives?",
+     "c": "Escreve a previsão de amanhã para a tua cidade em quatro frases com o futuro."
+    },
+    "pt_BR": {
+     "t": "A previsão do tempo",
+     "g": "Entenda e dê uma previsão do tempo simples em espanhol.",
+     "p": [
+      "A previsão usa o futuro: lloverá, estará nublado, habrá tormenta, hará calor.",
+      "Palavras-chave: nublado, despejado, chubascos, niebla, viento, grados, máxima, mínima.",
+      "Mudanças: subirán las temperaturas, bajarán, se esperan lluvias en el norte."
+     ],
+     "q": "Como vai estar o tempo amanhã onde você mora?",
+     "c": "Escreva a previsão de amanhã para a sua cidade em quatro frases com o futuro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "nublado",
+      "ex": "Mañana estará nublado en el norte."
+     },
+     {
+      "w": "los chubascos",
+      "ex": "Se esperan chubascos por la tarde."
+     },
+     {
+      "w": "el viento",
+      "ex": "Habrá viento fuerte en la costa."
+     },
+     {
+      "w": "subirán las temperaturas",
+      "ex": "El fin de semana subirán las temperaturas."
+     },
+     {
+      "w": "despejado",
+      "ex": "El cielo estará despejado todo el día."
+     },
+     {
+      "w": "la tormenta",
+      "ex": "Esta noche puede haber tormenta."
+     }
+    ],
+    "gram": "El futuro simple en el pronóstico: estará nublado, lloverá, habrá viento, subirán las temperaturas. Se forma con infinitivo + é, ás, á, án."
+   }
+  },
+  {
+   "d": 138,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Holidays and packing",
+     "g": "Talk about trips and what you need to pack.",
+     "p": [
+      "Packing words: la maleta, la mochila, el pasaporte, el cargador, el protector solar, el bañador.",
+      "Hacer la maleta means to pack. Ask: ¿Has metido el cargador?",
+      "Plans and reminders: voy a llevar..., hay que llevar..., no te olvides del pasaporte."
+     ],
+     "q": "What are the three things you always pack, no matter where you go?",
+     "c": "Write a packing list for a beach weekend and one for a ski trip, five items each."
+    },
+    "de": {
+     "t": "Urlaub und Kofferpacken",
+     "g": "Du sprichst über Reisen und was du einpacken musst.",
+     "p": [
+      "Packwörter: la maleta, la mochila, el pasaporte, el cargador, el protector solar, el bañador.",
+      "Hacer la maleta heißt Koffer packen. Frag: ¿Has metido el cargador?",
+      "Pläne und Erinnerungen: voy a llevar..., hay que llevar..., no te olvides del pasaporte."
+     ],
+     "q": "Welche drei Dinge packst du immer ein, egal wohin du fährst?",
+     "c": "Schreib eine Packliste für ein Strandwochenende und eine für einen Skiurlaub, je fünf Dinge."
+    },
+    "es": {
+     "t": "Vacaciones y maletas",
+     "g": "Habla de viajes y de lo que hay que meter en la maleta.",
+     "p": [
+      "Para el equipaje: la maleta, la mochila, el pasaporte, el cargador, el protector solar, el bañador.",
+      "Hacer la maleta es prepararla. Pregunta: ¿Has metido el cargador?",
+      "Planes y recordatorios: voy a llevar..., hay que llevar..., no te olvides del pasaporte."
+     ],
+     "q": "¿Cuáles son las tres cosas que siempre metes en la maleta, vayas donde vayas?",
+     "c": "Escribe una lista para un fin de semana de playa y otra para esquiar, con cinco cosas cada una."
+    },
+    "fr": {
+     "t": "Vacances et valise",
+     "g": "Parler de voyages et de ce qu'il faut mettre dans sa valise.",
+     "p": [
+      "Vocabulaire : la maleta, la mochila, el pasaporte, el cargador, el protector solar, el bañador.",
+      "Hacer la maleta veut dire faire sa valise. Demande : ¿Has metido el cargador?",
+      "Projets et rappels : voy a llevar..., hay que llevar..., no te olvides del pasaporte."
+     ],
+     "q": "Quelles sont les trois choses que tu emportes toujours, où que tu ailles ?",
+     "c": "Écris une liste pour un week-end à la plage et une pour le ski, cinq objets chacune."
+    },
+    "it": {
+     "t": "Vacanze e valigia",
+     "g": "Parli di viaggi e di cosa mettere in valigia.",
+     "p": [
+      "Parole utili: la maleta, la mochila, el pasaporte, el cargador, el protector solar, el bañador.",
+      "Hacer la maleta significa fare la valigia. Chiedi: ¿Has metido el cargador?",
+      "Piani e promemoria: voy a llevar..., hay que llevar..., no te olvides del pasaporte."
+     ],
+     "q": "Quali sono le tre cose che metti sempre in valigia, ovunque tu vada?",
+     "c": "Scrivi una lista per un weekend al mare e una per la montagna, cinque cose ciascuna."
+    },
+    "pt": {
+     "t": "Férias e malas",
+     "g": "Falas de viagens e do que tens de levar na mala.",
+     "p": [
+      "Palavras úteis: la maleta, la mochila, el pasaporte, el cargador, el protector solar, el bañador.",
+      "Hacer la maleta é fazer a mala. Pergunta: ¿Has metido el cargador?",
+      "Planos e lembretes: voy a llevar..., hay que llevar..., no te olvides del pasaporte."
+     ],
+     "q": "Quais são as três coisas que levas sempre, vás para onde fores?",
+     "c": "Escreve uma lista para um fim de semana na praia e outra para a neve, com cinco coisas cada."
+    },
+    "pt_BR": {
+     "t": "Férias e malas",
+     "g": "Fale de viagens e do que você precisa levar na mala.",
+     "p": [
+      "Palavras úteis: la maleta, la mochila, el pasaporte, el cargador, el protector solar, el bañador.",
+      "Hacer la maleta é fazer a mala. Pergunte: ¿Has metido el cargador?",
+      "Planos e lembretes: voy a llevar..., hay que llevar..., no te olvides del pasaporte."
+     ],
+     "q": "Quais são as três coisas que você sempre leva, aonde quer que vá?",
+     "c": "Escreva uma lista para um fim de semana na praia e outra para a neve, com cinco itens cada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la maleta",
+      "ex": "Ya tengo la maleta hecha."
+     },
+     {
+      "w": "el pasaporte",
+      "ex": "No te olvides el pasaporte."
+     },
+     {
+      "w": "el protector solar",
+      "ex": "Lleva protector solar, hace mucho sol."
+     },
+     {
+      "w": "el cargador",
+      "ex": "¿Has metido el cargador del móvil?"
+     },
+     {
+      "w": "el bañador",
+      "ex": "Necesito un bañador nuevo para la playa."
+     },
+     {
+      "w": "hacer la maleta",
+      "ex": "Siempre hago la maleta la noche antes."
+     }
+    ],
+    "gram": "Planes: ir a + infinitivo (voy a llevar el bañador). Lo necesario: hay que llevar, necesito, no te olvides de + nombre o infinitivo."
+   }
+  },
+  {
+   "d": 139,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "At the airport",
+     "g": "Get through check-in, security and boarding in Spanish.",
+     "p": [
+      "Check-in: facturar la maleta, la tarjeta de embarque, el equipaje de mano, ventanilla o pasillo.",
+      "Then: el control de seguridad, la puerta de embarque, embarcar, la sala de espera.",
+      "Problems: el vuelo tiene retraso, está cancelado, ¿por qué puerta sale el vuelo?"
+     ],
+     "q": "What is your best or worst airport story?",
+     "c": "Write a short dialogue at the check-in desk with five lines."
+    },
+    "de": {
+     "t": "Am Flughafen",
+     "g": "Du kommst auf Spanisch durch Check-in, Sicherheitskontrolle und Boarding.",
+     "p": [
+      "Check-in: facturar la maleta, la tarjeta de embarque, el equipaje de mano, ventanilla o pasillo.",
+      "Danach: el control de seguridad, la puerta de embarque, embarcar, la sala de espera.",
+      "Probleme: el vuelo tiene retraso, está cancelado, ¿por qué puerta sale el vuelo?"
+     ],
+     "q": "Was ist deine beste oder schlimmste Flughafengeschichte?",
+     "c": "Schreib einen kurzen Dialog am Check-in-Schalter mit fünf Zeilen."
+    },
+    "es": {
+     "t": "En el aeropuerto",
+     "g": "Pasa la facturación, el control y el embarque en español.",
+     "p": [
+      "Facturación: facturar la maleta, la tarjeta de embarque, el equipaje de mano, ventanilla o pasillo.",
+      "Después: el control de seguridad, la puerta de embarque, embarcar, la sala de espera.",
+      "Problemas: el vuelo tiene retraso, está cancelado, ¿por qué puerta sale el vuelo?"
+     ],
+     "q": "¿Cuál es tu mejor o tu peor historia en un aeropuerto?",
+     "c": "Escribe un diálogo corto en el mostrador de facturación, de cinco líneas."
+    },
+    "fr": {
+     "t": "À l'aéroport",
+     "g": "Passer l'enregistrement, la sécurité et l'embarquement en espagnol.",
+     "p": [
+      "Enregistrement : facturar la maleta, la tarjeta de embarque, el equipaje de mano, ventanilla o pasillo.",
+      "Ensuite : el control de seguridad, la puerta de embarque, embarcar, la sala de espera.",
+      "Problèmes : el vuelo tiene retraso, está cancelado, ¿por qué puerta sale el vuelo?"
+     ],
+     "q": "Quelle est ta meilleure ou ta pire histoire d'aéroport ?",
+     "c": "Écris un court dialogue de cinq répliques au comptoir d'enregistrement."
+    },
+    "it": {
+     "t": "All'aeroporto",
+     "g": "Superi check-in, controlli e imbarco in spagnolo.",
+     "p": [
+      "Check-in: facturar la maleta, la tarjeta de embarque, el equipaje de mano, ventanilla o pasillo.",
+      "Poi: el control de seguridad, la puerta de embarque, embarcar, la sala de espera.",
+      "Problemi: el vuelo tiene retraso, está cancelado, ¿por qué puerta sale el vuelo?"
+     ],
+     "q": "Qual è la tua storia migliore o peggiore in aeroporto?",
+     "c": "Scrivi un breve dialogo di cinque battute al banco del check-in."
+    },
+    "pt": {
+     "t": "No aeroporto",
+     "g": "Passas o check-in, o controlo de segurança e o embarque em espanhol.",
+     "p": [
+      "Check-in: facturar la maleta, la tarjeta de embarque, el equipaje de mano, ventanilla o pasillo.",
+      "Depois: el control de seguridad, la puerta de embarque, embarcar, la sala de espera.",
+      "Problemas: el vuelo tiene retraso, está cancelado, ¿por qué puerta sale el vuelo?"
+     ],
+     "q": "Qual é a tua melhor ou pior história num aeroporto?",
+     "c": "Escreve um diálogo curto de cinco falas no balcão de check-in."
+    },
+    "pt_BR": {
+     "t": "No aeroporto",
+     "g": "Passe pelo check-in, pela segurança e pelo embarque em espanhol.",
+     "p": [
+      "Check-in: facturar la maleta, la tarjeta de embarque, el equipaje de mano, ventanilla o pasillo.",
+      "Depois: el control de seguridad, la puerta de embarque, embarcar, la sala de espera.",
+      "Problemas: el vuelo tiene retraso, está cancelado, ¿por qué puerta sale el vuelo?"
+     ],
+     "q": "Qual é a sua melhor ou pior história em um aeroporto?",
+     "c": "Escreva um diálogo curto de cinco falas no balcão de check-in."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "facturar",
+      "ex": "Tengo que facturar esta maleta."
+     },
+     {
+      "w": "la tarjeta de embarque",
+      "ex": "Aquí tiene su tarjeta de embarque."
+     },
+     {
+      "w": "la puerta de embarque",
+      "ex": "El vuelo sale por la puerta doce."
+     },
+     {
+      "w": "el retraso",
+      "ex": "El vuelo tiene una hora de retraso."
+     },
+     {
+      "w": "el control de seguridad",
+      "ex": "Hay mucha cola en el control de seguridad."
+     },
+     {
+      "w": "el equipaje de mano",
+      "ex": "Solo llevo equipaje de mano."
+     }
+    ],
+    "gram": "Preguntas útiles: ¿Dónde se factura?, ¿Por qué puerta sale el vuelo?, ¿A qué hora embarcamos? El vuelo sale, llega, se retrasa."
+   }
+  },
+  {
+   "d": 140,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: commands, advice and habits",
+     "g": "Bring together commands, pronouns, gustar-type verbs and daily-life words.",
+     "p": [
+      "Commands with pronouns: dímelo, pruébatelo; negative before the verb: no me lo digas.",
+      "Advice: deberías descansar, tienes que probarlo, ¿por qué no vas al médico?",
+      "Habits and likes: suelo cocinar, me encanta el mercado, me molesta el ruido, acabo de llegar."
+     ],
+     "q": "If a friend wants to visit your city, what advice would you give using commands?",
+     "c": "Give a friend five tips for a trip: two commands, one with deberías, one with suelo, one with me encanta."
+    },
+    "de": {
+     "t": "Wiederholung: Befehle, Ratschläge, Gewohnheiten",
+     "g": "Du bringst Imperative, Pronomen, gustar-Verben und Alltagswortschatz zusammen.",
+     "p": [
+      "Imperativ mit Pronomen: dímelo, pruébatelo; verneint davor: no me lo digas.",
+      "Ratschläge: deberías descansar, tienes que probarlo, ¿por qué no vas al médico?",
+      "Gewohnheiten und Vorlieben: suelo cocinar, me encanta el mercado, me molesta el ruido, acabo de llegar."
+     ],
+     "q": "Ein Freund besucht deine Stadt: Welche Tipps gibst du ihm im Imperativ?",
+     "c": "Gib fünf Reisetipps: zwei Imperative, einer mit deberías, einer mit suelo, einer mit me encanta."
+    },
+    "es": {
+     "t": "Repaso: órdenes, consejos y hábitos",
+     "g": "Junta el imperativo, los pronombres, los verbos como gustar y el vocabulario cotidiano.",
+     "p": [
+      "Imperativo con pronombres: dímelo, pruébatelo; en negativo delante: no me lo digas.",
+      "Consejos: deberías descansar, tienes que probarlo, ¿por qué no vas al médico?",
+      "Hábitos y gustos: suelo cocinar, me encanta el mercado, me molesta el ruido, acabo de llegar."
+     ],
+     "q": "Si un amigo quiere visitar tu ciudad, ¿qué consejos le darías con el imperativo?",
+     "c": "Da a un amigo cinco consejos de viaje: dos órdenes, uno con deberías, uno con suelo y uno con me encanta."
+    },
+    "fr": {
+     "t": "Révision : ordres, conseils et habitudes",
+     "g": "Réunir impératif, pronoms, verbes comme gustar et vocabulaire du quotidien.",
+     "p": [
+      "Impératif avec pronoms : dímelo, pruébatelo ; à la forme négative avant : no me lo digas.",
+      "Conseils : deberías descansar, tienes que probarlo, ¿por qué no vas al médico?",
+      "Habitudes et goûts : suelo cocinar, me encanta el mercado, me molesta el ruido, acabo de llegar."
+     ],
+     "q": "Si un ami visite ta ville, quels conseils lui donnes-tu à l'impératif ?",
+     "c": "Donne cinq conseils de voyage : deux ordres, un avec deberías, un avec suelo, un avec me encanta."
+    },
+    "it": {
+     "t": "Ripasso: comandi, consigli e abitudini",
+     "g": "Metti insieme imperativo, pronomi, verbi come gustar e lessico quotidiano.",
+     "p": [
+      "Imperativo con pronomi: dímelo, pruébatelo; al negativo prima: no me lo digas.",
+      "Consigli: deberías descansar, tienes que probarlo, ¿por qué no vas al médico?",
+      "Abitudini e gusti: suelo cocinar, me encanta el mercado, me molesta el ruido, acabo de llegar."
+     ],
+     "q": "Se un amico visita la tua città, che consigli gli dai con l'imperativo?",
+     "c": "Dai cinque consigli di viaggio: due comandi, uno con deberías, uno con suelo e uno con me encanta."
+    },
+    "pt": {
+     "t": "Revisão: ordens, conselhos e hábitos",
+     "g": "Juntas o imperativo, os pronomes, os verbos como gustar e o vocabulário do dia a dia.",
+     "p": [
+      "Imperativo com pronomes: dímelo, pruébatelo; na negativa antes: no me lo digas.",
+      "Conselhos: deberías descansar, tienes que probarlo, ¿por qué no vas al médico?",
+      "Hábitos e gostos: suelo cocinar, me encanta el mercado, me molesta el ruido, acabo de llegar."
+     ],
+     "q": "Se um amigo visitar a tua cidade, que conselhos lhe davas com o imperativo?",
+     "c": "Dá cinco conselhos de viagem: duas ordens, um com deberías, um com suelo e um com me encanta."
+    },
+    "pt_BR": {
+     "t": "Revisão: ordens, conselhos e hábitos",
+     "g": "Junte o imperativo, os pronomes, os verbos como gustar e o vocabulário do dia a dia.",
+     "p": [
+      "Imperativo com pronomes: dímelo, pruébatelo; na negativa antes: no me lo digas.",
+      "Conselhos: deberías descansar, tienes que probarlo, ¿por qué no vas al médico?",
+      "Hábitos e gostos: suelo cocinar, me encanta el mercado, me molesta el ruido, acabo de llegar."
+     ],
+     "q": "Se um amigo visitar a sua cidade, que conselhos você daria com o imperativo?",
+     "c": "Dê cinco dicas de viagem: duas ordens, uma com deberías, uma com suelo e uma com me encanta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¡pruébatelo!",
+      "ex": "¡Pruébatelo, seguro que te queda bien!"
+     },
+     {
+      "w": "no te olvides de",
+      "ex": "No te olvides de llamar a tu madre."
+     },
+     {
+      "w": "deberías",
+      "ex": "Deberías dormir más."
+     },
+     {
+      "w": "me encanta",
+      "ex": "Me encantan los mercados de fruta."
+     },
+     {
+      "w": "suelo",
+      "ex": "Suelo desayunar café con tostadas."
+     },
+     {
+      "w": "acabo de",
+      "ex": "Acabo de terminar los deberes."
+     }
+    ],
+    "gram": "Repaso: imperativo con pronombres (dímelo, no me lo digas), consejos (deberías, tienes que), verbos como gustar y soler + infinitivo."
+   }
+  }
+ ]
+}

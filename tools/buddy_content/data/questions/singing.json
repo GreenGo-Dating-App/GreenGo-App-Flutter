@@ -1,0 +1,1305 @@
+{
+"topic": "singing",
+"questions": [
+{
+"id": "singing-001",
+"lv": "any",
+"i18n": {
+"en": "What is the first song you remember singing as a child?",
+"de": "Welches ist das erste Lied, an das du dich erinnerst, es als Kind gesungen zu haben?",
+"es": "¿Cuál es la primera canción que recuerdas haber cantado de pequeño?",
+"fr": "Quelle est la première chanson que tu te souviens avoir chantée enfant ?",
+"it": "Qual è la prima canzone che ricordi di aver cantato da bambino?",
+"pt": "Qual é a primeira canção de que te lembras de cantar em criança?",
+"pt_BR": "Qual é a primeira música que você se lembra de ter cantado quando criança?"
+}
+},
+{
+"id": "singing-002",
+"lv": "any",
+"i18n": {
+"en": "Which singer's voice do you love the most, and what makes it special to you?",
+"de": "Welche Stimme liebst du am meisten, und was macht sie für dich besonders?",
+"es": "¿Qué voz de cantante te encanta más y qué la hace especial para ti?",
+"fr": "Quelle voix de chanteur ou de chanteuse aimes-tu le plus, et qu'a-t-elle de spécial pour toi ?",
+"it": "Quale voce di cantante ami di più, e cosa la rende speciale per te?",
+"pt": "De que voz de cantor gostas mais, e o que a torna especial para ti?",
+"pt_BR": "De qual voz de cantor você mais gosta, e o que a torna especial pra você?"
+}
+},
+{
+"id": "singing-003",
+"lv": "any",
+"i18n": {
+"en": "Where do you sing most often: shower, car, kitchen or somewhere else?",
+"de": "Wo singst du am häufigsten: unter der Dusche, im Auto, in der Küche oder woanders?",
+"es": "¿Dónde cantas más a menudo: en la ducha, en el coche, en la cocina o en otro sitio?",
+"fr": "Où chantes-tu le plus souvent : sous la douche, en voiture, dans la cuisine ou ailleurs ?",
+"it": "Dove canti più spesso: sotto la doccia, in macchina, in cucina o altrove?",
+"pt": "Onde cantas mais vezes: no duche, no carro, na cozinha ou noutro sítio?",
+"pt_BR": "Onde você canta com mais frequência: no chuveiro, no carro, na cozinha ou em outro lugar?"
+}
+},
+{
+"id": "singing-004",
+"lv": "any",
+"i18n": {
+"en": "What song always puts you in a good mood when you sing it?",
+"de": "Welches Lied hebt deine Laune jedes Mal, wenn du es singst?",
+"es": "¿Qué canción siempre te pone de buen humor cuando la cantas?",
+"fr": "Quelle chanson te met toujours de bonne humeur quand tu la chantes ?",
+"it": "Quale canzone ti mette sempre di buon umore quando la canti?",
+"pt": "Que canção te põe sempre bem-disposto quando a cantas?",
+"pt_BR": "Qual música sempre te deixa de bom humor quando você canta?"
+}
+},
+{
+"id": "singing-005",
+"lv": "any",
+"i18n": {
+"en": "What does singing give you that other hobbies don't?",
+"de": "Was gibt dir das Singen, was andere Hobbys dir nicht geben?",
+"es": "¿Qué te da cantar que no te den otras aficiones?",
+"fr": "Qu'est-ce que le chant t'apporte que les autres loisirs ne t'apportent pas ?",
+"it": "Che cosa ti dà il canto che altri hobby non ti danno?",
+"pt": "O que te dá cantar que outros passatempos não te dão?",
+"pt_BR": "O que cantar te dá que outros hobbies não dão?"
+}
+},
+{
+"id": "singing-006",
+"lv": "any",
+"i18n": {
+"en": "Which music genre would you most like to sing well?",
+"de": "Welches Musikgenre würdest du am liebsten richtig gut singen können?",
+"es": "¿Qué género musical te gustaría más cantar bien?",
+"fr": "Quel genre musical aimerais-tu le plus savoir bien chanter ?",
+"it": "Quale genere musicale ti piacerebbe di più saper cantare bene?",
+"pt": "Que género musical mais gostavas de saber cantar bem?",
+"pt_BR": "Qual gênero musical você mais gostaria de cantar bem?"
+}
+},
+{
+"id": "singing-007",
+"lv": "any",
+"i18n": {
+"en": "Is there a song from your culture you'd love to teach someone from abroad?",
+"de": "Gibt es ein Lied aus deiner Kultur, das du gern jemandem aus dem Ausland beibringen würdest?",
+"es": "¿Hay alguna canción de tu cultura que te encantaría enseñar a alguien de otro país?",
+"fr": "Y a-t-il une chanson de ta culture que tu aimerais apprendre à quelqu'un venu d'ailleurs ?",
+"it": "C'è una canzone della tua cultura che ti piacerebbe insegnare a qualcuno di un altro paese?",
+"pt": "Há alguma canção da tua cultura que gostavas de ensinar a alguém de outro país?",
+"pt_BR": "Tem alguma música da sua cultura que você adoraria ensinar a alguém de outro país?"
+}
+},
+{
+"id": "singing-008",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer singing alone or with other people, and why?",
+"de": "Singst du lieber allein oder mit anderen, und warum?",
+"es": "¿Prefieres cantar solo o con otras personas, y por qué?",
+"fr": "Préfères-tu chanter seul ou avec d'autres, et pourquoi ?",
+"it": "Preferisci cantare da solo o con altre persone, e perché?",
+"pt": "Preferes cantar sozinho ou com outras pessoas, e porquê?",
+"pt_BR": "Você prefere cantar sozinho ou com outras pessoas, e por quê?"
+}
+},
+{
+"id": "singing-009",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite song to sing at karaoke or parties?",
+"de": "Was ist dein Lieblingslied für Karaoke oder Partys?",
+"es": "¿Cuál es tu canción favorita para cantar en el karaoke o en fiestas?",
+"fr": "Quelle est ta chanson préférée à chanter au karaoké ou en soirée ?",
+"it": "Qual è la tua canzone preferita da cantare al karaoke o alle feste?",
+"pt": "Qual é a tua canção preferida para cantar no karaoke ou em festas?",
+"pt_BR": "Qual é sua música favorita pra cantar no karaokê ou em festas?"
+}
+},
+{
+"id": "singing-010",
+"lv": "any",
+"i18n": {
+"en": "How would you describe your voice in three words?",
+"de": "Wie würdest du deine Stimme mit drei Wörtern beschreiben?",
+"es": "¿Cómo describirías tu voz en tres palabras?",
+"fr": "Comment décrirais-tu ta voix en trois mots ?",
+"it": "Come descriveresti la tua voce in tre parole?",
+"pt": "Como descreverias a tua voz em três palavras?",
+"pt_BR": "Como você descreveria sua voz em três palavras?"
+}
+},
+{
+"id": "singing-011",
+"lv": "any",
+"i18n": {
+"en": "Which song do you know every single word of?",
+"de": "Bei welchem Lied kennst du wirklich jedes einzelne Wort?",
+"es": "¿De qué canción te sabes absolutamente toda la letra?",
+"fr": "De quelle chanson connais-tu absolument toutes les paroles ?",
+"it": "Di quale canzone conosci ogni singola parola?",
+"pt": "De que canção sabes a letra toda de cor?",
+"pt_BR": "De qual música você sabe cada palavra da letra?"
+}
+},
+{
+"id": "singing-012",
+"lv": "any",
+"i18n": {
+"en": "What would you love to be able to do with your voice one day?",
+"de": "Was würdest du eines Tages gern mit deiner Stimme können?",
+"es": "¿Qué te encantaría poder hacer con tu voz algún día?",
+"fr": "Qu'aimerais-tu être capable de faire avec ta voix un jour ?",
+"it": "Che cosa ti piacerebbe saper fare con la tua voce un giorno?",
+"pt": "O que gostavas de conseguir fazer com a tua voz um dia?",
+"pt_BR": "O que você adoraria conseguir fazer com a sua voz um dia?"
+}
+},
+{
+"id": "singing-013",
+"lv": "any",
+"i18n": {
+"en": "Have you ever sung in a choir, a band or a school show? How was it?",
+"de": "Hast du schon mal in einem Chor, einer Band oder bei einer Schulaufführung gesungen? Wie war es?",
+"es": "¿Alguna vez has cantado en un coro, una banda o un espectáculo escolar? ¿Qué tal fue?",
+"fr": "As-tu déjà chanté dans une chorale, un groupe ou un spectacle d'école ? C'était comment ?",
+"it": "Hai mai cantato in un coro, una band o uno spettacolo scolastico? Com'è stato?",
+"pt": "Já cantaste num coro, numa banda ou numa festa da escola? Como foi?",
+"pt_BR": "Você já cantou num coral, numa banda ou numa apresentação da escola? Como foi?"
+}
+},
+{
+"id": "singing-014",
+"lv": "any",
+"i18n": {
+"en": "Which song makes you feel nostalgic whenever you sing it?",
+"de": "Welches Lied macht dich nostalgisch, wenn du es singst?",
+"es": "¿Qué canción te pone nostálgico cada vez que la cantas?",
+"fr": "Quelle chanson te rend nostalgique chaque fois que tu la chantes ?",
+"it": "Quale canzone ti fa sentire nostalgico ogni volta che la canti?",
+"pt": "Que canção te deixa nostálgico sempre que a cantas?",
+"pt_BR": "Qual música te deixa nostálgico sempre que você canta?"
+}
+},
+{
+"id": "singing-015",
+"lv": "any",
+"i18n": {
+"en": "Do you sing in more than one language? Which one feels most natural?",
+"de": "Singst du in mehr als einer Sprache? Welche fühlt sich am natürlichsten an?",
+"es": "¿Cantas en más de un idioma? ¿Cuál te resulta más natural?",
+"fr": "Chantes-tu dans plusieurs langues ? Laquelle te semble la plus naturelle ?",
+"it": "Canti in più di una lingua? Quale ti viene più naturale?",
+"pt": "Cantas em mais do que uma língua? Qual te parece mais natural?",
+"pt_BR": "Você canta em mais de um idioma? Qual parece mais natural pra você?"
+}
+},
+{
+"id": "singing-016",
+"lv": "any",
+"i18n": {
+"en": "What kind of music did your family sing or play at home?",
+"de": "Welche Musik wurde bei dir zu Hause gesungen oder gespielt?",
+"es": "¿Qué tipo de música se cantaba o se escuchaba en tu casa?",
+"fr": "Quel genre de musique chantait-on ou écoutait-on chez toi ?",
+"it": "Che tipo di musica si cantava o si ascoltava a casa tua?",
+"pt": "Que tipo de música se cantava ou se ouvia em tua casa?",
+"pt_BR": "Que tipo de música sua família cantava ou ouvia em casa?"
+}
+},
+{
+"id": "singing-017",
+"lv": "any",
+"i18n": {
+"en": "Which live concert would you love to sing along to?",
+"de": "Bei welchem Live-Konzert würdest du gern lauthals mitsingen?",
+"es": "¿En qué concierto en directo te encantaría cantar a pleno pulmón?",
+"fr": "À quel concert aimerais-tu chanter à tue-tête avec la foule ?",
+"it": "A quale concerto dal vivo ti piacerebbe cantare a squarciagola?",
+"pt": "Em que concerto ao vivo adoravas cantar a plenos pulmões?",
+"pt_BR": "Em qual show ao vivo você adoraria cantar junto a plenos pulmões?"
+}
+},
+{
+"id": "singing-018",
+"lv": "any",
+"i18n": {
+"en": "Do you hum or whistle during the day? What tunes pop into your head?",
+"de": "Summst oder pfeifst du tagsüber? Welche Melodien kommen dir in den Sinn?",
+"es": "¿Tarareas o silbas durante el día? ¿Qué melodías se te vienen a la cabeza?",
+"fr": "Fredonnes-tu ou siffles-tu dans la journée ? Quels airs te viennent en tête ?",
+"it": "Canticchi o fischietti durante il giorno? Quali melodie ti vengono in mente?",
+"pt": "Cantarolas ou assobias durante o dia? Que melodias te vêm à cabeça?",
+"pt_BR": "Você cantarola ou assobia durante o dia? Que melodias vêm à sua cabeça?"
+}
+},
+{
+"id": "singing-019",
+"lv": "any",
+"i18n": {
+"en": "What song would you choose as the soundtrack of your life?",
+"de": "Welches Lied würdest du als Soundtrack deines Lebens wählen?",
+"es": "¿Qué canción elegirías como banda sonora de tu vida?",
+"fr": "Quelle chanson choisirais-tu comme bande originale de ta vie ?",
+"it": "Quale canzone sceglieresti come colonna sonora della tua vita?",
+"pt": "Que canção escolherias como banda sonora da tua vida?",
+"pt_BR": "Qual música você escolheria como trilha sonora da sua vida?"
+}
+},
+{
+"id": "singing-020",
+"lv": "any",
+"i18n": {
+"en": "How do you feel right after you finish singing a song you love?",
+"de": "Wie fühlst du dich direkt, nachdem du ein Lied gesungen hast, das du liebst?",
+"es": "¿Cómo te sientes justo después de cantar una canción que te encanta?",
+"fr": "Comment te sens-tu juste après avoir chanté une chanson que tu adores ?",
+"it": "Come ti senti subito dopo aver cantato una canzone che ami?",
+"pt": "Como te sentes logo depois de cantar uma canção de que gostas muito?",
+"pt_BR": "Como você se sente logo depois de cantar uma música que ama?"
+}
+},
+{
+"id": "singing-021",
+"lv": "any",
+"i18n": {
+"en": "Which duet would you love to sing, and with whom?",
+"de": "Welches Duett würdest du gern singen, und mit wem?",
+"es": "¿Qué dueto te encantaría cantar, y con quién?",
+"fr": "Quel duo aimerais-tu chanter, et avec qui ?",
+"it": "Quale duetto ti piacerebbe cantare, e con chi?",
+"pt": "Que dueto gostavas de cantar, e com quem?",
+"pt_BR": "Qual dueto você adoraria cantar, e com quem?"
+}
+},
+{
+"id": "singing-022",
+"lv": "any",
+"i18n": {
+"en": "Are there songs you love listening to but find hard to sing?",
+"de": "Gibt es Lieder, die du gern hörst, aber schwer zu singen findest?",
+"es": "¿Hay canciones que te encanta escuchar pero que te cuesta cantar?",
+"fr": "Y a-t-il des chansons que tu adores écouter mais que tu trouves difficiles à chanter ?",
+"it": "Ci sono canzoni che ami ascoltare ma che trovi difficili da cantare?",
+"pt": "Há canções que adoras ouvir mas que achas difíceis de cantar?",
+"pt_BR": "Tem músicas que você adora ouvir, mas acha difíceis de cantar?"
+}
+},
+{
+"id": "singing-023",
+"lv": "any",
+"i18n": {
+"en": "What is a traditional or folk song from your region that you like?",
+"de": "Welches traditionelle Lied oder Volkslied aus deiner Region magst du?",
+"es": "¿Qué canción tradicional o popular de tu región te gusta?",
+"fr": "Quelle chanson traditionnelle ou populaire de ta région aimes-tu ?",
+"it": "Quale canzone tradizionale o popolare della tua regione ti piace?",
+"pt": "Que canção tradicional ou popular da tua região gostas?",
+"pt_BR": "De qual música tradicional ou folclórica da sua região você gosta?"
+}
+},
+{
+"id": "singing-024",
+"lv": "any",
+"i18n": {
+"en": "Who encouraged you to sing, or who would you like to sing for?",
+"de": "Wer hat dich zum Singen ermutigt, oder für wen würdest du gern singen?",
+"es": "¿Quién te animó a cantar, o para quién te gustaría cantar?",
+"fr": "Qui t'a encouragé à chanter, ou pour qui aimerais-tu chanter ?",
+"it": "Chi ti ha incoraggiato a cantare, o per chi ti piacerebbe cantare?",
+"pt": "Quem te incentivou a cantar, ou para quem gostavas de cantar?",
+"pt_BR": "Quem te incentivou a cantar, ou pra quem você gostaria de cantar?"
+}
+},
+{
+"id": "singing-025",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer upbeat songs or slow ballads to sing?",
+"de": "Singst du lieber flotte Lieder oder langsame Balladen?",
+"es": "¿Prefieres cantar canciones animadas o baladas lentas?",
+"fr": "Préfères-tu chanter des chansons rythmées ou des ballades lentes ?",
+"it": "Preferisci cantare canzoni ritmate o ballate lente?",
+"pt": "Preferes cantar canções animadas ou baladas lentas?",
+"pt_BR": "Você prefere cantar músicas animadas ou baladas lentas?"
+}
+},
+{
+"id": "singing-026",
+"lv": "any",
+"i18n": {
+"en": "Which film or musical has songs you love to sing along to?",
+"de": "Bei welchem Film oder Musical singst du die Lieder am liebsten mit?",
+"es": "¿Qué película o musical tiene canciones que te encanta cantar?",
+"fr": "Quel film ou quelle comédie musicale a des chansons que tu adores chanter ?",
+"it": "Quale film o musical ha canzoni che ami cantare?",
+"pt": "Que filme ou musical tem canções que adoras cantar?",
+"pt_BR": "Qual filme ou musical tem músicas que você adora cantar junto?"
+}
+},
+{
+"id": "singing-027",
+"lv": "any",
+"i18n": {
+"en": "If you could take a singing lesson with any famous singer, who would it be?",
+"de": "Wenn du bei einer berühmten Person Gesangsunterricht nehmen könntest, wer wäre das?",
+"es": "Si pudieras tomar una clase de canto con cualquier cantante famoso, ¿quién sería?",
+"fr": "Si tu pouvais prendre un cours de chant avec n'importe quel chanteur célèbre, qui choisirais-tu ?",
+"it": "Se potessi fare una lezione di canto con un cantante famoso, chi sceglieresti?",
+"pt": "Se pudesses ter uma aula de canto com qualquer cantor famoso, quem seria?",
+"pt_BR": "Se você pudesse ter uma aula de canto com qualquer cantor famoso, quem seria?"
+}
+},
+{
+"id": "singing-028",
+"lv": "any",
+"i18n": {
+"en": "What song from another country surprised you the first time you heard it?",
+"de": "Welches Lied aus einem anderen Land hat dich beim ersten Hören überrascht?",
+"es": "¿Qué canción de otro país te sorprendió la primera vez que la escuchaste?",
+"fr": "Quelle chanson d'un autre pays t'a surpris la première fois que tu l'as entendue ?",
+"it": "Quale canzone di un altro paese ti ha sorpreso la prima volta che l'hai sentita?",
+"pt": "Que canção de outro país te surpreendeu da primeira vez que a ouviste?",
+"pt_BR": "Qual música de outro país te surpreendeu na primeira vez que você ouviu?"
+}
+},
+{
+"id": "singing-029",
+"lv": "any",
+"i18n": {
+"en": "Do you sing more when you're happy, relaxed or busy?",
+"de": "Singst du mehr, wenn du glücklich, entspannt oder beschäftigt bist?",
+"es": "¿Cantas más cuando estás feliz, relajado u ocupado?",
+"fr": "Chantes-tu davantage quand tu es heureux, détendu ou occupé ?",
+"it": "Canti di più quando sei felice, rilassato o indaffarato?",
+"pt": "Cantas mais quando estás feliz, descontraído ou ocupado?",
+"pt_BR": "Você canta mais quando está feliz, relaxado ou ocupado?"
+}
+},
+{
+"id": "singing-030",
+"lv": "any",
+"i18n": {
+"en": "What song lyrics mean a lot to you, and why?",
+"de": "Welcher Liedtext bedeutet dir viel, und warum?",
+"es": "¿Qué letra de canción significa mucho para ti, y por qué?",
+"fr": "Quelles paroles de chanson comptent beaucoup pour toi, et pourquoi ?",
+"it": "Quale testo di una canzone significa molto per te, e perché?",
+"pt": "Que letra de canção significa muito para ti, e porquê?",
+"pt_BR": "Qual letra de música significa muito pra você, e por quê?"
+}
+},
+{
+"id": "singing-031",
+"lv": "any",
+"i18n": {
+"en": "Would you rather sing on a big stage or for a few close friends?",
+"de": "Würdest du lieber auf einer großen Bühne singen oder für ein paar enge Freunde?",
+"es": "¿Preferirías cantar en un gran escenario o para unos pocos amigos cercanos?",
+"fr": "Préférerais-tu chanter sur une grande scène ou pour quelques amis proches ?",
+"it": "Preferiresti cantare su un grande palco o per pochi amici stretti?",
+"pt": "Preferias cantar num grande palco ou para alguns amigos próximos?",
+"pt_BR": "Você preferiria cantar num grande palco ou para alguns amigos próximos?"
+}
+},
+{
+"id": "singing-032",
+"lv": "any",
+"i18n": {
+"en": "Which song would you sing to cheer up a friend?",
+"de": "Welches Lied würdest du singen, um einen Freund aufzumuntern?",
+"es": "¿Qué canción cantarías para animar a un amigo?",
+"fr": "Quelle chanson chanterais-tu pour remonter le moral d'un ami ?",
+"it": "Quale canzone canteresti per tirare su di morale un amico?",
+"pt": "Que canção cantarias para animar um amigo?",
+"pt_BR": "Qual música você cantaria para animar um amigo?"
+}
+},
+{
+"id": "singing-033",
+"lv": "any",
+"i18n": {
+"en": "How does music from your country differ from music you hear abroad?",
+"de": "Wie unterscheidet sich die Musik deines Landes von der Musik, die du im Ausland hörst?",
+"es": "¿En qué se diferencia la música de tu país de la que escuchas en el extranjero?",
+"fr": "En quoi la musique de ton pays diffère-t-elle de celle que tu entends à l'étranger ?",
+"it": "In che cosa la musica del tuo paese è diversa da quella che senti all'estero?",
+"pt": "Em que é que a música do teu país difere da que ouves no estrangeiro?",
+"pt_BR": "Em que a música do seu país é diferente da que você ouve no exterior?"
+}
+},
+{
+"id": "singing-034",
+"lv": "any",
+"i18n": {
+"en": "Is there a song you want to learn to sing perfectly this year?",
+"de": "Gibt es ein Lied, das du perfekt singen lernen möchtest?",
+"es": "¿Hay alguna canción que quieras aprender a cantar a la perfección?",
+"fr": "Y a-t-il une chanson que tu voudrais apprendre à chanter parfaitement ?",
+"it": "C'è una canzone che vuoi imparare a cantare alla perfezione?",
+"pt": "Há alguma canção que queiras aprender a cantar na perfeição?",
+"pt_BR": "Tem alguma música que você queira aprender a cantar com perfeição?"
+}
+},
+{
+"id": "singing-035",
+"lv": "any",
+"i18n": {
+"en": "Do you like singing harmonies, or do you prefer the main melody?",
+"de": "Singst du gern Harmonien, oder bleibst du lieber bei der Hauptmelodie?",
+"es": "¿Te gusta cantar armonías o prefieres la melodía principal?",
+"fr": "Aimes-tu chanter les harmonies, ou préfères-tu la mélodie principale ?",
+"it": "Ti piace cantare le armonie o preferisci la melodia principale?",
+"pt": "Gostas de cantar harmonias ou preferes a melodia principal?",
+"pt_BR": "Você gosta de cantar harmonias ou prefere a melodia principal?"
+}
+},
+{
+"id": "singing-036",
+"lv": "any",
+"i18n": {
+"en": "What is the most memorable live performance you have ever watched?",
+"de": "Was ist der eindrucksvollste Live-Auftritt, den du je gesehen hast?",
+"es": "¿Cuál es la actuación en directo más memorable que has visto?",
+"fr": "Quel est le concert ou spectacle le plus mémorable que tu aies vu ?",
+"it": "Qual è l'esibizione dal vivo più memorabile che tu abbia mai visto?",
+"pt": "Qual é a atuação ao vivo mais memorável que já viste?",
+"pt_BR": "Qual é a apresentação ao vivo mais marcante que você já viu?"
+}
+},
+{
+"id": "singing-037",
+"lv": "any",
+"i18n": {
+"en": "Which song do you think everyone in the world should sing at least once?",
+"de": "Welches Lied sollte deiner Meinung nach jeder Mensch mindestens einmal singen?",
+"es": "¿Qué canción crees que todo el mundo debería cantar al menos una vez?",
+"fr": "Quelle chanson tout le monde devrait-il chanter au moins une fois, selon toi ?",
+"it": "Quale canzone pensi che tutti al mondo dovrebbero cantare almeno una volta?",
+"pt": "Que canção achas que toda a gente devia cantar pelo menos uma vez?",
+"pt_BR": "Qual música você acha que todo mundo deveria cantar pelo menos uma vez?"
+}
+},
+{
+"id": "singing-038",
+"lv": "any",
+"i18n": {
+"en": "Do you have a favourite song for celebrations like birthdays or holidays?",
+"de": "Hast du ein Lieblingslied für Feste wie Geburtstage oder Feiertage?",
+"es": "¿Tienes una canción favorita para celebraciones como cumpleaños o fiestas?",
+"fr": "As-tu une chanson préférée pour les fêtes comme les anniversaires ?",
+"it": "Hai una canzone preferita per le feste, come compleanni o ricorrenze?",
+"pt": "Tens uma canção preferida para celebrações como aniversários ou festas?",
+"pt_BR": "Você tem uma música favorita para comemorações como aniversários ou festas?"
+}
+},
+{
+"id": "singing-039",
+"lv": "any",
+"i18n": {
+"en": "What would your dream singing project look like?",
+"de": "Wie sähe dein Traumprojekt rund ums Singen aus?",
+"es": "¿Cómo sería tu proyecto de canto soñado?",
+"fr": "À quoi ressemblerait ton projet de chant idéal ?",
+"it": "Come sarebbe il tuo progetto di canto dei sogni?",
+"pt": "Como seria o teu projeto de canto de sonho?",
+"pt_BR": "Como seria o seu projeto dos sonhos com canto?"
+}
+},
+{
+"id": "singing-040",
+"lv": "any",
+"i18n": {
+"en": "What is one thing about singing you are curious to learn?",
+"de": "Was möchtest du beim Singen unbedingt noch herausfinden?",
+"es": "¿Qué aspecto del canto tienes curiosidad por aprender?",
+"fr": "Quel aspect du chant as-tu envie de découvrir ?",
+"it": "Qual è un aspetto del canto che sei curioso di imparare?",
+"pt": "Que aspeto do canto tens curiosidade em aprender?",
+"pt_BR": "O que no canto você tem curiosidade de aprender?"
+}
+},
+{
+"id": "singing-041",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually warm up before singing, if at all?",
+"de": "Wie wärmst du dich normalerweise vor dem Singen auf, falls überhaupt?",
+"es": "¿Cómo sueles calentar antes de cantar, si es que lo haces?",
+"fr": "Comment t'échauffes-tu d'habitude avant de chanter, si tu le fais ?",
+"it": "Come ti riscaldi di solito prima di cantare, se lo fai?",
+"pt": "Como costumas aquecer antes de cantar, se é que o fazes?",
+"pt_BR": "Como você costuma aquecer antes de cantar, se é que aquece?"
+}
+},
+{
+"id": "singing-042",
+"lv": "beginner",
+"i18n": {
+"en": "Which notes feel easy for you, and which feel like a stretch?",
+"de": "Welche Töne fallen dir leicht, und welche fühlen sich anstrengend an?",
+"es": "¿Qué notas te resultan fáciles y cuáles te cuestan más?",
+"fr": "Quelles notes te semblent faciles, et lesquelles demandent un effort ?",
+"it": "Quali note ti vengono facili e quali ti sembrano più impegnative?",
+"pt": "Que notas te parecem fáceis e quais te custam mais?",
+"pt_BR": "Quais notas são fáceis pra você e quais parecem mais difíceis?"
+}
+},
+{
+"id": "singing-043",
+"lv": "beginner",
+"i18n": {
+"en": "What did you notice when you first recorded yourself singing?",
+"de": "Was ist dir aufgefallen, als du dich zum ersten Mal beim Singen aufgenommen hast?",
+"es": "¿Qué notaste la primera vez que te grabaste cantando?",
+"fr": "Qu'as-tu remarqué la première fois que tu t'es enregistré en train de chanter ?",
+"it": "Che cosa hai notato la prima volta che ti sei registrato mentre cantavi?",
+"pt": "O que notaste da primeira vez que te gravaste a cantar?",
+"pt_BR": "O que você percebeu na primeira vez que se gravou cantando?"
+}
+},
+{
+"id": "singing-044",
+"lv": "beginner",
+"i18n": {
+"en": "How does your breathing feel when you sing a long phrase?",
+"de": "Wie fühlt sich deine Atmung an, wenn du eine lange Phrase singst?",
+"es": "¿Cómo sientes tu respiración cuando cantas una frase larga?",
+"fr": "Comment se passe ta respiration quand tu chantes une longue phrase ?",
+"it": "Come senti il tuo respiro quando canti una frase lunga?",
+"pt": "Como sentes a tua respiração quando cantas uma frase longa?",
+"pt_BR": "Como você sente sua respiração quando canta uma frase longa?"
+}
+},
+{
+"id": "singing-045",
+"lv": "beginner",
+"i18n": {
+"en": "Which simple song would you like to use for your first practice?",
+"de": "Mit welchem einfachen Lied möchtest du zuerst üben?",
+"es": "¿Qué canción sencilla te gustaría usar para tu primera práctica?",
+"fr": "Quelle chanson simple aimerais-tu utiliser pour ta première séance ?",
+"it": "Quale canzone semplice vorresti usare per il tuo primo esercizio?",
+"pt": "Que canção simples gostavas de usar no teu primeiro treino?",
+"pt_BR": "Qual música simples você gostaria de usar no seu primeiro treino?"
+}
+},
+{
+"id": "singing-046",
+"lv": "beginner",
+"i18n": {
+"en": "Do you feel nervous singing in front of others? What helps you relax?",
+"de": "Bist du nervös, wenn du vor anderen singst? Was hilft dir, dich zu entspannen?",
+"es": "¿Te pones nervioso al cantar delante de otros? ¿Qué te ayuda a relajarte?",
+"fr": "Es-tu nerveux quand tu chantes devant d'autres ? Qu'est-ce qui t'aide à te détendre ?",
+"it": "Ti senti nervoso a cantare davanti agli altri? Cosa ti aiuta a rilassarti?",
+"pt": "Ficas nervoso a cantar à frente dos outros? O que te ajuda a descontrair?",
+"pt_BR": "Você fica nervoso cantando na frente dos outros? O que te ajuda a relaxar?"
+}
+},
+{
+"id": "singing-047",
+"lv": "beginner",
+"i18n": {
+"en": "When you hum, where do you feel the vibration most?",
+"de": "Wo spürst du beim Summen die Vibration am stärksten?",
+"es": "Cuando tarareas, ¿dónde sientes más la vibración?",
+"fr": "Quand tu fredonnes, où sens-tu le plus la vibration ?",
+"it": "Quando canticchi a bocca chiusa, dove senti di più la vibrazione?",
+"pt": "Quando cantarolas de boca fechada, onde sentes mais a vibração?",
+"pt_BR": "Quando você cantarola de boca fechada, onde sente mais a vibração?"
+}
+},
+{
+"id": "singing-048",
+"lv": "beginner",
+"i18n": {
+"en": "How much time could you give to singing practice each day?",
+"de": "Wie viel Zeit könntest du jeden Tag ins Singen investieren?",
+"es": "¿Cuánto tiempo podrías dedicar cada día a practicar canto?",
+"fr": "Combien de temps pourrais-tu consacrer chaque jour à chanter ?",
+"it": "Quanto tempo potresti dedicare ogni giorno a esercitarti nel canto?",
+"pt": "Quanto tempo conseguias dedicar por dia a treinar canto?",
+"pt_BR": "Quanto tempo você conseguiria dedicar por dia ao treino de canto?"
+}
+},
+{
+"id": "singing-049",
+"lv": "beginner",
+"i18n": {
+"en": "What part of singing feels hardest for you right now?",
+"de": "Welcher Teil des Singens fällt dir im Moment am schwersten?",
+"es": "¿Qué parte del canto te parece más difícil ahora mismo?",
+"fr": "Quelle partie du chant te semble la plus difficile en ce moment ?",
+"it": "Quale parte del canto ti sembra più difficile in questo momento?",
+"pt": "Que parte do canto te parece mais difícil neste momento?",
+"pt_BR": "Qual parte do canto parece mais difícil pra você agora?"
+}
+},
+{
+"id": "singing-050",
+"lv": "beginner",
+"i18n": {
+"en": "Have you tried lip trills yet? How did they feel?",
+"de": "Hast du schon Lippenflattern ausprobiert? Wie hat es sich angefühlt?",
+"es": "¿Ya has probado a hacer vibrar los labios? ¿Qué tal te fue?",
+"fr": "As-tu déjà essayé de faire vibrer les lèvres ? Qu'as-tu ressenti ?",
+"it": "Hai già provato le vibrazioni delle labbra? Che effetto ti hanno fatto?",
+"pt": "Já experimentaste fazer vibrar os lábios? Como correu?",
+"pt_BR": "Você já tentou fazer a vibração de lábios? Como foi?"
+}
+},
+{
+"id": "singing-051",
+"lv": "beginner",
+"i18n": {
+"en": "Do you find it easier to sing high notes or low notes?",
+"de": "Fallen dir hohe oder tiefe Töne leichter?",
+"es": "¿Te resulta más fácil cantar notas agudas o graves?",
+"fr": "Trouves-tu plus facile de chanter des notes aiguës ou graves ?",
+"it": "Ti viene più facile cantare note acute o gravi?",
+"pt": "Achas mais fácil cantar notas agudas ou graves?",
+"pt_BR": "Você acha mais fácil cantar notas agudas ou graves?"
+}
+},
+{
+"id": "singing-052",
+"lv": "beginner",
+"i18n": {
+"en": "What song would you like to sing confidently for your friends someday?",
+"de": "Welches Lied möchtest du eines Tages selbstbewusst für deine Freunde singen?",
+"es": "¿Qué canción te gustaría cantar con seguridad a tus amigos algún día?",
+"fr": "Quelle chanson aimerais-tu chanter avec assurance devant tes amis un jour ?",
+"it": "Quale canzone vorresti cantare con sicurezza ai tuoi amici un giorno?",
+"pt": "Que canção gostavas de cantar com confiança para os teus amigos um dia?",
+"pt_BR": "Qual música você gostaria de cantar com confiança para os seus amigos um dia?"
+}
+},
+{
+"id": "singing-053",
+"lv": "beginner",
+"i18n": {
+"en": "How do you usually learn the words of a new song?",
+"de": "Wie lernst du normalerweise den Text eines neuen Liedes?",
+"es": "¿Cómo sueles aprenderte la letra de una canción nueva?",
+"fr": "Comment apprends-tu d'habitude les paroles d'une nouvelle chanson ?",
+"it": "Come impari di solito le parole di una canzone nuova?",
+"pt": "Como costumas aprender a letra de uma canção nova?",
+"pt_BR": "Como você costuma aprender a letra de uma música nova?"
+}
+},
+{
+"id": "singing-054",
+"lv": "beginner",
+"i18n": {
+"en": "Can you keep the beat while singing, or does the rhythm sometimes run away?",
+"de": "Hältst du beim Singen den Takt, oder läuft dir der Rhythmus manchmal davon?",
+"es": "¿Mantienes el ritmo al cantar o a veces se te escapa?",
+"fr": "Arrives-tu à garder le tempo en chantant, ou le rythme t'échappe-t-il parfois ?",
+"it": "Riesci a tenere il tempo mentre canti, o a volte il ritmo ti sfugge?",
+"pt": "Consegues manter o ritmo a cantar, ou às vezes ele foge-te?",
+"pt_BR": "Você consegue manter o ritmo cantando, ou às vezes ele escapa?"
+}
+},
+{
+"id": "singing-055",
+"lv": "beginner",
+"i18n": {
+"en": "What do you do to take care of your voice on a busy day?",
+"de": "Was tust du an einem stressigen Tag für deine Stimme?",
+"es": "¿Qué haces para cuidar tu voz en un día ajetreado?",
+"fr": "Que fais-tu pour prendre soin de ta voix lors d'une journée chargée ?",
+"it": "Che cosa fai per prenderti cura della tua voce in una giornata piena?",
+"pt": "O que fazes para cuidar da tua voz num dia agitado?",
+"pt_BR": "O que você faz para cuidar da sua voz num dia corrido?"
+}
+},
+{
+"id": "singing-056",
+"lv": "beginner",
+"i18n": {
+"en": "Which vowel sounds feel the most comfortable for you to sing?",
+"de": "Welche Vokale singst du am bequemsten?",
+"es": "¿Qué vocales te resultan más cómodas al cantar?",
+"fr": "Quelles voyelles te semblent les plus confortables à chanter ?",
+"it": "Quali vocali ti sembrano più comode da cantare?",
+"pt": "Que vogais te parecem mais confortáveis para cantar?",
+"pt_BR": "Quais vogais são mais confortáveis pra você cantar?"
+}
+},
+{
+"id": "singing-057",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about your posture when you sing?",
+"de": "Wie zufrieden bist du mit deiner Haltung beim Singen?",
+"es": "¿Qué te parece tu postura cuando cantas?",
+"fr": "Que penses-tu de ta posture quand tu chantes ?",
+"it": "Che ne pensi della tua postura quando canti?",
+"pt": "O que achas da tua postura quando cantas?",
+"pt_BR": "O que você acha da sua postura quando canta?"
+}
+},
+{
+"id": "singing-058",
+"lv": "beginner",
+"i18n": {
+"en": "Would you like to sing with a backing track or with a live instrument?",
+"de": "Würdest du lieber mit Playback oder mit einem Live-Instrument singen?",
+"es": "¿Te gustaría cantar con una pista o con un instrumento en vivo?",
+"fr": "Préférerais-tu chanter sur une bande-son ou avec un instrument en direct ?",
+"it": "Ti piacerebbe cantare con una base o con uno strumento dal vivo?",
+"pt": "Gostavas de cantar com uma faixa instrumental ou com um instrumento ao vivo?",
+"pt_BR": "Você gostaria de cantar com um playback ou com um instrumento ao vivo?"
+}
+},
+{
+"id": "singing-059",
+"lv": "beginner",
+"i18n": {
+"en": "What small singing goal could you reach by the end of this month?",
+"de": "Welches kleine Gesangsziel könntest du bis Ende dieses Monats erreichen?",
+"es": "¿Qué pequeño objetivo de canto podrías alcanzar a finales de este mes?",
+"fr": "Quel petit objectif de chant pourrais-tu atteindre d'ici la fin du mois ?",
+"it": "Quale piccolo obiettivo di canto potresti raggiungere entro fine mese?",
+"pt": "Que pequeno objetivo de canto podias alcançar até ao fim deste mês?",
+"pt_BR": "Qual pequena meta de canto você poderia alcançar até o fim deste mês?"
+}
+},
+{
+"id": "singing-060",
+"lv": "beginner",
+"i18n": {
+"en": "Does your voice ever crack or flip? On which notes does it happen?",
+"de": "Bricht oder kippt deine Stimme manchmal? Bei welchen Tönen passiert das?",
+"es": "¿Alguna vez se te quiebra la voz? ¿En qué notas te pasa?",
+"fr": "Ta voix se casse-t-elle parfois ? Sur quelles notes cela arrive-t-il ?",
+"it": "Ti capita che la voce si rompa? Su quali note succede?",
+"pt": "A tua voz às vezes falha? Em que notas acontece?",
+"pt_BR": "Sua voz às vezes falha ou quebra? Em quais notas isso acontece?"
+}
+},
+{
+"id": "singing-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which singer would you like to imitate to learn from their style?",
+"de": "Welche Sängerin oder welchen Sänger würdest du gern nachahmen, um von ihrem Stil zu lernen?",
+"es": "¿A qué cantante te gustaría imitar para aprender de su estilo?",
+"fr": "Quel chanteur ou quelle chanteuse aimerais-tu imiter pour apprendre de son style ?",
+"it": "Quale cantante vorresti imitare per imparare dal suo stile?",
+"pt": "Que cantor gostavas de imitar para aprender com o seu estilo?",
+"pt_BR": "Qual cantor você gostaria de imitar para aprender com o estilo dele?"
+}
+},
+{
+"id": "singing-062",
+"lv": "beginner",
+"i18n": {
+"en": "How do you feel about hearing your own voice played back?",
+"de": "Wie geht es dir damit, deine eigene Stimme auf einer Aufnahme zu hören?",
+"es": "¿Qué sientes al escuchar tu propia voz grabada?",
+"fr": "Que ressens-tu quand tu entends ta propre voix enregistrée ?",
+"it": "Come ti senti quando ascolti la tua voce registrata?",
+"pt": "Como te sentes ao ouvir a tua própria voz gravada?",
+"pt_BR": "Como você se sente ao ouvir sua própria voz gravada?"
+}
+},
+{
+"id": "singing-063",
+"lv": "beginner",
+"i18n": {
+"en": "Do you prefer practising in the morning or in the evening?",
+"de": "Übst du lieber morgens oder abends?",
+"es": "¿Prefieres practicar por la mañana o por la tarde?",
+"fr": "Préfères-tu t'entraîner le matin ou le soir ?",
+"it": "Preferisci esercitarti la mattina o la sera?",
+"pt": "Preferes treinar de manhã ou à noite?",
+"pt_BR": "Você prefere treinar de manhã ou à noite?"
+}
+},
+{
+"id": "singing-064",
+"lv": "beginner",
+"i18n": {
+"en": "What would make your singing practice more fun for you?",
+"de": "Was würde dein Gesangstraining für dich lustiger machen?",
+"es": "¿Qué haría tu práctica de canto más divertida para ti?",
+"fr": "Qu'est-ce qui rendrait tes séances de chant plus amusantes ?",
+"it": "Che cosa renderebbe più divertente il tuo esercizio di canto?",
+"pt": "O que tornaria o teu treino de canto mais divertido?",
+"pt_BR": "O que deixaria seu treino de canto mais divertido pra você?"
+}
+},
+{
+"id": "singing-065",
+"lv": "beginner",
+"i18n": {
+"en": "Which exercise from your practice so far did you enjoy the most?",
+"de": "Welche Übung aus deinem bisherigen Training hat dir am meisten Spaß gemacht?",
+"es": "¿Qué ejercicio de tu práctica hasta ahora has disfrutado más?",
+"fr": "Quel exercice de tes séances jusqu'ici as-tu le plus apprécié ?",
+"it": "Quale esercizio fatto finora ti è piaciuto di più?",
+"pt": "Que exercício do teu treino até agora gostaste mais de fazer?",
+"pt_BR": "Qual exercício do seu treino até agora você mais curtiu?"
+}
+},
+{
+"id": "singing-066",
+"lv": "intermediate",
+"i18n": {
+"en": "How is your mix voice developing, and where does it feel most natural?",
+"de": "Wie entwickelt sich deine Mix-Stimme, und wo fühlt sie sich am natürlichsten an?",
+"es": "¿Cómo va evolucionando tu voz mixta y dónde te resulta más natural?",
+"fr": "Comment évolue ta voix mixte, et où te semble-t-elle la plus naturelle ?",
+"it": "Come si sta sviluppando la tua voce mista, e dove ti sembra più naturale?",
+"pt": "Como está a evoluir a tua voz mista, e onde te parece mais natural?",
+"pt_BR": "Como sua voz mista está evoluindo, e onde ela parece mais natural?"
+}
+},
+{
+"id": "singing-067",
+"lv": "intermediate",
+"i18n": {
+"en": "Which style would you like to explore next: jazz, soul, folk or musical theatre?",
+"de": "Welchen Stil möchtest du als Nächstes entdecken: Jazz, Soul, Folk oder Musical?",
+"es": "¿Qué estilo te gustaría explorar ahora: jazz, soul, folk o teatro musical?",
+"fr": "Quel style aimerais-tu explorer maintenant : jazz, soul, folk ou comédie musicale ?",
+"it": "Quale stile vorresti esplorare ora: jazz, soul, folk o musical?",
+"pt": "Que estilo gostavas de explorar a seguir: jazz, soul, folk ou teatro musical?",
+"pt_BR": "Qual estilo você gostaria de explorar agora: jazz, soul, folk ou teatro musical?"
+}
+},
+{
+"id": "singing-068",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you decide where to breathe in a new song?",
+"de": "Wie entscheidest du, wo du in einem neuen Lied atmest?",
+"es": "¿Cómo decides dónde respirar en una canción nueva?",
+"fr": "Comment décides-tu où respirer dans une nouvelle chanson ?",
+"it": "Come decidi dove respirare in una canzone nuova?",
+"pt": "Como decides onde respirar numa canção nova?",
+"pt_BR": "Como você decide onde respirar numa música nova?"
+}
+},
+{
+"id": "singing-069",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you noticed vibrato in your voice? When does it appear?",
+"de": "Hast du schon Vibrato in deiner Stimme bemerkt? Wann taucht es auf?",
+"es": "¿Has notado vibrato en tu voz? ¿Cuándo aparece?",
+"fr": "As-tu remarqué du vibrato dans ta voix ? Quand apparaît-il ?",
+"it": "Hai notato il vibrato nella tua voce? Quando compare?",
+"pt": "Já notaste vibrato na tua voz? Quando é que aparece?",
+"pt_BR": "Você já percebeu vibrato na sua voz? Quando ele aparece?"
+}
+},
+{
+"id": "singing-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What song would you like to sing in a language you are learning?",
+"de": "Welches Lied möchtest du in einer Sprache singen, die du gerade lernst?",
+"es": "¿Qué canción te gustaría cantar en un idioma que estás aprendiendo?",
+"fr": "Quelle chanson aimerais-tu chanter dans une langue que tu apprends ?",
+"it": "Quale canzone vorresti cantare in una lingua che stai imparando?",
+"pt": "Que canção gostavas de cantar numa língua que estás a aprender?",
+"pt_BR": "Qual música você gostaria de cantar num idioma que está aprendendo?"
+}
+},
+{
+"id": "singing-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you make a cover song feel like your own?",
+"de": "Wie machst du ein Cover zu deinem eigenen Lied?",
+"es": "¿Cómo haces que una versión de otra canción suene a ti?",
+"fr": "Comment fais-tu d'une reprise une chanson qui te ressemble ?",
+"it": "Come rendi tua una cover?",
+"pt": "Como fazes uma versão de outra canção soar a ti?",
+"pt_BR": "Como você faz um cover soar como algo seu?"
+}
+},
+{
+"id": "singing-072",
+"lv": "intermediate",
+"i18n": {
+"en": "What helps you stay in tune when singing harmony with others?",
+"de": "Was hilft dir, beim mehrstimmigen Singen die Tonhöhe zu halten?",
+"es": "¿Qué te ayuda a mantener la afinación al cantar armonías con otros?",
+"fr": "Qu'est-ce qui t'aide à rester juste quand tu chantes en harmonie avec d'autres ?",
+"it": "Che cosa ti aiuta a restare intonato quando canti armonie con altri?",
+"pt": "O que te ajuda a manter a afinação quando cantas harmonias com outros?",
+"pt_BR": "O que te ajuda a manter a afinação ao cantar harmonias com outras pessoas?"
+}
+},
+{
+"id": "singing-073",
+"lv": "intermediate",
+"i18n": {
+"en": "How comfortable are you with a microphone? What did you learn using one?",
+"de": "Wie wohl fühlst du dich mit einem Mikrofon? Was hast du dabei gelernt?",
+"es": "¿Qué tal te manejas con un micrófono? ¿Qué has aprendido al usarlo?",
+"fr": "Es-tu à l'aise avec un micro ? Qu'as-tu appris en l'utilisant ?",
+"it": "Quanto ti senti a tuo agio con un microfono? Che cosa hai imparato usandolo?",
+"pt": "Sentes-te à vontade com um microfone? O que aprendeste ao usá-lo?",
+"pt_BR": "Você se sente à vontade com um microfone? O que aprendeu usando um?"
+}
+},
+{
+"id": "singing-074",
+"lv": "intermediate",
+"i18n": {
+"en": "Which song shows your voice at its best right now?",
+"de": "Welches Lied zeigt deine Stimme im Moment von ihrer besten Seite?",
+"es": "¿Qué canción muestra lo mejor de tu voz ahora mismo?",
+"fr": "Quelle chanson met le mieux ta voix en valeur en ce moment ?",
+"it": "Quale canzone mette in risalto la tua voce in questo momento?",
+"pt": "Que canção mostra o melhor da tua voz neste momento?",
+"pt_BR": "Qual música mostra o melhor da sua voz no momento?"
+}
+},
+{
+"id": "singing-075",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you connect emotionally with a song without straining your voice?",
+"de": "Wie verbindest du dich emotional mit einem Lied, ohne deine Stimme zu überlasten?",
+"es": "¿Cómo conectas emocionalmente con una canción sin forzar la voz?",
+"fr": "Comment te connectes-tu émotionnellement à une chanson sans forcer ta voix ?",
+"it": "Come ti connetti emotivamente a una canzone senza sforzare la voce?",
+"pt": "Como te ligas emocionalmente a uma canção sem forçar a voz?",
+"pt_BR": "Como você se conecta emocionalmente com uma música sem forçar a voz?"
+}
+},
+{
+"id": "singing-076",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you tried recording layered harmonies? What was it like?",
+"de": "Hast du schon mal mehrstimmige Harmonien übereinander aufgenommen? Wie war das?",
+"es": "¿Has probado a grabar armonías en capas? ¿Qué tal fue?",
+"fr": "As-tu déjà essayé d'enregistrer des harmonies superposées ? C'était comment ?",
+"it": "Hai mai provato a registrare armonie sovrapposte? Com'è stato?",
+"pt": "Já experimentaste gravar harmonias em camadas? Como foi?",
+"pt_BR": "Você já tentou gravar harmonias em camadas? Como foi?"
+}
+},
+{
+"id": "singing-077",
+"lv": "intermediate",
+"i18n": {
+"en": "What does your weekly singing routine look like at the moment?",
+"de": "Wie sieht deine wöchentliche Gesangsroutine im Moment aus?",
+"es": "¿Cómo es tu rutina semanal de canto en este momento?",
+"fr": "À quoi ressemble ta routine de chant hebdomadaire en ce moment ?",
+"it": "Com'è la tua routine settimanale di canto in questo periodo?",
+"pt": "Como é a tua rotina semanal de canto neste momento?",
+"pt_BR": "Como está sua rotina semanal de canto no momento?"
+}
+},
+{
+"id": "singing-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Which riff or run from a song would you love to master?",
+"de": "Welchen Riff oder Lauf aus einem Lied würdest du gern beherrschen?",
+"es": "¿Qué riff o adorno de una canción te encantaría dominar?",
+"fr": "Quel riff ou quelle vocalise d'une chanson aimerais-tu maîtriser ?",
+"it": "Quale riff o passaggio di una canzone ti piacerebbe padroneggiare?",
+"pt": "Que riff ou floreado de uma canção gostavas de dominar?",
+"pt_BR": "Qual riff ou melisma de uma música você adoraria dominar?"
+}
+},
+{
+"id": "singing-079",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you handle a small mistake while singing for others?",
+"de": "Wie gehst du mit einem kleinen Fehler um, wenn du vor anderen singst?",
+"es": "¿Cómo manejas un pequeño error al cantar delante de otros?",
+"fr": "Comment gères-tu une petite erreur quand tu chantes devant d'autres ?",
+"it": "Come gestisci un piccolo errore mentre canti davanti agli altri?",
+"pt": "Como lidas com um pequeno erro quando cantas para outros?",
+"pt_BR": "Como você lida com um pequeno erro quando canta para os outros?"
+}
+},
+{
+"id": "singing-080",
+"lv": "intermediate",
+"i18n": {
+"en": "What have you learned from studying a great singer's recordings?",
+"de": "Was hast du durch das genaue Anhören der Aufnahmen großer Stimmen gelernt?",
+"es": "¿Qué has aprendido estudiando las grabaciones de un gran cantante?",
+"fr": "Qu'as-tu appris en étudiant les enregistrements d'un grand chanteur ?",
+"it": "Che cosa hai imparato studiando le registrazioni di un grande cantante?",
+"pt": "O que aprendeste ao estudar as gravações de um grande cantor?",
+"pt_BR": "O que você aprendeu estudando as gravações de um grande cantor?"
+}
+},
+{
+"id": "singing-081",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you like to join a choir, a band or a vocal group? Why?",
+"de": "Würdest du gern in einem Chor, einer Band oder einer Vokalgruppe singen? Warum?",
+"es": "¿Te gustaría unirte a un coro, una banda o un grupo vocal? ¿Por qué?",
+"fr": "Aimerais-tu rejoindre une chorale, un groupe ou un ensemble vocal ? Pourquoi ?",
+"it": "Ti piacerebbe entrare in un coro, una band o un gruppo vocale? Perché?",
+"pt": "Gostavas de entrar num coro, numa banda ou num grupo vocal? Porquê?",
+"pt_BR": "Você gostaria de entrar num coral, numa banda ou num grupo vocal? Por quê?"
+}
+},
+{
+"id": "singing-082",
+"lv": "intermediate",
+"i18n": {
+"en": "How has your range changed since you started practising?",
+"de": "Wie hat sich dein Stimmumfang verändert, seit du übst?",
+"es": "¿Cómo ha cambiado tu extensión vocal desde que empezaste a practicar?",
+"fr": "Comment ta tessiture a-t-elle évolué depuis que tu t'entraînes ?",
+"it": "Com'è cambiata la tua estensione da quando hai iniziato a esercitarti?",
+"pt": "Como mudou a tua extensão vocal desde que começaste a treinar?",
+"pt_BR": "Como sua extensão vocal mudou desde que você começou a treinar?"
+}
+},
+{
+"id": "singing-083",
+"lv": "intermediate",
+"i18n": {
+"en": "What would you include in a short set for an open mic night?",
+"de": "Was würdest du in ein kurzes Programm für einen Open-Mic-Abend aufnehmen?",
+"es": "¿Qué incluirías en un repertorio corto para una noche de micrófono abierto?",
+"fr": "Que mettrais-tu dans un court programme pour une scène ouverte ?",
+"it": "Che cosa includeresti in una breve scaletta per una serata open mic?",
+"pt": "O que incluías num pequeno alinhamento para uma noite de microfone aberto?",
+"pt_BR": "O que você incluiria num repertório curto para uma noite de microfone aberto?"
+}
+},
+{
+"id": "singing-084",
+"lv": "intermediate",
+"i18n": {
+"en": "Which language do you find most beautiful to sing in, and why?",
+"de": "In welcher Sprache singst du am schönsten, findest du, und warum?",
+"es": "¿En qué idioma te parece más bonito cantar, y por qué?",
+"fr": "Dans quelle langue trouves-tu le chant le plus beau, et pourquoi ?",
+"it": "In quale lingua trovi più bello cantare, e perché?",
+"pt": "Em que língua achas mais bonito cantar, e porquê?",
+"pt_BR": "Em qual idioma você acha mais bonito cantar, e por quê?"
+}
+},
+{
+"id": "singing-085",
+"lv": "intermediate",
+"i18n": {
+"en": "How do you plan the emotional build of a song from start to finish?",
+"de": "Wie planst du den emotionalen Aufbau eines Liedes vom Anfang bis zum Ende?",
+"es": "¿Cómo planificas la evolución emocional de una canción de principio a fin?",
+"fr": "Comment prépares-tu la montée émotionnelle d'une chanson du début à la fin ?",
+"it": "Come pianifichi la crescita emotiva di una canzone dall'inizio alla fine?",
+"pt": "Como planeias a evolução emocional de uma canção do início ao fim?",
+"pt_BR": "Como você planeja a evolução emocional de uma música do começo ao fim?"
+}
+},
+{
+"id": "singing-086",
+"lv": "advanced",
+"i18n": {
+"en": "How would you describe your personal style as a singer today?",
+"de": "Wie würdest du heute deinen persönlichen Stil als Sängerin oder Sänger beschreiben?",
+"es": "¿Cómo describirías hoy tu estilo personal como cantante?",
+"fr": "Comment décrirais-tu aujourd'hui ton style personnel de chanteur ?",
+"it": "Come descriveresti oggi il tuo stile personale come cantante?",
+"pt": "Como descreverias hoje o teu estilo pessoal como cantor?",
+"pt_BR": "Como você descreveria hoje seu estilo pessoal como cantor?"
+}
+},
+{
+"id": "singing-087",
+"lv": "advanced",
+"i18n": {
+"en": "When do you choose a big belt and when a lighter mix?",
+"de": "Wann entscheidest du dich für einen kräftigen Belt und wann für einen leichteren Mix?",
+"es": "¿Cuándo eliges un belting potente y cuándo una voz mixta más ligera?",
+"fr": "Quand choisis-tu un belting puissant et quand une voix mixte plus légère ?",
+"it": "Quando scegli un belting potente e quando un mix più leggero?",
+"pt": "Quando escolhes um belting forte e quando uma voz mista mais leve?",
+"pt_BR": "Quando você escolhe um belting forte e quando uma voz mista mais leve?"
+}
+},
+{
+"id": "singing-088",
+"lv": "advanced",
+"i18n": {
+"en": "What have you discovered while improvising or scatting?",
+"de": "Was hast du beim Improvisieren oder Scatten über dich entdeckt?",
+"es": "¿Qué has descubierto al improvisar o hacer scat?",
+"fr": "Qu'as-tu découvert en improvisant ou en faisant du scat ?",
+"it": "Che cosa hai scoperto improvvisando o facendo scat?",
+"pt": "O que descobriste ao improvisar ou fazer scat?",
+"pt_BR": "O que você descobriu improvisando ou fazendo scat?"
+}
+},
+{
+"id": "singing-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which songs would you put in a repertoire that shows your whole voice?",
+"de": "Welche Lieder würdest du in ein Repertoire packen, das deine ganze Stimme zeigt?",
+"es": "¿Qué canciones incluirías en un repertorio que muestre toda tu voz?",
+"fr": "Quelles chansons mettrais-tu dans un répertoire qui montre toute ta voix ?",
+"it": "Quali canzoni inseriresti in un repertorio che mostri tutta la tua voce?",
+"pt": "Que canções incluías num repertório que mostre toda a tua voz?",
+"pt_BR": "Quais músicas você colocaria num repertório que mostre toda a sua voz?"
+}
+},
+{
+"id": "singing-090",
+"lv": "advanced",
+"i18n": {
+"en": "How do you keep your voice fresh during a long performance?",
+"de": "Wie hältst du deine Stimme während eines langen Auftritts frisch?",
+"es": "¿Cómo mantienes la voz fresca durante una actuación larga?",
+"fr": "Comment gardes-tu ta voix fraîche pendant un long spectacle ?",
+"it": "Come mantieni la voce fresca durante un'esibizione lunga?",
+"pt": "Como manténs a voz fresca durante uma atuação longa?",
+"pt_BR": "Como você mantém a voz descansada durante uma apresentação longa?"
+}
+},
+{
+"id": "singing-091",
+"lv": "advanced",
+"i18n": {
+"en": "Have you written a melody or lyrics of your own? What inspired you?",
+"de": "Hast du schon eine eigene Melodie oder einen Text geschrieben? Was hat dich inspiriert?",
+"es": "¿Has escrito alguna melodía o letra propia? ¿Qué te inspiró?",
+"fr": "As-tu déjà écrit ta propre mélodie ou tes propres paroles ? Qu'est-ce qui t'a inspiré ?",
+"it": "Hai mai scritto una melodia o un testo tuo? Che cosa ti ha ispirato?",
+"pt": "Já escreveste uma melodia ou letra tua? O que te inspirou?",
+"pt_BR": "Você já escreveu uma melodia ou letra própria? O que te inspirou?"
+}
+},
+{
+"id": "singing-092",
+"lv": "advanced",
+"i18n": {
+"en": "How would you arrange a harmony part for a song you love?",
+"de": "Wie würdest du eine zweite Stimme für ein Lied arrangieren, das du liebst?",
+"es": "¿Cómo arreglarías una voz de armonía para una canción que te encanta?",
+"fr": "Comment arrangerais-tu une harmonie vocale pour une chanson que tu adores ?",
+"it": "Come arrangeresti una parte di armonia per una canzone che ami?",
+"pt": "Como farias o arranjo de uma voz de harmonia para uma canção de que gostas?",
+"pt_BR": "Como você faria o arranjo de uma harmonia para uma música que você ama?"
+}
+},
+{
+"id": "singing-093",
+"lv": "advanced",
+"i18n": {
+"en": "What does your ideal recording session or studio day look like?",
+"de": "Wie sieht für dich ein idealer Aufnahmetag im Studio aus?",
+"es": "¿Cómo sería tu sesión de grabación o día de estudio ideal?",
+"fr": "À quoi ressemble ta séance d'enregistrement idéale en studio ?",
+"it": "Come sarebbe la tua sessione di registrazione ideale in studio?",
+"pt": "Como seria a tua sessão de gravação ideal em estúdio?",
+"pt_BR": "Como seria sua sessão de gravação ideal no estúdio?"
+}
+},
+{
+"id": "singing-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which vocal tradition from another culture would you like to study deeply?",
+"de": "Welche Gesangstradition aus einer anderen Kultur würdest du gern intensiv studieren?",
+"es": "¿Qué tradición vocal de otra cultura te gustaría estudiar a fondo?",
+"fr": "Quelle tradition vocale d'une autre culture aimerais-tu étudier en profondeur ?",
+"it": "Quale tradizione vocale di un'altra cultura ti piacerebbe studiare a fondo?",
+"pt": "Que tradição vocal de outra cultura gostavas de estudar a fundo?",
+"pt_BR": "Qual tradição vocal de outra cultura você gostaria de estudar a fundo?"
+}
+},
+{
+"id": "singing-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do you balance technique and emotion when you perform?",
+"de": "Wie bringst du Technik und Gefühl beim Auftreten ins Gleichgewicht?",
+"es": "¿Cómo equilibras técnica y emoción cuando actúas?",
+"fr": "Comment équilibres-tu technique et émotion quand tu te produis ?",
+"it": "Come bilanci tecnica ed emozione quando ti esibisci?",
+"pt": "Como equilibras técnica e emoção quando atuas?",
+"pt_BR": "Como você equilibra técnica e emoção quando se apresenta?"
+}
+},
+{
+"id": "singing-096",
+"lv": "advanced",
+"i18n": {
+"en": "If you led a group warm-up, which exercises would you choose?",
+"de": "Wenn du ein Einsingen für eine Gruppe leiten würdest, welche Übungen würdest du wählen?",
+"es": "Si dirigieras un calentamiento de grupo, ¿qué ejercicios elegirías?",
+"fr": "Si tu animais un échauffement de groupe, quels exercices choisirais-tu ?",
+"it": "Se guidassi un riscaldamento di gruppo, quali esercizi sceglieresti?",
+"pt": "Se orientasses um aquecimento de grupo, que exercícios escolherias?",
+"pt_BR": "Se você conduzisse um aquecimento em grupo, quais exercícios escolheria?"
+}
+},
+{
+"id": "singing-097",
+"lv": "advanced",
+"i18n": {
+"en": "What long-term habits help you keep your voice healthy?",
+"de": "Welche langfristigen Gewohnheiten helfen dir, deine Stimme gesund zu halten?",
+"es": "¿Qué hábitos a largo plazo te ayudan a mantener la voz sana?",
+"fr": "Quelles habitudes à long terme t'aident à garder une voix en bonne santé ?",
+"it": "Quali abitudini a lungo termine ti aiutano a mantenere la voce in salute?",
+"pt": "Que hábitos a longo prazo te ajudam a manter a voz saudável?",
+"pt_BR": "Quais hábitos de longo prazo te ajudam a manter a voz saudável?"
+}
+},
+{
+"id": "singing-098",
+"lv": "advanced",
+"i18n": {
+"en": "What would you perform at your own showcase to show your journey?",
+"de": "Was würdest du bei deinem eigenen Showcase singen, um deinen Weg zu zeigen?",
+"es": "¿Qué cantarías en tu propio showcase para mostrar tu recorrido?",
+"fr": "Que chanterais-tu lors de ton propre showcase pour montrer ton parcours ?",
+"it": "Che cosa canteresti nel tuo showcase per mostrare il tuo percorso?",
+"pt": "O que cantarias no teu próprio showcase para mostrar o teu percurso?",
+"pt_BR": "O que você cantaria no seu próprio showcase para mostrar sua trajetória?"
+}
+},
+{
+"id": "singing-099",
+"lv": "advanced",
+"i18n": {
+"en": "What advice would you give someone who is just starting to sing?",
+"de": "Welchen Rat würdest du jemandem geben, der gerade mit dem Singen anfängt?",
+"es": "¿Qué consejo le darías a alguien que acaba de empezar a cantar?",
+"fr": "Quel conseil donnerais-tu à quelqu'un qui commence tout juste à chanter ?",
+"it": "Che consiglio daresti a chi ha appena iniziato a cantare?",
+"pt": "Que conselho darias a alguém que está a começar a cantar?",
+"pt_BR": "Que conselho você daria a alguém que está começando a cantar?"
+}
+},
+{
+"id": "singing-100",
+"lv": "advanced",
+"i18n": {
+"en": "Where do you see your singing in a few years from now?",
+"de": "Wo siehst du dich mit deinem Gesang in ein paar Jahren?",
+"es": "¿Dónde ves tu faceta de cantante dentro de unos años?",
+"fr": "Où vois-tu ton chant dans quelques années ?",
+"it": "Dove vedi il tuo canto tra qualche anno?",
+"pt": "Onde vês o teu canto daqui a alguns anos?",
+"pt_BR": "Onde você vê o seu canto daqui a alguns anos?"
+}
+}
+]
+}

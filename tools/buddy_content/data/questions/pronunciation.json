@@ -1,0 +1,1305 @@
+{
+ "topic": "pronunciation",
+ "questions": [
+  {
+   "id": "pronunciation-001",
+   "lv": "any",
+   "i18n": {
+    "en": "Which language are you working on most, and how do you feel about your pronunciation in it?",
+    "de": "An welcher Sprache arbeitest du gerade am meisten, und wie zufrieden bist du mit deiner Aussprache?",
+    "es": "¿En qué idioma estás trabajando más y cómo te sientes con tu pronunciación en él?",
+    "fr": "Sur quelle langue travailles-tu le plus, et que penses-tu de ta prononciation ?",
+    "it": "Su quale lingua stai lavorando di più, e come ti senti riguardo alla tua pronuncia?",
+    "pt": "Em que língua estás a trabalhar mais, e como te sentes em relação à tua pronúncia?",
+    "pt_BR": "Em qual idioma você está trabalhando mais, e como se sente com sua pronúncia nele?"
+   }
+  },
+  {
+   "id": "pronunciation-002",
+   "lv": "any",
+   "i18n": {
+    "en": "Which word in another language do you find hardest to say?",
+    "de": "Welches Wort in einer anderen Sprache fällt dir am schwersten auszusprechen?",
+    "es": "¿Qué palabra de otro idioma te cuesta más pronunciar?",
+    "fr": "Quel mot d'une autre langue as-tu le plus de mal à prononcer ?",
+    "it": "Quale parola di un'altra lingua trovi più difficile da pronunciare?",
+    "pt": "Que palavra de outra língua achas mais difícil de dizer?",
+    "pt_BR": "Qual palavra de outro idioma você acha mais difícil de falar?"
+   }
+  },
+  {
+   "id": "pronunciation-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Which sound in your own language do you think is hardest for foreigners?",
+    "de": "Welcher Laut deiner Sprache ist deiner Meinung nach für Ausländer am schwierigsten?",
+    "es": "¿Qué sonido de tu idioma crees que es el más difícil para los extranjeros?",
+    "fr": "Selon toi, quel son de ta langue est le plus difficile pour les étrangers ?",
+    "it": "Secondo te, quale suono della tua lingua è il più difficile per gli stranieri?",
+    "pt": "Na tua opinião, que som da tua língua é o mais difícil para os estrangeiros?",
+    "pt_BR": "Na sua opinião, qual som do seu idioma é o mais difícil para estrangeiros?"
+   }
+  },
+  {
+   "id": "pronunciation-004",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite word to say out loud, just because it sounds nice?",
+    "de": "Welches Wort sprichst du am liebsten laut aus, einfach weil es schön klingt?",
+    "es": "¿Cuál es tu palabra favorita para decir en voz alta, solo porque suena bonita?",
+    "fr": "Quel est ton mot préféré à dire à voix haute, juste parce qu'il sonne bien ?",
+    "it": "Qual è la tua parola preferita da dire ad alta voce, solo perché suona bene?",
+    "pt": "Qual é a tua palavra preferida para dizer em voz alta, só porque soa bem?",
+    "pt_BR": "Qual é sua palavra favorita para falar em voz alta, só porque soa bonito?"
+   }
+  },
+  {
+   "id": "pronunciation-005",
+   "lv": "any",
+   "i18n": {
+    "en": "Which language do you think sounds the most beautiful, and why?",
+    "de": "Welche Sprache klingt für dich am schönsten, und warum?",
+    "es": "¿Qué idioma te parece que suena más bonito, y por qué?",
+    "fr": "Quelle langue trouves-tu la plus belle à l'oreille, et pourquoi ?",
+    "it": "Quale lingua secondo te ha il suono più bello, e perché?",
+    "pt": "Que língua achas que soa mais bonita, e porquê?",
+    "pt_BR": "Qual idioma você acha que soa mais bonito, e por quê?"
+   }
+  },
+  {
+   "id": "pronunciation-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Has anyone ever misunderstood you because of a pronunciation slip? What happened?",
+    "de": "Hat dich schon mal jemand wegen eines Aussprachefehlers missverstanden? Was ist passiert?",
+    "es": "¿Alguna vez alguien te ha entendido mal por un despiste de pronunciación? ¿Qué pasó?",
+    "fr": "Quelqu'un t'a-t-il déjà mal compris à cause d'une erreur de prononciation ? Que s'est-il passé ?",
+    "it": "Qualcuno ti ha mai frainteso per un errore di pronuncia? Che cos'è successo?",
+    "pt": "Alguém já te percebeu mal por causa de um deslize de pronúncia? O que aconteceu?",
+    "pt_BR": "Alguém já te entendeu errado por causa de um deslize de pronúncia? O que aconteceu?"
+   }
+  },
+  {
+   "id": "pronunciation-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like the sound of your own recorded voice?",
+    "de": "Magst du den Klang deiner eigenen aufgenommenen Stimme?",
+    "es": "¿Te gusta cómo suena tu voz cuando la grabas?",
+    "fr": "Aimes-tu le son de ta propre voix enregistrée ?",
+    "it": "Ti piace il suono della tua voce registrata?",
+    "pt": "Gostas do som da tua própria voz gravada?",
+    "pt_BR": "Você gosta do som da sua própria voz gravada?"
+   }
+  },
+  {
+   "id": "pronunciation-008",
+   "lv": "any",
+   "i18n": {
+    "en": "Which accent of your language do you find the most charming?",
+    "de": "Welchen Akzent deiner Sprache findest du am charmantesten?",
+    "es": "¿Qué acento de tu idioma te parece el más encantador?",
+    "fr": "Quel accent de ta langue trouves-tu le plus charmant ?",
+    "it": "Quale accento della tua lingua trovi più affascinante?",
+    "pt": "Que sotaque da tua língua achas mais encantador?",
+    "pt_BR": "Qual sotaque do seu idioma você acha mais charmoso?"
+   }
+  },
+  {
+   "id": "pronunciation-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Whose voice do you love listening to: a speaker, a singer or an actor?",
+    "de": "Wessen Stimme hörst du besonders gern zu: einem Sprecher, Sänger oder Schauspieler?",
+    "es": "¿Qué voz te encanta escuchar: la de un locutor, un cantante o un actor?",
+    "fr": "Quelle voix adores-tu écouter : celle d'un présentateur, d'un chanteur ou d'un acteur ?",
+    "it": "Quale voce ami ascoltare: quella di uno speaker, di un cantante o di un attore?",
+    "pt": "Que voz adoras ouvir: a de um locutor, de um cantor ou de um ator?",
+    "pt_BR": "Qual voz você adora ouvir: a de um locutor, de um cantor ou de um ator?"
+   }
+  },
+  {
+   "id": "pronunciation-010",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer practising pronunciation alone or with someone else?",
+    "de": "Übst du Aussprache lieber allein oder mit jemandem zusammen?",
+    "es": "¿Prefieres practicar la pronunciación solo o con otra persona?",
+    "fr": "Tu préfères travailler ta prononciation seul ou avec quelqu'un ?",
+    "it": "Preferisci esercitarti nella pronuncia da solo o con qualcuno?",
+    "pt": "Preferes praticar a pronúncia sozinho ou com outra pessoa?",
+    "pt_BR": "Você prefere praticar a pronúncia sozinho ou com alguém?"
+   }
+  },
+  {
+   "id": "pronunciation-011",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel when someone corrects your pronunciation?",
+    "de": "Wie fühlst du dich, wenn jemand deine Aussprache korrigiert?",
+    "es": "¿Cómo te sientes cuando alguien corrige tu pronunciación?",
+    "fr": "Comment te sens-tu quand quelqu'un corrige ta prononciation ?",
+    "it": "Come ti senti quando qualcuno corregge la tua pronuncia?",
+    "pt": "Como te sentes quando alguém corrige a tua pronúncia?",
+    "pt_BR": "Como você se sente quando alguém corrige sua pronúncia?"
+   }
+  },
+  {
+   "id": "pronunciation-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Which tongue twister in your language do you know by heart?",
+    "de": "Welchen Zungenbrecher in deiner Sprache kannst du auswendig?",
+    "es": "¿Qué trabalenguas de tu idioma te sabes de memoria?",
+    "fr": "Quel virelangue de ta langue connais-tu par cœur ?",
+    "it": "Quale scioglilingua della tua lingua sai a memoria?",
+    "pt": "Que trava-línguas da tua língua sabes de cor?",
+    "pt_BR": "Qual trava-língua do seu idioma você sabe de cor?"
+   }
+  },
+  {
+   "id": "pronunciation-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Do people from other regions comment on your accent? What do they say?",
+    "de": "Sagen Leute aus anderen Regionen etwas zu deinem Akzent? Was denn?",
+    "es": "¿La gente de otras regiones comenta algo de tu acento? ¿Qué dice?",
+    "fr": "Les gens d'autres régions font-ils des remarques sur ton accent ? Lesquelles ?",
+    "it": "Le persone di altre regioni commentano il tuo accento? Che cosa dicono?",
+    "pt": "As pessoas de outras regiões comentam o teu sotaque? O que dizem?",
+    "pt_BR": "Pessoas de outras regiões comentam sobre seu sotaque? O que elas dizem?"
+   }
+  },
+  {
+   "id": "pronunciation-014",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you like to sound in your target language a year from now?",
+    "de": "Wie möchtest du in einem Jahr in deiner Zielsprache klingen?",
+    "es": "¿Cómo te gustaría sonar en el idioma que aprendes dentro de un año?",
+    "fr": "Comment aimerais-tu sonner dans la langue que tu apprends d'ici un an ?",
+    "it": "Come ti piacerebbe suonare nella lingua che studi tra un anno?",
+    "pt": "Como gostavas de soar na língua que estás a aprender daqui a um ano?",
+    "pt_BR": "Como você gostaria de soar no idioma que está aprendendo daqui a um ano?"
+   }
+  },
+  {
+   "id": "pronunciation-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you sing along to songs in other languages? Which ones?",
+    "de": "Singst du bei Liedern in anderen Sprachen mit? Bei welchen?",
+    "es": "¿Cantas canciones en otros idiomas? ¿Cuáles?",
+    "fr": "Chantes-tu des chansons dans d'autres langues ? Lesquelles ?",
+    "it": "Canti canzoni in altre lingue? Quali?",
+    "pt": "Cantas músicas noutras línguas? Quais?",
+    "pt_BR": "Você canta junto músicas em outros idiomas? Quais?"
+   }
+  },
+  {
+   "id": "pronunciation-016",
+   "lv": "any",
+   "i18n": {
+    "en": "Which foreign name have you struggled to pronounce?",
+    "de": "Bei welchem ausländischen Namen hattest du Mühe mit der Aussprache?",
+    "es": "¿Qué nombre extranjero te ha costado pronunciar?",
+    "fr": "Quel nom étranger as-tu eu du mal à prononcer ?",
+    "it": "Quale nome straniero hai fatto fatica a pronunciare?",
+    "pt": "Que nome estrangeiro te custou a pronunciar?",
+    "pt_BR": "Qual nome estrangeiro você teve dificuldade de pronunciar?"
+   }
+  },
+  {
+   "id": "pronunciation-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Is there a word you avoid saying because you are unsure how to pronounce it?",
+    "de": "Gibt es ein Wort, das du vermeidest, weil du die Aussprache nicht sicher kennst?",
+    "es": "¿Hay alguna palabra que evitas decir porque no sabes bien cómo se pronuncia?",
+    "fr": "Y a-t-il un mot que tu évites parce que tu n'es pas sûr de sa prononciation ?",
+    "it": "C'è una parola che eviti di dire perché non sei sicuro di come si pronuncia?",
+    "pt": "Há alguma palavra que evitas dizer porque não tens a certeza de como se pronuncia?",
+    "pt_BR": "Tem alguma palavra que você evita falar porque não sabe direito como se pronuncia?"
+   }
+  },
+  {
+   "id": "pronunciation-018",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you usually find out how to pronounce a new word?",
+    "de": "Wie findest du normalerweise heraus, wie man ein neues Wort ausspricht?",
+    "es": "¿Cómo sueles averiguar cómo se pronuncia una palabra nueva?",
+    "fr": "Comment découvres-tu d'habitude la prononciation d'un mot nouveau ?",
+    "it": "Come scopri di solito come si pronuncia una parola nuova?",
+    "pt": "Como costumas descobrir como se pronuncia uma palavra nova?",
+    "pt_BR": "Como você costuma descobrir a pronúncia de uma palavra nova?"
+   }
+  },
+  {
+   "id": "pronunciation-019",
+   "lv": "any",
+   "i18n": {
+    "en": "Which sound in a foreign language made you laugh the first time you tried it?",
+    "de": "Welcher Laut einer Fremdsprache hat dich beim ersten Versuch zum Lachen gebracht?",
+    "es": "¿Qué sonido de un idioma extranjero te hizo reír la primera vez que lo intentaste?",
+    "fr": "Quel son d'une langue étrangère t'a fait rire la première fois que tu l'as essayé ?",
+    "it": "Quale suono di una lingua straniera ti ha fatto ridere la prima volta che l'hai provato?",
+    "pt": "Que som de uma língua estrangeira te fez rir da primeira vez que o tentaste?",
+    "pt_BR": "Qual som de um idioma estrangeiro te fez rir na primeira vez que você tentou?"
+   }
+  },
+  {
+   "id": "pronunciation-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you think an accent is charming, neutral or something to change?",
+    "de": "Ist ein Akzent für dich charmant, neutral oder etwas, das man ändern sollte?",
+    "es": "¿Crees que tener acento es encantador, neutro o algo que hay que cambiar?",
+    "fr": "Pour toi, un accent, c'est charmant, neutre ou quelque chose à corriger ?",
+    "it": "Secondo te un accento è affascinante, neutro o qualcosa da cambiare?",
+    "pt": "Achas que ter sotaque é encantador, neutro ou algo a mudar?",
+    "pt_BR": "Você acha que ter sotaque é charmoso, neutro ou algo a mudar?"
+   }
+  },
+  {
+   "id": "pronunciation-021",
+   "lv": "any",
+   "i18n": {
+    "en": "Which language's melody do you enjoy most when you hear people talk?",
+    "de": "Die Sprachmelodie welcher Sprache hörst du am liebsten, wenn Leute sich unterhalten?",
+    "es": "¿De qué idioma te gusta más la melodía cuando oyes hablar a la gente?",
+    "fr": "De quelle langue aimes-tu le plus la mélodie quand tu entends les gens parler ?",
+    "it": "Di quale lingua ami di più la melodia quando senti parlare le persone?",
+    "pt": "De que língua gostas mais da melodia quando ouves as pessoas falar?",
+    "pt_BR": "De qual idioma você mais curte a melodia quando ouve as pessoas falando?"
+   }
+  },
+  {
+   "id": "pronunciation-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Can you roll your r? Did you learn it or could you always do it?",
+    "de": "Kannst du das R rollen? Hast du es gelernt oder konntest du es schon immer?",
+    "es": "¿Sabes hacer la erre vibrante? ¿La aprendiste o siempre te salió?",
+    "fr": "Sais-tu rouler les r ? L'as-tu appris ou as-tu toujours su le faire ?",
+    "it": "Sai fare la erre vibrante? L'hai imparata o ti è sempre venuta?",
+    "pt": "Consegues fazer o r vibrante? Aprendeste ou sempre te saiu?",
+    "pt_BR": "Você consegue fazer o r vibrante? Aprendeu ou sempre conseguiu?"
+   }
+  },
+  {
+   "id": "pronunciation-023",
+   "lv": "any",
+   "i18n": {
+    "en": "Which word do people from different regions of your country say differently?",
+    "de": "Welches Wort sprechen Menschen aus verschiedenen Regionen deines Landes unterschiedlich aus?",
+    "es": "¿Qué palabra pronuncia de forma distinta la gente de diferentes regiones de tu país?",
+    "fr": "Quel mot les gens des différentes régions de ton pays prononcent-ils différemment ?",
+    "it": "Quale parola viene pronunciata in modo diverso nelle varie regioni del tuo paese?",
+    "pt": "Que palavra as pessoas de diferentes regiões do teu país dizem de forma diferente?",
+    "pt_BR": "Qual palavra as pessoas de diferentes regiões do seu país falam de um jeito diferente?"
+   }
+  },
+  {
+   "id": "pronunciation-024",
+   "lv": "any",
+   "i18n": {
+    "en": "What is easier for you: understanding native speakers or making yourself understood?",
+    "de": "Was fällt dir leichter: Muttersprachler zu verstehen oder dich verständlich zu machen?",
+    "es": "¿Qué te resulta más fácil: entender a los nativos o hacerte entender?",
+    "fr": "Qu'est-ce qui est plus facile pour toi : comprendre les natifs ou te faire comprendre ?",
+    "it": "Che cosa ti riesce più facile: capire i madrelingua o farti capire?",
+    "pt": "O que é mais fácil para ti: perceber os falantes nativos ou fazeres-te entender?",
+    "pt_BR": "O que é mais fácil para você: entender os nativos ou se fazer entender?"
+   }
+  },
+  {
+   "id": "pronunciation-025",
+   "lv": "any",
+   "i18n": {
+    "en": "How often do you speak out loud in the language you are learning?",
+    "de": "Wie oft sprichst du die Sprache, die du lernst, laut?",
+    "es": "¿Con qué frecuencia hablas en voz alta en el idioma que aprendes?",
+    "fr": "À quelle fréquence parles-tu à voix haute dans la langue que tu apprends ?",
+    "it": "Quanto spesso parli ad alta voce nella lingua che stai imparando?",
+    "pt": "Com que frequência falas em voz alta na língua que estás a aprender?",
+    "pt_BR": "Com que frequência você fala em voz alta no idioma que está aprendendo?"
+   }
+  },
+  {
+   "id": "pronunciation-026",
+   "lv": "any",
+   "i18n": {
+    "en": "Which situation makes you most nervous about your pronunciation?",
+    "de": "In welcher Situation bist du wegen deiner Aussprache am nervösesten?",
+    "es": "¿En qué situación te pone más nervioso tu pronunciación?",
+    "fr": "Dans quelle situation ta prononciation te rend-elle le plus nerveux ?",
+    "it": "In quale situazione la tua pronuncia ti rende più nervoso?",
+    "pt": "Em que situação ficas mais nervoso com a tua pronúncia?",
+    "pt_BR": "Em qual situação você fica mais nervoso com sua pronúncia?"
+   }
+  },
+  {
+   "id": "pronunciation-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever imitated an accent just for fun? Which one?",
+    "de": "Hast du schon mal nur zum Spaß einen Akzent nachgemacht? Welchen?",
+    "es": "¿Alguna vez has imitado un acento solo por diversión? ¿Cuál?",
+    "fr": "As-tu déjà imité un accent juste pour t'amuser ? Lequel ?",
+    "it": "Hai mai imitato un accento solo per divertimento? Quale?",
+    "pt": "Já imitaste algum sotaque só por diversão? Qual?",
+    "pt_BR": "Você já imitou algum sotaque só por diversão? Qual?"
+   }
+  },
+  {
+   "id": "pronunciation-028",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you think your first language sounds to people who don't speak it?",
+    "de": "Wie klingt deine Muttersprache wohl für Menschen, die sie nicht sprechen?",
+    "es": "¿Cómo crees que suena tu lengua materna a quien no la habla?",
+    "fr": "Selon toi, comment ta langue maternelle sonne-t-elle pour ceux qui ne la parlent pas ?",
+    "it": "Come pensi che suoni la tua lingua madre a chi non la parla?",
+    "pt": "Como achas que a tua língua materna soa a quem não a fala?",
+    "pt_BR": "Como você acha que sua língua materna soa para quem não fala?"
+   }
+  },
+  {
+   "id": "pronunciation-029",
+   "lv": "any",
+   "i18n": {
+    "en": "Which famous person's accent in your target language would you like to copy?",
+    "de": "Den Akzent welcher bekannten Person in deiner Zielsprache würdest du gern übernehmen?",
+    "es": "¿El acento de qué persona famosa te gustaría imitar en el idioma que aprendes?",
+    "fr": "Quelle personnalité aimerais-tu imiter pour son accent dans la langue que tu apprends ?",
+    "it": "Di quale personaggio famoso vorresti copiare l'accento nella lingua che studi?",
+    "pt": "De que pessoa famosa gostavas de copiar o sotaque na língua que estás a aprender?",
+    "pt_BR": "De qual pessoa famosa você gostaria de copiar o sotaque no idioma que está aprendendo?"
+   }
+  },
+  {
+   "id": "pronunciation-030",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you remember learning to read aloud as a child? How was it?",
+    "de": "Erinnerst du dich, wie du als Kind laut lesen gelernt hast? Wie war das?",
+    "es": "¿Recuerdas cuando aprendiste a leer en voz alta de pequeño? ¿Cómo fue?",
+    "fr": "Te souviens-tu de quand tu as appris à lire à voix haute, enfant ? C'était comment ?",
+    "it": "Ti ricordi quando hai imparato a leggere ad alta voce da bambino? Com'era?",
+    "pt": "Lembras-te de aprender a ler em voz alta em criança? Como foi?",
+    "pt_BR": "Você lembra de quando aprendeu a ler em voz alta na infância? Como foi?"
+   }
+  },
+  {
+   "id": "pronunciation-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which word in your language has a sound that many languages don't have?",
+    "de": "Welches Wort deiner Sprache hat einen Laut, den viele Sprachen nicht haben?",
+    "es": "¿Qué palabra de tu idioma tiene un sonido que muchos idiomas no tienen?",
+    "fr": "Quel mot de ta langue contient un son que beaucoup de langues n'ont pas ?",
+    "it": "Quale parola della tua lingua ha un suono che molte lingue non hanno?",
+    "pt": "Que palavra da tua língua tem um som que muitas línguas não têm?",
+    "pt_BR": "Qual palavra do seu idioma tem um som que muitos idiomas não têm?"
+   }
+  },
+  {
+   "id": "pronunciation-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you talk faster or slower than most people you know?",
+    "de": "Sprichst du schneller oder langsamer als die meisten Menschen, die du kennst?",
+    "es": "¿Hablas más rápido o más despacio que la mayoría de la gente que conoces?",
+    "fr": "Parles-tu plus vite ou plus lentement que la plupart des gens que tu connais ?",
+    "it": "Parli più veloce o più lentamente della maggior parte delle persone che conosci?",
+    "pt": "Falas mais depressa ou mais devagar do que a maioria das pessoas que conheces?",
+    "pt_BR": "Você fala mais rápido ou mais devagar do que a maioria das pessoas que conhece?"
+   }
+  },
+  {
+   "id": "pronunciation-033",
+   "lv": "any",
+   "i18n": {
+    "en": "Which films, series or podcasts help you hear natural speech?",
+    "de": "Welche Filme, Serien oder Podcasts helfen dir, natürliche Sprache zu hören?",
+    "es": "¿Qué películas, series o pódcasts te ayudan a oír el habla natural?",
+    "fr": "Quels films, séries ou podcasts t'aident à entendre la langue parlée naturelle ?",
+    "it": "Quali film, serie o podcast ti aiutano a sentire la lingua parlata naturale?",
+    "pt": "Que filmes, séries ou podcasts te ajudam a ouvir a fala natural?",
+    "pt_BR": "Quais filmes, séries ou podcasts te ajudam a ouvir a fala natural?"
+   }
+  },
+  {
+   "id": "pronunciation-034",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you describe the sound of your own language in three words?",
+    "de": "Wie würdest du den Klang deiner Sprache in drei Wörtern beschreiben?",
+    "es": "¿Cómo describirías el sonido de tu idioma en tres palabras?",
+    "fr": "Comment décrirais-tu le son de ta langue en trois mots ?",
+    "it": "Come descriveresti il suono della tua lingua in tre parole?",
+    "pt": "Como descreverias o som da tua língua em três palavras?",
+    "pt_BR": "Como você descreveria o som do seu idioma em três palavras?"
+   }
+  },
+  {
+   "id": "pronunciation-035",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one small pronunciation goal you could reach this week?",
+    "de": "Welches kleine Ausspracheziel könntest du diese Woche erreichen?",
+    "es": "¿Qué pequeño objetivo de pronunciación podrías alcanzar esta semana?",
+    "fr": "Quel petit objectif de prononciation pourrais-tu atteindre cette semaine ?",
+    "it": "Quale piccolo obiettivo di pronuncia potresti raggiungere questa settimana?",
+    "pt": "Que pequeno objetivo de pronúncia podias alcançar esta semana?",
+    "pt_BR": "Qual pequena meta de pronúncia você poderia alcançar nesta semana?"
+   }
+  },
+  {
+   "id": "pronunciation-036",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy reading aloud, or does it make you shy?",
+    "de": "Liest du gern laut vor, oder macht dich das schüchtern?",
+    "es": "¿Te gusta leer en voz alta o te da vergüenza?",
+    "fr": "Tu aimes lire à voix haute, ou ça te rend timide ?",
+    "it": "Ti piace leggere ad alta voce o ti mette in imbarazzo?",
+    "pt": "Gostas de ler em voz alta ou ficas envergonhado?",
+    "pt_BR": "Você gosta de ler em voz alta ou fica com vergonha?"
+   }
+  },
+  {
+   "id": "pronunciation-037",
+   "lv": "any",
+   "i18n": {
+    "en": "Which borrowed word in your language is pronounced in a funny way?",
+    "de": "Welches Lehnwort wird in deiner Sprache lustig ausgesprochen?",
+    "es": "¿Qué palabra prestada se pronuncia de forma graciosa en tu idioma?",
+    "fr": "Quel mot emprunté se prononce de façon amusante dans ta langue ?",
+    "it": "Quale parola straniera si pronuncia in modo buffo nella tua lingua?",
+    "pt": "Que palavra estrangeira se pronuncia de forma engraçada na tua língua?",
+    "pt_BR": "Qual palavra estrangeira é pronunciada de um jeito engraçado no seu idioma?"
+   }
+  },
+  {
+   "id": "pronunciation-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Which part of pronunciation interests you most: sounds, stress, rhythm or melody?",
+    "de": "Was interessiert dich an der Aussprache am meisten: Laute, Betonung, Rhythmus oder Melodie?",
+    "es": "¿Qué parte de la pronunciación te interesa más: los sonidos, el acento, el ritmo o la entonación?",
+    "fr": "Qu'est-ce qui t'intéresse le plus : les sons, l'accent tonique, le rythme ou la mélodie ?",
+    "it": "Che cosa ti interessa di più: i suoni, l'accento, il ritmo o l'intonazione?",
+    "pt": "Que parte da pronúncia te interessa mais: os sons, o acento, o ritmo ou a entoação?",
+    "pt_BR": "Qual parte da pronúncia mais te interessa: os sons, a tonicidade, o ritmo ou a entonação?"
+   }
+  },
+  {
+   "id": "pronunciation-039",
+   "lv": "any",
+   "i18n": {
+    "en": "Who has helped you most with your pronunciation so far?",
+    "de": "Wer hat dir bisher am meisten bei deiner Aussprache geholfen?",
+    "es": "¿Quién te ha ayudado más con tu pronunciación hasta ahora?",
+    "fr": "Qui t'a le plus aidé avec ta prononciation jusqu'ici ?",
+    "it": "Chi ti ha aiutato di più con la pronuncia finora?",
+    "pt": "Quem te ajudou mais com a tua pronúncia até agora?",
+    "pt_BR": "Quem mais te ajudou com sua pronúncia até agora?"
+   }
+  },
+  {
+   "id": "pronunciation-040",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you like us to practise together in our chats?",
+    "de": "Was möchtest du in unseren Gesprächen gemeinsam mit mir üben?",
+    "es": "¿Qué te gustaría que practicáramos juntos en nuestras charlas?",
+    "fr": "Qu'aimerais-tu qu'on travaille ensemble dans nos discussions ?",
+    "it": "Che cosa ti piacerebbe esercitare insieme nelle nostre chiacchierate?",
+    "pt": "O que gostavas que praticássemos juntos nas nossas conversas?",
+    "pt_BR": "O que você gostaria que a gente praticasse junto nas nossas conversas?"
+   }
+  },
+  {
+   "id": "pronunciation-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Can you feel the buzz in your throat when you say z? And with s?",
+    "de": "Spürst du das Summen im Hals, wenn du ein stimmhaftes S sagst? Und beim scharfen S?",
+    "es": "¿Notas la vibración en la garganta al decir una z zumbante como la del inglés? ¿Y con la s?",
+    "fr": "Sens-tu la vibration dans ta gorge quand tu dis z ? Et avec s ?",
+    "it": "Senti la vibrazione in gola quando dici la s di rosa? E con la s di sole?",
+    "pt": "Sentes a vibração na garganta quando dizes z? E com s?",
+    "pt_BR": "Você sente a vibração na garganta quando fala z? E com s?"
+   }
+  },
+  {
+   "id": "pronunciation-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which vowel sound in your target language feels strange in your mouth?",
+    "de": "Welcher Vokal deiner Zielsprache fühlt sich im Mund seltsam an?",
+    "es": "¿Qué vocal del idioma que aprendes se siente extraña en tu boca?",
+    "fr": "Quelle voyelle de la langue que tu apprends te paraît bizarre en bouche ?",
+    "it": "Quale vocale della lingua che studi ti sembra strana in bocca?",
+    "pt": "Que vogal da língua que estás a aprender te parece estranha na boca?",
+    "pt_BR": "Qual vogal do idioma que você está aprendendo parece estranha na boca?"
+   }
+  },
+  {
+   "id": "pronunciation-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you tried recording yourself yet? What did you notice?",
+    "de": "Hast du dich schon einmal aufgenommen? Was ist dir aufgefallen?",
+    "es": "¿Ya has probado a grabarte? ¿Qué notaste?",
+    "fr": "As-tu déjà essayé de t'enregistrer ? Qu'as-tu remarqué ?",
+    "it": "Hai già provato a registrarti? Che cosa hai notato?",
+    "pt": "Já experimentaste gravar-te? O que notaste?",
+    "pt_BR": "Você já tentou se gravar? O que percebeu?"
+   }
+  },
+  {
+   "id": "pronunciation-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which silent letters in your target language still surprise you?",
+    "de": "Welche stummen Buchstaben in deiner Zielsprache überraschen dich immer noch?",
+    "es": "¿Qué letras mudas del idioma que aprendes todavía te sorprenden?",
+    "fr": "Quelles lettres muettes de la langue que tu apprends te surprennent encore ?",
+    "it": "Quali lettere mute della lingua che studi ti sorprendono ancora?",
+    "pt": "Que letras mudas da língua que estás a aprender ainda te surpreendem?",
+    "pt_BR": "Quais letras mudas do idioma que você aprende ainda te surpreendem?"
+   }
+  },
+  {
+   "id": "pronunciation-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you know which syllable is stressed in your own name?",
+    "de": "Weißt du, welche Silbe in deinem eigenen Namen betont wird?",
+    "es": "¿Sabes qué sílaba lleva el acento en tu propio nombre?",
+    "fr": "Sais-tu quelle syllabe est accentuée dans ton propre prénom ?",
+    "it": "Sai quale sillaba è accentata nel tuo nome?",
+    "pt": "Sabes qual é a sílaba tónica do teu próprio nome?",
+    "pt_BR": "Você sabe qual é a sílaba tônica do seu próprio nome?"
+   }
+  },
+  {
+   "id": "pronunciation-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you say your name to someone who doesn't speak your language?",
+    "de": "Wie sagst du deinen Namen jemandem, der deine Sprache nicht spricht?",
+    "es": "¿Cómo dices tu nombre a alguien que no habla tu idioma?",
+    "fr": "Comment dis-tu ton prénom à quelqu'un qui ne parle pas ta langue ?",
+    "it": "Come dici il tuo nome a chi non parla la tua lingua?",
+    "pt": "Como dizes o teu nome a alguém que não fala a tua língua?",
+    "pt_BR": "Como você fala seu nome para alguém que não fala seu idioma?"
+   }
+  },
+  {
+   "id": "pronunciation-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which r sound do you use in your own language: tapped, rolled, throaty or another?",
+    "de": "Welches R benutzt du in deiner Sprache: getippt, gerollt, aus dem Rachen oder ein anderes?",
+    "es": "¿Qué r usas en tu idioma: simple, vibrante, gutural u otra?",
+    "fr": "Quel r utilises-tu dans ta langue : battu, roulé, de gorge ou un autre ?",
+    "it": "Quale r usi nella tua lingua: battuta, vibrante, di gola o un'altra?",
+    "pt": "Que r usas na tua língua: simples, vibrante, gutural ou outro?",
+    "pt_BR": "Qual r você usa no seu idioma: simples, vibrante, gutural ou outro?"
+   }
+  },
+  {
+   "id": "pronunciation-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Is the English th easy or hard for you? Why?",
+    "de": "Ist das englische th für dich leicht oder schwer? Warum?",
+    "es": "¿El th del inglés te resulta fácil o difícil? ¿Por qué?",
+    "fr": "Le th anglais, c'est facile ou difficile pour toi ? Pourquoi ?",
+    "it": "Il th inglese per te è facile o difficile? Perché?",
+    "pt": "O th do inglês é fácil ou difícil para ti? Porquê?",
+    "pt_BR": "O th do inglês é fácil ou difícil para você? Por quê?"
+   }
+  },
+  {
+   "id": "pronunciation-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which simple greeting would you like to pronounce perfectly?",
+    "de": "Welche einfache Begrüßung möchtest du perfekt aussprechen können?",
+    "es": "¿Qué saludo sencillo te gustaría pronunciar a la perfección?",
+    "fr": "Quelle salutation simple aimerais-tu prononcer parfaitement ?",
+    "it": "Quale saluto semplice vorresti pronunciare alla perfezione?",
+    "pt": "Que cumprimento simples gostavas de pronunciar na perfeição?",
+    "pt_BR": "Qual cumprimento simples você gostaria de pronunciar perfeitamente?"
+   }
+  },
+  {
+   "id": "pronunciation-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you tried the paper test for the puff of air? What happened?",
+    "de": "Hast du den Papiertest für den Lufthauch ausprobiert? Was ist passiert?",
+    "es": "¿Has probado la prueba del papel para el soplo de aire? ¿Qué pasó?",
+    "fr": "As-tu essayé le test de la feuille pour le souffle d'air ? Que s'est-il passé ?",
+    "it": "Hai provato il test del foglio per il soffio d'aria? Che cos'è successo?",
+    "pt": "Já experimentaste o teste do papel para o sopro de ar? O que aconteceu?",
+    "pt_BR": "Você já fez o teste do papel para o sopro de ar? O que aconteceu?"
+   }
+  },
+  {
+   "id": "pronunciation-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which numbers are tricky for you to say in another language?",
+    "de": "Welche Zahlen sind für dich in einer anderen Sprache schwer auszusprechen?",
+    "es": "¿Qué números te cuesta decir en otro idioma?",
+    "fr": "Quels nombres as-tu du mal à dire dans une autre langue ?",
+    "it": "Quali numeri trovi difficili da dire in un'altra lingua?",
+    "pt": "Que números achas difíceis de dizer noutra língua?",
+    "pt_BR": "Quais números você acha difíceis de falar em outro idioma?"
+   }
+  },
+  {
+   "id": "pronunciation-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you spell your name aloud on the phone?",
+    "de": "Wie buchstabierst du deinen Namen am Telefon?",
+    "es": "¿Cómo deletreas tu nombre por teléfono?",
+    "fr": "Comment épelles-tu ton nom au téléphone ?",
+    "it": "Come fai lo spelling del tuo nome al telefono?",
+    "pt": "Como soletras o teu nome ao telefone?",
+    "pt_BR": "Como você soletra seu nome ao telefone?"
+   }
+  },
+  {
+   "id": "pronunciation-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which word do you always stress on the wrong syllable?",
+    "de": "Welches Wort betonst du immer auf der falschen Silbe?",
+    "es": "¿Qué palabra siempre acentúas en la sílaba equivocada?",
+    "fr": "Quel mot accentues-tu toujours sur la mauvaise syllabe ?",
+    "it": "Quale parola accentui sempre sulla sillaba sbagliata?",
+    "pt": "Que palavra acentuas sempre na sílaba errada?",
+    "pt_BR": "Qual palavra você sempre acentua na sílaba errada?"
+   }
+  },
+  {
+   "id": "pronunciation-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you practised in front of a mirror? How did it feel?",
+    "de": "Hast du schon mal vor dem Spiegel geübt? Wie hat sich das angefühlt?",
+    "es": "¿Has practicado delante de un espejo? ¿Qué tal te sentiste?",
+    "fr": "T'es-tu déjà entraîné devant un miroir ? Qu'as-tu ressenti ?",
+    "it": "Ti sei mai esercitato davanti a uno specchio? Come ti sei sentito?",
+    "pt": "Já praticaste em frente ao espelho? Como te sentiste?",
+    "pt_BR": "Você já praticou na frente do espelho? Como se sentiu?"
+   }
+  },
+  {
+   "id": "pronunciation-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which tongue twister would you like to master?",
+    "de": "Welchen Zungenbrecher möchtest du meistern?",
+    "es": "¿Qué trabalenguas te gustaría dominar?",
+    "fr": "Quel virelangue aimerais-tu maîtriser ?",
+    "it": "Quale scioglilingua vorresti padroneggiare?",
+    "pt": "Que trava-línguas gostavas de dominar?",
+    "pt_BR": "Qual trava-língua você gostaria de dominar?"
+   }
+  },
+  {
+   "id": "pronunciation-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you have a favourite word with a nasal sound, like pão or bon?",
+    "de": "Hast du ein Lieblingswort mit einem Nasallaut, wie pão oder bon?",
+    "es": "¿Tienes alguna palabra favorita con sonido nasal, como pão o bon?",
+    "fr": "As-tu un mot préféré avec un son nasal, comme pão ou bon ?",
+    "it": "Hai una parola preferita con un suono nasale, come pão o bon?",
+    "pt": "Tens alguma palavra preferida com som nasal, como pão ou bom?",
+    "pt_BR": "Você tem alguma palavra favorita com som nasal, como pão ou bom?"
+   }
+  },
+  {
+   "id": "pronunciation-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which accent are you following as your model in the language you are learning?",
+    "de": "Welchem Akzent folgst du als Vorbild in der Sprache, die du lernst?",
+    "es": "¿Qué acento sigues como modelo en el idioma que aprendes?",
+    "fr": "Quel accent prends-tu comme modèle dans la langue que tu apprends ?",
+    "it": "Quale accento segui come modello nella lingua che stai imparando?",
+    "pt": "Que sotaque segues como modelo na língua que estás a aprender?",
+    "pt_BR": "Qual sotaque você segue como modelo no idioma que está aprendendo?"
+   }
+  },
+  {
+   "id": "pronunciation-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which sound from your target language doesn't exist in your mother tongue?",
+    "de": "Welcher Laut deiner Zielsprache existiert in deiner Muttersprache nicht?",
+    "es": "¿Qué sonido del idioma que aprendes no existe en tu lengua materna?",
+    "fr": "Quel son de la langue que tu apprends n'existe pas dans ta langue maternelle ?",
+    "it": "Quale suono della lingua che studi non esiste nella tua lingua madre?",
+    "pt": "Que som da língua que estás a aprender não existe na tua língua materna?",
+    "pt_BR": "Qual som do idioma que você aprende não existe na sua língua materna?"
+   }
+  },
+  {
+   "id": "pronunciation-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you speak more clearly when you slow down?",
+    "de": "Sprichst du deutlicher, wenn du langsamer wirst?",
+    "es": "¿Hablas con más claridad cuando vas más despacio?",
+    "fr": "Parles-tu plus clairement quand tu ralentis ?",
+    "it": "Parli in modo più chiaro quando rallenti?",
+    "pt": "Falas com mais clareza quando abrandas?",
+    "pt_BR": "Você fala com mais clareza quando desacelera?"
+   }
+  },
+  {
+   "id": "pronunciation-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which place name is hard for you to pronounce?",
+    "de": "Welcher Ortsname ist für dich schwer auszusprechen?",
+    "es": "¿Qué nombre de lugar te cuesta pronunciar?",
+    "fr": "Quel nom de lieu as-tu du mal à prononcer ?",
+    "it": "Quale nome di luogo trovi difficile da pronunciare?",
+    "pt": "Que nome de lugar achas difícil de pronunciar?",
+    "pt_BR": "Qual nome de lugar você acha difícil de pronunciar?"
+   }
+  },
+  {
+   "id": "pronunciation-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which pair of similar words confuses you most, like ship and sheep?",
+    "de": "Welches Paar ähnlicher Wörter verwirrt dich am meisten, wie ship und sheep?",
+    "es": "¿Qué par de palabras parecidas te confunde más, como ship y sheep?",
+    "fr": "Quelle paire de mots proches te pose le plus de problèmes, comme ship et sheep ?",
+    "it": "Quale coppia di parole simili ti confonde di più, come ship e sheep?",
+    "pt": "Que par de palavras parecidas te confunde mais, como ship e sheep?",
+    "pt_BR": "Qual par de palavras parecidas mais te confunde, como ship e sheep?"
+   }
+  },
+  {
+   "id": "pronunciation-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you warm up before speaking practice, if you do?",
+    "de": "Wie wärmst du dich vor dem Sprechtraining auf, falls du das tust?",
+    "es": "¿Cómo calientas antes de practicar la expresión oral, si lo haces?",
+    "fr": "Comment t'échauffes-tu avant de pratiquer l'oral, si tu le fais ?",
+    "it": "Come ti riscaldi prima di esercitarti a parlare, se lo fai?",
+    "pt": "Como aqueces antes de praticar a oralidade, se o fazes?",
+    "pt_BR": "Como você se aquece antes de praticar a fala, se costuma fazer isso?"
+   }
+  },
+  {
+   "id": "pronunciation-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which dictionary or app do you use to check pronunciation?",
+    "de": "Welches Wörterbuch oder welche App nutzt du, um die Aussprache zu prüfen?",
+    "es": "¿Qué diccionario o aplicación usas para comprobar la pronunciación?",
+    "fr": "Quel dictionnaire ou quelle appli utilises-tu pour vérifier la prononciation ?",
+    "it": "Quale dizionario o app usi per controllare la pronuncia?",
+    "pt": "Que dicionário ou aplicação usas para verificar a pronúncia?",
+    "pt_BR": "Qual dicionário ou aplicativo você usa para conferir a pronúncia?"
+   }
+  },
+  {
+   "id": "pronunciation-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you feel silly making new mouth movements? How do you deal with it?",
+    "de": "Kommst du dir bei neuen Mundbewegungen albern vor? Wie gehst du damit um?",
+    "es": "¿Te sientes ridículo al hacer nuevos movimientos con la boca? ¿Cómo lo llevas?",
+    "fr": "Te sens-tu ridicule en faisant de nouveaux mouvements de bouche ? Comment le gères-tu ?",
+    "it": "Ti senti buffo a fare nuovi movimenti con la bocca? Come la prendi?",
+    "pt": "Sentes-te tonto a fazer movimentos novos com a boca? Como lidas com isso?",
+    "pt_BR": "Você se sente bobo fazendo movimentos novos com a boca? Como lida com isso?"
+   }
+  },
+  {
+   "id": "pronunciation-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which sound would you like to work on first?",
+    "de": "An welchem Laut möchtest du zuerst arbeiten?",
+    "es": "¿Qué sonido te gustaría trabajar primero?",
+    "fr": "Sur quel son aimerais-tu travailler en premier ?",
+    "it": "Su quale suono vorresti lavorare per primo?",
+    "pt": "Em que som gostavas de trabalhar primeiro?",
+    "pt_BR": "Em qual som você gostaria de trabalhar primeiro?"
+   }
+  },
+  {
+   "id": "pronunciation-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you notice words linking together when native speakers talk fast?",
+    "de": "Merkst du, wie Wörter ineinanderfließen, wenn Muttersprachler schnell sprechen?",
+    "es": "¿Notas cómo se unen las palabras cuando los nativos hablan rápido?",
+    "fr": "Remarques-tu que les mots s'enchaînent quand les natifs parlent vite ?",
+    "it": "Noti come le parole si legano quando i madrelingua parlano veloce?",
+    "pt": "Notas as palavras a ligarem-se umas às outras quando os nativos falam depressa?",
+    "pt_BR": "Você percebe as palavras se emendando quando os nativos falam rápido?"
+   }
+  },
+  {
+   "id": "pronunciation-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which language's rhythm feels most natural to you?",
+    "de": "Welcher Sprachrhythmus fühlt sich für dich am natürlichsten an?",
+    "es": "¿El ritmo de qué idioma te resulta más natural?",
+    "fr": "Le rythme de quelle langue te semble le plus naturel ?",
+    "it": "Il ritmo di quale lingua ti sembra più naturale?",
+    "pt": "O ritmo de que língua te parece mais natural?",
+    "pt_BR": "O ritmo de qual idioma parece mais natural para você?"
+   }
+  },
+  {
+   "id": "pronunciation-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How does your voice change when you ask a question?",
+    "de": "Wie verändert sich deine Stimme, wenn du eine Frage stellst?",
+    "es": "¿Cómo cambia tu voz cuando haces una pregunta?",
+    "fr": "Comment ta voix change-t-elle quand tu poses une question ?",
+    "it": "Come cambia la tua voce quando fai una domanda?",
+    "pt": "Como muda a tua voz quando fazes uma pergunta?",
+    "pt_BR": "Como sua voz muda quando você faz uma pergunta?"
+   }
+  },
+  {
+   "id": "pronunciation-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which filler words do you use when you are thinking?",
+    "de": "Welche Füllwörter benutzt du, wenn du nachdenkst?",
+    "es": "¿Qué muletillas usas cuando estás pensando?",
+    "fr": "Quels mots de remplissage utilises-tu quand tu réfléchis ?",
+    "it": "Quali intercalari usi quando stai pensando?",
+    "pt": "Que bordões usas quando estás a pensar?",
+    "pt_BR": "Quais palavras de apoio você usa quando está pensando?"
+   }
+  },
+  {
+   "id": "pronunciation-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Can you hear the difference between a polite and an impatient tone in your target language?",
+    "de": "Hörst du in deiner Zielsprache den Unterschied zwischen einem höflichen und einem ungeduldigen Ton?",
+    "es": "¿Distingues un tono amable de uno impaciente en el idioma que aprendes?",
+    "fr": "Entends-tu la différence entre un ton poli et un ton impatient dans la langue que tu apprends ?",
+    "it": "Senti la differenza tra un tono gentile e uno impaziente nella lingua che studi?",
+    "pt": "Consegues ouvir a diferença entre um tom educado e um impaciente na língua que aprendes?",
+    "pt_BR": "Você percebe a diferença entre um tom educado e um impaciente no idioma que aprende?"
+   }
+  },
+  {
+   "id": "pronunciation-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which casual short forms, like gonna or pra, do you use or hear?",
+    "de": "Welche umgangssprachlichen Kurzformen wie gonna oder pra benutzt oder hörst du?",
+    "es": "¿Qué formas cortas coloquiales, como gonna o pa, usas u oyes?",
+    "fr": "Quelles formes familières raccourcies, comme gonna ou chuis, utilises-tu ou entends-tu ?",
+    "it": "Quali forme brevi colloquiali, come gonna o pra, usi o senti?",
+    "pt": "Que formas curtas coloquiais, como gonna ou pra, usas ou ouves?",
+    "pt_BR": "Quais formas curtas informais, como gonna ou pra, você usa ou ouve?"
+   }
+  },
+  {
+   "id": "pronunciation-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you feel on the phone in another language compared with face to face?",
+    "de": "Wie fühlst du dich am Telefon in einer anderen Sprache im Vergleich zum persönlichen Gespräch?",
+    "es": "¿Cómo te sientes al teléfono en otro idioma comparado con hablar cara a cara?",
+    "fr": "Comment te sens-tu au téléphone dans une autre langue, par rapport au face-à-face ?",
+    "it": "Come ti senti al telefono in un'altra lingua rispetto a parlare di persona?",
+    "pt": "Como te sentes ao telefone noutra língua em comparação com falar cara a cara?",
+    "pt_BR": "Como você se sente ao telefone em outro idioma comparado a falar pessoalmente?"
+   }
+  },
+  {
+   "id": "pronunciation-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which regional accent of your target language is hardest for you to understand?",
+    "de": "Welchen regionalen Akzent deiner Zielsprache verstehst du am schwersten?",
+    "es": "¿Qué acento regional del idioma que aprendes te cuesta más entender?",
+    "fr": "Quel accent régional de la langue que tu apprends as-tu le plus de mal à comprendre ?",
+    "it": "Quale accento regionale della lingua che studi fai più fatica a capire?",
+    "pt": "Que sotaque regional da língua que estás a aprender te custa mais a perceber?",
+    "pt_BR": "Qual sotaque regional do idioma que você aprende é mais difícil de entender?"
+   }
+  },
+  {
+   "id": "pronunciation-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried shadowing a podcast or video? What did you learn?",
+    "de": "Hast du schon mal einen Podcast oder ein Video beim Sprechen nachgeahmt? Was hast du gelernt?",
+    "es": "¿Has probado a repetir al mismo tiempo un pódcast o un vídeo? ¿Qué aprendiste?",
+    "fr": "As-tu essayé de répéter en même temps qu'un podcast ou une vidéo ? Qu'as-tu appris ?",
+    "it": "Hai provato a ripetere in contemporanea un podcast o un video? Che cosa hai imparato?",
+    "pt": "Já experimentaste repetir em simultâneo um podcast ou um vídeo? O que aprendeste?",
+    "pt_BR": "Você já tentou repetir junto com um podcast ou vídeo? O que aprendeu?"
+   }
+  },
+  {
+   "id": "pronunciation-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which song has helped you improve your pronunciation?",
+    "de": "Welches Lied hat dir geholfen, deine Aussprache zu verbessern?",
+    "es": "¿Qué canción te ha ayudado a mejorar tu pronunciación?",
+    "fr": "Quelle chanson t'a aidé à améliorer ta prononciation ?",
+    "it": "Quale canzone ti ha aiutato a migliorare la pronuncia?",
+    "pt": "Que canção te ajudou a melhorar a tua pronúncia?",
+    "pt_BR": "Qual música te ajudou a melhorar sua pronúncia?"
+   }
+  },
+  {
+   "id": "pronunciation-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Does your melody change when you are excited compared with when you are calm?",
+    "de": "Verändert sich deine Sprachmelodie, wenn du aufgeregt bist, im Vergleich zu ruhigen Momenten?",
+    "es": "¿Cambia tu entonación cuando estás emocionado en comparación con cuando estás tranquilo?",
+    "fr": "Ta mélodie change-t-elle quand tu es enthousiaste par rapport à quand tu es calme ?",
+    "it": "La tua intonazione cambia quando sei entusiasta rispetto a quando sei tranquillo?",
+    "pt": "A tua entoação muda quando estás entusiasmado em comparação com quando estás calmo?",
+    "pt_BR": "Sua entonação muda quando você está empolgado em comparação a quando está calmo?"
+   }
+  },
+  {
+   "id": "pronunciation-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which sounds do you tend to lose when you speak fast?",
+    "de": "Welche Laute verschluckst du, wenn du schnell sprichst?",
+    "es": "¿Qué sonidos tiendes a perder cuando hablas rápido?",
+    "fr": "Quels sons as-tu tendance à avaler quand tu parles vite ?",
+    "it": "Quali suoni tendi a perdere quando parli veloce?",
+    "pt": "Que sons tendes a perder quando falas depressa?",
+    "pt_BR": "Quais sons você costuma engolir quando fala rápido?"
+   }
+  },
+  {
+   "id": "pronunciation-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you show you are listening in a conversation in your language?",
+    "de": "Wie zeigst du in deiner Sprache, dass du im Gespräch zuhörst?",
+    "es": "¿Cómo muestras que estás escuchando en una conversación en tu idioma?",
+    "fr": "Comment montres-tu que tu écoutes dans une conversation dans ta langue ?",
+    "it": "Come fai capire che stai ascoltando in una conversazione nella tua lingua?",
+    "pt": "Como mostras que estás a ouvir numa conversa na tua língua?",
+    "pt_BR": "Como você mostra que está ouvindo numa conversa no seu idioma?"
+   }
+  },
+  {
+   "id": "pronunciation-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you prefer sounding very accurate or very fluent?",
+    "de": "Möchtest du lieber sehr genau oder sehr flüssig klingen?",
+    "es": "¿Prefieres sonar muy preciso o muy fluido?",
+    "fr": "Tu préfères paraître très précis ou très fluide ?",
+    "it": "Preferisci sembrare molto preciso o molto fluente?",
+    "pt": "Preferes soar muito correto ou muito fluente?",
+    "pt_BR": "Você prefere soar muito correto ou muito fluente?"
+   }
+  },
+  {
+   "id": "pronunciation-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which old pronunciation habit would you like to break?",
+    "de": "Welche alte Aussprachegewohnheit würdest du gern ablegen?",
+    "es": "¿Qué viejo hábito de pronunciación te gustaría dejar atrás?",
+    "fr": "Quelle vieille habitude de prononciation aimerais-tu perdre ?",
+    "it": "Quale vecchia abitudine di pronuncia vorresti perdere?",
+    "pt": "Que velho hábito de pronúncia gostavas de deixar?",
+    "pt_BR": "Qual velho hábito de pronúncia você gostaria de largar?"
+   }
+  },
+  {
+   "id": "pronunciation-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What feedback on your pronunciation has helped you most?",
+    "de": "Welches Feedback zu deiner Aussprache hat dir am meisten geholfen?",
+    "es": "¿Qué comentario sobre tu pronunciación te ha ayudado más?",
+    "fr": "Quel retour sur ta prononciation t'a le plus aidé ?",
+    "it": "Quale consiglio sulla tua pronuncia ti è stato più utile?",
+    "pt": "Que comentário sobre a tua pronúncia te ajudou mais?",
+    "pt_BR": "Qual comentário sobre sua pronúncia mais te ajudou?"
+   }
+  },
+  {
+   "id": "pronunciation-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried voice typing to test your clarity? How well did it understand you?",
+    "de": "Hast du schon Spracheingabe getestet, um deine Deutlichkeit zu prüfen? Wie gut hat sie dich verstanden?",
+    "es": "¿Has probado el dictado por voz para comprobar tu claridad? ¿Qué tal te entendió?",
+    "fr": "As-tu essayé la dictée vocale pour tester ta clarté ? T'a-t-elle bien compris ?",
+    "it": "Hai provato la dettatura vocale per testare la tua chiarezza? Ti ha capito bene?",
+    "pt": "Já experimentaste o ditado por voz para testar a tua clareza? Percebeu-te bem?",
+    "pt_BR": "Você já testou a digitação por voz para conferir sua clareza? Ela te entendeu bem?"
+   }
+  },
+  {
+   "id": "pronunciation-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do people in your culture usually speak loudly or softly in public?",
+    "de": "Sprechen die Menschen in deiner Kultur in der Öffentlichkeit eher laut oder leise?",
+    "es": "¿En tu cultura la gente suele hablar alto o bajo en público?",
+    "fr": "Dans ta culture, les gens parlent-ils plutôt fort ou doucement en public ?",
+    "it": "Nella tua cultura la gente parla di solito ad alta voce o piano in pubblico?",
+    "pt": "Na tua cultura, as pessoas costumam falar alto ou baixo em público?",
+    "pt_BR": "Na sua cultura, as pessoas costumam falar alto ou baixo em público?"
+   }
+  },
+  {
+   "id": "pronunciation-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which long word in your target language do you love to say?",
+    "de": "Welches lange Wort deiner Zielsprache sagst du besonders gern?",
+    "es": "¿Qué palabra larga del idioma que aprendes te encanta decir?",
+    "fr": "Quel mot long de la langue que tu apprends adores-tu prononcer ?",
+    "it": "Quale parola lunga della lingua che studi ami pronunciare?",
+    "pt": "Que palavra comprida da língua que estás a aprender adoras dizer?",
+    "pt_BR": "Qual palavra comprida do idioma que você aprende você adora falar?"
+   }
+  },
+  {
+   "id": "pronunciation-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How does your voice sound different when you speak your second language?",
+    "de": "Wie klingt deine Stimme anders, wenn du deine Zweitsprache sprichst?",
+    "es": "¿Cómo cambia el sonido de tu voz cuando hablas tu segundo idioma?",
+    "fr": "En quoi ta voix sonne-t-elle différemment quand tu parles ta deuxième langue ?",
+    "it": "In che modo la tua voce suona diversa quando parli la tua seconda lingua?",
+    "pt": "Em que é que a tua voz soa diferente quando falas a tua segunda língua?",
+    "pt_BR": "Como sua voz soa diferente quando você fala seu segundo idioma?"
+   }
+  },
+  {
+   "id": "pronunciation-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What matters more for being understood: individual sounds or melody?",
+    "de": "Was ist wichtiger, um verstanden zu werden: einzelne Laute oder die Melodie?",
+    "es": "¿Qué importa más para que te entiendan: los sonidos sueltos o la entonación?",
+    "fr": "Qu'est-ce qui compte le plus pour être compris : les sons ou la mélodie ?",
+    "it": "Che cosa conta di più per farsi capire: i singoli suoni o l'intonazione?",
+    "pt": "O que conta mais para ser percebido: os sons individuais ou a entoação?",
+    "pt_BR": "O que importa mais para ser entendido: os sons isolados ou a entonação?"
+   }
+  },
+  {
+   "id": "pronunciation-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How does your mother tongue shape the way you speak other languages?",
+    "de": "Wie prägt deine Muttersprache die Art, wie du andere Sprachen sprichst?",
+    "es": "¿Cómo influye tu lengua materna en tu forma de hablar otros idiomas?",
+    "fr": "Comment ta langue maternelle influence-t-elle ta façon de parler d'autres langues ?",
+    "it": "In che modo la tua lingua madre influenza il tuo modo di parlare altre lingue?",
+    "pt": "Como é que a tua língua materna influencia a forma como falas outras línguas?",
+    "pt_BR": "Como sua língua materna influencia o jeito como você fala outros idiomas?"
+   }
+  },
+  {
+   "id": "pronunciation-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Would you like to lose your accent completely or keep a little of it? Why?",
+    "de": "Möchtest du deinen Akzent ganz verlieren oder ein bisschen behalten? Warum?",
+    "es": "¿Te gustaría perder del todo tu acento o conservar un poco? ¿Por qué?",
+    "fr": "Aimerais-tu perdre complètement ton accent ou en garder un peu ? Pourquoi ?",
+    "it": "Vorresti perdere del tutto il tuo accento o conservarne un po'? Perché?",
+    "pt": "Gostavas de perder completamente o teu sotaque ou manter um pouco? Porquê?",
+    "pt_BR": "Você gostaria de perder totalmente o sotaque ou manter um pouco? Por quê?"
+   }
+  },
+  {
+   "id": "pronunciation-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you prepare your pronunciation for a presentation or important talk?",
+    "de": "Wie bereitest du deine Aussprache auf eine Präsentation oder ein wichtiges Gespräch vor?",
+    "es": "¿Cómo preparas tu pronunciación para una presentación o una charla importante?",
+    "fr": "Comment prépares-tu ta prononciation pour une présentation ou un échange important ?",
+    "it": "Come prepari la pronuncia per una presentazione o un discorso importante?",
+    "pt": "Como preparas a tua pronúncia para uma apresentação ou conversa importante?",
+    "pt_BR": "Como você prepara sua pronúncia para uma apresentação ou conversa importante?"
+   }
+  },
+  {
+   "id": "pronunciation-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which subtle vowel difference do you still find hard to hear?",
+    "de": "Welchen feinen Vokalunterschied hörst du immer noch schwer heraus?",
+    "es": "¿Qué diferencia sutil entre vocales todavía te cuesta oír?",
+    "fr": "Quelle différence subtile entre voyelles as-tu encore du mal à entendre ?",
+    "it": "Quale sottile differenza tra vocali fai ancora fatica a sentire?",
+    "pt": "Que diferença subtil entre vogais ainda tens dificuldade em ouvir?",
+    "pt_BR": "Qual diferença sutil entre vogais você ainda tem dificuldade de ouvir?"
+   }
+  },
+  {
+   "id": "pronunciation-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Have you ever switched accents depending on who you were talking to?",
+    "de": "Hast du schon mal je nach Gesprächspartner deinen Akzent gewechselt?",
+    "es": "¿Alguna vez has cambiado de acento según con quién hablabas?",
+    "fr": "As-tu déjà changé d'accent selon la personne à qui tu parlais ?",
+    "it": "Ti è mai capitato di cambiare accento a seconda di con chi parlavi?",
+    "pt": "Já mudaste de sotaque conforme a pessoa com quem falavas?",
+    "pt_BR": "Você já mudou de sotaque dependendo de com quem estava falando?"
+   }
+  },
+  {
+   "id": "pronunciation-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you explain a tricky sound of your language to a beginner?",
+    "de": "Wie würdest du einem Anfänger einen schwierigen Laut deiner Sprache erklären?",
+    "es": "¿Cómo le explicarías a un principiante un sonido difícil de tu idioma?",
+    "fr": "Comment expliquerais-tu un son difficile de ta langue à un débutant ?",
+    "it": "Come spiegheresti a un principiante un suono difficile della tua lingua?",
+    "pt": "Como explicarias a um principiante um som difícil da tua língua?",
+    "pt_BR": "Como você explicaria um som difícil do seu idioma para um iniciante?"
+   }
+  },
+  {
+   "id": "pronunciation-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What makes a voice sound confident to you?",
+    "de": "Was lässt eine Stimme für dich selbstbewusst klingen?",
+    "es": "¿Qué hace que una voz te suene segura?",
+    "fr": "Qu'est-ce qui rend une voix assurée à tes oreilles ?",
+    "it": "Che cosa rende sicura una voce, secondo te?",
+    "pt": "O que faz uma voz soar confiante para ti?",
+    "pt_BR": "O que faz uma voz soar confiante para você?"
+   }
+  },
+  {
+   "id": "pronunciation-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which language has the most surprising rules linking spelling and sound?",
+    "de": "Welche Sprache hat die überraschendsten Regeln zwischen Schreibung und Aussprache?",
+    "es": "¿Qué idioma tiene las reglas más sorprendentes entre escritura y pronunciación?",
+    "fr": "Quelle langue a les règles les plus surprenantes entre orthographe et prononciation ?",
+    "it": "Quale lingua ha le regole più sorprendenti tra scrittura e pronuncia?",
+    "pt": "Que língua tem as regras mais surpreendentes entre escrita e pronúncia?",
+    "pt_BR": "Qual idioma tem as regras mais surpreendentes entre escrita e pronúncia?"
+   }
+  },
+  {
+   "id": "pronunciation-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you keep your pronunciation fresh in a language you rarely use?",
+    "de": "Wie hältst du deine Aussprache in einer Sprache frisch, die du selten benutzt?",
+    "es": "¿Cómo mantienes tu pronunciación en forma en un idioma que usas poco?",
+    "fr": "Comment entretiens-tu ta prononciation dans une langue que tu utilises rarement ?",
+    "it": "Come mantieni in forma la pronuncia in una lingua che usi di rado?",
+    "pt": "Como manténs a tua pronúncia em forma numa língua que usas pouco?",
+    "pt_BR": "Como você mantém a pronúncia em dia num idioma que usa pouco?"
+   }
+  },
+  {
+   "id": "pronunciation-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Do you feel like a slightly different person when you speak another language?",
+    "de": "Fühlst du dich wie ein etwas anderer Mensch, wenn du eine andere Sprache sprichst?",
+    "es": "¿Te sientes una persona un poco distinta cuando hablas otro idioma?",
+    "fr": "Te sens-tu un peu différent quand tu parles une autre langue ?",
+    "it": "Ti senti una persona un po' diversa quando parli un'altra lingua?",
+    "pt": "Sentes-te uma pessoa um pouco diferente quando falas outra língua?",
+    "pt_BR": "Você se sente uma pessoa um pouco diferente quando fala outro idioma?"
+   }
+  },
+  {
+   "id": "pronunciation-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which pronunciation myth did you believe before?",
+    "de": "An welchen Aussprache-Mythos hast du früher geglaubt?",
+    "es": "¿Qué mito sobre la pronunciación creías antes?",
+    "fr": "À quel mythe sur la prononciation croyais-tu avant ?",
+    "it": "A quale mito sulla pronuncia credevi prima?",
+    "pt": "Em que mito sobre a pronúncia acreditavas antes?",
+    "pt_BR": "Em qual mito sobre pronúncia você acreditava antes?"
+   }
+  },
+  {
+   "id": "pronunciation-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which advanced skill would you like to master: humour, storytelling or public speaking?",
+    "de": "Welche fortgeschrittene Fähigkeit möchtest du meistern: Humor, Erzählen oder Reden vor Publikum?",
+    "es": "¿Qué habilidad avanzada te gustaría dominar: el humor, contar historias o hablar en público?",
+    "fr": "Quelle compétence avancée aimerais-tu maîtriser : l'humour, le récit ou la prise de parole en public ?",
+    "it": "Quale abilità avanzata vorresti padroneggiare: l'umorismo, il racconto o parlare in pubblico?",
+    "pt": "Que competência avançada gostavas de dominar: o humor, contar histórias ou falar em público?",
+    "pt_BR": "Qual habilidade avançada você gostaria de dominar: humor, contar histórias ou falar em público?"
+   }
+  },
+  {
+   "id": "pronunciation-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has your pronunciation changed since you started learning?",
+    "de": "Wie hat sich deine Aussprache verändert, seit du angefangen hast zu lernen?",
+    "es": "¿Cómo ha cambiado tu pronunciación desde que empezaste a aprender?",
+    "fr": "Comment ta prononciation a-t-elle évolué depuis que tu as commencé à apprendre ?",
+    "it": "Com'è cambiata la tua pronuncia da quando hai iniziato a studiare?",
+    "pt": "Como mudou a tua pronúncia desde que começaste a aprender?",
+    "pt_BR": "Como sua pronúncia mudou desde que você começou a aprender?"
+   }
+  },
+  {
+   "id": "pronunciation-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What advice would you give a friend who feels shy about their accent?",
+    "de": "Welchen Rat würdest du einem Freund geben, der sich für seinen Akzent schämt?",
+    "es": "¿Qué consejo le darías a un amigo al que le da vergüenza su acento?",
+    "fr": "Quel conseil donnerais-tu à un ami gêné par son accent ?",
+    "it": "Che consiglio daresti a un amico che si vergogna del proprio accento?",
+    "pt": "Que conselho darias a um amigo que tem vergonha do sotaque?",
+    "pt_BR": "Que conselho você daria a um amigo que tem vergonha do próprio sotaque?"
+   }
+  }
+ ]
+}

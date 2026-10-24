@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 91,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Preterite: regular verbs",
+     "g": "Use the pretérito indefinido for finished actions in the past.",
+     "p": [
+      "-ar verbs: hablé, hablaste, habló, hablamos, hablasteis, hablaron.",
+      "-er and -ir verbs share endings: comí, comiste, comió, comimos, comisteis, comieron.",
+      "Accents matter: hablo (I speak) vs habló (he spoke). Nosotros forms of -ar and -ir match the present."
+     ],
+     "q": "What did you eat and who did you talk to last weekend?",
+     "c": "Write five sentences about last weekend with regular verbs in the preterite."
+    },
+    "de": {
+     "t": "Indefinido: regelmäßige Verben",
+     "g": "Du benutzt das pretérito indefinido für abgeschlossene Handlungen.",
+     "p": [
+      "-ar-Verben: hablé, hablaste, habló, hablamos, hablasteis, hablaron.",
+      "-er- und -ir-Verben teilen die Endungen: comí, comiste, comió, comimos, comisteis, comieron.",
+      "Akzente zählen: hablo (ich spreche) vs habló (er sprach). Die Wir-Form von -ar/-ir gleicht dem Präsens."
+     ],
+     "q": "Was hast du letztes Wochenende gegessen und mit wem hast du gesprochen?",
+     "c": "Schreib fünf Sätze über letztes Wochenende mit regelmäßigen Verben im indefinido."
+    },
+    "es": {
+     "t": "Pretérito indefinido: verbos regulares",
+     "g": "Usa el pretérito indefinido para acciones terminadas en el pasado.",
+     "p": [
+      "Verbos en -ar: hablé, hablaste, habló, hablamos, hablasteis, hablaron.",
+      "Verbos en -er e -ir comparten terminaciones: comí, comiste, comió, comimos, comisteis, comieron.",
+      "La tilde cambia el tiempo: hablo (presente) y habló (pasado). Hablamos sirve para los dos."
+     ],
+     "q": "¿Qué comiste y con quién hablaste el fin de semana pasado?",
+     "c": "Escribe cinco frases sobre el fin de semana pasado con verbos regulares en indefinido."
+    },
+    "fr": {
+     "t": "Passé simple espagnol : verbes réguliers",
+     "g": "Utiliser le pretérito indefinido pour des actions terminées.",
+     "p": [
+      "Verbes en -ar : hablé, hablaste, habló, hablamos, hablasteis, hablaron.",
+      "-er et -ir partagent les terminaisons : comí, comiste, comió, comimos, comisteis, comieron.",
+      "Il s'utilise à l'oral comme notre passé composé : ayer comí paella = hier j'ai mangé une paella."
+     ],
+     "q": "Qu'as-tu mangé et avec qui as-tu parlé le week-end dernier ?",
+     "c": "Écris cinq phrases sur le week-end dernier avec des verbes réguliers à l'indefinido."
+    },
+    "it": {
+     "t": "Indefinido: verbi regolari",
+     "g": "Usi il pretérito indefinido per azioni concluse nel passato.",
+     "p": [
+      "Verbi in -ar: hablé, hablaste, habló, hablamos, hablasteis, hablaron.",
+      "-er e -ir hanno le stesse desinenze: comí, comiste, comió, comimos, comisteis, comieron.",
+      "Si usa dove l'italiano usa spesso il passato prossimo: ayer comí paella = ieri ho mangiato la paella."
+     ],
+     "q": "Cosa hai mangiato e con chi hai parlato lo scorso fine settimana?",
+     "c": "Scrivi cinque frasi sullo scorso fine settimana con verbi regolari all'indefinido."
+    },
+    "pt": {
+     "t": "Pretérito indefinido: verbos regulares",
+     "g": "Usa o pretérito indefinido para ações terminadas no passado.",
+     "p": [
+      "Verbos em -ar: hablé, hablaste, habló, hablamos, hablasteis, hablaron.",
+      "-er e -ir têm as mesmas terminações: comí, comiste, comió, comimos, comisteis, comieron.",
+      "Corresponde ao nosso pretérito perfeito: ayer comí paella = ontem comi paella."
+     ],
+     "q": "O que comeste e com quem falaste no fim de semana passado?",
+     "c": "Escreve cinco frases sobre o fim de semana passado com verbos regulares no indefinido."
+    },
+    "pt_BR": {
+     "t": "Pretérito indefinido: verbos regulares",
+     "g": "Use o pretérito indefinido para ações terminadas no passado.",
+     "p": [
+      "Verbos em -ar: hablé, hablaste, habló, hablamos, hablasteis, hablaron.",
+      "-er e -ir têm as mesmas terminações: comí, comiste, comió, comimos, comisteis, comieron.",
+      "Corresponde ao nosso pretérito perfeito: ayer comí paella = ontem comi paella."
+     ],
+     "q": "O que você comeu e com quem falou no fim de semana passado?",
+     "c": "Escreva cinco frases sobre o fim de semana passado com verbos regulares no indefinido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hablé",
+      "ex": "Ayer hablé con mi abuela por teléfono."
+     },
+     {
+      "w": "comí",
+      "ex": "Comí paella en Valencia."
+     },
+     {
+      "w": "viví",
+      "ex": "Viví dos años en Chile."
+     },
+     {
+      "w": "trabajaste",
+      "ex": "¿Trabajaste el sábado?"
+     },
+     {
+      "w": "compramos",
+      "ex": "El lunes compramos un sofá nuevo."
+     },
+     {
+      "w": "salieron",
+      "ex": "Mis amigos salieron tarde de la fiesta."
+     }
+    ],
+    "gram": "Indefinido regular: -ar: -é, -aste, -ó, -amos, -asteis, -aron; -er/-ir: -í, -iste, -ió, -imos, -isteis, -ieron. Acciones terminadas."
+   }
+  },
+  {
+   "d": 92,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Preterite: ser, ir, hacer",
+     "g": "Learn the most common irregular verbs in the past.",
+     "p": [
+      "Ser and ir share one form: fui, fuiste, fue, fuimos, fuisteis, fueron. Context tells you which.",
+      "Fui a Roma = I went to Rome; fue genial = it was great. No accents on these forms!",
+      "Hacer: hice, hiciste, hizo, hicimos, hicisteis, hicieron. ¿Qué hiciste ayer?"
+     ],
+     "q": "¿Adónde fuiste en tus últimas vacaciones y qué hiciste allí?",
+     "c": "Write about a trip: where you went, how it was and three things you did."
+    },
+    "de": {
+     "t": "Indefinido: ser, ir, hacer",
+     "g": "Du lernst die häufigsten unregelmäßigen Verben in der Vergangenheit.",
+     "p": [
+      "Ser und ir haben dieselbe Form: fui, fuiste, fue, fuimos, fuisteis, fueron. Der Kontext klärt.",
+      "Fui a Roma = ich fuhr nach Rom; fue genial = es war toll. Hier gibt es keine Akzente!",
+      "Hacer: hice, hiciste, hizo, hicimos, hicisteis, hicieron. ¿Qué hiciste ayer?"
+     ],
+     "q": "¿Adónde fuiste en tus últimas vacaciones y qué hiciste allí?",
+     "c": "Schreib über eine Reise: wohin du gefahren bist, wie es war und drei Dinge, die du gemacht hast."
+    },
+    "es": {
+     "t": "Indefinido: ser, ir, hacer",
+     "g": "Domina los verbos irregulares más frecuentes del pasado.",
+     "p": [
+      "Ser e ir comparten forma: fui, fuiste, fue, fuimos, fuisteis, fueron. El contexto aclara cuál es.",
+      "Fui a Roma (ir) y fue genial (ser). Estas formas no llevan tilde: fue, fui, no fué.",
+      "Hacer: hice, hiciste, hizo, hicimos, hicisteis, hicieron. Ojo a la z de hizo."
+     ],
+     "q": "¿Adónde fuiste en tus últimas vacaciones y qué hiciste allí?",
+     "c": "Escribe sobre un viaje: adónde fuiste, cómo fue y tres cosas que hiciste."
+    },
+    "fr": {
+     "t": "Indefinido : ser, ir, hacer",
+     "g": "Apprendre les verbes irréguliers les plus courants au passé.",
+     "p": [
+      "Ser et ir ont la même forme : fui, fuiste, fue, fuimos, fuisteis, fueron. Le contexte tranche.",
+      "Fui a Roma = je suis allé à Rome ; fue genial = c'était génial. Pas d'accent ici !",
+      "Hacer : hice, hiciste, hizo, hicimos, hicisteis, hicieron. ¿Qué hiciste ayer?"
+     ],
+     "q": "¿Adónde fuiste en tus últimas vacaciones y qué hiciste allí?",
+     "c": "Écris sur un voyage : où tu es allé, comment c'était et trois choses que tu as faites."
+    },
+    "it": {
+     "t": "Indefinido: ser, ir, hacer",
+     "g": "Impari i verbi irregolari più comuni al passato.",
+     "p": [
+      "Ser e ir hanno la stessa forma: fui, fuiste, fue, fuimos, fuisteis, fueron. Decide il contesto.",
+      "Fui a Roma = sono andato a Roma; fue genial = è stato fantastico. Niente accento qui!",
+      "Hacer: hice, hiciste, hizo, hicimos, hicisteis, hicieron. ¿Qué hiciste ayer?"
+     ],
+     "q": "¿Adónde fuiste en tus últimas vacaciones y qué hiciste allí?",
+     "c": "Scrivi di un viaggio: dove sei andato, com'è stato e tre cose che hai fatto."
+    },
+    "pt": {
+     "t": "Indefinido: ser, ir, hacer",
+     "g": "Aprende os verbos irregulares mais comuns no passado.",
+     "p": [
+      "Ser e ir têm a mesma forma, como em português: fui, fuiste, fue, fuimos, fuisteis, fueron.",
+      "Fui a Roma (ir) e fue genial (ser, foi ótimo). Estas formas não levam acento!",
+      "Hacer: hice, hiciste, hizo, hicimos, hicisteis, hicieron. ¿Qué hiciste ayer?"
+     ],
+     "q": "¿Adónde fuiste en tus últimas vacaciones y qué hiciste allí?",
+     "c": "Escreve sobre uma viagem: aonde foste, como foi e três coisas que fizeste."
+    },
+    "pt_BR": {
+     "t": "Indefinido: ser, ir, hacer",
+     "g": "Aprenda os verbos irregulares mais comuns no passado.",
+     "p": [
+      "Ser e ir têm a mesma forma, como em português: fui, fuiste, fue, fuimos, fuisteis, fueron.",
+      "Fui a Roma (ir) e fue genial (ser, foi ótimo). Essas formas não têm acento!",
+      "Hacer: hice, hiciste, hizo, hicimos, hicisteis, hicieron. ¿Qué hiciste ayer?"
+     ],
+     "q": "¿Adónde fuiste en tus últimas vacaciones y qué hiciste allí?",
+     "c": "Escreva sobre uma viagem: aonde você foi, como foi e três coisas que fez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fui",
+      "ex": "El verano pasado fui a Cuba."
+     },
+     {
+      "w": "fue",
+      "ex": "La fiesta fue increíble."
+     },
+     {
+      "w": "hice",
+      "ex": "Ayer hice una tarta de chocolate."
+     },
+     {
+      "w": "hizo",
+      "ex": "¿Qué tiempo hizo en Lisboa?"
+     },
+     {
+      "w": "fuimos",
+      "ex": "Fuimos al concierto en metro."
+     },
+     {
+      "w": "hicieron",
+      "ex": "¿Qué hicieron ustedes en vacaciones?"
+     }
+    ],
+    "gram": "Ser e ir tienen la misma forma: fui, fuiste, fue, fuimos, fuisteis, fueron. Hacer: hice, hiciste, hizo, hicimos, hicisteis, hicieron."
+   }
+  },
+  {
+   "d": 93,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Preterite: more irregular verbs",
+     "g": "Learn the strong past forms that follow one pattern.",
+     "p": [
+      "New stems: tener > tuv-, estar > estuv-, poder > pud-, poner > pus-, querer > quis-, venir > vin-.",
+      "They all take -e, -iste, -o, -imos, -isteis, -ieron, without accents: tuve, estuvo, vinieron.",
+      "Decir uses dij- and -eron: dije, dijiste, dijo, dijimos, dijeron."
+     ],
+     "q": "Where were you last summer and what did you have to do?",
+     "c": "Write a short story about a busy day using five of today's irregular verbs."
+    },
+    "de": {
+     "t": "Indefinido: weitere unregelmäßige Verben",
+     "g": "Du lernst die starken Vergangenheitsformen, die einem Muster folgen.",
+     "p": [
+      "Neue Stämme: tener > tuv-, estar > estuv-, poder > pud-, poner > pus-, querer > quis-, venir > vin-.",
+      "Alle bekommen -e, -iste, -o, -imos, -isteis, -ieron, ohne Akzent: tuve, estuvo, vinieron.",
+      "Decir hat dij- und -eron: dije, dijiste, dijo, dijimos, dijeron."
+     ],
+     "q": "Wo warst du letzten Sommer und was musstest du machen?",
+     "c": "Schreib eine kurze Geschichte über einen vollen Tag mit fünf der heutigen Verben."
+    },
+    "es": {
+     "t": "Indefinido: más verbos irregulares",
+     "g": "Aprende los pretéritos fuertes, que siguen un mismo patrón.",
+     "p": [
+      "Raíces nuevas: tener > tuv-, estar > estuv-, poder > pud-, poner > pus-, querer > quis-, venir > vin-.",
+      "Todas llevan -e, -iste, -o, -imos, -isteis, -ieron, sin tilde: tuve, estuvo, vinieron.",
+      "Decir, traer y conducir usan j y -eron: dije, dijeron; traje, trajeron; conduje, condujeron."
+     ],
+     "q": "¿Dónde estuviste el verano pasado y qué tuviste que hacer?",
+     "c": "Escribe una historia corta sobre un día ajetreado con cinco de estos verbos irregulares."
+    },
+    "fr": {
+     "t": "Indefinido : d'autres verbes irréguliers",
+     "g": "Apprendre les passés forts qui suivent un même modèle.",
+     "p": [
+      "Nouveaux radicaux : tener > tuv-, estar > estuv-, poder > pud-, poner > pus-, querer > quis-, venir > vin-.",
+      "Tous prennent -e, -iste, -o, -imos, -isteis, -ieron, sans accent : tuve, estuvo, vinieron.",
+      "Decir utilise dij- et -eron : dije, dijiste, dijo, dijimos, dijeron."
+     ],
+     "q": "Où étais-tu l'été dernier et qu'as-tu dû faire ?",
+     "c": "Écris une petite histoire sur une journée chargée avec cinq de ces verbes irréguliers."
+    },
+    "it": {
+     "t": "Indefinido: altri verbi irregolari",
+     "g": "Impari i passati forti che seguono un unico schema.",
+     "p": [
+      "Nuove radici: tener > tuv-, estar > estuv-, poder > pud-, poner > pus-, querer > quis-, venir > vin-.",
+      "Tutti prendono -e, -iste, -o, -imos, -isteis, -ieron, senza accento: tuve, estuvo, vinieron.",
+      "Decir usa dij- e -eron: dije, dijiste, dijo, dijimos, dijeron."
+     ],
+     "q": "Dove sei stato l'estate scorsa e cosa hai dovuto fare?",
+     "c": "Scrivi una breve storia su una giornata piena con cinque di questi verbi irregolari."
+    },
+    "pt": {
+     "t": "Indefinido: mais verbos irregulares",
+     "g": "Aprende os pretéritos fortes, que seguem um só padrão.",
+     "p": [
+      "Novas raízes: tener > tuv-, estar > estuv-, poder > pud-, poner > pus-, querer > quis-, venir > vin-.",
+      "Todas levam -e, -iste, -o, -imos, -isteis, -ieron, sem acento: tuve, estuvo, vinieron.",
+      "Parecem o português: tuve (tive), estuve (estive), pude, puse (pus), dije (disse), vine (vim)."
+     ],
+     "q": "Onde estiveste no verão passado e o que tiveste de fazer?",
+     "c": "Escreve uma pequena história sobre um dia cheio com cinco destes verbos irregulares."
+    },
+    "pt_BR": {
+     "t": "Indefinido: mais verbos irregulares",
+     "g": "Aprenda os pretéritos fortes, que seguem um só padrão.",
+     "p": [
+      "Novas raízes: tener > tuv-, estar > estuv-, poder > pud-, poner > pus-, querer > quis-, venir > vin-.",
+      "Todas levam -e, -iste, -o, -imos, -isteis, -ieron, sem acento: tuve, estuvo, vinieron.",
+      "Parecem o português: tuve (tive), estuve (estive), pude, puse (pus), dije (disse), vine (vim)."
+     ],
+     "q": "Onde você esteve no verão passado e o que teve que fazer?",
+     "c": "Escreva uma pequena história sobre um dia cheio com cinco desses verbos irregulares."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tuve",
+      "ex": "Ayer tuve un día muy largo."
+     },
+     {
+      "w": "estuve",
+      "ex": "Estuve en Perú dos semanas."
+     },
+     {
+      "w": "pude",
+      "ex": "No pude ir a la reunión."
+     },
+     {
+      "w": "puse",
+      "ex": "Puse las llaves en la mesa."
+     },
+     {
+      "w": "dije",
+      "ex": "Le dije la verdad."
+     },
+     {
+      "w": "vine / quise",
+      "ex": "Vine en tren porque no quise conducir."
+     }
+    ],
+    "gram": "Raíces fuertes + -e, -iste, -o, -imos, -isteis, -ieron (sin tilde): tuv-, estuv-, pud-, pus-, quis-, vin-. Decir: dije, dijeron."
+   }
+  },
+  {
+   "d": 94,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Preterite: spelling changes",
+     "g": "Learn small spelling changes that keep the sound the same.",
+     "p": [
+      "In the yo form: -car > -qué (buscar > busqué), -gar > -gué (llegar > llegué).",
+      "And -zar > -cé (empezar > empecé). Only yo changes: buscaste, llegó, empezamos.",
+      "Between vowels, i becomes y in él and ellos: leer > leyó, leyeron; oír > oyó; creer > creyó."
+     ],
+     "q": "When did you start learning Spanish, and when did you arrive home yesterday?",
+     "c": "Write five sentences in the yo form with buscar, llegar, empezar, jugar and pagar."
+    },
+    "de": {
+     "t": "Indefinido: Schreibänderungen",
+     "g": "Du lernst kleine Schreibänderungen, die den Klang erhalten.",
+     "p": [
+      "In der Ich-Form: -car > -qué (buscar > busqué), -gar > -gué (llegar > llegué).",
+      "Und -zar > -cé (empezar > empecé). Nur yo ändert sich: buscaste, llegó, empezamos.",
+      "Zwischen Vokalen wird i zu y in er/sie-Formen: leer > leyó, leyeron; oír > oyó; creer > creyó."
+     ],
+     "q": "Wann hast du angefangen, Spanisch zu lernen, und wann bist du gestern heimgekommen?",
+     "c": "Schreib fünf Sätze in der Ich-Form mit buscar, llegar, empezar, jugar und pagar."
+    },
+    "es": {
+     "t": "Indefinido: cambios ortográficos",
+     "g": "Aprende los pequeños cambios de escritura que mantienen el sonido.",
+     "p": [
+      "En la forma yo: -car > -qué (busqué), -gar > -gué (llegué), -zar > -cé (empecé).",
+      "Solo cambia yo, porque la e alteraría el sonido: buscaste, llegó, empezamos. Más casos: pagué, toqué.",
+      "Entre vocales la i pasa a y en él y ellos: leer > leyó, leyeron; oír > oyó; creer > creyó."
+     ],
+     "q": "¿Cuándo empezaste a estudiar español y a qué hora llegaste ayer a casa?",
+     "c": "Escribe cinco frases en primera persona con buscar, llegar, empezar, jugar y pagar."
+    },
+    "fr": {
+     "t": "Indefinido : changements d'orthographe",
+     "g": "Apprendre de petits changements d'orthographe qui gardent le même son.",
+     "p": [
+      "À la forme yo : -car > -qué (buscar > busqué), -gar > -gué (llegar > llegué).",
+      "Et -zar > -cé (empezar > empecé). Seul yo change : buscaste, llegó, empezamos.",
+      "Entre voyelles, i devient y pour él et ellos : leer > leyó, leyeron ; oír > oyó ; creer > creyó."
+     ],
+     "q": "Quand as-tu commencé l'espagnol, et à quelle heure es-tu rentré hier ?",
+     "c": "Écris cinq phrases à la forme yo avec buscar, llegar, empezar, jugar et pagar."
+    },
+    "it": {
+     "t": "Indefinido: cambi ortografici",
+     "g": "Impari piccoli cambi di scrittura che mantengono il suono.",
+     "p": [
+      "Nella forma yo: -car > -qué (buscar > busqué), -gar > -gué (llegar > llegué).",
+      "E -zar > -cé (empezar > empecé). Cambia solo yo: buscaste, llegó, empezamos.",
+      "Tra vocali la i diventa y per él ed ellos: leer > leyó, leyeron; oír > oyó; creer > creyó."
+     ],
+     "q": "Quando hai iniziato a studiare spagnolo e a che ora sei arrivato a casa ieri?",
+     "c": "Scrivi cinque frasi alla forma yo con buscar, llegar, empezar, jugar e pagar."
+    },
+    "pt": {
+     "t": "Indefinido: mudanças ortográficas",
+     "g": "Aprende pequenas mudanças na escrita que mantêm o som.",
+     "p": [
+      "Na forma yo: -car > -qué (buscar > busqué), -gar > -gué (llegar > llegué).",
+      "E -zar > -cé (empezar > empecé). Só muda yo: buscaste, llegó, empezamos.",
+      "Entre vogais o i passa a y em él e ellos: leer > leyó, leyeron; oír > oyó; creer > creyó."
+     ],
+     "q": "Quando começaste a estudar espanhol e a que horas chegaste ontem a casa?",
+     "c": "Escreve cinco frases na forma yo com buscar, llegar, empezar, jugar e pagar."
+    },
+    "pt_BR": {
+     "t": "Indefinido: mudanças ortográficas",
+     "g": "Aprenda pequenas mudanças na escrita que mantêm o som.",
+     "p": [
+      "Na forma yo: -car > -qué (buscar > busqué), -gar > -gué (llegar > llegué).",
+      "E -zar > -cé (empezar > empecé). Só muda yo: buscaste, llegó, empezamos.",
+      "Entre vogais o i vira y em él e ellos: leer > leyó, leyeron; oír > oyó; creer > creyó."
+     ],
+     "q": "Quando você começou a estudar espanhol e a que horas chegou em casa ontem?",
+     "c": "Escreva cinco frases na forma yo com buscar, llegar, empezar, jugar e pagar."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "busqué",
+      "ex": "Busqué mis gafas por toda la casa."
+     },
+     {
+      "w": "llegué",
+      "ex": "Llegué tarde al trabajo."
+     },
+     {
+      "w": "empecé",
+      "ex": "Empecé a estudiar español en enero."
+     },
+     {
+      "w": "leyó",
+      "ex": "Mi padre leyó el periódico."
+     },
+     {
+      "w": "jugué",
+      "ex": "Ayer jugué al fútbol con mis primos."
+     },
+     {
+      "w": "oyeron",
+      "ex": "¿Oyeron el ruido anoche?"
+     }
+    ],
+    "gram": "Cambios ortográficos en yo: -car > -qué (busqué), -gar > -gué (llegué), -zar > -cé (empecé). Leer, oír, creer: leyó, oyeron."
+   }
+  },
+  {
+   "d": 95,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "What did you do yesterday?",
+     "g": "Tell what you did using past time expressions.",
+     "p": [
+      "Time words: ayer (yesterday), anoche (last night), anteayer (the day before yesterday).",
+      "La semana pasada, el mes pasado, el año pasado, el sábado, en 2015: all take the preterite.",
+      "Hace + time = ago: hace dos días, hace un año. It goes at the start or the end."
+     ],
+     "q": "¿Qué hiciste ayer por la tarde y anoche?",
+     "c": "Write a timeline of your last week with six past time expressions and the preterite."
+    },
+    "de": {
+     "t": "Was hast du gestern gemacht?",
+     "g": "Du erzählst mit Zeitangaben, was du gemacht hast.",
+     "p": [
+      "Zeitwörter: ayer (gestern), anoche (gestern Abend), anteayer (vorgestern).",
+      "La semana pasada, el mes pasado, el año pasado, el sábado, en 2015: alle mit indefinido.",
+      "Hace + Zeit = vor: hace dos días (vor zwei Tagen), hace un año."
+     ],
+     "q": "¿Qué hiciste ayer por la tarde y anoche?",
+     "c": "Schreib eine Zeitleiste deiner letzten Woche mit sechs Zeitangaben und dem indefinido."
+    },
+    "es": {
+     "t": "¿Qué hiciste ayer?",
+     "g": "Cuenta lo que hiciste con expresiones de tiempo pasado.",
+     "p": [
+      "Marcadores: ayer, anoche, anteayer, el otro día, el lunes pasado, aquel día.",
+      "La semana pasada, el mes pasado, el año pasado, en 2015: todos piden pretérito indefinido.",
+      "Hace + tiempo indica cuánto ha pasado: hace dos días, hace un año. Puede ir al principio o al final."
+     ],
+     "q": "¿Qué hiciste ayer por la tarde y anoche?",
+     "c": "Escribe una línea del tiempo de tu última semana con seis marcadores y el indefinido."
+    },
+    "fr": {
+     "t": "Qu'as-tu fait hier ?",
+     "g": "Raconter ce que tu as fait avec des expressions du passé.",
+     "p": [
+      "Mots de temps : ayer (hier), anoche (hier soir), anteayer (avant-hier).",
+      "La semana pasada, el mes pasado, el año pasado, el sábado, en 2015 : tous avec l'indefinido.",
+      "Hace + durée = il y a : hace dos días (il y a deux jours), hace un año."
+     ],
+     "q": "¿Qué hiciste ayer por la tarde y anoche?",
+     "c": "Écris la chronologie de ta semaine dernière avec six expressions de temps et l'indefinido."
+    },
+    "it": {
+     "t": "Cosa hai fatto ieri?",
+     "g": "Racconti cosa hai fatto con espressioni di tempo passato.",
+     "p": [
+      "Parole di tempo: ayer (ieri), anoche (ieri sera), anteayer (l'altro ieri).",
+      "La semana pasada, el mes pasado, el año pasado, el sábado, en 2015: tutti con l'indefinido.",
+      "Hace + tempo = fa: hace dos días (due giorni fa), hace un año."
+     ],
+     "q": "¿Qué hiciste ayer por la tarde y anoche?",
+     "c": "Scrivi una linea del tempo della tua ultima settimana con sei espressioni e l'indefinido."
+    },
+    "pt": {
+     "t": "O que fizeste ontem?",
+     "g": "Conta o que fizeste com expressões de tempo passado.",
+     "p": [
+      "Palavras de tempo: ayer (ontem), anoche (ontem à noite), anteayer (anteontem).",
+      "La semana pasada, el mes pasado, el año pasado, el sábado, en 2015: todos com indefinido.",
+      "Hace + tempo = há: hace dos días (há dois dias), hace un año."
+     ],
+     "q": "¿Qué hiciste ayer por la tarde y anoche?",
+     "c": "Escreve uma cronologia da tua última semana com seis expressões de tempo e o indefinido."
+    },
+    "pt_BR": {
+     "t": "O que você fez ontem?",
+     "g": "Conte o que você fez com expressões de tempo passado.",
+     "p": [
+      "Palavras de tempo: ayer (ontem), anoche (ontem à noite), anteayer (anteontem).",
+      "La semana pasada, el mes pasado, el año pasado, el sábado, en 2015: todos com indefinido.",
+      "Hace + tempo = faz ou há: hace dos días (faz dois dias), hace un año."
+     ],
+     "q": "¿Qué hiciste ayer por la tarde y anoche?",
+     "c": "Escreva uma linha do tempo da sua última semana com seis expressões e o indefinido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ayer",
+      "ex": "Ayer fui al dentista."
+     },
+     {
+      "w": "anoche",
+      "ex": "Anoche vi una serie muy buena."
+     },
+     {
+      "w": "anteayer",
+      "ex": "Anteayer llovió todo el día."
+     },
+     {
+      "w": "la semana pasada",
+      "ex": "La semana pasada visité a mis tíos."
+     },
+     {
+      "w": "hace dos días",
+      "ex": "Hace dos días compré este libro."
+     },
+     {
+      "w": "el año pasado",
+      "ex": "El año pasado viajé a Argentina."
+     }
+    ],
+    "gram": "Marcadores del indefinido: ayer, anoche, anteayer, el lunes, la semana pasada, el año pasado, en 2019, hace + tiempo: hace dos días."
+   }
+  },
+  {
+   "d": 96,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Pretérito perfecto vs indefinido",
+     "g": "Choose the right past tense, in Spain and in Latin America.",
+     "p": [
+      "Perfecto for unfinished time: hoy he comido paella, este año he viajado mucho.",
+      "Indefinido for finished time: ayer comí tacos, en 2020 me mudé, el martes salí.",
+      "In most of Latin America, people often use the indefinido even for today: hoy comí tacos."
+     ],
+     "q": "What have you done this week, and what did you do last week?",
+     "c": "Write two sentences for each pair: hoy / ayer, esta semana / la semana pasada."
+    },
+    "de": {
+     "t": "Perfecto oder indefinido?",
+     "g": "Du wählst die richtige Vergangenheit, in Spanien und Lateinamerika.",
+     "p": [
+      "Perfecto für nicht abgeschlossene Zeit: hoy he comido paella, este año he viajado mucho.",
+      "Indefinido für abgeschlossene Zeit: ayer comí tacos, en 2020 me mudé, el martes salí.",
+      "In großen Teilen Lateinamerikas nimmt man oft auch für heute das indefinido: hoy comí tacos."
+     ],
+     "q": "Was hast du diese Woche gemacht, und was hast du letzte Woche gemacht?",
+     "c": "Schreib je zwei Sätze für hoy / ayer und esta semana / la semana pasada."
+    },
+    "es": {
+     "t": "Pretérito perfecto o indefinido",
+     "g": "Elige el pasado adecuado en España y en América.",
+     "p": [
+      "Perfecto con tiempo no terminado: hoy he comido paella, este año he viajado mucho.",
+      "Indefinido con tiempo terminado: ayer comí tacos, en 2020 me mudé, el martes salí.",
+      "En gran parte de América se prefiere el indefinido también para hoy: hoy comí tacos. Ambos son correctos."
+     ],
+     "q": "¿Qué has hecho esta semana y qué hiciste la semana pasada?",
+     "c": "Escribe dos frases por pareja: hoy / ayer y esta semana / la semana pasada."
+    },
+    "fr": {
+     "t": "Perfecto ou indefinido ?",
+     "g": "Choisir le bon passé, en Espagne et en Amérique latine.",
+     "p": [
+      "Perfecto pour un temps pas fini : hoy he comido paella, este año he viajado mucho.",
+      "Indefinido pour un temps fini : ayer comí tacos, en 2020 me mudé, el martes salí.",
+      "Dans une grande partie de l'Amérique latine, on dit souvent aussi hoy comí tacos."
+     ],
+     "q": "Qu'as-tu fait cette semaine, et qu'as-tu fait la semaine dernière ?",
+     "c": "Écris deux phrases pour chaque paire : hoy / ayer, esta semana / la semana pasada."
+    },
+    "it": {
+     "t": "Perfecto o indefinido?",
+     "g": "Scegli il passato giusto, in Spagna e in America Latina.",
+     "p": [
+      "Perfecto per un tempo non finito: hoy he comido paella, este año he viajado mucho.",
+      "Indefinido per un tempo finito: ayer comí tacos, en 2020 me mudé, el martes salí.",
+      "In gran parte dell'America Latina si usa spesso l'indefinido anche per oggi: hoy comí tacos."
+     ],
+     "q": "Cosa hai fatto questa settimana e cosa hai fatto la settimana scorsa?",
+     "c": "Scrivi due frasi per ogni coppia: hoy / ayer, esta semana / la semana pasada."
+    },
+    "pt": {
+     "t": "Perfecto ou indefinido?",
+     "g": "Escolhe o passado certo, em Espanha e na América Latina.",
+     "p": [
+      "Perfecto para tempo não terminado: hoy he comido paella, este año he viajado mucho.",
+      "Indefinido para tempo terminado: ayer comí tacos, en 2020 me mudé, el martes salí.",
+      "Em grande parte da América Latina usa-se o indefinido mesmo para hoje: hoy comí tacos."
+     ],
+     "q": "O que fizeste esta semana e o que fizeste na semana passada?",
+     "c": "Escreve duas frases para cada par: hoy / ayer, esta semana / la semana pasada."
+    },
+    "pt_BR": {
+     "t": "Perfecto ou indefinido?",
+     "g": "Escolha o passado certo, na Espanha e na América Latina.",
+     "p": [
+      "Perfecto para tempo não terminado: hoy he comido paella, este año he viajado mucho.",
+      "Indefinido para tempo terminado: ayer comí tacos, en 2020 me mudé, el martes salí.",
+      "Em grande parte da América Latina se usa o indefinido até para hoje: hoy comí tacos."
+     ],
+     "q": "O que você fez nesta semana e o que fez na semana passada?",
+     "c": "Escreva duas frases para cada par: hoy / ayer, esta semana / la semana pasada."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hoy he comido",
+      "ex": "Hoy he comido paella."
+     },
+     {
+      "w": "ayer comí",
+      "ex": "Ayer comí tacos."
+     },
+     {
+      "w": "esta mañana",
+      "ex": "Esta mañana he salido pronto."
+     },
+     {
+      "w": "el martes",
+      "ex": "El martes salí con Lucía."
+     },
+     {
+      "w": "este año",
+      "ex": "Este año he viajado mucho."
+     },
+     {
+      "w": "en 2020",
+      "ex": "En 2020 me mudé a Quito."
+     }
+    ],
+    "gram": "Perfecto con tiempo no terminado (hoy, este año): he comido. Indefinido con tiempo terminado (ayer, en 2020): comí."
+   }
+  },
+  {
+   "d": 97,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Ya and todavía",
+     "g": "Talk about what is already done and what is not done yet.",
+     "p": [
+      "Ya = already: ya he comido. Question: ¿Ya has hecho la compra?",
+      "Todavía no or aún no = not yet: todavía no he visto esa película.",
+      "Also: todavía vivo aquí (I still live here), ya no fumo (I no longer smoke)."
+     ],
+     "q": "What have you already done today, and what have you not done yet?",
+     "c": "Make a to-do list and write three things with ya and three with todavía no."
+    },
+    "de": {
+     "t": "Ya und todavía",
+     "g": "Du sprichst darüber, was schon erledigt ist und was noch nicht.",
+     "p": [
+      "Ya = schon: ya he comido. Frage: ¿Ya has hecho la compra?",
+      "Todavía no oder aún no = noch nicht: todavía no he visto esa película.",
+      "Außerdem: todavía vivo aquí (ich wohne noch hier), ya no trabajo allí (nicht mehr)."
+     ],
+     "q": "Was hast du heute schon gemacht und was noch nicht?",
+     "c": "Mach eine To-do-Liste: drei Dinge mit ya und drei mit todavía no."
+    },
+    "es": {
+     "t": "Ya y todavía",
+     "g": "Habla de lo que ya está hecho y de lo que todavía no.",
+     "p": [
+      "Ya indica algo realizado: ya he comido. Pregunta: ¿Ya has hecho la compra?",
+      "Todavía no o aún no indican algo pendiente: todavía no he visto esa película.",
+      "Todavía + presente es algo que continúa (todavía vivo aquí); ya no, algo que terminó (ya no trabajo allí)."
+     ],
+     "q": "¿Qué has hecho ya hoy y qué todavía no?",
+     "c": "Haz una lista de tareas y escribe tres cosas con ya y tres con todavía no."
+    },
+    "fr": {
+     "t": "Ya et todavía",
+     "g": "Parler de ce qui est déjà fait et de ce qui ne l'est pas encore.",
+     "p": [
+      "Ya = déjà : ya he comido. Question : ¿Ya has hecho la compra?",
+      "Todavía no ou aún no = pas encore : todavía no he visto esa película.",
+      "Aussi : todavía vivo aquí (j'habite encore ici), ya no trabajo allí (je n'y travaille plus)."
+     ],
+     "q": "Qu'as-tu déjà fait aujourd'hui, et qu'est-ce que tu n'as pas encore fait ?",
+     "c": "Fais une liste de tâches : trois choses avec ya et trois avec todavía no."
+    },
+    "it": {
+     "t": "Ya e todavía",
+     "g": "Parli di ciò che è già fatto e di ciò che non lo è ancora.",
+     "p": [
+      "Ya = già: ya he comido. Domanda: ¿Ya has hecho la compra?",
+      "Todavía no o aún no = non ancora: todavía no he visto esa película.",
+      "Anche: todavía vivo aquí (abito ancora qui), ya no trabajo allí (non ci lavoro più)."
+     ],
+     "q": "Cosa hai già fatto oggi e cosa non hai ancora fatto?",
+     "c": "Fai una lista di cose da fare: tre con ya e tre con todavía no."
+    },
+    "pt": {
+     "t": "Ya e todavía",
+     "g": "Fala do que já está feito e do que ainda não está.",
+     "p": [
+      "Ya = já: ya he comido. Pergunta: ¿Ya has hecho la compra?",
+      "Todavía no ou aún no = ainda não: todavía no he visto esa película.",
+      "Também: todavía vivo aquí (ainda moro aqui), ya no trabajo allí (já não trabalho lá)."
+     ],
+     "q": "O que já fizeste hoje e o que ainda não fizeste?",
+     "c": "Faz uma lista de tarefas: três coisas com ya e três com todavía no."
+    },
+    "pt_BR": {
+     "t": "Ya e todavía",
+     "g": "Fale do que já está feito e do que ainda não está.",
+     "p": [
+      "Ya = já: ya he comido. Pergunta: ¿Ya has hecho la compra?",
+      "Todavía no ou aún no = ainda não: todavía no he visto esa película.",
+      "Também: todavía vivo aquí (ainda moro aqui), ya no trabajo allí (não trabalho mais lá)."
+     ],
+     "q": "O que você já fez hoje e o que ainda não fez?",
+     "c": "Faça uma lista de tarefas: três coisas com ya e três com todavía no."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ya",
+      "ex": "Ya he terminado los deberes."
+     },
+     {
+      "w": "todavía no",
+      "ex": "Todavía no he visto esa película."
+     },
+     {
+      "w": "aún no",
+      "ex": "Aún no he llamado a mi madre."
+     },
+     {
+      "w": "¿ya has...?",
+      "ex": "¿Ya has comido?"
+     },
+     {
+      "w": "todavía",
+      "ex": "Todavía vivo con mis padres."
+     },
+     {
+      "w": "ya no",
+      "ex": "Ya no trabajo en esa empresa."
+     }
+    ],
+    "gram": "Ya = algo hecho: ya he comido. Todavía no / aún no = algo pendiente: todavía no he comido. Todavía + presente = continúa; ya no = terminó."
+   }
+  },
+  {
+   "d": 98,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Imperfect: how things used to be",
+     "g": "Describe habits and situations in the past with the imperfect.",
+     "p": [
+      "-ar verbs: hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban.",
+      "-er and -ir verbs: comía, comías, comía, comíamos, comíais, comían. Yo and él look the same.",
+      "It means used to or was doing: antes trabajaba en un banco; de pequeño vivía en el campo."
+     ],
+     "q": "What did you use to do on weekends ten years ago?",
+     "c": "Write five sentences about your life before with antes and the imperfect."
+    },
+    "de": {
+     "t": "Imperfekt: wie es früher war",
+     "g": "Du beschreibst Gewohnheiten und Situationen in der Vergangenheit mit dem imperfecto.",
+     "p": [
+      "-ar-Verben: hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban.",
+      "-er- und -ir-Verben: comía, comías, comía, comíamos, comíais, comían. Yo und él sind gleich.",
+      "Es heißt früher immer: antes trabajaba en un banco; de pequeño vivía en el campo."
+     ],
+     "q": "Was hast du vor zehn Jahren am Wochenende normalerweise gemacht?",
+     "c": "Schreib fünf Sätze über dein früheres Leben mit antes und dem imperfecto."
+    },
+    "es": {
+     "t": "Imperfecto: cómo eran las cosas",
+     "g": "Describe hábitos y situaciones del pasado con el pretérito imperfecto.",
+     "p": [
+      "Verbos en -ar: hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban.",
+      "Verbos en -er e -ir: comía, comías, comía, comíamos, comíais, comían. Yo y él coinciden.",
+      "Expresa costumbres y descripciones: antes trabajaba en un banco; de pequeño vivía en el campo."
+     ],
+     "q": "¿Qué hacías los fines de semana hace diez años?",
+     "c": "Escribe cinco frases sobre tu vida de antes con antes y el imperfecto."
+    },
+    "fr": {
+     "t": "L'imparfait : comment c'était avant",
+     "g": "Décrire des habitudes et des situations passées avec l'imparfait.",
+     "p": [
+      "Verbes en -ar : hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban.",
+      "-er et -ir : comía, comías, comía, comíamos, comíais, comían. Yo et él sont identiques.",
+      "Il s'emploie comme l'imparfait français : antes trabajaba en un banco."
+     ],
+     "q": "Que faisais-tu le week-end il y a dix ans ?",
+     "c": "Écris cinq phrases sur ta vie d'avant avec antes et l'imparfait."
+    },
+    "it": {
+     "t": "L'imperfetto: com'era una volta",
+     "g": "Descrivi abitudini e situazioni passate con l'imperfetto.",
+     "p": [
+      "Verbi in -ar: hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban.",
+      "-er e -ir: comía, comías, comía, comíamos, comíais, comían. Yo ed él sono uguali.",
+      "Si usa come l'imperfetto italiano: antes trabajaba en un banco; de pequeño vivía en el campo."
+     ],
+     "q": "Cosa facevi nei fine settimana dieci anni fa?",
+     "c": "Scrivi cinque frasi sulla tua vita di prima con antes e l'imperfetto."
+    },
+    "pt": {
+     "t": "O imperfeito: como era antes",
+     "g": "Descreve hábitos e situações do passado com o imperfeito.",
+     "p": [
+      "Verbos em -ar: hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban.",
+      "-er e -ir: comía, comías, comía, comíamos, comíais, comían. Yo e él são iguais.",
+      "Usa-se como o nosso imperfeito: antes trabajaba en un banco; de pequeño vivía en el campo."
+     ],
+     "q": "O que fazias aos fins de semana há dez anos?",
+     "c": "Escreve cinco frases sobre a tua vida de antes com antes e o imperfeito."
+    },
+    "pt_BR": {
+     "t": "O imperfeito: como era antes",
+     "g": "Descreva hábitos e situações do passado com o imperfeito.",
+     "p": [
+      "Verbos em -ar: hablaba, hablabas, hablaba, hablábamos, hablabais, hablaban.",
+      "-er e -ir: comía, comías, comía, comíamos, comíais, comían. Yo e él são iguais.",
+      "Usa-se como o nosso imperfeito: antes trabajaba en un banco; de pequeño vivía en el campo."
+     ],
+     "q": "O que você fazia nos fins de semana dez anos atrás?",
+     "c": "Escreva cinco frases sobre sua vida de antes com antes e o imperfeito."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hablaba",
+      "ex": "De joven hablaba francés con mi abuela."
+     },
+     {
+      "w": "comía",
+      "ex": "Antes comía mucha carne."
+     },
+     {
+      "w": "vivía",
+      "ex": "Vivíamos en un pueblo pequeño."
+     },
+     {
+      "w": "antes",
+      "ex": "Antes trabajaba en un banco."
+     },
+     {
+      "w": "de pequeño",
+      "ex": "De pequeño jugaba en el parque."
+     },
+     {
+      "w": "soler (solía)",
+      "ex": "Solía ir a la playa en verano."
+     }
+    ],
+    "gram": "Imperfecto: -ar: -aba, -abas, -aba, -ábamos, -abais, -aban; -er/-ir: -ía, -ías, -ía, -íamos, -íais, -ían. Hábitos y descripciones."
+   }
+  },
+  {
+   "d": 99,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Imperfect: ser, ir, ver",
+     "g": "Learn the only three irregular verbs in the imperfect.",
+     "p": [
+      "Ser: era, eras, era, éramos, erais, eran. Mi casa era pequeña.",
+      "Ir: iba, ibas, iba, íbamos, ibais, iban. Iba al colegio a pie.",
+      "Ver: veía, veías, veía, veíamos, veíais, veían. Everything else is regular: great news!"
+     ],
+     "q": "What were you like as a child, and where did you use to go in summer?",
+     "c": "Describe your old school in four sentences with era, iba and veía."
+    },
+    "de": {
+     "t": "Imperfekt: ser, ir, ver",
+     "g": "Du lernst die einzigen drei unregelmäßigen Verben im imperfecto.",
+     "p": [
+      "Ser: era, eras, era, éramos, erais, eran. Mi casa era pequeña.",
+      "Ir: iba, ibas, iba, íbamos, ibais, iban. Iba al colegio a pie.",
+      "Ver: veía, veías, veía, veíamos, veíais, veían. Alles andere ist regelmäßig: super!"
+     ],
+     "q": "Wie warst du als Kind, und wohin bist du im Sommer immer gefahren?",
+     "c": "Beschreib deine alte Schule in vier Sätzen mit era, iba und veía."
+    },
+    "es": {
+     "t": "Imperfecto: ser, ir, ver",
+     "g": "Aprende los únicos tres verbos irregulares del imperfecto.",
+     "p": [
+      "Ser: era, eras, era, éramos, erais, eran. Mi casa era pequeña.",
+      "Ir: iba, ibas, iba, íbamos, ibais, iban. Iba al colegio a pie. Ojo a la tilde de éramos e íbamos.",
+      "Ver: veía, veías, veía, veíamos, veíais, veían. El resto de verbos es regular: ¡buena noticia!"
+     ],
+     "q": "¿Cómo eras de pequeño o pequeña y adónde ibas en verano?",
+     "c": "Describe tu antiguo colegio en cuatro frases con era, iba y veía."
+    },
+    "fr": {
+     "t": "Imparfait : ser, ir, ver",
+     "g": "Apprendre les trois seuls verbes irréguliers à l'imparfait.",
+     "p": [
+      "Ser : era, eras, era, éramos, erais, eran. Mi casa era pequeña.",
+      "Ir : iba, ibas, iba, íbamos, ibais, iban. Iba al colegio a pie.",
+      "Ver : veía, veías, veía, veíamos, veíais, veían. Tout le reste est régulier : génial !"
+     ],
+     "q": "Comment étais-tu enfant, et où allais-tu en été ?",
+     "c": "Décris ton ancienne école en quatre phrases avec era, iba et veía."
+    },
+    "it": {
+     "t": "Imperfetto: ser, ir, ver",
+     "g": "Impari gli unici tre verbi irregolari all'imperfetto.",
+     "p": [
+      "Ser: era, eras, era, éramos, erais, eran. Mi casa era pequeña.",
+      "Ir: iba, ibas, iba, íbamos, ibais, iban. Iba al colegio a pie.",
+      "Ver: veía, veías, veía, veíamos, veíais, veían. Tutto il resto è regolare: ottimo!"
+     ],
+     "q": "Com'eri da bambino e dove andavi d'estate?",
+     "c": "Descrivi la tua vecchia scuola in quattro frasi con era, iba e veía."
+    },
+    "pt": {
+     "t": "Imperfeito: ser, ir, ver",
+     "g": "Aprende os únicos três verbos irregulares no imperfeito.",
+     "p": [
+      "Ser: era, eras, era, éramos, erais, eran. Mi casa era pequeña.",
+      "Ir: iba, ibas, iba, íbamos, ibais, iban. Iba al colegio a pie.",
+      "Ver: veía, veías, veía, veíamos, veíais, veían. Todo o resto é regular: ótimo!"
+     ],
+     "q": "Como eras em criança e aonde ias no verão?",
+     "c": "Descreve a tua antiga escola em quatro frases com era, iba e veía."
+    },
+    "pt_BR": {
+     "t": "Imperfeito: ser, ir, ver",
+     "g": "Aprenda os únicos três verbos irregulares no imperfeito.",
+     "p": [
+      "Ser: era, eras, era, éramos, erais, eran. Mi casa era pequeña.",
+      "Ir: iba, ibas, iba, íbamos, ibais, iban. Iba al colegio a pie.",
+      "Ver: veía, veías, veía, veíamos, veíais, veían. Todo o resto é regular: ótimo!"
+     ],
+     "q": "Como você era quando criança e aonde ia no verão?",
+     "c": "Descreva sua antiga escola em quatro frases com era, iba e veía."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "era",
+      "ex": "Mi abuelo era muy divertido."
+     },
+     {
+      "w": "eras",
+      "ex": "¿Cómo eras de niño?"
+     },
+     {
+      "w": "iba",
+      "ex": "Iba al colegio en bicicleta."
+     },
+     {
+      "w": "íbamos",
+      "ex": "Íbamos a la playa cada verano."
+     },
+     {
+      "w": "veía",
+      "ex": "Veía dibujos animados por la tarde."
+     },
+     {
+      "w": "veíamos",
+      "ex": "Veíamos a los primos en Navidad."
+     }
+    ],
+    "gram": "Solo tres irregulares en imperfecto: ser (era, eras, era, éramos, erais, eran), ir (iba, ibas...), ver (veía, veías...)."
+   }
+  },
+  {
+   "d": 100,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Childhood memories",
+     "g": "Describe your childhood with the imperfect.",
+     "p": [
+      "Start with Cuando era niño / niña (When I was a child) or De pequeño / pequeña.",
+      "Describe habits and places: jugaba en la calle, mi colegio estaba cerca, tenía un perro.",
+      "Useful words: el recuerdo (memory), los juguetes, tener miedo de, mi mejor amigo se llamaba..."
+     ],
+     "q": "What is one happy memory from your childhood?",
+     "c": "Write six sentences about your childhood: where you lived, games, friends and food."
+    },
+    "de": {
+     "t": "Kindheitserinnerungen",
+     "g": "Du beschreibst deine Kindheit mit dem imperfecto.",
+     "p": [
+      "Beginne mit Cuando era niño / niña (Als ich ein Kind war) oder De pequeño / pequeña.",
+      "Gewohnheiten und Orte: jugaba en la calle, mi colegio estaba cerca, tenía un perro.",
+      "Nützlich: el recuerdo (Erinnerung), los juguetes, tener miedo de, mi mejor amigo se llamaba..."
+     ],
+     "q": "Was ist eine schöne Erinnerung aus deiner Kindheit?",
+     "c": "Schreib sechs Sätze über deine Kindheit: Wohnort, Spiele, Freunde und Essen."
+    },
+    "es": {
+     "t": "Recuerdos de la infancia",
+     "g": "Describe tu infancia con el pretérito imperfecto.",
+     "p": [
+      "Empieza con Cuando era niño o niña, De pequeño o pequeña, o En mi infancia.",
+      "Describe hábitos y lugares: jugaba en la calle, mi colegio estaba cerca, tenía un perro.",
+      "Palabras útiles: el recuerdo, los juguetes, tener miedo de, mi mejor amigo se llamaba..."
+     ],
+     "q": "¿Cuál es un recuerdo feliz de tu infancia?",
+     "c": "Escribe seis frases sobre tu infancia: dónde vivías, juegos, amigos y comida."
+    },
+    "fr": {
+     "t": "Souvenirs d'enfance",
+     "g": "Décrire ton enfance avec l'imparfait.",
+     "p": [
+      "Commence par Cuando era niño / niña (Quand j'étais enfant) ou De pequeño / pequeña.",
+      "Habitudes et lieux : jugaba en la calle, mi colegio estaba cerca, tenía un perro.",
+      "Mots utiles : el recuerdo (souvenir), los juguetes, tener miedo de, mi mejor amigo se llamaba..."
+     ],
+     "q": "Quel est un souvenir heureux de ton enfance ?",
+     "c": "Écris six phrases sur ton enfance : où tu vivais, jeux, amis et nourriture."
+    },
+    "it": {
+     "t": "Ricordi d'infanzia",
+     "g": "Descrivi la tua infanzia con l'imperfetto.",
+     "p": [
+      "Inizia con Cuando era niño / niña (Quando ero bambino) o De pequeño / pequeña.",
+      "Abitudini e luoghi: jugaba en la calle, mi colegio estaba cerca, tenía un perro.",
+      "Parole utili: el recuerdo (ricordo), los juguetes, tener miedo de, mi mejor amigo se llamaba..."
+     ],
+     "q": "Qual è un ricordo felice della tua infanzia?",
+     "c": "Scrivi sei frasi sulla tua infanzia: dove vivevi, giochi, amici e cibo."
+    },
+    "pt": {
+     "t": "Memórias de infância",
+     "g": "Descreve a tua infância com o imperfeito.",
+     "p": [
+      "Começa com Cuando era niño / niña (Quando era criança) ou De pequeño / pequeña.",
+      "Hábitos e lugares: jugaba en la calle, mi colegio estaba cerca, tenía un perro.",
+      "Palavras úteis: el recuerdo (memória), los juguetes, tener miedo de, mi mejor amigo se llamaba..."
+     ],
+     "q": "Qual é uma memória feliz da tua infância?",
+     "c": "Escreve seis frases sobre a tua infância: onde vivias, jogos, amigos e comida."
+    },
+    "pt_BR": {
+     "t": "Lembranças de infância",
+     "g": "Descreva sua infância com o imperfeito.",
+     "p": [
+      "Comece com Cuando era niño / niña (Quando eu era criança) ou De pequeño / pequeña.",
+      "Hábitos e lugares: jugaba en la calle, mi colegio estaba cerca, tenía un perro.",
+      "Palavras úteis: el recuerdo (lembrança), los juguetes, tener miedo de, mi mejor amigo se llamaba..."
+     ],
+     "q": "Qual é uma lembrança feliz da sua infância?",
+     "c": "Escreva seis frases sobre sua infância: onde morava, brincadeiras, amigos e comida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "cuando era niño/a",
+      "ex": "Cuando era niña, vivía en el campo."
+     },
+     {
+      "w": "jugar en la calle",
+      "ex": "Jugábamos en la calle hasta la noche."
+     },
+     {
+      "w": "el colegio",
+      "ex": "Mi colegio estaba cerca de casa."
+     },
+     {
+      "w": "los juguetes",
+      "ex": "Mis juguetes favoritos eran los coches."
+     },
+     {
+      "w": "tener miedo",
+      "ex": "Tenía miedo de la oscuridad."
+     },
+     {
+      "w": "el recuerdo",
+      "ex": "Tengo muy buenos recuerdos de mi infancia."
+     }
+    ],
+    "gram": "Cuando era niño/a + imperfecto para hábitos y descripciones: cuando era niño, jugaba en la calle y tenía un perro."
+   }
+  }
+ ]
+}

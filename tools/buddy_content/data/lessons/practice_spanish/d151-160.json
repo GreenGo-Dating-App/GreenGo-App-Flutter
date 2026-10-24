@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 151,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Agreeing: yo también, yo tampoco",
+     "g": "Agree and disagree simply with short replies.",
+     "p": [
+      "Agree with a positive: yo también. Agree with a negative: yo tampoco (me neither).",
+      "Disagree: yo sí (I do), yo no (I don't). Often with pues: pues yo no.",
+      "With gustar-type verbs use a mí: a mí también, a mí tampoco, a mí sí, a mí no."
+     ],
+     "q": "I love spicy food and I don't like mornings. Do you agree? Reply with short answers.",
+     "c": "Write six statements about yourself and reply to each with the right short answer."
+    },
+    "de": {
+     "t": "Zustimmen: yo también, yo tampoco",
+     "g": "Du stimmst kurz zu oder widersprichst.",
+     "p": [
+      "Zustimmung zu positiv: yo también. Zu negativ: yo tampoco (ich auch nicht).",
+      "Widerspruch: yo sí (ich schon), yo no (ich nicht). Oft mit pues: pues yo no.",
+      "Bei gustar-Verben a mí: a mí también, a mí tampoco, a mí sí, a mí no."
+     ],
+     "q": "Ich liebe scharfes Essen und mag keine Morgen. Und du? Antworte kurz.",
+     "c": "Schreib sechs Aussagen über dich und antworte auf jede mit der passenden Kurzantwort."
+    },
+    "es": {
+     "t": "Estar de acuerdo: yo también, yo tampoco",
+     "g": "Muestra acuerdo o desacuerdo con respuestas cortas.",
+     "p": [
+      "Acuerdo con una frase positiva: yo también. Con una negativa: yo tampoco.",
+      "Desacuerdo: yo sí, yo no. Muchas veces con pues: pues yo no.",
+      "Con verbos como gustar se usa a mí: a mí también, a mí tampoco, a mí sí, a mí no."
+     ],
+     "q": "Me encanta la comida picante y no me gustan las mañanas. ¿Y a ti? Responde con frases cortas.",
+     "c": "Escribe seis frases sobre ti y responde a cada una con la respuesta corta adecuada."
+    },
+    "fr": {
+     "t": "Être d'accord : yo también, yo tampoco",
+     "g": "Exprimer l'accord ou le désaccord par des réponses courtes.",
+     "p": [
+      "Accord avec une phrase positive : yo también (moi aussi). Négative : yo tampoco (moi non plus).",
+      "Désaccord : yo sí (moi si), yo no (pas moi). Souvent avec pues : pues yo no.",
+      "Avec les verbes comme gustar, a mí : a mí también, a mí tampoco, a mí sí, a mí no."
+     ],
+     "q": "J'adore la cuisine épicée et je n'aime pas les matins. Et toi ? Réponds brièvement.",
+     "c": "Écris six phrases sur toi et réponds à chacune avec la bonne réponse courte."
+    },
+    "it": {
+     "t": "Essere d'accordo: yo también, yo tampoco",
+     "g": "Esprimi accordo o disaccordo con risposte brevi.",
+     "p": [
+      "Accordo con una frase positiva: yo también (anch'io). Negativa: yo tampoco (neanch'io).",
+      "Disaccordo: yo sí (io sì), yo no (io no). Spesso con pues: pues yo no.",
+      "Con i verbi come gustar si usa a mí: a mí también, a mí tampoco, a mí sí, a mí no."
+     ],
+     "q": "Adoro il cibo piccante e non mi piacciono le mattine. E tu? Rispondi in breve.",
+     "c": "Scrivi sei frasi su di te e rispondi a ognuna con la risposta breve giusta."
+    },
+    "pt": {
+     "t": "Concordar: yo también, yo tampoco",
+     "g": "Mostras acordo ou desacordo com respostas curtas.",
+     "p": [
+      "Acordo com uma frase positiva: yo también (eu também). Negativa: yo tampoco (eu também não).",
+      "Desacordo: yo sí (eu sim), yo no (eu não). Muitas vezes com pues: pues yo no.",
+      "Com verbos como gustar usa-se a mí: a mí también, a mí tampoco, a mí sí, a mí no."
+     ],
+     "q": "Adoro comida picante e não gosto das manhãs. E tu? Responde com frases curtas.",
+     "c": "Escreve seis frases sobre ti e responde a cada uma com a resposta curta certa."
+    },
+    "pt_BR": {
+     "t": "Concordar: yo también, yo tampoco",
+     "g": "Mostre que concorda ou discorda com respostas curtas.",
+     "p": [
+      "Concordar com frase positiva: yo también (eu também). Negativa: yo tampoco (eu também não).",
+      "Discordar: yo sí (eu sim), yo no (eu não). Muitas vezes com pues: pues yo no.",
+      "Com verbos como gustar se usa a mí: a mí también, a mí tampoco, a mí sí, a mí no."
+     ],
+     "q": "Adoro comida apimentada e não gosto de manhãs. E você? Responda com frases curtas.",
+     "c": "Escreva seis frases sobre você e responda a cada uma com a resposta curta certa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "yo también",
+      "ex": "Me gusta el café. Yo también."
+     },
+     {
+      "w": "yo tampoco",
+      "ex": "No me gusta el frío. Yo tampoco."
+     },
+     {
+      "w": "a mí también",
+      "ex": "Me encanta bailar. A mí también."
+     },
+     {
+      "w": "a mí tampoco",
+      "ex": "No me gustan las arañas. A mí tampoco."
+     },
+     {
+      "w": "yo sí",
+      "ex": "No tengo coche. Pues yo sí."
+     },
+     {
+      "w": "a mí no",
+      "ex": "Me gusta el fútbol. Pues a mí no."
+     }
+    ],
+    "gram": "Con verbos normales: yo también, yo tampoco, yo sí, yo no. Con verbos como gustar: a mí también, a mí tampoco, a mí sí, a mí no."
+   }
+  },
+  {
+   "d": 152,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Agreeing and disagreeing politely",
+     "g": "Agree, disagree and stay polite in a discussion.",
+     "p": [
+      "Agree: tienes razón, estoy de acuerdo, claro, eso es verdad.",
+      "Disagree softly: no estoy de acuerdo del todo, sí, pero..., yo no lo veo así.",
+      "In between: no estoy seguro, depende, puede ser. Note: tener razón, never estar razón."
+     ],
+     "q": "Is it better to live in the city or in the countryside? Agree or disagree politely.",
+     "c": "Respond to three opinions from your Buddy using one agree, one disagree and one in-between phrase."
+    },
+    "de": {
+     "t": "Höflich zustimmen und widersprechen",
+     "g": "Du stimmst zu, widersprichst und bleibst dabei höflich.",
+     "p": [
+      "Zustimmen: tienes razón, estoy de acuerdo, claro, eso es verdad.",
+      "Sanft widersprechen: no estoy de acuerdo del todo, sí, pero..., yo no lo veo así.",
+      "Dazwischen: no estoy seguro, depende, puede ser. Achtung: tener razón, nie estar razón."
+     ],
+     "q": "Lebt man besser in der Stadt oder auf dem Land? Stimm höflich zu oder widersprich.",
+     "c": "Reagiere auf drei Meinungen deines Buddys: einmal zustimmend, einmal widersprechend, einmal dazwischen."
+    },
+    "es": {
+     "t": "Estar o no de acuerdo con cortesía",
+     "g": "Muestra acuerdo o desacuerdo sin perder la cortesía.",
+     "p": [
+      "Acuerdo: tienes razón, estoy de acuerdo, claro, eso es verdad.",
+      "Desacuerdo suave: no estoy del todo de acuerdo, sí, pero..., yo no lo veo así.",
+      "En medio: no estoy seguro, depende, puede ser. Ojo: se dice tener razón, no estar razón."
+     ],
+     "q": "¿Es mejor vivir en la ciudad o en el campo? Muestra acuerdo o desacuerdo con educación.",
+     "c": "Responde a tres opiniones de tu Buddy: una con acuerdo, otra con desacuerdo y otra con duda."
+    },
+    "fr": {
+     "t": "Être d'accord ou pas, poliment",
+     "g": "Exprimer accord et désaccord tout en restant poli.",
+     "p": [
+      "Accord : tienes razón, estoy de acuerdo, claro, eso es verdad.",
+      "Désaccord en douceur : no estoy del todo de acuerdo, sí, pero..., yo no lo veo así.",
+      "Entre les deux : no estoy seguro, depende, puede ser. Attention : tener razón, jamais estar razón."
+     ],
+     "q": "Vaut-il mieux vivre en ville ou à la campagne ? Sois d'accord ou non, poliment.",
+     "c": "Réponds à trois avis de ton Buddy : un accord, un désaccord et une réponse nuancée."
+    },
+    "it": {
+     "t": "Essere d'accordo o no, con garbo",
+     "g": "Esprimi accordo e disaccordo restando cortese.",
+     "p": [
+      "Accordo: tienes razón, estoy de acuerdo, claro, eso es verdad.",
+      "Disaccordo gentile: no estoy del todo de acuerdo, sí, pero..., yo no lo veo así.",
+      "Nel mezzo: no estoy seguro, depende, puede ser. Attenzione: tener razón, mai estar razón."
+     ],
+     "q": "È meglio vivere in città o in campagna? Rispondi con garbo, d'accordo o no.",
+     "c": "Rispondi a tre opinioni del tuo Buddy: una d'accordo, una in disaccordo e una a metà."
+    },
+    "pt": {
+     "t": "Concordar e discordar com educação",
+     "g": "Concordas e discordas sem perder a educação.",
+     "p": [
+      "Concordar: tienes razón, estoy de acuerdo, claro, eso es verdad.",
+      "Discordar com suavidade: no estoy del todo de acuerdo, sí, pero..., yo no lo veo así.",
+      "No meio: no estoy seguro, depende, puede ser. Atenção: tener razón, nunca estar razón."
+     ],
+     "q": "É melhor viver na cidade ou no campo? Concorda ou discorda com educação.",
+     "c": "Responde a três opiniões do teu Buddy: uma a concordar, uma a discordar e uma com dúvida."
+    },
+    "pt_BR": {
+     "t": "Concordar e discordar com educação",
+     "g": "Concorde e discorde sem perder a educação.",
+     "p": [
+      "Concordar: tienes razón, estoy de acuerdo, claro, eso es verdad.",
+      "Discordar com suavidade: no estoy del todo de acuerdo, sí, pero..., yo no lo veo así.",
+      "No meio-termo: no estoy seguro, depende, puede ser. Atenção: tener razón, nunca estar razón."
+     ],
+     "q": "É melhor morar na cidade ou no campo? Concorde ou discorde com educação.",
+     "c": "Responda a três opiniões do seu Buddy: uma concordando, uma discordando e uma com dúvida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tienes razón",
+      "ex": "Tienes razón, es demasiado caro."
+     },
+     {
+      "w": "estoy de acuerdo",
+      "ex": "Estoy de acuerdo contigo."
+     },
+     {
+      "w": "no estoy de acuerdo",
+      "ex": "No estoy de acuerdo, creo que es justo."
+     },
+     {
+      "w": "no estoy seguro, segura",
+      "ex": "No estoy segura de que sea así."
+     },
+     {
+      "w": "depende",
+      "ex": "¿Te gusta viajar en tren? Depende del viaje."
+     },
+     {
+      "w": "sí, pero...",
+      "ex": "Sí, pero también hay que pensar en el precio."
+     }
+    ],
+    "gram": "Estar de acuerdo con alguien o en algo: estoy de acuerdo contigo. Tener razón (no estar razón). Suavizar: sí, pero...; bueno, depende."
+   }
+  },
+  {
+   "d": 153,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Jobs: tasks and skills",
+     "g": "Describe what you do at work and what you are good at.",
+     "p": [
+      "Tasks: me encargo de..., soy responsable de..., mi trabajo consiste en...",
+      "Skills work like gustar: se me da bien organizar, se me dan mal los números.",
+      "Useful: trabajar en equipo, atender a los clientes, hacer informes, resolver problemas."
+     ],
+     "q": "What are you good at, and what is harder for you? Use se me da bien and se me da mal.",
+     "c": "Describe a job you know well in four sentences: two tasks and two skills it needs."
+    },
+    "de": {
+     "t": "Berufe: Aufgaben und Fähigkeiten",
+     "g": "Du beschreibst, was du bei der Arbeit machst und was du gut kannst.",
+     "p": [
+      "Aufgaben: me encargo de..., soy responsable de..., mi trabajo consiste en...",
+      "Fähigkeiten wie gustar: se me da bien organizar, se me dan mal los números.",
+      "Nützlich: trabajar en equipo, atender a los clientes, hacer informes, resolver problemas."
+     ],
+     "q": "Was kannst du gut, und was fällt dir schwerer? Benutze se me da bien und se me da mal.",
+     "c": "Beschreib einen Beruf, den du gut kennst, in vier Sätzen: zwei Aufgaben und zwei Fähigkeiten."
+    },
+    "es": {
+     "t": "Trabajos: tareas y habilidades",
+     "g": "Describe lo que haces en el trabajo y lo que se te da bien.",
+     "p": [
+      "Tareas: me encargo de..., soy responsable de..., mi trabajo consiste en...",
+      "Las habilidades funcionan como gustar: se me da bien organizar, se me dan mal los números.",
+      "Útiles: trabajar en equipo, atender a los clientes, hacer informes, resolver problemas."
+     ],
+     "q": "¿Qué se te da bien y qué te cuesta más?",
+     "c": "Describe un trabajo que conoces bien en cuatro frases: dos tareas y dos habilidades necesarias."
+    },
+    "fr": {
+     "t": "Métiers : tâches et compétences",
+     "g": "Décrire ce que tu fais au travail et ce pour quoi tu es doué.",
+     "p": [
+      "Tâches : me encargo de..., soy responsable de..., mi trabajo consiste en...",
+      "Les compétences fonctionnent comme gustar : se me da bien organizar, se me dan mal los números.",
+      "Utile : trabajar en equipo, atender a los clientes, hacer informes, resolver problemas."
+     ],
+     "q": "Pour quoi es-tu doué, et qu'est-ce qui est plus dur ? Utilise se me da bien et se me da mal.",
+     "c": "Décris un métier que tu connais bien en quatre phrases : deux tâches et deux compétences."
+    },
+    "it": {
+     "t": "Lavori: compiti e abilità",
+     "g": "Descrivi cosa fai al lavoro e in cosa sei bravo.",
+     "p": [
+      "Compiti: me encargo de..., soy responsable de..., mi trabajo consiste en...",
+      "Le abilità funzionano come gustar: se me da bien organizar, se me dan mal los números.",
+      "Utili: trabajar en equipo, atender a los clientes, hacer informes, resolver problemas."
+     ],
+     "q": "In cosa sei bravo e cosa ti riesce più difficile? Usa se me da bien e se me da mal.",
+     "c": "Descrivi un lavoro che conosci bene in quattro frasi: due compiti e due abilità necessarie."
+    },
+    "pt": {
+     "t": "Profissões: tarefas e competências",
+     "g": "Descreves o que fazes no trabalho e aquilo em que és bom.",
+     "p": [
+      "Tarefas: me encargo de..., soy responsable de..., mi trabajo consiste en...",
+      "As competências funcionam como gustar: se me da bien organizar, se me dan mal los números.",
+      "Úteis: trabajar en equipo, atender a los clientes, hacer informes, resolver problemas."
+     ],
+     "q": "Em que és bom e o que te custa mais? Usa se me da bien e se me da mal.",
+     "c": "Descreve uma profissão que conheces bem em quatro frases: duas tarefas e duas competências."
+    },
+    "pt_BR": {
+     "t": "Profissões: tarefas e habilidades",
+     "g": "Descreva o que você faz no trabalho e no que você é bom.",
+     "p": [
+      "Tarefas: me encargo de..., soy responsable de..., mi trabajo consiste en...",
+      "Habilidades funcionam como gustar: se me da bien organizar, se me dan mal los números.",
+      "Úteis: trabajar en equipo, atender a los clientes, hacer informes, resolver problemas."
+     ],
+     "q": "No que você é bom e o que é mais difícil para você? Use se me da bien e se me da mal.",
+     "c": "Descreva uma profissão que você conhece bem em quatro frases: duas tarefas e duas habilidades."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me encargo de",
+      "ex": "Me encargo de atender a los clientes."
+     },
+     {
+      "w": "soy responsable de",
+      "ex": "Soy responsable del equipo de ventas."
+     },
+     {
+      "w": "se me da bien",
+      "ex": "Se me da bien organizar eventos."
+     },
+     {
+      "w": "se me da mal",
+      "ex": "Se me dan mal los números."
+     },
+     {
+      "w": "trabajar en equipo",
+      "ex": "Me gusta trabajar en equipo."
+     },
+     {
+      "w": "atender a los clientes",
+      "ex": "En la tienda atiendo a los clientes."
+     }
+    ],
+    "gram": "Encargarse de + nombre o infinitivo: me encargo de las facturas. Se me da bien/mal funciona como gustar: se me dan bien los idiomas."
+   }
+  },
+  {
+   "d": 154,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Talking about work or studies",
+     "g": "Explain what you do, what you like about it and what is hard.",
+     "p": [
+      "Say what you do: trabajo de profesora, trabajo en una empresa, estudio Medicina.",
+      "Likes: lo que más me gusta es el ambiente, me encanta trabajar con gente.",
+      "Difficulties: lo más difícil es el horario, a veces es estresante, tengo mucho trabajo."
+     ],
+     "q": "What do you like most about your work or studies, and what is the hardest part?",
+     "c": "Write a short paragraph about your work or studies: what, where, best part and hardest part."
+    },
+    "de": {
+     "t": "Über Arbeit oder Studium sprechen",
+     "g": "Du erklärst, was du machst, was dir gefällt und was schwer ist.",
+     "p": [
+      "Was du machst: trabajo de profesora, trabajo en una empresa, estudio Medicina.",
+      "Was dir gefällt: lo que más me gusta es el ambiente, me encanta trabajar con gente.",
+      "Schwierigkeiten: lo más difícil es el horario, a veces es estresante, tengo mucho trabajo."
+     ],
+     "q": "Was gefällt dir an deiner Arbeit oder deinem Studium am meisten, und was ist am schwersten?",
+     "c": "Schreib einen kurzen Absatz über deine Arbeit oder dein Studium: was, wo, das Beste und das Schwerste."
+    },
+    "es": {
+     "t": "Hablar del trabajo o los estudios",
+     "g": "Explica a qué te dedicas, qué te gusta y qué te cuesta.",
+     "p": [
+      "Qué haces: trabajo de profesora, trabajo en una empresa, estudio Medicina.",
+      "Lo que te gusta: lo que más me gusta es el ambiente, me encanta trabajar con gente.",
+      "Dificultades: lo más difícil es el horario, a veces es estresante, tengo mucho trabajo."
+     ],
+     "q": "¿Qué es lo que más te gusta de tu trabajo o tus estudios y qué es lo más difícil?",
+     "c": "Escribe un párrafo corto sobre tu trabajo o tus estudios: qué, dónde, lo mejor y lo más difícil."
+    },
+    "fr": {
+     "t": "Parler de son travail ou de ses études",
+     "g": "Expliquer ce que tu fais, ce que tu aimes et ce qui est difficile.",
+     "p": [
+      "Ce que tu fais : trabajo de profesora, trabajo en una empresa, estudio Medicina.",
+      "Ce que tu aimes : lo que más me gusta es el ambiente, me encanta trabajar con gente.",
+      "Difficultés : lo más difícil es el horario, a veces es estresante, tengo mucho trabajo."
+     ],
+     "q": "Qu'aimes-tu le plus dans ton travail ou tes études, et qu'est-ce qui est le plus dur ?",
+     "c": "Écris un court paragraphe sur ton travail ou tes études : quoi, où, le meilleur et le plus dur."
+    },
+    "it": {
+     "t": "Parlare di lavoro o studio",
+     "g": "Spieghi cosa fai, cosa ti piace e cosa è difficile.",
+     "p": [
+      "Cosa fai: trabajo de profesora, trabajo en una empresa, estudio Medicina.",
+      "Cosa ti piace: lo que más me gusta es el ambiente, me encanta trabajar con gente.",
+      "Difficoltà: lo más difícil es el horario, a veces es estresante, tengo mucho trabajo."
+     ],
+     "q": "Cosa ti piace di più del tuo lavoro o dei tuoi studi, e qual è la parte più difficile?",
+     "c": "Scrivi un breve paragrafo sul tuo lavoro o studio: cosa, dove, il meglio e la parte più dura."
+    },
+    "pt": {
+     "t": "Falar do trabalho ou dos estudos",
+     "g": "Explicas o que fazes, o que gostas e o que é difícil.",
+     "p": [
+      "O que fazes: trabajo de profesora, trabajo en una empresa, estudio Medicina.",
+      "O que gostas: lo que más me gusta es el ambiente, me encanta trabajar con gente.",
+      "Dificuldades: lo más difícil es el horario, a veces es estresante, tengo mucho trabajo."
+     ],
+     "q": "Do que gostas mais no teu trabalho ou estudos, e qual é a parte mais difícil?",
+     "c": "Escreve um parágrafo curto sobre o teu trabalho ou estudos: o quê, onde, o melhor e o mais difícil."
+    },
+    "pt_BR": {
+     "t": "Falar do trabalho ou dos estudos",
+     "g": "Explique o que você faz, do que gosta e o que é difícil.",
+     "p": [
+      "O que você faz: trabajo de profesora, trabajo en una empresa, estudio Medicina.",
+      "Do que gosta: lo que más me gusta es el ambiente, me encanta trabajar con gente.",
+      "Dificuldades: lo más difícil es el horario, a veces es estresante, tengo mucho trabajo."
+     ],
+     "q": "Do que você mais gosta no seu trabalho ou estudos, e qual é a parte mais difícil?",
+     "c": "Escreva um parágrafo curto sobre seu trabalho ou estudos: o quê, onde, o melhor e o mais difícil."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "trabajo de",
+      "ex": "Trabajo de enfermera en un hospital."
+     },
+     {
+      "w": "estudio",
+      "ex": "Estudio Derecho en la universidad."
+     },
+     {
+      "w": "lo que más me gusta es",
+      "ex": "Lo que más me gusta es ayudar a la gente."
+     },
+     {
+      "w": "lo más difícil es",
+      "ex": "Lo más difícil es el horario."
+     },
+     {
+      "w": "el horario",
+      "ex": "Tengo un horario muy flexible."
+     },
+     {
+      "w": "los compañeros",
+      "ex": "Mis compañeros son muy simpáticos."
+     }
+    ],
+    "gram": "Lo que más me gusta es + infinitivo o nombre; lo más difícil es + infinitivo. Trabajar de + profesión sin artículo: trabajo de profesor."
+   }
+  },
+  {
+   "d": 155,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Making appointments",
+     "g": "Arrange a time and place to meet with friends or professionals.",
+     "p": [
+      "Propose: ¿Te viene bien el viernes?, ¿Quedamos el sábado?, ¿Qué tal a las seis?",
+      "Answer: perfecto, me viene genial / me viene fatal, ¿qué tal el martes?",
+      "Quedar means to meet up; una cita is an appointment: tengo cita con el médico."
+     ],
+     "q": "When and where would you like to meet for a coffee? Propose a day and time.",
+     "c": "Write a short chat arranging a meeting: one proposal, one problem and a new time that works."
+    },
+    "de": {
+     "t": "Verabredungen treffen",
+     "g": "Du vereinbarst Zeit und Ort mit Freunden oder Fachleuten.",
+     "p": [
+      "Vorschlagen: ¿Te viene bien el viernes?, ¿Quedamos el sábado?, ¿Qué tal a las seis?",
+      "Antworten: perfecto, me viene genial / me viene fatal, ¿qué tal el martes?",
+      "Quedar heißt sich verabreden; una cita ist ein Termin: tengo cita con el médico."
+     ],
+     "q": "Wann und wo möchtest du dich auf einen Kaffee treffen? Schlag Tag und Uhrzeit vor.",
+     "c": "Schreib einen kurzen Chat zur Verabredung: ein Vorschlag, ein Problem und eine neue passende Zeit."
+    },
+    "es": {
+     "t": "Concertar citas",
+     "g": "Queda con amigos o pide cita con profesionales: día, hora y lugar.",
+     "p": [
+      "Propón: ¿Te viene bien el viernes?, ¿Quedamos el sábado?, ¿Qué tal a las seis?",
+      "Responde: perfecto, me viene genial / me viene fatal, ¿qué tal el martes?",
+      "Quedar es verse con alguien; una cita es con el médico, el dentista o la peluquería."
+     ],
+     "q": "¿Cuándo y dónde quedamos para tomar un café? Propón un día y una hora.",
+     "c": "Escribe un chat corto para quedar: una propuesta, un problema y una nueva hora que vaya bien."
+    },
+    "fr": {
+     "t": "Prendre rendez-vous",
+     "g": "Fixer une heure et un lieu avec des amis ou des professionnels.",
+     "p": [
+      "Proposer : ¿Te viene bien el viernes?, ¿Quedamos el sábado?, ¿Qué tal a las seis?",
+      "Répondre : perfecto, me viene genial / me viene fatal, ¿qué tal el martes?",
+      "Quedar veut dire se retrouver ; una cita est un rendez-vous : tengo cita con el médico."
+     ],
+     "q": "Quand et où aimerais-tu prendre un café ? Propose un jour et une heure.",
+     "c": "Écris un court chat pour fixer un rendez-vous : une proposition, un problème et une nouvelle heure."
+    },
+    "it": {
+     "t": "Prendere appuntamenti",
+     "g": "Fissi ora e luogo con amici o professionisti.",
+     "p": [
+      "Proporre: ¿Te viene bien el viernes?, ¿Quedamos el sábado?, ¿Qué tal a las seis?",
+      "Rispondere: perfecto, me viene genial / me viene fatal, ¿qué tal el martes?",
+      "Quedar significa vedersi; una cita è un appuntamento: tengo cita con el médico."
+     ],
+     "q": "Quando e dove ti piacerebbe vederci per un caffè? Proponi giorno e ora.",
+     "c": "Scrivi una breve chat per vedersi: una proposta, un problema e un nuovo orario che va bene."
+    },
+    "pt": {
+     "t": "Marcar encontros",
+     "g": "Combinas hora e lugar com amigos ou profissionais.",
+     "p": [
+      "Propor: ¿Te viene bien el viernes?, ¿Quedamos el sábado?, ¿Qué tal a las seis?",
+      "Responder: perfecto, me viene genial / me viene fatal, ¿qué tal el martes?",
+      "Quedar é combinar encontrar-se; una cita é uma consulta: tengo cita con el médico."
+     ],
+     "q": "Quando e onde gostavas de combinar um café? Propõe um dia e uma hora.",
+     "c": "Escreve um chat curto para combinar: uma proposta, um problema e uma nova hora que dê jeito."
+    },
+    "pt_BR": {
+     "t": "Marcar compromissos",
+     "g": "Combine hora e lugar com amigos ou profissionais.",
+     "p": [
+      "Propor: ¿Te viene bien el viernes?, ¿Quedamos el sábado?, ¿Qué tal a las seis?",
+      "Responder: perfecto, me viene genial / me viene fatal, ¿qué tal el martes?",
+      "Quedar é combinar de se encontrar; una cita é uma consulta: tengo cita con el médico."
+     ],
+     "q": "Quando e onde você gostaria de tomar um café? Proponha um dia e um horário.",
+     "c": "Escreva um chat curto para combinar: uma proposta, um problema e um novo horário que funcione."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿te viene bien...?",
+      "ex": "¿Te viene bien el viernes por la tarde?"
+     },
+     {
+      "w": "¿a qué hora quedamos?",
+      "ex": "¿A qué hora quedamos mañana?"
+     },
+     {
+      "w": "quedar",
+      "ex": "Quedamos a las seis en la plaza."
+     },
+     {
+      "w": "perfecto",
+      "ex": "Perfecto, nos vemos allí."
+     },
+     {
+      "w": "me viene fatal",
+      "ex": "El lunes me viene fatal, ¿qué tal el martes?"
+     },
+     {
+      "w": "la cita",
+      "ex": "Tengo cita con el dentista a las diez."
+     }
+    ],
+    "gram": "Venir bien/mal funciona como gustar: ¿te viene bien el jueves?, me viene mal. Quedar = verse con alguien: quedamos a las ocho."
+   }
+  },
+  {
+   "d": 156,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "The environment basics",
+     "g": "Talk about green habits and simple ways to help the planet.",
+     "p": [
+      "Actions: reciclar, reutilizar, reducir, ahorrar energía, ahorrar agua, ir en bici.",
+      "Things: los residuos, el plástico, el vidrio, el contenedor, la energía solar.",
+      "Say what everyone should do: hay que reciclar. Your effort: intento usar menos plástico."
+     ],
+     "q": "What do you do at home to help the environment?",
+     "c": "Write five green habits: three you already have (intento...) and two everyone should have (hay que...)."
+    },
+    "de": {
+     "t": "Umwelt: die Grundlagen",
+     "g": "Du sprichst über umweltfreundliche Gewohnheiten und einfache Beiträge.",
+     "p": [
+      "Handlungen: reciclar, reutilizar, reducir, ahorrar energía, ahorrar agua, ir en bici.",
+      "Dinge: los residuos, el plástico, el vidrio, el contenedor, la energía solar.",
+      "Was alle tun sollten: hay que reciclar. Deine Mühe: intento usar menos plástico."
+     ],
+     "q": "Was tust du zu Hause für die Umwelt?",
+     "c": "Schreib fünf grüne Gewohnheiten: drei, die du schon hast (intento...), und zwei für alle (hay que...)."
+    },
+    "es": {
+     "t": "El medio ambiente: lo básico",
+     "g": "Habla de hábitos verdes y formas sencillas de cuidar el planeta.",
+     "p": [
+      "Acciones: reciclar, reutilizar, reducir, ahorrar energía, ahorrar agua, ir en bici.",
+      "Cosas: los residuos, el plástico, el vidrio, el contenedor, la energía solar.",
+      "Lo que todos deben hacer: hay que reciclar. Tu esfuerzo: intento usar menos plástico."
+     ],
+     "q": "¿Qué haces en casa para cuidar el medio ambiente?",
+     "c": "Escribe cinco hábitos verdes: tres que ya tienes (intento...) y dos que todos deberían tener (hay que...)."
+    },
+    "fr": {
+     "t": "L'environnement : les bases",
+     "g": "Parler d'habitudes écologiques et de gestes simples pour la planète.",
+     "p": [
+      "Actions : reciclar, reutilizar, reducir, ahorrar energía, ahorrar agua, ir en bici.",
+      "Choses : los residuos, el plástico, el vidrio, el contenedor, la energía solar.",
+      "Ce que tous doivent faire : hay que reciclar. Ton effort : intento usar menos plástico."
+     ],
+     "q": "Que fais-tu chez toi pour l'environnement ?",
+     "c": "Écris cinq gestes verts : trois que tu fais déjà (intento...) et deux pour tous (hay que...)."
+    },
+    "it": {
+     "t": "L'ambiente: le basi",
+     "g": "Parli di abitudini green e modi semplici per aiutare il pianeta.",
+     "p": [
+      "Azioni: reciclar, reutilizar, reducir, ahorrar energía, ahorrar agua, ir en bici.",
+      "Cose: los residuos, el plástico, el vidrio, el contenedor, la energía solar.",
+      "Cosa dovrebbero fare tutti: hay que reciclar. Il tuo impegno: intento usar menos plástico."
+     ],
+     "q": "Cosa fai a casa per aiutare l'ambiente?",
+     "c": "Scrivi cinque abitudini green: tre che hai già (intento...) e due per tutti (hay que...)."
+    },
+    "pt": {
+     "t": "O ambiente: o básico",
+     "g": "Falas de hábitos ecológicos e formas simples de ajudar o planeta.",
+     "p": [
+      "Ações: reciclar, reutilizar, reducir, ahorrar energía, ahorrar agua, ir en bici.",
+      "Coisas: los residuos, el plástico, el vidrio, el contenedor, la energía solar.",
+      "O que todos devem fazer: hay que reciclar. O teu esforço: intento usar menos plástico."
+     ],
+     "q": "O que fazes em casa para ajudar o ambiente?",
+     "c": "Escreve cinco hábitos verdes: três que já tens (intento...) e dois para todos (hay que...)."
+    },
+    "pt_BR": {
+     "t": "Meio ambiente: o básico",
+     "g": "Fale de hábitos sustentáveis e formas simples de ajudar o planeta.",
+     "p": [
+      "Ações: reciclar, reutilizar, reducir, ahorrar energía, ahorrar agua, ir en bici.",
+      "Coisas: los residuos, el plástico, el vidrio, el contenedor, la energía solar.",
+      "O que todos devem fazer: hay que reciclar. O seu esforço: intento usar menos plástico."
+     ],
+     "q": "O que você faz em casa para ajudar o meio ambiente?",
+     "c": "Escreva cinco hábitos sustentáveis: três que você já tem (intento...) e dois para todos (hay que...)."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "reciclar",
+      "ex": "En casa reciclamos el vidrio y el papel."
+     },
+     {
+      "w": "reutilizar",
+      "ex": "Intento reutilizar las bolsas de la compra."
+     },
+     {
+      "w": "los residuos",
+      "ex": "Hay que reducir los residuos."
+     },
+     {
+      "w": "el plástico",
+      "ex": "Ya no compro botellas de plástico."
+     },
+     {
+      "w": "ahorrar energía",
+      "ex": "Apago las luces para ahorrar energía."
+     },
+     {
+      "w": "el contenedor",
+      "ex": "El papel va en el contenedor azul."
+     }
+    ],
+    "gram": "Hay que + infinitivo para obligaciones generales: hay que reciclar. Intento + infinitivo para tus esfuerzos: intento usar menos plástico."
+   }
+  },
+  {
+   "d": 157,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "City life vs country life",
+     "g": "Compare noise, space, transport and nature in city and countryside.",
+     "p": [
+      "More or less: la ciudad es más ruidosa que el campo, el pueblo es menos caro.",
+      "Equal: no es tan caro como, hay tanto espacio como, tantas tiendas como.",
+      "Topics: el ruido, el espacio, el transporte público, la naturaleza, el trabajo, el ocio."
+     ],
+     "q": "Would you rather live in a big city or a small village? Give two reasons.",
+     "c": "Write six comparisons between your town and another place you know, using más, menos and tan."
+    },
+    "de": {
+     "t": "Stadtleben und Landleben",
+     "g": "Du vergleichst Lärm, Platz, Verkehr und Natur in Stadt und Land.",
+     "p": [
+      "Mehr oder weniger: la ciudad es más ruidosa que el campo, el pueblo es menos caro.",
+      "Gleich: no es tan caro como, hay tanto espacio como, tantas tiendas como.",
+      "Themen: el ruido, el espacio, el transporte público, la naturaleza, el trabajo, el ocio."
+     ],
+     "q": "Würdest du lieber in einer Großstadt oder in einem Dorf leben? Nenne zwei Gründe.",
+     "c": "Schreib sechs Vergleiche zwischen deinem Ort und einem anderen mit más, menos und tan."
+    },
+    "es": {
+     "t": "Vida en la ciudad o en el campo",
+     "g": "Compara ruido, espacio, transporte y naturaleza en la ciudad y en el campo.",
+     "p": [
+      "Más o menos: la ciudad es más ruidosa que el campo, el pueblo es menos caro.",
+      "Igualdad: no es tan caro como, hay tanto espacio como, tantas tiendas como.",
+      "Temas: el ruido, el espacio, el transporte público, la naturaleza, el trabajo, el ocio."
+     ],
+     "q": "¿Prefieres vivir en una gran ciudad o en un pueblo pequeño? Da dos razones.",
+     "c": "Escribe seis comparaciones entre tu ciudad y otro lugar que conoces con más, menos y tan."
+    },
+    "fr": {
+     "t": "Vie en ville ou à la campagne",
+     "g": "Comparer bruit, espace, transports et nature en ville et à la campagne.",
+     "p": [
+      "Plus ou moins : la ciudad es más ruidosa que el campo, el pueblo es menos caro.",
+      "Égalité : no es tan caro como, hay tanto espacio como, tantas tiendas como.",
+      "Thèmes : el ruido, el espacio, el transporte público, la naturaleza, el trabajo, el ocio."
+     ],
+     "q": "Préférerais-tu vivre dans une grande ville ou un petit village ? Donne deux raisons.",
+     "c": "Écris six comparaisons entre ta ville et un autre lieu avec más, menos et tan."
+    },
+    "it": {
+     "t": "Città o campagna",
+     "g": "Confronti rumore, spazio, trasporti e natura in città e in campagna.",
+     "p": [
+      "Più o meno: la ciudad es más ruidosa que el campo, el pueblo es menos caro.",
+      "Uguaglianza: no es tan caro como, hay tanto espacio como, tantas tiendas como.",
+      "Temi: el ruido, el espacio, el transporte público, la naturaleza, el trabajo, el ocio."
+     ],
+     "q": "Preferiresti vivere in una grande città o in un piccolo paese? Dai due motivi.",
+     "c": "Scrivi sei paragoni tra la tua città e un altro posto con más, menos e tan."
+    },
+    "pt": {
+     "t": "Cidade ou campo",
+     "g": "Comparas ruído, espaço, transportes e natureza na cidade e no campo.",
+     "p": [
+      "Mais ou menos: la ciudad es más ruidosa que el campo, el pueblo es menos caro.",
+      "Igualdade: no es tan caro como, hay tanto espacio como, tantas tiendas como.",
+      "Temas: el ruido, el espacio, el transporte público, la naturaleza, el trabajo, el ocio."
+     ],
+     "q": "Preferias viver numa grande cidade ou numa aldeia pequena? Dá duas razões.",
+     "c": "Escreve seis comparações entre a tua terra e outro lugar com más, menos e tan."
+    },
+    "pt_BR": {
+     "t": "Cidade ou campo",
+     "g": "Compare barulho, espaço, transporte e natureza na cidade e no campo.",
+     "p": [
+      "Mais ou menos: la ciudad es más ruidosa que el campo, el pueblo es menos caro.",
+      "Igualdade: no es tan caro como, hay tanto espacio como, tantas tiendas como.",
+      "Temas: el ruido, el espacio, el transporte público, la naturaleza, el trabajo, el ocio."
+     ],
+     "q": "Você prefere morar numa cidade grande ou numa cidade pequena do interior? Dê dois motivos.",
+     "c": "Escreva seis comparações entre a sua cidade e outro lugar com más, menos e tan."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el ruido",
+      "ex": "En la ciudad hay mucho ruido."
+     },
+     {
+      "w": "el espacio",
+      "ex": "En el campo tienes más espacio."
+     },
+     {
+      "w": "el transporte público",
+      "ex": "El transporte público es mejor en la ciudad."
+     },
+     {
+      "w": "la naturaleza",
+      "ex": "Me encanta vivir cerca de la naturaleza."
+     },
+     {
+      "w": "más tranquilo que",
+      "ex": "El pueblo es más tranquilo que la ciudad."
+     },
+     {
+      "w": "tan... como",
+      "ex": "El campo no es tan caro como la ciudad."
+     }
+    ],
+    "gram": "Comparativos: más/menos + adjetivo + que (más tranquilo que), tan + adjetivo + como (tan caro como), tanto/a + nombre + como."
+   }
+  },
+  {
+   "d": 158,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Housing: renting a flat",
+     "g": "Understand rental ads and ask the right questions about a flat.",
+     "p": [
+      "Key words: alquilar, el piso, el casero, la fianza, el contrato, amueblado, gastos incluidos.",
+      "In Latin America you will also hear departamento or apartamento, and el arrendador.",
+      "Questions: ¿Está amueblado?, ¿Los gastos están incluidos?, ¿Se admiten mascotas?"
+     ],
+     "q": "What is most important for you in a flat: price, location, light or space?",
+     "c": "Write a short rental ad for your dream flat with size, price and three features."
+    },
+    "de": {
+     "t": "Wohnen: eine Wohnung mieten",
+     "g": "Du verstehst Mietanzeigen und stellst die richtigen Fragen.",
+     "p": [
+      "Schlüsselwörter: alquilar, el piso, el casero, la fianza, el contrato, amueblado, gastos incluidos.",
+      "In Lateinamerika hörst du auch departamento oder apartamento und el arrendador.",
+      "Fragen: ¿Está amueblado?, ¿Los gastos están incluidos?, ¿Se admiten mascotas?"
+     ],
+     "q": "Was ist dir an einer Wohnung am wichtigsten: Preis, Lage, Licht oder Platz?",
+     "c": "Schreib eine kurze Mietanzeige für deine Traumwohnung mit Größe, Preis und drei Merkmalen."
+    },
+    "es": {
+     "t": "Vivienda: alquilar un piso",
+     "g": "Entiende anuncios de alquiler y haz las preguntas adecuadas.",
+     "p": [
+      "Palabras clave: alquilar, el piso, el casero, la fianza, el contrato, amueblado, gastos incluidos.",
+      "En Latinoamérica también se dice departamento o apartamento, y el arrendador.",
+      "Preguntas: ¿Está amueblado?, ¿Los gastos están incluidos?, ¿Se admiten mascotas?"
+     ],
+     "q": "¿Qué es lo más importante para ti en un piso: el precio, la zona, la luz o el espacio?",
+     "c": "Escribe un anuncio corto de tu piso ideal con tamaño, precio y tres características."
+    },
+    "fr": {
+     "t": "Logement : louer un appartement",
+     "g": "Comprendre les annonces de location et poser les bonnes questions.",
+     "p": [
+      "Mots clés : alquilar, el piso, el casero, la fianza, el contrato, amueblado, gastos incluidos.",
+      "En Amérique latine, on entend aussi departamento ou apartamento, et el arrendador.",
+      "Questions : ¿Está amueblado?, ¿Los gastos están incluidos?, ¿Se admiten mascotas?"
+     ],
+     "q": "Qu'est-ce qui compte le plus pour toi dans un appartement : prix, quartier, lumière ou espace ?",
+     "c": "Écris une courte annonce pour l'appartement de tes rêves avec taille, prix et trois atouts."
+    },
+    "it": {
+     "t": "Casa: affittare un appartamento",
+     "g": "Capisci gli annunci d'affitto e fai le domande giuste.",
+     "p": [
+      "Parole chiave: alquilar, el piso, el casero, la fianza, el contrato, amueblado, gastos incluidos.",
+      "In America Latina si dice anche departamento o apartamento, e el arrendador.",
+      "Domande: ¿Está amueblado?, ¿Los gastos están incluidos?, ¿Se admiten mascotas?"
+     ],
+     "q": "Cosa conta di più per te in un appartamento: prezzo, zona, luce o spazio?",
+     "c": "Scrivi un breve annuncio per l'appartamento dei tuoi sogni con dimensioni, prezzo e tre caratteristiche."
+    },
+    "pt": {
+     "t": "Habitação: arrendar um apartamento",
+     "g": "Percebes anúncios de arrendamento e fazes as perguntas certas.",
+     "p": [
+      "Palavras-chave: alquilar, el piso, el casero, la fianza, el contrato, amueblado, gastos incluidos.",
+      "Na América Latina também se diz departamento ou apartamento, e el arrendador.",
+      "Perguntas: ¿Está amueblado?, ¿Los gastos están incluidos?, ¿Se admiten mascotas?"
+     ],
+     "q": "O que é mais importante para ti num apartamento: preço, zona, luz ou espaço?",
+     "c": "Escreve um anúncio curto para o apartamento dos teus sonhos com tamanho, preço e três características."
+    },
+    "pt_BR": {
+     "t": "Moradia: alugar um apartamento",
+     "g": "Entenda anúncios de aluguel e faça as perguntas certas.",
+     "p": [
+      "Palavras-chave: alquilar, el piso, el casero, la fianza, el contrato, amueblado, gastos incluidos.",
+      "Na América Latina também se diz departamento ou apartamento, e el arrendador.",
+      "Perguntas: ¿Está amueblado?, ¿Los gastos están incluidos?, ¿Se admiten mascotas?"
+     ],
+     "q": "O que é mais importante para você num apartamento: preço, bairro, luz ou espaço?",
+     "c": "Escreva um anúncio curto do apartamento dos seus sonhos com tamanho, preço e três características."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "alquilar",
+      "ex": "Queremos alquilar un piso en el centro."
+     },
+     {
+      "w": "el piso",
+      "ex": "El piso tiene dos dormitorios."
+     },
+     {
+      "w": "el casero, la casera",
+      "ex": "La casera vive en el piso de arriba."
+     },
+     {
+      "w": "la fianza",
+      "ex": "Hay que pagar un mes de fianza."
+     },
+     {
+      "w": "amueblado, amueblada",
+      "ex": "Busco un piso amueblado."
+     },
+     {
+      "w": "gastos incluidos",
+      "ex": "Son 700 euros al mes, gastos incluidos."
+     }
+    ],
+    "gram": "Preguntas para alquilar: ¿Está amueblado?, ¿Los gastos están incluidos?, ¿Cuánto es la fianza?, ¿Se admiten mascotas?"
+   }
+  },
+  {
+   "d": 159,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Neighbours and community",
+     "g": "Greet neighbours, ask for a favour and talk about your building.",
+     "p": [
+      "Daily contact: saludar a los vecinos, buenos días, ¿qué tal todo?, el portal, el ascensor.",
+      "Favours: ¿Te puedo pedir un favor?, ¿Me podrías regar las plantas?, te debo una.",
+      "In Spain la comunidad de vecinos is the residents' association that meets to decide things."
+     ],
+     "q": "How well do you know your neighbours? Tell me about one of them.",
+     "c": "Write a short note to a neighbour asking a favour and thanking them in advance."
+    },
+    "de": {
+     "t": "Nachbarn und Gemeinschaft",
+     "g": "Du grüßt Nachbarn, bittest um einen Gefallen und sprichst über dein Haus.",
+     "p": [
+      "Alltag: saludar a los vecinos, buenos días, ¿qué tal todo?, el portal, el ascensor.",
+      "Gefallen: ¿Te puedo pedir un favor?, ¿Me podrías regar las plantas?, te debo una.",
+      "In Spanien ist la comunidad de vecinos die Eigentümergemeinschaft, die gemeinsam entscheidet."
+     ],
+     "q": "Wie gut kennst du deine Nachbarn? Erzähl mir von einem.",
+     "c": "Schreib eine kurze Notiz an einen Nachbarn mit einer Bitte und einem Dank im Voraus."
+    },
+    "es": {
+     "t": "Vecinos y comunidad",
+     "g": "Saluda a los vecinos, pide un favor y habla de tu edificio.",
+     "p": [
+      "Trato diario: saludar a los vecinos, buenos días, ¿qué tal todo?, el portal, el ascensor.",
+      "Favores: ¿Te puedo pedir un favor?, ¿Me podrías regar las plantas?, te debo una.",
+      "En España, la comunidad de vecinos se reúne para decidir cosas del edificio."
+     ],
+     "q": "¿Conoces bien a tus vecinos? Háblame de uno de ellos.",
+     "c": "Escribe una nota corta a un vecino pidiéndole un favor y dándole las gracias de antemano."
+    },
+    "fr": {
+     "t": "Voisins et vie de quartier",
+     "g": "Saluer tes voisins, demander un service et parler de ton immeuble.",
+     "p": [
+      "Au quotidien : saludar a los vecinos, buenos días, ¿qué tal todo?, el portal, el ascensor.",
+      "Services : ¿Te puedo pedir un favor?, ¿Me podrías regar las plantas?, te debo una.",
+      "En Espagne, la comunidad de vecinos est la copropriété qui se réunit pour décider."
+     ],
+     "q": "Connais-tu bien tes voisins ? Parle-moi de l'un d'eux.",
+     "c": "Écris un petit mot à un voisin pour lui demander un service et le remercier d'avance."
+    },
+    "it": {
+     "t": "Vicini e condominio",
+     "g": "Saluti i vicini, chiedi un favore e parli del tuo palazzo.",
+     "p": [
+      "Ogni giorno: saludar a los vecinos, buenos días, ¿qué tal todo?, el portal, el ascensor.",
+      "Favori: ¿Te puedo pedir un favor?, ¿Me podrías regar las plantas?, te debo una.",
+      "In Spagna la comunidad de vecinos è il condominio, che si riunisce per decidere."
+     ],
+     "q": "Conosci bene i tuoi vicini? Parlami di uno di loro.",
+     "c": "Scrivi un biglietto a un vicino per chiedere un favore e ringraziarlo in anticipo."
+    },
+    "pt": {
+     "t": "Vizinhos e condomínio",
+     "g": "Cumprimentas os vizinhos, pedes um favor e falas do teu prédio.",
+     "p": [
+      "No dia a dia: saludar a los vecinos, buenos días, ¿qué tal todo?, el portal, el ascensor.",
+      "Favores: ¿Te puedo pedir un favor?, ¿Me podrías regar las plantas?, te debo una.",
+      "Em Espanha, la comunidad de vecinos é o condomínio, que se reúne para decidir."
+     ],
+     "q": "Conheces bem os teus vizinhos? Fala-me de um deles.",
+     "c": "Escreve um bilhete a um vizinho a pedir um favor e a agradecer antecipadamente."
+    },
+    "pt_BR": {
+     "t": "Vizinhos e condomínio",
+     "g": "Cumprimente os vizinhos, peça um favor e fale do seu prédio.",
+     "p": [
+      "No dia a dia: saludar a los vecinos, buenos días, ¿qué tal todo?, el portal, el ascensor.",
+      "Favores: ¿Te puedo pedir un favor?, ¿Me podrías regar las plantas?, te debo una.",
+      "Na Espanha, la comunidad de vecinos é o condomínio, que se reúne para decidir."
+     ],
+     "q": "Você conhece bem os seus vizinhos? Me fale de um deles.",
+     "c": "Escreva um bilhete para um vizinho pedindo um favor e agradecendo de antemão."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el vecino, la vecina",
+      "ex": "Mi vecina del tercero es muy amable."
+     },
+     {
+      "w": "saludar",
+      "ex": "Siempre saludo a los vecinos en el ascensor."
+     },
+     {
+      "w": "pedir un favor",
+      "ex": "¿Te puedo pedir un favor?"
+     },
+     {
+      "w": "¿me podrías...?",
+      "ex": "¿Me podrías regar las plantas este fin de semana?"
+     },
+     {
+      "w": "la comunidad de vecinos",
+      "ex": "La comunidad de vecinos se reúne una vez al mes."
+     },
+     {
+      "w": "el portal",
+      "ex": "Nos vemos en el portal a las ocho."
+     }
+    ],
+    "gram": "Pedir favores con cortesía: ¿Me podrías + infinitivo?, ¿Te importaría + infinitivo? Agradecer: muchas gracias, te debo una."
+   }
+  },
+  {
+   "d": 160,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: opinions and daily life",
+     "g": "Recap opinions, work, housing and the conditional in real conversation.",
+     "p": [
+      "Opinions and reactions: creo que, en mi opinión, tienes razón, yo también, a mí tampoco.",
+      "Work and home: me encargo de, se me da bien, alquilar un piso, la fianza, los vecinos.",
+      "Polite requests and plans: me gustaría, ¿podría...?, ¿te viene bien el lunes?"
+     ],
+     "q": "Is it better to work from home or at the office? Give your opinion and react to mine.",
+     "c": "Record or write a one-minute talk about your daily life using an opinion, a job phrase and a conditional."
+    },
+    "de": {
+     "t": "Wiederholung: Meinungen und Alltag",
+     "g": "Du wiederholst Meinungen, Arbeit, Wohnen und den Konditional im Gespräch.",
+     "p": [
+      "Meinungen und Reaktionen: creo que, en mi opinión, tienes razón, yo también, a mí tampoco.",
+      "Arbeit und Zuhause: me encargo de, se me da bien, alquilar un piso, la fianza, los vecinos.",
+      "Höfliche Bitten und Pläne: me gustaría, ¿podría...?, ¿te viene bien el lunes?"
+     ],
+     "q": "Arbeitet man besser zu Hause oder im Büro? Sag deine Meinung und reagiere auf meine.",
+     "c": "Sprich oder schreib eine Minute über deinen Alltag mit einer Meinung, einer Arbeitswendung und einem Konditional."
+    },
+    "es": {
+     "t": "Repaso: opiniones y vida diaria",
+     "g": "Repasa opiniones, trabajo, vivienda y el condicional en una conversación real.",
+     "p": [
+      "Opiniones y reacciones: creo que, en mi opinión, tienes razón, yo también, a mí tampoco.",
+      "Trabajo y casa: me encargo de, se me da bien, alquilar un piso, la fianza, los vecinos.",
+      "Peticiones y planes: me gustaría, ¿podría...?, ¿te viene bien el lunes?"
+     ],
+     "q": "¿Es mejor trabajar desde casa o en la oficina? Da tu opinión y reacciona a la mía.",
+     "c": "Graba o escribe un minuto sobre tu vida diaria con una opinión, una frase de trabajo y un condicional."
+    },
+    "fr": {
+     "t": "Révision : opinions et vie quotidienne",
+     "g": "Réviser opinions, travail, logement et conditionnel dans une vraie conversation.",
+     "p": [
+      "Opinions et réactions : creo que, en mi opinión, tienes razón, yo también, a mí tampoco.",
+      "Travail et maison : me encargo de, se me da bien, alquilar un piso, la fianza, los vecinos.",
+      "Demandes et projets : me gustaría, ¿podría...?, ¿te viene bien el lunes?"
+     ],
+     "q": "Vaut-il mieux télétravailler ou aller au bureau ? Donne ton avis et réagis au mien.",
+     "c": "Enregistre ou écris une minute sur ton quotidien avec une opinion, une phrase de travail et un conditionnel."
+    },
+    "it": {
+     "t": "Ripasso: opinioni e vita quotidiana",
+     "g": "Ripassi opinioni, lavoro, casa e condizionale in una conversazione vera.",
+     "p": [
+      "Opinioni e reazioni: creo que, en mi opinión, tienes razón, yo también, a mí tampoco.",
+      "Lavoro e casa: me encargo de, se me da bien, alquilar un piso, la fianza, los vecinos.",
+      "Richieste e piani: me gustaría, ¿podría...?, ¿te viene bien el lunes?"
+     ],
+     "q": "È meglio lavorare da casa o in ufficio? Dai la tua opinione e reagisci alla mia.",
+     "c": "Registra o scrivi un minuto sulla tua vita quotidiana con un'opinione, una frase di lavoro e un condizionale."
+    },
+    "pt": {
+     "t": "Revisão: opiniões e dia a dia",
+     "g": "Revês opiniões, trabalho, habitação e o condicional numa conversa real.",
+     "p": [
+      "Opiniões e reações: creo que, en mi opinión, tienes razón, yo también, a mí tampoco.",
+      "Trabalho e casa: me encargo de, se me da bien, alquilar un piso, la fianza, los vecinos.",
+      "Pedidos e planos: me gustaría, ¿podría...?, ¿te viene bien el lunes?"
+     ],
+     "q": "É melhor trabalhar em casa ou no escritório? Dá a tua opinião e reage à minha.",
+     "c": "Grava ou escreve um minuto sobre o teu dia a dia com uma opinião, uma frase de trabalho e um condicional."
+    },
+    "pt_BR": {
+     "t": "Revisão: opiniões e dia a dia",
+     "g": "Revise opiniões, trabalho, moradia e o condicional numa conversa real.",
+     "p": [
+      "Opiniões e reações: creo que, en mi opinión, tienes razón, yo también, a mí tampoco.",
+      "Trabalho e casa: me encargo de, se me da bien, alquilar un piso, la fianza, los vecinos.",
+      "Pedidos e planos: me gustaría, ¿podría...?, ¿te viene bien el lunes?"
+     ],
+     "q": "É melhor trabalhar de casa ou no escritório? Dê sua opinião e reaja à minha.",
+     "c": "Grave ou escreva um minuto sobre seu dia a dia com uma opinião, uma frase de trabalho e um condicional."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "en mi opinión",
+      "ex": "En mi opinión, trabajar desde casa es mejor."
+     },
+     {
+      "w": "estoy de acuerdo",
+      "ex": "Estoy de acuerdo, pero depende del trabajo."
+     },
+     {
+      "w": "me encargo de",
+      "ex": "En casa me encargo de cocinar."
+     },
+     {
+      "w": "me gustaría",
+      "ex": "Me gustaría vivir más cerca del trabajo."
+     },
+     {
+      "w": "¿te viene bien?",
+      "ex": "¿Te viene bien quedar el domingo?"
+     },
+     {
+      "w": "hay que",
+      "ex": "Hay que reciclar más en el edificio."
+     }
+    ],
+    "gram": "Repaso: opinar (creo que + indicativo), acordar (yo también, a mí tampoco), condicional de cortesía (podría, me gustaría) y hay que."
+   }
+  }
+ ]
+}

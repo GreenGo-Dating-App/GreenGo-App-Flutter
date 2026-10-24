@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Avere: the verb to have",
+     "g": "Conjugate avere and use it for age, things you own and feelings like hunger.",
+     "p": [
+      "The forms: ho, hai, ha, abbiamo, avete, hanno. The h is silent, so ho sounds like o.",
+      "Age uses avere: Ho vent'anni means I am twenty, literally I have twenty years.",
+      "Hunger, thirst, cold and heat too: ho fame, ho sete, ho freddo, ho caldo."
+     ],
+     "q": "Quanti anni hai? And how do you feel right now: hai fame, sete or sonno?",
+     "c": "Say five things you have or feel today in Italian, using five forms of avere."
+    },
+    "de": {
+     "t": "Avere: das Verb haben",
+     "g": "Du konjugierst avere und nutzt es für Alter, Besitz und Gefühle wie Hunger.",
+     "p": [
+      "Die Formen: ho, hai, ha, abbiamo, avete, hanno. Das h ist stumm, ho klingt wie o.",
+      "Das Alter drückt man mit avere aus: Ho vent'anni heißt ich bin zwanzig.",
+      "Auch Hunger, Durst, Kälte und Hitze: ho fame, ho sete, ho freddo, ho caldo."
+     ],
+     "q": "Quanti anni hai? Und wie fühlst du dich gerade: hai fame, sete oder sonno?",
+     "c": "Sag heute fünf Dinge, die du hast oder fühlst, mit fünf Formen von avere."
+    },
+    "es": {
+     "t": "Avere: el verbo tener",
+     "g": "Conjuga avere y úsalo para la edad, lo que posees y sensaciones como el hambre.",
+     "p": [
+      "Las formas: ho, hai, ha, abbiamo, avete, hanno. La h es muda, ho suena o.",
+      "La edad va con avere, como en español: Ho vent'anni, tengo veinte años.",
+      "También hambre, sed, frío y calor: ho fame, ho sete, ho freddo, ho caldo."
+     ],
+     "q": "Quanti anni hai? ¿Y cómo te sientes ahora: hai fame, sete o sonno?",
+     "c": "Di hoy cinco cosas que tienes o sientes en italiano con cinco formas de avere."
+    },
+    "fr": {
+     "t": "Avere : le verbe avoir",
+     "g": "Conjuguer avere et l'utiliser pour l'âge, ce que tu possèdes et des sensations comme la faim.",
+     "p": [
+      "Les formes : ho, hai, ha, abbiamo, avete, hanno. Le h est muet, ho se dit o.",
+      "L'âge se dit avec avere, comme en français : Ho vent'anni, j'ai vingt ans.",
+      "La faim, la soif, le froid et le chaud aussi : ho fame, ho sete, ho freddo, ho caldo."
+     ],
+     "q": "Quanti anni hai ? Et comment te sens-tu maintenant : hai fame, sete ou sonno ?",
+     "c": "Dis cinq choses que tu as ou ressens aujourd'hui avec cinq formes d'avere."
+    },
+    "it": {
+     "t": "Avere: il verbo avere",
+     "g": "Impari il presente di avere e lo usi per l'età, le cose che possiedi e le sensazioni.",
+     "p": [
+      "Le forme: ho, hai, ha, abbiamo, avete, hanno. La h non si pronuncia.",
+      "L'età si dice con avere: Ho vent'anni.",
+      "Anche fame, sete, freddo e caldo: ho fame, ho sete, ho freddo, ho caldo."
+     ],
+     "q": "Quanti anni hai? E come ti senti adesso: hai fame, sete o sonno?",
+     "c": "Di' cinque cose che hai o che senti oggi, usando cinque forme di avere."
+    },
+    "pt": {
+     "t": "Avere: o verbo ter",
+     "g": "Conjugar avere e usá-lo para a idade, o que tens e sensações como a fome.",
+     "p": [
+      "As formas: ho, hai, ha, abbiamo, avete, hanno. O h é mudo, ho soa o.",
+      "A idade diz-se com avere, como em português: Ho vent'anni, tenho vinte anos.",
+      "Fome, sede, frio e calor também: ho fame, ho sete, ho freddo, ho caldo."
+     ],
+     "q": "Quanti anni hai? E como te sentes agora: hai fame, sete ou sonno?",
+     "c": "Diz hoje cinco coisas que tens ou sentes em italiano, com cinco formas de avere."
+    },
+    "pt_BR": {
+     "t": "Avere: o verbo ter",
+     "g": "Conjugar avere e usar para idade, coisas que você tem e sensações como fome.",
+     "p": [
+      "As formas: ho, hai, ha, abbiamo, avete, hanno. O h é mudo, ho soa o.",
+      "A idade se diz com avere, como em português: Ho vent'anni, tenho vinte anos.",
+      "Fome, sede, frio e calor também: ho fame, ho sete, ho freddo, ho caldo."
+     ],
+     "q": "Quanti anni hai? E como você se sente agora: hai fame, sete ou sonno?",
+     "c": "Diga hoje cinco coisas que você tem ou sente em italiano, com cinco formas de avere."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ho",
+      "ex": "Ho una sorella e un fratello."
+     },
+     {
+      "w": "hai",
+      "ex": "Quanti anni hai?"
+     },
+     {
+      "w": "ha",
+      "ex": "Marco ha una macchina rossa."
+     },
+     {
+      "w": "avere fame",
+      "ex": "Ho fame, andiamo a mangiare!"
+     },
+     {
+      "w": "avere sete",
+      "ex": "Hai sete? Vuoi dell'acqua?"
+     },
+     {
+      "w": "avere freddo",
+      "ex": "Abbiamo freddo, chiudi la finestra."
+     }
+    ],
+    "gram": "Avere al presente: ho, hai, ha, abbiamo, avete, hanno. La h non si pronuncia. Si usa per l'età: ho vent'anni."
+   }
+  },
+  {
+   "d": 12,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Masculine and feminine nouns",
+     "g": "Recognise whether an Italian noun is masculine or feminine from its ending.",
+     "p": [
+      "Every noun has a gender. Words ending in -o are usually masculine: il libro, il vino.",
+      "Words ending in -a are usually feminine: la casa, la pizza.",
+      "Words in -e can be either, so learn them with the article: il fiore, la chiave."
+     ],
+     "q": "Look around you: can you name one masculine and one feminine object in Italian?",
+     "c": "Write ten Italian nouns you know and mark each one M or F."
+    },
+    "de": {
+     "t": "Männliche und weibliche Nomen",
+     "g": "Du erkennst an der Endung, ob ein italienisches Nomen männlich oder weiblich ist.",
+     "p": [
+      "Jedes Nomen hat ein Geschlecht. Wörter auf -o sind meist männlich: il libro, il vino.",
+      "Wörter auf -a sind meist weiblich: la casa, la pizza.",
+      "Wörter auf -e können beides sein, also lerne sie mit Artikel: il fiore, la chiave."
+     ],
+     "q": "Schau dich um: Kannst du einen männlichen und einen weiblichen Gegenstand auf Italienisch nennen?",
+     "c": "Schreib zehn italienische Nomen auf und markiere jedes mit M oder F."
+    },
+    "es": {
+     "t": "Sustantivos masculinos y femeninos",
+     "g": "Reconoce si un sustantivo italiano es masculino o femenino por su terminación.",
+     "p": [
+      "Como en español, todo tiene género. Las palabras en -o suelen ser masculinas: il libro.",
+      "Las palabras en -a suelen ser femeninas: la casa, la pizza.",
+      "Las palabras en -e pueden ser de ambos; apréndelas con artículo: il fiore, la chiave."
+     ],
+     "q": "Mira a tu alrededor: ¿puedes nombrar un objeto masculino y uno femenino en italiano?",
+     "c": "Escribe diez sustantivos italianos que conozcas y marca cada uno con M o F."
+    },
+    "fr": {
+     "t": "Noms masculins et féminins",
+     "g": "Reconnaître si un nom italien est masculin ou féminin grâce à sa terminaison.",
+     "p": [
+      "Chaque nom a un genre. Les mots en -o sont presque toujours masculins : il libro.",
+      "Les mots en -a sont généralement féminins : la casa, la pizza.",
+      "Les mots en -e peuvent être l'un ou l'autre, apprends-les avec l'article : il fiore, la chiave."
+     ],
+     "q": "Regarde autour de toi : peux-tu nommer un objet masculin et un féminin en italien ?",
+     "c": "Écris dix noms italiens que tu connais et note M ou F à côté de chacun."
+    },
+    "it": {
+     "t": "Nomi maschili e femminili",
+     "g": "Impari a capire dalla desinenza se un nome è maschile o femminile.",
+     "p": [
+      "Ogni nome ha un genere. I nomi in -o sono quasi sempre maschili: il libro, il vino.",
+      "I nomi in -a sono di solito femminili: la casa, la pizza.",
+      "I nomi in -e possono essere maschili o femminili: impara l'articolo, il fiore, la chiave."
+     ],
+     "q": "Guardati intorno: sai nominare un oggetto maschile e uno femminile?",
+     "c": "Scrivi dieci nomi italiani che conosci e segna accanto M o F."
+    },
+    "pt": {
+     "t": "Nomes masculinos e femininos",
+     "g": "Reconhecer pela terminação se um nome italiano é masculino ou feminino.",
+     "p": [
+      "Como em português, tudo tem género. Palavras em -o são quase sempre masculinas: il libro.",
+      "Palavras em -a costumam ser femininas: la casa, la pizza.",
+      "Palavras em -e podem ser dos dois; aprende-as com o artigo: il fiore, la chiave."
+     ],
+     "q": "Olha à tua volta: consegues dizer um objeto masculino e um feminino em italiano?",
+     "c": "Escreve dez nomes italianos que conheces e marca cada um com M ou F."
+    },
+    "pt_BR": {
+     "t": "Substantivos masculinos e femininos",
+     "g": "Reconhecer pela terminação se um substantivo italiano é masculino ou feminino.",
+     "p": [
+      "Como em português, tudo tem gênero. Palavras em -o quase sempre são masculinas: il libro.",
+      "Palavras em -a costumam ser femininas: la casa, la pizza.",
+      "Palavras em -e podem ser dos dois; aprenda com o artigo: il fiore, la chiave."
+     ],
+     "q": "Olhe ao redor: você consegue dizer um objeto masculino e um feminino em italiano?",
+     "c": "Escreva dez substantivos italianos que você conhece e marque cada um com M ou F."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il libro",
+      "ex": "Il libro è sul tavolo."
+     },
+     {
+      "w": "la pizza",
+      "ex": "La pizza è pronta!"
+     },
+     {
+      "w": "il ragazzo",
+      "ex": "Il ragazzo è simpatico."
+     },
+     {
+      "w": "la ragazza",
+      "ex": "La ragazza parla italiano."
+     },
+     {
+      "w": "il fiore",
+      "ex": "Il fiore è giallo."
+     },
+     {
+      "w": "la chiave",
+      "ex": "Dov'è la chiave?"
+     }
+    ],
+    "gram": "I nomi in -o sono quasi sempre maschili, quelli in -a femminili. I nomi in -e possono essere maschili (il fiore) o femminili (la chiave)."
+   }
+  },
+  {
+   "d": 13,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Singular to plural",
+     "g": "Turn Italian nouns into the plural with three simple rules.",
+     "p": [
+      "Masculine -o becomes -i: un libro, due libri.",
+      "Feminine -a becomes -e: una casa, due case; and -e becomes -i: un fiore, due fiori.",
+      "Some nouns never change: words with a final accent (città, caffè) and foreign words (film, bar)."
+     ],
+     "q": "What do you have more than one of on your desk right now? Say it in the plural.",
+     "c": "Take five nouns from yesterday and write their plural forms."
+    },
+    "de": {
+     "t": "Von Singular zu Plural",
+     "g": "Du bildest den Plural italienischer Nomen mit drei einfachen Regeln.",
+     "p": [
+      "Männlich -o wird zu -i: un libro, due libri.",
+      "Weiblich -a wird zu -e: una casa, due case; und -e wird zu -i: un fiore, due fiori.",
+      "Manche bleiben gleich: Wörter mit Endbetonung (città, caffè) und Fremdwörter (film, bar)."
+     ],
+     "q": "Wovon liegt gerade mehr als eins auf deinem Tisch? Sag es im Plural.",
+     "c": "Nimm fünf Nomen von gestern und schreib ihre Pluralformen auf."
+    },
+    "es": {
+     "t": "Del singular al plural",
+     "g": "Forma el plural de los sustantivos italianos con tres reglas sencillas.",
+     "p": [
+      "El masculino en -o pasa a -i: un libro, due libri.",
+      "El femenino en -a pasa a -e: una casa, due case; y -e pasa a -i: un fiore, due fiori.",
+      "Algunos no cambian: palabras con tilde final (città, caffè) y extranjeras (film, bar)."
+     ],
+     "q": "¿De qué tienes más de uno en tu mesa ahora mismo? Dilo en plural.",
+     "c": "Toma cinco sustantivos de ayer y escribe su plural."
+    },
+    "fr": {
+     "t": "Du singulier au pluriel",
+     "g": "Mettre les noms italiens au pluriel avec trois règles simples.",
+     "p": [
+      "Le masculin en -o devient -i : un libro, due libri.",
+      "Le féminin en -a devient -e : una casa, due case ; et -e devient -i : un fiore, due fiori.",
+      "Certains ne changent jamais : mots à accent final (città, caffè) et mots étrangers (film, bar)."
+     ],
+     "q": "De quoi as-tu plusieurs exemplaires sur ton bureau ? Dis-le au pluriel.",
+     "c": "Prends cinq noms d'hier et écris leur pluriel."
+    },
+    "it": {
+     "t": "Dal singolare al plurale",
+     "g": "Impari a formare il plurale dei nomi con tre regole semplici.",
+     "p": [
+      "Il maschile in -o diventa -i: un libro, due libri.",
+      "Il femminile in -a diventa -e: una casa, due case; e -e diventa -i: un fiore, due fiori.",
+      "Alcuni nomi non cambiano: quelli accentati (città, caffè) e quelli stranieri (film, bar)."
+     ],
+     "q": "Che cosa hai in più copie sulla scrivania adesso? Dillo al plurale.",
+     "c": "Prendi cinque nomi di ieri e scrivi il loro plurale."
+    },
+    "pt": {
+     "t": "Do singular ao plural",
+     "g": "Formar o plural dos nomes italianos com três regras simples.",
+     "p": [
+      "O masculino em -o passa a -i: un libro, due libri.",
+      "O feminino em -a passa a -e: una casa, due case; e -e passa a -i: un fiore, due fiori.",
+      "Alguns nunca mudam: palavras com acento final (città, caffè) e estrangeiras (film, bar)."
+     ],
+     "q": "De que coisa tens mais de uma na secretária agora? Diz no plural.",
+     "c": "Pega em cinco nomes de ontem e escreve o plural de cada um."
+    },
+    "pt_BR": {
+     "t": "Do singular ao plural",
+     "g": "Formar o plural dos substantivos italianos com três regras simples.",
+     "p": [
+      "O masculino em -o vira -i: un libro, due libri.",
+      "O feminino em -a vira -e: una casa, due case; e -e vira -i: un fiore, due fiori.",
+      "Alguns nunca mudam: palavras com acento final (città, caffè) e estrangeiras (film, bar)."
+     ],
+     "q": "De que você tem mais de um na sua mesa agora? Diga no plural.",
+     "c": "Pegue cinco substantivos de ontem e escreva o plural de cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "i libri",
+      "ex": "Ho tanti libri a casa."
+     },
+     {
+      "w": "le case",
+      "ex": "Le case di Venezia sono antiche."
+     },
+     {
+      "w": "i fiori",
+      "ex": "Questi fiori sono per te."
+     },
+     {
+      "w": "le chiavi",
+      "ex": "Non trovo le chiavi!"
+     },
+     {
+      "w": "i caffè",
+      "ex": "Due caffè, per favore."
+     },
+     {
+      "w": "le città",
+      "ex": "Roma e Milano sono due città grandi."
+     }
+    ],
+    "gram": "Plurale: -o diventa -i (libro, libri), -a diventa -e (casa, case), -e diventa -i (fiore, fiori). Le parole accentate non cambiano: città."
+   }
+  },
+  {
+   "d": 14,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Definite articles: il, lo, la",
+     "g": "Choose the right word for the in Italian.",
+     "p": [
+      "Masculine: il before most consonants (il treno), lo before s+consonant, z, gn, ps (lo zaino), l' before a vowel.",
+      "Masculine plural: il becomes i; lo and l' become gli (gli zaini, gli amici).",
+      "Feminine: la, or l' before a vowel (l'amica); the plural is always le."
+     ],
+     "q": "Which article goes with studente, and why is it not il?",
+     "c": "Write the article for ten nouns, then check them against the rule."
+    },
+    "de": {
+     "t": "Bestimmte Artikel: il, lo, la",
+     "g": "Du wählst den richtigen bestimmten Artikel auf Italienisch.",
+     "p": [
+      "Männlich: il vor den meisten Konsonanten (il treno), lo vor s+Konsonant, z, gn, ps (lo zaino), l' vor Vokal.",
+      "Männlich Plural: aus il wird i; aus lo und l' wird gli (gli zaini, gli amici).",
+      "Weiblich: la, vor Vokal l' (l'amica); im Plural immer le."
+     ],
+     "q": "Welcher Artikel gehört zu studente, und warum nicht il?",
+     "c": "Schreib den Artikel zu zehn Nomen und prüfe ihn dann mit der Regel."
+    },
+    "es": {
+     "t": "Artículos definidos: il, lo, la",
+     "g": "Elige bien el artículo definido en italiano.",
+     "p": [
+      "Masculino: il ante casi todas las consonantes (il treno), lo ante s+consonante, z, gn, ps (lo zaino), l' ante vocal.",
+      "Masculino plural: il pasa a i; lo y l' pasan a gli (gli zaini, gli amici).",
+      "Femenino: la, o l' ante vocal (l'amica); el plural es siempre le."
+     ],
+     "q": "¿Qué artículo lleva studente y por qué no il?",
+     "c": "Escribe el artículo de diez sustantivos y compruébalo con la regla."
+    },
+    "fr": {
+     "t": "Articles définis : il, lo, la",
+     "g": "Choisir le bon article défini en italien.",
+     "p": [
+      "Masculin : il devant la plupart des consonnes (il treno), lo devant s+consonne, z, gn, ps (lo zaino), l' devant voyelle.",
+      "Masculin pluriel : il devient i ; lo et l' deviennent gli (gli zaini, gli amici).",
+      "Féminin : la, ou l' devant voyelle (l'amica) ; le pluriel est toujours le."
+     ],
+     "q": "Quel article va avec studente, et pourquoi pas il ?",
+     "c": "Écris l'article de dix noms, puis vérifie avec la règle."
+    },
+    "it": {
+     "t": "Articoli determinativi: il, lo, la",
+     "g": "Impari a scegliere l'articolo determinativo giusto.",
+     "p": [
+      "Maschile: il davanti a quasi tutte le consonanti (il treno), lo davanti a s+consonante, z, gn, ps (lo zaino), l' davanti a vocale.",
+      "Maschile plurale: il diventa i; lo e l' diventano gli (gli zaini, gli amici).",
+      "Femminile: la, oppure l' davanti a vocale (l'amica); al plurale sempre le."
+     ],
+     "q": "Quale articolo va con studente, e perché non il?",
+     "c": "Scrivi l'articolo di dieci nomi e poi controlla con la regola."
+    },
+    "pt": {
+     "t": "Artigos definidos: il, lo, la",
+     "g": "Escolher o artigo definido certo em italiano.",
+     "p": [
+      "Masculino: il antes da maioria das consoantes (il treno), lo antes de s+consoante, z, gn, ps (lo zaino), l' antes de vogal.",
+      "Masculino plural: il passa a i; lo e l' passam a gli (gli zaini, gli amici).",
+      "Feminino: la, ou l' antes de vogal (l'amica); o plural é sempre le."
+     ],
+     "q": "Que artigo leva studente, e porque não il?",
+     "c": "Escreve o artigo de dez nomes e confirma depois com a regra."
+    },
+    "pt_BR": {
+     "t": "Artigos definidos: il, lo, la",
+     "g": "Escolher o artigo definido certo em italiano.",
+     "p": [
+      "Masculino: il antes da maioria das consoantes (il treno), lo antes de s+consoante, z, gn, ps (lo zaino), l' antes de vogal.",
+      "Masculino plural: il vira i; lo e l' viram gli (gli zaini, gli amici).",
+      "Feminino: la, ou l' antes de vogal (l'amica); o plural é sempre le."
+     ],
+     "q": "Qual artigo vai com studente, e por que não il?",
+     "c": "Escreva o artigo de dez substantivos e depois confira com a regra."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il treno",
+      "ex": "Il treno parte alle nove."
+     },
+     {
+      "w": "lo zaino",
+      "ex": "Lo zaino è pesante."
+     },
+     {
+      "w": "l'amico",
+      "ex": "L'amico di Luca è simpatico."
+     },
+     {
+      "w": "gli studenti",
+      "ex": "Gli studenti sono in classe."
+     },
+     {
+      "w": "la mela",
+      "ex": "La mela è rossa."
+     },
+     {
+      "w": "le amiche",
+      "ex": "Le amiche di Sara sono qui."
+     }
+    ],
+    "gram": "Il/i davanti a consonante; lo/gli davanti a s+consonante, z, gn, ps; l'/gli davanti a vocale. Femminile: la/l', plurale le."
+   }
+  },
+  {
+   "d": 15,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Indefinite articles: un, una",
+     "g": "Use the Italian words for a and an correctly.",
+     "p": [
+      "Masculine: un for most words (un panino, un amico), uno before s+consonant or z (uno zaino).",
+      "Feminine: una before a consonant (una borsa), un' before a vowel (un'amica).",
+      "Professions after essere often skip it: Sono studente, Lei è medico."
+     ],
+     "q": "Can you order something at a café using un, uno or una?",
+     "c": "Describe your bag or room in three sentences with c'è un, c'è uno and c'è una."
+    },
+    "de": {
+     "t": "Unbestimmte Artikel: un, una",
+     "g": "Du verwendest die italienischen Wörter für ein und eine richtig.",
+     "p": [
+      "Männlich: un bei den meisten Wörtern (un panino, un amico), uno vor s+Konsonant oder z (uno zaino).",
+      "Weiblich: una vor Konsonant (una borsa), un' vor Vokal (un'amica).",
+      "Bei Berufen nach essere fällt er oft weg: Sono studente, Lei è medico."
+     ],
+     "q": "Kannst du im Café etwas mit un, uno oder una bestellen?",
+     "c": "Beschreib deine Tasche oder dein Zimmer in drei Sätzen mit c'è un, c'è uno und c'è una."
+    },
+    "es": {
+     "t": "Artículos indefinidos: un, una",
+     "g": "Usa bien los artículos un y una en italiano.",
+     "p": [
+      "Masculino: un con casi todas las palabras (un panino, un amico), uno ante s+consonante o z (uno zaino).",
+      "Femenino: una ante consonante (una borsa), un' ante vocal (un'amica).",
+      "Con profesiones tras essere se omite, como en español: Sono studente."
+     ],
+     "q": "¿Puedes pedir algo en un café usando un, uno o una?",
+     "c": "Describe tu bolso o tu cuarto en tres frases con c'è un, c'è uno y c'è una."
+    },
+    "fr": {
+     "t": "Articles indéfinis : un, una",
+     "g": "Employer correctement un et une en italien.",
+     "p": [
+      "Masculin : un pour la plupart des mots (un panino, un amico), uno devant s+consonne ou z (uno zaino).",
+      "Féminin : una devant consonne (una borsa), un' devant voyelle (un'amica).",
+      "Avec un métier après essere, on l'omet comme en français : Sono studente."
+     ],
+     "q": "Peux-tu commander quelque chose au café avec un, uno ou una ?",
+     "c": "Décris ton sac ou ta chambre en trois phrases avec c'è un, c'è uno et c'è una."
+    },
+    "it": {
+     "t": "Articoli indeterminativi: un, una",
+     "g": "Impari a usare bene un, uno, una e un'.",
+     "p": [
+      "Maschile: un con quasi tutte le parole (un panino, un amico), uno davanti a s+consonante o z (uno zaino).",
+      "Femminile: una davanti a consonante (una borsa), un' davanti a vocale (un'amica).",
+      "Con le professioni dopo essere spesso non si usa: Sono studente, Lei è medico."
+     ],
+     "q": "Sai ordinare qualcosa al bar usando un, uno o una?",
+     "c": "Descrivi la tua borsa o la tua stanza in tre frasi con c'è un, c'è uno e c'è una."
+    },
+    "pt": {
+     "t": "Artigos indefinidos: un, una",
+     "g": "Usar bem os artigos indefinidos italianos.",
+     "p": [
+      "Masculino: un na maioria das palavras (un panino, un amico), uno antes de s+consoante ou z (uno zaino).",
+      "Feminino: una antes de consoante (una borsa), un' antes de vogal (un'amica).",
+      "Com profissões depois de essere, omite-se como em português: Sono studente."
+     ],
+     "q": "Consegues pedir alguma coisa num café com un, uno ou una?",
+     "c": "Descreve a tua mala ou o teu quarto em três frases com c'è un, c'è uno e c'è una."
+    },
+    "pt_BR": {
+     "t": "Artigos indefinidos: un, una",
+     "g": "Usar bem os artigos indefinidos italianos.",
+     "p": [
+      "Masculino: un na maioria das palavras (un panino, un amico), uno antes de s+consoante ou z (uno zaino).",
+      "Feminino: una antes de consoante (una borsa), un' antes de vogal (un'amica).",
+      "Com profissões depois de essere, se omite como em português: Sono studente."
+     ],
+     "q": "Você consegue pedir algo numa cafeteria usando un, uno ou una?",
+     "c": "Descreva sua bolsa ou seu quarto em três frases com c'è un, c'è uno e c'è una."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un panino",
+      "ex": "Vorrei un panino, per favore."
+     },
+     {
+      "w": "uno zaino",
+      "ex": "Ho uno zaino nuovo."
+     },
+     {
+      "w": "una borsa",
+      "ex": "Lei ha una borsa elegante."
+     },
+     {
+      "w": "un'amica",
+      "ex": "Stasera vedo un'amica."
+     },
+     {
+      "w": "un amico",
+      "ex": "Marco è un amico di scuola."
+     },
+     {
+      "w": "uno studente",
+      "ex": "C'è uno studente nuovo."
+     }
+    ],
+    "gram": "Un davanti a consonante e vocale (maschile); uno davanti a s+consonante, z, gn, ps. Una davanti a consonante, un' davanti a vocale."
+   }
+  },
+  {
+   "d": 16,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Polite words: per favore, grazie",
+     "g": "Use the little polite words that make Italians smile.",
+     "p": [
+      "Per favore means please, grazie means thank you, grazie mille means thanks a lot.",
+      "Answer grazie with prego or di niente (you are welcome).",
+      "Say scusa to a friend or mi scusi formally; say permesso to squeeze past people on a bus."
+     ],
+     "q": "Which polite word would you use to get past someone on a crowded train?",
+     "c": "Use per favore, grazie and prego in one mini dialogue you write or say aloud."
+    },
+    "de": {
+     "t": "Höflichkeit: per favore, grazie",
+     "g": "Du nutzt die kleinen Höflichkeitswörter, die Italiener zum Lächeln bringen.",
+     "p": [
+      "Per favore heißt bitte, grazie danke, grazie mille vielen Dank.",
+      "Auf grazie antwortest du mit prego oder di niente (gern geschehen).",
+      "Scusa zu Freunden, mi scusi förmlich; permesso, um dich im Bus vorbeizuschieben."
+     ],
+     "q": "Welches Wort nutzt du, um im vollen Zug an jemandem vorbeizukommen?",
+     "c": "Bau per favore, grazie und prego in einen Mini-Dialog ein, schriftlich oder laut."
+    },
+    "es": {
+     "t": "Palabras amables: per favore, grazie",
+     "g": "Usa las palabritas de cortesía que hacen sonreír a los italianos.",
+     "p": [
+      "Per favore es por favor, grazie es gracias y grazie mille, muchas gracias.",
+      "A grazie se responde prego o di niente (de nada).",
+      "Scusa a un amigo, mi scusi de usted; permesso para pasar entre la gente en el bus."
+     ],
+     "q": "¿Qué palabra usarías para pasar entre la gente en un tren lleno?",
+     "c": "Usa per favore, grazie y prego en un minidiálogo escrito o en voz alta."
+    },
+    "fr": {
+     "t": "Mots polis : per favore, grazie",
+     "g": "Utiliser les petits mots de politesse qui font sourire les Italiens.",
+     "p": [
+      "Per favore veut dire s'il te plaît, grazie merci, grazie mille merci beaucoup.",
+      "À grazie on répond prego ou di niente (de rien).",
+      "Scusa à un ami, mi scusi en vouvoyant ; permesso pour passer entre les gens dans le bus."
+     ],
+     "q": "Quel mot utiliserais-tu pour passer dans un train bondé ?",
+     "c": "Utilise per favore, grazie et prego dans un mini-dialogue écrit ou dit à voix haute."
+    },
+    "it": {
+     "t": "Parole gentili: per favore, grazie",
+     "g": "Impari le piccole parole di cortesia che rendono tutto più gentile.",
+     "p": [
+      "Per favore per chiedere, grazie o grazie mille per ringraziare.",
+      "A grazie si risponde prego oppure di niente.",
+      "Scusa con un amico, mi scusi con il Lei; permesso per passare tra la gente sull'autobus."
+     ],
+     "q": "Quale parola useresti per passare tra la gente su un treno pieno?",
+     "c": "Usa per favore, grazie e prego in un mini dialogo, scritto o ad alta voce."
+    },
+    "pt": {
+     "t": "Palavras gentis: per favore, grazie",
+     "g": "Usar as pequenas palavras de cortesia que fazem os italianos sorrir.",
+     "p": [
+      "Per favore é por favor, grazie é obrigado e grazie mille é muito obrigado.",
+      "A grazie responde-se prego ou di niente (de nada).",
+      "Scusa a um amigo, mi scusi formal; permesso para passar entre as pessoas no autocarro."
+     ],
+     "q": "Que palavra usarias para passar num comboio cheio?",
+     "c": "Usa per favore, grazie e prego num minidiálogo escrito ou em voz alta."
+    },
+    "pt_BR": {
+     "t": "Palavras gentis: per favore, grazie",
+     "g": "Usar as palavrinhas de cortesia que fazem os italianos sorrir.",
+     "p": [
+      "Per favore é por favor, grazie é obrigado e grazie mille é muito obrigado.",
+      "A grazie se responde prego ou di niente (de nada).",
+      "Scusa para um amigo, mi scusi formal; permesso para passar entre as pessoas no ônibus."
+     ],
+     "q": "Que palavra você usaria para passar num trem lotado?",
+     "c": "Use per favore, grazie e prego num minidiálogo escrito ou em voz alta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "per favore",
+      "ex": "Un cappuccino, per favore."
+     },
+     {
+      "w": "grazie mille",
+      "ex": "Grazie mille per l'aiuto!"
+     },
+     {
+      "w": "prego",
+      "ex": "Grazie! - Prego!"
+     },
+     {
+      "w": "scusa / mi scusi",
+      "ex": "Mi scusi, dov'è la stazione?"
+     },
+     {
+      "w": "permesso",
+      "ex": "Permesso, devo scendere."
+     },
+     {
+      "w": "di niente",
+      "ex": "Grazie! - Di niente."
+     }
+    ],
+    "gram": "Prego risponde a grazie. Scusa (tu) e mi scusi (Lei) per chiedere attenzione o scusarsi; permesso per passare tra la gente."
+   }
+  },
+  {
+   "d": 17,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 21 to 100",
+     "g": "Build numbers up to one hundred and read prices aloud.",
+     "p": [
+      "The tens: venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento.",
+      "Add units directly: trentadue, sessantacinque. Before uno and otto drop the vowel: ventuno, trentotto.",
+      "Prices: 3,50 euro is tre euro e cinquanta; Italians write a comma for decimals."
+     ],
+     "q": "How old is someone in your family? Say the age in Italian.",
+     "c": "Read aloud five prices or numbers you see today in Italian."
+    },
+    "de": {
+     "t": "Zahlen von 21 bis 100",
+     "g": "Du bildest Zahlen bis hundert und liest Preise laut vor.",
+     "p": [
+      "Die Zehner: venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento.",
+      "Einer hängst du einfach an: trentadue. Vor uno und otto fällt der Vokal weg: ventuno, trentotto.",
+      "Anders als im Deutschen kommt der Zehner zuerst: trentadue ist zweiunddreißig."
+     ],
+     "q": "Wie alt ist jemand in deiner Familie? Sag das Alter auf Italienisch.",
+     "c": "Lies heute fünf Preise oder Zahlen, die du siehst, laut auf Italienisch."
+    },
+    "es": {
+     "t": "Números del 21 al 100",
+     "g": "Forma números hasta cien y lee precios en voz alta.",
+     "p": [
+      "Las decenas: venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento.",
+      "Las unidades se pegan: trentadue. Ante uno y otto cae la vocal: ventuno, trentotto.",
+      "Precios: 3,50 euros se dice tre euro e cinquanta."
+     ],
+     "q": "¿Cuántos años tiene alguien de tu familia? Dilo en italiano.",
+     "c": "Lee en voz alta en italiano cinco precios o números que veas hoy."
+    },
+    "fr": {
+     "t": "Les nombres de 21 à 100",
+     "g": "Construire les nombres jusqu'à cent et lire des prix à voix haute.",
+     "p": [
+      "Les dizaines : venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento.",
+      "On colle les unités : trentadue. Devant uno et otto, la voyelle tombe : ventuno, trentotto.",
+      "Pas de calcul comme quatre-vingts : 80 se dit simplement ottanta, 90 novanta."
+     ],
+     "q": "Quel âge a quelqu'un de ta famille ? Dis-le en italien.",
+     "c": "Lis à voix haute en italien cinq prix ou nombres que tu vois aujourd'hui."
+    },
+    "it": {
+     "t": "I numeri da 21 a 100",
+     "g": "Impari a formare i numeri fino a cento e a leggere i prezzi.",
+     "p": [
+      "Le decine: venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento.",
+      "Le unità si attaccano: trentadue. Davanti a uno e otto cade la vocale: ventuno, trentotto.",
+      "I prezzi: 3,50 euro si legge tre euro e cinquanta."
+     ],
+     "q": "Quanti anni ha una persona della tua famiglia? Dillo in italiano.",
+     "c": "Leggi ad alta voce cinque prezzi o numeri che vedi oggi."
+    },
+    "pt": {
+     "t": "Números de 21 a 100",
+     "g": "Formar números até cem e ler preços em voz alta.",
+     "p": [
+      "As dezenas: venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento.",
+      "As unidades juntam-se sem e: trentadue. Antes de uno e otto cai a vogal: ventuno, trentotto.",
+      "Preços: 3,50 euros diz-se tre euro e cinquanta."
+     ],
+     "q": "Que idade tem alguém da tua família? Diz em italiano.",
+     "c": "Lê em voz alta em italiano cinco preços ou números que vejas hoje."
+    },
+    "pt_BR": {
+     "t": "Números de 21 a 100",
+     "g": "Formar números até cem e ler preços em voz alta.",
+     "p": [
+      "As dezenas: venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta, cento.",
+      "As unidades se juntam sem e: trentadue. Antes de uno e otto cai a vogal: ventuno, trentotto.",
+      "Preços: 3,50 euros se diz tre euro e cinquanta."
+     ],
+     "q": "Quantos anos tem alguém da sua família? Diga em italiano.",
+     "c": "Leia em voz alta em italiano cinco preços ou números que você vir hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ventuno",
+      "ex": "Ho ventuno anni."
+     },
+     {
+      "w": "trenta",
+      "ex": "Il mese ha trenta giorni."
+     },
+     {
+      "w": "quarantotto",
+      "ex": "Sono quarantotto euro."
+     },
+     {
+      "w": "cinquanta",
+      "ex": "Abito al numero cinquanta."
+     },
+     {
+      "w": "novantanove",
+      "ex": "Mio nonno ha novantanove anni!"
+     },
+     {
+      "w": "cento",
+      "ex": "Cento grammi di prosciutto, per favore."
+     }
+    ],
+    "gram": "Decine: venti, trenta, quaranta, cinquanta, sessanta, settanta, ottanta, novanta. Con uno e otto cade la vocale: ventuno, ventotto."
+   }
+  },
+  {
+   "d": 18,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Days of the week",
+     "g": "Name the seven days and talk about your weekly routine.",
+     "p": [
+      "Lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica, all written in lowercase.",
+      "Lunedì alone means this Monday; il lunedì means on Mondays, every week.",
+      "All days are masculine except la domenica; the weekend is il fine settimana or il weekend."
+     ],
+     "q": "What do you usually do il sabato?",
+     "c": "Write your plan for each day of next week in Italian, one word or phrase per day."
+    },
+    "de": {
+     "t": "Die Wochentage",
+     "g": "Du nennst die sieben Wochentage und sprichst über deine Woche.",
+     "p": [
+      "Lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica, alle kleingeschrieben.",
+      "Lunedì allein heißt diesen Montag; il lunedì heißt montags, jede Woche.",
+      "Alle Tage sind männlich außer la domenica; Wochenende heißt il fine settimana."
+     ],
+     "q": "Was machst du normalerweise il sabato?",
+     "c": "Schreib für jeden Tag der nächsten Woche einen Plan auf Italienisch, ein Wort pro Tag."
+    },
+    "es": {
+     "t": "Los días de la semana",
+     "g": "Nombra los siete días y habla de tu rutina semanal.",
+     "p": [
+      "Lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica, en minúscula como en español.",
+      "Lunedì solo significa este lunes; il lunedì significa los lunes, cada semana.",
+      "Todos son masculinos menos la domenica; el fin de semana es il fine settimana."
+     ],
+     "q": "¿Qué sueles hacer il sabato?",
+     "c": "Escribe tu plan para cada día de la semana próxima en italiano, una palabra por día."
+    },
+    "fr": {
+     "t": "Les jours de la semaine",
+     "g": "Nommer les sept jours et parler de ta semaine type.",
+     "p": [
+      "Lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica, en minuscules comme en français.",
+      "Lunedì seul veut dire ce lundi ; il lunedì veut dire le lundi, chaque semaine.",
+      "Tous sont masculins sauf la domenica ; le week-end se dit il fine settimana."
+     ],
+     "q": "Que fais-tu d'habitude il sabato ?",
+     "c": "Écris ton programme pour chaque jour de la semaine prochaine en italien, un mot par jour."
+    },
+    "it": {
+     "t": "I giorni della settimana",
+     "g": "Impari i sette giorni e parli della tua settimana.",
+     "p": [
+      "Lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica, sempre con la minuscola.",
+      "Lunedì da solo vuol dire questo lunedì; il lunedì vuol dire ogni lunedì.",
+      "Sono tutti maschili tranne la domenica; il fine settimana è sabato e domenica."
+     ],
+     "q": "Che cosa fai di solito il sabato?",
+     "c": "Scrivi un programma per ogni giorno della prossima settimana, una parola per giorno."
+    },
+    "pt": {
+     "t": "Os dias da semana",
+     "g": "Dizer os sete dias e falar da tua rotina semanal.",
+     "p": [
+      "Lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica, sempre com minúscula.",
+      "Lunedì sozinho é esta segunda; il lunedì é às segundas, todas as semanas.",
+      "Todos são masculinos menos la domenica; o fim de semana é il fine settimana."
+     ],
+     "q": "O que costumas fazer il sabato?",
+     "c": "Escreve um plano para cada dia da próxima semana em italiano, uma palavra por dia."
+    },
+    "pt_BR": {
+     "t": "Os dias da semana",
+     "g": "Dizer os sete dias e falar da sua rotina semanal.",
+     "p": [
+      "Lunedì, martedì, mercoledì, giovedì, venerdì, sabato, domenica, sempre com minúscula.",
+      "Lunedì sozinho é esta segunda; il lunedì é às segundas, toda semana.",
+      "Todos são masculinos menos la domenica; o fim de semana é il fine settimana."
+     ],
+     "q": "O que você costuma fazer il sabato?",
+     "c": "Escreva um plano para cada dia da próxima semana em italiano, uma palavra por dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "lunedì",
+      "ex": "Lunedì comincio il corso."
+     },
+     {
+      "w": "mercoledì",
+      "ex": "Ci vediamo mercoledì?"
+     },
+     {
+      "w": "venerdì",
+      "ex": "Venerdì sera vado al cinema."
+     },
+     {
+      "w": "sabato",
+      "ex": "Sabato dormo fino a tardi."
+     },
+     {
+      "w": "domenica",
+      "ex": "La domenica pranzo con la famiglia."
+     },
+     {
+      "w": "il fine settimana",
+      "ex": "Cosa fai il fine settimana?"
+     }
+    ],
+    "gram": "I giorni si scrivono con la minuscola. Lunedì = questo lunedì; il lunedì = ogni lunedì. Tutti maschili tranne la domenica."
+   }
+  },
+  {
+   "d": 19,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Months and seasons",
+     "g": "Name the months and seasons and say when your birthday is.",
+     "p": [
+      "The months: gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre.",
+      "Seasons: la primavera, l'estate, l'autunno, l'inverno; say in estate for in summer.",
+      "Dates use il + number: il 15 marzo. For the 1st say il primo: il primo aprile."
+     ],
+     "q": "Quando è il tuo compleanno? Answer with il + day + month.",
+     "c": "Write the birthdays of three people you love in Italian."
+    },
+    "de": {
+     "t": "Monate und Jahreszeiten",
+     "g": "Du nennst Monate und Jahreszeiten und sagst, wann du Geburtstag hast.",
+     "p": [
+      "Die Monate: gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre.",
+      "Jahreszeiten: la primavera, l'estate, l'autunno, l'inverno; im Sommer heißt in estate.",
+      "Datum mit il + Zahl: il 15 marzo. Für den Ersten sagt man il primo: il primo aprile."
+     ],
+     "q": "Quando è il tuo compleanno? Antworte mit il + Tag + Monat.",
+     "c": "Schreib die Geburtstage von drei lieben Menschen auf Italienisch auf."
+    },
+    "es": {
+     "t": "Meses y estaciones",
+     "g": "Nombra los meses y las estaciones y di cuándo es tu cumpleaños.",
+     "p": [
+      "Los meses: gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre.",
+      "Estaciones: la primavera, l'estate, l'autunno, l'inverno; en verano es in estate.",
+      "Las fechas llevan il + número: il 15 marzo. Para el día 1 se dice il primo."
+     ],
+     "q": "Quando è il tuo compleanno? Responde con il + día + mes.",
+     "c": "Escribe en italiano los cumpleaños de tres personas queridas."
+    },
+    "fr": {
+     "t": "Mois et saisons",
+     "g": "Nommer les mois et les saisons et dire la date de ton anniversaire.",
+     "p": [
+      "Les mois : gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre.",
+      "Saisons : la primavera, l'estate, l'autunno, l'inverno ; en été se dit in estate.",
+      "Les dates : il + nombre, il 15 marzo. Pour le 1er, on dit il primo, comme le premier."
+     ],
+     "q": "Quando è il tuo compleanno ? Réponds avec il + jour + mois.",
+     "c": "Écris en italien les anniversaires de trois personnes que tu aimes."
+    },
+    "it": {
+     "t": "Mesi e stagioni",
+     "g": "Impari i mesi e le stagioni e dici quando è il tuo compleanno.",
+     "p": [
+      "I mesi: gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre.",
+      "Le stagioni: la primavera, l'estate, l'autunno, l'inverno; si dice in estate, in inverno.",
+      "Le date: il + numero, il 15 marzo. Per il giorno 1 si dice il primo: il primo aprile."
+     ],
+     "q": "Quando è il tuo compleanno? Rispondi con il + giorno + mese.",
+     "c": "Scrivi in italiano i compleanni di tre persone a cui vuoi bene."
+    },
+    "pt": {
+     "t": "Meses e estações",
+     "g": "Dizer os meses e as estações e quando fazes anos.",
+     "p": [
+      "Os meses: gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre.",
+      "Estações: la primavera, l'estate, l'autunno, l'inverno; no verão diz-se in estate.",
+      "As datas levam il + número: il 15 marzo. Para o dia 1 diz-se il primo."
+     ],
+     "q": "Quando è il tuo compleanno? Responde com il + dia + mês.",
+     "c": "Escreve em italiano os aniversários de três pessoas de quem gostas."
+    },
+    "pt_BR": {
+     "t": "Meses e estações",
+     "g": "Dizer os meses e as estações e quando é seu aniversário.",
+     "p": [
+      "Os meses: gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre.",
+      "Estações: la primavera, l'estate, l'autunno, l'inverno; no verão se diz in estate.",
+      "As datas levam il + número: il 15 marzo. Para o dia 1 se diz il primo."
+     ],
+     "q": "Quando è il tuo compleanno? Responda com il + dia + mês.",
+     "c": "Escreva em italiano os aniversários de três pessoas queridas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "gennaio",
+      "ex": "A gennaio fa freddo."
+     },
+     {
+      "w": "agosto",
+      "ex": "Ad agosto molti italiani vanno al mare."
+     },
+     {
+      "w": "la primavera",
+      "ex": "In primavera ci sono tanti fiori."
+     },
+     {
+      "w": "l'estate",
+      "ex": "L'estate è la mia stagione preferita."
+     },
+     {
+      "w": "l'autunno",
+      "ex": "In autunno cadono le foglie."
+     },
+     {
+      "w": "il compleanno",
+      "ex": "Il mio compleanno è il tre maggio."
+     }
+    ],
+    "gram": "Mesi minuscoli; a/in + mese (a maggio, in maggio). Date: il 3 maggio, ma il primo maggio. Stagioni: in estate, in inverno."
+   }
+  },
+  {
+   "d": 20,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling the time: che ore sono?",
+     "g": "Ask and tell the time in Italian.",
+     "p": [
+      "Ask Che ore sono? or Che ora è? Answer sono le + hour: Sono le quattro.",
+      "One o'clock, noon and midnight are singular: è l'una, è mezzogiorno, è mezzanotte.",
+      "Add minutes with e and subtract with meno: le due e mezza, le sei meno un quarto."
+     ],
+     "q": "Che ore sono adesso dove sei tu? Tell me in Italian.",
+     "c": "Every time you check the clock today, say the time in Italian."
+    },
+    "de": {
+     "t": "Uhrzeit: che ore sono?",
+     "g": "Du fragst nach der Uhrzeit und sagst sie auf Italienisch.",
+     "p": [
+      "Frag Che ore sono? oder Che ora è? Antworte mit sono le + Stunde: Sono le quattro.",
+      "Ein Uhr, Mittag und Mitternacht stehen im Singular: è l'una, è mezzogiorno, è mezzanotte.",
+      "Minuten mit e addieren, mit meno abziehen: le due e mezza ist halb drei, nicht halb zwei!"
+     ],
+     "q": "Che ore sono adesso bei dir? Sag es mir auf Italienisch.",
+     "c": "Sag heute jedes Mal, wenn du auf die Uhr schaust, die Zeit auf Italienisch."
+    },
+    "es": {
+     "t": "La hora: che ore sono?",
+     "g": "Pregunta y di la hora en italiano.",
+     "p": [
+      "Pregunta Che ore sono? o Che ora è? Responde sono le + hora: Sono le quattro.",
+      "La una, el mediodía y la medianoche van en singular: è l'una, è mezzogiorno, è mezzanotte.",
+      "Los minutos se suman con e y se restan con meno: le due e mezza, le sei meno un quarto."
+     ],
+     "q": "Che ore sono ahora donde estás? Dímelo en italiano.",
+     "c": "Cada vez que mires el reloj hoy, di la hora en italiano."
+    },
+    "fr": {
+     "t": "L'heure : che ore sono ?",
+     "g": "Demander et dire l'heure en italien.",
+     "p": [
+      "Demande Che ore sono ? ou Che ora è ? Réponds sono le + heure : Sono le quattro.",
+      "Une heure, midi et minuit sont au singulier : è l'una, è mezzogiorno, è mezzanotte.",
+      "On ajoute avec e et on retire avec meno : le due e mezza, le sei meno un quarto."
+     ],
+     "q": "Che ore sono maintenant chez toi ? Dis-le-moi en italien.",
+     "c": "Chaque fois que tu regardes l'heure aujourd'hui, dis-la en italien."
+    },
+    "it": {
+     "t": "Che ore sono? Dire l'ora",
+     "g": "Impari a chiedere e a dire l'ora in italiano.",
+     "p": [
+      "Chiedi Che ore sono? o Che ora è? Rispondi sono le + ora: Sono le quattro.",
+      "L'una, mezzogiorno e mezzanotte vogliono il singolare: è l'una, è mezzogiorno.",
+      "I minuti si aggiungono con e e si tolgono con meno: le due e mezza, le sei meno un quarto."
+     ],
+     "q": "Che ore sono adesso dove sei tu?",
+     "c": "Oggi, ogni volta che guardi l'orologio, di' l'ora in italiano."
+    },
+    "pt": {
+     "t": "As horas: che ore sono?",
+     "g": "Perguntar e dizer as horas em italiano.",
+     "p": [
+      "Pergunta Che ore sono? ou Che ora è? Responde sono le + hora: Sono le quattro.",
+      "A uma, o meio-dia e a meia-noite vão no singular: è l'una, è mezzogiorno, è mezzanotte.",
+      "Os minutos somam-se com e e tiram-se com meno: le due e mezza, le sei meno un quarto."
+     ],
+     "q": "Che ore sono agora onde estás? Diz-me em italiano.",
+     "c": "Sempre que vires as horas hoje, diz a hora em italiano."
+    },
+    "pt_BR": {
+     "t": "As horas: che ore sono?",
+     "g": "Perguntar e dizer as horas em italiano.",
+     "p": [
+      "Pergunte Che ore sono? ou Che ora è? Responda sono le + hora: Sono le quattro.",
+      "Uma hora, meio-dia e meia-noite vão no singular: è l'una, è mezzogiorno, è mezzanotte.",
+      "Os minutos se somam com e e se tiram com meno: le due e mezza, le sei meno un quarto."
+     ],
+     "q": "Che ore sono agora onde você está? Me diga em italiano.",
+     "c": "Toda vez que olhar o relógio hoje, diga a hora em italiano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "che ore sono?",
+      "ex": "Scusi, che ore sono?"
+     },
+     {
+      "w": "è l'una",
+      "ex": "È l'una, andiamo a pranzo."
+     },
+     {
+      "w": "sono le tre",
+      "ex": "Sono le tre del pomeriggio."
+     },
+     {
+      "w": "e mezza",
+      "ex": "Sono le sette e mezza."
+     },
+     {
+      "w": "e un quarto",
+      "ex": "Sono le dieci e un quarto."
+     },
+     {
+      "w": "meno un quarto",
+      "ex": "Sono le nove meno un quarto."
+     }
+    ],
+    "gram": "È l'una, è mezzogiorno, è mezzanotte; per le altre ore sono le + numero. Minuti: e dieci, e un quarto, e mezza, meno un quarto."
+   }
+  }
+ ]
+}

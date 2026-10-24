@@ -1,0 +1,2195 @@
+{
+"topic": "slang_idioms",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "What is an idiom?",
+"f": "Phrases whose meaning is more than the sum of their words, like break the ice"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "What is slang?",
+"f": "Informal words that groups of people use, and how they come and go"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Idiom, slang or proverb?",
+"f": "How to tell idioms, slang, proverbs and fixed expressions apart"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Why locals love idioms",
+"f": "How expressions add colour, humour and closeness to everyday speech"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Hello, casual style",
+"f": "Hey, hiya, what's up, howdy and how people answer them"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Casual hellos around the world",
+"f": "¿Qué onda?, salut, ciao, servus, e aí? and where people use them"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "Goodbye, casual style",
+"f": "See ya, take care, catch you later, tschüss, a dopo"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Saying thanks casually",
+"f": "Cheers, thanks a lot, valeu, merci bien, grazie mille"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Saying sorry casually",
+"f": "My bad, oops, sorry about that, perdona and how serious each one sounds"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Yes and no, the casual way",
+"f": "Yep, nope, sure thing, nah, claro, ouais"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "Cool! Words of approval",
+"f": "Cool, awesome, great, guay, génial, figo, legal"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "How are you, really?",
+"f": "Not bad, can't complain, so-so, comme ci comme ça, más o menos"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "Fillers: like, you know",
+"f": "Like, you know, I mean, tipo, genre, cioè and why people use them"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Breaking the ice",
+"f": "What breaking the ice means and how people do it when they meet"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Piece of cake",
+"f": "Ways to say something is very easy: piece of cake, easy peasy, c'est du gâteau"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "Weather idioms in English",
+"f": "Under the weather, raining cats and dogs, a storm in a teacup"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Weather idioms abroad",
+"f": "Il pleut des cordes, llueve a cántaros, chove a potes, es gießt in Strömen"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "Food idioms in English",
+"f": "Spill the beans, the big cheese, bread and butter, in a nutshell"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Food idioms in Spanish",
+"f": "Ser pan comido, importar un pimiento, estar como una sopa"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Food idioms in French",
+"f": "Avoir la pêche, raconter des salades, en faire tout un fromage"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "Food idioms in Italian",
+"f": "Essere come il prezzemolo, rendere pan per focaccia, tutto fa brodo"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Food idioms in Portuguese",
+"f": "Encher chouriços, pão pão queijo queijo, é canja"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "Food idioms in German",
+"f": "Das ist mir Wurst, alles hat ein Ende, nur die Wurst hat zwei"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "Animal idioms in English",
+"f": "Let the cat out of the bag, the elephant in the room, busy as a bee"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Animal idioms abroad",
+"f": "Avoir un chat dans la gorge, como pez en el agua, in bocca al lupo"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Cats in idioms",
+"f": "Cat got your tongue?, like herding cats, avoir d'autres chats à fouetter"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Dogs in idioms",
+"f": "Dog-tired, every dog has its day, hundemüde, a dog's breakfast"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Birds in idioms",
+"f": "The early bird, birds of a feather, a little bird told me"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Head and face idioms",
+"f": "Keep your head, lose face, give someone a heads-up"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: first month",
+"f": "Light review of greetings, food, weather and animal expressions"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Hands and arms idioms",
+"f": "Give someone a hand, hands down, cost an arm and a leg"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Feet and legs idioms",
+"f": "Cold feet, put your foot in it, break a leg"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Eyes and ears idioms",
+"f": "Keep an eye on, all ears, see eye to eye, être tout ouïe"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Heart and mind idioms",
+"f": "Learn by heart, change of heart, slip your mind, saber de cor"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Colour idioms in English",
+"f": "Feeling blue, green with envy, out of the blue, red tape"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Colour idioms abroad",
+"f": "Quedarse en blanco, voir la vie en rose, essere al verde, ficar vermelho"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Number idioms",
+"f": "On cloud nine, at sixes and sevens, en un dos por tres"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Time idioms",
+"f": "In the nick of time, once in a blue moon, around the clock"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Money idioms",
+"f": "Break the bank, cheap as chips, pay through the nose"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Good luck expressions",
+"f": "Fingers crossed, knock on wood, in bocca al lupo, toi toi toi"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Wishing well before a show",
+"f": "Break a leg, Hals- und Beinbruch and why actors avoid saying good luck"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "Happiness idioms",
+"f": "Over the moon, on top of the world, être aux anges, estar nas sete quintas"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Feeling down",
+"f": "Down in the dumps, feeling blue, avoir le cafard, estar de bajón"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Anger idioms",
+"f": "Blow a fuse, see red, hit the roof, être soupe au lait"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Being tired",
+"f": "Worn out, knackered, beat, crevé, estar hecho polvo"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Being busy",
+"f": "Up to my ears, snowed under, swamped, estar liado"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Being lazy",
+"f": "Couch potato, lazybones, avoir un poil dans la main, fazer cera"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Being surprised",
+"f": "Jaw-dropping, blown away, no way!, ¡no me digas!, sans blague"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Excuses, the casual way",
+"f": "Something came up, I'm tied up, can I take a rain check?"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Not my cup of tea",
+"f": "Talking about taste: not my thing, no es lo mío, pas mon truc"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Easy and hard tasks",
+"f": "A walk in the park, an uphill battle, no picnic, c'est pas sorcier"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Starting things",
+"f": "Kick off, get the ball rolling, from scratch, partir de cero"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Finishing things",
+"f": "Wrap up, call it a day, that's a wrap, ça y est"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Trying hard",
+"f": "Go the extra mile, give it your all, pull out all the stops, dejarse la piel"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Giving up",
+"f": "Throw in the towel, call it quits, jeter l'éponge, tirar la toalla"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Talking a lot",
+"f": "Talk someone's ear off, chatterbox, the gift of the gab, ter lábia"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Keeping secrets",
+"f": "Keep it under wraps, mum's the word, motus et bouche cousue"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Gossip expressions",
+"f": "Through the grapevine, spill the tea, a little bird told me, cotilleo"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Telling the truth",
+"f": "Straight from the horse's mouth, no kidding, honest!"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: feelings and actions",
+"f": "Light review of emotions, effort, secrets and talk"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Joking and exaggerating",
+"f": "Pull someone's leg, a tall tale, tomar el pelo, cry wolf"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Getting it",
+"f": "Get the picture, the penny dropped, catch on, cair a ficha"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "It's all Greek to me",
+"f": "Each language blames another: me suena a chino, c'est de l'hébreu, das kommt mir spanisch vor"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Mistakes and blunders",
+"f": "Drop the ball, put your foot in it, meter la pata, faire une gaffe"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Problems and trouble",
+"f": "In hot water, in a pickle, estar en un lío, être dans le pétrin"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Solving problems",
+"f": "Get to the bottom of it, sort it out, iron out the details"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Luck and chance",
+"f": "A lucky break, the luck of the draw, avoir du pot, ter sorte"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Risk and caution",
+"f": "Play it safe, better safe than sorry, take a chance"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Making decisions",
+"f": "On the fence, make up your mind, sleep on it, consultarlo con la almohada"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Changing your mind",
+"f": "Have second thoughts, do a U-turn, changer d'avis, mudar de ideias"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Agreeing",
+"f": "Spot on, you can say that again, I'm with you, tienes toda la razón"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Disagreeing politely",
+"f": "Agree to disagree, I see it differently, not really"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Being direct",
+"f": "Don't beat around the bush, call a spade a spade, al pan pan y al vino vino"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Patience",
+"f": "Hold your horses, hang in there, keep your shirt on"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Speed",
+"f": "In a flash, in no time, en un abrir y cerrar de ojos"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Slowness",
+"f": "At a snail's pace, slow and steady, a passo di lumaca"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Words for friends",
+"f": "Mate, buddy, pal, colega, pote, compadre"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Calling people casually",
+"f": "Dude, guys, mate, tío, mec, cara, bro and when they fit"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Family words, casual",
+"f": "Mum, pops, sis, bro, abuela, mamie, vovó"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Home and comfort",
+"f": "Home sweet home, make yourself at home, como en casa"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Eating out slang",
+"f": "Grab a bite, chow down, takeaway vs takeout, picar algo"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Coffee and tea talk",
+"f": "Cuppa, joe, cafezinho, un petit noir, builder's tea"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Sleep expressions",
+"f": "Hit the sack, catch some Zs, sleep like a log, dormir como un tronco"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Morning and night people",
+"f": "Early bird, night owl, lève-tôt, couche-tard"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Work expressions",
+"f": "Nine to five, back to the drawing board, on the same page"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "School expressions",
+"f": "Hit the books, teacher's pet, pass with flying colours, empollón"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Weekend expressions",
+"f": "TGIF, chill out, a lazy Sunday, faire la grasse matinée"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Travel expressions",
+"f": "Hit the road, off the beaten track, live out of a suitcase"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Shopping expressions",
+"f": "Shop till you drop, a steal, a rip-off, lèche-vitrine"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: everyday situations",
+"f": "Light review of people, food, sleep, work and travel expressions"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "Sports idioms in English",
+"f": "The ball is in your court, a level playing field, move the goalposts"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "Football expressions",
+"f": "Hat-trick, own goal, back of the net, pendurar as chuteiras"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Music expressions",
+"f": "Music to my ears, play it by ear, ring a bell, face the music"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Weather small talk",
+"f": "Lovely day!, it's freezing, what a scorcher, quel temps !"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Small talk phrases",
+"f": "Fancy seeing you here, how's it going, what have you been up to?"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Long time no see",
+"f": "Where it comes from, plus cuánto tiempo, ça fait longtemps, quanto tempo"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Party and fun slang",
+"f": "Have a blast, party animal, faire la fête, irse de juerga"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Surprise around the world",
+"f": "Nossa!, ¡madre mía!, oh là là, mamma mia! and their tone"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "What oh là là really means",
+"f": "How the French really use oh là là, and other phrases foreigners misuse"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Italian exclamations",
+"f": "Mamma mia, che figata, magari, boh and when Italians say them"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Spanish everyday words",
+"f": "Vale, venga, guay, qué fuerte and how Spaniards use them"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Latin American everyday words",
+"f": "Chévere, bacán, órale, che and where each one is heard"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "Brazilian everyday words",
+"f": "Beleza, valeu, legal, tipo assim, né"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Portuguese everyday words",
+"f": "Fixe, bué, giro, pá, então"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "French everyday words",
+"f": "Truc, bof, ouf, sympa, ça marche"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "German everyday words",
+"f": "Na?, genau, Quatsch, krass, alles klar"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Italian hand gestures",
+"f": "The pinched fingers and other gestures that go with words"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "English short forms",
+"f": "Gonna, wanna, gotta, kinda and when they are fine to use"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Texting abbreviations",
+"f": "LOL, BRB, OMG, IDK and their cousins in other languages"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "How people laugh in text",
+"f": "Haha, jajaja, kkkk, mdr, 555 in Thai and www in Japanese"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Emojis as slang",
+"f": "How emojis replace words and mean different things across cultures"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Polite or casual?",
+"f": "When slang fits and when standard language works better"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Slang at work",
+"f": "Which casual words are fine at work and which to keep for friends"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Talking with older people",
+"f": "Choosing words with older people: respect and warmth"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Safe slang",
+"f": "Spot words that sound harmless but may offend, and safer options"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Misheard idioms",
+"f": "For all intents and purposes, nip it in the bud and common mix-ups"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Literal translation traps",
+"f": "Why idioms usually cannot be translated word for word"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Finding the equivalent",
+"f": "How to find a matching idiom in another language"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Making idioms your own",
+"f": "Tips to remember and practise new expressions"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: beginner stage complete",
+"f": "Celebrate the first stage with your favourite expressions"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "British English slang",
+"f": "Brilliant, cheeky, gutted, chuffed, knackered"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "American English slang",
+"f": "Awesome, bummer, hang out, no biggie, legit"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Australian slang",
+"f": "Arvo, brekkie, no worries, fair dinkum, g'day"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Irish and Scottish expressions",
+"f": "Craic, grand, wee, aye, bonnie"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Canadian expressions",
+"f": "Eh, toque, double-double, loonie"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "New Zealand expressions",
+"f": "Sweet as, chur, jandals, kia ora"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "South African English",
+"f": "Lekker, braai, now-now, just now and their local meanings"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Indian English",
+"f": "Prepone, do the needful, timepass and other local expressions"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Slang from Spain",
+"f": "Tío, mola, flipar, currar, guay"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Mexican slang",
+"f": "Órale, qué padre, chido, neta, ahorita"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Argentine slang",
+"f": "Che, re, bárbaro, laburar and the lunfardo tradition"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Colombian slang",
+"f": "Parcero, chévere, bacano, qué pena, de una"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Chilean slang",
+"f": "Cachai, po, bacán, fome, al tiro"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Caribbean Spanish",
+"f": "Guagua, chévere, qué lo que in Cuba, Puerto Rico and the Dominican Republic"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Brazilian slang",
+"f": "Cara, massa, top, mano, de boa"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Brazil's regional words",
+"f": "Bah in the South, oxe in the Northeast, uai in Minas, mermão in Rio"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Slang from Portugal",
+"f": "Bué, fixe, curtir, cena, porreiro"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Angolan expressions",
+"f": "Kota, bué, mambo, banda and their influence on Portugal"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "French slang from France",
+"f": "Mec, kiffer, ouf, chelou, relou"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Verlan: French backwards",
+"f": "How verlan flips syllables: louche to chelou, fou to ouf, lourd to relou"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Quebec French",
+"f": "Char, tiguidou, c'est plate, magasiner, piasse"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Belgian and Swiss French",
+"f": "Septante, nonante, dîner for lunch and souper for dinner"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "Italian slang",
+"f": "Figo, boh, dai, magari, sfigato"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "Italian regional words",
+"f": "Daje and anvedi in Rome, ué in Milan, mannaggia in the South"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "German slang",
+"f": "Krass, Digga, chillen, Alter, läuft"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Austrian expressions",
+"f": "Servus, leiwand, Jause, Paradeiser, Grüß Gott"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Swiss German expressions",
+"f": "Grüezi, merci vielmal, Znüni, Chuchichäschtli"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Dutch and Flemish expressions",
+"f": "Gezellig, lekker, doe normaal"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Scandinavian concepts",
+"f": "Hygge, lagom, fika, friluftsliv"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: regional slang",
+"f": "Light review of regional slang from English, Spanish, Portuguese, French and Italian"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Japanese everyday expressions",
+"f": "Itadakimasu, otsukaresama, yoroshiku, sumimasen"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Korean everyday expressions",
+"f": "Hwaiting, daebak, aigoo, jinjja"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Chinese everyday expressions",
+"f": "Jiayou, mamahuhu, guanxi, renao"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Arabic everyday expressions",
+"f": "Yalla, habibi, khalas, mabrouk"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Hindi everyday expressions",
+"f": "Accha, jugaad, chalo, yaar"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Turkish everyday expressions",
+"f": "Kolay gelsin, afiyet olsun, geçmiş olsun"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Greek everyday expressions",
+"f": "Opa, siga siga, kefi, filotimo"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Russian everyday expressions",
+"f": "Davai, nichego, nu, ladno"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Swahili everyday expressions",
+"f": "Hakuna matata, pole pole, sawa, karibu"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Hawaiian and Māori words",
+"f": "Aloha, mahalo, ohana, kia ora, whānau"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Untranslatable words",
+"f": "Saudade, hygge, wabi-sabi, Fernweh and why they stick"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Words for cosiness",
+"f": "Gezellig, hygge, Gemütlichkeit, aconchego"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Words for wanderlust",
+"f": "Fernweh, wanderlust, dépaysement and other travel feelings"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Words for the joy of life",
+"f": "Joie de vivre, dolce far niente, la buena vida, kefi"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Internet slang basics",
+"f": "Meme, viral, GOAT, FOMO, TBT"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Gen Z slang",
+"f": "No cap, slay, lowkey, highkey, vibe"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Slang that changes fast",
+"f": "Why yesterday's cool word sounds old today"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Gaming slang",
+"f": "GG, noob, nerf, buff, AFK"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Online slang abroad",
+"f": "MDR, XD, kkkk, jsjs, 555 and local internet habits"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Workplace jargon",
+"f": "Touch base, circle back, low-hanging fruit, deep dive"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Office jargon abroad",
+"f": "Faire le point, hacer un brainstorming, dar um feedback and borrowed English"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Borrowed English words",
+"f": "How Spanish, Portuguese, French and German borrow English words"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Denglisch and Franglais",
+"f": "Handy, Beamer, le footing, le parking and fake anglicisms"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "False friends in Spanish",
+"f": "Embarazada, constipado, éxito, carpeta"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "False friends in French",
+"f": "Librairie, sensible, actuellement, blesser"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "False friends in Italian",
+"f": "Camera, parenti, morbido, fattoria"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "False friends in Portuguese",
+"f": "Puxar, esquisito, pasta, apelido"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "False friends in German",
+"f": "Gift, Chef, bekommen, sensibel"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Same word, different countries",
+"f": "Words that change meaning between Spain and Mexico or Portugal and Brazil"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: global expressions",
+"f": "Light review of untranslatable words, internet slang and false friends"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Idioms with make and do",
+"f": "Make ends meet, do the trick, make do, make a scene"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "Idioms with get",
+"f": "Get the hang of it, get over it, get on someone's nerves, get carried away"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "Idioms with take",
+"f": "Take it easy, take a rain check, take it with a pinch of salt"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "Idioms with go",
+"f": "Go with the flow, go Dutch, go bananas, go for it"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Idioms with put",
+"f": "Put up with, put two and two together, put on hold"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Idioms with break",
+"f": "Break the news, break even, break new ground"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "Phrasal verbs as slang",
+"f": "Hang out, chill out, freak out, mess up"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Spanish idioms with estar",
+"f": "Estar en las nubes, estar hasta las narices, estar al loro"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Spanish idioms with tener",
+"f": "Tener mala leche, tener enchufe, tener la sartén por el mango"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "French idioms with avoir",
+"f": "Avoir le cafard, avoir la flemme, avoir du pain sur la planche"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "French idioms with être",
+"f": "Être dans la lune, être à l'ouest, être aux anges"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Italian idioms with avere and essere",
+"f": "Avere le mani bucate, essere in gamba, essere al verde"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Portuguese idioms with estar",
+"f": "Estar com a pulga atrás da orelha, estar nas nuvens, estar com os azeites"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "German idioms with haben",
+"f": "Schwein haben, einen Vogel haben, die Nase voll haben"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Food idioms compared",
+"f": "Comparing bread, cheese and sausage idioms across languages"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Tomatoes on your eyes",
+"f": "Tomaten auf den Augen haben and other funny literal images"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Funny literal translations",
+"f": "Ich verstehe nur Bahnhof, poser un lapin, pagar o pato, ponerse las pilas"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Seasonal expressions",
+"f": "Indian summer, Altweibersommer, veranillo de San Martín, été indien"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Cars and driving idioms",
+"f": "In the driver's seat, backseat driver, put the brakes on"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Review: verbs and imagery",
+"f": "Light review of verb-based idioms and literal images"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Everyday euphemisms",
+"f": "Restroom, between jobs, a little under the weather and why we soften words"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Exaggerations",
+"f": "I've told you a million times, I'm starving, it weighs a ton"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Understatements",
+"f": "Not bad at all, a bit of a problem and the art of British understatement"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "British politeness codes",
+"f": "Quite good, I'll bear it in mind, with respect and what they really mean"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Sarcasm signals",
+"f": "Oh great, yeah right, sure and how tone changes meaning"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Compliments, casual style",
+"f": "You rock, nailed it, crack, máquina, fera"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Encouragement",
+"f": "You've got this, hang in there, ánimo, courage, força, forza"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Calming someone down",
+"f": "Chill, take it easy, no te agobies, du calme, calma"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Toasts and celebrations",
+"f": "Cheers, salud, santé, saúde, prost and toasting customs"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Delicious! Food talk slang",
+"f": "Yummy, finger-licking good, de rechupete, trop bon, uma delícia"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Hunger idioms",
+"f": "I could eat a horse, avoir une faim de loup, tener un hambre canina"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Money slang",
+"f": "Bucks, quid, grand, pasta, fric, grana, Kohle"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Cheap and expensive",
+"f": "Cheapskate, a steal, costar un ojo de la cara, coûter les yeux de la tête"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Work slang abroad",
+"f": "Currar, bosser, laburar, malochen and words for hard work"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Being broke",
+"f": "Broke, strapped for cash, estar sin blanca, être fauché, estar liso"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Bargains and deals",
+"f": "Deal!, it's a bargain, trato hecho, marché conclu, negócio fechado"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Forest and nature idioms",
+"f": "Out of the woods, can't see the wood for the trees, the tip of the iceberg"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Sea and water idioms",
+"f": "In the same boat, make waves, ficar a ver navios, ahogarse en un vaso de agua"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Fire and heat idioms",
+"f": "Play with fire, add fuel to the fire, jeter de l'huile sur le feu"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Review: social expressions",
+"f": "Light review of compliments, money, nature and social codes"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Success expressions",
+"f": "Hit the jackpot, a home run, a feather in your cap"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Failure expressions",
+"f": "Fall flat, go down the drain, a flop, quedarse en agua de borrajas"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Effort expressions",
+"f": "Burn the midnight oil, elbow grease, sudar la camiseta"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Rest expressions",
+"f": "Recharge your batteries, put your feet up, dolce far niente"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Health expressions",
+"f": "Fit as a fiddle, back on your feet, bright-eyed and bushy-tailed"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Age expressions",
+"f": "No spring chicken, young at heart, long in the tooth"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Food lovers' words",
+"f": "Foodie, sweet tooth, gourmand, goloso, guloso"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Learning expressions",
+"f": "Learn the ropes, a rookie, le b.a.-ba, the basics"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Knowledge expressions",
+"f": "Know it like the back of your hand, saber al dedillo, sur le bout des doigts"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Memory expressions",
+"f": "On the tip of my tongue, rings a bell, avoir un trou de mémoire"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Faraway places",
+"f": "In the middle of nowhere, en el quinto pino, au bout du monde"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Short distances",
+"f": "A stone's throw, around the corner, a dos pasos, à deux pas"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Flexible time words",
+"f": "Ahorita, tout à l'heure, já já and how long they really mean"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "Punctuality expressions",
+"f": "On the dot, fashionably late, en punto, pile"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Weather moods",
+"f": "A ray of sunshine, a cloud hanging over, the calm before the storm"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Animal sounds across languages",
+"f": "Woof, guau, ouaf, au-au, wau wau and why they differ"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Onomatopoeia",
+"f": "Achoo, atchim, boom, crash and sound words around the world"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Kids' expressions",
+"f": "Boo-boo, nighty-night, tummy, pupa, dodo"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Friendly terms of endearment",
+"f": "Love, mate, cariño, mon chou, querido, tesoro in family and friendly use"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: time, places and sounds",
+"f": "Light review of place, time and sound expressions"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Proverbs about time",
+"f": "Time is money, Rome wasn't built in a day, poco a poco se va lejos"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Proverbs about friendship",
+"f": "A friend in need is a friend indeed, les bons comptes font les bons amis"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Proverbs about work",
+"f": "Many hands make light work, no pain no gain, Morgenstund hat Gold im Mund"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Proverbs about patience",
+"f": "Good things come to those who wait, chi va piano va sano e va lontano"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Proverbs about words",
+"f": "Actions speak louder than words, del dicho al hecho hay mucho trecho"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Proverbs about food",
+"f": "The proof of the pudding, l'appétit vient en mangeant"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Proverbs about luck",
+"f": "Every cloud has a silver lining, no hay mal que por bien no venga"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Proverbs with animals",
+"f": "Don't count your chickens, a cavalo dado não se olha o dente"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Same proverb, many languages",
+"f": "One idea, many images: a bird in the hand in several languages"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "Review: intermediate stage complete",
+"f": "Celebrate the middle stage with your favourite proverbs and slang"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Where idioms come from",
+"f": "Ships, farms, theatre and sport as rich sources of idioms"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Nautical origins",
+"f": "Know the ropes, by and large, take a different tack, all hands on deck"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Farm origins",
+"f": "Hit the hay, put the cart before the horse, mettre la charrue avant les bœufs"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Theatre origins",
+"f": "Steal the show, in the limelight, waiting in the wings"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Sport origins",
+"f": "Throw in the towel, saved by the bell, below the belt, par for the course"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "Stories behind spill the beans",
+"f": "Popular stories behind idioms, and why many origins remain uncertain"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "The story of OK",
+"f": "How OK began as a joke abbreviation in 1830s Boston newspapers and went global"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "The story of cool",
+"f": "How cool moved from jazz slang to almost every language"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "The story of saudade",
+"f": "The history and feeling of the Portuguese word saudade"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Review: origins",
+"f": "Light review of nautical, farm, theatre and sport origins"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Shakespeare's expressions",
+"f": "Wild-goose chase, in a pickle, a heart of gold, the green-eyed monster"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "Cervantes and Spanish sayings",
+"f": "Don Quixote and expressions like luchar contra molinos de viento"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "La Fontaine's fables",
+"f": "Fables that became sayings: la raison du plus fort, rien ne sert de courir"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Dante and Italian expressions",
+"f": "Expressions from the Divine Comedy still heard in Italian today"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Latin in everyday speech",
+"f": "Ad hoc, carpe diem, per se, status quo, de facto"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Greek myths in idioms",
+"f": "Achilles' heel, Pandora's box, a Herculean task, a Trojan horse"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Fables in idioms",
+"f": "Sour grapes, the lion's share, the boy who cried wolf"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Characters who became words",
+"f": "A Scrooge, a Pollyanna, quixotic, a Sherlock"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Brand names as words",
+"f": "Google it, hoover, Kleenex, Tupperware and generic trademarks"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Review: literature and history",
+"f": "Light review of literary and classical expressions"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "From formal to slang",
+"f": "One idea in formal, neutral, casual and slang versions"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "When slang becomes standard",
+"f": "Words like bus, mob and selfie that started as informal"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "The life cycle of slang",
+"f": "How slang is born, spreads, peaks and fades"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Slang and music",
+"f": "How hip hop, funk, reggaeton and other genres spread new words"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Movie lines as expressions",
+"f": "Film lines that became everyday phrases, like I'll be back"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "TV catchphrases",
+"f": "Catchphrases from series that entered everyday speech"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Sports commentary styles",
+"f": "What a strike!, ¡golazo!, nothing but net and commentary around the world"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Slang and social media",
+"f": "Hashtags, challenges and how phrases go viral"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Teen slang across countries",
+"f": "How teenagers in different countries create new words"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Review: slang in culture",
+"f": "Light review of slang from music, film, TV and social media"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Puns in English",
+"f": "Why puns are fun: dad jokes and double meanings"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Wordplay in Spanish",
+"f": "Trabalenguas, playful rhymes and jokes built on double meanings"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Wordplay in French",
+"f": "Jeux de mots, calembours and virelangues like les chaussettes de l'archiduchesse"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Wordplay in Portuguese",
+"f": "Trava-línguas like o rato roeu a roupa do rei de Roma and Brazilian trocadilhos"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Tongue twisters worldwide",
+"f": "She sells seashells, tres tristes tigres, Fischers Fritz fischt frische Fische"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Cockney rhyming slang",
+"f": "Apples and pears for stairs, dog and bone for phone and how it works"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Syllable games",
+"f": "Verlan in France, vesre in Argentina and other back-slang games"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Spoonerisms",
+"f": "Swapping the first sounds of words for comic effect"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Malapropisms",
+"f": "Funny word mix-ups and the character Mrs Malaprop"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Review: wordplay",
+"f": "Light review of puns, tongue twisters and word games"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Humour across cultures",
+"f": "British irony, American punchlines, Brazilian zoeira"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Understanding local jokes",
+"f": "Why jokes rely on shared culture and wordplay"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Friendly teasing",
+"f": "Banter, cachondeo, chambrer, zoeira: codes of friendly teasing"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "When slang can hurt",
+"f": "Context, tone and audience: how to avoid offending without meaning to"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Strong but clean words",
+"f": "Darn, caramba, mince, cavolo, puxa: strong but polite exclamations"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Minced oaths",
+"f": "Gosh, heck, jeez, purée and how mild substitutes work"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Frustration exclamations",
+"f": "Ugh, argh, ¡qué rollo!, la barbe, que saco"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Delight exclamations",
+"f": "Yay, woohoo, ¡qué guay!, trop bien, que massa"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Intensifiers",
+"f": "Super, mega, re, bué, trop, un sacco, voll"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Review: humour and tone",
+"f": "Light review of humour, teasing and expressive words"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Idioms in business meetings",
+"f": "Ballpark figure, think outside the box, on the back burner"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Idioms in negotiations",
+"f": "Meet halfway, a win-win, the bottom line, put your cards on the table"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Email phrases and subtext",
+"f": "Per my last email, as discussed, a gentle reminder and what they imply"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "More sports idioms at work",
+"f": "Team player, step up to the plate, move the needle, a whole new ball game"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Tech idioms",
+"f": "Reboot, bandwidth, take it offline, ping me"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Formal phrases",
+"f": "It goes without saying, by and large, at the end of the day"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Idioms in the news",
+"f": "Headlines love idioms: a storm in a teacup, a U-turn, under fire"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Idioms in advertising",
+"f": "Slogans and playful idioms in ads"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Idioms in songs",
+"f": "Expressions you hear in popular songs and what they mean"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: idioms in context",
+"f": "Light review of idioms at work, in the news and in ads"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Choosing the right equivalent",
+"f": "Matching idioms across languages by tone, image and frequency"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Translating humour",
+"f": "Strategies to carry jokes and wordplay into another language"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Subtitles and dubbing",
+"f": "How translators handle slang in films and series"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Idioms for language learners",
+"f": "Using idioms naturally without overdoing it"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Sounding natural, not forced",
+"f": "When an idiom sounds dated, too much or out of place"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Dated slang",
+"f": "Groovy, far out, swell and other words that now sound retro"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Retro slang revival",
+"f": "Words coming back like rad, and how nostalgia revives slang"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Regional map: English",
+"f": "Soda, pop and coke in the US, and other regional word battles"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Regional map: Spanish",
+"f": "Words for bus: guagua, colectivo, camión, micro"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Review: equivalents and naturalness",
+"f": "Light review of translating and using idioms naturally"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Regional map: Portuguese",
+"f": "Bread rolls: carcaça and papo-seco in Portugal, pão francês and pão de sal in Brazil"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Regional map: French",
+"f": "Pain au chocolat or chocolatine, serpillière or wassingue"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Regional map: Italian",
+"f": "Anguria, cocomero or melone d'acqua: one fruit, many names"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Regional map: German",
+"f": "Brötchen, Semmel, Schrippe, Weckle: the bread roll map"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Greetings map of Germany",
+"f": "Moin, Servus, Grüß Gott, Tach and where each one is heard"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Ways to say cool, region by region",
+"f": "Cool, guay, chido, bacán, top, fixe and where each lives"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Ways to say friend, region by region",
+"f": "Mate, cuate, pana, parce, pote, brother"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Ways to say party, region by region",
+"f": "Fiesta, juerga, rumba, balada, teuf, festa"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Ways to say money, region by region",
+"f": "Pasta, plata, lana, guita, grana, fric, Kohle"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Review: regional maps",
+"f": "Light review of regional words across languages"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Number idioms abroad",
+"f": "Faire les quatre cents coups, en dos patadas, pensar duas vezes"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Colour idioms in depth",
+"f": "Rire jaune, poner verde a alguien, passar a noite em branco, schwarzsehen"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Clothing idioms",
+"f": "Wear many hats, if the shoe fits, hats off, chapeau !"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "House idioms",
+"f": "Bring the house down, on the house, casa de ferreiro, espeto de pau"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Tool idioms",
+"f": "Hit the nail on the head, a spanner in the works, dar en el clavo"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Kitchen idioms",
+"f": "The pot calling the kettle black, a fine kettle of fish, estar en el ajo"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Transport idioms",
+"f": "Miss the boat, jump on the bandwagon, perder el tren, pegar carona"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Sky and star idioms",
+"f": "Reach for the stars, out of this world, tocar el cielo con las manos"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Plant idioms",
+"f": "Nip it in the bud, a late bloomer, a hot potato, ir al grano"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Review: themed idioms",
+"f": "Light review of idioms with objects, clothes and nature"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "Expressing disbelief",
+"f": "You're kidding, no way, ¿en serio?, c'est pas vrai, fala sério"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Expressing indifference",
+"f": "Whatever, I couldn't care less, me da igual, je m'en fiche, tanto faz"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Expressing enthusiasm",
+"f": "Count me in, I'm all in, me apunto, je suis partant, tô dentro"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Expressing doubt",
+"f": "I'm not so sure, take it with a grain of salt, no lo tengo claro"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Expressing annoyance",
+"f": "Drive me up the wall, get on my nerves, me saca de quicio, ça me saoule"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Expressing relief",
+"f": "Phew, what a relief, menos mal, ouf, ufa, che sollievo"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Expressing admiration",
+"f": "You're amazing, take a bow, chapeau, olé, bravo"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Expressing nostalgia",
+"f": "The good old days, back in the day, aquellos tiempos, saudade"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Expressing hope",
+"f": "Here's hoping, ojalá, pourvu que, oxalá, magari"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Review: emotions at advanced level",
+"f": "Light review of disbelief, enthusiasm, relief and hope"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Your idiom toolkit",
+"f": "The 20 most useful idioms to keep for everyday use"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "Inside jokes and private words",
+"f": "How groups of friends invent their own words and expressions"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Family sayings",
+"f": "Expressions families pass on and why they matter"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Idioms from your culture",
+"f": "Share and explain expressions from your own language"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Teaching an idiom",
+"f": "Explain an idiom clearly to someone from another culture"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Spotting idioms in the wild",
+"f": "Find idioms in songs, shows and conversations"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Slang in other alphabets",
+"f": "Japanese, Korean, Russian and Arabic slang in their scripts and romanised"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Idioms and body language",
+"f": "Gestures that go with expressions: the Italian pinch, a shrug, a wink"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "Mixed metaphors",
+"f": "Funny combinations like we'll burn that bridge when we come to it"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Idiom quiz day",
+"f": "Test yourself on a mix of idioms from the whole year"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Slang quiz day",
+"f": "Test yourself on slang from different countries"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Proverb quiz day",
+"f": "Match proverbs across languages"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Your favourite expressions",
+"f": "Pick and share the expressions you enjoyed most"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Your story in idioms",
+"f": "Tell a story using as many idioms as you can"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrate! Path complete",
+"f": "Celebrate 365 days of slang, idioms and everyday expressions"
+}
+]
+}

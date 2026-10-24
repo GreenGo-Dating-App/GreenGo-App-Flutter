@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 21,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular -are verbs",
+     "g": "Conjugate the biggest group of Italian verbs in the present tense.",
+     "p": [
+      "Remove -are and add -o, -i, -a, -iamo, -ate, -ano: parlo, parli, parla, parliamo, parlate, parlano.",
+      "The same pattern works for abitare, lavorare, ascoltare and hundreds more.",
+      "Verbs in -care and -gare add an h to stay hard: giochi, paghiamo; mangiare keeps one i: mangi."
+     ],
+     "q": "Dove abiti e dove lavori o studi? Answer with two -are verbs.",
+     "c": "Write five sentences about your day using five different -are verbs."
+    },
+    "de": {
+     "t": "Regelmäßige Verben auf -are",
+     "g": "Du konjugierst die größte Gruppe italienischer Verben im Präsens.",
+     "p": [
+      "-are weg, dann -o, -i, -a, -iamo, -ate, -ano: parlo, parli, parla, parliamo, parlate, parlano.",
+      "Das Muster gilt auch für abitare, lavorare, ascoltare und Hunderte mehr.",
+      "Verben auf -care und -gare bekommen ein h: giochi, paghiamo; mangiare behält ein i: mangi."
+     ],
+     "q": "Dove abiti e dove lavori o studi? Antworte mit zwei -are-Verben.",
+     "c": "Schreib fünf Sätze über deinen Tag mit fünf verschiedenen -are-Verben."
+    },
+    "es": {
+     "t": "Verbos regulares en -are",
+     "g": "Conjuga el grupo más grande de verbos italianos en presente.",
+     "p": [
+      "Quita -are y añade -o, -i, -a, -iamo, -ate, -ano: parlo, parli, parla, parliamo, parlate, parlano.",
+      "El mismo modelo sirve para abitare, lavorare, ascoltare y cientos más.",
+      "Los verbos en -care y -gare añaden h: giochi, paghiamo; mangiare conserva una i: mangi."
+     ],
+     "q": "Dove abiti e dove lavori o studi? Responde con dos verbos en -are.",
+     "c": "Escribe cinco frases sobre tu día con cinco verbos distintos en -are."
+    },
+    "fr": {
+     "t": "Verbes réguliers en -are",
+     "g": "Conjuguer le plus grand groupe de verbes italiens au présent.",
+     "p": [
+      "Enlève -are et ajoute -o, -i, -a, -iamo, -ate, -ano : parlo, parli, parla, parliamo, parlate, parlano.",
+      "Le même modèle marche pour abitare, lavorare, ascoltare et des centaines d'autres.",
+      "Les verbes en -care et -gare prennent un h : giochi, paghiamo ; mangiare garde un seul i : mangi."
+     ],
+     "q": "Dove abiti e dove lavori o studi ? Réponds avec deux verbes en -are.",
+     "c": "Écris cinq phrases sur ta journée avec cinq verbes différents en -are."
+    },
+    "it": {
+     "t": "Verbi regolari in -are",
+     "g": "Impari il presente del gruppo di verbi più numeroso.",
+     "p": [
+      "Togli -are e aggiungi -o, -i, -a, -iamo, -ate, -ano: parlo, parli, parla, parliamo, parlate, parlano.",
+      "Lo stesso schema vale per abitare, lavorare, ascoltare e centinaia di altri verbi.",
+      "I verbi in -care e -gare prendono la h: giochi, paghiamo; mangiare tiene una sola i: mangi."
+     ],
+     "q": "Dove abiti e dove lavori o studi? Rispondi con due verbi in -are.",
+     "c": "Scrivi cinque frasi sulla tua giornata con cinque verbi diversi in -are."
+    },
+    "pt": {
+     "t": "Verbos regulares em -are",
+     "g": "Conjugar o maior grupo de verbos italianos no presente.",
+     "p": [
+      "Tira -are e junta -o, -i, -a, -iamo, -ate, -ano: parlo, parli, parla, parliamo, parlate, parlano.",
+      "O mesmo modelo serve para abitare, lavorare, ascoltare e centenas de outros.",
+      "Os verbos em -care e -gare ganham h: giochi, paghiamo; mangiare fica só com um i: mangi."
+     ],
+     "q": "Dove abiti e dove lavori o studi? Responde com dois verbos em -are.",
+     "c": "Escreve cinco frases sobre o teu dia com cinco verbos diferentes em -are."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares em -are",
+     "g": "Conjugar o maior grupo de verbos italianos no presente.",
+     "p": [
+      "Tire -are e coloque -o, -i, -a, -iamo, -ate, -ano: parlo, parli, parla, parliamo, parlate, parlano.",
+      "O mesmo modelo vale para abitare, lavorare, ascoltare e centenas de outros.",
+      "Os verbos em -care e -gare ganham h: giochi, paghiamo; mangiare fica com um i só: mangi."
+     ],
+     "q": "Dove abiti e dove lavori o studi? Responda com dois verbos em -are.",
+     "c": "Escreva cinco frases sobre o seu dia com cinco verbos diferentes em -are."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "parlare",
+      "ex": "Parlo italiano e inglese."
+     },
+     {
+      "w": "abitare",
+      "ex": "Abitiamo in un piccolo appartamento."
+     },
+     {
+      "w": "lavorare",
+      "ex": "Lavori in ufficio o da casa?"
+     },
+     {
+      "w": "mangiare",
+      "ex": "A pranzo mangiamo la pasta."
+     },
+     {
+      "w": "studiare",
+      "ex": "Studio italiano ogni sera."
+     },
+     {
+      "w": "ascoltare",
+      "ex": "Ascoltano la radio in macchina."
+     }
+    ],
+    "gram": "Verbi in -are: si toglie -are e si aggiunge -o, -i, -a, -iamo, -ate, -ano. Parlo, parli, parla, parliamo, parlate, parlano."
+   }
+  },
+  {
+   "d": 22,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular -ere verbs",
+     "g": "Conjugate the second group of Italian verbs in the present tense.",
+     "p": [
+      "Remove -ere and add -o, -i, -e, -iamo, -ete, -ono: scrivo, scrivi, scrive, scriviamo, scrivete, scrivono.",
+      "Same pattern for leggere, vedere, prendere, vivere and credere.",
+      "Listen to the sound: leggo has a hard g, leggi a soft g, because of the vowel that follows."
+     ],
+     "q": "What are you reading or watching at the moment? Answer with leggo or vedo.",
+     "c": "Write three sentences about your evening using leggere, scrivere and prendere."
+    },
+    "de": {
+     "t": "Regelmäßige Verben auf -ere",
+     "g": "Du konjugierst die zweite Gruppe italienischer Verben im Präsens.",
+     "p": [
+      "-ere weg, dann -o, -i, -e, -iamo, -ete, -ono: scrivo, scrivi, scrive, scriviamo, scrivete, scrivono.",
+      "Das gleiche Muster gilt für leggere, vedere, prendere, vivere und credere.",
+      "Achte auf den Klang: leggo mit hartem g, leggi mit weichem g, wegen des folgenden Vokals."
+     ],
+     "q": "Was liest oder schaust du gerade? Antworte mit leggo oder vedo.",
+     "c": "Schreib drei Sätze über deinen Abend mit leggere, scrivere und prendere."
+    },
+    "es": {
+     "t": "Verbos regulares en -ere",
+     "g": "Conjuga el segundo grupo de verbos italianos en presente.",
+     "p": [
+      "Quita -ere y añade -o, -i, -e, -iamo, -ete, -ono: scrivo, scrivi, scrive, scriviamo, scrivete, scrivono.",
+      "El mismo modelo vale para leggere, vedere, prendere, vivere y credere.",
+      "Escucha el sonido: leggo tiene g dura y leggi g suave, por la vocal que sigue."
+     ],
+     "q": "¿Qué estás leyendo o viendo ahora? Responde con leggo o vedo.",
+     "c": "Escribe tres frases sobre tu tarde con leggere, scrivere y prendere."
+    },
+    "fr": {
+     "t": "Verbes réguliers en -ere",
+     "g": "Conjuguer le deuxième groupe de verbes italiens au présent.",
+     "p": [
+      "Enlève -ere et ajoute -o, -i, -e, -iamo, -ete, -ono : scrivo, scrivi, scrive, scriviamo, scrivete, scrivono.",
+      "Même modèle pour leggere, vedere, prendere, vivere et credere.",
+      "Écoute le son : leggo a un g dur, leggi un g doux, à cause de la voyelle qui suit."
+     ],
+     "q": "Que lis-tu ou regardes-tu en ce moment ? Réponds avec leggo ou vedo.",
+     "c": "Écris trois phrases sur ta soirée avec leggere, scrivere et prendere."
+    },
+    "it": {
+     "t": "Verbi regolari in -ere",
+     "g": "Impari il presente del secondo gruppo di verbi.",
+     "p": [
+      "Togli -ere e aggiungi -o, -i, -e, -iamo, -ete, -ono: scrivo, scrivi, scrive, scriviamo, scrivete, scrivono.",
+      "Lo stesso schema vale per leggere, vedere, prendere, vivere e credere.",
+      "Ascolta il suono: leggo ha la g dura, leggi la g dolce, per la vocale che segue."
+     ],
+     "q": "Che cosa leggi o guardi in questo periodo? Rispondi con leggo o vedo.",
+     "c": "Scrivi tre frasi sulla tua serata con leggere, scrivere e prendere."
+    },
+    "pt": {
+     "t": "Verbos regulares em -ere",
+     "g": "Conjugar o segundo grupo de verbos italianos no presente.",
+     "p": [
+      "Tira -ere e junta -o, -i, -e, -iamo, -ete, -ono: scrivo, scrivi, scrive, scriviamo, scrivete, scrivono.",
+      "O mesmo modelo serve para leggere, vedere, prendere, vivere e credere.",
+      "Ouve o som: leggo tem g duro e leggi g suave, por causa da vogal seguinte."
+     ],
+     "q": "O que estás a ler ou a ver neste momento? Responde com leggo ou vedo.",
+     "c": "Escreve três frases sobre a tua noite com leggere, scrivere e prendere."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares em -ere",
+     "g": "Conjugar o segundo grupo de verbos italianos no presente.",
+     "p": [
+      "Tire -ere e coloque -o, -i, -e, -iamo, -ete, -ono: scrivo, scrivi, scrive, scriviamo, scrivete, scrivono.",
+      "O mesmo modelo vale para leggere, vedere, prendere, vivere e credere.",
+      "Ouça o som: leggo tem g duro e leggi g suave, por causa da vogal seguinte."
+     ],
+     "q": "O que você está lendo ou assistindo agora? Responda com leggo ou vedo.",
+     "c": "Escreva três frases sobre a sua noite com leggere, scrivere e prendere."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "leggere",
+      "ex": "Leggo un libro ogni mese."
+     },
+     {
+      "w": "scrivere",
+      "ex": "Scrivi un messaggio a Marco?"
+     },
+     {
+      "w": "vedere",
+      "ex": "Vediamo un film stasera."
+     },
+     {
+      "w": "prendere",
+      "ex": "Prendo un caffè al bar."
+     },
+     {
+      "w": "credere",
+      "ex": "Credo di sì."
+     },
+     {
+      "w": "vivere",
+      "ex": "Vivono a Bologna da due anni."
+     }
+    ],
+    "gram": "Verbi in -ere: si toglie -ere e si aggiunge -o, -i, -e, -iamo, -ete, -ono. Leggo, leggi, legge, leggiamo, leggete, leggono."
+   }
+  },
+  {
+   "d": 23,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular -ire verbs",
+     "g": "Conjugate -ire verbs, including the special -isc- group.",
+     "p": [
+      "Type 1: dormo, dormi, dorme, dormiamo, dormite, dormono; also partire, aprire, sentire.",
+      "Type 2 adds -isc- in four forms: capisco, capisci, capisce, capiamo, capite, capiscono.",
+      "Finire, preferire and pulire follow capire; the dictionary usually marks them."
+     ],
+     "q": "Non capisco is a lifesaver! Which other -ire verb would you use every day?",
+     "c": "Say aloud the full present of dormire and of capire three times."
+    },
+    "de": {
+     "t": "Regelmäßige Verben auf -ire",
+     "g": "Du konjugierst Verben auf -ire, auch die besondere -isc-Gruppe.",
+     "p": [
+      "Typ 1: dormo, dormi, dorme, dormiamo, dormite, dormono; ebenso partire, aprire, sentire.",
+      "Typ 2 schiebt in vier Formen -isc- ein: capisco, capisci, capisce, capiamo, capite, capiscono.",
+      "Finire, preferire und pulire gehen wie capire; das Wörterbuch zeigt es meist an."
+     ],
+     "q": "Non capisco ist Gold wert! Welches andere -ire-Verb brauchst du täglich?",
+     "c": "Sag das ganze Präsens von dormire und capire dreimal laut."
+    },
+    "es": {
+     "t": "Verbos regulares en -ire",
+     "g": "Conjuga los verbos en -ire, también el grupo especial con -isc-.",
+     "p": [
+      "Tipo 1: dormo, dormi, dorme, dormiamo, dormite, dormono; igual partire, aprire, sentire.",
+      "El tipo 2 añade -isc- en cuatro formas: capisco, capisci, capisce, capiamo, capite, capiscono.",
+      "Finire, preferire y pulire siguen a capire; el diccionario suele indicarlo."
+     ],
+     "q": "¡Non capisco salva vidas! ¿Qué otro verbo en -ire usarías cada día?",
+     "c": "Di en voz alta el presente completo de dormire y de capire tres veces."
+    },
+    "fr": {
+     "t": "Verbes réguliers en -ire",
+     "g": "Conjuguer les verbes en -ire, y compris le groupe spécial en -isc-.",
+     "p": [
+      "Type 1 : dormo, dormi, dorme, dormiamo, dormite, dormono ; de même partire, aprire, sentire.",
+      "Le type 2 ajoute -isc- à quatre formes : capisco, capisci, capisce, capiamo, capite, capiscono.",
+      "Finire, preferire et pulire suivent capire ; le dictionnaire l'indique souvent."
+     ],
+     "q": "Non capisco peut te sauver ! Quel autre verbe en -ire utiliserais-tu chaque jour ?",
+     "c": "Dis à voix haute tout le présent de dormire et de capire trois fois."
+    },
+    "it": {
+     "t": "Verbi regolari in -ire",
+     "g": "Impari il presente dei verbi in -ire, anche quelli con -isc-.",
+     "p": [
+      "Primo tipo: dormo, dormi, dorme, dormiamo, dormite, dormono; così anche partire, aprire, sentire.",
+      "Il secondo tipo aggiunge -isc- in quattro forme: capisco, capisci, capisce, capiamo, capite, capiscono.",
+      "Finire, preferire e pulire si coniugano come capire."
+     ],
+     "q": "Non capisco è una frase utilissima! Quale altro verbo in -ire useresti ogni giorno?",
+     "c": "Ripeti ad alta voce tutto il presente di dormire e di capire per tre volte."
+    },
+    "pt": {
+     "t": "Verbos regulares em -ire",
+     "g": "Conjugar os verbos em -ire, incluindo o grupo especial com -isc-.",
+     "p": [
+      "Tipo 1: dormo, dormi, dorme, dormiamo, dormite, dormono; também partire, aprire, sentire.",
+      "O tipo 2 junta -isc- em quatro formas: capisco, capisci, capisce, capiamo, capite, capiscono.",
+      "Finire, preferire e pulire seguem capire; o dicionário costuma indicá-lo."
+     ],
+     "q": "Non capisco salva-te em muitas situações! Que outro verbo em -ire usarias todos os dias?",
+     "c": "Diz em voz alta o presente completo de dormire e de capire três vezes."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares em -ire",
+     "g": "Conjugar os verbos em -ire, incluindo o grupo especial com -isc-.",
+     "p": [
+      "Tipo 1: dormo, dormi, dorme, dormiamo, dormite, dormono; também partire, aprire, sentire.",
+      "O tipo 2 coloca -isc- em quatro formas: capisco, capisci, capisce, capiamo, capite, capiscono.",
+      "Finire, preferire e pulire seguem capire; o dicionário costuma indicar."
+     ],
+     "q": "Non capisco salva em muitas situações! Que outro verbo em -ire você usaria todo dia?",
+     "c": "Diga em voz alta o presente completo de dormire e de capire três vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dormire",
+      "ex": "Dormo otto ore ogni notte."
+     },
+     {
+      "w": "partire",
+      "ex": "Partiamo domani mattina."
+     },
+     {
+      "w": "aprire",
+      "ex": "Apri la finestra, per favore?"
+     },
+     {
+      "w": "sentire",
+      "ex": "Senti questa musica!"
+     },
+     {
+      "w": "capire",
+      "ex": "Scusi, non capisco."
+     },
+     {
+      "w": "finire",
+      "ex": "Il film finisce alle dieci."
+     }
+    ],
+    "gram": "Verbi in -ire: dormo, dormi, dorme, dormiamo, dormite, dormono. Tipo -isc-: capisco, capisci, capisce, capiamo, capite, capiscono."
+   }
+  },
+  {
+   "d": 24,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Asking questions",
+     "g": "Ask questions in Italian with intonation and question words.",
+     "p": [
+      "For yes/no questions, keep the sentence and raise your voice at the end: Parli italiano?",
+      "Question words: chi (who), che cosa (what), dove (where), quando (when), come (how), perché (why).",
+      "Perché also means because, so the answer can start the same way: Perché mi piace!"
+     ],
+     "q": "Perché studi l'italiano? I am curious!",
+     "c": "Write five questions you would ask a new Italian friend, each with a different question word."
+    },
+    "de": {
+     "t": "Fragen stellen",
+     "g": "Du stellst Fragen auf Italienisch mit Satzmelodie und Fragewörtern.",
+     "p": [
+      "Bei Ja/Nein-Fragen bleibt der Satz gleich, nur die Stimme geht am Ende hoch: Parli italiano?",
+      "Fragewörter: chi (wer), che cosa (was), dove (wo), quando (wann), come (wie), perché (warum).",
+      "Perché heißt auch weil, also beginnt die Antwort oft gleich: Perché mi piace!"
+     ],
+     "q": "Perché studi l'italiano? Ich bin neugierig!",
+     "c": "Schreib fünf Fragen an einen neuen italienischen Freund, jede mit einem anderen Fragewort."
+    },
+    "es": {
+     "t": "Hacer preguntas",
+     "g": "Haz preguntas en italiano con la entonación y con interrogativos.",
+     "p": [
+      "En preguntas de sí o no, la frase no cambia, solo sube la voz al final: Parli italiano?",
+      "Interrogativos: chi (quién), che cosa (qué), dove (dónde), quando (cuándo), come (cómo), perché (por qué).",
+      "Perché también significa porque, así que la respuesta empieza igual: Perché mi piace!"
+     ],
+     "q": "Perché studi l'italiano? ¡Tengo curiosidad!",
+     "c": "Escribe cinco preguntas para un nuevo amigo italiano, cada una con un interrogativo distinto."
+    },
+    "fr": {
+     "t": "Poser des questions",
+     "g": "Poser des questions en italien avec l'intonation et les mots interrogatifs.",
+     "p": [
+      "Pour oui/non, garde la phrase et monte la voix à la fin : Parli italiano ?",
+      "Mots interrogatifs : chi (qui), che cosa (quoi), dove (où), quando (quand), come (comment), perché (pourquoi).",
+      "Perché veut aussi dire parce que, la réponse commence donc pareil : Perché mi piace !"
+     ],
+     "q": "Perché studi l'italiano ? Je suis curieux !",
+     "c": "Écris cinq questions pour un nouvel ami italien, chacune avec un mot interrogatif différent."
+    },
+    "it": {
+     "t": "Fare domande",
+     "g": "Impari a fare domande con l'intonazione e con le parole interrogative.",
+     "p": [
+      "Per le domande sì/no la frase non cambia, sale solo la voce alla fine: Parli italiano?",
+      "Le parole interrogative: chi, che cosa, dove, quando, come, perché.",
+      "Perché serve anche per rispondere: Perché studi? Perché mi piace!"
+     ],
+     "q": "Perché studi l'italiano? Sono curioso!",
+     "c": "Scrivi cinque domande per un nuovo amico italiano, ognuna con una parola interrogativa diversa."
+    },
+    "pt": {
+     "t": "Fazer perguntas",
+     "g": "Fazer perguntas em italiano com a entoação e com palavras interrogativas.",
+     "p": [
+      "Nas perguntas de sim ou não, a frase fica igual e a voz sobe no fim: Parli italiano?",
+      "Interrogativos: chi (quem), che cosa (o quê), dove (onde), quando (quando), come (como), perché (porquê).",
+      "Perché também quer dizer porque, por isso a resposta começa igual: Perché mi piace!"
+     ],
+     "q": "Perché studi l'italiano? Estou curioso!",
+     "c": "Escreve cinco perguntas para um novo amigo italiano, cada uma com um interrogativo diferente."
+    },
+    "pt_BR": {
+     "t": "Fazendo perguntas",
+     "g": "Fazer perguntas em italiano com entonação e palavras interrogativas.",
+     "p": [
+      "Nas perguntas de sim ou não, a frase fica igual e a voz sobe no final: Parli italiano?",
+      "Interrogativos: chi (quem), che cosa (o quê), dove (onde), quando (quando), come (como), perché (por quê).",
+      "Perché também quer dizer porque, então a resposta começa igual: Perché mi piace!"
+     ],
+     "q": "Perché studi l'italiano? Estou curioso!",
+     "c": "Escreva cinco perguntas para um novo amigo italiano, cada uma com um interrogativo diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "chi?",
+      "ex": "Chi è quella ragazza?"
+     },
+     {
+      "w": "che cosa?",
+      "ex": "Che cosa mangi stasera?"
+     },
+     {
+      "w": "dove?",
+      "ex": "Dove abiti?"
+     },
+     {
+      "w": "quando?",
+      "ex": "Quando parti per Roma?"
+     },
+     {
+      "w": "come?",
+      "ex": "Come si dice in italiano?"
+     },
+     {
+      "w": "perché?",
+      "ex": "Perché studi l'italiano?"
+     }
+    ],
+    "gram": "Per una domanda sì/no basta l'intonazione: Parli italiano? Parole interrogative: chi, che cosa, dove, quando, come, perché, quanto."
+   }
+  },
+  {
+   "d": 25,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Saying no: negation",
+     "g": "Make negative sentences in Italian, including double negatives.",
+     "p": [
+      "Put non right before the verb: Non capisco, Non abito a Roma.",
+      "Italian loves double negatives: Non vedo niente (I see nothing), Non vado mai.",
+      "Nessuno means nobody: Non c'è nessuno; at the start of a sentence non drops: Nessuno parla."
+     ],
+     "q": "What is something you never do? Answer with Non... mai.",
+     "c": "Write three true sentences about yourself with non, niente and mai."
+    },
+    "de": {
+     "t": "Nein sagen: die Verneinung",
+     "g": "Du bildest verneinte Sätze auf Italienisch, auch mit doppelter Verneinung.",
+     "p": [
+      "Setz non direkt vor das Verb: Non capisco, Non abito a Roma.",
+      "Italienisch liebt doppelte Verneinung: Non vedo niente (ich sehe nichts), Non vado mai.",
+      "Nessuno heißt niemand: Non c'è nessuno; am Satzanfang fällt non weg: Nessuno parla."
+     ],
+     "q": "Was machst du nie? Antworte mit Non... mai.",
+     "c": "Schreib drei wahre Sätze über dich mit non, niente und mai."
+    },
+    "es": {
+     "t": "Decir que no: la negación",
+     "g": "Forma frases negativas en italiano, también con doble negación.",
+     "p": [
+      "Pon non justo antes del verbo: Non capisco, Non abito a Roma.",
+      "Como en español, hay doble negación: Non vedo niente (no veo nada), Non vado mai.",
+      "Nessuno es nadie: Non c'è nessuno; al principio de la frase non desaparece: Nessuno parla."
+     ],
+     "q": "¿Qué es algo que nunca haces? Responde con Non... mai.",
+     "c": "Escribe tres frases verdaderas sobre ti con non, niente y mai."
+    },
+    "fr": {
+     "t": "Dire non : la négation",
+     "g": "Former des phrases négatives en italien, doubles négations comprises.",
+     "p": [
+      "Place non juste avant le verbe : Non capisco, Non abito a Roma.",
+      "Comme ne... rien : Non vedo niente (je ne vois rien), Non vado mai (je n'y vais jamais).",
+      "Nessuno veut dire personne : Non c'è nessuno ; en début de phrase non disparaît : Nessuno parla."
+     ],
+     "q": "Qu'est-ce que tu ne fais jamais ? Réponds avec Non... mai.",
+     "c": "Écris trois phrases vraies sur toi avec non, niente et mai."
+    },
+    "it": {
+     "t": "Dire di no: la negazione",
+     "g": "Impari a formare frasi negative, anche con la doppia negazione.",
+     "p": [
+      "Metti non subito prima del verbo: Non capisco, Non abito a Roma.",
+      "In italiano la doppia negazione è normale: Non vedo niente, Non vado mai.",
+      "Nessuno: Non c'è nessuno; se nessuno è all'inizio, non sparisce: Nessuno parla."
+     ],
+     "q": "Che cosa non fai mai? Rispondi con Non... mai.",
+     "c": "Scrivi tre frasi vere su di te con non, niente e mai."
+    },
+    "pt": {
+     "t": "Dizer não: a negação",
+     "g": "Formar frases negativas em italiano, também com dupla negação.",
+     "p": [
+      "Põe non logo antes do verbo: Non capisco, Non abito a Roma.",
+      "Como em português, há dupla negação: Non vedo niente (não vejo nada), Non vado mai.",
+      "Nessuno é ninguém: Non c'è nessuno; no início da frase o non cai: Nessuno parla."
+     ],
+     "q": "O que é que nunca fazes? Responde com Non... mai.",
+     "c": "Escreve três frases verdadeiras sobre ti com non, niente e mai."
+    },
+    "pt_BR": {
+     "t": "Dizendo não: a negação",
+     "g": "Formar frases negativas em italiano, também com dupla negação.",
+     "p": [
+      "Coloque non logo antes do verbo: Non capisco, Non abito a Roma.",
+      "Como em português, existe dupla negação: Non vedo niente (não vejo nada), Non vado mai.",
+      "Nessuno é ninguém: Non c'è nessuno; no começo da frase o non cai: Nessuno parla."
+     ],
+     "q": "O que você nunca faz? Responda com Non... mai.",
+     "c": "Escreva três frases verdadeiras sobre você com non, niente e mai."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "non",
+      "ex": "Non parlo tedesco."
+     },
+     {
+      "w": "niente",
+      "ex": "Non mangio niente a colazione."
+     },
+     {
+      "w": "mai",
+      "ex": "Non bevo mai il caffè la sera."
+     },
+     {
+      "w": "nessuno",
+      "ex": "Non conosco nessuno qui."
+     },
+     {
+      "w": "no, grazie",
+      "ex": "Vuoi un tè? No, grazie."
+     },
+     {
+      "w": "neanche",
+      "ex": "Non lo so neanch'io."
+     }
+    ],
+    "gram": "Non va prima del verbo. Con niente, mai, nessuno si usa la doppia negazione: non vedo niente, non esco mai."
+   }
+  },
+  {
+   "d": 26,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My family: la famiglia",
+     "g": "Talk about your family members in Italian.",
+     "p": [
+      "Parents are i genitori: la madre (mamma) and il padre (papà).",
+      "Siblings: il fratello, la sorella; grandparents: il nonno, la nonna, i nonni.",
+      "A masculine plural covers mixed groups: i fratelli can mean brothers and sisters."
+     ],
+     "q": "Com'è la tua famiglia? Do you have fratelli or sorelle?",
+     "c": "Draw a small family tree and label everyone in Italian."
+    },
+    "de": {
+     "t": "Meine Familie: la famiglia",
+     "g": "Du sprichst auf Italienisch über deine Familienmitglieder.",
+     "p": [
+      "Eltern sind i genitori: la madre (mamma) und il padre (papà).",
+      "Geschwister: il fratello, la sorella; Großeltern: il nonno, la nonna, i nonni.",
+      "Der männliche Plural gilt für gemischte Gruppen: i fratelli kann Geschwister heißen."
+     ],
+     "q": "Com'è la tua famiglia? Hast du fratelli oder sorelle?",
+     "c": "Zeichne einen kleinen Stammbaum und beschrifte alle auf Italienisch."
+    },
+    "es": {
+     "t": "Mi familia: la famiglia",
+     "g": "Habla de los miembros de tu familia en italiano.",
+     "p": [
+      "Los padres son i genitori: la madre (mamma) y il padre (papà). Ojo: parenti son los parientes.",
+      "Hermanos: il fratello, la sorella; abuelos: il nonno, la nonna, i nonni.",
+      "El plural masculino incluye grupos mixtos: i fratelli puede ser hermanos y hermanas."
+     ],
+     "q": "Com'è la tua famiglia? ¿Tienes fratelli o sorelle?",
+     "c": "Dibuja un pequeño árbol familiar y escribe el nombre de cada uno en italiano."
+    },
+    "fr": {
+     "t": "Ma famille : la famiglia",
+     "g": "Parler des membres de ta famille en italien.",
+     "p": [
+      "Les parents sont i genitori : la madre (mamma) et il padre (papà).",
+      "Frères et sœurs : il fratello, la sorella ; grands-parents : il nonno, la nonna, i nonni.",
+      "Le masculin pluriel couvre les groupes mixtes : i fratelli peut désigner frères et sœurs."
+     ],
+     "q": "Com'è la tua famiglia ? As-tu des fratelli ou des sorelle ?",
+     "c": "Dessine un petit arbre généalogique et nomme chacun en italien."
+    },
+    "it": {
+     "t": "La mia famiglia",
+     "g": "Impari a parlare dei membri della tua famiglia.",
+     "p": [
+      "I genitori sono la madre (mamma) e il padre (papà); i parenti sono tutta la famiglia allargata.",
+      "Fratelli e nonni: il fratello, la sorella; il nonno, la nonna, i nonni.",
+      "Il maschile plurale vale per i gruppi misti: i fratelli può indicare fratelli e sorelle."
+     ],
+     "q": "Com'è la tua famiglia? Hai fratelli o sorelle?",
+     "c": "Disegna un piccolo albero genealogico e scrivi i nomi in italiano."
+    },
+    "pt": {
+     "t": "A minha família: la famiglia",
+     "g": "Falar dos membros da tua família em italiano.",
+     "p": [
+      "Os pais são i genitori: la madre (mamma) e il padre (papà). Atenção: parenti são os parentes.",
+      "Irmãos: il fratello, la sorella; avós: il nonno, la nonna, i nonni.",
+      "O masculino plural inclui grupos mistos: i fratelli pode ser irmãos e irmãs."
+     ],
+     "q": "Com'è la tua famiglia? Tens fratelli ou sorelle?",
+     "c": "Desenha uma pequena árvore genealógica e escreve o nome de cada um em italiano."
+    },
+    "pt_BR": {
+     "t": "Minha família: la famiglia",
+     "g": "Falar dos membros da sua família em italiano.",
+     "p": [
+      "Os pais são i genitori: la madre (mamma) e il padre (papà). Atenção: parenti são os parentes.",
+      "Irmãos: il fratello, la sorella; avós: il nonno, la nonna, i nonni.",
+      "O masculino plural inclui grupos mistos: i fratelli pode ser irmãos e irmãs."
+     ],
+     "q": "Com'è la tua famiglia? Você tem fratelli ou sorelle?",
+     "c": "Desenhe uma pequena árvore genealógica e escreva o nome de cada um em italiano."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la madre / la mamma",
+      "ex": "Mia madre si chiama Elena."
+     },
+     {
+      "w": "il padre / il papà",
+      "ex": "Mio padre lavora in banca."
+     },
+     {
+      "w": "il fratello",
+      "ex": "Ho un fratello più grande."
+     },
+     {
+      "w": "la sorella",
+      "ex": "Mia sorella studia medicina."
+     },
+     {
+      "w": "i nonni",
+      "ex": "La domenica pranzo dai nonni."
+     },
+     {
+      "w": "i cugini",
+      "ex": "I miei cugini abitano a Bari."
+     }
+    ],
+    "gram": "I genitori sono madre e padre. Il plurale maschile comprende anche le donne: i fratelli può voler dire fratelli e sorelle."
+   }
+  },
+  {
+   "d": 27,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Possessives: mio, tuo, suo",
+     "g": "Say my, your and his/her in Italian, with the family exception.",
+     "p": [
+      "Possessives agree with the thing owned and take an article: il mio libro, la mia casa, i miei amici.",
+      "Suo means his, her and formal your: il suo telefono can be his or hers.",
+      "Family exception: no article with a singular relative, mia madre, but i miei fratelli."
+     ],
+     "q": "Tell me about il tuo migliore amico or la tua migliore amica in one sentence.",
+     "c": "Describe five things that are yours with il mio, la mia, i miei, le mie."
+    },
+    "de": {
+     "t": "Possessiva: mio, tuo, suo",
+     "g": "Du sagst mein, dein und sein/ihr auf Italienisch, inklusive Familien-Ausnahme.",
+     "p": [
+      "Possessiva richten sich nach dem Besitz und haben Artikel: il mio libro, la mia casa, i miei amici.",
+      "Suo heißt sein, ihr und förmlich Ihr: il suo telefono kann seins oder ihres sein.",
+      "Ausnahme Familie: kein Artikel bei einzelnen Verwandten, mia madre, aber i miei fratelli."
+     ],
+     "q": "Erzähl mir in einem Satz von il tuo migliore amico oder la tua migliore amica.",
+     "c": "Beschreib fünf Dinge, die dir gehören, mit il mio, la mia, i miei, le mie."
+    },
+    "es": {
+     "t": "Posesivos: mio, tuo, suo",
+     "g": "Di mi, tu y su en italiano, con la excepción de la familia.",
+     "p": [
+      "Concuerdan con lo poseído y llevan artículo: il mio libro, la mia casa, i miei amici.",
+      "Suo significa su de él, de ella y de usted: il suo telefono.",
+      "Excepción familiar: sin artículo con un pariente en singular, mia madre, pero i miei fratelli."
+     ],
+     "q": "Háblame de il tuo migliore amico o la tua migliore amica en una frase.",
+     "c": "Describe cinco cosas tuyas con il mio, la mia, i miei, le mie."
+    },
+    "fr": {
+     "t": "Possessifs : mio, tuo, suo",
+     "g": "Dire mon, ton, son en italien, avec l'exception de la famille.",
+     "p": [
+      "Ils s'accordent avec l'objet et prennent l'article : il mio libro, la mia casa, i miei amici.",
+      "Suo veut dire son ou sa, et votre en vouvoyant : il suo telefono.",
+      "Exception famille : pas d'article avec un parent au singulier, mia madre, mais i miei fratelli."
+     ],
+     "q": "Parle-moi de il tuo migliore amico ou la tua migliore amica en une phrase.",
+     "c": "Décris cinq choses à toi avec il mio, la mia, i miei, le mie."
+    },
+    "it": {
+     "t": "I possessivi: mio, tuo, suo",
+     "g": "Impari a usare i possessivi e l'eccezione dei nomi di parentela.",
+     "p": [
+      "I possessivi concordano con la cosa posseduta e vogliono l'articolo: il mio libro, la mia casa, i miei amici.",
+      "Suo vuol dire di lui, di lei e anche di Lei formale: il suo telefono.",
+      "Eccezione: niente articolo con un parente al singolare, mia madre, ma i miei fratelli."
+     ],
+     "q": "Parlami del tuo migliore amico o della tua migliore amica in una frase.",
+     "c": "Descrivi cinque cose tue con il mio, la mia, i miei, le mie."
+    },
+    "pt": {
+     "t": "Possessivos: mio, tuo, suo",
+     "g": "Dizer meu, teu e seu em italiano, com a exceção da família.",
+     "p": [
+      "Concordam com o objeto e levam artigo, como em português europeu: il mio libro, la mia casa.",
+      "Suo quer dizer dele, dela e o seu formal: il suo telefono.",
+      "Exceção da família: sem artigo com um parente no singular, mia madre, mas i miei fratelli."
+     ],
+     "q": "Fala-me de il tuo migliore amico ou la tua migliore amica numa frase.",
+     "c": "Descreve cinco coisas tuas com il mio, la mia, i miei, le mie."
+    },
+    "pt_BR": {
+     "t": "Possessivos: mio, tuo, suo",
+     "g": "Dizer meu, seu e dele/dela em italiano, com a exceção da família.",
+     "p": [
+      "Concordam com o objeto e levam artigo: il mio libro, la mia casa, i miei amici.",
+      "Suo quer dizer dele, dela e o seu formal: il suo telefono.",
+      "Exceção da família: sem artigo com um parente no singular, mia madre, mas i miei fratelli."
+     ],
+     "q": "Me fale de il tuo migliore amico ou la tua migliore amica numa frase.",
+     "c": "Descreva cinco coisas suas com il mio, la mia, i miei, le mie."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il mio libro",
+      "ex": "Il mio libro è nello zaino."
+     },
+     {
+      "w": "la tua casa",
+      "ex": "La tua casa è molto bella."
+     },
+     {
+      "w": "il suo amico",
+      "ex": "Il suo amico è di Genova."
+     },
+     {
+      "w": "mia madre",
+      "ex": "Mia madre cucina benissimo."
+     },
+     {
+      "w": "i miei genitori",
+      "ex": "I miei genitori sono in vacanza."
+     },
+     {
+      "w": "la nostra città",
+      "ex": "La nostra città è piccola ma bella."
+     }
+    ],
+    "gram": "I possessivi vogliono l'articolo: il mio libro. Con i parenti al singolare non si usa: mia madre, ma i miei fratelli e la loro madre."
+   }
+  },
+  {
+   "d": 28,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Colours and describing things",
+     "g": "Learn the colours and make adjectives agree with nouns.",
+     "p": [
+      "Main colours: rosso, bianco, nero, verde, giallo, azzurro, blu, grigio, marrone, rosa.",
+      "Adjectives usually go after the noun and agree: il libro rosso, la casa rossa, le case rosse.",
+      "Adjectives in -e have two forms (verde, verdi); blu, rosa and viola never change."
+     ],
+     "q": "What colour is your favourite piece of clothing? Answer in Italian.",
+     "c": "Describe five objects around you with their colour, paying attention to agreement."
+    },
+    "de": {
+     "t": "Farben und Dinge beschreiben",
+     "g": "Du lernst die Farben und passt Adjektive an die Nomen an.",
+     "p": [
+      "Hauptfarben: rosso, bianco, nero, verde, giallo, azzurro, blu, grigio, marrone, rosa.",
+      "Adjektive stehen meist nach dem Nomen und passen sich an: il libro rosso, la casa rossa, le case rosse.",
+      "Adjektive auf -e haben zwei Formen (verde, verdi); blu, rosa und viola ändern sich nie."
+     ],
+     "q": "Welche Farbe hat dein Lieblingskleidungsstück? Antworte auf Italienisch.",
+     "c": "Beschreib fünf Dinge um dich herum mit ihrer Farbe und achte auf die Endungen."
+    },
+    "es": {
+     "t": "Colores y descripciones",
+     "g": "Aprende los colores y haz que los adjetivos concuerden con los sustantivos.",
+     "p": [
+      "Colores básicos: rosso, bianco, nero, verde, giallo, azzurro, blu, grigio, marrone, rosa.",
+      "Los adjetivos suelen ir detrás y concuerdan: il libro rosso, la casa rossa, le case rosse.",
+      "Los adjetivos en -e tienen dos formas (verde, verdi); blu, rosa y viola no cambian."
+     ],
+     "q": "¿De qué color es tu prenda favorita? Responde en italiano.",
+     "c": "Describe cinco objetos a tu alrededor con su color, cuidando la concordancia."
+    },
+    "fr": {
+     "t": "Couleurs et descriptions",
+     "g": "Apprendre les couleurs et accorder les adjectifs avec les noms.",
+     "p": [
+      "Couleurs de base : rosso, bianco, nero, verde, giallo, azzurro, blu, grigio, marrone, rosa.",
+      "L'adjectif se place souvent après le nom et s'accorde : il libro rosso, la casa rossa, le case rosse.",
+      "Les adjectifs en -e ont deux formes (verde, verdi) ; blu, rosa et viola sont invariables."
+     ],
+     "q": "De quelle couleur est ton vêtement préféré ? Réponds en italien.",
+     "c": "Décris cinq objets autour de toi avec leur couleur, en soignant l'accord."
+    },
+    "it": {
+     "t": "I colori e le descrizioni",
+     "g": "Impari i colori e l'accordo degli aggettivi con i nomi.",
+     "p": [
+      "I colori principali: rosso, bianco, nero, verde, giallo, azzurro, blu, grigio, marrone, rosa.",
+      "L'aggettivo va di solito dopo il nome e concorda: il libro rosso, la casa rossa, le case rosse.",
+      "Gli aggettivi in -e hanno due forme (verde, verdi); blu, rosa e viola non cambiano mai."
+     ],
+     "q": "Di che colore è il tuo vestito preferito?",
+     "c": "Descrivi cinque oggetti intorno a te con il loro colore, attento all'accordo."
+    },
+    "pt": {
+     "t": "Cores e descrições",
+     "g": "Aprender as cores e fazer concordar os adjetivos com os nomes.",
+     "p": [
+      "Cores básicas: rosso, bianco, nero, verde, giallo, azzurro, blu, grigio, marrone, rosa.",
+      "Os adjetivos vêm normalmente depois e concordam: il libro rosso, la casa rossa, le case rosse.",
+      "Os adjetivos em -e têm duas formas (verde, verdi); blu, rosa e viola nunca mudam."
+     ],
+     "q": "De que cor é a tua peça de roupa preferida? Responde em italiano.",
+     "c": "Descreve cinco objetos à tua volta com a cor, com atenção à concordância."
+    },
+    "pt_BR": {
+     "t": "Cores e descrições",
+     "g": "Aprender as cores e fazer os adjetivos concordarem com os substantivos.",
+     "p": [
+      "Cores básicas: rosso, bianco, nero, verde, giallo, azzurro, blu, grigio, marrone, rosa.",
+      "Os adjetivos costumam vir depois e concordam: il libro rosso, la casa rossa, le case rosse.",
+      "Os adjetivos em -e têm duas formas (verde, verdi); blu, rosa e viola nunca mudam."
+     ],
+     "q": "De que cor é sua roupa preferida? Responda em italiano.",
+     "c": "Descreva cinco objetos ao seu redor com a cor, prestando atenção à concordância."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "rosso",
+      "ex": "Ho una macchina rossa."
+     },
+     {
+      "w": "bianco",
+      "ex": "Il vestito bianco è elegante."
+     },
+     {
+      "w": "verde",
+      "ex": "Mi piacciono gli occhi verdi."
+     },
+     {
+      "w": "azzurro",
+      "ex": "Il cielo è azzurro oggi."
+     },
+     {
+      "w": "giallo",
+      "ex": "Le banane sono gialle."
+     },
+     {
+      "w": "nero",
+      "ex": "Porto sempre scarpe nere."
+     }
+    ],
+    "gram": "Gli aggettivi concordano con il nome e vanno di solito dopo: casa rossa, case rosse. In -e: verde, verdi. Blu, rosa, viola non cambiano."
+   }
+  },
+  {
+   "d": 29,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing people",
+     "g": "Describe what people look like and what they are like.",
+     "p": [
+      "Use essere for appearance and character: È alto, È simpatica, Sono gentili.",
+      "Use avere for hair and eyes: Ha i capelli ricci, Ha gli occhi castani.",
+      "Watch the plurals: simpatico becomes simpatici, simpatica becomes simpatiche."
+     ],
+     "q": "Describe your best friend to me in two Italian sentences.",
+     "c": "Describe a famous person in Italian with one sentence for looks and one for character."
+    },
+    "de": {
+     "t": "Menschen beschreiben",
+     "g": "Du beschreibst, wie Menschen aussehen und wie sie sind.",
+     "p": [
+      "Essere für Aussehen und Charakter: È alto, È simpatica, Sono gentili.",
+      "Avere für Haare und Augen: Ha i capelli ricci, Ha gli occhi castani.",
+      "Achte auf den Plural: simpatico wird simpatici, simpatica wird simpatiche."
+     ],
+     "q": "Beschreib mir deinen besten Freund oder deine beste Freundin in zwei italienischen Sätzen.",
+     "c": "Beschreib eine berühmte Person auf Italienisch: ein Satz zum Aussehen, einer zum Charakter."
+    },
+    "es": {
+     "t": "Describir a las personas",
+     "g": "Describe cómo son las personas por fuera y por dentro.",
+     "p": [
+      "Usa essere para el aspecto y el carácter: È alto, È simpatica, Sono gentili.",
+      "Usa avere para pelo y ojos: Ha i capelli ricci, Ha gli occhi castani.",
+      "Cuidado con el plural: simpatico pasa a simpatici, simpatica a simpatiche."
+     ],
+     "q": "Descríbeme a tu mejor amigo o amiga en dos frases en italiano.",
+     "c": "Describe a un famoso en italiano: una frase para el físico y otra para el carácter."
+    },
+    "fr": {
+     "t": "Décrire les gens",
+     "g": "Décrire l'apparence et le caractère des personnes.",
+     "p": [
+      "Essere pour l'apparence et le caractère : È alto, È simpatica, Sono gentili.",
+      "Avere pour les cheveux et les yeux : Ha i capelli ricci, Ha gli occhi castani.",
+      "Attention au pluriel : simpatico devient simpatici, simpatica devient simpatiche."
+     ],
+     "q": "Décris-moi ton meilleur ami ou ta meilleure amie en deux phrases italiennes.",
+     "c": "Décris une célébrité en italien : une phrase pour le physique, une pour le caractère."
+    },
+    "it": {
+     "t": "Descrivere le persone",
+     "g": "Impari a descrivere l'aspetto e il carattere delle persone.",
+     "p": [
+      "Usa essere per aspetto e carattere: È alto, È simpatica, Sono gentili.",
+      "Usa avere per capelli e occhi: Ha i capelli ricci, Ha gli occhi castani.",
+      "Attenzione al plurale: simpatico diventa simpatici, simpatica diventa simpatiche."
+     ],
+     "q": "Descrivimi il tuo migliore amico o la tua migliore amica in due frasi.",
+     "c": "Descrivi una persona famosa: una frase per l'aspetto e una per il carattere."
+    },
+    "pt": {
+     "t": "Descrever pessoas",
+     "g": "Descrever o aspeto e o feitio das pessoas.",
+     "p": [
+      "Usa essere para o aspeto e o carácter: È alto, È simpatica, Sono gentili.",
+      "Usa avere para cabelo e olhos: Ha i capelli ricci, Ha gli occhi castani.",
+      "Atenção ao plural: simpatico passa a simpatici, simpatica a simpatiche."
+     ],
+     "q": "Descreve-me o teu melhor amigo ou a tua melhor amiga em duas frases em italiano.",
+     "c": "Descreve uma pessoa famosa em italiano: uma frase para o aspeto e outra para o feitio."
+    },
+    "pt_BR": {
+     "t": "Descrevendo pessoas",
+     "g": "Descrever a aparência e a personalidade das pessoas.",
+     "p": [
+      "Use essere para aparência e personalidade: È alto, È simpatica, Sono gentili.",
+      "Use avere para cabelo e olhos: Ha i capelli ricci, Ha gli occhi castani.",
+      "Atenção ao plural: simpatico vira simpatici, simpatica vira simpatiche."
+     ],
+     "q": "Descreva seu melhor amigo ou sua melhor amiga em duas frases em italiano.",
+     "c": "Descreva uma pessoa famosa em italiano: uma frase para a aparência e outra para a personalidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "alto / basso",
+      "ex": "Mio fratello è alto, io sono bassa."
+     },
+     {
+      "w": "simpatico",
+      "ex": "Il tuo amico è molto simpatico."
+     },
+     {
+      "w": "gentile",
+      "ex": "La professoressa è gentile."
+     },
+     {
+      "w": "i capelli",
+      "ex": "Ha i capelli castani e lunghi."
+     },
+     {
+      "w": "gli occhi",
+      "ex": "Lei ha gli occhi azzurri."
+     },
+     {
+      "w": "allegro",
+      "ex": "Marta è una ragazza allegra."
+     }
+    ],
+    "gram": "Per descrivere si usa essere + aggettivo (è alto) e avere per capelli e occhi (ha gli occhi verdi). Simpatico al plurale: simpatici."
+   }
+  },
+  {
+   "d": 30,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: my first month of Italian",
+     "g": "Look back at your first month and connect everything you have learned.",
+     "p": [
+      "Greetings and introductions: ciao, buongiorno, mi chiamo, piacere, come stai?",
+      "Essere and avere, articles il, lo, la, un, una, numbers to 100 and telling the time.",
+      "The present tense of -are, -ere and -ire verbs, questions and negation with non."
+     ],
+     "q": "Introduce yourself to me in Italian with as many details as you can: name, city, age, family.",
+     "c": "Write a short paragraph about yourself in Italian using at least five verbs from this month."
+    },
+    "de": {
+     "t": "Rückblick: mein erster Monat Italienisch",
+     "g": "Du blickst auf deinen ersten Monat zurück und verbindest alles Gelernte.",
+     "p": [
+      "Grüße und Vorstellung: ciao, buongiorno, mi chiamo, piacere, come stai?",
+      "Essere und avere, Artikel il, lo, la, un, una, Zahlen bis 100 und die Uhrzeit.",
+      "Das Präsens der Verben auf -are, -ere und -ire, Fragen und Verneinung mit non."
+     ],
+     "q": "Stell dich mir auf Italienisch mit möglichst vielen Details vor: Name, Stadt, Alter, Familie.",
+     "c": "Schreib einen kurzen Absatz über dich auf Italienisch mit mindestens fünf Verben aus diesem Monat."
+    },
+    "es": {
+     "t": "Repaso: mi primer mes de italiano",
+     "g": "Repasa tu primer mes y conecta todo lo que has aprendido.",
+     "p": [
+      "Saludos y presentaciones: ciao, buongiorno, mi chiamo, piacere, come stai?",
+      "Essere y avere, artículos il, lo, la, un, una, números hasta 100 y la hora.",
+      "El presente de los verbos en -are, -ere e -ire, las preguntas y la negación con non."
+     ],
+     "q": "Preséntate en italiano con todos los detalles que puedas: nombre, ciudad, edad, familia.",
+     "c": "Escribe un párrafo corto sobre ti en italiano con al menos cinco verbos de este mes."
+    },
+    "fr": {
+     "t": "Révision : mon premier mois d'italien",
+     "g": "Revenir sur ton premier mois et relier tout ce que tu as appris.",
+     "p": [
+      "Salutations et présentations : ciao, buongiorno, mi chiamo, piacere, come stai ?",
+      "Essere et avere, articles il, lo, la, un, una, nombres jusqu'à 100 et l'heure.",
+      "Le présent des verbes en -are, -ere et -ire, les questions et la négation avec non."
+     ],
+     "q": "Présente-toi en italien avec un maximum de détails : prénom, ville, âge, famille.",
+     "c": "Écris un court paragraphe sur toi en italien avec au moins cinq verbes de ce mois."
+    },
+    "it": {
+     "t": "Ripasso: il mio primo mese di italiano",
+     "g": "Ripassi il primo mese e metti insieme tutto quello che hai imparato.",
+     "p": [
+      "Saluti e presentazioni: ciao, buongiorno, mi chiamo, piacere, come stai?",
+      "Essere e avere, articoli il, lo, la, un, una, numeri fino a 100 e l'ora.",
+      "Il presente dei verbi in -are, -ere e -ire, le domande e la negazione con non."
+     ],
+     "q": "Presentati in italiano con più dettagli possibili: nome, città, età, famiglia.",
+     "c": "Scrivi un breve paragrafo su di te con almeno cinque verbi di questo mese."
+    },
+    "pt": {
+     "t": "Revisão: o meu primeiro mês de italiano",
+     "g": "Rever o primeiro mês e ligar tudo o que aprendeste.",
+     "p": [
+      "Cumprimentos e apresentações: ciao, buongiorno, mi chiamo, piacere, come stai?",
+      "Essere e avere, artigos il, lo, la, un, una, números até 100 e as horas.",
+      "O presente dos verbos em -are, -ere e -ire, as perguntas e a negação com non."
+     ],
+     "q": "Apresenta-te em italiano com o máximo de detalhes: nome, cidade, idade, família.",
+     "c": "Escreve um parágrafo curto sobre ti em italiano com pelo menos cinco verbos deste mês."
+    },
+    "pt_BR": {
+     "t": "Revisão: meu primeiro mês de italiano",
+     "g": "Revisar o primeiro mês e conectar tudo o que você aprendeu.",
+     "p": [
+      "Cumprimentos e apresentações: ciao, buongiorno, mi chiamo, piacere, come stai?",
+      "Essere e avere, artigos il, lo, la, un, una, números até 100 e as horas.",
+      "O presente dos verbos em -are, -ere e -ire, as perguntas e a negação com non."
+     ],
+     "q": "Se apresente em italiano com o máximo de detalhes: nome, cidade, idade, família.",
+     "c": "Escreva um parágrafo curto sobre você em italiano com pelo menos cinco verbos deste mês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ripassare",
+      "ex": "Oggi ripassiamo tutto insieme."
+     },
+     {
+      "w": "ricordare",
+      "ex": "Ricordi come si dice grazie?"
+     },
+     {
+      "w": "facile",
+      "ex": "L'italiano è più facile del previsto!"
+     },
+     {
+      "w": "difficile",
+      "ex": "Gli articoli sono un po' difficili."
+     },
+     {
+      "w": "il mese",
+      "ex": "Studio italiano da un mese."
+     },
+     {
+      "w": "bravo / brava",
+      "ex": "Brava! Hai fatto un ottimo lavoro."
+     }
+    ],
+    "gram": "Ripasso: essere (sono, sei, è) e avere (ho, hai, ha), articoli il/lo/la/un/una e presente in -are, -ere, -ire. Studio da un mese."
+   }
+  }
+ ]
+}

@@ -1,0 +1,2195 @@
+{
+ "topic": "crafts",
+ "days": [
+  {
+   "d": 1,
+   "lv": "beginner",
+   "t": "Welcome to the world of crafts",
+   "f": "What handmade crafts are, why people love them and how this 365-day path builds skills one small step at a time"
+  },
+  {
+   "d": 2,
+   "lv": "beginner",
+   "t": "The big craft families",
+   "f": "Fibre, paper, clay, wood, jewellery and mixed media: a quick tour of what each craft family involves"
+  },
+  {
+   "d": 3,
+   "lv": "beginner",
+   "t": "Why making by hand feels good",
+   "f": "Focus, patience and the joy of finishing: what makers around the world say crafting gives them"
+  },
+  {
+   "d": 4,
+   "lv": "beginner",
+   "t": "Setting up a small craft corner",
+   "f": "A table, good light, storage boxes and a safe spot where unfinished projects can rest"
+  },
+  {
+   "d": 5,
+   "lv": "beginner",
+   "t": "Your basic craft tool kit",
+   "f": "Scissors, craft knife, cutting mat, ruler, glue, needles and pencils: the tools almost every craft uses"
+  },
+  {
+   "d": 6,
+   "lv": "beginner",
+   "t": "Craft safety basics",
+   "f": "Cutting away from yourself, ventilation, capping blades and working safely with kids or pets nearby"
+  },
+  {
+   "d": 7,
+   "lv": "beginner",
+   "t": "Choosing glues and adhesives",
+   "f": "PVA, glue sticks, tacky glue, hot glue and tape: what each one holds best and when to use it"
+  },
+  {
+   "d": 8,
+   "lv": "beginner",
+   "t": "Paper types for crafting",
+   "f": "Copy paper, cardstock, kraft, tissue and watercolour paper, and how weight and grain change results"
+  },
+  {
+   "d": 9,
+   "lv": "beginner",
+   "t": "Folding paper cleanly",
+   "f": "Lining up corners, creasing with a bone folder and why folding with the grain gives crisp edges"
+  },
+  {
+   "d": 10,
+   "lv": "beginner",
+   "t": "Your first origami models",
+   "f": "Classic beginner models like the cup and the boat, and how to read simple origami diagrams"
+  },
+  {
+   "d": 11,
+   "lv": "beginner",
+   "t": "Origami bases explained",
+   "f": "The square, triangle and kite bases that thousands of origami designs start from"
+  },
+  {
+   "d": 12,
+   "lv": "beginner",
+   "t": "The traditional paper crane",
+   "f": "Folding the crane step by step and why it became a symbol of good wishes in Japan"
+  },
+  {
+   "d": 13,
+   "lv": "beginner",
+   "t": "Cutting and scoring with precision",
+   "f": "Straight cuts with ruler and knife, scoring fold lines and keeping your cutting mat in good shape"
+  },
+  {
+   "d": 14,
+   "lv": "beginner",
+   "t": "Making a greeting card",
+   "f": "Planning a layout, folding a card base and adding layers for a handmade card someone will keep"
+  },
+  {
+   "d": 15,
+   "lv": "beginner",
+   "t": "Paper collage techniques",
+   "f": "Tearing versus cutting, layering colours and textures and arranging pieces before gluing"
+  },
+  {
+   "d": 16,
+   "lv": "beginner",
+   "t": "Quilling basics",
+   "f": "Rolling paper strips into coils, teardrops and scrolls to create delicate decorative shapes"
+  },
+  {
+   "d": 17,
+   "lv": "beginner",
+   "t": "Paper beads from old magazines",
+   "f": "Rolling colourful paper strips into beads and sealing them for necklaces and bracelets"
+  },
+  {
+   "d": 18,
+   "lv": "beginner",
+   "t": "Decoupage made simple",
+   "f": "Gluing paper cutouts onto boxes or jars and sealing them for a smooth, varnished look"
+  },
+  {
+   "d": 19,
+   "lv": "beginner",
+   "t": "Papel picado from Mexico",
+   "f": "The cut tissue paper banners of Mexican celebrations and how to fold and cut a simple design"
+  },
+  {
+   "d": 20,
+   "lv": "beginner",
+   "t": "Pop-up cards",
+   "f": "Simple mechanisms like the box fold and the V-fold that make a card jump to life when opened"
+  },
+  {
+   "d": 21,
+   "lv": "beginner",
+   "t": "Meet the yarn",
+   "f": "Fibres like wool, cotton and acrylic, how yarn is plied and why texture matters for a project"
+  },
+  {
+   "d": 22,
+   "lv": "beginner",
+   "t": "Reading a yarn label",
+   "f": "Fibre content, weight, length, needle size, care symbols and dye lot numbers decoded"
+  },
+  {
+   "d": 23,
+   "lv": "beginner",
+   "t": "Yarn weights from lace to bulky",
+   "f": "How yarn thickness is named and how it changes needle size and the look of the fabric"
+  },
+  {
+   "d": 24,
+   "lv": "beginner",
+   "t": "Knitting needles explained",
+   "f": "Straight, circular and double-pointed needles, their materials and how sizes are marked"
+  },
+  {
+   "d": 25,
+   "lv": "beginner",
+   "t": "Making a slip knot",
+   "f": "The first loop of almost every knitting and crochet project, tied quickly and evenly"
+  },
+  {
+   "d": 26,
+   "lv": "beginner",
+   "t": "Casting on for knitting",
+   "f": "The long-tail cast-on step by step and how to keep stitches neither too tight nor too loose"
+  },
+  {
+   "d": 27,
+   "lv": "beginner",
+   "t": "The knit stitch",
+   "f": "Insert, wrap, pull through and slip off: the simple movement that builds all knitting"
+  },
+  {
+   "d": 28,
+   "lv": "beginner",
+   "t": "Garter stitch fabric",
+   "f": "Knitting every row to create a squishy, reversible fabric that lies nicely flat"
+  },
+  {
+   "d": 29,
+   "lv": "beginner",
+   "t": "Counting rows and stitches",
+   "f": "Recognising stitches on the needle and ridges on the fabric so you always know where you are"
+  },
+  {
+   "d": 30,
+   "lv": "beginner",
+   "t": "Review: paper and first stitches",
+   "f": "A relaxed look back at paper crafts and first knitting steps, with a mini project combining both"
+  },
+  {
+   "d": 31,
+   "lv": "beginner",
+   "t": "The purl stitch",
+   "f": "Working purl as the mirror of knit and moving the yarn to the front without tangles"
+  },
+  {
+   "d": 32,
+   "lv": "beginner",
+   "t": "Stockinette stitch",
+   "f": "Alternating knit and purl rows for the smooth V fabric, and why its edges like to curl"
+  },
+  {
+   "d": 33,
+   "lv": "beginner",
+   "t": "Binding off",
+   "f": "Finishing a piece with a neat bind-off edge that stretches as much as the fabric itself"
+  },
+  {
+   "d": 34,
+   "lv": "beginner",
+   "t": "Fixing dropped stitches",
+   "f": "Picking up a dropped stitch with a crochet hook and laddering down to fix mistakes calmly"
+  },
+  {
+   "d": 35,
+   "lv": "beginner",
+   "t": "Weaving in ends",
+   "f": "Hiding yarn tails invisibly so your knitting looks tidy and never unravels"
+  },
+  {
+   "d": 36,
+   "lv": "beginner",
+   "t": "Knitting a gauge swatch",
+   "f": "Why a small test square tells you whether a project will come out the right size"
+  },
+  {
+   "d": 37,
+   "lv": "beginner",
+   "t": "Your first scarf project",
+   "f": "Choosing yarn and stitch, planning the length and keeping edges neat over a whole scarf"
+  },
+  {
+   "d": 38,
+   "lv": "beginner",
+   "t": "Meet the crochet hook",
+   "f": "Hook sizes, shapes and comfortable ways to hold the hook and the yarn"
+  },
+  {
+   "d": 39,
+   "lv": "beginner",
+   "t": "Crochet chain stitch",
+   "f": "Making an even foundation chain and counting chains correctly"
+  },
+  {
+   "d": 40,
+   "lv": "beginner",
+   "t": "Single crochet",
+   "f": "Working rows of single crochet with turning chains for a dense, sturdy fabric"
+  },
+  {
+   "d": 41,
+   "lv": "beginner",
+   "t": "Double crochet",
+   "f": "Taller stitches that grow fabric quickly and form the base of many patterns"
+  },
+  {
+   "d": 42,
+   "lv": "beginner",
+   "t": "Crochet abbreviations",
+   "f": "Reading ch, sc, dc and sl st, and noticing the differences between US and UK terms"
+  },
+  {
+   "d": 43,
+   "lv": "beginner",
+   "t": "The granny square",
+   "f": "The classic crochet square worked in rounds, and why makers everywhere love it"
+  },
+  {
+   "d": 44,
+   "lv": "beginner",
+   "t": "Joining granny squares",
+   "f": "Slip stitch, whip stitch and join-as-you-go methods for blankets and bags"
+  },
+  {
+   "d": 45,
+   "lv": "beginner",
+   "t": "Threads and needles for embroidery",
+   "f": "Stranded cotton, pearl cotton, needle types and how many strands to stitch with"
+  },
+  {
+   "d": 46,
+   "lv": "beginner",
+   "t": "Using an embroidery hoop",
+   "f": "Mounting fabric drum-tight and choosing a good fabric for stitching"
+  },
+  {
+   "d": 47,
+   "lv": "beginner",
+   "t": "Running stitch and backstitch",
+   "f": "Two foundational line stitches for outlines, lettering and simple designs"
+  },
+  {
+   "d": 48,
+   "lv": "beginner",
+   "t": "Stem and split stitch",
+   "f": "Smooth curved lines for stems, vines and flowing outlines"
+  },
+  {
+   "d": 49,
+   "lv": "beginner",
+   "t": "Satin stitch",
+   "f": "Filling small shapes with smooth parallel stitches while keeping the edges crisp"
+  },
+  {
+   "d": 50,
+   "lv": "beginner",
+   "t": "French knots and lazy daisies",
+   "f": "Tiny raised dots and petal loops that bring flowers and texture to embroidery"
+  },
+  {
+   "d": 51,
+   "lv": "beginner",
+   "t": "Transferring a design to fabric",
+   "f": "Tracing against a window or light pad, water-soluble pens and transfer paper"
+  },
+  {
+   "d": 52,
+   "lv": "beginner",
+   "t": "A small embroidery sampler",
+   "f": "Combining every stitch learned so far into one hoop you can proudly display"
+  },
+  {
+   "d": 53,
+   "lv": "beginner",
+   "t": "Hand sewing essentials",
+   "f": "Threading a needle, tying a knot and choosing thread for different fabrics"
+  },
+  {
+   "d": 54,
+   "lv": "beginner",
+   "t": "Sewing on a button",
+   "f": "Attaching buttons firmly with a thread shank so they last for years"
+  },
+  {
+   "d": 55,
+   "lv": "beginner",
+   "t": "Basic hand stitches for mending",
+   "f": "Whip stitch, slip stitch and ladder stitch for seams and nearly invisible repairs"
+  },
+  {
+   "d": 56,
+   "lv": "beginner",
+   "t": "Visible mending",
+   "f": "Turning repairs into decoration with patches and darning, a growing craft movement"
+  },
+  {
+   "d": 57,
+   "lv": "beginner",
+   "t": "A simple hand-sewn tote bag",
+   "f": "Cutting, pinning and stitching a sturdy everyday bag from one piece of fabric"
+  },
+  {
+   "d": 58,
+   "lv": "beginner",
+   "t": "Felt crafts",
+   "f": "Why felt does not fray and how to sew simple felt ornaments, shapes and badges"
+  },
+  {
+   "d": 59,
+   "lv": "beginner",
+   "t": "Pompoms and tassels",
+   "f": "Making fluffy pompoms and tidy tassels to decorate hats, bags and gifts"
+  },
+  {
+   "d": 60,
+   "lv": "beginner",
+   "t": "Review: yarn, thread and needle",
+   "f": "Looking back at knitting, crochet, embroidery and sewing basics with a combined mini challenge"
+  },
+  {
+   "d": 61,
+   "lv": "beginner",
+   "t": "Introduction to clay",
+   "f": "Earthenware, stoneware and porcelain, plus air-dry and polymer clays for working at home"
+  },
+  {
+   "d": 62,
+   "lv": "beginner",
+   "t": "Setting up for clay at home",
+   "f": "Protecting surfaces, choosing basic tools and keeping clay moist between sessions"
+  },
+  {
+   "d": 63,
+   "lv": "beginner",
+   "t": "Wedging clay",
+   "f": "Kneading clay to remove air bubbles and make it even before you start building"
+  },
+  {
+   "d": 64,
+   "lv": "beginner",
+   "t": "Pinch pots",
+   "f": "Shaping a small bowl with just thumbs and fingers, one of the oldest pottery methods"
+  },
+  {
+   "d": 65,
+   "lv": "beginner",
+   "t": "Coil building",
+   "f": "Rolling even coils and stacking them into pots, a technique used by cultures all over the world"
+  },
+  {
+   "d": 66,
+   "lv": "beginner",
+   "t": "Slab building basics",
+   "f": "Rolling slabs to an even thickness and cutting shapes for flat-sided pieces"
+  },
+  {
+   "d": 67,
+   "lv": "beginner",
+   "t": "Score and slip joins",
+   "f": "Roughening and wetting surfaces so clay pieces stay joined as they dry"
+  },
+  {
+   "d": 68,
+   "lv": "beginner",
+   "t": "Clay drying stages",
+   "f": "Wet, leather-hard and bone-dry clay, and what you can do at each stage"
+  },
+  {
+   "d": 69,
+   "lv": "beginner",
+   "t": "Air-dry clay projects",
+   "f": "Trinket dishes and small figures made without a kiln, and how to seal them afterwards"
+  },
+  {
+   "d": 70,
+   "lv": "beginner",
+   "t": "Polymer clay basics",
+   "f": "Conditioning, mixing colours and baking polymer clay safely in a home oven"
+  },
+  {
+   "d": 71,
+   "lv": "beginner",
+   "t": "Polymer clay canes",
+   "f": "Building patterned canes and slicing them for beads and decorations"
+  },
+  {
+   "d": 72,
+   "lv": "beginner",
+   "t": "Simple texture on clay",
+   "f": "Pressing leaves, lace and stamps into clay to create beautiful surface patterns"
+  },
+  {
+   "d": 73,
+   "lv": "beginner",
+   "t": "Painting home clay pieces",
+   "f": "Acrylic paints, sealers and varnishes for finished air-dry and polymer pieces"
+  },
+  {
+   "d": 74,
+   "lv": "beginner",
+   "t": "Beading basics",
+   "f": "Seed beads, crimp beads, wire and stringing materials for your first jewellery"
+  },
+  {
+   "d": 75,
+   "lv": "beginner",
+   "t": "Stringing a bracelet",
+   "f": "Planning a bead pattern and finishing the bracelet securely with crimps or knots"
+  },
+  {
+   "d": 76,
+   "lv": "beginner",
+   "t": "Basic jewellery pliers",
+   "f": "Round-nose, flat-nose and cutters, and how to open jump rings the right way"
+  },
+  {
+   "d": 77,
+   "lv": "beginner",
+   "t": "Making simple earrings",
+   "f": "Using eye pins, head pins and loops to make dangling earrings"
+  },
+  {
+   "d": 78,
+   "lv": "beginner",
+   "t": "Friendship bracelets",
+   "f": "Forward and backward knots for striped and chevron bracelets to share with friends"
+  },
+  {
+   "d": 79,
+   "lv": "beginner",
+   "t": "Macramé knots",
+   "f": "Lark's head, square knot and half hitch, the three core knots of macramé"
+  },
+  {
+   "d": 80,
+   "lv": "beginner",
+   "t": "A macramé keychain",
+   "f": "Combining the basic knots into a small, quick and satisfying macramé project"
+  },
+  {
+   "d": 81,
+   "lv": "beginner",
+   "t": "Upcycling glass jars",
+   "f": "Cleaning, painting and decorating jars as vases, lanterns and storage"
+  },
+  {
+   "d": 82,
+   "lv": "beginner",
+   "t": "Crafts from cardboard",
+   "f": "Turning boxes and tubes into organisers, toys and small sculptures"
+  },
+  {
+   "d": 83,
+   "lv": "beginner",
+   "t": "Fabric scraps into treasures",
+   "f": "Small projects that use leftover fabric so nothing goes to waste"
+  },
+  {
+   "d": 84,
+   "lv": "beginner",
+   "t": "Stamping with potatoes and erasers",
+   "f": "Carving simple stamps from everyday items and printing repeating patterns"
+  },
+  {
+   "d": 85,
+   "lv": "beginner",
+   "t": "Painting on wood",
+   "f": "Sanding, priming and painting small wooden objects for a lasting finish"
+  },
+  {
+   "d": 86,
+   "lv": "beginner",
+   "t": "Simple weaving on cardboard",
+   "f": "Making a cardboard loom and weaving a small, colourful sampler"
+  },
+  {
+   "d": 87,
+   "lv": "beginner",
+   "t": "Pressed and dried flower crafts",
+   "f": "Pressing and drying flowers for cards, bookmarks and small frames"
+  },
+  {
+   "d": 88,
+   "lv": "beginner",
+   "t": "Making a bookmark",
+   "f": "A quick project mixing paper, ribbon and decoration that makes a lovely gift"
+  },
+  {
+   "d": 89,
+   "lv": "beginner",
+   "t": "Crafts from natural materials",
+   "f": "Pine cones, shells, twigs and stones turned into decorations you can make outdoors"
+  },
+  {
+   "d": 90,
+   "lv": "beginner",
+   "t": "Review: clay, beads and upcycling",
+   "f": "Looking back at clay, jewellery and reuse projects, plus a small mixed-media challenge"
+  },
+  {
+   "d": 91,
+   "lv": "beginner",
+   "t": "Colour basics for crafters",
+   "f": "The colour wheel, complementary colours and choosing a pleasing palette for a project"
+  },
+  {
+   "d": 92,
+   "lv": "beginner",
+   "t": "Pattern and repetition",
+   "f": "Stripes, checks, dots and motifs, and how repetition creates rhythm in handmade work"
+  },
+  {
+   "d": 93,
+   "lv": "beginner",
+   "t": "Keeping a craft sketchbook",
+   "f": "Recording ideas, swatches, measurements and notes for future projects"
+  },
+  {
+   "d": 94,
+   "lv": "beginner",
+   "t": "Planning a project",
+   "f": "Estimating materials, time and steps before you start so projects actually get finished"
+  },
+  {
+   "d": 95,
+   "lv": "beginner",
+   "t": "Buying materials wisely",
+   "f": "Starting small, reusing what you have and choosing quality where it matters most"
+  },
+  {
+   "d": 96,
+   "lv": "beginner",
+   "t": "Organising your craft stash",
+   "f": "Sorting yarn, fabric and paper so you can find things and see what you already own"
+  },
+  {
+   "d": 97,
+   "lv": "beginner",
+   "t": "Following written instructions",
+   "f": "Reading a pattern from start to finish before beginning and marking your place as you go"
+  },
+  {
+   "d": 98,
+   "lv": "beginner",
+   "t": "Learning from mistakes",
+   "f": "Why every maker unravels and redoes work, and how to see errors as useful lessons"
+  },
+  {
+   "d": 99,
+   "lv": "beginner",
+   "t": "Knitting a simple flat hat",
+   "f": "Knitting a rectangle with a ribbed edge and seaming it into a cosy hat"
+  },
+  {
+   "d": 100,
+   "lv": "beginner",
+   "t": "Ribbing: knit one, purl one",
+   "f": "Alternating stitches for stretchy edges on cuffs, hats and collars"
+  },
+  {
+   "d": 101,
+   "lv": "beginner",
+   "t": "Changing colours in knitting",
+   "f": "Joining a new colour at the start of a row for clean, cheerful stripes"
+  },
+  {
+   "d": 102,
+   "lv": "beginner",
+   "t": "Crochet in rounds",
+   "f": "Working in circles from a magic ring for coasters and flat discs"
+  },
+  {
+   "d": 103,
+   "lv": "beginner",
+   "t": "A crochet coaster set",
+   "f": "Finishing a matching set of coasters and blocking them flat"
+  },
+  {
+   "d": 104,
+   "lv": "beginner",
+   "t": "Half double and treble crochet",
+   "f": "Two more stitch heights and when each one suits a project"
+  },
+  {
+   "d": 105,
+   "lv": "beginner",
+   "t": "Cross-stitch basics",
+   "f": "Aida fabric, counted designs and making neat, even crosses"
+  },
+  {
+   "d": 106,
+   "lv": "beginner",
+   "t": "Reading a cross-stitch chart",
+   "f": "Symbols, colour keys and finding the centre of your design"
+  },
+  {
+   "d": 107,
+   "lv": "beginner",
+   "t": "Embroidered lettering",
+   "f": "Stitching names and words with backstitch and split stitch"
+  },
+  {
+   "d": 108,
+   "lv": "beginner",
+   "t": "Sewing a pin cushion",
+   "f": "A small stuffed project that teaches seams, turning and closing a gap neatly"
+  },
+  {
+   "d": 109,
+   "lv": "beginner",
+   "t": "Patchwork by hand",
+   "f": "Cutting squares accurately and joining them with even hand-sewn seams"
+  },
+  {
+   "d": 110,
+   "lv": "beginner",
+   "t": "English paper piecing",
+   "f": "Hexagons folded over paper templates and stitched together into rosettes"
+  },
+  {
+   "d": 111,
+   "lv": "beginner",
+   "t": "A simple soft toy",
+   "f": "Sewing a basic stuffed animal from felt or fleece with child-safe features"
+  },
+  {
+   "d": 112,
+   "lv": "beginner",
+   "t": "Paper lanterns",
+   "f": "Folding and cutting paper into glowing lanterns lit safely with LED lights"
+  },
+  {
+   "d": 113,
+   "lv": "beginner",
+   "t": "Handmade envelopes and stationery",
+   "f": "Using templates, folding and decorating paper for letters and notes"
+  },
+  {
+   "d": 114,
+   "lv": "beginner",
+   "t": "Bookbinding: the pamphlet stitch",
+   "f": "Sewing a simple notebook with a three-hole pamphlet stitch"
+  },
+  {
+   "d": 115,
+   "lv": "beginner",
+   "t": "Marbling paper",
+   "f": "Floating colours on water or shaving foam to create swirled, one-of-a-kind paper"
+  },
+  {
+   "d": 116,
+   "lv": "beginner",
+   "t": "Tie-dye basics",
+   "f": "Folding, binding and dyeing cotton for spirals, stripes and bursts of colour"
+  },
+  {
+   "d": 117,
+   "lv": "beginner",
+   "t": "Fabric painting",
+   "f": "Using fabric paints and stencils to decorate tote bags and T-shirts"
+  },
+  {
+   "d": 118,
+   "lv": "beginner",
+   "t": "Seasonal decorations",
+   "f": "Making wreaths, garlands and ornaments from paper, felt and natural materials"
+  },
+  {
+   "d": 119,
+   "lv": "beginner",
+   "t": "Gifting what you make",
+   "f": "Choosing projects for others, wrapping them nicely and adding a care label"
+  },
+  {
+   "d": 120,
+   "lv": "beginner",
+   "t": "Review: your beginner stage",
+   "f": "Celebrating your beginner skills and picking one favourite craft to deepen next"
+  },
+  {
+   "d": 121,
+   "lv": "intermediate",
+   "t": "Setting intermediate goals",
+   "f": "Choosing which crafts to deepen and setting realistic, motivating project goals"
+  },
+  {
+   "d": 122,
+   "lv": "intermediate",
+   "t": "Knitting increases",
+   "f": "Make one, knit front and back and yarn over, and how each increase looks"
+  },
+  {
+   "d": 123,
+   "lv": "intermediate",
+   "t": "Knitting decreases",
+   "f": "Knit two together and slip slip knit for shaping that leans left or right"
+  },
+  {
+   "d": 124,
+   "lv": "intermediate",
+   "t": "Knitting in the round",
+   "f": "Circular needles, joining without twisting and the magic loop method"
+  },
+  {
+   "d": 125,
+   "lv": "intermediate",
+   "t": "A beanie knitted in the round",
+   "f": "From ribbed brim to crown decreases in one seamless piece"
+  },
+  {
+   "d": 126,
+   "lv": "intermediate",
+   "t": "Double-pointed needles",
+   "f": "Working small circumferences for hat crowns, mittens and socks"
+  },
+  {
+   "d": 127,
+   "lv": "intermediate",
+   "t": "Reading knitting patterns",
+   "f": "Abbreviations, repeats, brackets and asterisks in written patterns"
+  },
+  {
+   "d": 128,
+   "lv": "intermediate",
+   "t": "Reading knitting charts",
+   "f": "Grids, symbols and reading direction for lace and colourwork charts"
+  },
+  {
+   "d": 129,
+   "lv": "intermediate",
+   "t": "Simple lace with yarn overs",
+   "f": "Combining eyelets and decreases for open, airy patterns"
+  },
+  {
+   "d": 130,
+   "lv": "intermediate",
+   "t": "Blocking knitwear",
+   "f": "Wet blocking and steam blocking to even out stitches and open up lace"
+  },
+  {
+   "d": 131,
+   "lv": "intermediate",
+   "t": "Introduction to cables",
+   "f": "Crossing stitches with a cable needle for twisted, rope-like patterns"
+  },
+  {
+   "d": 132,
+   "lv": "intermediate",
+   "t": "Knitting mittens",
+   "f": "Thumb gussets, held stitches and shaping a cosy, well-fitting pair"
+  },
+  {
+   "d": 133,
+   "lv": "intermediate",
+   "t": "Picking up stitches",
+   "f": "Adding borders and collars along edges for a neat, professional finish"
+  },
+  {
+   "d": 134,
+   "lv": "intermediate",
+   "t": "Seaming knitted pieces",
+   "f": "Mattress stitch for invisible side seams on knitted garments"
+  },
+  {
+   "d": 135,
+   "lv": "intermediate",
+   "t": "Crochet amigurumi basics",
+   "f": "Working in spirals, invisible decreases and stuffing small figures firmly"
+  },
+  {
+   "d": 136,
+   "lv": "intermediate",
+   "t": "Your first amigurumi",
+   "f": "Assembling head, body and limbs into a small, cuddly crocheted character"
+  },
+  {
+   "d": 137,
+   "lv": "intermediate",
+   "t": "Crochet textures",
+   "f": "Bobbles, puff stitches and popcorns for raised, tactile fabric"
+  },
+  {
+   "d": 138,
+   "lv": "intermediate",
+   "t": "Front and back loop crochet",
+   "f": "How working in only one loop creates ridges and stretchy ribbing"
+  },
+  {
+   "d": 139,
+   "lv": "intermediate",
+   "t": "Filet crochet",
+   "f": "Creating pictures with open and filled squares on a grid"
+  },
+  {
+   "d": 140,
+   "lv": "intermediate",
+   "t": "Crochet borders and edgings",
+   "f": "Shells, picots and scallops to finish blankets and shawls beautifully"
+  },
+  {
+   "d": 141,
+   "lv": "intermediate",
+   "t": "Reading crochet charts",
+   "f": "International crochet symbols and following rounds on a diagram"
+  },
+  {
+   "d": 142,
+   "lv": "intermediate",
+   "t": "A crochet market bag",
+   "f": "Mesh stitches and sturdy handles for a reusable shopping bag"
+  },
+  {
+   "d": 143,
+   "lv": "intermediate",
+   "t": "Wet felting",
+   "f": "Turning loose wool fibres into fabric with soap, warm water and friction"
+  },
+  {
+   "d": 144,
+   "lv": "intermediate",
+   "t": "Needle felting",
+   "f": "Sculpting wool with a barbed needle into small figures, carefully and safely"
+  },
+  {
+   "d": 145,
+   "lv": "intermediate",
+   "t": "Felting knitted items",
+   "f": "Shrinking wool knitting into dense felt for bags and slippers"
+  },
+  {
+   "d": 146,
+   "lv": "intermediate",
+   "t": "Spinning yarn on a drop spindle",
+   "f": "Drafting fibre and adding twist to make your very own yarn"
+  },
+  {
+   "d": 147,
+   "lv": "intermediate",
+   "t": "Natural dyeing basics",
+   "f": "Onion skins, avocado stones and plants for soft, natural colours"
+  },
+  {
+   "d": 148,
+   "lv": "intermediate",
+   "t": "Mordants in natural dyeing",
+   "f": "Why fibres need a mordant and how to use one safely at home"
+  },
+  {
+   "d": 149,
+   "lv": "intermediate",
+   "t": "Shibori from Japan",
+   "f": "Folding, clamping and binding fabric for indigo-style resist patterns"
+  },
+  {
+   "d": 150,
+   "lv": "intermediate",
+   "t": "Review: fibre deep dive",
+   "f": "Revisiting knitting, crochet, felting and dyeing progress with a fibre challenge"
+  },
+  {
+   "d": 151,
+   "lv": "intermediate",
+   "t": "Getting to know a sewing machine",
+   "f": "Threading, bobbins, tension and practising straight lines on paper"
+  },
+  {
+   "d": 152,
+   "lv": "intermediate",
+   "t": "Machine seams and allowances",
+   "f": "Sewing straight seams, backstitching at the ends and pressing seams open"
+  },
+  {
+   "d": 153,
+   "lv": "intermediate",
+   "t": "Pressing as you sew",
+   "f": "Why the iron matters as much as the machine for a neat, crisp finish"
+  },
+  {
+   "d": 154,
+   "lv": "intermediate",
+   "t": "Sewing a cushion cover",
+   "f": "An envelope-back cushion: measuring, hemming and overlapping the back panels"
+  },
+  {
+   "d": 155,
+   "lv": "intermediate",
+   "t": "Inserting a zip",
+   "f": "A simple zipped pouch to practise the zipper foot and tidy ends"
+  },
+  {
+   "d": 156,
+   "lv": "intermediate",
+   "t": "Reading a sewing pattern",
+   "f": "Pattern pieces, grainlines, notches and the cutting layout explained"
+  },
+  {
+   "d": 157,
+   "lv": "intermediate",
+   "t": "Choosing fabrics",
+   "f": "Wovens versus knits, drape, weight and why pre-washing matters"
+  },
+  {
+   "d": 158,
+   "lv": "intermediate",
+   "t": "Sewing a simple skirt",
+   "f": "An elastic-waist skirt that teaches casings and hems"
+  },
+  {
+   "d": 159,
+   "lv": "intermediate",
+   "t": "Quilting basics",
+   "f": "Quilt top, batting and backing, and planning a first small quilt"
+  },
+  {
+   "d": 160,
+   "lv": "intermediate",
+   "t": "Rotary cutting",
+   "f": "Accurate patchwork cutting with a rotary cutter, ruler and mat, used safely"
+  },
+  {
+   "d": 161,
+   "lv": "intermediate",
+   "t": "Piecing quilt blocks",
+   "f": "Nine-patch and half-square triangles with accurate quarter-inch seams"
+  },
+  {
+   "d": 162,
+   "lv": "intermediate",
+   "t": "Basting and quilting lines",
+   "f": "Layering a quilt sandwich and stitching straight quilting lines"
+  },
+  {
+   "d": 163,
+   "lv": "intermediate",
+   "t": "Binding a quilt",
+   "f": "Making and attaching binding for a durable, finished edge"
+  },
+  {
+   "d": 164,
+   "lv": "intermediate",
+   "t": "Appliqué",
+   "f": "Stitching fabric shapes onto a background by hand or by machine"
+  },
+  {
+   "d": 165,
+   "lv": "intermediate",
+   "t": "Sashiko stitching",
+   "f": "The Japanese tradition of running-stitch patterns that add strength and beauty to cloth"
+  },
+  {
+   "d": 166,
+   "lv": "intermediate",
+   "t": "Kantha from India",
+   "f": "Layered cloth and running stitches that give old fabric a new life"
+  },
+  {
+   "d": 167,
+   "lv": "intermediate",
+   "t": "Crewel embroidery",
+   "f": "Wool threads on linen for rich, textured designs"
+  },
+  {
+   "d": 168,
+   "lv": "intermediate",
+   "t": "Blackwork embroidery",
+   "f": "Geometric patterns stitched in a single colour of thread"
+  },
+  {
+   "d": 169,
+   "lv": "intermediate",
+   "t": "Thread painting basics",
+   "f": "Long and short stitch to blend colours as if painting with thread"
+  },
+  {
+   "d": 170,
+   "lv": "intermediate",
+   "t": "Embroidering on clothing",
+   "f": "Stabilisers and designs that survive everyday wear and washing"
+  },
+  {
+   "d": 171,
+   "lv": "intermediate",
+   "t": "Punch needle",
+   "f": "Making loops with a punch needle for cushions, small rugs and wall hangings"
+  },
+  {
+   "d": 172,
+   "lv": "intermediate",
+   "t": "Framing embroidery",
+   "f": "Finishing hoops, lacing work over board and displaying it with pride"
+  },
+  {
+   "d": 173,
+   "lv": "intermediate",
+   "t": "Weaving on a frame loom",
+   "f": "Warping the loom, plain weave and keeping the edges straight"
+  },
+  {
+   "d": 174,
+   "lv": "intermediate",
+   "t": "Weaving textures",
+   "f": "Soumak, rya knots and leno for textured wall hangings"
+  },
+  {
+   "d": 175,
+   "lv": "intermediate",
+   "t": "Finishing a woven piece",
+   "f": "Securing the warp, hanging the piece on a dowel and adding fringe"
+  },
+  {
+   "d": 176,
+   "lv": "intermediate",
+   "t": "Inkle and card weaving",
+   "f": "Making narrow decorative bands for straps, belts and trims"
+  },
+  {
+   "d": 177,
+   "lv": "intermediate",
+   "t": "A macramé plant hanger",
+   "f": "Spiral knots, gathering knots and measuring cords for a plant hanger"
+  },
+  {
+   "d": 178,
+   "lv": "intermediate",
+   "t": "A macramé wall hanging",
+   "f": "Designing a symmetrical hanging with patterns of square knots"
+  },
+  {
+   "d": 179,
+   "lv": "intermediate",
+   "t": "Basketry basics",
+   "f": "Coiled and woven baskets from reed, rope or natural fibres"
+  },
+  {
+   "d": 180,
+   "lv": "intermediate",
+   "t": "Review: sewing and weaving",
+   "f": "Looking back at machine sewing, quilting, embroidery and weaving"
+  },
+  {
+   "d": 181,
+   "lv": "intermediate",
+   "t": "Throwing on the pottery wheel",
+   "f": "How a wheel works, good posture and what to expect from your first sessions"
+  },
+  {
+   "d": 182,
+   "lv": "intermediate",
+   "t": "Centring clay",
+   "f": "The hardest and most important wheel skill, broken into calm, clear steps"
+  },
+  {
+   "d": 183,
+   "lv": "intermediate",
+   "t": "Opening and pulling walls",
+   "f": "Making a floor and raising even walls on the wheel"
+  },
+  {
+   "d": 184,
+   "lv": "intermediate",
+   "t": "Throwing a cylinder",
+   "f": "The basic form behind mugs, vases and jars"
+  },
+  {
+   "d": 185,
+   "lv": "intermediate",
+   "t": "Throwing bowls",
+   "f": "Opening wide and shaping curves without the walls collapsing"
+  },
+  {
+   "d": 186,
+   "lv": "intermediate",
+   "t": "Trimming leather-hard pots",
+   "f": "Shaping feet and removing extra weight with trimming tools"
+  },
+  {
+   "d": 187,
+   "lv": "intermediate",
+   "t": "Pulling and attaching handles",
+   "f": "Making mug handles that are comfortable to hold and strong"
+  },
+  {
+   "d": 188,
+   "lv": "intermediate",
+   "t": "Bisque firing",
+   "f": "What happens to clay in its first firing and why it matters"
+  },
+  {
+   "d": 189,
+   "lv": "intermediate",
+   "t": "Glazes explained",
+   "f": "What glaze is made of and how it turns into glass in the kiln"
+  },
+  {
+   "d": 190,
+   "lv": "intermediate",
+   "t": "Applying glaze",
+   "f": "Dipping, brushing and pouring for even coats while keeping feet clean"
+  },
+  {
+   "d": 191,
+   "lv": "intermediate",
+   "t": "Underglazes and slips",
+   "f": "Adding colour under the glaze for painted designs"
+  },
+  {
+   "d": 192,
+   "lv": "intermediate",
+   "t": "Sgraffito",
+   "f": "Scratching through a layer of slip to reveal clay patterns beneath"
+  },
+  {
+   "d": 193,
+   "lv": "intermediate",
+   "t": "Kilns and firing schedules",
+   "f": "Cones, temperatures and safe kiln practice in a shared studio"
+  },
+  {
+   "d": 194,
+   "lv": "intermediate",
+   "t": "Kintsugi",
+   "f": "The Japanese art of mending ceramics with gold and seeing beauty in repair"
+  },
+  {
+   "d": 195,
+   "lv": "intermediate",
+   "t": "Linocut printing",
+   "f": "Carving linoleum blocks safely and pulling a first print"
+  },
+  {
+   "d": 196,
+   "lv": "intermediate",
+   "t": "Inking and printing by hand",
+   "f": "Brayers, inks and burnishing with a wooden spoon or a baren"
+  },
+  {
+   "d": 197,
+   "lv": "intermediate",
+   "t": "Multi-colour block printing",
+   "f": "Registration and reduction printing for layered colours"
+  },
+  {
+   "d": 198,
+   "lv": "intermediate",
+   "t": "Block printing on fabric",
+   "f": "Fabric inks and printing repeat patterns on tea towels"
+  },
+  {
+   "d": 199,
+   "lv": "intermediate",
+   "t": "Indian block printing traditions",
+   "f": "Hand-carved wooden blocks and the famous printing traditions of Rajasthan"
+  },
+  {
+   "d": 200,
+   "lv": "intermediate",
+   "t": "Screen printing basics",
+   "f": "Screens, stencils and squeegees for bold prints on paper and fabric"
+  },
+  {
+   "d": 201,
+   "lv": "intermediate",
+   "t": "Coptic stitch bookbinding",
+   "f": "An exposed-spine binding that lets a book lie completely flat when open"
+  },
+  {
+   "d": 202,
+   "lv": "intermediate",
+   "t": "Japanese stab binding",
+   "f": "Decorative stitched spines for notebooks and photo albums"
+  },
+  {
+   "d": 203,
+   "lv": "intermediate",
+   "t": "Making book covers",
+   "f": "Covering boards with paper or cloth for durable, beautiful covers"
+  },
+  {
+   "d": 204,
+   "lv": "intermediate",
+   "t": "Whittling basics",
+   "f": "Choosing soft wood and a safe knife, and mastering push and pull cuts"
+  },
+  {
+   "d": 205,
+   "lv": "intermediate",
+   "t": "Whittling a spoon",
+   "f": "From rough blank to smooth spoon with careful carving steps"
+  },
+  {
+   "d": 206,
+   "lv": "intermediate",
+   "t": "Wood finishing",
+   "f": "Sanding through the grits and using food-safe oils on carved pieces"
+  },
+  {
+   "d": 207,
+   "lv": "intermediate",
+   "t": "Simple woodworking joints",
+   "f": "Butt, lap and dowel joints for small boxes and frames"
+  },
+  {
+   "d": 208,
+   "lv": "intermediate",
+   "t": "Building a small wooden box",
+   "f": "Measuring, cutting, gluing and clamping a keepsake box"
+  },
+  {
+   "d": 209,
+   "lv": "intermediate",
+   "t": "Pyrography",
+   "f": "Burning designs into wood with a heated pen, safely and patiently"
+  },
+  {
+   "d": 210,
+   "lv": "intermediate",
+   "t": "Review: clay, print and wood",
+   "f": "Revisiting the wheel, printmaking and woodwork with a short reflection"
+  },
+  {
+   "d": 211,
+   "lv": "intermediate",
+   "t": "Leathercraft basics",
+   "f": "Leather types, cutting and edge finishing for small leather goods"
+  },
+  {
+   "d": 212,
+   "lv": "intermediate",
+   "t": "Saddle stitching leather",
+   "f": "Punching holes and stitching with two needles for very strong seams"
+  },
+  {
+   "d": 213,
+   "lv": "intermediate",
+   "t": "A leather card holder",
+   "f": "Combining cutting, stitching and edge burnishing in one small project"
+  },
+  {
+   "d": 214,
+   "lv": "intermediate",
+   "t": "Candle making",
+   "f": "Wax types, wicks and pouring container candles safely"
+  },
+  {
+   "d": 215,
+   "lv": "intermediate",
+   "t": "Melt-and-pour soap",
+   "f": "Making soap from a ready base with colours and skin-safe fragrances"
+  },
+  {
+   "d": 216,
+   "lv": "intermediate",
+   "t": "Resin basics and safety",
+   "f": "Measuring, mixing, gloves and good ventilation for small resin projects"
+  },
+  {
+   "d": 217,
+   "lv": "intermediate",
+   "t": "Mosaic basics",
+   "f": "Cutting tiles, arranging tesserae and grouting a small mosaic"
+  },
+  {
+   "d": 218,
+   "lv": "intermediate",
+   "t": "Faux stained glass",
+   "f": "Glass paints and outliner for colourful window decorations"
+  },
+  {
+   "d": 219,
+   "lv": "intermediate",
+   "t": "Wire jewellery",
+   "f": "Wrapped loops and wire-wrapping stones and beads"
+  },
+  {
+   "d": 220,
+   "lv": "intermediate",
+   "t": "Bead weaving",
+   "f": "Peyote and brick stitch for woven bead bands and motifs"
+  },
+  {
+   "d": 221,
+   "lv": "intermediate",
+   "t": "Mexican folk art",
+   "f": "Talavera pottery, painted wood and the colourful folk art traditions of Mexico"
+  },
+  {
+   "d": 222,
+   "lv": "intermediate",
+   "t": "Portuguese azulejos",
+   "f": "Painted ceramic tiles and how they decorate whole streets and buildings"
+  },
+  {
+   "d": 223,
+   "lv": "intermediate",
+   "t": "Batik from Indonesia",
+   "f": "Wax-resist dyeing and its special place in Indonesian culture"
+  },
+  {
+   "d": 224,
+   "lv": "intermediate",
+   "t": "Molas from Panama",
+   "f": "Layered reverse appliqué made by Guna women of Panama"
+  },
+  {
+   "d": 225,
+   "lv": "intermediate",
+   "t": "Scandinavian craft traditions",
+   "f": "Wood carving, weaving and embroidery from northern Europe"
+  },
+  {
+   "d": 226,
+   "lv": "intermediate",
+   "t": "West African textiles",
+   "f": "Kente weaving, adinkra stamping and what patterns and colours can express"
+  },
+  {
+   "d": 227,
+   "lv": "intermediate",
+   "t": "Andean weaving",
+   "f": "Backstrap looms and vivid textiles from Peru and Bolivia"
+  },
+  {
+   "d": 228,
+   "lv": "intermediate",
+   "t": "Japanese paper crafts",
+   "f": "Washi, chiyogami and kirigami in Japanese daily life"
+  },
+  {
+   "d": 229,
+   "lv": "intermediate",
+   "t": "Chinese paper cutting",
+   "f": "Symmetrical red paper cuts made for festivals and good wishes"
+  },
+  {
+   "d": 230,
+   "lv": "intermediate",
+   "t": "A cultural craft sampler",
+   "f": "Combining a technique from another culture with your own style, respectfully"
+  },
+  {
+   "d": 231,
+   "lv": "intermediate",
+   "t": "Mixed media art",
+   "f": "Combining paper, fabric, paint and found objects in one artwork"
+  },
+  {
+   "d": 232,
+   "lv": "intermediate",
+   "t": "Altered books and junk journals",
+   "f": "Turning old books and paper keepsakes into creative journals"
+  },
+  {
+   "d": 233,
+   "lv": "intermediate",
+   "t": "Papier-mâché",
+   "f": "Building strong, light forms with paper strips and paste"
+  },
+  {
+   "d": 234,
+   "lv": "intermediate",
+   "t": "Papercraft sculptures",
+   "f": "Folding and gluing 3D geometric shapes from printed templates"
+  },
+  {
+   "d": 235,
+   "lv": "intermediate",
+   "t": "Making gift boxes",
+   "f": "Folding and constructing boxes with lids for handmade gifts"
+  },
+  {
+   "d": 236,
+   "lv": "intermediate",
+   "t": "Calligraphy for crafters",
+   "f": "Basic brush lettering to add beautiful words to your projects"
+  },
+  {
+   "d": 237,
+   "lv": "intermediate",
+   "t": "Stencils and masking",
+   "f": "Cutting stencils and using masking for crisp painted designs"
+  },
+  {
+   "d": 238,
+   "lv": "intermediate",
+   "t": "Crafting with kids",
+   "f": "Simple, safe projects and how to let children lead the fun"
+  },
+  {
+   "d": 239,
+   "lv": "intermediate",
+   "t": "Crafting together",
+   "f": "Craft circles, knitting groups and why making in company feels special"
+  },
+  {
+   "d": 240,
+   "lv": "intermediate",
+   "t": "Review: world and mixed media",
+   "f": "Looking back at crafts from many cultures and mixed media experiments"
+  },
+  {
+   "d": 241,
+   "lv": "intermediate",
+   "t": "Photographing your work",
+   "f": "Natural light, simple backgrounds and angles that show crafts at their best"
+  },
+  {
+   "d": 242,
+   "lv": "intermediate",
+   "t": "Writing about your makes",
+   "f": "Describing materials, process and story when sharing a project"
+  },
+  {
+   "d": 243,
+   "lv": "intermediate",
+   "t": "Care instructions for handmade",
+   "f": "Washing and care tips so handmade items last for years"
+  },
+  {
+   "d": 244,
+   "lv": "intermediate",
+   "t": "Making a project journal",
+   "f": "Documenting each project with photos, notes and lessons learned"
+  },
+  {
+   "d": 245,
+   "lv": "intermediate",
+   "t": "Finding inspiration",
+   "f": "Museums, nature, markets and other makers as rich sources of ideas"
+  },
+  {
+   "d": 246,
+   "lv": "intermediate",
+   "t": "Finding your own voice",
+   "f": "Learning from patterns while slowly developing original work"
+  },
+  {
+   "d": 247,
+   "lv": "intermediate",
+   "t": "Colour palettes from nature",
+   "f": "Building palettes from photos of landscapes, plants and objects"
+  },
+  {
+   "d": 248,
+   "lv": "intermediate",
+   "t": "Combining two crafts",
+   "f": "Embroidery on knitting, beads on felt and other hybrid ideas"
+  },
+  {
+   "d": 249,
+   "lv": "intermediate",
+   "t": "Planning a bigger project",
+   "f": "Breaking a large project into weekly milestones you can enjoy"
+  },
+  {
+   "d": 250,
+   "lv": "intermediate",
+   "t": "Intermediate checkpoint",
+   "f": "Reviewing intermediate skills and choosing an advanced focus for the final stage"
+  },
+  {
+   "d": 251,
+   "lv": "advanced",
+   "t": "The advanced maker mindset",
+   "f": "Precision, patience and design thinking as you step into advanced work"
+  },
+  {
+   "d": 252,
+   "lv": "advanced",
+   "t": "Fair Isle knitting",
+   "f": "Stranded colourwork with two colours per row and managing floats"
+  },
+  {
+   "d": 253,
+   "lv": "advanced",
+   "t": "Intarsia knitting",
+   "f": "Blocks of colour worked with separate bobbins, twisting at colour changes"
+  },
+  {
+   "d": 254,
+   "lv": "advanced",
+   "t": "Brioche knitting",
+   "f": "Lofty two-colour ribbing built from yarn overs and slipped stitches"
+  },
+  {
+   "d": 255,
+   "lv": "advanced",
+   "t": "Advanced cables",
+   "f": "Complex crosses, braids and reading detailed cable charts"
+  },
+  {
+   "d": 256,
+   "lv": "advanced",
+   "t": "Knitting lace shawls",
+   "f": "Charts, lifelines and dramatic blocking for openwork shawls"
+  },
+  {
+   "d": 257,
+   "lv": "advanced",
+   "t": "Knitting socks",
+   "f": "Cuff, heel flap, gusset and toe shaping for a well-fitted pair"
+  },
+  {
+   "d": 258,
+   "lv": "advanced",
+   "t": "Toe-up socks and short rows",
+   "f": "An alternative sock construction with short-row heels"
+  },
+  {
+   "d": 259,
+   "lv": "advanced",
+   "t": "Sweater construction",
+   "f": "Drop shoulder, raglan, yoke and set-in sleeves explained"
+  },
+  {
+   "d": 260,
+   "lv": "advanced",
+   "t": "A top-down raglan sweater",
+   "f": "Knitting a seamless sweater from the neck down, trying it on as you go"
+  },
+  {
+   "d": 261,
+   "lv": "advanced",
+   "t": "Steeking",
+   "f": "Cutting knitting on purpose and securing the stitches to make cardigans"
+  },
+  {
+   "d": 262,
+   "lv": "advanced",
+   "t": "Kitchener stitch grafting",
+   "f": "Invisible joins for sock toes and seamless finishes"
+  },
+  {
+   "d": 263,
+   "lv": "advanced",
+   "t": "Fit and measurements",
+   "f": "Taking body measurements and choosing the right ease for garments"
+  },
+  {
+   "d": 264,
+   "lv": "advanced",
+   "t": "Designing a knitting pattern",
+   "f": "Swatching, calculating stitches and writing clear instructions"
+  },
+  {
+   "d": 265,
+   "lv": "advanced",
+   "t": "Tapestry crochet",
+   "f": "Carrying colours to create pictures and motifs in crochet"
+  },
+  {
+   "d": 266,
+   "lv": "advanced",
+   "t": "Crochet lace",
+   "f": "Delicate thread crochet, doilies and pineapple motifs"
+  },
+  {
+   "d": 267,
+   "lv": "advanced",
+   "t": "Tunisian crochet",
+   "f": "A hybrid technique with a long hook that makes dense, woven-looking fabric"
+  },
+  {
+   "d": 268,
+   "lv": "advanced",
+   "t": "Crochet garments",
+   "f": "Shaping and fitting crocheted tops and cardigans"
+  },
+  {
+   "d": 269,
+   "lv": "advanced",
+   "t": "Overlay mosaic crochet",
+   "f": "Layered colourwork patterns created with dropped stitches"
+  },
+  {
+   "d": 270,
+   "lv": "advanced",
+   "t": "Review: advanced fibre work",
+   "f": "Reflecting on colourwork, garments and advanced knitting and crochet"
+  },
+  {
+   "d": 271,
+   "lv": "advanced",
+   "t": "Goldwork embroidery",
+   "f": "Metal threads, couching and padding for shimmering designs"
+  },
+  {
+   "d": 272,
+   "lv": "advanced",
+   "t": "Stumpwork",
+   "f": "Raised three-dimensional embroidery with wired petals and wings"
+  },
+  {
+   "d": 273,
+   "lv": "advanced",
+   "t": "Advanced thread painting",
+   "f": "Realistic animals and flowers with finely blended stitches"
+  },
+  {
+   "d": 274,
+   "lv": "advanced",
+   "t": "Whitework",
+   "f": "White-on-white embroidery including drawn and pulled thread work"
+  },
+  {
+   "d": 275,
+   "lv": "advanced",
+   "t": "Hardanger embroidery",
+   "f": "Norwegian cutwork with satin stitch blocks and woven bars"
+  },
+  {
+   "d": 276,
+   "lv": "advanced",
+   "t": "Designing embroidery motifs",
+   "f": "Drawing your own designs and adapting them for stitching"
+  },
+  {
+   "d": 277,
+   "lv": "advanced",
+   "t": "Free-motion quilting",
+   "f": "Lowering the feed dogs and drawing freely with stitches"
+  },
+  {
+   "d": 278,
+   "lv": "advanced",
+   "t": "Advanced quilt piecing",
+   "f": "Curves, foundation paper piecing and perfectly matched points"
+  },
+  {
+   "d": 279,
+   "lv": "advanced",
+   "t": "Designing a quilt",
+   "f": "Layout, value contrast and colour choices for an original quilt"
+  },
+  {
+   "d": 280,
+   "lv": "advanced",
+   "t": "Garment fitting adjustments",
+   "f": "Making a test garment and adjusting patterns for a great fit"
+  },
+  {
+   "d": 281,
+   "lv": "advanced",
+   "t": "Tailoring details",
+   "f": "Interfacing, collars and buttonholes for a professional finish"
+  },
+  {
+   "d": 282,
+   "lv": "advanced",
+   "t": "Pattern drafting basics",
+   "f": "Drafting a simple pattern from your own measurements"
+  },
+  {
+   "d": 283,
+   "lv": "advanced",
+   "t": "Upcycling garments",
+   "f": "Redesigning old clothes into fresh, wearable pieces"
+  },
+  {
+   "d": 284,
+   "lv": "advanced",
+   "t": "Rug making",
+   "f": "Hooking, braiding and tufting techniques for handmade rugs"
+  },
+  {
+   "d": 285,
+   "lv": "advanced",
+   "t": "Floor loom weaving",
+   "f": "How shafts, treadles and drafts work together to create woven patterns"
+  },
+  {
+   "d": 286,
+   "lv": "advanced",
+   "t": "Reading weaving drafts",
+   "f": "Threading, tie-up and treadling diagrams explained"
+  },
+  {
+   "d": 287,
+   "lv": "advanced",
+   "t": "Natural dye colour palettes",
+   "f": "Overdyeing and modifiers to get a wide range of shades"
+  },
+  {
+   "d": 288,
+   "lv": "advanced",
+   "t": "Indigo dyeing",
+   "f": "Keeping an indigo vat and building deep blues layer by layer"
+  },
+  {
+   "d": 289,
+   "lv": "advanced",
+   "t": "Eco printing",
+   "f": "Transferring leaf prints onto fabric and paper with steam"
+  },
+  {
+   "d": 290,
+   "lv": "advanced",
+   "t": "Review: textile mastery",
+   "f": "Looking back at advanced embroidery, quilting, garments and dyeing"
+  },
+  {
+   "d": 291,
+   "lv": "advanced",
+   "t": "Throwing larger forms",
+   "f": "Throwing taller and wider pots by working in stages"
+  },
+  {
+   "d": 292,
+   "lv": "advanced",
+   "t": "Lidded jars",
+   "f": "Making galleries and fitting lids precisely"
+  },
+  {
+   "d": 293,
+   "lv": "advanced",
+   "t": "Throwing a teapot",
+   "f": "Body, spout, lid and handle working together as one piece"
+  },
+  {
+   "d": 294,
+   "lv": "advanced",
+   "t": "Altering thrown forms",
+   "f": "Faceting, squaring and cutting pieces once they are off the wheel"
+  },
+  {
+   "d": 295,
+   "lv": "advanced",
+   "t": "Mishima and slip trailing",
+   "f": "Inlaid lines and raised slip designs on leather-hard clay"
+  },
+  {
+   "d": 296,
+   "lv": "advanced",
+   "t": "Glaze chemistry basics",
+   "f": "Silica, fluxes and alumina, and how they shape a glaze"
+  },
+  {
+   "d": 297,
+   "lv": "advanced",
+   "t": "Testing glazes",
+   "f": "Making test tiles and keeping a careful glaze notebook"
+  },
+  {
+   "d": 298,
+   "lv": "advanced",
+   "t": "Layering glazes",
+   "f": "Combining glazes for depth and special effects"
+  },
+  {
+   "d": 299,
+   "lv": "advanced",
+   "t": "Raku firing",
+   "f": "The dramatic raku process, its Japanese origins and essential safety"
+  },
+  {
+   "d": 300,
+   "lv": "advanced",
+   "t": "Review: advanced ceramics",
+   "f": "Revisiting wheel and glaze progress with a thoughtful reflection"
+  },
+  {
+   "d": 301,
+   "lv": "advanced",
+   "t": "Sculptural ceramics",
+   "f": "Hand-building larger sculptural forms with supports"
+  },
+  {
+   "d": 302,
+   "lv": "advanced",
+   "t": "Polymer clay jewellery design",
+   "f": "Advanced techniques for polished, professional polymer pieces"
+  },
+  {
+   "d": 303,
+   "lv": "advanced",
+   "t": "Metal stamping jewellery",
+   "f": "Stamping letters and patterns into metal blanks"
+  },
+  {
+   "d": 304,
+   "lv": "advanced",
+   "t": "Introduction to silversmithing",
+   "f": "Sawing, filing and soldering basics in a supervised studio"
+  },
+  {
+   "d": 305,
+   "lv": "advanced",
+   "t": "Case binding",
+   "f": "Hardcover books with sewn signatures and cloth-covered boards"
+  },
+  {
+   "d": 306,
+   "lv": "advanced",
+   "t": "Making paper by hand",
+   "f": "Making your own paper from pulp with a mould and deckle"
+  },
+  {
+   "d": 307,
+   "lv": "advanced",
+   "t": "Advanced origami",
+   "f": "Modular origami, tessellations and wet folding"
+  },
+  {
+   "d": 308,
+   "lv": "advanced",
+   "t": "Advanced paper cutting",
+   "f": "Intricate single-sheet designs cut with a fine blade"
+  },
+  {
+   "d": 309,
+   "lv": "advanced",
+   "t": "Relief woodcarving",
+   "f": "Carving designs into flat wooden panels"
+  },
+  {
+   "d": 310,
+   "lv": "advanced",
+   "t": "Green-wood spoon and bowl carving",
+   "f": "Advanced carving techniques with freshly cut wood"
+  },
+  {
+   "d": 311,
+   "lv": "advanced",
+   "t": "Fine wood finishes",
+   "f": "Shellac, wax and oil finishes for a lasting glow"
+  },
+  {
+   "d": 312,
+   "lv": "advanced",
+   "t": "Advanced leatherwork",
+   "f": "Tooling, dyeing and making structured bags"
+  },
+  {
+   "d": 313,
+   "lv": "advanced",
+   "t": "Advanced macramé",
+   "f": "Large pieces, complex knots and confident use of colour"
+  },
+  {
+   "d": 314,
+   "lv": "advanced",
+   "t": "Advanced mosaic",
+   "f": "Flow, direction of lines and pieces made for outdoors"
+  },
+  {
+   "d": 315,
+   "lv": "advanced",
+   "t": "Lampwork beads",
+   "f": "Melting glass rods into beads at a torch, with proper training"
+  },
+  {
+   "d": 316,
+   "lv": "advanced",
+   "t": "Upcycled art pieces",
+   "f": "Large artworks made from reclaimed materials"
+  },
+  {
+   "d": 317,
+   "lv": "advanced",
+   "t": "Restoring and repairing crafts",
+   "f": "Repairing knits, ceramics and wood with respect for the original"
+  },
+  {
+   "d": 318,
+   "lv": "advanced",
+   "t": "Sustainable crafting",
+   "f": "Choosing materials responsibly and reducing waste in your practice"
+  },
+  {
+   "d": 319,
+   "lv": "advanced",
+   "t": "The Arts and Crafts movement",
+   "f": "William Morris, handmade quality and why the movement still inspires makers"
+  },
+  {
+   "d": 320,
+   "lv": "advanced",
+   "t": "Bauhaus and craft",
+   "f": "How the Bauhaus brought art, craft and design together"
+  },
+  {
+   "d": 321,
+   "lv": "advanced",
+   "t": "Contemporary craft",
+   "f": "How today's makers push traditional crafts in new directions"
+  },
+  {
+   "d": 322,
+   "lv": "advanced",
+   "t": "Design principles for makers",
+   "f": "Balance, contrast, proportion and focal point in handmade work"
+  },
+  {
+   "d": 323,
+   "lv": "advanced",
+   "t": "Developing a signature style",
+   "f": "Recurring motifs, palettes and techniques that make work recognisably yours"
+  },
+  {
+   "d": 324,
+   "lv": "advanced",
+   "t": "Creating a collection",
+   "f": "Designing a coherent group of pieces around one theme"
+  },
+  {
+   "d": 325,
+   "lv": "advanced",
+   "t": "Prototyping and iterating",
+   "f": "Making samples, testing them and improving the design"
+  },
+  {
+   "d": 326,
+   "lv": "advanced",
+   "t": "Writing patterns for others",
+   "f": "Test makers, sizing and clear, friendly layouts"
+  },
+  {
+   "d": 327,
+   "lv": "advanced",
+   "t": "Teaching a craft",
+   "f": "Explaining techniques clearly and patiently to beginners"
+  },
+  {
+   "d": 328,
+   "lv": "advanced",
+   "t": "Running a craft workshop",
+   "f": "Planning materials, timing and a friendly atmosphere"
+  },
+  {
+   "d": 329,
+   "lv": "advanced",
+   "t": "Portfolio photography",
+   "f": "Styling, flat lays and consistent images for a portfolio"
+  },
+  {
+   "d": 330,
+   "lv": "advanced",
+   "t": "Review: design and teaching",
+   "f": "Looking back at design, collections and teaching skills"
+  },
+  {
+   "d": 331,
+   "lv": "advanced",
+   "t": "Selling handmade: first steps",
+   "f": "Hobby or small business? Thinking it through while keeping the joy"
+  },
+  {
+   "d": 332,
+   "lv": "advanced",
+   "t": "Pricing handmade work",
+   "f": "Counting materials, time and overheads in a fair, simple pricing approach"
+  },
+  {
+   "d": 333,
+   "lv": "advanced",
+   "t": "Craft fairs and markets",
+   "f": "Preparing a stall, a display and friendly conversations with visitors"
+  },
+  {
+   "d": 334,
+   "lv": "advanced",
+   "t": "Online shops for makers",
+   "f": "Listings, descriptions and photos that present handmade work well"
+  },
+  {
+   "d": 335,
+   "lv": "advanced",
+   "t": "Packaging and presentation",
+   "f": "Beautiful, protective packaging that reflects your style"
+  },
+  {
+   "d": 336,
+   "lv": "advanced",
+   "t": "Telling your maker story",
+   "f": "Sharing your process and values honestly and warmly"
+  },
+  {
+   "d": 337,
+   "lv": "advanced",
+   "t": "Commissions and custom orders",
+   "f": "Agreeing on details, timelines and expectations with clients"
+  },
+  {
+   "d": 338,
+   "lv": "advanced",
+   "t": "Collaborating with other makers",
+   "f": "Joint collections and supporting each other in the community"
+  },
+  {
+   "d": 339,
+   "lv": "advanced",
+   "t": "Sharing on social media",
+   "f": "Process videos, consistency and community over numbers"
+  },
+  {
+   "d": 340,
+   "lv": "advanced",
+   "t": "Craft and wellbeing",
+   "f": "Mindful making, rest and avoiding burnout from too many projects"
+  },
+  {
+   "d": 341,
+   "lv": "advanced",
+   "t": "Ergonomics for makers",
+   "f": "Posture, breaks and stretches that protect hands, neck and back"
+  },
+  {
+   "d": 342,
+   "lv": "advanced",
+   "t": "Craft communities worldwide",
+   "f": "Guilds, clubs and online groups connecting makers across cultures"
+  },
+  {
+   "d": 343,
+   "lv": "advanced",
+   "t": "Learning from masters",
+   "f": "Studying great makers, workshops and the apprenticeship tradition"
+  },
+  {
+   "d": 344,
+   "lv": "advanced",
+   "t": "Exhibiting your work",
+   "f": "Preparing pieces for exhibitions and selected shows"
+  },
+  {
+   "d": 345,
+   "lv": "advanced",
+   "t": "Your final project idea",
+   "f": "Choosing an ambitious final project that combines your skills"
+  },
+  {
+   "d": 346,
+   "lv": "advanced",
+   "t": "Final project: design",
+   "f": "Sketches, materials list and a realistic timeline"
+  },
+  {
+   "d": 347,
+   "lv": "advanced",
+   "t": "Final project: samples",
+   "f": "Testing techniques and colours before starting the real piece"
+  },
+  {
+   "d": 348,
+   "lv": "advanced",
+   "t": "Final project: making, part one",
+   "f": "Building the foundation and tracking your progress"
+  },
+  {
+   "d": 349,
+   "lv": "advanced",
+   "t": "Final project: making, part two",
+   "f": "Details, problem-solving and staying motivated"
+  },
+  {
+   "d": 350,
+   "lv": "advanced",
+   "t": "Final project: finishing",
+   "f": "Blocking, finishing touches and careful quality checks"
+  },
+  {
+   "d": 351,
+   "lv": "advanced",
+   "t": "Final project: presenting",
+   "f": "Photographing your piece and writing the story behind it"
+  },
+  {
+   "d": 352,
+   "lv": "advanced",
+   "t": "Craft travel ideas",
+   "f": "Visiting workshops, museums and markets around the world"
+  },
+  {
+   "d": 353,
+   "lv": "advanced",
+   "t": "Heirloom crafts",
+   "f": "Making pieces meant to be treasured for generations"
+  },
+  {
+   "d": 354,
+   "lv": "advanced",
+   "t": "Crafting for good causes",
+   "f": "Charity knitting, community quilts and other ways of giving back"
+  },
+  {
+   "d": 355,
+   "lv": "advanced",
+   "t": "Passing skills on",
+   "f": "Teaching children, friends and neighbours what you know"
+  },
+  {
+   "d": 356,
+   "lv": "advanced",
+   "t": "Revisiting your first project",
+   "f": "Comparing early work with today's and seeing how far you have come"
+  },
+  {
+   "d": 357,
+   "lv": "advanced",
+   "t": "Trying a brand-new craft",
+   "f": "Picking something completely new to stay a curious beginner"
+  },
+  {
+   "d": 358,
+   "lv": "advanced",
+   "t": "Building a lifelong practice",
+   "f": "Routines and habits that keep you making for years"
+  },
+  {
+   "d": 359,
+   "lv": "advanced",
+   "t": "Your maker manifesto",
+   "f": "Writing down what crafting means to you and how you want to make"
+  },
+  {
+   "d": 360,
+   "lv": "advanced",
+   "t": "Review: the advanced stage",
+   "f": "Looking back at advanced skills and your final project"
+  },
+  {
+   "d": 361,
+   "lv": "advanced",
+   "t": "Your favourite techniques",
+   "f": "Reflecting on the techniques you enjoyed most this year"
+  },
+  {
+   "d": 362,
+   "lv": "advanced",
+   "t": "Your craft space today",
+   "f": "How your tools, space and habits have grown over the path"
+  },
+  {
+   "d": 363,
+   "lv": "advanced",
+   "t": "Sharing your journey",
+   "f": "Telling others about your 365-day craft path and inspiring them"
+  },
+  {
+   "d": 364,
+   "lv": "advanced",
+   "t": "Your next year of making",
+   "f": "Goals, dream projects and new crafts for the year ahead"
+  },
+  {
+   "d": 365,
+   "lv": "advanced",
+   "t": "Celebrating a year of crafts",
+   "f": "Celebrating everything you made and learned in 365 days"
+  }
+ ]
+}

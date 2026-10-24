@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_english",
+ "lessons": [
+  {
+   "d": 1,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Hello! First English greetings",
+     "g": "Greet people in English and choose the right greeting for the moment.",
+     "p": [
+      "Hi and hello work almost anywhere; hi is a little more relaxed.",
+      "Good morning is for the morning, good afternoon after midday, good evening from about 6 p.m.",
+      "Goodbye and bye end a chat; good night is only for bedtime or the very end of the evening."
+     ],
+     "q": "It is 8 p.m. and you meet a neighbour in the lift. What do you say first?",
+     "c": "Greet three people today in English, even just in your head, and pick the right greeting each time."
+    },
+    "de": {
+     "t": "Hello! Erste Grüße auf Englisch",
+     "g": "Du lernst, auf Englisch zu grüßen und den passenden Gruß für den Moment zu wählen.",
+     "p": [
+      "Hi und hello passen fast überall; hi klingt etwas lockerer.",
+      "Good morning sagt man morgens, good afternoon ab Mittag, good evening ab etwa 18 Uhr.",
+      "Goodbye und bye beenden ein Gespräch; good night sagt man nur vor dem Schlafengehen."
+     ],
+     "q": "Es ist 20 Uhr und du triffst einen Nachbarn im Aufzug. Was sagst du zuerst?",
+     "c": "Grüße heute drei Menschen auf Englisch, notfalls im Kopf, und wähle jedes Mal den richtigen Gruß."
+    },
+    "es": {
+     "t": "¡Hello! Primeros saludos en inglés",
+     "g": "Aprende a saludar en inglés y a elegir el saludo adecuado para cada momento.",
+     "p": [
+      "Hi y hello sirven casi siempre; hi es un poco más informal.",
+      "Good morning es para la mañana, good afternoon desde mediodía y good evening desde las 6 de la tarde.",
+      "Goodbye y bye cierran una charla; good night solo se dice al irse a dormir."
+     ],
+     "q": "Son las 8 de la tarde y ves a un vecino en el ascensor. ¿Qué le dices primero?",
+     "c": "Saluda hoy a tres personas en inglés, aunque sea mentalmente, eligiendo bien el saludo."
+    },
+    "fr": {
+     "t": "Hello ! Premières salutations en anglais",
+     "g": "Saluer en anglais et choisir la bonne formule selon le moment.",
+     "p": [
+      "Hi et hello marchent presque partout ; hi est un peu plus détendu.",
+      "Good morning le matin, good afternoon après midi, good evening à partir de 18 h environ.",
+      "Goodbye et bye terminent une conversation ; good night se dit seulement avant d'aller dormir."
+     ],
+     "q": "Il est 20 h et tu croises un voisin dans l'ascenseur. Que dis-tu en premier ?",
+     "c": "Salue trois personnes en anglais aujourd'hui, même dans ta tête, avec la bonne formule."
+    },
+    "it": {
+     "t": "Hello! I primi saluti in inglese",
+     "g": "Impari a salutare in inglese e a scegliere il saluto giusto per ogni momento.",
+     "p": [
+      "Hi e hello vanno bene quasi ovunque; hi è un po' più informale.",
+      "Good morning si usa di mattina, good afternoon dopo mezzogiorno, good evening dalle 18 circa.",
+      "Goodbye e bye chiudono una conversazione; good night si dice solo prima di dormire."
+     ],
+     "q": "Sono le 20 e incontri un vicino in ascensore. Cosa gli dici per primo?",
+     "c": "Saluta oggi tre persone in inglese, anche solo nella tua testa, scegliendo il saluto giusto."
+    },
+    "pt": {
+     "t": "Hello! Os primeiros cumprimentos em inglês",
+     "g": "Aprende a cumprimentar em inglês e a escolher o cumprimento certo para cada momento.",
+     "p": [
+      "Hi e hello servem quase sempre; hi é um pouco mais descontraído.",
+      "Good morning é de manhã, good afternoon depois do meio-dia, good evening a partir das 18h.",
+      "Goodbye e bye terminam uma conversa; good night só se diz antes de ir dormir."
+     ],
+     "q": "São 20h e encontras um vizinho no elevador. O que dizes primeiro?",
+     "c": "Cumprimenta hoje três pessoas em inglês, nem que seja em pensamento, com o cumprimento certo."
+    },
+    "pt_BR": {
+     "t": "Hello! Os primeiros cumprimentos em inglês",
+     "g": "Aprenda a cumprimentar em inglês e a escolher o cumprimento certo para cada momento.",
+     "p": [
+      "Hi e hello funcionam quase sempre; hi é um pouco mais descontraído.",
+      "Good morning é de manhã, good afternoon depois do meio-dia, good evening a partir das 18h.",
+      "Goodbye e bye encerram uma conversa; good night só se diz na hora de dormir."
+     ],
+     "q": "São 20h e você encontra um vizinho no elevador. O que você fala primeiro?",
+     "c": "Cumprimente hoje três pessoas em inglês, nem que seja em pensamento, escolhendo o cumprimento certo."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hello",
+      "ex": "Hello, Maria! Nice to see you."
+     },
+     {
+      "w": "hi",
+      "ex": "Hi, Tom!"
+     },
+     {
+      "w": "good morning",
+      "ex": "Good morning, everyone!"
+     },
+     {
+      "w": "good evening",
+      "ex": "Good evening, sir. Welcome."
+     },
+     {
+      "w": "goodbye",
+      "ex": "Goodbye, see you tomorrow."
+     },
+     {
+      "w": "good night",
+      "ex": "Good night, sleep well!"
+     }
+    ],
+    "gram": "Good evening is a greeting when you arrive; good night is only for leaving late or going to bed."
+   }
+  },
+  {
+   "d": 2,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The English alphabet",
+     "g": "Learn the 26 letters of the English alphabet and their names.",
+     "p": [
+      "English letter names often differ from your language: A sounds like ay, E like ee, I like eye.",
+      "Watch G (jee) and J (jay), and the American Z (zee) versus the British Z (zed).",
+      "Vowels are A, E, I, O, U; the other 21 letters are consonants."
+     ],
+     "q": "Which letter name in English surprises you most compared with your own language?",
+     "c": "Say the alphabet aloud once today, slowly, and repeat the letters A, E, I three times."
+    },
+    "de": {
+     "t": "Das englische Alphabet",
+     "g": "Du lernst die 26 Buchstaben des englischen Alphabets und ihre Namen.",
+     "p": [
+      "Die Namen klingen oft anders als im Deutschen: A wie ej, E wie i, I wie ai.",
+      "Achte auf G (dschi) und J (dschej) sowie amerikanisches Z (si) gegenüber britischem Z (sed).",
+      "Vokale sind A, E, I, O, U; die übrigen 21 Buchstaben sind Konsonanten."
+     ],
+     "q": "Welcher englische Buchstabenname überrascht dich im Vergleich zum Deutschen am meisten?",
+     "c": "Sag heute einmal langsam das Alphabet laut auf und wiederhole A, E, I dreimal."
+    },
+    "es": {
+     "t": "El alfabeto inglés",
+     "g": "Aprende las 26 letras del alfabeto inglés y cómo se llaman.",
+     "p": [
+      "Los nombres cambian respecto al español: la A suena ei, la E suena i y la I suena ai.",
+      "Ojo con la G (yi) y la J (yei), y con la Z americana (zi) frente a la británica (zed).",
+      "Las vocales son A, E, I, O, U; las otras 21 letras son consonantes."
+     ],
+     "q": "¿Qué nombre de letra en inglés te sorprende más comparado con el español?",
+     "c": "Recita hoy el alfabeto en voz alta una vez, despacio, y repite A, E, I tres veces."
+    },
+    "fr": {
+     "t": "L'alphabet anglais",
+     "g": "Apprendre les 26 lettres de l'alphabet anglais et leur nom.",
+     "p": [
+      "Les noms changent par rapport au français : A se dit éi, E se dit i, I se dit aï.",
+      "Attention à G (dji) et J (djéi), et au Z américain (zi) face au Z britannique (zèd).",
+      "Les voyelles sont A, E, I, O, U ; les 21 autres lettres sont des consonnes."
+     ],
+     "q": "Quel nom de lettre anglais te surprend le plus par rapport au français ?",
+     "c": "Récite l'alphabet à voix haute une fois aujourd'hui, lentement, et répète A, E, I trois fois."
+    },
+    "it": {
+     "t": "L'alfabeto inglese",
+     "g": "Impari le 26 lettere dell'alfabeto inglese e i loro nomi.",
+     "p": [
+      "I nomi cambiano rispetto all'italiano: A si dice ei, E si dice i, I si dice ai.",
+      "Attenzione a G (gi) e J (gei), e alla Z americana (zi) rispetto a quella britannica (zed).",
+      "Le vocali sono A, E, I, O, U; le altre 21 lettere sono consonanti."
+     ],
+     "q": "Quale nome di lettera inglese ti sorprende di più rispetto all'italiano?",
+     "c": "Recita oggi l'alfabeto ad alta voce una volta, piano, e ripeti A, E, I tre volte."
+    },
+    "pt": {
+     "t": "O alfabeto inglês",
+     "g": "Aprende as 26 letras do alfabeto inglês e os seus nomes.",
+     "p": [
+      "Os nomes mudam em relação ao português: A diz-se ei, E diz-se i, I diz-se ai.",
+      "Atenção ao G (dji) e ao J (djei), e ao Z americano (zi) face ao britânico (zed).",
+      "As vogais são A, E, I, O, U; as outras 21 letras são consoantes."
+     ],
+     "q": "Que nome de letra em inglês te surpreende mais em comparação com o português?",
+     "c": "Diz hoje o alfabeto em voz alta uma vez, devagar, e repete A, E, I três vezes."
+    },
+    "pt_BR": {
+     "t": "O alfabeto inglês",
+     "g": "Aprenda as 26 letras do alfabeto inglês e como elas se chamam.",
+     "p": [
+      "Os nomes mudam em relação ao português: A soa ei, E soa i, I soa ai.",
+      "Cuidado com G (dji) e J (djei), e com o Z americano (zi) versus o britânico (zed).",
+      "As vogais são A, E, I, O, U; as outras 21 letras são consoantes."
+     ],
+     "q": "Qual nome de letra em inglês mais te surpreende comparado ao português?",
+     "c": "Fale o alfabeto em voz alta uma vez hoje, devagar, e repita A, E, I três vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "the alphabet",
+      "ex": "The English alphabet has 26 letters."
+     },
+     {
+      "w": "a letter",
+      "ex": "B is the second letter."
+     },
+     {
+      "w": "a vowel",
+      "ex": "A, E, I, O and U are vowels."
+     },
+     {
+      "w": "a consonant",
+      "ex": "B and C are consonants."
+     },
+     {
+      "w": "capital letter",
+      "ex": "London starts with a capital letter."
+     },
+     {
+      "w": "small letter",
+      "ex": "Write your email in small letters."
+     }
+    ],
+    "gram": "Letter names: A (ay), E (ee), I (eye), G (jee), J (jay), Y (why), Z (zee in the US, zed in the UK)."
+   }
+  },
+  {
+   "d": 3,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Spelling your name aloud",
+     "g": "Spell your name and email letter by letter and ask others to spell theirs.",
+     "p": [
+      "Ask How do you spell that? when you don't catch a name.",
+      "For two same letters, say double: Anna is A, double N, A.",
+      "In emails, @ is at and . is dot: maria at mail dot com."
+     ],
+     "q": "How do you spell your first name in English, letter by letter?",
+     "c": "Spell your full name and your email aloud in English twice today."
+    },
+    "de": {
+     "t": "Den eigenen Namen buchstabieren",
+     "g": "Du lernst, Namen und E-Mails Buchstabe für Buchstabe zu buchstabieren und danach zu fragen.",
+     "p": [
+      "Frag How do you spell that?, wenn du einen Namen nicht verstehst.",
+      "Bei zwei gleichen Buchstaben sagt man double: Anna ist A, double N, A.",
+      "In E-Mails ist @ at und der Punkt dot: maria at mail dot com."
+     ],
+     "q": "Wie buchstabierst du deinen Vornamen auf Englisch?",
+     "c": "Buchstabiere heute zweimal laut deinen vollen Namen und deine E-Mail auf Englisch."
+    },
+    "es": {
+     "t": "Deletrear tu nombre en voz alta",
+     "g": "Aprende a deletrear nombres y correos letra por letra y a pedir que te los deletreen.",
+     "p": [
+      "Pregunta How do you spell that? cuando no entiendas un nombre.",
+      "Para dos letras iguales se dice double: Anna es A, double N, A.",
+      "En los correos, @ es at y el punto es dot: maria at mail dot com."
+     ],
+     "q": "¿Cómo deletreas tu nombre en inglés, letra por letra?",
+     "c": "Deletrea hoy en voz alta tu nombre completo y tu correo en inglés, dos veces."
+    },
+    "fr": {
+     "t": "Épeler son nom à voix haute",
+     "g": "Épeler son nom et son e-mail lettre par lettre, et demander aux autres d'épeler le leur.",
+     "p": [
+      "Demande How do you spell that? quand tu ne saisis pas un nom.",
+      "Pour deux lettres identiques, on dit double : Anna, c'est A, double N, A.",
+      "Dans un e-mail, @ se dit at et le point dot : maria at mail dot com."
+     ],
+     "q": "Comment épelles-tu ton prénom en anglais, lettre par lettre ?",
+     "c": "Épelle deux fois à voix haute ton nom complet et ton e-mail en anglais aujourd'hui."
+    },
+    "it": {
+     "t": "Fare lo spelling del tuo nome",
+     "g": "Impari a fare lo spelling di nomi ed email lettera per lettera e a chiederlo agli altri.",
+     "p": [
+      "Chiedi How do you spell that? quando non capisci un nome.",
+      "Per due lettere uguali si dice double: Anna è A, double N, A.",
+      "Nelle email la chiocciola si dice at e il punto dot: maria at mail dot com."
+     ],
+     "q": "Come fai lo spelling del tuo nome in inglese, lettera per lettera?",
+     "c": "Fai oggi lo spelling ad alta voce del tuo nome completo e della tua email, due volte."
+    },
+    "pt": {
+     "t": "Soletrar o teu nome em voz alta",
+     "g": "Aprende a soletrar nomes e emails letra a letra e a pedir que os soletrem.",
+     "p": [
+      "Pergunta How do you spell that? quando não percebes um nome.",
+      "Para duas letras iguais diz-se double: Anna é A, double N, A.",
+      "Nos emails, a arroba diz-se at e o ponto dot: maria at mail dot com."
+     ],
+     "q": "Como soletras o teu nome próprio em inglês, letra a letra?",
+     "c": "Soletra hoje em voz alta o teu nome completo e o teu email em inglês, duas vezes."
+    },
+    "pt_BR": {
+     "t": "Soletrando seu nome em voz alta",
+     "g": "Aprenda a soletrar nomes e e-mails letra por letra e a pedir que soletrem para você.",
+     "p": [
+      "Pergunte How do you spell that? quando não entender um nome.",
+      "Para duas letras iguais se diz double: Anna é A, double N, A.",
+      "Em e-mails, a arroba é at e o ponto é dot: maria at mail dot com."
+     ],
+     "q": "Como você soletra seu primeiro nome em inglês, letra por letra?",
+     "c": "Soletre hoje em voz alta seu nome completo e seu e-mail em inglês, duas vezes."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "spell",
+      "ex": "Can you spell your name, please?"
+     },
+     {
+      "w": "How do you spell that?",
+      "ex": "Sorry, how do you spell that?"
+     },
+     {
+      "w": "double",
+      "ex": "Anna is A, double N, A."
+     },
+     {
+      "w": "first name",
+      "ex": "My first name is Lucas."
+     },
+     {
+      "w": "surname",
+      "ex": "My surname is Silva, S-I-L-V-A."
+     },
+     {
+      "w": "email address",
+      "ex": "My email address is lucas at mail dot com."
+     }
+    ],
+    "gram": "Ask How do you spell...? and answer letter by letter; use double for two same letters in a row."
+   }
+  },
+  {
+   "d": 4,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "My name is... introducing yourself",
+     "g": "Introduce yourself and ask someone their name politely.",
+     "p": [
+      "Say My name is Ana or, more casually, I'm Ana.",
+      "Ask What's your name? and answer the other person with Nice to meet you.",
+      "Reply Nice to meet you too to sound friendly and natural."
+     ],
+     "q": "Imagine we just met at a party. How do you introduce yourself to me?",
+     "c": "Introduce yourself aloud three times today, once with My name is and once with I'm."
+    },
+    "de": {
+     "t": "My name is... sich vorstellen",
+     "g": "Du lernst, dich vorzustellen und höflich nach dem Namen zu fragen.",
+     "p": [
+      "Sag My name is Ana oder lockerer I'm Ana.",
+      "Frag What's your name? und antworte mit Nice to meet you.",
+      "Mit Nice to meet you too klingst du freundlich und natürlich."
+     ],
+     "q": "Stell dir vor, wir lernen uns auf einer Party kennen. Wie stellst du dich vor?",
+     "c": "Stell dich heute dreimal laut vor, einmal mit My name is und einmal mit I'm."
+    },
+    "es": {
+     "t": "My name is... presentarte",
+     "g": "Aprende a presentarte y a preguntar el nombre con amabilidad.",
+     "p": [
+      "Di My name is Ana o, más informal, I'm Ana.",
+      "Pregunta What's your name? y responde con Nice to meet you.",
+      "Contesta Nice to meet you too para sonar amable y natural."
+     ],
+     "q": "Imagina que nos conocemos en una fiesta. ¿Cómo te presentas?",
+     "c": "Preséntate en voz alta tres veces hoy, una con My name is y otra con I'm."
+    },
+    "fr": {
+     "t": "My name is... se présenter",
+     "g": "Se présenter et demander poliment le prénom de quelqu'un.",
+     "p": [
+      "Dis My name is Ana ou, plus détendu, I'm Ana.",
+      "Demande What's your name? et réponds avec Nice to meet you.",
+      "Réponds Nice to meet you too pour paraître chaleureux et naturel."
+     ],
+     "q": "Imagine qu'on se rencontre à une fête. Comment te présentes-tu ?",
+     "c": "Présente-toi trois fois à voix haute aujourd'hui, une fois avec My name is, une fois avec I'm."
+    },
+    "it": {
+     "t": "My name is... presentarsi",
+     "g": "Impari a presentarti e a chiedere il nome con gentilezza.",
+     "p": [
+      "Di' My name is Ana oppure, più informale, I'm Ana.",
+      "Chiedi What's your name? e rispondi con Nice to meet you.",
+      "Rispondi Nice to meet you too per sembrare cordiale e naturale."
+     ],
+     "q": "Immagina di conoscermi a una festa. Come ti presenti?",
+     "c": "Presentati ad alta voce tre volte oggi, una con My name is e una con I'm."
+    },
+    "pt": {
+     "t": "My name is... apresentar-te",
+     "g": "Aprende a apresentar-te e a perguntar o nome a alguém com simpatia.",
+     "p": [
+      "Diz My name is Ana ou, de forma mais descontraída, I'm Ana.",
+      "Pergunta What's your name? e responde com Nice to meet you.",
+      "Responde Nice to meet you too para soares simpático e natural."
+     ],
+     "q": "Imagina que nos conhecemos numa festa. Como te apresentas?",
+     "c": "Apresenta-te em voz alta três vezes hoje, uma com My name is e outra com I'm."
+    },
+    "pt_BR": {
+     "t": "My name is... se apresentando",
+     "g": "Aprenda a se apresentar e a perguntar o nome de alguém com educação.",
+     "p": [
+      "Diga My name is Ana ou, de um jeito mais leve, I'm Ana.",
+      "Pergunte What's your name? e responda com Nice to meet you.",
+      "Responda Nice to meet you too para soar simpático e natural."
+     ],
+     "q": "Imagine que a gente se conheceu numa festa. Como você se apresenta?",
+     "c": "Apresente-se em voz alta três vezes hoje, uma com My name is e outra com I'm."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "My name is...",
+      "ex": "My name is Daniel."
+     },
+     {
+      "w": "I'm...",
+      "ex": "Hi, I'm Sara."
+     },
+     {
+      "w": "What's your name?",
+      "ex": "Hello! What's your name?"
+     },
+     {
+      "w": "Nice to meet you.",
+      "ex": "Nice to meet you, Sara."
+     },
+     {
+      "w": "Nice to meet you too.",
+      "ex": "Nice to meet you too, Daniel."
+     },
+     {
+      "w": "And you?",
+      "ex": "I'm from Lisbon. And you?"
+     }
+    ],
+    "gram": "What's = What is. I'm = I am. Introduce yourself with My name is + name or I'm + name."
+   }
+  },
+  {
+   "d": 5,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 0 to 20",
+     "g": "Count from zero to twenty and use numbers in real situations.",
+     "p": [
+      "Zero to ten: zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "Eleven and twelve are special; thirteen to nineteen end in -teen.",
+      "Use numbers for ages, rooms and phone numbers: room fourteen, I'm nineteen."
+     ],
+     "q": "What is your favourite number from 0 to 20, and why?",
+     "c": "Count every step to your door today in English, up to twenty."
+    },
+    "de": {
+     "t": "Zahlen von 0 bis 20",
+     "g": "Du lernst, von null bis zwanzig zu zählen und Zahlen im Alltag zu nutzen.",
+     "p": [
+      "Null bis zehn: zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "Eleven und twelve sind besonders; thirteen bis nineteen enden auf -teen.",
+      "Zahlen brauchst du für Alter, Zimmer und Telefon: room fourteen, I'm nineteen."
+     ],
+     "q": "Was ist deine Lieblingszahl zwischen 0 und 20, und warum?",
+     "c": "Zähle heute die Stufen bis zu deiner Tür auf Englisch, bis zwanzig."
+    },
+    "es": {
+     "t": "Números del 0 al 20",
+     "g": "Aprende a contar de cero a veinte y a usar los números en situaciones reales.",
+     "p": [
+      "Del cero al diez: zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "Eleven y twelve son especiales; de thirteen a nineteen terminan en -teen.",
+      "Usa números para edades, habitaciones y teléfonos: room fourteen, I'm nineteen."
+     ],
+     "q": "¿Cuál es tu número favorito del 0 al 20 y por qué?",
+     "c": "Cuenta hoy en inglés los escalones hasta tu puerta, hasta veinte."
+    },
+    "fr": {
+     "t": "Les nombres de 0 à 20",
+     "g": "Compter de zéro à vingt et utiliser les nombres dans la vraie vie.",
+     "p": [
+      "De zéro à dix : zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "Eleven et twelve sont à part ; de thirteen à nineteen, ils finissent en -teen.",
+      "Les nombres servent pour l'âge, les chambres, le téléphone : room fourteen, I'm nineteen."
+     ],
+     "q": "Quel est ton nombre préféré entre 0 et 20, et pourquoi ?",
+     "c": "Compte en anglais les marches jusqu'à ta porte aujourd'hui, jusqu'à vingt."
+    },
+    "it": {
+     "t": "I numeri da 0 a 20",
+     "g": "Impari a contare da zero a venti e a usare i numeri nella vita reale.",
+     "p": [
+      "Da zero a dieci: zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "Eleven e twelve sono speciali; da thirteen a nineteen finiscono in -teen.",
+      "Usa i numeri per età, camere e telefono: room fourteen, I'm nineteen."
+     ],
+     "q": "Qual è il tuo numero preferito da 0 a 20, e perché?",
+     "c": "Conta oggi in inglese i gradini fino alla tua porta, fino a venti."
+    },
+    "pt": {
+     "t": "Números de 0 a 20",
+     "g": "Aprende a contar de zero a vinte e a usar os números em situações reais.",
+     "p": [
+      "De zero a dez: zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "Eleven e twelve são especiais; de thirteen a nineteen acabam em -teen.",
+      "Usa números para idades, quartos e telefones: room fourteen, I'm nineteen."
+     ],
+     "q": "Qual é o teu número preferido de 0 a 20, e porquê?",
+     "c": "Conta hoje em inglês os degraus até à tua porta, até vinte."
+    },
+    "pt_BR": {
+     "t": "Números de 0 a 20",
+     "g": "Aprenda a contar de zero a vinte e a usar os números no dia a dia.",
+     "p": [
+      "De zero a dez: zero, one, two, three, four, five, six, seven, eight, nine, ten.",
+      "Eleven e twelve são especiais; de thirteen a nineteen terminam em -teen.",
+      "Use números para idade, quartos e telefones: room fourteen, I'm nineteen."
+     ],
+     "q": "Qual é o seu número favorito de 0 a 20, e por quê?",
+     "c": "Conte hoje em inglês os degraus até a sua porta, até vinte."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "zero",
+      "ex": "The room number is zero four."
+     },
+     {
+      "w": "three",
+      "ex": "I have three brothers."
+     },
+     {
+      "w": "eight",
+      "ex": "The shop opens at eight."
+     },
+     {
+      "w": "eleven",
+      "ex": "My son is eleven."
+     },
+     {
+      "w": "fifteen",
+      "ex": "There are fifteen students in the class."
+     },
+     {
+      "w": "twenty",
+      "ex": "Twenty minutes, please."
+     }
+    ],
+    "gram": "11 eleven, 12 twelve, 13 thirteen, 15 fifteen, 20 twenty: numbers 13 to 19 end in -teen."
+   }
+  },
+  {
+   "d": 6,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Where are you from?",
+     "g": "Say where you are from and where you live, and ask others.",
+     "p": [
+      "Ask Where are you from? and answer I'm from Brazil.",
+      "Use I live in plus a city: I live in Madrid.",
+      "Use from for your origin and in for where you live now."
+     ],
+     "q": "Where are you from, and where do you live now?",
+     "c": "Tell one person, or a mirror, where you are from and where you live, in English."
+    },
+    "de": {
+     "t": "Where are you from? Woher kommst du?",
+     "g": "Du lernst zu sagen, woher du kommst und wo du wohnst, und andere danach zu fragen.",
+     "p": [
+      "Frag Where are you from? und antworte I'm from Brazil.",
+      "Benutze I live in mit einer Stadt: I live in Madrid.",
+      "From steht für die Herkunft, in für den jetzigen Wohnort."
+     ],
+     "q": "Woher kommst du, und wo wohnst du jetzt?",
+     "c": "Erzähl heute jemandem oder dem Spiegel auf Englisch, woher du kommst und wo du wohnst."
+    },
+    "es": {
+     "t": "Where are you from? ¿De dónde eres?",
+     "g": "Aprende a decir de dónde eres y dónde vives, y a preguntarlo.",
+     "p": [
+      "Pregunta Where are you from? y responde I'm from Brazil.",
+      "Usa I live in con una ciudad: I live in Madrid.",
+      "From indica tu origen e in el lugar donde vives ahora."
+     ],
+     "q": "¿De dónde eres y dónde vives ahora?",
+     "c": "Cuéntale a alguien, o al espejo, de dónde eres y dónde vives, en inglés."
+    },
+    "fr": {
+     "t": "Where are you from? D'où viens-tu ?",
+     "g": "Dire d'où tu viens et où tu habites, et poser la question aux autres.",
+     "p": [
+      "Demande Where are you from? et réponds I'm from Brazil.",
+      "Utilise I live in avec une ville : I live in Madrid.",
+      "From indique l'origine, in le lieu où tu vis maintenant."
+     ],
+     "q": "D'où viens-tu, et où habites-tu maintenant ?",
+     "c": "Dis à quelqu'un, ou au miroir, d'où tu viens et où tu habites, en anglais."
+    },
+    "it": {
+     "t": "Where are you from? Di dove sei?",
+     "g": "Impari a dire da dove vieni e dove vivi, e a chiederlo agli altri.",
+     "p": [
+      "Chiedi Where are you from? e rispondi I'm from Brazil.",
+      "Usa I live in con una città: I live in Madrid.",
+      "From indica l'origine, in il posto dove vivi adesso."
+     ],
+     "q": "Di dove sei, e dove vivi adesso?",
+     "c": "Racconta a qualcuno, o allo specchio, da dove vieni e dove vivi, in inglese."
+    },
+    "pt": {
+     "t": "Where are you from? De onde és?",
+     "g": "Aprende a dizer de onde és e onde vives, e a perguntar aos outros.",
+     "p": [
+      "Pergunta Where are you from? e responde I'm from Brazil.",
+      "Usa I live in com uma cidade: I live in Madrid.",
+      "From indica a origem e in o sítio onde vives agora."
+     ],
+     "q": "De onde és e onde vives agora?",
+     "c": "Diz a alguém, ou ao espelho, de onde és e onde vives, em inglês."
+    },
+    "pt_BR": {
+     "t": "Where are you from? De onde você é?",
+     "g": "Aprenda a dizer de onde você é e onde mora, e a perguntar para os outros.",
+     "p": [
+      "Pergunte Where are you from? e responda I'm from Brazil.",
+      "Use I live in com uma cidade: I live in Madrid.",
+      "From indica a origem e in o lugar onde você mora agora."
+     ],
+     "q": "De onde você é e onde mora hoje?",
+     "c": "Conte para alguém, ou para o espelho, de onde você é e onde mora, em inglês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Where are you from?",
+      "ex": "Where are you from, Ken?"
+     },
+     {
+      "w": "I'm from...",
+      "ex": "I'm from Japan."
+     },
+     {
+      "w": "I live in...",
+      "ex": "I live in Berlin."
+     },
+     {
+      "w": "a city",
+      "ex": "Porto is a beautiful city."
+     },
+     {
+      "w": "a country",
+      "ex": "Brazil is a big country."
+     },
+     {
+      "w": "What about you?",
+      "ex": "I live in Rome. What about you?"
+     }
+    ],
+    "gram": "Origin with from: I'm from Italy. Place you live with in: I live in Paris."
+   }
+  },
+  {
+   "d": 7,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The verb to be: I am, you are",
+     "g": "Use the verb to be in the present, in full and short forms.",
+     "p": [
+      "I am, you are, he is, she is, it is, we are, they are.",
+      "In speech we use short forms: I'm, you're, he's, she's, it's, we're, they're.",
+      "To be tells names, origins, jobs and feelings: She's Italian. We're happy."
+     ],
+     "q": "Can you tell me three things about yourself using I'm?",
+     "c": "Write five sentences with to be about people you know, using short forms."
+    },
+    "de": {
+     "t": "Das Verb to be: I am, you are",
+     "g": "Du lernst das Verb to be im Präsens, in Lang- und Kurzform.",
+     "p": [
+      "I am, you are, he is, she is, it is, we are, they are.",
+      "Gesprochen nimmt man Kurzformen: I'm, you're, he's, she's, it's, we're, they're.",
+      "To be nennt Namen, Herkunft, Beruf und Gefühle: She's Italian. We're happy."
+     ],
+     "q": "Kannst du mir mit I'm drei Dinge über dich sagen?",
+     "c": "Schreib fünf Sätze mit to be über Menschen, die du kennst, in Kurzformen."
+    },
+    "es": {
+     "t": "El verbo to be: I am, you are",
+     "g": "Aprende el verbo to be en presente, en forma completa y corta.",
+     "p": [
+      "I am, you are, he is, she is, it is, we are, they are.",
+      "Al hablar usamos formas cortas: I'm, you're, he's, she's, it's, we're, they're.",
+      "To be sirve para nombres, origen, trabajo y estados: She's Italian. We're happy."
+     ],
+     "q": "¿Me dices tres cosas sobre ti usando I'm?",
+     "c": "Escribe cinco frases con to be sobre personas que conoces, con formas cortas."
+    },
+    "fr": {
+     "t": "Le verbe to be : I am, you are",
+     "g": "Utiliser le verbe to be au présent, en forme pleine et contractée.",
+     "p": [
+      "I am, you are, he is, she is, it is, we are, they are.",
+      "À l'oral, on contracte : I'm, you're, he's, she's, it's, we're, they're.",
+      "To be sert pour le nom, l'origine, le métier, l'humeur : She's Italian. We're happy."
+     ],
+     "q": "Peux-tu me dire trois choses sur toi avec I'm ?",
+     "c": "Écris cinq phrases avec to be sur des gens que tu connais, en formes contractées."
+    },
+    "it": {
+     "t": "Il verbo to be: I am, you are",
+     "g": "Impari il verbo to be al presente, in forma piena e contratta.",
+     "p": [
+      "I am, you are, he is, she is, it is, we are, they are.",
+      "Parlando si usano le forme brevi: I'm, you're, he's, she's, it's, we're, they're.",
+      "To be indica nome, origine, lavoro e stati d'animo: She's Italian. We're happy."
+     ],
+     "q": "Mi dici tre cose su di te usando I'm?",
+     "c": "Scrivi cinque frasi con to be su persone che conosci, con le forme brevi."
+    },
+    "pt": {
+     "t": "O verbo to be: I am, you are",
+     "g": "Aprende o verbo to be no presente, na forma completa e na contraída.",
+     "p": [
+      "I am, you are, he is, she is, it is, we are, they are.",
+      "Ao falar usamos contrações: I'm, you're, he's, she's, it's, we're, they're.",
+      "To be serve para nome, origem, profissão e estados: She's Italian. We're happy."
+     ],
+     "q": "Consegues dizer-me três coisas sobre ti usando I'm?",
+     "c": "Escreve cinco frases com to be sobre pessoas que conheces, com contrações."
+    },
+    "pt_BR": {
+     "t": "O verbo to be: I am, you are",
+     "g": "Aprenda o verbo to be no presente, na forma completa e na contraída.",
+     "p": [
+      "I am, you are, he is, she is, it is, we are, they are.",
+      "Na fala usamos contrações: I'm, you're, he's, she's, it's, we're, they're.",
+      "To be serve para nome, origem, profissão e estados: She's Italian. We're happy."
+     ],
+     "q": "Você consegue me dizer três coisas sobre você usando I'm?",
+     "c": "Escreva cinco frases com to be sobre pessoas que você conhece, usando contrações."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "I am / I'm",
+      "ex": "I'm a student."
+     },
+     {
+      "w": "you are / you're",
+      "ex": "You're very kind."
+     },
+     {
+      "w": "he is / he's",
+      "ex": "He's from Canada."
+     },
+     {
+      "w": "she is / she's",
+      "ex": "She's my teacher."
+     },
+     {
+      "w": "we are / we're",
+      "ex": "We're friends."
+     },
+     {
+      "w": "they are / they're",
+      "ex": "They're at home."
+     }
+    ],
+    "gram": "To be: I am, you are, he/she/it is, we are, they are. Short forms: I'm, you're, he's, we're, they're."
+   }
+  },
+  {
+   "d": 8,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Countries and nationalities",
+     "g": "Match countries with their nationality words and use them in sentences.",
+     "p": [
+      "Many nationalities end in -an or -ian: Italy, Italian; Brazil, Brazilian.",
+      "Others end in -ese or -ish: Japan, Japanese; Spain, Spanish.",
+      "Countries and nationalities always start with a capital letter in English."
+     ],
+     "q": "What is your nationality, and which nationality word in English do you find tricky?",
+     "c": "Write five countries you would love to visit and their nationality words."
+    },
+    "de": {
+     "t": "Länder und Nationalitäten",
+     "g": "Du lernst, Länder und Nationalitäten zuzuordnen und in Sätzen zu benutzen.",
+     "p": [
+      "Viele Nationalitäten enden auf -an oder -ian: Italy, Italian; Brazil, Brazilian.",
+      "Andere enden auf -ese oder -ish: Japan, Japanese; Spain, Spanish.",
+      "Länder und Nationalitäten schreibt man im Englischen immer groß."
+     ],
+     "q": "Welche Nationalität hast du, und welches Wort findest du auf Englisch knifflig?",
+     "c": "Schreib fünf Länder auf, die du gern besuchen würdest, mit ihren Nationalitäten."
+    },
+    "es": {
+     "t": "Países y nacionalidades",
+     "g": "Aprende a relacionar países y nacionalidades y a usarlos en frases.",
+     "p": [
+      "Muchas nacionalidades terminan en -an o -ian: Italy, Italian; Brazil, Brazilian.",
+      "Otras terminan en -ese o -ish: Japan, Japanese; Spain, Spanish.",
+      "En inglés, países y nacionalidades siempre van con mayúscula."
+     ],
+     "q": "¿Cuál es tu nacionalidad y qué palabra de nacionalidad en inglés te cuesta?",
+     "c": "Escribe cinco países que te encantaría visitar y su nacionalidad en inglés."
+    },
+    "fr": {
+     "t": "Pays et nationalités",
+     "g": "Associer pays et nationalités et les utiliser dans des phrases.",
+     "p": [
+      "Beaucoup finissent en -an ou -ian : Italy, Italian ; Brazil, Brazilian.",
+      "D'autres finissent en -ese ou -ish : Japan, Japanese ; Spain, Spanish.",
+      "En anglais, pays et nationalités prennent toujours une majuscule."
+     ],
+     "q": "Quelle est ta nationalité, et quel mot de nationalité anglais te paraît difficile ?",
+     "c": "Écris cinq pays que tu aimerais visiter et leur nationalité en anglais."
+    },
+    "it": {
+     "t": "Paesi e nazionalità",
+     "g": "Impari ad abbinare paesi e nazionalità e a usarli nelle frasi.",
+     "p": [
+      "Molte nazionalità finiscono in -an o -ian: Italy, Italian; Brazil, Brazilian.",
+      "Altre finiscono in -ese o -ish: Japan, Japanese; Spain, Spanish.",
+      "In inglese paesi e nazionalità hanno sempre la maiuscola."
+     ],
+     "q": "Qual è la tua nazionalità, e quale parola inglese di nazionalità trovi difficile?",
+     "c": "Scrivi cinque paesi che ti piacerebbe visitare e la loro nazionalità in inglese."
+    },
+    "pt": {
+     "t": "Países e nacionalidades",
+     "g": "Aprende a ligar países a nacionalidades e a usá-los em frases.",
+     "p": [
+      "Muitas nacionalidades acabam em -an ou -ian: Italy, Italian; Brazil, Brazilian.",
+      "Outras acabam em -ese ou -ish: Japan, Japanese; Spain, Spanish.",
+      "Em inglês, países e nacionalidades levam sempre maiúscula."
+     ],
+     "q": "Qual é a tua nacionalidade, e que palavra de nacionalidade em inglês achas difícil?",
+     "c": "Escreve cinco países que adorarias visitar e a nacionalidade de cada um em inglês."
+    },
+    "pt_BR": {
+     "t": "Países e nacionalidades",
+     "g": "Aprenda a ligar países a nacionalidades e a usar essas palavras em frases.",
+     "p": [
+      "Muitas nacionalidades terminam em -an ou -ian: Italy, Italian; Brazil, Brazilian.",
+      "Outras terminam em -ese ou -ish: Japan, Japanese; Spain, Spanish.",
+      "Em inglês, países e nacionalidades sempre têm letra maiúscula."
+     ],
+     "q": "Qual é a sua nacionalidade, e qual palavra de nacionalidade em inglês você acha difícil?",
+     "c": "Escreva cinco países que você adoraria visitar e a nacionalidade de cada um em inglês."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Brazilian",
+      "ex": "Paulo is Brazilian."
+     },
+     {
+      "w": "Spanish",
+      "ex": "Spanish food is delicious."
+     },
+     {
+      "w": "Japanese",
+      "ex": "My friend Yuki is Japanese."
+     },
+     {
+      "w": "French",
+      "ex": "She speaks French."
+     },
+     {
+      "w": "German",
+      "ex": "Is he German or Austrian?"
+     },
+     {
+      "w": "nationality",
+      "ex": "What's your nationality?"
+     }
+    ],
+    "gram": "Country Spain, nationality Spanish: She's Spanish. Both always start with a capital letter."
+   }
+  },
+  {
+   "d": 9,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "How are you? Everyday answers",
+     "g": "Ask how someone is and answer naturally in different moods.",
+     "p": [
+      "Ask How are you? or, more casually, How's it going?",
+      "Answer with I'm fine, great, not bad or a bit tired, and add thank you or thanks.",
+      "Always send the question back: And you?"
+     ],
+     "q": "So, how are you today, honestly?",
+     "c": "Ask three people How are you? today and listen to their answers."
+    },
+    "de": {
+     "t": "How are you? Alltägliche Antworten",
+     "g": "Du lernst zu fragen, wie es jemandem geht, und natürlich zu antworten.",
+     "p": [
+      "Frag How are you? oder lockerer How's it going?",
+      "Antworte mit I'm fine, great, not bad oder a bit tired und füge thank you oder thanks hinzu.",
+      "Gib die Frage immer zurück: And you?"
+     ],
+     "q": "Also, wie geht es dir heute, ehrlich?",
+     "c": "Frag heute drei Menschen How are you? und hör dir ihre Antworten an."
+    },
+    "es": {
+     "t": "How are you? Respuestas de cada día",
+     "g": "Aprende a preguntar cómo está alguien y a responder con naturalidad.",
+     "p": [
+      "Pregunta How are you? o, más informal, How's it going?",
+      "Responde I'm fine, great, not bad o a bit tired, y añade thank you o thanks.",
+      "Devuelve siempre la pregunta: And you?"
+     ],
+     "q": "Bueno, ¿cómo estás hoy, de verdad?",
+     "c": "Pregunta How are you? a tres personas hoy y escucha sus respuestas."
+    },
+    "fr": {
+     "t": "How are you? Les réponses du quotidien",
+     "g": "Demander comment va quelqu'un et répondre naturellement selon ton humeur.",
+     "p": [
+      "Demande How are you? ou, plus détendu, How's it going?",
+      "Réponds I'm fine, great, not bad ou a bit tired, et ajoute thank you ou thanks.",
+      "Renvoie toujours la question : And you?"
+     ],
+     "q": "Alors, comment vas-tu aujourd'hui, franchement ?",
+     "c": "Pose How are you? à trois personnes aujourd'hui et écoute leurs réponses."
+    },
+    "it": {
+     "t": "How are you? Le risposte di tutti i giorni",
+     "g": "Impari a chiedere come sta qualcuno e a rispondere in modo naturale.",
+     "p": [
+      "Chiedi How are you? oppure, più informale, How's it going?",
+      "Rispondi I'm fine, great, not bad o a bit tired, e aggiungi thank you o thanks.",
+      "Ricambia sempre la domanda: And you?"
+     ],
+     "q": "Allora, come stai oggi, sinceramente?",
+     "c": "Chiedi How are you? a tre persone oggi e ascolta le loro risposte."
+    },
+    "pt": {
+     "t": "How are you? Respostas do dia a dia",
+     "g": "Aprende a perguntar como alguém está e a responder com naturalidade.",
+     "p": [
+      "Pergunta How are you? ou, mais descontraído, How's it going?",
+      "Responde I'm fine, great, not bad ou a bit tired, e junta thank you ou thanks.",
+      "Devolve sempre a pergunta: And you?"
+     ],
+     "q": "Então, como estás hoje, a sério?",
+     "c": "Pergunta How are you? a três pessoas hoje e ouve as respostas."
+    },
+    "pt_BR": {
+     "t": "How are you? Respostas do dia a dia",
+     "g": "Aprenda a perguntar como alguém está e a responder com naturalidade.",
+     "p": [
+      "Pergunte How are you? ou, mais descontraído, How's it going?",
+      "Responda I'm fine, great, not bad ou a bit tired, e acrescente thank you ou thanks.",
+      "Sempre devolva a pergunta: And you?"
+     ],
+     "q": "E aí, como você está hoje, de verdade?",
+     "c": "Pergunte How are you? para três pessoas hoje e escute as respostas."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "How are you?",
+      "ex": "Hi, Emma! How are you?"
+     },
+     {
+      "w": "I'm fine, thanks.",
+      "ex": "I'm fine, thanks. And you?"
+     },
+     {
+      "w": "great",
+      "ex": "I'm great today!"
+     },
+     {
+      "w": "not bad",
+      "ex": "Not bad, thank you."
+     },
+     {
+      "w": "a bit tired",
+      "ex": "I'm a bit tired this morning."
+     },
+     {
+      "w": "How's it going?",
+      "ex": "Hey, Sam! How's it going?"
+     }
+    ],
+    "gram": "How are you? I'm fine, thanks. And you? Use I'm + adjective: I'm great, I'm a bit tired."
+   }
+  },
+  {
+   "d": 10,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Classroom phrases: Can you repeat?",
+     "g": "Use survival phrases when you don't understand something in English.",
+     "p": [
+      "Say Sorry? or Can you repeat that, please? when you miss something.",
+      "Ask Can you speak more slowly, please? when people talk fast.",
+      "Ask What does this mean? for new words, and How do you say... in English?"
+     ],
+     "q": "Which of these phrases do you think you will need most often?",
+     "c": "Use Can you repeat that, please? at least once today, with me or someone else."
+    },
+    "de": {
+     "t": "Phrasen für den Unterricht: Can you repeat?",
+     "g": "Du lernst Rettungssätze für Momente, in denen du etwas nicht verstehst.",
+     "p": [
+      "Sag Sorry? oder Can you repeat that, please?, wenn du etwas verpasst.",
+      "Frag Can you speak more slowly, please?, wenn jemand schnell spricht.",
+      "Frag What does this mean? bei neuen Wörtern und How do you say... in English?"
+     ],
+     "q": "Welchen dieser Sätze wirst du wohl am häufigsten brauchen?",
+     "c": "Benutze heute mindestens einmal Can you repeat that, please?, mit mir oder jemand anderem."
+    },
+    "es": {
+     "t": "Frases de clase: Can you repeat?",
+     "g": "Aprende frases de rescate para cuando no entiendes algo en inglés.",
+     "p": [
+      "Di Sorry? o Can you repeat that, please? cuando se te escapa algo.",
+      "Pide Can you speak more slowly, please? si alguien habla rápido.",
+      "Pregunta What does this mean? con palabras nuevas, y How do you say... in English?"
+     ],
+     "q": "¿Cuál de estas frases crees que vas a necesitar más?",
+     "c": "Usa Can you repeat that, please? al menos una vez hoy, conmigo o con otra persona."
+    },
+    "fr": {
+     "t": "Phrases de classe : Can you repeat?",
+     "g": "Utiliser des phrases de secours quand tu ne comprends pas quelque chose en anglais.",
+     "p": [
+      "Dis Sorry? ou Can you repeat that, please? quand tu as raté quelque chose.",
+      "Demande Can you speak more slowly, please? quand on parle vite.",
+      "Demande What does this mean? pour un mot nouveau, et How do you say... in English?"
+     ],
+     "q": "Laquelle de ces phrases vas-tu utiliser le plus souvent, à ton avis ?",
+     "c": "Utilise Can you repeat that, please? au moins une fois aujourd'hui, avec moi ou un autre."
+    },
+    "it": {
+     "t": "Frasi da classe: Can you repeat?",
+     "g": "Impari le frasi salvavita per quando non capisci qualcosa in inglese.",
+     "p": [
+      "Di' Sorry? o Can you repeat that, please? quando ti sfugge qualcosa.",
+      "Chiedi Can you speak more slowly, please? se qualcuno parla veloce.",
+      "Chiedi What does this mean? per le parole nuove, e How do you say... in English?"
+     ],
+     "q": "Quale di queste frasi pensi che userai più spesso?",
+     "c": "Usa Can you repeat that, please? almeno una volta oggi, con me o con qualcun altro."
+    },
+    "pt": {
+     "t": "Frases de aula: Can you repeat?",
+     "g": "Aprende frases de socorro para quando não percebes algo em inglês.",
+     "p": [
+      "Diz Sorry? ou Can you repeat that, please? quando te escapa alguma coisa.",
+      "Pede Can you speak more slowly, please? se alguém fala depressa.",
+      "Pergunta What does this mean? para palavras novas, e How do you say... in English?"
+     ],
+     "q": "Qual destas frases achas que vais precisar mais vezes?",
+     "c": "Usa Can you repeat that, please? pelo menos uma vez hoje, comigo ou com outra pessoa."
+    },
+    "pt_BR": {
+     "t": "Frases de sala de aula: Can you repeat?",
+     "g": "Aprenda frases de socorro para quando você não entende algo em inglês.",
+     "p": [
+      "Diga Sorry? ou Can you repeat that, please? quando perder alguma coisa.",
+      "Peça Can you speak more slowly, please? se alguém fala rápido.",
+      "Pergunte What does this mean? para palavras novas, e How do you say... in English?"
+     ],
+     "q": "Qual dessas frases você acha que vai usar mais?",
+     "c": "Use Can you repeat that, please? pelo menos uma vez hoje, comigo ou com outra pessoa."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "Sorry?",
+      "ex": "Sorry? I didn't hear you."
+     },
+     {
+      "w": "Can you repeat that, please?",
+      "ex": "Can you repeat that, please?"
+     },
+     {
+      "w": "more slowly",
+      "ex": "Can you speak more slowly, please?"
+     },
+     {
+      "w": "What does this mean?",
+      "ex": "What does this word mean?"
+     },
+     {
+      "w": "How do you say...?",
+      "ex": "How do you say obrigado in English?"
+     },
+     {
+      "w": "I don't understand.",
+      "ex": "Sorry, I don't understand."
+     }
+    ],
+    "gram": "Polite requests with Can you + verb + please: Can you repeat that, please? Can you speak more slowly?"
+   }
+  }
+ ]
+}

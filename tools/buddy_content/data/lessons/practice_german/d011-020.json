@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_german",
+ "lessons": [
+  {
+   "d": 11,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Where do you live? Wohnen",
+     "g": "Say where you live and meet your first regular verb, wohnen.",
+     "p": [
+      "Wohnen follows a simple pattern: ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen.",
+      "Use in for cities and countries (ich wohne in Hamburg) and ask wo wohnst du? or wo wohnen Sie?",
+      "Wohnen is where you live; leben is live in a wider sense: ich lebe gern in Berlin."
+     ],
+     "q": "Wo wohnst du? Tell me your city in German and one word about it.",
+     "c": "Write three sentences with wohnen: where you live, where a friend lives, where your family lives."
+    },
+    "de": {
+     "t": "Wo wohnst du? Wohnen",
+     "g": "Du sagst, wo du wohnst, und lernst dein erstes regelmäßiges Verb: wohnen.",
+     "p": [
+      "Wohnen folgt einem einfachen Muster: ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen.",
+      "Bei Städten und Ländern sagst du in: Ich wohne in Hamburg. Frage: Wo wohnst du? oder Wo wohnen Sie?",
+      "Wohnen bedeutet den Wohnort; leben ist allgemeiner: Ich lebe gern in Berlin."
+     ],
+     "q": "Wo wohnst du? Nenn mir deine Stadt auf Deutsch und ein Wort dazu.",
+     "c": "Schreib drei Sätze mit wohnen: wo du wohnst, wo ein Freund wohnt, wo deine Familie wohnt."
+    },
+    "es": {
+     "t": "¿Dónde vives? Wohnen",
+     "g": "Di dónde vives y conoce tu primer verbo regular, wohnen.",
+     "p": [
+      "Wohnen sigue un patrón sencillo: ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen.",
+      "Con ciudades y países se usa in (ich wohne in Hamburg) y se pregunta wo wohnst du? o wo wohnen Sie?",
+      "Wohnen es el lugar donde vives; leben es vivir en sentido amplio: ich lebe gern in Berlin."
+     ],
+     "q": "Wo wohnst du? Dime tu ciudad en alemán y una palabra sobre ella.",
+     "c": "Escribe tres frases con wohnen: dónde vives tú, un amigo y tu familia."
+    },
+    "fr": {
+     "t": "Où habites-tu ? Wohnen",
+     "g": "Dire où tu habites et découvrir ton premier verbe régulier, wohnen.",
+     "p": [
+      "Wohnen suit un modèle simple : ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen.",
+      "Avec les villes et les pays, on dit in (ich wohne in Hamburg) et on demande wo wohnst du ? ou wo wohnen Sie ?",
+      "Wohnen, c'est habiter ; leben, c'est vivre au sens large : ich lebe gern in Berlin."
+     ],
+     "q": "Wo wohnst du ? Dis-moi ta ville en allemand et un mot sur elle.",
+     "c": "Écris trois phrases avec wohnen : où tu habites, où habite un ami, où habite ta famille."
+    },
+    "it": {
+     "t": "Dove abiti? Wohnen",
+     "g": "Dici dove abiti e conosci il tuo primo verbo regolare, wohnen.",
+     "p": [
+      "Wohnen segue uno schema semplice: ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen.",
+      "Con città e paesi si usa in (ich wohne in Hamburg) e si chiede wo wohnst du? o wo wohnen Sie?",
+      "Wohnen è abitare; leben è vivere in senso ampio: ich lebe gern in Berlin."
+     ],
+     "q": "Wo wohnst du? Dimmi la tua città in tedesco e una parola su di essa.",
+     "c": "Scrivi tre frasi con wohnen: dove abiti tu, un amico e la tua famiglia."
+    },
+    "pt": {
+     "t": "Onde moras? Wohnen",
+     "g": "Dizer onde moras e conhecer o teu primeiro verbo regular, wohnen.",
+     "p": [
+      "Wohnen segue um padrão simples: ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen.",
+      "Com cidades e países usa-se in (ich wohne in Hamburg) e pergunta-se wo wohnst du? ou wo wohnen Sie?",
+      "Wohnen é morar; leben é viver num sentido mais amplo: ich lebe gern in Berlin."
+     ],
+     "q": "Wo wohnst du? Diz-me a tua cidade em alemão e uma palavra sobre ela.",
+     "c": "Escreve três frases com wohnen: onde moras tu, um amigo e a tua família."
+    },
+    "pt_BR": {
+     "t": "Onde você mora? Wohnen",
+     "g": "Dizer onde você mora e conhecer seu primeiro verbo regular, wohnen.",
+     "p": [
+      "Wohnen segue um padrão simples: ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen.",
+      "Com cidades e países use in (ich wohne in Hamburg) e pergunte wo wohnst du? ou wo wohnen Sie?",
+      "Wohnen é morar; leben é viver num sentido mais amplo: ich lebe gern in Berlin."
+     ],
+     "q": "Wo wohnst du? Me diga sua cidade em alemão e uma palavra sobre ela.",
+     "c": "Escreva três frases com wohnen: onde você mora, onde um amigo mora e onde sua família mora."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "wohnen",
+      "ex": "Ich wohne in Hamburg."
+     },
+     {
+      "w": "Wo wohnst du?",
+      "ex": "Wo wohnst du jetzt?"
+     },
+     {
+      "w": "die Stadt",
+      "ex": "München ist eine schöne Stadt."
+     },
+     {
+      "w": "das Land",
+      "ex": "Ich wohne auf dem Land."
+     },
+     {
+      "w": "leben",
+      "ex": "Wir leben gern hier."
+     },
+     {
+      "w": "hier",
+      "ex": "Wohnst du auch hier?"
+     }
+    ],
+    "gram": "wohnen: ich wohne, du wohnst, er wohnt, wir wohnen, ihr wohnt, sie/Sie wohnen. Wo? – in + Stadt: in Wien."
+   }
+  },
+  {
+   "d": 12,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Regular verbs in the present",
+     "g": "Conjugate any regular German verb in the present tense.",
+     "p": [
+      "Take the infinitive, remove -en to get the stem (mach-en), then add -e, -st, -t, -en, -t, -en.",
+      "Machen, lernen, spielen, kochen and hören all follow this pattern: du lernst, er spielt, wir kochen.",
+      "Stems ending in -t or -d add an extra e: du arbeitest, er findet. German present also covers I am doing."
+     ],
+     "q": "What do you do on a normal evening? Use two regular verbs, like ich koche or ich höre Musik.",
+     "c": "Conjugate lernen and spielen in all six forms, then make one true sentence with each."
+    },
+    "de": {
+     "t": "Regelmäßige Verben im Präsens",
+     "g": "Du konjugierst jedes regelmäßige Verb im Präsens.",
+     "p": [
+      "Nimm den Infinitiv, streich -en für den Stamm (mach-en) und häng -e, -st, -t, -en, -t, -en an.",
+      "Machen, lernen, spielen, kochen und hören folgen alle diesem Muster: du lernst, er spielt, wir kochen.",
+      "Stämme auf -t oder -d bekommen ein extra e: du arbeitest, er findet."
+     ],
+     "q": "Was machst du an einem normalen Abend? Benutze zwei regelmäßige Verben, zum Beispiel ich koche.",
+     "c": "Konjugiere lernen und spielen in allen sechs Formen und bilde mit jedem einen wahren Satz."
+    },
+    "es": {
+     "t": "Verbos regulares en presente",
+     "g": "Conjuga cualquier verbo regular alemán en presente.",
+     "p": [
+      "Quita -en al infinitivo para tener la raíz (mach-en) y añade -e, -st, -t, -en, -t, -en.",
+      "Machen, lernen, spielen, kochen y hören siguen este modelo: du lernst, er spielt, wir kochen.",
+      "Las raíces en -t o -d añaden una e: du arbeitest, er findet. El presente alemán también expresa estoy haciendo."
+     ],
+     "q": "¿Qué haces una tarde normal? Usa dos verbos regulares, como ich koche o ich höre Musik.",
+     "c": "Conjuga lernen y spielen en las seis formas y haz una frase real con cada uno."
+    },
+    "fr": {
+     "t": "Les verbes réguliers au présent",
+     "g": "Conjuguer n'importe quel verbe régulier allemand au présent.",
+     "p": [
+      "Enlève -en à l'infinitif pour obtenir le radical (mach-en), puis ajoute -e, -st, -t, -en, -t, -en.",
+      "Machen, lernen, spielen, kochen et hören suivent ce modèle : du lernst, er spielt, wir kochen.",
+      "Les radicaux en -t ou -d prennent un e en plus : du arbeitest, er findet."
+     ],
+     "q": "Que fais-tu un soir normal ? Utilise deux verbes réguliers, comme ich koche ou ich höre Musik.",
+     "c": "Conjugue lernen et spielen aux six personnes, puis fais une phrase vraie avec chacun."
+    },
+    "it": {
+     "t": "Verbi regolari al presente",
+     "g": "Coniughi qualsiasi verbo regolare tedesco al presente.",
+     "p": [
+      "Togli -en all'infinito per avere la radice (mach-en) e aggiungi -e, -st, -t, -en, -t, -en.",
+      "Machen, lernen, spielen, kochen e hören seguono questo schema: du lernst, er spielt, wir kochen.",
+      "Le radici in -t o -d aggiungono una e: du arbeitest, er findet. Il presente tedesco vale anche per sto facendo."
+     ],
+     "q": "Che cosa fai in una sera normale? Usa due verbi regolari, come ich koche o ich höre Musik.",
+     "c": "Coniuga lernen e spielen in tutte e sei le forme e fai una frase vera con ciascuno."
+    },
+    "pt": {
+     "t": "Verbos regulares no presente",
+     "g": "Conjugar qualquer verbo regular alemão no presente.",
+     "p": [
+      "Tira -en ao infinitivo para obter o radical (mach-en) e junta -e, -st, -t, -en, -t, -en.",
+      "Machen, lernen, spielen, kochen e hören seguem este modelo: du lernst, er spielt, wir kochen.",
+      "Radicais em -t ou -d ganham um e extra: du arbeitest, er findet. O presente alemão também serve para estou a fazer."
+     ],
+     "q": "O que fazes numa noite normal? Usa dois verbos regulares, como ich koche ou ich höre Musik.",
+     "c": "Conjuga lernen e spielen nas seis formas e faz uma frase verdadeira com cada um."
+    },
+    "pt_BR": {
+     "t": "Verbos regulares no presente",
+     "g": "Conjugar qualquer verbo regular alemão no presente.",
+     "p": [
+      "Tire -en do infinitivo para ter o radical (mach-en) e acrescente -e, -st, -t, -en, -t, -en.",
+      "Machen, lernen, spielen, kochen e hören seguem esse modelo: du lernst, er spielt, wir kochen.",
+      "Radicais em -t ou -d ganham um e extra: du arbeitest, er findet. O presente alemão também vale para estou fazendo."
+     ],
+     "q": "O que você faz numa noite normal? Use dois verbos regulares, como ich koche ou ich höre Musik.",
+     "c": "Conjugue lernen e spielen nas seis formas e faça uma frase verdadeira com cada um."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "machen",
+      "ex": "Was machst du heute?"
+     },
+     {
+      "w": "lernen",
+      "ex": "Ich lerne Deutsch."
+     },
+     {
+      "w": "spielen",
+      "ex": "Er spielt Gitarre."
+     },
+     {
+      "w": "kochen",
+      "ex": "Wir kochen zusammen."
+     },
+     {
+      "w": "hören",
+      "ex": "Hörst du gern Musik?"
+     },
+     {
+      "w": "arbeiten",
+      "ex": "Sie arbeitet in Berlin."
+     }
+    ],
+    "gram": "Stamm + Endung: ich lerne, du lernst, er lernt, wir lernen, ihr lernt, sie lernen. Stamm auf -t/-d: du arbeitest."
+   }
+  },
+  {
+   "d": 13,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Three genders: der, die, das",
+     "g": "Understand that every German noun has a gender and learn smart ways to guess it.",
+     "p": [
+      "Der is masculine, die feminine, das neuter, and nouns are always capitalised: der Tisch, die Lampe, das Buch.",
+      "Grammar gender is not logic: das Mädchen (girl) is neuter. Always learn a noun together with its article.",
+      "Handy clues: -ung, -heit, -keit are die; -chen and -lein are das; days, months and seasons are der."
+     ],
+     "q": "Pick three objects near you. Do you know or can you guess their German article?",
+     "c": "Make 6 flashcards with article and noun, using colours: blue for der, red for die, green for das."
+    },
+    "de": {
+     "t": "Drei Genera: der, die, das",
+     "g": "Du verstehst, dass jedes Nomen ein Genus hat, und lernst Tricks zum Raten.",
+     "p": [
+      "Der ist maskulin, die feminin, das neutral, und Nomen schreibt man immer groß: der Tisch, die Lampe, das Buch.",
+      "Das Genus ist nicht logisch: das Mädchen ist neutral. Lern jedes Nomen immer mit Artikel.",
+      "Gute Hinweise: -ung, -heit, -keit sind die; -chen und -lein sind das; Tage, Monate und Jahreszeiten sind der."
+     ],
+     "q": "Nimm drei Gegenstände in deiner Nähe. Kennst oder errätst du ihren Artikel?",
+     "c": "Mach sechs Lernkarten mit Artikel und Nomen in Farben: blau für der, rot für die, grün für das."
+    },
+    "es": {
+     "t": "Tres géneros: der, die, das",
+     "g": "Entiende que cada sustantivo alemán tiene género y aprende trucos para adivinarlo.",
+     "p": [
+      "Der es masculino, die femenino, das neutro, y los sustantivos van siempre con mayúscula: der Tisch, die Lampe, das Buch.",
+      "El género no es lógico: das Mädchen (la chica) es neutro. Aprende cada sustantivo con su artículo.",
+      "Pistas útiles: -ung, -heit, -keit son die; -chen y -lein son das; días, meses y estaciones son der."
+     ],
+     "q": "Elige tres objetos cercanos. ¿Conoces o adivinas su artículo en alemán?",
+     "c": "Haz 6 tarjetas con artículo y sustantivo por colores: azul para der, rojo para die, verde para das."
+    },
+    "fr": {
+     "t": "Trois genres : der, die, das",
+     "g": "Comprendre que chaque nom allemand a un genre et apprendre des astuces pour le deviner.",
+     "p": [
+      "Der est masculin, die féminin, das neutre, et les noms prennent toujours une majuscule : der Tisch, die Lampe, das Buch.",
+      "Le genre ne suit pas la logique : das Mädchen (la fille) est neutre. Apprends toujours le nom avec son article.",
+      "Indices utiles : -ung, -heit, -keit sont die ; -chen et -lein sont das ; jours, mois et saisons sont der."
+     ],
+     "q": "Choisis trois objets autour de toi. Connais-tu ou devines-tu leur article allemand ?",
+     "c": "Fais 6 fiches avec article et nom en couleurs : bleu pour der, rouge pour die, vert pour das."
+    },
+    "it": {
+     "t": "Tre generi: der, die, das",
+     "g": "Capisci che ogni sostantivo tedesco ha un genere e impari trucchi per indovinarlo.",
+     "p": [
+      "Der è maschile, die femminile, das neutro, e i sostantivi hanno sempre la maiuscola: der Tisch, die Lampe, das Buch.",
+      "Il genere non è logico: das Mädchen (la ragazza) è neutro. Impara sempre il nome con l'articolo.",
+      "Indizi utili: -ung, -heit, -keit sono die; -chen e -lein sono das; giorni, mesi e stagioni sono der."
+     ],
+     "q": "Scegli tre oggetti vicino a te. Conosci o indovini il loro articolo tedesco?",
+     "c": "Prepara 6 schede con articolo e nome a colori: blu per der, rosso per die, verde per das."
+    },
+    "pt": {
+     "t": "Três géneros: der, die, das",
+     "g": "Perceber que cada substantivo alemão tem género e aprender truques para o adivinhar.",
+     "p": [
+      "Der é masculino, die feminino, das neutro, e os substantivos levam sempre maiúscula: der Tisch, die Lampe, das Buch.",
+      "O género não é lógico: das Mädchen (a rapariga) é neutro. Aprende sempre o nome com o artigo.",
+      "Pistas úteis: -ung, -heit, -keit são die; -chen e -lein são das; dias, meses e estações são der."
+     ],
+     "q": "Escolhe três objetos perto de ti. Conheces ou adivinhas o artigo alemão deles?",
+     "c": "Faz 6 cartões com artigo e nome por cores: azul para der, vermelho para die, verde para das."
+    },
+    "pt_BR": {
+     "t": "Três gêneros: der, die, das",
+     "g": "Entender que cada substantivo alemão tem gênero e aprender truques para adivinhar.",
+     "p": [
+      "Der é masculino, die feminino, das neutro, e substantivos sempre têm maiúscula: der Tisch, die Lampe, das Buch.",
+      "O gênero não é lógico: das Mädchen (a menina) é neutro. Aprenda sempre o nome junto com o artigo.",
+      "Dicas úteis: -ung, -heit, -keit são die; -chen e -lein são das; dias, meses e estações são der."
+     ],
+     "q": "Escolha três objetos perto de você. Você sabe ou adivinha o artigo deles em alemão?",
+     "c": "Faça 6 cartões com artigo e nome por cores: azul para der, vermelho para die, verde para das."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Tisch",
+      "ex": "Der Tisch ist neu."
+     },
+     {
+      "w": "die Lampe",
+      "ex": "Die Lampe ist hell."
+     },
+     {
+      "w": "das Buch",
+      "ex": "Das Buch ist spannend."
+     },
+     {
+      "w": "das Mädchen",
+      "ex": "Das Mädchen heißt Emma."
+     },
+     {
+      "w": "die Zeitung",
+      "ex": "Die Zeitung liegt hier."
+     },
+     {
+      "w": "der Montag",
+      "ex": "Der Montag ist lang."
+     }
+    ],
+    "gram": "der (maskulin), die (feminin), das (neutral). -ung/-heit/-keit = die, -chen/-lein = das. Nomen immer groß und mit Artikel lernen."
+   }
+  },
+  {
+   "d": 14,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Ein and eine",
+     "g": "Use the indefinite articles ein and eine to name things.",
+     "p": [
+      "Ein goes with der and das nouns (ein Tisch, ein Buch); eine goes with die nouns (eine Lampe).",
+      "Das ist ein..., das ist eine... is the perfect pattern to name what you see; the definite article follows when you say more.",
+      "Example: Das ist ein Hund. Der Hund ist klein. There is no indefinite article in the plural: das sind Bücher."
+     ],
+     "q": "Look around: what is one thing in your room? Answer with das ist ein... or das ist eine...",
+     "c": "Walk through your home and name 8 things aloud: das ist ein Stuhl, das ist eine Tür..."
+    },
+    "de": {
+     "t": "Ein und eine",
+     "g": "Du benutzt die unbestimmten Artikel ein und eine, um Dinge zu benennen.",
+     "p": [
+      "Ein steht bei der- und das-Wörtern (ein Tisch, ein Buch), eine bei die-Wörtern (eine Lampe).",
+      "Das ist ein..., das ist eine... ist das ideale Muster; danach folgt der bestimmte Artikel: Der Tisch ist alt.",
+      "Beispiel: Das ist ein Hund. Der Hund ist klein. Im Plural gibt es keinen unbestimmten Artikel: Das sind Bücher."
+     ],
+     "q": "Schau dich um: Was ist ein Ding in deinem Zimmer? Antworte mit das ist ein... oder eine...",
+     "c": "Geh durch deine Wohnung und nenne acht Dinge laut: Das ist ein Stuhl, das ist eine Tür..."
+    },
+    "es": {
+     "t": "Ein y eine",
+     "g": "Usa los artículos indefinidos ein y eine para nombrar cosas.",
+     "p": [
+      "Ein va con sustantivos der y das (ein Tisch, ein Buch); eine va con sustantivos die (eine Lampe).",
+      "Das ist ein..., das ist eine... es el patrón perfecto; después se usa el artículo definido para decir más.",
+      "Ejemplo: Das ist ein Hund. Der Hund ist klein. En plural no hay artículo indefinido: das sind Bücher."
+     ],
+     "q": "Mira a tu alrededor: ¿qué cosa hay en tu habitación? Responde con das ist ein... o das ist eine...",
+     "c": "Recorre tu casa y nombra 8 cosas en voz alta: das ist ein Stuhl, das ist eine Tür..."
+    },
+    "fr": {
+     "t": "Ein et eine",
+     "g": "Utiliser les articles indéfinis ein et eine pour nommer des choses.",
+     "p": [
+      "Ein va avec les noms der et das (ein Tisch, ein Buch) ; eine va avec les noms die (eine Lampe).",
+      "Das ist ein..., das ist eine... est le modèle parfait ; ensuite on reprend avec l'article défini.",
+      "Exemple : Das ist ein Hund. Der Hund ist klein. Au pluriel, pas d'article indéfini : das sind Bücher."
+     ],
+     "q": "Regarde autour de toi : quel objet y a-t-il dans ta chambre ? Réponds avec das ist ein... ou eine...",
+     "c": "Fais le tour de chez toi et nomme 8 objets à voix haute : das ist ein Stuhl, das ist eine Tür..."
+    },
+    "it": {
+     "t": "Ein ed eine",
+     "g": "Usi gli articoli indeterminativi ein ed eine per nominare le cose.",
+     "p": [
+      "Ein va con i nomi der e das (ein Tisch, ein Buch); eine va con i nomi die (eine Lampe).",
+      "Das ist ein..., das ist eine... è lo schema perfetto; poi si riprende con l'articolo determinativo.",
+      "Esempio: Das ist ein Hund. Der Hund ist klein. Al plurale non c'è articolo indeterminativo: das sind Bücher."
+     ],
+     "q": "Guardati intorno: che oggetto c'è nella tua stanza? Rispondi con das ist ein... o das ist eine...",
+     "c": "Gira per casa e nomina 8 oggetti ad alta voce: das ist ein Stuhl, das ist eine Tür..."
+    },
+    "pt": {
+     "t": "Ein e eine",
+     "g": "Usar os artigos indefinidos ein e eine para nomear coisas.",
+     "p": [
+      "Ein vai com nomes der e das (ein Tisch, ein Buch); eine vai com nomes die (eine Lampe).",
+      "Das ist ein..., das ist eine... é o padrão perfeito; depois retoma-se com o artigo definido.",
+      "Exemplo: Das ist ein Hund. Der Hund ist klein. No plural não há artigo indefinido: das sind Bücher."
+     ],
+     "q": "Olha à tua volta: que objeto há no teu quarto? Responde com das ist ein... ou das ist eine...",
+     "c": "Percorre a tua casa e nomeia 8 coisas em voz alta: das ist ein Stuhl, das ist eine Tür..."
+    },
+    "pt_BR": {
+     "t": "Ein e eine",
+     "g": "Usar os artigos indefinidos ein e eine para nomear coisas.",
+     "p": [
+      "Ein vai com nomes der e das (ein Tisch, ein Buch); eine vai com nomes die (eine Lampe).",
+      "Das ist ein..., das ist eine... é o padrão perfeito; depois se retoma com o artigo definido.",
+      "Exemplo: Das ist ein Hund. Der Hund ist klein. No plural não existe artigo indefinido: das sind Bücher."
+     ],
+     "q": "Olhe ao redor: que objeto tem no seu quarto? Responda com das ist ein... ou das ist eine...",
+     "c": "Ande pela sua casa e nomeie 8 coisas em voz alta: das ist ein Stuhl, das ist eine Tür..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "ein Stuhl",
+      "ex": "Das ist ein Stuhl."
+     },
+     {
+      "w": "eine Tür",
+      "ex": "Das ist eine Tür."
+     },
+     {
+      "w": "ein Fenster",
+      "ex": "Das Zimmer hat ein Fenster."
+     },
+     {
+      "w": "ein Hund",
+      "ex": "Das ist ein Hund. Der Hund ist süß."
+     },
+     {
+      "w": "eine Tasche",
+      "ex": "Das ist eine Tasche."
+     },
+     {
+      "w": "Was ist das?",
+      "ex": "Was ist das? Das ist ein Handy."
+     }
+    ],
+    "gram": "der/das → ein, die → eine: ein Tisch, ein Buch, eine Lampe. Plural ohne Artikel: Das sind Stühle."
+   }
+  },
+  {
+   "d": 15,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Haben: the verb to have",
+     "g": "Conjugate haben and talk about what you have.",
+     "p": [
+      "Haben is irregular in two forms: ich habe, du hast, er hat, wir haben, ihr habt, sie/Sie haben.",
+      "Use it for things, family, time and pets: Ich habe ein Fahrrad. Hast du Zeit? Sie hat eine Katze.",
+      "Some feelings use haben too: ich habe Hunger, ich habe Durst, which literally means I have hunger."
+     ],
+     "q": "What do you have that you love? Tell me with ich habe ein... or ich habe eine...",
+     "c": "Write six sentences with all six forms of haben about you and people you know."
+    },
+    "de": {
+     "t": "Haben: das Verb haben",
+     "g": "Du konjugierst haben und sprichst darüber, was du hast.",
+     "p": [
+      "Haben ist in zwei Formen unregelmäßig: ich habe, du hast, er hat, wir haben, ihr habt, sie/Sie haben.",
+      "Du brauchst es für Dinge, Familie, Zeit und Tiere: Ich habe ein Fahrrad. Hast du Zeit? Sie hat eine Katze.",
+      "Auch Gefühle gehen mit haben: Ich habe Hunger, ich habe Durst."
+     ],
+     "q": "Was hast du, das du liebst? Sag es mir mit ich habe ein... oder ich habe eine...",
+     "c": "Schreib sechs Sätze mit allen sechs Formen von haben über dich und Menschen, die du kennst."
+    },
+    "es": {
+     "t": "Haben: el verbo tener",
+     "g": "Conjuga haben y habla de lo que tienes.",
+     "p": [
+      "Haben es irregular en dos formas: ich habe, du hast, er hat, wir haben, ihr habt, sie/Sie haben.",
+      "Se usa para cosas, familia, tiempo y mascotas: Ich habe ein Fahrrad. Hast du Zeit? Sie hat eine Katze.",
+      "Algunas sensaciones también van con haben: ich habe Hunger, ich habe Durst (tengo hambre, tengo sed)."
+     ],
+     "q": "¿Qué tienes que te encanta? Dímelo con ich habe ein... o ich habe eine...",
+     "c": "Escribe seis frases con las seis formas de haben sobre ti y personas que conoces."
+    },
+    "fr": {
+     "t": "Haben : le verbe avoir",
+     "g": "Conjuguer haben et parler de ce que tu as.",
+     "p": [
+      "Haben est irrégulier à deux formes : ich habe, du hast, er hat, wir haben, ihr habt, sie/Sie haben.",
+      "Il sert pour les objets, la famille, le temps et les animaux : Ich habe ein Fahrrad. Hast du Zeit ? Sie hat eine Katze.",
+      "Certaines sensations aussi : ich habe Hunger, ich habe Durst (j'ai faim, j'ai soif), comme en français."
+     ],
+     "q": "Qu'est-ce que tu as et que tu adores ? Dis-le avec ich habe ein... ou ich habe eine...",
+     "c": "Écris six phrases avec les six formes de haben sur toi et des personnes que tu connais."
+    },
+    "it": {
+     "t": "Haben: il verbo avere",
+     "g": "Coniughi haben e parli di quello che hai.",
+     "p": [
+      "Haben è irregolare in due forme: ich habe, du hast, er hat, wir haben, ihr habt, sie/Sie haben.",
+      "Serve per oggetti, famiglia, tempo e animali: Ich habe ein Fahrrad. Hast du Zeit? Sie hat eine Katze.",
+      "Anche alcune sensazioni: ich habe Hunger, ich habe Durst (ho fame, ho sete), proprio come in italiano."
+     ],
+     "q": "Che cosa hai che ami tanto? Dimmelo con ich habe ein... o ich habe eine...",
+     "c": "Scrivi sei frasi con tutte e sei le forme di haben su di te e su persone che conosci."
+    },
+    "pt": {
+     "t": "Haben: o verbo ter",
+     "g": "Conjugar haben e falar do que tens.",
+     "p": [
+      "Haben é irregular em duas formas: ich habe, du hast, er hat, wir haben, ihr habt, sie/Sie haben.",
+      "Usa-se para coisas, família, tempo e animais: Ich habe ein Fahrrad. Hast du Zeit? Sie hat eine Katze.",
+      "Algumas sensações também: ich habe Hunger, ich habe Durst (tenho fome, tenho sede), como em português."
+     ],
+     "q": "O que tens de que gostas muito? Diz-me com ich habe ein... ou ich habe eine...",
+     "c": "Escreve seis frases com as seis formas de haben sobre ti e pessoas que conheces."
+    },
+    "pt_BR": {
+     "t": "Haben: o verbo ter",
+     "g": "Conjugar haben e falar do que você tem.",
+     "p": [
+      "Haben é irregular em duas formas: ich habe, du hast, er hat, wir haben, ihr habt, sie/Sie haben.",
+      "Ele serve para coisas, família, tempo e bichos: Ich habe ein Fahrrad. Hast du Zeit? Sie hat eine Katze.",
+      "Algumas sensações também: ich habe Hunger, ich habe Durst (estou com fome, estou com sede)."
+     ],
+     "q": "O que você tem e adora? Me conte com ich habe ein... ou ich habe eine...",
+     "c": "Escreva seis frases com as seis formas de haben sobre você e pessoas que você conhece."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "haben",
+      "ex": "Wir haben heute Zeit."
+     },
+     {
+      "w": "du hast",
+      "ex": "Hast du ein Auto?"
+     },
+     {
+      "w": "er hat",
+      "ex": "Er hat eine Schwester."
+     },
+     {
+      "w": "das Fahrrad",
+      "ex": "Ich habe ein neues Fahrrad."
+     },
+     {
+      "w": "Hunger haben",
+      "ex": "Ich habe Hunger!"
+     },
+     {
+      "w": "Zeit haben",
+      "ex": "Hast du morgen Zeit?"
+     }
+    ],
+    "gram": "haben: ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben. Ich habe Hunger/Durst/Zeit."
+   }
+  },
+  {
+   "d": 16,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Polite words: bitte, danke",
+     "g": "Use the small words that make German sound friendly and polite.",
+     "p": [
+      "Danke and danke schön mean thanks; vielen Dank is a warm thank you very much.",
+      "Bitte is a magic word: please, you are welcome, and here you are. Gern geschehen and gerne also mean you are welcome.",
+      "Entschuldigung gets attention or says sorry; Entschuldigung, wo ist...? is the polite way to ask a stranger."
+     ],
+     "q": "Someone holds the door for you in Vienna. What do you say, and what might they answer?",
+     "c": "Use bitte, danke and Entschuldigung in German at least once each today, aloud or in a message."
+    },
+    "de": {
+     "t": "Höfliche Wörter: bitte, danke",
+     "g": "Du benutzt die kleinen Wörter, die Deutsch freundlich und höflich machen.",
+     "p": [
+      "Danke und danke schön heißen thank you; vielen Dank ist ein herzliches Dankeschön.",
+      "Bitte ist ein Zauberwort: als Bitte, als Antwort auf danke und beim Geben. Auch gern geschehen und gerne passen.",
+      "Entschuldigung ruft jemanden oder entschuldigt sich; Entschuldigung, wo ist...? ist die höfliche Frage an Fremde."
+     ],
+     "q": "Jemand hält dir in Wien die Tür auf. Was sagst du, und was antwortet die Person vielleicht?",
+     "c": "Benutze heute bitte, danke und Entschuldigung je mindestens einmal auf Deutsch, laut oder in einer Nachricht."
+    },
+    "es": {
+     "t": "Palabras de cortesía: bitte, danke",
+     "g": "Usa las palabritas que hacen que tu alemán suene amable y educado.",
+     "p": [
+      "Danke y danke schön significan gracias; vielen Dank es un cálido muchas gracias.",
+      "Bitte es mágica: por favor, de nada y aquí tiene. Gern geschehen y gerne también significan de nada.",
+      "Entschuldigung sirve para llamar la atención o pedir perdón: Entschuldigung, wo ist...? es la pregunta cortés."
+     ],
+     "q": "Alguien te sujeta la puerta en Viena. ¿Qué dices y qué puede responderte?",
+     "c": "Usa hoy bitte, danke y Entschuldigung en alemán al menos una vez cada una, en voz alta o en un mensaje."
+    },
+    "fr": {
+     "t": "Les mots polis : bitte, danke",
+     "g": "Utiliser les petits mots qui rendent ton allemand aimable et poli.",
+     "p": [
+      "Danke et danke schön veulent dire merci ; vielen Dank est un chaleureux merci beaucoup.",
+      "Bitte est magique : s'il te plaît, de rien et voilà. Gern geschehen et gerne veulent aussi dire de rien.",
+      "Entschuldigung sert à interpeller ou à s'excuser ; Entschuldigung, wo ist... ? est la façon polie de demander."
+     ],
+     "q": "Quelqu'un te tient la porte à Vienne. Que dis-tu, et que peut-il te répondre ?",
+     "c": "Utilise aujourd'hui bitte, danke et Entschuldigung en allemand au moins une fois chacun, à voix haute ou par message."
+    },
+    "it": {
+     "t": "Parole gentili: bitte, danke",
+     "g": "Usi le paroline che rendono il tuo tedesco gentile ed educato.",
+     "p": [
+      "Danke e danke schön vogliono dire grazie; vielen Dank è un caloroso grazie mille.",
+      "Bitte è magica: per favore, prego ed ecco a lei. Anche gern geschehen e gerne vogliono dire prego.",
+      "Entschuldigung serve per chiamare qualcuno o scusarsi; Entschuldigung, wo ist...? è la domanda cortese."
+     ],
+     "q": "Qualcuno ti tiene la porta a Vienna. Che cosa dici e che cosa ti può rispondere?",
+     "c": "Usa oggi bitte, danke ed Entschuldigung in tedesco almeno una volta ciascuna, a voce o in un messaggio."
+    },
+    "pt": {
+     "t": "Palavras de cortesia: bitte, danke",
+     "g": "Usar as palavrinhas que tornam o teu alemão simpático e educado.",
+     "p": [
+      "Danke e danke schön querem dizer obrigado; vielen Dank é um caloroso muito obrigado.",
+      "Bitte é mágica: por favor, de nada e aqui tem. Gern geschehen e gerne também querem dizer de nada.",
+      "Entschuldigung serve para chamar a atenção ou pedir desculpa; Entschuldigung, wo ist...? é a pergunta educada."
+     ],
+     "q": "Alguém te segura a porta em Viena. O que dizes, e o que te pode responder?",
+     "c": "Usa hoje bitte, danke e Entschuldigung em alemão pelo menos uma vez cada, em voz alta ou numa mensagem."
+    },
+    "pt_BR": {
+     "t": "Palavras educadas: bitte, danke",
+     "g": "Usar as palavrinhas que deixam seu alemão simpático e educado.",
+     "p": [
+      "Danke e danke schön querem dizer obrigado; vielen Dank é um caloroso muito obrigado.",
+      "Bitte é mágica: por favor, de nada e aqui está. Gern geschehen e gerne também querem dizer de nada.",
+      "Entschuldigung serve para chamar a atenção ou pedir desculpa; Entschuldigung, wo ist...? é a pergunta educada."
+     ],
+     "q": "Alguém segura a porta para você em Viena. O que você diz, e o que a pessoa pode responder?",
+     "c": "Use hoje bitte, danke e Entschuldigung em alemão pelo menos uma vez cada, em voz alta ou numa mensagem."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "bitte",
+      "ex": "Ein Wasser, bitte."
+     },
+     {
+      "w": "danke schön",
+      "ex": "Danke schön für die Hilfe!"
+     },
+     {
+      "w": "vielen Dank",
+      "ex": "Vielen Dank, das ist sehr nett."
+     },
+     {
+      "w": "gern geschehen",
+      "ex": "Gern geschehen!"
+     },
+     {
+      "w": "Entschuldigung",
+      "ex": "Entschuldigung, wo ist der Bahnhof?"
+     },
+     {
+      "w": "Bitte schön",
+      "ex": "Bitte schön, Ihr Kaffee."
+     }
+    ],
+    "gram": "Danke! – Bitte! / Gern geschehen! Bitte = please, you're welcome, here you are. Entschuldigung, ...? = höflich fragen."
+   }
+  },
+  {
+   "d": 17,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Numbers 21 to 100",
+     "g": "Count up to hundert with the German units-before-tens trick.",
+     "p": [
+      "German says the units first, joined by und: einundzwanzig is one-and-twenty (21), fünfundvierzig is 45.",
+      "The tens: zwanzig, dreißig (with ß!), vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert.",
+      "Watch out: eins becomes ein in einundzwanzig, and sechzig and siebzig drop letters, like sechzehn and siebzehn."
+     ],
+     "q": "How old is someone you love, or what is your house number? Say the number in German.",
+     "c": "Read every number you see today in German: prices, buses, house numbers, at least ten of them."
+    },
+    "de": {
+     "t": "Zahlen von 21 bis 100",
+     "g": "Du zählst bis hundert mit dem deutschen Trick: Einer vor Zehner.",
+     "p": [
+      "Im Deutschen kommen die Einer zuerst, verbunden mit und: einundzwanzig (21), fünfundvierzig (45).",
+      "Die Zehner: zwanzig, dreißig (mit ß!), vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert.",
+      "Achtung: Aus eins wird ein in einundzwanzig, und sechzig und siebzig verlieren Buchstaben."
+     ],
+     "q": "Wie alt ist ein Mensch, den du liebst, oder wie ist deine Hausnummer? Sag die Zahl auf Deutsch.",
+     "c": "Lies heute jede Zahl, die du siehst, auf Deutsch: Preise, Busse, Hausnummern, mindestens zehn."
+    },
+    "es": {
+     "t": "Números del 21 al 100",
+     "g": "Cuenta hasta hundert con el truco alemán de las unidades antes de las decenas.",
+     "p": [
+      "En alemán se dicen primero las unidades, unidas con und: einundzwanzig es uno-y-veinte (21), fünfundvierzig es 45.",
+      "Las decenas: zwanzig, dreißig (¡con ß!), vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert.",
+      "Ojo: eins se vuelve ein en einundzwanzig, y sechzig y siebzig pierden letras, como sechzehn y siebzehn."
+     ],
+     "q": "¿Cuántos años tiene alguien que quieres, o cuál es tu número de portal? Dilo en alemán.",
+     "c": "Lee hoy en alemán cada número que veas: precios, autobuses, portales, al menos diez."
+    },
+    "fr": {
+     "t": "Les nombres de 21 à 100",
+     "g": "Compter jusqu'à hundert avec l'astuce allemande : les unités avant les dizaines.",
+     "p": [
+      "L'allemand dit d'abord l'unité, reliée par und : einundzwanzig, c'est un-et-vingt (21), fünfundvierzig, c'est 45.",
+      "Les dizaines : zwanzig, dreißig (avec ß !), vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert.",
+      "Attention : eins devient ein dans einundzwanzig, et sechzig et siebzig perdent des lettres. Pas de soixante-dix ici !"
+     ],
+     "q": "Quel âge a une personne que tu aimes, ou quel est ton numéro de rue ? Dis-le en allemand.",
+     "c": "Lis aujourd'hui en allemand chaque nombre que tu vois : prix, bus, numéros, au moins dix."
+    },
+    "it": {
+     "t": "I numeri da 21 a 100",
+     "g": "Conti fino a hundert con il trucco tedesco: le unità prima delle decine.",
+     "p": [
+      "In tedesco si dicono prima le unità, unite da und: einundzwanzig è uno-e-venti (21), fünfundvierzig è 45.",
+      "Le decine: zwanzig, dreißig (con la ß!), vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert.",
+      "Attenzione: eins diventa ein in einundzwanzig, e sechzig e siebzig perdono lettere, come sechzehn e siebzehn."
+     ],
+     "q": "Quanti anni ha una persona a cui vuoi bene, o qual è il tuo numero civico? Dillo in tedesco.",
+     "c": "Leggi oggi in tedesco ogni numero che vedi: prezzi, autobus, numeri civici, almeno dieci."
+    },
+    "pt": {
+     "t": "Números de 21 a 100",
+     "g": "Contar até hundert com o truque alemão das unidades antes das dezenas.",
+     "p": [
+      "Em alemão dizem-se primeiro as unidades, ligadas por und: einundzwanzig é um-e-vinte (21), fünfundvierzig é 45.",
+      "As dezenas: zwanzig, dreißig (com ß!), vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert.",
+      "Atenção: eins passa a ein em einundzwanzig, e sechzig e siebzig perdem letras, como sechzehn e siebzehn."
+     ],
+     "q": "Que idade tem alguém de quem gostas, ou qual é o número da tua porta? Diz em alemão.",
+     "c": "Lê hoje em alemão cada número que vires: preços, autocarros, números de porta, pelo menos dez."
+    },
+    "pt_BR": {
+     "t": "Números de 21 a 100",
+     "g": "Contar até hundert com o truque alemão das unidades antes das dezenas.",
+     "p": [
+      "Em alemão as unidades vêm primeiro, ligadas por und: einundzwanzig é um-e-vinte (21), fünfundvierzig é 45.",
+      "As dezenas: zwanzig, dreißig (com ß!), vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert.",
+      "Atenção: eins vira ein em einundzwanzig, e sechzig e siebzig perdem letras, como sechzehn e siebzehn."
+     ],
+     "q": "Quantos anos tem alguém que você ama, ou qual é o número da sua casa? Fale em alemão.",
+     "c": "Leia hoje em alemão cada número que você vir: preços, ônibus, números de casas, pelo menos dez."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "einundzwanzig",
+      "ex": "Ich bin einundzwanzig Jahre alt."
+     },
+     {
+      "w": "dreißig",
+      "ex": "Der Kurs dauert dreißig Minuten."
+     },
+     {
+      "w": "fünfundvierzig",
+      "ex": "Die Hausnummer ist fünfundvierzig."
+     },
+     {
+      "w": "siebzig",
+      "ex": "Meine Oma ist siebzig."
+     },
+     {
+      "w": "hundert",
+      "ex": "Das Buch hat hundert Seiten."
+     },
+     {
+      "w": "Wie alt bist du?",
+      "ex": "Wie alt bist du? – Ich bin dreiunddreißig."
+     }
+    ],
+    "gram": "Einer + und + Zehner: einundzwanzig (21), achtundneunzig (98). Achtung: dreißig, sechzig, siebzig. Wie alt bist du?"
+   }
+  },
+  {
+   "d": 18,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Family members",
+     "g": "Talk about your family with the key words and mein, meine.",
+     "p": [
+      "Die Mutter, der Vater, die Eltern; der Bruder, die Schwester, die Geschwister (siblings).",
+      "Die Großeltern are grandparents: die Oma and der Opa in everyday speech, der Sohn and die Tochter for children.",
+      "Use mein with der and das words (mein Bruder) and meine with die words and plurals (meine Schwester, meine Eltern)."
+     ],
+     "q": "Tell me about your family in German: ich habe einen Bruder or ich habe keine Geschwister.",
+     "c": "Draw a mini family tree and label everyone in German with mein or meine."
+    },
+    "de": {
+     "t": "Familienmitglieder",
+     "g": "Du sprichst mit den wichtigsten Wörtern und mein, meine über deine Familie.",
+     "p": [
+      "Die Mutter, der Vater, die Eltern; der Bruder, die Schwester, die Geschwister.",
+      "Die Großeltern heißen im Alltag Oma und Opa; Kinder sind der Sohn und die Tochter.",
+      "Mein steht bei der- und das-Wörtern (mein Bruder), meine bei die-Wörtern und im Plural (meine Schwester, meine Eltern)."
+     ],
+     "q": "Erzähl mir auf Deutsch von deiner Familie: Ich habe einen Bruder oder ich habe keine Geschwister.",
+     "c": "Zeichne einen kleinen Stammbaum und beschrifte alle auf Deutsch mit mein oder meine."
+    },
+    "es": {
+     "t": "La familia",
+     "g": "Habla de tu familia con las palabras clave y mein, meine.",
+     "p": [
+      "Die Mutter, der Vater, die Eltern (los padres); der Bruder, die Schwester, die Geschwister (los hermanos).",
+      "Die Großeltern son los abuelos: en el día a día die Oma y der Opa; los hijos son der Sohn y die Tochter.",
+      "Mein va con palabras der y das (mein Bruder) y meine con palabras die y plurales (meine Schwester, meine Eltern)."
+     ],
+     "q": "Háblame de tu familia en alemán: ich habe einen Bruder o ich habe keine Geschwister.",
+     "c": "Dibuja un pequeño árbol familiar y escribe a cada persona en alemán con mein o meine."
+    },
+    "fr": {
+     "t": "Les membres de la famille",
+     "g": "Parler de ta famille avec les mots clés et mein, meine.",
+     "p": [
+      "Die Mutter, der Vater, die Eltern (les parents) ; der Bruder, die Schwester, die Geschwister (frères et sœurs).",
+      "Die Großeltern sont les grands-parents : au quotidien die Oma et der Opa ; les enfants sont der Sohn et die Tochter.",
+      "Mein va avec les mots der et das (mein Bruder), meine avec les mots die et au pluriel (meine Schwester, meine Eltern)."
+     ],
+     "q": "Parle-moi de ta famille en allemand : ich habe einen Bruder ou ich habe keine Geschwister.",
+     "c": "Dessine un petit arbre généalogique et nomme chacun en allemand avec mein ou meine."
+    },
+    "it": {
+     "t": "I membri della famiglia",
+     "g": "Parli della tua famiglia con le parole chiave e mein, meine.",
+     "p": [
+      "Die Mutter, der Vater, die Eltern (i genitori); der Bruder, die Schwester, die Geschwister (fratelli e sorelle).",
+      "Die Großeltern sono i nonni: nel quotidiano die Oma e der Opa; i figli sono der Sohn e die Tochter.",
+      "Mein va con le parole der e das (mein Bruder), meine con le parole die e al plurale (meine Schwester, meine Eltern)."
+     ],
+     "q": "Parlami della tua famiglia in tedesco: ich habe einen Bruder o ich habe keine Geschwister.",
+     "c": "Disegna un piccolo albero genealogico e scrivi tutti in tedesco con mein o meine."
+    },
+    "pt": {
+     "t": "Os membros da família",
+     "g": "Falar da tua família com as palavras-chave e mein, meine.",
+     "p": [
+      "Die Mutter, der Vater, die Eltern (os pais); der Bruder, die Schwester, die Geschwister (os irmãos).",
+      "Die Großeltern são os avós: no dia a dia die Oma e der Opa; os filhos são der Sohn e die Tochter.",
+      "Mein vai com palavras der e das (mein Bruder) e meine com palavras die e plurais (meine Schwester, meine Eltern)."
+     ],
+     "q": "Fala-me da tua família em alemão: ich habe einen Bruder ou ich habe keine Geschwister.",
+     "c": "Desenha uma pequena árvore genealógica e escreve cada pessoa em alemão com mein ou meine."
+    },
+    "pt_BR": {
+     "t": "Os membros da família",
+     "g": "Falar da sua família com as palavras-chave e mein, meine.",
+     "p": [
+      "Die Mutter, der Vater, die Eltern (os pais); der Bruder, die Schwester, die Geschwister (os irmãos).",
+      "Die Großeltern são os avós: no dia a dia die Oma e der Opa; os filhos são der Sohn e die Tochter.",
+      "Mein vai com palavras der e das (mein Bruder) e meine com palavras die e plurais (meine Schwester, meine Eltern)."
+     ],
+     "q": "Me fale da sua família em alemão: ich habe einen Bruder ou ich habe keine Geschwister.",
+     "c": "Desenhe uma pequena árvore genealógica e escreva cada pessoa em alemão com mein ou meine."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "die Mutter",
+      "ex": "Meine Mutter heißt Sabine."
+     },
+     {
+      "w": "der Vater",
+      "ex": "Mein Vater kocht gern."
+     },
+     {
+      "w": "die Eltern",
+      "ex": "Meine Eltern wohnen in Bonn."
+     },
+     {
+      "w": "die Geschwister",
+      "ex": "Hast du Geschwister?"
+     },
+     {
+      "w": "die Großeltern",
+      "ex": "Meine Großeltern sind sehr nett."
+     },
+     {
+      "w": "die Tochter",
+      "ex": "Ihre Tochter ist fünf Jahre alt."
+     }
+    ],
+    "gram": "mein + der/das-Wort (mein Bruder, mein Kind), meine + die-Wort und Plural (meine Schwester, meine Eltern)."
+   }
+  },
+  {
+   "d": 19,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Days of the week",
+     "g": "Name the days and talk about today, tomorrow and yesterday.",
+     "p": [
+      "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag: all are der words.",
+      "Heute is today, morgen tomorrow, gestern yesterday; das Wochenende is the weekend.",
+      "On a day is am: am Montag, am Wochenende. Montags with -s means every Monday."
+     ],
+     "q": "What is your favourite day of the week, and what do you do am Samstag?",
+     "c": "Write your week plan in German: one activity next to each day, with am Montag, am Dienstag..."
+    },
+    "de": {
+     "t": "Die Wochentage",
+     "g": "Du nennst die Wochentage und sprichst über heute, morgen und gestern.",
+     "p": [
+      "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag: Alle sind maskulin.",
+      "Heute, morgen und gestern zeigen die Zeit; das Wochenende sind Samstag und Sonntag.",
+      "An einem Tag heißt am: am Montag, am Wochenende. Montags mit -s heißt jeden Montag."
+     ],
+     "q": "Was ist dein Lieblingstag, und was machst du am Samstag?",
+     "c": "Schreib deinen Wochenplan auf Deutsch: eine Aktivität pro Tag, mit am Montag, am Dienstag..."
+    },
+    "es": {
+     "t": "Los días de la semana",
+     "g": "Nombra los días y habla de hoy, mañana y ayer.",
+     "p": [
+      "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag: todos son masculinos (der).",
+      "Heute es hoy, morgen mañana, gestern ayer; das Wochenende es el fin de semana.",
+      "Para decir el lunes se usa am: am Montag, am Wochenende. Montags con -s significa todos los lunes."
+     ],
+     "q": "¿Cuál es tu día favorito de la semana y qué haces am Samstag?",
+     "c": "Escribe tu plan semanal en alemán: una actividad junto a cada día, con am Montag, am Dienstag..."
+    },
+    "fr": {
+     "t": "Les jours de la semaine",
+     "g": "Nommer les jours et parler d'aujourd'hui, demain et hier.",
+     "p": [
+      "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag : tous sont masculins (der).",
+      "Heute veut dire aujourd'hui, morgen demain, gestern hier ; das Wochenende, c'est le week-end.",
+      "Pour dire lundi, on dit am : am Montag, am Wochenende. Montags avec -s signifie tous les lundis."
+     ],
+     "q": "Quel est ton jour préféré de la semaine, et que fais-tu am Samstag ?",
+     "c": "Écris ton planning de la semaine en allemand : une activité par jour, avec am Montag, am Dienstag..."
+    },
+    "it": {
+     "t": "I giorni della settimana",
+     "g": "Nomini i giorni e parli di oggi, domani e ieri.",
+     "p": [
+      "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag: sono tutti maschili (der).",
+      "Heute è oggi, morgen domani, gestern ieri; das Wochenende è il fine settimana.",
+      "Per dire lunedì si usa am: am Montag, am Wochenende. Montags con -s vuol dire ogni lunedì."
+     ],
+     "q": "Qual è il tuo giorno preferito della settimana, e che cosa fai am Samstag?",
+     "c": "Scrivi il tuo programma settimanale in tedesco: un'attività per ogni giorno, con am Montag, am Dienstag..."
+    },
+    "pt": {
+     "t": "Os dias da semana",
+     "g": "Nomear os dias e falar de hoje, amanhã e ontem.",
+     "p": [
+      "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag: todos são masculinos (der).",
+      "Heute é hoje, morgen amanhã, gestern ontem; das Wochenende é o fim de semana.",
+      "Para dizer na segunda usa-se am: am Montag, am Wochenende. Montags com -s quer dizer todas as segundas."
+     ],
+     "q": "Qual é o teu dia preferido da semana, e o que fazes am Samstag?",
+     "c": "Escreve o teu plano semanal em alemão: uma atividade para cada dia, com am Montag, am Dienstag..."
+    },
+    "pt_BR": {
+     "t": "Os dias da semana",
+     "g": "Nomear os dias e falar de hoje, amanhã e ontem.",
+     "p": [
+      "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag: todos são masculinos (der).",
+      "Heute é hoje, morgen amanhã, gestern ontem; das Wochenende é o fim de semana.",
+      "Para dizer na segunda use am: am Montag, am Wochenende. Montags com -s quer dizer toda segunda."
+     ],
+     "q": "Qual é seu dia favorito da semana, e o que você faz am Samstag?",
+     "c": "Escreva seu plano semanal em alemão: uma atividade para cada dia, com am Montag, am Dienstag..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Montag",
+      "ex": "Am Montag arbeite ich."
+     },
+     {
+      "w": "der Mittwoch",
+      "ex": "Am Mittwoch habe ich Deutsch."
+     },
+     {
+      "w": "das Wochenende",
+      "ex": "Am Wochenende schlafe ich lange."
+     },
+     {
+      "w": "heute",
+      "ex": "Heute ist Freitag."
+     },
+     {
+      "w": "morgen",
+      "ex": "Morgen habe ich Zeit."
+     },
+     {
+      "w": "gestern",
+      "ex": "Gestern war Sonntag."
+     }
+    ],
+    "gram": "am + Tag: am Montag, am Wochenende. montags = jeden Montag. heute, morgen, gestern. Alle Wochentage sind maskulin."
+   }
+  },
+  {
+   "d": 20,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Months and seasons",
+     "g": "Name the twelve months and four seasons and say when things happen.",
+     "p": [
+      "Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember: all der.",
+      "Seasons: der Frühling, der Sommer, der Herbst, der Winter. On the phone, Juli is often said Julei to avoid mix-ups with Juni.",
+      "For months and seasons use im: im Sommer, im Januar. Your birthday: Ich habe im Mai Geburtstag."
+     ],
+     "q": "When is your birthday, and what is your favourite season? Answer with im...",
+     "c": "Say the twelve months aloud in German twice, then write which season you like most and why."
+    },
+    "de": {
+     "t": "Monate und Jahreszeiten",
+     "g": "Du nennst die zwölf Monate und vier Jahreszeiten und sagst, wann etwas passiert.",
+     "p": [
+      "Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember: alle maskulin.",
+      "Die Jahreszeiten: der Frühling, der Sommer, der Herbst, der Winter. Am Telefon sagt man oft Julei, um Juli und Juni zu unterscheiden.",
+      "Bei Monaten und Jahreszeiten sagst du im: im Sommer, im Januar. Ich habe im Mai Geburtstag."
+     ],
+     "q": "Wann hast du Geburtstag, und was ist deine Lieblingsjahreszeit? Antworte mit im...",
+     "c": "Sag die zwölf Monate zweimal laut auf und schreib, welche Jahreszeit du am liebsten magst."
+    },
+    "es": {
+     "t": "Meses y estaciones",
+     "g": "Nombra los doce meses y las cuatro estaciones y di cuándo pasan las cosas.",
+     "p": [
+      "Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember: todos der.",
+      "Estaciones: der Frühling, der Sommer, der Herbst, der Winter. Al teléfono se dice Julei para no confundir Juli con Juni.",
+      "Con meses y estaciones se usa im: im Sommer, im Januar. Tu cumpleaños: Ich habe im Mai Geburtstag."
+     ],
+     "q": "¿Cuándo es tu cumpleaños y cuál es tu estación favorita? Responde con im...",
+     "c": "Di los doce meses en alemán dos veces en voz alta y escribe qué estación prefieres y por qué."
+    },
+    "fr": {
+     "t": "Les mois et les saisons",
+     "g": "Nommer les douze mois et les quatre saisons et dire quand les choses arrivent.",
+     "p": [
+      "Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember : tous der.",
+      "Les saisons : der Frühling, der Sommer, der Herbst, der Winter. Au téléphone, on dit souvent Julei pour ne pas confondre Juli et Juni.",
+      "Avec les mois et les saisons, on dit im : im Sommer, im Januar. Ton anniversaire : Ich habe im Mai Geburtstag."
+     ],
+     "q": "Quand est ton anniversaire, et quelle est ta saison préférée ? Réponds avec im...",
+     "c": "Dis deux fois les douze mois en allemand à voix haute, puis écris ta saison préférée et pourquoi."
+    },
+    "it": {
+     "t": "Mesi e stagioni",
+     "g": "Nomini i dodici mesi e le quattro stagioni e dici quando succedono le cose.",
+     "p": [
+      "Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember: tutti der.",
+      "Le stagioni: der Frühling, der Sommer, der Herbst, der Winter. Al telefono si dice spesso Julei per non confondere Juli e Juni.",
+      "Con mesi e stagioni si usa im: im Sommer, im Januar. Il compleanno: Ich habe im Mai Geburtstag."
+     ],
+     "q": "Quando è il tuo compleanno, e qual è la tua stagione preferita? Rispondi con im...",
+     "c": "Di' i dodici mesi in tedesco due volte ad alta voce e scrivi quale stagione preferisci e perché."
+    },
+    "pt": {
+     "t": "Meses e estações",
+     "g": "Nomear os doze meses e as quatro estações e dizer quando as coisas acontecem.",
+     "p": [
+      "Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember: todos der.",
+      "Estações: der Frühling, der Sommer, der Herbst, der Winter. Ao telefone diz-se muitas vezes Julei para não confundir Juli e Juni.",
+      "Com meses e estações usa-se im: im Sommer, im Januar. O teu aniversário: Ich habe im Mai Geburtstag."
+     ],
+     "q": "Quando fazes anos, e qual é a tua estação preferida? Responde com im...",
+     "c": "Diz os doze meses em alemão duas vezes em voz alta e escreve qual a estação de que mais gostas e porquê."
+    },
+    "pt_BR": {
+     "t": "Meses e estações",
+     "g": "Nomear os doze meses e as quatro estações e dizer quando as coisas acontecem.",
+     "p": [
+      "Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember: todos der.",
+      "Estações: der Frühling, der Sommer, der Herbst, der Winter. No telefone se diz Julei para não confundir Juli e Juni.",
+      "Com meses e estações use im: im Sommer, im Januar. Seu aniversário: Ich habe im Mai Geburtstag."
+     ],
+     "q": "Quando é seu aniversário, e qual é sua estação favorita? Responda com im...",
+     "c": "Fale os doze meses em alemão duas vezes em voz alta e escreva qual estação você mais gosta e por quê."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "der Januar",
+      "ex": "Im Januar ist es kalt."
+     },
+     {
+      "w": "der Frühling",
+      "ex": "Im Frühling blühen die Blumen."
+     },
+     {
+      "w": "der Sommer",
+      "ex": "Im Sommer fahren wir ans Meer."
+     },
+     {
+      "w": "der Herbst",
+      "ex": "Der Herbst ist bunt."
+     },
+     {
+      "w": "der Winter",
+      "ex": "Im Winter schneit es oft."
+     },
+     {
+      "w": "der Geburtstag",
+      "ex": "Ich habe im Juli Geburtstag."
+     }
+    ],
+    "gram": "im + Monat/Jahreszeit: im März, im Winter. Alle Monate und Jahreszeiten sind maskulin. Wann hast du Geburtstag? – Im Mai."
+   }
+  }
+ ]
+}

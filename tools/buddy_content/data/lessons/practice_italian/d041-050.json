@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_italian",
+ "lessons": [
+  {
+   "d": 41,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Irregular verbs: fare",
+     "g": "Use fare, one of the most useful Italian verbs, in everyday phrases.",
+     "p": [
+      "Fare: faccio, fai, fa, facciamo, fate, fanno. Che cosa fai? means What are you doing?",
+      "Fixed phrases: fare colazione, fare la spesa, fare una passeggiata, fare la doccia.",
+      "Weather uses fare too: Fa caldo, Fa freddo, Fa bel tempo."
+     ],
+     "q": "What do you do on Saturday morning? Use at least two phrases with fare.",
+     "c": "Write your evening plan with three fare phrases: faccio la spesa, faccio la doccia..."
+    },
+    "de": {
+     "t": "Unregelmäßige Verben: fare",
+     "g": "Du verwendest fare, eines der nützlichsten Verben, in Alltagsausdrücken.",
+     "p": [
+      "Fare: faccio, fai, fa, facciamo, fate, fanno. Che cosa fai? heißt Was machst du?",
+      "Feste Ausdrücke: fare colazione, fare la spesa, fare una passeggiata, fare la doccia.",
+      "Auch das Wetter nutzt fare: Fa caldo, Fa freddo, Fa bel tempo."
+     ],
+     "q": "Was machst du am Samstagmorgen? Verwende mindestens zwei Ausdrücke mit fare.",
+     "c": "Schreib deinen Abendplan mit drei fare-Ausdrücken: faccio la spesa, faccio la doccia..."
+    },
+    "es": {
+     "t": "Verbos irregulares: fare",
+     "g": "Usa fare, uno de los verbos más útiles, en frases cotidianas.",
+     "p": [
+      "Fare: faccio, fai, fa, facciamo, fate, fanno. Che cosa fai? significa ¿Qué haces?",
+      "Frases fijas: fare colazione, fare la spesa, fare una passeggiata, fare la doccia.",
+      "El tiempo también usa fare: Fa caldo, Fa freddo, Fa bel tempo."
+     ],
+     "q": "¿Qué haces el sábado por la mañana? Usa al menos dos frases con fare.",
+     "c": "Escribe tu plan de la tarde con tres frases con fare: faccio la spesa, faccio la doccia..."
+    },
+    "fr": {
+     "t": "Verbes irréguliers : fare",
+     "g": "Utiliser fare, l'un des verbes les plus utiles, dans des expressions du quotidien.",
+     "p": [
+      "Fare : faccio, fai, fa, facciamo, fate, fanno. Che cosa fai ? veut dire Que fais-tu ?",
+      "Expressions : fare colazione, fare la spesa, fare una passeggiata, fare la doccia.",
+      "La météo aussi utilise fare : Fa caldo, Fa freddo, Fa bel tempo."
+     ],
+     "q": "Que fais-tu le samedi matin ? Utilise au moins deux expressions avec fare.",
+     "c": "Écris ton programme du soir avec trois expressions avec fare : faccio la spesa..."
+    },
+    "it": {
+     "t": "Verbi irregolari: fare",
+     "g": "Usi fare, uno dei verbi più utili, in tante espressioni quotidiane.",
+     "p": [
+      "Fare: faccio, fai, fa, facciamo, fate, fanno. Che cosa fai? è una domanda frequente.",
+      "Espressioni fisse: fare colazione, fare la spesa, fare una passeggiata, fare la doccia.",
+      "Anche il tempo usa fare: Fa caldo, Fa freddo, Fa bel tempo."
+     ],
+     "q": "Che cosa fai il sabato mattina? Usa almeno due espressioni con fare.",
+     "c": "Scrivi il tuo programma della sera con tre espressioni con fare."
+    },
+    "pt": {
+     "t": "Verbos irregulares: fare",
+     "g": "Usar fare, um dos verbos mais úteis, em expressões do dia a dia.",
+     "p": [
+      "Fare: faccio, fai, fa, facciamo, fate, fanno. Che cosa fai? quer dizer O que fazes?",
+      "Expressões fixas: fare colazione, fare la spesa, fare una passeggiata, fare la doccia.",
+      "O tempo também usa fare: Fa caldo, Fa freddo, Fa bel tempo."
+     ],
+     "q": "O que fazes ao sábado de manhã? Usa pelo menos duas expressões com fare.",
+     "c": "Escreve o teu plano para a noite com três expressões com fare: faccio la spesa..."
+    },
+    "pt_BR": {
+     "t": "Verbos irregulares: fare",
+     "g": "Usar fare, um dos verbos mais úteis, em expressões do dia a dia.",
+     "p": [
+      "Fare: faccio, fai, fa, facciamo, fate, fanno. Che cosa fai? quer dizer O que você faz?",
+      "Expressões fixas: fare colazione, fare la spesa, fare una passeggiata, fare la doccia.",
+      "O clima também usa fare: Fa caldo, Fa freddo, Fa bel tempo."
+     ],
+     "q": "O que você faz no sábado de manhã? Use pelo menos duas expressões com fare.",
+     "c": "Escreva seu plano para a noite com três expressões com fare: faccio la spesa..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "fare colazione",
+      "ex": "Faccio colazione alle sette."
+     },
+     {
+      "w": "fare la spesa",
+      "ex": "Il sabato facciamo la spesa al mercato."
+     },
+     {
+      "w": "fare una passeggiata",
+      "ex": "Facciamo una passeggiata in centro?"
+     },
+     {
+      "w": "fare la doccia",
+      "ex": "La sera faccio la doccia."
+     },
+     {
+      "w": "fa caldo",
+      "ex": "Ad agosto fa molto caldo."
+     },
+     {
+      "w": "che cosa fai?",
+      "ex": "Che cosa fai stasera?"
+     }
+    ],
+    "gram": "Fare: faccio, fai, fa, facciamo, fate, fanno. Si usa in molte espressioni: fare colazione, fare la spesa, fa freddo."
+   }
+  },
+  {
+   "d": 42,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Irregular verbs: stare and dare",
+     "g": "Conjugate stare and dare and use stare for health and location.",
+     "p": [
+      "Stare: sto, stai, sta, stiamo, state, stanno. Dare: do, dai, dà, diamo, date, danno.",
+      "Stare for how you are: Come stai? Sto bene, Sto male. And for staying: Sto a casa.",
+      "Dare means to give: Ti do il mio numero. Note the accent on dà to tell it from da."
+     ],
+     "q": "Come stai oggi? Answer with stare and say where you are staying tonight.",
+     "c": "Say three sentences: how you are, where you stay today, what you give someone."
+    },
+    "de": {
+     "t": "Unregelmäßige Verben: stare und dare",
+     "g": "Du konjugierst stare und dare und nutzt stare für Befinden und Aufenthalt.",
+     "p": [
+      "Stare: sto, stai, sta, stiamo, state, stanno. Dare: do, dai, dà, diamo, date, danno.",
+      "Stare für das Befinden: Come stai? Sto bene, Sto male. Und für Bleiben: Sto a casa.",
+      "Dare heißt geben: Ti do il mio numero. Der Akzent auf dà unterscheidet es von da."
+     ],
+     "q": "Come stai oggi? Antworte mit stare und sag, wo du heute Abend bleibst.",
+     "c": "Sag drei Sätze: wie es dir geht, wo du heute bleibst, was du jemandem gibst."
+    },
+    "es": {
+     "t": "Verbos irregulares: stare y dare",
+     "g": "Conjuga stare y dare y usa stare para la salud y el lugar.",
+     "p": [
+      "Stare: sto, stai, sta, stiamo, state, stanno. Dare: do, dai, dà, diamo, date, danno.",
+      "Stare para cómo estás: Come stai? Sto bene, Sto male. Y para quedarse: Sto a casa.",
+      "Dare significa dar: Ti do il mio numero. El acento de dà lo distingue de da."
+     ],
+     "q": "Come stai oggi? Responde con stare y di dónde te quedas esta noche.",
+     "c": "Di tres frases: cómo estás, dónde te quedas hoy y qué le das a alguien."
+    },
+    "fr": {
+     "t": "Verbes irréguliers : stare et dare",
+     "g": "Conjuguer stare et dare et employer stare pour la santé et le lieu.",
+     "p": [
+      "Stare : sto, stai, sta, stiamo, state, stanno. Dare : do, dai, dà, diamo, date, danno.",
+      "Stare pour la forme : Come stai ? Sto bene, Sto male. Et pour rester : Sto a casa.",
+      "Dare veut dire donner : Ti do il mio numero. L'accent de dà le distingue de da."
+     ],
+     "q": "Come stai oggi ? Réponds avec stare et dis où tu restes ce soir.",
+     "c": "Dis trois phrases : comment tu vas, où tu restes aujourd'hui, ce que tu donnes à quelqu'un."
+    },
+    "it": {
+     "t": "Verbi irregolari: stare e dare",
+     "g": "Impari a coniugare stare e dare e a usare stare per salute e luogo.",
+     "p": [
+      "Stare: sto, stai, sta, stiamo, state, stanno. Dare: do, dai, dà, diamo, date, danno.",
+      "Stare per la salute: Come stai? Sto bene, Sto male. E per il luogo: Sto a casa.",
+      "Dare: Ti do il mio numero. L'accento su dà lo distingue dalla preposizione da."
+     ],
+     "q": "Come stai oggi? Rispondi con stare e dimmi dove stai stasera.",
+     "c": "Di' tre frasi: come stai, dove stai oggi e che cosa dai a qualcuno."
+    },
+    "pt": {
+     "t": "Verbos irregulares: stare e dare",
+     "g": "Conjugar stare e dare e usar stare para a saúde e o lugar.",
+     "p": [
+      "Stare: sto, stai, sta, stiamo, state, stanno. Dare: do, dai, dà, diamo, date, danno.",
+      "Stare para como estás: Come stai? Sto bene, Sto male. E para ficar: Sto a casa.",
+      "Dare quer dizer dar: Ti do il mio numero. O acento em dà distingue-o de da."
+     ],
+     "q": "Come stai oggi? Responde com stare e diz onde ficas esta noite.",
+     "c": "Diz três frases: como estás, onde ficas hoje e o que dás a alguém."
+    },
+    "pt_BR": {
+     "t": "Verbos irregulares: stare e dare",
+     "g": "Conjugar stare e dare e usar stare para saúde e lugar.",
+     "p": [
+      "Stare: sto, stai, sta, stiamo, state, stanno. Dare: do, dai, dà, diamo, date, danno.",
+      "Stare para como você está: Come stai? Sto bene, Sto male. E para ficar: Sto a casa.",
+      "Dare quer dizer dar: Ti do il mio numero. O acento em dà diferencia de da."
+     ],
+     "q": "Come stai oggi? Responda com stare e diga onde vai ficar hoje à noite.",
+     "c": "Diga três frases: como você está, onde fica hoje e o que dá para alguém."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "stare bene",
+      "ex": "Grazie, sto bene. E tu?"
+     },
+     {
+      "w": "stare male",
+      "ex": "Oggi Luca sta male."
+     },
+     {
+      "w": "stare a casa",
+      "ex": "Stasera stiamo a casa."
+     },
+     {
+      "w": "dare",
+      "ex": "Mi dai il sale, per favore?"
+     },
+     {
+      "w": "dà",
+      "ex": "Il professore dà i compiti."
+     },
+     {
+      "w": "stare attento",
+      "ex": "Sta' attento, la strada è bagnata!"
+     }
+    ],
+    "gram": "Stare: sto, stai, sta, stiamo, state, stanno (come stai? sto bene). Dare: do, dai, dà, diamo, date, danno. Dà ha l'accento."
+   }
+  },
+  {
+   "d": 43,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Modal verbs: volere, potere, dovere",
+     "g": "Say what you want, can and must do, followed by an infinitive.",
+     "p": [
+      "Volere: voglio, vuoi, vuole... Potere: posso, puoi, può... Dovere: devo, devi, deve...",
+      "The next verb stays in the infinitive: Voglio mangiare, Posso entrare?, Devo lavorare.",
+      "Posso...? is the polite way to ask permission: Posso pagare con la carta?"
+     ],
+     "q": "What do you want to do this week, and what do you have to do? Use voglio and devo.",
+     "c": "Write one sentence each with voglio, posso and devo about your day."
+    },
+    "de": {
+     "t": "Modalverben: volere, potere, dovere",
+     "g": "Du sagst, was du willst, kannst und musst, gefolgt von einem Infinitiv.",
+     "p": [
+      "Volere: voglio, vuoi, vuole... Potere: posso, puoi, può... Dovere: devo, devi, deve...",
+      "Das zweite Verb bleibt im Infinitiv: Voglio mangiare, Posso entrare?, Devo lavorare.",
+      "Mit Posso...? bittest du höflich um Erlaubnis: Posso pagare con la carta?"
+     ],
+     "q": "Was willst du diese Woche machen, und was musst du tun? Verwende voglio und devo.",
+     "c": "Schreib je einen Satz mit voglio, posso und devo über deinen Tag."
+    },
+    "es": {
+     "t": "Verbos modales: volere, potere, dovere",
+     "g": "Di lo que quieres, puedes y debes hacer, seguido de un infinitivo.",
+     "p": [
+      "Volere: voglio, vuoi, vuole... Potere: posso, puoi, può... Dovere: devo, devi, deve...",
+      "El segundo verbo va en infinitivo: Voglio mangiare, Posso entrare?, Devo lavorare.",
+      "Posso...? sirve para pedir permiso con educación: Posso pagare con la carta?"
+     ],
+     "q": "¿Qué quieres hacer esta semana y qué tienes que hacer? Usa voglio y devo.",
+     "c": "Escribe una frase con voglio, otra con posso y otra con devo sobre tu día."
+    },
+    "fr": {
+     "t": "Verbes modaux : volere, potere, dovere",
+     "g": "Dire ce que tu veux, peux et dois faire, suivi d'un infinitif.",
+     "p": [
+      "Volere : voglio, vuoi, vuole... Potere : posso, puoi, può... Dovere : devo, devi, deve...",
+      "Le second verbe reste à l'infinitif : Voglio mangiare, Posso entrare ?, Devo lavorare.",
+      "Posso... ? permet de demander poliment la permission : Posso pagare con la carta ?"
+     ],
+     "q": "Que veux-tu faire cette semaine et que dois-tu faire ? Utilise voglio et devo.",
+     "c": "Écris une phrase avec voglio, une avec posso et une avec devo sur ta journée."
+    },
+    "it": {
+     "t": "Verbi modali: volere, potere, dovere",
+     "g": "Impari a dire che cosa vuoi, puoi e devi fare, seguito da un infinito.",
+     "p": [
+      "Volere: voglio, vuoi, vuole... Potere: posso, puoi, può... Dovere: devo, devi, deve...",
+      "Il secondo verbo resta all'infinito: Voglio mangiare, Posso entrare?, Devo lavorare.",
+      "Posso...? è il modo gentile di chiedere il permesso: Posso pagare con la carta?"
+     ],
+     "q": "Che cosa vuoi fare questa settimana e che cosa devi fare? Usa voglio e devo.",
+     "c": "Scrivi una frase con voglio, una con posso e una con devo sulla tua giornata."
+    },
+    "pt": {
+     "t": "Verbos modais: volere, potere, dovere",
+     "g": "Dizer o que queres, podes e deves fazer, seguido de um infinitivo.",
+     "p": [
+      "Volere: voglio, vuoi, vuole... Potere: posso, puoi, può... Dovere: devo, devi, deve...",
+      "O segundo verbo fica no infinitivo: Voglio mangiare, Posso entrare?, Devo lavorare.",
+      "Posso...? serve para pedir licença com educação: Posso pagare con la carta?"
+     ],
+     "q": "O que queres fazer esta semana e o que tens de fazer? Usa voglio e devo.",
+     "c": "Escreve uma frase com voglio, outra com posso e outra com devo sobre o teu dia."
+    },
+    "pt_BR": {
+     "t": "Verbos modais: volere, potere, dovere",
+     "g": "Dizer o que você quer, pode e deve fazer, seguido de um infinitivo.",
+     "p": [
+      "Volere: voglio, vuoi, vuole... Potere: posso, puoi, può... Dovere: devo, devi, deve...",
+      "O segundo verbo fica no infinitivo: Voglio mangiare, Posso entrare?, Devo lavorare.",
+      "Posso...? serve para pedir licença com educação: Posso pagare con la carta?"
+     ],
+     "q": "O que você quer fazer nesta semana e o que precisa fazer? Use voglio e devo.",
+     "c": "Escreva uma frase com voglio, outra com posso e outra com devo sobre o seu dia."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "volere",
+      "ex": "Voglio imparare l'italiano."
+     },
+     {
+      "w": "potere",
+      "ex": "Posso aprire la finestra?"
+     },
+     {
+      "w": "dovere",
+      "ex": "Domani devo lavorare presto."
+     },
+     {
+      "w": "puoi",
+      "ex": "Puoi ripetere, per favore?"
+     },
+     {
+      "w": "vogliamo",
+      "ex": "Vogliamo visitare Venezia."
+     },
+     {
+      "w": "devono",
+      "ex": "I ragazzi devono studiare."
+     }
+    ],
+    "gram": "Volere, potere, dovere + infinito: voglio partire, posso entrare?, devo studiare. Voglio, posso, devo sono irregolari."
+   }
+  },
+  {
+   "d": 44,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Simple prepositions: di, a, da, in",
+     "g": "Learn the basic meanings of four very common prepositions.",
+     "p": [
+      "Di for belonging and origin: il libro di Anna, Sono di Torino.",
+      "A for cities and times: a Milano, a mezzogiorno. In for countries, regions, transport: in Spagna, in treno.",
+      "Da for from, since and at someone's place: da Roma, da lunedì, da Paolo."
+     ],
+     "q": "Where are you from and since when do you study Italian? Use di and da.",
+     "c": "Write four short sentences, each with a different preposition: di, a, da, in."
+    },
+    "de": {
+     "t": "Einfache Präpositionen: di, a, da, in",
+     "g": "Du lernst die Grundbedeutungen von vier sehr häufigen Präpositionen.",
+     "p": [
+      "Di für Besitz und Herkunft: il libro di Anna, Sono di Torino.",
+      "A für Städte und Uhrzeiten: a Milano, a mezzogiorno. In für Länder, Regionen, Verkehrsmittel: in Spagna, in treno.",
+      "Da für von, seit und bei jemandem: da Roma, da lunedì, da Paolo."
+     ],
+     "q": "Woher kommst du und seit wann lernst du Italienisch? Verwende di und da.",
+     "c": "Schreib vier kurze Sätze, jeden mit einer anderen Präposition: di, a, da, in."
+    },
+    "es": {
+     "t": "Preposiciones simples: di, a, da, in",
+     "g": "Aprende los significados básicos de cuatro preposiciones muy frecuentes.",
+     "p": [
+      "Di para posesión y origen: il libro di Anna, Sono di Torino.",
+      "A para ciudades y horas: a Milano, a mezzogiorno. In para países, regiones y transporte: in Spagna, in treno.",
+      "Da para desde y en casa de alguien: da Roma, da lunedì, da Paolo."
+     ],
+     "q": "¿De dónde eres y desde cuándo estudias italiano? Usa di y da.",
+     "c": "Escribe cuatro frases cortas, cada una con una preposición distinta: di, a, da, in."
+    },
+    "fr": {
+     "t": "Prépositions simples : di, a, da, in",
+     "g": "Apprendre le sens de base de quatre prépositions très fréquentes.",
+     "p": [
+      "Di pour l'appartenance et l'origine : il libro di Anna, Sono di Torino.",
+      "A pour les villes et l'heure : a Milano, a mezzogiorno. In pour pays, régions, transports : in Spagna, in treno.",
+      "Da pour de, depuis et chez quelqu'un : da Roma, da lunedì, da Paolo."
+     ],
+     "q": "D'où viens-tu et depuis quand étudies-tu l'italien ? Utilise di et da.",
+     "c": "Écris quatre phrases courtes, chacune avec une préposition différente : di, a, da, in."
+    },
+    "it": {
+     "t": "Preposizioni semplici: di, a, da, in",
+     "g": "Impari i significati di base di quattro preposizioni molto frequenti.",
+     "p": [
+      "Di per possesso e origine: il libro di Anna, Sono di Torino.",
+      "A per città e orari: a Milano, a mezzogiorno. In per paesi, regioni e mezzi: in Spagna, in treno.",
+      "Da per provenienza, tempo e persone: da Roma, da lunedì, da Paolo."
+     ],
+     "q": "Di dove sei e da quando studi l'italiano? Usa di e da.",
+     "c": "Scrivi quattro frasi brevi, ognuna con una preposizione diversa: di, a, da, in."
+    },
+    "pt": {
+     "t": "Preposições simples: di, a, da, in",
+     "g": "Aprender os sentidos básicos de quatro preposições muito frequentes.",
+     "p": [
+      "Di para posse e origem: il libro di Anna, Sono di Torino.",
+      "A para cidades e horas: a Milano, a mezzogiorno. In para países, regiões e transportes: in Spagna, in treno.",
+      "Da para desde e em casa de alguém: da Roma, da lunedì, da Paolo."
+     ],
+     "q": "De onde és e desde quando estudas italiano? Usa di e da.",
+     "c": "Escreve quatro frases curtas, cada uma com uma preposição diferente: di, a, da, in."
+    },
+    "pt_BR": {
+     "t": "Preposições simples: di, a, da, in",
+     "g": "Aprender os sentidos básicos de quatro preposições muito comuns.",
+     "p": [
+      "Di para posse e origem: il libro di Anna, Sono di Torino.",
+      "A para cidades e horas: a Milano, a mezzogiorno. In para países, regiões e transportes: in Spagna, in treno.",
+      "Da para desde e na casa de alguém: da Roma, da lunedì, da Paolo."
+     ],
+     "q": "De onde você é e desde quando estuda italiano? Use di e da.",
+     "c": "Escreva quatro frases curtas, cada uma com uma preposição diferente: di, a, da, in."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "di",
+      "ex": "Questa è la bici di Giulia."
+     },
+     {
+      "w": "a",
+      "ex": "Abito a Bologna."
+     },
+     {
+      "w": "da",
+      "ex": "Studio italiano da settembre."
+     },
+     {
+      "w": "in",
+      "ex": "Andiamo in Sicilia in macchina."
+     },
+     {
+      "w": "sono di",
+      "ex": "Sono di Verona, e tu di dove sei?"
+     },
+     {
+      "w": "da + persona",
+      "ex": "Stasera ceno da Francesca."
+     }
+    ],
+    "gram": "Di: possesso e origine (sono di Roma). A: città e ore (a Pisa, alle tre). Da: provenienza, tempo, persone. In: paesi e mezzi."
+   }
+  },
+  {
+   "d": 45,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Prepositions: con, su, per, tra, fra",
+     "g": "Use five more prepositions in everyday sentences.",
+     "p": [
+      "Con means with: un caffè con latte, Esco con gli amici. Su means on or about: un libro su Roma.",
+      "Per means for or through: un regalo per te, Parto per Napoli, per due giorni.",
+      "Tra and fra mean the same: between, among, or in (time): tra due ore, fra amici."
+     ],
+     "q": "Who do you usually go out with, and what are you doing in two hours? Use con and tra.",
+     "c": "Write one sentence with each: con, su, per and tra or fra."
+    },
+    "de": {
+     "t": "Präpositionen: con, su, per, tra, fra",
+     "g": "Du verwendest fünf weitere Präpositionen in Alltagssätzen.",
+     "p": [
+      "Con heißt mit: un caffè con latte, Esco con gli amici. Su heißt auf oder über: un libro su Roma.",
+      "Per heißt für oder nach: un regalo per te, Parto per Napoli, per due giorni.",
+      "Tra und fra bedeuten dasselbe: zwischen, unter, oder in (Zeit): tra due ore, fra amici."
+     ],
+     "q": "Mit wem gehst du meist aus, und was machst du in zwei Stunden? Verwende con und tra.",
+     "c": "Schreib je einen Satz mit con, su, per und tra oder fra."
+    },
+    "es": {
+     "t": "Preposiciones: con, su, per, tra, fra",
+     "g": "Usa cinco preposiciones más en frases cotidianas.",
+     "p": [
+      "Con significa con: un caffè con latte, Esco con gli amici. Su significa sobre: un libro su Roma.",
+      "Per significa para o por: un regalo per te, Parto per Napoli, per due giorni.",
+      "Tra y fra significan lo mismo: entre, o dentro de (tiempo): tra due ore, fra amici."
+     ],
+     "q": "¿Con quién sueles salir y qué haces dentro de dos horas? Usa con y tra.",
+     "c": "Escribe una frase con cada una: con, su, per y tra o fra."
+    },
+    "fr": {
+     "t": "Prépositions : con, su, per, tra, fra",
+     "g": "Employer cinq autres prépositions dans des phrases du quotidien.",
+     "p": [
+      "Con veut dire avec : un caffè con latte, Esco con gli amici. Su veut dire sur : un libro su Roma.",
+      "Per veut dire pour : un regalo per te, Parto per Napoli, per due giorni.",
+      "Tra et fra ont le même sens : entre, parmi, ou dans (temps) : tra due ore, fra amici."
+     ],
+     "q": "Avec qui sors-tu d'habitude et que fais-tu dans deux heures ? Utilise con et tra.",
+     "c": "Écris une phrase avec chacune : con, su, per et tra ou fra."
+    },
+    "it": {
+     "t": "Preposizioni: con, su, per, tra, fra",
+     "g": "Usi altre cinque preposizioni in frasi di tutti i giorni.",
+     "p": [
+      "Con indica compagnia: Esco con gli amici. Su indica posizione o argomento: un libro su Roma.",
+      "Per indica scopo, destinazione o durata: un regalo per te, Parto per Napoli, per due giorni.",
+      "Tra e fra sono uguali: in mezzo a, oppure nel futuro: tra due ore, fra amici."
+     ],
+     "q": "Con chi esci di solito e che cosa fai tra due ore? Usa con e tra.",
+     "c": "Scrivi una frase con ciascuna: con, su, per e tra o fra."
+    },
+    "pt": {
+     "t": "Preposições: con, su, per, tra, fra",
+     "g": "Usar mais cinco preposições em frases do dia a dia.",
+     "p": [
+      "Con quer dizer com: un caffè con latte, Esco con gli amici. Su quer dizer sobre: un libro su Roma.",
+      "Per quer dizer para ou por: un regalo per te, Parto per Napoli, per due giorni.",
+      "Tra e fra são iguais: entre, ou daqui a (tempo): tra due ore, fra amici."
+     ],
+     "q": "Com quem costumas sair e o que fazes daqui a duas horas? Usa con e tra.",
+     "c": "Escreve uma frase com cada uma: con, su, per e tra ou fra."
+    },
+    "pt_BR": {
+     "t": "Preposições: con, su, per, tra, fra",
+     "g": "Usar mais cinco preposições em frases do dia a dia.",
+     "p": [
+      "Con quer dizer com: un caffè con latte, Esco con gli amici. Su quer dizer sobre: un libro su Roma.",
+      "Per quer dizer para ou por: un regalo per te, Parto per Napoli, per due giorni.",
+      "Tra e fra são iguais: entre, ou daqui a (tempo): tra due ore, fra amici."
+     ],
+     "q": "Com quem você costuma sair e o que faz daqui a duas horas? Use con e tra.",
+     "c": "Escreva uma frase com cada uma: con, su, per e tra ou fra."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "con",
+      "ex": "Vado al mare con mia sorella."
+     },
+     {
+      "w": "su",
+      "ex": "Il gatto dorme sul divano."
+     },
+     {
+      "w": "per",
+      "ex": "Questo regalo è per te."
+     },
+     {
+      "w": "tra",
+      "ex": "Il treno parte tra dieci minuti."
+     },
+     {
+      "w": "fra",
+      "ex": "La farmacia è fra la banca e il bar."
+     },
+     {
+      "w": "per + durata",
+      "ex": "Resto a Roma per una settimana."
+     }
+    ],
+    "gram": "Con: compagnia. Su: sopra o argomento. Per: scopo, meta, durata. Tra e fra sono uguali: tra due ore, fra Roma e Napoli."
+   }
+  },
+  {
+   "d": 46,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Articulated prepositions",
+     "g": "Combine prepositions with articles, as Italians do all the time.",
+     "p": [
+      "A, di, da, in, su merge with il, lo, la, i, gli, le: a + il = al, di + la = della, in + il = nel.",
+      "Common forms: al bar, del pane, dal medico, nella borsa, sul tavolo, dagli amici.",
+      "Con and per usually stay separate: con il treno, per la stazione."
+     ],
+     "q": "Where is your phone right now? Answer with an articulated preposition like sul or nella.",
+     "c": "Describe where five things are in your room: sul letto, nel cassetto, sulla sedia..."
+    },
+    "de": {
+     "t": "Verschmolzene Präpositionen",
+     "g": "Du verbindest Präpositionen mit Artikeln, wie es im Italienischen ständig passiert.",
+     "p": [
+      "A, di, da, in, su verschmelzen mit il, lo, la, i, gli, le: a + il = al, di + la = della, in + il = nel.",
+      "Häufig: al bar, del pane, dal medico, nella borsa, sul tavolo, dagli amici.",
+      "Con und per bleiben meist getrennt: con il treno, per la stazione."
+     ],
+     "q": "Wo ist dein Handy gerade? Antworte mit einer Form wie sul oder nella.",
+     "c": "Beschreib, wo fünf Dinge in deinem Zimmer sind: sul letto, nel cassetto, sulla sedia..."
+    },
+    "es": {
+     "t": "Preposiciones articuladas",
+     "g": "Combina preposiciones y artículos, como hacen los italianos todo el tiempo.",
+     "p": [
+      "A, di, da, in, su se unen con il, lo, la, i, gli, le: a + il = al, di + la = della, in + il = nel.",
+      "Formas frecuentes: al bar, del pane, dal medico, nella borsa, sul tavolo, dagli amici.",
+      "Con y per suelen ir separadas: con il treno, per la stazione."
+     ],
+     "q": "¿Dónde está tu móvil ahora? Responde con una forma como sul o nella.",
+     "c": "Describe dónde están cinco cosas en tu habitación: sul letto, nel cassetto, sulla sedia..."
+    },
+    "fr": {
+     "t": "Les prépositions articulées",
+     "g": "Combiner prépositions et articles, comme les Italiens le font sans cesse.",
+     "p": [
+      "A, di, da, in, su fusionnent avec il, lo, la, i, gli, le : a + il = al, di + la = della, in + il = nel.",
+      "Formes courantes : al bar, del pane, dal medico, nella borsa, sul tavolo, dagli amici.",
+      "Con et per restent en général séparées : con il treno, per la stazione."
+     ],
+     "q": "Où est ton téléphone en ce moment ? Réponds avec une forme comme sul ou nella.",
+     "c": "Décris où sont cinq objets dans ta chambre : sul letto, nel cassetto, sulla sedia..."
+    },
+    "it": {
+     "t": "Le preposizioni articolate",
+     "g": "Impari a unire preposizioni e articoli, come fanno sempre gli italiani.",
+     "p": [
+      "A, di, da, in, su si uniscono a il, lo, la, i, gli, le: a + il = al, di + la = della, in + il = nel.",
+      "Forme frequenti: al bar, del pane, dal medico, nella borsa, sul tavolo, dagli amici.",
+      "Con e per di solito restano separate: con il treno, per la stazione."
+     ],
+     "q": "Dov'è il tuo telefono adesso? Rispondi con una forma come sul o nella.",
+     "c": "Descrivi dove sono cinque cose nella tua stanza: sul letto, nel cassetto, sulla sedia..."
+    },
+    "pt": {
+     "t": "Preposições articuladas",
+     "g": "Juntar preposições e artigos, como os italianos fazem a toda a hora.",
+     "p": [
+      "A, di, da, in, su juntam-se a il, lo, la, i, gli, le: a + il = al, di + la = della, in + il = nel.",
+      "Formas frequentes: al bar, del pane, dal medico, nella borsa, sul tavolo, dagli amici.",
+      "Con e per costumam ficar separadas: con il treno, per la stazione."
+     ],
+     "q": "Onde está o teu telemóvel agora? Responde com uma forma como sul ou nella.",
+     "c": "Descreve onde estão cinco coisas no teu quarto: sul letto, nel cassetto, sulla sedia..."
+    },
+    "pt_BR": {
+     "t": "Preposições articuladas",
+     "g": "Juntar preposições e artigos, como os italianos fazem o tempo todo.",
+     "p": [
+      "A, di, da, in, su se juntam com il, lo, la, i, gli, le: a + il = al, di + la = della, in + il = nel.",
+      "Formas comuns: al bar, del pane, dal medico, nella borsa, sul tavolo, dagli amici.",
+      "Con e per costumam ficar separadas: con il treno, per la stazione."
+     ],
+     "q": "Onde está seu celular agora? Responda com uma forma como sul ou nella.",
+     "c": "Descreva onde estão cinco coisas no seu quarto: sul letto, nel cassetto, sulla sedia..."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "al / alla",
+      "ex": "Andiamo al cinema o alla festa?"
+     },
+     {
+      "w": "del / della",
+      "ex": "Questa è la casa della nonna."
+     },
+     {
+      "w": "dal / dalla",
+      "ex": "Torno dal lavoro alle sei."
+     },
+     {
+      "w": "nel / nella",
+      "ex": "Le chiavi sono nella borsa."
+     },
+     {
+      "w": "sul / sulla",
+      "ex": "Il libro è sul tavolo."
+     },
+     {
+      "w": "dagli / negli",
+      "ex": "Vado dagli zii a Natale."
+     }
+    ],
+    "gram": "Preposizione + articolo: a+il=al, di+la=della, da+i=dai, in+lo=nello, su+le=sulle. Con e per restano separate: con il."
+   }
+  },
+  {
+   "d": 47,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Where is it? Dov'è?",
+     "g": "Ask where places are and say what exists around you.",
+     "p": [
+      "Dov'è...? for one thing, Dove sono...? for several: Dov'è il bagno? Dove sono i taxi?",
+      "C'è means there is, ci sono means there are: C'è un bar qui vicino? Ci sono due musei.",
+      "Answer with qui (here), lì (there), vicino (near), lontano (far)."
+     ],
+     "q": "What is there near your home? Answer with c'è and ci sono.",
+     "c": "Write three sentences about your street with c'è, ci sono and non c'è."
+    },
+    "de": {
+     "t": "Wo ist es? Dov'è?",
+     "g": "Du fragst, wo Orte sind, und sagst, was es um dich herum gibt.",
+     "p": [
+      "Dov'è...? für eine Sache, Dove sono...? für mehrere: Dov'è il bagno? Dove sono i taxi?",
+      "C'è heißt es gibt (eins), ci sono es gibt (mehrere): C'è un bar qui vicino? Ci sono due musei.",
+      "Antworten: qui (hier), lì (dort), vicino (nah), lontano (weit)."
+     ],
+     "q": "Was gibt es in der Nähe deiner Wohnung? Antworte mit c'è und ci sono.",
+     "c": "Schreib drei Sätze über deine Straße mit c'è, ci sono und non c'è."
+    },
+    "es": {
+     "t": "¿Dónde está? Dov'è?",
+     "g": "Pregunta dónde están los lugares y di qué hay a tu alrededor.",
+     "p": [
+      "Dov'è...? para una cosa, Dove sono...? para varias: Dov'è il bagno? Dove sono i taxi?",
+      "C'è significa hay (uno), ci sono hay (varios): C'è un bar qui vicino? Ci sono due musei.",
+      "Responde con qui (aquí), lì (allí), vicino (cerca), lontano (lejos)."
+     ],
+     "q": "¿Qué hay cerca de tu casa? Responde con c'è y ci sono.",
+     "c": "Escribe tres frases sobre tu calle con c'è, ci sono y non c'è."
+    },
+    "fr": {
+     "t": "Où est-ce ? Dov'è ?",
+     "g": "Demander où sont les lieux et dire ce qu'il y a autour de toi.",
+     "p": [
+      "Dov'è... ? pour une chose, Dove sono... ? pour plusieurs : Dov'è il bagno ? Dove sono i taxi ?",
+      "C'è veut dire il y a (un), ci sono il y a (plusieurs) : C'è un bar qui vicino ? Ci sono due musei.",
+      "Réponds avec qui (ici), lì (là), vicino (près), lontano (loin)."
+     ],
+     "q": "Qu'y a-t-il près de chez toi ? Réponds avec c'è et ci sono.",
+     "c": "Écris trois phrases sur ta rue avec c'è, ci sono et non c'è."
+    },
+    "it": {
+     "t": "Dov'è?",
+     "g": "Impari a chiedere dove sono i luoghi e a dire che cosa c'è intorno a te.",
+     "p": [
+      "Dov'è...? per una cosa, Dove sono...? per più cose: Dov'è il bagno? Dove sono i taxi?",
+      "C'è per una cosa, ci sono per più cose: C'è un bar qui vicino? Ci sono due musei.",
+      "Per rispondere: qui, lì, vicino, lontano."
+     ],
+     "q": "Che cosa c'è vicino a casa tua? Rispondi con c'è e ci sono.",
+     "c": "Scrivi tre frasi sulla tua via con c'è, ci sono e non c'è."
+    },
+    "pt": {
+     "t": "Onde fica? Dov'è?",
+     "g": "Perguntar onde ficam os lugares e dizer o que há à tua volta.",
+     "p": [
+      "Dov'è...? para uma coisa, Dove sono...? para várias: Dov'è il bagno? Dove sono i taxi?",
+      "C'è quer dizer há (um), ci sono há (vários): C'è un bar qui vicino? Ci sono due musei.",
+      "Responde com qui (aqui), lì (ali), vicino (perto), lontano (longe)."
+     ],
+     "q": "O que há perto da tua casa? Responde com c'è e ci sono.",
+     "c": "Escreve três frases sobre a tua rua com c'è, ci sono e non c'è."
+    },
+    "pt_BR": {
+     "t": "Onde fica? Dov'è?",
+     "g": "Perguntar onde ficam os lugares e dizer o que tem ao seu redor.",
+     "p": [
+      "Dov'è...? para uma coisa, Dove sono...? para várias: Dov'è il bagno? Dove sono i taxi?",
+      "C'è quer dizer tem (um), ci sono tem (vários): C'è un bar qui vicino? Ci sono due musei.",
+      "Responda com qui (aqui), lì (ali), vicino (perto), lontano (longe)."
+     ],
+     "q": "O que tem perto da sua casa? Responda com c'è e ci sono.",
+     "c": "Escreva três frases sobre a sua rua com c'è, ci sono e non c'è."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dov'è?",
+      "ex": "Scusi, dov'è la stazione?"
+     },
+     {
+      "w": "dove sono?",
+      "ex": "Dove sono i bagni?"
+     },
+     {
+      "w": "c'è",
+      "ex": "C'è un supermercato qui vicino?"
+     },
+     {
+      "w": "ci sono",
+      "ex": "In piazza ci sono tre bar."
+     },
+     {
+      "w": "vicino",
+      "ex": "La fermata è vicino alla banca."
+     },
+     {
+      "w": "lontano",
+      "ex": "Il museo non è lontano."
+     }
+    ],
+    "gram": "C'è + singolare (c'è un parco), ci sono + plurale (ci sono due bar). Dov'è + singolare, dove sono + plurale."
+   }
+  },
+  {
+   "d": 48,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Directions: a destra, a sinistra",
+     "g": "Understand and give simple directions in the street.",
+     "p": [
+      "Key words: dritto (straight on), a destra (right), a sinistra (left), all'angolo (at the corner).",
+      "Directions often use the tu or Lei imperative: Vai dritto, Giri a destra, Prenda la prima a sinistra.",
+      "Polite start: Scusi, per andare alla stazione? End with: Grazie mille!"
+     ],
+     "q": "How do I get from your front door to the nearest bar? Explain in Italian.",
+     "c": "Give directions out loud from your home to a shop, with at least three steps."
+    },
+    "de": {
+     "t": "Wegbeschreibung: a destra, a sinistra",
+     "g": "Du verstehst und gibst einfache Wegbeschreibungen auf der Straße.",
+     "p": [
+      "Schlüsselwörter: dritto (geradeaus), a destra (rechts), a sinistra (links), all'angolo (an der Ecke).",
+      "Oft mit Imperativ: Vai dritto, Giri a destra, Prenda la prima a sinistra.",
+      "Höflich anfangen: Scusi, per andare alla stazione? Zum Schluss: Grazie mille!"
+     ],
+     "q": "Wie komme ich von deiner Haustür zur nächsten Bar? Erklär es auf Italienisch.",
+     "c": "Beschreib laut den Weg von deiner Wohnung zu einem Laden, mit mindestens drei Schritten."
+    },
+    "es": {
+     "t": "Direcciones: a destra, a sinistra",
+     "g": "Entiende y da indicaciones sencillas en la calle.",
+     "p": [
+      "Palabras clave: dritto (recto), a destra (derecha), a sinistra (izquierda), all'angolo (en la esquina).",
+      "Se usa a menudo el imperativo: Vai dritto, Giri a destra, Prenda la prima a sinistra.",
+      "Empieza con educación: Scusi, per andare alla stazione? Termina con: Grazie mille!"
+     ],
+     "q": "¿Cómo llego desde tu puerta hasta el bar más cercano? Explícalo en italiano.",
+     "c": "Da en voz alta indicaciones de tu casa a una tienda, con al menos tres pasos."
+    },
+    "fr": {
+     "t": "Itinéraires : a destra, a sinistra",
+     "g": "Comprendre et donner des indications simples dans la rue.",
+     "p": [
+      "Mots clés : dritto (tout droit), a destra (à droite), a sinistra (à gauche), all'angolo (au coin).",
+      "On utilise souvent l'impératif : Vai dritto, Giri a destra, Prenda la prima a sinistra.",
+      "Début poli : Scusi, per andare alla stazione ? Pour finir : Grazie mille !"
+     ],
+     "q": "Comment aller de ta porte au bar le plus proche ? Explique-le en italien.",
+     "c": "Donne à voix haute le chemin de chez toi à un magasin, en au moins trois étapes."
+    },
+    "it": {
+     "t": "Indicazioni: a destra, a sinistra",
+     "g": "Impari a capire e dare indicazioni semplici per strada.",
+     "p": [
+      "Parole chiave: dritto, a destra, a sinistra, all'angolo, la prima o la seconda strada.",
+      "Si usa spesso l'imperativo: Vai dritto, Giri a destra, Prenda la prima a sinistra.",
+      "Per chiedere: Scusi, per andare alla stazione? E alla fine: Grazie mille!"
+     ],
+     "q": "Come arrivo da casa tua al bar più vicino? Spiegamelo in italiano.",
+     "c": "Di' ad alta voce la strada da casa tua a un negozio, con almeno tre passaggi."
+    },
+    "pt": {
+     "t": "Direções: a destra, a sinistra",
+     "g": "Perceber e dar indicações simples na rua.",
+     "p": [
+      "Palavras-chave: dritto (em frente), a destra (à direita), a sinistra (à esquerda), all'angolo (na esquina).",
+      "Usa-se muito o imperativo: Vai dritto, Giri a destra, Prenda la prima a sinistra.",
+      "Começa com educação: Scusi, per andare alla stazione? E no fim: Grazie mille!"
+     ],
+     "q": "Como chego da tua porta ao café mais próximo? Explica em italiano.",
+     "c": "Dá em voz alta o caminho de tua casa até uma loja, com pelo menos três passos."
+    },
+    "pt_BR": {
+     "t": "Direções: a destra, a sinistra",
+     "g": "Entender e dar indicações simples na rua.",
+     "p": [
+      "Palavras-chave: dritto (reto), a destra (à direita), a sinistra (à esquerda), all'angolo (na esquina).",
+      "Usa-se muito o imperativo: Vai dritto, Giri a destra, Prenda la prima a sinistra.",
+      "Comece com educação: Scusi, per andare alla stazione? E no fim: Grazie mille!"
+     ],
+     "q": "Como chego da sua porta até o bar mais próximo? Explique em italiano.",
+     "c": "Diga em voz alta o caminho da sua casa até uma loja, com pelo menos três passos."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "dritto",
+      "ex": "Vada sempre dritto fino alla piazza."
+     },
+     {
+      "w": "a destra",
+      "ex": "La banca è a destra."
+     },
+     {
+      "w": "a sinistra",
+      "ex": "Giri a sinistra dopo il ponte."
+     },
+     {
+      "w": "all'angolo",
+      "ex": "Il bar è all'angolo."
+     },
+     {
+      "w": "la prima strada",
+      "ex": "Prenda la prima strada a destra."
+     },
+     {
+      "w": "attraversare",
+      "ex": "Attraversi la strada e c'è la chiesa."
+     }
+    ],
+    "gram": "Per le indicazioni: vai/vada dritto, gira/giri a destra, prendi/prenda la seconda a sinistra. Scusi, per andare a...?"
+   }
+  },
+  {
+   "d": 49,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "In the city: la città",
+     "g": "Name the main places in an Italian town and describe your city.",
+     "p": [
+      "La piazza is the heart of town; la via and la strada are streets; il centro storico is the old town.",
+      "Places: la chiesa, il duomo (main cathedral), il museo, la stazione, il municipio, il parco.",
+      "Describe with c'è and ci sono: Nella mia città c'è un bel parco e ci sono tanti musei."
+     ],
+     "q": "What is in the centre of your city? Describe it in two Italian sentences.",
+     "c": "Write five Italian words for places you can see or visit in your town today."
+    },
+    "de": {
+     "t": "In der Stadt: la città",
+     "g": "Du benennst die wichtigsten Orte einer italienischen Stadt und beschreibst deine Stadt.",
+     "p": [
+      "La piazza ist das Herz der Stadt; la via und la strada sind Straßen; il centro storico ist die Altstadt.",
+      "Orte: la chiesa, il duomo (Hauptkirche), il museo, la stazione, il municipio, il parco.",
+      "Beschreib mit c'è und ci sono: Nella mia città c'è un bel parco e ci sono tanti musei."
+     ],
+     "q": "Was gibt es im Zentrum deiner Stadt? Beschreib es in zwei italienischen Sätzen.",
+     "c": "Schreib fünf italienische Wörter für Orte, die du heute in deiner Stadt sehen kannst."
+    },
+    "es": {
+     "t": "En la ciudad: la città",
+     "g": "Nombra los lugares principales de una ciudad italiana y describe la tuya.",
+     "p": [
+      "La piazza es el corazón; la via y la strada son calles; il centro storico es el casco antiguo.",
+      "Lugares: la chiesa, il duomo (catedral), il museo, la stazione, il municipio, il parco.",
+      "Describe con c'è y ci sono: Nella mia città c'è un bel parco e ci sono tanti musei."
+     ],
+     "q": "¿Qué hay en el centro de tu ciudad? Descríbelo en dos frases en italiano.",
+     "c": "Escribe cinco palabras italianas de lugares que puedes ver hoy en tu ciudad."
+    },
+    "fr": {
+     "t": "En ville : la città",
+     "g": "Nommer les principaux lieux d'une ville italienne et décrire ta ville.",
+     "p": [
+      "La piazza est le cœur de la ville ; la via et la strada sont des rues ; il centro storico, la vieille ville.",
+      "Lieux : la chiesa, il duomo (cathédrale), il museo, la stazione, il municipio, il parco.",
+      "Décris avec c'è et ci sono : Nella mia città c'è un bel parco e ci sono tanti musei."
+     ],
+     "q": "Qu'y a-t-il dans le centre de ta ville ? Décris-le en deux phrases italiennes.",
+     "c": "Écris cinq mots italiens de lieux que tu peux voir aujourd'hui dans ta ville."
+    },
+    "it": {
+     "t": "In città",
+     "g": "Impari i nomi dei luoghi principali di una città e descrivi la tua.",
+     "p": [
+      "La piazza è il cuore della città; via e strada sono le vie; il centro storico è la parte antica.",
+      "Luoghi: la chiesa, il duomo, il museo, la stazione, il municipio, il parco.",
+      "Descrivi con c'è e ci sono: Nella mia città c'è un bel parco e ci sono tanti musei."
+     ],
+     "q": "Che cosa c'è nel centro della tua città? Descrivilo in due frasi.",
+     "c": "Scrivi cinque parole per luoghi che puoi vedere oggi nella tua città."
+    },
+    "pt": {
+     "t": "Na cidade: la città",
+     "g": "Nomear os principais lugares de uma cidade italiana e descrever a tua.",
+     "p": [
+      "La piazza é o coração da cidade; la via e la strada são ruas; il centro storico é a parte antiga.",
+      "Lugares: la chiesa, il duomo (catedral), il museo, la stazione, il municipio, il parco.",
+      "Descreve com c'è e ci sono: Nella mia città c'è un bel parco e ci sono tanti musei."
+     ],
+     "q": "O que há no centro da tua cidade? Descreve em duas frases em italiano.",
+     "c": "Escreve cinco palavras italianas de lugares que podes ver hoje na tua cidade."
+    },
+    "pt_BR": {
+     "t": "Na cidade: la città",
+     "g": "Nomear os principais lugares de uma cidade italiana e descrever a sua.",
+     "p": [
+      "La piazza é o coração da cidade; la via e la strada são ruas; il centro storico é o centro histórico.",
+      "Lugares: la chiesa, il duomo (catedral), il museo, la stazione, il municipio, il parco.",
+      "Descreva com c'è e ci sono: Nella mia città c'è un bel parco e ci sono tanti musei."
+     ],
+     "q": "O que tem no centro da sua cidade? Descreva em duas frases em italiano.",
+     "c": "Escreva cinco palavras italianas de lugares que você pode ver hoje na sua cidade."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la piazza",
+      "ex": "Ci vediamo in piazza alle sei."
+     },
+     {
+      "w": "la via",
+      "ex": "Abito in via Garibaldi."
+     },
+     {
+      "w": "il centro storico",
+      "ex": "Il centro storico è molto bello."
+     },
+     {
+      "w": "il duomo",
+      "ex": "Il duomo di Milano è enorme."
+     },
+     {
+      "w": "il museo",
+      "ex": "Il museo è chiuso il lunedì."
+     },
+     {
+      "w": "il parco",
+      "ex": "La domenica andiamo al parco."
+     }
+    ],
+    "gram": "Con le vie si usa in: abito in via Roma. In piazza, in centro, ma: al museo, al parco, alla stazione."
+   }
+  },
+  {
+   "d": 50,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Transport: bus, tram and metro",
+     "g": "Buy a ticket, validate it and ask where to get off.",
+     "p": [
+      "Buy il biglietto at a tabaccheria, an edicola, a machine or an app before you board.",
+      "Validate it on board or at the gate: timbrare or convalidare il biglietto.",
+      "Ask: Questo autobus va in centro? A che fermata devo scendere?"
+     ],
+     "q": "How do you usually get around your city? Answer with in autobus, in metro or a piedi.",
+     "c": "Practise out loud: Un biglietto per l'autobus, per favore. A che fermata scendo per il Duomo?"
+    },
+    "de": {
+     "t": "Verkehr: Bus, Tram und Metro",
+     "g": "Du kaufst eine Fahrkarte, entwertest sie und fragst, wo du aussteigst.",
+     "p": [
+      "Il biglietto kaufst du vor der Fahrt in der tabaccheria, am Kiosk, am Automaten oder per App.",
+      "Entwerten im Fahrzeug oder an der Sperre: timbrare oder convalidare il biglietto.",
+      "Frag: Questo autobus va in centro? A che fermata devo scendere?"
+     ],
+     "q": "Wie bewegst du dich meist in deiner Stadt? Antworte mit in autobus, in metro oder a piedi.",
+     "c": "Übe laut: Un biglietto per l'autobus, per favore. A che fermata scendo per il Duomo?"
+    },
+    "es": {
+     "t": "Transporte: autobús, tranvía y metro",
+     "g": "Compra un billete, valídalo y pregunta dónde bajar.",
+     "p": [
+      "Compra il biglietto antes de subir: en la tabaccheria, el quiosco, una máquina o una app.",
+      "Valídalo a bordo o en el torno: timbrare o convalidare il biglietto.",
+      "Pregunta: Questo autobus va in centro? A che fermata devo scendere?"
+     ],
+     "q": "¿Cómo te mueves por tu ciudad? Responde con in autobus, in metro o a piedi.",
+     "c": "Practica en voz alta: Un biglietto per l'autobus, per favore. A che fermata scendo per il Duomo?"
+    },
+    "fr": {
+     "t": "Transports : bus, tram et métro",
+     "g": "Acheter un ticket, le composter et demander où descendre.",
+     "p": [
+      "Achète il biglietto avant de monter : tabaccheria, kiosque, distributeur ou appli.",
+      "Composte-le à bord ou au portique : timbrare ou convalidare il biglietto.",
+      "Demande : Questo autobus va in centro ? A che fermata devo scendere ?"
+     ],
+     "q": "Comment te déplaces-tu dans ta ville ? Réponds avec in autobus, in metro ou a piedi.",
+     "c": "Entraîne-toi : Un biglietto per l'autobus, per favore. A che fermata scendo per il Duomo ?"
+    },
+    "it": {
+     "t": "I mezzi: autobus, tram e metro",
+     "g": "Impari a comprare il biglietto, a timbrarlo e a chiedere dove scendere.",
+     "p": [
+      "Il biglietto si compra prima di salire: in tabaccheria, in edicola, alla macchinetta o con l'app.",
+      "Poi si timbra a bordo o ai tornelli: timbrare o convalidare il biglietto.",
+      "Per chiedere: Questo autobus va in centro? A che fermata devo scendere?"
+     ],
+     "q": "Come ti sposti nella tua città? Rispondi con in autobus, in metro o a piedi.",
+     "c": "Esercitati: Un biglietto per l'autobus, per favore. A che fermata scendo per il Duomo?"
+    },
+    "pt": {
+     "t": "Transportes: autocarro, elétrico e metro",
+     "g": "Comprar um bilhete, validá-lo e perguntar onde sair.",
+     "p": [
+      "Compra il biglietto antes de entrar: na tabaccheria, no quiosque, na máquina ou numa app.",
+      "Valida-o a bordo ou na entrada: timbrare ou convalidare il biglietto.",
+      "Pergunta: Questo autobus va in centro? A che fermata devo scendere?"
+     ],
+     "q": "Como te deslocas na tua cidade? Responde com in autobus, in metro ou a piedi.",
+     "c": "Treina em voz alta: Un biglietto per l'autobus, per favore. A che fermata scendo per il Duomo?"
+    },
+    "pt_BR": {
+     "t": "Transporte: ônibus, bonde e metrô",
+     "g": "Comprar uma passagem, validá-la e perguntar onde descer.",
+     "p": [
+      "Compre il biglietto antes de embarcar: na tabaccheria, na banca, na máquina ou num app.",
+      "Valide a bordo ou na catraca: timbrare ou convalidare il biglietto.",
+      "Pergunte: Questo autobus va in centro? A che fermata devo scendere?"
+     ],
+     "q": "Como você se desloca na sua cidade? Responda com in autobus, in metro ou a piedi.",
+     "c": "Treine em voz alta: Un biglietto per l'autobus, per favore. A che fermata scendo per il Duomo?"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il biglietto",
+      "ex": "Dove posso comprare il biglietto?"
+     },
+     {
+      "w": "timbrare",
+      "ex": "Ricordati di timbrare il biglietto!"
+     },
+     {
+      "w": "la fermata",
+      "ex": "La fermata dell'autobus è qui davanti."
+     },
+     {
+      "w": "scendere",
+      "ex": "Scendo alla prossima fermata."
+     },
+     {
+      "w": "salire",
+      "ex": "Saliamo sul tram numero tre."
+     },
+     {
+      "w": "a piedi",
+      "ex": "Vado al lavoro a piedi."
+     }
+    ],
+    "gram": "Mezzi di trasporto con in: in autobus, in metro, in tram, in treno. Ma: a piedi. Salire su, scendere da: scendo dall'autobus."
+   }
+  }
+ ]
+}

@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_french",
+ "lessons": [
+  {
+   "d": 81,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "The French-speaking world",
+     "g": "Discover la francophonie and talk about French-speaking countries.",
+     "p": [
+      "French is spoken on every continent: France, Belgium, Switzerland, Québec in Canada, Senegal, Côte d'Ivoire and more.",
+      "Countries take articles: la France, le Canada, la Suisse, le Sénégal; in or to: en France, au Canada, au Sénégal.",
+      "People and languages: un Belge, une Québécoise, les Sénégalais; on parle français en Belgique."
+     ],
+     "q": "Which French-speaking country would you like to visit, and why? Answer in French.",
+     "c": "Name four French-speaking places in French with en or au, like je voudrais aller au Québec."
+    },
+    "de": {
+     "t": "Die französischsprachige Welt",
+     "g": "Du entdeckst die Frankophonie und sprichst über französischsprachige Länder.",
+     "p": [
+      "Französisch spricht man auf allen Kontinenten: Frankreich, Belgien, Schweiz, Québec in Kanada, Senegal, Elfenbeinküste.",
+      "Länder haben Artikel: la France, le Canada, le Sénégal; in oder nach: en France, au Canada, au Sénégal.",
+      "Menschen: un Belge, une Québécoise, les Sénégalais; on parle français en Belgique."
+     ],
+     "q": "Welches französischsprachige Land möchtest du besuchen und warum? Antworte auf Französisch.",
+     "c": "Nenne vier französischsprachige Orte mit en oder au, z. B. je voudrais aller au Québec."
+    },
+    "es": {
+     "t": "El mundo francófono",
+     "g": "Descubre la francophonie y habla de los países donde se habla francés.",
+     "p": [
+      "El francés se habla en todos los continentes: Francia, Bélgica, Suiza, Quebec en Canadá, Senegal, Costa de Marfil.",
+      "Los países llevan artículo: la France, le Canada, le Sénégal; en o a: en France, au Canada, au Sénégal.",
+      "Gentilicios: un Belge, une Québécoise, les Sénégalais; on parle français en Belgique."
+     ],
+     "q": "¿Qué país francófono te gustaría visitar y por qué? Responde en francés.",
+     "c": "Nombra cuatro lugares francófonos con en o au, como je voudrais aller au Québec."
+    },
+    "fr": {
+     "t": "La francophonie",
+     "g": "Découvrir la francophonie et parler des pays francophones.",
+     "p": [
+      "On parle français sur tous les continents : France, Belgique, Suisse, Québec, Sénégal, Côte d'Ivoire...",
+      "Les pays ont un article : la France, le Canada, le Sénégal ; pour aller : en France, au Canada, au Sénégal.",
+      "Les habitants : un Belge, une Québécoise, les Sénégalais ; on parle français en Belgique."
+     ],
+     "q": "Quel pays francophone tu aimerais visiter, et pourquoi ?",
+     "c": "Cite quatre lieux francophones avec en ou au, comme je voudrais aller au Québec."
+    },
+    "it": {
+     "t": "Il mondo francofono",
+     "g": "Scopri la francophonie e parla dei paesi dove si parla francese.",
+     "p": [
+      "Il francese si parla in tutti i continenti: Francia, Belgio, Svizzera, Québec in Canada, Senegal, Costa d'Avorio.",
+      "I paesi hanno l'articolo: la France, le Canada, le Sénégal; in: en France, au Canada, au Sénégal.",
+      "Abitanti: un Belge, une Québécoise, les Sénégalais; on parle français en Belgique."
+     ],
+     "q": "Quale paese francofono vorresti visitare e perché? Rispondi in francese.",
+     "c": "Nomina quattro luoghi francofoni con en o au, come je voudrais aller au Québec."
+    },
+    "pt": {
+     "t": "O mundo francófono",
+     "g": "Descobrir a francofonia e falar dos países onde se fala francês.",
+     "p": [
+      "Fala-se francês em todos os continentes: França, Bélgica, Suíça, Quebeque no Canadá, Senegal, Costa do Marfim.",
+      "Os países têm artigo: la France, le Canada, le Sénégal; em ou para: en France, au Canada, au Sénégal.",
+      "Habitantes: un Belge, une Québécoise, les Sénégalais; on parle français en Belgique."
+     ],
+     "q": "Que país francófono gostavas de visitar e porquê? Responde em francês.",
+     "c": "Nomeia quatro lugares francófonos com en ou au, como je voudrais aller au Québec."
+    },
+    "pt_BR": {
+     "t": "O mundo francófono",
+     "g": "Descobrir a francofonia e falar dos países onde se fala francês.",
+     "p": [
+      "O francês é falado em todos os continentes: França, Bélgica, Suíça, Quebec no Canadá, Senegal, Costa do Marfim.",
+      "Os países têm artigo: la France, le Canada, le Sénégal; em ou para: en France, au Canada, au Sénégal.",
+      "Habitantes: un Belge, une Québécoise, les Sénégalais; on parle français en Belgique."
+     ],
+     "q": "Que país francófono você gostaria de visitar e por quê? Responda em francês.",
+     "c": "Cite quatro lugares francófonos com en ou au, como je voudrais aller au Québec."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "la francophonie",
+      "ex": "La francophonie réunit beaucoup de pays."
+     },
+     {
+      "w": "la Belgique",
+      "ex": "On mange de bonnes frites en Belgique."
+     },
+     {
+      "w": "la Suisse",
+      "ex": "À Genève, en Suisse, on parle français."
+     },
+     {
+      "w": "le Québec",
+      "ex": "Au Québec, on dit souvent bonjour et bienvenue."
+     },
+     {
+      "w": "le Sénégal",
+      "ex": "Dakar est la capitale du Sénégal."
+     },
+     {
+      "w": "francophone",
+      "ex": "Le Canada est un pays en partie francophone."
+     }
+    ],
+    "gram": "En + pays féminin (en Belgique), au + pays masculin (au Canada), aux + pluriel (aux Pays-Bas), à + ville (à Dakar)."
+   }
+  },
+  {
+   "d": 82,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Feelings and moods",
+     "g": "Say how you feel in French, with être and with avoir.",
+     "p": [
+      "With être + adjective: je suis content, triste, fatigué, stressé; add e for women: je suis contente.",
+      "With avoir + noun: j'ai faim, j'ai soif, j'ai froid, j'ai chaud, j'ai peur, j'ai sommeil.",
+      "Ask: comment tu te sens? or ça va? Answer with a feeling and a reason: je suis fatigué parce que..."
+     ],
+     "q": "How do you feel today, and why? Tell me in French.",
+     "c": "Write three French sentences about your mood at three moments of today."
+    },
+    "de": {
+     "t": "Gefühle und Stimmungen",
+     "g": "Du sagst auf Französisch, wie du dich fühlst, mit être und mit avoir.",
+     "p": [
+      "Mit être + Adjektiv: je suis content, triste, fatigué, stressé; für Frauen mit e: je suis contente.",
+      "Mit avoir + Nomen: j'ai faim, j'ai soif, j'ai froid, j'ai chaud, j'ai peur, j'ai sommeil.",
+      "Frag: comment tu te sens? oder ça va? Antworte mit Gefühl und Grund: je suis fatigué parce que..."
+     ],
+     "q": "Wie fühlst du dich heute und warum? Sag es mir auf Französisch.",
+     "c": "Schreib drei Sätze über deine Stimmung zu drei Zeitpunkten des heutigen Tages."
+    },
+    "es": {
+     "t": "Sentimientos y estados de ánimo",
+     "g": "Di cómo te sientes en francés, con être y con avoir.",
+     "p": [
+      "Con être + adjetivo: je suis content, triste, fatigué, stressé; en femenino con e: je suis contente.",
+      "Con avoir + sustantivo: j'ai faim, j'ai soif, j'ai froid, j'ai chaud, j'ai peur, j'ai sommeil.",
+      "Pregunta: comment tu te sens? o ça va? Responde con un sentimiento y un motivo: je suis fatigué parce que..."
+     ],
+     "q": "¿Cómo te sientes hoy y por qué? Dímelo en francés.",
+     "c": "Escribe tres frases sobre tu estado de ánimo en tres momentos de hoy."
+    },
+    "fr": {
+     "t": "Sentiments et humeurs",
+     "g": "Dire comment tu te sens, avec être et avec avoir.",
+     "p": [
+      "Être + adjectif : je suis content, triste, fatigué, stressé ; au féminin : je suis contente.",
+      "Avoir + nom : j'ai faim, j'ai soif, j'ai froid, j'ai chaud, j'ai peur, j'ai sommeil.",
+      "Demande : comment tu te sens ? Réponds avec une raison : je suis fatigué parce que..."
+     ],
+     "q": "Comment tu te sens aujourd'hui, et pourquoi ?",
+     "c": "Écris trois phrases sur ton humeur à trois moments de ta journée."
+    },
+    "it": {
+     "t": "Sentimenti e stati d'animo",
+     "g": "Di' come ti senti in francese, con être e con avoir.",
+     "p": [
+      "Con être + aggettivo: je suis content, triste, fatigué, stressé; al femminile con la e: je suis contente.",
+      "Con avoir + nome: j'ai faim, j'ai soif, j'ai froid, j'ai chaud, j'ai peur, j'ai sommeil.",
+      "Chiedi: comment tu te sens? o ça va? Rispondi con un motivo: je suis fatigué parce que..."
+     ],
+     "q": "Come ti senti oggi e perché? Dimmelo in francese.",
+     "c": "Scrivi tre frasi sul tuo umore in tre momenti di oggi."
+    },
+    "pt": {
+     "t": "Sentimentos e estados de espírito",
+     "g": "Dizer como te sentes em francês, com être e com avoir.",
+     "p": [
+      "Com être + adjetivo: je suis content, triste, fatigué, stressé; no feminino com e: je suis contente.",
+      "Com avoir + nome: j'ai faim, j'ai soif, j'ai froid, j'ai chaud, j'ai peur, j'ai sommeil.",
+      "Pergunta: comment tu te sens? ou ça va? Responde com um motivo: je suis fatigué parce que..."
+     ],
+     "q": "Como te sentes hoje e porquê? Diz-me em francês.",
+     "c": "Escreve três frases sobre o teu estado de espírito em três momentos de hoje."
+    },
+    "pt_BR": {
+     "t": "Sentimentos e humor",
+     "g": "Dizer como você se sente em francês, com être e com avoir.",
+     "p": [
+      "Com être + adjetivo: je suis content, triste, fatigué, stressé; no feminino com e: je suis contente.",
+      "Com avoir + substantivo: j'ai faim, j'ai soif, j'ai froid, j'ai chaud, j'ai peur, j'ai sommeil.",
+      "Pergunte: comment tu te sens? ou ça va? Responda com um motivo: je suis fatigué parce que..."
+     ],
+     "q": "Como você se sente hoje e por quê? Me diga em francês.",
+     "c": "Escreva três frases sobre seu humor em três momentos de hoje."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "content, contente",
+      "ex": "Je suis contente de te voir !"
+     },
+     {
+      "w": "fatigué, fatiguée",
+      "ex": "Il est fatigué après le travail."
+     },
+     {
+      "w": "stressé, stressée",
+      "ex": "Je suis un peu stressé avant l'examen."
+     },
+     {
+      "w": "avoir faim",
+      "ex": "J'ai faim, on mange ?"
+     },
+     {
+      "w": "avoir soif",
+      "ex": "Tu as soif ? Il y a de l'eau."
+     },
+     {
+      "w": "avoir sommeil",
+      "ex": "Les enfants ont sommeil ce soir."
+     }
+    ],
+    "gram": "Être + adjectif accordé (je suis contente) ; avoir + nom sans article (j'ai faim, j'ai froid, j'ai peur)."
+   }
+  },
+  {
+   "d": 83,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "C'est or il est?",
+     "g": "Choose correctly between c'est and il est or elle est.",
+     "p": [
+      "C'est + a determiner (un, le, mon...) + noun: c'est un ami, c'est mon livre, c'est une bonne idée.",
+      "Il est or elle est + adjective alone or job alone: il est sympa, elle est médecin.",
+      "C'est + adjective for a general comment: c'est beau!, c'est facile; also c'est moi, c'est Paul."
+     ],
+     "q": "Describe a friend in French with one c'est sentence and one il est or elle est sentence.",
+     "c": "Describe your favourite place with two c'est sentences and two il est or elle est sentences."
+    },
+    "de": {
+     "t": "C'est oder il est?",
+     "g": "Du wählst richtig zwischen c'est und il est oder elle est.",
+     "p": [
+      "C'est + Begleiter (un, le, mon...) + Nomen: c'est un ami, c'est mon livre, c'est une bonne idée.",
+      "Il est oder elle est + Adjektiv oder Beruf allein: il est sympa, elle est médecin.",
+      "C'est + Adjektiv für einen allgemeinen Kommentar: c'est beau!, c'est facile; auch c'est moi, c'est Paul."
+     ],
+     "q": "Beschreib einen Freund mit einem Satz mit c'est und einem mit il est oder elle est.",
+     "c": "Beschreib deinen Lieblingsort mit zwei Sätzen mit c'est und zwei mit il est oder elle est."
+    },
+    "es": {
+     "t": "¿C'est o il est?",
+     "g": "Elige bien entre c'est e il est o elle est.",
+     "p": [
+      "C'est + determinante (un, le, mon...) + sustantivo: c'est un ami, c'est mon livre, c'est une bonne idée.",
+      "Il est o elle est + adjetivo solo o profesión sola: il est sympa, elle est médecin.",
+      "C'est + adjetivo para un comentario general: c'est beau!, c'est facile; también c'est moi, c'est Paul."
+     ],
+     "q": "Describe a un amigo en francés con una frase con c'est y otra con il est o elle est.",
+     "c": "Describe tu lugar favorito con dos frases con c'est y dos con il est o elle est."
+    },
+    "fr": {
+     "t": "C'est ou il est ?",
+     "g": "Choisir entre c'est et il est ou elle est.",
+     "p": [
+      "C'est + déterminant + nom : c'est un ami, c'est mon livre, c'est une bonne idée.",
+      "Il est, elle est + adjectif seul ou métier seul : il est sympa, elle est médecin.",
+      "C'est + adjectif pour un commentaire général : c'est beau !, c'est facile ; et aussi c'est moi."
+     ],
+     "q": "Décris un ami avec une phrase en c'est et une en il est ou elle est.",
+     "c": "Décris ton lieu préféré avec deux phrases en c'est et deux en il est ou elle est."
+    },
+    "it": {
+     "t": "C'est o il est?",
+     "g": "Scegli bene tra c'est e il est o elle est.",
+     "p": [
+      "C'est + determinante (un, le, mon...) + nome: c'est un ami, c'est mon livre, c'est une bonne idée.",
+      "Il est o elle est + aggettivo da solo o mestiere da solo: il est sympa, elle est médecin.",
+      "C'est + aggettivo per un commento generale: c'est beau!, c'est facile; anche c'est moi, c'est Paul."
+     ],
+     "q": "Descrivi un amico in francese con una frase con c'est e una con il est o elle est.",
+     "c": "Descrivi il tuo posto preferito con due frasi con c'est e due con il est o elle est."
+    },
+    "pt": {
+     "t": "C'est ou il est?",
+     "g": "Escolher bem entre c'est e il est ou elle est.",
+     "p": [
+      "C'est + determinante (un, le, mon...) + nome: c'est un ami, c'est mon livre, c'est une bonne idée.",
+      "Il est ou elle est + adjetivo sozinho ou profissão sozinha: il est sympa, elle est médecin.",
+      "C'est + adjetivo para um comentário geral: c'est beau!, c'est facile; e também c'est moi, c'est Paul."
+     ],
+     "q": "Descreve um amigo em francês com uma frase com c'est e outra com il est ou elle est.",
+     "c": "Descreve o teu lugar preferido com duas frases com c'est e duas com il est ou elle est."
+    },
+    "pt_BR": {
+     "t": "C'est ou il est?",
+     "g": "Escolher bem entre c'est e il est ou elle est.",
+     "p": [
+      "C'est + determinante (un, le, mon...) + substantivo: c'est un ami, c'est mon livre, c'est une bonne idée.",
+      "Il est ou elle est + adjetivo sozinho ou profissão sozinha: il est sympa, elle est médecin.",
+      "C'est + adjetivo para um comentário geral: c'est beau!, c'est facile; e também c'est moi, c'est Paul."
+     ],
+     "q": "Descreva um amigo em francês com uma frase com c'est e outra com il est ou elle est.",
+     "c": "Descreva seu lugar favorito com duas frases com c'est e duas com il est ou elle est."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "c'est un...",
+      "ex": "C'est un très bon restaurant."
+     },
+     {
+      "w": "il est + adjectif",
+      "ex": "Il est grand et sympa."
+     },
+     {
+      "w": "elle est + métier",
+      "ex": "Elle est avocate à Lyon."
+     },
+     {
+      "w": "c'est + adjectif",
+      "ex": "Ce film ? C'est génial !"
+     },
+     {
+      "w": "c'est moi",
+      "ex": "Qui est là ? C'est moi, Paul."
+     },
+     {
+      "w": "sympa",
+      "ex": "Ton frère est vraiment sympa."
+     }
+    ],
+    "gram": "C'est + déterminant + nom (c'est un ami) ; il est / elle est + adjectif ou métier seul (elle est médecin)."
+   }
+  },
+  {
+   "d": 84,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Small talk",
+     "g": "Keep a friendly chat going in French about the weather, the weekend and plans.",
+     "p": [
+      "Weather openers: il fait beau aujourd'hui!, quel temps!, il fait froid, non?",
+      "Weekend talk: tu as passé un bon week-end?, tu fais quelque chose ce week-end?",
+      "Keep it going with short reactions and questions: ah bon?, c'est sympa!, et toi?"
+     ],
+     "q": "Let us chat: what are you doing this weekend? Answer in French and ask me back.",
+     "c": "Prepare three small talk openers in French you could use with a neighbour or colleague."
+    },
+    "de": {
+     "t": "Smalltalk",
+     "g": "Du hältst auf Französisch ein freundliches Gespräch über Wetter, Wochenende und Pläne am Laufen.",
+     "p": [
+      "Wetter als Einstieg: il fait beau aujourd'hui!, quel temps!, il fait froid, non?",
+      "Wochenende: tu as passé un bon week-end?, tu fais quelque chose ce week-end?",
+      "Halte es lebendig mit kurzen Reaktionen und Fragen: ah bon?, c'est sympa!, et toi?"
+     ],
+     "q": "Lass uns plaudern: was machst du am Wochenende? Antworte auf Französisch und frag zurück.",
+     "c": "Bereite drei französische Gesprächseinstiege für einen Nachbarn oder Kollegen vor."
+    },
+    "es": {
+     "t": "Charla informal",
+     "g": "Mantén una charla amable en francés sobre el tiempo, el fin de semana y los planes.",
+     "p": [
+      "Para empezar con el tiempo: il fait beau aujourd'hui!, quel temps!, il fait froid, non?",
+      "Sobre el fin de semana: tu as passé un bon week-end?, tu fais quelque chose ce week-end?",
+      "Mantén la charla con reacciones y preguntas cortas: ah bon?, c'est sympa!, et toi?"
+     ],
+     "q": "Charlemos: ¿qué haces este fin de semana? Responde en francés y pregúntame a mí.",
+     "c": "Prepara tres frases en francés para empezar una charla con un vecino o un compañero."
+    },
+    "fr": {
+     "t": "Faire la conversation",
+     "g": "Entretenir une conversation légère sur la météo, le week-end et les projets.",
+     "p": [
+      "Pour commencer : il fait beau aujourd'hui !, quel temps !, il fait froid, non ?",
+      "Le week-end : tu as passé un bon week-end ?, tu fais quelque chose ce week-end ?",
+      "Pour continuer : ah bon ?, c'est sympa !, et toi ? De petites réactions et des questions."
+     ],
+     "q": "On discute : tu fais quoi ce week-end ? Réponds et pose-moi la question.",
+     "c": "Prépare trois phrases pour lancer la conversation avec un voisin ou un collègue."
+    },
+    "it": {
+     "t": "Chiacchiere",
+     "g": "Porta avanti una chiacchierata in francese su meteo, fine settimana e programmi.",
+     "p": [
+      "Per iniziare con il tempo: il fait beau aujourd'hui!, quel temps!, il fait froid, non?",
+      "Sul weekend: tu as passé un bon week-end?, tu fais quelque chose ce week-end?",
+      "Tieni viva la chiacchierata con reazioni e domande brevi: ah bon?, c'est sympa!, et toi?"
+     ],
+     "q": "Chiacchieriamo: cosa fai questo fine settimana? Rispondi in francese e chiedimelo a tua volta.",
+     "c": "Prepara tre frasi in francese per iniziare a chiacchierare con un vicino o un collega."
+    },
+    "pt": {
+     "t": "Conversa de circunstância",
+     "g": "Manter uma conversa simpática em francês sobre o tempo, o fim de semana e planos.",
+     "p": [
+      "Para começar com o tempo: il fait beau aujourd'hui!, quel temps!, il fait froid, non?",
+      "Sobre o fim de semana: tu as passé un bon week-end?, tu fais quelque chose ce week-end?",
+      "Mantém a conversa com reações e perguntas curtas: ah bon?, c'est sympa!, et toi?"
+     ],
+     "q": "Vamos conversar: o que fazes este fim de semana? Responde em francês e pergunta-me também.",
+     "c": "Prepara três frases em francês para começar uma conversa com um vizinho ou colega."
+    },
+    "pt_BR": {
+     "t": "Bate-papo",
+     "g": "Manter um papo simpático em francês sobre o tempo, o fim de semana e planos.",
+     "p": [
+      "Para começar com o tempo: il fait beau aujourd'hui!, quel temps!, il fait froid, non?",
+      "Sobre o fim de semana: tu as passé un bon week-end?, tu fais quelque chose ce week-end?",
+      "Mantenha o papo com reações e perguntas curtas: ah bon?, c'est sympa!, et toi?"
+     ],
+     "q": "Vamos conversar: o que você vai fazer neste fim de semana? Responda em francês e me pergunte também.",
+     "c": "Prepare três frases em francês para puxar papo com um vizinho ou colega."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "quel temps !",
+      "ex": "Quel temps ! Il pleut encore."
+     },
+     {
+      "w": "un bon week-end",
+      "ex": "Bon week-end ! À lundi !"
+     },
+     {
+      "w": "ah bon ?",
+      "ex": "Tu pars au Québec ? Ah bon ?"
+     },
+     {
+      "w": "et toi ?",
+      "ex": "Moi, ça va bien. Et toi ?"
+     },
+     {
+      "w": "des projets",
+      "ex": "Tu as des projets pour samedi ?"
+     },
+     {
+      "w": "c'est sympa",
+      "ex": "Un pique-nique ? C'est sympa !"
+     }
+    ],
+    "gram": "Relancer : questions courtes (et toi ?, ah bon ?) et passé composé figé : tu as passé un bon week-end ?"
+   }
+  },
+  {
+   "d": 85,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Very common expressions",
+     "g": "Sound natural with the everyday French expressions you hear all the time.",
+     "p": [
+      "To agree: d'accord, bien sûr, ça marche, pas de problème, volontiers.",
+      "To react: c'est pas grave (it does not matter), tant pis (oh well), super!, j'espère.",
+      "To encourage: bon courage!, bonne chance!, bonne journée!, bonne soirée!"
+     ],
+     "q": "How would you answer in French if a friend invites you for dinner tonight?",
+     "c": "Use three of today's expressions in short French replies to imaginary messages."
+    },
+    "de": {
+     "t": "Sehr häufige Ausdrücke",
+     "g": "Du klingst natürlicher mit den Alltagsausdrücken, die man ständig hört.",
+     "p": [
+      "Zustimmen: d'accord, bien sûr, ça marche, pas de problème, volontiers.",
+      "Reagieren: c'est pas grave (macht nichts), tant pis (schade), super!, j'espère.",
+      "Ermutigen: bon courage!, bonne chance!, bonne journée!, bonne soirée!"
+     ],
+     "q": "Wie antwortest du auf Französisch, wenn ein Freund dich heute zum Abendessen einlädt?",
+     "c": "Nutze drei der heutigen Ausdrücke in kurzen Antworten auf ausgedachte Nachrichten."
+    },
+    "es": {
+     "t": "Expresiones muy comunes",
+     "g": "Suena natural con las expresiones cotidianas que se oyen todo el tiempo.",
+     "p": [
+      "Para aceptar: d'accord, bien sûr, ça marche, pas de problème, volontiers.",
+      "Para reaccionar: c'est pas grave (no pasa nada), tant pis (qué le vamos a hacer), super!, j'espère.",
+      "Para animar: bon courage!, bonne chance!, bonne journée!, bonne soirée!"
+     ],
+     "q": "¿Qué responderías en francés si un amigo te invita a cenar esta noche?",
+     "c": "Usa tres expresiones de hoy en respuestas cortas a mensajes imaginarios."
+    },
+    "fr": {
+     "t": "Expressions très courantes",
+     "g": "Parler naturellement avec les expressions du quotidien.",
+     "p": [
+      "Pour accepter : d'accord, bien sûr, ça marche, pas de problème, volontiers.",
+      "Pour réagir : c'est pas grave, tant pis, super !, j'espère.",
+      "Pour encourager : bon courage !, bonne chance !, bonne journée !, bonne soirée !"
+     ],
+     "q": "Un ami t'invite à dîner ce soir : qu'est-ce que tu réponds ?",
+     "c": "Utilise trois expressions du jour pour répondre à des messages imaginaires."
+    },
+    "it": {
+     "t": "Espressioni molto comuni",
+     "g": "Suona naturale con le espressioni quotidiane che si sentono sempre.",
+     "p": [
+      "Per accettare: d'accord, bien sûr, ça marche, pas de problème, volontiers.",
+      "Per reagire: c'est pas grave (non fa niente), tant pis (pazienza), super!, j'espère.",
+      "Per incoraggiare: bon courage!, bonne chance!, bonne journée!, bonne soirée!"
+     ],
+     "q": "Cosa rispondi in francese se un amico ti invita a cena stasera?",
+     "c": "Usa tre espressioni di oggi in brevi risposte a messaggi immaginari."
+    },
+    "pt": {
+     "t": "Expressões muito comuns",
+     "g": "Soar natural com as expressões do dia a dia que se ouvem a toda a hora.",
+     "p": [
+      "Para aceitar: d'accord, bien sûr, ça marche, pas de problème, volontiers.",
+      "Para reagir: c'est pas grave (não faz mal), tant pis (paciência), super!, j'espère.",
+      "Para encorajar: bon courage!, bonne chance!, bonne journée!, bonne soirée!"
+     ],
+     "q": "O que respondes em francês se um amigo te convidar para jantar hoje?",
+     "c": "Usa três expressões de hoje em respostas curtas a mensagens imaginárias."
+    },
+    "pt_BR": {
+     "t": "Expressões muito comuns",
+     "g": "Soar natural com as expressões do dia a dia que se ouvem o tempo todo.",
+     "p": [
+      "Para aceitar: d'accord, bien sûr, ça marche, pas de problème, volontiers.",
+      "Para reagir: c'est pas grave (não tem problema), tant pis (paciência), super!, j'espère.",
+      "Para encorajar: bon courage!, bonne chance!, bonne journée!, bonne soirée!"
+     ],
+     "q": "O que você responde em francês se um amigo te convidar para jantar hoje?",
+     "c": "Use três expressões de hoje em respostas curtas a mensagens imaginárias."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "d'accord",
+      "ex": "On se voit à huit heures ? D'accord !"
+     },
+     {
+      "w": "bien sûr",
+      "ex": "Bien sûr, tu peux venir."
+     },
+     {
+      "w": "ça marche",
+      "ex": "Demain à midi ? Ça marche !"
+     },
+     {
+      "w": "pas de problème",
+      "ex": "Tu peux m'aider ? Pas de problème."
+     },
+     {
+      "w": "tant pis",
+      "ex": "Il n'y a plus de place ? Tant pis."
+     },
+     {
+      "w": "bon courage",
+      "ex": "Tu as un examen ? Bon courage !"
+     }
+    ],
+    "gram": "Bon / bonne + nom pour souhaiter : bonne journée, bon courage, bonne chance. D'accord, ça marche pour accepter."
+   }
+  },
+  {
+   "d": 86,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Linking words: et, mais, ou, parce que",
+     "g": "Connect your ideas with et, mais, ou and parce que to build longer sentences.",
+     "p": [
+      "Et adds (and), mais contrasts (but), ou gives a choice (or): du thé ou du café?",
+      "Parce que gives a reason: j'apprends le français parce que j'aime voyager; before a vowel: parce qu'il.",
+      "Also useful: alors (so), donc (therefore), aussi (also): il pleut, alors je reste à la maison."
+     ],
+     "q": "Why are you learning French? Answer with parce que and add a second idea with mais or et.",
+     "c": "Write three long French sentences about your day, each using a different linking word."
+    },
+    "de": {
+     "t": "Bindewörter: et, mais, ou, parce que",
+     "g": "Du verbindest Ideen mit et, mais, ou und parce que zu längeren Sätzen.",
+     "p": [
+      "Et fügt hinzu, mais stellt gegenüber, ou bietet eine Wahl: du thé ou du café?",
+      "Parce que gibt einen Grund: j'apprends le français parce que j'aime voyager; vor Vokal: parce qu'il.",
+      "Auch nützlich: alors (also), donc (deshalb), aussi (auch): il pleut, alors je reste à la maison."
+     ],
+     "q": "Warum lernst du Französisch? Antworte mit parce que und füge mit mais oder et etwas hinzu.",
+     "c": "Schreib drei lange Sätze über deinen Tag, jeweils mit einem anderen Bindewort."
+    },
+    "es": {
+     "t": "Conectores: et, mais, ou, parce que",
+     "g": "Une tus ideas con et, mais, ou y parce que para hacer frases más largas.",
+     "p": [
+      "Et suma (y), mais contrasta (pero), ou da opciones (o): du thé ou du café?",
+      "Parce que da una razón: j'apprends le français parce que j'aime voyager; ante vocal: parce qu'il.",
+      "También: alors (entonces), donc (por lo tanto), aussi (también): il pleut, alors je reste à la maison."
+     ],
+     "q": "¿Por qué aprendes francés? Responde con parce que y añade otra idea con mais o et.",
+     "c": "Escribe tres frases largas sobre tu día, cada una con un conector distinto."
+    },
+    "fr": {
+     "t": "Les connecteurs : et, mais, ou, parce que",
+     "g": "Relier tes idées avec et, mais, ou et parce que pour faire des phrases plus longues.",
+     "p": [
+      "Et ajoute, mais oppose, ou propose un choix : du thé ou du café ?",
+      "Parce que donne une cause : j'apprends le français parce que j'aime voyager ; parce qu'il devant une voyelle.",
+      "Aussi utiles : alors, donc, aussi : il pleut, alors je reste à la maison."
+     ],
+     "q": "Pourquoi tu apprends le français ? Réponds avec parce que, puis ajoute mais ou et.",
+     "c": "Écris trois longues phrases sur ta journée, chacune avec un connecteur différent."
+    },
+    "it": {
+     "t": "Connettivi: et, mais, ou, parce que",
+     "g": "Collega le idee con et, mais, ou e parce que per frasi più lunghe.",
+     "p": [
+      "Et aggiunge (e), mais contrappone (ma), ou offre una scelta (o): du thé ou du café?",
+      "Parce que dà un motivo: j'apprends le français parce que j'aime voyager; davanti a vocale: parce qu'il.",
+      "Utili anche: alors (allora), donc (quindi), aussi (anche): il pleut, alors je reste à la maison."
+     ],
+     "q": "Perché impari il francese? Rispondi con parce que e aggiungi un'idea con mais o et.",
+     "c": "Scrivi tre frasi lunghe sulla tua giornata, ognuna con un connettivo diverso."
+    },
+    "pt": {
+     "t": "Conectores: et, mais, ou, parce que",
+     "g": "Ligar as ideias com et, mais, ou e parce que para fazer frases mais longas.",
+     "p": [
+      "Et acrescenta (e), mais opõe (mas), ou dá escolha (ou): du thé ou du café?",
+      "Parce que dá uma razão: j'apprends le français parce que j'aime voyager; antes de vogal: parce qu'il.",
+      "Também úteis: alors (então), donc (portanto), aussi (também): il pleut, alors je reste à la maison."
+     ],
+     "q": "Porque aprendes francês? Responde com parce que e junta outra ideia com mais ou et.",
+     "c": "Escreve três frases longas sobre o teu dia, cada uma com um conector diferente."
+    },
+    "pt_BR": {
+     "t": "Conectores: et, mais, ou, parce que",
+     "g": "Ligar as ideias com et, mais, ou e parce que para fazer frases mais longas.",
+     "p": [
+      "Et acrescenta (e), mais opõe (mas), ou dá escolha (ou): du thé ou du café?",
+      "Parce que dá um motivo: j'apprends le français parce que j'aime voyager; antes de vogal: parce qu'il.",
+      "Também úteis: alors (então), donc (portanto), aussi (também): il pleut, alors je reste à la maison."
+     ],
+     "q": "Por que você aprende francês? Responda com parce que e acrescente outra ideia com mais ou et.",
+     "c": "Escreva três frases longas sobre o seu dia, cada uma com um conector diferente."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "et",
+      "ex": "J'aime le fromage et le pain."
+     },
+     {
+      "w": "mais",
+      "ex": "C'est cher, mais c'est très bon."
+     },
+     {
+      "w": "ou",
+      "ex": "Tu veux du thé ou du café ?"
+     },
+     {
+      "w": "parce que",
+      "ex": "Je reste ici parce qu'il pleut."
+     },
+     {
+      "w": "alors",
+      "ex": "Il est tard, alors je rentre."
+     },
+     {
+      "w": "donc",
+      "ex": "Je suis fatigué, donc je me couche."
+     }
+    ],
+    "gram": "Et (addition), mais (opposition), ou (choix), parce que (cause), alors / donc (conséquence). Parce qu' devant voyelle."
+   }
+  },
+  {
+   "d": 87,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Describing your town",
+     "g": "Describe where you live in French with il y a and il n'y a pas de.",
+     "p": [
+      "Il y a means there is or there are: il y a un parc, il y a des cafés, il y a beaucoup de monde.",
+      "In the negative, un, une and des become de: il n'y a pas de cinéma, il n'y a pas d'hôpital.",
+      "Add opinions and adjectives: c'est une ville calme, mon quartier est animé, j'aime le marché."
+     ],
+     "q": "What is there in your town or neighbourhood, and what is missing? Tell me in French.",
+     "c": "Write five French sentences about your town: three with il y a and two with il n'y a pas de."
+    },
+    "de": {
+     "t": "Deine Stadt beschreiben",
+     "g": "Du beschreibst auf Französisch, wo du wohnst, mit il y a und il n'y a pas de.",
+     "p": [
+      "Il y a heißt es gibt: il y a un parc, il y a des cafés, il y a beaucoup de monde.",
+      "Verneint werden un, une und des zu de: il n'y a pas de cinéma, il n'y a pas d'hôpital.",
+      "Füg Meinungen hinzu: c'est une ville calme, mon quartier est animé, j'aime le marché."
+     ],
+     "q": "Was gibt es in deiner Stadt oder deinem Viertel und was fehlt? Sag es mir auf Französisch.",
+     "c": "Schreib fünf Sätze über deine Stadt: drei mit il y a und zwei mit il n'y a pas de."
+    },
+    "es": {
+     "t": "Describir tu ciudad",
+     "g": "Describe dónde vives en francés con il y a e il n'y a pas de.",
+     "p": [
+      "Il y a significa hay: il y a un parc, il y a des cafés, il y a beaucoup de monde.",
+      "En negativa, un, une y des pasan a de: il n'y a pas de cinéma, il n'y a pas d'hôpital.",
+      "Añade opiniones: c'est une ville calme, mon quartier est animé, j'aime le marché."
+     ],
+     "q": "¿Qué hay en tu ciudad o tu barrio y qué falta? Dímelo en francés.",
+     "c": "Escribe cinco frases sobre tu ciudad: tres con il y a y dos con il n'y a pas de."
+    },
+    "fr": {
+     "t": "Décrire ta ville",
+     "g": "Décrire l'endroit où tu habites avec il y a et il n'y a pas de.",
+     "p": [
+      "Il y a : il y a un parc, il y a des cafés, il y a beaucoup de monde.",
+      "À la forme négative, un, une, des deviennent de : il n'y a pas de cinéma, il n'y a pas d'hôpital.",
+      "Ajoute ton avis : c'est une ville calme, mon quartier est animé, j'aime le marché."
+     ],
+     "q": "Qu'est-ce qu'il y a dans ta ville ou ton quartier, et qu'est-ce qui manque ?",
+     "c": "Écris cinq phrases sur ta ville : trois avec il y a et deux avec il n'y a pas de."
+    },
+    "it": {
+     "t": "Descrivere la tua città",
+     "g": "Descrivi dove vivi in francese con il y a e il n'y a pas de.",
+     "p": [
+      "Il y a significa c'è o ci sono: il y a un parc, il y a des cafés, il y a beaucoup de monde.",
+      "Nella negazione un, une e des diventano de: il n'y a pas de cinéma, il n'y a pas d'hôpital.",
+      "Aggiungi opinioni: c'est une ville calme, mon quartier est animé, j'aime le marché."
+     ],
+     "q": "Cosa c'è nella tua città o nel tuo quartiere, e cosa manca? Dimmelo in francese.",
+     "c": "Scrivi cinque frasi sulla tua città: tre con il y a e due con il n'y a pas de."
+    },
+    "pt": {
+     "t": "Descrever a tua cidade",
+     "g": "Descrever onde vives em francês com il y a e il n'y a pas de.",
+     "p": [
+      "Il y a quer dizer há: il y a un parc, il y a des cafés, il y a beaucoup de monde.",
+      "Na negativa, un, une e des passam a de: il n'y a pas de cinéma, il n'y a pas d'hôpital.",
+      "Junta opiniões: c'est une ville calme, mon quartier est animé, j'aime le marché."
+     ],
+     "q": "O que há na tua cidade ou no teu bairro, e o que falta? Diz-me em francês.",
+     "c": "Escreve cinco frases sobre a tua cidade: três com il y a e duas com il n'y a pas de."
+    },
+    "pt_BR": {
+     "t": "Descrever sua cidade",
+     "g": "Descrever onde você mora em francês com il y a e il n'y a pas de.",
+     "p": [
+      "Il y a quer dizer tem ou há: il y a un parc, il y a des cafés, il y a beaucoup de monde.",
+      "Na negativa, un, une e des viram de: il n'y a pas de cinéma, il n'y a pas d'hôpital.",
+      "Acrescente opiniões: c'est une ville calme, mon quartier est animé, j'aime le marché."
+     ],
+     "q": "O que tem na sua cidade ou no seu bairro, e o que falta? Me diga em francês.",
+     "c": "Escreva cinco frases sobre sua cidade: três com il y a e duas com il n'y a pas de."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "il y a",
+      "ex": "Il y a un joli parc près de chez moi."
+     },
+     {
+      "w": "il n'y a pas de",
+      "ex": "Il n'y a pas de métro dans ma ville."
+     },
+     {
+      "w": "le quartier",
+      "ex": "Mon quartier est calme et vert."
+     },
+     {
+      "w": "animé, animée",
+      "ex": "Le centre-ville est très animé le soir."
+     },
+     {
+      "w": "le marché",
+      "ex": "Il y a un marché le samedi matin."
+     },
+     {
+      "w": "beaucoup de monde",
+      "ex": "Il y a beaucoup de monde sur la place."
+     }
+    ],
+    "gram": "Il y a + un / une / des ; négation : il n'y a pas de (d') + nom : il n'y a pas de piscine, pas d'école."
+   }
+  },
+  {
+   "d": 88,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Booking a hotel room",
+     "g": "Book a hotel room in French and ask the key questions.",
+     "p": [
+      "Ask: je voudrais réserver une chambre pour deux nuits, pour deux personnes.",
+      "Room types: une chambre simple, une chambre double, avec douche or avec baignoire.",
+      "Check details: le petit-déjeuner est compris?, à quelle heure faut-il libérer la chambre?, il y a le wifi?"
+     ],
+     "q": "Imagine you call a hotel in Lyon: what do you say first in French?",
+     "c": "Write a short French dialogue to book a room: dates, number of people and one question."
+    },
+    "de": {
+     "t": "Ein Hotelzimmer buchen",
+     "g": "Du buchst auf Französisch ein Hotelzimmer und stellst die wichtigsten Fragen.",
+     "p": [
+      "Frag: je voudrais réserver une chambre pour deux nuits, pour deux personnes.",
+      "Zimmerarten: une chambre simple, une chambre double, avec douche oder avec baignoire.",
+      "Details klären: le petit-déjeuner est compris?, à quelle heure faut-il libérer la chambre?, il y a le wifi?"
+     ],
+     "q": "Stell dir vor, du rufst ein Hotel in Lyon an: was sagst du zuerst auf Französisch?",
+     "c": "Schreib einen kurzen Dialog zur Zimmerbuchung: Daten, Personenzahl und eine Frage."
+    },
+    "es": {
+     "t": "Reservar una habitación",
+     "g": "Reserva una habitación de hotel en francés y haz las preguntas clave.",
+     "p": [
+      "Pide: je voudrais réserver une chambre pour deux nuits, pour deux personnes.",
+      "Tipos: une chambre simple, une chambre double, avec douche o avec baignoire.",
+      "Comprueba: le petit-déjeuner est compris?, à quelle heure faut-il libérer la chambre?, il y a le wifi?"
+     ],
+     "q": "Imagina que llamas a un hotel en Lyon: ¿qué dices primero en francés?",
+     "c": "Escribe un diálogo corto para reservar: fechas, número de personas y una pregunta."
+    },
+    "fr": {
+     "t": "Réserver une chambre d'hôtel",
+     "g": "Réserver une chambre et poser les questions importantes.",
+     "p": [
+      "Demande : je voudrais réserver une chambre pour deux nuits, pour deux personnes.",
+      "Les chambres : une chambre simple, une chambre double, avec douche ou avec baignoire.",
+      "Les détails : le petit-déjeuner est compris ?, à quelle heure faut-il libérer la chambre ?, il y a le wifi ?"
+     ],
+     "q": "Tu appelles un hôtel à Lyon : qu'est-ce que tu dis en premier ?",
+     "c": "Écris un petit dialogue pour réserver : les dates, le nombre de personnes et une question."
+    },
+    "it": {
+     "t": "Prenotare una camera",
+     "g": "Prenota una camera d'albergo in francese e fai le domande principali.",
+     "p": [
+      "Chiedi: je voudrais réserver une chambre pour deux nuits, pour deux personnes.",
+      "Tipi: une chambre simple, une chambre double, avec douche o avec baignoire.",
+      "Dettagli: le petit-déjeuner est compris?, à quelle heure faut-il libérer la chambre?, il y a le wifi?"
+     ],
+     "q": "Immagina di chiamare un hotel a Lione: cosa dici per prima cosa in francese?",
+     "c": "Scrivi un breve dialogo per prenotare: date, numero di persone e una domanda."
+    },
+    "pt": {
+     "t": "Reservar um quarto de hotel",
+     "g": "Reservar um quarto de hotel em francês e fazer as perguntas essenciais.",
+     "p": [
+      "Pede: je voudrais réserver une chambre pour deux nuits, pour deux personnes.",
+      "Tipos: une chambre simple, une chambre double, avec douche ou avec baignoire.",
+      "Confirma: le petit-déjeuner est compris?, à quelle heure faut-il libérer la chambre?, il y a le wifi?"
+     ],
+     "q": "Imagina que ligas para um hotel em Lyon: o que dizes primeiro em francês?",
+     "c": "Escreve um pequeno diálogo para reservar: datas, número de pessoas e uma pergunta."
+    },
+    "pt_BR": {
+     "t": "Reservar um quarto de hotel",
+     "g": "Reservar um quarto de hotel em francês e fazer as perguntas essenciais.",
+     "p": [
+      "Peça: je voudrais réserver une chambre pour deux nuits, pour deux personnes.",
+      "Tipos: une chambre simple, une chambre double, avec douche ou avec baignoire.",
+      "Confirme: le petit-déjeuner est compris?, à quelle heure faut-il libérer la chambre?, il y a le wifi?"
+     ],
+     "q": "Imagine que você liga para um hotel em Lyon: o que diz primeiro em francês?",
+     "c": "Escreva um pequeno diálogo para reservar: datas, número de pessoas e uma pergunta."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "réserver une chambre",
+      "ex": "Je voudrais réserver une chambre double."
+     },
+     {
+      "w": "une nuit",
+      "ex": "C'est pour trois nuits, du 4 au 7 mai."
+     },
+     {
+      "w": "le petit-déjeuner",
+      "ex": "Le petit-déjeuner est servi à sept heures."
+     },
+     {
+      "w": "compris, comprise",
+      "ex": "Le petit-déjeuner est compris ?"
+     },
+     {
+      "w": "la clé",
+      "ex": "Voici la clé de votre chambre."
+     },
+     {
+      "w": "la réception",
+      "ex": "Je vous attends à la réception."
+     }
+    ],
+    "gram": "Je voudrais + infinitif (réserver) ; pour + durée (pour deux nuits) ; du... au... pour les dates."
+   }
+  },
+  {
+   "d": 89,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Telling about your week",
+     "g": "Talk about your week in French, mixing routine, plans and opinions.",
+     "p": [
+      "Routine in the present: le lundi, je travaille; le mercredi, je fais du sport.",
+      "Plans with aller + infinitive: ce week-end, je vais voir mes amis.",
+      "Opinions and links: j'aime le vendredi parce que..., mais le lundi, c'est difficile."
+     ],
+     "q": "Tell me about your week in French: one routine, one plan and one opinion.",
+     "c": "Record or write a one-minute French talk about your week using present, je vais and parce que."
+    },
+    "de": {
+     "t": "Von deiner Woche erzählen",
+     "g": "Du sprichst auf Französisch über deine Woche und mischst Routine, Pläne und Meinungen.",
+     "p": [
+      "Routine im Präsens: le lundi, je travaille; le mercredi, je fais du sport.",
+      "Pläne mit aller + Infinitiv: ce week-end, je vais voir mes amis.",
+      "Meinungen und Verbindungen: j'aime le vendredi parce que..., mais le lundi, c'est difficile."
+     ],
+     "q": "Erzähl mir von deiner Woche: eine Routine, ein Plan und eine Meinung.",
+     "c": "Sprich oder schreib eine Minute über deine Woche mit Präsens, je vais und parce que."
+    },
+    "es": {
+     "t": "Contar tu semana",
+     "g": "Habla de tu semana en francés combinando rutina, planes y opiniones.",
+     "p": [
+      "Rutina en presente: le lundi, je travaille; le mercredi, je fais du sport.",
+      "Planes con aller + infinitivo: ce week-end, je vais voir mes amis.",
+      "Opiniones y conectores: j'aime le vendredi parce que..., mais le lundi, c'est difficile."
+     ],
+     "q": "Cuéntame tu semana en francés: una rutina, un plan y una opinión.",
+     "c": "Graba o escribe un minuto sobre tu semana con presente, je vais y parce que."
+    },
+    "fr": {
+     "t": "Raconter ta semaine",
+     "g": "Parler de ta semaine en mélangeant routine, projets et opinions.",
+     "p": [
+      "La routine au présent : le lundi, je travaille ; le mercredi, je fais du sport.",
+      "Les projets avec aller + infinitif : ce week-end, je vais voir mes amis.",
+      "Les opinions : j'aime le vendredi parce que..., mais le lundi, c'est difficile."
+     ],
+     "q": "Raconte-moi ta semaine : une habitude, un projet et une opinion.",
+     "c": "Enregistre ou écris une minute sur ta semaine avec le présent, je vais et parce que."
+    },
+    "it": {
+     "t": "Raccontare la tua settimana",
+     "g": "Parla della tua settimana in francese unendo routine, programmi e opinioni.",
+     "p": [
+      "Routine al presente: le lundi, je travaille; le mercredi, je fais du sport.",
+      "Programmi con aller + infinito: ce week-end, je vais voir mes amis.",
+      "Opinioni e connettivi: j'aime le vendredi parce que..., mais le lundi, c'est difficile."
+     ],
+     "q": "Raccontami la tua settimana in francese: un'abitudine, un programma e un'opinione.",
+     "c": "Registra o scrivi un minuto sulla tua settimana con presente, je vais e parce que."
+    },
+    "pt": {
+     "t": "Contar a tua semana",
+     "g": "Falar da tua semana em francês juntando rotina, planos e opiniões.",
+     "p": [
+      "Rotina no presente: le lundi, je travaille; le mercredi, je fais du sport.",
+      "Planos com aller + infinitivo: ce week-end, je vais voir mes amis.",
+      "Opiniões e conectores: j'aime le vendredi parce que..., mais le lundi, c'est difficile."
+     ],
+     "q": "Conta-me a tua semana em francês: uma rotina, um plano e uma opinião.",
+     "c": "Grava ou escreve um minuto sobre a tua semana com presente, je vais e parce que."
+    },
+    "pt_BR": {
+     "t": "Contar sua semana",
+     "g": "Falar da sua semana em francês juntando rotina, planos e opiniões.",
+     "p": [
+      "Rotina no presente: le lundi, je travaille; le mercredi, je fais du sport.",
+      "Planos com aller + infinitivo: ce week-end, je vais voir mes amis.",
+      "Opiniões e conectores: j'aime le vendredi parce que..., mais le lundi, c'est difficile."
+     ],
+     "q": "Me conte sua semana em francês: uma rotina, um plano e uma opinião.",
+     "c": "Grave ou escreva um minuto sobre sua semana com presente, je vais e parce que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "le lundi",
+      "ex": "Le lundi, je commence à huit heures."
+     },
+     {
+      "w": "cette semaine",
+      "ex": "Cette semaine, j'ai beaucoup de travail."
+     },
+     {
+      "w": "ce week-end",
+      "ex": "Ce week-end, je vais à la mer."
+     },
+     {
+      "w": "d'habitude",
+      "ex": "D'habitude, je fais les courses le samedi."
+     },
+     {
+      "w": "je préfère",
+      "ex": "Je préfère le vendredi soir."
+     },
+     {
+      "w": "c'est difficile",
+      "ex": "Le lundi matin, c'est difficile !"
+     }
+    ],
+    "gram": "Le + jour = habitude (le lundi, je travaille) ; ce + jour = une seule fois (ce lundi) ; aller + infinitif pour les projets."
+   }
+  },
+  {
+   "d": 90,
+   "lv": "A1",
+   "i18n": {
+    "en": {
+     "t": "Review: A1 checkpoint",
+     "g": "Bring all of A1 together in a full French conversation about yourself.",
+     "p": [
+      "Introduce yourself: name, age, origin, job, family, home, with être, avoir and the present.",
+      "Describe your days, tastes and town: routine, food, hobbies, il y a, comparisons and feelings.",
+      "Talk about plans and give advice: je vais + infinitive, il faut, the imperative, pronouns le, la, lui."
+     ],
+     "q": "Introduce yourself to me in French as fully as you can: who you are, your life and your plans.",
+     "c": "Write a ten-sentence French text about yourself and read it aloud. Bravo, A1 is complete!"
+    },
+    "de": {
+     "t": "Rückblick: A1-Etappe",
+     "g": "Du bringst alles aus A1 in einem vollständigen Gespräch über dich zusammen.",
+     "p": [
+      "Stell dich vor: Name, Alter, Herkunft, Beruf, Familie, Wohnung, mit être, avoir und Präsens.",
+      "Beschreib Tage, Vorlieben und Stadt: Routine, Essen, Hobbys, il y a, Vergleiche und Gefühle.",
+      "Sprich über Pläne und gib Rat: je vais + Infinitiv, il faut, Imperativ, Pronomen le, la, lui."
+     ],
+     "q": "Stell dich mir auf Französisch so ausführlich wie möglich vor: wer du bist, dein Leben, deine Pläne.",
+     "c": "Schreib zehn Sätze über dich und lies sie laut vor. Bravo, A1 ist geschafft!"
+    },
+    "es": {
+     "t": "Repaso: etapa A1",
+     "g": "Reúne todo el A1 en una conversación completa en francés sobre ti.",
+     "p": [
+      "Preséntate: nombre, edad, origen, trabajo, familia, casa, con être, avoir y el presente.",
+      "Describe tus días, gustos y ciudad: rutina, comida, aficiones, il y a, comparaciones y sentimientos.",
+      "Habla de planes y da consejos: je vais + infinitivo, il faut, el imperativo, pronombres le, la, lui."
+     ],
+     "q": "Preséntate en francés lo más completo posible: quién eres, tu vida y tus planes.",
+     "c": "Escribe diez frases sobre ti en francés y léelas en voz alta. ¡Bravo, A1 terminado!"
+    },
+    "fr": {
+     "t": "Bilan : étape A1",
+     "g": "Réunir tout le niveau A1 dans une vraie conversation sur toi.",
+     "p": [
+      "Présente-toi : nom, âge, origine, métier, famille, logement, avec être, avoir et le présent.",
+      "Décris tes journées, tes goûts et ta ville : routine, repas, loisirs, il y a, comparaisons, sentiments.",
+      "Parle de tes projets et donne des conseils : je vais + infinitif, il faut, l'impératif, le, la, lui."
+     ],
+     "q": "Présente-toi le plus complètement possible : qui tu es, ta vie et tes projets.",
+     "c": "Écris dix phrases sur toi et lis-les à voix haute. Bravo, le niveau A1 est terminé !"
+    },
+    "it": {
+     "t": "Ripasso: tappa A1",
+     "g": "Metti insieme tutto l'A1 in una conversazione completa in francese su di te.",
+     "p": [
+      "Presentati: nome, età, origine, lavoro, famiglia, casa, con être, avoir e il presente.",
+      "Descrivi giornate, gusti e città: routine, cibo, hobby, il y a, paragoni e sentimenti.",
+      "Parla di programmi e dai consigli: je vais + infinito, il faut, l'imperativo, i pronomi le, la, lui."
+     ],
+     "q": "Presentati in francese nel modo più completo possibile: chi sei, la tua vita e i tuoi programmi.",
+     "c": "Scrivi dieci frasi su di te in francese e leggile ad alta voce. Bravo, l'A1 è completo!"
+    },
+    "pt": {
+     "t": "Revisão: etapa A1",
+     "g": "Juntar todo o A1 numa conversa completa em francês sobre ti.",
+     "p": [
+      "Apresenta-te: nome, idade, origem, profissão, família, casa, com être, avoir e o presente.",
+      "Descreve os teus dias, gostos e cidade: rotina, comida, passatempos, il y a, comparações e sentimentos.",
+      "Fala de planos e dá conselhos: je vais + infinitivo, il faut, o imperativo, os pronomes le, la, lui."
+     ],
+     "q": "Apresenta-te em francês o mais completo possível: quem és, a tua vida e os teus planos.",
+     "c": "Escreve dez frases sobre ti em francês e lê-as em voz alta. Parabéns, o A1 está concluído!"
+    },
+    "pt_BR": {
+     "t": "Revisão: etapa A1",
+     "g": "Juntar todo o A1 numa conversa completa em francês sobre você.",
+     "p": [
+      "Apresente-se: nome, idade, origem, profissão, família, casa, com être, avoir e o presente.",
+      "Descreva seus dias, gostos e cidade: rotina, comida, hobbies, il y a, comparações e sentimentos.",
+      "Fale de planos e dê conselhos: je vais + infinitivo, il faut, o imperativo, os pronomes le, la, lui."
+     ],
+     "q": "Apresente-se em francês do jeito mais completo possível: quem você é, sua vida e seus planos.",
+     "c": "Escreva dez frases sobre você em francês e leia em voz alta. Parabéns, o A1 está concluído!"
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "je m'appelle",
+      "ex": "Je m'appelle Léa et j'ai trente ans."
+     },
+     {
+      "w": "j'habite à",
+      "ex": "J'habite à Bordeaux depuis deux ans."
+     },
+     {
+      "w": "je suis + métier",
+      "ex": "Je suis infirmière dans un hôpital."
+     },
+     {
+      "w": "j'aime + infinitif",
+      "ex": "J'aime cuisiner et faire du vélo."
+     },
+     {
+      "w": "je vais + infinitif",
+      "ex": "L'été prochain, je vais visiter le Québec."
+     },
+     {
+      "w": "il faut",
+      "ex": "Pour progresser, il faut parler tous les jours."
+     }
+    ],
+    "gram": "Bilan A1 : présent, être / avoir, futur proche, impératif, il faut, comparatifs, il y a, pronoms le / la / lui."
+   }
+  }
+ ]
+}

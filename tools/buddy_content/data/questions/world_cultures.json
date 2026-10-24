@@ -1,0 +1,1305 @@
+{
+"topic": "world_cultures",
+"questions": [
+{
+"id": "world_cultures-001",
+"lv": "any",
+"i18n": {
+"en": "Which culture in the world fascinates you the most, and why?",
+"de": "Welche Kultur der Welt fasziniert dich am meisten, und warum?",
+"es": "¿Qué cultura del mundo te fascina más y por qué?",
+"fr": "Quelle culture du monde te fascine le plus, et pourquoi ?",
+"it": "Quale cultura del mondo ti affascina di più, e perché?",
+"pt": "Que cultura do mundo te fascina mais, e porquê?",
+"pt_BR": "Qual cultura do mundo mais te fascina, e por quê?"
+}
+},
+{
+"id": "world_cultures-002",
+"lv": "any",
+"i18n": {
+"en": "How would you describe your own culture to someone who has never visited?",
+"de": "Wie würdest du deine eigene Kultur jemandem beschreiben, der noch nie dort war?",
+"es": "¿Cómo describirías tu cultura a alguien que nunca ha estado allí?",
+"fr": "Comment décrirais-tu ta propre culture à quelqu'un qui n'y est jamais allé ?",
+"it": "Come descriveresti la tua cultura a qualcuno che non c'è mai stato?",
+"pt": "Como descreverias a tua cultura a alguém que nunca lá esteve?",
+"pt_BR": "Como você descreveria a sua cultura para alguém que nunca esteve lá?"
+}
+},
+{
+"id": "world_cultures-003",
+"lv": "any",
+"i18n": {
+"en": "What is a tradition from your country that you love?",
+"de": "Welche Tradition aus deinem Land liebst du?",
+"es": "¿Qué tradición de tu país te encanta?",
+"fr": "Quelle tradition de ton pays adores-tu ?",
+"it": "Qual è una tradizione del tuo paese che ami?",
+"pt": "Qual é uma tradição do teu país de que gostas muito?",
+"pt_BR": "Qual é uma tradição do seu país que você ama?"
+}
+},
+{
+"id": "world_cultures-004",
+"lv": "any",
+"i18n": {
+"en": "Which country would you love to visit to experience its culture?",
+"de": "Welches Land würdest du gern besuchen, um seine Kultur zu erleben?",
+"es": "¿Qué país te encantaría visitar para conocer su cultura?",
+"fr": "Quel pays aimerais-tu visiter pour découvrir sa culture ?",
+"it": "Quale paese ti piacerebbe visitare per viverne la cultura?",
+"pt": "Que país adorarias visitar para conhecer a sua cultura?",
+"pt_BR": "Que país você adoraria visitar para conhecer a cultura dele?"
+}
+},
+{
+"id": "world_cultures-005",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite dish from another country?",
+"de": "Was ist dein Lieblingsgericht aus einem anderen Land?",
+"es": "¿Cuál es tu plato favorito de otro país?",
+"fr": "Quel est ton plat préféré venant d'un autre pays ?",
+"it": "Qual è il tuo piatto preferito di un altro paese?",
+"pt": "Qual é o teu prato preferido de outro país?",
+"pt_BR": "Qual é o seu prato favorito de outro país?"
+}
+},
+{
+"id": "world_cultures-006",
+"lv": "any",
+"i18n": {
+"en": "How do people usually greet each other where you live?",
+"de": "Wie begrüßen sich die Leute normalerweise dort, wo du lebst?",
+"es": "¿Cómo se saluda normalmente la gente donde vives?",
+"fr": "Comment les gens se saluent-ils d'habitude là où tu vis ?",
+"it": "Come si salutano di solito le persone dove vivi?",
+"pt": "Como é que as pessoas costumam cumprimentar-se onde vives?",
+"pt_BR": "Como as pessoas costumam se cumprimentar onde você mora?"
+}
+},
+{
+"id": "world_cultures-007",
+"lv": "any",
+"i18n": {
+"en": "Which festival from your culture would you invite a foreign friend to?",
+"de": "Zu welchem Fest deiner Kultur würdest du einen Freund aus dem Ausland einladen?",
+"es": "¿A qué fiesta de tu cultura invitarías a un amigo extranjero?",
+"fr": "À quelle fête de ta culture inviterais-tu un ami étranger ?",
+"it": "A quale festa della tua cultura inviteresti un amico straniero?",
+"pt": "Para que festa da tua cultura convidarias um amigo estrangeiro?",
+"pt_BR": "Para qual festa da sua cultura você convidaria um amigo estrangeiro?"
+}
+},
+{
+"id": "world_cultures-008",
+"lv": "any",
+"i18n": {
+"en": "What kind of music do you associate with your country?",
+"de": "Welche Musik verbindest du mit deinem Land?",
+"es": "¿Qué tipo de música asocias con tu país?",
+"fr": "Quel genre de musique associes-tu à ton pays ?",
+"it": "Che tipo di musica associ al tuo paese?",
+"pt": "Que tipo de música associas ao teu país?",
+"pt_BR": "Que tipo de música você associa ao seu país?"
+}
+},
+{
+"id": "world_cultures-009",
+"lv": "any",
+"i18n": {
+"en": "Have you ever felt surprised by a custom in another culture? What was it?",
+"de": "Hat dich schon mal ein Brauch in einer anderen Kultur überrascht? Welcher?",
+"es": "¿Alguna vez te sorprendió una costumbre de otra cultura? ¿Cuál fue?",
+"fr": "As-tu déjà été surpris par une coutume d'une autre culture ? Laquelle ?",
+"it": "Ti ha mai sorpreso un'usanza di un'altra cultura? Quale?",
+"pt": "Já te surpreendeu algum costume de outra cultura? Qual foi?",
+"pt_BR": "Algum costume de outra cultura já te surpreendeu? Qual foi?"
+}
+},
+{
+"id": "world_cultures-010",
+"lv": "any",
+"i18n": {
+"en": "What does a typical weekend look like in your country?",
+"de": "Wie sieht ein typisches Wochenende in deinem Land aus?",
+"es": "¿Cómo es un fin de semana típico en tu país?",
+"fr": "À quoi ressemble un week-end typique dans ton pays ?",
+"it": "Com'è un tipico fine settimana nel tuo paese?",
+"pt": "Como é um fim de semana típico no teu país?",
+"pt_BR": "Como é um fim de semana típico no seu país?"
+}
+},
+{
+"id": "world_cultures-011",
+"lv": "any",
+"i18n": {
+"en": "Which word in your language do you think is hard to translate?",
+"de": "Welches Wort in deiner Sprache ist deiner Meinung nach schwer zu übersetzen?",
+"es": "¿Qué palabra de tu idioma crees que es difícil de traducir?",
+"fr": "Quel mot de ta langue te semble difficile à traduire ?",
+"it": "Quale parola della tua lingua pensi sia difficile da tradurre?",
+"pt": "Que palavra da tua língua achas difícil de traduzir?",
+"pt_BR": "Qual palavra do seu idioma você acha difícil de traduzir?"
+}
+},
+{
+"id": "world_cultures-012",
+"lv": "any",
+"i18n": {
+"en": "What do you think visitors find most charming about your culture?",
+"de": "Was finden Besucher deiner Meinung nach an deiner Kultur am charmantesten?",
+"es": "¿Qué crees que les encanta más a los visitantes de tu cultura?",
+"fr": "Selon toi, qu'est-ce que les visiteurs trouvent le plus charmant dans ta culture ?",
+"it": "Cosa pensi che i visitatori trovino più affascinante della tua cultura?",
+"pt": "O que achas que os visitantes acham mais encantador na tua cultura?",
+"pt_BR": "O que você acha que os visitantes acham mais encantador na sua cultura?"
+}
+},
+{
+"id": "world_cultures-013",
+"lv": "any",
+"i18n": {
+"en": "Which traditional clothing from around the world do you find beautiful?",
+"de": "Welche traditionelle Kleidung aus aller Welt findest du schön?",
+"es": "¿Qué ropa tradicional del mundo te parece bonita?",
+"fr": "Quels vêtements traditionnels du monde trouves-tu beaux ?",
+"it": "Quale abbigliamento tradizionale del mondo trovi bello?",
+"pt": "Que trajes tradicionais do mundo achas bonitos?",
+"pt_BR": "Quais roupas tradicionais do mundo você acha bonitas?"
+}
+},
+{
+"id": "world_cultures-014",
+"lv": "any",
+"i18n": {
+"en": "Is there a custom from another country you would like to adopt?",
+"de": "Gibt es einen Brauch aus einem anderen Land, den du gern übernehmen würdest?",
+"es": "¿Hay alguna costumbre de otro país que te gustaría adoptar?",
+"fr": "Y a-t-il une coutume d'un autre pays que tu aimerais adopter ?",
+"it": "C'è un'usanza di un altro paese che vorresti adottare?",
+"pt": "Há algum costume de outro país que gostarias de adotar?",
+"pt_BR": "Tem algum costume de outro país que você gostaria de adotar?"
+}
+},
+{
+"id": "world_cultures-015",
+"lv": "any",
+"i18n": {
+"en": "What is a proverb from your culture that you like?",
+"de": "Welches Sprichwort aus deiner Kultur magst du?",
+"es": "¿Qué refrán de tu cultura te gusta?",
+"fr": "Quel proverbe de ta culture aimes-tu ?",
+"it": "Qual è un proverbio della tua cultura che ti piace?",
+"pt": "Qual é um provérbio da tua cultura de que gostas?",
+"pt_BR": "Qual é um ditado da sua cultura de que você gosta?"
+}
+},
+{
+"id": "world_cultures-016",
+"lv": "any",
+"i18n": {
+"en": "How do families in your country usually celebrate birthdays?",
+"de": "Wie feiern Familien in deinem Land normalerweise Geburtstage?",
+"es": "¿Cómo suelen celebrar los cumpleaños las familias de tu país?",
+"fr": "Comment les familles de ton pays fêtent-elles les anniversaires ?",
+"it": "Come festeggiano di solito i compleanni le famiglie del tuo paese?",
+"pt": "Como é que as famílias do teu país costumam festejar os aniversários?",
+"pt_BR": "Como as famílias do seu país costumam comemorar aniversários?"
+}
+},
+{
+"id": "world_cultures-017",
+"lv": "any",
+"i18n": {
+"en": "Which country's food culture would you like to explore more?",
+"de": "Welche Esskultur würdest du gern näher kennenlernen?",
+"es": "¿Qué cultura gastronómica te gustaría explorar más?",
+"fr": "Quelle culture culinaire aimerais-tu explorer davantage ?",
+"it": "Quale cultura gastronomica ti piacerebbe esplorare di più?",
+"pt": "Que cultura gastronómica gostarias de explorar mais?",
+"pt_BR": "Qual cultura gastronômica você gostaria de explorar mais?"
+}
+},
+{
+"id": "world_cultures-018",
+"lv": "any",
+"i18n": {
+"en": "Do you prefer tea or coffee, and how is it usually served where you live?",
+"de": "Trinkst du lieber Tee oder Kaffee, und wie wird er bei dir meist serviert?",
+"es": "¿Prefieres té o café, y cómo se suele servir donde vives?",
+"fr": "Tu préfères le thé ou le café, et comment le sert-on chez toi ?",
+"it": "Preferisci tè o caffè, e come si serve di solito dove vivi?",
+"pt": "Preferes chá ou café, e como se costuma servir onde vives?",
+"pt_BR": "Você prefere chá ou café, e como costuma ser servido onde você mora?"
+}
+},
+{
+"id": "world_cultures-019",
+"lv": "any",
+"i18n": {
+"en": "What is something about your culture that people often misunderstand?",
+"de": "Was wird an deiner Kultur oft missverstanden?",
+"es": "¿Qué aspecto de tu cultura suele malinterpretarse?",
+"fr": "Qu'est-ce qui est souvent mal compris dans ta culture ?",
+"it": "C'è qualcosa della tua cultura che spesso viene frainteso?",
+"pt": "Que aspeto da tua cultura é muitas vezes mal compreendido?",
+"pt_BR": "O que as pessoas costumam entender errado sobre a sua cultura?"
+}
+},
+{
+"id": "world_cultures-020",
+"lv": "any",
+"i18n": {
+"en": "Which dance from any culture would you love to learn?",
+"de": "Welchen Tanz aus irgendeiner Kultur würdest du gern lernen?",
+"es": "¿Qué baile de cualquier cultura te encantaría aprender?",
+"fr": "Quelle danse, de n'importe quelle culture, aimerais-tu apprendre ?",
+"it": "Quale danza di qualsiasi cultura ti piacerebbe imparare?",
+"pt": "Que dança de qualquer cultura adorarias aprender?",
+"pt_BR": "Que dança de qualquer cultura você adoraria aprender?"
+}
+},
+{
+"id": "world_cultures-021",
+"lv": "any",
+"i18n": {
+"en": "Have you ever made a friend from a very different culture? What did you learn?",
+"de": "Hast du schon mal Freundschaft mit jemandem aus einer ganz anderen Kultur geschlossen? Was hast du gelernt?",
+"es": "¿Has hecho amistad con alguien de una cultura muy distinta? ¿Qué aprendiste?",
+"fr": "T'es-tu déjà lié d'amitié avec quelqu'un d'une culture très différente ? Qu'as-tu appris ?",
+"it": "Hai mai stretto amicizia con qualcuno di una cultura molto diversa? Cosa hai imparato?",
+"pt": "Já fizeste amizade com alguém de uma cultura muito diferente? O que aprendeste?",
+"pt_BR": "Você já fez amizade com alguém de uma cultura muito diferente? O que aprendeu?"
+}
+},
+{
+"id": "world_cultures-022",
+"lv": "any",
+"i18n": {
+"en": "What is your favourite holiday of the year, and how do you celebrate it?",
+"de": "Was ist dein Lieblingsfeiertag im Jahr, und wie feierst du ihn?",
+"es": "¿Cuál es tu fiesta favorita del año y cómo la celebras?",
+"fr": "Quelle est ta fête préférée de l'année, et comment la célèbres-tu ?",
+"it": "Qual è la tua festa preferita dell'anno, e come la festeggi?",
+"pt": "Qual é o teu feriado preferido do ano, e como o celebras?",
+"pt_BR": "Qual é o seu feriado favorito do ano, e como você comemora?"
+}
+},
+{
+"id": "world_cultures-023",
+"lv": "any",
+"i18n": {
+"en": "Which city do you think is the most multicultural you know?",
+"de": "Welche Stadt hältst du für die multikulturellste, die du kennst?",
+"es": "¿Cuál crees que es la ciudad más multicultural que conoces?",
+"fr": "Quelle est, selon toi, la ville la plus multiculturelle que tu connaisses ?",
+"it": "Qual è secondo te la città più multiculturale che conosci?",
+"pt": "Qual achas que é a cidade mais multicultural que conheces?",
+"pt_BR": "Qual você acha que é a cidade mais multicultural que conhece?"
+}
+},
+{
+"id": "world_cultures-024",
+"lv": "any",
+"i18n": {
+"en": "What is a game or sport that is very popular in your country?",
+"de": "Welches Spiel oder welcher Sport ist in deinem Land sehr beliebt?",
+"es": "¿Qué juego o deporte es muy popular en tu país?",
+"fr": "Quel jeu ou sport est très populaire dans ton pays ?",
+"it": "Quale gioco o sport è molto popolare nel tuo paese?",
+"pt": "Que jogo ou desporto é muito popular no teu país?",
+"pt_BR": "Qual jogo ou esporte é muito popular no seu país?"
+}
+},
+{
+"id": "world_cultures-025",
+"lv": "any",
+"i18n": {
+"en": "What do people in your country usually eat for breakfast?",
+"de": "Was essen die Leute in deinem Land normalerweise zum Frühstück?",
+"es": "¿Qué suele desayunar la gente en tu país?",
+"fr": "Que mangent les gens de ton pays au petit-déjeuner, en général ?",
+"it": "Cosa mangiano di solito a colazione nel tuo paese?",
+"pt": "O que é que as pessoas do teu país costumam comer ao pequeno-almoço?",
+"pt_BR": "O que as pessoas do seu país costumam comer no café da manhã?"
+}
+},
+{
+"id": "world_cultures-026",
+"lv": "any",
+"i18n": {
+"en": "Which part of the world do you know the least about but would like to discover?",
+"de": "Über welchen Teil der Welt weißt du am wenigsten, möchtest ihn aber entdecken?",
+"es": "¿Qué parte del mundo conoces menos pero te gustaría descubrir?",
+"fr": "Quelle région du monde connais-tu le moins mais aimerais découvrir ?",
+"it": "Quale parte del mondo conosci meno ma vorresti scoprire?",
+"pt": "Que parte do mundo conheces menos, mas gostarias de descobrir?",
+"pt_BR": "Qual parte do mundo você conhece menos, mas gostaria de descobrir?"
+}
+},
+{
+"id": "world_cultures-027",
+"lv": "any",
+"i18n": {
+"en": "What is a song from another culture that you really enjoy?",
+"de": "Welches Lied aus einer anderen Kultur gefällt dir richtig gut?",
+"es": "¿Qué canción de otra cultura te gusta mucho?",
+"fr": "Quelle chanson d'une autre culture aimes-tu beaucoup ?",
+"it": "Quale canzone di un'altra cultura ti piace davvero?",
+"pt": "Que canção de outra cultura gostas muito de ouvir?",
+"pt_BR": "Qual música de outra cultura você curte muito?"
+}
+},
+{
+"id": "world_cultures-028",
+"lv": "any",
+"i18n": {
+"en": "How important is family in your culture, in your view?",
+"de": "Wie wichtig ist die Familie deiner Meinung nach in deiner Kultur?",
+"es": "¿Qué importancia tiene la familia en tu cultura, en tu opinión?",
+"fr": "Selon toi, quelle place la famille occupe-t-elle dans ta culture ?",
+"it": "Quanto è importante la famiglia nella tua cultura, secondo te?",
+"pt": "Na tua opinião, que importância tem a família na tua cultura?",
+"pt_BR": "Na sua opinião, qual é a importância da família na sua cultura?"
+}
+},
+{
+"id": "world_cultures-029",
+"lv": "any",
+"i18n": {
+"en": "Which film or series taught you something about another culture?",
+"de": "Welcher Film oder welche Serie hat dir etwas über eine andere Kultur beigebracht?",
+"es": "¿Qué película o serie te enseñó algo sobre otra cultura?",
+"fr": "Quel film ou quelle série t'a appris quelque chose sur une autre culture ?",
+"it": "Quale film o serie ti ha insegnato qualcosa su un'altra cultura?",
+"pt": "Que filme ou série te ensinou algo sobre outra cultura?",
+"pt_BR": "Qual filme ou série te ensinou algo sobre outra cultura?"
+}
+},
+{
+"id": "world_cultures-030",
+"lv": "any",
+"i18n": {
+"en": "What is a local market or festival near you that visitors should see?",
+"de": "Welchen Markt oder welches Fest in deiner Nähe sollten Besucher sehen?",
+"es": "¿Qué mercado o fiesta cerca de ti deberían ver los visitantes?",
+"fr": "Quel marché ou quelle fête près de chez toi les visiteurs devraient-ils voir ?",
+"it": "Quale mercato o festa vicino a te dovrebbero vedere i visitatori?",
+"pt": "Que mercado ou festa perto de ti os visitantes deviam conhecer?",
+"pt_BR": "Qual mercado ou festa perto de você os visitantes deveriam conhecer?"
+}
+},
+{
+"id": "world_cultures-031",
+"lv": "any",
+"i18n": {
+"en": "If you could live in another country for a year, which would you choose?",
+"de": "Wenn du ein Jahr in einem anderen Land leben könntest, welches wäre es?",
+"es": "Si pudieras vivir un año en otro país, ¿cuál elegirías?",
+"fr": "Si tu pouvais vivre un an dans un autre pays, lequel choisirais-tu ?",
+"it": "Se potessi vivere un anno in un altro paese, quale sceglieresti?",
+"pt": "Se pudesses viver um ano noutro país, qual escolherias?",
+"pt_BR": "Se você pudesse morar um ano em outro país, qual escolheria?"
+}
+},
+{
+"id": "world_cultures-032",
+"lv": "any",
+"i18n": {
+"en": "What small daily habit do you think is very typical of your culture?",
+"de": "Welche kleine Alltagsgewohnheit ist deiner Meinung nach typisch für deine Kultur?",
+"es": "¿Qué pequeño hábito diario crees que es muy típico de tu cultura?",
+"fr": "Quelle petite habitude quotidienne te semble très typique de ta culture ?",
+"it": "Quale piccola abitudine quotidiana ti sembra tipica della tua cultura?",
+"pt": "Que pequeno hábito diário achas muito típico da tua cultura?",
+"pt_BR": "Qual pequeno hábito do dia a dia você acha bem típico da sua cultura?"
+}
+},
+{
+"id": "world_cultures-033",
+"lv": "any",
+"i18n": {
+"en": "Which language would you learn to understand a culture better?",
+"de": "Welche Sprache würdest du lernen, um eine Kultur besser zu verstehen?",
+"es": "¿Qué idioma aprenderías para entender mejor una cultura?",
+"fr": "Quelle langue apprendrais-tu pour mieux comprendre une culture ?",
+"it": "Quale lingua impareresti per capire meglio una cultura?",
+"pt": "Que língua aprenderias para compreender melhor uma cultura?",
+"pt_BR": "Qual idioma você aprenderia para entender melhor uma cultura?"
+}
+},
+{
+"id": "world_cultures-034",
+"lv": "any",
+"i18n": {
+"en": "What do you enjoy most about meeting people from other countries?",
+"de": "Was gefällt dir am meisten daran, Menschen aus anderen Ländern kennenzulernen?",
+"es": "¿Qué es lo que más disfrutas de conocer gente de otros países?",
+"fr": "Qu'est-ce que tu aimes le plus quand tu rencontres des gens d'autres pays ?",
+"it": "Cosa ti piace di più del conoscere persone di altri paesi?",
+"pt": "O que mais gostas em conhecer pessoas de outros países?",
+"pt_BR": "O que você mais gosta em conhecer pessoas de outros países?"
+}
+},
+{
+"id": "world_cultures-035",
+"lv": "any",
+"i18n": {
+"en": "Is there a traditional craft from your region that you admire?",
+"de": "Gibt es ein traditionelles Handwerk aus deiner Region, das du bewunderst?",
+"es": "¿Hay alguna artesanía tradicional de tu región que admires?",
+"fr": "Y a-t-il un artisanat traditionnel de ta région que tu admires ?",
+"it": "C'è un artigianato tradizionale della tua regione che ammiri?",
+"pt": "Há algum artesanato tradicional da tua região que admires?",
+"pt_BR": "Existe algum artesanato tradicional da sua região que você admira?"
+}
+},
+{
+"id": "world_cultures-036",
+"lv": "any",
+"i18n": {
+"en": "How do people in your culture show friendliness to strangers?",
+"de": "Wie zeigen Menschen in deiner Kultur Fremden gegenüber Freundlichkeit?",
+"es": "¿Cómo muestran amabilidad a los desconocidos en tu cultura?",
+"fr": "Comment, dans ta culture, montre-t-on de la gentillesse aux inconnus ?",
+"it": "Come si mostra gentilezza verso gli sconosciuti nella tua cultura?",
+"pt": "Como é que na tua cultura se mostra simpatia a desconhecidos?",
+"pt_BR": "Como as pessoas da sua cultura mostram simpatia com desconhecidos?"
+}
+},
+{
+"id": "world_cultures-037",
+"lv": "any",
+"i18n": {
+"en": "What is the best cultural experience you have ever had?",
+"de": "Was war das beste kulturelle Erlebnis, das du je hattest?",
+"es": "¿Cuál es la mejor experiencia cultural que has vivido?",
+"fr": "Quelle est la meilleure expérience culturelle que tu aies vécue ?",
+"it": "Qual è la migliore esperienza culturale che tu abbia mai vissuto?",
+"pt": "Qual foi a melhor experiência cultural que já viveste?",
+"pt_BR": "Qual foi a melhor experiência cultural que você já viveu?"
+}
+},
+{
+"id": "world_cultures-038",
+"lv": "any",
+"i18n": {
+"en": "Which famous landmark represents your culture best, in your opinion?",
+"de": "Welches berühmte Wahrzeichen steht deiner Meinung nach am besten für deine Kultur?",
+"es": "¿Qué monumento famoso representa mejor tu cultura, en tu opinión?",
+"fr": "Selon toi, quel monument célèbre représente le mieux ta culture ?",
+"it": "Quale monumento famoso rappresenta meglio la tua cultura, secondo te?",
+"pt": "Na tua opinião, que monumento famoso representa melhor a tua cultura?",
+"pt_BR": "Na sua opinião, qual monumento famoso representa melhor a sua cultura?"
+}
+},
+{
+"id": "world_cultures-039",
+"lv": "any",
+"i18n": {
+"en": "What would you cook to share your culture with a new friend?",
+"de": "Was würdest du kochen, um einem neuen Freund deine Kultur näherzubringen?",
+"es": "¿Qué cocinarías para compartir tu cultura con un nuevo amigo?",
+"fr": "Que cuisinerais-tu pour faire découvrir ta culture à un nouvel ami ?",
+"it": "Cosa cucineresti per condividere la tua cultura con un nuovo amico?",
+"pt": "O que cozinharias para partilhar a tua cultura com um novo amigo?",
+"pt_BR": "O que você cozinharia para compartilhar sua cultura com um novo amigo?"
+}
+},
+{
+"id": "world_cultures-040",
+"lv": "any",
+"i18n": {
+"en": "Which culture's way of life do you find the most relaxing?",
+"de": "Welche Lebensweise einer Kultur findest du am entspannendsten?",
+"es": "¿El estilo de vida de qué cultura te parece más relajante?",
+"fr": "Le mode de vie de quelle culture trouves-tu le plus apaisant ?",
+"it": "Lo stile di vita di quale cultura trovi più rilassante?",
+"pt": "O estilo de vida de que cultura achas mais relaxante?",
+"pt_BR": "O estilo de vida de qual cultura você acha mais relaxante?"
+}
+},
+{
+"id": "world_cultures-041",
+"lv": "beginner",
+"i18n": {
+"en": "What time do people usually have dinner in your country?",
+"de": "Um wie viel Uhr isst man in deinem Land normalerweise zu Abend?",
+"es": "¿A qué hora se suele cenar en tu país?",
+"fr": "À quelle heure dîne-t-on habituellement dans ton pays ?",
+"it": "A che ora si cena di solito nel tuo paese?",
+"pt": "A que horas se costuma jantar no teu país?",
+"pt_BR": "Que horas as pessoas costumam jantar no seu país?"
+}
+},
+{
+"id": "world_cultures-042",
+"lv": "beginner",
+"i18n": {
+"en": "Do people take off their shoes at home where you live?",
+"de": "Zieht man bei dir zu Hause die Schuhe aus?",
+"es": "¿Donde vives, la gente se quita los zapatos en casa?",
+"fr": "Chez toi, enlève-t-on ses chaussures à la maison ?",
+"it": "Dove vivi, ci si toglie le scarpe in casa?",
+"pt": "Onde vives, as pessoas tiram os sapatos em casa?",
+"pt_BR": "Onde você mora, as pessoas tiram os sapatos em casa?"
+}
+},
+{
+"id": "world_cultures-043",
+"lv": "beginner",
+"i18n": {
+"en": "Which greeting from another country would you like to try?",
+"de": "Welche Begrüßung aus einem anderen Land würdest du gern ausprobieren?",
+"es": "¿Qué saludo de otro país te gustaría probar?",
+"fr": "Quelle salutation d'un autre pays aimerais-tu essayer ?",
+"it": "Quale saluto di un altro paese ti piacerebbe provare?",
+"pt": "Que cumprimento de outro país gostarias de experimentar?",
+"pt_BR": "Qual cumprimento de outro país você gostaria de experimentar?"
+}
+},
+{
+"id": "world_cultures-044",
+"lv": "beginner",
+"i18n": {
+"en": "Do you eat with chopsticks, hands or cutlery most often?",
+"de": "Isst du meistens mit Stäbchen, den Händen oder Besteck?",
+"es": "¿Sueles comer con palillos, con las manos o con cubiertos?",
+"fr": "Manges-tu le plus souvent avec des baguettes, les mains ou des couverts ?",
+"it": "Mangi più spesso con le bacchette, con le mani o con le posate?",
+"pt": "Comes mais vezes com pauzinhos, com as mãos ou com talheres?",
+"pt_BR": "Você come mais com hashi, com as mãos ou com talheres?"
+}
+},
+{
+"id": "world_cultures-045",
+"lv": "beginner",
+"i18n": {
+"en": "What is a lucky number or colour in your culture?",
+"de": "Welche Zahl oder Farbe bringt in deiner Kultur Glück?",
+"es": "¿Qué número o color da suerte en tu cultura?",
+"fr": "Quel nombre ou quelle couleur porte bonheur dans ta culture ?",
+"it": "Quale numero o colore porta fortuna nella tua cultura?",
+"pt": "Que número ou cor dá sorte na tua cultura?",
+"pt_BR": "Qual número ou cor dá sorte na sua cultura?"
+}
+},
+{
+"id": "world_cultures-046",
+"lv": "beginner",
+"i18n": {
+"en": "How do people celebrate New Year where you live?",
+"de": "Wie feiert man bei dir Neujahr?",
+"es": "¿Cómo se celebra el Año Nuevo donde vives?",
+"fr": "Comment fête-t-on le Nouvel An chez toi ?",
+"it": "Come si festeggia il Capodanno dove vivi?",
+"pt": "Como se festeja o Ano Novo onde vives?",
+"pt_BR": "Como se comemora o Ano-Novo onde você mora?"
+}
+},
+{
+"id": "world_cultures-047",
+"lv": "beginner",
+"i18n": {
+"en": "What kind of bread is most common in your country?",
+"de": "Welche Brotsorte ist in deinem Land am häufigsten?",
+"es": "¿Qué tipo de pan es el más común en tu país?",
+"fr": "Quel type de pain est le plus courant dans ton pays ?",
+"it": "Che tipo di pane è il più comune nel tuo paese?",
+"pt": "Que tipo de pão é mais comum no teu país?",
+"pt_BR": "Qual tipo de pão é mais comum no seu país?"
+}
+},
+{
+"id": "world_cultures-048",
+"lv": "beginner",
+"i18n": {
+"en": "Does your family have a special dish for celebrations?",
+"de": "Hat deine Familie ein besonderes Gericht für Feste?",
+"es": "¿Tu familia tiene un plato especial para las celebraciones?",
+"fr": "Ta famille a-t-elle un plat spécial pour les fêtes ?",
+"it": "La tua famiglia ha un piatto speciale per le feste?",
+"pt": "A tua família tem um prato especial para as festas?",
+"pt_BR": "Sua família tem um prato especial para as comemorações?"
+}
+},
+{
+"id": "world_cultures-049",
+"lv": "beginner",
+"i18n": {
+"en": "Which traditional instrument would you like to learn to play?",
+"de": "Welches traditionelle Instrument würdest du gern spielen lernen?",
+"es": "¿Qué instrumento tradicional te gustaría aprender a tocar?",
+"fr": "De quel instrument traditionnel aimerais-tu apprendre à jouer ?",
+"it": "Quale strumento tradizionale ti piacerebbe imparare a suonare?",
+"pt": "Que instrumento tradicional gostarias de aprender a tocar?",
+"pt_BR": "Qual instrumento tradicional você gostaria de aprender a tocar?"
+}
+},
+{
+"id": "world_cultures-050",
+"lv": "beginner",
+"i18n": {
+"en": "What is your favourite folk tale or legend from childhood?",
+"de": "Was ist dein Lieblingsmärchen oder deine Lieblingssage aus der Kindheit?",
+"es": "¿Cuál es tu cuento o leyenda favorita de la infancia?",
+"fr": "Quel est ton conte ou ta légende préférée de ton enfance ?",
+"it": "Qual è la tua fiaba o leggenda preferita dell'infanzia?",
+"pt": "Qual é o teu conto ou lenda preferida da infância?",
+"pt_BR": "Qual é o seu conto ou lenda favorita da infância?"
+}
+},
+{
+"id": "world_cultures-051",
+"lv": "beginner",
+"i18n": {
+"en": "How do people in your country spend a typical Sunday?",
+"de": "Wie verbringen die Menschen in deinem Land einen typischen Sonntag?",
+"es": "¿Cómo pasa la gente un domingo típico en tu país?",
+"fr": "Comment les gens passent-ils un dimanche typique dans ton pays ?",
+"it": "Come trascorrono le persone una domenica tipica nel tuo paese?",
+"pt": "Como é que as pessoas passam um domingo típico no teu país?",
+"pt_BR": "Como as pessoas passam um domingo típico no seu país?"
+}
+},
+{
+"id": "world_cultures-052",
+"lv": "beginner",
+"i18n": {
+"en": "Do you live with your family, and is that common in your culture?",
+"de": "Lebst du mit deiner Familie zusammen, und ist das in deiner Kultur üblich?",
+"es": "¿Vives con tu familia? ¿Es algo común en tu cultura?",
+"fr": "Vis-tu avec ta famille, et est-ce courant dans ta culture ?",
+"it": "Vivi con la tua famiglia? È comune nella tua cultura?",
+"pt": "Vives com a tua família? Isso é comum na tua cultura?",
+"pt_BR": "Você mora com a sua família? Isso é comum na sua cultura?"
+}
+},
+{
+"id": "world_cultures-053",
+"lv": "beginner",
+"i18n": {
+"en": "What gesture in your culture means something special?",
+"de": "Welche Geste hat in deiner Kultur eine besondere Bedeutung?",
+"es": "¿Qué gesto tiene un significado especial en tu cultura?",
+"fr": "Quel geste a une signification particulière dans ta culture ?",
+"it": "Quale gesto ha un significato speciale nella tua cultura?",
+"pt": "Que gesto tem um significado especial na tua cultura?",
+"pt_BR": "Qual gesto tem um significado especial na sua cultura?"
+}
+},
+{
+"id": "world_cultures-054",
+"lv": "beginner",
+"i18n": {
+"en": "Which street food would you recommend to a visitor in your city?",
+"de": "Welches Streetfood würdest du einem Besucher in deiner Stadt empfehlen?",
+"es": "¿Qué comida callejera recomendarías a un visitante en tu ciudad?",
+"fr": "Quelle street food recommanderais-tu à un visiteur dans ta ville ?",
+"it": "Quale cibo di strada consiglieresti a un visitatore nella tua città?",
+"pt": "Que comida de rua recomendarias a um visitante na tua cidade?",
+"pt_BR": "Qual comida de rua você recomendaria a um visitante na sua cidade?"
+}
+},
+{
+"id": "world_cultures-055",
+"lv": "beginner",
+"i18n": {
+"en": "What was school like for you, and what traditions did your school have?",
+"de": "Wie war die Schulzeit für dich, und welche Traditionen hatte deine Schule?",
+"es": "¿Cómo era tu escuela y qué tradiciones tenía?",
+"fr": "Comment était l'école pour toi, et quelles traditions avait-elle ?",
+"it": "Com'era la scuola per te, e che tradizioni aveva?",
+"pt": "Como era a tua escola e que tradições tinha?",
+"pt_BR": "Como era a sua escola e quais tradições ela tinha?"
+}
+},
+{
+"id": "world_cultures-056",
+"lv": "beginner",
+"i18n": {
+"en": "Have you ever tried a tea or coffee ritual from another country?",
+"de": "Hast du schon mal ein Tee- oder Kaffeeritual aus einem anderen Land ausprobiert?",
+"es": "¿Has probado alguna vez un ritual de té o café de otro país?",
+"fr": "As-tu déjà essayé un rituel du thé ou du café d'un autre pays ?",
+"it": "Hai mai provato un rito del tè o del caffè di un altro paese?",
+"pt": "Já experimentaste algum ritual de chá ou café de outro país?",
+"pt_BR": "Você já experimentou algum ritual de chá ou café de outro país?"
+}
+},
+{
+"id": "world_cultures-057",
+"lv": "beginner",
+"i18n": {
+"en": "Is your name connected to a family tradition?",
+"de": "Ist dein Name mit einer Familientradition verbunden?",
+"es": "¿Tu nombre está ligado a alguna tradición familiar?",
+"fr": "Ton prénom est-il lié à une tradition familiale ?",
+"it": "Il tuo nome è legato a una tradizione di famiglia?",
+"pt": "O teu nome está ligado a alguma tradição de família?",
+"pt_BR": "Seu nome está ligado a alguma tradição de família?"
+}
+},
+{
+"id": "world_cultures-058",
+"lv": "beginner",
+"i18n": {
+"en": "Which country's carnival or parade would you love to see?",
+"de": "Welchen Karneval oder welche Parade würdest du gern sehen?",
+"es": "¿Qué carnaval o desfile te encantaría ver?",
+"fr": "Quel carnaval ou quel défilé aimerais-tu voir ?",
+"it": "Quale carnevale o parata ti piacerebbe vedere?",
+"pt": "Que carnaval ou desfile adorarias ver?",
+"pt_BR": "Qual carnaval ou desfile você adoraria ver?"
+}
+},
+{
+"id": "world_cultures-059",
+"lv": "beginner",
+"i18n": {
+"en": "What is a typical home like in your region?",
+"de": "Wie sieht ein typisches Zuhause in deiner Region aus?",
+"es": "¿Cómo es una casa típica en tu región?",
+"fr": "À quoi ressemble une maison typique dans ta région ?",
+"it": "Com'è una casa tipica nella tua regione?",
+"pt": "Como é uma casa típica na tua região?",
+"pt_BR": "Como é uma casa típica na sua região?"
+}
+},
+{
+"id": "world_cultures-060",
+"lv": "beginner",
+"i18n": {
+"en": "Do people in your country usually bargain at markets?",
+"de": "Wird in deinem Land auf Märkten normalerweise gehandelt?",
+"es": "¿En tu país se suele regatear en los mercados?",
+"fr": "Dans ton pays, marchande-t-on souvent sur les marchés ?",
+"it": "Nel tuo paese si contratta di solito al mercato?",
+"pt": "No teu país costuma regatear-se nos mercados?",
+"pt_BR": "No seu país é comum pechinchar nas feiras?"
+}
+},
+{
+"id": "world_cultures-061",
+"lv": "beginner",
+"i18n": {
+"en": "Which sport makes people in your country the most excited?",
+"de": "Welcher Sport begeistert die Menschen in deinem Land am meisten?",
+"es": "¿Qué deporte entusiasma más a la gente de tu país?",
+"fr": "Quel sport passionne le plus les gens de ton pays ?",
+"it": "Quale sport entusiasma di più le persone nel tuo paese?",
+"pt": "Que desporto entusiasma mais as pessoas do teu país?",
+"pt_BR": "Qual esporte mais empolga as pessoas do seu país?"
+}
+},
+{
+"id": "world_cultures-062",
+"lv": "beginner",
+"i18n": {
+"en": "What do you usually bring when you visit someone's home?",
+"de": "Was bringst du normalerweise mit, wenn du jemanden zu Hause besuchst?",
+"es": "¿Qué sueles llevar cuando visitas la casa de alguien?",
+"fr": "Qu'apportes-tu d'habitude quand tu vas chez quelqu'un ?",
+"it": "Cosa porti di solito quando vai a casa di qualcuno?",
+"pt": "O que costumas levar quando visitas a casa de alguém?",
+"pt_BR": "O que você costuma levar quando visita a casa de alguém?"
+}
+},
+{
+"id": "world_cultures-063",
+"lv": "beginner",
+"i18n": {
+"en": "Is there a season or month you love most because of its traditions?",
+"de": "Gibt es eine Jahreszeit oder einen Monat, den du wegen seiner Traditionen besonders liebst?",
+"es": "¿Hay una estación o un mes que te guste más por sus tradiciones?",
+"fr": "Y a-t-il une saison ou un mois que tu préfères pour ses traditions ?",
+"it": "C'è una stagione o un mese che ami di più per le sue tradizioni?",
+"pt": "Há alguma estação ou mês de que gostes mais pelas suas tradições?",
+"pt_BR": "Tem alguma estação ou mês que você ama mais por causa das tradições?"
+}
+},
+{
+"id": "world_cultures-064",
+"lv": "beginner",
+"i18n": {
+"en": "Which country's way of greeting do you find the friendliest?",
+"de": "Welche Begrüßungsart findest du am herzlichsten?",
+"es": "¿Qué forma de saludar de otro país te parece la más amistosa?",
+"fr": "Quelle façon de saluer te semble la plus chaleureuse ?",
+"it": "Quale modo di salutare di un altro paese trovi più cordiale?",
+"pt": "Que forma de cumprimentar de outro país achas mais simpática?",
+"pt_BR": "Qual jeito de cumprimentar de outro país você acha mais simpático?"
+}
+},
+{
+"id": "world_cultures-065",
+"lv": "beginner",
+"i18n": {
+"en": "What role do grandparents play in families where you live?",
+"de": "Welche Rolle spielen Großeltern in den Familien bei dir?",
+"es": "¿Qué papel tienen los abuelos en las familias donde vives?",
+"fr": "Quel rôle jouent les grands-parents dans les familles chez toi ?",
+"it": "Che ruolo hanno i nonni nelle famiglie dove vivi?",
+"pt": "Que papel têm os avós nas famílias onde vives?",
+"pt_BR": "Qual é o papel dos avós nas famílias onde você mora?"
+}
+},
+{
+"id": "world_cultures-066",
+"lv": "intermediate",
+"i18n": {
+"en": "Would you say your culture communicates more directly or indirectly? Why?",
+"de": "Würdest du sagen, dass man in deiner Kultur eher direkt oder indirekt kommuniziert? Warum?",
+"es": "¿Dirías que en tu cultura se comunica de forma más directa o indirecta? ¿Por qué?",
+"fr": "Dirais-tu que ta culture communique plutôt directement ou indirectement ? Pourquoi ?",
+"it": "Diresti che nella tua cultura si comunica in modo più diretto o indiretto? Perché?",
+"pt": "Dirias que a tua cultura comunica de forma mais direta ou indireta? Porquê?",
+"pt_BR": "Você diria que a sua cultura se comunica de forma mais direta ou indireta? Por quê?"
+}
+},
+{
+"id": "world_cultures-067",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people in your culture usually say no politely?",
+"de": "Wie sagt man in deiner Kultur normalerweise höflich Nein?",
+"es": "¿Cómo se suele decir que no con educación en tu cultura?",
+"fr": "Comment dit-on poliment non dans ta culture ?",
+"it": "Come si dice di solito di no con gentilezza nella tua cultura?",
+"pt": "Como é que na tua cultura se costuma dizer não com educação?",
+"pt_BR": "Como as pessoas da sua cultura costumam dizer não com educação?"
+}
+},
+{
+"id": "world_cultures-068",
+"lv": "intermediate",
+"i18n": {
+"en": "Is being on time very important where you live? Give an example.",
+"de": "Ist Pünktlichkeit bei dir sehr wichtig? Nenn ein Beispiel.",
+"es": "¿Es muy importante la puntualidad donde vives? Pon un ejemplo.",
+"fr": "La ponctualité est-elle très importante chez toi ? Donne un exemple.",
+"it": "La puntualità è molto importante dove vivi? Fai un esempio.",
+"pt": "A pontualidade é muito importante onde vives? Dá um exemplo.",
+"pt_BR": "Ser pontual é muito importante onde você mora? Dê um exemplo."
+}
+},
+{
+"id": "world_cultures-069",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people show respect to elders in your culture?",
+"de": "Wie zeigt man in deiner Kultur Respekt gegenüber Älteren?",
+"es": "¿Cómo se muestra respeto a los mayores en tu cultura?",
+"fr": "Comment montre-t-on du respect aux aînés dans ta culture ?",
+"it": "Come si mostra rispetto agli anziani nella tua cultura?",
+"pt": "Como se mostra respeito aos mais velhos na tua cultura?",
+"pt_BR": "Como se demonstra respeito aos mais velhos na sua cultura?"
+}
+},
+{
+"id": "world_cultures-070",
+"lv": "intermediate",
+"i18n": {
+"en": "What kind of humour is popular in your country?",
+"de": "Welche Art von Humor ist in deinem Land beliebt?",
+"es": "¿Qué tipo de humor es popular en tu país?",
+"fr": "Quel genre d'humour est populaire dans ton pays ?",
+"it": "Che tipo di umorismo è popolare nel tuo paese?",
+"pt": "Que tipo de humor é popular no teu país?",
+"pt_BR": "Que tipo de humor é popular no seu país?"
+}
+},
+{
+"id": "world_cultures-071",
+"lv": "intermediate",
+"i18n": {
+"en": "How do friendships usually start in your culture: quickly or slowly?",
+"de": "Wie entstehen Freundschaften in deiner Kultur meist: schnell oder langsam?",
+"es": "¿Cómo suelen empezar las amistades en tu cultura: rápido o despacio?",
+"fr": "Dans ta culture, les amitiés naissent-elles vite ou lentement ?",
+"it": "Nella tua cultura le amicizie nascono in fretta o lentamente?",
+"pt": "Na tua cultura, as amizades costumam começar depressa ou devagar?",
+"pt_BR": "Na sua cultura, as amizades costumam começar rápido ou devagar?"
+}
+},
+{
+"id": "world_cultures-072",
+"lv": "intermediate",
+"i18n": {
+"en": "Have you ever experienced culture shock? How did you adapt?",
+"de": "Hast du schon mal einen Kulturschock erlebt? Wie hast du dich angepasst?",
+"es": "¿Alguna vez has vivido un choque cultural? ¿Cómo te adaptaste?",
+"fr": "As-tu déjà vécu un choc culturel ? Comment t'es-tu adapté ?",
+"it": "Hai mai vissuto uno shock culturale? Come ti sei adattato?",
+"pt": "Já viveste um choque cultural? Como te adaptaste?",
+"pt_BR": "Você já passou por um choque cultural? Como se adaptou?"
+}
+},
+{
+"id": "world_cultures-073",
+"lv": "intermediate",
+"i18n": {
+"en": "What is a common topic for small talk in your country?",
+"de": "Was ist in deinem Land ein typisches Small-Talk-Thema?",
+"es": "¿Cuál es un tema típico de conversación casual en tu país?",
+"fr": "Quel est un sujet de conversation léger courant dans ton pays ?",
+"it": "Qual è un argomento tipico di chiacchiere nel tuo paese?",
+"pt": "Qual é um tema típico de conversa de circunstância no teu país?",
+"pt_BR": "Qual é um assunto comum para bater papo no seu país?"
+}
+},
+{
+"id": "world_cultures-074",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people in your culture react to compliments?",
+"de": "Wie reagieren Menschen in deiner Kultur auf Komplimente?",
+"es": "¿Cómo reacciona la gente de tu cultura ante los cumplidos?",
+"fr": "Comment les gens de ta culture réagissent-ils aux compliments ?",
+"it": "Come reagiscono le persone della tua cultura ai complimenti?",
+"pt": "Como é que as pessoas da tua cultura reagem aos elogios?",
+"pt_BR": "Como as pessoas da sua cultura reagem a elogios?"
+}
+},
+{
+"id": "world_cultures-075",
+"lv": "intermediate",
+"i18n": {
+"en": "Which fusion food do you enjoy, and which cultures does it mix?",
+"de": "Welches Fusion-Gericht magst du, und welche Kulturen verbindet es?",
+"es": "¿Qué comida fusión te gusta y qué culturas mezcla?",
+"fr": "Quelle cuisine fusion aimes-tu, et quelles cultures mélange-t-elle ?",
+"it": "Quale cucina fusion ti piace, e quali culture mescola?",
+"pt": "Que comida de fusão aprecias, e que culturas mistura?",
+"pt_BR": "Qual comida de fusão você curte, e quais culturas ela mistura?"
+}
+},
+{
+"id": "world_cultures-076",
+"lv": "intermediate",
+"i18n": {
+"en": "How is work-life balance seen in your country?",
+"de": "Wie wird die Work-Life-Balance in deinem Land gesehen?",
+"es": "¿Cómo se ve el equilibrio entre trabajo y vida personal en tu país?",
+"fr": "Comment perçoit-on l'équilibre vie pro et vie perso dans ton pays ?",
+"it": "Come viene visto l'equilibrio tra lavoro e vita privata nel tuo paese?",
+"pt": "Como é visto o equilíbrio entre trabalho e vida pessoal no teu país?",
+"pt_BR": "Como é visto o equilíbrio entre trabalho e vida pessoal no seu país?"
+}
+},
+{
+"id": "world_cultures-077",
+"lv": "intermediate",
+"i18n": {
+"en": "Which regional differences inside your country surprise visitors most?",
+"de": "Welche regionalen Unterschiede in deinem Land überraschen Besucher am meisten?",
+"es": "¿Qué diferencias regionales de tu país sorprenden más a los visitantes?",
+"fr": "Quelles différences régionales de ton pays surprennent le plus les visiteurs ?",
+"it": "Quali differenze regionali del tuo paese sorprendono di più i visitatori?",
+"pt": "Que diferenças regionais do teu país mais surpreendem os visitantes?",
+"pt_BR": "Quais diferenças regionais do seu país mais surpreendem os visitantes?"
+}
+},
+{
+"id": "world_cultures-078",
+"lv": "intermediate",
+"i18n": {
+"en": "Do people in your culture show emotions openly in public?",
+"de": "Zeigen Menschen in deiner Kultur ihre Gefühle offen in der Öffentlichkeit?",
+"es": "¿En tu cultura la gente muestra sus emociones abiertamente en público?",
+"fr": "Dans ta culture, montre-t-on ouvertement ses émotions en public ?",
+"it": "Nella tua cultura si mostrano apertamente le emozioni in pubblico?",
+"pt": "Na tua cultura as pessoas mostram as emoções abertamente em público?",
+"pt_BR": "Na sua cultura as pessoas demonstram emoções abertamente em público?"
+}
+},
+{
+"id": "world_cultures-079",
+"lv": "intermediate",
+"i18n": {
+"en": "What do you think young people in your country have in common with youth abroad?",
+"de": "Was haben junge Leute in deinem Land deiner Meinung nach mit der Jugend im Ausland gemeinsam?",
+"es": "¿Qué crees que tienen en común los jóvenes de tu país con los de otros países?",
+"fr": "Selon toi, qu'ont en commun les jeunes de ton pays et ceux d'ailleurs ?",
+"it": "Cosa pensi abbiano in comune i giovani del tuo paese con quelli di altri paesi?",
+"pt": "O que achas que os jovens do teu país têm em comum com os de outros países?",
+"pt_BR": "O que você acha que os jovens do seu país têm em comum com os de fora?"
+}
+},
+{
+"id": "world_cultures-080",
+"lv": "intermediate",
+"i18n": {
+"en": "Which coming-of-age tradition do you find most interesting?",
+"de": "Welche Tradition zum Erwachsenwerden findest du am interessantesten?",
+"es": "¿Qué tradición de paso a la edad adulta te parece más interesante?",
+"fr": "Quelle tradition de passage à l'âge adulte trouves-tu la plus intéressante ?",
+"it": "Quale tradizione di passaggio all'età adulta trovi più interessante?",
+"pt": "Que tradição de passagem à idade adulta achas mais interessante?",
+"pt_BR": "Qual tradição de passagem para a vida adulta você acha mais interessante?"
+}
+},
+{
+"id": "world_cultures-081",
+"lv": "intermediate",
+"i18n": {
+"en": "How do meals bring people together in your culture?",
+"de": "Wie bringen Mahlzeiten in deiner Kultur Menschen zusammen?",
+"es": "¿Cómo unen las comidas a las personas en tu cultura?",
+"fr": "Comment les repas rassemblent-ils les gens dans ta culture ?",
+"it": "Come uniscono le persone i pasti nella tua cultura?",
+"pt": "Como é que as refeições juntam as pessoas na tua cultura?",
+"pt_BR": "Como as refeições aproximam as pessoas na sua cultura?"
+}
+},
+{
+"id": "world_cultures-082",
+"lv": "intermediate",
+"i18n": {
+"en": "What stereotype about your country would you like to correct, kindly?",
+"de": "Welches Klischee über dein Land würdest du gern freundlich richtigstellen?",
+"es": "¿Qué estereotipo sobre tu país te gustaría aclarar con amabilidad?",
+"fr": "Quel stéréotype sur ton pays aimerais-tu corriger avec gentillesse ?",
+"it": "Quale stereotipo sul tuo paese vorresti correggere con gentilezza?",
+"pt": "Que estereótipo sobre o teu país gostarias de corrigir, com simpatia?",
+"pt_BR": "Qual estereótipo sobre o seu país você gostaria de corrigir, com gentileza?"
+}
+},
+{
+"id": "world_cultures-083",
+"lv": "intermediate",
+"i18n": {
+"en": "Which pop culture from abroad is popular among your friends?",
+"de": "Welche Popkultur aus dem Ausland ist bei deinen Freunden beliebt?",
+"es": "¿Qué cultura pop extranjera es popular entre tus amigos?",
+"fr": "Quelle culture pop étrangère est populaire parmi tes amis ?",
+"it": "Quale cultura pop straniera è popolare tra i tuoi amici?",
+"pt": "Que cultura pop estrangeira é popular entre os teus amigos?",
+"pt_BR": "Qual cultura pop estrangeira faz sucesso entre os seus amigos?"
+}
+},
+{
+"id": "world_cultures-084",
+"lv": "intermediate",
+"i18n": {
+"en": "How do people in your country feel about personal space when talking?",
+"de": "Wie viel persönlichen Abstand hält man in deinem Land beim Reden?",
+"es": "¿Qué distancia personal se suele mantener al hablar en tu país?",
+"fr": "Quelle distance garde-t-on en parlant avec quelqu'un dans ton pays ?",
+"it": "Nel tuo paese, quanta distanza si tiene quando si parla con qualcuno?",
+"pt": "No teu país, que distância se costuma manter ao falar com alguém?",
+"pt_BR": "No seu país, que distância as pessoas costumam manter ao conversar?"
+}
+},
+{
+"id": "world_cultures-085",
+"lv": "intermediate",
+"i18n": {
+"en": "Which cultural celebration abroad would you plan a trip around?",
+"de": "Für welches Fest im Ausland würdest du eine ganze Reise planen?",
+"es": "¿Por qué celebración en el extranjero planearías un viaje entero?",
+"fr": "Pour quelle fête à l'étranger organiserais-tu tout un voyage ?",
+"it": "Per quale festa all'estero organizzeresti un intero viaggio?",
+"pt": "Por que celebração no estrangeiro planearias uma viagem inteira?",
+"pt_BR": "Por qual festa no exterior você planejaria uma viagem inteira?"
+}
+},
+{
+"id": "world_cultures-086",
+"lv": "advanced",
+"i18n": {
+"en": "Do you see yourself as more individualist or collectivist? How does that show?",
+"de": "Siehst du dich eher als individualistisch oder kollektivistisch? Woran merkt man das?",
+"es": "¿Te consideras más individualista o colectivista? ¿Cómo se nota?",
+"fr": "Te vois-tu plutôt individualiste ou collectiviste ? À quoi le voit-on ?",
+"it": "Ti consideri più individualista o collettivista? Come si vede?",
+"pt": "Consideras-te mais individualista ou coletivista? Como é que isso se nota?",
+"pt_BR": "Você se vê como mais individualista ou coletivista? Como isso aparece?"
+}
+},
+{
+"id": "world_cultures-087",
+"lv": "advanced",
+"i18n": {
+"en": "How has globalisation changed traditions in your country?",
+"de": "Wie hat die Globalisierung die Traditionen in deinem Land verändert?",
+"es": "¿Cómo ha cambiado la globalización las tradiciones de tu país?",
+"fr": "Comment la mondialisation a-t-elle changé les traditions de ton pays ?",
+"it": "Come ha cambiato la globalizzazione le tradizioni del tuo paese?",
+"pt": "Como é que a globalização mudou as tradições do teu país?",
+"pt_BR": "Como a globalização mudou as tradições do seu país?"
+}
+},
+{
+"id": "world_cultures-088",
+"lv": "advanced",
+"i18n": {
+"en": "Where do you think the line is between cultural appreciation and appropriation?",
+"de": "Wo liegt für dich die Grenze zwischen kultureller Wertschätzung und Aneignung?",
+"es": "¿Dónde crees que está el límite entre apreciar una cultura y apropiarse de ella?",
+"fr": "Où places-tu la limite entre appréciation et appropriation culturelle ?",
+"it": "Dove pensi sia il confine tra apprezzamento e appropriazione culturale?",
+"pt": "Onde achas que fica a fronteira entre apreciar uma cultura e apropriar-se dela?",
+"pt_BR": "Onde você acha que fica o limite entre apreciar uma cultura e se apropriar dela?"
+}
+},
+{
+"id": "world_cultures-089",
+"lv": "advanced",
+"i18n": {
+"en": "Which cultural model, like Hofstede's, do you find useful, and where does it fall short?",
+"de": "Welches Kulturmodell, etwa das von Hofstede, findest du nützlich, und wo stößt es an Grenzen?",
+"es": "¿Qué modelo cultural, como el de Hofstede, te parece útil y dónde se queda corto?",
+"fr": "Quel modèle culturel, comme celui de Hofstede, trouves-tu utile, et où montre-t-il ses limites ?",
+"it": "Quale modello culturale, come quello di Hofstede, trovi utile, e dove mostra i suoi limiti?",
+"pt": "Que modelo cultural, como o de Hofstede, achas útil, e onde fica aquém?",
+"pt_BR": "Qual modelo cultural, como o de Hofstede, você acha útil, e onde ele deixa a desejar?"
+}
+},
+{
+"id": "world_cultures-090",
+"lv": "advanced",
+"i18n": {
+"en": "How would you help a newcomer feel at home in your culture?",
+"de": "Wie würdest du einem Neuankömmling helfen, sich in deiner Kultur zu Hause zu fühlen?",
+"es": "¿Cómo ayudarías a un recién llegado a sentirse en casa en tu cultura?",
+"fr": "Comment aiderais-tu un nouvel arrivant à se sentir chez lui dans ta culture ?",
+"it": "Come aiuteresti un nuovo arrivato a sentirsi a casa nella tua cultura?",
+"pt": "Como ajudarias um recém-chegado a sentir-se em casa na tua cultura?",
+"pt_BR": "Como você ajudaria um recém-chegado a se sentir em casa na sua cultura?"
+}
+},
+{
+"id": "world_cultures-091",
+"lv": "advanced",
+"i18n": {
+"en": "Which tradition from your culture do you hope will survive for generations?",
+"de": "Welche Tradition deiner Kultur soll deiner Meinung nach noch viele Generationen überdauern?",
+"es": "¿Qué tradición de tu cultura esperas que sobreviva por generaciones?",
+"fr": "Quelle tradition de ta culture espères-tu voir traverser les générations ?",
+"it": "Quale tradizione della tua cultura speri sopravviva per generazioni?",
+"pt": "Que tradição da tua cultura esperas que sobreviva durante gerações?",
+"pt_BR": "Qual tradição da sua cultura você espera que sobreviva por gerações?"
+}
+},
+{
+"id": "world_cultures-092",
+"lv": "advanced",
+"i18n": {
+"en": "How does your language shape the way you see the world?",
+"de": "Wie prägt deine Sprache die Art, wie du die Welt siehst?",
+"es": "¿Cómo influye tu idioma en tu forma de ver el mundo?",
+"fr": "Comment ta langue influence-t-elle ta façon de voir le monde ?",
+"it": "In che modo la tua lingua influenza il tuo modo di vedere il mondo?",
+"pt": "De que forma a tua língua molda a maneira como vês o mundo?",
+"pt_BR": "De que forma o seu idioma molda o jeito como você vê o mundo?"
+}
+},
+{
+"id": "world_cultures-093",
+"lv": "advanced",
+"i18n": {
+"en": "What makes a multicultural team work well, in your experience?",
+"de": "Was macht ein multikulturelles Team deiner Erfahrung nach erfolgreich?",
+"es": "Según tu experiencia, ¿qué hace que un equipo multicultural funcione bien?",
+"fr": "D'après ton expérience, qu'est-ce qui fait bien fonctionner une équipe multiculturelle ?",
+"it": "Secondo la tua esperienza, cosa fa funzionare bene un team multiculturale?",
+"pt": "Pela tua experiência, o que faz uma equipa multicultural funcionar bem?",
+"pt_BR": "Pela sua experiência, o que faz uma equipe multicultural funcionar bem?"
+}
+},
+{
+"id": "world_cultures-094",
+"lv": "advanced",
+"i18n": {
+"en": "Which cultures make up your personal identity, and how do they blend?",
+"de": "Welche Kulturen prägen deine Identität, und wie verbinden sie sich?",
+"es": "¿Qué culturas forman tu identidad y cómo se mezclan?",
+"fr": "Quelles cultures composent ton identité, et comment se mêlent-elles ?",
+"it": "Quali culture compongono la tua identità, e come si fondono?",
+"pt": "Que culturas formam a tua identidade, e como se misturam?",
+"pt_BR": "Quais culturas formam a sua identidade, e como elas se misturam?"
+}
+},
+{
+"id": "world_cultures-095",
+"lv": "advanced",
+"i18n": {
+"en": "How do you think traditions can stay alive while still changing?",
+"de": "Wie können Traditionen deiner Meinung nach lebendig bleiben und sich trotzdem verändern?",
+"es": "¿Cómo crees que las tradiciones pueden seguir vivas y a la vez cambiar?",
+"fr": "Comment, selon toi, les traditions peuvent-elles rester vivantes tout en évoluant ?",
+"it": "Come pensi che le tradizioni possano restare vive pur cambiando?",
+"pt": "Como achas que as tradições podem manter-se vivas e, ao mesmo tempo, mudar?",
+"pt_BR": "Como você acha que as tradições podem continuar vivas e, ao mesmo tempo, mudar?"
+}
+},
+{
+"id": "world_cultures-096",
+"lv": "advanced",
+"i18n": {
+"en": "What is the most useful intercultural skill you have developed?",
+"de": "Was ist die nützlichste interkulturelle Fähigkeit, die du entwickelt hast?",
+"es": "¿Cuál es la habilidad intercultural más útil que has desarrollado?",
+"fr": "Quelle est la compétence interculturelle la plus utile que tu aies développée ?",
+"it": "Qual è la competenza interculturale più utile che hai sviluppato?",
+"pt": "Qual é a competência intercultural mais útil que desenvolveste?",
+"pt_BR": "Qual é a habilidade intercultural mais útil que você desenvolveu?"
+}
+},
+{
+"id": "world_cultures-097",
+"lv": "advanced",
+"i18n": {
+"en": "How should travellers behave to support local cultures respectfully?",
+"de": "Wie sollten Reisende sich verhalten, um lokale Kulturen respektvoll zu unterstützen?",
+"es": "¿Cómo deberían comportarse los viajeros para apoyar con respeto las culturas locales?",
+"fr": "Comment les voyageurs devraient-ils se comporter pour soutenir les cultures locales avec respect ?",
+"it": "Come dovrebbero comportarsi i viaggiatori per sostenere con rispetto le culture locali?",
+"pt": "Como devem os viajantes comportar-se para apoiar as culturas locais com respeito?",
+"pt_BR": "Como os viajantes deveriam se comportar para apoiar as culturas locais com respeito?"
+}
+},
+{
+"id": "world_cultures-098",
+"lv": "advanced",
+"i18n": {
+"en": "How do you handle a cultural misunderstanding with a friend?",
+"de": "Wie gehst du mit einem kulturellen Missverständnis mit einem Freund um?",
+"es": "¿Cómo manejas un malentendido cultural con un amigo?",
+"fr": "Comment gères-tu un malentendu culturel avec un ami ?",
+"it": "Come gestisci un malinteso culturale con un amico?",
+"pt": "Como lidas com um mal-entendido cultural com um amigo?",
+"pt_BR": "Como você lida com um mal-entendido cultural com um amigo?"
+}
+},
+{
+"id": "world_cultures-099",
+"lv": "advanced",
+"i18n": {
+"en": "If you could create a cultural exchange project, what would it look like?",
+"de": "Wenn du ein Kulturaustauschprojekt gründen könntest, wie würde es aussehen?",
+"es": "Si pudieras crear un proyecto de intercambio cultural, ¿cómo sería?",
+"fr": "Si tu pouvais créer un projet d'échange culturel, à quoi ressemblerait-il ?",
+"it": "Se potessi creare un progetto di scambio culturale, come sarebbe?",
+"pt": "Se pudesses criar um projeto de intercâmbio cultural, como seria?",
+"pt_BR": "Se você pudesse criar um projeto de intercâmbio cultural, como ele seria?"
+}
+},
+{
+"id": "world_cultures-100",
+"lv": "advanced",
+"i18n": {
+"en": "What does being a citizen of the world mean to you?",
+"de": "Was bedeutet es für dich, ein Weltbürger zu sein?",
+"es": "¿Qué significa para ti ser ciudadano del mundo?",
+"fr": "Que signifie pour toi être citoyen du monde ?",
+"it": "Cosa significa per te essere cittadino del mondo?",
+"pt": "O que significa para ti ser cidadão do mundo?",
+"pt_BR": "O que significa para você ser cidadão do mundo?"
+}
+}
+]
+}

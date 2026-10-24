@@ -1,0 +1,2195 @@
+{
+"topic": "home_workouts",
+"days": [
+{
+"d": 1,
+"lv": "beginner",
+"t": "Welcome to home workouts",
+"f": "What a year of simple, steady training at home can look like for anyone"
+},
+{
+"d": 2,
+"lv": "beginner",
+"t": "Why train at home",
+"f": "No commute, no crowds, any time of day and your own music"
+},
+{
+"d": 3,
+"lv": "beginner",
+"t": "Moving safely in general terms",
+"f": "Starting gently, listening to your body and asking a professional if unsure"
+},
+{
+"d": 4,
+"lv": "beginner",
+"t": "Setting a friendly goal",
+"f": "Choosing a goal like consistency, energy or learning the basics"
+},
+{
+"d": 5,
+"lv": "beginner",
+"t": "Finding your workout space",
+"f": "A small clear area, a non-slip floor and good air"
+},
+{
+"d": 6,
+"lv": "beginner",
+"t": "Making your space safe",
+"f": "Moving furniture, checking the floor and keeping pets and toys away"
+},
+{
+"d": 7,
+"lv": "beginner",
+"t": "What to wear at home",
+"f": "Comfortable clothes and the choice between shoes or bare feet"
+},
+{
+"d": 8,
+"lv": "beginner",
+"t": "Equipment-free training",
+"f": "How your own body weight can be a complete gym"
+},
+{
+"d": 9,
+"lv": "beginner",
+"t": "Household items as equipment",
+"f": "Chairs, towels, water bottles, a backpack and the stairs"
+},
+{
+"d": 10,
+"lv": "beginner",
+"t": "Why warm up",
+"f": "Raising body temperature and preparing joints before effort"
+},
+{
+"d": 11,
+"lv": "beginner",
+"t": "A five-minute warm-up",
+"f": "Marching, arm circles, hip circles and easy squats"
+},
+{
+"d": 12,
+"lv": "beginner",
+"t": "Cooling down",
+"f": "Slowing the breath with gentle movement and light stretches"
+},
+{
+"d": 13,
+"lv": "beginner",
+"t": "How hard is hard enough",
+"f": "Using a simple 1 to 10 effort scale to guide your workouts"
+},
+{
+"d": 14,
+"lv": "beginner",
+"t": "Reps and sets explained",
+"f": "The basic language of workouts made simple"
+},
+{
+"d": 15,
+"lv": "beginner",
+"t": "Rest between sets",
+"f": "Short and longer rests and why both have a place"
+},
+{
+"d": 16,
+"lv": "beginner",
+"t": "The bodyweight squat",
+"f": "Feet, knees, hips and a proud chest: learning the pattern"
+},
+{
+"d": 17,
+"lv": "beginner",
+"t": "Squat to a chair",
+"f": "Sitting back to a chair to practise depth and control"
+},
+{
+"d": 18,
+"lv": "beginner",
+"t": "The glute bridge",
+"f": "Lifting the hips from the floor to wake up the back of the body"
+},
+{
+"d": 19,
+"lv": "beginner",
+"t": "Wall push-ups",
+"f": "The friendliest way to start pushing exercises"
+},
+{
+"d": 20,
+"lv": "beginner",
+"t": "Incline push-ups",
+"f": "Using a table or sofa edge to progress your push-up"
+},
+{
+"d": 21,
+"lv": "beginner",
+"t": "The plank basics",
+"f": "Holding a straight line from head to heels with steady breathing"
+},
+{
+"d": 22,
+"lv": "beginner",
+"t": "Knee plank",
+"f": "A shorter lever version to build plank strength"
+},
+{
+"d": 23,
+"lv": "beginner",
+"t": "The bird dog",
+"f": "Opposite arm and leg reaches for balance and core control"
+},
+{
+"d": 24,
+"lv": "beginner",
+"t": "The dead bug",
+"f": "A calm core exercise lying on your back"
+},
+{
+"d": 25,
+"lv": "beginner",
+"t": "Calf raises",
+"f": "Rising onto the toes for strong lower legs and better balance"
+},
+{
+"d": 26,
+"lv": "beginner",
+"t": "Marching and stepping",
+"f": "Low-impact cardio that gets the heart going quietly"
+},
+{
+"d": 27,
+"lv": "beginner",
+"t": "Your first full-body routine",
+"f": "Squats, push-ups, bridges and planks in one short session"
+},
+{
+"d": 28,
+"lv": "beginner",
+"t": "Breathing during exercise",
+"f": "Exhaling on effort and never holding your breath for long"
+},
+{
+"d": 29,
+"lv": "beginner",
+"t": "Rest days in general terms",
+"f": "Why recovery days are part of the plan"
+},
+{
+"d": 30,
+"lv": "beginner",
+"t": "Review: your first home toolkit",
+"f": "Looking back at space, warm-up and first exercises from month one"
+},
+{
+"d": 31,
+"lv": "beginner",
+"t": "Building a weekly habit",
+"f": "Choosing fixed days and times that fit your life"
+},
+{
+"d": 32,
+"lv": "beginner",
+"t": "Tiny workouts count",
+"f": "Why five or ten minutes of movement is worth doing"
+},
+{
+"d": 33,
+"lv": "beginner",
+"t": "Tracking your workouts",
+"f": "A simple notebook or calendar to see your progress"
+},
+{
+"d": 34,
+"lv": "beginner",
+"t": "Reverse lunges",
+"f": "Stepping back into a lunge for balance and leg strength"
+},
+{
+"d": 35,
+"lv": "beginner",
+"t": "Static split squats",
+"f": "Holding a split stance and moving up and down with control"
+},
+{
+"d": 36,
+"lv": "beginner",
+"t": "Step-ups on a stair",
+"f": "Using one step of your stairs for strength and cardio"
+},
+{
+"d": 37,
+"lv": "beginner",
+"t": "Side-lying leg lifts",
+"f": "Gentle work for the sides of the hips"
+},
+{
+"d": 38,
+"lv": "beginner",
+"t": "Clamshells",
+"f": "A simple hip exercise lying on your side"
+},
+{
+"d": 39,
+"lv": "beginner",
+"t": "Superman holds",
+"f": "Lifting arms and legs lying face down for the back of the body"
+},
+{
+"d": 40,
+"lv": "beginner",
+"t": "Chair-supported balance",
+"f": "Standing on one leg with a hand on a chair"
+},
+{
+"d": 41,
+"lv": "beginner",
+"t": "Jumping jacks and low-impact jacks",
+"f": "Classic cardio with a quiet, joint-friendly version"
+},
+{
+"d": 42,
+"lv": "beginner",
+"t": "High knees and fast feet",
+"f": "Short bursts of energy for heart and coordination"
+},
+{
+"d": 43,
+"lv": "beginner",
+"t": "Shadow boxing basics",
+"f": "Jabs, crosses and footwork as fun home cardio"
+},
+{
+"d": 44,
+"lv": "beginner",
+"t": "Dance cardio",
+"f": "Moving to your favourite songs as a real workout"
+},
+{
+"d": 45,
+"lv": "beginner",
+"t": "Your first circuit",
+"f": "Moving from one exercise to the next with short rests"
+},
+{
+"d": 46,
+"lv": "beginner",
+"t": "Timed intervals",
+"f": "Working for a set time instead of counting reps"
+},
+{
+"d": 47,
+"lv": "beginner",
+"t": "Mobility vs flexibility",
+"f": "Moving joints actively versus holding stretches"
+},
+{
+"d": 48,
+"lv": "beginner",
+"t": "Neck and shoulder mobility",
+"f": "Gentle circles and rolls for desk-tired shoulders"
+},
+{
+"d": 49,
+"lv": "beginner",
+"t": "Hip mobility basics",
+"f": "Hip circles, rocking and gentle openers"
+},
+{
+"d": 50,
+"lv": "beginner",
+"t": "Spine mobility",
+"f": "Cat-cow, side bends and easy rotations"
+},
+{
+"d": 51,
+"lv": "beginner",
+"t": "Ankle mobility",
+"f": "Knee-to-wall drills and ankle circles"
+},
+{
+"d": 52,
+"lv": "beginner",
+"t": "Stretching after workouts",
+"f": "Calves, thighs, hips and chest in general terms"
+},
+{
+"d": 53,
+"lv": "beginner",
+"t": "Desk break exercises",
+"f": "Quick moves to break up long periods of sitting"
+},
+{
+"d": 54,
+"lv": "beginner",
+"t": "Morning wake-up routine",
+"f": "A gentle five-minute sequence to start the day"
+},
+{
+"d": 55,
+"lv": "beginner",
+"t": "Evening wind-down stretches",
+"f": "Calm movements to relax before bed"
+},
+{
+"d": 56,
+"lv": "beginner",
+"t": "Quiet apartment workouts",
+"f": "Exercises that keep neighbours happy, no jumping needed"
+},
+{
+"d": 57,
+"lv": "beginner",
+"t": "Training in a small space",
+"f": "Routines that need only the size of a mat"
+},
+{
+"d": 58,
+"lv": "beginner",
+"t": "Workout music and motivation",
+"f": "Building playlists that match your effort"
+},
+{
+"d": 59,
+"lv": "beginner",
+"t": "Exercising with family",
+"f": "Fun ways to move together with kids or partners"
+},
+{
+"d": 60,
+"lv": "beginner",
+"t": "Review: moving well at home",
+"f": "Looking back at technique, mobility and routines from month two"
+},
+{
+"d": 61,
+"lv": "beginner",
+"t": "Good form over speed",
+"f": "Why slow, clean reps beat fast messy ones"
+},
+{
+"d": 62,
+"lv": "beginner",
+"t": "Tempo training basics",
+"f": "Counting seconds down and up to make exercises richer"
+},
+{
+"d": 63,
+"lv": "beginner",
+"t": "Push-up progression plan",
+"f": "From wall to incline to knees to the floor, step by step"
+},
+{
+"d": 64,
+"lv": "beginner",
+"t": "Knee push-ups",
+"f": "A useful step between incline and full push-ups"
+},
+{
+"d": 65,
+"lv": "beginner",
+"t": "Squat variations",
+"f": "Wide stance, narrow stance and pause squats"
+},
+{
+"d": 66,
+"lv": "beginner",
+"t": "Lunge variations",
+"f": "Forward, side and curtsy lunges in general terms"
+},
+{
+"d": 67,
+"lv": "beginner",
+"t": "Glute bridge variations",
+"f": "Feet elevated, marching and pause bridges"
+},
+{
+"d": 68,
+"lv": "beginner",
+"t": "Plank variations",
+"f": "Shoulder taps, plank reaches and walking planks"
+},
+{
+"d": 69,
+"lv": "beginner",
+"t": "Side plank basics",
+"f": "Building strength along the sides of the body"
+},
+{
+"d": 70,
+"lv": "beginner",
+"t": "Water bottle exercises",
+"f": "Light shoulder presses, raises and curls with bottles"
+},
+{
+"d": 71,
+"lv": "beginner",
+"t": "Backpack training",
+"f": "Filling a backpack with books for added resistance"
+},
+{
+"d": 72,
+"lv": "beginner",
+"t": "Backpack rows",
+"f": "Pulling a loaded backpack towards you for the upper back"
+},
+{
+"d": 73,
+"lv": "beginner",
+"t": "Towel exercises",
+"f": "Towel slides, pulls and stretches on smooth floors"
+},
+{
+"d": 74,
+"lv": "beginner",
+"t": "Chair exercises",
+"f": "Seated and supported moves using a sturdy chair"
+},
+{
+"d": 75,
+"lv": "beginner",
+"t": "Stair workouts",
+"f": "Climbing, step-ups and calf raises on your staircase"
+},
+{
+"d": 76,
+"lv": "beginner",
+"t": "Low-impact cardio session",
+"f": "Twenty minutes of moving without jumping"
+},
+{
+"d": 77,
+"lv": "beginner",
+"t": "Step count and daily movement",
+"f": "Walking more throughout the day as a simple habit"
+},
+{
+"d": 78,
+"lv": "beginner",
+"t": "Posture habits in general terms",
+"f": "Moving often and strengthening the upper back"
+},
+{
+"d": 79,
+"lv": "beginner",
+"t": "Core basics explained",
+"f": "What the core is and why it is more than abs"
+},
+{
+"d": 80,
+"lv": "beginner",
+"t": "Breathing and the core",
+"f": "Belly breathing and bracing in general terms"
+},
+{
+"d": 81,
+"lv": "beginner",
+"t": "Hydration in general terms",
+"f": "Drinking water around workouts as a simple habit"
+},
+{
+"d": 82,
+"lv": "beginner",
+"t": "Sleep and recovery in general terms",
+"f": "Why rest helps your body adapt to training"
+},
+{
+"d": 83,
+"lv": "beginner",
+"t": "Food and energy in general terms",
+"f": "Eating regularly and enjoying balanced meals"
+},
+{
+"d": 84,
+"lv": "beginner",
+"t": "Soreness after training",
+"f": "Why new exercises can leave muscles a bit sore"
+},
+{
+"d": 85,
+"lv": "beginner",
+"t": "Listening to your body",
+"f": "Telling normal effort apart from pain, and stopping when unsure"
+},
+{
+"d": 86,
+"lv": "beginner",
+"t": "Workouts on low-energy days",
+"f": "Gentle sessions for days when you feel tired"
+},
+{
+"d": 87,
+"lv": "beginner",
+"t": "Staying consistent when busy",
+"f": "Short routines that fit into packed days"
+},
+{
+"d": 88,
+"lv": "beginner",
+"t": "Celebrating small wins",
+"f": "Noticing more reps, better form and more energy"
+},
+{
+"d": 89,
+"lv": "beginner",
+"t": "Fitness around the world",
+"f": "Calisthenics, yoga, tai chi and other movement traditions"
+},
+{
+"d": 90,
+"lv": "beginner",
+"t": "Review: building your base",
+"f": "Looking back at progressions, recovery and habits from month three"
+},
+{
+"d": 91,
+"lv": "beginner",
+"t": "The 10-minute full-body workout",
+"f": "An efficient routine for any time of day"
+},
+{
+"d": 92,
+"lv": "beginner",
+"t": "The 20-minute full-body workout",
+"f": "A longer balanced session for upper, lower and core"
+},
+{
+"d": 93,
+"lv": "beginner",
+"t": "Upper-body home session",
+"f": "Push-ups, rows, presses and holds for the top half"
+},
+{
+"d": 94,
+"lv": "beginner",
+"t": "Lower-body home session",
+"f": "Squats, lunges, bridges and calf work together"
+},
+{
+"d": 95,
+"lv": "beginner",
+"t": "Core-focused session",
+"f": "Planks, dead bugs and bird dogs in a short circuit"
+},
+{
+"d": 96,
+"lv": "beginner",
+"t": "Cardio-focused session",
+"f": "Marching, jacks, boxing and dance intervals"
+},
+{
+"d": 97,
+"lv": "beginner",
+"t": "Mobility-focused session",
+"f": "A slow flow for joints from ankles to neck"
+},
+{
+"d": 98,
+"lv": "beginner",
+"t": "Designing your own warm-up",
+"f": "Choosing moves that match the workout ahead"
+},
+{
+"d": 99,
+"lv": "beginner",
+"t": "Building a weekly plan",
+"f": "Mixing strength, cardio and mobility through the week"
+},
+{
+"d": 100,
+"lv": "beginner",
+"t": "Full-body vs split routines",
+"f": "Training everything each time or focusing on areas"
+},
+{
+"d": 101,
+"lv": "beginner",
+"t": "Progressive overload explained",
+"f": "Making workouts slightly harder over time"
+},
+{
+"d": 102,
+"lv": "beginner",
+"t": "Ways to add difficulty",
+"f": "More reps, slower tempo, harder variations or shorter rests"
+},
+{
+"d": 103,
+"lv": "beginner",
+"t": "When to progress an exercise",
+"f": "Signs you are ready for the next step"
+},
+{
+"d": 104,
+"lv": "beginner",
+"t": "Simple fitness self-tests",
+"f": "Counting push-ups, squats and plank time to see progress"
+},
+{
+"d": 105,
+"lv": "beginner",
+"t": "Training with a friend online",
+"f": "Video calls and shared challenges for motivation"
+},
+{
+"d": 106,
+"lv": "beginner",
+"t": "Morning or evening workouts",
+"f": "Finding the time of day that suits you"
+},
+{
+"d": 107,
+"lv": "beginner",
+"t": "Workout clothes and shoes",
+"f": "Choosing comfortable gear for movement at home"
+},
+{
+"d": 108,
+"lv": "beginner",
+"t": "Choosing an exercise mat",
+"f": "Thickness, grip and size for floor work"
+},
+{
+"d": 109,
+"lv": "beginner",
+"t": "Resistance bands introduction",
+"f": "Loop bands, long bands and how they add resistance"
+},
+{
+"d": 110,
+"lv": "beginner",
+"t": "Band safety and care",
+"f": "Checking for wear and anchoring bands safely"
+},
+{
+"d": 111,
+"lv": "beginner",
+"t": "Band squats and glute work",
+"f": "Using a loop band to wake up the hips"
+},
+{
+"d": 112,
+"lv": "beginner",
+"t": "Band rows and pull-aparts",
+"f": "Upper-back exercises with a band"
+},
+{
+"d": 113,
+"lv": "beginner",
+"t": "Band presses",
+"f": "Chest and shoulder presses with resistance"
+},
+{
+"d": 114,
+"lv": "beginner",
+"t": "Jump rope introduction",
+"f": "Rhythm, short jumps and a soft landing, or the rope-free version"
+},
+{
+"d": 115,
+"lv": "beginner",
+"t": "Balance training basics",
+"f": "Single-leg stands, heel-to-toe walks and eyes-closed holds"
+},
+{
+"d": 116,
+"lv": "beginner",
+"t": "Coordination drills",
+"f": "Cross-body moves and patterns that challenge the brain"
+},
+{
+"d": 117,
+"lv": "beginner",
+"t": "Fun movement games",
+"f": "Turning exercise into play with dice, cards and timers"
+},
+{
+"d": 118,
+"lv": "beginner",
+"t": "Workout card deck challenge",
+"f": "Using playing cards to pick exercises and reps"
+},
+{
+"d": 119,
+"lv": "beginner",
+"t": "Planning a week of workouts",
+"f": "Putting everything together into your own plan"
+},
+{
+"d": 120,
+"lv": "beginner",
+"t": "Review: ready for the next level",
+"f": "Looking back at the beginner journey and choosing new goals"
+},
+{
+"d": 121,
+"lv": "intermediate",
+"t": "Intermediate training mindset",
+"f": "Building on the basics with patience and curiosity"
+},
+{
+"d": 122,
+"lv": "intermediate",
+"t": "Full push-ups mastered",
+"f": "Perfecting the classic push-up from start to finish"
+},
+{
+"d": 123,
+"lv": "intermediate",
+"t": "Wide and narrow push-ups",
+"f": "Changing hand position to shift the focus"
+},
+{
+"d": 124,
+"lv": "intermediate",
+"t": "Decline push-ups",
+"f": "Feet on a step or sofa for a tougher push"
+},
+{
+"d": 125,
+"lv": "intermediate",
+"t": "Split squats with elevation",
+"f": "Front foot on a step for extra range"
+},
+{
+"d": 126,
+"lv": "intermediate",
+"t": "Bulgarian split squats",
+"f": "Rear foot on a chair for a strong single-leg exercise"
+},
+{
+"d": 127,
+"lv": "intermediate",
+"t": "Single-leg glute bridge",
+"f": "One leg at a time for more challenge"
+},
+{
+"d": 128,
+"lv": "intermediate",
+"t": "Hip thrusts on the sofa",
+"f": "Shoulders on the sofa edge for a bigger hip lift"
+},
+{
+"d": 129,
+"lv": "intermediate",
+"t": "Single-leg calf raises",
+"f": "One foot at a time on a stair edge"
+},
+{
+"d": 130,
+"lv": "intermediate",
+"t": "Side plank variations",
+"f": "Hip dips, leg lifts and reaching through"
+},
+{
+"d": 131,
+"lv": "intermediate",
+"t": "Hollow body hold",
+"f": "A classic gymnastics core position in general terms"
+},
+{
+"d": 132,
+"lv": "intermediate",
+"t": "Reverse crunches",
+"f": "Curling the hips up for the lower core"
+},
+{
+"d": 133,
+"lv": "intermediate",
+"t": "Chair dips in general terms",
+"f": "Arm work using a sturdy chair, with care for the shoulders"
+},
+{
+"d": 134,
+"lv": "intermediate",
+"t": "Pike push-ups",
+"f": "Hips high to work the shoulders"
+},
+{
+"d": 135,
+"lv": "intermediate",
+"t": "Table rows in general terms",
+"f": "Pulling under a sturdy table as a bodyweight row"
+},
+{
+"d": 136,
+"lv": "intermediate",
+"t": "Isometric holds",
+"f": "Wall sits, plank holds and pause positions"
+},
+{
+"d": 137,
+"lv": "intermediate",
+"t": "Wall sits",
+"f": "Holding a seated position against the wall"
+},
+{
+"d": 138,
+"lv": "intermediate",
+"t": "Unilateral training benefits",
+"f": "Training one side at a time for balance"
+},
+{
+"d": 139,
+"lv": "intermediate",
+"t": "Supersets explained",
+"f": "Pairing two exercises back to back"
+},
+{
+"d": 140,
+"lv": "intermediate",
+"t": "Giant sets and circuits",
+"f": "Linking three or more exercises for efficient training"
+},
+{
+"d": 141,
+"lv": "intermediate",
+"t": "Introduction to HIIT",
+"f": "High-intensity intervals with rest in general terms"
+},
+{
+"d": 142,
+"lv": "intermediate",
+"t": "Tabata-style intervals",
+"f": "Twenty seconds on, ten seconds off for eight rounds"
+},
+{
+"d": 143,
+"lv": "intermediate",
+"t": "EMOM workouts",
+"f": "Every minute on the minute: structure and pacing"
+},
+{
+"d": 144,
+"lv": "intermediate",
+"t": "AMRAP workouts",
+"f": "As many rounds as possible in a set time"
+},
+{
+"d": 145,
+"lv": "intermediate",
+"t": "Ladder workouts",
+"f": "Increasing or decreasing reps each round"
+},
+{
+"d": 146,
+"lv": "intermediate",
+"t": "Pyramid sets",
+"f": "Reps going up and down for variety"
+},
+{
+"d": 147,
+"lv": "intermediate",
+"t": "Low-impact HIIT",
+"f": "Intervals without jumping for joints and neighbours"
+},
+{
+"d": 148,
+"lv": "intermediate",
+"t": "Recovery between hard sessions",
+"f": "Spacing intense days with easier ones"
+},
+{
+"d": 149,
+"lv": "intermediate",
+"t": "Active recovery days",
+"f": "Walking, stretching and gentle mobility"
+},
+{
+"d": 150,
+"lv": "intermediate",
+"t": "Review: intermediate strength",
+"f": "Looking back at new progressions and interval formats"
+},
+{
+"d": 151,
+"lv": "intermediate",
+"t": "Squat jumps in general terms",
+"f": "Exploding up and landing softly, with quieter alternatives"
+},
+{
+"d": 152,
+"lv": "intermediate",
+"t": "Skater hops",
+"f": "Side-to-side bounds for legs and balance"
+},
+{
+"d": 153,
+"lv": "intermediate",
+"t": "Burpees and their friendlier versions",
+"f": "The full movement and step-back alternatives"
+},
+{
+"d": 154,
+"lv": "intermediate",
+"t": "Mountain climbers",
+"f": "A plank-based cardio move for the whole body"
+},
+{
+"d": 155,
+"lv": "intermediate",
+"t": "Bear crawls",
+"f": "Crawling on hands and feet for strength and coordination"
+},
+{
+"d": 156,
+"lv": "intermediate",
+"t": "Crab walks",
+"f": "Moving on hands and feet facing up for the back of the body"
+},
+{
+"d": 157,
+"lv": "intermediate",
+"t": "Animal flow inspiration",
+"f": "Ground-based movement patterns that feel playful"
+},
+{
+"d": 158,
+"lv": "intermediate",
+"t": "Yoga-inspired flow",
+"f": "Downward dog, lunges and gentle twists in a flowing sequence"
+},
+{
+"d": 159,
+"lv": "intermediate",
+"t": "Pilates-inspired core",
+"f": "Controlled movements and breath from the Pilates tradition"
+},
+{
+"d": 160,
+"lv": "intermediate",
+"t": "Joseph Pilates and his method",
+"f": "How the Pilates method began and what it focuses on"
+},
+{
+"d": 161,
+"lv": "intermediate",
+"t": "Tai chi-style slow movement",
+"f": "Calm, flowing moves for balance and focus"
+},
+{
+"d": 162,
+"lv": "intermediate",
+"t": "Capoeira-inspired moves",
+"f": "Ginga steps and playful movement from Brazilian tradition"
+},
+{
+"d": 163,
+"lv": "intermediate",
+"t": "Calisthenics history",
+"f": "Bodyweight training from ancient Greece to modern parks"
+},
+{
+"d": 164,
+"lv": "intermediate",
+"t": "Mobility flow for the hips",
+"f": "A sequence to open and strengthen the hips"
+},
+{
+"d": 165,
+"lv": "intermediate",
+"t": "Mobility flow for the shoulders",
+"f": "Wall slides, band dislocates and arm circles"
+},
+{
+"d": 166,
+"lv": "intermediate",
+"t": "Thoracic spine mobility",
+"f": "Rotations and extensions for the upper back"
+},
+{
+"d": 167,
+"lv": "intermediate",
+"t": "Hamstring flexibility in general terms",
+"f": "Gentle ways to explore the back of the legs"
+},
+{
+"d": 168,
+"lv": "intermediate",
+"t": "Deep squat practice",
+"f": "Spending time in a supported deep squat"
+},
+{
+"d": 169,
+"lv": "intermediate",
+"t": "Hip flexor stretch",
+"f": "Opening the front of the hips after sitting"
+},
+{
+"d": 170,
+"lv": "intermediate",
+"t": "Breathing techniques for calm",
+"f": "Box breathing and long exhales after training"
+},
+{
+"d": 171,
+"lv": "intermediate",
+"t": "Foam rolling in general terms",
+"f": "What foam rollers are and how people use them"
+},
+{
+"d": 172,
+"lv": "intermediate",
+"t": "Mind-muscle connection",
+"f": "Focusing attention on the muscles you are working"
+},
+{
+"d": 173,
+"lv": "intermediate",
+"t": "Workout journaling",
+"f": "Notes on how sessions felt and what to try next"
+},
+{
+"d": 174,
+"lv": "intermediate",
+"t": "Habit stacking",
+"f": "Linking workouts to existing daily habits"
+},
+{
+"d": 175,
+"lv": "intermediate",
+"t": "Motivation vs discipline",
+"f": "Building routines that work on low-motivation days"
+},
+{
+"d": 176,
+"lv": "intermediate",
+"t": "Overcoming plateaus",
+"f": "Changing variables when progress slows"
+},
+{
+"d": 177,
+"lv": "intermediate",
+"t": "Deload weeks explained",
+"f": "Planned easier weeks to recharge"
+},
+{
+"d": 178,
+"lv": "intermediate",
+"t": "Training through busy seasons",
+"f": "Keeping a minimum routine during holidays and work peaks"
+},
+{
+"d": 179,
+"lv": "intermediate",
+"t": "Hotel room workouts",
+"f": "Simple routines when you travel"
+},
+{
+"d": 180,
+"lv": "intermediate",
+"t": "Review: movement variety",
+"f": "Looking back at cardio moves, flows and traditions"
+},
+{
+"d": 181,
+"lv": "intermediate",
+"t": "Programming basics",
+"f": "Frequency, volume and intensity in simple terms"
+},
+{
+"d": 182,
+"lv": "intermediate",
+"t": "A three-day full-body plan",
+"f": "A sample weekly structure for strength at home"
+},
+{
+"d": 183,
+"lv": "intermediate",
+"t": "A four-day upper-lower plan",
+"f": "Splitting upper and lower body across the week"
+},
+{
+"d": 184,
+"lv": "intermediate",
+"t": "A five-day mixed plan",
+"f": "Combining strength, cardio and mobility days"
+},
+{
+"d": 185,
+"lv": "intermediate",
+"t": "Choosing exercises for a plan",
+"f": "Push, pull, squat, hinge, carry and core patterns"
+},
+{
+"d": 186,
+"lv": "intermediate",
+"t": "Movement patterns explained",
+"f": "The basic human movements every plan should include"
+},
+{
+"d": 187,
+"lv": "intermediate",
+"t": "The hip hinge",
+"f": "Learning to bend from the hips with a flat back"
+},
+{
+"d": 188,
+"lv": "intermediate",
+"t": "Good mornings with a backpack",
+"f": "A hinge exercise using light added weight"
+},
+{
+"d": 189,
+"lv": "intermediate",
+"t": "Single-leg hinges",
+"f": "Balance and hamstring work on one leg"
+},
+{
+"d": 190,
+"lv": "intermediate",
+"t": "Carries at home",
+"f": "Carrying bags or bottles around the house for grip and core"
+},
+{
+"d": 191,
+"lv": "intermediate",
+"t": "Grip strength at home",
+"f": "Towel squeezes, holds and carries"
+},
+{
+"d": 192,
+"lv": "intermediate",
+"t": "Dumbbells at home",
+"f": "Choosing and using a pair of light or adjustable dumbbells"
+},
+{
+"d": 193,
+"lv": "intermediate",
+"t": "Kettlebell basics in general terms",
+"f": "What kettlebells are and why technique comes first"
+},
+{
+"d": 194,
+"lv": "intermediate",
+"t": "Kettlebell deadlift",
+"f": "Learning the hinge with a kettlebell from the floor"
+},
+{
+"d": 195,
+"lv": "intermediate",
+"t": "Goblet squats",
+"f": "Holding a weight at the chest for squats"
+},
+{
+"d": 196,
+"lv": "intermediate",
+"t": "Dumbbell rows",
+"f": "Supported rows on a chair or bench"
+},
+{
+"d": 197,
+"lv": "intermediate",
+"t": "Overhead press basics",
+"f": "Pressing weights overhead with a braced core"
+},
+{
+"d": 198,
+"lv": "intermediate",
+"t": "Floor press",
+"f": "A chest press lying on the floor"
+},
+{
+"d": 199,
+"lv": "intermediate",
+"t": "Combining strength and cardio",
+"f": "Hybrid sessions that build both"
+},
+{
+"d": 200,
+"lv": "intermediate",
+"t": "Workout timing apps in general terms",
+"f": "Using timers and interval apps to structure sessions"
+},
+{
+"d": 201,
+"lv": "intermediate",
+"t": "Timers without apps",
+"f": "Using a clock, songs or counting for intervals"
+},
+{
+"d": 202,
+"lv": "intermediate",
+"t": "Family fitness challenges",
+"f": "Weekly goals the whole household can enjoy"
+},
+{
+"d": 203,
+"lv": "intermediate",
+"t": "Outdoor extension of home workouts",
+"f": "Taking your routine to a park or garden"
+},
+{
+"d": 204,
+"lv": "intermediate",
+"t": "Park bench workouts",
+"f": "Step-ups, incline push-ups and dips outdoors"
+},
+{
+"d": 205,
+"lv": "intermediate",
+"t": "Stair running in general terms",
+"f": "Building up to faster stair climbs carefully"
+},
+{
+"d": 206,
+"lv": "intermediate",
+"t": "Workouts for better posture",
+"f": "Upper-back and core work for everyday comfort"
+},
+{
+"d": 207,
+"lv": "intermediate",
+"t": "Strong feet and ankles",
+"f": "Toe work, balance and barefoot drills"
+},
+{
+"d": 208,
+"lv": "intermediate",
+"t": "Wrist care for floor exercises",
+"f": "Warming up wrists and using fists or handles"
+},
+{
+"d": 209,
+"lv": "intermediate",
+"t": "Knee-friendly training in general terms",
+"f": "Lower-impact choices and control in squats and lunges"
+},
+{
+"d": 210,
+"lv": "intermediate",
+"t": "Review: building your own program",
+"f": "Looking back at programming and equipment from this month"
+},
+{
+"d": 211,
+"lv": "intermediate",
+"t": "Testing your progress",
+"f": "Repeating early self-tests to see how far you have come"
+},
+{
+"d": 212,
+"lv": "intermediate",
+"t": "Setting a new training block",
+"f": "Planning four weeks with a clear focus"
+},
+{
+"d": 213,
+"lv": "intermediate",
+"t": "Strength focus block",
+"f": "Fewer reps, harder variations and longer rests"
+},
+{
+"d": 214,
+"lv": "intermediate",
+"t": "Endurance focus block",
+"f": "More reps, circuits and steady effort"
+},
+{
+"d": 215,
+"lv": "intermediate",
+"t": "Mobility focus block",
+"f": "Daily flows and longer stretching sessions"
+},
+{
+"d": 216,
+"lv": "intermediate",
+"t": "Balancing all three",
+"f": "Rotating focus blocks through the year"
+},
+{
+"d": 217,
+"lv": "intermediate",
+"t": "Training at different ages in general terms",
+"f": "How workouts can adapt through life"
+},
+{
+"d": 218,
+"lv": "intermediate",
+"t": "Exercising with a partner",
+"f": "Partner-assisted exercises and shared motivation"
+},
+{
+"d": 219,
+"lv": "intermediate",
+"t": "Teaching a friend the basics",
+"f": "Showing squats, push-ups and planks clearly"
+},
+{
+"d": 220,
+"lv": "intermediate",
+"t": "Band-resisted push-ups",
+"f": "Adding a band across the back for extra challenge"
+},
+{
+"d": 221,
+"lv": "intermediate",
+"t": "Band leg curls and kickbacks",
+"f": "Hamstring and hip work with a loop band"
+},
+{
+"d": 222,
+"lv": "intermediate",
+"t": "Band face pulls",
+"f": "Upper-back and shoulder work with a band"
+},
+{
+"d": 223,
+"lv": "intermediate",
+"t": "Sliding lunges",
+"f": "Using a towel on a smooth floor for controlled lunges"
+},
+{
+"d": 224,
+"lv": "intermediate",
+"t": "Towel hamstring curls",
+"f": "Sliding the heels in and out from a bridge position"
+},
+{
+"d": 225,
+"lv": "intermediate",
+"t": "Plank to push-up",
+"f": "Moving between forearm and hand planks"
+},
+{
+"d": 226,
+"lv": "intermediate",
+"t": "Lateral lunges",
+"f": "Side lunges for the inner thighs and hips"
+},
+{
+"d": 227,
+"lv": "intermediate",
+"t": "Step-up variations",
+"f": "Lateral, crossover and slow step-ups on a stair"
+},
+{
+"d": 228,
+"lv": "intermediate",
+"t": "Inchworms",
+"f": "Walking the hands out to a plank and back"
+},
+{
+"d": 229,
+"lv": "intermediate",
+"t": "Curl-ups and controlled crunches",
+"f": "Gentle trunk curls done slowly, in general terms"
+},
+{
+"d": 230,
+"lv": "intermediate",
+"t": "Seated twists in general terms",
+"f": "Controlled seated rotations with care for the lower back"
+},
+{
+"d": 231,
+"lv": "intermediate",
+"t": "Flutter kicks and scissors",
+"f": "Leg movements for core endurance"
+},
+{
+"d": 232,
+"lv": "intermediate",
+"t": "Hip airplanes",
+"f": "Single-leg balance with a slow hip rotation"
+},
+{
+"d": 233,
+"lv": "intermediate",
+"t": "Single-leg balance reaches",
+"f": "Reaching in different directions while standing on one leg"
+},
+{
+"d": 234,
+"lv": "intermediate",
+"t": "A 30-minute intermediate session",
+"f": "A full workout using your new skills"
+},
+{
+"d": 235,
+"lv": "intermediate",
+"t": "Warm-ups for harder days",
+"f": "Longer preparation for intense sessions"
+},
+{
+"d": 236,
+"lv": "intermediate",
+"t": "Cool-down routines revisited",
+"f": "Building a cool-down you actually enjoy"
+},
+{
+"d": 237,
+"lv": "intermediate",
+"t": "Rest-pause sets",
+"f": "Short pauses to add a few extra quality reps"
+},
+{
+"d": 238,
+"lv": "intermediate",
+"t": "Single-arm upper-body work",
+"f": "One-arm rows and presses with bottles or bands"
+},
+{
+"d": 239,
+"lv": "intermediate",
+"t": "Weekly reflection habit",
+"f": "Reviewing what went well and planning the next week"
+},
+{
+"d": 240,
+"lv": "intermediate",
+"t": "Review: intermediate journey",
+"f": "Looking back at the intermediate phase and setting advanced goals"
+},
+{
+"d": 241,
+"lv": "intermediate",
+"t": "Preparing for advanced work",
+"f": "Checking foundations before harder progressions"
+},
+{
+"d": 242,
+"lv": "intermediate",
+"t": "Strength milestones in general terms",
+"f": "Example milestones like ten clean push-ups"
+},
+{
+"d": 243,
+"lv": "intermediate",
+"t": "Wrist and shoulder prep routine",
+"f": "A short routine before handstands and dips"
+},
+{
+"d": 244,
+"lv": "intermediate",
+"t": "Core endurance tests",
+"f": "Plank, side plank and hollow hold times"
+},
+{
+"d": 245,
+"lv": "intermediate",
+"t": "Building a pull-up bar routine",
+"f": "Using a doorway bar safely, if you have one"
+},
+{
+"d": 246,
+"lv": "intermediate",
+"t": "Equipment safety check",
+"f": "Checking bars, bands, chairs and floors before training"
+},
+{
+"d": 247,
+"lv": "intermediate",
+"t": "Planning the advanced phase",
+"f": "Choosing which skills to work on next"
+},
+{
+"d": 248,
+"lv": "intermediate",
+"t": "Movement quality checklist",
+"f": "Control, range, breathing and posture in every rep"
+},
+{
+"d": 249,
+"lv": "intermediate",
+"t": "Intermediate benchmark session",
+"f": "A test workout to compare with later"
+},
+{
+"d": 250,
+"lv": "intermediate",
+"t": "An easy week before advanced training",
+"f": "A lighter week so you arrive fresh"
+},
+{
+"d": 251,
+"lv": "advanced",
+"t": "Advanced mindset",
+"f": "Patience, quality practice and enjoying the process"
+},
+{
+"d": 252,
+"lv": "advanced",
+"t": "Archer push-ups",
+"f": "Shifting weight to one arm for a tougher push"
+},
+{
+"d": 253,
+"lv": "advanced",
+"t": "Pseudo planche push-ups",
+"f": "Hands near the hips and leaning forward for strength"
+},
+{
+"d": 254,
+"lv": "advanced",
+"t": "Diamond push-ups",
+"f": "Hands close together for a demanding push-up"
+},
+{
+"d": 255,
+"lv": "advanced",
+"t": "Explosive push-ups in general terms",
+"f": "Pushing fast off the floor with soft landings"
+},
+{
+"d": 256,
+"lv": "advanced",
+"t": "One-arm push-up progressions",
+"f": "Steps from wide stance and incline versions"
+},
+{
+"d": 257,
+"lv": "advanced",
+"t": "Pistol squat progressions",
+"f": "Box pistols and assisted pistols with a doorframe"
+},
+{
+"d": 258,
+"lv": "advanced",
+"t": "Shrimp squats",
+"f": "A single-leg squat holding the rear foot"
+},
+{
+"d": 259,
+"lv": "advanced",
+"t": "Cossack squats",
+"f": "Deep side-to-side squats for strength and mobility"
+},
+{
+"d": 260,
+"lv": "advanced",
+"t": "Nordic curl progressions in general terms",
+"f": "Slow lowering for the hamstrings with a secure anchor"
+},
+{
+"d": 261,
+"lv": "advanced",
+"t": "Single-leg hip thrusts",
+"f": "Advanced hip strength on the sofa edge"
+},
+{
+"d": 262,
+"lv": "advanced",
+"t": "L-sit progressions",
+"f": "Tuck holds on chairs or the floor for core and arms"
+},
+{
+"d": 263,
+"lv": "advanced",
+"t": "Hollow body rocks",
+"f": "Moving the hollow hold for extra challenge"
+},
+{
+"d": 264,
+"lv": "advanced",
+"t": "Dragon flag ideas in general terms",
+"f": "An advanced core exercise and its gentle stepping stones"
+},
+{
+"d": 265,
+"lv": "advanced",
+"t": "Hanging work if you have a bar",
+"f": "Dead hangs and knee raises on a pull-up bar"
+},
+{
+"d": 266,
+"lv": "advanced",
+"t": "Pull-up progressions",
+"f": "Negatives, holds and band assistance"
+},
+{
+"d": 267,
+"lv": "advanced",
+"t": "Chin-ups vs pull-ups",
+"f": "Different grips and what each emphasises"
+},
+{
+"d": 268,
+"lv": "advanced",
+"t": "Handstand foundations",
+"f": "Wrist prep, wall plank and shoulder strength in a safe space"
+},
+{
+"d": 269,
+"lv": "advanced",
+"t": "Wall handstand holds in general terms",
+"f": "Chest-to-wall holds for balance and strength"
+},
+{
+"d": 270,
+"lv": "advanced",
+"t": "Crow pose",
+"f": "Balancing on the hands with knees on the arms"
+},
+{
+"d": 271,
+"lv": "advanced",
+"t": "Advanced plank variations",
+"f": "Long-lever, RKC-style and weighted planks"
+},
+{
+"d": 272,
+"lv": "advanced",
+"t": "Anti-rotation core work",
+"f": "Resisting twisting with band presses and plank reaches"
+},
+{
+"d": 273,
+"lv": "advanced",
+"t": "Rotational power",
+"f": "Controlled twists and band chops in general terms"
+},
+{
+"d": 274,
+"lv": "advanced",
+"t": "Plyometrics in general terms",
+"f": "Jumps and bounds with progression and soft landings"
+},
+{
+"d": 275,
+"lv": "advanced",
+"t": "Tuck jumps and broad jumps",
+"f": "Powerful jumps for athletic legs, with care"
+},
+{
+"d": 276,
+"lv": "advanced",
+"t": "Agility drills at home",
+"f": "Quick footwork patterns in a small space"
+},
+{
+"d": 277,
+"lv": "advanced",
+"t": "Speed and reaction games",
+"f": "Reaction drills with a partner or a timer"
+},
+{
+"d": 278,
+"lv": "advanced",
+"t": "Advanced HIIT design",
+"f": "Combining strength and cardio in demanding intervals"
+},
+{
+"d": 279,
+"lv": "advanced",
+"t": "Benchmark workouts",
+"f": "Repeatable sessions to measure progress"
+},
+{
+"d": 280,
+"lv": "advanced",
+"t": "Periodisation basics",
+"f": "Planning training phases over months"
+},
+{
+"d": 281,
+"lv": "advanced",
+"t": "Review: advanced bodyweight",
+"f": "Looking back at advanced progressions and power work"
+},
+{
+"d": 282,
+"lv": "advanced",
+"t": "Mobility for advanced skills",
+"f": "Wrist, shoulder and hip prep for harder moves"
+},
+{
+"d": 283,
+"lv": "advanced",
+"t": "Full splits progress in general terms",
+"f": "Gentle, patient work towards greater range"
+},
+{
+"d": 284,
+"lv": "advanced",
+"t": "Bridge progressions",
+"f": "From glute bridge to wheel-style back bending with care"
+},
+{
+"d": 285,
+"lv": "advanced",
+"t": "Jefferson curl in general terms",
+"f": "Slow spinal flexion work with very light weight"
+},
+{
+"d": 286,
+"lv": "advanced",
+"t": "Loaded stretching",
+"f": "Using light weights to explore end ranges"
+},
+{
+"d": 287,
+"lv": "advanced",
+"t": "Flexibility routines for all levels",
+"f": "Building a routine you can keep for years"
+},
+{
+"d": 288,
+"lv": "advanced",
+"t": "Advanced yoga-inspired flows",
+"f": "Longer sequences with balance and strength poses"
+},
+{
+"d": 289,
+"lv": "advanced",
+"t": "Mindful movement practice",
+"f": "Moving with full attention and calm breathing"
+},
+{
+"d": 290,
+"lv": "advanced",
+"t": "Advanced breathing practices",
+"f": "Slow nasal breathing and breath control in general terms"
+},
+{
+"d": 291,
+"lv": "advanced",
+"t": "Tempo mastery",
+"f": "Very slow reps and pauses for strength and control"
+},
+{
+"d": 292,
+"lv": "advanced",
+"t": "Mechanical drop sets",
+"f": "Moving from harder to easier variations without rest"
+},
+{
+"d": 293,
+"lv": "advanced",
+"t": "Density training",
+"f": "Doing more work in the same time over weeks"
+},
+{
+"d": 294,
+"lv": "advanced",
+"t": "Cluster sets",
+"f": "Short breaks inside a set to keep quality high"
+},
+{
+"d": 295,
+"lv": "advanced",
+"t": "Training to near failure",
+"f": "What it means and why not every set needs it"
+},
+{
+"d": 296,
+"lv": "advanced",
+"t": "Volume and recovery balance",
+"f": "Managing how much you do across the week"
+},
+{
+"d": 297,
+"lv": "advanced",
+"t": "Recognising overtraining signs in general terms",
+"f": "Fatigue, poor sleep and low motivation as cues to rest"
+},
+{
+"d": 298,
+"lv": "advanced",
+"t": "Smart rest and sleep habits",
+"f": "General habits that support hard training"
+},
+{
+"d": 299,
+"lv": "advanced",
+"t": "Nutrition principles in general terms",
+"f": "Protein, plants, whole foods and enjoyment"
+},
+{
+"d": 300,
+"lv": "advanced",
+"t": "Hydration for harder sessions",
+"f": "Drinking around longer or sweaty workouts in general terms"
+},
+{
+"d": 301,
+"lv": "advanced",
+"t": "Workouts in hot weather at home",
+"f": "Fans, timing and lighter sessions on warm days"
+},
+{
+"d": 302,
+"lv": "advanced",
+"t": "Workouts in small spaces revisited",
+"f": "Advanced routines that fit a tiny room"
+},
+{
+"d": 303,
+"lv": "advanced",
+"t": "Silent advanced training",
+"f": "Hard workouts without any jumping or noise"
+},
+{
+"d": 304,
+"lv": "advanced",
+"t": "Training while travelling",
+"f": "Keeping progress with no equipment on the road"
+},
+{
+"d": 305,
+"lv": "advanced",
+"t": "Seasonal training plan",
+"f": "Matching training focus to the seasons"
+},
+{
+"d": 306,
+"lv": "advanced",
+"t": "Morning mobility for advanced trainees",
+"f": "A short daily flow before work or study"
+},
+{
+"d": 307,
+"lv": "advanced",
+"t": "Advanced partner workouts",
+"f": "Mirror drills and fun partner challenges"
+},
+{
+"d": 308,
+"lv": "advanced",
+"t": "Training to the music tempo",
+"f": "Using beats per minute to pace your reps"
+},
+{
+"d": 309,
+"lv": "advanced",
+"t": "Advanced core finishers",
+"f": "Short intense core circuits at the end of a session"
+},
+{
+"d": 310,
+"lv": "advanced",
+"t": "Review: mastering recovery and variety",
+"f": "Looking back at mobility, intensity and recovery"
+},
+{
+"d": 311,
+"lv": "advanced",
+"t": "Designing your annual plan",
+"f": "Mapping a year of training blocks"
+},
+{
+"d": 312,
+"lv": "advanced",
+"t": "Writing your own workout",
+"f": "Choosing a goal, patterns, format and duration"
+},
+{
+"d": 313,
+"lv": "advanced",
+"t": "Creating a signature routine",
+"f": "A personal workout you love and can always return to"
+},
+{
+"d": 314,
+"lv": "advanced",
+"t": "Fitness challenges for fun",
+"f": "Thirty-day challenges and friendly competitions"
+},
+{
+"d": 315,
+"lv": "advanced",
+"t": "Measuring progress beyond numbers",
+"f": "Energy, mood, sleep and confidence"
+},
+{
+"d": 316,
+"lv": "advanced",
+"t": "Training for an event",
+"f": "Preparing for a fun run, hike or dance class at home"
+},
+{
+"d": 317,
+"lv": "advanced",
+"t": "Combining home and outdoor training",
+"f": "Blending home sessions with runs, rides or hikes"
+},
+{
+"d": 318,
+"lv": "advanced",
+"t": "Complementing a sport",
+"f": "Home workouts that support football, tennis or swimming"
+},
+{
+"d": 319,
+"lv": "advanced",
+"t": "Training for everyday strength",
+"f": "Lifting, carrying and climbing stairs with ease"
+},
+{
+"d": 320,
+"lv": "advanced",
+"t": "Exercise and focus",
+"f": "How movement breaks can refresh your mind in general terms"
+},
+{
+"d": 321,
+"lv": "advanced",
+"t": "Movement for stress relief",
+"f": "Gentle sessions for busy or tense days"
+},
+{
+"d": 322,
+"lv": "advanced",
+"t": "Building a home gym step by step",
+"f": "Adding equipment slowly and smartly"
+},
+{
+"d": 323,
+"lv": "advanced",
+"t": "Minimalist equipment choices",
+"f": "A band, a mat and a pair of weights go far"
+},
+{
+"d": 324,
+"lv": "advanced",
+"t": "Making workouts social",
+"f": "Online groups, shared playlists and team challenges"
+},
+{
+"d": 325,
+"lv": "advanced",
+"t": "Fitness cultures worldwide",
+"f": "Outdoor gyms, morning group exercise and park workouts around the world"
+},
+{
+"d": 326,
+"lv": "advanced",
+"t": "Coaching yourself",
+"f": "Watching form on video and giving yourself feedback"
+},
+{
+"d": 327,
+"lv": "advanced",
+"t": "Common form mistakes",
+"f": "Spotting and fixing frequent technique errors"
+},
+{
+"d": 328,
+"lv": "advanced",
+"t": "Injury prevention habits in general terms",
+"f": "Warming up, progressing slowly and resting enough"
+},
+{
+"d": 329,
+"lv": "advanced",
+"t": "Returning after a break",
+"f": "Easing back in with shorter, lighter sessions"
+},
+{
+"d": 330,
+"lv": "advanced",
+"t": "Maintaining progress long term",
+"f": "Minimum routines that keep your fitness"
+},
+{
+"d": 331,
+"lv": "advanced",
+"t": "Lifelong movement habits",
+"f": "Staying active through all stages of life"
+},
+{
+"d": 332,
+"lv": "advanced",
+"t": "Workouts with kids",
+"f": "Playful, safe routines for the whole family"
+},
+{
+"d": 333,
+"lv": "advanced",
+"t": "Workouts with older relatives in general terms",
+"f": "Gentle chair and balance routines to share"
+},
+{
+"d": 334,
+"lv": "advanced",
+"t": "Accessible workouts",
+"f": "Seated and adaptable exercises for everyone"
+},
+{
+"d": 335,
+"lv": "advanced",
+"t": "Review: becoming your own coach",
+"f": "Looking back at planning, coaching and long-term habits"
+},
+{
+"d": 336,
+"lv": "advanced",
+"t": "Retesting your fitness",
+"f": "Comparing results with your day 100 self-tests"
+},
+{
+"d": 337,
+"lv": "advanced",
+"t": "Your strongest moves",
+"f": "Celebrating the exercises you have mastered"
+},
+{
+"d": 338,
+"lv": "advanced",
+"t": "Advanced full-body session",
+"f": "A challenging workout combining your best skills"
+},
+{
+"d": 339,
+"lv": "advanced",
+"t": "Advanced conditioning session",
+"f": "A hard but fun cardio and strength mix"
+},
+{
+"d": 340,
+"lv": "advanced",
+"t": "Advanced mobility session",
+"f": "A long flow using everything you have learned"
+},
+{
+"d": 341,
+"lv": "advanced",
+"t": "A playful movement day",
+"f": "Crawling, balancing and dancing just for fun"
+},
+{
+"d": 342,
+"lv": "advanced",
+"t": "Sharing your journey",
+"f": "Inspiring friends with your progress and tips"
+},
+{
+"d": 343,
+"lv": "advanced",
+"t": "Mentoring a beginner",
+"f": "Helping someone start their home workout journey"
+},
+{
+"d": 344,
+"lv": "advanced",
+"t": "Your favourite workout formats",
+"f": "Reflecting on circuits, EMOMs, flows and more"
+},
+{
+"d": 345,
+"lv": "advanced",
+"t": "Creating a weekly template",
+"f": "A reusable plan for the year ahead"
+},
+{
+"d": 346,
+"lv": "advanced",
+"t": "Planning your next goals",
+"f": "Choosing three movement goals for the coming year"
+},
+{
+"d": 347,
+"lv": "advanced",
+"t": "Building a supportive environment",
+"f": "Making your space and schedule invite movement"
+},
+{
+"d": 348,
+"lv": "advanced",
+"t": "Gratitude for your body",
+"f": "Appreciating strength, balance and energy gained"
+},
+{
+"d": 349,
+"lv": "advanced",
+"t": "Reflecting on your favourite exercise",
+"f": "Why one move became your favourite"
+},
+{
+"d": 350,
+"lv": "advanced",
+"t": "Advanced flexibility check",
+"f": "Retesting splits, bridges and deep squats"
+},
+{
+"d": 351,
+"lv": "advanced",
+"t": "Mobility for daily life",
+"f": "Keeping joints happy at the desk and on the sofa"
+},
+{
+"d": 352,
+"lv": "advanced",
+"t": "A gentle recovery week",
+"f": "Easier sessions to recharge before your final weeks"
+},
+{
+"d": 353,
+"lv": "advanced",
+"t": "Celebrating consistency",
+"f": "Counting the days and weeks you showed up"
+},
+{
+"d": 354,
+"lv": "advanced",
+"t": "Turning workouts into lifestyle",
+"f": "Moving naturally throughout every day"
+},
+{
+"d": 355,
+"lv": "advanced",
+"t": "Your home workout library",
+"f": "Collecting your favourite routines in one place"
+},
+{
+"d": 356,
+"lv": "advanced",
+"t": "Creative workout themes",
+"f": "Superhero day, dance day and other playful ideas"
+},
+{
+"d": 357,
+"lv": "advanced",
+"t": "Outdoor challenge day",
+"f": "Taking your best routine outside for fresh air"
+},
+{
+"d": 358,
+"lv": "advanced",
+"t": "Combining skills in a flow",
+"f": "Linking push-ups, squats and crawls into one sequence"
+},
+{
+"d": 359,
+"lv": "advanced",
+"t": "A day of rest and reflection",
+"f": "Enjoying rest and thinking about the journey"
+},
+{
+"d": 360,
+"lv": "advanced",
+"t": "Review: a year of skills",
+"f": "A light quiz-style recap of form, formats and recovery"
+},
+{
+"d": 361,
+"lv": "advanced",
+"t": "Mini challenge week planning",
+"f": "Setting fun goals for your final week of the path"
+},
+{
+"d": 362,
+"lv": "advanced",
+"t": "Your personal training philosophy",
+"f": "What you value most about moving at home"
+},
+{
+"d": 363,
+"lv": "advanced",
+"t": "Looking ahead",
+"f": "How your home training can grow in the next year"
+},
+{
+"d": 364,
+"lv": "advanced",
+"t": "Final challenge day",
+"f": "Repeating your benchmark workout and celebrating the result"
+},
+{
+"d": 365,
+"lv": "advanced",
+"t": "Celebrating your home workout year",
+"f": "Looking back at a year of movement, effort and joy"
+}
+]
+}

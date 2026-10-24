@@ -61,6 +61,7 @@ def check_syllabus(topic, errs):
         errs.add(p.name, 'days must be 1..365 in order')
         return False
     seen = set()
+    before = len(errs)
     for x in days:
         w = f'{topic} syllabus d{x["d"]}'
         if x.get('lv') != level_for(topic, x['d']):
@@ -70,7 +71,7 @@ def check_syllabus(topic, errs):
         if x.get('t') in seen:
             errs.add(w, 'duplicate title')
         seen.add(x.get('t'))
-    return True
+    return len(errs) == before
 
 
 def check_intro(topic, errs):
@@ -81,6 +82,7 @@ def check_intro(topic, errs):
     if not j:
         return False
     ok = True
+    before = len(errs)
     for lang in LANGS:
         bubbles = (j.get('intro') or {}).get(lang)
         if not isinstance(bubbles, list) or len(bubbles) != 2:
@@ -89,7 +91,7 @@ def check_intro(topic, errs):
             continue
         for i, b in enumerate(bubbles):
             text(errs, f'{topic} intro {lang}[{i}]', b, 200)
-    return ok
+    return ok and len(errs) == before
 
 
 def check_block(topic, s, e, errs):
@@ -145,6 +147,7 @@ def check_questions(topic, errs):
         errs.add(p.name, 'needs ids 001..100 in order')
         return False
     seen = set()
+    before = len(errs)
     for q in qs:
         if q.get('lv') not in ('any', 'beginner', 'intermediate', 'advanced'):
             errs.add(q['id'], 'bad lv')
@@ -155,7 +158,7 @@ def check_questions(topic, errs):
         if en in seen:
             errs.add(q['id'], 'duplicate question')
         seen.add(en)
-    return True
+    return len(errs) == before
 
 
 def main():

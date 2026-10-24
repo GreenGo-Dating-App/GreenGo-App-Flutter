@@ -1,0 +1,1305 @@
+{
+ "topic": "cycling",
+ "questions": [
+  {
+   "id": "cycling-001",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your earliest memory of riding a bike?",
+    "de": "Was ist deine früheste Erinnerung ans Fahrradfahren?",
+    "es": "¿Cuál es tu primer recuerdo montando en bici?",
+    "fr": "Quel est ton plus ancien souvenir à vélo ?",
+    "it": "Qual è il tuo primo ricordo in bicicletta?",
+    "pt": "Qual é a tua primeira memória a andar de bicicleta?",
+    "pt_BR": "Qual é sua primeira lembrança andando de bicicleta?"
+   }
+  },
+  {
+   "id": "cycling-002",
+   "lv": "any",
+   "i18n": {
+    "en": "What kind of bike would you choose if you could have any bike?",
+    "de": "Welches Fahrrad würdest du wählen, wenn du jedes haben könntest?",
+    "es": "¿Qué bici elegirías si pudieras tener cualquiera?",
+    "fr": "Quel vélo choisirais-tu si tu pouvais avoir n'importe lequel ?",
+    "it": "Che bici sceglieresti se potessi averne una qualsiasi?",
+    "pt": "Que bicicleta escolhias se pudesses ter qualquer uma?",
+    "pt_BR": "Que bike você escolheria se pudesse ter qualquer uma?"
+   }
+  },
+  {
+   "id": "cycling-003",
+   "lv": "any",
+   "i18n": {
+    "en": "Where is the most beautiful place you have ever ridden or would like to ride?",
+    "de": "Wo bist du am schönsten Ort Rad gefahren, oder wo würdest du gern fahren?",
+    "es": "¿Cuál es el lugar más bonito donde has pedaleado o te gustaría pedalear?",
+    "fr": "Quel est le plus bel endroit où tu as roulé ou aimerais rouler ?",
+    "it": "Qual è il posto più bello dove hai pedalato o vorresti pedalare?",
+    "pt": "Qual é o sítio mais bonito onde pedalaste ou gostavas de pedalar?",
+    "pt_BR": "Qual é o lugar mais bonito onde você já pedalou ou gostaria de pedalar?"
+   }
+  },
+  {
+   "id": "cycling-004",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer riding alone or with friends? Why?",
+    "de": "Fährst du lieber allein oder mit Freunden? Warum?",
+    "es": "¿Prefieres pedalear solo o con amigos? ¿Por qué?",
+    "fr": "Tu préfères rouler seul ou avec des amis ? Pourquoi ?",
+    "it": "Preferisci pedalare da solo o con gli amici? Perché?",
+    "pt": "Preferes pedalar sozinho ou com amigos? Porquê?",
+    "pt_BR": "Você prefere pedalar sozinho ou com amigos? Por quê?"
+   }
+  },
+  {
+   "id": "cycling-005",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you enjoy most about being on a bike?",
+    "de": "Was genießt du am meisten auf dem Rad?",
+    "es": "¿Qué es lo que más disfrutas cuando vas en bici?",
+    "fr": "Qu'est-ce que tu apprécies le plus quand tu es à vélo ?",
+    "it": "Che cosa ti piace di più quando sei in bici?",
+    "pt": "O que mais gostas quando andas de bicicleta?",
+    "pt_BR": "O que você mais curte quando está de bike?"
+   }
+  },
+  {
+   "id": "cycling-006",
+   "lv": "any",
+   "i18n": {
+    "en": "Is cycling popular where you live? What is it like there?",
+    "de": "Ist Radfahren bei dir in der Gegend beliebt? Wie ist es dort?",
+    "es": "¿Es popular el ciclismo donde vives? ¿Cómo es allí?",
+    "fr": "Le vélo est-il populaire là où tu vis ? Comment ça se passe ?",
+    "it": "Il ciclismo è popolare dove vivi? Com'è lì?",
+    "pt": "O ciclismo é popular onde vives? Como é aí?",
+    "pt_BR": "Pedalar é popular onde você mora? Como é aí?"
+   }
+  },
+  {
+   "id": "cycling-007",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather ride on smooth roads, gravel tracks or forest trails?",
+    "de": "Fährst du lieber auf glatten Straßen, Schotterwegen oder Waldpfaden?",
+    "es": "¿Prefieres carreteras lisas, caminos de grava o senderos de bosque?",
+    "fr": "Tu préfères les routes lisses, les chemins de gravier ou les sentiers en forêt ?",
+    "it": "Preferisci strade lisce, sterrati o sentieri nel bosco?",
+    "pt": "Preferes estradas lisas, caminhos de gravilha ou trilhos na floresta?",
+    "pt_BR": "Você prefere asfalto liso, estradas de terra ou trilhas na mata?"
+   }
+  },
+  {
+   "id": "cycling-008",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your dream cycling trip?",
+    "de": "Wie sieht deine Traum-Radreise aus?",
+    "es": "¿Cuál es tu viaje en bici soñado?",
+    "fr": "Quel est ton voyage à vélo de rêve ?",
+    "it": "Qual è il tuo viaggio in bici dei sogni?",
+    "pt": "Qual é a tua viagem de bicicleta de sonho?",
+    "pt_BR": "Qual é sua viagem de bike dos sonhos?"
+   }
+  },
+  {
+   "id": "cycling-009",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like watching bike races? Which ones?",
+    "de": "Schaust du gern Radrennen? Welche?",
+    "es": "¿Te gusta ver carreras de ciclismo? ¿Cuáles?",
+    "fr": "Tu aimes regarder les courses cyclistes ? Lesquelles ?",
+    "it": "Ti piace guardare le gare di ciclismo? Quali?",
+    "pt": "Gostas de ver corridas de ciclismo? Quais?",
+    "pt_BR": "Você curte assistir corridas de ciclismo? Quais?"
+   }
+  },
+  {
+   "id": "cycling-010",
+   "lv": "any",
+   "i18n": {
+    "en": "What does a perfect day on the bike look like for you?",
+    "de": "Wie sieht für dich ein perfekter Tag auf dem Rad aus?",
+    "es": "¿Cómo es para ti un día perfecto en bici?",
+    "fr": "À quoi ressemble pour toi une journée parfaite à vélo ?",
+    "it": "Com'è per te una giornata perfetta in bici?",
+    "pt": "Como é para ti um dia perfeito de bicicleta?",
+    "pt_BR": "Como é pra você um dia perfeito de bike?"
+   }
+  },
+  {
+   "id": "cycling-011",
+   "lv": "any",
+   "i18n": {
+    "en": "Which snack would you always take on a ride?",
+    "de": "Welchen Snack würdest du immer auf eine Tour mitnehmen?",
+    "es": "¿Qué tentempié llevarías siempre en una salida en bici?",
+    "fr": "Quel en-cas emporterais-tu toujours pour une sortie ?",
+    "it": "Quale spuntino porteresti sempre in un giro in bici?",
+    "pt": "Que lanche levavas sempre numa volta de bicicleta?",
+    "pt_BR": "Que lanchinho você sempre levaria num pedal?"
+   }
+  },
+  {
+   "id": "cycling-012",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever cycled in another country? What was it like?",
+    "de": "Bist du schon mal in einem anderen Land Rad gefahren? Wie war es?",
+    "es": "¿Has pedaleado alguna vez en otro país? ¿Cómo fue?",
+    "fr": "As-tu déjà fait du vélo dans un autre pays ? C'était comment ?",
+    "it": "Hai mai pedalato in un altro paese? Com'è stato?",
+    "pt": "Já andaste de bicicleta noutro país? Como foi?",
+    "pt_BR": "Você já pedalou em outro país? Como foi?"
+   }
+  },
+  {
+   "id": "cycling-013",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you prefer early morning rides or sunset rides?",
+    "de": "Fährst du lieber frühmorgens oder bei Sonnenuntergang?",
+    "es": "¿Prefieres salir en bici temprano por la mañana o al atardecer?",
+    "fr": "Tu préfères rouler tôt le matin ou au coucher du soleil ?",
+    "it": "Preferisci pedalare al mattino presto o al tramonto?",
+    "pt": "Preferes pedalar de manhã cedo ou ao pôr do sol?",
+    "pt_BR": "Você prefere pedalar bem cedo ou no pôr do sol?"
+   }
+  },
+  {
+   "id": "cycling-014",
+   "lv": "any",
+   "i18n": {
+    "en": "What would make your city a better place for cycling?",
+    "de": "Was würde deine Stadt fahrradfreundlicher machen?",
+    "es": "¿Qué haría de tu ciudad un mejor lugar para ir en bici?",
+    "fr": "Qu'est-ce qui rendrait ta ville plus agréable à vélo ?",
+    "it": "Che cosa renderebbe la tua città più adatta alla bici?",
+    "pt": "O que tornaria a tua cidade melhor para andar de bicicleta?",
+    "pt_BR": "O que deixaria sua cidade melhor pra pedalar?"
+   }
+  },
+  {
+   "id": "cycling-015",
+   "lv": "any",
+   "i18n": {
+    "en": "Who taught you to ride a bike, and how did it go?",
+    "de": "Wer hat dir das Radfahren beigebracht, und wie lief es?",
+    "es": "¿Quién te enseñó a montar en bici y cómo fue?",
+    "fr": "Qui t'a appris à faire du vélo, et comment ça s'est passé ?",
+    "it": "Chi ti ha insegnato ad andare in bici e com'è andata?",
+    "pt": "Quem te ensinou a andar de bicicleta e como correu?",
+    "pt_BR": "Quem te ensinou a andar de bicicleta e como foi?"
+   }
+  },
+  {
+   "id": "cycling-016",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think about e-bikes?",
+    "de": "Was hältst du von E-Bikes?",
+    "es": "¿Qué opinas de las bicis eléctricas?",
+    "fr": "Que penses-tu des vélos électriques ?",
+    "it": "Che ne pensi delle bici elettriche?",
+    "pt": "O que achas das bicicletas elétricas?",
+    "pt_BR": "O que você acha das bikes elétricas?"
+   }
+  },
+  {
+   "id": "cycling-017",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you like to commute by bike? What would you need to make it work?",
+    "de": "Würdest du gern mit dem Rad pendeln? Was bräuchtest du dafür?",
+    "es": "¿Te gustaría ir al trabajo en bici? ¿Qué necesitarías para lograrlo?",
+    "fr": "Aimerais-tu aller au travail à vélo ? De quoi aurais-tu besoin ?",
+    "it": "Ti piacerebbe andare al lavoro in bici? Cosa ti servirebbe?",
+    "pt": "Gostavas de ir para o trabalho de bicicleta? O que precisavas para isso?",
+    "pt_BR": "Você gostaria de ir pro trabalho de bike? O que precisaria pra isso dar certo?"
+   }
+  },
+  {
+   "id": "cycling-018",
+   "lv": "any",
+   "i18n": {
+    "en": "Which famous cyclist or cycling story inspires you?",
+    "de": "Welcher bekannte Radfahrer oder welche Radsportgeschichte inspiriert dich?",
+    "es": "¿Qué ciclista famoso o historia del ciclismo te inspira?",
+    "fr": "Quel cycliste célèbre ou quelle histoire du vélo t'inspire ?",
+    "it": "Quale ciclista famoso o storia del ciclismo ti ispira?",
+    "pt": "Que ciclista famoso ou história do ciclismo te inspira?",
+    "pt_BR": "Qual ciclista famoso ou história do ciclismo te inspira?"
+   }
+  },
+  {
+   "id": "cycling-019",
+   "lv": "any",
+   "i18n": {
+    "en": "How do you feel when you reach the top of a hill?",
+    "de": "Wie fühlst du dich, wenn du oben auf einem Hügel ankommst?",
+    "es": "¿Cómo te sientes al llegar a la cima de una cuesta?",
+    "fr": "Comment te sens-tu quand tu arrives en haut d'une côte ?",
+    "it": "Come ti senti quando arrivi in cima a una salita?",
+    "pt": "Como te sentes quando chegas ao topo de uma subida?",
+    "pt_BR": "Como você se sente quando chega no alto de uma subida?"
+   }
+  },
+  {
+   "id": "cycling-020",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like long, quiet rides or short, fast ones?",
+    "de": "Magst du lange, ruhige Touren oder kurze, schnelle?",
+    "es": "¿Te gustan las rutas largas y tranquilas o las cortas y rápidas?",
+    "fr": "Tu aimes les longues sorties tranquilles ou les courtes et rapides ?",
+    "it": "Ti piacciono i giri lunghi e tranquilli o quelli brevi e veloci?",
+    "pt": "Gostas de voltas longas e calmas ou curtas e rápidas?",
+    "pt_BR": "Você curte pedais longos e tranquilos ou curtos e rápidos?"
+   }
+  },
+  {
+   "id": "cycling-021",
+   "lv": "any",
+   "i18n": {
+    "en": "What colour would your dream bike be?",
+    "de": "Welche Farbe hätte dein Traumrad?",
+    "es": "¿De qué color sería la bici de tus sueños?",
+    "fr": "De quelle couleur serait ton vélo de rêve ?",
+    "it": "Di che colore sarebbe la bici dei tuoi sogni?",
+    "pt": "De que cor seria a bicicleta dos teus sonhos?",
+    "pt_BR": "De que cor seria a bike dos seus sonhos?"
+   }
+  },
+  {
+   "id": "cycling-022",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you ever try a multi-day bike tour? Where?",
+    "de": "Würdest du mal eine mehrtägige Radtour machen? Wohin?",
+    "es": "¿Harías alguna vez un viaje en bici de varios días? ¿Adónde?",
+    "fr": "Tenterais-tu un jour un voyage à vélo de plusieurs jours ? Où ?",
+    "it": "Faresti mai un viaggio in bici di più giorni? Dove?",
+    "pt": "Farias alguma vez uma viagem de bicicleta de vários dias? Para onde?",
+    "pt_BR": "Você faria uma viagem de bike de vários dias? Pra onde?"
+   }
+  },
+  {
+   "id": "cycling-023",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite café or stop on a ride?",
+    "de": "Was ist dein Lieblingscafé oder Lieblingsstopp auf einer Tour?",
+    "es": "¿Cuál es tu café o parada favorita en una ruta?",
+    "fr": "Quel est ton café ou ta pause préférée pendant une sortie ?",
+    "it": "Qual è il tuo bar o la tua sosta preferita durante un giro?",
+    "pt": "Qual é o teu café ou a tua paragem preferida numa volta?",
+    "pt_BR": "Qual é seu café ou sua parada favorita num pedal?"
+   }
+  },
+  {
+   "id": "cycling-024",
+   "lv": "any",
+   "i18n": {
+    "en": "How does cycling change the way you see a place?",
+    "de": "Wie verändert Radfahren deinen Blick auf einen Ort?",
+    "es": "¿Cómo cambia la bici tu manera de ver un lugar?",
+    "fr": "Comment le vélo change-t-il ta façon de voir un lieu ?",
+    "it": "Come cambia la bici il tuo modo di vedere un luogo?",
+    "pt": "Como muda a bicicleta a tua forma de ver um lugar?",
+    "pt_BR": "Como a bike muda seu jeito de ver um lugar?"
+   }
+  },
+  {
+   "id": "cycling-025",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you name your bikes? What would you call yours?",
+    "de": "Gibst du deinen Rädern Namen? Wie würdest du deins nennen?",
+    "es": "¿Le pones nombre a tus bicis? ¿Cómo llamarías a la tuya?",
+    "fr": "Tu donnes un nom à tes vélos ? Comment appellerais-tu le tien ?",
+    "it": "Dai un nome alle tue bici? Come chiameresti la tua?",
+    "pt": "Dás nomes às tuas bicicletas? Como chamarias à tua?",
+    "pt_BR": "Você dá nome pras suas bikes? Como chamaria a sua?"
+   }
+  },
+  {
+   "id": "cycling-026",
+   "lv": "any",
+   "i18n": {
+    "en": "What music or sounds do you enjoy after a long ride?",
+    "de": "Welche Musik oder Klänge genießt du nach einer langen Tour?",
+    "es": "¿Qué música o sonidos disfrutas después de una salida larga?",
+    "fr": "Quelle musique ou quels sons apprécies-tu après une longue sortie ?",
+    "it": "Che musica o suoni ti piacciono dopo un lungo giro?",
+    "pt": "Que música ou sons gostas de ouvir depois de uma volta longa?",
+    "pt_BR": "Que música ou sons você curte depois de um pedal longo?"
+   }
+  },
+  {
+   "id": "cycling-027",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you rather cycle by the sea or in the mountains?",
+    "de": "Würdest du lieber am Meer oder in den Bergen Rad fahren?",
+    "es": "¿Preferirías pedalear junto al mar o en la montaña?",
+    "fr": "Tu préférerais rouler au bord de la mer ou en montagne ?",
+    "it": "Preferiresti pedalare al mare o in montagna?",
+    "pt": "Preferias pedalar junto ao mar ou na montanha?",
+    "pt_BR": "Você preferiria pedalar perto do mar ou nas montanhas?"
+   }
+  },
+  {
+   "id": "cycling-028",
+   "lv": "any",
+   "i18n": {
+    "en": "What do you think is the best season for cycling, and why?",
+    "de": "Was ist für dich die beste Jahreszeit zum Radfahren und warum?",
+    "es": "¿Cuál crees que es la mejor estación para ir en bici y por qué?",
+    "fr": "Quelle est selon toi la meilleure saison pour le vélo, et pourquoi ?",
+    "it": "Qual è secondo te la stagione migliore per la bici e perché?",
+    "pt": "Qual achas que é a melhor estação para andar de bicicleta e porquê?",
+    "pt_BR": "Qual você acha que é a melhor estação pra pedalar e por quê?"
+   }
+  },
+  {
+   "id": "cycling-029",
+   "lv": "any",
+   "i18n": {
+    "en": "How would you describe cycling to someone who has never tried it?",
+    "de": "Wie würdest du Radfahren jemandem beschreiben, der es nie probiert hat?",
+    "es": "¿Cómo describirías el ciclismo a alguien que nunca lo ha probado?",
+    "fr": "Comment décrirais-tu le vélo à quelqu'un qui n'en a jamais fait ?",
+    "it": "Come descriveresti la bici a qualcuno che non l'ha mai provata?",
+    "pt": "Como descreverias andar de bicicleta a alguém que nunca experimentou?",
+    "pt_BR": "Como você descreveria pedalar pra alguém que nunca experimentou?"
+   }
+  },
+  {
+   "id": "cycling-030",
+   "lv": "any",
+   "i18n": {
+    "en": "What is the funniest thing that has happened to you on a bike?",
+    "de": "Was ist das Lustigste, das dir je auf dem Rad passiert ist?",
+    "es": "¿Qué es lo más gracioso que te ha pasado en bici?",
+    "fr": "Quelle est la chose la plus drôle qui te soit arrivée à vélo ?",
+    "it": "Qual è la cosa più divertente che ti è successa in bici?",
+    "pt": "Qual foi a coisa mais engraçada que te aconteceu de bicicleta?",
+    "pt_BR": "Qual foi a coisa mais engraçada que já te aconteceu de bike?"
+   }
+  },
+  {
+   "id": "cycling-031",
+   "lv": "any",
+   "i18n": {
+    "en": "Which country's cycling culture would you love to experience?",
+    "de": "Welche Radkultur eines Landes würdest du gern erleben?",
+    "es": "¿Qué cultura ciclista de otro país te encantaría vivir?",
+    "fr": "Quelle culture du vélo d'un autre pays aimerais-tu découvrir ?",
+    "it": "Quale cultura ciclistica di un altro paese ti piacerebbe vivere?",
+    "pt": "Que cultura de bicicleta de outro país gostavas de viver?",
+    "pt_BR": "Qual cultura de bike de outro país você adoraria conhecer?"
+   }
+  },
+  {
+   "id": "cycling-032",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you enjoy fixing things yourself, or do you prefer a bike shop?",
+    "de": "Reparierst du gern selbst, oder gehst du lieber in die Werkstatt?",
+    "es": "¿Te gusta arreglar cosas tú mismo o prefieres ir al taller?",
+    "fr": "Tu aimes réparer toi-même ou tu préfères aller chez le vélociste ?",
+    "it": "Ti piace riparare da solo o preferisci il meccanico?",
+    "pt": "Gostas de arranjar as coisas tu mesmo ou preferes uma oficina?",
+    "pt_BR": "Você gosta de consertar sozinho ou prefere uma oficina?"
+   }
+  },
+  {
+   "id": "cycling-033",
+   "lv": "any",
+   "i18n": {
+    "en": "What would you love to explore in your own city by bike?",
+    "de": "Was würdest du in deiner Stadt gern mit dem Rad erkunden?",
+    "es": "¿Qué te encantaría explorar en bici en tu propia ciudad?",
+    "fr": "Qu'aimerais-tu explorer à vélo dans ta propre ville ?",
+    "it": "Che cosa ti piacerebbe esplorare in bici nella tua città?",
+    "pt": "O que gostavas de explorar de bicicleta na tua cidade?",
+    "pt_BR": "O que você adoraria explorar de bike na sua cidade?"
+   }
+  },
+  {
+   "id": "cycling-034",
+   "lv": "any",
+   "i18n": {
+    "en": "Do you like tracking your rides with apps, or just riding freely?",
+    "de": "Zeichnest du deine Fahrten gern mit Apps auf, oder fährst du einfach frei?",
+    "es": "¿Te gusta registrar tus salidas con apps o simplemente pedalear libre?",
+    "fr": "Tu aimes enregistrer tes sorties avec des applis ou juste rouler librement ?",
+    "it": "Ti piace registrare i giri con le app o pedalare liberamente?",
+    "pt": "Gostas de registar as tuas voltas em apps ou só pedalar livremente?",
+    "pt_BR": "Você curte registrar seus pedais em apps ou só pedalar livre?"
+   }
+  },
+  {
+   "id": "cycling-035",
+   "lv": "any",
+   "i18n": {
+    "en": "What is one cycling skill you would love to learn?",
+    "de": "Welche Radfahrtechnik würdest du gern lernen?",
+    "es": "¿Qué habilidad ciclista te encantaría aprender?",
+    "fr": "Quelle compétence à vélo aimerais-tu apprendre ?",
+    "it": "Quale abilità in bici ti piacerebbe imparare?",
+    "pt": "Que habilidade de ciclismo gostavas de aprender?",
+    "pt_BR": "Que habilidade na bike você adoraria aprender?"
+   }
+  },
+  {
+   "id": "cycling-036",
+   "lv": "any",
+   "i18n": {
+    "en": "Have you ever joined a group ride or cycling event? How was it?",
+    "de": "Warst du schon mal bei einer Gruppenausfahrt oder einem Radevent? Wie war es?",
+    "es": "¿Has participado en alguna salida en grupo o evento ciclista? ¿Qué tal?",
+    "fr": "As-tu déjà participé à une sortie en groupe ou un événement vélo ? Comment c'était ?",
+    "it": "Hai mai partecipato a un'uscita di gruppo o a un evento ciclistico? Com'è stato?",
+    "pt": "Já participaste num passeio de grupo ou num evento de ciclismo? Como foi?",
+    "pt_BR": "Você já participou de um pedal em grupo ou evento de ciclismo? Como foi?"
+   }
+  },
+  {
+   "id": "cycling-037",
+   "lv": "any",
+   "i18n": {
+    "en": "What gets you out on the bike when you feel lazy?",
+    "de": "Was bringt dich aufs Rad, wenn du keine Lust hast?",
+    "es": "¿Qué te hace salir en bici cuando te da pereza?",
+    "fr": "Qu'est-ce qui te fait monter sur le vélo quand tu as la flemme ?",
+    "it": "Che cosa ti fa salire in bici quando sei pigro?",
+    "pt": "O que te faz pegar na bicicleta quando estás com preguiça?",
+    "pt_BR": "O que te faz sair de bike quando bate a preguiça?"
+   }
+  },
+  {
+   "id": "cycling-038",
+   "lv": "any",
+   "i18n": {
+    "en": "Would you like to try a tandem ride? Who would you ride with?",
+    "de": "Würdest du gern mal Tandem fahren? Mit wem?",
+    "es": "¿Te gustaría probar un tándem? ¿Con quién irías?",
+    "fr": "Aimerais-tu essayer le tandem ? Avec qui roulerais-tu ?",
+    "it": "Ti piacerebbe provare un tandem? Con chi pedaleresti?",
+    "pt": "Gostavas de experimentar um tandem? Com quem irias?",
+    "pt_BR": "Você gostaria de andar de tandem? Com quem iria?"
+   }
+  },
+  {
+   "id": "cycling-039",
+   "lv": "any",
+   "i18n": {
+    "en": "What is your favourite thing to see or smell on a ride?",
+    "de": "Was siehst oder riechst du auf einer Tour am liebsten?",
+    "es": "¿Qué es lo que más te gusta ver u oler en una ruta?",
+    "fr": "Qu'est-ce que tu préfères voir ou sentir pendant une sortie ?",
+    "it": "Che cosa ti piace di più vedere o annusare durante un giro?",
+    "pt": "O que mais gostas de ver ou cheirar numa volta?",
+    "pt_BR": "O que você mais gosta de ver ou sentir o cheiro num pedal?"
+   }
+  },
+  {
+   "id": "cycling-040",
+   "lv": "any",
+   "i18n": {
+    "en": "How does cycling fit into your weekly routine right now?",
+    "de": "Wie passt Radfahren gerade in deinen Wochenablauf?",
+    "es": "¿Cómo encaja la bici en tu rutina semanal ahora mismo?",
+    "fr": "Comment le vélo s'intègre-t-il dans ta semaine en ce moment ?",
+    "it": "Come si inserisce la bici nella tua routine settimanale adesso?",
+    "pt": "Como é que a bicicleta encaixa na tua rotina semanal neste momento?",
+    "pt_BR": "Como a bike se encaixa na sua rotina semanal hoje?"
+   }
+  },
+  {
+   "id": "cycling-041",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What kind of bike do you have or plan to get first?",
+    "de": "Welches Fahrrad hast du, oder welches planst du dir als Erstes zu holen?",
+    "es": "¿Qué bici tienes o piensas comprarte primero?",
+    "fr": "Quel vélo as-tu ou comptes-tu acheter en premier ?",
+    "it": "Che bici hai o pensi di prendere per prima?",
+    "pt": "Que bicicleta tens ou pensas comprar primeiro?",
+    "pt_BR": "Que bike você tem ou pretende comprar primeiro?"
+   }
+  },
+  {
+   "id": "cycling-042",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How far do you think you could comfortably ride today?",
+    "de": "Wie weit könntest du heute wohl bequem fahren?",
+    "es": "¿Qué distancia crees que podrías recorrer cómodamente hoy?",
+    "fr": "Quelle distance penses-tu pouvoir parcourir tranquillement aujourd'hui ?",
+    "it": "Quanta strada pensi di poter fare comodamente oggi?",
+    "pt": "Que distância achas que conseguias fazer confortavelmente hoje?",
+    "pt_BR": "Que distância você acha que conseguiria pedalar tranquilo hoje?"
+   }
+  },
+  {
+   "id": "cycling-043",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which part of riding in traffic feels easiest or hardest for you?",
+    "de": "Was fällt dir im Straßenverkehr am leichtesten oder schwersten?",
+    "es": "¿Qué parte de circular entre el tráfico te resulta más fácil o difícil?",
+    "fr": "Qu'est-ce qui te semble le plus facile ou le plus difficile en circulation ?",
+    "it": "Quale parte del pedalare nel traffico ti viene più facile o più difficile?",
+    "pt": "Que parte de pedalar no trânsito achas mais fácil ou mais difícil?",
+    "pt_BR": "Qual parte de pedalar no trânsito é mais fácil ou mais difícil pra você?"
+   }
+  },
+  {
+   "id": "cycling-044",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you ever fixed a flat tyre? How did it go?",
+    "de": "Hast du schon mal einen Platten geflickt? Wie lief es?",
+    "es": "¿Has arreglado alguna vez un pinchazo? ¿Qué tal fue?",
+    "fr": "As-tu déjà réparé une crevaison ? Comment ça s'est passé ?",
+    "it": "Hai mai riparato una gomma bucata? Com'è andata?",
+    "pt": "Já arranjaste algum furo? Como correu?",
+    "pt_BR": "Você já consertou um pneu furado? Como foi?"
+   }
+  },
+  {
+   "id": "cycling-045",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which piece of cycling gear do you think is most important?",
+    "de": "Welche Fahrradausrüstung hältst du für am wichtigsten?",
+    "es": "¿Qué equipamiento ciclista te parece más importante?",
+    "fr": "Quel équipement de vélo te semble le plus important ?",
+    "it": "Quale attrezzatura da ciclismo ti sembra più importante?",
+    "pt": "Que equipamento de ciclismo achas mais importante?",
+    "pt_BR": "Qual equipamento de ciclismo você acha mais importante?"
+   }
+  },
+  {
+   "id": "cycling-046",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you feel confident using your gears yet?",
+    "de": "Fühlst du dich beim Schalten schon sicher?",
+    "es": "¿Ya te sientes seguro usando los cambios?",
+    "fr": "Te sens-tu déjà à l'aise avec les vitesses ?",
+    "it": "Ti senti già sicuro a usare il cambio?",
+    "pt": "Já te sentes confiante a usar as mudanças?",
+    "pt_BR": "Você já se sente seguro usando as marchas?"
+   }
+  },
+  {
+   "id": "cycling-047",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Where could you practise riding somewhere quiet and safe?",
+    "de": "Wo könntest du an einem ruhigen, sicheren Ort üben?",
+    "es": "¿Dónde podrías practicar en un lugar tranquilo y seguro?",
+    "fr": "Où pourrais-tu t'entraîner dans un endroit calme et sûr ?",
+    "it": "Dove potresti esercitarti in un posto tranquillo e sicuro?",
+    "pt": "Onde poderias praticar num sítio calmo e seguro?",
+    "pt_BR": "Onde você poderia treinar num lugar tranquilo e seguro?"
+   }
+  },
+  {
+   "id": "cycling-048",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How does your bike feel after you adjusted the saddle?",
+    "de": "Wie fühlt sich dein Rad an, nachdem du den Sattel eingestellt hast?",
+    "es": "¿Qué tal se siente tu bici después de ajustar el sillín?",
+    "fr": "Comment sens-tu ton vélo après avoir réglé la selle ?",
+    "it": "Come senti la bici dopo aver regolato la sella?",
+    "pt": "Como sentes a bicicleta depois de ajustares o selim?",
+    "pt_BR": "Como ficou sua bike depois de ajustar o selim?"
+   }
+  },
+  {
+   "id": "cycling-049",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What is your first cycling goal?",
+    "de": "Was ist dein erstes Radfahrziel?",
+    "es": "¿Cuál es tu primer objetivo en bici?",
+    "fr": "Quel est ton premier objectif à vélo ?",
+    "it": "Qual è il tuo primo obiettivo in bici?",
+    "pt": "Qual é o teu primeiro objetivo de ciclismo?",
+    "pt_BR": "Qual é sua primeira meta na bike?"
+   }
+  },
+  {
+   "id": "cycling-050",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which errand could you do by bike this week?",
+    "de": "Welche Besorgung könntest du diese Woche mit dem Rad erledigen?",
+    "es": "¿Qué recado podrías hacer en bici esta semana?",
+    "fr": "Quelle course pourrais-tu faire à vélo cette semaine ?",
+    "it": "Quale commissione potresti fare in bici questa settimana?",
+    "pt": "Que recado podias fazer de bicicleta esta semana?",
+    "pt_BR": "Que tarefa do dia a dia você poderia fazer de bike esta semana?"
+   }
+  },
+  {
+   "id": "cycling-051",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What makes you feel safe and visible on the road?",
+    "de": "Was gibt dir das Gefühl, auf der Straße sicher und sichtbar zu sein?",
+    "es": "¿Qué te hace sentir seguro y visible en la carretera?",
+    "fr": "Qu'est-ce qui te fait te sentir en sécurité et visible sur la route ?",
+    "it": "Che cosa ti fa sentire sicuro e visibile sulla strada?",
+    "pt": "O que te faz sentir seguro e visível na estrada?",
+    "pt_BR": "O que te faz se sentir seguro e visível na rua?"
+   }
+  },
+  {
+   "id": "cycling-052",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Do you prefer flat pedals or would you like to try clipless ones?",
+    "de": "Magst du Plattformpedale, oder würdest du Klickpedale ausprobieren?",
+    "es": "¿Prefieres pedales de plataforma o te gustaría probar los automáticos?",
+    "fr": "Tu préfères les pédales plates ou aimerais-tu essayer les pédales automatiques ?",
+    "it": "Preferisci i pedali flat o ti piacerebbe provare quelli a sgancio?",
+    "pt": "Preferes pedais planos ou gostavas de experimentar os de encaixe?",
+    "pt_BR": "Você prefere pedal plataforma ou gostaria de testar o clip?"
+   }
+  },
+  {
+   "id": "cycling-053",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about riding up hills right now?",
+    "de": "Wie geht es dir im Moment mit Anstiegen?",
+    "es": "¿Qué tal llevas ahora mismo subir cuestas?",
+    "fr": "Comment vis-tu les montées en ce moment ?",
+    "it": "Come ti trovi adesso con le salite?",
+    "pt": "Como te sentes neste momento a subir ladeiras?",
+    "pt_BR": "Como você se sente hoje encarando subidas?"
+   }
+  },
+  {
+   "id": "cycling-054",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would your ideal first 20 km route include?",
+    "de": "Was würde deine ideale erste 20-km-Route enthalten?",
+    "es": "¿Qué incluiría tu ruta ideal de tus primeros 20 km?",
+    "fr": "Que comprendrait ton itinéraire idéal pour tes premiers 20 km ?",
+    "it": "Che cosa includerebbe il tuo percorso ideale per i primi 20 km?",
+    "pt": "O que incluiria o teu percurso ideal para os primeiros 20 km?",
+    "pt_BR": "O que teria na sua rota ideal pros primeiros 20 km?"
+   }
+  },
+  {
+   "id": "cycling-055",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Have you tried a bike-sharing scheme? What did you think?",
+    "de": "Hast du schon mal ein Leihradsystem genutzt? Wie fandest du es?",
+    "es": "¿Has probado algún servicio de bici compartida? ¿Qué te pareció?",
+    "fr": "As-tu essayé un système de vélos en libre-service ? Qu'en as-tu pensé ?",
+    "it": "Hai provato un servizio di bike sharing? Che ne pensi?",
+    "pt": "Já experimentaste um serviço de bicicletas partilhadas? O que achaste?",
+    "pt_BR": "Você já usou bike compartilhada? O que achou?"
+   }
+  },
+  {
+   "id": "cycling-056",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which hand signal do you find easiest to remember?",
+    "de": "Welches Handzeichen kannst du dir am leichtesten merken?",
+    "es": "¿Qué señal con la mano te resulta más fácil de recordar?",
+    "fr": "Quel signe de la main trouves-tu le plus facile à retenir ?",
+    "it": "Quale segnale con la mano trovi più facile da ricordare?",
+    "pt": "Que sinal com a mão achas mais fácil de lembrar?",
+    "pt_BR": "Qual sinal com a mão você acha mais fácil de lembrar?"
+   }
+  },
+  {
+   "id": "cycling-057",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you like to carry things when you ride?",
+    "de": "Wie transportierst du am liebsten Dinge beim Radfahren?",
+    "es": "¿Cómo te gusta llevar tus cosas cuando vas en bici?",
+    "fr": "Comment aimes-tu transporter tes affaires à vélo ?",
+    "it": "Come ti piace portare le tue cose quando vai in bici?",
+    "pt": "Como gostas de levar as tuas coisas quando andas de bicicleta?",
+    "pt_BR": "Como você gosta de levar suas coisas quando pedala?"
+   }
+  },
+  {
+   "id": "cycling-058",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Would you enjoy a beginner group ride? What would you hope for?",
+    "de": "Würde dir eine Anfänger-Gruppenausfahrt gefallen? Was würdest du dir wünschen?",
+    "es": "¿Te gustaría una salida en grupo para principiantes? ¿Qué esperarías?",
+    "fr": "Une sortie en groupe pour débutants te plairait-elle ? Qu'en attendrais-tu ?",
+    "it": "Ti piacerebbe un'uscita di gruppo per principianti? Cosa ti aspetteresti?",
+    "pt": "Gostavas de um passeio de grupo para principiantes? O que esperavas?",
+    "pt_BR": "Você curtiria um pedal em grupo pra iniciantes? O que esperaria?"
+   }
+  },
+  {
+   "id": "cycling-059",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What do you check on your bike before you ride?",
+    "de": "Was überprüfst du an deinem Rad vor der Fahrt?",
+    "es": "¿Qué revisas en tu bici antes de salir?",
+    "fr": "Que vérifies-tu sur ton vélo avant de partir ?",
+    "it": "Che cosa controlli sulla bici prima di partire?",
+    "pt": "O que verificas na bicicleta antes de sair?",
+    "pt_BR": "O que você confere na bike antes de sair?"
+   }
+  },
+  {
+   "id": "cycling-060",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel about riding in light rain?",
+    "de": "Wie findest du es, bei leichtem Regen zu fahren?",
+    "es": "¿Qué te parece pedalear con lluvia ligera?",
+    "fr": "Que penses-tu de rouler sous une pluie légère ?",
+    "it": "Come ti trovi a pedalare sotto una pioggia leggera?",
+    "pt": "O que achas de pedalar com chuva fraca?",
+    "pt_BR": "O que você acha de pedalar com chuva fraquinha?"
+   }
+  },
+  {
+   "id": "cycling-061",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which bike type from the overview appeals to you most?",
+    "de": "Welcher Fahrradtyp aus dem Überblick spricht dich am meisten an?",
+    "es": "¿Qué tipo de bici del repaso te atrae más?",
+    "fr": "Quel type de vélo du panorama t'attire le plus ?",
+    "it": "Quale tipo di bici della panoramica ti attira di più?",
+    "pt": "Que tipo de bicicleta da visão geral te atrai mais?",
+    "pt_BR": "Qual tipo de bike da visão geral mais te atrai?"
+   }
+  },
+  {
+   "id": "cycling-062",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How comfortable does your helmet feel when you ride?",
+    "de": "Wie bequem fühlt sich dein Helm beim Fahren an?",
+    "es": "¿Qué tan cómodo te resulta el casco cuando pedaleas?",
+    "fr": "Ton casque est-il confortable quand tu roules ?",
+    "it": "Quanto ti senti comodo con il casco quando pedali?",
+    "pt": "Quão confortável sentes o capacete quando pedalas?",
+    "pt_BR": "O quanto seu capacete é confortável quando você pedala?"
+   }
+  },
+  {
+   "id": "cycling-063",
+   "lv": "beginner",
+   "i18n": {
+    "en": "What would make you ride a little more often?",
+    "de": "Was würde dich dazu bringen, etwas öfter zu fahren?",
+    "es": "¿Qué te animaría a salir en bici un poco más a menudo?",
+    "fr": "Qu'est-ce qui te pousserait à rouler un peu plus souvent ?",
+    "it": "Che cosa ti spingerebbe a pedalare un po' più spesso?",
+    "pt": "O que te levaria a pedalar um pouco mais vezes?",
+    "pt_BR": "O que te faria pedalar um pouco mais vezes?"
+   }
+  },
+  {
+   "id": "cycling-064",
+   "lv": "beginner",
+   "i18n": {
+    "en": "Which nearby park or path would be great for a relaxed ride?",
+    "de": "Welcher Park oder Weg in der Nähe wäre ideal für eine entspannte Fahrt?",
+    "es": "¿Qué parque o camino cercano sería ideal para un paseo tranquilo?",
+    "fr": "Quel parc ou chemin près de chez toi serait idéal pour une balade tranquille ?",
+    "it": "Quale parco o percorso vicino sarebbe ideale per un giro rilassato?",
+    "pt": "Que parque ou caminho perto de ti seria ótimo para uma volta descontraída?",
+    "pt_BR": "Qual parque ou ciclovia perto de você seria ótimo pra um pedal tranquilo?"
+   }
+  },
+  {
+   "id": "cycling-065",
+   "lv": "beginner",
+   "i18n": {
+    "en": "How do you feel after your first longer ride?",
+    "de": "Wie fühlst du dich nach deiner ersten längeren Fahrt?",
+    "es": "¿Cómo te sientes después de tu primera salida más larga?",
+    "fr": "Comment te sens-tu après ta première sortie un peu longue ?",
+    "it": "Come ti senti dopo il tuo primo giro più lungo?",
+    "pt": "Como te sentes depois da tua primeira volta mais longa?",
+    "pt_BR": "Como você se sente depois do seu primeiro pedal mais longo?"
+   }
+  },
+  {
+   "id": "cycling-066",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How has your riding changed since you started cycling regularly?",
+    "de": "Wie hat sich dein Fahren verändert, seit du regelmäßig radelst?",
+    "es": "¿Cómo ha cambiado tu forma de pedalear desde que sales con regularidad?",
+    "fr": "Comment ta façon de rouler a-t-elle évolué depuis que tu pratiques régulièrement ?",
+    "it": "Com'è cambiato il tuo modo di pedalare da quando esci regolarmente?",
+    "pt": "Como mudou a tua forma de pedalar desde que andas regularmente?",
+    "pt_BR": "Como seu pedal mudou desde que você começou a andar com frequência?"
+   }
+  },
+  {
+   "id": "cycling-067",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What does your favourite training week look like?",
+    "de": "Wie sieht deine liebste Trainingswoche aus?",
+    "es": "¿Cómo es tu semana de entrenamiento favorita?",
+    "fr": "À quoi ressemble ta semaine d'entraînement préférée ?",
+    "it": "Com'è la tua settimana di allenamento preferita?",
+    "pt": "Como é a tua semana de treino preferida?",
+    "pt_BR": "Como é sua semana de treino favorita?"
+   }
+  },
+  {
+   "id": "cycling-068",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Do you enjoy intervals, or do you prefer steady endurance rides?",
+    "de": "Magst du Intervalle, oder fährst du lieber gleichmäßige Ausdauertouren?",
+    "es": "¿Te gustan los intervalos o prefieres salidas de resistencia constantes?",
+    "fr": "Tu aimes les fractionnés ou tu préfères les sorties d'endurance régulières ?",
+    "it": "Ti piacciono le ripetute o preferisci uscite di resistenza costanti?",
+    "pt": "Gostas de intervalos ou preferes voltas de resistência constantes?",
+    "pt_BR": "Você curte tiros ou prefere pedais de resistência constantes?"
+   }
+  },
+  {
+   "id": "cycling-069",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you fuel yourself on rides longer than two hours?",
+    "de": "Wie versorgst du dich auf Touren über zwei Stunden mit Energie?",
+    "es": "¿Cómo te alimentas en salidas de más de dos horas?",
+    "fr": "Comment t'alimentes-tu lors de sorties de plus de deux heures ?",
+    "it": "Come ti alimenti nei giri che durano più di due ore?",
+    "pt": "Como te alimentas em voltas com mais de duas horas?",
+    "pt_BR": "Como você se alimenta em pedais de mais de duas horas?"
+   }
+  },
+  {
+   "id": "cycling-070",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which maintenance job have you learned to do yourself?",
+    "de": "Welche Wartungsarbeit hast du gelernt, selbst zu erledigen?",
+    "es": "¿Qué tarea de mantenimiento has aprendido a hacer tú mismo?",
+    "fr": "Quel entretien as-tu appris à faire toi-même ?",
+    "it": "Quale lavoro di manutenzione hai imparato a fare da solo?",
+    "pt": "Que tarefa de manutenção aprendeste a fazer tu mesmo?",
+    "pt_BR": "Que manutenção você aprendeu a fazer sozinho?"
+   }
+  },
+  {
+   "id": "cycling-071",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your favourite climb, and how do you pace it?",
+    "de": "Welcher ist dein Lieblingsanstieg, und wie teilst du ihn dir ein?",
+    "es": "¿Cuál es tu subida favorita y cómo la dosificas?",
+    "fr": "Quelle est ta montée préférée, et comment la gères-tu ?",
+    "it": "Qual è la tua salita preferita e come la gestisci?",
+    "pt": "Qual é a tua subida preferida e como geres o ritmo?",
+    "pt_BR": "Qual é sua subida favorita e como você controla o ritmo nela?"
+   }
+  },
+  {
+   "id": "cycling-072",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you feel about riding in a paceline with others?",
+    "de": "Wie geht es dir damit, im Windschatten einer Gruppe zu fahren?",
+    "es": "¿Qué tal te sientes rodando en grupo a rueda de otros?",
+    "fr": "Comment te sens-tu quand tu roules en file indienne dans un groupe ?",
+    "it": "Come ti trovi a pedalare in fila con altri ciclisti?",
+    "pt": "Como te sentes a pedalar em fila com outros ciclistas?",
+    "pt_BR": "Como você se sente pedalando em fila com outros ciclistas?"
+   }
+  },
+  {
+   "id": "cycling-073",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you tried gravel or mountain biking? What did you enjoy?",
+    "de": "Hast du Gravel oder Mountainbiken ausprobiert? Was hat dir gefallen?",
+    "es": "¿Has probado el gravel o la bici de montaña? ¿Qué te gustó?",
+    "fr": "As-tu essayé le gravel ou le VTT ? Qu'est-ce qui t'a plu ?",
+    "it": "Hai provato il gravel o la mountain bike? Cosa ti è piaciuto?",
+    "pt": "Já experimentaste gravel ou BTT? Do que gostaste?",
+    "pt_BR": "Você já testou gravel ou mountain bike? Do que gostou?"
+   }
+  },
+  {
+   "id": "cycling-074",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which upgrade made the biggest difference to your bike?",
+    "de": "Welches Upgrade hat bei deinem Rad den größten Unterschied gemacht?",
+    "es": "¿Qué mejora ha marcado más la diferencia en tu bici?",
+    "fr": "Quelle amélioration a fait la plus grande différence sur ton vélo ?",
+    "it": "Quale aggiornamento ha fatto la differenza più grande sulla tua bici?",
+    "pt": "Que melhoria fez mais diferença na tua bicicleta?",
+    "pt_BR": "Qual upgrade fez mais diferença na sua bike?"
+   }
+  },
+  {
+   "id": "cycling-075",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Would you like to ride a sportive or gran fondo? Which one?",
+    "de": "Würdest du gern ein Jedermannrennen oder einen Gran Fondo fahren? Welchen?",
+    "es": "¿Te gustaría hacer una marcha cicloturista o una gran fondo? ¿Cuál?",
+    "fr": "Aimerais-tu faire une cyclosportive ou une gran fondo ? Laquelle ?",
+    "it": "Ti piacerebbe fare una granfondo? Quale?",
+    "pt": "Gostavas de fazer uma prova de cicloturismo ou um gran fondo? Qual?",
+    "pt_BR": "Você gostaria de fazer um gran fondo? Qual?"
+   }
+  },
+  {
+   "id": "cycling-076",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you stay motivated to ride indoors in bad weather?",
+    "de": "Wie motivierst du dich bei schlechtem Wetter zum Indoor-Training?",
+    "es": "¿Cómo te mantienes motivado para pedalear en casa cuando hace mal tiempo?",
+    "fr": "Comment restes-tu motivé pour rouler en intérieur quand il fait mauvais ?",
+    "it": "Come resti motivato a pedalare al chiuso quando il tempo è brutto?",
+    "pt": "Como te manténs motivado para pedalar em casa quando está mau tempo?",
+    "pt_BR": "Como você se mantém motivado pra pedalar em casa quando o tempo está ruim?"
+   }
+  },
+  {
+   "id": "cycling-077",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What would you pack for an overnight bike adventure?",
+    "de": "Was würdest du für ein Rad-Abenteuer mit Übernachtung einpacken?",
+    "es": "¿Qué llevarías para una aventura en bici con una noche fuera?",
+    "fr": "Qu'emporterais-tu pour une aventure à vélo d'une nuit ?",
+    "it": "Che cosa porteresti per un'avventura in bici con una notte fuori?",
+    "pt": "O que levavas para uma aventura de bicicleta com uma noite fora?",
+    "pt_BR": "O que você levaria pra uma aventura de bike com pernoite?"
+   }
+  },
+  {
+   "id": "cycling-078",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which famous cycling route would you love to ride one day?",
+    "de": "Welche berühmte Radroute würdest du eines Tages gern fahren?",
+    "es": "¿Qué ruta ciclista famosa te encantaría recorrer algún día?",
+    "fr": "Quel itinéraire cycliste célèbre aimerais-tu parcourir un jour ?",
+    "it": "Quale percorso ciclistico famoso ti piacerebbe fare un giorno?",
+    "pt": "Que rota de ciclismo famosa gostavas de fazer um dia?",
+    "pt_BR": "Qual rota famosa de ciclismo você adoraria fazer um dia?"
+   }
+  },
+  {
+   "id": "cycling-079",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you choose between speed and enjoying the scenery?",
+    "de": "Wie entscheidest du dich zwischen Tempo und dem Genuss der Landschaft?",
+    "es": "¿Cómo eliges entre la velocidad y disfrutar del paisaje?",
+    "fr": "Comment choisis-tu entre la vitesse et le plaisir du paysage ?",
+    "it": "Come scegli tra la velocità e il piacere del paesaggio?",
+    "pt": "Como escolhes entre a velocidade e aproveitar a paisagem?",
+    "pt_BR": "Como você escolhe entre velocidade e curtir a paisagem?"
+   }
+  },
+  {
+   "id": "cycling-080",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What have you learned from riding in different weather?",
+    "de": "Was hast du vom Fahren bei unterschiedlichem Wetter gelernt?",
+    "es": "¿Qué has aprendido pedaleando con distintos tiempos?",
+    "fr": "Qu'as-tu appris en roulant par différents temps ?",
+    "it": "Che cosa hai imparato pedalando con climi diversi?",
+    "pt": "O que aprendeste a pedalar com tempo diferente?",
+    "pt_BR": "O que você aprendeu pedalando em climas diferentes?"
+   }
+  },
+  {
+   "id": "cycling-081",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What does your bike fit feel like now compared to when you started?",
+    "de": "Wie fühlt sich deine Sitzposition heute im Vergleich zum Anfang an?",
+    "es": "¿Cómo sientes tu posición en la bici ahora en comparación con el principio?",
+    "fr": "Comment te sens-tu sur ton vélo aujourd'hui par rapport à tes débuts ?",
+    "it": "Come ti senti in sella adesso rispetto a quando hai iniziato?",
+    "pt": "Como sentes a tua posição na bicicleta agora em comparação com o início?",
+    "pt_BR": "Como você sente sua posição na bike hoje comparado ao começo?"
+   }
+  },
+  {
+   "id": "cycling-082",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Which cycling discipline would you like to try next?",
+    "de": "Welche Radsportdisziplin möchtest du als Nächstes ausprobieren?",
+    "es": "¿Qué disciplina ciclista te gustaría probar ahora?",
+    "fr": "Quelle discipline cycliste aimerais-tu essayer ensuite ?",
+    "it": "Quale disciplina ciclistica ti piacerebbe provare adesso?",
+    "pt": "Que modalidade de ciclismo gostavas de experimentar a seguir?",
+    "pt_BR": "Qual modalidade de ciclismo você gostaria de testar agora?"
+   }
+  },
+  {
+   "id": "cycling-083",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "How do you recover after a hard ride?",
+    "de": "Wie erholst du dich nach einer harten Ausfahrt?",
+    "es": "¿Cómo te recuperas después de una salida dura?",
+    "fr": "Comment récupères-tu après une sortie difficile ?",
+    "it": "Come recuperi dopo un'uscita impegnativa?",
+    "pt": "Como recuperas depois de uma volta dura?",
+    "pt_BR": "Como você se recupera depois de um pedal puxado?"
+   }
+  },
+  {
+   "id": "cycling-084",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "What is your favourite descent, and what makes it fun?",
+    "de": "Welche Abfahrt magst du am liebsten, und was macht sie so schön?",
+    "es": "¿Cuál es tu bajada favorita y qué la hace divertida?",
+    "fr": "Quelle est ta descente préférée, et qu'est-ce qui la rend amusante ?",
+    "it": "Qual è la tua discesa preferita e cosa la rende divertente?",
+    "pt": "Qual é a tua descida preferida e o que a torna divertida?",
+    "pt_BR": "Qual é sua descida favorita e o que a deixa divertida?"
+   }
+  },
+  {
+   "id": "cycling-085",
+   "lv": "intermediate",
+   "i18n": {
+    "en": "Have you joined a cycling club? What do you like about it?",
+    "de": "Bist du in einem Radverein? Was gefällt dir daran?",
+    "es": "¿Te has unido a algún club ciclista? ¿Qué te gusta de él?",
+    "fr": "As-tu rejoint un club de vélo ? Qu'est-ce qui te plaît ?",
+    "it": "Ti sei iscritto a un club ciclistico? Cosa ti piace?",
+    "pt": "Já entraste num clube de ciclismo? Do que gostas nele?",
+    "pt_BR": "Você entrou em algum clube de ciclismo? Do que você gosta nele?"
+   }
+  },
+  {
+   "id": "cycling-086",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What is your biggest cycling achievement so far?",
+    "de": "Was ist bisher deine größte Leistung auf dem Rad?",
+    "es": "¿Cuál es tu mayor logro en bici hasta ahora?",
+    "fr": "Quelle est ta plus grande réussite à vélo jusqu'ici ?",
+    "it": "Qual è il tuo più grande traguardo in bici finora?",
+    "pt": "Qual é a tua maior conquista no ciclismo até agora?",
+    "pt_BR": "Qual é sua maior conquista na bike até agora?"
+   }
+  },
+  {
+   "id": "cycling-087",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you plan a season of events and rest?",
+    "de": "Wie planst du eine Saison mit Events und Pausen?",
+    "es": "¿Cómo planificas una temporada de eventos y descanso?",
+    "fr": "Comment planifies-tu une saison d'événements et de repos ?",
+    "it": "Come pianifichi una stagione di eventi e riposo?",
+    "pt": "Como planeias uma época de provas e descanso?",
+    "pt_BR": "Como você planeja uma temporada de eventos e descanso?"
+   }
+  },
+  {
+   "id": "cycling-088",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Do you train with power, heart rate or feel? Why?",
+    "de": "Trainierst du nach Watt, Puls oder Gefühl? Warum?",
+    "es": "¿Entrenas con potencia, frecuencia cardíaca o sensaciones? ¿Por qué?",
+    "fr": "Tu t'entraînes à la puissance, au cardio ou aux sensations ? Pourquoi ?",
+    "it": "Ti alleni con la potenza, la frequenza cardiaca o le sensazioni? Perché?",
+    "pt": "Treinas com potência, frequência cardíaca ou sensações? Porquê?",
+    "pt_BR": "Você treina por potência, frequência cardíaca ou sensação? Por quê?"
+   }
+  },
+  {
+   "id": "cycling-089",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which legendary climb is on your bucket list?",
+    "de": "Welcher legendäre Anstieg steht auf deiner Wunschliste?",
+    "es": "¿Qué subida legendaria está en tu lista de deseos?",
+    "fr": "Quelle montée mythique figure sur ta liste de rêves ?",
+    "it": "Quale salita leggendaria è nella tua lista dei desideri?",
+    "pt": "Que subida lendária está na tua lista de sonhos?",
+    "pt_BR": "Qual subida lendária está na sua lista de sonhos?"
+   }
+  },
+  {
+   "id": "cycling-090",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How would you prepare for a 200 km ride or longer?",
+    "de": "Wie würdest du dich auf eine Tour von 200 km oder mehr vorbereiten?",
+    "es": "¿Cómo te prepararías para una salida de 200 km o más?",
+    "fr": "Comment te préparerais-tu pour une sortie de 200 km ou plus ?",
+    "it": "Come ti prepareresti per un giro di 200 km o più?",
+    "pt": "Como te preparavas para uma volta de 200 km ou mais?",
+    "pt_BR": "Como você se prepararia pra um pedal de 200 km ou mais?"
+   }
+  },
+  {
+   "id": "cycling-091",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What do you enjoy about racing, or why do you prefer not to race?",
+    "de": "Was gefällt dir am Rennenfahren, oder warum fährst du lieber keine Rennen?",
+    "es": "¿Qué te gusta de competir o por qué prefieres no hacerlo?",
+    "fr": "Qu'aimes-tu dans la compétition, ou pourquoi préfères-tu ne pas courir ?",
+    "it": "Che cosa ti piace delle gare, o perché preferisci non gareggiare?",
+    "pt": "O que gostas nas corridas, ou porque preferes não competir?",
+    "pt_BR": "O que você curte em competir, ou por que prefere não competir?"
+   }
+  },
+  {
+   "id": "cycling-092",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you handle mental tough moments on a long ride?",
+    "de": "Wie gehst du mit mentalen Tiefs auf einer langen Tour um?",
+    "es": "¿Cómo gestionas los momentos mentalmente duros en una salida larga?",
+    "fr": "Comment gères-tu les moments difficiles mentalement lors d'une longue sortie ?",
+    "it": "Come gestisci i momenti mentalmente difficili in un lungo giro?",
+    "pt": "Como lidas com os momentos mentalmente difíceis numa volta longa?",
+    "pt_BR": "Como você lida com os momentos mentalmente difíceis num pedal longo?"
+   }
+  },
+  {
+   "id": "cycling-093",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which repair or maintenance skill are you proudest of?",
+    "de": "Auf welche Reparatur- oder Wartungsfähigkeit bist du am stolzesten?",
+    "es": "¿De qué habilidad de reparación o mantenimiento estás más orgulloso?",
+    "fr": "De quelle compétence en réparation ou entretien es-tu le plus fier ?",
+    "it": "Di quale abilità di riparazione o manutenzione sei più orgoglioso?",
+    "pt": "De que habilidade de reparação ou manutenção tens mais orgulho?",
+    "pt_BR": "De qual habilidade de conserto ou manutenção você mais se orgulha?"
+   }
+  },
+  {
+   "id": "cycling-094",
+   "lv": "advanced",
+   "i18n": {
+    "en": "If you planned a cycling expedition, where would it go?",
+    "de": "Wenn du eine Radexpedition planen würdest, wohin würde sie führen?",
+    "es": "Si planificaras una expedición en bici, ¿adónde irías?",
+    "fr": "Si tu planifiais une expédition à vélo, où irait-elle ?",
+    "it": "Se pianificassi una spedizione in bici, dove andresti?",
+    "pt": "Se planeasses uma expedição de bicicleta, para onde irias?",
+    "pt_BR": "Se você planejasse uma expedição de bike, pra onde iria?"
+   }
+  },
+  {
+   "id": "cycling-095",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How do you help newer riders feel welcome in a group?",
+    "de": "Wie hilfst du neuen Fahrern, sich in einer Gruppe willkommen zu fühlen?",
+    "es": "¿Cómo ayudas a los ciclistas nuevos a sentirse bienvenidos en un grupo?",
+    "fr": "Comment aides-tu les nouveaux cyclistes à se sentir bienvenus dans un groupe ?",
+    "it": "Come aiuti i ciclisti nuovi a sentirsi benvenuti in un gruppo?",
+    "pt": "Como ajudas os ciclistas novos a sentirem-se bem-vindos num grupo?",
+    "pt_BR": "Como você ajuda ciclistas novos a se sentirem bem-vindos num grupo?"
+   }
+  },
+  {
+   "id": "cycling-096",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What does your ideal bike setup look like after all your experience?",
+    "de": "Wie sieht nach all deiner Erfahrung dein ideales Rad-Setup aus?",
+    "es": "¿Cómo es tu configuración de bici ideal después de toda tu experiencia?",
+    "fr": "À quoi ressemble ton vélo idéal après toute ton expérience ?",
+    "it": "Com'è la tua configurazione ideale della bici dopo tutta la tua esperienza?",
+    "pt": "Como é a tua configuração de bicicleta ideal depois de toda a tua experiência?",
+    "pt_BR": "Como é sua configuração ideal de bike depois de toda a sua experiência?"
+   }
+  },
+  {
+   "id": "cycling-097",
+   "lv": "advanced",
+   "i18n": {
+    "en": "How has cycling changed the way you travel?",
+    "de": "Wie hat das Radfahren deine Art zu reisen verändert?",
+    "es": "¿Cómo ha cambiado el ciclismo tu forma de viajar?",
+    "fr": "Comment le vélo a-t-il changé ta façon de voyager ?",
+    "it": "Come ha cambiato la bici il tuo modo di viaggiare?",
+    "pt": "Como mudou o ciclismo a tua forma de viajar?",
+    "pt_BR": "Como a bike mudou seu jeito de viajar?"
+   }
+  },
+  {
+   "id": "cycling-098",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Which professional race would you love to watch from the roadside?",
+    "de": "Welches Profirennen würdest du gern am Straßenrand verfolgen?",
+    "es": "¿Qué carrera profesional te encantaría ver desde la cuneta?",
+    "fr": "Quelle course professionnelle aimerais-tu voir au bord de la route ?",
+    "it": "Quale gara professionistica ti piacerebbe vedere a bordo strada?",
+    "pt": "Que corrida profissional gostavas de ver na berma da estrada?",
+    "pt_BR": "Qual corrida profissional você adoraria assistir da beira da estrada?"
+   }
+  },
+  {
+   "id": "cycling-099",
+   "lv": "advanced",
+   "i18n": {
+    "en": "What advice would you give someone buying their first road bike?",
+    "de": "Welchen Rat würdest du jemandem geben, der sein erstes Rennrad kauft?",
+    "es": "¿Qué consejo darías a alguien que compra su primera bici de carretera?",
+    "fr": "Quel conseil donnerais-tu à quelqu'un qui achète son premier vélo de route ?",
+    "it": "Che consiglio daresti a chi compra la sua prima bici da corsa?",
+    "pt": "Que conselho darias a alguém que vai comprar a primeira bicicleta de estrada?",
+    "pt_BR": "Que conselho você daria pra quem vai comprar a primeira speed?"
+   }
+  },
+  {
+   "id": "cycling-100",
+   "lv": "advanced",
+   "i18n": {
+    "en": "Where do you see your cycling in five years?",
+    "de": "Wo siehst du dich als Radfahrer in fünf Jahren?",
+    "es": "¿Dónde te ves en el ciclismo dentro de cinco años?",
+    "fr": "Où te vois-tu à vélo dans cinq ans ?",
+    "it": "Dove ti vedi con la bici tra cinque anni?",
+    "pt": "Onde te vês no ciclismo daqui a cinco anos?",
+    "pt_BR": "Onde você se vê no ciclismo daqui a cinco anos?"
+   }
+  }
+ ]
+}

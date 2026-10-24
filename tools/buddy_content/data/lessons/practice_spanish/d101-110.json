@@ -1,0 +1,1125 @@
+{
+ "topic": "practice_spanish",
+ "lessons": [
+  {
+   "d": 101,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Imperfect vs preterite",
+     "g": "Combine background and events in the past.",
+     "p": [
+      "Imperfect = the background or scene: llovía, hacía frío, estaba cansado, había mucha gente.",
+      "Preterite = the event that happens: salí, sonó el teléfono, llegó Ana.",
+      "Together: Llovía cuando salí de casa. Mientras cocinaba, sonó el teléfono."
+     ],
+     "q": "What were you doing yesterday when something unexpected happened?",
+     "c": "Write three sentences with one imperfect background and one preterite event each."
+    },
+    "de": {
+     "t": "Imperfecto oder indefinido?",
+     "g": "Du verbindest Hintergrund und Ereignisse in der Vergangenheit.",
+     "p": [
+      "Imperfecto = Hintergrund, Szene: llovía, hacía frío, estaba cansado, había mucha gente.",
+      "Indefinido = das Ereignis, das passiert: salí, sonó el teléfono, llegó Ana.",
+      "Zusammen: Llovía cuando salí de casa. Mientras cocinaba, sonó el teléfono."
+     ],
+     "q": "Was hast du gestern gerade gemacht, als etwas Unerwartetes passiert ist?",
+     "c": "Schreib drei Sätze mit je einem Hintergrund im imperfecto und einem Ereignis im indefinido."
+    },
+    "es": {
+     "t": "Imperfecto o indefinido",
+     "g": "Combina el fondo de la historia con los hechos que ocurren.",
+     "p": [
+      "El imperfecto describe el escenario: llovía, hacía frío, estaba cansado, había mucha gente.",
+      "El indefinido cuenta lo que pasa: salí, sonó el teléfono, llegó Ana.",
+      "Juntos: Llovía cuando salí de casa. Mientras cocinaba, sonó el teléfono. Es como una película."
+     ],
+     "q": "¿Qué estabas haciendo ayer cuando pasó algo inesperado?",
+     "c": "Escribe tres frases, cada una con un fondo en imperfecto y un hecho en indefinido."
+    },
+    "fr": {
+     "t": "Imparfait ou indefinido ?",
+     "g": "Combiner le décor et les événements au passé.",
+     "p": [
+      "L'imparfait = le décor : llovía, hacía frío, estaba cansado, había mucha gente.",
+      "L'indefinido = l'événement qui arrive : salí, sonó el teléfono, llegó Ana.",
+      "Ensemble : Llovía cuando salí de casa. Mientras cocinaba, sonó el teléfono."
+     ],
+     "q": "Que faisais-tu hier quand quelque chose d'inattendu est arrivé ?",
+     "c": "Écris trois phrases avec chacune un décor à l'imparfait et un événement à l'indefinido."
+    },
+    "it": {
+     "t": "Imperfetto o indefinido?",
+     "g": "Combini lo sfondo e gli eventi nel passato.",
+     "p": [
+      "L'imperfetto = lo sfondo: llovía, hacía frío, estaba cansado, había mucha gente.",
+      "L'indefinido = l'evento che succede: salí, sonó el teléfono, llegó Ana.",
+      "Insieme: Llovía cuando salí de casa. Mientras cocinaba, sonó el teléfono."
+     ],
+     "q": "Cosa stavi facendo ieri quando è successo qualcosa di inaspettato?",
+     "c": "Scrivi tre frasi, ognuna con uno sfondo all'imperfetto e un evento all'indefinido."
+    },
+    "pt": {
+     "t": "Imperfeito ou indefinido?",
+     "g": "Combina o cenário e os acontecimentos no passado.",
+     "p": [
+      "O imperfeito = o cenário: llovía, hacía frío, estaba cansado, había mucha gente.",
+      "O indefinido = o acontecimento: salí, sonó el teléfono, llegó Ana.",
+      "Juntos: Llovía cuando salí de casa. Mientras cocinaba, sonó el teléfono."
+     ],
+     "q": "O que estavas a fazer ontem quando aconteceu algo inesperado?",
+     "c": "Escreve três frases, cada uma com um cenário no imperfeito e um acontecimento no indefinido."
+    },
+    "pt_BR": {
+     "t": "Imperfeito ou indefinido?",
+     "g": "Combine o cenário e os acontecimentos no passado.",
+     "p": [
+      "O imperfeito = o cenário: llovía, hacía frío, estaba cansado, había mucha gente.",
+      "O indefinido = o acontecimento: salí, sonó el teléfono, llegó Ana.",
+      "Juntos: Llovía cuando salí de casa. Mientras cocinaba, sonó el teléfono."
+     ],
+     "q": "O que você estava fazendo ontem quando aconteceu algo inesperado?",
+     "c": "Escreva três frases, cada uma com um cenário no imperfeito e um acontecimento no indefinido."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "llovía cuando salí",
+      "ex": "Llovía cuando salí de casa."
+     },
+     {
+      "w": "mientras",
+      "ex": "Mientras cocinaba, sonó el teléfono."
+     },
+     {
+      "w": "estaba + gerundio",
+      "ex": "Estaba durmiendo cuando llegaste."
+     },
+     {
+      "w": "de repente",
+      "ex": "De repente, se fue la luz."
+     },
+     {
+      "w": "hacía sol",
+      "ex": "Hacía sol y fuimos a la playa."
+     },
+     {
+      "w": "sonar",
+      "ex": "El despertador sonó a las siete."
+     }
+    ],
+    "gram": "Imperfecto = fondo, descripción, acción en curso: llovía, estaba cansado. Indefinido = hecho puntual que ocurre: salí, sonó el teléfono."
+   }
+  },
+  {
+   "d": 102,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Telling a story in the past",
+     "g": "Tell a short story mixing the imperfect and the preterite.",
+     "p": [
+      "Set the scene with the imperfect: Era sábado, hacía sol y yo estaba en el parque.",
+      "Move the action with the preterite and linkers: entonces, de repente, luego, después.",
+      "Finish with al final or por suerte (luckily): Al final, todo salió bien."
+     ],
+     "q": "Tell me a funny or surprising thing that happened to you once.",
+     "c": "Write a ten-line story: scene, problem, what happened and the ending."
+    },
+    "de": {
+     "t": "Eine Geschichte erzählen",
+     "g": "Du erzählst eine kurze Geschichte mit imperfecto und indefinido.",
+     "p": [
+      "Szene mit imperfecto: Era sábado, hacía sol y yo estaba en el parque.",
+      "Handlung mit indefinido und Verbindern: entonces, de repente, luego, después.",
+      "Schluss mit al final oder por suerte (zum Glück): Al final, todo salió bien."
+     ],
+     "q": "Erzähl mir etwas Lustiges oder Überraschendes, das dir einmal passiert ist.",
+     "c": "Schreib eine Geschichte in zehn Zeilen: Szene, Problem, was passierte und das Ende."
+    },
+    "es": {
+     "t": "Contar una historia en pasado",
+     "g": "Cuenta una historia corta combinando imperfecto e indefinido.",
+     "p": [
+      "Presenta la escena en imperfecto: Era sábado, hacía sol y yo estaba en el parque.",
+      "Haz avanzar la acción en indefinido con conectores: entonces, de repente, luego, después.",
+      "Cierra con al final, por suerte o total que: Al final, todo salió bien."
+     ],
+     "q": "Cuéntame algo gracioso o sorprendente que te pasó una vez.",
+     "c": "Escribe una historia de diez líneas: escena, problema, qué pasó y final."
+    },
+    "fr": {
+     "t": "Raconter une histoire au passé",
+     "g": "Raconter une petite histoire en mêlant imparfait et indefinido.",
+     "p": [
+      "Pose le décor à l'imparfait : Era sábado, hacía sol y yo estaba en el parque.",
+      "Fais avancer l'action à l'indefinido avec : entonces, de repente, luego, después.",
+      "Termine avec al final ou por suerte (heureusement) : Al final, todo salió bien."
+     ],
+     "q": "Raconte-moi quelque chose de drôle ou de surprenant qui t'est arrivé.",
+     "c": "Écris une histoire de dix lignes : décor, problème, ce qui s'est passé et la fin."
+    },
+    "it": {
+     "t": "Raccontare una storia al passato",
+     "g": "Racconti una breve storia mescolando imperfetto e indefinido.",
+     "p": [
+      "La scena all'imperfetto: Era sábado, hacía sol y yo estaba en el parque.",
+      "L'azione all'indefinido con: entonces, de repente, luego, después.",
+      "Chiudi con al final o por suerte (per fortuna): Al final, todo salió bien."
+     ],
+     "q": "Raccontami una cosa divertente o sorprendente che ti è successa.",
+     "c": "Scrivi una storia di dieci righe: scena, problema, cosa è successo e finale."
+    },
+    "pt": {
+     "t": "Contar uma história no passado",
+     "g": "Conta uma pequena história misturando imperfeito e indefinido.",
+     "p": [
+      "Cria o cenário com o imperfeito: Era sábado, hacía sol y yo estaba en el parque.",
+      "Faz avançar a ação com o indefinido e conectores: entonces, de repente, luego, después.",
+      "Termina com al final ou por suerte (felizmente): Al final, todo salió bien."
+     ],
+     "q": "Conta-me algo engraçado ou surpreendente que te aconteceu uma vez.",
+     "c": "Escreve uma história de dez linhas: cenário, problema, o que aconteceu e o final."
+    },
+    "pt_BR": {
+     "t": "Contando uma história no passado",
+     "g": "Conte uma pequena história misturando imperfeito e indefinido.",
+     "p": [
+      "Monte o cenário com o imperfeito: Era sábado, hacía sol y yo estaba en el parque.",
+      "Avance a ação com o indefinido e conectores: entonces, de repente, luego, después.",
+      "Termine com al final ou por suerte (por sorte): Al final, todo salió bien."
+     ],
+     "q": "Me conte algo engraçado ou surpreendente que aconteceu com você.",
+     "c": "Escreva uma história de dez linhas: cenário, problema, o que aconteceu e o final."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "un día",
+      "ex": "Un día, mientras paseaba, vi algo raro."
+     },
+     {
+      "w": "entonces",
+      "ex": "Entonces decidí entrar en la tienda."
+     },
+     {
+      "w": "de repente",
+      "ex": "De repente, alguien gritó mi nombre."
+     },
+     {
+      "w": "luego / después",
+      "ex": "Luego fuimos a cenar."
+     },
+     {
+      "w": "al final",
+      "ex": "Al final, todo salió bien."
+     },
+     {
+      "w": "por suerte",
+      "ex": "Por suerte, encontré mi cartera."
+     }
+    ],
+    "gram": "Narrar: imperfecto para el contexto (era sábado, hacía sol), indefinido para la acción. Conectores: entonces, de repente, al final."
+   }
+  },
+  {
+   "d": 103,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Desde, desde hace, hace... que",
+     "g": "Talk about how long something has been going on.",
+     "p": [
+      "Desde + a point in time: vivo aquí desde 2020, desde enero, desde el lunes.",
+      "Desde hace + a period: estudio español desde hace tres meses. Hace tres meses que estudio.",
+      "Spanish uses the present here, not a past tense! Ask ¿Desde cuándo...? or ¿Cuánto tiempo hace que...?"
+     ],
+     "q": "How long have you lived where you live now, and since when have you studied Spanish?",
+     "c": "Write four sentences about your life with desde, desde hace and hace... que."
+    },
+    "de": {
+     "t": "Desde, desde hace, hace... que",
+     "g": "Du sagst, wie lange etwas schon andauert.",
+     "p": [
+      "Desde + Zeitpunkt: vivo aquí desde 2020, desde enero, desde el lunes.",
+      "Desde hace + Zeitraum: estudio español desde hace tres meses. Hace tres meses que estudio.",
+      "Wie im Deutschen steht hier das Präsens! Frag ¿Desde cuándo...? oder ¿Cuánto tiempo hace que...?"
+     ],
+     "q": "Seit wann wohnst du, wo du jetzt wohnst, und seit wann lernst du Spanisch?",
+     "c": "Schreib vier Sätze über dein Leben mit desde, desde hace und hace... que."
+    },
+    "es": {
+     "t": "Desde, desde hace, hace... que",
+     "g": "Habla de cuánto tiempo dura algo hasta hoy.",
+     "p": [
+      "Desde + momento concreto: vivo aquí desde 2020, desde enero, desde el lunes.",
+      "Desde hace + periodo: estudio español desde hace tres meses. Equivale a hace tres meses que estudio.",
+      "Se usa el presente. Otra opción muy natural: llevar + tiempo: llevo tres meses estudiando."
+     ],
+     "q": "¿Cuánto tiempo hace que vives donde vives y desde cuándo estudias español?",
+     "c": "Escribe cuatro frases sobre tu vida con desde, desde hace y hace... que."
+    },
+    "fr": {
+     "t": "Desde, desde hace, hace... que",
+     "g": "Dire depuis combien de temps quelque chose dure.",
+     "p": [
+      "Desde + moment précis : vivo aquí desde 2020, desde enero, desde el lunes.",
+      "Desde hace + durée : estudio español desde hace tres meses. Hace tres meses que estudio.",
+      "Comme en français, on utilise le présent ! Demande ¿Desde cuándo...? ou ¿Cuánto tiempo hace que...?"
+     ],
+     "q": "Depuis combien de temps habites-tu là, et depuis quand apprends-tu l'espagnol ?",
+     "c": "Écris quatre phrases sur ta vie avec desde, desde hace et hace... que."
+    },
+    "it": {
+     "t": "Desde, desde hace, hace... que",
+     "g": "Dici da quanto tempo dura qualcosa.",
+     "p": [
+      "Desde + momento preciso: vivo aquí desde 2020, desde enero, desde el lunes.",
+      "Desde hace + periodo: estudio español desde hace tres meses. Hace tres meses que estudio.",
+      "Come in italiano si usa il presente! Chiedi ¿Desde cuándo...? o ¿Cuánto tiempo hace que...?"
+     ],
+     "q": "Da quanto tempo vivi dove abiti e da quando studi spagnolo?",
+     "c": "Scrivi quattro frasi sulla tua vita con desde, desde hace e hace... que."
+    },
+    "pt": {
+     "t": "Desde, desde hace, hace... que",
+     "g": "Diz há quanto tempo algo dura.",
+     "p": [
+      "Desde + momento: vivo aquí desde 2020, desde enero, desde el lunes.",
+      "Desde hace + período: estudio español desde hace tres meses. Hace tres meses que estudio.",
+      "Usa-se o presente, como em há três meses que estudo. Pergunta ¿Desde cuándo...?"
+     ],
+     "q": "Há quanto tempo moras onde moras e desde quando estudas espanhol?",
+     "c": "Escreve quatro frases sobre a tua vida com desde, desde hace e hace... que."
+    },
+    "pt_BR": {
+     "t": "Desde, desde hace, hace... que",
+     "g": "Diga há quanto tempo algo acontece.",
+     "p": [
+      "Desde + momento: vivo aquí desde 2020, desde enero, desde el lunes.",
+      "Desde hace + período: estudio español desde hace tres meses. Hace tres meses que estudio.",
+      "Usa-se o presente, como em faz três meses que estudo. Pergunte ¿Desde cuándo...?"
+     ],
+     "q": "Há quanto tempo você mora onde mora e desde quando estuda espanhol?",
+     "c": "Escreva quatro frases sobre sua vida com desde, desde hace e hace... que."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "desde",
+      "ex": "Vivo en Sevilla desde 2020."
+     },
+     {
+      "w": "desde hace",
+      "ex": "Estudio español desde hace tres meses."
+     },
+     {
+      "w": "hace... que",
+      "ex": "Hace dos años que trabajo aquí."
+     },
+     {
+      "w": "¿Desde cuándo...?",
+      "ex": "¿Desde cuándo tocas la guitarra?"
+     },
+     {
+      "w": "¿Cuánto tiempo hace que...?",
+      "ex": "¿Cuánto tiempo hace que vives aquí?"
+     },
+     {
+      "w": "llevar + tiempo",
+      "ex": "Llevo un año en Madrid."
+     }
+    ],
+    "gram": "Duración con presente: desde + fecha (desde 2020), desde hace + tiempo (desde hace un año), hace + tiempo + que (hace un año que...)."
+   }
+  },
+  {
+   "d": 104,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Travel experiences",
+     "g": "Share places you have visited and things you have tried.",
+     "p": [
+      "Ask about experiences with the perfecto: ¿Has estado alguna vez en Perú? (Have you ever been...?)",
+      "Answer: sí, he estado dos veces / no, nunca he estado. Nunca he probado el mate.",
+      "Give details in the indefinido when you say when: estuve en Lima en 2019 y me encantó."
+     ],
+     "q": "Have you ever been to a Spanish-speaking country? What did you try there?",
+     "c": "Write five ¿Has... alguna vez? questions and answer them about your own life."
+    },
+    "de": {
+     "t": "Reiseerfahrungen",
+     "g": "Du erzählst von Orten, an denen du warst, und Dingen, die du probiert hast.",
+     "p": [
+      "Erfahrungen mit perfecto: ¿Has estado alguna vez en Perú? (Warst du schon mal...?)",
+      "Antwort: sí, he estado dos veces / no, nunca he estado. Nunca he probado el mate.",
+      "Mit Zeitangabe ins indefinido: estuve en Lima en 2019 y me encantó."
+     ],
+     "q": "Warst du schon einmal in einem spanischsprachigen Land? Was hast du dort probiert?",
+     "c": "Schreib fünf Fragen mit ¿Has... alguna vez? und beantworte sie für dich."
+    },
+    "es": {
+     "t": "Experiencias de viaje",
+     "g": "Comparte lugares que conoces y cosas que has probado.",
+     "p": [
+      "Las experiencias van en perfecto: ¿Has estado alguna vez en Perú? ¿Has probado el ceviche?",
+      "Respuestas: sí, he estado dos veces; no, nunca he estado. También: todavía no, pero me gustaría.",
+      "Si dices cuándo, pasa al indefinido: estuve en Lima en 2019 y me encantó."
+     ],
+     "q": "¿Has estado alguna vez en otro país hispanohablante? ¿Qué probaste allí?",
+     "c": "Escribe cinco preguntas con ¿Has... alguna vez? y contéstalas sobre tu vida."
+    },
+    "fr": {
+     "t": "Expériences de voyage",
+     "g": "Parler des lieux que tu as visités et des choses que tu as goûtées.",
+     "p": [
+      "Les expériences au perfecto : ¿Has estado alguna vez en Perú? (Es-tu déjà allé... ?)",
+      "Réponds : sí, he estado dos veces / no, nunca he estado. Nunca he probado el mate.",
+      "Avec une date, passe à l'indefinido : estuve en Lima en 2019 y me encantó."
+     ],
+     "q": "Es-tu déjà allé dans un pays hispanophone ? Qu'y as-tu goûté ?",
+     "c": "Écris cinq questions avec ¿Has... alguna vez? et réponds-y pour toi."
+    },
+    "it": {
+     "t": "Esperienze di viaggio",
+     "g": "Racconti i posti che hai visitato e le cose che hai provato.",
+     "p": [
+      "Le esperienze con il perfecto: ¿Has estado alguna vez en Perú? (Sei mai stato...?)",
+      "Rispondi: sí, he estado dos veces / no, nunca he estado. Nunca he probado el mate.",
+      "Con una data passa all'indefinido: estuve en Lima en 2019 y me encantó."
+     ],
+     "q": "Sei mai stato in un paese ispanofono? Cosa hai assaggiato lì?",
+     "c": "Scrivi cinque domande con ¿Has... alguna vez? e rispondi per te."
+    },
+    "pt": {
+     "t": "Experiências de viagem",
+     "g": "Partilha lugares que visitaste e coisas que provaste.",
+     "p": [
+      "Experiências com o perfecto: ¿Has estado alguna vez en Perú? (Já estiveste no Peru?)",
+      "Responde: sí, he estado dos veces / no, nunca he estado. Nunca he probado el mate.",
+      "Com data, passa ao indefinido: estuve en Lima en 2019 y me encantó."
+     ],
+     "q": "Já estiveste num país de língua espanhola? O que provaste lá?",
+     "c": "Escreve cinco perguntas com ¿Has... alguna vez? e responde sobre a tua vida."
+    },
+    "pt_BR": {
+     "t": "Experiências de viagem",
+     "g": "Compartilhe lugares que você visitou e coisas que provou.",
+     "p": [
+      "Experiências com o perfecto: ¿Has estado alguna vez en Perú? (Você já esteve no Peru?)",
+      "Responda: sí, he estado dos veces / no, nunca he estado. Nunca he probado el mate.",
+      "Com data, passe para o indefinido: estuve en Lima en 2019 y me encantó."
+     ],
+     "q": "Você já esteve em um país de língua espanhola? O que provou lá?",
+     "c": "Escreva cinco perguntas com ¿Has... alguna vez? e responda sobre sua vida."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "¿Has estado en...?",
+      "ex": "¿Has estado alguna vez en México?"
+     },
+     {
+      "w": "alguna vez",
+      "ex": "¿Has probado alguna vez el ceviche?"
+     },
+     {
+      "w": "nunca he...",
+      "ex": "Nunca he visto la nieve."
+     },
+     {
+      "w": "probar",
+      "ex": "He probado el mate en Uruguay."
+     },
+     {
+      "w": "viajar",
+      "ex": "He viajado mucho por Sudamérica."
+     },
+     {
+      "w": "conocer un lugar",
+      "ex": "Me encantaría conocer Cartagena."
+     }
+    ],
+    "gram": "Experiencias con perfecto: ¿Has estado alguna vez en...? Nunca he + participio. Con fecha concreta, indefinido: estuve en 2019."
+   }
+  },
+  {
+   "d": 105,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "The future tense: hablaré",
+     "g": "Use the simple future for predictions and promises.",
+     "p": [
+      "Add the endings to the whole infinitive: hablaré, hablarás, hablará, hablaremos, hablaréis, hablarán.",
+      "The same endings work for -ar, -er and -ir: comeré, viviré. All forms except nosotros have accents.",
+      "Use it for predictions (mañana lloverá) and promises (te llamaré, lo haré mañana)."
+     ],
+     "q": "How do you imagine your life in ten years? Make three predictions.",
+     "c": "Write five promises to yourself for next month using the future tense."
+    },
+    "de": {
+     "t": "Das Futur: hablaré",
+     "g": "Du benutzt das einfache Futur für Vorhersagen und Versprechen.",
+     "p": [
+      "Endungen an den ganzen Infinitiv: hablaré, hablarás, hablará, hablaremos, hablaréis, hablarán.",
+      "Dieselben Endungen für -ar, -er, -ir: comeré, viviré. Alle außer nosotros haben Akzent.",
+      "Für Vorhersagen (mañana lloverá) und Versprechen (te llamaré, lo haré mañana)."
+     ],
+     "q": "Wie stellst du dir dein Leben in zehn Jahren vor? Mach drei Vorhersagen.",
+     "c": "Schreib fünf Versprechen an dich für nächsten Monat im Futur."
+    },
+    "es": {
+     "t": "El futuro simple: hablaré",
+     "g": "Usa el futuro simple para predicciones y promesas.",
+     "p": [
+      "Se añaden las terminaciones al infinitivo: hablaré, hablarás, hablará, hablaremos, hablaréis, hablarán.",
+      "Son iguales para -ar, -er e -ir: comeré, viviré. Todas llevan tilde menos nosotros.",
+      "Sirve para predicciones (mañana lloverá), promesas (te llamaré) y suposiciones: serán las diez."
+     ],
+     "q": "¿Cómo imaginas tu vida dentro de diez años? Haz tres predicciones.",
+     "c": "Escribe cinco promesas para el próximo mes usando el futuro."
+    },
+    "fr": {
+     "t": "Le futur : hablaré",
+     "g": "Utiliser le futur simple pour les prédictions et les promesses.",
+     "p": [
+      "On ajoute les terminaisons à l'infinitif : hablaré, hablarás, hablará, hablaremos, hablaréis, hablarán.",
+      "Mêmes terminaisons pour -ar, -er et -ir : comeré, viviré. Comme en français, sur l'infinitif !",
+      "Pour les prédictions (mañana lloverá) et les promesses (te llamaré, lo haré mañana)."
+     ],
+     "q": "Comment imagines-tu ta vie dans dix ans ? Fais trois prédictions.",
+     "c": "Écris cinq promesses pour le mois prochain au futur."
+    },
+    "it": {
+     "t": "Il futuro: hablaré",
+     "g": "Usi il futuro semplice per previsioni e promesse.",
+     "p": [
+      "Si aggiungono le desinenze all'infinito: hablaré, hablarás, hablará, hablaremos, hablaréis, hablarán.",
+      "Stesse desinenze per -ar, -er e -ir: comeré, viviré. Tutte con accento tranne nosotros.",
+      "Per previsioni (mañana lloverá) e promesse (te llamaré, lo haré mañana)."
+     ],
+     "q": "Come immagini la tua vita tra dieci anni? Fai tre previsioni.",
+     "c": "Scrivi cinque promesse per il prossimo mese al futuro."
+    },
+    "pt": {
+     "t": "O futuro: hablaré",
+     "g": "Usa o futuro simples para previsões e promessas.",
+     "p": [
+      "Junta as terminações ao infinitivo: hablaré, hablarás, hablará, hablaremos, hablaréis, hablarán.",
+      "Iguais para -ar, -er e -ir: comeré, viviré. Como em português: falarei, comerei.",
+      "Para previsões (mañana lloverá) e promessas (te llamaré, lo haré mañana)."
+     ],
+     "q": "Como imaginas a tua vida daqui a dez anos? Faz três previsões.",
+     "c": "Escreve cinco promessas para o próximo mês usando o futuro."
+    },
+    "pt_BR": {
+     "t": "O futuro: hablaré",
+     "g": "Use o futuro simples para previsões e promessas.",
+     "p": [
+      "Junte as terminações ao infinitivo: hablaré, hablarás, hablará, hablaremos, hablaréis, hablarán.",
+      "Iguais para -ar, -er e -ir: comeré, viviré. Como em português: falarei, comerei.",
+      "Para previsões (mañana lloverá) e promessas (te llamaré, lo haré mañana)."
+     ],
+     "q": "Como você imagina sua vida daqui a dez anos? Faça três previsões.",
+     "c": "Escreva cinco promessas para o próximo mês usando o futuro."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "hablaré",
+      "ex": "Algún día hablaré español perfectamente."
+     },
+     {
+      "w": "comeremos",
+      "ex": "Mañana comeremos en casa de mis padres."
+     },
+     {
+      "w": "vivirás",
+      "ex": "¿Vivirás en el extranjero?"
+     },
+     {
+      "w": "lloverá",
+      "ex": "Mañana lloverá en el norte."
+     },
+     {
+      "w": "te llamaré",
+      "ex": "Te llamaré esta noche, te lo prometo."
+     },
+     {
+      "w": "el próximo año",
+      "ex": "El próximo año viajaré a Chile."
+     }
+    ],
+    "gram": "Futuro simple: infinitivo + -é, -ás, -á, -emos, -éis, -án (igual para -ar, -er, -ir): hablaré, comerás, vivirá. Predicciones y promesas."
+   }
+  },
+  {
+   "d": 106,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Irregular futures",
+     "g": "Learn the irregular stems in the future tense.",
+     "p": [
+      "Some verbs add a d: tener > tendré, poner > pondré, salir > saldré, venir > vendré.",
+      "Some lose a vowel: poder > podré, saber > sabré, querer > querré, haber > habrá.",
+      "Two are special: hacer > haré, decir > diré. The endings stay the same as yesterday."
+     ],
+     "q": "What will you do next weekend? Use tendré, haré or saldré.",
+     "c": "Write a plan for next summer with six irregular future verbs."
+    },
+    "de": {
+     "t": "Unregelmäßiges Futur",
+     "g": "Du lernst die unregelmäßigen Stämme im Futur.",
+     "p": [
+      "Manche bekommen ein d: tener > tendré, poner > pondré, salir > saldré, venir > vendré.",
+      "Manche verlieren einen Vokal: poder > podré, saber > sabré, querer > querré, haber > habrá.",
+      "Zwei sind besonders: hacer > haré, decir > diré. Die Endungen bleiben wie gestern."
+     ],
+     "q": "Was wirst du nächstes Wochenende machen? Benutze tendré, haré oder saldré.",
+     "c": "Schreib einen Plan für den nächsten Sommer mit sechs unregelmäßigen Futurformen."
+    },
+    "es": {
+     "t": "Futuros irregulares",
+     "g": "Aprende las raíces irregulares del futuro.",
+     "p": [
+      "Algunos añaden d: tener > tendré, poner > pondré, salir > saldré, venir > vendré, valer > valdré.",
+      "Otros pierden la vocal: poder > podré, saber > sabré, querer > querré, haber > habrá.",
+      "Dos son especiales: hacer > haré y decir > diré. Las terminaciones no cambian."
+     ],
+     "q": "¿Qué harás el próximo fin de semana? Usa tendré, haré o saldré.",
+     "c": "Escribe un plan para el próximo verano con seis futuros irregulares."
+    },
+    "fr": {
+     "t": "Futurs irréguliers",
+     "g": "Apprendre les radicaux irréguliers du futur.",
+     "p": [
+      "Certains ajoutent un d : tener > tendré, poner > pondré, salir > saldré, venir > vendré.",
+      "D'autres perdent une voyelle : poder > podré, saber > sabré, querer > querré, haber > habrá.",
+      "Deux sont spéciaux : hacer > haré, decir > diré. Les terminaisons ne changent pas."
+     ],
+     "q": "Que feras-tu le week-end prochain ? Utilise tendré, haré ou saldré.",
+     "c": "Écris un plan pour l'été prochain avec six verbes irréguliers au futur."
+    },
+    "it": {
+     "t": "Futuri irregolari",
+     "g": "Impari le radici irregolari del futuro.",
+     "p": [
+      "Alcuni aggiungono una d: tener > tendré, poner > pondré, salir > saldré, venir > vendré.",
+      "Altri perdono una vocale: poder > podré, saber > sabré, querer > querré, haber > habrá.",
+      "Due sono speciali: hacer > haré, decir > diré. Le desinenze restano uguali."
+     ],
+     "q": "Cosa farai il prossimo fine settimana? Usa tendré, haré o saldré.",
+     "c": "Scrivi un piano per la prossima estate con sei futuri irregolari."
+    },
+    "pt": {
+     "t": "Futuros irregulares",
+     "g": "Aprende as raízes irregulares do futuro.",
+     "p": [
+      "Alguns ganham um d: tener > tendré, poner > pondré, salir > saldré, venir > vendré.",
+      "Outros perdem uma vogal: poder > podré, saber > sabré, querer > querré, haber > habrá.",
+      "Dois são especiais, como em português: hacer > haré (farei), decir > diré (direi)."
+     ],
+     "q": "O que vais fazer no próximo fim de semana? Usa tendré, haré ou saldré.",
+     "c": "Escreve um plano para o próximo verão com seis futuros irregulares."
+    },
+    "pt_BR": {
+     "t": "Futuros irregulares",
+     "g": "Aprenda as raízes irregulares do futuro.",
+     "p": [
+      "Alguns ganham um d: tener > tendré, poner > pondré, salir > saldré, venir > vendré.",
+      "Outros perdem uma vogal: poder > podré, saber > sabré, querer > querré, haber > habrá.",
+      "Dois são especiais, como em português: hacer > haré (farei), decir > diré (direi)."
+     ],
+     "q": "O que você vai fazer no próximo fim de semana? Use tendré, haré ou saldré.",
+     "c": "Escreva um plano para o próximo verão com seis futuros irregulares."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "tendré",
+      "ex": "Tendré más tiempo en verano."
+     },
+     {
+      "w": "haré",
+      "ex": "Mañana haré la compra."
+     },
+     {
+      "w": "podré",
+      "ex": "No podré ir a la fiesta."
+     },
+     {
+      "w": "saldré",
+      "ex": "Saldré de casa a las ocho."
+     },
+     {
+      "w": "diré",
+      "ex": "Le diré a Juan que venga."
+     },
+     {
+      "w": "vendrá / pondrá",
+      "ex": "Ana vendrá y pondrá la mesa."
+     }
+    ],
+    "gram": "Futuros irregulares: tener > tendré, poner > pondré, salir > saldré, venir > vendré, poder > podré, hacer > haré, decir > diré."
+   }
+  },
+  {
+   "d": 107,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Plans: ir a vs future",
+     "g": "Choose between ir a and the simple future.",
+     "p": [
+      "Ir a + infinitive for decided plans and the near future: esta tarde voy a estudiar.",
+      "Simple future for predictions, promises and the distant future: algún día viviré en España.",
+      "In everyday speech ir a is more common; the future sounds more formal or less certain."
+     ],
+     "q": "What are you going to do this evening, and what will you do some day?",
+     "c": "Write three plans with voy a and three dreams with the future and algún día."
+    },
+    "de": {
+     "t": "Pläne: ir a oder Futur?",
+     "g": "Du wählst zwischen ir a und dem einfachen Futur.",
+     "p": [
+      "Ir a + Infinitiv für feste Pläne und nahe Zukunft: esta tarde voy a estudiar.",
+      "Futur für Vorhersagen, Versprechen und ferne Zukunft: algún día viviré en España.",
+      "Im Alltag ist ir a häufiger; das Futur klingt formeller oder weniger sicher."
+     ],
+     "q": "Was machst du heute Abend, und was wirst du eines Tages machen?",
+     "c": "Schreib drei Pläne mit voy a und drei Träume im Futur mit algún día."
+    },
+    "es": {
+     "t": "Planes: ir a o futuro",
+     "g": "Elige entre ir a + infinitivo y el futuro simple.",
+     "p": [
+      "Ir a + infinitivo para planes decididos y futuro cercano: esta tarde voy a estudiar.",
+      "Futuro simple para predicciones, promesas y futuro lejano o incierto: algún día viviré en España.",
+      "En la conversación se usa mucho más ir a; el futuro aparece en promesas, previsiones y textos."
+     ],
+     "q": "¿Qué vas a hacer esta tarde y qué harás algún día?",
+     "c": "Escribe tres planes con voy a y tres sueños con futuro y algún día."
+    },
+    "fr": {
+     "t": "Projets : ir a ou futur ?",
+     "g": "Choisir entre ir a et le futur simple.",
+     "p": [
+      "Ir a + infinitif pour les projets décidés et le futur proche : esta tarde voy a estudiar.",
+      "Futur simple pour prédictions, promesses et futur lointain : algún día viviré en España.",
+      "À l'oral, ir a est plus courant, comme le futur proche français."
+     ],
+     "q": "Que vas-tu faire ce soir, et que feras-tu un jour ?",
+     "c": "Écris trois projets avec voy a et trois rêves au futur avec algún día."
+    },
+    "it": {
+     "t": "Piani: ir a o futuro?",
+     "g": "Scegli tra ir a e il futuro semplice.",
+     "p": [
+      "Ir a + infinito per piani decisi e futuro vicino: esta tarde voy a estudiar.",
+      "Futuro semplice per previsioni, promesse e futuro lontano: algún día viviré en España.",
+      "Nel parlato ir a è più comune; il futuro suona più formale o meno sicuro."
+     ],
+     "q": "Cosa farai stasera e cosa farai un giorno?",
+     "c": "Scrivi tre piani con voy a e tre sogni al futuro con algún día."
+    },
+    "pt": {
+     "t": "Planos: ir a ou futuro?",
+     "g": "Escolhe entre ir a e o futuro simples.",
+     "p": [
+      "Ir a + infinitivo para planos decididos e futuro próximo: esta tarde voy a estudiar.",
+      "Futuro simples para previsões, promessas e futuro distante: algún día viviré en España.",
+      "Tal como em português (vou estudar), no dia a dia usa-se mais ir a."
+     ],
+     "q": "O que vais fazer esta tarde e o que farás um dia?",
+     "c": "Escreve três planos com voy a e três sonhos no futuro com algún día."
+    },
+    "pt_BR": {
+     "t": "Planos: ir a ou futuro?",
+     "g": "Escolha entre ir a e o futuro simples.",
+     "p": [
+      "Ir a + infinitivo para planos decididos e futuro próximo: esta tarde voy a estudiar.",
+      "Futuro simples para previsões, promessas e futuro distante: algún día viviré en España.",
+      "Como em português (vou estudar), no dia a dia se usa mais ir a."
+     ],
+     "q": "O que você vai fazer hoje à tarde e o que fará algum dia?",
+     "c": "Escreva três planos com voy a e três sonhos no futuro com algún día."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "voy a viajar",
+      "ex": "Este verano voy a viajar a Colombia."
+     },
+     {
+      "w": "viajaré",
+      "ex": "Algún día viajaré por todo el mundo."
+     },
+     {
+      "w": "esta tarde",
+      "ex": "Esta tarde voy a estudiar."
+     },
+     {
+      "w": "algún día",
+      "ex": "Algún día tendré una casa en la playa."
+     },
+     {
+      "w": "seguramente",
+      "ex": "Seguramente lloverá el domingo."
+     },
+     {
+      "w": "pensar + infinitivo",
+      "ex": "Pienso cambiar de trabajo."
+     }
+    ],
+    "gram": "Ir a + infinitivo = plan decidido o futuro cercano: voy a cenar fuera. Futuro = predicción, promesa o futuro lejano: algún día viviré allí."
+   }
+  },
+  {
+   "d": 108,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Indirect object pronouns",
+     "g": "Say to whom or for whom you do something.",
+     "p": [
+      "Pronouns: me, te, le, nos, os, les = to me, to you, to him/her/you formal, to us, to you all, to them.",
+      "They go before the conjugated verb: te mando un mensaje, nos trae la carta.",
+      "Spanish often doubles them: le doy el libro a María. You already know them from me gusta!"
+     ],
+     "q": "What do you usually give your friends for their birthday? Use le and les.",
+     "c": "Write five sentences about gifts and messages with me, te, le, nos and les."
+    },
+    "de": {
+     "t": "Indirekte Objektpronomen",
+     "g": "Du sagst, wem oder für wen du etwas tust.",
+     "p": [
+      "Pronomen: me, te, le, nos, os, les = mir, dir, ihm/ihr/Ihnen, uns, euch, ihnen.",
+      "Sie stehen vor dem konjugierten Verb: te mando un mensaje, nos trae la carta.",
+      "Oft doppelt: le doy el libro a María. Du kennst sie schon von me gusta!"
+     ],
+     "q": "Was schenkst du deinen Freunden normalerweise zum Geburtstag? Benutze le und les.",
+     "c": "Schreib fünf Sätze über Geschenke und Nachrichten mit me, te, le, nos und les."
+    },
+    "es": {
+     "t": "Pronombres de objeto indirecto",
+     "g": "Di a quién o para quién haces algo.",
+     "p": [
+      "Pronombres: me, te, le, nos, os, les. Responden a la pregunta ¿a quién?",
+      "Van delante del verbo conjugado: te mando un mensaje, nos trae la carta.",
+      "Es normal duplicar el objeto: le doy el libro a María. Son los mismos de me gusta o le encanta."
+     ],
+     "q": "¿Qué les regalas normalmente a tus amigos por su cumpleaños?",
+     "c": "Escribe cinco frases sobre regalos y mensajes con me, te, le, nos y les."
+    },
+    "fr": {
+     "t": "Pronoms compléments indirects",
+     "g": "Dire à qui ou pour qui tu fais quelque chose.",
+     "p": [
+      "Pronoms : me, te, le, nos, os, les = me, te, lui, nous, vous, leur.",
+      "Ils se placent avant le verbe conjugué : te mando un mensaje, nos trae la carta.",
+      "L'espagnol les double souvent : le doy el libro a María. Tu les connais déjà avec me gusta !"
+     ],
+     "q": "Que offres-tu en général à tes amis pour leur anniversaire ? Utilise le et les.",
+     "c": "Écris cinq phrases sur des cadeaux et des messages avec me, te, le, nos et les."
+    },
+    "it": {
+     "t": "Pronomi indiretti",
+     "g": "Dici a chi o per chi fai qualcosa.",
+     "p": [
+      "Pronomi: me, te, le, nos, os, les = mi, ti, gli/le, ci, vi, gli.",
+      "Vanno prima del verbo coniugato: te mando un mensaje, nos trae la carta.",
+      "Lo spagnolo li raddoppia spesso: le doy el libro a María. Li conosci già da me gusta!"
+     ],
+     "q": "Cosa regali di solito ai tuoi amici per il compleanno? Usa le e les.",
+     "c": "Scrivi cinque frasi su regali e messaggi con me, te, le, nos e les."
+    },
+    "pt": {
+     "t": "Pronomes de objeto indireto",
+     "g": "Diz a quem ou para quem fazes algo.",
+     "p": [
+      "Pronomes: me, te, le, nos, os, les = me, te, lhe, nos, vos, lhes.",
+      "Vêm antes do verbo conjugado: te mando un mensaje, nos trae la carta.",
+      "O espanhol duplica muitas vezes: le doy el libro a María. Já os conheces de me gusta!"
+     ],
+     "q": "O que costumas oferecer aos teus amigos no aniversário? Usa le e les.",
+     "c": "Escreve cinco frases sobre presentes e mensagens com me, te, le, nos e les."
+    },
+    "pt_BR": {
+     "t": "Pronomes de objeto indireto",
+     "g": "Diga a quem ou para quem você faz algo.",
+     "p": [
+      "Pronomes: me, te, le, nos, os, les = me, te, lhe, nos, vos, lhes.",
+      "Vêm antes do verbo conjugado: te mando un mensaje, nos trae la carta.",
+      "O espanhol duplica com frequência: le doy el libro a María. Você já conhece de me gusta!"
+     ],
+     "q": "O que você costuma dar de presente aos seus amigos no aniversário? Use le e les.",
+     "c": "Escreva cinco frases sobre presentes e mensagens com me, te, le, nos e les."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "me",
+      "ex": "Mi madre me escribe cada semana."
+     },
+     {
+      "w": "te",
+      "ex": "Te mando las fotos esta noche."
+     },
+     {
+      "w": "le",
+      "ex": "Le doy el libro a María."
+     },
+     {
+      "w": "nos",
+      "ex": "El camarero nos trae la carta."
+     },
+     {
+      "w": "les",
+      "ex": "Les explico el plan a mis amigos."
+     },
+     {
+      "w": "regalar",
+      "ex": "¿Qué le regalas a tu padre?"
+     }
+    ],
+    "gram": "Objeto indirecto: me, te, le, nos, os, les, delante del verbo conjugado: le doy el libro. Se suele duplicar: le doy el libro a María."
+   }
+  },
+  {
+   "d": 109,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Double pronouns: se lo",
+     "g": "Combine two pronouns and learn the le-to-se rule.",
+     "p": [
+      "Order: indirect, then direct, then verb: te lo doy (I give it to you), me la mandas.",
+      "Le or les before lo, la, los, las becomes se: se lo digo, never le lo digo.",
+      "Se can mean to him, her, you or them; add a él, a ella or a usted to be clear."
+     ],
+     "q": "If a friend asks for your umbrella, how do you answer? Use te lo.",
+     "c": "Rewrite five sentences replacing both objects with pronouns: Doy el libro a Ana > Se lo doy."
+    },
+    "de": {
+     "t": "Doppelte Pronomen: se lo",
+     "g": "Du kombinierst zwei Pronomen und lernst die Regel le wird se.",
+     "p": [
+      "Reihenfolge: indirekt, direkt, Verb: te lo doy (ich gebe es dir), me la mandas.",
+      "Le oder les vor lo, la, los, las wird zu se: se lo digo, nie le lo digo.",
+      "Se kann ihm, ihr, Ihnen oder ihnen heißen; zur Klarheit a él, a ella, a usted."
+     ],
+     "q": "Eine Freundin fragt nach deinem Schirm. Was antwortest du? Benutze te lo.",
+     "c": "Schreib fünf Sätze mit beiden Pronomen um: Doy el libro a Ana > Se lo doy."
+    },
+    "es": {
+     "t": "Pronombres dobles: se lo",
+     "g": "Combina dos pronombres y aplica la regla de le a se.",
+     "p": [
+      "Orden: indirecto, directo y verbo: te lo doy, me la mandas. Primero la persona, luego la cosa.",
+      "Le o les delante de lo, la, los, las pasa a se: se lo digo, nunca le lo digo.",
+      "Se puede ser a él, a ella, a usted o a ellos; para aclarar se añade: se lo doy a ella."
+     ],
+     "q": "Si un amigo te pide el paraguas, ¿cómo respondes? Usa te lo.",
+     "c": "Reescribe cinco frases cambiando los dos objetos por pronombres: Doy el libro a Ana > Se lo doy."
+    },
+    "fr": {
+     "t": "Doubles pronoms : se lo",
+     "g": "Combiner deux pronoms et apprendre la règle le devient se.",
+     "p": [
+      "Ordre : indirect, direct, verbe : te lo doy (je te le donne), me la mandas.",
+      "Le ou les devant lo, la, los, las devient se : se lo digo, jamais le lo digo.",
+      "Se peut vouloir dire lui, leur ou vous ; ajoute a él, a ella ou a usted pour préciser."
+     ],
+     "q": "Un ami te demande ton parapluie. Que réponds-tu ? Utilise te lo.",
+     "c": "Réécris cinq phrases en remplaçant les deux objets : Doy el libro a Ana > Se lo doy."
+    },
+    "it": {
+     "t": "Pronomi doppi: se lo",
+     "g": "Combini due pronomi e impari la regola le diventa se.",
+     "p": [
+      "Ordine: indiretto, diretto, verbo: te lo doy (te lo do), me la mandas.",
+      "Le o les davanti a lo, la, los, las diventa se: se lo digo (glielo dico), mai le lo digo.",
+      "Se può voler dire a lui, a lei, a Lei o a loro; aggiungi a él, a ella per chiarire."
+     ],
+     "q": "Un amico ti chiede l'ombrello. Cosa rispondi? Usa te lo.",
+     "c": "Riscrivi cinque frasi sostituendo entrambi gli oggetti: Doy el libro a Ana > Se lo doy."
+    },
+    "pt": {
+     "t": "Pronomes duplos: se lo",
+     "g": "Combina dois pronomes e aprende a regra do le que passa a se.",
+     "p": [
+      "Ordem: indireto, direto, verbo: te lo doy (dou-to), me la mandas.",
+      "Le ou les antes de lo, la, los, las passa a se: se lo digo, nunca le lo digo.",
+      "Se pode ser a ele, a ela, a si ou a eles; junta a él, a ella para ficar claro."
+     ],
+     "q": "Um amigo pede-te o guarda-chuva. O que respondes? Usa te lo.",
+     "c": "Reescreve cinco frases trocando os dois objetos por pronomes: Doy el libro a Ana > Se lo doy."
+    },
+    "pt_BR": {
+     "t": "Pronomes duplos: se lo",
+     "g": "Combine dois pronomes e aprenda a regra do le que vira se.",
+     "p": [
+      "Ordem: indireto, direto, verbo: te lo doy (te dou isso), me la mandas.",
+      "Le ou les antes de lo, la, los, las vira se: se lo digo, nunca le lo digo.",
+      "Se pode ser para ele, ela, você ou eles; acrescente a él, a ella para deixar claro."
+     ],
+     "q": "Um amigo pede seu guarda-chuva emprestado. O que você responde? Use te lo.",
+     "c": "Reescreva cinco frases trocando os dois objetos por pronomes: Doy el libro a Ana > Se lo doy."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "te lo doy",
+      "ex": "¿Quieres mi libro? Te lo doy."
+     },
+     {
+      "w": "me lo dices",
+      "ex": "¿Me lo dices otra vez?"
+     },
+     {
+      "w": "se lo digo",
+      "ex": "Se lo digo a Pedro mañana."
+     },
+     {
+      "w": "se la mando",
+      "ex": "¿La foto? Se la mando a mi madre."
+     },
+     {
+      "w": "nos los trae",
+      "ex": "El camarero nos los trae ahora."
+     },
+     {
+      "w": "se las regalo",
+      "ex": "Las flores se las regalo a Ana."
+     }
+    ],
+    "gram": "Orden: indirecto + directo + verbo: te lo doy. Le/les + lo/la/los/las se convierte en se: se lo digo (no le lo digo)."
+   }
+  },
+  {
+   "d": 110,
+   "lv": "A2",
+   "i18n": {
+    "en": {
+     "t": "Review: the past and the future",
+     "g": "Mix all your past and future tenses in a relaxed chat.",
+     "p": [
+      "Indefinido for finished events (ayer fui), imperfect for habits and scenes (antes iba, llovía).",
+      "Perfecto for today and experiences (hoy he trabajado, nunca he estado en Cuba).",
+      "Future for predictions and promises (dentro de un año hablaré mejor), ir a for plans."
+     ],
+     "q": "Tell me about your life: one thing from childhood, one from last year and one plan.",
+     "c": "Write a short text with six verbs: two in the past, one perfecto, one imperfect and two future."
+    },
+    "de": {
+     "t": "Wiederholung: Vergangenheit und Zukunft",
+     "g": "Du mischst alle Zeiten in einem lockeren Gespräch.",
+     "p": [
+      "Indefinido für abgeschlossene Ereignisse (ayer fui), imperfecto für Gewohnheiten (antes iba, llovía).",
+      "Perfecto für heute und Erfahrungen (hoy he trabajado, nunca he estado en Cuba).",
+      "Futur für Vorhersagen und Versprechen (dentro de un año hablaré mejor), ir a für Pläne."
+     ],
+     "q": "Erzähl von dir: etwas aus der Kindheit, etwas vom letzten Jahr und einen Plan.",
+     "c": "Schreib einen kurzen Text mit sechs Verben in allen Zeiten, die du gelernt hast."
+    },
+    "es": {
+     "t": "Repaso: el pasado y el futuro",
+     "g": "Mezcla todos los tiempos de pasado y futuro en una charla relajada.",
+     "p": [
+      "Indefinido para hechos terminados (ayer fui) e imperfecto para hábitos y escenarios (antes iba, llovía).",
+      "Perfecto para hoy y experiencias (hoy he trabajado, nunca he estado en Cuba).",
+      "Futuro para predicciones y promesas (dentro de un año hablaré mejor) e ir a para planes."
+     ],
+     "q": "Háblame de tu vida: algo de tu infancia, algo del año pasado y un plan.",
+     "c": "Escribe un texto corto con seis verbos en los distintos tiempos que has aprendido."
+    },
+    "fr": {
+     "t": "Révision : le passé et le futur",
+     "g": "Mélanger tous les temps du passé et du futur dans une conversation détendue.",
+     "p": [
+      "Indefinido pour les faits finis (ayer fui), imparfait pour habitudes et décor (antes iba, llovía).",
+      "Perfecto pour aujourd'hui et les expériences (hoy he trabajado, nunca he estado en Cuba).",
+      "Futur pour prédictions et promesses (dentro de un año hablaré mejor), ir a pour les projets."
+     ],
+     "q": "Parle-moi de ta vie : un souvenir d'enfance, un fait de l'an dernier et un projet.",
+     "c": "Écris un petit texte avec six verbes dans les différents temps appris."
+    },
+    "it": {
+     "t": "Ripasso: passato e futuro",
+     "g": "Mescoli tutti i tempi passati e futuri in una chiacchierata rilassata.",
+     "p": [
+      "Indefinido per fatti conclusi (ayer fui), imperfetto per abitudini e sfondi (antes iba, llovía).",
+      "Perfecto per oggi e le esperienze (hoy he trabajado, nunca he estado en Cuba).",
+      "Futuro per previsioni e promesse (dentro de un año hablaré mejor), ir a per i piani."
+     ],
+     "q": "Parlami della tua vita: un ricordo d'infanzia, un fatto dell'anno scorso e un piano.",
+     "c": "Scrivi un breve testo con sei verbi nei diversi tempi che hai imparato."
+    },
+    "pt": {
+     "t": "Revisão: o passado e o futuro",
+     "g": "Mistura todos os tempos do passado e do futuro numa conversa descontraída.",
+     "p": [
+      "Indefinido para factos terminados (ayer fui), imperfeito para hábitos e cenários (antes iba, llovía).",
+      "Perfecto para hoje e experiências (hoy he trabajado, nunca he estado en Cuba).",
+      "Futuro para previsões e promessas (dentro de un año hablaré mejor), ir a para planos."
+     ],
+     "q": "Fala-me da tua vida: algo da infância, algo do ano passado e um plano.",
+     "c": "Escreve um texto curto com seis verbos nos diferentes tempos que aprendeste."
+    },
+    "pt_BR": {
+     "t": "Revisão: o passado e o futuro",
+     "g": "Misture todos os tempos do passado e do futuro numa conversa tranquila.",
+     "p": [
+      "Indefinido para fatos terminados (ayer fui), imperfeito para hábitos e cenários (antes iba, llovía).",
+      "Perfecto para hoje e experiências (hoy he trabajado, nunca he estado en Cuba).",
+      "Futuro para previsões e promessas (dentro de un año hablaré mejor), ir a para planos."
+     ],
+     "q": "Fale da sua vida: algo da infância, algo do ano passado e um plano.",
+     "c": "Escreva um texto curto com seis verbos nos diferentes tempos que você aprendeu."
+    }
+   },
+   "target": {
+    "vocab": [
+     {
+      "w": "el año pasado",
+      "ex": "El año pasado aprendí a nadar."
+     },
+     {
+      "w": "antes",
+      "ex": "Antes vivía en un piso pequeño."
+     },
+     {
+      "w": "alguna vez",
+      "ex": "¿Has viajado alguna vez sola?"
+     },
+     {
+      "w": "el año que viene",
+      "ex": "El año que viene estudiaré más."
+     },
+     {
+      "w": "la última vez",
+      "ex": "La última vez que fui a Madrid llovía."
+     },
+     {
+      "w": "dentro de",
+      "ex": "Dentro de un mes me mudaré."
+     }
+    ],
+    "gram": "Repaso: indefinido (hecho terminado), imperfecto (hábito, fondo), perfecto (experiencia, hoy), futuro (predicción) e ir a (plan)."
+   }
+  }
+ ]
+}
