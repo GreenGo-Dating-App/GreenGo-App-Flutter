@@ -25,7 +25,7 @@ import { AppError, handleError } from '../shared/utils';
 import { monitored } from '../shared/monitoring';
 import { aiConsentVersion, requireAiConsent } from '../shared/aiConsent';
 import { effectiveTier, EffectiveTier } from '../shared/effectiveTier';
-import { fifoDraw, refusal, REASON, restoreSlices, validRequestId, DrawnSlice } from '../coins/ledger';
+import { fifoDraw, refusal, REASON, validRequestId, DrawnSlice } from '../coins/ledger';
 import { loadConfig } from '../ai/router/config';
 import { eligibleChain, generate } from '../ai/router/router';
 import { fitContext } from '../ai/router/rules';
@@ -33,7 +33,7 @@ import { CapabilityRules } from '../ai/router/types';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { rawText } from '../shared/i18n';
 import {
-  AVATARS, BUDDY_AVATARS, BUDDIES, BUDDY_LIMIT, BUDDY_REQUESTS, BUDDY_USAGE, BuddyInputError, BuddySettings, COINS_PER_REPLY,
+  AVATARS, BUDDY_AVATARS, BUDDIES, BUDDY_LIMIT, BUDDY_REQUESTS, BUDDY_USAGE, BuddyInputError, BuddySettings, COINS_PER_REPLY, REPLIES_PER_COIN,
   FREE_REPLIES_PER_DAY, Language, MemoryFact, USER_MESSAGE_MAX, utcDay, validateSettings,
 } from './model';
 import { CRISIS_REPLY, FALLBACK_REPLY, isCrisis, isUnsafeReply } from './crisis';
@@ -120,9 +120,10 @@ async function requireBuddyProvider(consentVersion: number): Promise<void> {
 
 export async function buddyStatus(uid: string) {
   const tier = await tierOf(uid);
-  const [usage, count] = await Promise.all([
+  const [usage, count, root] = await Promise.all([
     db().collection(BUDDY_USAGE).doc(`${uid}_${utcDay()}`).get(),
     buddiesCol(uid).count().get(),
+    db().collection(BUDDIES).doc(uid).get(),
   ]);
   const freeLimit = FREE_REPLIES_PER_DAY[tier];
   const used = Number(usage.data()?.freeUsed) || 0;
@@ -133,6 +134,8 @@ export async function buddyStatus(uid: string) {
     freeRepliesPerDay: freeLimit,
     freeRepliesLeft: Math.max(0, freeLimit - used),
     coinsPerReply: COINS_PER_REPLY,
+    repliesPerCoin: REPLIES_PER_COIN,
+    replyCredits: Math.max(0, Math.floor(Number(root.data()?.replyCredits) || 0)),
   };
 }
 
@@ -238,17 +241,32 @@ export const forgetBuddyMemory = callable('forgetBuddyMemory', async (uid, data)
 
 // ------------------------------------------------------------------ messages
 
-interface ChargePlan { kind: 'free' | 'coin'; drawn: DrawnSlice[]; transactionId: string | null; freeLeft: number; balance: number | null }
+interface ChargePlan {
+  /** free = daily allowance; credit = a prepaid reply; coin = 1 coin debited for REPLIES_PER_COIN replies. */
+  kind: 'free' | 'credit' | 'coin';
+  drawn: DrawnSlice[];
+  transactionId: string | null;
+  freeLeft: number;
+  balance: number | null;
+  /** Prepaid replies left after this one. */
+  credits: number;
+}
 
-/** Rate limit + free allowance or 1-coin debit + idempotency claim, in ONE transaction. */
+/**
+ * Rate limit + free allowance, else a prepaid reply credit, else a 1-coin
+ * debit that buys REPLIES_PER_COIN replies (owner 2026-10-24: 0.2 coins per
+ * reply; coin balances stay whole numbers) + idempotency claim, in ONE
+ * transaction. Credits live on ai_buddies/{uid}.replyCredits (server-only).
+ */
 async function reserveCharge(uid: string, tier: EffectiveTier, buddyId: string, requestId: string): Promise<ChargePlan> {
   const nowMs = Date.now();
   const usageRef = db().collection(BUDDY_USAGE).doc(`${uid}_${utcDay(nowMs)}`);
   const reqRef = db().collection(BUDDY_REQUESTS).doc(`${uid}_${requestId}`);
   const balanceRef = db().collection('coinBalances').doc(uid);
+  const rootRef = db().collection(BUDDIES).doc(uid);
   const window = `rl_${Math.floor(nowMs / 600_000)}`;
   return db().runTransaction(async (tx) => {
-    const [usage, req, bal] = await Promise.all([tx.get(usageRef), tx.get(reqRef), tx.get(balanceRef)]);
+    const [usage, req, bal, root] = await Promise.all([tx.get(usageRef), tx.get(reqRef), tx.get(balanceRef), tx.get(rootRef)]);
     if (req.exists) throw new AppError('DUPLICATE_REQUEST', 'This message is already being answered.', 409, { reason: 'DUPLICATE_REQUEST' });
     const u = usage.data() ?? {};
     if ((Number(u[window]) || 0) >= RATE_LIMIT_10MIN) {
@@ -256,7 +274,8 @@ async function reserveCharge(uid: string, tier: EffectiveTier, buddyId: string, 
     }
     const freeLimit = FREE_REPLIES_PER_DAY[tier];
     const used = Number(u.freeUsed) || 0;
-    const plan: ChargePlan = { kind: 'free', drawn: [], transactionId: null, freeLeft: 0, balance: null };
+    const credits = Math.max(0, Math.floor(Number(root.data()?.replyCredits) || 0));
+    const plan: ChargePlan = { kind: 'free', drawn: [], transactionId: null, freeLeft: 0, balance: null, credits };
     const usageUpdate: Record<string, unknown> = {
       uid, day: utcDay(nowMs), [window]: (Number(u[window]) || 0) + 1, updatedAt: TS(),
       expireAt: admin.firestore.Timestamp.fromMillis(nowMs + 3 * 864e5),
@@ -264,60 +283,63 @@ async function reserveCharge(uid: string, tier: EffectiveTier, buddyId: string, 
     if (used < freeLimit) {
       usageUpdate.freeUsed = used + 1;
       plan.freeLeft = freeLimit - used - 1;
+    } else if (credits > 0) {
+      plan.kind = 'credit';
+      plan.credits = credits - 1;
+      tx.set(rootRef, { replyCredits: credits - 1, updatedAt: TS() }, { merge: true });
+      usageUpdate.paidReplies = (Number(u.paidReplies) || 0) + 1;
     } else {
       const b = bal.data() ?? {};
       const total = Number(b.totalCoins) || 0;
-      if (total < COINS_PER_REPLY) {
+      if (total < 1) {
         throw refusal('failed-precondition', REASON.insufficientCoins,
-          'You used today\'s free Buddy replies. Each reply now costs 1 coin.',
-          { required: COINS_PER_REPLY, available: Math.max(0, total), freeRepliesPerDay: freeLimit });
+          `You used today's free Buddy replies. More replies cost ${COINS_PER_REPLY} coins each (1 coin = ${REPLIES_PER_COIN} replies).`,
+          { required: 1, available: Math.max(0, total), freeRepliesPerDay: freeLimit, coinsPerReply: COINS_PER_REPLY, repliesPerCoin: REPLIES_PER_COIN });
       }
-      const { batches, drawn } = fifoDraw(b.coinBatches, COINS_PER_REPLY);
+      const { batches, drawn } = fifoDraw(b.coinBatches, 1);
       const txnRef = db().collection('coinTransactions').doc();
       tx.set(balanceRef, {
-        userId: uid, totalCoins: total - COINS_PER_REPLY,
-        spentCoins: (Number(b.spentCoins) || 0) + COINS_PER_REPLY, coinBatches: batches, lastUpdated: TS(),
+        userId: uid, totalCoins: total - 1,
+        spentCoins: (Number(b.spentCoins) || 0) + 1, coinBatches: batches, lastUpdated: TS(),
       }, { merge: true });
       tx.set(txnRef, {
-        userId: uid, type: 'debit', amount: COINS_PER_REPLY, balanceAfter: total - COINS_PER_REPLY,
+        userId: uid, type: 'debit', amount: 1, balanceAfter: total - 1,
         reason: 'featurePurchase', relatedId: buddyId, relatedUserId: null,
-        metadata: { feature: 'buddy_reply', requestId, source: 'sendBuddyMessage' }, createdAt: TS(),
+        metadata: { feature: 'buddy_replies', replies: REPLIES_PER_COIN, requestId, source: 'sendBuddyMessage' }, createdAt: TS(),
       });
-      usageUpdate.coinReplies = (Number(u.coinReplies) || 0) + 1;
-      Object.assign(plan, { kind: 'coin', drawn, transactionId: txnRef.id, balance: total - COINS_PER_REPLY });
+      // This reply uses one of the REPLIES_PER_COIN; the rest stay prepaid.
+      tx.set(rootRef, { uid, replyCredits: REPLIES_PER_COIN - 1, updatedAt: TS() }, { merge: true });
+      usageUpdate.paidReplies = (Number(u.paidReplies) || 0) + 1;
+      usageUpdate.coinsSpent = (Number(u.coinsSpent) || 0) + 1;
+      Object.assign(plan, { kind: 'coin', drawn, transactionId: txnRef.id, balance: total - 1, credits: REPLIES_PER_COIN - 1 });
     }
     tx.set(usageRef, usageUpdate, { merge: true });
     tx.create(reqRef, {
-      uid, buddyId, status: 'pending', charge: plan.kind, drawn: plan.drawn, transactionId: plan.transactionId,
+      uid, buddyId, status: 'pending', charge: plan.kind, transactionId: plan.transactionId,
       createdAt: TS(), expireAt: admin.firestore.Timestamp.fromMillis(nowMs + 7 * 864e5),
     });
     return plan;
   });
 }
 
-/** Gives back what reserveCharge took (model failure). */
+/**
+ * Gives back what reserveCharge took when the model fails: the daily free
+ * reply, or one prepaid reply credit (also when this reply had just bought a
+ * pack: the coin stays spent, the user keeps all REPLIES_PER_COIN replies).
+ */
 async function refundCharge(uid: string, requestId: string, plan: ChargePlan): Promise<void> {
   const reqRef = db().collection(BUDDY_REQUESTS).doc(`${uid}_${requestId}`);
   const usageRef = db().collection(BUDDY_USAGE).doc(`${uid}_${utcDay()}`);
-  const balanceRef = db().collection('coinBalances').doc(uid);
+  const rootRef = db().collection(BUDDIES).doc(uid);
   try {
     await db().runTransaction(async (tx) => {
-      const [req, bal] = await Promise.all([tx.get(reqRef), tx.get(balanceRef)]);
+      const req = await tx.get(reqRef);
       if (req.data()?.status !== 'pending') return;
       if (plan.kind === 'free') {
         tx.set(usageRef, { freeUsed: admin.firestore.FieldValue.increment(-1) }, { merge: true });
       } else {
-        const b = bal.data() ?? {};
-        const total = (Number(b.totalCoins) || 0) + COINS_PER_REPLY;
-        tx.set(balanceRef, {
-          totalCoins: total, spentCoins: Math.max(0, (Number(b.spentCoins) || 0) - COINS_PER_REPLY),
-          coinBatches: restoreSlices(b.coinBatches, plan.drawn), lastUpdated: TS(),
-        }, { merge: true });
-        tx.set(db().collection('coinTransactions').doc(), {
-          userId: uid, type: 'credit', amount: COINS_PER_REPLY, balanceAfter: total, reason: 'refund',
-          relatedId: plan.transactionId, relatedUserId: null,
-          metadata: { feature: 'buddy_reply', requestId, source: 'sendBuddyMessage', why: 'reply failed' }, createdAt: TS(),
-        });
+        tx.set(rootRef, { replyCredits: admin.firestore.FieldValue.increment(1), updatedAt: TS() }, { merge: true });
+        tx.set(usageRef, { paidReplies: admin.firestore.FieldValue.increment(-1) }, { merge: true });
       }
       // Free the request id so the app can retry the same message.
       tx.delete(reqRef);
@@ -398,6 +420,7 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
     charged: plan.kind,
     freeRepliesLeft: plan.freeLeft,
     ...(plan.balance !== null ? { coinBalance: plan.balance } : {}),
+    ...(plan.kind !== 'free' ? { replyCredits: plan.credits } : {}),
   };
   await storeExchange(uid, ref, snap.data(), text, reply, 'chat', plan.kind, requestId, r, now, result);
   return result;
@@ -405,7 +428,7 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
 
 /** Writes the user message + the Buddy reply and updates the Buddy (one batch). */
 async function storeExchange(uid: string, ref: admin.firestore.DocumentReference, d: any, userText: string, reply: string,
-  kind: 'chat' | 'safety', charged: 'free' | 'coin' | 'none', requestId: string, r: CapabilityRules, nowMs: number,
+  kind: 'chat' | 'safety', charged: 'free' | 'coin' | 'credit' | 'none', requestId: string, r: CapabilityRules, nowMs: number,
   result?: unknown) {
   const batch = db().batch();
   const tUser = admin.firestore.Timestamp.fromMillis(nowMs);

@@ -11,7 +11,7 @@ jest.mock('firebase-admin', () => {
 
 import { TOPICS, TOPIC_IDS, TOPIC_GROUPS } from '../topics';
 import {
-  AVATARS, BUDDY_LIMIT, BuddyInputError, BuddySettings, FREE_REPLIES_PER_DAY, LANGUAGES, validateSettings,
+  AVATARS, BUDDY_LIMIT, BuddyInputError, BuddySettings, COINS_PER_REPLY, FREE_REPLIES_PER_DAY, LANGUAGES, REPLIES_PER_COIN, validateSettings,
 } from '../model';
 import { CRISIS_REPLY, FALLBACK_REPLY, isCrisis, isUnsafeReply } from '../crisis';
 import { checkInPrompt, memoryPrompt, parseJsonObject, systemPrompt } from '../prompt';
@@ -56,6 +56,10 @@ describe('plan limits (owner rules 2026-10-23)', () => {
   });
   it('free replies per day: Free/Base 10, Silver 30, Gold 50, Platinum 100', () => {
     expect(FREE_REPLIES_PER_DAY).toMatchObject({ FREE: 10, SILVER: 30, GOLD: 50, PLATINUM: 100 });
+  });
+  it('a paid reply costs 0.2 coins: 1 coin buys 5 replies', () => {
+    expect(REPLIES_PER_COIN).toBe(5);
+    expect(COINS_PER_REPLY).toBeCloseTo(0.2);
   });
   it('replies are capped at 200 characters by default', () => {
     expect(DEFAULT_RULES.text_buddies.maxOutputChars).toBe(200);
