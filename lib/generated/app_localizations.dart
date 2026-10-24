@@ -48556,12 +48556,6 @@ abstract class AppLocalizations {
   /// **'Topic'**
   String get buddyMicroCategoryLabel;
 
-  /// Buddy builder: shown in the topic select box while no main category is chosen
-  ///
-  /// In en, this message translates to:
-  /// **'Choose a main category first'**
-  String get buddyMicroCategoryHint;
-
   /// Shown when the Buddy avatar pictures could not be loaded
   ///
   /// In en, this message translates to:
@@ -49606,17 +49600,17 @@ abstract class AppLocalizations {
   /// **'Translated into: {language} (fixed)'**
   String buddyTranslatedInto(String language);
 
-  /// Buddy chat settings sheet: toggle that colours matching chunks of a message and its translation
+  /// Buddy builder step 1: placeholder of the main category select (nothing preselected)
   ///
   /// In en, this message translates to:
-  /// **'Highlight matching words'**
-  String get buddyChatSettingHighlightMatches;
+  /// **'Choose a category'**
+  String get buddyChooseCategory;
 
-  /// Buddy chat settings sheet: description of the highlight matching words toggle
+  /// Buddy builder step 1: placeholder of the sub-category select (disabled until a category is chosen)
   ///
   /// In en, this message translates to:
-  /// **'Colour the same words in a message and its translation'**
-  String get buddyChatSettingHighlightMatchesDesc;
+  /// **'Choose a sub-category'**
+  String get buddyChooseSubcategory;
 }
 
 class _AppLocalizationsDelegate

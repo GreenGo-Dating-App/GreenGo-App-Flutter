@@ -41,17 +41,14 @@ Buddy fakeBuddy(
 BuddyMessage fakeMessage(String id, BuddyMessageRole role, String text, DateTime at,
         {BuddyMessageKind kind = BuddyMessageKind.chat,
         String? translation,
-        String? lang,
-        List<BuddySegment> segments = const []}) =>
+        String? lang}) =>
     BuddyMessage(
       id: id,
       role: role,
       text: text,
       createdAt: at,
       kind: kind,
-      translation: translation == null
-          ? null
-          : BuddyTranslation(text: translation, lang: lang, segments: segments),
+      translation: translation == null ? null : BuddyTranslation(text: translation, lang: lang),
     );
 
 const BuddyStatus kFreeStatus = BuddyStatus(
@@ -83,9 +80,6 @@ class FakeBuddiesRepository implements BuddiesRepository {
   /// Answers to sendMessage, in order: a BuddySendResult or an error to throw.
   final List<Object> sendAnswers = [];
   final List<Map<String, String>> sent = [];
-
-  /// The `align` flag of each sendMessage call (same order as [sent]).
-  final List<bool?> aligns = [];
   final List<BuddySettings> created = [];
   Object? createError;
   final List<Map<String, Object?>> updates = [];
@@ -138,8 +132,10 @@ class FakeBuddiesRepository implements BuddiesRepository {
   Future<void> deleteBuddy(String buddyId) async => deleted.add(buddyId);
 
   @override
-  Future<void> clearChat(String buddyId, {bool forgetMemory = false}) async =>
-      cleared.add(forgetMemory);
+  Future<void> clearChat(String buddyId, {bool forgetMemory = false}) async {
+    cleared.add(forgetMemory);
+    cache.remove(buddyId);
+  }
 
   @override
   Future<void> forgetMemory(String buddyId, {String? factId}) async => forgotten.add(factId);
@@ -149,10 +145,8 @@ class FakeBuddiesRepository implements BuddiesRepository {
     required String buddyId,
     required String text,
     required String requestId,
-    bool? align,
   }) async {
     sent.add({'text': text, 'requestId': requestId});
-    aligns.add(align);
     if (sendGate != null) await sendGate!.future;
     if (sendAnswers.isEmpty) {
       return BuddySendResult(
@@ -164,8 +158,10 @@ class FakeBuddiesRepository implements BuddiesRepository {
   }
 
   @override
-  Future<BuddyMessagePage> latestMessages(String uid, String buddyId, {int limit = 30}) async =>
-      latest;
+  Future<BuddyMessagePage> latestMessages(String uid, String buddyId, {int limit = 30}) async {
+    if (latestGate != null) await latestGate!.future;
+    return latest;
+  }
 
   @override
   Future<BuddyMessagePage> olderMessages(String uid, String buddyId,
@@ -180,6 +176,22 @@ class FakeBuddiesRepository implements BuddiesRepository {
 
   @override
   String newRequestId() => 'req-${++_req}-abcdef';
+
+  /// The local chat cache (by Buddy id) and what was written to it.
+  final Map<String, List<BuddyMessage>> cache = {};
+  final List<String> cacheWrites = [];
+
+  /// Completes latestMessages only when set (cache-first tests).
+  Completer<void>? latestGate;
+
+  @override
+  Future<List<BuddyMessage>> cachedMessages(String buddyId) async => cache[buddyId] ?? const [];
+
+  @override
+  Future<void> cacheMessages(String buddyId, List<BuddyMessage> messages) async {
+    cache[buddyId] = [for (final m in messages) if (!m.isLocal) m];
+    cacheWrites.add(buddyId);
+  }
 
   Future<void> dispose() async {
     await buddies.close();

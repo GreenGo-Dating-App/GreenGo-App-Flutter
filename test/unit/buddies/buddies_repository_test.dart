@@ -3,6 +3,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:fake_cloud_firestore/fake_cloud_firestore.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:greengo_chat/features/buddies/data/datasources/buddies_remote_datasource.dart';
+import 'package:greengo_chat/features/buddies/data/datasources/buddy_chat_cache.dart';
 import 'package:greengo_chat/features/buddies/data/repositories/buddies_repository_impl.dart';
 import 'package:greengo_chat/features/buddies/domain/buddy_exception.dart';
 import 'package:greengo_chat/features/buddies/domain/entities/buddy.dart';
@@ -48,7 +49,8 @@ void main() {
   setUp(() {
     db = FakeFirebaseFirestore();
     remote = _Remote(db);
-    repo = BuddiesRepositoryImpl(remote: remote);
+    repo = BuddiesRepositoryImpl(
+        remote: remote, cache: JsonBuddyChatCache(store: MemoryBuddyChatCacheStore()));
   });
 
   CollectionReference<Map<String, dynamic>> msgs() =>
@@ -341,6 +343,50 @@ void main() {
     expect(byId['t3']!.translation, isNull, reason: 'empty translation = none');
   });
 
+  test('every read path maps the stored translation (older pages, live listener)', () async {
+    for (var i = 0; i < 4; i++) {
+      await msgs().doc('p$i').set({
+        'role': i.isEven ? 'user' : 'buddy',
+        'kind': i == 1 ? 'checkin' : 'chat',
+        'text': 'text $i',
+        'createdAt': Timestamp.fromDate(DateTime(2026, 10, 1).add(Duration(minutes: i))),
+        'translation': {'text': 'testo $i', 'lang': 'it'},
+      });
+    }
+    final latest = await repo.latestMessages('u1', 'b1', limit: 2);
+    expect([for (final m in latest.messages) m.translation?.text], ['testo 2', 'testo 3']);
+    final older = await repo.olderMessages('u1', 'b1',
+        before: latest.messages.first.createdAt, limit: 2);
+    expect([for (final m in older.messages) m.translation?.text], ['testo 0', 'testo 1']);
+    final live = await repo.watchNewMessages('u1', 'b1', after: DateTime(2026, 10, 1)).first;
+    expect([for (final m in live) m.translation?.text], ['testo 1', 'testo 2', 'testo 3']);
+  });
+
+  test('local chat cache: saved with translations, cleared on clear chat / delete', () async {
+    final m = BuddyMessage(
+      id: 's1',
+      role: BuddyMessageRole.buddy,
+      text: 'Hi',
+      createdAt: DateTime(2026, 10, 1),
+      translation: const BuddyTranslation(text: 'Ciao', lang: 'it'),
+    );
+    expect(await repo.cachedMessages('b1'), isEmpty);
+    await repo.cacheMessages('b1', [m]);
+    expect(await repo.cachedMessages('b1'), [m]);
+    await repo.clearChat('b1');
+    expect(await repo.cachedMessages('b1'), isEmpty);
+
+    await repo.cacheMessages('b2', [m]);
+    await repo.deleteBuddy('b2');
+    expect(await repo.cachedMessages('b2'), isEmpty);
+
+    // A refused call keeps the cache (nothing was cleared on the server).
+    await repo.cacheMessages('b3', [m]);
+    remote.error = FirebaseFunctionsException(code: 'unavailable', message: 'down');
+    await expectLater(repo.clearChat('b3'), throwsA(isA<BuddyException>()));
+    expect(await repo.cachedMessages('b3'), [m]);
+  });
+
   test('sendBuddyMessage: translations aligned with replies + userTranslation', () async {
     remote.answer = {
       'reply': 'A\nB',
@@ -363,13 +409,9 @@ void main() {
     expect(old.bubblesWithTranslations, [('Only', null)]);
   });
 
-  test('sendBuddyMessage: align is sent only when set', () async {
+  test('sendBuddyMessage: no align flag (colour pairs removed)', () async {
     remote.answer = {'reply': 'Hi', 'kind': 'chat', 'charged': 'free', 'freeRepliesLeft': 1};
-    await repo.sendMessage(buddyId: 'b1', text: 'x', requestId: 'abcdefgh', align: false);
-    expect(remote.calls.last.$2['align'], isFalse);
-    await repo.sendMessage(buddyId: 'b1', text: 'x', requestId: 'abcdefgi', align: true);
-    expect(remote.calls.last.$2['align'], isTrue);
-    await repo.sendMessage(buddyId: 'b1', text: 'x', requestId: 'abcdefgj');
-    expect(remote.calls.last.$2.containsKey('align'), isFalse);
+    await repo.sendMessage(buddyId: 'b1', text: 'x', requestId: 'abcdefgh');
+    expect(remote.calls.last.$2.keys, unorderedEquals(['buddyId', 'text', 'requestId']));
   });
 }

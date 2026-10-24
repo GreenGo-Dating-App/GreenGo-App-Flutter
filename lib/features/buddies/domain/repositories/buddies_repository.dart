@@ -29,14 +29,10 @@ abstract class BuddiesRepository {
   Future<void> forgetMemory(String buddyId, {String? factId});
 
   /// One reply. [requestId] is reused when retrying the same message.
-  /// [align] = the chat setting "Highlight matching words": false lets the
-  /// server skip the colour pairs (`segments`) to save tokens; null = not
-  /// sent (server default).
   Future<BuddySendResult> sendMessage({
     required String buddyId,
     required String text,
     required String requestId,
-    bool? align,
   });
 
   /// The newest [limit] messages, oldest first.
@@ -52,6 +48,15 @@ abstract class BuddiesRepository {
 
   /// Messages created after [after] (all when null), oldest first, live.
   Stream<List<BuddyMessage>> watchNewMessages(String uid, String buddyId, {DateTime? after});
+
+  /// The locally cached latest messages of [buddyId] (with their stored
+  /// translations), oldest first; empty when nothing is cached. Painted
+  /// before the server page arrives. Never throws.
+  Future<List<BuddyMessage>> cachedMessages(String buddyId);
+
+  /// Caches the newest messages of [buddyId] (bounded; local messages are
+  /// skipped). Never throws.
+  Future<void> cacheMessages(String buddyId, List<BuddyMessage> messages);
 
   /// A fresh idempotency id for `sendBuddyMessage`.
   String newRequestId();

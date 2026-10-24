@@ -28949,10 +28949,6 @@ class AppLocalizationsFr extends AppLocalizations {
   String get buddyMicroCategoryLabel => 'Sujet';
 
   @override
-  String get buddyMicroCategoryHint =>
-      'Choisis d\'abord une catégorie principale';
-
-  @override
   String get buddyAvatarsLoadFailed => 'Impossible de charger les images.';
 
   @override
@@ -29495,10 +29491,8 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
-  String get buddyChatSettingHighlightMatches =>
-      'Surligner les mots correspondants';
+  String get buddyChooseCategory => 'Choisis une catégorie';
 
   @override
-  String get buddyChatSettingHighlightMatchesDesc =>
-      'Colorer les mêmes mots dans un message et sa traduction';
+  String get buddyChooseSubcategory => 'Choisis une sous-catégorie';
 }

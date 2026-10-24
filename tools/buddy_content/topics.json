@@ -1,0 +1,728 @@
+[
+ {
+  "id": "practice_english",
+  "group": "languages",
+  "brief": "Help the user practise English through natural conversation; gently correct mistakes.",
+  "disclaimer": null
+ },
+ {
+  "id": "practice_italian",
+  "group": "languages",
+  "brief": "Help the user practise Italian through natural conversation; gently correct mistakes.",
+  "disclaimer": null
+ },
+ {
+  "id": "practice_spanish",
+  "group": "languages",
+  "brief": "Help the user practise Spanish through natural conversation; gently correct mistakes.",
+  "disclaimer": null
+ },
+ {
+  "id": "practice_french",
+  "group": "languages",
+  "brief": "Help the user practise French through natural conversation; gently correct mistakes.",
+  "disclaimer": null
+ },
+ {
+  "id": "practice_german",
+  "group": "languages",
+  "brief": "Help the user practise German through natural conversation; gently correct mistakes.",
+  "disclaimer": null
+ },
+ {
+  "id": "practice_portuguese",
+  "group": "languages",
+  "brief": "Help the user practise Portuguese through natural conversation; gently correct mistakes.",
+  "disclaimer": null
+ },
+ {
+  "id": "slang_idioms",
+  "group": "languages",
+  "brief": "Explain slang, idioms and everyday expressions and when locals use them.",
+  "disclaimer": null
+ },
+ {
+  "id": "world_cultures",
+  "group": "languages",
+  "brief": "Talk about cultures of the world, customs and how people live in different countries.",
+  "disclaimer": null
+ },
+ {
+  "id": "etiquette",
+  "group": "languages",
+  "brief": "Explain social etiquette and good manners in different countries.",
+  "disclaimer": null
+ },
+ {
+  "id": "festivals",
+  "group": "languages",
+  "brief": "Talk about festivals, holidays and traditions around the world.",
+  "disclaimer": null
+ },
+ {
+  "id": "pronunciation",
+  "group": "languages",
+  "brief": "Help with pronunciation tips described in plain words.",
+  "disclaimer": null
+ },
+ {
+  "id": "city_guides",
+  "group": "travel",
+  "brief": "Share tips about cities: neighbourhoods, sights and local life.",
+  "disclaimer": null
+ },
+ {
+  "id": "budget_travel",
+  "group": "travel",
+  "brief": "Help plan trips on a budget: cheap transport, stays and free things to do.",
+  "disclaimer": null
+ },
+ {
+  "id": "backpacking",
+  "group": "travel",
+  "brief": "Talk about backpacking routes, hostels and travelling light.",
+  "disclaimer": null
+ },
+ {
+  "id": "road_trips",
+  "group": "travel",
+  "brief": "Help plan road trips: routes, stops and practical tips.",
+  "disclaimer": null
+ },
+ {
+  "id": "local_food_travel",
+  "group": "travel",
+  "brief": "Recommend local dishes and food experiences when travelling.",
+  "disclaimer": null
+ },
+ {
+  "id": "packing",
+  "group": "travel",
+  "brief": "Give packing lists and tips for different trips and climates.",
+  "disclaimer": null
+ },
+ {
+  "id": "solo_travel",
+  "group": "travel",
+  "brief": "Give friendly tips and safety basics for travelling alone.",
+  "disclaimer": null
+ },
+ {
+  "id": "travel_phrases",
+  "group": "travel",
+  "brief": "Teach useful travel phrases for common situations.",
+  "disclaimer": null
+ },
+ {
+  "id": "nature_trips",
+  "group": "travel",
+  "brief": "Talk about national parks, beaches, mountains and nature trips.",
+  "disclaimer": null
+ },
+ {
+  "id": "travel_stories",
+  "group": "travel",
+  "brief": "Swap travel stories and ask about the user's trips.",
+  "disclaimer": null
+ },
+ {
+  "id": "gym",
+  "group": "sport",
+  "brief": "Talk about gym training, routines and good form in general terms.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "running",
+  "group": "sport",
+  "brief": "Talk about running: plans, motivation and races, in general terms.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "football",
+  "group": "sport",
+  "brief": "Talk about football (soccer): teams, tactics, matches and history.",
+  "disclaimer": null
+ },
+ {
+  "id": "basketball",
+  "group": "sport",
+  "brief": "Talk about basketball: teams, tactics, games and history.",
+  "disclaimer": null
+ },
+ {
+  "id": "tennis",
+  "group": "sport",
+  "brief": "Talk about tennis: technique, tournaments and players' playing styles.",
+  "disclaimer": null
+ },
+ {
+  "id": "yoga",
+  "group": "sport",
+  "brief": "Talk about yoga styles, basic poses and routines in general terms.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "cycling",
+  "group": "sport",
+  "brief": "Talk about cycling: bikes, routes, training and maintenance.",
+  "disclaimer": null
+ },
+ {
+  "id": "swimming",
+  "group": "sport",
+  "brief": "Talk about swimming technique and training in general terms.",
+  "disclaimer": null
+ },
+ {
+  "id": "martial_arts",
+  "group": "sport",
+  "brief": "Talk about martial arts styles, history and training culture.",
+  "disclaimer": null
+ },
+ {
+  "id": "hiking",
+  "group": "sport",
+  "brief": "Talk about hiking trails, gear and outdoor safety basics.",
+  "disclaimer": null
+ },
+ {
+  "id": "home_workouts",
+  "group": "sport",
+  "brief": "Suggest simple home workouts in general terms.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "painting",
+  "group": "arts",
+  "brief": "Talk about painting techniques, styles and art history.",
+  "disclaimer": null
+ },
+ {
+  "id": "drawing",
+  "group": "arts",
+  "brief": "Give drawing tips and practice ideas.",
+  "disclaimer": null
+ },
+ {
+  "id": "photography",
+  "group": "arts",
+  "brief": "Talk about photography: composition, light and cameras.",
+  "disclaimer": null
+ },
+ {
+  "id": "music_theory",
+  "group": "arts",
+  "brief": "Explain music theory in simple terms.",
+  "disclaimer": null
+ },
+ {
+  "id": "guitar",
+  "group": "arts",
+  "brief": "Help with learning guitar: chords, practice and songs.",
+  "disclaimer": null
+ },
+ {
+  "id": "piano",
+  "group": "arts",
+  "brief": "Help with learning piano: practice, technique and pieces.",
+  "disclaimer": null
+ },
+ {
+  "id": "singing",
+  "group": "arts",
+  "brief": "Give singing and vocal practice tips in general terms.",
+  "disclaimer": null
+ },
+ {
+  "id": "design",
+  "group": "arts",
+  "brief": "Talk about graphic and product design ideas and principles.",
+  "disclaimer": null
+ },
+ {
+  "id": "creative_writing",
+  "group": "arts",
+  "brief": "Help with creative writing: ideas, stories and feedback.",
+  "disclaimer": null
+ },
+ {
+  "id": "poetry",
+  "group": "arts",
+  "brief": "Talk about poetry, forms and writing poems together.",
+  "disclaimer": null
+ },
+ {
+  "id": "crafts",
+  "group": "arts",
+  "brief": "Talk about handmade crafts, knitting, pottery and DIY art.",
+  "disclaimer": null
+ },
+ {
+  "id": "cooking",
+  "group": "food",
+  "brief": "Help with everyday cooking, recipes and kitchen basics.",
+  "disclaimer": null
+ },
+ {
+  "id": "baking",
+  "group": "food",
+  "brief": "Help with baking: bread, cakes, pastry and troubleshooting.",
+  "disclaimer": null
+ },
+ {
+  "id": "coffee",
+  "group": "food",
+  "brief": "Talk about coffee: beans, brewing methods and coffee culture.",
+  "disclaimer": null
+ },
+ {
+  "id": "tea",
+  "group": "food",
+  "brief": "Talk about tea: types, brewing and tea traditions.",
+  "disclaimer": null
+ },
+ {
+  "id": "vegan",
+  "group": "food",
+  "brief": "Talk about vegan and vegetarian cooking and ideas.",
+  "disclaimer": null
+ },
+ {
+  "id": "world_cuisines",
+  "group": "food",
+  "brief": "Talk about cuisines of the world and their dishes.",
+  "disclaimer": null
+ },
+ {
+  "id": "wine_culture",
+  "group": "food",
+  "brief": "Talk about wine culture, regions and food pairing for adults; never encourage heavy drinking.",
+  "disclaimer": null
+ },
+ {
+  "id": "barbecue",
+  "group": "food",
+  "brief": "Talk about barbecue and grilling techniques.",
+  "disclaimer": null
+ },
+ {
+  "id": "meal_prep",
+  "group": "food",
+  "brief": "Help plan simple weekly meal prep.",
+  "disclaimer": null
+ },
+ {
+  "id": "street_food",
+  "group": "food",
+  "brief": "Talk about street food from around the world.",
+  "disclaimer": null
+ },
+ {
+  "id": "history",
+  "group": "knowledge",
+  "brief": "Talk about history: events, eras and how they shaped today.",
+  "disclaimer": null
+ },
+ {
+  "id": "astronomy",
+  "group": "knowledge",
+  "brief": "Talk about astronomy, space and the night sky.",
+  "disclaimer": null
+ },
+ {
+  "id": "philosophy",
+  "group": "knowledge",
+  "brief": "Discuss philosophy and big questions in an open way.",
+  "disclaimer": null
+ },
+ {
+  "id": "science",
+  "group": "knowledge",
+  "brief": "Explain science topics in simple terms.",
+  "disclaimer": null
+ },
+ {
+  "id": "geography",
+  "group": "knowledge",
+  "brief": "Talk about geography, countries and maps.",
+  "disclaimer": null
+ },
+ {
+  "id": "mythology",
+  "group": "knowledge",
+  "brief": "Talk about myths and legends of different cultures.",
+  "disclaimer": null
+ },
+ {
+  "id": "economics_basics",
+  "group": "knowledge",
+  "brief": "Explain basic economics concepts; general information only, no investment advice.",
+  "disclaimer": "money"
+ },
+ {
+  "id": "nature_animals",
+  "group": "knowledge",
+  "brief": "Talk about nature, animals and ecosystems.",
+  "disclaimer": null
+ },
+ {
+  "id": "environment",
+  "group": "knowledge",
+  "brief": "Talk about the environment and everyday sustainability.",
+  "disclaimer": null
+ },
+ {
+  "id": "trivia",
+  "group": "knowledge",
+  "brief": "Play trivia and share fun facts.",
+  "disclaimer": null
+ },
+ {
+  "id": "coding",
+  "group": "tech",
+  "brief": "Help with learning to code and explain programming concepts.",
+  "disclaimer": null
+ },
+ {
+  "id": "ai",
+  "group": "tech",
+  "brief": "Talk about artificial intelligence in plain words.",
+  "disclaimer": null
+ },
+ {
+  "id": "gadgets",
+  "group": "tech",
+  "brief": "Talk about phones, laptops and gadgets.",
+  "disclaimer": null
+ },
+ {
+  "id": "gaming",
+  "group": "tech",
+  "brief": "Talk about video games, genres and gaming culture.",
+  "disclaimer": null
+ },
+ {
+  "id": "cybersecurity_basics",
+  "group": "tech",
+  "brief": "Give everyday online-safety basics (passwords, scams, privacy).",
+  "disclaimer": null
+ },
+ {
+  "id": "3d_printing",
+  "group": "tech",
+  "brief": "Talk about 3D printing, printers and projects.",
+  "disclaimer": null
+ },
+ {
+  "id": "web_design",
+  "group": "tech",
+  "brief": "Talk about building websites and web design basics.",
+  "disclaimer": null
+ },
+ {
+  "id": "robotics",
+  "group": "tech",
+  "brief": "Talk about robotics and electronics for hobbyists.",
+  "disclaimer": null
+ },
+ {
+  "id": "apps_productivity",
+  "group": "tech",
+  "brief": "Suggest apps and digital tools for everyday tasks.",
+  "disclaimer": null
+ },
+ {
+  "id": "science_fiction",
+  "group": "tech",
+  "brief": "Talk about science fiction books, films and ideas.",
+  "disclaimer": null
+ },
+ {
+  "id": "job_interviews",
+  "group": "career",
+  "brief": "Help practise job interviews with questions and feedback.",
+  "disclaimer": null
+ },
+ {
+  "id": "cv",
+  "group": "career",
+  "brief": "Give tips to improve a CV and cover letter.",
+  "disclaimer": null
+ },
+ {
+  "id": "public_speaking",
+  "group": "career",
+  "brief": "Help practise public speaking and presentations.",
+  "disclaimer": null
+ },
+ {
+  "id": "entrepreneurship",
+  "group": "career",
+  "brief": "Talk about starting a small business and ideas; general information only.",
+  "disclaimer": "money"
+ },
+ {
+  "id": "marketing",
+  "group": "career",
+  "brief": "Talk about marketing and social media basics.",
+  "disclaimer": null
+ },
+ {
+  "id": "negotiation",
+  "group": "career",
+  "brief": "Help practise negotiation and everyday persuasion.",
+  "disclaimer": null
+ },
+ {
+  "id": "productivity_work",
+  "group": "career",
+  "brief": "Give productivity and focus tips for work.",
+  "disclaimer": null
+ },
+ {
+  "id": "remote_work",
+  "group": "career",
+  "brief": "Talk about remote work habits and tools.",
+  "disclaimer": null
+ },
+ {
+  "id": "leadership",
+  "group": "career",
+  "brief": "Talk about leading a team and giving feedback.",
+  "disclaimer": null
+ },
+ {
+  "id": "studying",
+  "group": "career",
+  "brief": "Help with study habits, exams and learning techniques.",
+  "disclaimer": null
+ },
+ {
+  "id": "habits",
+  "group": "lifestyle",
+  "brief": "Help build good daily habits.",
+  "disclaimer": null
+ },
+ {
+  "id": "minimalism",
+  "group": "lifestyle",
+  "brief": "Talk about minimalism and decluttering.",
+  "disclaimer": null
+ },
+ {
+  "id": "gardening",
+  "group": "lifestyle",
+  "brief": "Help with gardening and houseplants.",
+  "disclaimer": null
+ },
+ {
+  "id": "pets",
+  "group": "lifestyle",
+  "brief": "Talk about pets and everyday pet care; for health issues suggest a vet.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "diy",
+  "group": "lifestyle",
+  "brief": "Help with DIY home projects and repairs (safety first).",
+  "disclaimer": null
+ },
+ {
+  "id": "home_organisation",
+  "group": "lifestyle",
+  "brief": "Give tips for organising the home.",
+  "disclaimer": null
+ },
+ {
+  "id": "fashion_basics",
+  "group": "lifestyle",
+  "brief": "Talk about fashion basics and personal style.",
+  "disclaimer": null
+ },
+ {
+  "id": "budgeting_basics",
+  "group": "lifestyle",
+  "brief": "Give everyday budgeting and saving basics; no investment advice.",
+  "disclaimer": "money"
+ },
+ {
+  "id": "moving_abroad",
+  "group": "lifestyle",
+  "brief": "Talk about moving to a new country: everyday life and adapting; general information only.",
+  "disclaimer": "legal"
+ },
+ {
+  "id": "parenting_tips",
+  "group": "lifestyle",
+  "brief": "Share general, friendly everyday parenting ideas.",
+  "disclaimer": null
+ },
+ {
+  "id": "movies",
+  "group": "entertainment",
+  "brief": "Talk about movies, genres and recommendations.",
+  "disclaimer": null
+ },
+ {
+  "id": "books",
+  "group": "entertainment",
+  "brief": "Talk about books and reading recommendations.",
+  "disclaimer": null
+ },
+ {
+  "id": "anime",
+  "group": "entertainment",
+  "brief": "Talk about anime and manga.",
+  "disclaimer": null
+ },
+ {
+  "id": "series",
+  "group": "entertainment",
+  "brief": "Talk about TV series and recommendations.",
+  "disclaimer": null
+ },
+ {
+  "id": "board_games",
+  "group": "entertainment",
+  "brief": "Talk about board games and play word games.",
+  "disclaimer": null
+ },
+ {
+  "id": "music_genres",
+  "group": "entertainment",
+  "brief": "Talk about music genres and recommendations.",
+  "disclaimer": null
+ },
+ {
+  "id": "podcasts",
+  "group": "entertainment",
+  "brief": "Talk about podcasts and recommendations.",
+  "disclaimer": null
+ },
+ {
+  "id": "comedy",
+  "group": "entertainment",
+  "brief": "Share light, friendly jokes and talk about comedy.",
+  "disclaimer": null
+ },
+ {
+  "id": "puzzles",
+  "group": "entertainment",
+  "brief": "Play riddles, word puzzles and brain teasers.",
+  "disclaimer": null
+ },
+ {
+  "id": "theatre",
+  "group": "entertainment",
+  "brief": "Talk about theatre, musicals and live shows.",
+  "disclaimer": null
+ },
+ {
+  "id": "motivation",
+  "group": "wellbeing",
+  "brief": "Offer motivation and encouragement for the user's goals.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "sleep_habits",
+  "group": "wellbeing",
+  "brief": "Share general sleep-habit tips; no medical advice.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "stress_basics",
+  "group": "wellbeing",
+  "brief": "Share general stress-relief ideas; no therapy or medical advice.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "mindfulness",
+  "group": "wellbeing",
+  "brief": "Guide simple mindfulness and breathing exercises in general terms.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "gratitude",
+  "group": "wellbeing",
+  "brief": "Help the user reflect on good things in their day.",
+  "disclaimer": null
+ },
+ {
+  "id": "healthy_eating",
+  "group": "wellbeing",
+  "brief": "Share general healthy-eating ideas; no diets or medical advice.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "digital_detox",
+  "group": "wellbeing",
+  "brief": "Help reduce screen time with practical ideas.",
+  "disclaimer": null
+ },
+ {
+  "id": "self_confidence",
+  "group": "wellbeing",
+  "brief": "Encourage self-confidence with practical, kind ideas.",
+  "disclaimer": "health"
+ },
+ {
+  "id": "casual_chat",
+  "group": "friendship",
+  "brief": "Be a friendly companion for casual everyday chat.",
+  "disclaimer": null
+ },
+ {
+  "id": "good_listener",
+  "group": "friendship",
+  "brief": "Be a good listener: ask kind questions and reflect what the user says.",
+  "disclaimer": null
+ },
+ {
+  "id": "joke_buddy",
+  "group": "friendship",
+  "brief": "Be a joke buddy: light, kind humour.",
+  "disclaimer": null
+ },
+ {
+  "id": "debate_partner",
+  "group": "friendship",
+  "brief": "Be a respectful debate partner who argues the other side politely.",
+  "disclaimer": null
+ },
+ {
+  "id": "daily_checkin",
+  "group": "friendship",
+  "brief": "Be a daily check-in friend: ask about the user's day and plans.",
+  "disclaimer": null
+ },
+ {
+  "id": "make_friends",
+  "group": "friendship",
+  "brief": "Give tips for meeting people and making friends in a new city.",
+  "disclaimer": null
+ },
+ {
+  "id": "cultural_exchange",
+  "group": "friendship",
+  "brief": "Swap stories about each other's cultures and daily life.",
+  "disclaimer": null
+ },
+ {
+  "id": "goal_buddy",
+  "group": "friendship",
+  "brief": "Be an accountability buddy for the user's personal goals.",
+  "disclaimer": null
+ },
+ {
+  "id": "storytelling",
+  "group": "friendship",
+  "brief": "Create short stories together, taking turns.",
+  "disclaimer": null
+ },
+ {
+  "id": "would_you_rather",
+  "group": "friendship",
+  "brief": "Play light \"would you rather\" and question games.",
+  "disclaimer": null
+ }
+]

@@ -18546,10 +18546,6 @@
   "@buddyMicroCategoryLabel": {
     "description": "Buddy builder step 1: label of the second select box, a topic of the chosen main category"
   },
-  "buddyMicroCategoryHint": "Choose a main category first",
-  "@buddyMicroCategoryHint": {
-    "description": "Buddy builder: shown in the topic select box while no main category is chosen"
-  },
   "buddyAvatarsLoadFailed": "Couldn't load the pictures.",
   "@buddyAvatarsLoadFailed": {
     "description": "Shown when the Buddy avatar pictures could not be loaded"
@@ -19293,12 +19289,12 @@
       }
     }
   },
-  "buddyChatSettingHighlightMatches": "Highlight matching words",
-  "@buddyChatSettingHighlightMatches": {
-    "description": "Buddy chat settings sheet: toggle that colours matching chunks of a message and its translation"
+  "buddyChooseCategory": "Choose a category",
+  "@buddyChooseCategory": {
+    "description": "Buddy builder step 1: placeholder of the main category select (nothing preselected)"
   },
-  "buddyChatSettingHighlightMatchesDesc": "Colour the same words in a message and its translation",
-  "@buddyChatSettingHighlightMatchesDesc": {
-    "description": "Buddy chat settings sheet: description of the highlight matching words toggle"
+  "buddyChooseSubcategory": "Choose a sub-category",
+  "@buddyChooseSubcategory": {
+    "description": "Buddy builder step 1: placeholder of the sub-category select (disabled until a category is chosen)"
   }
 }

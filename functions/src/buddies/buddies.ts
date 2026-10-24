@@ -29,6 +29,10 @@ import { fifoDraw, refusal, REASON, validRequestId, DrawnSlice } from '../coins/
 import { loadConfig } from '../ai/router/config';
 import { eligibleChain, generate, translate } from '../ai/router/router';
 import { guessLanguage } from './langDetect';
+import {
+  COURSE_FORMAT, CourseState, Question, courseBlock, currentCourse, getCourse, getLesson, getQuestions, introBubbles,
+  nextCourseState, pickQuestions,
+} from './content';
 import { applyReplyRules, fitContext, graphemeLength, graphemes } from '../ai/router/rules';
 import { CapabilityRules } from '../ai/router/types';
 import { emitNotification } from '../notifications/notifyHelpers';
@@ -196,10 +200,35 @@ export const createBuddy = callable('createBuddy', async (uid, data) => {
  * Skipped (false) when the user has no AI provider for Buddies yet.
  */
 export async function sendOpening(uid: string, ref: admin.firestore.DocumentReference, b: BuddySettings): Promise<boolean> {
-  const consentVersion = await aiConsentVersion(uid);
   const config = await loadConfig();
-  if (!eligibleChain(config, 'text_buddies', { consentVersion }).length) return false;
   const r = config.rules.text_buddies ?? {};
+  const checkIn = r.checkInsEnabled !== false && b.checkInsEnabled !== false;
+  // Owner 2026-10-24: the first message presents the topic's 365-day path,
+  // written once in all 7 languages (no AI call, translation already stored).
+  const course = await getCourse(b.topic).catch(() => null);
+  const intro = introBubbles(course, b.language, b.name);
+  if (intro) {
+    const target = b.chatLanguage ?? b.language;
+    const tr = baseLang(target) !== baseLang(b.language) ? introBubbles(course, target, b.name) : null;
+    const base = Date.now();
+    const batch = db().batch();
+    intro.forEach((text, i) => batch.set(ref.collection('messages').doc(), {
+      role: 'buddy', text, kind: 'chat', charged: 'none',
+      createdAt: admin.firestore.Timestamp.fromMillis(base + i * BUBBLE_GAP_MS),
+      ...(tr?.[i] ? { translation: { text: tr[i], lang: target } } : {}),
+    }));
+    batch.update(ref, {
+      lastMessage: intro[intro.length - 1].slice(0, 200),
+      lastMessageAt: admin.firestore.Timestamp.fromMillis(base + (intro.length - 1) * BUBBLE_GAP_MS),
+      messageCount: admin.firestore.FieldValue.increment(intro.length),
+      course: { day: 1, doneOn: null, askedQ: [] },
+      nextCheckInAt: checkIn ? admin.firestore.Timestamp.fromMillis(base + (r.checkInAfterHours ?? 24) * 3600_000) : null,
+    });
+    await batch.commit();
+    return true;
+  }
+  const consentVersion = await aiConsentVersion(uid);
+  if (!eligibleChain(config, 'text_buddies', { consentVersion }).length) return false;
   const p = openingPrompt(b, r);
   const out = await generate('text_buddies', { system: p.system, messages: [{ role: 'user', content: p.user }], json: true },
     { consentVersion }, { rawReply: true, rules: { maxTokens: Math.max(r.maxTokens ?? 120, 600) } });
@@ -214,7 +243,6 @@ export async function sendOpening(uid: string, ref: admin.firestore.DocumentRefe
     ...(parsed.keywords.length ? { keywords: parsed.keywords } : {}),
     ...(tr.replies[0] ? { translation: tr.replies[0] } : {}),
   });
-  const checkIn = r.checkInsEnabled !== false && b.checkInsEnabled !== false;
   batch.update(ref, {
     lastMessage: text.slice(0, 200), lastMessageAt: at, messageCount: admin.firestore.FieldValue.increment(1),
     nextCheckInAt: checkIn ? admin.firestore.Timestamp.fromMillis(Date.now() + (r.checkInAfterHours ?? 24) * 3600_000) : null,
@@ -452,6 +480,7 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
 
   let reply: string;
   let parsed: ParsedReply = { messages: [], keywords: [] };
+  let courseNext: CourseState | null = null;
   try {
     const history = await recentTurns(ref, Math.max(2, r.contextMessages ?? 12));
     const turns = fitContext([...history.turns, { role: 'user', content: text } as Turn],
@@ -468,9 +497,24 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
     }
     const d = snap.data() ?? {};
     const memory: MemoryFact[] = Array.isArray(d.memory) ? d.memory : [];
-    const system = `${systemPrompt(buddy, r, memory, String(d.summary ?? ''))}\n\n${replyFormatBlock(r.maxOutputChars ?? 200)}`;
+    // Today's lesson + 3 unasked questions from the bank (best effort: a
+    // topic without content yet simply chats as before).
+    const course = currentCourse(d.course, now);
+    const [lesson, bank] = await Promise.all([
+      getLesson(buddy.topic, course.day).catch(() => null),
+      getQuestions(buddy.topic).catch(() => [] as Question[]),
+    ]);
+    const candidates = pickQuestions(bank, buddy.language, lesson?.lv ?? 'beginner', course.askedQ, 3, now % 100_003);
+    const cblock = courseBlock(buddy, course, lesson, candidates);
+    const system = `${systemPrompt(buddy, r, memory, String(d.summary ?? ''))}${cblock ? `\n\n${cblock}` : ''}\n\n` +
+      `${replyFormatBlock(r.maxOutputChars ?? 200)}${cblock ? `\n${COURSE_FORMAT}` : ''}`;
     const out = await generate('text_buddies', { system, messages: turns, json: true },
       { consentVersion }, { rawReply: true, rules: { maxTokens: Math.max(r.maxTokens ?? 120, 1000) } });
+    const j = parseJsonObject(out.text);
+    if (cblock) {
+      courseNext = nextCourseState(course, j?.lessonDone === true, typeof j?.q === 'string' ? j.q : null,
+        candidates.map((c) => c.id), now);
+    }
     parsed = parseBuddyReply(out.text, r, FALLBACK_REPLY[lang] ?? FALLBACK_REPLY.en);
     parsed.messages = await enforceBuddyLanguage(buddy, parsed.messages, consentVersion);
     reply = parsed.messages.join('\n');
@@ -504,6 +548,7 @@ export async function handleSendBuddyMessage(uid: string, data: any) {
     await refundCharge(uid, requestId, plan);
     throw unavailable();
   }
+  if (courseNext) await ref.update({ course: courseNext }).catch((e) => console.warn('course progress not saved', e?.message ?? e));
   return translated;
 }
 
@@ -924,6 +969,11 @@ async function checkInOne(doc: admin.firestore.QueryDocumentSnapshot, r: Capabil
   const lastUser = d.lastUserMessageAt?.toMillis?.() ?? nowMs;
   const p = checkInPrompt(buddy, r, Array.isArray(d.memory) ? d.memory : [], String(d.summary ?? ''), turns,
     (nowMs - lastUser) / 3600_000, Number(d.unansweredCheckIns) || 0);
+  // A gentle invitation to today's lesson when the topic has its path.
+  const course = currentCourse(d.course, nowMs);
+  const lesson = await getLesson(buddy.topic, course.day).catch(() => null);
+  const lt = lesson?.i18n?.[buddy.language];
+  if (lt && !course.doneOn) p.user += `\nIf it fits, invite them to today's lesson (day ${course.day}): ${lt.t}.`;
   let text: string;
   try {
     const out = await generate('text_buddies', { system: p.system, messages: [{ role: 'user', content: p.user }] }, { consentVersion });

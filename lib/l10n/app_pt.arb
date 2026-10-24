@@ -8950,7 +8950,6 @@
   "buddyLanguageOnlyNote": "O teu Buddy fala sempre apenas esta língua. Não pode ser alterada depois.",
   "buddyMacroCategoryLabel": "Categoria principal",
   "buddyMicroCategoryLabel": "Tema",
-  "buddyMicroCategoryHint": "Escolhe primeiro uma categoria principal",
   "buddyAvatarsLoadFailed": "Não foi possível carregar as imagens.",
   "buddySettingAvatar": "Imagem",
   "buddySettingName": "Nome",
@@ -9125,6 +9124,6 @@
   "buddyChatLanguagePrompt": "Traduzir este chat para",
   "buddyChatLanguageNote": "As mensagens são traduzidas uma vez para esta língua. Não é possível alterar mais tarde.",
   "buddyTranslatedInto": "Traduzido para: {language} (fixo)",
-  "buddyChatSettingHighlightMatches": "Destacar palavras correspondentes",
-  "buddyChatSettingHighlightMatchesDesc": "Colorir as mesmas palavras numa mensagem e na sua tradução"
+  "buddyChooseCategory": "Escolhe uma categoria",
+  "buddyChooseSubcategory": "Escolhe uma subcategoria"
 }

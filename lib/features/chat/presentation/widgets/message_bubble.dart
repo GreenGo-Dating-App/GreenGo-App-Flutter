@@ -62,8 +62,6 @@ class MessageBubble extends StatefulWidget {
     this.header,
     this.footer,
     this.contentFooter,
-    this.mainTextOverride,
-    this.originalTextOverride,
     this.onLongPressOverride,
   });
   final Message message;
@@ -104,15 +102,6 @@ class MessageBubble extends StatefulWidget {
   /// chat, added under the unchanged original). Null (default) for
   /// person-to-person chats: the widget tree is then unchanged.
   final Widget? contentFooter;
-
-  /// Replaces the main text widget of a text message (the translation when
-  /// there is one, else the text), keeping the flags and layout around it.
-  /// E.g. a Buddy chat colouring matching chunks. Null (default) = unchanged.
-  final Widget? mainTextOverride;
-
-  /// Replaces the "original text underneath" widget of a translated text
-  /// message. Null (default) = unchanged.
-  final Widget? originalTextOverride;
 
   /// Replaces the long-press options sheet (reply, forward, star, react,
   /// report), for chats where those make no sense (Buddy chat). Null
@@ -833,21 +822,18 @@ class _MessageBubbleState extends State<MessageBubble> {
                   Text(translatedFlag, style: const TextStyle(fontSize: 14)),
                   const SizedBox(width: 6),
                   Expanded(
-                    child: widget.mainTextOverride ??
-                        KeywordText(
-                          message.translatedContent!,
-                          highlight: widget.showCulturalTips,
-                          style: TextStyle(
-                            color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
-                            fontSize: 15,
-                            height: 1.4,
-                          ),
-                        ),
+                    child: KeywordText(
+                      message.translatedContent!,
+                      highlight: widget.showCulturalTips,
+                      style: TextStyle(
+                        color: isCurrentUser ? AppColors.deepBlack : AppColors.textPrimary,
+                        fontSize: 15,
+                        height: 1.4,
+                      ),
+                    ),
                   ),
                 ],
               ),
-            ] else if (widget.mainTextOverride != null) ...[
-              widget.mainTextOverride!,
             ] else ...[
               KeywordText(
                 hasTranslation
@@ -883,7 +869,7 @@ class _MessageBubbleState extends State<MessageBubble> {
                       const SizedBox(width: 5),
                     ],
                     Expanded(
-                      child: widget.originalTextOverride ?? KeywordText(
+                      child: KeywordText(
                         message.content,
                         highlight: widget.showCulturalTips,
                         stored: MessageInsights.storedEntities(message.metadata, message.content),

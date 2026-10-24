@@ -3906,6 +3906,17 @@ service cloud.firestore {
     match /ai_buddy_jobs/{docId} {
       allow read, write: if false;
     }
+    // Buddy course content (365-day paths, intros, question banks): written
+    // by tools/buddy_content with admin credentials, read only by Functions.
+    match /buddy_courses/{docId} {
+      allow read, write: if false;
+    }
+    match /buddy_lessons/{docId} {
+      allow read, write: if false;
+    }
+    match /buddy_questions/{docId} {
+      allow read, write: if false;
+    }
 
     // ============================================================================
     // DEFAULT DENY

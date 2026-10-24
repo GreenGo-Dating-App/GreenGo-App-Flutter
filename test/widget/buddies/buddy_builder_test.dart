@@ -121,7 +121,24 @@ void main() {
         findsOneWidget);
     expect(select(tester, 'buddy-chat-language').value, 'en');
     expect(items(tester, 'buddy-chat-language'), BuddyCatalog.languages);
-    expect(find.text('🇬🇧 English'), findsOneWidget);
+    // Both language selects show a flag next to every language (closed
+    // field and list).
+    expect(find.text('🇬🇧 English'), findsNWidgets(2));
+    expect(find.text('Which language should your Buddy speak?'), findsOneWidget);
+    for (final key in ['buddy-language', 'buddy-chat-language']) {
+      final labels = [
+        for (final i in select(tester, key).items!) ((i.child as Text).data ?? ''),
+      ];
+      expect(labels, [
+        '🇬🇧 English',
+        '🇩🇪 German',
+        '🇪🇸 Spanish',
+        '🇫🇷 French',
+        '🇮🇹 Italian',
+        '🇵🇹 Portuguese (Portugal)',
+        '🇧🇷 Portuguese (Brazil)',
+      ], reason: key);
+    }
     expect(find.text('Main category'), findsOneWidget);
     expect(find.text('How should your Buddy sound?'), findsOneWidget);
     expect(find.text("Your Buddy always speaks only this language. It can't be changed later."),
@@ -131,8 +148,13 @@ void main() {
     expect(find.textContaining('Teacher'), findsNothing);
 
     // Topic select disabled until a main category is chosen.
+    // Nothing preselected: placeholders; the sub-category select is
+    // disabled until a category is chosen.
+    expect(select(tester, 'buddy-macro').value, isNull);
+    expect(select(tester, 'buddy-micro').value, isNull);
+    expect(find.text('Choose a category'), findsOneWidget);
     expect(select(tester, 'buddy-micro').onChanged, isNull);
-    expect(find.text('Choose a main category first'), findsWidgets);
+    expect(find.text('Choose a sub-category'), findsWidgets);
     expect(nextEnabled(tester), isFalse, reason: 'a topic is required');
 
     // Only the topics of the chosen category are offered.

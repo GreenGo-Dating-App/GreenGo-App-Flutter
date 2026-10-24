@@ -4,7 +4,6 @@ import '../../../../core/constants/app_colors.dart';
 import '../../../../core/utils/language_flags.dart';
 import '../../../../generated/app_localizations.dart';
 import '../../domain/entities/buddy_message.dart';
-import '../buddy_segments.dart';
 import 'buddy_avatar.dart';
 
 /// Inside a Buddy message bubble (the 1:1 chat's [MessageBubble] header):
@@ -59,14 +58,10 @@ class BuddyUserTranslationLine extends StatelessWidget {
     required this.text,
     required this.language,
     this.showFlag = true,
-    this.matches = const <BuddySegmentMatch>[],
     super.key,
   });
 
   final String messageId;
-
-  /// Matching chunks to colour in [text] (empty = plain).
-  final List<BuddySegmentMatch> matches;
   final String text;
 
   /// The chat language (what [text] is in).
@@ -100,9 +95,7 @@ class BuddyUserTranslationLine extends StatelessWidget {
               const SizedBox(width: 5),
             ],
             Flexible(
-              child: matches.isEmpty
-                  ? Text(text, style: style)
-                  : BuddySegmentText(text: text, matches: matches, original: false, style: style),
+              child: Text(text, style: style),
             ),
           ],
         ),

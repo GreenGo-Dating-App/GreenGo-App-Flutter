@@ -35,13 +35,10 @@ class BuddyChatOlderRequested extends BuddyChatEvent {
 }
 
 class BuddyChatSendPressed extends BuddyChatEvent {
-  const BuddyChatSendPressed(this.text, {this.align});
+  const BuddyChatSendPressed(this.text);
   final String text;
-
-  /// The "Highlight matching words" setting (server `align`; null = unset).
-  final bool? align;
   @override
-  List<Object?> get props => [text, align];
+  List<Object?> get props => [text];
 }
 
 /// Send a failed message again (same requestId: never charged twice).
@@ -59,6 +56,14 @@ class BuddyChatCleared extends BuddyChatEvent {
 
 class _ServerMessages extends BuddyChatEvent {
   const _ServerMessages(this.messages);
+  final List<BuddyMessage> messages;
+  @override
+  List<Object?> get props => [messages];
+}
+
+/// The locally cached latest messages (painted until the server page).
+class _CachedMessages extends BuddyChatEvent {
+  const _CachedMessages(this.messages);
   final List<BuddyMessage> messages;
   @override
   List<Object?> get props => [messages];
@@ -243,11 +248,7 @@ List<BuddyMessage> mergeServerMessages(List<BuddyMessage> server, List<BuddyMess
     // A translation is written once and never removed: a later copy
     // without one keeps the known one (no swap back to the original).
     final known = byId[m.id]?.translation;
-    final t = m.translation;
-    byId[m.id] = known != null &&
-            (t == null || (t.segments.isEmpty && known.segments.isNotEmpty && t.text == known.text))
-        ? m.copyWith(translation: known)
-        : m;
+    byId[m.id] = m.translation == null && known != null ? m.copyWith(translation: known) : m;
   }
   return byId.values.toList()..sort((a, b) => a.createdAt.compareTo(b.createdAt));
 }
@@ -304,6 +305,7 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
     on<BuddyChatRetryPressed>(_onRetry);
     on<BuddyChatCleared>(_onCleared);
     on<_ServerMessages>(_onServerMessages);
+    on<_CachedMessages>(_onCachedMessages);
     on<_BuddyChanged>(_onBuddyChanged);
     on<_StatusLoaded>(_onStatus);
     on<_RevealNext>(_onRevealNext);
@@ -323,9 +325,6 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
   StreamSubscription<List<BuddyMessage>>? _newSub;
   StreamSubscription<Buddy?>? _buddySub;
 
-  /// The last "Highlight matching words" setting sent (retries reuse it).
-  bool? _align;
-
   /// Server messages of this session no local message matched yet (e.g. the
   /// listener was faster than the callable's answer).
   List<BuddyMessage> _unmatched = const <BuddyMessage>[];
@@ -341,14 +340,29 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
           onError: (_) {},
         );
     unawaited(_loadStatus());
+    // The local copy (with translations) paints at once; the server page
+    // replaces it when it arrives.
+    _pageLoaded = false;
+    final buddyId = event.buddyId;
+    unawaited(_repo.cachedMessages(buddyId).then((cached) {
+      if (!isClosed && !_pageLoaded && cached.isNotEmpty && _buddyId == buddyId) {
+        add(_CachedMessages(cached));
+      }
+    }).catchError((Object _) {}));
     try {
       final page = await _repo.latestMessages(event.uid, event.buddyId, limit: pageSize);
+      _pageLoaded = true;
+      // A stored copy without its translation keeps the known one.
+      final server = mergeServerMessages(
+          [for (final m in state.server) if (page.messages.any((p) => p.id == m.id)) m],
+          page.messages);
       emit(state.copyWith(
-        server: page.messages,
+        server: server,
         hasMore: page.hasMore,
         loading: false,
         loadError: () => null,
       ));
+      _saveCache();
       final newest = page.messages.isEmpty ? null : page.messages.last.createdAt;
       await _newSub?.cancel();
       _newSub = _repo.watchNewMessages(event.uid, event.buddyId, after: newest).listen(
@@ -358,6 +372,22 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
     } catch (e) {
       emit(state.copyWith(loading: false, loadError: () => e));
     }
+  }
+
+  /// The server page has replaced the cached messages.
+  bool _pageLoaded = false;
+
+  void _onCachedMessages(_CachedMessages event, Emitter<BuddyChatState> emit) {
+    if (_pageLoaded) return;
+    // Older pages wait for the server page (it knows whether there are any).
+    emit(state.copyWith(server: event.messages, loading: false, hasMore: false));
+  }
+
+  /// Keeps the local copy in step with what the server delivered.
+  void _saveCache() {
+    final id = _buddyId;
+    if (id == null || state.server.isEmpty) return;
+    unawaited(_repo.cacheMessages(id, state.server));
   }
 
   Future<void> _loadStatus() async {
@@ -424,6 +454,7 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
       local: r.local,
       hidden: _queue.toSet(),
     ));
+    _saveCache();
   }
 
   /// New Buddy bubbles: the first one shows at once when nothing is being
@@ -470,7 +501,6 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
     final text = event.text.trim();
     if (text.isEmpty || text.runes.length > BuddyCatalog.maxMessageChars) return;
     if (state.waitingReply || state.locked || _buddyId == null) return;
-    _align = event.align;
     final requestId = _repo.newRequestId();
     final msg = BuddyMessage(
       id: 'local_$requestId',
@@ -504,7 +534,6 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
         buddyId: _buddyId!,
         text: msg.text,
         requestId: msg.requestId!,
-        align: _align,
       );
       final now = DateTime.now();
       // The server's translations come in the same payload: a bubble is
@@ -517,7 +546,7 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
             id: 'local_reply_${msg.requestId}_$i',
             role: BuddyMessageRole.buddy,
             text: bubbles[i].$1,
-            translation: BuddyTranslation.fromText(bubbles[i].$2, lang, bubbles[i].$3),
+            translation: BuddyTranslation.fromText(bubbles[i].$2, lang),
             kind: BuddyMessage.kindFrom(r.kind),
             // The turn is charged once: on its first bubble.
             charged: i == 0 ? r.charged : 'none',
@@ -532,8 +561,7 @@ class BuddyChatBloc extends Bloc<BuddyChatEvent, BuddyChatState> {
           msg.id,
           (m) => m.copyWith(
                 delivery: BuddyDelivery.sent,
-                translation: BuddyTranslation.fromText(
-                    r.userTranslation, lang, r.userTranslationSegments),
+                translation: BuddyTranslation.fromText(r.userTranslation, lang),
               ));
       final rec = reconcileLocal([...local, ...replies], _unmatched);
       _unmatched = rec.unmatched;

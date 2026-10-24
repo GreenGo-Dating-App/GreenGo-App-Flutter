@@ -23,7 +23,6 @@ import '../../domain/repositories/buddies_repository.dart';
 import '../bloc/buddy_chat_bloc.dart';
 import '../buddy_chat_adapter.dart';
 import '../buddy_labels.dart';
-import '../buddy_segments.dart';
 import '../widgets/buddy_avatar.dart';
 import '../widgets/buddy_bubble_parts.dart';
 import '../widgets/buddy_chat_settings.dart';
@@ -189,7 +188,7 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
     if (text.isEmpty) return;
     context
         .read<BuddyChatBloc>()
-        .add(BuddyChatSendPressed(text, align: _settings.highlightMatches));
+        .add(BuddyChatSendPressed(text));
     _input.clear();
     if (_scroll.hasClients) {
       unawaited(_scroll.animateTo(0,
@@ -499,14 +498,6 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
         final userTranslation = m.isBuddy
             ? null
             : BuddyChatAdapter.shownTranslation(m, chatLanguage: target, buddyLanguage: language);
-        // Colour-matched chunks (setting on + a real translation + segments),
-        // only on the Buddy's messages (owner 2026-10-24: never on the user's).
-        final shown = m.isBuddy ? msg.translatedContent : userTranslation;
-        final matches = m.isBuddy && shown != null && _settings.highlightMatches
-            ? locateBuddySegments(m.text, shown, m.translation?.segments ?? const [])
-            : const <BuddySegmentMatch>[];
-        final mainColor = m.isBuddy ? AppColors.textPrimary : AppColors.deepBlack;
-        final mainStyle = TextStyle(color: mainColor, fontSize: 15, height: 1.4);
         return MessageBubble(
           key: ValueKey('buddy-msg-${m.id}'),
           message: msg,
@@ -526,34 +517,8 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
                   text: userTranslation,
                   language: target,
                   showFlag: _settings.showLanguageFlags,
-                  matches: matches,
                 )
               : null,
-          // The Buddy's: translation (main) + original underneath; the
-          // user's: the original (main). Same colour per pair in both.
-          mainTextOverride: matches.isEmpty
-              ? null
-              : BuddySegmentText(
-                  key: ValueKey('buddy-seg-main-${m.id}'),
-                  text: m.isBuddy ? shown! : m.text,
-                  matches: matches,
-                  original: !m.isBuddy,
-                  style: mainStyle,
-                ),
-          originalTextOverride: matches.isEmpty || !m.isBuddy
-              ? null
-              : BuddySegmentText(
-                  key: ValueKey('buddy-seg-original-${m.id}'),
-                  text: m.text,
-                  matches: matches,
-                  original: true,
-                  style: const TextStyle(
-                    color: AppColors.textSecondary,
-                    fontSize: 13,
-                    height: 1.3,
-                    fontStyle: FontStyle.italic,
-                  ),
-                ),
           footer: buddyBubbleFooter(
             context,
             messageId: m.id,

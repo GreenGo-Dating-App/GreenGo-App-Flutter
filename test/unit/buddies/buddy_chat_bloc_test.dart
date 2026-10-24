@@ -256,4 +256,41 @@ void main() {
     expect(byId['s1']!.translation?.text, 'Buongiorno');
     expect(byId['s2']!.translation?.text, 'Ciao');
   });
+
+  test('local cache: painted before the server page (with translations), then replaced and saved',
+      () async {
+    repo.cache['b1'] = [
+      fakeMessage('c1', BuddyMessageRole.buddy, 'Cached hello', t0, translation: 'Ciao in cache'),
+      fakeMessage('gone', BuddyMessageRole.user, 'Deleted on the server', t0),
+    ];
+    repo.latestGate = Completer<void>();
+    repo.latest = BuddyMessagePage(messages: [
+      // The stored copy without its translation keeps the cached one.
+      fakeMessage('c1', BuddyMessageRole.buddy, 'Cached hello', t0),
+      fakeMessage('s2', BuddyMessageRole.buddy, 'New', t0.add(const Duration(minutes: 1)),
+          translation: 'Nuovo'),
+    ], hasMore: true);
+    bloc.add(const BuddyChatStarted(uid: 'u1', buddyId: 'b1'));
+    await _settle();
+    expect(bloc.state.loading, isFalse);
+    expect(bloc.state.server.map((m) => m.id), ['c1', 'gone']);
+    expect(bloc.state.server.first.translation?.text, 'Ciao in cache');
+    expect(bloc.state.hasMore, isFalse, reason: 'older pages wait for the server page');
+
+    repo.latestGate!.complete();
+    await _settle();
+    expect(bloc.state.server.map((m) => m.id), ['c1', 's2']);
+    expect(bloc.state.server.first.translation?.text, 'Ciao in cache');
+    expect(bloc.state.hasMore, isTrue);
+    expect(repo.cache['b1']!.map((m) => m.id), ['c1', 's2']);
+    expect(repo.cache['b1']!.last.translation?.text, 'Nuovo');
+
+    // New stored messages update the cache too.
+    repo.newMessages.add([
+      fakeMessage('s3', BuddyMessageRole.buddy, 'Later', t0.add(const Duration(minutes: 2)),
+          translation: 'Dopo'),
+    ]);
+    await _settle();
+    expect(repo.cache['b1']!.map((m) => m.id), ['c1', 's2', 's3']);
+  });
 }

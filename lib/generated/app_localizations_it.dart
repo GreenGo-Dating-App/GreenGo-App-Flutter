@@ -28826,9 +28826,6 @@ class AppLocalizationsIt extends AppLocalizations {
   String get buddyMicroCategoryLabel => 'Argomento';
 
   @override
-  String get buddyMicroCategoryHint => 'Scegli prima una categoria principale';
-
-  @override
   String get buddyAvatarsLoadFailed => 'Impossibile caricare le immagini.';
 
   @override
@@ -29371,10 +29368,8 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
-  String get buddyChatSettingHighlightMatches =>
-      'Evidenzia le parole corrispondenti';
+  String get buddyChooseCategory => 'Scegli una categoria';
 
   @override
-  String get buddyChatSettingHighlightMatchesDesc =>
-      'Colora le stesse parole in un messaggio e nella sua traduzione';
+  String get buddyChooseSubcategory => 'Scegli una sottocategoria';
 }

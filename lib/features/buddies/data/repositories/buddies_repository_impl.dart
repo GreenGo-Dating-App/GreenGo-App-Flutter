@@ -7,12 +7,18 @@ import '../../domain/entities/buddy_message.dart';
 import '../../domain/entities/buddy_status.dart';
 import '../../domain/repositories/buddies_repository.dart';
 import '../datasources/buddies_remote_datasource.dart';
+import '../datasources/buddy_chat_cache.dart';
 
 class BuddiesRepositoryImpl implements BuddiesRepository {
-  BuddiesRepositoryImpl({required this.remote, Uuid? uuid}) : _uuid = uuid ?? const Uuid();
+  BuddiesRepositoryImpl({required this.remote, Uuid? uuid, BuddyChatCache? cache})
+      : _uuid = uuid ?? const Uuid(),
+        cache = cache ?? JsonBuddyChatCache();
 
   final BuddiesRemoteDataSource remote;
   final Uuid _uuid;
+
+  /// Latest messages per Buddy chat, kept locally (see [BuddyChatCache]).
+  final BuddyChatCache cache;
 
   List<BuddyAvatarOption>? _avatars;
   Future<List<BuddyAvatarOption>>? _avatarsLoading;
@@ -56,12 +62,14 @@ class BuddiesRepositoryImpl implements BuddiesRepository {
   @override
   Future<void> deleteBuddy(String buddyId) async {
     await _call('deleteBuddy', {'buddyId': buddyId}, timeout: const Duration(seconds: 60));
+    await cache.clear(buddyId);
   }
 
   @override
   Future<void> clearChat(String buddyId, {bool forgetMemory = false}) async {
     await _call('clearBuddyChat', {'buddyId': buddyId, 'forgetMemory': forgetMemory},
         timeout: const Duration(seconds: 60));
+    await cache.clear(buddyId);
   }
 
   @override
@@ -77,7 +85,6 @@ class BuddiesRepositoryImpl implements BuddiesRepository {
     required String buddyId,
     required String text,
     required String requestId,
-    bool? align,
   }) async {
     final res = await _call(
       'sendBuddyMessage',
@@ -85,7 +92,6 @@ class BuddiesRepositoryImpl implements BuddiesRepository {
         'buddyId': buddyId,
         'text': text,
         'requestId': requestId,
-        if (align != null) 'align': align,
       },
       timeout: const Duration(seconds: 60),
     );
@@ -104,6 +110,22 @@ class BuddiesRepositoryImpl implements BuddiesRepository {
   @override
   Stream<List<BuddyMessage>> watchNewMessages(String uid, String buddyId, {DateTime? after}) =>
       remote.watchNewMessages(uid, buddyId, after);
+
+  @override
+  Future<List<BuddyMessage>> cachedMessages(String buddyId) async {
+    try {
+      return await cache.load(buddyId);
+    } catch (_) {
+      return const [];
+    }
+  }
+
+  @override
+  Future<void> cacheMessages(String buddyId, List<BuddyMessage> messages) async {
+    try {
+      await cache.save(buddyId, messages);
+    } catch (_) {}
+  }
 
   /// uuid v4: 36 chars of [0-9a-f-], valid for the server's
   /// `validRequestId` (/^[A-Za-z0-9_-]{8,80}$/).

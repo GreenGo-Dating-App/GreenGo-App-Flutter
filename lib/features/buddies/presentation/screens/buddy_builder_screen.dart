@@ -233,6 +233,8 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
             _select(
               key: const ValueKey('buddy-macro'),
               label: l10n.buddyMacroCategoryLabel,
+              // Nothing preselected: a placeholder until a category is chosen.
+              hint: l10n.buddyChooseCategory,
               value: s.group,
               options: [for (final g in kBuddyTopicGroups) (g, buddyTopicGroupLabel(l10n, g))],
               onChanged: cubit.selectGroup,
@@ -242,7 +244,8 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
               // Rebuilt per category: its list (and choice) belong to it.
               key: const ValueKey('buddy-micro'),
               label: l10n.buddyMicroCategoryLabel,
-              hint: s.group == null ? l10n.buddyMicroCategoryHint : null,
+              // Disabled (with the same placeholder) until a category is chosen.
+              hint: l10n.buddyChooseSubcategory,
               value: s.topic,
               options: [for (final t in s.groupTopics) (t.id, buddyTopicLabel(l10n, t.id))],
               onChanged: s.group == null ? null : cubit.selectTopic,
@@ -252,7 +255,11 @@ class _BuddyBuilderViewState extends State<_BuddyBuilderView> {
               key: const ValueKey('buddy-language'),
               label: l10n.buddyLanguagePrompt,
               value: s.language,
-              options: [for (final c in BuddyCatalog.languages) (c, buddyLanguageLabel(l10n, c))],
+              // Same flags as "Translate this chat into".
+              options: [
+                for (final c in BuddyCatalog.languages)
+                  (c, '${languageFlagEmoji(c)} ${buddyLanguageLabel(l10n, c)}'),
+              ],
               onChanged: cubit.selectLanguage,
             ),
             const SizedBox(height: 6),

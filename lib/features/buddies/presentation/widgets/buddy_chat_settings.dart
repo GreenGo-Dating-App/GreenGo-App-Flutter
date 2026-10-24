@@ -23,7 +23,6 @@ class BuddyChatSettings {
     'showSentences',
     'showPronunciation',
     'ttsReadTranslated',
-    'highlightMatches',
   ];
 
   final Map<String, bool> values;
@@ -37,8 +36,6 @@ class BuddyChatSettings {
   bool get showPronunciation => _v('showPronunciation');
   bool get ttsReadTranslated => _v('ttsReadTranslated');
 
-  /// Colour matching chunks of a message and its translation (Buddy only).
-  bool get highlightMatches => _v('highlightMatches');
 
   Map<String, bool> get all => {for (final n in names) n: _v(n)};
 
@@ -160,8 +157,6 @@ Future<void> showBuddyChatSettingsSheet(
         l10n.chatSettingPronunciationDesc),
     ('ttsReadTranslated', Icons.record_voice_over, l10n.chatSettingTtsTranslation,
         l10n.chatSettingTtsTranslationDesc),
-    ('highlightMatches', Icons.format_color_text, l10n.buddyChatSettingHighlightMatches,
-        l10n.buddyChatSettingHighlightMatchesDesc),
   ];
   return showModalBottomSheet<void>(
     context: context,

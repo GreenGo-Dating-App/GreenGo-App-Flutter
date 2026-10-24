@@ -8376,7 +8376,6 @@
   "buddyLanguageOnlyNote": "Ton Buddy parle toujours uniquement cette langue. Elle ne pourra pas être modifiée ensuite.",
   "buddyMacroCategoryLabel": "Catégorie principale",
   "buddyMicroCategoryLabel": "Sujet",
-  "buddyMicroCategoryHint": "Choisis d'abord une catégorie principale",
   "buddyAvatarsLoadFailed": "Impossible de charger les images.",
   "buddySettingAvatar": "Image",
   "buddySettingName": "Nom",
@@ -8551,6 +8550,6 @@
   "buddyChatLanguagePrompt": "Traduire ce chat en",
   "buddyChatLanguageNote": "Les messages sont traduits une seule fois dans cette langue. Ce choix ne pourra pas être modifié.",
   "buddyTranslatedInto": "Traduit en : {language} (fixe)",
-  "buddyChatSettingHighlightMatches": "Surligner les mots correspondants",
-  "buddyChatSettingHighlightMatchesDesc": "Colorer les mêmes mots dans un message et sa traduction"
+  "buddyChooseCategory": "Choisis une catégorie",
+  "buddyChooseSubcategory": "Choisis une sous-catégorie"
 }

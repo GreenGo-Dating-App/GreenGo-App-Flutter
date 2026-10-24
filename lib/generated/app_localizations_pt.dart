@@ -28758,10 +28758,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get buddyMicroCategoryLabel => 'Tema';
 
   @override
-  String get buddyMicroCategoryHint =>
-      'Escolhe primeiro uma categoria principal';
-
-  @override
   String get buddyAvatarsLoadFailed => 'Não foi possível carregar as imagens.';
 
   @override
@@ -29304,12 +29300,10 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get buddyChatSettingHighlightMatches =>
-      'Destacar palavras correspondentes';
+  String get buddyChooseCategory => 'Escolhe uma categoria';
 
   @override
-  String get buddyChatSettingHighlightMatchesDesc =>
-      'Colorir as mesmas palavras numa mensagem e na sua tradução';
+  String get buddyChooseSubcategory => 'Escolhe uma subcategoria';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -58071,10 +58065,6 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get buddyMicroCategoryLabel => 'Tema';
 
   @override
-  String get buddyMicroCategoryHint =>
-      'Escolha primeiro uma categoria principal';
-
-  @override
   String get buddyAvatarsLoadFailed => 'Não foi possível carregar as imagens.';
 
   @override
@@ -58617,10 +58607,8 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   }
 
   @override
-  String get buddyChatSettingHighlightMatches =>
-      'Destacar palavras correspondentes';
+  String get buddyChooseCategory => 'Escolha uma categoria';
 
   @override
-  String get buddyChatSettingHighlightMatchesDesc =>
-      'Colorir as mesmas palavras em uma mensagem e na tradução dela';
+  String get buddyChooseSubcategory => 'Escolha uma subcategoria';
 }
