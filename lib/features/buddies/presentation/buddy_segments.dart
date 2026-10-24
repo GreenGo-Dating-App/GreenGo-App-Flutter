@@ -63,30 +63,45 @@ List<BuddySegmentMatch> locateBuddySegments(
   return out;
 }
 
-/// Colours of matching chunks: a background tint plus a solid underline in
-/// the same hue (never colour alone). The text colour itself is unchanged, so
-/// contrast stays that of the bubble (dark received bubble / gold own bubble).
+/// Colours of matching chunks: the TEXT is coloured (owner 2026-10-24: no
+/// background highlight) plus a thin underline in the same hue, so a pair is
+/// never told apart by colour alone. Bright shades on the dark Buddy bubble,
+/// deep shades on the user's gold bubble, so both stay readable.
 class BuddySegmentPalette {
   BuddySegmentPalette._();
 
+  /// For light text on a dark bubble.
   static const List<Color> colors = [
-    Color(0xFF2196F3), // blue
-    Color(0xFFE91E63), // pink
-    Color(0xFF4CAF50), // green
-    Color(0xFFFF9800), // orange
-    Color(0xFF9C27B0), // purple
-    Color(0xFF00BCD4), // cyan
+    Color(0xFF64B5F6), // blue
+    Color(0xFFF48FB1), // pink
+    Color(0xFF81C784), // green
+    Color(0xFFFFB74D), // orange
+    Color(0xFFCE93D8), // purple
+    Color(0xFF4DD0E1), // cyan
   ];
 
-  static Color of(int i) => colors[i % colors.length];
+  /// For dark text on a light (gold) bubble.
+  static const List<Color> deepColors = [
+    Color(0xFF0D47A1), // blue
+    Color(0xFF880E4F), // pink
+    Color(0xFF1B5E20), // green
+    Color(0xFFBF360C), // orange
+    Color(0xFF4A148C), // purple
+    Color(0xFF006064), // cyan
+  ];
+
+  static Color of(int i, {bool onLight = false}) =>
+      (onLight ? deepColors : colors)[i % colors.length];
 
   static TextStyle style(TextStyle base, int i) {
-    final c = of(i);
+    // Dark base text = light bubble.
+    final onLight = (base.color ?? const Color(0xFFFFFFFF)).computeLuminance() < 0.5;
+    final c = of(i, onLight: onLight);
     return base.copyWith(
-      backgroundColor: c.withValues(alpha: 0.22),
+      color: c,
       decoration: TextDecoration.underline,
       decorationColor: c,
-      decorationThickness: 2,
+      decorationThickness: 1.5,
     );
   }
 }

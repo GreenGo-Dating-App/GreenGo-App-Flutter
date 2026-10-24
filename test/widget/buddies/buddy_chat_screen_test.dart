@@ -5,6 +5,7 @@ import 'package:cloud_functions/cloud_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:greengo_chat/features/buddies/presentation/buddy_segments.dart';
 import 'package:greengo_chat/core/services/app_sound_service.dart';
 import 'package:greengo_chat/core/services/chat_datasets/chat_datasets.dart';
 import 'package:greengo_chat/core/services/chat_datasets/keyword_matcher.dart';
@@ -413,8 +414,10 @@ void main() {
     final out = <String, Color>{};
     for (final r in tester.widgetList<RichText>(find.descendant(of: of, matching: find.byType(RichText)))) {
       r.text.visitChildren((span) {
-        if (span is TextSpan && span.text != null && span.style?.backgroundColor != null) {
-          out[span.text!] = span.style!.backgroundColor!;
+        final dc = span is TextSpan ? span.style?.decorationColor : null;
+        if (span is TextSpan && span.text != null && dc != null &&
+            (BuddySegmentPalette.colors.contains(dc) || BuddySegmentPalette.deepColors.contains(dc))) {
+          out[span.text!] = span.style!.decorationColor!;
         }
         return true;
       });
