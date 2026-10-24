@@ -3882,6 +3882,22 @@ service cloud.firestore {
     match /ai_buddy_requests/{docId} {
       allow read, write: if false;
     }
+    // Avatar images people pick for their Buddy (managed server-side).
+    match /buddy_avatars/{avatarId} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+    // Age-verification queue (safety/ageAssurance.ts): written only by Cloud
+    // Functions; the admin panel's Age Verification page lists it. Only
+    // superAdmins and moderators may read it (it holds ID review metadata);
+    // decisions go through the reviewAgeVerification callable. Without this
+    // rule the default deny blocked the page ("Missing or insufficient
+    // permissions"), in production too.
+    match /age_verification_queue/{uid} {
+      allow read: if isAdminPanelUser() &&
+        get(/databases/$(database)/documents/admin_users/$(request.auth.uid)).data.get('role', '') in ['superAdmin', 'moderator'];
+      allow write: if false;
+    }
     match /ai_buddy_jobs/{docId} {
       allow read, write: if false;
     }

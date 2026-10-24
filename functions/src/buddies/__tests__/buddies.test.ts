@@ -69,11 +69,16 @@ describe('validateSettings', () => {
     expect(validateSettings(rest)).toMatchObject({ ...rest, checkInsEnabled: true });
   });
   it.each([
-    [{ name: '' }], [{ name: 'x'.repeat(25) }], [{ name: 'Luna<script>' }], [{ avatar: 'photo.jpg' }],
+    [{ name: '' }], [{ name: 'x'.repeat(25) }], [{ name: 'Luna<script>' }], [{ avatar: '../photo.jpg' }],
     [{ topic: 'romance' }], [{ role: 'girlfriend' }], [{ tone: 'flirty' }], [{ language: 'ru' }], [{ level: 'god' }],
     [{ cefr: 'D1' }], [{ isAdmin: true }],
   ])('rejects %j', (bad) => {
     expect(() => validateSettings({ ...settings(), ...bad })).toThrow(BuddyInputError);
+  });
+  it('role and level are optional (builder asks category, language, tone)', () => {
+    const { role, level, cefr, checkInsEnabled, ...rest } = settings();
+    void role; void level; void cefr; void checkInsEnabled;
+    expect(validateSettings({ ...rest, avatar: 'avatar_fox' })).toMatchObject({ role: 'friend', level: 'intermediate', avatar: 'avatar_fox' });
   });
   it('partial updates only validate the given keys', () => {
     expect(validateSettings({ tone: 'funny' }, true)).toEqual({ tone: 'funny' });
@@ -114,14 +119,15 @@ describe('prompts', () => {
     expect(s).toMatch(/positive, warm, kind/);
     expect(s).toMatch(/never claim or pretend to be human/i);
     expect(s).toMatch(/"Luna", a patient teacher/);
-    expect(s).toMatch(/Always reply in Italian/);
+    expect(s).toMatch(/You speak ONLY Italian/);
+    expect(s).toMatch(/Never switch to another language/);
     expect(s).toMatch(/CEFR A2/);
     expect(s).toMatch(/at most 200 characters/);
     expect(s).toMatch(/Training for a marathon in May/);
     expect(s).toMatch(/They talked about Rome/);
   });
   it('pt_BR Buddies speak Brazilian Portuguese', () => {
-    expect(systemPrompt(settings({ language: 'pt_BR' }), rules, [], '')).toMatch(/Always reply in Brazilian Portuguese/);
+    expect(systemPrompt(settings({ language: 'pt_BR' }), rules, [], '')).toMatch(/You speak ONLY Brazilian Portuguese/);
   });
   it('health topics carry the disclaimer', () => {
     expect(systemPrompt(settings({ topic: 'sleep_habits' }), rules, [], '')).toMatch(/general information only/);

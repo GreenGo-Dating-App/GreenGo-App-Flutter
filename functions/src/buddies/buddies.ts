@@ -33,7 +33,7 @@ import { CapabilityRules } from '../ai/router/types';
 import { emitNotification } from '../notifications/notifyHelpers';
 import { rawText } from '../shared/i18n';
 import {
-  BUDDIES, BUDDY_LIMIT, BUDDY_REQUESTS, BUDDY_USAGE, BuddyInputError, BuddySettings, COINS_PER_REPLY,
+  AVATARS, BUDDY_AVATARS, BUDDIES, BUDDY_LIMIT, BUDDY_REQUESTS, BUDDY_USAGE, BuddyInputError, BuddySettings, COINS_PER_REPLY,
   FREE_REPLIES_PER_DAY, Language, MemoryFact, USER_MESSAGE_MAX, utcDay, validateSettings,
 } from './model';
 import { CRISIS_REPLY, FALLBACK_REPLY, isCrisis, isUnsafeReply } from './crisis';
@@ -70,6 +70,13 @@ const okId = (v: unknown, field = 'buddyId'): string => {
 const buddiesCol = (uid: string) => db().collection(BUDDIES).doc(uid).collection('buddies');
 const unavailable = () => new AppError('AI_UNAVAILABLE', 'Your Buddy cannot answer right now. Please try again.', 503,
   { reason: 'AI_UNAVAILABLE' });
+
+/** The avatar must be an active image in buddy_avatars (or a legacy drawn one). */
+async function assertAvatar(avatar: string | undefined): Promise<void> {
+  if (avatar === undefined || AVATARS.includes(avatar)) return;
+  const snap = await db().collection(BUDDY_AVATARS).doc(avatar).get();
+  if (!snap.exists || snap.data()?.active === false) throw new HttpsError('invalid-argument', 'Invalid avatar');
+}
 
 async function tierOf(uid: string): Promise<EffectiveTier> {
   const p = (await db().collection('profiles').doc(uid).get()).data();
@@ -135,6 +142,7 @@ export const getBuddyStatus = callable('getBuddyStatus', (uid) => buddyStatus(ui
 
 export const createBuddy = callable('createBuddy', async (uid, data) => {
   const s = validateSettings(data.settings ?? data, false) as BuddySettings;
+  await assertAvatar(s.avatar);
   const tier = await tierOf(uid);
   const limit = BUDDY_LIMIT[tier];
   const ref = buddiesCol(uid).doc();
@@ -172,6 +180,7 @@ export const updateBuddy = callable('updateBuddy', async (uid, data) => {
   const buddyId = okId(data.buddyId);
   const patch = validateSettings(data.settings ?? {}, true);
   if (!Object.keys(patch).length) throw new HttpsError('invalid-argument', 'Nothing to update');
+  await assertAvatar(patch.avatar);
   const ref = buddiesCol(uid).doc(buddyId);
   const snap = await ref.get();
   if (!snap.exists) throw new HttpsError('not-found', 'Buddy not found');

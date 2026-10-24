@@ -33,8 +33,18 @@ export const TONES = ['warm', 'funny', 'calm', 'direct', 'formal', 'playful'] as
 export const LEVELS = ['beginner', 'intermediate', 'expert'] as const;
 export const CEFR = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
 export const LANGUAGES = ['en', 'de', 'es', 'fr', 'it', 'pt', 'pt_BR'] as const;
-/** Drawn avatars shipped in the app (never photos, never real people). */
+/** Legacy code-drawn avatars (still accepted for Buddies created before 2026-10-24). */
 export const AVATARS = Array.from({ length: 24 }, (_, i) => `buddy_${String(i + 1).padStart(2, '0')}`);
+/**
+ * Avatar images people pick from (owner 2026-10-24): `buddy_avatars/{id}`
+ * { url, label, order, active } in Firestore, images in our Storage
+ * (illustrations, never photos of real people). Buddies have no profile.
+ */
+export const BUDDY_AVATARS = 'buddy_avatars';
+export const AVATAR_ID = /^[A-Za-z0-9_-]{1,64}$/;
+/** Defaults now that the builder only asks category, language and tone. */
+export const DEFAULT_ROLE: Role = 'friend';
+export const DEFAULT_LEVEL: Level = 'intermediate';
 
 export type Role = typeof ROLES[number];
 export type Tone = typeof TONES[number];
@@ -84,12 +94,19 @@ export function validateSettings(raw: any, partial = false): Partial<BuddySettin
     return has(k);
   };
   if (need('name')) out.name = cleanName(raw.name);
-  if (need('avatar')) out.avatar = oneOf(raw.avatar, AVATARS, 'avatar');
+  if (need('avatar')) {
+    // An id from buddy_avatars (existence is checked by the callable) or a legacy drawn avatar.
+    if (typeof raw.avatar !== 'string' || !AVATAR_ID.test(raw.avatar)) throw new BuddyInputError('Invalid avatar');
+    out.avatar = raw.avatar;
+  }
   if (need('topic')) out.topic = oneOf(raw.topic, TOPIC_IDS, 'topic');
-  if (need('role')) out.role = oneOf(raw.role, ROLES, 'role');
+  // Role and level are optional since 2026-10-24 (builder: category, language, tone).
+  if (has('role')) out.role = oneOf(raw.role, ROLES, 'role');
+  else if (!partial) out.role = DEFAULT_ROLE;
   if (need('tone')) out.tone = oneOf(raw.tone, TONES, 'tone');
   if (need('language')) out.language = oneOf(raw.language, LANGUAGES, 'language');
-  if (need('level')) out.level = oneOf(raw.level, LEVELS, 'level');
+  if (has('level')) out.level = oneOf(raw.level, LEVELS, 'level');
+  else if (!partial) out.level = DEFAULT_LEVEL;
   if (has('cefr')) out.cefr = raw.cefr === null ? null : oneOf(raw.cefr, CEFR, 'cefr');
   else if (!partial) out.cefr = null;
   if (has('checkInsEnabled')) {

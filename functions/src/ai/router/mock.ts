@@ -69,7 +69,8 @@ export function mockGenerate(req: GenerateRequest): string {
   guard();
   const prompt = `${req.system ?? ''}\n${req.messages.map((m) => m.content).join('\n')}`;
   if (req.json) return mockJson(prompt);
-  const lang = req.system?.match(/Always reply in ([A-Za-z ]+?)\./)?.[1] ?? 'English';
+  const lang = req.system?.match(/You speak ONLY ([A-Za-z ]+?)\./)?.[1]
+    ?? req.system?.match(/Always reply in ([A-Za-z ]+?)\./)?.[1] ?? 'English';
   const list = REPLIES[lang] ?? REPLIES.English;
   const reply = list[turn++ % list.length];
   const echo = lastUser(req).slice(0, 40);
