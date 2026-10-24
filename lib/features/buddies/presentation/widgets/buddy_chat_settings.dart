@@ -74,6 +74,19 @@ class BuddyChatSettings {
     await ChatSettingsPrefs.saveForAllChats(prefs, all);
   }
 
+  /// Bumped whenever a Buddy chat language changes (the Buddies list flags).
+  static final ValueNotifier<int> languageChanges = ValueNotifier<int>(0);
+
+  /// The saved chat language of [buddyId] (null = the app language).
+  static Future<String?> loadLanguage(String buddyId) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      return prefs.getString('chat_${chatId(buddyId)}_language');
+    } catch (_) {
+      return null;
+    }
+  }
+
   static Future<void> saveLanguage(String buddyId, String code) async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -81,6 +94,7 @@ class BuddyChatSettings {
     } catch (_) {
       // The choice still applies to this session.
     }
+    languageChanges.value++;
   }
 }
 

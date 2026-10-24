@@ -263,8 +263,10 @@ void main() {
     ], hasMore: false);
     prompts.translation = 'IT';
     await open(tester);
-    // App language = English = the Buddy's: nothing to show yet.
-    expect(prompts.translated, containsAll(['en>en:Good morning', 'auto>en:Morning!']));
+    // App language = English = the Buddy's: the Buddy's message is never
+    // sent for translation (owner 2026-10-24); the user's is checked (auto).
+    expect(prompts.translated, ['auto>en:Morning!']);
+    expect(prompts.translated.where((x) => x.startsWith('en>en')), isEmpty);
 
     // Chat language -> Italian: ALL messages are translated (same service).
     await tester.tap(find.byKey(const ValueKey('buddy-chat-languages')));
@@ -313,8 +315,9 @@ void main() {
   });
 
   testWidgets('translation failure: snackbar once, original shown', (tester) async {
+    // A user message (language unknown) is sent for translation and fails.
     repo.latest = BuddyMessagePage(
-        messages: [fakeMessage('m1', BuddyMessageRole.buddy, 'Hi', t0)], hasMore: false);
+        messages: [fakeMessage('m1', BuddyMessageRole.user, 'Hi', t0)], hasMore: false);
     prompts.translateFails = true;
     await open(tester);
     await tester.pump();
@@ -406,8 +409,12 @@ void main() {
       expect(find.byKey(ValueKey('buddy-setting-$k')), findsNothing, reason: k);
     }
     expect(find.text('Category'), findsOneWidget);
-    expect(find.byKey(const ValueKey('buddy-clear-chat')), findsOneWidget);
-    expect(find.byKey(const ValueKey('buddy-delete')), findsOneWidget);
+    expect(find.byKey(const ValueKey('buddy-clear-chat'), skipOffstage: false), findsOneWidget);
+    expect(find.byKey(const ValueKey('buddy-delete'), skipOffstage: false), findsOneWidget);
+    // The chat language (translation target) is changeable, next to the fixed one.
+    expect(find.byKey(const ValueKey('buddy-setting-chat-language')), findsOneWidget);
+    expect(tester.widget<ListTile>(find.byKey(const ValueKey('buddy-setting-chat-language'))).onTap,
+        isNotNull);
 
     // Language: chosen at creation only, never changed (read-only).
     expect(find.text('English (fixed)'), findsOneWidget);

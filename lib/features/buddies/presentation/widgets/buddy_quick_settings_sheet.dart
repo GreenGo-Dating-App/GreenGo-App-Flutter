@@ -22,6 +22,8 @@ class BuddyQuickSettingsSheet extends StatefulWidget {
     required this.repository,
     required this.prompts,
     required this.onDeleted,
+    this.chatLanguageLabel,
+    this.onChangeChatLanguage,
     super.key,
   });
 
@@ -29,6 +31,11 @@ class BuddyQuickSettingsSheet extends StatefulWidget {
   final BuddiesRepository repository;
   final BuddyPrompts prompts;
   final VoidCallback onDeleted;
+
+  /// The chat language (what messages are translated into), shown next to
+  /// the fixed Buddy language so the two are not confused.
+  final String? chatLanguageLabel;
+  final VoidCallback? onChangeChatLanguage;
 
   @override
   State<BuddyQuickSettingsSheet> createState() => _BuddyQuickSettingsSheetState();
@@ -250,6 +257,15 @@ class _BuddyQuickSettingsSheetState extends State<BuddyQuickSettingsSheet> {
                   value: l10n.buddyLanguageFixed(buddyLanguageLabel(l10n, s.language)),
                   onTap: null,
                 ),
+                // The chat language is free to change: it is what this chat
+                // is translated into (like the 1:1 chat's "Your language").
+                if (widget.chatLanguageLabel != null)
+                  _row(
+                    key: 'chat-language',
+                    label: l10n.chatYourLanguage,
+                    value: widget.chatLanguageLabel!,
+                    onTap: widget.onChangeChatLanguage,
+                  ),
                 _row(
                   key: 'tone',
                   label: l10n.buddySettingTone,

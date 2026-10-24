@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:greengo_chat/features/buddies/domain/entities/buddy_status.dart';
 import 'package:greengo_chat/features/buddies/presentation/widgets/buddies_tab.dart';
+import 'package:greengo_chat/features/buddies/presentation/widgets/buddy_chat_settings.dart';
 import 'package:greengo_chat/generated/app_localizations.dart';
 
 import '../../support/buddies_fakes.dart';
@@ -54,6 +56,27 @@ void main() {
     await tester.pumpAndSettle();
     // The builder opened on step 1.
     expect(find.text('What do you want to talk about?'), findsOneWidget);
+  });
+
+  testWidgets('each Buddy row shows the flag of its chat language (default: app language)',
+      (tester) async {
+    SharedPreferences.setMockInitialValues({'chat_buddy_it1_language': 'it'});
+    repo.status = const BuddyStatus(
+        tier: 'GOLD', buddyLimit: 5, buddyCount: 2, freeRepliesPerDay: 50, freeRepliesLeft: 50, coinsPerReply: 1);
+    await pumpTab(tester);
+    repo.buddies.add([
+      fakeBuddy('it1', name: 'Giulia', topic: 'practice_italian', createdAt: DateTime(2026, 1, 1)),
+      fakeBuddy('en1', name: 'Sam', topic: 'movies', createdAt: DateTime(2026, 1, 2)),
+    ]);
+    await tester.pump();
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('buddy-flag-it1-it')), findsOneWidget);
+    expect(find.text('🇮🇹'), findsOneWidget);
+    expect(find.byKey(const ValueKey('buddy-flag-en1-en')), findsOneWidget);
+    // Changing the chat language in the chat updates the flag in the list.
+    await BuddyChatSettings.saveLanguage('en1', 'pt_BR');
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('buddy-flag-en1-pt_BR')), findsOneWidget);
   });
 
   testWidgets('list: name, topic, last message, AI badge; locked Buddy greyed', (tester) async {

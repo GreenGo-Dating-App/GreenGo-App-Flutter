@@ -243,7 +243,13 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
   /// The automatic translation of [m] into [target], like the 1:1 chat
   /// (every text message; the Buddy's from its known language). Starts it
   /// when missing; null until it is known.
+  /// "pt_BR" / "pt-BR" / "pt" -> "pt".
+  static String _baseLanguage(String code) => code.toLowerCase().replaceAll('_', '-').split('-').first;
+
   _Translation? _translationFor(BuddyMessage m, String target, String buddyLanguage) {
+    // Owner 2026-10-24: a message already in the chat language is never
+    // translated. The Buddy's language is known: no call at all.
+    if (m.isBuddy && _baseLanguage(buddyLanguage) == _baseLanguage(target)) return null;
     final source = m.isBuddy ? buddyLanguage : 'auto';
     final key = '$target|$source|${m.text}';
     final hit = _translations[key];
@@ -269,7 +275,11 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
       } else if (r.failed) {
         _failed.add(key);
       } else {
-        _translations[key] = _Translation(r.isTranslated ? r.text : null, r.detectedLanguage);
+        // Detected as already in the chat language (e.g. the user writes in
+        // it): show the original, no translation.
+        final detected = r.detectedLanguage;
+        final same = detected != null && _baseLanguage(detected) == _baseLanguage(target);
+        _translations[key] = _Translation(r.isTranslated && !same ? r.text : null, detected);
       }
     });
     if (r.failed && !r.consentRequired) _onTranslationFailed();
@@ -317,6 +327,11 @@ class _BuddyChatViewState extends State<_BuddyChatView> {
             prompts: widget.prompts,
             onDeleted: () {
               if (mounted) Navigator.of(context).maybePop();
+            },
+            chatLanguageLabel: buddyLanguageLabel(AppLocalizations.of(context)!, _targetLanguage),
+            onChangeChatLanguage: () {
+              Navigator.of(context).pop();
+              _pickLanguage();
             },
           ),
         ),
